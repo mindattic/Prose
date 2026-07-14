@@ -202,8 +202,8 @@ covered by Wren.)*
   knows it, and she does not know yet how much she needs him. *(That is the reading he lets her
   have. Whether it is the true one is a question the book keeps open — see below.)*
 - **THE ONE WHO KNOWS — the exception to the whole cosmology.** {#SS-VIGL-1b-knows} Everything the
-  bible files under "canon knows it, the characters do not" — the embryo-truth (each Sphere an
-  unborn world in its own skin, §4b), what the Amnios actually is, what Sinter actually is (a wound
+  bible files under "canon knows it, the characters do not" — the cell-truth (each Sphere a
+  cell of one unborn body, §4b), what the Amnios actually is, what Sinter actually is (a wound
   in this world's own caul, not a badland, §9b), what the Oculus actually holds and that the Liturgy
   **hoards** it (§2a, §6b) — **Orim knows, or has guessed close enough to know.** Fifty years of
   putting his hand through the world's skin by proxy, one private Sinter contract thirty years ago
@@ -583,7 +583,7 @@ The power earns its keep by escalating and by costing. Recommended deployment:
   belongs where what it shows can be seen, recorded, and acted on — which is precisely what
   Prelacze, and the Liturgy before him, has spent 741 years making sure it is not. *(The one man
   who has understood this hoarding for decades — and what the vault is actually keeping unusable —
-  is Orim Zebulun, §1b. He is the human holder of both the embryo-truth and the arc pivot, and he
+  is Orim Zebulun, §1b. He is the human holder of both the cell-truth and the arc pivot, and he
   says almost none of it aloud until it is nearly too late.)*
 - **Ocipheus context:** He operates from the Liturgy's home territory — House Ocipheus is the
   Canon's administrative seat, a nominally sovereign House so deeply intertwined with the Liturgy
@@ -972,7 +972,7 @@ What Orim's Rod parts, what every scry looks through, what the Oculus has been r
 741 years, is not a wall, a curtain, or a lens. It is tissue. Fleshy. Warm to the touch where
 an installation's apparatus has worn it thin enough to touch at all. Threaded through with dark
 veins that carry something the Caul has no name for and that pulse when pressure builds on the
-far side. It is **the world's own skin** — the Caul is an embryo sheathed in its own caul (§4b),
+far side. It is **the world's own skin** — the Caul is one cell of a living body, sheathed in its own membrane (§4b),
 and every scry is a cut into that skin from the inside. This is why Orim's fingertips need a
 Catalyst tincture before a scry works at all — he is sensitizing his own skin to read the world's
 skin through the touch of it. This is why the Rod's aperture is called, plainly, by everyone who
@@ -1139,11 +1139,11 @@ He does not pretend the knowledge makes it clean.
 ### 4b. The Amnios — What Lies Behind the Membrane {#SS-VIGL-4b}
 
 **If the membrane is living skin (§4), then reality is gestational.** The Caul is not a set of
-worlds sitting side by side in a void. It is a **birthing cosmos** — every Sphere an **embryo**,
-a living world sheathed in its own caul, its own skin (see the embryo model below). And behind
-that skin, between all the Spheres, is the medium every membrane act touches before it reaches
-anything else: the **Amnios** — the amniotic waters, the liminal space of birth, the medium
-through which all things pass.
+worlds sitting side by side in a void. It is **one developing organism** — and every Sphere is a
+single **cell** of it, sheathed in its own membrane, its own skin (see the cell model below). And
+behind that skin, between all the Spheres, is the medium every membrane act touches before it
+reaches anything else: the **Amnios** — the amniotic waters, the intercellular medium of a growing
+thing, the liminal space of birth through which all things pass.
 
 The Amnios is **golden** — a warm amber-gold, the color of light through honey or aged glass.
 Reach for the tavern words and they fit better than the holy ones: it looks like mead, like a
@@ -1185,39 +1185,46 @@ the Amnios:
   book that sends something living into the Amnios and pulls it back out again on purpose. She
   comes out wet.
 
-**The embryo model — each Sphere is its own unborn world.** {#SS-VIGL-4b-skin} The membrane is not
-the skin of some vast external creature that the Spheres sit inside. It is the world's **own** living
-skin. Each Sphere is itself an **embryo** — a living, growing world — sheathed in its own caul,
-floating in the shared golden Amnios. Reality is not one body with many pockets in it. It is a
-**clutch of embryos** suspended together in a common amniotic sea, each one gestating inside its
-own skin, none of them yet born. The Caul — this world, Lyra's world — is one of them.
+**The cell model — each Sphere is one cell of a single developing organism.** {#SS-VIGL-4b-skin}
+The Sphere / membrane / Scrying language means exactly what it says: a Sphere is a **cell**, its
+membrane is a **cell membrane**, and the Amnios is the **intercellular medium** of one vast growing
+thing. Reality is not a clutch of separate embryos floating spaced-out in a void — it is a **single
+embryo** at the only scale that counts, and the Spheres are its **cells**, packed and touching
+through their membranes, a cluster of them (a morula, a berry of cells), none yet born. This is
+exactly why a scry or an aperture reaches an *adjacent* Sphere: you are looking through your own cell
+wall into the cell pressed against it. The membrane is still the world's **own** skin — a cell has
+its own wall — but the worlds are not islands. They are **tissue.** The Caul — this world, Lyra's
+world — is one cell of it.
 
 Everything the bible has described follows from this and needs no further hedging:
 
 - A scry, an aperture, the Rod's force-pierce — all of them cut into **a world's own skin**, and
   they heal because skin heals (§4). The far side of the wound is not "another place across a gap."
-  It is the Amnios between embryos, and beyond it the caul of some *other* unborn world.
-- **Sinter is the one wound in *this* world's own skin that never closed** (§9b). The Caul's own
-  caul, torn and unhealing, the Amnios leaking in, things gestating in the open cut.
-- **The Taking expels a mind out of its embryo-world into the Amnios between worlds** — Rowe cast
-  out of his own Sphere's skin, unborn again, adrift in the golden waters between the embryos
-  before Verlaine reels him into a shell (§1c).
+  It is the intercellular Amnios, and beyond it the membrane of the cell pressed against yours.
+- **Sinter is the one wound in *this* world's own skin that never closed** (§9b) — a **lesion** in
+  the cell: the Caul's own membrane, torn and unhealing, the Amnios leaking in, things gestating in
+  the open cut like an infection that will not resolve.
+- **The Taking expels a mind out of its cell into the intercellular Amnios** — Rowe cast out of his
+  own Sphere's skin, unborn again, adrift in the golden medium between the cells before Verlaine
+  reels him into a shell (§1c).
 - **Wren's Blink** pushes her own body out through her world's skin, a heartbeat through the
-  Amnios, and back in through skin a short way off — she comes up wet with the sea between worlds
-  (§2c).
+  Amnios, and back in through skin a short way off — she comes up wet with the medium between the
+  cells (§2c).
 
-**CRITICAL LOCK — nobody in the Caul knows they live on an unborn thing.** The embryo model is the
+**CRITICAL LOCK — nobody in the Caul knows they are a cell in a living body.** The cell model is the
 deep structure of the cosmos; it is **canon, not common knowledge.** The Houses believe they Scry
 "other places" — other locations, other times, across a membrane they treat as a resource boundary.
-No canon office, no vigil order, no Champion has ever framed it as a clutch of gestating worlds,
+No canon office, no vigil order, no Champion has ever framed it as one organism made of worlds,
 because the skin has always healed and the waters have always stayed behind it, and a truth you
 never have cause to test is a truth you never find. What this bible states as structure, the
 characters only ever *brush against* — with one exception: **Orim Zebulun knows, or has guessed
 close enough, and withholds it** (§1b). He is the single human holder of this truth, and he is
 walking with the party the whole time. And the deepest questions stay open even to canon — the
-mystery has not vanished, it has moved past the horizon: **what does an embryo-Sphere gestate
-*into*? Is it ever born, or hatched, or does it only ever ripen? What — if anything — does the
-Amnios answer to, or is watched by, or was made by?** None of this is answered in VIGL. Lyra never
+mystery has not vanished, it has moved past the horizon: **what is the organism becoming — and does
+it know we are here? Are the Spheres meant to be born into something, or are they only ever tissue?
+When a cell sickens — Sinter — is the sickness contained to that one cell, or is it spreading to the
+ones pressed against it? What, if anything, does the body answer to, or was it made by?** None of
+this is answered in VIGL. Lyra never
 confirms the membrane is alive (LOCKED, §10.1); but by the vigil room at the end she has felt her
 way to the edge of exactly this — the specific, unpoetic, research-margin sense that **the world is
 unborn**, and she cannot say into what, or who is waiting on the other side of the skin for it to
@@ -2192,7 +2199,7 @@ wildlife and the occasional soldier who got too close, has been building toward.
 **This is the wound in the world's own skin that never closed.** {#SS-VIGL-9b-skin} Every scry
 Orim has ever taken, every aperture the Rod has ever parted, closed behind him — the skin (§4,
 §4a) sealed, scarred over, forgotten within hours. Sinter is the one tear that never did. The
-Caul is an embryo, sheathed in its own caul (§4b); Sinter is the one place that caul was torn
+Caul is one cell of a living body, sheathed in its own membrane (§4b); Sinter is the one place that skin was torn
 and never healed. What Lyra is looking at, in walls that pulse and run warm to instruments and
 hold a circulatory pattern (the same phrase Orim's own field notes would use for a healthy
 membrane), is not scar tissue holding a separate, contained biology at bay. It **is** the
@@ -2453,3 +2460,48 @@ That is what comes next.
 *BeatIds abbreviated where unambiguous; full GUIDs in the DB (`Beats.Id`) and the blueprint tags
 (`NodeStructuralBlueprintBeatTags.BeatId`, BlueprintId `3F3C753E…`). Reading order = DB `SortKey`
 on the StoryNode; the numbers 5263–5286 (old Layer-B chapter beats) are retired to history.*
+
+## Beat Coordination Index {#SS-VIGL-COORD}
+
+> GENERATED by `ss --coordinate --slug <slug>`. Do not hand-edit — regenerated
+> on demand. This is the three-coordinate map: each beat's **meaning** (bible),
+> **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
+> Full record: `vigl-coordinate2.json`.
+
+**Coverage:** 29/29 beats fully covered. Story-wide construction: temporal=nonlinear, resolution=mixed, moral=ambivalent, ending=avalanche, granularity=beat.
+
+**Gap counts:** UNSCORED=29
+
+### —
+
+| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
+|---|---------|------|---------|--------------------|-------|-------|
+| 5306 | `40855320-b613-4683-a3dc-460f522fd539` | — | Establishes the archive setting and the membrane-crossi… | ?/? +temporal-anachrony✓ | 7388c | UNSCORED |
+| 5249 | `019f5768-973b-79df-a99f-e0621a41a867` | rising-action | Lyra arrives at the Veth Reliquary at dawn to find the … | ?/? +temporal-anachrony✓ | 46304c | UNSCORED |
+| 5250 | `019f5768-973c-7d2c-a1f7-8e7ef8fe3336` | rising-action | Lyra cannot cross the Cauld alone in winter; she hires … | ?/? +escalation✓ | 14235c | UNSCORED |
+| 5251 | `019f5768-973c-78d3-9002-99ac8df81722` | rising-action | Fevin is found sheltering in a waystation the two women… | ?/? +subplot✓ | 18773c | UNSCORED |
+| 5252 | `019f5768-973c-7aa2-ab34-df50caac6946` | rising-action | The party locates the thieves' first camp at a crevasse… | ?/? +form-device✓ | 25122c | UNSCORED |
+| 5253 | `019f5768-973c-7a19-b890-60e39776ce9a` | rising-action | Osra tells Lyra the specific facts of her daughter Call… | ?/? +subplot✓ | 16881c | UNSCORED |
+| 5254 | `019f5768-973c-72ef-a7ff-f7d46b699caa` | rising-action | The party catches up to Bren and his remaining accompli… | ?/? +escalation✓ | 29667c | UNSCORED |
+| 5255 | `019f5768-973c-7c21-b83f-d9e0d5461cd4` | rising-action | Bound and moving, Bren tells Lyra why he stole the devi… | ?/? +form-device✓ | 24479c | UNSCORED |
+| 5256 | `019f5768-973c-7417-bc74-23a80031430a` | rising-action | Fevin stops walking. He demands Lyra confirm or deny wh… | ?/? +subplot✓ | 26050c | UNSCORED |
+| 5257 | `019f5768-973c-7b77-aae2-4a782412b29c` | rising-action | Lyra allows Osra to hold the Oculus. Osra does not dest… | ?/? +subplot✓ | 19900c | UNSCORED |
+| 5258 | `019f5768-973c-77e6-b1ce-3a121c24b5ad` | rising-action | On day ten, Lyra spots the Vigil's advance riders on th… | ?/? +escalation✓ | 32647c | UNSCORED |
+| 5376 | `019f60d1-084a-76e4-9f45-a65045c46b10` | — | Introduces the core trio's dynamic and competencies thr… | ?/? +escalation | 21360c | UNSCORED |
+| 5259 | `019f5768-973c-71af-a894-38225de286d1` | rising-action | Lyra delivers Bren to the Ardenmere garrison as a captu… | ?/? +escalation✓ | 25606c | UNSCORED |
+| 5260 | `019f5768-973c-79cc-b1b8-65ca17729978` | rising-action | Canon Aldric Senne arrives at Ardenmere personally with… | ?/? +form-device✓ | 29468c | UNSCORED |
+| 5261 | `019f5768-973c-74a2-af0c-586632589059` | rising-action | Lyra reads the writ fully, in silence, in front of Senn… | ?/? +body-snatch-setpiece | 46126c | UNSCORED |
+| 5262 | `019f5768-973c-7640-8058-f27f04ee0ac0` | rising-action | Senne leaves with the column. The writ sits unsigned on… | ?/? +threshold✓ | 30025c | UNSCORED |
+| 5377 | `019f60d1-12d4-71a4-bfa2-48b8b968af63` | — | Escalates stakes by forcing a conscious choice to enter… | ?/? +creature-combat | 25603c | UNSCORED |
+| 5379 | `019f60d1-71c2-705c-bc95-13bc4e2a174f` | — | Builds dread through environmental absence rather than … | ?/? +monster-setpiece | 24844c | UNSCORED |
+| 5291 | `da607263-a95f-4803-a932-f790a4e6fc36` | — | Marks the journey's end-phase arrival while using the d… | ?/? +escalation✓ | 23831c | UNSCORED |
+| 5292 | `3dba7a47-5cc4-460f-ac50-1d5571fde6af` | — | Turns the mission from pursuit to acquisition by confir… | ?/? +body-snatch-setpiece✓ | 24354c | UNSCORED |
+| 5293 | `302f6e3f-6cbd-4af4-8b1d-7eeac1b5eb65` | — | Reveals Lyra's interior grief through her inability to … | ?/? +intertextual-touchpoint✓ | 27147c | UNSCORED |
+| 5294 | `90e0ffe7-ef7f-42d4-a5c7-e084ececb948` | — | Introduces an institutional ally operating outside the … | ?/? +form-device✓ | 21463c | UNSCORED |
+| 5295 | `76d2dbd6-784e-47d6-8762-9c30eb71ecad` | — | Pays off the eleven-day crossing by landing Rowe's dist… | ?/? +body-snatch-setpiece✓ | 37966c | UNSCORED |
+| 5297 | `9ba2cf72-f009-4820-8864-5d4c4f3f73c2` | — | Reestablishes the group's fragmented status on arrival … | ?/? +intertextual-touchpoint✓ | 34263c | UNSCORED |
+| 5298 | `2ff3b7a6-4771-42b0-9418-2420a987952d` | — | Establishes the expedition's arrival in hostile territo… | ?/? +escalation✓ | 16905c | UNSCORED |
+| 5380 | `019f612a-267d-7d92-8fd9-a4317fad24dc` | — | Introduces the titan mound as an overwhelming, unkillab… | ?/? +horror-combat | 40675c | UNSCORED |
+| 5378 | `019f60d1-1ca7-7de9-a59a-8b4faacc99a9` | — | Reveals the Zone has already outlasted human attempts t… | ?/? +horror-combat | 33050c | UNSCORED |
+| 5296 | `37b58d26-1005-4b20-ab01-f9d97c208bae` | — | Pays off the crossing's implied cost while delivering t… | ?/? +revelation✓ | 31230c | UNSCORED |
+| 5299 | `367915a7-6a6f-4d5a-ad64-84bce308286a` | — | Establishes the Singing Spires as an ambient, indiffere… | ?/? +resolution-mode✓ | 45839c | UNSCORED |
