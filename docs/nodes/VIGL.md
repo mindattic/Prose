@@ -1823,6 +1823,63 @@ That is what comes next.
 
 ---
 
+## Structural Blueprint {#SS-VIGL-blueprint}
+
+**Generated**: 2026-07-13 by `ss --generate-blueprint --slug the-vigil-s-end-019f5767`
+
+**Thematically-parallel subplot**: Kressida Haun's fusion to her battle-rig runs parallel to
+Rowe's language acquisition and testimony. Both ask: *when the institution has physically
+rewritten you, where does the self end and the system begin?* Rowe lost his language and
+rebuilt it into testimony; Kressida lost her body's autonomy and rebuilt her perception through
+the rig's sensors. Kressida's arc closes not with separation but with her still inside the
+rig — that IS the answer. Lyra's refusal of the writ is impossible without having watched
+both of them live inside what was done to them.
+
+**Temporal scheme**: Nonlinear — opens in medias res with the Lyra+Vega night-before scene
+(*Three Bodies and an Empty Case* — the argument about bread, the note on the table, sisters
+at the end of an ordinary evening), then cuts to the anonymous theft cold open, then forward
+to discovery. Rowe's analeptic chapters (Sphere 31 life before + the Taking + Seven Months
+at Vierna barracks) are embedded in the forward-moving pursuit thread. Vega's Scribe chapters
+are also analeptic relative to Lyra's pursuit but move forward internally. Effect: the reader
+knows what Lyra IS before the theft; the reader knows what Rowe WAS before the Taking; the
+Canon's administrative machinery is visible in motion before Lyra understands she is inside it.
+
+**Resolution mode**: Mixed — External success: the Relic is recovered, Vega's notary seal
+creates an instrument Prelacze cannot authorize away, Lyra refuses the writ before witnesses.
+Significant cost: Ardea dead, Lyra's rank forfeit, Kressida remains fused, Liturgy mobilization
+unresolved. The ending is not peace; it is the moment after the door closes behind her with
+no order to follow.
+
+**Moral polarity**: Ambivalent
+
+**Escalation curve**: [4,3,2,3,4,5,6,7,6,5,6,7,8,9,5,6,7,6,7,8,7,6,7,8,3,4,2,3,4,5,4,5,
+6,4,5,6,5,6,7,8,6,6,5,7,8,7,8,6,7,9,8,10]
+
+**Form device**: Epistolary fragment
+
+**Ending style**: Avalanche; no epilogue
+
+**Intertextual anchors** (5 entities from DB):
+1. Aerostatic architecture specification — Kressida produces a folded copy of the Liturgy's
+   Eirene-7 class specification during the Sal Vento planning session; House Lacerta
+   intelligence annotation in the margin that she does not explain. (Beat ~Sal Vento)
+2. Unattributed quote — carved into the stone lintel above the Ardenmere garrison gate; Lyra
+   reads it walking out unsigned at the writ refusal. She has passed it a dozen times and
+   never read it before. (Beat ~Authorization)
+3. Unattributed quote — Orim recites it from memory on the barge, apropos of nothing, while
+   Rowe is sleeping and Lyra is watching the river. He says he does not know who wrote it.
+   He says it was in a scry he ran forty years ago and he has never been able to place it.
+   (Beat ~River)
+4. Kenji Okonkwo-Barrett quote — Vega has copied it into the margin of her personal notary
+   register (the desk-drawer copy, not the canonical one). It travels with her to Sinter.
+   Visible in the dispatch chapter when she opens the register to record the journey.
+   (Beat ~She Goes to Sinter)
+5. Kenji Okonkwo-Barrett quote — The Long Seat scholar-keeper quotes it to Lyra when she
+   asks about the Eighth Theory — not as an answer but as a way of refusing to answer
+   directly. "The sentence that will not stop working." (Beat ~Long Seat)
+
+---
+
 ## 10. Narrative Locks {#SS-VIGL-9}
 
 1. **Lyra never confirms the membrane is alive.** She notices, accumulates, suspects. The reader sees it.
