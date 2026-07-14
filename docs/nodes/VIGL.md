@@ -5,7 +5,7 @@ code: VIGL
 layer: strand-bible
 universe: fantasy
 status: in-progress
-updated: 2026-07-12
+updated: 2026-07-14
 ---
 
 # STRAND BIBLE — Vigil's End (VIGL) {#SS-VIGL}
@@ -84,6 +84,12 @@ no irony (Taymor's *Titus*, Goold's *Macbeth*). Final Fantasy scope. LitRPG gear
 Legend of the Seeker humor — sincere adventure, absurdist moments, Rod misfires, banter.
 Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a–8b.
 
+**Monster ecology is encountered, not ambient:** the Cauld's Scryed hybrid beasts (creatures
+that cross through membrane apertures from other Spheres), the Sinterspawn from the crater
+depths, and the bandits/war-deserters along the road are **fought throughout the journey**,
+regularly, the length of the book — not scenery glimpsed in passing. The Legend of the Seeker
+adventure texture and the Final Fantasy scope both depend on the party actually fighting things.
+
 **This is NOT:**
 - A loss-of-innocence story in the sentimental sense. Lyra does not become sad. She becomes
   accurate.
@@ -149,6 +155,14 @@ covered by Wren.)*
   and resists alchemical splash — vigil operators use it as instrument as much as defense).
   Half-plate, not full (she left her full Vigil plate at the Station). White and Black Tincture
   field kit; Grey Tincture; Gold Tincture (one emergency dose, requires annual re-certification).
+- **Ardea's rifle — the ranged addition:** At Schmalburg, after Ardea Marten falls, Lyra takes
+  up her fallen comrade's Vierna-issue bolt-action rifle and carries it onward from there — a
+  fourth option alongside the Dissolution Blade and Vigil Shield, drawn when range serves the
+  fight better than the Blade's reach. Soren Rowe, the party's WW1-trained marksman, teaches her
+  to lead a moving target and work the bolt without breaking sightline — a small, real thread of
+  two very different soldiers meeting on the same skill, and Lyra's way of not leaving Ardea
+  behind. Her loadout is not fixed at the outset; it accumulates as the monster fights escalate
+  toward Sinter.
 
 ### Orim Zebulun — The Failed Keeper {#SS-VIGL-1b}
 - **House:** None. Calyx origin, long-since contract-independent.
@@ -262,26 +276,33 @@ covered by Wren.)*
   drop it entirely.)
 - **His designation — M-1018883:** *"Em One Oh One Triple Eight. Step forward."* The M is
   Myrmidon; the number is stamped where a name used to be. Short form: M-101. When Lyra finds him,
-  **"M-101" is the only thing he can say in her language with confidence** — the way a captured
-  soldier gives rank and serial number and nothing else, because it is the one true thing they
-  cannot make him regret saying.
+  **he gives "M-101" first** — the way a captured soldier gives rank and serial number and nothing
+  else, because it is the one true thing they cannot make him regret saying. He can say anything
+  he likes; for the first exchange, that is what he chooses to say.
 
 - **Origin (the life they took him out of):** Sphere 31 = **Earth, 1919**. Post-armistice England. A textile city on a canal —
   coal smoke, wet stone, dye works downwind, the particular quiet of a country that has not yet
   decided what peace is supposed to feel like. He has been home from France for eight months when
   the membrane takes him. The Liturgy does not know and does not care what his world calls itself.
-  His city's name Lyra cannot verify; he gives it to her at the end as *Aldenvast* — which may be
-  his pronunciation of an English name, or the Cauld approximation, or the only form the membrane
-  allowed through. No Cauld map will ever carry it.
-- **The split register — THIS IS THE CRITICAL RULE:**
-  To the party, Rowe cannot speak. He is nearly mute. He communicates in fragments and gestures
-  and wrong tenses and expressions that arrive backwards. The halting quality is not stupidity,
-  and it is not only translation — it is a whole mind speaking through a machine's crude
-  voice-box. His own language is fluent and precise; the tin throat it must pass through is not.
-  Inside his POV chapters: he is a fully articulate Englishman from 1919, thinking in the idiom
-  of a man who has been to France, has worked in a mill, knows the weight of a rifle and the
-  smell of particular kinds of stone and mud. His internal voice is not compressed or simplified.
-  It is exact. This is the register the reader gets; nobody in the story gets it.
+  He could say his city's name any time the shell gives him a voice to say it with — he simply does
+  not, for most of the book. He gives it to Lyra at the end as *Aldenvast*, spoken aloud for the
+  first time since the Taking: not a name he *couldn't* give her before, but the thing he would not
+  say until now. Whether it is his pronunciation of an English name, the Cauld approximation, or the
+  only form the membrane allows through, no Cauld map will ever carry it.
+- **The translation faculty — THIS IS THE CRITICAL RULE:**
+  The Myrmidon shell carries a translation faculty built into its Vierna manufacture: it renders
+  whatever he means to say into fluent Cauld, and renders whatever is said to him into words he
+  understands, instantly and completely, from the moment the Taking is complete. He is not mute
+  and never has been. What the reader gets in his POV chapters and what the party hears out of the
+  chassis are the SAME voice — a fully articulate Englishman from 1919, thinking and speaking in
+  the idiom of a man who has been to France, has worked in a mill, knows the weight of a rifle and
+  the smell of particular kinds of stone and mud. His internal voice and his spoken voice are not
+  two registers; they are one man's voice passed, without loss of content, through a machine that
+  gives it a flat, toneless timbre — exact words, affectless delivery, and it takes people time to
+  stop mistaking a toneless voice for a slow mind. What he withholds, he withholds on purpose: for
+  weeks after Lyra finds him he gives clipped, guarded answers — grief and distrust, not
+  incapacity — and it is weeks before the party gets more than his designation and a soldier's
+  account of himself.
 - **He recognizes the geography — and never says so:**
   The Cauld maps onto a Europe he half-knows. Vierna's river-country bends the way rivers bend
   in northern France — he was in northern France eight months ago; the specific angle of light
@@ -305,8 +326,9 @@ covered by Wren.)*
   the chassis. The "M" is Myrmidon: a mind Scried out of a living person in another Sphere and
   issued a disposable body. Not a captured man — a stolen consciousness in a machine.
 - **In the Cauld:** Seven months total (three as active Vierna conscript, four as deserter).
-  No Cauld language at start. Vocabulary accumulates at a documented pace: four words by
-  Chapter 10, full sentences by Chapter 16, Aldenvast at the final scene.
+  Fluent in Cauld from the moment the shell activates — the translation faculty is instant, not
+  learned. What changes over the seven months is not his vocabulary but his willingness:
+  designation only, then clipped answers, then guarded testimony, then, at the very end, Aldenvast.
 - **The body (the chassis) — small, disposable:** A Vierna military Myrmidon-shell. Black,
   jointed, and deliberately **small** — a head shorter than the men around it, built to the
   cheapest disposable-infantry spec — with an oval optical receptor for a face: no expression to
@@ -332,6 +354,43 @@ covered by Wren.)*
   destroyed, dragged off, or claimed while he is gone, and then he *cannot get it back* and must
   find a *similar* replacement, wearing a stranger's spec until he can. His own small shell is
   irreplaceable to him; to be cut off from it is a small death. The power is never free.
+  **Living Weapons — the eviction cost {LOCK}:** Much of Vierna/Atrament war materiel is not
+  empty shell but a **Living Weapon** — a machine or weapon already animated by another bound,
+  stolen mind. M-101 can jump freely into anything empty, dormant, or derelict; to take a
+  *Living* Weapon he must **kill the resident mind first** — a contested, costly eviction, and
+  usually the killing of another victim exactly like him. This caps the "just seize the biggest
+  enemy mech" problem: bigger iron costs a life, every time, not merely a jump. **The Eirene-7
+  is a Living Weapon** — to fly it, M-101 kills the mind already bound inside it; the airship
+  acquisition (design-menu #3 below, SK1600) is a killing wearing the shape of a masterstroke,
+  not a clean one. **CLEVER over GODLIKE:** the power is written to favor tactical, environmental
+  use of ordinary machinery — a forge crane or crank to seize, crush, or hurl an enemy; a press;
+  a turret; a mine-cart — over "become a bigger monster" as the default solution. Turret #34
+  (the flashback) is the origin demonstration of the wireless transfer itself, before he ever
+  learns that taking an occupied Living Weapon means taking a life.
+- **Passive scan / appraisal — the intake routine he cannot switch off {LOCK}:** The Myrmidon
+  chassis runs a Vierna military intake/appraisal subroutine baked into the shell itself; M-101
+  cannot disable it. It fires passively, unbidden, on whatever he studies with intent: gear
+  (make, Sphere-source pattern, condition, load) and living things (mass, gait, weak points)
+  each print as a short, cold **STAT-BLOCK** in his interior register — tin-precise, clinical,
+  the appraisal voice of a war machine cataloguing the field. It does not stay confined to his
+  interior register: when it fires mid-sentence, it interrupts him aloud — the machine's intake
+  routine speaking over the man, his fluent human voice breaking off into the flat, clinical
+  stat-block before he can finish what he meant to say. The horror is no longer that he cannot
+  speak; it is that the machine can, and does, cut him off. On a Scryed beast it also returns
+  provenance — which Sphere it was pulled from. **On Sinterspawn it returns "off-catalogue /
+  no match"** — the routine has nothing to file it under, and the absence is its own quiet
+  horror; it feeds both the crater revelation and the standing plant that the Liturgy's own
+  numbering has quietly catalogued every harvested Sphere except this one. **The pathos:** a
+  stolen human mind forced to render a machine's bloodless appraisal of everything and everyone
+  around him, including things he would rather just feel — and forced to let it override his own
+  voice, mid-thought, whenever it fires. **Form device:** rendered as a short inset stat-block
+  (three to five lines, tin-precise register), used sparingly — never every scene. **First
+  established:** Schmalburg, the night Lyra lifts Ardea's fallen rifle — M-101 scans it unbidden
+  and prints its stat-block (make, Sphere-source pattern, condition), breaking off mid-sentence
+  to do it — the reader's and the party's first demonstration of the ability. **LOCKS:** passive
+  and always-on, never a voluntary power he chooses to use; scans machines/gear/creatures only,
+  never the minds of the party; on Sinterspawn: off-catalogue / no match, every time; can
+  interrupt his own fluent speech mid-sentence when it fires unbidden.
 - **What he knows:** In Vierna barracks he met men who called themselves Sphere 22, Sphere 14,
   Sphere 8. He has seen the catalogue notation on intake documents. He knows the numbers go
   past 31. He can say this by Chapter 16.
@@ -342,9 +401,12 @@ covered by Wren.)*
 - **His military training:** Vierna service is real training layered on top of French service.
   He fights effectively when he does not understand the tactical situation. At Schmalburg he
   shoots through a crossfire by reading terrain rather than orders. The party's respect comes
-  before he can explain himself. He cannot yet explain himself for weeks afterward.
-- **Arc:** He begins unable to speak. He ends with enough Cauld to give full testimony and to
-  tell Lyra that his city is called Aldenvast. The testimony is the arc. The name is the gift.
+  before he chooses to explain himself — he could speak from the first night, but grief and
+  distrust keep him terse for weeks afterward.
+- **Arc:** He begins able to speak — the shell's translation faculty is instant and complete —
+  but chooses silence and designation-only answers out of grief and mistrust. He ends giving full
+  testimony and speaking Aldenvast aloud for the first time since the Taking. The withholding,
+  and the choice to stop withholding, is the arc. The name is the gift he chooses to give.
 
 #### First-Night Flashback — LOCKED SCENE (the night Lyra finds him; ~SK800) {#SS-VIGL-1c-flashback}
 
@@ -372,8 +434,10 @@ scene establishes the atrocity that ripples through the rest of the book. Imager
   cooking itself — and the knowledge that a refusal, in a disposable body, is only ever *noted*,
   never punished. You do not court-martial a tool. You scrap it.
 
-**Delivery:** the reader gets the articulate 1919 man; the party gets a black automaton that can
-say two syllables. The gap is the point. **Ripple:** every later beat with a Vierna Myrmidon,
+**Delivery:** the reader and the party both get the same articulate 1919 man — the shell's
+translation faculty means nothing is lost between his mind and his mouth. What survives from the
+old device is the toneless, tin-flat delivery: a fully human voice rendered without warmth or
+inflection, which is its own kind of gap. **Ripple:** every later beat with a Vierna Myrmidon,
 every "death without cause" mentioned in passing, should carry this scene underneath without
 restating it.
 
@@ -393,7 +457,9 @@ The power earns its keep by escalating and by costing. Recommended deployment:
 3. **Become the airship — Eirene-7 acquisition (SK1600).** The masterstroke and the callback: he
    was **Turret #34** on a Vierna gunship; now, to steal the Eirene-7, **he BECOMES the airship,**
    flying it from inside its control-mind. Highest **cost/tension** — a hull that large is hard to
-   leave; he risks being stranded as the ship, unable to get home to his small shell.
+   leave; he risks being stranded as the ship, unable to get home to his small shell. The
+   Eirene-7 is a **Living Weapon**: becoming it means killing the mind already bound inside it
+   first — the masterstroke is a killing wearing the shape of a rescue.
 4. **The cost pays off (late — Pallor SK1900 / the road to Sinter).** A jump goes wrong: his home
    shell is destroyed or claimed while he is out, and he must inhabit a **replacement** — a
    stranger's spec that never fits right. The party feels the loss; something of him does not come
@@ -968,8 +1034,10 @@ forms — all evolved independently. The Liturgy is not derived from Christianit
 in this geography. The Houses are not Germanic kingdoms or French feudalism; they are what
 independent political development looks like after 20,000 years on the same terrain. The
 Cauld language has no relation to English, French, German, or any of Rowe's languages —
-which is why he cannot speak it and why his eight months of Vierna service produced only
-the ability to follow orders, not to communicate. The faces look familiar. Nothing else does.
+which is why, without the Myrmidon shell's translation faculty, he would have been as mute as any
+other stolen mind dropped in a foreign Sphere. The shell renders it fluently, both ways, from the
+moment the Taking is complete; what it cannot translate is everything the language carries. The
+faces look familiar. Nothing else does.
 No gods he knows. No wars he has read about. No institutional memory that connects to anything
 he was taught. The cultural inheritance is zero. The physical inheritance is complete.
 
@@ -979,9 +1047,10 @@ same stone buildings (because stone is what lasts here) — but its theology, it
 its founding texts, its rituals and its crimes are entirely its own. The Canon Immaculate
 is not a Pope. He fills an analogous function in an independent institution.
 
-**In the prose:** Rowe sees faces. He does not understand a word. Both of these are true at once,
-and that gap — recognition without comprehension — is what makes his situation feel like a
-particular kind of alone. He has never been anywhere he both belongs and doesn't belong more.
+**In the prose:** Rowe sees faces he half-recognizes and understands every word said to him — the
+shell sees to that. Both of these are true at once, and that gap — full comprehension and total
+unbelonging — is what makes his situation feel like a particular kind of alone. He has never been
+anywhere he both belongs and doesn't belong more.
 
 **Current year — Year 1138.** The Cauld's calendar counts from the bolide impact (Year 1).
 The Oculus has been at Ocipheus since Year 397; "seven hundred and forty-one years" in Ch.1
@@ -1376,16 +1445,18 @@ The final scene — vigil room, membrane, watching — is where the register set
 that has no institutional name yet.
 
 **B-plot registers:**
-- **Rowe (external):** Halting, wrong tenses, occasionally backwards. To the party, nearly
-  mute. His growing Cauld is tracked: four words by Chapter 10, full sentences by Chapter 16,
-  Aldenvast at the final scene.
-  **Rowe (internal — R-chapters):** Fully articulate Englishman from 1919. Post-armistice
-  sensibility; has been to France; knows the weight of a rifle and the quality of certain stone
-  and mud. His internal voice is exact, not compressed. The reader gets the full man; nobody
-  in the story does. His POV chapters are in his own thought-patterns: concrete, sensory,
-  present-tense urgency even in past narration. He maps the Cauld onto a half-familiar Europe —
-  never says so. Two or three recognition moments per chapter, sensory and brief, then he moves
-  on. **Never more than a line. Never analytical. The mystery is preserved by brevity.**
+- **Rowe (external and internal — one register):** Fully articulate Englishman from 1919,
+  spoken aloud and thought in the same voice — the shell's translation faculty carries his speech
+  to the party without loss. Post-armistice sensibility; has been to France; knows the weight of a
+  rifle and the quality of certain stone and mud. His voice is exact, not compressed, in dialogue
+  and interior alike. What the reader gets, the party gets too. The one texture that marks his
+  speech as machine-carried is delivery, not content: flat, toneless, affectless — people mistake
+  it for a slow mind before they learn better. What he withholds, he withholds by choice: terse,
+  guarded answers for weeks after Lyra finds him, opening slowly into full testimony. His POV
+  chapters are in his own thought-patterns: concrete, sensory, present-tense urgency even in past
+  narration. He maps the Cauld onto a half-familiar Europe — never says so. Two or three
+  recognition moments per chapter, sensory and brief, then he moves on. **Never more than a line.
+  Never analytical. The mystery is preserved by brevity.**
 - **Aldric:** Close to Lyra's construction (full sentences, elevated) but different weather.
   Where Lyra is certain and methodical, Aldric is watchful and routes his questions inward.
   His register has a quality of formal accuracy about things he does not fully trust.
@@ -1831,9 +1902,10 @@ That is what comes next.
 ## 10. Narrative Locks {#SS-VIGL-9}
 
 1. **Lyra never confirms the membrane is alive.** She notices, accumulates, suspects. The reader sees it.
-2. **Rowe's origin world is Sphere 31** but its geography, culture, and name in his own language
-   are not disclosed until the last beat — *Aldenvast* is the one name he gives her, and it is
-   a gift, not information.
+2. **Rowe's origin world is Sphere 31** but its geography and culture are disclosed only in
+   glimpses he chooses to give — and its name in his own language, *Aldenvast*, he could say from
+   the first night and does not, until the last beat. It is a gift he chooses to give, not
+   information he was finally able to produce.
 3. **The Long Seat's eighth theory is never disclosed.** It remains operative in Lyra as the book ends.
 4. **The Canon leaves unpunished.** Nothing is resolved. The Liturgy's apparatus is intact.
    The mobilization Prelacze staged does not unwind. It simply has no target yet.
@@ -1882,8 +1954,8 @@ That is what comes next.
 
 **Moral polarity:** Ambivalent.
 
-**Escalation curve** (24-beat consolidated spine, 2026-07-14): `[4,3,4,3,4,6,5,4,5,5,4,5,5,8,6,4,8,5,5,9,6,8,6,10]`
-(One value per beat in the [Beat Coordinate Map](#SS-VIGL-coordmap). Peaks: beat 14 Schmalburg reveal/Ardea, beat 17 airship masterstroke, beat 20 Vaen + shell-loss, beat 22 revelation, beat 24 climax.)
+**Escalation curve** (28-beat spine incl. the 4 monster/bandit setpieces, 2026-07-14): `[4,3,4,3,4,6,5,4,5,5,4,5,5,5,8,6,6,7,4,8,5,5,9,6,8,8,6,10]`
+(One value per beat in reading order — see the [Beat Coordinate Map](#SS-VIGL-coordmap). Peaks: Schmalburg reveal/Ardea, the apex-beast setpiece, airship masterstroke, Vaen + shell-loss, Sinterspawn, the revelation, the climax.)
 
 **Form device:** Epistolary fragment — Vega's chapters are structured around the canonical documents she is copying and notarizing; the bureaucratic text of the instruments appears as block quotation within her POV sections.
 
@@ -1892,7 +1964,7 @@ That is what comes next.
 **Intertextual anchors (5):**
 1. *Aerostatic Architecture specification sheet* — Orim produces a folded copy annotated in a different ink when planning the Eirene-7 acquisition. Lyra reads the annotations, not the document. (Beat 43 / SK1600)
 2. *(Unattributed quote)* — Carved into the lintel of the Twr Brennid vault on Caer Glas Moor — the Long Seat's answer to the Eighth Theory. Lyra reads it aloud, once, in the rain. Orim says he has seen it before and did not understand it the first time either. (Beat 50 / SK2100)
-3. *Kenji Okonkwo-Barrett quote* — Rowe quotes this, haltingly in Cauld that is not yet fluent, during his channel testimony. He doesn't know the author's name. He learned it from another conscript who had it written on the inside of a boot. (Beat 44 / SK1700)
+3. *Kenji Okonkwo-Barrett quote* — Rowe quotes this, fluent and exact, in the same flat delivery as everything else he says, during his channel testimony. He doesn't know the author's name. He learned it from another conscript who had it written on the inside of a boot. (Beat 44 / SK1700)
 4. *(Unattributed quote)* — Pinned above Vega's copy desk. She has stopped seeing it. When she recognizes that the name on the transit suspension is her sister's, the camera lingers on the quote for one sentence before she stands up. (Beat 31 / SK1200)
 5. *Kenji Okonkwo-Barrett quote* — Orim cites this to Lyra at the Forge Hearth when she asks why he kept taking the contracts for forty years after he knew about the intake. He does not say it is a quote. She does not ask. (Beat 40 / SK1400)
 
@@ -1944,19 +2016,23 @@ That is what comes next.
 | 6 | 5253 | 019F5768-973C-7A19 | The Taking | ROWE | Mind Scried into a shell; Turret #34 refusal | subplot / body-snatch origin (esc 6) |
 | 7 | 5254 | 019F5768-973C-72EF | Vierna Entry | LYRA | Military state; the law doesn't apply | escalation (esc 5) |
 | 8 | 5255 | 019F5768-973C-7C21 | No Action Indicated | SCRIBE | The suppressed record; the motif | form-device (esc 4) |
-| 9 | 5256 | 019F5768-973C-7417 | Sphere 31 — Rowe Found | LYRA | Mute automaton found; split register | subplot (esc 5) |
-| 10 | 5257 | 019F5768-973C-7B77 | Seven Months | ROWE | 3 conscript / 4 deserter; vocabulary grows | subplot (esc 5) |
+| 9 | 5256 | 019F5768-973C-7417 | Sphere 31 — Rowe Found | LYRA | Automaton found; stolen mind speaks fluently, gives designation only | subplot (esc 5) |
+| 10 | 5257 | 019F5768-973C-7B77 | Seven Months | ROWE | 3 conscript / 4 deserter; weapons recognition | subplot (esc 5) |
 | 11 | 5258 | 019F5768-973C-77E6 | The River | LYRA | River bends like France; silent recognition | escalation (esc 4) |
+| 11a | 5376 | 019F60D1-084A | The Road — Deserters and War-Dogs | LYRA | Bandit/deserter ambush on the no-colors road | escalation (esc 5) |
 | 12 | 5259 | 019F5768-973C-71AF | Atrament — The Forge Kingdom | LYRA | War production; slave labor unnamed | escalation (esc 5) |
 | 13 | 5260 | 019F5768-973C-79CC | The Review Session | SCRIBE | Dual-objective of the theft seeded | form-device (esc 5) |
 | 14 | 5261 | 019F5768-973C-74A2 | Schmalburg — The Raid; the Eaters | LYRA | Ardea dies; the grizzly reveal | **body-snatch setpiece #1** (esc 8) |
 | 15 | 5262 | 019F5768-973C-7640 | The Forge Hearth | LYRA | Orim's Rod fails; the Fire Scry | threshold to Act 3 (esc 6) |
+| 15a | 5377 | 019F60D1-12D4 | The Monster Corridor | LYRA | Scryed hybrid pack; scan prints Sphere-source; Lyra learns Ardea's rifle | creature-combat (esc 6) |
+| 15b | 5379 | 019F60D1-71C2 | The Thing from Another Sky | LYRA | Apex Scryed beast; unit tactics gel; Orim's Rod point-blank | monster-setpiece (esc 7) |
 | 16 | 5291 | DA607263 | Sal Vento — The Port | LYRA | Loera cliff port; sets up the airship | escalation (esc 4) |
 | 17 | 5292 | 3DBA7A47 | The Acquisition — Eirene-7 | LYRA | M-101 *becomes* the airship | **body-snatch setpiece #3** (esc 8) |
 | 18 | 5293 | 302F6E3F | The Channel — Rowe Testifies | LYRA/ROWE | Testimony; Orim hears it plainly | intertextual (Kenji quote) (esc 5) |
 | 19 | 5294 | 90E0FFE7 | She Goes to Sinter | SCRIBE | Vega seals the notary instrument | form-device (esc 5) |
 | 20 | 5295 | 76D2DBD6 | Pallor Reached — Caer Glas Moor | LYRA | Esvane/Petra die; Vaen; Wren joins | **body-snatch setpiece #4 (cost)** (esc 9) |
 | 21 | 5298 | 2FF3B7A6 | The Zone — Entering Sinter | LYRA | The wrongness mounts | escalation (esc 6) |
+| 21a | 5378 | 019F60D1-1CA7 | Sinterspawn — the Eaters at the Perimeter | LYRA | Sinterspawn; scan returns OFF-CATALOGUE; the Eaters hunt; feeds the revelation | horror-combat (esc 8) |
 | 22 | 5296 | 37B58D26 | The Relic — What the Eye Has Seen | LYRA | The 397→1138 time-lapse revelation | revelation (esc 8) |
 | 23 | 5297 | 9BA2CF72 | The Long Seat — The Eighth Theory | LYRA | Theory undisclosed; Wren the Calyx view | intertextual (Twr Brennid) (esc 6) |
 | 24 | 5299 | 367915A7 | The Aperture — What Loyalty Means | LYRA | Climax; writ refused; Aldenvast gift | **setpiece #5 (refusal)** / resolution (esc 10) |
