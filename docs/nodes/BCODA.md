@@ -1708,12 +1708,12 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4339 | `019ee6f7-3316-76eb-8d3c-f3541c5dcf3b` | Fun and Games | Kyle sits with a psychically overwhelmed Psyk experienc… | 5/quiet | 1145c | UNSCORED |
 | 4340 | `019ee6f7-6ef3-71ae-8c3d-001332c601c4` | Fun and Games | A mysterious handwritten note summons Kyle to an antiqu… | 5/quiet | 1490c | UNSCORED |
 | 4324 | `019ee6f2-c80f-7e16-8d44-5e3d5ab69e24` | inciting-incident | Kyle arrives at the Halsted address on foot, Silence un… | 5/quiet | 810c | UNSCORED |
-| 4325 | `019ee6f2-c80f-72bc-acff-6537f94f275b` | scene-break | A handwritten sign taped to the door reads Ñu's full na… | 5/quiet | 449c | UNSCORED |
+| 4325 | `019ee6f2-c80f-72bc-acff-6537f94f275b` | scene-break | Establishes the scene's emotional register through phys… | 5/quiet | 449c | UNSCORED |
 | 5228 | `019f4f06-0000-7000-8000-000000000005` | — | Reveals how the world quietly accommodates irreversible… | 5/quiet | 1364c | UNSCORED |
-| 4326 | `019ee6f2-c80f-724a-a103-147b6218aca4` | rising-action | The front room holds forty people Kyle does not know. M… | 5/quiet | 917c | UNSCORED |
-| 4328 | `019ee6f2-c80f-7c3f-b2c7-c582085510f1` | scene-break | Someone has taped photographs to a corkboard. One is an… | 5/quiet | 879c | UNSCORED |
-| 4329 | `019ee6f2-c80f-748d-85aa-feb3b1798313` | rising-action | The Psyk loses containment for four seconds. The hum sp… | 5/quiet | 1273c | UNSCORED |
-| 4333 | `019ee6f2-c80f-7343-bf92-474cf1ebcf5f` | rising-action | Kyle finds the Psyk on the curb, both hands over their … | 5/quiet | 731c | UNSCORED |
+| 4326 | `019ee6f2-c80f-724a-a103-147b6218aca4` | rising-action | Reveals Kyle's grief through restraint, positioning him… | 5/quiet | 917c | UNSCORED |
+| 4328 | `019ee6f2-c80f-7c3f-b2c7-c582085510f1` | scene-break | Pays off the professional distance of Kyle and Null's r… | 5/quiet | 879c | UNSCORED |
+| 4329 | `019ee6f2-c80f-748d-85aa-feb3b1798313` | rising-action | Delivers a posthumous revelation that Null knew her fat… | 5/quiet | 1273c | UNSCORED |
+| 4333 | `019ee6f2-c80f-7343-bf92-474cf1ebcf5f` | rising-action | Escalates the uncanny by externalizing Null's residual … | 5/quiet | 731c | UNSCORED |
 | 4335 | `019ee6f2-c80f-77da-9f70-ffd735e7b251` | denouement | Kyle stands at the end of Halsted in the rain that was … | 5/quiet | 1001c | UNSCORED |
 | 4369 | `69428603-a5ad-477d-a234-46afea40009b` | Midpoint | A operative with neural implants detects a mysterious u… | 5/quiet | 1329c | UNSCORED |
 
@@ -1732,18 +1732,18 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4321 | `019ee6e5-e1c3-770e-ae10-02290ae367d1` | Midpoint | Kyle approaches Pixel's work station while she calibrat… | 5/exchange | 2550c | UNSCORED |
 | 4322 | `019ee6e6-315e-7f0f-9009-78954ca075d5` | Midpoint | Kyle nearly speaks while Pixel reaches past him during … | 5/exchange | 2165c | UNSCORED |
 | 4323 | `019ee6e6-641b-7c0f-96a6-eef1f5bade19` | Bad Guys Close In | Kyle leaves Pixel alone with her equipment, establishin… | 5/exchange | 1663c | UNSCORED |
-| 4308 | `019ee6e1-5ce0-723c-975c-9ee6e76a6bf8` | inciting-incident | Kyle enters 2E. The 53-second log counter is still runn… | 5/exchange | 2143c | UNSCORED |
-| 4309 | `019ee6e1-5ce1-7e18-b30c-2fcc88345c55` | scene-break | Pixel is mid-calibration on a sensor array. She does no… | 5/exchange | 2933c | UNSCORED |
-| 4310 | `019ee6e1-5ce1-7237-8dea-3762d51e65c8` | rising-action | Kyle crosses to the bench and stops. Six inches between… | 5/exchange | 1479c | UNSCORED |
-| 4311 | `019ee6e1-5ce1-728f-9887-3dc1e4832d94` | scene-break | The 53-second counter ticks in Kyle's overlay. He almos… | 5/exchange | 1375c | UNSCORED |
-| 4312 | `019ee6e1-5ce1-71f1-a136-f29795410833` | rising-action | Pixel sets down her tool. She looks at his hands, not h… | 5/exchange | 1870c | UNSCORED |
-| 4313 | `019ee6e1-5ce1-7230-a8af-4763e42b0906` | scene-break | Pixel reaches past Kyle to close the parts drawer. Her … | 5/exchange | 542c | UNSCORED |
-| 4314 | `019ee6e1-5ce1-77f4-8586-d2b30c50ca02` | rising-action | Kyle opens his mouth. One syllable. Not a word yet. Pix… | 5/exchange | 579c | UNSCORED |
-| 4315 | `019ee6e1-5ce1-7a6a-821b-0cb5d29336eb` | climax | Kyle does not finish the syllable. He looks at the wall… | 5/exchange | 446c | UNSCORED |
-| 4316 | `019ee6e1-5ce1-7e32-bcdd-7b7995d3e414` | rising-action | Kyle understands, standing there, that he did not come … | 5/exchange | 1134c | UNSCORED |
-| 4317 | `019ee6e1-5ce1-7d92-8397-b8c7916d68e9` | transition | Kyle says he will be in the armory if she needs a secon… | 5/exchange | 684c | UNSCORED |
-| 4318 | `019ee6e1-5ce1-78a7-b6f1-61d4957131c1` | denouement | Kyle pauses at the door. His hand is on the frame, not … | 5/exchange | 667c | UNSCORED |
-| 4319 | `019ee6e1-5ce1-7287-bcb3-96a789954501` | denouement | Pixel picks up the tool she set down. The calibration i… | 5/exchange | 659c | UNSCORED |
+| 4308 | `019ee6e1-5ce0-723c-975c-9ee6e76a6bf8` | inciting-incident | Turns Kyle's grief into investigative momentum by revea… | 5/exchange | 2143c | UNSCORED |
+| 4309 | `019ee6e1-5ce1-7e18-b30c-2fcc88345c55` | scene-break | Escalates unease by revealing the routing shell's insti… | 5/exchange | 2933c | UNSCORED |
+| 4310 | `019ee6e1-5ce1-7237-8dea-3762d51e65c8` | rising-action | Confronts Kyle with the unsettling recognition that the… | 5/exchange | 1479c | UNSCORED |
+| 4311 | `019ee6e1-5ce1-728f-9887-3dc1e4832d94` | scene-break | Turns Kyle's investigation into a direct, ambiguous act… | 5/exchange | 1375c | UNSCORED |
+| 4312 | `019ee6e1-5ce1-71f1-a136-f29795410833` | rising-action | Pays off the night's accumulating tension by having Kyl… | 5/exchange | 1870c | UNSCORED |
+| 4313 | `019ee6e1-5ce1-7230-a8af-4763e42b0906` | scene-break | Establishes the protagonist's controlled emotional stat… | 5/exchange | 542c | UNSCORED |
+| 4314 | `019ee6e1-5ce1-77f4-8586-d2b30c50ca02` | rising-action | Reveals she holds a long-settled answer to an unspoken … | 5/exchange | 579c | UNSCORED |
+| 4315 | `019ee6e1-5ce1-7a6a-821b-0cb5d29336eb` | climax | Deepens her self-possession by showing she has already … | 5/exchange | 446c | UNSCORED |
+| 4316 | `019ee6e1-5ce1-7e32-bcdd-7b7995d3e414` | rising-action | Pays off the carousel detail and the counter motif to c… | 5/exchange | 1134c | UNSCORED |
+| 4317 | `019ee6e1-5ce1-7d92-8397-b8c7916d68e9` | transition | Reanchors her in concrete, deadline-driven work to show… | 5/exchange | 684c | UNSCORED |
+| 4318 | `019ee6e1-5ce1-78a7-b6f1-61d4957131c1` | denouement | Escalates tension by letting her overhear his relay exc… | 5/exchange | 667c | UNSCORED |
+| 4319 | `019ee6e1-5ce1-7287-bcb3-96a789954501` | denouement | Closes the chapter by turning the empty space beside he… | 5/exchange | 659c | UNSCORED |
 | 5183 | `c235aff1-425c-4b30-9245-86dae9a9a56e` | — | Deepens the Kyle-Pixel relationship by showing their do… | 5/exchange | 4561c | UNSCORED |
 
 ### Eleven Seconds

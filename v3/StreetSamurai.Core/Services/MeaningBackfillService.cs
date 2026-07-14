@@ -37,6 +37,7 @@ public class MeaningBackfillService
 
     public async Task<MeaningBackfillReport> BackfillAsync(
         string slugOrCode, int? limit = null, bool dryRun = false,
+        bool overwrite = false, HashSet<int>? onlyNumbers = null,
         Action<string>? progress = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -46,15 +47,21 @@ public class MeaningBackfillService
             ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
 
+        // overwrite=false (default): only beats with no recorded meaning (backfill).
+        // overwrite=true: regenerate meaning from prose even if Description is set (refresh).
+        // onlyNumbers: restrict to these beat numbers (targeted refresh).
         var missing = await (
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
             where bn.IsEnabled && (bn.NodeId == node.Id || c.ParentNodeId == node.Id)
-                  && (b.Description == null || b.Description == "")
+                  && (overwrite || b.Description == null || b.Description == "")
                   && b.Text != null && b.Text != ""
             orderby c.SortKey, bn.SortKey
             select new { b.Id, b.Number, b.Text, Chapter = c.Title }).ToListAsync(ct);
+
+        if (onlyNumbers is { Count: > 0 })
+            missing = missing.Where(m => onlyNumbers.Contains(m.Number)).ToList();
 
         if (limit.HasValue) missing = missing.Take(limit.Value).ToList();
 
