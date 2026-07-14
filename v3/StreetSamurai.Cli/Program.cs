@@ -1724,6 +1724,16 @@ if (args.Contains("--sync-blueprint-from-session"))
     return;
 }
 
+// ss --close-all-sessions
+// Called by the /commit skill before every commit to flush open edit sessions,
+// run bible + blueprint sync for each, and draw a clean 3B coordination boundary.
+if (args.Contains("--close-all-sessions"))
+{
+    var sp = BuildServicesWithVault(args);
+    Environment.ExitCode = await CloseAllSessionsCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: show running token cost tally for the current process.
 //   ss --cost              print session cost table
 //   ss --cost --json       emit summary as JSON

@@ -5,6 +5,7 @@ description: Stage, commit, push, and print the commit hash. Use /commit for aut
 
 When invoked:
 
+0. **3B sync (Beat ↔ Bible ↔ Blueprint):** run `dotnet run --project v3/StreetSamurai.Cli -- --close-all-sessions` via the Bash tool. This flushes any open edit sessions: extracts canon facts from edited beats and appends them to the relevant node bible, confirms or flags blueprint tags, then closes the sessions. If there are no open sessions it exits instantly. This step draws the coordination boundary so every commit is fully aligned. **Skip this step** only if the changes are purely code/infrastructure (no `docs/nodes/*.md` or beat-related files in the diff).
 1. Run `git status` and `git diff --stat` to see what changed
 2. Stage changed tracked files (use specific filenames, not `git add -A`)
 3. **If arguments were provided** (`$ARGUMENTS`), use that as the commit message
