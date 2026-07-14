@@ -763,6 +763,11 @@ Rowe knowing what a line looks like when it breaks.
     Aldric names Prelacze
 11. Eirene's Gate / The Pass — the strait; Vigil checkpoint; Rowe testifies
 12. Sinter zone — the aperture; climax
+    - **Beulman — the empty farmsteads (BEAT 5380):** an abandoned farming district on the
+      outer edge of the Sinter zone, crossed between The Zone (beat 5298) and the Eaters at
+      the Perimeter (beat 5378). Everyone here is dead; the Sinterspawn have nested in the
+      corpses' chest cavities. The party crosses it and shelters a night in a loft before
+      reaching the perimeter.
 13. Return airship run to Ocipheus Station; Canon confrontation
 
 ### The membrane at each threshold — what each kingdom Scrys {#SS-VIGL-3b}
@@ -1123,6 +1128,21 @@ biology is evidence of centuries of membrane puncture.
 - **Pallor moor-hound:** Not canine. Six-legged, low to ground, long-necked. Used by Pallor
   trackers. Native to a heathland Sphere; can follow the thermal trace of a Heloth courier
   for three days. Aldric's squad uses them.
+
+**Sinterspawn — appearance LOCK:** Phyrexian-like: black, slick with oil-thick ichor, vaguely
+fetal and underdeveloped — unfinished things that look like they stopped growing partway and
+kept moving anyway. Always draped in the same black ichor they live in; it does not dry, it
+pools. **Off-catalogue:** M-101's passive-scan returns "no match" on them, every time (see the
+passive-scan LOCK, §1c) — the appraisal routine has nothing to file them under.
+
+**Sinterspawn bestiary — sample of what the zone produces:**
+- **Hijacked fauna (e.g. deer):** a native animal with a second Sinterspawn head erupting from
+  it, the parasite controlling more than half the body; the host screams and wails, dragged
+  along against its will.
+- **Burrowing scorpions:** tunnel up through the ground; the sting delivers a paralytic.
+- **Corpse-fusion abominations:** multiple dead bodies fused into one shambling, lurching mass.
+- **Face-worms:** worms with humanoid faces, writhing powerlessly.
+- **Ichor-birds:** carrion-birds; sickle-hooked beaks; frayed, torn-kite wings; ichor-draped.
 
 **Preserved crossings:** Zone creatures that died emerging through membrane tears at
 high-tear-density aperture sites are crystallized in situ by membrane-proximate mineral
@@ -1954,7 +1974,7 @@ That is what comes next.
 
 **Moral polarity:** Ambivalent.
 
-**Escalation curve** (28-beat spine incl. the 4 monster/bandit setpieces, 2026-07-14): `[4,3,4,3,4,6,5,4,5,5,4,5,5,5,8,6,6,7,4,8,5,5,9,6,8,8,6,10]`
+**Escalation curve** (29-beat spine incl. the 5 monster/bandit setpieces, 2026-07-14): `[4,3,4,3,4,6,5,4,5,5,4,5,5,5,8,6,6,7,4,8,5,5,9,6,8,8,8,6,10]`
 (One value per beat in reading order — see the [Beat Coordinate Map](#SS-VIGL-coordmap). Peaks: Schmalburg reveal/Ardea, the apex-beast setpiece, airship masterstroke, Vaen + shell-loss, Sinterspawn, the revelation, the climax.)
 
 **Form device:** Epistolary fragment — Vega's chapters are structured around the canonical documents she is copying and notarizing; the bureaucratic text of the instruments appears as block quotation within her POV sections.
@@ -2032,7 +2052,8 @@ That is what comes next.
 | 19 | 5294 | 90E0FFE7 | She Goes to Sinter | SCRIBE | Vega seals the notary instrument | form-device (esc 5) |
 | 20 | 5295 | 76D2DBD6 | Pallor Reached — Caer Glas Moor | LYRA | Esvane/Petra die; Vaen; Wren joins | **body-snatch setpiece #4 (cost)** (esc 9) |
 | 21 | 5298 | 2FF3B7A6 | The Zone — Entering Sinter | LYRA | The wrongness mounts | escalation (esc 6) |
-| 21a | 5378 | 019F60D1-1CA7 | Sinterspawn — the Eaters at the Perimeter | LYRA | Sinterspawn; scan returns OFF-CATALOGUE; the Eaters hunt; feeds the revelation | horror-combat (esc 8) |
+| 21a | 5380 | 019F612A | Beulman — The Empty Farmsteads | LYRA | Infested farms (Sinterspawn nesting in corpses); loft night, M-101 on guard; hijacked deer, burrowing paralytic scorpions, corpse-fusion abominations, face-worms, ichor-birds; scan "signal degraded" (seeds off-catalogue) | horror-combat (esc 8) |
+| 21b | 5378 | 019F60D1-1CA7 | Sinterspawn — the Eaters at the Perimeter | LYRA | Sinterspawn; scan returns OFF-CATALOGUE (first landed reveal); the Eaters hunt; feeds the revelation | horror-combat (esc 8) |
 | 22 | 5296 | 37B58D26 | The Relic — What the Eye Has Seen | LYRA | The 397→1138 time-lapse revelation | revelation (esc 8) |
 | 23 | 5297 | 9BA2CF72 | The Long Seat — The Eighth Theory | LYRA | Theory undisclosed; Wren the Calyx view | intertextual (Twr Brennid) (esc 6) |
 | 24 | 5299 | 367915A7 | The Aperture — What Loyalty Means | LYRA | Climax; writ refused; Aldenvast gift | **setpiece #5 (refusal)** / resolution (esc 10) |
