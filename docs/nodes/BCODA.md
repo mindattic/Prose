@@ -523,13 +523,18 @@ G5g ✅ Review all 16 chapters ≥82% standalone; cumulative ≥85% — **COMPLE
 - **BCODA-US-G5g ✅** All 16 chapters reviewed ≥82% standalone; cumulative 88.8/100 ≥85%. (2026-06-23)
 - **BCODA-US-1 ✅** Mr. Able + Continuity Office descriptions added to DB (2026-06-23).
 - **BCODA-US-2 ⬜** Book-context milestone review at 4–6 chapters (200-ballot); author 90 gate.
-- **BCODA-US-3 ✅** Manuscript exported (2026-07-13): Bushido Coda **V31** .docx/.epub/.pdf/.txt to R:\Desktop\EPub\MindAttic\Scry\Street Samurai\Bushido Coda\ (author MindAttic), post-degradation-arc.
+- **BCODA-US-3 ✅** Manuscript exported (2026-07-14): Bushido Coda **V33** .docx/.epub/.pdf/.txt to R:\Desktop\EPub\MindAttic\Scry\Street Samurai\Bushido Coda\ (author MindAttic) — degradation arc + DataEast anchor + Ch1/Ch2 interleave cue.
+- **BCODA-US-7 ✅** Ch1/Ch2 Vey interleave resolved (2026-07-14): braided-pair reading confirmed; orienting cue added at Ch2 SK:500; SK:64000 stays disabled (superseded draft); no duplicate scene, no content deleted (§11d).
 - **BCODA-US-4 ✅** Degradation-of-the-Way arc implemented in prose (2026-07-13): seven virtue-
   abandonment touchstones (Courtesy Ch4 / Mercy Ch10 / Honesty Ch12 / Rectitude Ch15 / Loyalty
   Ch15 / Courage-to-die Floor / Honor 35th&Halsted), Honor last; One Knock recut for grief.
   Evidence: DB CHARINDEX sweep confirmed all seven insertions live (2026-07-13); see §13g/§13h.
-- **BCODA-US-5 ⬜** Beat-splitting: monster single-beat chapters (Ch2/3/4/5/9/14, WO16000) split
-  at scene boundaries into manageable beats (in progress 2026-07-13).
+- **BCODA-US-5 ✅** Beat-splitting (2026-07-14): all 7 monster single-beat chapters (Ch2/3/4/5/9/14,
+  WO16000) split at scene boundaries into manageable beats; integrity word-for-word verified; total
+  enabled beats 456→520; no beat over ~7k chars; console-artifact contamination scan clean.
+- **BCODA-US-6 ✅** Storyscope structural audit (2026-07-14): CLEAN — 0 BLOCKERs (3 moderate, 7
+  minor). Escalation peak correctly at beat 22/25; subplot carriers 5/5; external-event resolution +
+  no-epilogue confirmed; One Knock grief-ending prose judged in-voice (not narrator gloss).
 
 ## 11. Structural Blueprint (2026-07-10) {#SS-BCODA-11}
 
@@ -730,15 +735,32 @@ Pixel knows he is dying. She opened the Clybourn permit at 02:14 and did the mat
 
 ### 11d. Vey's Antiquity & Stationary — early plant {#SS-BCODA-11d}
 
-**CORRECTED 2026-07-13 (prose wins, SS bible-vs-prose rule).** The intended Ch1 Vey plant at
-**SK:64000 ("Antiquity and Stationary") is currently DISABLED** — it is NOT in Ch1's enabled beat
-list (61000, 62000, 63000, 65000 are enabled; 64000 is not). So the first in-person Vey visit on
-the page is actually **Ch2 (Provenance)**, not Ch1. The "clean man" subscriber thread seeded in
-Ch1 at SK:63000 therefore has **no on-page payoff inside Ch1** — an open orphan. Options for
-closure (pick one in a later pass): (a) re-enable/rewrite SK:64000 so the Ch1 visit happens as
-originally designed, or (b) accept Ch2 as the first visit and add one line in Ch2 that closes the
-"clean man" thread Ch1 opened. Until then, treat Ch2 as the first Vey scene. The plant's intended
-payload (below) still describes the target state whenever the visit is staged.
+**CORRECTED 2026-07-14 (prose wins, SS bible-vs-prose rule) — full diagnosis.** The Ch1 Vey beat
+**SK:64000 ("Antiquity and Stationary") is DISABLED, and correctly so:** it is a *superseded earlier
+draft* of the Vey scene. The canonical, fuller Vey scene lives in **Ch2 Provenance** (the RotoStar
+on its wire, the paper ledger with three buyers — Lotus + the UNSOURCED entity entry, Vey's "no
+provenance/never had history to scrub", and Kyle's true answer: the unauthenticated blade Silence).
+Re-enabling SK:64000 would DUPLICATE that scene — do not do it.
+
+**Open editorial knot (NOT a one-line fix — needs an author decision).** Ch1 keeps two enabled
+beats that gesture at a Vey visit inside Ch1's flow: SK:63000 (Boost's log — "the clean man came
+back twice… that's a subscription"; Pixel: "You're going to go see the dead-tech man") and SK:65000
+(the Dock-14 marker-dust → Rotterdam misdirection; "Vey says the truth's an object"). But the actual
+Vey scene is now in Ch2. Since Ch2 ("Part II: Standard Rate") is timestamped "six hours ago"
+relative to Ch1's morning, the two chapters may be intended to interleave — in which case Kyle's
+Ch2 Vey visit precedes Ch1 SK:65000's reference and the sequence resolves. This depends on the
+intended Ch1↔Ch2 chronology + which draft of the "subscriber file / Vey / Rotterdam" material is
+canonical (Ch1 and Ch2 partially overlap it). **RESOLVED 2026-07-14 (author ruling: interleave).** Option (a) chosen: Ch1 "Teeth" and Ch2
+"Provenance / Standard Rate" are a deliberate **braided (non-linear) pair** covering the same span —
+the job thread and the domestic/investigation thread, crossing more than once. The canonical Vey
+scene lives in Ch2; SK:64000 stays disabled (superseded draft). An orienting cue was added at Ch2's
+opening beat (SK:500, "…a second thread in it… that ran alongside the work and under it, out of a
+different hour and toward this one. It started here.") so the reader reads the braid as intentional
+rather than as a jump; the existing local cue ("the apartment six hours ago", SK:1000) still anchors
+the domestic thread. Ch1's SK:63000 (decide to see Vey) and SK:65000 ("Vey says the truth's an
+object") now read as the job-thread's touch-points on a Vey visit the braid renders in full on the
+Ch2 side. No content deleted; no duplicate scene created. The plant payload (below) describes the
+target state, now satisfied by the Ch2 scene.
 
 **What the plant delivers:**
 - Physical space: old tech, Faraday mesh, the specific silence of no relay channels.
