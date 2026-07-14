@@ -30,20 +30,23 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
    south coast with the Relic before the House knows it is gone. The reader sees what
    happened. The reader does not know who did it. Neither does Lyra. **This is the cold
    open. The thieves are a mystery until the book earns the reveal.**
-2. **Second scene — the south shore.** The Verlaine beach assault lands at dawn: assault boats,
-   front-doors down, Myrmidons wading through surf — *reverse Normandy* (see FFVIII Siege of
-   Dollet). Lyra is Thrice Infused and leads the beach defense. She picks up armored soldiers
-   and throws them into the surf. She turns what should have been a beachhead into a rout.
-   This is not coincidence: **the beach assault was Prelacze's cover operation**. The Verlaine
-   landing was arranged to hold every Ocipheus Templar on the south shore while the Blink
-   Thieves walked out the north archive with the Relic.
-3. **Lyra goes home a champion.** Ocipheus Station receives her as the defender of the island.
-   The senior Canon tells her the Relic is gone. The beach victory collapses into the worst
-   morning of her career.
-4. **The promise: 4th infusion.** She will be awarded a fourth Transmutation infusion —
-   the Paladin threshold, rank above Knight — when she returns the Relic to Ocipheus Station.
-   The Canon does not explain how the Relic came to be stolen during a military engagement
-   he authorized. Lyra notes this. She crosses the Narrow Sea.
+2. **The diversion — the "Descent" dispatch.** The morning of the theft, a seismic-emergency
+   "Descent" dispatch pulls Lyra to the eastern sector: a below-threshold seismic variation the
+   protocol says only a full-rank senior practitioner may answer — and she is the only one
+   currently stationed at rank. Three to four days out and back on a Heloth courier, an alpine
+   traverse toward the Sinter approach. It is a milk run; the eastern sector has not produced a
+   genuine Descent event in seventeen years. **It is Prelacze's cover operation** — engineered to
+   pull Ocipheus's strongest Templar off the Station on the one night the Blink Thieves walk out the
+   north archive with the Relic. (No beach assault; the earlier "reverse-Normandy" opening was not
+   built — the prose uses the Descent diversion.)
+3. **Lyra returns to the worst morning of her career.** Four days later she comes down off the pass
+   to a quiet Station — the night warden and the Station Keeper dead without a mark of struggle, the
+   Relic gone from its case. The canonical property-recovery mandate arrives within hours, counter-
+   signed by the Canon Immaculate himself, the authorization chain moving since before dawn — which
+   means the Liturgy knew before she woke. *Recover the Oculus Memoriae. Return it to Liturgy
+   custody.* It does not name who took it. Lyra notes the speed of it, and the convenience of the
+   Descent that emptied the Station of the one person who could have stopped the theft. She crosses
+   the Narrow Sea.
 
 **Three-act structure:**
 - **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Verlaine (Rowe found) → Three Points
@@ -125,9 +128,9 @@ covered by Wren.)*
 
 | Character | House | Role | Age | Joins |
 |---|---|---|---|---|
-| Dame Lyra | Ocipheus (Templar) | Tank / POV | Early 30s | Start |
+| Dame Lyra | Ocipheus (Templar) | Tank / POV | 44 | Start |
 | Orim Zebulun | Calyx-born, independent | Scry Mage | Late 60s | Start |
-| Soren Rowe / M-1018883 | Verlaine (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS / body-snatcher | Mind mid-30s | Verlaine |
+| Soren Rowe / M-1018883 | Verlaine (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS / body-snatcher | Mind, early 30s | Verlaine |
 | Wren Caerglas | Calyx (Loera-trained) | Melee DPS (Rogue / Blink); **female** | 22 | Pallor |
 
 ### Dame Lyra — POV {#SS-VIGL-1a}
@@ -731,7 +734,7 @@ discovers who all three were. That is what makes the confrontation land.
   herself through solid material up to two meters thick — out through the caul, a heartbeat through
   the Amnios, back in the far side — never through iron; the metal resists the membrane the way it
   resists everything else membrane-adjacent (§4a). She cannot carry more than one hand's worth through with her. The
-  Blink Thieves are named for her. She is why they could leave through the south coast of the
+  Blink Thieves are named for the fold itself — the Loera phase-step is the crew's trade, each operative carrying a prepared, countable infusion (a job is planned around how many folds the preparation holds); Wren is the most accomplished of them. She is why they could leave through the south coast of the
   Ocipheus archive without triggering a sealed gate. The box was in her arms. She walked through
   the wall.
 - **The cost — a heartbeat in the Amnios, and she comes out wet:** Every blink is not a trick of
@@ -1972,13 +1975,14 @@ Three figures move through the Ocipheus archive before dawn. No names. No interi
 The Keeper wakes. One of them doesn't come back. Two leave through the south coast.
 
 **The fold — how the theft was possible:**
-The Blink infusion (Wren's Loera-tradition phase-step) allowed entry and exit through
-the archive's stone walls. The fold trace is readable by a skilled Scryer within 4–6 hours.
+The fold (the Blink Thieves' Loera-tradition phase-step — a prepared, countable infusion the
+crew runs on, Wren the most accomplished) allowed entry and exit through the archive's stone
+walls. The fold trace is readable by a skilled Scryer within 4–6 hours.
 Orim Zebulun was the contracted Keeper. He did not read it in time. This is why he is ashamed.
 
 **At the intercept — what Lyra learns when she catches them:**
-Three members: Esvane (operational commander, Calyx Lector), Petra (fixer), Wren (the Blink).
-Esvane and Petra die in the confrontation. Wren blinks through a stone wall with the Relic.
+Three members: Esvane (operational commander, Calyx Lector), Petra (fixer), Wren (the fold-adept).
+Esvane and Petra die in the confrontation. Wren folds through a stone wall with the Relic.
 Orim finds her in the field. Wren returns the Relic. She joins. She does not explain herself.
 Her past is revealed in pieces through the party dynamic over the rest of the book.
 
@@ -2074,7 +2078,7 @@ eastern staging, possibly Carnyx-routed. Their intake instrument crosses her des
 while she waits: "Specialist deployment, Sinter Zone Approach Preparation." First time she has
 seen those words in anything other than a maintenance authorization.
 
-**S4 — She Goes to Sinter** (between A-chapters 19–20; after Sal Vento, before The Channel)
+**S4 — She Goes to Sinter** (between A-chapters 19–20; after Sal Vento, after The Channel)
 A senior Scribe — a woman of seventy who has been copying canonical authorizations since before
 the junior Scribe was born — dispatches her north. The instruction: go, see what happens, write
 it down. The senior Scribe does not say more than this.
