@@ -10,6 +10,20 @@
 # ─────────────────────────────────────────────────────────────────────────────
 set -e
 
+# ── Async-safe siloing: content-only commits skip the build+key gate ─────────
+# Multiple sessions can share one working tree (parallel story/code work). The
+# LLM-key validation below runs `dotnet test`, which BUILDS the solution from
+# working-tree source — so another session's uncompiled .cs WIP would otherwise
+# fail the build and block an unrelated docs/prose/data commit. If nothing
+# build-affecting is staged, the gate is irrelevant to this commit — skip it so
+# story/content work commits independently of anyone's in-progress code.
+# (Code commits — anything staging .cs/.csproj/.sln/.props/.targets — still get
+#  the full MCP-doc + LLM-key gate below.)
+if ! git diff --cached --name-only | grep -qE '\.(cs|csproj|sln|props|targets)$'; then
+  echo "pre-commit: content-only commit (no code staged) — skipping build + LLM-key gate."
+  exit 0
+fi
+
 # ── Keep the MCP tool reference in sync ──────────────────────────────────────
 # When any MCP tool source is staged, regenerate docs/MCP_TOOLS.md from the live
 # [McpServerTool] attributes and stage it, so the doc never drifts from the code.
