@@ -2,7 +2,6 @@
 
 _Dame Lyra M-101, Knight of Ocipheus, pursues thieves who stole her House's founding Relic across the entire Cauld — around the Sinter quarantine Wall, through Vierna and Atrament, by pirate airship to Pallor's northern coast — and comes home to find a corrupt Liturgy Canon waiting to confiscate it. Along the way she assembles a found party: a Myrmidon conscript from Sphere 31 who is slowly assembling the words to say what the Liturgy has been doing to his world; an Atrament battle-rig pilot who cannot be removed from her machine; and a Lacerta pirate with his own code. The book's core question: what are you loyal to when you find out what the thing you loved actually is?_
 
-[Beat 1]
 THE THEFT AT OCIPHEUS
 
 The membrane parted for her the way it always did - not like a door, like a wound reopening. The cold lasted less than a breath, and then she was standing in the inner archive, three metres from where she'd been, and the room's warmth took a moment to find her.
@@ -73,7 +72,6 @@ She mounted the Heloth without looking back.
 
 "Move," she said.
 
-[Beat 2]
 THREE BODIES AND AN EMPTY CASE
 
 The note was still on the scribing table.
@@ -178,7 +176,6 @@ She had her kit and her plate and her blade. She had the mandate. She had two da
 
 "Then we move," she said.
 
-[Beat 3]
 THE WALL FROM OUTSIDE — REFUSED
 
 The Sinter Wall was not what she had expected the first time she'd seen it, twelve years back. She'd expected something martial — a fortification that announced its defensive purpose through stone and intent. What she'd found was something more geological than that. Eleven hundred years of building and rebuilding by coalition forces with different materials, different philosophies, the particular fatalism of people fortifying a border that cannot be held, only maintained. The Wall remembered every House that had built it. The stone changed texture every hundred meters.
@@ -325,7 +322,6 @@ She considered this. A trace was not a catch. But a trace meant she would know s
 
 He would see what he could see. She would ride.
 
-[Beat 4]
 THE MILL — SPHERE 31
 
 He walked the same route every morning.
@@ -408,7 +404,6 @@ Thursday morning in autumn, the shift half done.
 
 Nothing remarkable in the air.
 
-[Beat 5]
 THE AUTHORIZATION
 
 The canonical property recovery instrument arrived on her desk on a Tuesday, filed by Canon Immaculate Tomasz Prelacze under the standard dispute-resolution authorization number, routed through the Scribe's office for copy and notarization in the ordinary course of business. It was the eleventh authorization she processed that morning. It was not the kind of document that required unusual attention.
@@ -583,7 +578,6 @@ She did not know yet what kind.
 
 She thought about T-044 for a long time before she went to sleep, and then she slept, and in the morning she got up and went to work.
 
-[Beat 6]
 MYRMIDON INTAKE RECORD — STATION VIERNA NORTH — HIGH AUTUMN, YEAR 1137
 
 Origin: Sphere 31. Batch 12 of the High Autumn rotation.
@@ -780,7 +774,6 @@ The morning — if morning is what comes — has not yet come.
 
 He is still here.
 
-[Beat 7]
 VIERNA ENTRY — THE LAW DOESN'T APPLY HERE
 
 She crossed at the goat path.
@@ -905,7 +898,6 @@ She stood in front of the bin for a moment. She had forty minutes when she'd ent
 
 She put her hand on the bin latch.
 
-[Beat 8]
 NO ACTION INDICATED
 
 The copy desk faced north, which in winter meant it faced a column of pale light that came off the courtyard stones and produced no warmth and did nothing useful. She had spent three years angling her lamp to compensate. By now she did it automatically, the way a person learns to walk with one bad leg: efficiently, without grace, without complaint.
@@ -1040,7 +1032,6 @@ She had understood this in the abstract at the beginning of the posting. She was
 
 She angled the lamp for the last time that day and covered the ink.
 
-[Beat 9]
 SPHERE 31 — ROWE FOUND
 
 She lifted the latch.
@@ -1295,7 +1286,6 @@ One word at a time.
 
 She was good at that.
 
-[Beat 10]
 SEVEN MONTHS
 
 The barracks smelled of metal-oil and wet wool and the particular sourness of men who had not been warm enough for long enough.
@@ -1480,7 +1470,6 @@ He did not move.
 
 His hand, in the dark and in the grain, found the rifle.
 
-[Beat 11]
 THE RIVER — FACTORY / SMOKE / MORNING / GONE
 
 The barge was called the *Houndstooth* and smelled accordingly. Below decks, behind the casks, Lyra had found a corner between a stack of oilskin-wrapped bales and the outer hull where river water moved just inches from her ear. She'd been in worse accommodations. She'd been in better. She rolled her coat under her head and tried to think about what she needed to think about, which was a reliable way of ensuring she thought about nothing useful and fell asleep instead.
@@ -1807,7 +1796,6 @@ The new categories were multiplying.
 
 She noted this. She filed it. She continued working.
 
-[Beat 12]
 ATRAMENT — THE FORGE KINGDOM
 
 The border crossing was not a building.
@@ -2108,7 +2096,6 @@ The bell was still ringing.
 
 The river ran brown below the quay edge, catching the late afternoon light in a color that was not quite right, and the bell rang three long and two short again, and the city that had broken a siege began to respond to another one.
 
-[Beat 13]
 THE REVIEW SESSION
 
 ---
@@ -2379,7 +2366,6 @@ She picked up her satchel, straightened the instruments in the archival queue wi
 
 Behind her, on the desk, the working copy lay face-down in the particular dark of an office after closing, making no record of anything at all.
 
-[Beat 14]
 SCHMALBURG — THE RAID; THE EATERS; KRESSIDA
 
 Three long. Two short. Then again: three long, two short.
@@ -2614,7 +2600,6 @@ Lyra walked back to the lane entry and picked up Ardea's rifle from the ground w
 
 The gorge-street was empty of everything except the exhaust-hum in the stone and the quality of a city that had done this before and would do it again and was already making its arrangements. She walked west. Behind her, the BR-7's access hatch sealed with a sound like a bar dropping on the inside of a door.
 
-[Beat 15]
 THE FORGE HEARTH — WHAT SHE RECOGNIZES
 
 The ridge path narrowed where the volcanic substrate pushed through the alpine soil. Here the stone had refused to stay underground: it had come up through the topsoil in long dark extrusions, finger-shaped, warm to the touch even in the autumn cold. Lyra pressed her palm against one and left it there. The warmth was geological. She had read about geothermal zones. She knew what the Forge Hearth was before she arrived. Knowing had not prepared her for the particular quality of the warmth, which was not the warmth of heated stone so much as the warmth of something that had not stopped.
@@ -2895,7 +2880,6 @@ The road went west. The light angled. The channel smell strengthened.
 
 She kept walking.
 
-[Beat 16]
 SAL VENTO — THE PORT
 
 The path came down through Lacerta limestone and the limestone smelled of the sea even two hundred meters above it, which was the particular quality of coastal cliff country: the sea got into everything before you ever arrived. Salt, kelp, and something sulfurous from the anchorage caves below, rising up through the rock itself as though the rock were sweating. The path switchbacked down through it in the specific way of a path that had not been engineered so much as worn into existence by two centuries of people making the same pragmatic judgment about where the footing held.
@@ -3162,7 +3146,6 @@ The sea was below her and Pallor was across it and the *Avandrey* was somewhere 
 
 She kept moving.
 
-[Beat 17]
 THE ACQUISITION — EIRENE-7
 
 Orim did the scry two hundred meters back from the cave mouth, crouched in the lee of a limestone shelf with his fingertips pressed together at his sternum.
@@ -3365,7 +3348,6 @@ Nobody answered him. He took this as permission, which it was.
 
 The ship flew east.
 
-[Beat 18]
 THE CHANNEL — ROWE TESTIFIES
 
 The channel was louder than she'd expected.
@@ -3622,7 +3604,6 @@ She closed the notebook.
 
 Pallor was ahead.
 
-[Beat 19]
 SHE GOES TO SINTER
 
 The dispatch note arrived at the sixth hour.
@@ -3785,7 +3766,6 @@ She was not certain this was better.
 
 She closed the working copy. She put it in her bag. She sat with her hands in her lap and watched the road north until the dark made it indistinguishable from the sky, and then she sat with her hands in her lap and watched that.
 
-[Beat 20]
 PALLOR REACHED — CAER GLAS MOOR
 
 The sea-loch was the color of cold pewter and it did not forgive the hull's landing.
@@ -3982,7 +3962,6 @@ She noted it.
 
 She walked south toward the sea-loch.
 
-[Beat 21]
 THE RELIC — WHAT THE EYE HAS SEEN
 
 The rain had been coming in off the channel for the better part of two hours, and somewhere around the first kilometer it stopped being rain in the usual sense and became a condition of the air instead. Horizontal. The kind of rain that gets into the gap between the collar and the neck before you can think to close it. Lyra walked with her head down and one hand on the research satchel's strap, which had been chafing the same point on her left shoulder since Schmalburg, and which she had stopped noticing around the time she stopped having energy to notice things that weren't urgent.
@@ -4235,7 +4214,6 @@ She set the cup on the deck rail and went below to check the heading charts.
 
 She kept walking.
 
-[Beat 22]
 THE LONG SEAT — THE EIGHTH THEORY
 
 Pallor rain is not like Atrament rain. Atrament rain comes down with intent; it has direction, it has a task, it arrives and accomplishes something. Vierna rain at least has the decency to fall from directly above. Pallor rain moves sideways. It has apparently given the matter careful thought and found down to be an insufficient answer to the question of where water belongs.
@@ -4486,7 +4464,6 @@ The airship rose. Pallor dropped away beneath it — the station, the ridge, the
 
 It was a map.
 
-[Beat 23]
 THE ZONE — ENTERING SINTER
 
 The Sinter Wall was visible from fifteen kilometers out, which was the distance at which it first exceeded the apparent height of the treeline it rose behind, and which was therefore the first distance at which a traveler approaching from the east could not convince themselves that what they were seeing was anything except what it was.
@@ -4687,7 +4664,6 @@ She looked at her sister.
 
 Her sister took out her notary seal.
 
-[Beat 24]
 THE APERTURE — WHAT LOYALTY MEANS
 
 The Singing Spires stood at the crater's perimeter like the ribcage of something vast that had been open a long time. Thirty feet of crystalline formation, pale as quartz, bone-pale, clustered at intervals around the crater's lip with the irregular spacing of things that grow without instruction. They were dead. The Sinter crawlers had stopped coming to this particular quarter of the zone two years back, which was how the Descent Corps had confirmed the spires' origin was biological — in their living phase they had been something the crawlers fed on, and now they were not, and the crawlers went elsewhere.
@@ -5002,7 +4978,6 @@ The membrane moved again — small, ungoverned, without apparatus.
 
 She watched until she could not tell, with certainty, which of them had moved first.
 
-[Beat 25]
 THREE BODIES AND AN EMPTY CASE
 
 The argument had started over bread.
@@ -5419,7 +5394,6 @@ The night warden had been at the table. He had been reviewing the catalogue. He 
 
 The east fork was ahead. She kept riding.
 
-[Beat 26]
 THE WALL FROM OUTSIDE — REFUSED
 
 The pass was called Eirene's Gate and it smelled of cold stone and Heloth exhaust and something underneath both of those things that she could not properly name. The something was directional. It came from the south and slightly below her, as if the ground had weight in it — not heavy, not threatening, just present, the way a large thing is present even when you cannot see it. She had read about this in the practitioner literature, which called it *zone-proximity affect* and kept the clinical notation intact in a way she recognized as the professional strategy for not saying the simpler thing: that the ground near the Sinter perimeter made soldiers feel like they were being watched by something that had no eyes.
@@ -5634,7 +5608,6 @@ She did not know what she would find when she reached it.
 
 She rode east.
 
-[Beat 27]
 THE MILL — SPHERE 31
 
 The third stair from the bottom had a loose tread, and he stepped over it without thinking.
@@ -5777,7 +5750,6 @@ Nothing was wrong.
 
 The shuttle ran. The thread fed. His hands moved without instruction, and the floor ran on, and the morning was exactly what the morning was.
 
-[Beat 28]
 THE AUTHORIZATION
 
 The canonical property recovery instrument arrived on her desk on a Tuesday, in the bottom third of the morning stack, filed by Canon Immaculate Tomasz Prelacze under the standard dispute-resolution authorization number and routed through the Scribe's office for copy and notarization in the ordinary course of business. It was the ninth authorization she had processed that morning. It was not the kind of document that required unusual attention.
@@ -6006,7 +5978,6 @@ She thought about the plural of one entry and what the assessment schedule would
 
 She went to sleep, badly, and in the morning she got up and went to work.
 
-[Beat 29]
 EAST OF THE WALL — THREE DAYS
 
 The moor-hounds were up first, which Wren had learned to expect.
@@ -6251,7 +6222,6 @@ The lamp burned down to its final measure. The room went dark.
 
 The carry-case sat in the corner and watched it happen.
 
-[Beat 30]
 THE TAKING
 
 The left-side shuttle returns clean and Rowe does not register it as clean until it has happened three times in a row. On the fourth he lets himself believe it. The tension adjustment he made this morning — two turns of the secondary feed nut, which Greiss would mark as unauthorized modification but which Greiss was not watching and which the machine had needed since Tuesday — has held for two hours, which is two hours longer than any previous adjustment had held, and the floor under his boots is the floor it has always been, and the light off the high windows is the light he knows.
@@ -6440,7 +6410,6 @@ After a while, someone at the far end of the room lies down on their pallet with
 
 He sits with his hands on his knees and his back against the cold wall and waits for something he does not know the shape of. He has done this before. He will do it until the shape arrives.
 
-[Beat 31]
 VIERNA ENTRY — THE LAW DOESN'T APPLY HERE
 
 The third morning on the mountain passes Lyra woke with her jaw clenched because the cold had found the gap between her gorget and her chin-strap in the night and taken up residence there. She did not start fires in the passes. The Wall observation posts extended east as well as north, and whatever her current relationship with Vierna's border authority, she did not need to clarify it with a smoke column visible for twenty kilometers.
@@ -6705,7 +6674,6 @@ The cold found the gap between her gorget and her chin-strap as it had found it 
 
 She slept.
 
-[Beat 32]
 NO ACTION INDICATED
 
 The copy desk faced north, which in winter meant it faced a column of pale light that came off the courtyard stones and produced no warmth and did nothing useful except confirm the time of day. She had spent three years at various desks in Liturgy copy offices, and they all faced somewhere inconvenient. The canonical administration had been built for permanence and ceremony, not for the people who worked in it, and the copy office in the central archive complex was no different from the others — a high-ceilinged room, stone walls that held the cold the way stone did, two windows on the north face, one door, a row of shelves that had been built for someone who expected to file things in a particular order that had been abandoned at some point in the room's history and replaced with a different order that she was still learning. Six weeks. She had spent the first three learning the lamp angle and the second three doing it automatically, the way you accommodate an asymmetry you cannot correct.
@@ -6858,7 +6826,6 @@ She did not know which of these was worse.
 
 She angled the lamp for the last time that day and covered the ink.
 
-[Beat 33]
 HOUSE ATRAMENT — EVERYTHING PROPERLY FILED
 
 The first smell of Atrament was coal smoke on a damp wind, two hours before the checkpoint, while the last of the light was still enough to read by. Not the clean wood-smoke of a hearth. The other kind — the kind that settles in cloth and doesn't come out, that tells you a region's economy before you can see the region. Esvane had smelled it before, twenty years ago, on a canonical transit assignment she'd spent three weeks wanting to conclude. She hadn't liked Atrament then. She didn't like it now. She found the smell professionally useful.
@@ -7101,7 +7068,6 @@ This was the thing she knew how to do. This was what twenty-three years of it lo
 
 She sat with what came after knowing that, and the fire went out, and the night was Atrament-cold and smelled of coal that had burned a long time ago and would burn again tomorrow.
 
-[Beat 34]
 SPHERE 31 — ROWE FOUND
 
 The warehouse district of Bressant sat where three things converged: the Veil River's low northern bank, the road from the eastern passes, and the smell of what Vierna's river trade had been spilling into the mud for three hundred years. Grain this season, and malt at all seasons, and under both of those the particular mineral cold of an autumn that had come in wet and decided to stay. The buildings were timber-and-stone, well-maintained in the way of a working district that took pride in nothing beyond function. The streets were packed earth gone hard with frost and cart traffic. Between the warehouse rows, rope lines of cargo tags strung from pole to pole, and a few of the tags had gone soft in the damp and were illegible, and nobody had replaced them, because the carters knew what they were loading and cargo tags were a bureaucratic convenience that Bressant had tolerated as long as it had to.
@@ -7470,7 +7436,6 @@ One word at a time was how bridges were built. She was good at one thing at a ti
 
 She went back to work.
 
-[Beat 35]
 SEVEN MONTHS
 
 The oath room had the specific cold of a building that has been standing long enough to have decided what temperature it is and refuses further argument on the subject. Stone floors, stone walls, a high narrow window that admitted light from the wrong angle. There was a desk. There was a chair behind the desk. There was a robed figure in the chair and a form on the desk and a pen beside the form.
@@ -7683,7 +7648,6 @@ Single. Careful. Moving toward the section he was in.
 
 In the dark of the bin, in the pressed warmth of the grain, his hand found the rifle.
 
-[Beat 36]
 THE RIVER — FACTORY / SMOKE / MORNING / GONE
 
 The barge was called the *Houndstooth* and smelled accordingly. Below decks, behind the casks, Lyra had found a corner between a stack of oilskin-wrapped bales and the outer hull where river water moved just inches from her ear. She rolled her coat under her head and lay in the dark and listened to the river working along the keel.
@@ -8044,7 +8008,6 @@ She added nothing to them yet. The architecture was still provisional. The subca
 
 She would have more data by nightfall.
 
-[Beat 37]
 ATRAMENT — THE FORGE KINGDOM
 
 The sound was wrong before anything else was.
@@ -8359,7 +8322,6 @@ She had not missed anything.
 
 She went through it one more time to be certain.
 
-[Beat 38]
 THE REVIEW SESSION
 
 ---
@@ -8612,7 +8574,6 @@ The canonical record said what it was supposed to say.
 
 What the working copy said was still drying.
 
-[Beat 39]
 SCHMALBURG ADJACENT — THE ATRAMENT ROAD
 
 The road from the checkpoint town east of Falke Gate carried them three days through farmland that wanted to be beautiful and had been interrupted. Stripped fields, January cold, and every half-league or so a Heloth standing in the road's margin for no reason Wren could determine — not working, not guarding anything, simply standing at a waypoint and waiting for instruction that had not arrived yet. The moor-hounds gave each one a wide berth, and the unnamed one, Owain's youngest that he had not gotten around to naming, still pushed a sound through her teeth as she passed that was not quite a growl.
@@ -8865,7 +8826,6 @@ The moor-hounds walked. The afternoon moved toward the Halger Road junction and 
 
 He kept walking.
 
-[Beat 40]
 SCHMALBURG — THE RAID; THE EATERS; KRESSIDA
 
 Three long. Two short. Then again: three long, two short.
@@ -9228,7 +9188,6 @@ She walked west.
 
 Behind her, at the secondary yard, the BR-7's access hatch sealed with a sound like a bar dropping on the inside of a door.
 
-[Beat 41]
 THE FORGE HEARTH ??? WHAT SHE RECOGNIZES
 
 The volcanic substrate had pushed through the alpine soil in long dark extrusions ??? basalt-colored, finger-shaped, warm to the touch even through the cold morning. Lyra pressed her palm against one of them and left it there. The warmth rose through her hand steadily, without the variation of something that had spent a day in daylight. Something below, continuous, moving upward because that was the direction things moved when they had nowhere left to go but up.
@@ -9567,7 +9526,6 @@ The road went west. The road went west and the channel waited and the thieves we
 
 She kept walking.
 
-[Beat 42]
 SAL VENTO — TAVAR
 
 The path down to Sal Vento smelled of the sea two hundred meters before anyone could see it. Salt and worked limestone and something else underneath — the specific cold of rock that had absorbed forty years of spray without ever properly drying, a mineral cold that was different from the cold of air and colder than both. The path switched back through that smell in the particular way of a path worn into being by two centuries of foot traffic rather than designed: each turn placed where someone's footing had held the first time, and everyone after had agreed without discussion that this was where the footing held.
@@ -9884,7 +9842,6 @@ The cold was the cold. Her hands were working. The problem was in front of her.
 
 She kept her hands on the bow rail and watched Pallor come to meet them.
 
-[Beat 43]
 THE CHANNEL — HOURS, NOT DAYS
 
 The Serracas was built to haul salt fish and lamp oil and worked slate and not to carry passengers, a distinction the cargo master had made clear in the arrangement and continued to make clear through the particular quality of the space she had assigned them in the forward hold. The hold was functional. So was the smell.
@@ -10087,7 +10044,6 @@ Hours. Not days.
 
 That would have to be enough.
 
-[Beat 44]
 THE ACQUISITION — EIRENE-7
 
 The cliff path ran south along the coast at an elevation where the wind was indifferent to them but the cold was not. It came off the water in the particular way of sea cold at the end of the night — not the dramatic cold of an hour earlier, which had conviction, but the tired cold that preceded dawn, which had given up on announcement and simply continued.
@@ -10380,7 +10336,6 @@ No one answered him. He took this as permission, which it was.
 
 The ship flew east.
 
-[Beat 45]
 THE CHANNEL — ROWE TESTIFIES
 
 The channel at altitude smelled of nothing — that was the first surprise. She had expected salt. The sea was below them, the northern channel in the gray before dawn, and the hull of the Eirene-7 was doing the thing hulls do over open water, which was a continuous argument with the pressure differential, and she could hear it, but there was no smell. The membrane of the hull sealed everything out. The cargo hold smelled of its own history: machine oil, old rope, the faint metallic particular of institutional supply transport. Liturgy-issue everything, from the stenciled crate markings to the iron handholds bolted at intervals along the bulkhead. The envelope made its noise. Below them, somewhere she couldn't see, the channel moved.
@@ -10743,7 +10698,6 @@ She knew what that felt like.
 
 She had believed it for thirty years. She intended to remember what it felt like, going in.
 
-[Beat 46]
 CHAPTER 22: CAER GLAS — THE HOURS BEFORE
 
 They came in off the drove road at the second hour past midnight, and the first thing Wren saw was the heather.
@@ -11082,7 +11036,6 @@ The heather was not lit from below anymore. In the early grey of it the moor was
 
 He picked up the case and waited for the morning to come in.
 
-[Beat 47]
 PALLOR REACHED — OWAIN CAERGLAS
 
 The sea-loch received the Eirene-7 the way the cold receives the hand you put into it: completely, without ceremony, and with no concern for your experience of the event.
@@ -11597,7 +11550,6 @@ The night-heather glowed pink-white under all of them as they crossed the moor t
 
 She was going to need them.
 
-[Beat 48]
 SHE GOES TO SINTER
 
 The dispatch note arrived at the sixth hour.
@@ -11846,7 +11798,6 @@ Vega was the notary. She made the record true.
 
 She wrote it down.
 
-[Beat 49]
 THE ZONE — ENTERING SINTER
 
 The pass at Caer Dyn was three hundred meters of stone corridor between peaks that had been quarantine-adjacent for six generations, and which had shed that quality onto the rock the way all quarantine perimeters eventually shed their quality onto the approaches — a particular kind of stillness, not natural stillness but chosen stillness, the stillness of things that had learned to move only when they were not being watched.
@@ -12157,7 +12108,6 @@ She looked at her sister.
 
 Her sister wrote faster.
 
-[Beat 50]
 THE RELIC — WHAT THE EYE HAS SEEN
 
 The zone smelled wrong before it looked wrong. That was the first thing.
@@ -12470,7 +12420,6 @@ She thought: *That is also what the protocols are for.*
 
 She walked.
 
-[Beat 51]
 THE LONG SEAT — THE EIGHTH THEORY
 
 Caer Glas Moor — the morning after
@@ -12781,7 +12730,6 @@ Ahead: the Wall. The crater's rim. The lens in its case. What eleven hundred yea
 
 She walked toward it.
 
-[Beat 52]
 THE APERTURE — WHAT LOYALTY MEANS
 
 The Singing Spires stood at the crater's perimeter like the ribcage of something vast that had been open a long time. Thirty feet of crystalline formation, bone-pale, clustered at intervals around the lip with the irregular spacing of things that had grown without instruction. They were dead. The Sinter crawlers had stopped feeding on this quarter two years back, which was how the Descent Corps had confirmed their origin was biological — in their living phase, something the crawlers required. Now they were not, and the crawlers went elsewhere, and the spires stood.
