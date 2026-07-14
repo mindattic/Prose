@@ -62,6 +62,18 @@ public class BibleSyncService
             return new BibleSyncReport(sessionId, session.Label, node.NodeCode ?? node.Slug,
                 new(), false, null);
 
+        // Short-circuit BEFORE the LLM call when there is no bible file to append to
+        // (book-scale nodes attach beats to chapter children that have no docs/nodes/<CODE>.md;
+        // running fact extraction only to discard it wastes tokens on every commit).
+        var earlyNodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
+        var earlyBibleFile = Path.Combine(paths.DataRoot, "docs", "nodes", $"{earlyNodeCode}.md");
+        if (!dryRun && !File.Exists(earlyBibleFile))
+        {
+            log.LogInformation("BibleSync: no bible file at {Path} — skipping extraction for session {SessionId}",
+                earlyBibleFile, sessionId);
+            return new BibleSyncReport(sessionId, session.Label, earlyNodeCode, new(), false, earlyBibleFile);
+        }
+
         // Build the prose corpus for LLM extraction
         var corpus = new StringBuilder();
         foreach (var esb in sessionBeats)

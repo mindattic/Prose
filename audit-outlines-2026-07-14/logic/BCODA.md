@@ -41,14 +41,18 @@ consistently unresolved (matches the keep-whodunits-open doctrine). Verified: "H
 - **Kyle's sword names** — right=Silence / left=Cacophony consistent throughout.
 - Per-beat-verdict false positives confirmed harmless in context: 485 (live man, jaw-*work* destroyed), 4393 ordering (message precedes pull-over).
 
-## Deferred (flagged, not fixed)
-- **MINOR / open plant:** beat 4393's reply does not answer Kyle's Ch8 query ("*Query re: Clearlight
-  Operations LLC. Who holds the officer-of-record credential?*", beat 4312). Likely intentional
-  rogue-AI misdirection, but the Clearlight / officer-of-record question may be an orphaned plant —
-  **needs a downstream-payoff check** before ruling.
-- **DATA / mojibake:** beat 4311 has a `�` in a load-bearing sentence ("on his closing half-�"); beat
-  4408 stores `?` where em-dashes belong. Pre-existing encoding corruption — needs a dedicated
-  text-repair pass (not guess-reconstructed here).
+## Phase A follow-up (2026-07-14, post-sweep)
+- **DATA / mojibake — FIXED.** The corruption was literal `?` (U+003F) standing in for em-dashes,
+  concentrated in 11 bulk-generated beats (2992, 2993, 2995, 2996, 2999, 3033, 3123, 4309, 4358,
+  4366, 4408; heaviest 3033 ×16, 4408 ×13). Bulk-fixed the unambiguous `" ? "` → `" — "` (space-both-
+  sides is never a real question mark) plus two clear residuals (2993 ranges `A3–A7`/`7–9`; 3033
+  dialogue em-dash). Verified 0 dash-corruption remaining. Left ~5 ambiguous single `?` (2992, 2996,
+  2999, 3123, 4358) untouched — most are genuine question marks; only 3123's "0.5?" is unreconstructable
+  and stays flagged.
+- **MINOR / open plant — CONFIRMED ORPHANED (decision needed).** "Clearlight Operations LLC" /
+  "officer-of-record" appears ONLY in Ch8 (4309/4311/4312); Kyle's pointed query at 4312 is never
+  answered anywhere downstream. Either accept as intentional rogue-AI open thread, or add a payoff /
+  soften the query so it doesn't promise an answer. NOT fixed here — a payoff would be invented plot.
 
 ## Sibling artifacts
 - Per-beat verdict worklist: `reports/coordination/BCODA.verdict.json`

@@ -1733,7 +1733,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4322 | `019ee6e6-315e-7f0f-9009-78954ca075d5` | Midpoint | Kyle nearly speaks while Pixel reaches past him during … | 5/exchange | 2165c | UNSCORED |
 | 4323 | `019ee6e6-641b-7c0f-96a6-eef1f5bade19` | Bad Guys Close In | Kyle leaves Pixel alone with her equipment, establishin… | 5/exchange | 1663c | UNSCORED |
 | 4308 | `019ee6e1-5ce0-723c-975c-9ee6e76a6bf8` | inciting-incident | Turns Kyle's grief into investigative momentum by revea… | 5/exchange | 2143c | UNSCORED |
-| 4309 | `019ee6e1-5ce1-7e18-b30c-2fcc88345c55` | scene-break | Escalates unease by revealing the routing shell's insti… | 5/exchange | 2933c | UNSCORED |
+| 4309 | `019ee6e1-5ce1-7e18-b30c-2fcc88345c55` | scene-break | Escalates unease by revealing the routing shell's insti… | 5/exchange | 2932c | UNSCORED |
 | 4310 | `019ee6e1-5ce1-7237-8dea-3762d51e65c8` | rising-action | Confronts Kyle with the unsettling recognition that the… | 5/exchange | 1479c | UNSCORED |
 | 4311 | `019ee6e1-5ce1-728f-9887-3dc1e4832d94` | scene-break | Turns Kyle's investigation into a direct, ambiguous act… | 5/exchange | 1375c | UNSCORED |
 | 4312 | `019ee6e1-5ce1-71f1-a136-f29795410833` | rising-action | Pays off the night's accumulating tension by having Kyl… | 5/exchange | 1870c | UNSCORED |
@@ -1837,7 +1837,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4363 | `2e9e75d0-064f-4e9d-b8e8-6941cc96741e` | Dark Night of the Soul | Kyle informs Femi that the Continuity Office's acquisit… | 7/revelation | 561c | UNSCORED |
 | 4364 | `f272f5ea-f640-4f6b-9dee-65513427e3fe` | Dark Night of the Soul | Kyle emerges into the ordinary evening city carrying th… | 7/revelation | 1006c | UNSCORED |
 | 4365 | `3c0c4e3f-8646-42dd-b890-b3949d48d116` | Dark Night of the Soul | Kyle visits Mrs. Chen's restaurant one final time befor… | 7/revelation | 1199c | UNSCORED |
-| 4366 | `9660330b-e9c9-4710-b63b-73683aeea7af` | Break Into Three | Returning home, the protagonist finds comfort in the or… | 7/revelation | 1107c | UNSCORED |
+| 4366 | `9660330b-e9c9-4710-b63b-73683aeea7af` | Break Into Three | Returning home, the protagonist finds comfort in the or… | 7/revelation | 1106c | UNSCORED |
 | 4367 | `e7c8abd4-7a0a-4998-809b-af3130c27206` | Break Into Three | A freelancer discovers his job assignments have been al… | 7/revelation | 1595c | UNSCORED |
 | 4370 | `78d44d1b-85a3-45c8-ab49-f51104c1b88c` | Break Into Three | Kyle breaks his eleven-year pattern by declining a rout… | 7/revelation | 1626c | UNSCORED |
 | 2897 | `9e232640-2c7b-40ef-bb51-30c8f84c90bd` | Break Into Three | Kyle's mysterious contact finally reveals herself in pe… | 7/revelation | 868c | UNSCORED |
@@ -1993,8 +1993,8 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 2992 | `359db6c0-1877-447d-92e5-fab9dd9cb652` | — | Introduces the case and its client, using Ria's financi… | 9/discovery | 2263c | UNSCORED |
 | 2993 | `70ac07f7-bc5c-47cc-b5e6-fbd5e158038a` | — | Reveals the client's investment in the case by having i… | 9/discovery | 1181c | UNSCORED |
 | 2994 | `9e72b8d6-8297-4690-92ed-ad41dd568b58` | — | Advances the plan while paying off the client's emotion… | 9/discovery | 1550c | UNSCORED |
-| 2995 | `87afca82-1a9d-49e4-bc29-4b64a93ce392` | — | Grounds the operation in physical and human reality, es… | 9/discovery | 2414c | UNSCORED |
-| 2996 | `767bf6ba-9bf9-40c7-89a6-cec047e861e8` | — | Turns the case by having Kyle use the system's own logi… | 9/discovery | 1835c | UNSCORED |
+| 2995 | `87afca82-1a9d-49e4-bc29-4b64a93ce392` | — | Grounds the operation in physical and human reality, es… | 9/discovery | 2413c | UNSCORED |
+| 2996 | `767bf6ba-9bf9-40c7-89a6-cec047e861e8` | — | Turns the case by having Kyle use the system's own logi… | 9/discovery | 1834c | UNSCORED |
 | 2997 | `37b7f27c-1365-4744-b53b-bb0d11d60140` | — | Closes the case by revealing Parr as a coerced actor ra… | 9/discovery | 1526c | UNSCORED |
 | 2998 | `ba298221-fd98-449f-973a-745cbab65d10` | — | Establishes the physical and institutional stakes of th… | 9/discovery | 2697c | UNSCORED |
 | 2999 | `dcc062d5-9f87-4549-aaa8-838d4fb80d47` | — | Pays off the episode's central conflict by delivering K… | 9/discovery | 2320c | UNSCORED |
@@ -2036,7 +2036,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 3280 | `89ada0eb-60ab-4ee3-a4c4-f77fd0fe83a8` | — | Pays off the printer subplot with earned sentiment whil… | 9/discovery | 1955c | UNSCORED |
 | 3281 | `e9ed699c-bf5c-493d-8f85-20c20f37d9a1` | — | Turns the chapter by revealing the Glove is a municipal… | 9/discovery | 2693c | UNSCORED |
 | 3282 | `354b4624-6634-442a-8a8e-8c4cb3fdc2d8` | — | Resolves the client's silence as deliberate threat asse… | 9/discovery | 1990c | UNSCORED |
-| 3033 | `f884d091-3fcd-49db-81df-8886cf34eb5f` | — | Establishes the Continuity Office as a sophisticated, p… | 9/discovery | 6997c | UNSCORED |
+| 3033 | `f884d091-3fcd-49db-81df-8886cf34eb5f` | — | Establishes the Continuity Office as a sophisticated, p… | 9/discovery | 6996c | UNSCORED |
 | 3034 | `2b08cbe3-9bb6-433f-ac68-3c94983221a8` | — | Pays off the recruitment scene by having Pixel decode A… | 9/discovery | 1437c | UNSCORED |
 | 3035 | `c5f4297f-bf7e-43b1-a285-0ce8e210883c` | — | Escalates the Office's threat from diplomatic to physic… | 9/discovery | 2506c | UNSCORED |
 | 3036 | `55760c32-f14c-49b8-accd-2bb83d97b262` | — | Turns the retrieval attempt by revealing Pixel has comp… | 9/discovery | 2454c | UNSCORED |
@@ -2129,7 +2129,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 3120 | `7c3b050d-40f6-438d-8c31-2ba03d11d696` | — | Reveals the district's removal from official records, e… | 9/discovery | 2262c | UNSCORED |
 | 3121 | `fe2e5b17-1dc8-4cd2-90a2-b5bdb26ac1eb` | — | Pays off the season's ensemble by gathering the full pa… | 9/discovery | 2956c | UNSCORED |
 | 3122 | `44fb1fd8-a5c7-46db-a6fe-4d6c4845667b` | — | Pays off the bike's loss by restoring it as a rebuilt a… | 9/discovery | 2483c | UNSCORED |
-| 3123 | `7ab87d5b-f890-4580-b842-01d4fecdfac8` | — | Turns the closing chapter into an opening by having the… | 9/discovery | 2906c | UNSCORED |
+| 3123 | `7ab87d5b-f890-4580-b842-01d4fecdfac8` | — | Turns the closing chapter into an opening by having the… | 9/discovery | 2905c | UNSCORED |
 | 3124 | `0242353c-683e-4af4-9178-36e55b9bbba8` | — | Establishes the stakes of Season Two by revealing Kyle … | 9/discovery | 3643c | UNSCORED |
 | 5184 | `1f292e96-f662-4759-8dab-2da550b4dd1f` | — | Grounds Kyle's interior reckoning in the quiet of his a… | 9/discovery | 3833c | UNSCORED |
 
