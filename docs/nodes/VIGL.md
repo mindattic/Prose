@@ -1515,29 +1515,54 @@ the Caul; the Caul stole it from a specific moment, and that moment is permanent
 the source Sphere's material record.
 
 **What each major House holds:**
-- **Liturgy / Ocipheus** — *Oculus Memoriae*, the Eye That Remembers: a lens of unknown origin,
-  pulled from a moment Lyra's vigil records have never fully resolved. Every other act of
-  Scrying is a look — seen and lost, the membrane healing shut behind it. The Oculus is the one
-  instrument in the Caul that does not lose what it sees. **It retains. Memory made physical.**
-  Fixed to the Sinter vigil at Ocipheus Station since Year 397, it holds **741 unbroken years of
-  the crater as a single continuous memory** — not 741 separate lookings stacked up, one memory,
-  still accumulating. Deeper than the vigil count, in the lens's oldest, coldest strata — frames
-  that predate Year 397, predate the installation, predate any record of how they got there —
-  there is a Sinter that is not a crater. Green country. Roads. Rooftops. A sky that isn't dust.
-  **Sinter, before.** No other record of that place survives anywhere in the Caul; the
-  Sinterspawn have metabolized every other trace of it (§9b). The Oculus is the only surviving
-  memory of an erased place, and the only continuous witness to 1,138 years of a slow
-  apocalypse.
+- **Liturgy / Ocipheus** — *Oculus Memoriae*, the Eye That Remembers: not a pulled object like the
+  others below, but a **Scry that never closed** — an aperture struck onto the **core of Sinter** in
+  some unrecorded year and never sealed. Every other act of Scrying is a look: seen and lost, the
+  membrane healing shut behind it. The Oculus is the one wound in the membrane that never healed. It
+  does not *store* a memory — **it never stopped looking.** Fixed to the Sinter vigil at Ocipheus
+  Station since Year 397, it has stared, unbroken, into the crater's core for **741 years** — one
+  continuous sight, still accumulating. Look into it and you see **what is growing down there**: the
+  alien biology eating downward through the earth, patient, coordinated, getting larger year over
+  year (§9b) — the thing no one outside the Liturgy is permitted to see. And because Scrying reaches
+  *times* as well as places, the same window holds the whole descent: the **Year-1079 threshold** —
+  the Event as a *birth*, not an eruption — and, in its oldest, coldest frames (from before Year 397,
+  before the vigil, before any record of how the aperture was struck), a Sinter that is **not a
+  crater**: green country, roads, rooftops, a sky that isn't dust. **Sinter, before.** No other
+  record of that place survives; the Sinterspawn have metabolized every other trace of it (§9b). The
+  Oculus is the only window left onto what Sinter *was*, and the only unblinking witness to what it
+  is *becoming*.
 
-  It is not a prize. It is the truth, made an object — which means holding it is not a windfall,
-  it is a sentence: bury what it shows, or let the world remember. Memory of this kind belongs
-  with act — seen, recorded, acted on — not with a vault. That is precisely why the Liturgy keeps
-  it in one. A world that remembers what is happening at Sinter cannot go on filing it under "no
-  action indicated." The Liturgy's power is indispensability, and indispensability needs the east
-  forgotten. The founding canon says only: *"the Eye That Remembers, retrieved at great cost from
-  the moment of its making."* What moment. What Sphere. What cost. Not in any record Lyra has
-  found — and it never will be. The one thing the Oculus cannot show is its own making. The thing
-  that remembers everything cannot remember itself.
+  It is not a prize. It is **the one window the world was never allowed to look through** — which is
+  why holding it is not a windfall but a sentence: keep the curtain shut, or let the Caul watch the
+  thing in the crater assemble itself. What it shows belongs with act — seen, recorded, acted on —
+  not sealed in a vault. That is precisely why the Liturgy keeps it in one. A House that can *see
+  into the core of Sinter* cannot go on filing the east under "no action indicated"; indispensability
+  needs the east unseen. The founding canon says only: *"the Eye That Remembers, retrieved at great
+  cost from the moment of its making."* What moment, what cost, what struck the aperture and fixed it
+  on the crater — not in any record Lyra has found, and never will be. The one thing the window
+  cannot turn to show is its own opening. The eye that sees everything cannot see itself.
+
+  **The Oculus's price — a wound that will not close** {#SS-VIGL-6b-wound}: a scry that never closes
+  is still a wound, and a wound held open behaves like one. Every other membrane-cut heals in
+  minutes; this one has been held open for centuries and pays the cost the whole time. **It bleeds** —
+  the Amnios weeps from it; the Oculus is always faintly wet, warm, beaded with a golden seep, which
+  is why it rides in a lined, sealed case that has to be wiped and re-lined. **It festers** — left
+  untended, the membrane-flesh around the aperture granulates and proliferates, and things begin to
+  try to gestate at its lip: the exact process of Sinter (§9b), in miniature. And it strains to
+  **widen** — an unhealed breach under the Amnios's pressure wants to open further. So the Oculus is
+  not a passive lens; it is a small, live, ever-bleeding wound that must be actively **contained** —
+  tended, culled, kept pinhole-small by apparatus and ritual only the Liturgy has kept. **The vault
+  is a quarantine as much as a hiding place.** The Liturgy buries the Oculus for two reasons: to bury
+  what it *shows* (§2a), and to contain what it *leaks*. They are the one House that knows how to keep
+  a held-open wound from becoming a crater — which is exactly why they, of all Houses, understand
+  precisely what Sinter is, and still file "no action indicated."
+
+  **The rhyme (LOCK — never confirmed in-book):** the Oculus is what Sinter looked like on its first
+  day. The unspoken horror no character states aloud is that **Sinter may be an Oculus that got
+  away** — a scry someone once held open and then lost control of, until it widened into a miles-deep
+  wound and began to gestate an army. Anyone who has carried the small wet wound in its box and then
+  stood at the rim of the vast wet wound in the earth feels the resemblance: two wounds of the same
+  kind, 741 years apart. Leave it unproven — the resemblance is the dread.
 - **Atrament** — *Humpty Dumpty*: the great cannon from the **1648 Siege of Colchester**,
   Sphere 31 (Earth). Royalist forces mounted it on the church of St Mary-at-the-Walls;
   Parliamentary fire brought down the wall; the cannon fell and could not be reassembled. The
