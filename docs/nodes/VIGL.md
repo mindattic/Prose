@@ -72,8 +72,10 @@ It is a wound that has been converting itself into architecture for 1,138 years.
 seeded alien biology; the alien biology has been eating downward into the earth like a cavity
 in a tooth; the crater is now miles deep; and in the depth, things from beyond the stars have
 been building an army. The Cauld has been watching this through the vigil and filing it under
-"no action indicated" since Year 397. What the Relic shows Lyra at the aperture is the
-time-lapse of that accumulation — and the rate of change in its final frames is faster than
+"no action indicated" since Year 397. Ordinary Scrying is a look, seen and lost the moment the
+wound closes (§4); the Relic (§6b) is the one thing in the Cauld that keeps what it sees. What
+the Relic shows Lyra at the aperture is the time-lapse of that accumulation — 741 unbroken
+years of it — and the rate of change in its final frames is faster than
 any prior period. This is the discovery that will eventually require every House, the Liturgy,
 the Eaters of Monsters, and whoever else survives to set aside every standing grievance and
 face what writhes at the bottom of Sinter. That story is not this book. This book is the
@@ -628,14 +630,30 @@ discovers who all three were. That is what makes the confrontation land.
   Ocipheus's institutional custody. Both things are true and cannot both be satisfied.
 - She has not told Aldric this. She does not know how to tell Aldric this, because Aldric has
   been certain his whole life and Wren does not know what certainty looks like after it breaks.
-- **The Blink:** Wren's Transmutation infusion — one — is a Loera-tradition phase-step ability.
-  Loera has a long culture of thieving-arts that formalized the phase-step as a practiced
-  infusion technique rather than a military one. Wren obtained it through Loera channels —
-  Aldric used Loera contacts to give her the right tool for the right job. For approximately
-  four seconds per use, she can translate her body through solid material up to two meters
-  thick. She cannot blink through iron; she cannot carry more than one hand's worth. The Blink
-  Thieves are named for her. She is why they could leave through the south coast of the Ocipheus
-  archive without triggering a sealed gate. The box was in her arms. She walked through the wall.
+- **The Blink — applied Scrying, on herself:** Wren's Transmutation infusion — one — is a
+  Loera-tradition phase-step ability, and what it does is Scry her own body through the membrane
+  (§4, §4b) and back out again a short way off in the same world. Loera has a long culture of
+  thieving-arts that formalized this as a practiced infusion technique rather than a military
+  one. Wren obtained it through Loera channels — Aldric used Loera contacts to give her the right
+  tool for the right job. For approximately four seconds per use, she pushes herself through
+  solid material up to two meters thick — through the membrane, through the black, out the far
+  side — never through iron; the metal resists the membrane the way it resists everything else
+  membrane-adjacent (§4a). She cannot carry more than one hand's worth through with her. The
+  Blink Thieves are named for her. She is why they could leave through the south coast of the
+  Ocipheus archive without triggering a sealed gate. The box was in her arms. She walked through
+  the wall.
+- **The cost — a heartbeat in the black:** Every blink is not a trick of geometry; it is four
+  seconds spent *inside the black* — cold, formless, no up, no edges, and the specific fear of
+  not finding the "out" before the four seconds run out. This is why blinkers are rare even
+  within Loera's thieving tradition: most who try it do not come back the same, and some do not
+  come back. Wren does not describe this to anyone who has not asked twice.
+- **The rhyme with Rowe:** Wren and Soren Rowe are the only two people in the party who know what
+  the black feels like from the inside — she by choice, in heartbeats, over and over; he once,
+  involuntarily, at the Taking, and every time his home shell is threatened with loss (§1c). Both
+  of them move by the membrane. Both of them live with the same fear underneath the different
+  shapes it takes: Rowe's is being cut off from his own shell with the black on the other side of
+  the door; Wren's is being the one who goes into the black and does not find the seam back out.
+  Neither of them says this to the other in so many words. Neither of them has to.
 - **At the Caer Glas intercept:** Lyra's party catches the squad on the Pallor moor. Esvane and
   Petra go down. Wren blinks — through a stone building, a courtyard wall, into an adjacent
   field — with the Yggdra box in her arms. She is alive. The Relic is with her. She is alone
@@ -809,6 +827,15 @@ anything he does.
 
 ## 4. The Scrying Ritual {#SS-VIGL-4}
 
+**What Scrying is, precisely:** Scrying is looking through the membrane into another Sphere — at
+another *place*, and at another *time*. It has never been limited to the present; a scry can show
+what a room held an hour ago or a hundred years ago as readily as what stands there now. What it
+cannot do is keep it. Scrying is a look, not a possession: what you scry, you see and lose — a
+glimpse, then gone, the way Orim's Rod holds an aperture for seconds and then loses it. The Relic
+(§6b) is the sole exception to this rule, and it is an exception bought at enormous cost. Every
+other membrane act described below — the ritual, the Rod, the vigils, the Scrywells — is the same
+looking, at different scale.
+
 When Orim Zebulun scrys, it is shown as ritual with physical texture:
 
 1. He wets his fingertips with a dilute Catalyst tincture preparation — sensitizing but
@@ -976,6 +1003,42 @@ It is the most he has said about the Rod's secondary capability to anyone in fif
 is a decision to open the wrong door for something that did not choose to come through.
 Orim makes these decisions precisely, rarely, with full knowledge of what he is doing.
 He does not pretend the knowledge makes it clean.
+
+---
+
+### 4b. The Black — What Lies Behind the Membrane {#SS-VIGL-4b}
+
+The membrane is not a wall with a picture on the far side. Between the Spheres — behind every
+skin Orim's Rod ever stretched, under every scry, under the Oculus's held images — is a medium
+the Cauld has no better word for than **the black**. No up. No edges. No time the way the Cauld
+counts it. It is not empty — things cross it, cross through it, are lost in it — but it is not a
+place in the sense a room or a road is a place. It is what a membrane act touches before it
+touches anything else.
+
+Every act described in this bible that reaches through the membrane is a different way of
+touching the black:
+
+- **Scrying looks into it** — the wet-edged, translucent quality of what Orim sees is the black
+  seen through the membrane's own tissue, warmed or cooled by the age of what it shows.
+- **The Rod's force-pierce stretches it** — "the skin" (§4a) is the membrane distended by
+  pressure from the black's far side until something crosses out of it.
+- **The Taking Scries a mind out through it.** What Soren Rowe remembers as the sea of black
+  (§1c-flashback) — no body, no up, no edges, the wreckage of his own memories drifting loose
+  around him — is a mind adrift *in the black itself*, between the pluck and the shell, before
+  Verlaine's apparatus catches it and seats it in a chassis.
+- **The Sinterspawn came through it.** The bolide did not merely seed alien biology onto the
+  surface at Sinter — it opened a wound straight through the black, and what has been building
+  in the crater for 1,138 years is biology that crossed *through* the black to get there (§9b).
+- **Wren's Blink passes a body through it, briefly** (§2c) — the only membrane technique in
+  this book that sends something living into the black and pulls it back out again on purpose.
+
+**CRITICAL LOCK — the black's ultimate nature is never explained.** Not its origin. Not whether
+it is alive. Not whether anything dwells in it, waits in it, or is it. This bible describes only
+what the black *does* and what it *feels like* to the handful of people who have touched it:
+cold, formless, no up and no edges, and — every account agrees on this, independently — it
+*clings*. Orim does not know what it is after fifty years of putting his hand into it by proxy.
+Rowe does not know what it is after floating in it. Nobody in the Cauld knows what it is. That
+question is not answered in VIGL. It is the series' deepest open mystery, and it stays open.
 
 ---
 
@@ -1246,24 +1309,48 @@ the reader arrives there with her.
 
 ---
 
-## 6b. Relics — Objects Scried from Historical Moments {#SS-VIGL-6b}
+## 6b. Relics — Objects Pulled from Historical Moments {#SS-VIGL-6b}
 
-A **Relic** is not simply an old or powerful artifact. A Relic is an object that was Scried
-from a specific, historically significant moment in another Sphere — pulled through the membrane
-from a key event and brought into the Cauld. They carry membrane-contact from the moment of
-extraction: the event, the weight of it, the specific pressure of that instant in that world's
-history. This is distinct from standard membrane Scrying (which retrieves from the present) —
-Relic-Scrying targets a past moment in a Sphere's timeline with precision. It is rare,
-technically demanding, and not fully understood even by the Liturgy's practitioners. The Relic
-does not simply exist in the Cauld; the Cauld stole it from a specific moment and that moment
-is permanently gone from the source Sphere's material record.
+A **Relic** is not simply an old or powerful artifact, and it is not merely a well-aimed Scry.
+Scrying has always reached other *places* and other *times* — see §4 — there is no version of
+the art that sees only the present, and no version that keeps what it sees. What Scrying gives
+is a look: transient, wet-edged, gone the moment the wound closes. A Relic is the rare exception
+to that transience — the one thing membrane-contact does not simply take back. A Relic is an
+object that was pulled *physically* through the membrane from a specific, historically
+significant moment in another Sphere — not looked at, but **materialized**: dragged bodily out
+of a key event and left standing in the Cauld. This is orders of magnitude harder than an
+ordinary scry, harder even than a Rod's force-pierce, because it does not merely open the
+membrane to whatever pressure is behind it — it reaches in and *keeps* something specific. A
+Relic carries membrane-contact from the moment of extraction: the event, the weight of it, the
+specific pressure of that instant in that world's history. It is rare, technically demanding,
+and not fully understood even by the Liturgy's practitioners. The Relic does not simply exist in
+the Cauld; the Cauld stole it from a specific moment, and that moment is permanently gone from
+the source Sphere's material record.
 
 **What each major House holds:**
-- **Liturgy / Ocipheus** — *Oculus Memoriae*: a lens of unknown origin, Scried from a moment
-  Lyra's vigil records have never fully resolved. It shows the past state of any location it
-  has occupied. Has been at Ocipheus Station since Year 397. The founding canon says only: "the
-  Eye That Remembers, retrieved at great cost from the moment of its making." What moment. What
-  Sphere. What cost. Not in any record Lyra has found.
+- **Liturgy / Ocipheus** — *Oculus Memoriae*, the Eye That Remembers: a lens of unknown origin,
+  pulled from a moment Lyra's vigil records have never fully resolved. Every other act of
+  Scrying is a look — seen and lost, the membrane healing shut behind it. The Oculus is the one
+  instrument in the Cauld that does not lose what it sees. **It retains. Memory made physical.**
+  Fixed to the Sinter vigil at Ocipheus Station since Year 397, it holds **741 unbroken years of
+  the crater as a single continuous memory** — not 741 separate lookings stacked up, one memory,
+  still accumulating. Deeper than the vigil count, in the lens's oldest, coldest strata — frames
+  that predate Year 397, predate the installation, predate any record of how they got there —
+  there is a Sinter that is not a crater. Green country. Roads. Rooftops. A sky that isn't dust.
+  **Sinter, before.** No other record of that place survives anywhere in the Cauld; the
+  Sinterspawn have metabolized every other trace of it (§9b). The Oculus is the only surviving
+  memory of an erased place, and the only continuous witness to 1,138 years of a slow
+  apocalypse.
+
+  It is not a prize. It is the truth, made an object — which means holding it is not a windfall,
+  it is a sentence: bury what it shows, or let the world remember. Memory of this kind belongs
+  with act — seen, recorded, acted on — not with a vault. That is precisely why the Liturgy keeps
+  it in one. A world that remembers what is happening at Sinter cannot go on filing it under "no
+  action indicated." The Liturgy's power is indispensability, and indispensability needs the east
+  forgotten. The founding canon says only: *"the Eye That Remembers, retrieved at great cost from
+  the moment of its making."* What moment. What Sphere. What cost. Not in any record Lyra has
+  found — and it never will be. The one thing the Oculus cannot show is its own making. The thing
+  that remembers everything cannot remember itself.
 - **Atrament** — *Humpty Dumpty*: the great cannon from the **1648 Siege of Colchester**,
   Sphere 31 (Earth). Royalist forces mounted it on the church of St Mary-at-the-Walls;
   Parliamentary fire brought down the wall; the cannon fell and could not be reassembled. The
@@ -1398,11 +1485,15 @@ anymore in any ordinary sense. Lyra watched her. Lyra has three infusions. She h
 decided what she thinks about that. The story ends before she has to.
 
 **The Relic — Oculus Memoriae:**
-- A lens, roughly palm-sized, that shows the past state of any location it has been at.
-- It has been at Ocipheus Station since Year 397.
+- A lens, roughly palm-sized, that shows the past state of any location it has been at —
+  and, unlike an ordinary scry (§4), does not lose the image when the looking ends. It retains
+  (§6b).
+- It has been at Ocipheus Station since Year 397 — 741 unbroken years of the Sinter crater as
+  one continuous memory, and older, unexplained frames beneath that count (§6b, §9b).
 - It has been at every location the Pallor thieves carried it through.
 - It shows images in the same mode as Orim's scrying — translucent, wet-edged, thermally
-  warm from recent viewings. Because it IS membrane contact, accumulated and stored.
+  warm from recent viewings. Because it IS membrane contact — accumulated and kept, not merely
+  seen.
 - The disturbing discovery (Beat 12): it has an angle. It has been observing from inside the
   archive room — not passively, but with something like attention. Whether this is perception
   or sophisticated memory accumulation that resembles perception is not answered in this book.
@@ -1888,9 +1979,12 @@ It is not done.
 **The Relic shows her the time-lapse:**
 
 The Oculus Memoriae has been at Ocipheus Station since Year 397. It has been watching the
-membrane boundary at this installation for 741 years. What it has accumulated is not passive
-recording — it is a record of the crater's progression, observed from outside the Sinter
-perimeter at the nearest vigil-range point, which was moved twice as the perimeter shifted.
+membrane boundary at this installation for 741 years, and — unlike any ordinary scry, which is
+seen and lost — it has kept all of it: one continuous, retained memory of the crater's
+progression, observed from outside the Sinter perimeter at the nearest vigil-range point, which
+was moved twice as the perimeter shifted. (Deeper than this 741-year count, in the lens's oldest
+strata, are frames of Sinter before the catastrophe at all — see §6b. Lyra does not go looking
+for those here. What the crater needs her to see is the accumulation since Year 397.)
 
 When Lyra holds the Relic at the crater's edge and looks through it, she sees:
 
