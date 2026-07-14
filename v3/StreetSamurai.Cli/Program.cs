@@ -1744,6 +1744,24 @@ if (args.Contains("--coordinate"))
     return;
 }
 
+// ss --backfill-meaning --slug <slug> [--limit N] [--dry-run]
+// Fill the MEANING coordinate (Beat.Description) for beats with prose but no meaning.
+if (args.Contains("--backfill-meaning"))
+{
+    var sp = BuildServicesWithVault(args);
+    Environment.ExitCode = await BackfillMeaningCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --verdict --slug <slug> [--limit N]
+// Per-beat quality verdict: flag CLICHE/GRIPE/CONTRADICTION/MEANING-MISMATCH toward 90+.
+if (args.Contains("--verdict"))
+{
+    var sp = BuildServicesWithVault(args);
+    Environment.ExitCode = await VerdictCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: show running token cost tally for the current process.
 //   ss --cost              print session cost table
 //   ss --cost --json       emit summary as JSON

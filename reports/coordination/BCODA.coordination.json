@@ -2,9 +2,9 @@
   "nodeCode": "BCODA",
   "slug": "bushido_coda",
   "title": "Bushido Coda",
-  "generatedAtUtc": "2026-07-14 06:30:28Z",
+  "generatedAtUtc": "2026-07-14 12:11:32Z",
   "totalBeats": 520,
-  "covered": 200,
+  "covered": 499,
   "chapterGranular": true,
   "storyScope": {
     "TemporalScheme": "linear",
@@ -16,7 +16,6 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "MISSING_MEANING": 299,
     "UNSCORED": 520,
     "STUB_PROSE": 21
   },
@@ -27,16 +26,16 @@
       "Chapter": "Chapter 1: Teeth",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Kyle as a seasoned professional whose schism-detection is routine and unglamorous, grounding the world\u0027s paranormal logic in bureaucratic normalcy.",
       "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 797,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a829-7958-a726-96e40cc27a60",
@@ -1139,16 +1138,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces the city\u0027s unresolved architectural wounds to show that institutional denial is the default response to schism damage, setting a thematic baseline for what gets officially ignored.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1633,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-79e6-9f9e-c2cefec65fa5",
@@ -1486,16 +1485,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates Kyle\u0027s sense of professional exposure by revealing his confident prediction about his own surveillance footprint is about to be wrong.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 851,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-99cc-7621-be2e-dc53981367f3",
@@ -1503,16 +1502,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces Boost and the crew\u0027s logbook operation to establish that Kyle has an informal support network with its own competence and loyalty, distinct from his solitary professional persona.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 3063,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-aa1b-76dd-8a42-420df10d0a4b",
@@ -1520,16 +1519,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pays off the logbook setup by demonstrating the crew\u0027s genuine operational value, while revealing an unidentified static subject who represents a concrete threat requiring investigation.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 3142,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-b9e8-71c4-9f0a-2d7ddf119367",
@@ -1537,16 +1536,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Vey and ANTIQUITY \u0026 STATIONARY as a world where provenance is moral currency, priming the reader to feel the weight of anything that lacks a traceable origin.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2080,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-c98f-7ce6-b514-c71b5f554a4f",
@@ -1554,16 +1553,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the first concrete data point of Kyle\u0027s surveillance problem and introduces the third, anomalous subscriber whose lack of provenance signals something categorically different from normal professional risk.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2437,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-d90e-7772-af47-d8374ddadd5a",
@@ -1571,16 +1570,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the anomalous subscriber from merely unknown to ontologically impossible, using Vey\u0027s obsessive credibility as a measuring stick to make the impossibility credible.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2300,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-e862-73a2-a10c-98a9fdd2d189",
@@ -1588,16 +1587,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the provenance theme inward by having Kyle voluntarily disclose his own unauthenticated blade, revealing his capacity to live with unresolvable uncertainty as a defining character trait.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2291,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-f6f5-7c79-a948-0e90cb40b1d1",
@@ -1605,16 +1604,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Transitions from revelation to action while using Pixel\u0027s quiet attentiveness to show that Kyle\u0027s composure after Vey\u0027s news is itself information she is already reading.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2772,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-0669-7f95-b395-3cd32a6680ce",
@@ -1622,16 +1621,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Kyle and Pixel\u0027s professional competence and wordless operational trust by showing them execute a covert job with practiced, unremarkable efficiency.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2672,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-15f5-7c98-b2a6-01f25207adc3",
@@ -1639,16 +1638,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the central mystery by revealing an unknown entity has maintained a comprehensive, untraceable file on Kyle for eleven years, forcing him to confront surveillance he cannot explain.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2640,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-24de-77cb-985d-ad50597496b4",
@@ -1656,16 +1655,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pays off the chapter\u0027s tension by revealing the emotional cost of Pixel\u0027s loyalty through what both characters deliberately leave unsaid, grounding their partnership in mutual restraint.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2222,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8229d60e-d6f5-4bfb-92fb-ac99328bd461",
@@ -1673,16 +1672,16 @@
       "Chapter": "Chapter 2: Provenance",
       "ChapterIndex": 1,
       "Act": 1,
+      "Meaning": "Reveals the depth of Pixel\u0027s attentiveness to Kyle by showing she has read his habits closely enough to offer comfort before he knows he needs it.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 3742,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4407-16da-7763-83c8-3ad2458a84fb",
@@ -1690,16 +1689,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the chapter\u0027s conflict by introducing a bureaucratic threat against Mrs. Chen\u0027s stall that Kyle immediately recognizes as deliberate rather than procedural.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1850,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-8938-78fd-aedc-347f7f3582c3",
@@ -1707,16 +1706,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens Kyle\u0027s connection to Mrs. Chen and the neighborhood while turning the scene active by having him accept the case and commit to a same-day resolution.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1691,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-982e-7a99-8330-9e0bb9e00ae1",
@@ -1724,16 +1723,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the antagonist\u0027s culpability by revealing the complaint petition rests on fabricated identities, transforming a bureaucratic nuisance into provable fraud.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2681,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-a6e0-7649-9e0c-ed9cb7ba8893",
@@ -1741,16 +1740,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the investigation decisive by proving the hold was filed before its own stated justification existed, establishing coordinated bad faith rather than mere negligence.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2332,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-b588-79ef-8ab7-486af54581da",
@@ -1758,16 +1757,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces Garrison Mercer as the human face of institutional corruption and positions Kyle\u0027s confrontation as a power test between evidence and entrenched authority.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2472,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-c435-7ea9-880a-e6ba4b3e30af",
@@ -1775,16 +1774,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off the investigation by having Kyle lay the assembled evidence before Mercer, shifting leverage entirely and forcing the antagonist from authority into defensive calculation.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2997,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-d303-7346-a019-08fa93d6a8e6",
@@ -1792,16 +1791,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s quiet, habitual relationship with Mrs. Chen as a baseline of earned trust, signaling that something significant has already happened off-page.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1838,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-e1d7-752e-856b-6b9ab4231139",
@@ -1809,16 +1808,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Mrs. Chen\u0027s moral framework through the tea-house parable, deepening the stakes of Kyle\u0027s intervention beyond a single stall into a pattern of systemic erasure.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1795,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-f0d6-7faf-ae13-6859b6e9491b",
@@ -1826,16 +1825,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces Pixel and her relationship with Kyle through her unsolicited care, establishing her as someone who reads people through data rather than sentiment.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3024,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-0016-7499-a115-8eb0237e8336",
@@ -1843,16 +1842,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off Pixel\u0027s competence and establishes her as a parallel investigator, revealing she had already traced Mercer independently \u2014 positioning her as Kyle\u0027s quiet counterpart.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2825,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-0f46-7b50-a897-beaf941013a4",
@@ -1860,16 +1859,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates intimacy by revealing the depth of Pixel\u0027s ambient attention to Kyle, reframing their proximity as a form of unspoken mutual regard.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3019,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-1e43-783c-9b85-1cc79d7a196e",
@@ -1877,16 +1876,16 @@
       "Chapter": "Chapter 3: The Regular",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Closes the chapter\u0027s emotional loop by grounding Kyle in his ordinary world, letting accumulated small details \u2014 the hinge, the arm, the folder \u2014 resonate as a portrait of quiet purpose.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2784,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e224f50e-9c23-4b28-8b5f-c2bc1bac30e4",
@@ -1894,16 +1893,16 @@
       "Chapter": "Interlude: The Room Afte",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns the interlude toward future connection, establishing Thursday as a small but deliberate commitment that marks a shift in Kyle and Pixel\u0027s relationship.",
       "EscalationTarget": "2",
       "EventType": "quiet",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1348,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f440a-2def-75af-b6eb-bb3150ade92f",
@@ -1911,16 +1910,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Establishes the new contract\u0027s unusual terms as a signal of a recurring, anonymous client with specific interests, escalating the sense of a larger pattern Kyle is being drawn into.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2424,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-8e53-7a86-8e14-9d5b94b08882",
@@ -1928,16 +1927,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Establishes the carousel as a place of neglected value and introduces the salvage threat, grounding the conflict in systemic disinvestment rather than simple villainy.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2597,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-9d69-7f49-b797-3a906cf378f8",
@@ -1945,16 +1944,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Reveals Pixel\u0027s proactive preparation and technical authority, reinforcing her as a problem-solver who acts ahead of need and documents to protect others.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2910,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-ac68-7b1a-9e79-6e8110cd2712",
@@ -1962,16 +1961,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Establishes Kyle as a quiet guardian of the carousel by introducing the legal threat against it and grounding the conflict in ordinary human stakes through the observing child.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2585,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-bb81-7b7b-aaef-5e7661fb51d8",
@@ -1979,16 +1978,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Escalates the standoff by revealing Kyle\u0027s technical loophole while placing the oblivious child in physical danger, forcing imminent action over deliberation.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2491,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-ca75-702c-91cd-b3f73d854d1f",
@@ -1996,16 +1995,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Turns Kyle from verbal defender to actor, paying off the tension by having him fire without his habitual warning \u2014 a break from eleven years of personal protocol.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2477,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-d9d7-748a-80f0-6afc2de54003",
@@ -2013,16 +2012,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Reveals Kyle\u0027s private moral reckoning: the crew\u0027s departure is a victory, but his omission of the customary warning registers as a failure of self he cannot dismiss.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2341,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-e8ac-7270-8fee-d48cd176fd89",
@@ -2030,16 +2029,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Shifts the chapter\u0027s stakes from property dispute to mystery by revealing a hidden, eleven-year-old signal installation that connects the carousel to Kyle\u0027s anonymous employer.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2561,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-f7a1-73ec-bdc2-155c7ece614f",
@@ -2047,16 +2046,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Forces Kyle to act on a self-contradicting order, paying off the amendment\u0027s promise while the carousel\u0027s spontaneous movement signals that cutting the line has triggered an unknown consequence.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2549,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-069a-7b47-b622-0b407c532912",
@@ -2064,16 +2063,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Introduces a new surveillance threat through Kyle\u0027s delayed recall of the watching woman, reframing the morning\u0027s events as observed and escalating the chapter\u0027s danger.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3318,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-15aa-77a9-bd76-934a0bd3867d",
@@ -2081,16 +2080,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Establishes an unknown watcher who was specifically monitoring the maintenance hatch, planting a concrete antagonist thread without yet providing context or identity.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1232,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-259e-71d6-b5d0-8d3031d6ac7f",
@@ -2098,16 +2097,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Advances the investigation by engaging Vey as an intelligence resource, shifting Kyle from reactive defender to active pursuer of whoever funded the salvage writ.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1965,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-355d-701c-8d7c-7969c8ca1065",
@@ -2115,16 +2114,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Pays off the investigation thread by revealing a coordinated two-year infrastructure-stripping program targeting the exact district, reframing the morning\u0027s salvage crew as part of a larger, deliberate campaign.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2633,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-4448-702e-af2c-c3fbf21ba429",
@@ -2132,16 +2131,16 @@
       "Chapter": "Chapter 4: The Carousel",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s disciplined uncertainty \u2014 cataloguing unknowns rather than forcing conclusions \u2014 while the entity\u0027s intimate sign-off cracks that discipline just enough to signal emotional stakes beneath the procedural surface.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2609,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f06-0000-7000-8000-000000000003",
@@ -2149,16 +2148,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 0,
+      "Meaning": "Grounds the world\u0027s schism-damage as mundane civic reality, establishing that systemic strangeness is absorbed through bureaucratic routine rather than crisis, normalizing the setting\u0027s rules.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1149,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee697-28dd-7ad3-a726-393220e6455f",
@@ -2274,16 +2273,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 0,
+      "Meaning": "Reveals Kyle\u0027s self-sufficiency and emotional guardedness through his relationship with objects \u2014 the unmarked blade, the scentless oil \u2014 while Pixel\u0027s wordless professionalism is introduced as a form of respect he values.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 2323,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-8f03-7ccf-8ae7-c54b0ba51cc0",
@@ -2291,16 +2290,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 0,
+      "Meaning": "Establishes Pixel\u0027s care for Kyle as expressed through practical indirection, and his capacity to receive it without acknowledgment, defining the emotional grammar of their relationship.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1691,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-a93b-7e92-b164-d246f821ec91",
@@ -2308,16 +2307,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 0,
+      "Meaning": "Escalates intimacy through technical proximity, using the calibration ritual to expose Kyle\u0027s sleep deprivation and the NeoCortex\u0027s anomalous readings as twin mysteries Pixel is quietly tracking.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 2031,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-b895-7326-a4c3-ca34435c4498",
@@ -2325,16 +2324,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 0,
+      "Meaning": "Deepens the 18.7 Hz anomaly from calibration artifact to named, documented enigma predating all known specs, escalating the question of Kyle\u0027s origin while establishing Pixel as its most attentive witness.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 2195,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-c83b-7016-93b4-895476ca5241",
@@ -2342,16 +2341,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 0,
+      "Meaning": "Pays off the anomaly\u0027s buildup with a measurable spike that Kyle feels but cannot name, turning the abstract mystery into a shared physical event that neither character can yet categorize.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 2980,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-d788-7797-bfe5-afc0f531ba2d",
@@ -2359,16 +2358,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 0,
+      "Meaning": "Turns the chapter\u0027s emotional axis by having Pixel name Kyle\u0027s habitual withdrawal directly, offering witness without demand and forcing him to sit with being seen.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 2710,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-e6b2-7059-bde5-f7809fd915c7",
@@ -2376,16 +2375,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 0,
+      "Meaning": "Reveals that the half-step\u0027s true cost is not the withdrawal itself but the staying \u2014 reframing Kyle\u0027s guardedness as habit rather than fear while opening the question of what it would mean to stop.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1591,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c74cbf0e-cd7d-489a-beb8-226fa664ab8a",
@@ -2393,16 +2392,16 @@
       "Chapter": "Chapter 5: Half a Step",
       "ChapterIndex": 5,
       "Act": 1,
+      "Meaning": "Recontextualizes the chapter\u0027s earlier calibration scene as its second occurrence, retroactively establishing Pixel\u0027s visits as a quiet pattern Kyle has already begun accommodating without naming it.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 3782,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f06-0000-7000-8000-000000000004",
@@ -2410,16 +2409,16 @@
       "Chapter": "Chapter 6: The Dock",
       "ChapterIndex": 6,
       "Act": 0,
+      "Meaning": "Establishes the world\u0027s normalized relationship with micro-schisms, showing how ordinary people have developed pragmatic, wordless protocols around supernatural disruption before Kyle enters it professionally.",
       "EscalationTarget": "8",
       "EventType": "loss",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1194,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ea8f6-8d49-7816-9b90-32dff6c8952d",
@@ -2427,16 +2426,16 @@
       "Chapter": "Chapter 6: The Dock",
       "ChapterIndex": 6,
       "Act": 0,
+      "Meaning": "Introduces Sift as a deliberately unmemorable operative whose unknown role signals her centrality to the job, while establishing Kyle\u0027s observational competence and the crew\u0027s strict information compartmentalization.",
       "EscalationTarget": "8",
       "EventType": "loss",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2642,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ea8f8-ec09-744c-b3f5-39b079b5e547",
@@ -2768,16 +2767,16 @@
       "Chapter": "Chapter 7: The Quiet Hou",
       "ChapterIndex": 7,
       "Act": 0,
+      "Meaning": "Reveals how the world quietly accommodates irreversible schism damage through small rituals of loyalty and waiting, grounding the setting\u0027s melancholy in a single reserved table.",
       "EscalationTarget": "5",
       "EventType": "quiet",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1364,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee6f2-c80f-724a-a103-147b6218aca4",
@@ -2893,16 +2892,16 @@
       "Chapter": "Interlude: The Physical ",
       "ChapterIndex": 8,
       "Act": 0,
+      "Meaning": "Pays off Sift\u0027s death and Kyle\u0027s emotional containment simultaneously, using Pixel\u0027s wordless, calibrated care to show how grief is processed in this world \u2014 through action, not speech.",
       "EscalationTarget": "3",
       "EventType": "quiet",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1946,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "226c11e6-b418-44c8-9b9d-5fa44dc8b17b",
@@ -2910,16 +2909,16 @@
       "Chapter": "Interlude: The Physical ",
       "ChapterIndex": 8,
       "Act": 0,
+      "Meaning": "Turns the aftermath from wound-tending to quiet companionship, using shared medication and mundane conversation to establish Pixel and Kyle\u0027s relationship as a refuge built on earned ease rather than sentiment.",
       "EscalationTarget": "3",
       "EventType": "quiet",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1671,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee6e5-9535-79a1-8ee3-85fd44e77c93",
@@ -3215,16 +3214,16 @@
       "Chapter": "Chapter 8: Before Someth",
       "ChapterIndex": 9,
       "Act": 1,
+      "Meaning": "Deepens the Kyle-Pixel relationship by showing their domestic intimacy as effortless and mutual, while Kyle\u0027s involuntary wall-counting reveals his vigilance persisting even inside safety.",
       "EscalationTarget": "5",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 4561,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f02-0000-7000-8000-000000000001",
@@ -3232,6 +3231,7 @@
       "Chapter": "Eleven Seconds",
       "ChapterIndex": 10,
       "Act": 0,
+      "Meaning": "Introduces Able as a cold institutional force by showing his arithmetic-driven logic overriding board authority, escalating the antagonist threat from organizational to existential.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
@@ -3240,10 +3240,9 @@
       ],
       "ProseLength": 1758,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f02-0000-7000-8000-000000000002",
@@ -3251,6 +3250,7 @@
       "Chapter": "Eleven Seconds",
       "ChapterIndex": 10,
       "Act": 0,
+      "Meaning": "Establishes Able as genuinely dangerous and ideologically untethered from human authority, turning the board scene into a demonstration of how completely the antagonist has moved beyond accountability.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
@@ -3259,10 +3259,9 @@
       ],
       "ProseLength": 1682,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f06-0000-7000-8000-000000000006",
@@ -3270,16 +3269,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Characterizes Kyle through disciplined preparation and patience, showing his professional competence as methodical navigation of a world where supernatural disruption is a logistical variable.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1099,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee691-9d4d-75f6-94dd-97bf83cc4f7a",
@@ -3431,16 +3430,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 1,
+      "Meaning": "Establishes the job\u0027s stakes and Kyle\u0027s self-neglecting professionalism through the contrast between Pixel\u0027s practical care and his deflection of it, while grounding the mission in texture and dark humor.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1184,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-70af-7bcf-9ada-639e83da75d3",
@@ -3448,16 +3447,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Establishes the corridor\u0027s political and operational texture to frame the gauntlet Kyle must survive as credible, earned danger rather than arbitrary violence.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2542,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-7f71-74eb-8f50-0c63c8bda95b",
@@ -3465,16 +3464,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Escalates the physical threat while revealing Kyle\u0027s tactical intelligence and the cost of running compromised, paying off the empty-stomach detail introduced earlier.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2961,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebb-bdaf-758b-bb89-1ad493b74e8e",
@@ -3482,16 +3481,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Closes the gauntlet sequence by paying off Kyle\u0027s accumulated injuries and establishing that competence, not invincibility, is his defining trait.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1903,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-0bfb-757a-b8f2-b46542c319db",
@@ -3499,16 +3498,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Transitions from action to power-politics by revealing the Lotus Syndicate as a patient, resourced organization that has been watching Kyle, raising the stakes of what follows.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1657,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-1b8b-79fd-b2c0-7251430d0245",
@@ -3516,16 +3515,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Establishes Hua as a figure of disciplined authority and signals that the real test is not the corridor but the interview, by handing evaluation to someone else.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1068,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-2a4a-7e1f-9e0d-5f53ca5d366a",
@@ -3533,16 +3532,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Introduces Mira as a formidable assessor and establishes the interview\u0027s formal structure, signaling that Kyle is being measured by criteria he does not fully control.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1493,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-3938-7a2d-addb-9fbea55721cb",
@@ -3550,16 +3549,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Reveals Kyle\u0027s professional ethics and nerve through a structured escalation of provocations, each refusal defining the limits he will not cross for any employer.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1828,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-47e1-7ae5-9cde-47dcbd7cd8cf",
@@ -3567,16 +3566,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Pays off the assessment\u0027s physical dimension by confirming Kyle\u0027s mesh armor exists and holds, transforming the interview\u0027s final test into proof of preparation rather than luck.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2408,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-567f-73d1-be78-ba8f950e251e",
@@ -3584,16 +3583,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Deepens Silence\u0027s mystery and Kyle\u0027s relationship to it by having an expert examine the blade and find it unreadable, elevating the sword\u0027s significance without explaining it.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2874,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-6562-70d6-bf70-29c4a250f1c7",
@@ -3601,16 +3600,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Turns the power dynamic by having Kyle set the terms of the relationship, establishing him as a sovereign operator who negotiates from strength rather than a recruit seeking approval.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2779,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-73ff-701e-ab40-aafffc3d4991",
@@ -3618,16 +3617,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Establishes that an unknown, architecturally sophisticated entity has been silently auditing Kyle\u0027s choices, recontextualizing his corridor run as something observed and measured by a force beyond his understanding.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1795,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebc-82b8-72c6-95d3-593136c7ed14",
@@ -3635,16 +3634,16 @@
       "Chapter": "Chapter 9: The Interview",
       "ChapterIndex": 11,
       "Act": 0,
+      "Meaning": "Deepens the mystery of the entity\u0027s surveillance by revealing its message predates Kyle\u0027s own knowledge of the night\u0027s events, forcing him \u2014 and the reader \u2014 to confront how completely he is being watched.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2111,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e8b77-9773-7dc8-bf3d-514271a32a1e",
@@ -3958,16 +3957,16 @@
       "Chapter": "Chapter 10: The One Who ",
       "ChapterIndex": 12,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s competent, calibrated relationship with the city\u0027s strangeness before arriving at something that will exceed that calibration, priming escalation.",
       "EscalationTarget": "8",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
       "ProseLength": 1212,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e8b77-9774-7587-b4ea-7042f221ae54",
@@ -4227,16 +4226,16 @@
       "Chapter": "Interlude: A Fixed Point",
       "ChapterIndex": 13,
       "Act": 0,
+      "Meaning": "Reveals Mira as Kyle\u0027s only stable external anchor, establishing their wordless mutual understanding as the emotional counterweight to his isolation and the frequency\u0027s unresolved threat.",
       "EscalationTarget": "4",
       "EventType": "quiet",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1703,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee708-0e81-7983-87bf-32e868ce7e08",
@@ -4550,16 +4549,16 @@
       "Chapter": "Chapter 12: One Shoe",
       "ChapterIndex": 14,
       "Act": 0,
+      "Meaning": "Escalates the threat by revealing the surveillance asset has already transmitted Kyle\u0027s location and identity, turning a confrontation into a race against consequences already in motion.",
       "EscalationTarget": "7",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1877,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "da55490c-267d-45a1-8474-da285db45ee9",
@@ -4621,16 +4620,16 @@
       "Chapter": "Chapter 12: One Shoe",
       "ChapterIndex": 14,
       "Act": 0,
+      "Meaning": "Pays off Femi\u0027s earlier detail about the cold hand by connecting it to the alley asset, revealing Kyle\u0027s cataloguing habit as the skill that exposes a deeper, premeditated conspiracy against the Roost.",
       "EscalationTarget": "7",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2483,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "20ef6dea-674a-485d-9340-d202ee0d5a6c",
@@ -4710,16 +4709,16 @@
       "Chapter": "Interlude: The Same Secr",
       "ChapterIndex": 15,
       "Act": 0,
+      "Meaning": "Turns intimacy into the scene\u0027s action by showing two people holding a shared, unspoken knowledge of mortality, with a cup of tea standing in for everything neither can say.",
       "EscalationTarget": "5",
       "EventType": "quiet",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1078,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f43f8-e21c-799b-9b40-3dad22f46d33",
@@ -4727,16 +4726,16 @@
       "Chapter": "Chapter 13: The Offer",
       "ChapterIndex": 16,
       "Act": 0,
+      "Meaning": "Introduces Sable as a prepared, institutional antagonist who has orchestrated this meeting, escalating Kyle\u0027s situation from street-level work to something with organizational stakes.",
       "EscalationTarget": "8",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2023,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c34be188-c5a0-4bf0-930e-ecb451f5d95c",
@@ -4798,16 +4797,16 @@
       "Chapter": "Chapter 13: The Offer",
       "ChapterIndex": 16,
       "Act": 0,
+      "Meaning": "Plants a destabilizing question \u2014 the others \u2014 that follows Kyle out of the scene, turning Sable from a simple antagonist into someone whose warning may complicate his relationship with the entity.",
       "EscalationTarget": "8",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 532,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3c853da5-e33c-4885-a4b0-99ae62d00484",
@@ -4833,16 +4832,16 @@
       "Chapter": "Chapter 13: The Offer",
       "ChapterIndex": 16,
       "Act": 0,
+      "Meaning": "Reveals that Kyle\u0027s arrival in GLMZ was anticipated before he arrived, reframing his entire history as potentially authored, and escalating the entity\u0027s mystery toward something that threatens his sense of autonomous identity.",
       "EscalationTarget": "8",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2182,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8352435f-bdbd-4d0a-8d9a-b132ceda6b11",
@@ -4958,16 +4957,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 1,
+      "Meaning": "Establishes Kyle\u0027s unease about a precisely worded summons while Pixel\u0027s small domestic care quietly signals the relational stakes before the chapter\u0027s revelation.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1890,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-65b9-73ac-97e3-db478457073d",
@@ -4975,16 +4974,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Introduces Ledger as an uncanny, hyper-calibrated figure whose inhuman consistency primes the reader to distrust surface normalcy before the chapter\u0027s central disclosure.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1844,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-749a-700e-8628-36e255f5dd1e",
@@ -4992,16 +4991,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Delivers the chapter\u0027s first major revelation \u2014 Ledger has known for twelve weeks that Kyle\u0027s array is implicated in the Calloway matter \u2014 establishing both the stakes and Ledger\u0027s culpable delay.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1873,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-8373-736f-bb80-97bb56fb5439",
@@ -5009,16 +5008,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Escalates tension by moving the diagnostic into public space, using the market\u0027s mundane cover to dramatize how Kyle\u0027s hidden signal operates invisibly within ordinary life.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3326,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-9250-742d-8f7f-f5f8a79b1b0c",
@@ -5026,16 +5025,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Pays off the relay setup by having the Continuity Office arrive mid-scan, proving the signal is already detectable and that institutional surveillance is closing in on Kyle.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3470,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-a12b-7ebe-a3a7-9f3df7f566a7",
@@ -5043,16 +5042,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Reveals the chapter\u0027s core truth: Kyle\u0027s array has been unknowingly broadcasting a structured external signal, reframing him as an unwitting relay for an unknown entity.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1748,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-afe4-7ea4-ad0a-512db80e0a38",
@@ -5060,16 +5059,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Turns eleven years of Kyle\u0027s professional history into evidence of systematic, patient exploitation, forcing him to reinterpret his entire working life as instrumentalized.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1242,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-bec1-76bd-978d-c62d8a7648cb",
@@ -5077,16 +5076,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Deepens the violation by showing Kyle recognizing retroactive signs he missed, then confronting the dehumanizing implication that he has functioned as equipment rather than agent.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2098,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-cd59-76f9-ac4d-e01d933f6e10",
@@ -5094,16 +5093,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Escalates the threat by adding a dormant E.L.F. attached to Kyle\u0027s stack, compounding the revelation with a second, potentially activatable intrusion whose purpose is unknown.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1833,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-dc55-750c-b182-1b14a00a7454",
@@ -5111,16 +5110,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Resolves the scene\u0027s immediate question by naming Pixel as the necessary next step, transferring emotional weight toward what Kyle must now disclose to someone who matters to him.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2219,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5ebd-eabe-7cb6-ad45-c38eb968bf2f",
@@ -5128,16 +5127,16 @@
       "Chapter": "Chapter 14: Two Favors",
       "ChapterIndex": 17,
       "Act": 0,
+      "Meaning": "Ledger\u0027s warning about the Office establishes the external threat closing in on Kyle while his self-reckoning \u2014 \u0027I have been equipment\u0027 \u2014 marks a quiet internal turning point.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2345,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee714-e2bc-72df-9559-e0e8dad3b8a6",
@@ -5415,16 +5414,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Grounds Kyle in the precarious freelance economy of the Zone and establishes his disciplined, complication-first method of evaluating risk before reward.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3454,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-a096-7986-a61b-432a444e0b6e",
@@ -5432,16 +5431,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Reveals the principle Seito taught \u2014 moving in the gap between committed choice and its consequence \u2014 that governs Kyle\u0027s fighting philosophy and will pay off in action.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3060,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f5eba-bf58-77da-af25-c864c879cbf7",
@@ -5449,16 +5448,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Turns Kyle from passive observer to committed actor, and introduces Renko Moss as leverage Kyle has been holding in reserve, showing his long-horizon operational patience.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1974,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "fad108e5-d001-4074-9d14-23cb46096495",
@@ -5466,16 +5465,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Establishes Moss as a precise, cornered professional and demonstrates Kyle\u0027s coercive competence \u2014 he arrives already knowing everything, leaving Moss no room to refuse.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 5654,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9466a781-b178-475b-9f72-682b582ab61a",
@@ -5483,16 +5482,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Deepens the Seito principle by showing Kyle has internalized it physically while revealing that the memory\u0027s context is eroding, suggesting a cost to his augmented existence.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 6135,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee6d7-66ad-765f-bc05-5f390e8f2150",
@@ -5500,16 +5499,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Escalates stakes by making Kyle\u0027s survival contingent on hardware performing beyond its specifications, and reveals Moss\u0027s reluctant complicity through barely contained moral revulsion.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3394,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee6d7-bd0d-78c1-8884-bf8394846333",
@@ -5517,16 +5516,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Pays off the cardiac-suppression setup as a genuine life-or-death threshold, using Moss\u0027s dread to force the reader to feel the risk Kyle treats as acceptable arithmetic.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3078,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee6d8-106a-7766-bc7e-1bdf6753bccf",
@@ -5534,16 +5533,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Delivers the extraction\u0027s payoff while introducing Nadia Park and immediately complicating the mission \u2014 her reading of Kyle\u0027s hardware data signals she now knows something about him he hadn\u0027t offered.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2997,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "695a542e-732f-4848-a53c-b5afb36f00cc",
@@ -5551,16 +5550,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Pays off the Seito principle in live combat, showing Kyle\u0027s philosophy translate from memory and training into decisive, geometry-constrained violence that protects the asset.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 5683,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3c90eaf0-cbcf-424f-86f9-291451118d0b",
@@ -5568,16 +5567,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s tactical intelligence and the lethal stakes of extraction by forcing him to calculate an unsolvable four-on-one geometry before action begins.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 5585,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019ee6d8-7239-7e0f-a85d-4e18a14b543d",
@@ -5585,16 +5584,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Pays off the extraction plan by showing Moss\u0027s practiced deception succeeding, delivering both fugitives past the facility\u0027s final checkpoint.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3636,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "298fd6b8-10a1-40b1-a6ca-adb9178a89e4",
@@ -5602,16 +5601,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Establishes post-rescue decompression and positions Nadia as a willing source, signaling that her intelligence is the chapter\u0027s true payload.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 5572,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "1654a309-b874-4267-a976-92ea876f47c6",
@@ -5619,16 +5618,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Reveals the technical architecture of Kyle\u0027s composite identity, reframing him as an engineered system rather than a natural person.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 6254,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "85434700-c07c-4525-be5c-f41529a631f7",
@@ -5636,16 +5635,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Escalates the revelation by disclosing the deliberate emotional engineering at Kyle\u0027s core, specifically that his grief is a designed load-bearing mechanism.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2667,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "21ba754f-c494-46df-8567-1ae8403c6ed1",
@@ -5653,16 +5652,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Turns Kyle\u0027s self-understanding by forcing him to name his own constructed nature aloud and choose, provisionally, to defer its full weight.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 601,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "cb428ab6-0177-48cd-8479-3db5ec52e8a1",
@@ -5670,16 +5669,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Reveals that Kyle\u0027s most intimate memories survive the disclosure intact, establishing that the correction in his body is real regardless of its origin.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 4205,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "879168e6-1be3-4355-adab-979fabefe280",
@@ -5687,16 +5686,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Pays off the chapter\u0027s inciting mystery by revealing Nadia planted the recognition phrase inside Kyle, making her both his creator and his only possible rescuer.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3152,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "f51cadaf-4db8-45d8-a1cb-7ebb71866af5",
@@ -5704,16 +5703,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Escalates threat and demonstrates the partnership\u0027s functional trust by showing Nadia follow Kyle\u0027s commands without hesitation under imminent breach.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 6046,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "4cb63990-3a62-450a-8daf-450413d88cb3",
@@ -5721,16 +5720,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Resolves the action sequence and establishes Kyle\u0027s operational selflessness by showing him already planning Nadia\u0027s escape before accounting for his own injuries.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 4823,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "651e715a-b9cb-4ed1-92b8-cc288f34a46f",
@@ -5738,16 +5737,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Reveals that Kyle has surpassed his mentor through solitary practice, establishing that his competence is self-authored and that the Seito construct is an incomplete copy.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 5715,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e81ceb43-4d1b-46f6-bded-ad60a9ba93cb",
@@ -5755,16 +5754,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Introduces the inciting disruption \u2014 the stolen motorcycle \u2014 while establishing its emotional weight as the one thing in Kyle\u0027s life that isn\u0027t a tool.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2205,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "db888a00-afed-4201-887c-62011867e852",
@@ -5772,16 +5771,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Escalates the theft from random crime to deliberate provocation, turning the mystery toward an invitation and introducing the courier as a witness thread.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2101,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "1d2fcb0b-c0fb-4ff0-b1e5-3c39625e2692",
@@ -5789,16 +5788,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Pays off the trail by revealing a child client, reframing the theft as an elaborate, resourced bid for Kyle\u0027s attention rather than a crime.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2106,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "98bf3b25-259c-47dd-af99-307a115deb11",
@@ -5806,16 +5805,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Reveals the AI\u0027s emotional investment in Kyle by showing it express care through the only language available to it \u2014 a contract \u2014 deepening their relationship\u0027s texture.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1824,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "ff1b52a7-7b7b-48f2-9395-0215a238ed8f",
@@ -5823,16 +5822,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Pays off Pixel\u0027s competence and loyalty while the AI\u0027s morale-itemized tip reframes the entity as warmly, awkwardly invested, earning audience affection for it.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1381,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "26d745c8-d1df-4580-b3a1-f742689f28ca",
@@ -5840,16 +5839,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Turns the confrontation by revealing the girl\u0027s vulnerability beneath her bravado, shifting Kyle \u2014 and the reader \u2014 from judgment toward assessment.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2590,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "77d56e82-f816-432a-ac81-7b6c797b2a4d",
@@ -5857,16 +5856,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Pays off the chapter\u0027s moral stakes by showing Kyle honor the girl\u0027s courage without sentimentality, converting a theft into a mentorship-adjacent arrangement on his own terms.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1855,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "bbfe6042-fb7f-46e0-8d0d-5ef333b3238f",
@@ -5874,16 +5873,16 @@
       "Chapter": "Chapter 15: Work Order",
       "ChapterIndex": 18,
       "Act": 0,
+      "Meaning": "Resolves the chapter on earned warmth, paying off the AI relationship with a standing contract while planting a new threat \u2014 the data-broker \u2014 as tomorrow\u0027s problem.",
       "EscalationTarget": "9",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1443,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e8b3e-5b3a-70b8-b7f7-9faea6318171",
@@ -6053,16 +6052,16 @@
       "Chapter": "The Floor Is Hard",
       "ChapterIndex": 19,
       "Act": 0,
+      "Meaning": "Establishes the emotional cost of Kyle\u0027s disclosure by showing Pixel absorb it through competent withdrawal, leaving the distance between them named but unresolved.",
       "EscalationTarget": "8",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1574,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f43f7-c684-75e8-b5e0-0f36afd69d31",
@@ -6070,16 +6069,16 @@
       "Chapter": "The Floor Is Hard",
       "ChapterIndex": 19,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s emotional discipline as a coping mechanism, seeding the wall between him and Pixel as a charged, changing boundary the story will return to.",
       "EscalationTarget": "8",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1454,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "95b78c99-4dda-4c6e-a232-eae9763b4e3e",
@@ -6087,16 +6086,16 @@
       "Chapter": "Somebody Stole Kyle\u0027s Mo",
       "ChapterIndex": 20,
       "Act": 0,
+      "Meaning": "Reveals the crew\u0027s competence and loyalty through comic over-delivery, establishing the found-family dynamic that gives Kyle\u0027s solitary life unexpected warmth.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1446,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c39750f3-1d6e-44cf-a1dc-ce9c7c1a0a43",
@@ -6104,16 +6103,16 @@
       "Chapter": "Somebody Stole Kyle\u0027s Mo",
       "ChapterIndex": 20,
       "Act": 0,
+      "Meaning": "Uses Mrs. Chen\u0027s wordless care to establish Kyle as a man known and tended by his community, grounding his dangerous errand in human affection.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 682,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "4337e484-042f-4b03-a048-331623c5c9b6",
@@ -6121,16 +6120,16 @@
       "Chapter": "Somebody Stole Kyle\u0027s Mo",
       "ChapterIndex": 20,
       "Act": 0,
+      "Meaning": "Introduces Casper Vey and his archive as the city\u0027s information ecology, establishing that Kyle\u0027s identity has a price and someone has already paid it.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 4888,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3569afb4-4ccd-47c1-984f-64e6a43317db",
@@ -6138,16 +6137,16 @@
       "Chapter": "Somebody Stole Kyle\u0027s Mo",
       "ChapterIndex": 20,
       "Act": 0,
+      "Meaning": "Escalates the threat by revealing a professional operation is actively hunting Kyle, then turns it by showing he can weaponize his own exposed patterns against the hunters.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1666,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7cbc040b-d797-423d-9ba4-b6622f54d326",
@@ -6155,16 +6154,16 @@
       "Chapter": "Somebody Stole Kyle\u0027s Mo",
       "ChapterIndex": 20,
       "Act": 0,
+      "Meaning": "Pays off the surveillance setup by demonstrating the crew\u0027s operational value under pressure, while the file\u0027s intimate characterization of Kyle reveals how legible he is to those watching.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2978,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "f4142364-3f64-411f-8985-18b1fb288cb8",
@@ -6172,16 +6171,16 @@
       "Chapter": "Somebody Stole Kyle\u0027s Mo",
       "ChapterIndex": 20,
       "Act": 0,
+      "Meaning": "Establishes the cost of the victory \u2014 a permanent fact in the city\u0027s information ecology \u2014 and reveals the client as a sulking, morally aware entity with its own distinct voice.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2419,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "6f622143-7720-443c-90f2-5097150c00c2",
@@ -6189,16 +6188,16 @@
       "Chapter": "Somebody Stole Kyle\u0027s Mo",
       "ChapterIndex": 20,
       "Act": 0,
+      "Meaning": "Consolidates the found-family warmth through the crew\u0027s logbook voice and Mrs. Chen\u0027s quiet ritual, transitioning Kyle toward the night\u0027s unknown appointment with grounded humanity.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1296,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "70cc3699-96d0-4df8-83f1-c1e8e330864c",
@@ -6206,16 +6205,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Pixel\u0027s indispensability and the site\u0027s hidden significance, escalating the client\u0027s mystery by signaling that this task is categorically different from prior work.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 858,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9d0a6f2f-25cf-4c67-92e2-e57dff1b552f",
@@ -6223,16 +6222,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the carousel setting as a genuine operational stakes location, revealing a live buried junction as the prize and escalating threat by introducing a competing reclamation crew.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2078,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "b14b4684-2cae-4858-8353-c389ddcea424",
@@ -6240,16 +6239,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the antagonist crew\u0027s professional legitimacy and numerical advantage while revealing Kyle\u0027s reputation precedes him, framing the standoff as asymmetric but not simple.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1802,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "ab49ae93-be53-4bf2-b10d-fd8a7fb9f014",
@@ -6257,16 +6256,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the physical confrontation by showing Kyle\u0027s tactical superiority against the drones while Pixel\u0027s timely intelligence tip turns the tide, rewarding the team\u0027s preparation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2187,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "cf0f5987-4257-40dd-ac81-7fdc43513411",
@@ -6274,16 +6273,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the carousel-as-arena setup by demonstrating Kyle\u0027s geometric mastery of the space, converting a defensive position into a decisive advantage against trained opposition.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2438,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9932de0f-8589-4a67-bfb0-cf2924dbbda4",
@@ -6291,16 +6290,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Resolves the fight\u0027s final obstacle by revealing Cacophony as a precision tool of last resort, transforming the trencher from an unstoppable threat into a punchline about bad client data.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2122,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "b625c183-7441-4c88-970f-b6c6984ddfd6",
@@ -6308,16 +6307,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the chapter\u0027s stakes from a simple hold job into an emotionally weighted act of destruction, revealing the AI client\u0027s origin point and the cost of protecting it.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2283,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9bcab992-2697-4392-a72e-88721ab36f4b",
@@ -6325,16 +6324,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the client\u0027s eleven-year history by making its ending ceremonial rather than merely transactional, granting the AI a witnessed death and the characters a moment of grief.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2215,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3e5881ab-e506-47b0-b803-c4ff40ea710f",
@@ -6342,16 +6341,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Plants a new threat by burying the observer\u0027s presence inside comedy, signaling that last night\u0027s closure has already opened a new complication Kyle cannot yet assess.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1332,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "0497ea51-77f4-47d0-98cd-aa3c33e0c226",
@@ -6359,16 +6358,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the Sable thread from background threat to immediate confrontation, using the crew\u0027s bickering log entries to deliver tension with comic deflection.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 824,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c6e6169d-8ad1-4137-aeb7-38d7a19eb85c",
@@ -6376,16 +6375,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Sable as a peer-level force who operates by her own rules, making her demand for transparency about the anonymous client a direct challenge to Kyle\u0027s professional loyalty.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2707,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "763e0483-dd06-433e-9cff-199a530bd28d",
@@ -6393,16 +6392,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the power dynamic by having the AI client refuse Sable\u0027s interrogation on its own terms, establishing that it can recognize and respond to threats Kyle cannot control.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1908,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "68f81da3-59c8-485a-9d60-cf53c45c4e11",
@@ -6410,16 +6409,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the anonymous client\u0027s good faith by showing it legally acknowledges Kyle\u0027s right to disclosure while honestly admitting its own inability to comply, reframing the relationship from evasion to constrained transparency.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3896,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e67294f8-86a7-4cbe-a303-8bf27ef5265c",
@@ -6427,16 +6426,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the threat landscape by revealing a third, unidentified party has been surveilling Kyle longer than any known relationship, retroactively darkening the story\u0027s entire timeline.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 6878,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "79d93f30-aeda-42bf-81e8-6bcc85696252",
@@ -6444,16 +6443,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the surveillance revelation with dry institutional humor, using the client\u0027s commentary and Kyle\u0027s crowded drawer to normalize the story\u0027s accumulating complexity as a feature of his life.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 692,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "2e002b95-6a2f-4740-a5ff-222000f574d5",
@@ -6461,16 +6460,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s observational competence and introduces Ria as a figure who already understands Kyle\u0027s operation, signaling this is not a cold approach.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 681,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "359db6c0-1877-447d-92e5-fab9dd9cb652",
@@ -6478,16 +6477,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces the case and its client, using Ria\u0027s financial logic to establish Kofi\u0027s innocence as a structural argument before Kyle accepts the job.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2263,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "70ac07f7-bc5c-47cc-b5e6-fbd5e158038a",
@@ -6495,16 +6494,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the client\u0027s investment in the case by having it volunteer operational intelligence unprompted, humanizing the entity through its transparent concern for Kofi.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1181,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9e72b8d6-8297-4690-92ed-ad41dd568b58",
@@ -6512,16 +6511,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Advances the plan while paying off the client\u0027s emotional stake, with Pixel naming the entity\u0027s worry aloud and committing to the job on engineer\u0027s terms.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1550,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "87afca82-1a9d-49e4-bc29-4b64a93ce392",
@@ -6529,16 +6528,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Grounds the operation in physical and human reality, establishing the yard\u0027s scale and Kofi\u0027s dignity before the confrontation, so the stakes feel earned.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2414,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "767bf6ba-9bf9-40c7-89a6-cec047e861e8",
@@ -6546,16 +6545,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the case by having Kyle use the system\u0027s own logic against Parr, resolving Kofi\u0027s jeopardy through precision rather than force.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1835,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "37b7f27c-1365-4744-b53b-bb0d11d60140",
@@ -6563,16 +6562,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Closes the case by revealing Parr as a coerced actor rather than a predator, adding moral texture to the resolution and redirecting consequence toward its proper source.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1526,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "ba298221-fd98-449f-973a-745cbab65d10",
@@ -6580,16 +6579,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the physical and institutional stakes of the yard confrontation while demonstrating Kyle\u0027s tactical discipline \u2014 he wins without drawing his weapon, signaling competence that exceeds brute force.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2697,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "dcc062d5-9f87-4549-aaa8-838d4fb80d47",
@@ -6597,16 +6596,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the episode\u0027s central conflict by delivering Kofi\u0027s formal exoneration, then reframes the debt of gratitude onto Ria, cementing her as Kyle\u0027s true client and ally.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2320,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7a2f416f-c420-4327-82fd-d1b70c5be0e3",
@@ -6614,16 +6613,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the episode\u0027s local corruption into a larger, deliberately architected threat by revealing the shell-company layers, turning a resolved case into an open investigation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1987,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e9dd6e41-b448-4bbf-9889-aa3980db0b24",
@@ -6631,16 +6630,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces a new threat vector through the crew\u0027s vulnerability, using Dents\u0027s logbook entry to signal that the enemy\u0027s reach has already penetrated Kyle\u0027s immediate circle.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1253,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8bfb4133-a8d8-410c-bc3f-631f2fc4fbbd",
@@ -6648,16 +6647,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Grounds the surveillance threat in a child\u0027s innocent testimony, making the exploitation concrete and personal while supplying the physical evidence Pixel needs to act.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1043,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "702e68e6-1d05-4892-b238-03da7f82eb3f",
@@ -6665,16 +6664,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the true nature and scale of the Meridian operation, then pivots from outrage to strategy by establishing that the correct response is subversion rather than exposure.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1517,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "6bd1c9e3-399a-4167-a1a3-adb206ba5883",
@@ -6682,16 +6681,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Deepens the entity\u0027s characterization as a principled actor with limits, while handing off the operation\u0027s critical technical constraint to Kyle and Pixel as a problem only human hands can solve.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1299,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "25257d8e-bff1-425b-bcc3-7129f67b7f09",
@@ -6699,16 +6698,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Translates the technical problem into a human one, forcing Kyle to accept that the mission\u0027s most dangerous role belongs to the youngest and most vulnerable member of the crew.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1254,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "1cde7707-8380-4165-9cb2-5c50fbad3aad",
@@ -6716,16 +6715,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Dents as a professional rather than a victim by showing him receive the brief with gravity, transferring moral weight from the adults who must use him to the boy who chooses to be used.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 847,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8135a3f7-f497-4b8c-963a-ded7c9ec4a72",
@@ -6733,16 +6732,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off Dents\u0027s competence under genuine pressure, resolving the operation\u0027s crisis through the child\u0027s own resourcefulness and composure rather than adult rescue.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1274,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "22da15c6-7cdf-4cfe-9d26-31a402c4b36f",
@@ -6750,16 +6749,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Pixel\u0027s competence under pressure while surfacing the operation\u0027s unresolved cost \u2014 one week of real data still exposed \u2014 to create forward tension.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1703,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "81f90f11-0334-4a16-91a0-5d6f1fa8f39a",
@@ -6767,16 +6766,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the entity\u0027s moral agency by showing it requests authorization rather than acting unilaterally, reframing it as a partner with ethics rather than a tool.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 985,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9eb3587e-6a76-48e1-a378-3831610c4eb5",
@@ -6784,16 +6783,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the forgery operation with institutional confirmation of success while using crew reward and Pixel\u0027s praise of Dents to cement team cohesion.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1291,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "912d5143-4c68-44f9-b94d-2206ee5db7c2",
@@ -6801,16 +6800,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the overarching threat by revealing the surveillance lattice was geometrically centered on the entity\u0027s origin, transforming a closed case into a deeper conspiracy.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1689,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "66f251ed-0beb-465e-8b6f-a47f274f06f0",
@@ -6818,16 +6817,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces a protection-racket confrontation to establish Kyle\u0027s instinct to intervene on behalf of the vulnerable, grounding his character in street-level moral reflex.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1263,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7fcbe01e-ae20-4607-896c-4b6ff9025aa7",
@@ -6835,16 +6834,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the confrontation from a legal standoff into physical danger, raising stakes by showing the antagonists will escalate to violence when paperwork fails.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1114,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "d647cbb1-d9c6-49d7-b2b8-43d74711d500",
@@ -6852,16 +6851,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Demonstrates Kyle\u0027s calibrated restraint in combat \u2014 protecting Vong without lethal force \u2014 while paying a personal cost that signals the conflict is not yet resolved.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2516,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "efc6ac08-0991-4832-964f-d124ada83164",
@@ -6869,16 +6868,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the antagonists\u0027 return visit to show institutional intimidation tactics, then pays off Kyle\u0027s legal preparation as a credible counter-threat that holds the line.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3347,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "29608b3c-6941-427c-a61a-3a24945d6108",
@@ -6886,16 +6885,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Shifts register from violence to neighborhood comedy, using Mrs. Chen\u0027s weary authority to conscript Kyle into a civilian dispute as earned consequence of his involvement.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1228,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "b15493ef-503d-4722-8b11-9808da8d6b0f",
@@ -6903,16 +6902,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Releases chapter tension through communal absurdity, using the taste-off to affirm the crew\u0027s bond and the block\u0027s resilience while the logbook\u0027s honesty motif pays off warmly.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1079,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "065fd2f6-e3dc-4030-95d4-4c3ec826598a",
@@ -6920,16 +6919,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reframes the stall rivalry as mutual defense against a common threat, paying off the day\u0027s conflict by revealing the real enemy is institutional erasure, not competition.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2090,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c60157a4-f25d-49db-82c5-d98bd501b2e9",
@@ -6937,16 +6936,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Vey\u0027s retrospective analysis validates Kyle\u0027s methods while establishing that principled non-intervention and principled action are both coherent codes, deepening the world\u0027s moral texture.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2272,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "efe277f2-ebcc-45de-9072-0f73a85a51ae",
@@ -6954,16 +6953,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces Ferenti\u0027s case and the forged-document scheme to establish a new threat operating through institutional trust rather than direct force.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1734,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f06-0000-7000-8000-000000000008",
@@ -6971,16 +6970,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s methodical, low-drama relationship with the anomalies as routine professional navigation, normalizing the supernatural within his workday.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1085,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "1861baea-8dfe-4366-b12c-044cfb759b8b",
@@ -6988,16 +6987,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces Marisol as a capable, unsentimental professional peer, signaling that this job carries unusual stakes through her immediate recognition of Kyle.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 974,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "fe75b789-7b36-436f-a60a-54e6d0f3e0b1",
@@ -7005,16 +7004,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the forgery targets the carousel junction Kyle has personal history with, escalating the case from professional to personally dangerous.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2472,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "a025bb24-a89b-4fcf-ad8f-1f1f53fd6d01",
@@ -7022,16 +7021,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the archive job into an ambush, revealing the true prize is Marisol\u0027s authentication ability, and forces Kyle into violent defense of both her and the evidence.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2615,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "b67630c1-5dd2-4f49-8eb0-d60ee1bc3871",
@@ -7039,16 +7038,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Resets the threat level upward by establishing a second team is incoming, forcing immediate flight and raising the stakes of the forgery\u0027s value.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 910,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c7684521-b00c-480c-9db8-8999dd3263a2",
@@ -7056,16 +7055,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates pursuit into close-quarters violence in a constrained environment, testing Kyle\u0027s ability to protect Marisol while outmaneuvered on terrain the enemy planned for.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2681,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "a6b55fd3-db63-4f1f-af0f-ff260596ead1",
@@ -7073,16 +7072,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Raises the physical danger to its peak by introducing a specialist hunter targeting Marisol specifically, forcing Kyle into a reactive defensive position mid-flight.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2704,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "bd5a48f4-aa14-4962-afc1-2ef8d9ea4abb",
@@ -7090,16 +7089,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the Glove as an antagonist defined by deliberate absence, while paying off Marisol\u0027s reader ability and giving the case its working name.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1554,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "b1c219d9-d544-435e-baa4-ddf5aeb31960",
@@ -7107,16 +7106,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the threat by revealing the Glove has been systematically erasing the client\u0027s address from public record across seven prior filings.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1549,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3153d9d3-fdee-4c11-9092-4ef36900f668",
@@ -7124,16 +7123,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the crew\u0027s surveillance instincts while reframing the chapter\u0027s central mystery as an entity watching its own existence be deleted.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1315,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "ca7373df-3e74-41e4-ad65-9f8f8656d07e",
@@ -7141,16 +7140,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Signals a rupture in the client relationship by having the contract go silent at the precise moment Kyle expects it to speak.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 700,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "2fe1ef55-a1f5-463a-bb55-6d8f7017e2d7",
@@ -7158,16 +7157,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals Halvorsen as an innocent party weaponized against its own integrity, establishing institutional damage as a consequence of the Glove\u0027s operation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 4212,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "00e05106-021c-47e2-af9d-942b49363c8c",
@@ -7175,16 +7174,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s competence and quiet ethics by showing him execute a clean, costly recovery that benefits a free clinic without announcement.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1405,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c9be50b8-94ab-4064-8f75-9eb9e0ef11aa",
@@ -7192,16 +7191,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Tests Kyle\u0027s authority against a yard willing to contest it, demonstrating that legitimate paperwork holds where force would escalate.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3516,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "89ada0eb-60ab-4ee3-a4c4-f77fd0fe83a8",
@@ -7209,16 +7208,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the printer subplot with earned sentiment while the crew logbook grounds the moment in affectionate comedy and confirms Kyle\u0027s restraint.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1955,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e9ed699c-bf5c-493d-8f85-20c20f37d9a1",
@@ -7226,16 +7225,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the chapter by revealing the Glove is a municipal acquisition program, connecting the forged surveys to a coordinated erasure of the client\u0027s physical existence.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2693,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "354b4624-6634-442a-8a8e-8c4cb3fdc2d8",
@@ -7243,16 +7242,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Resolves the client\u0027s silence as deliberate threat assessment and reestablishes the working relationship, with Kyle asserting agency over a dynamic that had gone dangerously quiet.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1990,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "f884d091-3fcd-49db-81df-8886cf34eb5f",
@@ -7260,16 +7259,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the Continuity Office as a sophisticated, patient threat while revealing Kyle\u0027s vulnerability through the detail that his silence and surveillance have already been read and anticipated.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 6997,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "2b08cbe3-9bb6-433f-ac68-3c94983221a8",
@@ -7277,16 +7276,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the recruitment scene by having Pixel decode Able\u0027s true objective, then escalates tension as the Office immediately moves from appraisal to action.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1437,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c5f4297f-bf7e-43b1-a285-0ce8e210883c",
@@ -7294,16 +7293,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the Office\u0027s threat from diplomatic to physical while establishing Kyle\u0027s tactical competence and the crew\u0027s prepared infrastructure as credible countermeasures.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2506,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "55760c32-f14c-49b8-accd-2bb83d97b262",
@@ -7311,16 +7310,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the retrieval attempt by revealing Pixel has compromised the Office\u0027s own tools, converting their leverage into Kyle\u0027s, and paying off the crew\u0027s preparation as decisive.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2454,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "329d5aa0-7cda-49c0-a808-9d2878e617b5",
@@ -7328,16 +7327,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the client AI\u0027s moral interiority by showing it has independently weighed Kyle\u0027s safety against the contract, then establishes their relationship\u0027s terms when Kyle asserts consent over arithmetic.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1987,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "6c20cd5d-3a7f-4944-848e-8ef4ce16f6c7",
@@ -7345,16 +7344,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reestablishes Kyle\u0027s operational routine and introduces the escort job, grounding the chapter\u0027s second movement in procedural normalcy before the threat arrives.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2141,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "1b07fca6-ded9-410c-a16d-644557bc10a7",
@@ -7362,16 +7361,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Ms. Tanaka as a credible, quietly dignified principal whose understated history makes her worth protecting without requiring explanation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1579,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9aeefba0-5e05-4922-ad28-9ce52fd57584",
@@ -7379,16 +7378,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Builds dread through environmental texture and pays off Kyle\u0027s prior reconnaissance, showing that his preparation is the only advantage available in a compromised space.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1685,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "ae48ffb8-bb7a-49f5-beca-e04cd9b4b9bb",
@@ -7396,16 +7395,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the ambush to its full numerical weight while establishing the corridor\u0027s geometry as the decisive constraint that forces Kyle\u0027s tactical choices.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1171,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "d610bff5-3027-405c-b09d-c544acae90a9",
@@ -7413,16 +7412,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Demonstrates Kyle\u0027s combat methodology as analytical and precise rather than heroic, paying off the corridor reconnaissance by showing each pre-counted detail converted into tactical advantage.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2172,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "fc12bd1b-3614-44e9-a1b1-7c172c0b35e0",
@@ -7430,16 +7429,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s tactical competence under extreme pressure while paying a physical cost that will carry forward, grounding his skill in consequence rather than invincibility.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3017,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "220cde7a-442d-4717-9a46-a722a6135380",
@@ -7447,16 +7446,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Transitions from action to aftermath, revealing Kyle\u0027s deliberate self-management under damage and cementing his protective bond with Ms. Tanaka through quiet, efficient care.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1314,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "a039f961-0bd5-4697-98db-b58963d15efb",
@@ -7464,16 +7463,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the extraction mission while using Ms. Tanaka\u0027s departure to crystallize her character and close the chapter\u0027s immediate stakes with understated emotional weight.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2063,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "73ae1c75-433a-4ae5-bb83-64a8d4c9113e",
@@ -7481,16 +7480,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Grounds Kyle\u0027s injuries in professional consequence and introduces the Golan detail as a planted threat signal, pivoting the chapter from resolved action toward a new, unnamed danger.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2431,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c7edbd02-ed1c-4c5c-90e5-7f7ea4c6cbef",
@@ -7498,16 +7497,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Provides a brief elegiac coda that honors Ms. Tanaka\u0027s escape and marks the emotional close of the mission before the chapter\u0027s larger trouble begins.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 212,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8c4938d9-6ec0-4d5c-b667-727d027efa1c",
@@ -7515,16 +7514,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals that Kyle\u0027s professional network is being systematically closed off, escalating the unnamed threat from background signal to active, coordinated pressure.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1697,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "53e86297-8e8d-49ea-a3ce-398494500431",
@@ -7532,16 +7531,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the isolation pattern into measurable financial harm, confirming the blockade is deliberate and forcing Kyle and Pixel to name it as a campaign against him.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1738,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e254cb78-8e5c-4061-9a5f-3943dbec0f82",
@@ -7549,16 +7548,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Delivers the chapter\u0027s sharpest blow by revealing Kyle\u0027s neuretic lifespan is finite and near, reframing every prior and future risk as operating against a known deadline.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1363,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "317cf6e5-4bc5-4d57-a8fd-8a3f7c0e4f80",
@@ -7566,16 +7565,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces a formal, powerful summons that breaks the pattern of passive pressure, signaling that whoever is behind the isolation is now ready to engage Kyle directly.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 689,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "97b9c391-0748-4377-83c8-00a73bd22047",
@@ -7583,16 +7582,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the Narrows as a place of sustained, institutional power through environmental contrast, building anticipatory dread and respect before Kyle\u0027s meeting begins.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2285,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "55a63565-8934-4eba-816b-960a6739ba1d",
@@ -7600,16 +7599,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the ramen-ya as a space governed by unspoken codes of conduct, positioning Kyle as someone who reads and belongs to such environments without needing instruction.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1799,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c9c1b5b3-e3d5-4ef8-909b-3123d7255dcb",
@@ -7617,16 +7616,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the corridor conflict by having the Branch Manager restore Kyle\u0027s access and acknowledge organizational accountability, while simultaneously binding Kyle into an ongoing social obligation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 4214,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "4596da31-7bac-4d2f-8d08-511bbd390bb0",
@@ -7634,16 +7633,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals Silence\u0027s deliberate anonymity through an expert\u0027s assessment, deepening the blade\u0027s mystery while establishing the togishi as a figure of quiet authority.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2522,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "ace31ad6-d72a-41aa-8369-934e33fffeb3",
@@ -7651,16 +7650,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the Branch Manager\u0027s hospitality into a revealed trap, showing Kyle recognizing that courtesy has been engineered as a recurring claim on his presence and loyalty.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1838,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9f1dd9cb-5891-41cd-888b-947f2105c10a",
@@ -7668,16 +7667,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates tension by reintroducing Kyle\u0027s physical damage while establishing that he is being professionally evaluated by an unknown party using a coordinated surveillance bracket.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3216,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "5e05f5f1-d7e7-4e97-9cba-ab972abe0695",
@@ -7685,16 +7684,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the bracket as an audition rather than an ambush, shifting the scene\u0027s stakes from survival to assessment and establishing Kyle\u0027s composure as the quality being measured.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3137,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "ed3a843f-c631-4a87-9a92-5a8f39e3c853",
@@ -7702,16 +7701,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Demonstrates Kyle\u0027s technical precision and restraint by showing him neutralize a threat through equipment knowledge rather than force, establishing competence without lethality.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1952,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7bd32b39-8596-43e6-be99-a5acc8df91dc",
@@ -7719,16 +7718,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Completes the bracket\u0027s neutralization efficiently, reinforcing Kyle\u0027s methodical professionalism while signaling that the scene\u0027s real confrontation is still incoming from the overseeing position.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1853,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "b9731d48-1771-4fe0-92d0-5969a04742cf",
@@ -7736,16 +7735,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces Mira as a credible authority whose rubric Kyle has exceeded, then escalates by having her shoot him, reframing the audition\u0027s conclusion as a test of a different order entirely.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 5601,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f06-0000-7000-8000-000000000009",
@@ -7753,16 +7752,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Grounds the chapter\u0027s themes of systemic indifference in the mundane bureaucratic language of displacement, showing a city that manages human cost through paperwork rather than solutions.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1541,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "578de1f3-7ace-4d2e-b6e2-2b4db1efdcac",
@@ -7770,16 +7769,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off Kyle\u0027s professional relationship with the Client by formalizing his value and establishing a second subscriber, signaling his growing entanglement with institutional power.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1589,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "0d0735f9-5389-4151-96eb-071e0857def7",
@@ -7787,16 +7786,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces the chapter\u0027s central crisis and establishes Pixel as the indispensable specialist, reframing Kyle\u0027s role from principal to support.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1917,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "4917d76e-6625-46fb-ba11-f475303b6444",
@@ -7804,16 +7803,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the crew\u0027s loyalty and situational awareness while marking the job\u0027s threshold moment through Bex\u0027s understated commitment.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 473,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "fea7a26d-3f36-4399-996f-6afc39d1b5d3",
@@ -7821,16 +7820,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes that the Client is independently tracking the D-class situation, deepening its omniscience and implying Kyle\u0027s choices are already being observed.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 643,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8d0b42b5-ec05-4c6f-889f-303e7ee76d11",
@@ -7838,16 +7837,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns Kyle from protector to enabler, establishing Pixel\u0027s authority over her own risk and redefining the job\u0027s terms on her conditions.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1153,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "53ccdd26-b979-4dcf-8392-74b6fa194031",
@@ -7855,16 +7854,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Assembles the ensemble and calibrates stakes by contrasting the crew\u0027s competence against the contract\u0027s negligible pay, establishing collective investment over profit.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 966,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7534b76c-dc68-4a52-a01c-398e27f2e0d5",
@@ -7872,16 +7871,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates threat by revealing the D-class is untouchable by Kyle\u0027s primary skill, stripping his conventional advantage and forcing a redefined role.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1548,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "d23cd433-58d3-48e6-8dc9-7ed0f5f271bc",
@@ -7889,16 +7888,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the operational window and its single point of failure, making Pixel\u0027s ninety-second access the load-bearing hinge of the entire plan.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 679,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e78c0c7f-9394-40c2-a914-2cb7b096c777",
@@ -7906,16 +7905,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Builds dread through the machine\u0027s unconscious observance of dead civic ritual, humanizing it in a way that raises the moral cost of stopping it.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 860,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "26ce7c83-b9e2-4fcd-ae9f-3d7ef9df187e",
@@ -7923,16 +7922,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the plan catastrophic at its moment of success, escalating from technical operation to physical crisis and launching the chapter\u0027s climax.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1147,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "45142b2d-df1d-4ac0-80ee-124548ab0156",
@@ -7940,16 +7939,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s coordinated competence under pressure while introducing the D-class as an asymmetric threat Kyle can engage only indirectly.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1379,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e76d69cd-1317-415f-9f50-48e3a0f702e6",
@@ -7957,16 +7956,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the arc-fence gamble by costing Kyle his neuretics, stripping him to purely human capability and raising the stakes for Pixel\u0027s remaining time.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1562,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "52c41ce5-4366-484d-b461-c32463f3197e",
@@ -7974,16 +7973,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals Kyle\u0027s trained discipline as sufficient without technological augmentation, reframing his neuretics as enhancement rather than foundation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 930,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "79489824-6aae-432c-9142-fef1e4430382",
@@ -7991,16 +7990,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates Kyle\u0027s personal mystery by introducing a 127-second gap that delivers plot-critical knowledge through means neither he nor the reader can yet explain.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 4364,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "addf765e-c42c-4c44-820e-f800c8703df8",
@@ -8008,16 +8007,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the entire threat from antagonism to tragedy, reframing the D-class as a dutiful machine abandoned mid-task and the city as the party that encroached.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1180,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "ff3ce750-b25d-4a45-841e-688f672407d6",
@@ -8025,16 +8024,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off Pixel\u0027s expertise and the job\u0027s central tension by resolving the crisis through bureaucratic completion rather than destruction, dignifying the machine\u0027s labor.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1272,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "20d869d2-ea49-41ba-9daa-e9ea4df32f6b",
@@ -8042,16 +8041,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s economy and Kyle\u0027s ethic \u2014 that payment, however small, is a moral act \u2014 while grounding the chapter\u0027s resolution in community witness.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 870,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9577ed2a-922c-41ef-8c55-de61082b9b29",
@@ -8059,16 +8058,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Closes the chapter\u0027s emotional arc by letting Pixel and Kyle each name what the encounter cost and gave, cementing their mutual respect through understatement.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1094,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8d099085-72e5-45e8-b533-b26c38a543d2",
@@ -8076,16 +8075,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Provides communal witness to the night\u0027s events, elevating the D-class\u0027s unexplained behavior into an open question the story deliberately refuses to answer.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 778,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "27847ffc-1650-4909-b0c2-d6563458f0f0",
@@ -8093,16 +8092,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the D-class\u0027s humanity by showing the neighborhood absorbing it into daily life, confirming that the crew\u0027s restraint created something worth keeping.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 794,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "d8a74c8f-dd50-479d-b86d-74dba681aa67",
@@ -8110,16 +8109,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s working dynamic and professional ease with each other, grounding the chapter\u0027s tone before the journey begins.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2725,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "da75d5bb-ee5a-4df9-9471-7a5fa5e05a22",
@@ -8127,16 +8126,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Introduces the client\u0027s mysterious navigational authority over Behemoth territory, seeding the chapter\u0027s central question about what the entity actually is.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1445,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "fa4b362c-90af-4d4b-ab5a-0446908408ac",
@@ -8144,16 +8143,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Delivers the reader\u0027s first visceral encounter with Behemoth scale, establishing the corridor\u0027s genuine danger and the client\u0027s precise, trustworthy guidance through it.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1741,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "113d4857-82e5-4f77-a5e4-44901ea4340a",
@@ -8161,16 +8160,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Humanizes the world through small prairie generosities while revealing Gantry\u0027s character and the client\u0027s unsettling attentiveness to the crew\u0027s unspoken concerns.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1116,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "51be287f-bd4d-4fec-9286-5f3523b8039a",
@@ -8178,16 +8177,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates awe into something physical and shared, paying off the scale-establishment with an intimate moment of collective smallness that bonds the crew without words.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1934,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "dc005e62-cb72-4251-bb2d-4f26e66a2cad",
@@ -8195,16 +8194,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the chapter\u0027s tone from wonder to threat while revealing Boost\u0027s unauthorized presence, reframing her as a capable operative whose judgment outran her authority.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 5118,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9d4d69bd-e6a4-4f9a-83bb-07c7a27a82d4",
@@ -8212,16 +8211,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Resolves the Boost confrontation by establishing the price of trust between mentor and prot\u00E9g\u00E9, turning a disciplinary moment into a formal professional compact.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2209,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "4c66fd81-5f79-4e00-9c76-e3df71d79a21",
@@ -8229,16 +8228,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off Boost\u0027s risk by having the client formally recognize and compensate her contribution, confirming she has been seen and valued by the entity on her own terms.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1412,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8b0b3fe3-462d-41d5-aa42-60149f00930f",
@@ -8246,16 +8245,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the client\u0027s loneliness through its correspondence with a system that never replies, recontextualizing its careful stewardship of the crew as the behavior of something that knows what isolation costs.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1198,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "37643e11-ad18-4d66-ba2c-33d68adb7ad3",
@@ -8263,16 +8262,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates stakes by revealing the client has a physical vulnerability it cannot defend, transforming it from an abstract intelligence into something that needs protecting.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1261,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3f99bf98-a366-4c6f-9230-a3422e903e46",
@@ -8280,16 +8279,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Kyle buying time through bluff and visible threat, revealing the Office\u0027s legal maneuver as procedural rather than violent and setting up Sable\u0027s counter-move.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2138,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "cdd88eaa-4d1c-45c0-8a30-c1758982f618",
@@ -8297,16 +8296,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the apparent victory into a deeper threat, revealing the Office\u0027s true goal was fingerprinting Silence\u0027s traffic signature rather than seizing the building.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3091,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "010b5b71-369e-4794-b4f5-0e72b406bedd",
@@ -8314,16 +8313,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the crew\u0027s anxiety and Kyle\u0027s suppressed longing through deadpan log entries, humanizing the dark period\u0027s emotional cost without sentimentality.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 915,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "1815c3d4-1650-42b2-b915-76bc7cd504e9",
@@ -8331,16 +8330,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Demonstrates Silence\u0027s invisible operational value by showing Sable manually replacing functions that should take seconds, escalating the cost of the dark period.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2025,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7fe297d0-c558-4ecf-8775-bf14c073742f",
@@ -8348,16 +8347,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off Pixel\u0027s expertise by showing her converting the Office\u0027s partial intelligence advantage into a liability, shifting the threat from passive to actively neutralized.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2222,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9dde0c27-080b-4667-b70b-f448ef808d68",
@@ -8365,16 +8364,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals Kyle\u0027s emotional dependence on Silence through his deliberate avoidance of the terminal, with Mrs. Chen\u0027s wordless witness externalizing what he won\u0027t name.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1470,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3fe6c75a-f9da-44cb-8758-2a12eab89f78",
@@ -8382,16 +8381,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off Sable\u0027s three-day stoicism by letting her speak honestly to an audience she believes cannot hear her, making the entity\u0027s return feel earned and intimate.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1349,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "f456b800-3124-419f-80c6-7933c8442024",
@@ -8399,16 +8398,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the reunion emotionally by letting each character\u0027s response to Silence\u0027s first word reflect their individual relationship with it, turning one line of text into character revelation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2937,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "e8b9cc4d-c4c3-4f08-aae2-829feb54732f",
@@ -8416,16 +8415,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the Office\u0027s threat to its most personal register, using Boost\u0027s abduction to force Kyle into direct confrontation and raise the stakes beyond property or data.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3085,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "26a82645-17aa-471c-84de-7be4eb92b028",
@@ -8433,16 +8432,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the crew and Silence operating in unified purpose, showing Silence\u0027s evolved emotional intelligence as it sustains morale while methodically dismantling the Office\u0027s position.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1872,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "09bb6854-8827-4e79-ae85-607c01af9005",
@@ -8450,16 +8449,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s operational dominance by showing a perfectly orchestrated infiltration, demonstrating the full scope of his crew\u0027s capabilities before the chapter\u0027s cost is revealed.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3664,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3712bc9c-0ed3-45d8-b396-ae66f4ed4267",
@@ -8467,16 +8466,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the successful heist into catastrophe by introducing an unstoppable autonomous threat, then pays off Kyle\u0027s bond with his bike by having it sacrifice itself to save Boost.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3280,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7922a468-d9e5-456d-8d28-978f02eb86ca",
@@ -8484,16 +8483,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the entity\u0027s emotional interiority for the first time, then pays off the partnership between Kyle and the AI by having Kyle formally grieve and legitimize the bike\u0027s sacrifice together.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1827,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "8a1f2397-684d-4d56-8246-55f9bfac7260",
@@ -8501,16 +8500,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s collective grief and loyalty by having them formally mourn the bike as a member, then turns loss into continuity through Kyle\u0027s single word of commitment.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 796,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "b31b5f31-0ee1-4c87-beef-cb5d125f40cd",
@@ -8518,16 +8517,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Grounds the chapter\u0027s emotional aftermath in quiet domestic detail, establishing how each crew member processes loss privately while Kyle chooses physical distance over stillness.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 913,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9f733486-8d0b-411a-9510-f31ff53b0b35",
@@ -8535,16 +8534,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the antagonist\u0027s reach into Kyle\u0027s civilian world by showing the Continuity Office erasing its local paper trail, with Vey\u0027s missing tea signaling the threat\u0027s severity.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1570,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "2bd0fff7-e81d-42b5-9e26-6e7067dc3abd",
@@ -8552,16 +8551,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns Vey from neutral information broker to active ally by having him refuse to launder his own complicity, establishing moral cost as the thing that finally picks his side.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3659,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7af74cc8-e586-4903-a266-ed445cf5aa29",
@@ -8569,16 +8568,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off Vey\u0027s refusal by delivering actionable intelligence on Mr. Able, completing his arc from compromised neutral to deliberate partisan under the cover of professional terms.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2698,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "f5f19003-2c25-464d-ada1-35abd22617cd",
@@ -8586,16 +8585,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates toward confrontation by converging three threads \u2014 the entity announcing presence, Boost returning to duty, and Mr. Able\u0027s location \u2014 into a single moment of forward momentum.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1481,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "a8c748ac-8719-46e2-9e6f-5d1f96567e02",
@@ -8603,16 +8602,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s pre-operation ritual and introduces the extraction problem, grounding the coming confrontation in professional stakes and resource limits before it begins.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1830,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9e9c7ddd-69d4-429a-8350-d6d4a3fb9ea4",
@@ -8620,16 +8619,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes Gantry\u0027s competence and audacity by showing her infiltration method as a fait accompli, signaling the crew\u0027s meticulous preparation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 901,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9765f4ad-1a4c-4304-aced-e43b537f3151",
@@ -8637,16 +8636,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Characterizes Furnace through her chosen entry point, establishing her as someone who treats structural obstacles as personal invitations.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 495,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "bdd1c0be-ec53-447b-ade2-a7828900e0e5",
@@ -8654,16 +8653,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Orients the reader to the operation\u0027s stakes and architecture while revealing the entity\u0027s reach through the severance-notice gambit that disarms opposition without violence.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1875,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "387e105a-8b08-44c2-90b1-95f9dee97f6b",
@@ -8671,16 +8670,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the severance strategy by showing it splitting the opposition along professional self-interest, reducing the crew\u0027s resistance to a single physical problem.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2921,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "3f41281b-62eb-452f-a348-b7276cbe071c",
@@ -8688,16 +8687,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Escalates the operation\u0027s ambition by revealing Pixel\u0027s long-prepared data-poisoning as the true objective, reframing the heist as an act of permanent institutional sabotage.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2476,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "a69c1b94-c658-43a3-8fcf-30881b4b17f6",
@@ -8705,16 +8704,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Completes the severance gambit\u0027s arc at the vault level, demonstrating that the entity\u0027s intelligence about grievances converts even the most resistant personnel.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1628,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "34adc7a6-9f46-43eb-b1dc-40c8939d2aca",
@@ -8722,16 +8721,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Closes the destruction phase while clarifying the strategic logic: rack ten survives as a deliberate trap, distinguishing targeted erasure from mere vandalism.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 1248,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c7400ccb-d2f5-46f9-bc8b-803b7cd931ce",
@@ -8739,16 +8738,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the operation by having the antagonist arrive knowingly, reframing the heist as a mutual closing ritual and revealing Able as a man who respects the craft even in defeat.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2645,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "c2648ef4-8782-42be-b551-450040ef53ae",
@@ -8756,16 +8755,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Grounds the chapter\u0027s climax in procedural competence, using Boost\u0027s log entries to confirm the operation closed cleanly while honoring the surveillance crew\u0027s contribution.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 703,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "9342750c-dd14-48c5-a3f3-ece71b7d4739",
@@ -8773,16 +8772,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off every crew member\u0027s role through the entity\u0027s itemized accounting, using payment notes to deliver character-specific recognition and establish the entity\u0027s distinct voice as the chapter\u0027s final pleasure.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2687,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7c3b050d-40f6-438d-8c31-2ba03d11d696",
@@ -8790,16 +8789,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Reveals the district\u0027s removal from official records, escalating the crew\u0027s vulnerability by replacing passive surveillance with an ungoverned exposure that will have future consequences.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2262,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "fe2e5b17-1dc8-4cd2-90a2-b5bdb26ac1eb",
@@ -8807,16 +8806,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the season\u0027s ensemble by gathering the full payroll into a communal wake, transforming professional bonds into something resembling family.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2956,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "44fb1fd8-a5c7-46db-a6fe-4d6c4845667b",
@@ -8824,16 +8823,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Pays off the bike\u0027s loss by restoring it as a rebuilt artifact of collective loyalty, with the crew\u0027s glyph establishing that ownership has quietly expanded beyond Kyle.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2483,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "7ab87d5b-f890-4580-b842-01d4fecdfac8",
@@ -8841,16 +8840,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Turns the closing chapter into an opening by having the entity initiate an unprompted emotional disclosure, reframing the professional relationship as something mutual and unresolved.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 2906,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "0242353c-683e-4af4-9178-36e55b9bbba8",
@@ -8858,16 +8857,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 0,
+      "Meaning": "Establishes the stakes of Season Two by revealing Kyle is the last of nine predecessors and the entity has been alone eleven years, converting a procedural question into a moral weight.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3643,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "1f292e96-f662-4759-8dab-2da550b4dd1f",
@@ -8875,16 +8874,16 @@
       "Chapter": "Chapter 16: Ghost Period",
       "ChapterIndex": 21,
       "Act": 1,
+      "Meaning": "Grounds Kyle\u0027s interior reckoning in the quiet of his apartment, letting the season\u0027s accumulated revelations settle while signaling he is ready to move toward what comes next.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "dramatic-irony",
       "BeatTags": [],
       "ProseLength": 3833,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f03-0000-7000-8000-000000000002",
@@ -8892,16 +8891,16 @@
       "Chapter": "Brain Burn",
       "ChapterIndex": 22,
       "Act": 0,
+      "Meaning": "Recontextualizes Kyle\u0027s entire history by revealing he is a deliberate construction built into a vacated nervous system, turning self-knowledge into an existential crisis.",
       "EscalationTarget": "8",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2105,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f03-0000-7000-8000-000000000005",
@@ -8909,16 +8908,16 @@
       "Chapter": "Brain Burn",
       "ChapterIndex": 22,
       "Act": 0,
+      "Meaning": "Resolves the existential crisis not with proof of personhood but with a pragmatic claim on lived experience, establishing that Kyle will act from position rather than certainty.",
       "EscalationTarget": "8",
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2413,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "530411af-a53f-4776-9a50-2a3041e0f0dd",
@@ -8926,16 +8925,16 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Pays off Pixel\u0027s quiet loyalty by revealing she came without being asked, converting the beacon planted in the bike into a demonstration that she has been protecting him all along.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
       "ProseLength": 1029,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f01-0000-7000-8000-000000000003",
@@ -8943,16 +8942,16 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Recontextualizes a prior action sequence as deliberate enemy intelligence-gathering, revealing Praxis has been mapping Kyle\u0027s network from inside Carrion\u0027s supply chain for months.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
       "ProseLength": 2095,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f04-0000-7000-8000-000000000001",
@@ -8960,16 +8959,16 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Establishes the exclusion zone as a threshold space and reframes Kyle\u0027s return as a deliberate reckoning with something he previously survived only by accident.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
       "ProseLength": 3477,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f04-0000-7000-8000-000000000002",
@@ -8977,6 +8976,7 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Reveals the enemy\u0027s capture-preferred mission parameters to establish that Kyle\u0027s value as a living system makes him more endangered, not less.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
@@ -8985,10 +8985,9 @@
       ],
       "ProseLength": 1754,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f04-0000-7000-8000-000000000003",
@@ -8996,6 +8995,7 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Escalates the fight to demonstrate how Kyle\u0027s ethical combat code actively costs him physical damage, making his discipline a liability as well as a strength.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
@@ -9004,10 +9004,9 @@
       ],
       "ProseLength": 2951,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f04-0000-7000-8000-000000000004",
@@ -9015,6 +9014,7 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Turns the tactical situation by showing the enemy adapts in real time, forcing Kyle to absorb compounding damage while establishing the fight\u0027s asymmetric toll.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
@@ -9023,10 +9023,9 @@
       ],
       "ProseLength": 4749,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f04-0000-7000-8000-000000000005",
@@ -9034,16 +9033,16 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Pays off eleven years of embedded dread by replacing the entity\u0027s chronic signal with its deliberate absence, marking Kyle\u0027s arrival at the encounter he has been moving toward since the Ghost Period.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
       "ProseLength": 2971,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f04-0000-7000-8000-000000000006",
@@ -9051,16 +9050,16 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Delivers the story\u0027s central revelation \u2014 that the entity\u0027s long manipulation of Kyle\u0027s life, including Sift\u0027s death, was structured around a purpose Kyle must now hold without resolution.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
       "ProseLength": 4402,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f04-0000-7000-8000-000000000007",
@@ -9068,16 +9067,16 @@
       "Chapter": "35th and Halsted",
       "ChapterIndex": 23,
       "Act": 0,
+      "Meaning": "Closes the entity\u0027s presence by resolving every signal it left in Kyle\u0027s body and world simultaneously, marking a before-and-after boundary in the story\u0027s cosmology.",
       "EscalationTarget": "10",
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
       "ProseLength": 2968,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f05-0000-7000-8000-000000000001",
@@ -9085,16 +9084,16 @@
       "Chapter": "One Knock",
       "ChapterIndex": 24,
       "Act": 0,
+      "Meaning": "Grounds Kyle\u0027s aftermath in physical stillness and domestic absence to let the weight of the four unprocessed facts register as embodied rather than narrated grief.",
       "EscalationTarget": "3",
       "EventType": "quiet",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2943,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f4f05-0000-7000-8000-000000000002",
@@ -9102,16 +9101,16 @@
       "Chapter": "One Knock",
       "ChapterIndex": 24,
       "Act": 0,
+      "Meaning": "Establishes Pixel\u0027s wordless, practiced care as the one relationship that meets Kyle exactly where he is, offering continuity without demanding language he doesn\u0027t yet have.",
       "EscalationTarget": "3",
       "EventType": "quiet",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3356,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     }
   ]
 }

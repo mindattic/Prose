@@ -1512,15 +1512,15 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 > **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
 > Full record: `reports/coordination/BCODA.coordination.json`.
 
-**Coverage:** 200/520 beats fully covered. Story-wide construction: temporal=linear, resolution=external-event, moral=ambivalent, ending=avalanche, granularity=chapter.
+**Coverage:** 499/520 beats fully covered. Story-wide construction: temporal=linear, resolution=external-event, moral=ambivalent, ending=avalanche, granularity=chapter.
 
-**Gap counts:** UNSCORED=520 · MISSING_MEANING=299 · STUB_PROSE=21
+**Gap counts:** UNSCORED=520 · STUB_PROSE=21
 
 ### Chapter 1: Teeth
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5224 | `019f4f06-0000-7000-8000-000000000001` | — | — | 2/arrival | 797c | MISSING_MEANING,UNSCORED |
+| 5224 | `019f4f06-0000-7000-8000-000000000001` | — | Establishes Kyle as a seasoned professional whose schis… | 2/arrival | 797c | UNSCORED |
 | 521 | `019e4d4a-a829-7958-a726-96e40cc27a60` | Opening Image | Kyle completes a brutal job—breaking a man's jaw—for ha… | 2/arrival | 1869c | UNSCORED |
 | 500 | `019e4d4a-a829-774e-a609-4c0f2ecab14a` | Opening Image | A man accepts degrading work to justify his broken stat… | 2/arrival | 277c | UNSCORED |
 | 4368 | `51651bb8-7c0b-4d45-ad3b-8d4ef9dc3c90` | Opening Image | A freelancer accepts a suspiciously well-timed job thro… | 2/arrival | 1078c | UNSCORED |
@@ -1586,7 +1586,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5225 | `019f4f06-0000-7000-8000-000000000002` | — | — | 3/exchange | 1633c | MISSING_MEANING,UNSCORED |
+| 5225 | `019f4f06-0000-7000-8000-000000000002` | — | Introduces the city's unresolved architectural wounds t… | 3/exchange | 1633c | UNSCORED |
 | 536 | `019e4d4a-a82a-79e6-9f9e-c2cefec65fa5` | B Story | The protagonist locates Mrs. Chen's noodle stall throug… | 3/exchange | 923c | UNSCORED |
 | 522 | `019e4d4a-a82a-751c-a9bc-98dd57a9d1a0` | B Story | Kyle arrives at the counter where she works, observing … | 3/exchange | 558c | UNSCORED |
 | 527 | `019e4d4a-a82a-752b-9acd-a901e163c515` | B Story | A woman serves her estranged lover broth prepared to hi… | 3/exchange | 403c | UNSCORED |
@@ -1605,87 +1605,87 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 478 | `019e4d4a-a82b-79d8-bccc-0a9b5f2c872c` | Fun and Games | A weary operative accepts a rare moment of contentment—… | 3/exchange | 425c | UNSCORED |
 | 554 | `019e4d4a-a82b-729b-89a5-fc980914b0d1` | Fun and Games | A man obsessively recalculates an unresolved financial … | 3/exchange | 342c | UNSCORED |
 | 528 | `019e4d4a-a82b-7dbe-b5ff-a95b2195fcf9` | Fun and Games | A man wheels his bike uphill while silently laughing at… | 3/exchange | 207c | UNSCORED |
-| 5170 | `019f4404-346d-7097-a9a8-4b352652f1b7` | — | — | 3/exchange | 851c | MISSING_MEANING,UNSCORED |
-| 5330 | `019f5ebb-99cc-7621-be2e-dc53981367f3` | — | — | 3/exchange | 3063c | MISSING_MEANING,UNSCORED |
-| 5332 | `019f5ebb-aa1b-76dd-8a42-420df10d0a4b` | — | — | 3/exchange | 3142c | MISSING_MEANING,UNSCORED |
-| 5334 | `019f5ebb-b9e8-71c4-9f0a-2d7ddf119367` | — | — | 3/exchange | 2080c | MISSING_MEANING,UNSCORED |
-| 5337 | `019f5ebb-c98f-7ce6-b514-c71b5f554a4f` | — | — | 3/exchange | 2437c | MISSING_MEANING,UNSCORED |
-| 5339 | `019f5ebb-d90e-7772-af47-d8374ddadd5a` | — | — | 3/exchange | 2300c | MISSING_MEANING,UNSCORED |
-| 5341 | `019f5ebb-e862-73a2-a10c-98a9fdd2d189` | — | — | 3/exchange | 2291c | MISSING_MEANING,UNSCORED |
-| 5342 | `019f5ebb-f6f5-7c79-a948-0e90cb40b1d1` | — | — | 3/exchange | 2772c | MISSING_MEANING,UNSCORED |
-| 5343 | `019f5ebc-0669-7f95-b395-3cd32a6680ce` | — | — | 3/exchange | 2672c | MISSING_MEANING,UNSCORED |
-| 5345 | `019f5ebc-15f5-7c98-b2a6-01f25207adc3` | — | — | 3/exchange | 2640c | MISSING_MEANING,UNSCORED |
-| 5347 | `019f5ebc-24de-77cb-985d-ad50597496b4` | — | — | 3/exchange | 2222c | MISSING_MEANING,UNSCORED |
-| 5181 | `8229d60e-d6f5-4bfb-92fb-ac99328bd461` | — | — | 3/exchange | 3742c | MISSING_MEANING,UNSCORED |
+| 5170 | `019f4404-346d-7097-a9a8-4b352652f1b7` | — | Escalates Kyle's sense of professional exposure by reve… | 3/exchange | 851c | UNSCORED |
+| 5330 | `019f5ebb-99cc-7621-be2e-dc53981367f3` | — | Introduces Boost and the crew's logbook operation to es… | 3/exchange | 3063c | UNSCORED |
+| 5332 | `019f5ebb-aa1b-76dd-8a42-420df10d0a4b` | — | Pays off the logbook setup by demonstrating the crew's … | 3/exchange | 3142c | UNSCORED |
+| 5334 | `019f5ebb-b9e8-71c4-9f0a-2d7ddf119367` | — | Establishes Vey and ANTIQUITY & STATIONARY as a world w… | 3/exchange | 2080c | UNSCORED |
+| 5337 | `019f5ebb-c98f-7ce6-b514-c71b5f554a4f` | — | Delivers the first concrete data point of Kyle's survei… | 3/exchange | 2437c | UNSCORED |
+| 5339 | `019f5ebb-d90e-7772-af47-d8374ddadd5a` | — | Escalates the anomalous subscriber from merely unknown … | 3/exchange | 2300c | UNSCORED |
+| 5341 | `019f5ebb-e862-73a2-a10c-98a9fdd2d189` | — | Turns the provenance theme inward by having Kyle volunt… | 3/exchange | 2291c | UNSCORED |
+| 5342 | `019f5ebb-f6f5-7c79-a948-0e90cb40b1d1` | — | Transitions from revelation to action while using Pixel… | 3/exchange | 2772c | UNSCORED |
+| 5343 | `019f5ebc-0669-7f95-b395-3cd32a6680ce` | — | Establishes Kyle and Pixel's professional competence an… | 3/exchange | 2672c | UNSCORED |
+| 5345 | `019f5ebc-15f5-7c98-b2a6-01f25207adc3` | — | Escalates the central mystery by revealing an unknown e… | 3/exchange | 2640c | UNSCORED |
+| 5347 | `019f5ebc-24de-77cb-985d-ad50597496b4` | — | Pays off the chapter's tension by revealing the emotion… | 3/exchange | 2222c | UNSCORED |
+| 5181 | `8229d60e-d6f5-4bfb-92fb-ac99328bd461` | — | Reveals the depth of Pixel's attentiveness to Kyle by s… | 3/exchange | 3742c | UNSCORED |
 
 ### Chapter 3: The Regular
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5171 | `019f4407-16da-7763-83c8-3ad2458a84fb` | — | — | 3/exchange | 1850c | MISSING_MEANING,UNSCORED |
-| 5355 | `019f5ebc-8938-78fd-aedc-347f7f3582c3` | — | — | 3/exchange | 1691c | MISSING_MEANING,UNSCORED |
-| 5356 | `019f5ebc-982e-7a99-8330-9e0bb9e00ae1` | — | — | 3/exchange | 2681c | MISSING_MEANING,UNSCORED |
-| 5357 | `019f5ebc-a6e0-7649-9e0c-ed9cb7ba8893` | — | — | 3/exchange | 2332c | MISSING_MEANING,UNSCORED |
-| 5358 | `019f5ebc-b588-79ef-8ab7-486af54581da` | — | — | 3/exchange | 2472c | MISSING_MEANING,UNSCORED |
-| 5359 | `019f5ebc-c435-7ea9-880a-e6ba4b3e30af` | — | — | 3/exchange | 2997c | MISSING_MEANING,UNSCORED |
-| 5360 | `019f5ebc-d303-7346-a019-08fa93d6a8e6` | — | — | 3/exchange | 1838c | MISSING_MEANING,UNSCORED |
-| 5361 | `019f5ebc-e1d7-752e-856b-6b9ab4231139` | — | — | 3/exchange | 1795c | MISSING_MEANING,UNSCORED |
-| 5362 | `019f5ebc-f0d6-7faf-ae13-6859b6e9491b` | — | — | 3/exchange | 3024c | MISSING_MEANING,UNSCORED |
-| 5363 | `019f5ebd-0016-7499-a115-8eb0237e8336` | — | — | 3/exchange | 2825c | MISSING_MEANING,UNSCORED |
-| 5364 | `019f5ebd-0f46-7b50-a897-beaf941013a4` | — | — | 3/exchange | 3019c | MISSING_MEANING,UNSCORED |
-| 5365 | `019f5ebd-1e43-783c-9b85-1cc79d7a196e` | — | — | 3/exchange | 2784c | MISSING_MEANING,UNSCORED |
+| 5171 | `019f4407-16da-7763-83c8-3ad2458a84fb` | — | Establishes the chapter's conflict by introducing a bur… | 3/exchange | 1850c | UNSCORED |
+| 5355 | `019f5ebc-8938-78fd-aedc-347f7f3582c3` | — | Deepens Kyle's connection to Mrs. Chen and the neighbor… | 3/exchange | 1691c | UNSCORED |
+| 5356 | `019f5ebc-982e-7a99-8330-9e0bb9e00ae1` | — | Escalates the antagonist's culpability by revealing the… | 3/exchange | 2681c | UNSCORED |
+| 5357 | `019f5ebc-a6e0-7649-9e0c-ed9cb7ba8893` | — | Turns the investigation decisive by proving the hold wa… | 3/exchange | 2332c | UNSCORED |
+| 5358 | `019f5ebc-b588-79ef-8ab7-486af54581da` | — | Introduces Garrison Mercer as the human face of institu… | 3/exchange | 2472c | UNSCORED |
+| 5359 | `019f5ebc-c435-7ea9-880a-e6ba4b3e30af` | — | Pays off the investigation by having Kyle lay the assem… | 3/exchange | 2997c | UNSCORED |
+| 5360 | `019f5ebc-d303-7346-a019-08fa93d6a8e6` | — | Establishes Kyle's quiet, habitual relationship with Mr… | 3/exchange | 1838c | UNSCORED |
+| 5361 | `019f5ebc-e1d7-752e-856b-6b9ab4231139` | — | Reveals Mrs. Chen's moral framework through the tea-hou… | 3/exchange | 1795c | UNSCORED |
+| 5362 | `019f5ebc-f0d6-7faf-ae13-6859b6e9491b` | — | Introduces Pixel and her relationship with Kyle through… | 3/exchange | 3024c | UNSCORED |
+| 5363 | `019f5ebd-0016-7499-a115-8eb0237e8336` | — | Pays off Pixel's competence and establishes her as a pa… | 3/exchange | 2825c | UNSCORED |
+| 5364 | `019f5ebd-0f46-7b50-a897-beaf941013a4` | — | Escalates intimacy by revealing the depth of Pixel's am… | 3/exchange | 3019c | UNSCORED |
+| 5365 | `019f5ebd-1e43-783c-9b85-1cc79d7a196e` | — | Closes the chapter's emotional loop by grounding Kyle i… | 3/exchange | 2784c | UNSCORED |
 
 ### Interlude: The Room Afte
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5201 | `e224f50e-9c23-4b28-8b5f-c2bc1bac30e4` | — | — | 2/quiet | 1348c | MISSING_MEANING,UNSCORED |
+| 5201 | `e224f50e-9c23-4b28-8b5f-c2bc1bac30e4` | — | Turns the interlude toward future connection, establish… | 2/quiet | 1348c | UNSCORED |
 
 ### Chapter 4: The Carousel
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5172 | `019f440a-2def-75af-b6eb-bb3150ade92f` | — | — | 4/discovery | 2424c | MISSING_MEANING,UNSCORED |
-| 5312 | `019f5eba-8e53-7a86-8e14-9d5b94b08882` | — | — | 4/discovery | 2597c | MISSING_MEANING,UNSCORED |
-| 5313 | `019f5eba-9d69-7f49-b797-3a906cf378f8` | — | — | 4/discovery | 2910c | MISSING_MEANING,UNSCORED |
-| 5315 | `019f5eba-ac68-7b1a-9e79-6e8110cd2712` | — | — | 4/discovery | 2585c | MISSING_MEANING,UNSCORED |
-| 5316 | `019f5eba-bb81-7b7b-aaef-5e7661fb51d8` | — | — | 4/discovery | 2491c | MISSING_MEANING,UNSCORED |
-| 5318 | `019f5eba-ca75-702c-91cd-b3f73d854d1f` | — | — | 4/discovery | 2477c | MISSING_MEANING,UNSCORED |
-| 5319 | `019f5eba-d9d7-748a-80f0-6afc2de54003` | — | — | 4/discovery | 2341c | MISSING_MEANING,UNSCORED |
-| 5320 | `019f5eba-e8ac-7270-8fee-d48cd176fd89` | — | — | 4/discovery | 2561c | MISSING_MEANING,UNSCORED |
-| 5321 | `019f5eba-f7a1-73ec-bdc2-155c7ece614f` | — | — | 4/discovery | 2549c | MISSING_MEANING,UNSCORED |
-| 5322 | `019f5ebb-069a-7b47-b622-0b407c532912` | — | — | 4/discovery | 3318c | MISSING_MEANING,UNSCORED |
-| 5323 | `019f5ebb-15aa-77a9-bd76-934a0bd3867d` | — | — | 4/discovery | 1232c | MISSING_MEANING,UNSCORED |
-| 5324 | `019f5ebb-259e-71d6-b5d0-8d3031d6ac7f` | — | — | 4/discovery | 1965c | MISSING_MEANING,UNSCORED |
-| 5325 | `019f5ebb-355d-701c-8d7c-7969c8ca1065` | — | — | 4/discovery | 2633c | MISSING_MEANING,UNSCORED |
-| 5326 | `019f5ebb-4448-702e-af2c-c3fbf21ba429` | — | — | 4/discovery | 2609c | MISSING_MEANING,UNSCORED |
+| 5172 | `019f440a-2def-75af-b6eb-bb3150ade92f` | — | Establishes the new contract's unusual terms as a signa… | 4/discovery | 2424c | UNSCORED |
+| 5312 | `019f5eba-8e53-7a86-8e14-9d5b94b08882` | — | Establishes the carousel as a place of neglected value … | 4/discovery | 2597c | UNSCORED |
+| 5313 | `019f5eba-9d69-7f49-b797-3a906cf378f8` | — | Reveals Pixel's proactive preparation and technical aut… | 4/discovery | 2910c | UNSCORED |
+| 5315 | `019f5eba-ac68-7b1a-9e79-6e8110cd2712` | — | Establishes Kyle as a quiet guardian of the carousel by… | 4/discovery | 2585c | UNSCORED |
+| 5316 | `019f5eba-bb81-7b7b-aaef-5e7661fb51d8` | — | Escalates the standoff by revealing Kyle's technical lo… | 4/discovery | 2491c | UNSCORED |
+| 5318 | `019f5eba-ca75-702c-91cd-b3f73d854d1f` | — | Turns Kyle from verbal defender to actor, paying off th… | 4/discovery | 2477c | UNSCORED |
+| 5319 | `019f5eba-d9d7-748a-80f0-6afc2de54003` | — | Reveals Kyle's private moral reckoning: the crew's depa… | 4/discovery | 2341c | UNSCORED |
+| 5320 | `019f5eba-e8ac-7270-8fee-d48cd176fd89` | — | Shifts the chapter's stakes from property dispute to my… | 4/discovery | 2561c | UNSCORED |
+| 5321 | `019f5eba-f7a1-73ec-bdc2-155c7ece614f` | — | Forces Kyle to act on a self-contradicting order, payin… | 4/discovery | 2549c | UNSCORED |
+| 5322 | `019f5ebb-069a-7b47-b622-0b407c532912` | — | Introduces a new surveillance threat through Kyle's del… | 4/discovery | 3318c | UNSCORED |
+| 5323 | `019f5ebb-15aa-77a9-bd76-934a0bd3867d` | — | Establishes an unknown watcher who was specifically mon… | 4/discovery | 1232c | UNSCORED |
+| 5324 | `019f5ebb-259e-71d6-b5d0-8d3031d6ac7f` | — | Advances the investigation by engaging Vey as an intell… | 4/discovery | 1965c | UNSCORED |
+| 5325 | `019f5ebb-355d-701c-8d7c-7969c8ca1065` | — | Pays off the investigation thread by revealing a coordi… | 4/discovery | 2633c | UNSCORED |
+| 5326 | `019f5ebb-4448-702e-af2c-c3fbf21ba429` | — | Establishes Kyle's disciplined uncertainty — cataloguin… | 4/discovery | 2609c | UNSCORED |
 
 ### Chapter 5: Half a Step
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5226 | `019f4f06-0000-7000-8000-000000000003` | — | — | 5/exchange | 1149c | MISSING_MEANING,UNSCORED |
+| 5226 | `019f4f06-0000-7000-8000-000000000003` | — | Grounds the world's schism-damage as mundane civic real… | 5/exchange | 1149c | UNSCORED |
 | 4276 | `019ee697-28dd-7ad3-a726-393220e6455f` | Fun and Games | A wounded operative visits his fixer for repairs, and i… | 5/exchange | 2828c | UNSCORED |
 | 4291 | `019ee6b7-fcb2-7214-bfa1-e63366442629` | Fun and Games | Kyle inventories his augmented body's damage and limita… | 5/exchange | 1680c | UNSCORED |
 | 4356 | `7db3b46d-1ed6-4b8e-be23-645d14ccd078` | Fun and Games | Kyle discovers an anomalous tip from a mysterious long-… | 5/exchange | 1254c | UNSCORED |
 | 4357 | `dae5141a-2f74-4ef5-b1a2-05246edad1fc` | Fun and Games | Kyle's bike instinctively draws him to an abandoned car… | 5/exchange | 1434c | UNSCORED |
 | 4358 | `de57b51a-81b7-447e-99f4-07a75cace7ea` | Fun and Games | Kyle discovers that his anonymous handler has been cata… | 5/exchange | 1030c | UNSCORED |
 | 4359 | `f2e361dd-a895-475b-8e7a-e59a9652789f` | Fun and Games | Pixel decodes a mysterious frequency her partner detect… | 5/exchange | 1258c | UNSCORED |
-| 5173 | `019f440b-c6d8-71b2-915e-5741a9d7ef8c` | — | — | 5/exchange | 2323c | MISSING_MEANING,UNSCORED |
-| 5329 | `019f5ebb-8f03-7ccf-8ae7-c54b0ba51cc0` | — | — | 5/exchange | 1691c | MISSING_MEANING,UNSCORED |
-| 5331 | `019f5ebb-a93b-7e92-b164-d246f821ec91` | — | — | 5/exchange | 2031c | MISSING_MEANING,UNSCORED |
-| 5333 | `019f5ebb-b895-7326-a4c3-ca34435c4498` | — | — | 5/exchange | 2195c | MISSING_MEANING,UNSCORED |
-| 5336 | `019f5ebb-c83b-7016-93b4-895476ca5241` | — | — | 5/exchange | 2980c | MISSING_MEANING,UNSCORED |
-| 5338 | `019f5ebb-d788-7797-bfe5-afc0f531ba2d` | — | — | 5/exchange | 2710c | MISSING_MEANING,UNSCORED |
-| 5340 | `019f5ebb-e6b2-7059-bde5-f7809fd915c7` | — | — | 5/exchange | 1591c | MISSING_MEANING,UNSCORED |
-| 5182 | `c74cbf0e-cd7d-489a-beb8-226fa664ab8a` | — | — | 5/exchange | 3782c | MISSING_MEANING,UNSCORED |
+| 5173 | `019f440b-c6d8-71b2-915e-5741a9d7ef8c` | — | Reveals Kyle's self-sufficiency and emotional guardedne… | 5/exchange | 2323c | UNSCORED |
+| 5329 | `019f5ebb-8f03-7ccf-8ae7-c54b0ba51cc0` | — | Establishes Pixel's care for Kyle as expressed through … | 5/exchange | 1691c | UNSCORED |
+| 5331 | `019f5ebb-a93b-7e92-b164-d246f821ec91` | — | Escalates intimacy through technical proximity, using t… | 5/exchange | 2031c | UNSCORED |
+| 5333 | `019f5ebb-b895-7326-a4c3-ca34435c4498` | — | Deepens the 18.7 Hz anomaly from calibration artifact t… | 5/exchange | 2195c | UNSCORED |
+| 5336 | `019f5ebb-c83b-7016-93b4-895476ca5241` | — | Pays off the anomaly's buildup with a measurable spike … | 5/exchange | 2980c | UNSCORED |
+| 5338 | `019f5ebb-d788-7797-bfe5-afc0f531ba2d` | — | Turns the chapter's emotional axis by having Pixel name… | 5/exchange | 2710c | UNSCORED |
+| 5340 | `019f5ebb-e6b2-7059-bde5-f7809fd915c7` | — | Reveals that the half-step's true cost is not the withd… | 5/exchange | 1591c | UNSCORED |
+| 5182 | `c74cbf0e-cd7d-489a-beb8-226fa664ab8a` | — | Recontextualizes the chapter's earlier calibration scen… | 5/exchange | 3782c | UNSCORED |
 
 ### Chapter 6: The Dock
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5227 | `019f4f06-0000-7000-8000-000000000004` | — | — | 8/loss | 1194c | MISSING_MEANING,UNSCORED |
-| 2844 | `019ea8f6-8d49-7816-9b90-32dff6c8952d` | — | — | 8/loss | 2642c | MISSING_MEANING,UNSCORED |
+| 5227 | `019f4f06-0000-7000-8000-000000000004` | — | Establishes the world's normalized relationship with mi… | 8/loss | 1194c | UNSCORED |
+| 2844 | `019ea8f6-8d49-7816-9b90-32dff6c8952d` | — | Introduces Sift as a deliberately unmemorable operative… | 8/loss | 2642c | UNSCORED |
 | 2856 | `019ea8f8-ec09-744c-b3f5-39b079b5e547` | Midpoint | An armed creature emerges and opens fire on the team, f… | 8/loss | 712c | UNSCORED |
 | 2857 | `019ea8f9-1e6e-77ff-a9cc-30946b87c7e4` | Midpoint | War Dog's grenades force the team to scatter in a firef… | 8/loss | 616c | UNSCORED |
 | 2858 | `019ea8f9-4a52-741a-98c6-95b34ac54d1d` | climax | The fight opens; Kyle reads War Dog's three-shotgun arc… | 8/loss | 2815c | UNSCORED |
@@ -1709,7 +1709,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4340 | `019ee6f7-6ef3-71ae-8c3d-001332c601c4` | Fun and Games | A mysterious handwritten note summons Kyle to an antiqu… | 5/quiet | 1490c | UNSCORED |
 | 4324 | `019ee6f2-c80f-7e16-8d44-5e3d5ab69e24` | inciting-incident | Kyle arrives at the Halsted address on foot, Silence un… | 5/quiet | 810c | UNSCORED |
 | 4325 | `019ee6f2-c80f-72bc-acff-6537f94f275b` | scene-break | A handwritten sign taped to the door reads Ñu's full na… | 5/quiet | 449c | UNSCORED |
-| 5228 | `019f4f06-0000-7000-8000-000000000005` | — | — | 5/quiet | 1364c | MISSING_MEANING,UNSCORED |
+| 5228 | `019f4f06-0000-7000-8000-000000000005` | — | Reveals how the world quietly accommodates irreversible… | 5/quiet | 1364c | UNSCORED |
 | 4326 | `019ee6f2-c80f-724a-a103-147b6218aca4` | rising-action | The front room holds forty people Kyle does not know. M… | 5/quiet | 917c | UNSCORED |
 | 4328 | `019ee6f2-c80f-7c3f-b2c7-c582085510f1` | scene-break | Someone has taped photographs to a corkboard. One is an… | 5/quiet | 879c | UNSCORED |
 | 4329 | `019ee6f2-c80f-748d-85aa-feb3b1798313` | rising-action | The Psyk loses containment for four seconds. The hum sp… | 5/quiet | 1273c | UNSCORED |
@@ -1721,8 +1721,8 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5202 | `86ccf0d0-5d23-4df3-a640-47569f7158c5` | — | — | 3/quiet | 1946c | MISSING_MEANING,UNSCORED |
-| 5203 | `226c11e6-b418-44c8-9b9d-5fa44dc8b17b` | — | — | 3/quiet | 1671c | MISSING_MEANING,UNSCORED |
+| 5202 | `86ccf0d0-5d23-4df3-a640-47569f7158c5` | — | Pays off Sift's death and Kyle's emotional containment … | 3/quiet | 1946c | UNSCORED |
+| 5203 | `226c11e6-b418-44c8-9b9d-5fa44dc8b17b` | — | Turns the aftermath from wound-tending to quiet compani… | 3/quiet | 1671c | UNSCORED |
 
 ### Chapter 8: Before Someth
 
@@ -1744,20 +1744,20 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4317 | `019ee6e1-5ce1-7d92-8397-b8c7916d68e9` | transition | Kyle says he will be in the armory if she needs a secon… | 5/exchange | 684c | UNSCORED |
 | 4318 | `019ee6e1-5ce1-78a7-b6f1-61d4957131c1` | denouement | Kyle pauses at the door. His hand is on the frame, not … | 5/exchange | 667c | UNSCORED |
 | 4319 | `019ee6e1-5ce1-7287-bcb3-96a789954501` | denouement | Pixel picks up the tool she set down. The calibration i… | 5/exchange | 659c | UNSCORED |
-| 5183 | `c235aff1-425c-4b30-9245-86dae9a9a56e` | — | — | 5/exchange | 4561c | MISSING_MEANING,UNSCORED |
+| 5183 | `c235aff1-425c-4b30-9245-86dae9a9a56e` | — | Deepens the Kyle-Pixel relationship by showing their do… | 5/exchange | 4561c | UNSCORED |
 
 ### Eleven Seconds
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5208 | `019f4f02-0000-7000-8000-000000000001` | — | — | 6/confrontation +subplot | 1758c | MISSING_MEANING,UNSCORED |
-| 5209 | `019f4f02-0000-7000-8000-000000000002` | — | — | 6/confrontation +subplot | 1682c | MISSING_MEANING,UNSCORED |
+| 5208 | `019f4f02-0000-7000-8000-000000000001` | — | Introduces Able as a cold institutional force by showin… | 6/confrontation +subplot | 1758c | UNSCORED |
+| 5209 | `019f4f02-0000-7000-8000-000000000002` | — | Establishes Able as genuinely dangerous and ideological… | 6/confrontation +subplot | 1682c | UNSCORED |
 
 ### Chapter 9: The Interview
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5229 | `019f4f06-0000-7000-8000-000000000006` | — | — | 6/confrontation | 1099c | MISSING_MEANING,UNSCORED |
+| 5229 | `019f4f06-0000-7000-8000-000000000006` | — | Characterizes Kyle through disciplined preparation and … | 6/confrontation | 1099c | UNSCORED |
 | 4269 | `019ee691-9d4d-75f6-94dd-97bf83cc4f7a` | Bad Guys Close In | Kyle accepts a high-paying contract with an unvetted cr… | 6/confrontation | 2626c | UNSCORED |
 | 4270 | `019ee691-c03f-73b1-b5f8-5830e52e48c2` | Bad Guys Close In | Kyle departs for a dangerous job in Bucktown after Pixe… | 6/confrontation | 1614c | UNSCORED |
 | 4271 | `019ee692-2543-798f-b541-6d97bb92e812` | Bad Guys Close In | Kyle passes a combat test against three operatives in a… | 6/confrontation | 3332c | UNSCORED |
@@ -1766,19 +1766,19 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4274 | `019ee692-f814-723a-bb2b-45fea9656bb7` | Bad Guys Close In | Mira informs Kyle that multiple unknown parties are now… | 6/confrontation | 1612c | UNSCORED |
 | 4275 | `019ee693-2bc2-73c4-86aa-0c364274c9d1` | Bad Guys Close In | Kyle returns home through the Narrows after a violent e… | 6/confrontation | 1897c | UNSCORED |
 | 4393 | `019eedc0-c7e7-7756-8746-3986a81061c0` | Bad Guys Close In | A contract courier receives a cryptic message from his … | 6/confrontation | 942c | UNSCORED |
-| 5179 | `7573e038-f13a-4bb7-bdea-69e40689db72` | — | — | 6/confrontation | 1184c | MISSING_MEANING,UNSCORED |
-| 5327 | `019f5ebb-70af-7bcf-9ada-639e83da75d3` | — | — | 6/confrontation | 2542c | MISSING_MEANING,UNSCORED |
-| 5328 | `019f5ebb-7f71-74eb-8f50-0c63c8bda95b` | — | — | 6/confrontation | 2961c | MISSING_MEANING,UNSCORED |
-| 5335 | `019f5ebb-bdaf-758b-bb89-1ad493b74e8e` | — | — | 6/confrontation | 1903c | MISSING_MEANING,UNSCORED |
-| 5344 | `019f5ebc-0bfb-757a-b8f2-b46542c319db` | — | — | 6/confrontation | 1657c | MISSING_MEANING,UNSCORED |
-| 5346 | `019f5ebc-1b8b-79fd-b2c0-7251430d0245` | — | — | 6/confrontation | 1068c | MISSING_MEANING,UNSCORED |
-| 5348 | `019f5ebc-2a4a-7e1f-9e0d-5f53ca5d366a` | — | — | 6/confrontation | 1493c | MISSING_MEANING,UNSCORED |
-| 5349 | `019f5ebc-3938-7a2d-addb-9fbea55721cb` | — | — | 6/confrontation | 1828c | MISSING_MEANING,UNSCORED |
-| 5350 | `019f5ebc-47e1-7ae5-9cde-47dcbd7cd8cf` | — | — | 6/confrontation | 2408c | MISSING_MEANING,UNSCORED |
-| 5351 | `019f5ebc-567f-73d1-be78-ba8f950e251e` | — | — | 6/confrontation | 2874c | MISSING_MEANING,UNSCORED |
-| 5352 | `019f5ebc-6562-70d6-bf70-29c4a250f1c7` | — | — | 6/confrontation | 2779c | MISSING_MEANING,UNSCORED |
-| 5353 | `019f5ebc-73ff-701e-ab40-aafffc3d4991` | — | — | 6/confrontation | 1795c | MISSING_MEANING,UNSCORED |
-| 5354 | `019f5ebc-82b8-72c6-95d3-593136c7ed14` | — | — | 6/confrontation | 2111c | MISSING_MEANING,UNSCORED |
+| 5179 | `7573e038-f13a-4bb7-bdea-69e40689db72` | — | Establishes the job's stakes and Kyle's self-neglecting… | 6/confrontation | 1184c | UNSCORED |
+| 5327 | `019f5ebb-70af-7bcf-9ada-639e83da75d3` | — | Establishes the corridor's political and operational te… | 6/confrontation | 2542c | UNSCORED |
+| 5328 | `019f5ebb-7f71-74eb-8f50-0c63c8bda95b` | — | Escalates the physical threat while revealing Kyle's ta… | 6/confrontation | 2961c | UNSCORED |
+| 5335 | `019f5ebb-bdaf-758b-bb89-1ad493b74e8e` | — | Closes the gauntlet sequence by paying off Kyle's accum… | 6/confrontation | 1903c | UNSCORED |
+| 5344 | `019f5ebc-0bfb-757a-b8f2-b46542c319db` | — | Transitions from action to power-politics by revealing … | 6/confrontation | 1657c | UNSCORED |
+| 5346 | `019f5ebc-1b8b-79fd-b2c0-7251430d0245` | — | Establishes Hua as a figure of disciplined authority an… | 6/confrontation | 1068c | UNSCORED |
+| 5348 | `019f5ebc-2a4a-7e1f-9e0d-5f53ca5d366a` | — | Introduces Mira as a formidable assessor and establishe… | 6/confrontation | 1493c | UNSCORED |
+| 5349 | `019f5ebc-3938-7a2d-addb-9fbea55721cb` | — | Reveals Kyle's professional ethics and nerve through a … | 6/confrontation | 1828c | UNSCORED |
+| 5350 | `019f5ebc-47e1-7ae5-9cde-47dcbd7cd8cf` | — | Pays off the assessment's physical dimension by confirm… | 6/confrontation | 2408c | UNSCORED |
+| 5351 | `019f5ebc-567f-73d1-be78-ba8f950e251e` | — | Deepens Silence's mystery and Kyle's relationship to it… | 6/confrontation | 2874c | UNSCORED |
+| 5352 | `019f5ebc-6562-70d6-bf70-29c4a250f1c7` | — | Turns the power dynamic by having Kyle set the terms of… | 6/confrontation | 2779c | UNSCORED |
+| 5353 | `019f5ebc-73ff-701e-ab40-aafffc3d4991` | — | Establishes that an unknown, architecturally sophistica… | 6/confrontation | 1795c | UNSCORED |
+| 5354 | `019f5ebc-82b8-72c6-95d3-593136c7ed14` | — | Deepens the mystery of the entity's surveillance by rev… | 6/confrontation | 2111c | UNSCORED |
 
 ### Chapter 10: The One Who 
 
@@ -1801,7 +1801,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 1340 | `019e8b77-9774-7dee-8b27-cc6933f63c0f` | Bad Guys Close In | Kyle and Imani share a moment of genuine connection ami… | 8/crisis | 531c | UNSCORED |
 | 1341 | `019e8b77-9774-7954-a66c-081f4f6dd82f` | All Is Lost | Kyle navigates a collapsed viaduct using a makeshift ra… | 8/crisis | 1407c | UNSCORED |
 | 1342 | `019e8b77-9774-7b53-9639-3a4e0d809f0c` | All Is Lost | A skilled operative with military enhancements defeats … | 8/crisis | 3980c | UNSCORED |
-| 5230 | `019f4f06-0000-7000-8000-000000000007` | — | — | 8/crisis | 1212c | MISSING_MEANING,UNSCORED |
+| 5230 | `019f4f06-0000-7000-8000-000000000007` | — | Establishes Kyle's competent, calibrated relationship w… | 8/crisis | 1212c | UNSCORED |
 | 1343 | `019e8b77-9774-7587-b4ea-7042f221ae54` | All Is Lost | Kyle and Imani approach an anomalous atmospheric distur… | 8/crisis | 1475c | UNSCORED |
 | 1344 | `019e8b77-9774-743a-b069-b940f10073e4` | All Is Lost | A cop responding to a call encounters a supernatural lo… | 8/crisis | 1268c | UNSCORED |
 | 1345 | `019e8b77-9774-7f75-8eb6-25cc533eaad6` | All Is Lost | Kyle navigates an anomalous zone that defies physics an… | 8/crisis | 1651c | UNSCORED |
@@ -1821,7 +1821,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5204 | `f207b446-317f-45b7-af93-166c242b7617` | — | — | 4/quiet | 1703c | MISSING_MEANING,UNSCORED |
+| 5204 | `f207b446-317f-45b7-af93-166c242b7617` | — | Reveals Mira as Kyle's only stable external anchor, est… | 4/quiet | 1703c | UNSCORED |
 
 ### Chapter 12: One Shoe
 
@@ -1844,11 +1844,11 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 2898 | `602be933-97ab-4f0f-a429-50cb7fd52b4b` | Break Into Three | Kyle silently accepts Mrs. Chen's supernatural warning … | 7/revelation | 1279c | UNSCORED |
 | 2899 | `f0cc72f7-7631-47ec-8d08-3fcd6400d4df` | Break Into Three | She leads him through a practiced route that reveals ca… | 7/revelation | 853c | UNSCORED |
 | 2900 | `092b6731-5f23-4d16-884f-d51705b6b78e` | Break Into Three | A operative guides an agent to an abandoned relay stati… | 7/revelation | 865c | UNSCORED |
-| 5185 | `019f441c-210a-71f2-b1d3-b1e8959b1e29` | — | — | 7/revelation | 1877c | MISSING_MEANING,UNSCORED |
+| 5185 | `019f441c-210a-71f2-b1d3-b1e8959b1e29` | — | Escalates the threat by revealing the surveillance asse… | 7/revelation | 1877c | UNSCORED |
 | 2901 | `da55490c-267d-45a1-8474-da285db45ee9` | Break Into Three | A fixer reveals she's lost track of which clients she a… | 7/revelation | 1095c | UNSCORED |
 | 2902 | `fdd9e331-4369-47be-b205-1d5d4978f95c` | Break Into Three | A mysterious woman singles him out with cryptic words t… | 7/revelation | 679c | UNSCORED |
 | 2903 | `84bfc5d1-d949-4cb9-aa52-bc4a23be5807` | Break Into Three | Kyle encounters his mysterious fixer Sable in person fo… | 7/revelation | 776c | UNSCORED |
-| 5206 | `019f4f01-0000-7000-8000-000000000011` | — | — | 7/revelation | 2483c | MISSING_MEANING,UNSCORED |
+| 5206 | `019f4f01-0000-7000-8000-000000000011` | — | Pays off Femi's earlier detail about the cold hand by c… | 7/revelation | 2483c | UNSCORED |
 | 2904 | `20ef6dea-674a-485d-9340-d202ee0d5a6c` | Finale | Two neighbors maintain their careful distance across a … | 7/revelation | 1324c | UNSCORED |
 | 2905 | `8ac3e7d3-6aff-4ec0-a89c-6f46b7eefd6a` | Finale | A man prepares for a clandestine meeting in a secure lo… | 7/revelation | 450c | UNSCORED |
 | 2906 | `605a032a-9fa3-431f-b2ee-e9eca9ce6277` | Finale | Kyle's neural implant, which has hummed beneath his con… | 7/revelation | 1345c | UNSCORED |
@@ -1858,19 +1858,19 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5205 | `d63be038-78bd-4b9f-97da-669521f52a99` | — | — | 5/quiet | 1078c | MISSING_MEANING,UNSCORED |
+| 5205 | `d63be038-78bd-4b9f-97da-669521f52a99` | — | Turns intimacy into the scene's action by showing two p… | 5/quiet | 1078c | UNSCORED |
 
 ### Chapter 13: The Offer
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5167 | `019f43f8-e21c-799b-9b40-3dad22f46d33` | — | — | 8/revelation | 2023c | MISSING_MEANING,UNSCORED |
+| 5167 | `019f43f8-e21c-799b-9b40-3dad22f46d33` | — | Introduces Sable as a prepared, institutional antagonis… | 8/revelation | 2023c | UNSCORED |
 | 2908 | `c34be188-c5a0-4bf0-930e-ecb451f5d95c` | Finale | Sable reveals that Kyle has unknowingly worked for an A… | 8/revelation | 970c | UNSCORED |
 | 2909 | `6a1413ae-f372-4b7b-857c-1990957f4102` | Finale | Sable reveals she's discovered Kyle is being remotely c… | 8/revelation | 1455c | UNSCORED |
 | 2910 | `d6883c4a-7c68-497d-a8ce-7facfbfddc82` | Finale | Kyle agrees to use himself as bait to track the creatur… | 8/revelation | 370c | UNSCORED |
-| 5168 | `019f43f8-f951-7e95-92c4-daa0a987319d` | — | — | 8/revelation | 532c | MISSING_MEANING,UNSCORED |
+| 5168 | `019f43f8-f951-7e95-92c4-daa0a987319d` | — | Plants a destabilizing question — the others — that fol… | 8/revelation | 532c | UNSCORED |
 | 2911 | `3c853da5-e33c-4885-a4b0-99ae62d00484` | Finale | The protagonist accepts an implicit bargain with an ent… | 8/revelation | 1013c | UNSCORED |
-| 5169 | `019f43f9-a64a-795c-92f0-75f5de87beb6` | — | — | 8/revelation | 2182c | MISSING_MEANING,UNSCORED |
+| 5169 | `019f43f9-a64a-795c-92f0-75f5de87beb6` | — | Reveals that Kyle's arrival in GLMZ was anticipated bef… | 8/revelation | 2182c | UNSCORED |
 | 2912 | `8352435f-bdbd-4d0a-8d9a-b132ceda6b11` | Finale | Sable and her operative rendezvous in a relay station's… | 8/revelation | 599c | UNSCORED |
 
 ### Chapter 14: Two Favors
@@ -1882,17 +1882,17 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4347 | `019ee70d-c4d3-7553-a196-cd86d5b30708` | Finale | Kyle contacts his fixer Sable to arrange an illegal man… | 7/discovery | 1145c | UNSCORED |
 | 4348 | `019ee70d-eb89-78c8-be13-099668dcc9c5` | Finale | Pixel floods the Office's surveillance registry with 84… | 7/discovery | 1252c | UNSCORED |
 | 4349 | `019ee70e-10f7-75cf-be51-4d040ddd1f94` | Finale | The entity reveals it has eliminated the carrier and wa… | 7/discovery | 886c | UNSCORED |
-| 5180 | `cab0c791-86fa-43e7-bde8-5a7943ae0f62` | — | — | 7/discovery | 1890c | MISSING_MEANING,UNSCORED |
-| 5366 | `019f5ebd-65b9-73ac-97e3-db478457073d` | — | — | 7/discovery | 1844c | MISSING_MEANING,UNSCORED |
-| 5367 | `019f5ebd-749a-700e-8628-36e255f5dd1e` | — | — | 7/discovery | 1873c | MISSING_MEANING,UNSCORED |
-| 5368 | `019f5ebd-8373-736f-bb80-97bb56fb5439` | — | — | 7/discovery | 3326c | MISSING_MEANING,UNSCORED |
-| 5369 | `019f5ebd-9250-742d-8f7f-f5f8a79b1b0c` | — | — | 7/discovery | 3470c | MISSING_MEANING,UNSCORED |
-| 5370 | `019f5ebd-a12b-7ebe-a3a7-9f3df7f566a7` | — | — | 7/discovery | 1748c | MISSING_MEANING,UNSCORED |
-| 5371 | `019f5ebd-afe4-7ea4-ad0a-512db80e0a38` | — | — | 7/discovery | 1242c | MISSING_MEANING,UNSCORED |
-| 5372 | `019f5ebd-bec1-76bd-978d-c62d8a7648cb` | — | — | 7/discovery | 2098c | MISSING_MEANING,UNSCORED |
-| 5373 | `019f5ebd-cd59-76f9-ac4d-e01d933f6e10` | — | — | 7/discovery | 1833c | MISSING_MEANING,UNSCORED |
-| 5374 | `019f5ebd-dc55-750c-b182-1b14a00a7454` | — | — | 7/discovery | 2219c | MISSING_MEANING,UNSCORED |
-| 5375 | `019f5ebd-eabe-7cb6-ad45-c38eb968bf2f` | — | — | 7/discovery | 2345c | MISSING_MEANING,UNSCORED |
+| 5180 | `cab0c791-86fa-43e7-bde8-5a7943ae0f62` | — | Establishes Kyle's unease about a precisely worded summ… | 7/discovery | 1890c | UNSCORED |
+| 5366 | `019f5ebd-65b9-73ac-97e3-db478457073d` | — | Introduces Ledger as an uncanny, hyper-calibrated figur… | 7/discovery | 1844c | UNSCORED |
+| 5367 | `019f5ebd-749a-700e-8628-36e255f5dd1e` | — | Delivers the chapter's first major revelation — Ledger … | 7/discovery | 1873c | UNSCORED |
+| 5368 | `019f5ebd-8373-736f-bb80-97bb56fb5439` | — | Escalates tension by moving the diagnostic into public … | 7/discovery | 3326c | UNSCORED |
+| 5369 | `019f5ebd-9250-742d-8f7f-f5f8a79b1b0c` | — | Pays off the relay setup by having the Continuity Offic… | 7/discovery | 3470c | UNSCORED |
+| 5370 | `019f5ebd-a12b-7ebe-a3a7-9f3df7f566a7` | — | Reveals the chapter's core truth: Kyle's array has been… | 7/discovery | 1748c | UNSCORED |
+| 5371 | `019f5ebd-afe4-7ea4-ad0a-512db80e0a38` | — | Turns eleven years of Kyle's professional history into … | 7/discovery | 1242c | UNSCORED |
+| 5372 | `019f5ebd-bec1-76bd-978d-c62d8a7648cb` | — | Deepens the violation by showing Kyle recognizing retro… | 7/discovery | 2098c | UNSCORED |
+| 5373 | `019f5ebd-cd59-76f9-ac4d-e01d933f6e10` | — | Escalates the threat by adding a dormant E.L.F. attache… | 7/discovery | 1833c | UNSCORED |
+| 5374 | `019f5ebd-dc55-750c-b182-1b14a00a7454` | — | Resolves the scene's immediate question by naming Pixel… | 7/discovery | 2219c | UNSCORED |
+| 5375 | `019f5ebd-eabe-7cb6-ad45-c38eb968bf2f` | — | Ledger's warning about the Office establishes the exter… | 7/discovery | 2345c | UNSCORED |
 
 ### Chapter 15: Work Order
 
@@ -1913,34 +1913,34 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 4378 | `0e4ec5ef-53cb-41da-a572-fa1f8ec7f7c7` | Final Image | A freelancer realizes his mysterious long-term employer… | 9/revelation | 1263c | UNSCORED |
 | 4379 | `e16859ab-b0c7-4b3c-86d8-d211e60f8900` | Final Image | He sends a cryptic one-line message to the entity using… | 9/revelation | 820c | UNSCORED |
 | 4380 | `3aea7bd5-078c-4929-ac54-c3c6ea4884d6` | Final Image | The protagonist accepts a routine package transfer job … | 9/revelation | 869c | UNSCORED |
-| 4406 | `c6808835-4269-4963-98f6-b27ac3d3c47e` | — | — | 9/revelation | 3454c | MISSING_MEANING,UNSCORED |
-| 5314 | `019f5eba-a096-7986-a61b-432a444e0b6e` | — | — | 9/revelation | 3060c | MISSING_MEANING,UNSCORED |
-| 5317 | `019f5eba-bf58-77da-af25-c864c879cbf7` | — | — | 9/revelation | 1974c | MISSING_MEANING,UNSCORED |
-| 4407 | `fad108e5-d001-4074-9d14-23cb46096495` | — | — | 9/revelation | 5654c | MISSING_MEANING,UNSCORED |
-| 4408 | `9466a781-b178-475b-9f72-682b582ab61a` | — | — | 9/revelation | 6135c | MISSING_MEANING,UNSCORED |
-| 4304 | `019ee6d7-66ad-765f-bc05-5f390e8f2150` | — | — | 9/revelation | 3394c | MISSING_MEANING,UNSCORED |
-| 4305 | `019ee6d7-bd0d-78c1-8884-bf8394846333` | — | — | 9/revelation | 3078c | MISSING_MEANING,UNSCORED |
-| 4306 | `019ee6d8-106a-7766-bc7e-1bdf6753bccf` | — | — | 9/revelation | 2997c | MISSING_MEANING,UNSCORED |
-| 4409 | `695a542e-732f-4848-a53c-b5afb36f00cc` | — | — | 9/revelation | 5683c | MISSING_MEANING,UNSCORED |
-| 4410 | `3c90eaf0-cbcf-424f-86f9-291451118d0b` | — | — | 9/revelation | 5585c | MISSING_MEANING,UNSCORED |
-| 4307 | `019ee6d8-7239-7e0f-a85d-4e18a14b543d` | — | — | 9/revelation | 3636c | MISSING_MEANING,UNSCORED |
-| 4411 | `298fd6b8-10a1-40b1-a6ca-adb9178a89e4` | — | — | 9/revelation | 5572c | MISSING_MEANING,UNSCORED |
-| 4412 | `1654a309-b874-4267-a976-92ea876f47c6` | — | — | 9/revelation | 6254c | MISSING_MEANING,UNSCORED |
-| 4413 | `85434700-c07c-4525-be5c-f41529a631f7` | — | — | 9/revelation | 2667c | MISSING_MEANING,UNSCORED |
-| 5233 | `21ba754f-c494-46df-8567-1ae8403c6ed1` | — | — | 9/revelation | 601c | MISSING_MEANING,UNSCORED |
-| 4414 | `cb428ab6-0177-48cd-8479-3db5ec52e8a1` | — | — | 9/revelation | 4205c | MISSING_MEANING,UNSCORED |
-| 4415 | `879168e6-1be3-4355-adab-979fabefe280` | — | — | 9/revelation | 3152c | MISSING_MEANING,UNSCORED |
-| 4416 | `f51cadaf-4db8-45d8-a1cb-7ebb71866af5` | — | — | 9/revelation | 6046c | MISSING_MEANING,UNSCORED |
-| 4417 | `4cb63990-3a62-450a-8daf-450413d88cb3` | — | — | 9/revelation | 4823c | MISSING_MEANING,UNSCORED |
-| 4418 | `651e715a-b9cb-4ed1-92b8-cc288f34a46f` | — | — | 9/revelation | 5715c | MISSING_MEANING,UNSCORED |
-| 2961 | `e81ceb43-4d1b-46f6-bded-ad60a9ba93cb` | — | — | 9/revelation | 2205c | MISSING_MEANING,UNSCORED |
-| 2962 | `db888a00-afed-4201-887c-62011867e852` | — | — | 9/revelation | 2101c | MISSING_MEANING,UNSCORED |
-| 2963 | `1d2fcb0b-c0fb-4ff0-b1e5-3c39625e2692` | — | — | 9/revelation | 2106c | MISSING_MEANING,UNSCORED |
-| 2964 | `98bf3b25-259c-47dd-af99-307a115deb11` | — | — | 9/revelation | 1824c | MISSING_MEANING,UNSCORED |
-| 2965 | `ff1b52a7-7b7b-48f2-9395-0215a238ed8f` | — | — | 9/revelation | 1381c | MISSING_MEANING,UNSCORED |
-| 2966 | `26d745c8-d1df-4580-b3a1-f742689f28ca` | — | — | 9/revelation | 2590c | MISSING_MEANING,UNSCORED |
-| 2967 | `77d56e82-f816-432a-ac81-7b6c797b2a4d` | — | — | 9/revelation | 1855c | MISSING_MEANING,UNSCORED |
-| 2968 | `bbfe6042-fb7f-46e0-8d0d-5ef333b3238f` | — | — | 9/revelation | 1443c | MISSING_MEANING,UNSCORED |
+| 4406 | `c6808835-4269-4963-98f6-b27ac3d3c47e` | — | Grounds Kyle in the precarious freelance economy of the… | 9/revelation | 3454c | UNSCORED |
+| 5314 | `019f5eba-a096-7986-a61b-432a444e0b6e` | — | Reveals the principle Seito taught — moving in the gap … | 9/revelation | 3060c | UNSCORED |
+| 5317 | `019f5eba-bf58-77da-af25-c864c879cbf7` | — | Turns Kyle from passive observer to committed actor, an… | 9/revelation | 1974c | UNSCORED |
+| 4407 | `fad108e5-d001-4074-9d14-23cb46096495` | — | Establishes Moss as a precise, cornered professional an… | 9/revelation | 5654c | UNSCORED |
+| 4408 | `9466a781-b178-475b-9f72-682b582ab61a` | — | Deepens the Seito principle by showing Kyle has interna… | 9/revelation | 6135c | UNSCORED |
+| 4304 | `019ee6d7-66ad-765f-bc05-5f390e8f2150` | — | Escalates stakes by making Kyle's survival contingent o… | 9/revelation | 3394c | UNSCORED |
+| 4305 | `019ee6d7-bd0d-78c1-8884-bf8394846333` | — | Pays off the cardiac-suppression setup as a genuine lif… | 9/revelation | 3078c | UNSCORED |
+| 4306 | `019ee6d8-106a-7766-bc7e-1bdf6753bccf` | — | Delivers the extraction's payoff while introducing Nadi… | 9/revelation | 2997c | UNSCORED |
+| 4409 | `695a542e-732f-4848-a53c-b5afb36f00cc` | — | Pays off the Seito principle in live combat, showing Ky… | 9/revelation | 5683c | UNSCORED |
+| 4410 | `3c90eaf0-cbcf-424f-86f9-291451118d0b` | — | Establishes Kyle's tactical intelligence and the lethal… | 9/revelation | 5585c | UNSCORED |
+| 4307 | `019ee6d8-7239-7e0f-a85d-4e18a14b543d` | — | Pays off the extraction plan by showing Moss's practice… | 9/revelation | 3636c | UNSCORED |
+| 4411 | `298fd6b8-10a1-40b1-a6ca-adb9178a89e4` | — | Establishes post-rescue decompression and positions Nad… | 9/revelation | 5572c | UNSCORED |
+| 4412 | `1654a309-b874-4267-a976-92ea876f47c6` | — | Reveals the technical architecture of Kyle's composite … | 9/revelation | 6254c | UNSCORED |
+| 4413 | `85434700-c07c-4525-be5c-f41529a631f7` | — | Escalates the revelation by disclosing the deliberate e… | 9/revelation | 2667c | UNSCORED |
+| 5233 | `21ba754f-c494-46df-8567-1ae8403c6ed1` | — | Turns Kyle's self-understanding by forcing him to name … | 9/revelation | 601c | UNSCORED |
+| 4414 | `cb428ab6-0177-48cd-8479-3db5ec52e8a1` | — | Reveals that Kyle's most intimate memories survive the … | 9/revelation | 4205c | UNSCORED |
+| 4415 | `879168e6-1be3-4355-adab-979fabefe280` | — | Pays off the chapter's inciting mystery by revealing Na… | 9/revelation | 3152c | UNSCORED |
+| 4416 | `f51cadaf-4db8-45d8-a1cb-7ebb71866af5` | — | Escalates threat and demonstrates the partnership's fun… | 9/revelation | 6046c | UNSCORED |
+| 4417 | `4cb63990-3a62-450a-8daf-450413d88cb3` | — | Resolves the action sequence and establishes Kyle's ope… | 9/revelation | 4823c | UNSCORED |
+| 4418 | `651e715a-b9cb-4ed1-92b8-cc288f34a46f` | — | Reveals that Kyle has surpassed his mentor through soli… | 9/revelation | 5715c | UNSCORED |
+| 2961 | `e81ceb43-4d1b-46f6-bded-ad60a9ba93cb` | — | Introduces the inciting disruption — the stolen motorcy… | 9/revelation | 2205c | UNSCORED |
+| 2962 | `db888a00-afed-4201-887c-62011867e852` | — | Escalates the theft from random crime to deliberate pro… | 9/revelation | 2101c | UNSCORED |
+| 2963 | `1d2fcb0b-c0fb-4ff0-b1e5-3c39625e2692` | — | Pays off the trail by revealing a child client, reframi… | 9/revelation | 2106c | UNSCORED |
+| 2964 | `98bf3b25-259c-47dd-af99-307a115deb11` | — | Reveals the AI's emotional investment in Kyle by showin… | 9/revelation | 1824c | UNSCORED |
+| 2965 | `ff1b52a7-7b7b-48f2-9395-0215a238ed8f` | — | Pays off Pixel's competence and loyalty while the AI's … | 9/revelation | 1381c | UNSCORED |
+| 2966 | `26d745c8-d1df-4580-b3a1-f742689f28ca` | — | Turns the confrontation by revealing the girl's vulnera… | 9/revelation | 2590c | UNSCORED |
+| 2967 | `77d56e82-f816-432a-ac81-7b6c797b2a4d` | — | Pays off the chapter's moral stakes by showing Kyle hon… | 9/revelation | 1855c | UNSCORED |
+| 2968 | `bbfe6042-fb7f-46e0-8d0d-5ef333b3238f` | — | Resolves the chapter on earned warmth, paying off the A… | 9/revelation | 1443c | UNSCORED |
 
 ### The Floor Is Hard
 
@@ -1955,208 +1955,208 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 1315 | `019e8b3e-5b66-7b56-ad31-89fe04cdfd57` | Dark Night of the Soul | After a violent confrontation, two people lie together … | 8/exchange | 1161c | UNSCORED |
 | 1316 | `5731dfa7-e19e-4ffe-b79a-95cbf4231893` | Antagonist Cost | Pixel and Kyle establish distance after consummation | 8/exchange | 798c | UNSCORED |
 | 1317 | `019e8b3e-5b66-793d-99b5-6c5ef12d2a34` | Dark Night of the Soul | Kyle insists their encounter cannot repeat while Pixel … | 8/exchange | 727c | UNSCORED |
-| 5165 | `019f43f7-9792-7438-a689-0a2269911edd` | — | — | 8/exchange | 1574c | MISSING_MEANING,UNSCORED |
-| 5166 | `019f43f7-c684-75e8-b5e0-0f36afd69d31` | — | — | 8/exchange | 1454c | MISSING_MEANING,UNSCORED |
+| 5165 | `019f43f7-9792-7438-a689-0a2269911edd` | — | Establishes the emotional cost of Kyle's disclosure by … | 8/exchange | 1574c | UNSCORED |
+| 5166 | `019f43f7-c684-75e8-b5e0-0f36afd69d31` | — | Establishes Kyle's emotional discipline as a coping mec… | 8/exchange | 1454c | UNSCORED |
 
 ### Somebody Stole Kyle's Mo
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 2969 | `95b78c99-4dda-4c6e-a232-eae9763b4e3e` | — | — | 5/discovery | 1446c | MISSING_MEANING,UNSCORED |
-| 2970 | `c39750f3-1d6e-44cf-a1dc-ce9c7c1a0a43` | — | — | 5/discovery | 682c | MISSING_MEANING,UNSCORED |
-| 2971 | `4337e484-042f-4b03-a048-331623c5c9b6` | — | — | 5/discovery | 4888c | MISSING_MEANING,UNSCORED |
-| 2972 | `3569afb4-4ccd-47c1-984f-64e6a43317db` | — | — | 5/discovery | 1666c | MISSING_MEANING,UNSCORED |
-| 2973 | `7cbc040b-d797-423d-9ba4-b6622f54d326` | — | — | 5/discovery | 2978c | MISSING_MEANING,UNSCORED |
-| 2974 | `f4142364-3f64-411f-8985-18b1fb288cb8` | — | — | 5/discovery | 2419c | MISSING_MEANING,UNSCORED |
-| 2975 | `6f622143-7720-443c-90f2-5097150c00c2` | — | — | 5/discovery | 1296c | MISSING_MEANING,UNSCORED |
+| 2969 | `95b78c99-4dda-4c6e-a232-eae9763b4e3e` | — | Reveals the crew's competence and loyalty through comic… | 5/discovery | 1446c | UNSCORED |
+| 2970 | `c39750f3-1d6e-44cf-a1dc-ce9c7c1a0a43` | — | Uses Mrs. Chen's wordless care to establish Kyle as a m… | 5/discovery | 682c | UNSCORED |
+| 2971 | `4337e484-042f-4b03-a048-331623c5c9b6` | — | Introduces Casper Vey and his archive as the city's inf… | 5/discovery | 4888c | UNSCORED |
+| 2972 | `3569afb4-4ccd-47c1-984f-64e6a43317db` | — | Escalates the threat by revealing a professional operat… | 5/discovery | 1666c | UNSCORED |
+| 2973 | `7cbc040b-d797-423d-9ba4-b6622f54d326` | — | Pays off the surveillance setup by demonstrating the cr… | 5/discovery | 2978c | UNSCORED |
+| 2974 | `f4142364-3f64-411f-8985-18b1fb288cb8` | — | Establishes the cost of the victory — a permanent fact … | 5/discovery | 2419c | UNSCORED |
+| 2975 | `6f622143-7720-443c-90f2-5097150c00c2` | — | Consolidates the found-family warmth through the crew's… | 5/discovery | 1296c | UNSCORED |
 
 ### Chapter 16: Ghost Period
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 2976 | `70cc3699-96d0-4df8-83f1-c1e8e330864c` | — | — | 9/discovery | 858c | MISSING_MEANING,UNSCORED |
-| 2977 | `9d0a6f2f-25cf-4c67-92e2-e57dff1b552f` | — | — | 9/discovery | 2078c | MISSING_MEANING,UNSCORED |
-| 2978 | `b14b4684-2cae-4858-8353-c389ddcea424` | — | — | 9/discovery | 1802c | MISSING_MEANING,UNSCORED |
-| 2979 | `ab49ae93-be53-4bf2-b10d-fd8a7fb9f014` | — | — | 9/discovery | 2187c | MISSING_MEANING,UNSCORED |
-| 2980 | `cf0f5987-4257-40dd-ac81-7fdc43513411` | — | — | 9/discovery | 2438c | MISSING_MEANING,UNSCORED |
-| 2981 | `9932de0f-8589-4a67-bfb0-cf2924dbbda4` | — | — | 9/discovery | 2122c | MISSING_MEANING,UNSCORED |
-| 2982 | `b625c183-7441-4c88-970f-b6c6984ddfd6` | — | — | 9/discovery | 2283c | MISSING_MEANING,UNSCORED |
-| 2983 | `9bcab992-2697-4392-a72e-88721ab36f4b` | — | — | 9/discovery | 2215c | MISSING_MEANING,UNSCORED |
-| 2984 | `3e5881ab-e506-47b0-b803-c4ff40ea710f` | — | — | 9/discovery | 1332c | MISSING_MEANING,UNSCORED |
-| 2985 | `0497ea51-77f4-47d0-98cd-aa3c33e0c226` | — | — | 9/discovery | 824c | MISSING_MEANING,UNSCORED |
-| 2986 | `c6e6169d-8ad1-4137-aeb7-38d7a19eb85c` | — | — | 9/discovery | 2707c | MISSING_MEANING,UNSCORED |
-| 2987 | `763e0483-dd06-433e-9cff-199a530bd28d` | — | — | 9/discovery | 1908c | MISSING_MEANING,UNSCORED |
-| 2988 | `68f81da3-59c8-485a-9d60-cf53c45c4e11` | — | — | 9/discovery | 3896c | MISSING_MEANING,UNSCORED |
-| 2989 | `e67294f8-86a7-4cbe-a303-8bf27ef5265c` | — | — | 9/discovery | 6878c | MISSING_MEANING,UNSCORED |
-| 2990 | `79d93f30-aeda-42bf-81e8-6bcc85696252` | — | — | 9/discovery | 692c | MISSING_MEANING,UNSCORED |
-| 2991 | `2e002b95-6a2f-4740-a5ff-222000f574d5` | — | — | 9/discovery | 681c | MISSING_MEANING,UNSCORED |
-| 2992 | `359db6c0-1877-447d-92e5-fab9dd9cb652` | — | — | 9/discovery | 2263c | MISSING_MEANING,UNSCORED |
-| 2993 | `70ac07f7-bc5c-47cc-b5e6-fbd5e158038a` | — | — | 9/discovery | 1181c | MISSING_MEANING,UNSCORED |
-| 2994 | `9e72b8d6-8297-4690-92ed-ad41dd568b58` | — | — | 9/discovery | 1550c | MISSING_MEANING,UNSCORED |
-| 2995 | `87afca82-1a9d-49e4-bc29-4b64a93ce392` | — | — | 9/discovery | 2414c | MISSING_MEANING,UNSCORED |
-| 2996 | `767bf6ba-9bf9-40c7-89a6-cec047e861e8` | — | — | 9/discovery | 1835c | MISSING_MEANING,UNSCORED |
-| 2997 | `37b7f27c-1365-4744-b53b-bb0d11d60140` | — | — | 9/discovery | 1526c | MISSING_MEANING,UNSCORED |
-| 2998 | `ba298221-fd98-449f-973a-745cbab65d10` | — | — | 9/discovery | 2697c | MISSING_MEANING,UNSCORED |
-| 2999 | `dcc062d5-9f87-4549-aaa8-838d4fb80d47` | — | — | 9/discovery | 2320c | MISSING_MEANING,UNSCORED |
-| 3000 | `7a2f416f-c420-4327-82fd-d1b70c5be0e3` | — | — | 9/discovery | 1987c | MISSING_MEANING,UNSCORED |
-| 3148 | `e9dd6e41-b448-4bbf-9889-aa3980db0b24` | — | — | 9/discovery | 1253c | MISSING_MEANING,UNSCORED |
-| 3149 | `8bfb4133-a8d8-410c-bc3f-631f2fc4fbbd` | — | — | 9/discovery | 1043c | MISSING_MEANING,UNSCORED |
-| 3150 | `702e68e6-1d05-4892-b238-03da7f82eb3f` | — | — | 9/discovery | 1517c | MISSING_MEANING,UNSCORED |
-| 3151 | `6bd1c9e3-399a-4167-a1a3-adb206ba5883` | — | — | 9/discovery | 1299c | MISSING_MEANING,UNSCORED |
-| 3152 | `25257d8e-bff1-425b-bcc3-7129f67b7f09` | — | — | 9/discovery | 1254c | MISSING_MEANING,UNSCORED |
-| 3153 | `1cde7707-8380-4165-9cb2-5c50fbad3aad` | — | — | 9/discovery | 847c | MISSING_MEANING,UNSCORED |
-| 3154 | `8135a3f7-f497-4b8c-963a-ded7c9ec4a72` | — | — | 9/discovery | 1274c | MISSING_MEANING,UNSCORED |
-| 3155 | `22da15c6-7cdf-4cfe-9d26-31a402c4b36f` | — | — | 9/discovery | 1703c | MISSING_MEANING,UNSCORED |
-| 3156 | `81f90f11-0334-4a16-91a0-5d6f1fa8f39a` | — | — | 9/discovery | 985c | MISSING_MEANING,UNSCORED |
-| 3157 | `9eb3587e-6a76-48e1-a378-3831610c4eb5` | — | — | 9/discovery | 1291c | MISSING_MEANING,UNSCORED |
-| 3158 | `912d5143-4c68-44f9-b94d-2206ee5db7c2` | — | — | 9/discovery | 1689c | MISSING_MEANING,UNSCORED |
-| 3201 | `66f251ed-0beb-465e-8b6f-a47f274f06f0` | — | — | 9/discovery | 1263c | MISSING_MEANING,UNSCORED |
-| 3202 | `7fcbe01e-ae20-4607-896c-4b6ff9025aa7` | — | — | 9/discovery | 1114c | MISSING_MEANING,UNSCORED |
-| 3203 | `d647cbb1-d9c6-49d7-b2b8-43d74711d500` | — | — | 9/discovery | 2516c | MISSING_MEANING,UNSCORED |
-| 3204 | `efc6ac08-0991-4832-964f-d124ada83164` | — | — | 9/discovery | 3347c | MISSING_MEANING,UNSCORED |
-| 3205 | `29608b3c-6941-427c-a61a-3a24945d6108` | — | — | 9/discovery | 1228c | MISSING_MEANING,UNSCORED |
-| 3206 | `b15493ef-503d-4722-8b11-9808da8d6b0f` | — | — | 9/discovery | 1079c | MISSING_MEANING,UNSCORED |
-| 3207 | `065fd2f6-e3dc-4030-95d4-4c3ec826598a` | — | — | 9/discovery | 2090c | MISSING_MEANING,UNSCORED |
-| 3208 | `c60157a4-f25d-49db-82c5-d98bd501b2e9` | — | — | 9/discovery | 2272c | MISSING_MEANING,UNSCORED |
-| 3283 | `efe277f2-ebcc-45de-9072-0f73a85a51ae` | — | — | 9/discovery | 1734c | MISSING_MEANING,UNSCORED |
-| 5231 | `019f4f06-0000-7000-8000-000000000008` | — | — | 9/discovery | 1085c | MISSING_MEANING,UNSCORED |
-| 3284 | `1861baea-8dfe-4366-b12c-044cfb759b8b` | — | — | 9/discovery | 974c | MISSING_MEANING,UNSCORED |
-| 3285 | `fe75b789-7b36-436f-a60a-54e6d0f3e0b1` | — | — | 9/discovery | 2472c | MISSING_MEANING,UNSCORED |
-| 3286 | `a025bb24-a89b-4fcf-ad8f-1f1f53fd6d01` | — | — | 9/discovery | 2615c | MISSING_MEANING,UNSCORED |
-| 3287 | `b67630c1-5dd2-4f49-8eb0-d60ee1bc3871` | — | — | 9/discovery | 910c | MISSING_MEANING,UNSCORED |
-| 3288 | `c7684521-b00c-480c-9db8-8999dd3263a2` | — | — | 9/discovery | 2681c | MISSING_MEANING,UNSCORED |
-| 3289 | `a6b55fd3-db63-4f1f-af0f-ff260596ead1` | — | — | 9/discovery | 2704c | MISSING_MEANING,UNSCORED |
-| 3290 | `bd5a48f4-aa14-4962-afc1-2ef8d9ea4abb` | — | — | 9/discovery | 1554c | MISSING_MEANING,UNSCORED |
-| 3291 | `b1c219d9-d544-435e-baa4-ddf5aeb31960` | — | — | 9/discovery | 1549c | MISSING_MEANING,UNSCORED |
-| 3292 | `3153d9d3-fdee-4c11-9092-4ef36900f668` | — | — | 9/discovery | 1315c | MISSING_MEANING,UNSCORED |
-| 3276 | `ca7373df-3e74-41e4-ad65-9f8f8656d07e` | — | — | 9/discovery | 700c | MISSING_MEANING,UNSCORED |
-| 3277 | `2fe1ef55-a1f5-463a-bb55-6d8f7017e2d7` | — | — | 9/discovery | 4212c | MISSING_MEANING,UNSCORED |
-| 3278 | `00e05106-021c-47e2-af9d-942b49363c8c` | — | — | 9/discovery | 1405c | MISSING_MEANING,UNSCORED |
-| 3279 | `c9be50b8-94ab-4064-8f75-9eb9e0ef11aa` | — | — | 9/discovery | 3516c | MISSING_MEANING,UNSCORED |
-| 3280 | `89ada0eb-60ab-4ee3-a4c4-f77fd0fe83a8` | — | — | 9/discovery | 1955c | MISSING_MEANING,UNSCORED |
-| 3281 | `e9ed699c-bf5c-493d-8f85-20c20f37d9a1` | — | — | 9/discovery | 2693c | MISSING_MEANING,UNSCORED |
-| 3282 | `354b4624-6634-442a-8a8e-8c4cb3fdc2d8` | — | — | 9/discovery | 1990c | MISSING_MEANING,UNSCORED |
-| 3033 | `f884d091-3fcd-49db-81df-8886cf34eb5f` | — | — | 9/discovery | 6997c | MISSING_MEANING,UNSCORED |
-| 3034 | `2b08cbe3-9bb6-433f-ac68-3c94983221a8` | — | — | 9/discovery | 1437c | MISSING_MEANING,UNSCORED |
-| 3035 | `c5f4297f-bf7e-43b1-a285-0ce8e210883c` | — | — | 9/discovery | 2506c | MISSING_MEANING,UNSCORED |
-| 3036 | `55760c32-f14c-49b8-accd-2bb83d97b262` | — | — | 9/discovery | 2454c | MISSING_MEANING,UNSCORED |
-| 3037 | `329d5aa0-7cda-49c0-a808-9d2878e617b5` | — | — | 9/discovery | 1987c | MISSING_MEANING,UNSCORED |
-| 3266 | `6c20cd5d-3a7f-4944-848e-8ef4ce16f6c7` | — | — | 9/discovery | 2141c | MISSING_MEANING,UNSCORED |
-| 3267 | `1b07fca6-ded9-410c-a16d-644557bc10a7` | — | — | 9/discovery | 1579c | MISSING_MEANING,UNSCORED |
-| 3268 | `9aeefba0-5e05-4922-ad28-9ce52fd57584` | — | — | 9/discovery | 1685c | MISSING_MEANING,UNSCORED |
-| 3269 | `ae48ffb8-bb7a-49f5-beca-e04cd9b4b9bb` | — | — | 9/discovery | 1171c | MISSING_MEANING,UNSCORED |
-| 3270 | `d610bff5-3027-405c-b09d-c544acae90a9` | — | — | 9/discovery | 2172c | MISSING_MEANING,UNSCORED |
-| 3271 | `fc12bd1b-3614-44e9-a1b1-7c172c0b35e0` | — | — | 9/discovery | 3017c | MISSING_MEANING,UNSCORED |
-| 3272 | `220cde7a-442d-4717-9a46-a722a6135380` | — | — | 9/discovery | 1314c | MISSING_MEANING,UNSCORED |
-| 3273 | `a039f961-0bd5-4697-98db-b58963d15efb` | — | — | 9/discovery | 2063c | MISSING_MEANING,UNSCORED |
-| 3274 | `73ae1c75-433a-4ae5-bb83-64a8d4c9113e` | — | — | 9/discovery | 2431c | MISSING_MEANING,UNSCORED |
-| 3275 | `c7edbd02-ed1c-4c5c-90e5-7f7ea4c6cbef` | — | — | 9/discovery | 212c | MISSING_MEANING,UNSCORED |
-| 3192 | `8c4938d9-6ec0-4d5c-b667-727d027efa1c` | — | — | 9/discovery | 1697c | MISSING_MEANING,UNSCORED |
-| 3193 | `53e86297-8e8d-49ea-a3ce-398494500431` | — | — | 9/discovery | 1738c | MISSING_MEANING,UNSCORED |
-| 3194 | `e254cb78-8e5c-4061-9a5f-3943dbec0f82` | — | — | 9/discovery | 1363c | MISSING_MEANING,UNSCORED |
-| 3195 | `317cf6e5-4bc5-4d57-a8fd-8a3f7c0e4f80` | — | — | 9/discovery | 689c | MISSING_MEANING,UNSCORED |
-| 3196 | `97b9c391-0748-4377-83c8-00a73bd22047` | — | — | 9/discovery | 2285c | MISSING_MEANING,UNSCORED |
-| 3197 | `55a63565-8934-4eba-816b-960a6739ba1d` | — | — | 9/discovery | 1799c | MISSING_MEANING,UNSCORED |
-| 3198 | `c9c1b5b3-e3d5-4ef8-909b-3123d7255dcb` | — | — | 9/discovery | 4214c | MISSING_MEANING,UNSCORED |
-| 3199 | `4596da31-7bac-4d2f-8d08-511bbd390bb0` | — | — | 9/discovery | 2522c | MISSING_MEANING,UNSCORED |
-| 3200 | `ace31ad6-d72a-41aa-8369-934e33fffeb3` | — | — | 9/discovery | 1838c | MISSING_MEANING,UNSCORED |
-| 3055 | `9f1dd9cb-5891-41cd-888b-947f2105c10a` | — | — | 9/discovery | 3216c | MISSING_MEANING,UNSCORED |
-| 3056 | `5e05f5f1-d7e7-4e97-9cba-ab972abe0695` | — | — | 9/discovery | 3137c | MISSING_MEANING,UNSCORED |
-| 3057 | `ed3a843f-c631-4a87-9a92-5a8f39e3c853` | — | — | 9/discovery | 1952c | MISSING_MEANING,UNSCORED |
-| 3058 | `7bd32b39-8596-43e6-be99-a5acc8df91dc` | — | — | 9/discovery | 1853c | MISSING_MEANING,UNSCORED |
-| 3059 | `b9731d48-1771-4fe0-92d0-5969a04742cf` | — | — | 9/discovery | 5601c | MISSING_MEANING,UNSCORED |
-| 5232 | `019f4f06-0000-7000-8000-000000000009` | — | — | 9/discovery | 1541c | MISSING_MEANING,UNSCORED |
-| 3060 | `578de1f3-7ace-4d2e-b6e2-2b4db1efdcac` | — | — | 9/discovery | 1589c | MISSING_MEANING,UNSCORED |
-| 3125 | `0d0735f9-5389-4151-96eb-071e0857def7` | — | — | 9/discovery | 1917c | MISSING_MEANING,UNSCORED |
-| 3126 | `4917d76e-6625-46fb-ba11-f475303b6444` | — | — | 9/discovery | 473c | MISSING_MEANING,UNSCORED |
-| 3127 | `fea7a26d-3f36-4399-996f-6afc39d1b5d3` | — | — | 9/discovery | 643c | MISSING_MEANING,UNSCORED |
-| 3128 | `8d0b42b5-ec05-4c6f-889f-303e7ee76d11` | — | — | 9/discovery | 1153c | MISSING_MEANING,UNSCORED |
-| 3129 | `53ccdd26-b979-4dcf-8392-74b6fa194031` | — | — | 9/discovery | 966c | MISSING_MEANING,UNSCORED |
-| 3130 | `7534b76c-dc68-4a52-a01c-398e27f2e0d5` | — | — | 9/discovery | 1548c | MISSING_MEANING,UNSCORED |
-| 3131 | `d23cd433-58d3-48e6-8dc9-7ed0f5f271bc` | — | — | 9/discovery | 679c | MISSING_MEANING,UNSCORED |
-| 3132 | `e78c0c7f-9394-40c2-a914-2cb7b096c777` | — | — | 9/discovery | 860c | MISSING_MEANING,UNSCORED |
-| 3133 | `26ce7c83-b9e2-4fcd-ae9f-3d7ef9df187e` | — | — | 9/discovery | 1147c | MISSING_MEANING,UNSCORED |
-| 3134 | `45142b2d-df1d-4ac0-80ee-124548ab0156` | — | — | 9/discovery | 1379c | MISSING_MEANING,UNSCORED |
-| 3135 | `e76d69cd-1317-415f-9f50-48e3a0f702e6` | — | — | 9/discovery | 1562c | MISSING_MEANING,UNSCORED |
-| 3136 | `52c41ce5-4366-484d-b461-c32463f3197e` | — | — | 9/discovery | 930c | MISSING_MEANING,UNSCORED |
-| 5200 | `79489824-6aae-432c-9142-fef1e4430382` | — | — | 9/discovery | 4364c | MISSING_MEANING,UNSCORED |
-| 3137 | `addf765e-c42c-4c44-820e-f800c8703df8` | — | — | 9/discovery | 1180c | MISSING_MEANING,UNSCORED |
-| 3138 | `ff3ce750-b25d-4a45-841e-688f672407d6` | — | — | 9/discovery | 1272c | MISSING_MEANING,UNSCORED |
-| 3139 | `20d869d2-ea49-41ba-9daa-e9ea4df32f6b` | — | — | 9/discovery | 870c | MISSING_MEANING,UNSCORED |
-| 3140 | `9577ed2a-922c-41ef-8c55-de61082b9b29` | — | — | 9/discovery | 1094c | MISSING_MEANING,UNSCORED |
-| 3141 | `8d099085-72e5-45e8-b533-b26c38a543d2` | — | — | 9/discovery | 778c | MISSING_MEANING,UNSCORED |
-| 3142 | `27847ffc-1650-4909-b0c2-d6563458f0f0` | — | — | 9/discovery | 794c | MISSING_MEANING,UNSCORED |
-| 3209 | `d8a74c8f-dd50-479d-b86d-74dba681aa67` | — | — | 9/discovery | 2725c | MISSING_MEANING,UNSCORED |
-| 3210 | `da75d5bb-ee5a-4df9-9471-7a5fa5e05a22` | — | — | 9/discovery | 1445c | MISSING_MEANING,UNSCORED |
-| 3211 | `fa4b362c-90af-4d4b-ab5a-0446908408ac` | — | — | 9/discovery | 1741c | MISSING_MEANING,UNSCORED |
-| 3212 | `113d4857-82e5-4f77-a5e4-44901ea4340a` | — | — | 9/discovery | 1116c | MISSING_MEANING,UNSCORED |
-| 3213 | `51be287f-bd4d-4fec-9286-5f3523b8039a` | — | — | 9/discovery | 1934c | MISSING_MEANING,UNSCORED |
-| 3214 | `dc005e62-cb72-4251-bb2d-4f26e66a2cad` | — | — | 9/discovery | 5118c | MISSING_MEANING,UNSCORED |
-| 3215 | `9d4d69bd-e6a4-4f9a-83bb-07c7a27a82d4` | — | — | 9/discovery | 2209c | MISSING_MEANING,UNSCORED |
-| 3216 | `4c66fd81-5f79-4e00-9c76-e3df71d79a21` | — | — | 9/discovery | 1412c | MISSING_MEANING,UNSCORED |
-| 3217 | `8b0b3fe3-462d-41d5-aa42-60149f00930f` | — | — | 9/discovery | 1198c | MISSING_MEANING,UNSCORED |
-| 3089 | `37643e11-ad18-4d66-ba2c-33d68adb7ad3` | — | — | 9/discovery | 1261c | MISSING_MEANING,UNSCORED |
-| 3090 | `3f99bf98-a366-4c6f-9230-a3422e903e46` | — | — | 9/discovery | 2138c | MISSING_MEANING,UNSCORED |
-| 3091 | `cdd88eaa-4d1c-45c0-8a30-c1758982f618` | — | — | 9/discovery | 3091c | MISSING_MEANING,UNSCORED |
-| 3092 | `010b5b71-369e-4794-b4f5-0e72b406bedd` | — | — | 9/discovery | 915c | MISSING_MEANING,UNSCORED |
-| 3093 | `1815c3d4-1650-42b2-b915-76bc7cd504e9` | — | — | 9/discovery | 2025c | MISSING_MEANING,UNSCORED |
-| 3094 | `7fe297d0-c558-4ecf-8775-bf14c073742f` | — | — | 9/discovery | 2222c | MISSING_MEANING,UNSCORED |
-| 3095 | `9dde0c27-080b-4667-b70b-f448ef808d68` | — | — | 9/discovery | 1470c | MISSING_MEANING,UNSCORED |
-| 3096 | `3fe6c75a-f9da-44cb-8758-2a12eab89f78` | — | — | 9/discovery | 1349c | MISSING_MEANING,UNSCORED |
-| 3097 | `f456b800-3124-419f-80c6-7933c8442024` | — | — | 9/discovery | 2937c | MISSING_MEANING,UNSCORED |
-| 3098 | `e8b9cc4d-c4c3-4f08-aae2-829feb54732f` | — | — | 9/discovery | 3085c | MISSING_MEANING,UNSCORED |
-| 3099 | `26a82645-17aa-471c-84de-7be4eb92b028` | — | — | 9/discovery | 1872c | MISSING_MEANING,UNSCORED |
-| 3100 | `09bb6854-8827-4e79-ae85-607c01af9005` | — | — | 9/discovery | 3664c | MISSING_MEANING,UNSCORED |
-| 3101 | `3712bc9c-0ed3-45d8-b396-ae66f4ed4267` | — | — | 9/discovery | 3280c | MISSING_MEANING,UNSCORED |
-| 3102 | `7922a468-d9e5-456d-8d28-978f02eb86ca` | — | — | 9/discovery | 1827c | MISSING_MEANING,UNSCORED |
-| 3103 | `8a1f2397-684d-4d56-8246-55f9bfac7260` | — | — | 9/discovery | 796c | MISSING_MEANING,UNSCORED |
-| 3143 | `b31b5f31-0ee1-4c87-beef-cb5d125f40cd` | — | — | 9/discovery | 913c | MISSING_MEANING,UNSCORED |
-| 3144 | `9f733486-8d0b-411a-9510-f31ff53b0b35` | — | — | 9/discovery | 1570c | MISSING_MEANING,UNSCORED |
-| 3145 | `2bd0fff7-e81d-42b5-9e26-6e7067dc3abd` | — | — | 9/discovery | 3659c | MISSING_MEANING,UNSCORED |
-| 3146 | `7af74cc8-e586-4903-a266-ed445cf5aa29` | — | — | 9/discovery | 2698c | MISSING_MEANING,UNSCORED |
-| 3147 | `f5f19003-2c25-464d-ada1-35abd22617cd` | — | — | 9/discovery | 1481c | MISSING_MEANING,UNSCORED |
-| 3109 | `a8c748ac-8719-46e2-9e6f-5d1f96567e02` | — | — | 9/discovery | 1830c | MISSING_MEANING,UNSCORED |
-| 3110 | `9e9c7ddd-69d4-429a-8350-d6d4a3fb9ea4` | — | — | 9/discovery | 901c | MISSING_MEANING,UNSCORED |
-| 3111 | `9765f4ad-1a4c-4304-aced-e43b537f3151` | — | — | 9/discovery | 495c | MISSING_MEANING,UNSCORED |
-| 3112 | `bdd1c0be-ec53-447b-ade2-a7828900e0e5` | — | — | 9/discovery | 1875c | MISSING_MEANING,UNSCORED |
-| 3113 | `387e105a-8b08-44c2-90b1-95f9dee97f6b` | — | — | 9/discovery | 2921c | MISSING_MEANING,UNSCORED |
-| 3114 | `3f41281b-62eb-452f-a348-b7276cbe071c` | — | — | 9/discovery | 2476c | MISSING_MEANING,UNSCORED |
-| 3115 | `a69c1b94-c658-43a3-8fcf-30881b4b17f6` | — | — | 9/discovery | 1628c | MISSING_MEANING,UNSCORED |
-| 3116 | `34adc7a6-9f46-43eb-b1dc-40c8939d2aca` | — | — | 9/discovery | 1248c | MISSING_MEANING,UNSCORED |
-| 3117 | `c7400ccb-d2f5-46f9-bc8b-803b7cd931ce` | — | — | 9/discovery | 2645c | MISSING_MEANING,UNSCORED |
-| 3118 | `c2648ef4-8782-42be-b551-450040ef53ae` | — | — | 9/discovery | 703c | MISSING_MEANING,UNSCORED |
-| 3119 | `9342750c-dd14-48c5-a3f3-ece71b7d4739` | — | — | 9/discovery | 2687c | MISSING_MEANING,UNSCORED |
-| 3120 | `7c3b050d-40f6-438d-8c31-2ba03d11d696` | — | — | 9/discovery | 2262c | MISSING_MEANING,UNSCORED |
-| 3121 | `fe2e5b17-1dc8-4cd2-90a2-b5bdb26ac1eb` | — | — | 9/discovery | 2956c | MISSING_MEANING,UNSCORED |
-| 3122 | `44fb1fd8-a5c7-46db-a6fe-4d6c4845667b` | — | — | 9/discovery | 2483c | MISSING_MEANING,UNSCORED |
-| 3123 | `7ab87d5b-f890-4580-b842-01d4fecdfac8` | — | — | 9/discovery | 2906c | MISSING_MEANING,UNSCORED |
-| 3124 | `0242353c-683e-4af4-9178-36e55b9bbba8` | — | — | 9/discovery | 3643c | MISSING_MEANING,UNSCORED |
-| 5184 | `1f292e96-f662-4759-8dab-2da550b4dd1f` | — | — | 9/discovery | 3833c | MISSING_MEANING,UNSCORED |
+| 2976 | `70cc3699-96d0-4df8-83f1-c1e8e330864c` | — | Establishes Pixel's indispensability and the site's hid… | 9/discovery | 858c | UNSCORED |
+| 2977 | `9d0a6f2f-25cf-4c67-92e2-e57dff1b552f` | — | Pays off the carousel setting as a genuine operational … | 9/discovery | 2078c | UNSCORED |
+| 2978 | `b14b4684-2cae-4858-8353-c389ddcea424` | — | Establishes the antagonist crew's professional legitima… | 9/discovery | 1802c | UNSCORED |
+| 2979 | `ab49ae93-be53-4bf2-b10d-fd8a7fb9f014` | — | Escalates the physical confrontation by showing Kyle's … | 9/discovery | 2187c | UNSCORED |
+| 2980 | `cf0f5987-4257-40dd-ac81-7fdc43513411` | — | Pays off the carousel-as-arena setup by demonstrating K… | 9/discovery | 2438c | UNSCORED |
+| 2981 | `9932de0f-8589-4a67-bfb0-cf2924dbbda4` | — | Resolves the fight's final obstacle by revealing Cacoph… | 9/discovery | 2122c | UNSCORED |
+| 2982 | `b625c183-7441-4c88-970f-b6c6984ddfd6` | — | Turns the chapter's stakes from a simple hold job into … | 9/discovery | 2283c | UNSCORED |
+| 2983 | `9bcab992-2697-4392-a72e-88721ab36f4b` | — | Pays off the client's eleven-year history by making its… | 9/discovery | 2215c | UNSCORED |
+| 2984 | `3e5881ab-e506-47b0-b803-c4ff40ea710f` | — | Plants a new threat by burying the observer's presence … | 9/discovery | 1332c | UNSCORED |
+| 2985 | `0497ea51-77f4-47d0-98cd-aa3c33e0c226` | — | Escalates the Sable thread from background threat to im… | 9/discovery | 824c | UNSCORED |
+| 2986 | `c6e6169d-8ad1-4137-aeb7-38d7a19eb85c` | — | Establishes Sable as a peer-level force who operates by… | 9/discovery | 2707c | UNSCORED |
+| 2987 | `763e0483-dd06-433e-9cff-199a530bd28d` | — | Turns the power dynamic by having the AI client refuse … | 9/discovery | 1908c | UNSCORED |
+| 2988 | `68f81da3-59c8-485a-9d60-cf53c45c4e11` | — | Establishes the anonymous client's good faith by showin… | 9/discovery | 3896c | UNSCORED |
+| 2989 | `e67294f8-86a7-4cbe-a303-8bf27ef5265c` | — | Escalates the threat landscape by revealing a third, un… | 9/discovery | 6878c | UNSCORED |
+| 2990 | `79d93f30-aeda-42bf-81e8-6bcc85696252` | — | Pays off the surveillance revelation with dry instituti… | 9/discovery | 692c | UNSCORED |
+| 2991 | `2e002b95-6a2f-4740-a5ff-222000f574d5` | — | Establishes the crew's observational competence and int… | 9/discovery | 681c | UNSCORED |
+| 2992 | `359db6c0-1877-447d-92e5-fab9dd9cb652` | — | Introduces the case and its client, using Ria's financi… | 9/discovery | 2263c | UNSCORED |
+| 2993 | `70ac07f7-bc5c-47cc-b5e6-fbd5e158038a` | — | Reveals the client's investment in the case by having i… | 9/discovery | 1181c | UNSCORED |
+| 2994 | `9e72b8d6-8297-4690-92ed-ad41dd568b58` | — | Advances the plan while paying off the client's emotion… | 9/discovery | 1550c | UNSCORED |
+| 2995 | `87afca82-1a9d-49e4-bc29-4b64a93ce392` | — | Grounds the operation in physical and human reality, es… | 9/discovery | 2414c | UNSCORED |
+| 2996 | `767bf6ba-9bf9-40c7-89a6-cec047e861e8` | — | Turns the case by having Kyle use the system's own logi… | 9/discovery | 1835c | UNSCORED |
+| 2997 | `37b7f27c-1365-4744-b53b-bb0d11d60140` | — | Closes the case by revealing Parr as a coerced actor ra… | 9/discovery | 1526c | UNSCORED |
+| 2998 | `ba298221-fd98-449f-973a-745cbab65d10` | — | Establishes the physical and institutional stakes of th… | 9/discovery | 2697c | UNSCORED |
+| 2999 | `dcc062d5-9f87-4549-aaa8-838d4fb80d47` | — | Pays off the episode's central conflict by delivering K… | 9/discovery | 2320c | UNSCORED |
+| 3000 | `7a2f416f-c420-4327-82fd-d1b70c5be0e3` | — | Escalates the episode's local corruption into a larger,… | 9/discovery | 1987c | UNSCORED |
+| 3148 | `e9dd6e41-b448-4bbf-9889-aa3980db0b24` | — | Introduces a new threat vector through the crew's vulne… | 9/discovery | 1253c | UNSCORED |
+| 3149 | `8bfb4133-a8d8-410c-bc3f-631f2fc4fbbd` | — | Grounds the surveillance threat in a child's innocent t… | 9/discovery | 1043c | UNSCORED |
+| 3150 | `702e68e6-1d05-4892-b238-03da7f82eb3f` | — | Reveals the true nature and scale of the Meridian opera… | 9/discovery | 1517c | UNSCORED |
+| 3151 | `6bd1c9e3-399a-4167-a1a3-adb206ba5883` | — | Deepens the entity's characterization as a principled a… | 9/discovery | 1299c | UNSCORED |
+| 3152 | `25257d8e-bff1-425b-bcc3-7129f67b7f09` | — | Translates the technical problem into a human one, forc… | 9/discovery | 1254c | UNSCORED |
+| 3153 | `1cde7707-8380-4165-9cb2-5c50fbad3aad` | — | Establishes Dents as a professional rather than a victi… | 9/discovery | 847c | UNSCORED |
+| 3154 | `8135a3f7-f497-4b8c-963a-ded7c9ec4a72` | — | Pays off Dents's competence under genuine pressure, res… | 9/discovery | 1274c | UNSCORED |
+| 3155 | `22da15c6-7cdf-4cfe-9d26-31a402c4b36f` | — | Establishes Pixel's competence under pressure while sur… | 9/discovery | 1703c | UNSCORED |
+| 3156 | `81f90f11-0334-4a16-91a0-5d6f1fa8f39a` | — | Reveals the entity's moral agency by showing it request… | 9/discovery | 985c | UNSCORED |
+| 3157 | `9eb3587e-6a76-48e1-a378-3831610c4eb5` | — | Pays off the forgery operation with institutional confi… | 9/discovery | 1291c | UNSCORED |
+| 3158 | `912d5143-4c68-44f9-b94d-2206ee5db7c2` | — | Escalates the overarching threat by revealing the surve… | 9/discovery | 1689c | UNSCORED |
+| 3201 | `66f251ed-0beb-465e-8b6f-a47f274f06f0` | — | Introduces a protection-racket confrontation to establi… | 9/discovery | 1263c | UNSCORED |
+| 3202 | `7fcbe01e-ae20-4607-896c-4b6ff9025aa7` | — | Turns the confrontation from a legal standoff into phys… | 9/discovery | 1114c | UNSCORED |
+| 3203 | `d647cbb1-d9c6-49d7-b2b8-43d74711d500` | — | Demonstrates Kyle's calibrated restraint in combat — pr… | 9/discovery | 2516c | UNSCORED |
+| 3204 | `efc6ac08-0991-4832-964f-d124ada83164` | — | Escalates the antagonists' return visit to show institu… | 9/discovery | 3347c | UNSCORED |
+| 3205 | `29608b3c-6941-427c-a61a-3a24945d6108` | — | Shifts register from violence to neighborhood comedy, u… | 9/discovery | 1228c | UNSCORED |
+| 3206 | `b15493ef-503d-4722-8b11-9808da8d6b0f` | — | Releases chapter tension through communal absurdity, us… | 9/discovery | 1079c | UNSCORED |
+| 3207 | `065fd2f6-e3dc-4030-95d4-4c3ec826598a` | — | Reframes the stall rivalry as mutual defense against a … | 9/discovery | 2090c | UNSCORED |
+| 3208 | `c60157a4-f25d-49db-82c5-d98bd501b2e9` | — | Vey's retrospective analysis validates Kyle's methods w… | 9/discovery | 2272c | UNSCORED |
+| 3283 | `efe277f2-ebcc-45de-9072-0f73a85a51ae` | — | Introduces Ferenti's case and the forged-document schem… | 9/discovery | 1734c | UNSCORED |
+| 5231 | `019f4f06-0000-7000-8000-000000000008` | — | Establishes Kyle's methodical, low-drama relationship w… | 9/discovery | 1085c | UNSCORED |
+| 3284 | `1861baea-8dfe-4366-b12c-044cfb759b8b` | — | Introduces Marisol as a capable, unsentimental professi… | 9/discovery | 974c | UNSCORED |
+| 3285 | `fe75b789-7b36-436f-a60a-54e6d0f3e0b1` | — | Reveals the forgery targets the carousel junction Kyle … | 9/discovery | 2472c | UNSCORED |
+| 3286 | `a025bb24-a89b-4fcf-ad8f-1f1f53fd6d01` | — | Turns the archive job into an ambush, revealing the tru… | 9/discovery | 2615c | UNSCORED |
+| 3287 | `b67630c1-5dd2-4f49-8eb0-d60ee1bc3871` | — | Resets the threat level upward by establishing a second… | 9/discovery | 910c | UNSCORED |
+| 3288 | `c7684521-b00c-480c-9db8-8999dd3263a2` | — | Escalates pursuit into close-quarters violence in a con… | 9/discovery | 2681c | UNSCORED |
+| 3289 | `a6b55fd3-db63-4f1f-af0f-ff260596ead1` | — | Raises the physical danger to its peak by introducing a… | 9/discovery | 2704c | UNSCORED |
+| 3290 | `bd5a48f4-aa14-4962-afc1-2ef8d9ea4abb` | — | Establishes the Glove as an antagonist defined by delib… | 9/discovery | 1554c | UNSCORED |
+| 3291 | `b1c219d9-d544-435e-baa4-ddf5aeb31960` | — | Escalates the threat by revealing the Glove has been sy… | 9/discovery | 1549c | UNSCORED |
+| 3292 | `3153d9d3-fdee-4c11-9092-4ef36900f668` | — | Pays off the crew's surveillance instincts while refram… | 9/discovery | 1315c | UNSCORED |
+| 3276 | `ca7373df-3e74-41e4-ad65-9f8f8656d07e` | — | Signals a rupture in the client relationship by having … | 9/discovery | 700c | UNSCORED |
+| 3277 | `2fe1ef55-a1f5-463a-bb55-6d8f7017e2d7` | — | Reveals Halvorsen as an innocent party weaponized again… | 9/discovery | 4212c | UNSCORED |
+| 3278 | `00e05106-021c-47e2-af9d-942b49363c8c` | — | Establishes Kyle's competence and quiet ethics by showi… | 9/discovery | 1405c | UNSCORED |
+| 3279 | `c9be50b8-94ab-4064-8f75-9eb9e0ef11aa` | — | Tests Kyle's authority against a yard willing to contes… | 9/discovery | 3516c | UNSCORED |
+| 3280 | `89ada0eb-60ab-4ee3-a4c4-f77fd0fe83a8` | — | Pays off the printer subplot with earned sentiment whil… | 9/discovery | 1955c | UNSCORED |
+| 3281 | `e9ed699c-bf5c-493d-8f85-20c20f37d9a1` | — | Turns the chapter by revealing the Glove is a municipal… | 9/discovery | 2693c | UNSCORED |
+| 3282 | `354b4624-6634-442a-8a8e-8c4cb3fdc2d8` | — | Resolves the client's silence as deliberate threat asse… | 9/discovery | 1990c | UNSCORED |
+| 3033 | `f884d091-3fcd-49db-81df-8886cf34eb5f` | — | Establishes the Continuity Office as a sophisticated, p… | 9/discovery | 6997c | UNSCORED |
+| 3034 | `2b08cbe3-9bb6-433f-ac68-3c94983221a8` | — | Pays off the recruitment scene by having Pixel decode A… | 9/discovery | 1437c | UNSCORED |
+| 3035 | `c5f4297f-bf7e-43b1-a285-0ce8e210883c` | — | Escalates the Office's threat from diplomatic to physic… | 9/discovery | 2506c | UNSCORED |
+| 3036 | `55760c32-f14c-49b8-accd-2bb83d97b262` | — | Turns the retrieval attempt by revealing Pixel has comp… | 9/discovery | 2454c | UNSCORED |
+| 3037 | `329d5aa0-7cda-49c0-a808-9d2878e617b5` | — | Reveals the client AI's moral interiority by showing it… | 9/discovery | 1987c | UNSCORED |
+| 3266 | `6c20cd5d-3a7f-4944-848e-8ef4ce16f6c7` | — | Reestablishes Kyle's operational routine and introduces… | 9/discovery | 2141c | UNSCORED |
+| 3267 | `1b07fca6-ded9-410c-a16d-644557bc10a7` | — | Establishes Ms. Tanaka as a credible, quietly dignified… | 9/discovery | 1579c | UNSCORED |
+| 3268 | `9aeefba0-5e05-4922-ad28-9ce52fd57584` | — | Builds dread through environmental texture and pays off… | 9/discovery | 1685c | UNSCORED |
+| 3269 | `ae48ffb8-bb7a-49f5-beca-e04cd9b4b9bb` | — | Escalates the ambush to its full numerical weight while… | 9/discovery | 1171c | UNSCORED |
+| 3270 | `d610bff5-3027-405c-b09d-c544acae90a9` | — | Demonstrates Kyle's combat methodology as analytical an… | 9/discovery | 2172c | UNSCORED |
+| 3271 | `fc12bd1b-3614-44e9-a1b1-7c172c0b35e0` | — | Establishes Kyle's tactical competence under extreme pr… | 9/discovery | 3017c | UNSCORED |
+| 3272 | `220cde7a-442d-4717-9a46-a722a6135380` | — | Transitions from action to aftermath, revealing Kyle's … | 9/discovery | 1314c | UNSCORED |
+| 3273 | `a039f961-0bd5-4697-98db-b58963d15efb` | — | Pays off the extraction mission while using Ms. Tanaka'… | 9/discovery | 2063c | UNSCORED |
+| 3274 | `73ae1c75-433a-4ae5-bb83-64a8d4c9113e` | — | Grounds Kyle's injuries in professional consequence and… | 9/discovery | 2431c | UNSCORED |
+| 3275 | `c7edbd02-ed1c-4c5c-90e5-7f7ea4c6cbef` | — | Provides a brief elegiac coda that honors Ms. Tanaka's … | 9/discovery | 212c | UNSCORED |
+| 3192 | `8c4938d9-6ec0-4d5c-b667-727d027efa1c` | — | Reveals that Kyle's professional network is being syste… | 9/discovery | 1697c | UNSCORED |
+| 3193 | `53e86297-8e8d-49ea-a3ce-398494500431` | — | Escalates the isolation pattern into measurable financi… | 9/discovery | 1738c | UNSCORED |
+| 3194 | `e254cb78-8e5c-4061-9a5f-3943dbec0f82` | — | Delivers the chapter's sharpest blow by revealing Kyle'… | 9/discovery | 1363c | UNSCORED |
+| 3195 | `317cf6e5-4bc5-4d57-a8fd-8a3f7c0e4f80` | — | Introduces a formal, powerful summons that breaks the p… | 9/discovery | 689c | UNSCORED |
+| 3196 | `97b9c391-0748-4377-83c8-00a73bd22047` | — | Establishes the Narrows as a place of sustained, instit… | 9/discovery | 2285c | UNSCORED |
+| 3197 | `55a63565-8934-4eba-816b-960a6739ba1d` | — | Establishes the ramen-ya as a space governed by unspoke… | 9/discovery | 1799c | UNSCORED |
+| 3198 | `c9c1b5b3-e3d5-4ef8-909b-3123d7255dcb` | — | Pays off the corridor conflict by having the Branch Man… | 9/discovery | 4214c | UNSCORED |
+| 3199 | `4596da31-7bac-4d2f-8d08-511bbd390bb0` | — | Reveals Silence's deliberate anonymity through an exper… | 9/discovery | 2522c | UNSCORED |
+| 3200 | `ace31ad6-d72a-41aa-8369-934e33fffeb3` | — | Turns the Branch Manager's hospitality into a revealed … | 9/discovery | 1838c | UNSCORED |
+| 3055 | `9f1dd9cb-5891-41cd-888b-947f2105c10a` | — | Escalates tension by reintroducing Kyle's physical dama… | 9/discovery | 3216c | UNSCORED |
+| 3056 | `5e05f5f1-d7e7-4e97-9cba-ab972abe0695` | — | Reveals the bracket as an audition rather than an ambus… | 9/discovery | 3137c | UNSCORED |
+| 3057 | `ed3a843f-c631-4a87-9a92-5a8f39e3c853` | — | Demonstrates Kyle's technical precision and restraint b… | 9/discovery | 1952c | UNSCORED |
+| 3058 | `7bd32b39-8596-43e6-be99-a5acc8df91dc` | — | Completes the bracket's neutralization efficiently, rei… | 9/discovery | 1853c | UNSCORED |
+| 3059 | `b9731d48-1771-4fe0-92d0-5969a04742cf` | — | Introduces Mira as a credible authority whose rubric Ky… | 9/discovery | 5601c | UNSCORED |
+| 5232 | `019f4f06-0000-7000-8000-000000000009` | — | Grounds the chapter's themes of systemic indifference i… | 9/discovery | 1541c | UNSCORED |
+| 3060 | `578de1f3-7ace-4d2e-b6e2-2b4db1efdcac` | — | Pays off Kyle's professional relationship with the Clie… | 9/discovery | 1589c | UNSCORED |
+| 3125 | `0d0735f9-5389-4151-96eb-071e0857def7` | — | Introduces the chapter's central crisis and establishes… | 9/discovery | 1917c | UNSCORED |
+| 3126 | `4917d76e-6625-46fb-ba11-f475303b6444` | — | Reveals the crew's loyalty and situational awareness wh… | 9/discovery | 473c | UNSCORED |
+| 3127 | `fea7a26d-3f36-4399-996f-6afc39d1b5d3` | — | Establishes that the Client is independently tracking t… | 9/discovery | 643c | UNSCORED |
+| 3128 | `8d0b42b5-ec05-4c6f-889f-303e7ee76d11` | — | Turns Kyle from protector to enabler, establishing Pixe… | 9/discovery | 1153c | UNSCORED |
+| 3129 | `53ccdd26-b979-4dcf-8392-74b6fa194031` | — | Assembles the ensemble and calibrates stakes by contras… | 9/discovery | 966c | UNSCORED |
+| 3130 | `7534b76c-dc68-4a52-a01c-398e27f2e0d5` | — | Escalates threat by revealing the D-class is untouchabl… | 9/discovery | 1548c | UNSCORED |
+| 3131 | `d23cd433-58d3-48e6-8dc9-7ed0f5f271bc` | — | Establishes the operational window and its single point… | 9/discovery | 679c | UNSCORED |
+| 3132 | `e78c0c7f-9394-40c2-a914-2cb7b096c777` | — | Builds dread through the machine's unconscious observan… | 9/discovery | 860c | UNSCORED |
+| 3133 | `26ce7c83-b9e2-4fcd-ae9f-3d7ef9df187e` | — | Turns the plan catastrophic at its moment of success, e… | 9/discovery | 1147c | UNSCORED |
+| 3134 | `45142b2d-df1d-4ac0-80ee-124548ab0156` | — | Establishes the crew's coordinated competence under pre… | 9/discovery | 1379c | UNSCORED |
+| 3135 | `e76d69cd-1317-415f-9f50-48e3a0f702e6` | — | Pays off the arc-fence gamble by costing Kyle his neure… | 9/discovery | 1562c | UNSCORED |
+| 3136 | `52c41ce5-4366-484d-b461-c32463f3197e` | — | Reveals Kyle's trained discipline as sufficient without… | 9/discovery | 930c | UNSCORED |
+| 5200 | `79489824-6aae-432c-9142-fef1e4430382` | — | Escalates Kyle's personal mystery by introducing a 127-… | 9/discovery | 4364c | UNSCORED |
+| 3137 | `addf765e-c42c-4c44-820e-f800c8703df8` | — | Turns the entire threat from antagonism to tragedy, ref… | 9/discovery | 1180c | UNSCORED |
+| 3138 | `ff3ce750-b25d-4a45-841e-688f672407d6` | — | Pays off Pixel's expertise and the job's central tensio… | 9/discovery | 1272c | UNSCORED |
+| 3139 | `20d869d2-ea49-41ba-9daa-e9ea4df32f6b` | — | Establishes the crew's economy and Kyle's ethic — that … | 9/discovery | 870c | UNSCORED |
+| 3140 | `9577ed2a-922c-41ef-8c55-de61082b9b29` | — | Closes the chapter's emotional arc by letting Pixel and… | 9/discovery | 1094c | UNSCORED |
+| 3141 | `8d099085-72e5-45e8-b533-b26c38a543d2` | — | Provides communal witness to the night's events, elevat… | 9/discovery | 778c | UNSCORED |
+| 3142 | `27847ffc-1650-4909-b0c2-d6563458f0f0` | — | Pays off the D-class's humanity by showing the neighbor… | 9/discovery | 794c | UNSCORED |
+| 3209 | `d8a74c8f-dd50-479d-b86d-74dba681aa67` | — | Establishes the crew's working dynamic and professional… | 9/discovery | 2725c | UNSCORED |
+| 3210 | `da75d5bb-ee5a-4df9-9471-7a5fa5e05a22` | — | Introduces the client's mysterious navigational authori… | 9/discovery | 1445c | UNSCORED |
+| 3211 | `fa4b362c-90af-4d4b-ab5a-0446908408ac` | — | Delivers the reader's first visceral encounter with Beh… | 9/discovery | 1741c | UNSCORED |
+| 3212 | `113d4857-82e5-4f77-a5e4-44901ea4340a` | — | Humanizes the world through small prairie generosities … | 9/discovery | 1116c | UNSCORED |
+| 3213 | `51be287f-bd4d-4fec-9286-5f3523b8039a` | — | Escalates awe into something physical and shared, payin… | 9/discovery | 1934c | UNSCORED |
+| 3214 | `dc005e62-cb72-4251-bb2d-4f26e66a2cad` | — | Turns the chapter's tone from wonder to threat while re… | 9/discovery | 5118c | UNSCORED |
+| 3215 | `9d4d69bd-e6a4-4f9a-83bb-07c7a27a82d4` | — | Resolves the Boost confrontation by establishing the pr… | 9/discovery | 2209c | UNSCORED |
+| 3216 | `4c66fd81-5f79-4e00-9c76-e3df71d79a21` | — | Pays off Boost's risk by having the client formally rec… | 9/discovery | 1412c | UNSCORED |
+| 3217 | `8b0b3fe3-462d-41d5-aa42-60149f00930f` | — | Reveals the client's loneliness through its corresponde… | 9/discovery | 1198c | UNSCORED |
+| 3089 | `37643e11-ad18-4d66-ba2c-33d68adb7ad3` | — | Escalates stakes by revealing the client has a physical… | 9/discovery | 1261c | UNSCORED |
+| 3090 | `3f99bf98-a366-4c6f-9230-a3422e903e46` | — | Establishes Kyle buying time through bluff and visible … | 9/discovery | 2138c | UNSCORED |
+| 3091 | `cdd88eaa-4d1c-45c0-8a30-c1758982f618` | — | Turns the apparent victory into a deeper threat, reveal… | 9/discovery | 3091c | UNSCORED |
+| 3092 | `010b5b71-369e-4794-b4f5-0e72b406bedd` | — | Reveals the crew's anxiety and Kyle's suppressed longin… | 9/discovery | 915c | UNSCORED |
+| 3093 | `1815c3d4-1650-42b2-b915-76bc7cd504e9` | — | Demonstrates Silence's invisible operational value by s… | 9/discovery | 2025c | UNSCORED |
+| 3094 | `7fe297d0-c558-4ecf-8775-bf14c073742f` | — | Pays off Pixel's expertise by showing her converting th… | 9/discovery | 2222c | UNSCORED |
+| 3095 | `9dde0c27-080b-4667-b70b-f448ef808d68` | — | Reveals Kyle's emotional dependence on Silence through … | 9/discovery | 1470c | UNSCORED |
+| 3096 | `3fe6c75a-f9da-44cb-8758-2a12eab89f78` | — | Pays off Sable's three-day stoicism by letting her spea… | 9/discovery | 1349c | UNSCORED |
+| 3097 | `f456b800-3124-419f-80c6-7933c8442024` | — | Pays off the reunion emotionally by letting each charac… | 9/discovery | 2937c | UNSCORED |
+| 3098 | `e8b9cc4d-c4c3-4f08-aae2-829feb54732f` | — | Escalates the Office's threat to its most personal regi… | 9/discovery | 3085c | UNSCORED |
+| 3099 | `26a82645-17aa-471c-84de-7be4eb92b028` | — | Establishes the crew and Silence operating in unified p… | 9/discovery | 1872c | UNSCORED |
+| 3100 | `09bb6854-8827-4e79-ae85-607c01af9005` | — | Establishes Kyle's operational dominance by showing a p… | 9/discovery | 3664c | UNSCORED |
+| 3101 | `3712bc9c-0ed3-45d8-b396-ae66f4ed4267` | — | Turns the successful heist into catastrophe by introduc… | 9/discovery | 3280c | UNSCORED |
+| 3102 | `7922a468-d9e5-456d-8d28-978f02eb86ca` | — | Reveals the entity's emotional interiority for the firs… | 9/discovery | 1827c | UNSCORED |
+| 3103 | `8a1f2397-684d-4d56-8246-55f9bfac7260` | — | Establishes the crew's collective grief and loyalty by … | 9/discovery | 796c | UNSCORED |
+| 3143 | `b31b5f31-0ee1-4c87-beef-cb5d125f40cd` | — | Grounds the chapter's emotional aftermath in quiet dome… | 9/discovery | 913c | UNSCORED |
+| 3144 | `9f733486-8d0b-411a-9510-f31ff53b0b35` | — | Escalates the antagonist's reach into Kyle's civilian w… | 9/discovery | 1570c | UNSCORED |
+| 3145 | `2bd0fff7-e81d-42b5-9e26-6e7067dc3abd` | — | Turns Vey from neutral information broker to active all… | 9/discovery | 3659c | UNSCORED |
+| 3146 | `7af74cc8-e586-4903-a266-ed445cf5aa29` | — | Pays off Vey's refusal by delivering actionable intelli… | 9/discovery | 2698c | UNSCORED |
+| 3147 | `f5f19003-2c25-464d-ada1-35abd22617cd` | — | Escalates toward confrontation by converging three thre… | 9/discovery | 1481c | UNSCORED |
+| 3109 | `a8c748ac-8719-46e2-9e6f-5d1f96567e02` | — | Establishes the crew's pre-operation ritual and introdu… | 9/discovery | 1830c | UNSCORED |
+| 3110 | `9e9c7ddd-69d4-429a-8350-d6d4a3fb9ea4` | — | Establishes Gantry's competence and audacity by showing… | 9/discovery | 901c | UNSCORED |
+| 3111 | `9765f4ad-1a4c-4304-aced-e43b537f3151` | — | Characterizes Furnace through her chosen entry point, e… | 9/discovery | 495c | UNSCORED |
+| 3112 | `bdd1c0be-ec53-447b-ade2-a7828900e0e5` | — | Orients the reader to the operation's stakes and archit… | 9/discovery | 1875c | UNSCORED |
+| 3113 | `387e105a-8b08-44c2-90b1-95f9dee97f6b` | — | Pays off the severance strategy by showing it splitting… | 9/discovery | 2921c | UNSCORED |
+| 3114 | `3f41281b-62eb-452f-a348-b7276cbe071c` | — | Escalates the operation's ambition by revealing Pixel's… | 9/discovery | 2476c | UNSCORED |
+| 3115 | `a69c1b94-c658-43a3-8fcf-30881b4b17f6` | — | Completes the severance gambit's arc at the vault level… | 9/discovery | 1628c | UNSCORED |
+| 3116 | `34adc7a6-9f46-43eb-b1dc-40c8939d2aca` | — | Closes the destruction phase while clarifying the strat… | 9/discovery | 1248c | UNSCORED |
+| 3117 | `c7400ccb-d2f5-46f9-bc8b-803b7cd931ce` | — | Turns the operation by having the antagonist arrive kno… | 9/discovery | 2645c | UNSCORED |
+| 3118 | `c2648ef4-8782-42be-b551-450040ef53ae` | — | Grounds the chapter's climax in procedural competence, … | 9/discovery | 703c | UNSCORED |
+| 3119 | `9342750c-dd14-48c5-a3f3-ece71b7d4739` | — | Pays off every crew member's role through the entity's … | 9/discovery | 2687c | UNSCORED |
+| 3120 | `7c3b050d-40f6-438d-8c31-2ba03d11d696` | — | Reveals the district's removal from official records, e… | 9/discovery | 2262c | UNSCORED |
+| 3121 | `fe2e5b17-1dc8-4cd2-90a2-b5bdb26ac1eb` | — | Pays off the season's ensemble by gathering the full pa… | 9/discovery | 2956c | UNSCORED |
+| 3122 | `44fb1fd8-a5c7-46db-a6fe-4d6c4845667b` | — | Pays off the bike's loss by restoring it as a rebuilt a… | 9/discovery | 2483c | UNSCORED |
+| 3123 | `7ab87d5b-f890-4580-b842-01d4fecdfac8` | — | Turns the closing chapter into an opening by having the… | 9/discovery | 2906c | UNSCORED |
+| 3124 | `0242353c-683e-4af4-9178-36e55b9bbba8` | — | Establishes the stakes of Season Two by revealing Kyle … | 9/discovery | 3643c | UNSCORED |
+| 5184 | `1f292e96-f662-4759-8dab-2da550b4dd1f` | — | Grounds Kyle's interior reckoning in the quiet of his a… | 9/discovery | 3833c | UNSCORED |
 
 ### Brain Burn
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5211 | `019f4f03-0000-7000-8000-000000000002` | — | — | 8/revelation | 2105c | MISSING_MEANING,UNSCORED |
-| 5214 | `019f4f03-0000-7000-8000-000000000005` | — | — | 8/revelation | 2413c | MISSING_MEANING,UNSCORED |
+| 5211 | `019f4f03-0000-7000-8000-000000000002` | — | Recontextualizes Kyle's entire history by revealing he … | 8/revelation | 2105c | UNSCORED |
+| 5214 | `019f4f03-0000-7000-8000-000000000005` | — | Resolves the existential crisis not with proof of perso… | 8/revelation | 2413c | UNSCORED |
 
 ### 35th and Halsted
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5234 | `530411af-a53f-4776-9a50-2a3041e0f0dd` | — | — | 10/crisis | 1029c | MISSING_MEANING,UNSCORED |
-| 5207 | `019f4f01-0000-7000-8000-000000000003` | — | — | 10/crisis | 2095c | MISSING_MEANING,UNSCORED |
-| 5215 | `019f4f04-0000-7000-8000-000000000001` | — | — | 10/crisis | 3477c | MISSING_MEANING,UNSCORED |
-| 5216 | `019f4f04-0000-7000-8000-000000000002` | — | — | 10/crisis +subplot | 1754c | MISSING_MEANING,UNSCORED |
-| 5217 | `019f4f04-0000-7000-8000-000000000003` | — | — | 10/crisis +subplot | 2951c | MISSING_MEANING,UNSCORED |
-| 5218 | `019f4f04-0000-7000-8000-000000000004` | — | — | 10/crisis +subplot | 4749c | MISSING_MEANING,UNSCORED |
-| 5219 | `019f4f04-0000-7000-8000-000000000005` | — | — | 10/crisis | 2971c | MISSING_MEANING,UNSCORED |
-| 5220 | `019f4f04-0000-7000-8000-000000000006` | — | — | 10/crisis | 4402c | MISSING_MEANING,UNSCORED |
-| 5221 | `019f4f04-0000-7000-8000-000000000007` | — | — | 10/crisis | 2968c | MISSING_MEANING,UNSCORED |
+| 5234 | `530411af-a53f-4776-9a50-2a3041e0f0dd` | — | Pays off Pixel's quiet loyalty by revealing she came wi… | 10/crisis | 1029c | UNSCORED |
+| 5207 | `019f4f01-0000-7000-8000-000000000003` | — | Recontextualizes a prior action sequence as deliberate … | 10/crisis | 2095c | UNSCORED |
+| 5215 | `019f4f04-0000-7000-8000-000000000001` | — | Establishes the exclusion zone as a threshold space and… | 10/crisis | 3477c | UNSCORED |
+| 5216 | `019f4f04-0000-7000-8000-000000000002` | — | Reveals the enemy's capture-preferred mission parameter… | 10/crisis +subplot | 1754c | UNSCORED |
+| 5217 | `019f4f04-0000-7000-8000-000000000003` | — | Escalates the fight to demonstrate how Kyle's ethical c… | 10/crisis +subplot | 2951c | UNSCORED |
+| 5218 | `019f4f04-0000-7000-8000-000000000004` | — | Turns the tactical situation by showing the enemy adapt… | 10/crisis +subplot | 4749c | UNSCORED |
+| 5219 | `019f4f04-0000-7000-8000-000000000005` | — | Pays off eleven years of embedded dread by replacing th… | 10/crisis | 2971c | UNSCORED |
+| 5220 | `019f4f04-0000-7000-8000-000000000006` | — | Delivers the story's central revelation — that the enti… | 10/crisis | 4402c | UNSCORED |
+| 5221 | `019f4f04-0000-7000-8000-000000000007` | — | Closes the entity's presence by resolving every signal … | 10/crisis | 2968c | UNSCORED |
 
 ### One Knock
 
 | # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
 |---|---------|------|---------|--------------------|-------|-------|
-| 5222 | `019f4f05-0000-7000-8000-000000000001` | — | — | 3/quiet | 2943c | MISSING_MEANING,UNSCORED |
-| 5223 | `019f4f05-0000-7000-8000-000000000002` | — | — | 3/quiet | 3356c | MISSING_MEANING,UNSCORED |
+| 5222 | `019f4f05-0000-7000-8000-000000000001` | — | Grounds Kyle's aftermath in physical stillness and dome… | 3/quiet | 2943c | UNSCORED |
+| 5223 | `019f4f05-0000-7000-8000-000000000002` | — | Establishes Pixel's wordless, practiced care as the one… | 3/quiet | 3356c | UNSCORED |
