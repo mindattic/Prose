@@ -48,10 +48,11 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
 **Three-act structure:**
 - **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Vierna (Rowe found) → Three Points
   The Relic is four days ahead. Act 1 ends at Three Points.
-- **Act 2** (~Ch.10–21): Three Points → Atrament (Kressida joins; Meridian stolen; Kressida pilots)
+- **Act 2** (~Ch.10–21): Three Points → Atrament → Sal Vento (the Eirene-7 is stolen; M-108
+  body-snatches its control-mind and flies it; melee covered by Wren once she joins at Pallor)
   → Calyx (war front; maneuver around skirmishes; no-colors engagement; blood from both sides)
   → Pallor / Caer Glas Moor (Blink Thieves intercepted; Esvane and Petra killed;
-  Wren blinks with the Relic; Wren returns and joins when Orim tells him what the Relic has seen)
+  Wren blinks with the Relic; Wren returns and joins when Orim tells her what the Relic has seen)
 - **Act 3** (~Ch.22–29): Eirene's Gate / The Pass → Sinter (climax) → return to Ocipheus
 
 Running east ahead of her: three thieves with the Oculus Memoriae, four days ahead,
@@ -95,18 +96,25 @@ Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a�
 
 ## 1. The Party {#SS-VIGL-1}
 
-Five members — assembled one per leg as Lyra crosses the continent east. Each shows the system
-at work on a different kind of person.
+**Four members** — a compact JRPG party assembled as Lyra crosses the continent east: **Tank**
+(Lyra), **Mage** (Orim), **Ranged DPS** (Soren Rowe), **Melee DPS** (Wren). Each shows the system
+at work on a different kind of person. *(Kressida Haun CUT 2026-07-14 — her "person-in-a-machine"
+niche is subsumed by M-108 the body-snatcher, who also now pilots/becomes the airship; melee DPS
+covered by Wren.)*
 
 | Character | House | Role | Age | Joins |
 |---|---|---|---|---|
 | Dame Lyra | Ocipheus (Templar) | Tank / POV | Early 30s | Start |
 | Orim Zebulun | Calyx-born, independent | Scry Mage | Late 60s | Start |
-| Soren Rowe / M-10882715 | Vierna (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS | Mind mid-30s | Vierna |
-| Kressida Haun | Atrament | Engineer / Pilot | Mid-20s | Schmalburg |
-| Wren Caerglas | Calyx (Loera-trained) | Rogue | 22 | Eastern plains |
+| Soren Rowe / M-10882715 | Vierna (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS / body-snatcher | Mind mid-30s | Vierna |
+| Wren Caerglas | Calyx (Loera-trained) | Melee DPS (Rogue / Blink); **female** | 22 | Pallor |
 
 ### Dame Lyra — POV {#SS-VIGL-1a}
+- **Full name:** Dame Lyra of Ocipheus (family name Athen-Moor). The surname is genealogical
+  record, not active address — nobody calls her "Dame Athen-Moor" — but it is how the Liturgy's
+  own registers list her and her sister, **Vega Athen-Moor**, the Liturgy Scribe. (Ardea Marten
+  is not a sister — she is a field-officer comrade who travels with the party and dies at
+  Schmalburg; the prose treats her as a colleague throughout. Only Vega is Lyra's sister.)
 - **Institutional affiliation:** The Liturgy — she is a **Templar**, not a House Knight.
   The Liturgy is the overarching institution (the Church, in rough analogy); the Houses are
   the nations. Templars serve the Liturgy's mission across House borders. Lyra is stationed
@@ -186,7 +194,7 @@ at work on a different kind of person.
   He can no longer say he did not hear it. What he does with that is open — but it does not
   change where they are going.
 - **Redemption shape:** Not dramatic. He does not save anyone in a single gesture. He finds
-  Wren alone in the field after the intercept and shows him the Sinter data — not because
+  Wren alone in the field after the intercept and shows her the Sinter data — not because
   the mission requires it, but because Wren is sitting there with the Relic and Orim is old
   enough to know what a person looks like when they need to be shown something rather than
   told. At Sinter, he presses the Rod for the third time in fifty years. He steps back and
@@ -333,7 +341,7 @@ at work on a different kind of person.
   a bayonet. He has never used the bayonet. He will.
 - **His military training:** Vierna service is real training layered on top of French service.
   He fights effectively when he does not understand the tactical situation. At Schmalburg he
-  shoots through a crossfire by reading terrain rather than orders. Kressida's respect comes
+  shoots through a crossfire by reading terrain rather than orders. The party's respect comes
   before he can explain himself. He cannot yet explain himself for weeks afterward.
 - **Arc:** He begins unable to speak. He ends with enough Cauld to give full testimony and to
   tell Lyra that his city is called Aldenvast. The testimony is the arc. The name is the gift.
@@ -355,8 +363,8 @@ scene establishes the atrocity that ripples through the rest of the book. Imager
   receptor opening on a grey Vierna muster-yard; a body that answers his intention a half-beat
   late and reports nothing back — no warmth, no ache, no breath. He tries to scream and the sound
   that comes out is not his.
-- **The naming.** The line of them, black and identical. *"M One Oh One Six Triple Eight. Step
-  forward."* He steps forward because the designation is the only thing in this world that is
+- **The naming.** The line of them, black and identical. *"M One Oh Eight Eight Two Seven One
+  Five. Step forward."* He steps forward because the designation is the only thing in this world that is
   unambiguously his, and he hates that it is.
 - **The airship / Turret #34.** The one action the flashback shows before the cut back to the
   fire: aboard a Vierna gunship crewed by Myrmidons at the turrets, he is **Turret #34**, and in
@@ -367,8 +375,7 @@ scene establishes the atrocity that ripples through the rest of the book. Imager
 
 **Delivery:** the reader gets the articulate 1919 man; the party gets a black automaton that can
 say two syllables. The gap is the point. **Ripple:** every later beat with a Vierna Myrmidon,
-every "death without cause" mentioned in passing, and every frame Kressida (a body fused to a
-machine) and Rowe (a mind without one) share, should carry this scene underneath without
+every "death without cause" mentioned in passing, should carry this scene underneath without
 restating it.
 
 #### Body-snatch setpieces — design menu (M-108's power across the book) {#SS-VIGL-1c-snatch}
@@ -377,10 +384,10 @@ The power earns its keep by escalating and by costing. Recommended deployment:
 
 1. **The reveal — Schmalburg raid (SK1300).** First time the party sees the overlooked little
    Myrmidon LEAP from his shell into a hulking Atrament war-chassis and become a monster — a
-   **steel grizzly with mantis scythes and a scorpion tail.** This is the beat Kressida joins;
-   the resonance lands hard — she is fused to ONE machine forever, he wears and discards many.
-   Her respect is earned here. First taste of **cost:** his inert little shell is left exposed
-   mid-jump; someone has to stand over it.
+   **steel grizzly with mantis scythes and a scorpion tail.** The reveal lands on its own — the
+   overlooked little unit becomes the most dangerous thing on the field, and the party has to
+   recalibrate what they've been traveling with. First taste of **cost:** his inert little shell
+   is left exposed mid-jump; someone has to stand over it.
 2. **Turn the mortar (a pinned-down beat — Calyx skirmish or Schmalburg).** The team is pinned by
    an enemy emplacement; M-108 jumps into the **mortar that is killing them** and it goes silent,
    or turns on its own line. Fast, tactical, quietly horrifying — the enemy's own iron, possessed.
@@ -399,124 +406,16 @@ The power earns its keep by escalating and by costing. Recommended deployment:
 **Escalation of the power:** hidden → reveal (grizzly) → tactical (mortar) → masterstroke
 (airship) → cost/loss → climactic choice. Never a free trick; every jump gambles the way home.
 
-### Kressida Haun — The Rig Pilot {#SS-VIGL-1d}
-- **House:** Atrament. Battle-rig pilot, BR-7 designation. Aeronaut. Deserter.
-- **Physical:** Small. Genuinely small — 5'2", the kind of body that requires a wheelchair
-  when the rig is unavailable. The cause is not a disease. It is an infusion. A Transmutation
-  infusion administered by Atrament's rig-pilot development program went wrong — the Catalyst
-  compound that was meant to enhance proprioception and reaction bonding instead degraded bone
-  density and skeletal integrity. She can bear her own weight for short transfers — doorways,
-  a few controlled steps. Sustained locomotion without assistance is not possible. Without the
-  rig she is fragile in the literal sense: delicate, deliberate, visibly requiring management.
-  Dark hair cut short on one side. She dresses like a dock worker: functional, worn, nothing
-  military. People instinctively move to protect her in a crowd. They are not wrong to read
-  her this way. They are simply missing the rig.
-- **The infusion history — what Transmutation costs:** Kressida is what a failed Transmutation
-  infusion looks like. The Catalyst bonded incorrectly; the bone-density degradation is
-  permanent. Atrament's solution was the rig — a suitable accommodation from an industrial
-  perspective. This is how they kept their best pilot. She has opinions about this framing
-  that she does not express in Atrament-adjacent company.
-- **The rig:** The BR-7 is 3m, purpose-built Atrament iron, reaction-plate armored. It is
-  the closest thing she has to a functional body at full capacity. Getting in is fifteen
-  seconds and a practiced set of transfers — she has done it ten thousand times; it is not
-  clumsy. Getting out is the same. She does not avoid getting out, but she does not get out
-  casually. When she is in the rig, she moves at its scale, carries its weapons, pilots the
-  Meridian. When she is not, she manages. The party learns the difference. She keeps it
-  fueled, maintained, and within reach at all times — not because she is precious about it,
-  but because at any moment she may need to be the rig instead of the woman who pilots it.
-- **The reveal:** The reveal runs in both directions. Getting IN: she has done this before —
-  small woman, apparent need, someone moves to protect her, then she reaches the rig and gets
-  inside, and fifteen seconds later the machine stands up and the someone who moved to help is
-  standing in the aftermath trying to reconcile what they thought with what they are looking at.
-  Getting OUT: after the fight, the rig opens, and the woman who climbs out is careful and
-  quiet and moves in the particular way of someone managing a body that requires management.
-  The party has just watched the rig do what it does. Now they are watching this. That is also
-  the reveal. The garrison break-out is where Lyra and Orim see the full sequence — both
-  directions — for the first time. It does not require comment.
-  **Wren experiences the IN-reveal from the other side of it**: the Meridian's approach and
-  the rig dropping onto his crew is the last thing he sees before he blinks. When he surfaces
-  from the blink and sees her climb out, he already knows what the rig can do. He has seen her
-  twice now and said nothing to her. She has not explained herself. Neither of them has yet.
-- **Register:** Atrament-practical. Short sentences. She applies Atrament's production-culture
-  frame to every situation including herself — not self-pity, not complaint, pure logistics.
-  "The problem with rig-scale weapons in a room this size is clearance. I'd go through two
-  walls. Let me come at it from the street." She is not the person you expect to say this.
-- **Weapons (in rig):** Primary — BR-7 Great Sword: a rig-scale two-handed blade, 2.4m
-  from cross-guard to point, Atrament forge steel, no taper — the same cross-section tip
-  to hilt, so the full mass is in every cut. Not a finesse weapon. The edge is dressed for
-  shearing, not thrusting. At full extension the arc clears a 3m radius; at short range
-  the pommel is a viable weapon in its own right. She can drive it two-handed overhead or
-  sweep one-handed low — the rig's arm torque is what makes the one-handed sweep possible;
-  a human arm couldn't manage the weight differential. She drilled the change-of-grip
-  ten thousand times.
-  Alternate loadout — BR-7 Flail (still aboard in the cargo bay; her original Atrament
-  service rig weapon): spiked iron ball 40cm across on 1.8m of battle-chain; chain-lock
-  converts to flanged mace. She carries both. She uses the sword on open ground, the flail
-  in confined spaces where the arc matters.
-  Secondary — Split-Shot mounted to the left forearm housing (short-sword with
-  integrated breach-loaded Catalyst-accelerant slug; blue flash; 40-second reload).
-  **Out of rig:** Standard Atrament service knife (25cm, practical). She carries it in a
-  reachable spot. The rig is always nearby and her first answer to any threat. The knife is
-  for when she is between transfers.
-- **The rig's sensors:** The rig's instrumentation reads the membrane boundary as a
-  thermal/EM pressure gradient — the machine perceives what practitioners perceive but
-  understands it differently. At Forge Hearth, she shows Lyra what the machine's display
-  logs. Atrament framing: a resource pressure gradient. What it means is something else.
-- **Engineer role — terrain control and detection:**
-  The rig is not purely a melee platform. Kressida operates it the way an Atrament
-  production-floor engineer operates a foundry: maximum output from the available tools,
-  minimum waste, always aware of the workspace geometry.
-  - **Pressure traps** (carried in the rig's cargo bay): Atrament-manufacture iron plate
-    traps, trigger-spring loaded, Catalyst-accelerant burst on activation — concussive,
-    not incendiary. She sets three to four before an anticipated engagement. The party
-    learns not to walk behind her without asking which tiles are live.
-  - **Rig sentry mode**: The BR-7 can be locked in a stationary guardian posture — she
-    sets the rig, steps out, and the machine holds a chokepoint on proximity trigger.
-    Limited arc (120 degrees), limited reaction time (a second and a half before it swings),
-    but a 2.4m greatsword on a spring-loaded arm holds a corridor effectively without a
-    pilot inside. She uses this when the party needs her out of the rig for something small.
-  - **Sensor picket**: The rig's EM/thermal display can be positioned facing a direction
-    and left running while she does something else. She checks it the way a scout checks
-    their backtrail. At Sinter, it is the first instrument to register what the aperture
-    is doing before any practitioner feels it.
-- **The *Meridian* — pilot role:** The *Meridian* is an Atrament-impounded flying-boat airship
-  (WW2-Sphere hull fitted with a rigid envelope for range extension) seized from an unauthorized
-  route run and sitting in the garrison bay when the party breaks in. Kressida can fly it —
-  Atrament engineers train on every impounded aircraft their military takes. She does not
-  mention this. She just gets in. The party's ground operation becomes an aerial operation
-  without a formal discussion having occurred. She handles the Meridian the way she handles
-  the rig: the right tool, used when it is the right tool, kept fueled and close.
-- **Two-scene entry:** She joins the party at Schmalburg — small woman in the raid chaos,
-  the rig appears and handles a threat, nobody asks the right question yet. The reveal
-  happens at the Atrament garrison break-out: Lyra and Orim watch the transition — small
-  woman, fifteen seconds, then the rig standing up in the garrison bay and walking through
-  the outer wall. The party understands what they have been traveling with.
-- **What sets her apart:** She is the party's melee DPS — not through an infused body but
-  through a machine she requires. The rig is external, devastating at scale, and invisible
-  until it stands up. Outside it, she is the most visibly fragile member of the party.
-  Inside it, she is the most physically dangerous thing in any room. Both of these are true
-  simultaneously. The reveal is the point: she climbs out carefully, moves with deliberate
-  economy, and the party has just seen three meters of walking iron walk through a garrison
-  wall. The same person.
-- **The rig as the closest thing to a home:** She has been inside it longer than she has
-  been anywhere she's slept. It knows her weight distribution and how she shifts before a
-  turn; she has tuned every response curve to her patterns. Getting in is not suiting up.
-  It is closer to standing up.
-- **Development needed:** Her departure from Atrament. Not just "before they classified her
-  as a logistics problem" — what specifically happened. The moment she understands what Sinter
-  means to an Atrament engineer (the machine feels it first, before she does). What she is
-  moving TOWARD, not only what she left.
-- **Arc:** She has no faith to lose — she left Atrament before they could classify her
-  as a logistics problem. What changes: she acquires people who do not look at the rig
-  first and her second. Wren in particular — he saw the rig from the other side of it
-  and joined anyway. She has not encountered this specific sequence before and finds it
-  difficult to file under a known category. By the end she is in Ocipheus, rig parked
-  in the station courtyard, asking nobody's permission about what comes next. Wren is
-  nearby. Neither of them has said the thing. See Wren entry.
-
 ---
 
 ## 2. The Antagonists {#SS-VIGL-2}
+
+> **House note (faction clarity):** The retrieval crew — Aldric, Esvane, Petra, Wren Caerglas —
+> is **CALYX**, the House that sent them and that holds the Year-972 property claim to the
+> Oculus Memoriae (Battle of Nine Days at Caer Glas Moor). **PALLOR** is a distinct allied House
+> — the Warrior King's — whose Champion Vaen is dispatched separately as the operation's backstop.
+> The two Houses cooperate at Caer Glas Moor; they are not the same House. The claim is Calyx's;
+> Vaen is Pallor's.
 
 ### Canon Immaculate Tomasz Prelacze {#SS-VIGL-2a}
 - **Role:** Liturgy Canon — Lyra's institutional chain of command. He outranks her. When he
@@ -612,7 +511,7 @@ discovers who all three were. That is what makes the confrontation land.
   undo.
 - Her fear: that she will carry this regardless of outcome. That the Relic will reach Pallor and
   the Liturgy will find a way to take it back and her career will be the price of Aldric's honor.
-- Her hope: that the canonical documentation holds. That Pallor's prior claim is upheld in post-
+- Her hope: that the canonical documentation holds. That Calyx's prior claim is upheld in post-
   retrieval review and the record shows she acted within institutional reach. She does not
   believe this will happen. She went anyway.
 - **Her moment:** On the channel crossing, she tells Petra the full shape of what Prelacze wants —
@@ -632,7 +531,7 @@ discovers who all three were. That is what makes the confrontation land.
   discretionary document transport, and, less officially, route-finding for clients who prefer that
   their cargo not appear in checkpoint logs.
 - Hired by Esvane six months before the theft. She knows every checkpoint between Ocipheus and
-  Pallor, every soft gate, every officer who will accept a Pallor canonical property claim without
+  Pallor, every soft gate, every officer who will accept a Calyx canonical property claim without
   reading the underlying dispute history.
 - Loyal to the coin. Unexpectedly, also loyal to Aldric — something about his certainty has gotten
   under her skin in a way she does not find comfortable or useful. She has not examined this carefully.
@@ -652,60 +551,59 @@ discovers who all three were. That is what makes the confrontation land.
   When she decides not to sell the Relic's location, she does not make it a moral moment. She
   names it a professional decision: the secondary client isn't worth the exposure.
 
-**Wren Caerglas — Aldric's nephew; Loera-trained operative; operational alias "The Blink Thief"** {#SS-VIGL-2c-wren}
-- Twenty-two. Assigned to the squad by family obligation. He would have come regardless.
-- He has the Caerglas family's belief that the Relic belongs to Calyx.
-  He got it secondhand, the way you get things from family stories: absolutely certain in
+**Wren Caerglas — Aldric's niece; Loera-trained operative; operational alias "The Blink Thief"; female** {#SS-VIGL-2c-wren}
+- Twenty-two. Assigned to the squad by family obligation. She would have come regardless.
+- She has the Caerglas family's belief that the Relic belongs to Calyx.
+  She got it secondhand, the way you get things from family stories: absolutely certain in
   feeling, less certain in detail.
-- Three months before the retrieval, he read the canonical property transfer documentation
+- Three months before the retrieval, she read the canonical property transfer documentation
   from Year 972 — the actual instrument that moved the Oculus Memoriae to Ocipheus custody.
   The documentation is not as simple as the family story. The transfer was disputed at the time.
   It was also processed by a legitimate canonical authority. The Calyx claim is real. So is
   Ocipheus's institutional custody. Both things are true and cannot both be satisfied.
-- He has not told Aldric this. He does not know how to tell Aldric this, because Aldric has
+- She has not told Aldric this. She does not know how to tell Aldric this, because Aldric has
   been certain his whole life and Wren does not know what certainty looks like after it breaks.
 - **The Blink:** Wren's Transmutation infusion — one — is a Loera-tradition phase-step ability.
   Loera has a long culture of thieving-arts that formalized the phase-step as a practiced
   infusion technique rather than a military one. Wren obtained it through Loera channels —
-  Aldric used Loera contacts to give him the right tool for the right job. For approximately
-  four seconds per use, he can translate his body through solid material up to two meters
-  thick. He cannot blink through iron; he cannot carry more than one hand's worth. The Blink
-  Thieves are named for him. He is why they could leave through the south coast of the Ocipheus
-  archive without triggering a sealed gate. The box was in his arms. He walked through the wall.
+  Aldric used Loera contacts to give her the right tool for the right job. For approximately
+  four seconds per use, she can translate her body through solid material up to two meters
+  thick. She cannot blink through iron; she cannot carry more than one hand's worth. The Blink
+  Thieves are named for her. She is why they could leave through the south coast of the Ocipheus
+  archive without triggering a sealed gate. The box was in her arms. She walked through the wall.
 - **At the Caer Glas intercept:** Lyra's party catches the squad on the Pallor moor. Esvane and
   Petra go down. Wren blinks — through a stone building, a courtyard wall, into an adjacent
-  field — with the Yggdra box in his arms. He is alive. The Relic is with him. He is alone
+  field — with the Yggdra box in her arms. She is alive. The Relic is with her. She is alone
   for the first time since the theft.
-- **His moment alone:** He has the Relic. He could still take it north to Pallor. Nobody is
-  watching. What happens instead: Orim Zebulun finds him — Orim has been tracking the Relic's
-  scrying residue since Vierna. Orim shows him what the Rod sees at this range from the eastern
+- **Her moment alone:** She has the Relic. She could still take it north to Pallor. Nobody is
+  watching. What happens instead: Orim Zebulun finds her — Orim has been tracking the Relic's
+  scrying residue since Vierna. Orim shows her what the Rod sees at this range from the eastern
   plains. What is moving in the Sinter basin, miles below the surface, moving at the rate of
   change he shows Wren. *How long?* Wren asks. Orim says: *Since Year 1079, at minimum. The
   rate has been accelerating for eleven years.* Wren sits down in the field with the Relic
-  box in his arms and takes a long time to stand back up.
-- **He returns the Relic to Lyra and joins the party.** Not because she asked. Because he has
-  nowhere else to go and because the thing he has been trying to understand since he read that
-  property transfer documentation is somewhere in that zone. The Pallor claim is real.
+  box in her arms and takes a long time to stand back up.
+- **She returns the Relic to Lyra and joins the party.** Not because Lyra asked. Because she has
+  nowhere else to go and because the thing she has been trying to understand since she read that
+  property transfer documentation is somewhere in that zone. The Calyx claim is real.
   So is this. Both things are true and cannot both be satisfied.
-- **Wren and Kressida:** He already knows what the rig does before he says a word to her —
-  he saw it from the wrong end. She knows what the blink does because it is why he is alive
-  and his crew is not. They start with a precise mutual accounting of what the other one is
-  capable of, and no ceremony about it. What builds between them is not performed — it grows
-  in the operational space, in the beats between decisions: the moment she resets a sentry
-  trap and he watches without being asked; the moment he blinks to an angle that covers her
-  while she is out of the rig and does not mention it. By the end neither of them has said
-  the thing. The reader knows. That is sufficient.
-- **His function in the final act:** He is the Calyx perspective inside Lyra's crew at Sinter.
-  He knows the Long Seat's position on Sinter from inside the House that holds it. He is the one
-  who can say: *the eighth theory belongs to us too. We grew up with it.* He does not say this
-  until Lyra needs to hear it.
+- **Wren and the party:** She arrives with nowhere else to go and a mission she no longer fully
+  believes in. What builds is not performed — it grows in the operational space, in the beats
+  between decisions: the moment Lyra trusts her to take an angle without checking it twice; the
+  moment Orim shows her the Sinter data because she's earned it, not because the mission requires
+  it. By the end she has a place in the party that was never officially offered. The reader
+  knows. That is sufficient.
+- **Her function in the final act:** She is the Calyx perspective inside Lyra's crew at Sinter.
+  She knows the Long Seat's position on Sinter even though it is not her own House's institution —
+  Calyx has held its own parallel reckoning for as long as Pallor has kept the Long Seat's. She is
+  the one who can say: *the eighth theory belongs to us too. We grew up with it.* She does not
+  say this until Lyra needs to hear it.
 - **Weapons:** Two Loera-pattern short daggers, worn reversed at the lower back — draw
   crosses both hands simultaneously. Not throwing daggers; close-work, inside grappling
-  range. The blink puts him there. He trains for the moment after the blink, not the
+  range. The blink puts her there. She trains for the moment after the blink, not the
   approach.
-- **Register:** Young, careful, precise in a way that comes from not trusting his first instinct.
-  He asks questions. Esvane answers them. Petra tells him to stop asking questions. Aldric
-  doesn't notice he's asking them, which is the most revealing thing about Aldric.
+- **Register:** Young, careful, precise in a way that comes from not trusting her first instinct.
+  She asks questions. Esvane answers them. Petra tells her to stop asking questions. Aldric
+  doesn't notice she's asking them, which is the most revealing thing about Aldric.
 
 **Vaen — The Pallor Champion** {#SS-VIGL-2c-vaen}
 - Six infusions. Pallor Champion — the last rank before the theoretical limit no living practitioner
@@ -723,14 +621,15 @@ discovers who all three were. That is what makes the confrontation land.
   going to hurt you because I have to, and I recognize you as kin, and neither of those things
   makes the other one less true.*
 - **The fight:** Vaen vs. Lyra is not a fight Lyra wins by strength. She cannot — not at this
-  infusion differential. The party fights her as a unit: Kressida's rig absorbs the damage
-  Lyra cannot survive alone; Wren blinks to angles Vaen cannot track simultaneously; Rowe's rifle finds the exact gap that only
-  his WW1-trained marksmanship eye would know to look for. Orim's Rod is the last resort and
+  infusion differential. The party fights her as a unit: M-108 body-snatches an Atrament
+  war-chassis to absorb the damage Lyra cannot survive alone, then casts back to his own shell
+  and finds the exact gap that only his WW1-trained marksmanship eye would know to look for;
+  Wren blinks to angles Vaen cannot track simultaneously. Orim's Rod is the last resort and
   he holds it until the moment it becomes the only option. Vaen is not beaten. She is stopped.
   The distinction matters to her. She knows it when it happens.
 - **After:** She is alive. Her six infusions make her very difficult to kill. She withdraws —
   not from cowardice, from recognition: the mission is concluded, the Relic is taken, the squad
-  is gone. Pallor will send another claim in another generation. She has been through three of them.
+  is gone. Calyx will send another claim in another generation. She has been through three of them.
   She looks at Lyra when she withdraws. She does not speak again. She goes back into the moor.
 - **Register:** Older than anyone in either party. Unhurried. Speaks in complete sentences with
   the economy of someone who has not needed to prove anything in twenty years. The "Little Sister"
@@ -758,7 +657,7 @@ The Vierna/Atrament war is not background. It is present in every chapter from V
 - Atrament: factory output moving east in continuous convoy; the furnaces are running for
   the front; Schmalburg is a transfer node disguised as a city
 - Calyx: the front line runs through the eastern plains; smoke columns; the locals read
-  them; the party learns to read them from the Meridian
+  them; the party learns to read them from the Eirene-7
 
 **The no-colors engagement rule:** The party has no military affiliation either side
 would recognize as friendly. The Vigil crosses borders by canonical authority — that
@@ -773,18 +672,19 @@ Rowe knowing what a line looks like when it breaks.
 2.  Channel crossing to Vierna
 3.  Bressant, Vierna (Veil River; Rowe found)
 4.  Three Points neutral ground (Act 1 ends here) — intel gathered: impounded airship
-    (*Meridian*) at Atrament garrison east of Schmalburg
+    (*Eirene-7*) held at Sal Vento, a Loera cliff-side port
 5.  Vierna-Atrament border
-6.  Schmalburg, Atrament (raid; Kressida joins; Ardea's death)
-7.  **Atrament military base** — mission: steal the *Meridian*; Kressida's rig handles the
-    compound; Kressida pilots the *Meridian* out — she does not announce she can fly it,
-    she just gets in. The ground operation becomes an aerial operation without discussion.
-8.  Forge Hearth (aboard the *Meridian*; faster than overland; membrane thin here)
+6.  Schmalburg, Atrament (raid; Ardea's death)
+7.  **Sal Vento (Loera cliff-side port)** — mission: acquire the *Eirene-7*; the party moves
+    through the port's cargo transfer lines to reach the impounded hull; M-108 body-snatches
+    the Eirene-7's control-mind and flies it out — the ground operation becomes an aerial
+    operation without a formal discussion having occurred.
+8.  Forge Hearth (aboard the *Eirene-7*; faster than overland; membrane thin here)
 9.  Calyx — the plains; monster corridors; the Relic's trace grows warmer; Orim reads it;
     **active war front** — the Vierna/Atrament line runs through Calyx's eastern plains;
-    the party maneuvers around it from the Meridian, reading smoke columns to find the gap
+    the party maneuvers around it from the Eirene-7, reading smoke columns to find the gap
 10. **The no-colors engagement (Calyx chapter — exact beat TBD)** — at some point the party
-    lands in the middle of an active skirmish. The Meridian has no House flag. The party
+    lands in the middle of an active skirmish. The Eirene-7 has no House flag. The party
     has no colors. Both sides open fire indiscriminately. The party kills soldiers from
     both armies to escape. Nobody in the field checks who you are before shooting.
     **Rowe's beat:** This is WW1. The specific quality of artillery over open ground, the
@@ -826,7 +726,7 @@ anything he does.
 
 ### The living history at each threshold:
 - **Vierna:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
-- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party learns here that an impounded airship — the *Meridian* — sits at an Atrament garrison east of Schmalburg.
+- **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party learns here that an impounded airship — the *Eirene-7* — is held at Sal Vento, a Loera cliff-side port.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Cauld invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
 - **Calyx:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna escaping from agricultural Scrying for generations. The war runs through the middle of it — the Vierna/Atrament front line cuts across Calyx's eastern territory; the locals have learned which smoke columns mean artillery and which mean a brush fire. The party maneuvers around engagements for two chapters. Then they stop being able to. The no-colors engagement is here.
 - **Pallor:** Upland moor and fjord coast; fog that comes in fast; the heather that phosphoresces at night; no House insignia anywhere; Caer Glas Moor at the heart of it; the last ungoverned land before the strait
@@ -933,7 +833,7 @@ Neither of them makes the other one easier.
   The catalogue says "dense colonial fauna, membrane-adjacent, hostile." The bats that come
   through have the wingspan of an Atrament kite and hands where their feet should be —
   flat, five-fingered, bone-pale human hands that grasp and tear. The catalogue did not
-  mention the hands. Used to break Vaen's engagement with Kressida's rig — the creatures
+  mention the hands. Used to break Vaen's engagement with M-108's war-chassis — the creatures
   do not distinguish between Champion and machine, and six infusions does not protect you
   from something that grabs with human-shaped hands.
 
@@ -1017,7 +917,7 @@ it morally has never needed to exist within Cauld institutions. The mechanisms:
 2. **Distance:** The Spheres being harvested are other worlds. The people are not Cauld citizens.
 3. **Generational remove:** Current practitioners inherited the system. No one now practicing
    built the intake protocol.
-4. **Economic integration:** The rail, the arc spears, the *Meridian*'s hull — all Scried from
+4. **Economic integration:** The rail, the arc spears, the *Eirene-7*'s hull — all Scried from
    worlds that do not know they are being robbed. People and technology are both resource
    outputs of the same process. Rowe eventually recognizes the weapons he was trained on.
 5. **No feedback:** The source Spheres cannot resist, retaliate, or even know.
@@ -1147,8 +1047,8 @@ biology is evidence of centuries of membrane puncture.
   includes a Catalyst-adjacent compound that the Eaters process for self-infusion)
 - **Channel drift-bell:** Marine; translucent bell body; pneumatic chambers produce above-water
   sound during feeding (a low, resonant tone that fishermen call "the tide singing"); edible
-  but require specific preparation; Kressida keeps a processing tool on the *Meridian* for long
-  channel crossings
+  but require specific preparation; the party keeps a processing tool aboard the *Eirene-7* for
+  long channel crossings
 - **Schmalburg river-flash:** Fish; chromatophore scales from a bioluminescent Sphere; flash
   when startled; established in the Rhine-analog over two centuries; the river yards at night
   are lit in pulses when the rail traffic disturbs the water
@@ -1289,12 +1189,6 @@ The Cauld does not have a 1918. It has an eleven-year truce that is running out.
 what the next year looks like. He has seen it. Everyone around him who grew up in the
 truce has not.
 
-**Kressida's specific horror:**
-She was a battle-rig pilot in the Vierna campaign before she deserted. She knows which
-side of the line every checkpoint is on. She knows what the Meridian was doing in that
-garrison bay — it was not impounded for an unauthorized route run. It was held for
-reassignment to the next front. She got there first.
-
 **House governance — NOT warrior kings everywhere:** Each House governs according to what it
 actually is. The assumption that every House has a king in armor on a throne is wrong and lazy.
 - **Ocipheus** — governed by the Canon Immaculate (Prelacze). Liturgy institution, not a House
@@ -1317,9 +1211,11 @@ actually is. The assumption that every House has a king in armor on a throne is 
   The Three-Lantern House knows more about the disposition of both armies than either general
   staff does. This is not an accident.
 - **Pallor** — the last ungoverned territory before the strait. Upland moor and fjord coast;
-  phosphorescent heather at night; fog that arrives without warning. No House governance, no
-  Long Seat, no Compact institution. Warrior culture — Champions are acknowledged, not crowned;
-  combat lineage governs by custom. The Caerglas family and their ancestral vault at Caer Glas
+  phosphorescent heather at night; fog that arrives without warning. No crowned House governance
+  in the sense the other Houses use — but Pallor holds the **Long Seat**, the Cauld's ancient
+  advisory body (see Ch.27, "The Long Seat — The Eighth Theory"; lock #3). Warrior culture —
+  Champions are acknowledged, not crowned; combat lineage governs by custom, and the Long Seat
+  advises rather than rules. The Caerglas family and their ancestral vault at Caer Glas
   Moor are here. The moor-hounds are native to a heathland Sphere Pallor has been Scrying for
   generations. Vaen — the Pallor Champion — has held this territory for forty years. Pallor
   does not petition; it sends Vaen.
@@ -1392,9 +1288,10 @@ view. The story is the consequences of what it shows — not what it looks like.
 **The membrane at the Forge Hearth:**
 - Lyra's observation (Beat 8): healing slowly. Substrate recovery in biological tissue that
   she has Transmutation-research knowledge to read.
-- Kressida's rig observation: thermal/EM anomaly logged as resource pressure gradient.
-- Orim's observation: the membrane refuses his minor scry. Absence, not resistance.
-- These three data points are the same fact observed from three disciplines. None of them
+- Orim's Rod: the mineral tip logs a thermal/EM anomaly at the housing before he dials in —
+  the apparatus registering something on its own, the way an instrument does.
+- Orim's gift: the membrane refuses his minor scry. Absence, not resistance.
+- These data points are the same fact observed from different angles. None of them
   alone would be conclusive. Together they are.
 
 **Alchemy notation (data-block format, same as Scry catalogue entries):**
@@ -1411,7 +1308,7 @@ The shared notation format is not commentary — it is shown in the text. The re
 - Heloth cavalry (Vierna): riders perched on the shoulder housings; the pursuit in Beat 3
 - River barge: commercial; cover; the party hides in the cargo hold
 - Atrament rail: fastest fixed-route transport; mixed military/civilian
-- The *Meridian*: fastest non-fixed transport in the Cauld; fuel-limited; water-landing capable
+- The *Eirene-7*: fastest non-fixed transport in the Cauld; fuel-limited; water-landing capable
 
 **Slave labor:**
 Present where it is present. Not named by Lyra. Named by the reader. The Wall checkpoint
@@ -1497,11 +1394,9 @@ that has no institutional name yet.
 **Other party registers:**
 - **Orim:** Dry, observational, specificities of place and exit routes. Genuinely curious,
   sentimentally attached to nothing. Dark humor as armor.
-- **Kressida:** Short, functional, Atrament-practical. Calls things what they are. No metaphor.
-  The most literal person in the party; says the most exact things.
-- **Wren:** Direct, young, periodically right at the worst possible moment. He has the precision
-  of someone who has read everything about a subject and knows he's missing context. His humor
-  is inadvertent — he says the true thing at the wrong time and then waits.
+- **Wren:** Direct, young, periodically right at the worst possible moment. She has the precision
+  of someone who has read everything about a subject and knows she's missing context. Her humor
+  is inadvertent — she says the true thing at the wrong time and then waits.
 
 ### 8a. Visual and Aesthetic Doctrine {#SS-VIGL-8a}
 
@@ -1545,7 +1440,7 @@ are real.
   clerks copying authorization chains in a precise bureaucratic hand. Vega works here.
 - Atrament's factory halls: great industrial sheds built *into* the sides of fortifications.
   The castle walls are the factory walls. The furnace stacks rise from the old towers.
-- The *Meridian*: a WW2-airframe airship moored to a cliff-side dock that was built for
+- The *Eirene-7*: a WW2-airframe airship moored to a cliff-side dock that was built for
   sailing galleys. The dock fittings are hand-forged iron. The mooring lines are nylon.
 - Caer Glas Moor: the ancestral vault is a pre-Compact stone structure with no House
   insignia — older than the Houses. The moor-hound handlers' tent is canvas and modern
@@ -1590,8 +1485,7 @@ ending recontextualizes the whole. Each realm should feel like entering a new zo
 Not a mechanic — texture. Note what everyone carries, what it costs, what it has done. Track
 changes: Lyra's vigil-glass scope acquired in Vierna (salvaged; reads membrane anomalies at
 range). Rowe's spare ammunition found in Atrament, his night-loading ability built by Loera.
-Kressida's rig is patched at Schmalburg (reaction-plate), spring-repaired at Sal Vento; she
-notes everything it survives. Orim's Rod is the party's legendary item — limited Catalyst load,
+Orim's Rod is the party's legendary item — limited Catalyst load,
 unreliable results, never expendable. Its limits are as important as its power. The progression
 gives the reader the FF party-growth satisfaction without explicit numbers — the gear is real, it
 has a record, it matters in the fight.
@@ -1604,8 +1498,8 @@ situations behaving like real people. Primary sources:
   approach) is terrifying and in retrospect deeply funny. The cold-water scry is quiet absurdist
   warmth. The Rod's unpredictability is itself part of every scene it appears in.
 - **Wren after joining Lyra's party** — youngest member, spent three weeks with the wrong crew,
-  now in the right one. He has opinions about everything and expresses them at the wrong moment.
-  The party finds him useful and occasionally maddening. He is also, frequently, correct.
+  now in the right one. She has opinions about everything and expresses them at the wrong moment.
+  The party finds her useful and occasionally maddening. She is also, frequently, correct.
 - **Orim's running commentary** — delivers scry results in the dry specificity of a field report.
   "Six of them. Or possibly eight. Colony signature. I would not recommend standing between them
   and the membrane." Then he points the Rod.
@@ -1638,10 +1532,16 @@ at full capacity, the walk home past the canal, what he eats for breakfast. Ends
 of normalcy: he is at the machinery, the morning shift is half-done, nothing is wrong.
 
 **R2 — The Taking** (between A-chapters 5–6)
-Continues directly from R1. The ground stops being the ground. Rendered from inside the
-experience without the interpretive frame: the stone room, the robed figures, the mouth moving
-before he has language for what it is saying. He does not understand what has happened. The
-chapter does not explain it to the reader either — the reader understands; Rowe does not.
+Continues directly from R1. The floor stops being a floor. Rendered from inside the experience
+without the interpretive frame, and honoring the LOCKED imagery of [[#SS-VIGL-1c-flashback]]: the
+pluck (a hook drawing him up out of black water — displacement before pain); the sea of black
+with the wreckage of his own memories drifting past; waking *inside a machine* (the oval receptor,
+the half-beat-late body, no warmth, no breath); the naming ("M One Oh Eight Eight Two Seven One
+Five. Step forward."); aboard the gunship he is Turret #34 and #34 refuses to fire; burnt ozone;
+"you do not court-martial a tool — you scrap it." This is a mind Scried out of a living body and
+issued a disposable shell, NOT a body marched into a stone intake room. He does not understand
+what has happened. The chapter does not explain it to the reader either — the reader understands;
+Rowe does not.
 
 **R3 — Seven Months** (between A-chapters 9–10)
 Vierna barracks. Seven months compressed. The bolt-action rifles: he recognizes them as a
@@ -1670,14 +1570,14 @@ Orim Zebulun was the contracted Keeper. He did not read it in time. This is why 
 **At the intercept — what Lyra learns when she catches them:**
 Three members: Esvane (operational commander, Calyx Lector), Petra (fixer), Wren (the Blink).
 Esvane and Petra die in the confrontation. Wren blinks through a stone wall with the Relic.
-Orim finds him in the field. Wren returns the Relic. He joins. He does not explain himself.
-His past is revealed in pieces through the party dynamic over the rest of the book.
+Orim finds her in the field. Wren returns the Relic. She joins. She does not explain herself.
+Her past is revealed in pieces through the party dynamic over the rest of the book.
 
 ---
 
 ### The Scribe's Thread (4 chapters — concurrent with A-plot) {#SS-VIGL-9c}
 
-**Who she is:** Lyra's younger sister. Name: **Vega** — named for the bright star in the Lyra
+**Who she is:** Lyra's younger sister. Name: **Vega Athen-Moor** — named for the bright star in the Lyra
 constellation, which is an Ocipheus family thing to do. Ocipheus-origin. Twenty-six years old
 (Lyra is forty-four). She joined Liturgy service as a canonical Scribe — she copies and notarizes
 canonical instruments: the official authorizations that make Liturgy operations legal. She took
@@ -1715,7 +1615,8 @@ at the sixth hour → Lyra and Orim move.
 
 **After this scene, Vega leaves for the central office.** S1 lands on her desk two days later —
 the cover authorization for the theft, framed as "dispute resolution, Relic provenance review,"
-followed by Dame Lyra's field authority suspension, copied among hundreds. She does not know yet whose name it is.
+followed by Dame Lyra's field authority suspension, copied among hundreds. She recognizes the
+name on the transit suspension — her sister's — before she has finished copying it.
 
 **Her function in the plot:**
 
@@ -1737,7 +1638,8 @@ writing "no action indicated" into enough folios to understand what the phrase h
 **S1 — The Authorization** (between A-chapters 2–3; after Three Bodies, before The Wall)
 She copies the canonical property recovery instrument — the cover authorization for the theft
 of the Oculus Memoriae, framed as "dispute resolution, Relic provenance review." She also
-copies Dame Lyra's field authority suspension. She does not know yet whose name it is.
+copies Dame Lyra's field authority suspension — and recognizes her sister's name on it before
+the ink is dry. The recognition is the point of the beat.
 In the courtyard below the office window: a Great Scrying operation running at midday — an
 active aperture, apparatus crews in position, a war construct evaluation (WC-Eirene-provisional,
 Sphere 42) being assessed by Descent Corps evaluators. She copies the assessment summary.
@@ -1796,7 +1698,7 @@ in one moment what her sister has understood for weeks.
 | 14 | LYRA | Atrament — The Forge Kingdom |
 | 15 | SCRIBE | The Review Session |
 | **16** | ~~**PALLOR**~~ | ~~**Schmalburg Adjacent — The Atrament Road**~~ *(P3 — B-PLOT DISABLED; beat IsEnabled=0)* |
-| 17 | LYRA | Schmalburg — The Raid; the Eaters; Kressida |
+| 17 | LYRA | Schmalburg — The Raid; the Eaters; Ardea's Death |
 | 18 | LYRA | The Forge Hearth — What She Recognizes |
 | 19 | LYRA | Sal Vento — The Port |
 | **20** | ~~**PALLOR**~~ | ~~**The Channel — Hours, Not Days**~~ *(P4 — B-PLOT DISABLED; beat IsEnabled=0)* |
@@ -1937,34 +1839,32 @@ That is what comes next.
 3. **The Long Seat's eighth theory is never disclosed.** It remains operative in Lyra as the book ends.
 4. **The Canon leaves unpunished.** Nothing is resolved. The Liturgy's apparatus is intact.
    The mobilization Prelacze staged does not unwind. It simply has no target yet.
-5. **Kressida's relationship with the rig is her business.** She can step out of it any time.
-   What she chooses to do is not the book's question to answer for her.
-6. **Death is permanent.** (SS-LAW-19.) Ardea does not come back.
-7. **The Eaters of Monsters are not condemned.** They are shown. The Liturgy's verdict on them is noted.
+5. **Death is permanent.** (SS-LAW-19.) Ardea does not come back.
+6. **The Eaters of Monsters are not condemned.** They are shown. The Liturgy's verdict on them is noted.
    The reader is not told what to think.
-8. **Alchemy and Transmutation are the same system.** Shown through the shared notation format, not stated.
-9. **The slave labor is present but never named.** Lyra does not think the word. The reader does.
-10. **Orim's scry failure at Forge Hearth is never explained in-text.** Lyra has a theory. She does not say it.
-11. **Lyra was set up to take the fall.** Prelacze chose her specifically: a Templar with a
+7. **Alchemy and Transmutation are the same system.** Shown through the shared notation format, not stated.
+8. **The slave labor is present but never named.** Lyra does not think the word. The reader does.
+9. **Orim's scry failure at Forge Hearth is never explained in-text.** Lyra has a theory. She does not say it.
+10. **Lyra was set up to take the fall.** Prelacze chose her specifically: a Templar with a
     documented thirty-year record of absolute loyalty is useful as cover. If the Relic's evidence
     surfaces under her authority, she holds it. She understands this at the Sinter aperture when
     she sees the shape of the authorizations the Scribe is carrying. This recognition is not
     stated in the prose — it is a snap-to-clarity, filed, acted on. The prose does not explain
     it because Lyra does not explain things she has already filed.
-12. **The Scribe is the canonical witness.** Whatever she records at the Sinter aperture is the
+11. **The Scribe is the canonical witness.** Whatever she records at the Sinter aperture is the
     official Liturgy record of what happened. When Lyra hands the Relic to the Keeper rather
     than to Prelacze, the Scribe's notarized account is the first canonical instrument Prelacze
     cannot authorize away.
-13. **The Liturgy's mobilization is not resolved.** The book ends with the war constructs staged
+12. **The Liturgy's mobilization is not resolved.** The book ends with the war constructs staged
     and the columns in position. The next book is where the mobilization finds its target.
-14. **The depth of the Sinter crater is not fully disclosed.** Lyra sees enough to understand
+13. **The depth of the Sinter crater is not fully disclosed.** Lyra sees enough to understand
     the scale. She does not see the bottom. Nobody has. What is at the bottom — what the alien
     biology has been building toward for 1,138 years — is the series' central question. VIGL
     establishes it exists. It does not answer it.
-15. **The Year 1079 emergence was not geological.** The Relic shows it was biological — mass
+14. **The Year 1079 emergence was not geological.** The Relic shows it was biological — mass
     emergence pressure. This is never stated in dialogue. The Scribe writes it down. Prelacze
     will read that account. What he does with it is the next book's problem.
-16. **The cavity is accelerating.** The rate of change in the Relic's final frames is faster
+15. **The cavity is accelerating.** The rate of change in the Relic's final frames is faster
     than any prior period. This is not stated to the reader in analytical terms. Lyra simply
     does not put the Relic down when she should. She keeps looking.
 
@@ -1974,24 +1874,25 @@ That is what comes next.
 
 > Generated 2026-07-14 by `ss --generate-blueprint`. Do not hand-edit. Re-generate after structural changes.
 
-**Subplot:** Kressida Haun's irreversible fusion to her battle-rig — she cannot be separated from the thing the system did to her body, mirrors Rowe's inability to un-take the oath administered before he had language for it. Both characters are walking evidence of what institutional machinery costs the individual. The subplot asks whether you can still be a person when the system has become physically part of you.
+**Subplot:** Soren Rowe / M-108's body-snatching — a stolen mind who can wear any machine, from an overlooked disposable shell to a war-chassis to the Eirene-7 itself, but who must always find his way back to the small, disposable shell that is the only home the Taking left him. A secondary thread runs alongside it: Orim Zebulun's forty years of complicity — he knew about the Myrmidon intake since his first Sinter contract and kept taking the work anyway. Both men are walking evidence of what institutional machinery costs the individual.
 
-*Thematic parallel:* The A-plot asks "What are you loyal to when you find out what the thing you loved actually is?" The subplot asks the inverse: "What are you when you cannot choose to stop being what the system made you?" Kressida's rig-fusion and Rowe's conscription-before-language are two answers to the same institutional violence.
+*Thematic parallel:* The A-plot asks "What are you loyal to when you find out what the thing you loved actually is?" The subplot mirrors it from the other side of the same machinery: both Lyra and Rowe were remade by the institution that also unmade them — her Transmutation and the Liturgy that awards it; his Taking and the Vierna intake that stamped a number where his name used to be. Neither can undo what was done to make them useful. Orim's forty years of silence is the same violence at one remove: he knew, and he kept taking the contracts.
 
 **Temporal scheme:** Nonlinear. The story opens at beat 0 with the theft in progress (in medias res, Pallor Knight POV entering the archive), then cuts to beat 24 (Lyra's pre-theft night at the station, the argument about bread, the note left for Vega) before returning to beat 1 (Lyra discovers the aftermath). The Rowe and Vega threads (beats 26, 27, 29, 31, 34, 37, 47) intercut chronologically but are temporally behind the Lyra thread, so the reader knows Rowe's origin before Lyra finds him, and knows Vega has sealed the notary instrument before Lyra arrives at Sinter. The cut at beat 24 withholds the fact that Lyra was present at the station the night before — establishing her as the archive keeper before revealing her as a sister and a person who argued about bread.
 
-**Resolution mode:** Mixed. External success: the Relic is recovered, Vega's notary seal creates a canonical instrument Prelacze cannot erase, and Lyra refuses the writ in front of witnesses — the institutional record exists. Significant cost: Ardea is dead, Lyra's Templar standing and thirty-year record are forfeit, Kressida remains fused to her rig, the Liturgy's military mobilization is unresolved. The ending is not peace — it is the first moment of Lyra having no institution behind her.
+**Resolution mode:** Mixed. External success: the Relic is recovered, Vega's notary seal creates a canonical instrument Prelacze cannot erase, and Lyra refuses the writ in front of witnesses — the institutional record exists. Significant cost: Ardea is dead, Lyra's Templar standing and thirty-year record are forfeit, the Liturgy's military mobilization is unresolved. The ending is not peace — it is the first moment of Lyra having no institution behind her.
 
 **Moral polarity:** Ambivalent.
 
-**Escalation curve:** `[3,4,3,4,5,5,6,6,5,6,6,7,7,6,4,5,5,5,5,4,5,5,4,5,3,4,3,4,4,5,5,6,5,6,6,7,6,6,8,7,7,6,7,8,7,7,6,5,7,8,8,10]`
+**Escalation curve** (24-beat consolidated spine, 2026-07-14): `[4,3,4,3,4,6,5,4,5,5,4,5,5,8,6,4,8,5,5,9,6,8,6,10]`
+(One value per beat in the [Beat Coordinate Map](#SS-VIGL-coordmap). Peaks: beat 14 Schmalburg reveal/Ardea, beat 17 airship masterstroke, beat 20 Vaen + shell-loss, beat 22 revelation, beat 24 climax.)
 
 **Form device:** Epistolary fragment — Vega's chapters are structured around the canonical documents she is copying and notarizing; the bureaucratic text of the instruments appears as block quotation within her POV sections.
 
 **Ending style:** Avalanche. No epilogue.
 
 **Intertextual anchors (5):**
-1. *Aerostatic Architecture specification sheet* — Tavar produces a folded copy annotated in a different ink when planning the Eirene-7 acquisition. Lyra reads the annotations, not the document. (Beat 43 / SK1600)
+1. *Aerostatic Architecture specification sheet* — Orim produces a folded copy annotated in a different ink when planning the Eirene-7 acquisition. Lyra reads the annotations, not the document. (Beat 43 / SK1600)
 2. *(Unattributed quote)* — Carved into the lintel of the Twr Brennid vault on Caer Glas Moor — the Long Seat's answer to the Eighth Theory. Lyra reads it aloud, once, in the rain. Orim says he has seen it before and did not understand it the first time either. (Beat 50 / SK2100)
 3. *Kenji Okonkwo-Barrett quote* — Rowe quotes this, haltingly in Cauld that is not yet fluent, during his channel testimony. He doesn't know the author's name. He learned it from another conscript who had it written on the inside of a boot. (Beat 44 / SK1700)
 4. *(Unattributed quote)* — Pinned above Vega's copy desk. She has stopped seeing it. When she recognizes that the name on the transit suspension is her sister's, the camera lingers on the quote for one sentence before she stands up. (Beat 31 / SK1200)
@@ -2001,17 +1902,67 @@ That is what comes next.
 
 ## 12. User Stories {#SS-VIGL-12}
 
-- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe, Kressida,
+- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe/M-108,
   Orim, Wren Caerglas, Aldric Caerglas, Esvane Mirren, Petra Dahl, Prelacze, Ardea, Vega —
   Lyra's little sister, Liturgy Scribe), places, factions, weapons, armor, pharmaceuticals,
-  flora, fauna, species compendium (~60+). Erland and Tavar are removed; not seeded.
+  flora, fauna, species compendium (~60+). Erland and Tavar are removed; Kressida Haun is cut
+  (2026-07-14) — not seeded.
 - **VIGL-US-2 ✅** StoryNode `VIGL` exists in DB; slug = `vigil-s-end-019f5767`; universe = fantasy.
   (Renamed from `the-vigil-s-end-019f5767` 2026-07-13.)
-- **VIGL-US-3 ✅** ChapterNodes created: 28 chapters in DB with intercut SortKeys. (2026-07-13;
-  final count expanded from planned 23 — see §9 intercut table.)
-- **VIGL-US-4 ✅** Structural blueprint generated 2026-07-14 after ChapterNodes created; see §10.
-- **VIGL-US-5 ⬜** All 28 chapters written in Blacktongue Thief / Between Two Fires register (~110,000 words).
-  Draft complete (28 beats, ~168k words) but register audit pending — beats may carry Kyle's register.
+- **VIGL-US-3 ✅** Story structured as **24 beats** on the StoryNode (consolidated 2026-07-14).
+  The earlier duplicate chapter-node draft (Layer B, 28 beats) was retired to temporal history so
+  only one version is live. §9 intercut table is the authorial reading order; the DB spine is the
+  24-beat sequence in the [Beat Coordinate Map](#SS-VIGL-coordmap).
+- **VIGL-US-4 ✅** Structural blueprint generated 2026-07-14; subplot/escalation resynced to the
+  24-beat spine; per-beat construction tags recorded (see Beat Coordinate Map).
+- **VIGL-US-5 ⬜** All 24 beats written as the definitive third draft (best-of-both merge; Kressida
+  and Tavar cut; Soren Rowe = M-108 the body-snatcher; ~114k words). Applied 2026-07-14; logic
+  sweep to 90+/no-gripes pending.
 - **VIGL-US-6 ⬜** Logic sweep clean (0 BLOCKERs). Lyra identified as Liturgy Templar throughout.
   Sinter as climax; no Wall crossing on outward leg; steal-the-airship chapter present.
 - **VIGL-US-7 ⬜** V1.docx exported to `R:\Desktop\EPub\MindAttic\Scry\Vigils End\`.
+
+---
+
+## 13. Beat Coordinate Map — the 3-coordinate system {#SS-VIGL-coordmap}
+
+> The single index that correlates every beat across the three artifacts by its stable
+> **(BeatId, Number)** coordinate:
+> **MEANING** = this bible (what the beat is *for*) · **CONSTRUCTION** = the structural blueprint
+> beat-tag in the DB (how it is *built*) · **PROSE** = the beat `Text` in the DB (what fulfils
+> both), keyed by the same `BeatId`.
+> The blueprint tag and prose live in the SQL DB (canon, per SS-LAW-1); this table is the
+> human-readable mirror. Beat modifications accrue to an **edit session** and are reconciled at
+> commit by `ss --close-all-sessions` (bible-fact extraction + blueprint-tag verification), so the
+> three coordinates stay aligned without rewriting entities on every edit.
+
+| # | DB # | BeatId | Title | Thread | Meaning (bible) | Construction (blueprint tag) |
+|---|------|--------|-------|--------|-----------------|------------------------------|
+| 1 | 5306 | 40855320 | The Theft at Ocipheus | PALLOR | Cold open; theft shown, thieves anonymous | temporal-anachrony (esc 4) |
+| 2 | 5249 | 019F5768-973B | Three Bodies and an Empty Case | LYRA | Dawn return; the task; night-before cut-back | temporal-anachrony (esc 3) |
+| 3 | 5250 | 019F5768-973C-7D2C | The Wall from Outside — Refused | LYRA | Frontier crossing; membrane refuses her | escalation (esc 4) |
+| 4 | 5251 | 019F5768-973C-78D3 | The Mill — Sphere 31 | ROWE | Rowe's 1919 pre-Taking life | subplot seed (esc 3) |
+| 5 | 5252 | 019F5768-973C-7AA2 | The Authorization | SCRIBE | Vega notarizes; recognizes her sister's name | form-device (esc 4) |
+| 6 | 5253 | 019F5768-973C-7A19 | The Taking | ROWE | Mind Scried into a shell; Turret #34 refusal | subplot / body-snatch origin (esc 6) |
+| 7 | 5254 | 019F5768-973C-72EF | Vierna Entry | LYRA | Military state; the law doesn't apply | escalation (esc 5) |
+| 8 | 5255 | 019F5768-973C-7C21 | No Action Indicated | SCRIBE | The suppressed record; the motif | form-device (esc 4) |
+| 9 | 5256 | 019F5768-973C-7417 | Sphere 31 — Rowe Found | LYRA | Mute automaton found; split register | subplot (esc 5) |
+| 10 | 5257 | 019F5768-973C-7B77 | Seven Months | ROWE | 3 conscript / 4 deserter; vocabulary grows | subplot (esc 5) |
+| 11 | 5258 | 019F5768-973C-77E6 | The River | LYRA | River bends like France; silent recognition | escalation (esc 4) |
+| 12 | 5259 | 019F5768-973C-71AF | Atrament — The Forge Kingdom | LYRA | War production; slave labor unnamed | escalation (esc 5) |
+| 13 | 5260 | 019F5768-973C-79CC | The Review Session | SCRIBE | Dual-objective of the theft seeded | form-device (esc 5) |
+| 14 | 5261 | 019F5768-973C-74A2 | Schmalburg — The Raid; the Eaters | LYRA | Ardea dies; the grizzly reveal | **body-snatch setpiece #1** (esc 8) |
+| 15 | 5262 | 019F5768-973C-7640 | The Forge Hearth | LYRA | Orim's Rod fails; the Fire Scry | threshold to Act 3 (esc 6) |
+| 16 | 5291 | DA607263 | Sal Vento — The Port | LYRA | Loera cliff port; sets up the airship | escalation (esc 4) |
+| 17 | 5292 | 3DBA7A47 | The Acquisition — Eirene-7 | LYRA | M-108 *becomes* the airship | **body-snatch setpiece #3** (esc 8) |
+| 18 | 5293 | 302F6E3F | The Channel — Rowe Testifies | LYRA/ROWE | Testimony; Orim hears it plainly | intertextual (Kenji quote) (esc 5) |
+| 19 | 5294 | 90E0FFE7 | She Goes to Sinter | SCRIBE | Vega seals the notary instrument | form-device (esc 5) |
+| 20 | 5295 | 76D2DBD6 | Pallor Reached — Caer Glas Moor | LYRA | Esvane/Petra die; Vaen; Wren joins | **body-snatch setpiece #4 (cost)** (esc 9) |
+| 21 | 5298 | 2FF3B7A6 | The Zone — Entering Sinter | LYRA | The wrongness mounts | escalation (esc 6) |
+| 22 | 5296 | 37B58D26 | The Relic — What the Eye Has Seen | LYRA | The 397→1138 time-lapse revelation | revelation (esc 8) |
+| 23 | 5297 | 9BA2CF72 | The Long Seat — The Eighth Theory | LYRA | Theory undisclosed; Wren the Calyx view | intertextual (Twr Brennid) (esc 6) |
+| 24 | 5299 | 367915A7 | The Aperture — What Loyalty Means | LYRA | Climax; writ refused; Aldenvast gift | **setpiece #5 (refusal)** / resolution (esc 10) |
+
+*BeatIds abbreviated where unambiguous; full GUIDs in the DB (`Beats.Id`) and the blueprint tags
+(`NodeStructuralBlueprintBeatTags.BeatId`, BlueprintId `3F3C753E…`). Reading order = DB `SortKey`
+on the StoryNode; the numbers 5263–5286 (old Layer-B chapter beats) are retired to history.*
