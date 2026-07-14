@@ -740,11 +740,13 @@ Rowe knowing what a line looks like when it breaks.
     (*Eirene-7*) held at Sal Vento, a Loera cliff-side port
 5.  Verlaine-Atrament border
 6.  Schmalburg, Atrament (raid; Ardea's death)
-7.  **Sal Vento (Loera cliff-side port)** — mission: acquire the *Eirene-7*; the party moves
-    through the port's cargo transfer lines to reach the impounded hull; M-101 body-snatches
-    the Eirene-7's control-mind and flies it out — the ground operation becomes an aerial
-    operation without a formal discussion having occurred.
-8.  Forge Hearth (aboard the *Eirene-7*; faster than overland; membrane thin here)
+7.  Forge Hearth — the volcanic ridge, reached **overland (on foot, before the airship)**; membrane
+    thin here; **Orim's Rod is refused for the first time in fifty years** — the Act-3 threshold.
+    The wild borderland *monster corridor* (Scryed hybrids; the apex beast) is crossed on this leg.
+8.  **Sal Vento (Loera cliff-side port)** — the party comes down to the port on foot; mission:
+    acquire the *Eirene-7*; they move through its cargo-transfer lines to the impounded hull;
+    M-101 body-snatches the Eirene-7's control-mind and flies it out — the ground operation becomes
+    an aerial one without a formal discussion having occurred. **From here the journey is by air.**
 9.  Calyx — the plains; monster corridors; the Relic's trace grows warmer; Orim reads it;
     **active war front** — the Verlaine/Atrament line runs through Calyx's eastern plains;
     the party maneuvers around it from the Eirene-7, reading smoke columns to find the gap
