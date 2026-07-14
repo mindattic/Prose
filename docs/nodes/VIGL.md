@@ -1922,6 +1922,35 @@ no order to follow.
 
 ---
 
+## Structural Blueprint {#SS-VIGL-blueprint}
+
+> Generated 2026-07-13 by `ss --generate-blueprint`. Do not hand-edit. Re-generate after structural changes.
+
+**Subplot:** Kressida Haun's irreversible fusion to her battle-rig — she cannot be separated from the thing the system did to her body, mirrors Rowe's inability to un-take the oath administered before he had language for it. Both characters are walking evidence of what institutional machinery costs the individual. The subplot asks whether you can still be a person when the system has become physically part of you.
+
+*Thematic parallel:* The A-plot asks "What are you loyal to when you find out what the thing you loved actually is?" The subplot asks the inverse: "What are you when you cannot choose to stop being what the system made you?" Kressida's rig-fusion and Rowe's conscription-before-language are two answers to the same institutional violence.
+
+**Temporal scheme:** Nonlinear. The story opens at beat 0 with the theft in progress (in medias res, Pallor Knight POV entering the archive), then cuts to beat 24 (Lyra's pre-theft night at the station, the argument about bread, the note left for Vega) before returning to beat 1 (Lyra discovers the aftermath). The Rowe and Vega threads (beats 26, 27, 29, 31, 34, 37, 47) intercut chronologically but are temporally behind the Lyra thread, so the reader knows Rowe's origin before Lyra finds him, and knows Vega has sealed the notary instrument before Lyra arrives at Sinter. The cut at beat 24 withholds the fact that Lyra was present at the station the night before — establishing her as the archive keeper before revealing her as a sister and a person who argued about bread.
+
+**Resolution mode:** Mixed. External success: the Relic is recovered, Vega's notary seal creates a canonical instrument Prelacze cannot erase, and Lyra refuses the writ in front of witnesses — the institutional record exists. Significant cost: Ardea is dead, Lyra's T-044 designation and thirty-year standing are forfeit, Kressida remains fused to her rig, the Liturgy's military mobilization is unresolved. The ending is not peace — it is the first moment of Lyra having no institution behind her.
+
+**Moral polarity:** Ambivalent.
+
+**Escalation curve:** `[3,4,3,4,5,5,6,6,5,6,6,7,7,6,4,5,5,5,5,4,5,5,4,5,3,4,3,4,4,5,5,6,5,6,6,7,6,6,8,7,7,6,7,8,7,7,6,5,7,8,8,10]`
+
+**Form device:** Epistolary fragment — Vega's chapters are structured around the canonical documents she is copying and notarizing; the bureaucratic text of the instruments appears as block quotation within her POV sections.
+
+**Ending style:** Avalanche. No epilogue.
+
+**Intertextual anchors (5):**
+1. *Aerostatic Architecture specification sheet* — Tavar produces a folded copy annotated in a different ink when planning the Eirene-7 acquisition. Lyra reads the annotations, not the document. (Beat 43 / SK1600)
+2. *(Unattributed quote)* — Carved into the lintel of the Twr Brennid vault on Caer Glas Moor — the Long Seat's answer to the Eighth Theory. Lyra reads it aloud, once, in the rain. Orim says he has seen it before and did not understand it the first time either. (Beat 50 / SK2100)
+3. *Kenji Okonkwo-Barrett quote* — Rowe quotes this, haltingly in Cauld that is not yet fluent, during his channel testimony. He doesn't know the author's name. He learned it from another conscript who had it written on the inside of a boot. (Beat 44 / SK1700)
+4. *(Unattributed quote)* — Pinned above Vega's copy desk. She has stopped seeing it. When she recognizes the M-101 designation as her sister's, the camera lingers on the quote for one sentence before she stands up. (Beat 31 / SK1200)
+5. *Kenji Okonkwo-Barrett quote* — Orim cites this to Lyra at the Forge Hearth when she asks why he kept taking the contracts for forty years after he knew about the intake. He does not say it is a quote. She does not ask. (Beat 40 / SK1400)
+
+---
+
 ## 11. User Stories {#SS-VIGL-11}
 
 - **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe, Kressida,
