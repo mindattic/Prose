@@ -1099,9 +1099,9 @@ Render the whole node as one continuous narration (no per-beat voice drift) and 
 - `ttsEngine` (string, optional) — TTS engine: elevenlabs (default) | piper | kokoro | chatterbox.
 - `robust` (bool, optional) — Set to true to retune this node's frozen voice snapshot to Robust stability (1.0) before recording.
 
-### `publish_docx`
+### `publish_node`
 
-Render a node to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Desktop). Returns the path of the written file. Use get_node first to confirm the node exists.
+Render a node to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Desktop). Returns the path of the written file. The CLI command `ss --publish --slug <slug>` renders the same .docx alongside .epub/.pdf/.txt in one pass. Use get_node first to confirm the node exists.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `author` (string, optional) — Author name to embed in the document properties. Optional.

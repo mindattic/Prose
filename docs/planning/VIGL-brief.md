@@ -3,12 +3,12 @@ codex: 1
 project: StreetSamurai
 layer: planning
 code: VIGL
-title: The Vigil's End
+title: Vigil's End
 universe: fantasy
 updated: 2026-07-12
 ---
 
-# Story Brief: VIGL — The Vigil's End {#SS-BRIEF-VIGL}
+# Story Brief: VIGL — Vigil's End {#SS-BRIEF-VIGL}
 
 > **This brief is mandatory before creating a node bible or any DB records.**
 > Universe: Fantasy / The Cauld (Universe #2). Not GLMZ. GLMZ arc sections replaced with
@@ -74,7 +74,7 @@ All characters are new to production. Entry states are world-state-derived, not 
 |---|---|
 | Dame Lyra M-101 | Ocipheus Knight, 3 infusions, fully loyal to House and Liturgy; Transmutation researcher with strong institutional trust; has never questioned the intake protocol she has contributed to |
 | Orim Zebulun | Contracted minor scryer, no House, 60 years of working for all Houses; knows Scrying's cost and has chosen complicity; wide-world knowledge; curious |
-| Rowe (Edvard Rowe) | Sphere 31 origin; 7 months in Vierna service after piercing; 3 weeks deserting; no Cauld language; carries memories of his origin world but cannot communicate them yet |
+| Rowe (Soren Rowe) | Sphere 31 origin; 7 months in Vierna service after piercing; 3 weeks deserting; no Cauld language; carries memories of his origin world but cannot communicate them yet |
 | Kressida Haun | Atrament battle-rig pilot, active service, Schmalburg garrison; rig intact; no existential crisis yet — she's a functioning soldier |
 | Capt. Tavar (Tavardo Leal) | Lacerta pirate; *Meridian* under Liturgy navigation embargo; active operations in Sal Vento; has his own code; not ideologically motivated |
 | Sgt. Ardea Marten | Lyra's lead Myrmidon; loyal; competent; not yet dead |
@@ -87,7 +87,7 @@ All characters are new to production. Entry states are world-state-derived, not 
 |---|---|---|
 | Dame Lyra M-101 | Knight who has refused a Liturgy writ in front of witnesses; faith in the Liturgy's institutional legitimacy collapsed; retains three new companions and the Relic; politically dangerous now | Her certainty is gone; her competence is intact |
 | Orim Zebulun | Still contracted; still alive; has now listened to Rowe's full testimony and can no longer claim not to have heard it directly. What he does with that is open | Complicity now conscious rather than chosen-not-to-examine |
-| Rowe (Edvard Rowe) | Functional Cauld speaker (basic); has given full testimony about Sphere 31 intake; is in Ocipheus with no legal status but Lyra's informal protection | His testimony is now on record in at least two people's memory |
+| Rowe (Soren Rowe) | Functional Cauld speaker (basic); has given full testimony about Sphere 31 intake; is in Ocipheus with no legal status but Lyra's informal protection | His testimony is now on record in at least two people's memory |
 | Kressida Haun | Fused to BR-7; no surgery available; in Ocipheus; technically a deserter from Atrament service; adapting to permanent partial-machine existence | Cannot return to Atrament; her future is unresolved |
 | Capt. Tavar | Navigation embargo remains; has performed the run and been paid; in Ocipheus; Liturgy still has his ship flagged | Whether he stays or goes is his choice |
 | Sgt. Ardea Marten | Dead. | No exceptions. |
@@ -180,7 +180,7 @@ All entities must be seeded before prose begins.
 |---|---|---|---|
 | Dame Lyra M-101 | character | human | Ocipheus Knight; 3 infusions; female; ~6'5"; Transmutation researcher; POV |
 | Orim Zebulun | character | human | Old man; Calyx origin; minor scryer; no House; contracted |
-| Rowe (Edvard Rowe) | character | human | Sphere 31 origin; Vierna deserter; male; no Cauld language at start |
+| Rowe (Soren Rowe) | character | human | Sphere 31 origin; Vierna deserter; male; no Cauld language at start |
 | Kressida Haun | character | human | Atrament battle-rig pilot; female; fused to BR-7; cannot be removed |
 | Capt. Tavardo Leal (Tavar) | character | human | Lacerta pirate; male; *Meridian* captain; Liturgy nav embargo |
 | Sgt. Ardea Marten | character | human | Ocipheus Myrmidon; female; dies Beat 7 |

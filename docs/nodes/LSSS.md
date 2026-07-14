@@ -21,7 +21,7 @@ A standalone short story — one complete hunting sequence. Dame Lyra T-044 trac
 and its kin-pack to a creek ford, kills them all, and returns to garrison with the harrower's
 head. No subtext, no arc. A deed. The kind that gets told by firelight afterward.
 
-**Primary function:** Register exemplar for VIGL. Every beat in The Vigil's End should feel
+**Primary function:** Register exemplar for VIGL. Every beat in Vigil's End should feel
 like the event that becomes this story — immediate, physical, specific, deadpan at the return.
 
 **What the prose establishes:**

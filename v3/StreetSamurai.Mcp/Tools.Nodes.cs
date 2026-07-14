@@ -687,9 +687,9 @@ public class NodeTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Export a node as a KDP-ready Word .docx to the configured publish directory (defaults to Desktop).</summary>
-    [McpServerTool, Description("Render a node to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Desktop). Returns the path of the written file. Use get_node first to confirm the node exists.")]
-    public async Task<string> PublishDocx(
+    /// <summary>Export a node as a KDP-ready Word .docx to the configured publish directory (defaults to Desktop). CLI equivalent: `ss --publish`, which additionally emits .epub/.pdf/.txt.</summary>
+    [McpServerTool, Description("Render a node to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Desktop). Returns the path of the written file. The CLI command `ss --publish --slug <slug>` renders the same .docx alongside .epub/.pdf/.txt in one pass. Use get_node first to confirm the node exists.")]
+    public async Task<string> PublishNode(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Author name to embed in the document properties. Optional.")] string author = "")
     {

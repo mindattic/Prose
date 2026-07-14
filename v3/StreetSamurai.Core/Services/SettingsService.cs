@@ -176,7 +176,7 @@ public class SettingsService : IDisposable
     }
 
     /// <summary>The literal output folder for the published manuscript <c>.docx</c> export
-    /// (typically the book's own folder). <c>publish-docx</c> writes
+    /// (typically the book's own folder). <c>--publish</c> writes
     /// <c>&lt;PublishExportDirectory&gt;\&lt;Hyphenated-Title&gt;\&lt;Title&gt; V&lt;N&gt;.docx</c> and clears
     /// any existing <c>.docx</c> in that subfolder first. Empty = Desktop.
     /// Stray wrapping quotes/whitespace are tolerated by the exporter.</summary>

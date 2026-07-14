@@ -5,7 +5,7 @@ code: BCODA
 layer: strand-bible
 universe: glmz
 status: in-progress
-updated: 2026-07-08
+updated: 2026-07-13
 ---
 
 # STRAND BIBLE — Bushido Coda (BCODA) {#SS-BCODA}
@@ -21,11 +21,19 @@ updated: 2026-07-08
 The flagship GLMZ novel. 16 chapters. The book is about **Kyle being manipulated by a rogue AI
 for 11 years** through contracts, E.L.F.s, and bleeds. Reader sees the architecture; Kyle doesn't.
 
+**The thematic spine (LOCKED 2026-07-13):** the slow, inescapable degradation of the Bushido
+Way in Kyle's code of conduct. He abandons each warrior virtue, one by one, to survive and to
+protect the people he loves — *you make yourself dirty to keep others clean.* Seven touchstones,
+Honor last; shown through action, never named (§13, §13g). The last page lands as grief: Kyle
+destroyed who he was to become what she needed him to be, and she will never know the price
+(§13h).
+
 It is simultaneously:
 - A love story (Kyle and Pixel, across 16 chapters, earning the consummation at Ch11–12)
 - A search for truth about himself (who trained him; what he is; why the contracts keep coming)
 - The first glimpse of the AI cabal that broke the world
-- Kyle's rules written in full, chapter by chapter
+- The unwriting of Kyle's code, virtue by virtue — the rules he lives by, taken from him by the
+  city one at a time until the warrior is gone and only the person is left
 
 **Register: CODA** — `docs/registers/CODA.md` (LOCKED). Warm-propulsive frame that DROPS
 to SORROW-grade elegiac exactness for sacred beats (the bow, a death, the lemon tree, the
@@ -515,7 +523,13 @@ G5g ✅ Review all 16 chapters ≥82% standalone; cumulative ≥85% — **COMPLE
 - **BCODA-US-G5g ✅** All 16 chapters reviewed ≥82% standalone; cumulative 88.8/100 ≥85%. (2026-06-23)
 - **BCODA-US-1 ✅** Mr. Able + Continuity Office descriptions added to DB (2026-06-23).
 - **BCODA-US-2 ⬜** Book-context milestone review at 4–6 chapters (200-ballot); author 90 gate.
-- **BCODA-US-3 ⬜** Docx exported.
+- **BCODA-US-3 ✅** Manuscript exported (2026-07-13): Bushido Coda **V31** .docx/.epub/.pdf/.txt to R:\Desktop\EPub\MindAttic\Scry\Street Samurai\Bushido Coda\ (author MindAttic), post-degradation-arc.
+- **BCODA-US-4 ✅** Degradation-of-the-Way arc implemented in prose (2026-07-13): seven virtue-
+  abandonment touchstones (Courtesy Ch4 / Mercy Ch10 / Honesty Ch12 / Rectitude Ch15 / Loyalty
+  Ch15 / Courage-to-die Floor / Honor 35th&Halsted), Honor last; One Knock recut for grief.
+  Evidence: DB CHARINDEX sweep confirmed all seven insertions live (2026-07-13); see §13g/§13h.
+- **BCODA-US-5 ⬜** Beat-splitting: monster single-beat chapters (Ch2/3/4/5/9/14, WO16000) split
+  at scene boundaries into manageable beats (in progress 2026-07-13).
 
 ## 11. Structural Blueprint (2026-07-10) {#SS-BCODA-11}
 
@@ -549,7 +563,13 @@ _Source of truth: `NodeStructuralBlueprints` row `43309874-C89B-48DA-9BC6-2A3F08
 **Subplot — HasSubplot: true | Granularity: chapter**
 Mr. Able runs escalating Praxis/Lotus/ArcSec assets at Kyle across the full book. Reader-only: Kyle never knows Able is pursuing him. Able kills a board member mid-meeting to protect budget allocation (cut-away "Eleven Seconds" — 11 seconds of silence). His recovery assets are the boss-fight soldiers at 35th and Halsted. Able wins the experiment (contact made) and loses the asset (schism closes, channel gone). The book ends without showing his response.
 
-_Theme:_ A-plot and subplot both trace constructed purpose — Kyle's installed by Marrow, Able's chosen from evidence of the Machine God's reach. Kyle transcends his installation by choosing to exist as himself. Able cannot — true believers do not get exits. The A-plot asks: if your purpose was installed, can you choose a different one? The subplot answers: only if you can recognize the installation.
+_Theme (SHARPENED 2026-07-13 — see §13):_ the degradation of the Way. Kyle abandons each Bushido
+virtue, one by one, to survive and protect the people he loves — *you make yourself dirty to keep
+others clean.* The subplot mirrors it by inversion: Able is a true believer who never dirties
+himself because he loves no one, and so is never forced to choose. Both run a constructed purpose
+(Kyle's installed by Marrow, Able's chosen faith in the Machine God's reach); Kyle spends his for
+others, Able has no one to spend his for. The A-plot asks what it costs to keep the people you love
+clean. The subplot answers: everything, and only a person who loves has anything to lose.
 
 **Temporal scheme: linear**
 No formal anachronies. The entity's 5D perspective creates a virtual retroactive anachrony: events that read chronological on first pass are revealed in retrospect to have been orchestrated from outside sequential time (the Rube Goldberg spine). No flashbacks, no flash-forwards. Prose is strictly chronological; the dual readability is semantic, not structural.
@@ -558,12 +578,18 @@ No formal anachronies. The entity's 5D perspective creates a virtual retroactive
 Three simultaneous external events close the book: (1) Kyle wins the boss fight, (2) the Machine God makes full contact at the Schism threshold, (3) the schism at 35th and Halsted dissipates. Kyle's interior state is precondition, not resolution. Resolution happens to him as much as through him. Never internal-understanding alone — the Schism must physically close.
 
 **Moral polarity: ambivalent**
-The entity chose not to prevent Sift's death and used the grief as a lever — and is also the only reason Kyle is alive. Able is a genuine true believer who kills with surgical calm. Praxis's program destroyed nine human beings and produced Kyle. Kyle's constructed code is simultaneously a violation and the skeleton that kept him alive. No faction is clean. The book refuses to adjudicate.
+Kyle's degradation is both a sacrifice (he takes the stain so his loved ones stay clean) and a
+real self-destruction (he ends the book effective and no longer whole). The entity chose not to
+prevent Sift's death and used the grief as a lever — and is also the only reason Kyle is alive.
+Able is a genuine true believer who kills with surgical calm. Praxis's program destroyed nine human
+beings and produced Kyle. Kyle's constructed code is simultaneously a violation and the skeleton
+that kept him alive — and shedding it is both liberation and loss. No faction is clean; Kyle least
+of all by the end. The book refuses to adjudicate.
 
 **Form device:** Unreliable coincidence — every event is both 3D-random and 5D-orchestrated. First read: bad luck and good timing. Reread: the same events as choreography from a vantage point outside sequential time.
 
 **Ending style: avalanche | No epilogue**
-Cascade: boss fight → Machine God contact → schism closes → Kyle comes home. Then One Knock — she comes through, they go eat. The Pulse runs the night's freight below. The city needs nothing from him tonight. No coda, no time-jump, no wrap-up. Praxis's channel loss and Able's hollow completion implied by what does not happen. Final image: two people going to dinner.
+Cascade: boss fight → Machine God contact → schism closes → Kyle comes home. Then One Knock — she comes through, they go eat. The Pulse runs the night's freight below. The city needs nothing from him tonight. No coda, no time-jump, no wrap-up. Praxis's channel loss and Able's hollow completion implied by what does not happen. Final image: two people going to dinner — **but the resonance is grief, not triumph (§13h):** Kyle spent every warrior virtue to keep the people he loves clean, and the last page must land that cost. Pixel cannot see everything he stopped being so she would never have to; "the city needs nothing from him tonight" now means there is no one left to bleed for. The reader alone knows the price he carries and hides. Depletion with one warm point.
 
 **Escalation curve (25 chapter-level positions):**
 
@@ -704,7 +730,15 @@ Pixel knows he is dying. She opened the Clybourn permit at 02:14 and did the mat
 
 ### 11d. Vey's Antiquity & Stationary — early plant {#SS-BCODA-11d}
 
-**EXECUTED — Ch1 (Teeth), SK:64000.** The first in-person visit to Vey's is in Ch1, not Ch4. The beat establishes the Faraday cage ("Faraday mesh in the walls, no signal in or out, the quietest room in the GLMZ"), Vey's philosophy on the value of the uneditable, and Kyle paying with a true thing. Ch2 (Provenance) references the subscriber-file service by name (ANTIQUITY & STATIONARY) but is not the first visit.
+**CORRECTED 2026-07-13 (prose wins, SS bible-vs-prose rule).** The intended Ch1 Vey plant at
+**SK:64000 ("Antiquity and Stationary") is currently DISABLED** — it is NOT in Ch1's enabled beat
+list (61000, 62000, 63000, 65000 are enabled; 64000 is not). So the first in-person Vey visit on
+the page is actually **Ch2 (Provenance)**, not Ch1. The "clean man" subscriber thread seeded in
+Ch1 at SK:63000 therefore has **no on-page payoff inside Ch1** — an open orphan. Options for
+closure (pick one in a later pass): (a) re-enable/rewrite SK:64000 so the Ch1 visit happens as
+originally designed, or (b) accept Ch2 as the first visit and add one line in Ch2 that closes the
+"clean man" thread Ch1 opened. Until then, treat Ch2 as the first Vey scene. The plant's intended
+payload (below) still describes the target state whenever the visit is staged.
 
 **What the plant delivers:**
 - Physical space: old tech, Faraday mesh, the specific silence of no relay channels.
@@ -1165,16 +1199,39 @@ Before the book is considered structurally complete, every item below must be pr
 
 ---
 
-## 13. Kyle's identity arc — "The Code Is Not The Man" (LOCKED 2026-07-10) {#SS-BCODA-13}
+## 13. Kyle's identity arc — the degradation of the Way (LOCKED 2026-07-13) {#SS-BCODA-13}
 
-**The samurai code is the book's second antagonist.**
+**This is the book's spine. The Rube Goldberg plot (§12) is the machine; this is the wound.**
 
-It is not an enemy. It is the wrong tool for the wrong world, installed in the wrong century
-by a committee that doesn't exist. Kyle lives by Seito's code because Seito's code is all he
-knows how to live by. The Marrow program gave him Seito. Seito gave him the code. The code
-gave him rules that work in a world where honor means something.
+*Bushido Coda* is the **coda of the code** — the concluding passage in which the Way of the
+Warrior ends, virtue by virtue. Kyle opens the book with the whole code intact: he bows, he
+fights clean, he shows mercy, he tells the truth, he keeps faith with his master, he stands
+ready to die well. Over sixteen chapters GLMZ takes each of these from him — not in one fall
+but in **seven separate, deliberate abandonments** (§13g), each one forced, each one a
+survival, each one paid so that someone he loves stays clean.
 
-He is in 2226 GLMZ. Honor is a liability.
+**The theme, stated once for the writers and NEVER on the page:** *you make yourself dirty to
+keep others clean.* Every virtue Kyle abandons is a real loss — a piece of who he was, given up
+because keeping it would have gotten Pixel, or Mrs. Chen, or the crew, killed. The samurai dies
+with his honor whole. Kyle chooses, seven times over, to keep living without another piece of
+it, because the dead protect no one.
+
+**The tragedy and the liberation are the same event, and the book holds both.** Seen one way,
+the code was never his — a program installed by a committee that doesn't exist (§13b), and
+shedding it is Kyle becoming a person instead of a weapon running someone else's specification.
+Seen the other way — **the way that must dominate the last page** — Kyle is destroying who he is
+to become what the people he loves need him to be, and the destruction costs him the very things
+it was supposed to free him from. Both readings are true at every touchstone. The prose never
+adjudicates between them (same dual-readability law as the entity, §12a).
+
+**CANON LOCK — invisible framing (user ruling 2026-07-13):** The words "bushido," "virtue,"
+"the Way," and the names of the seven virtues NEVER appear in the prose. The degradation is
+shown only through action — the bow not given, the lie told, the dirty win — and through what
+Kyle stops doing that he used to do. The reader feels the sum of the losses without being handed
+the ladder. On a reread the seven touchstones resolve into a sequence; on a first read they are
+simply the cost of the city.
+
+He is in 2226 GLMZ. Honor is a liability. The book is what it costs him to learn that.
 
 ### 13a. How the code costs him {#SS-BCODA-13a}
 
@@ -1236,16 +1293,25 @@ Taking the position the situation requires, not the position the code prefers.
 The skill set is identical. The frame is different. Kyle without the code is not a lesser
 operator. He is the same operator making choices instead of following a program.
 
+**But do not write this as a triumph.** "Street Samurai" is what's left after the amputations,
+not a promotion. He is more effective and less whole. The competence was always his; the code
+was the thing that made the competence mean something, and he has spent it, piece by piece, to
+keep other people alive. The distinction in §13c is the book's answer to *what survives*; it is
+not the book's mood. The mood is grief (§13h).
+
 ### 13d. The arc's progression through the book {#SS-BCODA-13d}
 
-| Phase | Chapters | Code status | What it costs Kyle |
+The phase overview; the per-touchstone detail is §13g.
+
+| Phase | Chapters | Virtue falling | What it costs Kyle |
 |---|---|---|---|
-| **Installed** | Ch1–9 | Fully operational; Kyle doesn't know it's installed | Physical damage in fights; going alone when he shouldn't |
-| **Questioned** | Ch10–12 | Hairline crack — Cinderfall, the entity's pattern, Pixel as anchor | Begins making one choice per chapter that the code would not have made |
-| **Exposed** | Ch13–15 | Seito revealed as fabricated; the code's origin is known | Identity crisis; goes rigid (the code runs harder when threatened) |
-| **Crisis** | Nadia scene | "I'm not even a person. I'm a meatbag haunted by dozens of ghosts." | Cannot operate; Pixel arrives anyway (beacon scene) |
-| **Shed** | Ch16 pre-encounter | Kyle makes three consecutive choices the code would have refused | Physical damage drops; he is faster, nastier, more effective |
-| **Resolution** | Final encounter | Kyle holds contact with the entity — not the composite, not the code | The entity connects to him because there is a him to connect to |
+| **Intact** | Ch1–3 | none — the code whole | The baseline. He bows, fights clean, tells the truth. The reader banks what will be spent. |
+| **First stains** | Ch4–10 | Courtesy (Ch4), Mercy (Ch10) | He stops giving the enemy the ceremony; he takes the kill through the line, not around it. Small at first, then not. |
+| **The private lie** | Ch12 | Honesty | He hides his dying from Pixel and sustains it. The first virtue spent on someone he loves rather than someone he fights. |
+| **The dirty work** | Ch13–15 | Rectitude (the unjust job), Loyalty (Seito revealed fabricated → masterless) | Identity crisis; the code runs rigid, then its foundation is pulled out. "I'm not even a person. I'm a meatbag haunted by dozens of ghosts." |
+| **Choosing to live** | The Floor Is Hard | Courage-to-die | He surrenders the readiness to die clean and chooses to keep existing — dirtied, masterless — for her. The hinge. |
+| **The last stain** | 35th & Halsted | Honor | He wins the way the code forbids — booby-trap, blind kill, the ungoverned sledgehammer. The most iconic virtue, spent last, to close the Schism and keep everyone alive. |
+| **The coda** | One Knock | — | Nothing left to spend. The dirtied man, alive, goes to dinner. The grief is that she will never know the price (§13h). |
 
 ### 13e. Implementation rules for combat beats {#SS-BCODA-13e}
 
@@ -1299,6 +1365,77 @@ The Rube Goldberg spine (§12) and this arc are the same story. The entity arran
 of events to produce the one human whose hardware could survive direct 5D contact. The code
 would have rejected the contact as dishonorable — a violation of the samurai's solitary
 discipline. Kyle holds.
+
+### 13g. The seven touchstones (AUTHORITATIVE — LOCKED 2026-07-13) {#SS-BCODA-13g}
+
+Seven resonant moments, one per virtue, in fixed order. Each is a scene the reader will
+remember — the ladder the whole book descends. **Honor falls last, at the penultimate chapter
+(35th & Halsted); The Floor Is Hard is the hinge that makes the last fall possible.** Each
+touchstone must satisfy all four tests:
+
+1. **Forced.** GLMZ leaves no clean option. The abandonment is the only survivable move.
+2. **For someone.** The stain is paid to keep a specific loved one clean/safe/alive — name them.
+3. **A real loss.** Not a shrug, not a growth beat. Something of Kyle dies here and the prose
+   lets it hurt (drop to SORROW-grade on the abandonment itself, per CODA law).
+4. **Shown, never named.** No "bushido," no "virtue," no lecture. The reader sees the missing
+   bow, the taken shortcut, the told lie — and *feels* the subtraction.
+
+| # | Virtue (internal only) | Chapter | The dirtying act | Kept clean | Register |
+|---|---|---|---|---|---|
+| 1 | **Courtesy** — the bow, the announced draw, respect owed even to an enemy | Ch4 The Carousel (Cacophony's first discharge) | He does not bow, does not announce. The shotgun answers first, loud and ugly, to end it before it spreads. | The carousel's children; bystanders | warm→brief cold |
+| 2 | **Mercy** — the clean kill, the step *around* the civilian line, the spared opponent | Ch10 The One Who Doesn't Stop | He takes the kill *through* the line, not around it; he does not stop where mercy demands, because stopping kills someone downstream. | the ones past the line; the child's heading | STRIKE, then cold |
+| 3 | **Honesty** — sincerity, the truth owed to one's own | Ch12 One Shoe / IL-4 | He hides his dying from Pixel and sustains the omission. The first virtue he spends on someone he loves, not someone he fights. | Pixel — she doesn't carry his death | SORROW |
+| 4 | **Rectitude** — justice, the right target, clean hands in the work | Ch13 The Offer → Ch15 Work Order | He leverages a near-innocent (Dae-ho Yim) and takes the unjust job to buy the intel. He becomes, briefly, the kind of operator he despises. | the crew — the intel keeps them breathing | cold |
+| 5 | **Loyalty** — fealty to the master, to Seito, to the code as a thing worth serving | Ch15 Work Order (Seito revealed fabricated) | The master never existed. He stops serving the code as master and becomes rōnin — masterless, by choice, because the code's answers would get her killed. | Pixel — protected by his judgment, not the code's | SORROW |
+| 6 | **Courage-to-die** — the samurai's readiness to die clean rather than live dishonored | The Floor Is Hard | He surrenders the honorable death and *chooses to keep living* — dirtied, masterless — for her. Choosing to exist is the hinge; the dead protect no one. | Pixel — he stays alive to keep standing between her and the city | SORROW→warm (the consummation) |
+| 7 | **Honor** — the last, most iconic; the whole visible self of the samurai | 35th & Halsted (penultimate) | He wins the way the code forbids: booby-trap, the blind kill, the ungoverned neuretic sledgehammer. No bow, no clean line, no mercy. The last thing he had. | everyone — the Schism closes, Pixel arrives, the city is safe tonight | STRIKE→silence |
+
+**Continuity of the descent.** After each touchstone the abandoned virtue *stays* abandoned —
+the reader should notice Kyle no longer does the thing he used to do. Post-Ch4 he no longer
+bows to what he kills. Post-Ch10 he no longer steps around the line. Post-Ch12 there is a
+truth between him and Pixel that he keeps choosing not to close. The losses accrue; they do not
+reset. By 35th & Halsted the man who bowed in Ch1 is unrecognizable in method, and the reader
+who banked that Ch1 bow feels the whole distance at once.
+
+**Do not over-signpost.** At most one touchstone per movement, and never a beat that stops to
+underline it. The subtraction is the instrument. If a reader on first pass thinks "ah, a virtue
+just fell," it is too loud — rewrite until it reads as *the city took something and he let it
+go because he had to*.
+
+### 13h. The last page — what the reader closes the book feeling (LOCKED 2026-07-13) {#SS-BCODA-13h}
+
+**Author's target (verbatim ruling):** *"It's tearing me apart knowing Kyle has to destroy who
+he is to become what he needs to be. Make sure that's what resonates on the last page when the
+reader closes the book."*
+
+One Knock is the coda after the coda. The finale's external events have resolved (the Schism
+closed, the fight won, Pixel arrived). What is left is a man who spent himself down to nothing
+to keep the people he loves clean, and the last image must land that cost as **grief, not
+triumph.** The dinner is quiet because a person has just finished dismantling himself and the
+only thing still standing is the reason he did it.
+
+**Rules for the closing beat:**
+- **No victory posture.** He won; the prose does not celebrate. The win is why he is emptied,
+  not a reward.
+- **She does not know the price — and that is the point.** Pixel comes through the wall with the
+  warm soldering iron. She sees the man. She cannot see the ledger of everything he stopped being
+  so that she would never have to. His keeping it from her is the seventh virtue's shadow (§13g
+  #3): the lie of *I'm fine* is the last mercy he has left to give, and it is the loneliest thing
+  in the book. **This is the resonance** — she asks *You eat?* and he says no and they go, and the
+  reader knows what she doesn't.
+- **The city needs nothing from him tonight** — keep the line; it now means *for the first time
+  there is no one left to bleed for, and he does not know what a man is when he isn't bleeding.*
+- **One flat interior line, colder than the chapter, then white space.** Do not explain the
+  grief. Name nothing (no "code," no "honor"). The subtraction the whole book performed is the
+  meaning; the last beat only has to let it be quiet.
+- **Not despair — depletion with one warm point.** Pixel is the single thing the dismantling was
+  *for*, and she is real, and she is here. The book ends on that one warm point inside the cost,
+  which is exactly why it aches. The warmth is what makes the grief land (CODA law).
+
+**Execution note:** the current One Knock beats end on motion and the Pulse's freight below.
+Keep the architecture; deepen the final interior so the reader's last felt thing is the price,
+carried alone, behind an ordinary *You eat?*. Draft candidates go through the same Sonnet→Opus
+polish; this beat gets the most passes in the book.
 
 ---
 

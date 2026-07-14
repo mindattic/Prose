@@ -570,7 +570,7 @@ dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md
 | File | Tool family |
 |---|---|
 | `Tools.cs` | Primary canon lookup — characters, places, factions, CorpoNations, literary rules |
-| `Tools.Nodes.cs` | Node + beat CRUD — insert / split / delete / join / rebeat / reflow / publish-docx / narrate / spine |
+| `Tools.Nodes.cs` | Node + beat CRUD — insert / split / delete / join / rebeat / reflow / publish / narrate / spine |
 | `Tools.Encyclopedia.cs` | Read-only encyclopedia — weapons, ammo, equipment, tech, cyberware, apparel, pharma, automata, archetypes, quotes, documents |
 | `Tools.EntityCrud.cs` | Create/upsert all typed entity kinds |
 | `Tools.WorldModelling.cs` | 7 prose-continuity services + entity tree, world-state-at-beat, post-beat validation, timeline consistency, prose lessons |
