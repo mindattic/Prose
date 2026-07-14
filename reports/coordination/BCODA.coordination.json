@@ -2,9 +2,9 @@
   "nodeCode": "BCODA",
   "slug": "bushido_coda",
   "title": "Bushido Coda",
-  "generatedAtUtc": "2026-07-14 13:59:12Z",
+  "generatedAtUtc": "2026-07-14 17:21:56Z",
   "totalBeats": 520,
-  "covered": 499,
+  "covered": 520,
   "chapterGranular": true,
   "storyScope": {
     "TemporalScheme": "linear",
@@ -16,8 +16,7 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 520,
-    "STUB_PROSE": 21
+    "UNSCORED": 520
   },
   "beats": [
     {
@@ -213,10 +212,9 @@
       "BeatTags": [],
       "ProseLength": 185,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a829-7231-a311-822a94e1e7cb",
@@ -430,10 +428,9 @@
       "BeatTags": [],
       "ProseLength": 25,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-76de-8b13-09b611f92c31",
@@ -449,10 +446,9 @@
       "BeatTags": [],
       "ProseLength": 22,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7eb8-8bb6-5b7be728b58f",
@@ -504,10 +500,9 @@
       "BeatTags": [],
       "ProseLength": 78,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-72d0-898f-22ec894abf16",
@@ -523,10 +518,9 @@
       "BeatTags": [],
       "ProseLength": 153,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-707a-be0f-28a81b4e59bc",
@@ -578,10 +572,9 @@
       "BeatTags": [],
       "ProseLength": 126,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7486-a392-2a840052d57e",
@@ -615,10 +608,9 @@
       "BeatTags": [],
       "ProseLength": 88,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7bb6-bd26-0128e8947ab9",
@@ -670,10 +662,9 @@
       "BeatTags": [],
       "ProseLength": 135,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7530-8f7e-56ec119a5133",
@@ -815,10 +806,9 @@
       "BeatTags": [],
       "ProseLength": 93,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7b51-a0ac-22798fb1dfe3",
@@ -852,10 +842,9 @@
       "BeatTags": [],
       "ProseLength": 68,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-753a-8e78-6cf9daf5ae38",
@@ -889,10 +878,9 @@
       "BeatTags": [],
       "ProseLength": 22,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7ebb-bb38-42447ba88c17",
@@ -926,10 +914,9 @@
       "BeatTags": [],
       "ProseLength": 21,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-74a0-89d9-530130b645c0",
@@ -945,10 +932,9 @@
       "BeatTags": [],
       "ProseLength": 71,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7249-8c92-b0fb0d8f05fa",
@@ -982,10 +968,9 @@
       "BeatTags": [],
       "ProseLength": 40,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7eec-9ecb-aa3d76e77221",
@@ -1001,10 +986,9 @@
       "BeatTags": [],
       "ProseLength": 56,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82a-7b0d-8dbf-26bfdd17d1ee",
@@ -1271,10 +1255,9 @@
       "BeatTags": [],
       "ProseLength": 103,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82b-7c78-941a-c68f69e25095",
@@ -1290,10 +1273,9 @@
       "BeatTags": [],
       "ProseLength": 118,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82b-70e6-99ad-df0fab2ee435",
@@ -1345,10 +1327,9 @@
       "BeatTags": [],
       "ProseLength": 132,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82b-717f-9cad-34ec60e4ca92",
@@ -1364,10 +1345,9 @@
       "BeatTags": [],
       "ProseLength": 143,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82b-781e-a068-19a5bc7a1892",
@@ -1401,10 +1381,9 @@
       "BeatTags": [],
       "ProseLength": 174,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82b-7fc1-908d-b10365fe276f",
@@ -1420,10 +1399,9 @@
       "BeatTags": [],
       "ProseLength": 50,
       "Flags": [
-        "STUB_PROSE",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019e4d4a-a82b-79d8-bccc-0a9b5f2c872c",

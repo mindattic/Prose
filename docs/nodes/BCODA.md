@@ -1512,9 +1512,9 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 > **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
 > Full record: `reports/coordination/BCODA.coordination.json`.
 
-**Coverage:** 499/520 beats fully covered. Story-wide construction: temporal=linear, resolution=external-event, moral=ambivalent, ending=avalanche, granularity=chapter.
+**Coverage:** 520/520 beats fully covered. Story-wide construction: temporal=linear, resolution=external-event, moral=ambivalent, ending=avalanche, granularity=chapter.
 
-**Gap counts:** UNSCORED=520 · STUB_PROSE=21
+**Gap counts:** UNSCORED=520
 
 ### Chapter 1: Teeth
 
@@ -1530,7 +1530,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 552 | `019e4d4a-a829-7f99-bb38-fbc9d183abbd` | Opening Image | A skilled warrior carries a named blade with a troubled… | 2/arrival | 348c | UNSCORED |
 | 543 | `019e4d4a-a829-7960-9731-e0f93fcee537` | Opening Image | Kyle carries a compact shotgun named Cacophony as a las… | 2/arrival | 699c | UNSCORED |
 | 539 | `019e4d4a-a829-74a6-a6f0-d312c7f3141a` | Opening Image | Kyle enters a room with six augmented fighters and imme… | 2/arrival | 1783c | UNSCORED |
-| 556 | `019e4d4a-a829-7b33-87e3-fff01c1ed367` | Opening Image | A card game among friends turns tense when the stakes o… | 2/arrival | 185c | STUB_PROSE,UNSCORED |
+| 556 | `019e4d4a-a829-7b33-87e3-fff01c1ed367` | Opening Image | A card game among friends turns tense when the stakes o… | 2/arrival | 185c | UNSCORED |
 | 516 | `019e4d4a-a829-7231-a311-822a94e1e7cb` | Opening Image | Kyle's neural implant activates in a tense standoff, gi… | 2/arrival | 1124c | UNSCORED |
 | 534 | `019e4d4a-a82a-7f75-ade6-b85c05303459` | Opening Image | Silence draws his specialized blade and assumes a marti… | 2/arrival | 894c | UNSCORED |
 | 526 | `019e4d4a-a82a-7e5e-95b9-a79763bd61c3` | Opening Image | A skilled operative executes a precisely planned passag… | 2/arrival | 891c | UNSCORED |
@@ -1542,20 +1542,20 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 518 | `019e4d4a-a82a-7c1a-b8f4-8267cf73de53` | Theme Stated | A cyborg fighter reveals her augmented capabilities and… | 2/arrival | 1072c | UNSCORED |
 | 507 | `019e4d4a-a82a-78d9-9d22-63c0ef494b78` | Theme Stated | Kyle systematically dismantles his opponent by studying… | 2/arrival | 2200c | UNSCORED |
 | 513 | `019e4d4a-a82a-75a1-ad39-7dcb1edb08f7` | Theme Stated | A skilled assassin systematically dismembers five victi… | 2/arrival | 987c | UNSCORED |
-| 555 | `019e4d4a-a82a-7de4-b311-fdeb05a9a90e` | Theme Stated | Kyle reacts quickly to an immediate threat or stimulus,… | 2/arrival | 25c | STUB_PROSE,UNSCORED |
-| 477 | `019e4d4a-a82a-76de-8b13-09b611f92c31` | Theme Stated | The boss rises, signaling a shift in power dynamics or … | 2/arrival | 22c | STUB_PROSE,UNSCORED |
+| 555 | `019e4d4a-a82a-7de4-b311-fdeb05a9a90e` | Theme Stated | Kyle reacts quickly to an immediate threat or stimulus,… | 2/arrival | 25c | UNSCORED |
+| 477 | `019e4d4a-a82a-76de-8b13-09b611f92c31` | Theme Stated | The boss rises, signaling a shift in power dynamics or … | 2/arrival | 22c | UNSCORED |
 | 506 | `019e4d4a-a82a-7eb8-8bb6-5b7be728b58f` | Theme Stated | Kyle abandons his gun advantage and draws his katana to… | 2/arrival | 1360c | UNSCORED |
 | 533 | `019e4d4a-a82a-78d4-9802-b1d119db1b30` | Theme Stated | The boss reveals himself as a formally trained swordsma… | 2/arrival | 1059c | UNSCORED |
-| 519 | `019e4d4a-a82a-7783-a7ed-8b4f7ba72bfa` | Theme Stated | A man trades his chrome—his most valuable possession—fo… | 2/arrival | 78c | STUB_PROSE,UNSCORED |
-| 486 | `019e4d4a-a82a-72d0-898f-22ec894abf16` | Theme Stated | A character chooses to fight despite having a safe esca… | 2/arrival | 153c | STUB_PROSE,UNSCORED |
+| 519 | `019e4d4a-a82a-7783-a7ed-8b4f7ba72bfa` | Theme Stated | A man trades his chrome—his most valuable possession—fo… | 2/arrival | 78c | UNSCORED |
+| 486 | `019e4d4a-a82a-72d0-898f-22ec894abf16` | Theme Stated | A character chooses to fight despite having a safe esca… | 2/arrival | 153c | UNSCORED |
 | 489 | `019e4d4a-a82a-707a-be0f-28a81b4e59bc` | Set-Up | Two men witness a severed arm fall beneath a dock but d… | 2/arrival | 213c | UNSCORED |
 | 535 | `019e4d4a-a82a-7a53-8279-be7b35fecb20` | Set-Up | The boss probes Kyle's swordplay with a measured strike… | 2/arrival | 838c | UNSCORED |
-| 508 | `019e4d4a-a82a-7ec5-ae9c-67c217dba2c9` | Set-Up | A duelist draws on his disciplined training to face an … | 2/arrival | 126c | STUB_PROSE,UNSCORED |
+| 508 | `019e4d4a-a82a-7ec5-ae9c-67c217dba2c9` | Set-Up | A duelist draws on his disciplined training to face an … | 2/arrival | 126c | UNSCORED |
 | 490 | `019e4d4a-a82a-7486-a392-2a840052d57e` | Set-Up | Kyle presses his attack with a high-right cut, but the … | 2/arrival | 538c | UNSCORED |
-| 499 | `019e4d4a-a82a-73d8-b9fe-46b96e26f6e1` | Set-Up | He executes his practiced moves while you adapt to his … | 2/arrival | 88c | STUB_PROSE,UNSCORED |
+| 499 | `019e4d4a-a82a-73d8-b9fe-46b96e26f6e1` | Set-Up | He executes his practiced moves while you adapt to his … | 2/arrival | 88c | UNSCORED |
 | 472 | `019e4d4a-a82a-7bb6-bd26-0128e8947ab9` | Catalyst | Kyle concedes the touch to establish mutual respect wit… | 2/arrival | 1145c | UNSCORED |
 | 514 | `019e4d4a-a82a-7664-b956-7f3d12d4b082` | Catalyst | The boss realizes Kyle is vulnerable after drawing firs… | 2/arrival | 427c | UNSCORED |
-| 484 | `019e4d4a-a82a-746b-a5bf-1d11b392d1ac` | Catalyst | He surrenders to the performance, abandoning observatio… | 2/arrival | 135c | STUB_PROSE,UNSCORED |
+| 484 | `019e4d4a-a82a-746b-a5bf-1d11b392d1ac` | Catalyst | He surrenders to the performance, abandoning observatio… | 2/arrival | 135c | UNSCORED |
 | 505 | `019e4d4a-a82a-7530-8f7e-56ec119a5133` | Catalyst | Kyle seizes a technical opening in the locked blades to… | 2/arrival | 735c | UNSCORED |
 | 501 | `019e4d4a-a82a-763d-89cc-4f8b3afbabf5` | Catalyst | A master swordsman's blade severs an opponent's augment… | 2/arrival | 734c | UNSCORED |
 | 494 | `019e4d4a-a82a-7508-84f4-4028cce08307` | Catalyst | The boss's cyborg enforcer loses his arm to Kyle's blad… | 2/arrival | 901c | UNSCORED |
@@ -1563,17 +1563,17 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 538 | `019e4d4a-a82a-7854-b628-d1daf2296612` | Catalyst | Kyle's narrow victory in a duel costs him a serious wou… | 2/arrival | 568c | UNSCORED |
 | 551 | `019e4d4a-a82a-78bd-bb06-f66d012742d3` | Debate | Kyle ritually cleans his blade after killing the crew, … | 2/arrival | 768c | UNSCORED |
 | 511 | `019e4d4a-a82a-7666-a0a9-7b1a2d270461` | Debate | A mercenary confronts the corpse of a rival, recognizin… | 2/arrival | 375c | UNSCORED |
-| 480 | `019e4d4a-a82a-7d9f-ad75-0d2ddfc14935` | Debate | Kyle steels himself before an imminent crisis, having d… | 2/arrival | 93c | STUB_PROSE,UNSCORED |
+| 480 | `019e4d4a-a82a-7d9f-ad75-0d2ddfc14935` | Debate | Kyle steels himself before an imminent crisis, having d… | 2/arrival | 93c | UNSCORED |
 | 485 | `019e4d4a-a82a-7b51-a0ac-22798fb1dfe3` | Debate | Kyle methodically collects teeth and surgical hardware … | 2/arrival | 736c | UNSCORED |
-| 550 | `019e4d4a-a82a-7d53-89b3-f40fe7eb9326` | Debate | A daughter observes her father's physical features as a… | 2/arrival | 68c | STUB_PROSE,UNSCORED |
+| 550 | `019e4d4a-a82a-7d53-89b3-f40fe7eb9326` | Debate | A daughter observes her father's physical features as a… | 2/arrival | 68c | UNSCORED |
 | 510 | `019e4d4a-a82a-753a-8e78-6cf9daf5ae38` | Debate | A pursuer has been shadowing him through the facility, … | 2/arrival | 473c | UNSCORED |
-| 517 | `019e4d4a-a82a-7846-a3ba-823b6c84223a` | Debate | A character discovers or confronts her identity as her … | 2/arrival | 22c | STUB_PROSE,UNSCORED |
+| 517 | `019e4d4a-a82a-7846-a3ba-823b6c84223a` | Debate | A character discovers or confronts her identity as her … | 2/arrival | 22c | UNSCORED |
 | 496 | `019e4d4a-a82a-7ebb-bb38-42447ba88c17` | Debate | A wounded man reveals himself to a hidden child, forcin… | 2/arrival | 485c | UNSCORED |
-| 546 | `019e4d4a-a82a-753c-820d-e33a10d03af9` | Debate | Kyle reveals something he's been holding, creating a mo… | 2/arrival | 21c | STUB_PROSE,UNSCORED |
-| 503 | `019e4d4a-a82a-74a0-89d9-530130b645c0` | Debate | A character gives another something to present to their… | 2/arrival | 71c | STUB_PROSE,UNSCORED |
+| 546 | `019e4d4a-a82a-753c-820d-e33a10d03af9` | Debate | Kyle reveals something he's been holding, creating a mo… | 2/arrival | 21c | UNSCORED |
+| 503 | `019e4d4a-a82a-74a0-89d9-530130b645c0` | Debate | A character gives another something to present to their… | 2/arrival | 71c | UNSCORED |
 | 530 | `019e4d4a-a82a-7249-8c92-b0fb0d8f05fa` | Debate | A woman receives mysterious teeth as a terrible gift, h… | 2/arrival | 398c | UNSCORED |
-| 475 | `019e4d4a-a82a-756a-8211-023a4ab86b91` | Break Into Two | Kyle pauses to observe the darkness, establishing a mom… | 2/arrival | 40c | STUB_PROSE,UNSCORED |
-| 529 | `019e4d4a-a82a-7eec-9ecb-aa3d76e77221` | Break Into Two | A character's deliberate choice not to drop something—w… | 2/arrival | 56c | STUB_PROSE,UNSCORED |
+| 475 | `019e4d4a-a82a-756a-8211-023a4ab86b91` | Break Into Two | Kyle pauses to observe the darkness, establishing a mom… | 2/arrival | 40c | UNSCORED |
+| 529 | `019e4d4a-a82a-7eec-9ecb-aa3d76e77221` | Break Into Two | A character's deliberate choice not to drop something—w… | 2/arrival | 56c | UNSCORED |
 | 488 | `019e4d4a-a82a-7b0d-8dbf-26bfdd17d1ee` | Break Into Two | Physical exhaustion from a critical incident manifests … | 2/arrival | 666c | UNSCORED |
 | 495 | `019e4d4a-a82a-70b3-81a2-4154f4ad724b` | Break Into Two | He navigates through the oppressive, decaying infrastru… | 2/arrival | 592c | UNSCORED |
 | 523 | `019e4d4a-a82a-7c84-8de3-9c2d860b10a3` | Break Into Two | The protagonist retrieves his bike and rides toward Che… | 2/arrival | 430c | UNSCORED |
@@ -1593,15 +1593,15 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 | 540 | `019e4d4a-a82a-7032-805c-d46fe55cc7f1` | B Story | A man silently accepts a woman's offered meal, and when… | 3/exchange | 669c | UNSCORED |
 | 487 | `019e4d4a-a82b-74ae-883a-269b26d13474` | B Story | A vendor offers a homeless man free food in her adopted… | 3/exchange | 461c | UNSCORED |
 | 482 | `019e4d4a-a82b-78be-8682-11a1490a6e90` | B Story | A man pauses mid-action while his calculating mind weig… | 3/exchange | 410c | UNSCORED |
-| 491 | `019e4d4a-a82b-7aae-b29f-32428e128aac` | B Story | Kyle pays for a service with a credit chip, establishin… | 3/exchange | 103c | STUB_PROSE,UNSCORED |
-| 537 | `019e4d4a-a82b-7c78-941a-c68f69e25095` | B Story | A man insists on paying the standard rate for every bow… | 3/exchange | 118c | STUB_PROSE,UNSCORED |
+| 491 | `019e4d4a-a82b-7aae-b29f-32428e128aac` | B Story | Kyle pays for a service with a credit chip, establishin… | 3/exchange | 103c | UNSCORED |
+| 537 | `019e4d4a-a82b-7c78-941a-c68f69e25095` | B Story | A man insists on paying the standard rate for every bow… | 3/exchange | 118c | UNSCORED |
 | 542 | `019e4d4a-a82b-70e6-99ad-df0fab2ee435` | B Story | She returns his chip with deliberate calm, establishing… | 3/exchange | 276c | UNSCORED |
 | 509 | `019e4d4a-a82b-7f42-b5b3-69151770d5a4` | B Story | She makes a final, deliberate pitch to convince him tha… | 3/exchange | 232c | UNSCORED |
-| 525 | `019e4d4a-a82b-7652-b7ad-a4f3594e966f` | B Story | A character encounters a genuine, unavoidable offer aft… | 3/exchange | 132c | STUB_PROSE,UNSCORED |
-| 493 | `019e4d4a-a82b-717f-9cad-34ec60e4ca92` | B Story | Kyle refuses payment for his meal, establishing that he… | 3/exchange | 143c | STUB_PROSE,UNSCORED |
+| 525 | `019e4d4a-a82b-7652-b7ad-a4f3594e966f` | B Story | A character encounters a genuine, unavoidable offer aft… | 3/exchange | 132c | UNSCORED |
+| 493 | `019e4d4a-a82b-717f-9cad-34ec60e4ca92` | B Story | Kyle refuses payment for his meal, establishing that he… | 3/exchange | 143c | UNSCORED |
 | 483 | `019e4d4a-a82b-781e-a068-19a5bc7a1892` | B Story | She accepts his payment with quiet dignity while silent… | 3/exchange | 647c | UNSCORED |
-| 504 | `019e4d4a-a82b-73fb-b5ab-564744bdc2a7` | B Story | A man refuses an overwhelming gift by bowing lower than… | 3/exchange | 174c | STUB_PROSE,UNSCORED |
-| 531 | `019e4d4a-a82b-7fc1-908d-b10365fe276f` | Fun and Games | The vendor dismisses the customer's haggling attempt, s… | 3/exchange | 50c | STUB_PROSE,UNSCORED |
+| 504 | `019e4d4a-a82b-73fb-b5ab-564744bdc2a7` | B Story | A man refuses an overwhelming gift by bowing lower than… | 3/exchange | 174c | UNSCORED |
+| 531 | `019e4d4a-a82b-7fc1-908d-b10365fe276f` | Fun and Games | The vendor dismisses the customer's haggling attempt, s… | 3/exchange | 50c | UNSCORED |
 | 478 | `019e4d4a-a82b-79d8-bccc-0a9b5f2c872c` | Fun and Games | A weary operative accepts a rare moment of contentment—… | 3/exchange | 425c | UNSCORED |
 | 554 | `019e4d4a-a82b-729b-89a5-fc980914b0d1` | Fun and Games | A man obsessively recalculates an unresolved financial … | 3/exchange | 342c | UNSCORED |
 | 528 | `019e4d4a-a82b-7dbe-b5ff-a95b2195fcf9` | Fun and Games | A man wheels his bike uphill while silently laughing at… | 3/exchange | 207c | UNSCORED |

@@ -27,21 +27,44 @@ public class BeatCoordinationService
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly IPathProvider paths;
     private readonly MarkdownFileService markdown;
+    private readonly BeatModeDetector beatMode;
     private readonly ILogger<BeatCoordinationService> log;
 
     private const int StubProseThreshold = 200;
     private const string IndexHeading = "## Beat Coordination Index";
 
+    // Characters that mark a beat as a complete, deliberate short fragment (not a truncation).
+    private static readonly char[] TerminalPunctuation = { '.', '!', '?', '"', '”', '*', ')', ']', '…' };
+
     public BeatCoordinationService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         IPathProvider paths,
         MarkdownFileService markdown,
+        BeatModeDetector beatMode,
         ILogger<BeatCoordinationService> log)
     {
         this.dbFactory = dbFactory;
         this.paths = paths;
         this.markdown = markdown;
+        this.beatMode = beatMode;
         this.log = log;
+    }
+
+    /// <summary>
+    /// Role-aware: a short beat is a real STUB gap only if it is thin NARRATIVE prose. Combat,
+    /// dialogue, transition, emotional, and revelation beats are terse by design; so are interior
+    /// monologue beats and any complete short fragment. This keeps intentional staccato (the
+    /// combat/duel register, interior thought) from being read as coverage gaps.
+    /// </summary>
+    private bool IsTerseByDesign(string? meaning, string prose)
+    {
+        var trimmedStart = prose.TrimStart();
+        if (trimmedStart.StartsWith("*")) return true;                       // interior monologue
+        if (prose.IndexOf('"') >= 0 || prose.IndexOf('“') >= 0) return true;  // carries dialogue
+        if (beatMode.Detect(meaning, prose).Mode != BeatMode.Narrative) return true;  // combat/dialogue/transition/emotional/revelation
+        var trimmedEnd = prose.TrimEnd();
+        if (trimmedEnd.Length > 0 && TerminalPunctuation.Contains(trimmedEnd[^1])) return true;  // complete deliberate fragment
+        return false;
     }
 
     public async Task<CoordinationReport> CoordinateAsync(
@@ -93,7 +116,7 @@ public class BeatCoordinationService
             {
                 b.Id, b.Number, b.Title, b.StructureRole, b.Act,
                 b.Description, b.Subtext, b.Score,
-                ProseLen = b.Text == null ? 0 : b.Text.Length,
+                Prose = b.Text,
                 ChapterId = c.Id,
             }).ToListAsync(ct);
 
@@ -106,8 +129,11 @@ public class BeatCoordinationService
             var meaning = string.IsNullOrWhiteSpace(r.Description) ? null : r.Description!.Trim();
             if (meaning == null) flags.Add("MISSING_MEANING");
 
-            if (r.ProseLen == 0) flags.Add("NO_PROSE");
-            else if (r.ProseLen < StubProseThreshold) flags.Add("STUB_PROSE");
+            var proseText = r.Prose ?? "";
+            int proseLen = proseText.Length;
+            if (proseLen == 0) flags.Add("NO_PROSE");
+            else if (proseLen < StubProseThreshold && !IsTerseByDesign(meaning, proseText))
+                flags.Add("STUB_PROSE");
 
             if (r.Score is null or <= 0) flags.Add("UNSCORED");
 
@@ -135,7 +161,7 @@ public class BeatCoordinationService
                 EventType       = evt?.EventType,
                 RevelationMode  = evt?.RevelationMode,
                 BeatTags        = tagList,
-                ProseLength     = r.ProseLen,
+                ProseLength     = proseLen,
                 Score           = r.Score,
                 Flags           = flags,
                 Covered         = flags.Count == 0 || (flags.Count == 1 && flags[0] == "UNSCORED"),
