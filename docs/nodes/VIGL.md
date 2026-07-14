@@ -1143,6 +1143,13 @@ passive-scan LOCK, §1c) — the appraisal routine has nothing to file them unde
 - **Corpse-fusion abominations:** multiple dead bodies fused into one shambling, lurching mass.
 - **Face-worms:** worms with humanoid faces, writhing powerlessly.
 - **Ichor-birds:** carrion-birds; sickle-hooked beaks; frayed, torn-kite wings; ichor-draped.
+- **Sinterspawn Colossus:** the apex body-type — a towering, battlefield-tall shambling humanoid,
+  skin drawn tight over an elongated, hunched frame, with **six long arms**; bone-gaunt, ichor-slick.
+  Looms over everything beneath it.
+- **The Watcher (faction TBD):** a humanoid in a makeshift environmental suit **sewn from animal and
+  human skin**, a big bulbous head studded with **many randomly-placed glowing eyes**; dead limbs
+  hung about it. The crafted suit implies deliberate making — so it is tool-using: either a
+  higher-order, developed Sinterspawn or an **Eater of Monsters** in zone-gear. *(Confirm which.)*
 
 **Preserved crossings:** Zone creatures that died emerging through membrane tears at
 high-tear-density aperture sites are crystallized in situ by membrane-proximate mineral
