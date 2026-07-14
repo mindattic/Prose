@@ -58,7 +58,8 @@ public class NodeWorkbenchService
         SettingsService? settings = null,
         EntityRamificationService? ramification = null,
         PostBeatValidationService? postBeatValidator = null,
-        SemanticFidelityService? semanticFidelity = null)
+        SemanticFidelityService? semanticFidelity = null,
+        EditSessionService? editSession = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -69,11 +70,13 @@ public class NodeWorkbenchService
         this.ramification = ramification;
         this.postBeatValidator = postBeatValidator;
         this.semanticFidelity = semanticFidelity;
+        this.editSession = editSession;
     }
 
     private readonly EntityRamificationService? ramification;
     private readonly PostBeatValidationService? postBeatValidator;
     private readonly SemanticFidelityService? semanticFidelity;
+    private readonly EditSessionService? editSession;
 
     // ── Reads ────────────────────────────────────────────────────────────
 
@@ -157,6 +160,8 @@ public class NodeWorkbenchService
             throw new BeatConflictException(beatId, expected, beat.UpdatedAt, beat.Text ?? "");
         }
 
+        var priorVersion = beat.Version;
+        var priorHash    = beat.TextHash;
         var trimmed = TextSanitizerService.Sanitize((newText ?? "").Trim());
         if (beat.Text == trimmed) return; // no-op — don't bump UpdatedAt for nothing
 
@@ -185,6 +190,12 @@ public class NodeWorkbenchService
                 fresh?.UpdatedAt ?? DateTime.UtcNow,
                 fresh?.Text ?? "");
         }
+
+        // Fire-and-forget: log this prose edit to the active edit session.
+        if (editSession != null)
+            _ = Task.Run(() => editSession.TryLogBeatAsync(beatId, priorVersion, priorHash), CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "EditSession.TryLogBeatAsync background task failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
 
         // Fire-and-forget: re-index which entities this beat mentions so
         // future entity saves can propagate EntityStale to this beat.

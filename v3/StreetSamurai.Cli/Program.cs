@@ -1675,6 +1675,55 @@ if (args.Contains("--clone-story"))
     return;
 }
 
+// ── Edit Sessions ─────────────────────────────────────────────────────────────
+// ss --start-session --slug <slug> --label "prose-pass-1" [--type prose-pass|gripes-cleanup|logic-sweep|custom]
+if (args.Contains("--start-session"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await StartSessionCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --close-session (--slug <slug> | --session-id <guid>)
+if (args.Contains("--close-session"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await CloseSessionCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --list-sessions --slug <slug> [--limit N]
+if (args.Contains("--list-sessions"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ListSessionsCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --session-beats --session-id <guid>
+if (args.Contains("--session-beats"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SessionBeatsCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --sync-bible-from-session --session-id <guid> [--dry-run]
+if (args.Contains("--sync-bible-from-session"))
+{
+    var sp = BuildServicesWithVault(args);
+    Environment.ExitCode = await SyncBibleFromSessionCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --sync-blueprint-from-session --session-id <guid>
+if (args.Contains("--sync-blueprint-from-session"))
+{
+    var sp = BuildServicesWithVault(args);
+    Environment.ExitCode = await SyncBlueprintFromSessionCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: show running token cost tally for the current process.
 //   ss --cost              print session cost table
 //   ss --cost --json       emit summary as JSON

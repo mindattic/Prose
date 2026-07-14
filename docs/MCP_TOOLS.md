@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**226 tools** across **33 tool families.**
+**232 tools** across **34 tool families.**
 
 ## Families
 
@@ -25,6 +25,7 @@
 | [Context](#context) | 4 |
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 4 |
+| [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 4 |
 | [Findings](#findings) | 5 |
@@ -400,6 +401,51 @@ Create or update a place / district in canon. Pass empty id to create new; pass 
 - `storyHooks` (string, optional) — Comma-separated story hooks.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing place id to update.
+
+## Edit Session
+
+<sub>`EditSessionTools`</sub>
+
+### `close_edit_session`
+
+Close the open edit session for a node (or by session ID). Returns beat count and duration.
+
+- `nodeIdOrSlug` (string, optional) — Node id (GUID) or slug. Use this OR session_id.
+- `sessionId` (string, optional) — Session GUID. Use this OR node_id_or_slug.
+
+### `list_edit_sessions`
+
+List edit sessions for a node, most recent first.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `limit` (int, optional) — Max number of sessions to return (default 20).
+
+### `session_beats`
+
+List the beats that were edited in a session, with timestamps and version deltas.
+
+- `sessionId` (string, required) — Session GUID.
+
+### `start_edit_session`
+
+Start a named edit session for a node. A session groups all prose edits until closed, enabling bible/blueprint sync afterward. Session types: prose-pass, gripes-cleanup, logic-sweep, custom.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `label` (string, required) — Human-readable label, e.g. 'prose-pass-1' or 'gripes-cleanup-2026-07-13'.
+- `sessionType` (string, optional) — Session type: prose-pass | gripes-cleanup | logic-sweep | custom (default).
+
+### `sync_bible_from_session`
+
+Extract narrative facts from a session's beats and append them as '## Session Extracts' to the node bible .md file. Use --dry-run to preview without writing.
+
+- `sessionId` (string, required) — Session GUID.
+- `dryRun` (bool, optional) — If true, returns extracted facts without writing to the bible file.
+
+### `sync_blueprint_from_session`
+
+Map a session's beats to their blueprint tags. Confirmed decisions are recorded; divergences file BLUEPRINT-DRIFT findings.
+
+- `sessionId` (string, required) — Session GUID.
 
 ## Encyclopedia
 

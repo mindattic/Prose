@@ -374,6 +374,8 @@ public class StreetSamuraiDbContext : DbContext
     // StructuralBlueprintService; verified by StoryScopeAuditService.
     public DbSet<NodeStructuralBlueprint>        NodeStructuralBlueprints        => Set<NodeStructuralBlueprint>();
     public DbSet<NodeStructuralBlueprintBeatTag> NodeStructuralBlueprintBeatTags => Set<NodeStructuralBlueprintBeatTag>();
+    public DbSet<EditSession>     EditSessions     => Set<EditSession>();
+    public DbSet<EditSessionBeat> EditSessionBeats => Set<EditSessionBeat>();
 
     // Consensus-cliché blocklist — narrative devices LLMs converge on, flagged by
     // StoryScope audits; at FlagCount >= 2 they enter the generation-time
@@ -582,6 +584,8 @@ public class StreetSamuraiDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.TagType).HasMaxLength(40).IsRequired();
             e.Property(x => x.Note).HasMaxLength(500);
+            e.Property(x => x.Confirmed).HasDefaultValue(false);
+            e.Property(x => x.ConfirmedBySessionId);
             e.HasOne(x => x.Blueprint).WithMany(x => x.BeatTags)
                 .HasForeignKey(x => x.BlueprintId).OnDelete(DeleteBehavior.Cascade);
             e.HasOne(x => x.Beat).WithMany()
@@ -2428,6 +2432,34 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.OptionsJson).IsRequired().HasDefaultValue("[]");
             e.Property(x => x.ApplyStatus).HasMaxLength(20).IsRequired().HasDefaultValue("Pending");
             e.HasIndex(x => x.SurveyId);
+        });
+
+        // ── Edit sessions ─────────────────────────────────────────────────────
+        b.Entity<EditSession>(e =>
+        {
+            e.ToTable("EditSessions");
+            e.HasKey(x => x.EditSessionId);
+            e.Property(x => x.EditSessionId).HasDefaultValueSql("NEWID()");
+            e.Property(x => x.Label).HasMaxLength(200).IsRequired();
+            e.Property(x => x.SessionType).HasMaxLength(50).IsRequired().HasDefaultValue("custom");
+            e.Property(x => x.StartedAt).HasDefaultValueSql("GETUTCDATE()");
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.NodeId);
+            e.HasIndex(x => new { x.NodeId, x.ClosedAt });
+        });
+
+        b.Entity<EditSessionBeat>(e =>
+        {
+            e.ToTable("EditSessionBeats");
+            e.HasKey(x => new { x.EditSessionId, x.BeatId });
+            e.Property(x => x.EditedAt).HasDefaultValueSql("GETUTCDATE()");
+            e.Property(x => x.PriorTextHash).HasMaxLength(64);
+            e.HasOne(x => x.Session).WithMany(x => x.SessionBeats)
+                .HasForeignKey(x => x.EditSessionId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Beat).WithMany()
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.NoAction);
+            e.HasIndex(x => x.BeatId);
         });
     }
 

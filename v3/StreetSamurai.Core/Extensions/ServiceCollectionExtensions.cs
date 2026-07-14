@@ -969,6 +969,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatModeDetector>();
         services.AddSingleton<MlProseGuidanceService>();
         services.AddSingleton<WorkflowMonitorService>();
+        services.AddSingleton<EditSessionService>();
+        services.AddSingleton<BibleSyncService>();
+        services.AddSingleton<BlueprintSyncService>();
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();
         services.AddScoped<EntityMentionService>();

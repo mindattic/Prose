@@ -129,6 +129,10 @@ public class NodeStructuralBlueprintBeatTag
     /// "this is the frame's return-to-present".</summary>
     public string? Note    { get; set; }
 
+    public bool      Confirmed            { get; set; }
+    public DateTime? ConfirmedAt          { get; set; }
+    public Guid?     ConfirmedBySessionId { get; set; }
+
     public NodeStructuralBlueprint? Blueprint { get; set; }
     public Beat? Beat { get; set; }
 }
