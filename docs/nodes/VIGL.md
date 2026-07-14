@@ -48,7 +48,7 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
 **Three-act structure:**
 - **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Vierna (Rowe found) → Three Points
   The Relic is four days ahead. Act 1 ends at Three Points.
-- **Act 2** (~Ch.10–21): Three Points → Atrament → Sal Vento (the Eirene-7 is stolen; M-108
+- **Act 2** (~Ch.10–21): Three Points → Atrament → Sal Vento (the Eirene-7 is stolen; M-101
   body-snatches its control-mind and flies it; melee covered by Wren once she joins at Pallor)
   → Calyx (war front; maneuver around skirmishes; no-colors engagement; blood from both sides)
   → Pallor / Caer Glas Moor (Blink Thieves intercepted; Esvane and Petra killed;
@@ -99,14 +99,14 @@ Large sweeping vistas. Interpersonal joy and sorrow both fully earned. See §8a�
 **Four members** — a compact JRPG party assembled as Lyra crosses the continent east: **Tank**
 (Lyra), **Mage** (Orim), **Ranged DPS** (Soren Rowe), **Melee DPS** (Wren). Each shows the system
 at work on a different kind of person. *(Kressida Haun CUT 2026-07-14 — her "person-in-a-machine"
-niche is subsumed by M-108 the body-snatcher, who also now pilots/becomes the airship; melee DPS
+niche is subsumed by M-101 the body-snatcher, who also now pilots/becomes the airship; melee DPS
 covered by Wren.)*
 
 | Character | House | Role | Age | Joins |
 |---|---|---|---|---|
 | Dame Lyra | Ocipheus (Templar) | Tank / POV | Early 30s | Start |
 | Orim Zebulun | Calyx-born, independent | Scry Mage | Late 60s | Start |
-| Soren Rowe / M-10882715 | Vierna (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS / body-snatcher | Mind mid-30s | Vierna |
+| Soren Rowe / M-1018883 | Vierna (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS / body-snatcher | Mind mid-30s | Vierna |
 | Wren Caerglas | Calyx (Loera-trained) | Melee DPS (Rogue / Blink); **female** | 22 | Pallor |
 
 ### Dame Lyra — POV {#SS-VIGL-1a}
@@ -125,8 +125,8 @@ covered by Wren.)*
 - **NO institutional number — LOCKED:** Dame Lyra has no designation number and never has. She
   is not from Vierna; Ocipheus does not number its people. **The number is the dehumanization of
   the stolen minds** — an M-prefix serial brands a Myrmidon (a mind Scried out of a body and put
-  in a machine; e.g. Soren Rowe, M-10882715). Lyra is a respected Templar with a name and faith in
-  her mission. Any prose that assigns Lyra a designation number (T-044, M-108, or any other) is an
+  in a machine; e.g. Soren Rowe, M-1018883). Lyra is a respected Templar with a name and faith in
+  her mission. Any prose that assigns Lyra a designation number (T-044, M-101, or any other) is an
   ERROR. The Liturgy refers to her by name and rank — "Dame Lyra," "the Ocipheus Templar."
 - **Physical:** ~6'5"; lean functional build (endurance, not mass); dark complexion; the
   Transmutation has been overwhelmingly good for her — each infusion was awarded for
@@ -248,7 +248,7 @@ covered by Wren.)*
   combinations. He has seen what improvised alchemical combinations produce.
 - **Knife:** A small folding knife for food preparation, which is what he uses it for.
 
-### Soren Rowe (M-10882715) — The Myrmidon {#SS-VIGL-1c}
+### Soren Rowe (M-1018883) — The Myrmidon {#SS-VIGL-1c}
 
 - **WHAT HE IS — THE CENTRAL HORROR:** Soren Rowe is not a body the Cauld captured. He is a
   *mind* the Cauld stole. Vierna Scried his consciousness out of a living man in another Sphere —
@@ -260,9 +260,9 @@ covered by Wren.)*
 - **He remembers everything.** There is no blur, no merciful forgetting; his whole life is intact,
   which is the cruelty of it. (This supersedes any earlier "memory accumulates and blurs" notion —
   drop it entirely.)
-- **His designation — M-10882715:** *"M One Oh Eight Eight Two Seven One Five. Step forward."* The M is
-  Myrmidon; the number is stamped where a name used to be. Short form: M-108. When Lyra finds him,
-  **"M-108" is the only thing he can say in her language with confidence** — the way a captured
+- **His designation — M-1018883:** *"Em One Oh One Triple Eight. Step forward."* The M is
+  Myrmidon; the number is stamped where a name used to be. Short form: M-101. When Lyra finds him,
+  **"M-101" is the only thing he can say in her language with confidence** — the way a captured
   soldier gives rank and serial number and nothing else, because it is the one true thing they
   cannot make him regret saying.
 
@@ -301,7 +301,7 @@ covered by Wren.)*
   development of what his world was building. His world built the prototype; the Cauld uses the
   finished military form. He sees this in the barracks before he can say a full sentence in
   Cauld. One line. He notes it. He does not explain it. He moves on.
-- **Myrmidon designation:** M-10882715 (short: M-108) — his Vierna intake designation, stamped on
+- **Myrmidon designation:** M-1018883 (short: M-101) — his Vierna intake designation, stamped on
   the chassis. The "M" is Myrmidon: a mind Scried out of a living person in another Sphere and
   issued a disposable body. Not a captured man — a stolen consciousness in a machine.
 - **In the Cauld:** Seven months total (three as active Vierna conscript, four as deserter).
@@ -363,8 +363,7 @@ scene establishes the atrocity that ripples through the rest of the book. Imager
   receptor opening on a grey Vierna muster-yard; a body that answers his intention a half-beat
   late and reports nothing back — no warmth, no ache, no breath. He tries to scream and the sound
   that comes out is not his.
-- **The naming.** The line of them, black and identical. *"M One Oh Eight Eight Two Seven One
-  Five. Step forward."* He steps forward because the designation is the only thing in this world that is
+- **The naming.** The line of them, black and identical. *"Em One Oh One Triple Eight. Step forward."* He steps forward because the designation is the only thing in this world that is
   unambiguously his, and he hates that it is.
 - **The airship / Turret #34.** The one action the flashback shows before the cut back to the
   fire: aboard a Vierna gunship crewed by Myrmidons at the turrets, he is **Turret #34**, and in
@@ -378,7 +377,7 @@ say two syllables. The gap is the point. **Ripple:** every later beat with a Vie
 every "death without cause" mentioned in passing, should carry this scene underneath without
 restating it.
 
-#### Body-snatch setpieces — design menu (M-108's power across the book) {#SS-VIGL-1c-snatch}
+#### Body-snatch setpieces — design menu (M-101's power across the book) {#SS-VIGL-1c-snatch}
 
 The power earns its keep by escalating and by costing. Recommended deployment:
 
@@ -389,7 +388,7 @@ The power earns its keep by escalating and by costing. Recommended deployment:
    recalibrate what they've been traveling with. First taste of **cost:** his inert little shell
    is left exposed mid-jump; someone has to stand over it.
 2. **Turn the mortar (a pinned-down beat — Calyx skirmish or Schmalburg).** The team is pinned by
-   an enemy emplacement; M-108 jumps into the **mortar that is killing them** and it goes silent,
+   an enemy emplacement; M-101 jumps into the **mortar that is killing them** and it goes silent,
    or turns on its own line. Fast, tactical, quietly horrifying — the enemy's own iron, possessed.
 3. **Become the airship — Eirene-7 acquisition (SK1600).** The masterstroke and the callback: he
    was **Turret #34** on a Vierna gunship; now, to steal the Eirene-7, **he BECOMES the airship,**
@@ -621,7 +620,7 @@ discovers who all three were. That is what makes the confrontation land.
   going to hurt you because I have to, and I recognize you as kin, and neither of those things
   makes the other one less true.*
 - **The fight:** Vaen vs. Lyra is not a fight Lyra wins by strength. She cannot — not at this
-  infusion differential. The party fights her as a unit: M-108 body-snatches an Atrament
+  infusion differential. The party fights her as a unit: M-101 body-snatches an Atrament
   war-chassis to absorb the damage Lyra cannot survive alone, then casts back to his own shell
   and finds the exact gap that only his WW1-trained marksmanship eye would know to look for;
   Wren blinks to angles Vaen cannot track simultaneously. Orim's Rod is the last resort and
@@ -676,7 +675,7 @@ Rowe knowing what a line looks like when it breaks.
 5.  Vierna-Atrament border
 6.  Schmalburg, Atrament (raid; Ardea's death)
 7.  **Sal Vento (Loera cliff-side port)** — mission: acquire the *Eirene-7*; the party moves
-    through the port's cargo transfer lines to reach the impounded hull; M-108 body-snatches
+    through the port's cargo transfer lines to reach the impounded hull; M-101 body-snatches
     the Eirene-7's control-mind and flies it out — the ground operation becomes an aerial
     operation without a formal discussion having occurred.
 8.  Forge Hearth (aboard the *Eirene-7*; faster than overland; membrane thin here)
@@ -833,7 +832,7 @@ Neither of them makes the other one easier.
   The catalogue says "dense colonial fauna, membrane-adjacent, hostile." The bats that come
   through have the wingspan of an Atrament kite and hands where their feet should be —
   flat, five-fingered, bone-pale human hands that grasp and tear. The catalogue did not
-  mention the hands. Used to break Vaen's engagement with M-108's war-chassis — the creatures
+  mention the hands. Used to break Vaen's engagement with M-101's war-chassis — the creatures
   do not distinguish between Champion and machine, and six infusions does not protect you
   from something that grabs with human-shaped hands.
 
@@ -1229,7 +1228,7 @@ actually is. The assumption that every House has a king in armor on a throne is 
 
 **Transmutation rank ladder (relevant to this story):**
 - Soldier (0 infusions; native Cauld) → Knight (1–3 infusions; "Dame" for women) → Paladin (4–6) → Champion
-- **Myrmidon** = a **mind** Scried out of a living person in another Sphere and installed in a disposable Vierna automaton chassis (black, jointed, an oval optical receptor for a face). NOT a captured body — a captured *consciousness*; the original body dies in its home world, unmarked, one of the countless "deaths without cause." NOT on the Transmutation ladder. Soren Rowe is a Myrmidon. Native Cauld soldiers are not Myrmidons. **House distinction (LOCKED):** *Atrament* steals **people** — whole bodies, in small batches, for skilled labor. *Vierna* steals **minds** and issues them bodies. This is the deeper horror the book uncovers: anywhere in any world, a death without a cause is a possible mind-theft. **Minds are wirelessly transferable between shells** — that transfer IS the mechanism of the Taking, and it is why a skilled Myrmidon (Soren Rowe) can jump machine bodies and return to his own (see §1c body-snatcher LOCK). **The scale is in the serial numbers:** Soren Rowe is M-10882715 — the count has run past ten million, on the order of **10.9 million** stolen minds. (World-level canon — mirror into [[../universes/CAULD]] / BIBLE Scrying section.)
+- **Myrmidon** = a **mind** Scried out of a living person in another Sphere and installed in a disposable Vierna automaton chassis (black, jointed, an oval optical receptor for a face). NOT a captured body — a captured *consciousness*; the original body dies in its home world, unmarked, one of the countless "deaths without cause." NOT on the Transmutation ladder. Soren Rowe is a Myrmidon. Native Cauld soldiers are not Myrmidons. **House distinction (LOCKED):** *Atrament* steals **people** — whole bodies, in small batches, for skilled labor. *Vierna* steals **minds** and issues them bodies. This is the deeper horror the book uncovers: anywhere in any world, a death without a cause is a possible mind-theft. **Minds are wirelessly transferable between shells** — that transfer IS the mechanism of the Taking, and it is why a skilled Myrmidon (Soren Rowe) can jump machine bodies and return to his own (see §1c body-snatcher LOCK). **The scale is in the serial numbers:** Soren Rowe is M-1018883 — the count has run past a million, on the order of **1.02 million** stolen minds. (World-level canon — mirror into [[../universes/CAULD]] / BIBLE Scrying section.)
 - Lyra: 3 infusions — "Thrice Infused" (folk term for the 3-infusion ceiling of Knight rank,
   the maximum before Paladin). Each infusion awarded for distinguished service. She is still
   ascending. The ceiling is theoretical. At 3 infusions she is picking up armored soldiers
@@ -1536,8 +1535,7 @@ Continues directly from R1. The floor stops being a floor. Rendered from inside 
 without the interpretive frame, and honoring the LOCKED imagery of [[#SS-VIGL-1c-flashback]]: the
 pluck (a hook drawing him up out of black water — displacement before pain); the sea of black
 with the wreckage of his own memories drifting past; waking *inside a machine* (the oval receptor,
-the half-beat-late body, no warmth, no breath); the naming ("M One Oh Eight Eight Two Seven One
-Five. Step forward."); aboard the gunship he is Turret #34 and #34 refuses to fire; burnt ozone;
+the half-beat-late body, no warmth, no breath); the naming ("Em One Oh One Triple Eight. Step forward."); aboard the gunship he is Turret #34 and #34 refuses to fire; burnt ozone;
 "you do not court-martial a tool — you scrap it." This is a mind Scried out of a living body and
 issued a disposable shell, NOT a body marched into a stone intake room. He does not understand
 what has happened. The chapter does not explain it to the reader either — the reader understands;
@@ -1874,7 +1872,7 @@ That is what comes next.
 
 > Generated 2026-07-14 by `ss --generate-blueprint`. Do not hand-edit. Re-generate after structural changes.
 
-**Subplot:** Soren Rowe / M-108's body-snatching — a stolen mind who can wear any machine, from an overlooked disposable shell to a war-chassis to the Eirene-7 itself, but who must always find his way back to the small, disposable shell that is the only home the Taking left him. A secondary thread runs alongside it: Orim Zebulun's forty years of complicity — he knew about the Myrmidon intake since his first Sinter contract and kept taking the work anyway. Both men are walking evidence of what institutional machinery costs the individual.
+**Subplot:** Soren Rowe / M-101's body-snatching — a stolen mind who can wear any machine, from an overlooked disposable shell to a war-chassis to the Eirene-7 itself, but who must always find his way back to the small, disposable shell that is the only home the Taking left him. A secondary thread runs alongside it: Orim Zebulun's forty years of complicity — he knew about the Myrmidon intake since his first Sinter contract and kept taking the work anyway. Both men are walking evidence of what institutional machinery costs the individual.
 
 *Thematic parallel:* The A-plot asks "What are you loyal to when you find out what the thing you loved actually is?" The subplot mirrors it from the other side of the same machinery: both Lyra and Rowe were remade by the institution that also unmade them — her Transmutation and the Liturgy that awards it; his Taking and the Vierna intake that stamped a number where his name used to be. Neither can undo what was done to make them useful. Orim's forty years of silence is the same violence at one remove: he knew, and he kept taking the contracts.
 
@@ -1902,7 +1900,7 @@ That is what comes next.
 
 ## 12. User Stories {#SS-VIGL-12}
 
-- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe/M-108,
+- **VIGL-US-1 ⬜** Core entities seeded: all characters (Lyra as Liturgy Templar, Rowe/M-101,
   Orim, Wren Caerglas, Aldric Caerglas, Esvane Mirren, Petra Dahl, Prelacze, Ardea, Vega —
   Lyra's little sister, Liturgy Scribe), places, factions, weapons, armor, pharmaceuticals,
   flora, fauna, species compendium (~60+). Erland and Tavar are removed; Kressida Haun is cut
@@ -1916,7 +1914,7 @@ That is what comes next.
 - **VIGL-US-4 ✅** Structural blueprint generated 2026-07-14; subplot/escalation resynced to the
   24-beat spine; per-beat construction tags recorded (see Beat Coordinate Map).
 - **VIGL-US-5 ⬜** All 24 beats written as the definitive third draft (best-of-both merge; Kressida
-  and Tavar cut; Soren Rowe = M-108 the body-snatcher; ~114k words). Applied 2026-07-14; logic
+  and Tavar cut; Soren Rowe = M-101 the body-snatcher; ~114k words). Applied 2026-07-14; logic
   sweep to 90+/no-gripes pending.
 - **VIGL-US-6 ⬜** Logic sweep clean (0 BLOCKERs). Lyra identified as Liturgy Templar throughout.
   Sinter as climax; no Wall crossing on outward leg; steal-the-airship chapter present.
@@ -1954,7 +1952,7 @@ That is what comes next.
 | 14 | 5261 | 019F5768-973C-74A2 | Schmalburg — The Raid; the Eaters | LYRA | Ardea dies; the grizzly reveal | **body-snatch setpiece #1** (esc 8) |
 | 15 | 5262 | 019F5768-973C-7640 | The Forge Hearth | LYRA | Orim's Rod fails; the Fire Scry | threshold to Act 3 (esc 6) |
 | 16 | 5291 | DA607263 | Sal Vento — The Port | LYRA | Loera cliff port; sets up the airship | escalation (esc 4) |
-| 17 | 5292 | 3DBA7A47 | The Acquisition — Eirene-7 | LYRA | M-108 *becomes* the airship | **body-snatch setpiece #3** (esc 8) |
+| 17 | 5292 | 3DBA7A47 | The Acquisition — Eirene-7 | LYRA | M-101 *becomes* the airship | **body-snatch setpiece #3** (esc 8) |
 | 18 | 5293 | 302F6E3F | The Channel — Rowe Testifies | LYRA/ROWE | Testimony; Orim hears it plainly | intertextual (Kenji quote) (esc 5) |
 | 19 | 5294 | 90E0FFE7 | She Goes to Sinter | SCRIBE | Vega seals the notary instrument | form-device (esc 5) |
 | 20 | 5295 | 76D2DBD6 | Pallor Reached — Caer Glas Moor | LYRA | Esvane/Petra die; Vaen; Wren joins | **body-snatch setpiece #4 (cost)** (esc 9) |
