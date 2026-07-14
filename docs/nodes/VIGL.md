@@ -763,7 +763,7 @@ Rowe knowing what a line looks like when it breaks.
     Aldric names Prelacze
 11. Eirene's Gate / The Pass — the strait; Vigil checkpoint; Rowe testifies
 12. Sinter zone — the aperture; climax
-    - **Beulman — the empty farmsteads (BEAT 5380):** an abandoned farming district on the
+    - **Greymarch — the empty farmsteads (BEAT 5380):** an abandoned farming district on the
       outer edge of the Sinter zone, crossed between The Zone (beat 5298) and the Eaters at
       the Perimeter (beat 5378). Everyone here is dead; the Sinterspawn have nested in the
       corpses' chest cavities. The party crosses it and shelters a night in a loft before
@@ -1134,6 +1134,26 @@ fetal and underdeveloped — unfinished things that look like they stopped growi
 kept moving anyway. Always draped in the same black ichor they live in; it does not dry, it
 pools. **Off-catalogue:** M-101's passive-scan returns "no match" on them, every time (see the
 passive-scan LOCK, §1c) — the appraisal routine has nothing to file them under.
+**Visual key — Zdzisław Beksiński:** render the Sinterspawn and the whole zone in the register of
+Beksiński's paintings — dystopian, decaying, bonescape surrealism; vast wrong architectures of flesh
+and rust; beautiful in a way that hurts to look at. When describing a Sinterspawn or the crater, aim
+for a Beksiński canvas: the sublime and the abhorrent in the same frame.
+**CRAFT LOCK — describe, do not point:** Phyrexian and Beksiński are *author-side keys only*. The
+prose must **describe** each creature concretely and body-true — what it looks like, how it moves,
+what it does to a body — and must NEVER name a reference, gesture at an image, or say "like this."
+Every Sinterspawn earns its horror in specific, rendered detail on the page.
+
+**Ecology LOCK — an invasion, not a monster roster:** the Sinterspawn are an **invasive ecosystem**
+consuming the natural order. They are *everywhere* and multiplying: they **mate with native
+wildlife, merge with it, and infect it**, so the line between "Sinterspawn" and "animal" rots away —
+a hijacked deer today, a whole hijacked herd tomorrow. Any single creature is only the visible edge
+of a spreading biology. The model is an ecological catastrophe in the mode of the **1935 cane-toad
+invasion of Queensland** — an introduced species with no checks that exploded and overran the whole
+order. **The terror is in the curve:** *102 cane toads released became more than 200 million; 13
+hares became millions.* A handful of unchecked introductions become an uncountable ecosystem. The
+Sinterspawn are on that curve — a few things Scryed into the crater, now a spreading biology no one
+can count — and that is *why* the eastern threat grows past the point the Houses can keep ignoring
+it (§9b).
 
 **Sinterspawn bestiary — sample of what the zone produces:**
 - **Hijacked fauna (e.g. deer):** a native animal with a second Sinterspawn head erupting from
@@ -1152,6 +1172,18 @@ passive-scan LOCK, §1c) — the appraisal routine has nothing to file them unde
   ichor (Sinter + *-naut*). **The deeply disturbing unknown:** do they go *into* the zone (people
   who suited up and walked in) or do they *come out* of it (things the zone made, wearing skin)?
   No one can tell a survivor from a mimic. This uncertainty is the point — never resolve it.
+- **Gnashers:** wild Sinterspawn whose arms are **rows of gnashing teeth**, always working; often
+  seen **raiding a town in the distance** — a horror to pass, not necessarily to fight.
+- **The Accretion:** a **titan-class** Sinterspawn — a giant sickly mound of rotting flesh moving on
+  **millions of cilia**, absently absorbing everything it crosses; its mass topples trees, which
+  only adds to its mass. Amoeba-slow, mindless, unstoppable. Not a thing you fight — a thing you
+  flee or watch cross the horizon.
+
+**DOCTRINE — not every horror is a battle:** the party does NOT fight every abomination it sees.
+Most of the zone's dread is **ambient** — witnessed and passed: a town raided by Gnashers across the
+valley, the Accretion on the skyline, Sinternauts glimpsed among the farms. The party chooses its
+fights. Combat is the exception that the ambient horror earns; the world is bigger and worse than
+what they engage.
 
 **Preserved crossings:** Zone creatures that died emerging through membrane tears at
 high-tear-density aperture sites are crystallized in situ by membrane-proximate mineral
@@ -1905,6 +1937,20 @@ an act of rebellion. It is an act of accuracy. She is a researcher. The membrane
 giving the Cauld data for 741 years. The Cauld has been filing it under "no action indicated."
 She is a Templar who can no longer do that.
 
+**The Sinterspawn are not monsters — they are an ecosystem:**
+
+The Sinterspawn are an entire **ecosystem of horrors Scryed into existence** — alien biology pulled
+through the membrane at the crater over 1,138 years, breeding, hybridising, and metabolising the
+land itself. In consuming the basin they have **erased all reliable record of what Sinter originally
+was** — a House, a people, a place; the name survives, its origin does not. The monsters have
+*always* been there, at the perimeter, filed under "no action indicated." What is new — what the
+Relic shows Lyra, and what Orim has felt for thirty years — is their **escalating size, danger, and,
+most alarming, their coordination**: things that were once solitary and mindless are beginning to
+move together. It is trending toward a threshold. A time is coming when the Houses will have to
+**cease bickering over borders and Scrywell locations and band together**, because something far
+worse than any of their wars is **growing in the east**. That reckoning is the spine of the series;
+VIGL is the book where one Templar first writes down that it is coming.
+
 **The series hook — the requirement the Cauld cannot yet face:**
 
 What is in the Sinter crater will eventually come out. Not in individual monsters at the
@@ -2061,7 +2107,7 @@ That is what comes next.
 | 19 | 5294 | 90E0FFE7 | She Goes to Sinter | SCRIBE | Vega seals the notary instrument | form-device (esc 5) |
 | 20 | 5295 | 76D2DBD6 | Pallor Reached — Caer Glas Moor | LYRA | Esvane/Petra die; Vaen; Wren joins | **body-snatch setpiece #4 (cost)** (esc 9) |
 | 21 | 5298 | 2FF3B7A6 | The Zone — Entering Sinter | LYRA | The wrongness mounts | escalation (esc 6) |
-| 21a | 5380 | 019F612A | Beulman — The Empty Farmsteads | LYRA | Infested farms (Sinterspawn nesting in corpses); loft night, M-101 on guard; hijacked deer, burrowing paralytic scorpions, corpse-fusion abominations, face-worms, ichor-birds; scan "signal degraded" (seeds off-catalogue) | horror-combat (esc 8) |
+| 21a | 5380 | 019F612A | Greymarch — The Empty Farmsteads | LYRA | Infested farms (Sinterspawn nesting in corpses); loft night, M-101 on guard; hijacked deer, burrowing paralytic scorpions, corpse-fusion abominations, face-worms, ichor-birds; scan "signal degraded" (seeds off-catalogue) | horror-combat (esc 8) |
 | 21b | 5378 | 019F60D1-1CA7 | Sinterspawn — the Eaters at the Perimeter | LYRA | Sinterspawn; scan returns OFF-CATALOGUE (first landed reveal); the Eaters hunt; feeds the revelation | horror-combat (esc 8) |
 | 22 | 5296 | 37B58D26 | The Relic — What the Eye Has Seen | LYRA | The 397→1138 time-lapse revelation | revelation (esc 8) |
 | 23 | 5297 | 9BA2CF72 | The Long Seat — The Eighth Theory | LYRA | Theory undisclosed; Wren the Calyx view | intertextual (Twr Brennid) (esc 6) |
