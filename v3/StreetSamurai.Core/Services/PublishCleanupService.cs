@@ -34,9 +34,14 @@ public class PublishCleanupService
 
         var node = await db.Nodes.AsNoTracking()
             .Where(s => s.Id == nodeId)
-            .Select(s => new { s.Title, s.ParentNodeId })
+            .Select(s => new { s.Title, s.ParentNodeId, s.UniverseId })
             .FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId)
+            .Select(u => u.Slug)
+            .FirstOrDefaultAsync(ct);
 
         var ancestors = new List<string>();
         var parentId = node.ParentNodeId;
@@ -51,7 +56,9 @@ public class PublishCleanupService
             parentId = parent.ParentNodeId;
         }
 
-        var baseDir = ResolveBaseDir();
+        // Must resolve the SAME per-universe base dir the exporters use — otherwise
+        // cleanup wipes (or misses) the wrong universe's folder.
+        var baseDir = settings.GetExportDirectory(universeSlug);
         var safeTitle = SanitizeTitle(node.Title);
         var pathParts = new List<string> { baseDir };
         pathParts.AddRange(ancestors);
@@ -77,14 +84,6 @@ public class PublishCleanupService
             catch (IOException) { }
             catch (UnauthorizedAccessException) { }
         }
-    }
-
-    private string ResolveBaseDir()
-    {
-        var dir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-        return string.IsNullOrWhiteSpace(dir)
-            ? Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-            : dir;
     }
 
     private static string SanitizeTitle(string title)

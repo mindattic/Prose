@@ -9,8 +9,10 @@ namespace StreetSamurai.Cli;
 /// <c>ss --publish (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
 /// — render a node to .docx + .epub + .pdf + .txt in the configured publish
 /// directory (Desktop fallback). Also writes <c>description.txt</c> when
-/// <c>Node.Description</c> is set. <c>--export-dir</c> overrides and persists
-/// <c>PublishExportDirectory</c> for all formats.
+/// <c>Node.Description</c> is set. <c>--export-dir</c> overrides and persists the
+/// export directory <em>for the node's universe</em>
+/// (<c>UniverseExportDirectories[slug]</c>), never the shared global — so
+/// publishing a Scry story can't redirect where GLMZ stories land, and vice versa.
 /// </summary>
 public static class PublishCli
 {
@@ -38,15 +40,7 @@ public static class PublishCli
         var manuscript = services.GetRequiredService<ManuscriptExportService>();
         var mojiChecker = services.GetRequiredService<MojibakeRepairService>();
 
-        if (!string.IsNullOrWhiteSpace(exportDir))
-        {
-            var settings = services.GetRequiredService<SettingsService>();
-            settings.PublishExportDirectory = exportDir!;
-            settings.Flush();
-            Console.WriteLine($"[publish] PublishExportDirectory set to: {exportDir}");
-        }
-
-        Guid nodeId; string nodeTitle;
+        Guid nodeId; string nodeTitle; string? universeSlug;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             var q = db.Nodes.AsNoTracking();
@@ -57,6 +51,32 @@ public static class PublishCli
             { { Count: 1 } m => m[0], _ => null };
             if (node == null) { Console.Error.WriteLine("[publish] Node not found."); return 1; }
             nodeId = node.Id; nodeTitle = node.Title;
+            universeSlug = await db.Universes.AsNoTracking()
+                .Where(u => u.Id == node.UniverseId)
+                .Select(u => u.Slug)
+                .FirstOrDefaultAsync();
+        }
+
+        // --export-dir persists to THIS node's universe key, never the shared
+        // global — otherwise publishing a Scry story rewrites the default that
+        // GLMZ stories (with no per-universe entry) fall back to, and they land
+        // in the wrong universe's directory. Fall back to the global only when
+        // the universe slug can't be resolved.
+        if (!string.IsNullOrWhiteSpace(exportDir))
+        {
+            var settings = services.GetRequiredService<SettingsService>();
+            if (!string.IsNullOrWhiteSpace(universeSlug))
+            {
+                settings.SetUniverseExportDirectory(universeSlug!, exportDir!);
+                settings.Flush();
+                Console.WriteLine($"[publish] Export directory for universe '{universeSlug}' set to: {exportDir}");
+            }
+            else
+            {
+                settings.PublishExportDirectory = exportDir!;
+                settings.Flush();
+                Console.WriteLine($"[publish] PublishExportDirectory set to: {exportDir}");
+            }
         }
 
         // ── pre-publish mojibake guard ──────────────────────────────────────────
