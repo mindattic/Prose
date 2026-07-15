@@ -362,9 +362,10 @@ RTR is set in Milwaukee dive bars and gray zone venues — low-tier, music-first
 - Faith's brand-blindness (no neuretics = no auto-ID) makes her read people differently than everyone else in the room
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: d2642e5d581ca683fa236e1edd57fea3757ecc39f5b56fa87f46f63a0ca06230 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7665020Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T17:16:21.8810327Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Dayo Ferreira — the drug dealer who brought Candor into the room — spends most of the story unconscious under Mona's hands, his survival dependent on her keeping pressure on his wound. His body is the site where the question of what Candor actually does gets answered in flesh rather than theory: the substance that 'turned the volume up on the people' for Faith is the same substance bleeding out of him while Mona plays dead. His helplessness mirrors Faith's unwilled openness — both are bodies doing something they didn't choose.
 - **Temporal scheme**: linear
@@ -381,7 +382,7 @@ RTR is set in Milwaukee dive bars and gray zone venues — low-tier, music-first
   - **Soren Rowe** (quote) — In beat 13, the narration brushes against a Rowe line about the aperture that pain opens — not quoted directly, but the metaphor of the shutter jammed open echoes it closely enough that a reader who knows the source feels the pressure of it.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7665020Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T17:16:21.8810327Z from Beats table — edit via MCP beat tools -->
 
 ### Read the Room
 - B01 · The Weight of a Good Show — Establishes Ethan's world and its textures — the AR-free green room, the post-performance crash, the band's quiet rhythms — grounding the reader in a specific milieu before pressure arrives.

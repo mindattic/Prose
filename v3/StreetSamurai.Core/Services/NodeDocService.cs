@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 
@@ -59,24 +60,32 @@ public class NodeDocService
         var blueprint = await blueprintService.GetAsync(nodeId, ct);
         var (beatSpine, beatCount) = await BuildBeatSpineAsync(db, nodeId, ct);
 
+        // Build generated portion (blueprint + beat spine) separately so we can checksum it.
+        // Checksum detects hand-edits to the generated sections (checked by codex doctor).
+        var genPart = new StringBuilder();
+        if (blueprint != null)
+        {
+            genPart.AppendLine();
+            genPart.AppendLine(BuildBlueprintSection(blueprint, now));
+        }
+        if (!string.IsNullOrWhiteSpace(beatSpine))
+        {
+            genPart.AppendLine();
+            genPart.AppendLine(BuildBeatSpineSection(beatSpine, now));
+        }
+        var genText = genPart.ToString();
+        // Normalize to LF before hashing so the checksum is stable across platforms.
+        var genNorm = genText.Replace("\r\n", "\n").Replace("\r", "\n");
+        var checksum = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(genNorm))).ToLower();
+
         // Assemble final document
         var doc = new StringBuilder();
         doc.Append(handAuthored.TrimEnd());
         doc.AppendLine();
         doc.AppendLine();
         doc.AppendLine(GeneratedMarker);
-
-        if (blueprint != null)
-        {
-            doc.AppendLine();
-            doc.AppendLine(BuildBlueprintSection(blueprint, now));
-        }
-
-        if (!string.IsNullOrWhiteSpace(beatSpine))
-        {
-            doc.AppendLine();
-            doc.AppendLine(BuildBeatSpineSection(beatSpine, now));
-        }
+        doc.AppendLine($"<!-- GENERATED-CHECKSUM: {checksum} -->");
+        doc.Append(genText);
 
         var docText = doc.ToString().TrimEnd() + "\n";
 

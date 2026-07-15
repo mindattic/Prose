@@ -424,6 +424,32 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<Survey>         Surveys         => Set<Survey>();
     public DbSet<SurveyQuestion> SurveyQuestions => Set<SurveyQuestion>();
 
+    // Truth-First Architecture (Track A) — DB-resident canon documents replace
+    // hand-editable .md files. .md files become generated read-only artifacts.
+    // Edits go through set_canon_section MCP → CanonDocumentSection row →
+    // generate_canon_md regenerates the file and updates LastChecksum.
+    public DbSet<CanonDocument>        CanonDocuments        => Set<CanonDocument>();
+    public DbSet<CanonDocumentSection> CanonDocumentSections => Set<CanonDocumentSection>();
+
+    // Truth-First Architecture (Track A) — structured NodeBible sections replace
+    // the Nodes.NodeBible text blob. Edits go through set_story_bible_section MCP.
+    public DbSet<NodeBibleSection> NodeBibleSections => Set<NodeBibleSection>();
+
+    // Truth-First Architecture (Track B) — per-beat structural contract.
+    // Replaces EscalationCurveJson / EventTypePaletteJson blobs. One row per beat.
+    // Required precondition for prose generation (B5); read by Track C for verification.
+    public DbSet<BeatBlueprintDecision> BeatBlueprintDecisions => Set<BeatBlueprintDecision>();
+
+    // Truth-First Architecture (Track B) — world-state timeline.
+    // Tracks entity state changes at each beat: KnowledgeGained, LocationChange, etc.
+    // Populated by B4 backfill and by B5 (WorldStatePost declared after generation).
+    public DbSet<EntityStateAtBeat> EntityStateAtBeats => Set<EntityStateAtBeat>();
+
+    // Truth-First Architecture (Track C) — beat verification results.
+    // One row per (BeatId, CheckType); upserted on re-verify. BLOCKER results
+    // block codex doctor and ss --publish (INV-05).
+    public DbSet<BeatVerification> BeatVerifications => Set<BeatVerification>();
+
     protected override void OnModelCreating(ModelBuilder b)
     {
         base.OnModelCreating(b);
@@ -592,6 +618,95 @@ public class StreetSamuraiDbContext : DbContext
                 .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.NoAction);
             e.HasIndex(x => x.BlueprintId);
             e.HasIndex(x => x.BeatId);
+        });
+
+        // ── Truth-First Architecture: Track A ────────────────────────────────
+
+        b.Entity<CanonDocument>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.DocumentType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Title).HasMaxLength(300).IsRequired();
+            e.Property(x => x.LastChecksum).HasMaxLength(80);
+            e.HasIndex(x => new { x.UniverseId, x.DocumentType }).IsUnique()
+                .HasDatabaseName("UX_CanonDocuments_Universe_Type");
+            e.HasIndex(x => x.UniverseId);
+        });
+
+        b.Entity<CanonDocumentSection>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.SectionKey).HasMaxLength(120).IsRequired();
+            e.Property(x => x.SectionTitle).HasMaxLength(300);
+            e.HasOne(x => x.Document).WithMany(x => x.Sections)
+                .HasForeignKey(x => x.DocumentId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.DocumentId);
+            e.HasIndex(x => new { x.DocumentId, x.SectionKey }).IsUnique()
+                .HasDatabaseName("UX_CanonDocumentSections_Doc_Key");
+            e.HasIndex(x => new { x.DocumentId, x.SortKey });
+        });
+
+        b.Entity<NodeBibleSection>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.SectionType).HasMaxLength(40).IsRequired();
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.NodeId);
+            e.HasIndex(x => new { x.NodeId, x.SectionType }).IsUnique()
+                .HasDatabaseName("UX_NodeBibleSections_Node_Type");
+        });
+
+        // ── Truth-First Architecture: Track B ────────────────────────────────
+
+        b.Entity<BeatBlueprintDecision>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EventType).HasMaxLength(60);
+            e.Property(x => x.EscalationFloor).HasColumnType("decimal(4,2)");
+            e.Property(x => x.AnachronyType).HasMaxLength(40);
+            e.Property(x => x.PacingDirective).HasMaxLength(20);
+            e.HasOne(x => x.Beat).WithMany()
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Blueprint).WithMany()
+                .HasForeignKey(x => x.BlueprintId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.BeatId).IsUnique()
+                .HasDatabaseName("UX_BeatBlueprintDecisions_Beat");
+            e.HasIndex(x => x.BlueprintId);
+        });
+
+        b.Entity<EntityStateAtBeat>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.StateType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Source).HasMaxLength(20).IsRequired().HasDefaultValue("Inferred");
+            e.HasOne(x => x.Entity).WithMany()
+                .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Beat).WithMany()
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.NoAction);
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.NoAction);
+            e.HasIndex(x => new { x.EntityId, x.BeatId, x.StateType }).IsUnique()
+                .HasDatabaseName("UX_EntityStateAtBeat_Entity_Beat_Type");
+            e.HasIndex(x => new { x.NodeId, x.BeatId });
+            e.HasIndex(x => x.EntityId);
+        });
+
+        // ── Truth-First Architecture: Track C ────────────────────────────────
+
+        b.Entity<BeatVerification>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.CheckType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Result).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Severity).HasMaxLength(20).IsRequired();
+            e.Property(x => x.VerifiedBy).HasMaxLength(100).IsRequired();
+            e.HasOne(x => x.Beat).WithMany()
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.BeatId, x.CheckType }).IsUnique()
+                .HasDatabaseName("UX_BeatVerifications_Beat_CheckType");
+            e.HasIndex(x => x.BeatId);
+            e.HasIndex(x => new { x.Result, x.Severity });
         });
         b.Entity<ConsensusCliche>(e =>
         {

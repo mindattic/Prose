@@ -199,10 +199,53 @@ public class StructuralBlueprintService
         foreach (var tag in BuildBeatTags(parsed, units, blueprint.Id))
             db.NodeStructuralBlueprintBeatTags.Add(tag);
 
+        // Per-beat blueprint decisions (Track B): one row per beat, replacing the
+        // JSON blob columns with queryable, verifiable rows. Remove any prior rows
+        // for beats in this node before inserting (same lifecycle as the blueprint row).
+        var beatIds = units.SelectMany(u => u.Beats.Select(b => b.Beat.Id)).ToHashSet();
+        var priorDecisions = await db.BeatBlueprintDecisions
+            .Where(d => beatIds.Contains(d.BeatId))
+            .ToListAsync(ct);
+        if (priorDecisions.Count > 0)
+            db.BeatBlueprintDecisions.RemoveRange(priorDecisions);
+
+        foreach (var decision in BuildBeatDecisions(parsed, units, blueprint.Id))
+            db.BeatBlueprintDecisions.Add(decision);
+
         await db.SaveChangesAsync(ct);
-        log.LogInformation("[blueprint] Saved for {Title}: subplot={HasSubplot}, temporal={Scheme}, resolution={Res}, ending={End}",
-            node.Title, blueprint.HasSubplot, blueprint.TemporalScheme, blueprint.ResolutionMode, blueprint.EndingStyle);
+        log.LogInformation("[blueprint] Saved for {Title}: subplot={HasSubplot}, temporal={Scheme}, resolution={Res}, ending={End}, decisions={Decisions}",
+            node.Title, blueprint.HasSubplot, blueprint.TemporalScheme, blueprint.ResolutionMode, blueprint.EndingStyle, units.Count);
         return blueprint;
+    }
+
+    private static IEnumerable<BeatBlueprintDecision> BuildBeatDecisions(
+        BlueprintResponse parsed, List<StructuralUnit> units, Guid blueprintId)
+    {
+        var subplotIndexes = (parsed.Subplot?.BeatIndexes ?? []).ToHashSet();
+        var anachronyCut   = parsed.Temporal?.CutBeatIndex;
+        var eventByIndex   = (parsed.Events ?? []).ToDictionary(e => e.BeatIndex, e => e);
+        var curve          = parsed.EscalationCurve ?? [];
+
+        for (int i = 0; i < units.Count; i++)
+        {
+            var beatId   = units[i].Beats[0].Beat.Id;
+            var beatDesc = units[i].Beats[0].Beat.Description;
+
+            eventByIndex.TryGetValue(i, out var evt);
+
+            yield return new BeatBlueprintDecision
+            {
+                BeatId          = beatId,
+                BlueprintId     = blueprintId,
+                EventType       = evt?.EventType,
+                EscalationFloor = i < curve.Count ? (decimal?)curve[i] : null,
+                SubplotCarrier  = subplotIndexes.Contains(i),
+                AnachronyType   = (i == anachronyCut) ? (parsed.Temporal?.AnachronyPlan ?? "Flashback") : null,
+                DeclaredPurpose = beatDesc,  // seeded from existing Description; author refines via set_beat_blueprint
+                CreatedAt       = DateTime.UtcNow,
+                UpdatedAt       = DateTime.UtcNow,
+            };
+        }
     }
 
     private static IEnumerable<NodeStructuralBlueprintBeatTag> BuildBeatTags(

@@ -89,6 +89,35 @@ public static class PublishCli
             return 1;
         }
 
+        // ── pre-publish BLOCKER verification gate (Track C — Truth-First Architecture) ──
+        // Reads existing BeatVerification rows — does NOT re-run checks. Run
+        // 'ss --verify-story --slug <slug>' first to refresh, then fix any BLOCKERs.
+        await using (var dbV = await dbFactory.CreateDbContextAsync())
+        {
+            var chapterIds = await dbV.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId == nodeId)
+                .Select(n => n.Id).ToListAsync();
+            var allNodeIds = new List<Guid>(chapterIds.Count + 1) { nodeId };
+            allNodeIds.AddRange(chapterIds);
+
+            var beatIds = await dbV.BeatNodes.AsNoTracking()
+                .Where(bn => allNodeIds.Contains(bn.NodeId) && bn.IsEnabled)
+                .Select(bn => bn.BeatId).Distinct().ToListAsync();
+
+            var blockers = await dbV.BeatVerifications.AsNoTracking()
+                .Where(v => beatIds.Contains(v.BeatId) && v.Result == "Fail" && v.Severity == "BLOCKER")
+                .OrderBy(v => v.CheckType).ToListAsync();
+
+            if (blockers.Count > 0)
+            {
+                Console.Error.WriteLine($"[publish] ❌ {blockers.Count} BLOCKER verification finding(s) — fix before publishing:");
+                foreach (var b in blockers.Take(10))
+                    Console.Error.WriteLine($"  [{b.CheckType,-22}] Beat {b.BeatId}: {b.Evidence ?? "(no detail)"}");
+                Console.Error.WriteLine("[publish] Run 'ss --verify-story --slug <slug>' for full report.");
+                return 1;
+            }
+        }
+
         Console.WriteLine($"[publish] Rendering \"{nodeTitle}\" to .docx + .epub + .pdf + .txt…");
         try
         {

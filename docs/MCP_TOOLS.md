@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**233 tools** across **34 tool families.**
+**242 tools** across **36 tool families.**
 
 ## Families
 
@@ -20,6 +20,7 @@
 | [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
 | [Canon](#canon) | 9 |
+| [Canon Doc](#canon-doc) | 6 |
 | [Combat](#combat) | 1 |
 | [Config](#config) | 14 |
 | [Context](#context) | 4 |
@@ -46,6 +47,7 @@
 | [Story Scope](#story-scope) | 3 |
 | [Survey](#survey) | 7 |
 | [Universe](#universe) | 5 |
+| [Verification](#verification) | 3 |
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 5 |
@@ -153,6 +155,55 @@ List every faction in canon: street gangs, syndicates, cells, advocacy groups, e
 List every place / district in canon. Use this to find a location for a scene.
 
 - _(no parameters)_
+
+## Canon Doc
+
+<sub>`CanonDocTools`</sub>
+
+### `generate_canon_md`
+
+Regenerate a world-canon .md file from its DB sections. Writes the assembled content to disk and updates the LastChecksum so codex doctor validates the file as current. Run this after every set_canon_section call.
+
+- `documentType` (string, required) — Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.
+- `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
+
+### `get_canon_document`
+
+Get a full world-canon document assembled from its DB sections. documentType: WorldBible | WorldMaster | Franchise | UniverseCanon. universeSlug: glmz | scry/fantasy/caul (or a universe GUID). Returns the complete assembled markdown — same content that generate_canon_md would write to disk.
+
+- `documentType` (string, required) — Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.
+- `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
+
+### `list_canon_sections`
+
+List all sections in a world-canon document with their keys, titles, sort order, and last-updated times. Use this to find the sectionKey you need before calling set_canon_section.
+
+- `documentType` (string, required) — Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.
+- `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
+
+### `list_story_bible_sections`
+
+List all NodeBibleSections for a story node. Shows section types, content lengths, and last-updated timestamps. Use this to see which typed sections exist before calling set_story_bible_section.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
+
+### `set_canon_section`
+
+Update or create a section in a world-canon document. This is the ONLY way to edit world canon — do NOT hand-edit docs/BIBLE.md, docs/WORLD.md, docs/FRANCHISE.md, or docs/universes/CAUL.md. After setting a section, call generate_canon_md to write the updated .md artifact to disk. To find available sectionKeys, call list_canon_sections first.
+
+- `documentType` (string, required) — Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.
+- `sectionKey` (string, required) — Stable section key — e.g. 'SS-LAW-1', 'SS-§3', 'preamble'. Use list_canon_sections to find existing keys.
+- `content` (string, required) — Full section content (markdown). Replaces the existing content for this key.
+- `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
+- `sectionTitle` (string, optional) — Optional: human-readable section title (the ## heading text). Leave blank to keep the existing title.
+
+### `set_story_bible_section`
+
+Update or create a structured section in a story's node bible (NodeBibleSections table). sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain structured per-category content. After calling this, run generate_node_doc to refresh the docs/nodes/<CODE>.md artifact and then ss --sync-markdown so DocContextService picks it up.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
+- `sectionType` (string, required) — Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.
+- `content` (string, required) — Section content (markdown). Replaces any existing content for this sectionType.
 
 ## Combat
 
@@ -1652,6 +1703,28 @@ Set the universal world facts for the current universe. These facts are injected
 Switch the active universe for this session by slug (e.g. 'glmz' or 'scry'). All subsequent canon/story reads are scoped to it. Returns the new current universe or an error if the slug is unknown.
 
 - `slug` (string, required) — Universe slug from list_universes, e.g. 'glmz'.
+
+## Verification
+
+<sub>`VerificationTools`</sub>
+
+### `truth_status`
+
+Get the current truth status for a story: how many beats have verified contracts, how many have BeatBlueprintDecision rows, how many are in violation. Use this as a quick dashboard check before writing or publishing.
+
+- `slugOrCode` (string, required) — Story node slug or NodeCode.
+
+### `verify_beat`
+
+Run all verification checks for a single beat against its declared BeatBlueprintDecision contract. Checks: BannedPattern (internal-understanding/epilogue anti-patterns), EventType (declared vs detected), SubplotCarrier (entities present when declared), EscalationFloor (emotional depth vs floor), DeclaredPurpose (embedding similarity — requires embeddings). Results are upserted to BeatVerification table. Returns Pass/Fail/Partial/Skipped per check with evidence. Exit 1 (blockers found) if any BLOCKER check fails.
+
+- `beatId` (string, required) — Beat GUID to verify.
+
+### `verify_story`
+
+Run verification checks for all enabled beats in a story. Returns a summary of BLOCKER/MODERATE/MINOR failures plus individual findings. Results are upserted to BeatVerification table. BLOCKER findings must be fixed before publish. Includes EscalationMonotonic check (story-wide curve regression) not available per-beat.
+
+- `slugOrCode` (string, required) — Story node slug or NodeCode.
 
 ## Voice
 

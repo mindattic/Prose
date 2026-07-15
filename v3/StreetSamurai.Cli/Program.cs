@@ -486,6 +486,50 @@ if (args.Contains("--migrate-legacy-book-chapter"))
     return;
 }
 
+// Truth-First Architecture — Step A2: migrate hand-editable canon .md files
+// (BIBLE.md, WORLD.md, FRANCHISE.md, universes/CAUL.md) into CanonDocument +
+// CanonDocumentSection DB rows. Idempotent; skips already-migrated documents.
+//   ss --migrate-canon-docs [--dry-run]
+if (args.Contains("--migrate-canon-docs"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await MigrateCanonDocsCli.RunAsync(args, sp);
+    return;
+}
+
+// Truth-First Architecture — Step A2 (NodeBible): migrate Nodes.NodeBible text
+// blobs into NodeBibleSection rows. Creates a single "Full" section per node.
+// Idempotent; skips nodes that already have sections.
+//   ss --migrate-node-bibles [--slug <slug>] [--dry-run]
+if (args.Contains("--migrate-node-bibles"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await MigrateNodeBiblesCli.RunAsync(args, sp);
+    return;
+}
+
+// Truth-First Architecture — Step B2: decompose EscalationCurveJson /
+// EventTypePaletteJson blobs and BeatTags into per-beat BeatBlueprintDecision rows.
+// Idempotent; skips beats that already have a decision row.
+//   ss --migrate-blueprint-rows [--slug <slug>] [--dry-run]
+if (args.Contains("--migrate-blueprint-rows"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await MigrateBlueprintRowsCli.RunAsync(args, sp);
+    return;
+}
+
+//   ss --verify-beat --id <beatId> [--json]
+//   ss --verify-story --slug <slug> [--json]
+// Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision
+// contract. Results upserted to BeatVerification table. BLOCKER findings block --publish.
+if (args.Contains("--verify-beat") || args.Contains("--verify-story"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await VerifyBeatCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: migrate legacy Books/Chapters/ChapterBeats/Episodes/EpisodeBeats
 // data into the unified Beat/Node schema. Idempotent — safe to re-run.
 //   ss --migrate-nodes

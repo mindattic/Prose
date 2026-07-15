@@ -401,6 +401,50 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(StructuralBlueprintService)); }
         }
 
+        // Beat contract (Track B — Truth-First Architecture): load the BeatBlueprintDecision row
+        // for this beat and augment the structural guidance with its declared purpose + pre-state.
+        // Non-blocking: if the node has a blueprint but no decision row, log a warning only.
+        if (beatId != Guid.Empty && dbFactory != null)
+        {
+            try
+            {
+                await using var bdDb = await dbFactory.CreateDbContextAsync(ct);
+                var decision = await bdDb.BeatBlueprintDecisions
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(d => d.BeatId == beatId, ct);
+
+                if (decision == null)
+                {
+                    // Check whether the node has a blueprint at all (only warn when blueprint exists)
+                    var hasBlueprint = await bdDb.NodeStructuralBlueprints
+                        .AnyAsync(bp => bp.NodeId == context.NodeId, ct);
+                    if (hasBlueprint)
+                        log.LogWarning(
+                            "[ProseWriterRouter] Beat {BeatId} has a structural blueprint but no BeatBlueprintDecision row. " +
+                            "Run ss --generate-blueprint --slug <slug> to generate per-beat contracts, or " +
+                            "ss --migrate-blueprint-rows to backfill existing stories.",
+                            beatId);
+                }
+                else
+                {
+                    var contractLines = new List<string>();
+                    if (!string.IsNullOrWhiteSpace(decision.DeclaredPurpose))
+                        contractLines.Add($"BEAT CONTRACT — declared purpose: {decision.DeclaredPurpose}");
+                    if (!string.IsNullOrWhiteSpace(decision.WorldStatePre))
+                        contractLines.Add($"WORLD STATE ENTERING: {decision.WorldStatePre}");
+
+                    if (contractLines.Count > 0)
+                    {
+                        var contractBlock = string.Join("\n", contractLines);
+                        structuralBlueprintGuidance = !string.IsNullOrEmpty(structuralBlueprintGuidance)
+                            ? structuralBlueprintGuidance + "\n\n" + contractBlock
+                            : contractBlock;
+                    }
+                }
+            }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] BeatBlueprintDecision load failed, continuing"); }
+        }
+
         // StoryScope audit loop-back: prior audit findings for this node become
         // generation constraints — the audit corrects future beats, not just reports.
         if (context.NodeId != Guid.Empty && dbFactory != null)
@@ -519,11 +563,12 @@ public class ProseWriterRouter(
         }
 
         // Fire-and-forget: coverage logging + reconciliation + tension recording + reader knowledge extraction.
-        var pacingApplicable  = totalBeats > 0;
-        var structApplicable  = totalBeats > 0;
-        var combatApplicable  = mode == BeatMode.Combat;
-        var nodeApplicable    = context.NodeId != Guid.Empty;
-        var capturedResult    = result;
+        var pacingApplicable      = totalBeats > 0;
+        var structApplicable      = totalBeats > 0;
+        var combatApplicable      = mode == BeatMode.Combat;
+        var nodeApplicable        = context.NodeId != Guid.Empty;
+        var beatContractApplicable = beatId != Guid.Empty;
+        var capturedResult        = result;
         var capturedNodeId    = context.NodeId;
         var capturedBeatGoal  = context.BeatGoal;
         var capturedEntityRoster = entityStackContext.Length > 0 ? entityStackContext : null;
@@ -559,6 +604,7 @@ public class ProseWriterRouter(
                 new("StoryScience",        IsApplicable: totalBeats > 0,    IsActive: storyScienceGuidance.Length > 0,                                        BlockSizeChars: storyScienceGuidance.Length),
                 new("NarrativeChart",      IsApplicable: nodeApplicable,    IsActive: offscreenActivityContext.Length > 0,                                    BlockSizeChars: offscreenActivityContext.Length),
                 new("StructuralBlueprint", IsApplicable: nodeApplicable && totalBeats > 0, IsActive: !string.IsNullOrEmpty(structuralBlueprintGuidance),         BlockSizeChars: structuralBlueprintGuidance?.Length ?? 0),
+                new("BeatContract",        IsApplicable: beatContractApplicable,           IsActive: beatContractApplicable && !string.IsNullOrEmpty(structuralBlueprintGuidance), BlockSizeChars: 0),
             ], CancellationToken.None); }
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed", nameof(WorkflowMonitorService)); }
 

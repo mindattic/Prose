@@ -253,6 +253,50 @@ function Invoke-Doctor {
     }
   }
 
+  # 11. Generated node docs: checksum integrity (detect hand-edits to generated sections).
+  # NodeDocService embeds "<!-- GENERATED-CHECKSUM: sha256hex -->" after the GeneratedMarker.
+  # The checksum covers everything after that line, LF-normalized.
+  $nodesDir = Join-Path $DocsDir 'nodes'
+  if (Test-Path $nodesDir) {
+    $sha256obj = [System.Security.Cryptography.SHA256]::Create()
+    $nodeFiles = Get-ChildItem -LiteralPath $nodesDir -Filter '*.md' -ErrorAction SilentlyContinue
+    foreach ($nf in $nodeFiles) {
+      $nRel   = $nf.FullName.Replace($RepoRoot, '').TrimStart('\', '/')
+      $nRaw   = Get-Content -LiteralPath $nf.FullName -Raw -Encoding UTF8
+      if ([string]::IsNullOrEmpty($nRaw)) { continue }
+      $nRaw   = $nRaw -replace "`r`n", "`n" -replace "`r", "`n"
+
+      # Find the generated-sections marker
+      $nMarkerStr = '<!-- ==== GENERATED SECTIONS'
+      $nMPos      = $nRaw.IndexOf($nMarkerStr, [System.StringComparison]::Ordinal)
+      if ($nMPos -lt 0) {
+        # Pre-NodeDocService doc — warn to regenerate; not an error until all docs are migrated.
+        Add-Warn "generated-checksum: $nRel has no GENERATED SECTIONS marker - re-run: ss --generate-node-doc --slug CODE"
+        continue
+      }
+      $nMEnd = $nRaw.IndexOf("`n", $nMPos)
+      if ($nMEnd -lt 0) { continue }
+
+      # Look for checksum line immediately after marker
+      $nAfterMarker = $nRaw.Substring($nMEnd + 1)
+      $nCsumMatch   = [regex]::Match($nAfterMarker, '^<!-- GENERATED-CHECKSUM: ([0-9a-f]{64}) -->')
+      if (-not $nCsumMatch.Success) {
+        Add-Warn "generated-checksum: $nRel has no checksum line (old format) - re-run: ss --generate-node-doc --slug CODE"
+        continue
+      }
+      $nStoredCsum  = $nCsumMatch.Groups[1].Value
+      $nCsumEnd     = $nAfterMarker.IndexOf("`n", [System.StringComparison]::Ordinal)
+      if ($nCsumEnd -lt 0) { continue }
+      $nBody        = $nAfterMarker.Substring($nCsumEnd + 1)
+      $nBodyBytes   = [System.Text.Encoding]::UTF8.GetBytes($nBody)
+      $nActualCsum  = [System.BitConverter]::ToString($sha256obj.ComputeHash($nBodyBytes)).Replace('-', '').ToLower()
+      if ($nActualCsum -ne $nStoredCsum) {
+        Add-Err "generated-checksum: $nRel hand-edited (checksum mismatch) - re-run: ss --generate-node-doc --slug CODE"
+      }
+    }
+    $sha256obj.Dispose()
+  }
+
   # --- report ---
   Write-Host ""
   Write-Host "Checklist:" -ForegroundColor Cyan
@@ -265,6 +309,7 @@ function Invoke-Doctor {
   Write-Host "  [*] bible-cited file paths exist on disk"
   Write-Host "  [*] generatedFrom artifacts not stale"
   Write-Host "  [*] digest freshness"
+  Write-Host "  [*] generated node docs: checksum integrity"
   Write-Host ""
 
   if ($script:warnings.Count -gt 0) {

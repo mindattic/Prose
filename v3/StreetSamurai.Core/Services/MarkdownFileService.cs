@@ -196,6 +196,197 @@ public class MarkdownFileService
         return new(inserted, updated, unchanged, errors);
     }
 
+    // ── Sync: CanonDocumentSections + NodeBibleSections → MarkdownFiles ───────
+    // DB-sourced sync: assembles content from the Truth-First DB tables and upserts
+    // into MarkdownFiles. DB content always wins over file-sync content — this is how
+    // hand-edits to .md files are detected and reverted to the canonical DB source.
+
+    public async Task<SyncResult> SyncFromCanonDbAsync(bool dryRun = false, CancellationToken ct = default)
+    {
+        var errors = new List<string>();
+        int inserted = 0, updated = 0, unchanged = 0;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // ── World-canon documents ────────────────────────────────────────────
+        var docPathMap = new Dictionary<string, (string RelativePath, string Tier)>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["WorldBible"]    = ("docs/BIBLE.md",                "topic"),
+            ["WorldMaster"]   = ("docs/WORLD.md",                "topic"),
+            ["Franchise"]     = ("docs/FRANCHISE.md",            "topic"),
+            ["UniverseCanon"] = ("docs/universes/CAUL.md",       "topic"),
+        };
+
+        var docs = await db.CanonDocuments
+            .Include(d => d.Sections.OrderBy(s => s.SortKey))
+            .ToListAsync(ct);
+
+        foreach (var doc in docs)
+        {
+            if (!docPathMap.TryGetValue(doc.DocumentType, out var pathInfo)) continue;
+            var (relPath, tier) = pathInfo;
+            try
+            {
+                var assembled = AssembleFromSections(doc.Sections);
+                var hash      = ComputeHash(assembled);
+                var existing  = await db.MarkdownFiles
+                    .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
+
+                var isNew = existing == null;
+                var contentChanged = !isNew && existing!.ContentHash != hash;
+                if (isNew || contentChanged)
+                {
+                    if (!dryRun)
+                    {
+                        if (isNew)
+                        {
+                            db.MarkdownFiles.Add(new MarkdownFile
+                            {
+                                Id           = Guid.NewGuid(),
+                                FilePath     = Path.Combine(paths.DataRoot, relPath.Replace('/', Path.DirectorySeparatorChar)),
+                                FileRoot     = "project",
+                                RelativePath = relPath,
+                                FileName     = Path.GetFileName(relPath),
+                                Category     = "codex",
+                                Content      = assembled,
+                                ContentHash  = hash,
+                                LastSyncedAt = DateTime.UtcNow,
+                                SyncedBy     = "db-canon",
+                                Tier         = tier,
+                                Scope        = "",
+                                Triggers     = "",
+                                AutoTier     = true,
+                            });
+                            await db.SaveChangesAsync(ct);
+                        }
+                        else
+                        {
+                            existing!.Content      = assembled;
+                            existing.ContentHash   = hash;
+                            existing.LastSyncedAt  = DateTime.UtcNow;
+                            existing.SyncedBy      = "db-canon";
+                            await db.SaveChangesAsync(ct);
+                        }
+                    }
+                    if (isNew) inserted++; else updated++;
+                }
+                else
+                {
+                    unchanged++;
+                }
+            }
+            catch (Exception ex)
+            {
+                errors.Add($"{relPath}: {ex.Message}");
+            }
+        }
+
+        // ── Node bibles (NodeBibleSections) ───────────────────────────────────
+        var nodeBibles = await db.NodeBibleSections
+            .Join(db.Nodes, s => s.NodeId, n => n.Id, (s, n) => new
+            {
+                s.NodeId,
+                s.SectionType,
+                s.Content,
+                NodeCode = (n.NodeCode ?? n.Slug).ToUpperInvariant(),
+                n.Slug,
+            })
+            .ToListAsync(ct);
+
+        // Group by node — assemble "Full" section as primary, skip if no Full
+        var nodeGroups = nodeBibles
+            .GroupBy(r => r.NodeCode)
+            .ToList();
+
+        foreach (var group in nodeGroups)
+        {
+            var nodeCode = group.Key;
+            var full     = group.FirstOrDefault(r => r.SectionType == "Full");
+            if (full == null) continue;
+
+            var relPath  = $"docs/nodes/{nodeCode}.md";
+            try
+            {
+                var content  = full.Content;
+                var hash     = ComputeHash(content);
+                var existing = await db.MarkdownFiles
+                    .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
+
+                var isNew          = existing == null;
+                var contentChanged = !isNew && existing!.ContentHash != hash;
+                if (isNew || contentChanged)
+                {
+                    if (!dryRun)
+                    {
+                        if (isNew)
+                        {
+                            db.MarkdownFiles.Add(new MarkdownFile
+                            {
+                                Id           = Guid.NewGuid(),
+                                FilePath     = Path.Combine(paths.DataRoot, "docs", "nodes", $"{nodeCode}.md"),
+                                FileRoot     = "project",
+                                RelativePath = relPath,
+                                FileName     = $"{nodeCode}.md",
+                                Category     = "node-bible",
+                                Content      = content,
+                                ContentHash  = hash,
+                                LastSyncedAt = DateTime.UtcNow,
+                                SyncedBy     = "db-canon",
+                                Tier         = "node",
+                                Scope        = nodeCode,
+                                Triggers     = "",
+                                AutoTier     = true,
+                            });
+                            await db.SaveChangesAsync(ct);
+                        }
+                        else
+                        {
+                            existing!.Content      = content;
+                            existing.ContentHash   = hash;
+                            existing.LastSyncedAt  = DateTime.UtcNow;
+                            existing.SyncedBy      = "db-canon";
+                            existing.Tier          = "node";
+                            existing.Scope         = nodeCode;
+                            await db.SaveChangesAsync(ct);
+                        }
+                    }
+                    if (isNew) inserted++; else updated++;
+                }
+                else
+                {
+                    unchanged++;
+                }
+            }
+            catch (Exception ex)
+            {
+                errors.Add($"{relPath}: {ex.Message}");
+            }
+        }
+
+        return new(inserted, updated, unchanged, errors);
+    }
+
+    private static string AssembleFromSections(IEnumerable<CanonDocumentSection> sections)
+    {
+        var sb = new System.Text.StringBuilder();
+        foreach (var s in sections)
+        {
+            if (s.SectionKey == "preamble")
+            {
+                sb.AppendLine(s.Content);
+                sb.AppendLine();
+            }
+            else
+            {
+                sb.AppendLine($"## {s.SectionTitle ?? s.SectionKey}");
+                sb.AppendLine();
+                sb.AppendLine(s.Content);
+                sb.AppendLine();
+            }
+        }
+        return sb.ToString().TrimEnd() + "\n";
+    }
+
     // ── Doc Context Stack classification (tier / scope / triggers) ──────────
 
     public readonly record struct DocClassification(string Tier, string Scope, string Triggers, bool AutoTier);
