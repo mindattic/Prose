@@ -226,7 +226,7 @@ public class DocxExportService
                     chapterCount++;
                     chapterTitle[i] =
                         !string.IsNullOrWhiteSpace(ob.Beat.Title) ? ob.Beat.Title!.Trim()
-                        : nodeChanged && nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? $"Chapter {chapterCount} - {t.Trim()}"
+                        : nodeChanged && nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim()
                         : $"Chapter {chapterCount}";
                 }
                 prevNode = ob.NodeId;
