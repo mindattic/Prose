@@ -119,9 +119,10 @@ Surface-plain prose (no mis-rendering) is permitted ONLY in marked non-Glim POV 
 - **Light as weapon** — set up dark-sight early so the floodlight white-out is bodily horror, not spectacle.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 3e0cb6453ffd2d5a26ffc674c9fb99784ff3d28e0ad34040b0beeae625a8a348 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.8258967Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:56:13.8994837Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Noor's parallel journey from loss and hope to agency and choice. She begins as a grieving mother seeking a vanished child, passes through the surface's bureaucratic machinery, discovers her son is alive but unreachable, enters the Deep against protocol, and ultimately chooses integration with the Underclan—mirroring Glim's own movement from surface loss to Deep belonging, but inverted: she trades the surface for the Deep rather than the Deep for the surface.
 - **Temporal scheme**: linear
@@ -138,7 +139,7 @@ Surface-plain prose (no mis-rendering) is permitted ONLY in marked non-Glim POV 
   - **The Tartarian Empire** (forbidden zone / ancient site) — Named in teaching as the place you do not go (beat 8); the clan flees toward it during the flood-light assault (beat 45); becomes their refuge. Described as beautiful, tiled, with vaults that echo. The Current's pulse is felt here but never confirmed. The Deep's oldest mystery.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.8258967Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:56:13.8994837Z from Beats table — edit via MCP beat tools -->
 
 ### Ch01 - The Breath of the Deep
 - B01 · Ch01 - The Breath of the Deep — Establishes the Underclan's sensory world and communal rhythms to ground the reader in a civilization built on attentiveness and interdependence.

@@ -87,9 +87,10 @@ A bleed intrusion sentence arrives in the current POV's paragraph **without attr
 **Quality target:** Every chapter standalone ≥82%. Cumulative trending ≥85%.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: b4100210d7a7229e19fe57654d9dc83e0346a342e07ac1088fdb98fc36888240 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7508376Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:41.2693282Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Seto's courier routes and infrastructure knowledge mirror Amara's institutional access and documentation skills; both are specialists in systems they service without questioning until the bleed forces recognition. The parallel tracks: Amara's non-filing (suppression of knowledge) and Seto's route-mapping (assembly of absence) both expose the same conspiracy via opposite methods.
 - **Temporal scheme**: linear
@@ -104,7 +105,7 @@ A bleed intrusion sentence arrives in the current POV's paragraph **without attr
   - **Editorial review requested — account activity notification** (institutional_message) — Portal flag appears pinned in soft institutional gray; Amara recognizes the shape as something she has sent before—the gentle administrative noun 'concern' doing the work of an accusation.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7508376Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:41.2693282Z from Beats table — edit via MCP beat tools -->
 
 ### Act One — The Bleed
 - B01 · The Comfort of the Feed — Establishes Amara as an experienced journalist whose professional immersion in managed environments has blinded her to systemic control, priming her awakening.

@@ -77,9 +77,10 @@ His arc (obligation-model): In the past timeline, he carries the weight of the d
 5. "He had decided this was tiredness." LOCKED. Final Brandt line.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: c7455d5560f687c5a23f5a7b48bc1c0621504147aa8d6c2df239c32a189b27ff -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.8175757Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:56:10.3509676Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Hana Morimoto's parallel investigation—a civilian seeking accountability through formal channels—mirrors Bear's accountability through testimony and obligation. Both pursue truth against institutional resistance; both discover that the system protects itself first.
 - **Temporal scheme**: nonlinear
@@ -97,7 +98,7 @@ His arc (obligation-model): In the past timeline, he carries the weight of the d
   - **NS-7 neural implant (Halcyon Neural Services)** (medical device) — sustains Brandt's cardiology and lower-brainstem function; referenced in beats 32 and 33 as the machine that will ultimately fail, releasing Brandt from Halcyon's hold and from his own weight
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.8175757Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:56:10.3509676Z from Beats table — edit via MCP beat tools -->
 
 ### Part One — The Charge
 - B01 · Testament — Establishes Bear as a disciplined, self-reliant professional whose augmented body and Thursday vigil signal that he is a man who shows up for things he cannot delegate.

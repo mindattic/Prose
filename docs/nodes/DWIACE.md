@@ -102,9 +102,10 @@ Cat-ear biology (physical, never labeled): hope-forward, scared-flat, bilateral-
 5. Ends on institutional burial. "Voluntary recall." Evidence stays with Rennick Investigations.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 8d997b4d20aa90bf5834425f3709e220985bde1038118e28e848ed4db1d2f4cd -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7231968Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:26.6321043Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Sol Castellanos's death and the Tributary's prior harvesting mirrors Celeste's near-Dissemination. Both are grievers lured by a dead loved one's voice; Sol's case provides the proof that the voice is predatory, not supernatural.
 - **Temporal scheme**: linear
@@ -120,7 +121,7 @@ Cat-ear biology (physical, never labeled): hope-forward, scared-flat, bilateral-
   - **CorpoNation voluntary recall notice (draft)** (institutional document) — Teller observes that the draft notice is already in the CorpoNation's system before the team reaches the staging room. The notice will formalize Celeste's extraction as 'voluntary'—a euphemism that masks institutional seizure. Referenced in Ch11.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7231968Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:26.6321043Z from Beats table — edit via MCP beat tools -->
 
 ### Ch01 — Cel
 _(47 beats)_

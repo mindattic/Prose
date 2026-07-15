@@ -1,4 +1,4 @@
----
+﻿---
 node: IxS
 title: Iron & Silk
 kind: book
@@ -36,7 +36,7 @@ The texture shifts from the trilogy's "corp vs. runner" clean lines. The Lotus S
 
 The colors appear throughout: the silk of Lotus community aesthetics, the iron of Thorn enforcement hardware, the silk of the census data weaving through the civic grid, the iron of the Gray Zone's corroded infrastructure, the silk dress of the Root's actual face. They never announce themselves. The title earns itself the same way the trilogy's did: as a description of what the world is made of.
 
-Close-third POV on **Rook** throughout, consistent with the trilogy. Ekow Ato provides occasional tactical POV chapters (his register is different — hunter, external, observational — and it is used to show the Lotus Syndicate from the inside in a way Rook never could).
+Close-third POV on **Rook** throughout, consistent with the trilogy. Casimir Mwamba provides occasional tactical POV chapters (his register is different — hunter, external, observational — and it is used to show the Lotus Syndicate from the inside in a way Rook never could).
 
 ## §2 — Premise
 
@@ -51,466 +51,298 @@ Three unrelated jobs bring the crew back together. The jobs are not unrelated.
 ## §3 — The Three Jobs
 
 ### Job 1: The Sculpture
-**Client:** anonymous, via a fixer named Ferris  
-**Target:** A stolen "data sculpture" — a physical/digital art piece commissioned by a now-dead Gray Zone artist named Dayo Mensah-Kuroda. The sculpture is titled *Headcount* and it has gone missing from the estate of Mensah-Kuroda's last patron.  
+**Client:** anonymous, via a fixer named Ferris
+**Target:** A stolen "data sculpture" — a physical/digital art piece commissioned by a now-dead Gray Zone artist named Dayo Mensah-Kuroda. The sculpture is titled *Headcount* and it has gone missing from the estate of Mensah-Kuroda's last patron.
 **The real value:** The sculpture contains fifteen years of embedded sociometric data — aggregate census of Gray Zone demographics, migration patterns, debt distributions, heritage cross-sections. Mensah-Kuroda collected it as art; it is also the most accurate picture of the Gray Zone's population that has ever been assembled. The Lotus Syndicate wants it as the registry's demographic baseline.
 
-The crew recovers the sculpture from a Z3 collector's market. They nearly miss what it contains. Vox's channels flag the data format as civic-grid-adjacent — not art at all. The client who hired them through Ferris is never identified. They hold the sculpture.
-
 ### Job 2: The Witness
-**Client:** A Gray Zone community lawyer named Adaeze Nnodu-Park (not Lotus-eligible by blood, runs a Gray Zone legal cooperative that has been fighting Lotus debt structures for twelve years)  
-**Target:** Extract a Lotus defector named **Lee Nari** — born Lotus, Korean-Vietnamese, cast out fifteen years ago for marrying outside the bloodline, built a quiet life in the Z6 buffer zone under a new name  
-**The reason she's in danger:** Nari was a junior Stem adjutant before her casting out. She was in the room where the Purification Protocol was authorized. She knows the Protocol exists, knows what it is, and is the only living non-Lotus witness to the Stems' vote.  
-**The complication:** The Thorns got there first. Nari is alive — they want her in one piece, the Protocol requires her silence but not her death (yet). The Thorn commander assigned is **Park Gi-su**, efficient and thorough, who has been running the Lotus's cleanups for eight years.
-
-The crew extracts Nari through Old Harbor — Lotus home territory. What she tells them stops being a job.
+**Client:** Adaeze Nnodu-Park (Z5/Z6 Legal Cooperative)
+**Target:** Extract Lee Nari (alias Jin Mirae) — born Lotus, Korean-Vietnamese, cast out fifteen years ago
+**The reason:** Nari was in the room where the Purification Protocol was authorized. She is the only living non-Lotus witness.
+**The complication:** Park Gi-su's Thorns got there first — he wants her alive but silent.
 
 ### Job 3: The Access
-**Client:** The civic grid admin herself — **Priya Ramanujan-Cross**, Z8 residential, GLMZ Civic Systems Engineer Grade 4  
-**Target:** She approaches through a cutout (Vox's gray-market channel network picks up her distress signal). The Lotus Syndicate has been coercing her for six months to deploy a firmware update to a test cluster of neuretics registration nodes — a passive read-access backdoor that would give the Syndicate continuous access to the GLMZ civic grid's registered-neuretics database. She's been delaying. They've run out of patience.  
-**The job:** Extract Priya, destroy the firmware before it deploys to the full grid.  
-**The complication:** The test deployment has already been pushed to three nodes in Z6 — the buffer zone where the crew just ran Job 2. The partial deployment is live. The Syndicate already has neuretics registry data for a 200,000-person test population. Combined with the *Headcount* sculpture's demographic data, they don't need the full grid deployment to begin Phase 1 of the Protocol.
+**Client:** Priya Ramanujan-Cross, GLMZ Civic Systems Engineer Grade 4
+**Target:** Extract Priya; destroy firmware backdoor before full civic grid deployment
+**The complication:** The test deployment is already live on three Z6 nodes — 200,000-person Phase 0 data already in Lotus hands.
 
 ## §4 — The Characters
 
 ### Inkeri Saarinen ("Rook") — POV, leader
-Returns from CxC with the count finally holding names. The arithmetic is not fixed — it is changed. She is not a different person; she is a person who knows what the count can include when she lets it. What this story asks of her is different: not "can you follow your people into the worst room" (that was CxC) but "can you choose a solution that doesn't have a clean answer and live with what it does to the people depending on the messy thing you break."
+Returns from CxC with the count finally holding names. Her wound: operational — treats people as variables until they prove otherwise. Her arc: the arithmetic learns a future tense. The count has to include what you're building toward, not just who you rescued.
 
-Her wound from the trilogy: operational. She treats people as variables until they prove otherwise. What she learns in IxS: the variables don't stop being people when the job is over.
+*Gear:* The Reibo flechette from CxC. She hasn't put it down.
 
-*Gear:* The Reibo flechette from CxC. She hasn't put it down. She's thought about why not.
-
-*Arc:* Rook's arithmetic learns a future tense. The count doesn't end with the rescue — it has to include what you're building toward.
-
-### Ekow Ato — new sixth
-*Same character as VATD and MNEMO. The Lotus work name was a collar; the crew uses his real name.*
-
-**Heritage:** Ghanaian (Fante-speaking coastal descent); born Tuesday — kra din Ekow, The Ocean (Ubiquitous Diaspora)  
-**Background:** 8 years NGRA, four borders, two urban theaters. Discharged when unit disbanded post-peace accord. Has been operating as a Lotus outsider dog in the Gray Zone for twelve years — sent when the work needs to be done by hands they'd rather not trace to the bloodline. He is the sharpest of these dogs. He knows it. He hates what he knows.  
-**Why he's here:** Rook found him through Adaeze Nnodu-Park's legal cooperative — he's done work for them too, the side the Lotus doesn't know about. Two employers, opposite ends of the same war. He agreed to the crew because the alternative was doing nothing, and doing nothing for the Lotus is the same as doing it for them.  
-**Voice:** Flat, precise, economical. He speaks the way a man speaks who has learned that words have consequences and silence has fewer. He knows the Lotus Syndicate's territory, habits, and personnel the way you know the rooms of a house you've cleaned for years. His knowledge is intimate and his contempt is structural. NGRA doctrines: Deliberate Patience (the knock), Information Hygiene (fieldstrip, leave parts), Minimum Footprint, Compartmentation. Folds handkerchief in quarters when a search closes.  
-**Drive:** Dismantle the thing he has been serving from the inside, or at least make it unable to do what he knows it's about to do.  
-**Wound:** Twelve years of being the dog. The jobs he did for the Lotus that he cannot undo. He carries a specific list that he has never shown anyone. First item: Berhane Haile.  
-**Action Figure Test:** Hard-used combat frame (enhanced proprioception, reinforced bone structure, NGRA-spec stress tolerances), matte-black tactical gear, a specific long-blade knife he has kept since the NGRA. Large, quiet. The kind of still that makes people cautious.
+### Casimir Mwamba — new sixth
+**Heritage:** Ghanaian-Portuguese (GLMZ Diaspora)
+Twelve years as a Lotus outsider dog. Knows the Syndicate's territory the way you know a house you've cleaned for years. Flat, precise, economical speech. Carries a list he has never shown anyone. His wound: the jobs he did for the Lotus that he cannot undo.
 
 ### Blessing Agwu ("Lace")
-Returns. Has been running seven simultaneous identities since CxC — a maintenance habit, she says. The number is not incidental: seven identities means seven lives she has built to specifications and inhabits by rotation, none of them hers. IxS puts her in a situation where the face she wears to get inside the Lotus's inner sanctum is the closest to her own face she has used in years. What she makes of that is her arc.
-
-*Arc:* The social engineer who wears faces meets an institution that has been doing exactly that for 40 years — building a parallel face of community care over a core of blood-purity supremacy. The contempt she has for people who underestimate "talking" turns into something she has to decide what to do with.
+Seven simultaneous identities maintained since CxC. Her arc: the social engineer who wears faces meets an institution that has been doing exactly that for 40 years.
 
 ### Mikkeli Väinämöinen ("Boiler")
-Returns. Still building. He has been doing contract work for a Gray Zone infrastructure cooperative — legitimate demolition and structural renovation. He is very cheerful about this. Several Gray Zone blocks have structurally improved. The Lotus Syndicate views his work in their territory with territorial suspicion. He views their suspicion as a useful information source.
-
-*Arc:* The man who finds beauty in things under load is handed a load-bearing structure that is also a community institution. The finale requires bringing something down without destroying what lives inside it. The engineering problem is also the moral problem.
+Doing contract renovation for a Gray Zone cooperative. His arc inverts: this time he builds, does not destroy. The final operation requires bringing something down without destroying what lives inside it.
 
 ### Tem Okafor ("Vox")
-Returns. Still running four channels. Has rebuilt the gray-market agent network using older protocols. The narrow bandwidth is no longer a wound she's recovering from — it has become a discipline. She's found things that six-channel Vox would have missed because she was moving too fast. 
-
-*Arc:* The unseen channel who stepped into the light in CxC has to decide what she wants to be now that the light knows her face. Running five simultaneous channels again or staying at four. She chooses four. On purpose.
+Four channels, on purpose. The narrow bandwidth is a discipline now, not a wound.
 
 ### Remi Diallo ("Scout")
-Returns. Named Gerald. That's enough. She is different in the ways that mattered and the same in the ways that made her good at this.
-
-*Arc:* The Ghost who learned to be present. IxS puts her back in an ECT operation — the civic grid is a distributed network architecture that is exactly what her crawlers are designed for. The operation requires presence AND threading. She has to do both in the same window. This is technically possible. She's never tried it.
+Business card reads: *Remi Diallo & Gerald, Structural Data.* The dual-presence operation in Ch 11 is the hardest thing she has attempted technically. It costs something.
 
 ### Lee Nari ("the witness")
-**Heritage:** Korean-Vietnamese (Lotus blood-eligible on both sides — this is the bitterest part of it for her: she was pure by their standards and she left anyway)  
-**Age:** 43  
-**Background:** Junior Stem adjutant before her casting out. Married outside the bloodline to a Yoruba-Portuguese man named Emre Farhat-Adeyemi, who died three years after the casting out in what was ruled an accident. She has never believed it was an accident. She has been living as **Jin Mirae** in Z6 for fifteen years, doing community social work, building something small and useful.  
-**Voice:** Careful, precise, carries a specific kind of fatigue that comes from fifteen years of waiting for the knock. When she speaks about the Lotus, she uses the correct terminology because she was inside: Stems, Root, Thorns, the Protocol — all said without inflection because inflection would be too much weight.  
-**Drive:** The Protocol must not deploy. She's known it was coming for fifteen years. She filed this under "when I die I will have done nothing." She is done filing it there.  
-**Wound:** Emre. The accident that wasn't. The fact that she has known what the Lotus is capable of for fifteen years and spent all of it hiding instead of fighting.
+**Heritage:** Korean-Vietnamese (Lotus-eligible by blood; left anyway)
+**Age:** 43. Living as Jin Mirae in Z6 for fifteen years. Was in the room for the Protocol authorization. Husband Emre Farhat-Adeyemi died in what was ruled an accident three years after the casting out. She does not believe it was an accident.
 
-### Park Gi-su — Thorn commander (field antagonist)
-**Heritage:** Korean (bloodline clean to eight generations by the Stems' reading)  
-**Age:** 44  
-**Role:** The Lotus Syndicate's head field operator. Manages the Thorns — the enforcement arm. Not ideological in the way the Stems are ideological; practical. He does what needs doing and does it correctly. His only expressed opinion about the Purification Protocol is that it is an authorized order and he is the execution arm of authorized orders.  
-**Voice:** Methodical, patient, unhurried. He has never lost a target who stayed in the Gray Zone. He is unhurried because in his experience, running only makes the eventual reckoning worse for everyone involved.  
-**Drive:** Completion. He is good at his job and his job is to close the loop.  
-**Wound:** He knows what the Protocol is. He has never decided whether he thinks it's right or wrong because he has decided that deciding is above his authorization. He has never examined that decision.  
-**Note:** He is not a villain in the sense that PEREGRINE was — not recruited into a villainous enterprise unknowing. He knows. He closed that door and never opened it again. The story does not redeem him. He is not a mirror-character who switches sides. He is what happens when operational competence is fully separated from moral agency. This is a different kind of danger than Adalemo was.
+### Park Gi-su — Thorn commander
+**Heritage:** Korean, age 44. Head field operator. Not ideological — practical. He knows what the Protocol is. He closed that door and never opened it again. He does not switch sides. He stands down. There is a difference.
 
 ### Priya Ramanujan-Cross — civic admin
-**Heritage:** South Indian-Scottish (GLMZ Diaspora)  
-**Age:** 35  
-**Background:** GLMZ Civic Systems Engineer — the person who maintains the neuretics registration infrastructure that is the backbone of the GLMZ's civic grid. Not a spy, not a runner, not trained for any of this. Was selected by the Lotus Syndicate because she has the specific credential access to deploy the backdoor firmware and because she lives alone and has no family within reach.  
-**Voice:** Technical, frightened, angry. The angry note is newer than the frightened one and it has been growing for six months. She did not ask for this. She is not going to go quietly.  
-**Drive:** Get out. Make sure the firmware never deploys. File a report with someone who cannot be bought.  
-**Arc:** She survives the story. She gets her report filed. What she has to live with afterward is that the someone who cannot be bought does not, in the GLMZ, exist — the civic institutions she trusted enough to file with are as compromised as everything else. What gets the Protocol stopped is not her report. It is the crew's approach. This teaches her something about how the GLMZ actually works that she had been carefully avoiding learning.
+**Heritage:** South Indian-Scottish, age 35. GLMZ Civic Systems Engineer. Not a runner. Was selected because she has the specific credential access and lives alone. Six months of coercion. Angry and frightened in that order.
 
 ### Yim Seul-ki — the Root
-**Heritage:** Korean-Vietnamese (this is the heart of it)  
-**Age:** 73  
-**Background:** Has run the Lotus Syndicate for thirty years. Built the free clinics. Built the community markets. Built the debt ledger. Built the Purification Protocol. All of it, simultaneously, as one plan — because in her reading of the GLMZ's history, the Diaspora ate what the old world called East Asian identity, diluted it, absorbed it into an undifferentiated mass where nothing distinct survived. The Protocol is not a purge in her theology. It is a preservation. Forty years of slow, methodical construction toward a Gray Zone where the bloodlines she considers worth preserving will survive the century.  
-**The twist:** Her Vietnamese heritage makes her "impure" by the very standards she enforces. She discovered this at thirty-two, when her own mother's file was pulled by a junior Stem adjutant doing genealogical verification. She destroyed the file and the adjutant's career. She has enforced the blood-purity doctrine for forty-one years as a living lie. The Protocol that she is building — the one she believes in — would, if applied correctly, classify her for relocation.  
-**Voice:** Measured, long-horizon, genuinely persuasive. She does not speak like a villain. She speaks like a person who has thought about the same problem for forty years and reached conclusions that she knows are monstrous but believes are necessary. She will make Rook's argument for her: remove the Syndicate and what replaces it will be worse. She is right about that. She is wrong about the solution.  
-**Drive:** Complete the Protocol. Preserve what she believes is worth preserving. Die with the thing she built still standing.  
-**Wound:** The file. The lie at the center of the ideology she has built her life on. She has never closed the circle on this. She has almost told someone twice. Both times she chose the Protocol instead.  
-**Note:** She is not redeemed. She is not destroyed. The story ends with her diminished — the Protocol dismantled, the Syndicate fractured, her authority reduced. She is alive. She continues. The GLMZ does not give clean endings to forty-year institutions.
+**Heritage:** Korean-Vietnamese (this is the heart of it)
+**Age:** 73. Built the clinics. Built the community markets. Built the Protocol. All as one plan.
+**The secret:** Her Vietnamese heritage makes her "impure" by the Stems' own standard. She discovered this at thirty-two, destroyed the file and the adjutant's career, and has enforced blood-purity doctrine for forty-one years as a living lie.
+She is not redeemed. She is not destroyed. The Protocol is dismantled. She continues, diminished.
 
-### Adaeze Nnodu-Park — Gray Zone community lawyer (supporting)
-**Heritage:** Igbo-Korean (GLMZ Diaspora)  
-**Age:** 50  
-**Role:** Runs the Z5/Z6 Legal Cooperative — twelve years of fighting Lotus debt structures in the civic courts. Not a runner. Not operational. She found Lee Nari through legal work and found Ekow through previous lateral contact. She provides the moral north of the story: the person who has been fighting the Lotus through institutional channels for twelve years, watching institutional channels fail, who finally calls in something extra-institutional because she is out of other options.  
-**Note:** She survives. She continues. The Legal Cooperative is still standing at the end. This is not a small thing.
+### Adaeze Nnodu-Park — community lawyer
+**Heritage:** Igbo-Korean, age 50. Z5/Z6 Legal Cooperative. Twelve years fighting Lotus debt structures. She provides the story's moral north. She survives. The cooperative is still standing at the end.
 
 ## §5 — Structure
 
 ### Arc Shape: Three Threads → One Source → One Decision
-The novel runs three threads in parallel across Acts I–III, converging in Act IV:
+Acts I–III: three parallel threads converge in Act IV.
+- Thread 1 (The Sculpture): art recovery → demographic baseline found
+- Thread 2 (The Witness): defector extraction → Protocol named
+- Thread 3 (The Access): civic admin exfil → partial backdoor defeated, Phase 0 live
 
-- **Thread 1 (The Sculpture):** The crew takes what looks like a clean art-recovery job. The item's data reveals the registry project.
-- **Thread 2 (The Witness):** The crew extracts a Lotus defector who names the Protocol and gives it a human cost.
-- **Thread 3 (The Access):** The crew prevents a civic grid backdoor deployment — partially. They discover the partial deployment is already live.
-
-**Convergence in Acts IV–V:** All three threads lead to the Root and to the decision: how do you stop the Protocol without destroying what sustains the Gray Zone? Rook's answer is: you don't destroy it. You force it to choose. The Root faces the choice. The Syndicate fractures. The communities survive. The Protocol does not.
+**Convergence Acts IV–V:** same client, same source, same plan. Rook's decision: you don't destroy the Syndicate. You force it to choose.
 
 ### Act Breakdown
+- **Act I (Ch 1–3, ~18k words):** Setup, crew reassembly, Job 1 executed
+- **Act II (Ch 4–7, ~28k words):** Witness job through Lotus territory; civic admin makes contact
+- **Act III (Ch 8–10, ~22k words):** Sky-level ops; backdoor partially defeated; three threads converge
+- **Act IV (Ch 11–13, ~22k words):** Into inner sanctum; confrontation; fractured aftermath
+- **Act V (Ch 14, ~10k words):** The future tense
 
-**Act I — The Commission (Ch 1–3, ~18k words):** Setup, crew reassembly, Job 1 executed, the data sculpture recovered, its contents flagged. Rook is back and doesn't know why yet. The crew is different in small ways that matter. The job looks clean. It isn't.
-
-**Act II — Old Harbor (Ch 4–7, ~28k words):** The witness job runs through Lotus home territory. Ekow's history with the Syndicate surfaces. Lee Nari is extracted. The Protocol is named. The civic admin makes contact. Two jobs are running simultaneously. The crew holds them both without a clean brief.
-
-**Act III — The Spine (Ch 8–10, ~22k words):** Job 3 runs at sky-level — a world none of the crew except Lace has fully worked. The backdoor firmware is partially defeated. The partial deployment's scope is mapped. The three jobs converge: same client, same source, same plan.
-
-**Act IV — The Root (Ch 11–13, ~22k words):** The Root identified. The plan in full. The final operation: into the Lotus's inner sanctum. The confrontation. Rook's decision. The fractured aftermath.
-
-**Act V — The Count (Ch 14, ~10k words):** What comes after the count when the count is future tense.
-
-## §6 — Beat Spine (14 chapters, 48 beats)
+## §6 — Beat Spine (14 chapters, 47 beats)
 
 ### Chapter 1: Old Habits
-*Three months after CxC. Rook is working alone.*
-
-| # | Title | Goal |
-|---|---|---|
-| 1.1 | **Quiet Work** | Z3, solo extraction job, Rook alone with her own arithmetic. The lake out the window of a cheap diner, a routine payment, a handled job. She is fine. She is not sure why she is fine. |
-| 1.2 | **The Offer** | A fixer named Ferris presents an art recovery job: a stolen data sculpture, two known prior locations, a Φ 12,000 contract. Too clean. She takes it anyway. |
-| 1.3 | **The Crew Problem** | The sculpture's location requires more than one person. She starts making calls. She does not admit this means anything. |
+1.1 Quiet Work — Z3 solo extraction job, Rook alone with her arithmetic
+1.2 The Offer — Ferris, art recovery job, Φ 12,000, too clean
+1.3 The Crew Problem — sculpture requires more than one person; she starts making calls
 
 ### Chapter 2: The Assembly
-*The crew, months later: what changed and what didn't.*
-
-| # | Title | Goal |
-|---|---|---|
-| 2.1 | **Vox at Four** | Vox at her rebuilt four-channel network — narrower, more precise, different tool than before. The graze wound healed. The discipline is new. Their conversation is easy in a way it wasn't after Tidewell. |
-| 2.2 | **Scout's Gerald** | Scout, doing consulting work for a Gray Zone data cooperative. She has a business card. Gerald is mentioned by name in the business card. It reads: *Remi Diallo & Gerald, Structural Data*. Rook does not ask. |
-| 2.3 | **The New Fifth** | Ekow Ato — introduced via Adaeze Nnodu-Park's referral. He knows the Z5/Z6 buffer and he knows the Lotus's footprint. Rook's read: entirely reliable, entirely dangerous, has done work she will never ask about. She takes him anyway. Ekow's read on Rook: she counted right when she had to. That's enough. |
-| 2.4 | **Boiler's Building** | Boiler has been working on a Gray Zone community building — renovation contract, structurally sound work, cheerful. He walks Rook through the load calculations. She clocks that he has been paying attention to something for longer than this job. |
+2.1 Vox at Four — narrower, more precise, discipline not limitation
+2.2 Scout's Gerald — business card: *Remi Diallo & Gerald, Structural Data*
+2.3 The New Fifth — Casimir via Adaeze's referral
+2.4 Boiler's Building — renovation contract; he has been paying attention longer than this job
 
 ### Chapter 3: The Sculpture
-*The data sculpture job runs. The data is not what it was sold as.*
-
-| # | Title | Goal |
-|---|---|---|
-| 3.1 | **The Market Run** | Z3 collector's market, gray-zone adjacent. Scout maps the building. Lace walks in as a buyer. Boiler and Ekow hold the outside. The sculpture is there. The collector knows exactly why it's valuable and is waiting for a better offer. |
-| 3.2 | **Recovery** | The recovery goes clean — almost. Park Gi-su's surveillance network flags the crew's presence at the market. He doesn't move yet. The Thorns observe and wait. PLANT: Park has been watching the sculpture's location for three weeks. |
-| 3.3 | **Vox Reads the Data** | Back in the operational space: Vox opens the sculpture's data layer. Fifteen years of Gray Zone demographics, machine-readable, precisely formatted to civic-grid schema. This is not art. Whoever commissioned the recovery wasn't buying culture. Rook holds the sculpture and makes a decision: they don't deliver it yet. |
+3.1 The Market Run — Z3 collector's market; Lace walks in as buyer
+3.2 Recovery — clean almost; Park Gi-su's surveillance flags the crew. PLANT: he's been watching the sculpture three weeks
+3.3 Vox Reads the Data — fifteen years of demographics, civic-grid schema; this is not art; Rook holds it
 
 ### Chapter 4: Blood Price
-*The witness job arrives. The crew is already in motion.*
-
-| # | Title | Goal |
-|---|---|---|
-| 4.1 | **Adaeze Nnodu-Park** | The Z5/Z6 Legal Cooperative. Adaeze explains Lee Nari, the casting-out, the Stems' vote, the Protocol. She has been trying to get Nari to testify for three years; Nari has refused. Now the Thorns are moving and Nari has twelve hours. Ekow recognizes the operational pattern without being asked. |
-| 4.2 | **Ekow's Map** | Ekow briefs the crew on the Lotus Syndicate's Z6 footprint: Thorn patrol routes, safe-house network, extraction windows. He knows the detail that comes from years of working inside. Nobody asks why he knows it this way. He knows they've already figured it out. |
-| 4.3 | **Thread 2 Accepted** | Rook agrees before she finishes the brief. She is not surprised that she agrees. She is a little surprised she isn't surprised. The crew is already thinking about running two jobs simultaneously. |
+4.1 Adaeze Nnodu-Park — Protocol explained; twelve hours for Nari
+4.2 Casimir's Map — Thorn patrol routes, safe-house network; the detail of years working inside
+4.3 Thread 2 Accepted — Rook agrees before finishing the brief
 
 ### Chapter 5: Old Harbor, Night
-*The extraction runs through Lotus home territory.*
-
-| # | Title | Goal |
-|---|---|---|
-| 5.1 | **Old Harbor** | The geography of Lotus power: the free clinics, the community markets, the debt collectors who have the same uniforms. Ekow walks the crew through it. The communities depend on this. That is not separate from the horror of it — it is the mechanism. |
-| 5.2 | **Lee Nari** | The defector's Z6 apartment. Nari is already packed. She has been packed for three years. The conversation she has with Ekow is not for the crew's ears; Rook gives them the room. What is said between them is not reported. The crew respects this. |
-| 5.3 | **The Thorns Move** | Park Gi-su's team closes. Vox flags the approach pattern. The extraction goes from orderly to pressured — Z6 buffer zone, tight corridors, the Lotus's home field. Ekow and Boiler break the contact window while Scout threads two crawlers through the building's maintenance network. |
-| 5.4 | **Out Through the Old Harbor Route** | The extraction uses a smuggling route that Ekow knows because he has used it for the Lotus for years — in the opposite direction. This is not wasted on him. The boat at the end is cold and slow and the crew does not say anything about it for a long time. |
+5.1 Old Harbor — the free clinics, the debt collectors in the same uniforms
+5.2 Lee Nari — already packed; the conversation between her and Casimir is not for the crew's ears
+5.3 The Thorns Move — Park closes; Vox flags; Casimir and Boiler break contact window; Scout threads two crawlers
+5.4 Out Through Old Harbor — the smuggling route Casimir knows because he used it for the Lotus, in the opposite direction
 
 ### Chapter 6: What the Witness Knows
-*Lee Nari briefs the crew. The job changes shape.*
-
-| # | Title | Goal |
-|---|---|---|
-| 6.1 | **The Protocol Named** | Nari explains: the Purification Protocol, its history, its scope, its operational timeline. She was in the room. She can describe the specific document with specific language. The crew listens without interrupting. This is discipline. |
-| 6.2 | **The Sculpture Connects** | Vox maps the *Headcount* data against the Protocol's stated requirements. The sculpture is the demographic baseline. The Protocol needs three components: demographic data, neuretics registry access, and a deployment window. They have the first. The Syndicate is acquiring the second. |
-| 6.3 | **No Clean Exit** | Rook tells the crew what they're in. Nobody argues. The Φ 12,000 from Ferris was already not the point and they all know it. The question is operational: three threads, one source, one plan. How do you take it apart? |
+6.1 The Protocol Named — Nari explains, specific document, specific language; crew listens
+6.2 The Sculpture Connects — Vox maps Headcount data against Protocol requirements; three components needed
+6.3 No Clean Exit — Rook tells them what they're in; Φ 12,000 was never the point
 
 ### Chapter 7: Thread Three
-*The civic admin makes contact. The crew is running three jobs.*
-
-| # | Title | Goal |
-|---|---|---|
-| 7.1 | **Priya's Signal** | Vox's gray-market channel network picks up an encrypted distress signal from a civic systems node in Z8 — the format is Civic Systems Engineer guild protocol, not standard gray-market. Someone with credentials is trying to reach someone who doesn't exist on the official network. |
-| 7.2 | **First Contact** | Vox establishes a secure channel. Priya Ramanujan-Cross. Six months of coercion. The firmware backdoor, the deployment window, the Syndicate's patience running out. Rook listens to the briefing and asks three questions: how long, how complete, who else knows. None of the answers are good. |
-| 7.3 | **The Running Board** | Three threads: the sculpture in their possession, Nari in protection, Priya in a building that is being watched. Rook maps the operational dependencies on a physical surface — no electronic trace. The board shows what the crew already knows: all three jobs are feeding the same machine, and the machine is thirty days from completing its primary objective. |
+7.1 Priya's Signal — encrypted distress from Z8 civic node; Civic Systems Engineer guild protocol
+7.2 First Contact — Vox establishes channel; six months coercion; firmware; three questions
+7.3 The Running Board — physical board, no trace; three jobs, one machine, thirty days from completion
 
 ### Chapter 8: The Spine
-*Operations at sky level. The crew in the privileged tier.*
-
-| # | Title | Goal |
-|---|---|---|
-| 8.1 | **Altitude** | The Spine aeroplex. Sky People: the GLMZ's privileged class, altitude as amenity and class signal. Lace has been here before in other faces; the rest of the crew hasn't. The distance from the Gray Zone is not measured in kilometers. Ekow has never been this high. He stands at the edge of an observation level and looks down and says nothing for a long time. |
-| 8.2 | **Vox in the Infrastructure** | The Spine's civic grid nodes are maintained from a tier-2 operations center in the aeroplex's utility district. Scout threads two crawlers into the utility corridor network. Vox maps the access topology while Priya — wired into Vox's secure channel — walks her through the architecture she's been maintaining for six years. |
-| 8.3 | **Lace as Someone Else** | Lace runs the aeroplex cover — social engineer in the environment where the social contract is different. The Spine's security infrastructure assumes presence = authorization; it is built for the assumption that the people here belong here. Lace wears that assumption as a costume. The efficiency of it makes her contemptuous in a way that is slightly different from the usual contemptuous. |
-| 8.4 | **Park Gi-su in the Grid** | Vox's channels detect a Thorn-signature operation in the civic grid's Z6 test cluster: access logs that match the partial deployment pattern. The firmware is already running on 200,000 citizens. Park is not chasing the crew — he's already running the Protocol's Phase 0. The sculpted data and the test deployment are complementary, and the Syndicate doesn't need to wait for the full grid. |
+8.1 Altitude — aeroplex; Sky People; Casimir looks down and says nothing for a long time
+8.2 Vox in the Infrastructure — Scout's crawlers; Priya walks Vox through the architecture
+8.3 Lace as Someone Else — assumes presence = authorization; contempt slightly different from usual
+8.4 Park Gi-su in the Grid — Thorn-signature in Z6 test cluster; 200k citizens; Phase 0 already running
 
 ### Chapter 9: The Backdoor
-*The partial deployment is a crisis. The full deployment is 14 days out.*
-
-| # | Title | Goal |
-|---|---|---|
-| 9.1 | **Priya's Extraction** | The Spine op runs: Priya out of her building, into crew protection, the firmware's deployment pathway identified. The Lotus Syndicate's coercion network cuts at the same moment — they have been watching Priya, know she's gone, and send a Thorn fire team to the deployment node. Race to the node. |
-| 9.2 | **The Node** | The civic systems node in the Spine's utility district. Scout's crawlers hold the Lotus team off the physical access point while Vox — with Priya directing — starts the firmware rollback. The rollback on the full grid succeeds. The rollback on the three Z6 test nodes does not. |
-| 9.3 | **What Survives** | The Lotus has Phase 0 data — 200,000 registered neuretics in Z6, full demographic mapping, continuous registry access. Combined with *Headcount*: a complete picture of one buffer zone's population. Not the full Protocol. Not the tool for a GLMZ-wide program. But enough to begin targeted displacement operations in Z6 immediately. Rook maps what that means. |
+9.1 Priya's Extraction — out of building; firmware path identified; Thorns cut simultaneously
+9.2 The Node — Scout's crawlers hold; Vox + Priya rollback; full grid succeeds; three Z6 nodes do not
+9.3 What Survives — Phase 0 data: 200k in Z6; combined with Headcount; enough for targeted displacement now
 
 ### Chapter 10: What Iron Hides
-*The three threads converge. The Root is found.*
-
-| # | Title | Goal |
-|---|---|---|
-| 10.1 | **The Intelligence Picture** | The crew assembles everything: the sculpture, Nari's testimony, the firmware architecture, the Phase 0 data footprint. Vox's channels map the Protocol's organizational signature. The Root is not a myth — she has a work pattern, a decision cadence, a specific way of authorizing operations that has left faint traces across forty years. |
-| 10.2 | **The Root Identified** | Yim Seul-ki. Seventy-three years old. Builder of the Syndicate's community infrastructure and of its Purification Protocol, simultaneously. Ekow knows her — not personally, but by reputation: the woman who built the clinics. He is silent for a long time after Vox says her name. |
-| 10.3 | **The File** | Vox finds, in the Protocol's founding documents, a notation in Seul-ki's own hand: a heritage verification that was pulled before it was completed. The name on the pull request is the Root's own. She knows. She has always known. Ekow says: *She built the machine that would come for her and she ran it anyway.* Nobody has a better sentence for it. |
+10.1 The Intelligence Picture — everything assembled; Vox maps Protocol signature across forty years
+10.2 The Root Identified — Yim Seul-ki; Casimir knows her by reputation; the woman who built the clinics
+10.3 The File — heritage verification pull in Protocol's founding documents; in Seul-ki's own hand; she knows. Casimir: *She built the machine that would come for her and she ran it anyway.*
 
 ### Chapter 11: Into Silk
-*The final operation: into the Lotus Syndicate's inner sanctum.*
-
-| # | Title | Goal |
-|---|---|---|
-| 11.1 | **The Plan** | The inner sanctum is not a building — it is a room inside a building that the Syndicate has been using for council meetings for two decades. Z5, old community center, legitimate charitable foundation on the surface. Lace will wear a face close enough to hers to hurt. Scout will hold the perimeter and thread simultaneously — her first dual-presence operation. Ekow will walk in the front door because he has an invitation. |
-| 11.2 | **Ekow Goes In** | Park Gi-su is there. The two men see each other without surprise. This is not a surprise to either of them — the crew on one side, the Thorns on the other, both in the same room. The truce that holds is operational necessity, not peace. |
-| 11.3 | **Scout Doubles** | Scout in her body, threading simultaneously — present in the room's perimeter cameras, present in the building's maintenance crawlways, present on the street outside, and physically present in her Husk at the entry point. The coherence strain is real and she knows it. She does not surface until the job is done. |
-| 11.4 | **The Silk Room** | The council chamber: the Root at the center, the Stems arrayed, the Protocol's final authorization pending. Lace is in the room. Rook is in the room in two ways: physically and in Lace's comms, running the clock. The arrest moment is not what anyone planned. |
+11.1 The Plan — Z5 community center; Lace wears a face close to her own; Scout dual-presence first time; Casimir walks in with an invitation
+11.2 Casimir Goes In — Park Gi-su is there; both men see each other without surprise; operational truce
+11.3 Scout Doubles — present in cameras, crawlways, street, and body simultaneously; coherence strain is real
+11.4 The Silk Room — council chamber; Root at center; Stems; Protocol authorization pending; the arrest moment is not what anyone planned
 
 ### Chapter 12: The Root
-*The confrontation. The decision that cannot be filed away.*
-
-| # | Title | Goal |
-|---|---|---|
-| 12.1 | **Yim Seul-ki** | The Root, face to face. She makes Rook's argument before Rook can: remove the Syndicate and what replaces it will be worse. She is right. She then explains why the Protocol is necessary. She is wrong in a way that requires Rook to find exactly the right words. |
-| 12.2 | **The File, Out Loud** | Rook tells Seul-ki what they found: the heritage verification pull. The lie at the center of the ideology. Not as a weapon — Rook doesn't do that; it doesn't work and she knows it — but as a plain statement. *You know you don't meet your own standard. You've always known.* Seul-ki does not deny it. |
-| 12.3 | **The Choice Offered** | Rook does not destroy the Syndicate. She gives Seul-ki a choice: the Phase 0 data, the Protocol documentation, and the full registration dataset go to three simultaneous public disclosure points — the GLMZ Civic Bureau, Adaeze Nnodu-Park's Legal Cooperative, and a public-access archive — unless Seul-ki dismantles the Protocol publicly and funds the infrastructure transition for the communities that would otherwise lose it. She has forty-eight hours. |
-| 12.4 | **Park Gi-su's Decision** | Park Gi-su is in the room. He has heard everything. He makes a decision about his authorization — the only decision available to a person who has been telling himself for years that deciding is above his authorization. He does not switch sides. He stands down. There is a difference. The account is not settled. |
+12.1 Yim Seul-ki — she makes Rook's argument first: remove the Syndicate and what replaces it is worse. She is right. Then explains the Protocol. She is wrong.
+12.2 The File, Out Loud — Rook states the heritage verification pull. Not as a weapon. Plain statement. Seul-ki does not deny it.
+12.3 The Choice Offered — Protocol documentation + Phase 0 data + Headcount go to three simultaneous disclosure points unless Seul-ki publicly dismantles the Protocol and funds community infrastructure transition. Forty-eight hours.
+12.4 Park Gi-su's Decision — he has heard everything; he decides about his authorization; he stands down; not switches sides; the account is not settled
 
 ### Chapter 13: Iron Wears Silk
-*The aftermath. The messy win.*
-
-| # | Title | Goal |
-|---|---|---|
-| 13.1 | **Forty-Eight Hours** | The Syndicate fractures: hardliners go dark, pragmatists distance themselves, the Stems cannot agree, the Thorns stand at operational pause. Seul-ki does not deliver the answer to Rook. She delivers it to Adaeze Nnodu-Park's Legal Cooperative at hour forty-six. The protocol is officially dissolved. The funding transfer for community infrastructure is real. |
-| 13.2 | **The Gray Zone After** | The Gray Zone doesn't change. The clinics are still running. The debt structures are still there. The Lotus Syndicate is still there, diminished but present. The Z6 test-deployment data has been flagged by the Civic Bureau — too compromised to act on, they say, because acting on it requires addressing the Syndicate and the Civic Bureau is not ready for that. What Priya's report accomplished: it is now on the record. It now exists. |
-| 13.3 | **Ekow's List** | The crew disperses. Ekow tells Rook about his list — not all of it, but the first item. One job he did for the Lotus twelve years ago. One person who did not survive it. He does not ask for absolution. He asks for the name to be on the record somewhere that the person running the record is not the Lotus. She writes it down. |
+13.1 Forty-Eight Hours — Syndicate fractures; Seul-ki delivers to Adaeze's Legal Cooperative at hour 46; Protocol officially dissolved; funding transfer is real
+13.2 The Gray Zone After — clinics still running; debt structures still there; Syndicate diminished not gone; Civic Bureau: on the record now
+13.3 Casimir's List — first item; one job twelve years ago; one person who did not survive; not asking for absolution; asking for the name on a record not run by the Lotus
 
 ### Chapter 14: The Count
-*The future tense.*
-
-| # | Title | Goal |
-|---|---|---|
-| 14.1 | **The Diner, Again** | Rook at a window over the lake. The fourth diner in the series. She is not counting money. She is not counting names. She is counting forward: what happens to the people in the Z6 registry now that the Protocol is down but the data exists. What happens to the Gray Zone when the Syndicate is wounded but not gone. |
-| 14.2 | **Adaeze's Question** | Adaeze Nnodu-Park calls. She has a question: does Rook know anyone who knows how to build community infrastructure? Not destroy. Build. The legal cooperative has the funding transfer from Seul-ki's dissolution agreement and needs people who understand load calculations and what structures can hold. |
-| 14.3 | **One Number** | Rook has one name. Boiler's number. She gives it to Adaeze. The lake is the same. She is not the same person who sat in the MxG diner counting exact change. She is someone whose arithmetic has learned a future tense, and the future is imprecise and structural and completely worth building. |
+14.1 The Diner, Again — fourth diner; not counting money; not counting names; counting forward
+14.2 Adaeze's Question — does Rook know anyone who knows how to build community infrastructure; the cooperative has Seul-ki's transition funding
+14.3 One Number — Boiler's number; the arithmetic has learned a future tense; imprecise and structural and completely worth building
 
 ## §7 — Locks (binding)
 
-1. **The Lotus Syndicate is not destroyed.** This is not CxC's clean burn. The Syndicate is diminished, fractured, and forced to dismantle the Protocol — but the institution survives because the communities that depend on it need it to survive. The GLMZ does not give clean wins.
-2. **The Root is not killed, not redeemed.** She is diminished. She made her choice and it cost her the Protocol she spent forty years building. She is alive. She continues. The story does not punish her more than that because the story is honest about how institutions work.
-3. **Park Gi-su stands down, does not switch sides.** The distinction matters. His arc is not Adalemo's arc. Not every operational person gets to switch ledgers. Some of them just stop. That has to be enough.
-4. **Ekow's list is real.** He carries the weight of what he did for the Lotus. One item goes on the record. That is all. The rest is his. The story does not resolve his guilt because it cannot — the work is done, the people are gone.
-5. **The Z6 partial deployment is not fully reversed.** The Phase 0 data exists. Priya's report is on the record. The Civic Bureau is not ready to act. This is the truth of the GLMZ: winning does not mean clean.
-6. **Ekow joins as a full member, not a contractor.** He does not leave at the end. He is in the crew. This is not stated — it is shown in the final beat.
-7. **The color language earns itself.** Iron in at least four appearances before the finale (Park's enforcement hardware, the civic grid's iron architecture, Ekow's augmented frame, the load calculations). Silk in at least four appearances (the Syndicate's community aesthetic, Lace's impersonation work, Seul-ki's measured speech, the data woven through the grid). Never announce them.
-8. **Scout's dual-presence operation in Ch 11 has a real coherence cost.** She surfaces with the lag. It is manageable. It is not free.
-9. **Boiler's work in the community center is load-bearing.** He is not there to blow something up. He is there to ensure that when pressure is applied to the structure, it holds what it needs to hold and releases what needs to be released. This is different from his prior arcs. It is harder.
-10. **Rook's final count is forward-facing.** Not money. Not names backward. Future tense. The trilogy's motif — *the count always says we got paid; it never says who didn't* — resolves here into: the count says who might, if the work is done right.
+1. The Lotus Syndicate is not destroyed — diminished, fractured, Protocol dismantled; institution survives
+2. The Root is not killed, not redeemed — diminished; Protocol gone; she continues
+3. Park Gi-su stands down, does not switch sides — the distinction matters; not Adalemo's arc
+4. Casimir's list is real — one item on the record; the rest is his; no resolution
+5. Z6 partial deployment is not fully reversed — Phase 0 data exists; Priya's report is on record; Civic Bureau not ready
+6. Casimir joins as full member — not stated, shown; he does not go back to Lotus circuit
+7. Color language earns itself — Iron: 4+ (Park's hardware, civic architecture, Casimir's frame, load calcs); Silk: 4+ (Syndicate aesthetic, Lace's work, Seul-ki's speech, data-weave). Never announced.
+8. Scout's dual-presence has real coherence cost — she surfaces with lag; manageable; not free
+9. Boiler builds, does not destroy — the engineering problem is the moral problem
+10. Rook's final count is forward-facing — future tense; one phone number given forward
 
 ## §8 — Emotional Architecture
 
-**Rook's arc (trilogy continuation):** MxG = the rule (trust no one fully). NxR = the rule degraded (she came back). CxC = the test (followed people into the worst room). IxS = the future tense. Having counted names in CxC, she now learns that the count doesn't end with the rescue — it has to include what happens to the people after. The final image is not retrospective. It is a phone number given forward.
+**Rook's arc (trilogy continuation):** MxG = the rule. NxR = the rule degraded. CxC = the test. IxS = the future tense. The final image is not retrospective: a phone number given forward.
 
 **The ensemble:**
-- Ekow's integration into the crew is not announced, not voted on. It is shown by the fact that in Ch 14, when the crew disperses, he does not go back to the Lotus circuit. He does not go anywhere. He is in the count.
-- Vox at four channels is a choice, not a limitation. This is her completing her arc.
-- Lace meets her mirror: an institution that wears community care as a face for blood-purity supremacy. The contempt she has for underestimating "talking" becomes something she has to choose what to do with.
-- Scout named Gerald. The dual-presence op is the hardest technical thing she has attempted. It costs something. She does it anyway.
-- Boiler builds something this time, not just destroys. His arc inverts in this story.
+- Casimir: integration shown not announced; he does not go back to the Lotus circuit
+- Vox: four channels is a choice, not a limitation; her arc completes
+- Lace: meets her mirror in the Lotus's community-care face-over-supremacy
+- Scout: dual-presence costs something; she does it anyway; Gerald is on the business card
+- Boiler: builds something this time
 
-**Thematic resolution:**  
-*Iron & Silk* answers the question the trilogy raised: what do you do with a win that created a new problem? The answer is: you count forward. You give the number to someone who can build with it. The arithmetic learns a future tense and that is not the same as optimism — it is just the minimum viable hope that the GLMZ requires to go on.
+**Thematic resolution:** What do you do with a win that created a new problem? You count forward. The arithmetic learns a future tense — not optimism; the minimum viable hope the GLMZ requires to go on.
 
-## §9 — World Context (GLMZ pillars for this story)
+## §9 — World Context
 
-**The Lotus Syndicate (full):** Blood-purity supremacist institution running as parallel government. The Root = Yim Seul-ki. The Stems = council, bloodline-gated. The Thorns = enforcement. Outsider dogs = non-Lotus operators used for dirty work (Ekow's role). The free clinics and community markets are real services and real leverage simultaneously. This is the GLMZ's moral rot and its safety net in one body.
+**Lotus Syndicate:** Root = Yim Seul-ki. Stems = bloodline-gated council. Thorns = enforcement. Outsider dogs = non-Lotus operators (Casimir's role). Free clinics and community markets: real services and real leverage simultaneously.
 
-**The Civic Grid:** The GLMZ's neuretics registration infrastructure — who has neuretics, at what access level, with what civic ID. This is the backbone of the GLMZ's digital identity system. It is maintained by Civic Systems Engineers like Priya. It is theoretically protected by the Meridian Charter's civic-grid independence provisions. In practice, it is as vulnerable as any infrastructure that runs on deferred maintenance and insufficient oversight.
+**The Civic Grid:** Neuretics registration infrastructure. GLMZ digital identity backbone. Theoretically protected by Meridian Charter civic-grid independence provisions. Practically: as vulnerable as deferred-maintenance infrastructure.
 
-**Old Harbor:** Lotus home territory. Smuggling routes, community markets, the debt ledger's physical nodes. The geography of what Ekow knows.
+**Old Harbor:** Lotus home territory. Smuggling routes, community markets, debt ledger physical nodes.
 
-**The Spine aeroplex:** Sky People tier. Altitude as class signal. The civic grid operations center is here because the GLMZ civic infrastructure runs on resources the Sky People tier controls. The Lotus Syndicate cannot operate openly here — the aeroplex has its own security infrastructure and the Sky People have their own arrangements with the Nano Triumvirate. The crew runs in altitude they are not built for.
+**The Spine aeroplex:** Sky People tier. Altitude as class signal. Civic grid operations center maintained here. Lotus cannot operate openly at this level.
 
-**No underwater communities (SS-A42):** Lake references throughout are geographic. The lake is backdrop.
+**No underwater communities (SS-A42).** Lake references throughout are geographic.
 
 ## §10 — Workflow Status
 
 - [x] Docs: this bible written (2026-07-08)
-- [x] Entities seeded: Yim Seul-ki `019f43ce097b`, Park Gi-su `019f43ce40b3`, Lee Nari `019f43ce8008`, Priya Ramanujan-Cross `019f43ceb808`, Adaeze Nnodu-Park `019f43cee2ab`, *Headcount* doc `019f43cf0019`; Ekow Ato `D15E074B` (same char as VATD/MNEMO; Casimir Mwamba entity deprecated 2026-07-08)
-- [x] USER_STORIES entry added (SS-US-H10, 2026-07-08)
+- [ ] Entities: seed Root (Yim Seul-ki), Park Gi-su, Lee Nari, Priya Ramanujan-Cross, Adaeze Nnodu-Park, *Headcount* sculpture
+- [ ] USER_STORIES entry
 - [x] StoryNode IxS created + 14 ChapterNodes + 47 beats (2026-07-08)
-- [x] `codex doctor` PASS (2026-07-08)
-- [x] Structural blueprint generated (2026-07-08)
-- [x] 10 plant/payoff pairs registered (Park surveillance, Ekow's list, diner motif, Boiler/load-calcs, Vox at four, Scout/Gerald dual-presence, Nari packed bag, heritage file, iron/silk motif, Emre's accident) (2026-07-08)
-- [x] Prose: 47 beats × ~2,423 words avg = **113,889 words** written via 6 sequential authoring agents (2026-07-08)
-- [x] Reflow applied — clean (2026-07-08)
-- [x] Plant audit — 10/10 paid off (2026-07-08)
-- [x] Storyscope audit — 0 BLOCKERs, 3 MODERATEs (flat escalation beats 21-27, beat-mode monoculture, event-type repeats), 2 MINORs (social-network breadth, consensus-clichés) (2026-07-08)
+- [ ] `codex doctor` PASS
+- [ ] Structural blueprint generated
+- [ ] Prose: Sonnet draft → Opus polish (per beat, per chapter)
 - [ ] Logic sweep (post-full-draft)
-- [ ] Storyscope MODERATEs — human judgment: splice beats 21-27 plateau or accept as designed
-- [x] Export `--publish` → `R:\Desktop\EPub\MindAttic\GLMZ\Rook\Iron & Silk\Iron & Silk V1.docx/epub/pdf/txt` (2026-07-08)
+- [ ] Export `--publish-docx`
 
-## §11 — Structural Blueprint
+## §11 — Structural Blueprint (to be filled by `ss --generate-blueprint`)
 
-Generated 2026-07-08 via `ss --generate-blueprint --slug iron-silk-019f43b9`.
+> Populated after `ss --generate-blueprint --slug iron-silk-019f43b9`.
 
-**Subplot:** Boiler's renovation work for the Gray Zone infrastructure cooperative. Parallels the crew's mission: both involve building durable infrastructure while navigating institutional constraint. His arc inverts from destruction to construction, mirroring Rook's shift from rescue arithmetic to institutional reckoning. The subplot grounds the moral complexity — you cannot dismantle what people depend on without offering an alternative structure.
+<!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 4d6c4c25049705f4550292c994922694437f0811657ba733bcbc63b176307a69 -->
 
-*Subplot theme:* Institutional renovation vs. institutional dismantling: can you repair a corrupted system in place, or must it be torn down? Boiler discovers the answer is neither — you build alongside it until it chooses.
+## Structural Blueprint
+<!-- generated 2026-07-15T18:55:33.9545911Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
-**Temporal scheme:** Linear.
+- **Subplot**: Boiler's renovation work parallels the crew's larger mission: both involve building durable infrastructure while navigating institutional constraint. His arc inverts from destruction to construction, mirroring Rook's shift from rescue arithmetic to institutional reckoning. The subplot grounds the moral complexity—you cannot dismantle what people depend on without offering an alternative structure.
+- **Temporal scheme**: linear
+- **Resolution**: mixed
+- **Moral polarity**: ambivalent
+- **Ending**: avalanche, no epilogue
+- **Escalation**: 47-beat arc, peak 10/10 at beat 26
 
-**Resolution mode:** Mixed — external (Protocol dismantled via forced institutional choice), unresolved (Syndicate fractures but survives; civic bureau not ready to act), ambivalent interior (Rook's count gains future tense, not closure). No character achieves peace. The Gray Zone continues.
-
-**Moral polarity:** Ambivalent throughout.
-
-**Ending style:** Avalanche (Ch 11–13 sustains 10s; Ch 14 descends to 2). No epilogue.
-
-**Per-beat escalation curve (47 beats):**
-`2, 3, 4, 4, 5, 6, 6, 7, 7, 8, 8, 8, 9, 9, 9, 8, 7, 8, 8, 9, 9, 9, 9, 9, 9, 10, 10, 10, 9, 8, 8, 9, 9, 10, 10, 10, 10, 10, 10, 9, 8, 5, 4, 3, 3, 2, 2`
-
-*Readings:* Ch 1 establishes slowly (2–4); Ch 3 sculpture recovery pushes to 6; Ch 5 extraction pressures to 8–9; Ch 6 Protocol reveal sustains 9s; Ch 8–9 sky operations cycle 8–9; Ch 10 convergence hits first 10s (beats 26–28); Ch 11–13 inner sanctum and confrontation sustains 10s (beats 34–39); Ch 14 count-forward descends 5→2→2.
-
-## Beat Coordination Index {#SS-IXS-COORD}
-
-> GENERATED by `ss --coordinate --slug <slug>`. Do not hand-edit — regenerated
-> on demand. This is the three-coordinate map: each beat's **meaning** (bible),
-> **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
-> Full record: `reports/coordination/IXS.coordination.json`.
-
-**Coverage:** 47/47 beats fully covered. Story-wide construction: temporal=linear, resolution=mixed, moral=ambivalent, ending=avalanche, granularity=beat.
-
-**Gap counts:** UNSCORED=47
+## Beat Spine
+<!-- generated 2026-07-15T18:55:33.9545911Z from Beats table — edit via MCP beat tools -->
 
 ### Old Habits
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5117 | `019f43bc-7322-7431-bf6f-eab20df78742` | opening-image | Z3 solo extraction, data not people. Rook alone in a se… | 2/? | 11163c | UNSCORED |
-| 5131 | `019f43bf-20f9-7a8c-a5e1-6d11239bb339` | inciting-incident | Fixer Ferris contacts Rook with an art recovery job: st… | 3/? | 11016c | UNSCORED |
-| 5145 | `019f43c2-0c5a-79ca-a889-e8dd5c4bb30b` | rising-action | The sculpture's location requires more than one person.… | 4/? | 11342c | UNSCORED |
+- B01 · Quiet Work — Z3 solo extraction, data not people. Rook alone in a service stairwell, three months after CxC. Routine payment, handled job. She is fine. She does not know why she is fine. The lake is out the window. The count holds names now.
+- B02 · The Offer — Fixer Ferris contacts Rook with an art recovery job: stolen data sculpture titled Headcount, Φ 12,000 contract. Two known prior locations. Too clean. She takes it anyway.
+- B03 · The Crew Problem — The sculpture's location requires more than one person. Rook starts making calls. She does not admit this means anything.
 
 ### The Assembly
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5118 | `019f43bc-94c7-7f17-b4d9-e5798fa96e05` | setup | Vox at her rebuilt four-channel network. Narrower, more… | 4/? | 11270c | UNSCORED |
-| 5132 | `019f43bf-53ca-79bd-aa7a-64154f658c14` | setup | Scout doing legitimate consulting work for a Gray Zone … | 5/? | 12522c | UNSCORED |
-| 5146 | `019f43c2-4610-7395-86a4-5dbc45853ff5` | setup | Casimir Mwamba, via Adaeze Nnodu-Park's referral. He kn… | 6/? | 11586c | UNSCORED |
-| 5160 | `019f43c6-58b1-76ac-a433-b85b17a5feb6` | setup | Boiler has been doing renovation work on a Z5/Z6 commun… | 6/? +subplot | 11689c | UNSCORED |
+- B04 · Vox at Four — Vox at her rebuilt four-channel network. Narrower, more precise. The graze wound healed. The discipline is new. Their conversation is easy in a way it wasn't after Tidewell.
+- B05 · Scout's Gerald — Scout doing legitimate consulting work for a Gray Zone data cooperative. Business card reads: Remi Diallo & Gerald, Structural Data. Rook does not ask. Scout does not explain.
+- B06 · The New Fifth — Casimir Mwamba, via Adaeze Nnodu-Park's referral. He knows the Z5/Z6 Lotus footprint with operational intimacy. Rook's read: entirely reliable, entirely dangerous. Casimir's read on Rook: she counted right when she had to. That's enough.
+- B07 · Boiler's Building — Boiler has been doing renovation work on a Z5/Z6 community building — legitimate contract, structurally sound, cheerful. He walks Rook through the load calculations. She clocks that he has been paying attention to something for longer than this job.
 
 ### The Sculpture
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5119 | `019f43bc-c2b2-7696-90d0-abcb46b363f4` | rising-action | Z3 collector's market, freight depot conversion. Scout … | 7/? | 13356c | UNSCORED |
-| 5133 | `019f43bf-8467-7e7d-a0d2-650dd63f6f2c` | rising-action | The sculpture acquisition runs clean — almost. Park Gi-… | 7/? | 13091c | UNSCORED |
-| 5147 | `019f43c2-7a10-780f-b969-bda9c0eafbd3` | revelation | Vox opens the Headcount sculpture's data layer. Fifteen… | 8/? | 10925c | UNSCORED |
+- B08 · The Market Run — Z3 collector's market, freight depot conversion. Scout maps the building. Lace enters as a buyer with provenance documentation. Boiler and Casimir hold the outside perimeter. The sculpture is there. The collector knows exactly what it's worth and is waiting for a better offer.
+- B09 · Recovery — The sculpture acquisition runs clean — almost. Park Gi-su's surveillance network flags the crew's presence at the collector's market. He does not move. The Thorns observe and wait. PLANT: Park has been watching the sculpture's location for three weeks.
+- B10 · Vox Reads the Data — Vox opens the Headcount sculpture's data layer. Fifteen years of Gray Zone demographics in GLMZ civic-grid schema: migration patterns, debt distributions, heritage cross-sections. This is not art. Rook decides not to deliver it to the anonymous client.
 
 ### Blood Price
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5120 | `019f43bc-f63e-7a98-9dd0-4533044e8669` | rising-action | Z5/Z6 Legal Cooperative. Adaeze explains Lee Nari: the … | 8/? | 11207c | UNSCORED |
-| 5134 | `019f43bf-b329-769e-b0a4-5f170c64e173` | rising-action | Casimir briefs Thorn patrol routes, Lotus Z6 safe-house… | 8/? | 12234c | UNSCORED |
-| 5148 | `019f43c2-a9ad-7fdb-8092-049aed3f4cf1` | turning-point | Rook agrees before Adaeze finishes the brief. She is no… | 9/? | 10609c | UNSCORED |
+- B11 · Adaeze Nnodu-Park — Z5/Z6 Legal Cooperative. Adaeze explains Lee Nari: the casting-out, the Stems vote, the Purification Protocol, the twelve-hour window before the Thorns reach her. Casimir recognizes the operational pattern without being asked. Rook hears it and already knows she will agree.
+- B12 · Ekow's Map — Casimir briefs Thorn patrol routes, Lotus Z6 safe-house network, extraction windows. The operational detail that comes from years of working inside. Nobody asks how he knows. He knows they have already figured it out.
+- B13 · Thread 2 Accepted — Rook agrees before Adaeze finishes the brief. She is not surprised that she agrees. She is a little surprised she isn't surprised. The crew is already thinking about running two jobs simultaneously.
 
 ### Old Harbor, Night
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5121 | `019f43bd-22dd-79b9-bfcc-df8cd7bf34bc` | world-deepening | Casimir walks the crew through Old Harbor — Lotus home … | 9/? +subplot | 13070c | UNSCORED |
-| 5135 | `019f43bf-e3ae-7ff8-9821-f7f7770d3200` | character-moment | The defector's Z6 apartment. Nari is already packed — h… | 9/? | 11583c | UNSCORED |
-| 5149 | `019f43c2-dfe4-7d05-87e4-3fc9216522b7` | action | Park Gi-su's team closes at 2347. Vox flags the approac… | 8/? | 13583c | UNSCORED |
-| 5159 | `019f43c6-2a14-70c7-92a5-d9e98a00f08a` | aftermath | The extraction uses a smuggling route that Casimir know… | 7/? | 13151c | UNSCORED |
+- B14 · Old Harbor — Casimir walks the crew through Old Harbor — Lotus home territory. The free clinics, the community markets, the debt collectors in the same uniforms as the health workers. The communities depend on this. That is not separate from the horror of it. It is the mechanism.
+- B15 · Lee Nari — The defector's Z6 apartment. Nari is already packed — has been packed for three years. The private conversation between Nari and Casimir is not for the crew's ears. Rook gives them the room. What is said between them is not reported. The crew respects this.
+- B16 · The Thorns Move — Park Gi-su's team closes at 2347. Vox flags the approach pattern. The extraction goes from orderly to pressured in the Z6 buffer zone. Casimir and Boiler break the contact window while Scout threads two crawlers through the building's maintenance network.
+- B17 · Out Through Old Harbor — The extraction uses a smuggling route that Casimir knows because he used it for the Lotus for years — in the opposite direction. The boat at the end is cold and slow. The crew does not say anything about this for a long time.
 
 ### What the Witness Knows
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5122 | `019f43bd-503d-7879-98fd-302a0538c74a` | revelation | Z3 safe house. Nari explains the Purification Protocol:… | 8/? | 15998c | UNSCORED |
-| 5136 | `019f43c0-0fb5-7a94-8270-0af3777e1270` | revelation | Vox maps the Headcount data against the Protocol's stat… | 8/? | 14307c | UNSCORED |
-| 5150 | `019f43c3-472d-7d08-ab6c-6cc2ad213a2d` | turning-point | Rook tells the crew what they are in. Nobody argues. Th… | 9/? | 15082c | UNSCORED |
+- B18 · The Protocol Named — Z3 safe house. Nari explains the Purification Protocol: its forty-year history, its scope, its operational timeline. She can describe the specific document with specific language. She was in the room. The crew listens without interrupting. This is discipline.
+- B19 · The Sculpture Connects — Vox maps the Headcount data against the Protocol's stated requirements. The sculpture is the demographic baseline. Three components needed: demographic data, neuretics registry access, deployment window. They have the first. The Syndicate is acquiring the second.
+- B20 · No Clean Exit — Rook tells the crew what they are in. Nobody argues. The Φ 12,000 was never the point and they all know it. Three threads, one source, one plan. The question is operational: how do you take it apart?
 
 ### Thread Three
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5123 | `019f43bd-756c-728f-964c-d826ba2b170a` | setup | Vox's gray-market channels pick up an encrypted distres… | 9/? | 11557c | UNSCORED |
-| 5137 | `019f43c0-43d6-7a7d-a4d3-2a10389b352f` | rising-action | Priya Ramanujan-Cross. Six months of Lotus coercion. Th… | 9/? | 17029c | UNSCORED |
-| 5151 | `019f43c3-7e5b-7624-b90b-b71aef4c4428` | midpoint | Physical board, no electronic trace. Three threads mapp… | 9/? | 16716c | UNSCORED |
+- B21 · Priya's Signal — Vox's gray-market channels pick up an encrypted distress signal from a Z8 civic node — GLMZ Civic Systems Engineer guild protocol format. Someone with real credentials is trying to reach someone who does not exist on the official network.
+- B22 · First Contact — Priya Ramanujan-Cross. Six months of Lotus coercion. The firmware backdoor, the deployment window, the Syndicate's patience running out. Rook listens and asks three questions: how long, how complete, who else knows. None of the answers are good.
+- B23 · The Running Board — Physical board, no electronic trace. Three threads mapped: Headcount in possession, Nari in protection, Priya in a watched building. The board shows what the crew already knows: same client, same source, same plan. Thirty days from completion.
 
 ### The Spine
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5124 | `019f43bd-9eae-7c1b-ac6f-0b882b1fbf35` | world-deepening | The Spine aeroplex at 480 meters. Sky People: altitude … | 9/? | 12357c | UNSCORED |
-| 5138 | `019f43c0-7100-7f96-a16f-7eb8c55879f1` | action | Spine tier-2 operations center. Scout threads two crawl… | 9/? | 15228c | UNSCORED |
-| 5152 | `019f43c3-b0e7-72a1-a428-69d2853b3020` | action | Lace running the aeroplex cover — social engineering in… | 10/? | 14739c | UNSCORED |
-| 5161 | `019f43c6-9820-7fc9-97c0-d3ad5a2cb07d` | revelation | Vox detects Thorn-signature access logs in the Z6 civic… | 10/? | 13711c | UNSCORED |
+- B24 · Altitude — The Spine aeroplex at 480 meters. Sky People: altitude as class signal and amenity. The distance from the Gray Zone is not measured in kilometers. Casimir has never been this high. He stands at the observation level and looks down and says nothing for a long time.
+- B25 · Vox in the Infrastructure — Spine tier-2 operations center. Scout threads two crawlers into the utility corridor network. Vox maps the access topology while Priya — wired into Vox's secure channel — walks her through the architecture she has maintained for six years. The civic grid from the inside.
+- B26 · Lace as Someone Else — Lace running the aeroplex cover — social engineering in an environment where presence equals authorization. The Spine's security is built on the assumption that the people here belong here. Lace wears that assumption as a costume. The efficiency of it makes her contemptuous in a way that is slightly different from the usual contemptuous.
+- B27 · Park Gi-su in the Grid — Vox detects Thorn-signature access logs in the Z6 civic grid test cluster: the partial deployment is active. 200,000 registered neuretics already in Lotus hands. Phase 0 is live. Park is not chasing the crew — he is already running the Protocol's primary objective.
 
 ### The Backdoor
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5125 | `019f43bd-c728-704d-a916-fadec16456ba` | action | Spine op: Priya out of her building, firmware deploymen… | 10/? +subplot | 17127c | UNSCORED |
-| 5139 | `019f43c0-ab42-76e7-9bcf-5eb63d115057` | climax | Level 6 utility district, Spine aeroplex. Scout's crawl… | 9/? | 14688c | UNSCORED |
-| 5153 | `019f43c3-f5c9-739e-a482-17e478106600` | aftermath | Phase 0 data: 200,000 Z6 registered neuretics in Lotus … | 8/? | 14568c | UNSCORED |
+- B28 · Priya's Extraction — Spine op: Priya out of her building, firmware deployment pathway identified. The Lotus coercion network cuts simultaneously — they know she has moved. A Thorn fire team is sent to the deployment node. Race.
+- B29 · The Node — Level 6 utility district, Spine aeroplex. Scout's crawlers hold the Lotus fire team off physical access while Vox and Priya run the firmware rollback. The full grid rollback succeeds. The three Z6 test nodes do not.
+- B30 · What Survives — Phase 0 data: 200,000 Z6 registered neuretics in Lotus possession. Combined with Headcount demographic data: a complete picture of one buffer zone's population. Not the full Protocol. Enough to begin targeted displacement operations in Z6 immediately. Rook maps what that means.
 
 ### What Iron Hides
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5126 | `019f43bd-f5c9-7fe7-b934-74bce86b5f0c` | setup | Forty-eight hours after the Spine op. The crew assemble… | 8/? | 17630c | UNSCORED |
-| 5140 | `019f43c0-dd1c-718a-af1b-a7c47990e209` | revelation | Yim Seul-ki. Seventy-three. Builder of the Syndicate's … | 9/? | 12398c | UNSCORED |
-| 5154 | `019f43c4-240d-7cce-990b-5af1673de8f4` | revelation | In the Protocol's founding documentation archive: a her… | 9/? | 10318c | UNSCORED |
+- B31 · The Intelligence Picture — Forty-eight hours after the Spine op. The crew assembles all three threads: the sculpture, Nari's testimony, the firmware architecture, the Phase 0 footprint. Vox maps the Protocol's organizational signature across forty years of operational traces.
+- B32 · The Root Identified — Yim Seul-ki. Seventy-three. Builder of the Syndicate's community infrastructure and of the Purification Protocol, simultaneously, as one plan. Casimir knows her by reputation: the woman who built the clinics. He is silent for a long time after Vox says her name.
+- B33 · The File — In the Protocol's founding documentation archive: a heritage verification pull request in Seul-ki's own hand, with her own name on the subject line, stopped before completion. She knows. She has always known. Her Vietnamese heritage classifies her as impure by her own standard. Casimir: "She built the machine that would come for her and she ran it anyway."
 
 ### Into Silk
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5127 | `019f43be-25a8-768c-beda-ac445b3fd2af` | setup | The inner sanctum: a sub-level room in a Z5 community c… | 10/? | 13428c | UNSCORED |
-| 5141 | `019f43c1-0ffb-78ef-a0f4-ca8580ff4f67` | action | Casimir enters the inner sanctum. Park Gi-su is already… | 10/? | 13964c | UNSCORED |
-| 5155 | `019f43c4-551c-7081-922d-df080b1b13a1` | action | Scout in her body at the entry point, threading simulta… | 10/? | 12220c | UNSCORED |
-| 5162 | `019f43c6-cf8f-785b-982f-a7061cb375c2` | climax | The council chamber: the Root at the center, the Stems … | 10/? | 13121c | UNSCORED |
+- B34 · The Plan — The inner sanctum: a sub-level room in a Z5 community center. Lace wears a face close enough to her own to hurt — the closest she has used in years. Scout's first dual-presence operation. Casimir walks in the front door on an unreturned Thorn deployment authorization.
+- B35 · Ekow Goes In — Casimir enters the inner sanctum. Park Gi-su is already there. Both men see each other without surprise — this is not surprising to either of them. The crew on one side, the Thorns on the other, in the same room. The truce that holds is operational necessity, not peace.
+- B36 · Scout Doubles — Scout in her body at the entry point, threading simultaneously through the building's perimeter cameras, maintenance crawlways, and the street outside. The coherence strain of dual-presence is real and she knows it. She does not surface until the job is done.
+- B37 · The Silk Room — The council chamber: the Root at the center, the Stems arrayed, the Protocol's final authorization pending. Lace is in the room. Rook running the clock remotely in Lace's comms. The arrest moment is not what anyone planned.
 
 ### The Root
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5128 | `019f43be-5018-71d5-9bf4-83d43fe16daa` | climax | The Root, face to face. She makes Rook's argument befor… | 10/? | 14870c | UNSCORED |
-| 5142 | `019f43c1-484a-7d4f-a0fe-62ce32a30859` | climax | Rook tells Seul-ki what they found: the heritage verifi… | 10/? | 10842c | UNSCORED |
-| 5156 | `019f43c4-8d78-7900-b998-a3fc1e640eff` | climax | The Protocol documentation, Phase 0 data, and Headcount… | 9/? | 11775c | UNSCORED |
-| 5163 | `019f43c7-031f-7e74-ae2b-20105be79a53` | aftermath | Park Gi-su is in the room. He has heard everything. He … | 8/? +subplot | 11774c | UNSCORED |
+- B38 · Yim Seul-ki — The Root, face to face. She makes Rook's argument before Rook can: remove the Syndicate and what replaces it will be worse. She is right. Then she explains why the Protocol is necessary. She is wrong in a way that requires Rook to find exactly the right words.
+- B39 · The File, Out Loud — Rook tells Seul-ki what they found: the heritage verification pull with her name on the subject line. Not as a weapon — Rook does not do that; it does not work and she knows it. A plain statement: you know you do not meet your own standard. You have always known. Seul-ki does not deny it.
+- B40 · The Choice Offered — The Protocol documentation, Phase 0 data, and Headcount go simultaneously to the GLMZ Civic Bureau, Adaeze Nnodu-Park's Legal Cooperative, and a public archive — unless Seul-ki dismantles the Protocol publicly and funds the community infrastructure transition. Forty-eight hours.
+- B41 · Park Gi-su's Decision — Park Gi-su is in the room. He has heard everything. He makes the only decision available to a man who has been telling himself for years that deciding is above his authorization. He does not switch sides. He stands down. There is a difference. The account is not settled.
 
 ### Iron Wears Silk
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5129 | `019f43be-7f09-7faa-957c-274a9631d2e7` | falling-action | The Syndicate fractures along fault lines that have bee… | 5/? | 13334c | UNSCORED |
-| 5143 | `019f43c1-7e34-7449-be38-637278eb8dba` | falling-action | The Gray Zone does not change. The clinics are still ru… | 4/? | 10005c | UNSCORED |
-| 5157 | `019f43c4-c880-7451-b299-d16caff86a0e` | character-moment | The crew disperses. Casimir tells Rook about the first … | 3/? +subplot | 12923c | UNSCORED |
+- B42 · Forty-Eight Hours — The Syndicate fractures along fault lines that have been building for years. Hardliners go dark. Pragmatists distance themselves publicly. The Stems cannot agree. Seul-ki delivers the dissolution announcement to Adaeze Nnodu-Park's Legal Cooperative at hour forty-six. The Protocol is officially ended. The community infrastructure funding transfer is real.
+- B43 · The Gray Zone After — The Gray Zone does not change. The clinics are still running. The debt structures are still there. The Syndicate is diminished but present. The Z6 test-deployment data is flagged by the Civic Bureau as too compromised to act on. Priya's report is now on the record. It now exists.
+- B44 · Ekow's List — The crew disperses. Casimir tells Rook about the first item on his list: one job he did for the Lotus twelve years ago, one person who did not survive it. He is not asking for absolution. He is asking for the name to be on a record not run by the Lotus. She writes it down.
 
 ### The Count
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5130 | `019f43be-b6e5-7ef2-bdc6-d477bebe9be0` | resolution | The fourth diner in a series that was never planned as … | 3/? | 10896c | UNSCORED |
-| 5144 | `019f43c1-ae8a-7dbc-9147-ac6d8ac5d6f8` | resolution | Adaeze Nnodu-Park calls. She has a question: does Rook … | 2/? | 12796c | UNSCORED |
-| 5158 | `019f43c5-0352-73d5-87f4-1864a6277769` | final-image | Rook has one name. Boiler's number. She gives it to Ada… | 2/? | 9262c | UNSCORED |
+- B45 · The Diner, Again — The fourth diner in a series that was never planned as a series, over the lake. Not counting money. Not counting names backward. Counting forward: what happens to the people in the Z6 registry now that the Protocol is down but the Phase 0 data exists. What happens to the Gray Zone when the Syndicate is wounded but not gone.
+- B46 · Adaeze's Question — Adaeze Nnodu-Park calls. She has a question: does Rook know anyone who knows how to build community infrastructure? Not destroy. Build. The Legal Cooperative has Seul-ki's transition funding and needs people who understand load calculations and what structures can hold.
+- B47 · One Number — Rook has one name. Boiler's number. She gives it to Adaeze. The lake is the same. The arithmetic has learned a future tense — imprecise and structural and completely worth building.

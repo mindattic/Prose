@@ -76,9 +76,10 @@ His arc: the leashed dog who lights the match on the house that owns him. He doe
 6. Bram Osei irony is never commented on. The reader feels it.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: fb30b55000e618cf0d15568143957b73db519cb252eff00eebded967ac34e07f -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.8383605Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:56:17.4576792Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Levin's addiction and complicity arc mirrors Casimir's enslavement—both men trapped by systems that use them, both capable of defection. Levin's journey from Tears-numbed complicity to agency parallels Casimir's flip from hunter-dog to saboteur.
 - **Temporal scheme**: nonlinear
@@ -96,7 +97,7 @@ His arc: the leashed dog who lights the match on the house that owns him. He doe
   - **The machete (Casimir's weapon)** (in-world object) — Introduced in beat 1 as a gift from a dead man in a field at the end of an unheard-of war. Casimir keeps it because 'it was honest about what it was.' He places it on the dealer's counter in beat 13 as an introduction—'This is what I carry. This is what I am.' The machete is never used as a weapon in the story; it is a symbol of Casimir's nature and his choice to either wield or withhold his capacity for harm.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.8383605Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:56:17.4576792Z from Beats table — edit via MCP beat tools -->
 
 ### Part One — The Contract
 - B01 · The Organ-Debt Round — Establishes the protagonists' morally compromised routine and the world's organ-debt economy, grounding the reader in the story's ethical baseline before the inciting incident.

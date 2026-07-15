@@ -80,9 +80,10 @@ follow blood trails. Both kinds are present at the return.
   Do not touch it.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: ec9707ef31d7ca6ce5f313997683c28269523fce3685b915f4795021c08c962f -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7461815Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:37.6052514Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Temporal scheme**: linear
 - **Resolution**: unresolved
@@ -95,7 +96,7 @@ follow blood trails. Both kinds are present at the return.
   - **Dame Lyra** (quote) — Her clinical notation ('She'd noted that before') frames her battlefield reading as a habit of record-keeping — the prose implies a log or report she contributes to, anchoring the scene in a documentary tradition of slayer testimony.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7461815Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:37.6052514Z from Beats table — edit via MCP beat tools -->
 
 ### Lyra, Sinterspawn Slayer
 - B01 · — — Establishes Lyra as a seasoned, methodical monster-hunter mid-mission, building her competence and the sinterspawn threat before an ominous harrower interrupts the beat.

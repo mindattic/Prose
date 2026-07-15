@@ -83,9 +83,10 @@ What are you loyal to when you find out what the thing you loved actually is?
 - The mobilization is NOT resolved at the end — the book ends with the Liturgy's military build-up still in place
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 70ccb6220bd3265fd4a81641119d37c8ee81d8ea431caf283e28d4bf4da61b9f -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.8456067Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:56:21.1040428Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Soren Rowe / M-101 body-snatching: a stolen mind who can wear any machine (disposable shell, war-chassis, the Eirene-7) but must always return to the small shell that is the only home the Taking left him. Secondary thread: Orim Zebulun forty years of complicity with the Myrmidon intake.
 - **Temporal scheme**: nonlinear
@@ -103,7 +104,7 @@ What are you loyal to when you find out what the thing you loved actually is?
   - **Kenji Okonkwo-Barrett** (quote) — Orim cites this to Lyra at the Forge Hearth when she asks him why he kept taking the contracts for forty years after he knew about the intake. He does not say it is a quote. She does not ask. Beat 40.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.8456067Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:56:21.1040428Z from Beats table — edit via MCP beat tools -->
 
 ### Vigil's End
 - B01 · — — Establishes the archive setting and the membrane-crossing ritual to ground the reader in the world's physical and institutional logic before the theft begins.

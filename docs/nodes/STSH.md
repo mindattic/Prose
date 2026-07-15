@@ -284,9 +284,10 @@ except during Renata's fragments (first-person video diary format, direct to cam
 - **NCID overlay**: Petra auto-identifies every piece of Stash's gear the moment she enters
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 897ed90bd9483c05f52e1739a96ff0525eab51a94001d0dbf19fd718dd2f8020 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.8036084Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:56:06.7589422Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Femi's maturation from errand-runner to autonomous agent mirrors Stash's arc from complicit silence to active witness. Both move from accepting systems that use them to choosing their own role in the outcome.
 - **Temporal scheme**: nonlinear
@@ -297,7 +298,7 @@ except during Renata's fragments (first-person video diary format, direct to cam
 - **Escalation**: 47-beat arc, peak 10/10 at beat 41
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.8036084Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:56:06.7589422Z from Beats table — edit via MCP beat tools -->
 
 ### The Dispensary
 - B01 · Opening Image — 0311 hours. Doc Stash closes a sternotomy alone in the Dispensary. The power flickers twice. The runner will live. She charges nothing. She catalogs what she used while she cleans up. The world: compressed, precise, unglamorous.

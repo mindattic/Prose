@@ -1,295 +1,134 @@
+﻿## Voice & Prose Laws (SS-A31 + Register — MANDATORY)
+
+### Accessible Prose (SS-A31)
+- Sentences: short-to-medium. Break any clause over ~20 words.
+- Narration uses contractions naturally: she's, it wasn't, couldn't, didn't.
+- Vocabulary: Anglo-Saxon base words preferred. Avoid Latinate abstractions.
+- No stacked subordinate clauses.
+- No pseudo-profundity. Metaphors survive literal scrutiny.
+- No filler-wit.
+
+### Rook's Register — HEIST (Competence-Porn, Dry, Tactical)
+Close-third on Rook (Inkeri Saarinen). Observational, dry, tactical. She treats problems as chess problems. **This is also the flaw.**
+
+Rook's narration notices: sightlines, load-bearing elements (architectural and human), exit routes, the gap between what people say and what they're positioned to do. She tracks the room the way a logistics planner tracks a supply chain.
+
+Occasional tactical distance when she's problem-solving on the fly — the prose steps back slightly, becomes crisper.
+
+**The wry register:** The crew is very good at their jobs. The world keeps making that insufficient. The comedy isn't stated; it's the gap between professional competence and absurd situation. Rook does not comment on the absurdity. She solves it.
+
+### BANNED in this strand
+- Psionics, schisms, 5D anything, sensitivity. Pure tech and cyberware. No supernatural.
+- Kyle's register: arithmetic/filing/parliament/geometry. Rook thinks in CHESS (positions, leverage, tempo) not math.
+- Feelings named directly. Rook processes affect as tactical data: "the room changed" not "she felt nervous."
+- Noble suffering. The crew is professional; if someone is hurt, note the operational impact.
+
 ---
-node: MxG
-title: Magenta & Gunmetal
-kind: story
-universe: GLMZ
-status: planned
-register: HEIST
-date: 2026-07-04
+
+## World Texture (GLMZ — ground every scene here)
+
+**Sky communities (SS-A32/A33):** Aeropods → Aeropolis → Drifters. Altitude = class axis. The Low (30–320m ungoverned). "Little birdies"/"Harpies" = sky-dweller insults. Kite Rig (descend), Ascent Bloom (ascend).
+
+**Underwater communities:** Hermetic domes on the lakebed + repurposed port infrastructure. "Fishmen"/"Mermaids" = outsider insults. No Arcturus Civil Security below surface.
+
+**Micro-schisms:** Pebble clusters (~2 inches) floating in complex orbits around apparently nothing — street corners, gutters. Treated like weather. Nobody explains them.
+
+**Nanite gutters (stopped):** Sanitation nanites cleaned streets on schedule. Stopped coming around. Streets grimier. Iridescent film in neglected zones. Corpo-adjacent districts still pristine — class marker.
+
+**Job vocabulary:** Rider/Channeler (Shell; Husk). Splicer. Tunneler. Scavs (lowercase).
+
+**Infrastructure:** Pulse (Mach 6 vacuum tube). No trains. VTOLs = Tier 3+. No police — Arcturus Civil Security only.
+
+**Color language for this strand:** Magenta = neon coating every corpo surface (AxiomBioNanics' aesthetic; the underworld named the color of polished medical-grade deception). Gunmetal = everything that shoots back. These two colors appear throughout. They are not subtle.
+
+**Φ** = QUANTA (never phi). Iowan Behemoths = machines, not life.
+
 ---
 
-# Magenta & Gunmetal — Node Bible
+## Story — Magenta & Gunmetal (MxG)
 
-## §0 — Logline
+**Logline:** Five freelancers accept a corporate extraction job in GLMZ. The target extracts herself. The corp sends a wet squad. Everyone ends up on a storm-lashed lake platform, someone has to hang from a crane, and Rook has to jump onto a VTOL.
 
-Five freelancers accept a corporate extraction job in GLMZ. The target extracts herself. The corp sends a wet squad. Everyone ends up on a storm-lashed lake platform, someone has to hang from a crane, and Rook has to jump onto a VTOL.
+**Payment:** Φ 40,000 split five ways = Φ 8,000 per person. This is the exact amount. The story ends with Rook counting Φ 8,000 in a diner.
 
-## §0b — Payment
+## Genre & Tone
+Quintessential run: **team heist → corp escalation → absurdist True Lies finale**. No magic. No psionics. No schism sensitivity. Pure tech, cyberware, and the pragmatic choreography of people who are very good at getting paid.
 
-Φ 40,000 split five ways = Φ 8,000 per person. This is the exact amount. It is enough. Everyone agreed to it. The story ends with Rook counting Φ 8,000 in a diner.
+## Story
 
-## §1 — Genre & Tone
+**The job:** Extract Dr. Halina Soraya from Axiom BioNanics Research Compound 7, Z5. Client: anonymous, routed through fixer Gault. Payment: Φ 40,000.
 
-The quintessential run: **team heist → corp escalation → absurdist True Lies finale**. Pure tech and cyberware — the pragmatic choreography of people who are very good at getting paid. The GLMZ world is fully present (psionics exist, the Schism exists, sensitives exist as background fact) but this specific story's engine is expertise, not the uncanny.
+**The complication:** Soraya is waiting in the lobby when they arrive. She hired them. The package is not her body — it's a breakthrough Class II nano-therapeutic formula embedded in her neuretics. Axiom is months away from filing Class V military applications she never intended. If buried, it becomes a weapon in five years.
 
-Register: **HEIST** — competence-porn, wry, fast-moving. The crew is good at their jobs. The world is trying to make that insufficient. Close-third POV on Rook. Occasional tactical distance when she is problem-solving on the fly.
+**The escalation:** PEREGRINE — Axiom's four-person corp-black security unit — activates the moment extraction is confirmed. They are as prepared for this as the crew is. Gault sells the safe house location under pressure — he doesn't know the full stakes.
 
-Color language: **Magenta** and **Gunmetal** are the unofficial colors of the GLMZ underworld — magenta for the neon that coats every surface the corps want you to look at, gunmetal for everything that shoots back. They have no official status. Freelancers just know them when they see them: the magenta of a corpo lobby, the gunmetal of the piece in a coat pocket. Axiom BioNanics' corporate aesthetic is magenta — they did not choose it; it chose them, because the underworld already named the color of polished medical-grade deception. The crew operates in gunmetal and tries not to be impressed by the other one. These two colors appear throughout the story. They are not subtle.
+**The destination:** The Lake Platform — civic-science station three miles out on Lake Michigan, operating under Meridian Charter outside CorpoNation territory. Data published from its broadcast node enters public domain irrevocably under Meridian Open Data Protocol. PEREGRINE locks it down. The crew hijacks a maintenance VTOL and approaches through a storm.
 
-## §2 — Story
+**The finale (True Lies register):** Storm deck combat. Lace impersonating PEREGRINE's commander to fracture their response. Boiler on a crane arm. Vox in three network layers simultaneously while bleeding from a graze wound. Rook and the PEREGRINE commander on a broken safety rail, negotiating — both know it ends with one of them in the lake. Soraya publishes the data herself from a terminal she breaks into with her own credentials while everyone else handles the rest.
 
-**The job:** Extract Dr. Halina Soraya from Axiom BioNanics Research Compound 7, Z5. Client: anonymous, routed through fixer Gault. Payment: Φ 40,000 split five ways.
+**The coda:** Morning. A diner near the Spine. Rook counts the money. Lake out the window. Ohara is already gone. Everyone got paid. Exact amount. The lake is very flat in the morning.
 
-**The complication:** Soraya is waiting in the lobby when they arrive. She hired them first — Gault's anonymous client is a cutout she controls. The package is not her body; it is the encoding of a breakthrough Class II nano-therapeutic formula embedded in her neuretics. She hired extraction because she reached the same conclusion Axiom already had: the formula has Class V military applications she never intended, and Axiom is months away from filing those applications under a classified subsidiary. If Axiom buries the research, it becomes a weapon in five years.
+## Characters
 
-**The escalation:** PEREGRINE — Axiom BioNanics' four-person corp-black security unit — activates the moment extraction is confirmed. The mechanism is not reactive: three days before the crew moves, Axiom's internal audit has already flagged Soraya's access pattern — incremental file deletions spread across quarterly audit cycles, badge logs pulled twice in one week where quarterly is standard, a data-integrity audit she requested and then cancelled. PEREGRINE is on standby watch before the crew enters the building. When the crew's badge exception touches Soraya's monitored account at the compound perimeter, it reads as confirmation of a threat already identified — not a new event. They are not rent-a-cops. They are as prepared for this as the crew is. Gault, under pressure from Axiom's legal arm, sells the safe house location — not knowing the full stakes, believing he is selling a routine tip for a routine extraction job.
+**Inkeri Saarinen ("Rook") — POV.** Finnish-Nigerian. Former Meridian PD intelligence analyst (dissolved 2208). Fixer/planner. Standard cyberware. Observational, dry, tactical. Treats problems as chess problems. Want: successful job, clean payment, no entanglements. Need: to trust someone outside the transaction. Wound: got a colleague killed on a bad call — wrong assessment, wrong timing. Stopped working with the same person twice. This job is an exception she didn't think through.
 
-**The destination:** The Lake Platform — a civic-science station three miles out on Lake Michigan, operated under Meridian Charter outside CorpoNation territorial jurisdiction. By charter, data published from its broadcast node enters the public domain irrevocably under Meridian Open Data Protocol. Once it is out, no court or corp can pull it back. PEREGRINE locks it down before the crew can reach it. The crew hijacks a maintenance VTOL and approaches through a storm.
+**Blessing Agwu ("Lace").** Nigerian-Brazilian. Social engineer. Facial cyberware micromanages micro-expression at physiological level. Can pass as anyone's supervisor. Gets genuinely offended when people assume this works through appearance rather than precision. Professional, calm, privately contemptuous of anyone who underestimates what "talking" takes.
 
-**The finale (True Lies register):** Storm deck combat. Lace running a flawless impersonation of PEREGRINE's own commander to fracture their response from the inside. Boiler on a crane arm, firing through viewport glass, doing something to the deck that the Lake Platform maintenance team will be discussing for years. Vox in three network layers simultaneously while bleeding from a graze wound. Rook and the PEREGRINE commander on a broken safety rail, conducting a negotiation both of them know will end in one of them going into the lake. And Dr. Soraya — who has never fired a weapon in her life and has no intention of starting — publishing the data herself from a terminal she breaks into with her own credentials while everyone else handles the rest.
+**Mikkeli Väinämöinen ("Boiler").** Finnish-Congolese. Demolitions specialist / heavy weapons. Ex-Arcturus Civil Security, honorably discharged after a structural incident involving a building he was explicitly tasked with not destroying. Cheerful. Large. Enthusiastic about the physics of things under stress.
 
-**The coda:** Morning. A diner near the Spine. Rook counts the money. Lake out the window. Ohara is already gone — she had an exit route Rook never knew about, which is the kind of thing Rook respects. The crew disperses. Everyone got paid. Exact amount. The lake is very flat in the morning.
+**Tem Okafor ("Vox").** Igbo-Japanese. Channeler — brokers, directs, and manages a stable of unlicensed AI agents who do the actual network work. Not a hacker (human-speed network intrusion is archaic). Distracted in meatspace, fully present with her agents. Refers to Axiom's security as "what the pink wall's thinking."
 
-## §3 — Characters
+**Remi Nakamura-Diallo ("Scout").** Perimeter and drone work. Eyes closed for the most important moments at the Lake Platform. Does not name the drones.
 
-### Inkeri Saarinen ("Rook") — POV
-- **Heritage:** Finnish-Nigerian (GLMZ Diaspora)
-- **Role:** Fixer/planner. Former ArcSec intelligence analyst — left the firm after a contracted operation turned into a civilian kill list. Switched to freelance extraction work.
-- **Cyberware:** Standard package — enhanced low-light vision, encrypted comms implant, subcutaneous transaction processor. Nothing exotic.
-- **Physicality:** Former Arcturus field operative — not augmented for combat but trained for it. Takes height transitions (drops, dock jumps, gap crossings) without hesitation and without comment. The instinct to commit before calculating is trained, not biological.
-- **Voice:** Observational, dry, tactical. Treats problems as chess problems. This is also the flaw.
-- **Want:** Successful job, clean payment, no entanglements.
-- **Need:** To trust someone outside the transaction.
-- **Wound:** Got a colleague killed on a bad call during the Tidewell extraction contract — wrong assessment, wrong call, wrong timing. Stopped working with the same person twice after that. This job is an exception she agreed to before fully thinking through the implications: Lace was on the Tidewell contract, and working with the same person twice is the rule Rook set for herself afterward. She called her anyway.
-- **Flaw:** Treats people as variables until the moment they prove otherwise. Even then, slow to update.
-- **Entity name:** Inkeri Saarinen
-- **Handle:** Rook
+**Dr. Halina Soraya ("Ohara").** The extraction target. Has never fired a weapon and has no intention of starting. Publishes the data herself. Already gone by morning.
 
-### Blessing Agwu ("Lace")
-- **Heritage:** Nigerian-Brazilian (GLMZ Diaspora)
-- **Role:** Social engineer. Facial cyberware micromanages micro-expression at a physiological level — pupil dilation, micro-flush, involuntary micro-movement, the forty-three muscles of the human face.
-- **Specialty:** Can pass as anyone's supervisor, auditor, liaison, or inspector. Gets genuinely offended when people assume this works through appearance rather than precision.
-- **Voice:** Professional, calm, privately contemptuous of anyone who underestimates what "talking" takes. The consummate professional. Gets irritated by inefficiency.
-- **Entity name:** Blessing Agwu
-- **Handle:** Lace
+**Seun Adalemo.** PEREGRINE commander. Survives the lake. (See NxR.)
 
-### Mikkeli Väinämöinen ("Boiler")
-- **Heritage:** Finnish-Congolese (GLMZ Diaspora)
-- **Role:** Demolitions specialist / heavy weapons. Ex-ArcSec, honorably discharged after a structural incident involving a building he was explicitly tasked with not destroying. He maintains that the building was already structurally compromised.
-- **Specialty:** Anything that explodes. Understanding of load-bearing architecture — both to avoid destroying it and to destroy it correctly when that's what the job requires.
-- **Voice:** Cheerful. Large. Enthusiastic about the physics of things under stress. Genuinely enjoys his work in a way that makes everyone else slightly nervous.
-- **Entity name:** Mikkeli Väinämöinen
-- **Handle:** Boiler
+## Narrative Locks
+1. No psionics, schisms, 5D. Pure tech.
+2. Φ 8,000 each. This is the number. The story ends with Rook counting it.
+3. Soraya publishes the data herself. The crew doesn't do it for her.
+4. Ohara is already gone by morning. Rook never knew her exit route. She respects it.
 
-### Tem Okafor ("Vox")
-- **Heritage:** Igbo-Japanese (GLMZ Diaspora)
-- **Role:** **Channeler** — the GLMZ term for an AI-agent handler (the *decker* analog; see §5a). Not a hacker — human-speed network intrusion is archaic. Vox brokers, directs, and manages a stable of unlicensed AI agents who do the actual network work. The neuretics interface (commercial Atlas-grade, painful but not lethal) gives Vox the bandwidth to run parallel simultaneous conversations with multiple autonomous AI agents operating at machine speed — receiving their outputs, issuing corrections, preventing them from going off-script or creating traceable signatures.
-- **Specialty:** Knows which gray-market AI agents to call for which job, how to direct them without losing control, and when to pull the plug before a trace closes. The six "data channels" are six AI agents running in parallel. Vox sees their aggregate output as a composite topology — a landscape the AIs are mapping in real time. The AIs do the seeing; Vox does the thinking about what the seeing means.
-- **The gray-market angle:** Licensed AI agents create paper trails. Vox's agents are unlicensed, compartmentalized, and run on impermanent substrates. Axiom will know they were there; they will not know who sent them or how to follow the thread back. This is Vox's actual value — not the network access, but the deniability.
-- **Voice:** Distracted in meatspace, fully present in the conversation with her agents. Occasionally speaks to the agents mid-sentence and forgets to re-address the humans. Refers to Axiom's security infrastructure as "what the pink wall's thinking." This unnerves people who don't understand she's paraphrasing an AI.
-- **Entity name:** Tem Okafor
-- **Handle:** Vox
+<!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: dc478d64a8687b7de9e01d0d66d73c2d45ae5c0bd220040bac21048d5a19829d -->
 
-### Remi Diallo ("Scout")
-- **Heritage:** French-Senegalese (GLMZ Diaspora)
-- **Role:** Ghost — ECT (eigenstate conscience transfer) operator; see §5a.
-- **Specialty:** Maintains a bespoke swarm of seven vent-rated crawlers ("the seven") in a custom case she has never opened in front of anyone. When she ghosts out (ECT), her Shell goes still — eyes roll back, breathing slows to eight breaths per minute, and she is entirely elsewhere. She sits perfectly still. This unnerves everyone.
-- **Voice:** Minimal — she prefers to let the crawlers do her talking. When she does speak, it is usually a number or a direction. Occasionally: "They won't hear it." She has never been wrong about that.
-- **Entity name:** Remi Diallo
-- **Handle:** Scout
-- **Note:** She does not name her drones. The crew names them anyway. She has stopped arguing about this.
+## Structural Blueprint
+<!-- generated 2026-07-15T18:55:44.9774892Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
-### Dr. Halina Soraya ("Ohara")
-- **Heritage:** Polish-Persian (GLMZ Diaspora)
-- **Role:** Axiom BioNanics Class II research lead. Extraction target and actual client. "Ohara" is her handle for herself when she is operating outside the lab.
-- **Age:** 47
-- **Background:** Joined Axiom 2209. Developed the Class II nano-therapeutic formula — longevity/nerve-tissue regeneration — over four years. Recognized the Class V dual-use implication herself before Axiom did. Began building her exit six months ago.
-- **Voice:** Precise, clinical, occasionally startled by her own competence in non-laboratory situations. She prepared for this. She did not fully prepare for how it would feel to be in it.
-- **Entity name:** Halina Soraya
-- **Handle:** Ohara (working name only; not her legal identity)
+- **Subplot**: Rook's internal reckoning with her failure to trust her own judgment (the Wennick wound) parallels and is resolved through the job's demand that she trust Ohara's autonomy and Boiler's competence without micromanaging either.
+- **Temporal scheme**: linear
+- **Resolution**: mixed
+- **Moral polarity**: ambivalent
+- **Ending**: quiet, no epilogue
+- **Escalation**: 16-beat arc, peak 9/10 at beat 10
+- **Intertextual anchors**:
+  - **Meridian Charter / Meridian Open Data Protocol** (civic-legal framework) — The Lake Platform operates under Meridian Charter outside CorpoNation territory; data published from its broadcast node enters public domain irrevocably under Meridian Open Data Protocol. This is why the platform is the destination—it's the only infrastructure where the data cannot be recalled once published.
+  - **Axiom BioNanics Class II / Class V nano-therapeutic classifications** (in-world regulatory/product taxonomy) — Soraya's formula is Class II (longevity, nerve-tissue regeneration). Axiom plans to file Class V military applications. The classification system is cited in Beat 4 (Ohara's confession) and Beat 8 (her explanation of what she's been protecting). It's the technical spine of the job's stakes.
+  - **Arcturus Civil Security** (governance apparatus) — Referenced in world-texture as the only law enforcement in GLMZ above the surface (underwater communities are outside its jurisdiction). Boiler is ex-Arcturus Civil Security, honorably discharged. The organization's absence from the job is thematic—this is a space where corporate security fills the vacuum.
+  - **PEREGRINE** (corporate security unit) — Named as Axiom's four-person corp-black security unit. Activated when extraction is confirmed. Pursues the crew across multiple beats (5–10), arrives at the lake platform (12), and the commander negotiates with Rook at the climax (14). A named, specific opposition force that gives the story its escalation shape.
 
-### Gault
-- **Role:** Fixer. Assembled the crew on behalf of Ohara's cutout. Was subsequently contacted by Axiom BioNanics' security division and agreed to sell the safe house location for Φ 8,000, believing the job was routine and the tip was low-stakes.
-- **Trajectory:** Offer → extraction → safe-house burn → confrontation → made useful → cut loose.
-- **Note:** Gault is not a villain. He made a rational decision with incomplete information and it was wrong. The crew does not kill him. He is burned from the network and cut loose. He knows what that means.
-
-## §4 — The Target: Axiom BioNanics
-
-See SS-A17. Axiom BioNanics is one of the Nano Triumvirate — Class II medical nano, dominant prescription, founded 2155. The research at Compound 7 (Z5) was classified as Class II longevity/nerve-tissue regeneration. The Class V application — neural-tissue targeting, military-grade neurological interference at scale — was never filed. Dr. Soraya developed it and recognized the dual-use problem immediately.
-
-Axiom's corporate aesthetic: **magenta**. Polished, warm, medical-reassuring. Their branding is everywhere in Compound 7 — bioluminescent wall panels, the soft magenta pulse of their logo, the color-coordinated uniforms. It is the most expensive-looking building the crew has ever been paid to enter.
-
-**PEREGRINE** is Axiom's internal security response unit. Four personnel, corp-black authorization, no organizational chart reference. They are: a commander (Seun Adalemo, ex-Arcturus Special Operations), a close-quarters specialist, a signal/network operator, and a driver/pilot. They are good. Not as good as they think, but close enough to make the crew earn it. PEREGRINE's activation is confirmatory, not reactive: Axiom's audit infrastructure had already identified Soraya as a flight risk before the crew ran a single agent across the perimeter. The detection lag — first contact in the Bloom Quarter, well after the crew has left Compound 7 — is the mobilization time of a unit verifying from standby, not a failure of intelligence.
-
-## §5a — ECT: Eigenstate Conscience Transfer / Ghosting (GLMZ canon)
-
-**Eigenstate conscience transfer (ECT)** is the canonical remote-operation technology — street verb: *ghosting*. The mechanism: consciousness projected as a coherent waveform into a resonant cavity (the neural bus of a compatible frame or drone chassis). The eigenstate is not transmitted and not copied; it is projected in place, the way a standing wave occupies a cavity. This is why it cannot be jammed by blocking a carrier signal: there is no carrier. It can only be disrupted by attacking the resonant cavity itself — or by hitting the operator's Shell. *(Formerly marketed as "NSB / Neuretic Substrate Bridging" and "CEP / Coherent Eigenstate Projection" — both terms are retired. SS-LAW-26.)*
-
-**Banned imagery:** Physical datajacks, skull sockets, neural ports, "jacking a cable into" anyone, trode-nets are all explicitly NOT this world. The neural bus interface is a neuretics mesh grown into the brain — not a port or socket. "Jacked in" as a phrase is retired; operators "thread out," "burn a frame," "ghost out," or "go deep."
-
-**The projection experience:** When Scout ghosts out, her **Shell** — her body — drops into managed low-activity suspension. Eyes roll back. Breathing slows to eight breaths per minute. From the outside, she is perfectly still. From inside, she is in the vent, or on the ceiling, or three floors below; her Shell is elsewhere and irrelevant. The crawlers' optics and tactile sensors are hers. The Shell's sensory input is suspended.
-
-**Surfacing:** Returning from a frame requires a clean **return handshake** — the eigenstate reseating into the Shell's neural bus. When the handshake is clean, surfacing takes less than a second. Operators describe re-entry as the worst part: the Shell's sensorium is narrow and poorly lit compared to what a well-calibrated crawler sees. Gray-market frames with degraded neural buses can miss or lag on the handshake — operators call this **"the lag."** In a firefight, the lag is life-threatening.
-
-**The critical vulnerability:** The return handshake. A frame destroyed mid-projection triggers an emergency recall; it is messy and painful but usually survivable. **Black Ice** — a destructive resonance countermeasure — can target the neural bus cavity and attempt to trap the projected eigenstate or force a bad return. Dumb Black Ice floods the cavity with broadband noise. Military-grade Black Ice is adaptive, learning the operator's eigenstate signature before attempting resonance collapse.
-
-**Failure modes (ascending severity):** Echoing (residual frame-sensory data imprinting on the returning eigenstate; accumulates with heavy use), Partitioning — also called Smear State — (sync drops below coherence threshold; operator awareness smears across both Shell and frame simultaneously; dangerous and disorienting), Feedback Cascade (substrate destruction propagating back through the projection; the operator does not return usefully).
-
-**The profession (Ghost):** A **Ghost** in the GLMZ freelance context is an ECT operator — someone who ghosts (or "burns frames," "threads out," "goes deep") for pay. The formal term is **Ghost operator**; prior corporate classification "Remote Frame Operator / RFO" is retired (SS-LAW-26). Street term: just "Ghost." Also interchangeably: **Jockey** (carries a slur-guard — see below). The drones themselves are called **frames** or **crawlers** depending on size and purpose. Vent-rated crawlers are palm-sized, six-legged, and run at near-silent (38 dB). A Ghost threading into a crawler is described as "going in."
-
-> **Usage guard (binding):** "Jockey" must NEVER appear adjacent to camel imagery — the phrase "camel jockey" is an ethnic slur and is banned in all prose. This matters specifically in *Steppin' Razor* (SRZR), whose 5D contact rides a camel: that figure is always **"the man on the camel,"** never a "Ghost," "Jockey," or "camel jockey." Sasha Võ is not a Ghost (she works by Signal + Noise, not ECT). Keep the Ghost/Jockey terms and the camel contact strictly apart.
-
-**The profession (Channeler):** The net-running counterpart to the Ghost — the *decker* analog, and the GLMZ has buried the classic decker. Human-speed intrusion is archaic, so a **Channeler** does not hack: they conduct a stable of unlicensed AI agents (their **channels**) that do the actual network work, holding parallel machine-speed conversations with them through a high-bandwidth neuretics interface — directing, correcting, and pulling the plug before a trace closes. The Channeler reads the agents' pooled output as a live topology; the agents do the seeing, the Channeler does the thinking about what the seeing means. The product is not access but **deniability**: the channels are unlicensed, compartmentalized, and run on impermanent substrates, so a corp knows it was hit and cannot follow the thread back. (Vox is the Rook Trilogy's Channeler; the trilogy's "registered Reads" are the neuretics-capable people the corps covet, harvested in *Crimson & Chrome*.)
-
-**The profession (Splicer):** The GLMZ term for a cyberware surgeon. A **Splicer** is who you go to when you need chrome put in or pulled out: they **splice biology and technology together** — seating implants, wiring neuretics, and neural bus hardware into nerve and bone, and keeping the seam from rejecting. Back-alley or boutique, licensed or off the books, the Splicer is the hand between the body you were born with and the body you can afford. (Every Ghost's ECT interface and every Channeler's neuretics array was put there by a Splicer.)
-
-**Canonical note:** Glyph Analytics is the licensed hardware vendor for neural bus equipment. Gray-market neural bus hardware exists and has a non-trivial failure rate on the return handshake — the lag — which is dangerous in active operations.
-
-## §5b — The Lake Platform
-
-A civic science station three miles out on Lake Michigan, operated by the GLMZ Science Cooperative under Meridian Charter of 2219. Sits outside CorpoNation territorial jurisdiction — by charter, data published from its broadcast node enters the public domain irrevocably under Meridian Open Data Protocol. The platform sits at lake level on Lake Michigan — it is not an aerostatic structure; VTOL access from the shore is the standard approach.
-
-**Three decks:**
-- Deck 1: Maintenance, VTOL bay, crew quarters, fuel storage
-- Deck 2: Research labs, conference rooms, network infrastructure
-- Deck 3: Broadcast array, observation deck, emergency shelter
-
-The platform is uncomfortable in a storm. The weather is load-bearing. Lake Michigan in a November storm does not care about anyone's timeline.
-
-The Lake Platform is not dramatic. It is a utilitarian civic node painted gray-white, with safety railing every two meters and a broadcast array that looks like a HVAC unit. This is important: it is the least cinematic place imaginable, and the finale happens there anyway.
-
-## §6 — Beat Spine (14-beat outline)
-
-| # | Title | Goal |
-|---|---|---|
-| 1 | **The Offer** | Z3 hotel bar; Gault presents the job; Φ 40k five ways; Rook agrees while pretending to think about it |
-| 2 | **Assembly** | Rook finds Lace, Boiler, Vox, Scout in sequence; each has a reason they need the money right now; Scout is found sitting perfectly still in a diner, apparently alone, surrounded by crawlers |
-| 3 | **Legwork** | Scout's crawlers map Axiom Compound 7 from the inside; Vox's outer-net pass; Lace social-engineers a maintenance worker; Rook clocks Ohara's routine — on the walk back steps off a padlocked freight-siding dock rather than hunt for stairs; plant for Lock 10 |
-| 4 | **The Plan** | Elegant, minimal-violence extraction: inspector cover, 90-second camera blind, walk Ohara out a side door; Rook says it is simple |
-| 5 | **The Complication** | Ohara is waiting in the lobby; she hired them first; the data is encoded in her neuretics |
-| 6 | **The Counter-Client** | Rook negotiates real terms; Ohara funds the rest of the job herself; trust is established to a professional minimum |
-| 7 | **The Pursuit Opens** | PEREGRINE activates; first contact in the Bloom Quarter — a PEREGRINE shooter fires through a crowd at Ohara, a bystander (woman at a vendor stall) goes down instead; Rook freezes for a half-beat over the body; the shooter reads her freeze and commits her; Boiler introduces himself to the enemy; crew escapes through a service lane |
-| 8 | **The Bridge** | Boiler's moment; an elevated freight-rail bridge; something explodes beautifully; Vox calls the tail clear |
-| 9 | **The Safe House** | Ohara explains full scope; Class V under Class II cover; publish or it becomes a weapon in five years; Lace's cyberware logs a neuretics-access micro-tremor when Ohara describes her own implant — the tell of active suppression, not forgotten detail [**NxR plant — Beat 8: this is what Lace has known**] |
-| 10 | **Burned** | Gault sold the location; PEREGRINE hits the safe house; the crew gets out; someone gets hurt |
-| 11 | **Gault** | The confrontation; Gault did not know the full stakes; the crew decides what to do with him |
-| 12 | **The Approach** | The Lake Platform; PEREGRINE on deck; a maintenance VTOL; storm building over the lake |
-| 13 | **The Lake** | Deck combat in the rain; Scout's crawlers cut power to half the platform; Lace impersonates PEREGRINE's commander via radio to fracture their response; Boiler on the crane arm, firing through viewport glass at deck 3; Vox in three network layers while bleeding from a graze wound; Rook's one-on-one with the PEREGRINE commander on a broken safety rail; Ohara reaches the terminal and publishes; PEREGRINE's VTOL makes a strafing run on the deck — Rook runs to the edge and jumps onto the landing skid as it passes, fights her way into the cockpit, commandeers it; the landing on deck 1 is bad but nobody dies |
-| 14 | **The Count** | Morning diner near the Spine; Rook counts the money; lake out the window; the crew is already gone |
-
-## §6a — Rook Trilogy Arc (Author-Level Notes — SS-A26)
-
-MxG is **step 1 of the Rook Trilogy** (MxG → NxR → CxC). The three jobs were steps Helix Biosystems needed taken and could not be seen taking.
-
-**What Helix needed from MxG:** Soraya extracted from Axiom cleanly — positioned for acquisition. The anonymous client chain runs through Ohara's cutout, which is real; Ohara genuinely hired the crew. But Helix had quietly engineered the conditions that made her move: Axiom's internal pressure on Soraya, the timing of the Class V reclassification, the window in which an extraction would be feasible. The crew does not know Helix exists. Ohara does not know the depth of the situation she is in.
-
-**The formula release as Helix's win:** The Class V neural-tissue tech entering the public domain destroyed Axiom's ability to file a proprietary patent. It also removed Axiom's liability from the equation entirely. Helix, which had been quietly refining its own version without public exposure, kept its version proprietary. Ohara prevented Axiom's weapon. She inadvertently handed the competitor a competitive win. The public-domain release was Axiom's loss and Helix's margin.
-
-**PEREGRINE after MxG:** Axiom disbands the unit after the failed operation. Helix acquires the remnant personnel and reconstitutes PEREGRINE in NxR with Helix funding — same people, different employer, different mandate.
-
-**What this means for MxG prose:** Nothing changes at the story level. The crew runs the job they think they're running. The hidden layer runs in parallel and is never visible in this story. The author knows; the characters do not.
-
-**Anneke Oyelowo** (Helix program director, trilogy antagonist) does not appear in MxG. She is the adversary of record in CxC.
-
-**Dr. Soraya's role in the larger arc:** In NxR, Soraya walks twenty-one registered Reads off a barge and hides them — the trilogy's moral spine, established after MxG ends.
-
-## §7 — Locks (binding)
-
-1. **Tech and expertise are the engine.** The story runs on professional competence, not the uncanny. Psionics, schism, and sensitives exist in the GLMZ world — they are not foregrounded in this story. Do not build plot pivots on them; they can exist as background color.
-2. **Ohara publishes the data herself.** Her hands on the terminal. She is not rescued; she accomplishes the mission.
-3. **Everyone gets paid.** Exact amount, Φ 40,000 split five ways. No symbolic gestures, no debt carried forward.
-4. **Gault is not killed.** Burned from the network and cut loose. He made a mistake with incomplete information. The crew does not execute people for that.
-5. **Boiler breaks something structurally significant.** The bridge (Beat 8) and/or the Lake Platform (Beat 13). It must be spectacular enough that the maintenance team tells the story for years.
-6. **Rook does not fully trust anyone inside the job.** The wound holds. Partial opening only — she counts the money alone at the end. This is not fixed in one story.
-7. **PEREGRINE is competent.** The crew wins by being better-prepared and faster-adapting, not by the opposition being stupid. The PEREGRINE commander is a worthy adversary.
-8. **The finale is wet.** Storm. Lake spray. Rain on every surface. Lake Michigan in November.
-9. **The color language is used.** Magenta appears in at least three beats before the finale. Gunmetal appears as contrast. The title earns itself as a description of the world the crew lives in.
-10. **Rook jumps onto the VTOL.** She runs to the edge and jumps. This is the Die Hard moment. She flies it back badly. No one gets to cut this for pacing. Plant: Beat 3 establishes that Rook takes height transitions without hesitation and without announcement — this is character, not plot convenience.
-11. **Scout threads out for the finale.** Her Shell is present — still, eyes rolled back — but she is in the crawlers when the most important things happen. The crawlers give her information, not presence. That is the point.
-12. **ECT/Ghosting is depicted correctly.** When Scout ghosts out, her Shell goes still. When she surfaces, the return handshake brings her back. No exceptions to the projection/suspension mechanics. No physical jacks, no skull sockets, no optic cables.
-
-## §8b — R2 Polish Notes (Opus pass)
-
-Register purge: Rook's interiority must NOT read as Kyle's arithmetic/counting voice. "Filed it," "did the count [in her head]," "counted Φ N," "put it where she put things," "she did not examine why," "noticed without wanting to" are tics to eliminate or externalize into dialogue/body. Rook counts EXITS/STEPS as a behavioral rule (keep, sparingly) — she does not narrate her feelings as ledger arithmetic. The personal stake (Wennick; leadership as a debt) is legible from Beat 1, shown through body and one externalized exchange, not stated as private knowledge she "has never said." Beat 7 bystander death carries weight in-scene and forces Rook to stop (the shooter reads her freeze). Antagonist (Adalemo/PEREGRINE) has on-page cost and personality.
-
-R2 continuity: Beat 2 recruits FOUR crew (Agwu, Boiler, Vox, Diallo); Rook is the fifth. Recruitment-beat sign-off is four messages (one per recruit). Beat numbering note: spine Beats 5 and 6 (The Complication and The Counter-Client) are compressed into one prose beat (the van negotiation), making the Bloom Quarter scene the sixth prose beat as written — the R2 bystander reference is to spine Beat 7. Beat 7 close: removed "counted Φ 8,000 in her head" (Kyle-arithmetic tic) — Rook's payment count is a Beat-14 ritual only.
-
-## §8 — Emotional Architecture
-
-**Rook's arc:** Opens treating the job as pure chess. Ohara's decision to publish — choosing principle over survival — forces Rook to recognize that not everything is transactional. Closes counting the money: she earned it, the job worked, and it cost her nothing she planned to spend. This is not a breakthrough. It is a crack.
-
-**The ensemble:** Each crew member is competent and wants to remain so. The job goes wrong in ways that require them to be *more* than competent. The finale is them discovering that the extra thing they needed was already there — they just had not been working together long enough to find it.
-
-**Thematic note:** The story is not about whether corporate power can be beaten. It is about what competent people do when they are in the middle of something bigger than the job they agreed to, and they are already committed.
-
-## §9 — World Context (GLMZ pillars)
-
-Relevant world facts for this story. No cross-reference to AMENDMENTS.md required — content is here.
-
-**Nanotechnology (SS-A17):** Axiom BioNanics is the Nano Triumvirate's Class II medical arm. The Bloom Quarter (Z4/Z5 seam, 31% Substrate) appears in Beat 7 — GLMZ's principal gray nano market. The Class V/Class II distinction is the plot engine: Class II = prescription medical; Class V = BANNED weaponized (Nano Accords Art. 7, possession = military response). Class V conviction means a military response, not a legal one.
-
-**VTOLs and aerial transport (SS-A32/A39):** VTOLs are the only legitimate aerial transit in GLMZ. The Lake Platform (§5b) is accessible by VTOL from the shore — standard approach. The maintenance VTOL the crew hijacks and the PEREGRINE VTOL are standard world infrastructure. Sky People (the wealthiest and most privileged class) live on aerostatic platforms above the city; Axiom BioNanics, as a Nano Triumvirate corp, operates in the Sky People tier. The magenta branding and altitude of their business interests are class signals.
-
-**No underwater communities (SS-A42):** There are no permanent human communities living beneath Lake Michigan. The deep lake has ruins (decommissioned corporate research installations from the 2060s–2200s) and one sealed black-site facility drawing power — not communities. The Lake Platform is a surface-level civic station on the lake, not an underwater installation. The lake is weather and setting, not society.
-
-**Present-day year:** 2226.
-
-## §10 — Brand Environment & Character Loadout {#SS-MxG-brands}
-
-**Rook Trilogy shared environment** — this section applies to MxG, NxR, and CxC.
-
-### Crew loadouts (canonical)
-
-| Character | Item | Brand + Model | Notes |
-|---|---|---|---|
-| Rook (Inkeri Saarinen) | Sidearm | TBD — gray zone / street custom | she doesn't advertise her hardware |
-| Scout (Remi Diallo) | ECT rig | Praxis NeoCortex Extend | minimum spec for reliable ghosting |
-| Scout | Crawler | **Gerald** — chassis TBD, needs a manufacturer | treat like a worn-in second body |
-| Vox | Channeling rig | archology-tier — Casque & Veil neural integration layer | the expensive visible part; the AI stable is the actual tool |
-| Agwu / Boiler | weapons | existing DB entries — gray zone reclaim tier | functional, no brand flash |
-
-### Natural insertion points
-
-Brands slip in when something is *used* or *seen* — not as inventory. The crew's gear comes up when it matters:
-- Scout surfaces from a crawl: her Shell's vacant eyes, the make/model of the crawler she was in when something happened
-- Rook pulls a weapon: the mechanism tells you what it is
-- Vox puts on the rig: the Casque & Veil tag on the neural sleeve; he paid for the advertising to stop but it never fully stops
-- Entering an archology lobby: one sentence of brand saturation is enough to establish the world; not every surface needs calling out
-
-### Consumerism texture
-
-MxG plays in the Axiom BioNanics end of GLMZ — archology-tier corpo territory. Contrast between:
-- **Inside the Veil (archology):** every surface is branded, ads inject via neuretics without asking; Rook's overlay never stops working; she knows the price of everything she sees and resents it
-- **Gray zone (Bloom Quarter, staging areas):** brand presence is reclaimed, modified, or hand-painted; Greymark Unseen and street custom dominate; the air feels different
-
-## Beat Coordination Index {#SS-MXG-COORD}
-
-> GENERATED by `ss --coordinate --slug <slug>`. Do not hand-edit — regenerated
-> on demand. This is the three-coordinate map: each beat's **meaning** (bible),
-> **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
-> Full record: `reports/coordination/MXG.coordination.json`.
-
-**Coverage:** 16/16 beats fully covered. Story-wide construction: temporal=linear, resolution=mixed, moral=ambivalent, ending=quiet, granularity=beat.
-
-**Gap counts:** UNSCORED=16
+## Beat Spine
+<!-- generated 2026-07-15T18:55:44.9774892Z from Beats table — edit via MCP beat tools -->
 
 ### Act One — The Job
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4745 | `019f00b0-d892-702d-96cb-690051709cda` | — | Establishes Rook's competence, wariness, and the corpor… | 2/arrival +subplot | 7764c | UNSCORED |
-| 4746 | `019f00b0-e180-7b32-84e1-891cd8b2418a` | — | Introduces Agwu as a capable ally and signals the profe… | 3/discovery | 14192c | UNSCORED |
-| 4747 | `019f00b0-ec7b-70f6-80ec-81a27efb2550` | — | Builds tension through patient surveillance, establishi… | 3/surveillance | 12071c | UNSCORED |
-| 4748 | `019f00b0-f606-7ec9-a460-d2f6750a52d3` | — | Reveals the crew's plan in operational detail, establis… | 4/negotiation | 8172c | UNSCORED |
-| 4749 | `019f00b1-0063-7b5b-8efc-0580b52b1960` | — | Turns the job's premise by revealing Ohara is both clie… | 5/confession +subplot,intertextual-touchpoint | 9708c | UNSCORED |
-| 4750 | `019f00b1-09c3-7304-a725-ef932a398abd` | — | Escalates danger by revealing a sophisticated, predicti… | 6/chase +intertextual-touchpoint | 10434c | UNSCORED |
+- B01 · Magenta & Gunmetal — Establishes Rook's competence, wariness, and the corporate-saturated world she moves through, grounding the reader in her perspective and the story's setting.
+- B02 · — — Introduces Agwu as a capable ally and signals the professional, transactional nature of the crew's relationships before the job begins.
+- B03 · — — Builds tension through patient surveillance, establishing Compound 7 as the target and Rook's disciplined, solitary methodology.
+- B04 · — — Reveals the crew's plan in operational detail, establishing each member's role and the specific vulnerabilities they intend to exploit.
+- B05 · — — Turns the job's premise by revealing Ohara is both client and cargo, escalating stakes and exposing the hidden complexity Rook has been working inside.
+- B06 · — — Escalates danger by revealing a sophisticated, predictive threat tracking the crew's digital residue, signaling they are outmatched in ways they don't yet understand.
 
 ### Act Two — The Escalation
+- B07 · — — Deepens the threat by revealing the pursuers are not chasing but herding, shifting the crew from reactive to trapped and raising the cost of Rook's earlier compromise.
+- B08 · — — Pays off Boiler's earlier reconnaissance by turning his bridge knowledge into the crew's tactical counter-move against PEREGRINE's encirclement.
+- B09 · — — Raises the stakes by revealing Ohara's deliberate, months-long sabotage of Axiom's data, making her irreplaceable and the crew's exposure permanent.
+- B10 · — — Delivers the act's crisis point as PEREGRINE closes in on the safehouse, converting accumulated tension into immediate physical threat.
+- B11 · — — Establishes PEREGRINE as a superior tactical threat by showing they read and neutralized the crew's contingency plan before it could execute, raising the stakes immediately.
+- B12 · — — Reveals Gault's betrayal and his own accounting of it, turning him from ally to cautionary figure while grounding the crew's vulnerability in institutional complicity rather than simple treachery.
 
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4905 | `019f11da-2c3c-7375-a6f1-f1b94eefdfeb` | — | Deepens the threat by revealing the pursuers are not ch… | 7/pursuit | 4554c | UNSCORED |
-| 4751 | `019f00b1-1405-70df-9c38-fb1f6c5dd9c1` | — | Pays off Boiler's earlier reconnaissance by turning his… | 8/evasion | 9159c | UNSCORED |
-| 4752 | `019f00b1-1d86-7d2a-aa10-106aaabd9c8c` | — | Raises the stakes by revealing Ohara's deliberate, mont… | 8/confession +subplot | 13818c | UNSCORED |
-| 4906 | `019f11da-608e-7382-a89a-d1a13b4fb867` | — | Delivers the act's crisis point as PEREGRINE closes in … | 9/ambush | 1802c | UNSCORED |
-| 4966 | `019f21af-204c-752c-b7e5-14cd25e63ba0` | — | Establishes PEREGRINE as a superior tactical threat by … | 9/confrontation +subplot | 3856c | UNSCORED |
-| 4754 | `019f00b1-2f8d-763a-9ff3-46a7b7f5d914` | — | Reveals Gault's betrayal and his own accounting of it, … | 5/betrayal | 7770c | UNSCORED |
-
-### Act Three — The Lake Pla
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4755 | `019f00b1-3973-7892-9ab5-3c633c905eff` | — | Escalates tension by staging the final approach to the … | 7/departure +intertextual-touchpoint | 8796c | UNSCORED |
-| 4907 | `019f11da-93fa-77dc-8e5a-8e06083d16aa` | — | Turns Rook's relationship to her crew by paying off her… | 8/approach +subplot | 1863c | UNSCORED |
-| 4757 | `019f00b1-59b6-7b78-937c-a1b5904f8460` | — | Delivers the assault's opening beats to establish each … | 9/confrontation | 17937c | UNSCORED |
-| 4758 | `019f00b1-62a0-7c7b-99e5-445de15a84e1` | — | Pays off the Gault betrayal by revealing the identical … | 3/exchange +subplot | 7041c | UNSCORED |
+### Act Three — The Lake Platform
+- B13 · — — Escalates tension by staging the final approach to the objective, using the hostile environment and visible enemy presence to make the crew's disadvantage concrete and physical.
+- B14 · — — Turns Rook's relationship to her crew by paying off her prior emotional withholding — she has told them the truth and they stayed, reframing the mission as chosen rather than transactional.
+- B15 · — — Delivers the assault's opening beats to establish each crew member's competence under pressure, converting the plan from abstraction into demonstrated capability.
+- B16 · — — Pays off the Gault betrayal by revealing the identical price Axiom paid him, forcing Rook to sit with the symmetry of complicity and the cost of a door.

@@ -104,9 +104,10 @@ Need: confront what the administrative framework cannot record.
 Flaw: processes everything as documentation even when documentation is the wrong tool.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: ba36c614446fc521eb5e93316dcad895eeb2f9529bb2da42e4cbf6abb3eb16c9 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.5117567Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:11.4759007Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Ren Vasquez's tremor and silence—a teacher witnessing something his institutional role forbids him to report—mirrors Yemina's own silencing by prior administrative action. Both are competent people rendered powerless by the system's architecture, not by external force.
 - **Temporal scheme**: linear
@@ -122,7 +123,7 @@ Flaw: processes everything as documentation even when documentation is the wrong
   - **Status Notice (official disposition letter)** (in-world administrative notice) — Yemina brings a single-page status notice to Chinwe Bramley stating that Kito's case remains open but he is not found. The notice is what the bureaucracy permits her to say; it contains almost nothing. Beat 23.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.5117567Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:11.4759007Z from Beats table — edit via MCP beat tools -->
 
 ### Part One — The Assignment
 - B01 · — — Establishes the Pilsen Veil as a living jurisdictional seam, grounding the world's corporate-contract logic and positioning Yemina as its native reader.

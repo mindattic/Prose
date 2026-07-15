@@ -77,9 +77,10 @@ Act 3 (Transmission): Arriving at the core. The membrane is thinnest where the t
 5. The camel-man contact: canon-locked unknown identity (SS-A21). Do not resolve.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 5f12af8096482e411f61e1486c18ad48247d3241a949688a0fb3b3905d6c9472 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7788413Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:56:03.1408113Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: The dog's parallel arc: a creature that arrives with Sasha, abandons her at the critical moment (beat 11), then reappears as a witness to her transmutation. Its presence/absence mirrors Sasha's own oscillation between isolation and connection.
 - **Temporal scheme**: nonlinear
@@ -97,7 +98,7 @@ Act 3 (Transmission): Arriving at the core. The membrane is thinnest where the t
   - **Halcyon Strategic Resources** (organization) — Named throughout beats 22-28 as the corporate entity running the perimeter, deploying asset recovery teams, and maintaining the false cover story of the resonance monitoring station. Halcyon is never quoted directly; it exists as operational fact—the institutional force that has turned the drilling into a secret, a credentialed operation, a thing that can be killed for if you know too much. Sasha takes a credential off a Halcyon body at beat 26.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7788413Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:56:03.1408113Z from Beats table — edit via MCP beat tools -->
 
 ### Act One — Sasha in Motion
 - B01 · — — Establishes Sasha as a professional operative by showing her competence, self-containment, and the precise terms she sets for her own engagement.

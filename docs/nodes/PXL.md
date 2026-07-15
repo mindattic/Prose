@@ -77,9 +77,10 @@ Her neighbor across the hall, something wrapped in cloth under his arm. She asks
 - Competence is quiet and total. Prose shows hands, decisions, results.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: cbf4e7b5ba4fb0da99e866f65543f7d0ca9a99591fa75522cfda4bcdcea55b14 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7575567Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:52.2892690Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: The drone — a cheap consumer unit she scavenges in Beat 3 — develops a recurring calibration fault she keeps patching with improvised fixes. Each patch holds just long enough. By Beat 12 she realizes she stopped patching it and it stopped failing: the fault corrected itself through use. This mirrors her own adaptation arc without naming it.
 - **Temporal scheme**: frame
@@ -97,7 +98,7 @@ Her neighbor across the hall, something wrapped in cloth under his arm. She asks
   - **aerostatic_architecture** (document) — She studied this document before leaving Iowa — in Beat 5, sorting through what was taken from her, she finds a dog-eared printout of three pages from it folded inside her boot lining. It survived the strip because it was paper.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7575567Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:52.2892690Z from Beats table — edit via MCP beat tools -->
 
 ### Act One — Arrival and Loss
 - B01 · — — Establishes the protagonist's exceptional competence and method before immediately undercutting her with an unforeseen failure, creating the story's inciting wound.

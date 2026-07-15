@@ -97,9 +97,10 @@ Trim, operational, close to the math. Sentences move like load calculations—pr
 - Beat 24 plants the view from above → Beat 30 pays it off as the bloc comes down into the world it could always see.
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 1c3aa0d3c4699c4a8d1d3394267274b5f417f27706054c7fe578024dd7635818 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7154174Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:19.2221010Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Wen's grandson visits from the Gray Zone and argues the workshop should be abandoned — a younger generation who grew up among stripped blocs and salvage yards, for whom the machinery is already history. This mirrors the A-plot's question (what do you owe to what cannot move?) in the key of inheritance rather than community: Wen's refusal is tested not by a vote but by the one person whose future the workshop was implicitly meant to serve.
 - **Temporal scheme**: linear
@@ -116,7 +117,7 @@ Trim, operational, close to the math. Sentences move like load calculations—pr
   - **Wren Caerglas** (quote) — A Caerglas line — something about weight being the only honest measure of what a place meant to you — is painted in small letters on the interior of the eigenlift core housing, put there by a previous engineer; Teo reads it without thinking about it most mornings, and notices it consciously for the first time on the morning Ashgrave's technicians arrive to take the drivers.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7154174Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:19.2221010Z from Beats table — edit via MCP beat tools -->
 
 ### Ballast
 - B01 · Teo at the eigenlift core — The frame's coherence is failing; the numbers say jettison starts in forty-two days. Teo reads the stress distribution and marks the first load-bearing wall as candidate for cut.

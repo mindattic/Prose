@@ -89,9 +89,10 @@ Species=AI. MEO orbit. Satellite inactive since 2187 by official record. Reveale
 5. No Sasha Võ in this story (migrated to SRZR, SS-A20).
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 4e19aaf5f80fe75f931fa0718cea45f58cfa015e7962f61ddfb0f5a68e0702e0 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7720706Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:59.5073324Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Siosaia Tuivaga's parallel arc: a person who looked too hard at the number, withdrew from Cordon Freight, and chose silence over knowledge. Her decision to hand Elias the number is an act of deferred witness.
 - **Temporal scheme**: linear
@@ -109,7 +110,7 @@ Species=AI. MEO orbit. Satellite inactive since 2187 by official record. Reveale
   - **The Blind Men and the Elephant (parable, unnamed source)** (oral-tradition) — Elias quotes it to Sparrow as an analogy for their different observational angles (beat 42); Sparrow rejects the metaphor as a bandwidth problem, not a blindness problem; the parable is Elias's attempt at shared language, which Sparrow receives as data, marking the gulf between their cognition
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7720706Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:59.5073324Z from Beats table — edit via MCP beat tools -->
 
 ### Act One — Elias Alone
 - B01 · Sparrow — Establishes Elias as a procedural, detail-oriented man whose past bureaucratic negligence quietly surfaces through a routine work order, seeding the central moral tension.

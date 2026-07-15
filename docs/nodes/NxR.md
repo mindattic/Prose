@@ -1,16 +1,49 @@
----
-node: NxR
-title: Neon & Rust
-kind: story
-universe: GLMZ
-status: planned
-register: HEIST
-previous: MxG
-db-id: 019f06da-16ac-722b-bbff-002b7718f935
-updated: 2026-07-04
+﻿## Voice & Prose Laws (SS-A31 + Register — MANDATORY)
+
+### Accessible Prose (SS-A31)
+- Sentences: short-to-medium. Break any clause over ~20 words.
+- Narration uses contractions naturally: she's, it wasn't, couldn't, didn't.
+- Vocabulary: Anglo-Saxon base words preferred. Avoid Latinate abstractions.
+- No stacked subordinate clauses.
+- No pseudo-profundity. Metaphors survive literal scrutiny.
+- No filler-wit.
+
+### Rook's Register — HEIST (Lower Temperature)
+Close-third on Rook. Same register as MxG — observational, dry, tactical, problems as chess problems — but the **emotional temperature is lower** because she came back for a reason she hasn't fully audited yet, and she knows it.
+
+**What her narration notices:** sightlines, load-bearing elements (architectural and human), the gap between what people say and what they're positioned to do. She tracks the room like a supply chain. The wry tactical distance holds.
+
+**The rust framing applies to her too.** The maintenance protocol she built to keep operations clean is the same thing she let degrade once because the job made it convenient. This is not stated; it is the engine.
+
+### BANNED in this strand
+- Psionics, schisms, 5D. Pure tech and cyberware.
+- Kyle's register: arithmetic/filing/parliament/geometry. Rook thinks in chess (positions, leverage, tempo, exposure).
+- Feelings named directly. Affect is processed as tactical data.
+- Cleaning up Rook's arc. The crack deepens; it does not close.
+
 ---
 
-# Neon & Rust — Node Bible
+## World Texture (GLMZ — ground every scene here)
+
+**Sky communities (SS-A32/A33):** Aeropods → Aeropolis → Drifters. Altitude = class axis. The Low (30–320m ungoverned). "Little birdies"/"Harpies" = sky-dweller insults from below. Kite Rig (descend), Ascent Bloom (ascend).
+
+**Underwater communities:** Hermetic domes on the lakebed + repurposed port infrastructure. "Fishmen"/"Mermaids" = outsider insults. No Arcturus Civil Security below surface.
+
+**Micro-schisms:** Pebble clusters (~2 inches) floating in complex orbits around apparently nothing — street corners, gutters. Treated like weather. Nobody explains them. Some alleys have had the same cluster for years.
+
+**Nanite gutters (stopped):** Sanitation nanites stopped coming around. Streets grimier. Iridescent film in neglected zones. Corpo-adjacent districts still pristine — class marker. In Z2 infrastructure district, the contrast is especially stark: the neon is up, the gutters haven't been touched in three years.
+
+**Job vocabulary:** Rider/Channeler (Shell; Husk). Splicer. Tunneler. Scavs (lowercase). Street terms: riding, injecting, slotting, haunting, ghosting.
+
+**Infrastructure:** Pulse (Mach 6 vacuum tube). No trains. VTOLs = Tier 3+. No police — Arcturus Civil Security only.
+
+**Color language (this strand):** Neon = lit surface, bounces off the lake, looks like warmth, means nothing. Rust = the infrastructure beneath, held together by deferred maintenance and habit. Both appear throughout. The title earns itself.
+
+**Φ** = QUANTA (never phi). Iowan Behemoths = machines, not life.
+
+---
+
+# Neon & Rust — Strand Bible
 
 ## §0 — Logline
 
@@ -26,97 +59,65 @@ Direct sequel to **Magenta & Gunmetal** (MxG). Everything that went wrong in MxG
 
 Close-third POV on Rook. The wry tactical distance holds; the emotional temperature is lower because Rook came back for a reason she has not fully audited yet.
 
-**Color language:** **Neon** is the light that makes the GLMZ legible at night — it coats every surface worth looking at, it bounces off the lake, it means nothing and looks like everything. **Rust** is what the infrastructure becomes when you stop maintaining it. The two colors appear throughout the story: the neon of Z2 signage rotting on their mounting brackets, the rust-bloom on the partition lock, Stave's hands. The title earns itself the same way MxG's did — as a description of the world the crew lives in.
-
 ## §2 — Premise
 
-Seun Adalemo survived the lake. PEREGRINE did not dissolve — it reconstituted under new paper, funded not by Axiom BioNanics (who is now hemorrhaging litigation and stock value) but by **Helix Biosystems** — a Nano Triumvirate competitor that moved to acquire Axiom's destabilized Class V research division before the dust settled. Adalemo's new contract is not recovery. It is acquisition — specifically, something Ohara is carrying that Helix still needs, and that the Class V formula going public did not give them.
+Seun Adalemo survived the lake. PEREGRINE reconstituted under new paper, funded by a Nano Triumvirate competitor moving to acquire Axiom's destabilized Class V research division. Adalemo's new contract is not recovery. It is acquisition — specifically, Ohara.
 
-Rook finds out because Ohara tells her. Not through a cutout. Not through Gault's old network. Directly. One message to a dead-drop Ohara should not have known Rook was still checking.
-
-Before contracting Rook through MxG, Ohara built her own research file on every freelancer she was trusting with her life. The dead-drop address was in that file — found the same way she found everything else Rook thought was private, through methodical pre-job intelligence work. Ohara kept it after MxG was done, which is not the same as planning to use it. The anomaly is not that she knew. It is the escalation implied by using it directly — no cutout, no layer of deniability between them — which tells Rook the situation inside Ohara's head is worse than something a cutout could solve.
+Rook finds out because Ohara tells her. Directly. One message to a dead-drop Ohara should not have known Rook was still checking.
 
 The note reads: **There is a second thing in my head.**
 
 ## §3 — The Problem
 
-Eighteen months before MxG, Helix Biosystems ran a relocation operation out of Old Harbor — a barge manifest nobody signed, transporting twenty-one registered Reads under cover of a corporate relocation order. Ohara was the Class II research lead processing the intake. She understood what the order meant. She walked twenty-one people off the barge and hid them, then encoded their names and locations into a cognitive partition in her own neuretics, locked it behind a passphrase she then deliberately forgot. The partition was not encrypted against Axiom. She locked it against herself — because knowing where those twenty-one people were, and carrying sole responsibility for keeping them hidden, was a weight she could not hold consciously and still function. She made the partition and erased the key.
+When Ohara encoded the Class V formula for broadcast, she realized she had inadvertently archived something else — a cognitive partition she had created eighteen months ago and locked behind a neuretics passphrase she no longer remembers. She knows it exists. She cannot access it. She does not know what it contains, but her working theory is bad enough that she cannot let Adalemo's people take her intact.
 
-Now PEREGRINE is back, and what Helix wants is not Ohara's Class V pathway knowledge (that went public in MxG). What they want is the survivor list. The twenty-one registered Reads are the asset. The Class V formula refines a process; the neural substrate to run it at scale comes from registered Reads. The partition is the acquisition target.
+**The hardware problem:** The partition is Atlas-grade neuretics — eleven years old, two generations behind, running on firmware not patched since 2221. The same year Axiom laid off the network maintenance team that would have closed the camera window in MxG. The lock is rusting shut in real time. They do not have the luxury of a careful approach.
 
-Ohara knows the partition exists. She cannot access it. The theory about what it contains is not a theory — it is what she knows she put there and cannot reach. The reason she cannot let Adalemo's people take her intact is not abstract. It is twenty-one specific people.
+**The job:** Crack the partition before PEREGRINE reaches Ohara. Then make a decision about what's inside — release it, or destroy it — before anyone else makes it for them.
 
-**The hardware problem:** The partition is Atlas-grade neuretics — eleven years old, two generations behind current standard, running on firmware that has not been patched since 2221. The same year Axiom laid off the network maintenance team that would have closed the camera window in MxG. The GLMZ runs on things that should have been fixed and weren't, and Ohara's own head is no different. The lock is rusting shut in real time — every week it sits untouched, the encoded data becomes less recoverable. They do not have the luxury of a careful approach. They have a window, and the window is closing the way everything in the GLMZ closes: not all at once, but incrementally, until one day it is gone.
-
-**The job:** Crack the partition before PEREGRINE reaches Ohara. Then make a decision about what's inside — move the twenty-one, or keep them hidden — before anyone else makes it for them.
-
-**The surgeon:** The only person in the GLMZ who has cracked a self-locked Atlas-grade partition from the outside goes by **Stave**. Neuretics forensic specialist, retired involuntarily, currently doing something quiet in the Z2 infrastructure district that they insist is not hiding. It is hiding. The procedure they did once before went wrong because the hardware was already degrading when they started, and they did not account for the rate. They have been accounting for it in their head ever since. They are not enthusiastic about a repeat. They are also the only person alive who has thought about this specific failure mode longer than Ohara has.
+**The surgeon:** The only person in the GLMZ who has cracked a self-locked Atlas-grade partition from the outside goes by **Stave**. Neuretics forensic specialist, retired involuntarily, currently doing something quiet in the Z2 infrastructure district that they insist is not hiding. The prior crack went wrong because the hardware was already degrading when they started. They have been accounting for it since. They are not enthusiastic about a repeat.
 
 ## §4 — The Crew
 
 ### Inkeri Saarinen ("Rook") — POV
-Returns. She broke her own rule. The note made it easy and that is exactly what bothers her about it — the maintenance protocol she built to keep operations clean is the same thing she let degrade once because the job made it convenient. The rust framing applies to her too, and she knows it.
+Returns. She broke her own rule. The note made it easy and that is exactly what bothers her about it. Her maintenance protocol degraded once because convenience allowed it, and now she is here.
 
-Her rule was: no repeat clients, no repeat crew. She agreed to this before fully thinking through why. Now she is here.
-
-**Wound:** Still present from MxG. Not fixed by a single job that went right. Partial opening only.
+**Wound:** Still present from MxG. Not fixed. Partial opening only.
 
 ### Tem Okafor ("Vox")
-Running four channels instead of six. The graze wound from the safehouse breach healed. The bandwidth did not fully come back. Vox has been quietly rebuilding the agent network from scratch using older, slower methods — gray-market firmware, deprecated protocols, tools the current security infrastructure does not bother scanning for because nobody uses them anymore. Rust as tactical advantage: the rotting edge of the GLMZ tech ecosystem is precisely what PEREGRINE's signal apparatus is not watching.
-
-Quieter than in MxG. Has stopped explaining why.
+Running four channels instead of six. The graze wound healed; the bandwidth did not fully come back. Rebuilding using older, slower methods — gray-market firmware, deprecated protocols, tools current security infrastructure doesn't bother scanning for because nobody uses them anymore. Rust as tactical advantage. Quieter than in MxG. Has stopped explaining why.
 
 ### Blessing Agwu ("Lace")
-Knows something about the partition. She has known since the safe house in MxG. Rook has been waiting for Lace to say it. Lace has not said it. This is the story where it surfaces. The rust framing makes her silence feel less like a secret and more like a structural problem — weight held too long in the wrong place, load-bearing in ways nobody mapped.
-
-**What she observed (MxG Beat 9 — The Safe House):** When Ohara briefed the crew on her neuretics — explaining how the Class V formula was encoded — Lace's facial cyberware logged a micro-tremor consistent with active neuretics-access suppression: Ohara's ocular focus shifted inward for less than a quarter-second, then was controlled back. The account of the formula was precise and complete. The account of her own implant was over-controlled — the specific over-control of someone touching a live wire and immediately choosing not to touch it again. A social engineer reads over-control the same way they read deception: as something being actively managed, not disclosed.
-
-**What Lace inferred:** Ohara's neuretics contained a second compartment she was not accessing during the briefing. Not a deleted file — something live and deliberately unreached. Lace did not raise it. She waited for Ohara to name it, and Ohara never did, and Lace carried it into NxR.
+Knows something about the partition. Has known since the safe house in MxG. Rook has been waiting. Lace has not said it. This strand is where it surfaces.
 
 ### Mikkeli Väinämöinen ("Boiler")
-Present for Act One and Act Four. In between, he is doing something with a building. When asked, he says the building has been scheduled for demolition for six years and nobody has gotten around to it, and that this is relevant. It is.
+Present for Act One and Act Four. In between, he is doing something with a building scheduled for demolition for six years that nobody has gotten around to. It is relevant.
 
-**The building's function (author note — Lock 8):** Six years in administrative limbo means no current occupancy record, no active utility feeds in the civic grid, and condemned status pending a demolition authorization that was never issued. PEREGRINE's search infrastructure runs off registered housing and utility data; a structure the GLMZ civic grid classifies as unoccupied and uninhabitable does not appear on that radius. The building is the off-grid relocation point for some or all of the twenty-one Reads. Boiler has known this since he moved in and has been making it incrementally more viable for two years without telling anyone why. The payoff in Beat 13: the decision about the twenty-one Reads has a physical solution, and Boiler has been building it. The building is where they can go.
-
-### Remi Diallo ("Scout")
-Perimeter role during the procedure — holds the outside while Stave works the inside. Eyes closed for the most important moments, same as the Lake Platform. Still does not name the drones.
+### Remi Nakamura-Diallo ("Scout")
+Perimeter role during the procedure. Eyes closed for the most important moments, same as the Lake Platform. Still does not name the drones.
 
 ### Stave — the new fifth
-Neuretics forensic specialist. The handle has no story attached to it. Works Z2 infrastructure, officially maintenance contracts, actually nothing. The debt to the gray-market data broker (Act Two) has been accruing for two years in ways that are not financial — Stave has been doing work they have been trying to stop doing, and they have not been able to find a clean way out. Rook pays the debt. Stave owes her something they did not agree to owe.
+Neuretics forensic specialist. Handle has no story attached. Works Z2 infrastructure, officially maintenance contracts, actually hiding. The debt to a gray-market data broker has been accruing for two years in ways that are not financial. Rook pays the debt. Stave owes her something they did not agree to owe.
 
-**Voice:** Precise, dry, unsentimental about what hardware failure means in a human skull. Does not catastrophize because they have already catalogued every catastrophic outcome and done the math. The calm is real; it is not performed.
+**Voice:** Precise, dry, unsentimental about what hardware failure means in a human skull. Does not catastrophize because they have already catalogued every catastrophic outcome. The calm is real; it is not performed.
 
-**Wound:** The prior partition crack. It went wrong because the hardware was degrading faster than their model predicted. A person lost something that did not come back. Stave does not talk about this. They think about it continuously.
+**Wound:** The prior partition crack. It went wrong because the hardware was degrading faster than their model predicted. A person lost something that did not come back. Stave thinks about this continuously.
 
-### Dr. Halina Soraya ("Ohara")
-47. Class II research lead, no longer employed by anyone. Living carefully since the Lake Platform. The dead-drop message was a calculated risk — she knew exactly what it cost to use it and sent it anyway, which means the situation inside her own head is worse than she could solve alone.
-
-Conscious and cooperative during the procedure. The specific calm of someone who has reviewed the steps until fear has nowhere to land. Not detached — present, and staying still.
+### Dr. Nadia Vasquez-Park ("Ohara")
+47. Class II research lead, no longer employed by anyone. Living carefully since the Lake Platform. Conscious and cooperative during the procedure. The specific calm of someone who has reviewed the steps until fear has nowhere to land.
 
 ### Seun Adalemo
-Survived the lake. New contract, new funding, not recovered — repositioned. Makes an appearance in Act Four. Not only an antagonist.
-
-**What he brings to Act Four (author note — Lock 6):** Adalemo arrives having independently traced two of the twenty-one Reads — PEREGRINE's advance surveillance before the crew secured the procedure location gave him partial list data, enough to identify two names. He arrives to propose a negotiated partial surrender: those two names handed to Helix in exchange for clear exit terms for the crew and Ohara. He is still serving his contract. The encounter is "not only an antagonist" because the logic of the proposal requires him to say what he is actually asking — not an intelligence exchange, not data transfer, but delivering two people to The Marrow. The information he brings (PEREGRINE already has two names and Helix is moving on them now) changes the geometry of the Beat 12 decision: the choice is no longer theoretical, and the window is already smaller than the crew thought. Adalemo survives the story. The account between him and the crew is not settled here; that is CxC's opening condition.
+Survived the lake. New contract, new funding, not recovered — repositioned. Appears in Act Four. Not only an antagonist.
 
 ## §5 — Structure
 
-### Act One — The Booking
-Rook reassembles around a job with no payment structure, no client chain, and no defined endpoint. The crew knows they are doing it anyway. The neon is everywhere — the GLMZ at night, all lit surface and no warmth — and underneath it everything is older than it looks and held together by deferred maintenance and habit. Nobody says out loud that they came back. Nobody has to.
+**Act One — The Booking:** Rook reassembles around a job with no payment structure, no client chain, and no defined endpoint. Nobody says out loud they came back. Nobody has to.
 
-### Act Two — The Surgeon
-Finding Stave means going into the Z2 infrastructure district, where the neon thins out and the rust shows through. Stave is in debt to a gray-market data broker — the debt is old, the interest is not financial, and the work Stave has been doing under it is the kind they've been trying to stop. Rook pays the debt. The transaction costs something she did not budget for. Stave owes her, which neither of them is comfortable with.
+**Act Two — The Surgeon:** Finding Stave means going into Z2 where the neon thins and the rust shows through. The broker's debt: old, the interest not financial. Rook pays it. The transaction costs something she did not budget for.
 
-### Act Three — The Procedure
-The partition crack runs against a closing window — the hardware degrading in real time, Stave working from outside, Ohara conscious and still, PEREGRINE closing the distance. Lace manages a building full of people who do not know what is happening in the basement. Scout holds the perimeter.
+**Act Three — The Procedure:** The partition crack runs against a closing window — hardware degrading in real time, Stave working from outside, Ohara holding still, PEREGRINE closing. What is in the partition when it opens is not what Ohara theorized. It is older. She locked it to protect herself from it, not to protect it from Axiom.
 
-When the partition opens, the contents are what Ohara put there — but facing them again is different from knowing they existed. She encoded twenty-one lives into the partition and then locked herself out. What she has to confront is not a surprise. It is a weight she chose to set down and now has to pick back up.
-
-She did not lock it to protect it from Axiom.
-
-She locked it to protect herself from it.
-
-### Act Four — The Accounting
-The decision gets made, with consequences that cannot be filed away. Adalemo appears — not only as antagonist. Boiler's building is the operational solution the decision requires: it is where relocation of some or all of the twenty-one Reads becomes physically possible, a gap in the civic record that PEREGRINE's search infrastructure does not cover. The final scene is Rook at a different diner, a different window, a different number to count. Neon off the lake at night, doing what neon does: reflect and mean nothing and look like everything.
+**Act Four — The Accounting:** The decision gets made, with consequences that cannot be filed away. Adalemo appears — not only as antagonist. Final scene: Rook at a different diner, a different window, a different number to count. Neon off the lake at night.
 
 ## §6 — Beat Spine (14-beat outline)
 
@@ -124,238 +125,92 @@ The decision gets made, with consequences that cannot be filed away. Adalemo app
 |---|---|---|
 | 1 | **The Message** | Rook reads the dead-drop note; processes that Ohara used a contact point that should not exist; decides before she finishes the sentence |
 | 2 | **Assembly** | Rook finds the crew; nobody asks how she got their current address; everyone's reason for coming back is different and nobody names it |
-| 3 | **Ohara's Briefing** | Full scope — the partition, the twenty-one, the hardware degradation timeline, the stakes if PEREGRINE gets there first; the window is weeks, possibly less |
-| 4 | **Vox's Read** | Four-channel network sweep; PEREGRINE's new paper and Helix Biosystems funding identified; the competitor is moving fast; the window is shorter than Ohara estimated |
-| 5 | **Into Z2** | The infrastructure district; the neon thins; the rust shows; Stave's location identified by Scout's crawlers; the gray-market broker's building is load-bearing to the approach |
-| 6 | **The Debt** | Rook finds Stave; the broker situation explained; the payment negotiated; Stave agrees under terms that cost Rook something she did not price in |
-| 7 | **Stave's Condition** | Stave explains the prior crack — what went wrong, what they have been accounting for since; the rate of degradation, the point of no return; the procedure is survivable, probably |
-| 8 | **Lace Surfaces** | What Lace has known since the safe house comes out; the crew's position on the board changes; the thing the story has been carrying puts weight on a different point |
-| 9 | **The Setup** | Location secured; Ohara prepped; Stave's equipment deployed; PEREGRINE's approach vector established; Scout jacks in and goes quiet |
-| 10 | **PEREGRINE Closes** | Vox flags the approach; the window compresses; the procedure has to run at the wrong pace or not at all; something external fails at the worst moment |
-| 11 | **The Procedure** | Stave works the partition from outside; Ohara holds still while the lock degrades in real time; the open comes correctly — and the weight of what she encoded lands in full |
-| 12 | **The Contents** | Twenty-one names and locations; what it means that Helix wants them; the decision that has to be made before PEREGRINE gets through the door |
-| 13 | **The Decision** | Made with full information and no clean option; Adalemo arrives; the scene is not what anyone planned for; Boiler's building becomes relevant |
+| 3 | **Ohara's Briefing** | Full scope — the partition, the hardware degradation timeline, the working theory; window is weeks, possibly less |
+| 4 | **Vox's Read** | Four-channel sweep; PEREGRINE's new paper and funder identified; the window is shorter than Ohara estimated |
+| 5 | **Into Z2** | The infrastructure district; the neon thins; the rust shows; Stave's location identified |
+| 6 | **The Debt** | Rook finds Stave; the broker situation; the payment negotiated; costs her something she did not price in |
+| 7 | **Stave's Condition** | The prior crack — what went wrong, the rate of degradation, the point of no return; probably survivable |
+| 8 | **Lace Surfaces** | What Lace has known since MxG's safe house comes out; the crew's position on the board changes |
+| 9 | **The Setup** | Location secured; Ohara prepped; Stave's equipment deployed; PEREGRINE's approach vector established |
+| 10 | **PEREGRINE Closes** | Vox flags the approach; the window compresses; the procedure runs at the wrong pace or not at all |
+| 11 | **The Procedure** | Stave works from outside; Ohara holds still; the open comes wrong — older data, locked by Ohara's own hand |
+| 12 | **The Contents** | What was inside; what it means; the decision that must be made before PEREGRINE gets through the door |
+| 13 | **The Decision** | Made with full information and no clean option; Adalemo arrives; Boiler's building becomes relevant |
 | 14 | **The Count** | Rook at a different diner; the neon off the lake; the number is different this time; the lake is the same |
 
 ## §7 — Locks (binding)
 
-1. **Ohara locked the partition herself.** The reveal is not Axiom, not PEREGRINE, not a third party. She did it. The story is about whether you trust the version of yourself that did the hiding.
-2. **The hardware degradation is real.** The window closes whether or not the crew moves fast enough. The rust is not a metaphor that conveniently stalls — it is the actual antagonistic pressure of the second half.
-3. **Lace's secret surfaces in this story.** Whatever she has known since MxG's safe house, it comes out here. Do not defer again.
-4. **Stave's prior crack failure is not resolved.** It informs everything Stave does. It is not redeemed in a single procedure. The result was not clean then; the result here is not guaranteed to be clean now.
-5. **Vox is at four channels.** Do not restore the sixth. The wound healed; the bandwidth did not. This is not fixed in this story.
-6. **Adalemo is not only the antagonist in Act Four.** The final encounter with Adalemo contains information or a decision that cannot be filed under "enemy neutralized."
-7. **Rook's rule is addressed, not resolved.** She came back. She knows why that bothers her. She does not finish processing it in this story. The crack deepens; it does not close.
-8. **Boiler's building is load-bearing to the resolution.** When he says the demolition delay is relevant, he is correct. It is not just color.
-9. **The color language earns itself.** Neon appears in at least three beats before the finale — the lit surface, the warmth that is not warmth. Rust appears as contrast — the degrading lock, Stave's hands, the Z2 infrastructure. The title describes the world.
-10. **The decision in Act Four has consequences that cannot be filed away.** No clean resolution. No filing it under "job complete." Something changes and stays changed.
+1. **No magic, psionics, or schism content.** Pure tech, cyberware, hardware failure.
+2. **Ohara locked the partition herself.** The reveal is not Axiom, not PEREGRINE, not a third party. She did it.
+3. **The hardware degradation is real.** The window closes whether or not the crew moves fast enough.
+4. **Lace's secret surfaces in this strand.** Whatever she has known since MxG's safe house, it comes out here.
+5. **Stave's prior crack failure is not resolved.** It informs everything Stave does. Not redeemed in a single procedure.
+6. **Vox is at four channels.** Do not restore the sixth. The wound healed; the bandwidth did not.
+7. **Adalemo is not only the antagonist in Act Four.** The final encounter contains something that cannot be filed under "enemy neutralized."
+8. **Rook's rule is addressed, not resolved.** She came back. She knows why that bothers her. It does not finish processing.
+9. **Boiler's building is load-bearing to the resolution.** It is not just color.
+10. **The color language earns itself.** Neon in at least three beats before the finale. Rust as contrast.
+11. **The decision in Act Four has consequences that cannot be filed away.** Something changes and stays changed.
 
 ## §8 — Emotional Architecture
 
-**Rook's arc:** She came back because the note made it easy. That is the problem. Her maintenance protocol — the rule that kept her clean — degraded once because convenience allowed it, and now she is here for a second job with the same crew against her own stated design. The story does not fix this. It makes her look at it directly. The final diner scene is her at a different window with a different number, and what is different is not just the amount.
+**Rook's arc:** She came back because the note made it easy. That is the problem. Her maintenance protocol degraded once because convenience allowed it. The strand does not fix this. It makes her look at it directly. The final diner scene is her at a different window with a different number, and what is different is not just the amount.
 
 **Thematic through-line:** *Magenta & Gunmetal* was about a clean job complicated by information withheld by others. *Neon & Rust* is about what happens when the information is withheld from yourself — and whether you trust the version of yourself that did the hiding. The rust is the same mechanism applied inward: Ohara's partition, Rook's rule, Vox's bandwidth, Lace's silence. Everything that breaks in this story was already degrading. Nobody performed the maintenance.
 
-**The ensemble:** The crew's second job together is harder than the first not because the opposition is stronger but because the crew is more known to each other. Competence is still the baseline. The extra thing required is different this time.
+<!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 947597eb5428f832f7c5ae7b4437ad448c1421b897437f413dbce3534cee61c1 -->
 
-## §10 — Rook Trilogy Arc (SS-A26)
+## Structural Blueprint
+<!-- generated 2026-07-15T18:55:48.6873126Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
-NxR is the middle act of a three-story arc. The full structure:
+- **Subplot**: Boiler's four-month stewardship of a condemned building parallels Rook's deferred maintenance of her own operational protocols. Both involve load-bearing structures held together by deliberate choice rather than official care; both culminate in a controlled structural decision under pressure.
+- **Temporal scheme**: linear
+- **Resolution**: mixed
+- **Moral polarity**: ambivalent
+- **Ending**: quiet, no epilogue
+- **Form device**: inventory-as-narrative
+- **Escalation**: 26-beat arc, peak 10/10 at beat 14
+- **Intertextual anchors**:
+  - **Old Harbor relocation rolls** (civic document) — Vox intercepts a PEREGRINE query against the rolls at 0300, searching for a name that returns no delivery mark. The rolls are referenced as a cold archive, two years out of active use, which Vox's Read detects as anomalous intelligence interest.
+  - **Axiom Class V research division** (corporate entity/research archive) — Ohara's briefing cites it as the source of the partition's Atlas-grade neuretics rig and the formula she encoded. The division's folding is explicitly tied to maintenance failure (the network team laid off, allowing the camera window vulnerability in MxG).
+  - **municipal demolition order (six years outstanding)** (civic record) — Boiler's building is defined by its status in this order—condemned but never finished, which allows him to wire the stairwell junction without detection. The order is referenced as a form of infrastructure deferred so long it becomes invisible.
+  - **4.1 broadcast protocol (deprecated firmware)** (technical specification) — Vox identifies the gray-market firmware Stave uses as running the old protocol, no longer monitored by modern security infrastructure because it was retired when the municipal mesh standardized. The protocol is cited as a tactical advantage precisely because it was forgotten.
+  - **atmospheric processor rerouting (2221)** (municipal infrastructure event) — Mentioned in the final beat as the event that removed the diner's sign. It is cited as a historical marker of the city's ongoing deferred maintenance, tying the personal to the structural.
 
-| Story | NodeCode | Job | What Helix needed |
-|---|---|---|---|
-| Magenta & Gunmetal | MxG | Extract Soraya from Axiom | Get the Class V researcher free of Axiom's control for a clean acquisition |
-| **Neon & Rust** | **NxR** | Crack the partition | Retrieve the survivor list: twenty-one registered Reads Ohara hid from the Old Harbor harvest |
-| Crimson & Chrome | CxC | Loop closes | — |
+## Beat Spine
+<!-- generated 2026-07-15T18:55:48.6873126Z from Beats table — edit via MCP beat tools -->
 
-**Helix Biosystems** is the Nano Triumvirate competitor that funded PEREGRINE's reconstitution. The Class V formula going public (MxG) was their win, not Axiom's loss — it freed the pathway from Axiom's IP and let Helix develop it without liability. What they still need is neural substrate to run their industrial-scale Class V process. That substrate comes from registered Reads. The survivor list is not incidental — it is the product.
-
-**The Marrow** is Helix's body-bank operation: an industrial facility that processes registered Reads (neuretics-capable people the GLMZ logs) into Class V-compatible neural substrate. The phrase "relocation order" on a Helix-adjacent manifest is cover language. The Old Harbor operation was a harvest that Ohara interrupted.
-
-**Anneke Oyelowo** is Helix's program director and Rook's mirror — the antagonist of CxC, introduced in the trilogy's final arc. She does not appear in NxR by name, but her operation is what Adalemo is serving and what the partition crack surfaces.
-
-**The trilogy's moral spine:** Ohara walked twenty-one registered Reads off the Old Harbor barge and hid them. NxR is the story where that decision — buried in neuretics firmware for eighteen months — has to be faced and acted on. The partition doesn't open to a surprise. It opens to a weight.
-
-## §11 — World Context
-
-Brief notes on world canon directly relevant to NxR. Full definitions in BIBLE.md and the amendments cited.
-
-**Vertical class axis (SS-A32/A33/A42):** The GLMZ runs along a vertical axis. Sky People — aeroplex and float-district residents — are the wealthiest and most privileged class; altitude is an amenity and a political statement. Z2 (where Stave operates) is a ground-level infrastructure district; neon coverage is thinner, rust more visible. The Low (30–320m ungoverned airspace band) is the transit corridor for gray-market vertical movement. None of this is plot-critical for NxR, but Z2's surface-level texture and the contrast with the lit upper city is built into the color language of the story.
-
-**No underwater communities (SS-A42):** The lake references in this story (Adalemo surviving the lake, the final diner looking out at the neon on the water) are geographic, not communal. There are no permanent human communities below Lake Michigan. What is on the lakebed is ruins, salvage operations, and one sealed black site. The lake is backdrop, not setting.
-
-**Neuretics forensics vs. ECT/Ghosting:** The partition crack in NxR is a neuretics forensics procedure — physical hardware work on Ohara's implant from the outside. It is not remote consciousness projection (ECT / eigenstate conscience transfer, SS-LAW-26). Ghosts operate via ECT into external frames; Stave is doing neuretics surgery on the hardware inside a living person's skull. Different discipline, same technology stack. The Atlas-grade implant is the physical substrate; the partition is a software/firmware-level encrypted enclosure within it.
-
-## §9 — The Parallel Writing Experiment
-
-> **RESOLVED (2026-06-27).** The experiment concluded: the Claude node (NRSTC) was carried
-> through the Character-Doctrine revision to **87.7%** and promoted to the canonical **NxR**
-> node. The Qwen twin (NRSTQ) was **deleted**. The section below is retained as the record of
-> how the experiment was run. Its central finding stands: neither raw output used the canonical
-> crew, because Stave/Adalemo were unseeded and the returning crew lacked voice depth — fixed by
-> [docs/CHARACTER.md](../CHARACTER.md).
-
-NxR is the first story written simultaneously by two different LLM writers using the same bible. The experiment tests how model architecture and training affect narrative voice, structural choices, and world-grounding when the plot outline, character rules, and canon locks are identical.
-
-### The Two Writers
-
-| Node | Code | DB ID | Writer | Endpoint |
-|---|---|---|---|---|
-| Neon & Rust: Claude | NRSTC | `019f06da-16ac-722b-bbff-002b7718f935` | Claude Opus 4.8 | Anthropic API |
-| Neon & Rust: Qwen | NRSTQ | `019f06eb-2eaf-7c9b-b86e-8cead5f6ae9b` | Qwen2.5:32b-instruct | RunPod L40S proxy |
-
-Both used the **same beat synopses** (§6 above), the same literary rules injection, the same X-Ray context assembly, and the same ProseWriterRouter enrichment chain. The only variable is the generation endpoint.
-
-### RunPod Configuration
-
-GPU pod that ran NRSTQ:
-
-| Setting | Value |
-|---|---|
-| GPU | 1× L40S 48 GB |
-| Image | `ollama/ollama:latest` |
-| Port | 11434 (TCP, public) |
-| Env | `OLLAMA_HOST=0.0.0.0` |
-| Cost | ~$1.00/hr |
-| Model | `qwen2.5-32b-writer` (Modelfile from `qwen2.5:32b-instruct`, ctx 32768) |
-| Proxy URL | `https://ios3aii3ubt1po-11434.proxy.runpod.net` |
-
-**Model setup in pod terminal:**
-```bash
-ollama pull qwen2.5:32b-instruct
-# then create Modelfile with PARAMETER num_ctx 32768
-ollama create qwen2.5-32b-writer -f Modelfile
-```
-
-### Commands Used
-
-NRSTC (Claude, credits required):
-```
-dotnet run --project v3/StreetSamurai.Cli --configuration Release --no-build \
-  -- --expand-beat --slug neon-rust-019f06da
-```
-
-NRSTQ (Qwen via RunPod):
-```
-dotnet run --project v3/StreetSamurai.Cli --configuration Release --no-build \
-  -- --expand-beat --slug neon-rust-qwen-019f06eb \
-     --local-url https://ios3aii3ubt1po-11434.proxy.runpod.net/v1/chat/completions \
-     --local-model qwen2.5-32b-writer
-```
-
-> Note: `--configuration Release --no-build` is required when the Blazor dev server is running (PID holds the Debug DLLs). The Release build is always available headless.
-
-### Beat Synopsis → Text Migration
-
-The MCP `insert_beat` tool writes stubs to `Beats.Text`. The expand-beat CLI reads `Beats.Synopsis` as the generation goal. If you use `insert_beat` to seed beats, run this SQL once before expanding:
-
-```sql
-SET QUOTED_IDENTIFIER ON;
-UPDATE b SET b.Synopsis = b.Text
-FROM Beats b
-INNER JOIN NodeBeats nb ON nb.BeatId = b.Id
-WHERE nb.NodeId IN ('<nrstc-id>', '<nrstq-id>')
-  AND b.Text IS NOT NULL AND b.Text LIKE 'Beat %';
-
-UPDATE b SET b.Text = ''
-FROM Beats b
-INNER JOIN NodeBeats nb ON nb.BeatId = b.Id
-WHERE nb.NodeId IN ('<nrstc-id>', '<nrstq-id>')
-  AND b.Synopsis LIKE 'Beat %';
-```
-
-The `Text` column is NOT NULL — use `''` not `NULL`.
-
-### What to Compare
-
-After both nodes are reviewed:
-1. **Voice register** — does Qwen stay in the HEIST/GLMZ register, or drift toward generic thriller? Does Claude follow the wry tactical distance lock?
-2. **Canon grounding** — does each writer correctly use the entities seeded into the world graph (Rook, Vox, Lace, Ohara, Stave, Boiler, Scout)?
-3. **Beat fidelity** — how closely does each beat match its synopsis goal vs. diverging into unexpected territory?
-4. **Structural locks** — do both respect §7? (Ohara locked it herself, hardware degradation is real pressure, Lace surfaces in this story.)
-5. **Prose mechanics** — paragraph structure, dialogue attribution, sensory texture, sentence-level rhythm.
-
-Run both reviews with:
-```
-ss --review-node --slug neon-rust-019f06da
-ss --review-node --slug neon-rust-qwen-019f06eb
-```
-
-### Status
-
-- [x] NRSTC: 14 beats expanded (2026-06-26)
-- [x] NRSTQ: 14 beats expanded (2026-06-26)
-- [x] NRSTC: review-driven cleanup pass (50-ballot panel, avg 79 pre-edit) — pronoun continuity, refrain/interiority cuts, sensory grounding, coda payoff (2026-06-27)
-- [x] NRSTC: **canon re-cast** — replaced invented crew (Tovan/Vesna/Idris) with the MxG-canonical crew (Boiler/Scout/Lace) carrying their established signatures; Vox set to she/her (woman); Adalemo to he/him (2026-06-27)
-- [x] Crew entities deepened/seeded — Rook/Vox/Lace/Boiler/Scout/Soraya given full Speech/Psychology layers; **Stave** `019f0787c613` and **Seun Adalemo** `019f0787f8bc` seeded (were missing) (2026-06-27)
-- [x] NRSTC: standalone review **87.7%** (2026-06-27) — cleared after re-cast + Character-Doctrine behavior pass
-- [x] MxG (sequel partner): standalone review **87.1%** (2026-06-27) — broke an 11-cycle ~86 ceiling via the Character Doctrine ([docs/CHARACTER.md](../CHARACTER.md)); both nodes now ≥87 and complement each other
-- [x] NRSTQ: **DELETED 2026-06-27** — the Qwen experimental twin was removed; the Claude node was promoted to the canonical node (NodeCode `NxR`, title "Neon & Rust", slug `neon-rust-019f06da`)
-- [ ] Comparative analysis (NOTE: experiment caveat — neither writer used the canonical crew because Stave/Adalemo were unseeded and the returning crew lacked voice depth; entities are now seeded for any future regen. NRSTQ left as the raw experimental record; NRSTC hand-re-cast for canon fidelity.)
-- [ ] Export both (NRSTC V1, NRSTQ V1)
-
-## §9 — Brand Environment {#SS-NxR-brands}
-
-Brand environment shared with the Rook Trilogy — see MxG.md §10 for full loadout table and texture notes.
-
-**NxR-specific insertion points:**
-- Scout's crawler (Gerald) in close-quarters: the chassis manufacturer reads on Rook's overlay when Gerald passes — one line, not a paragraph
-- Rook's apparel changes beat to beat; she does not wear the same thing twice; gray zone reclaim, no archology brand
-- The Bloom Quarter scenes: no neural advertising infrastructure (gray zone); augmented characters notice the silence as much as the texture
-
-## Beat Coordination Index {#SS-NXR-COORD}
-
-> GENERATED by `ss --coordinate --slug <slug>`. Do not hand-edit — regenerated
-> on demand. This is the three-coordinate map: each beat's **meaning** (bible),
-> **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
-> Full record: `reports/coordination/NXR.coordination.json`.
-
-**Coverage:** 26/26 beats fully covered. Story-wide construction: temporal=linear, resolution=mixed, moral=ambivalent, ending=quiet, granularity=beat.
-
-**Gap counts:** UNSCORED=26
-
-### Act One — The Ghost Retu
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4830 | `019f06e7-3e54-7851-a428-ffa6415aa14e` | — | Beat 1 — The Message: Rook reads the dead-drop note; pr… | 2/discovery | 4784c | UNSCORED |
-| 4898 | `019f11d1-05c1-70bc-850f-122c220846d4` | — | Establishes Rook's disciplined self-awareness as she re… | 3/departure | 6759c | UNSCORED |
-| 4831 | `019f06e7-4c8b-72a7-9f91-f1d1db03c542` | — | Beat 2 — Assembly: Rook finds the crew; nobody asks how… | 4/arrival +intertextual-touchpoint,subplot | 6704c | UNSCORED |
-| 4899 | `019f11d1-3e3d-7ef3-b157-89fdb60d5eaf` | — | Reveals Rook's independent investigative capability and… | 5/discovery | 7539c | UNSCORED |
-| 4832 | `019f06e7-5906-7976-83f7-e04c50c2ee9b` | — | Beat 3 — Ohara's Briefing: Full scope — the partition, … | 6/confession +intertextual-touchpoint | 6383c | UNSCORED |
-| 4833 | `019f06e7-664e-7df6-af13-e52429b68ba8` | — | Beat 4 — Vox's Read: Four-channel network sweep; PEREGR… | 6/discovery | 5807c | UNSCORED |
-| 4983 | `019f2a20-c458-760f-a947-0e82f951d162` | — | Plants the story's central mystery by showing Vox disco… | 7/negotiation +intertextual-touchpoint | 5061c | UNSCORED |
+### Act One — The Ghost Returns
+- B01 · — — Beat 1 — The Message: Rook reads the dead-drop note; processes that Ohara used a contact point that should not exist; decides before she finishes the sentence.
+- B02 · — — Establishes Rook's disciplined self-awareness as she resists the pull of habit, grounding the reader in her methodology before the crew-assembly plot begins.
+- B03 · — — Beat 2 — Assembly: Rook finds the crew; nobody asks how she got their current address; everyone's reason for coming back is different and nobody names it.
+- B04 · — — Reveals Rook's independent investigative capability and signals that she withholds methods from her crew, establishing a quiet asymmetry of trust.
+- B05 · — — Beat 3 — Ohara's Briefing: Full scope — the partition, the hardware degradation timeline, the working theory about what is inside; the window is weeks, possibly less.
+- B06 · — — Beat 4 — Vox's Read: Four-channel network sweep; PEREGRINE's new paper and new funder identified; the competitor is moving fast; the window is shorter than Ohara estimated.
+- B07 · — — Plants the story's central mystery by showing Vox discover that someone inside PEREGRINE is covertly searching for a specific missing person, escalating the stakes beyond the job.
 
 ### Act Two — The Partition
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4915 | `019f1363-8893-7947-aefa-213c10195684` | — | Pays off Vox's technical ingenuity by showing her explo… | 7/discovery +intertextual-touchpoint | 5631c | UNSCORED |
-| 4834 | `019f06e7-7402-79d5-9e36-4bb731ecf7b8` | — | Beat 5 — Into Z2: The infrastructure district; the neon… | 8/arrival | 5716c | UNSCORED |
-| 4900 | `019f11d1-6f8b-706f-ba04-6013a656f5c8` | — | Escalates tension through environmental detail while es… | 8/arrival | 6260c | UNSCORED |
-| 4835 | `019f06e7-8195-7e7c-8fe4-f490d7b63186` | — | Beat 6 — The Debt: Rook finds Stave; the broker situati… | 9/discovery | 5221c | UNSCORED |
-| 4836 | `019f06e7-8fcb-75eb-87a4-51afbfe690b6` | — | Beat 7 — Stave's Condition: Stave explains the prior cr… | 9/negotiation | 7006c | UNSCORED |
-| 4901 | `019f11d1-9ff4-726c-9f4f-17c0c5d56bc5` | — | Justifies the crew's exposure by revealing the precise … | 9/repair +subplot | 7227c | UNSCORED |
-| 4837 | `019f06e7-9e11-735b-a881-b92412d97857` | — | Beat 8 — Lace Surfaces: What Lace has known since the s… | 10/confession | 6084c | UNSCORED |
+- B08 · — — Pays off Vox's technical ingenuity by showing her exploit an overlooked legacy vulnerability, establishing the crew's operational edge against a better-resourced adversary.
+- B09 · — — Beat 5 — Into Z2: The infrastructure district; the neon thins; the rust shows; Stave's location identified by Scout's crawlers; the gray-market broker's building is load-bearing to the approach.
+- B10 · — — Escalates tension through environmental detail while establishing Scout's reconnaissance method and the crew's proximity to a dangerous, overtaxed infrastructure.
+- B11 · — — Beat 6 — The Debt: Rook finds Stave; the broker situation explained; the payment negotiated; Stave agrees under terms that cost Rook something she did not price in.
+- B12 · — — Beat 7 — Stave's Condition: Stave explains the prior crack — what went wrong, what they have been accounting for since; the rate of degradation, the point of no return; the procedure is survivable, probably.
+- B13 · — — Justifies the crew's exposure by revealing the precise technical constraints that force them into a compromised location, making the risk feel earned rather than arbitrary.
+- B14 · — — Beat 8 — Lace Surfaces: What Lace has known since the safe house in MGUN comes out; the crew's position on the board changes; the thing the story has been carrying puts weight on a different point.
 
 ### Act Three — The Crack
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4902 | `019f11d1-d0af-7664-a27d-763269f256df` | — | Establishes Lace's competence and reliability by showin… | 10/arrival +subplot | 6849c | UNSCORED |
-| 4838 | `019f06e7-ab37-7a74-8059-2652f01aa8c2` | — | Beat 9 — The Setup: Location secured; Ohara prepped; St… | 10/vigil | 8302c | UNSCORED |
-| 4916 | `019f1364-2664-79a1-813f-4d919150921e` | — | Turns the scene from controlled operation to crisis, re… | 9/ambush | 1530c | UNSCORED |
-| 4972 | `019f21b1-82ea-7b82-8fe7-138814fab82d` | — | Escalates the reversal by showing PEREGRINE has already… | 8/confrontation | 1735c | UNSCORED |
-| 4984 | `019f2a20-eea3-7d8f-8909-7747e2487f5a` | — | Reveals Boiler's hidden preparation and reframes his fo… | 9/betrayal +subplot | 7978c | UNSCORED |
-| 4839 | `019f06e7-bb77-79ce-ab41-698f8a89620a` | — | Beat 10 — PEREGRINE Closes: Vox flags the approach; the… | 10/discovery | 6132c | UNSCORED |
-| 4840 | `019f06e7-cbe4-7184-b532-b8b071231fbc` | — | Beat 11 — The Procedure: Stave works the partition from… | 10/discovery | 5921c | UNSCORED |
+- B15 · — — Establishes Lace's competence and reliability by showing her preparation work already complete before the crew arrives, building confidence before the operation fractures.
+- B16 · Scout locks into the crawlers and goes quiet — Beat 9 — The Setup: Location secured; Ohara prepped; Stave's equipment deployed; PEREGRINE's approach vector established; Scout locks into the crawlers and goes quiet.
+- B17 · — — Turns the scene from controlled operation to crisis, revealing PEREGRINE's arrival and using Ohara's stillness to crystallize what is about to be lost.
+- B18 · — — Escalates the reversal by showing PEREGRINE has already penetrated the crew's systems, stripping Rook of her last tactical option and demonstrating the adversary's superiority.
+- B19 · — — Reveals Boiler's hidden preparation and reframes his four months in the building as deliberate, giving the crew a concealed last resort while raising the cost of using it.
+- B20 · — — Beat 10 — PEREGRINE Closes: Vox flags the approach; the window compresses; the procedure has to run at the wrong pace or not at all; something external fails at the worst moment.
+- B21 · — — Beat 11 — The Procedure: Stave works the partition from outside; Ohara holds still while the lock degrades in real time; the open comes wrong — older data, locked by Ohara's own hand, for reasons she had forgotten she had.
 
 ### Act Four — The Walk-Off
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4903 | `019f11d2-0805-7f2e-99cd-fb513abf04c0` | — | Establishes Vox's unease about the partition's unexpect… | 10/discovery | 6943c | UNSCORED |
-| 4841 | `019f06e7-e22b-799c-9725-59f875ed3bfc` | — | Beat 12 — The Contents: What was inside; what it means;… | 9/discovery | 7727c | UNSCORED |
-| 4842 | `019f06e7-f043-7e9c-8c3f-588f0d4d34eb` | — | Beat 13 -- The Decision: Adalemo arrives, reveals he cu… | 8/confrontation | 9394c | UNSCORED |
-| 4985 | `019f2a21-0185-74aa-a517-801e4c704747` | — | Pays off Rook's worst-case preparation while immediatel… | 6/escape | 4435c | UNSCORED |
-| 4843 | `019f06e8-0bee-72c6-b971-a22e3ddf5b7b` | — | Beat 14 -- The Count: Rook at the Sojourn, the Z1 diner… | 5/arrival +intertextual-touchpoint | 3239c | UNSCORED |
+- B22 · — — Establishes Vox's unease about the partition's unexpectedly archaic signal to deepen the mystery of what Stave is reading inside, raising the stakes before the reveal.
+- B23 · — — Beat 12 — The Contents: What was inside; what it means; the decision that has to be made before PEREGRINE gets through the door.
+- B24 · — — Beat 13 -- The Decision: Adalemo arrives, reveals he cut the reference tone himself, and confirms his own private search for Sefi Okonkwo; Vox reseals the manifest; three of PEREGRINE's four operators are delayed, disabled, or turned by the crew's own fight upstream; Boiler's building is where it happens.
+- B25 · — — Pays off Rook's worst-case preparation while immediately undercutting relief by revealing Ohara's looping question as evidence of cognitive damage, recontextualizing her apparent recovery as loss.
+- B26 · — — Beat 14 -- The Count: Rook at the Sojourn, the Z1 diner by the lake; six people now carry a piece of the twenty-one, against the five who carried the Class V truth at the Spine; what she is counting, and why six is different from five, made legible on the page.

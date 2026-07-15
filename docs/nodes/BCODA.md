@@ -616,9 +616,10 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
 - **Mrs. Chen's stall** — unlicensed, unbranded, real food; the one thing in the story that has no commercial origin story
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: 3fd2edb3ceb144dc67c534f2fb4dd8a074fd157f2d28c365119bb3827845a538 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:13:02.4800791Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:15.4155167Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: Mr. Able runs escalating Praxis/Lotus/ArcSec assets at Kyle across the full book. Reader-only: Kyle never knows Able is pursuing him. Able kills a board member mid-meeting to protect budget allocation (cut-away "Eleven Seconds" — 11 seconds of silence). His recovery assets are the boss-fight soldiers at 35th and Halsted. Able wins the experiment (contact made) and loses the asset (schism closes, channel gone). The book ends without showing his response.
 - **Temporal scheme**: linear
@@ -636,7 +637,7 @@ BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to bo
   - **Tweeze** (character) — Sift's death in Ch6 is the book's first irreversible event. Grief drives Kyle toward Pixel (IL-2) and changes register for every chapter after. The entity chose not to prevent it. That is the detail.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:13:02.4800791Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:15.4155167Z from Beats table — edit via MCP beat tools -->
 
 ### Chapter 1: Teeth
 _(61 beats)_

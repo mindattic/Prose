@@ -58,9 +58,10 @@ Quiet and urgent. The violence is held at the edge of the frame—a countdown, n
 - Beat 10 plants the Behemoth's new sound → Beat 12 leaves it as the unanswerable question: what is a machine that can be afraid?
 
 <!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: ed7ddc4673c90275d516027f934cd490a4c6861a380f33f3de546e59e1702441 -->
 
 ## Structural Blueprint
-<!-- generated 2026-07-15T15:11:32.7399705Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+<!-- generated 2026-07-15T18:55:30.3052493Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
 - **Subplot**: CJ's parallel investigation tracks the scav crew's chain of custody for the stripped module — from the dead Behemoth's chassis to Ferko Nzambe's cargo platform at the Zone-12 checkpoint — mirroring the A-plot's question of whether a machine can grieve by asking whether humans can recognize what they've taken.
 - **Temporal scheme**: nonlinear
@@ -78,7 +79,7 @@ Quiet and urgent. The violence is held at the edge of the frame—a countdown, n
   - **Soren Rowe** (quote) — In beat 12, as the Behemoth lowers the module into the burial hole, Wes finds himself remembering a line he read once in a school reader — attributed to Rowe — about how the act of returning something to the ground is the oldest form of acknowledgment that it mattered. He does not say it aloud. The quote surfaces as free indirect thought, the only moment of received language in an otherwise observational beat.
 
 ## Beat Spine
-<!-- generated 2026-07-15T15:11:32.7399705Z from Beats table — edit via MCP beat tools -->
+<!-- generated 2026-07-15T18:55:30.3052493Z from Beats table — edit via MCP beat tools -->
 
 ### It Came From Iowa
 - B01 · The Wail — Pre-dawn, Iowa farm near Davenport. Wes follows a low mourning sound into the north field and finds it: a dead Behemoth in the tall grass, one tine snapped. The living machine is prodding it with a manipulator arm, pausing, waiting. Wes stands at the edge of the clearing and watches one Behemoth mourn another.
