@@ -30,8 +30,11 @@ public class DocxExportService
     private const string Chapter16 = "32";
     private const string Title28 = "56";
     private const string Author14 = "28";
-    // Calibrated from UNDR: 37,921 words / 144 KDP pages ≈ 263 WPP; use 260 (conservative).
-    private const double WordsPerPage = 260.0;
+    // Words-per-page base rate, calibrated via least-squares over 7 stories (UNDR, DWIACE, MNEMO,
+    // SRZR, MxG, ATTE, TEST): pages ≈ words/306 + chapters*1.1, avg error ±3.6 pages.
+    private const double WordsPerPage = 306.0;
+    // Average pages lost per chapter (page-break waste + heading height).
+    private const double ChapterPageOverhead = 1.1;
 
     public DocxExportService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
@@ -270,8 +273,8 @@ public class DocxExportService
                     body.AppendChild(BodyParagraph(para));
             }
 
-            // Estimate KDP page count from word count and store for display + next export.
-            var estimatedPages = Math.Max(1, (int)Math.Round(wordCount / WordsPerPage));
+            // Estimate KDP page count from word count + chapter overhead; store for gutter selection.
+            var estimatedPages = Math.Max(1, (int)Math.Round(wordCount / WordsPerPage + chapterCount * ChapterPageOverhead));
             node.KdpPageCount = estimatedPages;
             body.AppendChild(SectionProps(estimatedPages));
             main.Document.Save();
