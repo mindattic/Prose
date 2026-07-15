@@ -6873,6 +6873,9 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<DateTime?>("KdpPublishedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("KdpPageCount")
+                        .HasColumnType("int");
+
                     b.Property<string>("Kind")
                         .IsRequired()
                         .HasMaxLength(40)

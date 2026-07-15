@@ -163,6 +163,12 @@ public abstract class Node
     /// A node needs republishing when <c>MAX(beats.UpdatedAt) > KdpPublishedAt</c>.</summary>
     public DateTime? KdpPublishedAt { get; set; }
 
+    /// <summary>KDP print-page count as measured in the final exported .docx (check in Word:
+    /// File → Info → Properties → Pages). Used to select the correct inside-margin (gutter)
+    /// per KDP's page-count table on the next export. Null = unknown; falls back to the
+    /// maximum-safe gutter (0.875").</summary>
+    public int? KdpPageCount { get; set; }
+
     // ── Generation / cost / resume state ─────────────────────────────────
 
     /// <summary>For LLM-generated nodes, the one-line seed that fed the

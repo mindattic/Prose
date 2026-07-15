@@ -813,7 +813,7 @@ public class NodeTools
         return JsonSerializer.Serialize(new { count = rows.Count, nodes = rows }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
+    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
     public async Task<string> UpdateStory(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
@@ -822,7 +822,8 @@ public class NodeTools
         [Description("Status: draft | ready | canon | archived. Omit to leave unchanged.")] string? status = null,
         [Description("Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.")] string? seed = null,
         [Description("Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.")] string? code = null,
-        [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null)
+        [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null,
+        [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null)
     {
         try
         {
@@ -833,13 +834,14 @@ public class NodeTools
             var row = await db.Nodes.FindAsync(node.Id);
             if (row == null) return JsonSerializer.Serialize(new { error = "node_row_missing", id = node.Id }, CanonTools.JsonOpts);
 
-            if (title    != null) row.Title    = title;
-            if (description != null) row.Description = string.IsNullOrEmpty(description) ? null : description;
-            if (kind     != null) row.Kind     = kind;
-            if (status   != null) row.Status   = status;
-            if (seed     != null) row.Seed     = string.IsNullOrEmpty(seed) ? null : seed;
-            if (code     != null) row.NodeCode = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
-            if (voiceId  != null) row.VoiceId  = string.IsNullOrEmpty(voiceId) ? null : voiceId;
+            if (title        != null) row.Title        = title;
+            if (description  != null) row.Description  = string.IsNullOrEmpty(description) ? null : description;
+            if (kind         != null) row.Kind         = kind;
+            if (status       != null) row.Status       = status;
+            if (seed         != null) row.Seed         = string.IsNullOrEmpty(seed) ? null : seed;
+            if (code         != null) row.NodeCode     = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
+            if (voiceId      != null) row.VoiceId      = string.IsNullOrEmpty(voiceId) ? null : voiceId;
+            if (kdpPageCount != null) row.KdpPageCount = kdpPageCount == 0 ? null : kdpPageCount;
             row.UpdatedAt = DateTime.UtcNow;
 
             await db.SaveChangesAsync();

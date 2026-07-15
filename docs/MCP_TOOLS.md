@@ -1230,7 +1230,7 @@ Update one beat's prose. Recomputes the hash, marks the beat stale, and invalida
 
 ### `update_story`
 
-Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
+Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `title` (string, optional) — New title. Omit to leave unchanged.
@@ -1240,6 +1240,7 @@ Update a node's metadata fields. Pass only the fields you want to change — omi
 - `seed` (string, optional) — Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.
 - `code` (string, optional) — Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.
 - `voiceId` (string, optional) — ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.
+- `kdpPageCount` (int, optional) — KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.
 
 ## Noun Consistency
 

@@ -266,7 +266,7 @@ public class DocxExportService
                     body.AppendChild(BodyParagraph(para));
             }
 
-            body.AppendChild(SectionProps());
+            body.AppendChild(SectionProps(node.KdpPageCount));
             main.Document.Save();
         }
 
@@ -282,11 +282,22 @@ public class DocxExportService
     // ── builders ─────────────────────────────────────────────────────────────
 
     // KDP paperback trim: 6" × 9" (8640 × 12960 twips).
-    // Gutter = 1260 (0.875" = KDP minimum for 501–700 page books; safe for all expected output).
-    // Left/Right = 720 (0.5" outer). MirrorMargins (set in Settings) flips gutter to spine side on verso.
-    private static SectionProperties SectionProps() => new(
+    // Left/Right = 720 (0.5" outer). Gutter is calculated from page count via KDP's table.
+    // MirrorMargins (set in Settings) flips gutter to spine side on verso.
+    private static SectionProperties SectionProps(int? kdpPageCount) => new(
         new PageSize { Width = 8640U, Height = 12960U },
-        new PageMargin { Top = 1440, Bottom = 1440, Left = 720U, Right = 720U, Header = 720U, Footer = 720U, Gutter = 1260U });
+        new PageMargin { Top = 1440, Bottom = 1440, Left = 720U, Right = 720U, Header = 720U, Footer = 720U, Gutter = KdpGutter(kdpPageCount) });
+
+    // KDP minimum inside (gutter) margin by page count (source: KDP Content Guidelines).
+    // Null = unknown page count; falls back to the maximum-safe value (0.875").
+    private static uint KdpGutter(int? pageCount) => (pageCount ?? int.MaxValue) switch
+    {
+        >= 701 => 1260U,  // 0.875"
+        >= 601 => 1080U,  // 0.75"
+        >= 401 =>  900U,  // 0.625"
+        >= 151 =>  720U,  // 0.5"
+        _      =>  540U,  // 0.375"
+    };
 
     private static Paragraph BlankLines(int n)
     {
