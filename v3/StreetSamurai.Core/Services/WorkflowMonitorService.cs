@@ -67,7 +67,7 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
             .Where(x => scopeIds.Contains(x.NodeId)).ToListAsync(ct);
         var node = await db.Nodes.AsNoTracking()
             .Where(s => s.Id == nodeId)
-            .Select(s => new { s.Slug, s.Title })
+            .Select(s => new { s.Slug, s.Title, s.NodeCode, s.NodeBibleGeneratedAt })
             .FirstOrDefaultAsync(ct);
 
         var byService = logs
@@ -95,12 +95,44 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
                 gaps.Add($"{svc}: never logged (no calls recorded for this node — use ProseWriterRouter)");
         }
 
+        // Health check: structural blueprint
+        var hasBlueprint = await db.NodeStructuralBlueprints.AsNoTracking()
+            .AnyAsync(b => scopeIds.Contains(b.NodeId), ct);
+        if (!hasBlueprint)
+            gaps.Add($"StructuralBlueprint: not found — run 'ss --generate-blueprint --slug {node?.Slug ?? "?"}'");
+
+        // Health check: NodeBible freshness vs MarkdownFiles
+        var nodeCode = node?.NodeCode ?? "";
+        if (!string.IsNullOrEmpty(nodeCode) && node?.NodeBibleGeneratedAt.HasValue == true)
+        {
+            var mdSynced = await db.MarkdownFiles.AsNoTracking()
+                .Where(m => m.Tier == "node" && m.Scope.Contains(nodeCode))
+                .Select(m => (DateTime?)m.LastSyncedAt)
+                .FirstOrDefaultAsync(ct);
+            if (mdSynced == null)
+                gaps.Add($"NodeBible: generated but never synced — run 'ss --generate-node-doc --slug {node?.Slug ?? "?"} && ss --sync-markdown'");
+            else if (node!.NodeBibleGeneratedAt!.Value > mdSynced.Value)
+                gaps.Add($"NodeBible: generated {node.NodeBibleGeneratedAt.Value:yyyy-MM-dd HH:mm} UTC but MarkdownFiles synced {mdSynced.Value:yyyy-MM-dd HH:mm} UTC — run 'ss --sync-markdown'");
+        }
+
         return new NodeCoverageReport(
             NodeSlug:       node?.Slug ?? nodeId.ToString(),
             NodeTitle:      node?.Title ?? "Unknown",
             ServiceStats:     byService,
             Gaps:             gaps,
             TotalBeatsLogged: logs.Where(x => x.BeatId != null).Select(x => x.BeatId).Distinct().Count());
+    }
+
+    /// <summary>
+    /// Returns the count of active entities that have no row in EntityEmbeddings.
+    /// These entities are invisible to FindSimilarAsync — embedding lookup silently misses them.
+    /// </summary>
+    public async Task<int> GetEntityEmbeddingGapCountAsync(CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await db.Entities.AsNoTracking()
+            .Where(e => e.IsActive && !db.EntityEmbeddings.Any(em => em.EntityId == e.Id))
+            .CountAsync(ct);
     }
 
     /// <summary>

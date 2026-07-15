@@ -73,8 +73,9 @@ public static class WorkflowMonitorCli
         }
 
         // --all or no slug: global stats
-        var stats = await monitor.GetGlobalStatsAsync();
-        var gaps  = await monitor.GetAllNodesWithGapsAsync();
+        var stats          = await monitor.GetGlobalStatsAsync();
+        var gaps           = await monitor.GetAllNodesWithGapsAsync();
+        var unseededCount  = await monitor.GetEntityEmbeddingGapCountAsync();
 
         if (json)
         {
@@ -105,6 +106,11 @@ public static class WorkflowMonitorCli
         {
             Console.WriteLine("\n(No beats logged yet — use ProseWriterRouter to generate beats with coverage tracking)");
         }
+
+        if (unseededCount > 0)
+            Console.WriteLine($"\n  !  EntityEmbeddings: {unseededCount} active entity/entities have no embedding row — embedding lookup silently misses them. Run 'ss --embed-entities'.");
+        else
+            Console.WriteLine($"\n  ✓  EntityEmbeddings: all active entities have embeddings.");
     }
 
     private static string? GetArg(string[] args, string flag)

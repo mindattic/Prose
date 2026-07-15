@@ -296,7 +296,11 @@ public class StructuralBlueprintService
         Guid nodeId, Guid beatId, int beatIndex, int totalBeats, CancellationToken ct = default)
     {
         var blueprint = await GetAsync(nodeId, ct);
-        if (blueprint == null) return "";
+        if (blueprint == null)
+        {
+            log.LogWarning("[blueprint] No structural blueprint for node {NodeId} — StoryScope anti-tell layer inactive. Run 'ss --generate-blueprint --slug <slug>'.", nodeId);
+            return "";
+        }
 
         // Chapter-granular blueprints index chapters, not beats — map this beat to
         // its unit so the curve/palette lookups read the right entry.
