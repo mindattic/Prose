@@ -52,10 +52,10 @@ stolen Relic weapon — and losing, along the way, the certainty that made her w
 - **Act 1** (Ch.1–~9): Ocipheus → Narrow Sea → Verlaine (Rowe found) → Three Points
   The Relic is four days ahead. Act 1 ends at Three Points.
 - **Act 2** (~Ch.10–21): Three Points → Atrament → Sal Vento (the Eirene-7 is stolen; M-101
-  body-snatches its control-mind and flies it; melee covered by Wren once she joins at Pallor)
-  → Calyx (war front; maneuver around skirmishes; no-colors engagement; blood from both sides)
-  → Pallor / Caer Glas Moor (Blink Thieves intercepted; Esvane and Petra killed;
-  Wren blinks with the Relic; Wren returns and joins when Orim tells her what the Relic has seen)
+  body-snatches its control-mind and flies it; melee covered by Wren once he joins in Caerglas)
+  → Caerglas (war front; maneuver around skirmishes; no-colors engagement; blood from both sides)
+  → Caerglas / Caer Glas Moor (Blink Thieves intercepted; Esvane and Petra killed;
+  Wren blinks with the Relic; Wren returns and joins when Orim tells him what the Relic has seen)
 - **Act 3** (~Ch.22–29): Eirene's Gate / The Pass → Sinter (climax) → return to Ocipheus
 
 Running east ahead of her: three thieves with the Oculus Memoriae, four days ahead,
@@ -129,9 +129,9 @@ covered by Wren.)*
 | Character | House | Role | Age | Joins |
 |---|---|---|---|---|
 | Dame Lyra | Ocipheus (Templar) | Tank / POV | 44 | Start |
-| Orim Zebulun | Calyx-born, independent | Scry Mage | Late 60s | Start |
+| Orim Zebulun | Caerglas-born, independent | Scry Mage | Late 60s | Start |
 | Soren Rowe / M-1018883 | Verlaine (Earth, 1919) — a stolen mind in a Myrmidon automaton | Ranged DPS / body-snatcher | Mind, early 30s | Verlaine |
-| Wren Caerglas | Calyx (Loera-trained) | Melee DPS (Rogue / Blink); **female** | 22 | Pallor |
+| Wren Caerglas | Caerglas (Loera-trained) | Melee DPS (Rogue / Blink); **male** | 22 | Caerglas |
 
 ### Dame Lyra — POV {#SS-VIGL-1a}
 - **Full name:** Dame Lyra of Ocipheus (family name Athen-Moor). The surname is genealogical
@@ -185,7 +185,7 @@ covered by Wren.)*
   toward Sinter.
 
 ### Orim Zebulun — The Failed Keeper, and the One Who Knows {#SS-VIGL-1b}
-- **House:** None. Calyx origin, long-since contract-independent.
+- **House:** None. Caerglas origin, long-since contract-independent.
 - **Age:** Late 60s. Looks older.
 - **Gift:** Minor Scrying — no apparatus, no membrane penetration to other Spheres. Local and
   temporal: what was in this room an hour ago, whether someone passed this gate today, what
@@ -207,7 +207,7 @@ covered by Wren.)*
   in this world's own caul, not a badland, §9b), what the Oculus actually holds and that the Liturgy
   **hoards** it (§2a, §6b) — **Orim knows, or has guessed close enough to know.** Fifty years of
   putting his hand through the world's skin by proxy, one private Sinter contract thirty years ago
-  that no House authorized, and a Calyx upbringing that taught him what the Relic is worth: he is the
+  that no House authorized, and a Caerglas upbringing that taught him what the Relic is worth: he is the
   single human exception to "not understood in-world." The knowledge exists in the Caul. It exists
   in him. And he **withholds it** — feeds it out in fragments, on his own schedule, for reasons he
   does not explain. He is not the party's guide to a mystery. He is the mystery's custodian, walking
@@ -223,7 +223,7 @@ covered by Wren.)*
 - **MOTIVE — deliberately unresolved (LOCK).** {#SS-VIGL-1b-motive} His agenda is meant to be
   questioned, repeatedly, and never fully answered. Competing readings are all kept live to the last
   page: redemption (he wants to die having been, once, the Keeper he failed to be); still-serving
-  (Calyx, or some faction, still has its hooks in him and this is their operation wearing a guilty
+  (Caerglas, or some faction, still has its hooks in him and this is their operation wearing a guilty
   old man's face); or something he simply will not name (a private reckoning with the thing at
   Sinter, or with what he saw thirty years ago, that belongs to him and no one else). The prose
   never confirms which. Lyra suspects more than one at different points and is never given the
@@ -261,7 +261,7 @@ covered by Wren.)*
   people. The institutional response was "no action indicated." He was not believed by the
   people who mattered because the people who mattered had already decided not to act —
   because the Vigil record at Ocipheus had known since Year 397 and had been filing the same
-  notation for generations. He has lived with this since. He is Calyx-born; Calyx sends
+  notation for generations. He has lived with this since. He is Caerglas-born; Caerglas sends
   agents to steal the Relic rather than act on what it shows. He does not discuss this.
 - **The arc:** He cannot tell Lyra what is at Sinter — or so he says. His stated reason is sound:
   she will not believe him without standing there, because what the aperture shows requires the
@@ -524,7 +524,7 @@ The power earns its keep by escalating and by costing. Recommended deployment:
    overlooked little unit becomes the most dangerous thing on the field, and the party has to
    recalibrate what they've been traveling with. First taste of **cost:** his inert little shell
    is left exposed mid-jump; someone has to stand over it.
-2. **Turn the mortar (a pinned-down beat — Calyx skirmish or Schmalburg).** The team is pinned by
+2. **Turn the mortar (a pinned-down beat — Caerglas skirmish or Schmalburg).** The team is pinned by
    an enemy emplacement; M-101 jumps into the **mortar that is killing them** and it goes silent,
    or turns on its own line. Fast, tactical, quietly horrifying — the enemy's own iron, possessed.
 3. **Become the airship — Eirene-7 acquisition (SK1600).** The masterstroke and the callback: he
@@ -552,14 +552,14 @@ The power earns its keep by escalating and by costing. Recommended deployment:
 > is **CALYX**, the House that sent them and that holds the Year-972 property claim to the
 > Oculus Memoriae (Battle of Nine Days at Caer Glas Moor). **PALLOR** is a distinct allied House
 > — the Warrior King's — whose Champion Vaen is dispatched separately as the operation's backstop.
-> The two Houses cooperate at Caer Glas Moor; they are not the same House. The claim is Calyx's;
+> The two Houses cooperate at Caer Glas Moor; they are not the same House. The claim is Caerglas's;
 > Vaen is Pallor's.
 >
-> **LOCK — the Blink Thieves are Loera-tradecraft mercenaries; the Relic is delivered TO Calyx {#SS-VIGL-2-loera-lock}:**
+> **LOCK — the Blink Thieves are Loera-tradecraft mercenaries; the Relic is delivered TO Caerglas {#SS-VIGL-2-loera-lock}:**
 > The crew are **hired Loera-trained operatives — mercenaries, not a House retinue.** Their tie to
-> Calyx is the **contract**, not loyalty: Calyx lost the Relic in the Battle of Nine Days at Caer
-> Glas Moor (the Champion fell; the Relic passed out of Calyx custody — the basis of its Year-972
-> claim), and Calyx has now **hired the crew to retrieve it and deliver it back.** Their *tradecraft,
+> Caerglas is the **contract**, not loyalty: Caerglas lost the Relic in the Battle of Nine Days at Caer
+> Glas Moor (the Champion fell; the Relic passed out of Caerglas custody — the basis of its Year-972
+> claim), and Caerglas has now **hired the crew to retrieve it and deliver it back.** Their *tradecraft,
 > discipline, training, boot-craft, and the tracks they leave* are **LOERA** — the blink/fold is a
 > Loera thieving-arts tradition (§2c) — and they exfiltrate south toward the Loera coast (Sal Vento),
 > never north onto the Pallor moor. **PALLOR** describes only the northland warrior culture (Vaen,
@@ -615,28 +615,28 @@ The power earns its keep by escalating and by costing. Recommended deployment:
   notification. Lyra and Orim identify the second function in Ch13. The two objectives do
   not conflict — Prelacze needed both.
 
-### Aldric Caerglas — Calyx Knight, Caer Glas Moor {#SS-VIGL-2b}
-- **Role:** Calyx Knight. Two infusions. Mid-forties. He is NOT in the traveling squad.
+### Aldric Caerglas — Caerglas Knight, Caer Glas Moor {#SS-VIGL-2b}
+- **Role:** Caerglas Knight. Two infusions. Mid-forties. He is NOT in the traveling squad.
   He dispatched Esvane with operational authority, arranged Vaen's parallel deployment,
   and has been at Caer Glas Moor for four days by the time the squad arrives — preparing
   the ancestral vault site, managing the moor-hound handlers, making the Relic's return
   real in his mind before it happens. The squad is doing his family's work. He sent them.
-- **Why he doesn't travel:** Six generations of formal Calyx claim (Year 972, 166 years ago); two infusions. If he is
+- **Why he doesn't travel:** Six generations of formal Caerglas claim (Year 972, 166 years ago); two infusions. If he is
   caught in another House's territory carrying the Relic, he is the confirmation of theft.
   Esvane's institutional cover requires that the person with the most to lose stay out of
-  range until Calyx soil is under his feet. He agreed with the reasoning. He hated agreeing
+  range until Caerglas soil is under his feet. He agreed with the reasoning. He hated agreeing
   with it.
-- **The Calyx claim:** His family has maintained Calyx's formal property dispute over
+- **The Caerglas claim:** His family has maintained Caerglas's formal property dispute over
   the Oculus Memoriae since Year 972 — since the Battle of Nine Days at Caer Glas Moor,
-  where the Calyx Champion fell and the Relic passed out of Calyx custody under the
+  where the Caerglas Champion fell and the Relic passed out of Caerglas custody under the
   post-battle canonical settlement. The settlement was legally correct. It was also the price
   of a lost battle. He grew up hearing the claim told as fact and obligation in equal measure —
   six generations of the Caerglas family have filed the petition (Year 972 was 166 years ago;
   the claim is real; it has simply never been resolved). When Prelacze approached him, he heard:
   *finally, someone in the Liturgy is willing to right this.*
-- **What he knew vs. what Prelacze knew:** He knew WHY — Calyx's prior claim is legitimate.
+- **What he knew vs. what Prelacze knew:** He knew WHY — Caerglas's prior claim is legitimate.
   He did NOT know what Prelacze actually wanted from the Relic's memory. He believed he was
-  conducting a sanctioned retrieval under Calyx's historical property right. He was correct
+  conducting a sanctioned retrieval under Caerglas's historical property right. He was correct
   about the right. He was wrong about the Canon's purpose. Aldric knew the Relic required a
   specific location (the aperture site). He did NOT know Prelacze's purpose for it, nor the
   leverage scheme.
@@ -644,7 +644,7 @@ The power earns its keep by escalating and by costing. Recommended deployment:
   that the mission and the institution are the same thing. He will discover they are not.
 - **His moment:** When Lyra has him down on the moor, he names the Canon. He says: *I thought
   I was doing right. I don't know anymore.* He means it — not the retrieval (that was right),
-  but what the retrieval was in service of. Prelacze used Calyx's genuine six-generation
+  but what the retrieval was in service of. Prelacze used Caerglas's genuine six-generation
   grievance as a mechanism for personal leverage. Aldric was the tool. This is what collapses
   his certainty. Not that he was wrong to want the Relic back. That he was used.
 - **After:** Lyra tells him to find the Long Seat and tell them everything. She leaves him alive.
@@ -663,13 +663,13 @@ territory Lyra crosses, one chapter ahead, so we know what she's walking into be
 **The dramatic engine: two hard-committed and one who is not.**
 Esvane believes what she is doing is right. Petra believes nothing except the coin and, against
 her better judgment, Aldric. Wren has read the documentation and knows the truth is more
-complicated than both of them will admit. By the time the squad reaches Calyx, the reader
+complicated than both of them will admit. By the time the squad reaches Caerglas, the reader
 discovers who all three were. That is what makes the confrontation land.
 
-**Esvane Mirren — Calyx Lector, institutional cover** {#SS-VIGL-2c-esvane}
-- Fifty. Lector rank in the Calyx canonical order. Twenty-three years working canonical transit law.
+**Esvane Mirren — Caerglas Lector, institutional cover** {#SS-VIGL-2c-esvane}
+- Fifty. Lector rank in the Caerglas canonical order. Twenty-three years working canonical transit law.
 - She designed the legal mechanism that suspended Lyra's field authority — routing it through
-  Prelacze's counter-brief system, using Calyx's on-record property dispute as the basis.
+  Prelacze's counter-brief system, using Caerglas's on-record property dispute as the basis.
   It was technically correct. She knew it was technically correct and chose it for that reason.
 - She has known Aldric since he was a young Knight. She watched him grow into the person who
   would be willing to do this. She has a form of love for him that is not romantic and is
@@ -677,7 +677,7 @@ discovers who all three were. That is what makes the confrontation land.
   undo.
 - Her fear: that she will carry this regardless of outcome. That the Relic will reach Pallor and
   the Liturgy will find a way to take it back and her career will be the price of Aldric's honor.
-- Her hope: that the canonical documentation holds. That Calyx's prior claim is upheld in post-
+- Her hope: that the canonical documentation holds. That Caerglas's prior claim is upheld in post-
   retrieval review and the record shows she acted within institutional reach. She does not
   believe this will happen. She went anyway.
 - **Her moment:** On the channel crossing, she tells Petra the full shape of what Prelacze wants —
@@ -697,7 +697,7 @@ discovers who all three were. That is what makes the confrontation land.
   discretionary document transport, and, less officially, route-finding for clients who prefer that
   their cargo not appear in checkpoint logs.
 - Hired by Esvane six months before the theft. She knows every checkpoint between Ocipheus and
-  Pallor, every soft gate, every officer who will accept a Calyx canonical property claim without
+  Pallor, every soft gate, every officer who will accept a Caerglas canonical property claim without
   reading the underlying dispute history.
 - Loyal to the coin. Unexpectedly, also loyal to Aldric — something about his certainty has gotten
   under her skin in a way she does not find comfortable or useful. She has not examined this carefully.
@@ -718,100 +718,114 @@ discovers who all three were. That is what makes the confrontation land.
   names it a professional decision: the secondary client isn't worth the exposure.
 
 **Wren Caerglas — Aldric's nephew; Loera-trained operative; operational alias "The Blink Thief"; male** {#SS-VIGL-2c-wren}
-> **GENDER (2026-07-14):** Wren is **male** (per author; corroborated by the older crew memo's "nephew"). The bible previously ran him **female**; the body text below and the earlier beats still carry female pronouns and need a **re-gender sweep** (she→he), flagged and not yet done. The two new beats (Vega's arrival/join; the cyclops finale) are already male-consistent.
-> **Backstory — Calyxian royal, Loeran blade {#SS-VIGL-2c-wren-origin}:** Wren is a **minor noble of House Caerglas, the family that RULES Calyx.** He was **sent to Loera as a boy to train in the blink arts** and came back a Calyxian royal with Loeran abilities — which is exactly why his own thief-crew treat him as an outsider: highborn Calyxian, fights like a Loera phase-thief, belonging fully to neither. The crew's contract was to **retrieve the Oculus and hand it back to the Caerglas**, on the Calyx soil where it was lost (Caer Glas Moor, the Battle of Nine Days). His homecoming and the intercept are the same ground.
+> **GENDER (2026-07-14):** Wren is **male** (author-confirmed; corroborated by the older crew memo's "nephew"). This bible section, the roster, and the route notes are now swept to he/his. **Still pending:** the earlier DB **beats** (esp. the Ocipheus-theft / intercept beats) still carry female pronouns for Wren and need a careful in-beat sweep. The new beats (Vega's arrival/join; the cyclops finale) are already male-consistent.
+> **Backstory — distant Caerglas blood, Loeran blade {#SS-VIGL-2c-wren-origin}:** Wren is Caerglas **by
+> birth but distant from power** — royal blood, *not* a child of the king or queen: roughly a **fifth
+> cousin** to the ruling Caerglas monarch of Caerglas. Highborn enough to matter, far enough from the
+> throne to be **sent to Loera as a boy to train in the blink arts** and not much missed. He came back a
+> Caerglas noble with Loeran abilities — which is exactly why his own thief-crew treat him as an
+> outsider: highborn Caerglas, fights like a Loera phase-thief, belonging fully to neither. The crew's
+> contract was to **retrieve the Oculus and hand it back to the ruling Caerglas**, on the Caerglas soil
+> where it was lost (Caer Glas Moor, the Battle of Nine Days). His homecoming and the intercept are the
+> same ground.
 - Twenty-two. Assigned to the squad by family obligation. He would have come regardless.
-- She has the Caerglas family's belief that the Relic belongs to Calyx.
-  She got it secondhand, the way you get things from family stories: absolutely certain in
+- He has the Caerglas family's belief that the Relic belongs to Caerglas.
+  He got it secondhand, the way you get things from family stories: absolutely certain in
   feeling, less certain in detail.
-- Three months before the retrieval, she read the canonical property transfer documentation
-  from Year 972 — the actual instrument that moved the Oculus Memoriae to Ocipheus custody.
+- Three months before the retrieval, he read the canonical property transfer documentation
+  from Year 972 — the actual instrument that moved the Oculus Lacrimans Memoriae to Ocipheus custody.
   The documentation is not as simple as the family story. The transfer was disputed at the time.
-  It was also processed by a legitimate canonical authority. The Calyx claim is real. So is
+  It was also processed by a legitimate canonical authority. The Caerglas claim is real. So is
   Ocipheus's institutional custody. Both things are true and cannot both be satisfied.
-- She has not told Aldric this. She does not know how to tell Aldric this, because Aldric has
+- He has not told Aldric this. He does not know how to tell Aldric this, because Aldric has
   been certain his whole life and Wren does not know what certainty looks like after it breaks.
-- **What she actually grasped — not property, but purpose:** Wren's read of the Year-972
-  documentation does not land as "Calyx's claim is stronger than Ocipheus's." It is stranger and
+- **What he actually grasped — not property, but purpose:** Wren's read of the Year-972
+  documentation does not land as "Caerglas's claim is stronger than Ocipheus's." It is stranger and
   worse than that: neither House's claim is the point. A Relic that carries 741 years of
   accumulating catastrophe does not belong sealed in an Ocipheus vault under Liturgy custody —
-  and it does not belong sealed in a Calyx ancestral vault under a different lock, either. It
+  and it does not belong sealed in a Caerglas ancestral vault under a different lock, either. It
   belongs somewhere it can be **seen**: read, argued over, brought before the Long Seat or
-  whatever body the Houses can be made to convene. She could not have said this cleanly at the
-  start of the book, and she does not fully have the words for it even at Caer Glas Moor. She has
-  the shape of it — underneath the family duty she told herself was the whole reason she came.
-- **The Blink — applied Scrying, on herself:** Wren's Transmutation infusion — one — is a
-  Loera-tradition phase-step ability, and what it does is Scry her own body out through her
+  whatever body the Houses can be made to convene. He could not have said this cleanly at the
+  start of the book, and he does not fully have the words for it even at Caer Glas Moor. He has
+  the shape of it — underneath the family duty he told himself was the whole reason he came.
+- **The Blink — applied Scrying, on himself:** Wren's Transmutation infusion — one — is a
+  Loera-tradition phase-step ability, and what it does is Scry his own body out through his
   world's own skin (§4, §4b) and back in through the skin a short way off in the same world.
   Loera has a long culture of thieving-arts that formalized this as a practiced infusion technique
   rather than a military one. Wren obtained it through Loera channels — Aldric used Loera contacts
-  to give her the right tool for the right job. For approximately four seconds per use, she pushes
-  herself through solid material up to two meters thick — out through the caul, a heartbeat through
+  to give him the right tool for the right job. For approximately four seconds per use, he pushes
+  himself through solid material up to two meters thick — out through the caul, a heartbeat through
   the Amnios, back in the far side — never through iron; the metal resists the membrane the way it
-  resists everything else membrane-adjacent (§4a). She cannot carry more than one hand's worth through with her. The
-  Blink Thieves are named for the fold itself — the Loera phase-step is the crew's trade, each operative carrying a prepared, countable infusion (a job is planned around how many folds the preparation holds); Wren is the most accomplished of them. She is why they could leave through the south coast of the
-  Ocipheus archive without triggering a sealed gate. The box was in her arms. She walked through
+  resists everything else membrane-adjacent (§4a). He cannot carry more than one hand's worth through with him. The
+  Blink Thieves are named for the fold itself — the Loera phase-step is the crew's trade, each operative carrying a prepared, countable infusion (a job is planned around how many folds the preparation holds); Wren is the most accomplished of them. He is why they could leave through the south coast of the
+  Ocipheus archive without triggering a sealed gate. The case was in his arms. He walked through
   the wall.
-- **The cost — a heartbeat in the Amnios, and she comes out wet:** Every blink is not a trick of
+- **The cost — a heartbeat in the Amnios, and he comes out wet:** Every blink is not a trick of
   geometry; it is four seconds spent *inside the Amnios* (§4b) — warm, wet, golden, formless, no
   up, no edges, and the specific fear of not finding the "out" before the four seconds run out. And
-  she arrives on the far side **slicked in gold**: amber beading off her lashes and jaw, gold
-  running from her hair, clothes clinging, a gold-and-copper smell coming off her, a second lost to
-  blinking the gold from her eyes before she can see. The wet is her signature — the party learns
-  to know a blink just happened by the golden puddle spreading under her boots. This is why
+  he arrives on the far side **slicked in gold**: amber beading off his lashes and jaw, gold
+  running from his hair, clothes clinging, a gold-and-copper smell coming off him, a second lost to
+  blinking the gold from his eyes before he can see. The wet is his signature — the party learns
+  to know a blink just happened by the golden puddle spreading under his boots. This is why
   blinkers are rare even within Loera's thieving tradition: most who try it do not come back the
   same, and some do not come back. Wren does not describe what the four seconds feel like to anyone
   who has not asked twice.
 - **The rhyme with Rowe:** Wren and Soren Rowe are the only two people in the party who know what
-  the Amnios feels like from the inside — she by choice, in heartbeats, over and over, coming out
-  wet each time; he once, involuntarily, at the Taking, when he floated in it unborn (§1c), and
+  the Amnios feels like from the inside — Wren by choice, in heartbeats, over and over, coming out
+  wet each time; Rowe once, involuntarily, at the Taking, when he floated in it unborn (§1c), and
   every time his home shell is threatened with loss. Both of them move by the membrane. Both of
   them live with the same fear underneath the different shapes it takes: Rowe's is being cut off
   from his own shell with the Amnios on the other side of the door; Wren's is being the one who
   goes into the Amnios and does not find the seam back out. Neither of them says this to the other
   in so many words. Neither of them has to.
-- **At the Caer Glas intercept:** Lyra's party catches the squad on the Pallor moor. Esvane and
-  Petra go down. Wren blinks — through a stone building, a courtyard wall, into an adjacent
-  field — with the Yggdra box in her arms. She is alive. The Relic is with her. She is alone
+- **At the Caer Glas intercept:** Lyra's party catches the squad on the **Caer Glas moor, in Caerglas**.
+  Esvane and Petra go down. Wren blinks — through a stone building, a courtyard wall, into an adjacent
+  field — with the **case** in his arms. He is alive. The Relic is with him. He is alone
   for the first time since the theft.
-- **Her moment alone:** She has the Relic. She could still take it north to Pallor. Nobody is
-  watching. What happens instead: Orim Zebulun finds her — Orim has been tracking the Relic's
-  scrying residue since Verlaine. Orim shows her what the Rod sees at this range from the eastern
-  plains. What is moving in the Sinter basin, miles below the surface, moving at the rate of
-  change he shows Wren. *How long?* Wren asks. Orim says: *Since Year 1079, at minimum. The
-  rate has been accelerating for eleven years.* Wren sits down in the field with the Relic
-  box in her arms and takes a long time to stand back up.
-- **She returns the Relic to Lyra and joins the party.** Not because Lyra asked. Because she has
-  nowhere else to go and because the thing she has been trying to understand since she read that
-  property transfer documentation is somewhere in that zone. The Calyx claim is real.
+- **His moment alone:** He has the Relic. He could still keep it — carry it on to the ruling
+  Caerglas as the contract demanded, or simply run. Nobody is watching. What happens instead: Orim
+  Zebulun finds him — Orim has been tracking the Relic's scrying residue since Verlaine. Orim shows
+  him what the Rod sees at this range from the eastern plains. What is moving in the Sinter basin,
+  miles below the surface, moving at the rate of change he shows Wren. *How long?* Wren asks. Orim
+  says: *Since Year 1079, at minimum. The rate has been accelerating for eleven years.* Wren sits
+  down in the field with the Relic **case** in his arms and takes a long time to stand back up.
+- **He returns the Relic to Lyra and joins the party.** Not because Lyra asked. Because he has
+  nowhere else to go and because the thing he has been trying to understand since he read that
+  property transfer documentation is somewhere in that zone. The Caerglas claim is real.
   So is this. Both things are true and cannot both be satisfied.
-  **This is convergence, not defection.** Wren does not abandon Calyx's claim for Lyra's cause,
-  and she does not adopt the Liturgy's mission in its place — she arrives, a chapter later than
-  she expected to, at the place she was already walking toward before Lyra ever caught up with
-  her: not a House vault, hers or anyone's, but somewhere the Relic can be acted on. Lyra is
+  **This is convergence, not defection.** Wren does not abandon Caerglas's claim for Lyra's cause,
+  and he does not adopt the Liturgy's mission in its place — he arrives, a chapter later than
+  he expected to, at the place he was already walking toward before Lyra ever caught up with
+  him: not a House vault, his or anyone's, but somewhere the Relic can be acted on. Lyra is
   walking there too, by a different road and for reasons she has not yet named (§0). That the
   two of them meet in the same field is not one converting the other. It is two people who
   arrive, independently, at the same true thing.
-- **Wren and the party:** She arrives with nowhere else to go and a mission she no longer fully
+- **Wren and the party:** He arrives with nowhere else to go and a mission he no longer fully
   believes in. What builds is not performed — it grows in the operational space, in the beats
-  between decisions: the moment Lyra trusts her to take an angle without checking it twice; the
-  moment Orim shows her the Sinter data because she's earned it, not because the mission requires
-  it. By the end she has a place in the party that was never officially offered. The reader
+  between decisions: the moment Lyra trusts him to take an angle without checking it twice; the
+  moment Orim shows him the Sinter data because he's earned it, not because the mission requires
+  it. By the end he has a place in the party that was never officially offered. The reader
   knows. That is sufficient.
-- **Her function in the final act:** She is the Calyx perspective inside Lyra's crew at Sinter.
-  She knows the Long Seat's position on Sinter even though it is not her own House's institution —
-  Calyx has held its own parallel reckoning for as long as Pallor has kept the Long Seat's. She is
-  the one who can say: *the eighth theory belongs to us too. We grew up with it.* She does not
+- **His function in the final act:** He is the Caerglas perspective inside Lyra's crew at Sinter.
+  He knows the Long Seat's position on Sinter even though it is not his own House's institution —
+  Caerglas has held its own parallel reckoning for as long as Pallor has kept the Long Seat's. He is
+  the one who can say: *the eighth theory belongs to us too. We grew up with it.* He does not
   say this until Lyra needs to hear it.
 - **Weapons:** Two Loera-pattern short daggers, worn reversed at the lower back — draw
   crosses both hands simultaneously. Not throwing daggers; close-work, inside grappling
-  range. The blink puts her there. She trains for the moment after the blink, not the
+  range. The blink puts him there. He trains for the moment after the blink, not the
   approach.
-- **Register:** Young, careful, precise in a way that comes from not trusting her first instinct.
-  She asks questions. Esvane answers them. Petra tells her to stop asking questions. Aldric
-  doesn't notice she's asking them, which is the most revealing thing about Aldric.
+- **Register:** Young, careful, precise in a way that comes from not trusting his first instinct.
+  He asks questions. Esvane answers them. Petra tells him to stop asking questions. Aldric
+  doesn't notice he's asking them, which is the most revealing thing about Aldric.
 
 **Vaen — The Pallor Champion** {#SS-VIGL-2c-vaen}
+> **SUPERSEDED (2026-07-14) — see [§Eirene's Gate](#SS-VIGL-gate):** Vaen is no longer a
+> party-vs-Champion boss fight at Caer Glas Moor. She is a **hired Pallor Champion stationed at
+> Eirene's Gate**, and she is **killed by the Sinter Leviathan** during the Sinterspawn incursion
+> shortly after the party arrives — the scale-setter for what waits across the Gate. The material
+> below describes her character truthfully but her *staging/role* is replaced; ignore the Caer Glas
+> boss-fight blocking. Full rewrite pending in the beat-spine pass.
 - Six infusions. Pallor Champion — the last rank before the theoretical limit no living practitioner
   has confirmed. Has been serving Pallor's interests for over forty years. The Pallor Warrior King
   dispatched her alongside the retrieval squad as the final guarantee: if every other layer of the
@@ -835,7 +849,7 @@ discovers who all three were. That is what makes the confrontation land.
   The distinction matters to her. She knows it when it happens.
 - **After:** She is alive. Her six infusions make her very difficult to kill. She withdraws —
   not from cowardice, from recognition: the mission is concluded, the Relic is taken, the squad
-  is gone. Calyx will send another claim in another generation. She has been through three of them.
+  is gone. Caerglas will send another claim in another generation. She has been through three of them.
   She looks at Lyra when she withdraws. She does not speak again. She goes back into the moor.
 - **Register:** Older than anyone in either party. Unhurried. Speaks in complete sentences with
   the economy of someone who has not needed to prove anything in twenty years. The "Little Sister"
@@ -862,7 +876,7 @@ The Verlaine/Atrament war is not background. It is present in every chapter from
   the reason the town is neutral is that both sides need the market more than the territory
 - Atrament: factory output moving east in continuous convoy; the furnaces are running for
   the front; Schmalburg is a transfer node disguised as a city
-- Calyx: the front line runs through the eastern plains; smoke columns; the locals read
+- Caerglas: the front line runs through the eastern plains; smoke columns; the locals read
   them; the party learns to read them from the Eirene-7
 
 **The no-colors engagement rule:** The party has no military affiliation either side
@@ -888,10 +902,10 @@ Rowe knowing what a line looks like when it breaks.
     acquire the *Eirene-7*; they move through its cargo-transfer lines to the impounded hull;
     M-101 body-snatches the Eirene-7's control-mind and flies it out — the ground operation becomes
     an aerial one without a formal discussion having occurred. **From here the journey is by air.**
-9.  Calyx — the plains; monster corridors; the Relic's trace grows warmer; Orim reads it;
-    **active war front** — the Verlaine/Atrament line runs through Calyx's eastern plains;
+9.  Caerglas — the plains; monster corridors; the Relic's trace grows warmer; Orim reads it;
+    **active war front** — the Verlaine/Atrament line runs through Caerglas's eastern plains;
     the party maneuvers around it from the Eirene-7, reading smoke columns to find the gap
-10. **The no-colors engagement (Calyx chapter — exact beat TBD)** — at some point the party
+10. **The no-colors engagement (Caerglas chapter — exact beat TBD)** — at some point the party
     lands in the middle of an active skirmish. The Eirene-7 has no House flag. The party
     has no colors. Both sides open fire indiscriminately. The party kills soldiers from
     both armies to escape. Nobody in the field checks who you are before shooting.
@@ -931,7 +945,7 @@ anything he does.
 | **Ocipheus** | Historical moments — Relics | The archive register: every Relic has a source Sphere and a retrieval year. The year columns are long. Lyra knows this catalogue. She has never thought about the source side. |
 | **Verlaine** | People — Myrmidons conscripted from Spheres | Rowe's intake form in the records office. Standard. One of thousands filed that year. The clerk is bored. **Verlaine documents theirs. The other Houses don't.** |
 | **Atrament** | Materials + creatures — feeds the furnaces | Something in the Heloth yard that is cooling in a trough that is not shaped for slag. Nobody mentions it. The night shift keeps moving. |
-| **Calyx** | Flora + fauna — agricultural Scrying | The monster corridors. A farmer explains the fence-line with the same tone he uses for weather: *They started getting out about sixty years ago. You patch the fence. You hunt what comes through.* |
+| **Caerglas** | Flora + fauna — agricultural Scrying | The monster corridors. A farmer explains the fence-line with the same tone he uses for weather: *They started getting out about sixty years ago. You patch the fence. You hunt what comes through.* |
 | **Pallor** | Infusion Catalyst + Champions | The moor-hounds will not settle near the Relic. Aldric watches them and does not explain why. The infusion Catalyst Orim carries in his preparation kit — Lyra has never asked where it comes from. |
 | **Sinter** | Nothing — Sinter erupts outward | The aperture. The assembled image lands without announcement. No line of dialogue. The reader gets there at the same moment Lyra does. |
 
@@ -941,7 +955,7 @@ anything he does.
 - **Verlaine:** Archival Gate at Bressant (Arnault d'Archival Year 312); Treachery Quarter; *L'Accord* barge; fog off the lowlands
 - **Three Points:** neutral ground since the early Compact; no House stations forces here; the place where three powers agree the only thing worse than sharing is fighting. **Act 1 ends here.** The party learns here that an impounded airship — the *Eirene-7* — is held at Sal Vento, a Loera cliff-side port.
 - **Atrament:** Schmalburg named for the Battle of the Small Fortress Year 701; Ignamund Unburnt's *Ewige Flamme* in the capital; Forge Hearth Hearth-One through Hearth-Eleven. **Wylla Mother of Men** — a Caul invocation Lyra overhears an officer give to his column before they march south-east toward The Pass. The troops repeat it like a ward: *Wylla Mother of Men.* Not a prayer exactly — more like a name you say out loud to mean *I know where I come from.* Who or what Wylla is is not explained to the reader. That is deliberate. Lyra files it and moves on.
-- **Calyx:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna escaping from agricultural Scrying for generations. The war runs through the middle of it — the Verlaine/Atrament front line cuts across Calyx's eastern territory; the locals have learned which smoke columns mean artillery and which mean a brush fire. The party maneuvers around engagements for two chapters. Then they stop being able to. The no-colors engagement is here.
+- **Caerglas:** Great plains under wide sky; monster incursion corridors; people who farm the same land they hunt creatures on; Sphere fauna escaping from agricultural Scrying for generations. The war runs through the middle of it — the Verlaine/Atrament front line cuts across Caerglas's eastern territory; the locals have learned which smoke columns mean artillery and which mean a brush fire. The party maneuvers around engagements for two chapters. Then they stop being able to. The no-colors engagement is here.
 - **Pallor:** Upland moor and fjord coast; fog that comes in fast; the heather that phosphoresces at night; no House insignia anywhere; Caer Glas Moor at the heart of it; the last ungoverned land before the strait
 - **The Pass / Eirene's Gate:** named for Eirene, last Sinter Champion, who died here Year 1081; *Sinter remembers even if we don't*; towers on both banks; the stamp; the departure log on ruled paper; the narrow water between the Caul and everything else
 - **Sinter:** not a zone. A reckoning.
@@ -1482,7 +1496,7 @@ local problems.
 |---|---|---|
 | **Ocipheus / Verlaine** | Occasionally unusual. Livestock born wrong. A river creature that doesn't behave like its kind. Rare enough to be singular events. | Ill omen. Unlucky birth. That farm's been cursed for years. |
 | **Three Points / Atrament** | More frequent. Something in the maintenance yards that leaves prints no engineer can identify. The ember-fungi growing in configurations that weren't planned. | Sphere leakage. A known hazard. The foremen know which tunnels to avoid at night. |
-| **Calyx** | The monster corridors. Sphere fauna escaped from agricultural Scrying decades ago and crossbred with local predators. The hybrids are large, territorial, and getting larger. The fences are newer every generation. | The monster problem. A management issue. You farm, you fence, you hunt what comes through. |
+| **Caerglas** | The monster corridors. Sphere fauna escaped from agricultural Scrying decades ago and crossbred with local predators. The hybrids are large, territorial, and getting larger. The fences are newer every generation. | The monster problem. A management issue. You farm, you fence, you hunt what comes through. |
 | **Pallor** | The moor-hounds were bred specifically to track hybrids — that is the original purpose of the six-legged tracking animal. Pallor's warrior culture exists because something needs to be killed regularly and it takes an infused practitioner to do it reliably. Vaen's six infusions are not prestige. They are necessity. | The creatures of the moor. The old names. The reason the Champion exists. |
 | **The Pass / Eirene's Gate** | The departure log is not bureaucracy. It is a count of who crossed and did not return. The soldiers on rotation know what they're patrolling for. The stamp and the ruled paper are the interface between the Caul and what is not the Caul anymore. | The crossing hazard. Vigil rotation. Standard patrol doctrine. |
 | **Sinter** | Origin. Pure zone emergence and seven centuries of offspring. The hybrids here are stable enough to have bred for generations. The Eaters of Monsters hunt the crawlers because crawlers are the most predictable thing in the zone — everything else is worse. | Nothing. Nobody names them. Naming them implies you'll be talking to someone who hasn't seen them. |
@@ -1501,7 +1515,7 @@ paperwork. Every House in the Compact keeps servants, laborers, and soldiers who
 through the membrane involuntarily. Verlaine is the only House that calls it a system. The
 others call it something else — or nothing at all. The Caul's labor base, at its lowest
 strata, is people from other realities who did not choose to be here. The peasant shoveling
-slag in an Atrament yard. The woman weaving in a Calyx farmhouse. The soldier who follows
+slag in an Atrament yard. The woman weaving in a Caerglas farmhouse. The soldier who follows
 orders without knowing which orders are real.
 
 Everyone who has ever disappeared without explanation in any Sphere the membrane touches
@@ -1618,7 +1632,7 @@ No one is outside the conflict. Every House has chosen a position — not ideolo
 | **Atrament** | Belligerent — the forge | Unlimited purchase orders from both Verlaine and, quietly, from Atrament's own black-market resale to Verlaine's enemies | The Forge Masters have no loyalty to each other beyond the Hearth Table vote; the war keeps them unified because peace would fracture them |
 | **Ocipheus** | Isolationist by doctrine; dragged in by reality | The island wants no part of the war; the Liturgy's canonical authority makes it impossible to stay out — both sides demand adjudication, and refusing to adjudicate means choosing a side | Prelacze has converted Ocipheus's forced participation into personal leverage; the island is isolationist; the Canon Immaculate is not; his power depends on the war continuing at adjudicable levels |
 | **Loera** | Plays both sides — supply and intelligence | Runs cargo for Verlaine; runs cargo for Atrament; runs intelligence for both simultaneously; the information differential is the profit | If either side discovers they're doubled, Loera's independence ends; they stay alive by knowing more than either belligerent can verify |
-| **Calyx** | Coerced breadbasket — feeds both sides | Guaranteed purchase contracts, paid in whatever currency the buying army uses | They have no army worth naming; they cannot refuse either side without being occupied; they feed Verlaine and Atrament simultaneously and call this neutrality; the monster corridors expand because war economics demand more farmland every generation |
+| **Caerglas** | Coerced breadbasket — feeds both sides | Guaranteed purchase contracts, paid in whatever currency the buying army uses | They have no army worth naming; they cannot refuse either side without being occupied; they feed Verlaine and Atrament simultaneously and call this neutrality; the monster corridors expand because war economics demand more farmland every generation |
 | **Pallor** | Mercenary Champions — the only thing Pallor exports | Pallor has no industry, no agriculture worth naming, no navy. What it has is a culture that produces highly-infused individual warriors faster than any other House. Both Verlaine and Atrament hire them for breakthrough operations, assassination, and situations where an infused Champion turns a battle. The fee is paid in Catalyst, which Pallor uses to infuse the next generation of Champions. | Independence maintained entirely by being too useful to either side to absorb — conquering Pallor would mean the other side gets the Champion pipeline instead. The equilibrium holds. For now. |
 
 **What the war does to the membrane:**
@@ -1678,7 +1692,7 @@ for each House (soil, coast, weather, light). Names, cultures, and history are t
 
 | House | What it is (one line) | Terrain & climate template | Sensory tell |
 |---|---|---|---|
-| **Calyx** | Coerced **breadbasket**; feeds both armies; no army; lost the Relic at Caer Glas (Yr 972). | Vast flat farmland — Ukraine / the Pannonian (Hungarian) plain / the Beauce. Warm-continental, huge skies, nowhere to hide. | Fenced fields; farmers who hunt escaped monster-corridor fauna like they read weather. |
+| **Caerglas** | Coerced **breadbasket**; feeds both armies; no army; lost the Relic at Caer Glas (Yr 972). | Vast flat farmland — Ukraine / the Pannonian (Hungarian) plain / the Beauce. Warm-continental, huge skies, nowhere to hide. | Fenced fields; farmers who hunt escaped monster-corridor fauna like they read weather. |
 | **Pallor** | **Warrior culture**; exports mercenary Champions (Vaen); ungoverned; holds the Long Seat. | Cold fjord coast + upland moor — **Scandinavian / Norwegian** (fjords, cold maritime north, fog). **NOT Scotland** (that reads as Ocipheus/Britain). | Phosphorescent heather; moor-hounds; no insignia; "Pallor does not petition; it sends Vaen." |
 | **Loera** | Plays **both sides** — sea cargo + intelligence; corsair/navigator republic; the **blink** thieving-arts. | Rocky maritime cliff-coast — Ligurian/Amalfi or Adriatic (Genoa/Venice/Dalmatia). Warm, salt-wind. | Cliff harbors (Sal Vento); route-record captains; every cargo run is also reconnaissance. |
 | **Verlaine** | Belligerent — **the army**; militarized state; the Myrmidon (mind-theft) intake; general-staff rule. | Continental military heartland — Prussia / militarized northern France. Cantonment plains, garrison towns. | Conscription; the whole state is a corps; black jointed automata. |
@@ -1698,45 +1712,59 @@ Europe — only the ground is (names, cultures, history are the Caul's own). Can
 | **Verlaine** | **France + Italy** |
 | **Atrament** | **Germany through the Balkans to Greece** (Central + Southeast Europe) |
 | **Pallor** | **Scandinavia** (Norway/Sweden/Finland) — the north |
-| **Calyx** | **Eastern Europe** — Belarus, Ukraine, Romania, Bulgaria |
+| **Caerglas** | **Eastern Europe** — Belarus, Ukraine, Romania, Bulgaria |
 | **Sinter** | **Turkey / Asia Minor — and everything beyond (east)** |
 | **The Southlands** | **North Africa** (the Maghreb, across the southern sea) |
 
 **Seas:** the **Inner Sea** is the Caul's name for the **Mediterranean**; the **Southlands** (North
 Africa) lie across its southern shore. **Eirene's Gate = the strait between Europe and Asia Minor** —
 the **Bosphorus / Dardanelles** (fits the container LOCK: "seven hundred meters of water, humans hold
-both banks"). It is the crossing from the mainland's southeast edge (**southern Calyx**, the Thracian
+both banks"). It is the crossing from the mainland's southeast edge (**southern Caerglas**, the Thracian
 Marmara coast — e.g. **Tekirdağ**) **into Sinter.** Sinter's template is **Anatolian** (Turkey and the
 east) — **not** sub-Arctic.
 
-**Pallor vs Calyx (the pair most easily confused):** mirror opposites. **Calyx grows food and has no
+**Pallor vs Caerglas (the pair most easily confused):** mirror opposites. **Caerglas grows food and has no
 army** (the eastern breadbasket — Ukraine/Romania). **Pallor grows warriors and has no food** (the
 northern fjord-and-moor war-band — Scandinavia). One feeds the war; the other fights it for hire.
 
 **Itinerary (1:1 map) {#SS-VIGL-itinerary}:** The party runs **west → southeast**: **Ocipheus (theft)
 → Verlaine (France/Italy) → into Atrament around Vienna** (never Hamburg — the crossing is
-central/southern, not the northern port) **→ into Calyx through Uzhanskyi National Park** (the
-Carpathian border) **→ southern Calyx**, converging at **Tekirdağ** on the Marmara (the mouth of
+central/southern, not the northern port) **→ into Caerglas through Uzhanskyi National Park** (the
+Carpathian border) **→ southern Caerglas**, converging at **Tekirdağ** on the Marmara (the mouth of
 Eirene's Gate), where **Vega** meets them **→ across Eirene's Gate (Bosphorus/Dardanelles) into
 Sinter.** Sinter lies southeast, not north; the old "north to Pallor → Sinter" leg is **retired**.
 **Escalation LOCK:** the encounters grow **worse the closer they get to Sinter** — the world rots by
 degrees; each leg is more horrible than the last, peaking at the Cavity (monotonic dread curve).
 
-**Caer Glas Moor — SALVAGED into Calyx {#SS-VIGL-caerglas}:** Caer Glas Moor **relocates from Pallor to
-Calyx.** It is the **Caerglas family's Calyx ancestral seat** (Aldric = Calyx Knight; Wren named for it)
-and the site of the **Battle of Nine Days** (Year 972) where Calyx lost the Oculus on its *own* soil —
-fixing the old contradiction (a Calyx family + a Calyx loss no longer stranded in Pallor). Because the
-party crosses **Calyx** on the SE route, Caer Glas Moor is now **on-route**: the **Blink-Thief intercept**
+**Caer Glas Moor — SALVAGED into Caerglas {#SS-VIGL-caerglas}:** Caer Glas Moor **relocates from Pallor to
+Caerglas.** It is the **Caerglas family's Caerglas ancestral seat** (Aldric = Caerglas Knight; Wren named for it)
+and the site of the **Battle of Nine Days** (Year 972) where Caerglas lost the Oculus on its *own* soil —
+fixing the old contradiction (a Caerglas family + a Caerglas loss no longer stranded in Pallor). Because the
+party crosses **Caerglas** on the SE route, Caer Glas Moor is now **on-route**: the **Blink-Thief intercept**
 happens here (Esvane and Petra die; Wren blinks and later joins), it gives **Wren a homecoming**, and
-the **"Long Seat / Eighth Theory"** scene relocates to **Calyx's own parallel reckoning-body** at Caer
-Glas Moor (canon already grants Calyx a parallel reckoning to Pallor's Long Seat). **Aldric** remains the
-confrontation, in Calyx; **Vaen** is at Eirene's Gate (the leviathan), not here. Beats 2300/2400 are
-relocated Pallor→Calyx accordingly (setting/terrain updated; the moor's fog + heather become a Calyx
+the **"Long Seat / Eighth Theory"** scene relocates to **Caerglas's own parallel reckoning-body** at Caer
+Glas Moor (canon already grants Caerglas a parallel reckoning to Pallor's Long Seat). **Aldric** remains the
+confrontation, in Caerglas; **Vaen** is at Eirene's Gate (the leviathan), not here. Beats 2300/2400 are
+relocated Pallor→Caerglas accordingly (setting/terrain updated; the moor's fog + heather become a Caerglas
 upland). **LOCKED (2026-07-14):** the team **never visits Loera or Pallor as regions.** Caer Glas Moor
-is no longer *in* Pallor — it is now the Caerglas seat in **Calyx**, on-route (per the salvage above),
+is no longer *in* Pallor — it is now the Caerglas seat in **Caerglas**, on-route (per the salvage above),
 so it *is* visited. **Vaen** is a **hired Pallor Champion dispatched to Eirene's Gate** ("Pallor sends
 Vaen"), where the sea-leviathan kills her; Pallor itself stays off-screen — Wren's and Vaen's **origin**
-only. The old "Pallor" beats (2300 Caer Glas Moor; 2400 the Long Seat) are **relocated to Calyx**, not cut.
+only. The old "Pallor" beats (2300 Caer Glas Moor; 2400 the Long Seat) are **relocated to Caerglas**, not cut.
+
+**Caerglas economy — grain to both armies {#SS-VIGL-caerglas-econ}:** Caerglas is the breadbasket that
+feeds **both** belligerents without joining the war: it ships **grain west to Verlaine (through Italy)**
+and **east over the border to Atrament**, supplying both hungry armies and collecting both armies' coin.
+Neutrality as commerce — the posture that keeps the war grinding (war-economics table), and the cover
+under which Caerglas goods, wagons, and people move (useful to the crew's approach).
+
+**The crew's race to Caer Glas — chase & Wren mistreated {#SS-VIGL-chase}:** The crew reach Caer Glas
+Moor **earlier than expected** because they know they are being run down by a **Templar (Lyra), a
+Myrmidon (Rowe), and an old scryer (Orim)** — a pursuit grave enough to force the pace. **Beats needed
+(fold into the beat-spine pass):** Wren **riding hard ahead** of the pursuers, and **Wren mistreated by
+his own crew** — the highborn outsider who fights like a Loera thief (Esvane uses him, Petra needles
+him, Aldric barely sees him). His motive holds regardless: **it is what he was trained to do, and he has
+Caerglas blood — familial loyalty to the House**, however distant the cousinship.
 
 **Greymarch {#SS-VIGL-sinter-geo}:** the **blighted march on the Sinter side of Eirene's Gate** — the
 emptied farmsteads and dead-zone the party crosses after the Gate, before the crater rim (as used in
@@ -1753,7 +1781,7 @@ message-birds** (cliché; out).
   routes. **Lyra, a Templar on Liturgy orders, stops at them naturally** to wire reports and collect
   dispatches — so she moves the whole book looking exactly like an officer on assignment. This is how
   Vega's rendezvous (Tekirdağ; the window) reaches her: a wired dispatch caught at a station on the
-  Calyx approach. *(The "dispatch note" in the beat "She Goes to Sinter.")*
+  Caerglas approach. *(The "dispatch note" in the beat "She Goes to Sinter.")*
 - **Templars are supra-House:** Templars serve the **Liturgy, not any House**, so Templar stations and
   their wire exist **anywhere the Liturgy holds sway — effectively everywhere**, crossing House borders
   freely. That is why a wired dispatch **outruns a courier on a moor-hound** (the fast overland
@@ -1768,7 +1796,7 @@ message-birds** (cliché; out).
   ever going there).
 - **Prearranged rendezvous** — because comms lag, plans are set in advance with a window and fallbacks.
   **The party knows Vega is bound for Tekirdağ because it was arranged before she sailed**, then
-  confirmed by a dispatch that caught up to Lyra at a Calyx waypoint — never a live signal. The lag
+  confirmed by a dispatch that caught up to Lyra at a Caerglas waypoint — never a live signal. The lag
   (did it get through? will she make the window?) is usable tension.
 
 **Vega — new party member (to brief) {#SS-VIGL-vega}:** From **Ocipheus (Great Britain)**, and
@@ -1779,7 +1807,7 @@ Liturgy's own enforcement arm (the Vigil), so the reveal is a collision of famil
 The truth is the "real reason for things," which recontextualizes what the Oculus is for. **Her route:**
 she **escapes Ocipheus** and takes a **ship** — south around
 **Loera** (Iberia/Gibraltar), out across the **Inner Sea**, past the **boot of Verlaine** (Italy) and
-the **scattered southern islands of Atrament** (the Aegean), to a **port in southern Calyx — Tekirdağ**
+the **scattered southern islands of Atrament** (the Aegean), to a **port in southern Caerglas — Tekirdağ**
 on the Marmara, at the mouth of Eirene's Gate — where she **meets the party** and joins for the crossing
 into Sinter. **Wren and Vega fall in love** (the Loera-merc rogue and the Ocipheus truth-bearer). (Needs
 a full brief + blueprint per the New-Story workflow before her scenes are written; flagged as planned.)
@@ -2113,7 +2141,7 @@ ending recontextualizes the whole. Each realm should feel like entering a new zo
 - **Verlaine** — wintry military state; conscript culture; WW1 rifles in stone barracks; fog off the lowlands
 - **Three Points** — neutral ground; no House insignia on any wall; the smell of river-port commerce and quiet menace
 - **Atrament** — industrial thunder; the Forge Kingdom; factories that never stop; ember-fungi glow on the yards at night
-- **Calyx** — breadbasket and monster corridor; flat plains that offer nowhere to hide; people who farm the same land they hunt creatures on; the monsters are escaped Scrying imports
+- **Caerglas** — breadbasket and monster corridor; flat plains that offer nowhere to hide; people who farm the same land they hunt creatures on; the monsters are escaped Scrying imports
 - **Pallor** — the moor before the water; phosphorescent heather; fog that erases landmarks; Caer Glas vault in the dark; Vaen steps out of the moor and the world gets smaller
 - **The Pass** — Eirene's Gate; two fortified towers; the strait between everything safe and everything else; the departure log, the stamp, the walk to the boat
 - **Sinter** — not a zone. A reckoning.
@@ -2155,7 +2183,7 @@ and the Sinter zone chapter) + 3 Rowe chapters + 4 Scribe chapters.
 **Sinter is the climactic final destination** — not a transit point. Prelacze suspended
 Lyra's Vigil crossing authority when he learned she was in pursuit; she cannot cross The Pass
 until the story's climax forces it. The full journey runs east across the Caul — Verlaine,
-Three Points, Atrament, Calyx, the Balkan approaches — before converging at Eirene's Gate.
+Three Points, Atrament, Caerglas, the Balkan approaches — before converging at Eirene's Gate.
 All parties meet at the Sinter aperture. That is where the Relic does what the Relic does.
 
 ---
@@ -2207,7 +2235,7 @@ walls. The fold trace is readable by a skilled Scryer within 4–6 hours.
 Orim Zebulun was the contracted Keeper. He did not read it in time. This is why he is ashamed.
 
 **At the intercept — what Lyra learns when she catches them:**
-Three members: Esvane (operational commander, Calyx Lector), Petra (fixer), Wren (the fold-adept).
+Three members: Esvane (operational commander, Caerglas Lector), Petra (fixer), Wren (the fold-adept).
 Esvane and Petra die in the confrontation. Wren folds through a stone wall with the Relic.
 Orim finds her in the field. Wren returns the Relic. She joins. She does not explain herself.
 Her past is revealed in pieces through the party dynamic over the rest of the book.
@@ -2648,7 +2676,7 @@ That is what comes next.
 | 21a | 5380 | 019F612A | Greymarch — The Empty Farmsteads | LYRA | Infested farms (Sinterspawn nesting in corpses); loft night, M-101 on guard; hijacked deer, burrowing paralytic scorpions, corpse-fusion abominations, face-worms, ichor-birds; scan "signal degraded" (seeds off-catalogue) | horror-combat (esc 8) |
 | 21b | 5378 | 019F60D1-1CA7 | Sinterspawn — the Eaters at the Perimeter | LYRA | Sinterspawn; scan returns OFF-CATALOGUE (first landed reveal); the Eaters hunt; feeds the revelation | horror-combat (esc 8) |
 | 22 | 5296 | 37B58D26 | The Relic — What the Eye Has Seen | LYRA | The 397→1138 time-lapse revelation | revelation (esc 8) |
-| 23 | 5297 | 9BA2CF72 | The Long Seat — The Eighth Theory | LYRA | Theory undisclosed; Wren the Calyx view | intertextual (Twr Brennid) (esc 6) |
+| 23 | 5297 | 9BA2CF72 | The Long Seat — The Eighth Theory | LYRA | Theory undisclosed; Wren the Caerglas view | intertextual (Twr Brennid) (esc 6) |
 | 24 | 5299 | 367915A7 | The Aperture — What Loyalty Means | LYRA | Climax; writ refused; Aldenvast gift | **setpiece #5 (refusal)** / resolution (esc 10) |
 
 *BeatIds abbreviated where unambiguous; full GUIDs in the DB (`Beats.Id`) and the blueprint tags
