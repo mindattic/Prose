@@ -160,6 +160,29 @@ public class NarrativeChartService(IDbContextFactory<StreetSamuraiDbContext> dbF
         if (allCharacters.Count == 0)
             allCharacters = ExtractCharactersFromBeatGoals(beatRows.Select(b => b.Description ?? "").ToList());
 
+        // Bigram extraction misses single-word handles (Kyle, Sasha, Bear).
+        // Supplement from the entity DB: character-type entities in this universe
+        // whose name (or first name) appears in any beat goal.
+        if (allCharacters.Count < 3)
+        {
+            var universeId = await db.Nodes.AsNoTracking()
+                .Where(n => n.Id == nodeId)
+                .Select(n => n.UniverseId)
+                .FirstOrDefaultAsync(ct);
+            var allGoalsLower = string.Join(" ", beatRows.Select(b => b.Description ?? "")).ToLowerInvariant();
+            var entityChars = await db.Entities.AsNoTracking()
+                .Where(e => e.IsActive && e.UniverseId == universeId
+                         && (e.EntityType == "character" || e.EntityType == "person"))
+                .Select(e => e.Name)
+                .ToListAsync(ct);
+            var mentioned = entityChars
+                .Where(n => !string.IsNullOrEmpty(n)
+                         && allGoalsLower.Contains(n.Split(' ')[0].ToLowerInvariant()))
+                .Take(15)
+                .ToList();
+            allCharacters = allCharacters.Union(mentioned, StringComparer.OrdinalIgnoreCase).ToList();
+        }
+
         // Build chart events and cross-sections
         var chartEvents = new List<ChartEvent>();
         var crossSections = new List<BeatCrossSection>();

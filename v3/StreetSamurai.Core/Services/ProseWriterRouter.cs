@@ -254,7 +254,9 @@ public class ProseWriterRouter(
                     .ToHashSet(StringComparer.OrdinalIgnoreCase);
                 var claims = continuity.GetByStatus("CANONICAL")
                     .Concat(continuity.GetByStatus("CONFIRMED"))
-                    .Where(c => sceneNames.Contains(c.EntityName))
+                    .Where(c => sceneNames.Any(n =>
+                        c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) ||
+                        n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
                     .Take(24)
                     .ToList();
                 if (claims.Count > 0)

@@ -14,7 +14,7 @@ public class BeatModeDetector(IDbContextFactory<StreetSamuraiDbContext> dbFactor
 {
     static readonly string[] CombatKw    = ["fight", "blade", "gun", "shot", "combat", "battle", "clash", "kill", "kills", "attack", "attacks", "dodge", "chase", "chased", "ambush", "standoff", "firefight", "brawl", "shoot", "stab", "punches", "evade", "escapes", "shootout"];
     static readonly string[] EmotionalKw = ["grief", "loss", "mourning", "hollow", "breaks down", "confront truth", "confess", "confession", "face the cost", "falls apart", "weeping", "weeps", "processes"];
-    static readonly string[] DialogueKw  = ["negotiation", "interrogation", "interview", "debrief", "argument", "confrontation", "meeting", "talks", "convinces", "persuades"];
+    static readonly string[] DialogueKw  = ["negotiation", "interrogation", "interview", "debrief", "argument", "confrontation", "meeting", "talks", "convinces", "persuades", "asks", "tells", "says", "proposes", "warns", "informs", "explains", "demands", "admits", "denies", "threatens", "bargains", "conversation", "exchange", "speaks", "addresses", "queries", "questions"];
     static readonly string[] TransitionKw = ["travels", "commutes", "arrives", "departs", "moves through", "en route", "journey"];
     static readonly string[] RevelationKw = ["discovers", "realizes", "learns", "uncovers", "decodes", "solves", "pieces together"];
 
