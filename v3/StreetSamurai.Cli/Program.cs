@@ -348,6 +348,23 @@ if (args.Contains("--scan-entity-mentions"))
     return;
 }
 
+// CLI mode: backfill Entities.Status = 'stub' / 'canon' based on BeatEntityMentions.
+//   ss --backfill-stubs
+// Entities with no BeatEntityMentions row → Status='stub' (excluded from universe graph).
+// Entities that ARE mentioned → Status='canon'. Re-run after --scan-entity-mentions.
+if (args.Contains("--backfill-stubs"))
+{
+    var sp = BuildCoreServices(args);
+    var db2 = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+    await using var ctx2 = await db2.CreateDbContextAsync();
+    var promoted = await ctx2.Database.ExecuteSqlRawAsync(
+        "UPDATE Entities SET Status = 'canon', ModifiedAt = SYSUTCDATETIME() WHERE IsActive = 1 AND Status != 'canon' AND Status != 'archived' AND Id IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
+    var demoted = await ctx2.Database.ExecuteSqlRawAsync(
+        "UPDATE Entities SET Status = 'stub', ModifiedAt = SYSUTCDATETIME() WHERE IsActive = 1 AND Status != 'stub' AND Status != 'archived' AND Id NOT IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
+    Console.WriteLine($"[backfill-stubs] promoted={promoted} canon, demoted={demoted} stub.");
+    return;
+}
+
 // CLI mode: dump canon JSON to the user's Downloads folder.
 //   ss --export global                every repo, zipped + timestamped
 //   ss --export <repoName>            one repo, zipped (e.g. "people", "weaponry")
