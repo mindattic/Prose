@@ -2024,11 +2024,15 @@ public class NodeWorkbenchService
 
             await audioStore.WriteCombinedAsync(node.Slug, ext, finalBytes, ct);
 
-            // Write to the same publish dir/subdir as DocxExportService:
-            //   {PublishExportDirectory}/{SanitizedTitle}/{SanitizedTitle} {EngineLabel} V{N}.{ext}
-            var publishBase = (settings?.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-            if (string.IsNullOrWhiteSpace(publishBase))
-                publishBase = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            // Write to the same per-universe publish dir/subdir as DocxExportService:
+            //   {ExportDir(universe)}/{SanitizedTitle}/{SanitizedTitle} {EngineLabel} V{N}.{ext}
+            var universeSlug = await db.Universes.AsNoTracking()
+                .Where(u => u.Id == node.UniverseId)
+                .Select(u => u.Slug)
+                .FirstOrDefaultAsync(ct);
+            var publishBase = settings is null
+                ? Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+                : settings.GetExportDirectory(universeSlug);
             var safeTitle = SafeFileName(string.IsNullOrWhiteSpace(node.Title) ? node.Slug : node.Title);
             var nodePubDir = Path.Combine(publishBase, safeTitle);
             Directory.CreateDirectory(nodePubDir);

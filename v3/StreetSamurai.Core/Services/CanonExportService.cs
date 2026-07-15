@@ -25,6 +25,7 @@ public class CanonExportService
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ExportDiscoveryService discovery;
     private readonly SettingsService settings;
+    private readonly IUniverseContext universe;
     private readonly ILogger<CanonExportService> log;
     private static readonly JsonSerializerOptions PrettyOpts = new()
     {
@@ -36,11 +37,13 @@ public class CanonExportService
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ExportDiscoveryService discovery,
         SettingsService settings,
+        IUniverseContext universe,
         ILogger<CanonExportService> log)
     {
         this.dbFactory = dbFactory;
         this.discovery = discovery;
         this.settings = settings;
+        this.universe = universe;
         this.log = log;
     }
 
@@ -63,14 +66,15 @@ public class CanonExportService
         return hit;
     }
 
-    /// <summary>Resolved publish directory for canon exports — created if missing.</summary>
+    /// <summary>Resolved publish directory for canon exports — created if missing.
+    /// Canon queries are scoped to the ambient universe, so exports land in that
+    /// universe's folder (e.g. …\GLMZ) via the same per-universe resolution the
+    /// manuscript exporters use.</summary>
     private string PublishDir
     {
         get
         {
-            var dir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-            if (string.IsNullOrWhiteSpace(dir))
-                dir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            var dir = settings.GetExportDirectory(universe.CurrentSlug);
             Directory.CreateDirectory(dir);
             return dir;
         }

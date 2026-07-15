@@ -59,6 +59,11 @@ public class AudiblePackageService
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId)
+            .Select(u => u.Slug)
+            .FirstOrDefaultAsync(ct);
+
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
         var beatIds = ordered.Select(ob => ob.Beat.Id).ToList();
 
@@ -78,8 +83,9 @@ public class AudiblePackageService
             .OrderBy(n => n)
             .ToList();
 
-        // Resolve output directory.
-        var publishRoot = ResolveExportDir();
+        // Resolve output directory — per-universe, so the Audible package sits in
+        // the same universe folder as the node's manuscript exports.
+        var publishRoot = settings.GetExportDirectory(universeSlug);
         var safeTitle   = SanitizeTitle(node.Title);
         var audibleDir  = Path.Combine(publishRoot, safeTitle, "Audible");
         Directory.CreateDirectory(audibleDir);
@@ -313,14 +319,6 @@ public class AudiblePackageService
     }
 
     // ── helpers ────────────────────────────────────────────────────────────────
-
-    private string ResolveExportDir()
-    {
-        var dir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-        if (string.IsNullOrWhiteSpace(dir))
-            dir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-        return dir;
-    }
 
     private static string SanitizeTitle(string title)
     {

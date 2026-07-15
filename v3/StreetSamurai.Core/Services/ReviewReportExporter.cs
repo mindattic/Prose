@@ -36,26 +36,22 @@ public sealed class ReviewReportExporter
         this.dbFactory = dbFactory;
     }
 
-    /// <summary>The publish root — same resolution as the manuscript exports
-    /// (configured <see cref="SettingsService.PublishExportDirectory"/>, else Desktop).</summary>
-    private string PublishRoot()
-    {
-        var dir = (settings.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-        if (string.IsNullOrWhiteSpace(dir))
-            dir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-        return dir;
-    }
-
     /// <summary>The node's own publish folder: publish-root + its series/book ancestry
     /// (top-down) + its title — byte-for-byte the layout ManuscriptExportService uses, so
-    /// the report sits in the same folder as the node's .docx/.pdf/.epub.</summary>
+    /// the report sits in the same folder as the node's .docx/.pdf/.epub. The root is
+    /// resolved per-universe (same as the exporters) so the report can't land in a
+    /// different universe than the manuscript it accompanies.</summary>
     private async Task<string> NodePublishDirAsync(Guid nodeId, string title, CancellationToken ct)
     {
         var ancestors = new List<string>();
+        string? universeSlug;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var parentId = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
-                .Select(s => s.ParentNodeId).FirstOrDefaultAsync(ct);
+            var self = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
+                .Select(s => new { s.ParentNodeId, s.UniverseId }).FirstOrDefaultAsync(ct);
+            universeSlug = self is null ? null : await db.Universes.AsNoTracking()
+                .Where(u => u.Id == self.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
+            var parentId = self?.ParentNodeId;
             for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
             {
                 var parent = await db.Nodes.AsNoTracking().Where(s => s.Id == pid)
@@ -65,7 +61,7 @@ public sealed class ReviewReportExporter
                 parentId = parent.ParentNodeId;
             }
         }
-        var parts = new List<string> { PublishRoot() };
+        var parts = new List<string> { settings.GetExportDirectory(universeSlug) };
         parts.AddRange(ancestors);
         parts.Add(SanitizeTitle(title));
         return Path.Combine(parts.ToArray());
