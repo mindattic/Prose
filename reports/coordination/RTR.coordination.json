@@ -1,0 +1,272 @@
+{
+  "nodeCode": "RTR",
+  "slug": "read-the-room-019f4990",
+  "title": "Read the Room",
+  "generatedAtUtc": "2026-07-15 01:30:55Z",
+  "totalBeats": 14,
+  "covered": 14,
+  "chapterGranular": false,
+  "storyScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "external",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "avalanche",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true
+  },
+  "flagCounts": {
+    "UNSCORED": 8
+  },
+  "beats": [
+    {
+      "BeatId": "019f4991-c549-7d5d-b3b1-3d7de46e789b",
+      "Number": 5199,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes Ethan\u0027s world and its textures \u2014 the AR-free green room, the post-performance crash, the band\u0027s quiet rhythms \u2014 grounding the reader in a specific milieu before pressure arrives.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 6021,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-b781-79f0-8237-ed8af217cf2a",
+      "Number": 5198,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Introduces Dayo and his associates to populate the green room with distinct social weights, signaling the layered trust economy the band operates within.",
+      "EscalationTarget": "3",
+      "EventType": "exchange",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 7190,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-a9d8-7d23-b7d2-953bb0d5b377",
+      "Number": 5197,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Presents the night\u0027s substances as character choices, letting each person\u0027s relationship to risk and sensation define them before the plot demands anything of them.",
+      "EscalationTarget": "4",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 6349,
+      "Score": 80,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-9c16-7729-ad91-7b1444febeaf",
+      "Number": 5196,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals the Candor is doing something stranger to Faith than advertised, seeding the reader\u0027s suspicion that her perception exceeds chemical explanation.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 6820,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-8e4f-746f-b96b-8244381c9a99",
+      "Number": 5195,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Turns Faith from passive observer to active threat-reader, escalating stakes by revealing four hostile presences and forcing her to choose who to save first.",
+      "EscalationTarget": "6",
+      "EventType": "vigil",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 10797,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-8086-7bc4-83bb-a9127ea14106",
+      "Number": 5194,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Pays off Faith\u0027s threat assessment by launching the escape, converting the green room\u0027s safety into danger and testing whether her perception holds under physical pressure.",
+      "EscalationTarget": "7",
+      "EventType": "escape",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 6201,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-72b3-7b5b-a7aa-e1ffa1727fdc",
+      "Number": 5193,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Escalates Ethan\u0027s dawning awareness that Faith\u0027s navigation is not luck, planting the question of her true nature as the chase strips away every other distraction.",
+      "EscalationTarget": "7",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 8153,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-64f7-7546-a175-9c325a796902",
+      "Number": 5192,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Forces Faith to abandon her cover story and name her ability aloud for the first time, turning the beat on mutual vulnerability rather than explanation.",
+      "EscalationTarget": "8",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 7440,
+      "Score": 81,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-5727-7bb7-beff-51333192309b",
+      "Number": 5191,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals the cost of the raid through Dayo\u0027s wound and Mona\u0027s stillness, anchoring the escape\u0027s adrenaline in concrete loss and Faith\u0027s instinctive, embodied competence.",
+      "EscalationTarget": "7",
+      "EventType": "loss",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 7532,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-4958-7316-9bed-5b7b7cc368b9",
+      "Number": 5190,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Delivers Ethan\u0027s emotional reckoning with Mona\u0027s survival and Dayo\u0027s fate through restrained listening, showing grief and relief arriving simultaneously without release.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 6968,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-3b8b-73bb-be26-c9cf2fc2165e",
+      "Number": 5189,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes Faith\u0027s unspoken telepathic link with Ethan as a functional, intimate shorthand, reframing her ability from threat to partnership.",
+      "EscalationTarget": "9",
+      "EventType": "approach",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 7972,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-2dab-704c-87b8-fc622279fbcd",
+      "Number": 5188,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals Faith\u0027s power as moral intelligence, distinguishing between men who can be reasoned with and dangers that must be avoided, building tactical trust between her and Ethan.",
+      "EscalationTarget": "9",
+      "EventType": "reconnaissance",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 7280,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-1fbe-784f-92fb-e0e08f1bec14",
+      "Number": 5187,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Turns the scene\u0027s power dynamic by showing Koss has already outmaneuvered Ethan geometrically, escalating stakes while Mona\u0027s silent look pays off four years of suppressed feeling.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 7037,
+      "Score": 89,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4991-113a-72e9-99a6-894ef84fa22f",
+      "Number": 5186,
+      "Chapter": "Read the Room",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Pays off Faith\u0027s empathic ability as vulnerability rather than weapon, while exposing Ethan\u0027s guilt and helplessness to strip him of professional composure at his most human moment.",
+      "EscalationTarget": "10",
+      "EventType": "wound",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 7409,
+      "Score": 94,
+      "Flags": [],
+      "Covered": true
+    }
+  ]
+}

@@ -1,0 +1,1019 @@
+{
+  "nodeCode": "UNDR",
+  "slug": "underclan-019eff97",
+  "title": "Underclan",
+  "generatedAtUtc": "2026-07-15 01:31:07Z",
+  "totalBeats": 57,
+  "covered": 57,
+  "chapterGranular": false,
+  "storyScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "quiet",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true
+  },
+  "flagCounts": {
+    "UNSCORED": 57
+  },
+  "beats": [
+    {
+      "BeatId": "019f00b7-521c-7a91-b60a-5ade64039f8d",
+      "Number": 4760,
+      "Chapter": "Ch01 - The Breath of the",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes the Underclan\u0027s sensory world and communal rhythms to ground the reader in a civilization built on attentiveness and interdependence.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3476,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00b7-7db0-78e9-bb88-5c23ffbbb2f7",
+      "Number": 4761,
+      "Chapter": "Ch01 - The Breath of the",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Introduces Grale as a quiet rival and Sorrel as changed by Surfacing, escalating Glim\u0027s awareness of his own standing and approaching trial.",
+      "EscalationTarget": "3",
+      "EventType": "confrontation",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3636,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00b7-a3ec-72f3-bf67-7d27d5ef5534",
+      "Number": 4762,
+      "Chapter": "Ch01 - The Breath of the",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals the Oarsman\u0027s rule as absolute rather than ceremonial, sharpening the reader\u0027s sense that the underworld operates on non-negotiable laws.",
+      "EscalationTarget": "4",
+      "EventType": "exchange",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2226,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00b7-cb90-7785-baa1-cc865d5ab0a5",
+      "Number": 4763,
+      "Chapter": "Ch01 - The Breath of the",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes the Deep One\u0027s hum as a formative, embodied faith to show that Glim\u0027s identity is inseparable from the Current\u0027s presence.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3918,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "7a2d3037-858e-4303-84c4-95ebb3914d71",
+      "Number": 4827,
+      "Chapter": "Ch01 - The Breath of the",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals Glim\u0027s relationship to honest, unglamorous labor as a value system, grounding his character in competence and distrust of pretense.",
+      "EscalationTarget": "6",
+      "EventType": "repair",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 5859,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00b8-e4c7-7ee4-b443-a382da027065",
+      "Number": 4764,
+      "Chapter": "Ch02 - The One Word",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Establishes Vesh as the community\u0027s living memory and Glim\u0027s privileged proximity to him, signaling the weight of the knowledge Glim inherits.",
+      "EscalationTarget": "7",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3152,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00b8-fbd2-7385-9f6e-b741abde29f5",
+      "Number": 4765,
+      "Chapter": "Ch02 - The One Word",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Escalates the stakes of Underclan identity by contrasting surface erasure with the Deep\u0027s remembrance, giving Glim\u0027s coming Surfacing existential dimension.",
+      "EscalationTarget": "7",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 4766,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00b9-15f2-716a-99ca-d5a1ee1a49e2",
+      "Number": 4766,
+      "Chapter": "Ch02 - The One Word",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Pays off the lesson by leaving its center deliberately blank, teaching the reader alongside Glim that the Current\u0027s reach is the story\u0027s unresolved mystery.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3741,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f2a1b-8648-7185-a92d-6dbb3815acbc",
+      "Number": 4980,
+      "Chapter": "Ch02 - The One Word",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Reveals through the Marl story that the Tartar\u0027s danger is psychological rather than physical, escalating dread about what lies below the permitted boundary.",
+      "EscalationTarget": "7",
+      "EventType": "departure",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4484,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "8aa84e2d-5b00-48e5-b0ed-0143d45263f9",
+      "Number": 4780,
+      "Chapter": "Ch03 - The Fare",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Reveals Glim\u0027s foundling origin through Knuckle\u0027s memory, establishing that Glim\u0027s identity has always rested on an unanswered question about where he came from.",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 5249,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "93323c78-ee34-4f06-9e90-f85f8cef2470",
+      "Number": 4781,
+      "Chapter": "Ch03 - The Fare",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Establishes Glim\u0027s unresolved grief through a sensory dream-fragment, then grounds him in Underclan ritual to show how the community\u0027s continuity contains but cannot cure personal loss.",
+      "EscalationTarget": "9",
+      "EventType": "vigil",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 3790,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "21920f5a-2496-4377-865d-81fe9ec90044",
+      "Number": 4782,
+      "Chapter": "Ch03 - The Fare",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Reveals Glim\u0027s forbidden fixation on something in the crossing basin, establishing a transgressive curiosity that will define his character and drive future conflict.",
+      "EscalationTarget": "9",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4191,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "305c16da-226e-49fc-a44c-194c58c66e1e",
+      "Number": 4783,
+      "Chapter": "Ch04 - The Surfacing Cal",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Turns the story\u0027s timeline by having Knuckle accelerate the Surfacing, introducing Grale as a political threat and forcing Glim to confront whether his surface-taint is real.",
+      "EscalationTarget": "8",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2746,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "0e845c65-7160-41ea-b296-f6184d2c7d2d",
+      "Number": 4784,
+      "Chapter": "Ch04 - The Surfacing Cal",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Deepens Glim\u0027s emotional stakes before departure by giving Sorrel a farewell scene that signals she sees something in him the community cannot afford to lose.",
+      "EscalationTarget": "7",
+      "EventType": "exchange",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3907,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "345120a8-b7bb-44fe-b075-a7ec591ad84e",
+      "Number": 4785,
+      "Chapter": "Ch04 - The Surfacing Cal",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Pays off the mentor relationship by staging the blessing as a physical transfer of weight and responsibility, making Knuckle\u0027s inability to protect Glim palpable.",
+      "EscalationTarget": "8",
+      "EventType": "ceremony",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2694,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "48732526-71f9-4766-ba3a-3c7a827cdca3",
+      "Number": 4828,
+      "Chapter": "Ch04 - The Surfacing Cal",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Escalates Grale\u0027s threat while using the three-outcomes story to plant the possibility that surface-contact permanently changes a person, seeding dread about Glim\u0027s return.",
+      "EscalationTarget": "8",
+      "EventType": "confession",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3967,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "2795200f-965e-4782-913d-ce2ae9ad0e38",
+      "Number": 4786,
+      "Chapter": "Ch05 - Surface-Stained",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "Crystallizes the central ideological conflict by letting Grale articulate, without malice, the community\u0027s legitimate fear that Glim\u0027s origins make him a danger.",
+      "EscalationTarget": "9",
+      "EventType": "confrontation",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3239,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "60533acb-a424-4164-8346-bae78ca1b08c",
+      "Number": 4787,
+      "Chapter": "Ch05 - Surface-Stained",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "Establishes Glim\u0027s competence and methodical preparation to make his subsequent choice of the riskier route feel like a deliberate break from character rather than recklessness.",
+      "EscalationTarget": "9",
+      "EventType": "departure",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4133,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "77a7342b-288e-4eb1-8d1d-2506dfd11516",
+      "Number": 4788,
+      "Chapter": "Ch05 - Surface-Stained",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "Turns Glim from a rule-follower into an agent by having him choose the unknown route, framing the Surfacing as a test of identity rather than mere survival.",
+      "EscalationTarget": "9",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3818,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "59127ba1-77cb-4b20-817d-5a68c952bc8b",
+      "Number": 4789,
+      "Chapter": "Ch06 - The Lid Off the W",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Delivers the sensory shock of the surface to make the world above feel genuinely alien, validating every fear the Underclan holds while opening the story\u0027s larger world.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 4090,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "a074116b-135a-4f9d-b6e7-8c4b113d14b8",
+      "Number": 4790,
+      "Chapter": "Ch06 - The Lid Off the W",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Establishes the Burning Eye\u0027s arrival as a sensory assault beyond all preparation, converting abstract teaching into overwhelming physical reality to mark Glim\u0027s crossing into an alien world.",
+      "EscalationTarget": "10",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 1924,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "10132311-ea2c-4599-a112-bd46410c3d21",
+      "Number": 4791,
+      "Chapter": "Ch06 - The Lid Off the W",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Reveals the surface\u0027s indifference as an existential condition, paying off Vesh\u0027s recurring lesson by forcing Glim to feel his own insignificance for the first time.",
+      "EscalationTarget": "9",
+      "EventType": "vigil",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3447,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "f8669353-7073-4864-87db-8406133447b5",
+      "Number": 4792,
+      "Chapter": "Ch06 - The Lid Off the W",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Escalates Glim\u0027s jeopardy by showing his underground competence neutralized by surface technology, turning his place of safety into a trap.",
+      "EscalationTarget": "9",
+      "EventType": "ambush",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2469,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "37c5368f-c70f-4c4b-97b8-7dba474e21e0",
+      "Number": 4793,
+      "Chapter": "Ch07 - The Smell Before ",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Marks the glow-rat\u0027s death as a silent emotional beat that signals Glim\u0027s severance from Homewater\u0027s tools and logic as he is pulled upward against his will.",
+      "EscalationTarget": "8",
+      "EventType": "loss",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2238,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "cb541869-78b8-490a-bc6a-c74bb088b53c",
+      "Number": 4794,
+      "Chapter": "Ch07 - The Smell Before ",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Establishes the surface\u0027s bureaucratic gaze as a new threat distinct from pursuit, disorienting Glim by removing darkness as the default condition of space.",
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3860,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f2a1b-a88a-7083-b031-9da9f6fe1136",
+      "Number": 4981,
+      "Chapter": "Ch07 - The Smell Before ",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Introduces Noor\u0027s twelve-year vigil and her body\u0027s learned distrust to establish the emotional stakes of the possible reunion before it occurs.",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 4087,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "d141a5b3-bd4b-42bf-9843-4eafddf59742",
+      "Number": 4795,
+      "Chapter": "Ch07 - The Smell Before ",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Pays off the fragment-smell established in Glim\u0027s memory by triggering involuntary recognition, revealing the mother-child bond through sensation before either character can name it.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2321,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "25a7b70e-594d-4242-b7ae-a34a6ac2a5e6",
+      "Number": 4796,
+      "Chapter": "Ch07 - The Smell Before ",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Establishes Glim\u0027s methodical adaptation to surface life while showing the language barrier and his retained underground habits as the distance still separating him from Noor.",
+      "EscalationTarget": "6",
+      "EventType": "exchange",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2369,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "ddfa5152-defb-457b-9f0a-f9cdf22fbb32",
+      "Number": 4829,
+      "Chapter": "Ch07 - The Smell Before ",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Reveals Noor\u0027s reunion as bittersweet rather than complete, using the detail of his thumb\u0027s grip to show that recognition flows only one way and grief persists inside recovery.",
+      "EscalationTarget": "6",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2983,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "b424f031-60ee-46da-a783-c0b1d9ea3e11",
+      "Number": 4797,
+      "Chapter": "Ch08 - A Name He Will No",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Establishes Glim\u0027s ethnographic detachment as a coping mechanism, showing the surface world\u0027s sensory excess as a new kind of disorientation replacing the underground\u0027s organized logic.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3015,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "0d033558-079f-4b46-a88a-18d028c729f5",
+      "Number": 4798,
+      "Chapter": "Ch08 - A Name He Will No",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Establishes that Glim\u0027s exposure has broken the surface world\u0027s ignorance of him, forcing a crisis of visibility that threatens both his freedom and Noor\u0027s position.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 3730,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "f71cb0b5-5987-4ee7-8dc4-911f822d2493",
+      "Number": 4799,
+      "Chapter": "Ch08 - A Name He Will No",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Reveals Glim\u0027s anthropological detachment as a survival mechanism while escalating the institutional pressure closing around him and Noor.",
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3628,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "e1a3b465-3e2c-407e-a031-c00947ff2dec",
+      "Number": 4800,
+      "Chapter": "Ch08 - A Name He Will No",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Turns the question of Glim\u0027s identity into an emotional confrontation, revealing Noor\u0027s twelve years of grief and establishing the cost of his silence.",
+      "EscalationTarget": "8",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2372,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "c5e9adb4-6ea9-49c1-a7f3-ea32e85bd64a",
+      "Number": 4801,
+      "Chapter": "Ch09 - The Way Down",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Pays off the candle\u0027s symbolic weight by making Glim\u0027s failure to protect it the moral trigger for his departure, not mere restlessness.",
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4756,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "f49f5a8e-ed17-4c23-a612-b138c62a7c59",
+      "Number": 4802,
+      "Chapter": "Ch09 - The Way Down",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Escalates Noor\u0027s commitment by showing she has followed him into his world, shifting the power dynamic and forcing him to accept responsibility for her.",
+      "EscalationTarget": "9",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 3521,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "ac43061d-7f0d-4428-8e00-78a4c3c3becc",
+      "Number": 4803,
+      "Chapter": "Ch09 - The Way Down",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Establishes Glim\u0027s code of reciprocal obligation by having him extend Noor the protection of darkness as repayment for her eight days of patience.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2302,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f1221-3430-7de2-bf4a-e86ec38ae489",
+      "Number": 4914,
+      "Chapter": "Ch09 - The Way Down",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Pays off Glim\u0027s eight days of wrongness by grounding him in Homewater\u0027s sensory familiarity, while positioning Noor as a witness now inside his world.",
+      "EscalationTarget": "9",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 4079,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "5c3731ea-ee02-45b2-ab80-7b819d4d0c71",
+      "Number": 4804,
+      "Chapter": "Ch10 - Light Comes Down",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Establishes the community\u0027s guarded judgment of Glim\u0027s return and surfaces Grale\u0027s hostility, raising the stakes of Noor\u0027s presence in the Hollow.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3948,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "6c6b2a12-6be9-4e9f-91cf-88a8531adf82",
+      "Number": 4805,
+      "Chapter": "Ch10 - Light Comes Down",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Escalates to crisis by revealing the surface has tracked Glim home, turning his Surfacing into a direct threat to the entire Underclan community.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 4974,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "10c437f8-a390-418e-90d6-bf6ed400f9aa",
+      "Number": 4806,
+      "Chapter": "Ch10 - Light Comes Down",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Reveals the catastrophic cost of Glim\u0027s return \u2014 he has carried surface illness into an unprotected community \u2014 establishing his guilt as the story\u0027s moral weight.",
+      "EscalationTarget": "10",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 3016,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "57846aad-0ff5-4915-8a14-2bf8b7a7e5e2",
+      "Number": 4807,
+      "Chapter": "Ch10 - Light Comes Down",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Establishes Glim\u0027s first open defiance of Vesh\u0027s authority, turning their relationship and signaling that the crisis will force Glim to act on his own judgment.",
+      "EscalationTarget": "9",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3134,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "a3645926-208b-4d12-832d-54f78ca20388",
+      "Number": 4808,
+      "Chapter": "Ch11 - When the Candles ",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "Reveals Vesh\u0027s core fear that surface recognition is a trap, deepening the ideological stakes of the Mission\u0027s offer and leaving Glim without a counter-argument.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2444,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "defe9f44-815f-451d-a374-3aef79f883c1",
+      "Number": 4809,
+      "Chapter": "Ch11 - When the Candles ",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "Escalates the Hot Breath crisis to mortal urgency through a child\u0027s suffering, forcing the clan\u0027s hand on accepting surface medicine.",
+      "EscalationTarget": "8",
+      "EventType": "loss",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2287,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f2a1b-bbd1-7238-8153-16554efbb2e6",
+      "Number": 4982,
+      "Chapter": "Ch11 - When the Candles ",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "Dramatizes the bureaucratic obstruction between Underclan survival and surface aid, indicting registration policy as a lethal abstraction.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4349,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "d398a4db-a2d5-4b64-bcbb-a6575579026b",
+      "Number": 4810,
+      "Chapter": "Ch11 - When the Candles ",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "Pays off Slip\u0027s death to establish the permanent cost of delay, then immediately escalates by having the Lamplighters arrive at the moment of mourning.",
+      "EscalationTarget": "9",
+      "EventType": "loss",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 5017,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "68b5b18d-fbe9-49b9-b87b-6edd64a2aae6",
+      "Number": 4811,
+      "Chapter": "Ch11 - When the Candles ",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "Reveals Noor\u0027s trustworthiness under genuine pressure, earning her place in the clan\u0027s survival chain through demonstrated competence rather than argument.",
+      "EscalationTarget": "10",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "subplot"
+      ],
+      "ProseLength": 4195,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "195badef-1907-454a-b318-00cf6c46885c",
+      "Number": 4812,
+      "Chapter": "Ch12 - The Ghost-Country",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Establishes the Tartarian Empire as sanctuary while paying off the flight\u0027s cost by forcing Glim to confront Noor\u0027s absence in the headcount.",
+      "EscalationTarget": "10",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 6571,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "761784df-df1f-43cb-bdbe-d9d1e5e325ac",
+      "Number": 4813,
+      "Chapter": "Ch12 - The Ghost-Country",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Reveals that Vesh has concealed his own illness, reframing his earlier authority as self-sacrifice and shifting the emotional weight of the crisis onto Glim.",
+      "EscalationTarget": "9",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 5664,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "a77d55b3-354a-4638-87d4-dd00cc37809f",
+      "Number": 4814,
+      "Chapter": "Ch12 - The Ghost-Country",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Establishes the Tartarian Empire\u0027s inhuman scale to isolate Glim, creating the conditions for the anomalous pulse that will redirect the plot.",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4755,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "02776eba-804d-4f6a-b5f5-36770d58b6f3",
+      "Number": 4815,
+      "Chapter": "Ch13 - The Second Word",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Plants the pulse as a mystery Glim cannot yet act on, while turning the clan\u0027s trajectory from flight toward confrontation with the problem they fled.",
+      "EscalationTarget": "7",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2895,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "789404c0-f80e-4d93-8797-537a6fea54cf",
+      "Number": 4816,
+      "Chapter": "Ch13 - The Second Word",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Establishes Glim\u0027s prior relationship with the Cog settlement and introduces Dross as a potential ally shaped by institutional neglect, grounding the coming negotiation in concrete stakes.",
+      "EscalationTarget": "8",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 3479,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "7caeaacd-4309-41d9-8405-78e0146a9dc6",
+      "Number": 4817,
+      "Chapter": "Ch13 - The Second Word",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Pays off Noor\u0027s surface-world knowledge by showing it as a practical weapon, transferring institutional power to the Cogs and cementing her value to the alliance.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "subplot"
+      ],
+      "ProseLength": 3200,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "f589d25d-5530-4aa7-b039-2655ab1ca681",
+      "Number": 4818,
+      "Chapter": "Ch13 - The Second Word",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Reveals that shared labor dissolves inherited mistrust, escalating the coalition\u0027s capability while demonstrating that the plan\u0027s human element exceeded Glim\u0027s predictions.",
+      "EscalationTarget": "8",
+      "EventType": "repair",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 6396,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "062e6e4c-6ff8-48ea-96a6-82b36747fe86",
+      "Number": 4823,
+      "Chapter": "Ch14 - A New Fare",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "Establishes the cost of victory by showing Homewater violated and subtly altered, grounding the clan\u0027s trauma in sensory detail rather than dramatic loss.",
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2628,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "324ad407-3ee9-48a0-baf4-f95a4af531c2",
+      "Number": 4824,
+      "Chapter": "Ch14 - A New Fare",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "Pays off Vesh\u0027s arc by letting him die quietly, then uses Glim\u0027s vigil to reveal that the hum is indifferent to human significance, deepening the world\u0027s spiritual ambiguity.",
+      "EscalationTarget": "6",
+      "EventType": "loss",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 5266,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "d6c0212e-1fb7-43ae-b57e-7c563fb1c585",
+      "Number": 4825,
+      "Chapter": "Ch14 - A New Fare",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "Turns Noor\u0027s position from guest to agent with independent stakes, escalating external threat while establishing her moral reasoning as distinct from Glim\u0027s tactical calculus.",
+      "EscalationTarget": "5",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 4613,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "dfd2e3d7-53bc-48dc-b77d-b6928a00b6ff",
+      "Number": 4826,
+      "Chapter": "Ch14 - A New Fare",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "Closes the chapter\u0027s recovery arc and reestablishes the Fare ritual as a threshold moment, layering Glim\u0027s accumulated losses into a single image of continuity and unresolved grief.",
+      "EscalationTarget": "4",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3882,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    }
+  ]
+}

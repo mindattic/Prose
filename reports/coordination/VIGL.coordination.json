@@ -1,0 +1,566 @@
+{
+  "nodeCode": "VIGL",
+  "slug": "vigil-s-end-019f5767",
+  "title": "Vigil\u0027s End",
+  "generatedAtUtc": "2026-07-15 01:31:15Z",
+  "totalBeats": 29,
+  "covered": 29,
+  "chapterGranular": false,
+  "storyScope": {
+    "TemporalScheme": "nonlinear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "avalanche",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true
+  },
+  "flagCounts": {
+    "UNSCORED": 7
+  },
+  "beats": [
+    {
+      "BeatId": "40855320-b613-4683-a3dc-460f522fd539",
+      "Number": 5306,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes the archive setting and the membrane-crossing ritual to ground the reader in the world\u0027s physical and institutional logic before the theft begins.",
+      "EscalationTarget": "4",
+      "EventType": "intrusion",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "temporal-anachrony\u2713"
+      ],
+      "ProseLength": 7388,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973b-79df-a99f-e0621a41a867",
+      "Number": 5249,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Lyra arrives at the Veth Reliquary at dawn to find the Oculus stolen, the night-warden dead, and three sets of boot-prints leading north into the Cauld. She is given twelve days by Canon Aldric\u0027s written order before the Vigil sends a suppression column that will burn the trail and everyone on it.",
+      "EscalationTarget": "3",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "temporal-anachrony\u2713"
+      ],
+      "ProseLength": 46304,
+      "Score": 80,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-7d2c-a1f7-8e7ef8fe3336",
+      "Number": 5250,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Lyra cannot cross the Cauld alone in winter; she hires Osra as guide at the north gate. Osra names her price in coin and in one condition: Lyra must hear whatever Osra chooses to say on the crossing. Lyra agrees without considering what that condition means.",
+      "EscalationTarget": "4",
+      "EventType": "negotiation",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "escalation\u2713"
+      ],
+      "ProseLength": 14235,
+      "Score": 80,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-78d3-9002-99ac8df81722",
+      "Number": 5251,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Fevin is found sheltering in a waystation the two women stop at. He has a forged transit pass. Lyra confiscates the pass, reads the suppression citation folded inside it, and conscripts him rather than detain him, because she needs a third body to manage the supply sledge.",
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot\u2713"
+      ],
+      "ProseLength": 14937,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-7aa2-ab34-df50caac6946",
+      "Number": 5252,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "The party locates the thieves\u0027 first camp at a crevasse crossing. Signs show three people reduced to two: Maret fell or was left. Lyra reads the camp as a professional tracker; Osra reads it as a person who has lost someone and says so plainly.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "form-device\u2713"
+      ],
+      "ProseLength": 25122,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-7a19-b890-60e39776ce9a",
+      "Number": 5253,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Osra tells Lyra the specific facts of her daughter Calla\u0027s case: the confession recorded by the Oculus, the doctrinal tribunal, the land-right stripped under Canon Senne\u0027s seal. She does not ask for sympathy. She states the sequence of events. Lyra listens and says nothing, which is itself a response Osra names.",
+      "EscalationTarget": "6",
+      "EventType": "confession",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot\u2713"
+      ],
+      "ProseLength": 16881,
+      "Score": 96.66666666666666,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-72ef-a7ff-f7d46b699caa",
+      "Number": 5254,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "The party catches up to Bren and his remaining accomplice in a wind-cut passage. A chase and short fight. The accomplice escapes west. Bren is taken. Lyra recovers the Oculus, intact, from Bren\u0027s pack.",
+      "EscalationTarget": "5",
+      "EventType": "chase",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "escalation\u2713"
+      ],
+      "ProseLength": 29667,
+      "Score": 83.33333333333334,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-7c21-b83f-d9e0d5461cd4",
+      "Number": 5255,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Bound and moving, Bren tells Lyra why he stole the device: he names six families whose confessional records were weaponized by the Vigil in property and inheritance disputes over eleven years. He was a novice who witnessed one tribunal. He provides names, dates, and Canon Senne\u0027s seal on each ruling. Fevin recognizes his father\u0027s name in the list.",
+      "EscalationTarget": "4",
+      "EventType": "testimony",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "form-device\u2713"
+      ],
+      "ProseLength": 24479,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-7417-bc74-23a80031430a",
+      "Number": 5256,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Fevin stops walking. He demands Lyra confirm or deny whether the Vigil used his father\u0027s recorded confession to void his inheritance. Lyra cannot deny it; she has seen Canon Senne\u0027s administrative style for twelve years and the pattern Bren describes is recognizable. She confirms it by silence. Fevin does not leave; he stays, which is harder.",
+      "EscalationTarget": "5",
+      "EventType": "confrontation",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot\u2713"
+      ],
+      "ProseLength": 26050,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-7b77-aae2-4a782412b29c",
+      "Number": 5257,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Lyra allows Osra to hold the Oculus. Osra does not destroy it. She asks whether Calla\u0027s confession is still inside. Lyra does not know the answer. The not-knowing is the point.",
+      "EscalationTarget": "5",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot\u2713"
+      ],
+      "ProseLength": 16720,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-77e6-b1ce-3a121c24b5ad",
+      "Number": 5258,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "On day ten, Lyra spots the Vigil\u0027s advance riders on the southern horizon: Canon Senne has sent the column early. The twelve-day window was not a deadline; it was a test of whether Lyra would return fast enough to be absorbed back into the institution before she thought too much.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "escalation\u2713"
+      ],
+      "ProseLength": 32647,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f60d1-084a-76e4-9f45-a65045c46b10",
+      "Number": 5376,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Introduces the core trio\u0027s dynamic and competencies through the mundane logistics of arrival, seeding trust in their professional interdependence.",
+      "EscalationTarget": "5",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "escalation"
+      ],
+      "ProseLength": 21360,
+      "Score": 80,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-71af-a894-38225de286d1",
+      "Number": 5259,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Lyra delivers Bren to the Ardenmere garrison as a captured thief, which is her lawful duty and protects him from the column\u0027s summary authority. She registers the Oculus as recovered and logged, which creates a paper record the column cannot quietly erase. She does this in front of Fevin and Osra as witnesses.",
+      "EscalationTarget": "5",
+      "EventType": "arrival",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "escalation\u2713"
+      ],
+      "ProseLength": 25606,
+      "Score": 93.33333333333333,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-79cc-b1b8-65ca17729978",
+      "Number": 5260,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Canon Aldric Senne arrives at Ardenmere personally with a writ of suppression naming Osra, Fevin, and Bren as doctrinal threats to be remanded to Vigil custody. The writ also formally commends Lyra and orders her to countersign as the arresting Dame.",
+      "EscalationTarget": "5",
+      "EventType": "refusal",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "form-device\u2713"
+      ],
+      "ProseLength": 26628,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-74a2-af0c-586632589059",
+      "Number": 5261,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Lyra reads the writ fully, in silence, in front of Senne. She sets it on the garrison table unsigned. She states three specific facts: the Oculus records were used as legal instruments in civil disputes, the twelve-day window was shortened deliberately, and she will not countersign a document that remands witnesses to a court with a material interest in their silence. She does not raise her voice.",
+      "EscalationTarget": "8",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "body-snatch-setpiece"
+      ],
+      "ProseLength": 46519,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f5768-973c-7640-8058-f27f04ee0ac0",
+      "Number": 5262,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Senne leaves with the column. The writ sits unsigned on the table. Lyra\u0027s rank, her designation M-101, and her place in the Vigil\u0027s rolls are forfeit by the act of refusal, and she knows this. Osra, Fevin, and Bren\u0027s garrison custody stand. Lyra walks out of the Ardenmere gate onto the Cauld-road with no order to follow and no institution behind her.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "threshold\u2713"
+      ],
+      "ProseLength": 28531,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f60d1-12d4-71a4-bfa2-48b8b968af63",
+      "Number": 5377,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Escalates stakes by forcing a conscious choice to enter dangerous territory, revealing each character\u0027s relationship to risk through their silence and reading of signs.",
+      "EscalationTarget": "6",
+      "EventType": "acquisition",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "creature-combat"
+      ],
+      "ProseLength": 25603,
+      "Score": 76.66666666666667,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f60d1-71c2-705c-bc95-13bc4e2a174f",
+      "Number": 5379,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Builds dread through environmental absence rather than presence, establishing Orim as the group\u0027s threshold-reader and signaling a threat beyond ordinary danger.",
+      "EscalationTarget": "7",
+      "EventType": "testimony",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "monster-setpiece"
+      ],
+      "ProseLength": 25410,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "da607263-a95f-4803-a932-f790a4e6fc36",
+      "Number": 5291,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Marks the journey\u0027s end-phase arrival while using the destination\u0027s physical approach to externalize the group\u0027s accumulated exhaustion and narrowing time pressure.",
+      "EscalationTarget": "4",
+      "EventType": "dispatch",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "escalation\u2713"
+      ],
+      "ProseLength": 23831,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "3dba7a47-5cc4-460f-ac50-1d5571fde6af",
+      "Number": 5292,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Turns the mission from pursuit to acquisition by confirming the target and revealing Lyra\u0027s tactical gap-exploitation as her defining operational method.",
+      "EscalationTarget": "8",
+      "EventType": "confrontation",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "body-snatch-setpiece\u2713"
+      ],
+      "ProseLength": 24354,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "302f6e3f-6cbd-4af4-8b1d-7eeac1b5eb65",
+      "Number": 5293,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals Lyra\u0027s interior grief through her inability to write Ardea\u0027s service record, paying off the earlier absence by naming what the loss has cost her.",
+      "EscalationTarget": "5",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint\u2713"
+      ],
+      "ProseLength": 27147,
+      "Score": 96.66666666666666,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "90e0ffe7-ef7f-42d4-a5c7-e084ececb948",
+      "Number": 5294,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Introduces an institutional ally operating outside the vertical chain of command, establishing that the Liturgy\u0027s own archival memory may be working against its executive arm.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "form-device\u2713"
+      ],
+      "ProseLength": 21463,
+      "Score": 66.66666666666667,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "76d2dbd6-784e-47d6-8762-9c30eb71ecad",
+      "Number": 5295,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Pays off the eleven-day crossing by landing Rowe\u0027s distributed consciousness as the cost of the journey, reframing his sacrifice as the mission\u0027s hidden price.",
+      "EscalationTarget": "9",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "body-snatch-setpiece\u2713"
+      ],
+      "ProseLength": 37966,
+      "Score": 93.33333333333333,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "9ba2cf72-f009-4820-8864-5d4c4f3f73c2",
+      "Number": 5297,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reestablishes the group\u0027s fragmented status on arrival to show that reaching the destination has not resolved their vulnerability, only changed its shape.",
+      "EscalationTarget": "6",
+      "EventType": "refusal",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "intertextual-touchpoint\u2713"
+      ],
+      "ProseLength": 34263,
+      "Score": 83.33333333333334,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "2ff3b7a6-4771-42b0-9418-2420a987952d",
+      "Number": 5298,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes the expedition\u0027s arrival in hostile territory while revealing Rowe\u0027s fractured post-Pallor identity, seeding unease about what the team has already lost before the mission begins.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "escalation\u2713"
+      ],
+      "ProseLength": 16905,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f612a-267d-7d92-8fd9-a4317fad24dc",
+      "Number": 5380,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Introduces the titan mound as an overwhelming, unkillable environmental threat to calibrate the scale of danger and establish Lyra\u0027s pragmatic coping method under impossible conditions.",
+      "EscalationTarget": "8",
+      "EventType": "refusal",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "horror-combat"
+      ],
+      "ProseLength": 40675,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f60d1-1ca7-7de9-a59a-8b4faacc99a9",
+      "Number": 5378,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals the Zone has already outlasted human attempts to contain it, escalating dread by showing the Vigil\u0027s prior failure and priming the reader for what the party is walking into.",
+      "EscalationTarget": "8",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "horror-combat"
+      ],
+      "ProseLength": 33050,
+      "Score": 80,
+      "Flags": [],
+      "Covered": true
+    },
+    {
+      "BeatId": "37b58d26-1005-4b20-ab01-f9d97c208bae",
+      "Number": 5296,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Pays off the crossing\u0027s implied cost while delivering the story\u0027s central surprise \u2014 Vega is alive at the crater rim \u2014 turning Lyra\u0027s mission from investigation to something far more personal.",
+      "EscalationTarget": "6",
+      "EventType": "ceremony",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "revelation\u2713"
+      ],
+      "ProseLength": 27826,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "367915a7-6a6f-4d5a-ad64-84bce308286a",
+      "Number": 5299,
+      "Chapter": "Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes the Singing Spires as an ambient, indifferent force that cannot be adapted to, deepening the Zone\u0027s alienness and isolating Lyra within an environment that refuses to acknowledge human presence.",
+      "EscalationTarget": "10",
+      "EventType": "transit",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "resolution-mode\u2713"
+      ],
+      "ProseLength": 45839,
+      "Score": 100,
+      "Flags": [],
+      "Covered": true
+    }
+  ]
+}

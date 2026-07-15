@@ -1,0 +1,586 @@
+{
+  "nodeCode": "SRZR",
+  "slug": "steppin-razor-019ef7be",
+  "title": "Steppin\u0027 Razor",
+  "generatedAtUtc": "2026-07-15 01:31:00Z",
+  "totalBeats": 31,
+  "covered": 31,
+  "chapterGranular": false,
+  "storyScope": {
+    "TemporalScheme": "nonlinear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "quiet",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true
+  },
+  "flagCounts": {
+    "UNSCORED": 31
+  },
+  "beats": [
+    {
+      "BeatId": "019f1166-3225-7703-aaf2-fd50fcaee8f6",
+      "Number": 4860,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes Sasha as a professional operative by showing her competence, self-containment, and the precise terms she sets for her own engagement.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 8282,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f1166-c247-74b1-9766-8df3087d643a",
+      "Number": 4861,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Escalates Sasha\u0027s post-Kankakee danger by introducing an organized interception, revealing the documentation man\u0027s network has already mobilized against her.",
+      "EscalationTarget": "3",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2391,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f1167-58a1-730f-a0e2-52f178983f74",
+      "Number": 4862,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes the economic trap forcing Sasha into a morally compromising contract, showing how the Kankakee fallout is compressing her options.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 6439,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f1167-ce36-753c-aab5-055150aec401",
+      "Number": 4863,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals Sasha\u0027s internal anomaly \u2014 the unexplained warmth \u2014 as a persistent, unresolved strangeness she deliberately sets aside to survive immediate pressure.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2213,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f1168-783e-7450-9426-a54f05a28951",
+      "Number": 4864,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes Wilmington as a rare moment of belonging and reduced internal suffering, raising the stakes for whatever will destroy it.",
+      "EscalationTarget": "5",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 5382,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f1169-f747-71c8-9381-b3d1ddf083f1",
+      "Number": 4865,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Turns Sasha\u0027s Wilmington refuge into a liability by showing the involuntary mechanism that costs her safety and relationships she cannot afford to lose.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 4895,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f116a-893e-7d83-a9de-374560f4d0ef",
+      "Number": 4866,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Escalates the standing order from network noise to a credible personal threat by introducing a hunter who correctly reads Sasha rather than underestimating her.",
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 5371,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f116b-16a5-7ed8-a58c-7337a97bd22b",
+      "Number": 4867,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Escalates the order\u0027s resources and resolve, showing the pursuit is adapting to Sasha\u0027s capabilities and closing the operational gap between them.",
+      "EscalationTarget": "8",
+      "EventType": "chase",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 6125,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f116b-83d9-72d7-b5ed-99f8a8f8f52b",
+      "Number": 4868,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Pays off the accumulated geography of the series by mapping Sasha\u0027s shrinking world, externalizing her isolation and the systematic closure of every exit.",
+      "EscalationTarget": "8",
+      "EventType": "inventory",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 4335,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f116c-060f-7081-ae6e-2a901c26f0e7",
+      "Number": 4869,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reestablishes Sasha\u0027s survival methodology in a new location while grounding her precarity in the gap between outdated intelligence and present danger.",
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4228,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ef7f7-6364-71d2-98e1-141ff36e2bb2",
+      "Number": 4419,
+      "Chapter": "Act One \u2014 Sasha in Motio",
+      "ChapterIndex": 0,
+      "StructureRole": "opening-image",
+      "Act": 0,
+      "Meaning": "The Hereafter \u2014 a frontier bar at the dead SW edge; a century-old cooking show on the screen (\u0022out here it passed for a window\u0022); a man two stools down decides her size is an invitation; she gives him a second smile with the bottom of a bottle \u2014 the only quiet she ever gets, bought and instantly lost. Sasha is the dead-straight straight man; the world does the absurd bits at her. Establish menace under deadpan.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2423,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ef7f7-79ad-7155-85ed-9ced6c543b56",
+      "Number": 4420,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "inciting-incident",
+      "Act": 0,
+      "Meaning": "The dead rails \u2014 outside is Joliet, kept like a tooth the city means to pull; freight rails nobody rides, rust the color of dried blood; the towers a stuck smear of light a hundred km northeast. She wants a road with no people and walks the rail bed north toward the only light. Then: a camel on the rail bed. There are no camels in Joliet. Her body understands the wrongness a half-second before she does.",
+      "EscalationTarget": "7",
+      "EventType": "departure",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 3013,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ef7f7-8efb-79b8-9a60-b48ff8534f0f",
+      "Number": 4421,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "The exchange \u2014 the man on the camel speaks in the it/they/we collective register, no linear time, displaced premises (\u0022The camel is not my thrall\u2026 we just happen to be going the same way.\u0022 / \u0022Which way is that?\u0022 / \u0022We just arrived.\u0022). Her hand goes to Problem Solver on her right hip; he is unthreatened because threatening a projection is threatening a phone call. The animals beat: the camel puts its head down and breathes at her, the way every stray goes for her. She does not like that they like her.",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "anachrony-cut"
+      ],
+      "ProseLength": 2337,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ef7f7-a5e7-7f20-80bf-cc283fd61512",
+      "Number": 4422,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "midpoint-turn",
+      "Act": 0,
+      "Meaning": "\u0022You were left open\u0022 \u2014 the entity gets under her guard exactly once. Body before mind: the breath she didn\u0027t take, the held half-second, when it says someone should have closed you and did not, and we are glad of the oversight. Then she shuts the door the way she shuts everything and the anger comes back like it only stepped out for air. \u0022Don\u0027t.\u0022 / \u0022We have already stopped.\u0022 Her never-closed neuretics are why it can reach her \u2014 never explain it on the page.",
+      "EscalationTarget": "7",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1378,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ef7f7-bb1e-76cd-965d-bd73d39f721a",
+      "Number": 4423,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "break-into-two",
+      "Act": 0,
+      "Meaning": "The inward hook \u2014 she names the wrongness out here and up there (a pull, low and constant). The entity: \u0022You make a hole in a thing, and the thing is on both sides of the hole. They dig toward us. We arrive toward them.\u0022 It is NOT the Lure (\u0022Are you the thing that\u0027s been taking the kids?\u0022 / \u0022No. That one does not know what a person is. We know.\u0022). It points northeast, at the towers \u2014 the one place she\u0027s spent her life avoiding \u2014 and she falls into step against every instinct. Edge\u2192core vector set.",
+      "EscalationTarget": "8",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2103,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f1173-0854-76e2-9b82-aad3a0de10a6",
+      "Number": 4876,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Establishes that Sasha has lost her professional footing while refusing to admit it, raising the stakes of her encounter with a force that operates outside her operational frameworks.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "subplot"
+      ],
+      "ProseLength": 1896,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00b9-3935-7056-bf5b-595888e2a440",
+      "Number": 4767,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "rising-action",
+      "Act": 1,
+      "Meaning": "Entry to the Glooms - the transit slug from the frontier into the city proper; towers closing in kilometer by kilometer; the hum getting louder with the density. The city performs its absurd bits at her - a busker with a seven-string shamisen, a corpo tourist asking directions to a plaza she has never heard of, a woman feeding pigeons in a station where the air smells like burnt ceramic. She catalogs it. She does not react. The pull from the northeast is stronger here than it was on the rail bed, directional and patient, like a tide that has been waiting.",
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3915,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00b9-c381-7c2f-b98d-0231e3bcacdc",
+      "Number": 4768,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "rising-action",
+      "Act": 1,
+      "Meaning": "Gray-zone contact - at a checkpoint in the inner Glooms a fixer named Dawit who works the inner-ring perimeter stops her; he mistakes her for working a paid job. She neither confirms nor denies. He gives her what he has: anomalous readings clustering in the Loop sector in the last three weeks, logged as dead-well cold-reads by Consensus instruments, but the cluster geometry does not look like dead wells to him. He has nothing to compare it to. She takes the data. She does not explain why. She leaves before he finishes his question.",
+      "EscalationTarget": "8",
+      "EventType": "exchange",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3487,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f116d-5772-7cd7-a1f5-9dbb6706673e",
+      "Number": 4870,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Grounds the reader in The Glooms as a liminal, degraded space while revealing that Sasha has long suppressed an instinct she is now, for the first time, following.",
+      "EscalationTarget": "9",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2522,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00bc-4c49-760f-9ecd-2a70784ef69c",
+      "Number": 4769,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "rising-action",
+      "Act": 1,
+      "Meaning": "The first anomaly - she stops on a high transit bridge above the Exchange district and feels it: not the cracked-bell 19 Hz ring of a dead well she has cataloged for years, but a draw, directional and alive, pulling at something behind her sternum. A live well, here, inside the perimeter, nowhere near where Consensus says the frontier incidents cluster. She calibrates it the way she calibrates a shot - angle, distance, depth. She stands there three minutes with the lake wind in her face. Then she walks toward it because there is nothing else to do.",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3037,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00bd-0ed8-779c-a0ee-76c5a9806d29",
+      "Number": 4770,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "rising-action",
+      "Act": 1,
+      "Meaning": "Entanglement - she follows the pull to an address implicit in Dawit\u0027s cluster data; a dead-drop node, message waiting for a sensor-class operator, no name. Someone has been looking for what she is. The message: Halcyon Combine Strategic Resources knows a live well exists in the Exchange corridor. If you can feel it you are worth \u03A650,000 alive and nothing dead to the people running the drill. The person who left the message wants her to run. The message includes the drill\u0027s approximate location. She does not run.",
+      "EscalationTarget": "7",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 3050,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00bd-26e5-7b1a-b692-527ce5e8ca5d",
+      "Number": 4771,
+      "Chapter": "Act Two \u2014 Contact",
+      "ChapterIndex": 1,
+      "StructureRole": "dark-night-setup",
+      "Act": 2,
+      "Meaning": "Cost - she is made leaving the dead-drop; a two-person tail from a Halcyon Combine security team. She makes them immediately. She leads them into a side corridor off the transit underbelly, somewhere narrow and bad-lit, and gives them the professional courtesy of a moment to reconsider. One takes it. The other does not and it costs him significantly more than he planned to spend. She comes out with a bruised rib, one fewer shadow, and the name on their authorization: Halcyon Combine Strategic Resources asset recovery. She is now an asset to be recovered.",
+      "EscalationTarget": "8",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3785,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f116e-fa83-7296-b3f8-f1315d3c249b",
+      "Number": 4873,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Turns Sasha from flight to descent, paying off her accumulated losses by showing her choose the mission over survival on others\u0027 terms.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1612,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00bd-3e33-7011-8f66-70f617835a2c",
+      "Number": 4772,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "StructureRole": "all-is-lost",
+      "Act": 2,
+      "Meaning": "The camel-man in the towers - she sees the camel on an elevated pedestrian walkway twenty floors above the street, in a crowd of six thousand, no one reacting. The man sits it with the same thousand-year patience. She walks up to him because that is the only register she has left for the impossible. The entity tells her the drill site is specific: not under Tessera Grand Exchange proper but under its eastern colonnade, where the signal is softer and the instrument read is dirtier. Less than a kilometer. The camel breathes at her. She does not step back this time.",
+      "EscalationTarget": "9",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2831,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f247a-4e28-788f-9e97-fb8a6a009735",
+      "Number": 4975,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Reveals an indigenous underground presence that validates Sasha\u0027s anomaly-sense and escalates the threat by confirming the Warm itself is compromised.",
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4363,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00bd-55e4-7d1d-86ed-beceef506ae5",
+      "Number": 4773,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "StructureRole": "break-into-three",
+      "Act": 2,
+      "Meaning": "Under the eastern colonnade - she finds the drill site: a maintenance corridor disguised as a Consensus monitoring array. What she feels is not one live well but three, staged at different depths, each pulling at a different frequency. She stands in the corridor and maps them by feel - depth, direction, the difference between passive monitoring and active extraction. They are drilling toward the far side hard and deliberate, under the most densely populated zone on the continent. A schism-bloom here would kill ten thousand people minimum. She can feel the far side pushing back: 72 Hz, steady, something that does not want to be reached.",
+      "EscalationTarget": "10",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3433,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f21b1-06b3-7773-93e4-38f8780b931e",
+      "Number": 4971,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Escalates tension by interrupting Sasha\u0027s only means of proof at the moment of contact, forcing her to improvise under tightening operational pressure.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2402,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f116f-842c-7160-8198-09d526fc36e6",
+      "Number": 4874,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Pays off the investigation by revealing the cover operation\u0027s paper contradiction, proving deliberate concealment of live infrastructure behind a closed survey\u0027s legitimate credentials.",
+      "EscalationTarget": "10",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2672,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00bd-6cb3-73ef-bb8f-7dc7c1238753",
+      "Number": 4774,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "StructureRole": "finale",
+      "Act": 2,
+      "Meaning": "Found - she is in the access corridor mapping the third well when the Halcyon team arrives: four, corpo-grade, not gray zone. They came for the sensor. They are prepared for a Signal/Noise wash; they are not prepared for her cross-draw geometry or the fact that she is not afraid. She is efficient. She comes out with a hole in her jacket above the ribs, their comms gear, and enough clearance to send something before they lock the signal.",
+      "EscalationTarget": "9",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3672,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00bd-83c8-729d-adb9-62e87f7d7c83",
+      "Number": 4775,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "The receiver\u0027s problem - she finds a maintenance platform on the Z5 exterior wall, looking out at the lake. She knows where the drills are. She knows they are live. She knows Halcyon is running them under Consensus cover. She has the comms gear and a signal window. She does not know who to trust with information this weight. She thinks about the entity\u0027s register - you make a hole in a thing and the thing is on both sides of the hole - and understands she is the hole. A receiver in a world of closed doors, holding data that matters to both sides of a membrane being deliberately punctured. She sends the data to the dead-drop channel and leaves the comms gear on the platform.",
+      "EscalationTarget": "8",
+      "EventType": "repair",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2605,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f00bd-9b01-7fa4-bbe1-ac06bedeb11a",
+      "Number": 4776,
+      "Chapter": "Act Three \u2014 The Edge",
+      "ChapterIndex": 2,
+      "StructureRole": "final-image",
+      "Act": 2,
+      "Meaning": "Final image - she is on a transit platform on the north edge of the Loop, in the densest crowd she has ever stood in. The hum is the loudest it has ever been - the live wells pulling, the far side at 72 Hz, steady and unresigned. She is still here. She has spent her whole life at the edge of things and the edge was never where the rot was. She does not know what comes next. She buys a transit slug north and walks onto the platform without putting her back to the door.",
+      "EscalationTarget": "7",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3458,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    }
+  ]
+}

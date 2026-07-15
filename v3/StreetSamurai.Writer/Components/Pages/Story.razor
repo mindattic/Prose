@@ -316,8 +316,9 @@ else
             </div>
         </div>
 
-        @* Table of Contents — anchor links to each chapter section below. *@
-        @if (children.Count > 0)
+        @* Table of Contents — anchor links to each chapter section below.
+           Suppressed for single-chapter stories: one chapter prints no chapter chrome. *@
+        @if (children.Count > 1)
         {
             <div class="node-toc">
                 <div class="node-toc-head">Table of Contents</div>
@@ -366,8 +367,9 @@ else
                     position++;
                     var b = entry.Beat;
                     @* Chapter section header — injected whenever the NodeId changes (only relevant
-                       for story nodes whose beats come from multiple chapter children). *@
-                    @if (children.Count > 0 && entry.NodeId != lastChapterId)
+                       for story nodes whose beats come from multiple chapter children).
+                       A single-chapter story prints no heading — we never show "Chapter 1". *@
+                    @if (children.Count > 1 && entry.NodeId != lastChapterId)
                     {
                         lastChapterId = entry.NodeId;
                         var chapterNode = children.FirstOrDefault(c => c.Id == entry.NodeId);

@@ -138,13 +138,16 @@ public class AudiblePackageService
         sb.AppendLine(title);
         sb.AppendLine();
 
+        // A single-chapter story is narrated with no chapter heading — we never
+        // speak "Chapter 1". Headings only appear when there are 2+ chapter starts.
+        int totalChapterMarks = ordered.Count(o => o.Beat.IsChapterStart);
         int chapterNo    = 0;
         bool hadContent  = false;
 
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
-            if (beat.IsChapterStart)
+            if (beat.IsChapterStart && totalChapterMarks > 1)
             {
                 if (hadContent) sb.AppendLine();   // blank line before new chapter
                 chapterNo++;

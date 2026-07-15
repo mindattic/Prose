@@ -249,10 +249,13 @@ public class DocxExportService
             for (int i = 0; i < ordered.Count; i++)
             {
                 var beat = ordered[i].Beat;
-                if (isChapterStart[i])
+                // A single-chapter story prints no chapter heading at all — we never
+                // emit "Chapter 1". Headings (and their page breaks) only appear when
+                // the story actually divides into two or more chapters.
+                if (isChapterStart[i] && chapterCount >= 2)
                 {
                     if (chapterEmitted) body.AppendChild(PageBreak());
-                    string? anchor = (chapterCount >= 2 && tocIdx < tocEntries.Count) ? tocEntries[tocIdx].Anchor : null;
+                    string? anchor = (tocIdx < tocEntries.Count) ? tocEntries[tocIdx].Anchor : null;
                     body.AppendChild(ChapterHeading(chapterTitle[i]!, anchor, bookmarkId: tocIdx + 1));
                     tocIdx++;
                     chapterEmitted = true;

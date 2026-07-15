@@ -1,0 +1,44 @@
+{
+  "nodeCode": "LSSS",
+  "slug": "lyra-sinterspawn-slayer-019f5bd9",
+  "title": "Lyra, Sinterspawn Slayer",
+  "generatedAtUtc": "2026-07-15 01:31:12Z",
+  "totalBeats": 1,
+  "covered": 1,
+  "chapterGranular": false,
+  "storyScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "unresolved",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "quiet",
+    "HasSubplot": false,
+    "Granularity": "beat",
+    "HasBlueprint": true
+  },
+  "flagCounts": {
+    "UNSCORED": 1
+  },
+  "beats": [
+    {
+      "BeatId": "bb87c3a3-78b1-4418-a3aa-369b3668f9af",
+      "Number": 5305,
+      "Chapter": "Lyra, Sinterspawn Slayer",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes Lyra as a seasoned, methodical monster-hunter mid-mission, building her competence and the sinterspawn threat before an ominous harrower interrupts the beat.",
+      "EscalationTarget": "6",
+      "EventType": "ambush",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 4922,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    }
+  ]
+}

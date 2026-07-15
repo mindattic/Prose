@@ -120,10 +120,19 @@ public class BeatCoordinationService
                 ChapterId = c.Id,
             }).ToListAsync(ct);
 
+        // The blueprint arrays are indexed by the blueprint's own granularity:
+        // chapter-granular blueprints are chapter-parallel (one entry per chapter),
+        // beat-granular blueprints are beat-parallel (one entry per beat in reading
+        // order) — regardless of whether the story is chaptered or flat. Key the
+        // construction slice by the matching index so every beat reads its OWN slice.
+        int ordinal = -1;
+
         var coords = new List<BeatCoordinate>(rows.Count);
         foreach (var r in rows)
         {
+            ordinal++;
             int chIdx = chapterIndex.TryGetValue(r.ChapterId, out var ci) ? ci : -1;
+            int constrIdx = chapterGranular ? chIdx : ordinal;
             var flags = new List<string>();
 
             var meaning = string.IsNullOrWhiteSpace(r.Description) ? null : r.Description!.Trim();
@@ -137,10 +146,10 @@ public class BeatCoordinationService
 
             if (r.Score is null or <= 0) flags.Add("UNSCORED");
 
-            // Construction slice
-            string? esc = chIdx >= 0 && chIdx < escalation.Length
-                ? escalation[chIdx].ToString() : null;
-            var evt = chIdx >= 0 ? events.FirstOrDefault(e => e.BeatIndex == chIdx) : null;
+            // Construction slice (chapter-parallel for chaptered stories, beat-parallel for flat ones)
+            string? esc = constrIdx >= 0 && constrIdx < escalation.Length
+                ? escalation[constrIdx].ToString() : null;
+            var evt = constrIdx >= 0 ? events.FirstOrDefault(e => e.BeatIndex == constrIdx) : null;
             tagsByBeat.TryGetValue(r.Id, out var beatTags);
             var tagList = beatTags?.Select(t => $"{t.TagType}{(t.Confirmed ? "✓" : "")}").ToList() ?? new();
 

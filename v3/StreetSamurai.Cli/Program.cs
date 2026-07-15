@@ -1744,6 +1744,16 @@ if (args.Contains("--coordinate"))
     return;
 }
 
+// ss --ensure-chapter --slug <slug> | --all
+// Enforce "every story has >= 1 chapter": wrap a flat story's direct beats into a
+// single ChapterNode child (no-op if already chaptered). No LLM.
+if (args.Contains("--ensure-chapter"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await EnsureChapterCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --backfill-meaning --slug <slug> [--limit N] [--dry-run]
 // Fill the MEANING coordinate (Beat.Description) for beats with prose but no meaning.
 if (args.Contains("--backfill-meaning"))

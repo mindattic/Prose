@@ -64,12 +64,15 @@ public class ManuscriptExportService
         // Synopsis is intentionally NOT printed on the title page — it is a back-cover/catalog
         // blurb, exported separately as "Back Cover.txt" and as the ebook <dc:description>.
 
+        // A story that resolves to a single chapter prints no chapter heading — we
+        // never emit "Chapter 1". Only mark headings when there are 2+ chapter starts.
+        int totalChapterMarks = ordered.Count(o => o.Beat.IsChapterStart);
         int beatNo = 0;
         int chapterNo = 0;
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
-            if (beat.IsChapterStart)
+            if (beat.IsChapterStart && totalChapterMarks > 1)
             {
                 chapterNo++;
                 var heading = !string.IsNullOrWhiteSpace(beat.Title) ? beat.Title!.Trim() : $"Chapter {chapterNo}";
@@ -186,7 +189,7 @@ public class ManuscriptExportService
         EpubWriteEntry(zip, "OEBPS/toc.xhtml", EpubTocXhtml(manuscript));
 
         for (int i = 0; i < manuscript.Chapters.Count; i++)
-            EpubWriteEntry(zip, $"OEBPS/chapter-{i + 1:D3}.xhtml", EpubChapterXhtml(manuscript.Chapters[i], i + 1));
+            EpubWriteEntry(zip, $"OEBPS/chapter-{i + 1:D3}.xhtml", EpubChapterXhtml(manuscript.Chapters[i], manuscript.Title));
 
         EpubWriteEntry(zip, "OEBPS/content.opf", EpubContentOpf(manuscript, authorName, bookUuid));
 
@@ -215,9 +218,11 @@ public class ManuscriptExportService
         for (int i = 0; i < manuscript.Chapters.Count; i++)
         {
             var chapter = manuscript.Chapters[i];
-            var heading = string.IsNullOrWhiteSpace(chapter.Heading) ? $"Chapter {i + 1}" : chapter.Heading!;
-            sb.AppendLine(heading);
-            sb.AppendLine();
+            if (!string.IsNullOrWhiteSpace(chapter.Heading))
+            {
+                sb.AppendLine(chapter.Heading!);
+                sb.AppendLine();
+            }
             foreach (var para in chapter.Paragraphs)
             {
                 sb.AppendLine(StripInlineMarkup(para));
@@ -283,24 +288,29 @@ public class ManuscriptExportService
         sb.AppendLine("""<body><nav epub:type="toc" id="toc"><h1>Contents</h1><ol>""");
         for (int i = 0; i < m.Chapters.Count; i++)
         {
+            // Single-chapter story: heading is null, so the sole TOC entry uses the
+            // book title rather than a "Chapter 1" label we never want to print.
             var label = string.IsNullOrWhiteSpace(m.Chapters[i].Heading)
-                ? $"Chapter {i + 1}" : m.Chapters[i].Heading!;
+                ? m.Title : m.Chapters[i].Heading!;
             sb.AppendLine($"""  <li><a href="chapter-{i + 1:D3}.xhtml">{EpubEsc(label)}</a></li>""");
         }
         sb.AppendLine("""</ol></nav></body></html>""");
         return sb.ToString();
     }
 
-    private static string EpubChapterXhtml(Chapter chapter, int number)
+    private static string EpubChapterXhtml(Chapter chapter, string bookTitle)
     {
-        var heading = string.IsNullOrWhiteSpace(chapter.Heading) ? $"Chapter {number}" : chapter.Heading!;
+        // Heading is null for a single-chapter story (never print "Chapter 1") — the
+        // page <title> falls back to the book title and no <h2> heading is emitted.
+        var heading = string.IsNullOrWhiteSpace(chapter.Heading) ? null : chapter.Heading!.Trim();
         var sb = new StringBuilder();
         sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
         sb.AppendLine("""<!DOCTYPE html>""");
         sb.AppendLine("""<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">""");
-        sb.AppendLine($"""<head><title>{EpubEsc(heading)}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>""");
+        sb.AppendLine($"""<head><title>{EpubEsc(heading ?? bookTitle)}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>""");
         sb.AppendLine("<body>");
-        sb.AppendLine($"""<h2 class="chapter-heading">{EpubEsc(heading)}</h2>""");
+        if (heading is not null)
+            sb.AppendLine($"""<h2 class="chapter-heading">{EpubEsc(heading)}</h2>""");
         foreach (var para in chapter.Paragraphs)
             sb.AppendLine($"<p>{EpubRenderInline(para)}</p>");
         sb.AppendLine("</body></html>");
@@ -404,6 +414,21 @@ public class ManuscriptExportService
             current ??= AddLeadChapter(chapters);
             foreach (var para in SplitParagraphs(text))
                 current.Paragraphs.Add(para);
+        }
+
+        // Resolve the final display heading for every chapter, centrally. A story
+        // that resolves to a SINGLE chapter prints no heading at all (Heading = null)
+        // — we never print "Chapter 1". Multi-chapter books fill any untitled chapter
+        // with its ordinal. Renderers emit the heading verbatim and skip it when null.
+        if (chapters.Count == 1)
+        {
+            chapters[0] = chapters[0] with { Heading = null };
+        }
+        else
+        {
+            for (int i = 0; i < chapters.Count; i++)
+                if (string.IsNullOrWhiteSpace(chapters[i].Heading))
+                    chapters[i] = chapters[i] with { Heading = $"Chapter {i + 1}" };
         }
 
         // Mirror the node's series/book ancestry in the output path so a story

@@ -594,6 +594,51 @@ public class NodeWorkbenchService
         return (segments.Count, beatCount);
     }
 
+    /// <summary>
+    /// Enforce the "every story has at least one chapter" invariant on a flat
+    /// (chapterless) story: wrap ALL of its direct beats into a single new
+    /// <see cref="ChapterNode"/> child, re-pointing the beats (never copied or
+    /// rewritten) and preserving their reading order. No-op (returns null) if the
+    /// story already has chapter children. The lone chapter takes the story's own
+    /// title; renderers suppress the heading when a story resolves to one chapter.
+    /// Returns the new chapter's id + slug and the number of beats moved.
+    /// </summary>
+    public async Task<(Guid ChapterId, string Slug, int Beats)?> WrapInSingleChapterAsync(Guid storyId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var story = await db.Nodes.FirstOrDefaultAsync(s => s.Id == storyId, ct)
+            ?? throw new InvalidOperationException($"Node {storyId} not found.");
+
+        var existingChildren = await db.Nodes.CountAsync(s => s.ParentNodeId == storyId, ct);
+        if (existingChildren > 0) return null; // already chaptered — nothing to do
+
+        var enabled = await db.BeatNodes.Where(sb => sb.NodeId == storyId && sb.IsEnabled)
+            .OrderBy(sb => sb.SortKey).ToListAsync(ct);
+        if (enabled.Count == 0) throw new InvalidOperationException($"'{story.Title}' has no direct beats to wrap.");
+
+        var childId = Guid.CreateVersion7();
+        var slug = $"{Slugify(story.Title)}-{childId.ToString("N")[..8]}";
+        db.Nodes.Add(new ChapterNode
+        {
+            Id = childId, Slug = slug, Title = story.Title, Status = "draft",
+            UniverseId = story.UniverseId, ParentNodeId = storyId, SortKey = 100.0,
+        });
+
+        // Re-point the enabled beat links onto the new chapter, preserving order.
+        db.BeatNodes.RemoveRange(enabled);
+        double sk = 100.0;
+        foreach (var link in enabled)
+        {
+            db.BeatNodes.Add(new BeatNode { NodeId = childId, BeatId = link.BeatId, SortKey = sk });
+            sk += 100.0;
+        }
+
+        story.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Wrapped '{Title}' into a single chapter ({Slug}): {Beats} beats moved.", story.Title, slug, enabled.Count);
+        return (childId, slug, enabled.Count);
+    }
+
     /// <summary>Mark a node Canon (or clear it) — the author-only trust gate
     /// (ARCHITECTURE.md §2c): "strong enough to draw conclusions about the
     /// characters and events." Stamps <see cref="Node.CanonAt"/> when set.

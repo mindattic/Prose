@@ -1,0 +1,502 @@
+{
+  "nodeCode": "VATD",
+  "slug": "vultures-at-the-door-019ec467",
+  "title": "Vultures at the Door",
+  "generatedAtUtc": "2026-07-15 01:31:10Z",
+  "totalBeats": 27,
+  "covered": 27,
+  "chapterGranular": false,
+  "storyScope": {
+    "TemporalScheme": "nonlinear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "quiet",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true
+  },
+  "flagCounts": {
+    "UNSCORED": 27
+  },
+  "beats": [
+    {
+      "BeatId": "019ec467-b03f-7dca-80a8-b3b7c146307f",
+      "Number": 3868,
+      "Chapter": "Part One \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes the protagonists\u0027 morally compromised routine and the world\u0027s organ-debt economy, grounding the reader in the story\u0027s ethical baseline before the inciting incident.",
+      "EscalationTarget": "2",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 4869,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "42aff3fa-1659-4a55-8461-50e0aebe39db",
+      "Number": 3916,
+      "Chapter": "Part One \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Introduces Ekow as a subordinated but self-possessed operative, establishing his relationship to the Lotus and the missing-person case that will collide with the main plot.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "anachrony-cut"
+      ],
+      "ProseLength": 2803,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec467-cc85-7430-8191-c45ab4475bbe",
+      "Number": 3869,
+      "Chapter": "Part One \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Dramatizes the organ-reclamation system\u0027s institutional coldness, positioning Tomas as complicit in a dehumanizing machinery he has learned to emotionally insulate himself from.",
+      "EscalationTarget": "5",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4137,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec467-e45a-772e-afab-6d75fd520010",
+      "Number": 3870,
+      "Chapter": "Part One \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals Tomas\u0027s suppressed moral awareness and foreshadows the ethical reckoning ahead by marking his deliberate incuriosity about the system he serves.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1309,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f21b2-244f-7e82-9948-ac48de611329",
+      "Number": 4973,
+      "Chapter": "Part One \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes Tomas\u0027s professional caution and situational intelligence, and seeds the Lotus\u0027s territorial presence as a latent threat surrounding the upcoming recall.",
+      "EscalationTarget": "6",
+      "EventType": "reconnaissance",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3384,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec467-ff22-763c-b972-08f2b547e8f9",
+      "Number": 3871,
+      "Chapter": "Part One \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Escalates tension by introducing an unknown armed variable and exposing Levin\u0027s drug-compromised reflexes as a liability at the worst possible moment.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4142,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-17e3-7899-9e48-b053fc37ade4",
+      "Number": 3872,
+      "Chapter": "Part One \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Turns the story irrevocably by forcing Tomas to kill, converting a routine job into a catastrophic entanglement whose consequences the rest of the narrative must reckon with.",
+      "EscalationTarget": "8",
+      "EventType": "ambush",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 3359,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "098a25fd-693d-4e55-a1ff-5c2918dbe39d",
+      "Number": 3917,
+      "Chapter": "Part Two \u2014 The Investiga",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Introduces Ekow\u0027s investigative method and reconstructs the shooting scene to show him converging on Tomas\u0027s trail, tightening the net around the protagonists.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2980,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-2e6b-71cd-80f8-ad3dac186f55",
+      "Number": 3873,
+      "Chapter": "Part Two \u2014 The Investiga",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Escalates stakes by revealing the victim is the Lotus heir with an irreplaceable heart, transforming an accidental killing into a ticking-clock crisis with political consequences.",
+      "EscalationTarget": "6",
+      "EventType": "repair",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 4251,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-54ed-7644-ace2-5ecad80a9756",
+      "Number": 3874,
+      "Chapter": "Part Two \u2014 The Investiga",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Pays off the Lotus worldbuilding by revealing the full political catastrophe Tomas has triggered, reframing the shooting as the potential spark for a gang war.",
+      "EscalationTarget": "7",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 6987,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f11eb-fb83-7c27-8875-fb35c33feb1d",
+      "Number": 4910,
+      "Chapter": "Part Two \u2014 The Investiga",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Establishes the investigation\u0027s opening conditions by grounding Tomas as a seasoned professional entering a suspicious death scene, seeding the Lotus mark as a narrative thread and Levin\u0027s competence as a working variable.",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2368,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-6e8d-7548-8f4c-86369208f743",
+      "Number": 3875,
+      "Chapter": "Part Two \u2014 The Investiga",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Escalates the stakes by revealing that someone is conducting methodical, expert interrogation-torture ahead of the protagonists, establishing an unseen antagonist whose patience and skill outclass the trade\u0027s routine violence.",
+      "EscalationTarget": "7",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 7242,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f21b2-68bb-71e5-b5ab-5fd14153a87d",
+      "Number": 4974,
+      "Chapter": "Part Two \u2014 The Investiga",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Reveals Tomas\u0027s professional discipline under direct pressure, demonstrating that protecting the ward requires active deception of an organized search party closing in on them.",
+      "EscalationTarget": "8",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2460,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "4ce30a3b-5851-4738-833a-593e517e0ff7",
+      "Number": 3918,
+      "Chapter": "Part Two \u2014 The Investiga",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Pays off Ekow\u0027s investigative thread by delivering the clinic lead that redirects the hunt, while the folded handkerchief establishes his ritual orderliness as a character signature.",
+      "EscalationTarget": "7",
+      "EventType": "interrogation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1815,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-87c2-7d7b-bcfd-5e525f59fd27",
+      "Number": 3876,
+      "Chapter": "Part Three \u2014 The Confron",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Turns a dead end into a plot pivot by having a routine manifest call accidentally surface a potential donor, reframing the ward\u0027s impossible medical problem as solvable through the protagonists\u0027 own job.",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 11176,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-a620-7b9b-afb2-931eff2acb0a",
+      "Number": 3877,
+      "Chapter": "Part Three \u2014 The Confron",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Establishes the emotional cost of Levin\u0027s failure by having Tomas name it plainly, and deepens their partnership by showing Levin absorb accountability without deflection.",
+      "EscalationTarget": "9",
+      "EventType": "confession",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 6250,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-c151-77da-996a-ee2ac19d2f23",
+      "Number": 3878,
+      "Chapter": "Part Three \u2014 The Confron",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Reveals that Levin\u0027s drug tolerance has crossed a threshold into genuine crisis, escalating his dependency from a managed liability to an immediate threat to his and Tomas\u0027s survival.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 6740,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f11ec-2d1d-7998-bab7-377563a678d8",
+      "Number": 4911,
+      "Chapter": "Part Three \u2014 The Confron",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Pays off the episode\u0027s tension by having Levin disclose, minimally but honestly, that the Resonance Zone geometry is haunting him, marking the furthest he has opened on the subject in their partnership.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2779,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-d9d6-785c-bc17-8c51b07e5866",
+      "Number": 3879,
+      "Chapter": "Part Three \u2014 The Confron",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Escalates the antagonist\u0027s threat to personal danger by confirming he has traced the protagonists through Osei, turning an abstract pursuer into an imminent one with their descriptions in hand.",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4373,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec468-f760-7dfc-8b6a-5e9420dd1e51",
+      "Number": 3880,
+      "Chapter": "Part Three \u2014 The Confron",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Raises the confrontation\u0027s urgency to its peak by converging the donor solution, the dying ward, and the closing hunter at a single location, forcing the protagonists to race their own exposure.",
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 7952,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f0f2c-b4f5-7189-b67e-1cc04fc235dc",
+      "Number": 4859,
+      "Chapter": "Part Three \u2014 The Confron",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Establishes the trap closing around the heir\u0027s apartment while revealing Tomas\u0027s ingenuity in exploiting the Ward\u0027s social invisibility to smuggle the boy home, then pivots to introduce a dangerous unknown figure already waiting inside.",
+      "EscalationTarget": "8",
+      "EventType": "exchange",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 7539,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec469-0fa3-75ad-94ea-5e75ade6ecbb",
+      "Number": 3881,
+      "Chapter": "Part Four \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Reveals Casimir\u0027s expertise as a scene-fabricator to establish his criminal depth and complicity, while paying off the heist\u0027s stakes by showing the cover story being constructed with professional precision.",
+      "EscalationTarget": "9",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 5639,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "6368424e-e71e-4f9b-b8de-ae643964c68d",
+      "Number": 3919,
+      "Chapter": "Part Four \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Pays off Tomas\u0027s decade of invisible service by letting him witness, for once, the consequence of his own action in real time, while the stand-down order signals the deception has succeeded.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 4175,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec469-2c9a-7202-b6e5-5f63a7e39598",
+      "Number": 3882,
+      "Chapter": "Part Four \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Provides a brief tonal reset that isolates Ekow in indifferent nature, signaling his deliberate detachment from the operation\u0027s outcome and the limits of his loyalty.",
+      "EscalationTarget": "5",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 605,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f11ec-6045-7667-8c23-ed6a53c45819",
+      "Number": 4912,
+      "Chapter": "Part Four \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Turns Levin\u0027s arc from passive guilt toward active redemption by having Tomas offer an unexpected second chance, with Levin\u0027s wordless acceptance marking a decisive moral choice.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 1184,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec6b2-6a27-7cce-a27d-66d0528956c9",
+      "Number": 3915,
+      "Chapter": "Part Four \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Pays off the organ\u0027s narrative thread by showing Tomas\u0027s quiet, pre-planned act of conscience finally executed, restoring what was taken and closing the moral debt to the old man.",
+      "EscalationTarget": "7",
+      "EventType": "exchange",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3153,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ec469-7d02-7b03-beb6-419a463cdc32",
+      "Number": 3885,
+      "Chapter": "Part Four \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Closes Levin\u0027s arc by showing him look at the photograph of his former self for the first time rather than away from it, signaling that returning the kidney has cracked open the possibility of recovery.",
+      "EscalationTarget": "6",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2695,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    }
+  ]
+}
