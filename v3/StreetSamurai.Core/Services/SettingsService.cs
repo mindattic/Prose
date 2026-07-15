@@ -187,19 +187,27 @@ public class SettingsService : IDisposable
     }
 
     /// <summary>Returns the export base directory for the given universe slug.
-    /// Checks <c>UniverseExportDirectories[slug]</c> first; falls back to
-    /// <c>PublishExportDirectory</c>; falls back to Desktop.</summary>
+    /// <c>PublishExportDirectory</c> is the shared root (falls back to Desktop).
+    /// The <c>UniverseExportDirectories[slug]</c> entry fills in the rest of the
+    /// path: a <em>relative</em> entry (e.g. "GLMZ") is combined onto the root,
+    /// while an <em>absolute</em> entry (e.g. "R:\…\GLMZ") is used verbatim for
+    /// back-compat. With no entry, the bare root is returned.</summary>
     public string GetExportDirectory(string? universeSlug)
     {
+        var global = (data.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+        var root = string.IsNullOrWhiteSpace(global)
+            ? Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+            : global;
+
         if (!string.IsNullOrWhiteSpace(universeSlug)
             && data.UniverseExportDirectories.TryGetValue(universeSlug, out var universeDir)
             && !string.IsNullOrWhiteSpace(universeDir))
-            return universeDir.Trim().Trim('"', '\'').Trim();
+        {
+            var segment = universeDir.Trim().Trim('"', '\'').Trim();
+            return Path.IsPathRooted(segment) ? segment : Path.Combine(root, segment);
+        }
 
-        var global = (data.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
-        return string.IsNullOrWhiteSpace(global)
-            ? Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-            : global;
+        return root;
     }
 
     /// <summary>Persists a universe-specific export directory override.</summary>
