@@ -95,10 +95,16 @@ public class NodeDocService
         node.UpdatedAt = now;
         await db.SaveChangesAsync(ct);
 
-        // Write disk mirror
+        // Write disk mirror — delete-then-rewrite enforces read-only invariant without cached stale copies.
         var filePath = Path.Combine(paths.DataRoot, "docs", "nodes", $"{nodeCode}.md");
         Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
+        if (File.Exists(filePath))
+        {
+            File.SetAttributes(filePath, FileAttributes.Normal);
+            File.Delete(filePath);
+        }
         await File.WriteAllTextAsync(filePath, docText, Encoding.UTF8, ct);
+        File.SetAttributes(filePath, FileAttributes.ReadOnly);
 
         log.LogInformation(
             "[generate-node-doc] {NodeCode} — {BeatCount} beats, blueprint={HasBlueprint}, file={Path}",
