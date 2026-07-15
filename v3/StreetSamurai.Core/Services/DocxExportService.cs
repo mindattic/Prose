@@ -30,6 +30,8 @@ public class DocxExportService
     private const string Chapter16 = "32";
     private const string Title28 = "56";
     private const string Author14 = "28";
+    // Calibrated from UNDR: 37,921 words / 144 KDP pages ≈ 263 WPP; use 260 (conservative).
+    private const double WordsPerPage = 260.0;
 
     public DocxExportService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
@@ -246,6 +248,7 @@ public class DocxExportService
             // ── Body ──
             bool chapterEmitted = false;
             int tocIdx = 0;
+            int wordCount = 0;
             for (int i = 0; i < ordered.Count; i++)
             {
                 var beat = ordered[i].Beat;
@@ -262,11 +265,15 @@ public class DocxExportService
                 }
                 var text = (beat.Text ?? "").Trim();
                 if (text.Length == 0) continue;
+                wordCount += CountWords(text);
                 foreach (var para in SplitParagraphs(text))
                     body.AppendChild(BodyParagraph(para));
             }
 
-            body.AppendChild(SectionProps(node.KdpPageCount));
+            // Estimate KDP page count from word count and store for display + next export.
+            var estimatedPages = Math.Max(1, (int)Math.Round(wordCount / WordsPerPage));
+            node.KdpPageCount = estimatedPages;
+            body.AppendChild(SectionProps(estimatedPages));
             main.Document.Save();
         }
 
@@ -284,6 +291,9 @@ public class DocxExportService
     // KDP paperback trim: 6" × 9" (8640 × 12960 twips).
     // Left/Right = 720 (0.5" outer). Gutter is calculated from page count via KDP's table.
     // MirrorMargins (set in Settings) flips gutter to spine side on verso.
+    private static int CountWords(string text) =>
+        text.Split([' ', '\t', '\n', '\r'], StringSplitOptions.RemoveEmptyEntries).Length;
+
     private static SectionProperties SectionProps(int? kdpPageCount) => new(
         new PageSize { Width = 8640U, Height = 12960U },
         new PageMargin { Top = 1440, Bottom = 1440, Left = 720U, Right = 720U, Header = 720U, Footer = 720U, Gutter = KdpGutter(kdpPageCount) });
