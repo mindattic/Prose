@@ -256,9 +256,8 @@ shapes; they do not rewrite canon values.
    Universe) — never a shared row and never an M:M bridge. (Id 15 is the next free number; the
    narrative laws 9–14 below were allocated earlier.)
 
-**GLMZ / Bushido Coda narrative laws (Universe: GLMZ — validate any GLMZ rewrite against these;
-from `v3/canon_writes/story_state.md`). Other universes (e.g. Fantasy/Steampunk) get their own
-narrative-law block here when stood up:**
+**GLMZ / Bushido Coda narrative laws (Universe: GLMZ — validate any GLMZ rewrite against these).
+Other universes (e.g. Fantasy/Steampunk) get their own narrative-law block here when stood up:**
 
 9. **Canon is author-only.** {#SS-LAW-9} `Node.IsCanon` is set only manually by the author and
    means "strong enough to draw conclusions from." Only canon stories are authoritative for
@@ -510,14 +509,9 @@ Software frontier (the road to the endpoint; ordered) — full backlog with acce
 - See design notes in [docs/rfc/](rfc/).
 
 Narrative frontier (Bushido Coda):
-- **Canon spine** — 8-chapter Book One; canon prose register is **v8** (see [§ canon note](#SS-§6)
-  and [docs/USER_STORIES.md](USER_STORIES.md) audit). Working corpus:
-  `v3/canon_writes/bushido_coda_100_stories_outline.md` (100-story outline, stories 1–8 = the
-  spine, 9+ = sketches).
-- **Style register:** `engine/bushido_coda_v3/00_style_guide.md` (v8 register, the rulebook).
-- **World reference:** `v3/canon_writes/network_doc.md` (the Network in 2226).
-- **Session/state notes:** `v3/canon_writes/story_state.md` (the per-session canon scratch — its
-  continuity invariants are promoted to the Laws in [§5](#SS-§5)).
+- **Canon spine** — 16-chapter Book One; COMPLETE (V19.docx, 2026-07-10; 435 beats, 0 BLOCKERs).
+  Story context, voice register, and narrative locks live in `Nodes.NodeBible` (DB) — see
+  `docs/nodes/BCODA.md` (generated mirror). Series coordination: `docs/series/GLMZ.md`.
 
 ## 8. Quality bar {#SS-§8}
 

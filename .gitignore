@@ -69,3 +69,19 @@ v3/ml/artifacts/
 # not tracked — it churned tens of thousands of lines per universe switch.
 engine/data/graph/*_universe_graph.json
 engine/data/graph/world_graph.json
+
+# Logic sweep outputs — session artifacts, never canon
+audit-outlines-*/
+audit-haiku-*/
+
+# Test run output
+**/TestResults/
+
+# Scratch output files
+*.out
+
+# Runtime lock files
+.claude/scheduled_tasks.lock
+
+# Legacy story outline format (superseded by DB beats)
+*.strand

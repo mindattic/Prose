@@ -80,9 +80,8 @@ story row belongs to exactly one Universe ([SS-LAW-15](#SS-§5)).
    Universe) — never a shared row and never an M:M bridge. (Id 15 is the next free number; the
    narrative laws 9–14 below were allocated earlier.)
 
-**GLMZ / Bushido Coda narrative laws (Universe: GLMZ — validate any GLMZ rewrite against these;
-from `v3/canon_writes/story_state.md`). Other universes (e.g. Fantasy/Steampunk) get their own
-narrative-law block here when stood up:**
+**GLMZ / Bushido Coda narrative laws (Universe: GLMZ — validate any GLMZ rewrite against these).
+Other universes (e.g. Fantasy/Steampunk) get their own narrative-law block here when stood up:**
 
 9. **Canon is author-only.** {#SS-LAW-9} `Node.IsCanon` is set only manually by the author and
    means "strong enough to draw conclusions from." Only canon stories are authoritative for

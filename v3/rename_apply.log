@@ -1,9 +1,0 @@
-﻿
-[13:49:13] === rename apply started ===
-[13:49:13] parsed proposals: 132
-[13:49:14] rename plan size: 132; slug conflicts disambiguated: 0
-[13:49:14] DB Characters updated: 132; Entities updated: 132
-[13:53:24] Records.Json blobs touched (sum across all renames): 281
-[13:53:24] DB transaction committed
-[13:53:29] on-disk JSON files touched: 572 (of 11426 scanned)
-[13:53:29] === rename apply finished ===

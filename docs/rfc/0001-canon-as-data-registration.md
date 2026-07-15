@@ -3,8 +3,8 @@ codex: 1
 project: StreetSamurai
 code: SS
 layer: rfc
-status: planned
-updated: 2026-06-07
+status: withdrawn
+updated: 2026-07-15
 ---
 
 # RFC 0001 — Register engine_data as the L5 canon-as-data layer

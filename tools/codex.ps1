@@ -72,14 +72,14 @@ function Invoke-Doctor {
   Write-Host "Codex doctor - $Code ($RepoRoot)" -ForegroundColor Cyan
 
   # 1. required files exist
-  foreach ($f in @($Bible, $Stories, $Amend)) {
+  foreach ($f in @($Bible, $Stories)) {
     if (-not (Test-Path $f)) { Add-Err "missing required file: $($f.Replace($RepoRoot,'').TrimStart('\','/'))" }
   }
 
   # 2. front-matter
   Test-FrontMatter $Bible   'bible'
   Test-FrontMatter $Stories 'stories'
-  Test-FrontMatter $Amend   'amendments'
+  if (Test-Path $Amend) { Test-FrontMatter $Amend 'amendments' }  # AMENDMENTS.md retired 2026-07-04
   if (Test-Path $RfcDir) {
     Get-ChildItem -LiteralPath $RfcDir -Filter '*.md' -ErrorAction SilentlyContinue | ForEach-Object {
       Test-FrontMatter $_.FullName 'rfc'

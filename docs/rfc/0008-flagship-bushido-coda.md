@@ -3,8 +3,8 @@ codex: 1
 project: StreetSamurai
 code: SS
 layer: rfc
-status: draft
-updated: 2026-06-17
+status: withdrawn
+updated: 2026-07-15
 ---
 
 # RFC 0008 — The Flagship: BUSHIDO CODA, Book I {#SS-RFC-0008}

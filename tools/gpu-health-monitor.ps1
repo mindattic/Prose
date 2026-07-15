@@ -6,7 +6,7 @@
 # Usage: pwsh tools/gpu-health-monitor.ps1
 
 $PollSeconds = 60
-$VllmKey     = "vllm_key_aJaFlrQrTzfyhVPC6dWoqDonVaQAxd060oYwo81f"
+$VllmKey     = $env:VLLM_KEY   # set in environment; never hardcode here
 $WorkDir     = "D:\Projects\MindAttic\StreetSamurai"
 $LogFile     = "$WorkDir\gpu-health-monitor.log"
 $DbServer    = "(localdb)\MSSQLLocalDB"
