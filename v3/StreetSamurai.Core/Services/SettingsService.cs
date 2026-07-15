@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using Microsoft.Extensions.Configuration;
 using MindAttic.Legion;
 using StreetSamurai.Core.Interfaces;
@@ -23,6 +24,10 @@ public class SettingsService : IDisposable
     private SettingsData data = new();
     private Timer? saveTimer;
     private readonly object saveLock = new();
+    // Snapshot of the settings as this process last saw them persisted (set at Load and after each
+    // Flush). Flush() diffs the current in-memory state against this to write ONLY the fields this
+    // process changed — so a stale copy can't clobber fields other processes wrote. See Flush().
+    private JsonObject? baseline;
 
     public SettingsService() : this(Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
@@ -694,6 +699,9 @@ public class SettingsService : IDisposable
             var json = File.ReadAllText(settingsPath);
             data = JsonSerializer.Deserialize<SettingsData>(json) ?? new();
         }
+        // Baseline = what we just loaded (serialized through the same options Flush uses, so the
+        // diff compares like-for-like). Empty object when the file is absent.
+        baseline = JsonSerializer.SerializeToNode(data, JsonDefaults.Indented)?.AsObject() ?? new JsonObject();
     }
 
     /// <summary>
@@ -743,7 +751,17 @@ public class SettingsService : IDisposable
         }
     }
 
-    /// <summary>Immediately write pending settings to disk.</summary>
+    /// <summary>
+    /// Persist settings to disk as a MERGE, not a wholesale overwrite. Settings.json is shared by
+    /// several live processes (the CLI, the MCP server, and the Blazor/Writer/Codex web hosts), each
+    /// holding its own in-memory copy loaded at startup. A plain "serialize the whole object → overwrite
+    /// the file" lets a process with a STALE snapshot silently clobber fields other processes changed
+    /// after it loaded (e.g. an admin toggling a theme on /settings wiping a CLI-written export dir).
+    /// Instead we overlay ONLY the top-level keys this process actually changed — diffed against the
+    /// load-time <see cref="baseline"/> — onto a fresh read of the current file, under a cross-process
+    /// mutex with an atomic temp+rename. Keys we didn't touch keep their on-disk value, so concurrent
+    /// writers can no longer stomp each other.
+    /// </summary>
     public void Flush()
     {
         lock (saveLock)
@@ -752,8 +770,79 @@ public class SettingsService : IDisposable
             saveTimer = null;
             var dir = Path.GetDirectoryName(settingsPath);
             if (string.IsNullOrEmpty(dir) || !Directory.Exists(dir)) return;
-            var json = JsonSerializer.Serialize(data, JsonDefaults.Indented);
-            File.WriteAllText(settingsPath, json);
+
+            using var guard = new CrossProcessLock(settingsPath);
+            guard.Acquire(TimeSpan.FromSeconds(5));
+
+            // This process's full current state, as JSON nodes (same options as the file, so nulls are
+            // omitted identically and the diff compares like-for-like).
+            var current = JsonSerializer.SerializeToNode(data, JsonDefaults.Indented)?.AsObject()
+                          ?? new JsonObject();
+
+            // The current on-disk truth (may include fields other processes wrote after we loaded).
+            JsonObject disk;
+            try
+            {
+                disk = File.Exists(settingsPath)
+                    ? (JsonNode.Parse(File.ReadAllText(settingsPath)) as JsonObject) ?? new JsonObject()
+                    : new JsonObject();
+            }
+            catch (JsonException) { disk = new JsonObject(); }   // corrupt/partial read — rebuild from ours
+            catch (IOException)   { disk = new JsonObject(); }
+
+            // Overlay only the keys THIS process changed since it loaded / last flushed.
+            foreach (var (key, node) in current)
+            {
+                var changedHere = baseline is null
+                    || !baseline.TryGetPropertyValue(key, out var baseNode)
+                    || !JsonNode.DeepEquals(node, baseNode);
+                if (changedHere)
+                    disk[key] = node?.DeepClone();
+            }
+
+            var merged = disk.ToJsonString(JsonDefaults.Indented);
+            var tmp = settingsPath + ".tmp";
+            File.WriteAllText(tmp, merged);
+            File.Move(tmp, settingsPath, overwrite: true);
+
+            // Adopt the merged result: pick up fields other writers contributed, and re-baseline so the
+            // next diff is taken against what is actually persisted now.
+            data = disk.Deserialize<SettingsData>() ?? data;
+            baseline = disk;
+        }
+    }
+
+    /// <summary>Best-effort cross-process lock (named mutex) around the settings read-modify-write.
+    /// Degrades to no-lock if named mutexes are unavailable; the atomic temp+rename still applies.</summary>
+    private sealed class CrossProcessLock : IDisposable
+    {
+        private readonly Mutex? mutex;
+        private bool held;
+
+        public CrossProcessLock(string path)
+        {
+            try
+            {
+                var name = "Global\\MindAttic_SS_Settings_" + Convert.ToHexString(
+                    System.Security.Cryptography.MD5.HashData(
+                        System.Text.Encoding.UTF8.GetBytes(path.ToLowerInvariant())));
+                mutex = new Mutex(false, name);
+            }
+            catch { mutex = null; }
+        }
+
+        public void Acquire(TimeSpan timeout)
+        {
+            if (mutex is null) return;
+            try { held = mutex.WaitOne(timeout); }
+            catch (AbandonedMutexException) { held = true; }   // prior holder crashed — we own it now
+            catch { held = false; }
+        }
+
+        public void Dispose()
+        {
+            try { if (held) mutex?.ReleaseMutex(); } catch { /* not owner / already released */ }
+            mutex?.Dispose();
         }
     }
 

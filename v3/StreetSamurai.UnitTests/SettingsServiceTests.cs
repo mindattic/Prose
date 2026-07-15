@@ -164,6 +164,50 @@ public class SettingsServiceTests
         fresh.Dispose();
     }
 
+    // ── Multi-process clobber (merge-on-write) ───────────────────────────────
+
+    [Test]
+    public void Flush_ConcurrentInstances_DoNotClobberEachOthersFields()
+    {
+        // Two independent instances over the same store, each loaded from the same starting file —
+        // simulating two processes (e.g. a CLI publish and a running web host) sharing Settings.json.
+        using var a = new SettingsService(tempDir);
+        using var b = new SettingsService(tempDir);
+
+        // Each changes a DIFFERENT field. b's in-memory baseline predates a's write, so a plain
+        // whole-object overwrite by b would wipe a's change. Merge-on-write must preserve both.
+        a.MaxTokens = 4242;
+        a.Flush();
+        b.MapMode = "clobber-b";
+        b.Flush();
+
+        using var fresh = new SettingsService(tempDir);
+        Assert.Multiple(() =>
+        {
+            Assert.That(fresh.MaxTokens, Is.EqualTo(4242), "a's field was clobbered by b's stale flush");
+            Assert.That(fresh.MapMode, Is.EqualTo("clobber-b"));
+        });
+    }
+
+    [Test]
+    public void Flush_ExportDirSurvivesUnrelatedHostFlush()
+    {
+        // The exact reported bug: a CLI publish writes the per-universe export dir, then a running web
+        // host (holding a stale in-memory copy) flushes an unrelated field — the export dir must survive.
+        using var cli  = new SettingsService(tempDir);  // simulates `ss --publish --export-dir ...`
+        using var host = new SettingsService(tempDir);  // simulates a live Writer/Codex host
+
+        cli.SetUniverseExportDirectory("scry", @"R:\X\Scry");
+        cli.Flush();
+
+        host.MapMode = "toggled";  // host changes something unrelated with a copy that predates cli's write
+        host.Flush();
+
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.GetExportDirectory("scry"), Is.EqualTo(@"R:\X\Scry"),
+            "the export-dir map was clobbered by the host's stale flush");
+    }
+
     // ── SMTP defaults ────────────────────────────────────────────────────────
 
     [Test]
