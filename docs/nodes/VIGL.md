@@ -1736,6 +1736,39 @@ Sinter.** Sinter lies southeast, not north; the old "north to Pallor → Sinter"
 **Escalation LOCK:** the encounters grow **worse the closer they get to Sinter** — the world rots by
 degrees; each leg is more horrible than the last, peaking at the Cavity (monotonic dread curve).
 
+**Route terrain — leg by leg {#SS-VIGL-route-terrain}:** Lyra's road is drawn on
+`docs/nodes/maps/VIGL-caul-route.png` (the yellow line). Depict each stretch to its real-world
+terrain; the dread rises the further southeast they go.
+1. **Ocipheus (Great Britain)** — the theft, at the Liturgy archive; then south to the coast. Damp
+   green downs and hedged country, chalk cliffs, a working Channel port.
+2. **The Narrow Sea (the English Channel)** — a grey crossing; landfall on the flat Low-Countries /
+   northern-Verlaine coast.
+3. **Verlaine (northern France)** — broad tilled plains, poplar roads, river meadows (Seine/Marne
+   country); Verlaine is *the army*, so garrison towns, cantonments, columns on every road. **Rowe is
+   found here.**
+4. **Eastern Verlaine → the Vienna gap → Atrament** — rising ground to the Rhine, then the Danube
+   corridor and the **Vienna gap** between the northern Alps and the Carpathian arc. **Never Hamburg**
+   (the northern port is Three Points; the team keeps south).
+5. **Atrament (the forge-lands)** — industrial river valleys, coal-smoke, slag, the Danube; the ground
+   then hardens as the road bends **southeast** off the map's yellow line.
+6. **The Balkan spine → southern Caerglas** — the Dinaric/Balkan mountains: karst, gorges, high cold
+   passes, emptying country. The **Blink-Thief intercept at Caer Glas Moor** sits in the **southern
+   Caerglas uplands (the Bulgarian Balkans)**, on this approach — the ground where the Oculus was lost
+   (Battle of Nine Days). *(Reconciliation: the map shows the crossing into Caerglas via the southern
+   Balkans, NOT the earlier "Uzhanskyi / Carpathian" note — the Carpathian crossing is superseded by
+   this map; Uzhanskyi is off the drawn line.)*
+7. **Southern Caerglas / Thrace — Tekirdağ** — down out of the mountains to the **Sea of Marmara**; the
+   war mustering-port; the last friendly water; **Vega joins here.**
+8. **Eirene's Gate (the Bosphorus/Dardanelles strait)** — ~700m of water, both banks held; the
+   **flamethrower burn-line** against the Ichor; the **Sinterspawn incursion** and **Vaen killed by the
+   Sinter Leviathan.**
+9. **Sinter (northwest Anatolia)** — dry Anatolian highland gone wrong: the **Greymarch** (emptied
+   farmsteads, blight), then the crater rim and the Singing Spires, the **Cavity**, and the **petrified
+   cyclops.** Anatolian, not sub-Arctic.
+
+*(Map legend also carries red + purple markers beside Lyra's yellow — reserved for other characters'
+tracks, not yet drawn.)*
+
 **Caer Glas Moor — SALVAGED into Caerglas {#SS-VIGL-caerglas}:** Caer Glas Moor **relocates from Pallor to
 Caerglas.** It is the **Caerglas family's Caerglas ancestral seat** (Aldric = Caerglas Knight; Wren named for it)
 and the site of the **Battle of Nine Days** (Year 972) where Caerglas lost the Oculus on its *own* soil —
