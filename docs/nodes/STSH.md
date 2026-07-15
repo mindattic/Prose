@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: STSH
@@ -97,10 +97,7 @@ her own hands when she finishes a surgery.
     situational, not habitual.
   - She does not perform competence. She is competent and occasionally wrong and both
     things show.
-- She takes payment. Not Φ20 minimum like Kyle — she takes what people have. She has
-  received ration chips, labor, a promise of help, and one extremely clean piece of scav
-  tech. She does not pretend money doesn't matter. She does not pretend it matters enough
-  to refuse someone who is dying.
+- She takes payment. Not Φ20 minimum like Kyle — she takes what people have.
 - She does not carry a weapon habitually. She has a bone saw she has used in non-surgical
   contexts exactly once. This matters in the finale.
 - She has one external tell for emotional distress: she catalogues supplies. When
@@ -109,506 +106,156 @@ her own hands when she finishes a surgery.
 ### Ledger / Cayo Reyes-Ibarra {#SS-STSH-3b}
 
 - 52 years old. Colombian-Moroccan heritage. Circuit handle: Ledger.
-- Information broker. He deals in financial records, debt instruments, identity documents,
-  and anything that can be turned into a number and traded.
-- Stash has known him for eleven years. He has done her favors; she has done him favors.
-  There is no romantic history and this story does not hint at one.
-- His rule: he always gets paid first. He states this as a principle. It is also a
-  confession — he has arranged his entire life to avoid the moment of choosing between
-  money and conscience, because he is not certain which one would win.
+- Information broker. His rule: he always gets paid first. It is also a confession — he has
+  arranged his entire life to avoid the moment of choosing between money and conscience.
 - **In Chapter 10:** Scalpel Division offers him the implant's location in exchange for
-  immunity. He accepts. Then, after one hour, he calls Stash to warn her. He cannot
-  explain why. Neither can she.
+  immunity. He accepts. Then, after one hour, he calls Stash to warn her.
 - His arc is not redemption; it is acknowledgment. He knows what he is. He acts anyway.
-- He is not a physical combatant. He is useful for one thing Stash needs: decoding
-  the implant's encryption is a financial-grade cipher (the trial records were packaged
-  by a corpo financial compliance system). Ledger knows how these work.
 
 ### Petra Voss {#SS-STSH-3c}
 
-- Halcyon Civil Security — Neuretic Crime Investigation Division (NCID / RaNCID) Agent, GLMZ Field Division. Late 40s. Finnish-Somali heritage.
-- Her logic: the neuretics governor tech that uses the stolen trial data saves
-  approximately 1,200 corpo employees per year from Praxis NeoCortex runaway syndrome.
-  If the trial records are broadcast, the program is legally compromised and those
-  1,200 people face neuretic cascade. She has done the arithmetic. The 428 victims were
-  already dead. The 1,200 are alive now.
-- She is not a villain in her own head. She is not entirely wrong.
-- She is wrong about the cost — she has not accounted for the next set of 428, because
-  the tech still requires ongoing refinement, and the corpo will conduct more trials.
-  This is never stated explicitly in the story. The reader is allowed to see it.
-- She does not torture. She does not threaten Femi. She explains her position with
-  complete honesty and then asks Stash to make the right decision.
-- She is the most dangerous person in the story because she cannot be argued with. She
-  has already had the argument with herself.
+- Halcyon Civil Security — NCID / RaNCID Agent, GLMZ Field Division. Late 40s. Finnish-Somali heritage.
+- Her logic: the governor tech saves 1,200 people per year. The 428 victims were already dead.
+  She has done the arithmetic. She is not entirely wrong. She is wrong about the next set of 428.
+- She does not torture. She explains her position with complete honesty.
+- She is the most dangerous person in the story because she cannot be argued with.
 
 ### Commander Izoha Mwangi {#SS-STSH-3d}
 
-- Scalpel Division commander, Sable Industries MedTech security arm.
-- Ghanaian heritage. Former NGRA (like Ekow Ato in VATD — different unit, never crossed
-  paths; do not reference VATD in this story).
-- Her job is asset recovery. The implant is the asset. She is professional, not sadistic.
-- She does not survive the finale. She is killed by Petra Voss, not by Stash. The two
-  enforcement arms eliminate each other in the Chapter 13 crossfire. This is intentional
-  — Stash does not kill either of her antagonists.
-- She carries a Cascade suppressor (corpo-issue electronic combat tool, not a firearm
-  in the conventional sense — disrupts neural implants within 5 meters). This is the
-  threat that makes Stash's neurology-free status relevant.
+- Scalpel Division commander, Sable Industries MedTech security arm. Ghanaian heritage. Former NGRA.
+- Professional, not sadistic. Her job is asset recovery.
+- She does not survive the finale — killed by Petra Voss in the Chapter 13 crossfire.
+- Carries a Cascade suppressor (disrupts neural implants within 5 meters).
 
 ### Femi Adebayo {#SS-STSH-3e}
 
-- 17 years old. Nigerian heritage. He is not a child in the Gray Zone sense — 17 in
-  Z-7/Z-8 is adult enough.
-- He came to the Dispensary at 14 with a badly set compound fracture from a scav run.
-  He stayed because Stash asked if he could count and he said yes.
-- He does basic triage, supply runs, and knows every tunnel and crawlspace in a
-  two-kilometer radius of the Dispensary. This knowledge saves Stash's life in Chapter 10.
-- He is not naive. He is young enough to still find the right choice obvious. Stash
-  finds this simultaneously irritating and stabilizing.
-- He is the one who names the new clinic at the end. He puts Renata's name on the wall.
+- 17 years old. Nigerian heritage. Came to Dispensary at 14 with compound fracture; stayed.
+- Knows every tunnel and crawlspace in a two-kilometer radius. This knowledge saves Stash's life.
+- He is the one who names the new clinic. He puts Renata's name on the wall.
 
 ### Renata Osei {#SS-STSH-3f}
 
-- Deceased before the story opens. 51 years old at death.
-- Ghanaian heritage. Former corporate financial compliance officer (Sable Industries, 2209-2214).
-- She built the implant herself — she had access to the trial records through compliance work
-  before the program was reclassified. When she understood what she had, she went off-grid.
-- She spent eleven years finding a way to broadcast the evidence that could not be intercepted.
-  She found Stash's name in the records. She researched Stash for two years. She walked
-  into the Dispensary knowing a killswitch would fire.
-- Her six video diary fragments show: the records (Fragment 1), the choice to go off-grid
-  (Fragment 2), her isolation (Fragment 3), her doubt (Fragment 4), her resolve (Fragment 5),
-  and her message to Stash directly (Fragment 6 — the dark night revelation).
+- Deceased before story opens. 51 years old at death. Ghanaian heritage.
+- Former corporate financial compliance officer (Sable Industries, 2209-2014). Built the implant herself.
+- Spent eleven years finding a way to broadcast the evidence. Researched Stash for two years.
+- Walked into the Dispensary knowing the killswitch would fire.
 - She is the story's moral center. She had the right answer and spent her life paying for it.
 
 ## 4. Beat spine — 14 chapters, 48 beats {#SS-STSH-4}
 
-Word target: ~50,000 words. Average beat ~1,050 words. Beats marked [C] = Combat,
-[E] = Emotional Climax, [D] = Dialogue-heavy, [N] = Narrative. All beats default to Narrative.
-
-### Chapter 1 — The Dispensary (Opening Image / Theme Stated / Set-Up)
-
-**Chapter seed:** The Gray Zone at 3am. Who Stash is, what she does, why she does it.
-
-- **Beat 1.1** [N] — *Opening Image.* 0311 hours. Stash closes a sternotomy on a 19-year-old
-  scav runner who took a ferrocement shard to the chest during a tunnel cave-in. She works alone.
-  The Dispensary's power flickers twice; she doesn't stop. The runner will live. She charges him
-  nothing because he has nothing. She catalogs the supplies she used while she cleans up.
-  The world: compressed, precise, unglamorous.
-
-- **Beat 1.2** [D] — *Theme Stated.* Morning. Femi brings in a kid with infected sutures —
-  someone else's substandard work. Femi asks if they're getting paid. Stash tells him to prep the
-  kit. Femi asks again. She says: "The job isn't the payment." Femi doesn't understand this and
-  says so. This line is the story's moral engine; it will not be repeated.
-
-- **Beat 1.3** [N] — *Set-Up.* The Dispensary's world: debts on the power supply, a three-week
-  outstanding on the ferrocement patches. A message from Ledger two days old — he has a contract
-  that could use her expertise (she has not responded). The Gray Zone outside the windows: Z-7's
-  vertical axis, the ungoverned Low, the sound of two zones that have stopped pretending to
-  coordinate. Stash makes rounds on her four current in-patients. She knows all their names.
-
-### Chapter 2 — The Runner (Catalyst)
-
-**Chapter seed:** Renata arrives dying. The killswitch fires. Stash finds the implant.
-
-- **Beat 2.1** [N] — *Catalyst.* 2340 hours. Renata staggers into the Dispensary — pulmonary
-  hemorrhage, left lobe. She is coherent enough to say she has no corp affiliation and no ID.
-  She repeats a frequency: 412.7. Stash does not know what this means. She begins the trauma
-  protocol. Renata grabs her wrist and says a name — Stash's full name — and then passes out.
-
-- **Beat 2.2** [C] — *The surgery.* Stash stabilizes Renata through the night. The hemorrhage
-  is bad but survivable. She seals the left lobe, monitors the chest cavity, gets Renata to
-  something like stable by 0400. She is good at this. She is, in this beat, fully in her element.
-
-- **Beat 2.3** [E] — *The killswitch.* 0612. Renata's chest cavity ruptures — not from the
-  hemorrhage. Something inside detonates. A contained charge, surgical placement. Stash cannot
-  save her. In the chaos of the cleanup, Stash finds a foreign body in the thoracic cavity: a
-  data capsule, undamaged, 9 centimeters long. Broadcasting. Frequency 412.7.
-
-### Chapter 3 — The Implant (Debate)
-
-**Chapter seed:** Stash holds the implant. Every rational choice says hand it over. She doesn't.
-
-- **Beat 3.1** [D] — *Renata's body.* Stash files a death report without mentioning the implant.
-  She tells the recycler Renata was DOA. This is the first lie — small, bureaucratic, devastating
-  in its ease. Femi watches. He doesn't say anything.
-
-- **Beat 3.2** [N] — *The implant broadcasts.* Stash puts it in a signal-dampening case (used for
-  pacemaker calibration). She examines the housing: Nova-7, Sable Industries, 2210. She used to
-  work for Sable Industries. She recognizes the model — she has seen them removed from patients.
-  She has never seen one in thoracic placement. That is not where these go.
-
-- **Beat 3.3** [D] — *The debate.* Stash considers her options explicitly: NSB, Scalpel Division
-  (she knows Scalpel by reputation), street disposal, or opening it. She calls Ledger. He picks
-  up immediately. She tells him she has a Nova-7 broadcasting on a dead channel, found in a
-  patient's chest. He is silent for four seconds. Then: "Don't open it here. Don't open it at
-  the Dispensary." She says she wasn't planning to. He says: "Yes you were."
-
-### Chapter 4 — Break into Two
-
-**Chapter seed:** She commits. Gets Femi out. Ledger comes. First fragment.
-
-- **Beat 4.1** [D] — *Getting Femi out.* She tells Femi to take a three-day supply run — further
-  than usual, to a contact in Z-5. She gives him twice the usual Φ. He asks why. She tells him
-  the Dispensary has a ventilation problem that needs professional assessment. He looks at her
-  for a long moment. He knows she is lying. He takes the Φ and goes. She catalogs the supplies
-  again after he leaves.
-
-- **Beat 4.2** [N] — *Ledger arrives.* He brings equipment: a frequency analyzer and a scramblers
-  stack he uses for financial data forensics. He looks at the Nova-7 and tells her exactly what
-  model it is, what its broadcast range is, and why a thoracic placement makes it undetectable
-  to standard corpo medical sweeps. She asks how he knows this. He says: "Because MidNorth
-  Medical tried to hire me to find one four months ago."
-
-- **Beat 4.3** [N] — *Renata's Fragment 1.* They crack the first encryption layer. The video is
-  a 2218 diary entry, Renata at a desk, looking directly at the camera. She is calm. She says:
-  "I worked in financial compliance for Sable Industries MedTech division from 2209 to 2214.
-  In 2211 I was assigned to reconcile the Z-7 Relocation Camp surgical program budget. What I
-  found did not reconcile." She holds up a paper document — this detail is significant; she
-  printed it to prevent digital trace — and reads four line items aloud. Clinical. Specific.
-  428 subjects. The fragment ends.
-
-- **Beat 4.4** [D] — *What Ledger knows.* After the fragment: Ledger explains that the neuretics
-  governor program has been public knowledge for years — it's what keeps Praxis NeoCortex users
-  from cascade failure. What is not public knowledge is what the test data cost. He has been
-  trying to find the provenance for two years. The source always dried up before he could price
-  it. He tells Stash what the implant is worth in money. She tells him that is not the
-  relevant number.
-
-### Chapter 5 — Fun and Games (1)
-
-**Chapter seed:** Decoding. Scalpel Division finds the Dispensary's last known address for Renata.
-
-- **Beat 5.1** [N] — *The encryption.* The implant uses a financial-grade cipher — standard
-  corpo compliance architecture, the kind Ledger has cracked hundreds of times. He begins the
-  work. It is slow. Stash watches the frequency analyzer. The implant is broadcasting. Someone
-  is receiving.
-
-- **Beat 5.2** [D] — *Renata's Fragment 2.* 2219. Renata is in a different location — sparse,
-  unfamiliar. She explains that she left Sable Industries in 2214 after failing to get anyone
-  in the compliance chain to acknowledge the discrepancy. She has been building the implant
-  since 2218. She has learned about Stash from an anonymized Sable Industries personnel roster.
-  She does not say Stash's name yet. The fragment cuts before she can.
-
-- **Beat 5.3** [C] — *Scalpel arrives at the Dispensary.* Two Scalpel Division operatives. They
-  do not knock — they have a commercial-entry warrant. Stash and Ledger are three blocks away
-  in his equipment van. She watches on the Dispensary's exterior camera feed (which she remembered
-  to pull to her phone). She watches them search the clinic methodically. They take her patient
-  files. She feels something she will later identify as grief, though at the moment she identifies
-  it only as a pressure deficit in the chest. She does not go back.
-
-- **Beat 5.4** [N] — *Ledger's price.* After the Scalpel incursion, Ledger says he wants a fee:
-  a percentage of whatever this data is worth when it becomes public. She tells him it will not
-  be worth money — it will be worth destruction of MidNorth Medical's legal standing. He says
-  that is also a commodity. She does not argue. She agrees to his terms. She notes she cannot
-  actually pay him what he's asking, but she agrees to the terms.
-
-### Chapter 6 — Fun and Games (2) / Promise of the Premise
-
-**Chapter seed:** Progress. NSB makes contact. Petra introduces herself honestly.
-
-- **Beat 6.1** [N] — *Decryption progress.* Three more encryption layers fall. The trial data
-  begins to resolve: subject intake logs, surgical schedules, outcome records. The outcome records
-  are the worst — not because they document death but because they document survival rates and
-  performance metrics. The dead subjects are called "non-responders." The living ones are called
-  "successful vectors." Stash reads the records with her hands completely still, which is not
-  normal for her.
-
-- **Beat 6.2** [D] — *Petra calls.* She has Stash's number — from the death report Stash filed
-  for Renata. She introduces herself as NSB Field Division, GLMZ. She is not threatening. She
-  says: "I think we should talk before this goes somewhere neither of us can walk back from."
-  She suggests a location. She tells Stash she should come without the Nova-7. Stash does not
-  commit to anything.
-
-- **Beat 6.3** [N] — *Renata's Fragment 3.* 2221. Renata in the dark. She is thinner. She
-  describes two years of isolation — moving between Gray Zones, living on margin. She says the
-  longest thing she has thought about is whether Stash would understand what the records mean,
-  or whether they would seem like somebody else's problem. She still does not say Stash's name.
-  The omission is becoming conspicuous.
-
-- **Beat 6.4** [D] — *Stash meets Petra.* A neutral location: a Tier 2 food hall near the Z-7/Z-8
-  seam. Petra is exactly what she appeared to be on the call — honest, rational, dangerous. She
-  explains the governor program's life-saving function. She explains the arithmetic. She says
-  she is not there to threaten Stash; she is there because Stash is not a criminal and does not
-  have to become one. She offers immunity for the implant's return. Stash asks what happens to
-  the 428 records. Petra says: "They're already dead."
-
-### Chapter 7 — Midpoint (False Victory)
-
-**Chapter seed:** Full decryption. Stash has what she needs. For one hour, she thinks she's won.
-
-- **Beat 7.1** [N] — *The last encryption layer falls.* The full trial record is open. 14.3 GB.
-  Ledger builds an index. Stash reads the intake logs. Third intake on the list, 2211-03-14:
-  a 34-year-old woman, Z-7 relocation camp resident. Post-op follow-up surgeon listed as
-  "Adeyemi-Kowalski, A., Sable MedTech Contractor." Stash reads this. She puts the tablet
-  down. She picks it up. She reads it again. She says nothing.
-
-- **Beat 7.2** [D] — *What Stash knows now.* She tells Ledger. He already suspected it — the
-  timing, the model she recognized, the way she responded to the Fragment 1 entry. He says:
-  "You didn't know." She says: "That's not a defense." He says: "For the law it is." She says
-  she is not thinking about the law. This is the closest she gets to breaking down; it reads
-  in her hands and her cataloging reflex and nothing else.
-
-- **Beat 7.3** [E] — *The false victory.* She decides: broadcast. Full data package, Renata's
-  fragments included, across the Gray Zone underground data network. Ledger explains how the
-  Gray Zone medical monitoring frequency can be used to reach 40+ distributed nodes simultaneously.
-  She understands why Renata put the implant on frequency 412.7. It was always meant to be
-  broadcast through the dead medical channel — the one network the NSB and Scalpel Division
-  would never monitor because it's been dead for seven years. She has the method. She has the
-  content. She has the target. For one hour, the problem seems solved.
-
-### Chapter 8 — Bad Guys Close In (1)
-
-**Chapter seed:** Ledger is compromised. Scalpel finds the van.
-
-- **Beat 8.1** [N] — *Triangulation.* The implant has been broadcasting the entire time. Its
-  frequency is designed to be received, not tracked — but a Scalpel Division electronics team
-  with sufficiently narrow-band equipment can reverse-locate the source. The van's signal is
-  not shielded. Stash realizes this twelve hours after she should have.
-
-- **Beat 8.2** [D] — *Renata's Fragment 4.* 2223. Renata is sitting in daylight for the first
-  time in the fragments. She looks tired in a settled way — not desperate, just used to it. She
-  says she has found Stash's clinic records. She says she spent six months deciding whether to
-  come to her. She says: "You didn't know. I spent the six months convincing myself that matters."
-  She pauses. "I still don't know if it matters." Fragment ends.
-
-- **Beat 8.3** [C] — *Scalpel finds the van.* Four operatives, one commander — Mwangi. They box
-  the van in an alley off the Z-7/Z-8 seam at 0230. Stash and Ledger run. The chase is on foot
-  through the Gray Zone's ungoverned Low — a place Stash knows and the Scalpel operatives do
-  not. She gets out. Ledger does not. She hears them take him down. She does not go back.
-  She catalogs: what she has, what she doesn't have. The implant is in her jacket pocket.
-
-### Chapter 9 — Bad Guys Close In (2)
-
-**Chapter seed:** Stash alone. Petra presses harder. Ledger is held.
-
-- **Beat 9.1** [N] — *Running.* She goes to the one place she knows Scalpel won't have indexed:
-  the first clinic she ever worked in, in Z-7, abandoned in 2218. She has been paying the
-  building authority a courtesy fee for three years for reasons she has not examined. She
-  uses it now. She is alone, cold, and systematically terrified, which she processes as
-  inventory assessment.
-
-- **Beat 9.2** [D] — *Petra again.* Petra calls. She knows Ledger has been taken — by Scalpel,
-  not NSB. This is the pivot: Petra did not authorize the van interception. Scalpel and NSB
-  are not coordinating. They have separate orders and they are now in each other's way. Petra
-  tells Stash: "Ledger will be traded for the implant's location. When it is, Scalpel will
-  come for you within the hour. At that point I cannot protect you because I was not supposed
-  to know about this operation." Stash asks: "Why are you telling me?" Petra says: "I don't
-  know." This is the only honest answer.
-
-- **Beat 9.3** [N] — *Renata's Fragment 5.* 2224. Renata back in darkness. She says she has
-  stopped doubting. She is going to bring the implant to Stash's clinic. She knows about the
-  killswitch — Sable Industries installed it in all Nova-7 couriers as a security measure; she
-  has known since 2221. She is going anyway. She says: "I'm not doing this because I'm brave.
-  I'm doing this because I have run out of alternatives and also because I'm right." She smiles
-  at the camera briefly. It is not a performance.
-
-- **Beat 9.4** [D] — *Femi is not gone.* He texts. He never went to Z-5 — he went to the
-  tunnels. He has been monitoring the Dispensary's exterior camera (she forgot she gave him the
-  feed access six months ago). He saw the Scalpel search. He watched for her and found nothing.
-  He is in the tunnels two blocks from the abandoned clinic. He has water and a power pack.
-  She tells him to stay there. He says: "Yes." She knows he won't.
-
-### Chapter 10 — All Is Lost
-
-**Chapter seed:** Ledger sells her out. The old clinic is found. She loses everything except the implant.
-
-- **Beat 10.1** [D] — *Ledger's call.* Sixty-three minutes after he was taken, he calls. He
-  tells her the location of the abandoned clinic — gives it to her as coordinates, which is
-  not how anyone gives a location. The coordinates are wrong by four blocks. She is out in
-  under two minutes. He has given Scalpel the building four blocks south. It is the one time
-  his price comes up wrong and he makes good on it in a way he cannot explain.
-
-- **Beat 10.2** [C] — *The old clinic.* She goes back to get the one thing she left behind:
-  a physical drive with the Dispensary's patient records, twelve years of names and treatments.
-  Scalpel is already inside. She does not confront them. She watches from the tunnel access
-  point Femi identified. She watches them take the drive. She cannot retrieve it. She leaves
-  without the drive. This is the true All Is Lost — not her safety but her patients' records.
-
-- **Beat 10.3** [E] — *The tunnel.* Femi finds her. He doesn't ask what happened. He gives her
-  the water. She sits on the tunnel floor in the dark and counts the contents of her pockets
-  compulsively: the implant, her phone (dead battery), a surgical kit, forty Φ in chips, a
-  pen. Femi watches her catalog. Then he says: "What do you need?" She says: "I need to
-  broadcast that thing and I can't do it alone." He says: "Okay. What does that mean?"
-
-### Chapter 11 — Dark Night of the Soul
-
-**Chapter seed:** Fragment 6. Stash's name in the records. Who she was. What she did without knowing.
-
-- **Beat 11.1** [N] — *Femi charges the phone.* He has a power pack. The phone comes back.
-  She has five hours of battery. She opens the implant's data package on her phone — a partial
-  copy she pulled before the van interception. She finds the Fragment 6 file. She plays it.
-
-- **Beat 11.2** [E] — *Renata's Fragment 6.* 2225, three months before Renata walks into the
-  Dispensary. She speaks directly to Stash by name for the first time. She says: "I found your
-  name in the records. I spent two years deciding whether that disqualified you or qualified you.
-  I decided it qualifies you. You did what they told you to do. They told you it was routine.
-  You believed them because you were twenty-three and good at the job and they were a big corp
-  and you thought big corps were corrupt in a manageable way, not in a this way." She pauses.
-  "I need you to know that I'm not asking you to fix it because you owe it. I'm asking you to
-  fix it because you can. That distinction matters." The fragment ends with Renata looking
-  directly at the camera for four seconds, not saying anything. Then she reaches forward and
-  cuts the feed.
-
-- **Beat 11.3** [D] — *Stash and Femi.* She does not cry. She tells Femi what the records say
-  about her. He listens. He asks one question: "Did you know?" She says no. He says: "Then
-  you didn't do it. You were used." She says: "That's what Ledger said." He says: "Are you
-  going to argue with both of us?" She doesn't answer. She looks at the implant. She says:
-  "The broadcast needs to reach 40 nodes simultaneously. I can't walk to 40 locations." He
-  says: "You don't have to walk anywhere. You need the right room."
-
-- **Beat 11.4** [N] — *What the right room is.* Femi knows a place: the old Z-7 monitoring
-  station, decommissioned 2219, the hub for the dead medical channel. From that station, a
-  single 412.7 MHz broadcast would route to all 40 original network nodes simultaneously.
-  The station is four kilometers away, inside Scalpel Division's search perimeter. It is
-  exactly where Renata planned for the broadcast to originate — why she chose the Dispensary's
-  address and the Z-7/Z-8 seam. The plan is complete. It was always complete. Stash just
-  has to execute it.
-
-### Chapter 12 — Break into Three
-
-**Chapter seed:** She decides. No more running. She goes to the monitoring station.
-
-- **Beat 12.1** [D] — *The plan.* She and Femi work out the route through the tunnels. It is
-  four kilometers, three Scalpel checkpoints (based on Femi's reconnaissance in the last six
-  hours), one NSB patrol pattern. She does not involve Ledger — she does not know where he is
-  or whose custody he is in. She asks Femi if he has a weapon. He shows her: a static discharge
-  rod, Gray Zone standard issue for tunnel work. She shows him her bone saw. He stares at it
-  for a moment. She says: "Different context." He says: "Okay."
-
-- **Beat 12.2** [C] — *Moving through the tunnels.* Midnight. The four kilometers take two hours
-  through tight, partially collapsed infrastructure. One Scalpel checkpoint is evacuated —
-  they have moved the perimeter. One NSB patrol is exactly where Femi predicted. They go under
-  it via a service crawlspace that Femi knows and Stash does not. She learns in this beat that
-  Femi has been navigating this infrastructure since he was fourteen and she has been treating
-  him as a capable assistant when he is, actually, better at this specific problem than she is.
-
-- **Beat 12.3** [N] — *The monitoring station.* They reach it. The station is locked with
-  a standard commercial key system. Stash had a commercial lockpick kit once, in the Dispensary,
-  which Scalpel now has. Femi has a different solution: the building authority code, which his
-  tunnel contacts use for emergency access. It works. They are inside.
-
-### Chapter 13 — Finale (1): The Broadcast
-
-**Chapter seed:** Mwangi and Petra converge on the station simultaneously. The broadcast begins.
-
-- **Beat 13.1** [N] — *Bringing the station up.* The monitoring station has been on low-power
-  standby for seven years. It is not dead — the Gray Zone medical monitoring network was
-  decommissioned administratively, not physically. Stash and Femi work the broadcast panel.
-  The implant interfaces directly with the station's transmitter housing (the Nova-7 was
-  designed for this — Renata knew the station existed). Stash initiates the broadcast sequence.
-  The transmission will take eleven minutes to complete the full 14.3 GB package.
-
-- **Beat 13.2** [C] — *Mwangi arrives.* Six minutes into the broadcast. Four Scalpel operatives
-  breach the station from the street-level entrance. Mwangi enters last, carrying the Cascade
-  suppressor. She does not threaten Femi. She tells Stash to stop the transmission. Stash says
-  she cannot stop it — which is true; the station is running the broadcast autonomously now.
-  Mwangi moves toward the transmitter panel to cut power manually. Stash blocks her with the
-  bone saw. Mwangi assesses this for one second and decides to go around. This is correct.
-  Stash is not, physically, her match.
-
-- **Beat 13.3** [C] — *Petra arrives.* Eight minutes into the broadcast. NSB breach from the
-  tunnel access point. Three agents. Petra enters. She looks at Mwangi. Mwangi looks at Petra.
-  Neither of them was aware the other would be here. For ninety seconds, the situation is
-  military: two armed teams, one room, one transmitter, two incompatible orders. Stash and Femi
-  are against the wall. The transmitter is still running. Then Mwangi moves for the panel and
-  Petra's team interposes. What happens next is brief, professional, and lethal. Mwangi and
-  two Scalpel operatives are down. One NSB agent is down. The broadcast runs.
-
-- **Beat 13.4** [E] — *Eleven minutes.* The broadcast completes. 14.3 GB, Renata's six
-  fragments, the full trial record, routed to 40 Gray Zone nodes simultaneously. The implant
-  goes dark — its battery was always exactly sized for one broadcast. Stash holds it in her
-  palm, the shell warm. She sets it on the panel. Femi asks if it worked. She says she will not
-  know for twelve hours, which is the standard latency for that network. He asks what they do
-  for twelve hours. She looks at the room: two dead corpo operatives, several wounded, one dead
-  NSB agent, Petra standing near the transmitter panel looking at Stash with an expression that
-  is not anger and not relief. She says to Femi: "Do you have any more water?"
-
-### Chapter 14 — Final Image
-
-**Chapter seed:** Twelve hours later. The record is out. The cost is visible. Stash sets up again.
-
-- **Beat 14.1** [D] — *Petra's deposition.* Morning. Petra does not arrest Stash. She does not
-  have grounds — the broadcast was legal; the Gray Zone medical monitoring network is a licensed
-  frequency and Stash had access to a decommissioned station on a dead channel. What she does
-  instead is ask Stash to give a voluntary statement about the trial records, specifically the
-  part where Stash's name appears. Stash says: "I was a junior field surgeon on a Sable
-  Industries contract. I performed post-operative follow-up on patients I was told were
-  standard war-injury cases." She says this once, clearly, for the record. Petra writes it down.
-  She does not say whether this exonerates Stash. There is no mechanism that does.
-
-- **Beat 14.2** [N] — *What the broadcast produced.* By 1400: three Gray Zone data brokers
-  have mirrored the package to external networks. By 1600: a legal collective in Z-2 has filed
-  for an emergency review of MidNorth Medical's operating license. The NSB's involvement is
-  a secondary story breaking elsewhere. The governor program is under review. It will not be
-  immediately suspended; the 1,200 people who depend on it are still alive and this will
-  complicate the legal process for years. Stash reads the updates on her phone without comment.
-  She knows the outcome is not clean. She was not trying to produce a clean outcome.
-
-- **Beat 14.3** [E] — *Final Image.* Three weeks later. A different Gray Zone location, Z-6
-  border, a sub-level unit Femi's tunnel contacts knew was available. Stash is restocking the
-  shelves — actual stock, bought with a small emergency fund from a Gray Zone medical collective
-  that has decided she is worth maintaining. Ledger appears in the doorway. He has been released
-  — the NSB had no charges to hold him on once the broadcast rendered the implant irrelevant.
-  He says he is there to discuss payment. She says she told him she couldn't pay. He says
-  he knows. He comes in anyway. Femi is painting a name on the wall: Renata Osei. Stash watches
-  him paint and then goes back to the shelves. The job is not the payment. She catalogs what
-  she has. She begins.
+Word target: ~50,000 words. [C]=Combat, [E]=Emotional Climax, [D]=Dialogue, [N]=Narrative.
+
+### Ch1 — The Dispensary
+- **1.1** [N] — 0311hrs. Stash closes a sternotomy on a 19yo scav runner. Works alone. Charges nothing.
+- **1.2** [D] — *Theme Stated.* Femi: "Are we getting paid?" Stash: "The job isn't the payment."
+- **1.3** [N] — Dispensary world. Debts, Ledger's unanswered message, four in-patients. She knows all their names.
+
+### Ch2 — The Runner (Catalyst)
+- **2.1** [N] — *Catalyst.* Renata staggers in. Pulmonary hemorrhage. Frequency 412.7. Knows Stash's full name.
+- **2.2** [C] — Surgery. Stash stabilizes Renata through the night.
+- **2.3** [E] — *The killswitch.* 0612. Renata's chest ruptures. Stash finds the data capsule. Broadcasting. 412.7.
+
+### Ch3 — First Turning Point
+- **3.1** [N] — Stash moves the implant; identifies Nova-7 model, dead medical channel.
+- **3.2** [D] — She contacts Ledger. Corpo financial-grade cipher. He can decode but won't unless paid.
+- **3.3** [N] — *Renata's Fragment 1.* 2218. The trial records. 428 names. Sable Industries.
+
+### Ch4 — Ticking Clock
+- **4.1** [D] — Ledger in person. Decodes. He reads the summary. Quotes her a price. She pays.
+- **4.2** [N] — *Renata's Fragment 2.* 2219. The choice to go off-grid. She identifies the dead channel.
+- **4.3** [D] — Data cooperative wants the records but cannot receive a single-point broadcast. She needs the station.
+- **4.4** [N] — She tells Femi to go stay with his aunt in Z-5. He says yes. He will not.
+
+### Ch5 — NSB Contact
+- **5.1** [D] — Petra Voss appears. NSB credentials. Knows about the implant. Wants Stash to hand it over.
+- **5.2** [D] — Stash stalls. Petra's logic: 1,200 alive now. 428 already dead.
+- **5.3** [N] — *Renata's Fragment 3.* 2221. Isolation. "I thought I would feel worse about this than I do."
+
+### Ch6 — Scalpel Division
+- **6.1** [C] — Two Scalpel operatives follow Stash. She loses them in Z-7's tunnel access points.
+- **6.2** [D] — Ledger identifies Scalpel Division. Corpo security. Sable Industries MedTech arm. Two teams.
+- **6.3** [N] — She inventories: what she has, what she doesn't, what she needs.
+
+### Ch7 — The Records
+- **7.1** [E] — She reads the full trial records. All 428 names. All 428 procedures. All 428 outcomes.
+- **7.2** [D] — Ledger identifies the monitoring station. Inside Scalpel's likely search perimeter. He will not help further.
+- **7.3** [E] — *The false victory.* She decides: broadcast. One hour of believing the problem is solved.
+
+### Ch8 — Bad Guys Close In (1)
+- **8.1** [N] — *Triangulation.* The implant has been broadcasting the entire time. She realizes too late.
+- **8.2** [D] — *Renata's Fragment 4.* 2223. "I spent six months deciding whether to come to you."
+- **8.3** [C] — Scalpel finds the van. They run. She gets out. Ledger does not. She does not go back.
+
+### Ch9 — Bad Guys Close In (2)
+- **9.1** [N] — Abandoned first clinic, Z-7. Alone, cold, systematically terrified, processed as inventory.
+- **9.2** [D] — Petra calls. Scalpel and NSB are not coordinating. Petra: "I cannot protect you." Stash: "Why are you telling me?" Petra: "I don't know."
+- **9.3** [N] — *Renata's Fragment 5.* 2224. "I'm not doing this because I'm brave. I have run out of alternatives and also because I'm right."
+- **9.4** [D] — Femi texts. Never went to Z-5. In the tunnels two blocks away.
+
+### Ch10 — All Is Lost
+- **10.1** [D] — Ledger calls. 63 minutes after taken. Coordinates wrong by four blocks. She is out in under two minutes.
+- **10.2** [C] — She goes back for the patient records drive. Scalpel is inside. She watches them take it.
+- **10.3** [E] — Tunnel. Femi finds her. She catalogs: implant, dead phone, surgical kit, forty Φ, a pen. "What do you need?"
+
+### Ch11 — Dark Night of the Soul
+- **11.1** [N] — Femi charges the phone. She opens Fragment 6.
+- **11.2** [E] — *Renata's Fragment 6.* 2225. Speaks to Stash by name: "I found your name in the records. I decided it qualifies you." Four seconds looking at the camera. Then cuts the feed.
+- **11.3** [D] — She tells Femi what the records say. "Did you know?" No. "Then you didn't do it." "Are you going to argue with both of us?"
+- **11.4** [N] — Femi identifies the monitoring station. The plan was always complete.
+
+### Ch12 — Break into Three
+- **12.1** [D] — The plan. Four kilometers. Femi shows the discharge rod. She shows the bone saw. "Different context."
+- **12.2** [C] — Through the tunnels. Two hours. She learns he is better at this than she is.
+- **12.3** [N] — The monitoring station. Locked. Femi has the building authority code. Inside.
+
+### Ch13 — Finale (1): The Broadcast
+- **13.1** [N] — Station on standby seven years. Nova-7 interfaces directly. Broadcast initiated. Eleven minutes.
+- **13.2** [C] — Mwangi arrives at six minutes. Cascade suppressor. Stash blocks with the bone saw. Mwangi goes around.
+- **13.3** [C] — Petra arrives at eight minutes. Ninety-second military standoff. Then Mwangi moves. Brief, professional, lethal. Broadcast runs.
+- **13.4** [E] — Eleven minutes. Complete. 40 nodes. Implant goes dark. Stash holds the warm shell. "Did it work?" "Twelve hours, standard latency."
+
+### Ch14 — Final Image
+- **14.1** [D] — Petra's deposition. Morning. No arrest. Stash's voluntary statement once, clearly, for the record.
+- **14.2** [N] — By 1400: three data brokers mirror the package. Legal collective files emergency review. Governor program under review; will not be immediately suspended.
+- **14.3** [E] — *Final Image.* Three weeks later. Z-6 sub-level unit. Stash restocking. Ledger appears. Femi painting: Renata Osei. The job is not the payment. She begins.
 
 ## 5. Plant/payoff ledger {#SS-STSH-5}
 
 | # | Plant | Beat | Payoff | Beat |
 |---|-------|------|--------|------|
-| 1 | Stash mentions killswitches on corpo runners by reputation | 1.3 | Renata dies via killswitch | 2.3 |
-| 2 | Ledger's "I always get paid first" principle stated explicitly | 4.4 | He sells her out — then calls to warn her (costs him the fee) | 10.1 |
-| 3 | Implant broadcasting on 412.7 MHz (dead medical channel) | 2.3 / 3.2 | Station accepts the implant directly; broadcast uses dead network | 13.1 |
-| 4 | Femi's tunnel knowledge, treated as background | 4.1 / 9.4 | He guides Stash through the perimeter undetected | 12.2 |
-| 5 | Stash's history with Sable Industries, never fully examined | 1.3 / 2.3 | Her name in the trial records | 7.1 / 11.2 |
-| 6 | The bone saw established (non-surgical context, once) | 1.1 | She uses it to block Mwangi — futile but important | 13.2 |
-| 7 | Petra's "I cannot protect you because I was not supposed to know" | 9.2 | She is at the station; she was tracking separately from Scalpel | 13.3 |
-| 8 | Stash pays the building authority for the old Z-7 clinic | 3.1 (implied) | Femi uses building authority codes to access the monitoring station | 12.3 |
-| 9 | Femi never goes to Z-5 | 4.1 | He is still in the tunnels when she needs him | 9.4 |
-| 10 | Renata's fragment omits Stash's name five times | 4.3–9.3 | Fragment 6 addresses her by name; the omission was deliberate | 11.2 |
+| 1 | Killswitches on corpo runners (reputation) | 1.3 | Renata dies via killswitch | 2.3 |
+| 2 | Ledger's "I always get paid first" | 4.4 | He sells her out — then calls to warn her | 10.1 |
+| 3 | Implant broadcasting on 412.7 MHz | 2.3 / 3.2 | Station accepts directly; broadcast uses dead network | 13.1 |
+| 4 | Femi's tunnel knowledge (background) | 4.1 / 9.4 | He guides Stash through perimeter undetected | 12.2 |
+| 5 | Stash's Sable Industries history, unexamined | 1.3 / 2.3 | Her name in trial records | 7.1 / 11.2 |
+| 6 | The bone saw (non-surgical context, once) | 1.1 | She uses it to block Mwangi — futile | 13.2 |
+| 7 | Petra: "I was not supposed to know about this operation" | 9.2 | She is at the station, tracking separately | 13.3 |
+| 8 | Stash pays building authority for old Z-7 clinic | 3.1 (implied) | Femi uses building authority codes to access station | 12.3 |
+| 9 | Femi never goes to Z-5 | 4.1 | Still in tunnels when she needs him | 9.4 |
+| 10 | Renata's fragments omit Stash's name five times | 4.3–9.3 | Fragment 6 addresses her by name; omission was deliberate | 11.2 |
 
 ## 6. Voice register — STSH prose laws {#SS-STSH-6}
 
 **Governing register:** Medical precision variant. Close-third limited, Stash's POV throughout
-except during Renata's fragments (which are first-person video diary format, direct to camera).
+except during Renata's fragments (first-person video diary format, direct to camera).
 
 **What this register does:**
-- Diagnoses situations before judging them. She identifies a problem's mechanism before its moral weight.
-- Uses medical vocabulary naturally — "pressure deficit," "lavage," "sternotomy," "cascade
-  failure," "non-responder" — without italicizing or glossing for the reader.
+- Diagnoses situations before judging them. Mechanism before moral weight.
+- Uses medical vocabulary naturally — "pressure deficit," "lavage," "sternotomy" — without glossing.
 - Counts and catalogs under stress. Her inventory reflex is an emotion tell.
-- Dark humor is deployed in internal narration and occasional dialogue, never in high-stakes moments.
-- Contractions in dialogue always. Contractions in narration when the situation is immediate.
+- Dark humor in internal narration and dialogue, never in high-stakes moments.
+- Contractions in dialogue always. Contractions in narration when situation is immediate.
 
 **What this register does NOT do:**
-- Does not use Kyle's vocabulary (filing, arithmetic, parliament, gap, geometry — FORBIDDEN)
-- Does not name emotions directly in narration. Body signals carry the emotional load.
+- Does not use Kyle's vocabulary (filing, arithmetic, parliament, gap, geometry — FORBIDDEN).
+- Does not name emotions directly. Body signals carry the emotional load.
 - Does not describe her own appearance. There are no mirrors.
-- Does not editorialize. When she encounters something morally complex, she describes it
-  and lets the description do the work.
-
-**Sentence rhythm:**
-- Contemplation beats: longer sentences, medical subordinate clauses, building pressure.
-- Crisis beats: sentence fragments acceptable. Three-word assessments. Imperative mode.
-- Dialogue: she speaks in complete sentences; she is precise even when afraid.
+- Does not editorialize. She describes; the description does the work.
 
 **Forbidden constructions:**
 - "She felt [emotion]." — replace with physical signal.
-- Any sentence beginning "It was as if—" — too literary, wrong register for STSH.
-- Sentimental register in the final image. The warmth is real but it is functional, not effusive.
-
-## 7. User stories {#SS-STSH-7}
-
-- **STSH-US-1** ⬜ — Stash's story exists as a complete StoryNode with 14 ChapterNodes and
-  48 enabled beats in the DB.
-- **STSH-US-2** ⬜ — All named characters are seeded as Entities before prose generation.
-- **STSH-US-3** ⬜ — All 48 beats are generated via ProseWriterRouter (Sonnet draft / Opus polish).
-- **STSH-US-4** ⬜ — Total word count ≥ 50,000 words across enabled beats.
-- **STSH-US-5** ⬜ — Logic sweep returns no BLOCKER-severity findings.
-- **STSH-US-6** ⬜ — Review score ≥ 85%.
-- **STSH-US-7** ⬜ — Published as DOCX to R:\Desktop\EPub\MindAttic\GLMZ\TheLongCut\.
+- "It was as if—" — wrong register.
+- Sentimental register in the final image. Warmth is real but functional, not effusive.
 
 ## 8. Locks {#SS-STSH-8}
 
@@ -622,156 +269,107 @@ except during Renata's fragments (which are first-person video diary format, dir
 
 ## Brand Environment & Character Loadout {#SS-STSH-brands}
 
-See [SS-LAW-28](../BIBLE.md#SS-§5).
-
-### Amara "Stash" Adeyemi-Kowalski — Canonical Loadout
+### Amara "Stash" Adeyemi-Kowalski
 
 | Item | Brand / Model | Notes |
 |---|---|---|
-| Medical kit | **Sable Industries MedTech field kit** | Fits the Sable-STSH thematic connection; the corp whose cover-up she's trying to expose also made the tools she uses to keep people alive |
-| Personal weapon | **Gray zone reclaim / street custom** | Stash is not a combatant; she does not carry archology-tier hardware |
-| Apparel | **Gray zone reclaim** | Street medic aesthetic; functional; nothing that signals affiliation |
-| The implant | **Sable Industries Nova-7** surgical data capsule (Model Nova-7, MedTech line, 2210) | Already canonized in §1; the brand is Sable Industries, the model is Nova-7 |
-
-### Petra Voss (NCID) — Canonical Loadout
-
-| Item | Brand / Model | Notes |
-|---|---|---|
-| Service weapon | ADS-issue Halcyon NCID sidearm | NCID is Halcyon; Halcyon augmentation-maintenance infrastructure; contractors carry ADS-supplied weapons |
-| Apparel | Halcyon NCID field operative kit; licensed street tier; not conspicuous | Voss wants to be convincing, not threatening, until she is |
+| Medical kit | **Sable Industries MedTech field kit** | Thematic: the corp whose cover-up she's exposing made her tools |
+| The implant | **Sable Industries Nova-7** (2210) | Canonized in §1 |
+| Apparel | **Gray zone reclaim** | Street medic; nothing that signals affiliation |
 
 ### Setting Brand Environment
 
-STSH is set in the Gray Zone (Z-7 district) — ungoverned, sparse neural advertising, scrappy.
+- **Sable Industries** is the thematic brand throughout: trial records, medical tools, Scalpel Division
+- **Ringo vending machines** at zone boundaries — CramIt bars, contractor staples
+- **NCID overlay**: Petra auto-identifies every piece of Stash's gear the moment she enters
 
-- **Sable Industries** is the thematic brand: the corp whose trial records are in the implant, whose medical tools are in Stash's kit, and whose security arm (Scalpel Division) is one of the two kill-teams
-- **Ringo vending machines** appear at zone boundaries — CramIt bars, contractor staples
-- **NCID overlay**: Petra Voss's neuretics auto-identify every piece of Stash's gear and medical kit the moment she enters the room; she already knows exactly who she's dealing with before either of them speaks
+<!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
 
-## Beat Coordination Index {#SS-STSH-COORD}
+## Structural Blueprint
+<!-- generated 2026-07-15T15:11:32.8036084Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
-> GENERATED by `ss --coordinate --slug <slug>`. Do not hand-edit — regenerated
-> on demand. This is the three-coordinate map: each beat's **meaning** (bible),
-> **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
-> Full record: `reports/coordination/STSH.coordination.json`.
+- **Subplot**: Femi's maturation from errand-runner to autonomous agent mirrors Stash's arc from complicit silence to active witness. Both move from accepting systems that use them to choosing their own role in the outcome.
+- **Temporal scheme**: nonlinear
+  - _Six embedded video fragments (beats 11, 14, 19, 25, 29, 34-35) are Renata's retrospective testimony, shot over 7 years (2218-2225), interspersed with Stash's 72-hour present. The fragments withhold Renata's final decision until beat 34, creating delayed revelation of why she chose Stash specifically and what the nine-percent risk was._
+- **Resolution**: mixed
+- **Moral polarity**: ambivalent
+- **Ending**: avalanche, no epilogue
+- **Escalation**: 47-beat arc, peak 10/10 at beat 41
 
-**Coverage:** 47/47 beats fully covered. Story-wide construction: temporal=nonlinear, resolution=mixed, moral=ambivalent, ending=avalanche, granularity=beat.
-
-**Gap counts:** UNSCORED=47
+## Beat Spine
+<!-- generated 2026-07-15T15:11:32.8036084Z from Beats table — edit via MCP beat tools -->
 
 ### The Dispensary
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5011 | `21e9242a-159e-4dd3-9156-791eeb189631` | — | 0311 hours. Doc Stash closes a sternotomy alone in the … | 2/? | 8838c | UNSCORED |
-| 5012 | `2515af07-6303-4a5d-bab2-8adbebe1b0b2` | — | Morning. Femi brings a kid with infected sutures ??" so… | 3/? +subplot | 7285c | UNSCORED |
-| 5013 | `157c68ee-97da-42fa-8b5c-fe4309b4e486` | — | The Dispensary's world: debts on the power supply, a th… | 4/? | 6833c | UNSCORED |
+- B01 · Opening Image — 0311 hours. Doc Stash closes a sternotomy alone in the Dispensary. The power flickers twice. The runner will live. She charges nothing. She catalogs what she used while she cleans up. The world: compressed, precise, unglamorous.
+- B02 · Theme Stated — Morning. Femi brings a kid with infected sutures ??" someone else's substandard work. He asks if they're getting paid. Stash tells him to prep the kit. He asks again. She says: 'The job isn't the payment.' Femi doesn't understand this and says so. This line is the story's moral engine.
+- B03 · Set-Up — The Dispensary's world: debts on the power supply, a three-week outstanding on ferrocement patches. Ledger's two-day-old message. The Gray Zone outside: Z-7 vertical axis, the ungoverned Low, two zones that have stopped pretending to coordinate. Stash makes rounds on her four in-patients. She knows all their names.
 
 ### The Runner
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5014 | `dd62fe12-a5d2-40e9-aa54-b4bc32564e13` | — | 2340 hours. Renata staggers into the Dispensary ??" pul… | 5/? | 5052c | UNSCORED |
-| 5015 | `d9c37aae-8e8a-45cb-80d6-f474920ffdef` | — | Stash stabilizes Renata through the night. The hemorrha… | 7/? | 4969c | UNSCORED |
-| 5016 | `03b5aa26-d70e-45fd-b24f-da2cdf899e35` | — | 0612. Renata's chest ruptures ??" not from the hemorrha… | 6/? | 5101c | UNSCORED |
+- B04 · Catalyst — 2340 hours. Renata staggers into the Dispensary ??" pulmonary hemorrhage, left lobe. Coherent enough to say she has no corp affiliation and no ID. She repeats a frequency: 412.7. Stash begins the trauma protocol. Renata grabs her wrist, says Stash's full name ??" Amara Adeyemi-Kowalski ??" and passes out.
+- B05 · The Surgery — Stash stabilizes Renata through the night. The hemorrhage is bad but survivable. She seals the left lobe, monitors the chest cavity, gets Renata to something like stable by 0400. She is good at this. She is, in this beat, fully in her element. The work is precise and clean and almost beautiful.
+- B06 · The Killswitch — 0612. Renata's chest ruptures ??" not from the hemorrhage. A contained charge, surgical placement. Stash cannot save her. In the chaos of the cleanup, she finds a foreign body in the thoracic cavity: a data capsule, undamaged, 9 centimeters long. Broadcasting. Frequency 412.7.
 
 ### The Implant
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5017 | `3cf12ac5-9ad5-41ad-9b03-ba016437425a` | — | Stash files a death report without mentioning the impla… | 6/? | 4700c | UNSCORED |
-| 5018 | `afc52337-e09a-471f-81cf-80f68d16c38b` | — | Stash puts the implant in a signal-dampening case. She … | 7/? | 5507c | UNSCORED |
-| 5019 | `532c9cd8-7af6-4729-9b32-dd3b1e16abe2` | — | Stash considers her options: NSB, Scalpel Division (she… | 8/? | 8406c | UNSCORED |
+- B07 · Renata's Body — Stash files a death report without mentioning the implant. She tells the recycler Renata was DOA. This is the first lie ??" small, bureaucratic, devastating in its ease. Femi watches. He doesn't say anything.
+- B08 · The Implant Broadcasts — Stash puts the implant in a signal-dampening case. She examines the housing: Nova-7, Sable Industries MedTech, 2210. She used to work for Sable Industries. She recognizes the model ??" she has seen them removed from patients. She has never seen one in thoracic placement. That is not where these go.
+- B09 · The Debate — Stash considers her options: NSB, Scalpel Division (she knows them by reputation), street disposal, or opening it. She calls Ledger. He picks up immediately. She tells him she has a Nova-7 broadcasting on a dead channel, found in a patient's chest. He is silent for four seconds. Then: "Don't open it here. Don't open it at the Dispensary." She says she wasn't planning to. He says: "Yes you were."
 
 ### Break into Two
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5020 | `0c4f4e40-59d6-4caa-b84e-0d8b72633e3b` | — | She tells Femi to take a three-day supply run further t… | 8/? +subplot | 5735c | UNSCORED |
-| 5021 | `b9368de3-f7ba-4d46-ba24-c4a507c85c0e` | — | Ledger arrives with equipment: a frequency analyzer and… | 7/? | 5483c | UNSCORED |
-| 5022 | `d7016c88-fb45-4115-946a-b9bebaaf0e62` | — | They crack the first encryption layer. Renata's 2018 vi… | 8/? +anachrony-cut | 5184c | UNSCORED |
-| 5023 | `28d47fd3-0fe5-4cae-a965-080f6b0fbcc1` | — | After the fragment: Ledger explains the neuretics gover… | 9/? | 5137c | UNSCORED |
+- B10 · Getting Femi Out — She tells Femi to take a three-day supply run further than usual, to a contact in Z-5. She gives him twice the usual ??. He asks why. She tells him the Dispensary has a ventilation problem. He knows she is lying. He takes the ?? and goes. She catalogs the supplies again after he leaves.
+- B11 · Ledger Arrives — Ledger arrives with equipment: a frequency analyzer and a scramblers stack he uses for financial data forensics. He looks at the Nova-7 and tells her exactly what model it is, its broadcast range, why a thoracic placement makes it undetectable to standard corpo medical sweeps. She asks how he knows this. He says: "Because MidNorth Medical tried to hire me to find one four months ago."
+- B12 · Fragment One — They crack the first encryption layer. Renata's 2018 video diary: she is calm, direct, addressing the camera. She was Sable Industries MedTech financial compliance 2009-2014. In 2011 she was assigned to reconcile the Z-7 Relocation Camp surgical program budget. She holds up a printed paper document ??" printed to prevent digital trace ??" and reads four line items aloud. 428 subjects. Clinical. Specific. The fragment ends.
+- B13 · What Ledger Knows — After the fragment: Ledger explains the neuretics governor program is public ??" it keeps Atlas NeoCortex users from cascade failure. What is not public is what the test data cost. He has been trying to find the provenance for two years. The source always dried up before he could price it. He tells Stash what the implant is worth in money. She tells him that is not the relevant number.
 
 ### Fun and Games
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5024 | `ef4b6fba-8d93-4169-882e-d6d5282aeaba` | — | The implant uses a financial-grade cipher ??" standard … | 8/? | 5596c | UNSCORED |
-| 5025 | `79c620ac-f1c3-4f15-b7fc-df2c22538323` | — | Renata's 2019 diary: she is in a different, sparse loca… | 8/? | 4567c | UNSCORED |
-| 5026 | `9feaf9d5-16e9-4a01-b5a6-6301c1168235` | — | Two Scalpel Division operatives. They have a commercial… | 9/? | 4866c | UNSCORED |
-| 5027 | `06a04c7a-c627-464f-9180-6cbf53336336` | — | After the Scalpel incursion, Ledger names his fee: a pe… | 9/? | 6347c | UNSCORED |
+- B14 · The Encryption — The implant uses a financial-grade cipher ??" standard corpo compliance architecture, the kind Ledger has cracked hundreds of times. He begins the work. It is slow. Stash watches the frequency analyzer. The implant is broadcasting. Someone is receiving.
+- B15 · Fragment Two — Renata's 2019 diary: she is in a different, sparse location. She describes two years of isolation ??" moving between Gray Zones, living on margin. She says she has been building the implant since 2018. She has learned about Stash from an anonymized Sable Industries personnel roster. She does not say Stash's name yet. The omission is becoming conspicuous.
+- B16 · Scalpel Arrives at the Dispensary — Two Scalpel Division operatives. They have a commercial-entry warrant. Stash and Ledger are three blocks away in his equipment van. She watches on the Dispensary's exterior camera feed on her phone. She watches them search methodically. They take her patient files. She feels something she will later identify as grief, though at the moment she identifies it only as a pressure deficit in the chest. She does not go back.
+- B17 · Ledger's Price — After the Scalpel incursion, Ledger names his fee: a percentage of whatever this data is worth when it becomes public. She tells him it will not be worth money ??" it will be worth destruction of MidNorth Medical's legal standing. He says that is also a commodity. She agrees to his terms. She notes she cannot actually pay him what he's asking, but she agrees to the terms.
 
 ### Fun and Games: NSB
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5028 | `4d1c9278-ab82-45da-9e7e-99bed8227ae7` | — | Three more encryption layers fall. The trial data begin… | 9/? | 5390c | UNSCORED |
-| 5029 | `a2a2bd0a-c837-4f89-9630-6aca2211861a` | — | NSB Agent Petra Voss calls. She has Stash's number from… | 8/? | 6131c | UNSCORED |
-| 5030 | `1ba9fd0d-787b-4832-9396-11a96ac6d4d1` | — | Renata's 2021 diary: she is in the dark. She is thinner… | 9/? | 4210c | UNSCORED |
-| 5031 | `bd689bd5-3cd3-4040-be65-41fadedbd8b0` | — | A neutral location: a Tier 2 food hall near the Z-7/Z-8… | 9/? | 5959c | UNSCORED |
+- B18 · Decryption Progress — Three more encryption layers fall. The trial data begins to resolve: subject intake logs, surgical schedules, outcome records. The outcome records are the worst ??" not because they document death but because they document survival rates and performance metrics. The dead subjects are called "non-responders." The living ones are called "successful vectors." Stash reads the records with her hands completely still, which is not normal for her.
+- B19 · Petra Calls — NSB Agent Petra Voss calls. She has Stash's number from the death report Stash filed for Renata. She is not threatening. She says: "I think we should talk before this goes somewhere neither of us can walk back from." She suggests a location. She tells Stash to come without the Nova-7. Stash does not commit to anything.
+- B20 · Fragment Three — Renata's 2021 diary: she is in the dark. She is thinner. She describes two years of isolation. She says the longest thing she has thought about is whether Stash would understand what the records mean, or whether they would seem like somebody else's problem. She still does not say Stash's name. The omission is now unmistakably deliberate.
+- B21 · Stash Meets Petra — A neutral location: a Tier 2 food hall near the Z-7/Z-8 seam. Petra is exactly what she appeared to be on the call ??" honest, rational, dangerous. She explains the governor program saves approximately 1,200 corpo employees per year from Atlas NeoCortex runaway syndrome. She explains the arithmetic. She offers immunity for the implant's return. Stash asks what happens to the 428 records. Petra says: "They're already dead."
 
 ### Midpoint
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5032 | `e196cf5b-ff87-4618-a03e-15019a92723f` | — | The full trial record opens: 14.3 GB. Ledger builds an … | 9/? | 7529c | UNSCORED |
-| 5033 | `dae7b7af-c376-4287-ba1f-0709dae8b314` | — | She tells Ledger. He already suspected it ??" the timin… | 8/? | 6635c | UNSCORED |
-| 5034 | `bca14620-47fc-41e6-8562-b81bfe28703a` | — | She decides: broadcast. Full data package, Renata's fra… | 8/? | 5032c | UNSCORED |
+- B22 · The Last Encryption Layer Falls — The full trial record opens: 14.3 GB. Ledger builds an index. Stash reads the intake logs. Third intake on the list, 2011-03-14: a 34-year-old woman, Z-7 relocation camp. Post-op follow-up surgeon: "Adeyemi-Kowalski, A., Sable MedTech Contractor." Stash reads this. She puts the tablet down. She picks it up. She reads it again. She says nothing.
+- B23 · What Stash Knows Now — She tells Ledger. He already suspected it ??" the timing, the model she recognized, the way she responded to Fragment One. He says: "You didn't know." She says: "That's not a defense." He says: "For the law it is." She says she is not thinking about the law. This is the closest she gets to breaking down; it reads in her hands and her cataloging reflex and nothing else.
+- B24 · The False Victory — She decides: broadcast. Full data package, Renata's fragments included, across the Gray Zone underground data network via frequency 412.7 MHz. Ledger explains the dead medical monitoring channel can reach 40+ distributed nodes simultaneously. She understands why Renata put the implant on this frequency ??" it was always meant to be broadcast here. She has the method. She has the content. For one hour, the problem seems solved.
 
 ### Bad Guys Close In
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5035 | `4989806b-5a6b-4c9b-9292-62dbe67a99e4` | — | The implant has been broadcasting the entire time. Its … | 9/? | 5859c | UNSCORED |
-| 5036 | `09865551-303e-4cf9-9409-c0da8caad18c` | — | Renata's 2023 diary: she is sitting in daylight for the… | 8/? | 3903c | UNSCORED |
-| 5037 | `f2d0deca-b9c0-46b4-ad05-57e1c0e1b3ac` | — | Four Scalpel operatives and Commander Mwangi box the va… | 9/? | 5100c | UNSCORED |
+- B25 · Triangulation — The implant has been broadcasting the entire time. Its frequency is designed to be received, not tracked ??" but a Scalpel Division electronics team with sufficiently narrow-band equipment can reverse-locate the source. The van's signal is not shielded. Stash realizes this twelve hours after she should have.
+- B26 · Fragment Four — Renata's 2023 diary: she is sitting in daylight for the first time in the fragments. She looks tired in a settled way. She says she found Stash's clinic records and spent six months deciding whether to come to her. She says: "You didn't know. I spent the six months convincing myself that matters." She pauses. "I still don't know if it matters." Fragment ends.
+- B27 · Scalpel Finds the Van — Four Scalpel operatives and Commander Mwangi box the van in an alley at 0230. Stash and Ledger run on foot through the Gray Zone's ungoverned Low ??" a place Stash knows and the Scalpel operatives do not. She gets out. Ledger does not. She hears them take him down. She does not go back. She catalogs: the implant is in her jacket pocket.
 
 ### Bad Guys Close In: NSB
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5038 | `2f0c0a7d-3a50-4e93-9014-ed285b0cfd40` | — | She goes to the first clinic she ever worked in, in Z-7… | 9/? | 5298c | UNSCORED |
-| 5039 | `c1542029-e389-432f-91e4-113f8e95ceae` | — | Petra calls. She knows Ledger was taken ??" by Scalpel,… | 8/? | 5361c | UNSCORED |
-| 5040 | `92080f8a-653f-412c-9b6d-cf60edfad9bb` | — | Renata's 2024 diary: she is back in darkness. She says … | 8/? | 5338c | UNSCORED |
-| 5041 | `b8bb560a-5515-4ec7-8d1e-d52f15ee8cf5` | — | He texts. He never went to Z-5 ??" he went to the tunne… | 8/? +subplot | 5733c | UNSCORED |
+- B28 · Running — She goes to the first clinic she ever worked in, in Z-7, abandoned since 2018. She has been paying the building authority a courtesy fee for three years for reasons she has not examined. She uses it now. She is alone, cold, and systematically terrified, which she processes as inventory assessment.
+- B29 · Petra Again — Petra calls. She knows Ledger was taken ??" by Scalpel, not NSB. Scalpel and NSB are not coordinating; they have separate orders and are now in each other's way. Petra tells Stash: "Ledger will be traded for the implant's location. When it is, Scalpel will come for you within the hour. At that point I cannot protect you because I was not supposed to know about this operation." Stash asks: "Why are you telling me?" Petra says: "I don't know." This is the only honest answer.
+- B30 · Fragment Five — Renata's 2024 diary: she is back in darkness. She says she has stopped doubting. She is going to bring the implant to Stash's clinic. She knows about the killswitch ??" Sable Industries installed it in all Nova-7 couriers as a security measure; she has known since 2021. She is going anyway. She says: "I'm not doing this because I'm brave. I'm doing this because I have run out of alternatives and also because I'm right." She smiles at the camera briefly. It is not a performance.
+- B31 · Femi Is Not Gone — He texts. He never went to Z-5 ??" he went to the tunnels and has been monitoring the Dispensary's exterior camera (she forgot she gave him the feed access six months ago). He saw the Scalpel search. He watched for her and found nothing. He is in the tunnels two blocks from the abandoned clinic. He has water and a power pack. She tells him to stay there. He says: "Yes." She knows he won't.
 
 ### All Is Lost
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5042 | `123b07b5-f673-46e8-a2b0-310aaa9a7d8a` | — | Sixty-three minutes after he was taken, Ledger calls. H… | 8/? | 5519c | UNSCORED |
-| 5043 | `39fe80a5-176c-4863-881e-fc040eb6304d` | — | She goes back to the old clinic for one thing: a physic… | 8/? | 5663c | UNSCORED |
-| 5044 | `2bcd27d0-146f-426a-ad14-5b4ede71460f` | — | Femi finds her. He doesn't ask what happened. He gives … | 8/? | 5054c | UNSCORED |
+- B32 · Ledger's Call — Sixty-three minutes after he was taken, Ledger calls. He tells her the location of the abandoned clinic ??" gives it as coordinates, which is not how anyone gives a location. The coordinates are wrong by four blocks. He has given Scalpel the building two blocks south. It is the one time his price comes up wrong and he makes good on it in a way he cannot explain.
+- B33 · The Old Clinic — She goes back to the old clinic for one thing: a physical drive with the Dispensary's patient records, twelve years of names and treatments. Scalpel is already inside. She watches from the tunnel access point Femi identified. She watches them take the drive. She cannot retrieve it. She leaves without the drive. This is the true All Is Lost ??" not her safety but her patients' records.
+- B34 · The Tunnel — Femi finds her. He doesn't ask what happened. He gives her the water. She sits on the tunnel floor in the dark and counts the contents of her pockets compulsively: the implant, her phone (dead battery), a surgical kit, forty ?? in chips, a pen. Femi watches her catalog. Then he says: "What do you need?" She says: "I need to broadcast that thing and I can't do it alone." He says: "Okay. What does that mean?"
 
 ### Dark Night of the Soul
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5045 | `bfbcdb4e-1a06-47a9-b2de-fadca483c50d` | — | He has a power pack. The phone comes back. She has five… | 8/? | 5660c | UNSCORED |
-| 5046 | `4b3b10c6-a22b-4857-a061-bb05e5dcede2` | — | Renata's 2025 diary, three months before she walks into… | 9/? | 3891c | UNSCORED |
-| 5047 | `49907eb1-f3aa-4381-b91c-7c245eb53a69` | — | She doesn't cry. She tells Femi what the records say ab… | 9/? +subplot | 5453c | UNSCORED |
+- B35 · Femi Charges the Phone — He has a power pack. The phone comes back. She has five hours of battery. She opens the implant's data package on her phone ??" a partial copy she pulled before the van interception. She finds the Fragment 6 file. She plays it.
+- B36 · Fragment Six — Renata's 2025 diary, three months before she walks into the Dispensary. She speaks directly to Stash by name for the first time. She says: "I found your name in the records. I spent two years deciding whether that disqualified you or qualified you. I decided it qualifies you." She explains: Stash did what they told her to do; she believed them because she was twenty-three and good at the job. "I'm not asking you to fix it because you owe it. I'm asking you because you can. That distinction matters." The fragment ends with Renata looking directly at the camera for four seconds, not saying anything. Then she reaches forward and cuts the feed.
+- B37 · Stash and Femi — She doesn't cry. She tells Femi what the records say about her. He listens. He asks one question: "Did you know?" She says no. He says: "Then you didn't do it. You were used." She says: "That's what Ledger said." He says: "Are you going to argue with both of us?" She doesn't answer. She says the broadcast needs 40 nodes simultaneously and she can't walk to 40 locations. He says: "You don't have to walk anywhere. You need the right room."
 
 ### Break into Three
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5049 | `6182199f-4259-4123-a083-5ece15ed8764` | — | She and Femi work out the route through the tunnels: fo… | 9/? | 6384c | UNSCORED |
-| 5050 | `ddc0b1db-0681-413d-9cdd-d3c6c1cb042d` | — | Midnight. Four kilometers take two hours through tight,… | 9/? +subplot | 5373c | UNSCORED |
-| 5051 | `051be52a-d070-4756-a0f5-f87ad2d1c369` | — | They reach it. The station is locked with a standard co… | 9/? | 5357c | UNSCORED |
+- B38 · The Plan — She and Femi work out the route through the tunnels: four kilometers, three Scalpel checkpoints, one NSB patrol pattern. She asks if Femi has a weapon. He shows her a static discharge rod ??" Gray Zone standard issue for tunnel work. She shows him the bone saw. He stares at it. She says: "Different context." He says: "Okay."
+- B39 · Moving Through the Tunnels — Midnight. Four kilometers take two hours through tight, partially collapsed infrastructure. One Scalpel checkpoint is evacuated ??" they have moved the perimeter. One NSB patrol is exactly where Femi predicted. They go under it via a service crawlspace that Femi knows and Stash does not. She learns in this beat that Femi has been navigating this infrastructure since he was fourteen and she has been treating him as a capable assistant when he is, actually, better at this specific problem than she is.
+- B40 · The Monitoring Station — They reach it. The station is locked with a standard commercial key system. Stash had a commercial lockpick kit in the Dispensary, which Scalpel now has. Femi has a different solution: the building authority code, which his tunnel contacts use for emergency access. It works. They are inside.
 
 ### Finale: The Broadcast
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5052 | `ebb503c4-2671-49ba-952c-d53eee160ce7` | — | The monitoring station has been on low-power standby fo… | 10/? | 5239c | UNSCORED |
-| 5053 | `292e0bea-426e-42fc-8242-f6785a5d64d9` | — | Establishes the antagonist's competence and hierarchy o… | 10/? | 6210c | UNSCORED |
-| 5054 | `b03c3216-4ba2-4f06-a646-277ff6b9bd9f` | — | Eight minutes into the broadcast. NSB breach from the t… | 10/? | 4635c | UNSCORED |
-| 5055 | `da97ac87-8b3c-4c1b-ac1d-916c8a02a020` | — | The broadcast completes. 14.3 GB, Renata's six fragment… | 10/? | 5259c | UNSCORED |
+- B41 · Bringing the Station Up — The monitoring station has been on low-power standby for seven years. Not dead ??" decommissioned administratively, not physically. Stash and Femi work the broadcast panel. The Nova-7 interfaces directly with the station's transmitter housing. Renata designed the implant for this station. Stash initiates the broadcast sequence. Eleven minutes for the full 14.3 GB package.
+- B42 · Signet Arrives — Establishes the antagonist's competence and hierarchy of priorities while creating immediate dramatic tension by making the transmission's interruption technically impossible.
+- B43 · Petra Arrives — Eight minutes into the broadcast. NSB breach from the tunnel access point. Three agents. Petra enters. She looks at Mwangi. Mwangi looks at Petra. Neither was aware the other would be here. For ninety seconds, the situation is military: two armed teams, one room, one transmitter, two incompatible orders. Stash and Femi are against the wall. The transmitter is still running. Then Mwangi moves for the panel and Petra's team interposes. What happens next is brief, professional, and lethal. Mwangi and two Scalpel operatives are down. One NSB agent is down. The broadcast runs.
+- B44 · Eleven Minutes — The broadcast completes. 14.3 GB, Renata's six fragments, the full trial record, routed to 40 Gray Zone nodes simultaneously. The implant goes dark ??" its battery was always exactly sized for one broadcast. Stash holds it in her palm, the shell warm. She sets it on the panel. Femi asks if it worked. She says she will not know for twelve hours. He asks what they do for twelve hours. She looks at the room ??" two dead corpo operatives, Petra standing near the transmitter panel, watching. She asks Femi: "Do you have any more water?"
 
 ### Final Image
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5056 | `6c00bcb7-47d0-42f3-ab27-d280a852757a` | — | Morning. Petra does not arrest Stash. She asks Stash to… | 9/? | 7058c | UNSCORED |
-| 5057 | `ecec137f-cbe2-4c90-b146-f6ea9fc8e73c` | — | By 1400: three Gray Zone data brokers have mirrored the… | 8/? | 6794c | UNSCORED |
-| 5058 | `71cb2203-70f0-4339-a4db-fc07e46c982d` | — | Three weeks later. A different Gray Zone location, Z-6 … | 7/? +subplot | 6631c | UNSCORED |
+- B45 · Petra's Deposition — Morning. Petra does not arrest Stash. She asks Stash to give a voluntary statement about the trial records, specifically the part where Stash's name appears. Stash says this once, clearly, for the record: "I was a junior field surgeon on a Sable Industries contract. I performed post-operative follow-up on patients I was told were standard war-injury cases." Petra writes it down. She does not say whether this exonerates Stash. There is no mechanism that does.
+- B46 · What the Broadcast Produced — By 1400: three Gray Zone data brokers have mirrored the package to external networks. By 1600: a legal collective in Z-2 has filed for an emergency review of MidNorth Medical's operating license. The NSB's involvement is a secondary story breaking elsewhere. The governor program is under review ??" not suspended; the 1,200 people who depend on it are still alive. Stash reads the updates on her phone without comment. She knows the outcome is not clean. She was not trying to produce a clean outcome.
+- B47 · Final Image — Three weeks later. A different Gray Zone location, Z-6 border, a sub-level unit Femi's tunnel contacts knew was available. Stash is restocking shelves ??" actual stock, bought with a small emergency fund from a Gray Zone medical collective that has decided she is worth maintaining. Ledger appears in the doorway. He says he is there to discuss payment. She says she told him she couldn't pay. He says he knows. He comes in anyway. Femi is painting a name on the wall: Renata Osei. Stash watches him paint and then goes back to the shelves. The job is not the payment. She catalogs what she has. She begins.

@@ -1,487 +1,155 @@
+﻿## Voice & Prose Laws (SS-A31 + Register — MANDATORY)
+
+### Accessible Prose (SS-A31)
+- Sentences: short-to-medium. Break any clause over ~20 words.
+- Narration uses contractions naturally: he's, it wasn't, couldn't, hadn't.
+- Vocabulary: Anglo-Saxon base words preferred. Avoid Latinate abstractions.
+- No stacked subordinate clauses.
+- No pseudo-profundity. Metaphors survive literal scrutiny.
+- No filler-wit.
+
+### Bear's Register — Military/Obligation (LOCKED)
+Close-third on Bear (Boris Johansen). He is warm, boisterous, proud. He fills every room he walks into. He is NOT the brooding type.
+
+**His register:** direct, confident, warm. He speaks plainly because he thinks plainly. He does not do inventory-voice (no counting, no cataloguing what he's feeling). He makes decisions the way a soldier makes decisions: he decides, and then the decision is made. When he's uncomfortable, the prose shows it as a stillness rather than reflection — he stops moving, he goes quiet. That's all.
+
+**Obligation, not guilt.** A man who made a moral accounting and knows what he owes. The ledger (sixteen Φ transfers on the twenty-first of every month) is not trauma — it's math. It's the right number. He's not tormented by the debt; he's maintaining it. When he thinks about Cortland, it's operational: what happened, who, what he owes.
+
+**Fills the room.** When Bear enters a space, the room changes. Too much for most environments — not aggressive, just too present.
+
+### BANNED in this strand
+- Kyle's register: arithmetic/filing/parliament/geometry — Bear thinks in OBLIGATION (what did I decide, what do I owe, what is the right action). Not math-thought.
+- Redemption arc. Bear has already made his moral accounting. The story is the completion of it.
+- The court drama played straight. The testimony is a tactic, not a resolution.
+- Brooding. Bear is not the brooding type.
+
 ---
-codex: 1
-project: StreetSamurai
-code: TEST
-layer: node-bible
-universe: glmz
-status: complete
-updated: 2026-07-04
+
+## World Texture (GLMZ — ground every scene here)
+
+**Sky communities (SS-A32/A33):** Aeropods → Aeropolis → Drifters. Altitude = class axis. The Low (30–320m ungoverned). "Little birdies"/"Harpies" = sky-dweller insults from below.
+
+**Underwater communities:** Hermetic domes on the lakebed + repurposed port infrastructure. "Fishmen"/"Mermaids" = outsider insults. No Arcturus Civil Security below surface.
+
+**Micro-schisms:** Pebble clusters (~2 inches) floating in complex orbits around apparently nothing — street corners, gutters. Treated like weather. Nobody explains them.
+
+**Nanite gutters (stopped):** Sanitation nanites stopped coming around. Streets grimier. Iridescent film in neglected zones. Corpo-adjacent districts still pristine — class marker.
+
+**Job vocabulary:** Rider/Channeler (Shell; Husk). Splicer. Tunneler. Scavs (lowercase).
+
+**Infrastructure:** Pulse (Mach 6 vacuum tube). No trains. VTOLs = Tier 3+. No police — Arcturus Civil Security only (Meridian PD dissolved 2208).
+
+**Φ** = QUANTA (never phi). Iowan Behemoths = machines, not life.
+
 ---
 
-# NODE BIBLE — Testament (TEST) {#SS-TEST}
+## Story — Testament (TEST)
 
-> **Purpose.** The dry spine of Bear's court-martial: dual timeline (Cortland Engagement ↔
-> present), three Sunder fights, and a Sun Tzu ending. What happens, not how it reads. When
-> prose and spine disagree, fix one in the same change. See [[../BIBLE]] for universe laws;
-> [[../BCODA]] for Bear's place in the peer-freelancer roster.
+**A peer-freelancer standalone.** Template for other peer-POV stories. Bear is the star; Kyle does not appear.
 
-## 0. What this story IS {#SS-TEST-0}
+**Shape:** Someone reopens the Cortland Engagement case (CE-0217). Bear has been paying sixteen families a quiet, sustained rate for eight years — a ledger Halcyon Civil Security needs closed. Dual timeline: Bear in the present (taking work that requires nothing of him) and Bear in the past at Cortland (the decision that made the ledger).
 
-A standalone Bear character study. Someone reopens the Cortland Engagement case (CE-0217).
-Bear has been paying a quiet, sustained rate to sixteen families for eight years — a ledger
-Halcyon Civil Security needs closed. Dual timeline: Bear in the present as head of security
-for Cinderfall Logistics (a gray-zone freight operator, Ironbend district), taking work that
-requires nothing of him; Bear in the past at Cortland, the decision that made the ledger.
+**It ends with a handshake.** Brandt salutes. Bear does not return it. He extends his hand. Brandt takes it. The handshake is just a handshake — Bear's weapon was the three sheets of testimony, already in the record. The compliance lock engages 43 seconds later because the Manowar is depleted (two morning Sunder discharges), not from a kill shot.
 
-It ends with a handshake. Brandt salutes. Bear does not return it. He extends his hand.
-Brandt takes it. The handshake is just a handshake — Bear's weapon was the three sheets of
-testimony, already in the record. The compliance lock engages 43 seconds later because the
-Manowar is depleted (two morning Sunder discharges), not from a kill shot. 6 hours 41 minutes
-after that, Brandt's NS-7 stem relay fails — flagged by Halcyon's own maintenance log at 1348,
-four minutes after the submission hit the civil accountability record. "He had decided this was
-tiredness." LOCKED.
+## The Central Symbol — The Salute (4 plants, 1 payoff, LOCKED)
+- **Beat 5 (past):** Mechanical. "Bear saluted with the others and filed out."
+- **Beat 12 (past):** Last salute as Bear's CO. Same motion, same angle, different weight.
+- **Beat 22 (lobby, present):** Brandt straightens into colonel's posture; Bear does not mirror it. "He did not move his right hand. He nodded once." Absence is felt.
+- **Beat 32 (kill):** Brandt SALUTES Bear — full and formal. Bear does not return it. Extends his hand. Brandt takes it. Bear's weapon was paper.
 
-**This is a peer-freelancer standalone.** Template for other peer POV stories. Bear is NOT
-Kyle — see register rules below.
+## The Obligation (not guilt)
+Sixteen monthly Φ transfers to the 43 families. He calls this obligation, not guilt. The payments made him findable.
 
-**This is NOT:**
-- A redemption story. Bear has already made his moral accounting. The ledger is the ledger.
-- A court drama. The testimony is a tactic, not a resolution.
-- A Kyle story. Kyle does not appear.
-- An inventory-voice story. Bear is warm, large, confident. Not the counting machine.
+Hana Morimoto's Q: "Why didn't you depose someone from the unit?" Her A: "You were the only one who kept paying on the twenty-first."
 
-## 1. The central symbol {#SS-TEST-1}
+CE-0217 stays classified. The payments stay visible.
 
-**The salute.** Two plants; one payoff. (Revised from an earlier 3-plant draft — the shipped
-text carries the motif in two beats, not three; see §4 item 2 for the correction.)
+## Bear (Boris Johansen)
+Swedish-Slavic. Steel blue eyes. 6'5" natural / 6'8" augmented / 385 lbs augmented. Full bushy beard.
 
-- **SK200 (past, briefing):** "The briefing closed. Bear saluted with the others and filed out."
-  Mechanical habit. The salute means nothing yet. Verbatim, confirmed present.
-- **SK695 (lobby, present):** Brandt straightens into the old colonel's posture — chin up,
-  shoulders set, weight to the balls of the feet — asking for the matching gesture. Bear
-  doesn't give it back. He holds Brandt's eyes instead: "A big man choosing not to move was
-  its own kind of statement." No salute. Absence is felt. Sets up SK800.
-- **SK800 (kill):** Brandt SALUTES Bear — full and formal, last gesture of an institution
-  to one of its own. Bear does not return it. Extends his hand. Brandt takes it = the kill.
-  LOCKED structural payoff.
+His arc (obligation-model): In the past timeline, he carries the weight of the decision. In the present, the ledger is maintained. The testimony is a tactic he always had available and chose now.
 
-The salute is the form that gets subverted. Bear stops performing the institutional reflex.
-Brandt, who caused CE-0217, performs it — and that act is what closes the arc. Bear does
-not kill Brandt. Bear's weapon was the three sheets of paper. Halcyon's own machinery kills
-Brandt. The salute lands because Bear refuses it and offers the human gesture instead: the
-handshake of a man who does not mistake himself for an institution.
+## Narrative Locks
+1. The salute sequence (4 beats, 1 payoff) is LOCKED. Order and placement are canonical.
+2. Bear does NOT salute Brandt at the end. He extends his hand.
+3. The compliance lock fires 43 seconds after the handshake — depleted Manowar, not a kill shot.
+4. CE-0217 stays classified. Three sheets of paper already in the record.
+5. "He had decided this was tiredness." LOCKED. Final Brandt line.
 
-## 2. The obligation (not guilt) {#SS-TEST-2}
+<!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
 
-Sixteen monthly Φ transfers to the families of the 43 dead. Bear calls this *obligation*, not
-guilt. This distinction is character: it's not trauma, it's a man who made a moral accounting
-and decided what he owed. That's Bear — big and direct even about the hard things.
+## Structural Blueprint
+<!-- generated 2026-07-15T15:11:32.8175757Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
-The payments are also what made him findable. Hana Morimoto's Q: "Why didn't you
-depose someone from the unit?" Her A: "You were the only one who kept paying on the twenty-first."
+- **Subplot**: Hana Morimoto's parallel investigation—a civilian seeking accountability through formal channels—mirrors Bear's accountability through testimony and obligation. Both pursue truth against institutional resistance; both discover that the system protects itself first.
+- **Temporal scheme**: nonlinear
+  - _Frame structure: present-day IRB hearing (beats 0-1, 3, 13, 20-32, 34, 38-42) bookends eight-year flashback (beats 2, 4-12, 14-19, 25-29) to the Cortland Engagement and its aftermath. The cut lands at beat 2 ('Eight years earlier'), withholding the reason for the IRB petition and Bear's current vulnerability until the frame reveals it. Payoff: the testimony itself becomes the weapon, and the reader understands retroactively why the payments made Bear findable._
+- **Resolution**: mixed
+- **Moral polarity**: ambivalent
+- **Ending**: quiet, no epilogue
+- **Form device**: dual-timeline with frame narration; the present-day IRB hearing brackets eight years of flashback. The structure itself performs the story's argument: we see Bear testify first (frame), then understan
+- **Escalation**: 43-beat arc, peak 10/10 at beat 31
+- **Intertextual anchors**:
+  - **Civil Accountability Code 14.2** (regulation) — cited in automated message flagging the CE-0217 petition; appears in beat 3 as the institutional mechanism that forces Bear to engage
+  - **Meridian Cross registry** (institutional record) — Bear accesses the public registry to read the criteria and prior recipients; his own entry has been deleted; referenced in beat 12 as Bear's attempt to understand what the institution has taken from him
+  - **Cortland Engagement (CE-0217)** (case file) — the classified case that drives the entire narrative; referenced by case code throughout; the testimony itself (beats 24-29) is the story's attempt to break its classification and put the forty-three into the record
+  - **Halcyon Civil Security protocol—stand-down order** (operational directive) — issued at 0328 during the Cortland operation; Bear's testimony in beat 27 dissects the gap between what the order said and what it meant, and what Bear chose to do in that gap
+  - **NS-7 neural implant (Halcyon Neural Services)** (medical device) — sustains Brandt's cardiology and lower-brainstem function; referenced in beats 32 and 33 as the machine that will ultimately fail, releasing Brandt from Halcyon's hold and from his own weight
 
-The obligation = the root of the whole case. CE-0217 stays classified. The payments stay visible.
-
-## 3. Character rules {#SS-TEST-3}
-
-**Bear / Boris Johansen (POV):**
-- Swedish-Slavic heritage. Steel blue eyes. 6'5" natural / 6'8" augmented / 385 lbs augmented. Full bushy beard.
-  Looks like male Nomad from Ghost Recon Breakpoint.
-- Warm, boisterous, proud. Fills every room. NOT the brooding type.
-- When patient with someone, it reads as a large man choosing patience, not suppression.
-- He tells stories; he doesn't give depositions. Even on the stand, his warmth is visible.
-- "Take care of yourself." His natural closer, said with full sincerity.
-- He winks at his enemies — not contempt, warmth. He is so unintimidated he can afford it.
-
-**What Bear is NOT:**
-- Not the quiet counting machine.
-- Not moody with buried trauma.
-- Not clinical or inventory-voice in normal contexts.
-- Not Squall, not Cloud, not any silent protagonist whose weight comes from what he doesn't say.
-
-**Vasili Brandt (antagonist):**
-- Halcyon retired colonel. One-and-a-half-inch scar under left eye.
-- Uses the phrase "We operated on the intelligence we were given" — rationalization + dropped
-  defense, observable in forward weight-shift.
-- Killed by Halcyon's own machinery (NS-7 flag at 1348, six hours after the hearing) — LOCKED.
-  Bear's weapon was the three pages, not any Sunder discharge.
-- **How Bear knows the NS-7 will fail:** Hana's intake files included Brandt's last NS-7
-  maintenance flag — years overdue, noted in the civil accountability record she assembled.
-  Bear's military background (Halcyon service, Cortland era) means he knows what a neglected
-  stem relay looks like in a man Brandt's age. The ambient EM from the morning's two Sunder
-  discharges — even at freight-corridor range — shortened the window from "sometime this year"
-  to "today." Bear does not know the exact minute. He knows the hardware is terminal and the
-  handshake is goodbye. Prose writers: SK800's certainty ("Bear already knows what the record
-  has put in motion") is grounded in this three-part read — maintenance flag + experience +
-  accelerated EM load — not prescience.
-
-**Hana Morimoto:**
-- Civil accountability investigator. The one who reopens the case.
-- Her Q about the unit deposition reveals what the payments cost Bear.
-
-**Declan Iyengar:**
-- Halcyon Legal Division liaison. "Warm-voice threat."
-- NOT Arcturus. NOT IRA. Halcyon Civil Security specifically.
-
-**Supporting cast:**
-
-**Ironbend:**
-- Bear's gray-zone logistics contact (a person/handle). Seeded in DB (TEST-US-1).
-- Bear does NOT call Ironbend at SK850 — deliberate choice: calling would let Halcyon trace
-  the contact and expose Ironbend's network. The negative instruction at SK850 carries weight
-  because Ironbend is a genuine option Bear chooses not to exercise, not an asset he lacks.
-  Prose writers: the absence of the call is the beat — Bear goes dark on purpose.
-- Note: "Ironbend" is a codename/handle for a person. Do not confuse with Cinderfall Logistics
-  (Bear's employer) or the Ironbend district (the shared location of both).
-
-## 4. Narrative locks {#SS-TEST-4}
-
-1. **"He had decided this was tiredness."** SK812.5. Brandt face-down in mashed potato.
-   The humanizing line. Brandt had been compensating for 37 minutes without noticing.
-   LOCKED. Do not expand or remove.
-2. **The salute payoff.** Two plants (SK200 briefing salute; SK695 Brandt's old posture,
-   refused) → one payoff (SK800). The shipped text does not carry a third plant at a
-   "walk off base" beat — SK600/650 (the insubordination/walk-off-base scene) contains no
-   salute; do not add one to chase the earlier 3-plant draft. See §1.
-   Beat 32 (SK800): Brandt salutes; Bear does not return it; extends hand.
-   Brandt takes it. The handshake is just a handshake — Bear shakes it the way he shakes any
-   hand, present and complete. Bear's weapon was the three pages, not the Sunder.
-   Compliance lock engages forty-three seconds after contact breaks because the Manowar is
-   DEPLETED (two morning discharges), not from a kill shot. LOCKED.
-   Brandt's death (Beat 33): Halcyon's own maintenance systems flag his NS-7 at 1348 — four
-   minutes after the submission lands in the record. The institution that killed forty-three
-   people now kills the colonel who covered it up. Bear does not deliver this kill. He already
-   knew it was coming. The handshake was goodbye. LOCKED.
-3. **"The room didn't move. He had a body built to make rooms small, and he kept it still, and
-   the stillness was the only place the thing could go."** SK350 (Hana's "you were the only one
-   who kept paying on the twenty-first" reveal). Retired-by-revision: this lock previously cited
-   "He did not move. The room did." at SK800 — that line does not exist in the shipped text; the
-   quote above is the actual line, at SK350, not SK800. LOCKED. Never expand or soften.
-4. **Sternum touch, SK900.** Bear puts a hand flat on his sternum — the absence of Manowar's
-   cycle, no warmth, just frame — and calls the number at 0600. LOCKED through-line closure.
-5. **The Meridian Cross, face-down in the service locker.** Symbol of deliberate departure,
-   not flight. The team lead stands with the locker open for a moment before saying anything.
-   LOCKED.
-6. **SK600 yellow rain jacket.** Two sentences; never expand.
-7. **Ventilation fan: 6 appearances total.** Panel said "overused" at 5. Do NOT add more.
-8. **Sunder never goes dormant during a story.** Same protection as Silence for Kyle.
-9. **Grounded structure (no gauntlet) is canonical.** Do not add more fight beats to shore
-   up a score — the structure is the achievement.
-
-## 5. Beat spine {#SS-TEST-5}
-
-43 beats (SK50–SK1050). Dual timeline: Past (Cortland Engagement, CE-0217) ↔ Present (hearing).
-
-### Present timeline: the hearing
-SK350: Hana intake — "You were the only one who kept paying on the twenty-first."
-SK500: Decision beat — the window estimate. "He had been carrying it long enough to trust it."
-SK680: 19-day surveillance logged. Teams pulled back day 14. Bear turned the wrong direction
-  at 1158. Kill order called at 1159. 38 minutes to scramble. Inside the Cinderfall freight
-  bay at 1247.
-
-**Fight 1 (SK685) — Range/broadcast Sunder:**
-Two Atlas II ex-operators in freight service corridor. Bear opens vent arrays. Both down.
-One non-augmented civilian with walkie-talkie: "Not your problem."
-
-**SK695 — Counting-as-interiority / Brandt contact:**
-Bear's counting-as-interiority beat. "I was still counting things."
-Brandt's rationalization established in this beat — "We operated on the intelligence we
-were given." The dropped defense: "the slight forward weight-shift of a man preparing a
-clause. He dropped it." This beat occurs before Fight 2 — Bear reads Brandt before the
-second discharge, not after.
-
-**Fight 2 (SK697.5) — Conductive-path Sunder:**
-Three Atlas III active-credential operators. Bear discharges through aluminum conduit —
-silent, no vent arrays. "I have a hearing."
-
-**Testimony fight (SK750) — Physical standoff, NO Sunder:**
-Bear saves the charge. Two waves: gang punks ("CITIZENS FOR COMPACT ACCOUNTABILITY" stenciled
-on surplus gear) — handled physically during testimony. Then Atlas III proper stack. Bear
-holds the lead's wrist through rest of testimony. Brandt watching from behind partition glass.
-"The lead sat down when Bear let him. The other two read the room." LOCKED.
-
-**SK800 — "Come back" + handshake:**
-Brandt walks around partition. "Come back." Bear: "You know, I almost considered that."
-Brandt salutes — full and formal. Bear does not return it; raises open right hand.
-Brandt takes it. The handshake is just a handshake. Bear already knows what the record
-has put in motion. "Think it over." Bear: "I will."
-
-**SK812.5 — Brandt's delayed death:**
-6h41m later. "By 2045, the NS-7 had been compensating for thirty-seven minutes. He hadn't
-noticed." Face-down. "He had decided this was tiredness." Institutional continuation:
-"Halcyon Neural Services logged the incident as a hardware malfunction — component fatigue."
-Same machinery that misclassified the 43 misclassifies Brandt's death. LOCKED.
-
-**SK825:** Bear leaves transponder in 2nd-floor service locker. Walks north. 4 clean identities.
-
-**SK850:** Gray zone entry. Manowar dormant — "the absence of it, the place on his chest
-that used to be warm." Halcyon credentialing node alert handled. Does NOT call Ironbend.
-
-**SK875 — Hana's own hearing (39 days later):**
-Bear watches on a throwaway comm in a noodle stall. She names PE-1139 and OD-7704 —
-"residential facility" vs. "approved engagement target" — without knowing he's watching.
-Session runs twelve minutes. Panel needs nine more days, then Halcyon Legal files a
-motion to dismiss.
-
-**SK900 — The motion:**
-Forty-one-page dismissal motion, standing/jurisdiction, routed to Bear via Ledger
-("*Declan.*"). A second file rides with it: a Halcyon transfer manifest moving "forty-three
-residents" from the Cortland site to an unaddressed compound — a *different*, currently-living
-group at a site that kept the registered capacity; the text should read as a second erasure,
-not the original 43 resurrected. Fourteen-day response window opens.
-
-**SK950 — The Fourteen Days:**
-Bear has Ledger splice the transfer manifest into Hana's exhibit (PE-1139) before the window
-closes. On day 13 the panel grants the motion: CE-0217 closed, non-actionable. The manifest
-survives inside the public exhibit regardless — closed is not un-filed.
-
-**SK1000 — The Empty Apartment:**
-Two days after CE-0217 closes, Halcyon's closeout team (Priya Achterberg) finds the
-hostel room swept clean. Service locker holds one object: a Meridian Cross, First Class,
-ribbon stripped, face-down. No surgical tray, no transponder — the transponder decoy is a
-separate object in a separate building (the IRB maintenance corridor, SK825). "He didn't
-run." / "He left."
-
-**SK1050 — The Nineteenth:**
-CE-0217 closed six weeks ago. Bear runs the sixteen transfers two days early, on the
-nineteenth, breaking the twenty-first pattern on principle. Sternum touch — no cycle, no
-warmth, frame at rest. Returns to the Cinderfall dock; calls the Arrangement's Cinderfall
-line at 0600 and reads the sixteen names into the record no court will keep.
-"It was never mine to carry alone."
-
-### Past timeline: the Cortland Engagement
-
-Interleaved as flashback across the present-timeline arc. Past beats occupy odd SK slots
-(approximately SK100, SK200, SK300, SK450, SK550, SK600) woven between present beats; exact
-placement is prose-writer discretion within those windows. The present-timeline SK200 plant
-("The briefing closed. Bear saluted with the others and filed out.") is a past-timeline beat —
-the pre-engagement briefing is the earliest confirmed past beat and anchors SK200 in the
-interleave. The last salute at Cortland is a separate, later past beat (approximate position
-SK550–SK600) and is a distinct event from the SK200 briefing salute.
-
-**Four-beat skeleton for the Cortland Engagement:**
-
-1. **Inciting order.** Bear's unit received a classified targeting package designating the
-   Cortland site as an approved engagement target — a threat facility, per Halcyon intelligence.
-   The briefing was closed-circuit; Bear saluted with the others and filed out (SK200). The
-   intelligence was wrong — misclassified, whether by error or deliberate cover.
-
-2. **Bear's decision point.** Bear was CO. He reviewed the package and ordered the engagement.
-   The story does not frame this as recklessness — he trusted the intelligence he was given.
-   That trust is what Brandt will weaponize: "We operated on the intelligence we were given."
-   Bear's counterweight: he never tried to make the cost disappear.
-
-3. **The 43 die.** Bear's unit clears the Cortland site. Forty-three people die. Post-action
-   reveals the facility was a residential care facility — occupants were not combatants.
-   Halcyon classifies the engagement and suppresses the targeting-error finding. Bear discovers
-   what the site actually was. The ledger begins the following month.
-
-4. **The last salute at Cortland.** Before the unit pulls out, Bear faces the site — not the
-   men, the site — and salutes. Not institutional habit. A deliberate act: this happened, he
-   owns it, he will carry it. The last time the gesture means anything institutional to him.
-   This is the seed that the SK800 handshake completes: at Cortland he gave the institution its
-   salute; at SK800 he refuses to give it back.
-
-## 6. Canon hardware {#SS-TEST-6}
-
-**Bear's augmented body weight (385 lbs / 175 kg without Manowar):**
-| Component | Net added |
-|---|---|
-| Base biological (6'5", heavily muscular) | 275 lbs / 125 kg |
-| Cortical endoskeleton (+3" height, titanium-carbide composite) | +22 lbs / +10 kg |
-| Arcturus Tier 5 Myomimetic Enhancement Array (id `c2384436-79d5-46ef-8a95-3bb41abb1dbf`) | +22 lbs / +10 kg |
-| Subdermal ballistic laminate (graphene-ceramic, torso/shoulders) | +18 lbs / +8 kg |
-| Strix Harvest Frame / Manowar Accumulator (piezoelectric, torso-integrated) | +22 lbs / +10 kg |
-| Augmented pulmonary array (synthetic expanded-volume lungs) | +9 lbs / +4 kg |
-| Augmented cardiovascular (reinforced cardiac pump + arterial reinforcement) | +6 lbs / +3 kg |
-| Military neural/cybernetic package (targeting, comms, sensory, power cell) | +11 lbs / +5 kg |
-| **Manowar powered frame (worn — external)** | **+1,320 lbs / +600 kg** |
-
-Total wearing Manowar: ~1,705 lbs / ~775 kg.
-The myomimetic mesh is why he can carry 1,320 lbs of powered frame: at six times organic output the load is manageable, not comfortable.
-
-**Strix Sunder** (id `019ed85d-3327-7a96-ab7e-2c35d5829003`) — EM interference pulse weapon,
-NOT a shockwave. Converts stored energy → resonant EM through vent arrays (chest + back).
-Anyone with active cybernetics in range goes blind/limp/seizes. Contact range = lethal
-through conductive paths. Unaugmented targets unaffected at range.
-
-**Strix Harvest Frame** (id `019ed85d-5abf-78aa-8c4b-bedcaf5ee669`) — piezoelectric +
-kinetic accumulator woven throughout Bear's torso frame. Every step, every impact, every
-hour of movement charges the capacitor lattice. **Dual-bank architecture:** two independent
-piezoelectric capacitor banks, each with its own 6-hour recharge window. Bank A (primary)
-feeds the vent-array broadcast mode (Fight 1, SK685). Bank B (secondary) feeds the
-conductive-path contact mode (Fight 2, SK697.5). Both banks may be discharged on the same
-morning — they are separate energy reservoirs, not a shared pool. Once both are depleted,
-6+ hours of sustained movement are required per bank before either mode is available again.
-This is why the Manowar is depleted at SK800: two separate morning discharges drained both
-banks, leaving the compliance lock to engage from accumulator exhaustion — not a kill shot.
-
-**Halcyon NS-7 Stem Relay** (id `019edb8be636743fa0e35ef54b656e63`) — Brandt's life-sustaining
-implant. Vulnerable to Sunder at contact range. Legacy hardware, decade past replacement cycle.
-
-**NS-7 disambiguation.** The Halcyon NS-7 Stem Relay is a **medical neuretic implant** that
-manages Brandt's neural stem stability. It is unrelated to the **Arcturus NS-7 'Reacher'**
-(a light combat NSB frame used for remote consciousness projection — Arcturus Defense Solutions,
-~60% bus load). Both carry the "NS-7" designation by coincidence of separate corporate naming
-conventions. Never conflate them in prose. Brandt's implant is passive life-support hardware;
-it is not a remote-operation frame.
-
-## 7. Register and voice {#SS-TEST-7}
-
-Warm, large, confident. Bear fills the room. Even on the stand, his warmth is visible in the
-framing. He tells stories; he doesn't give depositions.
-
-**What Bear notices:** Rooms, posture, warmth at his sternum, the silence where Manowar used
-to cycle. He notices people with his whole chest, not his ledger.
-
-**What Bear does NOT do:** Inventory-count in the Kyle register. Speak in clipped tactical
-assessments. Be moody. Suppress.
-
-**Voice register:** The contrast with Kyle is the point. Kyle is small, quiet, efficient,
-minimal. Bear is large, warm, loud in his quiet, present. The lumen mouse should delight him.
-After the breach, the lead operator comes around: Bear gives him a nod — easy, no agenda.
-
-Score: **86.7/100** (V20, N=120, Claude+OAI, CI ±0.55). All 120 scored 81–100. LOCKED.
-
-## 8. User stories {#SS-TEST-8}
-
-- **TEST-US-1 ✅** Bear entity seeded (`ff12a536ec2d484e95a9717c8dbbdd05`); Sunder + Harvest
-  Frame seeded; Brandt, Hana, Declan, Ironbend, CE-0217 all in DB.
-- **TEST-US-2 ✅** 43-beat novel written (Sonnet draft → Opus polish → multiple revision passes;
-  original draft was 37 beats — expanded to 43 by the Sun Tzu restructure in TEST-US-5 and
-  subsequent revision passes; DB confirmed: 43 enabled beats, SK50–SK1050).
-- **TEST-US-3 ✅** Standalone review ≥ 82%. *Achieved: 86.7.*
-- **TEST-US-4 ✅** Docx exported (V20).
-- **TEST-US-5 ✅** Sun Tzu restructure (Beats 32+33): institutional kill, handshake just a handshake.
-  Re-review: **88.2/100** (N=20, all 81–100). Standalone threshold ≥82% met. 2026-06-23.
-
-**QA standard going forward (SS-A44):** Default QA for any beat change or pre-export check is
-the **Logic Sweep** — six dimensions: causality chain, knowledge states, timeline, plant/payoff
-ledger, orphan references, bible agreement. Scores (86.7, 88.2) are diagnostic history. Do not
-run vote panels unless the user explicitly requests one.
-
-## 9. World canon and amendment integration {#SS-TEST-9}
-
-This section makes the bible self-contained with respect to engine amendments. No need to
-consult AMENDMENTS.md for facts in this story.
-
-**Present-day year (SS-A28).** The story is set in **2226**. Cortland Engagement flashbacks
-(CE-0217) and the eight-year payment record are historical. Prose set in the present timeline
-uses 2226 as the implicit anchor. Do not renumber Cortland-era dates — the amendment exempts
-flashbacks and historical records from the retcon.
-
-**Halcyon Combine and OBERON (SS-A30).** "Halcyon" throughout this bible is the **Halcyon
-Combine** (CorpoNation id `019f0f3f0f60…`) — an AI-founded CorpoNation chaired by **OBERON**
-(id `019f0f3f22a5…`), an artificial intelligence. "Halcyon Civil Security" is Halcyon Combine's
-enforcement division; "Halcyon Legal Division" (Declan Iyengar's bureau) is its legal arm;
-"Halcyon Neural Services" (the maintenance log that misclassifies Brandt's death) is its
-medical/implant division.
-
-*Author-level note (never in prose).* The institution that killed forty-three people and now
-kills the colonel who covered it up is, at the top of its command chain, a machine-intelligence
-making institutional decisions. Bear does not know this. The handshake is still just a handshake.
-But the machinery that logs Brandt's NS-7 failure as "hardware malfunction — component fatigue"
-is governed, ultimately, by an AI. The "same machinery that misclassified the 43" reading is
-richer for it. OBERON's name is never spoken in prose. Do not confirm or allude to OBERON
-in-fiction — treat exactly as the Prisoner: the ambiguity enriches; confirmation kills it.
-
-**Bear is NOT a Ghost (SS-LAW-26).** Bear does not use ECT (eigenstate conscience transfer / ghosting). He does not ghost into frames, does not have a Husk in suspension, and is not a Ghost operator. His augmentations are direct physical enhancements — myomimetic mesh, ballistic laminate, the Strix Harvest Frame and Sunder. There is no remote projection in this story. "Ghost" is the operator class for ECT work; it does not apply to Bear.
-
-**Retired-term hygiene (SS-A34).** All retired remote-operation terminology is enforced via
-DeprecatedEntityNames (NounConsistencyService); none of it appears in TEST and no backfill is
-needed.
-
-**Character doctrine compliance (SS-A41).** Bear already embodies the doctrine codified in
-SS-A41: the Cortland Engagement is his wound / circumstance — beyond his control. The monthly
-payment ledger and the decision to testify are his choices. Those choices define him, not the
-wound. The story is not about what happened at Cortland. It is about what Bear decided to do
-about it for eight years. The existing characterization is doctrine-compliant; no rewrites are
-required.
-
-**Accessible prose register (SS-A31).** The shipped TEST prose was written before the
-accessible-register ruling. It is valid as-is. On any active revision pass, apply the
-accessible-prose rules: break compound chains, contractions in narration, Anglo-Saxon over
-Latinate, spell out numbers in prose, drop filler qualifiers.
-
-**World facts not directly relevant to TEST:**
-- Aerostatic architecture / The Low / Sky People (SS-A32/A33/A42): not in scope for this
-  ground-level court story. If a beat ever moves to an aeroplex or the float layer, consult
-  those amendments.
-- Underwater communities retired (SS-A42): not referenced in TEST; no change needed.
-- Gray-zone Border Markets (SS-A40): SK850 (gray zone entry) is a brief transitional beat;
-  Border Market texture is available as background if a revision ever expands it, but the
-  existing two-sentence treatment is canonical and need not be expanded.
-
-## Beat Coordination Index {#SS-TEST-COORD}
-
-> GENERATED by `ss --coordinate --slug <slug>`. Do not hand-edit — regenerated
-> on demand. This is the three-coordinate map: each beat's **meaning** (bible),
-> **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
-> Full record: `reports/coordination/TEST.coordination.json`.
-
-**Coverage:** 43/43 beats fully covered. Story-wide construction: temporal=nonlinear, resolution=mixed, moral=ambivalent, ending=quiet, granularity=beat.
-
-**Gap counts:** UNSCORED=43
+## Beat Spine
+<!-- generated 2026-07-15T15:11:32.8175757Z from Beats table — edit via MCP beat tools -->
 
 ### Part One — The Charge
+- B01 · Testament — Establishes Bear as a disciplined, self-reliant professional whose augmented body and Thursday vigil signal that he is a man who shows up for things he cannot delegate.
+- B02 · — — Reveals that a call from Bear's past bypasses his conscious defenses, establishing that the body carries a history the mind has tried to manage.
+- B03 · — — Establishes the Cortland compound as a place of ordinary civilian life, making the coming violence morally legible before it occurs.
+- B04 · — — Turns Bear's eight-year equilibrium by introducing the accountability petition, revealing his response as recognition rather than fear and establishing him as a man who has been waiting.
+- B05 · — — Establishes the pre-Cortland Bear as a man of uncomplicated institutional faith, making the loss of that certainty the wound the story is built around.
+- B06 · — — Reveals Bear's moral framework as obligation rather than guilt, establishing him as a man who has structured his life around a debt he cannot discharge.
+- B07 · — — Pays off Bear's obligation framework by showing a recipient redirecting his reparations outward, turning his private penance into something that escapes his control and becomes generative.
+- B08 · — — Introduces Hana Morimoto as a competent equal who has already done the work, establishing that Bear's cooperation is a choice rather than a necessity.
 
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4075 | `019ed363-2879-7449-88f5-313b1d6d8e8f` | — | Establishes Bear as a disciplined, self-reliant profess… | 2/vigil | 7306c | UNSCORED |
-| 4119 | `019ed85d-7141-728a-8598-b2854e61fe0e` | — | Reveals that a call from Bear's past bypasses his consc… | 3/arrival | 6754c | UNSCORED |
-| 4076 | `019ed363-53bc-70e4-b0d2-6c706b9c7b28` | — | Establishes the Cortland compound as a place of ordinar… | 5/discovery +anachrony-cut | 4543c | UNSCORED |
-| 4077 | `019ed363-7ade-7368-8c23-f15bf92a49e1` | — | Turns Bear's eight-year equilibrium by introducing the … | 4/confrontation +intertextual-touchpoint,subplot,intertextual-touchpoint | 6488c | UNSCORED |
-| 4078 | `019ed363-9f4c-7c88-a4ad-716fef1abaac` | — | Establishes the pre-Cortland Bear as a man of uncomplic… | 6/ceremony | 5508c | UNSCORED |
-| 4079 | `019ed363-cb6c-7647-a2e0-c28a8aea12a9` | — | Reveals Bear's moral framework as obligation rather tha… | 5/confession | 5600c | UNSCORED |
-| 4080 | `019ed363-ee58-7073-ba9c-eccb0e805baf` | — | Pays off Bear's obligation framework by showing a recip… | 5/discovery | 3278c | UNSCORED |
-| 4081 | `019ed364-1579-7bc9-a5b9-44ea7649eefb` | — | Introduces Hana Morimoto as a competent equal who has a… | 6/arrival +subplot | 5933c | UNSCORED |
+### Part Two — The Proceedings
+- B09 · — — Reveals the forty-three as a count Bear's training made involuntary, establishing that the civilian toll was registered in his body before his conscience could refuse it.
+- B10 · — — Establishes Bear's post-action perimeter walk as institutional obedience persisting past moral coherence, revealing how the institution's grammar can outlast the humanity it governs.
+- B11 · — — Establishes Bear's clear-eyed acceptance of his situation and maps the precise leverage Halcyon holds over him, grounding the reader in the stakes before any action begins.
+- B12 · — — Reveals that Bear has long prepared an escape window, then pivots to the moral complication — the girl — that makes the plan harder than mere logistics.
+- B13 · — — Establishes Bear's private reckoning with his own legitimacy, showing he has tested his past actions against an unmovable standard and found them honest.
+- B14 · — — Introduces Halcyon's soft coercion through a recorded call, establishing the institutional threat Bear faces while revealing his practiced ability to read manipulation.
+- B15 · — — Reveals the original insubordination charge as institutional cover, establishing that Bear refused an order because he built the intelligence picture the institution deliberately withheld.
+- B16 · — — Pays off Bear's moral accountability by showing the concrete act — anonymous trusts — through which he has quietly carried his obligation for years.
 
-### Part Two — The Proceedin
+### Part Three — The Evidence
+- B17 ·  — Escalates Bear's interiority by showing him perform his transfers by hand on the last morning, turning a financial routine into a deliberate farewell ritual.
+- B18 ·  — Establishes Bear's reconnaissance of the escape route and his trust in lived, embodied knowledge over institutional schematics.
+- B19 ·  — Reveals that Bear's nineteen days of routine were a calculated deception, turning apparent passivity into active strategy and exposing Halcyon's overconfidence.
+- B20 · — — Escalates the threat by introducing two capable former operators blocking Bear's route, raising the physical cost of the escape he has engineered.
+- B21 ·  — Establishes Declan as a calculated, formidable adversary whose deliberate composure signals to Bear — and the reader — that a prepared threat is incoming.
+- B22 · — — Reveals Brandt's unexpected presence to escalate stakes and reintroduce the commanding figure whose past actions the testimony will indict.
+- B23 · — — Escalates the opposition Bear faces by showing Brandt burning irreplaceable social capital to stop him, proving the hearing's outcome matters enormously to Brandt.
+- B24 · — — Grounds Bear's testimony in physical and procedural reality, establishing his deliberate, unsentimental approach before his account begins.
 
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4082 | `019ed364-3714-7999-be38-3aff7e1e6b9c` | — | Reveals the forty-three as a count Bear's training made… | 7/chase | 4825c | UNSCORED |
-| 4131 | `019edcfa-09f7-746e-b53a-b4981820cc24` | — | Establishes Bear's post-action perimeter walk as instit… | 7/vigil | 6256c | UNSCORED |
-| 4083 | `019ed364-64a6-7bcc-9e46-f099f9177195` | — | Establishes Bear's clear-eyed acceptance of his situati… | 6/negotiation | 5578c | UNSCORED |
-| 4084 | `019ed364-81fb-7a36-99d6-85fcc5a490f0` | — | Reveals that Bear has long prepared an escape window, t… | 6/repair | 3820c | UNSCORED |
-| 4133 | `019edcfa-715d-777d-b31e-36cbfde41d4a` | — | Establishes Bear's private reckoning with his own legit… | 5/discovery +intertextual-touchpoint | 6643c | UNSCORED |
-| 4085 | `019ed364-a5dc-71bc-bdaa-46fe306151ef` | — | Introduces Halcyon's soft coercion through a recorded c… | 7/confrontation +subplot | 5628c | UNSCORED |
-| 4086 | `019ed364-d9ec-7835-a511-938f3f5bb67c` | — | Reveals the original insubordination charge as institut… | 8/betrayal | 7987c | UNSCORED |
-| 4087 | `019ed364-f4c1-7273-854c-bdc4c2aa381d` | — | Pays off Bear's moral accountability by showing the con… | 8/escape | 4856c | UNSCORED |
-
-### Part Three — The Evidenc
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 0 | `5b895a3f-5db7-4b48-b081-2891a81c25ca` |  | Escalates Bear's interiority by showing him perform his… | 9/exchange | 7173c | UNSCORED |
-| 4106 | `eef2365c-aec6-45be-91b9-15bb57465379` |  | Establishes Bear's reconnaissance of the escape route a… | 8/arrival | 6531c | UNSCORED |
-| 4107 | `4a51d6fe-5a92-4c48-aafa-f3e2c0bad8de` |  | Reveals that Bear's nineteen days of routine were a cal… | 7/ambush | 5510c | UNSCORED |
-| 4123 | `019edb80-6eda-7f1c-b97d-f2457d1659d5` | — | Escalates the threat by introducing two capable former … | 8/confrontation | 5586c | UNSCORED |
-| 4108 | `5745efe0-5acb-4019-9f4f-5721ec5895b1` |  | Establishes Declan as a calculated, formidable adversar… | 9/arrival +subplot | 4698c | UNSCORED |
-| 4122 | `019ed8b8-c85c-73fc-ac48-e6431a7b173f` | — | Reveals Brandt's unexpected presence to escalate stakes… | 8/confrontation | 6172c | UNSCORED |
-| 4124 | `019edb80-a085-721c-a716-73607f9814a6` | — | Escalates the opposition Bear faces by showing Brandt b… | 9/ambush | 5665c | UNSCORED |
-| 4088 | `019ed365-2a2b-758e-b664-612fcf683063` | — | Grounds Bear's testimony in physical and procedural rea… | 8/arrival | 4095c | UNSCORED |
-
-### Part Four — The Witnesse
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4127 | `019edcc4-8a9c-7a23-a392-c7bbc09bf83f` | — | Establishes Bear's conscious choice to testify as log r… | 9/confession | 4740c | UNSCORED |
-| 4128 | `019edcc4-c3a6-779e-a200-3c7f93540721` | — | Reveals Brandt's deliberate suppression of inconvenient… | 9/testimony | 5167c | UNSCORED |
-| 4129 | `019edcc5-0946-7f96-b6f2-bb06b621505a` | — | Builds the human reality of the forty-three through the… | 8/testimony | 6049c | UNSCORED |
-| 4152 | `019edd52-1fa0-7682-9ff7-10fdd33e3849` | — | Pays off the testimony's emotional weight by slowing to… | 8/testimony +intertextual-touchpoint | 4851c | UNSCORED |
-| 4154 | `019edd5a-f756-7d35-a985-742e7f469b9d` | — | Turns on Brandt's language, exposing how deliberate wor… | 9/testimony | 5437c | UNSCORED |
-| 4130 | `019edcc5-3f09-7fb8-a0e6-046753893337` | — | Escalates to Bear's refusal of a second operation, reve… | 9/testimony | 5910c | UNSCORED |
-| 4965 | `019f21ae-bf68-732c-a0e0-5ccb491c0ea9` | — | Establishes the institutional machinery that suppresses… | 10/loss +subplot | 1918c | UNSCORED |
-| 4101 | `019ed382-22ee-71de-b857-70bcb17ce1b1` | — | Escalates the opposition from legal obstruction to phys… | 9/ambush | 3164c | UNSCORED |
+### Part Four — The Witnesses
+- B25 · — — Establishes Bear's conscious choice to testify as log rather than story, framing his credibility and signaling that the forty-three deaths, not himself, are the subject.
+- B26 · — — Reveals Brandt's deliberate suppression of inconvenient intelligence through the pacing of his briefing, establishing premeditation rather than negligence.
+- B27 · — — Builds the human reality of the forty-three through the sustained detail of the lit window, making their presence undeniable before their deaths are recorded.
+- B28 · — — Pays off the testimony's emotional weight by slowing to the moment Bear filed his count and chose not to reopen it, marking his complicit silence without excusing it.
+- B29 · — — Turns on Brandt's language, exposing how deliberate word choice erased civilian identity and reveals institutional cover-up as an act of naming.
+- B30 · — — Escalates to Bear's refusal of a second operation, revealing the moment he broke from complicity and establishing the moral threshold the entire testimony has been building toward.
+- B31 · — — Establishes the institutional machinery that suppresses Bear's testimony, showing the system actively protecting the forty-three names rather than passively ignoring them.
+- B32 · — — Escalates the opposition from legal obstruction to physical intimidation, revealing Brandt's willingness to weaponize chaos while Bear refuses to be stopped.
 
 ### Part Five — The Closing
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4102 | `019ed382-71aa-7829-8ceb-caafe02dac44` | — | Pays off Brandt's threat by turning it into an offer, t… | 10/confrontation +intertextual-touchpoint | 3046c | UNSCORED |
-| 4125 | `019edb80-c3f9-7ed2-bae4-d7a1fe14e526` | — | Delivers the consequence of Bear's leverage without dra… | 8/vigil | 6979c | UNSCORED |
-| 4104 | `019ed756-4658-729b-b16f-45b7cb75879c` | — | Turns Bear's victory into immediate loss, showing that … | 7/departure | 4977c | UNSCORED |
-| 4103 | `019ed382-a038-77ff-921d-7969a09494bf` | — | Establishes Bear's arrival in genuine unbelonging, dist… | 6/arrival | 7613c | UNSCORED |
-| 4134 | `019edcfa-aa5c-78e9-8616-ceb1a280bbae` | — | Reframes Bear's future around willingness rather than c… | 5/negotiation | 2102c | UNSCORED |
-| 4126 | `019edb80-eb89-7ede-83db-904e1bf2423f` | — | Introduces Orvenne as a force that operates outside the… | 4/discovery | 4588c | UNSCORED |
-| 4109 | `adc826b0-6706-41c9-a96d-d911ea03cc13` |  | Reveals that Hana's testimony was two years in the maki… | 6/vigil +subplot | 7850c | UNSCORED |
-| 4105 | `019ed756-8612-7fb6-aa48-7218ce7362be` | — | Shows the system's counter-move against Hana's hearing,… | 7/discovery +subplot | 2427c | UNSCORED |
+- B33 · — — Pays off Brandt's threat by turning it into an offer, then reveals Bear's leverage — Brandt's NS-7 dependency — establishing that the real reckoning will be quiet and institutional, not physical.
+- B34 · — — Delivers the consequence of Bear's leverage without dramatizing it, showing Brandt's engineered solitude as the condition that makes his death unwitnessed and unremarkable.
+- B35 · — — Turns Bear's victory into immediate loss, showing that institutional freedom and bodily autonomy are the same leash pulled from opposite ends.
+- B36 · — — Establishes Bear's arrival in genuine unbelonging, distinguishing freedom from relief and marking the first moment in eight years his obligations are self-chosen rather than contracted.
+- B37 · — — Reframes Bear's future around willingness rather than capability, signaling that his next chapter requires him to rediscover what he actually chooses to be.
+- B38 · — — Introduces Orvenne as a force that operates outside the Tier system's legibility, escalating the stakes of Bear's gray-zone existence beyond anything the IRB world could reach.
+- B39 ·  — Reveals that Hana's testimony was two years in the making, recontextualizing Bear's role as one piece of a larger plan he was recruited into rather than the origin of.
+- B40 · — — Shows the system's counter-move against Hana's hearing, demonstrating that naming the forty-three was only the first battle and the machinery of erasure is already responding.
 
 ### Part Six — The Verdict
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 4986 | `019f2a2e-2dfa-74a7-9091-79a661193a17` | — | Establishes Bear's refusal to engage on the system's te… | 8/negotiation | 4685c | UNSCORED |
-| 4987 | `019f2a2e-4899-7dae-b27b-22baf50e4d45` | — | Reveals through the investigators' anticlimactic closeo… | 7/arrival | 3572c | UNSCORED |
-| 4988 | `019f2a2e-61f3-7c7b-a21d-bcb00be93639` | — | Pays off Bear's reclaimed autonomy by showing him quiet… | 6/exchange | 5906c | UNSCORED |
+- B41 · The Fourteen Days — Establishes Bear's refusal to engage on the system's terms, then pivots to reveal his true counter-move: using the transfer manifest to expose what the legal motion conceals.
+- B42 · The Empty Apartment — Reveals through the investigators' anticlimactic closeout that Bear anticipated surveillance and departed cleanly, reframing him as the one who was watching them watch him.
+- B43 · The Nineteenth — Pays off Bear's reclaimed autonomy by showing him quietly breaking the pattern that made him trackable, asserting self-determination over the rhythms once imposed on him.

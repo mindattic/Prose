@@ -67,7 +67,10 @@ the next time `generate_node_doc` runs.
 
 | Location | Contains | How to edit |
 |---|---|---|
-| `docs/BIBLE.md` | Universe laws, architecture, engine invariants — no per-story arc | Hand-edit directly |
+| `docs/BIBLE.md` | Engine invariants + **GLMZ** universe canon — no per-story arc | Hand-edit directly |
+| `docs/WORLD.md` | **GLMZ** world master: city mechanics, cast rules, combat, prose voice | Hand-edit directly |
+| `docs/FRANCHISE.md` | **GLMZ** franchise & IP bible — commercial positioning | Hand-edit directly |
+| `docs/universes/CAUL.md` | **Fantasy/Caul** universe canon | Hand-edit directly |
 | `Nodes.NodeBible` (DB) | **The single source of truth for that story** — arc, characters, voice, locks, blueprint, beat spine | `set_story_bible` MCP (hand-authored sections) |
 | `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — never edit this file | Re-run `generate_node_doc` to refresh |
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
@@ -107,10 +110,13 @@ Node context is **loaded on demand**, not injected at session start. Load only w
 The project follows the **MindAttic Codex** documentation standard. The source of truth lives under
 `docs/`:
 
-- **`docs/BIBLE.md`** (L0) — what StreetSamurai IS / is NOT, the architecture canon, **the Laws**,
-  and all world-building facts (engine invariants + GLMZ universe canon). **This is the single
-  authoritative source.** When in doubt, this wins. It supersedes the old `ARCHITECTURE.md`
-  (now a pointer). The Laws inherit `D:/Projects/MindAttic/MindAttic.HouseRules.md`.
+- **`docs/BIBLE.md`** (L0) — engine invariants (SS-LAW-N) + **GLMZ** universe canon. Authoritative
+  for GLMZ world facts. Fantasy/Caul universe facts live in `docs/universes/CAUL.md`.
+  Inherits laws from `D:/Projects/MindAttic/MindAttic.HouseRules.md`.
+- **`docs/WORLD.md`** — **GLMZ** world master: how the city works, how the cast works, how combat
+  works, how the prose sounds. Hand-edit directly.
+- **`docs/FRANCHISE.md`** — **GLMZ** franchise & IP bible: commercial positioning, genre, logline.
+  Hand-edit directly.
 - **`Nodes.NodeBible`** (DB, L0 per-story) — story arc, beat spine, character rules, locks,
   voice register, structural blueprint. **The single source of truth for that StoryNode.**
   Mirrored to `docs/nodes/<CODE>.md` as a generated read-only file — never hand-edit the file.
@@ -134,9 +140,10 @@ The project follows the **MindAttic Codex** documentation standard. The source o
 canonical destinations. Do not append to it. Do not reference it.
 
 Working rules:
-- **Canon changes go DIRECTLY into the authoritative source** — `docs/BIBLE.md` for world/engine facts,
-  `Nodes.NodeBible` (via `set_story_bible` MCP) for story-specific facts. There is no amendment
-  layer. After updating NodeBible, re-run `generate_node_doc` + `ss --sync-markdown`.
+- **Canon changes go DIRECTLY into the authoritative source** — `docs/BIBLE.md` (or `docs/WORLD.md`) for
+  GLMZ/engine facts, `docs/universes/CAUL.md` for Fantasy/Caul facts, `Nodes.NodeBible` (via `set_story_bible`
+  MCP) for story-specific facts. There is no amendment layer. After updating NodeBible, re-run
+  `generate_node_doc` + `ss --sync-markdown`.
 - A fact lives in **exactly one file**; cite it by its stable `{#SS-...}` id, never by line number.
 - Update the Bible/stories status in the **same change** that moves a goal; "done" means a test or
   build proves it.
@@ -155,10 +162,10 @@ Working rules:
    After filing: update `docs/series/GLMZ.md` Story Roster (§1–2), Character Arc Ledger exit
    states (§3), and Plant/Payoff Registry (§5). Check World-Revelation Sequencing (§6) — this
    story must not reveal anything before its designated book.
-1. **Docs first** — if new world facts, write them DIRECTLY into `docs/BIBLE.md` (engine/world-level).
-   For story-specific facts (arc, characters, voice register, locks), write the hand-authored content
-   via `set_story_bible` MCP into `Nodes.NodeBible`. Add story entry to `docs/USER_STORIES.md`;
-   run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
+1. **Docs first** — if new world facts: GLMZ facts → `docs/BIBLE.md` or `docs/WORLD.md`; Fantasy/Caul
+   facts → `docs/universes/CAUL.md`. For story-specific facts (arc, characters, voice register, locks),
+   write the hand-authored content via `set_story_bible` MCP into `Nodes.NodeBible`. Add story entry to
+   `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
 2. **Entities** — seed every named character, CorpoNation, place, or weapon into the DB via CLI or
    MCP **before any prose is generated**.
 3. **Story structure (SS-A43)** — create a **StoryNode** (MCP `create_story` / CLI `--create-story`)

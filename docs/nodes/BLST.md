@@ -1,217 +1,151 @@
----
-codex: 1
-project: StreetSamurai
-code: BLST
-title: Ballast
-layer: node-bible
-universe: glmz
-status: active
-updated: 2026-07-07
----
+﻿# NODE BIBLE: Ballast
 
-# NODE BIBLE â€” Ballast (BLST) {#SS-BLST}
+## LOGLINE
+Teo Mamani, ballast engineer for a sinking aerobloc, must calculate which households' possessions go overboard while the residents vote on whether to accept Ruslan's salvage offer and relocate, each family's answer hinging on what they cannot afford to lose.
 
-> **HARD FACTS (violating any of these is a defect):** Teo Mamani is a WOMAN â€” she/her, every
-> mention. The bloc NEVER collapses, fractures, or falls: it loses altitude slowly over months,
-> a controlled public descent. "Jettison" means deliberately unloading mass to slow the sink â€”
-> never structural failure, never danger-to-life. The jettison ledger is a DOCUMENT Teo
-> maintains. The complete named cast is Teo Mamani, Ruslan Adeyinka, Sigrun Ferreira, Priya
-> GuÃ°mundsen, her daughter Kaja (twelve years old), Wen Castellanos, Dagny Obuya, and the
-> governor automaton Almagre â€” invent NO other named characters; background residents stay
-> unnamed. The vote happens once, late in the story, and stays close. Everything is public and
-> above-board: no secrets, no covert measurements, no hidden data. No federal agencies exist;
-> comms are neuretics-only.
->
-> **Purpose.** The dry spine of the Aerobloc Candelaria descent: a community negotiating its own
-> sinking, and the engineer who runs the arithmetic of what gets thrown overboard. What happens,
-> not how it reads. When prose and spine disagree, fix one in the same change. See [[../BIBLE]]
-> for universe laws; aerostatic canon is SS-A32/A33 (altitude=class, Air Tax, The Low, eigenlift).
->
-> **First story generated fully under the StoryScope pipeline** (bible â†’ structural blueprint â†’
-> blueprint-injected prose â†’ duel-gated fixes). Target: ~30 beats / ~29k words / ~100 pages; 87+.
+## PREMISE
+Aerobloc Candelaria, forty-one households at 340 meters and descending, has six weeks before physics wins. The eigenlift frame is coherence-dead; buoyancy requires jettison. Ruslan Adeyinka's AshgraveMaterials will buy the bloc's salvageable mass, fund relocation, and leave the residents with money—but only if they vote to descend. The vote splits on what people need more than air: Priya's daughter's neuretics fund, Wen's grandfather's workshop, Sigrun's refusal to choose, Dagny's silence. Teo runs the ledger. The bloc will land. The question is what reaches the ground.
 
-## 0. What this story IS {#SS-BLST-0}
+## REGISTER
+Trim, operational, close to the math. Sentences move like load calculations—precise, weighted, no ornament. Quiet moments have the texture of decisions already made but not yet spoken. The violence is bureaucratic and gravitational.
 
-A community story about a sinking home. **Not an investigation. Not a heist. No conspiracy is
-uncovered.** The facts are known to everyone by Chapter 2; the story is what people do about them.
+## CHARACTERS
+- **Teo Mamani** — Ballast engineer, thirty-four, close-third POV. Wants: to jettison only what the math demands. Needs: to stop pretending the math is neutral. Ends: understanding that her ledger is a vote too, and she cast it.
+- **Ruslan Adeyinka** — Salvage broker, fifty-one, AshgraveMaterials. Wants: the bloc's mass and a clean transaction. Needs: to believe his offer is mercy. Ends: having made it, knowing what mercy costs the people who refuse it.
+- **Priya Guðmundsen** — Household 7, textile-repair worker, thirty-nine. Wants: her daughter Kaja's neuretics implant funded. Needs: to believe selling the bloc is not selling her daughter's future. Ends: voting yes and living with the arithmetic.
+- **Wen Castellanos** — Household 23, machinist, forty-six. Wants: his grandfather's workshop to stay bolted to the floor. Needs: to believe staying is not stubbornness. Ends: voting no and watching the vote pass anyway.
+- **Sigrun Ferreira** — Bloc chair, fifty-eight, mediator by temperament and exhaustion. Wants: consensus. Needs: someone else to decide. Ends: outvoted and relieved.
+- **Dagny Obuya** — Household 12, eldest resident, eighty-one. Wants: nothing from Ruslan. Needs: to refuse without explanation. Ends: refusing, and the bloc descends anyway because her vote is not a veto—it is just one voice in forty-one.
+- **Kaja Guðmundsen** — Priya's daughter, twelve, needs neuretics for cochlear integration. Present in absence; the cost of yes.
+- **Governor Almagre** — Automaton, descent-schedule administrator. Wants: compliance with the physics schedule. Needs: nothing. Ends: as it began—a machine executing descent protocol.
 
-Aerobloc Candelaria â€” a sixty-year-old residential aerobloc, forty-one households â€” is losing
-altitude. Its eigenlift frame is aging out of coherence faster than the housing co-op can fund
-recalibration. Every lost meter moves it down the city's class axis toward the 320-meter ceiling
-of The Low, where governance ends: insurance voids, tenancy law stops applying, and the bloc
-becomes salvage-eligible. The descent is slow, measurable, and public. There is a schedule.
+## BEAT SPINE
 
-Teo Mamani is the bloc's ballast engineer. She cannot stop the descent; she can only shape it â€”
-deciding what mass leaves the bloc and in what order, whose water tank moves to which quadrant,
-which floors close, what the bloc can afford to remain. Her ledger of throwaways is the story's
-spine: every chapter, something else goes over the side, and every item is somebody's.
+1. [OPENING] Teo at the eigenlift core — The frame's coherence is failing; the numbers say jettison starts in forty-two days. Teo reads the stress distribution and marks the first load-bearing wall as candidate for cut.
 
-Ruslan Adeyinka, a salvage broker contracted to AshgraveMaterials, makes the co-op an offer:
-sell the bloc for structured salvage now â€” dignified relocation, real money, a controlled
-deconstruction â€” instead of riding it into The Low where scavengers and salvage law will take it
-for nothing. **His theory is legible and partly correct.** The bloc probably will hurt someone.
-The offer splits the forty-one households, and the split, not the broker, is the antagonist.
+2. [OPENING] Teo walks Candelaria's spine — Forty-one households stacked in a cylinder that was never meant to last sixty years. She knows which walls carry which lives and which lives can be moved if the walls go.
 
-**This is NOT:**
-- A Kyle story, a Rook story, or a peer-roster story. New protagonist, new register.
-- A mystery. Nothing is hidden. No reveal recontextualizes the premise.
-- A story where the bloc is saved by a clever fix. The eigenlift frame is old. Physics wins.
-- A villain story. Ashgrave follows the law. Ruslan believes his arithmetic, and half of it holds.
-- A story with Schism phenomena on-page. The Schism exists in this world; it is not in this story.
+3. [COMPLICATION] Ruslan's offer arrives in writing — AshgraveMaterials will purchase the bloc's structural mass, fund relocation to a ground-tier residential block, and distribute proceeds. The math is clean. The offer is real.
 
-## 1. The central object {#SS-BLST-1}
+4. [COMPLICATION] Sigrun calls the household meeting — The chair announces the descent schedule and the salvage offer in the same breath. Forty-one people in the common space. No one speaks first.
 
-**The descent schedule.** A maintained document: projected altitude by week, Air Tax bracket
-thresholds, the 320m line, and the jettison ledger â€” what mass has gone over the side, what it
-weighed, whose it was. Teo maintains it the way other people maintain a grave. It is the one
-honest document in the story: everyone else negotiates with hope or money; the schedule only
-subtracts.
+5. [REVELATION] Priya's hand goes up — Her daughter Kaja needs neuretics integration; the fund is Φ8,400 short. Ruslan's offer would close it. She asks the room if anyone else is counting the same shortfall.
 
-The schedule is public. Posting it on the commons wall every Monday is Teo's job and her
-penance: she is the person who tells forty-one households, weekly, how much closer the floor is.
+6. [REVELATION] Wen's refusal is not a question — Household 23 has his grandfather's workshop bolted to the floor: lathes, dies, jigs that took thirty years to calibrate. He votes no. He does not explain why the workshop cannot move.
 
-## 2. Character rules {#SS-BLST-2}
+7. [ESCALATION] Teo calculates Priya's allocation — Her household's mass is modest; her jettison quota is Φ2,100 in goods. Not enough to fund Kaja's neuretics alone. She would need the vote to pass and Ruslan's payout.
 
-**Teo Mamani (POV)** â€” ballast-and-trim engineer, Aymara-Chilean line out of the Andean transit
-diaspora. Grew up on tether-maintenance platforms; came down to Candelaria because a bloc job
-came with a floor of her own.
-- **Register: trim.** She thinks in load, list, moment arms, freeboard, center-of-mass. People
-  read to her as loads and lever arms; grief reads as trim to be corrected. This is HER
-  vocabulary â€” no filing (Kyle), no timestamps (Yemina), no ledger-columns (Elias), no clinical
-  presentation (Stash). When Teo is wrong it is because she trimmed a human problem.
-- Explicit reasoning ON the page is in-register for her the way it is for Stash â€” but in trim
-  vocabulary, and always about mass and balance, never about motive.
-- She owns almost nothing. Fifty-one kilos of personal effects; she knows the number.
-- She is not sentimental about objects and is unprepared for what jettisoning other people's
-  objects does to them â€” and eventually to her.
+8. [ESCALATION] Teo calculates Wen's allocation — His workshop is bolted mass; it counts as household fixture, not jettison-eligible. But if the bloc votes to descend, AshgraveMaterials will strip it and recycle it. Wen knows this. He votes no anyway.
 
-**Ruslan Adeyinka** â€” salvage broker, Tatar-Yoruba, AshgraveMaterials reclamation contract.
-- Not a predator. He has watched three blocs ride into The Low and knows what scavenger salvage
-  looks like when it reaches a bloc that still has people on it. His offer is his conscience.
-- He is wrong about one thing only: he prices the bloc's community at zero because his model has
-  no column for it. He never learns better on the page. No redemption, no unmasking.
-- Gloss AshgraveMaterials at first mention, in-voice (CorpoNation conjoined-capitals rule).
+9. [QUIET-MOMENT] Teo in her quarters — The ledger is open on her desk. Two columns: stay and descend. The math is identical; only the outcome changes. She understands that her job is to make the outcome seem inevitable.
 
-**Sigrun Ferreira** â€” co-op chair, Icelandic-Brazilian. Holds the vote together by exhaustion.
-Her authority is procedural, not moral, and she knows it. Wants to be outvoted so the outcome
-won't be hers.
+10. [COMPLICATION] Sigrun asks Teo to project the vote — She wants to know what the math predicts before the households decide. Teo refuses. She tells her that her ledger is not a crystal ball; it is a jettison schedule.
 
-**Priya GuÃ°mundsen** â€” resident, leads the sell faction. Not greedy: her daughter **Kaja**,
-twelve, is at the closing edge of the juvenile neuretics growth window (SS-A21) with cheap-bracket
-provisioning settling wrong at the cochlear feeds; the corrective procedure is real and priced for
-Sky People, and the fund is Î¦8,400 short. The Ashgrave payout is, exactly and only, that fund.
-Her case is the strongest in the story and Teo knows it. Kaja appears on-page sparingly â€”
-present mostly in absence.
+11. [REVELATION] Dagny Obuya does not attend the second meeting — She is eighty-one and has lived in Household 12 for forty years. She sends word that she has no position on the offer. She will abide by the vote.
 
-**Wen Castellanos** â€” machinist, leads the stay faction. His workshop IS his mass allocation;
-every kilo of the bloc Teo jettisons, he recalculates what of his shop he'd give up next. The
-story's quiet mirror of Teo.
+12. [COMPLICATION] Priya visits Teo at the eigenlift core — She asks what Teo would do in her place, with a daughter and a shortfall and a sinking bloc. Teo tells her the question is not hers to answer, and does not answer it.
 
-**Dagny Obuya** â€” eldest resident, four decades aboard. Refuses the frame of the question. Her
-household's mass allocation is the largest and she will not discuss it. Not senile, not wise â€”
-just done explaining herself. What she finally does with her allocation is the story's hinge.
+13. [ESCALATION] Wen brings his grandfather's jigs to the common space — He sets them on the table where the vote will happen. He tells the room that these are forty years of calibration and that AshgraveMaterials will melt them. He votes no.
 
-**Almagre** â€” the bloc's governor automaton, a Tier 1 machine (SS-A23: machine, NOT alive; its
-apparent care is optimization). It enforces trim limits Teo sets. It does not develop
-personhood, does not sacrifice itself, does not get a farewell scene.
+14. [ESCALATION] Ruslan visits the bloc — He walks the spine with Teo and Sigrun. He points out the eigenlift frame's degradation. He says the offer is not negotiable, but it is not permanent either; in six weeks, the descent will be forced, and there will be no payout—only the cost of emergency relocation.
 
-## 3. Narrative locks {#SS-BLST-3}
+15. [REVELATION] Sigrun's position breaks — She tells the households that she cannot vote yes or no; she will abstain and let the majority decide. She asks Teo if that is cowardice. She tells her that abstention is a vote; it just does not sound like one.
 
-1. **The bloc is not saved.** No engineering miracle, no last-minute funding, no benefactor.
-   The frame's decay curve is physics and stays physics.
-2. **Ruslan's arithmetic is never refuted** â€” only answered. Nobody proves him wrong; the story
-   ends with people choosing against a correct model, and paying for it, or with it. Ambivalent.
-3. **The vote is close and stays close.** No faction converts the other. No speech flips the room.
-4. **Nothing hidden, nothing revealed.** No sealed partition, no secret in the frame, no
-   documents that recontextualize. (Consensus-clichÃ© blocklist applies.)
-5. **Nobody dies passing anything on.** Dagny does not die to resolve her allocation. No mentor
-   transfers an object of meaning. (Blocklist.)
-6. **Teo's fifty-one kilos.** Whatever she does with her own mass allocation at the end, it is
-   an action, not a narrated realization â€” shown, never explained.
-7. **Almagre stays a machine.** (SS-LAW: Iowan-Behemoth-adjacent rule â€” automata are not alive.)
-8. **The Schism, Kyle, and the peer roster do not appear.** Five-pillar texture comes through
-   Air Tax/CorpoNation governance, nanite Substrate maintenance, neuretics class-divide
-   (Priya's daughter), and ambient AI presence (Almagre, Ashgrave's assessors) â€” not cameos.
+16. [QUIET-MOMENT] Priya in her kitchen — Kaja is at school. Priya looks at the neuretics fund balance on her wrist display: Φ8,400 short. She does not touch the number. She knows that touching it will not change it.
 
-## 4. Register and voice {#SS-BLST-4}
+17. [COMPLICATION] Wen's old apprentice visits from the Gray Zone — He tells Wen that the workshop is a beautiful thing but it is not worth staying in a bloc that is sinking. Wen tells him that the workshop is the only thing that is worth staying for.
 
-Close-third, Teo's POV. Accessible prose (SS-A31): shorter sentences, contractions, Anglo-Saxon
-vocabulary, trim-register metaphors that survive literal scrutiny. Narrator writes full
-sentences; fragments are for stress moments only. Emotion: body before mind, with the earned
-explicit label where the weight demands it (StoryScope emotion-ratio rule). No pseudo-profound
-lines. No universal-truth wit. Theme is never named by the narrator â€” the jettison ledger and
-the Monday postings carry it.
+18. [ESCALATION] Teo recalculates the jettison ledger with Ruslan's offer as context — If the vote is yes, Priya's household receives Φ3,200 from the payout; if the vote is no, she receives nothing and stays in a bloc that will force-descend in six weeks with no salvage proceeds. The arithmetic is not ambiguous.
 
-**What her voice notices:** mass, trim, the bloc's list after a jettison, handholds worn by
-forty years of the same hands, Air Tax bracket notices, the altitude painted on the commons
-wall being repainted lower.
+19. [REVELATION] Dagny's allocation is the hinge — She owns more mass than any other household: forty years of books, photographs, furniture. Her jettison quota is Φ4,800. If she votes yes, the payout is distributed across forty-one households and Priya's shortfall closes. If she votes no, the payout shrinks and Priya's daughter does not get her neuretics.
 
-**What her voice does NOT do:** explain motives, editorialize the vote, marvel at GLMZ,
-narrate what anything means.
+20. [QUIET-MOMENT] Teo visits Dagny in Household 12 — The room is full of objects: books on every wall, photographs in frames, a bed that has been in the same place for four decades. She asks her what she wants to do. She tells him that she wants the question to not exist.
 
-## 5. Structure targets {#SS-BLST-5}
+21. [COMPLICATION] Sigrun calls the final household meeting — The vote is scheduled for three days hence. She reads Ruslan's offer again, word for word. She asks if anyone has questions. No one does.
 
-~30 beats across ~12 chapters (~29k words / ~100 pages). Authorial spine generated by
-NodeBibleService from the seed; structural blueprint (subplot, escalation curve, event palette,
-ending commitments) generated pre-prose per BIBLE Â§10 Step 3b and recorded here after review.
-Ending style per blueprint â€” expected avalanche, external resolution: the vote, the 320m line,
-and Dagny's allocation land together; no epilogue.
+22. [ESCALATION] Priya approaches Dagny in the common space — She does not ask for her vote. She tells Dagny that her daughter needs the neuretics and that Dagny's allocation is the only thing that makes the payout large enough. Dagny listens and does not respond.
 
-## 6. User stories {#SS-BLST-6}
+23. [REVELATION] Wen confronts Ruslan at the bloc entrance — He asks if AshgraveMaterials will guarantee that the workshop jigs are recycled and not melted. Ruslan tells him that recycling and melting are the same process. Wen asks if he is being cruel. Ruslan says he is being honest.
 
-- **BLST-US-1** Entities seeded (Teo, Ruslan, Sigrun, Priya, Wen, Dagny, Almagre, Candelaria)
-  before any prose.
-- **BLST-US-2** Bible + ~30-beat spine generated; StoryNode + ChapterNode structure created.
-- **BLST-US-3** Pre-prose structural blueprint generated and reviewed (first story to get one
-  before prose exists).
-- **BLST-US-4** All beats written through ProseWriterRouter (blueprint injection active â€”
-  verify via workflow-status coverage).
-- **BLST-US-5** QA: reflow, logic sweep clean, storyscope-audit clean, plant-audit clean.
-- **BLST-US-6** Review â‰¥ 87 (explicit target set by user 2026-07-07).
-- **BLST-US-7** Export docx to R:\Desktop\EPub\MindAttic\GLMZ\Ballast\.
+24. [QUIET-MOMENT] Teo walks the bloc's outer ring at dawn — She sees the lake far below, the Gray Zone beyond, the Spires in the distance. The bloc is still buoyant. In six weeks, it will not be. She understands that her job is not to save it; it is to calculate what reaches the ground.
 
-## Beat Coordination Index {#SS-BLST-COORD}
+25. [ESCALATION] The vote happens — Forty-one households vote on the descent and the salvage offer. The tally is twenty-three yes, seventeen no, one abstention. Sigrun's abstention does not change the outcome. The vote passes.
 
-> GENERATED by `ss --coordinate --slug <slug>`. Do not hand-edit — regenerated
-> on demand. This is the three-coordinate map: each beat's **meaning** (bible),
-> **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
-> Full record: `reports/coordination/BLST.coordination.json`.
+26. [REVELATION] Dagny votes yes — Her allocation tips the payout large enough for Priya's daughter to receive her neuretics. Dagny does not explain. She votes and walks back to Household 12.
 
-**Coverage:** 30/30 beats fully covered. Story-wide construction: temporal=linear, resolution=external, moral=ambivalent, ending=avalanche, granularity=beat.
+27. [CONFRONTATION] Priya learns that Dagny voted yes — She finds Dagny in her quarters and thanks her. Dagny tells her that she did not vote for her daughter; she voted because the bloc is sinking and the vote is real. Priya asks if there is a difference. Dagny does not answer.
 
-**Gap counts:** UNSCORED=1
+28. [RESOLUTION] Teo finalizes the jettison ledger — The descent is scheduled. The households have thirty days to pack. AshgraveMaterials will strip the bloc's structural mass and distribute the proceeds. The eigenlift frame will fail on schedule. The bloc will land.
+
+29. [QUIET-MOMENT] Wen in his workshop — The lathes are bolted to the floor. In four weeks, they will be cut loose and recycled. He runs his hands over the calibration marks and understands that the workshop has already left. He is just the last thing to go.
+
+30. [RESOLUTION] Aerobloc Candelaria descends — The eigenlift frame loses coherence at 320 meters. The descent is controlled. The households are relocated. The vote was real. The cost was real. The bloc reaches the ground.
+
+## SEEDS & PAYOFFS
+
+- Beat 1 plants the eigenlift frame's failure schedule → Beat 30 pays it off as the descent happens on time.
+- Beat 3 plants Ruslan's offer → Beat 18 pays it off as the arithmetic becomes unavoidable.
+- Beat 5 plants Priya's neuretics shortfall → Beat 26 pays it off as Dagny's vote closes the gap.
+- Beat 6 plants Wen's workshop refusal → Beat 29 pays it off as he watches the lathes get cut loose.
+- Beat 8 plants the workshop as jettison-ineligible fixture → Beat 23 pays it off as Ruslan clarifies that recycling is melting.
+- Beat 10 plants Sigrun's request for prediction → Beat 15 pays it off as she learns that abstention is still a vote.
+- Beat 11 plants Dagny's refusal to attend → Beat 26 pays it off as she votes yes without explanation.
+- Beat 12 plants Teo's refusal to answer Priya → Beat 24 pays it off as he accepts that his job is calculation, not salvation.
+- Beat 14 plants Ruslan's warning about forced descent → Beat 25 pays it off as the vote passes and the descent becomes voluntary.
+- Beat 19 plants Dagny's allocation as the hinge → Beat 26 pays it off as her vote tips the payout and the outcome.
+- Beat 20 plants Teo's visit to Dagny → Beat 27 pays it off as Priya thanks Dagny and learns that gratitude is not the same as understanding.
+- Beat 24 plants the view from above → Beat 30 pays it off as the bloc comes down into the world it could always see.
+
+<!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
+
+## Structural Blueprint
+<!-- generated 2026-07-15T15:11:32.7154174Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
+
+- **Subplot**: Wen's grandson visits from the Gray Zone and argues the workshop should be abandoned — a younger generation who grew up among stripped blocs and salvage yards, for whom the machinery is already history. This mirrors the A-plot's question (what do you owe to what cannot move?) in the key of inheritance rather than community: Wen's refusal is tested not by a vote but by the one person whose future the workshop was implicitly meant to serve.
+- **Temporal scheme**: linear
+- **Resolution**: external
+- **Moral polarity**: ambivalent
+- **Ending**: avalanche, no epilogue
+- **Form device**: inventory-as-narrative: Teo's jettison ledger columns (household / current mass / relocation date / receiving address / strip-crew tag) appear as actual formatted entries at key beats — beats 6, 7, 17
+- **Escalation**: 30-beat arc, peak 10/10 at beat 30
+- **Intertextual anchors**:
+  - **aerostatic_architecture** (document) — Teo cites a passage from the commissioning-era aerostatic architecture standards when explaining to Ruslan why the workshop's bolted fixtures classify as frame mass rather than household goods — she reads the relevant clause aloud from her wrist display during the spine walk.
+  - **On the Sudden Density: A Third Treatment** (document) — One of Dagny's books, spine visible on the shelf during Teo's load survey visit, is this text — Teo clocks the title without comment during her second visit, and the phrase 'sudden density' surfaces once in her internal register when she sits with Dagny's allocation figure.
+  - **Oral History Transcript #47: Wanda Brożek, Former Bawa Vieża Park Ranger (Retired 2198)** (document) — Wen's grandson mentions, during their conversation, that he'd read a transcript of a ranger who watched a forest zone get decommissioned and said the hardest part wasn't the leaving, it was that the place didn't know it was being left — Wen does not respond to this directly.
+  - **Soren Rowe** (quote) — Sigrun quotes Rowe — 'abstention is not silence; it is a vote cast against the burden of choosing' — when she tells Teo she will abstain, half-mockingly, as if she has been carrying the line around waiting for a moment that fit it and is not sure this one does.
+  - **Wren Caerglas** (quote) — A Caerglas line — something about weight being the only honest measure of what a place meant to you — is painted in small letters on the interior of the eigenlift core housing, put there by a previous engineer; Teo reads it without thinking about it most mornings, and notices it consciously for the first time on the morning Ashgrave's technicians arrive to take the drivers.
+
+## Beat Spine
+<!-- generated 2026-07-15T15:11:32.7154174Z from Beats table — edit via MCP beat tools -->
 
 ### Ballast
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5059 | `019f3ac8-394d-7849-a057-5b6af36d44cd` | inciting-incident | The frame's coherence is failing; the numbers say jetti… | 3/vigil | 5550c | ✓ |
-| 5060 | `019f3ac8-397c-7e21-8b58-9e4b5317227c` | inciting-incident | Forty-one households stacked in a cylinder that was nev… | 4/survey | 5585c | ✓ |
-| 5061 | `019f3ac8-397d-765d-b322-1a94325715bc` | rising-action | AshgraveMaterials will purchase the bloc's structural m… | 5/arrival | 6170c | UNSCORED |
-| 5062 | `019f3ac8-397d-73cf-a2c6-b8f550e5ea5e` | rising-action | The chair announces the descent schedule and the salvag… | 5/assembly | 5755c | ✓ |
-| 5063 | `019f3ac8-397d-7cb6-966c-eaf661d744e9` | rising-action | Her daughter Kaja needs neuretics integration; the fund… | 6/confession | 5359c | ✓ |
-| 5064 | `019f3ac8-397d-79f7-b8ca-2b562ef072b5` | rising-action | Household 23 has his grandfather's workshop bolted to t… | 6/confrontation +subplot | 5582c | ✓ |
-| 5065 | `019f3ac8-397d-7a7f-960f-86d7d8f26c3e` | rising-action | Her household's mass is modest; her jettison quota is Φ… | 7/calculation | 6317c | ✓ |
-| 5066 | `019f3ac8-397d-7a5a-b766-f437318a4b96` | rising-action | His workshop is bolted mass; it counts as household fix… | 7/discovery | 5787c | ✓ |
-| 5067 | `019f3ac8-397d-7f70-98c6-75c116a337e6` | scene-break | The ledger is open on her desk. Two columns: stay and d… | 5/vigil | 6116c | ✓ |
-| 5068 | `019f3ac8-397d-7422-8df7-4df1d5a6ba25` | rising-action | She wants to know what the math predicts before the hou… | 6/negotiation | 5378c | ✓ |
-| 5069 | `019f3ac8-397d-79de-ae26-51db60c3c064` | rising-action | She is eighty-one and has lived in Household 12 for for… | 5/departure | 5569c | ✓ |
-| 5070 | `019f3ac8-397d-75aa-a9f4-a0beeefa65e7` | rising-action | She asks what Teo would do in her place, with a daughte… | 6/exchange | 5378c | ✓ |
-| 5071 | `019f3ac8-397d-7821-a8a3-44247b0f7149` | rising-action | He sets them on the table where the vote will happen. H… | 7/ceremony | 5918c | ✓ |
-| 5072 | `019f3ac8-397d-760a-8e5b-5b39a6e2ceb8` | rising-action | He walks the spine with Teo and Sigrun. He points out t… | 7/inspection +intertextual-touchpoint | 6129c | ✓ |
-| 5073 | `019f3ac8-397d-7627-87c2-350828a85d7e` | rising-action | She tells the households that she cannot vote yes or no… | 6/confession +intertextual-touchpoint | 6161c | ✓ |
-| 5074 | `019f3ac8-397d-7941-bc42-9e2835a2f11b` | scene-break | Kaja is at school. Priya looks at the neuretics fund ba… | 5/vigil | 4543c | ✓ |
-| 5075 | `019f3ac8-397d-7bc6-bb85-247e016ffb37` | rising-action | He tells Wen that the workshop is a beautiful thing but… | 6/negotiation +intertextual-touchpoint,subplot | 5312c | ✓ |
-| 5076 | `019f3ac8-397d-71af-a07b-5d59fe88232e` | rising-action | If the vote is yes, Priya's household receives Φ3,200 f… | 7/calculation | 3608c | ✓ |
-| 5077 | `019f3ac8-397d-7dba-ac48-4cdb516fbe3b` | rising-action | She owns more mass than any other household: forty year… | 8/discovery | 5716c | ✓ |
-| 5078 | `019f3ac8-397d-76d9-b315-c96e26515f40` | scene-break | The room is full of objects: books on every wall, photo… | 7/exchange +intertextual-touchpoint | 5889c | ✓ |
-| 5079 | `019f3ac8-397d-7dbb-9cb7-6f09fa574f0d` | rising-action | The vote is scheduled for three days hence. She reads R… | 7/assembly | 6040c | ✓ |
-| 5080 | `019f3ac8-397d-75fb-9e51-6ec11a7b51d4` | rising-action | She does not ask for her vote. She tells Dagny that her… | 8/approach | 5666c | ✓ |
-| 5081 | `019f3ac8-397d-7b63-8663-ec0908a8d08b` | rising-action | He asks if AshgraveMaterials will guarantee that the wo… | 8/confrontation +subplot | 6291c | ✓ |
-| 5082 | `019f3ac8-397d-75dc-9826-31380555311f` | scene-break | She sees the lake far below, the Gray Zone beyond, the … | 6/vigil | 4866c | ✓ |
-| 5083 | `019f3ac8-397d-793d-b34d-8f9c4c20143d` | rising-action | Forty-one households vote on the descent and the salvag… | 9/ceremony | 4837c | ✓ |
-| 5084 | `019f3ac8-397d-79aa-9508-70cef45e6964` | rising-action | Her allocation tips the payout large enough for Priya's… | 9/discovery | 4266c | ✓ |
-| 5085 | `019f3ac8-397d-79ca-a9e8-0f755bb8f7fc` | climax | She finds Dagny in her quarters and thanks her. Dagny t… | 8/exchange | 4685c | ✓ |
-| 5086 | `019f3ac8-397e-76e6-a3e7-0452f331ee17` | denouement | The descent is scheduled. The households have thirty da… | 7/inventory | 4716c | ✓ |
-| 5087 | `019f3ac8-397e-7e89-84b6-9711ec43940e` | scene-break | The lathes are bolted to the floor. In four weeks, they… | 9/loss +subplot | 5011c | ✓ |
-| 5088 | `019f3ac8-397e-7f44-8ed6-52c6c9b5d0ad` | denouement | The eigenlift frame loses coherence at 320 meters. The … | 10/descent +intertextual-touchpoint | 4773c | ✓ |
+- B01 · Teo at the eigenlift core — The frame's coherence is failing; the numbers say jettison starts in forty-two days. Teo reads the stress distribution and marks the first load-bearing wall as candidate for cut.
+- B02 · Teo walks Candelaria's spine — Forty-one households stacked in a cylinder that was never meant to last sixty years. She knows which walls carry which lives and which lives can be moved if the walls go.
+- B03 · Ruslan's offer arrives in writing — AshgraveMaterials will purchase the bloc's structural mass, fund relocation to a ground-tier residential block, and distribute proceeds. The math is clean. The offer is real.
+- B04 · Sigrun calls the household meeting — The chair announces the descent schedule and the salvage offer in the same breath. Forty-one people in the common space. No one speaks first.
+- B05 · Priya's hand goes up — Her daughter Kaja needs neuretics integration; the fund is Φ8,400 short. Ruslan's offer would close it. She asks the room if anyone else is counting the same shortfall.
+- B06 · Wen's refusal is not a question — Household 23 has his grandfather's workshop bolted to the floor: lathes, dies, jigs that took thirty years to calibrate. He votes no. He does not explain why the workshop cannot move.
+- B07 · Teo calculates Priya's allocation — Her household's mass is modest; her jettison quota is Φ2,100 in goods. Not enough to fund Kaja's neuretics alone. She would need the vote to pass and Ruslan's payout.
+- B08 · Teo calculates Wen's allocation — His workshop is bolted mass; it counts as household fixture, not jettison-eligible. But if the bloc votes to descend, AshgraveMaterials will strip it and recycle it. Wen knows this. He votes no anyway.
+- B09 · Teo in her quarters — The ledger is open on her desk. Two columns: stay and descend. The math is identical; only the outcome changes. She understands that her job is to make the outcome seem inevitable.
+- B10 · Sigrun asks Teo to project the vote — She wants to know what the math predicts before the households decide. Teo refuses. She tells her that her ledger is not a crystal ball; it is a jettison schedule.
+- B11 · Dagny Obuya does not attend the second meeting — She is eighty-one and has lived in Household 12 for forty years. She sends word that she has no position on the offer. She will abide by the vote.
+- B12 · Priya visits Teo at the eigenlift core — She asks what Teo would do in her place, with a daughter and a shortfall and a sinking bloc. Teo tells her the question is not hers to answer, and does not answer it.
+- B13 · Wen brings his grandfather's jigs to the common space — He sets them on the table where the vote will happen. He tells the room that these are forty years of calibration and that AshgraveMaterials will melt them. He votes no.
+- B14 · Ruslan visits the bloc — He walks the spine with Teo and Sigrun. He points out the eigenlift frame's degradation. He says the offer is not negotiable, but it is not permanent either; in six weeks, the descent will be forced, and there will be no payout—only the cost of emergency relocation.
+- B15 · Sigrun's position breaks — She tells the households that she cannot vote yes or no; she will abstain and let the majority decide. She asks Teo if that is cowardice. She tells her that abstention is a vote; it just does not sound like one.
+- B16 · Priya in her kitchen — Kaja is at school. Priya looks at the neuretics fund balance on her wrist display: Φ8,400 short. She does not touch the number. She knows that touching it will not change it.
+- B17 · Wen's grandson visits from the Gray Zone — He tells Wen that the workshop is a beautiful thing but it is not worth staying in a bloc that is sinking. Wen tells him that the workshop is the only thing that is worth staying for.
+- B18 · Teo recalculates the jettison ledger with Ruslan's offer as context — If the vote is yes, Priya's household receives Φ3,200 from the payout; if the vote is no, she receives nothing and stays in a bloc that will force-descend in six weeks with no salvage proceeds. The arithmetic is not ambiguous.
+- B19 · Dagny's allocation is the hinge — She owns more mass than any other household: forty years of books, photographs, furniture. Her jettison quota is Φ4,800. If she votes yes, the payout is distributed across forty-one households and Priya's shortfall closes. If she votes no, the payout shrinks and Priya's daughter does not get her neuretics.
+- B20 · Teo visits Dagny in Household 12 — The room is full of objects: books on every wall, photographs in frames, a bed that has been in the same place for four decades. She asks her what she wants to do. She tells him that she wants the question to not exist.
+- B21 · Sigrun calls the final household meeting — The vote is scheduled for three days hence. She reads Ruslan's offer again, word for word. She asks if anyone has questions. No one does.
+- B22 · Priya approaches Dagny in the common space — She does not ask for her vote. She tells Dagny that her daughter needs the neuretics and that Dagny's allocation is the only thing that makes the payout large enough. Dagny listens and does not respond.
+- B23 · Wen confronts Ruslan at the bloc entrance — He asks if AshgraveMaterials will guarantee that the workshop jigs are recycled and not melted. Ruslan tells him that recycling and melting are the same process. Wen asks if he is being cruel. Ruslan says he is being honest.
+- B24 · Teo walks the bloc's outer ring at dawn — She sees the lake far below, the Gray Zone beyond, the Spires in the distance. The bloc is still buoyant. In six weeks, it will not be. She understands that her job is not to save it; it is to calculate what reaches the ground.
+- B25 · The vote happens — Forty-one households vote on the descent and the salvage offer. The tally is twenty-three yes, seventeen no, one abstention. Sigrun's abstention does not change the outcome. The vote passes.
+- B26 · Dagny votes yes — Her allocation tips the payout large enough for Priya's daughter to receive her neuretics. Dagny does not explain. She votes and walks back to Household 12.
+- B27 · Priya learns that Dagny voted yes — She finds Dagny in her quarters and thanks her. Dagny tells her that she did not vote for her daughter; she voted because the bloc is sinking and the vote is real. Priya asks if there is a difference. Dagny does not answer.
+- B28 · Teo finalizes the jettison ledger — The descent is scheduled. The households have thirty days to pack. AshgraveMaterials will strip the bloc's structural mass and distribute the proceeds. The eigenlift frame will fail on schedule. The bloc will land.
+- B29 · Wen in his workshop — The lathes are bolted to the floor. In four weeks, they will be cut loose and recycled. He runs his hands over the calibration marks and understands that the workshop has already left. He is just the last thing to go.
+- B30 · Aerobloc Candelaria descends — The eigenlift frame loses coherence at 320 meters. The descent is controlled. The households are relocated. The vote was real. The cost was real. The bloc reaches the ground.

@@ -1,4 +1,4 @@
----
+﻿---
 codex: 1
 project: StreetSamurai
 code: RTR
@@ -23,10 +23,10 @@ A heist-in-reverse thriller with a psychic B-plot. Fenris, a three-piece noise-r
 band out of the Pilsen corridor, celebrates a good show in their green room at the Velvet Tine
 (Milwaukee, The Low, Zone 4-adjacent). Their usual supplier, Dayo Ferreira, arrives with
 compounds and company — among them Faith Larson, a 24-year-old Milwaukee bakery worker who
-was at the barrier for the whole set and doesn't yet know she is a Read (a natural psionic receptor). Faith takes Candor (empathy
-amplifier), which unlocks her ability at full aperture. She picks up the hostile surface
-thoughts of a robbery crew prepping to breach. She pulls Ethan Wolfe, Fenris's lead vocalist,
-out the bathroom window seconds before the breach.
+was at the barrier for the whole set and doesn't yet know she is a Read (a natural psionic receptor).
+Faith takes Candor (empathy amplifier), which unlocks her ability at full aperture. She picks up
+the hostile surface thoughts of a robbery crew prepping to breach. She pulls Ethan Wolfe, Fenris's
+lead vocalist, out the bathroom window seconds before the breach.
 
 What follows is a two-thread story: Faith and Ethan running through Milwaukee's Low while she
 narrates the crew's minds; Mona Dominique (bassist, band manager, Ethan's sometimes-lover)
@@ -135,9 +135,9 @@ Ethan knows what she is.
 White Hispanic (Spanish-European descent), mid-thirties. Silver-templed close-cropped hair.
 Slim, post-show disheveled. Carries genemod wolf fangs — the lateral incisors replaced with
 tapered canine geometry, quality work that has always looked like it was there.
-His stage presence is intensity without aggression: he holds still
-and the room leans in. Offstage he's quieter than people expect, the kind of quiet that comes
-from having spent too much on three hours of performance.
+His stage presence is intensity without aggression: he holds still and the room leans in.
+Offstage he's quieter than people expect, the kind of quiet that comes from having spent too
+much on three hours of performance.
 
 **Arc:** Self-identified soloist in a band → the man who goes back for his people → the man
 who finally finishes the song.
@@ -291,53 +291,15 @@ sees. She goes out. Three months later: front row, blonde bob, she already knew 
 
 ---
 
-## 6. Structural Blueprint {#SS-RTR-6}
-
-**Thematically-parallel subplot** — Faith's discovery of her ability mirrors Ethan's discovery
-that the song's last line is not what he thought. Both involve seeing a truth that was present
-all along and choosing not to look away.
-
-**Temporal scheme** — linear, tight. The story covers approximately 2 hours of real time
-(post-show through the aftermath). The epilogue skips three months.
-
-**Resolution mode** — external/behavioral. Koss is stopped physically. Faith lives. Ethan
-finishes the song. Not internal-understanding; character change is demonstrated through
-action, not named.
-
-**Moral polarity** — ambivalent default. Dayo is not a villain. Koss is not a monster. The
-economics that produce both of them are present but not editorialized.
-
-**Escalation curve** — continuous, with one hard break at Beat 10 (the decision point).
-Before Beat 10: threat escalating. After Beat 10: Ethan in motion, escalating toward climax.
-Beat 13 is the peak.
-
-**Event-type palette** — survival, concealment, confrontation, revelation (Faith's ability),
-sacrifice (qualified — she moves into the line but it's a mistake, not a choice).
-
-**Resolution** — the weapon ladder reads as genre but the emotional payoff is the song.
-The shot is not the climax; the conversation on the floor is.
-
-**Ending style** — the crash, then quiet, then the three-month jump. No epilogue speech.
-Front row. She's fine. The words.
-
-**Intertextual anchors** —
-1. *Die Hard* — the weapon-ladder logic, the ordinary man improvising up through a situation.
-2. *Grosse Pointe Blank* — the music-world party invaded by professional violence.
-3. *The Long Kiss Goodnight* — the person who doesn't know what they are until they need to be.
-4. *Ghost* — the uncanny intimacy of someone who knows what you're thinking.
-5. *True Lies* — the high-genre action held together by a two-person dynamic.
-
----
-
 ## 7. Entity Seeds {#SS-RTR-7}
 
-New entities to seed before prose:
-- `faith_osei_larsson` (character) — see tools/rdrm-faith.json
-- `dayo_ferreira` (character) — see tools/rdrm-dayo.json
-- `koss_mirkovic` (character) — see tools/rdrm-koss.json
-- `rill_nakashima` (character) — see tools/rdrm-rill.json
-- `nkechi_eze` (character) — see tools/rdrm-nkechi.json
-- `velvet_tine` (place) — see tools/rdrm-velvet-tine.json
+New entities to seed before prose (may already be seeded as story is COMPLETE):
+- `faith_larson` (character) — visual lock: Jennifer Sky/Cleo; small, blonde bob; Read; no neuretics
+- `dayo_ferreira` (character)
+- `koss_mirkovic` (character)
+- `rill_nakashima` (character)
+- `nkechi_eze` (character)
+- `velvet_tine` (place)
 
 Existing entities already in DB:
 - `ethan_wolfe` (019ECE26-BA4F-76CD-910D-E247E421B8E6)
@@ -381,57 +343,58 @@ See [SS-LAW-28](../BIBLE.md#SS-§5).
 
 | Item | Brand / Model | Notes |
 |---|---|---|
-| Apparel | Gray zone reclaim — Milwaukee dive bar working clothes | He's embedded in the scene; he dresses to disappear into it |
-| Weapon | Assign during prose generation | Ethan is not primarily a combatant; if armed, it should be understated |
+| Apparel | Gray zone reclaim — Milwaukee dive bar working clothes | Embedded in the scene; dresses to disappear into it |
+| Weapon | Fenris Ballistics Howl FB-7 Wolfpack combat shotgun | Found at the Tine bar; he does not own it |
 
 ### Faith Larson — Canonical Loadout
 
 | Item | Brand / Model | Notes |
 |---|---|---|
-| Apparel | **Rotates scene to scene** — small, blonde, functional; clothing is signal not fashion | Faith's wardrobe reads her role: nothing flashy, nothing corpo. What she's wearing tells you what she's doing. |
-| No neuretics | Faith is a Read (psionic) — no neuretics (SS-LAW-25 adjacent; Reads perceive schema) | She does NOT auto-identify brands via overlay; she reads people the old way |
-
-### Fenris Band — Setting Brands
-
-The band's gear should have specific brand names when described:
-- Instruments: assign at prose time (no existing band equipment entities seeded)
-- Sound system: gray zone reclaim or Border Market licensed; nothing archology-tier
-- Milwaukee dive bar setting: Ringo-adjacent food/drink suppliers; CramIt in the back; whatever's on tap has a name
+| Apparel | Functional, non-flashy; what she was wearing to a show | Clothing is signal not fashion |
+| No neuretics | Faith is a Read (psionic) — no neuretics | She does NOT auto-identify brands via overlay; reads people the old way |
 
 ### Setting Brand Environment
 
 RTR is set in Milwaukee dive bars and gray zone venues — low-tier, music-first, no corpo polish.
 
-- **No neural advertising** at this tier; the bar's walls are physical, not overlay-enabled; the brands here are physical labels on bottles and hand-painted signage
-- **The absence of overlay advertising** is part of the setting's appeal; people come here precisely because their neuretics stop being bombarded
-- **Faith's brand-blindness** (no neuretics = no auto-ID) makes her read people differently than everyone else in the room; she is the only person who cannot see the label on Ethan's jacket
+- No neural advertising at this tier; the bar's walls are physical, not overlay-enabled
+- The absence of overlay advertising is part of the setting's appeal
+- Faith's brand-blindness (no neuretics = no auto-ID) makes her read people differently than everyone else in the room
 
-## Beat Coordination Index {#SS-RTR-COORD}
+<!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->
 
-> GENERATED by `ss --coordinate --slug <slug>`. Do not hand-edit — regenerated
-> on demand. This is the three-coordinate map: each beat's **meaning** (bible),
-> **construction** (blueprint), and **prose** (DB) correlated by beat ID + number.
-> Full record: `reports/coordination/RTR.coordination.json`.
+## Structural Blueprint
+<!-- generated 2026-07-15T15:11:32.7665020Z from NodeStructuralBlueprints — edit via ss --generate-blueprint -->
 
-**Coverage:** 14/14 beats fully covered. Story-wide construction: temporal=linear, resolution=external, moral=ambivalent, ending=avalanche, granularity=beat.
+- **Subplot**: Dayo Ferreira — the drug dealer who brought Candor into the room — spends most of the story unconscious under Mona's hands, his survival dependent on her keeping pressure on his wound. His body is the site where the question of what Candor actually does gets answered in flesh rather than theory: the substance that 'turned the volume up on the people' for Faith is the same substance bleeding out of him while Mona plays dead. His helplessness mirrors Faith's unwilled openness — both are bodies doing something they didn't choose.
+- **Temporal scheme**: linear
+- **Resolution**: external
+- **Moral polarity**: ambivalent
+- **Ending**: avalanche, no epilogue
+- **Form device**: inventory-as-narrative
+- **Escalation**: 14-beat arc, peak 10/10 at beat 13
+- **Intertextual anchors**:
+  - **Wren Caerglas** (quote) — A fragment of Caerglas's writing appears chalked or stickered on the green room wall behind the chain lamp — something about the body continuing to run after the road ends — which Ethan's eye finds in beat 0 while the shaking finishes; it names what he cannot.
+  - **Cathe** (quote) — In beat 2, when Faith peels the Candor tab off the paper without ceremony, Nkechi quotes Cathe under her breath — something about the volume already being too high — which lands as a joke and is not taken as one.
+  - **Soren Rowe** (quote) — In beat 7, when Faith tries to explain what she heard and the easy answer dies in her mouth, she reaches for a phrase she half-remembers from a Soren Rowe essay — something about the difference between feeling a room and being inside it — and finds it fits better than anything she has of her own.
+  - **Dame Lyra** (quote) — In beat 8, as Mona holds pressure on Dayo's wound and watches the Fade mist come down, a Dame Lyra lyric surfaces in her head — one she knows from a Fenris set, something about borrowed narrative — because the mist is doing exactly what the song described and she has nothing else to think.
+  - **Soren Rowe** (quote) — In beat 13, the narration brushes against a Rowe line about the aperture that pain opens — not quoted directly, but the metaphor of the shutter jammed open echoes it closely enough that a reader who knows the source feels the pressure of it.
 
-**Gap counts:** UNSCORED=8
+## Beat Spine
+<!-- generated 2026-07-15T15:11:32.7665020Z from Beats table — edit via MCP beat tools -->
 
 ### Read the Room
-
-| # | Beat ID | Role | Meaning | Constr (esc/event) | Prose | Flags |
-|---|---------|------|---------|--------------------|-------|-------|
-| 5199 | `019f4991-c549-7d5d-b3b1-3d7de46e789b` | — | Establishes Ethan's world and its textures — the AR-fre… | 2/arrival +intertextual-touchpoint | 6021c | UNSCORED |
-| 5198 | `019f4991-b781-79f0-8237-ed8af217cf2a` | — | Introduces Dayo and his associates to populate the gree… | 3/exchange +subplot | 7190c | UNSCORED |
-| 5197 | `019f4991-a9d8-7d23-b7d2-953bb0d5b377` | — | Presents the night's substances as character choices, l… | 4/ceremony +subplot,intertextual-touchpoint | 6349c | ✓ |
-| 5196 | `019f4991-9c16-7729-ad91-7b1444febeaf` | — | Reveals the Candor is doing something stranger to Faith… | 5/discovery | 6820c | UNSCORED |
-| 5195 | `019f4991-8e4f-746f-b96b-8244381c9a99` | — | Turns Faith from passive observer to active threat-read… | 6/vigil | 10797c | ✓ |
-| 5194 | `019f4991-8086-7bc4-83bb-a9127ea14106` | — | Pays off Faith's threat assessment by launching the esc… | 7/escape | 6201c | UNSCORED |
-| 5193 | `019f4991-72b3-7b5b-a7aa-e1ffa1727fdc` | — | Escalates Ethan's dawning awareness that Faith's naviga… | 7/chase | 8153c | UNSCORED |
-| 5192 | `019f4991-64f7-7546-a175-9c325a796902` | — | Forces Faith to abandon her cover story and name her ab… | 8/confession +intertextual-touchpoint | 7440c | ✓ |
-| 5191 | `019f4991-5727-7bb7-beff-51333192309b` | — | Reveals the cost of the raid through Dayo's wound and M… | 7/loss +subplot,intertextual-touchpoint | 7532c | ✓ |
-| 5190 | `019f4991-4958-7316-9bed-5b7b7cc368b9` | — | Delivers Ethan's emotional reckoning with Mona's surviv… | 8/negotiation | 6968c | UNSCORED |
-| 5189 | `019f4991-3b8b-73bb-be26-c9cf2fc2165e` | — | Establishes Faith's unspoken telepathic link with Ethan… | 9/approach | 7972c | UNSCORED |
-| 5188 | `019f4991-2dab-704c-87b8-fc622279fbcd` | — | Reveals Faith's power as moral intelligence, distinguis… | 9/reconnaissance +subplot | 7280c | UNSCORED |
-| 5187 | `019f4991-1fbe-784f-92fb-e0e08f1bec14` | — | Turns the scene's power dynamic by showing Koss has alr… | 10/confrontation | 7037c | ✓ |
-| 5186 | `019f4991-113a-72e9-99a6-894ef84fa22f` | — | Pays off Faith's empathic ability as vulnerability rath… | 10/wound +subplot,intertextual-touchpoint | 7409c | ✓ |
+- B01 · The Weight of a Good Show — Establishes Ethan's world and its textures — the AR-free green room, the post-performance crash, the band's quiet rhythms — grounding the reader in a specific milieu before pressure arrives.
+- B02 · What Dayo Brings — Introduces Dayo and his associates to populate the green room with distinct social weights, signaling the layered trust economy the band operates within.
+- B03 · Candor — Presents the night's substances as character choices, letting each person's relationship to risk and sensation define them before the plot demands anything of them.
+- B04 · Stray Thought — Reveals the Candor is doing something stranger to Faith than advertised, seeding the reader's suspicion that her perception exceeds chemical explanation.
+- B05 · The Bathroom — Turns Faith from passive observer to active threat-reader, escalating stakes by revealing four hostile presences and forcing her to choose who to save first.
+- B06 · Out the Window; The Breach — Pays off Faith's threat assessment by launching the escape, converting the green room's safety into danger and testing whether her perception holds under physical pressure.
+- B07 · The Chase — Escalates Ethan's dawning awareness that Faith's navigation is not luck, planting the question of her true nature as the chase strips away every other distraction.
+- B08 · What Are You — Forces Faith to abandon her cover story and name her ability aloud for the first time, turning the beat on mutual vulnerability rather than explanation.
+- B09 · Mona Plays Dead — Reveals the cost of the raid through Dayo's wound and Mona's stillness, anchoring the escape's adrenaline in concrete loss and Faith's instinctive, embodied competence.
+- B10 · The Call — Delivers Ethan's emotional reckoning with Mona's survival and Dayo's fate through restrained listening, showing grief and relief arriving simultaneously without release.
+- B11 · The Approach — Establishes Faith's unspoken telepathic link with Ethan as a functional, intimate shorthand, reframing her ability from threat to partnership.
+- B12 · The Inside Pass — Reveals Faith's power as moral intelligence, distinguishing between men who can be reasoned with and dangers that must be avoided, building tactical trust between her and Ethan.
+- B13 · Koss — Turns the scene's power dynamic by showing Koss has already outmaneuvered Ethan geometrically, escalating stakes while Mona's silent look pays off four years of suppressed feeling.
+- B14 · The Ending — Pays off Faith's empathic ability as vulnerability rather than weapon, while exposing Ethan's guilt and helplessness to strip him of professional composure at his most human moment.

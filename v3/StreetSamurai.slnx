@@ -1,13 +1,12 @@
 <Solution>
   <!-- Dev-only: lets Visual Studio resolve the Debug-conditional source ProjectReference in
        StreetSamurai.Core (the MA_DEV_AUTH bypass). Release/CI build the .csproj directly and never
-       read this .slnx, so isolation is preserved — Release still binds the NuGet package. -->
+       read this .slnx, so isolation is preserved — Release still binds the NuGet package.
+       Writer and Codex are excluded here — use StreetSamurai.Deploy.slnx for those. -->
   <Project Path="../../MindAttic.Authentication/src/MindAttic.Authentication/MindAttic.Authentication.csproj" />
-  <Project Path="StreetSamurai.Codex/StreetSamurai.Codex.csproj" />
   <Project Path="StreetSamurai.Core/StreetSamurai.Core.csproj" />
   <Project Path="StreetSamurai.Mcp/StreetSamurai.Mcp.csproj" />
   <Project Path="StreetSamurai.Shared/StreetSamurai.Shared.csproj" />
   <Project Path="StreetSamurai.UiUx/StreetSamurai.UiUx.csproj" />
   <Project Path="StreetSamurai.UnitTests/StreetSamurai.UnitTests.csproj" />
-  <Project Path="StreetSamurai.Writer/StreetSamurai.Writer.csproj" />
 </Solution>
