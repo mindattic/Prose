@@ -132,7 +132,7 @@ public class WorldGraphService : IWorldGraphService
     {
         try
         {
-            var graphPath = Path.Combine(paths.GraphDir, "world_graph.json");
+            var graphPath = Path.Combine(paths.GraphDir, GraphFileName());
             if (!File.Exists(graphPath)) return true;
             var graphTime = File.GetLastWriteTimeUtc(graphPath);
 
@@ -854,6 +854,25 @@ public class WorldGraphService : IWorldGraphService
 
     // ── Persistence ─────────────────────────────────────────
 
+    /// <summary>
+    /// Per-universe cache filename. The world graph is universe-scoped at build time
+    /// (SS-LAW-15) — a single shared <c>world_graph.json</c> was clobbered on every
+    /// universe switch, dropping the other universe's nodes. Key the file on the
+    /// scoped universe slug so each universe keeps its own cache side-by-side:
+    /// <c>glmz_universe_graph.json</c>, <c>scry_universe_graph.json</c>, …
+    /// Falls back to the universe id (or "world" when unscoped) if no slug is available.
+    /// </summary>
+    private string GraphFileName()
+    {
+        var slug = UniverseScope.Current?.CurrentSlug;
+        if (string.IsNullOrWhiteSpace(slug))
+        {
+            var id = UniverseScope.EffectiveId;
+            slug = id == Guid.Empty ? "world" : "u-" + id.ToString("N")[..8];
+        }
+        return $"{slug}_universe_graph.json";
+    }
+
     public void Save()
     {
         var snapshot = new GraphSnapshot
@@ -872,7 +891,7 @@ public class WorldGraphService : IWorldGraphService
             try
             {
                 var json = JsonSerializer.Serialize(snapshot, JsonDefaults.Indented);
-                File.WriteAllText(Path.Combine(paths.GraphDir, "world_graph.json"), json);
+                File.WriteAllText(Path.Combine(paths.GraphDir, GraphFileName()), json);
             }
             catch (Exception ex) { error = ex; }
         }, maxStackSize: 16 * 1024 * 1024);
@@ -883,7 +902,7 @@ public class WorldGraphService : IWorldGraphService
         // source of truth; the in-memory graph is already populated.
         if (error is UnauthorizedAccessException || error is IOException)
         {
-            Serilog.Log.Debug(error, "world_graph.json cache write failed — continuing with in-memory graph");
+            Serilog.Log.Debug(error, "universe graph cache write failed — continuing with in-memory graph");
             return;
         }
         if (error != null) throw error;
@@ -891,7 +910,7 @@ public class WorldGraphService : IWorldGraphService
 
     public void Load()
     {
-        var path = Path.Combine(paths.GraphDir, "world_graph.json");
+        var path = Path.Combine(paths.GraphDir, GraphFileName());
         if (!File.Exists(path)) return;
 
         GraphSnapshot? snapshot = null;

@@ -554,6 +554,19 @@ The power earns its keep by escalating and by costing. Recommended deployment:
 > — the Warrior King's — whose Champion Vaen is dispatched separately as the operation's backstop.
 > The two Houses cooperate at Caer Glas Moor; they are not the same House. The claim is Calyx's;
 > Vaen is Pallor's.
+>
+> **LOCK — the Blink Thieves are Loera-tradecraft mercenaries; the Relic is delivered TO Calyx {#SS-VIGL-2-loera-lock}:**
+> The crew are **hired Loera-trained operatives — mercenaries, not a House retinue.** Their tie to
+> Calyx is the **contract**, not loyalty: Calyx lost the Relic in the Battle of Nine Days at Caer
+> Glas Moor (the Champion fell; the Relic passed out of Calyx custody — the basis of its Year-972
+> claim), and Calyx has now **hired the crew to retrieve it and deliver it back.** Their *tradecraft,
+> discipline, training, boot-craft, and the tracks they leave* are **LOERA** — the blink/fold is a
+> Loera thieving-arts tradition (§2c) — and they exfiltrate south toward the Loera coast (Sal Vento),
+> never north onto the Pallor moor. **PALLOR** describes only the northland warrior culture (Vaen,
+> the Champions, the moor-hounds, the Long Seat) and must **never** describe the crew's discipline,
+> tracks, or trade. Any prose reading "Pallor discipline / boot-prints / thieves" for the crew is a
+> defect (registered as a noun-consistency rule). Cathe, the crewman the Keeper kills in Ch.1, is a
+> Loera-disciplined merc like the rest.
 
 ### Canon Immaculate Tomasz Prelacze {#SS-VIGL-2a}
 - **Role:** Liturgy Canon — Lyra's institutional chain of command. He outranks her. When he
@@ -1703,13 +1716,24 @@ and adjusts her grip. A Champion is a person who became something that isn't qui
 anymore in any ordinary sense. Lyra watched her. Lyra has three infusions. She has not
 decided what she thinks about that. The story ends before she has to.
 
-**The Relic — Oculus Memoriae:**
+**The Relic — Oculus Lacrimans Memoriae (the Weeping Eye of Memory):**
+- **Name LOCK {#SS-VIGL-relic-name}:** the Relic's formal name is **Oculus Lacrimans Memoriae** —
+  "the Weeping Eye of Memory." Short forms *the Oculus* / *the Weeping Eye* are fine in prose;
+  the old bare "Oculus Memoriae" is deprecated (noun-consistency rule registered). The name is
+  literal: it weeps.
+- **What it IS {#SS-VIGL-relic-wound}:** not a pulled object but an **open wound in the Caul into
+  the Amnios** — a Scry that never closed, a lesion held open (see the Amnios/cell cosmology). It
+  is one of **two termini** of a channel whose other end is at **Sinter**.
+- **It weeps two things:** **gold**, bleeding from the open Amnios (the intercellular medium); and
+  **black**, Sinterspawn particulate migrating along the channel between the two points — Sinter at
+  one end, the Oculus at the other, sealed in its protective lined box. The black is why the box is
+  lined; the gold is why it is never dry.
 - A lens, roughly palm-sized, that shows the past state of any location it has been at —
   and, unlike an ordinary scry (§4), does not lose the image when the looking ends. It retains
   (§6b).
 - It has been at Ocipheus Station since Year 397 — 741 unbroken years of the Sinter crater as
   one continuous memory, and older, unexplained frames beneath that count (§6b, §9b).
-- It has been at every location the Pallor thieves carried it through.
+- It has been at every location the Blink Thieves carried it through.
 - It shows images in the same mode as Orim's scrying — translucent, wet-edged, thermally
   warm from recent viewings. Because it IS membrane contact — accumulated and kept, not merely
   seen.

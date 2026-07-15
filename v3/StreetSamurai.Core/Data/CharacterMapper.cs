@@ -322,9 +322,14 @@ public static class CharacterMapper
                 when (ex.InnerException is Microsoft.Data.SqlClient.SqlException sql
                       && (sql.Number == 2627 || sql.Number == 2601))
             {
-                // Another concurrent request inserted first — clear and update instead.
+                // Another writer inserted first — clear and update instead. The re-query is
+                // universe-filtered: if the colliding row belongs to a different universe
+                // (a shared CharacterId PK across universes), it is invisible here and the
+                // read-model cache simply isn't refreshed this pass — never throw from a
+                // best-effort cache backfill (SS-LAW-15). The row is regenerable next read.
                 db.ChangeTracker.Clear();
-                existing = db.CharacterReadModels.First(r => r.CharacterId == id);
+                existing = db.CharacterReadModels.FirstOrDefault(r => r.CharacterId == id);
+                if (existing == null) return;
                 existing.Json = json;
                 existing.Version = ReadModelVersion;
                 existing.RefreshedAt = DateTime.UtcNow;

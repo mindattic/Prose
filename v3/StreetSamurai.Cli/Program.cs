@@ -27,8 +27,9 @@ QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 // here before the dispatch chain so every CLI block + the web host inherit it.
 UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
 
-// CLI mode: dotnet run --project ... -- --rebuild-graph
-// Rebuilds world_graph.json from source data without starting the web server.
+// CLI mode: dotnet run --project ... -- --rebuild-graph [--universe <slug>]
+// Rebuilds the scoped universe's <slug>_universe_graph.json cache from source data
+// without starting the web server. One universe per invocation (scope is pinned below).
 if (args.Contains("--rebuild-graph"))
 {
     var sp = BuildCoreServices(args);
@@ -41,7 +42,7 @@ if (args.Contains("--rebuild-graph"))
     var graph = sp.GetRequiredService<WorldGraphService>();
     Console.WriteLine("[rebuild-graph] Rebuilding world graph from source data...");
     graph.Rebuild();
-    Console.WriteLine($"[rebuild-graph] Done: {graph.NodeCount} nodes, {graph.EdgeCount} edges saved to world_graph.json");
+    Console.WriteLine($"[rebuild-graph] Done: {graph.NodeCount} nodes, {graph.EdgeCount} edges saved to {cliUniverse.CurrentSlug}_universe_graph.json");
     return;
 }
 

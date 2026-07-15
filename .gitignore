@@ -63,3 +63,9 @@ v3/ml/artifacts/
 
 # scratch logs
 *.log
+
+# World graph is a regenerable per-universe cache derived from SQL (the source of
+# truth, SS-LAW-1). Rebuilt on demand via `ss --rebuild-graph --universe <slug>`;
+# not tracked — it churned tens of thousands of lines per universe switch.
+engine/data/graph/*_universe_graph.json
+engine/data/graph/world_graph.json
