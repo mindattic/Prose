@@ -29,6 +29,7 @@ public class NodeTools
     private readonly DocxExportService docxExport;
     private readonly NodeSpineService spine;
     private readonly AudiblePackageService audible;
+    private readonly NodeDocService nodeDoc;
 
     public NodeTools(
         NodeWorkbenchService workbench,
@@ -39,7 +40,8 @@ public class NodeTools
         BeatRebuildService rebuilder,
         DocxExportService docxExport,
         NodeSpineService spine,
-        AudiblePackageService audible)
+        AudiblePackageService audible,
+        NodeDocService nodeDoc)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
@@ -50,6 +52,7 @@ public class NodeTools
         this.docxExport = docxExport;
         this.spine = spine;
         this.audible = audible;
+        this.nodeDoc = nodeDoc;
     }
 
     [McpServerTool, Description("Create a SeriesNode — the top-level grouping (saga / anthology) that StoryNodes hang under. Never holds beats. Returns the new id, slug, and URL.")]
@@ -626,6 +629,32 @@ public class NodeTools
         await db.SaveChangesAsync();
 
         return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, cleared = string.IsNullOrEmpty(bibleText) }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Assemble the unified Story Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. Run this before editing a story to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.")]
+    public async Task<string> GenerateNodeDoc(
+        [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug)
+    {
+        var node = await ResolveNodeAsync(nodeIdOrSlug);
+        if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+
+        try
+        {
+            var result = await nodeDoc.GenerateAsync(node.Id);
+            return JsonSerializer.Serialize(new
+            {
+                ok           = true,
+                node_code    = result.NodeCode,
+                beat_count   = result.BeatCount,
+                has_blueprint = result.HasBlueprint,
+                path         = result.Path,
+                generated_at = result.GeneratedAt,
+            }, CanonTools.JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = "generation_failed", message = ex.Message }, CanonTools.JsonOpts);
+        }
     }
 
     /// <summary>Copy-edit a node's prose in-place: proper paragraph/dialogue spacing, "?" on questions, "asks"/"asked" on question dialogue. Dry-run by default — pass apply=true to commit. Returns a report of what changed, was rejected, or errored.</summary>

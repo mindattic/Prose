@@ -59,19 +59,33 @@ What it means in practice:
 
 ## Per-Node Documentation (SS-A11)
 
-Every story node with active prose has its own standalone bible at `docs/nodes/<CODE>.md`.
+Every story node with active prose has a **unified Story Context Document** stored in
+`Nodes.NodeBible` (DB) and mirrored to `docs/nodes/<CODE>.md` (generated read-only file).
 
-**When working on a specific node:** read `docs/nodes/<CODE>.md` before generating prose.
-Do not rely on BIBLE.md alone for story-specific rules — it has engine laws, not story arc.
+**NEVER hand-edit `docs/nodes/<CODE>.md`.** It is a generated artifact — edits are overwritten
+the next time `generate_node_doc` runs.
 
-| Location | Contains |
-|---|---|
-| `docs/BIBLE.md` | Universe laws, architecture, engine invariants — no per-story arc |
-| `docs/nodes/<CODE>.md` | Story arc, beat spine, character rules, locks, user stories |
-| `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) |
-| `docs/USER_STORIES.md` | Epic index + acceptance criteria |
+| Location | Contains | How to edit |
+|---|---|---|
+| `docs/BIBLE.md` | Universe laws, architecture, engine invariants — no per-story arc | Hand-edit directly |
+| `Nodes.NodeBible` (DB) | **The single source of truth for that story** — arc, characters, voice, locks, blueprint, beat spine | `set_story_bible` MCP (hand-authored sections) |
+| `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — never edit this file | Re-run `generate_node_doc` to refresh |
+| `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
+| `docs/USER_STORIES.md` | Epic index + acceptance criteria | Hand-edit directly |
 
-Node bibles are **loaded on demand**, not injected at session start. Load only what you need.
+**Workflow:**
+
+1. **Before editing a story** — call `generate_node_doc` MCP (or `ss --generate-node-doc --slug X`)
+   to refresh the file from DB. The generated file is what DocContextService injects into prose
+   prompts; a stale file means stale context.
+2. **To update arc, characters, voice register, or narrative locks** — call `set_story_bible` MCP
+   with updated hand-authored markdown. Then re-run `generate_node_doc` to regenerate the file.
+3. **Blueprint and beat spine sections are always generated** — edit their sources:
+   `ss --generate-blueprint` for the blueprint, MCP beat tools for beat titles/goals.
+4. **After any `generate_node_doc` run** — run `ss --sync-markdown` to sync the updated file to the
+   `MarkdownFiles` table so DocContextService picks it up in prose prompts.
+
+Node context is **loaded on demand**, not injected at session start. Load only what you need.
 
 **Existing node bibles:**
 - `docs/nodes/PXL.md` — Pixel / PXL (Pixel origin story, GLMZ; formerly PNHL/TDIU; Channeler+Ghost+Splicer; Detroit escape opening)
@@ -97,8 +111,9 @@ The project follows the **MindAttic Codex** documentation standard. The source o
   and all world-building facts (engine invariants + GLMZ universe canon). **This is the single
   authoritative source.** When in doubt, this wins. It supersedes the old `ARCHITECTURE.md`
   (now a pointer). The Laws inherit `D:/Projects/MindAttic/MindAttic.HouseRules.md`.
-- **`docs/nodes/<CODE>.md`** (L0, per-story) — story arc, beat spine, character rules, locks.
-  **The single source of truth for that StoryNode.** All story-specific facts live here.
+- **`Nodes.NodeBible`** (DB, L0 per-story) — story arc, beat spine, character rules, locks,
+  voice register, structural blueprint. **The single source of truth for that StoryNode.**
+  Mirrored to `docs/nodes/<CODE>.md` as a generated read-only file — never hand-edit the file.
 - **`docs/USER_STORIES.md`** (L2) — test-cited stories + backlog + audit log. Every `✅` names its
   verifying test or recorded evidence.
 - **`docs/series/GLMZ.md`** — GLMZ universe story coordination board: main series chapter
@@ -119,8 +134,9 @@ The project follows the **MindAttic Codex** documentation standard. The source o
 canonical destinations. Do not append to it. Do not reference it.
 
 Working rules:
-- **Canon changes go DIRECTLY into the authoritative file** — `docs/BIBLE.md` for world/engine facts,
-  `docs/nodes/<CODE>.md` for story-specific facts. There is no amendment layer. There is no "L1 wins over L0."
+- **Canon changes go DIRECTLY into the authoritative source** — `docs/BIBLE.md` for world/engine facts,
+  `Nodes.NodeBible` (via `set_story_bible` MCP) for story-specific facts. There is no amendment
+  layer. After updating NodeBible, re-run `generate_node_doc` + `ss --sync-markdown`.
 - A fact lives in **exactly one file**; cite it by its stable `{#SS-...}` id, never by line number.
 - Update the Bible/stories status in the **same change** that moves a goal; "done" means a test or
   build proves it.
@@ -139,9 +155,10 @@ Working rules:
    After filing: update `docs/series/GLMZ.md` Story Roster (§1–2), Character Arc Ledger exit
    states (§3), and Plant/Payoff Registry (§5). Check World-Revelation Sequencing (§6) — this
    story must not reveal anything before its designated book.
-1. **Docs first** — if new world facts, write them DIRECTLY into `docs/BIBLE.md` (engine/world-level)
-   or the relevant `docs/nodes/<CODE>.md` (story-specific). Add story entry to
-   `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
+1. **Docs first** — if new world facts, write them DIRECTLY into `docs/BIBLE.md` (engine/world-level).
+   For story-specific facts (arc, characters, voice register, locks), write the hand-authored content
+   via `set_story_bible` MCP into `Nodes.NodeBible`. Add story entry to `docs/USER_STORIES.md`;
+   run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
 2. **Entities** — seed every named character, CorpoNation, place, or weapon into the DB via CLI or
    MCP **before any prose is generated**.
 3. **Story structure (SS-A43)** — create a **StoryNode** (MCP `create_story` / CLI `--create-story`)
@@ -152,8 +169,9 @@ Working rules:
    structural anti-tell decisions BEFORE prose: thematically-parallel subplot + carrier beats,
    temporal scheme, resolution mode (never internal-understanding), moral polarity (ambivalent
    default), per-beat escalation curve, event-type + revelation-mode palette, optional form device,
-   ending style (avalanche, no epilogue), 3-5 intertextual anchors from the entity DB. Mirror the
-   decisions into a `## Structural Blueprint` section of `docs/nodes/<CODE>.md`.
+   ending style (avalanche, no epilogue), 3-5 intertextual anchors from the entity DB. Then run
+   `ss --generate-node-doc --slug <slug>` to regenerate `docs/nodes/<CODE>.md` with the blueprint
+   section auto-populated from the DB.
 5. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
 6. **Export** — `--publish`; flip USER_STORIES to ✅ with evidence.
 
@@ -218,8 +236,8 @@ enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:
 3. **Timeline** — reconstruct the story clock; no impossibilities.
 4. **Plant/payoff ledger** — two-way: every plant pays, every payoff was planted.
 5. **Orphan references** — nothing references removed/disabled/merged content.
-6. **Bible agreement** — prose and `docs/nodes/<CODE>.md` tell the same story; fix one in
-   the same change.
+6. **Bible agreement** — prose and `Nodes.NodeBible` (the hand-authored sections) tell the same
+   story; fix one in the same change, then re-run `generate_node_doc`.
 
 Reports land in `audit-outlines-<date>/logic/`; findings are triaged
 **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Fix what a finding names;

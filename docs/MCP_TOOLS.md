@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**232 tools** across **34 tool families.**
+**233 tools** across **34 tool families.**
 
 ## Families
 
@@ -32,7 +32,7 @@
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Lore Triple](#lore-triple) | 7 |
 | [Narrative Science](#narrative-science) | 5 |
-| [Node](#node) | 33 |
+| [Node](#node) | 34 |
 | [Noun Consistency](#noun-consistency) | 3 |
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
@@ -995,6 +995,12 @@ Deep-duplicate a node (and its sub-node tree) into a fresh, independent copy. Ev
 
 - `idOrSlug` (string, required) — Source node Guid id or slug.
 - `newTitle` (string, required) — Title for the new duplicate. Required.
+
+### `generate_node_doc`
+
+Assemble the unified Story Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. Run this before editing a story to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 
 ### `generate_story_bible`
 

@@ -407,6 +407,18 @@ if (args.Contains("--story-bible"))
     return;
 }
 
+// CLI mode: assemble the unified Story Context Document for a node.
+// Merges hand-authored NodeBible + Structural Blueprint + Beat Spine into one document,
+// writes to Nodes.NodeBible (DB) and docs/nodes/{CODE}.md (read-only disk mirror).
+//   ss --generate-node-doc --slug <slug>
+//   ss --generate-node-doc --all
+if (args.Contains("--generate-node-doc"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await NodeDocCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: generate a new node (bible-first: plan → planned beats → expand in UI).
 // CLI mode: autonomous corpus loop — generate N nodes end-to-end and review them.
 //   ss --run-corpus --count N [--seed "..."] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]
