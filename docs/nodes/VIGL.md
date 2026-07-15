@@ -717,8 +717,10 @@ discovers who all three were. That is what makes the confrontation land.
   When she decides not to sell the Relic's location, she does not make it a moral moment. She
   names it a professional decision: the secondary client isn't worth the exposure.
 
-**Wren Caerglas — Aldric's niece; Loera-trained operative; operational alias "The Blink Thief"; female** {#SS-VIGL-2c-wren}
-- Twenty-two. Assigned to the squad by family obligation. She would have come regardless.
+**Wren Caerglas — Aldric's nephew; Loera-trained operative; operational alias "The Blink Thief"; male** {#SS-VIGL-2c-wren}
+> **GENDER (2026-07-14):** Wren is **male** (per author; corroborated by the older crew memo's "nephew"). The bible previously ran him **female**; the body text below and the earlier beats still carry female pronouns and need a **re-gender sweep** (she→he), flagged and not yet done. The two new beats (Vega's arrival/join; the cyclops finale) are already male-consistent.
+> **Backstory — Calyxian royal, Loeran blade {#SS-VIGL-2c-wren-origin}:** Wren is a **minor noble of House Caerglas, the family that RULES Calyx.** He was **sent to Loera as a boy to train in the blink arts** and came back a Calyxian royal with Loeran abilities — which is exactly why his own thief-crew treat him as an outsider: highborn Calyxian, fights like a Loera phase-thief, belonging fully to neither. The crew's contract was to **retrieve the Oculus and hand it back to the Caerglas**, on the Calyx soil where it was lost (Caer Glas Moor, the Battle of Nine Days). His homecoming and the intercept are the same ground.
+- Twenty-two. Assigned to the squad by family obligation. He would have come regardless.
 - She has the Caerglas family's belief that the Relic belongs to Calyx.
   She got it secondhand, the way you get things from family stories: absolutely certain in
   feeling, less certain in detail.
@@ -1670,6 +1672,118 @@ actually is. The assumption that every House has a king in armor on a throne is 
   generations. Vaen — the Pallor Champion — has held this territory for forty years. Pallor
   does not petition; it sends Vaen.
 
+**Terrain & climate guide — European template, NOT European identity {#SS-VIGL-terrain-guide}:**
+The Caul is **not** Europe; use European terrain and climate only as the physical/sensory template
+for each House (soil, coast, weather, light). Names, cultures, and history are the Caul's own.
+
+| House | What it is (one line) | Terrain & climate template | Sensory tell |
+|---|---|---|---|
+| **Calyx** | Coerced **breadbasket**; feeds both armies; no army; lost the Relic at Caer Glas (Yr 972). | Vast flat farmland — Ukraine / the Pannonian (Hungarian) plain / the Beauce. Warm-continental, huge skies, nowhere to hide. | Fenced fields; farmers who hunt escaped monster-corridor fauna like they read weather. |
+| **Pallor** | **Warrior culture**; exports mercenary Champions (Vaen); ungoverned; holds the Long Seat. | Cold fjord coast + upland moor — **Scandinavian / Norwegian** (fjords, cold maritime north, fog). **NOT Scotland** (that reads as Ocipheus/Britain). | Phosphorescent heather; moor-hounds; no insignia; "Pallor does not petition; it sends Vaen." |
+| **Loera** | Plays **both sides** — sea cargo + intelligence; corsair/navigator republic; the **blink** thieving-arts. | Rocky maritime cliff-coast — Ligurian/Amalfi or Adriatic (Genoa/Venice/Dalmatia). Warm, salt-wind. | Cliff harbors (Sal Vento); route-record captains; every cargo run is also reconnaissance. |
+| **Verlaine** | Belligerent — **the army**; militarized state; the Myrmidon (mind-theft) intake; general-staff rule. | Continental military heartland — Prussia / militarized northern France. Cantonment plains, garrison towns. | Conscription; the whole state is a corps; black jointed automata. |
+| **Atrament** | Belligerent — **the forge**; production oligarchy (Hearth Table); steals whole *people* for labor. | Heavy-industry river valleys — the Ruhr / industrial Belgium / the Black Country. Coal-smoke, slag, iron. | Slag yards; forge complexes; soot ("atramentum" = ink-black). |
+| **Ocipheus** | Isolationist **island nation, in the north**; the Liturgy / Canon Immaculate; Arthurian knightly order (The Vigil); a Latin canon (origin unknown — see the Latin mystery); home of the Relic since Yr 397. | **Great Britain** — a northern sea-girt island (Avalon/Arthurian), with a Latin liturgy layered over it. | Latin liturgy; the knightly Vigil; seven centuries of canonical record. |
+| *(Three Points)* | Neutral ground since the early Compact; no House stations forces here. | Alpine-neutral crossroads — Switzerland. | Nobody's soldiers; where enemies agree the only thing worse than sharing is fighting. |
+
+**Compass map — the Caul IS Europe, 1:1 {#SS-VIGL-map}:** The Caul's landmass is the map of Europe;
+each House occupies the **same physical place** and inherits its terrain/climate. The world is not
+Europe — only the ground is (names, cultures, history are the Caul's own). Canonical map image:
+`docs/nodes/maps/VIGL-caul-map.png`.
+
+| House / place | Real-world footprint |
+|---|---|
+| **Ocipheus** | **Great Britain** (British Isles) — northern island |
+| **Loera** | **Iberia** — Spain + Portugal (southwest) |
+| **Verlaine** | **France + Italy** |
+| **Atrament** | **Germany through the Balkans to Greece** (Central + Southeast Europe) |
+| **Pallor** | **Scandinavia** (Norway/Sweden/Finland) — the north |
+| **Calyx** | **Eastern Europe** — Belarus, Ukraine, Romania, Bulgaria |
+| **Sinter** | **Turkey / Asia Minor — and everything beyond (east)** |
+| **The Southlands** | **North Africa** (the Maghreb, across the southern sea) |
+
+**Seas:** the **Inner Sea** is the Caul's name for the **Mediterranean**; the **Southlands** (North
+Africa) lie across its southern shore. **Eirene's Gate = the strait between Europe and Asia Minor** —
+the **Bosphorus / Dardanelles** (fits the container LOCK: "seven hundred meters of water, humans hold
+both banks"). It is the crossing from the mainland's southeast edge (**southern Calyx**, the Thracian
+Marmara coast — e.g. **Tekirdağ**) **into Sinter.** Sinter's template is **Anatolian** (Turkey and the
+east) — **not** sub-Arctic.
+
+**Pallor vs Calyx (the pair most easily confused):** mirror opposites. **Calyx grows food and has no
+army** (the eastern breadbasket — Ukraine/Romania). **Pallor grows warriors and has no food** (the
+northern fjord-and-moor war-band — Scandinavia). One feeds the war; the other fights it for hire.
+
+**Itinerary (1:1 map) {#SS-VIGL-itinerary}:** The party runs **west → southeast**: **Ocipheus (theft)
+→ Verlaine (France/Italy) → into Atrament around Vienna** (never Hamburg — the crossing is
+central/southern, not the northern port) **→ into Calyx through Uzhanskyi National Park** (the
+Carpathian border) **→ southern Calyx**, converging at **Tekirdağ** on the Marmara (the mouth of
+Eirene's Gate), where **Vega** meets them **→ across Eirene's Gate (Bosphorus/Dardanelles) into
+Sinter.** Sinter lies southeast, not north; the old "north to Pallor → Sinter" leg is **retired**.
+**Escalation LOCK:** the encounters grow **worse the closer they get to Sinter** — the world rots by
+degrees; each leg is more horrible than the last, peaking at the Cavity (monotonic dread curve).
+
+**Caer Glas Moor — SALVAGED into Calyx {#SS-VIGL-caerglas}:** Caer Glas Moor **relocates from Pallor to
+Calyx.** It is the **Caerglas family's Calyx ancestral seat** (Aldric = Calyx Knight; Wren named for it)
+and the site of the **Battle of Nine Days** (Year 972) where Calyx lost the Oculus on its *own* soil —
+fixing the old contradiction (a Calyx family + a Calyx loss no longer stranded in Pallor). Because the
+party crosses **Calyx** on the SE route, Caer Glas Moor is now **on-route**: the **Blink-Thief intercept**
+happens here (Esvane and Petra die; Wren blinks and later joins), it gives **Wren a homecoming**, and
+the **"Long Seat / Eighth Theory"** scene relocates to **Calyx's own parallel reckoning-body** at Caer
+Glas Moor (canon already grants Calyx a parallel reckoning to Pallor's Long Seat). **Aldric** remains the
+confrontation, in Calyx; **Vaen** is at Eirene's Gate (the leviathan), not here. Beats 2300/2400 are
+relocated Pallor→Calyx accordingly (setting/terrain updated; the moor's fog + heather become a Calyx
+upland). **LOCKED (2026-07-14):** the team **never visits Loera or Pallor as regions.** Caer Glas Moor
+is no longer *in* Pallor — it is now the Caerglas seat in **Calyx**, on-route (per the salvage above),
+so it *is* visited. **Vaen** is a **hired Pallor Champion dispatched to Eirene's Gate** ("Pallor sends
+Vaen"), where the sea-leviathan kills her; Pallor itself stays off-screen — Wren's and Vaen's **origin**
+only. The old "Pallor" beats (2300 Caer Glas Moor; 2400 the Long Seat) are **relocated to Calyx**, not cut.
+
+**Greymarch {#SS-VIGL-sinter-geo}:** the **blighted march on the Sinter side of Eirene's Gate** — the
+emptied farmsteads and dead-zone the party crosses after the Gate, before the crater rim (as used in
+the prose beat "Greymarch — The Empty Farmsteads"). **NOT in Pallor** (superseding the earlier note,
+which predated the 1:1 map). It is the last inhabited-then-abandoned ground before Sinter proper.
+
+**Communication & logistics — the telegraph {#SS-VIGL-comms}:** The Caul's one reliable long-distance
+technology is the **telegraph** — copper wire strung House to House, **attainable and maintainable** at
+this tech level (the same world that Scries bolt-action rifles can string and mend a line). It is **not
+instantaneous-anywhere**: you must be **at a station**, and lines run only along the main routes. There
+are **no membrane comms** (the membrane is the Relic's rare, guarded wound, not a utility) and **no
+message-birds** (cliché; out).
+- **Telegraph via Templar / Liturgy stations** — the Liturgy maintains wired stations along the main
+  routes. **Lyra, a Templar on Liturgy orders, stops at them naturally** to wire reports and collect
+  dispatches — so she moves the whole book looking exactly like an officer on assignment. This is how
+  Vega's rendezvous (Tekirdağ; the window) reaches her: a wired dispatch caught at a station on the
+  Calyx approach. *(The "dispatch note" in the beat "She Goes to Sinter.")*
+- **Templars are supra-House:** Templars serve the **Liturgy, not any House**, so Templar stations and
+  their wire exist **anywhere the Liturgy holds sway — effectively everywhere**, crossing House borders
+  freely. That is why a wired dispatch **outruns a courier on a moor-hound** (the fast overland
+  hound-thing — six-legged, low, with an elongated lizard head), and why Lyra can move border to border
+  on the wire without ever looking like anything but an officer on assignment.
+- **Lyra's "betrayal" is restraint:** she is never shown overtly betraying the Liturgy — her one act of
+  defiance is **not turning back to Ocipheus the moment she has the Oculus** (she keeps going east to
+  Sinter). Everything else reads as a Templar on orders, which is why the telegraph stations stay open
+  to her. The break is quiet: a woman who simply does not come home.
+- **Loera packet-couriers** — Loera sells message-carriage as part of its intelligence trade; a paid
+  courier or packet-ship carries a letter across the Inner Sea (lets Loera matter without the party
+  ever going there).
+- **Prearranged rendezvous** — because comms lag, plans are set in advance with a window and fallbacks.
+  **The party knows Vega is bound for Tekirdağ because it was arranged before she sailed**, then
+  confirmed by a dispatch that caught up to Lyra at a Calyx waypoint — never a live signal. The lag
+  (did it get through? will she make the window?) is usable tension.
+
+**Vega — new party member (to brief) {#SS-VIGL-vega}:** From **Ocipheus (Great Britain)**, and
+**Lyra's sister** — both Ocipheus-born (the star **Vega** is the brightest star *in the constellation
+Lyra*; the names encode the bond). This makes the plot personal: Vega crosses the whole Inner Sea to
+put **the truth about the Liturgy's real motive** into her own sister's hands — and Lyra is the
+Liturgy's own enforcement arm (the Vigil), so the reveal is a collision of family and institution.
+The truth is the "real reason for things," which recontextualizes what the Oculus is for. **Her route:**
+she **escapes Ocipheus** and takes a **ship** — south around
+**Loera** (Iberia/Gibraltar), out across the **Inner Sea**, past the **boot of Verlaine** (Italy) and
+the **scattered southern islands of Atrament** (the Aegean), to a **port in southern Calyx — Tekirdağ**
+on the Marmara, at the mouth of Eirene's Gate — where she **meets the party** and joins for the crossing
+into Sinter. **Wren and Vega fall in love** (the Loera-merc rogue and the Ocipheus truth-bearer). (Needs
+a full brief + blueprint per the New-Story workflow before her scenes are written; flagged as planned.)
+
 ---
 
 ## 7. World Mechanics (story-specific applications) {#SS-VIGL-7}
@@ -1724,13 +1838,25 @@ decided what she thinks about that. The story ends before she has to.
 - **What it IS {#SS-VIGL-relic-wound}:** not a pulled object but an **open wound in the Caul into
   the Amnios** — a Scry that never closed, a lesion held open (see the Amnios/cell cosmology). It
   is one of **two termini** of a channel whose other end is at **Sinter**.
-- **It weeps two things:** **gold**, bleeding from the open Amnios (the intercellular medium); and
-  **black**, Sinterspawn particulate migrating along the channel between the two points — Sinter at
-  one end, the Oculus at the other, sealed in its protective lined box. The black is why the box is
-  lined; the gold is why it is never dry.
-- A lens, roughly palm-sized, that shows the past state of any location it has been at —
-  and, unlike an ordinary scry (§4), does not lose the image when the looking ends. It retains
-  (§6b).
+- **Physical form {#SS-VIGL-relic-form}:** a **circular metal ring** with a **membrane stretched
+  across it** — the membrane is the wound's aperture, peering directly into **Sinter**. **Two glass
+  plates sandwich the membrane** so no one can reach through. It shows the past state of any location
+  it has been at and, unlike an ordinary scry (§4), does **not** lose the image when looking ends — it
+  retains (§6b). *(Supersedes the earlier "palm-sized lens" and the "not-seeing" grail device — the
+  Relic is now describable: it is a ring you can hold up and look through.)*
+- **It weeps — Amnios (gold) and Ichor (black) {#SS-VIGL-relic-weeps}:** through the sealed edges, as
+  tiny particles escape, two substances seep and **drip from the ring's rim**: **Amnios**, the **gold**
+  intercellular medium of the Caul bleeding from the open wound; and **Ichor**, the **black**
+  Sinterspawn matter migrating up the channel from Sinter at the far terminus. Amnios is why it is
+  never dry; Ichor is why it is dangerous.
+- **The case {#SS-VIGL-relic-case}:** the Ichor is live and corrupting, so the Oculus rides in a
+  **round case that kills the Ichor** and keeps the Relic from **"festering"** — left uncased, the
+  wound sours. This killing-case is the operative container (it supersedes the oak-box below as the
+  physical vessel).
+- **The handle — added later {#SS-VIGL-relic-handle}:** at some point a **handle** is fitted to the
+  ring so a bearer can grip it without getting Ichor or Amnios on the skin. It is forged of a **special
+  alloy Scried from another Sphere that resists Ichor growth** — naturally hostile to the corruption,
+  the way copper is antimicrobial.
 - It has been at Ocipheus Station since Year 397 — 741 unbroken years of the Sinter crater as
   one continuous memory, and older, unexplained frames beneath that count (§6b, §9b).
 - It has been at every location the Blink Thieves carried it through.
@@ -1741,14 +1867,58 @@ decided what she thinks about that. The story ends before she has to.
   archive room — not passively, but with something like attention. Whether this is perception
   or sophisticated memory accumulation that resembles perception is not answered in this book.
 
-**The Relic's container — LOCK (grail mystery):**
-The Oculus Memoriae travels inside an oiled **Yggdra** (oak) box — the Caul's name for
-the English oak, the world-tree wood, the only acceptable material for a container of this
-kind. The box is sealed with an **Alloy-14** (high-carbon steel) lock. Before the box, the
-Relic is wrapped in undyed silk. No character describes what the Relic looks like. No reader
-sees inside the box except Lyra, and she does not describe it. She has seen it exactly twice.
-The grail is the not-seeing. The mystery is the container being carried, never opened in
-view. The story is the consequences of what it shows — not what it looks like.
+**The Relic's container — UPDATED:**
+The Oculus rides in the **round killing-case** (§#SS-VIGL-relic-case) — the vessel that neutralizes
+the escaping Ichor and keeps the wound from festering. *(Supersedes the earlier "oiled Yggdra oak box,
+Alloy-14 lock, wrapped in undyed silk, never seen" treatment and its "grail / not-seeing" device: the
+Relic is now describable — a metal ring with a membrane and glass plates — and is shown on the page.
+The tension is no longer not-seeing; it is what the ring shows and what leaks out of it.)*
+
+### Session additions — 2026-07-14 {#SS-VIGL-6c}
+
+**The far terminus — the Petrified Cyclops {#SS-VIGL-cyclops}:** The Oculus is one end of a channel;
+its **far end is at Sinter**, and there the party finds what has been on the other side of the membrane
+all along — a **petrified giant, a stone cyclops**: colossal, long turned to stone, its single eye
+fixed on the pit. There is **no explanation** for what it is or why it watches, and the book does not
+give one. What it watches is **the Cavity** — a wound boring down into the earth, and the deeper it
+goes the more **rotten** everything becomes: the rock, the air, the light, the things that still move
+down there. The cyclops has been watching the Cavity deepen longer than any record. (This is the payoff
+for the Relic's "angle / attention": the Oculus has an *eye* because something with an eye sits at the
+far terminus, looking back.) **Sinter is not defeated in this book** — the reveal *is* the ending: the
+party reaches the end of the quest and finds not an answer but a larger, older question, petrified and
+watching. Satisfying, and it sets up Book 2.
+
+**Stolen-objects motif — Soren's eye {#SS-VIGL-stolen-objects}:** The Caul is full of objects Scried
+out of other worlds — guns, tools, machines, oddments. **Seed these frequently.** The party passes
+them and makes **no connection** (to them it is just the furniture of the world), but **M-101 (Soren
+Rowe)** *always* notices when a thing is from **his** world — a rifle, a mechanism, a maker's mark. The
+recognition is quiet and recurring; it is the book's slow drip toward the horror of the Taking
+(§Myrmidon). Lean on firearms and militaria — Rowe's domain.
+
+**The Heloth — clockwork beast of burden {#SS-VIGL-heloth}:** *(First-book rule — describe on first
+appearance.)* A Heloth is a clockwork beast of burden, wholly without will: it labors tirelessly for
+whatever master it is assigned and asks for nothing. It is slow, patient past the point of the uncanny
+— it seems to perceive time at a fraction of the human rate, working the same unhurried way whether a
+task takes an hour or a day. It stands bipedal on cloven hooves. Its head is the bleached skull of
+something bovine, set atop a long, soft **umbilicus of a neck** that runs down into a hollow,
+**cistern-like torso** — a bloom set in too large a planter, top-heavy and slowly swaying, the skull
+nodding on its stalk as the mechanism turns over in the drum of its body. *(World-level; mirror into
+[[../universes/CAUL]].)*
+
+**The Latin mystery {#SS-VIGL-latin}:** The Liturgy (Ocipheus) conducts its canon in **Latin** — a
+tongue with no native origin anywhere in the Caul. **Why** the Liturgy runs on Latin is **unknown**, to
+characters and reader alike: an open mystery, a thread toward the truth Vega carries and toward what
+Sinter is. Do not explain it in this book. *(World-level; mirror into [[../universes/CAUL]].)*
+
+**Eirene's Gate — the incursion & the burn line {#SS-VIGL-gate}:** The Gate is **Istanbul, the west
+(European) bank of the Bosphorus.** Ichor creeps up out of Sinter here, so **flamethrower teams work
+the crossing**, burning the black growth off stone and wire — fire is the one thing that kills Ichor
+clean (cf. the round killing-case). **Vaen**, the Pallor Champion (six infusions), is **stationed at
+the Gate** as the hired backstop. **Shortly after the party arrives, a Sinterspawn incursion begins:**
+a **sea-leviathan** — vast, part ship-sized crayfish, part serpent — rises out of the water, and
+**Vaen fights it and is killed.** A six-infusion Champion dies to it — the scale-setter for what waits
+across the Gate. *(Supersedes the old "party vs. Vaen boss fight at Caer Glas Moor." Play the sea-
+horror and the burn line straight; keep the homages buried.)*
 
 **The membrane at the Forge Hearth:**
 - Lyra's observation (Beat 8): healing slowly. Substrate recovery in biological tissue that
