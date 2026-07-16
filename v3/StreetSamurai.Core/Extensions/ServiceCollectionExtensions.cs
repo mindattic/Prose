@@ -983,6 +983,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<EntityMentionService>();
         services.AddSingleton<DocContextStack>();
         services.AddSingleton<UserContextService>();
+        services.AddSingleton<EntityDocService>();
         services.AddSingleton<DocContextService>();
         services.AddSingleton<EntityHarvestService>();
         services.AddSingleton<ContextTelemetryService>();

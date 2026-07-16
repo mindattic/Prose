@@ -24,7 +24,8 @@ public sealed class DocContextService(
     DocContextStack stack,
     EmbeddingService embeddings,
     ILogger<DocContextService> log,
-    UserContextService? userContext = null)
+    UserContextService? userContext = null,
+    EntityDocService? entityDocs = null)
 {
     /// <summary>ProseEmbeddings ScopeKind for a tracked markdown file (MarkdownFile.Id keyed).</summary>
     public const string ScopeMarkdown = "markdown";
@@ -126,13 +127,26 @@ public sealed class DocContextService(
     /// <summary>
     /// Engine convenience: resolve the node's CODE from its Id and prepare the doc context,
     /// using the node Id as the LRU context key. Used by ProseWriterRouter.
+    ///
+    /// DPC clue-gathering (step 0): when <see cref="EntityDocService"/> is wired, analyzes
+    /// <paramref name="triggerText"/> for entity references and materializes per-entity
+    /// <c>.md</c> rows in <c>MarkdownFiles</c> for any not yet present. This runs BEFORE
+    /// the candidate query in <see cref="PrepareContextAsync"/> so freshly-created entity
+    /// docs participate in the keyword-trigger and relational-cascade passes.
+    ///
     /// Loads active user context overrides (pin/exclude) from <see cref="UserContextService"/>
     /// when the service is wired, and applies them before building the block.
     /// </summary>
     public async Task<DocContextResult> PrepareForNodeAsync(
-        Guid nodeId, string? triggerText, int tokenBudget = 2000, CancellationToken ct = default)
+        Guid nodeId, string? triggerText, int tokenBudget = 2000,
+        bool inferEntities = true, CancellationToken ct = default)
     {
         if (nodeId == Guid.Empty) return new DocContextResult("", Array.Empty<LoadedDoc>(), 0);
+
+        // DPC step 0 — clue-gathering inference: materialize entity docs from beat-goal text
+        // BEFORE the candidate query so they are visible in the working set this beat.
+        if (inferEntities && entityDocs != null && !string.IsNullOrWhiteSpace(triggerText))
+            await entityDocs.InferFromTextAsync(triggerText, ct);
 
         string code;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))

@@ -1,0 +1,257 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace StreetSamurai.Core.Services;
+
+/// <summary>
+/// Dynamic Prose Context — entity doc materialization layer.
+///
+/// Generates compact per-entity <c>.md</c> files directly in <c>MarkdownFiles</c>
+/// (DB-only rows; no corresponding disk file) from live entity records. These docs
+/// participate in the DocContextStack keyword-trigger and relational-cascade passes
+/// the same way hand-authored canon docs do.
+///
+/// <b>Hash-gated:</b> if the entity description hasn't changed since the last
+/// materialization, <c>EnsureEntityDocAsync</c> is a fast no-op.
+///
+/// <b>DB-only rows:</b> entity docs are written to <c>MarkdownFiles</c> with
+/// <c>FilePath = ""</c> and <c>SyncedBy = "inferred"</c>. They are never written to
+/// disk and are never touched by <c>MarkdownFileService.SyncAllAsync</c> (which is
+/// disk-sourced). <c>EntityDocService</c> is their sole manager.
+///
+/// <b>Inference entry point:</b> <c>InferFromTextAsync</c> calls
+/// <c>SceneContextAssembler.AssembleAsync</c> to discover entities in a beat-goal
+/// string, then ensures each has a current entity doc in <c>MarkdownFiles</c>.
+/// Call this BEFORE <c>DocContextService.PrepareContextAsync</c> so newly-created
+/// rows are included in the candidate query.
+/// </summary>
+public sealed class EntityDocService(
+    IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+    SceneContextAssembler assembler,
+    ILogger<EntityDocService> log)
+{
+    private const string EntityDocRoot = "docs/entities";
+
+    // ── Public API ──────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Ensure a <c>MarkdownFiles</c> row exists for the given entity and is current.
+    /// Returns <c>true</c> if a row was created or updated; <c>false</c> if the
+    /// existing row was already up-to-date (hash match) or the entity was not found.
+    /// </summary>
+    public async Task<bool> EnsureEntityDocAsync(Guid entityId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var entity = await db.Entities.AsNoTracking()
+            .Where(e => e.Id == entityId && e.IsActive)
+            .FirstOrDefaultAsync(ct);
+        if (entity == null) return false;
+
+        var (content, triggers) = await BuildContentAsync(db, entity, ct);
+        var hash    = ComputeHash(content);
+        var relPath = $"{EntityDocRoot}/{entity.Slug}.md";
+
+        var existing = await db.MarkdownFiles
+            .FirstOrDefaultAsync(m => m.RelativePath == relPath && m.FileRoot == "project", ct);
+
+        if (existing != null && existing.ContentHash == hash) return false;
+
+        if (existing == null)
+        {
+            db.MarkdownFiles.Add(new MarkdownFile
+            {
+                Id           = Guid.NewGuid(),
+                FilePath     = "",      // DB-only — no disk file
+                FileRoot     = "project",
+                RelativePath = relPath,
+                FileName     = $"{entity.Slug}.md",
+                Category     = "entity-doc",
+                Content      = content,
+                ContentHash  = hash,
+                LastSyncedAt = DateTime.UtcNow,
+                SyncedBy     = "inferred",
+                Tier         = "topic",
+                Scope        = "",
+                Triggers     = triggers,
+                AutoTier     = false,
+            });
+        }
+        else
+        {
+            existing.Content      = content;
+            existing.ContentHash  = hash;
+            existing.Triggers     = triggers;
+            existing.LastSyncedAt = DateTime.UtcNow;
+            existing.SyncedBy     = "inferred";
+        }
+
+        await db.SaveChangesAsync(ct);
+        return true;
+    }
+
+    /// <summary>
+    /// Discover entities referenced in <paramref name="text"/> (beat goal, scene synopsis,
+    /// or any prose fragment) and ensure each has a current entity doc in
+    /// <c>MarkdownFiles</c>. Returns the count of docs created or updated.
+    ///
+    /// Call this BEFORE <c>DocContextService.PrepareContextAsync</c> so the freshly-
+    /// created rows participate in the keyword-trigger and relational-cascade passes.
+    /// This method is best-effort — errors per entity are logged and skipped; the overall
+    /// call never throws.
+    /// </summary>
+    public async Task<int> InferFromTextAsync(string text, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return 0;
+
+        SceneContext ctx;
+        try { ctx = await assembler.AssembleAsync(text, tokenBudget: 1200, ct); }
+        catch (Exception ex)
+        {
+            log.LogDebug(ex, "EntityDocService: SceneContextAssembler unavailable; skipping inference");
+            return 0;
+        }
+
+        int changed = 0;
+        foreach (var entry in ctx.Roster)
+        {
+            try
+            {
+                if (await EnsureEntityDocAsync(entry.EntityId, ct)) changed++;
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "EntityDocService: failed to ensure doc for entity {Id} ({Name})",
+                    entry.EntityId, entry.Name);
+            }
+        }
+
+        if (changed > 0)
+            log.LogDebug("EntityDocService: materialized {Count} entity doc(s) from text inference", changed);
+
+        return changed;
+    }
+
+    // ── Content building ─────────────────────────────────────────────────────
+
+    private async Task<(string content, string triggers)> BuildContentAsync(
+        StreetSamuraiDbContext db, Entity entity, CancellationToken ct)
+    {
+        var triggerList = new List<string>();
+        CollectNameTokens(entity.Name, triggerList);
+        if (!string.IsNullOrEmpty(entity.Slug)) triggerList.Add(entity.Slug.Replace("-", " ").Replace("_", " "));
+
+        var sb = new StringBuilder();
+
+        if (entity.EntityType.Equals("character", StringComparison.OrdinalIgnoreCase))
+        {
+            var ch = await db.Characters.AsNoTracking()
+                .Include(c => c.Aliases)
+                .Where(c => c.Id == entity.Id)
+                .FirstOrDefaultAsync(ct);
+
+            // Collect aliases before writing frontmatter so triggers are complete.
+            if (ch != null)
+                foreach (var a in ch.Aliases) CollectNameTokens(a.Value, triggerList);
+
+            var triggers = NormalizeTriggers(triggerList);
+            WriteFrontmatter(sb, triggers);
+
+            sb.AppendLine($"# {entity.Name}");
+            sb.AppendLine();
+
+            if (ch != null && !string.IsNullOrEmpty(ch.Species) && ch.Species != "human")
+                sb.AppendLine($"**Type:** {entity.EntityType} — {ch.Species}  ");
+            else
+                sb.AppendLine($"**Type:** {entity.EntityType}  ");
+
+            var lifeStatus = ch?.LifeStatus ?? "alive";
+            var statusLine = lifeStatus is "alive" or ""
+                ? entity.Status
+                : $"{entity.Status} ({lifeStatus})";
+            sb.AppendLine($"**Status:** {statusLine}  ");
+
+            if (!string.IsNullOrEmpty(entity.Description))
+            {
+                sb.AppendLine();
+                sb.AppendLine(entity.Description.Trim());
+            }
+            if (!string.IsNullOrEmpty(entity.GrammarNote))
+            {
+                sb.AppendLine();
+                sb.AppendLine($"*Grammar: {entity.GrammarNote.Trim()}*");
+            }
+            if (ch != null)
+            {
+                var voiceParts = new[] { ch.SpeechVocabulary, ch.SpeechCadence, ch.SpeechUnderPressure }
+                    .Where(s => !string.IsNullOrEmpty(s)).ToList();
+                if (voiceParts.Count > 0)
+                {
+                    sb.AppendLine();
+                    sb.AppendLine("**Voice:**");
+                    foreach (var v in voiceParts) sb.AppendLine(v.Trim());
+                }
+            }
+
+            return (sb.ToString().TrimEnd() + "\n", triggers);
+        }
+        else
+        {
+            var triggers = NormalizeTriggers(triggerList);
+            WriteFrontmatter(sb, triggers);
+
+            sb.AppendLine($"# {entity.Name}");
+            sb.AppendLine();
+            sb.AppendLine($"**Type:** {entity.EntityType}  ");
+            sb.AppendLine($"**Status:** {entity.Status}  ");
+
+            if (!string.IsNullOrEmpty(entity.Description))
+            {
+                sb.AppendLine();
+                sb.AppendLine(entity.Description.Trim());
+            }
+            if (!string.IsNullOrEmpty(entity.GrammarNote))
+            {
+                sb.AppendLine();
+                sb.AppendLine($"*Grammar: {entity.GrammarNote.Trim()}*");
+            }
+
+            return (sb.ToString().TrimEnd() + "\n", triggers);
+        }
+    }
+
+    // ── Helpers ──────────────────────────────────────────────────────────────
+
+    private static void WriteFrontmatter(StringBuilder sb, string triggers)
+    {
+        sb.AppendLine("---");
+        sb.AppendLine("tier: topic");
+        sb.AppendLine($"triggers: {triggers}");
+        sb.AppendLine("---");
+        sb.AppendLine();
+    }
+
+    private static void CollectNameTokens(string name, List<string> list)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return;
+        list.Add(name);
+        var parts = name.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length > 1) list.Add(parts[^1]); // surname
+    }
+
+    private static string NormalizeTriggers(List<string> triggerList) =>
+        string.Join(", ", triggerList
+            .Select(t => t.Trim().ToLowerInvariant())
+            .Where(t => t.Length >= 3)
+            .Distinct());
+
+    private static string ComputeHash(string content)
+    {
+        var bytes = SHA256.HashData(Encoding.UTF8.GetBytes(content));
+        return Convert.ToHexString(bytes).ToLowerInvariant();
+    }
+}
