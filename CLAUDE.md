@@ -111,6 +111,24 @@ files — injects them into the LLM prompt — then GCs them after a sliding win
 non-reference. **The engine manages the scope; you don't have to.** Only a small, relevant
 subset of .md files is present at any moment — never a full dump of all data.
 
+**Five-step context assembly (DocContextService.PrepareForNodeAsync):**
+
+0. **Clue-gathering inference** (EntityDocService.InferFromTextAsync): scans the beat goal
+   text via SceneContextAssembler (name scan + embedding + graph expansion). For every entity
+   found, calls EnsureEntityDocAsync — hash-gated, so unchanged entities are a no-op. Freshly
+   materialized entity docs land in MarkdownFiles as DB-only rows (category "entity-doc",
+   SyncedBy "inferred", no disk file) with keyword triggers from name/slug/aliases. Because
+   this runs BEFORE the candidate query, the new docs participate in steps 1-5 immediately.
+
+Then PrepareContextAsync runs its five passes:
+1. **always** — pinned universal core (BIBLE.digest.md)
+2. **node** — the active story's bible + register (evicted on story change)
+3. **keyword** — topic docs whose Triggers match the beat-goal text (includes newly-created
+   entity docs from step 0, since they carry name/slug triggers)
+4. **embedding** — topic docs semantically near the beat goal (markdown embedding scope)
+5. **relational cascade** — for every resident doc with RelatedIds, load its linked docs
+   one level deep (from the `related:` frontmatter field, resolved to GUIDs on sync)
+
 **Entity .md scoping — the Lyra vs Vega rule:**
 
 Character and entity .md files persist in the LRU working set exactly as long as they are
