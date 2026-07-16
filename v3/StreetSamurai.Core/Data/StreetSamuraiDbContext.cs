@@ -2497,6 +2497,7 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Scope).HasMaxLength(1000).HasDefaultValue("");
             e.Property(x => x.Triggers).HasMaxLength(2000).HasDefaultValue("");
             e.Property(x => x.AutoTier).HasDefaultValue(true);
+            e.Property(x => x.RelatedIds).HasMaxLength(4000).HasDefaultValue("");
             e.HasIndex(x => x.Tier);
             // Composite unique: the project and global CLAUDE.md share RelativePath
             // "CLAUDE.md" but differ by FileRoot, so RelativePath alone is not unique.

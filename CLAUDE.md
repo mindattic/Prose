@@ -128,6 +128,38 @@ The tuning knob is `EvictAfterActions` in `DocContextStack`. Topic docs evict af
 `node`-tier docs evict on story change (not time). Do not change `EvictAfterActions` without
 understanding the Lyra/Vega tradeoff: lower = tighter context, higher = warmer cache.
 
+**DPC relational graph — the `related:` frontmatter field:**
+
+Any `.md` file can declare related documents in its YAML frontmatter:
+
+```yaml
+---
+related: docs/nodes/VIGL.md, docs/universes/CAUL.md
+---
+```
+
+When a doc is loaded into the working set, `DocContextService` (step 5 of `PrepareContextAsync`)
+cascades its related docs into the set automatically — one level deep, no recursive fan-out.
+Cascaded docs land as `topic` tier with reason `related:<parent-path>`.
+
+**How related IDs are resolved:** `MarkdownFileService.SyncAllAsync` runs a two-phase process:
+1. Upsert all files, collecting raw `related:` paths in memory
+2. After all files are saved, resolve each relative path to its `MarkdownFile.Id` GUID and write
+   to `MarkdownFiles.RelatedIds` (the resolved CSV of GUIDs)
+
+The `related:` field contains project-relative paths (e.g., `docs/nodes/M101.md`, not slugs or
+GUIDs). Paths that don't resolve to a known `MarkdownFile` are silently dropped.
+
+**When to use `related:`:**
+- A node bible that references specific canon docs heavily (e.g., `docs/universes/CAUL.md`)
+- A universe doc that depends on a companion canon doc
+- Entity docs (future) linking to their place or faction docs
+
+**What `related:` is NOT for:**
+- Dynamic entity discovery (that's the clue-gathering inference layer, not yet implemented)
+- Replacing keyword `triggers:` for topic-based loading — use `related:` only for structurally
+  dependent docs where loading one doc always warrants loading the other
+
 **Empirical truth update pattern — when canon changes in prose:**
 
 When a story event confirms a new empirical fact about an entity (character death, injury,

@@ -113,6 +113,9 @@ public class MarkdownFileService
         var files  = DiscoverFiles().ToList();
         var errors = new List<string>();
         int inserted = 0, updated = 0, unchanged = 0;
+        // Accumulate raw `related:` frontmatter paths keyed by (FileRoot, RelativePath)
+        // for resolution to GUIDs after all files are upserted.
+        var rawRelatedMap = new Dictionary<(string, string), string>();
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -130,6 +133,10 @@ public class MarkdownFileService
                 // leaving only one of them in the DB.
                 var existing = await db.MarkdownFiles
                     .FirstOrDefaultAsync(x => x.RelativePath == f.RelativePath && x.FileRoot == f.FileRoot, ct);
+
+                // Track raw `related:` paths for post-sync GUID resolution.
+                if (!string.IsNullOrEmpty(cls.Related))
+                    rawRelatedMap[(f.FileRoot, f.RelativePath)] = cls.Related;
 
                 if (existing == null)
                 {
@@ -191,6 +198,13 @@ public class MarkdownFileService
             {
                 errors.Add($"{f.RelativePath}: {ex.Message}");
             }
+        }
+
+        // Resolve raw `related:` relative paths → MarkdownFile.Id GUIDs now that all files are in the DB.
+        if (!dryRun && rawRelatedMap.Count > 0)
+        {
+            try { await ResolveRelatedIdsAsync(db, rawRelatedMap, ct); }
+            catch (Exception ex) { errors.Add($"related-resolution: {ex.Message}"); }
         }
 
         return new(inserted, updated, unchanged, errors);
@@ -389,7 +403,7 @@ public class MarkdownFileService
 
     // ── Doc Context Stack classification (tier / scope / triggers) ──────────
 
-    public readonly record struct DocClassification(string Tier, string Scope, string Triggers, bool AutoTier);
+    public readonly record struct DocClassification(string Tier, string Scope, string Triggers, bool AutoTier, string Related = "");
 
     // Registers are node-scoped — a story uses exactly ONE. Seed each register's
     // scope to the node CODE(s) that use it; unknowns get empty scope (curate via
@@ -444,23 +458,27 @@ public class MarkdownFileService
     {
         var fm = ParseFrontmatter(content);
 
+        // `related:` is resolved from RelativePaths → GUIDs in a post-sync pass;
+        // here we capture the raw CSV so the caller can store it for resolution.
+        var relatedRaw = fm.TryGetValue("related", out var rel) ? NormalizeCsv(rel) : "";
+
         if (fm.TryGetValue("tier", out var fmTier) && !string.IsNullOrWhiteSpace(fmTier))
         {
             var scope    = fm.TryGetValue("scope", out var s) ? NormalizeCsv(s) : "";
             var triggers = fm.TryGetValue("triggers", out var t) && !string.IsNullOrWhiteSpace(t)
                 ? NormalizeCsv(t) : SeedTriggers(f, fm);
-            return new(NormalizeTier(fmTier), scope, triggers, AutoTier: false);
+            return new(NormalizeTier(fmTier), scope, triggers, AutoTier: false, relatedRaw);
         }
 
         var fileName = Path.GetFileName(f.FilePath);
 
         if (AlwaysFiles.Contains(fileName))
-            return new("always", "*", "", AutoTier: true);
+            return new("always", "*", "", AutoTier: true, relatedRaw);
 
         if (f.Category.Equals("register", StringComparison.OrdinalIgnoreCase))
         {
             var reg = Path.GetFileNameWithoutExtension(fileName);
-            return new("node", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true);
+            return new("node", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true, relatedRaw);
         }
 
         // Node bibles live in docs/nodes/<CODE>.md (SS-A43); docs/strands/ kept for legacy layouts.
@@ -469,10 +487,10 @@ public class MarkdownFileService
             || relPath.StartsWith("docs/strands/", StringComparison.OrdinalIgnoreCase))
         {
             var code = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
-            return new("node", code, "", AutoTier: true);
+            return new("node", code, "", AutoTier: true, relatedRaw);
         }
 
-        return new("topic", "", SeedTriggers(f, fm), AutoTier: true);
+        return new("topic", "", SeedTriggers(f, fm), AutoTier: true, relatedRaw);
     }
 
     /// <summary>Parse top-level <c>key: value</c> pairs from a leading YAML frontmatter block.</summary>
@@ -654,6 +672,52 @@ public class MarkdownFileService
         }
 
         return new(written, skipped, errors);
+    }
+
+    // ── RelatedIds resolution ─────────────────────────────────────────────
+
+    /// <summary>
+    /// Second-pass resolution: for each file that declared <c>related:</c> in its frontmatter,
+    /// resolve the raw relative-path CSV into a CSV of <see cref="MarkdownFile.Id"/> GUIDs.
+    /// Project files take precedence when a path exists in multiple roots.
+    /// </summary>
+    private static async Task ResolveRelatedIdsAsync(
+        StreetSamuraiDbContext db,
+        Dictionary<(string fileRoot, string relPath), string> rawRelatedMap,
+        CancellationToken ct)
+    {
+        var allFiles = await db.MarkdownFiles.AsNoTracking()
+            .Select(m => new { m.Id, m.RelativePath, m.FileRoot })
+            .ToListAsync(ct);
+
+        // RelativePath may not be globally unique (project vs claude-user CLAUDE.md).
+        // For related: links, prefer the project root; fall back to whatever exists.
+        var lookup = allFiles
+            .GroupBy(m => m.RelativePath, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(
+                g => g.Key,
+                g => (g.FirstOrDefault(x => x.FileRoot == "project") ?? g.First()).Id,
+                StringComparer.OrdinalIgnoreCase);
+
+        foreach (var ((fileRoot, relPath), rawRelated) in rawRelatedMap)
+        {
+            var row = await db.MarkdownFiles
+                .FirstOrDefaultAsync(m => m.RelativePath == relPath && m.FileRoot == fileRoot, ct);
+            if (row == null) continue;
+
+            var resolvedIds = rawRelated
+                .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .Select(p => lookup.TryGetValue(p, out var id) ? id.ToString() : null)
+                .Where(id => id != null)
+                .ToList();
+
+            var resolved = string.Join(", ", resolvedIds);
+            if (row.RelatedIds != resolved)
+            {
+                row.RelatedIds = resolved;
+                await db.SaveChangesAsync(ct);
+            }
+        }
     }
 
     // ── Helpers ───────────────────────────────────────────────────────────

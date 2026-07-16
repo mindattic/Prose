@@ -239,14 +239,18 @@ public class MarkdownFile
 
     // ── Doc Context Stack (dynamic .md working-set engine) ────────────────────
     // Classify each file for the rotating-context engine (DocContextService).
-    //   Tier:     "always" (universal, every context) | "node" (one story) | "topic" (triggered)
-    //   Scope:    CSV of node CODEs the file applies to (node tier), or "*". Empty = none.
-    //   Triggers: CSV of keywords/aliases that load a topic file when they appear in scene text.
-    //   AutoTier: true = tier/scope/triggers were auto-inferred; false = set from frontmatter.
+    //   Tier:      "always" (universal, every context) | "node" (one story) | "topic" (triggered)
+    //   Scope:     CSV of node CODEs the file applies to (node tier), or "*". Empty = none.
+    //   Triggers:  CSV of keywords/aliases that load a topic file when they appear in scene text.
+    //   AutoTier:  true = tier/scope/triggers were auto-inferred; false = set from frontmatter.
+    //   RelatedIds: CSV of MarkdownFile.Id GUIDs this doc links to (from frontmatter `related:`).
+    //              When this doc is resident, DocContextService cascades those docs into the
+    //              working set automatically (one level deep — no recursive fan-out).
     public string   Tier          { get; set; } = "topic";
     public string   Scope         { get; set; } = "";
     public string   Triggers      { get; set; } = "";
     public bool     AutoTier      { get; set; } = true;
+    public string   RelatedIds    { get; set; } = "";
 }
 
 // ── Vocabulary ─────────────────────────────────────────────────────────────

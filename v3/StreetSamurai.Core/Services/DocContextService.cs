@@ -36,7 +36,7 @@ public sealed class DocContextService(
     public sealed record LoadedDoc(Guid DocId, string RelativePath, string Tier, string Reason, double Score, int Chars);
     public sealed record DocContextResult(string Block, IReadOnlyList<LoadedDoc> Loaded, int EstimatedTokens);
 
-    private sealed record Candidate(Guid Id, string RelativePath, string Tier, string Scope, string Triggers);
+    private sealed record Candidate(Guid Id, string RelativePath, string Tier, string Scope, string Triggers, string RelatedIds);
 
     /// <summary>
     /// Load the doc working set for this context and return the budgeted block plus the
@@ -57,8 +57,9 @@ public sealed class DocContextService(
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var candidates = await db.MarkdownFiles.AsNoTracking()
-            .Select(m => new Candidate(m.Id, m.RelativePath, m.Tier, m.Scope, m.Triggers))
+            .Select(m => new Candidate(m.Id, m.RelativePath, m.Tier, m.Scope, m.Triggers, m.RelatedIds))
             .ToListAsync(ct);
+        var byId = candidates.ToDictionary(c => c.Id);
         var text = triggerText ?? "";
 
         // 0 — user-pinned docs (override tier — always included, score 999)
@@ -89,7 +90,6 @@ public sealed class DocContextService(
         {
             try
             {
-                var byId = candidates.ToDictionary(c => c.Id);
                 var hits = await embeddings.FindSimilarProseAsync(text, EmbeddingK, ScopeMarkdown, ct);
                 foreach (var h in hits.Where(h => h.Similarity >= EmbeddingFloor))
                     if (byId.TryGetValue(h.ScopeId, out var c) && c.Tier == "topic")
@@ -99,6 +99,24 @@ public sealed class DocContextService(
             {
                 // Engine must work offline — keyword + tier still deliver.
                 log.LogWarning(ex, "Doc embedding pass unavailable; keyword + tier only");
+            }
+        }
+
+        // 5 — relational cascade: for every doc already resident, load its declared `related:`
+        //     neighbors that are not yet resident (one level — no recursive fan-out).
+        //     Cascaded docs are pushed as topic tier with reason "related:<parent-path>".
+        {
+            var resident = stack.GetActive(contextId).Select(e => e.DocId).ToHashSet();
+            foreach (var entry in stack.GetActive(contextId))
+            {
+                if (string.IsNullOrEmpty(entry.RelatedIds)) continue;
+                foreach (var part in entry.RelatedIds.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+                {
+                    if (!Guid.TryParse(part, out var relId) || resident.Contains(relId)) continue;
+                    if (!byId.TryGetValue(relId, out var c)) continue;
+                    stack.Push(contextId, MakeEntry(c, $"related:{entry.RelativePath}", 40));
+                    resident.Add(relId);
+                }
             }
         }
 
@@ -223,7 +241,7 @@ public sealed class DocContextService(
     // ── helpers ─────────────────────────────────────────────────────────────
 
     private static DocContextStack.StackEntry MakeEntry(Candidate c, string reason, double score) =>
-        new(c.Id, c.RelativePath, c.Tier, c.Scope, c.Triggers, reason, score, 0, 0);
+        new(c.Id, c.RelativePath, c.Tier, c.Scope, c.Triggers, reason, score, 0, 0, c.RelatedIds);
 
     private static bool ScopeMatches(string scope, string code)
     {

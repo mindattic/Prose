@@ -30,7 +30,8 @@ public sealed class DocContextStack
         string Reason,            // provenance, e.g. "always" | "node:BCODA" | "keyword:schism" | "embedding 0.71"
         double Score,
         int PushedAtAction,
-        int LastTouchedAction);
+        int LastTouchedAction,
+        string RelatedIds = "");  // DPC relational graph: CSV of MarkdownFile.Id GUIDs this doc links to
 
     private sealed class ContextState
     {
