@@ -15,6 +15,8 @@ public sealed class ContextTelemetryService
 {
     public sealed record DocLoad(string Path, string Tier, string Reason, double Score, int Chars);
     public sealed record EntityLoad(string Name, string Type, string MatchSource, double Score, int Depth);
+    /// <summary>Full DCM working-set entry at a beat — not budget-clipped. Used for Gantt visualization.</summary>
+    public sealed record StackDocEntry(string Path, string Tier, string Reason, double Score);
 
     public sealed record BeatRecord(
         int BeatIndex,
@@ -24,7 +26,8 @@ public sealed class ContextTelemetryService
         double DurationMs,
         int ProseChars,
         IReadOnlyList<DocLoad> Docs,
-        IReadOnlyList<EntityLoad> Entities);
+        IReadOnlyList<EntityLoad> Entities,
+        IReadOnlyList<StackDocEntry>? FullActiveSet = null);
 
     public sealed class Run
     {

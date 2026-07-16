@@ -988,6 +988,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityHarvestService>();
         services.AddSingleton<ContextTelemetryService>();
         services.AddSingleton<TelemetryExportService>();
+        services.AddSingleton<DcmVisualizationService>();
         services.AddSingleton<TensionEscalationService>();
         services.AddSingleton<ReaderKnowledgeService>();
         services.AddSingleton<ChapterSummaryService>();

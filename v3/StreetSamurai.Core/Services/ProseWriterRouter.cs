@@ -556,10 +556,22 @@ public class ProseWriterRouter(
                 var ents = entList
                     .Take(EntityContextService.MaxInjectedEntities)
                     .Select(e => new ContextTelemetryService.EntityLoad(e.Name, e.EntityType, "stack", e.Score, e.Depth)).ToList();
+
+                // DCM Gantt logging: capture the FULL working set (not budget-clipped) when DcmLoggingEnabled.
+                // This gives the visualization accurate lifecycle data for all resident docs, not just the
+                // subset that fit within the token budget.
+                IReadOnlyList<ContextTelemetryService.StackDocEntry>? dcmFullSet = null;
+                if (settings?.DcmLoggingEnabled == true && docContext != null && context.NodeId != Guid.Empty)
+                {
+                    dcmFullSet = docContext.GetActive(context.NodeId)
+                        .Select(e => new ContextTelemetryService.StackDocEntry(e.RelativePath, e.Tier, e.Reason, e.Score))
+                        .ToList();
+                }
+
                 var title = context.BeatGoal ?? "";
                 if (title.Length > 80) title = title[..80];
                 telemetry.RecordBeat(new ContextTelemetryService.BeatRecord(
-                    beatIndex, beatId.ToString("N"), title, startedAt, sw.Elapsed.TotalMilliseconds, result?.Length ?? 0, docs, ents));
+                    beatIndex, beatId.ToString("N"), title, startedAt, sw.Elapsed.TotalMilliseconds, result?.Length ?? 0, docs, ents, dcmFullSet));
             }
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, skipped", nameof(ContextTelemetryService)); }
         }

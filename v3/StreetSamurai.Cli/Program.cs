@@ -1572,6 +1572,15 @@ if (args.Contains("--doc-context"))
     return;
 }
 
+// CLI mode: DCM lifecycle visualization — dry-run context pass + Gantt .htm export.
+//   ss --dcm-viz --slug <slug> [--out <dir>]
+if (args.Contains("--dcm-viz"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await DcmVizCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --workflow-status [--slug <slug> | --all] [--json]
 // Per-node or global prose service coverage matrix. Shows which services
 // (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active

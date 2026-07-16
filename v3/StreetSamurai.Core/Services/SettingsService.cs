@@ -462,6 +462,11 @@ public class SettingsService : IDisposable
     /// Dry-run (`--doc-context`) + MCP tools work regardless of this flag.</summary>
     public bool DocContextEnabled { get => data.DocContextEnabled; set { data.DocContextEnabled = value; ScheduleSave(); } }
 
+    /// <summary>When ON, ProseWriterRouter captures the FULL DCM working-set (not budget-clipped)
+    /// per beat into ContextTelemetryService for Gantt visualization export. Default OFF (zero
+    /// overhead until you opt in). Use <c>ss --dcm-viz</c> to generate the .htm without a full prose run.</summary>
+    public bool DcmLoggingEnabled { get => data.DcmLoggingEnabled; set { data.DcmLoggingEnabled = value; ScheduleSave(); } }
+
     // ── Review voting ──────────────────────────────────────────────────────────
     /// <summary>Default number of cheap score-only ballots per sampled node review (--ballots).</summary>
     public int ReviewBallots { get => data.ReviewBallots; set { data.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
@@ -921,6 +926,7 @@ public class SettingsService : IDisposable
         public bool SaveStoriesAsMarkdown { get; set; } = true;
         public bool DocxIncludeToc { get; set; } = false;
         public bool DocContextEnabled { get; set; } = true;
+        public bool DcmLoggingEnabled { get; set; } = false;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";
