@@ -71,6 +71,16 @@ function Test-FrontMatter ($path, $expectedLayer) {
 function Invoke-Doctor {
   Write-Host "Codex doctor - $Code ($RepoRoot)" -ForegroundColor Cyan
 
+  # Generate BIBLE.md + digest from DB if missing (e.g. after gc or fresh clone)
+  if (-not (Test-Path $Bible)) {
+    Write-Host "doctor: docs/BIBLE.md missing - regenerating canon docs from DB..." -ForegroundColor Yellow
+    & dotnet run --project "$RepoRoot\v3\StreetSamurai.Cli" -- --generate-canon-md --all --quiet
+    if ($LASTEXITCODE -ne 0) { Write-Host "doctor: --generate-canon-md failed" -ForegroundColor Red }
+  }
+  if (-not (Test-Path $Digest)) {
+    & powershell -File "$RepoRoot\tools\codex.ps1" digest 2>$null | Out-Null
+  }
+
   # 1. required files exist
   foreach ($f in @($Bible, $Stories)) {
     if (-not (Test-Path $f)) { Add-Err "missing required file: $($f.Replace($RepoRoot,'').TrimStart('\','/'))" }
@@ -203,7 +213,8 @@ function Invoke-Doctor {
       if ($testIndex -and $hasTestToken) {
         foreach ($t in $tokens) {
           $tok = $t.Groups[1].Value
-          if ($tok -match 'Tests$' -or $tok -match '_') {
+          # Only warn on class names ending in Tests — underscore-only tokens are CLI/scan evidence, not test class names.
+          if ($tok -match 'Tests$') {
             $cls = ($tok -split '\.')[0]
             if ($testIndex -notmatch [regex]::Escape($cls)) {
               Add-Warn "stories: test token '$cls' not found in test tree (may be a CLI/scan token)"
@@ -221,6 +232,8 @@ function Invoke-Doctor {
       $p = $m.Groups[1].Value
       # only check things that look like a concrete file (have an extension) to avoid dir-glob noise
       if ($p -match '\.[A-Za-z0-9]+$') {
+        # Skip gitignored generated files (docs/nodes/*.md, docs/BIBLE.md, etc.) — ephemeral stack variables.
+        if ($p -match '^docs/(nodes/|BIBLE\.md|WORLD\.md|FRANCHISE\.md|BIBLE\.digest\.md|universes/CAUL\.md|schema\.md)') { continue }
         $full = Join-Path $RepoRoot ($p -replace '/', '\')
         if (-not (Test-Path $full)) { Add-Err "bible: cited path does not exist: $p" }
       }

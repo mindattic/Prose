@@ -23,24 +23,24 @@ updated: 2026-06-25
   `JsonDefaultsTests`; CLI `ss --coverage` lists 28 types.)*
 - **SS-US-A3 ✅** As the engine, I materialize full-character reads from `CharacterReadModels` so a
   deep read is one column, not a 50–80 s join. *(verified by `CharacterReadModelTests`.)*
-- **SS-US-A4 ✅** As the engine, I keep the Beat→Strand model as the single format with no nested
-  strands. *(verified by `StrandWorkbenchServiceTests`, `StrandMigrationServiceTests`,
-  `StrandCliRoundTripTests`.)*
+- **SS-US-A4 ✅** As the engine, I keep the Beat→Node model as the single format with no nested
+  nodes. *(verified by `NodeWorkbenchServiceTests`, `NodeMigrationServiceTests`,
+  `NodeCliRoundTripTests`.)*
 
 ## Epic B — Writing surface (Strand workbench)
 
 - **SS-US-B1 ✅** As an author, I can insert/split/join/delete beats and edit beat text so I can
   shape a strand. *Given a strand, When I insert/split/join/delete, Then beats land in order and
   audio invalidates on text change.* *(verified by
-  `StrandWorkbenchServiceTests.InsertBeat_AtTop_OfEmptyStrand_ProducesOneBeat`,
+  `NodeWorkbenchServiceTests.InsertBeat_AtTop_OfEmptyNode_ProducesOneBeat`,
   `SplitBeat_AtSentenceBoundary_ProducesTwoBeats`, `JoinBeat_MergesIntoPrevious_DeletesAbsorbed`,
-  `DeleteBeat_LastMembership_RemovesBeatRow`,
+  `DeleteBeat_SoftDeletes_BeatAndJunctionPreserved`,
   `UpdateBeatText_MarksStale_RecomputesHash_InvalidatesAudio`.)*
 - **SS-US-B2 ✅** As an author, I get optimistic-concurrency protection on beat edits so a stale
-  write is rejected. *(verified by `StrandWorkbenchServiceTests.UpdateBeatText_ExpectedTimestamp_Mismatch_ThrowsConflict`,
+  write is rejected. *(verified by `NodeWorkbenchServiceTests.UpdateBeatText_ExpectedTimestamp_Mismatch_ThrowsConflict`,
   `UpdateBeatText_ExpectedTimestamp_MatchesCurrent_Succeeds`.)*
 - **SS-US-B3 ✅** As an author, I set per-beat trailing silence (gap-after) so audio paces
-  correctly. *(verified by `StrandWorkbenchServiceTests` gap-after round-trip;
+  correctly. *(verified by `NodeWorkbenchServiceTests` gap-after round-trip;
   `ComputeTextHash_IsDeterministic_AndIgnoresLeadingTrailingWhitespace`.)*
 - **SS-US-B4 ✅** As an author/CLI/LLM client, I reference a beat by the `strand-guid.beat-guid`
   handle. *(verified by `BeatHandleTests`.)*
