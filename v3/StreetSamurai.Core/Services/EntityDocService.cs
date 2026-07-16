@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
@@ -8,7 +8,7 @@ using System.Text;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Dynamic Prose Context — entity doc materialization layer.
+/// Dynamic Context Memory — entity doc materialization layer.
 ///
 /// Generates compact per-entity <c>.md</c> files directly in <c>MarkdownFiles</c>
 /// (DB-only rows; no corresponding disk file) from live entity records. These docs

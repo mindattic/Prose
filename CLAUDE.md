@@ -1,4 +1,4 @@
-# StreetSamurai Project Rules
+﻿# StreetSamurai Project Rules
 
 ## Conversation
 - A bare "do" / "do it" / "yes" from the user means "continue", "keep going", "proceed". Resume the current task without asking for clarification.
@@ -78,9 +78,9 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
 | `docs/USER_STORIES.md` | Epic index + acceptance criteria | Hand-edit directly |
 
-### Dynamic Prose Context (DPC) — the named protocol
+### Dynamic Context Memory (DCM) — the named protocol
 
-**"Dynamic Prose Context" (DPC)** is the canonical name for the beat-scoped, drift-free
+**"Dynamic Context Memory" (DCM)** is the canonical name for the beat-scoped, drift-free
 context loading protocol used in all StreetSamurai prose generation (new stories AND edits
 to existing stories). Use this name when referring to the system in code comments, docs,
 and conversation.
@@ -94,12 +94,12 @@ and conversation.
 3. **Release (GC)** — after X beats without reference, the .md file is garbage-collected from
    the LRU working set. Only a small, current-beat-relevant subset persists at any moment.
 
-**Why DPC prevents drift:** The LLM sees only what is pertinent to the current beat's world.
+**Why DCM prevents drift:** The LLM sees only what is pertinent to the current beat's world.
 Unrelated canon, stale entity states, and out-of-scope story data never enter the prompt.
-Drift happens when context is too wide; DPC keeps it narrow by construction.
+Drift happens when context is too wide; DCM keeps it narrow by construction.
 
 **Applies to:** all new stories (including M101), all beat-by-beat edits to existing stories.
-The prose engine (ProseWriterRouter) implements DPC automatically; Claude Code triggers it
+The prose engine (ProseWriterRouter) implements DCM automatically; Claude Code triggers it
 by calling prose generation tools at beat scope, not story scope.
 
 **How the system works:**
@@ -146,7 +146,7 @@ The tuning knob is `EvictAfterActions` in `DocContextStack`. Topic docs evict af
 `node`-tier docs evict on story change (not time). Do not change `EvictAfterActions` without
 understanding the Lyra/Vega tradeoff: lower = tighter context, higher = warmer cache.
 
-**DPC relational graph — the `related:` frontmatter field:**
+**DCM relational graph — the `related:` frontmatter field:**
 
 Any `.md` file can declare related documents in its YAML frontmatter:
 

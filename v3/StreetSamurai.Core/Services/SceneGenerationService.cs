@@ -1,4 +1,4 @@
-using StreetSamurai.Core.Interfaces;
+﻿using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
 namespace StreetSamurai.Core.Services;
@@ -25,7 +25,7 @@ public class SceneGenerationService
     private readonly DocContextService? docCtx;
     private readonly ProsePatternGuard? proseGuard;
 
-    // DPC: stable session key so the DocContextStack LRU persists across beats in one scene.
+    // DCM: stable session key so the DocContextStack LRU persists across beats in one scene.
     private readonly Guid sessionId = Guid.NewGuid();
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
@@ -150,7 +150,7 @@ public class SceneGenerationService
             }
             catch { /* X-Ray is an enhancer — generation proceeds without the roster */ }
 
-            // DPC: load always + topic docs for this beat (no node — freeform scene has no NodeId).
+            // DCM: load always + topic docs for this beat (no node — freeform scene has no NodeId).
             // Gives the writer the BIBLE.digest.md universal core + any canon docs triggered by the beat goal.
             var docBlock = "";
             if (docCtx != null)

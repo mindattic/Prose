@@ -1,4 +1,4 @@
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 
 namespace StreetSamurai.Core.Services;
 
@@ -8,9 +8,9 @@ namespace StreetSamurai.Core.Services;
 /// a session key for the Claude Code hook). This is the "rotating cast" of pertinent docs:
 /// the few that matter right now are resident; the rest stay in the DB.
 ///
-/// Tier rules — Dynamic Prose Context (DPC) protocol:
+/// Tier rules — Dynamic Context Memory (DCM) protocol:
 ///   <c>always</c> — pinned; never evicted (the small universal core).
-///   <c>node</c>   — evicted when the active node code changes (DPC: node-scoped, not global).
+///   <c>node</c>   — evicted when the active node code changes (DCM: node-scoped, not global).
 ///                   Does not count against <see cref="TopicCapacity"/>.
 ///   <c>topic</c>  — LRU: evicted after <see cref="EvictAfterActions"/> actions without a
 ///                   refresh, and capped at <see cref="TopicCapacity"/> (oldest topic dropped
@@ -31,13 +31,13 @@ public sealed class DocContextStack
         double Score,
         int PushedAtAction,
         int LastTouchedAction,
-        string RelatedIds = "");  // DPC relational graph: CSV of MarkdownFile.Id GUIDs this doc links to
+        string RelatedIds = "");  // DCM relational graph: CSV of MarkdownFile.Id GUIDs this doc links to
 
     private sealed class ContextState
     {
         public readonly ConcurrentDictionary<Guid, StackEntry> Entries = new();
         public int ActionCounter;
-        public string? ActiveNodeCode; // DPC: tracks current node for node-tier eviction on story change
+        public string? ActiveNodeCode; // DCM: tracks current node for node-tier eviction on story change
     }
 
     private readonly ConcurrentDictionary<Guid, ContextState> contexts = new();
@@ -49,14 +49,14 @@ public sealed class DocContextStack
     /// <summary>
     /// Call at the start of each action/beat/turn. Advances the LRU clock, evicts stale topic
     /// docs, and — when <paramref name="nodeCode"/> is provided — evicts node-tier docs if the
-    /// active node has changed (DPC: node-scoped context, not global).
+    /// active node has changed (DCM: node-scoped context, not global).
     /// </summary>
     public void BeginAction(Guid contextId, string? nodeCode = null)
     {
         var state = GetOrCreate(contextId);
         Interlocked.Increment(ref state.ActionCounter);
 
-        // DPC: evict node-tier docs when the story changes so stale bibles never bleed across nodes.
+        // DCM: evict node-tier docs when the story changes so stale bibles never bleed across nodes.
         var code = nodeCode?.Trim();
         if (!string.IsNullOrEmpty(code) && code != state.ActiveNodeCode)
         {
@@ -115,7 +115,7 @@ public sealed class DocContextStack
                 state.Entries.TryRemove(e.DocId, out _);
     }
 
-    // DPC: evict all node-tier entries when switching to a different story node.
+    // DCM: evict all node-tier entries when switching to a different story node.
     private static void EvictNodeTier(ContextState state)
     {
         foreach (var e in state.Entries.Values.ToList())
