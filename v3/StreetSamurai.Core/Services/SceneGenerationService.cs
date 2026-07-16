@@ -25,7 +25,7 @@ public class SceneGenerationService
     private readonly DocContextService? docCtx;
     private readonly ProsePatternGuard? proseGuard;
 
-    // DCM: stable session key so the DocContextStack LRU persists across beats in one scene.
+    // Dynamic Context Memory: stable session key so the DocContextStack LRU persists across beats in one scene.
     private readonly Guid sessionId = Guid.NewGuid();
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
@@ -150,7 +150,7 @@ public class SceneGenerationService
             }
             catch { /* X-Ray is an enhancer — generation proceeds without the roster */ }
 
-            // DCM: load always + topic docs for this beat (no node — freeform scene has no NodeId).
+            // Dynamic Context Memory: load always + topic docs for this beat (no node — freeform scene has no NodeId).
             // Gives the writer the BIBLE.digest.md universal core + any canon docs triggered by the beat goal.
             var docBlock = "";
             if (docCtx != null)

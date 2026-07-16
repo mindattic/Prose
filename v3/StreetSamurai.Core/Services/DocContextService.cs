@@ -53,7 +53,7 @@ public sealed class DocContextService(
         CancellationToken ct = default)
     {
         var code = (nodeCode ?? "").Trim();
-        // DCM: pass node code so the stack can evict stale node-tier docs on story change.
+        // Dynamic Context Memory: pass node code so the stack can evict stale node-tier docs on story change.
         stack.BeginAction(contextId, code);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -128,7 +128,7 @@ public sealed class DocContextService(
     /// Engine convenience: resolve the node's CODE from its Id and prepare the doc context,
     /// using the node Id as the LRU context key. Used by ProseWriterRouter.
     ///
-    /// DCM clue-gathering (step 0): when <see cref="EntityDocService"/> is wired, analyzes
+    /// Dynamic Context Memory clue-gathering (step 0): when <see cref="EntityDocService"/> is wired, analyzes
     /// <paramref name="triggerText"/> for entity references and materializes per-entity
     /// <c>.md</c> rows in <c>MarkdownFiles</c> for any not yet present. This runs BEFORE
     /// the candidate query in <see cref="PrepareContextAsync"/> so freshly-created entity
@@ -143,7 +143,7 @@ public sealed class DocContextService(
     {
         if (nodeId == Guid.Empty) return new DocContextResult("", Array.Empty<LoadedDoc>(), 0);
 
-        // DCM step 0 — clue-gathering inference: materialize entity docs from beat-goal text
+        // Dynamic Context Memory step 0 — clue-gathering inference: materialize entity docs from beat-goal text
         // BEFORE the candidate query so they are visible in the working set this beat.
         if (inferEntities && entityDocs != null && !string.IsNullOrWhiteSpace(triggerText))
             await entityDocs.InferFromTextAsync(triggerText, ct);
