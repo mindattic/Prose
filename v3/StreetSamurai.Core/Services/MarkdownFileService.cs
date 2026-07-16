@@ -246,8 +246,19 @@ public class MarkdownFileService
                 var existing  = await db.MarkdownFiles
                     .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
 
+                // Honor any explicit frontmatter (tier:/scope:/triggers:) declared in the assembled
+                // content (e.g. a preamble section added via set_canon_section). Hardcoded defaults
+                // were preventing keyword-triggered loading for universe canon docs (CAUL.md etc.).
+                var canonFm       = ParseFrontmatter(assembled);
+                var resolvedTier  = canonFm.TryGetValue("tier", out var fmT) && !string.IsNullOrWhiteSpace(fmT) ? NormalizeTier(fmT) : tier;
+                var resolvedScope = canonFm.TryGetValue("scope", out var fmS) ? NormalizeCsv(fmS) : "";
+                var resolvedTrigs = canonFm.TryGetValue("triggers", out var fmKw) && !string.IsNullOrWhiteSpace(fmKw) ? NormalizeCsv(fmKw) : "";
+                var resolvedAuto  = !canonFm.ContainsKey("tier");
+
                 var isNew = existing == null;
-                var contentChanged = !isNew && existing!.ContentHash != hash;
+                var contentChanged = !isNew && (existing!.ContentHash != hash
+                    || existing.Triggers != resolvedTrigs
+                    || existing.Scope != resolvedScope);
                 if (isNew || contentChanged)
                 {
                     if (!dryRun)
@@ -266,10 +277,10 @@ public class MarkdownFileService
                                 ContentHash  = hash,
                                 LastSyncedAt = DateTime.UtcNow,
                                 SyncedBy     = "db-canon",
-                                Tier         = tier,
-                                Scope        = "",
-                                Triggers     = "",
-                                AutoTier     = true,
+                                Tier         = resolvedTier,
+                                Scope        = resolvedScope,
+                                Triggers     = resolvedTrigs,
+                                AutoTier     = resolvedAuto,
                             });
                             await db.SaveChangesAsync(ct);
                         }
@@ -279,6 +290,10 @@ public class MarkdownFileService
                             existing.ContentHash   = hash;
                             existing.LastSyncedAt  = DateTime.UtcNow;
                             existing.SyncedBy      = "db-canon";
+                            existing.Tier          = resolvedTier;
+                            existing.Scope         = resolvedScope;
+                            existing.Triggers      = resolvedTrigs;
+                            existing.AutoTier      = resolvedAuto;
                             await db.SaveChangesAsync(ct);
                         }
                     }
@@ -445,6 +460,14 @@ public class MarkdownFileService
             "pattern","loop","brief","recall","sync","export","deploy","goal","goals",
             "review","quality","engine","system","refactor","subsystem","feedback",
             "first","book","story","outline","canon","service","descent",
+            // writer model tokens — appear in every beat goal / prose write context
+            "beat","beats","strands","strand","nodes","stage","panel","rebuild",
+            // common English body/action words that appear in any prose passage
+            "ground","teeth","every","reversed","survives","survive","mandate",
+            "rewrite","revision","supreme","doctrine","bloodless","replaced",
+            "single","using","used","added","built","wrote","wrote","done","good",
+            "never","still","back","down","away","long","full","open","hand","head",
+            "body","line","move","keep","make","take","give","come","going","left",
         };
 
     /// <summary>
