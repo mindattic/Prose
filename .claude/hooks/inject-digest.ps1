@@ -9,6 +9,11 @@ $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $digest   = Join-Path $repoRoot 'docs\BIBLE.digest.md'
 
+# Regenerate from DB if digest is missing (e.g. after gc or fresh clone)
+if (-not (Test-Path $digest)) {
+    & powershell -File "$repoRoot\tools\codex.ps1" digest 2>$null | Out-Null
+}
+
 if (-not (Test-Path $digest)) { Write-Output '{}'; exit 0 }
 $body = Get-Content -LiteralPath $digest -Raw -Encoding UTF8
 if ([string]::IsNullOrWhiteSpace($body)) { Write-Output '{}'; exit 0 }

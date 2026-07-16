@@ -38,6 +38,15 @@ public class CanonDocumentService
     public static string? GetFilePath(string documentType, string dataRoot)
         => FilePaths.TryGetValue(documentType, out var fn) ? fn(dataRoot) : null;
 
+    private static readonly Dictionary<string, string> FrontMatter = new(
+        StringComparer.OrdinalIgnoreCase)
+    {
+        ["WorldBible"]    = "codex: SS\nproject: StreetSamurai\ncode: SS\nlayer: bible\nstatus: live\n",
+        ["WorldMaster"]   = "codex: SS\nproject: StreetSamurai\ncode: SS\nlayer: world\nstatus: live\n",
+        ["Franchise"]     = "codex: SS\nproject: StreetSamurai\ncode: SS\nlayer: franchise\nstatus: live\n",
+        ["UniverseCanon"] = "codex: SS\nproject: StreetSamurai\ncode: SS\nlayer: universe\nstatus: live\n",
+    };
+
     // ── Resolve a universe slug or id string → Guid ───────────────────────────
 
     public static Guid? ResolveUniverseId(string universeSlug)
@@ -142,10 +151,20 @@ public class CanonDocumentService
         var assembled = AssembleDocument(doc.Title ?? documentType, doc.Sections);
         var checksum  = ComputeChecksum(assembled);
 
-        // Write disk mirror with generated-file header
+        // Write disk mirror with generated-file header (delete-then-rewrite + ReadOnly, matching NodeDocService)
         Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
-        var withHeader = $"<!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type {documentType} -->\n\n{assembled}";
+        if (File.Exists(filePath))
+        {
+            File.SetAttributes(filePath, FileAttributes.Normal);
+            File.Delete(filePath);
+        }
+        var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
+        var fm    = FrontMatter.TryGetValue(documentType, out var fmBase)
+            ? $"---\n{fmBase}updated: {today}\n---\n\n"
+            : "";
+        var withHeader = $"{fm}<!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type {documentType} -->\n\n{assembled}";
         await File.WriteAllTextAsync(filePath, withHeader, Encoding.UTF8, ct);
+        File.SetAttributes(filePath, FileAttributes.ReadOnly);
 
         // Update checksum
         var row = await db.CanonDocuments.FindAsync([doc.Id], ct)!;
@@ -220,7 +239,9 @@ public class CanonDocumentService
             }
             else
             {
-                sb.AppendLine($"## {section.SectionTitle ?? section.SectionKey}");
+                var heading = section.SectionTitle ?? section.SectionKey;
+                var anchor  = section.SectionKey.Contains('§') ? $" {{#{section.SectionKey}}}" : "";
+                sb.AppendLine($"## {heading}{anchor}");
                 sb.AppendLine();
                 sb.AppendLine(section.Content);
                 sb.AppendLine();

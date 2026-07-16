@@ -424,6 +424,17 @@ if (args.Contains("--story-bible"))
     return;
 }
 
+// CLI mode: regenerate canon document .md files from DB (CanonDocuments + CanonDocumentSections).
+// The disk files are generated read-only mirrors; source of truth is the DB.
+//   ss --generate-canon-md --type <WorldBible|WorldMaster|Franchise|UniverseCanon>
+//   ss --generate-canon-md --all
+if (args.Contains("--generate-canon-md"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await CanonDocumentCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: assemble the unified Story Context Document for a node.
 // Merges hand-authored NodeBible + Structural Blueprint + Beat Spine into one document,
 // writes to Nodes.NodeBible (DB) and docs/nodes/{CODE}.md (read-only disk mirror).

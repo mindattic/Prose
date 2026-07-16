@@ -13,7 +13,7 @@
 [CmdletBinding()]
 param(
   [Parameter(Position = 0)]
-  [ValidateSet('doctor', 'digest')]
+  [ValidateSet('doctor', 'digest', 'gc')]
   [string]$Command = 'doctor'
 )
 
@@ -394,14 +394,44 @@ function Build-DigestText {
 }
 
 function Invoke-Digest {
-  if (-not (Test-Path $Bible)) { Write-Host "digest: docs/BIBLE.md not found" -ForegroundColor Red; exit 1 }
+  # Generate canon docs from DB first so BIBLE.md is always current
+  if (-not (Test-Path $Bible)) {
+    Write-Host "digest: docs/BIBLE.md missing - regenerating canon docs from DB..." -ForegroundColor Yellow
+    & dotnet run --project "$RepoRoot\v3\StreetSamurai.Cli" -- --generate-canon-md --all --quiet
+    if ($LASTEXITCODE -ne 0) { Write-Host "digest: --generate-canon-md failed" -ForegroundColor Red; exit 1 }
+  }
+  if (-not (Test-Path $Bible)) { Write-Host "digest: docs/BIBLE.md not found after generation" -ForegroundColor Red; exit 1 }
   $text = Build-DigestText
   # escape non-ASCII to \uXXXX-safe write: keep UTF8 for the file itself (digest md is read by the hook which escapes)
   Set-Content -LiteralPath $Digest -Value $text -Encoding UTF8
   Write-Host "digest: wrote docs/BIBLE.digest.md ($($text.Length) chars)" -ForegroundColor Green
 }
 
+function Invoke-Gc {
+  Write-Host "codex gc - removing generated docs" -ForegroundColor Cyan
+  $patterns = @(
+    (Join-Path $DocsDir 'nodes\*.md'),
+    (Join-Path $DocsDir 'BIBLE.md'),
+    (Join-Path $DocsDir 'WORLD.md'),
+    (Join-Path $DocsDir 'FRANCHISE.md'),
+    (Join-Path $DocsDir 'BIBLE.digest.md'),
+    (Join-Path $DocsDir 'universes\CAUL.md'),
+    (Join-Path $DocsDir 'schema.md')
+  )
+  $removed = 0
+  foreach ($pattern in $patterns) {
+    Get-ChildItem -Path $pattern -ErrorAction SilentlyContinue | ForEach-Object {
+      $_.Attributes = [System.IO.FileAttributes]::Normal
+      Remove-Item $_.FullName -Force
+      Write-Host "  removed $($_.Name)" -ForegroundColor DarkGray
+      $removed++
+    }
+  }
+  Write-Host "gc: $removed file(s) removed." -ForegroundColor Green
+}
+
 switch ($Command) {
   'doctor' { Invoke-Doctor }
   'digest' { Invoke-Digest }
+  'gc'     { Invoke-Gc }
 }

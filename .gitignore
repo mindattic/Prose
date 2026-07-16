@@ -4,6 +4,20 @@ __pycache__/
 sessions/*/facet_responses/
 *.egg-info/
 
+# Generated docs — source of truth is the DB; ephemeral stack variables, not source files.
+# Regenerate: ss --generate-canon-md --all   (BIBLE.md / WORLD.md / FRANCHISE.md / CAUL.md)
+#             ss --generate-node-doc --all    (docs/nodes/*.md)
+#             powershell -File tools/codex.ps1 digest  (BIBLE.digest.md)
+#             powershell -File tools/gen-schema.ps1     (schema.md)
+# GC: powershell -File tools/codex.ps1 gc
+docs/nodes/*.md
+docs/BIBLE.md
+docs/WORLD.md
+docs/FRANCHISE.md
+docs/BIBLE.digest.md
+docs/universes/CAUL.md
+docs/schema.md
+
 # Engine data (rebuilt from canon, not tracked)
 engine_data/
 
