@@ -84,7 +84,7 @@ public static class DcmVizCli
             {
                 await docCtx.PrepareContextAsync(
                     nodeId, nodeCode, triggerText,
-                    tokenBudget: 3000,
+                    tokenBudget: 8000,
                     useEmbedding: false,   // no API call — keyword matching only
                     ct: CancellationToken.None);
 

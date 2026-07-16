@@ -122,8 +122,8 @@ public class ProseWriterRouter(
             {
                 var triggerText = (context.BeatGoal ?? "") + "\n" + (context.SceneSoFar ?? "");
                 docResult = string.IsNullOrEmpty(context.DocScopeCode)
-                    ? await docContext.PrepareForNodeAsync(context.NodeId, triggerText, tokenBudget: 3000, ct: ct)
-                    : await docContext.PrepareContextAsync(context.NodeId, context.DocScopeCode, triggerText, tokenBudget: 3000, ct: ct);
+                    ? await docContext.PrepareForNodeAsync(context.NodeId, triggerText, tokenBudget: 8000, ct: ct)
+                    : await docContext.PrepareContextAsync(context.NodeId, context.DocScopeCode, triggerText, tokenBudget: 8000, ct: ct);
                 docStackContext = docResult.Block;
             }
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(DocContextService)); }

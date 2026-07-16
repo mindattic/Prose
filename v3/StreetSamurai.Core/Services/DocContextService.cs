@@ -58,6 +58,7 @@ public sealed class DocContextService(
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var candidates = await db.MarkdownFiles.AsNoTracking()
+            .Where(m => m.Category != "memory")
             .Select(m => new Candidate(m.Id, m.RelativePath, m.Tier, m.Scope, m.Triggers, m.RelatedIds))
             .ToListAsync(ct);
         var byId = candidates.ToDictionary(c => c.Id);

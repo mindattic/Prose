@@ -1581,6 +1581,17 @@ if (args.Contains("--dcm-viz"))
     return;
 }
 
+// CLI mode: backfill entity-doc MarkdownFiles rows for a story's characters.
+//   ss --backfill-entity-docs --slug <slug> [--text]
+// Replays EntityDocService.InferFromTextAsync over every beat goal (+ prose text with
+// --text) so future prose generation and the DCM viz see per-character entity docs.
+if (args.Contains("--backfill-entity-docs"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BackfillEntityDocsCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --workflow-status [--slug <slug> | --all] [--json]
 // Per-node or global prose service coverage matrix. Shows which services
 // (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active
