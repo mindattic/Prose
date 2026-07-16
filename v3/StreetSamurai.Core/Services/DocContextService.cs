@@ -51,14 +51,14 @@ public sealed class DocContextService(
         IReadOnlySet<Guid>? excludedDocIds = null,
         CancellationToken ct = default)
     {
-        stack.BeginAction(contextId);
+        var code = (nodeCode ?? "").Trim();
+        // DPC: pass node code so the stack can evict stale node-tier docs on story change.
+        stack.BeginAction(contextId, code);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var candidates = await db.MarkdownFiles.AsNoTracking()
             .Select(m => new Candidate(m.Id, m.RelativePath, m.Tier, m.Scope, m.Triggers))
             .ToListAsync(ct);
-
-        var code = (nodeCode ?? "").Trim();
         var text = triggerText ?? "";
 
         // 0 — user-pinned docs (override tier — always included, score 999)
