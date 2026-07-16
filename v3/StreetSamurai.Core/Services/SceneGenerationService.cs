@@ -22,7 +22,11 @@ public class SceneGenerationService
     private readonly WorldStatePrecheckService precheck;
     private readonly CanonRetrievalService canonRetrieval;
     private readonly SceneContextAssembler xray;
+    private readonly DocContextService? docCtx;
     private readonly ProsePatternGuard? proseGuard;
+
+    // DPC: stable session key so the DocContextStack LRU persists across beats in one scene.
+    private readonly Guid sessionId = Guid.NewGuid();
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
@@ -36,10 +40,12 @@ public class SceneGenerationService
         DialogueService dialogue, WorldStateService worldState,
         WorldStatePrecheckService precheck, CanonRetrievalService canonRetrieval,
         SceneContextAssembler xray,
+        DocContextService? docCtx = null,
         ProsePatternGuard? proseGuard = null)
     {
         this.xray = xray;
         this.canonRetrieval = canonRetrieval;
+        this.docCtx = docCtx;
         this.proseGuard = proseGuard;
         this.analyzer = analyzer;
         this.beatGen = beatGen;
@@ -144,6 +150,17 @@ public class SceneGenerationService
             }
             catch { /* X-Ray is an enhancer — generation proceeds without the roster */ }
 
+            // DPC: load always + topic docs for this beat (no node — freeform scene has no NodeId).
+            // Gives the writer the BIBLE.digest.md universal core + any canon docs triggered by the beat goal.
+            var docBlock = "";
+            if (docCtx != null)
+            {
+                var docResult = await docCtx.PrepareContextAsync(
+                    sessionId, nodeCode: null, triggerText: beatGoal,
+                    tokenBudget: 1500, includeAlways: true, includeNode: false, ct: ct);
+                docBlock = docResult.Block;
+            }
+
             var beatContext = new BeatContext
             {
                 StoryBibleContext = storyBible,
@@ -151,6 +168,7 @@ public class SceneGenerationService
                 LocationContext = $"{ambientContext}\n{anomalyHints}\n{characterConstraints}\n{precheckConstraints}\n{summaryContext}\n{pacing.ProseGuidance}",
                 DialogueContext = dialogueContext,
                 XRayContext = xrayBlock,
+                DocStackContext = docBlock,
                 SceneSoFar = sceneSoFar,
                 BeatGoal = beatGoal,
             };

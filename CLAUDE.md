@@ -57,38 +57,118 @@ What it means in practice:
 - Iowan Behemoths are autonomous machines, NOT synthetic life. They are not alive.
 - Default to mixed heritage from unexpected global combinations (Ubiquitous Diaspora).
 
-## Per-Node Documentation (SS-A11)
+## Per-Node Documentation (SS-A11 + SS-A45)
 
 Every story node with active prose has a **unified Story Context Document** stored in
 `Nodes.NodeBible` (DB) and mirrored to `docs/nodes/<CODE>.md` (generated read-only file).
 
-**NEVER hand-edit `docs/nodes/<CODE>.md`.** It is a generated artifact — edits are overwritten
-the next time `generate_node_doc` runs.
+**SS-A45 (shipped 2026-07-15): ALL generated `.md` files are gitignored. They do not exist
+in the repo between sessions.** The DB is the heap (permanent, authoritative). `.md` files
+are ephemeral stack variables — materialized on demand, never committed, GC'd when done.
 
-| Location | Contains | How to edit |
+**NEVER hand-edit `docs/nodes/<CODE>.md`.** It is a generated artifact — edits are overwritten
+the next time `generate_node_doc` runs. **Never assume these files exist — always regenerate first.**
+
+| Location | Contains | Source of truth / how to edit |
 |---|---|---|
-| `docs/BIBLE.md` | Engine invariants + **GLMZ** universe canon — no per-story arc | Hand-edit directly |
-| `docs/WORLD.md` | **GLMZ** world master: city mechanics, cast rules, combat, prose voice | Hand-edit directly |
-| `docs/FRANCHISE.md` | **GLMZ** franchise & IP bible — commercial positioning | Hand-edit directly |
-| `docs/universes/CAUL.md` | **Fantasy/Caul** universe canon | Hand-edit directly |
+| `CanonDocumentSections` (DB) | Engine invariants, GLMZ canon, Caul canon, etc. | MCP `set_canon_section`; generates to `docs/BIBLE.md`, `docs/WORLD.md`, `docs/universes/CAUL.md`, etc. |
 | `Nodes.NodeBible` (DB) | **The single source of truth for that story** — arc, characters, voice, locks, blueprint, beat spine | `set_story_bible` MCP (hand-authored sections) |
-| `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — never edit this file | Re-run `generate_node_doc` to refresh |
+| `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
+| `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/CAUL.md` | Generated canon docs — ephemeral, gitignored | Re-run `ss --generate-canon-md --all` to materialize |
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
 | `docs/USER_STORIES.md` | Epic index + acceptance criteria | Hand-edit directly |
 
+### Dynamic Prose Context (DPC) — the named protocol
+
+**"Dynamic Prose Context" (DPC)** is the canonical name for the beat-scoped, drift-free
+context loading protocol used in all StreetSamurai prose generation (new stories AND edits
+to existing stories). Use this name when referring to the system in code comments, docs,
+and conversation.
+
+**Three phases:**
+1. **Materialize** — for the current beat, pull from DB exactly what is relevant: the beat's
+   node bible section, blueprint slice, referenced entities (characters, places, factions,
+   weapons), recent beat window, and applicable canon fragments. Generate these as .md files.
+2. **Inject** — DocContextService includes only the materialized .md files in the LLM prompt
+   for this beat. Nothing outside the current scope enters the context.
+3. **Release (GC)** — after X beats without reference, the .md file is garbage-collected from
+   the LRU working set. Only a small, current-beat-relevant subset persists at any moment.
+
+**Why DPC prevents drift:** The LLM sees only what is pertinent to the current beat's world.
+Unrelated canon, stale entity states, and out-of-scope story data never enter the prompt.
+Drift happens when context is too wide; DPC keeps it narrow by construction.
+
+**Applies to:** all new stories (including M101), all beat-by-beat edits to existing stories.
+The prose engine (ProseWriterRouter) implements DPC automatically; Claude Code triggers it
+by calling prose generation tools at beat scope, not story scope.
+
+**How the system works:**
+
+During prose generation (via ProseWriterRouter / CLI / MCP), DocContextService handles
+context injection automatically. For the current beat it pulls exactly the relevant entities,
+beats, blueprint slice, node bible section, and canon fragments — materializes them as .md
+files — injects them into the LLM prompt — then GCs them after a sliding window of
+non-reference. **The engine manages the scope; you don't have to.** Only a small, relevant
+subset of .md files is present at any moment — never a full dump of all data.
+
+**Entity .md scoping — the Lyra vs Vega rule:**
+
+Character and entity .md files persist in the LRU working set exactly as long as they are
+relevant to the current prose:
+
+- A character present on every page (e.g. Lyra in VIGL) keeps their `LastTouchedAction`
+  refreshed on every beat through `RecordMentions()`. They never evict.
+- A character who leaves the story for many beats (e.g. Vega between Part 1 and Port
+  Gadriket reunion) evicts automatically after `EvictAfterActions = 4` beats without a
+  reference. Their `.md` vanishes from the working set until the prose references them again.
+- **Worst case:** a character's `.md` evicts before it is needed again. The engine re-fetches
+  from DB on the next `PrepareForNodeAsync()` call. No state is lost — the DB is the heap.
+
+The tuning knob is `EvictAfterActions` in `DocContextStack`. Topic docs evict after 4 beats;
+`node`-tier docs evict on story change (not time). Do not change `EvictAfterActions` without
+understanding the Lyra/Vega tradeoff: lower = tighter context, higher = warmer cache.
+
+**Empirical truth update pattern — when canon changes in prose:**
+
+When a story event confirms a new empirical fact about an entity (character death, injury,
+state change, relationship shift, location exit), update the DB source FIRST, then regenerate:
+
+1. Update the entity row via MCP (`create_character`, `log_wound`, `apply_continuity_claim`, etc.)
+2. Re-run `generate_node_doc` (or `generate_canon_md`) to regenerate the `.md` mirror
+3. Re-run `ss --sync-markdown` to push the updated content to `MarkdownFiles`
+4. The next prose call loads the regenerated `.md` — all future beats see the confirmed fact
+
+A character who dies in Chapter 3 must be updated in DB with the death record (killed by whom,
+which beat, in-world date) before Chapter 4's `.md` is generated. Never edit the `.md` directly
+(it's read-only on disk by `FileAttributes.ReadOnly`). DB → regenerate → sync is the only path.
+
+**When Claude Code needs to READ content** (for planning, review, or analysis — not prose
+generation), trigger generation at the **narrowest possible scope**:
+
+```powershell
+ss --generate-node-doc --slug <slug>      # one story's bible + blueprint
+ss --generate-canon-md --type <type>      # one canon doc (not --all unless needed)
+ss --sync-markdown                        # push to MarkdownFiles so DocContextService sees it
+```
+
+Or MCP: `generate_node_doc` (slug required) + `sync_markdown_files`. Do not run
+`--generate-canon-md --all` unless you genuinely need every canon doc in scope.
+
 **Workflow:**
 
-1. **Before editing a story** — call `generate_node_doc` MCP (or `ss --generate-node-doc --slug X`)
-   to refresh the file from DB. The generated file is what DocContextService injects into prose
-   prompts; a stale file means stale context.
+1. **Before writing or editing a story** — trust the prose engine to auto-inject context.
+   For planning/review where Claude Code needs to read the bible: generate at narrow scope,
+   then GC when done (`powershell -File tools/codex.ps1 gc`).
 2. **To update arc, characters, voice register, or narrative locks** — call `set_story_bible` MCP
-   with updated hand-authored markdown. Then re-run `generate_node_doc` to regenerate the file.
-3. **Blueprint and beat spine sections are always generated** — edit their sources:
+   with updated hand-authored markdown. Then re-run `generate_node_doc` so the engine
+   picks up the change on the next prose call.
+3. **When a story event confirms an empirical fact** — update DB first (entity row, continuity
+   claim, wound log), then regenerate and sync. Never edit `.md` directly.
+4. **Blueprint and beat spine sections are always generated** — edit their sources:
    `ss --generate-blueprint` for the blueprint, MCP beat tools for beat titles/goals.
-4. **After any `generate_node_doc` run** — run `ss --sync-markdown` to sync the updated file to the
-   `MarkdownFiles` table so DocContextService picks it up in prose prompts.
 
-Node context is **loaded on demand**, not injected at session start. Load only what you need.
+Never Read or Glob for ephemeral .md files without regenerating them first — they don't
+exist in the repo and may not exist on disk.
 
 **Existing node bibles:**
 - `docs/nodes/PXL.md` — Pixel / PXL (Pixel origin story, GLMZ; formerly PNHL/TDIU; Channeler+Ghost+Splicer; Detroit escape opening)
@@ -99,7 +179,7 @@ Node context is **loaded on demand**, not injected at session start. Load only w
 - `docs/nodes/SPRW.md` — Sparrow / Elias Macias & the orbital mystery (GLMZ)
 - `docs/nodes/MNEMO.md` — Mnemosync / Amara & Seto (GLMZ, in progress; formerly ULC, redesigned SS-A14)
 - `docs/nodes/TEST.md` — Testament / Bear court-martial (GLMZ)
-- `docs/nodes/GIW.md` — Grafted Into War / M-101/Soren (Fantasy)
+- `docs/nodes/M101.md` — M-101 / Soren Rowe origin before VIGL (Fantasy; Verlaine Taking → desertion)
 - `docs/nodes/MxG.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
 - `docs/nodes/RTR.md` — Read the Room / Faith Larson & Ethan Wolfe (GLMZ; Fenris band; Faith is a Read; Milwaukee dive club)
 - `docs/nodes/LSSS.md` — Lyra, Sinterspawn Slayer (Fantasy; standalone; COMPLETE; VIGL prose register exemplar; 1 beat)
