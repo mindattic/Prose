@@ -240,7 +240,9 @@ public class StructuralBlueprintService
                 EventType       = evt?.EventType,
                 EscalationFloor = i < curve.Count ? (decimal?)curve[i] : null,
                 SubplotCarrier  = subplotIndexes.Contains(i),
-                AnachronyType   = (i == anachronyCut) ? (parsed.Temporal?.AnachronyPlan ?? "Flashback") : null,
+                // AnachronyType is nvarchar(40) — a short label, not the plan. The full
+                // anachronyPlan prose lives on the beat tag Note (BuildBeatTags) instead.
+                AnachronyType   = (i == anachronyCut) ? Truncate(parsed.Temporal?.Scheme ?? "Flashback", 40) : null,
                 DeclaredPurpose = beatDesc,  // seeded from existing Description; author refines via set_beat_blueprint
                 CreatedAt       = DateTime.UtcNow,
                 UpdatedAt       = DateTime.UtcNow,

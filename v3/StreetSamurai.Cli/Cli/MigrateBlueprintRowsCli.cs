@@ -112,7 +112,9 @@ public static class MigrateBlueprintRowsCli
                 var floor    = i < escalation.Count ? (decimal?)escalation[i] : null;
                 var evtType  = eventTypes.TryGetValue(i, out var et) ? et : null;
                 var isSubplot = subplotCarrierBeats.Contains(beat.Id);
-                var anachrony = anachronyBeats.TryGetValue(beat.Id, out var an) ? an : null;
+                // AnachronyType is nvarchar(40) — the tag Note can be up to 400 chars.
+                var anachrony = anachronyBeats.TryGetValue(beat.Id, out var an)
+                    ? (an.Length <= 40 ? an : an[..40]) : null;
 
                 if (!dryRun)
                 {
