@@ -20,7 +20,8 @@ namespace StreetSamurai.Cli;
 ///
 /// Args:
 ///   --slug &lt;slug&gt;   Story node slug (required).
-///   --out  &lt;dir&gt;    Output directory (default: PublishExportDirectory from settings, or Desktop).
+///   --out  &lt;dir&gt;    Output directory (default: the story's own publish folder —
+///                   &lt;universe export dir&gt;/&lt;Series…&gt;/&lt;Title&gt; — beside its manuscript exports).
 /// </summary>
 public static class DcmVizCli
 {
@@ -42,11 +43,12 @@ public static class DcmVizCli
 
         // Resolve node
         Guid nodeId; string nodeCode; string nodeTitle; string universeSlug;
+        var ancestors = new List<string>();
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             var node = await db.Nodes.AsNoTracking()
                 .Where(n => n.Slug == slug)
-                .Select(n => new { n.Id, n.NodeCode, n.Title, n.UniverseId })
+                .Select(n => new { n.Id, n.NodeCode, n.Title, n.UniverseId, n.ParentNodeId })
                 .FirstOrDefaultAsync();
             if (node == null) { Console.Error.WriteLine($"[dcm-viz] node not found: {slug}"); return 1; }
             nodeId    = node.Id;
@@ -59,6 +61,20 @@ public static class DcmVizCli
                     .Where(u => u.Id == node.UniverseId)
                     .Select(u => u.Slug)
                     .FirstOrDefaultAsync() ?? "glmz";
+
+            // Series/book ancestry (top-down) so the viz lands in the story's own
+            // publish folder — same layout as ManuscriptExportService / ReviewReportExporter.
+            var parentId = node.ParentNodeId;
+            for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
+            {
+                var parent = await db.Nodes.AsNoTracking()
+                    .Where(s => s.Id == pid)
+                    .Select(s => new { s.Title, s.ParentNodeId })
+                    .FirstOrDefaultAsync();
+                if (parent is null) break;
+                ancestors.Insert(0, SanitizeTitle(parent.Title));
+                parentId = parent.ParentNodeId;
+            }
         }
 
         Console.WriteLine($"[dcm-viz] Story: \"{nodeTitle}\" ({slug})  code={nodeCode}");
@@ -106,11 +122,23 @@ public static class DcmVizCli
         }
         Console.WriteLine();
 
-        // Determine output path
-        var dir = !string.IsNullOrWhiteSpace(outDir)
-            ? outDir
-            : settings?.GetExportDirectory(universeSlug)
-              ?? Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        // Determine output path: explicit --out wins; otherwise the story's own publish
+        // folder (<universe export dir>/<Series…>/<Title>), beside its .docx/.epub exports.
+        string dir;
+        if (!string.IsNullOrWhiteSpace(outDir))
+        {
+            dir = outDir;
+        }
+        else
+        {
+            var root = settings?.GetExportDirectory(universeSlug)
+                       ?? Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            var parts = new List<string> { root };
+            parts.AddRange(ancestors);
+            parts.Add(SanitizeTitle(nodeTitle));
+            dir = Path.Combine(parts.ToArray());
+        }
+        Directory.CreateDirectory(dir);
 
         var outputPath = Path.Combine(dir, $"{nodeCode}-dcm-viz.htm");
 
@@ -152,6 +180,16 @@ public static class DcmVizCli
     }
 
     // ── helpers ───────────────────────────────────────────────────────────────
+
+    /// <summary>Mirror of ManuscriptExportService.SanitizeTitle so folder names match exactly.</summary>
+    private static string SanitizeTitle(string? title)
+    {
+        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
+        invalid.Add('\''); invalid.Add('’');
+        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
+        kept = System.Text.RegularExpressions.Regex.Replace(kept, @"\s+", " ").Trim();
+        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
+    }
 
     private static string? ArgValue(string[] args, string flag)
     {

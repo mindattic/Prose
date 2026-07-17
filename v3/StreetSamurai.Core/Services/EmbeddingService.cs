@@ -667,7 +667,7 @@ public class EmbeddingService
         if (string.IsNullOrWhiteSpace(queryText)) return Array.Empty<EmbeddingHit>();
         await EnsureSchemaOnceAsync(ct);
 
-        var queryVector = await EmbedAsync(queryText, ct);
+        var queryVector = await EmbedAsync(TruncateForEmbed(queryText), ct);
         if (queryVector.Length == 0) return Array.Empty<EmbeddingHit>();
 
         // Push the cosine math to SQL Server via VECTOR_DISTANCE — at the
