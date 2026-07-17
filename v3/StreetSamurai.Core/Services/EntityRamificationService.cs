@@ -69,24 +69,28 @@ public class EntityRamificationService(
     {
         if (string.IsNullOrWhiteSpace(beatText)) return;
 
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var index = await GetNameIndexAsync(ct);
 
-        var allEntities = await db.Entities
-            .Where(e => e.IsActive && e.Name != "")
-            .Select(e => new { e.Id, e.Name, e.EntityType })
-            .ToListAsync(ct);
+        var hits = new Dictionary<Guid, NameEntry>();
+        foreach (var entry in index)
+        {
+            if (hits.ContainsKey(entry.EntityId)) continue;
+            if (ContainsWholeWord(beatText, entry.MatchText))
+                hits[entry.EntityId] = entry;
+        }
 
-        var mentioned = allEntities
-            .Where(e => beatText.Contains(e.Name, StringComparison.OrdinalIgnoreCase))
+        var mentioned = hits.Values
             .Select(e => new BeatEntityMention
             {
                 BeatId     = beatId,
-                EntityId   = e.Id,
-                EntityName = e.Name,
+                EntityId   = e.EntityId,
+                EntityName = e.CanonicalName,
                 EntityType = e.EntityType,
                 CreatedAt  = DateTime.UtcNow,
             })
             .ToList();
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         // Replace all existing mentions for this beat atomically.
         await db.BeatEntityMentions.Where(m => m.BeatId == beatId).ExecuteDeleteAsync(ct);
@@ -95,6 +99,69 @@ public class EntityRamificationService(
             db.BeatEntityMentions.AddRange(mentioned);
             await db.SaveChangesAsync(ct);
         }
+    }
+
+    // ── Name index (names + character aliases, whole-word matching) ─────────
+
+    private sealed record NameEntry(Guid EntityId, string MatchText, string CanonicalName, string EntityType);
+
+    private static List<NameEntry>? nameIndexCache;
+    private static DateTime nameIndexBuiltAt = DateTime.MinValue;
+
+    /// <summary>
+    /// Match texts for every active entity: the entity Name plus, for characters,
+    /// every CharacterAliases value (this is what lets prose that says just "Kyle"
+    /// index against "Kyle Ellen Corbin"). Cached for 60s so the bulk backfill
+    /// builds it once instead of once per beat.
+    /// </summary>
+    private async Task<List<NameEntry>> GetNameIndexAsync(CancellationToken ct)
+    {
+        if (nameIndexCache is { } cached && (DateTime.UtcNow - nameIndexBuiltAt) < TimeSpan.FromSeconds(60))
+            return cached;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var entities = await db.Entities
+            .Where(e => e.IsActive && e.Name != "")
+            .Select(e => new { e.Id, e.Name, e.EntityType })
+            .ToListAsync(ct);
+
+        var aliasRows = await db.Characters
+            .SelectMany(c => c.Aliases.Select(a => new { c.Id, a.Value }))
+            .ToListAsync(ct);
+
+        var byId = entities.ToDictionary(e => e.Id);
+        var index = new List<NameEntry>(entities.Count + aliasRows.Count);
+
+        // Longer match texts first so a hit on "Kyle Ellen Corbin" short-circuits "Kyle".
+        foreach (var e in entities)
+            if (e.Name.Length >= 3)
+                index.Add(new NameEntry(e.Id, e.Name, e.Name, e.EntityType));
+
+        foreach (var a in aliasRows)
+            if (!string.IsNullOrWhiteSpace(a.Value) && a.Value.Length >= 3 && byId.TryGetValue(a.Id, out var owner))
+                index.Add(new NameEntry(owner.Id, a.Value, owner.Name, owner.EntityType));
+
+        var built = index.OrderByDescending(e => e.MatchText.Length).ToList();
+        nameIndexCache = built;
+        nameIndexBuiltAt = DateTime.UtcNow;
+        return built;
+    }
+
+    /// <summary>Case-insensitive whole-word containment: the match may not be
+    /// flanked by letters or digits ("held" no longer matches "Eld").</summary>
+    private static bool ContainsWholeWord(string text, string word)
+    {
+        int i = 0;
+        while ((i = text.IndexOf(word, i, StringComparison.OrdinalIgnoreCase)) >= 0)
+        {
+            bool leftOk  = i == 0 || !char.IsLetterOrDigit(text[i - 1]);
+            int end = i + word.Length;
+            bool rightOk = end >= text.Length || !char.IsLetterOrDigit(text[end]);
+            if (leftOk && rightOk) return true;
+            i += 1;
+        }
+        return false;
     }
 
     /// <summary>
