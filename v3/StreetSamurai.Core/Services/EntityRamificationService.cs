@@ -75,7 +75,7 @@ public class EntityRamificationService(
         foreach (var entry in index)
         {
             if (hits.ContainsKey(entry.EntityId)) continue;
-            if (ContainsWholeWord(beatText, entry.MatchText))
+            if (ContainsWholeWord(beatText, entry.MatchText, entry.CaseSensitive))
                 hits[entry.EntityId] = entry;
         }
 
@@ -103,7 +103,17 @@ public class EntityRamificationService(
 
     // ── Name index (names + character aliases, whole-word matching) ─────────
 
-    private sealed record NameEntry(Guid EntityId, string MatchText, string CanonicalName, string EntityType);
+    private sealed record NameEntry(Guid EntityId, string MatchText, string CanonicalName, string EntityType, bool CaseSensitive);
+
+    /// <summary>Alias values that are ordinary English words (number words etc.) — too
+    /// ambiguous to index even case-sensitively ("Eight seconds later…").</summary>
+    private static readonly HashSet<string> AliasStopWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "one","two","three","four","five","six","seven","eight","nine","ten",
+        "eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty",
+        "thirty","forty","fifty","sixty","seventy","eighty","ninety","hundred","thousand",
+        "north","south","east","west","left","right",
+    };
 
     private static List<NameEntry>? nameIndexCache;
     private static DateTime nameIndexBuiltAt = DateTime.MinValue;
@@ -136,11 +146,17 @@ public class EntityRamificationService(
         // Longer match texts first so a hit on "Kyle Ellen Corbin" short-circuits "Kyle".
         foreach (var e in entities)
             if (e.Name.Length >= 3)
-                index.Add(new NameEntry(e.Id, e.Name, e.Name, e.EntityType));
+                index.Add(new NameEntry(e.Id, e.Name, e.Name, e.EntityType, CaseSensitive: false));
 
+        // Aliases are proper-noun handles: match case-SENSITIVELY ("Bear said" but not
+        // "couldn't bear it"), skip lowercase-initial epithets ("the wall" would match
+        // that literal phrase in any beat) and ordinary-word aliases.
         foreach (var a in aliasRows)
-            if (!string.IsNullOrWhiteSpace(a.Value) && a.Value.Length >= 3 && byId.TryGetValue(a.Id, out var owner))
-                index.Add(new NameEntry(owner.Id, a.Value, owner.Name, owner.EntityType));
+            if (!string.IsNullOrWhiteSpace(a.Value) && a.Value.Length >= 3
+                && char.IsUpper(a.Value[0])
+                && !AliasStopWords.Contains(a.Value)
+                && byId.TryGetValue(a.Id, out var owner))
+                index.Add(new NameEntry(owner.Id, a.Value, owner.Name, owner.EntityType, CaseSensitive: true));
 
         var built = index.OrderByDescending(e => e.MatchText.Length).ToList();
         nameIndexCache = built;
@@ -150,10 +166,11 @@ public class EntityRamificationService(
 
     /// <summary>Case-insensitive whole-word containment: the match may not be
     /// flanked by letters or digits ("held" no longer matches "Eld").</summary>
-    private static bool ContainsWholeWord(string text, string word)
+    private static bool ContainsWholeWord(string text, string word, bool caseSensitive = false)
     {
+        var cmp = caseSensitive ? StringComparison.Ordinal : StringComparison.OrdinalIgnoreCase;
         int i = 0;
-        while ((i = text.IndexOf(word, i, StringComparison.OrdinalIgnoreCase)) >= 0)
+        while ((i = text.IndexOf(word, i, cmp)) >= 0)
         {
             bool leftOk  = i == 0 || !char.IsLetterOrDigit(text[i - 1]);
             int end = i + word.Length;
