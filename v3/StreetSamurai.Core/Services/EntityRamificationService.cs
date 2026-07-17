@@ -139,6 +139,15 @@ public class EntityRamificationService(
         var aliasRows = await db.Characters
             .SelectMany(c => c.Aliases.Select(a => new { c.Id, a.Value }))
             .ToListAsync(ct);
+        aliasRows.AddRange(await db.Weapons
+            .SelectMany(w => w.Aliases.Select(a => new { w.Id, a.Value }))
+            .ToListAsync(ct));
+        aliasRows.AddRange(await db.Places
+            .SelectMany(p => p.Aliases.Select(a => new { p.Id, a.Value }))
+            .ToListAsync(ct));
+        aliasRows.AddRange(await db.Factions
+            .SelectMany(f => f.Aliases.Select(a => new { f.Id, a.Value }))
+            .ToListAsync(ct));
 
         var byId = entities.ToDictionary(e => e.Id);
         var index = new List<NameEntry>(entities.Count + aliasRows.Count);
