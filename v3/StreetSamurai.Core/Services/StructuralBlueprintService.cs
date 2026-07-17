@@ -484,7 +484,9 @@ public class StructuralBlueprintService
            not on narration about its significance.
         9. INTERTEXTUAL ANCHORS — pick 3-5 from the CANDIDATE ANCHORS list (named in-world works,
            documents, broadcasts). For each, say how the prose references it (a character quotes
-           it, it plays in a scene, it's cited in a report) and optionally which beat (0-based).
+           it, it plays in a scene, it's cited in a report) and optionally which beat (0-based,
+           in the beatIndex field ONLY — never write beat numbers inside howReferenced prose;
+           readers count beats 1-based and embedded numbers drift).
            Named specific references are a human marker (47% vs 24%).
 
         Return STRICT JSON only, no markdown fence, matching:

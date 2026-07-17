@@ -177,7 +177,10 @@ public class NodeDocService
                         var name = a.TryGetProperty("Name", out var n) ? n.GetString() ?? "" : "";
                         var type = a.TryGetProperty("EntityType", out var t) ? t.GetString() ?? "" : "";
                         var how  = a.TryGetProperty("HowReferenced", out var h) ? h.GetString() ?? "" : "";
-                        sb.AppendLine($"  - **{name}** ({type}) — {how}");
+                        // BeatIndex is stored 0-based (blueprint contract); render 1-based for readers.
+                        var beat = a.TryGetProperty("BeatIndex", out var b) && b.ValueKind == JsonValueKind.Number
+                            ? $" (beat {b.GetInt32() + 1})" : "";
+                        sb.AppendLine($"  - **{name}** ({type}) — {how}{beat}");
                     }
                 }
             }
