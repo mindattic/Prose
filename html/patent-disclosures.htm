@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindAttic — Patent Portfolio: Invention Disclosures</title>
+  <style>
+    :root {
+      --ground:    #F7F4EE;
+      --ground-2:  #EDEAE2;
+      --ground-3:  #E4E0D6;
+      --text:      #1C1A17;
+      --text-dim:  #5A5650;
+      --accent:    #8C6B1A;
+      --accent-2:  #B8901F;
+      --border:    #C8C0B0;
+      --code-bg:   #ECEAE2;
+      --claim-bar: #8C6B1A;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ground:    #111014;
+        --ground-2:  #1C1A1F;
+        --ground-3:  #242028;
+        --text:      #E4E0D8;
+        --text-dim:  #8A8680;
+        --accent:    #C8A040;
+        --accent-2:  #E0B84A;
+        --border:    #2E2A26;
+        --code-bg:   #1C1A1F;
+        --claim-bar: #C8A040;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root { --sidebar-w: 196px; }
+
+    body {
+      background: var(--ground);
+      color: var(--text);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 20px;
+      line-height: 1.75;
+      display: flex;
+    }
+
+    /* ── Fixed left sidebar ── */
+    .sidebar {
+      position: fixed;
+      top: 0; left: 0;
+      width: var(--sidebar-w);
+      height: 100vh;
+      overflow-y: auto;
+      background: var(--ground-2);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+    }
+    .sidebar-brand {
+      padding: 22px 16px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-org {
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .sidebar-sub {
+      font-family: system-ui, sans-serif;
+      font-size: 11px;
+      color: var(--text-dim);
+      line-height: 1.4;
+    }
+    .sidebar-links {
+      padding: 10px 0 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar-links a {
+      display: block;
+      padding: 7px 16px;
+      text-decoration: none;
+      border-left: 3px solid transparent;
+      transition: background 0.1s, border-color 0.1s;
+    }
+    .sidebar-links a:hover { background: var(--ground-3); }
+    .sidebar-links a.active {
+      border-left-color: var(--accent);
+      background: var(--ground-3);
+    }
+    .sidebar-ref {
+      display: block;
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 1px;
+    }
+    .sidebar-name {
+      display: block;
+      font-family: system-ui, sans-serif;
+      font-size: 11px;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .sidebar-links a.index-link .sidebar-name {
+      font-size: 11px;
+      color: var(--text-dim);
+      font-style: italic;
+    }
+    .sidebar-links .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 6px 16px;
+    }
+
+    /* ── Page container ── */
+    .page {
+      margin-left: var(--sidebar-w);
+      max-width: 820px;
+      padding: 48px 40px 80px;
+      min-height: 100vh;
+    }
+
+    /* ── Cover ── */
+    .cover-header {
+      border-top: 4px solid var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding: 36px 0 28px;
+      margin-bottom: 36px;
+    }
+    .cover-eyebrow {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .cover-title {
+      font-size: 30px;
+      font-weight: normal;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .cover-sub {
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+    }
+    .cover-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 14px 28px;
+    }
+    .meta-label {
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 3px;
+    }
+    .meta-value { font-size: 13px; color: var(--text); }
+
+    /* ── Index table ── */
+    .index-table { width: 100%; border-collapse: collapse; margin: 28px 0 40px; }
+    .index-table th {
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-align: left;
+      padding: 6px 12px 6px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .index-table td {
+      padding: 10px 12px 10px 0;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .index-table td:first-child {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .index-table td:nth-child(2) {
+      font-size: 13.5px;
+      font-weight: bold;
+      color: var(--text);
+    }
+    .index-table td:nth-child(2) a { color: var(--text); text-decoration: none; }
+    .index-table td:nth-child(2) a:hover { color: var(--accent); }
+    .index-table td:nth-child(3) {
+      font-family: system-ui, sans-serif;
+      font-size: 12.5px;
+      color: var(--text-dim);
+    }
+
+    /* ── Disclosure separator ── */
+    .disc-sep {
+      border: none;
+      border-top: 2px solid var(--border);
+      margin: 56px 0 48px;
+    }
+
+    /* ── Disclosure header ── */
+    .disc-header {
+      border-top: 3px solid var(--accent);
+      padding: 22px 0 18px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .disc-ref {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .disc-title {
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 1.25;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .disc-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 32px;
+    }
+    .disc-meta-item { display: flex; gap: 8px; align-items: baseline; }
+    .disc-meta-item .meta-label { margin-bottom: 0; }
+
+    /* ── Abstract box ── */
+    .abstract-box {
+      border: 1px solid var(--border);
+      background: var(--ground-2);
+      padding: 16px 20px;
+      margin-bottom: 28px;
+    }
+    .abstract-box p {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      line-height: 1.65;
+      color: var(--text);
+      max-width: none;
+      margin: 0;
+    }
+
+    /* ── Sections ── */
+    .section { margin-bottom: 32px; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-num {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+    }
+    .section-title { font-size: 14px; font-weight: bold; letter-spacing: 0.02em; color: var(--text); }
+
+    p {
+      margin-bottom: 10px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      line-height: 1.75;
+      max-width: 70ch;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    ul.body-list { margin: 8px 0 12px 0; padding-left: 20px; }
+    ul.body-list li {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    /* ── Claims ── */
+    .claims-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .claim {
+      border-left: 3px solid var(--claim-bar);
+      padding: 12px 14px 12px 18px;
+      background: var(--ground-2);
+    }
+    .claim-num {
+      font-family: 'Courier New', monospace;
+      font-size: 9.5px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 5px;
+    }
+    .claim p {
+      font-family: 'Courier New', monospace;
+      font-size: 12.5px;
+      line-height: 1.6;
+      color: var(--text);
+      max-width: none;
+      margin: 0;
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      background: var(--code-bg);
+      padding: 1px 4px;
+      color: var(--accent-2);
+    }
+
+    /* ── Panel show/hide (managed by JS) ── */
+    section[id] { display: none; }
+    section[id].visible { display: block; }
+
+    /* ── Hide separators between sections ── */
+    .disc-sep { display: none; }
+
+    /* ── Back link hidden in panel mode ── */
+    .back-link { display: none; }
+
+    /* ── Footer ── */
+    .portfolio-footer {
+      margin-top: 64px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: var(--text-dim);
+      line-height: 1.6;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="sidebar-brand">
+    <div class="sidebar-org">MindAttic</div>
+    <div class="sidebar-sub">Patent Portfolio<br>Invention Disclosures</div>
+  </div>
+  <div class="sidebar-links">
+    <a href="#cover" class="index-link active" data-target="cover">
+      <span class="sidebar-ref">SS-DISC-000</span>
+      <span class="sidebar-name">Portfolio Index</span>
+    </a>
+    <div class="divider"></div>
+    <a href="#disc-001" data-target="disc-001">
+      <span class="sidebar-ref">SS-DISC-001</span>
+      <span class="sidebar-name">Dynamic Context Memory</span>
+    </a>
+    <a href="#disc-002" data-target="disc-002">
+      <span class="sidebar-ref">SS-DISC-002</span>
+      <span class="sidebar-name">Structural Blueprint</span>
+    </a>
+    <a href="#disc-003" data-target="disc-003">
+      <span class="sidebar-ref">SS-DISC-003</span>
+      <span class="sidebar-name">Quorum Review</span>
+    </a>
+    <a href="#disc-004" data-target="disc-004">
+      <span class="sidebar-ref">SS-DISC-004</span>
+      <span class="sidebar-name">Plant/Payoff Registry</span>
+    </a>
+    <a href="#disc-005" data-target="disc-005">
+      <span class="sidebar-ref">SS-DISC-005</span>
+      <span class="sidebar-name">Beat-Mode Pacing</span>
+    </a>
+    <a href="#disc-006" data-target="disc-006">
+      <span class="sidebar-ref">SS-DISC-006</span>
+      <span class="sidebar-name">Voice Harvest</span>
+    </a>
+    <a href="#disc-007" data-target="disc-007">
+      <span class="sidebar-ref">SS-DISC-007</span>
+      <span class="sidebar-name">Emotional Rubric</span>
+    </a>
+    <a href="#disc-008" data-target="disc-008">
+      <span class="sidebar-ref">SS-DISC-008</span>
+      <span class="sidebar-name">Continuity Claims</span>
+    </a>
+    <a href="#disc-009" data-target="disc-009">
+      <span class="sidebar-ref">SS-DISC-009</span>
+      <span class="sidebar-name">Gateway / Sequel</span>
+    </a>
+    <a href="#disc-010" data-target="disc-010">
+      <span class="sidebar-ref">SS-DISC-010</span>
+      <span class="sidebar-name">Noun Enforcement</span>
+    </a>
+  </div>
+</nav>
+
+<div class="page">
+
+<!-- ═══════════════════════════════════════════════════════════ COVER -->
+<section id="cover">
+  <header class="cover-header">
+    <div class="cover-eyebrow">Patent Portfolio · Pre-Filing Confidential</div>
+    <h1 class="cover-title">MindAttic Invention Disclosures</h1>
+    <p class="cover-sub">Novel systems and methods in the StreetSamurai narrative generation engine</p>
+    <div class="cover-meta">
+      <div><div class="meta-label">Inventor</div><div class="meta-value">Ryan DeBraal</div></div>
+      <div><div class="meta-label">Organization</div><div class="meta-value">MindAttic</div></div>
+      <div><div class="meta-label">Date</div><div class="meta-value">2026-07-16</div></div>
+      <div><div class="meta-label">Count</div><div class="meta-value">10 Disclosures</div></div>
+    </div>
+  </header>
+
+  <table class="index-table">
+    <thead>
+      <tr><th>Reference</th><th>Title</th><th>Core Novelty</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>SS-DISC-001</td><td><a href="#disc-001">Dynamic Context Memory</a></td><td>Ephemeral .md files materialized from DB, evicted after N beats without access</td></tr>
+      <tr><td>SS-DISC-002</td><td><a href="#disc-002">Structural Blueprint System</a></td><td>9 structural dimensions committed before prose; outlier-seeking mandatory</td></tr>
+      <tr><td>SS-DISC-003</td><td><a href="#disc-003">Multi-Provider Expert Persona Quorum Review</a></td><td>1000-persona library, round-robin providers, two-tier ballots, psychometric shaping</td></tr>
+      <tr><td>SS-DISC-004</td><td><a href="#disc-004">Plant/Payoff Lifecycle Registry</a></td><td>Three-status lifecycle with transparency certification and orphan audit</td></tr>
+      <tr><td>SS-DISC-005</td><td><a href="#disc-005">Beat-Mode Classification with Prose Rhythm Assignment</a></td><td>Priority-ordered keyword classifier followed by position-proportional rhythm with injected prohibitions</td></tr>
+      <tr><td>SS-DISC-006</td><td><a href="#disc-006">Voice Rule Harvest from Editorial History</a></td><td>Three-source evidence mining into staged rule stores with commit-before-mutate</td></tr>
+      <tr><td>SS-DISC-007</td><td><a href="#disc-007">Eight-Dimension Emotional Rubric Scoring</a></td><td>Parallel LLM scoring on 0–4 universal scale with blocking dimensions and register-adaptive criteria</td></tr>
+      <tr><td>SS-DISC-008</td><td><a href="#disc-008">Multi-Provider Continuity Claim Extraction</a></td><td>Snippet-validated (entity, predicate, object) triples with voter quorum and three-outcome upsert</td></tr>
+      <tr><td>SS-DISC-009</td><td><a href="#disc-009">Gateway/Sequel Regime Detection</a></td><td>Auto-detection from story chain, parallel commandment evaluation, universe-conditional injection</td></tr>
+      <tr><td>SS-DISC-010</td><td><a href="#disc-010">Deterministic Deprecated-Noun Enforcement</a></td><td>Universe-scoped rename registry, whole-word boundary scan, no LLM inference</td></tr>
+    </tbody>
+  </table>
+
+  <p style="font-family: system-ui, sans-serif; font-size: 13px; color: var(--text-dim);">All disclosures are pre-filing confidential documents. Formal claim drafting to be conducted by qualified patent counsel. Inventors believe the combinations of features described herein to be novel and non-obvious over known prior art at time of disclosure.</p>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 001 -->
+<hr class="disc-sep">
+<section id="disc-001">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-001 · Confidential</div>
+    <h2 class="disc-title">Dynamic Context Memory:<br>Beat-Scoped, Drift-Free Context Assembly for Long-Form Narrative Generation</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A system and method for generating and maintaining ephemeral markdown documents from a persistent source repository (database, in-memory object, or equivalent) for use by a large language model, wherein each document remains resident only until it has not been accessed for a configurable number of operations — a "beat," the atomic unit of narrative generation — at which point it is erased from the working set while its source data is preserved in the underlying repository and may be re-materialized on demand.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Context management for large language model inference in long-form narrative generation — specifically, systems and methods for assembling a scoped, relevance-ranked context window on a per-beat basis, preventing context drift while maintaining coherence across extended works.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Background</span></div>
+    <p>When an LLM's context window is loaded with the entirety of a story's supporting documentation, it exhibits <strong>context drift</strong>: contradictions of prior facts, loss of character voice consistency, and hallucination of world details. Prior approaches load all context (causing drift) or load none (producing incoherence). What has been absent is a system that maintains a narrow, current-beat-relevant subset of the full corpus — loading documents when relevant, releasing them when not.</p>
+    <p>A "beat" is the atomic unit of narrative generation: a single story event, scene fragment, or action. This beat-level granularity is finer than chapter-level and coarser than token-level, matching the natural coherence unit of narrative prose.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Key Mechanism — Five-Pass Retrieval Pipeline</span></div>
+    <p>For each beat, five ordered retrieval passes contribute documents to a tiered LRU context stack:</p>
+    <ul class="body-list">
+      <li><strong>Pass 0 — Entity Inference:</strong> Scans the beat goal text for named entity references; materializes compact .md documents from structured DB records for any found. Runs <em>before</em> the candidate query so fresh entity docs participate in passes 3–5.</li>
+      <li><strong>Pass 1 — Always Tier:</strong> Universal invariants pinned to every context; never evicted.</li>
+      <li><strong>Pass 2 — Node Tier:</strong> Story bible scoped to the active story; evicted on story change, not beat count.</li>
+      <li><strong>Pass 3 — Keyword Trigger:</strong> Documents whose declared <code>triggers</code> field intersects the beat text, with stopword filtering.</li>
+      <li><strong>Pass 4 — Semantic Embedding:</strong> Top-K documents by vector similarity, subject to a minimum threshold.</li>
+      <li><strong>Pass 5 — Relational Cascade:</strong> For each resident document, loads declared <code>related:</code> neighbors one level deep — no recursive fan-out.</li>
+    </ul>
+    <p>Entity documents are stored as database-only rows (<code>FilePath=""</code>, <code>SyncedBy="inferred"</code>) — never written to disk. A SHA-256 hash gate makes re-materialization of unchanged entities a no-op. Documents carry YAML frontmatter declaring <code>tier:</code>, <code>triggers:</code>, and <code>scope:</code> fields that override heuristically derived classifications without code changes.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">IV.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A computer-implemented method for assembling a context window for LLM inference comprising: receiving a generation target specifying a narrative unit (beat); executing ordered retrieval passes comprising at least a universal-document pass, a story-scoped pass, a keyword-trigger pass, a semantic-embedding pass, and a relational-cascade pass; assembling retrieved documents into a token-budgeted block; and evicting documents not refreshed within a configurable beat-count threshold.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Tiered Eviction</div><p>The method of claim 1, wherein documents are classified into tiers: always (never evicted); node (evicted on story change, not beat count); topic (evicted after N beats without retrieval).</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Entity Materialization</div><p>The method of claim 1, wherein, prior to the keyword-trigger pass, entity references are inferred from the generation target and a context document is materialized from a structured database record without producing a corresponding disk file, made immediately available to subsequent passes in the same invocation.</p></li>
+      <li class="claim"><div class="claim-num">Claim 4 — Hash-Gated Materialization</div><p>The method of claim 3, wherein materialization computes a hash of the entity record and is a no-operation when the hash matches a stored value.</p></li>
+      <li class="claim"><div class="claim-num">Claim 5 — Relational Cascade</div><p>The method of claim 1, wherein the relational-cascade pass reads a relationship field on resident documents and loads related documents not already resident, with cascade depth capped at one level.</p></li>
+      <li class="claim"><div class="claim-num">Claim 6 — Frontmatter Override</div><p>The method of claim 1, wherein documents carry structured metadata declaring explicit tier, trigger terms, or scope, overriding heuristically derived values without code modification.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 002 -->
+<hr class="disc-sep">
+<section id="disc-002">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-002 · Confidential</div>
+    <h2 class="disc-title">Structural Blueprint System:<br>Pre-Prose Structural Commitment as AI-Fiction Countermeasure</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems / Creative Computing</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A system and method for committing nine interdependent structural dimensions of a long-form narrative — subplot plan, temporal scheme, resolution mode, moral polarity, escalation curve, event type palette, form device, ending style, and intertextual anchors — in a single generation pass before any prose is written, with mandatory outlier-seeking and per-beat structural slice injection at write time.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Structural planning and countermeasures for AI-generated long-form narrative — specifically, methods for pre-committing narrative structure parameters to reduce statistical detectability and prevent structural drift across generation calls.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Background</span></div>
+    <p>Research (arXiv 2604.03136, UMD/Google DeepMind 2025, corpus of 61,608 stories) establishes that AI-generated fiction is classifiable at 93.2% accuracy from narrative-structure decisions alone — not prose style. The strongest single AI marker is internal-understanding resolution (a character "understands" or "realizes" something), present in 47% of AI stories vs. 27% of human stories. This makes structural pre-commitment — made before any prose — the only effective systemic countermeasure.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Key Mechanism</span></div>
+    <p>A single LLM call commits nine structural parameters simultaneously before prose generation begins. Critically, the call's Step 0 is mandatory outlier-seeking: the model enumerates the three most obvious resolutions for the given premise and explicitly forbids them before designing, grounded in the empirical finding that human stories are statistical outliers 57.8% of the time.</p>
+    <p>The nine committed dimensions are: <code>SubplotPlan</code> (beat indexes carrying the B-story), <code>TemporalPlan</code> (linear/frame/nonlinear with cut beat index), <code>ResolutionMode</code> (external/unresolved/mixed — internal-understanding is explicitly excluded as a forbidden value), <code>MoralPolarity</code> (ambivalent/clear), <code>EscalationCurve</code> (per-unit integer 1–10 array, non-decreasing act-over-act), <code>EventTypePalette</code> (per-unit event type with revelation mode), <code>FormDevice</code> (optional formal originality choice), <code>EndingStyle</code> (avalanche/quiet with <code>NoEpilogue</code> flag), and <code>IntertextualAnchors</code> (3–5 named in-world entities drawn via semantic embedding, <code>k=8</code>).</p>
+    <p>At write time, <code>BuildBeatInjectionAsync()</code> injects the relevant per-unit slice into each prose generation prompt. Granularity auto-scales at <code>ChapterGranularityThreshold = 60</code> beats: short works plan per-beat; book-scale works plan per-chapter. A <code>RetrofitAsync()</code> path infers the blueprint from already-written prose, enabling the audit service to identify structural deviations from the story's own implied commitments.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">IV.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A computer-implemented method for generating long-form narrative comprising: enumerating and forbidding the N most statistically probable structural resolutions for a given narrative premise before designing the structure; simultaneously committing at least subplot plan, temporal scheme, resolution mode, moral polarity, escalation curve, event type palette, and ending style in a single generation pass before any prose unit is written; and injecting a per-unit structural slice derived from the committed blueprint into each prose generation call.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Prohibited Resolution Mode</div><p>The method of claim 1, wherein resolution mode excludes internal-understanding resolution as a permitted value, based on empirical detectability data establishing it as a marker of AI-generated content.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Non-Decreasing Escalation</div><p>The method of claim 1, wherein escalation curve is represented as a non-decreasing integer array across act boundaries, and wherein violation of the non-decreasing constraint is detected and reported by a post-generation audit service.</p></li>
+      <li class="claim"><div class="claim-num">Claim 4 — Granularity Auto-Scaling</div><p>The method of claim 1, wherein planning granularity is automatically set to per-unit for works below a threshold beat count and to per-chapter for works above that threshold.</p></li>
+      <li class="claim"><div class="claim-num">Claim 5 — Retrofit Inference</div><p>A method for inferring structural blueprint parameters from already-written prose, enabling audit of a completed narrative against its own implied structural commitments without a prior explicit planning pass.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 003 -->
+<hr class="disc-sep">
+<section id="disc-003">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-003 · Confidential</div>
+    <h2 class="disc-title">Multi-Provider Expert Persona Quorum Review:<br>Stratified Ballot System with Psychometric Shaping and Audience Clustering</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems / Quality Evaluation</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A two-tier stratified review system that distributes scored reading ballots across a library of over 1,000 distinct reader personas and multiple cloud LLM providers in round-robin fashion, shapes each persona's evaluation criteria via Big Five psychometric profiles, selectively upgrades a proportion of ballots to full prose criticism based on score distribution, and clusters ballots into emergent audience segments for per-beat decision synthesis.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Quality evaluation of LLM-generated long-form narrative — specifically, methods for multi-perspective scored review that varies both reader identity and model identity across ballots to reduce systematic bias.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Key Mechanism</span></div>
+    <p>The system draws from a 1,000+ persona library and round-robins assignments across multiple trusted LLM providers (<code>claude-api</code>, <code>claude-team</code>, <code>openai</code>, <code>gemini</code>, <code>deepseek</code>) so both model identity and reader viewpoint vary independently across ballots. This controls for provider-specific aesthetic biases that would otherwise distort aggregate scores.</p>
+    <p>Tier 1 issues cheap score-only ballots: each persona returns <code>score</code> (1–100), <code>flow</code>, <code>prose_gripe</code> (≤10 words), <code>logic_gripe</code> (≤10 words), and <code>beat_scores</code> (per-beat 1–5). Tier 2 upgrades the most informative ballots to full prose reviews: <code>SelectInformative()</code> selects <code>k×3/10</code> harshest, <code>k×3/10</code> most generous, and <code>k×4/10</code> from the median band — capturing the full distribution rather than sampling uniformly.</p>
+    <p>Each persona prompt incorporates a Big Five psychometric profile summary: high Openness tolerates strange/lyrical content; high Conscientiousness is impatient with structural looseness; high Neuroticism feels stakes sharply. Ballots are clustered via a reviewer×beat score matrix into emergent audience segments; a Pareto/contested per-beat decision report surfaces systematic disagreements. A structural diagnostic pre-flight gates ballot spending — blocking pre-flight failures return immediately without consuming API calls.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A method for quality evaluation of LLM-generated narrative comprising: selecting personas from a library; distributing evaluation ballots across multiple LLM providers in round-robin fashion; issuing tier 1 score-only ballots and tier 2 full-prose ballots; selecting ballots for tier 2 upgrade by sampling the harshest, most generous, and median-band proportions of tier 1 results; and clustering ballots into audience segments.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Psychometric Shaping</div><p>The method of claim 1, wherein each persona prompt incorporates a Big Five psychometric profile that modulates evaluation criteria across dimensions including openness, conscientiousness, and neuroticism.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Structured Tier 1 Ballot</div><p>The method of claim 1, wherein tier 1 ballots require per-narrative-unit scores in addition to an overall score, enabling per-beat quality analysis without the token cost of full prose criticism.</p></li>
+      <li class="claim"><div class="claim-num">Claim 4 — Pre-Flight Gating</div><p>The method of claim 1, wherein a structural diagnostic pre-flight executes before any ballot is issued, and blocking pre-flight failures terminate evaluation without consuming LLM inference budget.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 004 -->
+<hr class="disc-sep">
+<section id="disc-004">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-004 · Confidential</div>
+    <h2 class="disc-title">Plant/Payoff Lifecycle Registry:<br>Three-Status Tracking with Transparency Certification and Orphan Audit</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems / Narrative Computing</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A system for registering narrative plant/payoff pairs as first-class records with a three-status lifecycle (planned, seeded, paid-off), two separate explicit linking operations binding each to authored prose beats, a transparency certification step distinct from payoff completion, and an automated audit identifying three distinct failure categories: orphaned plants, opaque payoffs, and coverage gaps.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Narrative coherence tracking in long-form AI-assisted generation — specifically, systems for managing the lifecycle of seeded narrative details (plants) and their later fulfillments (payoffs) to ensure reader reward without breaking first-pass comprehension.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Key Mechanism</span></div>
+    <p>The system enforces a fundamental narrative invariant: "reward re-reading without requiring it" — first-pass comprehension must be complete without the plant, but the returning reader gains additional meaning. Each pair stores a <code>PlantDescription</code>, <code>PayoffDescription</code>, and <code>Category</code>.</p>
+    <p>Linking is two separate acts: <code>LinkPlantBeatAsync(id, beatId)</code> binds the plant to its prose beat after writing; <code>LinkPayoffBeatAsync(id, beatId)</code> binds the payoff separately. This creates a three-status lifecycle: <code>planned</code> (neither beat linked), <code>seeded</code> (plant beat linked, payoff null), <code>paid off</code> (both linked). Separately, <code>SetTransparencyAsync()</code> certifies whether a cold reader can follow the payoff — a payoff marked paid-off but not certified transparent generates a <code>TRANSPARENCY ISSUE</code> flag and is injected into beat generation prompts as a constraint. <code>AuditAsync()</code> identifies three failure categories independently, enabling targeted rather than undifferentiated quality reports.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (System)</div><p>A system for tracking narrative plant/payoff pairs comprising: a registry associating a plant description and payoff description with a category and story identifier; two separate operations linking plant and payoff each to distinct prose unit identifiers; a transparency certification operation distinct from payoff completion; and an audit operation identifying orphaned plants, opaque payoffs, and coverage gaps as separate failure categories.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Generation Context Injection</div><p>The system of claim 1, wherein registered pairs and their transparency status are injected into prose generation prompts as authorial constraints for subsequent narrative units.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Commandment Enrichment</div><p>The system of claim 1, wherein the live plant/payoff registry data is injected into specific quality commandment evaluation prompts, providing factual evidence for commandments that assess narrative reward and reader re-read value.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 005 -->
+<hr class="disc-sep">
+<section id="disc-005">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-005 · Confidential</div>
+    <h2 class="disc-title">Beat-Mode Classification with Prose Rhythm Directive Assignment:<br>Priority-Ordered Keyword Quorum with Position-Proportional Override</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems / Natural Language Generation</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A two-stage system that first classifies each narrative beat into one of six modes (Combat, Emotional Climax, Dialogue, Transition, Revelation, Narrative) via priority-ordered keyword arrays with associated confidence scores, then assigns one of five prose rhythm directives (Breathe, Flow, Tighten, Strike, Settle) via fractional narrative position with keyword-based override, and injects multi-line craft directives including explicit prohibitions into the generation prompt.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Adaptive prose style generation — specifically, methods for determining and injecting per-beat structural prose constraints based on the beat's semantic content and position within the overall narrative arc.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Key Mechanism</span></div>
+    <p>Stage 1 (Mode Classification): Five keyword arrays are tested in strict priority order, each with a calibrated confidence score. Combat (25 terms, confidence 0.85) supersedes Emotional Climax (13 terms, 0.80) supersedes Dialogue (27 terms, 0.75) supersedes Transition/Revelation (7 terms each, 0.70). A null beat goal defaults to Narrative at 0.50. Classification is logged to <code>BeatModeLog</code> with mode, confidence, and detection method for cross-universe analytics.</p>
+    <p>Stage 2 (Rhythm Assignment): <code>GetPacing(beatIndex, totalBeats, beatGoal)</code> computes a fractional position and maps to one of five <code>PaceMode</code> values via threshold ranges (Breathe &lt;0.15, Flow &lt;0.40, Tighten &lt;0.70, Strike &lt;0.85, Settle ≥0.85). A keyword override layer then supersedes the positional assignment for terms like fight/chase → Strike, discover/arrive → Breathe, aftermath/grief → Settle. Each mode maps to a multi-line <code>ProseGuidance</code> string injected into the LLM prompt, including explicit prohibitions — for example, Settle mandates a hard stop against narrator moral gloss ("do NOT have the narrator summarize what the scene meant").</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A method for adaptive prose generation comprising: classifying a narrative unit into a beat mode by testing keyword arrays in strict priority order with associated confidence scores; assigning a prose rhythm mode by computing a fractional position within the total narrative length and applying keyword-based overrides; and injecting a prose directive string including explicit craft prohibitions into the generation prompt.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Priority-Ordered Keyword Quorum</div><p>The method of claim 1, wherein beat mode classification resolves by the first keyword array that produces a match, ensuring higher-priority modes supersede lower-priority modes regardless of match strength.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Prohibition-Bearing Directives</div><p>The method of claim 1, wherein at least one rhythm directive includes explicit prohibitions on generation behavior — structural rules expressed as "do NOT" constraints — in addition to prescriptive stylistic guidance.</p></li>
+      <li class="claim"><div class="claim-num">Claim 4 — Persistent Mode Logging</div><p>The method of claim 1, wherein classified mode, confidence score, and detection method are persisted per narrative unit to a log table enabling cross-story and cross-universe pattern analysis.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 006 -->
+<hr class="disc-sep">
+<section id="disc-006">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-006 · Confidential</div>
+    <h2 class="disc-title">Voice Rule Harvest from High-Scoring Editorial History:<br>Three-Source Evidence Mining with Staged Commit-Before-Mutate Application</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems / Adaptive Generation</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A system and method for automatically extracting prose voice rules from three evidence sources — temporal beat-version edit diffs, explicit author directives, and finished prose text — via LLM distillation into a staged change log, with a commit-before-mutate application pattern ensuring no partial state on failure, and automatic trigger when a story's review score exceeds a threshold.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Adaptive voice rule generation for AI-assisted narrative systems — specifically, methods for inferring generalizable prose style constraints from observed author editing behavior and review performance.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Key Mechanism</span></div>
+    <p>The service mines three evidence sources per story node: (1) temporal beat-version edit history — for each beat with two or more versions, the oldest (originally generated) text is diffed against the current final text, capturing up to 24 <code>(position, before, after)</code> edit pairs; (2) author directives logged to <code>VoiceChangeLog</code> as observed-status entries; (3) finished prose text (sampled to 16,000 chars).</p>
+    <p>An LLM call at temperature 0.2 distills the smallest set of concrete, verifiable rules from these inputs, targeting one of four named live rule stores: <code>literary_rules.prohibitions</code>, <code>literary_rules.paragraph_requirements</code>, <code>tone_bible.tone_rules</code>, <code>tone_bible.dialogue_rules</code>, or a per-character narration voice target. All outputs enter the change log as <code>Status="proposed"</code> — nothing touches the live stores until <code>ApplyAsync()</code> is explicitly called. At apply time, the system commits status to "applied" in the database before mutating the live store — a commit-before-mutate pattern ensuring no partial state on failure. When multiple high-scoring stories are harvested together, the LLM is told the peer count so cross-story common patterns are upweighted as stronger rule candidates.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A method for adaptive voice rule generation comprising: mining edit diffs from temporal beat-version history, author directives, and finished prose text; distilling generalizable prose style rules via LLM inference; staging all outputs as proposed in a change log before any live store mutation; and committing status to the change log before mutating the live rule store, such that no partial state can arise from interrupted application.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Temporal Diff Evidence</div><p>The method of claim 1, wherein edit evidence is derived from a system-versioned temporal table recording all versions of each narrative unit, enabling reconstruction of original-generated vs. final-author text for any unit with multiple versions.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Cross-Story Upweighting</div><p>The method of claim 1, wherein the LLM distillation prompt is informed of the number of peer stories being harvested simultaneously, causing patterns common across multiple stories to be weighted more heavily than single-story observations.</p></li>
+      <li class="claim"><div class="claim-num">Claim 4 — Score-Triggered Automatic Harvest</div><p>The method of claim 1, wherein exceeding a configured review score threshold automatically triggers the harvest process, creating a feedback loop between quality evaluation and generation rule refinement.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 007 -->
+<hr class="disc-sep">
+<section id="disc-007">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-007 · Confidential</div>
+    <h2 class="disc-title">Eight-Dimension Emotional Rubric Scoring at Narrative Beat Level:<br>Register-Adaptive Criteria with Blocking Dimensions and Per-Beat Curve</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems / Quality Evaluation</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A system for scoring the emotional quality of narrative units across eight dimensions simultaneously via parallel LLM calls, with a universal 0–4 scale (0=absent, 1=asserted, 2=mixed, 3=embodied, 4=instrumental), at least two blocking dimensions that file quality findings when scored at or below a threshold, and register-adaptive scoring criteria derived from the story's detected prose register.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Automated quality assessment of AI-generated narrative — specifically, per-beat multi-dimensional emotional scoring with register-specific evaluation criteria and automated quality finding generation.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Key Mechanism</span></div>
+    <p>Eight <code>EmotionalDimension</code> values are scored simultaneously via parallel LLM calls (temperature 0.1): <strong>WantNeedDivergence</strong> (BLOCKING) — gap between on-page Want and arc-level Need; <strong>TheUnsaid</strong> — meaning in withheld content; <strong>ObjectsAndGestures</strong> — tenderness through physical objects rather than stated feeling; <strong>RegisterShiftAsInstrument</strong> — temperature shifts on cue; <strong>EarnedInteriority</strong> — rare, load-bearing interior lines; <strong>RelationalSubtext</strong> — power/evasion dynamics in dialogue; <strong>CostFeltNotAsserted</strong> (BLOCKING) — price of wins felt rather than stated; <strong>ContradictionAndAmbivalence</strong> — gap between felt and shown.</p>
+    <p>The universal 0–4 scale anchors are identical across dimensions: 0=Absent (flat or stated), 1=Asserted (labeled), 2=Mixed (inconsistent), 3=Embodied (through behavior/object/silence), 4=Instrumental (the dimension IS the emotional work). Register detection from the story's bible text maps to one of GREY/VULTURES/CODA/JOY/SORROW/Fantasy and injects distinct score-4 criterion descriptions per dimension — for example, GREY's <code>CostFeltNotAsserted</code> score-4 criterion is "the gap between what the system records and what it cannot" rather than character affect. Blocking dimensions scoring ≤1 file <code>FindingsService</code> entries with severity High (score=0) or Medium (score=1). A pass 2 produces a per-beat emotional curve written to <code>Beat.EmotionalScore</code>.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A method for emotional quality scoring of narrative units comprising: evaluating eight emotional dimensions simultaneously via parallel LLM calls; applying a four-point universal scale where 0=absent, 1=asserted, 2=mixed, 3=embodied, and 4=instrumental; designating at least two dimensions as blocking such that scores below a threshold automatically generate quality findings; detecting a prose register from story metadata and injecting register-specific scoring criteria for each dimension; and computing an aggregate score as the mean of dimensional scores.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Register-Adaptive Criteria</div><p>The method of claim 1, wherein scoring criteria for the score-4 anchor of at least one dimension are drawn from a register-specific mapping, such that the definition of instrumental emotional quality differs between register classes.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Per-Beat Curve</div><p>The method of claim 1, wherein dimensional scores are aggregated and written to each narrative unit record, enabling trend analysis of emotional quality across a story's full arc.</p></li>
+      <li class="claim"><div class="claim-num">Claim 4 — Character Context Enrichment</div><p>The method of claim 1, wherein each dimension's evaluation prompt is enriched with the protagonist's Want, Need, Wound, and Flaw from an emotional ledger, grounding scoring in the story's structural character arc rather than the beat alone.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 008 -->
+<hr class="disc-sep">
+<section id="disc-008">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-008 · Confidential</div>
+    <h2 class="disc-title">Multi-Provider Continuity Claim Extraction with Triple Validation:<br>Snippet-Verified (Entity, Predicate, Object) Triples with Three-Outcome Upsert</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems / Knowledge Extraction</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A system for extracting narrative continuity facts as structured (entity, predicate, object) triples from prose text, distributing extraction across multiple LLM providers, validating each candidate by confirming its source snippet is a literal substring of the source text, grouping by normalized triple, applying a minimum-voter threshold, and classifying each accepted triple as NEW, CONFIRMED, or CONTRADICTED based on prior state.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Narrative continuity verification — specifically, methods for extracting structured factual claims from prose and validating them against a persistent entity state store to detect contradictions introduced by generative AI.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Key Mechanism</span></div>
+    <p>Each LLM provider is instructed to extract atomic assertions as a JSON array specifying: <code>entity_name</code> (exact as it appears in prose), <code>predicate</code> (short snake_case key, e.g. <code>weapon_carry_location</code>, <code>lives_at</code>), <code>object</code> (concise value), <code>snippet</code> (≤200-char exact quote), <code>voice</code> (narrator/character/inner_monologue), and <code>confidence</code> (low/medium/high). The snippet validation step requires that <code>snippet</code> exist as a literal substring of the source text — eliminating hallucinated citations that did not originate in the prose.</p>
+    <p>Valid candidates are grouped by a normalized key <code>(entity_name.lower(), predicate.lower(), object.lower())</code> with whitespace compression. A <code>minVoters</code> parameter filters candidates seen by fewer than N providers, providing agreement-gated acceptance. Each grouped candidate is entity-resolved through a priority chain (character → place → faction → corponation → generic entities table). <code>ContinuityService.Upsert()</code> returns <code>NEW</code> (first seen), <code>CONFIRMED</code> (same predicate and object seen again), or <code>CONTRADICTED</code> (same predicate, different object) — enabling detection of facts that changed between story beats without requiring a full comparison pass.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A method for narrative continuity tracking comprising: distributing a structured claim extraction query across multiple LLM providers; requiring each extracted claim to specify a source snippet; validating each candidate by confirming the snippet is a literal substring of the source text; grouping candidates by normalized (entity, predicate, object) triple; applying a minimum voter threshold; resolving entity names through a priority chain of typed entity repositories; and classifying each accepted triple as NEW, CONFIRMED, or CONTRADICTED.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Contradiction Detection</div><p>The method of claim 1, wherein CONTRADICTED status is assigned when the predicate of an incoming claim matches a prior record for the same entity but the object value differs, identifying facts that changed inconsistently between narrative units.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Entity Record Extraction</div><p>The method of claim 1 applied to structured entity records rather than prose text, wherein scalar string fields below a length threshold are walked directly as high-confidence claims and prose-style fields are submitted to the same multi-provider extraction pass.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 009 -->
+<hr class="disc-sep">
+<section id="disc-009">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-009 · Confidential</div>
+    <h2 class="disc-title">Gateway/Sequel Regime Detection with Parallel Commandment Evaluation:<br>Auto-Detection, Universe-Conditional Injection, and Plant/Payoff Enrichment</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / AI Systems / Quality Evaluation</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A quality assurance system that automatically detects whether a story occupies a gateway or sequel position in a narrative series by inspecting the presence or absence of a predecessor story identifier, loads a distinct set of codified commandments for each regime, evaluates all commandments in parallel via LLM, enriches plant/payoff-related commandments with live registry data, and conditionally injects universe-specific commandments based on the story's universe identifier.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Story-position-aware quality assurance for serialized AI-generated narrative — specifically, methods for applying different quality criteria based on whether a story introduces a series universe or continues it.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Key Mechanism</span></div>
+    <p>Regime detection from a single field: <code>Node.PreviousNodeId == null</code> selects 8 Gateway Commandments; <code>PreviousNodeId.HasValue</code> selects 8 Sequel Commandments. Each commandment is an independent parallel LLM call returning <code>status</code> (pass/warn/fail), <code>evidence</code> (1–2 sentences citing specific prose), and <code>fix</code>.</p>
+    <p>Gateway commandments enforce: world-texture-led entry (<code>open_grounded</code>), in-register first-mention glossing without dumps (<code>gloss_in_voice</code>), full term before acronym (<code>acronym_after_term</code>), single felt character vulnerability (<code>human_crack</code>), a quiet gesture after plot concludes (<code>land_past_handoff</code>), and re-read reward. The <code>reread_reward</code> and <code>reward_long_memory</code> commandments are enriched at evaluation time with the live <code>PlantPayoff</code> registry for the node, providing factual evidence rather than asking the LLM to infer plant/payoff presence. Universe-specific commandments (e.g. <code>glmz_five_pillars</code>) are appended conditionally based on <code>node.UniverseId</code> — ensuring universe-specific quality criteria never contaminate stories from a different fictional universe. Long manuscripts are clamped keeping the first and last 50,000 chars of texts exceeding 100,000 chars, preserving evidence for both entry and ending commandments.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A method for story-position-aware quality assurance comprising: automatically detecting a gateway or sequel regime from the presence or absence of a predecessor story identifier; loading a distinct commandment set for each regime; evaluating commandments in parallel via LLM, each returning status, evidence, and fix; enriching commandments related to narrative reward with live plant/payoff registry data; and conditionally appending universe-specific commandments based on the story's universe identifier.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Live Registry Enrichment</div><p>The method of claim 1, wherein at least one commandment's evaluation prompt is enriched at query time with the live contents of a plant/payoff registry for the story under evaluation, providing factual evidence rather than requiring the evaluating model to infer plant/payoff presence from prose alone.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Universe-Scoped Injection</div><p>The method of claim 1, wherein universe-specific commandments are appended to the commandment set only for stories whose universe identifier matches a configured universe identifier, ensuring cross-universe contamination is structurally impossible.</p></li>
+      <li class="claim"><div class="claim-num">Claim 4 — Length-Adaptive Clamping</div><p>The method of claim 1, wherein manuscripts exceeding a length threshold are clamped by retaining the first and last N characters, preserving prose evidence relevant to both entry-oriented and ending-oriented commandments.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════ 010 -->
+<hr class="disc-sep">
+<section id="disc-010">
+  <header class="disc-header">
+    <div class="disc-ref">Invention Disclosure · SS-DISC-010 · Confidential</div>
+    <h2 class="disc-title">Deterministic Universe-Scoped Deprecated-Noun Enforcement:<br>Whole-Word Boundary Scan with Chapter-Child Traversal and No LLM Inference</h2>
+    <div class="disc-meta">
+      <div class="disc-meta-item"><span class="meta-label">Date</span><span class="meta-value">2026-07-16</span></div>
+      <div class="disc-meta-item"><span class="meta-label">Classification</span><span class="meta-value">Software / Narrative Computing / Quality Assurance</span></div>
+    </div>
+  </header>
+
+  <div class="abstract-box">
+    <div class="meta-label" style="margin-bottom: 6px;">Abstract</div>
+    <p>A deterministic system for enforcing canonical naming consistency in narrative generation — maintaining a universe-scoped registry of deprecated-to-canonical name mappings, scanning all enabled narrative units within a story node and its chapter children via whole-word boundary checks, reporting violations with ±40-character context snippets, and requiring no LLM inference at any stage.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">I.</span><span class="section-title">Field</span></div>
+    <p>Canonical naming consistency in AI-assisted long-form narrative generation — specifically, deterministic (non-probabilistic, non-LLM) methods for enforcing entity name standards across large prose corpora spanning multiple fictional universes.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">II.</span><span class="section-title">Key Mechanism</span></div>
+    <p>The <code>DeprecatedEntityNames</code> table stores universe-scoped rename rules: <code>DeprecatedName</code>, <code>CanonicalName</code>, <code>Notes</code>, optional <code>EntityId</code> linkage, and <code>UniverseId</code>. All rules are filtered to the active story's <code>UniverseId</code> — a GLMZ rename rule can never flag a Fantasy-universe beat.</p>
+    <p>The scan walks all enabled beats from the story node itself plus one level of chapter children (populated via <code>ParentNodeId</code> lookup), covering both flat story nodes and book-mode nodes whose prose lives in chapter sub-nodes. For each beat's text, each rule is applied via case-insensitive <code>IndexOf</code> with explicit whole-word boundary checks on both sides: <code>!char.IsLetterOrDigit(beat.Text[idx - 1])</code> and <code>!char.IsLetterOrDigit(beat.Text[idx + rule.DeprecatedName.Length])</code>. One match per rule per beat is sufficient. Each violation captures <code>BeatId</code>, <code>BeatNumber</code>, <code>DeprecatedName</code>, <code>CanonicalName</code>, and a snippet of ±40 characters around the match. The report exposes an <code>IsClean</code> boolean for use as a publish gate.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><span class="section-num">III.</span><span class="section-title">Informal Claims</span></div>
+    <ol class="claims-list">
+      <li class="claim"><div class="claim-num">Claim 1 — Independent (Method)</div><p>A method for canonical naming consistency enforcement in narrative generation systems comprising: maintaining a universe-scoped registry mapping deprecated names to canonical names; scanning all enabled narrative units within a story and its chapter children; applying whole-word boundary character checks on both sides of each candidate match; and reporting violations with a context snippet, without any LLM inference at any stage of the process.</p></li>
+      <li class="claim"><div class="claim-num">Claim 2 — Universe Scoping</div><p>The method of claim 1, wherein all rename rules are filtered to the active story's universe identifier before scanning, structurally preventing rename rules from one fictional universe from flagging narrative units belonging to a different universe.</p></li>
+      <li class="claim"><div class="claim-num">Claim 3 — Chapter-Child Traversal</div><p>The method of claim 1, wherein the scan traverses one level of chapter children via parent identifier lookup, covering both flat story nodes and hierarchical book nodes without requiring separate invocations for each structural variant.</p></li>
+      <li class="claim"><div class="claim-num">Claim 4 — EntityId Linkage</div><p>The method of claim 1, wherein each rename rule may optionally link to a structured entity record, enabling the rule registry to remain synchronized with entity renames propagated through the entity management system.</p></li>
+    </ol>
+  </div>
+  <a class="back-link" href="#cover">↑ Back to Index</a>
+</section>
+
+
+<div class="portfolio-footer">
+  MINDATTIC — CONFIDENTIAL · Pre-Filing Patent Portfolio<br>
+  This document constitutes confidential invention disclosures. Do not reproduce or distribute without authorization.<br>
+  10 Disclosures · SS-DISC-001 through SS-DISC-010 · 2026-07-16
+</div>
+
+</div><!-- /page -->
+<script>
+  (function () {
+    var sections = document.querySelectorAll('section[id]');
+    var links    = document.querySelectorAll('.sidebar-links a[data-target]');
+
+    function show(targetId) {
+      sections.forEach(function (s) { s.classList.remove('visible'); });
+      var target = document.getElementById(targetId);
+      if (target) {
+        target.classList.add('visible');
+        document.querySelector('.page').scrollTop = 0;
+        window.scrollTo(0, 0);
+      }
+      links.forEach(function (a) {
+        a.classList.toggle('active', a.dataset.target === targetId);
+      });
+    }
+
+    // Show cover on load
+    show('cover');
+
+    // Wire sidebar links
+    links.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        show(a.dataset.target);
+      });
+    });
+
+    // Support direct URL hash on load
+    if (window.location.hash) {
+      var id = window.location.hash.slice(1);
+      if (document.getElementById(id)) show(id);
+    }
+  })();
+</script>
+</body>
+</html>

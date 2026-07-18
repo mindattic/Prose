@@ -151,7 +151,7 @@ purchased"). Recurs Books II–V as the trade's quartermaster.
   realized one-chapter character.
 - **Renko Moss** — Carrion body-man; the trash-route bookend; resentment maturing into the
   strangest loyalty.
-- **Dr. N. Okafor-Voss (Nadia)** — Atlas scientist, eleven years on ice; "they actually built
+- **Dr. N. Park (Nadia)** — Atlas scientist, eleven years on ice; "they actually built
   one"; "there were nine of you. Ask Marrow." (Launches Book II.)
 - **Ledger** — synthetic operative who cannot model self-deception; can hear Puppeteer; "the
   cargo is the carrier."
@@ -329,7 +329,7 @@ do" question at low stakes and deepens Kyle as a man people trust.)*
    intake. **(world; "dead is the credential")**
 2. Kyle blackmails Carrion driver Renko Moss (the kept receipt) into running him in dead;
    controlled cardiac arrest; wakes on a slab. **(Renko; the trash-route bookend pays at exfil)**
-3. Level B3: a cold unit, "DO NOT ROTATE / ASK MARROW"; inside, Dr. Nadia Okafor-Voss, eleven
+3. Level B3: a cold unit, "DO NOT ROTATE / ASK MARROW"; inside, Dr. Nadia Park, eleven
    years under. **(K: ASK MARROW)**
 4. He wakes her, exfils her in biohazard bags via Moss's bus, pays Moss standard rate, burns the
    manifest.

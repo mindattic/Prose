@@ -115,7 +115,7 @@ The series only works in sequence. The dependency skeleton:
    years, a counterparty instead of an asset. Everything after is a negotiation.
 2. **B1:** Street Meat (re-slotted late in B1) becomes the entity's **first reply**: a contract
    priced at exactly standard rate, pre-paid, client a shell-of-shells — and the cargo is
-   Dr. N. Okafor-Voss, the Atlas fifth name, eleven years on ice. The entity's first invoice
+   Dr. N. Park, the Praxis fifth name, eleven years on ice. The entity's first invoice
    buys the one person who can eventually translate the science. (Nadia must exist OUTSIDE the
    ice before B2 can interrogate Atlas.)
 3. **B2:** Nadia's first words point at MARROW (the Vultures' body-bank archivist — Carrion

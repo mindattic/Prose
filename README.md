@@ -28,6 +28,7 @@ Live at **[streetsamurai.azurewebsites.net](https://streetsamurai.azurewebsites.
 - [Database migrations](#database-migrations)
 - [Deploying to Azure](#deploying-to-azure)
 - [Tests](#tests)
+- [Patent Disclosures](#patent-disclosures)
 - [Status](#status)
 
 ---
@@ -659,6 +660,27 @@ dotnet test v3/StreetSamurai.UnitTests   # NUnit + bUnit
 npx cypress run     # headless e2e
 npx cypress open    # interactive
 ```
+
+---
+
+## Patent Disclosures
+
+Ten invention disclosures documenting novel systems in the StreetSamurai engine. All are pre-filing confidential documents; formal claim drafting to be conducted by qualified patent counsel.
+
+Full disclosures (standalone HTML, open in any browser): **[`html/patent-disclosures.htm`](html/patent-disclosures.htm)**
+
+| Reference | Title | Core Novelty |
+|---|---|---|
+| SS-DISC-001 | **Dynamic Context Memory** | Ephemeral .md files materialized from DB, evicted after N beats without access; five-pass retrieval pipeline with tiered LRU stack |
+| SS-DISC-002 | **Structural Blueprint System** | Nine structural dimensions committed before prose via mandatory outlier-seeking; internal-understanding resolution excluded as forbidden value |
+| SS-DISC-003 | **Multi-Provider Expert Persona Quorum Review** | 1,000-persona library, round-robin LLM providers, two-tier ballots, Big Five psychometric shaping, audience segment clustering |
+| SS-DISC-004 | **Plant/Payoff Lifecycle Registry** | Three-status lifecycle (planned/seeded/paid-off) with independent transparency certification and three-category orphan audit |
+| SS-DISC-005 | **Beat-Mode Classification with Prose Rhythm Assignment** | Priority-ordered keyword quorum (6 modes) followed by fractional-position rhythm assignment (5 modes) with injected prohibition-bearing directives |
+| SS-DISC-006 | **Voice Rule Harvest from Editorial History** | Three-source evidence mining (edit diffs + directives + prose) into staged change log with commit-before-mutate application; score-threshold auto-trigger |
+| SS-DISC-007 | **Eight-Dimension Emotional Rubric Scoring** | Parallel LLM scoring on 0–4 universal scale; two blocking dimensions; register-adaptive criteria; per-beat curve written to narrative unit records |
+| SS-DISC-008 | **Multi-Provider Continuity Claim Extraction** | Snippet-validated (entity, predicate, object) triples; voter quorum gating; three-outcome upsert (NEW / CONFIRMED / CONTRADICTED) |
+| SS-DISC-009 | **Gateway/Sequel Regime Detection** | Auto-detection from predecessor story presence; parallel commandment evaluation enriched with live plant/payoff data; universe-conditional injection |
+| SS-DISC-010 | **Deterministic Deprecated-Noun Enforcement** | Universe-scoped rename registry; whole-word boundary scan; chapter-child traversal; zero LLM inference |
 
 ---
 
