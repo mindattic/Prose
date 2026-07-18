@@ -37,6 +37,11 @@ or reviews from this skill** — if the user wants a score, they will say so exp
    IsChapterStart stranded on disabled beats) / bible agreement.
    Findings: severity (BLOCKER/MODERATE/MINOR) + SortKeys + quoted text + minimal fix proposal.
    Instruct verbatim: "Do not invent problems — if the logic holds, say so."
+   Bible agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): `ss --altitude-audit
+   --slug <slug>` automates the 10,000↔100 ft comparison (bible/blueprint vs chapter
+   synopses; findings filed as OutlineDrift); agents may read the story's
+   `story-synopsis.txt` (or `NodeChapterSummaries`) for cheap chapter-altitude scoping
+   before deep beat reads.
    Cross-story canon (shared characters, series arcs): one additional cross-read agent over the
    affected set when a series story is in scope.
 

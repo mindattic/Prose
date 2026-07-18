@@ -750,6 +750,15 @@ if (args.Contains("--seed-keywords"))
     return;
 }
 
+// CLI mode: three-altitudes agreement audit (designed story vs told story).
+//   ss --altitude-audit (--slug <slug> | --all) [--force-synopsis]
+if (args.Contains("--altitude-audit"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await AltitudeAuditCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: chapter-by-chapter synopsis export (also runs inside --publish).
 //   ss --export-synopsis (--slug <slug> | --all) [--force]
 if (args.Contains("--export-synopsis"))

@@ -27,38 +27,49 @@ public sealed class SynopsisExportService(
     SettingsService settings,
     ILogger<SynopsisExportService> log)
 {
-    // Summarization is comprehension work, not prose craft — cheap tier is correct.
-    private const string SynopsisModel = "claude-haiku-4-5-20251001";
+    // Synopses feed the altitude audit, so fate/motive fidelity is the job — Haiku
+    // repeatedly upgraded "stopped" to "killed" and inferred motives (RTR, 2026-07-18);
+    // Sonnet holds the fidelity rules. Cost is per changed chapter only (hash cache).
+    private const string SynopsisModel = "claude-sonnet-5";
     private const int MaxSourceChars = 180_000;
 
-    private sealed record ChapterUnit(Guid NodeId, int Index, string Title, string SourceText);
+    private sealed record ChapterUnit(Guid NodeId, int Index, string Title, string SourceText, int BeatCount);
+
+    /// <summary>Generates/refreshes all chapter summaries for the story (content-hash
+    /// cached in NodeChapterSummaries) and returns them in reading order. This is the
+    /// chapter-altitude view — consumed by story-synopsis.txt and the altitude audit.</summary>
+    public async Task<List<(int Index, string Title, string Synopsis)>> GetChapterSummariesAsync(
+        Guid storyNodeId, bool force = false, CancellationToken ct = default)
+    {
+        var chapters = await LoadChapterUnitsAsync(storyNodeId, ct);
+        var sections = new List<(int Index, string Title, string Synopsis)>(chapters.Count);
+        foreach (var ch in chapters)
+        {
+            ct.ThrowIfCancellationRequested();
+            var synopsis = await GetOrGenerateAsync(storyNodeId, ch, force, ct);
+            sections.Add((ch.Index, ch.Title, synopsis));
+        }
+        return sections;
+    }
 
     /// <summary>Generates/refreshes all chapter summaries for the story and writes
     /// story-synopsis.txt to its publish folder. Returns the file path, or null when
     /// the story has no enabled prose.</summary>
     public async Task<string?> ExportAsync(Guid storyNodeId, bool force = false, CancellationToken ct = default)
     {
-        var chapters = await LoadChapterUnitsAsync(storyNodeId, ct);
-        if (chapters.Count == 0) return null;
+        var sections = await GetChapterSummariesAsync(storyNodeId, force, ct);
+        if (sections.Count == 0) return null;
 
         string storyTitle;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
             storyTitle = await db.Nodes.AsNoTracking().Where(n => n.Id == storyNodeId)
                 .Select(n => n.Title).FirstAsync(ct);
 
-        var sections = new List<(string Title, string Synopsis)>(chapters.Count);
-        foreach (var ch in chapters)
-        {
-            ct.ThrowIfCancellationRequested();
-            var synopsis = await GetOrGenerateAsync(storyNodeId, ch, force, ct);
-            sections.Add((ch.Title, synopsis));
-        }
-
         var sb = new StringBuilder();
         sb.AppendLine(storyTitle.ToUpperInvariant());
         sb.AppendLine($"Chapter-by-chapter synopsis — generated {DateTime.UtcNow:yyyy-MM-dd} from the live prose.");
         sb.AppendLine(new string('=', 72));
-        foreach (var (title, synopsis) in sections)
+        foreach (var (_, title, synopsis) in sections)
         {
             sb.AppendLine();
             sb.AppendLine(title);
@@ -109,7 +120,7 @@ public sealed class SynopsisExportService(
             var title = string.IsNullOrWhiteSpace(sources[i].Title)
                 ? (sources.Count == 1 ? "The Story" : $"Chapter {i + 1}")
                 : sources[i].Title;
-            units.Add(new ChapterUnit(sources[i].Id, i, title, text));
+            units.Add(new ChapterUnit(sources[i].Id, i, title, text, beats.Count));
         }
         return units;
     }
@@ -158,16 +169,29 @@ public sealed class SynopsisExportService(
 
     private async Task<(string Synopsis, string FactsJson)> GenerateAsync(ChapterUnit ch, CancellationToken ct)
     {
-        const string system = """
+        // Word budget scales with chapter size — a 14-beat single-chapter book compressed
+        // to 180 words loses fates and stages, which manufactures false audit findings.
+        var budget = Math.Clamp(120 + 12 * ch.BeatCount, 150, 450);
+
+        const string systemTemplate = """
             You summarize one chapter of a novel so its author can review the whole book at
             chapter altitude. Write WHAT HAPPENS: concrete events, decisions, reveals, and
             consequences, in the order they occur. Spoilers are required. No evaluation, no
-            marketing tone, no rhetorical questions. 120-180 words.
+            marketing tone, no rhetorical questions. [WORD-BUDGET] words.
+            FIDELITY RULES: state outcomes exactly as the text renders them — never upgrade
+            "stopped/wounded/down" to "killed", never infer a motive the text doesn't state
+            (if the text shows an accident or a misread, do not recast it as intent). When a
+            fate or motive is explicit, mirror its wording. End with one sentence stating the
+            explicit final fate of every named character who was harmed, captured, or
+            neutralized in this chapter (alive/wounded/dead/stopped — exactly as the text has
+            it). Your summary is used to audit the story against its bible, so precision on
+            fates, motives, and counts is the job.
             Return STRICT JSON only, no markdown fence:
             {"synopsis":"...","facts":{"entities":["..."],"locations":["..."],"events":["..."],"state_changes":["..."]}}
             facts.state_changes = durable changes to the world or cast (deaths, injuries,
             relationship shifts, items gained/lost, secrets exposed).
             """;
+        var system = systemTemplate.Replace("[WORD-BUDGET]", $"{budget - 40}-{budget}");
 
         var raw = await llm.GenerateAsync(system, $"CHAPTER: {ch.Title}\n\n{ch.SourceText}",
             temperature: 0.2, maxTokens: 1200, model: SynopsisModel, ct: ct);

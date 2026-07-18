@@ -78,6 +78,22 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
 | `docs/USER_STORIES.md` | Epic index + acceptance criteria | Hand-edit directly |
 
+### The Three Altitudes — the named examination model
+
+Every story is examined at three magnifications (canonical definition: `docs/LOGIC.md` §8):
+
+| Altitude | What you see | Instrument |
+|---|---|---|
+| **10,000 ft — story** | Arc, locks, structure-as-designed | `Nodes.NodeBible` + structural blueprint |
+| **100 ft — chapter** | What actually happens, in order | `NodeChapterSummaries` / `story-synopsis.txt` |
+| **10 ft — beat** | The prose; who's in the room | Beat text + `BeatEntityPresence` + verifications |
+
+The altitudes must tell the same story — defects ARE altitude disagreements. Arbitration:
+prose wins on facts, bible wins on locks. `ss --altitude-audit --slug <slug>` compares
+10,000↔100 ft (findings filed as OutlineDrift); the logic sweep owns 100↔10 ft. **Planning
+and review start at chapter altitude** — read `story-synopsis.txt` before deep beat reads;
+drop to beat altitude only where a finding points.
+
 ### Dynamic Context Memory (Dynamic Context Memory) — the named protocol
 
 **"Dynamic Context Memory" (Dynamic Context Memory)** is the canonical name for the beat-scoped, drift-free

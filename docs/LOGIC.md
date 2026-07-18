@@ -3,7 +3,7 @@ codex: 1
 project: StreetSamurai
 layer: methodology
 status: locked
-updated: 2026-07-04
+updated: 2026-07-18
 ---
 
 # THE LOGIC SWEEP — canonical QA methodology {#SS-LOGIC}
@@ -65,7 +65,11 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
 6. **Bible agreement.** Prose and `docs/nodes/<CODE>.md` tell the same story. When they
    disagree: the bible wins on canonical FACTS — unless the finding shows the bible is stale
    (describes a superseded draft), in which case fix the bible in the same change and run
-   `codex digest` + `doctor`. Never leave the disagreement standing.
+   `codex digest` + `doctor`. Never leave the disagreement standing. This dimension is
+   checked ACROSS ALTITUDES (see [§8](#SS-LOGIC-8)): chapter synopses
+   (`NodeChapterSummaries` / `story-synopsis.txt`) are the 100-ft instrument, and
+   `ss --altitude-audit --slug <slug>` automates the 10,000↔100 ft comparison. Sweeps may
+   read `story-synopsis.txt` for cheap chapter-altitude scoping before deep beat reads.
 
 ## 4. Triage and fix protocol {#SS-LOGIC-4}
 
@@ -109,3 +113,27 @@ fix is verifiable without a score.
 The invocable form of this process lives at `.claude/skills/logic-sweep/` (usage:
 `/logic-sweep <slug>` or no argument for changed-stories-since-last-sweep). It contains the
 audit prompt template, the fixer prompt template, and the apply-craft rules above.
+
+## 8. The three altitudes {#SS-LOGIC-8}
+
+A story is examined at three magnifications, and every lens has a dedicated instrument:
+
+| Altitude | What you see | Instrument / artifact |
+|---|---|---|
+| **10,000 ft — the story** | Premise, arc, locks, structure-as-designed | `Nodes.NodeBible` (hand-authored) + structural blueprint |
+| **100 ft — the chapter** | What actually happens, in order | `NodeChapterSummaries` + `story-synopsis.txt` (publish artifact) |
+| **10 ft — the beat** | The prose itself; who is in the room; what is true | Beat text + `BeatEntityPresence` + `BeatVerifications` |
+
+**The agreement principle:** the three altitudes must tell the same story — they are one
+specimen at different magnifications. Defects ARE altitude disagreements: a stale bible
+describing a superseded draft (10,000↔10), two chapters telling incompatible events
+(100↔100), a typo (pure 10 ft). Arbitration follows dimension 6: prose wins on FACTS,
+the bible wins on LOCKS.
+
+**Instruments per comparison:** 10,000↔100 ft = `ss --altitude-audit` (designed vs told;
+findings filed as `OutlineDrift`); 100↔10 ft and 10↔10 ft = the logic sweep itself
+(dimensions 1–5). Planning and review START at chapter altitude — read
+`story-synopsis.txt` first, drop to beat altitude only where a finding points. The same
+model applies to entities: story-level (which books), chapter-level (which chapters),
+beat-level (which scenes, and how — acting / listening / mentioned / discussed) via
+`vw_EntityStoryAppearances` / `vw_EntityChapterAppearances` / `BeatEntityPresence`.
