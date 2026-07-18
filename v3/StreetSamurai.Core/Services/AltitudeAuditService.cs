@@ -95,7 +95,8 @@ public sealed class AltitudeAuditService(
                    $"== 10,000 FT — BLUEPRINT HEADLINE ==\n{blueprintHeadline}\n\n" +
                    $"== 100 FT — CHAPTER SYNOPSES (from live prose) ==\n{chapterBlock}";
 
-        var raw = (await llm.GenerateAsync(system, user, temperature: 0.1, maxTokens: 6000, ct: ct)).Trim();
+        // 16k output cap: a 21-chapter novel's finding list truncated at 6k mid-JSON (BCODA).
+        var raw = (await llm.GenerateAsync(system, user, temperature: 0.1, maxTokens: 16000, ct: ct)).Trim();
         if (raw.StartsWith("```"))
             raw = Regex.Replace(Regex.Replace(raw, @"^```(json)?\s*", ""), @"\s*```$", "");
         // Thinking-tier models sometimes narrate before the JSON — cut to the outermost object.

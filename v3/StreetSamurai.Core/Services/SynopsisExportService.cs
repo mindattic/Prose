@@ -143,6 +143,11 @@ public sealed class SynopsisExportService(
             return existing.SummaryText;
 
         var (synopsis, factsJson) = await GenerateAsync(ch, ct);
+        // Never persist an empty/stub synopsis — 15 blank rows (pre-Legion-19 thinking-block
+        // responses) poisoned the altitude audit with phantom missing-chapter BLOCKERs.
+        if (string.IsNullOrWhiteSpace(synopsis) || synopsis.Length < 200)
+            throw new InvalidOperationException(
+                $"Synopsis generation returned {synopsis?.Length ?? 0} chars for chapter '{ch.Title}' — not storing.");
         // Gentle pacing — bulk regens tripped the provider circuit breaker at full speed.
         await Task.Delay(750, ct);
 
@@ -199,8 +204,10 @@ public sealed class SynopsisExportService(
             """;
         var system = systemTemplate.Replace("[WORD-BUDGET]", $"{budget - 40}-{budget}");
 
+        // 4k output budget: thinking-tier models spend tokens on reasoning BEFORE the text
+        // block — complex chapters burned the whole 1200 on thinking and returned 0 chars.
         var raw = await llm.GenerateAsync(system, $"CHAPTER: {ch.Title}\n\n{ch.SourceText}",
-            temperature: 0.2, maxTokens: 1200, model: SynopsisModel, ct: ct);
+            temperature: 0.2, maxTokens: 4000, model: SynopsisModel, ct: ct);
 
         raw = raw.Trim();
         if (raw.StartsWith("```"))
