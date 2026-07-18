@@ -841,6 +841,7 @@ public static class ServiceCollectionExtensions
         // then synthesize the Amazon-style aggregate.
         services.AddSingleton<NodeMarkdownExporter>();
         services.AddSingleton<ReviewReportExporter>();
+        services.AddSingleton<SynopsisExportService>();
         services.AddSingleton<PublishCleanupService>();
         services.AddSingleton<DocxExportService>();
         services.AddSingleton<ManuscriptExportService>();

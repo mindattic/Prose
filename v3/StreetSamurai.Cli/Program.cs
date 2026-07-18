@@ -750,7 +750,17 @@ if (args.Contains("--seed-keywords"))
     return;
 }
 
-// CLI mode: render a node to .docx + .epub + .pdf + .txt.
+// CLI mode: chapter-by-chapter synopsis export (also runs inside --publish).
+//   ss --export-synopsis (--slug <slug> | --all) [--force]
+if (args.Contains("--export-synopsis"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ExportSynopsisCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: render a node to .docx + .epub + .pdf + .txt + metadata artifacts
+// (description.txt, story-synopsis.txt, <CODE>-dcm-viz.htm).
 //   ss --publish (--id <guid|prefix> | --slug <slug>) [--author "Name"]
 if (args.Contains("--publish"))
 {

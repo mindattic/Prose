@@ -40,7 +40,7 @@ public static class PublishCli
         var manuscript = services.GetRequiredService<ManuscriptExportService>();
         var mojiChecker = services.GetRequiredService<MojibakeRepairService>();
 
-        Guid nodeId; string nodeTitle; string? universeSlug;
+        Guid nodeId; string nodeTitle; string nodeSlug; string? universeSlug;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             var q = db.Nodes.AsNoTracking();
@@ -50,7 +50,7 @@ public static class PublishCli
             else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
             { { Count: 1 } m => m[0], _ => null };
             if (node == null) { Console.Error.WriteLine("[publish] Node not found."); return 1; }
-            nodeId = node.Id; nodeTitle = node.Title;
+            nodeId = node.Id; nodeTitle = node.Title; nodeSlug = node.Slug;
             universeSlug = await db.Universes.AsNoTracking()
                 .Where(u => u.Id == node.UniverseId)
                 .Select(u => u.Slug)
@@ -167,6 +167,25 @@ public static class PublishCli
                     Console.WriteLine($"[publish] Wrote description: {descPath}");
                 }
             }
+
+            // ── metadata artifacts: publish = ALL formats + ALL metadata ────────
+            // Chapter-by-chapter synopsis (story-synopsis.txt) — the chapter-altitude
+            // view of what happens in the book. Content-hash cached per chapter.
+            try
+            {
+                var synopsis = services.GetRequiredService<SynopsisExportService>();
+                var synPath = await synopsis.ExportAsync(nodeId);
+                if (synPath != null) Console.WriteLine($"[publish] Wrote synopsis: {synPath}");
+            }
+            catch (Exception ex) { Console.Error.WriteLine($"[publish] ⚠ Synopsis failed (non-fatal): {ex.Message}"); }
+
+            // DCM lifecycle Gantt (<CODE>-dcm-viz.htm) into the same folder.
+            try
+            {
+                var vizExit = await DcmVizCli.RunAsync(new[] { "--dcm-viz", "--slug", nodeSlug }, services);
+                if (vizExit != 0) Console.Error.WriteLine("[publish] ⚠ DCM viz failed (non-fatal).");
+            }
+            catch (Exception ex) { Console.Error.WriteLine($"[publish] ⚠ DCM viz failed (non-fatal): {ex.Message}"); }
 
             return 0;
         }
