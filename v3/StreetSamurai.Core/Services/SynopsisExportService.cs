@@ -135,15 +135,21 @@ public sealed class SynopsisExportService(
         var existing = await db.NodeChapterSummaries
             .FirstOrDefaultAsync(s => s.NodeId == storyNodeId && s.ChapterIndex == ch.Index, ct);
 
+        // Cache key = source hash + generating model, so a model upgrade regenerates
+        // stale-quality summaries incrementally (resumable after provider hiccups).
         if (!force && existing != null && !string.IsNullOrWhiteSpace(existing.SummaryText)
-            && existing.FactsJson.Contains(hash, StringComparison.OrdinalIgnoreCase))
+            && existing.FactsJson.Contains(hash, StringComparison.OrdinalIgnoreCase)
+            && existing.FactsJson.Contains(SynopsisModel, StringComparison.OrdinalIgnoreCase))
             return existing.SummaryText;
 
         var (synopsis, factsJson) = await GenerateAsync(ch, ct);
+        // Gentle pacing — bulk regens tripped the provider circuit breaker at full speed.
+        await Task.Delay(750, ct);
 
         // Stamp the source hash into FactsJson so re-publishing unchanged prose is free.
         var facts = ParseOrEmpty(factsJson);
         facts["sourceHash"] = hash;
+        facts["model"] = SynopsisModel;
         var storedFacts = JsonSerializer.Serialize(facts);
 
         if (existing == null)
