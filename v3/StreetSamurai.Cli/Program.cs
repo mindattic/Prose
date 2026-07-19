@@ -1699,6 +1699,22 @@ if (args.Contains("--storyscope-audit"))
     return;
 }
 
+// ss --chekhov-audit --slug <nodeSlug>
+// Chekhov's Gun audit: extract all concrete props/anchors/traits and test whether
+// each earns its place. ORPHANED = appears with no payoff; DECORATION = repeated
+// without new function; EARNS_IT = each appearance serves a distinct narrative purpose.
+// Run before trimming any prose detail.
+if (args.Contains("--chekhov-audit"))
+{
+    var sp = BuildCoreServices(args);
+    var (proceedCk, estCk) = await CostGateCli.ConfirmAsync("--chekhov-audit", args, sp);
+    if (!proceedCk) return;
+    var beforeCk = CostGateCli.SnapshotCost(sp);
+    Environment.ExitCode = await ChekhovAuditCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--chekhov-audit", estCk, beforeCk, sp);
+    return;
+}
+
 // ss --duel --beat-id <guid> --candidate <file> [--goal "..."] [--apply] [--json]
 // Blind A/B duel: beat's current prose vs a candidate revision. 3 voters
 // (register/goal/reader lenses), three-way ballot; replace needs >=2 better

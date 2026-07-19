@@ -932,6 +932,7 @@ public static class ServiceCollectionExtensions
         // (deterministic checks + LLM-graded checks; findings loop back into future
         // beat prompts via the STORYSCOPE Findings prefix).
         services.AddSingleton<StoryScopeAuditService>();
+        services.AddSingleton<ChekhovAuditService>();
 
         // Beat duels — blind A/B panel gate for beat rewrites (3 voters, escalate
         // to 7 on dissent). SS-A44: duels are votes; allowVotes must be passed

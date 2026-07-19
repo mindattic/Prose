@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**242 tools** across **36 tool families.**
+**243 tools** across **37 tool families.**
 
 ## Families
 
@@ -21,6 +21,7 @@
 | [Bible](#bible) | 3 |
 | [Canon](#canon) | 9 |
 | [Canon Doc](#canon-doc) | 6 |
+| [Chekhov Audit](#chekhov-audit) | 1 |
 | [Combat](#combat) | 1 |
 | [Config](#config) | 14 |
 | [Context](#context) | 4 |
@@ -204,6 +205,16 @@ Update or create a structured section in a story's node bible (NodeBibleSections
 - `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 - `sectionType` (string, required) — Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.
 - `content` (string, required) — Section content (markdown). Replaces any existing content for this sectionType.
+
+## Chekhov Audit
+
+<sub>`ChekhovAuditTools`</sub>
+
+### `chekhov_audit`
+
+Chekhov's Gun audit for a story node: extract all concrete props, environmental anchors, sensory details, and recurring character-specific physical traits, then test whether each earns its place. Verdicts: EARNS_IT (each appearance serves a distinct purpose), ORPHANED (appears once with no payoff), DECORATION (repeated without new narrative function), ATMOSPHERE (one-time environmental texture with no implied promise), FLAG (uncertain — human review). Run before trimming any prose detail; before cutting, confirm the prop has no payoff in a later beat. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Combat
 
