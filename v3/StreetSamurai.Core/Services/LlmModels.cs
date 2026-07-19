@@ -11,7 +11,7 @@ public static class LlmModels
     public const string Haiku  = "claude-haiku-4-5-20251001";
 
     /// <summary>Mid-tier Claude. Default for prose drafting in the generation pipeline.</summary>
-    public const string Sonnet = "claude-sonnet-4-6";
+    public const string Sonnet = "claude-sonnet-5";
 
     /// <summary>Highest-capability Claude tier. Used for prose polish and review passes.</summary>
     public const string Opus   = "claude-opus-4-8";
