@@ -75,6 +75,10 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 | `Nodes.NodeBible` (DB) | **The single source of truth for that story** — arc, characters, voice, locks, blueprint, beat spine | `set_story_bible` MCP (hand-authored sections) |
 | `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
 | `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/CAUL.md` | Generated canon docs — ephemeral, gitignored | Re-run `ss --generate-canon-md --all` to materialize |
+| `docs/CRAFT.md` | Universal prose rules — **Base layer** of DCM static hierarchy; all universes | Hand-edit directly |
+| `docs/GLMZ.md` | GLMZ universe craft additions — **Universe layer** of DCM static hierarchy (transaction register, weird, prohibitions) | Hand-edit directly |
+| `docs/SCRY.md` | SCRY/Fantasy universe craft additions — **Universe layer** (Caul naming, death permanent, tone, prohibitions) | Hand-edit directly |
+| `docs/registers/<NAME>.md` | Per-narrator voice registers — **Register layer** of DCM static hierarchy (e.g., `LEDGER.md`) | Hand-edit directly |
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
 | `docs/USER_STORIES.md` | Epic index + acceptance criteria | Hand-edit directly |
 
@@ -109,6 +113,22 @@ and conversation.
    for this beat. Nothing outside the current scope enters the context.
 3. **Release (GC)** — after X beats without reference, the .md file is garbage-collected from
    the LRU working set. Only a small, current-beat-relevant subset persists at any moment.
+
+### The Four-Layer DCM Static Hierarchy
+
+These four resources are **always** loaded at the correct scope — they are the only static
+resources in DCM. Everything else (entities, topics, relational cascade) is dynamic.
+
+| Layer | File | Scope | How loaded |
+|---|---|---|---|
+| **1 — Base** | `docs/CRAFT.md` | All universes, all stories | Globally pinned via `add_context_doc` (24h; renew each session) |
+| **2 — Universe** | `docs/GLMZ.md` (GLMZ) or `docs/SCRY.md` (Fantasy) | One universe | Globally pinned; keyword triggers activate per-story |
+| **3 — StoryBible** | `docs/nodes/<CODE>.md` | One story | `node` tier — auto-loaded by DocContextService; evicts on story change |
+| **4 — Register** | `docs/registers/<NAME>.md` | One narrating character | Keyword triggers + `add_context_doc(doc, nodeSlug=slug)` 24h pin |
+
+**Hierarchy resolution:** When layers conflict, the lower tier wins for its own story (Register > StoryBible > Universe > Base). Use the narrowest scope that is authoritative.
+
+**Engineering gap:** A permanent `register` tier in DocContextService is not yet implemented. For now: keyword triggers in the Register .md frontmatter handle auto-loading; pin manually per session with `add_context_doc`.
 
 **Why Dynamic Context Memory prevents drift:** The LLM sees only what is pertinent to the current beat's world.
 Unrelated canon, stale entity states, and out-of-scope story data never enter the prompt.
@@ -259,8 +279,20 @@ The project follows the **MindAttic Codex** documentation standard. The source o
 - **`docs/BIBLE.md`** (L0) — engine invariants (SS-LAW-N) + **GLMZ** universe canon. Authoritative
   for GLMZ world facts. Fantasy/Caul universe facts live in `docs/universes/CAUL.md`.
   Inherits laws from `D:/Projects/MindAttic/MindAttic.HouseRules.md`.
+- **`docs/CRAFT.md`** — universal prose rules, Base layer of the DCM static hierarchy. Applies to
+  all universes (GLMZ and SCRY/Fantasy). Source: hoisted §5 universals from WORLD.md + LDGR-C/K
+  audit (8 DON'Ts, 8 DOs). Hand-edit directly. Synced + globally pinned each session.
+- **`docs/GLMZ.md`** — GLMZ Universe craft layer (DCM static tier 2): transaction register, world
+  texture, the weird, interludes, hard prohibitions. Craft additions on top of CRAFT.md.
+  Hand-edit directly. Synced + globally pinned each session.
+- **`docs/SCRY.md`** — SCRY/Fantasy Universe craft layer (DCM static tier 2): naming canon
+  (universe = SCRY; world = The Caul), death permanent, tone/visual, the weird, prohibitions.
+  Hand-edit directly. Synced + globally pinned each session.
+- **`docs/registers/<NAME>.md`** — per-narrating-character voice registers (DCM static tier 4).
+  First: `docs/registers/LEDGER.md` (Ledger synthetic POV rules). Keyword triggers load on match;
+  pin per-story with `add_context_doc(doc, nodeSlug=slug)`. Hand-edit directly.
 - **`docs/WORLD.md`** — **GLMZ** world master: how the city works, how the cast works, how combat
-  works, how the prose sounds. Hand-edit directly.
+  works. (Craft/voice rules moved to `docs/CRAFT.md` + `docs/GLMZ.md`.) Hand-edit directly.
 - **`docs/FRANCHISE.md`** — **GLMZ** franchise & IP bible: commercial positioning, genre, logline.
   Hand-edit directly.
 - **`Nodes.NodeBible`** (DB, L0 per-story) — story arc, beat spine, character rules, locks,
@@ -287,9 +319,11 @@ canonical destinations. Do not append to it. Do not reference it.
 
 Working rules:
 - **Canon changes go DIRECTLY into the authoritative source** — `docs/BIBLE.md` (or `docs/WORLD.md`) for
-  GLMZ/engine facts, `docs/universes/CAUL.md` for Fantasy/Caul facts, `Nodes.NodeBible` (via `set_story_bible`
-  MCP) for story-specific facts. There is no amendment layer. After updating NodeBible, re-run
-  `generate_node_doc` + `ss --sync-markdown`.
+  GLMZ/engine world facts, `docs/universes/CAUL.md` for Fantasy/Caul world facts, `Nodes.NodeBible` (via
+  `set_story_bible` MCP) for story-specific facts, `docs/CRAFT.md` for universal prose craft rules,
+  `docs/GLMZ.md` for GLMZ craft additions, `docs/SCRY.md` for SCRY/Fantasy craft additions.
+  There is no amendment layer. After updating NodeBible, re-run `generate_node_doc` + `ss --sync-markdown`.
+  After editing CRAFT.md / GLMZ.md / SCRY.md / registers, run `ss --sync-markdown`.
 - A fact lives in **exactly one file**; cite it by its stable `{#SS-...}` id, never by line number.
 - Update the Bible/stories status in the **same change** that moves a goal; "done" means a test or
   build proves it.
