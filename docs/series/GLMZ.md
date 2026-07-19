@@ -2,7 +2,7 @@
 codex: 1
 project: StreetSamurai
 layer: series
-updated: 2026-07-11
+updated: 2026-07-18
 ---
 
 # GLMZ Universe — Story Coordination Board {#SS-GLMZ-COORD}
@@ -122,6 +122,7 @@ All GLMZ stories not owned by a main series book chapter. Listed alphabetically 
 | DWIACE | Death Whispers in a Cat's Ear | Rennick | Rogue AI · world texture · multi-POV | B2–B3 | Active (569 beats) |
 | ICFI | It Came From Iowa | Wes Keith + CJ Anderson | Behemoth world · Iowa flyover · Machine God | B2 | COMPLETE (14 beats) |
 | IxS | Iron & Silk | Rook (Inkeri Saarinen) + Ekow Ato | Lotus COMPLETE · Rook Book 4 | B3–B4 | COMPLETE (113,889 w) |
+| LDGR | Double Entry | Ledger | Synthetic life · honest-data arc · audit procedural | B4–B5 | PROSE COMPLETE (14 beats, ~5k words; storyscope CLEAN); entities seeded |
 | MNEMO | Mnemosync | Amara & Seto | Neuretics world · Channeler | — | In progress |
 | MxG | Magenta & Gunmetal | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 1 | B3 | Active |
 | NxR | Neon & Rust | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 2 | B3 | Active |
@@ -178,7 +179,7 @@ Series-protected (absent explicit author order): **Sable, Pixel, Mrs. Chen, Echo
 | Book | End State |
 |------|-----------|
 | B1 | Synthetic confirmed (Ch14 Two Favors). Circuit handle. DB 019eafb5. |
-| B2–B3 | TBD |
+| B2–B3 | Independent audit practice alongside circuit work (LDGR: Double Entry). Two-column protocol: the account and the gaps; certifies incompleteness as a professional finding. Unbribable — the finding is never for sale, only the audit is. |
 | B4 | Honest betrayal — fed true/incomplete data; trades crew location; genuinely computes it as survival. The betrayal has no villain. |
 | B5 | Redeemed — given complete data; becomes the incorruptible notary. Same property, opposite result. |
 
@@ -285,6 +286,8 @@ Update this table when a plant is seeded or paid.
 | Lullaby's dark gospel (B3) | B3 | Avatar theory made credible; reader believes it | B4 / Avatar Theory Peaks | B3 TBD; B4 TBD |
 | Whole truth assembled and useless (B4) | B4 | The inversion: witness IS the delivery | B5 / The Truth Named | B4 TBD; B5 TBD |
 | Mr. Able (B1 villain) | BCODA | Commerce forward TBD — requires B1 retrospective | B2+ | B1 ✅; TBD |
+| Two-column protocol ("true is not complete"; certifying gaps, not just entries) | LDGR | Protocol exploited — data engineered to look complete; the honest betrayal | B4 / Ledger's Honest Betrayal | LDGR TBD; B4 TBD |
+| Tally's kept page (true/incomplete entry about Ledger) | LDGR | The on-page token of completeness when Ledger is given complete data | B5 / The Reassembly (notary material) | LDGR TBD; B5 TBD |
 
 ---
 
