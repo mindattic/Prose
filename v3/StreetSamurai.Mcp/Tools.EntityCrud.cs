@@ -82,15 +82,29 @@ public class CoreEntityCrudTools
         if (!string.IsNullOrEmpty(storyHooks))
             c.StoryHooks = [.. storyHooks.Split(',').Select(h => h.Trim()).Where(h => h.Length > 0)];
 
+        // Parse failures are surfaced as warnings, not silently swallowed — a swallowed error here
+        // returned ok:true while the register/psychology never persisted (the SS-A46 voice no-op bug).
+        var warnings = new List<string>();
         if (!string.IsNullOrWhiteSpace(psychologyJson))
         {
             try { c.Psychology = JsonSerializer.Deserialize<CharacterPsychology>(psychologyJson, CanonTools.JsonOpts) ?? c.Psychology; }
-            catch { /* keep existing */ }
+            catch (Exception ex) { warnings.Add($"psychologyJson ignored — parse error: {ex.Message}"); }
         }
         if (!string.IsNullOrWhiteSpace(speechPatternsJson))
         {
-            try { c.SpeechPatterns = JsonSerializer.Deserialize<SpeechPatterns>(speechPatternsJson, CanonTools.JsonOpts) ?? c.SpeechPatterns; }
-            catch { /* keep existing */ }
+            try
+            {
+                var sp = JsonSerializer.Deserialize<SpeechPatterns>(speechPatternsJson, CanonTools.JsonOpts);
+                if (sp is null ||
+                    (string.IsNullOrWhiteSpace(sp.Vocabulary) && string.IsNullOrWhiteSpace(sp.Cadence) &&
+                     string.IsNullOrWhiteSpace(sp.Subtext) && string.IsNullOrWhiteSpace(sp.UnderPressure) &&
+                     sp.VerbalTics.Count == 0 && sp.ExampleLines.Count == 0))
+                    warnings.Add("speechPatternsJson parsed but produced an EMPTY register — Speech* columns not populated. "
+                               + "Expected keys: vocabulary, cadence, verbal_tics (array), example_lines (array), subtext, under_pressure, intimacy_register.");
+                else
+                    c.SpeechPatterns = sp;   // CharacterMapper.ToEntity flattens this into Speech* columns on Save
+            }
+            catch (Exception ex) { warnings.Add($"speechPatternsJson ignored — parse error: {ex.Message}"); }
         }
         if (!string.IsNullOrWhiteSpace(physicalDescriptionJson))
         {
@@ -99,7 +113,9 @@ public class CoreEntityCrudTools
         }
 
         characters.Save(c);
-        return JsonSerializer.Serialize(new { ok = true, id = c.Id, name = c.Name }, CanonTools.JsonOpts);
+        return JsonSerializer.Serialize(
+            new { ok = true, id = c.Id, name = c.Name, warnings = warnings.Count > 0 ? warnings : null },
+            CanonTools.JsonOpts);
     }
 
     /// <summary>Create or update a place / district record. Pass empty id to create new; pass an existing id to update.</summary>

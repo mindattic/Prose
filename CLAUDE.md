@@ -32,6 +32,8 @@ Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's bu
 
 **HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any story/beat removal must go through the CLI (`ss --beat delete`). If a story genuinely needs to be deleted, get explicit user confirmation naming the story by title and slug before touching the DB.
 
+**Node deletion cascade order (system rule):** When deleting a story node via `--delete-node`, the required order is beats → chapters → story node. The CLI handles this automatically (cascade was added 2026-07-18). Never try to delete a parent node before its chapter children — `FK_Nodes_ParentNode` will block it. Delete order for manual confirmation: (1) BeatNodes memberships + exclusive beats for the child chapter, (2) structural blueprints for the child, (3) the child chapter node, (4) then the same sequence for the parent story node.
+
 ## Code Style
 - Do NOT use underscore-prefixed variables (e.g., `_myField`). Use `camelCase` for private fields without the underscore prefix.
 - JSON only for all data files. No Python scripts, no YAML, no Markdown files except README.
@@ -75,10 +77,11 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 | `Nodes.NodeBible` (DB) | **The single source of truth for that story** — arc, characters, voice, locks, blueprint, beat spine | `set_story_bible` MCP (hand-authored sections) |
 | `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
 | `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/CAUL.md` | Generated canon docs — ephemeral, gitignored | Re-run `ss --generate-canon-md --all` to materialize |
-| `docs/CRAFT.md` | Universal prose rules — **Base layer** of DCM static hierarchy; all universes | Hand-edit directly |
+| `docs/CRAFT.md` | Universal prose rules — **Base layer** of DCM static hierarchy; all universes (the DON'Ts) | Hand-edit directly |
+| `docs/DELIGHT.md` | Positive prose doctrine — what readers LOVE (13 DOs reverse-engineered from the 99 top-decile beats + 114 praise ballots); craft companion to CRAFT.md; globally pinned; injected per beat-mode by `DelightProseGuidance` | Hand-edit directly |
 | `docs/GLMZ.md` | GLMZ universe craft additions — **Universe layer** of DCM static hierarchy (transaction register, weird, prohibitions) | Hand-edit directly |
 | `docs/SCRY.md` | SCRY/Fantasy universe craft additions — **Universe layer** (Caul naming, death permanent, tone, prohibitions) | Hand-edit directly |
-| `docs/registers/<NAME>.md` | Per-narrator voice registers — **Register layer** of DCM static hierarchy (e.g., `LEDGER.md`) | Hand-edit directly |
+| Character record `Speech*`/`Psychology*` fields (DB) | Per-narrator voice — **Register layer** of DCM static hierarchy (SS-A46; no `docs/registers/` files) | `create_character` with the id + `speechPatternsJson`; loaded per-beat by DCM |
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
 | `docs/USER_STORIES.md` | Epic index + acceptance criteria | Hand-edit directly |
 
@@ -124,11 +127,11 @@ resources in DCM. Everything else (entities, topics, relational cascade) is dyna
 | **1 — Base** | `docs/CRAFT.md` | All universes, all stories | Globally pinned via `add_context_doc` (24h; renew each session) |
 | **2 — Universe** | `docs/GLMZ.md` (GLMZ) or `docs/SCRY.md` (Fantasy) | One universe | Globally pinned; keyword triggers activate per-story |
 | **3 — StoryBible** | `docs/nodes/<CODE>.md` | One story | `node` tier — auto-loaded by DocContextService; evicts on story change |
-| **4 — Register** | `docs/registers/<NAME>.md` | One narrating character | Keyword triggers + `add_context_doc(doc, nodeSlug=slug)` 24h pin |
+| **4 — Register (SS-A46)** | The **POV character's Character record** (`SpeechVocabulary` / `SpeechCadence` / `SpeechSubtext` / `SpeechUnderPressure` / `SpeechIntimacyRegister` / `PsychologySecret`) | One narrating character (**per beat** — POV can change within a book) | The beat's narrator (from the bible **POV Map** → `BeatEntityPresence` `PresenceType='pov'` row) is materialized and **pinned dominant** (score 999) by `DocContextService.PrepareForNodeAsync(povEntityId:)`; other present characters' registers still load via clue-gathering (step 0) but don't override the narrator's |
 
 **Hierarchy resolution:** When layers conflict, the lower tier wins for its own story (Register > StoryBible > Universe > Base). Use the narrowest scope that is authoritative.
 
-**Engineering gap:** A permanent `register` tier in DocContextService is not yet implemented. For now: keyword triggers in the Register .md frontmatter handle auto-loading; pin manually per session with `add_context_doc`.
+**Voice is the character, not a file (SS-A46, 2026-07-20).** There are no `docs/registers/<NAME>.md` files and no imposed tonal/flagship registers (JOY, SORROW, Kyle/CODA are retired and deleted). A narrator's voice lives in their **Character record's speech/psychology fields** — so it is loaded automatically by the existing DCM entity-doc path when that character is on the page, and it **evolves as the record evolves**: update the character (via `create_character` with the id, or a wound/continuity claim) and the next beat's prose tracks the change. The clear base voice (CRAFT.md §0–§2) is the floor; the character's own diction and attention are the only "register." A Pixel chapter reads in Pixel's voice; a Bear chapter in Bear's.
 
 **Why Dynamic Context Memory prevents drift:** The LLM sees only what is pertinent to the current beat's world.
 Unrelated canon, stale entity states, and out-of-scope story data never enter the prompt.
@@ -288,9 +291,11 @@ The project follows the **MindAttic Codex** documentation standard. The source o
 - **`docs/SCRY.md`** — SCRY/Fantasy Universe craft layer (DCM static tier 2): naming canon
   (universe = SCRY; world = The Caul), death permanent, tone/visual, the weird, prohibitions.
   Hand-edit directly. Synced + globally pinned each session.
-- **`docs/registers/<NAME>.md`** — per-narrating-character voice registers (DCM static tier 4).
-  First: `docs/registers/LEDGER.md` (Ledger synthetic POV rules). Keyword triggers load on match;
-  pin per-story with `add_context_doc(doc, nodeSlug=slug)`. Hand-edit directly.
+- **Per-narrator voice (DCM static tier 4, SS-A46)** — lives in the POV character's **Character
+  record** (`Speech*` + `Psychology*` fields), NOT in a file. There are no `docs/registers/<NAME>.md`
+  files (the folder is retired). The record is loaded per-beat as that character's entity doc by DCM
+  clue-gathering inference, and evolves as the character does. Edit voice via `create_character`
+  (pass the id + `speechPatternsJson`), not by hand-editing a register file.
 - **`docs/WORLD.md`** — **GLMZ** world master: how the city works, how the cast works, how combat
   works. (Craft/voice rules moved to `docs/CRAFT.md` + `docs/GLMZ.md`.) Hand-edit directly.
 - **`docs/FRANCHISE.md`** — **GLMZ** franchise & IP bible: commercial positioning, genre, logline.
@@ -385,6 +390,7 @@ for all prose writing — it coordinates all the services below and logs coverag
 | `PlantPayoffService` | Active plant/payoff pairs for the story | `BeatContext.NodeId != Guid.Empty` |
 | `StoryAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
 | `CombatProseGuidance` | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
+| `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode (forensic mind-reads-system, involuntary body-truth, end-on-the-act, image-once, distinct per-narrator rhythm) | All beat modes (mode-keyed) |
 | `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`ss --generate-blueprint`) |
 
 ### Coverage monitoring

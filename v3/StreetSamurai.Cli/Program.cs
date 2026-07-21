@@ -1404,6 +1404,32 @@ if (args.Contains("--delete-node"))
     var target = await db.Nodes.FindAsync(deleteNodeId);
     if (target == null) { Console.Error.WriteLine($"Node {deleteNodeId} not found."); Environment.ExitCode = 1; return; }
 
+    // Cascade to child nodes (chapters/sub-nodes) first so FK_Nodes_ParentNode
+    // doesn't block the parent delete. One level of recursion is sufficient for
+    // the story→chapter structure; nested chapters are not supported.
+    var childIds = await db.Nodes
+        .Where(n => n.ParentNodeId == deleteNodeId)
+        .Select(n => n.Id)
+        .ToListAsync();
+    foreach (var childId in childIds)
+    {
+        Console.WriteLine($"  Cascading to child node {childId}…");
+        var childBeatIds = await db.BeatNodes.Where(bn => bn.NodeId == childId).Select(bn => bn.BeatId).ToListAsync();
+        var childSharedIds = await db.BeatNodes.Where(bn => childBeatIds.Contains(bn.BeatId) && bn.NodeId != childId).Select(bn => bn.BeatId).Distinct().ToListAsync();
+        var childExclusiveIds = childBeatIds.Except(childSharedIds).ToList();
+        var childBpIds = await db.NodeStructuralBlueprints.Where(bp => bp.NodeId == childId).Select(bp => bp.Id).ToListAsync();
+        if (childBpIds.Count > 0)
+        {
+            db.NodeStructuralBlueprintBeatTags.RemoveRange(await db.NodeStructuralBlueprintBeatTags.Where(t => childBpIds.Contains(t.BlueprintId)).ToListAsync());
+            db.NodeStructuralBlueprints.RemoveRange(await db.NodeStructuralBlueprints.Where(bp => childBpIds.Contains(bp.Id)).ToListAsync());
+        }
+        db.BeatNodes.RemoveRange(await db.BeatNodes.Where(bn => bn.NodeId == childId).ToListAsync());
+        if (childExclusiveIds.Count > 0)
+            db.Beats.RemoveRange(await db.Beats.Where(b => childExclusiveIds.Contains(b.Id)).ToListAsync());
+        var childNode = await db.Nodes.FindAsync(childId);
+        if (childNode != null) { db.Nodes.Remove(childNode); Console.WriteLine($"    → {childNode.Title} ({childId})"); }
+    }
+
     // Beats exclusively owned by this node should also be deleted.
     var beatIds = await db.BeatNodes
         .Where(bn => bn.NodeId == deleteNodeId)

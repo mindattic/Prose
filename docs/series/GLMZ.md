@@ -120,6 +120,8 @@ All GLMZ stories not owned by a main series book chapter. Listed alphabetically 
 | ATTE | Attendance | Yemina Fola | Rogue AI · Grey admin-horror | B2–B4 | Active; 89.2 score |
 | BLST | (confirm in DB) | — | — | — | COMPLETE (30 beats, 87/100) |
 | DWIACE | Death Whispers in a Cat's Ear | Rennick | Rogue AI · world texture · multi-POV | B2–B3 | Active (569 beats) |
+| HFV | The Come Up | Reza "Rampart" Solano + Tavi "Cutout" Jeong | None · Low operator-economy origin · friendship-as-a-phase · **Rampart & Cutout diptych Bk 1** | None (world texture) | COMPLETE (14 beats/4 ch, ~7k words; ground-level Gray Zone; storyscope CLEAN, 0 structural fails; reader panel 74.1; V3 exported 2026-07-19) |
+| OPPN | The Fall Down | Reza "Rampart" Solano vs Tavi "Cutout" Jeong | None · operator-signature collision · divided loyalties · **Rampart & Cutout diptych Bk 2** | None (world texture) | COMPLETE (14 beats/4 ch, ~6.5k words, dual POV; ground-level Gray Zone origin + rich Spire; storyscope CLEAN; reader panel 69.8 (±6.9, taste-fork ceiling); V3 exported 2026-07-19) |
 | ICFI | It Came From Iowa | Wes Keith + CJ Anderson | Behemoth world · Iowa flyover · Machine God | B2 | COMPLETE (14 beats) |
 | IxS | Iron & Silk | Rook (Inkeri Saarinen) + Ekow Ato | Lotus COMPLETE · Rook Book 4 | B3–B4 | COMPLETE (113,889 w) |
 | LDGR | Double Entry | Ledger | Synthetic life · honest-data arc · audit procedural | B4–B5 | PROSE COMPLETE (14 beats, ~5k words; storyscope CLEAN); entities seeded |
@@ -227,6 +229,16 @@ Series-protected (absent explicit author order): **Sable, Pixel, Mrs. Chen, Echo
 | B2–B3 | TBD |
 | B4 | A handle hunts him. Hunter never confirmed human. B-plot. |
 | B5 | The handle outlives every theory. Deliberately left open. |
+
+### Reza "Rampart" Solano & Tavi "Cutout" Jeong (HFV — The Come Up)
+
+New, recurring-eligible Low-tier operators introduced in HFV. Not book-spanning cast; no prior
+state to inherit. Whether they return in a later story is open, not foreclosed.
+
+| Story | End State |
+|------|-----------|
+| HFV (*The Come Up*, Bk 1) | Both came up from nothing (couch-flop nobodies → named operators) and grew apart in the coming-up. **Reza "Rampart"** — chromed muscle, a known wall-for-hire, rising up-altitude toward the bright tiers and the upgraded life (Coeli); booked solo. **Tavi "Cutout"** — precise splicer/ghost, Gray Zone ground-level by temperament, solo-preferred; still carries the cheap twin pistol Reza upgraded away from. They end as two respected operators in the same trade with nothing in common — the partnership dissolved by a fixer's booking, not a falling-out. Fond, not close. |
+| OPPN (*The Fall Down*, Bk 2) | Four years on, opposite numbers: Reza corporate security muscle up-altitude (AshgraveMaterials); Tavi freelance ghost. They collide on one job (extract vs hold the courier Rafi Sarkissian), recognize each other by operator signature, and each chooses the bond over the contract at the decisive instant. Cost: **Reza falls** from up-altitude (Onwe burns the retainer; Coeli's world tilts); **Tavi's** unbreakable-ghost rep is **dented** (didn't deliver). The Package walks; neither corp wins. They part permanently opposed and permanently bound by knowing — the only two who truly know each other, now on opposite sides. **Book 3 hook:** both burned; the powers that ground them together will pull them again. |
 
 ---
 

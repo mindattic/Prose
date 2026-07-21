@@ -169,6 +169,11 @@ public abstract class Node
     /// maximum-safe gutter (0.875").</summary>
     public int? KdpPageCount { get; set; }
 
+    /// <summary>Direct Amazon product URL for the published book. Null = not published on Amazon
+    /// (or the URL has not been recorded yet). The authoritative marker of which stories are live:
+    /// a non-null PublishUrl means the book exists on Amazon at that address.</summary>
+    public string? PublishUrl { get; set; }
+
     // ── Generation / cost / resume state ─────────────────────────────────
 
     /// <summary>For LLM-generated nodes, the one-line seed that fed the

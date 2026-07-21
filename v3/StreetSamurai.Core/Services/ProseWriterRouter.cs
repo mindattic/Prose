@@ -120,9 +120,27 @@ public class ProseWriterRouter(
         {
             try
             {
+                // POV register priority (GLMZ §0 / SS-A46 layer 4): find this beat's narrator from the
+                // bible POV map (BeatEntityPresence 'pov' row) so its register is pinned/dominant — a
+                // multi-POV book voices each beat in that beat's narrator, not a blend of everyone present.
+                Guid? povEntityId = null;
+                if (dbFactory != null && beatId != Guid.Empty)
+                {
+                    try
+                    {
+                        await using var povDb = await dbFactory.CreateDbContextAsync(ct);
+                        var ids = await povDb.Database.SqlQueryRaw<Guid>(
+                                "SELECT TOP 1 EntityId FROM BeatEntityPresence WHERE BeatId = {0} AND PresenceType = 'pov'",
+                                beatId)
+                            .ToListAsync(ct);
+                        if (ids.Count > 0) povEntityId = ids[0];
+                    }
+                    catch (Exception ex) { log.LogDebug(ex, "[ProseWriterRouter] POV lookup skipped, continuing"); }
+                }
+
                 var triggerText = (context.BeatGoal ?? "") + "\n" + (context.SceneSoFar ?? "");
                 docResult = string.IsNullOrEmpty(context.DocScopeCode)
-                    ? await docContext.PrepareForNodeAsync(context.NodeId, triggerText, tokenBudget: 8000, ct: ct)
+                    ? await docContext.PrepareForNodeAsync(context.NodeId, triggerText, tokenBudget: 8000, povEntityId: povEntityId, ct: ct)
                     : await docContext.PrepareContextAsync(context.NodeId, context.DocScopeCode, triggerText, tokenBudget: 8000, ct: ct);
                 docStackContext = docResult.Block;
             }
@@ -739,6 +757,13 @@ public class ProseWriterRouter(
 
         if (mode == BeatMode.Combat)
             structuralGuidance = CombatProseGuidance + (structuralGuidance.Length > 0 ? "\n\n" + structuralGuidance : "");
+
+        // DELIGHT (positive prose doctrine, docs/DELIGHT.md): emphasize the reader-loved moves that
+        // fit this beat's mode. CRAFT.md keeps the beat from being disliked; this pushes it toward loved.
+        var delightGuidance = DelightProseGuidance.GetForMode(mode);
+        structuralGuidance = structuralGuidance.Length > 0
+            ? structuralGuidance + "\n\n" + delightGuidance
+            : delightGuidance;
 
         return (mode, confidence, method, pacingInstruction?.ProseGuidance ?? "", structuralGuidance);
     }

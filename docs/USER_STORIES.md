@@ -345,6 +345,88 @@ updated: 2026-06-25
   - **H10g ✅** Review **88.87 / 86.1 flow** (70 ballots, SD 1.98, range 81–91); 11 compression fixes (interiority loops, altitude beat, diner motif, finale close) → V4.docx. *(2026-07-09)*
   - **H10h ✅** Exported docx/epub/pdf/txt → `R:\Desktop\EPub\MindAttic\GLMZ\Rook\Iron & Silk\Iron & Silk V4.docx`. *(2026-07-09)*
 
+- **SS-US-H11 ✅** As the author, *The Come Up* (HFV; retitled 2026-07-19 from *High Five*) is a GLMZ come-up-and-drift buddy story: two
+  nineteen-year-old nobodies fresh out of basic education — **Reza Solano** and **Tavi Jeong** —
+  are thrown out of the couch-flop they were crashing, decide with no skills and no chrome to
+  become operators, bungle their first scrap-job into just enough pay to feel rich, reinvest
+  instead of blowing it, buy their first chrome and a matched pair of cheap "twins" pistols, ride
+  the hyperreal reward economy (BTL/The Glass) through a disillusioning night, buckle down, and
+  earn their handles — **Rampart** (the wall) and **Cutout** (the ghost). The come-up is real and
+  it works; the cost is each other. Specialization sorts the partnership into two solos: one job
+  has no room for a wall, another gets bailed on for a girl and the game, and a fixer stops booking
+  them as a package. They end as two respected operators in the same trade with nothing in common —
+  and that is okay, because a friendship can be the chrysalis and not the destination. JOY register
+  cooling to elegy; rendered vertically as a rise through altitude strata. Full arc, locks, register,
+  and 14-beat spine in [docs/nodes/HFV.md](nodes/HFV.md); brief in
+  [docs/planning/HFV-brief.md](planning/HFV-brief.md). *Acceptance: brief filed (10/10 sections) +
+  all entities seeded before prose + StoryNode + 4 ChapterNodes + 14-beat spine + structural
+  blueprint before prose + all beats via ProseWriterRouter (Sonnet→Opus) + logic sweep BLOCKER-free +
+  storyscope-audit clean + plant-audit clean + exported.* *(built end-to-end 2026-07-18 via CLI: 14 beats via
+  `ss --expand-beat --model claude-sonnet-4-6`, blueprint via `ss --generate-blueprint`, logic sweep
+  BLOCKER-free, `ss --publish` → V1 docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\High Five\`;
+  evidence in H11a–g below)*
+  - **H11a ✅** Docs: HFV brief (10/10, `docs/planning/HFV-brief.md`) + hand-authored node bible (`Nodes.NodeBible`, 11.3k chars) written; series roster + character ledger updated; `codex doctor` PASS. *(2026-07-18)*
+  - **H11b ✅** Entities seeded before prose: Reza Solano (`reza-solano`), Tavi Jeong (`tavi-jeong`),
+    Nena Duclair/Scraps (`nena-duclair`), Osman Karim (`osman-karim`), Sunday Alarcón (`sunday-alarcon`),
+    Ivet Kovač (`ivet-kovac`), Coeli Vantanen (`coeli-vantanen`), Auda Vane (`auda-vane`) — characters;
+    Blister 9 (`blister-9`), Skillet Row (`skillet-row`), The Honeycomb (`the-honeycomb`) — places
+    (renamed from The Roost/Kettle Row after a canon collision was caught; duplicates deactivated).
+    The matched "twins" reuse the existing `Meridian Munitions Holdout-380 'Ankle Biter'`. *(2026-07-18)*
+  - **H11c ✅** StoryNode `high-five-019f787d` (HFV) + 4 ChapterNodes (The Low / Reinvest / Hyperreal /
+    The Drift) + 14-beat spine (rich per-beat goals in `Beats.Description`, chapter-starts on beats 1/5/8/11). *(2026-07-18)*
+  - **H11d ✅** Structural blueprint generated pre-prose-model-selection: subplot = the twins + the
+    high-five; resolution = external (Auda Vane's booking ledger); moral = ambivalent; ending =
+    avalanche/no-epilogue; escalation `[3,4,6,5,5,6,7,8,7,9,7,8,6,5]` (peaks at beat 10, elegiac
+    descent through the drift). Generated via a temporary one-line model-pin to `claude-sonnet-4-6`
+    (the default `claude-sonnet-5` returns empty completions here — see infra note below); pin reverted. *(2026-07-18)*
+  - **H11e ✅** All 14 beats written via `ProseWriterRouter`/`--expand-beat` (draft model
+    `claude-sonnet-4-6`; ~7,000 words). Opus continuity + typography pass (em-dashes; see H11f). *(2026-07-18)*
+  - **H11f ✅** QA logic sweep (SS-A44, six dimensions): fixed **the Roost → Blister 9** (naming/canon
+    collision, beats 7/10/12) and **phone → neuretic channel** (comms canon, beat 11); Φ placement +
+    encoding verified (Φ100 form, no mojibake); plants verified in-prose (twins 7→13/14; high-five
+    1→14 — last one lands *right* as they part); timeline (~2 yrs) and bible-agreement consistent.
+    `storyscope-audit` **CLEAN** — 0 blocking tells (2 moderate / 5 minor AI-detector heuristics,
+    non-blocking); 13 PASS incl. subplot executed 5/5, escalation peak in climax zone, no moral
+    gloss, surface+subtext 0.97 (the high-five geometry carries the theme). No formal PlantPayoff
+    rows seeded → plant-audit N/A. *(2026-07-18; audit run after the Legion 22.0.0 fix below)*
+  - **H11g ✅** Exported docx/epub/pdf/txt (V1) + synopsis + DCM-viz → `R:\Desktop\EPub\MindAttic\GLMZ\High Five\` (author: MindAttic). *(2026-07-18)*
+
+  > **Infra note (LLM) — RESOLVED in MindAttic.Legion 22.0.0:** `LlmModels.Sonnet = claude-sonnet-5`
+  > was returning empty completions on heavy calls (blueprint; latent for long prose beats) because
+  > Legion omitted the `thinking` field and Sonnet-5 defaults adaptive thinking ON, consuming the whole
+  > `max_tokens` budget before any `text` block. Legion 22.0.0 sends `thinking: { type: "disabled" }`
+  > for the temperature-deprecated family (Sonnet 5+/Opus 4.7+). StreetSamurai.Core bumped
+  > `MindAttic.Legion` 21.0.0 → 22.0.0 (2026-07-18); verified: `--generate-blueprint` on the default
+  > `claude-sonnet-5` now returns `responseLen=4900` (was 0). The HFV first draft was written with the
+  > `--model claude-sonnet-4-6` workaround before the bump; the engine now works on the default model.
+
+- **SS-US-H12 ✅** As the author, *The Fall Down* (OPPN) is **Book 2 of the Rampart & Cutout diptych**
+  (bookend to H11's *The Come Up*): four years on, the two who came up together are opposite numbers —
+  **Reza "Rampart" Solano** is AshgraveMaterials corporate security muscle up-altitude; **Tavi "Cutout"
+  Jeong** is a freelance ghost hired (through Auda Vane, on Axiom money) to extract a held Low-born
+  courier, **Rafi Sarkissian**, who came up exactly the way they did. Neither knows the other is on the
+  job until each reads the other's **operator signature** (the wall held wrong for a corp; the system
+  killed too clean). Divided between the old bond and the contract, wall and ghost collide — brutal,
+  body-true, knowing each other's craft too well to be surprised (the twin Ankle-Biter vs corporate
+  hardware) — and each chooses the bond over the job at the decisive instant. It costs everything: the
+  Package walks, neither corp wins, Rampart falls from up-altitude, Cutout's rep is dented; they part
+  as the only two who truly know each other, permanently opposed. Dual POV; JOY engine turned hot →
+  scorched; avalanche/no-epilogue. Full arc in [docs/nodes/OPPN.md](nodes/OPPN.md); brief in
+  [docs/planning/OPPN-brief.md](planning/OPPN-brief.md). *Acceptance: brief + entities + StoryNode +
+  4 ChapterNodes + 14-beat dual-POV spine + hand-authored bible + pre-prose blueprint + all beats via
+  ProseWriterRouter + logic sweep BLOCKER-free + storyscope-audit clean + exported.* *(built end-to-end
+  2026-07-19 via CLI: node `the-fall-down-019f78f4`; 14 beats/4 ch (~6.5k words) drafted
+  `ss --expand-beat --model claude-sonnet-4-6`; continuity fixes (Rafi age, twins-as-pistols, Reza
+  chrome, Blister 9, neuretics canon); `ss --storyscope-audit` **CLEAN** (0 blocking, 0 moderate);
+  `ss --publish` → docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\The Fall Down\`)*
+  - **H12a ✅** Docs: OPPN brief (10/10) + hand-authored node bible; series roster updated (diptych Bk 2); `codex doctor` PASS.
+  - **H12b ✅** Entities seeded: Rafi Sarkissian, Halvard Onwe (characters), Ashgrave Spire (place); reused Reza/Tavi/Coeli/Auda Vane/Scraps + AshgraveMaterials/Axiom.
+  - **H12c ✅** StoryNode `the-fall-down-019f78f4` (OPPN) + 4 ChapterNodes + 14-beat dual-POV spine.
+  - **H12d ✅** Pre-prose structural blueprint (subplot = Rafi-as-mirror + signatures/twins; resolution mixed; avalanche/no-epilogue; dual-POV form device).
+  - **H12e ✅** 14 beats drafted (sonnet-4-6, tonal match with Book 1); Opus continuity/canon pass.
+  - **H12f ✅** QA: storyscope-audit CLEAN (0 blocking/0 moderate/5 minor); mechanical scan clean; gripe-harvest revision pass (italic crutch 24→7 readers; DramaticQuestion warn cleared) lifted reader panel 73.7→76.5.
+  - **H12g ✅** Exported docx/epub/pdf/txt → `R:\Desktop\EPub\MindAttic\GLMZ\The Fall Down\` (author: MindAttic).
+
 ## Priority backlog
 
 > Dependency-ordered toward the headline goal (a fresh seed → published, reviewed, canon-consistent

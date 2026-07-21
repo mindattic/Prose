@@ -132,7 +132,19 @@ public class StructuralBlueprintService
         IReadOnlyList<EmbeddingHit> anchorCandidates = [];
         try
         {
-            anchorCandidates = await embeddings.FindSimilarAsync(anchorQuery, k: 8, AnchorEntityTypes, ct);
+            // Scope the anchor search to THIS story's universe for the duration of the query, so a
+            // blueprint generated from a process defaulted to another universe still only pulls
+            // in-universe anchors. Combined with the entity-universe filter in FindSimilarAsync,
+            // this prevents cross-universe intertextual leaks (e.g. a SCRY quote in a GLMZ story).
+            UniverseScope.Current?.SetFlowUniverse(node.UniverseId);
+            try
+            {
+                anchorCandidates = await embeddings.FindSimilarAsync(anchorQuery, k: 8, AnchorEntityTypes, ct);
+            }
+            finally
+            {
+                UniverseScope.Current?.SetFlowUniverse(null);
+            }
         }
         catch (Exception ex)
         {

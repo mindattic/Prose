@@ -140,7 +140,7 @@ public sealed class DocContextService(
     /// </summary>
     public async Task<DocContextResult> PrepareForNodeAsync(
         Guid nodeId, string? triggerText, int tokenBudget = 2000,
-        bool inferEntities = true, CancellationToken ct = default)
+        bool inferEntities = true, Guid? povEntityId = null, CancellationToken ct = default)
     {
         if (nodeId == Guid.Empty) return new DocContextResult("", Array.Empty<LoadedDoc>(), 0);
 
@@ -149,29 +149,49 @@ public sealed class DocContextService(
         if (inferEntities && entityDocs != null && !string.IsNullOrWhiteSpace(triggerText))
             await entityDocs.InferFromTextAsync(triggerText, ct);
 
+        // POV register priority (SS-A46 layer 4 + GLMZ §0): when the caller knows this beat's
+        // narrator (from the bible POV map), materialize that character's register doc and mark it
+        // for pinning so it DOMINATES over other present characters' registers — the beat is voiced
+        // in the narrator's register, not a blend. POV can change beat to beat in a multi-POV book.
         string code;
+        Guid? povDocId = null;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             code = await db.Nodes.AsNoTracking()
                 .Where(s => s.Id == nodeId)
                 .Select(s => s.NodeCode)
                 .FirstOrDefaultAsync(ct) ?? "";
+
+            if (povEntityId is { } pov && entityDocs != null)
+            {
+                await entityDocs.EnsureEntityDocAsync(pov, ct);
+                var slug = await db.Entities.AsNoTracking()
+                    .Where(e => e.Id == pov).Select(e => e.Slug).FirstOrDefaultAsync(ct);
+                if (!string.IsNullOrEmpty(slug))
+                {
+                    var relPath = $"docs/entities/{slug}.md";
+                    povDocId = await db.MarkdownFiles.AsNoTracking()
+                        .Where(m => m.RelativePath == relPath && m.FileRoot == "project")
+                        .Select(m => (Guid?)m.Id).FirstOrDefaultAsync(ct);
+                }
+            }
         }
 
-        IReadOnlySet<Guid>? pinned   = null;
+        var pinnedSet = new HashSet<Guid>();
         IReadOnlySet<Guid>? excluded = null;
         if (userContext != null)
         {
             var overrides = await userContext.GetActiveAsync(nodeId, ct: ct);
             if (overrides.Count > 0)
             {
-                pinned   = overrides.Where(o => o.Action == "pin")    .Select(o => o.MarkdownFileId).ToHashSet();
-                excluded = overrides.Where(o => o.Action == "exclude") .Select(o => o.MarkdownFileId).ToHashSet();
+                foreach (var o in overrides.Where(o => o.Action == "pin")) pinnedSet.Add(o.MarkdownFileId);
+                excluded = overrides.Where(o => o.Action == "exclude").Select(o => o.MarkdownFileId).ToHashSet();
             }
         }
+        if (povDocId is { } pd) pinnedSet.Add(pd);
 
         return await PrepareContextAsync(nodeId, code, triggerText, tokenBudget,
-            pinnedDocIds: pinned, excludedDocIds: excluded, ct: ct);
+            pinnedDocIds: pinnedSet.Count > 0 ? pinnedSet : null, excludedDocIds: excluded, ct: ct);
     }
 
     /// <summary>

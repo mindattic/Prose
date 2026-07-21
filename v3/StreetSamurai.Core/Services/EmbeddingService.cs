@@ -706,7 +706,12 @@ public class EmbeddingService
             FROM dbo.EntityEmbeddings emb
             JOIN dbo.Entities ent ON ent.Id = emb.EntityId
             WHERE ent.IsActive = 1
-              AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR emb.UniverseId = @p_universe){typeFilter}
+              -- Filter on the ENTITY registry's universe (authoritative), NOT emb.UniverseId:
+              -- the embedding tag is a drift-prone copy that silently defaults to GLMZ when an
+              -- entity is embedded without an active scope, which leaked SCRY quotes (e.g. Wren
+              -- Caerglas, Dame Lyra) into GLMZ blueprint anchor searches. ent.UniverseId is the
+              -- single source of truth. (SS-A46 cross-universe leak fix.)
+              AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR ent.UniverseId = @p_universe){typeFilter}
             ORDER BY VECTOR_DISTANCE('cosine', emb.Vector, CAST(@p_query AS VECTOR(1536))) ASC;
             """;
 
