@@ -6,7 +6,7 @@ layer: universe
 universe: glmz
 status: live
 triggers: GLMZ, glmz, Kyle, Glooms, Chicago, 2226, CorpoNation, Lotus, neuretics, quanta, circuit, street samurai
-updated: 2026-07-18
+updated: 2026-07-21
 related: docs/CRAFT.md
 ---
 
@@ -61,6 +61,56 @@ authors chasing 21 different panels; a distinctive voice a real audience loves b
 they ARE the MindAttic-GLMZ voice at its best. Do NOT rewrite them; they define the target. When any
 other GLMZ story is written or revised, sync it TO that standard — the same clear hand, the same
 loved moves, the same texture — so it reads as a new book by the same author, not a different one.
+
+---
+
+## 0.1 Target Reader — 18-40 Men {#SS-GLMZ-0-1}
+
+**GLMZ is written for a male genre-fiction reader, 18-40, in three tiers:**
+
+- **Primary (22-35) — the sweet spot.** Grew up on *Cyberpunk 2077*, *Blade Runner 2049*,
+  *Altered Carbon*, and grimdark fantasy (Joe Abercrombie, early Richard Morgan). Tech-literate,
+  comfortable with morally gray protagonists and dense worldbuilding.
+- **Secondary (18-24).** Pulled in via gaming/anime crossover — *Cyberpunk 2077* fandom, *Ghost
+  in the Shell*, VTuber/anime-adjacent audiences.
+- **Tertiary (35-40+).** Read classic cyberpunk (Gibson, Stephenson) in the 90s/2000s and want a
+  modern take.
+
+Every craft call in this file — the transaction register, the weird, the hard prohibitions —
+ultimately serves this reader. When two craft options are equally valid, pick the one this reader
+picks up at 11pm and can't put down.
+
+- **Dense worldbuilding, clear sentences.** This reader — Abercrombie, Morgan, Gibson,
+  Stephenson — tolerates and wants a thick, specific world (CorpoNation politics, tech that works
+  by real rules, faction history). That tolerance is for *lore density*, not *sentence density*:
+  CRAFT.md's freshman-clear surface stays the law even here. Depth lives in the world and the
+  characters' choices, not in the syntax.
+- **Morally gray protagonists, played straight.** Abercrombie/Morgan-grade ambivalence — a
+  competent person doing a compromised job for reasons that hold up — not a cartoon antihero and
+  not a redemption arc on rails. See Character Doctrine (circumstance → choice → definition) and
+  the blueprint's ambivalent-moral-polarity default.
+- **Competence under pressure, not power fantasy.** The reader respects a protagonist who is good
+  at something specific — a trade, a read on people, a weapon — and proves it by doing the job right
+  under a ticking clock, not by being unbeatable. Skill costs something to earn and something to use.
+- **Consequence is the payoff, not the shock.** Violence and sex are rendered body-true (Graphic
+  Adult Content rule) because that is what this reader respects — real weight, real damage, real
+  physical truth — not gratuitous spectacle and not a soft-focus fade-to-black.
+- **Camaraderie over romance-as-plot.** Crew loyalty, earned trust, the person who has your back —
+  this reader's emotional core is the found-family/brotherhood beat, not the marriage plot. Romance
+  exists and can be explicit, but it is a subplot inside the job, never the job itself.
+- **The rigged system, beaten by competence, not luck.** CorpoNations, the Air Tax, the ground/sky
+  class divide — GLMZ's antagonist is structural. A reader who feels priced out of his own city wants
+  a protagonist who out-thinks or out-works the system on a given job, even knowing the system itself
+  never falls. Small, earned wins against a machine that doesn't care.
+- **Momentum.** Scenes move. Transactional banter (§1) is a release valve mid-tension, never a
+  sitcom pause. Gear, tech, and weapon detail satisfy because they are specific and correct, not a
+  tour — see §2.
+- **Humor is deadpan and priced (§1), never a wink at the reader.** This reader distrusts a story
+  that seems embarrassed of itself. GLMZ plays every stake straight.
+
+This is a lens, not a checklist — it does not override the Hard Prohibitions (§5) or the Graphic
+Adult Content rule (no minors, no animals, ever). It exists so that when a beat could go two ways,
+the choice is legible: which version does this reader — Primary 22-35 above all — read again?
 
 ---
 

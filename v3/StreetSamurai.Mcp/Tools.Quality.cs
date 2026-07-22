@@ -41,6 +41,8 @@ public class QualityTools
     private readonly EmotionalDepthService emotionalDepth;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly VotingGate votingGate;
+    private readonly TokenLedger tokenLedger;
+    private readonly CommandCostEstimatorService costEstimator;
 
     public QualityTools(
         WorldConsistencyService consistency,
@@ -55,7 +57,9 @@ public class QualityTools
         StructuralDiagnosticService structural,
         EmotionalDepthService emotionalDepth,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        VotingGate votingGate)
+        VotingGate votingGate,
+        TokenLedger tokenLedger,
+        CommandCostEstimatorService costEstimator)
     {
         this.consistency    = consistency;
         this.quality        = quality;
@@ -70,6 +74,8 @@ public class QualityTools
         this.emotionalDepth = emotionalDepth;
         this.dbFactory      = dbFactory;
         this.votingGate     = votingGate;
+        this.tokenLedger    = tokenLedger;
+        this.costEstimator  = costEstimator;
     }
 
     /// <summary>Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/city police, no phi/Greek-letter confusion). Returns matched violations with surrounding context. Call this on a chapter draft before delivering it — catches rule slips an LLM might miss.</summary>
@@ -149,6 +155,12 @@ public class QualityTools
         var effProse   = prose   > 0 ? prose   : (profile?.Prose ?? 0);
         var effSkip    = skipDiagnosis || (profile?.SkipDiagnosis ?? false);
 
+        // Cost bookend (mirrors CostGateCli's CLI-side pattern) so `--review-node` and this
+        // MCP tool both land rows in CommandCostHistories, regardless of entry point.
+        var costCommandName = "--review-node";
+        var costEstimate     = await costEstimator.EstimateAsync(costCommandName);
+        var costBefore       = tokenLedger.GetSummary().TotalCost;
+
         var result = await reviewer.RunSampledReviewAsync(nodeId, effBallots, effProse < 0 ? 0 : effProse,
             skipDiagnosis: effSkip,
             cheapModels: profile?.CheapModels ?? false,
@@ -156,6 +168,13 @@ public class QualityTools
             useLocal: useLocal,
             localModelOverride: localModel,
             allowVotes: true);
+
+        if (!useLocal)
+        {
+            var actualCost = tokenLedger.GetSummary().TotalCost - costBefore;
+            if (actualCost > 0)
+                await costEstimator.RecordActualAsync(costCommandName, costEstimate.Estimated, actualCost, "claude-api");
+        }
 
         string? synopsis = null;
         if (result.BallotsSaved > 0)

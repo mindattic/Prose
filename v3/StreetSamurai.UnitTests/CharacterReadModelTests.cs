@@ -96,6 +96,53 @@ public class CharacterReadModelTests
     }
 
     [Test]
+    public void GetById_Then_NoOpSave_PreservesAliases_AddedOutOfBandAfterReadModelCache()
+    {
+        // Reproduces the confirmed bug: aliases inserted directly into the
+        // CharacterAliases bridge table (a manual repair, bypassing
+        // CharacterRepository.Save) never touch Entities.ModifiedAt, so
+        // CharacterMapper.LoadOneFromReadModel's staleness check ("has
+        // ModifiedAt advanced past the cached blob's RefreshedAt?") can't see
+        // the change and would serve the pre-insert (alias-less) snapshot.
+        // GetById feeds directly into Save's wipe-and-reinsert of every bridge
+        // table (CharacterMapper.PersistAsync), so a stale Aliases list there
+        // means a subsequent no-op update (exactly what the create_character
+        // MCP tool does: GetById -> tweak scalars -> Save) silently deletes
+        // the out-of-band aliases. GetById must always read live relational
+        // truth (CharacterMapper.LoadOne), never the cached projection.
+        var c = MakeChar("Alias Bug Subject", "hazel", "before the bridge insert");
+        repo.Save(c);
+        var id = Guid.ParseExact(c.Id, "N");
+
+        // Simulate the out-of-band repair: insert directly into the bridge
+        // table without going through CharacterRepository.Save, and without
+        // touching Entities.ModifiedAt — exactly what a raw SQL INSERT does.
+        using (var db = TestDbFactory.For(paths, "character").CreateDbContext())
+        {
+            db.CharacterAliases.Add(new StreetSamurai.Core.Data.Entities.CharacterAlias
+            {
+                CharacterId = id,
+                Position = 0,
+                Value = "Manually Repaired Alias",
+            });
+            db.SaveChanges();
+        }
+
+        // The exact round trip create_character performs on an existing id:
+        // fetch the current record, mutate an unrelated field, save it back.
+        var loaded = repo.GetById(c.Id)!;
+        Assert.That(loaded.Aliases, Does.Contain("Manually Repaired Alias"),
+            "GetById must see the out-of-band alias, not a stale cached snapshot");
+
+        loaded.Description = "after the bridge insert (unrelated no-op edit)";
+        repo.Save(loaded);
+
+        var after = repo.GetById(c.Id)!;
+        Assert.That(after.Aliases, Does.Contain("Manually Repaired Alias"),
+            "a no-op Save on an unrelated field must not wipe aliases added out-of-band");
+    }
+
+    [Test]
     public async Task Rebuild_Repopulates_FromRelationalTruth()
     {
         repo.Save(MakeChar("Alpha", "amber", "a"));

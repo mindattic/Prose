@@ -161,15 +161,24 @@ public static class CharacterMapper
             .ToHashSet();
         if (ids.Count == 0) return new();
 
+        // Modified-since check catches out-of-band writes (direct SQL) that never went
+        // through CharacterRepository.Save, so RefreshReadModelAsync never fired.
+        var modifiedAtById = db.Entities.AsNoTracking()
+            .Where(e => ids.Contains(e.Id))
+            .ToDictionary(e => e.Id, e => e.ModifiedAt);
+
         var fresh = db.CharacterReadModels.AsNoTracking()
             .Where(r => ids.Contains(r.CharacterId) && r.Version == ReadModelVersion)
-            .Select(r => new { r.CharacterId, r.Json })
+            .Select(r => new { r.CharacterId, r.Json, r.RefreshedAt })
             .ToList();
 
         var result = new List<CharacterData>(ids.Count);
         var have = new HashSet<Guid>(fresh.Count);
         foreach (var r in fresh)
         {
+            if (modifiedAtById.TryGetValue(r.CharacterId, out var modifiedAt) && modifiedAt > r.RefreshedAt)
+                continue;                                // entity changed since cache was built → backfill
+
             var data = DeserializeReadModel(r.Json);
             if (data == null) continue;                 // corrupt blob → fall through to backfill
             result.Add(data);
@@ -194,7 +203,17 @@ public static class CharacterMapper
     {
         var row = db.CharacterReadModels.AsNoTracking()
             .FirstOrDefault(r => r.CharacterId == id && r.Version == ReadModelVersion);
-        CharacterData? data = row != null ? DeserializeReadModel(row.Json) : null;
+
+        CharacterData? data = null;
+        if (row != null)
+        {
+            // Modified-since check catches out-of-band writes (direct SQL) that never
+            // went through CharacterRepository.Save, so RefreshReadModelAsync never fired.
+            var modifiedAt = db.Entities.AsNoTracking()
+                .Where(e => e.Id == id).Select(e => (DateTime?)e.ModifiedAt).FirstOrDefault();
+            if (modifiedAt == null || modifiedAt <= row.RefreshedAt)
+                data = DeserializeReadModel(row.Json);
+        }
         if (data == null)
         {
             data = LoadOne(db, id);

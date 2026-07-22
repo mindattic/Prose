@@ -87,6 +87,21 @@ public class CharacterRepository : EfRepository<CharacterData>
     /// character — ~50 ms) instead of materialising every character first.
     /// Required for the lite-list-then-Edit flow: the dictionary list shows
     /// the lite projection; clicking a row re-fetches the full record here.
+    ///
+    /// Deliberately bypasses CharacterMapper.LoadOneFromReadModel's cached
+    /// projection (unlike GetAll). That cache's staleness check only compares
+    /// Entities.ModifiedAt against the read-model's RefreshedAt — a bridge-table
+    /// write that never touches the Entities row (e.g. a direct SQL INSERT into
+    /// CharacterAliases for a manual data repair) is invisible to it, so the
+    /// cache can serve a snapshot that predates the bridge change. That would be
+    /// harmless for a plain read, but GetById's result also feeds
+    /// CharacterRepository.Save's wipe-and-reinsert of every bridge table (see
+    /// CharacterMapper.PersistAsync) — the read/mutate-scalars/write round trip
+    /// every upsert caller (e.g. the create_character MCP tool) performs. Serving
+    /// a stale Aliases (or any other bridge) list there means Save silently wipes
+    /// rows that were never stale in the database, only in the cache. GetById is
+    /// the "authoritative full record for editing" per this method's whole
+    /// purpose, so it must always read the live relational truth.
     /// </summary>
     public new CharacterData? GetById(string id)
     {
@@ -98,7 +113,7 @@ public class CharacterRepository : EfRepository<CharacterData>
             else return null;
         }
         using var db = dbFactory.CreateDbContext();
-        return CharacterMapper.LoadOneFromReadModel(db, guid);
+        return CharacterMapper.LoadOne(db, guid);
     }
 
     public override List<CharacterData> GetAllIncludingArchived()

@@ -129,7 +129,7 @@ All GLMZ stories not owned by a main series book chapter. Listed alphabetically 
 | MxG | Magenta & Gunmetal | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 1 | B3 | Active |
 | NxR | Neon & Rust | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 2 | B3 | Active |
 | CxC | Crimson & Chrome | Rook (Inkeri Saarinen) | Lotus finale · Rook Book 3 | B3 | COMPLETE |
-| PXL | Pixel | Pixel | Channeler origin · Kyle arc · Detroit escape | B1 | 14 beats pending rewrite |
+| PXL | Pixel | Pixel | Channeler origin · Kyle arc · Detroit escape | B1 | 14 beats rewritten 2026-07-21; character-record reconciliation vs BCODA's Pixel OPEN |
 | RTR | Read the Room | Faith Larson + Ethan Wolfe | Read (psionic) world · Fenris band | B3–B4 | COMPLETE (14 beats) |
 | SPRW | Sparrow | Elias Macias | Rogue AI misdirect · AI mystery | B4–B5 | Active (never fires) |
 | SRZR | Steppin' Razor | Sasha Võ | Lotus · Halcyon/OBERON | B3 | Active |
