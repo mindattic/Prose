@@ -180,8 +180,8 @@ public class SettingsService : IDisposable
         return dir;
     }
 
-    /// <summary>The literal output folder for the published manuscript <c>.docx</c> export
-    /// (typically the book's own folder). <c>--publish</c> writes
+    /// <summary>The literal output folder for the exported manuscript <c>.docx</c> export
+    /// (typically the book's own folder). <c>--export-node</c> writes
     /// <c>&lt;PublishExportDirectory&gt;\&lt;Hyphenated-Title&gt;\&lt;Title&gt; V&lt;N&gt;.docx</c> and clears
     /// any existing <c>.docx</c> in that subfolder first. Empty = Desktop.
     /// Stray wrapping quotes/whitespace are tolerated by the exporter.</summary>

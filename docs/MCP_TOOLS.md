@@ -1058,6 +1058,21 @@ Deep-duplicate a node (and its sub-node tree) into a fresh, independent copy. Ev
 - `idOrSlug` (string, required) — Source node Guid id or slug.
 - `newTitle` (string, required) — Title for the new duplicate. Required.
 
+### `export_audiobook`
+
+Render the whole node as one continuous narration (no per-beat voice drift) and write the MP3 to the configured export directory (defaults to Desktop). TTS engine: 'elevenlabs' (default, paid, highest fidelity), 'piper' (free/local, fastest), 'kokoro' (free/local, recommended), 'chatterbox' (free/local, most expressive). Returns the path of the written file, or null if the node has no beat text. This only generates a local MP3 — it does not publish anything to Audible/ACX.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `ttsEngine` (string, optional) — TTS engine: elevenlabs (default) | piper | kokoro | chatterbox.
+- `robust` (bool, optional) — Set to true to retune this node's frozen voice snapshot to Robust stability (1.0) before recording.
+
+### `export_node`
+
+Render a node to a KDP-ready Word .docx and write it to the configured export directory (defaults to Desktop). Returns the path of the written file. The CLI command `ss --export-node --slug <slug>` renders the same .docx alongside .epub/.pdf/.txt in one pass. This only generates local files — it does not publish anything to Amazon/KDP. Use get_node first to confirm the node exists.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `author` (string, optional) — Author name to embed in the document properties. Optional.
+
 ### `generate_node_doc`
 
 Assemble the unified Story Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. Run this before editing a story to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.
@@ -1158,21 +1173,6 @@ Build an Audible AI-narration hand-off package for a node. Produces three files 
 Print all beats of a node as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts node id (GUID) or slug. Use this to read the full prose of a node in one call.
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
-
-### `publish_audiobook`
-
-Render the whole node as one continuous narration (no per-beat voice drift) and write the MP3 to the configured publish directory (defaults to Desktop). TTS engine: 'elevenlabs' (default, paid, highest fidelity), 'piper' (free/local, fastest), 'kokoro' (free/local, recommended), 'chatterbox' (free/local, most expressive). Returns the path of the written file, or null if the node has no beat text.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `ttsEngine` (string, optional) — TTS engine: elevenlabs (default) | piper | kokoro | chatterbox.
-- `robust` (bool, optional) — Set to true to retune this node's frozen voice snapshot to Robust stability (1.0) before recording.
-
-### `publish_node`
-
-Render a node to a KDP-ready Word .docx and write it to the configured publish directory (defaults to Desktop). Returns the path of the written file. The CLI command `ss --publish --slug <slug>` renders the same .docx alongside .epub/.pdf/.txt in one pass. Use get_node first to confirm the node exists.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `author` (string, optional) — Author name to embed in the document properties. Optional.
 
 ### `rebeat_story`
 
@@ -1722,7 +1722,7 @@ Switch the active universe for this session by slug (e.g. 'glmz' or 'scry'). All
 
 ### `truth_status`
 
-Get the current truth status for a story: how many beats have verified contracts, how many have BeatBlueprintDecision rows, how many are in violation. Use this as a quick dashboard check before writing or publishing.
+Get the current truth status for a story: how many beats have verified contracts, how many have BeatBlueprintDecision rows, how many are in violation. Use this as a quick dashboard check before writing or exporting.
 
 - `slugOrCode` (string, required) — Story node slug or NodeCode.
 
@@ -1734,7 +1734,7 @@ Run all verification checks for a single beat against its declared BeatBlueprint
 
 ### `verify_story`
 
-Run verification checks for all enabled beats in a story. Returns a summary of BLOCKER/MODERATE/MINOR failures plus individual findings. Results are upserted to BeatVerification table. BLOCKER findings must be fixed before publish. Includes EscalationMonotonic check (story-wide curve regression) not available per-beat.
+Run verification checks for all enabled beats in a story. Returns a summary of BLOCKER/MODERATE/MINOR failures plus individual findings. Results are upserted to BeatVerification table. BLOCKER findings must be fixed before export. Includes EscalationMonotonic check (story-wide curve regression) not available per-beat.
 
 - `slugOrCode` (string, required) — Story node slug or NodeCode.
 

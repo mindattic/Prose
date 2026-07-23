@@ -363,7 +363,7 @@ updated: 2026-06-25
   blueprint before prose + all beats via ProseWriterRouter (Sonnet→Opus) + logic sweep BLOCKER-free +
   storyscope-audit clean + plant-audit clean + exported.* *(built end-to-end 2026-07-18 via CLI: 14 beats via
   `ss --expand-beat --model claude-sonnet-4-6`, blueprint via `ss --generate-blueprint`, logic sweep
-  BLOCKER-free, `ss --publish` → V1 docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\High Five\`;
+  BLOCKER-free, `ss --export-node` → V1 docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\High Five\`;
   evidence in H11a–g below)*
   - **H11a ✅** Docs: HFV brief (10/10, `docs/planning/HFV-brief.md`) + hand-authored node bible (`Nodes.NodeBible`, 11.3k chars) written; series roster + character ledger updated; `codex doctor` PASS. *(2026-07-18)*
   - **H11b ✅** Entities seeded before prose: Reza Solano (`reza-solano`), Tavi Jeong (`tavi-jeong`),
@@ -418,7 +418,7 @@ updated: 2026-06-25
   2026-07-19 via CLI: node `the-fall-down-019f78f4`; 14 beats/4 ch (~6.5k words) drafted
   `ss --expand-beat --model claude-sonnet-4-6`; continuity fixes (Rafi age, twins-as-pistols, Reza
   chrome, Blister 9, neuretics canon); `ss --storyscope-audit` **CLEAN** (0 blocking, 0 moderate);
-  `ss --publish` → docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\The Fall Down\`)*
+  `ss --export-node` → docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\The Fall Down\`)*
   - **H12a ✅** Docs: OPPN brief (10/10) + hand-authored node bible; series roster updated (diptych Bk 2); `codex doctor` PASS.
   - **H12b ✅** Entities seeded: Rafi Sarkissian, Halvard Onwe (characters), Ashgrave Spire (place); reused Reza/Tavi/Coeli/Auda Vane/Scraps + AshgraveMaterials/Axiom.
   - **H12c ✅** StoryNode `the-fall-down-019f78f4` (OPPN) + 4 ChapterNodes + 14-beat dual-POV spine.
@@ -614,11 +614,11 @@ updated: 2026-06-25
 - **SS-US-L1 ✅** As an author, I can run the entire seed-to-export pipeline end-to-end without
   touching code. *Acceptance: starting from a bare strand, the CLI sequence
   `--bible-strand → --expand-beat (×N) → --reflow-strand → --check-canon → --review-strand →
-  --publish` completes with 0 errors and produces a valid .docx in Downloads.
+  --export-node` completes with 0 errors and produces a valid .docx in Downloads.
   (verified: all six CLIs exist and are wired in `Program.cs`: `--bible-strand` via `StrandBibleCli`,
   `--expand-beat` via `ExpandBeatCli` [new 2026-06-21], `--reflow-strand` via `ProseReflowCli`,
   `--check-canon` via `CanonCheckCli`, `--review-strand` via `ReviewStrandCli`,
-  `--publish` via `PublishCli`; each is independently exercised; build clean 0 errors;
+  `--export-node` via `ExportNodeCli` (renamed from `--publish`/`PublishCli` — local file rendering only, no KDP API integration); each is independently exercised; build clean 0 errors;
   2026-06-21.)*
 
 - **SS-US-L2 ✅** As an operator, `ss --run-corpus --count N` runs the full loop
@@ -637,7 +637,7 @@ updated: 2026-06-25
   that stitches all its `kind=collection` and `kind=chapter` children in reading order.
   *(verified by `StrandWorkbenchService.GetOrderedBeatsAsync` recursive tree-walk
   (`WalkAsync` via `ParentStrandId`); `DocxExportService.ExportStrandAsync` calls it for any strandId;
-  `ss --publish --slug <series-slug>` already stitches all children via existing code; 2026-06-21.)*
+  `ss --export-node --slug <series-slug>` already stitches all children via existing code; 2026-06-21.)*
 
 - **SS-US-L4 ✅** As an author, the `WorldTickService` can be enabled and produces at least one
   `EntityStateEvent` per tick per active character without manual intervention (SS-US-F9: Living

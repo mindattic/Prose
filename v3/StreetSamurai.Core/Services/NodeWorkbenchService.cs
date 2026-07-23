@@ -1877,7 +1877,7 @@ public class NodeWorkbenchService
     }
 
     /// <summary>
-    /// Publish a drift-free audiobook in the FEWEST TTS requests that fit
+    /// Export a drift-free audiobook in the FEWEST TTS requests that fit
     /// ElevenLabs' per-request budget, so the narrator is one continuous
     /// performance instead of N separately-recorded beats. Tier 1 = whole node
     /// in one call; Tier 2 = one call per chapter (split at <c>IsChapterStart</c>);
@@ -1885,8 +1885,9 @@ public class NodeWorkbenchService
     /// gaps become inline <c>&lt;break&gt;</c> pauses (one recording keeps its
     /// pacing); segment boundaries get exact PCM silence. The combined MP3 is
     /// written to the audio store AND copied to the user's Downloads folder.
+    /// Local file rendering only — no KDP/Audible API integration.
     /// </summary>
-    public async Task<string?> PublishAudiobookAsync(Guid nodeId, bool retuneRobust = false, string? ttsProvider = null, CancellationToken ct = default)
+    public async Task<string?> ExportAudiobookAsync(Guid nodeId, bool retuneRobust = false, string? ttsProvider = null, CancellationToken ct = default)
     {
         // --tts <engine>: free, fully-local narration (no API key, no per-char cost) —
         // piper | kokoro | chatterbox. Same segment/silence/encode assembly; the local

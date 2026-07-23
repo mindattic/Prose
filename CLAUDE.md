@@ -73,14 +73,14 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 
 | Location | Contains | Source of truth / how to edit |
 |---|---|---|
-| `CanonDocumentSections` (DB) | Engine invariants, GLMZ canon, Caul canon, etc. | MCP `set_canon_section`; generates to `docs/BIBLE.md`, `docs/WORLD.md`, `docs/universes/CAUL.md`, etc. |
+| `CanonDocumentSections` (DB) | Engine invariants, GLMZ canon, Entos canon, etc. | MCP `set_canon_section`; generates to `docs/BIBLE.md`, `docs/WORLD.md`, `docs/universes/ENTOS.md`, etc. |
 | `Nodes.NodeBible` (DB) | **The single source of truth for that story** — arc, characters, voice, locks, blueprint, beat spine | `set_story_bible` MCP (hand-authored sections) |
 | `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
-| `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/CAUL.md` | Generated canon docs — ephemeral, gitignored | Re-run `ss --generate-canon-md --all` to materialize |
+| `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/ENTOS.md` | Generated canon docs — ephemeral, gitignored | Re-run `ss --generate-canon-md --all` to materialize |
 | `docs/CRAFT.md` | Universal prose rules — **Base layer** of DCM static hierarchy; all universes (the DON'Ts) | Hand-edit directly |
 | `docs/DELIGHT.md` | Positive prose doctrine — what readers LOVE (13 DOs reverse-engineered from the 99 top-decile beats + 114 praise ballots); craft companion to CRAFT.md; globally pinned; injected per beat-mode by `DelightProseGuidance` | Hand-edit directly |
 | `docs/GLMZ.md` | GLMZ universe craft additions — **Universe layer** of DCM static hierarchy (transaction register, weird, prohibitions) | Hand-edit directly |
-| `docs/SCRY.md` | SCRY/Fantasy universe craft additions — **Universe layer** (Caul naming, death permanent, tone, prohibitions) | Hand-edit directly |
+| `docs/SCRY.md` | SCRY/Fantasy universe craft additions — **Universe layer** (Entos naming, death permanent, tone, prohibitions) | Hand-edit directly |
 | Character record `Speech*`/`Psychology*` fields (DB) | Per-narrator voice — **Register layer** of DCM static hierarchy (SS-A46; no `docs/registers/` files) | `create_character` with the id + `speechPatternsJson`; loaded per-beat by DCM |
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
 | `docs/USER_STORIES.md` | Epic index + acceptance criteria | Hand-edit directly |
@@ -191,7 +191,7 @@ Any `.md` file can declare related documents in its YAML frontmatter:
 
 ```yaml
 ---
-related: docs/nodes/VIGL.md, docs/universes/CAUL.md
+related: docs/nodes/VIGL.md, docs/universes/ENTOS.md
 ---
 ```
 
@@ -208,7 +208,7 @@ The `related:` field contains project-relative paths (e.g., `docs/nodes/M101.md`
 GUIDs). Paths that don't resolve to a known `MarkdownFile` are silently dropped.
 
 **When to use `related:`:**
-- A node bible that references specific canon docs heavily (e.g., `docs/universes/CAUL.md`)
+- A node bible that references specific canon docs heavily (e.g., `docs/universes/ENTOS.md`)
 - A universe doc that depends on a companion canon doc
 - Entity docs (future) linking to their place or faction docs
 
@@ -280,7 +280,7 @@ The project follows the **MindAttic Codex** documentation standard. The source o
 `docs/`:
 
 - **`docs/BIBLE.md`** (L0) — engine invariants (SS-LAW-N) + **GLMZ** universe canon. Authoritative
-  for GLMZ world facts. Fantasy/Caul universe facts live in `docs/universes/CAUL.md`.
+  for GLMZ world facts. Fantasy/Entos universe facts live in `docs/universes/ENTOS.md`.
   Inherits laws from `D:/Projects/MindAttic/MindAttic.HouseRules.md`.
 - **`docs/CRAFT.md`** — universal prose rules, Base layer of the DCM static hierarchy. Applies to
   all universes (GLMZ and SCRY/Fantasy). Source: hoisted §5 universals from WORLD.md + LDGR-C/K
@@ -289,7 +289,7 @@ The project follows the **MindAttic Codex** documentation standard. The source o
   texture, the weird, interludes, hard prohibitions. Craft additions on top of CRAFT.md.
   Hand-edit directly. Synced + globally pinned each session.
 - **`docs/SCRY.md`** — SCRY/Fantasy Universe craft layer (DCM static tier 2): naming canon
-  (universe = SCRY; world = The Caul), death permanent, tone/visual, the weird, prohibitions.
+  (universe = SCRY; world = The Entos), death permanent, tone/visual, the weird, prohibitions.
   Hand-edit directly. Synced + globally pinned each session.
 - **Per-narrator voice (DCM static tier 4, SS-A46)** — lives in the POV character's **Character
   record** (`Speech*` + `Psychology*` fields), NOT in a file. There are no `docs/registers/<NAME>.md`
@@ -324,7 +324,7 @@ canonical destinations. Do not append to it. Do not reference it.
 
 Working rules:
 - **Canon changes go DIRECTLY into the authoritative source** — `docs/BIBLE.md` (or `docs/WORLD.md`) for
-  GLMZ/engine world facts, `docs/universes/CAUL.md` for Fantasy/Caul world facts, `Nodes.NodeBible` (via
+  GLMZ/engine world facts, `docs/universes/ENTOS.md` for Fantasy/Entos world facts, `Nodes.NodeBible` (via
   `set_story_bible` MCP) for story-specific facts, `docs/CRAFT.md` for universal prose craft rules,
   `docs/GLMZ.md` for GLMZ craft additions, `docs/SCRY.md` for SCRY/Fantasy craft additions.
   There is no amendment layer. After updating NodeBible, re-run `generate_node_doc` + `ss --sync-markdown`.
@@ -347,8 +347,8 @@ Working rules:
    After filing: update `docs/series/GLMZ.md` Story Roster (§1–2), Character Arc Ledger exit
    states (§3), and Plant/Payoff Registry (§5). Check World-Revelation Sequencing (§6) — this
    story must not reveal anything before its designated book.
-1. **Docs first** — if new world facts: GLMZ facts → `docs/BIBLE.md` or `docs/WORLD.md`; Fantasy/Caul
-   facts → `docs/universes/CAUL.md`. For story-specific facts (arc, characters, voice register, locks),
+1. **Docs first** — if new world facts: GLMZ facts → `docs/BIBLE.md` or `docs/WORLD.md`; Fantasy/Entos
+   facts → `docs/universes/ENTOS.md`. For story-specific facts (arc, characters, voice register, locks),
    write the hand-authored content via `set_story_bible` MCP into `Nodes.NodeBible`. Add story entry to
    `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
 2. **Entities** — seed every named character, CorpoNation, place, or weapon into the DB via CLI or
@@ -365,7 +365,7 @@ Working rules:
    `ss --generate-node-doc --slug <slug>` to regenerate `docs/nodes/<CODE>.md` with the blueprint
    section auto-populated from the DB.
 5. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
-6. **Export** — `--publish`; flip USER_STORIES to ✅ with evidence.
+6. **Export** — `--export-node`; flip USER_STORIES to ✅ with evidence.
 
 Never write prose before steps 0, 1, 2, and 4 are complete.
 

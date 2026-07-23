@@ -5,18 +5,18 @@ using System.Text.RegularExpressions;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Wipes all manuscript formats (.docx, .epub, .pdf, .txt) from a node's publish folder
+/// Wipes all manuscript formats (.docx, .epub, .pdf, .txt) from a node's export folder
 /// before any export writes happen — ensures only the current version survives regardless
 /// of which export path is taken.
 /// </summary>
-public class PublishCleanupService
+public class ExportCleanupService
 {
     static readonly string[] ManuscriptPatterns = ["*.docx", "*.epub", "*.pdf", "*.txt"];
 
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly SettingsService settings;
 
-    public PublishCleanupService(
+    public ExportCleanupService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         SettingsService settings)
     {
@@ -25,7 +25,7 @@ public class PublishCleanupService
     }
 
     /// <summary>
-    /// Resolves the node's publish folder (honouring the ancestor-walk path nesting)
+    /// Resolves the node's export folder (honouring the ancestor-walk path nesting)
     /// and deletes all prior-version manuscript files. Returns the resolved directory path.
     /// </summary>
     public async Task<string> CleanAsync(Guid nodeId, CancellationToken ct = default)

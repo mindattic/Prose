@@ -18,8 +18,8 @@ namespace StreetSamurai.Core.Services;
 /// the live prose (events, decisions, reveals — spoiler-complete, no marketing tone),
 /// persists it to <see cref="NodeChapterSummary"/> (content-hash cached, so unchanged
 /// chapters never re-bill), and writes the assembled <c>story-synopsis.txt</c> into the
-/// story's publish folder beside its .docx/.epub/.pdf exports. Runs as part of
-/// <c>ss --publish</c> and standalone via <c>ss --export-synopsis</c>.
+/// story's export folder beside its .docx/.epub/.pdf exports. Runs as part of
+/// <c>ss --export-node</c> and standalone via <c>ss --export-synopsis</c>.
 /// </summary>
 public sealed class SynopsisExportService(
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,

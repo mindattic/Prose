@@ -41,7 +41,7 @@ public static class PublishManuscriptCli
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var export = services.GetRequiredService<ManuscriptExportService>();
-        var cleanup = services.GetRequiredService<PublishCleanupService>();
+        var cleanup = services.GetRequiredService<ExportCleanupService>();
 
         Guid nodeId; string nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())

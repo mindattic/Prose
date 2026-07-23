@@ -61,7 +61,7 @@ public static class PublishAudiobookCli
         Console.WriteLine($"[publish-audiobook] Narrating \"{nodeTitle}\" in one pass{(robust ? " (retuning to Robust stability)" : "")}{(tts != null ? $" via {tts}" : "")}…");
         try
         {
-            var path = await workbench.PublishAudiobookAsync(nodeId, robust, tts);
+            var path = await workbench.ExportAudiobookAsync(nodeId, robust, tts);
             if (path == null) { Console.Error.WriteLine("[publish-audiobook] Nothing to narrate — the node has no beat text."); return 1; }
             Console.WriteLine($"[publish-audiobook] Wrote: {path}");
             return 0;

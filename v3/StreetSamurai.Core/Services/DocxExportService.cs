@@ -14,15 +14,16 @@ namespace StreetSamurai.Core.Services;
 /// Direct Publishing prefers: a title page, every chapter starting on a fresh
 /// page under a centered heading, and justified block-paragraph body text
 /// (no first-line indent; 8pt spacing after each paragraph) in a readable serif
-/// at 1.15 spacing. Writes to the configured publish directory (Desktop fallback).
+/// at 1.15 spacing. Writes to the configured export directory (Desktop fallback).
 /// KDP ingests this directly. Author defaults to "MindAttic" when not specified.
+/// Local file rendering only — no KDP API integration.
 /// </summary>
 public class DocxExportService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly NodeWorkbenchService workbench;
     private readonly SettingsService settings;
-    private readonly PublishCleanupService cleanup;
+    private readonly ExportCleanupService cleanup;
     private readonly ILogger<DocxExportService> log;
 
     private const string Serif = "Garamond";
@@ -40,7 +41,7 @@ public class DocxExportService
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         NodeWorkbenchService workbench,
         SettingsService settings,
-        PublishCleanupService cleanup,
+        ExportCleanupService cleanup,
         ILogger<DocxExportService> log)
     {
         this.dbFactory = dbFactory;
@@ -50,7 +51,7 @@ public class DocxExportService
         this.log = log;
     }
 
-    /// <summary>Render the node to a KDP-ready .docx in the publish directory; returns the path.</summary>
+    /// <summary>Render the node to a KDP-ready .docx in the export directory; returns the path.</summary>
     public async Task<string> ExportNodeAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -212,22 +213,49 @@ public class DocxExportService
                 .Where(s => srcIds.Contains(s.Id))
                 .ToDictionaryAsync(s => s.Id, s => s.Title, ct);
 
-            var isChapterStart = new bool[ordered.Count];
+            // Chapter/Interlude boundaries are Node transitions ONLY (nodeChanged) — never a
+            // bare Beat.IsChapterStart, which is also (ab)used for two other things: genuine
+            // mid-chapter sub-headings (e.g. BCODA's "Three Barrels", "Crucible Genomics") and,
+            // on some legacy beats, a leftover pre-Node-hierarchy chapter marker that duplicates
+            // the real chapter title (e.g. a beat titled "Chapter 2 - Provenance" sitting a few
+            // beats into the already-open "Chapter 2" node). Conflating all three used to run
+            // the numbering to "Chapter 49"/"Chapter 56" on a 25-chapter book and to skip every
+            // Interlude's real name (its first beat has no Beat.Title, so the old fallback hit
+            // the generic "Chapter {n}" branch instead of the Node's own "Interlude: …" Title).
+            var isChapterStart = new bool[ordered.Count];   // real, page-breaking Chapter/Interlude heading
             var chapterTitle = new string?[ordered.Count];
+            var isSubHeading = new bool[ordered.Count];     // in-flow sub-heading text — not counted, not paginated
+            var subHeadingTitle = new string?[ordered.Count];
             Guid? prevNode = null;
             int chapterCount = 0;
             for (int i = 0; i < ordered.Count; i++)
             {
                 var ob = ordered[i];
                 var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
-                if (nodeChanged || ob.Beat.IsChapterStart)
+                var beatTitle = string.IsNullOrWhiteSpace(ob.Beat.Title) ? null : ob.Beat.Title!.Trim();
+                if (nodeChanged)
                 {
                     isChapterStart[i] = true;
                     chapterCount++;
+                    var nodeTitle = nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim() : null;
+                    // Prefer the beat's own title only when it is ITSELF a properly-formatted
+                    // "Chapter N …" / "Interlude: …" heading (nicer author punctuation, e.g. the
+                    // em dash); otherwise the Node's canonical Title wins. This is what keeps an
+                    // unrelated beat title (e.g. "Across the Hall") from replacing the real
+                    // chapter heading ("Chapter 20 - The Floor Is Hard"), and what makes every
+                    // Interlude — whose lead beat carries no title at all — print its own name.
                     chapterTitle[i] =
-                        !string.IsNullOrWhiteSpace(ob.Beat.Title) ? ob.Beat.Title!.Trim()
-                        : nodeChanged && nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim()
-                        : $"Chapter {chapterCount}";
+                        (beatTitle is not null && LooksLikeChapterHeading(beatTitle)) ? beatTitle
+                        : nodeTitle
+                        ?? beatTitle
+                        ?? $"Chapter {chapterCount}";
+                }
+                else if (ob.Beat.IsChapterStart && beatTitle is not null && !LooksLikeChapterHeading(beatTitle))
+                {
+                    // A genuine mid-chapter sub-heading (its own heading text) — NOT a new
+                    // chapter: no page break, no TOC entry, no bump to chapterCount.
+                    isSubHeading[i] = true;
+                    subHeadingTitle[i] = beatTitle;
                 }
                 prevNode = ob.NodeId;
             }
@@ -265,6 +293,10 @@ public class DocxExportService
                     body.AppendChild(ChapterHeading(chapterTitle[i]!, anchor, bookmarkId: tocIdx + 1));
                     tocIdx++;
                     chapterEmitted = true;
+                }
+                else if (isSubHeading[i])
+                {
+                    body.AppendChild(SubHeading(subHeadingTitle[i]!));
                 }
                 var text = (beat.Text ?? "").Trim();
                 if (text.Length == 0) continue;
@@ -341,6 +373,25 @@ public class DocxExportService
             p.AppendChild(new BookmarkEnd { Id = bookmarkId.ToString() });
         return p;
     }
+
+    /// <summary>Mid-chapter sub-heading (e.g. "Three Barrels") — centered, bold, smaller than a
+    /// chapter heading, no page break, no TOC bookmark, no <c>Heading1</c> style (so Word's
+    /// TOC field, which is scoped to Heading1 via <c>\o "1-1"</c>, never picks it up).</summary>
+    private static Paragraph SubHeading(string text) =>
+        new(new ParagraphProperties(
+                new KeepNext(),
+                new SpacingBetweenLines { Before = "360", After = "160" },
+                new Justification { Val = JustificationValues.Center }),
+            MakeRun(text, Body12, bold: true));
+
+    // Beats sometimes carry a leftover pre-Node-hierarchy "Chapter N …" / "Interlude: …" title
+    // even though a real Node boundary now owns that role. Matching this pattern is how we tell
+    // a genuine chapter/interlude heading apart from an ordinary mid-chapter sub-heading name.
+    private static readonly Regex ChapterOrInterludeHeadingPattern =
+        new(@"^(Chapter\s+\d+\b|Interlude\s*:)", RegexOptions.IgnoreCase);
+
+    private static bool LooksLikeChapterHeading(string title) =>
+        ChapterOrInterludeHeadingPattern.IsMatch(title);
 
     /// <summary>
     /// Builds a Structured Document Tag containing a pre-populated Word TOC field — the

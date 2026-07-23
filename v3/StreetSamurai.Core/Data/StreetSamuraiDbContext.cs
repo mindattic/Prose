@@ -447,7 +447,7 @@ public class StreetSamuraiDbContext : DbContext
 
     // Truth-First Architecture (Track C) — beat verification results.
     // One row per (BeatId, CheckType); upserted on re-verify. BLOCKER results
-    // block codex doctor and ss --publish (INV-05).
+    // block codex doctor and ss --export-node (INV-05).
     public DbSet<BeatVerification> BeatVerifications => Set<BeatVerification>();
 
     protected override void OnModelCreating(ModelBuilder b)

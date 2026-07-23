@@ -550,7 +550,7 @@ if (args.Contains("--migrate-blueprint-rows"))
 //   ss --verify-beat --id <beatId> [--json]
 //   ss --verify-story --slug <slug> [--json]
 // Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision
-// contract. Results upserted to BeatVerification table. BLOCKER findings block --publish.
+// contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node.
 if (args.Contains("--verify-beat") || args.Contains("--verify-story"))
 {
     var sp = BuildCoreServices(args);
@@ -759,7 +759,7 @@ if (args.Contains("--altitude-audit"))
     return;
 }
 
-// CLI mode: chapter-by-chapter synopsis export (also runs inside --publish).
+// CLI mode: chapter-by-chapter synopsis export (also runs inside --export-node).
 //   ss --export-synopsis (--slug <slug> | --all) [--force]
 if (args.Contains("--export-synopsis"))
 {
@@ -769,17 +769,18 @@ if (args.Contains("--export-synopsis"))
 }
 
 // CLI mode: render a node to .docx + .epub + .pdf + .txt + metadata artifacts
-// (description.txt, story-synopsis.txt, <CODE>-dcm-viz.htm).
-//   ss --publish (--id <guid|prefix> | --slug <slug>) [--author "Name"]
-if (args.Contains("--publish"))
+// (description.txt, story-synopsis.txt, <CODE>-dcm-viz.htm). Local file
+// rendering only — no KDP API integration, hence "export" not "publish".
+//   ss --export-node (--id <guid|prefix> | --slug <slug>) [--author "Name"]
+if (args.Contains("--export-node"))
 {
     var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PublishCli.RunAsync(args, sp);
+    Environment.ExitCode = await ExportNodeCli.RunAsync(args, sp);
     return;
 }
 
 // CLI mode: hard-delete all disabled (IsEnabled=false) beats from a story.
-// Use ONLY when a story is publish-ready and placeholder beats will never be used.
+// Use ONLY when a story is export-ready and placeholder beats will never be used.
 // Temporal history retains all deleted beats; data is recoverable by a DBA.
 //   ss --prune-disabled --slug <slug> [--dry-run] [--yes]
 if (args.Contains("--prune-disabled"))

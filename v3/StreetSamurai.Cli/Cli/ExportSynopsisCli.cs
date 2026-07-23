@@ -9,9 +9,9 @@ namespace StreetSamurai.Cli;
 /// <summary>
 /// <c>ss --export-synopsis (--slug &lt;slug&gt; | --all) [--force]</c>
 ///
-/// Standalone chapter-by-chapter synopsis export (the same artifact <c>--publish</c>
+/// Standalone chapter-by-chapter synopsis export (the same artifact <c>--export-node</c>
 /// emits): generates/refreshes NodeChapterSummaries from the live prose and writes
-/// <c>story-synopsis.txt</c> into each story's publish folder. <c>--force</c> ignores
+/// <c>story-synopsis.txt</c> into each story's export folder. <c>--force</c> ignores
 /// the per-chapter content-hash cache and regenerates everything.
 /// </summary>
 public static class ExportSynopsisCli

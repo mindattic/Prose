@@ -32,7 +32,7 @@ public class CanonDocumentService
         ["WorldBible"]    = root => Path.Combine(root, "docs", "BIBLE.md"),
         ["WorldMaster"]   = root => Path.Combine(root, "docs", "WORLD.md"),
         ["Franchise"]     = root => Path.Combine(root, "docs", "FRANCHISE.md"),
-        ["UniverseCanon"] = root => Path.Combine(root, "docs", "universes", "CAUL.md"),
+        ["UniverseCanon"] = root => Path.Combine(root, "docs", "universes", "ENTOS.md"),
     };
 
     public static string? GetFilePath(string documentType, string dataRoot)

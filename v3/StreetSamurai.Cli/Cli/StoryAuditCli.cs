@@ -109,7 +109,7 @@ public static class StoryAuditCli
         {
             Console.WriteLine($"Blocking: {report.BlockingCount}   Advisory: {report.AdvisoryCount}");
             if (report.BlockingCount > 0)
-                Console.WriteLine("Fix failing commandments before publishing this node.");
+                Console.WriteLine("Fix failing commandments before exporting this node.");
         }
 
         return report.BlockingCount > 0 ? 2 : report.AdvisoryCount > 0 ? 1 : 0;

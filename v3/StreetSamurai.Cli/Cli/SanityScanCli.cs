@@ -192,7 +192,7 @@ public static class SanityScanCli
         Console.WriteLine(new string('─', 60));
 
         if (blocks > 0)
-            Console.WriteLine($"❌ {blocks} blocking issue(s) — fix before publishing.");
+            Console.WriteLine($"❌ {blocks} blocking issue(s) — fix before exporting.");
         if (warns > 0)
             Console.WriteLine($"⚠️  {warns} warning(s).");
         if (blocks == 0 && warns == 0)

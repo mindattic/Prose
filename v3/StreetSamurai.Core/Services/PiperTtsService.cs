@@ -8,7 +8,7 @@ namespace StreetSamurai.Core.Services;
 /// zero-cost alternative to ElevenLabs for draft/bedtime listens. Synthesizes text to a
 /// WAV with piper.exe, then resamples to the audiobook pipeline's native PCM
 /// (44.1 kHz, mono, s16le) with ffmpeg so the existing segment/silence/encode assembly
-/// in <see cref="NodeWorkbenchService.PublishAudiobookAsync"/> works unchanged.
+/// in <see cref="NodeWorkbenchService.ExportAudiobookAsync"/> works unchanged.
 /// <para>Resolution order for the engine and voice model:
 /// 1. env <c>SS_PIPER_EXE</c> / <c>SS_PIPER_MODEL</c>;
 /// 2. a <c>tools\piper</c> directory found by walking up from the app base directory

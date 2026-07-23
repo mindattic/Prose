@@ -194,7 +194,7 @@ public class SettingsServiceTests
     {
         // The exact reported bug: a CLI publish writes the per-universe export dir, then a running web
         // host (holding a stale in-memory copy) flushes an unrelated field — the export dir must survive.
-        using var cli  = new SettingsService(tempDir);  // simulates `ss --publish --export-dir ...`
+        using var cli  = new SettingsService(tempDir);  // simulates `ss --export-node --export-dir ...`
         using var host = new SettingsService(tempDir);  // simulates a live Writer/Codex host
 
         cli.SetUniverseExportDirectory("scry", @"R:\X\Scry");

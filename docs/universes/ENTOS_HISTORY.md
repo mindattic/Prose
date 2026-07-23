@@ -1,17 +1,17 @@
 ---
 universe: scry
-title: The Great Record of the Caul — 1700 Years of History
+title: The Great Record of the Entos — 1700 Years of History
 layer: universe-history
 updated: 2026-07-12
 ---
 
-# The Great Record of the Caul
+# The Great Record of the Entos
 ## Being a Chronicle of the Seven Houses, Their Champions, Their Wars, and the World They Made
 
-> This document records the history of the Caul from the First Migration (Year 1) through Year 1700.
+> This document records the history of the Entos from the First Migration (Year 1) through Year 1700.
 > Current story events take place after Year 1700. This history is the substrate all story arcs inherit.
-> It is written as the Caul's own archivists write — not neutral, not complete. The gaps are part of the record.
-> Authoritative world facts remain in `docs/universes/CAUL.md`. This document expands the Long Record section.
+> It is written as the Entos's own archivists write — not neutral, not complete. The gaps are part of the record.
+> Authoritative world facts remain in `docs/universes/ENTOS.md`. This document expands the Long Record section.
 
 ---
 
@@ -35,25 +35,25 @@ Everything else is interpretation. You may have it.
 
 ### The Southlands
 
-Before the Caul was the Caul, it was not empty. It is important to say this first. The chronicles of every House manage, in their different ways, to suggest that the seven founding cultures arrived on unoccupied land, that the continent waited for them as a body waits for breath. This is not accurate. The Caul had people when the migrants came. What became of those people is the oldest gap in the record.
+Before the Entos was the Entos, it was not empty. It is important to say this first. The chronicles of every House manage, in their different ways, to suggest that the seven founding cultures arrived on unoccupied land, that the continent waited for them as a body waits for breath. This is not accurate. The Entos had people when the migrants came. What became of those people is the oldest gap in the record.
 
-The Southlands are the desert states south of the Caul's current boundary — an ocean of sand and limestone plateau that had, at the time of the First Migration, been pressing against the agricultural margin for three generations. The climate had shifted. The wells had moved. The families that had maintained the great southern oasis-cities for five hundred years watched the sand advance and made a calculation: go north, through the wild corridor, or remain.
+The Southlands are the desert states south of the Entos's current boundary — an ocean of sand and limestone plateau that had, at the time of the First Migration, been pressing against the agricultural margin for three generations. The climate had shifted. The wells had moved. The families that had maintained the great southern oasis-cities for five hundred years watched the sand advance and made a calculation: go north, through the wild corridor, or remain.
 
-Many remained. The Caul records only those who left.
+Many remained. The Entos records only those who left.
 
 ### The Three Waves
 
-**The First Wave (Year 1 — Year 87)** was not an exodus. It was the slow bleed of families and small groups who crossed through the desert margin, following the river corridors that ran north through what would become Calyx territory. These were farmers, primarily. They carried seed stock and draft animals. They crossed the sand in three to five generations of slow northward pressure, arriving in the Caul's eastern plains as strangers who did not know they were entering anything in particular.
+**The First Wave (Year 1 — Year 87)** was not an exodus. It was the slow bleed of families and small groups who crossed through the desert margin, following the river corridors that ran north through what would become Calyx territory. These were farmers, primarily. They carried seed stock and draft animals. They crossed the sand in three to five generations of slow northward pressure, arriving in the Entos's eastern plains as strangers who did not know they were entering anything in particular.
 
 The plains were rich. The soil was the deep dark loam of a continent whose rivers had been depositing for millennia. The first-wave migrants settled there and built the agricultural culture that would become House Calyx. They had, at this point, no knowledge of the membrane sites. They built in the plains because the plains could sustain them, and the membrane's first effect on them was simply disappearance: people vanished near the low hills of the eastern plain's interior, and no one yet knew why.
 
 **The Second Wave (Year 88 — Year 193)** came faster, driven by a catastrophic drought that killed the remaining oasis-cities in the Southlands in a single decade. These migrants crossed in larger groups and carried cultural institutions with them — religious traditions, a legal tradition based on written contract, a strong scribal class, and metallurgical techniques developed in the Southlands' volcanic highlands.
 
-The second wave dispersed more widely. Some groups stayed in the eastern plains and merged with first-wave settlements. Others continued west along the river valleys, reaching the central forests and the broad agricultural basin that would become Verlaine territory. Others moved north along the coast to the fjord country. The metallurgists, following the volcanic ridge geography they recognized from home, settled in the central forest's western highlands and established the first permanent smelting operations at what would become Atrament territory. The scribal class, predictably, settled wherever the trade routes crossed — in the basin between the forest and the coast, the geographic center of what would become the Caul.
+The second wave dispersed more widely. Some groups stayed in the eastern plains and merged with first-wave settlements. Others continued west along the river valleys, reaching the central forests and the broad agricultural basin that would become Verlaine territory. Others moved north along the coast to the fjord country. The metallurgists, following the volcanic ridge geography they recognized from home, settled in the central forest's western highlands and established the first permanent smelting operations at what would become Atrament territory. The scribal class, predictably, settled wherever the trade routes crossed — in the basin between the forest and the coast, the geographic center of what would become the Entos.
 
-**The Third Wave (Year 194 — Year 283)** was the last and most diverse. It included groups from both the deep Southlands and from the coastal fringe — people who had moved along the southern coast and arrived by sea at the Caul's western cliffs and southern peninsula. The cliff-coast arrivals founded what would become Lacerta territory; the southern-peninsula arrivals, with the warmest and most temperate land and the oldest written tradition of the Southlands cultures, settled the limestone ridge country and the inland sea coast that would become Ocipheus.
+**The Third Wave (Year 194 — Year 283)** was the last and most diverse. It included groups from both the deep Southlands and from the coastal fringe — people who had moved along the southern coast and arrived by sea at the Entos's western cliffs and southern peninsula. The cliff-coast arrivals founded what would become Lacerta territory; the southern-peninsula arrivals, with the warmest and most temperate land and the oldest written tradition of the Southlands cultures, settled the limestone ridge country and the inland sea coast that would become Ocipheus.
 
-By Year 283, the seven geographic zones of the Caul's future Houses were occupied by distinct cultural groups with distinct origins, distinct technologies, and distinct relationships to the membrane sites none of them yet understood.
+By Year 283, the seven geographic zones of the Entos's future Houses were occupied by distinct cultural groups with distinct origins, distinct technologies, and distinct relationships to the membrane sites none of them yet understood.
 
 ### The First Contact with the Membrane
 
@@ -83,9 +83,9 @@ The oldest founding legend is the simplest. Septimia was an observer. She was th
 
 This is in the record. Three years of "nothing observed" in her hand, with the date and the weather conditions and the quality of the light, recorded daily with the same care a person uses when they expect the nothing to eventually become something.
 
-In Year 312, the record changes. Not dramatically. One line: *the boundary moved today. Not the air above it. The boundary itself.* The next three years of records show the boundary moving, by increments, in patterns she began to predict. By Year 318 she could tell you what the membrane would do at any given apparatus output and weather combination, to a precision that no one else in the Caul could approach.
+In Year 312, the record changes. Not dramatically. One line: *the boundary moved today. Not the air above it. The boundary itself.* The next three years of records show the boundary moving, by increments, in patterns she began to predict. By Year 318 she could tell you what the membrane would do at any given apparatus output and weather combination, to a precision that no one else in the Entos could approach.
 
-She did not call herself the House's founder. She called herself an observer. When others came to learn from her, she taught them what she had learned. When they asked what the installation was called, she said: Ocipheus Station, the name of the location. When they asked what the House was called, she said: the House is what you make of it. By the time she died at one hundred eighteen — an age no natural person reaches, a length of life that has never been explained — the institution built around her records was the most sophisticated membrane-observing body in the Caul, and her personal archive filled eleven rooms.
+She did not call herself the House's founder. She called herself an observer. When others came to learn from her, she taught them what she had learned. When they asked what the installation was called, she said: Ocipheus Station, the name of the location. When they asked what the House was called, she said: the House is what you make of it. By the time she died at one hundred eighteen — an age no natural person reaches, a length of life that has never been explained — the institution built around her records was the most sophisticated membrane-observing body in the Entos, and her personal archive filled eleven rooms.
 
 The Memory Eye — *Oculus Memoriae* — was found in the deepest layer of the installation's geological foundation in Year 314, during excavation work Septimia had ordered to find the physical source of the membrane's ground-level distortion. It is a lens, twenty centimeters across, ground from a crystal that no mineralogical survey of the local geology can account for. When you look through it, you see the location as it was at some previous time. Which time is not controlled by the operator. What it shows is what it chooses. This is either a property of the material or a behavior that cannot yet be described as a property. Septimia's record calls it "the site's memory, externalized." She carried it for the remaining eighty years of her life. It has lived in the Ocipheus Station archive since, except for a period of forty years (Year 1088–1128) when it was confiscated by House Atrament as a spoil of the Ridge War and eventually returned under the Treaty of the Three Terms.
 
@@ -101,7 +101,7 @@ He was gone for twenty-one days. When he came back, the fields were producing. N
 
 He could not explain this in greater detail. He carried, when he returned, a war-scythe. The blade was forged from the first iron ore ever taken from the eastern plains — he could not have carried that ore into the hills and worked it in twenty-one days, and the blade was worked with a skill nobody in the community could match. The handle was wrapped in something that was not leather, with a grain and weight that nobody could identify. He said: *it came from down. From where the membrane goes when it goes underground.* No one pressed him further. The famine was ending.
 
-The scythe — *Gyökér*, the Root — has been held by the Seat of Calyx since Year 1200, when the last Warrior King to actually carry it in battle died at the Battle of Blind Teeth without using it. It is now ceremonial. The Seat holds it at the harvest rite. The harvest rite produces, annually, the most accurate agricultural forecast in the Caul.
+The scythe — *Gyökér*, the Root — has been held by the Seat of Calyx since Year 1200, when the last Warrior King to actually carry it in battle died at the Battle of Blind Teeth without using it. It is now ceremonial. The Seat holds it at the harvest rite. The harvest rite produces, annually, the most accurate agricultural forecast in the Entos.
 
 Nobody has studied how.
 
@@ -137,13 +137,13 @@ The Stylus — *Le Stylet de Vérité*, the Truth Stylus — is a writing implem
 
 The Stylus was lost in Year 891 during the sack of a minor Verlaine installation by Fjorheim forces. It was recovered in Year 1203 from a Lacerta intelligence depot where it had apparently been sitting unidentified for three hundred years, its records having been mistranslated as forgeries. It was lost again in Year 1409 when the Warrior King Marguerite the Locked deliberately concealed it because of what it produced when she used it to write a diplomatic document she had intended to fill with useful ambiguities. What it actually produced is sealed in the Verlaine archive's restricted section. The Stylus was recovered again in Year 1441. It currently resides in the Deep Archive.
 
-The Verlaine founding legend, unlike the others, includes no feat of arms. Arnault's monument is not a weapon. It is the Compact itself — the eleven lines that ended the Blood Century and became the political structure the Caul has operated within since. His name is at the bottom in his own hand. The Stylus confirmed the signature. Nobody has ever disputed it.
+The Verlaine founding legend, unlike the others, includes no feat of arms. Arnault's monument is not a weapon. It is the Compact itself — the eleven lines that ended the Blood Century and became the political structure the Entos has operated within since. His name is at the bottom in his own hand. The Stylus confirmed the signature. Nobody has ever disputed it.
 
 ---
 
 #### Ulfheiðr Ironflood, Founder of Fjorheim (Year 321 — Year 418)
 
-The fjord people came to the Caul in the third wave and arrived already organized: they came from a coastal maritime culture with mandatory military service, oath-taking traditions, and the institutional memory of sea-raid as a primary strategic instrument. They needed, in the Caul, only a site and a use for their existing competence.
+The fjord people came to the Entos in the third wave and arrived already organized: they came from a coastal maritime culture with mandatory military service, oath-taking traditions, and the institutional memory of sea-raid as a primary strategic instrument. They needed, in the Entos, only a site and a use for their existing competence.
 
 The membrane site in the glacial plateau above the fjord coast was the site that found them, not the other way around. Ulfheiðr — then a sea-captain in the third wave's maritime contingent, thirty years old, twenty years of ocean behind her — was camped with her crew on the inland plateau when the site opened without apparatus, without ceremony, without any preparation she had made or requested. She described it later as: *the sky thinned and something came through it, and I was not afraid, and that was when I understood that fear would have been the correct response.*
 
@@ -189,11 +189,11 @@ What they walked out of the site with — the agreement, the three matched blade
 
 #### Eirene the Still-Water, Founder of Sinter (Year 295 — Year 391)
 
-Every founding legend in the Caul involves a weapon. The founding legend of Sinter involves a mirror.
+Every founding legend in the Entos involves a weapon. The founding legend of Sinter involves a mirror.
 
 Eirene was the only child of the alpine valley's senior practitioner family — the people who had lived nearest the valley's membrane network since the First Wave, who had never left, who had watched the membrane's behavior across three generations before they understood it as a membrane rather than a sacred condition of the ground. She grew up knowing the valley's Scrywell network the way other children know the house they grew up in: not as a tool but as an environment, a constant presence with patterns she had learned before she had language for them.
 
-What the valley's membrane showed was different from what every other installation in the Caul showed. This was not immediately understood. The difference was not in the quality of the Sphere access or the membrane's activity level — both were exceptional, the distributed network producing more simultaneous access points than any single-site installation — but in the character of what the access points opened toward. The Sinter network did not preferentially show Spheres with military technology or industrial processes. It showed Spheres at moments of resolution. Conflicts ending. Agreements being reached. The particular geometry of two people, or two nations, finding the terms they could both live with.
+What the valley's membrane showed was different from what every other installation in the Entos showed. This was not immediately understood. The difference was not in the quality of the Sphere access or the membrane's activity level — both were exceptional, the distributed network producing more simultaneous access points than any single-site installation — but in the character of what the access points opened toward. The Sinter network did not preferentially show Spheres with military technology or industrial processes. It showed Spheres at moments of resolution. Conflicts ending. Agreements being reached. The particular geometry of two people, or two nations, finding the terms they could both live with.
 
 Eirene systematized this in Year 328. She trained her practitioners not in Scrying for military application but in what she called "watching the turn" — the moment in a Sphere's timeline when hostility became negotiation. She catalogued the patterns: what conditions preceded a turn, what language characterized it, what the body did when a person shifted from wanting the other person dead to wanting them to agree. She applied the catalogue.
 
@@ -229,7 +229,7 @@ The Maw itself was killed in Year 622 by a combined Fjorheim-Calyx hunting party
 
 The Archive did not fall. It has never fallen. This is because the Archive is built over the membrane site, and the site cannot be shut down from outside; the proto-Verlaine defenders had simply retreated to it and kept the apparatus running. An active site in a besieged building produces phenomena that an attacking force without practitioner training cannot navigate. The Atrament forces spent three years on the perimeter watching their own scouts disappear when they approached the inner walls and occasionally reappear, changed, with no memory of the interval. They withdrew in Year 621.
 
-**The Channel Trial (Year 704).** Technically after the Blood Century, but arising directly from it: Atrament's first attempt to project force across the channel to Pallor's island. This was a strategic calculation — Pallor had held the island throughout the Blood Century and used it as a resupply and recovery ground. Taking the island would cut Fjorheim's southern rear. The naval force assembled by Atrament in Year 704 was the largest fleet the Caul had seen.
+**The Channel Trial (Year 704).** Technically after the Blood Century, but arising directly from it: Atrament's first attempt to project force across the channel to Pallor's island. This was a strategic calculation — Pallor had held the island throughout the Blood Century and used it as a resupply and recovery ground. Taking the island would cut Fjorheim's southern rear. The naval force assembled by Atrament in Year 704 was the largest fleet the Entos had seen.
 
 It failed. Not in the crossing — the ships reached the channel — but in the landing. Pallor's Warrior King Caradoc Long-Eye had been watching the fleet assemble for six months from the island's watch-post. He had six months of preparation. The Atrament ships that reached the shore found a prepared beach, and the Atrament forces that landed found defenders who had read every approach in advance. The fleet withdrew. Two-thirds of the ships made it back.
 
@@ -239,7 +239,7 @@ During the Blood Century, three membrane sites went dark. Their locations are kn
 
 **The Orvaine Site** went dark in Year 589, when proto-Orvaine's entire senior practitioner lineage was killed in a single ambush by an unidentified raiding party. The ambush was carried out with unusual tactical precision — twelve people killed in twelve separate locations on the same night, none of them together, none of them aware they were under threat. Who organized it is not recorded. The site's apparatus is still present. The site has not been operated since.
 
-**The Cresset Northern Site** went dark in Year 623, when the practitioner family holding it defected to the eastern borderland cultures. They crossed the Wilderness Wall — the impenetrable eastern forest boundary — and did not return. Whether they are still alive, or what culture they joined, is the eastern question the Caul does not discuss publicly.
+**The Cresset Northern Site** went dark in Year 623, when the practitioner family holding it defected to the eastern borderland cultures. They crossed the Wilderness Wall — the impenetrable eastern forest boundary — and did not return. Whether they are still alive, or what culture they joined, is the eastern question the Entos does not discuss publicly.
 
 **The Unnamed Southern Site** — which the records call only "the third site," or sometimes "the Void Site" — went dark in Year 577. No one knows what happened. It was operational in Year 576. In Year 578, an inspection sent by the proto-Liturgy found the apparatus intact, the site empty, and the surrounding ground producing an effect that no one in the inspection party could describe and from which two of the twelve inspectors did not recover. The effect has diminished with time. The site now produces, at its lowest margin, a persistent low-level disturbance that is classified by the Liturgy as "minimum stable output." Shutting it down produces larger effects. It has been left running.
 
@@ -267,7 +267,7 @@ The seven Houses formalized in the century between Year 643 and Year 743. Not at
 
 **Ocipheus** formalized in Year 651. Septimia Vigile had died in Year 397; her successors had maintained her observation tradition continuously. By Year 651, the institution had more documented Sphere catalogue entries than all other proto-Houses combined. Their formalization was the quietest: they simply continued what they had been doing and added the House name to the header of their documents.
 
-**Atrament** formalized in Year 661. The Forge Hearth, by this point, was the Caul's primary Catalyst refining facility. The Liturgy required a formal institutional structure to continue the Catalyst supply agreements. Atrament formalized under that pressure.
+**Atrament** formalized in Year 661. The Forge Hearth, by this point, was the Entos's primary Catalyst refining facility. The Liturgy required a formal institutional structure to continue the Catalyst supply agreements. Atrament formalized under that pressure.
 
 **Verlaine** formalized in Year 670. They had been the scribes. Now they were the scribes who had written the document that made them a House. They were aware of the recursion. The Stylus was used to sign the charter. The Stylus had been writing what was true for thirty years. What it wrote in the charter was: *House Verlaine, custodians of the record, guarantors of the agreement, holders of what the others cannot afford to hold for themselves.* Nobody changed it.
 
@@ -287,7 +287,7 @@ The Houses discovered, in the century after formalization, that military allianc
 
 **Year 892 — Svala Fjorheim to Arnault IV of Verlaine.** The marriage that ended the Vine Country War (Year 889-892) and produced the Northern Shore Treaty. Arnault IV was the Verlaine Keeper; Svala was the eldest daughter of the Fjorheim Warrior King Ragnarr the Quiet. The Northern Shore Treaty, which she is credited as the primary negotiator of (her husband Arnault IV handled the documentation), established the first formal arrangement for Fjorheim military traffic through Verlaine's northern coast territory. This treaty, seventy years later, became the legal foundation for the Gyldir Shore Accord.
 
-**Year 901 — Osian Pallor to Verlaine as the Borrowed Keeper.** Not a marriage but a form of diplomatic pledge that functions similarly: Pallor's eldest son, trained in the island's practitioner tradition, was sent to Verlaine's installation as their Keeper for a term of twenty years. The "borrowing" was reciprocal — a Verlaine practitioner family relocated to Pallor in exchange. The arrangement is unprecedented and has never been replicated: the only time in the Caul's history that a House's installation was administered by an operator from another House. The Borrowed Keeper produced more Sphere catalogue documentation than any Verlaine Keeper before or since; a practitioner from a different tradition, observing the same membrane, sees different things.
+**Year 901 — Osian Pallor to Verlaine as the Borrowed Keeper.** Not a marriage but a form of diplomatic pledge that functions similarly: Pallor's eldest son, trained in the island's practitioner tradition, was sent to Verlaine's installation as their Keeper for a term of twenty years. The "borrowing" was reciprocal — a Verlaine practitioner family relocated to Pallor in exchange. The arrangement is unprecedented and has never been replicated: the only time in the Entos's history that a House's installation was administered by an operator from another House. The Borrowed Keeper produced more Sphere catalogue documentation than any Verlaine Keeper before or since; a practitioner from a different tradition, observing the same membrane, sees different things.
 
 ### The Fallen Houses in the Compact Age
 
@@ -303,7 +303,7 @@ The Houses discovered, in the century after formalization, that military allianc
 
 The century after the Compact's consolidation is what the Houses' own chronicles call the Long Peace. This is not accurate. There were wars. There were always wars. What the Long Peace actually refers to is the period when the Compact's framework held well enough that no war escalated to existential scale — no House was destroyed, no membrane site was taken permanently, no population was wiped. By the standards of the Blood Century, this was peace.
 
-The feast culture arose because surplus existed for the first time in the Caul's history. Calyx's agricultural output, with the Catalyst-enhanced soil work that Zsombor's tradition had developed, was producing more food than the Caul could eat. Atrament's Forge Hearth was producing Catalyst supply faster than the military demand could absorb. The Liturgy had more practitioners than it needed to administer the current war levels.
+The feast culture arose because surplus existed for the first time in the Entos's history. Calyx's agricultural output, with the Catalyst-enhanced soil work that Zsombor's tradition had developed, was producing more food than the Entos could eat. Atrament's Forge Hearth was producing Catalyst supply faster than the military demand could absorb. The Liturgy had more practitioners than it needed to administer the current war levels.
 
 The Houses responded to surplus with the traditional instruments: elaborate ceremony, public display of what had been accumulated, and the sending of sons and daughters to distant Houses as a demonstration that the House could afford to give away its most valuable people.
 
@@ -321,7 +321,7 @@ The Atrament chronicle does not record this interpretation. The interpretation a
 
 ### The Red Winter Famine (Year 1021 — Year 1023)
 
-The wine country burns in Year 1021. A late-summer heat wave — the hottest in recorded Caul history — kills Verlaine's harvest and drives the grain failure three seasons east into Calyx. The Red Winter is named for the color of the failed harvest, which rots on the vine rather than dying cleanly.
+The wine country burns in Year 1021. A late-summer heat wave — the hottest in recorded Entos history — kills Verlaine's harvest and drives the grain failure three seasons east into Calyx. The Red Winter is named for the color of the failed harvest, which rots on the vine rather than dying cleanly.
 
 What the famine produces: the first large-scale documented movement of displaced persons between Houses. Calyx's eastern farming populations, unable to feed themselves, move west into Atrament territory, where the volcanic-ridge agriculture is not affected by the eastern drought. Atrament accepts them as labor. The population movement lasts three years and leaves permanent demographic marks: Atrament's eastern borderland communities develop a mixed Calyx-Atrament cultural character that persists to the current era.
 
@@ -347,7 +347,7 @@ This section stands between the Long Peace and the Age of Fracture because it be
 
 ### The Impact
 
-No apparatus detected it in advance. The Sinter valley's membrane network was the most sensitive in the Caul — distributed, continuous, attuned to the finest tremors of Sphere activity across hundreds of access points — and it did not detect the bolide's approach until the final three hours. Eirene's successors had trained the network to look through the membrane, not at the sky above it. The bolide came from above.
+No apparatus detected it in advance. The Sinter valley's membrane network was the most sensitive in the Entos — distributed, continuous, attuned to the finest tremors of Sphere activity across hundreds of access points — and it did not detect the bolide's approach until the final three hours. Eirene's successors had trained the network to look through the membrane, not at the sky above it. The bolide came from above.
 
 Three hours of warning. The valley's communities evacuated toward the mountain passes. Most of the population made it. Most of the practitioners made it, each carrying what they could from the arbitration archive — documents, the Sphere catalogue, the records of two hundred years of resolved disputes. La Pace was carried by the senior practitioner in her arms against her chest, wrapped in her outer robe, across the eastern pass into Calyx territory. The archive's last recorded entry before the impact is dated the morning of the fifth day of winter, Year 1079: *we are leaving the valley. The sky is wrong.*
 
@@ -363,7 +363,7 @@ The magma flows began on the third day, as the impact's heat reached the volcani
 
 What emerged in the first three years was primarily Gifted matter in unguided concentrations — the raw material of Transmutation without the Liturgy's administration, without a certified practitioner, without any of the protocols that separate the Gifted Ceremony from catastrophic uncontrolled mutation. The soldiers sent by the three nearest Houses to assess the valley in Year 1080 came back changed in ways that the Liturgy's emergency practitioners spent eight months trying to understand. Three of them could not be stabilized. The Liturgy classified them under its existing framework for ungoverned Transmutation outcome and administered the protocol that framework requires. The Atrament chronicle records this as: *three soldiers returned from the assessment mission. Three soldiers were treated for membrane exposure. Three soldiers did not survive treatment.*
 
-The fauna began emerging in Year 1081. Not the Bheur Incursion Predators of the existing record — different creatures, catalogued under emergency Sphere-designation numbers that the Quarantine Administration's restricted ledger holds and the main archive does not. The creatures that emerged from the larger cracks in Year 1081 are the single largest expansion of the Caul's monster taxonomy in six hundred years. Some of them have been named. Most have not. The ones that made it past the valley's mountain margins before the Wall was in place — approximately forty documented emergence events, Year 1080 to Year 1084 — are the ancestors of the current monster corridor's worst fauna.
+The fauna began emerging in Year 1081. Not the Bheur Incursion Predators of the existing record — different creatures, catalogued under emergency Sphere-designation numbers that the Quarantine Administration's restricted ledger holds and the main archive does not. The creatures that emerged from the larger cracks in Year 1081 are the single largest expansion of the Entos's monster taxonomy in six hundred years. Some of them have been named. Most have not. The ones that made it past the valley's mountain margins before the Wall was in place — approximately forty documented emergence events, Year 1080 to Year 1084 — are the ancestors of the current monster corridor's worst fauna.
 
 ### The Quarantine Compact (Year 1082)
 
@@ -393,17 +393,17 @@ What soldiers on Watch rotation say about the posting: the silence is wrong. Not
 
 ### The Descents
 
-The valley's cracked geology is the richest concentration of location-specific Sphere access in the Caul. This has been known since Year 1082. The Descents — controlled expeditions through the Watch's authorized pass-points into the valley interior — began in Year 1140, when the Quarantine Administration judged patrol coverage sufficient to permit supervised entry.
+The valley's cracked geology is the richest concentration of location-specific Sphere access in the Entos. This has been known since Year 1082. The Descents — controlled expeditions through the Watch's authorized pass-points into the valley interior — began in Year 1140, when the Quarantine Administration judged patrol coverage sufficient to permit supervised entry.
 
 Every Descent requires a Liturgy charter. The charter specifies duration, personnel count, target coordinates, and the Descent's stated purpose (Scrying, Catalyst recovery, emergence cataloguing, or geological survey). No charter covers what the Descent teams actually find, because what they find cannot be specified in advance. The Liturgy's position is that the charter covers the intention; what the intention encounters is the Descent team's responsibility.
 
 Approximately forty percent of chartered Descent teams return with their full personnel. The remaining sixty percent return with fewer people than they left with, or do not return at all. The Liturgy does not publish these numbers. The Houses know them. They keep sending teams.
 
-What the successful Descents return with: Sphere catalogue entries for access points available nowhere else in the Caul; Catalyst material in concentrations and varieties that no above-ground site has produced; recorded observations of what the valley floor looks like — the cooling lava, the seismic venting, the crater's impact structure still visible at the center, and the thirty-odd aperture sites where the membrane cracks open directly, uncontrolled, into wherever it opens into. Descent operators describe the aperture sites in consistent terms across six centuries of expedition records: *the light is wrong. The air is wrong. Something is paying attention to you, and it has been doing so since before you arrived.*
+What the successful Descents return with: Sphere catalogue entries for access points available nowhere else in the Entos; Catalyst material in concentrations and varieties that no above-ground site has produced; recorded observations of what the valley floor looks like — the cooling lava, the seismic venting, the crater's impact structure still visible at the center, and the thirty-odd aperture sites where the membrane cracks open directly, uncontrolled, into wherever it opens into. Descent operators describe the aperture sites in consistent terms across six centuries of expedition records: *the light is wrong. The air is wrong. Something is paying attention to you, and it has been doing so since before you arrived.*
 
 Three Descent teams over the six centuries have returned with members who cannot account for intervals of their time inside the valley — gaps of hours or days where the team's records show no activity but the team members are unharmed, in good health, and entirely unable to explain where the time went. The Liturgy's restricted ledger covers these cases individually. Whatever those operators saw or experienced in the gap is in the ledger. The ledger is sealed.
 
-The conspiracy version, circulated by Wall veterans on long rotations: the bolide was not natural. Something on the other side of a Sphere threw it through the membrane. What it was trying to do — open a permanent uncontrolled breach, destroy the one neutral House in the Caul, produce the Quarantine as a mechanism that would give the Liturgy its own standing administration — is the conspiracy that forks in three directions depending on which House the veteran comes from. The Liturgy has no comment. The Liturgy has not commented for six hundred years.
+The conspiracy version, circulated by Wall veterans on long rotations: the bolide was not natural. Something on the other side of a Sphere threw it through the membrane. What it was trying to do — open a permanent uncontrolled breach, destroy the one neutral House in the Entos, produce the Quarantine as a mechanism that would give the Liturgy its own standing administration — is the conspiracy that forks in three directions depending on which House the veteran comes from. The Liturgy has no comment. The Liturgy has not commented for six hundred years.
 
 ---
 
@@ -413,15 +413,15 @@ The conspiracy version, circulated by Wall veterans on long rotations: the bolid
 
 The Compact's framework had been managing conflict for four hundred years. In Year 1143, the framework failed for the first time at existential scale — not because anyone decided it had failed, but because the Sinter Event's long aftermath had finally destabilized the balance the Compact depended on.
 
-The Sinter valley had been the geographic center of the Caul's political structure — not just as territory but as function. Sinter had been where disputes went to be resolved. With Sinter gone, the Compact had no neutral arbiter below the Liturgy level, and the Liturgy was too invested in the Quarantine Administration to act as a neutral party in inter-House politics simultaneously. For sixty years after the Meteor Event, the Houses managed through the existing structures, increasingly strained. The strain finally broke at a river-crossing dispute between Atrament and Calyx in Year 1143 that would, in Year 1078, have gone to Sinter for resolution in four days. In Year 1143, it went to war.
+The Sinter valley had been the geographic center of the Entos's political structure — not just as territory but as function. Sinter had been where disputes went to be resolved. With Sinter gone, the Compact had no neutral arbiter below the Liturgy level, and the Liturgy was too invested in the Quarantine Administration to act as a neutral party in inter-House politics simultaneously. For sixty years after the Meteor Event, the Houses managed through the existing structures, increasingly strained. The strain finally broke at a river-crossing dispute between Atrament and Calyx in Year 1143 that would, in Year 1078, have gone to Sinter for resolution in four days. In Year 1143, it went to war.
 
 The first engagement of the formal Living War is recorded as Year 1143, at a membrane installation in Atrament's southern territory. By Year 1200, all seven Houses were committed in one or another coalition configuration. The Quarantine Compact — the one obligation all Houses maintained regardless — held throughout. It has held since. The Wall is the only front that never changes sides.
 
 ### The Channel War and the Gyldir Shore Accord (Year 1284 — Year 1302)
 
-The Channel War is the conflict that produced the Caul's most important and most unusual military arrangement.
+The Channel War is the conflict that produced the Entos's most important and most unusual military arrangement.
 
-In Year 1256, Ocipheus's Warrior King Ferrante di Vigile — son of a long practitioner line, technically gifted, militarily frustrated — concluded that the Living War could not be won from the southern peninsula. Ocipheus Station had the deepest Sphere access in the Caul and the oldest practitioner tradition; what it did not have was a second front. Atrament was pressing from the north. Calyx, Atrament's food supplier, was feeding the war machine that was degrading Ocipheus's territorial control. Ferrante's calculation: if Pallor could be taken, Fjorheim's northern naval access would be cut, Calyx's food supply routes to Atrament would be exposed, and the northern coalition would collapse.
+In Year 1256, Ocipheus's Warrior King Ferrante di Vigile — son of a long practitioner line, technically gifted, militarily frustrated — concluded that the Living War could not be won from the southern peninsula. Ocipheus Station had the deepest Sphere access in the Entos and the oldest practitioner tradition; what it did not have was a second front. Atrament was pressing from the north. Calyx, Atrament's food supplier, was feeding the war machine that was degrading Ocipheus's territorial control. Ferrante's calculation: if Pallor could be taken, Fjorheim's northern naval access would be cut, Calyx's food supply routes to Atrament would be exposed, and the northern coalition would collapse.
 
 Taking Pallor required crossing the channel. Crossing the channel from Ocipheus territory directly — sailing north up the inland sea, through the straits, north up the western coast, into the channel — took six months in favorable conditions. Verlaine's northern coastline was two days' sailing from Pallor's southern shore.
 
@@ -431,7 +431,7 @@ Verlaine's condition for allowing Ocipheus military transit through its northern
 
 The escorts Verlaine specified were Giants.
 
-The Giants — Champions so fully transformed through decades of Catalyst infusion that they stood nine feet tall, lean and immovable as ridge stone, bound to no House oath because no House could hold them — were the Caul's most reliable guarantors precisely because no House owned them. Fjorheim knew where most of them were. Fjorheim's tradition of transformation had produced more Giants than any other House. The Giants did not serve Fjorheim. They sold their services.
+The Giants — Champions so fully transformed through decades of Catalyst infusion that they stood nine feet tall, lean and immovable as ridge stone, bound to no House oath because no House could hold them — were the Entos's most reliable guarantors precisely because no House owned them. Fjorheim knew where most of them were. Fjorheim's tradition of transformation had produced more Giants than any other House. The Giants did not serve Fjorheim. They sold their services.
 
 Thibault Iron-Pen, Verlaine's Keeper in Year 1284, negotiated the three-way arrangement that became the **Gyldir Shore Accord** (so named for the northern shore village where the signing took place):
 
@@ -451,13 +451,13 @@ The Channel War ended in stalemate. The Accord remained in force.
 
 ### The Twice-Stalker
 
-The Void-Crow — the enormous bird that has appeared at every major battle since Year 512 — was present at the Battle of the Ridge in Year 1043. It was present at the First Crossing of Year 1284. The same creature, if it is the same creature, would be over seven hundred years old. The Caul's record has catalogued it twenty-three times. No one has killed it. The Ocipheus vigil operators, on long watches at the station, call it the Twice-Stalker — *il testimone*, the witness. The name is in their private vocabulary, not the official record. They say it comes to battles the way other predators come to food. They say it does not eat. They say it watches.
+The Void-Crow — the enormous bird that has appeared at every major battle since Year 512 — was present at the Battle of the Ridge in Year 1043. It was present at the First Crossing of Year 1284. The same creature, if it is the same creature, would be over seven hundred years old. The Entos's record has catalogued it twenty-three times. No one has killed it. The Ocipheus vigil operators, on long watches at the station, call it the Twice-Stalker — *il testimone*, the witness. The name is in their private vocabulary, not the official record. They say it comes to battles the way other predators come to food. They say it does not eat. They say it watches.
 
 The one operator who filed an official report on the Void-Crow, in Year 1291, described it as: *wingspan consistent with a Bheur Incursion Predator, approximately eighteen to twenty-two meters. Behavior: observation only. It circled the engagement at altitude throughout. No wing-beat sound at distances under 300 meters. No wind-disturbance evidence of the expected mass at the altitude. Eyes: visible from 300 meters.* The report was filed. The House administration classified it under "anomalous fauna observation." It is in the archive. Nobody has added to it.
 
 ### The Plague of Forgetting (Year 1351 — Year 1371)
 
-The Plague of Forgetting is the event in Caul history most likely to have been a weapon.
+The Plague of Forgetting is the event in Entos history most likely to have been a weapon.
 
 Its symptoms: progressive degradation of autobiographical memory, beginning with recent events and moving backward over weeks. A person experiencing the Plague would forget the most recent year first, then the one before it, then the one before that. The degradation was not uniform — some memories were spared, others lost in the middle of apparent stability. The most reliable indicator of terminal stage was the moment when the affected person could no longer recall their own name.
 
@@ -469,7 +469,7 @@ The Plague ended in Year 1371 without any treatment or intervention being credit
 
 ### The Great Hollow Famine (Year 1380 — Year 1395)
 
-The Great Hollow is the worst famine in the Caul's documented history. It was not caused by a single event but by the intersection of three concurrent failures: a membrane disturbance in Calyx's eastern territory that disrupted the root-system's ability to channel soil productivity (the same mechanism Zsombor's tradition had managed, now running in reverse); a military campaign that had pulled Calyx's labor force away from the fields for two consecutive harvests; and a Lacerta-sourced Catalyst supply problem that contaminated the enhanced-fertility preparations the Calyx root-readers used for the worst soils.
+The Great Hollow is the worst famine in the Entos's documented history. It was not caused by a single event but by the intersection of three concurrent failures: a membrane disturbance in Calyx's eastern territory that disrupted the root-system's ability to channel soil productivity (the same mechanism Zsombor's tradition had managed, now running in reverse); a military campaign that had pulled Calyx's labor force away from the fields for two consecutive harvests; and a Lacerta-sourced Catalyst supply problem that contaminated the enhanced-fertility preparations the Calyx root-readers used for the worst soils.
 
 The Great Hollow killed approximately one-third of Calyx's population and significant percentages in Verlaine, Atrament, and parts of Fjorheim. The monster incursion rate in Calyx territory during the Hollow was the highest ever recorded: the Thornwood Herd — seventeen linked creatures that moved as a coordinated unit through the eastern farmland — killed four hundred Myrmidons and displaced an estimated sixty thousand civilians before being driven back into the monster corridor in Year 1382. Two of the seventeen creatures that went into the corridor did not return to the corridor's normal fauna pattern. What they became is in the record only as an absence: they are not in subsequent surveys.
 
@@ -481,7 +481,7 @@ Calyx's Warrior King during the Hollow was Imre the Underfed, who held the posit
 
 ### The Coalition Cycles
 
-The War of Inheritance is not a single war. It is the two centuries during which the Caul's Houses cycled through coalition configurations faster than institutional memory could track them. The House that was your ally in Year 1400 was your enemy in Year 1430 and your ally again in Year 1461, and neither of you had fundamentally changed what you were.
+The War of Inheritance is not a single war. It is the two centuries during which the Entos's Houses cycled through coalition configurations faster than institutional memory could track them. The House that was your ally in Year 1400 was your enemy in Year 1430 and your ally again in Year 1461, and neither of you had fundamentally changed what you were.
 
 **Year 1401 — The Accord Violation.** Ocipheus's Corrado the Furious — a Warrior King whose name describes his administrative style accurately — violated the Gyldir Shore Accord in Year 1401. His specific violation: he expelled the Fjorheim Giants from two ships mid-transit and continued the crossing without escort, having decided that the Giants were intelligence assets for Verlaine rather than neutral escorts. He was not wrong about this. He was wrong about the leverage he had to act on it.
 
@@ -532,7 +532,7 @@ The Houses are not, in Year 1700, at peace. The Living War has been running for 
 
 Every House has lost membrane installations. Every House has lost Champions. Every House has sent sons and daughters to other Houses and watched some of them not come back. The Compact's framework has been strained to near-breaking and has held, after a fashion, because the alternative to the framework is the Blood Century, and the institutional memory of the Blood Century is still in the records.
 
-The four remaining Fallen Houses confirm in this period. House Venn was absorbed into Ocipheus in Year 1651; the Venn practitioner tradition vanished into Ocipheus's institutional culture, leaving behind only the word *vigil operators* use for the membrane on night watches when the administration is not present. House Orvaine was formally absorbed by the Silence in Year 1680; the Orvaine site is now the only active installation in the Caul administered directly by the Liturgy rather than a named House.
+The four remaining Fallen Houses confirm in this period. House Venn was absorbed into Ocipheus in Year 1651; the Venn practitioner tradition vanished into Ocipheus's institutional culture, leaving behind only the word *vigil operators* use for the membrane on night watches when the administration is not present. House Orvaine was formally absorbed by the Silence in Year 1680; the Orvaine site is now the only active installation in the Entos administered directly by the Liturgy rather than a named House.
 
 ### The Current Coalition Alignment
 
@@ -546,7 +546,7 @@ The Gyldir Shore Accord continues in force: Ocipheus transits Verlaine's coast t
 
 ## APPENDIX I: THE SEVEN RELIC WEAPONS
 
-The Relic weapons are physical objects of Gifted matter origin that have passed through the founding generations and, in most cases, survive to the current era. They are not the most powerful weapons in the Caul — that distinction belongs to the Scried designs the Houses manufacture in volume. They are the most meaningful weapons, which is a different kind of power.
+The Relic weapons are physical objects of Gifted matter origin that have passed through the founding generations and, in most cases, survive to the current era. They are not the most powerful weapons in the Entos — that distinction belongs to the Scried designs the Houses manufacture in volume. They are the most meaningful weapons, which is a different kind of power.
 
 | House | Relic | Name | Description | Current Status |
 |---|---|---|---|---|
@@ -593,7 +593,7 @@ These are the marriages the Houses used to build, test, and sometimes destroy th
 
 ## APPENDIX III: THE NAMED BEASTS
 
-The Caul's native creatures predate civilization and will outlast it. These are the ones the Houses have seen clearly enough to name.
+The Entos's native creatures predate civilization and will outlast it. These are the ones the Houses have seen clearly enough to name.
 
 **The Maw of Glas Tor** (Years 512–622). Cave predator, volcanic ridge. Wingspan twenty-two meters. Wingspan-to-body ratio inconsistent with standard Bheur Incursion Predator taxonomy; possible separate species. Killed 1,800 Myrmidons across 110 years. Killed by combined Fjorheim-Calyx hunting party in Year 622 using underground approach technique.
 
@@ -603,7 +603,7 @@ The Caul's native creatures predate civilization and will outlast it. These are 
 
 **The Thornwood Herd** (Year 1380–1382). Seventeen linked creatures, eastern farmland. Coordinated movement as a unit; individual size of a large draft animal, but linked locomotion implying shared perception. Killed 400 Myrmidons. Driven into monster corridor in Year 1382. Two did not return to corridor patterns. What they became is not in the subsequent fauna surveys.
 
-**The Twice-Stalker** (Years 1043 and 1284). The same enormous bird — or an identical bird — appearing at the Battle of the Ridge in Year 1043 and the First Crossing of Year 1284. Two hundred forty-one years separate these appearances. If it is the same creature, it is the second oldest individually documented creature in the record after the Void-Crow, and its appearances at two of the most strategically significant moments in Caul history are either coincidence or something the record does not have a framework for.
+**The Twice-Stalker** (Years 1043 and 1284). The same enormous bird — or an identical bird — appearing at the Battle of the Ridge in Year 1043 and the First Crossing of Year 1284. Two hundred forty-one years separate these appearances. If it is the same creature, it is the second oldest individually documented creature in the record after the Void-Crow, and its appearances at two of the most strategically significant moments in Entos history are either coincidence or something the record does not have a framework for.
 
 **The Ashgrave Corridor Predators** (ongoing). Unnamed individually. The Sphere outside the catalogue sequence that Ocipheus's vigil tradition has identified as the Ashgrave — a location-specific access point reachable only from coordinates in the ridge country — occasionally sends through fauna that no Sphere catalogue entry explains. The fauna are catalogued individually by Ocipheus's practitioners and destroyed as quickly as possible. The catalogue numbers go up. The corridor does not close.
 
@@ -640,7 +640,7 @@ All seven Houses. Established the forty-year coalition alignment review cycle. R
 
 **Year 912 — The First Feast** (Verlaine hosts): All seven Houses present. Calyx brings the grain and prepares the bread; Fjorheim brings preserved fish from the northern sea; Atrament brings ironwork table settings as contribution; Ocipheus brings olives and the pressed oil of the southern peninsula; Verlaine provides the wine and records everything; Pallor brings salted mutton from the island's interior; Lacerta provides salt and the three corsair-tradition knife-preserved fish preparations. The wine is from Verlaine's surviving stock from the red-winter famine's bad year — a bitter vintage that everyone drinks in full nonetheless.
 
-**Year 1021 — The Dry Summer Feast** (held despite the ongoing famine, in Atrament): No wine. No grain bread. Calyx contributes nothing; they have nothing. Fjorheim brings double fish. Atrament, hosting, serves the iron-broth — a mineral water from the volcanic-ridge springs, heated over the Forge Hearth until it is safe to drink, with yggdra-bark flavoring. Every House drinks it. Nobody mentions that they are drinking groundwater because the food supply is gone. This is the feast that the archive's current Keeper calls "the most diplomatic meal in the Caul's history."
+**Year 1021 — The Dry Summer Feast** (held despite the ongoing famine, in Atrament): No wine. No grain bread. Calyx contributes nothing; they have nothing. Fjorheim brings double fish. Atrament, hosting, serves the iron-broth — a mineral water from the volcanic-ridge springs, heated over the Forge Hearth until it is safe to drink, with yggdra-bark flavoring. Every House drinks it. Nobody mentions that they are drinking groundwater because the food supply is gone. This is the feast that the archive's current Keeper calls "the most diplomatic meal in the Entos's history."
 
 **Year 1139 — The Last Feast** (Lacerta hosts): All seven Houses present. The feast proceeds normally through six courses. The seventh course — traditionally provided by the hosting House as a gesture of abundance — is served by Lacerta as a single item: one salt-blade knife, one per guest, with no food attached. The Las Tres Navajas are on the table. All three are tarnishing. The feast ends without the traditional toast. The Feast of the Seven Houses is not formally discontinued after Year 1139. It simply does not convene in Year 1140, or since.
 

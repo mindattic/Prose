@@ -55,7 +55,7 @@ public class VerificationTools
     [McpServerTool, Description(
         "Run verification checks for all enabled beats in a story. Returns a summary of " +
         "BLOCKER/MODERATE/MINOR failures plus individual findings. Results are upserted to " +
-        "BeatVerification table. BLOCKER findings must be fixed before publish. " +
+        "BeatVerification table. BLOCKER findings must be fixed before export. " +
         "Includes EscalationMonotonic check (story-wide curve regression) not available per-beat.")]
     public async Task<string> VerifyStory(
         [Description("Story node slug or NodeCode.")] string slugOrCode)
@@ -73,7 +73,7 @@ public class VerificationTools
                 minors        = summary.Minors,
                 passed        = summary.Passed,
                 skipped       = summary.Skipped,
-                publish_gate  = summary.Blockers == 0 ? "PASS" : $"BLOCKED — {summary.Blockers} BLOCKER findings",
+                export_gate   = summary.Blockers == 0 ? "PASS" : $"BLOCKED — {summary.Blockers} BLOCKER findings",
                 findings      = summary.Findings.Select(f => new
                 {
                     beat_id    = f.BeatId,
@@ -93,7 +93,7 @@ public class VerificationTools
     [McpServerTool, Description(
         "Get the current truth status for a story: how many beats have verified contracts, " +
         "how many have BeatBlueprintDecision rows, how many are in violation. " +
-        "Use this as a quick dashboard check before writing or publishing.")]
+        "Use this as a quick dashboard check before writing or exporting.")]
     public async Task<string> TruthStatus(
         [Description("Story node slug or NodeCode.")] string slugOrCode)
     {
@@ -114,7 +114,7 @@ public class VerificationTools
                     ? (int)(100.0 * summary.Passed / (summary.BeatsChecked * 3 + 1))
                     : 0,
                 verdict       = summary.Blockers > 0
-                    ? $"BLOCKED — {summary.Blockers} BLOCKER(s) must be fixed before publish"
+                    ? $"BLOCKED — {summary.Blockers} BLOCKER(s) must be fixed before export"
                     : summary.Moderates > 0
                         ? $"WARNINGS — {summary.Moderates} MODERATE finding(s)"
                         : "CLEAN",

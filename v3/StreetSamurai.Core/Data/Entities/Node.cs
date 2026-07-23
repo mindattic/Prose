@@ -378,7 +378,7 @@ public class NodeSpineVersion
 // ── NodeKeyword ─────────────────────────────────────────────────────────────
 // Amazon KDP / storefront search keywords. Up to 7 per node, ordered by
 // SortOrder (1-based). Written by --seed-keywords and copied to keywords.txt
-// on every --publish run.
+// on every --export-node run.
 
 public class NodeKeyword
 {

@@ -147,7 +147,7 @@ All ~152 handlers are dispatched from `v3/StreetSamurai.Cli/Program.cs`.
 | `ss --examine-emotion --slug <slug>` | 8-dimension per-beat emotional scoring (0–4 per dimension) |
 | `ss --story-audit --slug <slug>` | Audits gateway/sequel commandments for the story |
 | `ss --plant-audit --slug <slug>` | Checks for orphaned plants (planted but never paid off) |
-| `ss --publish [--slug <slug>]` | Exports docx + EPUB + PDF + audio manuscript `.txt`; prunes stale versions; lands in `{Title}/V{N}/` |
+| `ss --export-node [--slug <slug>]` | Exports docx + EPUB + PDF + audio manuscript `.txt`; prunes stale versions; lands in `{Title}/V{N}/` |
 | `ss --workflow-status --slug <slug>` | Per-story service coverage matrix showing which pipeline services fired and which are gaps |
 | `ss --workflow-status --all` | Global utilization matrix across all stories |
 | `ss --generate-cover --story-code CODE --generator NAME --prompt "TEXT"` | AI cover generation via ChatGPT / Gemini / Ideogram / Flux; stores prompt in `CoverImagePrompts`, asset in `Assets` |
@@ -571,7 +571,7 @@ dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md
 | File | Tool family |
 |---|---|
 | `Tools.cs` | Primary canon lookup — characters, places, factions, CorpoNations, literary rules |
-| `Tools.Nodes.cs` | Node + beat CRUD — insert / split / delete / join / rebeat / reflow / publish / narrate / spine |
+| `Tools.Nodes.cs` | Node + beat CRUD — insert / split / delete / join / rebeat / reflow / export / narrate / spine |
 | `Tools.Encyclopedia.cs` | Read-only encyclopedia — weapons, ammo, equipment, tech, cyberware, apparel, pharma, automata, archetypes, quotes, documents |
 | `Tools.EntityCrud.cs` | Create/upsert all typed entity kinds |
 | `Tools.WorldModelling.cs` | 7 prose-continuity services + entity tree, world-state-at-beat, post-beat validation, timeline consistency, prose lessons |

@@ -22,7 +22,7 @@ namespace StreetSamurai.Cli;
 ///   DeclaredPurpose    — cosine similarity: declared purpose vs prose (requires embeddings)
 ///
 /// Results are written to BeatVerification table (upsert — re-running refreshes).
-/// Severity: BLOCKER = blocks publish gate | MODERATE | MINOR
+/// Severity: BLOCKER = blocks export gate | MODERATE | MINOR
 /// </summary>
 public static class VerifyBeatCli
 {

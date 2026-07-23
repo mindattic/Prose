@@ -11,16 +11,16 @@ updated: 2026-07-12
 # Story Brief: VIGL — Vigil's End {#SS-BRIEF-VIGL}
 
 > **This brief is mandatory before creating a node bible or any DB records.**
-> Universe: Fantasy / The Caul (Universe #2). Not GLMZ. GLMZ arc sections replaced with
-> Caul arc tracking. GIW has been deleted; this is the standalone Caul novel.
+> Universe: Fantasy / The Entos (Universe #2). Not GLMZ. GLMZ arc sections replaced with
+> Entos arc tracking. GIW has been deleted; this is the standalone Entos novel.
 
 ---
 
 ## 1. Series Position {#SS-BRIEF-VIGL-§1}
 
-**Universe:** Fantasy / The Caul
+**Universe:** Fantasy / The Entos
 
-**Story type:** Standalone Caul novel — independent story, not part of a series chapter sequence
+**Story type:** Standalone Entos novel — independent story, not part of a series chapter sequence
 
 **Book(s) this story serves:** None — self-contained; Lyra is introduced here and her arc is
 complete within this volume
@@ -33,7 +33,7 @@ membrane's slow degradation at key sites is not yet publicly known
 
 ## 2. Arc Contribution {#SS-BRIEF-VIGL-§2}
 
-Caul-universe arcs this story advances:
+Entos-universe arcs this story advances:
 
 - **[x] The Liturgy's Silence** — the Liturgy's suppression of evidence that Scrying damages
   the membrane, and the Canon Immaculate's attempt to use the Oculus Memoriae as leverage.
@@ -54,14 +54,14 @@ Caul-universe arcs this story advances:
   that membrane contact accumulates as memory; Vashe's scry failure at Forge Hearth is the
   first documented instance of a minor scryer being refused.
 
-- **[ ] None** — not applicable; this story advances multiple Caul arcs
+- **[ ] None** — not applicable; this story advances multiple Entos arcs
 
 ---
 
 ## 3. Prerequisites {#SS-BRIEF-VIGL-§3}
 
-**None.** This is the first produced Caul novel. GIW has been deleted. The world facts in
-`docs/universes/CAUL.md` and `docs/universes/CAUL_HISTORY.md` are the only prerequisites,
+**None.** This is the first produced Entos novel. GIW has been deleted. The world facts in
+`docs/universes/ENTOS.md` and `docs/universes/ENTOS_HISTORY.md` are the only prerequisites,
 and those are documentation, not produced story.
 
 ---
@@ -74,7 +74,7 @@ All characters are new to production. Entry states are world-state-derived, not 
 |---|---|
 | Dame Lyra M-101 | Ocipheus Knight, 3 infusions, fully loyal to House and Liturgy; Transmutation researcher with strong institutional trust; has never questioned the intake protocol she has contributed to |
 | Orim Zebulun | Contracted minor scryer, no House, 60 years of working for all Houses; knows Scrying's cost and has chosen complicity; wide-world knowledge; curious |
-| Rowe (Soren Rowe) | Sphere 31 origin; 7 months in Verlaine service after piercing; 3 weeks deserting; no Caul language; carries memories of his origin world but cannot communicate them yet |
+| Rowe (Soren Rowe) | Sphere 31 origin; 7 months in Verlaine service after piercing; 3 weeks deserting; no Entos language; carries memories of his origin world but cannot communicate them yet |
 | Kressida Haun | Atrament battle-rig pilot, active service, Schmalburg garrison; rig intact; no existential crisis yet — she's a functioning soldier |
 | Capt. Tavar (Tavardo Leal) | Lacerta pirate; *Meridian* under Liturgy navigation embargo; active operations in Sal Vento; has his own code; not ideologically motivated |
 | Sgt. Ardea Marten | Lyra's lead Myrmidon; loyal; competent; not yet dead |
@@ -87,11 +87,11 @@ All characters are new to production. Entry states are world-state-derived, not 
 |---|---|---|
 | Dame Lyra M-101 | Knight who has refused a Liturgy writ in front of witnesses; faith in the Liturgy's institutional legitimacy collapsed; retains three new companions and the Relic; politically dangerous now | Her certainty is gone; her competence is intact |
 | Orim Zebulun | Still contracted; still alive; has now listened to Rowe's full testimony and can no longer claim not to have heard it directly. What he does with that is open | Complicity now conscious rather than chosen-not-to-examine |
-| Rowe (Soren Rowe) | Functional Caul speaker (basic); has given full testimony about Sphere 31 intake; is in Ocipheus with no legal status but Lyra's informal protection | His testimony is now on record in at least two people's memory |
+| Rowe (Soren Rowe) | Functional Entos speaker (basic); has given full testimony about Sphere 31 intake; is in Ocipheus with no legal status but Lyra's informal protection | His testimony is now on record in at least two people's memory |
 | Kressida Haun | Fused to BR-7; no surgery available; in Ocipheus; technically a deserter from Atrament service; adapting to permanent partial-machine existence | Cannot return to Atrament; her future is unresolved |
 | Capt. Tavar | Navigation embargo remains; has performed the run and been paid; in Ocipheus; Liturgy still has his ship flagged | Whether he stays or goes is his choice |
 | Sgt. Ardea Marten | Dead. | No exceptions. |
-| Owain Caerglas | Alive; sent to find the Pallor Long Seat; knows who commissioned the theft | His arc continues in potential future Caul stories |
+| Owain Caerglas | Alive; sent to find the Pallor Long Seat; knows who commissioned the theft | His arc continues in potential future Entos stories |
 | Canon Prelacze | Refused; politically damaged but unpunished; Liturgy writ unexecuted | Ongoing threat |
 
 ---
@@ -100,18 +100,18 @@ All characters are new to production. Entry states are world-state-derived, not 
 
 | Plant | Payoff Context | Notes |
 |---|---|---|
-| Sphere 31 catalogue number — the Liturgy has numbered Spheres | Future Caul story: someone finds the catalogue | Not payoff in this book |
-| The Long Seat's eighth theory — "it's in the ground at Sinter" | Future Caul story: Descent into Sinter with the Relic | Not payoff in this book |
-| The membrane at Forge Hearth is healing abnormally slowly | Future Caul story: the membrane's degradation reaches threshold | Not payoff in this book |
-| Vashe's scry refused at Forge Hearth | Future Caul story: the membrane begins to refuse all scrys at damaged sites | Not payoff in this book |
-| The Relic has been watching since Year 397 — it has perception, not just memory | Future Caul story: the Relic is given to the Sinter zone; it shows what it saw during the Meteor Event | Not payoff in this book |
-| The Eaters of Monsters' three-generation tradition — their founding text | Future Caul story: a Descent Corps member encounters Eater knowledge of what lives below | Not payoff in this book |
+| Sphere 31 catalogue number — the Liturgy has numbered Spheres | Future Entos story: someone finds the catalogue | Not payoff in this book |
+| The Long Seat's eighth theory — "it's in the ground at Sinter" | Future Entos story: Descent into Sinter with the Relic | Not payoff in this book |
+| The membrane at Forge Hearth is healing abnormally slowly | Future Entos story: the membrane's degradation reaches threshold | Not payoff in this book |
+| Vashe's scry refused at Forge Hearth | Future Entos story: the membrane begins to refuse all scrys at damaged sites | Not payoff in this book |
+| The Relic has been watching since Year 397 — it has perception, not just memory | Future Entos story: the Relic is given to the Sinter zone; it shows what it saw during the Meteor Event | Not payoff in this book |
+| The Eaters of Monsters' three-generation tradition — their founding text | Future Entos story: a Descent Corps member encounters Eater knowledge of what lives below | Not payoff in this book |
 
 ---
 
 ## 7. What It Pays {#SS-BRIEF-VIGL-§7}
 
-**None** — this is the first produced Caul story. There are no prior plants to pay.
+**None** — this is the first produced Entos story. There are no prior plants to pay.
 
 ---
 
@@ -124,14 +124,14 @@ Miyazaki (*Nausicaä*) — formal medieval register with industrial intrusion; c
 and costly; the supernatural is not comfortable
 
 **What this story contributes:**
-- The first produced Caul novel — establishes the register, world texture, and character types
-  for all future Caul stories
+- The first produced Entos novel — establishes the register, world texture, and character types
+  for all future Entos stories
 - The normalization of Scrying-as-slavery rendered visible from inside an institutional practitioner's POV
 - The membrane as organism, not resource — first direct confrontation with this fact
 - A five-person found party with distinct voices and complementary failures
 
 **What would be duplicated if this story didn't exist:** Nothing — it's the foundation document
-for the Caul universe's fictional production
+for the Entos universe's fictional production
 
 ---
 
@@ -180,7 +180,7 @@ All entities must be seeded before prose begins.
 |---|---|---|---|
 | Dame Lyra M-101 | character | human | Ocipheus Knight; 3 infusions; female; ~6'5"; Transmutation researcher; POV |
 | Orim Zebulun | character | human | Old man; Calyx origin; minor scryer; no House; contracted |
-| Rowe (Soren Rowe) | character | human | Sphere 31 origin; Verlaine deserter; male; no Caul language at start |
+| Rowe (Soren Rowe) | character | human | Sphere 31 origin; Verlaine deserter; male; no Entos language at start |
 | Kressida Haun | character | human | Atrament battle-rig pilot; female; fused to BR-7; cannot be removed |
 | Capt. Tavardo Leal (Tavar) | character | human | Lacerta pirate; male; *Meridian* captain; Liturgy nav embargo |
 | Sgt. Ardea Marten | character | human | Ocipheus Myrmidon; female; dies Beat 7 |
@@ -263,7 +263,7 @@ All entities must be seeded before prose begins.
 ## Checklist Before Proceeding
 
 - [x] All 10 sections filled
-- [ ] `docs/universes/CAUL.md` updated with new world facts (Eaters, Sphere numbering, Order of the Watch, alchemy weapons, tincture system, exotic flora/fauna)
+- [ ] `docs/universes/ENTOS.md` updated with new world facts (Eaters, Sphere numbering, Order of the Watch, alchemy weapons, tincture system, exotic flora/fauna)
 - [ ] `docs/nodes/VIGL.md` written
 - [ ] Codex doctor passes after all doc edits
 - [ ] Entity seeding complete (MCP)

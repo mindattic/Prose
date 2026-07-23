@@ -43,10 +43,13 @@ public class LiveKeyValidationTests
 
         // Quota/billing failures mean the key is valid — the account just needs a
         // top-up. These don't block a commit; only dead/invalid/missing keys do.
+        // Exception: claude-team uses CLI OAuth — MissingCredential = not logged in, not a dead key.
         static bool IsKeyDead(LlmHealthResult r) =>
             !r.IsHealthy &&
             r.Diagnosis is not LlmHealthDiagnosis.QuotaExhausted
-                       and not LlmHealthDiagnosis.RateLimited;
+                       and not LlmHealthDiagnosis.RateLimited &&
+            !(string.Equals(r.ProviderId, "claude-team", StringComparison.OrdinalIgnoreCase)
+              && r.Diagnosis == LlmHealthDiagnosis.MissingCredential);
 
         var broken = results
             .Where(IsKeyDead)

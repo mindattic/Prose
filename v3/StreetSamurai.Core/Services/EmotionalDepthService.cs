@@ -229,7 +229,7 @@ public class EmotionalDepthService
             await UpdateBeatEmotionalScoresAsync(nodeId, beatCurve, ct);
 
         var recommendation = blockingCount > 0
-            ? $"⛔ {blockingCount} blocking dimension(s) open — resolve WantNeedDivergence / CostFeltNotAsserted before marking publish-ready."
+            ? $"⛔ {blockingCount} blocking dimension(s) open — resolve WantNeedDivergence / CostFeltNotAsserted before marking export-ready."
             : depthScore < 50
                 ? "Multiple dimensions scoring ≤ 2 — prioritise the weakest-beat fixes before the next revision pass."
                 : depthScore >= 75

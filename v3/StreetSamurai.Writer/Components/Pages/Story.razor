@@ -1903,7 +1903,7 @@ else
         await InvokeAsync(StateHasChanged);
         try
         {
-            var task = Workbench.PublishAudiobookAsync(node.Id);
+            var task = Workbench.ExportAudiobookAsync(node.Id);
             while (!task.IsCompleted)
             {
                 var p = Workbench.GetExportProgress(node.Id);

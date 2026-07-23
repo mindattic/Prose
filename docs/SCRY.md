@@ -5,7 +5,7 @@ code: SCRY
 layer: universe
 universe: scry
 status: live
-triggers: SCRY, Caul, Fantasy, Sphere, Amnios, Keeper, Myrmidon, Verlaine, Lyra, Soren, Ocipheus, vigil, Sinter, accumulation
+triggers: SCRY, Entos, Fantasy, Sphere, Amnios, Keeper, Myrmidon, Verlaine, Lyra, Soren, Ocipheus, vigil, Sinter, accumulation
 updated: 2026-07-18
 related: docs/CRAFT.md
 ---
@@ -14,7 +14,7 @@ related: docs/CRAFT.md
 
 > **Scope: SCRY universe stories only.** Universal prose rules live in **docs/CRAFT.md**
 > (Base layer). World facts — cosmology, factions, geography, relics — live in
-> **docs/universes/CAUL.md** (generated; run `ss --generate-canon-md --type UniverseCanon`).
+> **docs/universes/ENTOS.md** (generated; run `ss --generate-canon-md --type UniverseCanon`).
 > This file records SCRY-specific craft additions and overrides to the Base layer.
 > When this file and CRAFT.md disagree, this file wins for SCRY stories.
 
@@ -22,12 +22,12 @@ related: docs/CRAFT.md
 
 ## 1. Naming Canon (SCRY world facts — always observe)
 
-- **The universe is SCRY.** The world within it is **The Caul**. These are not
+- **The universe is SCRY.** The world within it is **The Entos**. These are not
   interchangeable: SCRY names the cosmological system (Spheres, Amnios, the Oculus);
-  The Caul names the inhabited world Lyra, Soren, and the rest live in.
-- Write "The Caul" — always capitalized, always with the article. Never "the Caul" (lowercase
-  t) in narration. Never "Caul" alone unless a character uses it in dialogue as shorthand.
-- Characters call their world "the Caul" in speech; narration writes "The Caul."
+  The Entos names the inhabited world Lyra, Soren, and the rest live in.
+- Write "The Entos" — always capitalized, always with the article. Never "the Entos" (lowercase
+  t) in narration. Never "Entos" alone unless a character uses it in dialogue as shorthand.
+- Characters call their world "the Entos" in speech; narration writes "The Entos."
 
 ---
 

@@ -17,7 +17,7 @@
         <p class="small text-muted mb-0">
             Per-beat verification status against declared
             <code>BeatBlueprintDecision</code> contracts. BLOCKER findings block
-            <code>ss --publish</code>. Run <code>ss --verify-story --slug CODE</code>
+            <code>ss --export-node</code>. Run <code>ss --verify-story --slug CODE</code>
             to refresh.
         </p>
     </div>
@@ -89,7 +89,7 @@
         </div>
         <div class="col-6 col-md-2">
             <div class="tt-stat">
-                <div class="lbl">Publish gate</div>
+                <div class="lbl">Export gate</div>
                 <div class="val @(summary.Blockers == 0 ? "text-success" : "text-danger")">
                     @(summary.Blockers == 0 ? "PASS" : "BLOCKED")
                 </div>

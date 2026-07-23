@@ -125,7 +125,7 @@ public static class ReviewNodeCli
             Console.Error.WriteLine("Usage: ss --review-node (--id <guid|prefix> | --slug <slug> | --code <code>) [--effort draft|standard|deep] [--readers N]");
             Console.Error.WriteLine("  --effort draft     ~6 calls — mid-draft spot check (per-beat gripes; not a gate)");
             Console.Error.WriteLine("  --effort standard  ~15 calls — standalone gate (>=82%)");
-            Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/publish gate (>=85%)");
+            Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/export gate (>=85%)");
             Console.Error.WriteLine("  --model TAG        override the cloud model for all active providers this run (e.g. gpt-4.1, gemini-2.5-pro)");
             Console.Error.WriteLine("  --local            run ballots on the local LLM (Ollama) -- free, no cloud calls (default + --by-act only)");
             Console.Error.WriteLine("  --local-model TAG  override the local model tag for this run (default: settings.LocalReviewModel)");
@@ -470,7 +470,7 @@ public static class ReviewNodeCli
                 Console.WriteLine();
                 Console.WriteLine("⛔ EMOTIONAL-DEPTH ADVISORY CAP (Deep gate):");
                 Console.WriteLine("   The following blocking emotional dimensions are open.");
-                Console.WriteLine("   Resolve them before marking this node publish-ready.");
+                Console.WriteLine("   Resolve them before marking this node export-ready.");
                 foreach (var f in openBlocking)
                     Console.WriteLine($"   • {f.Summary}");
                 Console.WriteLine("   Run: ss --examine-emotion --slug <slug> --effort deep");

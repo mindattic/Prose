@@ -477,7 +477,7 @@
         await InvokeAsync(StateHasChanged);
         try
         {
-            await Workbench.PublishAudiobookAsync(nodeId);
+            await Workbench.ExportAudiobookAsync(nodeId);
             Toast.Success("AUDIOBOOK", "Audiobook published — MP3 saved to Downloads.");
         }
         catch (Exception ex) { Toast.Error("AUDIOBOOK-FAIL", ex.Message); }

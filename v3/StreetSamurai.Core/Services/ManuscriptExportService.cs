@@ -64,19 +64,43 @@ public class ManuscriptExportService
         // Synopsis is intentionally NOT printed on the title page — it is a back-cover/catalog
         // blurb, exported separately as "Back Cover.txt" and as the ebook <dc:description>.
 
+        // Chapter/Interlude boundaries are Node transitions ONLY — never a bare
+        // Beat.IsChapterStart, which is also (ab)used for mid-chapter sub-headings and, on some
+        // legacy beats, a leftover pre-Node-hierarchy chapter marker. See LoadAsync for the full
+        // rationale (the shared epub/pdf/txt path); this method mirrors that logic for .md.
+        var srcIds = ordered.Select(o => o.NodeId).Distinct().ToList();
+        var nodeTitles = await db.Nodes.AsNoTracking()
+            .Where(s => srcIds.Contains(s.Id))
+            .ToDictionaryAsync(s => s.Id, s => s.Title, ct);
+
         // A story that resolves to a single chapter prints no chapter heading — we
-        // never emit "Chapter 1". Only mark headings when there are 2+ chapter starts.
-        int totalChapterMarks = ordered.Count(o => o.Beat.IsChapterStart);
+        // never emit "Chapter 1". Only mark headings when there are 2+ real chapter/interlude nodes.
+        bool multiChapter = srcIds.Count > 1;
         int beatNo = 0;
         int chapterNo = 0;
+        Guid? prevNode = null;
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
-            if (beat.IsChapterStart && totalChapterMarks > 1)
+            var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
+            prevNode = ob.NodeId;
+            var beatTitle = string.IsNullOrWhiteSpace(beat.Title) ? null : beat.Title!.Trim();
+            if (nodeChanged && multiChapter)
             {
                 chapterNo++;
-                var heading = !string.IsNullOrWhiteSpace(beat.Title) ? beat.Title!.Trim() : $"Chapter {chapterNo}";
+                var nodeTitle = nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim() : null;
+                var heading =
+                    (beatTitle is not null && LooksLikeChapterHeading(beatTitle)) ? beatTitle
+                    : nodeTitle
+                    ?? beatTitle
+                    ?? $"Chapter {chapterNo}";
                 md.AppendLine($"## {heading}");
+                md.AppendLine();
+            }
+            else if (!nodeChanged && beat.IsChapterStart && beatTitle is not null && !LooksLikeChapterHeading(beatTitle))
+            {
+                // Genuine mid-chapter sub-heading — its own heading text, not a new chapter.
+                md.AppendLine($"### {beatTitle}");
                 md.AppendLine();
             }
             var text = (beat.Text ?? "").Trim();
@@ -148,12 +172,17 @@ public class ManuscriptExportService
                     {
                         if (!string.IsNullOrWhiteSpace(chapter.Heading))
                             col.Item().PaddingBottom(18).AlignCenter().Text(chapter.Heading).FontSize(16).Bold();
-                        foreach (var para in chapter.Paragraphs)
-                            col.Item().PaddingBottom(6).Text(t =>
-                            {
-                                t.Justify();
-                                AppendInline(t, para);
-                            });
+                        foreach (var block in chapter.Blocks)
+                        {
+                            if (block.IsSubHeading)
+                                col.Item().PaddingTop(12).PaddingBottom(10).AlignCenter().Text(block.Text).FontSize(13).Bold();
+                            else
+                                col.Item().PaddingBottom(6).Text(t =>
+                                {
+                                    t.Justify();
+                                    AppendInline(t, block.Text);
+                                });
+                        }
                     });
                     p.Footer().AlignCenter().Text(t =>
                     {
@@ -223,9 +252,9 @@ public class ManuscriptExportService
                 sb.AppendLine(chapter.Heading!);
                 sb.AppendLine();
             }
-            foreach (var para in chapter.Paragraphs)
+            foreach (var block in chapter.Blocks)
             {
-                sb.AppendLine(StripInlineMarkup(para));
+                sb.AppendLine(StripInlineMarkup(block.Text));
                 sb.AppendLine();
             }
         }
@@ -257,6 +286,7 @@ public class ManuscriptExportService
         p.synopsis { text-align: center; color: #666; font-style: italic; margin-top: 1em; }
         body.title-page { text-align: center; }
         h2.chapter-heading { font-size: 1.4em; margin: 2em 0 1em; text-align: center; }
+        h3.sub-heading { font-size: 1.1em; margin: 1.6em 0 0.8em; text-align: center; }
         p { margin: 0.4em 0; }
         em { font-style: italic; }
         """;
@@ -311,8 +341,13 @@ public class ManuscriptExportService
         sb.AppendLine("<body>");
         if (heading is not null)
             sb.AppendLine($"""<h2 class="chapter-heading">{EpubEsc(heading)}</h2>""");
-        foreach (var para in chapter.Paragraphs)
-            sb.AppendLine($"<p>{EpubRenderInline(para)}</p>");
+        foreach (var block in chapter.Blocks)
+        {
+            if (block.IsSubHeading)
+                sb.AppendLine($"""<h3 class="sub-heading">{EpubEsc(block.Text)}</h3>""");
+            else
+                sb.AppendLine($"<p>{EpubRenderInline(block.Text)}</p>");
+        }
         sb.AppendLine("</body></html>");
         return sb.ToString();
     }
@@ -380,7 +415,12 @@ public class ManuscriptExportService
     // ── shared load + beat walk ──────────────────────────────────────────────
 
     private sealed record Manuscript(string Title, string Slug, string? Description, List<Chapter> Chapters);
-    private sealed record Chapter(string? Heading, List<string> Paragraphs);
+    private sealed record Chapter(string? Heading, List<ContentBlock> Blocks);
+    /// <summary>One rendered unit of chapter content: either an ordinary body paragraph
+    /// (<c>IsSubHeading=false</c>) or a genuine mid-chapter sub-heading like "Three Barrels"
+    /// (<c>IsSubHeading=true</c>) — rendered in its own smaller heading style but never
+    /// counted, paginated, or spine/TOC-listed as a chapter in its own right.</summary>
+    private sealed record ContentBlock(bool IsSubHeading, string Text);
 
     /// <summary>Resolve the node, walk its ordered beats into chapters, and
     /// compute the publish-directory path for the given extension.</summary>
@@ -395,25 +435,58 @@ public class ManuscriptExportService
             .FirstOrDefaultAsync(ct);
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
+        // Chapter/Interlude boundaries are Node transitions ONLY (nodeChanged) — never a bare
+        // Beat.IsChapterStart, which is also (ab)used for two other things: genuine mid-chapter
+        // sub-headings (e.g. BCODA's "Three Barrels", "Crucible Genomics") and, on some legacy
+        // beats, a leftover pre-Node-hierarchy chapter marker that duplicates the real chapter
+        // title (e.g. a beat titled "Chapter 2 - Provenance" sitting a few beats into the
+        // already-open "Chapter 2" node). Conflating all three used to run chapter numbering
+        // far past the real count and to skip every Interlude's real name (its lead beat has no
+        // Beat.Title, so the old fallback hit the generic "Chapter {n}" branch instead of the
+        // Node's own "Interlude: …" Title).
+        var srcIds = ordered.Select(o => o.NodeId).Distinct().ToList();
+        var nodeTitles = await db.Nodes.AsNoTracking()
+            .Where(s => srcIds.Contains(s.Id))
+            .ToDictionaryAsync(s => s.Id, s => s.Title, ct);
+
         var chapters = new List<Chapter>();
         Chapter? current = null;
         int chapterNo = 0;
+        Guid? prevNode = null;
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
-            if (beat.IsChapterStart)
+            var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
+            prevNode = ob.NodeId;
+            var beatTitle = string.IsNullOrWhiteSpace(beat.Title) ? null : beat.Title!.Trim();
+            if (nodeChanged)
             {
                 chapterNo++;
-                var heading = !string.IsNullOrWhiteSpace(beat.Title) ? beat.Title!.Trim() : $"Chapter {chapterNo}";
-                current = new Chapter(heading, new List<string>());
+                var nodeTitle = nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim() : null;
+                // Prefer the beat's own title only when it is ITSELF a properly-formatted
+                // "Chapter N …" / "Interlude: …" heading; otherwise the Node's canonical Title
+                // wins (keeps an unrelated beat title from replacing the real chapter heading,
+                // and makes every Interlude — whose lead beat carries no title — print its name).
+                var heading =
+                    (beatTitle is not null && LooksLikeChapterHeading(beatTitle)) ? beatTitle
+                    : nodeTitle
+                    ?? beatTitle
+                    ?? $"Chapter {chapterNo}";
+                current = new Chapter(heading, new List<ContentBlock>());
                 chapters.Add(current);
+            }
+            else if (beat.IsChapterStart && beatTitle is not null && !LooksLikeChapterHeading(beatTitle))
+            {
+                // Genuine mid-chapter sub-heading — its own heading text, not a new chapter.
+                current ??= AddLeadChapter(chapters);
+                current.Blocks.Add(new ContentBlock(true, beatTitle));
             }
             var text = (beat.Text ?? "").Trim();
             if (text.Length == 0) continue;
             // Beats before the first chapter start land in an untitled lead chapter.
             current ??= AddLeadChapter(chapters);
             foreach (var para in SplitParagraphs(text))
-                current.Paragraphs.Add(para);
+                current.Blocks.Add(new ContentBlock(false, para));
         }
 
         // Resolve the final display heading for every chapter, centrally. A story
@@ -492,10 +565,19 @@ public class ManuscriptExportService
 
     private static Chapter AddLeadChapter(List<Chapter> chapters)
     {
-        var lead = new Chapter(null, new List<string>());
+        var lead = new Chapter(null, new List<ContentBlock>());
         chapters.Add(lead);
         return lead;
     }
+
+    // Beats sometimes carry a leftover pre-Node-hierarchy "Chapter N …" / "Interlude: …" title
+    // even though a real Node boundary now owns that role. Matching this pattern is how we tell
+    // a genuine chapter/interlude heading apart from an ordinary mid-chapter sub-heading name.
+    private static readonly Regex ChapterOrInterludeHeadingPattern =
+        new(@"^(Chapter\s+\d+\b|Interlude\s*:)", RegexOptions.IgnoreCase);
+
+    private static bool LooksLikeChapterHeading(string title) =>
+        ChapterOrInterludeHeadingPattern.IsMatch(title);
 
     private static string SanitizeTitle(string title)
     {

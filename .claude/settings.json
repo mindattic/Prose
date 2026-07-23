@@ -1,4 +1,5 @@
 {
+  "statusLine": { "type": "command", "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"%CLAUDE_PROJECT_DIR%\\.claude\\statusline.ps1\"" },
   "hooks": {
     "SessionStart": [
       {
@@ -6,6 +7,15 @@
           {
             "type": "command",
             "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/StreetSamurai/.claude/hooks/inject-digest.ps1\""
+          }
+        ]
+      },
+      {
+        "matcher": "clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/StreetSamurai/.claude/hooks/restore-handoff.ps1\""
           }
         ]
       }

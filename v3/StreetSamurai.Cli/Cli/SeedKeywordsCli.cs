@@ -6,7 +6,7 @@ namespace StreetSamurai.Cli;
 
 /// <summary>
 /// <c>ss --seed-keywords [--slug &lt;slug&gt;]</c>
-/// — seed Amazon KDP keywords for published nodes that have none.
+/// — seed Amazon KDP keywords for exported nodes that have none.
 /// Without --slug, targets every node where Version > 0.
 /// Skips nodes that already have keyword rows.
 /// </summary>
@@ -41,7 +41,7 @@ public static class SeedKeywordsCli
         var nodes = await q.Select(s => new { s.Id, s.Slug, s.Title }).ToListAsync();
         if (nodes.Count == 0)
         {
-            Console.WriteLine("[seed-keywords] No matching published nodes found.");
+            Console.WriteLine("[seed-keywords] No matching exported nodes found.");
             return 0;
         }
 

@@ -17,8 +17,8 @@ namespace StreetSamurai.Core.Data.Entities;
 ///   WorldStatePost     — post-prose entity states diverge from declared WorldStatePost (semantic)
 ///
 /// Severity levels mirror the logic sweep (SS-A44):
-///   BLOCKER  — blocks codex doctor / publish gate (INV-05)
-///   MODERATE — surfaces in Truth Table dashboard; does not block publish
+///   BLOCKER  — blocks codex doctor / export gate (INV-05)
+///   MODERATE — surfaces in Truth Table dashboard; does not block export
 ///   MINOR    — informational
 /// </summary>
 public class BeatVerification
