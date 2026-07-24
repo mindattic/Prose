@@ -62,12 +62,12 @@
                             <div class="col-md-6"><span class="text-muted">@k:</span> <span>@v</span></div>
                         }
                     </div>
-                    @foreach (var section in dossier.Subject.Sections)
+                    @foreach (var sec in dossier.Subject.Sections)
                     {
                         <hr class="border-secondary my-2" />
-                        <div class="text-info small fw-bold">@section.Title</div>
+                        <div class="text-info small fw-bold">@sec.Title</div>
                         <ul class="small mb-0">
-                            @foreach (var line in section.Lines) { <li>@line</li> }
+                            @foreach (var line in sec.Lines) { <li>@line</li> }
                         </ul>
                     }
                 </div>
