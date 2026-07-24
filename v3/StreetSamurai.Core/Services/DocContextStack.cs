@@ -12,14 +12,18 @@ namespace StreetSamurai.Core.Services;
 ///   <c>always</c> — pinned; never evicted (the small universal core).
 ///   <c>node</c>   — evicted when the active node code changes (Dynamic Context Memory: node-scoped, not global).
 ///                   Does not count against <see cref="TopicCapacity"/>.
-///   <c>topic</c>  — LRU: evicted after <see cref="EvictAfterActions"/> actions without a
+///   <c>series</c> — cross-story context: docs relevant to the whole book/arc (e.g. docs/series/*.md).
+///                   Evicted after <see cref="SeriesEvictAfterActions"/> actions without refresh (~8 beats).
+///                   Sits between node and topic in TierRank so it survives longer than keyword hits.
+///   <c>topic</c>  — LRU: evicted after <see cref="TopicEvictAfterActions"/> actions without a
 ///                   refresh, and capped at <see cref="TopicCapacity"/> (oldest topic dropped
 ///                   when over). This is the load-when-relevant / unload-when-not behaviour.
 /// </summary>
 public sealed class DocContextStack
 {
     public const int TopicCapacity = 8;
-    private const int EvictAfterActions = 4;
+    private const int TopicEvictAfterActions = 4;
+    private const int SeriesEvictAfterActions = 8;
 
     public sealed record StackEntry(
         Guid DocId,
@@ -44,7 +48,7 @@ public sealed class DocContextStack
     private ContextState GetOrCreate(Guid contextId) => contexts.GetOrAdd(contextId, _ => new ContextState());
 
     private static bool IsPinned(StackEntry e) => e.Tier is "always" or "node";
-    private static int TierRank(string tier) => tier switch { "always" => 0, "node" => 1, _ => 2 };
+    private static int TierRank(string tier) => tier switch { "always" => 0, "node" => 1, "series" => 2, _ => 3 };
 
     /// <summary>
     /// Call at the start of each action/beat/turn. Advances the LRU clock, evicts stale topic
@@ -82,7 +86,7 @@ public sealed class DocContextStack
                 Reason = entry.Score > existing.Score ? entry.Reason : existing.Reason,
             });
 
-        // Capacity applies to topic docs only — pinned tiers never count against it.
+        // Capacity applies to topic/series docs only — pinned tiers never count against it.
         if (state.Entries.Values.Count(e => !IsPinned(e)) > TopicCapacity)
             EvictLruTopic(state);
     }
@@ -111,8 +115,12 @@ public sealed class DocContextStack
     private static void EvictStale(ContextState state)
     {
         foreach (var e in state.Entries.Values.ToList())
-            if (!IsPinned(e) && state.ActionCounter - e.LastTouchedAction >= EvictAfterActions)
+        {
+            if (IsPinned(e)) continue;
+            var threshold = e.Tier == "series" ? SeriesEvictAfterActions : TopicEvictAfterActions;
+            if (state.ActionCounter - e.LastTouchedAction >= threshold)
                 state.Entries.TryRemove(e.DocId, out _);
+        }
     }
 
     // Dynamic Context Memory: evict all node-tier entries when switching to a different story node.

@@ -513,6 +513,15 @@ public class MarkdownFileService
             return new("node", code, "", AutoTier: true, relatedRaw);
         }
 
+        // Series coordination docs (docs/series/*.md) are cross-story, so they get their own
+        // eviction window (SeriesEvictAfterActions=8 vs topic's 4). Scope = series name stem,
+        // e.g. "GLMZ" from docs/series/GLMZ.md — used by ScopeMatches in DocContextService.
+        if (relPath.StartsWith("docs/series/", StringComparison.OrdinalIgnoreCase))
+        {
+            var scope = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
+            return new("series", scope, SeedTriggers(f, fm), AutoTier: true, relatedRaw);
+        }
+
         return new("topic", "", SeedTriggers(f, fm), AutoTier: true, relatedRaw);
     }
 
@@ -569,7 +578,7 @@ public class MarkdownFileService
     private static string NormalizeTier(string t)
     {
         t = t.Trim().ToLowerInvariant();
-        return t is "always" or "node" or "topic" ? t : "topic";
+        return t is "always" or "node" or "series" or "topic" ? t : "topic";
     }
 
     private static string NormalizeCsv(string s) =>

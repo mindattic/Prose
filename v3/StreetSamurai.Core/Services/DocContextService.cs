@@ -79,6 +79,13 @@ public sealed class DocContextService(
             foreach (var c in candidates.Where(c => c.Tier == "node" && ScopeMatches(c.Scope, code)))
                 stack.Push(contextId, MakeEntry(c, string.IsNullOrEmpty(code) ? "node:*" : $"node:{code}", 90));
 
+        // 2.5 — series (scope match): cross-story arc docs (docs/series/*.md) that declare this
+        //        node's series code in their scope. Survives ~8 beats before eviction — long enough
+        //        to carry a plant/payoff callback from a previous book across a scene.
+        if (includeNode)
+            foreach (var c in candidates.Where(c => c.Tier == "series" && ScopeMatches(c.Scope, code)))
+                stack.Push(contextId, MakeEntry(c, string.IsNullOrEmpty(code) ? "series:*" : $"series:{code}", 75));
+
         // 3 — topic via keyword triggers
         if (text.Length > 0)
             foreach (var c in candidates.Where(c => c.Tier == "topic"))
@@ -251,7 +258,7 @@ public sealed class DocContextService(
         {
             // Node-tier docs are the story's bible + register — the do-not-contradict layer.
             // A 1500c clip loses character rules and locks (how BLST drifted); give them room.
-            var perDocCap = e.Tier switch { "topic" => 800, "node" => 16_000, _ => 1500 };
+            var perDocCap = e.Tier switch { "topic" => 800, "series" => 4_000, "node" => 16_000, _ => 1500 };
             var clip = StripFrontmatter(contentById.GetValueOrDefault(e.DocId, ""));
             if (clip.Length > perDocCap) clip = clip[..perDocCap].TrimEnd() + "…";
 
