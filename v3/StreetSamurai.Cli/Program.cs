@@ -549,9 +549,14 @@ if (args.Contains("--migrate-blueprint-rows"))
 
 //   ss --verify-beat --id <beatId> [--json]
 //   ss --verify-story --slug <slug> [--json]
+//   ss --verify-quote --id <beatId> --quote "<claimed text>" [--claimed-by <name>] [--json]
+//   ss --verify-quotes-batch --json-file <path> [--json]
 // Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision
 // contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node.
-if (args.Contains("--verify-beat") || args.Contains("--verify-story"))
+// QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears
+// in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a).
+if (args.Contains("--verify-beat") || args.Contains("--verify-story")
+    || args.Contains("--verify-quote") || args.Contains("--verify-quotes-batch"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await VerifyBeatCli.RunAsync(args, sp);

@@ -367,6 +367,114 @@ public class BeatVerificationService
         }
     }
 
+    // ── Quote grounding (audit-claim verification) ───────────────────────────
+    //
+    // Logic-sweep audit agents report findings as quoted text attributed to a SortKey/BeatId.
+    // Two real incidents (2026-07-24 VIGL sweep) showed agents can misattribute or fabricate
+    // an exact quote — usually by reading the wrong beat under time pressure, not by intent.
+    // This check is the mechanical guard: before a claimed finding is trusted for triage/fix,
+    // confirm the claimed quote actually appears in the beat it's attributed to. Unlike the
+    // other checks above (one row per BeatId+CheckType, upserted — they describe a beat's
+    // current intrinsic state), each quote-grounding call is a distinct historical claim-check,
+    // so rows are always INSERTED, never upserted — a beat can accumulate many of these across
+    // many sweeps without one overwriting another.
+
+    /// <summary>
+    /// Verifies that <paramref name="claimedQuote"/> actually appears in the given beat's text.
+    /// Comparison is normalized (dash variants, curly/straight quotes, collapsed whitespace)
+    /// so a claim isn't rejected merely because sqlcmd/terminal display altered punctuation —
+    /// only genuine misattribution or fabrication fails this check.
+    /// </summary>
+    public async Task<BeatVerificationResult> VerifyQuoteGroundingAsync(
+        Guid beatId, string claimedQuote, string? claimedBy = null, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
+
+        BeatVerificationResult result;
+        if (beat == null)
+        {
+            result = new(beatId, "QuoteGrounding", "Fail", "BLOCKER",
+                $"Beat {beatId} does not exist — the claim's SortKey/BeatId is itself wrong.",
+                claimedBy ?? "unknown");
+        }
+        else if (string.IsNullOrWhiteSpace(claimedQuote))
+        {
+            result = new(beatId, "QuoteGrounding", "Skipped", "BLOCKER", "No quote supplied to check.",
+                claimedBy ?? "unknown");
+        }
+        else
+        {
+            var normalizedQuote = NormalizeForComparison(claimedQuote);
+            var normalizedText  = NormalizeForComparison(beat.Text ?? string.Empty);
+            var found = normalizedQuote.Length > 0 && normalizedText.Contains(normalizedQuote, StringComparison.Ordinal);
+
+            result = found
+                ? new(beatId, "QuoteGrounding", "Pass", "BLOCKER",
+                    $"Quote confirmed present in beat (normalized match). Quote: \"{Truncate(claimedQuote, 160)}\"",
+                    claimedBy ?? "unknown")
+                : new(beatId, "QuoteGrounding", "Fail", "BLOCKER",
+                    $"Quote NOT found in this beat's text — likely misattributed to the wrong beat or fabricated. Reject this finding until re-verified. Quote: \"{Truncate(claimedQuote, 160)}\"",
+                    claimedBy ?? "unknown");
+        }
+
+        db.BeatVerifications.Add(new BeatVerification
+        {
+            BeatId     = beatId,
+            CheckType  = "QuoteGrounding",
+            Result     = result.Result,
+            Severity   = result.Severity,
+            Evidence   = result.Evidence,
+            VerifiedAt = DateTime.UtcNow,
+            VerifiedBy = result.VerifiedBy,
+        });
+        await db.SaveChangesAsync(ct);
+
+        if (result.Result == "Fail")
+            log.LogWarning("[QuoteGrounding] REJECTED — beat {BeatId} does not contain claimed quote (claimed by {ClaimedBy}): {Evidence}",
+                beatId, claimedBy ?? "unknown", result.Evidence);
+
+        return result;
+    }
+
+    /// <summary>
+    /// Batch form: verify every (BeatId, Quote) claim from an audit report in one pass.
+    /// Use this to gate an entire audit report before triage — any Fail means that specific
+    /// finding must be re-verified against the real beat before it's acted on.
+    /// </summary>
+    public async Task<List<BeatVerificationResult>> VerifyQuoteGroundingBatchAsync(
+        IEnumerable<(Guid BeatId, string Quote)> claims, string? claimedBy = null, CancellationToken ct = default)
+    {
+        var results = new List<BeatVerificationResult>();
+        foreach (var (beatId, quote) in claims)
+            results.Add(await VerifyQuoteGroundingAsync(beatId, quote, claimedBy, ct));
+        return results;
+    }
+
+    private static string Truncate(string s, int max) =>
+        s.Length <= max ? s : s[..max] + "…";
+
+    private static string NormalizeForComparison(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return string.Empty;
+
+        var sb = new System.Text.StringBuilder(s.Length);
+        foreach (var c in s)
+        {
+            char n = c switch
+            {
+                '‐' or '‑' or '‒' or '–' or '—' or '―' => '-',
+                '‘' or '’' or '‚' or '‛'                        => '\'',
+                '“' or '”' or '„' or '‟'                        => '"',
+                _ => c,
+            };
+            sb.Append(n);
+        }
+
+        return Regex.Replace(sb.ToString(), @"\s+", " ").Trim();
+    }
+
     // ── Upsert helper ────────────────────────────────────────────────────────
 
     private static async Task UpsertVerificationAsync(

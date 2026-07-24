@@ -45,20 +45,30 @@ or reviews from this skill** — if the user wants a score, they will say so exp
    Cross-story canon (shared characters, series arcs): one additional cross-read agent over the
    affected set when a series story is in scope.
 
-3. **TRIAGE.** Fix all BLOCKERs; MODERATEs almost always; MINORs when one word/clause. If a
+3. **VERIFY QUOTE GROUNDING (mechanical, before triage — docs/LOGIC.md §SS-LOGIC-4a).**
+   Every finding that quotes beat text gets checked against the DB before it's trusted, not
+   after: build the claim list (BeatId + quoted text) from all audit reports and run
+   `ss --verify-quotes-batch --json-file <path>` (array of `{"beatId":"<guid>","quote":"<text>"}`)
+   — or `ss --verify-quote --id <beatId> --quote "<text>" --claimed-by "<agent>"` one at a time.
+   MCP: `VerifyQuoteGroundingBatch` / `VerifyQuoteGrounding`. Any Fail = that finding is
+   misattributed or fabricated — drop it from triage and, if it seems worth chasing, re-read
+   the actual beat yourself before deciding. This is cheap and mechanical; run it on every
+   quoted finding, not just the ones that feel off.
+
+4. **TRIAGE.** Fix all BLOCKERs; MODERATEs almost always; MINORs when one word/clause. If a
    finding can't be named concretely, drop it. Editor-taste items go to the deferred ledger,
    not the fix pass.
 
-4. **FIX (separate agents, the audit report as input).** Minimal-splice discipline per
+5. **FIX (separate agents, the audit report as input).** Minimal-splice discipline per
    `docs/LOGIC.md` §4: prefer data fix → clause → passage → rewrite; reassign to established
    cast, reconcile counts to the load-bearing version; bible wins on facts unless the finding
    proves the bible stale — then fix the bible in the same change (+ digest/doctor).
 
-5. **VERIFY (inside each fix pass).** Changed passages re-read with neighbors; old-defect
+6. **VERIFY (inside each fix pass).** Changed passages re-read with neighbors; old-defect
    greps = 0; disabled-content greps = 0; repaired arithmetic walked and printed; BOM checks;
    doctor PASS. Honest reporting: deviations and judgment calls are stated, never silently
    forced to satisfy a checklist.
 
-6. **CLOSE.** Write/refresh `audit-outlines-<today>/logic/<CODE>.md` verdicts and, for
+7. **CLOSE.** Write/refresh `audit-outlines-<today>/logic/<CODE>.md` verdicts and, for
    multi-story sweeps, a `CORPUS-REPORT.md`. Summarize per story: verdict, findings by
    severity, fixes applied, anything deferred.

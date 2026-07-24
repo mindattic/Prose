@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**243 tools** across **37 tool families.**
+**245 tools** across **37 tool families.**
 
 ## Families
 
@@ -48,7 +48,7 @@
 | [Story Scope](#story-scope) | 3 |
 | [Survey](#survey) | 7 |
 | [Universe](#universe) | 5 |
-| [Verification](#verification) | 3 |
+| [Verification](#verification) | 5 |
 | [Voice](#voice) | 5 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 5 |
@@ -1731,6 +1731,21 @@ Get the current truth status for a story: how many beats have verified contracts
 Run all verification checks for a single beat against its declared BeatBlueprintDecision contract. Checks: BannedPattern (internal-understanding/epilogue anti-patterns), EventType (declared vs detected), SubplotCarrier (entities present when declared), EscalationFloor (emotional depth vs floor), DeclaredPurpose (embedding similarity — requires embeddings). Results are upserted to BeatVerification table. Returns Pass/Fail/Partial/Skipped per check with evidence. Exit 1 (blockers found) if any BLOCKER check fails.
 
 - `beatId` (string, required) — Beat GUID to verify.
+
+### `verify_quote_grounding`
+
+Verify that a logic-sweep audit agent's CLAIMED QUOTE actually appears in the beat it's attributed to, before that finding is trusted for triage/fix. Use this on every quoted finding an audit agent reports — agents occasionally misattribute a quote to the wrong beat or fabricate one under time pressure; this is the mechanical guard against that. Comparison is normalized (dash variants, curly/straight quotes, whitespace), so only a genuine misattribution fails — not console-display punctuation drift. Result is persisted to BeatVerification (CheckType='QuoteGrounding', always inserted, never overwritten — a beat accumulates one row per claim checked across every sweep). A Fail means: reject the finding and re-read the actual beat before acting on it.
+
+- `beatId` (string, required) — Beat GUID the finding claims this quote came from.
+- `quote` (string, required) — The exact text the audit agent claims appears in this beat.
+- `claimedBy` (string, optional) — Optional: which agent/pass made this claim, for the audit trail.
+
+### `verify_quote_grounding_batch`
+
+Batch form of VerifyQuoteGrounding: gate an ENTIRE audit report in one call before triage. Pass every (beatId, quote) claim the audit produced; get back which ones are actually grounded in their attributed beat and which must be rejected/re-verified. Run this before triaging any logic-sweep audit findings that quote beat text (SS-LOGIC-4a).
+
+- `claimsJson` (string, required) — JSON array of claims: [{"beatId":"<guid>","quote":"<text>"}, ...]
+- `claimedBy` (string, optional) — Optional: which agent/pass made these claims, for the audit trail.
 
 ### `verify_story`
 

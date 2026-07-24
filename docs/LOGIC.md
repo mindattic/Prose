@@ -73,6 +73,23 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
 
 ## 4. Triage and fix protocol {#SS-LOGIC-4}
 
+- **Quote grounding, before anything else (SS-LOGIC-4a).** Audit agents occasionally
+  misattribute a quote to the wrong SortKey/beat, or fabricate one under time pressure —
+  proven twice in the 2026-07-24 VIGL sweep (one turned out to be a beat-ID mix-up; a second
+  looked unverifiable at a glance and needed a closer read to confirm as real). Before triaging
+  ANY finding that quotes beat text, mechanically confirm the quote exists in the beat it's
+  attributed to:
+  `ss --verify-quote --id <beatId> --quote "<claimed text>" --claimed-by "<agent/pass name>"`
+  or, for a whole audit report at once, `ss --verify-quotes-batch --json-file <path>` (array of
+  `{"beatId":"<guid>","quote":"<text>"}`). MCP equivalents: `VerifyQuoteGrounding` /
+  `VerifyQuoteGroundingBatch`. Comparison is normalized (dash variants, curly/straight quotes,
+  whitespace) so console-display drift never causes a false Fail — only a genuine
+  misattribution or fabrication does. A Fail means: discard or re-verify that finding by
+  reading the actual beat yourself before it enters triage. Results are persisted to
+  `BeatVerifications` (`CheckType='QuoteGrounding'`, always inserted, never overwritten — one
+  row per claim ever checked, so the audit trail accumulates across sweeps). This gate is
+  mechanical and cheap; run it on every quoted finding, not just ones that feel suspicious —
+  the ones that felt fine were exactly the ones that turned out wrong.
 - Severity: **BLOCKER** (reader-visible contradiction) / **MODERATE** (weakens logic) /
   **MINOR**. Fix blockers always; moderates almost always; minors when the splice is one
   word/clause. If you cannot NAME the failure, leave the beat alone.
