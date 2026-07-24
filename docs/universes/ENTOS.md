@@ -1280,26 +1280,27 @@ measures would be more dangerous than not knowing.
 
 #### House Ocipheus — The Oldest Watch
 
-Ocipheus came out of the southern peninsula — the Italy analog, warm limestone ridge
-country descending into an inland sea. Their culture was the first in the Entos to treat
-the membrane as a subject of study rather than a site of worship. Where northern cultures
-built taboo around their membrane locations, the southern peninsula culture sent observers:
-people whose job was not to perform ceremonies but to sit with the boundary and record what
-they noticed. They were not scientists in any modern sense. But they were the first people
-in the Entos to separate observation from ritual — to say: watch the membrane and write down
-what you see, and separate what you see from what you believe about what you see.
+Ocipheus came from the island — the Britain analog, separated from the mainland by a narrow
+channel, rocky highland in the north softening into greener lowland in the south. Their
+culture was the first in the Entos to treat the membrane as a subject of study rather than a
+site of worship. Where mainland cultures built taboo around their membrane locations, the
+island culture sent observers: people whose job was not to perform ceremonies but to sit with
+the boundary and record what they noticed. They were not scientists in any modern sense. But
+they were the first people in the Entos to separate observation from ritual — to say: watch
+the membrane and write down what you see, and separate what you see from what you believe
+about what you see.
 
 This produced the Ocipheus practitioner tradition: the vigil. Not a ceremony. A watch.
 The watch is maintained continuously. The records are kept. The records are not shared.
 
-Their installation in the northern ridge country — where the Alps meet the peninsula — is
-the oldest continuously documented membrane site in the Entos. The word "documented" is doing
-work in that sentence: there are older sites that may have been operated earlier, but Ocipheus
-has the written record. They have always had the written record. The record is the thing they
-understood was worth keeping when other cultures were still deciding whether the membrane was
-sacred or simply useful. Ocipheus decided it was both and that the difference did not matter.
+Their installation, seated at the island's center, is the oldest continuously documented
+membrane site in the Entos. The word "documented" is doing work in that sentence: there are
+older sites that may have been operated earlier, but Ocipheus has the written record. They
+have always had the written record. The record is the thing they understood was worth keeping
+when other cultures were still deciding whether the membrane was sacred or simply useful.
+Ocipheus decided it was both and that the difference did not matter.
 
-House Venn, a smaller Alpine culture on the northern edge of Ocipheus territory, merged
+House Venn, a smaller culture out of the island's own rocky northern highlands, merged
 into the institution two generations after the Compact. Their practitioner tradition was
 intuitive where Ocipheus was systematic — they documented less and observed more, or rather
 they internalized what Ocipheus wrote down and operated from it without consulting the text.
