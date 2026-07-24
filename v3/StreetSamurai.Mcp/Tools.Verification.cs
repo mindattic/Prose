@@ -73,6 +73,7 @@ public class VerificationTools
                 minors        = summary.Minors,
                 passed        = summary.Passed,
                 skipped       = summary.Skipped,
+                partials      = summary.Partials,
                 export_gate   = summary.Blockers == 0 ? "PASS" : $"BLOCKED — {summary.Blockers} BLOCKER findings",
                 findings      = summary.Findings.Select(f => new
                 {
@@ -187,8 +188,14 @@ public class VerificationTools
                 minors        = summary.Minors,
                 passed        = summary.Passed,
                 skipped       = summary.Skipped,
-                truth_score   = summary.BeatsChecked > 0
-                    ? (int)(100.0 * summary.Passed / (summary.BeatsChecked * 3 + 1))
+                partials      = summary.Partials,
+                // BUG FIX: was `Passed / (BeatsChecked*3 + 1)` — a guessed "3 checks per beat"
+                // denominator that has no relation to the real check count (1-5 checks run per
+                // beat depending on whether a BeatBlueprintDecision/embeddings are present), so
+                // truth_score could exceed 100% whenever more than 3 checks/beat actually ran and
+                // passed. Use the real total of executed (non-skipped) checks instead.
+                truth_score   = (summary.Blockers + summary.Moderates + summary.Minors + summary.Passed) > 0
+                    ? (int)(100.0 * summary.Passed / (summary.Blockers + summary.Moderates + summary.Minors + summary.Passed))
                     : 0,
                 verdict       = summary.Blockers > 0
                     ? $"BLOCKED — {summary.Blockers} BLOCKER(s) must be fixed before export"

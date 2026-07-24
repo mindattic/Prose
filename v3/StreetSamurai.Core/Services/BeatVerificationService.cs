@@ -23,7 +23,8 @@ public record StoryVerificationSummary(
     int Minors,
     int Passed,
     int Skipped,
-    List<BeatVerificationResult> Findings);
+    List<BeatVerificationResult> Findings,
+    int Partials = 0);
 
 /// <summary>
 /// Beat Verification Engine (Track C — Truth-First Architecture).
@@ -176,7 +177,12 @@ public class BeatVerificationService
             allResults.Count(r => r.Result == "Fail" && r.Severity == "MINOR"),
             allResults.Count(r => r.Result == "Pass"),
             allResults.Count(r => r.Result == "Skipped"),
-            allResults.Where(r => r.Result == "Fail").ToList());
+            // BUG FIX: "Partial" results (EventType alignment-undetermined, DeclaredPurpose
+            // partial-similarity) were previously invisible everywhere — not counted in any
+            // bucket above and excluded from Findings (Fail-only), so an inconclusive check
+            // silently vanished from every report instead of surfacing as "needs a human look."
+            allResults.Where(r => r.Result == "Fail" || r.Result == "Partial").ToList(),
+            allResults.Count(r => r.Result == "Partial"));
     }
 
     // ── Mechanical check implementations ─────────────────────────────────────

@@ -147,6 +147,7 @@ public static class VerifyBeatCli
             Console.WriteLine($"MODERATE:       {summary.Moderates}");
             Console.WriteLine($"MINOR:          {summary.Minors}");
             Console.WriteLine($"Pass:           {summary.Passed}");
+            Console.WriteLine($"Partial:        {summary.Partials}");
             Console.WriteLine($"Skipped:        {summary.Skipped}");
             Console.WriteLine();
 
@@ -156,10 +157,10 @@ public static class VerifyBeatCli
                 return 0;
             }
 
-            Console.WriteLine("Failures:");
+            Console.WriteLine("Findings (Fail + Partial):");
             foreach (var f in summary.Findings.OrderByDescending(f => f.Severity == "BLOCKER" ? 2 : f.Severity == "MODERATE" ? 1 : 0))
             {
-                Console.WriteLine($"  [{f.Severity,-8}] {f.CheckType,-22} Beat {f.BeatId}");
+                Console.WriteLine($"  [{f.Severity,-8}] {f.Result,-8} {f.CheckType,-22} Beat {f.BeatId}");
                 if (!string.IsNullOrEmpty(f.Evidence))
                     Console.WriteLine($"            {f.Evidence}");
             }

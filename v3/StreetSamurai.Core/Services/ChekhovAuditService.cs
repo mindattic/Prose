@@ -161,15 +161,22 @@ public class ChekhovAuditService(
             var doc = JsonDocument.Parse(raw[start..(end + 1)]);
             var arr = doc.RootElement.GetProperty("sightings");
 
-            var beatIndex = beats.ToDictionary(
-                b => b.Beat.Id.ToString().ToLowerInvariant(),
-                b => b.SortKey);
+            // BUG FIX: this index was built (keyed by Beat.Id) but never consulted below —
+            // SortKey was taken solely from the LLM's echoed "sort_key" number, which the model
+            // can misremember across a 4096-token pass over 30+ beats. Key it by the same
+            // "Beat N" label used in the extraction prompt so a mis-echoed sort_key falls back
+            // to the real, deterministic beat order instead of silently trusting the model's arithmetic.
+            var beatIndex = beats
+                .Select((b, i) => (Label: $"Beat {i + 1}", SortKey: (float)b.SortKey))
+                .ToDictionary(x => x.Label, x => x.SortKey);
 
             return arr.EnumerateArray().Select(e =>
             {
-                var sortKey = e.TryGetProperty("sort_key", out var sk) ? (float)sk.GetDouble() : 0f;
+                var beatLabel = e.TryGetProperty("beat_label", out var bl) ? bl.GetString() ?? "" : "";
+                var llmSortKey = e.TryGetProperty("sort_key", out var sk) ? (float)sk.GetDouble() : 0f;
+                var sortKey = beatIndex.TryGetValue(beatLabel.Trim(), out var real) ? real : llmSortKey;
                 return new ChekhovSighting(
-                    BeatLabel: e.TryGetProperty("beat_label", out var bl) ? bl.GetString() ?? "" : "",
+                    BeatLabel: beatLabel,
                     SortKey:   sortKey,
                     PropName:  e.TryGetProperty("prop_name",  out var pn) ? pn.GetString() ?? "" : "",
                     PropType:  e.TryGetProperty("prop_type",  out var pt) ? pt.GetString() ?? "physical" : "physical",

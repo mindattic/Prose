@@ -82,9 +82,21 @@ public sealed class DocContextService(
         // 2.5 — series (scope match): cross-story arc docs (docs/series/*.md) that declare this
         //        node's series code in their scope. Survives ~8 beats before eviction — long enough
         //        to carry a plant/payoff callback from a previous book across a scene.
+        //
+        //        BUG FIX: a series doc's Scope is the series/universe identifier itself (e.g.
+        //        "GLMZ" from docs/series/GLMZ.md, or "ROOK" from a hypothetical docs/series/ROOK.md
+        //        — see MarkdownFileService.ClassifyFile), never an individual story's own NodeCode.
+        //        Matching it against `code` (this story's NodeCode, e.g. "BCODA"/"MxG") could never
+        //        succeed, so the series tier was silently dead for every story. Resolve the story's
+        //        actual series-scope keys (its Universe.Name + any ancestor SeriesNode's Title) and
+        //        match against those instead.
         if (includeNode)
-            foreach (var c in candidates.Where(c => c.Tier == "series" && ScopeMatches(c.Scope, code)))
+        {
+            var seriesKeys = await ResolveSeriesScopeKeysAsync(db, contextId, ct);
+            foreach (var c in candidates.Where(c => c.Tier == "series"
+                && (ScopeMatches(c.Scope, code) || seriesKeys.Any(k => ScopeMatches(c.Scope, k)))))
                 stack.Push(contextId, MakeEntry(c, string.IsNullOrEmpty(code) ? "series:*" : $"series:{code}", 75));
+        }
 
         // 3 — topic via keyword triggers
         if (text.Length > 0)
@@ -284,6 +296,46 @@ public sealed class DocContextService(
 
     private static DocContextStack.StackEntry MakeEntry(Candidate c, string reason, double score) =>
         new(c.Id, c.RelativePath, c.Tier, c.Scope, c.Triggers, reason, score, 0, 0, c.RelatedIds);
+
+    /// <summary>
+    /// Resolves the broader series/universe identifiers a story node belongs to, so series-tier
+    /// docs (scoped by series/universe name, not by any individual story's own NodeCode) can be
+    /// matched correctly. Walks up to 3 ancestor levels looking for a SeriesNode (Kind == "series")
+    /// and includes the node's own Universe name. Returns an empty list if <paramref name="nodeId"/>
+    /// is not a real node (e.g. a session-key context id) or has none of the above.
+    /// </summary>
+    private static async Task<List<string>> ResolveSeriesScopeKeysAsync(
+        StreetSamuraiDbContext db, Guid nodeId, CancellationToken ct)
+    {
+        var keys = new List<string>();
+
+        var self = await db.Nodes.AsNoTracking()
+            .Where(n => n.Id == nodeId)
+            .Select(n => new { n.UniverseId, n.ParentNodeId })
+            .FirstOrDefaultAsync(ct);
+        if (self == null) return keys;
+
+        var universeName = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == self.UniverseId)
+            .Select(u => u.Name)
+            .FirstOrDefaultAsync(ct);
+        if (!string.IsNullOrWhiteSpace(universeName)) keys.Add(universeName);
+
+        var parentId = self.ParentNodeId;
+        for (var depth = 0; depth < 3 && parentId is { } pid; depth++)
+        {
+            var parent = await db.Nodes.AsNoTracking()
+                .Where(n => n.Id == pid)
+                .Select(n => new { n.Kind, n.Title, n.ParentNodeId })
+                .FirstOrDefaultAsync(ct);
+            if (parent == null) break;
+            if (parent.Kind == "series" && !string.IsNullOrWhiteSpace(parent.Title))
+                keys.Add(parent.Title);
+            parentId = parent.ParentNodeId;
+        }
+
+        return keys;
+    }
 
     private static bool ScopeMatches(string scope, string code)
     {
