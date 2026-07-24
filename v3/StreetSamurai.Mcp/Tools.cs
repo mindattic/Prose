@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
 using StreetSamurai.Core.Models;
@@ -6,16 +6,16 @@ using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Mcp;
 
-// â”€â”€ Tool surface for the StreetSamurai MCP server â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Tool surface for the StreetSamurai MCP server ────────────────────────────
 // Every method here is a tool Claude can call to look up canon, search the
 // world graph, or pull writing-context blocks. Read-mostly: the only mutation
 // is plant_motif, which is normally user-confirmed in the Blazor UI but is
-// useful from chat too. Tools return data â€” never prose. The caller (Claude)
+// useful from chat too. Tools return data — never prose. The caller (Claude)
 // stays the writer; tools just give it sharper context.
-// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ────────────────────────────────────────────────────────────────────────────
 
 /// <summary>
-/// Tool group exposing the headline canon repositories â€” characters, places,
+/// Tool group exposing the headline canon repositories — characters, places,
 /// factions, CorpoNations, plus the literary rules block. Use these as the
 /// first-pass lookup when an MCP client needs canonical identity, voice, or
 /// place-of-action data for a scene.
@@ -44,9 +44,9 @@ public class CanonTools
     }
 
     /// <summary>
-    /// List every character in canon. Returns name + role + status for each. Cheap â€” call this first when you need to know who exists.
+    /// List every character in canon. Returns name + role + status for each. Cheap — call this first when you need to know who exists.
     /// </summary>
-    [McpServerTool, Description("List every character in canon. Returns name + role + status for each. Cheap â€” call this first when you need to know who exists.")]
+    [McpServerTool, Description("List every character in canon. Returns name + role + status for each. Cheap — call this first when you need to know who exists.")]
     public string ListCharacters()
     {
         characters.Reload();
@@ -61,7 +61,7 @@ public class CanonTools
     /// Load a character's full canon record by name: identity, psychology, behavioral profile, speech patterns, augmentations, story hooks. Primary source for voice when writing a POV chapter.
     /// </summary>
     [McpServerTool, Description("Load a character's full canon record by name: identity, psychology (core_fears, core_desires, coping_mechanisms, blind_spots, secret), behavioral (decision_rules, escalation_ladder, contradictions, habits, breaking_points, stress_responses), speech_patterns (vocabulary, cadence, verbal_tics, example_lines), augmentations, story_hooks. This is the primary source for voice when writing a POV chapter.")]
-    public string GetCharacter([Description("Exact name of the character (e.g. 'Kyle Ellen Corbin' or 'Sasha VÃµ').")] string name)
+    public string GetCharacter([Description("Exact name of the character (e.g. 'Kyle Ellen Corbin' or 'Sasha Võ').")] string name)
     {
         var c = characters.GetByName(name);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", name }, JsonOpts);
@@ -146,7 +146,7 @@ public class CanonTools
 }
 
 /// <summary>
-/// Tool group for the active book shelf â€” listing books, loading chapters, pulling
+/// Tool group for the active book shelf — listing books, loading chapters, pulling
 /// outlines, and assembling the per-chapter director context that feeds drafting
 /// prompts. Also exposes the type-the-id archive operation.
 /// </summary>
@@ -203,8 +203,8 @@ public class StoryTools
         return JsonSerializer.Serialize(outlines.Load(bookId), CanonTools.JsonOpts);
     }
 
-    /// <summary>Build the "WHERE WE ARE" director-context block for a specific chapter: prior chapters' content, this chapter's outline, upcoming setup needs, open book-level threads. Highest-value writing-context tool â€” call before drafting prose.</summary>
-    [McpServerTool, Description("Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool â€” call it before drafting prose for any chapter that's part of a book.")]
+    /// <summary>Build the "WHERE WE ARE" director-context block for a specific chapter: prior chapters' content, this chapter's outline, upcoming setup needs, open book-level threads. Highest-value writing-context tool — call before drafting prose.</summary>
+    [McpServerTool, Description("Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool — call it before drafting prose for any chapter that's part of a book.")]
     public string GetDirectorContext(
         [Description("Book id.")] string bookId,
         [Description("Chapter id whose prose you're about to write.")] string chapterId)
@@ -212,11 +212,11 @@ public class StoryTools
         return outlines.BuildDirectorContext(bookId, chapterId);
     }
 
-    /// <summary>Archive a book â€” moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive (chapters stay in place). Requires the caller to retype the full book id as a confirmation token, matching the UI's type-the-guid modal.</summary>
-    [McpServerTool, Description("Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive â€” the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.")]
+    /// <summary>Archive a book — moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive (chapters stay in place). Requires the caller to retype the full book id as a confirmation token, matching the UI's type-the-guid modal.</summary>
+    [McpServerTool, Description("Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive — the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.")]
     public string ArchiveBook(
         [Description("Book id (32-char hex).")] string id,
-        [Description("Confirmation token â€” must equal the same full book id. Mismatched or missing values abort the archive.")] string confirmId)
+        [Description("Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.")] string confirmId)
     {
         var book = books.LoadBook(id);
         if (book == null)
@@ -231,7 +231,7 @@ public class StoryTools
 }
 
 /// <summary>
-/// Tool group for thematic context retrieval â€” semantic search across the world
+/// Tool group for thematic context retrieval — semantic search across the world
 /// graph, motif inventory access, and graph-walk neighbor lookups. These help
 /// surface canon content by meaning rather than name.
 /// </summary>
@@ -253,9 +253,9 @@ public class ContextTools
     }
 
     /// <summary>Search the world graph by theme rather than by name. TF-IDF cosine similarity over every entity description. Surfaces entities thematically relevant to what you're about to write. Returns ranked id+name+type+score.</summary>
-    [McpServerTool, Description("Search the world graph by theme, not by name. TF-IDF cosine similarity across every entity description. Use this to surface entities that are *thematically relevant* to what you're about to write â€” e.g. searching 'corporate betrayal under-table contract' might return Sable's backstory, the Lotus Syndicate, the Ferrogate enforcement arm. Returns ranked id+name+type+score.")]
+    [McpServerTool, Description("Search the world graph by theme, not by name. TF-IDF cosine similarity across every entity description. Use this to surface entities that are *thematically relevant* to what you're about to write — e.g. searching 'corporate betrayal under-table contract' might return Sable's backstory, the Lotus Syndicate, the Ferrogate enforcement arm. Returns ranked id+name+type+score.")]
     public string SearchSemantic(
-        [Description("Free-text query â€” describe the theme/scene/concept.")] string query,
+        [Description("Free-text query — describe the theme/scene/concept.")] string query,
         [Description("Number of top hits to return. Default 8.")] int topK = 8)
     {
         graph.EnsureLoaded();
@@ -268,8 +268,8 @@ public class ContextTools
         return JsonSerializer.Serialize(enriched, CanonTools.JsonOpts);
     }
 
-    /// <summary>List the registered motifs for a book â€” recurring objects, phrases, gestures, sensory threads. Use these in chapters where natural; the review pipeline flags chapters that drop the whole inventory.</summary>
-    [McpServerTool, Description("List the registered motifs for a book â€” recurring objects, phrases, gestures, sensory threads. Mention these in the chapter you're writing where natural; the review pipeline flags chapters that drop the whole inventory.")]
+    /// <summary>List the registered motifs for a book — recurring objects, phrases, gestures, sensory threads. Use these in chapters where natural; the review pipeline flags chapters that drop the whole inventory.</summary>
+    [McpServerTool, Description("List the registered motifs for a book — recurring objects, phrases, gestures, sensory threads. Mention these in the chapter you're writing where natural; the review pipeline flags chapters that drop the whole inventory.")]
     public string GetMotifs([Description("Book id.")] string bookId)
     {
         return JsonSerializer.Serialize(motifs.Load(bookId), CanonTools.JsonOpts);
@@ -290,8 +290,8 @@ public class ContextTools
         return JsonSerializer.Serialize(new { ok = true, name, kind = kindEnum.ToString() }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Get a graph node's neighbors (relationships) up to N hops. Walks from a known entity to entities related by canon â€” alliances, rivalries, family, mentor links, location ownership.</summary>
-    [McpServerTool, Description("Get a graph node's neighbors (relationships) up to N hops. Use this to walk from a known entity to entities related by canon â€” alliances, rivalries, family, mentor links, location ownership.")]
+    /// <summary>Get a graph node's neighbors (relationships) up to N hops. Walks from a known entity to entities related by canon — alliances, rivalries, family, mentor links, location ownership.</summary>
+    [McpServerTool, Description("Get a graph node's neighbors (relationships) up to N hops. Use this to walk from a known entity to entities related by canon — alliances, rivalries, family, mentor links, location ownership.")]
     public string GetNeighbors(
         [Description("Node id (use search_semantic or list_characters to find the id).")] string nodeId,
         [Description("Hops to traverse. 1 = direct neighbors. Default 1.")] int hops = 1)

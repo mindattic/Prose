@@ -7,7 +7,7 @@ namespace StreetSamurai.UnitTests;
 
 /// <summary>
 /// Comprehensive tests using real engine_data. All JSON files are set to ReadOnly
-/// during test execution â€” any attempt to modify them throws UnauthorizedAccessException.
+/// during test execution — any attempt to modify them throws UnauthorizedAccessException.
 /// The guard restores write access in Dispose (finally), even if tests fail.
 /// </summary>
 [TestFixture]
@@ -44,10 +44,10 @@ public class RealDataTests
     public void GlobalTeardown()
     {
         guard?.Dispose();
-        TestContext.Out.WriteLine("ReadOnlyDataGuard released â€” all files writable again");
+        TestContext.Out.WriteLine("ReadOnlyDataGuard released — all files writable again");
     }
 
-    // â”€â”€ JSON INTEGRITY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── JSON INTEGRITY ───────────────────────────────────────
 
     [Test]
     public void AllJsonFiles_AreValidJson()
@@ -85,7 +85,7 @@ public class RealDataTests
         Assert.Throws<UnauthorizedAccessException>(() => File.WriteAllText(anyJson, "tampered"));
     }
 
-    // â”€â”€ REPOSITORY LOADING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── REPOSITORY LOADING ───────────────────────────────────
 
     [Test]
     [Ignore(RetiredCorpus)]
@@ -202,7 +202,7 @@ public class RealDataTests
         Assert.That(all.Count, Is.GreaterThanOrEqualTo(100), "Should have 100+ vehicles");
     }
 
-    // â”€â”€ DATABASE SERVICE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── DATABASE SERVICE ─────────────────────────────────────
 
     [Test]
     [Ignore(RetiredCorpus)]
@@ -249,7 +249,7 @@ public class RealDataTests
         Assert.That(kyle1!.Name, Is.EqualTo(kyle2!.Name));
     }
 
-    // â”€â”€ WORLD GRAPH â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── WORLD GRAPH ──────────────────────────────────────────
 
     [Test]
     [Ignore(RetiredCorpus)]
@@ -272,7 +272,7 @@ public class RealDataTests
         Assert.That(WorldGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom-industries"));
     }
 
-    // â”€â”€ SEMANTIC INDEX â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── SEMANTIC INDEX ───────────────────────────────────────
 
     [Test]
     [Ignore(RetiredCorpus)]
@@ -289,7 +289,7 @@ public class RealDataTests
         Assert.That(results.Count, Is.GreaterThan(0), "Searching for 'security' should find something");
     }
 
-    // â”€â”€ LOGGING SERVICE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── LOGGING SERVICE ──────────────────────────────────────
 
     [Test]
     public void LoggingService_SearchReturnsResults_WhenLogsExist()
@@ -304,14 +304,14 @@ public class RealDataTests
         }
         else
         {
-            // No logs yet â€” just verify it doesn't crash
+            // No logs yet — just verify it doesn't crash
             var results = svc.Search(new LogSearchRequest { Since = DateTime.Now.AddDays(-1) });
             Assert.That(results, Is.Not.Null);
             Assert.That(results, Is.Empty);
         }
     }
 
-    // â”€â”€ QUANTA SYMBOL CONSISTENCY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── QUANTA SYMBOL CONSISTENCY ────────────────────────────
 
     [Test]
     public void AllCorponations_UseQuantaSymbol_NotPhiText()
@@ -323,7 +323,7 @@ public class RealDataTests
         {
             var json = JsonSerializer.Serialize(corp);
             Assert.That(json, Does.Not.Contain("Phi ").IgnoreCase,
-                $"{corp.Name} contains 'Phi' text instead of Î¦ symbol");
+                $"{corp.Name} contains 'Phi' text instead of Φ symbol");
         }
     }
 
@@ -338,10 +338,10 @@ public class RealDataTests
         }
     }
 
-    // â”€â”€ E.L.F. DATA INTEGRITY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── E.L.F. DATA INTEGRITY ────────────────────────────────
 
 
-    // â”€â”€ OUTLINE SERVICE (TRUNCATION REPAIR) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── OUTLINE SERVICE (TRUNCATION REPAIR) ──────────────────
 
     [Test]
     public void OutlineService_RepairsTruncatedJson()
@@ -356,7 +356,7 @@ public class RealDataTests
             "character_arcs":[],"seeds_and_payoffs":[
             """;
 
-        // Should not crash â€” RepairTruncatedJson is private, but we can test via GenerateOutlineAsync
+        // Should not crash — RepairTruncatedJson is private, but we can test via GenerateOutlineAsync
         // by checking that the repair method produces parseable JSON from known truncated input
         var repaired = RepairJson(truncated);
         Assert.DoesNotThrow(() => JsonDocument.Parse(repaired).Dispose(),
@@ -379,7 +379,7 @@ public class RealDataTests
         Assert.DoesNotThrow(() => JsonDocument.Parse(repaired).Dispose());
     }
 
-    // â”€â”€ CHARACTER DATA QUALITY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── CHARACTER DATA QUALITY ───────────────────────────────
 
     [Test]
     [Ignore(RetiredCorpus)]
@@ -408,7 +408,7 @@ public class RealDataTests
         }
     }
 
-    // â”€â”€ CROSS-REPOSITORY CONSISTENCY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── CROSS-REPOSITORY CONSISTENCY ─────────────────────────
 
     [Test]
     public void Characters_WithRelationships_ReferenceExistingCharacters()
@@ -422,16 +422,16 @@ public class RealDataTests
             foreach (var rel in c.Relationships)
             {
                 if (!allNames.Contains(rel.Name) && !string.IsNullOrWhiteSpace(rel.Name))
-                    brokenRefs.Add($"{c.Name} â†’ {rel.Name}");
+                    brokenRefs.Add($"{c.Name} → {rel.Name}");
             }
         }
 
-        // Some references may be to NPCs not in the DB â€” that's OK if it's a minority
+        // Some references may be to NPCs not in the DB — that's OK if it's a minority
         if (brokenRefs.Count > 0)
             TestContext.Out.WriteLine($"Unresolved character references ({brokenRefs.Count}): {string.Join(", ", brokenRefs.Take(10))}");
     }
 
-    // â”€â”€ HELPERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ── HELPERS ───────────────────────────────────────────────
 
     private DatabaseService BuildDatabaseService() => new(
         new CharacterRepository(paths),
