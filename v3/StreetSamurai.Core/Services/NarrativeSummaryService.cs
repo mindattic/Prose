@@ -57,9 +57,8 @@ public class NarrativeSummaryService
             ? summaryChain.Skip(summaryChain.Count - 10).ToList()
             : summaryChain;
 
-        var offset = summaryChain.Count - recent.Count;
         return "STORY SO FAR (compressed summaries of previous scenes):\n"
-            + string.Join("\n", recent.Select((s, i) => $"Scene {offset + i + 1}: {s}"));
+            + string.Join("\n", recent.Select((s, i) => $"Scene {i + 1}: {s}"));
     }
 
     /// <summary>Compress a completed scene into a brief summary and persist it.</summary>

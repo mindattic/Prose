@@ -70,7 +70,7 @@ public class SettingsServiceVaultTests
     {
         Environment.SetEnvironmentVariable("SS_CLAUDE_API_KEY", "env-claude");
         SettingsService.VaultConfiguration = BuildConfig(
-            ("MindAttic:Vault:LLM:claude:apiKey", "vault-claude"));
+            ("MindAttic:Vault:LLM:claude-api:apiKey", "vault-claude"));
 
         Assert.That(svc.ApiKey, Is.EqualTo("vault-claude"));
     }
@@ -153,7 +153,7 @@ public class SettingsServiceVaultTests
     public void Vault_TrimsWhitespaceAroundValue()
     {
         SettingsService.VaultConfiguration = BuildConfig(
-            ("MindAttic:Vault:LLM:claude:apiKey", "  vault-claude  "));
+            ("MindAttic:Vault:LLM:claude-api:apiKey", "  vault-claude  "));
 
         Assert.That(svc.ApiKey, Is.EqualTo("vault-claude"));
     }

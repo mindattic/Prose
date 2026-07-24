@@ -113,9 +113,9 @@ public class NodeWorkbenchService
         foreach (var d in direct)
             acc.Add(new OrderedBeat(d.Beat, nodeId, d.SortKey, d.IsEnabled));
 
-        // Then child nodes in SortKey order (recursive).
+        // Then child nodes in SortKey order — skip story-kind nodes (draft buckets).
         var children = await db.Nodes
-            .Where(s => s.ParentNodeId == nodeId)
+            .Where(s => s.ParentNodeId == nodeId && s.Kind != "story")
             .OrderBy(s => s.SortKey)
             .Select(s => s.Id)
             .ToListAsync(ct);

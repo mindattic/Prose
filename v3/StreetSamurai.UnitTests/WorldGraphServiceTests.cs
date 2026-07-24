@@ -49,8 +49,8 @@ public class WorldGraphServiceTests
     public void Slugify_ProducesConsistentSlugs()
     {
         Assert.That(WorldGraphService.Slugify("Kyle"), Is.EqualTo("kyle"));
-        Assert.That(WorldGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom_industries"));
-        Assert.That(WorldGraphService.Slugify("Dae-jung Seo"), Is.EqualTo("dae_jung_seo"));
+        Assert.That(WorldGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom-industries"));
+        Assert.That(WorldGraphService.Slugify("Dae-jung Seo"), Is.EqualTo("dae-jung-seo"));
         Assert.That(WorldGraphService.Slugify("  spaces  "), Is.EqualTo("spaces"));
     }
 

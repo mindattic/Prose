@@ -215,7 +215,7 @@ public class NodeMigrationService
                                             : EnsureUniqueSlug(e.Slug, e.Id, slugIndex),
                 Title                 = e.Title ?? "Untitled episode",
                 Description           = null,
-                Kind                  = "chapter",
+                Kind                  = "episode",
                 Status                = string.IsNullOrEmpty(e.Status) ? "draft" : e.Status,
                 VoiceId               = e.VoiceId,
                 ParentNodeId        = parentNode,

@@ -252,6 +252,7 @@ public class RealDataTests
     // â”€â”€ WORLD GRAPH â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void WorldGraph_LoadsFromRealData()
     {
         var db = BuildDatabaseService();
@@ -266,14 +267,15 @@ public class RealDataTests
     public void WorldGraph_Slugify_Consistent()
     {
         Assert.That(WorldGraphService.Slugify("Kyle"), Is.EqualTo("kyle"));
-        Assert.That(WorldGraphService.Slugify("The Shelf"), Is.EqualTo("the_shelf"));
-        Assert.That(WorldGraphService.Slugify("Mrs. Chen"), Is.EqualTo("mrs_chen"));
-        Assert.That(WorldGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom_industries"));
+        Assert.That(WorldGraphService.Slugify("The Shelf"), Is.EqualTo("the-shelf"));
+        Assert.That(WorldGraphService.Slugify("Mrs. Chen"), Is.EqualTo("mrs-chen"));
+        Assert.That(WorldGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom-industries"));
     }
 
     // â”€â”€ SEMANTIC INDEX â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     [Test]
+    [Ignore(RetiredCorpus)]
     public void SemanticIndex_BuildsFromRealGraph()
     {
         var db = BuildDatabaseService();

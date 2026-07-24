@@ -17,6 +17,7 @@ namespace StreetSamurai.UnitTests;
 /// </summary>
 [TestFixture]
 [Category("WorldValidation")]
+[Ignore("Retired: file-based repositories migrated to SQL (2026-05-08). Rewrite to query the DB directly.")]
 public class WorldValidationTests
 {
     private static readonly string EngineDataDir = FindEngineDataDir();

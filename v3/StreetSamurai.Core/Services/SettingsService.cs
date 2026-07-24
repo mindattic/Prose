@@ -332,6 +332,13 @@ public class SettingsService : IDisposable
                 Stability = 0.5, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true,
                 Description = v.Description,
             });
+            UpsertVoiceProfile(new Models.VoiceProfile
+            {
+                Id = $"vox-{slug}-v3", Label = $"{name} · v3",
+                VoiceId = v.VoiceId, Model = "eleven_v3",
+                Stability = 1.0, SimilarityBoost = 0.75, Style = 0.0, UseSpeakerBoost = true,
+                Description = v.Description,
+            });
             count++;
         }
         return count;
