@@ -45,7 +45,6 @@ public class TextAnalysisService
             - No monologuing about honor
             - No characters explaining their own psychology
             - No clean moral victories
-            - Sentences must be 25 words max
             - Every paragraph must contain an action, sensory detail, or a lie
 
             Analyze the text for violations. Be specific about what's cliche and why.
@@ -60,7 +59,6 @@ public class TextAnalysisService
         var system = $"""
             You are continuing a neo-noir novel set in GLMZ (Great Lakes Metropolitan Zone, 2226). Maintain the exact same voice,
             tone, and style. Follow these rules strictly:
-            - Sentences max 25 words
             - Every paragraph: action, sensory detail, or a lie
             - No generic noir, no slogans, no samurai cliches
             - Sharp sensory detail, emotional subtext
@@ -76,7 +74,7 @@ public class TextAnalysisService
     {
         var system = """
             Rephrase the following text while maintaining its meaning, tone, and literary quality.
-            Rules: sentences max 25 words, sharp sensory detail, no cliches, no generic noir.
+            Rules: sharp sensory detail, no cliches, no generic noir.
             Return ONLY the rephrased text, nothing else.
             """;
         return await llm.GenerateAsync(system, selectedText, 0.7, 1024, ct: ct);

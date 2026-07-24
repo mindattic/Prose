@@ -92,9 +92,7 @@ public static class ProseCheckCli
     private static void PrintViolations(
         List<ProseViolation> violations, string label, string text, bool all, bool json)
     {
-        var filtered = all
-            ? violations
-            : violations.Where(v => v.Category != ProseViolationCategory.SentenceLength).ToList();
+        var filtered = violations;
 
         if (filtered.Count == 0) return;
 

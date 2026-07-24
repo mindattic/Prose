@@ -1882,7 +1882,7 @@ Scans prose text for gear usage verbs (drew, fired, aimed…) and checks whether
 
 ### `check_prose`
 
-Runs the deterministic prose pattern linter on text. Detects: clichés (chrome gleam, heart hammered…), pseudo-profound constructs (in that moment, it hit him that…), on-the-nose interiority, italicised dialogue, and sentences exceeding 25 words. Returns a JSON array of violations.
+Runs the deterministic prose pattern linter on text. Detects: clichés (chrome gleam, heart hammered…), pseudo-profound constructs (in that moment, it hit him that…), on-the-nose interiority, and italicised dialogue. Returns a JSON array of violations.
 
 - `text` (string, required) — Prose text to lint
 

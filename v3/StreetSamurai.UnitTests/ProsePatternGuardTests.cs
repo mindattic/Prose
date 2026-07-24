@@ -101,21 +101,6 @@ public class ProsePatternGuardTests
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.ItalicisedDialogue), Is.True);
     }
 
-    [Test]
-    public void Check_LongSentence_DetectedAsSentenceLengthViolation()
-    {
-        var longSentence = "Kyle walked down the corridor past the vending machine and the broken light and the door that led to the maintenance shaft where the old man had told him about the job three months ago.";
-        var result = guard.Check(longSentence);
-        Assert.That(result.Any(v => v.Category == ProseViolationCategory.SentenceLength), Is.True);
-    }
-
-    [Test]
-    public void Check_ShortSentences_NoSentenceLengthViolation()
-    {
-        var text = "Kyle moved fast. He kept low. The door was close.";
-        var result = guard.Check(text);
-        Assert.That(result.Any(v => v.Category == ProseViolationCategory.SentenceLength), Is.False);
-    }
 
     [Test]
     public void Check_MultipleViolations_AllReturned()

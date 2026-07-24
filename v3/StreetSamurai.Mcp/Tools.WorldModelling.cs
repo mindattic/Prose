@@ -126,8 +126,8 @@ public class WorldModellingTools(
     [McpServerTool, Description(
         "Runs the deterministic prose pattern linter on text. " +
         "Detects: clichés (chrome gleam, heart hammered…), pseudo-profound constructs " +
-        "(in that moment, it hit him that…), on-the-nose interiority, italicised dialogue, " +
-        "and sentences exceeding 25 words. Returns a JSON array of violations.")]
+        "(in that moment, it hit him that…), on-the-nose interiority, and italicised dialogue. " +
+        "Returns a JSON array of violations.")]
     public string CheckProse(
         [Description("Prose text to lint")] string text)
     {

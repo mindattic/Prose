@@ -4,7 +4,6 @@ namespace StreetSamurai.Core.Services;
 
 public enum ProseViolationCategory
 {
-    SentenceLength,
     Cliche,
     PseudoProfound,
     OnTheNose,
@@ -82,13 +81,7 @@ public class ProsePatternGuard
     private static readonly Regex ItalicDialogue = new(
         @"[*_]+""[^""]{1,200}""[*_]+", RegexOptions.Compiled);
 
-    // Sentence splitter — splits on . ! ? followed by whitespace or end-of-string,
-    // but not on common abbreviations (Mr. Mrs. Dr. etc.)
-    private static readonly Regex SentenceEnd = new(
-        @"(?<![Mm]r|[Mm]rs|[Dd]r|[Pp]rof|[Ss]t|[Vv]s|[Ee]tc)[.!?]+(?:\s+|$)",
-        RegexOptions.Compiled);
 
-    private const int MaxSentenceWords = 25;
 
     /// <summary>
     /// Check <paramref name="text"/> against all hardcoded patterns plus any
@@ -101,7 +94,6 @@ public class ProsePatternGuard
 
         var violations = new List<ProseViolation>();
 
-        CheckSentenceLengths(text, violations);
         CheckPatterns(text, HardcodedCliches, ProseViolationCategory.Cliche, violations);
         CheckPatternPairs(text, PseudoProfound, ProseViolationCategory.PseudoProfound, violations);
         CheckPatternPairs(text, OnTheNose, ProseViolationCategory.OnTheNose, violations);
@@ -114,32 +106,6 @@ public class ProsePatternGuard
         return violations;
     }
 
-    private static void CheckSentenceLengths(string text, List<ProseViolation> violations)
-    {
-        int pos = 0;
-        foreach (var sentence in SplitSentences(text))
-        {
-            var wordCount = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
-            if (wordCount > MaxSentenceWords)
-            {
-                violations.Add(new ProseViolation
-                {
-                    Category = ProseViolationCategory.SentenceLength,
-                    Match = sentence.Length > 80 ? sentence[..80] + "…" : sentence,
-                    CharOffset = text.IndexOf(sentence, pos, StringComparison.Ordinal),
-                    Rule = $"Sentence is {wordCount} words (max {MaxSentenceWords})",
-                    Suggestion = "Split into two sentences",
-                });
-            }
-            pos = Math.Max(pos, text.IndexOf(sentence, pos, StringComparison.Ordinal) + sentence.Length);
-        }
-    }
-
-    private static IEnumerable<string> SplitSentences(string text)
-    {
-        var parts = SentenceEnd.Split(text);
-        return parts.Where(p => !string.IsNullOrWhiteSpace(p)).Select(p => p.Trim());
-    }
 
     private static void CheckPatterns(
         string text,
