@@ -1575,10 +1575,11 @@ it. Pallor's interest at Three Points is primarily maritime: the shipping lanes 
 their fjords to Verlaine's river ports.
 
 The Champion who is affiliated with Pallor but not sworn to it came there for reasons they
-have not explained. They were elsewhere for a long time. They are here now. The Warrior King
-has made the assessment that whatever the Champion is waiting for, it is the same thing the
-Warrior King is waiting for. They have been at the same map table for eleven years without
-naming what they're both watching.
+have not explained, and sat at the same map table as the Warrior King for eleven years before
+his rotation into the Gate posting came due. The Warrior King had made the assessment that
+whatever the Champion was waiting for, it was the same thing the Warrior King was waiting for.
+Eleven years, and neither had ever named what they were both watching. The King does not yet
+know the posting cost him his Champion. Word travels slower than the Gate does.
 
 **What Pallor represents:** The institution that endures. The warrior culture that has
 survived cold, absorption, and watching the Entos's coalitions cycle through three generations
@@ -1732,14 +1733,18 @@ Pallor Station — mid-tier apparatus. Strategically valuable not for what it ca
 the membrane but for who is affiliated with it. Their Warrior King has been at the map table
 longer than any other living person, has watched coalition alignments cycle through three
 generations, and has stayed quiet about what they remember. A Champion is affiliated — not
-sworn, not commanded. No House owns a Champion. This one completed the arc from designation
-to name long ago and has not moved on.
+sworn, not commanded. No House owns a Champion. Vaen completed the arc from designation to name
+long ago, sat at Pallor Station eleven years, and had at last rotated out to Pallor's year-long
+tour at Eirene's Gate — the posting that falls to a House clear of active campaign, and Pallor
+has been clear of one for longer than most.
 
-**The fault line:** Both coalition anchors are quietly asking: what are they waiting for? What
-does someone who has been fighting this war long enough to remember its original shape know that
-makes staying at Pallor Station the correct move? No one has asked them directly. They have not
-volunteered. The Warrior King who also remembers has stayed quiet for the same reason the other
-Houses have not asked: they are afraid of the answer.
+**The fault line:** Both coalition anchors spent eleven years quietly asking: what was he
+waiting for? What did someone who had been fighting this war long enough to remember its
+original shape know that made staying at Pallor Station the correct move? No one asked him
+directly. He never volunteered. The Warrior King, who also remembers, stayed quiet for the same
+reason the other Houses never asked: they were afraid of the answer. The question is still open.
+The man who might have answered it did not survive his rotation, and the Long Seat does not know
+it yet.
 
 ---
 
@@ -1944,6 +1949,48 @@ have accumulated past the point where any designation means anything.
 
 **Champions — the Queens on the board:** No House owns one. No House commands one. Houses court
 them. They do not negotiate with Houses the way Houses negotiate with each other.
+
+**Exactly one living Champion per House.** The Liturgy will not sanction a second concurrent
+course of Champion-tier infusions for a House that already holds one. Doctrine calls a standing
+corps of them a desecration; the unspoken reason is more practical — the Silence has never been
+willing to find out what an army of the physically ascendant does to the balance the Compact
+maintains. A House that lost its restraint and grew several would not be fielding soldiers
+anymore. It would be fielding a different kind of problem, and the Liturgy that dosed them would
+own it.
+
+**The infusion course — the standard arc, when the Liturgy runs it clean.** Roughly one dose a
+year through the recipient's growth years — commonly from the mid-teens into the early thirties
+— for a total in the range of fifteen to twenty infusions, after which the frame stops answering
+further doses with growth and the course ends. What is being rebuilt is muscle, bone, and the
+metabolism that feeds both. **The mind is never the target and is never altered.** A Champion's
+temperament, judgment, memory, and plain intelligence are the same ones they walked in with at
+fourteen — this is doctrinally load-bearing, not incidental: a Catalyst capable of reshaping
+loyalty or judgment would be a weapon the Liturgy could use on itself, and the Silence has never
+authorized that risk even in principle. The gap between what a Champion's body can do and how a
+Champion thinks is not a flaw in the process. It is the process working as intended.
+
+**Duty rotation — why a Champion is ever standing at a border post instead of held in reserve.**
+A House actively engaged in a declared campaign keeps its Champion home — fielding an army
+without one against a House that has one is not a disadvantage, it is a rout waiting to be
+scheduled, and there is no image that empties a battle line faster than a thirteen-foot soldier
+tearing an armored man out of his line and throwing the body two hundred meters into the men
+behind him. Houses not currently committed to a campaign — or five years clear of their last one,
+whichever the Silence's ledger says comes first — rotate their Champion onto neutral, Liturgy-
+administered postings instead: Eirene's Gate chief among them. The posting runs House by House in
+sequence. Because a Loera corsair takes eight weeks each way from most Houses to the Gate, no
+House sends its Champion for a tour shorter than a year — anything less wastes more of the
+posting to travel than to duty. **Verlaine and Atrament, presently in declared war with each
+other, are both exempt from the rotation for the duration** — neither will spare the deterrent,
+and neither trusts the other not to notice the gap the day it opened.
+
+**Beast Men — the failure mode, and why Pallor has more of them.** The colloquial name, mostly
+heard in Pallor's own mouth, for a survived botched infusion: the bestial, unguided Transmutation
+outcome (see *Negative Transmutation*, above) rather than the controlled Champion arc. Every
+House produces some. Pallor produces proportionally more, because Pallor's warrior culture is the
+least restrictive of any House about who gets dosed and how many risks a Lector is permitted to
+take chasing the next ascendant soldier. The Long Seat has never moved to tighten this. A culture
+built on outlasting everything that came for it does not, on the whole, consider a higher failure
+rate a cost worth arguing about.
 
 ---
 
