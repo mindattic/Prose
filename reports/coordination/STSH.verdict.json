@@ -1,0 +1,670 @@
+{
+  "nodeCode": "STSH",
+  "generatedAtUtc": "2026-07-25 17:43:51Z",
+  "beatsScanned": 43,
+  "cleanBeats": 9,
+  "totalFindings": 65,
+  "bySeverity": {
+    "BLOCKER": 2,
+    "MODERATE": 17,
+    "MINOR": 46
+  },
+  "byType": {
+    "MEANING-MISMATCH": 13,
+    "CLICHE": 7,
+    "GRIPE": 37,
+    "CONTRADICTION": 8
+  },
+  "findings": [
+    {
+      "BeatId": "2515af07-6303-4a5d-bab2-8adbebe1b0b2",
+      "Number": 5012,
+      "Chapter": "Chapter 1 \u2014 The Dispensary",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "BLOCKER",
+      "Quote": "The job isn\u0027t the payment.",
+      "Note": "The stated purpose requires this exact line to appear as spoken dialogue with Femi\u0027s confusion and repeated question about pay; the prose never has Femi ask if they\u0027re getting paid, never has Stash say this line, and never shows Femi\u0027s non-comprehension. The beat as written omits the entire scripted exchange.",
+      "Fix": "Add the dialogue beat: Femi asks \u0027We getting paid for this?\u0027 Stash answers \u0027The job isn\u0027t the payment,\u0027 and Femi visibly doesn\u0027t follow, per the brief."
+    },
+    {
+      "BeatId": "39fe80a5-176c-4863-881e-fc040eb6304d",
+      "Number": 5043,
+      "Chapter": "Chapter 10 \u2014 All Is Lost",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "BLOCKER",
+      "Quote": "The prose cuts off before showing her watch Scalpel take the drive or her failure to retrieve it",
+      "Note": "The beat\u0027s core requirement \u2014 she watches Scalpel take the drive, cannot retrieve it, leaves without it \u2014 never occurs in the excerpt. Instead the text is entirely setup/backstory about the clinic\u0027s history and the journey there, so the actual All Is Lost moment is missing.",
+      "Fix": "Include the actual scene of watching Scalpel take the drive and her decision to leave without it."
+    },
+    {
+      "BeatId": "dd62fe12-a5d2-40e9-aa54-b4bc32564e13",
+      "Number": 5014,
+      "Chapter": "Chapter 2 \u2014 The Runner",
+      "Type": "CLICHE",
+      "Severity": "MODERATE",
+      "Quote": "each breath has become a decision, careful and rationed",
+      "Note": "",
+      "Fix": "Replace with a more concrete clinical observation, e.g. counting her respiration rate or a specific physical tell."
+    },
+    {
+      "BeatId": "3cf12ac5-9ad5-41ad-9b03-ba016437425a",
+      "Number": 5017,
+      "Chapter": "Chapter 3 \u2014 The Implant",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "She thinks about a woman who spent eleven years learning how not to be stopped. She thinks about what it takes to walk into a clinic at midnight knowing the thing in your chest has a nine-percent chance of killing you, and to decide that the nine percent is yours to carry.",
+      "Note": "",
+      "Fix": "cut or ground in a specific remembered detail from the case rather than abstracted admiration"
+    },
+    {
+      "BeatId": "3cf12ac5-9ad5-41ad-9b03-ba016437425a",
+      "Number": 5017,
+      "Chapter": "Chapter 3 \u2014 The Implant",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "\u0022DOA?\u0022 the man asks.\n\n\u0022Yes,\u0022 she says.",
+      "Note": "",
+      "Fix": "the lie itself lands correctly, but the beat\u0027s stated weight (\u0022devastating in its ease\u0022) isn\u0027t carried by any following interiority \u2014 add a beat showing Femi\u0027s absence/reaction register, or a flicker of cost in Stash immediately after, since Femi is stated to watch but is not present in this version of the scene"
+    },
+    {
+      "BeatId": "532c9cd8-7af6-4729-9b32-dd3b1e16abe2",
+      "Number": 5019,
+      "Chapter": "Chapter 3 \u2014 The Implant",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "She calls Halcyon\u0027s security bureau, tells them what she found, hands over the container.",
+      "Note": "Purpose specifies she calls Chit and the beat should center on that call and his dialogue (\u0027Don\u0027t open it here...Yes you were\u0027), but the actual call to Chit and his lines never appear in the prose \u2014 the beat cuts off before it, replaced entirely by her solitary deliberation.",
+      "Fix": "Include the call to Chit and his four-second silence plus the specified dialogue before the beat ends."
+    },
+    {
+      "BeatId": "0c4f4e40-59d6-4caa-b84e-0d8b72633e3b",
+      "Number": 5020,
+      "Chapter": "Chapter 4 \u2014 Break into Two",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "She tells Femi at 0630 the next morning.",
+      "Note": "Later the text says \u0027She has been lying to him for eight hours,\u0027 which is inconsistent with a lie told at 0630 unless significant time has passed within the same beat without indication \u2014 the eight-hour claim reads as a continuity slip rather than earned elapsed time.",
+      "Fix": "Either specify the later time of the reflection explicitly or adjust the hour count to match the beat\u0027s timeframe."
+    },
+    {
+      "BeatId": "28d47fd3-0fe5-4cae-a965-080f6b0fbcc1",
+      "Number": 5023,
+      "Chapter": "Chapter 4 \u2014 Break into Two",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "\u0022If the governor protocol gets suspended,\u0022 she says, \u0022the twelve hundred people whose neuretics need it -",
+      "Note": "The beat requires Chit to state the implant\u0027s dollar value and Stash to tell him that\u0027s not the relevant number. The prose never gives a monetary figure at all, and cuts off before Stash can make her stated point, so the beat\u0027s core exchange is missing entirely.",
+      "Fix": "Include Chit naming a concrete valuation for the implant/data and have Stash\u0027s line explicitly reject money as the relevant metric before the fragment cuts."
+    },
+    {
+      "BeatId": "79c620ac-f1c3-4f15-b7fc-df2c22538323",
+      "Number": 5025,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "I found Jude Adeyemi in an anonymized personnel roster",
+      "Note": "The beat explicitly states Renata \u0027does not say Stash\u0027s name yet\u0027 and that \u0027the omission is becoming conspicuous\u0027 \u2014 but the prose has her say the name \u0027Jude Adeyemi\u0027 outright, directly contradicting the stated purpose.",
+      "Fix": "Remove the name; keep her identified only by contract reference number and role, per the beat\u0027s intent."
+    },
+    {
+      "BeatId": "9feaf9d5-16e9-4a01-b5a6-6301c1168235",
+      "Number": 5026,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "She checks now, at 1847, because she\u0027s starting to feel the pull of having left her patients in an empty clinic too long.",
+      "Note": "The beat calls for her reaction to be identified only as \u0027a pressure deficit in the chest,\u0027 not named as an emotional pull/worry. The prose never delivers that specific somatic, mislabeled-sensation detail anywhere in the piece, so the beat\u0027s key emotional-suppression mechanism is absent.",
+      "Fix": "Add a line late in the beat describing the physical sensation (chest pressure) without naming it as grief, per the beat\u0027s specification."
+    },
+    {
+      "BeatId": "06a04c7a-c627-464f-9180-6cbf53336336",
+      "Number": 5027,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "He\u0027s been plain about what he wants since their first year, and the plainness has always been worth more than the lack of it would be.",
+      "Note": "Aphoristic filler that tells us the theme instead of letting the preceding dialogue carry it; borders on pseudo-profound.",
+      "Fix": "Cut or replace with a concrete memory/detail illustrating his plainness."
+    },
+    {
+      "BeatId": "06a04c7a-c627-464f-9180-6cbf53336336",
+      "Number": 5027,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "Eleven years. He always names his rate. And he always tells you the thing you didn\u0027t pay him for -- the part that fails, the risk buried in the paperwork -- because he read the documents and you didn\u0027t. That second kind of honesty is why she still takes his calls.",
+      "Note": "Summarizing narration that restates character trait already dramatized in the scene; reads as authorial explanation rather than lived thought.",
+      "Fix": "Trim to a single concrete beat or cut entirely, letting the dialogue stand on its own."
+    },
+    {
+      "BeatId": "4d1c9278-ab82-45da-9e7e-99bed8227ae7",
+      "Number": 5028,
+      "Chapter": "Chapter 6 \u2014 Fun and Games: NSB",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "Stash reads the records with her hands flat on the workbench.",
+      "Note": "Purpose specifies her hands are \u0027completely still, which is not normal for her\u0027 \u2014 the prose states hands are flat but never establishes the contrast to her normal fidgeting/movement, so the intended unease-signal is lost.",
+      "Fix": "Add a line contrasting this stillness with her usual restlessness, e.g. \u0027Her hands don\u0027t drum the table the way they always do. She notices the absence before she notices why.\u0027"
+    },
+    {
+      "BeatId": "bd689bd5-3cd3-4040-be65-41fadedbd8b0",
+      "Number": 5031,
+      "Chapter": "Chapter 6 \u2014 Fun and Games: NSB",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "Then that\u0027s what the data says.\u0022",
+      "Note": "Beat requires Lydia\u0027s exact closing line \u0027They\u0027re already dead\u0027 about the 428 records; the excerpt cuts off before the 428 figure or that line appears at all, so the stated purpose is not delivered on the page.",
+      "Fix": "Include Stash\u0027s question about the 428 records and Lydia\u0027s verbatim reply \u0027They\u0027re already dead.\u0027"
+    },
+    {
+      "BeatId": "e196cf5b-ff87-4618-a03e-15019a92723f",
+      "Number": 5032,
+      "Chapter": "Chapter 7 \u2014 Midpoint",
+      "Type": "CLICHE",
+      "Severity": "MODERATE",
+      "Quote": "Her throat tightens, brief and nameless. She breathes through it.",
+      "Note": "Stock somatic shorthand for suppressed emotion, close to the heartbeat-in-throat clich\u00E9 the house style flags.",
+      "Fix": "Cut, or replace with a concrete, specific physical detail unique to Stash."
+    },
+    {
+      "BeatId": "dae7b7af-c376-4287-ba1f-0709dae8b314",
+      "Number": 5033,
+      "Chapter": "Chapter 7 \u2014 Midpoint",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "They already ran the rest of it an hour ago -- not a defense, for the law it is, she isn\u0027t thinking about the law. Neither of them says any of it again.",
+      "Note": "The beat specifies this exact exchange (\u0027That\u0027s not a defense\u0027 / \u0027For the law it is\u0027 / she isn\u0027t thinking about the law) should be shown as dialogue; instead it is reported as having already happened offscreen and summarized in fragment form, undercutting the requested beat.",
+      "Fix": "Play the exchange directly in dialogue rather than summarizing it as already-past and paraphrased."
+    },
+    {
+      "BeatId": "bfbcdb4e-1a06-47a9-b2de-fadca483c50d",
+      "Number": 5045,
+      "Chapter": "Chapter 11 \u2014 Dark Night of the Soul",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "By the time Femi shows her the six-digit code from his building authority contact, the handset is at 22%. He reads it to her twice. She memorizes it. At 26%, she has about thirty minutes of battery left.",
+      "Note": "Battery percentage rises from 22% to 26% with no charging event mentioned in between (the pack was only introduced charging in the prior beat, but here the sequence implies passive increase during dialogue), reading as an error rather than intentional charging beat.",
+      "Fix": "Clarify continuous charging explicitly, e.g. \u0027still charging, now at 26%\u0027 to remove ambiguity."
+    },
+    {
+      "BeatId": "4b3b10c6-a22b-4857-a061-bb05e5dcede2",
+      "Number": 5046,
+      "Chapter": "Chapter 11 \u2014 Dark Night of the Soul",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "I\u0027m not asking you to fix it because you owe it. I\u0027m asking you because you can. That distinction matters.",
+      "Note": "This exact line, specified as essential to the beat\u0027s purpose, does not appear in the actual Fragment Six prose shown (ref 2) or is referenced only obliquely here \u2014 the core distinction Renata is meant to state is missing from the delivered content.",
+      "Fix": "Ensure the fragment dialogue in ref 2 includes this exact distinction verbatim, or reference it directly in this beat\u0027s recap."
+    },
+    {
+      "BeatId": "051be52a-d070-4756-a0f5-f87ad2d1c369",
+      "Number": 5051,
+      "Chapter": "Chapter 12 \u2014 Break into Three",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "She keys in the code his contact gave them \u2014 the building authority emergency override, which skips the primary code and runs on the secondary channel. Nothing. She keys it again. The lock disengages",
+      "Note": "The code is described as an override that \u0027skips the primary code and runs on the secondary channel,\u0027 which implies a direct, reliable path \u2014 but it fails on first entry with no stated cause, undercutting the mechanic just established.",
+      "Fix": "Add a concrete reason for the first failure, e.g. a mistyped digit or a lag in the secondary channel, so the retry reads as explained rather than arbitrary."
+    },
+    {
+      "BeatId": "21e9242a-159e-4dd3-9156-791eeb189631",
+      "Number": 5011,
+      "Chapter": "Chapter 1 \u2014 The Dispensary",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she knows its moods the way you know a friend\u0027s bad shoulder",
+      "Note": "",
+      "Fix": "Cut the simile or replace with a mechanical detail: \u0027she knows its failure window down to the minute.\u0027"
+    },
+    {
+      "BeatId": "2515af07-6303-4a5d-bab2-8adbebe1b0b2",
+      "Number": 5012,
+      "Chapter": "Chapter 1 \u2014 The Dispensary",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the general shape of a supply chain that has been quietly starving for two months",
+      "Note": "",
+      "Fix": "Replace vague abstraction with a concrete inventory detail consistent with the piece\u0027s precise style."
+    },
+    {
+      "BeatId": "dd62fe12-a5d2-40e9-aa54-b4bc32564e13",
+      "Number": 5014,
+      "Chapter": "Chapter 2 \u2014 The Runner",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "as if saying it twice makes it stick",
+      "Note": "",
+      "Fix": "Cut the explanatory clause; let the repetition speak for itself."
+    },
+    {
+      "BeatId": "dd62fe12-a5d2-40e9-aa54-b4bc32564e13",
+      "Number": 5014,
+      "Chapter": "Chapter 2 \u2014 The Runner",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "One second is all she gives herself for the fact of being known",
+      "Note": "",
+      "Fix": "Show this through a physical beat (a held breath, a glance) rather than naming the allowance directly."
+    },
+    {
+      "BeatId": "d9c37aae-8e8a-45cb-80d6-f474920ffdef",
+      "Number": 5015,
+      "Chapter": "Chapter 2 \u2014 The Runner",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "each one placed like a person who knows there is no fixing it if she gets it wrong",
+      "Note": "",
+      "Fix": "cut the simile; it describes the stitcher, not the stitch, and states the stakes rather than showing the care"
+    },
+    {
+      "BeatId": "d9c37aae-8e8a-45cb-80d6-f474920ffdef",
+      "Number": 5015,
+      "Chapter": "Chapter 2 \u2014 The Runner",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a kind of smarts that shows up in what a person does, not what they say",
+      "Note": "",
+      "Fix": "cut or replace with a concrete beat of Femi anticipating a specific instrument"
+    },
+    {
+      "BeatId": "03b5aa26-d70e-45fd-b24f-da2cdf899e35",
+      "Number": 5016,
+      "Chapter": "Chapter 2 \u2014 The Runner",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "They work in the silence of two people who both know they are performing a ritual, not saving a life, and that the ritual has to be finished anyway, because stopping short of eight minutes is its own kind of failure, one worse than the one already here.",
+      "Note": "",
+      "Fix": "trim to the concrete action and cut the aphoristic double-negative reasoning about failure"
+    },
+    {
+      "BeatId": "03b5aa26-d70e-45fd-b24f-da2cdf899e35",
+      "Number": 5016,
+      "Chapter": "Chapter 2 \u2014 The Runner",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Her hands don\u0027t need washing. The washing is just something to do with them while the rest of her works slower.",
+      "Note": "",
+      "Fix": "keep the image but cut the explanatory second sentence \u2014 let the washing speak for itself"
+    },
+    {
+      "BeatId": "3cf12ac5-9ad5-41ad-9b03-ba016437425a",
+      "Number": 5017,
+      "Chapter": "Chapter 3 \u2014 The Implant",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She thinks: I wasn\u0027t ready for her. She thinks: she counted on that.",
+      "Note": "",
+      "Fix": "cut one of the two mirrored lines; the doubling reads as a rhetorical flourish rather than earned reflection"
+    },
+    {
+      "BeatId": "afc52337-e09a-471f-81cf-80f68d16c38b",
+      "Number": 5018,
+      "Chapter": "Chapter 3 \u2014 The Implant",
+      "Type": "CONTRADICTION",
+      "Severity": "MINOR",
+      "Quote": "She studies it the way she studies any device she needs to understand before she touches it much \u2014 from above, from the sides, at the two contact points. The vibration she felt inside the chest doesn\u0027t carry in the room. She can only feel it, two fingers on the shell.",
+      "Note": "",
+      "Fix": "clarify sequence \u2014 she\u0027s described observing without touching, then immediately touching with two fingers; smooth the transition so it doesn\u0027t read as touching before she touches"
+    },
+    {
+      "BeatId": "afc52337-e09a-471f-81cf-80f68d16c38b",
+      "Number": 5018,
+      "Chapter": "Chapter 3 \u2014 The Implant",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she quit because something felt wrong in a way she couldn\u0027t name, and naming it would have meant looking at things she wasn\u0027t ready to look at",
+      "Note": "",
+      "Fix": "cut the circular phrasing; state one concrete thing she noticed instead of gesturing at unnamed wrongness"
+    },
+    {
+      "BeatId": "532c9cd8-7af6-4729-9b32-dd3b1e16abe2",
+      "Number": 5019,
+      "Chapter": "Chapter 3 \u2014 The Implant",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She counts the options over the way she counts a supply tray.",
+      "Note": "Simile is serviceable but slightly undercuts the tension with a mundane, slightly pat comparison.",
+      "Fix": "Cut the simile or replace with something sharper to her state of mind."
+    },
+    {
+      "BeatId": "0c4f4e40-59d6-4caa-b84e-0d8b72633e3b",
+      "Number": 5020,
+      "Chapter": "Chapter 4 \u2014 Break into Two",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Something pulls tight under her breastbone and stays there",
+      "Note": "Stock somatic shorthand for suppressed emotion.",
+      "Fix": "Replace with a more specific, less familiar physical detail."
+    },
+    {
+      "BeatId": "0c4f4e40-59d6-4caa-b84e-0d8b72633e3b",
+      "Number": 5020,
+      "Chapter": "Chapter 4 \u2014 Break into Two",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "there\u0027s a ventilation problem in the surgical suite \u2014 a crack in the upper wall",
+      "Note": "Purpose specifies the cover story is a ventilation problem justifying a supply run to Z-5; instead the errand is sent to Bloom Quarter/West Town for a repair quote and adhesive, not the specified three-day supply run to a Z-5 contact.",
+      "Fix": "Align the errand\u0027s destination and duration with the stated purpose (three-day run to Z-5 contact) rather than a same-day Bloom Quarter/West Town task."
+    },
+    {
+      "BeatId": "b9368de3-f7ba-4d46-ba24-c4a507c85c0e",
+      "Number": 5021,
+      "Chapter": "Chapter 4 \u2014 Break into Two",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "\u0022Because MidNorth Medical tried to hire me to find one four months ago.\u0022",
+      "Note": "Purpose specifies this exact line as his answer to \u0027how do you know this,\u0027 but in the prose the MidNorth Medical explanation is delivered as a separate topic shift (\u0027Now,\u0027 he says. \u0027MidNorth Medical.\u0027) rather than a direct answer to a question about how he identified the device\u0027s model/range/placement significance.",
+      "Fix": "Have Stash ask directly how he knows the device details, and have his MidNorth Medical line answer that question rather than opening a new subject."
+    },
+    {
+      "BeatId": "d7016c88-fb45-4115-946a-b9bebaaf0e62",
+      "Number": 5022,
+      "Chapter": "Chapter 4 \u2014 Break into Two",
+      "Type": "CONTRADICTION",
+      "Severity": "MINOR",
+      "Quote": "a financial compliance officer at Sable Industries MedTech from 2209 to 2214. In 2211, I was assigned",
+      "Note": "Purpose states dates as 2009-2014 and assignment in 2011, but the prose uses 2209-2214 and 2211; likely an intentional future-dating consistent with in-world chronology, but flagged since it diverges from the purpose\u0027s stated years without clear signal it\u0027s a translation of era rather than an error.",
+      "Fix": "Confirm the four-digit century-shifted dates are intentional worldbuilding and not a slip from the beat\u0027s stated (unshifted) years; if intentional, no change needed."
+    },
+    {
+      "BeatId": "ef4b6fba-8d93-4169-882e-d6d5282aeaba",
+      "Number": 5024,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It\u0027s the same skill as waiting in a quiet recovery room while a body decides which way it\u0027s going to go -- being still and awake at the same time.",
+      "Note": "Purple analogy that tells us Stash\u0027s skill rather than showing it in scene; slightly overwrought for a simple beat of her watching a screen.",
+      "Fix": "Cut or compress to a plainer line, e.g. \u0027She\u0027s good at waiting without needing anything back.\u0027"
+    },
+    {
+      "BeatId": "ef4b6fba-8d93-4169-882e-d6d5282aeaba",
+      "Number": 5024,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The device does the one thing it was built to do, over and over, without tiring, without stopping to ask whether it should.",
+      "Note": "Editorializing personification that veers toward a stock \u0027machines don\u0027t feel\u0027 aphorism, slightly undercutting the tense technical beat.",
+      "Fix": "Trim to the concrete fact: \u0027The device keeps broadcasting, unattended, indifferent.\u0027"
+    },
+    {
+      "BeatId": "79c620ac-f1c3-4f15-b7fc-df2c22538323",
+      "Number": 5025,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "CONTRADICTION",
+      "Severity": "MINOR",
+      "Quote": "The second fragment is from 2219. Eleven months after the first.",
+      "Note": "Beat purpose specifies this is the 2019 diary entry (likely a typo for 2219 in the beat text, but as given it\u0027s a mismatch worth flagging), and later \u0027I\u0027ve been researching her for eight months\u0027 plus \u0027I\u0027ve been trying to find the right person for three years\u0027 don\u0027t reconcile cleanly with \u00272018\u0027 start and \u00272211 contract\u0027 timeline given elsewhere \u2014 the accumulated timeframe math (three years searching vs. eight months researching this specific person) is left unresolved within the beat.",
+      "Fix": "Clarify the timeline: specify when the three-year search began relative to the eight-month research on this individual so the durations don\u0027t imply overlap contradictions."
+    },
+    {
+      "BeatId": "9feaf9d5-16e9-4a01-b5a6-6301c1168235",
+      "Number": 5026,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way she watches a patient\u0027s vitals when she can\u0027t be in the room",
+      "Note": "A functional-but-flat comparison that states the analogy rather than dramatizing it; borders on filler explanation.",
+      "Fix": "Cut the simile or replace with a more specific concrete detail of her habitual monitoring."
+    },
+    {
+      "BeatId": "06a04c7a-c627-464f-9180-6cbf53336336",
+      "Number": 5027,
+      "Chapter": "Chapter 5 \u2014 Fun and Games",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "There\u0027s a version of this where she\u0027d be offended he\u0027s thinking about money. She\u0027s not in that version.",
+      "Note": "Clunky abstraction stating the emotional beat rather than dramatizing it; the \u0027version\u0027 conceit is more clever-sounding than clarifying.",
+      "Fix": "Cut the meta-framing; show her reaction directly, e.g. \u0027She isn\u0027t offended. She\u0027s relieved someone is finally being honest about the transaction.\u0027"
+    },
+    {
+      "BeatId": "4d1c9278-ab82-45da-9e7e-99bed8227ae7",
+      "Number": 5028,
+      "Chapter": "Chapter 6 \u2014 Fun and Games: NSB",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It\u0027s the clarity that comes when a problem is big enough to fill your whole attention and leave nothing over for the body.",
+      "Note": "Explains the sensation in abstract, slightly aphoristic terms rather than showing it physically.",
+      "Fix": "Replace with a concrete physical detail, e.g. \u0027Her hands don\u0027t shake. Her eyes don\u0027t burn. There\u0027s just the screen.\u0027"
+    },
+    {
+      "BeatId": "bd689bd5-3cd3-4040-be65-41fadedbd8b0",
+      "Number": 5031,
+      "Chapter": "Chapter 6 \u2014 Fun and Games: NSB",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Lydia takes the directness and seems to approve of it.",
+      "Note": "Tells the reader her reaction instead of showing it through action or dialogue.",
+      "Fix": "Cut the summary or replace with a physical beat (a nod, a slight relaxation of posture)."
+    },
+    {
+      "BeatId": "e196cf5b-ff87-4618-a03e-15019a92723f",
+      "Number": 5032,
+      "Chapter": "Chapter 7 \u2014 Midpoint",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "This is like looking at a photograph of yourself somewhere you don\u0027t remember being, doing something you don\u0027t remember",
+      "Note": "Purple simile that trails off and restates the same idea (not remembering) twice without adding precision.",
+      "Fix": "Tighten to a single concrete image or cut the repetition of \u0027don\u0027t remember.\u0027"
+    },
+    {
+      "BeatId": "dae7b7af-c376-4287-ba1f-0709dae8b314",
+      "Number": 5033,
+      "Chapter": "Chapter 7 \u2014 Midpoint",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It\u0027s also true and incomplete at the same time.",
+      "Note": "Vague aphoristic hedge that doesn\u0027t specify what\u0027s incomplete about it; reads as filler philosophizing.",
+      "Fix": "Replace with a concrete specification of what the truth fails to cover."
+    },
+    {
+      "BeatId": "4989806b-5a6b-4c9b-9292-62dbe67a99e4",
+      "Number": 5035,
+      "Chapter": "Chapter 8 \u2014 Bad Guys Close In",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Take the system apart, list what it does, then decide how to handle it. It\u0027s the only way she knows how to work.",
+      "Note": "Telling-not-showing a character trait as flat exposition rather than dramatized behavior.",
+      "Fix": "Cut the second sentence; let the method speak for itself."
+    },
+    {
+      "BeatId": "4989806b-5a6b-4c9b-9292-62dbe67a99e4",
+      "Number": 5035,
+      "Chapter": "Chapter 8 \u2014 Bad Guys Close In",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the way a man packs when he\u0027s had to clear out of a room in a hurry before",
+      "Note": "Vague tough-guy backstory gesture, stock characterization shorthand.",
+      "Fix": "Cut or replace with a concrete detail specific to Chit."
+    },
+    {
+      "BeatId": "09865551-303e-4cf9-9409-c0da8caad18c",
+      "Number": 5036,
+      "Chapter": "Chapter 8 \u2014 Bad Guys Close In",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Like someone who has finally stopped moving and sat down, and found that sitting down didn\u0027t bring the relief she expected.",
+      "Note": "Explains the emotional subtext directly rather than trusting the visual, slightly over-glossing the \u0027settled tired\u0027 image already given.",
+      "Fix": "Cut the clause after \u0027sat down\u0027 and let the visual carry it."
+    },
+    {
+      "BeatId": "09865551-303e-4cf9-9409-c0da8caad18c",
+      "Number": 5036,
+      "Chapter": "Chapter 8 \u2014 Bad Guys Close In",
+      "Type": "CONTRADICTION",
+      "Severity": "MINOR",
+      "Quote": "The timestamp reads 2223-04-07.",
+      "Note": "This places the diary fragment two centuries after the story\u0027s present-day setting (2214-2218 elsewhere), inconsistent with prior fragments\u0027 internal chronology implied by other date references in the book (2211, 2214, 2218) which all sit in the 22nd-century-but-close range; the leap to 2223 vs. earlier clinic dates of 2218 is fine, but the year prefix \u002722\u0027 vs \u00272223\u0027 reads as a likely typo for 2023 per the purpose text.",
+      "Fix": "Confirm intended date; if diary is meant to be a 2023-style \u0027first time in daylight\u0027 per the purpose slug, fix timestamp to match the internal calendar consistently (e.g., 2216 or whatever precedes the frame chronology)."
+    },
+    {
+      "BeatId": "f2d0deca-b9c0-46b4-ad05-57e1c0e1b3ac",
+      "Number": 5037,
+      "Chapter": "Chapter 8 \u2014 Bad Guys Close In",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "holding himself in like a man who conserves everything, even the space he takes up",
+      "Note": "Overworked tough-authority-figure imagery, borders on purple describing restraint via strained metaphor.",
+      "Fix": "Simplify: \u0027He moved like a man who never wasted anything.\u0027"
+    },
+    {
+      "BeatId": "f2d0deca-b9c0-46b4-ad05-57e1c0e1b3ac",
+      "Number": 5037,
+      "Chapter": "Chapter 8 \u2014 Bad Guys Close In",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The authority in him has nothing to do with size.",
+      "Note": "Aphoristic filler statement telling us how to read the character rather than showing it through action.",
+      "Fix": "Cut the sentence; the preceding description already implies this."
+    },
+    {
+      "BeatId": "f2d0deca-b9c0-46b4-ad05-57e1c0e1b3ac",
+      "Number": 5037,
+      "Chapter": "Chapter 8 \u2014 Bad Guys Close In",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "with the face of a man taking an acceptable loss. Not the one he wanted. The one he can live with.",
+      "Note": "Overwritten inner-state narration for a background character (Brauer) observed by Chit; reads as authorial flourish rather than earned characterization.",
+      "Fix": "Cut to: \u0027Brauer studied the loss without expression.\u0027"
+    },
+    {
+      "BeatId": "2f0c0a7d-3a50-4e93-9014-ed285b0cfd40",
+      "Number": 5038,
+      "Chapter": "Chapter 9 \u2014 Bad Guys Close In: NSB",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "for reasons that are getting clearer than they have ever been",
+      "Note": "Vague announcement of insight without content; tells us realization is happening rather than delivering it.",
+      "Fix": "Cut and let the following paragraph\u0027s explanation stand alone."
+    },
+    {
+      "BeatId": "2f0c0a7d-3a50-4e93-9014-ed285b0cfd40",
+      "Number": 5038,
+      "Chapter": "Chapter 9 \u2014 Bad Guys Close In: NSB",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "her hands are her one real tool and their state matters",
+      "Note": "Explanatory aphorism stating the theme directly rather than trusting the action of checking her hands.",
+      "Fix": "Cut the clause; \u0027she checks this on purpose\u0027 already conveys it."
+    },
+    {
+      "BeatId": "39fe80a5-176c-4863-881e-fc040eb6304d",
+      "Number": 5043,
+      "Chapter": "Chapter 10 \u2014 All Is Lost",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "how rooms shrink between visits, and it isn\u0027t the room that changed",
+      "Note": "A stock reflective aphorism about memory/nostalgia that reads as filler wisdom rather than earned observation.",
+      "Fix": "Cut or ground it in a specific physical detail instead of a general truism."
+    },
+    {
+      "BeatId": "2bcd27d0-146f-426a-ad14-5b4ede71460f",
+      "Number": 5044,
+      "Chapter": "Chapter 10 \u2014 All Is Lost",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Right isn\u0027t the same as easy to carry.",
+      "Note": "Aphoristic one-liner that tips into pseudo-profound territory, summarizing the emotion rather than showing it.",
+      "Fix": "Cut the line and let the preceding action (leaving the records) carry the weight."
+    },
+    {
+      "BeatId": "2bcd27d0-146f-426a-ad14-5b4ede71460f",
+      "Number": 5044,
+      "Chapter": "Chapter 10 \u2014 All Is Lost",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Her hands are shaking, and it isn\u0027t the cold.",
+      "Note": "Stock physical-symptom-of-emotion construction (\u0022it isn\u0027t the cold\u0022) is a familiar shorthand.",
+      "Fix": "Specify what it is instead of negating the obvious explanation."
+    },
+    {
+      "BeatId": "4b3b10c6-a22b-4857-a061-bb05e5dcede2",
+      "Number": 5046,
+      "Chapter": "Chapter 11 \u2014 Dark Night of the Soul",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "it will sit in her chest like fluid that needs draining",
+      "Note": "Clinical-metaphor-as-purple-image; reads as reaching for a medical metaphor rather than earning the emotion, borderline strained given it\u0027s a simile built on jargon.",
+      "Fix": "Cut the simile; let the direct statement stand alone."
+    },
+    {
+      "BeatId": "ebb503c4-2671-49ba-952c-d53eee160ce7",
+      "Number": 5052,
+      "Chapter": "Chapter 13 \u2014 Finale: The Broadcast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "filling the dead silence with a steady mechanical push that feels almost like a welcome",
+      "Note": "Sentimental filler personification that tells us how to feel about ambient noise rather than showing anything concrete.",
+      "Fix": "Cut \u0022that feels almost like a welcome\u0022 or replace with a plainer physical detail."
+    },
+    {
+      "BeatId": "ebb503c4-2671-49ba-952c-d53eee160ce7",
+      "Number": 5052,
+      "Chapter": "Chapter 13 \u2014 Finale: The Broadcast",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "The warmth is what is left.",
+      "Note": "Aphoristic closer that trends toward stock pseudo-profundity, echoing a familiar grief-object clich\u00E9 (the keepsake that retains warmth/life).",
+      "Fix": "Cut the line or ground it in a more specific, less generic image."
+    },
+    {
+      "BeatId": "ebb503c4-2671-49ba-952c-d53eee160ce7",
+      "Number": 5052,
+      "Chapter": "Chapter 13 \u2014 Finale: The Broadcast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a thing built slowly to meet one exact thing in one exact place",
+      "Note": "Repetitive, slightly circular phrasing that gestures at meaning without adding new information beyond the preceding sentence.",
+      "Fix": "Tighten to avoid the double \u0027exact... exact\u0027 redundancy."
+    },
+    {
+      "BeatId": "292e0bea-426e-42fc-8242-f6785a5d64d9",
+      "Number": 5053,
+      "Chapter": "Chapter 13 \u2014 Finale: The Broadcast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She is a surgeon, not a fighter. The saw is a tool, not a weapon.",
+      "Note": "Tells the reader the meaning of the standoff explicitly right after the action has already shown it \u2014 redundant explanation undercutting the \u0027reads it correctly\u0027 beat.",
+      "Fix": "Cut one of the two sentences; let the physical staging carry the point alone."
+    },
+    {
+      "BeatId": "292e0bea-426e-42fc-8242-f6785a5d64d9",
+      "Number": 5053,
+      "Chapter": "Chapter 13 \u2014 Finale: The Broadcast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "He moves left, she moves to block, he moves right, steps past her reach, and continues to the panel.",
+      "Note": "Purpose specifies he \u0027reads the situation correctly and goes around her rather than through her\u0027 as a deliberate tactical read, but the choreography here reads as a quick physical juke/feint exchange, understating the deliberateness described just before it (\u0027she knows it is right\u0027).",
+      "Fix": "Slow the beat slightly to show the calculated stand-down, e.g. a beat of stillness before he chooses the wider arc, rather than a feint-and-slip."
+    },
+    {
+      "BeatId": "da97ac87-8b3c-4c1b-ac1d-916c8a02a020",
+      "Number": 5055,
+      "Chapter": "Chapter 13 \u2014 Finale: The Broadcast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the plain animal fact of thirst and water at the end of something large",
+      "Note": "Reaches for portentous universal-truth phrasing (\u0027plain animal fact\u0027) that tips toward telling-not-showing the significance rather than letting the shared bottle carry it.",
+      "Fix": "Cut the editorializing clause and end on the concrete action: \u0027He drinks the rest.\u0027"
+    },
+    {
+      "BeatId": "ecec137f-cbe2-4c90-b146-f6ea9fc8e73c",
+      "Number": 5057,
+      "Chapter": "Chapter 14 \u2014 Final Image",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "an obligation nobody asked for",
+      "Note": "",
+      "Fix": "cut the aside or fold it into the description without the editorializing tag"
+    },
+    {
+      "BeatId": "71cb2203-70f0-4339-a4db-fc07e46c982d",
+      "Number": 5058,
+      "Chapter": "Chapter 14 \u2014 Final Image",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Same jacket he wore six days ago, which is fine, which needs no comment.",
+      "Note": "",
+      "Fix": "cut the self-negating aside; if it needs no comment, don\u0027t comment"
+    }
+  ]
+}

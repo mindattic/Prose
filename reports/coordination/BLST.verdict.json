@@ -1,0 +1,440 @@
+{
+  "nodeCode": "BLST",
+  "generatedAtUtc": "2026-07-25 17:42:36Z",
+  "beatsScanned": 30,
+  "cleanBeats": 8,
+  "totalFindings": 42,
+  "bySeverity": {
+    "BLOCKER": 1,
+    "MODERATE": 6,
+    "MINOR": 35
+  },
+  "byType": {
+    "MEANING-MISMATCH": 9,
+    "CLICHE": 9,
+    "GRIPE": 23,
+    "CONTRADICTION": 1
+  },
+  "findings": [
+    {
+      "BeatId": "019f3ac8-397d-79ca-a9e8-0f755bb8f7fc",
+      "Number": 5085,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "BLOCKER",
+      "Quote": "\u0022Then why,\u0022 Prita asked, \u0022if not for her.\u0022",
+      "Note": "beat requires Prita to ask whether there\u0027s a difference between voting for the bloc\u0027s survival and voting for her daughter, and requires Dagny\u0027s silence in response \u2014 the excerpt ends with Dagny still explaining her reasoning at length, never reaching the \u0027is there a difference\u0027 question or the non-answer",
+      "Fix": "add Prita\u0027s direct question \u0027Is there a difference?\u0027 followed by Dagny\u0027s unanswered silence to fulfill the stated beat"
+    },
+    {
+      "BeatId": "019f3ac8-397d-73cf-a2c6-b8f550e5ea5e",
+      "Number": 5062,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "\u0022Current altitude, three hundred seventy-eight meters.\u0022",
+      "Note": "Beat 0 establishes altitude at 383 meters three months after a clean reading, and beat 1 confirms 382 meters posted \u0027this Monday.\u0027 Two days later (per this beat\u0027s own framing) the altitude has dropped to 378 \u2014 a 4-5 meter fall in roughly 48 hours, wildly inconsistent with the established \u0027close to a meter a day\u0027 rate.",
+      "Fix": "Adjust the figure to align with the established decay rate, e.g., 380 or 381 meters."
+    },
+    {
+      "BeatId": "019f3ac8-397d-760a-8e5b-5b39a6e2ceb8",
+      "Number": 5072,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "Sigrun walked a half-step behind them. She hadn\u0027t said much since the freight lock. She said something now.",
+      "Note": "Beat purpose requires Ruslan to state the six-week forced-descent deadline and no-payout consequence explicitly; the excerpt ends before he delivers those specifics, leaving the core informational content of the beat undelivered.",
+      "Fix": "Include Ruslan\u0027s explicit statement of the six-week window and the no-payout/relocation-cost consequence before the excerpt closes."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7bc6-bb85-247e016ffb37",
+      "Number": 5075,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MODERATE",
+      "Quote": "Family stays frozen at whatever age loved them most simply.",
+      "Note": "Pseudo-profound aphorism that reads as a generic truism inserted for weight, not earned by the scene.",
+      "Fix": "Cut or replace with a concrete observation specific to this grandson."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7bc6-bb85-247e016ffb37",
+      "Number": 5075,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "I know what a cohe",
+      "Note": "Beat cuts off mid-word before Wen\u0027s counter-argument that the workshop is worth staying for is delivered; the purpose requires Wen\u0027s rebuttal to land, but the text ends on the grandson\u0027s case only.",
+      "Fix": "Complete the exchange so Wen\u0027s stated reason for staying appears on the page."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7dbb-9cb7-6f09fa574f0d",
+      "Number": 5079,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MODERATE",
+      "Quote": "The room broke apart slowly, the way it always did now.",
+      "Note": "Repeated verbatim as bookend framing device, but the phrase itself is a generic scene-transition clich\u00E9 and the repetition reads as padding rather than intentional echo.",
+      "Fix": "Vary the second instance or cut the opening one; let the repetition do more specific work."
+    },
+    {
+      "BeatId": "019f3ac8-397d-79ca-a9e8-0f755bb8f7fc",
+      "Number": 5085,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "Prita suspected Dagny was closer to right than she wanted to admit.",
+      "Note": "the beat calls for Prita to ask \u0027is there a difference\u0027 and receive silence, but this line pre-empts/undercuts that beat by having Prita internally concede the point before the question is even asked, softening the intended confrontation",
+      "Fix": "cut this line and let the question land without prior concession"
+    },
+    {
+      "BeatId": "019f3ac8-394d-7849-a057-5b6af36d44cd",
+      "Number": 5059,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "like a held breath let out too slow",
+      "Note": "Breath-holding imagery for tension is a worn comparison, slightly undercutting the technical precision the passage otherwise establishes.",
+      "Fix": "Replace with a mechanically specific simile tied to the coherence lattice itself."
+    },
+    {
+      "BeatId": "019f3ac8-394d-7849-a057-5b6af36d44cd",
+      "Number": 5059,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It didn\u0027t speak unless asked, and this morning she hadn\u0027t asked. She liked that. It made no case for itself. It just held the ceiling she gave it.",
+      "Note": "The staccato abstraction (\u0027made no case for itself\u0027) tips into telling-not-showing Teo\u0027s temperament via the automaton rather than demonstrating it in action.",
+      "Fix": "Cut to one concrete beat of Almagre\u0027s behavior and let the characterization stay implicit."
+    },
+    {
+      "BeatId": "019f3ac8-397c-7e21-8b58-9e4b5317227c",
+      "Number": 5060,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "worn pale and smooth where a woman nobody remembered had steadied herself for thirty years before she died in her own bed",
+      "Note": "The unnamed-woman/handhold-as-memorial device is a familiar sentimental shorthand for communal history.",
+      "Fix": "Anchor the detail to something more specific and less elegiac, e.g., a named minor detail or wear pattern tied to a still-living resident."
+    },
+    {
+      "BeatId": "019f3ac8-397d-765d-b322-1a94325715bc",
+      "Number": 5061,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "They only bought time aga",
+      "Note": "Sentence is cut off mid-word, leaving an incomplete aphorism dangling; as delivered it reads as unfinished philosophizing rather than a clean beat ending.",
+      "Fix": "Complete the sentence or end the excerpt at a full clause."
+    },
+    {
+      "BeatId": "019f3ac8-397d-73cf-a2c6-b8f550e5ea5e",
+      "Number": 5062,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CONTRADICTION",
+      "Severity": "MINOR",
+      "Quote": "Best estimate, thirty-seven days from tonight.",
+      "Note": "Beat 0 and beat 2 both establish forty-two days as the jettison threshold from Teo\u0027s schedule; this beat, set only two days later, drops to thirty-seven \u2014 a five-day loss in two days, inconsistent with the stated near-daily-meter decay used to derive the schedule.",
+      "Fix": "Adjust to thirty-nine or forty days to match the elapsed time and decay rate."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7cb6-966c-eaf661d744e9",
+      "Number": 5063,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way a person does when she\u0027s already decided to speak and is only waiting for her nerve to catch up",
+      "Note": "stock phrasing for hesitation-before-courage that tells rather than shows anything specific to Prita",
+      "Fix": "cut to a physical beat unique to her, or drop the simile entirely"
+    },
+    {
+      "BeatId": "019f3ac8-397d-7cb6-966c-eaf661d744e9",
+      "Number": 5063,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "one hand pressed flat against her own sternum, the way you hold a weight in place",
+      "Note": "stock \u0027hand to chest\u0027 gesture for suppressed emotion, dressed up but still the familiar tell",
+      "Fix": "replace with a more specific, less legible physical detail"
+    },
+    {
+      "BeatId": "019f3ac8-397d-7cb6-966c-eaf661d744e9",
+      "Number": 5063,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "This one was a room doing math against its own life, all at once, in private.",
+      "Note": "abstract summary-statement standing in for concrete image; tips toward telling the reader what to feel",
+      "Fix": "show one or two specific reactions instead of narrating the collective abstraction"
+    },
+    {
+      "BeatId": "019f3ac8-397d-79f7-b8ca-2b562ef072b5",
+      "Number": 5064,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the way a man lets a level settle before he trusts the bubble",
+      "Note": "trade-metaphor clich\u00E9 that also over-explains Wen\u0027s characterization via a tidy simile",
+      "Fix": "cut simile, let the pause stand on its own"
+    },
+    {
+      "BeatId": "019f3ac8-397d-79f7-b8ca-2b562ef072b5",
+      "Number": 5064,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "how quiet the machines sat when they weren\u0027t running, how every surface his hand had touched for thirty years carried a shine no solvent put there",
+      "Note": "purple, sentimental imagery that leans on \u0027shine of love/labor\u0027 clich\u00E9 territory",
+      "Fix": "trim to one concrete sensory detail without the poeticized \u0027shine no solvent put there\u0027"
+    },
+    {
+      "BeatId": "019f3ac8-397d-79f7-b8ca-2b562ef072b5",
+      "Number": 5064,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "A jig held its calibration the way the frame held its coherence: invisibly, until you asked it to bear weight, and then it either held or it didn\u0027t.",
+      "Note": "aphoristic authorial-truth statement, pseudo-profound and slightly redundant with the scene\u0027s own logic",
+      "Fix": "cut or fold into a plainer observation tied to Teo\u0027s job, not universalized"
+    },
+    {
+      "BeatId": "019f3ac8-397d-7f70-98c6-75c116a337e6",
+      "Number": 5067,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "nobody accused",
+      "Note": "Beat cuts off mid-sentence, so the closing turn toward \u0027inevitable\u0027 outcome-making is not actually delivered on the page; the stated purpose lands only implicitly, not demonstrated.",
+      "Fix": "Complete the sentence and thought so the inevitability point is explicit before the cutoff."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7f70-98c6-75c116a337e6",
+      "Number": 5067,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way she knew her own weight on a scale",
+      "Note": "Slightly redundant comparison \u2014 a weight known \u0027the way you know your weight\u0027 is circular rather than illuminating.",
+      "Fix": "Cut the simile or replace with a comparison that isn\u0027t self-referential to weight."
+    },
+    {
+      "BeatId": "019f3ac8-397d-75aa-a9f4-a0beeefa65e7",
+      "Number": 5070,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "her hand coming up to press flat against her sternum",
+      "Note": "Borders on a stock gesture-for-emotion beat (physical tell substituting for interiority), verging on clich\u00E9 body-language shorthand.",
+      "Fix": "Cut the gesture or ground it in something more specific to Prita."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7821-a8a3-44247b0f7149",
+      "Number": 5071,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Weight moving through a familiar space announces itself before anyone asks what it is.",
+      "Note": "Abstract aphorism substituting for concrete sensory detail; tells rather than shows the room\u0027s reaction.",
+      "Fix": "Cut the generalization; describe the specific sound and heads turning directly."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7821-a8a3-44247b0f7149",
+      "Number": 5071,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the way people look at things in a case even",
+      "Note": "Museum-display comparison for reverence is a familiar shorthand; the sentence also cuts off mid-thought.",
+      "Fix": "Finish the sentence with a more specific, non-generic image of restraint."
+    },
+    {
+      "BeatId": "019f3ac8-397d-760a-8e5b-5b39a6e2ceb8",
+      "Number": 5072,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the one Teo heard the way another person hears a held breath",
+      "Note": "Purple simile that doesn\u0027t clarify the sound\u0027s quality \u2014 a held breath is silent, not a hum, so the comparison fails literal scrutiny.",
+      "Fix": "Replace with a description tied to actual acoustic quality, e.g., a sound felt in the teeth or floor."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7627-87c2-350828a85d7e",
+      "Number": 5073,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "I think you already know wh",
+      "Note": "Beat cuts off before Teo delivers the stated line that abstention is a vote that just doesn\u0027t sound like one, leaving the purpose\u0027s key content unconfirmed within the excerpt.",
+      "Fix": "Ensure the passage includes Teo\u0027s explicit line about abstention counting as a vote, per the stated purpose."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7941-bc42-9e2835a2f11b",
+      "Number": 5074,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the bloc dropped a meter a day and the pipes still ticked and the cups still needed rinsing",
+      "Note": "Reads as a tidy universalizing aphorism about ordinary life continuing amid crisis, slightly undercutting the specificity established elsewhere.",
+      "Fix": "Trim to a single concrete image rather than the summarizing triad."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7941-bc42-9e2835a2f11b",
+      "Number": 5074,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the screen had never once returned a different answer than her head, and her head charged less",
+      "Note": "Quippy aphoristic aside that reads as authorial wit rather than Prita\u0027s grief-numbed interiority.",
+      "Fix": "Cut the \u0027charged less\u0027 quip or ground it in a less clever register."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7bc6-bb85-247e016ffb37",
+      "Number": 5075,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Showing the shop to family before saying anything hard was its own ritual by now.",
+      "Note": "Tells the reader the meaning of the action instead of letting the action carry it.",
+      "Fix": "Cut the sentence; let the walk-down speak for itself."
+    },
+    {
+      "BeatId": "019f3ac8-397d-71af-a07b-5d59fe88232e",
+      "Number": 5076,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a range was the most honesty that column could hold tonight",
+      "Note": "Slightly strained personification of a spreadsheet column standing in for \u0027this is the most accurate figure I can give\u0027 \u2014 borders on purple abstraction.",
+      "Fix": "Simplify: \u0027a range was as accurate as she could be tonight.\u0027"
+    },
+    {
+      "BeatId": "019f3ac8-397d-71af-a07b-5d59fe88232e",
+      "Number": 5076,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way it went still over a trim decision she wasn\u0027t ready to sign",
+      "Note": "Comparison explains itself rather than showing; slightly redundant given surrounding concrete detail.",
+      "Fix": "Cut the trailing clause or replace with a sharper, single-image comparison."
+    },
+    {
+      "BeatId": "019f3ac8-397d-76d9-b315-c96e26515f40",
+      "Number": 5078,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "I don\u0027t want the question. Not the one you\u0027re not asking, and not the one everyone thinks you are. I don\u0027t want to sit in this room and be asked",
+      "Note": "Text cuts off before Dagny completes the line that the beat\u0027s purpose hinges on (\u0027I want the question to not exist\u0027), leaving the stated payoff unstated on the page.",
+      "Fix": "Complete Dagny\u0027s line so the refusal of the question is explicit."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7dbb-9cb7-6f09fa574f0d",
+      "Number": 5079,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "sat in the middle of the room like a thing that might already be too late, or might not be late enough, and no one \u2014 not Sigrun, not Wen, not Teo \u2014 could say which.",
+      "Note": "Abstract, hedging summary sentence that tells the reader the ambiguity instead of trusting the preceding dialogue to convey it.",
+      "Fix": "Cut or replace with a concrete physical beat."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7dbb-9cb7-6f09fa574f0d",
+      "Number": 5079,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "She asks if anyone has questions. No one does.",
+      "Note": "The purpose states no one has questions, but the entire beat is Wen having and voicing a major question \u2014 this contradicts the stated beat purpose.",
+      "Fix": "Align purpose/prose, or adjust the purpose line to reflect that a question is in fact raised."
+    },
+    {
+      "BeatId": "019f3ac8-397d-7b63-8663-ec0908a8d08b",
+      "Number": 5081,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "there wasn\u0027t a version of the morning where the two of them didn\u0027t have this conversation",
+      "Note": "Slightly clunky abstraction/telegraphing phrase that states inevitability rather than showing it.",
+      "Fix": "Cut or ground it in a concrete detail."
+    },
+    {
+      "BeatId": "019f3ac8-397d-75dc-9826-31380555311f",
+      "Number": 5082,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Dawn was the one hour Candelaria let her look at itself without anyone needing anything from her while she did.",
+      "Note": "Personifying the city/dawn in this reflective, faintly purple way is a soft clich\u00E9 of contemplative-protagonist prose.",
+      "Fix": "Trim to something more concrete and specific to Teo\u0027s routine."
+    },
+    {
+      "BeatId": "019f3ac8-397d-75dc-9826-31380555311f",
+      "Number": 5082,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "figures done here turned the one part of her day that wasn\u0027t a column into one more column",
+      "Note": "Neat aphoristic turn of phrase that leans toward pseudo-profound self-summary rather than shown behavior.",
+      "Fix": "Simplify to a plainer statement of the habit."
+    },
+    {
+      "BeatId": "019f3ac8-397d-79aa-9508-70cef45e6964",
+      "Number": 5084,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way a room moves when nobody\u0027s told it to line up",
+      "Note": "vague filler observation that doesn\u0027t add specific texture, borders on empty aphorism",
+      "Fix": "cut or replace with a concrete visual detail"
+    },
+    {
+      "BeatId": "019f3ac8-397e-7e89-84b6-9711ec43940e",
+      "Number": 5087,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "A drawer of loose tools without the machines they were built for wasn\u0027t a shop. It was scrap that hadn\u0027t been melted yet.",
+      "Note": "Aphoristic summary line that tells the reader the meaning of the image rather than trusting the image itself; slightly pat.",
+      "Fix": "Cut the second sentence or replace with a concrete detail (e.g. naming which tools) rather than the epigram."
+    },
+    {
+      "BeatId": "019f3ac8-397e-7e89-84b6-9711ec43940e",
+      "Number": 5087,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way a man notices something he\u0027s decided to remember",
+      "Note": "Slightly generalized/aphoristic phrasing that tells rather than shows the noticing.",
+      "Fix": "Anchor it to a specific sensory action instead of the generalized comparison."
+    },
+    {
+      "BeatId": "019f3ac8-397e-7e89-84b6-9711ec43940e",
+      "Number": 5087,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "Nobody had come to tell him there was still time, or a version of this that ended differently, or a fund somewhere that might close the distance b",
+      "Note": "Beat cuts off mid-sentence, leaving the closing movement (understanding he is \u0027the last thing to go\u0027) unresolved on the page as given.",
+      "Fix": "Complete the sentence and land the final beat explicitly on his own status as the last remaining fixture."
+    },
+    {
+      "BeatId": "019f3ac8-397e-7f44-8ed6-52c6c9b5d0ad",
+      "Number": 5088,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the way a hand settles when it finally sets down something it\u0027s carried too long",
+      "Note": "A worn sentimental simile for relief/release, slightly soft against the otherwise restrained procedural prose.",
+      "Fix": "Replace with a more mechanical, frame-specific image consistent with the eigenlift\u0027s physical behavior."
+    },
+    {
+      "BeatId": "019f3ac8-397e-7f44-8ed6-52c6c9b5d0ad",
+      "Number": 5088,
+      "Chapter": "Chapter 1 \u2014 Ballast",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "There was nothing to push against.",
+      "Note": "Slightly abstract summary statement stating the emotional/structural point directly rather than letting the preceding dialogue carry it.",
+      "Fix": "Cut or fold into the following sentence about her lost standing."
+    }
+  ]
+}

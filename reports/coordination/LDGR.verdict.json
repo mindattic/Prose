@@ -1,0 +1,229 @@
+{
+  "nodeCode": "LDGR",
+  "generatedAtUtc": "2026-07-25 17:41:50Z",
+  "beatsScanned": 15,
+  "cleanBeats": 2,
+  "totalFindings": 21,
+  "bySeverity": {
+    "MODERATE": 4,
+    "MINOR": 17
+  },
+  "byType": {
+    "GRIPE": 14,
+    "CONTRADICTION": 1,
+    "CLICHE": 4,
+    "MEANING-MISMATCH": 2
+  },
+  "findings": [
+    {
+      "BeatId": "019f76ec-14a5-7161-b58b-3cecb0231611",
+      "Number": 5456,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "The most accurate thing anyone had ever written about him.",
+      "Note": "pseudo-profound summary line that tells the reader how to feel instead of letting the ledger entry\u0027s irony land on its own",
+      "Fix": "cut the line and let the juxtaposition of \u0027For services rendered\u0027 with his own history speak for itself"
+    },
+    {
+      "BeatId": "019f76ec-2837-7ca8-a480-16312add6469",
+      "Number": 5458,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "The act is the record.",
+      "Note": "Reads as a pseudo-profound aphorism tacked onto the log entry, tonal break from the otherwise clinical documentation style.",
+      "Fix": "Cut the sentence or replace with a plain procedural closing line."
+    },
+    {
+      "BeatId": "019f76ec-3c7b-7de7-b90b-97e22a15d821",
+      "Number": 5460,
+      "Chapter": "Double Entry",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "He made it for all twenty-one.",
+      "Note": "Contradicts the stated count of twenty-two entries needing gap-column notation and the subsequent line \u0027On the twenty-second, he stopped\u0027 \u2014 the math and antecedent are muddled: twenty-two total, but only twenty-one get made before he stops on the twenty-second, yet the text earlier says \u0027the twenty-two that lived only in his log now\u0027 implying all twenty-two need entries, making \u002721\u0027 an odd resting point that isn\u0027t clearly explained as intentional.",
+      "Fix": "Clarify explicitly: \u0027He made it for twenty-one of the twenty-two\u0027 to remove ambiguity."
+    },
+    {
+      "BeatId": "45bbd397-9230-42e2-9c7d-81bda5edd5b7",
+      "Number": 5461,
+      "Chapter": "Double Entry",
+      "Type": "CLICHE",
+      "Severity": "MODERATE",
+      "Quote": "the way you finish a sentence someone has tried to cut off",
+      "Note": "wait \u2014 this quote belongs to ref 1, flagging correctly there instead",
+      "Fix": "n/a"
+    },
+    {
+      "BeatId": "019f76eb-7aee-72f4-8a45-b471c0d965a2",
+      "Number": 5447,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The obligation outlived them, the way obligations did when someone still profited by keeping them.",
+      "Note": "Generalizing aphorism that reads as filler wit rather than earned observation.",
+      "Fix": "Cut the trailing clause or replace with a concrete institutional detail."
+    },
+    {
+      "BeatId": "019f76eb-7aee-72f4-8a45-b471c0d965a2",
+      "Number": 5447,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Poverty or a choice \u2014 he couldn\u0027t yet tell which.",
+      "Note": "Repeated almost verbatim later (\u0022In 2226 that meant poverty, or it meant intention\u0022), making the first instance feel like redundant telegraphing.",
+      "Fix": "Cut one of the two instances or vary the phrasing to avoid the echo reading as a stumble."
+    },
+    {
+      "BeatId": "019f76eb-a96b-774f-83e0-1c294446342e",
+      "Number": 5448,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Not faded, not dirty. Settled into itself.",
+      "Note": "Borders on purple/portentous phrasing for a physical description of cloth color; reads as reaching for lyricism rather than precision.",
+      "Fix": "Replace with a concrete sensory descriptor, e.g. \u0022gone the uniform brown of handled cloth.\u0022"
+    },
+    {
+      "BeatId": "019f76eb-d89a-7a2f-a04f-f46535df6dca",
+      "Number": 5450,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a man who had spent a career letting his body do the negotiating \u2014 weight low, nothing wasted, at home waiting in a doorway",
+      "Note": "Stock tough-guy characterization via posture; borders on clich\u00E9 physical shorthand without a distinguishing concrete detail.",
+      "Fix": "Anchor with one specific, unusual physical tell instead of generic \u0027weight low, nothing wasted.\u0027"
+    },
+    {
+      "BeatId": "019f76eb-e25e-799c-805b-8b1f0b9b7e82",
+      "Number": 5451,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The neutral expression settled deeper, the way a thing settles that has been waiting to.",
+      "Note": "Vague, self-referential simile that doesn\u0027t clarify the image \u2014 \u0027a thing settles that has been waiting to\u0027 is abstract filler dressed as insight.",
+      "Fix": "Cut the simile or replace with a concrete physical detail."
+    },
+    {
+      "BeatId": "019f76eb-e25e-799c-805b-8b1f0b9b7e82",
+      "Number": 5451,
+      "Chapter": "Double Entry",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "The last line a",
+      "Note": "Beat cuts off mid-sentence, leaving the closing beat truncated with no resolution.",
+      "Fix": "Complete the sentence or end on a finished line."
+    },
+    {
+      "BeatId": "019f76eb-ec32-78cd-a79f-40748eb0dd45",
+      "Number": 5452,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He worked through the night, because there was no reason not to.",
+      "Note": "Flat, slightly aphoristic opening that tells rather than shows motivation; borders on filler-wit understatement.",
+      "Fix": "Cut the justifying clause or ground it in a concrete detail (e.g., what he\u0027d otherwise be doing)."
+    },
+    {
+      "BeatId": "019f76eb-f641-7f37-b2a5-757f11b16d67",
+      "Number": 5453,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Three days of one held temperature had made the air feel like a surface.",
+      "Note": "Purple, abstract metaphor that doesn\u0027t hold up to literal scrutiny \u2014 air \u0027feeling like a surface\u0027 is imprecise sensory language standing in for tension.",
+      "Fix": "Replace with a concrete physical sensation (stale heat, stillness, a specific texture)."
+    },
+    {
+      "BeatId": "019f76ec-0040-7119-a624-bb72d0e1dcaf",
+      "Number": 5454,
+      "Chapter": "Double Entry",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "He regarded the book the way a man regards a dispute he has been patient about for a very long time.",
+      "Note": "Generic \u0027the way a man regards X\u0027 construction, vague and slightly stock phrasing rather than a sharp, specific image.",
+      "Fix": "Replace with a concrete physical beat showing the patience/dispute directly."
+    },
+    {
+      "BeatId": "019f76ec-0a1b-7d31-a22b-e9865d028aec",
+      "Number": 5455,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way you finish a sentence someone has tried to cut off",
+      "Note": "reaches for a tidy metaphor to explain a physical/emotional beat, slightly over-explaining what the action already conveys",
+      "Fix": "cut the simile and let the gesture stand on its own"
+    },
+    {
+      "BeatId": "019f76ec-0a1b-7d31-a22b-e9865d028aec",
+      "Number": 5455,
+      "Chapter": "Double Entry",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "a woman confirming a shape she\u0027d already half traced",
+      "Note": "abstract \u0027shape/traced\u0027 imagery is a soft, familiar way to render intuition",
+      "Fix": "replace with a concrete detail specific to Renn\u0027s knowledge or manner"
+    },
+    {
+      "BeatId": "019f76ec-2837-7ca8-a480-16312add6469",
+      "Number": 5458,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Ash settled on the ceramic; the smell of it outlasted the smoke.",
+      "Note": "Reaches for lyrical closure but is a vague sensory claim that doesn\u0027t add concrete information.",
+      "Fix": "Cut or replace with a specific, literal detail."
+    },
+    {
+      "BeatId": "019f76ec-32c1-76fb-8efe-f51983c92690",
+      "Number": 5459,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "That was the broker\u0027s whole answer: a person walking out of a corridor.",
+      "Note": "Strains for portentous meaning from a mundane action; borders on faux-profound summary.",
+      "Fix": "Cut the appositive or make it a plain observation without the aphoristic framing."
+    },
+    {
+      "BeatId": "019f76ec-32c1-76fb-8efe-f51983c92690",
+      "Number": 5459,
+      "Chapter": "Double Entry",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "took the room in one last time",
+      "Note": "Stock parting-glance phrasing.",
+      "Fix": "Replace with a more specific, concrete action showing what she looked at."
+    },
+    {
+      "BeatId": "45bbd397-9230-42e2-9c7d-81bda5edd5b7",
+      "Number": 5461,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a bad idea",
+      "Note": "understated filler phrase deflates the tension of a lethal calculation",
+      "Fix": "be specific about the risk rather than a flat, casual dismissal"
+    },
+    {
+      "BeatId": "45bbd397-9230-42e2-9c7d-81bda5edd5b7",
+      "Number": 5461,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He had never been running from the body.",
+      "Note": "vague aphoristic assertion that tells rather than shows what grounds his identity, breaking the otherwise concrete tactical prose",
+      "Fix": "anchor it to a specific detail (e.g., what he was actually protecting) or cut"
+    },
+    {
+      "BeatId": "45bbd397-9230-42e2-9c7d-81bda5edd5b7",
+      "Number": 5461,
+      "Chapter": "Double Entry",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "The case sat empty a",
+      "Note": "beat cuts off mid-sentence, leaving the closing image incomplete",
+      "Fix": "complete the sentence or end on a finished clause"
+    }
+  ]
+}

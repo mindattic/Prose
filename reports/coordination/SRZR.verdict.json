@@ -1,0 +1,518 @@
+{
+  "nodeCode": "SRZR",
+  "generatedAtUtc": "2026-07-25 17:42:44Z",
+  "beatsScanned": 31,
+  "cleanBeats": 5,
+  "totalFindings": 50,
+  "bySeverity": {
+    "MODERATE": 6,
+    "MINOR": 44
+  },
+  "byType": {
+    "MEANING-MISMATCH": 5,
+    "GRIPE": 36,
+    "CLICHE": 9
+  },
+  "findings": [
+    {
+      "BeatId": "019f00bd-3e33-7011-8f66-70f617835a2c",
+      "Number": 4772,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "Then he told her, plainly, the way you tell a thing to someone who can finally hear it: not the clean floor. The eastern colonnade, where the read had been dirty for ten years and everyone had called the dirt noise.",
+      "Note": "The beat\u0027s purpose states the entity \u0027tells her\u0027 the location, but no actual speech or communication occurs \u2014 the camel never speaks and the man\u0027s information delivery is only summarized secondhand, so the promised direct-address moment is skipped rather than dramatized.",
+      "Fix": "Give the man an actual line of dialogue or an unambiguous nonverbal transmission beat rather than narrated summary of what he \u0027told\u0027 her."
+    },
+    {
+      "BeatId": "019f00bd-83c8-729d-adb9-62e87f7d7c83",
+      "Number": 4775,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "She was the hole. The hole sat on both sides of itself, same as the man on the camel had said.",
+      "Note": "states the beat\u0027s central metaphor flatly as narration instead of dramatizing her arriving at the realization; reads as the author checking a box rather than the character thinking",
+      "Fix": "let the realization emerge through what she does next rather than declaring it outright"
+    },
+    {
+      "BeatId": "019f00bd-9b01-7fa4-bbe1-ac06bedeb11a",
+      "Number": 4776,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "She\u0027d left the rig on the colonnade platform, but she\u0027d kept its channel",
+      "Note": "beat 1 establishes the platform as the Z5 exterior access wall overlooking the lake, not \u0027the colonnade\u0027 \u2014 the colonnade is referenced there as a data point (colonnade position) sent in the packet, not the location where she left the rig, creating a location inconsistency",
+      "Fix": "correct to \u0027the Z5 platform\u0027 or the equivalent established location"
+    },
+    {
+      "BeatId": "019f1169-f747-71c8-9381-b3d1ddf083f1",
+      "Number": 4865,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "that she\u0027d seen it coming and gone through with it, because stopping in the middle of a thing was a move her body had never once known how to make",
+      "Note": "Explains/tells the emotional and psychological stakes directly rather than letting the scene\u0027s action carry it; reads as authorial summary of trauma-logic rather than dramatized experience.",
+      "Fix": "Cut the explanatory clause or replace with a physical beat showing the compulsion rather than naming it."
+    },
+    {
+      "BeatId": "019f1173-0854-76e2-9b82-aad3a0de10a6",
+      "Number": 4876,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "and she had not lost her footing",
+      "Note": "The beat purpose calls for her refusing to admit lost footing while the narration quietly shows it slipping; stating flatly \u0027she had not\u0027 asserts the denial as narrative fact rather than letting the reader see the gap between her self-assessment and reality \u2014 it flattens the irony instead of dramatizing it.",
+      "Fix": "Let the unfinished sentence stand alone without the flat rebuttal, or undercut it with a physical tell that contradicts her claim."
+    },
+    {
+      "BeatId": "019f247a-4e28-788f-9e97-fb8a6a009735",
+      "Number": 4975,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "His eyes were large \u2014 the dark had made them that way.",
+      "Note": "This is offered as an explanation of an underground-adapted population, but it\u0027s asserted as simple fact rather than shown to validate Sasha\u0027s anomaly-sense \u2014 the beat\u0027s purpose (validating her sense, escalating threat) is underserved by physical description alone.",
+      "Fix": "Tie the boy\u0027s appearance or knowledge more directly to confirmation of her anomaly-sense, e.g. have him name the draw\u0027s exact quality before she does."
+    },
+    {
+      "BeatId": "019ef7f7-6364-71d2-98e1-141ff36e2bb2",
+      "Number": 4419,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "his hands moving with the ease of someone who\u0027d done it ten thousand times and stopped noticing he was doing it",
+      "Note": "Generic competence-description filler; doesn\u0027t sharpen the absurdist detail so much as pad it.",
+      "Fix": "Cut to a sharper single image, e.g., \u0027his hands not looking down.\u0027"
+    },
+    {
+      "BeatId": "019ef7f7-79ad-7155-85ed-9ced6c543b56",
+      "Number": 4420,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "like a sunrise that had gotten stuck and given up",
+      "Note": "Strained simile \u2014 a sunrise doesn\u0027t \u0027give up\u0027; reads as reaching for poetic effect rather than precise image.",
+      "Fix": "Simplify: \u0027a low smear of light that never rose and never set.\u0027"
+    },
+    {
+      "BeatId": "019ef7f7-79ad-7155-85ed-9ced6c543b56",
+      "Number": 4420,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She turned that over once and set it down.",
+      "Note": "Vague narrator shorthand for an internal realization that tells rather than shows the weighing of it.",
+      "Fix": "Either dramatize the thought briefly or cut the line."
+    },
+    {
+      "BeatId": "019ef7f7-8efb-79b8-9a60-b48ff8534f0f",
+      "Number": 4421,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The man looked at the gun the way a window looks at weather.",
+      "Note": "Purple simile that doesn\u0027t hold under scrutiny \u2014 a window doesn\u0027t \u0027look at\u0027 weather, and the image doesn\u0027t clarify the intended unthreatened quality specified in the beat purpose.",
+      "Fix": "Cut to something more direct: \u0027The man didn\u0027t look at the gun at all.\u0027"
+    },
+    {
+      "BeatId": "019ef7f7-8efb-79b8-9a60-b48ff8534f0f",
+      "Number": 4421,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "spoke first, the way a fact speaks",
+      "Note": "Vague abstraction standing in for concrete description; doesn\u0027t actually convey how a fact \u0027speaks.\u0027",
+      "Fix": "Replace with a concrete detail of his tone or cadence."
+    },
+    {
+      "BeatId": "019ef7f7-bb1e-76cd-965d-bd73d39f721a",
+      "Number": 4423,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "different was something she could work with",
+      "Note": "Slides toward a tidy aphoristic close that tells us her takeaway rather than dramatizing it further.",
+      "Fix": "Cut the line or replace with a concrete next action/thought."
+    },
+    {
+      "BeatId": "019f00b9-3935-7056-bf5b-595888e2a440",
+      "Number": 4767,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "believed questions came with answers",
+      "Note": "clever-sounding but slightly strained aphorism about the tourist that reads as authorial wit rather than observation",
+      "Fix": "cut or replace with a concrete physical detail"
+    },
+    {
+      "BeatId": "019f00b9-3935-7056-bf5b-595888e2a440",
+      "Number": 4767,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "Sasha checked twice.",
+      "Note": "a small beat of reaction/surprise; purpose calls for cataloging without reacting, so this slightly undercuts the flat affect",
+      "Fix": "replace with a flatter cataloging note, e.g. \u0027Real. She filed it and moved on.\u0027"
+    },
+    {
+      "BeatId": "019f00bc-4c49-760f-9ecd-2a70784ef69c",
+      "Number": 4769,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "A clean involuntary lurch, the body\u0027s verdict landing ahead of the mind\u0027s.",
+      "Note": "stock \u0027body knows before mind\u0027 framing, slightly over-explained",
+      "Fix": "cut second clause, let the lurch stand alone"
+    },
+    {
+      "BeatId": "019f00bc-4c49-760f-9ecd-2a70784ef69c",
+      "Number": 4769,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the only instrument in the city tuned to a frequency the city had decided not to hear",
+      "Note": "tips into pseudo-profound summation of theme rather than sensation",
+      "Fix": "cut or ground it in a concrete detail instead of abstract statement"
+    },
+    {
+      "BeatId": "019f00bd-0ed8-779c-a0ee-76c5a9806d29",
+      "Number": 4770,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The warmth was the part that got under her skin.",
+      "Note": "Tells the emotional reaction directly rather than dramatizing it; slightly on-the-nose framing for what follows.",
+      "Fix": "Cut the sentence and let the thumb-checking detail carry the point."
+    },
+    {
+      "BeatId": "019f00bd-0ed8-779c-a0ee-76c5a9806d29",
+      "Number": 4770,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the small helpless check of a person who has just learned she was expected",
+      "Note": "Generic abstracted description of a physical tic; reads as authorial explanation rather than observed behavior.",
+      "Fix": "Show the thumb motion without naming what kind of person does it."
+    },
+    {
+      "BeatId": "019f00bd-0ed8-779c-a0ee-76c5a9806d29",
+      "Number": 4770,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "set down like a weather report",
+      "Note": "Simile gestures at flatness of tone but doesn\u0027t earn specificity \u2014 weather reports vary too much to land as a precise image.",
+      "Fix": "Replace with a more exact comparator, e.g. \u0027set down like a shipping manifest.\u0027"
+    },
+    {
+      "BeatId": "019f00bd-26e5-7b1a-b692-527ce5e8ca5d",
+      "Number": 4771,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the offset stride people learn in rooms where the instructor never had to do it for real",
+      "Note": "Aphoristic aside that tells us about the tail\u0027s training pedigree rather than showing it through concrete action; slows the tactical read.",
+      "Fix": "Cut to a physical tell instead of the generalized claim about instructors."
+    },
+    {
+      "BeatId": "019f00bd-26e5-7b1a-b692-527ce5e8ca5d",
+      "Number": 4771,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The strides had cost money. They hadn\u0027t cost enough.",
+      "Note": "Terse quip that reads as authorial cleverness rather than Sasha\u0027s tactical assessment; borders on filler wit.",
+      "Fix": "Cut or fold into the hardware detail without the punchline cadence."
+    },
+    {
+      "BeatId": "019f00bd-3e33-7011-8f66-70f617835a2c",
+      "Number": 4772,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the most living thing that had happened to her in the inner ring",
+      "Note": "Superlative aphorism-flavored line that tells us the significance instead of letting the breath\u0027s sensory detail carry it.",
+      "Fix": "Cut the clause and end on the physical sensation alone."
+    },
+    {
+      "BeatId": "019f00bd-55e4-7d1d-86ed-beceef506ae5",
+      "Number": 4773,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She took it the way she took a gun\u0027s pull-weight \u2014 data the body holds before the mind gives it a name.",
+      "Note": "Simile explains itself twice (pull-weight, then restated abstractly), redundant construction.",
+      "Fix": "Cut the second clause and let the gun comparison stand alone."
+    },
+    {
+      "BeatId": "019f00bd-55e4-7d1d-86ed-beceef506ae5",
+      "Number": 4773,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the way you feel a staircase in the dark \u2014 each step its own weight",
+      "Note": "Stock sensory analogy that doesn\u0027t add specificity beyond what\u0027s already stated (three depths, different drags).",
+      "Fix": "Replace with a more specific, non-generic comparison rooted in her expertise."
+    },
+    {
+      "BeatId": "019f00bd-6cb3-73ef-bb8f-7dc7c1238753",
+      "Number": 4774,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a small wet click her whole body flinched from before her mind had finished hearing it",
+      "Note": "Overwrought phrasing that tells the reader how to feel about a sensory detail rather than letting the concrete image do the work; the double clause (body flinch/mind hearing) is redundant",
+      "Fix": "cut to \u0027a small wet click, and her body flinched before she understood why\u0027"
+    },
+    {
+      "BeatId": "019f00bd-6cb3-73ef-bb8f-7dc7c1238753",
+      "Number": 4774,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "three in, three out",
+      "Note": "stock combat-breathing beat, slightly rote given how precise and unusual the rest of her tradecraft is rendered",
+      "Fix": "vary the count or cut the explicit numbers"
+    },
+    {
+      "BeatId": "019f00bd-83c8-729d-adb9-62e87f7d7c83",
+      "Number": 4775,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The door on that question was shut, and it carried no inspection stamp.",
+      "Note": "metaphor mixes with the story\u0027s established door/inspection imagery but doesn\u0027t quite cohere as a literal image \u2014 a door doesn\u0027t \u0027carry a stamp,\u0027 this strains the metaphor for effect",
+      "Fix": "simplify: \u0027No one had answered that question, and no one was going to.\u0027"
+    },
+    {
+      "BeatId": "019f00bd-9b01-7fa4-bbe1-ac06bedeb11a",
+      "Number": 4776,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the crowd leaned forward with the pull of people who had somewhere to be",
+      "Note": "generic crowd-behavior filler that doesn\u0027t add specific sensory or character information, slightly padding before the climactic action",
+      "Fix": "cut or replace with a more particular physical detail"
+    },
+    {
+      "BeatId": "019f1166-3225-7703-aaf2-fd50fcaee8f6",
+      "Number": 4860,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The junction had done this for sixty years and did not care who watched.",
+      "Note": "Slightly generic personification-of-place filler that doesn\u0027t add specific texture beyond mood-setting.",
+      "Fix": "Cut or replace with a concrete detail specific to this junction."
+    },
+    {
+      "BeatId": "019f1166-3225-7703-aaf2-fd50fcaee8f6",
+      "Number": 4860,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She was the thing that watched.",
+      "Note": "Reads as a stock tough-professional aphorism, slightly undercut by being repeated almost verbatim from the fixer\u0027s line later, making it feel like a thesis statement rather than observation.",
+      "Fix": "Trim or fold into action rather than standalone declarative."
+    },
+    {
+      "BeatId": "019f1166-c247-74b1-9766-8df3087d643a",
+      "Number": 4861,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "A machine that quiet is a machine making a choice, and the choice announces itself.",
+      "Note": "Pseudo-profound aphorism form that doesn\u0027t hold up to literal scrutiny \u2014 a quiet machine doesn\u0027t inherently \u0027choose\u0027 or \u0027announce\u0027 anything; it\u0027s an author-voice generalization rather than Sasha\u0027s grounded observation.",
+      "Fix": "Replace with a concrete sensory read: e.g. \u0027No engine noise, no headlights \u2014 someone had gone to the trouble of both.\u0027"
+    },
+    {
+      "BeatId": "019f1167-58a1-730f-a0e2-52f178983f74",
+      "Number": 4862,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "That was the second door. She didn\u0027t see it as a door at the time. Nobody ever does.",
+      "Note": "The \u0027nobody ever does\u0027 is a universal-truth filler tag that generalizes beyond the character\u0027s specific situation, weakening the personal stakes established in this beat.",
+      "Fix": "Cut the last sentence; let \u0027She didn\u0027t see it as a door at the time\u0027 stand alone."
+    },
+    {
+      "BeatId": "019f1168-783e-7450-9426-a54f05a28951",
+      "Number": 4864,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way a sound crosses a wall lighter than it hits you from the same side",
+      "Note": "Purple metaphor that doesn\u0027t hold up literally \u2014 sound crossing a wall doesn\u0027t straightforwardly correlate to \u0027hitting lighter\u0027 in a way a reader can visualize; it\u0027s abstract gesturing at meaning rather than a clear sensory image.",
+      "Fix": "Cut the simile or replace with something concrete, e.g. \u0027the way noise sounds different heard through a floor than standing on it.\u0027"
+    },
+    {
+      "BeatId": "019f1168-783e-7450-9426-a54f05a28951",
+      "Number": 4864,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It was an invitation in the one language she\u0027d always found hard to turn down.",
+      "Note": "Vague aphoristic phrasing that tells rather than shows what specifically disarms her.",
+      "Fix": "Cut or make concrete \u2014 state what the language is (food, presence, persistence) rather than gesturing at it abstractly."
+    },
+    {
+      "BeatId": "019f1169-f747-71c8-9381-b3d1ddf083f1",
+      "Number": 4865,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a bill that was Wilmington\u0027s to pay now",
+      "Note": "Slightly overwritten phrasing that states thematic consequence as aphorism rather than showing it play out.",
+      "Fix": "Cut or fold into concrete next-scene consequence."
+    },
+    {
+      "BeatId": "019f116a-893e-7d83-a9de-374560f4d0ef",
+      "Number": 4866,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the spare movement of a man who knows he\u0027s the most dangerous thing in the room and has no feelings about it",
+      "Note": "Stock \u0027dangerous man\u0027 descriptor formula, familiar genre shorthand.",
+      "Fix": "Replace with a specific behavioral detail unique to this character."
+    },
+    {
+      "BeatId": "019f116a-893e-7d83-a9de-374560f4d0ef",
+      "Number": 4866,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "That was the whole of the cross-draw \u2014 not a trick, a logic: both hands at once, because she didn\u0027t think in sequences.",
+      "Note": "Explanatory aside interrupts the action to tell the reader how to interpret the technique rather than letting the choreography demonstrate it.",
+      "Fix": "Trim to action only; cut the \u0027not a trick, a logic\u0027 explanation."
+    },
+    {
+      "BeatId": "019f116b-16a5-7ed8-a58c-7337a97bd22b",
+      "Number": 4867,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the only gap that ever mattered was the one between them deciding to close and her deciding first",
+      "Note": "Aphoristic restatement of the character\u0027s established logic, slightly redundant with prior beats\u0027 similar lines about gaps and deciding first \u2014 risks feeling like a repeated stock formula across beats.",
+      "Fix": "Cut or vary the phrasing so it doesn\u0027t echo the same \u0027gap/deciding\u0027 construction used elsewhere."
+    },
+    {
+      "BeatId": "019f116b-16a5-7ed8-a58c-7337a97bd22b",
+      "Number": 4867,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Damage present, function intact, nothing that changed the next move.",
+      "Note": "Terse action-hero damage-report shorthand, verges on genre-standard tough-body-inventory beat.",
+      "Fix": "Vary rhythm or specify a detail that isn\u0027t formulaic checklist phrasing."
+    },
+    {
+      "BeatId": "019f116b-83d9-72d7-b5ed-99f8a8f8f52b",
+      "Number": 4868,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She kept the map in her head, because paper comes off a body easily and a head does not.",
+      "Note": "Aphoristic framing that reads as authorial cleverness rather than character thought; slightly too neat/quotable for the grounded voice.",
+      "Fix": "Cut the justification clause or make it more functional: \u0027She kept the map in her head; paper gets found.\u0027"
+    },
+    {
+      "BeatId": "019f116b-83d9-72d7-b5ed-99f8a8f8f52b",
+      "Number": 4868,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "which made it the only right audience for a list she needed to say only to know it was true",
+      "Note": "Tips into tidy-philosophical phrasing that tells us the meaning of the ritual instead of trusting the scene to carry it.",
+      "Fix": "Trim to something plainer: \u0027so the dog was who she told it to.\u0027"
+    },
+    {
+      "BeatId": "019f116b-83d9-72d7-b5ed-99f8a8f8f52b",
+      "Number": 4868,
+      "Chapter": "Chapter 1 \u2014 Sasha in Motion",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the way a direction gets asked of you rather than chosen",
+      "Note": "Borders on purple/abstract phrasing for pull/fate that skirts stock \u0027destiny calling\u0027 imagery.",
+      "Fix": "Ground it in a physical sensation instead of an abstracted claim."
+    },
+    {
+      "BeatId": "019f116d-5772-7cd7-a1f5-9dbb6706673e",
+      "Number": 4870,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "The rain fell sideways, in the manner of rain that had been aimed.",
+      "Note": "personifying rain as deliberate/aimed is a familiar noir-atmosphere flourish bordering on purple",
+      "Fix": "trim to a plainer physical description of wind-driven rain"
+    },
+    {
+      "BeatId": "019f116d-5772-7cd7-a1f5-9dbb6706673e",
+      "Number": 4870,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "because switching a thing off is a task somebody has to be paid to remember",
+      "Note": "aphoristic filler explaining bureaucratic neglect; reads as authorial quip rather than observation",
+      "Fix": "cut the clause or fold into simpler exposition"
+    },
+    {
+      "BeatId": "019f116e-fa83-7296-b3f8-f1315d3c249b",
+      "Number": 4873,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "a hand on her sternum, steady and exact",
+      "Note": "The \u0027hand on the chest\u0027 sensation for a supernatural pull is a familiar shorthand image, slightly worn.",
+      "Fix": "Ground the sensation in a more specific physical register tied to her established pull-tracking language."
+    },
+    {
+      "BeatId": "019f116e-fa83-7296-b3f8-f1315d3c249b",
+      "Number": 4873,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a rib that had opinions",
+      "Note": "Whimsical personification undercuts the tension of the scene with a jokey register mismatched to the stakes.",
+      "Fix": "Replace with a plainer description of the pain."
+    },
+    {
+      "BeatId": "019f116f-842c-7160-8198-09d526fc36e6",
+      "Number": 4874,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Not forged. Borrowed. That was the whole trick",
+      "Note": "Aphoristic summary that tells the reader the meaning of the discovery rather than trusting the preceding concrete evidence (dates, stamps) to carry it.",
+      "Fix": "Cut the sentence; let the seventeen-day stamp vs. 2223 closure stand as the reveal."
+    },
+    {
+      "BeatId": "019f1173-0854-76e2-9b82-aad3a0de10a6",
+      "Number": 4876,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "patient as the thing behind her sternum",
+      "Note": "Reaches for poetic parallel but is vague \u2014 \u0027the thing behind her sternum\u0027 was established as a sensation, not an entity with a demeanor like \u0027patient,\u0027 so the comparison is soft rather than sharp.",
+      "Fix": "Ground it in a more specific bodily sensation rather than a personified abstraction."
+    },
+    {
+      "BeatId": "019f247a-4e28-788f-9e97-fb8a6a009735",
+      "Number": 4975,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It smelled of concrete that hadn\u0027t seen daylight in decades and had gotten used to it.",
+      "Note": "Anthropomorphizing concrete as having \u0027gotten used to\u0027 lack of daylight is a strained personification that doesn\u0027t hold up literally.",
+      "Fix": "It smelled of concrete that had never seen daylight."
+    },
+    {
+      "BeatId": "019f247a-4e28-788f-9e97-fb8a6a009735",
+      "Number": 4975,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "A door. Balanced perfectly on decades of use.",
+      "Note": "Fragment reads as a vague, unearned poetic beat rather than concrete sensory detail \u2014 unclear what \u0027balanced on decades of use\u0027 physically means.",
+      "Fix": "Cut or replace with a concrete mechanical detail (e.g., hinge worn smooth by decades of opening)."
+    }
+  ]
+}

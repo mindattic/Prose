@@ -1,0 +1,188 @@
+{
+  "nodeCode": "TWU",
+  "generatedAtUtc": "2026-07-25 17:41:47Z",
+  "beatsScanned": 14,
+  "cleanBeats": 3,
+  "totalFindings": 17,
+  "bySeverity": {
+    "MODERATE": 2,
+    "MINOR": 15
+  },
+  "byType": {
+    "GRIPE": 11,
+    "MEANING-MISMATCH": 3,
+    "CLICHE": 3
+  },
+  "findings": [
+    {
+      "BeatId": "019f7883-3ac0-7220-b1af-3f3f88744127",
+      "Number": 5467,
+      "Chapter": "Chapter 2 \u2014 Reinvest",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "something went through Tavi\u0027s chest, quick and warm, before he had a word for it. Being good at a thing. On purpose. Nobody had ever told either of them that was on the menu.",
+      "Note": "Tells the reader the feeling and its meaning directly rather than letting the preceding action (checked hands, steady) carry it; the aphoristic \u0027on the menu\u0027 line reads as commentary rather than felt experience.",
+      "Fix": "Cut the explanatory sentences and let \u0027He checked his hands anyway... Steady\u0027 close the beat alone."
+    },
+    {
+      "BeatId": "019f7883-58f6-79e9-955c-1233cb968737",
+      "Number": 5469,
+      "Chapter": "Chapter 3 \u2014 Hyperreal",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "Across the bead curtain \u2014 close enough that the sound carried, far enough that it was its own world \u2014 he heard Ivet say something low to Reza, one sentence, then Reza\u0027s laugh, then a silence that wasn\u0027t empty.",
+      "Note": "Purpose calls for the boys high-fiving across the gap, delirious and certain they\u0027re in love \u2014 an explicit comic/tender beat establishing their bond amid the transcendence. That specific image is absent; the excerpt ends without it.",
+      "Fix": "Add the high-five beat explicitly before or as the excerpt closes, per the stated purpose."
+    },
+    {
+      "BeatId": "019f7882-ee18-7545-9bc8-fdba0d84bede",
+      "Number": 5462,
+      "Chapter": "Chapter 1 \u2014 The Low",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a sky that didn\u0027t care",
+      "Note": "reflexive personification-negation is a stock move for indifferent cosmos imagery",
+      "Fix": "cut the clause or ground it in something concrete Tavi notices"
+    },
+    {
+      "BeatId": "019f7882-ee18-7545-9bc8-fdba0d84bede",
+      "Number": 5462,
+      "Chapter": "Chapter 1 \u2014 The Low",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "\u0022Up\u0027s one direction,\u0022 Tavi said. He hitched the garbage bag onto his shoulder and stood. \u0022But it\u0027s not the direction.",
+      "Note": "purpose calls for the decision to remain unspoken; this states the thematic turn almost explicitly, undercutting the \u0027without saying it yet\u0027 requirement",
+      "Fix": "cut the line or replace with a wordless beat (both looking up, neither speaking) and end on action instead"
+    },
+    {
+      "BeatId": "019f7883-0cad-7be0-a50e-2f15951f8237",
+      "Number": 5464,
+      "Chapter": "Chapter 1 \u2014 The Low",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Wrong door \u2014 except not really.",
+      "Note": "the clarifying aside undercuts the comedy-of-errors momentum with a hedge that explains itself rather than showing the mistake land",
+      "Fix": "cut the aside; let the numbering mistake surface naturally in the next line"
+    },
+    {
+      "BeatId": "019f7883-0cad-7be0-a50e-2f15951f8237",
+      "Number": 5464,
+      "Chapter": "Chapter 1 \u2014 The Low",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "The sound it made was specific.",
+      "Note": "vague gesture toward specificity without delivering the promised body-true, ugly detail the beat purpose demands",
+      "Fix": "replace with an actual concrete sound/description of the impact"
+    },
+    {
+      "BeatId": "019f7883-1c34-7db6-9e3a-750dfe59ed15",
+      "Number": 5465,
+      "Chapter": "Chapter 1 \u2014 The Low",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the kind of easy that cost you later",
+      "Note": "narratorial foreshadowing aphorism, telling us the moral weight instead of letting the scene\u0027s warmth carry it per the beat\u0027s stated purpose",
+      "Fix": "cut the clause and let Tavi\u0027s silence/thumb movement carry the implication"
+    },
+    {
+      "BeatId": "019f7883-2b48-7e71-bf55-55bc38dee06d",
+      "Number": 5466,
+      "Chapter": "Chapter 2 \u2014 Reinvest",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He had the look of a man who\u0027d just heard a language he almost spoke.",
+      "Note": "Slightly overwrought simile for the register the beat wants (unsentimental, funny); it\u0027s doing a lot of lyrical work for a small beat.",
+      "Fix": "Cut to something plainer: \u0027He stopped like the words had knocked something loose.\u0027"
+    },
+    {
+      "BeatId": "019f7883-2b48-7e71-bf55-55bc38dee06d",
+      "Number": 5466,
+      "Chapter": "Chapter 2 \u2014 Reinvest",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "which for Reza almost never happened",
+      "Note": "Told-not-shown aside that editorializes instead of trusting the scene\u0027s silence to land.",
+      "Fix": "Delete the clause; let the silence speak."
+    },
+    {
+      "BeatId": "019f7883-58f6-79e9-955c-1233cb968737",
+      "Number": 5469,
+      "Chapter": "Chapter 3 \u2014 Hyperreal",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "an expression that had nothing in it but the fact of the moment, which was enough",
+      "Note": "Vague abstraction standing in for a concrete beat; doesn\u0027t specify what the expression communicated, undercutting the \u0027body-true\u0027 mandate of the purpose.",
+      "Fix": "Replace with a physical description of the look exchanged."
+    },
+    {
+      "BeatId": "019f7883-67f4-70e7-b11a-d709ff3e7c9f",
+      "Number": 5470,
+      "Chapter": "Chapter 3 \u2014 Hyperreal",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Something cold settled in his chest",
+      "Note": "stock somatic shorthand for dawning realization/shame",
+      "Fix": "replace with a more specific, non-generic physical detail unique to the room or moment"
+    },
+    {
+      "BeatId": "019f7883-8652-7ea0-9010-caebe50e941c",
+      "Number": 5472,
+      "Chapter": "Chapter 4 \u2014 The Drift",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "like it was a courtesy and a threat at once",
+      "Note": "neat aphoristic pairing that tells us how to feel about Vane\u0027s tone rather than showing it distinctly",
+      "Fix": "cut the abstraction and let the following dialogue carry the threat/courtesy duality"
+    },
+    {
+      "BeatId": "019f7883-958b-7423-a0c5-ecc045914a9b",
+      "Number": 5473,
+      "Chapter": "Chapter 4 \u2014 The Drift",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the words opening behind his eyes the way neuretics traffic did",
+      "Note": "vague technological simile that doesn\u0027t clarify the sensation, filler texture rather than concrete image",
+      "Fix": "cut the simile or replace with a specific sensory beat of receiving the message"
+    },
+    {
+      "BeatId": "019f7883-a47f-722b-85e1-83880fea70a2",
+      "Number": 5474,
+      "Chapter": "Chapter 4 \u2014 The Drift",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Tavi\u0027s ribs ached at the seam where the cracked one had knit",
+      "Note": "functions as scene decoration rather than earned callback; reads as filler physical detail rather than emotional beat",
+      "Fix": "cut or tie explicitly to the emotional moment rather than leaving it floating"
+    },
+    {
+      "BeatId": "019f7883-a47f-722b-85e1-83880fea70a2",
+      "Number": 5474,
+      "Chapter": "Chapter 4 \u2014 The Drift",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "The system used to be simple. Reza took the right, Tavi took the left. That was the whole of it.",
+      "Note": "the beat calls for the grief to be shown through mistimed jokes and hollow silence per the prompt, but this line tells the reader the meaning of the high-five system directly rather than dramatizing it",
+      "Fix": "fold the explanation into action or dialogue rather than stating it as flat exposition"
+    },
+    {
+      "BeatId": "019f7883-b37a-7987-ba10-a1b27854bf95",
+      "Number": 5475,
+      "Chapter": "Chapter 4 \u2014 The Drift",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the grin that arrived before the thought",
+      "Note": "stock construction for describing a habitual expression, slightly generic",
+      "Fix": "specify a more particular physical tell unique to Reza"
+    },
+    {
+      "BeatId": "019f7883-b37a-7987-ba10-a1b27854bf95",
+      "Number": 5475,
+      "Chapter": "Chapter 4 \u2014 The Drift",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "they both knew",
+      "Note": "tells the reader the emotional conclusion instead of trusting the preceding image (the hand not rising) to carry it",
+      "Fix": "cut the phrase and let the silence stand"
+    }
+  ]
+}

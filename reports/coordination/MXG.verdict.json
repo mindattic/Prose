@@ -1,0 +1,238 @@
+{
+  "nodeCode": "MXG",
+  "generatedAtUtc": "2026-07-25 17:41:58Z",
+  "beatsScanned": 16,
+  "cleanBeats": 3,
+  "totalFindings": 22,
+  "bySeverity": {
+    "MODERATE": 4,
+    "MINOR": 18
+  },
+  "byType": {
+    "GRIPE": 15,
+    "CLICHE": 6,
+    "MEANING-MISMATCH": 1
+  },
+  "findings": [
+    {
+      "BeatId": "019f00b0-ec7b-70f6-80ec-81a27efb2550",
+      "Number": 4747,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "a closed room and a clean one weren\u0027t the same thing",
+      "Note": "Aphoristic turn of phrase that sounds profound but is a restatement rather than an insight; borders on filler wisdom.",
+      "Fix": "Replace with a concrete detail about what Wennick\u0027s presence in the room actually cost her."
+    },
+    {
+      "BeatId": "019f00b1-0063-7b5b-8efc-0580b52b1960",
+      "Number": 4749,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "The second hand she\u0027d felt on the job since the night Gault offered it \u2014 except the hand was the package itself, reaching back through the relay to hire its own extraction.",
+      "Note": "The \u0027hand\u0027 metaphor is overextended and confusing \u2014 a hand \u0027reaching back through a relay to hire its own extraction\u0027 doesn\u0027t parse as a coherent image.",
+      "Fix": "Simplify to a direct statement of the realization without the strained metaphor."
+    },
+    {
+      "BeatId": "019f00b1-3973-7892-9ab5-3c633c905eff",
+      "Number": 4755,
+      "Chapter": "Chapter 3 \u2014 The Lake Platform",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "She had gone out of herself and left the rest on a cold floor for anyone to find \u2014 and in a few minutes, when the shooting started three miles out, the softest target on the whole board would be the Ghost lying defenseless in this room, somewhere her own skin couldn\u0027t follow. Scout spent that risk every time like it was someone else\u0027s money.",
+      "Note": "Purple, over-explained interiority that tells us the danger and stakes rather than trusting the image of Scout\u0027s body on the floor; \u0027someone else\u0027s money\u0027 metaphor doesn\u0027t quite track (whose money?).",
+      "Fix": "Cut to a single concrete image and let the danger imply itself: \u0027She had gone out of herself and left the rest on a cold floor for anyone to find.\u0027"
+    },
+    {
+      "BeatId": "019f11da-93fa-77dc-8e5a-8e06083d16aa",
+      "Number": 4907,
+      "Chapter": "Chapter 3 \u2014 The Lake Platform",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "she was grateful for how exact they were, the way you\u0027re grateful for a floor that holds your weight \u2014 not warmly, but completely",
+      "Note": "Overworked simile explaining an emotion instead of showing it; the floor comparison is stretched to justify itself with \u0027not warmly, but completely,\u0027 which reads as authorial over-explanation.",
+      "Fix": "Cut the simile; let \u0027She was grateful for how exact they were\u0027 stand alone or ground it in a concrete action."
+    },
+    {
+      "BeatId": "019f00b0-d892-702d-96cb-690051709cda",
+      "Number": 4745,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "That habit had a name. The name was Wennick.",
+      "Note": "Portentous fragment construction telegraphs backstory-tease rather than earning it; reads as stylized filler.",
+      "Fix": "Cut the second sentence or fold the name in naturally: \u0027She\u0027d learned that habit from Wennick.\u0027"
+    },
+    {
+      "BeatId": "019f00b0-d892-702d-96cb-690051709cda",
+      "Number": 4745,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "He saw her. He didn\u0027t wave.",
+      "Note": "Terse noir-beat shorthand for stoic recognition; slightly stock rhythm.",
+      "Fix": "Vary the beat or cut for pacing elsewhere."
+    },
+    {
+      "BeatId": "019f00b0-e180-7b32-84e1-891cd8b2418a",
+      "Number": 4746,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Nothing on her face changed, which was its own kind of hello.",
+      "Note": "Cute aphoristic construction that tells rather than shows the relationship dynamic.",
+      "Fix": "Cut the clause or replace with a concrete beat of acknowledgment."
+    },
+    {
+      "BeatId": "019f00b0-e180-7b32-84e1-891cd8b2418a",
+      "Number": 4746,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "make even a job talk feel like a board meeting between people who owned things",
+      "Note": "Vague purple abstraction \u2014 \u0027people who owned things\u0027 doesn\u0027t hold up to scrutiny as an image.",
+      "Fix": "Specify what ownership looks like here or cut the simile."
+    },
+    {
+      "BeatId": "019f00b0-ec7b-70f6-80ec-81a27efb2550",
+      "Number": 4747,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "waiting to be born",
+      "Note": "Overreaching purple image for guards under pink light; doesn\u0027t hold up literally and feels like reaching for poetry.",
+      "Fix": "Cut or ground the image more literally, e.g. \u0027washed the color of something not yet finished.\u0027"
+    },
+    {
+      "BeatId": "019f00b1-0063-7b5b-8efc-0580b52b1960",
+      "Number": 4749,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "There it was.",
+      "Note": "Vague internal-reveal filler that tells rather than shows the recognition beat.",
+      "Fix": "Cut, or replace with a concrete physical/tactical detail she notices."
+    },
+    {
+      "BeatId": "019f00b1-09c3-7304-a725-ef932a398abd",
+      "Number": 4750,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Not quite a warning \u2014 flat, the way you\u0027d say *the left rear tire is soft.*",
+      "Note": "A common device (mundane-comparison-for-danger) that reads as a stock writerly trick rather than earned voice.",
+      "Fix": "Replace with a more specific, situation-grounded comparison or cut the simile."
+    },
+    {
+      "BeatId": "019f00b1-1405-70df-9c38-fb1f6c5dd9c1",
+      "Number": 4751,
+      "Chapter": "Chapter 2 \u2014 The Escalation",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He watched the road with the particular attention he gave to things about to change shape.",
+      "Note": "Vague abstraction standing in for concrete observation \u2014 tells us he\u0027s focused without showing what that attention looks like.",
+      "Fix": "Ground it in a physical detail: what his hands, eyes, or posture actually do."
+    },
+    {
+      "BeatId": "019f00b1-1d86-7d2a-aa10-106aaabd9c8c",
+      "Number": 4752,
+      "Chapter": "Chapter 2 \u2014 The Escalation",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The work she trusted least right now was her own.",
+      "Note": "Vague introspective aphorism that tells rather than shows Rook\u0027s doubt; doesn\u0027t earn its weight as a standalone line.",
+      "Fix": "Cut or replace with a concrete detail of what she\u0027s second-guessing (a specific decision or read)."
+    },
+    {
+      "BeatId": "019f00b1-1d86-7d2a-aa10-106aaabd9c8c",
+      "Number": 4752,
+      "Chapter": "Chapter 2 \u2014 The Escalation",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "A pause \u2014 not for effect, just the way she marked a number worth marking.",
+      "Note": "Author intrudes to explain the pause isn\u0027t a clich\u00E9 beat, which paradoxically flags it as one; the disclaimer reads as defensive narration.",
+      "Fix": "Drop the meta-justification; let the pause stand or cut it."
+    },
+    {
+      "BeatId": "019f00b1-3973-7892-9ab5-3c633c905eff",
+      "Number": 4755,
+      "Chapter": "Chapter 3 \u2014 The Lake Platform",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "It sat on the platform like a claim staked.",
+      "Note": "Generic tough-guy simile that doesn\u0027t add specific visual information beyond \u0027ominous presence.\u0027",
+      "Fix": "Cut the simile or replace with a concrete physical detail unique to this scene."
+    },
+    {
+      "BeatId": "019f00b1-59b6-7b78-937c-a1b5904f8460",
+      "Number": 4757,
+      "Chapter": "Chapter 3 \u2014 The Lake Platform",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "reading the override with the calm of a man who has operated worse equipment in worse weather and considers this an ordinary day",
+      "Note": "Tells us Boiler\u0027s competence via abstract characterization rather than demonstrating it through action, redundant after the physical fight description just shown.",
+      "Fix": "Cut to action: \u0027reading the override, rain running off his shoulders.\u0027"
+    },
+    {
+      "BeatId": "019f00b1-59b6-7b78-937c-a1b5904f8460",
+      "Number": 4757,
+      "Chapter": "Chapter 3 \u2014 The Lake Platform",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Ohara had prepared for this the way a person prepares for surgery she\u0027s performing on herself \u2014 reviewing the steps until they\u0027re automatic.",
+      "Note": "Strained simile \u2014 self-surgery doesn\u0027t map cleanly onto rehearsing a corridor walk; the comparison doesn\u0027t survive literal scrutiny (surgery on oneself isn\u0027t primarily about steps becoming automatic, it\u0027s about the impossibility of the act).",
+      "Fix": "Replace with a more literal comparison, e.g. \u0027the way a person prepares for something they cannot afford to feel in the moment.\u0027"
+    },
+    {
+      "BeatId": "019f00b1-62a0-7c7b-99e5-445de15a84e1",
+      "Number": 4758,
+      "Chapter": "Chapter 3 \u2014 The Lake Platform",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Lake Michigan lay flat and gray under a featureless sky, the surface like poured metal left to cool.",
+      "Note": "Poured-metal-water is a familiar descriptive move; combined with the earlier storm-lake imagery in ref 0, it reads as stock \u0027aftermath calm\u0027 scenery.",
+      "Fix": "Cut the simile or ground it in something more specific to this location/character\u0027s eye."
+    },
+    {
+      "BeatId": "019f00b1-62a0-7c7b-99e5-445de15a84e1",
+      "Number": 4758,
+      "Chapter": "Chapter 3 \u2014 The Lake Platform",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The lake after a storm, when the lake has decided it\u0027s done.",
+      "Note": "Personifying the lake as having \u0027decided\u0027 something is a soft pathetic-fallacy flourish that doesn\u0027t earn its weight here.",
+      "Fix": "Cut this sentence; the prior description already establishes calm."
+    },
+    {
+      "BeatId": "019f11da-608e-7382-a89a-d1a13b4fb867",
+      "Number": 4906,
+      "Chapter": "Chapter 2 \u2014 The Escalation",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "five people gone to stone in the dark",
+      "Note": "Stock \u0027frozen like stone\u0027 imagery slightly undercuts the otherwise precise tactical description.",
+      "Fix": "Replace with a more specific physical detail unique to one or two characters."
+    },
+    {
+      "BeatId": "019f11da-93fa-77dc-8e5a-8e06083d16aa",
+      "Number": 4907,
+      "Chapter": "Chapter 3 \u2014 The Lake Platform",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "Wennick had trusted her numbers too. She let that sit where it landed and kept counting.",
+      "Note": "This is meant to pay off Rook\u0027s emotional openness with the crew, but the Wennick reference is cryptic without context in this excerpt and reads as a non-sequitur aside rather than landing the stated beat purpose (crew staying after hearing the truth).",
+      "Fix": "Either give the Wennick line enough context to resonate or cut it and let the \u0027told all four of them the truth\u0027 line carry the payoff alone."
+    },
+    {
+      "BeatId": "019f21af-204c-752c-b7e5-14cd25e63ba0",
+      "Number": 4966,
+      "Chapter": "Chapter 2 \u2014 The Escalation",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "took a breaching man the way a piling takes a wake",
+      "Note": "Metaphor strains under literal scrutiny \u2014 a piling absorbs repeated water motion passively, not a single violent collision with a person; the comparison doesn\u0027t quite track physically.",
+      "Fix": "Use a more literal, weight-based comparison (e.g., \u0027the way a wall takes a car\u0027)."
+    }
+  ]
+}
