@@ -258,7 +258,7 @@ She looked at the little painted-shut window high on the far wall. Faith-sized. 
 
 Four textures in the room were wrong.
 
-She let them resolve without moving her face. The tired one near the side entrance. The patient one going slow along the far wall. Two more by the side door carrying the weight of something planned, a job being done on a schedule. She let them come all the way through, and the shape of it was not ambiguous. These were people doing a job, and the job was this room.
+She let them resolve without moving her face. The tired one near the side entrance. The patient one going slow along the far wall. Two more by the side door. She let them come all the way through, and the shape of it was not ambiguous. These were people doing a job, and the job was this room.
 
 She needed to get one person out without warning the rest.
 
@@ -268,7 +268,7 @@ He stood at the far end of the equipment table, still cooling down, the current 
 
 She'd feel bad about using it later, from somewhere that wasn't here. Right now she was going to use it to get him out of the room alive.
 
-She put her glass down and crossed the room in a line that ended at him. She came up on his left, below his sightline, and turned to face him when she was close enough that close was a fact and not a question. She tilted her face up at the angle she'd read he'd been imagining, which was exactly the angle, and she felt the recognition land through him like a plucked string. She held it there. Let him have it.
+She put her glass down and crossed the room in a line that ended at him. She came up on his left, below his sightline, and turned to face him when she was close enough. She tilted her face up at the angle she'd read he'd been imagining, which was exactly the angle, and she felt the recognition land through him like a plucked string. She held it there. Let him have it.
 
 His eyes went to her mouth first. Then up.
 
@@ -392,11 +392,11 @@ The lamp dragged its slow light through the color. Somewhere past two hundred ye
 
 The alley spat them out into a lane the width of a coffin, and Faith took it left without breaking stride.
 
-Ethan followed. His body knew how to do that much, and not much else. The Fade had laid its faint rehearsed quality over everything — the wet composite under his boots, the cold pouring down off the terrace, the way the lane kinked and Faith kinked with it a half-second early — so that it all arrived pre-remembered, footage of an escape he'd already lived. He was aware, distantly, that he ought to be more afraid than this.
+Ethan followed. His body knew how to do that much, and not much else. The Fade had laid its faint rehearsed quality over everything — the wet composite under his boots, the cold pouring down off the terrace, the way the lane kinked and Faith kinked with it a half-second early — so that it all arrived pre-remembered, footage of an escape he'd already lived.
 
 She cut right.
 
-He hadn't seen the reason. There wasn't one, not to his eye — more lane, another rust-breathing vent, a skip slumped against a strut. But she'd gone right two full steps before the lane forked, and when it forked, the left branch dead-ended in a chained gate and the right ran clean toward the terrace edge. She'd known. Not guessed. Known — the certainty of the next word in your own sentence.
+He hadn't seen the reason. There wasn't one, not to his eye — more lane, another rust-breathing vent, a skip slumped against a strut. But she'd gone right two full steps before the lane forked, and when it forked, the left branch dead-ended in a chained gate and the right ran clean toward the terrace edge. She'd known. Not guessed. Known.
 
 He watched the back of her head, the blonde bob damp and flattened, and thought: she is turning before the turn.
 
@@ -448,7 +448,7 @@ She stopped.
 
 "I know."
 
-It shut him up. Not because it was an argument — it wasn't, it was barely a sentence — but because it was the truest thing either of them had said in the dark, and he heard the truth in it the way she'd heard the man's bad shoes. Too small and too stupid to be a lie.
+It shut him up. Not because it was an argument — it wasn't, it was barely a sentence — but because it was the truest thing either of them had said in the dark, and he heard the truth in it the way she'd heard the man's bad shoes.
 
 She watched it go through him. She couldn't not. That was the whole horror of the last two hours: she had a window on him now and no shutter for it. The disbelief went first, thin and already losing. Then the fear came up under it — not of the men. Of her. The clean cold reorganizing kind, where a person you'd let close turns out to have a door in them you didn't know was there. She felt him go back over every easy thing she'd said tonight and wonder which ones she'd lifted off the top of his head.
 
@@ -540,9 +540,9 @@ She saw him do it — not the channel, she couldn't hear that, but the flinch be
 
 Then he listened.
 
-Faith watched his face and read the other end off it. No thunder. Just the light going wrong. First the flood — relief so hard it nearly took his knees: alive, that's her, that's her voice. Then, riding in under the relief, the correction. Something she was telling him that curdled the relief at the edges. His jaw set. His breath went shallow and even, a singer's breath, a man rationing air he didn't know he was rationing.
+Faith watched his face and read the other end off it. No thunder. Just the light going wrong. First the flood — relief so hard it nearly took his knees: alive, that's her, that's her voice. Then, riding in under the relief, the correction. Something she was telling him that curdled the relief at the edges. His jaw set. His breath went shallow and even.
 
-He didn't say much. That was the thing. She'd have thought a man on a channel with Mona would talk, would push, would ask the twelve questions stacked behind his teeth. He didn't. He said, "Okay," low, and then nothing for a long time, listening. Then, "Dayo," and she felt that one go through him and down, a stone dropped in a well with no splash coming back. Then a longer nothing, his eyes fixed on the middle distance where the channel lived. Three men. And one more. The one in charge.
+He didn't say much. That was the thing. She'd have thought a man on a channel with Mona would talk, would push, would ask the twelve questions stacked behind his teeth. He didn't. He said, "Okay," low, and then nothing for a long time, listening. Then, "Dayo," and she felt that one go through him and down. Then a longer nothing, his eyes fixed on the middle distance where the channel lived. Three men. And one more. The one in charge.
 
 "How long," he said.
 
@@ -764,13 +764,13 @@ And Faith was on the floor with one hand laid over her ribs, the blood coming up
 
 Ethan came down onto his knees in the cable river without feeling the concrete take them.
 
-His hands arrived at her before he had any instruction for them. That was the thing he'd remember — that his hands, which had held a room for eighty minutes, which had racked the Wolfpack and put an SMG's short vicious stutter into a man's stopped reel, had nothing at all for this. They hovered. One went toward the blood coming up dark between her fingers and stopped short, because pressing meant hurting and he didn't know the shape of it, didn't know which part was the wound and which was just where the blood had run. The other, useless, needing somewhere to be, came to rest on the side of her face. Palm to her cheek, thumb along the bone under her eye. It was what you had left when there was nothing else to do.
+His hands arrived at her before he had any instruction for them. That was the thing he'd remember — that his hands, which had held a room for eighty minutes, which had racked the Wolfpack and put an SMG's short vicious stutter into a man's stopped reel, had nothing at all for this. They hovered. One went toward the blood coming up dark between her fingers and stopped short, because pressing meant hurting and he didn't know the shape of it, didn't know which part was the wound and which was just where the blood had run. The other, useless, needing somewhere to be, came to rest on the side of her face. Palm to her cheek, thumb along the bone under her eye.
 
 "Okay," he said, to nobody, to her. "Okay. You're okay."
 
 Faith was reading him.
 
-She couldn't not. She'd told him in the doorway — only when everyone's loud — and now there was only him, close, his palm a warm weight on her face. The pain had opened the aperture the rest of the way, jammed the shutter she'd never had against a wall, and he came flooding up the line into her at a range of no distance at all. She read him clean. That was the surprise of it — clean as spring water. The terror first, honest, no performance in it: a man watching a person bleed and being simply and wholly afraid. Then the guilt, hard under it — *you moved into it, you moved the wrong way, I should have, I should have* — guilt over a thing he couldn't take back. And under the guilt, running beneath the fear like the low end under a song, a bright astonished thing he had no defense against and didn't understand: surprise at himself. That she mattered this much. After one night. After two hours and six correct turns and a bathroom window. He was appalled by how much.
+She couldn't not. She'd told him in the doorway — only when everyone's loud — and now there was only him, close, his palm a warm weight on her face. The pain had opened the aperture the rest of the way, jammed the shutter she'd never had against a wall, and he came flooding up the line into her at a range of no distance at all. She read him clean. The terror first, honest, no performance in it: a man watching a person bleed and being simply and wholly afraid. Then the guilt, hard under it — *you moved into it, you moved the wrong way, I should have, I should have* — guilt over a thing he couldn't take back. And under the guilt, running beneath the fear like the low end under a song, a bright astonished thing he had no defense against and didn't understand: surprise at himself. That she mattered this much. After one night. After two hours and six correct turns and a bathroom window. He was appalled by how much.
 
 And under even that, in the place where she'd found the closed decision in Koss and found nothing to give it, she found the other thing. The specific quiet thing. It had been there all night, she understood now. Since the green room. It didn't have words on it either. But it wasn't a picture and it wasn't a closed decision. It was just quiet, and it was aimed, and it had her name where a name would go.
 
