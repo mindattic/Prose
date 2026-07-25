@@ -209,6 +209,19 @@ if (args.Contains("--sql-export"))
     return;
 }
 
+// ss --swain-audit [--slug <slug> | --code <code> | --all] [--repair] [--blockers]
+// Classifies every enabled beat as Scene / Sequel / Ambiguous / Deficient against
+// Dwight Swain's Scene/Sequel doctrine. Deficient = BLOCKER; Ambiguous = MODERATE.
+// Add --repair to auto-splice the missing structural element (disaster turn, decision, etc.)
+// into BLOCKER beats via Haiku (classify) + Sonnet (splice). Exit 0 = success.
+// MUST appear before the bare --repair handler below.
+if (args.Contains("--swain-audit"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SwainAuditCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: dossier-driven story repair — walks every chapter, augments character
 // records with timeline entries and (optionally) LLM-extracted continuity claims.
 //   ss --repair                # cheap timeline-only pass
@@ -1205,18 +1218,6 @@ if (args.Contains("--compute-metrics"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await BeatProseMetricsCli.RunAsync(args, sp);
-    return;
-}
-
-// ss --swain-audit [--slug <slug> | --code <code> | --all] [--repair] [--blockers]
-// Classifies every enabled beat as Scene / Sequel / Ambiguous / Deficient against
-// Dwight Swain's Scene/Sequel doctrine. Deficient = BLOCKER; Ambiguous = MODERATE.
-// Add --repair to auto-splice the missing structural element (disaster turn, decision, etc.)
-// into BLOCKER beats via Haiku (classify) + Sonnet (splice). Exit 0 = success.
-if (args.Contains("--swain-audit"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SwainAuditCli.RunAsync(args, sp);
     return;
 }
 
