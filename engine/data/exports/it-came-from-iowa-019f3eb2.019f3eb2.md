@@ -24,7 +24,7 @@ Then the sound.
 
 Low and steady. Not a failure sound. Not a bearing going bad or an actuator sticking, not any of the dozen wrong sounds he knew by heart. This held one note, low enough to feel in his chest before his ears could name it. Something between a chord and a groan. No maintenance record he'd ever read described anything like it.
 
-He was out of bed before he'd decided to be. If something was wrong with the machine, he'd find it and name it — that was the rule his father had drilled into him, the rule that kept a farm running. Find the fault. Put a word to it. He'd walk out there and identify that sound if it took him till sunrise.
+He was out of bed before he'd decided to be. If something was wrong with the machine, he'd find it and name it — that was the rule his father had drilled into him, the rule that kept a farm running. Find the fault. He'd walk out there and identify that sound if it took him till sunrise.
 
 He dressed in the dark without the light. He'd done it enough times that his hands knew the way. He went out through the kitchen quiet, past his parents' door. They were still asleep, and this wasn't a sound you woke someone for until you knew what it was. He crossed the yard in his boots, laces only half-done. Two Eigenlift towers stood to the south in the pre-dawn grey, thirty stories each, rising straight out of the corn with no town around them. Corn, tower, corn. They'd been there longer than he had. They were just part of what Iowa looked like now.
 
@@ -122,7 +122,7 @@ The top platform was steel grating with a rusted rail he tested and didn't trust
 
 The machine came down the corridor between the corn.
 
-It moved slower than its size said it should. The stride was long enough that each step took its own time. The brass hull was going gold in the morning light. He watched the legs first: two long lateral ones, thin for the forty tons they carried, the knee joint bending the wrong way at mid-height. The lower section swung forward on each stride while the upper section held. The rear leg was shorter, balancing. All three folded and unfolded across the county road, patient, like something that had been doing this for years. The body rode above them, a rounded mass, the forward sensor array catching the low sun. From up here he could see the chassis ports where the manipulators tucked away — closed now, the hull smooth.
+It moved slower than its size said it should. The stride was long enough that each step took its own time. The brass hull was going gold in the morning light. He watched the legs first: two long lateral ones, thin for the forty tons they carried, the knee joint bending the wrong way at mid-height. The lower section swung forward on each stride while the upper section held. The rear leg was shorter, balancing. All three folded and unfolded across the county road. The body rode above them, a rounded mass, the forward sensor array catching the low sun. From up here he could see the chassis ports where the manipulators tucked away — closed now, the hull smooth.
 
 He watched the Crown come on. At forty yards he could make out the dome. At twenty he could see the sensor array at its forward edge. At ten he could see the apex coming level — six feet below where he stood, maybe eight. Close enough that six or eight didn't feel like different numbers.
 
@@ -171,7 +171,7 @@ ETA Zone-12 boundary: approx. 6.5 hours
 
 She read it again.
 
-No manufacturer tag. No registry — the system had queried twice and come back empty both times. Either the transponder had failed or it had never been installed. And Behemoths came from somewhere. All of them. Always.
+No manufacturer tag. No registry — the system had queried twice and come back empty both times. Either the transponder had failed or it had never been installed.
 
 The dead kill-switch was the part that sat wrong in her chest. Kill-switches were hardwired — not registered, not updated from a distance. A dead one meant either total internal failure or something the field manual had no words for.
 
@@ -210,8 +210,6 @@ She didn't touch the demolition log.
 The drones came in from the south while the machine was crossing through Hillsdale.
 
 Wes heard them first — a triple-toned whine over the noise of the walking, the sound that marked Eigenlift interdiction units at a distance. Then he saw them: a staggered V, three units, gray and angular, hovering at hull height. They matched the machine's pace and held forty feet off the forward sensor cluster.
-
-Forty feet was not very far.
 
 Wes sat very still on the Crown. The machine didn't slow. The footfall kept its two-second beat. The formation drifted south at 4.9 miles an hour, holding, scanning.
 
@@ -341,7 +339,7 @@ She thanked Mistry and left.
 
 Hauser came in forty seconds after she was back on the road.
 
-"Anderson. Civilian casualty confirmed at Erie. Three interdiction assets destroyed or disabled. Zone-Twelve perimeter breach in roughly ninety minutes at current pace." A pause. Not frustration — accounting. "My authorization doesn't require your concurrence. I'm asking because you were at the drainage break. What are you seeing?"
+"Anderson. Civilian casualty confirmed at Erie. Three interdiction assets destroyed or disabled. Zone-Twelve perimeter breach in roughly ninety minutes at current pace." A pause. "My authorization doesn't require your concurrence. I'm asking because you were at the drainage break. What are you seeing?"
 
 She was moving. The display had the machine's telemetry dot — 4.9 miles an hour, bearing unchanged — and while she watched it the shape of the thing came together. The machine wasn't walking toward the Zone density. It was walking toward Nzambe's load. Every eleven seconds, the same pulse: a locator. It had a fix on the parts, and it had been following that fix since Davenport.
 
@@ -423,7 +421,7 @@ She reached down and scooped him up.
 
 He let her. No fight, no snap, no protest. He just let himself be lifted, the way you let yourself be lifted when you've been moving forty miles and your body has said everything it has to say. She held him against her chest, and he turned his head toward the machine — brass hull, ninety feet, walking south like it had already arrived — ears forward, tail against her forearm.
 
-She brought the skimmer back up to speed. He shoved his head straight out the left side into the slipstream, ears flat, mouth wide, tongue lolling, the loose full commitment of a dog who'd looked the situation over and found it acceptable.
+She brought the skimmer back up to speed. He shoved his head straight out the left side into the slipstream, ears flat, mouth wide, tongue lolling, the loose full commitment of a dog.
 
 She let him.
 
@@ -543,7 +541,7 @@ He knew her name. She didn't ask how.
 
 "This one had agricultural machine parts in it. Some of the modules were still broadcasting when you took them." She held up the scanner. Eleven-second interval, clean on the display. She was very close to the source. "I need those modules."
 
-He looked at the queue ahead of him. At the boundary towers. At the flat Illinois sky. He was the kind of man who read a situation once and then waited it out.
+He looked at the queue ahead of him. At the boundary towers. At the flat Illinois sky.
 
 "There's a forty-ton unregistered Behemoth doing five miles an hour toward this checkpoint right now," she said. "It has been following that load since Davenport, Iowa. If I bring it what it's looking for, it turns around. If I don't, it reaches the boundary in about ninety minutes. Nobody here has anything that will stop it."
 
@@ -621,8 +619,6 @@ CJ stood at the skimmer with Pip at her feet. She didn't move. The tines drove a
 
 Read it, she told herself. Whatever it's doing to that module, get it all — the depth, the interval, the sequence — get enough that somebody downstream can make sense of it. That was the whole job now: witness this correctly, hold the record, don't lose a single reading before it went quiet.
 
-The corn on both sides of the 88 was very still.
-
 Wes had both palms on the Crown plating. The tines driving down felt different from walking — percussive, purposeful, a rhythm with nothing to do with covering ground.
 
 The hole reached depth.
@@ -637,7 +633,7 @@ Then the machine stopped broadcasting. The line on the scanner dropped flat betw
 
 She watched the line go flat.
 
-The tine began to tamp — the broad flat side now, the agricultural face, pressing the clay in from one edge of the hole, then the other. Methodical. Careful with it. The way you pack earth around a fence post when you mean for it to hold through the freeze and the thaw. Layer by layer, the clay folding back. The module disappeared under it. The hole filled. The cracked ring at the surface pressed back toward shape — level, though a slight discoloration marked where the clay had changed the color of the road.
+The tine began to tamp — the broad flat side now, the agricultural face, pressing the clay in from one edge of the hole, then the other. Methodical. Careful with it. Layer by layer, the clay folding back. The module disappeared under it. The hole filled. The cracked ring at the surface pressed back toward shape — level, though a slight discoloration marked where the clay had changed the color of the road.
 
 Five minutes. Maybe six.
 

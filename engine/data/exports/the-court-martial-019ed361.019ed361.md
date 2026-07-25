@@ -62,7 +62,7 @@ The voice arrived intact. Eleven years of morning briefings had pressed it into 
 
 "I do."
 
-"I made some calls last night." A pause. Bear knew the pause. It was the kind that came before the real information in a briefing, the colonel laying the ground flat so the next thing could stand on it — not the kind that was fishing the silence for what a man might give up into it. Brandt didn't fish. He set facts down where you could see them. "The sub-license review committee convenes Thursday. Not November. The authorization suspension protocol runs forty-eight hours after the committee sits."
+"I made some calls last night." A pause. Bear knew the pause. It was the kind that came before the real information in a briefing, the colonel laying the ground flat so the next thing could stand on it. Brandt didn't fish. He set facts down where you could see them. "The sub-license review committee convenes Thursday. Not November. The authorization suspension protocol runs forty-eight hours after the committee sits."
 
 Bear let that sit in the gray light a moment.
 
@@ -842,8 +842,6 @@ He set the second sheet of paper on the table, flat, and smoothed it once with t
 
 "I will say that once more, slower, because I have watched a room receive that sentence twice now, and I want you to receive it cleanly. I filed it. I looked at it for a while. I did not open it again.
 
-"There. That is the part where it gets quiet.
-
 "I do not mean someone shushed the room. I mean the particular quiet that testimony makes sometimes — where the people listening stop arranging their next question and just hold still, and you can feel the holding from where you sit. A panel has a sound to it, the way a building does. Chairs. The scratch of a stylus. Somebody's breath finding its rhythm. When I said I did not open it again, that sound went out of the room for a moment. Not long. Long enough to register. I have heard the same silence in a briefing tent, and once in a hallway outside a morgue, and I am telling you it is the same silence. I noticed it, and I kept talking, because the alternative was to let the silence become the testimony. The silence is not in the record. The words are. So I gave you the words.
 
 "At 0400 we moved to the consolidation point. A field, two hundred yards north of the compound. Flat, the frost not quite burned off it, the kind of ground that holds the cold a little longer than the air does. I set my kit down and I sat on it. There was nothing left for me to do that anyone would have thanked me for doing. So I waited. I am a large man sitting on a ruck in a cold field, and I want you to picture that plainly, because there was nothing dramatic about it. It was a man being still for the first time in some hours.
@@ -968,9 +966,7 @@ He had been there thirty-two minutes, in the observer's chair behind the glass, 
 
 He looked at Bear. He looked at the operators on the floor. He looked back at Bear.
 
-"Come back," Brandt said. Just like that. As if none of the morning had been his. The man had a real gift for a certain kind of nerve.
-
-Bear considered it.
+"Come back," Brandt said. Just like that. As if none of the morning had been his. Bear considered it.
 
 He looked at the scar under Brandt's left eye — same campaign, same week, same shrapnel the NS-7 had been compensating for ever since. Fifteen years of the relay keeping the lower brainstem working. Fifteen years of Halcyon Neural Services as the man's only cardiologist, maintenance technician, and keeper of the device that stood between him and the next world. Fifteen years dependent on the institution he served, and he had never once asked whether it cared about the dependency.
 
@@ -1235,8 +1231,6 @@ The line was quiet a while longer. "Then it's on the board with a mark I can't t
 "It was never mine to carry alone," Bear said. "It just took me a while to find the right place to set it down."
 
 She read the last one back to him — just the one, the way you confirm the thing that mattered most in a list — and behind her voice he could hear the dock waking up around the line. A crane groaning to life somewhere. Two men trading a laugh over something that had nothing to do with him. The ordinary, unbothered noise of a hundred people starting a Tuesday — people who owed him nothing and had just, without knowing it, taken sixteen names into their morning and made room.
-
-The city didn't know what it had just answered. It answered anyway.
 
 Bear closed the line, put his hand flat on his chest one more time — no warmth, no cycle, just the frame, steady under his palm — and went to find the crane operator who still owed him a nod for the last shift they'd shared. There was a soup he'd been meaning to make. He had the whole rest of the morning, nowhere he had to be, and sixteen accounts that would clear again in a month. That was enough. He'd decided a long time ago exactly what he owed. He'd never once missed a payment in eight years. He wasn't going to start now that no one was watching to see if he would.
 
