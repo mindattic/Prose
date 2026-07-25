@@ -98,13 +98,13 @@ Rook was in her Z5 flat, forty minutes awake, coffee in hand. The morning light 
 
 "Valuable to who?"
 
-"Anonymous." Not a dodge — a definition. Ferris kept a hard line between what they knew and what they were cleared to say, and they kept it the same way every time. That was why she trusted them.
+"Anonymous."  Ferris kept a hard line between what they knew and what they were cleared to say, and they kept it the same way every time. That was why she trusted them.
 
 "Twelve thousand for a courier recovery," she said.
 
 "Twelve thousand," Ferris confirmed.
 
-That was real money for a job described as simple. A courier recovery — find the piece, take it, deliver it — ran four to six thousand, depending on the security and the timeline. Twelve was more than double the top of that range. The overpay told her something. Either the client had money to burn and was buying speed and certainty, or the client had a specific reason to want someone whose work left no mess. Probably both. It usually was.
+That was real money for a job described as simple. A courier recovery — find the piece, take it, deliver it — ran four to six thousand, depending on the security and the timeline. Twelve was more than double the top of that range. The overpay told her something. Either the client had money to burn and was buying speed and certainty, or the client had a specific reason to want someone whose work left no mess. Probably both.
 
 "Two prior locations," she said.
 
@@ -175,7 +175,7 @@ She'd find out what it was. That was, in the end, the only way to find out what 
 [Beat 3]
 She walked the building first, because on foot was the right way to read this kind of target, and because she was already in Z3 with no reason to leave.
 
-The freight depot sat at the north end of the old logistics district, a block off the main arterial, filling most of a corner lot. Four stories, heavy-beam construction from the mid-2140s, the exterior stone still wearing the dark, iron-heavy finish of that decade — a building that had known exactly what it was before anyone tried to make it something else. The conversion had bolted a glass-and-composite entrance pavilion onto the street face and left the rest more or less alone. The bones showed. That was the point.
+The freight depot sat at the north end of the old logistics district, a block off the main arterial, filling most of a corner lot. Four stories, heavy-beam construction from the mid-2140s, the exterior stone still wearing the dark, iron-heavy finish of that decade — a building that had known exactly what it was before anyone tried to make it something else. The conversion had bolted a glass-and-composite entrance pavilion onto the street face and left the rest more or less alone. The bones showed.
 
 She walked the block twice at a normal pace. On the first pass she counted four exterior cameras — two on the pavilion, one at the corner, one at the freight lane. On the second pass she caught a fifth on the east face, mounted at an angle that broke standard coverage geometry. Whoever placed it understood that standard geometry left standard blind spots.
 
@@ -270,7 +270,7 @@ She boarded and took a window seat. The lake showed for the first three stops he
 ## Vox at Four
 
 [Beat 4]
-Rook had been here enough to know the room's logic. Vox left some cable runs bolted down and some coiled and ready. She sorted her gear by a system that wasn't organizational in any normal sense but was, Rook had decided, organizational in a personal one. The room made sense to Vox and to nobody else. That was the point.
+Rook had been here enough to know the room's logic. Vox left some cable runs bolted down and some coiled and ready. She sorted her gear by a system that wasn't organizational in any normal sense but was, Rook had decided, organizational in a personal one. The room made sense to Vox and to nobody else.
 
 She arrived at nine the next morning. Vox let her in without ceremony and went back to her chair, which faced a bank of screens running four live feeds at once. Data streams of some kind. From the door Rook couldn't read the content, only that there were four of them, each updating at its own rhythm.
 
@@ -369,7 +369,7 @@ The Gray Zone Data Cooperative had the second floor of a Z5/Z6 buffer building t
 
 The ground floor was a community market. Rook walked through it: produce, household goods, repair stalls, the packed feel of a market that served regulars, not passing traffic. The prices were on physical signs. That was a buffer-zone habit rooted in the neuretics gap — not everyone here had mesh, not everyone's mesh was current, and a market that posted prices only in the Pulse registry was telling part of its own community it didn't fully exist.
 
-The physical price signs. She kept moving.
+
 
 The second floor was quieter, with the particular quiet of people doing work that took sustained attention. A hallway ran the length of it, rooms off either side: a legal consultation in one, health records filing in another, and at the end, a room with the door open where Scout sat at a temporary workstation. Three cable runs stretched from her setup to access points on the wall. A half-assembled crawler lay on the table beside her.
 
@@ -971,7 +971,7 @@ The transport case sat on the cleared table. Lace had carried it in and set it d
 
 "Reading interface first," Vox said, which was both a briefing and just the order of operations. She examined the case exterior, then opened it.
 
-The Headcount sculpture was exactly what Lace and the brief had said: ceramic composite, half a meter long, high-gloss dark glaze, the surface worked with the almost-typographic markings running in bands along its length. Under the clean work lighting it looked less dramatic than it would have under the exhibition lights. More factual. The way objects look when nobody's trying to sell them.
+The Headcount sculpture was exactly what Lace and the brief had said: ceramic composite, half a meter long, high-gloss dark glaze, the surface worked with the almost-typographic markings running in bands along its length. Under the clean work lighting it looked less dramatic than it would have under the exhibition lights. More factual. 
 
 Vox examined the south face. The reading node at the base: a port cluster in standard provenance format, recessed a half-centimeter into the ceramic, under a dust cap she removed with a thumbnail and set on the table. The port was clean. Good maintenance. Someone had cared for this object.
 
@@ -1298,9 +1298,7 @@ Adaeze had paused at the word. Not surprised. She had simply heard the decision 
 
 None of the rest changed her answer.
 
-That did not surprise her. What surprised her, a little, was that it didn't.
-
-She sat with that an hour later at the safe house table. Ekow's marked-up map lay under her hands. Vox was running the Headcount query on four channels. The crew was arranged around the cleared room the way they arranged themselves when they were working, not when they were relaxed. The positions said the same thing: we are in this now.
+She sat with that an hour later at the safe house table. Ekow's marked-up map lay under her hands. Vox was running the Headcount query on four channels. The crew was arranged around the cleared room the way they arranged themselves when they were working, not when they were relaxed. 
 
 ---
 
@@ -1606,7 +1604,7 @@ The corridor was quiet. The building asleep. The strap settled on her shoulder, 
 
 They moved toward the stairwell.
 
-Behind them, the photograph stayed on the shelf — a man and a woman at a table, an ordinary Tuesday. The apartment door was closed. The room was as it had been, except for the missing bag by the door. In a place kept the same for three years, that empty spot was the most visible thing in it.
+Behind them, the photograph stayed on the shelf — a man and a woman at a table, an ordinary Tuesday. The apartment door was closed. The room was as it had been, except for the missing bag by the door. 
 
 [Beat 16]
 The approach pattern hit Vox's channel at twenty-three forty-seven.
@@ -2228,7 +2226,7 @@ The secondary safe house was a Z3 building that had been a textile cooperative u
 
 Rook had been standing at the board.
 
-She had been looking at the third column for an hour. It had one entry: neuretics registry access — coerced Grade 4 CSE — unlocated. The rest of the column was empty the way empty spaces in an analysis are empty — not blank, waiting. A thing that was out there somewhere and hadn't been found.
+She had been looking at the third column for an hour. It had one entry: neuretics registry access — coerced Grade 4 CSE — unlocated. Not blank. Waiting. A thing that was out there somewhere and hadn't been found.
 
 At 0317, Vox looked up from the equipment table.
 
@@ -2681,7 +2679,7 @@ One crew.
 [Beat 24]
 Lace had the credentials on the third identity she'd been running for six weeks: Axiom Heritage Acquisitions, a Z4 consultancy with aeroplex access at the Spine. Grade 4 aeroplex clearance. A Level 14 office registration. The set had been built for exactly this — a job that needed legitimate presence at 480 meters, presence that read as membership, not access. The kind of presence where being at altitude is unremarkable because altitude is where you work.
 
-The VTOL seated six. The crew boarded as a consulting team starting an early aeroplex session — the kind of group that used a maintenance-registered VTOL instead of a commercial Spine transit, because consulting firms watched their access costs and the maintenance rate ran sixty percent below commercial. It was unremarkable. That was the point.
+The VTOL seated six. The crew boarded as a consulting team starting an early aeroplex session — the kind of group that used a maintenance-registered VTOL instead of a commercial Spine transit, because consulting firms watched their access costs and the maintenance rate ran sixty percent below commercial. It was unremarkable.
 
 Nari wasn't on the VTOL. She stayed at the Z3 safe house, Gerald on the exterior, Scout's threading presence in place before Rook reached the rooftop. Scout's body was at the Spine ops center. She had said, "I'll be here." And she was in two places at once before Rook reached the roof.
 
@@ -2699,7 +2697,7 @@ She caught Rook's eye. "The Spine's observation decks are on levels three and se
 
 The hum continued. The altitude kept arriving.
 
-At 480 meters, the VTOL set down on the Level 3 pad — the guest and commercial tier, the way in for anyone who belonged at the Spine without living there. The surface was a pale composite that read as finished, not industrial, that took foot traffic without showing it. The exact surface of a place designed so the people using it never had to think about the material under their feet.
+At 480 meters, the VTOL set down on the Level 3 pad — the guest and commercial tier, the way in for anyone who belonged at the Spine without living there. The surface was a pale composite that read as finished, not industrial, that took foot traffic without showing it. 
 
 The Spine was silk at 480 meters. Not the material — the feel of it. Smooth surfaces. Climate you never noticed, the way you never notice good climate management in places built for people who don't have to. Light that cost more per year to run than the entire Z6 community center renovation, tuned to a quality that said indoor and outdoor at once, that made the altitude an amenity instead of an imposition. Corridors with sightline views. Comfort at every intersection.
 
@@ -2875,7 +2873,7 @@ The Spine's Level 12 residential corridor ran east-west, sixty meters between th
 
 Lace arrived at 0855 and spent the first four minutes doing nothing in particular.
 
-Not standing. Moving. Moving the way a person moves when they have somewhere to be and no worry about getting there, because people in their own environment never worry about reaching the places they are allowed to reach. She had the Mele Taufa identity on so completely that the corridor felt familiar — a space she had occupied in her head before she ever set foot in it. She had built the identity to fit this corridor the way a part is built to fit a load path. It fit. She was here. She belonged.
+Not standing. Moving. Moving the way a person moves when they have somewhere to be and no worry about getting there, because people in their own environment never worry about reaching the places they are allowed to reach. She had the Mele Taufa identity on so completely that the corridor felt familiar — a space she had occupied in her head before she ever set foot in it. She had built the identity to fit this corridor. It fit. She was here. She belonged.
 
 That was the Spine's security at Level 12. The checks happened below — at the access gate, at the Eigenlift authorization point, at the node that matched your face against the resident database. By the time you stood in this corridor, the verification was over. Your presence was the proof. Anyone who met you here dealt with the fact of your clearance, not the question of it.
 
@@ -3367,7 +3365,7 @@ They went down.
 [Beat 30]
 Nobody spoke for a few minutes.
 
-This was not unusual after an operation cleared its primary phase. The silence had a specific quality — not avoidance, not withdrawal. Six people who had run a complex technical job for three hours, letting the operational register exhale before the assessment began. The timeline had gone from compressed to open. The body registered the change before the mind did.
+This was not unusual after an operation cleared its primary phase. The silence had a specific quality — not avoidance, not withdrawal. Six people who had run a complex technical job for three hours, letting the operational register exhale before the assessment began. The timeline had gone from compressed to open. 
 
 Rook let it run for four minutes.
 
@@ -3627,7 +3625,7 @@ Vox set the last document on the bench.
 
 "Yim Seul-ki," she said.
 
-The name landed with the weight of a thing that had been abstract becoming concrete. Not a revelation — the analysis had been pointing at the shape of the person for an hour, and everyone in the room had tracked the shape. But the shape was not the name. The name was a different order of thing.
+ Not a revelation — the analysis had been pointing at the shape of the person for an hour, and everyone in the room had tracked the shape. But the shape was not the name. The name was a different order of thing.
 
 Ekow's hands went still on the table.
 
@@ -3746,7 +3744,7 @@ Forty-seven documents in two days. Eight from the founding period. The rest were
 
 The rest of the crew did the pre-op work the sanctum entry required.
 
-Ekow had the Thorn access documentation spread out — the overdue deployment credential, the authorization language that would carry him through the sanctum checkpoint, the security profile for entry. He had been inside the Z5 community center's administrative structure twice in his Lotus years, and he built the entry brief from that. Flat, no elaboration, the minimum the crew needed to move correctly.
+Ekow had the Thorn access documentation spread out — the overdue deployment credential, the authorization language that would carry him through the sanctum checkpoint, the security profile for entry. He had been inside the Z5 community center's administrative structure twice in his Lotus years, and he built the entry brief from that. 
 
 Lace was at the secondary bench with the identity materials. The face she was building was the closest to her own she had used in years — the sanctum ran on community care institutionalized as authority, and the face that read most naturally there was one that had spent real time in such places. Not performing belonging. Having enough of the real version that the performance disappeared. She did. She had been in enough of those rooms over the years.
 
@@ -3809,7 +3807,7 @@ By 0415 she was at the bench in the main room, the operational feed running on t
 
 The Z5 community center at 7 Velos Street had been civic-foundation-listed since 2198 and a Lotus node for twenty of its twenty-eight years. The Syndicate had chosen it the way it chose all its community-zone infrastructure: the ordinary was more secure than the secured. A secured facility was a target. It cost resources and left signatures. A building with an honest charitable mission cost none of that — food security on Tuesdays and Fridays, youth education every weekday morning, legal advisory three mornings a week, all of it real, all of it staffed by people who believed in the work, all of it on Syndicate grants processed through the same structure that ran the free clinics.
 
-The Syndicate had built the care. Twenty-eight years had made it genuine. Both were true at once. The volunteers were genuine, the attorneys were genuine, the families were real families with real needs — and the sub-level council room had been running beneath all of it since 2206. The silk did not stop being silk because it was also real care. The care did not stop being real because it was also the silk's foundation. The building held both, the way the woman who built it held both, and had for forty years.
+The Syndicate had built the care. Twenty-eight years had made it genuine.  The volunteers were genuine, the attorneys were genuine, the families were real families with real needs — and the sub-level council room had been running beneath all of it since 2206. The silk did not stop being silk because it was also real care. The care did not stop being real because it was also the silk's foundation. The building held both, the way the woman who built it held both, and had for forty years.
 
 She ran the timing sequence until it was clean, put it down, and waited for the crew to move.
 
@@ -4199,7 +4197,7 @@ The council chamber's east entrance was the side door Boiler had found in the pl
 
 Seul-ki was waiting at it when Rook came through.
 
-Rook had expected the visual weight of thirty years running an institution. What she found was a woman of seventy-three — compact, contained, with the solidity that very old people in hard physical work sometimes keep. Not large. Present in a way that didn't need size. Her face had done a great deal of work for a long time and was still doing it.
+Rook had expected the visual weight of thirty years running an institution. What she found was a woman of seventy-three — compact, contained, with the solidity that very old people in hard physical work sometimes keep. Not large.  Her face had done a great deal of work for a long time and was still doing it.
 
 She wore the plain register of a community institution: good quality, unremarkable. The small Lotus mark on her lapel, the same mark the food volunteers wore, worn the way you wear a thing you stopped choosing thirty years ago.
 
@@ -4609,9 +4607,9 @@ He stood with the crew.
 [Beat 42]
 The crew had scattered to their holding positions.
 
-Priya was at a residence the Legal Cooperative kept — functional, secure, run by people who had done witness-protection work in the Z5/Z6 corridor for twelve years without turning operational. Rook respected that discipline. It was not easy to stay clean when the institutions you were protecting people from were the same ones that should have been protecting them.
+Priya was at a residence the Legal Cooperative kept — functional, secure, run by people who had done witness-protection work in the Z5/Z6 corridor for twelve years without turning operational. Rook respected that discipline. 
 
-Nari was at a location Ekow had arranged. He hadn't shared the address. Rook hadn't asked. She had trusted Ekow's arrangements since hour two of their first briefing — which was when you either read a person as sound or you didn't — and three weeks in the same building hadn't changed the read.
+Nari was at a location Ekow had arranged. He hadn't shared the address. Rook hadn't asked. She had trusted Ekow's arrangements since hour two of their first briefing — which was — and three weeks in the same building hadn't changed the read.
 
 Lace had gone to ground in Z3. She needed time after a long impersonation run. Time when her own face was her own face, when the work of holding a character could stop. The crew didn't ask about it. Asking made it harder, not easier.
 
@@ -4623,7 +4621,7 @@ Boiler had said two things before he dispersed. In the loading dock at 0615, in 
 
 "Conditionally sound," she said. "The load path is correct. Whether it holds the load over the next forty-eight hours is a different question."
 
-He nodded once — the nod of a man who knew that conditionally sound was the honest answer, and anything more confident was a lie. At the door, coat already on, he said, "You know what you do with a structure that's conditionally sound? You wait with it. Don't poke it. Let it settle the weight."
+He nodded once — the nod of a man. At the door, coat already on, he said, "You know what you do with a structure that's conditionally sound? You wait with it. Don't poke it. Let it settle the weight."
 
 Then he was gone, back to his community building in Z5.
 
@@ -4749,7 +4747,7 @@ The crew dispersed on the morning of the fourth day.
 
 Not a formal dispersal. No debrief scheduled, no moment where the operation was officially closed, no ceremony — the crew didn't work that way and never had, across any of the operations that had brought them to this Z3 safe house. They had been together four days since the council chamber. They'd held the space through the forty-eight-hour window and the three days after. Now the holding was finished, and they left in the order in which they had things to go back to.
 
-Lace was first, two hours after sunrise. She moved with the ease of a person returning to her own life — or to the version of it that existed between operations, which was its own kind of performance. The line between the performance and the real had dissolved for her years ago, somewhere under other people's faces. She touched Rook's arm at the door, briefly, and was gone.
+Lace was first, two hours after sunrise. She moved with the ease of a person returning to her own life — or to the version of it that existed between operations. The line between the performance and the real had dissolved for her years ago, somewhere under other people's faces. She touched Rook's arm at the door, briefly, and was gone.
 
 Vox said, to the room, "Four channels. If you need me." A statement about her operational status. And, Rook understood, about herself — the number held as a discipline, not a limit. Then she was gone too.
 
@@ -4757,7 +4755,7 @@ Scout had left the night before, back to Z1 and Gerald and the structural-data w
 
 Boiler was last before Ekow.
 
-He found Rook in the safe house kitchen — the functional kind, everything necessary and nothing decorative, built for people who weren't going to stay long enough to have feelings about it. He poured himself something and stood with it, in no hurry.
+He found Rook in the safe house kitchen — the functional kind, everything necessary and nothing decorative. He poured himself something and stood with it, in no hurry.
 
 "You're going to be okay," he said.
 
@@ -4872,9 +4870,9 @@ She was counting forward. That was the new count. The imprecise one — the coun
 
 She started with the Z6 registry.
 
-Two hundred thousand registered neuretics in the Phase 0 cluster. Not a round number the way invented numbers are round — a real count, the slice the three live nodes had captured before Vox and Priya rolled back the rest. Not statistics. Families in the food distribution's active accounts. Patients in the clinic's four hundred and twelve treatment plans. Children in the youth rooms. People who had built lives in the buffer zone the way you build them there — using what was there, trusting institutions that had stood twenty-eight years, because the civic alternative was fourteen-percent coverage in Z8.
+Two hundred thousand registered neuretics in the Phase 0 cluster. Not a round number the way invented numbers are round — a real count, the slice the three live nodes had captured before Vox and Priya rolled back the rest.  Families in the food distribution's active accounts. Patients in the clinic's four hundred and twelve treatment plans. Children in the youth rooms. People who had built lives in the buffer zone the way you build them there — using what was there, trusting institutions that had stood twenty-eight years, because the civic alternative was fourteen-percent coverage in Z8.
 
-The data still existed. The Protocol was dissolved, and the authorization chain that would have pushed the data toward displacement was cut. But a targeting dataset does not disappear because the plan that built it is gone. It sat in a Bureau filing as evidence in a potential case. It sat in the package in Vox's possession. It sat in the Lotus archive somewhere, held by the hardliners who had gone dark in channels she couldn't read. It waited.
+The data still existed. The Protocol was dissolved, and the authorization chain that would have pushed the data toward displacement was cut. But a targeting dataset does not disappear because the plan that built it is gone. It sat in a Bureau filing as evidence in a potential case. It sat in the package in Vox's possession. It sat in the Lotus archive somewhere, held by the hardliners who had gone dark in channels she couldn't read. 
 
 The Bureau would need time. Adaeze had told her three days ago she couldn't predict the timeline. "Years, maybe," she'd said, with the tiredness of someone who'd watched the Bureau not act on things for twelve years. "Or a new administration finds it useful. Or someone in there who's been waiting for something like this decides it's the moment. You can't predict it. You file it correctly, keep it visible, and make it hard to bury."
 
