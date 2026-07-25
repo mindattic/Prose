@@ -96,7 +96,8 @@ public sealed class SwainAuditService(
 
     // ── Audit ─────────────────────────────────────────────────────────────────
 
-    public async Task<SwainAuditReport> AuditAsync(string slugOrCode, CancellationToken ct = default)
+    public async Task<SwainAuditReport> AuditAsync(string slugOrCode,
+        string? classifyModel = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes
@@ -104,10 +105,11 @@ public sealed class SwainAuditService(
             .Select(n => new { n.Id, Code = n.NodeCode ?? n.Slug ?? "", n.Title })
             .FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Story node not found: '{slugOrCode}'");
-        return await AuditNodeAsync(node.Id, node.Code, node.Title ?? "", ct);
+        return await AuditNodeAsync(node.Id, node.Code, node.Title ?? "", classifyModel, ct);
     }
 
-    public async Task<List<SwainAuditReport>> AuditAllAsync(CancellationToken ct = default)
+    public async Task<List<SwainAuditReport>> AuditAllAsync(
+        string? classifyModel = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var nodes = await db.Nodes
@@ -120,7 +122,7 @@ public sealed class SwainAuditService(
         foreach (var node in nodes)
         {
             ct.ThrowIfCancellationRequested();
-            reports.Add(await AuditNodeAsync(node.Id, node.Code, node.Title ?? "", ct));
+            reports.Add(await AuditNodeAsync(node.Id, node.Code, node.Title ?? "", classifyModel, ct));
         }
         return reports;
     }
@@ -136,10 +138,12 @@ public sealed class SwainAuditService(
             .FirstOrDefaultAsync(ct);
     }
 
-    public async Task<string?> SpliceAsync(SwainBeatResult finding, string beatText, CancellationToken ct = default)
+    public async Task<string?> SpliceAsync(SwainBeatResult finding, string beatText,
+        string? spliceModel = null, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(ApiKey)) { log.LogWarning("No claude-api key for splice."); return null; }
 
+        var model = spliceModel ?? SpliceModel;
         var system = $"""
             A beat is structurally deficient — it is missing its {finding.MissingElement}.
 
@@ -157,7 +161,7 @@ public sealed class SwainAuditService(
         try
         {
             var result = await legion.CallAsync(
-                Provider, ApiKey, SpliceModel,
+                Provider, ApiKey, model,
                 system, beatText,
                 maxTokens: 4096, temperature: 0.5, ct);
             return string.IsNullOrWhiteSpace(result) ? null : result.Trim();
@@ -186,7 +190,7 @@ public sealed class SwainAuditService(
     // ── Internal ──────────────────────────────────────────────────────────────
 
     private async Task<SwainAuditReport> AuditNodeAsync(
-        Guid nodeId, string nodeCode, string title, CancellationToken ct)
+        Guid nodeId, string nodeCode, string title, string? classifyModel, CancellationToken ct)
     {
         // Load all beats first (single query) — DbContext is not thread-safe.
         // Beats live on chapter-child nodes (SS-A43), not directly on the story node.
@@ -208,7 +212,7 @@ public sealed class SwainAuditService(
         var tasks = beats.Select((b, i) => Task.Run(async () =>
         {
             await sem.WaitAsync(ct);
-            try   { return await ClassifyBeatAsync(i + 1, b.Id, b.Title, b.Text, ct); }
+            try   { return await ClassifyBeatAsync(i + 1, b.Id, b.Title, b.Text, classifyModel, ct); }
             finally { sem.Release(); }
         }, ct)).ToList();
 
@@ -218,7 +222,7 @@ public sealed class SwainAuditService(
     }
 
     private async Task<SwainBeatResult> ClassifyBeatAsync(
-        int position, Guid beatId, string title, string text, CancellationToken ct)
+        int position, Guid beatId, string title, string text, string? classifyModel, CancellationToken ct)
     {
         if (string.IsNullOrWhiteSpace(text))
             return Fail(beatId, position, title, 0, "goal", "Beat has no prose text.");
@@ -226,11 +230,12 @@ public sealed class SwainAuditService(
         if (string.IsNullOrWhiteSpace(ApiKey))
             return Fail(beatId, position, title, text.Length, "none", "No claude-api key configured.");
 
+        var model = classifyModel ?? ClassifyModel;
         try
         {
             var userMsg = $"[Beat {position}: {title}]\n\n{text}";
             var raw = await legion.CallAsync(
-                Provider, ApiKey, ClassifyModel,
+                Provider, ApiKey, model,
                 ClassifySystem, userMsg,
                 maxTokens: 250, temperature: 0.1, ct);
             return ParseClassification(beatId, position, title, text.Length, raw);

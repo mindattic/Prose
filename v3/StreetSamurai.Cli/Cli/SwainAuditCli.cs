@@ -6,11 +6,12 @@ namespace StreetSamurai.Cli;
 /// <summary>
 /// CLI entry for Swain Scene/Sequel doctrine audit and repair.
 ///
-///   ss --swain-audit --slug &lt;slug&gt;          classify all beats; print BLOCKER + MODERATE findings
-///   ss --swain-audit --code &lt;code&gt;          same, by NodeCode (e.g. BCODA)
-///   ss --swain-audit --all                  audit every non-draft story; print summary table
-///   ss --swain-audit --slug &lt;slug&gt; --repair auto-splice missing elements for all BLOCKER beats
-///   ss --swain-audit --all    --repair      bulk repair across all stories
+///   ss --swain-audit --slug &lt;slug&gt;               classify all beats; print BLOCKER + MODERATE findings
+///   ss --swain-audit --code &lt;code&gt;               same, by NodeCode (e.g. BCODA)
+///   ss --swain-audit --all                       audit every non-draft story; print summary table
+///   ss --swain-audit --slug &lt;slug&gt; --repair      auto-splice missing elements for all BLOCKER beats
+///   ss --swain-audit --all    --repair           bulk repair across all stories
+///   ss --swain-audit --all    --repair --opus    use Opus for both classify and splice (stubborn beats)
 ///
 /// Append --blockers to suppress MODERATE findings (show only BLOCKERs).
 ///
@@ -20,27 +21,34 @@ namespace StreetSamurai.Cli;
 ///   Ambiguous — one element weak or underwritten                   → MODERATE
 ///   Deficient — does not execute either pattern; element missing   → BLOCKER
 ///
-/// Repair: Haiku classifies → Sonnet splices the minimum prose to add the missing element.
-/// Existing sentences are never changed; only the missing structural turn is appended.
+/// Repair: Haiku classifies → Sonnet splices. --opus upgrades both to claude-opus-4-8
+/// for beats that resist multiple Sonnet passes.
 /// </summary>
 public static class SwainAuditCli
 {
+    private const string OpusModel = "claude-opus-4-8";
+
     public static async Task<int> RunAsync(string[] args, IServiceProvider sp)
     {
-        var slugArg     = ArgValue(args, "--slug");
-        var codeArg     = ArgValue(args, "--code");
-        var doAll       = args.Contains("--all");
-        var doRepair    = args.Contains("--repair");
+        var slugArg      = ArgValue(args, "--slug");
+        var codeArg      = ArgValue(args, "--code");
+        var doAll        = args.Contains("--all");
+        var doRepair     = args.Contains("--repair");
         var blockersOnly = args.Contains("--blockers");
+        var useOpus      = args.Contains("--opus");
+
+        string? classifyModel = useOpus ? OpusModel : null;
+        string? spliceModel   = useOpus ? OpusModel : null;
 
         if (slugArg == null && codeArg == null && !doAll)
         {
             Console.WriteLine("Usage:");
-            Console.WriteLine("  ss --swain-audit --slug <slug>          audit one story");
-            Console.WriteLine("  ss --swain-audit --code <code>          audit one story by NodeCode");
-            Console.WriteLine("  ss --swain-audit --all                  audit all non-draft stories");
-            Console.WriteLine("  ss --swain-audit --slug <slug> --repair audit + splice BLOCKERs");
-            Console.WriteLine("  ss --swain-audit --all    --repair      bulk repair all stories");
+            Console.WriteLine("  ss --swain-audit --slug <slug>               audit one story");
+            Console.WriteLine("  ss --swain-audit --code <code>               audit one story by NodeCode");
+            Console.WriteLine("  ss --swain-audit --all                       audit all non-draft stories");
+            Console.WriteLine("  ss --swain-audit --slug <slug> --repair      audit + splice BLOCKERs");
+            Console.WriteLine("  ss --swain-audit --all    --repair           bulk repair all stories");
+            Console.WriteLine("  ss --swain-audit --all    --repair --opus    Opus classify + splice");
             Console.WriteLine();
             Console.WriteLine("  --blockers   suppress MODERATE findings (show BLOCKER only)");
             return 0;
@@ -50,6 +58,9 @@ public static class SwainAuditCli
         using var cts = new CancellationTokenSource();
         Console.CancelKeyPress += (_, e) => { e.Cancel = true; cts.Cancel(); };
 
+        if (useOpus)
+            Console.WriteLine($"[Opus mode — classify + splice using {OpusModel}]");
+
         var failures = 0;
         try
         {
@@ -57,7 +68,7 @@ public static class SwainAuditCli
             {
                 Console.WriteLine("=== Swain audit — all stories ===");
                 Console.WriteLine();
-                var reports = await svc.AuditAllAsync(cts.Token);
+                var reports = await svc.AuditAllAsync(classifyModel, cts.Token);
                 PrintSummaryTable(reports);
 
                 if (doRepair)
@@ -73,7 +84,7 @@ public static class SwainAuditCli
                         Console.WriteLine($"Repairing {totalBlockers} BLOCKER(s) across {withBlockers.Count} story/stories.");
                         Console.WriteLine();
                         foreach (var report in withBlockers)
-                            failures += await RepairAsync(svc, report, cts.Token);
+                            failures += await RepairAsync(svc, report, spliceModel, cts.Token);
                     }
                 }
             }
@@ -83,7 +94,7 @@ public static class SwainAuditCli
                 Console.WriteLine($"=== Swain audit — {key} ===");
                 Console.WriteLine();
                 SwainAuditReport report;
-                try   { report = await svc.AuditAsync(key, cts.Token); }
+                try   { report = await svc.AuditAsync(key, classifyModel, cts.Token); }
                 catch (InvalidOperationException ex)
                 {
                     Console.WriteLine($"✘ {ex.Message}");
@@ -96,7 +107,7 @@ public static class SwainAuditCli
                     if (report.BlockerCount == 0)
                         Console.WriteLine("No BLOCKER findings — nothing to repair.");
                     else
-                        failures += await RepairAsync(svc, report, cts.Token);
+                        failures += await RepairAsync(svc, report, spliceModel, cts.Token);
                 }
             }
         }
@@ -163,7 +174,7 @@ public static class SwainAuditCli
     // ── Repair ────────────────────────────────────────────────────────────────
 
     private static async Task<int> RepairAsync(
-        SwainAuditService svc, SwainAuditReport report, CancellationToken ct)
+        SwainAuditService svc, SwainAuditReport report, string? spliceModel, CancellationToken ct)
     {
         var blockers = report.Results.Where(r => r.Severity == "BLOCKER").ToList();
         if (blockers.Count == 0) return 0;
@@ -186,7 +197,7 @@ public static class SwainAuditCli
             }
 
             var before = beatText.Length;
-            var spliced = await svc.SpliceAsync(finding, beatText, ct);
+            var spliced = await svc.SpliceAsync(finding, beatText, spliceModel, ct);
             if (spliced == null)
             {
                 Console.WriteLine("✘ splice failed");
