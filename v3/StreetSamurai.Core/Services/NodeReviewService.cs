@@ -846,9 +846,13 @@ Return ONLY a JSON object and nothing else:
             foreach (var kv in beatScores)
                 review.BeatScores.Add(new NodeReviewBeatScore
                 {
-                    ReviewId = review.Id,
-                    BeatNumber = kv.Key,
-                    Score = kv.Value,
+                    ReviewId     = review.Id,
+                    BeatNumber   = kv.Key,
+                    Score        = kv.Value.Score,
+                    ScoreBeat    = kv.Value.Beat,
+                    ScoreChapter = kv.Value.Chapter,
+                    ScoreArc     = kv.Value.Arc,
+                    ScoreStory   = kv.Value.Story,
                     BeatTextHash = beatHashes?.GetValueOrDefault(kv.Key),
                 });
         return review;
@@ -868,7 +872,12 @@ Return ONLY a JSON object, nothing else:
 - ""score"": integer 1-100 — your overall reaction to THIS PART as this reader. Use the WHOLE scale; do not default to the 70s.
 - ""flow"": integer 1-100 — how well THIS PART hangs together (momentum, transitions, payoffs within it), separate from individual beat quality.
 - ""weakness"": your single biggest gripe about this part in EIGHT WORDS OR FEWER, or ""none"".
-- ""beat_scores"": rate EVERY beat in this part 1-5 in context (1 = hurt it, 3 = fine, 5 = highlight), keyed by the GLOBAL beat number {segment.FirstBeat}..{segment.LastBeat}: {{""{segment.FirstBeat}"":4,""{segment.FirstBeat + 1}"":3}}.
+- ""beat_scores"": rate EVERY beat in this part across four dimensions, keyed {segment.FirstBeat}..{segment.LastBeat}. Each is 1-5 (1=fails, 3=works, 5=outstanding):
+  - ""beat"": does this beat execute its dramatic function? (Swain: active Scene goal/conflict/disaster, or Sequel reaction/dilemma/decision)
+  - ""chapter"": does it advance the chapter's purpose and build momentum?
+  - ""arc"": does it serve the story arc — right escalation, plants/pays off correctly?
+  - ""story"": does it contribute to the whole — theme, character arc, reader journey?
+  Format: {{""{segment.FirstBeat}"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},{{""{segment.FirstBeat + 1}"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}
 
 Be honest and use the whole scale.";
     }
@@ -1287,7 +1296,7 @@ Return ONLY a JSON object, nothing else:
         var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct, cacheUserMessage: true);
 
         int score; string reviewText; List<string> improvements;
-        int? flow = null; Dictionary<int, int>? beatScores = null;
+        int? flow = null; Dictionary<int, BeatScoreEntry>? beatScores = null;
         if (studyMode)
         {
             if (!TryParseStudyReview(raw, export.BeatCount, out score, out flow, out reviewText, out improvements, out beatScores))
@@ -1328,9 +1337,13 @@ Return ONLY a JSON object, nothing else:
             foreach (var kv in beatScores)
                 review.BeatScores.Add(new NodeReviewBeatScore
                 {
-                    ReviewId = review.Id,
-                    BeatNumber = kv.Key,
-                    Score = kv.Value,
+                    ReviewId     = review.Id,
+                    BeatNumber   = kv.Key,
+                    Score        = kv.Value.Score,
+                    ScoreBeat    = kv.Value.Beat,
+                    ScoreChapter = kv.Value.Chapter,
+                    ScoreArc     = kv.Value.Arc,
+                    ScoreStory   = kv.Value.Story,
                     BeatTextHash = beatHashes?.GetValueOrDefault(kv.Key),
                 });
         return review;
@@ -1406,9 +1419,13 @@ Return ONLY a JSON object, nothing else:
             foreach (var kv in beatScores)
                 review.BeatScores.Add(new NodeReviewBeatScore
                 {
-                    ReviewId = review.Id,
-                    BeatNumber = kv.Key,
-                    Score = kv.Value,
+                    ReviewId     = review.Id,
+                    BeatNumber   = kv.Key,
+                    Score        = kv.Value.Score,
+                    ScoreBeat    = kv.Value.Beat,
+                    ScoreChapter = kv.Value.Chapter,
+                    ScoreArc     = kv.Value.Arc,
+                    ScoreStory   = kv.Value.Story,
                     BeatTextHash = beatHashes?.GetValueOrDefault(kv.Key),
                 });
         return review;
@@ -1444,7 +1461,12 @@ Return ONLY a JSON object, nothing else:
 - ""flow"": integer 1-100 — how well it hangs together as a sequence (momentum, payoffs, transitions), separate from beat quality.
 - ""prose_gripe"": your sharpest CRAFT complaint in TEN WORDS OR FEWER (voice inconsistency, purple prose, flat sentences, repetitive cadence, unearned metaphor) — or ""none"".
 - ""logic_gripe"": your sharpest STORY-LOGIC complaint in TEN WORDS OR FEWER (causality gap, character knowledge error, timeline impossibility, orphaned setup, unearned resolution) — or ""none"".
-- ""beat_scores"": rate EVERY beat 1-5 in context (1 = hurt the story, 3 = fine, 5 = highlight), keyed by beat number 1..{beatCount}: {{""1"":4,""2"":3}}.
+- ""beat_scores"": rate EVERY beat across four dimensions, keyed 1..{beatCount}. Each is 1-5 (1=fails, 3=works, 5=outstanding):
+  - ""beat"": does this beat execute its dramatic function? (Swain: active Scene goal/conflict/disaster, or Sequel reaction/dilemma/decision)
+  - ""chapter"": does it advance the chapter's purpose and build momentum?
+  - ""arc"": does it serve the story arc — right escalation, plants/pays off correctly?
+  - ""story"": does it contribute to the whole — theme, character arc, reader journey?
+  Format: {{""1"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},""2"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}
 
 Be honest and use the whole scale. Gripes must name a SPECIFIC flaw, not praise with soft hedging.";
     }
@@ -2202,12 +2224,47 @@ Be specific; do not invent praise the reviews don't support.";
         return false;
     }
 
+    /// <summary>Four-dimensional per-beat score entry (SS-A47 — Swain doctrine).
+    /// <see cref="Score"/> is the canonical single value persisted to <see cref="NodeReviewBeatScore.Score"/>.
+    /// New ballots supply all four dimensions; legacy ballots (old integer format) leave Beat/Chapter/Arc/Story null.</summary>
+    private sealed record BeatScoreEntry(int Score, int? Beat, int? Chapter, int? Arc, int? Story)
+    {
+        /// <summary>Parse one beat_scores value: either an int (legacy) or an object with beat/chapter/arc/story keys (SS-A47).
+        /// Returns null on parse failure.</summary>
+        internal static BeatScoreEntry? Parse(JsonElement el)
+        {
+            if (el.ValueKind == JsonValueKind.Number && el.TryGetInt32(out var i))
+                return new BeatScoreEntry(Math.Clamp(i, 1, 5), null, null, null, null);
+            if (el.ValueKind == JsonValueKind.String && int.TryParse(el.GetString(), out var s))
+                return new BeatScoreEntry(Math.Clamp(s, 1, 5), null, null, null, null);
+            if (el.ValueKind == JsonValueKind.Object)
+            {
+                static int? TryGet(JsonElement obj, string key)
+                {
+                    if (!obj.TryGetProperty(key, out var v)) return null;
+                    if (v.ValueKind == JsonValueKind.Number && v.TryGetInt32(out var n)) return Math.Clamp(n, 1, 5);
+                    if (v.ValueKind == JsonValueKind.String && int.TryParse(v.GetString(), out var ns)) return Math.Clamp(ns, 1, 5);
+                    return null;
+                }
+                var beat    = TryGet(el, "beat");
+                var chapter = TryGet(el, "chapter");
+                var arc     = TryGet(el, "arc");
+                var story   = TryGet(el, "story");
+                var dims = new[] { beat, chapter, arc, story }.OfType<int>().ToArray();
+                if (dims.Length == 0) return null;
+                var composite = (int)Math.Round(dims.Average());
+                return new BeatScoreEntry(Math.Clamp(composite, 1, 5), beat, chapter, arc, story);
+            }
+            return null;
+        }
+    }
+
     /// <summary>Study-mode parse: overall score + flow + review + improvements +
     /// the per-beat micro-score object. Tolerant of fences/preamble. Beat keys
     /// out of [1, beatCount] are dropped; scores clamped to 1-5.</summary>
     private static bool TryParseStudyReview(
         string? raw, int beatCount, out int score, out int? flow, out string review,
-        out List<string> improvements, out Dictionary<int, int>? beatScores)
+        out List<string> improvements, out Dictionary<int, BeatScoreEntry>? beatScores)
     {
         score = 0; flow = null; review = ""; improvements = new List<string>(); beatScores = null;
         if (string.IsNullOrWhiteSpace(raw)) return false;
@@ -2249,15 +2306,12 @@ Be specific; do not invent praise the reviews don't support.";
             }
             if (root.TryGetProperty("beat_scores", out var bEl) && bEl.ValueKind == JsonValueKind.Object)
             {
-                var d = new Dictionary<int, int>();
+                var d = new Dictionary<int, BeatScoreEntry>();
                 foreach (var p in bEl.EnumerateObject())
                 {
                     if (!int.TryParse(p.Name, out var bn) || bn < 1 || bn > beatCount) continue;
-                    int v;
-                    if (p.Value.ValueKind == JsonValueKind.Number && p.Value.TryGetInt32(out var iv)) v = iv;
-                    else if (p.Value.ValueKind == JsonValueKind.String && int.TryParse(p.Value.GetString(), out var sv)) v = sv;
-                    else continue;
-                    d[bn] = Math.Clamp(v, 1, 5);
+                    var entry = BeatScoreEntry.Parse(p.Value);
+                    if (entry != null) d[bn] = entry;
                 }
                 if (d.Count > 0) beatScores = d;
             }
@@ -2270,7 +2324,7 @@ Be specific; do not invent praise the reviews don't support.";
     /// micro-score object. No prose review expected. Tolerant of fences/preamble.</summary>
     private static bool TryParseBallot(
         string? raw, int beatCount, out int score, out int? flow,
-        out string proseGripe, out string logicGripe, out Dictionary<int, int>? beatScores)
+        out string proseGripe, out string logicGripe, out Dictionary<int, BeatScoreEntry>? beatScores)
     {
         score = 0; flow = null; proseGripe = ""; logicGripe = ""; beatScores = null;
         if (string.IsNullOrWhiteSpace(raw)) return false;
@@ -2309,15 +2363,12 @@ Be specific; do not invent praise the reviews don't support.";
                 proseGripe = wEl.GetString() ?? "";
             if (root.TryGetProperty("beat_scores", out var bEl) && bEl.ValueKind == JsonValueKind.Object)
             {
-                var d = new Dictionary<int, int>();
+                var d = new Dictionary<int, BeatScoreEntry>();
                 foreach (var p in bEl.EnumerateObject())
                 {
                     if (!int.TryParse(p.Name, out var bn) || bn < 1 || bn > beatCount) continue;
-                    int v;
-                    if (p.Value.ValueKind == JsonValueKind.Number && p.Value.TryGetInt32(out var iv)) v = iv;
-                    else if (p.Value.ValueKind == JsonValueKind.String && int.TryParse(p.Value.GetString(), out var sv)) v = sv;
-                    else continue;
-                    d[bn] = Math.Clamp(v, 1, 5);
+                    var entry = BeatScoreEntry.Parse(p.Value);
+                    if (entry != null) d[bn] = entry;
                 }
                 if (d.Count > 0) beatScores = d;
             }
@@ -2511,9 +2562,13 @@ Be specific; do not invent praise the reviews don't support.";
         foreach (var kv in beatScores)
             review.BeatScores.Add(new NodeReviewBeatScore
             {
-                ReviewId = review.Id,
-                BeatNumber = kv.Key,
-                Score = kv.Value,
+                ReviewId     = review.Id,
+                BeatNumber   = kv.Key,
+                Score        = kv.Value.Score,
+                ScoreBeat    = kv.Value.Beat,
+                ScoreChapter = kv.Value.Chapter,
+                ScoreArc     = kv.Value.Arc,
+                ScoreStory   = kv.Value.Story,
                 BeatTextHash = beatHashes.GetValueOrDefault(kv.Key),
             });
         return review;
@@ -2531,7 +2586,12 @@ You are scoring REVISED BEATS in the audio-fiction story ""{title}"" (total {tot
 Judge each [SCORE THIS] beat for how it LANDS IN CONTEXT (its job in the sequence, given what comes before and after) — not standalone quality.
 
 Return ONLY a JSON object with a single field:
-- ""beat_scores"": rate ONLY the [SCORE THIS] beats 1-5 in context (1 = hurts the story, 3 = fine, 5 = highlight), keyed by beat number: {{""3"":4,""7"":2}}.
+- ""beat_scores"": rate ONLY the [SCORE THIS] beats across four dimensions, keyed by beat number. Each is 1-5 (1=fails, 3=works, 5=outstanding):
+  - ""beat"": dramatic function (Swain Scene goal/conflict/disaster or Sequel reaction/dilemma/decision)
+  - ""chapter"": advances chapter purpose and momentum
+  - ""arc"": serves story arc escalation and plant/payoff
+  - ""story"": contributes to whole (theme, character arc, reader journey)
+  Format: {{""3"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},""7"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}
 
 Changed beats to score: {changedList}. Do not output scores for beats marked [CONTEXT].";
     }
@@ -2566,9 +2626,9 @@ Changed beats to score: {changedList}. Do not output scores for beats marked [CO
         return sb.ToString();
     }
 
-    private static bool TryParseDeltaBallot(string? raw, HashSet<int> changedPositions, out Dictionary<int, int> beatScores)
+    private static bool TryParseDeltaBallot(string? raw, HashSet<int> changedPositions, out Dictionary<int, BeatScoreEntry> beatScores)
     {
-        beatScores = new Dictionary<int, int>();
+        beatScores = new Dictionary<int, BeatScoreEntry>();
         if (string.IsNullOrWhiteSpace(raw)) return false;
         var text = raw.Trim();
         if (text.StartsWith("```"))
@@ -2589,11 +2649,8 @@ Changed beats to score: {changedList}. Do not output scores for beats marked [CO
             foreach (var prop in bsEl.EnumerateObject())
             {
                 if (!int.TryParse(prop.Name, out var beatNum) || !changedPositions.Contains(beatNum)) continue;
-                int v;
-                if (prop.Value.ValueKind == JsonValueKind.Number && prop.Value.TryGetInt32(out var iv)) v = iv;
-                else if (prop.Value.ValueKind == JsonValueKind.String && int.TryParse(prop.Value.GetString(), out var sv)) v = sv;
-                else continue;
-                beatScores[beatNum] = Math.Clamp(v, 1, 5);
+                var entry = BeatScoreEntry.Parse(prop.Value);
+                if (entry != null) beatScores[beatNum] = entry;
             }
             return beatScores.Count > 0;
         }

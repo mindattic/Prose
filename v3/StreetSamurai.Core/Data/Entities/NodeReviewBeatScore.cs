@@ -30,4 +30,24 @@ public class NodeReviewBeatScore
     /// <summary>Contradictions or continuity errors spotted in this beat (one per line).
     /// Append-only — never cleared.</summary>
     public string? Contradictions { get; set; }
+
+    // ── Four-dimensional scoring (Swain doctrine — added SS-A47) ─────────────
+    // New ballots populate all four. Legacy rows (pre-SS-A47) have nulls here;
+    // Score above remains the canonical single value for backward compatibility.
+
+    /// <summary>Beat intrinsic: does this beat execute its dramatic function?
+    /// (Swain Scene: goal/conflict/disaster; Sequel: reaction/dilemma/decision.) 1-5.</summary>
+    public int? ScoreBeat { get; set; }
+
+    /// <summary>Chapter integration: does this beat advance the chapter's purpose
+    /// and build momentum toward the chapter's climax? 1-5.</summary>
+    public int? ScoreChapter { get; set; }
+
+    /// <summary>Arc integration: does this beat serve the story arc — right escalation,
+    /// plants and pays off at the correct moment? 1-5.</summary>
+    public int? ScoreArc { get; set; }
+
+    /// <summary>Story integration: does this beat contribute to the whole — theme,
+    /// character arc, emotional journey, world-building? 1-5.</summary>
+    public int? ScoreStory { get; set; }
 }

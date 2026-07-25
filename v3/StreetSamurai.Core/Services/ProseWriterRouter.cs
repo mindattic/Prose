@@ -535,12 +535,6 @@ public class ProseWriterRouter(
             StoryScienceGuidance     = storyScienceGuidance,
             OffscreenActivityContext = offscreenActivityContext,
             StructuralBlueprintGuidance = structuralBlueprintGuidance,
-            // When TargetWords is unset (0), inject the optimal beat midpoint so the
-            // generator produces a complete dramatic scene (~800-1,500 words) rather
-            // than the legacy "2-4 paragraphs" default (~200-350 words).
-            TargetWords = context.TargetWords > 0
-                ? context.TargetWords
-                : BeatGranularityService.TargetWordsRecommended,
         };
 
         // ── C1: Entity pre-check (soft gate — warns, never blocks) ────────────────

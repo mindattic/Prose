@@ -73,7 +73,11 @@ public static class MigrateSqlCli
         // entity-review / node-review / beat-review / beat-write.
         var distributedQueue = args.Contains("--distributed-queue");
 
-        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue)
+        // Four-dimensional per-beat scoring (SS-A47 — Swain doctrine):
+        // add ScoreBeat/ScoreChapter/ScoreArc/ScoreStory to NodeReviewBeatScores.
+        var beatScoreDimensions = args.Contains("--beat-score-dimensions");
+
+        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -89,6 +93,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  ss --migrate-sql --node-draft-flag         add IsDraft BIT to Nodes (+ history); draft subtrees are ignored by the tools");
             Console.WriteLine("  ss --migrate-sql --review-contradictions     add Contradictions to EntityReviews + NodeReviews; Gripes+Contradictions to NodeReviewBeatScores");
             Console.WriteLine("  ss --migrate-sql --distributed-queue         create DistributedWorkQueue table (multi-machine entity/node/beat review + prose writing)");
+            Console.WriteLine("  ss --migrate-sql --beat-score-dimensions     add ScoreBeat/ScoreChapter/ScoreArc/ScoreStory to NodeReviewBeatScores (SS-A47 Swain doctrine)");
             Console.WriteLine();
             Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -828,6 +833,35 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ distributed-queue migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (beatScoreDimensions)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<StreetSamuraiDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[beat-score-dimensions]");
+            try
+            {
+                // NodeReviewBeatScores is not temporal — straight ALTER TABLE with IF guards.
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF COL_LENGTH('dbo.NodeReviewBeatScores', 'ScoreBeat') IS NULL
+                        ALTER TABLE [dbo].[NodeReviewBeatScores] ADD [ScoreBeat] INT NULL;
+                    IF COL_LENGTH('dbo.NodeReviewBeatScores', 'ScoreChapter') IS NULL
+                        ALTER TABLE [dbo].[NodeReviewBeatScores] ADD [ScoreChapter] INT NULL;
+                    IF COL_LENGTH('dbo.NodeReviewBeatScores', 'ScoreArc') IS NULL
+                        ALTER TABLE [dbo].[NodeReviewBeatScores] ADD [ScoreArc] INT NULL;
+                    IF COL_LENGTH('dbo.NodeReviewBeatScores', 'ScoreStory') IS NULL
+                        ALTER TABLE [dbo].[NodeReviewBeatScores] ADD [ScoreStory] INT NULL;
+                    """);
+                Console.WriteLine("  ✔ ScoreBeat, ScoreChapter, ScoreArc, ScoreStory added to NodeReviewBeatScores (SS-A47).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ beat-score-dimensions migration failed: {ex.Message}");
                 failures++;
             }
         }

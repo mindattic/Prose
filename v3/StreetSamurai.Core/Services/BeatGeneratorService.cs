@@ -211,14 +211,27 @@ public class BeatGeneratorService
         var subtextBlock = string.IsNullOrEmpty(context.Subtext) ? "" :
             $"\n\nSUBTEXT (what is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony; the reader never sees this):\n{context.Subtext}";
 
-        // Length instruction: default is the short-beat form (2-4 paragraphs); a
-        // TargetWords hint switches to full-scene mode for chapter-scale beats
-        // (~1000-word beats are the proven STSH shape for 100+ page works).
+        // Length instruction: when TargetWords is set by the caller, honour it.
+        // Default (TargetWords = 0): Swain Scene/Sequel doctrine — the beat ends
+        // when its dramatic function is complete, not at a word count.
         var lengthInstruction = context.TargetWords > 0
             ? $"Write this beat as a FULL SCENE of approximately {context.TargetWords} words. " +
               "Give it scene shape — entry in motion, a turn, an exit that leans forward. " +
               "Earn the length with texture and interaction, never with summary or repetition. Make every word count."
-            : "Write 2-4 paragraphs. Make every word count.";
+            : """
+              Write a complete dramatic unit — a SCENE or SEQUEL.
+
+              SCENE (active): The POV character has a GOAL. Something actively CONFLICTS with that goal.
+              The beat ends with a DISASTER or complication that raises the stakes — the character does NOT
+              fully succeed. Entry in motion → rising conflict with an obstacle → a turn that worsens or complicates.
+
+              SEQUEL (reactive): Emotional aftermath of the previous disaster. The POV character REACTS
+              (visceral, specific feeling). Faces a DILEMMA (two bad options, no clean exit). Makes a
+              DECISION that sets the next direction. Feeling → thinking → deciding.
+
+              The beat ends when its dramatic function is complete. Do not pad to hit a count.
+              Do not stop before the turn or decision.
+              """;
 
         var sceneSoFar = context.SceneSoFar?.Length > 6000
             ? context.SceneSoFar[^6000..]
@@ -238,9 +251,12 @@ public class BeatGeneratorService
             {lengthInstruction}
             """;
 
+        // When TargetWords is explicit, scale to it (300 chars/word * 3).
+        // Default (Swain doctrine): 4096 gives the model room to write a full
+        // Scene or Sequel without being truncated before the turn.
         var maxTokens = context.TargetWords > 0
             ? Math.Clamp(context.TargetWords * 3, 2048, 8192)
-            : 2048;
+            : 4096;
         return await llm.GenerateWithCachedPrefixAsync(stablePrefix, dynamicSystem, user, temperature: 0.85, maxTokens: maxTokens, ct: ct);
     }
 
