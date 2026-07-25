@@ -23,13 +23,13 @@ MNEMOSYNC is a story about two people who find each other in the negative space 
 
 The arcology had no clocks. Amara had learned to read that absence as a clock of its own.
 
-Daud Mtembe lived in Zone 5, in one of the Orison-affiliated towers where the air was managed flat and neutral. No diesel. No lake. No season. The lobby feed ran a loop of good infrastructure news and weather that was always about to improve. Above it, the building's ident overlay cycled the Orison palette through its colors, amber into cool slate, slow enough that only the body noticed. She had been in a dozen towers like it. They all smelled faintly of nothing, and nothing was its own smell. None of them showed the time. A person who couldn't check the hour was a person who stayed.
+Daud Mtembe lived in Zone 5, in one of the Orison-affiliated towers where the air was managed flat and neutral. No diesel. No lake. No season. The lobby feed ran a loop of good infrastructure news and weather that was always about to improve. Above it, the building's ident overlay cycled the Orison palette through its colors, amber into cool slate, slow enough that only the body noticed. She had been in a dozen towers like it. None of them showed the time.
 
 She had worked in buildings like this her whole career. The Tribune building had managed air. Her own building had managed air. The difference between conditioned air and real air was something she'd only started to feel lately, from meeting sources out in the Seam, from standing at the zone line on the way back. Her face knew the change before her mind did. She had reported on this city for seven years and never once filed a piece about the air.
 
 Daud met her at the door with both hands out. Forty-three, broad through the shoulders. Second-generation neuretics — you could see it in the old mount scar behind his ear, where the first housing had been swapped out. A freight scheduler. He wore a Greymark Unseen work jacket, the signal-dampening collar still stiff from the store. You bought a jacket like that when you'd decided the city shouldn't know where you were standing. He'd kept wearing it after he stopped deciding that. He remembered her. He remembered the segment.
 
-"The coffee correspondent," he said, warm. She let him have it. Warmth was data too.
+"The coffee correspondent," he said, warm. She let him have it.
 
 She set her recorder on the table and ran the standard follow-up, the polite questions you asked a subject two years on. How was the routing work. How was the implant holding. He answered easily. The implant was fine. The work was fine.
 
@@ -120,9 +120,9 @@ She was not the only person in the city sitting in the dark with a list of names
 [Beat 2]
 # The Dry Corridor
 
-The handoff was at 14:00, a logistics firm in the Seam between Zone 3 and Zone 4. No sign outside. No name he'd ever been given. Just an address and a frequency, the way most of his clients liked it. Seto had run data for them on and off for three years, long enough that the protocols had shrunk from six verification steps to two. That was how trust worked in the gray zone. It was the most honest measure he had.
+The handoff was at 14:00, a logistics firm in the Seam between Zone 3 and Zone 4. No sign outside. No name he'd ever been given. Just an address and a frequency, the way most of his clients liked it. Seto had run data for them on and off for three years, long enough that the protocols had shrunk from six verification steps to two.
 
-He came in off the underpass on the bicycle, coasting the last hundred feet. Zone 3's Arcturus Civil air processing ended at the street, a hard clean edge. Zone 4's Orison-adjacent overlay started sixty feet east. In the gap between them the air went unfiltered — exhaust off the freight roads, someone cooking at a canteen window three floors up, the wet-metal smell of recycled condensate. Seam air, smelling of what the city was actually doing. His carrier-grade tissue picked the background apart as he rolled: freight beacons, an Infrastructure Authority monitoring node, nothing from the client building. No Waxwing overlay either — the civic AR that papered Zone 3 died in the gap, so there were no stop signs, no queue barriers, no crowd-flow arrows floating over the street. The Seam only announced itself by what was missing. Which was correct. Which was what you wanted.
+He came in off the underpass on the bicycle, coasting the last hundred feet. Zone 3's Arcturus Civil air processing ended at the street, a hard clean edge. Zone 4's Orison-adjacent overlay started sixty feet east. In the gap between them the air went unfiltered — exhaust off the freight roads, someone cooking at a canteen window three floors up, the wet-metal smell of recycled condensate. Seam air, smelling of what the city was actually doing. His carrier-grade tissue picked the background apart as he rolled: freight beacons, an Infrastructure Authority monitoring node, nothing from the client building. No Waxwing overlay either — the civic AR that papered Zone 3 died in the gap, so there were no stop signs, no queue barriers, no crowd-flow arrows floating over the street. The Seam only announced itself by what was missing.
 
 The bicycle was a 2189 Ogaki track conversion, steel-lugged, the kind of frame that needed real knowledge to keep running. He liked to know what was happening inside the things that were his.
 
@@ -362,9 +362,9 @@ Across the same city, someone was awake well ahead of the dawn, working a bicycl
 
 At 0545 the rear hub bearing on Seto's bike had a tick in it he could feel through the frame before he could hear it. He'd caught it the night before on the last run home, a half-beat hitch in the spin-down, and he hadn't slept right knowing it was there. So he was out in the access alley behind his unit while the sky over Zone 9 was still the color of cold solder, the bike upside down on its saddle and bars, the rear wheel off, the bearing race in his palm.
 
-He cleaned it with a rag and then with his thumb. Pitting on two of the balls, fine as salt. Not a failure. Forty miles of warning, maybe sixty. He had a spare cartridge in the parts drawer, pulled from a dead courier's frame two winters back, and he pressed it in with the old socket he used as a drift, seated it, spun the wheel. The tick was gone. The spin-down ran long and clean and died without a stutter. He had a Saltline electrolyte pouch in the top of the drawer. He cracked it, drank it standing, tossed the foil in the recycler. The logo on the foil finished two little animated loops before it left his hand, as if the product had somewhere to be.
+He cleaned it with a rag and then with his thumb. Pitting on two of the balls, fine as salt. Not a failure. Forty miles of warning, maybe sixty. He had a spare cartridge in the parts drawer, pulled from a dead courier's frame two winters back, and he pressed it in with the old socket he used as a drift, seated it, spun the wheel. The tick was gone. The spin-down ran long and clean and died without a stutter. He had a Saltline electrolyte pouch in the top of the drawer. He cracked it, drank it standing, tossed the foil in the recycler. The logo on the foil finished two little animated loops before it left his hand.
 
-This was the part of the work nobody paid for and the only part he fully owned. The bike was his. The routes were his — five years of them, built relay by relay, a private map of the gray channels that showed on no corpo grid, because he'd cut them himself, around the edges of campuses and checkpoints and dead zones, through the seams where one corpo's coverage ran out before the next one's began. He ran nothing that ran him. He answered to the parcel and the clock and to no system at all. He bolted the wheel back on, torqued the axle by feel, and rolled out into the gray with the count already starting: first relay at the Mercer cut, four minutes, then the long straight down the old freight grade.
+This was the part of the work nobody paid for and the only part he fully owned. The bike was his. The routes were his — five years of them, built relay by relay, a private map of the gray channels that showed on no corpo grid, because he'd cut them himself, around the edges of campuses and checkpoints and dead zones, through the seams where one corpo's coverage ran out before the next one's began. He bolted the wheel back on, torqued the axle by feel, and rolled out into the gray with the count already starting: first relay at the Mercer cut, four minutes, then the long straight down the old freight grade.
 
 The signal arrived at 0612, between the second checkpoint and the third, on a stretch where there was nothing to do but pedal and watch the road.
 
@@ -455,9 +455,9 @@ She'd typed four words of the thirty-second note when she stopped, because a man
 
 She had time to read him. He crossed the floor at a pace that didn't apologize for being there and didn't announce itself either, and in the distance between the doors and her desk she took in what he wasn't. Not a source — sources hesitated in doorways, did the small stall of someone deciding whether they were really going to do this. Not a colleague; she knew the colleagues. Not a delivery. He had the quiet of a man raised in rooms built to meet a body correctly at every surface, rooms that had never once been the wrong temperature for him, doors that had never stuck.
 
-The suit was cut to be forgotten. That was the expensive part. Cheaper money bought a suit cut to impress. His had been cut to leave no afterimage, which cost more and said more.
+ Cheaper money bought a suit cut to impress. His had been cut to leave no afterimage, which cost more and said more.
 
-His hair sat within a millimeter of Orison's grooming maximum. She knew the figure — three-quarter inch above the collar, published, enforced — because she'd covered the compliance brief two years back. His was just under it. A man does not land that close to a published maximum by accident. He had measured himself against a standard and chosen to live one millimeter inside it, every day, on purpose.
+His hair sat within a millimeter of Orison's grooming maximum. She knew the figure — three-quarter inch above the collar, published, enforced — because she'd covered the compliance brief two years back. His was just under it. 
 
 He reached her desk and did not stand across from her, and did not come around beside her. He took the chair at an angle — the position that makes a conversation possible without anyone having to call it an interview.
 
@@ -693,7 +693,7 @@ She had spent three years earning the access she had, source by source, transit 
 
 "That's good," she said, meaning it to sound like she was already thinking about something else, which she was, and which was true. She bit the pastry — sweet, slightly cold, the almonds real. She was the journalist who had written the series; that was true, and she would walk into the Thursday room as that journalist. What she'd sent Seto was already outside the system and moving. None of it asked her to do anything with her face except be a person eating a pastry before a review. "I'll read the access proposal before Thursday."
 
-He was wrapping up now, and she nodded at the right intervals. The intervals weren't hard to find once you understood the conversation wasn't an exchange of information. It was two people keeping up a shared story about how things were going. She folded the paper plate in half and dropped it in the bin, and the small clean sound of it was the only thing in the atrium she was fully inside.
+He was wrapping up now, and she nodded at the right intervals. The intervals weren't hard to find once you understood the conversation wasn't an exchange of information.  She folded the paper plate in half and dropped it in the bin, and the small clean sound of it was the only thing in the atrium she was fully inside.
 
 *He said Orison noticed. He said it like a reward.*
 
@@ -827,9 +827,9 @@ Ekow Ato stepped out from behind the HVAC housing at 18:14.
 
 Seto knew the name from the Gray Zone circuit — NGRA veteran, freelance contractor, the kind of work history you didn't have to advertise because the weight of it did the work. Ekow had a machete at his hip, handle worn, nothing decorative about it. His hands were open. He wasn't starting anything.
 
-He'd read the rooftop before stepping out onto it — Seto could tell. The unhurried certainty of a man who had already placed everything in the space and confirmed the exits before he showed himself. The evening light was going the color it went over the Pilsen ridge this time of year, flat gold turning to iron, and Ekow stood in it like a man who'd stood in worse light waiting on worse people.
+He'd read the rooftop before stepping out onto it — Seto could tell. The unhurried certainty of a man who had already placed everything in the space and confirmed the exits before he showed himself. The evening light was going the color it went over the Pilsen ridge this time of year, flat gold turning to iron, and Ekow stood in it.
 
-"You've been pulling correlations from GLMZ health data against private courier records," Ekow said. He said it the way you state a logistical fact. "Walk away from the Orison work."
+"You've been pulling correlations from GLMZ health data against private courier records," Ekow said. "Walk away from the Orison work."
 
 Seto stayed still. "What is the Orison work."
 
@@ -975,9 +975,9 @@ He finished Zone 7. He closed the file and ejected the drive and set it beside t
 
 *Nuru's name was in the nineteenth row, and the calibration window was eleven days out.*
 
-He pulled up the building plan for Facility C-9 from memory and held it — the south receiving dock, the forty-minute lighting cycle in the lobby, the checkpoint at the interior gate where the carts queued before the morning shift. He had run cargo through that dock four times. He knew the checkpoint supervisor by the sound of his cart's wheel bearing, a dry tick every third rotation the man had never fixed. He had an eleven-day window and no network and a building he had walked. He sat with that the way he sat with a route that was bad in three places and was still the only route.
+He pulled up the building plan for Facility C-9 from memory and held it — the south receiving dock, the forty-minute lighting cycle in the lobby, the checkpoint at the interior gate where the carts queued before the morning shift. He had run cargo through that dock four times. He knew the checkpoint supervisor by the sound of his cart's wheel bearing, a dry tick every third rotation the man had never fixed. He had an eleven-day window and no network and a building he had walked. 
 
-He picked up the card — Amara's card, the one she'd pressed into his hand with both of hers — and turned it over. The front had her name. The back had nothing. He set it face-down and left it that way, and looked at the three drives on the table in their row, and then at the relay terminal with its dead map still open, all the exits gone gray, the closures sitting there patient as a proof. Someone had drawn his most likely paths. They had not drawn this one. They had not drawn it because it was not a path anyone moved cargo on — it was a path a man walked into a facility he already knew, with nothing on him that could be scanned or seized or logged, carrying only what he'd just made impossible to remove.
+He picked up the card — Amara's card, the one she'd pressed into his hand with both of hers — and turned it over. The front had her name. The back had nothing. He set it face-down and left it that way, and looked at the three drives on the table in their row, and then at the relay terminal with its dead map still open, all the exits gone gray. Someone had drawn his most likely paths. They had not drawn this one. They had not drawn it because it was not a path anyone moved cargo on — it was a path a man walked into a facility he already knew, with nothing on him that could be scanned or seized or logged, carrying only what he'd just made impossible to remove.
 
 He did not have a plan. He had a building, a window, and six hundred and twelve names that were now part of him in a way no compliance withdrawal could reach. He picked up the drives and locked them in the desk drawer. He stood, and his hands were steady, which surprised him less than it should have.
 
@@ -994,7 +994,7 @@ She found it the way she found everything now: by checking. The broadcaster's ha
 
 She read it once. She read it again, not because the words had changed but because she was checking the shape of them, and the shape was familiar. She had sent this. Not this exact notification — she didn't have the access to generate one — but the thing underneath it, the gentle administrative noun "concern" doing the work of an accusation. She'd done it to a logistics manager at a desalination consortium two years ago. "We've had some concerns raised about your account activity." It was how you told someone they were already a subject before they knew there was a story. It put them on the back foot in the most courteous language available. It worked because the courtesy was real, in its way. Nobody was shouting. That was the point.
 
-S. Kessler was Sade. Her editor. Not a compliance staffer, not the legal queue, not the faceless account-integrity address that handled expense flags and login anomalies. Sade had been looped in. Someone had spoken to Sade, and now Sade wanted to talk about account activity, and Amara understood — with a clarity that did not feel like panic, which was the thing she would remember later, that it did not feel like panic — that the someone was Ciro, and the account activity was her, and the instability story had a first paragraph now, and she had not been the one to write it.
+S. Kessler was Sade. Her editor. Not a compliance staffer, not the legal queue, not the faceless account-integrity address that handled expense flags and login anomalies. Sade had been looped in. Someone had spoken to Sade, and now Sade wanted to talk about account activity, and Amara understood — with a clarity that did not feel like panic — that the someone was Ciro, and the account activity was her, and the instability story had a first paragraph now, and she had not been the one to write it.
 
 He had built it out of true material. That was what made it good. She had been distracted on air. She'd mispronounced a consortium name on the noon segment ten days ago, then corrected herself a beat too late, and the producer had said nothing because producers said nothing, and she'd logged it privately as fatigue. She had dropped a clause. Twice she'd let the camera find her looking at something past the lens. All of it was real. All of it could be traced to the bleed — to the nights she woke with someone else's shoulders aching, to the route that ran through her body when she was supposed to be reading copy. Ciro did not need to lie. He needed only to gather what was already true and frame it as care, and the frame was the whole weapon. "We just want to make sure she's all right."
 
@@ -1089,7 +1089,7 @@ He drafted the request, opened the send dialog, and pushed it through.
 
 The message died at the third hop. "Endpoint unavailable. No route found." He ran the diagnostic with one hand still flat on the terminal and watched the route map redraw itself in red.
 
-It was not one closure. It was a sequence. He read it the way he read a street that had turned hostile while his back was to it. The Zone 5/6 junction had gone first — four hours ago, the standard window for a compliance withdrawal to clear under Orison's infrastructure agreements. Then the broker's primary node. Then the two failover nodes the broker kept in the Zone 6 corridor, the ones almost nobody knew about. Then the Seam relay he himself favored for southbound traffic, the one he had used eleven hundred times. Each light on the map went dark in turn, and the order was not random. It moved outward from the junction the way a hand sweeps a table clear, and it was moving ahead of him — closing the exits before he reached them, as if someone had drawn his most likely paths and unbuilt them one at a time.
+It was not one closure. It was a sequence. He read it the way he read a street that had turned hostile while his back was to it. The Zone 5/6 junction had gone first — four hours ago, the standard window for a compliance withdrawal to clear under Orison's infrastructure agreements. Then the broker's primary node. Then the two failover nodes the broker kept in the Zone 6 corridor, the ones almost nobody knew about. Then the Seam relay he himself favored for southbound traffic, the one he had used eleven hundred times. Each light on the map went dark in turn, and the order was not random. It moved outward from the junction the way a hand sweeps a table clear, and it was moving ahead of him — closing the exits before he reached them.
 
 He watched the last failover go from amber to gray. He had talked to Amara the afternoon before. Four hours, and the network a courier needed to move proof out of the zone no longer existed.
 
@@ -1381,7 +1381,7 @@ The newsroom didn't know what she'd found. The paper with 112 on it was in her j
 
 Ciro came to her desk at 16:40, and the time was itself the message. Ciro did not come to desks at 16:40. He came at odd minutes — a mid-morning gap, the loose hour before lunch when a person's guard had nowhere useful to stand. Sixteen-forty was end of day. It was the hour you packed up in, the hour with the witnesses thinning out. He had picked a time that would read, on any log, like a routine end-of-shift check-in.
 
-No paper cup this time. A folder, physical, the same pressed stock as the card he'd handed her weeks ago. An object instead of a token. Objects made a moment feel considered instead of automated.
+No paper cup this time. A folder, physical, the same pressed stock as the card he'd handed her weeks ago. An object instead of a token.
 
 "Do you have a minute," he said. Not a question.
 
@@ -1461,7 +1461,7 @@ Route closure. He knew the word for it now. He'd carried it for other people for
 
 He didn't sleep. That wasn't unusual. The reason was. In eleven years of courier work he'd lain awake over route logistics plenty of times, running the variables, but the variables had always closed — there was always a clean line if you looked long enough. Tonight the looking turned up nothing clean.
 
-The monitoring node meant someone had already decided he was a point on a map worth marking. Which meant the drives against his ribs weren't evidence he was sitting on. They were evidence he was carrying, for someone who hadn't yet decided to collect it. Amara's twelve words. The paper in her pocket. The new Orison reader at Facility 4, set at the shortest feed line from primary calibration. He set these facts next to each other and looked for the logic in how they were placed. The logic wasn't missing. It was worse than missing. It was complete.
+The monitoring node meant someone had already decided he was a point on a map worth marking. Which meant the drives against his ribs weren't evidence he was sitting on. They were evidence he was carrying, for someone who hadn't yet decided to collect it. Amara's twelve words. The paper in her pocket. The new Orison reader at Facility 4, set at the shortest feed line from primary calibration. He set these facts next to each other and looked for the logic in how they were placed. The logic wasn't missing.
 
 The paper is in her pocket and she is still walking a route.
 
@@ -1555,15 +1555,15 @@ His relay terminal flagged a compliance update at 18:03: *Zone 3/4 courier certi
 [Beat 21]
 # Thursday Morning
 
-Thursday came in through the window as a flat gray bar of light, the kind that didn't commit to anything. Seto sat at the kitchen table with the relay terminal dark in front of him and a glass of water he'd poured and not touched. The compliance notice was still up on the screen from last night. He hadn't cleared it. It said nothing new, but he'd left it running the way you leave a door open when you're not sure you're done going in and out of it.
+Thursday came in through the window as a flat gray bar of light, the kind that didn't commit to anything. Seto sat at the kitchen table with the relay terminal dark in front of him and a glass of water he'd poured and not touched. The compliance notice was still up on the screen from last night. He hadn't cleared it. It said nothing new, but he'd left it running.
 
 Eleven days since he'd called Nuru. Last time, she'd told him the clinic was fine, the medication schedule was adjusted, she was sleeping better — and he'd taken all of it the way he took a message from any sender in the trade. How much to trust it. Why she might understate. What she was leaving out. He'd read his own sister the way he read a stranger, and it hadn't felt wrong until this exact table, this exact morning. His hand had been halfway to the terminal for a full minute without landing on it, because the next call couldn't be that call, and he didn't have another one ready.
 
 He picked up the glass and drank. Room temperature. Outside, the Zone 4 morning was doing what it did — the elevated transit two blocks over, a vendor's burner catching somewhere below, the loose sound of a building subdivided three times and never insulated. Four years here. The sounds had worn down to nothing a long time ago, and this morning every one of them came through separate and sharp, the building suddenly full of information he couldn't use.
 
-The story running was not the same as Nuru being safe. He'd known that last night on the ride home and had set it on the shelf with the things he couldn't change yet — the shelf he used when he didn't want to look at the difference between can't and can't yet. The suspension meant five to ten days with no routes. He had the float for it. He'd always kept the float, because eleven years in the trade taught you the gap would come. He'd saved for the gap like a bill he knew was coming. He hadn't saved for it being quiet.
+The story running was not the same as Nuru being safe. He'd known that last night on the ride home and had set it on the shelf with the things he couldn't change yet — the shelf he used when he didn't want to look at the difference between can't and can't yet. The suspension meant five to ten days with no routes. He had the float for it. He'd always kept the float, because eleven years in the trade taught you the gap would come. He'd saved for the gap. He hadn't saved for it being quiet.
 
-Seven days. Today was the day Ekow Ato had given himself to close the file, one way or another — the rooftop, the machete at rest, the handkerchief folded in quarters. Seto checked his tag status out of old habit, the way you check a lock you already know is locked. Orison had gotten there first. The compliance suspension had done in one notice what a Gray Zone contract would have taken a week to arrange, and there was no route left standing for anyone to retire. Whatever Ekow reported up his chain today would say the same thing the suspension notice already had — three days early, and for free.
+Seven days. Today was the day Ekow Ato had given himself to close the file, one way or another — the rooftop, the machete at rest, the handkerchief folded in quarters. Seto checked his tag status out of old habit. Orison had gotten there first. The compliance suspension had done in one notice what a Gray Zone contract would have taken a week to arrange, and there was no route left standing for anyone to retire. Whatever Ekow reported up his chain today would say the same thing the suspension notice already had — three days early, and for free.
 
 He did not hear from him. He had not expected to.
 
@@ -1575,8 +1575,6 @@ He did not hear from him. He had not expected to.
 The terminal chimed at 08:47. Not Doru — too early for Doru, and Doru wouldn't chime anyway. Doru left a paper in a specific drop and Seto found it on his next run. This was the Guild relay: a yellow flag, administrative band, the kind that came from a person and not an automated compliance queue. He opened it. A coordinator named Tasmin, Zone 3/4 oversight, whom he knew by routing code and never by voice.
 
 The message was four lines. His provisional reinstatement hearing had been moved from the standard five-to-ten-day window to a formal review board. Estimated processing: three to four weeks. The reason field said *regulatory complexity — multi-zone certification implications*, which meant someone had looked at the suspension and decided it was worth escalating.
-
-Three to four weeks wasn't a window. It was a decision.
 
 He closed the message without flagging it for a response. The float he had was built for a week, maybe ten days if he squeezed it. Not a month. He added it up again without wanting to, and it came out the same both times. He thought about the 847 names, the six facilities, the query he'd handed Doru on paper in his own handwriting. He thought about the suspension notice landing at 18:03 last night — forty minutes after they'd left the relay shop, forty minutes after the drive changed hands. Maybe that was a coincidence. Maybe it was the shape of what happens when you hand something to a journalist and the people who own the thing you described are already watching the channel.
 
@@ -1666,7 +1664,7 @@ The bleed was read-only. Orison's documentation was explicit: passive, one-direc
 
 He didn't believe that anymore. He had nothing to base the disbelief on. He simply didn't believe it.
 
-He closed his eyes and took the weight in both hands — not literally, there was nothing to hold, but the act felt like holding, like cupping water that wanted to run. He found the texture of her memories where he kept them, and he did not wait for the channel to pull. He pushed. He fixed on the mass of each thing and aimed it back the way it had come, along the line, toward her, and he held the intent steady the way you hold a heavy door with your shoulder while your hands are full.
+He closed his eyes and took the weight in both hands — not literally, there was nothing to hold, but the act felt like holding. He found the texture of her memories where he kept them, and he did not wait for the channel to pull. He pushed. He fixed on the mass of each thing and aimed it back the way it had come, along the line, toward her, and he held the intent steady.
 
 For a moment, nothing.
 
@@ -1755,7 +1753,7 @@ The radio. The whole radio. Not lighter.
 
 She set the glass down. Her hand was steady. That surprised her, in a way she didn't have a word for — that her hand held still while she was carrying something this heavy. The weight sat in her chest with the full mass of a thing that had been real and had mattered, and had not, until this moment, been allowed to matter all the way. Six weeks she'd carried the shape of it without the weight. She hadn't known anything was missing. She hadn't known there was a name for the lightness, or that the lightness was wrong.
 
-Through the window, the relay beacon on the corner was blinking at the wrong interval. She noticed it the way you notice a sound that stops — not when it goes wrong, but when it comes back to right. Eight seconds. Eight seconds. The grid settling into its normal breath. She watched it once, twice, and then she wasn't watching it anymore, and the glass of water was still on the counter, and she stood in her kitchen with the full weight of being nine years old and breaking something and being seen. She didn't know where it had come from. She didn't try to find out.
+Through the window, the relay beacon on the corner was blinking at the wrong interval. She noticed it. Eight seconds. Eight seconds. The grid settling into its normal breath. She watched it once, twice, and then she wasn't watching it anymore, and the glass of water was still on the counter, and she stood in her kitchen with the full weight of being nine years old and breaking something and being seen. She didn't know where it had come from. She didn't try to find out.
 
 ## Different Frequency
 
