@@ -319,6 +319,11 @@ public static class ServiceCollectionExtensions
         // TTR, MTLD, Flesch-Kincaid). Used by ss --compute-metrics and ss --morning-report.
         services.AddSingleton<BeatProseMetricsService>();
 
+        // Beat granularity analysis — identifies beats that are too coarse (SPLIT) or
+        // too fine (MERGE) relative to the 4,000–7,500 char optimal dramatic-scene range.
+        // Used by ss --beat-granularity and ProseWriterRouter (TargetWords injection).
+        services.AddSingleton<BeatGranularityService>();
+
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
         services.AddSingleton<SettingsKvStore>();

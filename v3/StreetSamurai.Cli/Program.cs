@@ -1208,6 +1208,17 @@ if (args.Contains("--compute-metrics"))
     return;
 }
 
+// ss --beat-granularity [--slug <slug> | --code <code> | --all] [--beats]
+// Analyses beat-size distribution against the 4,000–7,500 char optimal range.
+// Labels each beat as OK / SPLIT / MERGE and prints per-story stats.
+// CPU-only — no LLM calls. Exit 0 = success.
+if (args.Contains("--beat-granularity"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BeatGranularityCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --consistency-audit [--since <hours>]
 // Surfaces factual contradictions that span multiple story nodes by querying
 // the existing ContinuityClaims table. CPU-only — no LLM calls.
