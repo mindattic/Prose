@@ -1208,6 +1208,18 @@ if (args.Contains("--compute-metrics"))
     return;
 }
 
+// ss --swain-audit [--slug <slug> | --code <code> | --all] [--repair] [--blockers]
+// Classifies every enabled beat as Scene / Sequel / Ambiguous / Deficient against
+// Dwight Swain's Scene/Sequel doctrine. Deficient = BLOCKER; Ambiguous = MODERATE.
+// Add --repair to auto-splice the missing structural element (disaster turn, decision, etc.)
+// into BLOCKER beats via Haiku (classify) + Sonnet (splice). Exit 0 = success.
+if (args.Contains("--swain-audit"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SwainAuditCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --beat-granularity [--slug <slug> | --code <code> | --all] [--beats]
 // Analyses beat-size distribution against the 4,000–7,500 char optimal range.
 // Labels each beat as OK / SPLIT / MERGE and prints per-story stats.

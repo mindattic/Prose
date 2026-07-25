@@ -324,6 +324,11 @@ public static class ServiceCollectionExtensions
         // Used by ss --beat-granularity and ProseWriterRouter (TargetWords injection).
         services.AddSingleton<BeatGranularityService>();
 
+        // Swain Scene/Sequel doctrine auditor (SS-A47): classifies every enabled beat
+        // as Scene / Sequel / Ambiguous / Deficient and splices the missing structural
+        // element (disaster turn, decision, etc.) when --repair is requested.
+        services.AddSingleton<SwainAuditService>();
+
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
         services.AddSingleton<SettingsKvStore>();
