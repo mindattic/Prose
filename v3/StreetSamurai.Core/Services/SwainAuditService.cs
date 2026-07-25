@@ -189,9 +189,16 @@ public sealed class SwainAuditService(
         Guid nodeId, string nodeCode, string title, CancellationToken ct)
     {
         // Load all beats first (single query) — DbContext is not thread-safe.
+        // Beats live on chapter-child nodes (SS-A43), not directly on the story node.
+        // Collect the story node itself + all direct chapter children, then query BeatNodes.
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var scopeIds = await db.Nodes
+            .Where(n => n.Id == nodeId || n.ParentNodeId == nodeId)
+            .Select(n => n.Id)
+            .ToListAsync(ct);
+
         var beats = await db.BeatNodes
-            .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
+            .Where(nb => scopeIds.Contains(nb.NodeId) && nb.IsEnabled)
             .OrderBy(nb => nb.SortKey)
             .Select(nb => new { nb.Beat!.Id, Title = nb.Beat.Title ?? "", Text = nb.Beat.Text ?? "" })
             .ToListAsync(ct);
