@@ -51,12 +51,35 @@ public static class RebeatNodeCli
             else
             {
                 Node? node;
-                if (!string.IsNullOrWhiteSpace(slug)) node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+                if (!string.IsNullOrWhiteSpace(slug)) node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
                 else if (Guid.TryParse(id, out var g)) node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
                 else node = await db.Nodes.AsNoTracking().Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
                 { { Count: 1 } m => m[0], _ => null };
                 if (node == null) { Console.Error.WriteLine("[rebeat] Node not found (or id prefix ambiguous)."); return 1; }
-                targets.Add((node.Id, node.Title));
+
+                // Rebeat targets chapters, not the story node — beats live in chapters.
+                // If the node is a story, expand to its chapter children.
+                if (node.Kind == "story")
+                {
+                    var chapters = await db.Nodes.AsNoTracking()
+                        .Where(c => c.ParentNodeId == node.Id && c.Kind == "chapter")
+                        .OrderBy(c => c.SortKey)
+                        .Select(c => new { c.Id, c.Title })
+                        .ToListAsync();
+                    if (chapters.Count > 0)
+                    {
+                        foreach (var ch in chapters) targets.Add((ch.Id, $"{node.Title} / {ch.Title}"));
+                    }
+                    else
+                    {
+                        // No chapters — fall back to the story node itself.
+                        targets.Add((node.Id, node.Title));
+                    }
+                }
+                else
+                {
+                    targets.Add((node.Id, node.Title));
+                }
             }
         }
 
