@@ -814,7 +814,9 @@ Return ONLY a JSON object and nothing else:
         var model = route.ModelFor(provider, false);
         var system = BuildSegmentBallotSystemPrompt(persona, title, segment, lessonsBlock);
         var segBeats = segment.LastBeat - segment.FirstBeat + 1;
-        var maxTok = Math.Min(8000, 900 + segBeats * 6);
+        var maxTok = segBeats <= 150
+            ? Math.Min(8000, 900 + segBeats * 6)
+            : 1000;
         var raw = await route.Llm.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: maxTok, temperature: 0.85, ct);
         trackOutput?.Invoke(raw?.Length ?? 0);
         if (!TryParseBallot(raw, totalBeatCount, out var score, out var flow, out var proseGripe, out var logicGripe, out var beatScores))
@@ -872,13 +874,14 @@ Return ONLY a JSON object, nothing else:
 - ""score"": integer 1-100 — your overall reaction to THIS PART as this reader. Use the WHOLE scale; do not default to the 70s.
 - ""flow"": integer 1-100 — how well THIS PART hangs together (momentum, transitions, payoffs within it), separate from individual beat quality.
 - ""weakness"": your single biggest gripe about this part in EIGHT WORDS OR FEWER, or ""none"".
-- ""beat_scores"": rate EVERY beat in this part across four dimensions, keyed {segment.FirstBeat}..{segment.LastBeat}. Each is 1-5 (1=fails, 3=works, 5=outstanding):
+{(segBeats <= 150
+    ? $@"- ""beat_scores"": rate EVERY beat in this part across four dimensions, keyed {segment.FirstBeat}..{segment.LastBeat}. Each is 1-5 (1=fails, 3=works, 5=outstanding):
   - ""beat"": does this beat execute its dramatic function? (Swain: active Scene goal/conflict/disaster, or Sequel reaction/dilemma/decision)
   - ""chapter"": does it advance the chapter's purpose and build momentum?
   - ""arc"": does it serve the story arc — right escalation, plants/pays off correctly?
   - ""story"": does it contribute to the whole — theme, character arc, reader journey?
-  Format: {{""{segment.FirstBeat}"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},{{""{segment.FirstBeat + 1}"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}
-
+  Format: {{""{segment.FirstBeat}"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},{{""{segment.FirstBeat + 1}"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}"
+    : "")}
 Be honest and use the whole scale.";
     }
 
@@ -1385,9 +1388,11 @@ Return ONLY a JSON object, nothing else:
         var model = route.ModelFor(provider, cheapModels);
 
         var system = BuildBallotSystemPrompt(persona, export.Title, export.BeatCount, lessonsBlock);
-        // beat_scores must cover every beat — the JSON grows with beat count, so the
-        // output budget must too (a 535-beat book node needs ~4k tokens of ballot).
-        var maxTok = Math.Min(8000, 900 + export.BeatCount * 6);
+        // beat_scores only requested for ≤150 beats; above that the JSON would exceed typical
+        // model output limits. Large stories get score+flow+gripes only (~400 tokens output).
+        var maxTok = export.BeatCount <= 150
+            ? Math.Min(8000, 900 + export.BeatCount * 6)
+            : 1000;
         var raw = await route.Llm.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct, cacheUserMessage: true);
         trackOutput?.Invoke(raw?.Length ?? 0);
         if (!TryParseBallot(raw, export.BeatCount, out var score, out var flow, out var proseGripe, out var logicGripe, out var beatScores))
@@ -1450,6 +1455,16 @@ Return ONLY a JSON object, nothing else:
     {
         var who = BuildWhoBlock(persona);
         var lessonsSection = string.IsNullOrWhiteSpace(lessonsBlock) ? "" : $"\n\n{lessonsBlock}\n";
+        // beat_scores JSON grows ~11 tokens/beat; above 150 beats it exceeds most model output
+        // limits and the entire ballot becomes unparseable. Drop it for large stories.
+        var beatScoresClause = beatCount <= 150
+            ? $@"- ""beat_scores"": rate EVERY beat across four dimensions, keyed 1..{beatCount}. Each is 1-5 (1=fails, 3=works, 5=outstanding):
+  - ""beat"": does this beat execute its dramatic function? (Swain: active Scene goal/conflict/disaster, or Sequel reaction/dilemma/decision)
+  - ""chapter"": does it advance the chapter's purpose and build momentum?
+  - ""arc"": does it serve the story arc — right escalation, plants/pays off correctly?
+  - ""story"": does it contribute to the whole — theme, character arc, reader journey?
+  Format: {{""1"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},""2"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}"
+            : "";
         return
 $@"{who}
 
@@ -1461,13 +1476,7 @@ Return ONLY a JSON object, nothing else:
 - ""flow"": integer 1-100 — how well it hangs together as a sequence (momentum, payoffs, transitions), separate from beat quality.
 - ""prose_gripe"": your sharpest CRAFT complaint in TEN WORDS OR FEWER (voice inconsistency, purple prose, flat sentences, repetitive cadence, unearned metaphor) — or ""none"".
 - ""logic_gripe"": your sharpest STORY-LOGIC complaint in TEN WORDS OR FEWER (causality gap, character knowledge error, timeline impossibility, orphaned setup, unearned resolution) — or ""none"".
-- ""beat_scores"": rate EVERY beat across four dimensions, keyed 1..{beatCount}. Each is 1-5 (1=fails, 3=works, 5=outstanding):
-  - ""beat"": does this beat execute its dramatic function? (Swain: active Scene goal/conflict/disaster, or Sequel reaction/dilemma/decision)
-  - ""chapter"": does it advance the chapter's purpose and build momentum?
-  - ""arc"": does it serve the story arc — right escalation, plants/pays off correctly?
-  - ""story"": does it contribute to the whole — theme, character arc, reader journey?
-  Format: {{""1"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},""2"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}
-
+{beatScoresClause}
 Be honest and use the whole scale. Gripes must name a SPECIFIC flaw, not praise with soft hedging.";
     }
 
@@ -2374,7 +2383,24 @@ Be specific; do not invent praise the reviews don't support.";
             }
             return score > 0;
         }
-        catch { return false; }
+        catch
+        {
+            // Fallback for truncated JSON (e.g. beat_scores cut off mid-stream):
+            // extract score and supporting fields via regex so the ballot isn't lost entirely.
+            var sm = System.Text.RegularExpressions.Regex.Match(text, @"""score""\s*:\s*(\d+)");
+            if (sm.Success && int.TryParse(sm.Groups[1].Value, out var s2) && s2 > 0)
+            {
+                score = s2;
+                var fm = System.Text.RegularExpressions.Regex.Match(text, @"""flow""\s*:\s*(\d+)");
+                if (fm.Success && int.TryParse(fm.Groups[1].Value, out var f2)) flow = f2;
+                var pgm = System.Text.RegularExpressions.Regex.Match(text, @"""prose_gripe""\s*:\s*""([^""\\]+)""");
+                if (pgm.Success) proseGripe = pgm.Groups[1].Value;
+                var lgm = System.Text.RegularExpressions.Regex.Match(text, @"""logic_gripe""\s*:\s*""([^""\\]+)""");
+                if (lgm.Success) logicGripe = lgm.Groups[1].Value;
+                return true;
+            }
+            return false;
+        }
     }
 
     // ── Delta review (changed-beats-only re-scoring) ──────────────────────────
