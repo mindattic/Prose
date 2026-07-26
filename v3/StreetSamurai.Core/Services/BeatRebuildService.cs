@@ -331,7 +331,25 @@ public class BeatRebuildService
             var stillReferenced = await db.BeatNodes
                 .Where(sb => oldBeatIds.Contains(sb.BeatId)).Select(sb => sb.BeatId).Distinct().ToListAsync(ct);
             var toDelete = oldBeatIds.Except(stillReferenced).ToList();
-            await db.Beats.Where(b => toDelete.Contains(b.Id)).ExecuteDeleteAsync(ct);
+            if (toDelete.Count > 0)
+            {
+                // Clear all child-table references before deleting Beat rows.
+                await db.BeatBlueprintDecisions.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
+                await db.BeatEntityMentions.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
+                await db.BeatProseMetrics.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
+                await db.BeatVerifications.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
+                await db.EditSessionBeats.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
+                await db.EntityStateAtBeats.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
+                await db.NodeStructuralBlueprintBeatTags.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
+                // Null out plant/payoff beat links (preserve the relationship, just clear the stale beat ref).
+                await db.PlantPayoffs
+                    .Where(p => p.PlantBeatId != null && toDelete.Contains(p.PlantBeatId.Value))
+                    .ExecuteUpdateAsync(s => s.SetProperty(p => p.PlantBeatId, (Guid?)null), ct);
+                await db.PlantPayoffs
+                    .Where(p => p.PayoffBeatId != null && toDelete.Contains(p.PayoffBeatId.Value))
+                    .ExecuteUpdateAsync(s => s.SetProperty(p => p.PayoffBeatId, (Guid?)null), ct);
+                await db.Beats.Where(b => toDelete.Contains(b.Id)).ExecuteDeleteAsync(ct);
+            }
         }
 
         var baseNumber = (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1;
