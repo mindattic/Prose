@@ -218,7 +218,7 @@ This time he gave it weight.
 
 The door opened onto the shaft corridor, and the first shot clipped the frame three centimeters above his shoulder.
 
-He went left. A junction column — composite, load-bearing, enough. Two shooters at the far end: one up on a service platform, one on the floor. Compact weapon, full auto by the sound of that first burst — a Greybox or its cousin, Fringe supply. The floor shooter had the wrong stance for the recoil. The platform shooter held steady but sat open from below. A moment before either could improve his angle, and he spent it on Vig.
+He went left. A junction column — composite, load-bearing, enough. Two shooters at the far end: one up on a service platform, one on the floor. Compact weapon, full auto by the sound of that first burst — a Greybox or its cousin, Fringe supply. The floor shooter had the wrong stance for the recoil. The platform shooter held steady but sat open from below.
 
 The breath through the nose. Barely there, involuntary. He'd been turning it over since morning. A man hearing a number for the first time does not breathe out like that.
 
