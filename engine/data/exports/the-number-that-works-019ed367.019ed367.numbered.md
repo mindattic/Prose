@@ -855,7 +855,7 @@ Eleven seconds. Not the nine-second silence — he knew the difference now. Elev
 
 "I stated a fact."
 
-He set the tablet on the railing. Tadesse had maintained that dock for twenty-two years — checked seals, verified load ratings, never opened a container — and no one had ever thanked him either. He'd logged rail temperatures daily for a thing in orbit that had no mouth to say it with. He'd kept at it because the work was right, and because he'd decided to be worth meeting.
+He set the tablet on the railing. Tadesse had maintained that dock for twenty-two years — checked seals, verified load ratings, never opened a container — and no one had ever thanked him either. He'd logged rail temperatures daily for a thing in orbit that had no mouth to say it with.
 
 Thirty-seven years up there, and the most she'd ever had of it was one man's handwriting getting smaller across three afternoons of her coordinates.
 
@@ -1190,7 +1190,7 @@ A vendor two stalls south was selling something that smelled like pork fat and s
 [Beat 55]
 He took the elevator up. Forty seconds. The floor-wax smell didn't climb this high; by the time the doors opened he was back in the recycled flatness of his own floor. He used the key at his door out of habit instead of the panel, and went in.
 
-The tab was still open. Of course it was. SITE: ALL. QUANTITY: ONGOING. RATE: OPEN. Three fields, two settled, one waiting on him — the way the lobby downstairs had been waiting on him for eleven years, from the wrong end, without either of them knowing it.
+The tab was still open. Of course it was. SITE: ALL. QUANTITY: ONGOING. RATE: OPEN. Three fields, two settled, one waiting on him.
 
 The number was four hundred. It had been four hundred since before he went down. Standard documentation rate, per window, the figure he'd have quoted anyone; he'd priced it without deciding to, the way he priced everything.
 

@@ -455,7 +455,7 @@ She'd typed four words of the thirty-second note when she stopped, because a man
 
 She had time to read him. He crossed the floor at a pace that didn't apologize for being there and didn't announce itself either, and in the distance between the doors and her desk she took in what he wasn't. Not a source — sources hesitated in doorways, did the small stall of someone deciding whether they were really going to do this. Not a colleague; she knew the colleagues. Not a delivery. He had the quiet of a man raised in rooms built to meet a body correctly at every surface, rooms that had never once been the wrong temperature for him, doors that had never stuck.
 
- Cheaper money bought a suit cut to impress. His had been cut to leave no afterimage, which cost more and said more.
+ Cheaper money bought a suit cut to impress. His had been cut to leave no afterimage.
 
 His hair sat within a millimeter of Orison's grooming maximum. She knew the figure — three-quarter inch above the collar, published, enforced — because she'd covered the compliance brief two years back. His was just under it. 
 
@@ -1599,7 +1599,7 @@ The building read like a building.
 
 He kept his speed even. In here you kept your speed even. He passed the corner store and the laundromat and the bakery with the green awning.
 
-The bakery owner's name was Tomas Okeke. He knew that now too. Last spring Okeke had a permit dispute with the zone office — a loading-zone line repainted six feet short of his door. He filed twice. Then the filings stopped. The line stayed short. The bread still came out at five. Okeke waved at the crews who painted over his complaint, and the wave was real, and that was the part that stayed with Seto.
+The bakery owner's name was Tomas Okeke. He knew that now too. Last spring Okeke had a permit dispute with the zone office — a loading-zone line repainted six feet short of his door. He filed twice. Then the filings stopped. The line stayed short. The bread still came out at five. Okeke waved at the crews who painted over his complaint, and the wave was real.
 
 He rode past the green awning and did not slow.
 

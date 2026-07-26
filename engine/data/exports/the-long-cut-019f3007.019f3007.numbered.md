@@ -943,7 +943,7 @@ She's quiet a moment. "I told you it's not money."
 
 She sits with it. There's a version of this where she'd be offended he's thinking about money. She's not in that version. He's been plain about what he wants since their first year, and the plainness has always been worth more than the lack of it would be.
 
-Eleven years. He always names his rate. And he always tells you the thing you didn't pay him for -- the part that fails, the risk buried in the paperwork -- because he read the documents and you didn't. That second kind of honesty is why she still takes his calls.
+Eleven years. He always names his rate. And he always tells you the thing you didn't pay him for -- the part that fails, the risk buried in the paperwork -- because he read the documents and you didn't.
 
 She looks at the device, still broadcasting. The dead channel carries its signal off to somewhere.
 
@@ -1261,8 +1261,6 @@ The row is dated 2211-03-14. A thirty-four-year-old woman, Gray Zone Austin resi
 The outcome column for this subject is blank. Blank means her follow-up was the last note before the record closed. Blank means integration declined -- Category B. The woman lived.
 
 She doesn't know if that makes it better.
-
-Her throat tightens, brief and nameless. She breathes through it.
 
 She sets the tablet down, puts both hands flat on the bench, and doesn't move.
 
@@ -2319,9 +2317,9 @@ The station is operational. Seven years on standby, and it came up.
 
 Femi holds the torch and watches. He has not spoken since they entered, which is right, and she has not told him it is right because she has not told him anything since the door opened. He is good in an active room: still, watching, holding what he needs to hold without being told.
 
-She takes the device from the medical bag. Six days in the modified housing. She opens it now with the care she gives surgical instruments — not for show, the plain care of someone who knows a good tool deserves it.
+She takes the device from the medical bag. Six days in the modified housing. She opens it now with the care she gives surgical instruments — not for show.
 
-It is warm in her hand. It has been warm since the first time she held it — body heat from years against Renata's chest, kept warm since by its own running. A person kept it warm for eleven years. The person is dead. The warmth is what is left.
+It is warm in her hand. It has been warm since the first time she held it — body heat from years against Renata's chest, kept warm since by its own running. A person kept it warm for eleven years. The person is dead.
 
 She breathes. She climbs the stool to the coupling port.
 
@@ -2532,9 +2530,7 @@ She has been watching for this since the tunnel, the sign that the night has not
 
 "That's fine," she says. "It's enough."
 
-He gives her the bottle. She drinks half and hands it back. He drinks the rest. The shared bottle, the station at 0553, the broadcast done, the plain animal fact of thirst and water at the end of something large.
-
-She is very tired. Forty-seven hours awake. Cold. She has Φ43, a bone saw, a dead device, a field kit, and Femi — seventeen, four days in the tunnels, still on his feet.
+He gives her the bottle. She drinks half and hands it back. He drinks the rest. She is very tired. Forty-seven hours awake. Cold. She has Φ43, a bone saw, a dead device, a field kit, and Femi — seventeen, four days in the tunnels, still on his feet.
 
 She sits back down on the stool.
 

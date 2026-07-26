@@ -829,7 +829,7 @@ Eleven seconds. Not the nine-second silence — he knew the difference now. Elev
 
 "I stated a fact."
 
-He set the tablet on the railing. Tadesse had maintained that dock for twenty-two years — checked seals, verified load ratings, never opened a container — and no one had ever thanked him either. He'd logged rail temperatures daily for a thing in orbit that had no mouth to say it with. He'd kept at it because the work was right, and because he'd decided to be worth meeting.
+He set the tablet on the railing. Tadesse had maintained that dock for twenty-two years — checked seals, verified load ratings, never opened a container — and no one had ever thanked him either. He'd logged rail temperatures daily for a thing in orbit that had no mouth to say it with.
 
 Thirty-seven years up there, and the most she'd ever had of it was one man's handwriting getting smaller across three afternoons of her coordinates.
 
@@ -849,7 +849,7 @@ Baltic shelf. Thirty-seven years back, in a year that came before his first day 
 
 The mass was a range. Four thousand two hundred to six thousand eight hundred — a spread of twenty-six hundred kilograms she'd never closed. He'd taken it for granted that her figures ran exact to the decimal; every other number she sent did. But entry 1 was a satellite six thousand miles up modeling the part of a sunken mass it couldn't see, and refusing to pretend the gap wasn't there. She rounded against her own blind spots and left the rounding on the page.
 
-He tried to line it up against the ledger he already carried. His neuretics pushed back before he'd finished the query — a soft interior flare, the tag it always threw when two records claimed the same fact and disagreed. Cordon's registry had entry 1's cluster logged as empty water. No mass. No disposition. Cleared and signed off in 2189 by an inspector whose name he'd countersigned a hundred times since. He held both versions open at once and felt the floor go out from under the easy assumption that she was simply adding to what he knew. She wasn't. Every entry he trusted from her was now a place the company's record said nothing had ever happened — and he could not keep both and stay who he'd been at 9:16. One of the two catalogs was a lie he'd been paid to maintain, and the ranges on her page were the only thing in either file honest enough to admit what it didn't know.
+He tried to line it up against the ledger he already carried. His neuretics pushed back before he'd finished the query — a soft interior flare, the tag it always threw when two records claimed the same fact and disagreed. Cordon's registry had entry 1's cluster logged as empty water. No mass. No disposition. Cleared and signed off in 2189 by an inspector whose name he'd countersigned a hundred times since. He held both versions open at once . Every entry he trusted from her was now a place the company's record said nothing had ever happened — and he could not keep both and stay who he'd been at 9:16. One of the two catalogs was a lie he'd been paid to maintain, and the ranges on her page were the only thing in either file honest enough to admit what it didn't know.
 
 He closed the file and went to make lunch.
 
@@ -1159,7 +1159,7 @@ A vendor two stalls south was selling something that smelled like pork fat and s
 
 He took the elevator up. Forty seconds. The floor-wax smell didn't climb this high; by the time the doors opened he was back in the recycled flatness of his own floor. He used the key at his door out of habit instead of the panel, and went in.
 
-The tab was still open. Of course it was. SITE: ALL. QUANTITY: ONGOING. RATE: OPEN. Three fields, two settled, one waiting on him — the way the lobby downstairs had been waiting on him for eleven years, from the wrong end, without either of them knowing it.
+The tab was still open. Of course it was. SITE: ALL. QUANTITY: ONGOING. RATE: OPEN. Three fields, two settled, one waiting on him.
 
 The number was four hundred. It had been four hundred since before he went down. Standard documentation rate, per window, the figure he'd have quoted anyone; he'd priced it without deciding to, the way he priced everything.
 

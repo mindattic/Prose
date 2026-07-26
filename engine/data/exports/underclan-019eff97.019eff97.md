@@ -340,7 +340,7 @@ Vesh was quiet long enough that Glim thought he wouldn't answer. Then, "You know
 
 "The Tartar."
 
-"He called it that, after. We didn't have the word yet. He made it, more or less, out of an old surface book-fragment he'd seen once in the Cogs' salvage. He wanted to go back. He wanted to prove it wasn't a fever-dream out of bad air and hunger — which is what half the Hollow assumed at the time, myself included." Vesh's voice didn't change, but its pacing slowed, the way it slowed when the thing being told mattered more than the words let on. "He went back within the season. He used his own route, the one he'd walked out on, that he swore he remembered turn for turn. It didn't hold. He came to a wall where he said the passage had been. He tried again, a different way in. That didn't hold either. He spent the rest of his life going down after it, off and on. Every account he gave of where he'd been disagreed with the last. Not lies — he believed each one when he told it. The place simply wasn't where he'd left it. Or he wasn't the man who'd found it. By the end he couldn't tell you which."
+"He called it that, after. We didn't have the word yet. He made it, more or less, out of an old surface book-fragment he'd seen once in the Cogs' salvage. He wanted to go back. He wanted to prove it wasn't a fever-dream out of bad air and hunger — which is what half the Hollow assumed at the time, myself included." Vesh's voice didn't change. "He went back within the season. He used his own route, the one he'd walked out on, that he swore he remembered turn for turn. It didn't hold. He came to a wall where he said the passage had been. He tried again, a different way in. That didn't hold either. He spent the rest of his life going down after it, off and on. Every account he gave of where he'd been disagreed with the last. Not lies — he believed each one when he told it. The place simply wasn't where he'd left it. Or he wasn't the man who'd found it. By the end he couldn't tell you which."
 
 Glim said nothing. The Current's voice ran under the passage floor, ordinary, unbothered. He wanted, before they reached the Warm and the moment closed, to draw the one hard fact out of the old man that the story kept circling and never named — to make Vesh say plainly what had actually broken Marl, so he could carry it up with him as something checkable rather than a warning he could only half hold.
 
@@ -1458,7 +1458,7 @@ It wasn't there.
 
 He pressed harder. The tile was cold under his hands — colder than the Old Deep, colder than the ferrocrete of the tunnels above. Cold the way stone got cold when it had been sealed off from the warmth for a very long time, when the deep heat had never once reached down this far. The cold went up through his palms and his wrists, and he pressed harder, and still there was nothing.
 
-The Current was silent here. It had always been silent here.
+The Current was silent here.
 
 He had taken the Tartar-fear for superstition. Not with contempt — the tribe's fears had roots, always: the air that killed, the routes that flooded. He'd thought this fear was the same, a real danger dressed in sacred words, because a child scared of ghosts stayed out of the deep cold better than a child warned about bad air. He believed something closer to the ghosts now, sitting a stone's throw from the line Sorrel would not cross, though he couldn't have said what.
 
@@ -1800,8 +1800,6 @@ What happened was this. Vesh breathed the way he had been breathing, with effort
 
 He pressed his palm to the tile beside the sleeping-mat. The hum ran through the stone exactly as it had the day before, and the year before, and through all sixty-three of Vesh's years as Listener. Some part of Glim had been listening for a change. A slowing. A deepening. Any answer at all to the taking of the one man who had attended it longest. Nothing changed. The Current had not known, or had not cared, or the world with Vesh in it and the world without him were the same to it. The Warm ran on below, at the pace the Warm needed.
 
- Vesh had taught him to take the fact over the comfort, and this was the last fact the old man left him: the world had not noticed.
-
 He took the silence-piece out and held it until the bone went warm in his fist, the way Vesh had shown him. He sat the vigil to the length of his own breathing, which was how the Underclan counted the things that mattered. The room was the chamber beside the teaching-chamber, the one Vesh had rested in these last years. It smelled of old stone and the oil of the lamp he kept on the shelf and the faint thing Glim had only ever known as Vesh-smell, having no better word for it. It would not smell this way much longer. The body would be moved. The room would become someone else's. The smell would sink into the stone and be lost among everything else the stone had taken in.
 
 He sat. He breathed. He held the bone.
@@ -1910,9 +1908,9 @@ The clan had rebuilt enough by then. Not to what it had been — not in a month 
 
 He took the Oarsman's route.
 
-The black water was the same black water it had always been — the same cold, the same mineral smell, the same surface that swallowed light instead of throwing it back. He had stood at this edge many times. He had stood here as a boy, before the Brave-training, before he understood what the black water was and what it was for. He had stood here as a young Brave the first time, waiting for the Oarsman to return, afraid that it might not. He had stood here after Sorrel did not come back through the Old Deep, in the days when he still half-expected, against everything the Hollow had taught him, to hear her step behind his own.
+The black water was the same black water it had always been — the same cold, the same mineral smell, the same surface that swallowed light instead of throwing it back. He had stood here as a boy, before the Brave-training, before he understood what the black water was and what it was for. He had stood here as a young Brave the first time, waiting for the Oarsman to return, afraid that it might not. He had stood here after Sorrel did not come back through the Old Deep, in the days when he still half-expected, against everything the Hollow had taught him, to hear her step behind his own.
 
-The Oarsman came out of the dark the way it always came: without a sound, the hull barely troubling the water, the figure at its center present and attending and offering no account of where it had been or what it was.
+The Oarsman came out of the dark the way it always came: without a sound, the hull barely troubling the water, the figure at its center present.
 
 Glim stepped down into the vessel.
 

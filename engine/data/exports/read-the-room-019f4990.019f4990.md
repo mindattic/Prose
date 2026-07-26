@@ -12,7 +12,7 @@ READ THE ROOM is a story about a psionic who can hear every thought in the build
 
 The last chord was still hanging out front when Ethan Wolfe pushed through the green room door and let it swing shut. The wall took the crowd and folded it down to a low roar you felt in the concrete more than heard. The Velvet Tine had been built to hold worse than a Tuesday-night noise set. Its green room was a box of gray concrete, a lamp on a chain swinging in its own draft, cables taped down in fat black rivers along the floor.
 
-He stood with his hands loose and let the shaking finish. That was the part nobody warned you about — not the nerves before, the after. Eighty minutes of giving the room everything, then a door, then this: the engine still running with no road left to put it on. His shirt was soaked through the back. His pulse ticked in his throat, and his hands, when he looked at them, weren't quite his yet.
+He stood with his hands loose and let the shaking finish. That was the part nobody warned you about — not the nerves before, the after. Eighty minutes of giving the room everything, then a door. His shirt was soaked through the back. His pulse ticked in his throat, and his hands, when he looked at them, weren't quite his yet.
 
 No emitters in here, no AR layer, no brand idents floating in the dark, so his overlay ran empty. The quiet settled on him the way it did every night he played this room. He'd stopped trying to name the relief.
 
@@ -408,9 +408,7 @@ This time he was watching for it and still didn't see the cause. She just leaned
 
 "How are you—" he started, low, and she lifted two fingers off her thigh without turning. Not now. He swallowed it.
 
-He'd spent his life reading a crowd from a lit stage — learning to feel three hundred people tilt before they tilted, to catch the one body about to start something, to play the next eight bars into the mood the room was going to have instead of the one it had. He'd thought that was a skill. Watching her move through the Low, he understood he'd been doing a loud, cheap version of a thing she did in silence and got exactly right. She wasn't reading the room. She was reading the men who weren't in it yet.
-
-Left. Then a hard right that pressed him to cold ferrocement, her palm flat on his sternum — wait — and a shape went by across the mouth of the lane, unhurried, compact and dark, something long held low against his leg. Ethan's heart finally did the thing it should have been doing all along, a hard sick lurch. The shape passed. Her hand came off his chest, and the warmth of it lasted two full strides, and he noticed that, and couldn't help noticing he'd noticed. They went.
+He'd spent his life reading a crowd from a lit stage — learning to feel three hundred people tilt before they tilted, to catch the one body about to start something, to play the next eight bars into the mood the room was going to have instead of the one it had. He'd thought that was a skill. Watching her move through the Low, he understood he'd been doing a loud, cheap version of a thing she did in silence and got exactly right. Left. Then a hard right that pressed him to cold ferrocement, her palm flat on his sternum — wait — and a shape went by across the mouth of the lane, unhurried, compact and dark, something long held low against his leg. Ethan's heart finally did the thing it should have been doing all along, a hard sick lurch. The shape passed. Her hand came off his chest, and the warmth of it lasted two full strides, and he noticed that, and couldn't help noticing he'd noticed. They went.
 
 Six turns. He counted them because counting was a thing to hold onto, and every one of them had put a wall between them and a man. Not most. Every one. No wafer in Dayo's cold-box made you lucky six times running.
 
@@ -554,7 +552,7 @@ And then Mona must have started a sentence she didn't finish, because Faith felt
 
 The pause after was its own answer. Faith felt it in him before the word came — the half-second of nothing, the space where a *no* should have arrived fast and easy and instead had to be assembled.
 
-"No," he repeated, tasting it. His mouth did something bitter. Which meant yes. They both knew it meant yes. He didn't make her say it, and Faith loved him a little for that — the small mercy of not making Mona say the true thing down a wire a stranger was listening on.
+"No," he repeated, tasting it. His mouth did something bitter. Which meant yes. They both knew it meant yes. He didn't make her say it.
 
 "I'm coming," he said. "Twenty minutes. Don't—" He stopped, swallowed whatever he'd been about to tell her not to do, because there was nothing she could be told not to do that she wasn't already not doing, holding a dying man to her chest and keeping her nerve. "I'm coming."
 
