@@ -189,7 +189,7 @@ But the kid was so far down in the Tears, and whatever he'd cut it with, that th
 
 Levin moved first. Levin always moved first — it was the job, and the start of the job was his. His hand went for the sidearm on his hip the way it had a thousand times. But the drops had him a half-second behind his own arm, and the holster's retention caught the way it had never once caught, and the gun hung there, snagged, while his far-off eyes tried to make sense of what his hand had failed to do.
 
-Which left Tomas. Tomas, who had a daughter and a therapy bill and no plan to kill anybody today. His hands were steady, because his hands were always steady. He knew where a heart sat and how to reach it, because taking them out was the work. So his body did the clean thing, the trained thing, the thing he would have given a year of his life not to do. He put one round through the place his hands were trained to find. The recoil settled through his arms the way it always did. His breath came out. Neither of those things was a decision.
+Which left Tomas. Tomas, who had a daughter and a therapy bill and no plan to kill anybody today. His hands were steady, because his hands were always steady. He knew where a heart sat and how to reach it, because taking them out was the work. So his body did the clean thing, the trained thing, the thing he would have given a year of his life not to do. He put one round through the place his hands were trained to find. The recoil settled through his arms the way it always did. His breath came out.
 
 The sound of it in the small room was very loud.
 
@@ -885,8 +885,6 @@ At 7:04 his neuretics lit with the grey letters he'd been waiting for. They didn
 
 Internal. He turned the word over and found it good. Not the heir is taken. Not find who did this. Internal — the house's word for a wound it had given itself, the word that meant the hunt was over because there was no outside enemy left to hunt. Only a bride's line already drafting its withdrawal, and a Stem already turning from a missing son to a fracturing house. The stitch hadn't held. The two pure lines that had been one excuse from each other's throats had their excuse now, lying in a tower bed, and the knives that were supposed to go back in their drawers were coming out instead.
 
-He had done that.
-
 There would be a price. There was always a price, and a contract suspended pending review was a sentence with his name in it, if anyone ever thought to ask why the dog had come up empty on the one night it mattered. He weighed that against the thing he was watching: the house that owned him, that fed him under the table and called him by a collar's name, beginning — quietly, two floors up — to eat itself. The cars at the curb were already arguing. By nightfall the south side would be choosing sides, and a house at war with itself had no patience to spend on the man who found its lost things, and none left over to wonder hard about him either.
 
 A Carrion Wagon sat two blocks down where it had sat since dawn, dark and patient, the two men in it watching the same windows he was. He didn't go to them, and they didn't come to him. There was nothing left to say that the bedroom hadn't said.
@@ -971,7 +969,7 @@ The lattices were still there at the edge of the windshield — the grid the Tea
 
 "Clerical error." Tomas watched the strata slide past. He said nothing else, because the answer that sounded like an answer was the one you hoped nobody tested.
 
-Levin almost smiled. It was the first thing close to a smile Tomas had seen on him in a day, since the storm grate, and it cost him something — the way everything cost him something now that there was nothing in the door pocket to pay with but himself.
+Levin almost smiled. It was the first thing close to a smile Tomas had seen on him in a day, since the storm grate, and it cost him something, the way everything did now.
 
 At a light, Levin took out the photograph, worn soft at the corners from however many times he'd carried it and never once looked at it. A man at thirty-one, a few years and a whole life ago, before the trade and before the drops, squinting into a sun somewhere that wasn't the GLMZ, grinning at whoever held the camera. Levin kept it to prove there'd been a before. For years he'd kept it the way you keep a thing you can't bear to look at. Now he looked at it, at the light, with his sick clean shaking hands. Then he put it away, gently, and put both hands back on the wheel.
 

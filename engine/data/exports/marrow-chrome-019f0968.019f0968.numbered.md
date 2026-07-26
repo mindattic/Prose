@@ -177,7 +177,7 @@ She didn't answer.
 
 She let it sit there the way he'd set the slate down — squared, waiting. There's a thing people do when a man confesses clean: they reach for him, they make the room warm again, because a cold room with a confession in it is hard to sit in. She'd watched fixers do it her whole life and never once seen the reach cost the man anything. So she let the room stay cold. She let him stand there with what he knew and no one to take it off his hands. The broth ticked as it cooled. Somewhere past the dam a slug hit the Pulse tube and the building took it in its molars and let it go.
 
-He had the look of a man who'd already counted his own figure and picked the next thing before he crossed the threshold. She'd done the same three days ago with Soraya, fast enough that no one saw. That was useful. A man already past his own denial has nothing left to protect but the work.
+He had the look of a man who'd already counted his own figure and picked the next thing before he crossed the threshold. She'd done the same three days ago with Soraya, fast enough that no one saw. That was useful.
 
 "Then we're not allies," she said. "We're two people who finally read the same book the same direction. You bring what PEREGRINE saw" — Helix's private muscle, ex-military chassis with the serial numbers scrubbed off — "and I bring the seven I left behind and the fourteen who'll move for me. Stave opens the vault, if I can knock soft enough. First thing you do for me: find me the forty-first name. The one you never read. Somebody on that barge was never on your manifest, and that's the head nobody got paid for, and that's the one they'll have left somewhere they think nobody's still counting."
 
@@ -356,7 +356,7 @@ In bay C the PEREGRINE turned — the whole frame of it pivoting off Palesa's op
 [Beat 12]
 Anneke Oyelowo came down the east core herself, because she didn't hand off a thing she could close in person. She met Rook at the landing between levels, where the loud channel was walking up and the count was walking down, and the two women looked at each other in the red light with the wedge still in both their teeth. Her ident had already fired in Rook's neuretics, a proximity tag writing itself into the log without asking — *Oyelowo, A., Helix Asset Protection*. She wasn't armed. She carried a tablet the way other people carried a sidearm, balanced flat on her forearm, the reconcile open on it in twenty-one rows, and she didn't close it when Rook arrived. She let Rook see the rows.
 
-"You priced them," Rook said, flat, the way she said most true things, and she put her hand on the rail the way, four levels down, a clerk had put a hand on a bed rail — the grip that never decides whether it's holding the rail up or being held up by it. "Palesa. Adalemo. The woman at forty with the clean cabling. You ran the number on each one and it came out keep, so you kept them, and you filed the hand that didn't price as gone."
+"You priced them," Rook said, flat, the way she said most true things, and she put her hand on the rail the way, four levels down, a clerk had put a hand on a bed rail. "Palesa. Adalemo. The woman at forty with the clean cabling. You ran the number on each one and it came out keep, so you kept them, and you filed the hand that didn't price as gone."
 
 "Everyone under this roof prices," Anneke said, and turned the tablet so the rows faced Rook fully. "You're carrying a contract for a count right now, in another woman's arms. Don't stand in my gap and call yours clean."
 

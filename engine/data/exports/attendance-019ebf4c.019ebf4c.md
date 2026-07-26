@@ -94,7 +94,7 @@ The conversation lasted three minutes, and Yemina knew inside the first thirty s
 
 He came back to that twice. The second time he said it slower, as if the slowness were a kindness she was too junior to catch. The counseling office held the wellness flags. The counseling office had the intake notes. The counseling office, his tone said, was the proper channel — the well-lit one, the one that would settle this without anyone standing uncomfortable in a hallway.
 
-Yemina listened and placed him. Not with judgment. He went where she kept the people who weren't lying and weren't helping — the largest group there was. He believed what he was telling her. That was the thing about a closed door: it didn't have to be locked out of malice. It only had to be closed, and sure it was right to be closed. Fifteen years had taught her that the doors that hurt worst were the ones held shut by people certain they were doing their jobs.
+Yemina listened and placed him. Not with judgment. He went where she kept the people who weren't lying and weren't helping. He believed what he was telling her. That was the thing about a closed door: it didn't have to be locked out of malice. It only had to be closed, and sure it was right to be closed. Fifteen years had taught her that the doors that hurt worst were the ones held shut by people certain they were doing their jobs.
 
 "I'd like to speak with Mr. Vasquez directly," she said.
 
@@ -826,7 +826,7 @@ She logged out. The gray car was where she'd left it in the lot, and from the of
 
 That was the whole of it. That was as far in as her clearance went, and she knew now exactly where it ended and what stood on the other side of the line. Not a wall. Not a locked door. A locker with no name on it, in a freight yard she had no further reason to visit. And a name.
 
-Nadia. She ran it one night against every district personnel roster her access allowed, quietly, telling herself she was confirming a detail for the file. The search came back empty. She sat in front of the empty field with her tea gone cold at her elbow and her thumb resting on the key that would run it again. The weight would not leave her chest, and by it she understood that what she was doing was not confirmation. It was closer to grief.
+Nadia. She ran it one night against every district personnel roster her access allowed, quietly, telling herself she was confirming a detail for the file. The search came back empty. She sat in front of the empty field with her tea gone cold at her elbow and her thumb resting on the key that would run it again.
 
 She did not run the search again after that.
 

@@ -250,7 +250,7 @@ He counted forty-three distinct voices in the eleven minutes.
 
 He hadn't set out to. It was a thing his training did with the part of him that wasn't watching the doors — sort the sound, tag what was human, hold the number. The first voices came clean and separate: a man's low call, a woman answering, a child's pitch climbing over both. He tagged them and kept his eyes on the loading bay. Then the sound stopped being separate. By the fourth minute the voices were stacking, running over each other, the same throat going up an octave and registering twice to an ear that didn't know better, two people crying in a way that braided into one and came apart again into two. He knew the number was imprecise. Voices overlap when people are afraid; fear flattens the difference between one and several, and a building full of it doesn't sound like forty-three doors of conversation. It sounds like a single animal with many mouths.
 
-So he didn't trust the number. He distrusted it the whole time he was building it. That was the discipline — to keep counting the thing you knew you were counting wrong, because a wrong count held honestly was still closer to the truth than no count at all, and because the alternative was to stop, and stopping wasn't an order he'd been given.
+So he didn't trust the number. He distrusted it the whole time he was building it. That was the discipline — to keep counting the thing you knew you were counting wrong, because a wrong count held honestly was still closer to the truth than no count at all, because stopping wasn't an order he'd been given.
 
 His back teeth came together at thirty-one. He didn't decide to; he found them pressed, molar to molar, the muscle standing up in his jaw under the beard. He held them there, because letting go would have meant the rest of him had something to say about the number and he couldn't afford to hear it yet. Thirty-one. Thirty-two when the child's pitch came back, lower now, worn to almost nothing. He kept his eyes on the doors. The doors stayed shut. Nobody egressed. There were no contacts to document. The line held perfectly, and that was the part he would carry every twenty-first after — that he had done the job exactly as ordered, and the doing of it was the wrong thing.
 
@@ -616,7 +616,7 @@ Bear let his gaze travel down once, the old habit, the look he didn't bother hid
 
 Then he was close, and Declan smiled.
 
-It was the smile. Bear had seen it three times across eight years and he knew it the way you know weather — the smile that meant Declan had prepared something careful and was about to hand it over with the warmth of a man giving you a gift he'd wrapped himself. There was real warmth in it. That was what made it work. Declan wasn't a liar. Declan was something more expensive than a liar.
+It was the smile. Bear had seen it three times across eight years and he knew it the way you know weather — the smile that meant Declan had prepared something careful and was about to hand it over with the warmth of a man giving you a gift he'd wrapped himself. There was real warmth in it. That was what made it work. Declan wasn't a liar.
 
 "Boris," he said.
 
@@ -642,7 +642,7 @@ The panel was at 1300. He was nine minutes early.
 
 Brandt was in the lobby.
 
-Bear saw him before he was through the door, the whole room landing at once. Not Legal. Not another operator come to put a hand on his shoulder and explain the schedule. The colonel himself. Civilian clothes — a soft gray coat, the kind a man buys when he no longer has anyone to dress for — and that was the first wrong note, because the coat was civilian and the man inside it was not. The clothes had let go of the rank. The body hadn't. Brandt stood the way he'd always stood, square to the room, weight settled, every line of him precise about the exact patch of floor he'd chosen to hold. You could take the uniform off a man. You couldn't take eleven years of standing at attention out of his spine. It lived in him now the way an old break lives in a bone — set, healed, load-bearing, and plain to anyone who knew where to look.
+Bear saw him before he was through the door, the whole room landing at once. Not Legal. Not another operator come to put a hand on his shoulder and explain the schedule. The colonel himself. Civilian clothes — a soft gray coat, the kind a man buys when he no longer has anyone to dress for — and that was the first wrong note, because the coat was civilian and the man inside it was not. The clothes had let go of the rank. The body hadn't. Brandt stood the way he'd always stood, square to the room, weight settled, every line of him precise about the exact patch of floor he'd chosen to hold. You could take the uniform off a man. You couldn't take eleven years of standing at attention out of his spine. It lived in him now.
 
 Seventy-two, maybe. The years had done their work. The hair gone, the hands thinner, the jaw softened. The scar under his left eye — a finger and a half of it once, pale and angry — had gone smooth with the decades, sanded to a faint silver seam you'd only find if you already knew it was there. Bear knew it was there. He'd been there for the making of it.
 
@@ -692,7 +692,7 @@ The service corridor on the third level had three of them.
 
 Not Atlas II. Atlas III — the same chassis as the panel's own security detail, which told Bear two things before he'd cleared the stairwell door. First, these weren't building contractors pulled off a forwarding-company roster. Second, Brandt had reached past the sub-license tier entirely and put his hand on the active roster — the names that don't pick up unless someone they owe is calling. He'd gotten them here in fifty-three minutes.
 
-Bear could see what that had cost him. Not money. Money would have been easy; money you spend down and refill. This was the other kind of price. To stand three active-credential operators in a service corridor on under an hour's notice, you spend relationships — the specific kind of favor that lives in one person, that you can call in exactly once and never from the same person twice. Brandt had a limited store of those. He'd been alive long enough and careful enough to build it, and he was old enough now that he couldn't build more. Every name in this corridor was a name Brandt would never be able to ask again. He was burning something that didn't come back, to slow down a man who was going to walk into that hearing regardless. That was the tell. Not the chassis. The price.
+Bear could see what that had cost him. To stand three active-credential operators in a service corridor on under an hour's notice, you spend relationships — the specific kind of favor that lives in one person, that you can call in exactly once and never from the same person twice. Brandt had a limited store of those. He'd been alive long enough and careful enough to build it, and he was old enough now that he couldn't build more. Every name in this corridor was a name Brandt would never be able to ask again. He was burning something that didn't come back, to slow down a man who was going to walk into that hearing regardless. That was the tell. Not the chassis. The price.
 
 The lead had set up to cover the stairwell exit the way the training manual laid it out, then adjusted half a step the way the manual didn't — the correction you only make after the manual has failed you once in a real room and you lived to revise it. Someone had taught him that. Bear knew the technique the way you know a man's handwriting without seeing his face, and the knowing sat in his chest a moment, heavier than he wanted. Brandt was spending people Bear had once stood beside. The cost wasn't abstract. It had names too.
 
@@ -976,7 +976,7 @@ He gave it two seconds.
 
 "You know," Bear said, "I almost considered that."
 
-Brandt drew himself up. It was a clean motion — chin, shoulders, weight settling back — and then his right hand came up, the elbow finding the angle it had found ten thousand times. A colonel's salute. Full and formal. The last gesture of an institution to one of its own. The two operators on the floor watched him do it. The room went very still.
+Brandt drew himself up. It was a clean motion — chin, shoulders, weight settling back — and then his right hand came up, the elbow finding the angle it had found ten thousand times. A colonel's salute. Full and formal. The last gesture of an institution to one of its own. The two operators on the floor watched him do it.
 
 Bear did not return it. He raised his right hand, open, and held it out.
 
@@ -1084,7 +1084,7 @@ The line opened on the second ring. A woman answered — unhurried, the kind of 
 
 He said he would.
 
-After the line closed he sat with one thing she'd done. She hadn't asked what he could do. She'd asked what he was willing to do. Those were different questions. Eight years he'd been exactly what Halcyon needed, and what Halcyon needed was a man whose willingness had already been decided for him — by contract, by the compliance lock, by the Manowar humming warm against his sternum like a leash that held on tight. He'd answered the willing question so many times it had stopped feeling like a question. Now it was open again, and he didn't know the shape of his own answer yet. He supposed that was why she wanted him there in person.
+After the line closed he sat with one thing she'd done. She hadn't asked what he could do. She'd asked what he was willing to do. Those were different questions. Eight years he'd been exactly what Halcyon needed, and what Halcyon needed was a man whose willingness had already been decided for him — by contract, by the compliance lock, by the Manowar's compliance lock, warm against his sternum, a leash he'd stopped noticing he wore. He'd answered the willing question so many times it had stopped feeling like a question. Now it was open again, and he didn't know the shape of his own answer yet. He supposed that was why she wanted him there in person.
 
 He folded his hands over the quiet place on his chest. Nothing rose to meet them. The accumulator was dead and staying dead, and it didn't care whether he wanted it back. He thought about the Payday in the bag — a bottom-shelf piece with a barrel that barely earned the name, the gun a man carried when the gun he trusted belonged to someone else. He thought about walking onto a dock in Ironbend with that in the bag, a clean name that had never done anything, and a frame full of titanium that finally belonged to nobody but him.
 
