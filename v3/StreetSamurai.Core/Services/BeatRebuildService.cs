@@ -42,16 +42,22 @@ public class BeatRebuildService
     public const double MinWordRetention = 0.90;
 
     /// <summary>Sentence-aligned window size fed to the LLM per call.
-    /// 12,000 chars ≈ 2,000 words ≈ 8 pages. Large enough to see a full scene
-    /// or sequel in context; small enough that the JSON output (same prose
-    /// re-packaged) stays well under MaxOutputTokens and dialogue quotes are
-    /// escaped reliably.</summary>
+    /// Each source beat is processed as a unit first. This limit only applies
+    /// when a single source beat exceeds it — most chapter beats are under 50k
+    /// chars and are passed whole. Keeping it at 12k as the sub-window fallback
+    /// preserves JSON output size safety for giant outlier beats.</summary>
     private const int WindowChars = 12000;
 
     /// <summary>Max output tokens for the segmentation call. Must be large enough
-    /// to hold the window's prose re-emitted as JSON (≈ WindowChars / 3 tokens)
-    /// plus structure overhead.</summary>
+    /// to hold the window's prose re-emitted as JSON.  At ~4 chars/token, a
+    /// 50,000-char chapter needs ≈12,500 tokens of output; 16,000 covers it
+    /// with headroom for JSON structure and quote-escaped dialogue.</summary>
     private const int MaxOutputTokens = 16000;
+
+    /// <summary>Source beats larger than this are sub-windowed; smaller ones are
+    /// passed to the LLM in a single call so the model sees the full chapter and
+    /// can identify all its internal Scene/Sequel arcs correctly.</summary>
+    private const int LargeBeatThreshold = 50000;
 
     public BeatRebuildService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
@@ -106,14 +112,34 @@ public class BeatRebuildService
         if (sourceText.Trim().Length == 0)
             return new(nodeId, slug, title, false, ordered.Count, 0, 0, false, null, "Node beats are empty — nothing to rebuild.");
 
-        // ── LLM re-segmentation, windowed ──
+        // ── LLM re-segmentation — process each source beat as its own unit ──
+        // Passing each chapter beat individually lets the LLM see a full chapter
+        // and identify all its internal Scene/Sequel arcs. Assembling into one
+        // stream then re-chunking crosses chapter boundaries, producing only 1-2
+        // beats per window instead of the expected 6-10.
         var system = BuildSystemPrompt();
         var rebuilt = new List<RebuiltBeat>();
-        foreach (var window in ChunkBySentence(sourceText, WindowChars))
+        foreach (var entry in ordered)
         {
             ct.ThrowIfCancellationRequested();
-            var beats = await SegmentWindowAsync(system, window, ct);
-            rebuilt.AddRange(beats);
+            var beatText = (entry.Beat.Text ?? "").Trim();
+            if (beatText.Length == 0) continue;
+
+            // Beats within the large-beat threshold are passed as a single call;
+            // outlier beats are sub-windowed so JSON output stays manageable.
+            if (beatText.Length <= LargeBeatThreshold)
+            {
+                var beats = await SegmentWindowAsync(system, beatText, ct);
+                rebuilt.AddRange(beats);
+            }
+            else
+            {
+                foreach (var window in ChunkBySentence(beatText, WindowChars))
+                {
+                    var beats = await SegmentWindowAsync(system, window, ct);
+                    rebuilt.AddRange(beats);
+                }
+            }
         }
         rebuilt = rebuilt.Where(b => !string.IsNullOrWhiteSpace(b.Text)).ToList();
         if (rebuilt.Count == 0)
@@ -188,12 +214,13 @@ public class BeatRebuildService
             rules + "\n\n" + tone + "\n\n" +
             "TASK: Divide the passage below into Swain SCENE and SEQUEL beats per the doctrine above. " +
             "Each beat is one complete Scene (Goal→Conflict→Disaster) or one complete Sequel (Reaction→Dilemma→Decision). " +
-            "SCALE RULE: this window is roughly 8 pages of prose; expect 6–10 beats in the window, NOT 50+. " +
-            "One complete Scene (Goal+Conflict+Disaster, spanning multiple paragraphs and dialogue) = ONE beat entry. " +
-            "One complete Sequel (Reaction+Dilemma+Decision) = ONE beat entry. " +
-            "A multi-page dialogue exchange is ONE beat (the Conflict phase of a Scene). " +
-            "A page of a character processing a disaster is ONE Sequel beat. " +
-            "When in doubt, merge — too few large beats is correct; too many small beats is WRONG. " +
+            "SCALE RULE: target roughly 1 beat per page (250 words). A 3,000-word chapter = ~12 beats; a 1,000-word chapter = ~4 beats. " +
+            "Find every natural Goal-launch or Reaction-launch in the prose and start a new beat there. " +
+            "One complete Scene (Goal+Conflict+Disaster, one or more pages) = ONE beat entry. " +
+            "One complete Sequel (Reaction+Dilemma+Decision, often a paragraph or two) = ONE beat entry. " +
+            "A sustained dialogue exchange is the Conflict inside ONE Scene beat — do NOT split dialogue into multiple beats. " +
+            "A short paragraph of a character reacting to a disaster = ONE Sequel beat, even if brief. " +
+            "When in doubt, split — too many small beats is acceptable; too few giant beats loses the structure. " +
             "Apply ONLY these mechanical fixes within each beat: put each speaker's dialogue on its own LINE (not its own beat); end questions with '?'; " +
             "use asks/asked (not says/said) for question attribution.\n" +
             "HARD CONSTRAINTS:\n" +
