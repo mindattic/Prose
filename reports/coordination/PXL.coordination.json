@@ -2,8 +2,8 @@
   "nodeCode": "PXL",
   "slug": "the-door-is-unlocked-2db1c6ca",
   "title": "Pixel",
-  "generatedAtUtc": "2026-07-15 01:30:53Z",
-  "totalBeats": 14,
+  "generatedAtUtc": "2026-07-25 23:04:13Z",
+  "totalBeats": 15,
   "covered": 14,
   "chapterGranular": false,
   "storyScope": {
@@ -16,23 +16,24 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 14
+    "UNSCORED": 15,
+    "MISSING_MEANING": 1
   },
   "beats": [
     {
       "BeatId": "019f4fa6-7158-76d4-a9e2-83103ffd95fb",
       "Number": 5235,
-      "Chapter": "Act One \u2014 Arrival and Lo",
+      "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the protagonist\u0027s exceptional competence and method before immediately undercutting her with an unforeseen failure, creating the story\u0027s inciting wound.",
-      "EscalationTarget": "3",
+      "EscalationTarget": "4",
       "EventType": "departure",
       "RevelationMode": "curiosity",
       "BeatTags": [
         "anachrony-cut"
       ],
-      "ProseLength": 4562,
+      "ProseLength": 4703,
       "Flags": [
         "UNSCORED"
       ],
@@ -41,15 +42,15 @@
     {
       "BeatId": "019f4fa6-7cf1-7729-a694-20c37b20f2c8",
       "Number": 5236,
-      "Chapter": "Act One \u2014 Arrival and Lo",
+      "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Uses a drifting, untethered aerobloc to mirror the protagonist\u0027s own precarious displacement while establishing the world\u0027s indifferent scale.",
-      "EscalationTarget": "4",
+      "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3708,
+      "ProseLength": 4474,
       "Flags": [
         "UNSCORED"
       ],
@@ -58,15 +59,15 @@
     {
       "BeatId": "019f4fa6-881e-7381-98f5-604a96d9ebd6",
       "Number": 5237,
-      "Chapter": "Act One \u2014 Arrival and Lo",
+      "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals that the protagonist is already being tracked before she can orient herself, converting arrival into immediate threat and raising the stakes of her vulnerability.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "3",
       "EventType": "ambush",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 4252,
+      "ProseLength": 4309,
       "Flags": [
         "UNSCORED"
       ],
@@ -75,17 +76,17 @@
     {
       "BeatId": "019f4fa6-994e-7396-900a-5704a33aba8f",
       "Number": 5238,
-      "Chapter": "Act One \u2014 Arrival and Lo",
+      "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Demonstrates resourcefulness under material deprivation, showing how the protagonist converts professional skill into bare survival with no margin for error.",
-      "EscalationTarget": "5",
-      "EventType": "salvage",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "4",
+      "EventType": "repair",
+      "RevelationMode": "none",
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 4414,
+      "ProseLength": 4462,
       "Flags": [
         "UNSCORED"
       ],
@@ -94,17 +95,15 @@
     {
       "BeatId": "019f4fa6-a683-7e3a-a6f3-6ff6c463b651",
       "Number": 5239,
-      "Chapter": "Act Two \u2014 Rebuilding",
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes the protagonist rebuilding competence and income in unfamiliar territory, proving she can adapt her methods to a new environment.",
-      "EscalationTarget": "6",
-      "EventType": "negotiation",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4323,
+      "EscalationTarget": "5",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 5338,
       "Flags": [
         "UNSCORED"
       ],
@@ -113,18 +112,18 @@
     {
       "BeatId": "019f4fa6-af9a-727d-a6b9-4d27af76abdc",
       "Number": 5240,
-      "Chapter": "Act Two \u2014 Rebuilding",
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Shows the protagonist patiently hunting her adversary through disciplined tradecraft, turning her own victimization into an active investigation.",
-      "EscalationTarget": "7",
-      "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "5",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [
         "subplot",
         "intertextual-touchpoint"
       ],
-      "ProseLength": 3757,
+      "ProseLength": 3548,
       "Flags": [
         "UNSCORED"
       ],
@@ -133,15 +132,15 @@
     {
       "BeatId": "019f4fa6-b8f9-764f-b7b0-a08a09f6774b",
       "Number": 5241,
-      "Chapter": "Act Two \u2014 Rebuilding",
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Reveals the protagonist\u0027s ability to find coherence pathways in hardware never meant to be ghosted, deepening the reader\u0027s sense of her as uniquely gifted.",
-      "EscalationTarget": "7",
-      "EventType": "confrontation",
-      "RevelationMode": "none",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4166,
+      "ProseLength": 3539,
       "Flags": [
         "UNSCORED"
       ],
@@ -150,18 +149,18 @@
     {
       "BeatId": "019f4fa6-c52f-7acb-8c4f-5b8249858865",
       "Number": 5242,
-      "Chapter": "Act Two \u2014 Rebuilding",
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Pays off the investigation by confirming the adversary\u0027s identity and connecting him to her original loss, converting rebuilding into purposeful pursuit.",
-      "EscalationTarget": "8",
-      "EventType": "assessment",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "surprise",
       "BeatTags": [
-        "intertextual-touchpoint",
-        "subplot"
+        "subplot",
+        "intertextual-touchpoint"
       ],
-      "ProseLength": 4546,
+      "ProseLength": 5441,
       "Flags": [
         "UNSCORED"
       ],
@@ -170,36 +169,53 @@
     {
       "BeatId": "019f4fa6-d376-7057-8257-6e69dd1bae3a",
       "Number": 5243,
-      "Chapter": "Act Three \u2014 The Offensiv",
+      "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Establishes the adversary as credible and complex rather than simply villainous, raising the cost and moral weight of the confrontation ahead.",
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "none",
+      "EscalationTarget": "7",
+      "EventType": "investigation",
+      "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 5991,
+      "ProseLength": 6307,
       "Flags": [
         "UNSCORED"
       ],
       "Covered": true
     },
     {
+      "BeatId": "019f8780-fe0d-78a1-9481-2e76604b9427",
+      "Number": 5490,
+      "Chapter": "Chapter 3 \u2014 The Offensiv",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3140,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
       "BeatId": "019f4fa6-de54-751d-94f4-94e375d68375",
       "Number": 5244,
-      "Chapter": "Act Three \u2014 The Offensiv",
+      "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Escalates the adversary\u0027s power by showing he can systematically dismantle her rebuilt life, forcing the protagonist into open conflict rather than patient surveillance.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
+      "EscalationTarget": "8",
+      "EventType": "reconnaissance",
       "RevelationMode": "curiosity",
       "BeatTags": [
-        "intertextual-touchpoint"
+        "subplot"
       ],
-      "ProseLength": 4248,
+      "ProseLength": 3539,
       "Flags": [
         "UNSCORED"
       ],
@@ -208,34 +224,15 @@
     {
       "BeatId": "019f4fa6-e9b4-76fc-a332-b13cf2bcf40c",
       "Number": 5245,
-      "Chapter": "Act Three \u2014 The Offensiv",
+      "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Establishes the protagonist\u0027s methodical competence and tactical patience, positioning her as a credible threat before the confrontation begins.",
-      "EscalationTarget": "10",
-      "EventType": "infiltration",
-      "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 6981,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f4fa6-f63d-7ee6-a855-e6d59c73834b",
-      "Number": 5246,
-      "Chapter": "Act Three \u2014 The Offensiv",
-      "ChapterIndex": 2,
-      "Act": 0,
-      "Meaning": "Pays off the displaced instruments as a symbol of inheritance while revealing the emotional weight of her mother\u0027s tools and her own unresolved relationship to that legacy.",
       "EscalationTarget": "9",
-      "EventType": "loss",
+      "EventType": "recovery",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2541,
+      "ProseLength": 6340,
       "Flags": [
         "UNSCORED"
       ],
@@ -244,17 +241,15 @@
     {
       "BeatId": "019f4fa7-1175-7e13-aa66-857d7c8e8f4a",
       "Number": 5247,
-      "Chapter": "Act Four \u2014 Confrontation",
+      "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Turns the power dynamic by showing the protagonist expose the antagonist\u0027s campaign with his own evidence, converting four days of preparation into decisive leverage.",
       "EscalationTarget": "10",
-      "EventType": "collapse",
-      "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 5324,
+      "EventType": "confrontation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 5322,
       "Flags": [
         "UNSCORED"
       ],
@@ -263,15 +258,31 @@
     {
       "BeatId": "019f4fa7-1cb1-7eda-adc9-422de2278b15",
       "Number": 5248,
-      "Chapter": "Act Four \u2014 Confrontation",
+      "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Resolves the arc by confirming what she has built and what he could not take, grounding her victory in autonomy rather than confrontation.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "5",
       "EventType": "ceremony",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2821,
+      "ProseLength": 3026,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f4fa6-f63d-7ee6-a855-e6d59c73834b",
+      "Number": 5246,
+      "Chapter": "Chapter 4 \u2014 Confrontatio",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Pays off the displaced instruments as a symbol of inheritance while revealing the emotional weight of her mother\u0027s tools and her own unresolved relationship to that legacy.",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 4788,
       "Flags": [
         "UNSCORED"
       ],

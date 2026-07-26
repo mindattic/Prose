@@ -1,39 +1,38 @@
 {
   "nodeCode": "UNDR",
-  "generatedAtUtc": "2026-07-25 17:44:07Z",
+  "generatedAtUtc": "2026-07-25 23:46:45Z",
   "beatsScanned": 57,
   "cleanBeats": 11,
-  "totalFindings": 96,
+  "totalFindings": 80,
   "bySeverity": {
-    "MODERATE": 15,
-    "MINOR": 81
+    "MODERATE": 10,
+    "MINOR": 70
   },
   "byType": {
-    "CLICHE": 22,
-    "GRIPE": 68,
-    "CONTRADICTION": 1,
-    "MEANING-MISMATCH": 5
+    "MEANING-MISMATCH": 7,
+    "GRIPE": 58,
+    "CLICHE": 15
   },
   "findings": [
     {
-      "BeatId": "8aa84e2d-5b00-48e5-b0ed-0143d45263f9",
-      "Number": 4780,
-      "Chapter": "Chapter 3 \u2014 The Fare",
-      "Type": "CLICHE",
+      "BeatId": "0e845c65-7160-41ea-b296-f6184d2c7d2d",
+      "Number": 4784,
+      "Chapter": "Chapter 4 \u2014 The Surfacing Called",
+      "Type": "MEANING-MISMATCH",
       "Severity": "MODERATE",
-      "Quote": "His eyes stung, sudden and unasked, and he looked at the candle so the man across from him wouldn\u0027t see the water in them.",
-      "Note": "Stock crying-boy imagery (\u0022eyes stung,\u0022 \u0022water in them,\u0022 hiding tears from the candle) reads as familiar sentimental shorthand rather than earned specific detail.",
-      "Fix": "Cut to a more physical, less generic reaction \u2014 e.g. a swallow, a held breath, without naming tears directly."
+      "Quote": "How long?\u0022 he asked.\n\n\u0022For me, until",
+      "Note": "Beat is cut off mid-sentence before Sorrel\u0027s key revelation lands, undercutting the farewell\u0027s emotional payoff as stated in the purpose.",
+      "Fix": "Complete the exchange so her answer registers as the signal that she sees something worth saving in him."
     },
     {
-      "BeatId": "d141a5b3-bd4b-42bf-9843-4eafddf59742",
-      "Number": 4795,
-      "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
-      "Type": "CLICHE",
+      "BeatId": "77a7342b-288e-4eb1-8d1d-2506dfd11516",
+      "Number": 4788,
+      "Chapter": "Chapter 5 \u2014 Surface-Stained",
+      "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "His eyes stung. For a second he thought it was the surface light, something in it his dark eyes couldn\u0027t take. Then he understood. His eyes were stinging because they were wet.",
-      "Note": "The \u0027thought it was X, then realized it was tears\u0027 beat is a well-worn device for delaying emotional recognition.",
-      "Fix": "Have the wetness registered directly through touch/smell first, skipping the light misdirection."
+      "Quote": "He\u0027d come this far believing that was enough, and Grale\u0027s voice sat at the back of his skull \u2014 you don\u0027t know what stays in you \u2014 and he wanted to know. He wanted to know whether, when the choice came, he could move without weighing it first.",
+      "Note": "Directly states the thematic point of the beat (identity test vs. survival) instead of letting the action alone carry it; borders on telling-not-showing the internal stakes.",
+      "Fix": "Trim to one clause and let the physical choice (\u0027He went left\u0027) stand as the statement."
     },
     {
       "BeatId": "e1a3b465-3e2c-407e-a031-c00947ff2dec",
@@ -41,59 +40,9 @@
       "Chapter": "Chapter 8 \u2014 A Name He Will Not Answer",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "The surface kept names the way the Oarsman kept fares \u2014 on record, unchanging.",
-      "Note": "Purple simile that doesn\u0027t clarify; \u0027kept fares\u0027 is vague mechanism, weakening rather than illuminating the point about names.",
-      "Fix": "Cut the simile; state plainly that the surface recorded names and never let them change."
-    },
-    {
-      "BeatId": "e1a3b465-3e2c-407e-a031-c00947ff2dec",
-      "Number": 4800,
-      "Chapter": "Chapter 8 \u2014 A Name He Will Not Answer",
-      "Type": "GRIPE",
-      "Severity": "MODERATE",
-      "Quote": "All of them carried the same thing underneath \u2014 we never stopped believing you were there.",
-      "Note": "Telling-not-showing; the abstraction is asserted rather than dramatized, and shifts to a generalized aphorism about the Underclan\u0027s feelings.",
-      "Fix": "Show the feeling in Noor\u0027s specific behavior instead of naming the underlying sentiment abstractly."
-    },
-    {
-      "BeatId": "c5e9adb4-6ea9-49c1-a7f3-ea32e85bd64a",
-      "Number": 4801,
-      "Chapter": "Chapter 9 \u2014 The Way Down",
-      "Type": "GRIPE",
-      "Severity": "MODERATE",
-      "Quote": "A Brave who lets a candle die is a Brave who isn\u0027t paying attention.",
-      "Note": "Reads as a stock aphorism/maxim rather than earned interior thought; undercuts the emotional weight of the death with a tidy rule.",
-      "Fix": "Replace with a specific, concrete self-accusation tied to the moment rather than a general maxim."
-    },
-    {
-      "BeatId": "f49f5a8e-ed17-4c23-a612-b138c62a7c59",
-      "Number": 4802,
-      "Chapter": "Chapter 9 \u2014 The Way Down",
-      "Type": "GRIPE",
-      "Severity": "MODERATE",
-      "Quote": "It wrapped around them the way silence wraps around a surface person.",
-      "Note": "Simile is confusing/inverted \u2014 silence doesn\u0027t obviously \u0027wrap around\u0027 surface people in an established way; unclear what it\u0027s meant to clarify.",
-      "Fix": "Cut simile or replace with a direct sensory description of the sound enveloping them."
-    },
-    {
-      "BeatId": "d398a4db-a2d5-4b64-bcbb-a6575579026b",
-      "Number": 4810,
-      "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
-      "Type": "GRIPE",
-      "Severity": "MODERATE",
-      "Quote": "He\u0027d been reliable the way the cistern was reliable \u2014 present, useful, taken for granted.",
-      "Note": "Tells rather than shows Slip\u0027s significance; the simile is functional but flat exposition dressed as insight.",
-      "Fix": "Cut the simile; let the preceding concrete details (hands on frame-mesh, silent work) carry the point."
-    },
-    {
-      "BeatId": "68b5b18d-fbe9-49b9-b87b-6edd64a2aae6",
-      "Number": 4811,
-      "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
-      "Type": "CONTRADICTION",
-      "Severity": "MODERATE",
-      "Quote": "Sorrel stopped at the seam.",
-      "Note": "The passage names Sorrel here but the surrounding beat is about Noor\u0027s trustworthiness; two paragraphs earlier and after, dialogue and reaction are attributed to Sorrel with no prior introduction in this excerpt, creating confusion with the Noor-focused throughline \u2014 beat purpose is about Noor, but climaxes on an uncredited pivot to Sorrel without transition.",
-      "Fix": "Add a clarifying line distinguishing Sorrel from Noor before the pivot, or confirm this is intentional and set up earlier in the chapter."
+      "Quote": "The name the surface had given her, and the surface kept names the way the Oarsman kept fares \u2014 on record, unchanging.",
+      "Note": "Purple simile that doesn\u0027t clarify anything about Noor\u0027s name; the Oarsman/fare comparison is asserted rather than earned and reads as ornamental world-building dropped into an intimate moment.",
+      "Fix": "Cut the simile; state plainly that the surface fixed her name in records."
     },
     {
       "BeatId": "195badef-1907-454a-b318-00cf6c46885c",
@@ -101,9 +50,9 @@
       "Chapter": "Chapter 12 \u2014 The Ghost-Country",
       "Type": "CLICHE",
       "Severity": "MODERATE",
-      "Quote": "the Current was gone the way a person was gone when they\u0027d died \u2014 not the absence of someone who\u0027d stepped out and would come back. The other kind.",
-      "Note": "Death-as-absence metaphor is a familiar comparison, and the explanatory follow-up sentence overexplains the metaphor rather than trusting it.",
-      "Fix": "Cut the explanatory second sentence; let the death comparison stand alone or replace with a fresher image."
+      "Quote": "The Current was silent here. It had always been silent here.",
+      "Note": "Second sentence is a portentous, told-not-shown flourish that repeats the first without adding information \u2014 reads as stock ominous cadence.",
+      "Fix": "Cut the second sentence or replace with a concrete detail about how long the silence had been there."
     },
     {
       "BeatId": "f589d25d-5530-4aa7-b039-2655ab1ca681",
@@ -111,19 +60,19 @@
       "Chapter": "Chapter 13 \u2014 The Second Word",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "And a man who has been right his whole life does not hand a plan\u0027s last four minutes to hands less sure than his own.",
-      "Note": "aphoristic filler that explains Grale\u0027s motivation as a maxim rather than showing it, undercutting the \u0027exceeded predictions\u0027 beat by pre-justifying the twist instead of letting it surprise",
-      "Fix": "cut the generalized aphorism; show the decision through a concrete beat or gesture"
+      "Quote": "Water and the Lamplighters\u0027 gear did not mix, in a way the Lamplighters had not planned for.",
+      "Note": "Vague, slightly cute phrasing that tells rather than shows the tactical logic, undercutting the otherwise precise mechanical explanation around it.",
+      "Fix": "State plainly what the flooding does to their gear, e.g. \u0027The Lamplighters hadn\u0027t planned for water in the corridors their gear needed dry.\u0027"
     },
     {
       "BeatId": "324ad407-3ee9-48a0-baf4-f95a4af531c2",
       "Number": 4824,
       "Chapter": "Chapter 14 \u2014 A New Fare",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "Vesh died on the third day back.\n\nNot dramatically.",
-      "Note": "the \u0027not dramatically\u0027 framing announcing anti-cliche is itself a familiar device, telling the reader how to feel about the death rather than letting the plainness of the scene carry it",
-      "Fix": "cut the meta-announcement and let the flat description of breathing stopping do the work"
+      "Quote": "Vesh had taught him to take the fact over the comfort, and this was the last fact the old man left him: the world had not noticed.",
+      "Note": "Pseudo-profound aphorism-summary that tells the reader the meaning of the scene instead of trusting the preceding sensory detail to carry it.",
+      "Fix": "Cut the explanatory sentence and let the silence of the hum stand as the payoff."
     },
     {
       "BeatId": "dfd2e3d7-53bc-48dc-b77d-b6928a00b6ff",
@@ -131,9 +80,19 @@
       "Chapter": "Chapter 14 \u2014 A New Fare",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "because a life that size does not fit in one hand",
-      "Note": "Purported profound aphorism that fails literal scrutiny \u2014 the metaphor of a \u0027life\u0027 fitting in a \u0027hand\u0027 doesn\u0027t logically extend from the act of offering three physical objects; it\u0027s telling us the emotional weight rather than showing it.",
-      "Fix": "Cut the line and let the list of three objects and their provenance carry the weight, e.g. end at \u0027offered together.\u0027"
+      "Quote": "He had stood at this edge many times.",
+      "Note": "Flat, telling summary that undercuts the accumulating litany that follows; weakens the buildup by stating the point before making it.",
+      "Fix": "Cut this sentence and let the three \u0027He had stood here\u0027 instances carry the weight."
+    },
+    {
+      "BeatId": "dfd2e3d7-53bc-48dc-b77d-b6928a00b6ff",
+      "Number": 4826,
+      "Chapter": "Chapter 14 \u2014 A New Fare",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "present and attending and offering no account of where it had been or what it was",
+      "Note": "Vague, abstract description that tells us the Oarsman is enigmatic rather than showing it through concrete sensory detail; \u0027present and attending\u0027 is filler phrasing that doesn\u0027t earn its weight.",
+      "Fix": "Cut to one sharp concrete detail (posture, hands, silence) instead of three abstract adjectives."
     },
     {
       "BeatId": "ddfa5152-defb-457b-9f0a-f9cdf22fbb32",
@@ -141,29 +100,19 @@
       "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
       "Type": "CLICHE",
       "Severity": "MODERATE",
-      "Quote": "a heat behind the breastbone that came before the thought and stayed after it",
+      "Quote": "a catch in her throat she hadn\u0027t felt in twelve years",
       "Note": "",
-      "Fix": "replace with a more specific, less generically \u0027poetic\u0027 physical description tied to this character\u0027s sensory habits"
+      "Fix": "Replace with a more specific, physical sensation unique to Noor rather than the generic throat-catch."
     },
     {
-      "BeatId": "019f1221-3430-7de2-bf4a-e86ec38ae489",
-      "Number": 4914,
-      "Chapter": "Chapter 9 \u2014 The Way Down",
+      "BeatId": "019f2a1b-8648-7185-a92d-6dbb3815acbc",
+      "Number": 4980,
+      "Chapter": "Chapter 2 \u2014 The One Word",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "This is what the surface felt like to me, he thought. And I\u0027m still here.",
-      "Note": "Tells the reader the emotional parallel directly instead of trusting the preceding imagery to convey it; reads as an inserted thesis statement.",
-      "Fix": "Cut the italicized thought or replace with a physical action that implies the realization."
-    },
-    {
-      "BeatId": "019f2a1b-bbd1-7238-8153-16554efbb2e6",
-      "Number": 4982,
-      "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
-      "Type": "GRIPE",
-      "Severity": "MODERATE",
-      "Quote": "the same no matter what stood in front of her",
-      "Note": "Tells us her calm rather than showing it through action/dialogue that follows, and reads as a flat authorial aside.",
-      "Fix": "Cut the clause and let her subsequent lines demonstrate the calm."
+      "Quote": "His voice didn\u0027t change, but its pacing slowed, the way it slowed when the thing being told mattered more than the words let on.",
+      "Note": "Tells the reader how to feel about the pacing instead of letting the content of the Marl story (which is genuinely unsettling) do the work; redundant meta-commentary on delivery.",
+      "Fix": "Cut the clause after \u0027didn\u0027t change\u0027 or replace with a concrete detail (e.g., he stopped moving)."
     },
     {
       "BeatId": "019f00b7-521c-7a91-b60a-5ade64039f8d",
@@ -171,49 +120,29 @@
       "Chapter": "Chapter 1 \u2014 The Breath of the Deep",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "The air came to Glim like a promise kept.",
-      "Note": "Slightly precious phrasing that tells the reader how to feel about the punctuality motif rather than letting the established detail (quarter-turn, every fourth sleep) carry it.",
-      "Fix": "Cut the simile; let the preceding facts stand alone."
+      "Quote": "The Hollow had long stopped hearing it, the way it stopped hearing its own dripping water.",
+      "Note": "Explanatory simile that tells us the community\u0027s habituation rather than dramatizing it; slightly generic sensory-deafness comparison.",
+      "Fix": "Cut the simile or replace with a concrete sensory detail unique to the Hollow."
     },
     {
       "BeatId": "019f00b7-521c-7a91-b60a-5ade64039f8d",
       "Number": 4760,
       "Chapter": "Chapter 1 \u2014 The Breath of the Deep",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "as though something in the dark were drawing breath through it",
-      "Note": "Personified darkness/breathing-dark is a familiar horror-atmosphere stock image.",
-      "Fix": "Replace with a more specific physical description of the draw (temperature, sound, pull on the flame)."
-    },
-    {
-      "BeatId": "019f00b7-521c-7a91-b60a-5ade64039f8d",
-      "Number": 4760,
-      "Chapter": "Chapter 1 \u2014 The Breath of the Deep",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "a small animal with its own morning to keep",
-      "Note": "Cute anthropomorphizing aside that reads as a filler-whimsy beat rather than grounding sensory world-building.",
-      "Fix": "Cut or replace with a concrete sensory detail about the glow-rat\u0027s behavior."
+      "Note": "Anthropomorphizing the tunnel edges toward horror-clich\u00E9 territory, slightly undercutting the otherwise precise sensory grounding.",
+      "Fix": "Keep it purely mechanical: \u0027its flame pulled sideways and thin, drawn toward the tunnel.\u0027"
     },
     {
       "BeatId": "019f00b7-7db0-78e9-bb88-5c23ffbbb2f7",
       "Number": 4761,
       "Chapter": "Chapter 1 \u2014 The Breath of the Deep",
       "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "The silence was its own kind of greeting.",
-      "Note": "Aphoristic filler that tells rather than shows the rivalry-tension already conveyed by the scene\u0027s mechanics.",
-      "Fix": "Cut the sentence; the described action already communicates this."
-    },
-    {
-      "BeatId": "019f00b7-7db0-78e9-bb88-5c23ffbbb2f7",
-      "Number": 4761,
-      "Chapter": "Chapter 1 \u2014 The Breath of the Deep",
-      "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "someone who had looked at the worst room there was and found it smaller than she\u0027d feared",
-      "Note": "Abstract \u0027worst room\u0027 metaphor is a worn therapeutic-speak image that doesn\u0027t earn its specificity.",
-      "Fix": "Ground the change in a concrete observed behavior instead of a metaphor."
+      "Note": "Abstract, slightly purple metaphor that tells rather than shows the change in Sorrel; doesn\u0027t hold up to literal scrutiny (what room, why smaller).",
+      "Fix": "Replace with a concrete behavioral detail illustrating her new steadiness."
     },
     {
       "BeatId": "019f00b7-7db0-78e9-bb88-5c23ffbbb2f7",
@@ -222,18 +151,18 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "Asking felt like naming a thing she had chosen not to name.",
-      "Note": "Slightly redundant/circular phrasing (naming... not to name) that reads as a reflexive profundity rather than earned insight.",
-      "Fix": "Simplify: \u0027He never asked. It felt like it wasn\u0027t his to ask.\u0027"
+      "Note": "Slightly aphoristic phrasing that states an internal rule rather than dramatizing the restraint.",
+      "Fix": "Trim to action: \u0027He never asked.\u0027"
     },
     {
       "BeatId": "019f00b7-a3ec-72f3-bf67-7d27d5ef5534",
       "Number": 4762,
       "Chapter": "Chapter 1 \u2014 The Breath of the Deep",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "His heart was louder than it should have been.",
-      "Note": "Borders on the heartbeat-cliche flagged as a defect type; it\u0027s a stock shorthand for fear rather than a specific embodied sensation.",
-      "Fix": "Replace with a more specific physical detail (breath, grip, sweat) unique to the moment."
+      "Note": "Stock heartbeat-tension phrasing.",
+      "Fix": "Replace with a more specific physical sensation tied to the scene\u0027s sensory logic (breath, grip, air on skin)."
     },
     {
       "BeatId": "019f00b7-a3ec-72f3-bf67-7d27d5ef5534",
@@ -241,9 +170,9 @@
       "Chapter": "Chapter 1 \u2014 The Breath of the Deep",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He already knew what enormous meant.",
-      "Note": "Vague pseudo-profound closer that doesn\u0027t add concrete information after the detailed echo-sounding description.",
-      "Fix": "Cut, or replace with a specific measurable consequence of the enormity."
+      "Quote": "The cistern was the size of that returning sound.",
+      "Note": "Metaphor is conceptually shaky \u2014 a physical space equated to the size of a sound doesn\u0027t hold up under literal scrutiny.",
+      "Fix": "Clarify: \u0027The echo told him the cistern\u0027s size\u0027 or similar direct construction."
     },
     {
       "BeatId": "019f00b7-cb90-7785-baa1-cc865d5ab0a5",
@@ -252,8 +181,18 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the way you cup a hand around a candle to shield it from a draft",
-      "Note": "A serviceable but familiar tenderness-simile that leans toward stock gentle-protector imagery.",
-      "Fix": "Replace with a more specific, less generic physical gesture unique to Knuckle\u0027s character."
+      "Note": "A tender simile that risks reading as a stock tenderness-image; slightly soft against the otherwise spare, tactile prose style.",
+      "Fix": "Cut simile, let the gesture stand alone: \u0027He put a hand on the child\u0027s head for a moment.\u0027"
+    },
+    {
+      "BeatId": "019f00b8-e4c7-7ee4-b443-a382da027065",
+      "Number": 4764,
+      "Chapter": "Chapter 2 \u2014 The One Word",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "felt before it could be named",
+      "Note": "vague sensation-telling tacked onto an otherwise concrete image, slightly undercuts the precision of the rest of the passage",
+      "Fix": "cut the clause or replace with a concrete physical detail"
     },
     {
       "BeatId": "019f00b8-fbd2-7385-9f6e-b741abde29f5",
@@ -262,8 +201,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "You cannot be unexisted.",
-      "Note": "Slightly clunky coinage that leans toward aphorism-for-effect rather than natural teaching diction, though minor given the worldbuilding context.",
-      "Fix": "Consider \u0027You cannot be erased\u0027 or similar to avoid the awkward neologism."
+      "Note": "the coined negation reads as a slightly clunky aphorism-flourish rather than natural teaching cadence",
+      "Fix": "rephrase to something plainer, e.g. \u0027You cannot be made into nothing.\u0027"
     },
     {
       "BeatId": "8aa84e2d-5b00-48e5-b0ed-0143d45263f9",
@@ -271,19 +210,19 @@
       "Chapter": "Chapter 3 \u2014 The Fare",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "That\u0027s not a thing you ask about. That\u0027s a thing that answers itself.",
-      "Note": "Aphoristic wrap-up line that sounds like authorial wisdom inserted into Knuckle\u0027s mouth rather than natural speech.",
-      "Fix": "Trim to something plainer, e.g. \u0022Wasn\u0027t a question to ask.\u0022"
+      "Quote": "The body had chosen it before he was asked.",
+      "Note": "Vague abstraction standing in for a concrete sensory beat; slightly undercuts the otherwise grounded scene with a floaty aphoristic phrasing.",
+      "Fix": "Replace with a direct physical action, e.g., \u0027His eyes had already dropped to it before he decided to look.\u0027"
     },
     {
       "BeatId": "93323c78-ee34-4f06-9e90-f85f8cef2470",
       "Number": 4781,
       "Chapter": "Chapter 3 \u2014 The Fare",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "like the light off an oar pulled from the water, bright and then dark",
-      "Note": "Simile is decorative rather than load-bearing and slightly strains logic (light doesn\u0027t linger \u0027off\u0027 an oar in a way readers can picture cleanly), diluting the sensory precision established earlier in the beat.",
-      "Fix": "Replace with a plainer, more concrete comparison rooted in the tunnel setting."
+      "Note": "Ornamental simile that reaches for poetic effect but is a fairly stock \u0027fading light\u0027 image dressed in setting-appropriate vocabulary.",
+      "Fix": "Trim to a plainer statement of the fragments fading, or ground it in a more specific, less decorative image."
     },
     {
       "BeatId": "93323c78-ee34-4f06-9e90-f85f8cef2470",
@@ -291,9 +230,9 @@
       "Chapter": "Chapter 3 \u2014 The Fare",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "as if a hand had made a decision and he had felt the decision being made",
-      "Note": "Borders on overwrought interiority restating the same point twice (decision... decision), softening the sharper physical image just given.",
-      "Fix": "Cut the repetition: end on \u0022as if a hand had made a decision.\u0022"
+      "Quote": "as if a hand had made a decision",
+      "Note": "Slightly overreaches into interpretive metaphor for what is meant to be raw unprocessed sense-memory; softens the visceral ambiguity the beat wants.",
+      "Fix": "Cut the clause or replace with pure sensation: \u0027certain, then tight, then gone.\u0027"
     },
     {
       "BeatId": "305c16da-226e-49fc-a44c-194c58c66e1e",
@@ -301,19 +240,19 @@
       "Chapter": "Chapter 4 \u2014 The Surfacing Called",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He\u0027d been telling himself that was a comfort, and not quite believing it.",
-      "Note": "Telling-not-showing the internal conflict rather than dramatizing it.",
-      "Fix": "Cut the second clause or replace with a physical detail showing the doubt."
+      "Quote": "His face set the way it set when he meant to say a thing once and be understood.",
+      "Note": "Vague, circular characterization that tells rather than shows what the expression looks like.",
+      "Fix": "Describe the actual physical set of his face instead of a self-referential loop."
     },
     {
       "BeatId": "305c16da-226e-49fc-a44c-194c58c66e1e",
       "Number": 4783,
       "Chapter": "Chapter 4 \u2014 The Surfacing Called",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "He\u0027d been carrying all of it a long time, and the carrying had never made it lighter.",
-      "Note": "Aphoristic summary line that states the theme rather than earning it through specific detail.",
-      "Fix": "Cut, or replace with a single concrete image instead of the generalized \u0027carrying\u0027 metaphor."
+      "Quote": "Grale. The name sat in the air between them.",
+      "Note": "Stock \u0027name hangs in the air\u0027 beat.",
+      "Fix": "Cut or replace with a concrete physical reaction from Glim."
     },
     {
       "BeatId": "0e845c65-7160-41ea-b296-f6184d2c7d2d",
@@ -321,19 +260,19 @@
       "Chapter": "Chapter 4 \u2014 The Surfacing Called",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the ease of someone comfortable inside herself",
-      "Note": "Vague abstraction standing in for concrete characterization; doesn\u0027t show what that ease looks like.",
-      "Fix": "Replace with a specific physical detail of how she sits/moves."
+      "Quote": "not the held stillness of a Brave on watch, but the ease of someone comfortable inside herself",
+      "Note": "Abstract, tells the reader a feeling rather than showing it in concrete behavior.",
+      "Fix": "Replace with a specific physical detail that conveys ease without naming it."
     },
     {
-      "BeatId": "0e845c65-7160-41ea-b296-f6184d2c7d2d",
-      "Number": 4784,
+      "BeatId": "345120a8-b7bb-44fe-b075-a7ec591ad84e",
+      "Number": 4785,
       "Chapter": "Chapter 4 \u2014 The Surfacing Called",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "in the place where the things you can\u0027t undo live",
-      "Note": "Purple, vague phrasing gesturing at trauma without specificity \u2014 reads as stock \u0027deep wound\u0027 imagery.",
-      "Fix": "Cut or ground it in a concrete bodily detail unique to Sorrel."
+      "Quote": "His chest went tight. He made himself breathe.",
+      "Note": "Generic bodily-stress shorthand for emotion, low specificity.",
+      "Fix": "Ground the sensation in something more particular to the skull-grip moment."
     },
     {
       "BeatId": "345120a8-b7bb-44fe-b075-a7ec591ad84e",
@@ -341,19 +280,9 @@
       "Chapter": "Chapter 4 \u2014 The Surfacing Called",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the pressure was the pressure of a man holding something he couldn\u0027t keep",
-      "Note": "Repeats the sentence\u0027s own noun awkwardly and states the emotional meaning abstractly rather than showing it physically.",
-      "Fix": "Rephrase to avoid the doubled \u0027pressure\u0027 and let the physical grip alone carry the meaning."
-    },
-    {
-      "BeatId": "345120a8-b7bb-44fe-b075-a7ec591ad84e",
-      "Number": 4785,
-      "Chapter": "Chapter 4 \u2014 The Surfacing Called",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "into some deep place behind the eyes where the body knows a thing before the mind does",
-      "Note": "Pseudo-profound aphorism about body/mind knowledge that generalizes instead of staying in Glim\u0027s specific sensation.",
-      "Fix": "Cut the clause after \u0027behind the eyes\u0027 or replace with a concrete sensory detail."
+      "Quote": "the absence sat heavier than any grip",
+      "Note": "Abstract aphoristic close that tells the weight rather than embodying it physically.",
+      "Fix": "Cut the line or replace with a concrete physical beat showing the weight."
     },
     {
       "BeatId": "2795200f-965e-4782-913d-ce2ae9ad0e38",
@@ -361,29 +290,19 @@
       "Chapter": "Chapter 5 \u2014 Surface-Stained",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "It wasn\u0027t hostile. That was the hard thing about Grale \u2014 his face was rarely hostile. It was something more exact than that.",
-      "Note": "Circles the same point (not hostile) three times without adding information, slowing the beat\u0027s momentum right before the key confrontation.",
-      "Fix": "Cut to one clean statement: \u0027It wasn\u0027t hostile. It was the face of a man who\u0027d looked hard at a problem and decided it was real.\u0027"
+      "Quote": "It was something more exact than that. It was the face of a man who has looked hard at a problem, seen it clearly, and decided the problem is real.",
+      "Note": "Explains the emotion rather than showing it through detail; tells the reader how to interpret the face after already showing it wasn\u0027t hostile.",
+      "Fix": "Cut the second sentence and let the dialogue carry the certainty."
     },
     {
       "BeatId": "2795200f-965e-4782-913d-ce2ae9ad0e38",
       "Number": 4786,
       "Chapter": "Chapter 5 \u2014 Surface-Stained",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the quiet wasn\u0027t a threat, only a measurement",
-      "Note": "\u0027Measurement\u0027 as a stand-in for scrutiny is a slightly worn abstraction, and it\u0027s repeated almost verbatim a few lines later (\u0027A measuring look\u0027), making it feel like a tic rather than a chosen image.",
-      "Fix": "Vary the repeated word or cut one instance."
-    },
-    {
-      "BeatId": "60533acb-a424-4164-8346-bae78ca1b08c",
-      "Number": 4787,
-      "Chapter": "Chapter 5 \u2014 Surface-Stained",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "a Brave who knew only one line was a Brave who\u0027d never had to change plans mid-climb",
-      "Note": "This reads as an inserted maxim/rule-of-thumb rather than Glim\u0027s lived observation \u2014 mild telling dressed as worldbuilding, slightly aphoristic in a way that breaks the otherwise procedural, grounded voice.",
-      "Fix": "Fold into concrete action: \u0027Knuckle taught all of them \u2014 enough lines that a Brave always had a second way out.\u0027"
+      "Note": "Abstract labeling of the silence\u0027s quality reads as authorial explanation rather than perception.",
+      "Fix": "Replace with a concrete physical detail of Grale\u0027s stillness."
     },
     {
       "BeatId": "60533acb-a424-4164-8346-bae78ca1b08c",
@@ -392,8 +311,18 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the two of them doubling until it was almost too much",
-      "Note": "Vague intensifier (\u0027almost too much\u0027) tells the reader there\u0027s a sensory peak without rendering it concretely, undercutting the otherwise precise physical detail around it.",
-      "Fix": "Replace with a specific bodily effect, e.g. \u0027until his back teeth buzzed with it.\u0027"
+      "Note": "Vague intensifier (\u0027almost too much\u0027) tells rather than shows the sensory overload the beat is built to establish.",
+      "Fix": "Specify the physical effect\u2014e.g., a ringing in the jaw or a missed handhold."
+    },
+    {
+      "BeatId": "77a7342b-288e-4eb1-8d1d-2506dfd11516",
+      "Number": 4788,
+      "Chapter": "Chapter 5 \u2014 Surface-Stained",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He could.",
+      "Note": "One-line self-answering aphorism that reads as a pseudo-profound beat-ending flourish.",
+      "Fix": "Cut, or replace with a concrete physical action confirming the decision."
     },
     {
       "BeatId": "59127ba1-77cb-4b20-817d-5a68c952bc8b",
@@ -401,39 +330,9 @@
       "Chapter": "Chapter 6 \u2014 The Lid Off the World",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Not bad air. Just too much of everything. The same as Glim.",
-      "Note": "The final three-word sentence states the analogy explicitly (telling) right after the scene has already shown the parallel through the candle\u0027s dimming; it undercuts the implicit parallel with an on-the-nose label.",
-      "Fix": "Cut \u0027The same as Glim\u0027 and let the parallel stand implied."
-    },
-    {
-      "BeatId": "59127ba1-77cb-4b20-817d-5a68c952bc8b",
-      "Number": 4789,
-      "Chapter": "Chapter 6 \u2014 The Lid Off the World",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "inside was the wrong word, and he had no better one",
-      "Note": "Slightly self-conscious narratorial aside about language itself, mild telling that softens the sensory immediacy just established.",
-      "Fix": "Cut the meta-comment and end on the preceding image: \u0027The open above was the biggest thing he had ever been inside of.\u0027"
-    },
-    {
-      "BeatId": "a074116b-135a-4f9d-b6e7-8c4b113d14b8",
-      "Number": 4790,
-      "Chapter": "Chapter 6 \u2014 The Lid Off the World",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "It got the light for free, from somewhere else, at no cost and no risk.",
-      "Note": "Redundant tripling of the same idea (free/no cost/no risk) that pads rather than sharpens the point.",
-      "Fix": "Cut to: \u0022It got the light for free.\u0022"
-    },
-    {
-      "BeatId": "a074116b-135a-4f9d-b6e7-8c4b113d14b8",
-      "Number": 4790,
-      "Chapter": "Chapter 6 \u2014 The Lid Off the World",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "before the edge of the world caught fire",
-      "Note": "Sunrise-as-fire is a familiar image that slightly undercuts the otherwise fresh sensory approach.",
-      "Fix": "Replace with a more literal/tactile description tied to Glim\u0027s specific perception, e.g. \u0027before the gray turned to something his eyes couldn\u0027t refuse.\u0027"
+      "Quote": "and inside was the wrong word, and he had no better one",
+      "Note": "Meta-commentary on language that slows the sensory immersion the beat is meant to deliver.",
+      "Fix": "Cut the clause and let the preceding image stand."
     },
     {
       "BeatId": "10132311-ea2c-4599-a112-bd46410c3d21",
@@ -441,19 +340,9 @@
       "Chapter": "Chapter 6 \u2014 The Lid Off the World",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He\u0027d heard it two hundred times and felt it land in his chest each time.",
-      "Note": "Tells the emotional impact rather than showing it, and \u0027land in his chest\u0027 is a stock somatic shorthand for feeling.",
-      "Fix": "Cut the sentence or replace with a concrete memory of one specific time Vesh said it."
-    },
-    {
-      "BeatId": "10132311-ea2c-4599-a112-bd46410c3d21",
-      "Number": 4791,
-      "Chapter": "Chapter 6 \u2014 The Lid Off the World",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Not terrible. Just \u2014 accurate.",
-      "Note": "Slightly aphoristic capstone that states the theme directly rather than letting the preceding image carry it.",
-      "Fix": "Cut the line and let the prior paragraph\u0027s logic stand alone."
+      "Quote": "He thought of Vesh saying it, all the times Vesh had said it: *up there you are no one; down here you are a light.*  Now he was up here, and it was true in a way the teaching-chamber had never managed.",
+      "Note": "States the beat\u0027s thematic payoff directly rather than letting the preceding physical description carry it \u2014 tips into telling after showing had already done the work.",
+      "Fix": "Cut the explanatory second sentence and let the aphorism stand alone, or replace with a concrete physical detail that implies the realization."
     },
     {
       "BeatId": "f8669353-7073-4864-87db-8406133447b5",
@@ -462,18 +351,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "took his eyes again, all at once, the way a blow takes the breath",
-      "Note": "Simile explains the sensation via a different, less specific injury rather than building on the story\u0027s established visual-blindness motif.",
-      "Fix": "Tie the comparison back to the established white-blindness beat rather than introducing a new blow/breath image."
-    },
-    {
-      "BeatId": "f8669353-7073-4864-87db-8406133447b5",
-      "Number": 4792,
-      "Chapter": "Chapter 6 \u2014 The Lid Off the World",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "He\u0027d thought he was safe in the Works. He\u0027d been wrong.",
-      "Note": "Flat telling of the beat\u0027s stated purpose (safety neutralized) instead of letting the action demonstrate it.",
-      "Fix": "Cut the two sentences; the ensuing action already delivers this."
+      "Note": "Simile is serviceable but slightly generic/stock phrasing for sudden sensory loss, echoing a common action-writing shorthand.",
+      "Fix": "Ground it in Glim\u0027s specific sensory vocabulary already established (e.g., compare to the Burning Eye moment) rather than a generic blow/breath comparison."
     },
     {
       "BeatId": "cb541869-78b8-490a-bc6a-c74bb088b53c",
@@ -481,39 +360,19 @@
       "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Its top was scratched and stained, marked by years of use.",
-      "Note": "Redundant phrasing \u2014 \u0027scratched and stained\u0027 already implies years of use; the tail clause tells rather than adds.",
-      "Fix": "Its top was scratched and stained."
-    },
-    {
-      "BeatId": "cb541869-78b8-490a-bc6a-c74bb088b53c",
-      "Number": 4794,
-      "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "His body was right. What it read wasn\u0027t danger. It was absence.",
-      "Note": "Slightly aphoristic capping-off that states the theme rather than letting the sensory detail carry it.",
-      "Fix": "Cut the last two sentences or fold into the preceding image without the declarative summary."
+      "Quote": "His body was right.",
+      "Note": "Terse aphoristic sentence that tips into telling-not-showing, asserting validation rather than dramatizing it.",
+      "Fix": "Cut the sentence or replace with a concrete physical detail of the wrongness."
     },
     {
       "BeatId": "d141a5b3-bd4b-42bf-9843-4eafddf59742",
       "Number": 4795,
       "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "the part of the body that closes a hand around the thing it has been reaching for in its sleep",
-      "Note": "Purple metaphor that strains under literal scrutiny \u2014 reaching \u0027in its sleep\u0027 for an unspecified \u0027thing\u0027 is vague rather than evocative.",
-      "Fix": "Ground the image in something concrete he\u0027s actually done before (e.g., gripping a rope in the dark) rather than an abstract sleep-reach."
-    },
-    {
-      "BeatId": "25a7b70e-594d-4242-b7ae-a34a6ac2a5e6",
-      "Number": 4796,
-      "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "It was the easiest thing she did.",
-      "Note": "A flat authorial aside that tells us to notice her restraint instead of trusting the preceding image of her sitting quietly.",
-      "Fix": "Cut the sentence; the quiet sitting already conveys it."
+      "Quote": "His face was wet before he understood what was happening.",
+      "Note": "The \u0027before he understood\u0027 delayed-realization construction is a common sentimental-beat crutch, slightly undercutting the sensory-first payoff the beat is built on.",
+      "Fix": "Tie the wetness more directly to the smell-recognition already established rather than a generic delayed-awareness frame."
     },
     {
       "BeatId": "b424f031-60ee-46da-a783-c0b1d9ea3e11",
@@ -522,8 +381,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "The surface didn\u0027t make sense, and he wasn\u0027t sure it was meant to.",
-      "Note": "aphoristic opener that states a universal-ish truth rather than grounding in Glim\u0027s specific perception",
-      "Fix": "open with a concrete sensory detail instead of the abstract framing line"
+      "Note": "Generic scene-setting aphorism that could open any fish-out-of-water chapter; doesn\u0027t yet earn its specificity.",
+      "Fix": "Cut opening line and start on the concrete three-days detail."
     },
     {
       "BeatId": "0d033558-079f-4b46-a88a-18d028c729f5",
@@ -532,8 +391,8 @@
       "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "The legend is true.",
-      "Note": "stock dramatic italicized one-liner beat, overused device for portentous realization",
-      "Fix": "integrate the realization into Glim\u0027s interiority without the isolated italic pronouncement"
+      "Note": "Italicized internal-realization stinger reads as a stock dramatic beat.",
+      "Fix": "Cut the isolated sentence or fold the realization into surrounding prose without the portentous stand-alone line."
     },
     {
       "BeatId": "0d033558-079f-4b46-a88a-18d028c729f5",
@@ -542,8 +401,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "Someone had written down the way down.",
-      "Note": "repeated sentence used as a portentous standalone beat, verges on purple emphasis without new information the second time",
-      "Fix": "cut the repetition or fold it into the preceding paragraph"
+      "Note": "Repeats the preceding sentence\u0027s information as a portentous isolated beat, a stylistic tic rather than new content.",
+      "Fix": "Cut the duplicate line or merge into one sentence."
     },
     {
       "BeatId": "f71cb0b5-5987-4ee7-8dc4-911f822d2493",
@@ -551,9 +410,19 @@
       "Chapter": "Chapter 8 \u2014 A Name He Will Not Answer",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "because everything here was worth carrying down",
-      "Note": "tells us Glim\u0027s motivation in generalized terms rather than showing it through specific observation, slightly aphoristic",
-      "Fix": "cut trailing clause or replace with a concrete detail he\u0027s cataloguing"
+      "Quote": "not a peaceful still, a held one",
+      "Note": "Abstract distinction-without-difference phrasing that tells rather than shows the quality of her stillness.",
+      "Fix": "Show one physical detail (whitened knuckles, fixed jaw) instead of naming the abstract category of stillness."
+    },
+    {
+      "BeatId": "e1a3b465-3e2c-407e-a031-c00947ff2dec",
+      "Number": 4800,
+      "Chapter": "Chapter 8 \u2014 A Name He Will Not Answer",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "we never stopped believing you were there",
+      "Note": "Slides into telling the emotional payload directly rather than letting the scene\u0027s physical details (the stillness, the open hands) carry it, undercutting the show-don\u0027t-tell work done just after.",
+      "Fix": "Cut the italicized summary line and let the following paragraph about her stillness do the work alone."
     },
     {
       "BeatId": "e1a3b465-3e2c-407e-a031-c00947ff2dec",
@@ -562,8 +431,8 @@
       "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "the stillness of someone who had spent twelve years learning not to move suddenly, not to startle away the thing they\u0027d learned to hold without gripping",
-      "Note": "The \u0027don\u0027t startle the fragile thing\u0027 stillness is a familiar sentimental construction.",
-      "Fix": "Ground the stillness in a more specific, less generic physical detail."
+      "Note": "\u0027startle away\u0027 / \u0027hold without gripping\u0027 is a familiar grief-metaphor construction (holding something fragile) that reads as stock emotional shorthand.",
+      "Fix": "Ground the stillness in one concrete, specific physical detail unique to Noor rather than a generalized holding-fragile-things image."
     },
     {
       "BeatId": "c5e9adb4-6ea9-49c1-a7f3-ea32e85bd64a",
@@ -572,8 +441,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "The surface was turning him into something he didn\u0027t have a word for yet.",
-      "Note": "Vague, portentous phrasing that gestures at meaning without specifying it.",
-      "Fix": "Name the specific change he notices in himself, even partially."
+      "Note": "Vague, portentous phrasing that tells rather than shows the internal cost; \u0027something he didn\u0027t have a word for yet\u0027 is a placeholder abstraction rather than a concrete image.",
+      "Fix": "Specify what he felt himself becoming \u2014 a physical or behavioral symptom \u2014 instead of the vague unnamed-thing gesture."
     },
     {
       "BeatId": "f49f5a8e-ed17-4c23-a612-b138c62a7c59",
@@ -581,9 +450,9 @@
       "Chapter": "Chapter 9 \u2014 The Way Down",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the way Vesh said the teaching \u2014 not loud, not hard, but with the weight of a received truth",
-      "Note": "Abstract, unearned gravitas asserted rather than demonstrated; reader has no context for Vesh\u0027s manner to compare against.",
-      "Fix": "Either establish Vesh\u0027s teaching style earlier or cut the comparison."
+      "Quote": "down does not undo itself for regret",
+      "Note": "Aphoristic flourish that leans toward pseudo-profound stock wisdom, stylized past the point of plain in-world speech.",
+      "Fix": "Trim to a more direct statement of consequence without the aphorism cadence."
     },
     {
       "BeatId": "f49f5a8e-ed17-4c23-a612-b138c62a7c59",
@@ -591,9 +460,9 @@
       "Chapter": "Chapter 9 \u2014 The Way Down",
       "Type": "MEANING-MISMATCH",
       "Severity": "MINOR",
-      "Quote": "Saying something true in the real language was like breathing clean air af",
-      "Note": "Beat cuts off mid-sentence/mid-simile, leaving the closing emotional beat unresolved and the comparison unfinished.",
-      "Fix": "Complete the sentence to land the intended feeling."
+      "Quote": "He was home. Three levels in, and already home.",
+      "Note": "The beat\u0027s purpose is to show Glim accepting responsibility for Noor\u0027s vulnerability in his world; this passage instead centers his own relief/homecoming, diluting the intended shift toward obligation to her.",
+      "Fix": "Balance the homecoming beat with an explicit turn toward what her presence now requires of him."
     },
     {
       "BeatId": "5c3731ea-ee02-45b2-ab80-7b819d4d0c71",
@@ -601,9 +470,9 @@
       "Chapter": "Chapter 10 \u2014 Light Comes Down",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "a man who has reached a true answer and takes no pleasure in it",
-      "Note": "Explains Grale\u0027s interiority in abstract, essay-like language rather than showing it through behavior.",
-      "Fix": "Cut the explanatory clause and let the \u0027clear-eyed, sure\u0027 description carry the characterization."
+      "Quote": "She was good with outsiders. The Surfacing had left her able to meet surface people halfway, which few in the Hollow could do.",
+      "Note": "Tells us Sorrel\u0027s trait and backstory function rather than showing it through action in this moment; reads as expository summary dropped into scene.",
+      "Fix": "Cut the explanatory sentence and let the action (crossing the room, hand on arm) carry the characterization, or defer the explanation to later."
     },
     {
       "BeatId": "5c3731ea-ee02-45b2-ab80-7b819d4d0c71",
@@ -611,9 +480,39 @@
       "Chapter": "Chapter 10 \u2014 Light Comes Down",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Grale never dropped a thing. He only set it aside.",
-      "Note": "Aphoristic, near-proverbial phrasing that reads as authorial commentary rather than grounded observation.",
-      "Fix": "Cut or replace with a concrete physical detail (e.g., what his hands or jaw do)."
+      "Quote": "That said something about her \u2014 she was frightened and doing it anyway.",
+      "Note": "Explicit telling of Noor\u0027s inner state and its narrative meaning, undercutting the showing already accomplished by \u0027Noor let herself be led.\u0027",
+      "Fix": "Cut the sentence; the preceding action already implies it."
+    },
+    {
+      "BeatId": "5c3731ea-ee02-45b2-ab80-7b819d4d0c71",
+      "Number": 4804,
+      "Chapter": "Chapter 10 \u2014 Light Comes Down",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "The candle on Sorrel\u0027s belt glow",
+      "Note": "Beat cuts off mid-sentence, leaving the final image (meant to close the guarded-welcome beat) incomplete, weakening the intended note of tentative bridge-building.",
+      "Fix": "Complete the sentence to land the image before the beat ends."
+    },
+    {
+      "BeatId": "6c6b2a12-6be9-4e9f-91cf-88a8531adf82",
+      "Number": 4805,
+      "Chapter": "Chapter 10 \u2014 Light Comes Down",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "who have done this before and learned that calm is faster than hurry when the advantage is yours",
+      "Note": "Slides from sensory observation into a generalized aphorism about tactics/psychology, a mini universal-truth quip embedded in the action.",
+      "Fix": "Cut the clause after \u0027before\u0027 or replace with a concrete detail of their movement."
+    },
+    {
+      "BeatId": "10c437f8-a390-418e-90d6-bf6ed400f9aa",
+      "Number": 4806,
+      "Chapter": "Chapter 10 \u2014 Light Comes Down",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "his stomach dropped the way it had dropped in the lifting-box up top",
+      "Note": "Serviceable but slightly reflexive callback used as an emotional shorthand rather than rendering the guilt freshly in this moment.",
+      "Fix": "Replace with a new, more specific bodily reaction to this scene rather than reusing the lifting-box comparison."
     },
     {
       "BeatId": "10c437f8-a390-418e-90d6-bf6ed400f9aa",
@@ -622,18 +521,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the way you set your candle next to another so the two lights make one",
-      "Note": "A tidy, sentimental metaphor that slightly softens the harder emotional beat with a poeticism that reads as authorial reach rather than Glim\u0027s voice.",
-      "Fix": "Trim to plain physical description: \u0027She set her hand flat against the wall beside his, not touching him, just near.\u0027"
-    },
-    {
-      "BeatId": "10c437f8-a390-418e-90d6-bf6ed400f9aa",
-      "Number": 4806,
-      "Chapter": "Chapter 10 \u2014 Light Comes Down",
-      "Type": "MEANING-MISMATCH",
-      "Severity": "MINOR",
-      "Quote": "It didn\u0027t make the stomach-drop stop. She hadn\u0027t meant it to",
-      "Note": "The closing beat undercuts the guilt payoff with a slightly pat narration that tells us the effect/intent rather than showing Glim\u0027s continued distress physically.",
-      "Fix": "Replace with a physical or sensory detail showing the guilt persisting (e.g., his hand still flat on the wall, unmoving)."
+      "Note": "A tidy, slightly too-neat metaphor for solidarity that risks feeling like an aphorism rather than an observed action.",
+      "Fix": "Trim the explanatory clause (\u0027so the two lights make one\u0027) and let the physical action stand alone."
     },
     {
       "BeatId": "57846aad-0ff5-4915-8a14-2bf8b7a7e5e2",
@@ -641,9 +530,9 @@
       "Chapter": "Chapter 10 \u2014 Light Comes Down",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He felt something behind his breastbone pull tight, like a valve shut hard.",
-      "Note": "This line is actually in beat 3, flagging correctly there; beat 0 has no equivalent issue \u2014 omit.",
-      "Fix": "n/a"
+      "Quote": "The silence had weight. He could feel it in his jaw.",
+      "Note": "Vague abstraction (\u0027weight\u0027) paired with unclear physical correlate; tells rather than shows tension.",
+      "Fix": "Cut to a concrete detail, e.g. \u0027He realized he was clenching his jaw.\u0027"
     },
     {
       "BeatId": "57846aad-0ff5-4915-8a14-2bf8b7a7e5e2",
@@ -651,19 +540,9 @@
       "Chapter": "Chapter 10 \u2014 Light Comes Down",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "The silence had weight. He could feel it in his jaw.",
-      "Note": "Weight-of-silence is a stock sensation, and locating it \u0027in his jaw\u0027 doesn\u0027t rescue it from clich\u00E9.",
-      "Fix": "Cut or replace with a more specific physical tell unique to Glim."
-    },
-    {
-      "BeatId": "57846aad-0ff5-4915-8a14-2bf8b7a7e5e2",
-      "Number": 4807,
-      "Chapter": "Chapter 10 \u2014 Light Comes Down",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Not anger. Closer to the look of a teacher handed back his own lesson by a student who took it a different way than he\u0027d meant it.",
-      "Note": "Explains the emotion via abstract simile rather than showing it; slightly over-explains what the preceding \u0027tightening at the jaw\u0027 already conveyed.",
-      "Fix": "Trim to the physical beat alone and let the reader infer the meaning."
+      "Quote": "Something moved in Vesh\u0027s face \u2014 a small tightening at the jaw, there and gone.",
+      "Note": "\u0027Something moved in his face\u0027 / \u0027there and gone\u0027 is a stock micro-expression formula.",
+      "Fix": "Specify the tightening without the generic frame: \u0027His jaw tightened, then eased.\u0027"
     },
     {
       "BeatId": "defe9f44-815f-451d-a374-3aef79f883c1",
@@ -671,9 +550,9 @@
       "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He burned with a fever the clan had no word for, because fever was not an Underclan illness.",
-      "Note": "Slightly clunky mechanical explanation stapled onto the sentence rather than dramatized.",
-      "Fix": "Show the absence of vocabulary through Glim\u0027s search for a word rather than stating the fact directly."
+      "Quote": "He looked at her.",
+      "Note": "Flat non-reaction used as a beat-filler; doesn\u0027t convey the weight of the moment or Glim\u0027s internal state.",
+      "Fix": "Replace with a concrete beat showing his hesitation or recognition of what she\u0027s asking."
     },
     {
       "BeatId": "d398a4db-a2d5-4b64-bcbb-a6575579026b",
@@ -681,59 +560,29 @@
       "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "The fever, and the five minutes lost at a grating two levels up, had shown Glim the cost of taking a person for granted.",
-      "Note": "Explicit moral-lesson statement \u2014 tells the reader what to feel instead of trusting the scene.",
-      "Fix": "Delete the sentence; the loss already speaks for itself."
+      "Quote": "He\u0027d been reliable the way the cistern was reliable \u2014 present, useful, taken for granted.",
+      "Note": "Simile states the point flatly rather than dramatizing it; slightly on-the-nose after the preceding concrete detail already did the work.",
+      "Fix": "Cut the simile and let the preceding sentences stand alone."
     },
     {
       "BeatId": "d398a4db-a2d5-4b64-bcbb-a6575579026b",
       "Number": 4810,
       "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
-      "Type": "CLICHE",
+      "Type": "MEANING-MISMATCH",
       "Severity": "MINOR",
-      "Quote": "a small green-gold light moving out across the black water, out toward the center, in sight a long time before the dark took it",
-      "Note": "\u0022the dark took it\u0022 is a stock elegiac closer.",
-      "Fix": "Replace with a more specific, less abstracted image of the light\u0027s disappearance."
+      "Quote": "The Lamplighters came while Slip\u0027s light was still on the water.",
+      "Note": "Strong escalation line, but the transition from mourning to attack happens in a single sentence with no beat of stillness broken, slightly undercutting the \u0027immediately escalates\u0027 intensity the purpose calls for.",
+      "Fix": "Add a half-beat of the mourning silence just before the intrusion to sharpen the contrast."
     },
     {
       "BeatId": "68b5b18d-fbe9-49b9-b87b-6edd64a2aae6",
       "Number": 4811,
       "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
       "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "She moved like a person who has made a decision and is carrying it out without second-guessing.",
-      "Note": "Tells the reader the meaning of her movement instead of showing it through action, undercutting the demonstrated-competence purpose.",
-      "Fix": "Cut the summary line; let the wall-reading detail alone demonstrate it."
-    },
-    {
-      "BeatId": "68b5b18d-fbe9-49b9-b87b-6edd64a2aae6",
-      "Number": 4811,
-      "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
-      "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "the pace turned into something like fear moving at speed",
-      "Note": "Vague abstraction dressed as tension; \u0022fear moving at speed\u0022 doesn\u0027t resolve to a concrete image.",
-      "Fix": "Replace with a specific sensory detail of the chain\u0027s motion."
-    },
-    {
-      "BeatId": "195badef-1907-454a-b318-00cf6c46885c",
-      "Number": 4812,
-      "Chapter": "Chapter 12 \u2014 The Ghost-Country",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "not expecting a thing in a place this dangerous was its own danger",
-      "Note": "Aphoristic filler that states a general truth rather than advancing the specific moment.",
-      "Fix": "Cut, or replace with a concrete observation about what the beauty is distracting him from."
-    },
-    {
-      "BeatId": "195badef-1907-454a-b318-00cf6c46885c",
-      "Number": 4812,
-      "Chapter": "Chapter 12 \u2014 The Ghost-Country",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "the way you count a thing twice when the first count gives you a number the body doesn\u0027t want",
-      "Note": "Slightly overwrought explanatory phrasing about denial/counting, veers toward stock introspection.",
-      "Fix": "Tighten to action: \u0022He counted again.\u0022"
+      "Note": "Vague abstraction standing in for concrete sensory description of the chain\u0027s panic.",
+      "Fix": "Replace with a specific physical detail (stumbling feet, ragged taps) rather than naming the abstraction \u0027fear\u0027."
     },
     {
       "BeatId": "195badef-1907-454a-b318-00cf6c46885c",
@@ -742,8 +591,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "He had grown up inside the Current\u0027s voice the way he\u0027d grown up inside his own heartbeat",
-      "Note": "Heartbeat imagery is a near-cliche and the comparison is stated rather than earned through scene detail.",
-      "Fix": "Replace with a specific sensory memory of the Current\u0027s presence in daily life."
+      "Note": "Heartbeat comparison is a worn intensifier that tells the emotional stakes rather than showing them through action.",
+      "Fix": "Cut simile, let the following sentence about not knowing his place carry the weight."
     },
     {
       "BeatId": "761784df-df1f-43cb-bdbe-d9d1e5e325ac",
@@ -752,18 +601,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the posture of a man who has run out of argument and is trying not to show it",
-      "Note": "Explicit interpretive label on body language that the physical description (hands flat, weight leaning back) already conveys.",
-      "Fix": "Cut the trailing interpretive clause and let the posture stand alone."
-    },
-    {
-      "BeatId": "a77d55b3-354a-4638-87d4-dd00cc37809f",
-      "Number": 4814,
-      "Chapter": "Chapter 12 \u2014 The Ghost-Country",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "as if something in him had been quietly re-measured",
-      "Note": "vague introspective abstraction standing in for concrete sensory detail",
-      "Fix": "cut or replace with a specific physical image"
+      "Note": "Explicit interpretive narration telling the reader Glim\u0027s emotional state instead of trusting the physical description already given.",
+      "Fix": "Cut the explanatory clause and let the flat-hands/leaning-back image stand alone."
     },
     {
       "BeatId": "a77d55b3-354a-4638-87d4-dd00cc37809f",
@@ -771,9 +610,9 @@
       "Chapter": "Chapter 12 \u2014 The Ghost-Country",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He waited for the quiet to tell him something.",
-      "Note": "filler personification that doesn\u0027t earn its weight before the pulse arrives",
-      "Fix": "cut or fold into the following paragraph"
+      "Quote": "A new sense of size, .",
+      "Note": "Broken sentence with a stray comma and dangling fragment; reads as an editing error, not stylistic.",
+      "Fix": "A new sense of size \u2014 the world\u0027s, not his own."
     },
     {
       "BeatId": "a77d55b3-354a-4638-87d4-dd00cc37809f",
@@ -782,28 +621,18 @@
       "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "the way a very large thing moving very far off sends a shiver through everything between it and you, reaching you after it has already gone by",
-      "Note": "overextended simile explaining the sensation rather than rendering it, undercutting the strangeness the beat needs",
-      "Fix": "trim to a shorter, less explanatory comparison"
+      "Note": "Overextended simile explaining the literal mechanics of sound/vibration in abstract terms; reads as padding rather than sensation.",
+      "Fix": "Trim to the concrete sensory detail: cut the simile, keep \u0027He felt it in his gut and the roots of his teeth.\u0027"
     },
     {
-      "BeatId": "02776eba-804d-4f6a-b5f5-36770d58b6f3",
-      "Number": 4815,
-      "Chapter": "Chapter 13 \u2014 The Second Word",
-      "Type": "CLICHE",
+      "BeatId": "a77d55b3-354a-4638-87d4-dd00cc37809f",
+      "Number": 4814,
+      "Chapter": "Chapter 12 \u2014 The Ghost-Country",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "not a machine\u0027s even ticking but a gap, the way a heartbeat is not a dripping tap",
-      "Note": "heartbeat comparison edges toward stock sensory shorthand and doubles up on the simile from the prior chapter\u0027s pulse description",
-      "Fix": "cut the heartbeat clause, keep \u0027a gap\u0027 alone"
-    },
-    {
-      "BeatId": "f589d25d-5530-4aa7-b039-2655ab1ca681",
-      "Number": 4818,
-      "Chapter": "Chapter 13 \u2014 The Second Word",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "forget, for the length of the work, to distrust",
-      "Note": "stock \u0027shared labor heals old wounds\u0027 phrasing, undercuts the otherwise concrete scene",
-      "Fix": "anchor in a specific physical detail instead of the abstract \u0027forget to distrust\u0027"
+      "Quote": "His whole body went still \u2014 not calm, but emptied of everything except listening.",
+      "Note": "Tells the emotional state directly (\u0027emptied of everything except listening\u0027) rather than showing it through action or detail.",
+      "Fix": "He held his palms flat and stopped breathing, waiting."
     },
     {
       "BeatId": "f589d25d-5530-4aa7-b039-2655ab1ca681",
@@ -811,9 +640,19 @@
       "Chapter": "Chapter 13 \u2014 The Second Word",
       "Type": "MEANING-MISMATCH",
       "Severity": "MINOR",
-      "Quote": "He had not thought two peoples who had raided each other for salt would lean over the same valve like this and forget, for the length of the work, to distrust.",
-      "Note": "tells us the mistrust dissolved rather than dramatizing the surprise/escalation the purpose calls for",
-      "Fix": "show a small concrete moment of friction giving way, not a summary statement"
+      "Quote": "He had been right about Glim. He had been right about all of it.",
+      "Note": "This gestures at Grale\u0027s worldview but doesn\u0027t clearly connect to the beat\u0027s purpose of showing the plan exceeding Glim\u0027s predictions; it reads as interiority about Grale rather than demonstrating dissolving mistrust or escalating capability.",
+      "Fix": "Tie the line back to the labor-dissolves-mistrust thread, e.g. contrast Grale\u0027s certainty with what he just did alongside a Cog Runner."
+    },
+    {
+      "BeatId": "f589d25d-5530-4aa7-b039-2655ab1ca681",
+      "Number": 4818,
+      "Chapter": "Chapter 13 \u2014 The Second Word",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Glim heard him do the thing the Hollow trains you your whole life never to do",
+      "Note": "Withholding the specific action for a dramatic sentence-fragment cliffhanger is a familiar suspense-clich\u00E9 device.",
+      "Fix": "Either name the act or cut to it directly without the trained-suspense framing."
     },
     {
       "BeatId": "062e6e4c-6ff8-48ea-96a6-82b36747fe86",
@@ -822,18 +661,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "That was its own kind of insult, but not the same one.",
-      "Note": "vague hedge that gestures at meaning without delivering specificity",
-      "Fix": "specify what kind of insult it was, or cut the line"
-    },
-    {
-      "BeatId": "324ad407-3ee9-48a0-baf4-f95a4af531c2",
-      "Number": 4824,
-      "Chapter": "Chapter 14 \u2014 A New Fare",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "It wasn\u0027t a comfort. It was a fact.",
-      "Note": "aphoristic binary stated as a takeaway, slightly on-the-nose for the ambiguity the beat wants",
-      "Fix": "let the indifference of the hum stand without the summarizing label"
+      "Note": "Vague abstraction that doesn\u0027t clarify what the two insults are, weakening the sensory grounding the beat is going for.",
+      "Fix": "Specify the distinction, e.g. \u0027That was carelessness, not cruelty \u2014 a different kind of violation.\u0027"
     },
     {
       "BeatId": "d6c0212e-1fb7-43ae-b57e-7c563fb1c585",
@@ -841,9 +670,19 @@
       "Chapter": "Chapter 14 \u2014 A New Fare",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Everything that matters complicates things.",
-      "Note": "universal-truth quip that reads as filler wit rather than earned insight, slightly undercutting the grounded moral reasoning the beat wants to establish",
-      "Fix": "cut the line or replace with a concrete reference to their specific situation"
+      "Quote": "",
+      "Note": "Empty quoted dialogue line breaks scene mechanics \u2014 appears to be a formatting error where a line of dialogue was omitted.",
+      "Fix": "Restore the missing dialogue line or remove the empty quotation marks."
+    },
+    {
+      "BeatId": "d6c0212e-1fb7-43ae-b57e-7c563fb1c585",
+      "Number": 4825,
+      "Chapter": "Chapter 14 \u2014 A New Fare",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "She had principles the way the Underclan had laws \u2014 not handed down from above, but built out of what happened when there was nothing else to hold to.",
+      "Note": "This analogy explains Noor\u0027s ethics in Underclan terms rather than establishing her reasoning as distinct from Glim\u0027s tactical calculus, working against the stated purpose.",
+      "Fix": "Reframe the comparison to sharpen the contrast between her surface-derived moral reasoning and his tactical one, rather than assimilating her into Underclan logic."
     },
     {
       "BeatId": "dfd2e3d7-53bc-48dc-b77d-b6928a00b6ff",
@@ -852,8 +691,8 @@
       "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "the same cold, the same mineral smell, the same surface that swallowed light instead of throwing it back",
-      "Note": "Triple-anaphora \u0027the same X\u0027 is a stock intensifier construction, and \u0027swallowed light\u0027 is a worn personification of dark water.",
-      "Fix": "Vary the repetition or specify a more concrete sensory detail unique to this water."
+      "Note": "Triple-anaphora sameness plus \u0027swallowed light\u0027 is a stock way to signal unchanging dread; slightly overfamiliar phrasing.",
+      "Fix": "Trim to two details or replace \u0027swallowed light instead of throwing it back\u0027 with a more specific, less abstracted image."
     },
     {
       "BeatId": "dfd2e3d7-53bc-48dc-b77d-b6928a00b6ff",
@@ -861,9 +700,9 @@
       "Chapter": "Chapter 14 \u2014 A New Fare",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "present and attending and offering no account of where it had been or what it was",
-      "Note": "Vague abstraction stacking (\u0027present and attending\u0027) tells us the Oarsman\u0027s demeanor rather than showing a concrete action or detail.",
-      "Fix": "Replace with one specific physical detail of the Oarsman\u0027s stillness or posture."
+      "Quote": "because a life that size does not fit in one hand",
+      "Note": "Purple aphoristic capper that fails literal scrutiny \u2014 a Fare object was never meant to be held in relation to \u0027a life\u0027s size\u0027; reads as an inserted thesis statement rather than earned image.",
+      "Fix": "Cut the clause or ground it in a concrete physical detail about the three objects together."
     },
     {
       "BeatId": "dfd2e3d7-53bc-48dc-b77d-b6928a00b6ff",
@@ -872,18 +711,18 @@
       "Type": "MEANING-MISMATCH",
       "Severity": "MINOR",
       "Quote": "He sat with that the way he sat with th",
-      "Note": "The beat cuts off mid-sentence, leaving the closing image of unresolved grief structurally incomplete rather than landed as a threshold moment.",
-      "Fix": "Complete the sentence and closing image so the chapter\u0027s recovery arc and grief motif land fully."
+      "Note": "Beat cuts off mid-sentence, leaving the closing reflection \u2014 meant to layer accumulated grief into a final image \u2014 unresolved and truncated.",
+      "Fix": "Complete the sentence and closing image so the beat lands on the intended note of continuity/grief."
     },
     {
-      "BeatId": "7a2d3037-858e-4303-84c4-95ebb3914d71",
-      "Number": 4827,
-      "Chapter": "Chapter 1 \u2014 The Breath of the Deep",
+      "BeatId": "48732526-71f9-4766-ba3a-3c7a827cdca3",
+      "Number": 4828,
+      "Chapter": "Chapter 4 \u2014 The Surfacing Called",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Old light. The kind that asked nothing of you.",
-      "Note": "Purple, quasi-profound aphorism about light that doesn\u0027t survive literal scrutiny \u2014 light asking or not asking things of a viewer is a stretch metaphor rather than concrete observation.",
-      "Fix": "Cut the second sentence or replace with a concrete sensory detail about the glow."
+      "Quote": "He only performed when he thought someone was watching him think.",
+      "Note": "Overly neat, aphoristic psychological summary that reads as authorial insight rather than Glim\u0027s lived observation.",
+      "Fix": "Trim to a more concrete behavioral tell rather than a general maxim about Grale."
     },
     {
       "BeatId": "ddfa5152-defb-457b-9f0a-f9cdf22fbb32",
@@ -891,9 +730,9 @@
       "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "What it meant, sitting here, was simple and terrible.",
-      "Note": "telling-not-showing summary phrase that announces emotional weight rather than earning it",
-      "Fix": "cut the framing sentence and let the following explanation carry the weight unannounced"
+      "Quote": "give it time \u2014 the thing people said when they\u0027d run out of other things to say",
+      "Note": "",
+      "Fix": "Trim the explanatory clause; let the note\u0027s banality stand without commentary."
     },
     {
       "BeatId": "ddfa5152-defb-457b-9f0a-f9cdf22fbb32",
@@ -901,69 +740,69 @@
       "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the way the whole surface was sure it already knew what was best",
-      "Note": "editorializing aphorism-like aside that reads as authorial commentary rather than Noor\u0027s specific interior state",
-      "Fix": "cut or ground it in a concrete detail of the pushed content"
+      "Quote": "She understood it the way you understand a language you don\u0027t speak: the sounds, not the sense.",
+      "Note": "Neat aphoristic packaging that tells the reader how to feel about her comprehension rather than showing it.",
+      "Fix": "Cut or ground in a concrete failed attempt to parse something specific he did."
     },
     {
       "BeatId": "019f1221-3430-7de2-bf4a-e86ec38ae489",
       "Number": 4914,
       "Chapter": "Chapter 9 \u2014 The Way Down",
       "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "You read a face here by paying attention, not by light.",
-      "Note": "Aphoristic filler that states a universal truth rather than deepening the moment.",
-      "Fix": "Cut the sentence; let the description of her face stand alone."
-    },
-    {
-      "BeatId": "019f1221-3430-7de2-bf4a-e86ec38ae489",
-      "Number": 4914,
-      "Chapter": "Chapter 9 \u2014 The Way Down",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "a person handed a fact too big to hold",
-      "Note": "Generic \u0027too big to hold/grasp\u0027 phrasing is a stock intensifier.",
-      "Fix": "Replace with a more specific, sensory description of her stillness or posture."
-    },
-    {
-      "BeatId": "019f1221-3430-7de2-bf4a-e86ec38ae489",
-      "Number": 4914,
-      "Chapter": "Chapter 9 \u2014 The Way Down",
-      "Type": "MEANING-MISMATCH",
       "Severity": "MINOR",
       "Quote": "He watched her the way he watched his candle: for the signs of what to do next.",
-      "Note": "The candle simile is used again later for Sorrel\u0027s gesture in beat 3, diluting its power here and making it feel like a stock comparison rather than earned imagery specific to this moment.",
-      "Fix": "Vary the simile or reserve the candle-comparison for one instance."
+      "Note": "Simile tells us he\u0027s monitoring her without showing what specifically he\u0027s reading off her; slightly abstract, borders on stated-not-shown vigilance.",
+      "Fix": "Cut simile or replace with a concrete observed detail (e.g., the set of her jaw, her hand near the wall)."
+    },
+    {
+      "BeatId": "019f1221-3430-7de2-bf4a-e86ec38ae489",
+      "Number": 4914,
+      "Chapter": "Chapter 9 \u2014 The Way Down",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "like a person handed a fact too big to hold",
+      "Note": "Purple/abstract metaphor that doesn\u0027t clarify what she\u0027s physically doing beyond \u0027staring up\u0027; slightly stock \u0027too big to hold\u0027 phrasing.",
+      "Fix": "Ground it in a physical beat \u2014 e.g., describe her neck craned, mouth open, stillness."
+    },
+    {
+      "BeatId": "019f1221-3430-7de2-bf4a-e86ec38ae489",
+      "Number": 4914,
+      "Chapter": "Chapter 9 \u2014 The Way Down",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "like the weight of a tool used every day",
+      "Note": "Serviceable but generic comparison that doesn\u0027t add specificity to Glim\u0027s sensory world.",
+      "Fix": "Replace with a Homewater-specific referent already established (e.g., the pipe-hum itself) to avoid a stock analogy."
     },
     {
       "BeatId": "019f2a1b-8648-7185-a92d-6dbb3815acbc",
       "Number": 4980,
       "Chapter": "Chapter 2 \u2014 The One Word",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "Stories carry what facts can\u0027t.",
-      "Note": "Pseudo-profound aphorism that sums up the theme too neatly, telling the reader what to conclude rather than letting the escalation do it.",
-      "Fix": "Cut the sentence and let Glim\u0027s next question carry the beat forward."
+      "Quote": "Vesh\u0027s hand found the wall for a moment, the way it did when he was arranging a thought before he spoke it.",
+      "Note": "Stock \u0027physical tic signals thought\u0027 gesture, repeated later almost verbatim, reads as filler characterization rather than dread-building.",
+      "Fix": "Cut or vary the repeated gesture; let the pause itself carry weight."
     },
     {
       "BeatId": "019f2a1b-a88a-7083-b031-9da9f6fe1136",
       "Number": 4981,
       "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Thanking her would make it real, and real was harder to carry than quiet.",
-      "Note": "Reads as a tidy aphorism explaining Noor\u0027s feelings rather than dramatizing them \u2014 borders on telling-not-showing.",
-      "Fix": "Cut, or replace with a concrete beat showing the avoidance (e.g., changing the subject whenever thanks came close)."
-    },
-    {
-      "BeatId": "019f2a1b-a88a-7083-b031-9da9f6fe1136",
-      "Number": 4981,
-      "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "Her body had learned not to trust the lurch faster than her heart had.",
-      "Note": "Mind/body-split phrasing that gestures at profundity without adding concrete information beyond what\u0027s already shown.",
-      "Fix": "She\u0027d learned not to trust it. Simplify to avoid the abstracted heart/body construction."
+      "Note": "Body/heart split-metaphor is a familiar stock construction for restrained hope.",
+      "Fix": "Replace with a more specific, non-formulaic image of her physical reaction."
+    },
+    {
+      "BeatId": "019f2a1b-a88a-7083-b031-9da9f6fe1136",
+      "Number": 4981,
+      "Chapter": "Chapter 7 \u2014 The Smell Before the Face",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "trying to decide whether she was allowed to feel what she was already feeling",
+      "Note": "Reflexive paradox-phrasing reads as a pre-packaged emotional-complexity line rather than earned interiority.",
+      "Fix": "Ground it in a concrete sensory or behavioral detail instead of the abstract permission-to-feel construction."
     },
     {
       "BeatId": "019f2a1b-bbd1-7238-8153-16554efbb2e6",
@@ -971,9 +810,9 @@
       "Chapter": "Chapter 11 \u2014 When the Candles Sicken",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Glim felt something behind his breastbone pull tight, like a valve shut hard.",
-      "Note": "Mechanical-simile for suppressed emotion; \u0027valve shut hard\u0027 is a slightly labored image that doesn\u0027t fully land as visceral.",
-      "Fix": "Replace with a more concrete physical action (fists, breath) rather than an internal machine metaphor."
+      "Quote": "The words were too small for what he was trying to carry in them.",
+      "Note": "Abstract commentary on language that tells rather than shows his frustration; slightly purple.",
+      "Fix": "Cut the line or ground it in a physical action/reaction instead."
     }
   ]
 }

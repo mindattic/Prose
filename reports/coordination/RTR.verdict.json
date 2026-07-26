@@ -1,48 +1,37 @@
 {
   "nodeCode": "RTR",
-  "generatedAtUtc": "2026-07-25 17:42:03Z",
+  "generatedAtUtc": "2026-07-25 23:34:33Z",
   "beatsScanned": 14,
   "cleanBeats": 2,
-  "totalFindings": 28,
+  "totalFindings": 26,
   "bySeverity": {
-    "MODERATE": 7,
+    "MODERATE": 5,
     "MINOR": 21
   },
   "byType": {
-    "CLICHE": 8,
-    "GRIPE": 16,
-    "MEANING-MISMATCH": 4
+    "CLICHE": 7,
+    "GRIPE": 19
   },
   "findings": [
     {
-      "BeatId": "019f4991-113a-72e9-99a6-894ef84fa22f",
-      "Number": 5186,
+      "BeatId": "019f4991-1fbe-784f-92fb-e0e08f1bec14",
+      "Number": 5187,
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "CLICHE",
       "Severity": "MODERATE",
-      "Quote": "running beneath the fear like the low end under a song",
-      "Note": "Musical-metaphor-for-emotion is a stock device, and generic here since it doesn\u0027t tie to Ethan\u0027s specific stage/performer background established earlier.",
-      "Fix": "Cut simile or ground it more specifically in his musician\u0027s ear rather than a generic \u0027low end under a song.\u0027"
+      "Quote": "and the look said don\u0027t, and it said I\u0027m sorry, and it said a third thing the band had been building a wall against for four years, and there wasn\u0027t time to read it",
+      "Note": "Triple-anaphora \u0027the look said\u0027 plus the vague \u0027third thing\u0027 undercuts the payoff the beat is supposed to deliver; withholding the content entirely reads as coy rather than earned, weakening the four-years-suppressed-feeling payoff.",
+      "Fix": "Name the third thing, even obliquely, rather than gesturing at it as unspeakable."
     },
     {
-      "BeatId": "019f4991-1fbe-784f-92fb-e0e08f1bec14",
-      "Number": 5187,
+      "BeatId": "019f4991-4958-7316-9bed-5b7b7cc368b9",
+      "Number": 5190,
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "He felt this one close around him like a hand",
-      "Note": "Same hand-image is reused for the room-sightline sensation and then literally repeated for Koss\u0027s hand on Mona\u0027s shoulder and later for Faith\u0027s silence-catching \u2014 the recycled metaphor dilutes rather than reinforces the geometric-outmaneuvering beat.",
-      "Fix": "Use a distinct image tied to stagecraft/sightlines rather than \u0027hand\u0027 again."
-    },
-    {
-      "BeatId": "019f4991-1fbe-784f-92fb-e0e08f1bec14",
-      "Number": 5187,
-      "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "MEANING-MISMATCH",
-      "Severity": "MODERATE",
-      "Quote": "and it said a third thing the band had been building a wall against for four years, and there wasn\u0027t time to read it.",
-      "Note": "The purpose calls for Mona\u0027s look to pay off four years of suppressed feeling, but the text explicitly refuses to deliver or specify it (\u0027there wasn\u0027t time to read it\u0027), deferring the payoff instead of landing it.",
-      "Fix": "Let Ethan register even a fragment of what the look means, rather than waving it off as unreadable."
+      "Quote": "and Faith loved him a little for that \u2014 the small mercy of not ma",
+      "Note": "Tells the emotional payoff directly (\u0027loved him a little\u0027) rather than letting the restrained listening carry it, undercutting the beat\u0027s stated purpose of showing grief/relief without release.",
+      "Fix": "Cut the naming of the emotion; let the withheld question stand alone as the mercy."
     },
     {
       "BeatId": "019f4991-72b3-7b5b-a7aa-e1ffa1727fdc",
@@ -50,39 +39,29 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "the certainty of the next word in your own sentence",
-      "Note": "abstract aphoristic simile that doesn\u0027t clarify the visual/physical fact being described (her turning early)",
-      "Fix": "replace with a concrete sensory comparison tied to the chase"
+      "Quote": "She wasn\u0027t reading the room. She was reading the men who weren\u0027t in it yet.",
+      "Note": "aphoristic capper that states the beat\u0027s thesis directly rather than letting the preceding action carry it \u2014 reads as the author explaining the point",
+      "Fix": "cut the line and trust the demonstrated turns/steering to make the point, or fold it into Ethan\u0027s more concrete internal reaction"
     },
     {
-      "BeatId": "019f4991-8e4f-746f-b96b-8244381c9a99",
-      "Number": 5195,
+      "BeatId": "019f4991-c549-7d5d-b3b1-3d7de46e789b",
+      "Number": 5199,
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "CLICHE",
       "Severity": "MODERATE",
-      "Quote": "the recognition land through him like a plucked string",
-      "Note": "stock musical-metaphor for emotional/physical response, a common shorthand rather than a specific image",
-      "Fix": "cut the simile or replace with a concrete physical detail unique to Ethan"
+      "Quote": "his hands, when he looked at them, weren\u0027t quite his yet",
+      "Note": "stock post-performance depersonalization image, worn from overuse in music/performance scenes",
+      "Fix": "replace with a more specific physical detail unique to Ethan"
     },
     {
-      "BeatId": "019f4991-8e4f-746f-b96b-8244381c9a99",
-      "Number": 5195,
-      "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "MEANING-MISMATCH",
-      "Severity": "MODERATE",
-      "Quote": "Two more by the side door carrying the weight of something planned, a job being done on a schedule.",
-      "Note": "the beat is meant to escalate into a forced choice of who to save first, but only Ethan is ever considered \u2014 Mona and others are named but no actual triage/choice is dramatized",
-      "Fix": "show Faith briefly weighing Mona or another target before settling on Ethan, so the \u0027choose who to save first\u0027 stakes register"
-    },
-    {
-      "BeatId": "019f4991-b781-79f0-8237-ed8af217cf2a",
-      "Number": 5198,
+      "BeatId": "019f4991-c549-7d5d-b3b1-3d7de46e789b",
+      "Number": 5199,
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "because a woman who read a room like that and said nothing was either very careful or very certain, and he needed to know which before the night sorted itself into its usual shapes and left no opening for the question",
-      "Note": "",
-      "Fix": "trim to a shorter, more concrete want rather than an explanatory aphorism about types of women"
+      "Quote": "the engine still running with no road left to put it on",
+      "Note": "purple metaphor that doesn\u0027t quite parse literally \u2014 an engine with no road isn\u0027t a coherent image of adrenaline crash",
+      "Fix": "cut or replace with a cleaner physical description of the crash"
     },
     {
       "BeatId": "019f4991-113a-72e9-99a6-894ef84fa22f",
@@ -90,9 +69,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He read her clean. That was the surprise of it \u2014 clean as spring water.",
-      "Note": "\u0027Clean as spring water\u0027 is a soft, pastoral clich\u00E9-adjacent simile that clashes tonally with the cyberpunk/violent register of the scene.",
-      "Fix": "Replace with a starker, register-appropriate comparison or cut the simile."
+      "Quote": "That was the thing he\u0027d remember",
+      "Note": "Flash-forward narrator intrusion (\u0027the thing he\u0027d remember\u0027) briefly breaks the tight present-tense immersion the beat otherwise earns, a small telling-not-showing flag.",
+      "Fix": "Cut the framing clause and let the image of the hovering hands stand alone."
     },
     {
       "BeatId": "019f4991-113a-72e9-99a6-894ef84fa22f",
@@ -100,19 +79,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "It was what you had left when there was nothing else to do.",
-      "Note": "Generalizing aphoristic aside that tells the reader the emotional function of the gesture instead of trusting the concrete action already shown.",
-      "Fix": "Cut the sentence; the preceding action already conveys helplessness."
-    },
-    {
-      "BeatId": "019f4991-113a-72e9-99a6-894ef84fa22f",
-      "Number": 5186,
-      "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "MEANING-MISMATCH",
-      "Severity": "MINOR",
-      "Quote": "She laughed.",
-      "Note": "The purpose centers on exposing Faith\u0027s vulnerability and Ethan\u0027s guilt via her reading him; ending the beat on Faith\u0027s laugh shifts focus to her reaction/performance rather than closing on Ethan\u0027s stripped composure, slightly diffusing the intended payoff.",
-      "Fix": "Hold a beat longer on Ethan\u0027s exposed state before pivoting to Faith\u0027s laugh, or trim the laugh\u0027s buildup so it doesn\u0027t overtake the guilt payoff."
+      "Quote": "It was just quiet, and it was aimed, and it had her name where a name would go.",
+      "Note": "Echoes the same withheld-content device as the \u0027third thing\u0027 in ref 0 (\u0027a third thing...there wasn\u0027t time to read it\u0027 / \u0027It didn\u0027t have words on it either\u0027); the repeated evasive gesture toward an unnamed emotional truth across both beats risks feeling like a tic rather than a deliberate motif.",
+      "Fix": "Either commit to naming the feeling here (since this beat is the fuller reveal) or vary the phrasing so it doesn\u0027t mirror ref 0\u0027s evasion beat-for-beat."
     },
     {
       "BeatId": "019f4991-1fbe-784f-92fb-e0e08f1bec14",
@@ -121,28 +90,28 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the honest little strip telling its one truth",
-      "Note": "Cute personification that undercuts the tension of the standoff with a whimsical aside.",
-      "Fix": "Cut the editorializing clause; let the flat light-strip detail stand alone."
+      "Note": "Cute personification of a light-strip that doesn\u0027t clarify what the \u0027truth\u0027 is; reads as filler poeticism rather than concrete image.",
+      "Fix": "Cut or replace with a concrete physical detail (steadiness of her arm, etc.)."
     },
     {
       "BeatId": "019f4991-1fbe-784f-92fb-e0e08f1bec14",
       "Number": 5187,
       "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the sore man at the fire escape, one boot off, one minute of relief",
-      "Note": "Functions as a stock \u0027weary soldier taking a breather\u0027 image inserted for contrast; reads as generic shorthand rather than earned specific memory.",
-      "Fix": "Trim or replace with a detail more specific to their shared history."
+      "Quote": "He caught the silence the way he\u0027d once have caught a crowd going wrong under the lights \u2014 not a sound, but the absence of the sound that should have been there.",
+      "Note": "The stage-sense analogy is used twice in this beat (sightlines, then crowd-silence); the repetition dilutes rather than reinforces, and \u0027absence of the sound that should have been there\u0027 is a slightly padded restatement of the same idea already conveyed by \u0027she went still.\u0027",
+      "Fix": "Cut one of the two stage-craft analogies to avoid redundancy."
     },
     {
-      "BeatId": "019f4991-4958-7316-9bed-5b7b7cc368b9",
-      "Number": 5190,
+      "BeatId": "019f4991-2dab-704c-87b8-fc622279fbcd",
+      "Number": 5188,
       "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "a stone dropped in a well with no splash coming back",
-      "Note": "well/stone-drop is a familiar stock image for absorbed bad news",
-      "Fix": "replace with a less generic image tied to the story\u0027s sensory palette (neuretics, sound, mesh)"
+      "Quote": "You can\u0027t talk to a picture. There\u0027s no door in him. There\u0027s just the reel.",
+      "Note": "The \u0027door\u0027 metaphor is reused from the words/door framing a sentence earlier, and \u0027reel\u0027 as a third image stacks metaphors past the point of clarity, slightly diluting the sharp practical distinction the beat needs.",
+      "Fix": "Trim to one governing image (either door or reel, not both) for cleaner contrast."
     },
     {
       "BeatId": "019f4991-4958-7316-9bed-5b7b7cc368b9",
@@ -150,9 +119,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "a singer\u0027s breath, a man rationing air he didn\u0027t know he was rationing",
-      "Note": "tidy, slightly precious phrasing that tells us the meaning of the breath rather than just showing it",
-      "Fix": "cut \u0027he didn\u0027t know he was rationing\u0027 or simplify to avoid the aphoristic turn"
+      "Quote": "relief so hard it nearly took his knees",
+      "Note": "Borders on clich\u00E9 physical shorthand for relief.",
+      "Fix": "Replace with a more specific, non-generic physical tell."
     },
     {
       "BeatId": "019f4991-5727-7bb7-beff-51333192309b",
@@ -160,9 +129,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "telling the truth it always told: she wasn\u0027t moving. She wasn\u0027t going to.",
-      "Note": "abstract personification of the light-strip undercuts the concrete physical stillness the beat wants to land on",
-      "Fix": "cut the \u0027truth it always told\u0027 framing; state the stillness plainly"
+      "Quote": "For one long eternity his face was down at her level",
+      "Note": "Stock intensifier phrase (\u0027long eternity\u0027) undercuts the otherwise concrete tension.",
+      "Fix": "Cut \u0027long eternity\u0027 and specify a beat count or physical detail instead."
     },
     {
       "BeatId": "019f4991-5727-7bb7-beff-51333192309b",
@@ -170,9 +139,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "She held it the way she held the last note of the slow one \u2014 past the point where the body starts to argue, past the burn coming up under the ribs, past the white edge of it.",
-      "Note": "the singing metaphor is doing double duty (also used in ref 1 for Ethan) and here reads as reaching for lyricism mid-crisis rather than embodied panic",
-      "Fix": "trim to a more physical, less curated comparison or cut the simile"
+      "Quote": "she held it the way she held the last note of the slow one",
+      "Note": "Metaphor gestures at character backstory but is vague enough to read as authorial flourish rather than grounded recall.",
+      "Fix": "Anchor with one concrete sensory detail of the note/performance to earn the comparison."
     },
     {
       "BeatId": "019f4991-64f7-7546-a175-9c325a796902",
@@ -180,29 +149,29 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Too small and too stupid to be a lie.",
-      "Note": "aphoristic fragment asserting truth-by-assertion rather than demonstrating why the line reads as true",
-      "Fix": "ground the judgment in a specific physical tell from Ethan"
+      "Quote": "she\u0027d heard the man\u0027s bad shoes",
+      "Note": "the callback metaphor is unclear/undercooked as presented in isolation \u2014 \u0027heard\u0027 paired with \u0027shoes\u0027 reads as a mixed-sense image without enough context to land cleanly",
+      "Fix": "clarify the sensory logic or cut the comparison"
     },
     {
       "BeatId": "019f4991-64f7-7546-a175-9c325a796902",
       "Number": 5192,
       "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "a door in them you didn\u0027t know was there",
-      "Note": "stock metaphor for hidden depths/secrets",
-      "Fix": "replace with a more specific, non-idiomatic image"
+      "Quote": "Two people wanting the same lie didn\u0027t make it hold.",
+      "Note": "aphoristic, slightly pseudo-profound summary line that tells the reader the meaning instead of letting the scene\u0027s action carry it",
+      "Fix": "cut or integrate more concretely into her internal reasoning"
     },
     {
       "BeatId": "019f4991-72b3-7b5b-a7aa-e1ffa1727fdc",
       "Number": 5193,
       "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "MEANING-MISMATCH",
+      "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "He was aware, distantly, that he ought to be more afraid than this.",
-      "Note": "beat purpose is to build Ethan\u0027s dawning awareness of Faith\u0027s ability, but this line pivots attention to his own fear-numbness rather than her uncanniness, slightly diffusing focus",
-      "Fix": "cut or tie the numbness directly back to his growing awareness of her control"
+      "Quote": "Ethan\u0027s heart finally did the thing",
+      "Note": "vague heartbeat-cliche setup, withholding for effect but generic in phrasing",
+      "Fix": "specify the physical sensation directly instead of the coy \u0027the thing\u0027"
     },
     {
       "BeatId": "019f4991-8086-7bc4-83bb-a9127ea14106",
@@ -210,9 +179,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "which was stupid \u2014 nothing down here could hear her. Except everything up here could hear *them*, and she\u0027d stopped being able to tell the two directions apart.",
-      "Note": "the up/down direction wordplay is muddled and reads as clever filler rather than clarifying her state of mind",
-      "Fix": "simplify to a direct sensory beat about the danger of noise"
+      "Quote": "a man pouring himself through a slot the world had cut a size too small",
+      "Note": "strained metaphor that doesn\u0027t hold up to literal scrutiny \u2014 people don\u0027t \u0027pour\u0027 through slots, and the personified \u0027world\u0027 cutting the slot muddies the image",
+      "Fix": "simplify to a concrete physical description of the squeeze through the window"
     },
     {
       "BeatId": "019f4991-8086-7bc4-83bb-a9127ea14106",
@@ -220,9 +189,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "a man pouring himself through a slot the world had cut a size too small",
-      "Note": "overwrought action-hero phrasing for a simple climbing-through-a-gap action",
-      "Fix": "trim to plainer physical description"
+      "Quote": "The breach came through the wall behind them like a cough.",
+      "Note": "the simile is a mild reach that trades clarity for a poetic beat",
+      "Fix": "consider a more literal sound description"
     },
     {
       "BeatId": "019f4991-8e4f-746f-b96b-8244381c9a99",
@@ -230,9 +199,19 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "close enough that close was a fact and not a question",
-      "Note": "clever-sounding wordplay that doesn\u0027t clarify the physical staging, reads as a phrase admiring itself",
-      "Fix": "state the actual distance/action instead of the abstraction"
+      "Quote": "She\u0027d feel bad about using it later, from somewhere that wasn\u0027t here.",
+      "Note": "vague, abstracted phrasing that tells the emotional stakes rather than showing them; \u0027from somewhere that wasn\u0027t here\u0027 is a purple dodge",
+      "Fix": "Cut or ground it concretely: \u0027She\u0027d feel bad about this later. Not now.\u0027"
+    },
+    {
+      "BeatId": "019f4991-8e4f-746f-b96b-8244381c9a99",
+      "Number": 5195,
+      "Chapter": "Chapter 1 \u2014 Read the Room",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the small decisive pull of a shared secret",
+      "Note": "stock abstraction dressing up a simple physical action",
+      "Fix": "replace with a more physical, specific beat"
     },
     {
       "BeatId": "019f4991-9c16-7729-ad91-7b1444febeaf",
@@ -241,18 +220,38 @@
       "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "Her heartbeat picked up. She set it down again, hard.",
-      "Note": "",
-      "Fix": "replace with a more specific physical or behavioral beat to avoid the stock heartbeat cue"
+      "Note": "heartbeat-as-fear-marker is a stock shorthand, though the second sentence attempts a fresher spin",
+      "Fix": "replace the heartbeat notation with a more specific physical tell"
     },
     {
-      "BeatId": "019f4991-a9d8-7d23-b7d2-953bb0d5b377",
-      "Number": 5197,
+      "BeatId": "019f4991-9c16-7729-ad91-7b1444febeaf",
+      "Number": 5196,
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Land her.",
-      "Note": "",
-      "Fix": "cut or replace with a less blunt/clich\u00E9 term for the goal"
+      "Quote": "the good thing, the two of them in the small lit box of the room",
+      "Note": "vague intensifier (\u0027the good thing\u0027) tells the reader how to feel rather than rendering the feeling",
+      "Fix": "cut the label and let the preceding image carry the warmth"
+    },
+    {
+      "BeatId": "019f4991-b781-79f0-8237-ed8af217cf2a",
+      "Number": 5198,
+      "Chapter": "Chapter 1 \u2014 Read the Room",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "forty-odd years worn like they\u0027d cost him nothing",
+      "Note": "vague aphoristic phrasing that tells rather than shows what \u0027worn like nothing\u0027 looks like on him",
+      "Fix": "specify the concrete detail that conveys this (posture, skin, ease of movement)"
+    },
+    {
+      "BeatId": "019f4991-b781-79f0-8237-ed8af217cf2a",
+      "Number": 5198,
+      "Chapter": "Chapter 1 \u2014 Read the Room",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He and Mona had this the way two people who trust each other have it",
+      "Note": "circular filler line \u2014 defines trust by restating the word, adds nothing concrete",
+      "Fix": "cut or replace with a specific behavioral beat demonstrating the trust"
     },
     {
       "BeatId": "019f4991-c549-7d5d-b3b1-3d7de46e789b",
@@ -260,19 +259,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the engine still running with no road left to put it on",
-      "Note": "",
-      "Fix": "cut or replace with a more literal physical detail"
-    },
-    {
-      "BeatId": "019f4991-c549-7d5d-b3b1-3d7de46e789b",
-      "Number": 5199,
-      "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "he\u0027d feel every one of his thirty-six years land at once",
-      "Note": "",
-      "Fix": "cut the aphoristic framing; show a specific ache instead"
+      "Quote": "if he stopped he\u0027d feel every one of his thirty-six years land at once",
+      "Note": "telling-not-showing fatigue via a vague aphoristic claim rather than concrete sensation",
+      "Fix": "ground it in one specific bodily complaint instead of an abstract age-tally"
     },
     {
       "BeatId": "019f4991-c549-7d5d-b3b1-3d7de46e789b",
@@ -280,19 +269,9 @@
       "Chapter": "Chapter 1 \u2014 Read the Room",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "His pulse ticked in his throat",
-      "Note": "",
-      "Fix": "replace with a less stock physical marker of adrenaline crash"
-    },
-    {
-      "BeatId": "019f4991-c549-7d5d-b3b1-3d7de46e789b",
-      "Number": 5199,
-      "Chapter": "Chapter 1 \u2014 Read the Room",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Rill was quiet all the way down.",
-      "Note": "",
-      "Fix": "cut or ground in a concrete behavioral detail rather than a summarizing aphorism"
+      "Quote": "Offstage he had the manner of a man politely waiting for a train",
+      "Note": "serviceable but slightly stock deadpan-character simile",
+      "Fix": "sharpen with a more idiosyncratic comparison"
     }
   ]
 }

@@ -1,50 +1,49 @@
 {
   "nodeCode": "CXC",
-  "generatedAtUtc": "2026-07-25 17:42:11Z",
+  "generatedAtUtc": "2026-07-26 00:13:29Z",
   "beatsScanned": 14,
-  "cleanBeats": 2,
-  "totalFindings": 29,
+  "cleanBeats": 1,
+  "totalFindings": 28,
   "bySeverity": {
-    "BLOCKER": 2,
-    "MODERATE": 6,
-    "MINOR": 21
+    "MODERATE": 8,
+    "MINOR": 20
   },
   "byType": {
-    "MEANING-MISMATCH": 4,
-    "GRIPE": 15,
+    "MEANING-MISMATCH": 8,
     "CONTRADICTION": 1,
-    "CLICHE": 9
+    "GRIPE": 15,
+    "CLICHE": 4
   },
   "findings": [
     {
-      "BeatId": "019f096a-3318-7944-80f8-0c5177b61994",
-      "Number": 4848,
+      "BeatId": "019f0969-c7d9-70f2-9d23-338a6570d2dc",
+      "Number": 4844,
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "Type": "MEANING-MISMATCH",
-      "Severity": "BLOCKER",
-      "Quote": "He had the look of a man who\u0027d already counted his own figure and picked the next thing before he crossed the threshold. She\u0027d done the same three days ago with Soraya, fast enough that no one saw. That was usef",
-      "Note": "Beat is titled \u0027The Mirror Crosses\u0027 for Goldberg specifically, and the purpose calls for the NRST \u0027forty-first name\u0027 payoff \u2014 but the excerpt cuts off before Goldberg actually states the count/payoff line (\u0027I never read a forty-first name\u0027 is spoken but not paid off against a revealed figure). The scene ends on a Rook/Soraya comparison rather than landing Goldberg\u0027s side-crossing.",
-      "Fix": "Complete the beat so Goldberg\u0027s confession culminates in an explicit reckoning of the forty-first name before cutting to any Rook/Soraya parallel."
+      "Severity": "MODERATE",
+      "Quote": "\u0022Yes,\u0022 she said.",
+      "Note": "Purpose requires Rook to say yes before hearing the job and to knowingly pay the cost of that habit; the beat shows the yes but the surrounding interiority (four names, Tidewell) arrives after, making the \u0027knows exactly what that costs\u0027 feel asserted via backfill rather than dramatized in the moment of saying it.",
+      "Fix": "Let a flicker of the cost register in her body at the instant of the yes, before the explanatory paragraph."
     },
     {
-      "BeatId": "019f096a-f6b7-7065-9c65-875b2932e606",
-      "Number": 4856,
-      "Chapter": "Chapter 3 \u2014 The Run",
+      "BeatId": "019f0969-fc91-7b5a-bc13-2e7ac349c5be",
+      "Number": 4846,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
       "Type": "MEANING-MISMATCH",
-      "Severity": "BLOCKER",
-      "Quote": "Somewhere four levels up the red light hitched, dimmed, and the draw o",
-      "Note": "The beat requires the cost to be paid \u2014 someone hurt, the win unclean \u2014 but the prose cuts off before confirming the harvest capability actually comes down or that anyone besides Boiler is affected; as written we only get Boiler\u0027s arm injury, not confirmation of the structural/thematic payoff (twenty-one out of reach, corp\u0027s role undeniable).",
-      "Fix": "Complete the beat: show the manifold fully down, the twenty-one status, and a concrete marker of corp culpability left behind."
+      "Severity": "MODERATE",
+      "Quote": "Introduce Sefi Okonkwo-Reyes (a survivor with a name/face/drive): \u0022There were twenty-one of us. I can give you nine.\u0022",
+      "Note": "Purpose calls for Sefi\u0027s introduction and her stated line in this beat, but neither appears in the prose \u2014 Sefi is absent from ref 2 entirely.",
+      "Fix": "Add Sefi\u0027s entrance and her quoted line within this beat as specified."
     },
     {
       "BeatId": "019f096a-1536-760f-baa1-281fb7b49625",
       "Number": 4847,
       "Chapter": "Chapter 1 \u2014 The Reunion",
-      "Type": "GRIPE",
+      "Type": "CONTRADICTION",
       "Severity": "MODERATE",
-      "Quote": "the way you look at a sentence that changes the meaning of the whole page",
-      "Note": "Abstract meta-simile describing a look by comparing it to reading, which restates the prior clause instead of grounding it in physical action; borders on filler-profound.",
-      "Fix": "Replace with a concrete physical tell, e.g., \u0027her knuckles white on the table edge.\u0027"
+      "Quote": "At the edge of Rook\u0027s sight, Vox hadn\u0027t moved since she sat down.",
+      "Note": "Vox has not been established as present/seated in this scene within the given beats (ref 0-2 show Rook, Soraya, Stave, and \u2014 per purpose \u2014 Sefi; Vox\u0027s arrival was described in ref 1 as a future/anticipated event, \u0027two hours late with coffee\u0027), so her sudden presence here without introduction reads as inconsistent with the established roster in-scene.",
+      "Fix": "Either show Vox\u0027s arrival explicitly earlier or cut this reference."
     },
     {
       "BeatId": "019f096a-3318-7944-80f8-0c5177b61994",
@@ -52,19 +51,9 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "There\u0027s a thing people do when a man confesses clean: they reach for him, they make the room warm again, because a cold room with a confession in it is hard to sit in.",
-      "Note": "Universal-truth aphorism stated as narrator wisdom rather than filtered through Rook\u0027s specific observation; reads as authorial commentary inserted for weight.",
-      "Fix": "Ground it in Rook\u0027s concrete memory of a specific fixer doing this, cut the generalized \u0027thing people do\u0027 framing."
-    },
-    {
-      "BeatId": "019f096a-80c3-790f-91c8-eb11db81a546",
-      "Number": 4851,
-      "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
-      "Type": "CONTRADICTION",
-      "Severity": "MODERATE",
-      "Quote": "the same one Soraya had built",
-      "Note": "The beat\u0027s stated purpose is \u0027Soraya Becomes Her\u0027 \u2014 Soraya giving the crew the key and completing her arc \u2014 but the entire scene as delivered is Goldberg\u0027s monologue and revelation; Soraya doesn\u0027t appear, speak, or act. The final fragment gestures at Soraya only in a dangling comparison, contradicting the beat\u0027s premise that this is her scene.",
-      "Fix": "Reallocate stage time so Soraya is present and active \u2014 delivering credentials or a decisive line \u2014 rather than referenced only in Goldberg\u0027s closing analogy."
+      "Quote": "A man already past his own denial has nothing left to protect but the work.",
+      "Note": "aphoristic universal-truth summary that tells us the meaning of the scene rather than trusting the preceding image",
+      "Fix": "cut the sentence; let the observation about Soraya stand alone without the generalized moral"
     },
     {
       "BeatId": "019f096a-de7b-712b-892f-2974fe7b467b",
@@ -72,29 +61,39 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "You\u0027re carrying a contract for a count right now, in another woman\u0027s arms. Don\u0027t stand in my gap and call yours clean.",
-      "Note": "aphoristic mirror-argument line that risks feeling like an author-authored thesis statement rather than something Anneke would say in the moment; borders on the pseudo-profound universal-truth register the note warns against",
-      "Fix": "tighten to something more specific to the ledger/rows in front of them rather than a generalized moral maxim"
+      "Quote": "the grip that never decides whether it\u0027s holding the rail up or being held up by it",
+      "Note": "Purple, over-worked metaphor that doesn\u0027t survive literal scrutiny \u2014 a hand gripping a rail isn\u0027t ambiguous in this way, and the parallel to the clerk\u0027s gesture strains for meaning rather than earning it.",
+      "Fix": "Cut the clause; let \u0027she put her hand on the rail\u0027 stand alone or replace with a concrete physical detail (whitened knuckles, cold metal)."
+    },
+    {
+      "BeatId": "019f096a-de7b-712b-892f-2974fe7b467b",
+      "Number": 4855,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "For one clean second it was simple in a way it hadn\u0027t been simple in three jobs: end the woman, end the program\u0027s hand, walk the count out.",
+      "Note": "Purpose calls for an argument neither side can win clean \u2014 this narrates Rook\u0027s internal clarity/resolve rather than dramatizing the unwinnable moral tangle the beat promises.",
+      "Fix": "Complicate the beat with a flicker of what killing Anneke would cost or fail to solve, undercutting the \u0027clean\u0027 feeling in the same breath."
     },
     {
       "BeatId": "019f096a-f6b7-7065-9c65-875b2932e606",
       "Number": 4856,
       "Chapter": "Chapter 3 \u2014 The Run",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MODERATE",
-      "Quote": "this once he made himself the wall that lies \u2014 the wall that carries what it was never rated for and says nothing",
-      "Note": "The load-bearing-structure conceit tips into a pseudo-profound aphorism that strains the literal metaphor (a wall doesn\u0027t \u0022lie,\u0022 and the phrase reaches for meaning it hasn\u0027t earned).",
-      "Fix": "Cut the aphoristic framing; keep it physical: \u0022he held the give shut by main force, the way you hold a door against wind.\u0022"
+      "Quote": "His body did what bodies do: it told him in one white flood to set the weight down and step off the line.",
+      "Note": "\u0027white flood\u0027 as a shorthand for pain-signal is a stock sensory tag that doesn\u0027t add specificity beyond genre convention.",
+      "Fix": "Replace with a concrete physical detail unique to his own body-as-structure logic, e.g., describe the exact sensation his trade vocabulary would give it."
     },
     {
-      "BeatId": "019f096b-238d-7af5-a7a1-b4fc939968d0",
-      "Number": 4857,
+      "BeatId": "019f096a-f6b7-7065-9c65-875b2932e606",
+      "Number": 4856,
       "Chapter": "Chapter 3 \u2014 The Run",
       "Type": "MEANING-MISMATCH",
       "Severity": "MODERATE",
-      "Quote": "she wrote *32 confirmed*",
-      "Note": "Beat purpose specifies the count resolves as twenty-one, whole and complete \u2014 the motif payoff hinges on that exact number landing clean. Introducing 32 (21 \u002B Goldberg \u002B the unnamed woman \u002B implied others) muddies whether the twenty-one ever actually \u0027comes out whole,\u0027 diluting the intended resolution.",
-      "Fix": "Keep the 21 as the closed, resolved count on its own; if 32 is a running total, separate it clearly so the twenty-one\u0027s completion isn\u0027t undercut by a bigger unresolved number crowning the page."
+      "Quote": "Somewhere four levels up the red light hitched, dimmed, and the draw o",
+      "Note": "Text cuts off mid-word, so the beat\u0027s required outcome (harvest brought down, cost paid, someone hurt) is not confirmed on the page \u2014 the actual down-cut and the injury\u0027s aftermath are never shown completing.",
+      "Fix": "Complete the sentence and follow through to confirm the manifold is down and the extent of Boiler\u0027s injury, per the beat\u0027s stated requirements."
     },
     {
       "BeatId": "019f0969-c7d9-70f2-9d23-338a6570d2dc",
@@ -102,29 +101,19 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "That was what you paid for when you didn\u0027t want to be seen.",
-      "Note": "Editorializing aside that tells rather than trusts the visual detail just given.",
-      "Fix": "Cut the sentence; let the matte description stand alone."
+      "Quote": "Soraya set her chopsticks down with a care that had nothing to do with the chopsticks.",
+      "Note": "Vague telling-gesture standing in for specific emotion; reads as a stock \u0027meaningful pause\u0027 beat.",
+      "Fix": "Name what the care is about, e.g., \u0027set them down like she\u0027d already rehearsed the next sentence.\u0027"
     },
     {
       "BeatId": "019f0969-c7d9-70f2-9d23-338a6570d2dc",
       "Number": 4844,
-      "Chapter": "Chapter 1 \u2014 The Reunion",
-      "Type": "MEANING-MISMATCH",
-      "Severity": "MINOR",
-      "Quote": "a fourth finger came down on the table edge, uninvited",
-      "Note": "The count motif is meant to establish Rook\u0027s discipline, but personifying the finger as acting \u0027uninvited\u0027 undercuts the control the beat wants to establish before she says yes deliberately.",
-      "Fix": "Have her notice/suppress it rather than framing it as autonomous."
-    },
-    {
-      "BeatId": "019f0969-e214-7353-805e-8e661b46ca0b",
-      "Number": 4845,
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "the silence a building makes in the quarter-second before it admits it\u0027s done",
-      "Note": "Purple personification of a building; slightly overwrought for a quick flashback beat.",
-      "Fix": "Trim to a plainer sensory beat, e.g., \u0027the half-second of nothing before the slab gave.\u0027"
+      "Quote": "The word was gone before she\u0027d decided to spend it.",
+      "Note": "Coin/spend-a-word metaphor is a familiar figuration for impulsive speech.",
+      "Fix": "Cut the metaphor; state the immediacy plainly."
     },
     {
       "BeatId": "019f0969-e214-7353-805e-8e661b46ca0b",
@@ -132,19 +121,49 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the name did quiet work",
-      "Note": "Vague authorial telling-phrase that asserts significance without showing it beyond the checkpoint-scan line already given.",
-      "Fix": "Cut the phrase; the checkpoint detail already does the work."
+      "Quote": "and the name did quiet work",
+      "Note": "Slightly abstract authorial summary breaking the otherwise concrete rendering of Scout/Gerald.",
+      "Fix": "Cut or fold into the checkpoint-scan sentence directly."
+    },
+    {
+      "BeatId": "019f0969-e214-7353-805e-8e661b46ca0b",
+      "Number": 4845,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "Said he was done being the pers",
+      "Note": "Beat cuts off mid-word/mid-sentence on Stave\u0027s line, leaving the \u0027reluctant key\u0027 introduction structurally incomplete within this excerpt.",
+      "Fix": "Complete the sentence so Stave\u0027s refusal lands before the beat ends."
+    },
+    {
+      "BeatId": "019f0969-fc91-7b5a-bc13-2e7ac349c5be",
+      "Number": 4846,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He didn\u0027t look like a man who\u0027d made a decision. He looked like a man the decision had finished with.",
+      "Note": "Neat antithetical phrasing edges toward aphorism-for-effect rather than earned observation.",
+      "Fix": "Ground it in one physical detail instead of the paired abstraction."
     },
     {
       "BeatId": "019f096a-1536-760f-baa1-281fb7b49625",
       "Number": 4847,
       "Chapter": "Chapter 1 \u2014 The Reunion",
-      "Type": "CLICHE",
+      "Type": "MEANING-MISMATCH",
       "Severity": "MINOR",
-      "Quote": "the way food goes when nobody touches it",
-      "Note": "Filler truism that states the obvious without adding image or tension.",
-      "Fix": "Cut the clause; \u0027still steaming faintly\u0027 already conveys it."
+      "Quote": "Her jaw worked once. \u0022The seven weren\u0027t the cost,\u0022 Rook said.",
+      "Note": "Sefi is referenced reacting (chrome hand on laminate, jaw working) but was never introduced in-scene per the prior beat\u0027s gap, so her emotional beat lands without established footing for the reader.",
+      "Fix": "Ensure Sefi\u0027s introduction (per ref 2) precedes this reaction so the payoff is earned."
+    },
+    {
+      "BeatId": "019f096a-1536-760f-baa1-281fb7b49625",
+      "Number": 4847,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She moved her right hand off the table into her lap and closed it around nothing and held it there.",
+      "Note": "\u0027Closed it around nothing\u0027 is a slightly overworked gesture-for-grief image.",
+      "Fix": "Simplify to a plainer physical action."
     },
     {
       "BeatId": "019f096a-3318-7944-80f8-0c5177b61994",
@@ -153,8 +172,18 @@
       "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "the building took it in its molars and let it go",
-      "Note": "Anthropomorphized-building imagery (\u0027molars\u0027) is a strained personification that doesn\u0027t add precision \u2014 a stock \u0027the city is alive\u0027 move.",
-      "Fix": "Replace with a more mechanical, specific description of the Pulse tube sound."
+      "Note": "strained personification metaphor pushed for atmosphere; borderline purple but scans as intentional style \u2014 flag as minor risk of overreach",
+      "Fix": "cut \u0027in its molars\u0027 or ground the image more concretely"
+    },
+    {
+      "BeatId": "019f096a-3318-7944-80f8-0c5177b61994",
+      "Number": 4848,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "So she made your",
+      "Note": "beat cuts off mid-sentence before the actual crossing/alliance is sealed on the page \u2014 the purpose (picking a side, uneasy alliance forming) is asserted through setup but not yet completed in the excerpt",
+      "Fix": "n/a \u2014 likely a text truncation artifact, not a prose defect"
     },
     {
       "BeatId": "019f096a-4a8f-7136-b5d7-e0d7ceace8e7",
@@ -162,19 +191,9 @@
       "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "which is a worse word than dead",
-      "Note": "Aphoristic turn of phrase that asserts profundity without earning it through specific imagery \u2014 slightly editorializes rather than showing the horror.",
-      "Fix": "Cut the clause or replace with a concrete detail of what \u0027useful\u0027 entails for a Read on the rack."
-    },
-    {
-      "BeatId": "019f096a-4a8f-7136-b5d7-e0d7ceace8e7",
-      "Number": 4849,
-      "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "her tongue moved against the inside of her teeth, like she was checking whether the hum had ever fully left them",
-      "Note": "A finely-written but slightly overworked gesture-as-interiority beat; borders on a stock \u0027small physical tic reveals deep trauma\u0027 move.",
-      "Fix": "Trim to a single plain gesture without the simile explaining its meaning."
+      "Quote": "one door learned to be every door",
+      "Note": "clever-sounding phrase that doesn\u0027t quite hold literal weight \u2014 doors don\u0027t learn \u2014 reads as a reach for elegance over clarity",
+      "Fix": "tighten to something more procedural: \u0027the same door, built ten thousand times\u0027"
     },
     {
       "BeatId": "019f096a-80c3-790f-91c8-eb11db81a546",
@@ -182,19 +201,9 @@
       "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "because the day I opened it I\u0027d stop being a man with a useful past and become a man with a debt he couldn\u0027t pay twice",
-      "Note": "Neatly symmetrical aphorism-as-dialogue; sounds composed for thematic resonance rather than as something a person under pressure would say.",
-      "Fix": "Flatten the line into plainer, less rhetorically balanced speech."
-    },
-    {
-      "BeatId": "019f096a-80c3-790f-91c8-eb11db81a546",
-      "Number": 4851,
-      "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "The clean cuff came all the way undone then, the planner\u0027s economy giving over to the thing it had held back four years.",
-      "Note": "Repeats the \u0027clean cuff/discipline unraveling\u0027 metaphor from earlier in the same beat almost verbatim in structure, weakening it through redundancy.",
-      "Fix": "Cut this restatement since the cuff image was already used minutes earlier in the same scene."
+      "Quote": "which was its own ",
+      "Note": "beat cuts off mid-clause before completing the thought that would confirm the emotional beat landed \u2014 truncation, not necessarily a defect in the prose itself but leaves the payoff unconfirmed on the page",
+      "Fix": "n/a \u2014 likely truncation artifact"
     },
     {
       "BeatId": "019f096a-98e4-78b2-bef2-ae750268ad1c",
@@ -202,9 +211,9 @@
       "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the grip that never decides whether it\u0027s holding the rail up or being held up by it",
-      "Note": "this line actually appears in beat 12, but the parallel construction pattern of over-elaborated hand/object gestures recurs \u2014 flagging the general device here isn\u0027t applicable; no issue in beat 0 itself",
-      "Fix": "n/a"
+      "Quote": "Boiler had gone quiet the way he got quiet, which wasn\u0027t quiet at all",
+      "Note": "Circular, clever-sounding construction that tells rather than shows what the quiet actually signals.",
+      "Fix": "Cut the wordplay; describe the specific tell directly: \u0027Boiler didn\u0027t stop moving \u2014 he whistled under his breath, tuneless, thumbs working the calibration wheel.\u0027"
     },
     {
       "BeatId": "019f096a-98e4-78b2-bef2-ae750268ad1c",
@@ -212,19 +221,9 @@
       "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "a man listen to a building that wasn\u0027t in the room yet",
-      "Note": "borderline purple but mostly earns it via the mechanical detail preceding it; the phrase itself is slightly overreaching poetic abstraction for what is otherwise a grounded technical scene",
-      "Fix": "cut \u0027that wasn\u0027t in the room yet\u0027 or ground it more concretely"
-    },
-    {
-      "BeatId": "019f096a-b08c-75b3-928a-cd1a627b1ab6",
-      "Number": 4853,
-      "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "the kind they never turned off",
-      "Note": "mild stock phrasing for institutional lighting, low-impact but slightly rote",
-      "Fix": "specify what never turning them off costs or means instead of the generic aside"
+      "Quote": "Rook understood she was watching a man listen to a building that wasn\u0027t in the room yet.",
+      "Note": "Slightly overwritten narratorial summary that states the poetic point instead of trusting the preceding demonstration.",
+      "Fix": "Cut the sentence; the calibration business already conveys this."
     },
     {
       "BeatId": "019f096a-b08c-75b3-928a-cd1a627b1ab6",
@@ -232,19 +231,9 @@
       "Chapter": "Chapter 2 \u2014 The Mirror Crosses",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "she\u0027d argued herself into this back in the planning \u2014 the perimeter doesn\u0027t work on a building you go down into \u2014 and she\u0027d been right, and being right hadn\u0027t prepared her for how it felt",
-      "Note": "tells the emotional beat explicitly rather than trusting the preceding physical detail (uneven breath count) to carry it; slightly redundant explanation of the theme",
-      "Fix": "cut the \u0027being right hadn\u0027t prepared her\u0027 clause, let the breath-count stand alone"
-    },
-    {
-      "BeatId": "019f096a-c84e-7990-a5d0-8eabc3df7839",
-      "Number": 4854,
-      "Chapter": "Chapter 3 \u2014 The Run",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Helix is offering you the math",
-      "Note": "slightly on-the-nose thematic labeling, tips into telling the reader what kind of scene this is rather than trusting the numbers already stated",
-      "Fix": "cut the line, let the trade speak for itself"
+      "Quote": "the way the caster wheels had for years, and the building would log her if it bothered to look",
+      "Note": "Slightly redundant phrasing bloats a sentence already carrying the beat\u0027s key idea (presence vs. absence).",
+      "Fix": "Trim to \u0027making weight on the tread the way the caster wheels had for years.\u0027"
     },
     {
       "BeatId": "019f096a-c84e-7990-a5d0-8eabc3df7839",
@@ -252,39 +241,49 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "a hard click, like a breaker thrown",
-      "Note": "serviceable but a familiar mechanical-sound simile",
-      "Fix": "specify a more particular sound tied to Vox\u0027s actual gear"
+      "Quote": "a hole in your audit to stand up where you can see it",
+      "Note": "Serviceable line but leans on a slightly stock corporate-cyberpunk turn of phrase (\u0027hole in the audit\u0027) without enough specificity to feel fresh here.",
+      "Fix": "Sharpen with a concrete detail unique to Vox\u0027s ledger status rather than generic audit language."
+    },
+    {
+      "BeatId": "019f096a-c84e-7990-a5d0-8eabc3df7839",
+      "Number": 4854,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The woman and the channel, for the first time, the same thing in the same room.",
+      "Note": "Abstract summary restates the preceding action (proxy lines opening, her voice flooding them) rather than adding new information \u2014 mild telling after showing.",
+      "Fix": "Cut or fold into the preceding sentence as a single clause."
     },
     {
       "BeatId": "019f096a-de7b-712b-892f-2974fe7b467b",
       "Number": 4855,
       "Chapter": "Chapter 3 \u2014 The Run",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "Anneke held still, and that was how Rook knew she\u0027d landed it.",
-      "Note": "stock \u0027stillness as confirmation\u0027 beat, a familiar shorthand for a landed verbal blow",
-      "Fix": "specify a concrete physical tell instead of narrating the meta-conclusion"
-    },
-    {
-      "BeatId": "019f096a-de7b-712b-892f-2974fe7b467b",
-      "Number": 4855,
-      "Chapter": "Chapter 3 \u2014 The Run",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "the last fraction before the break",
-      "Note": "slightly generic tension-mechanics phrasing for the trigger-pull beat",
-      "Fix": "anchor to a more specific sensory or mechanical detail of the Reibo itself"
+      "Note": "Tells the reader the line landed instead of trusting the tablet-thumb beat that follows to demonstrate it \u2014 redundant with the next paragraph\u0027s physical detail.",
+      "Fix": "Cut this sentence; let the thumb-stopping detail carry the beat."
     },
     {
       "BeatId": "019f096a-f6b7-7065-9c65-875b2932e606",
       "Number": 4856,
       "Chapter": "Chapter 3 \u2014 The Run",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "his boots set wide, and lift",
-      "Note": "Generic action-hero staging language undercuts the otherwise specific tactile voice of the passage.",
-      "Fix": "Ground it further in Boiler\u0027s specific trade vocabulary rather than generic lifting-stance description."
+      "Quote": "he made himself the wall that lies \u2014 the wall that carries what it was never rated for and says nothing",
+      "Note": "The metaphor is doing thematic work but tips into aphorism-by-repetition; stating the wall lies and then re-explaining it undercuts the show.",
+      "Fix": "Cut the restatement clause and let \u0027the wall that lies\u0027 stand alone."
+    },
+    {
+      "BeatId": "019f096b-238d-7af5-a7a1-b4fc939968d0",
+      "Number": 4857,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "not counted, she told herself, and wrote it anyway",
+      "Note": "The line asserts an internal contradiction (not counted / wrote it anyway) as a resolution of the series motif, but the phrasing states the tension rather than dramatizing why the accounting logic changed \u2014 reads as a summary of theme rather than an earned beat.",
+      "Fix": "Show the decision-making beat (why Goldberg goes on a separate line despite mattering) rather than naming the paradox directly."
     },
     {
       "BeatId": "019f096b-238d-7af5-a7a1-b4fc939968d0",
@@ -292,19 +291,9 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the lake while it did the thing it always did, which was nothing",
-      "Note": "A whimsical-filler turn of phrase that undercuts the gravity of the scene rather than earning quiet.",
-      "Fix": "Cut the quip; let the stillness be described directly, e.g., \u0022looked at the lake, flat and unchanged.\u0022"
-    },
-    {
-      "BeatId": "019f096b-238d-7af5-a7a1-b4fc939968d0",
-      "Number": 4857,
-      "Chapter": "Chapter 3 \u2014 The Run",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "the gray of a city that had been raining for weeks and was thinking about stopping but hasn\u0027t decided",
-      "Note": "Personifying the weather/city with indecision is a soft pathetic-fallacy flourish that doesn\u0027t add specific meaning to Rook\u0027s reckoning.",
-      "Fix": "Trim to a plainer image: \u0022the gray of a city mid-rain, no end in sight.\u0022"
+      "Quote": "the gray of a city that had been raining for weeks and was thinking about stopping but hadn\u0027t decided",
+      "Note": "Personifying weather with indecision is a soft pathetic-fallacy filler that doesn\u0027t earn its cleverness given the scene\u0027s gravity.",
+      "Fix": "Cut the personification; describe the color/weather more plainly."
     }
   ]
 }

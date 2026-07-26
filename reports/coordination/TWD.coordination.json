@@ -1,0 +1,298 @@
+{
+  "nodeCode": "TWD",
+  "slug": "the-fall-down-019f78f4",
+  "title": "The Way Down",
+  "generatedAtUtc": "2026-07-25 23:04:36Z",
+  "totalBeats": 14,
+  "covered": 14,
+  "chapterGranular": false,
+  "storyScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "avalanche",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true
+  },
+  "flagCounts": {
+    "UNSCORED": 14
+  },
+  "beats": [
+    {
+      "BeatId": "019f78f5-60b2-75d3-9ca1-21363ce8283f",
+      "Number": 5476,
+      "Chapter": "Chapter 1 \u2014 Two Lives",
+      "ChapterIndex": 0,
+      "StructureRole": "Opening Image",
+      "Act": 1,
+      "Meaning": "POV: Reza (Rampart). Four years after the come-up. Reza Solano is corporate security lead for AshgraveMaterials, up-altitude \u2014 chromed, paid, living Coeli\u0027s bright loud tier, the wall institutionalized into a man who holds floors and does not ask what he holds them for. Halvard Onwe hands him a retainer: hold one floor of the Ashgrave Spire; there is an asset inside; don\u0027t ask what. Reza doesn\u0027t ask \u2014 that\u0027s the arrangement, and it\u0027s who he\u0027s become. Render the top of the come-up as comfortable and faintly hollow; the Hyper-Reality-saturated up-altitude texture (opposite of the Low\u0027s absence). Dual POV opens on Reza. He has not thought about Tavi in a long time.",
+      "Subtext": "Reza has everything Book 1 said he wanted, and doesn\u0027t look at the cost. The wall that holds without asking is the man Onwe made and the friend Tavi lost.",
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2057,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-6cd7-7ae6-a344-beb9fb93dc0c",
+      "Number": 5477,
+      "Chapter": "Chapter 1 \u2014 Two Lives",
+      "ChapterIndex": 0,
+      "StructureRole": "Theme Stated",
+      "Act": 1,
+      "Meaning": "POV: Tavi (Cutout). Tavi Jeong, freelance ghost, mid-altitude by choice, solo, expensive, precise \u2014 the operator who never leaves a trace, still carrying the original cheap twin Ankle-Biter. Alone is cleaner: the relief from The Come Up turned into a way of living. Auda Vane (who split the package in Book 1) brings a brief \u2014 extract a held courier from an up-altitude corporate site, no contact, no trace, a ghost job, Axiom money three cutouts deep though he can\u0027t see the source. He takes it, because a ghost works alone and this is a ghost\u0027s job. Render his precision and his solitude. He hasn\u0027t thought about Reza in a long time either.",
+      "Subtext": "The two openings mirror: both successful, both alone in different keys. Auda Vane is the hinge again \u2014 the market that keeps arranging their collisions.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1846,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-7701-7b91-92f1-9129c256b647",
+      "Number": 5478,
+      "Chapter": "Chapter 1 \u2014 Two Lives",
+      "ChapterIndex": 0,
+      "StructureRole": "Catalyst",
+      "Act": 1,
+      "Meaning": "POV: Tavi, then a cold pull-back. The trap the reader sees and the characters can\u0027t: Cutout hired to extract, Rampart hired to hold, the same site (Ashgrave Spire), the same asset. Introduce Rafi Sarkissian, the Package \u2014 a twenty-year-old Low-born courier who copied a slug Ashgrave wants buried and the Axiom-funded broker wants as leverage. Rafi is exactly where Reza and Tavi were four years ago: the Low kid coming up, doing what the come-up taught. Neither operator knows the other is on the job. End on the two of them moving toward the same door from opposite sides.",
+      "Subtext": "The Package is the mirror; Book 1\u0027s closing cycle (Scraps \u002B two new kids) made into a person. The trade that made them is about to make them enemies.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 3065,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-80f4-7c25-94b1-50837e9d5c77",
+      "Number": 5479,
+      "Chapter": "Chapter 2 \u2014 The Signatur",
+      "ChapterIndex": 1,
+      "StructureRole": "Fun and Games",
+      "Act": 2,
+      "Meaning": "POV: split \u2014 Tavi infiltrating / Reza defending. Professional competence at both ends. Tavi enters the Spire the ghost\u0027s way: up, unseen, killing the noise of the place ahead of him. Reza sets the perimeter the wall\u0027s way: mass in the one doorway that matters, the refusal to chase. Render both crafts at their peak, from both POVs, neither knowing the other is the opposition. Plant the FIRST signature tremor: Tavi feels the defense is wrong for a corp \u2014 held, not patrolled, too personal; Reza sees a system die in a way he\u0027s seen exactly once \u2014 removed from the conversation, no trace. Each files it and keeps working.",
+      "Subtext": "The reader recognizes both signatures from The Come Up (b10). The thing that made them a team is now aimed at each other.",
+      "EscalationTarget": "5",
+      "EventType": "confrontation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1930,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-8b4d-75a7-b46d-2471d38c7291",
+      "Number": 5480,
+      "Chapter": "Chapter 2 \u2014 The Signatur",
+      "ChapterIndex": 1,
+      "StructureRole": "Debate",
+      "Act": 2,
+      "Meaning": "POV: alternating. It can\u0027t be. Each keeps working and the signatures accumulate. Tavi: the wall in the doorway doesn\u0027t chase, holds a geometry he\u0027s watched a mop-handle drill produce; the mass is familiar in a way that raises the hair on his neck. Reza: the systems keep going dark clean, idents peeling in a sequence he could almost predict, a rhythm he knows from the inside. Denial as professional discipline \u2014 you don\u0027t stop mid-job to have a feeling. But the feeling won\u0027t file. Render the dread of near-recognition.",
+      "Subtext": "Reading each other\u0027s craft is indistinguishable from reading each other. Knowing someone\u0027s work that well is a kind of love and a targeting solution at once.",
+      "EscalationTarget": "5",
+      "EventType": "vigil",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1766,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-9575-74af-b16e-d10b6239df6e",
+      "Number": 5481,
+      "Chapter": "Chapter 2 \u2014 The Signatur",
+      "ChapterIndex": 1,
+      "StructureRole": "Break into Two",
+      "Act": 2,
+      "Meaning": "POV: dual, converging. Each knows, separately, that it\u0027s the other \u2014 the Heat moment: a comms fragment, a glimpsed silhouette, a single word on a channel, and the certainty lands in the body before the mind. Render the instant divided loyalty ignites: the contract on one side, the person who witnessed you become yourself on the other. Neither can un-know it. A brief, charged non-meeting (heard, not seen) or a first cold contact. The job is now the other, and both feel the floor tilt.",
+      "Subtext": "This is the anti-high-five: the gesture that said \u0027we are the same\u0027 inverted into \u0027you are the thing in my way.\u0027",
+      "EscalationTarget": "6",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 1620,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-9f8e-768f-a32a-850e8c6be090",
+      "Number": 5482,
+      "Chapter": "Chapter 2 \u2014 The Signatur",
+      "ChapterIndex": 1,
+      "StructureRole": "Midpoint",
+      "Act": 2,
+      "Meaning": "POV: Tavi. Tavi reaches Rafi, the Package. Rafi recognizes Cutout \u2014 grew up on the legend of Rampart and Cutout, the two who made it \u2014 and being extracted by his own myth is the worst and best thing. The mirror lands: Rafi is exactly who Tavi and Reza were four years ago, doing what the come-up taught. Tavi sees himself, and sees that the wall on the other side is defending the cage around a version of them. The Package humanizes the ambivalence \u2014 neither side wants Rafi for a clean reason. Tavi\u0027s job just became a moral problem he can\u0027t ghost past.",
+      "Subtext": "Book 1\u0027s closing cycle made flesh. The come-up eats its young; the two who came up are now on opposite sides of one of their own.",
+      "EscalationTarget": "6",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "subplot"
+      ],
+      "ProseLength": 3008,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-a993-7960-8a8c-a8f7baf14d03",
+      "Number": 5483,
+      "Chapter": "Chapter 3 \u2014 The Impossib",
+      "ChapterIndex": 2,
+      "StructureRole": "Bad Guys Close In",
+      "Act": 2,
+      "Meaning": "POV: dual. Each tries to complete the job without destroying the other. Tavi routes the extraction to avoid Reza\u0027s floor; Reza thickens every perimeter except the one he knows Tavi will take, telling himself it\u0027s tactics. It doesn\u0027t work \u2014 the job IS the other; one door, one wall, one ghost, and the geometry has a single solution. The near-misses tighten. Render the agony of two people each trying to spare the other while the contract, the money, their names, and the Package force them together.",
+      "Subtext": "They cannot finish the job without finishing each other. The trade that made them will not let them both win.",
+      "EscalationTarget": "7",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2074,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-b3e4-73bb-a958-1303b392edad",
+      "Number": 5484,
+      "Chapter": "Chapter 3 \u2014 The Impossib",
+      "ChapterIndex": 2,
+      "StructureRole": "All Is Lost",
+      "Act": 3,
+      "Meaning": "POV: dual. The collision, direct and brutal and body-true \u2014 the JOY engine turned hot. The wall and the ghost, finally against each other, in the one place the geometry forced them. They know each other\u0027s craft too well to be surprised, which is its own horror: every move read, every counter anticipated, because each fights the person who taught him what the other is. The twins: Tavi\u0027s cheap old Ankle-Biter against Reza\u0027s upgraded corporate hardware \u2014 the past against the future, drawn on each other. Real wounds, real cost, no cartoon. Neither can quite finish it \u2014 not from sentiment, but because they are too evenly matched and too well-known. Reload discipline: they reload; ammo runs out; the fight is physical and total.",
+      "Subtext": "The ultraviolence is the intimacy inverted. The high-five was two palms meeting; this is two crafts colliding.",
+      "EscalationTarget": "8",
+      "EventType": "ambush",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3444,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-bdfd-7bef-8f48-97d07f727be4",
+      "Number": 5485,
+      "Chapter": "Chapter 3 \u2014 The Impossib",
+      "ChapterIndex": 2,
+      "StructureRole": "Dark Night of the Soul",
+      "Act": 3,
+      "Meaning": "POV: dual. The divided-loyalty choice, costed. At the decisive instant each chooses the bond over the contract: Reza doesn\u0027t hold the door \u2014 lets the ghost through \u2014 betraying Onwe and Ashgrave; Tavi doesn\u0027t spend Reza or Rafi to close the extraction. Render it NOT as reconciliation (they\u0027re still enemies, still hurt) but as the two of them each refusing, in the same breath, to be the thing the trade needs them to be. The choice is the hinge and the cost engine: it burns them both.",
+      "Subtext": "They can\u0027t be friends and can\u0027t be the perfect enemies the job requires. All that\u0027s left is to each pay for the other, once, and never speak of it.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 1781,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-c82d-791e-bf79-9fd9214bd581",
+      "Number": 5486,
+      "Chapter": "Chapter 4 \u2014 The Fall",
+      "ChapterIndex": 3,
+      "StructureRole": "Bad Guys Close In",
+      "Act": 3,
+      "Meaning": "POV: Rafi / dual. In the gap the collision opened, Rafi walks \u2014 runs during the chaos, or is let go, or the copied slug goes public and makes him worthless to hold. Neither corp wins clean: Ashgrave loses the asset, the Axiom-funded broker loses the leverage, the slug is loose or spent. The Package resolves externally \u2014 a Low kid slips the powers the way Reza and Tavi once slipped a debtor\u0027s crew. Render Rafi\u0027s exit as the cycle turning again \u2014 up and out, or gone \u2014 ambivalent and un-clean.",
+      "Subtext": "What both operators paid for isn\u0027t a win for anyone. The come-up\u0027s newest kid escapes the machine that made and would have spent him.",
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2079,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-d2d2-70b0-9b52-07072db40883",
+      "Number": 5487,
+      "Chapter": "Chapter 4 \u2014 The Fall",
+      "ChapterIndex": 3,
+      "StructureRole": "All Is Lost",
+      "Act": 3,
+      "Meaning": "POV: dual. The cost lands. Reza comes down \u2014 Onwe burns him (a wall that lets the door go is worth nothing; the retainer gone, the up-altitude standing with it, Coeli\u0027s world tilting) and he falls toward the altitude he climbed out of. Tavi\u0027s unbreakable-ghost reputation is dented for the first time \u2014 he didn\u0027t deliver, the only sin in the trade. Both burned. Render the fall body-true and specific: what it cost each to have chosen the other. \u0027Alone is cleaner\u0027 and \u0027more, always\u0027 both proven lies in one stroke.",
+      "Subtext": "The bond Book 1 said they outgrew still costs them everything. The diptych\u0027s cruel symmetry: the come-up and the fall down.",
+      "EscalationTarget": "8",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2826,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-dd3a-7a04-89d8-a52d460d2974",
+      "Number": 5488,
+      "Chapter": "Chapter 4 \u2014 The Fall",
+      "ChapterIndex": 3,
+      "StructureRole": "Finale",
+      "Act": 3,
+      "Meaning": "POV: Tavi. Not reconciliation, not a kill \u2014 recognition. They meet once, after, at the standing-room coffee counter at the edge of the Bloom Quarter \u2014 the same place they parted in The Come Up\u0027s finale. The Heat coffee scene inverted by the diptych: two men who know each other completely, permanently on opposite sides, both burned. The anti-high-five \u2014 the gesture accounted for and not offered, or offered and refused. The twins accounted for (Tavi still has his; Reza\u0027s is gone or was drawn on him). Cordial is gone; what\u0027s left is the terrible clarity that they are the only two who truly know each other and can never be on the same side again.",
+      "Subtext": "The Come Up\u0027s last high-five landed right as they parted; here the parting has teeth. The bond is a wound that still costs.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2670,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f78f5-e77e-7d6b-a140-c419c7d3d173",
+      "Number": 5489,
+      "Chapter": "Chapter 4 \u2014 The Fall",
+      "ChapterIndex": 3,
+      "StructureRole": "Final Image",
+      "Act": 3,
+      "Meaning": "POV: Tavi. They part as opposite numbers \u2014 permanently opposed, permanently bound by knowing. No epilogue. Render the scorched bookend to The Come Up\u0027s quiet elegy: Book 1 ended with Tavi walking to his next quiet job, more himself; Book 2 ends with each walking to a diminished life, still armed, still the only witness the other has. A final image that rhymes with and darkens the first book\u0027s \u2014 Tavi passing a Low booth where a fixer hands a slip to two new kids, and this time it doesn\u0027t read as a gentle cycle but as a warning. The come-up made them; the trade unmade the thing between them; what\u0027s left is craft and a wound. Book 3 hook: both burned, and the powers that ground them together will pull them again.",
+      "Subtext": "The diptych\u0027s thesis: the trade that lets you become yourself will also, if you let it, make you the perfect enemy of the person who watched you do it.",
+      "EscalationTarget": "5",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1826,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    }
+  ]
+}

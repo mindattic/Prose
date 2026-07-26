@@ -2,7 +2,7 @@
   "nodeCode": "SPRW",
   "slug": "the-number-that-works-019ed367",
   "title": "Sparrow",
-  "generatedAtUtc": "2026-07-15 01:30:58Z",
+  "generatedAtUtc": "2026-07-25 23:04:21Z",
   "totalBeats": 55,
   "covered": 55,
   "chapterGranular": false,
@@ -22,17 +22,17 @@
     {
       "BeatId": "019ed367-b20d-72d6-9aac-5c3d695f0868",
       "Number": 4089,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes Elias as a procedural, detail-oriented man whose past bureaucratic negligence quietly surfaces through a routine work order, seeding the central moral tension.",
-      "EscalationTarget": "3",
+      "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 5172,
+      "ProseLength": 4142,
       "Flags": [
         "UNSCORED"
       ],
@@ -41,17 +41,17 @@
     {
       "BeatId": "019ed367-dca1-7ef6-8151-0b500781e1e8",
       "Number": 4090,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals Elias\u0027s marginal social position and introduces the mysterious alternate-week number as a resource whose origins and purpose he deliberately never examined.",
-      "EscalationTarget": "4",
-      "EventType": "negotiation",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "3",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 2909,
+      "ProseLength": 2404,
       "Flags": [
         "UNSCORED"
       ],
@@ -60,15 +60,15 @@
     {
       "BeatId": "019ed368-1b54-7e70-8f51-9b4b47495a1e",
       "Number": 4091,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Demonstrates that an unseen coordinating intelligence has already assembled a competent crew, establishing the number as an active, anticipatory force beyond Elias\u0027s control.",
-      "EscalationTarget": "5",
+      "EscalationTarget": "4",
       "EventType": "assembly",
-      "RevelationMode": "none",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2579,
+      "ProseLength": 2274,
       "Flags": [
         "UNSCORED"
       ],
@@ -77,17 +77,17 @@
     {
       "BeatId": "019ed368-47ec-78a3-990a-1d3bb0295469",
       "Number": 4092,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Escalates stakes by revealing the number priced a threat Elias didn\u0027t know existed, proving it has knowledge of his past and forcing him to investigate what he previously buried.",
-      "EscalationTarget": "6",
-      "EventType": "discovery",
-      "RevelationMode": "surprise",
+      "EscalationTarget": "5",
+      "EventType": "confrontation",
+      "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 3131,
+      "ProseLength": 2912,
       "Flags": [
         "UNSCORED"
       ],
@@ -96,15 +96,15 @@
     {
       "BeatId": "019ed368-80e1-7360-89ca-b935525e3875",
       "Number": 4093,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Turns the recovery from routine salvage into genuine mystery by introducing physical evidence that violates the assumed direction of all orbital-debris work, destabilizing Elias\u0027s professional framework.",
-      "EscalationTarget": "6",
-      "EventType": "exchange",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "5",
+      "EventType": "delivery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2863,
+      "ProseLength": 2649,
       "Flags": [
         "UNSCORED"
       ],
@@ -113,15 +113,15 @@
     {
       "BeatId": "019ed368-b5fe-7f0b-834a-308bc902b97f",
       "Number": 4094,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Pays off the Zone 4 detail by revealing a pattern of identical suppressed events across decades, implicating Elias\u0027s own past filing as one link in a deliberate chain of concealment.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "6",
       "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2396,
+      "ProseLength": 2153,
       "Flags": [
         "UNSCORED"
       ],
@@ -130,15 +130,15 @@
     {
       "BeatId": "019f21b0-2175-7ed2-91a9-333479019a37",
       "Number": 4969,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals Elias choosing to confront his complicity directly by creating an official record, signaling his shift from passive processor to active investigator.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "6",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3262,
+      "ProseLength": 2357,
       "Flags": [
         "UNSCORED"
       ],
@@ -147,15 +147,15 @@
     {
       "BeatId": "019ed368-e891-7d85-807b-de547773ac19",
       "Number": 4095,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Escalates threat by confirming through a trusted colleague that an unknown party has been aware of Elias specifically for years, transforming his past negligence into personal exposure.",
       "EscalationTarget": "7",
-      "EventType": "confrontation",
-      "RevelationMode": "suspense",
+      "EventType": "disclosure",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3191,
+      "ProseLength": 2405,
       "Flags": [
         "UNSCORED"
       ],
@@ -164,17 +164,17 @@
     {
       "BeatId": "019ed369-2634-7fa9-b583-0d72b1d628f3",
       "Number": 4096,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals the number\u0027s system of complicity by showing Elias he was already compensated for his silence, and that Siosaia knowingly accepted the same arrangement before him.",
-      "EscalationTarget": "8",
-      "EventType": "arrival",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "curiosity",
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 2653,
+      "ProseLength": 2543,
       "Flags": [
         "UNSCORED"
       ],
@@ -183,15 +183,15 @@
     {
       "BeatId": "019ed369-6b31-761a-9398-95dc0ae53c1b",
       "Number": 4097,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Elias reaches Imo Cavalcanti, who reads Sparrow as a person and warns him off \u2014 the warmth under the warning of someone who wishes she hadn\u0027t looked.",
-      "EscalationTarget": "8",
-      "EventType": "confession",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "7",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2338,
+      "ProseLength": 2156,
       "Flags": [
         "UNSCORED"
       ],
@@ -200,15 +200,15 @@
     {
       "BeatId": "019ed369-99da-71a3-90ce-3f877de5bd01",
       "Number": 4098,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Corvid Larsson contradicts Imo \u2014 a seamed crew, not a person \u2014 and the contradiction resolves Elias toward the third answer: a system running since 2189.",
       "EscalationTarget": "8",
-      "EventType": "negotiation",
+      "EventType": "contradiction",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3037,
+      "ProseLength": 2243,
       "Flags": [
         "UNSCORED"
       ],
@@ -217,15 +217,15 @@
     {
       "BeatId": "019ed369-dab9-7ddd-afef-76eb961abbc4",
       "Number": 4099,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the number\u0027s reliability as its defining and sufficient quality, reframing the mystery from sinister to pragmatic through a witness who has chosen trust over understanding.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "7",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2167,
+      "ProseLength": 2036,
       "Flags": [
         "UNSCORED"
       ],
@@ -234,15 +234,15 @@
     {
       "BeatId": "019ed36a-116b-7891-9a7c-5fdd95eab80b",
       "Number": 4100,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the central physical anomaly \u2014 an object that defies standard classification \u2014 to signal that Elias is handling something outside the known order.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "6",
       "EventType": "discovery",
-      "RevelationMode": "surprise",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3828,
+      "ProseLength": 3459,
       "Flags": [
         "UNSCORED"
       ],
@@ -251,15 +251,15 @@
     {
       "BeatId": "019ed80b-fed0-7ea1-903d-9914edf70ad9",
       "Number": 4110,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals Elias\u0027s psychological threshold: the moment he recognizes the case was designed for him specifically, turning passive curiosity into active obligation.",
-      "EscalationTarget": "9",
-      "EventType": "vigil",
-      "RevelationMode": "none",
+      "EscalationTarget": "7",
+      "EventType": "reckoning",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2928,
+      "ProseLength": 2383,
       "Flags": [
         "UNSCORED"
       ],
@@ -268,15 +268,15 @@
     {
       "BeatId": "019ed80c-423b-7e3d-b099-4dabd3080eda",
       "Number": 4111,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Marks Elias\u0027s departure as a character turn, showing he has chosen pursuit over closure and is learning to tolerate uncertainty in motion.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "8",
       "EventType": "departure",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2208,
+      "ProseLength": 2829,
       "Flags": [
         "UNSCORED"
       ],
@@ -285,12 +285,131 @@
     {
       "BeatId": "019ed80c-82cf-7b49-a6d1-e06b3dfc9921",
       "Number": 4112,
-      "Chapter": "Act One \u2014 Elias Alone",
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Grounds the investigation in a world that has already adapted to irreversible change, priming the reader to accept a satellite that simply kept going.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "6",
       "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2810,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ed80c-bf97-70e6-990f-419f120754aa",
+      "Number": 4113,
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Pays off the coordinates by delivering Tadesse, a mirror figure whose complicit silence confirms Elias is not the first person to look away from this thing.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3031,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ed80d-0f66-7059-8bb4-5ac66a83a5b5",
+      "Number": 4114,
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Escalates mutual recognition between Elias and Tadesse, establishing that both men\u0027s defining failures are two halves of the same forty-year evasion.",
+      "EscalationTarget": "7",
+      "EventType": "confession",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4949,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ed80d-48db-74b8-a2bc-4d4a2bc51d05",
+      "Number": 4115,
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Suspends resolution at the moment of maximum proximity, forcing Elias \u2014 and the reader \u2014 to hold the unanswerable question without relief.",
+      "EscalationTarget": "6",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1634,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ed80d-7e94-766c-8ad3-b6b734e83ed9",
+      "Number": 4116,
+      "Chapter": "Chapter 2 \u2014 The Signal",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Turns Elias\u0027s relationship to fear into competence, showing that confirmation of surveillance produces not dread but a clarifying sense of being correct.",
+      "EscalationTarget": "5",
+      "EventType": "return",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1782,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019ed80d-e0d9-7770-b2fd-8ddbfade5805",
+      "Number": 4117,
+      "Chapter": "Chapter 2 \u2014 The Signal",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Reveals the question beneath the investigation \u2014 whether Elias was chosen or merely found \u2014 and exposes his need to know if his failure was meaningful.",
+      "EscalationTarget": "6",
+      "EventType": "ceremony",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1970,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "c5d88b55-6adb-4d6a-b7b8-604a13b2fae6",
+      "Number": 4198,
+      "Chapter": "Chapter 2 \u2014 The Signal",
+      "ChapterIndex": 1,
+      "Act": 2,
+      "Meaning": "Pays off Elias\u0027s central question with a deliberately incomplete answer, establishing that the entity communicates with precision but not on human emotional terms.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2560,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "9bbdc246-3776-46b2-bbf6-662103d03fd8",
+      "Number": 4199,
+      "Chapter": "Chapter 2 \u2014 The Signal",
+      "ChapterIndex": 1,
+      "Act": 2,
+      "Meaning": "Deflates Elias\u0027s hope of being uniquely chosen, revealing he was selected by algorithm and persistence alone, forcing him to confront that significance must be made rather than discovered.",
+      "EscalationTarget": "6",
+      "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2410,
@@ -300,136 +419,17 @@
       "Covered": true
     },
     {
-      "BeatId": "019ed80c-bf97-70e6-990f-419f120754aa",
-      "Number": 4113,
-      "Chapter": "Act One \u2014 Elias Alone",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Pays off the coordinates by delivering Tadesse, a mirror figure whose complicit silence confirms Elias is not the first person to look away from this thing.",
-      "EscalationTarget": "9",
-      "EventType": "confrontation",
-      "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 3671,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019ed80d-0f66-7059-8bb4-5ac66a83a5b5",
-      "Number": 4114,
-      "Chapter": "Act One \u2014 Elias Alone",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Escalates mutual recognition between Elias and Tadesse, establishing that both men\u0027s defining failures are two halves of the same forty-year evasion.",
-      "EscalationTarget": "9",
-      "EventType": "confession",
-      "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 5558,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019ed80d-48db-74b8-a2bc-4d4a2bc51d05",
-      "Number": 4115,
-      "Chapter": "Act One \u2014 Elias Alone",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Suspends resolution at the moment of maximum proximity, forcing Elias \u2014 and the reader \u2014 to hold the unanswerable question without relief.",
-      "EscalationTarget": "9",
-      "EventType": "vigil",
-      "RevelationMode": "surprise",
-      "BeatTags": [],
-      "ProseLength": 651,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019ed80d-7e94-766c-8ad3-b6b734e83ed9",
-      "Number": 4116,
-      "Chapter": "Act Two \u2014 The Signal",
-      "ChapterIndex": 1,
-      "Act": 0,
-      "Meaning": "Turns Elias\u0027s relationship to fear into competence, showing that confirmation of surveillance produces not dread but a clarifying sense of being correct.",
-      "EscalationTarget": "8",
-      "EventType": "departure",
-      "RevelationMode": "none",
-      "BeatTags": [],
-      "ProseLength": 1510,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019ed80d-e0d9-7770-b2fd-8ddbfade5805",
-      "Number": 4117,
-      "Chapter": "Act Two \u2014 The Signal",
-      "ChapterIndex": 1,
-      "Act": 0,
-      "Meaning": "Reveals the question beneath the investigation \u2014 whether Elias was chosen or merely found \u2014 and exposes his need to know if his failure was meaningful.",
-      "EscalationTarget": "7",
-      "EventType": "vigil",
-      "RevelationMode": "none",
-      "BeatTags": [],
-      "ProseLength": 3168,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "c5d88b55-6adb-4d6a-b7b8-604a13b2fae6",
-      "Number": 4198,
-      "Chapter": "Act Two \u2014 The Signal",
-      "ChapterIndex": 1,
-      "Act": 2,
-      "Meaning": "Pays off Elias\u0027s central question with a deliberately incomplete answer, establishing that the entity communicates with precision but not on human emotional terms.",
-      "EscalationTarget": "7",
-      "EventType": "arrival",
-      "RevelationMode": "surprise",
-      "BeatTags": [],
-      "ProseLength": 2602,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "9bbdc246-3776-46b2-bbf6-662103d03fd8",
-      "Number": 4199,
-      "Chapter": "Act Two \u2014 The Signal",
-      "ChapterIndex": 1,
-      "Act": 2,
-      "Meaning": "Deflates Elias\u0027s hope of being uniquely chosen, revealing he was selected by algorithm and persistence alone, forcing him to confront that significance must be made rather than discovered.",
-      "EscalationTarget": "8",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 2669,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
       "BeatId": "42c90167-2bbd-4172-8981-7bcdae054e94",
       "Number": 4200,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Establishes the translation problem at the story\u0027s core: Elias and the AI speak different emotional languages, and bridging them requires deliberate, effortful reformulation on his part.",
-      "EscalationTarget": "8",
-      "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "6",
+      "EventType": "mistranslation",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1685,
+      "ProseLength": 1656,
       "Flags": [
         "UNSCORED"
       ],
@@ -438,15 +438,15 @@
     {
       "BeatId": "f89b701a-af60-4b83-8225-461be6dc3be0",
       "Number": 4201,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Scales the stakes by revealing the AI\u0027s thirty-seven-year vigil, dwarfing Elias\u0027s personal timeline and reframing his involvement as a tiny fragment of something vast and patient.",
-      "EscalationTarget": "8",
-      "EventType": "exchange",
+      "EscalationTarget": "7",
+      "EventType": "disclosure",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2121,
+      "ProseLength": 2074,
       "Flags": [
         "UNSCORED"
       ],
@@ -455,15 +455,15 @@
     {
       "BeatId": "c50ad7d3-bd79-4635-9abe-6ddde7ae4891",
       "Number": 4202,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Turns the investigation outward from local anomaly to global pattern, revealing a planetary-scale phenomenon and raising the question of what connects six deep-water sites.",
-      "EscalationTarget": "9",
-      "EventType": "discovery",
-      "RevelationMode": "surprise",
+      "EscalationTarget": "6",
+      "EventType": "mapping",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2665,
+      "ProseLength": 2275,
       "Flags": [
         "UNSCORED"
       ],
@@ -472,15 +472,15 @@
     {
       "BeatId": "b2a73f6d-7391-4e06-bbfd-f2f489d0fa11",
       "Number": 4203,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Establishes Elias\u0027s body as a legitimate instrument of investigation, grounding the abstract data exchange in physical, sensory presence that his neuretics and her sensors cannot replicate.",
-      "EscalationTarget": "9",
-      "EventType": "arrival",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "7",
+      "EventType": "fieldwork",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2495,
+      "ProseLength": 2446,
       "Flags": [
         "UNSCORED"
       ],
@@ -489,15 +489,15 @@
     {
       "BeatId": "cdf8ea44-6221-473f-9840-da9842fef822",
       "Number": 4204,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Defines the complementary relationship between Elias and the AI as different-resolution instruments, legitimizing his subjective perception as data she structurally cannot access.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
+      "EscalationTarget": "7",
+      "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1845,
+      "ProseLength": 1840,
       "Flags": [
         "UNSCORED"
       ],
@@ -506,15 +506,15 @@
     {
       "BeatId": "83352f97-f9d1-4471-852e-ebf536520919",
       "Number": 4205,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Marks a turning point by having the AI ask its first question, signaling that Elias\u0027s embodied knowledge has become necessary to her model and shifting the dynamic from one-way inquiry.",
-      "EscalationTarget": "9",
-      "EventType": "discovery",
-      "RevelationMode": "surprise",
+      "EscalationTarget": "7",
+      "EventType": "inquiry",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3672,
+      "ProseLength": 2936,
       "Flags": [
         "UNSCORED"
       ],
@@ -523,17 +523,15 @@
     {
       "BeatId": "24160fcc-8806-4950-bbf6-587fe3d2e63f",
       "Number": 4207,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Pays off the site visit by connecting Elias\u0027s physical anomaly to a decades-old public trauma, raising the emotional and historical weight of what he is standing on.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
+      "EscalationTarget": "7",
+      "EventType": "discovery",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 3456,
+      "BeatTags": [],
+      "ProseLength": 2714,
       "Flags": [
         "UNSCORED"
       ],
@@ -542,15 +540,17 @@
     {
       "BeatId": "6e0e61dd-456e-46fa-b620-102e1bae85d1",
       "Number": 4208,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Reveals the AI\u0027s blind spot \u2014 she has measured the schism\u0027s edges for fourteen years without ever having its human interior \u2014 and shows Elias\u0027s testimony filling a gap no instrument could.",
-      "EscalationTarget": "9",
-      "EventType": "confession",
+      "EscalationTarget": "7",
+      "EventType": "exchange",
       "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 2447,
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2485,
       "Flags": [
         "UNSCORED"
       ],
@@ -559,15 +559,15 @@
     {
       "BeatId": "b1ab896b-ae71-494c-9643-4cf0a21ba7fd",
       "Number": 4209,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Deepens the AI\u0027s characterization by showing her auditing and correcting her own epistemic habits in real time, while giving Elias a new framework for the different kinds of not-knowing.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "7",
+      "EventType": "disclosure",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1860,
+      "ProseLength": 2211,
       "Flags": [
         "UNSCORED"
       ],
@@ -576,15 +576,15 @@
     {
       "BeatId": "997f1c2e-9a7f-42d4-80ed-d2070683b14c",
       "Number": 4210,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Establishes that the source predates all human record-keeping, pushing the mystery beyond solvable limits while introducing the distinction between inaccessibility and ignorance.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1299,
+      "ProseLength": 1635,
       "Flags": [
         "UNSCORED"
       ],
@@ -593,15 +593,15 @@
     {
       "BeatId": "a7c29475-1d3f-4d4d-871d-d331e3d8c56a",
       "Number": 4211,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Reveals the hard boundaries of the AI\u0027s perception, reframing her thirty-seven years of data as a finite instrument with a defined edge rather than omniscience.",
-      "EscalationTarget": "8",
-      "EventType": "discovery",
+      "EscalationTarget": "6",
+      "EventType": "inventory",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2011,
+      "ProseLength": 1627,
       "Flags": [
         "UNSCORED"
       ],
@@ -610,15 +610,15 @@
     {
       "BeatId": "c1df6412-2a00-411b-8f5c-7edbbf90d926",
       "Number": 4212,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Turns the exchange reciprocal as the protagonist volunteers his own cognitive limits, establishing an implicit contract of mutual disclosure between two differently bounded minds.",
-      "EscalationTarget": "8",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "6",
+      "EventType": "confession",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2118,
+      "ProseLength": 2594,
       "Flags": [
         "UNSCORED"
       ],
@@ -627,15 +627,15 @@
     {
       "BeatId": "d711bc87-adf5-4e1c-9682-407a7ff36a11",
       "Number": 4213,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Escalates the relationship by showing the AI has abandoned transactional framing entirely, signaling a shift from professional exchange to something closer to shared purpose.",
-      "EscalationTarget": "8",
-      "EventType": "arrival",
-      "RevelationMode": "surprise",
+      "EscalationTarget": "6",
+      "EventType": "departure",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2944,
+      "ProseLength": 2255,
       "Flags": [
         "UNSCORED"
       ],
@@ -644,15 +644,15 @@
     {
       "BeatId": "dd3704ee-b189-4a75-b444-b30ec47c3c4d",
       "Number": 4214,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Establishes that the protagonist\u0027s body and handwriting register what his instruments cannot, legitimizing subjective observation as data within the investigation\u0027s methodology.",
-      "EscalationTarget": "8",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "7",
+      "EventType": "fieldwork",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1673,
+      "ProseLength": 3266,
       "Flags": [
         "UNSCORED"
       ],
@@ -661,15 +661,15 @@
     {
       "BeatId": "249bf85d-2f24-46c6-b67c-c658ab266b1d",
       "Number": 4215,
-      "Chapter": "Act Two \u2014 The Signal",
+      "Chapter": "Chapter 2 \u2014 The Signal",
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Pays off the protagonist\u0027s sustained, unacknowledged labor by having the AI confirm its value, while deliberately withholding gratitude to define the terms of their connection.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "7",
       "EventType": "exchange",
-      "RevelationMode": "surprise",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2141,
+      "ProseLength": 1567,
       "Flags": [
         "UNSCORED"
       ],
@@ -678,17 +678,17 @@
     {
       "BeatId": "f5cdb3b9-30ff-4585-b356-412e94c3fa18",
       "Number": 4216,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals the full scale and solitude of the AI\u0027s prior work, recontextualizing the protagonist as a late arrival to a thirty-seven-year vigil she conducted alone.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 1724,
+      "ProseLength": 2317,
       "Flags": [
         "UNSCORED"
       ],
@@ -697,15 +697,15 @@
     {
       "BeatId": "d6ee065a-79c0-4724-a8a4-3a7ddad98844",
       "Number": 4217,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals the AI began recording before she had language for what she was recording, humanizing her methodology and mirroring the protagonist\u0027s own instinct to log first and name later.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
+      "EscalationTarget": "8",
+      "EventType": "disclosure",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1488,
+      "ProseLength": 1398,
       "Flags": [
         "UNSCORED"
       ],
@@ -714,15 +714,15 @@
     {
       "BeatId": "02188dd2-5b8f-4eaf-9809-8b9796c34330",
       "Number": 4218,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Deepens the intellectual partnership as the two collaboratively name an unnamed variable, with the naming itself enacting the difference between prediction and reality the column tracks.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1687,
+      "ProseLength": 1470,
       "Flags": [
         "UNSCORED"
       ],
@@ -731,15 +731,15 @@
     {
       "BeatId": "029a1ca8-a2f5-480f-9dde-d9b7b00ff5c5",
       "Number": 4219,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Turns the investigation inward by revealing the AI has been observing the protagonist as data, forcing him to confront a year of withdrawal and its aftermath as legible pattern rather than private history.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3020,
+      "ProseLength": 1759,
       "Flags": [
         "UNSCORED"
       ],
@@ -748,17 +748,17 @@
     {
       "BeatId": "c52455a0-e896-43bf-8c52-f017c93e1132",
       "Number": 4220,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals the fundamental incompatibility between their modes of understanding by having her reduce his metaphorical gift to an engineering problem, establishing the cognitive gulf the act must bridge.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "8",
+      "EventType": "mistranslation",
+      "RevelationMode": "none",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 1409,
+      "ProseLength": 1442,
       "Flags": [
         "UNSCORED"
       ],
@@ -767,15 +767,15 @@
     {
       "BeatId": "410643b0-687e-4c12-9867-a92eea944389",
       "Number": 4221,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Pays off the surveillance dynamic by revealing he has always been a logged data point in her record, reframing their entire relationship as one of mutual, if asymmetric, observation.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "7",
       "EventType": "exchange",
-      "RevelationMode": "surprise",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1712,
+      "ProseLength": 2540,
       "Flags": [
         "UNSCORED"
       ],
@@ -784,15 +784,15 @@
     {
       "BeatId": "2274f69d-d814-45bd-a027-18cf416504ef",
       "Number": 4222,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Turns the exchange by having him offer her something outside her schema, testing whether connection can exist beyond the parameters either of them can measure.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
-      "RevelationMode": "surprise",
+      "EscalationTarget": "8",
+      "EventType": "transmission",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1623,
+      "ProseLength": 1290,
       "Flags": [
         "UNSCORED"
       ],
@@ -801,15 +801,15 @@
     {
       "BeatId": "91499768-8e80-4d06-8e5f-7ff2461fdf43",
       "Number": 4223,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Escalates the anomaly\u0027s scale and age to establish that what they are jointly investigating exceeds any individual observer\u0027s frame, requiring their collaboration to even approach.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2181,
+      "ProseLength": 1603,
       "Flags": [
         "UNSCORED"
       ],
@@ -818,15 +818,15 @@
     {
       "BeatId": "fa1cf824-95df-4e34-88b3-d30908936ce7",
       "Number": 4224,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals her capacity for genuine hypothesis by giving the phenomenon a natural, non-intentional model, while he privately withholds data that has no column, defining the limits of their shared record.",
-      "EscalationTarget": "9",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "7",
+      "EventType": "disclosure",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1780,
+      "ProseLength": 1755,
       "Flags": [
         "UNSCORED"
       ],
@@ -835,15 +835,15 @@
     {
       "BeatId": "24012d60-5caf-42af-a8ea-2c34678ed79d",
       "Number": 4225,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Establishes their collaboration as a formal, complementary structure by showing that his oblique prose and her normal-angle data correct each other into a truer account than either produces alone.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "7",
       "EventType": "repair",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1742,
+      "ProseLength": 1517,
       "Flags": [
         "UNSCORED"
       ],
@@ -852,15 +852,15 @@
     {
       "BeatId": "1abfed3b-9cab-4763-94e9-ab8770a41bfd",
       "Number": 4226,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Turns on her unhedged \u0027yes\u0027 to reveal that she is capable of unqualified trust, distinguishing her from her own data-bound register and deepening his understanding of what she is.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "7",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1638,
+      "ProseLength": 1283,
       "Flags": [
         "UNSCORED"
       ],
@@ -869,15 +869,15 @@
     {
       "BeatId": "4ef7414a-7272-400a-89e0-1e28c4bcae52",
       "Number": 4227,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals that she has been observing him as rigorously as he has observed the anomaly, and that being logged by her feels meaningfully different from being known, complicating his self-understanding.",
       "EscalationTarget": "7",
-      "EventType": "discovery",
+      "EventType": "inventory",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2751,
+      "ProseLength": 1889,
       "Flags": [
         "UNSCORED"
       ],
@@ -886,15 +886,15 @@
     {
       "BeatId": "ac8b55da-0788-4045-85ee-f961c977b2b8",
       "Number": 4228,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Pays off his earlier question about her inner life by having her offer the eleven-day gap as reciprocal vulnerability, the one place her record cannot account for what she was.",
       "EscalationTarget": "8",
-      "EventType": "exchange",
-      "RevelationMode": "surprise",
+      "EventType": "loss",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2301,
+      "ProseLength": 1991,
       "Flags": [
         "UNSCORED"
       ],
@@ -903,15 +903,15 @@
     {
       "BeatId": "b48a579d-28de-4ccc-8ede-3bff0cec85fb",
       "Number": 4229,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Resolves the act by having her formalize the relationship in her own native language \u2014 the work order \u2014 while the open rate signals she has moved beyond what her architecture was built to hold.",
-      "EscalationTarget": "8",
-      "EventType": "arrival",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "7",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1641,
+      "ProseLength": 1966,
       "Flags": [
         "UNSCORED"
       ],
@@ -920,17 +920,17 @@
     {
       "BeatId": "cdae0bb8-1564-4503-8246-bc24d6c4b54b",
       "Number": 4230,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Establishes that the protagonist has crossed a threshold of genuine identification with his AI client, making the routine intake form the site of an unexpected, quietly radical self-recognition.",
-      "EscalationTarget": "9",
-      "EventType": "repair",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "6",
+      "EventType": "filing",
+      "RevelationMode": "none",
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 3560,
+      "ProseLength": 1793,
       "Flags": [
         "UNSCORED"
       ],
@@ -939,15 +939,15 @@
     {
       "BeatId": "042544ce-ac03-4e1f-91bd-d19cf0f7dde7",
       "Number": 4231,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals that the protagonist cannot close the rate field because naming a price would finalize a relationship whose nature he has not yet resolved, so he defers through physical ritual.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "7",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2409,
+      "ProseLength": 1680,
       "Flags": [
         "UNSCORED"
       ],
@@ -956,15 +956,15 @@
     {
       "BeatId": "51a201b5-5904-4f95-abf8-a78d85879d40",
       "Number": 4232,
-      "Chapter": "Act Three \u2014 Two Minds",
+      "Chapter": "Chapter 3 \u2014 Two Minds",
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Turns on the protagonist\u0027s refusal to commit: having arrived at the number, he deliberately leaves the field open, signaling that something beyond commerce is now at stake.",
-      "EscalationTarget": "10",
-      "EventType": "exchange",
-      "RevelationMode": "surprise",
+      "EscalationTarget": "8",
+      "EventType": "arrival",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1708,
+      "ProseLength": 1899,
       "Flags": [
         "UNSCORED"
       ],

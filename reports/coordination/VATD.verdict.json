@@ -1,39 +1,39 @@
 {
   "nodeCode": "VATD",
-  "generatedAtUtc": "2026-07-25 17:42:31Z",
+  "generatedAtUtc": "2026-07-25 23:48:03Z",
   "beatsScanned": 27,
-  "cleanBeats": 4,
-  "totalFindings": 44,
+  "cleanBeats": 3,
+  "totalFindings": 46,
   "bySeverity": {
-    "MODERATE": 6,
-    "MINOR": 38
+    "MODERATE": 5,
+    "MINOR": 41
   },
   "byType": {
+    "CLICHE": 13,
+    "MEANING-MISMATCH": 2,
     "GRIPE": 30,
-    "CLICHE": 10,
-    "CONTRADICTION": 2,
-    "MEANING-MISMATCH": 2
+    "CONTRADICTION": 1
   },
   "findings": [
     {
       "BeatId": "019ec468-17e3-7899-9e48-b053fc37ade4",
       "Number": 3872,
       "Chapter": "Chapter 1 \u2014 The Contract",
-      "Type": "GRIPE",
-      "Severity": "MODERATE",
-      "Quote": "He was a man trying to swim in air.",
-      "Note": "Purple metaphor that doesn\u0027t hold literal scrutiny \u2014 swimming in air doesn\u0027t clearly convey fumbling with a gun, it\u0027s decorative rather than clarifying.",
-      "Fix": "Cut or replace with concrete physical description: \u0027His arm wove like the signal was arriving late.\u0027"
-    },
-    {
-      "BeatId": "019ec468-c151-77da-996a-ee2ac19d2f23",
-      "Number": 3878,
-      "Chapter": "Chapter 3 \u2014 The Confrontation",
       "Type": "CLICHE",
       "Severity": "MODERATE",
-      "Quote": "Tomas knew the signs the way a man knows weather.",
-      "Note": "Stock simile for reading someone\u0027s condition; adds no specificity.",
-      "Fix": "Cut the simile and show one concrete tell instead."
+      "Quote": "His breath came out. Neither of those things was a decision.",
+      "Note": "The \u0027not a decision / body on autopilot\u0027 framing during a kill is a familiar genre beat (trained-killer dissociation), stated almost as an aphorism rather than dramatized freshly.",
+      "Fix": "Cut the second sentence and let the physical detail stand alone."
+    },
+    {
+      "BeatId": "019ec468-d9d6-785c-bc17-8c51b07e5866",
+      "Number": 3879,
+      "Chapter": "Chapter 3 \u2014 The Confrontation",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "Someone had made him stop being quiet, in his own back room, in the chair he probably sat in to count his money.",
+      "Note": "the beat\u0027s purpose is to confirm the hunter traced them via Osei with their descriptions in hand \u2014 this is delivered through inference/speculation (\u0027probably\u0027) rather than confirmed discovery, softening the intended escalation into imminent threat",
+      "Fix": "replace speculative framing with something Tomas directly reads at the scene as hard confirmation"
     },
     {
       "BeatId": "019ec469-7d02-7b03-beb6-419a463cdc32",
@@ -42,8 +42,8 @@
       "Type": "GRIPE",
       "Severity": "MODERATE",
       "Quote": "the way everything cost him something now that there was nothing in the door pocket to pay with but himself",
-      "Note": "purple, abstract metaphor that doesn\u0027t hold up to literal scrutiny \u2014 unclear what \u0027paying with himself\u0027 concretely means in this moment",
-      "Fix": "replace with a concrete physical or behavioral detail showing the cost"
+      "Note": "Abstract, over-reaching metaphor about the door pocket that doesn\u0027t clarify meaning; tells rather than shows the cost.",
+      "Fix": "Cut to a plainer beat: \u0022and it cost him something, the way everything did now.\u0022"
     },
     {
       "BeatId": "019ec6b2-6a27-7cce-a27d-66d0528956c9",
@@ -51,29 +51,19 @@
       "Chapter": "Chapter 4 \u2014 The Cost",
       "Type": "CONTRADICTION",
       "Severity": "MODERATE",
-      "Quote": "He\u0027d filed the form himself that morning, before the Ward, before any of it.",
-      "Note": "Contradicts later description that he sat with the unsent reason text \u0027the rest of the day\u0027 after typing it, and that \u0027the night had happened\u0027 before he sent it \u2014 but he supposedly filed it that morning, meaning the decision to return preceded the events (the Ward, the night) that reportedly caused his change of heart, undermining the causal logic of the redemption arc.",
-      "Fix": "clarify that he pulled the organ that morning but only decided/drafted the return reason later, after the night\u0027s events"
+      "Quote": "Tomas already knew which locker. He\u0027d filed the form himself that morning, before the Ward, before any of it.",
+      "Note": "Contradicts the following lines stating he typed the reason but \u0027hadn\u0027t sent it\u0027 and \u0027sat with it the rest of the day\u0027 \u2014 if he filed the form that morning, the reason/decision timeline of drafting-but-not-sending until now conflicts with \u0027filed... himself that morning.\u0027 Filing and sending are conflated inconsistently.",
+      "Fix": "Clarify: he created/drafted the return request that morning but held off submitting it, rather than saying he \u0027filed\u0027 it."
     },
     {
-      "BeatId": "42aff3fa-1659-4a55-8461-50e0aebe39db",
-      "Number": 3916,
-      "Chapter": "Chapter 1 \u2014 The Contract",
+      "BeatId": "6368424e-e71e-4f9b-b8de-ae643964c68d",
+      "Number": 3919,
+      "Chapter": "Chapter 4 \u2014 The Cost",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "she had looked at him through the channel the way you\u0027d look at a dog that has tried to explain something, waiting, faintly, for the sound to stop",
-      "Note": "Overworked simile stacks abstraction on abstraction (dog explaining itself, waiting for sound to stop) without a clear literal image; strains believability of what a look can convey.",
-      "Fix": "Simplify to a single concrete beat, e.g. \u0027She\u0027d looked at him the way you look at a dog that\u0027s learned to sit \u2014 waiting for the trick to end.\u0027"
-    },
-    {
-      "BeatId": "019f21b2-68bb-71e5-b5ab-5fd14153a87d",
-      "Number": 4974,
-      "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "GRIPE",
-      "Severity": "MODERATE",
-      "Quote": "true was the only lie that never slipped",
-      "Note": "Aphoristic quip that reads as authorial cleverness rather than Tomas\u0027s lived reasoning; slows the pressure moment.",
-      "Fix": "Cut the clause or replace with a concrete detail about his control of his face."
+      "Quote": "He had done that.",
+      "Note": "",
+      "Fix": "cut or replace with a concrete detail of what he felt, since the beat\u0027s purpose is to show him witnessing consequence, not announce it"
     },
     {
       "BeatId": "019ec467-b03f-7dca-80a8-b3b7c146307f",
@@ -81,9 +71,9 @@
       "Chapter": "Chapter 1 \u2014 The Contract",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "It was just what the early shift smelled like.",
-      "Note": "Flat filler line restating the preceding sentence without adding new information.",
-      "Fix": "Cut the sentence; the refrigerator simile already lands the point."
+      "Quote": "That was why Tomas Alvarado could open a person up at four-thirty in the morning and keep his hands steady.",
+      "Note": "Tells the reader the emotional logic directly rather than letting the preceding details carry it, undercutting the otherwise earned buildup.",
+      "Fix": "Cut the explanatory sentence and let the Paz details stand alone, or fold it into action rather than statement."
     },
     {
       "BeatId": "019ec467-b03f-7dca-80a8-b3b7c146307f",
@@ -92,8 +82,8 @@
       "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "the way you stop hearing a refrigerator",
-      "Note": "Familiar desensitization simile, low-cost but slightly worn.",
-      "Fix": "Swap for a sensory detail specific to this world instead of a generic domestic comparison."
+      "Note": "A familiar desensitization simile that reads as a stock comparison rather than a fresh observation.",
+      "Fix": "Replace with a more specific, setting-grounded image of habituation."
     },
     {
       "BeatId": "019ec467-cc85-7430-8191-c45ab4475bbe",
@@ -102,8 +92,28 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "like a man carrying a cooler to a cookout he didn\u0027t want to attend",
-      "Note": "Incongruous, near-comic simile undercuts the grim institutional tone the beat is building.",
-      "Fix": "Replace with a flatter, colder image consistent with the scene\u0027s register."
+      "Note": "The simile undercuts the grim institutional tone with an incongruously casual, almost comic image that doesn\u0027t earn its contrast.",
+      "Fix": "Replace with an image consistent with dread/routine rather than backyard leisure."
+    },
+    {
+      "BeatId": "019ec467-cc85-7430-8191-c45ab4475bbe",
+      "Number": 3869,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "sitting up against the headboard with his hands folded on the blanket like a man waiting for a bus",
+      "Note": "Stock resigned-patience imagery that dulls the specificity of the scene.",
+      "Fix": "Ground the old man\u0027s posture in a more particular, less generic detail."
+    },
+    {
+      "BeatId": "019ec467-ff22-763c-b972-08f2b547e8f9",
+      "Number": 3871,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "something far back in him leaned toward it, just slightly, and Tomas pretended not to see it, the way he pretended not to see most of what the drops did",
+      "Note": "Tells us Tomas\u0027s habitual denial rather than showing a concrete beat; vague abstraction (\u0027something far back in him leaned\u0027) softens what should land as specific and damning.",
+      "Fix": "Specify the tell: \u0022Levin\u0027s eyes tracked the smell, unwilling, and Tomas said nothing, same as always.\u0022"
     },
     {
       "BeatId": "019ec468-17e3-7899-9e48-b053fc37ade4",
@@ -111,9 +121,9 @@
       "Chapter": "Chapter 1 \u2014 The Contract",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "getting less surprised",
-      "Note": "Vague euphemism for dying that undercuts the visceral weight the beat needs at its turning point.",
-      "Fix": "State it plainly: \u0027the surprise going out of them.\u0027"
+      "Quote": "The sound of it in the small room was very loud.\n\nThen it wasn\u0027t.",
+      "Note": "Reads as a stylistic flourish aiming for weight but is vague to the point of meaninglessness \u2014 \u0027very loud\u0027 then \u0027not\u0027 tells us nothing sensory.",
+      "Fix": "Replace with a concrete auditory detail: \u0022The shot filled the room, then the room swallowed it, and there was only the couch spring settling.\u0022"
     },
     {
       "BeatId": "019ec468-2e6b-71cd-80f8-ad3dac186f55",
@@ -121,29 +131,19 @@
       "Chapter": "Chapter 2 \u2014 The Investigation",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "the flat failed on him mid-word",
-      "Note": "stock \u0027voice cracking under emotion\u0027 beat dressed up in slightly odd phrasing, still a familiar telling-not-showing move",
-      "Fix": "cut or replace with a concrete physical detail (a pause, a repeated word) rather than naming the failure"
-    },
-    {
-      "BeatId": "019ec468-2e6b-71cd-80f8-ad3dac186f55",
-      "Number": 3873,
-      "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "the way a man goes quiet when he understands he\u0027s seen too much",
-      "Note": "generalizing aphorism that tells the reader how to interpret Osei\u0027s stillness instead of showing it",
-      "Fix": "cut the explanatory clause and let the stillness stand on its own"
-    },
-    {
-      "BeatId": "019ec468-2e6b-71cd-80f8-ad3dac186f55",
-      "Number": 3873,
-      "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
       "Quote": "his voice did the one warm thing it knew how to do, the thing it did when it wanted something",
-      "Note": "double-hedged telling construction that explains Levin\u0027s manipulation rather than dramatizing it",
-      "Fix": "trim to one clause, e.g. \u0027his voice went warm, the way it did when it wanted something\u0027"
+      "Note": "stock characterization device (the one X thing a stoic character does) used as shorthand for manipulation rather than shown",
+      "Fix": "cut the frame and show the specific tonal shift in the dialogue itself"
+    },
+    {
+      "BeatId": "019ec468-2e6b-71cd-80f8-ad3dac186f55",
+      "Number": 3873,
+      "Chapter": "Chapter 2 \u2014 The Investigation",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "whose hands had gone still on the push-rings the way a man goes quiet when he understands he\u0027s seen too much",
+      "Note": "tells the emotional beat via simile instead of showing it; the comparison restates itself rather than illuminating anything new",
+      "Fix": "cut the trailing clause and let the stillness stand alone, or specify a concrete tell"
     },
     {
       "BeatId": "019ec468-54ed-7644-ace2-5ecad80a9756",
@@ -152,28 +152,18 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "which was its own kind of message, and Levin had enough of his native intelligence left under the drug to receive it",
-      "Note": "tells the reader Levin understood rather than showing the understanding land",
-      "Fix": "cut the explanatory clause; the silence already conveys it"
-    },
-    {
-      "BeatId": "019ec468-54ed-7644-ace2-5ecad80a9756",
-      "Number": 3874,
-      "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "MEANING-MISMATCH",
-      "Severity": "MINOR",
-      "Quote": "\u0022They\u0027re not a gang, they\u0027re a church, and what they worship is blood.\u0022",
-      "Note": "vivid but slightly overwrought aphorism risks tipping into stock \u0027crime family as religion\u0027 shorthand rather than delivering concrete political stakes the beat purpose demands",
-      "Fix": "follow immediately with a concrete mechanism (already partially done) or trim the line to reduce its aphoristic weight"
+      "Note": "tells us Levin understood rather than showing the understanding through action or dialogue; slightly clunky exposition of subtext",
+      "Fix": "trust the silence itself to carry the message; cut the explanatory clause"
     },
     {
       "BeatId": "019ec468-6e8d-7548-8f4c-86369208f743",
       "Number": 3875,
       "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MINOR",
       "Quote": "a weight settling in the chest he didn\u0027t argue with",
-      "Note": "vague interiority-telling for a hardened character\u0027s reaction, generic emotional shorthand",
-      "Fix": "replace with a specific physical action or omit"
+      "Note": "generic somatic-dread phrasing standing in for a felt reaction rather than a specific image",
+      "Fix": "replace with a concrete physical detail unique to this scene"
     },
     {
       "BeatId": "019ec468-6e8d-7548-8f4c-86369208f743",
@@ -182,8 +172,18 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "A man tells you more while he can still watch you decide what to take next.",
-      "Note": "aphoristic authorial intrusion that reads as a stated \u0027universal truth\u0027 about torture rather than character observation",
-      "Fix": "cut or attribute directly to Tomas\u0027s specific reasoning about this scene"
+      "Note": "aphoristic universal-truth insert that pauses the scene for a maxim rather than advancing observation",
+      "Fix": "cut or fold into the procedural description without generalizing"
+    },
+    {
+      "BeatId": "019ec468-87c2-7d7b-bcfd-5e525f59fd27",
+      "Number": 3876,
+      "Chapter": "Chapter 3 \u2014 The Confrontation",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "Real knight in shining armor.",
+      "Note": "",
+      "Fix": "Replace with a line matching Levin\u0027s flatter, procedural voice \u2014 the idiom feels like stock sarcasm dropped in."
     },
     {
       "BeatId": "019ec468-87c2-7d7b-bcfd-5e525f59fd27",
@@ -191,19 +191,9 @@
       "Chapter": "Chapter 3 \u2014 The Confrontation",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Real knight in shining armor.",
-      "Note": "Sarcastic quip lands as filler wit rather than character-specific voice, slightly softening the grim mechanics of the discovery.",
-      "Fix": "Cut or replace with a flatter, more procedural line of contempt."
-    },
-    {
-      "BeatId": "019ec468-a620-7b9b-afb2-931eff2acb0a",
-      "Number": 3877,
-      "Chapter": "Chapter 3 \u2014 The Confrontation",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "the glass behind his eyes was thin, worn down to a man instead of a mood",
-      "Note": "Purple, vague interiority metaphor that doesn\u0027t hold up to literal scrutiny (glass \u0027worn down to a man\u0027 is incoherent imagery).",
-      "Fix": "Replace with a concrete physical tell of Levin\u0027s fatigue/vulnerability."
+      "Quote": "A reason was the one thing he couldn\u0027t leave lying around tonight.",
+      "Note": "",
+      "Fix": "Cut or tighten; borders on aphorism rather than direct thought."
     },
     {
       "BeatId": "019ec468-a620-7b9b-afb2-931eff2acb0a",
@@ -212,8 +202,18 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "That landed harder than an argument would have.",
-      "Note": "Tells the reader the emotional effect instead of letting the preceding beat (Levin\u0027s flat acceptance) demonstrate it.",
-      "Fix": "Cut the sentence; the dialogue already shows the weight."
+      "Note": "",
+      "Fix": "Cut the narrator\u0027s evaluative summary; the preceding dialogue already shows the weight without needing the comparison stated."
+    },
+    {
+      "BeatId": "019ec468-a620-7b9b-afb2-931eff2acb0a",
+      "Number": 3877,
+      "Chapter": "Chapter 3 \u2014 The Confrontation",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Something in the cab shifted, small and real.",
+      "Note": "",
+      "Fix": "Cut or replace with a concrete physical detail (a breath let out, a hand unclenching) instead of the vague abstraction."
     },
     {
       "BeatId": "019ec468-c151-77da-996a-ee2ac19d2f23",
@@ -221,9 +221,19 @@
       "Chapter": "Chapter 3 \u2014 The Confrontation",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He\u0027d crossed some line tonight where the drug had stopped being the answer.",
-      "Note": "Tells the reader the crisis threshold has been crossed instead of letting the preceding physical details carry it \u2014 redundant summary after strong show-don\u0027t-tell work.",
-      "Fix": "Cut the sentence; let the capped vial and unspoken beat carry the meaning."
+      "Quote": "the kindest stop on any manifest",
+      "Note": "editorializing aside that tells rather than shows tone, slightly undercuts the grimness with a cute phrase",
+      "Fix": "cut the appositive or fold into concrete detail"
+    },
+    {
+      "BeatId": "019ec468-c151-77da-996a-ee2ac19d2f23",
+      "Number": 3878,
+      "Chapter": "Chapter 3 \u2014 The Confrontation",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "a flinch of something close to fear",
+      "Note": "vague hedge-phrase (\u0027something close to\u0027) is a stock intensity-softener",
+      "Fix": "name the specific physical tell instead"
     },
     {
       "BeatId": "019ec468-c151-77da-996a-ee2ac19d2f23",
@@ -231,59 +241,69 @@
       "Chapter": "Chapter 3 \u2014 The Confrontation",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "They came to the edges and waited.",
-      "Note": "Slightly generic horror-atmosphere phrasing that trades precision for mood, weaker than the specific images around it (the eyeless man, the kid sitting back down).",
-      "Fix": "Cut or replace with a more specific, non-generic image tied to Levin\u0027s actual hallucinations."
+      "Quote": "The dead the day had made came back at night and stood in the doorways.",
+      "Note": "portentous aphorism-like framing that states the horror-concept generically instead of rendering it through Levin\u0027s specific perception",
+      "Fix": "anchor to a concrete sensory detail unique to this scene"
     },
     {
       "BeatId": "019ec468-d9d6-785c-bc17-8c51b07e5866",
       "Number": 3879,
       "Chapter": "Chapter 3 \u2014 The Confrontation",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Men do, and then they don\u0027t.",
-      "Note": "Aphoristic filler \u2014 a pseudo-profound generalization that doesn\u0027t add information beyond \u0027he eventually talked.\u0027",
-      "Fix": "Cut the sentence; move directly to \u0027Somewhere in the long middle of it he\u0027d given up two men...\u0027"
-    },
-    {
-      "BeatId": "019ec468-f760-7dfc-8b6a-5e9420dd1e51",
-      "Number": 3880,
-      "Chapter": "Chapter 3 \u2014 The Confrontation",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "a man who read sins off coats would notice",
-      "Note": "Slightly overwrought turn of phrase for describing the hunter\u0027s method, a bit purple compared to the plain register around it.",
-      "Fix": "Simplify to something like \u0027a man who noticed one clean door among dirty ones.\u0027"
-    },
-    {
-      "BeatId": "019ec469-2c9a-7202-b6e5-5f63a7e39598",
-      "Number": 3882,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "The wind came off the water flat and cold and asked him for nothing. That was the strange part. Everything else in his life had always asked him for something.",
-      "Note": "Personifying the wind as \u0027asking for nothing\u0027 followed by an explanatory aphorism tells the reader the meaning instead of trusting the image.",
-      "Fix": "Cut the explanatory second sentence and let the wind image stand alone, or replace with a more concrete physical detail of relief."
-    },
-    {
-      "BeatId": "019ec469-2c9a-7202-b6e5-5f63a7e39598",
-      "Number": 3882,
-      "Chapter": "Chapter 4 \u2014 The Cost",
       "Type": "CLICHE",
       "Severity": "MINOR",
+      "Quote": "Men do, and then they don\u0027t.",
+      "Note": "terse aphorism-as-wisdom, a stock hardboiled cadence that states a generality rather than advancing this specific beat",
+      "Fix": "cut or replace with a concrete detail about Osei\u0027s collapse"
+    },
+    {
+      "BeatId": "019ec469-0fa3-75ad-94ea-5e75ade6ecbb",
+      "Number": 3881,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "That was the thing he held onto. The only thing.",
+      "Note": "",
+      "Fix": "cut second sentence; it restates the first for emphasis without adding information"
+    },
+    {
+      "BeatId": "019ec469-2c9a-7202-b6e5-5f63a7e39598",
+      "Number": 3882,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The wind came off the water flat and cold and asked him for nothing.",
+      "Note": "personified wind \u0027asking\u0027 is a soft pathetic-fallacy move that borders on purple",
+      "Fix": "ground it in something Ekow physically notices rather than wind \u0027asking\u0027"
+    },
+    {
+      "BeatId": "019ec469-2c9a-7202-b6e5-5f63a7e39598",
+      "Number": 3882,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
       "Quote": "he felt it the way you feel a fire once you\u0027re far enough away that it\u0027s only warmth on your back",
-      "Note": "Duplicated near-verbatim in beat 2, undercutting its intended freshness and reading as a stock distancing metaphor.",
-      "Fix": "Use only once across the two beats, or differentiate the image significantly."
+      "Note": "simile explains the same distance-metaphor twice (marking/feeling) and reads as a generalized truism address to \u0027you\u0027",
+      "Fix": "tie the fire image to a specific sensory detail unique to Ekow rather than a general \u0027you feel\u0027 construction"
     },
     {
       "BeatId": "019ec469-7d02-7b03-beb6-419a463cdc32",
       "Number": 3885,
       "Chapter": "Chapter 4 \u2014 The Cost",
-      "Type": "MEANING-MISMATCH",
+      "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "Levin kept it to prove there\u0027d been a before. For years he\u0027d kept it the way you keep a thing you can\u0027t bear to look at. Now he looked at it, at the light, with his sick clean shaking hands.",
-      "Note": "the beat\u0027s purpose is the turn from looking away to looking \u2014 the actual moment of looking is rushed and under-rendered compared to the setup, weakening the payoff the beat promises",
-      "Fix": "slow down the moment of looking itself, give it more weight than the summary of past avoidance"
+      "Quote": "Levin almost smiled. It was the first thing close to a smile Tomas had seen on him in a day",
+      "Note": "Near-smile-as-emotional-marker is a familiar beat; combined with \u0027cost him something\u0027 it doubles down on telling.",
+      "Fix": "Show the physical detail (mouth, eyes) without naming it as \u0027first smile in a day.\u0027"
+    },
+    {
+      "BeatId": "019ec469-7d02-7b03-beb6-419a463cdc32",
+      "Number": 3885,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He said nothing else, because the answer that sounded like an answer was the one you hoped nobody tested.",
+      "Note": "Aphoristic aside that generalizes past the character\u0027s interiority; reads as authorial commentary.",
+      "Fix": "Cut the clause after \u0027He said nothing else.\u0027"
     },
     {
       "BeatId": "019ec6b2-6a27-7cce-a27d-66d0528956c9",
@@ -291,9 +311,29 @@
       "Chapter": "Chapter 4 \u2014 The Cost",
       "Type": "GRIPE",
       "Severity": "MINOR",
+      "Quote": "because nobody had ever built one for this particular kind of mistake",
+      "Note": "Reaches for wry systemic irony but reads as authorial commentary rather than observation grounded in scene.",
+      "Fix": "Cut or fold into action: \u0022authorization logged, no human in the loop.\u0022"
+    },
+    {
+      "BeatId": "019ec6b2-6a27-7cce-a27d-66d0528956c9",
+      "Number": 3915,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
       "Quote": "Levin was a",
-      "Note": "sentence cuts off mid-thought, an apparent truncation error",
-      "Fix": "complete the sentence describing Levin\u0027s position/action"
+      "Note": "Beat cuts off mid-sentence, leaving Levin\u0027s final positioning/reaction undelivered, weakening the payoff of restoring the organ as a shared act.",
+      "Fix": "Complete the sentence to show Levin\u0027s presence/reaction in the room at the close."
+    },
+    {
+      "BeatId": "42aff3fa-1659-4a55-8461-50e0aebe39db",
+      "Number": 3916,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she\u0027d looked at him the way you look at a dog that\u0027s learned to sit \u2014 waiting for the trick to end",
+      "Note": "Second dog-comparison in close proximity to \u0027a dog didn\u0027t need courtesy\u0027 and \u0027the way you don\u0027t withhold the scent from the hound\u0027 \u2014 the metaphor is reused three times in one beat, flattening rather than reinforcing characterization.",
+      "Fix": "Cut two of the three dog/hound comparisons, keep one for impact."
     },
     {
       "BeatId": "42aff3fa-1659-4a55-8461-50e0aebe39db",
@@ -302,18 +342,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "You couldn\u0027t unmake a man who\u0027d been made to track. You could only point him, or let the skill rot in him like meat left in the sun.",
-      "Note": "Aphoristic double-metaphor reads as authorial commentary rather than character interiority; the meat-in-sun image is a stretch for \u0027skill rotting.\u0027",
-      "Fix": "Cut to one image or ground it in a specific memory rather than general truism."
-    },
-    {
-      "BeatId": "098a25fd-693d-4e55-a1ff-5c2918dbe39d",
-      "Number": 3917,
-      "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Not hunger \u2014 he\u0027d never named it hunger. Just the click of a made thing finding the work it was made for.",
-      "Note": "Tips into telling-not-showing his psychology with a mechanical metaphor that asserts depth rather than earning it in-scene.",
-      "Fix": "Trim to action: cut the aphoristic aside and let the investigative competence itself imply his nature."
+      "Note": "Aphoristic filler that states the theme rather than demonstrating it through action already shown (picking up the machete, reading the coat).",
+      "Fix": "Trim to a single concrete image or cut the sentence entirely."
     },
     {
       "BeatId": "4ce30a3b-5851-4738-833a-593e517e0ff7",
@@ -321,19 +351,19 @@
       "Chapter": "Chapter 2 \u2014 The Investigation",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the way another man squares a stack of paper before he leaves a desk",
-      "Note": "Explanatory simile that tells us the meaning of the ritual instead of trusting the folded handkerchief image already established.",
-      "Fix": "Cut the simile, end on \u0027wanting the day to have an edge.\u0027"
+      "Quote": "This is what I carry. This is what I am.",
+      "Note": "",
+      "Fix": "Cut the second sentence; it over-explains the gesture the action already conveys."
     },
     {
       "BeatId": "4ce30a3b-5851-4738-833a-593e517e0ff7",
       "Number": 3918,
       "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "CONTRADICTION",
+      "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "It wasn\u0027t a signature. It was just his hands, wanting the day to have an edge.",
-      "Note": "Purpose states the handkerchief \u0027establishes his ritual orderliness as a character signature,\u0027 but the prose explicitly denies it is a signature, undercutting the stated beat purpose.",
-      "Fix": "Remove the denial or rephrase so the ritual is affirmed as characteristic rather than disclaimed."
+      "Note": "",
+      "Fix": "Trim to one clause; the beat states it\u0027s not a signature while purpose calls it exactly that \u2014 softens the intended payoff."
     },
     {
       "BeatId": "6368424e-e71e-4f9b-b8de-ae643964c68d",
@@ -341,19 +371,9 @@
       "Chapter": "Chapter 4 \u2014 The Cost",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "He had done that.",
-      "Note": "Short, isolated declarative sentence used for dramatic weight is a familiar rhythmic tic that reads as stock gravitas rather than earned insight.",
-      "Fix": "Integrate the realization into the surrounding paragraph or replace with a more specific, concrete admission of consequence."
-    },
-    {
-      "BeatId": "6368424e-e71e-4f9b-b8de-ae643964c68d",
-      "Number": 3919,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "he felt it the way you feel a fire once you\u0027re far enough away that it\u0027s only warmth on your back",
-      "Note": "This simile appears verbatim in beat 3 as well as being echoed here almost identically, making it a retread rather than a fresh image within this beat.",
-      "Fix": "Vary the image or cut the repetition between beats."
+      "Quote": "He\u0027d been awake for thirty hours and it sat on him lightly now, lighter than it had any right to.",
+      "Note": "fatigue-as-weight is a stock construction",
+      "Fix": "specify the physical sensation instead of the abstract weight metaphor"
     },
     {
       "BeatId": "019f0f2c-b4f5-7189-b67e-1cc04fc235dc",
@@ -362,8 +382,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "Nobody said anything for a moment that had a whole life in it.",
-      "Note": "Vague, self-consciously portentous phrasing that tells us the moment is heavy without showing why.",
-      "Fix": "Cut to a concrete beat: describe a breath held, a hand\u0027s stillness, or simply hold the silence without editorializing."
+      "Note": "",
+      "Fix": "Nobody said anything for a moment that stretched too long."
     },
     {
       "BeatId": "019f0f2c-b4f5-7189-b67e-1cc04fc235dc",
@@ -371,9 +391,9 @@
       "Chapter": "Chapter 3 \u2014 The Confrontation",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "the way, Tomas would understand later, he laid it when he wanted you to know he wasn\u0027t, yet, reaching for it",
-      "Note": "The \u0027would understand later\u0027 foreshadowing construction is a stock suspense device bordering on \u0027little did he know.\u0027",
-      "Fix": "Drop the flash-forward framing; render the observation as Tomas\u0027s immediate read of the gesture."
+      "Quote": "the threat rolled past them at the speed limit",
+      "Note": "",
+      "Fix": "cut or rephrase without the ironic \u0027threat\u0027 label repetition"
     },
     {
       "BeatId": "019f11eb-fb83-7c27-8875-fb35c33feb1d",
@@ -382,38 +402,28 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the order thirty years had taught him to take a story out of a body",
-      "Note": "tells the reader Tomas\u0027s expertise via exposition rather than letting the specific observations alone demonstrate it",
-      "Fix": "cut the explanatory clause; the eyes/mouth/hands sequence already shows the method"
+      "Note": "tells us Tomas\u0027s expertise via abstract summary rather than letting the specific procedural detail (jaw, eyes, mouth, hands) carry it alone",
+      "Fix": "cut the explanatory clause; the sequence of observations already demonstrates the trained method"
     },
     {
-      "BeatId": "019f11eb-fb83-7c27-8875-fb35c33feb1d",
-      "Number": 4910,
-      "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "the smell of a tank that had kept cycling after it had nothing left to repair",
-      "Note": "morbid-poetic flourish bordering on overwrought scene-dressing, slightly redundant with the preceding sentence which already states the same idea",
-      "Fix": "cut one of the two redundant clauses describing the nanite bath smell"
-    },
-    {
-      "BeatId": "019f11ec-6045-7667-8c23-ed6a53c45819",
-      "Number": 4912,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "the way a man speaks when he\u0027s holding something he isn\u0027t sure won\u0027t break",
-      "Note": "",
-      "Fix": "cut the simile or replace with a concrete physical detail specific to Levin"
-    },
-    {
-      "BeatId": "019f11ec-6045-7667-8c23-ed6a53c45819",
-      "Number": 4912,
-      "Chapter": "Chapter 4 \u2014 The Cost",
+      "BeatId": "019f11ec-2d1d-7998-bab7-377563a678d8",
+      "Number": 4911,
+      "Chapter": "Chapter 3 \u2014 The Confrontation",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He looked like a man waiting for a knock he wasn\u0027t sure was coming.",
-      "Note": "",
-      "Fix": "replace with a more specific, less generic image tied to Levin\u0027s particular guilt"
+      "Quote": "so they were even",
+      "Note": "neat aphoristic button that resolves emotional ambiguity too tidily, a mini universal-truth quip",
+      "Fix": "cut the summary clause and let the silence stand"
+    },
+    {
+      "BeatId": "019f11ec-6045-7667-8c23-ed6a53c45819",
+      "Number": 4912,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "His voice came out careful, the way a man speaks when he\u0027s holding something he isn\u0027t sure won\u0027t break.",
+      "Note": "Stock simile for careful speech; doesn\u0027t earn its length.",
+      "Fix": "Cut the simile, let the line stand alone: \u0022How long do we have?\u0022 Levin\u0027s voice was careful."
     },
     {
       "BeatId": "019f21b2-244f-7e82-9948-ac48de611329",
@@ -422,8 +432,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "You learned their border the way you learned weather \u2014 not from a forecast, but from the ache in a joint that had been broken once already.",
-      "Note": "Purple simile that strains under scrutiny \u2014 weather isn\u0027t learned from a broken joint\u0027s ache, the comparison muddles rather than clarifies.",
-      "Fix": "Cut to: \u0027You learned their border the way a broken bone learns weather \u2014 early, and without being told twice.\u0027"
+      "Note": "Purple metaphor stacking two comparisons (weather, then broken joint) that dilutes rather than sharpens the image; reads as reaching for profundity.",
+      "Fix": "Cut to one image: \u0022You learned their border the way you learned to favor a knee that had been broken once already.\u0022"
     },
     {
       "BeatId": "019f21b2-244f-7e82-9948-ac48de611329",
@@ -432,18 +442,8 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "a little schism, months old, the neighborhood stepping around it like a puddle it had stopped resenting",
-      "Note": "Overwrought personification stacked on personification (\u0027stopped resenting\u0027) that tells us mood rather than showing concrete detail.",
-      "Fix": "Simplify: \u0027a little schism, months old, the neighborhood just walked around now.\u0027"
-    },
-    {
-      "BeatId": "019f21b2-68bb-71e5-b5ab-5fd14153a87d",
-      "Number": 4974,
-      "Chapter": "Chapter 2 \u2014 The Investigation",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "a turnstile that hadn\u0027t taken his fare",
-      "Note": "Mechanical simile that undercuts the tension with a cute, over-worked image at the story\u0027s most dangerous beat.",
-      "Fix": "Cut the simile; just describe the physical stop."
+      "Note": "The puddle simile undercuts the stranger, better \u0027schism\u0027 image with a cute/whimsical comparison that doesn\u0027t earn its cleverness.",
+      "Fix": "Drop the simile: \u0022a little schism, months old, the neighborhood had long since stopped noticing.\u0022"
     },
     {
       "BeatId": "019f21b2-68bb-71e5-b5ab-5fd14153a87d",
@@ -451,9 +451,29 @@
       "Chapter": "Chapter 2 \u2014 The Investigation",
       "Type": "CLICHE",
       "Severity": "MINOR",
+      "Quote": "like a turnstile that hadn\u0027t taken his fare",
+      "Note": "",
+      "Fix": "Cut or replace with a less whimsical mechanical image; the tonal lightness undercuts the tension."
+    },
+    {
+      "BeatId": "019f21b2-68bb-71e5-b5ab-5fd14153a87d",
+      "Number": 4974,
+      "Chapter": "Chapter 2 \u2014 The Investigation",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
       "Quote": "He was, whatever else the night had made of him, a professional.",
-      "Note": "Stock \u0027whatever else X, he was a professional\u0027 construction that tells rather than shows the discipline the beat is meant to demonstrate.",
-      "Fix": "Cut the line; let the coffee purchase carry the professionalism."
+      "Note": "",
+      "Fix": "Cut the aphoristic tag; the coffee-buying action already demonstrates professionalism without the narrator underlining it."
+    },
+    {
+      "BeatId": "019f21b2-68bb-71e5-b5ab-5fd14153a87d",
+      "Number": 4974,
+      "Chapter": "Chapter 2 \u2014 The Investigation",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Paz\u0027s therapy didn\u0027t get paid by men who couldn\u0027t buy coffee in front of the people hunting them.",
+      "Note": "",
+      "Fix": "Cut or fold into action; reads as an inserted maxim rather than character thought."
     }
   ]
 }

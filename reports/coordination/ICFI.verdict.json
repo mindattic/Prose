@@ -1,49 +1,28 @@
 {
   "nodeCode": "ICFI",
-  "generatedAtUtc": "2026-07-25 17:40:29Z",
+  "generatedAtUtc": "2026-07-25 23:30:47Z",
   "beatsScanned": 14,
-  "cleanBeats": 3,
-  "totalFindings": 25,
+  "cleanBeats": 4,
+  "totalFindings": 20,
   "bySeverity": {
-    "BLOCKER": 1,
-    "MODERATE": 4,
-    "MINOR": 20
+    "MODERATE": 2,
+    "MINOR": 18
   },
   "byType": {
-    "MEANING-MISMATCH": 6,
-    "CLICHE": 4,
-    "GRIPE": 15
+    "MEANING-MISMATCH": 4,
+    "GRIPE": 12,
+    "CLICHE": 4
   },
   "findings": [
     {
-      "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
-      "Number": 5115,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "MEANING-MISMATCH",
-      "Severity": "BLOCKER",
-      "Quote": "The corn on both sides of the 88 was very still.",
-      "Note": "Purpose calls for CJ closing comms, Hauser\u0027s channel going to static, and the standoff framing; instead the beat ends mid-sentence on the burial/tamping action and never delivers the stated beats (comms closing, static, Eigenlift/sky framing, the no-fire standoff).",
-      "Fix": "Extend the beat through CJ closing comms and Hauser going to static, with the machine framed against the tower and sky."
-    },
-    {
-      "BeatId": "019f3eb2-6438-7708-811b-181074c46ad0",
-      "Number": 5104,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "CLICHE",
-      "Severity": "MODERATE",
-      "Quote": "the hairs on his forearms lifting, his stomach dropping half an inch",
-      "Note": "Stacked stock physiological shorthand for awe/dread rather than a specific observed reaction.",
-      "Fix": "Cut to one concrete detail, e.g. just the throat tightening, and let the sound do the work."
-    },
-    {
-      "BeatId": "019f3eb2-6438-7820-8915-07d8e0af4faa",
-      "Number": 5108,
+      "BeatId": "019f3eb2-6438-7ac8-966c-24e14b3fd4b2",
+      "Number": 5113,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "MEANING-MISMATCH",
       "Severity": "MODERATE",
-      "Quote": "The tine comes down on the man who was in the way. The threat-wail starts",
-      "Note": "Purpose specifies the tine strike and threat-wail onset as the beat\u0027s climax, but the excerpt cuts off before either occurs \u2014 the prose ends on \u0027His hand moved. The\u0027 without depicting the stated events.",
-      "Fix": "Extend excerpt or confirm the tine strike and wail are rendered on-page within this beat."
+      "Quote": "His face hadn\u0027t changed since she arrived \u2014 not surprised, not relieved, not visibly working anything out. The face of a man who\u0027d made his choices a long time ago and wasn\u0027t going back over them.\n\nShe didn\u0027t know what he meant. She didn\u0027t have time to ask.",
+      "Note": "CJ reacts to Nzambe\u0027s face as if he\u0027d said something (\u0027what he meant\u0027), but no dialogue or line preceded this \u2014 the referent is missing, breaking sense continuity",
+      "Fix": "give Nzambe a short ambiguous line before this, or change \u0027what he meant\u0027 to \u0027what he was thinking\u0027"
     },
     {
       "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
@@ -51,39 +30,9 @@
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "MEANING-MISMATCH",
       "Severity": "MODERATE",
-      "Quote": "He\u0027d been on the hull all day and still couldn\u0027t have said which.",
-      "Note": "Purpose specifies this beat centers on Wes coming down and CJ placing Pip beside the machine for the dog\u0027s territorial comedy beat undercutting the sacred moment; instead most of the text lingers on Wes\u0027s descent and the machine\u0027s departure, and cuts off before Pip\u0027s mark-territory payoff or CJ\u0027s report are shown.",
-      "Fix": "Compress the descent/departure material and land firmly on Pip sniffing the tine and marking it against the machine\u0027s stillness."
-    },
-    {
-      "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
-      "Number": 5116,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "MEANING-MISMATCH",
-      "Severity": "MODERATE",
-      "Quote": "and now he did what he did at every stop that matte",
-      "Note": "Beat cuts off before the comedic payoff (lifting his leg) and before CJ\u0027s report/recommendation, which the purpose requires.",
-      "Fix": "Complete the sentence and add CJ\u0027s filed report language: behavioral anomaly, origin unknown, threat level zero, recommendation to leave the machine in place."
-    },
-    {
-      "BeatId": "019f3eb2-6438-7381-901d-fb023a9011fd",
-      "Number": 5103,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "the whole carapace tilted forward like a ship taking on water",
-      "Note": "Ship-taking-on-water is a stock disaster simile that doesn\u0027t add anything specific to a forty-ton farm machine\u0027s posture.",
-      "Fix": "Describe the tilt in mechanical terms specific to the machine\u0027s own anatomy instead."
-    },
-    {
-      "BeatId": "019f3eb2-6438-7381-901d-fb023a9011fd",
-      "Number": 5103,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Find the fault. Put a word to it.",
-      "Note": "Reads as a slightly on-the-nose internal-rule aphorism rather than lived detail.",
-      "Fix": "Cut one of the two restatements; let the rule appear once."
+      "Quote": "Pip went to the buried spot. He\u0027d been patient through all of it \u2014 the burial, the descent, the leaving \u2014 and now he did what he did at every stop that mattered. He sniffed the sealed patch of asphalt, thorough, starting at one",
+      "Note": "Purpose calls for Pip trotting to the nearest tine and lifting his leg on the machine itself, with the machine\u0027s non-reaction as the joke; instead the excerpt has him investigating the buried spot on the ground, and the beat cuts off before the leg-lift or the machine\u0027s reaction appear at all.",
+      "Fix": "Redirect Pip to the nearest tine as specified, include the leg-lift, and show the machine\u0027s indifference to complete the comedic beat."
     },
     {
       "BeatId": "019f3eb2-6438-7708-811b-181074c46ad0",
@@ -91,9 +40,9 @@
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "It was the way a sound changes when the shape of the room around it changes.",
-      "Note": "Vague sound-simile that doesn\u0027t clarify what actually changed in the wail; explains nothing concrete.",
-      "Fix": "Replace with a specific acoustic detail (pitch, resonance, duration) rather than an abstract analogy."
+      "Quote": "There was a word for what Pip had just done. He didn\u0027t use it. It would have been either too small or too big, and he wasn\u0027t sure which.",
+      "Note": "Coy withholding-the-word device reads as a writerly trick rather than character insight; tells us Wes is moved without showing it.",
+      "Fix": "Cut the meta-commentary and let the observed action (Pip sitting, the wail changing register) carry the weight, or give the actual word and let it land."
     },
     {
       "BeatId": "019f3eb2-6438-7474-924e-1d9d1925e8ab",
@@ -101,29 +50,9 @@
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "patient, like something that had been doing this for years",
-      "Note": "Filler qualifier stating an obvious inference rather than showing a specific gait detail.",
-      "Fix": "Cut the simile; the preceding mechanical description already implies routine."
-    },
-    {
-      "BeatId": "019f3eb2-6438-7587-acc1-5a8600539152",
-      "Number": 5106,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "And Behemoths came from somewhere. All of them. Always.",
-      "Note": "Reads as a pseudo-profound aphorism/filler assertion rather than advancing CJ\u0027s actual reasoning about the missing registry.",
-      "Fix": "Cut, or replace with a concrete procedural detail about what an unregistered unit implies for her protocol."
-    },
-    {
-      "BeatId": "019f3eb2-6438-7587-acc1-5a8600539152",
-      "Number": 5106,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "a view of the Rock River that was genuinely good if you were somebody who needed that from a posting",
-      "Note": "Wry throwaway phrasing that reads as authorial quip rather than grounded characterization.",
-      "Fix": "Trim to a plainer statement of the view and let \u0027CJ had stopped needing it\u0027 carry the irony."
+      "Quote": "Close enough that six or eight didn\u0027t feel like different numbers.",
+      "Note": "Vague filler phrasing that gestures at danger without specifying anything concrete; reads as padding rather than sensory detail.",
+      "Fix": "Cut, or replace with a concrete detail (e.g., how the gap looked from his vantage)."
     },
     {
       "BeatId": "019f3eb2-6438-71ab-a542-09f818be4b6e",
@@ -131,19 +60,29 @@
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Forty feet was not very far.",
-      "Note": "Flat filler-aphorism beat that states the obvious instead of building tension.",
-      "Fix": "Cut the line or replace with a concrete sensory detail (e.g., the sound of the units closing)."
+      "Quote": "A few years of somebody\u0027s budget, lying in the Hillsdale dirt.",
+      "Note": "Filler-wit aside that editorializes rather than showing; slightly deflates the mechanical tension just built.",
+      "Fix": "Cut the line or replace with a concrete visual detail (e.g. scorch mark, blinking light) instead of a budget quip."
     },
     {
       "BeatId": "019f3eb2-6438-71ab-a542-09f818be4b6e",
       "Number": 5107,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "Pip was below, in the shadow of the rear stabilizer.",
+      "Note": "Beat purpose specifies \u0027Pip does not look up\u0027 as a beat, but the prose only places Pip in position without confirming the specified detail of not looking up.",
+      "Fix": "Add a clause confirming Pip\u0027s lack of reaction, e.g. \u0027Pip didn\u0027t look up, didn\u0027t break stride.\u0027"
+    },
+    {
+      "BeatId": "019f3eb2-6438-7820-8915-07d8e0af4faa",
+      "Number": 5108,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "the smallest arc needed to make the obstacle not be there",
-      "Note": "Reads as an aphoristic label for the machine\u0027s efficiency rather than observed action; slightly on-the-nose \u0027profound\u0027 phrasing.",
-      "Fix": "Ground it in a specific physical beat instead of the abstracted \u0027obstacle not be there\u0027 construction."
+      "Quote": "the kind of loud that tears the throat",
+      "Note": "Stock intensifier phrasing for shouting effort.",
+      "Fix": "Cut or replace with a more specific physical detail, e.g. \u0027loud enough that his voice cracked.\u0027"
     },
     {
       "BeatId": "019f3eb2-6438-7820-8915-07d8e0af4faa",
@@ -151,29 +90,39 @@
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the kind of loud that tears the throat",
-      "Note": "Vague intensifier standing in for concrete sensory detail \u2014 tells rather than shows the strain.",
-      "Fix": "Describe the specific physical sensation, e.g., \u0027his voice cracked on the second word.\u0027"
+      "Quote": "A hundred feet. That was the problem.",
+      "Note": "Short declarative aphorism-style filler that states the obvious rather than dramatizing the distance.",
+      "Fix": "Fold the distance into the action directly rather than isolating it as a stated \u0027problem.\u0027"
     },
     {
-      "BeatId": "019f3eb2-6438-74ae-8c65-64d5b582c6ac",
-      "Number": 5109,
+      "BeatId": "019f3eb2-6438-7fe2-94eb-47facb1e361c",
+      "Number": 5110,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "A pause. Not frustration \u2014 accounting.",
-      "Note": "Tells the reader how to interpret Hauser\u0027s tone rather than letting dialogue/action convey it; borders on authorial explanation.",
-      "Fix": "Cut the interpretive clause and let the clipped dialogue carry the characterization."
+      "Quote": "Smart, if it was. He didn\u0027t know enough about ArcSec drone doctrine to say.",
+      "Note": "Hedging aside reads as filler commentary rather than advancing tension or characterization.",
+      "Fix": "Cut the second sentence; let the observation stand without the self-aware qualifier."
     },
     {
-      "BeatId": "019f3eb2-6438-74ae-8c65-64d5b582c6ac",
-      "Number": 5109,
+      "BeatId": "019f3eb2-6438-7fe2-94eb-47facb1e361c",
+      "Number": 5110,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "MEANING-MISMATCH",
+      "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "and while she watched it the shape of the thing came together. The machine wasn\u0027t walking toward",
-      "Note": "Purpose specifies the beat should land on the reveal of open farmland and Eigenlift towers rising from the corn, but the excerpt cuts off before that image appears.",
-      "Fix": "Confirm the towers/GLMZ description follows immediately; if not, the beat as excerpted doesn\u0027t deliver the stated visual payoff."
+      "Quote": "the hull a drum under him",
+      "Note": "Repeated metaphor (also appears earlier in the manuscript pattern) trending toward stock imagery for rhythmic machine sound.",
+      "Fix": "Vary the metaphor or cut for plainer description."
+    },
+    {
+      "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
+      "Number": 5111,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the loose full commitment of a dog",
+      "Note": "vague abstraction stands in for the concrete image the sentence is trying to earn; reads as filler generalization rather than observed detail",
+      "Fix": "cut or replace with a specific physical beat"
     },
     {
       "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
@@ -182,58 +131,58 @@
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the kind of dog that looks put together specifically to be hard to stop once it has somewhere to be",
-      "Note": "",
-      "Fix": "cut the aphoristic framing; describe the physical build instead"
+      "Note": "cute overwritten aphorism about the dog\u0027s build, tips into whimsy that undercuts the grounded tone",
+      "Fix": "trim to a plainer physical description"
     },
     {
       "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
       "Number": 5111,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "GRIPE",
+      "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "He just let himself be lifted, the way you let yourself be lifted when you\u0027ve been moving forty miles and your body has said everything it has to say.",
-      "Note": "circular, tautological phrasing that tells rather than shows exhaustion",
-      "Fix": "replace with a concrete physical beat \u2014 muscles slack, no resistance in the spine"
+      "Quote": "the way you let yourself be lifted when you\u0027ve been moving forty miles and your body has said everything it has to say",
+      "Note": "the \u0027body has said everything it has to say\u0027 is a soft, worn personification standing in for exhaustion",
+      "Fix": "replace with a concrete physical detail (trembling legs, slack weight) instead of the abstraction"
     },
     {
-      "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
-      "Number": 5111,
+      "BeatId": "019f3eb2-6438-7bc4-8529-129c2c4d9a95",
+      "Number": 5114,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the loose full commitment of a dog who\u0027d looked the situation over and found it acceptable",
-      "Note": "cute anthropomorphizing aphorism, slightly undercuts the exhaustion just established",
-      "Fix": "trim to physical description without the judgment clause"
+      "Quote": "Gently. The way you pick something up when you know exactly what it weighs and have learned to respect the weight.",
+      "Note": "aphoristic phrasing that explains the gesture instead of trusting the preceding image; slightly overwritten repetition of \u0027weight\u0027",
+      "Fix": "cut second sentence, let \u0027Gently\u0027 stand alone or replace with a sharper concrete beat"
     },
     {
-      "BeatId": "019f3eb2-6438-7ac8-966c-24e14b3fd4b2",
-      "Number": 5113,
+      "BeatId": "019f3eb2-6438-7bc4-8529-129c2c4d9a95",
+      "Number": 5114,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He was the kind of man who read a situation once and then waited it out.",
-      "Note": "summary character aphorism, tells rather than shows",
-      "Fix": "cut or replace with an action beat that demonstrates the trait"
+      "Quote": "like someone in a room where they don\u0027t want to make a sound",
+      "Note": "generic simile that tells rather than shows Wes\u0027s tension, slightly deflates the tautness of the scene",
+      "Fix": "replace with a specific physical detail of Wes\u0027s posture or breath"
     },
     {
-      "BeatId": "019f3eb2-6438-7ac8-966c-24e14b3fd4b2",
-      "Number": 5113,
+      "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
+      "Number": 5115,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Read it, she told herself. Whatever it\u0027s doing to that module, get it all \u2014 the depth, the interval, the sequence \u2014 get enough that somebody downstream can make sense of it.",
+      "Note": "Internal-monologue exposition that tells us her professionalism/purpose rather than showing it through the observation itself; slows the procedural tension with a explainer aside.",
+      "Fix": "Cut to the direct observation and let the itemized data (depth, interval, sequence) appear as her actual notation, not a self-directed pep talk."
+    },
+    {
+      "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
+      "Number": 5115,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "MEANING-MISMATCH",
       "Severity": "MINOR",
-      "Quote": "\u0022You can find me,\u0022 he said. \u0022When this is done.\u0022",
-      "Note": "beat purpose doesn\u0027t call for a dangling mystery hook; slightly diffuses the focused handoff-and-race-back structure the beat promises",
-      "Fix": "either cut or ground the line so it doesn\u0027t read as an unearned tease"
-    },
-    {
-      "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
-      "Number": 5115,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "The corn on both sides of the 88 was very still.",
-      "Note": "Stillness-of-nature-as-tension beat is a stock atmospheric cue.",
-      "Fix": "Cut or ground it in a more specific sensory detail."
+      "Quote": "a hundred miles of the same signal, carried through drone strikes and threat-wails and scav camps and the flat Illinois distance, and in all of it nothing had ever once answered back",
+      "Note": "This is a reflective, almost eulogistic aside that pulls against the beat\u0027s stated flatness/dormancy and CJ\u0027s wordless witnessing \u2014 it editorializes rather than holding record.",
+      "Fix": "Trim to the concrete fact (the interval held for a hundred miles) and cut the summary emotional framing."
     },
     {
       "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
@@ -241,9 +190,9 @@
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "The way you pack earth around a fence post when you mean for it to hold through the freeze and the thaw.",
-      "Note": "Explanatory simile drifts into folksy narrator-aphorism territory rather than observed action.",
-      "Fix": "Trim to the concrete action without the didactic gloss."
+      "Quote": "The sounds it made now were the sounds of a long work c",
+      "Note": "Sentence is cut off / incomplete, breaking the read entirely.",
+      "Fix": "Complete the sentence or cut it."
     },
     {
       "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
@@ -251,9 +200,9 @@
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "Long enough that Wes counted his own pulse against it \u2014 past forty beats, maybe sixty.",
-      "Note": "Counting-heartbeats-as-tension-marker is a familiar device bordering on the heartbeat-in-throat clich\u00E9 family.",
-      "Fix": "Replace with a more specific, non-biometric marker of elapsed time."
+      "Quote": "His parents, who still didn\u0027t know where he was.",
+      "Note": "Stock guilt-beat tacked onto the horizon-gazing montage, a shorthand emotional cue rather than earned detail.",
+      "Fix": "Cut or replace with something more specific to Wes\u0027s situation."
     },
     {
       "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
@@ -261,9 +210,9 @@
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He went down the way the machine had gone all day: deliberate, unhurried, because hurrying was how you fell.",
-      "Note": "Aphoristic explanatory tag (\u0027because hurrying was how you fell\u0027) states an obvious universal truth rather than showing character-specific detail.",
-      "Fix": "Cut the because-clause; let the action imply the caution."
+      "Quote": "He\u0027d been patient through all of it \u2014 the burial, the descent, the leaving \u2014 and now he did what he did at every stop that mattered.",
+      "Note": "Tells us Pip\u0027s meaningfulness/ritual instead of letting the deflating comedy of the leg-lift land on its own; undercuts the beat\u0027s stated comic-after-sacred timing by pre-explaining the dog\u0027s significance.",
+      "Fix": "Cut the editorializing clause and go straight to the action: \u0027Pip went to the buried spot and sniffed the sealed patch of asphalt, thorough, starting at one\u2014\u0027"
     }
   ]
 }

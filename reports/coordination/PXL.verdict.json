@@ -1,0 +1,298 @@
+{
+  "nodeCode": "PXL",
+  "generatedAtUtc": "2026-07-25 23:33:44Z",
+  "beatsScanned": 15,
+  "cleanBeats": 2,
+  "totalFindings": 28,
+  "bySeverity": {
+    "MODERATE": 1,
+    "MINOR": 27
+  },
+  "byType": {
+    "MEANING-MISMATCH": 6,
+    "CLICHE": 5,
+    "GRIPE": 17
+  },
+  "findings": [
+    {
+      "BeatId": "019f4fa7-1175-7e13-aa66-857d7c8e8f4a",
+      "Number": 5247,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "and the next window right there on the screen with its timestamp under it. Forty minutes.",
+      "Note": "The beat\u0027s purpose is to show the four days of prep converting into decisive leverage, but the confrontation ends on a cut mid-sentence before his reaction or her actual leverage plays out \u2014 the payoff of exposure is asserted via inventory (channels, clocks, countdowns) rather than dramatized as a turn in power.",
+      "Fix": "Let at least one beat of his capitulation or visible loss of control land before the cut."
+    },
+    {
+      "BeatId": "019f4fa6-7158-76d4-a9e2-83103ffd95fb",
+      "Number": 5235,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "The job was going beautifully. That was always when you had to watch it.",
+      "Note": "Stock foreshadowing aphorism signaling imminent reversal, a familiar genre tic.",
+      "Fix": "Cut the second sentence and let the reversal land without the announcement."
+    },
+    {
+      "BeatId": "019f4fa6-7158-76d4-a9e2-83103ffd95fb",
+      "Number": 5235,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "patient as a held breath",
+      "Note": "Slightly worn personification for a monitoring process; doesn\u0027t add specificity beyond the point already made by \u0027patient.\u0027",
+      "Fix": "Cut the simile or replace with a mechanical detail (e.g., a poll interval)."
+    },
+    {
+      "BeatId": "019f4fa6-7158-76d4-a9e2-83103ffd95fb",
+      "Number": 5235,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "The rain was warm. It found the shoulders o",
+      "Note": "Beat is cut off mid-sentence, so the final emotional beat of the loss (the wound) isn\u0027t fully delivered on the page as given.",
+      "Fix": "Complete the sentence/paragraph so the loss lands with a finished image."
+    },
+    {
+      "BeatId": "019f4fa6-7cf1-7729-a694-20c37b20f2c8",
+      "Number": 5236,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "not caring in the least how it looked doing it",
+      "Note": "Slight anthropomorphizing quip that edges toward cute commentary rather than pure indifferent-scale imagery.",
+      "Fix": "Cut the clause or replace with a flatter observation of scale/motion."
+    },
+    {
+      "BeatId": "019f4fa6-7cf1-7729-a694-20c37b20f2c8",
+      "Number": 5236,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "Fist-sized meant the suppression field folded in on itself",
+      "Note": "Beat cuts off mid-thought before completing the technical/emotional payoff of her fixation on the small-scale lift device, weakening the mirroring purpose.",
+      "Fix": "Finish the thought so the parallel to her own displacement resolves."
+    },
+    {
+      "BeatId": "019f4fa6-881e-7381-98f5-604a96d9ebd6",
+      "Number": 5237,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "landing on her chest like a hand laid flat",
+      "Note": "Reasonably fresh but slightly generic pressure-metaphor for sensory overload; borders on stock \u0027weight on chest\u0027 imagery.",
+      "Fix": "Ground it in a more specific sensation tied to her neuretics/scanning method."
+    },
+    {
+      "BeatId": "019f4fa6-881e-7381-98f5-604a96d9ebd6",
+      "Number": 5237,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "The bonded cargo facility was next, and it was a closed door. The pickup address for her checked kit resolved to a freight storefront in the transit buffer, shut",
+      "Note": "Beat is truncated before completing the escalation of vulnerability (loss of kit access), leaving the stated purpose only partially delivered.",
+      "Fix": "Complete the sentence to confirm the kit is unreachable, sealing the threat."
+    },
+    {
+      "BeatId": "019f4fa6-994e-7396-900a-5704a33aba8f",
+      "Number": 5238,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she liked it the better for that",
+      "Note": "Mild editorializing aside that tells us her attitude rather than showing it through action, slightly softening the survival-under-deprivation focus.",
+      "Fix": "Cut the clause and let the description of the mess stand on its own."
+    },
+    {
+      "BeatId": "019f4fa6-994e-7396-900a-5704a33aba8f",
+      "Number": 5238,
+      "Chapter": "Chapter 1 \u2014 Arrival and Loss",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "who\u0027d caught the fault flag that had been sitting six days on a coolant coupling nobody had been assigned to",
+      "Note": "Beat ends mid-sentence before the con/social-engineering payoff completes, leaving the resourcefulness demonstration unresolved.",
+      "Fix": "Finish the cover story sentence so the manipulation beat closes cleanly."
+    },
+    {
+      "BeatId": "019f4fa6-a683-7e3a-a6f3-6ff6c463b651",
+      "Number": 5239,
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the plain absence of Hyper Reality was itself a kind of credential for the network underneath it",
+      "Note": "pseudo-profound aphorism stated rather than dramatized",
+      "Fix": "cut or fold into concrete observation about the caf\u00E9\u0027s clientele"
+    },
+    {
+      "BeatId": "019f4fa6-a683-7e3a-a6f3-6ff6c463b651",
+      "Number": 5239,
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "reading the heat off the basement foundation through her feet",
+      "Note": "borders on purple/unclear mechanic \u2014 sensory claim not grounded in established ability",
+      "Fix": "clarify this is a neuretic/thermal sense established elsewhere, or simplify to \u0027felt through her boots\u0027"
+    },
+    {
+      "BeatId": "019f4fa6-af9a-727d-a6b9-4d27af76abdc",
+      "Number": 5240,
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The handoff came the way it always came.",
+      "Note": "filler transitional line, tells rather than shows familiarity",
+      "Fix": "cut, let the forked-sight description carry it"
+    },
+    {
+      "BeatId": "019f4fa6-b8f9-764f-b7b0-a08a09f6774b",
+      "Number": 5241,
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Not all of them wanted to talk.",
+      "Note": "stray aphoristic aside that reads as authorial quip rather than character observation",
+      "Fix": "cut or integrate into a concrete detail about the AI\u0027s behavior"
+    },
+    {
+      "BeatId": "019f4fa6-c52f-7acb-8c4f-5b8249858865",
+      "Number": 5242,
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "fit her the way a socket fits its driver",
+      "Note": "mechanical simile is apt for the world but slightly overreaches as a metaphor for a job \u0027fitting\u0027 a person",
+      "Fix": "trim to a plainer statement of match between her skills and the job"
+    },
+    {
+      "BeatId": "019f4fa6-c52f-7acb-8c4f-5b8249858865",
+      "Number": 5242,
+      "Chapter": "Chapter 2 \u2014 Rebuilding",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the particular stillness of a man accustomed to rooms rearranging themselves around him without being asked",
+      "Note": "stock \u0027powerful man\u0027 descriptor, worn imagery of effortless dominance",
+      "Fix": "replace with a concrete behavioral detail specific to this character"
+    },
+    {
+      "BeatId": "019f4fa6-d376-7057-8257-6e69dd1bae3a",
+      "Number": 5243,
+      "Chapter": "Chapter 3 \u2014 The Offensive",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He hadn\u0027t needed to lie about the frame. He\u0027d only lied about the floor.",
+      "Note": "Aphoristic turn of phrase that sounds clever but is vague filler \u2014 \u0027the floor\u0027 as metaphor isn\u0027t earned or clarified.",
+      "Fix": "Cut or replace with a concrete statement of what he actually lied about."
+    },
+    {
+      "BeatId": "019f4fa6-d376-7057-8257-6e69dd1bae3a",
+      "Number": 5243,
+      "Chapter": "Chapter 3 \u2014 The Offensive",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she let it play on under her own work like weather",
+      "Note": "Reaches for atmospheric simile but \u0027like weather\u0027 is a stock filler comparison that doesn\u0027t add specificity.",
+      "Fix": "Cut the simile or ground it in a more particular comparison."
+    },
+    {
+      "BeatId": "019f4fa6-d376-7057-8257-6e69dd1bae3a",
+      "Number": 5243,
+      "Chapter": "Chapter 3 \u2014 The Offensive",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "a system swinging part of itself around to face her the way a face turns toward a sound",
+      "Note": "The face-turning-toward-sound image is a soft, over-familiar personification for an AI\u0027s attention shift, and repeats almost verbatim in ref 3 (\u0027a warmth coming up in the traffic, an attention swinging around to meet her own\u0027), making it feel like a stock beat rather than a fresh observation.",
+      "Fix": "Vary the description or cut the simile so the sentient-AI turn doesn\u0027t read as a recycled trope."
+    },
+    {
+      "BeatId": "019f4fa6-e9b4-76fc-a332-b13cf2bcf40c",
+      "Number": 5245,
+      "Chapter": "Chapter 3 \u2014 The Offensive",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "a warmth coming up in the traffic, an attention swinging around to meet her own, the plain unmistakable sense of being regarded by the thing she was speaking to",
+      "Note": "Near-duplicate of the AI-attention description in ref 0, reducing the sense that this is a distinct, freshly observed phenomenon each time it happens.",
+      "Fix": "Differentiate the sensory description from the earlier instance to avoid the repetition reading as formula."
+    },
+    {
+      "BeatId": "019f4fa6-f63d-7ee6-a855-e6d59c73834b",
+      "Number": 5246,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "explanation was a kind of value, and she wasn\u0027t about to hand him any for free",
+      "Note": "Reads as a pseudo-profound aphorism inserted to justify a small action, rather than an organic thought.",
+      "Fix": "Cut the aphorism; the withheld explanation is already clear from action alone."
+    },
+    {
+      "BeatId": "019f4fa6-f63d-7ee6-a855-e6d59c73834b",
+      "Number": 5246,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a groove that wasn\u0027t hers yet and might never come to be",
+      "Note": "Abstract, slightly precious phrasing about inheritance that tells the theme rather than trusting the concrete detail of the worn handle to carry it.",
+      "Fix": "Cut the clause and let \u0027twenty years of the same grip laying a shallow groove\u0027 stand on its own."
+    },
+    {
+      "BeatId": "019f4fa6-f63d-7ee6-a855-e6d59c73834b",
+      "Number": 5246,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "looking like he\u0027d just come back from somewhere that ran on a different set of physics than a hallway did, the corridor a language he was relearning one word at a time",
+      "Note": "Purple, abstract metaphor stacked on another abstract metaphor; fails literal scrutiny as physical description of a man in a doorway.",
+      "Fix": "Replace with one concrete physical detail (posture, gait, expression) indicating disorientation."
+    },
+    {
+      "BeatId": "019f4fa7-1175-7e13-aa66-857d7c8e8f4a",
+      "Number": 5247,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "chairs designed to make leaving feel unnecessary, light pitched to keep a body comfortable well past the point it should have stood and gone",
+      "Note": "Overwrought description of ordinary corporate furniture/lighting stretches for atmosphere without adding concrete information.",
+      "Fix": "Trim to a single concrete detail rather than two parallel abstractions doing the same work."
+    },
+    {
+      "BeatId": "019f4fa7-1175-7e13-aa66-857d7c8e8f4a",
+      "Number": 5247,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she sat and watched a great deal of precision holding itself very carefully in place",
+      "Note": "Abstract, self-admiring phrasing that tells rather than shows his controlled reaction; \u0027a great deal of precision\u0027 is a vague quantity standing in for observed behavior.",
+      "Fix": "Replace with a specific physical tell (hands, breath, jaw) rather than an abstraction."
+    },
+    {
+      "BeatId": "019f4fa7-1cb1-7eda-adc9-422de2278b15",
+      "Number": 5248,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the enormous, unbothered sound of the city going on doing exactly what it always did",
+      "Note": "Stock \u0027indifferent city\u0027 imagery used as an emotional backdrop without new specificity.",
+      "Fix": "Anchor it to one concrete unromanticized sound instead of a general \u0027city carries on\u0027 gesture."
+    },
+    {
+      "BeatId": "019f4fa7-1cb1-7eda-adc9-422de2278b15",
+      "Number": 5248,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "there was nothing else left between the two of them worth the counting",
+      "Note": "Vague summarizing aphorism that tells us the relationship is resolved rather than demonstrating it through a concrete image or action.",
+      "Fix": "Cut the line or replace with a specific final detail that shows closure."
+    },
+    {
+      "BeatId": "019f4fa7-1cb1-7eda-adc9-422de2278b15",
+      "Number": 5248,
+      "Chapter": "Chapter 4 \u2014 Confrontation and Close",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "She\u0027d made every part of it out of \u03A68 and three weeks of steady work.",
+      "Note": "States the autonomy theme directly as summary rather than letting the preceding inventory of objects carry it, slightly undercutting the \u0027grounding victory in autonomy\u0027 purpose by explaining it.",
+      "Fix": "Cut the explanatory sentence and let the room inventory stand alone."
+    }
+  ]
+}

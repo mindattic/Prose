@@ -2,7 +2,7 @@
   "nodeCode": "ICFI",
   "slug": "it-came-from-iowa-019f3eb2",
   "title": "It Came From Iowa",
-  "generatedAtUtc": "2026-07-15 01:50:19Z",
+  "generatedAtUtc": "2026-07-25 23:04:02Z",
   "totalBeats": 14,
   "covered": 14,
   "chapterGranular": false,
@@ -15,12 +15,14 @@
     "Granularity": "beat",
     "HasBlueprint": true
   },
-  "flagCounts": {},
+  "flagCounts": {
+    "UNSCORED": 14
+  },
   "beats": [
     {
       "BeatId": "019f3eb2-6438-7381-901d-fb023a9011fd",
       "Number": 5103,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "opening-image",
       "Act": 0,
@@ -28,18 +30,17 @@
       "EscalationTarget": "3",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
+      "BeatTags": [],
+      "ProseLength": 4894,
+      "Flags": [
+        "UNSCORED"
       ],
-      "ProseLength": 5774,
-      "Score": 100,
-      "Flags": [],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7708-811b-181074c46ad0",
       "Number": 5104,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "inciting-incident",
       "Act": 0,
@@ -48,15 +49,16 @@
       "EventType": "departure",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3893,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 3114,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7474-924e-1d9d1925e8ab",
       "Number": 5105,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
@@ -65,15 +67,16 @@
       "EventType": "ascent",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4672,
-      "Score": 80,
-      "Flags": [],
+      "ProseLength": 4254,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7587-acc1-5a8600539152",
       "Number": 5106,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
@@ -86,15 +89,16 @@
         "anachrony-cut",
         "subplot"
       ],
-      "ProseLength": 4938,
-      "Score": 80,
-      "Flags": [],
+      "ProseLength": 4036,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-71ab-a542-09f818be4b6e",
       "Number": 5107,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
@@ -103,15 +107,16 @@
       "EventType": "ambush",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 4446,
-      "Score": 90,
-      "Flags": [],
+      "ProseLength": 3444,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7820-8915-07d8e0af4faa",
       "Number": 5108,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
@@ -120,15 +125,16 @@
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 6131,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 4895,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-74ae-8c65-64d5b582c6ac",
       "Number": 5109,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
@@ -139,15 +145,16 @@
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 4798,
-      "Score": 80,
-      "Flags": [],
+      "ProseLength": 4175,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7fe2-94eb-47facb1e361c",
       "Number": 5110,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
@@ -156,15 +163,16 @@
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3701,
-      "Score": 65.88235294117646,
-      "Flags": [],
+      "ProseLength": 3221,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
       "Number": 5111,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "midpoint",
       "Act": 0,
@@ -175,15 +183,16 @@
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 4197,
-      "Score": 78.82352941176471,
-      "Flags": [],
+      "ProseLength": 4565,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7cf6-b752-8e0318f41808",
       "Number": 5112,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "revelation",
       "Act": 0,
@@ -194,15 +203,16 @@
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 4239,
-      "Score": 98.00000000000001,
-      "Flags": [],
+      "ProseLength": 4051,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7ac8-966c-24e14b3fd4b2",
       "Number": 5113,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "pre-climax",
       "Act": 0,
@@ -214,15 +224,16 @@
         "subplot",
         "intertextual-touchpoint"
       ],
-      "ProseLength": 3977,
-      "Score": 81.66666666666667,
-      "Flags": [],
+      "ProseLength": 2969,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3eb2-6438-7bc4-8529-129c2c4d9a95",
       "Number": 5114,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "climax",
       "Act": 0,
@@ -231,15 +242,16 @@
       "EventType": "return",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2570,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 2273,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
       "Number": 5115,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "resolution",
       "Act": 0,
@@ -247,18 +259,17 @@
       "EscalationTarget": "9",
       "EventType": "ceremony",
       "RevelationMode": "none",
-      "BeatTags": [
-        "intertextual-touchpoint"
+      "BeatTags": [],
+      "ProseLength": 2802,
+      "Flags": [
+        "UNSCORED"
       ],
-      "ProseLength": 3482,
-      "Score": 100,
-      "Flags": [],
       "Covered": true
     },
     {
       "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
       "Number": 5116,
-      "Chapter": "It Came From Iowa",
+      "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
       "StructureRole": "final-image",
       "Act": 0,
@@ -267,9 +278,10 @@
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4017,
-      "Score": 96.16666666666667,
-      "Flags": [],
+      "ProseLength": 3702,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     }
   ]

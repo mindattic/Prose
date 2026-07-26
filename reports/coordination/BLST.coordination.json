@@ -2,7 +2,7 @@
   "nodeCode": "BLST",
   "slug": "ballast-019f3ac7",
   "title": "Ballast",
-  "generatedAtUtc": "2026-07-15 01:30:37Z",
+  "generatedAtUtc": "2026-07-25 23:03:54Z",
   "totalBeats": 30,
   "covered": 30,
   "chapterGranular": false,
@@ -16,56 +16,60 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 1
+    "UNSCORED": 30
   },
   "beats": [
     {
       "BeatId": "019f3ac8-394d-7849-a057-5b6af36d44cd",
       "Number": 5059,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "inciting-incident",
       "Act": 0,
       "Meaning": "The frame\u0027s coherence is failing; the numbers say jettison starts in forty-two days. Teo reads the stress distribution and marks the first load-bearing wall as candidate for cut.",
-      "EscalationTarget": "3",
+      "EscalationTarget": "2",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 5550,
-      "Score": 100,
-      "Flags": [],
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 4018,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397c-7e21-8b58-9e4b5317227c",
       "Number": 5060,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "inciting-incident",
       "Act": 0,
       "Meaning": "Forty-one households stacked in a cylinder that was never meant to last sixty years. She knows which walls carry which lives and which lives can be moved if the walls go.",
-      "EscalationTarget": "4",
+      "EscalationTarget": "3",
       "EventType": "survey",
-      "RevelationMode": "none",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 5585,
-      "Score": 80,
-      "Flags": [],
+      "ProseLength": 5492,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-765d-b322-1a94325715bc",
       "Number": 5061,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "AshgraveMaterials will purchase the bloc\u0027s structural mass, fund relocation to a ground-tier residential block, and distribute proceeds. The math is clean. The offer is real.",
-      "EscalationTarget": "5",
+      "EscalationTarget": "4",
       "EventType": "arrival",
-      "RevelationMode": "suspense",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 6170,
+      "ProseLength": 4555,
       "Flags": [
         "UNSCORED"
       ],
@@ -74,77 +78,81 @@
     {
       "BeatId": "019f3ac8-397d-73cf-a2c6-b8f550e5ea5e",
       "Number": 5062,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "The chair announces the descent schedule and the salvage offer in the same breath. Forty-one people in the common space. No one speaks first.",
       "EscalationTarget": "5",
       "EventType": "assembly",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 5755,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 4249,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7cb6-966c-eaf661d744e9",
       "Number": 5063,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "Her daughter Kaja needs neuretics integration; the fund is \u03A68,400 short. Ruslan\u0027s offer would close it. She asks the room if anyone else is counting the same shortfall.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "5",
       "EventType": "confession",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 5359,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 4234,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-79f7-b8ca-2b562ef072b5",
       "Number": 5064,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "Household 23 has his grandfather\u0027s workshop bolted to the floor: lathes, dies, jigs that took thirty years to calibrate. He votes no. He does not explain why the workshop cannot move.",
       "EscalationTarget": "6",
-      "EventType": "confrontation",
+      "EventType": "declaration",
       "RevelationMode": "none",
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 5582,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 3862,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7a7f-960f-86d7d8f26c3e",
       "Number": 5065,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "Her household\u0027s mass is modest; her jettison quota is \u03A62,100 in goods. Not enough to fund Kaja\u0027s neuretics alone. She would need the vote to pass and Ruslan\u0027s payout.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "6",
       "EventType": "calculation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 6317,
-      "Score": 77.14285714285715,
-      "Flags": [],
+      "ProseLength": 4819,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7a5a-b766-f437318a4b96",
       "Number": 5066,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
@@ -152,210 +160,222 @@
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 5787,
-      "Score": 80,
-      "Flags": [],
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 4949,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7f70-98c6-75c116a337e6",
       "Number": 5067,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "scene-break",
       "Act": 0,
       "Meaning": "The ledger is open on her desk. Two columns: stay and descend. The math is identical; only the outcome changes. She understands that her job is to make the outcome seem inevitable.",
-      "EscalationTarget": "5",
+      "EscalationTarget": "7",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 6116,
-      "Score": 74.28571428571429,
-      "Flags": [],
+      "ProseLength": 4680,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7422-8df7-4df1d5a6ba25",
       "Number": 5068,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "She wants to know what the math predicts before the households decide. Teo refuses. She tells her that her ledger is not a crystal ball; it is a jettison schedule.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "7",
       "EventType": "negotiation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 5378,
-      "Score": 94.28571428571428,
-      "Flags": [],
+      "ProseLength": 4694,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-79de-ae26-51db60c3c064",
       "Number": 5069,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "She is eighty-one and has lived in Household 12 for forty years. She sends word that she has no position on the offer. She will abide by the vote.",
-      "EscalationTarget": "5",
-      "EventType": "departure",
+      "EscalationTarget": "6",
+      "EventType": "absence",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 5569,
-      "Score": 62.857142857142854,
-      "Flags": [],
+      "ProseLength": 5848,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-75aa-a9f4-a0beeefa65e7",
       "Number": 5070,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "She asks what Teo would do in her place, with a daughter and a shortfall and a sinking bloc. Teo tells her the question is not hers to answer, and does not answer it.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "7",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 5378,
-      "Score": 85.71428571428571,
-      "Flags": [],
+      "ProseLength": 6309,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7821-a8a3-44247b0f7149",
       "Number": 5071,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "He sets them on the table where the vote will happen. He tells the room that these are forty years of calibration and that AshgraveMaterials will melt them. He votes no.",
-      "EscalationTarget": "7",
-      "EventType": "ceremony",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "8",
+      "EventType": "display",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 5918,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 5122,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-760a-8e5b-5b39a6e2ceb8",
       "Number": 5072,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "He walks the spine with Teo and Sigrun. He points out the eigenlift frame\u0027s degradation. He says the offer is not negotiable, but it is not permanent either; in six weeks, the descent will be forced, and there will be no payout\u2014only the cost of emergency relocation.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "8",
       "EventType": "inspection",
-      "RevelationMode": "suspense",
+      "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 6129,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 5810,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7627-87c2-350828a85d7e",
       "Number": 5073,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "She tells the households that she cannot vote yes or no; she will abstain and let the majority decide. She asks Teo if that is cowardice. She tells her that abstention is a vote; it just does not sound like one.",
-      "EscalationTarget": "6",
-      "EventType": "confession",
+      "EscalationTarget": "7",
+      "EventType": "declaration",
       "RevelationMode": "none",
-      "BeatTags": [
-        "intertextual-touchpoint"
+      "BeatTags": [],
+      "ProseLength": 5790,
+      "Flags": [
+        "UNSCORED"
       ],
-      "ProseLength": 6161,
-      "Score": 80,
-      "Flags": [],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7941-bc42-9e2835a2f11b",
       "Number": 5074,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "scene-break",
       "Act": 0,
-      "Meaning": "Kaja is at school. Priya looks at the neuretics fund balance on her wrist display: \u03A68,400 short. She does not touch the number. She knows that touching it will not change it.",
-      "EscalationTarget": "5",
+      "Meaning": "Kaja is at school. Prita looks at the neuretics fund balance on her wrist display: \u03A68,400 short. She does not touch the number. She knows that touching it will not change it.",
+      "EscalationTarget": "6",
       "EventType": "vigil",
-      "RevelationMode": "none",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4543,
-      "Score": 77.14285714285715,
-      "Flags": [],
+      "ProseLength": 4283,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7bc6-bb85-247e016ffb37",
       "Number": 5075,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "He tells Wen that the workshop is a beautiful thing but it is not worth staying in a bloc that is sinking. Wen tells him that the workshop is the only thing that is worth staying for.",
-      "EscalationTarget": "6",
-      "EventType": "negotiation",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
       "RevelationMode": "none",
       "BeatTags": [
-        "intertextual-touchpoint",
-        "subplot"
+        "subplot",
+        "intertextual-touchpoint"
       ],
-      "ProseLength": 5312,
-      "Score": 91.42857142857143,
-      "Flags": [],
+      "ProseLength": 4881,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-71af-a07b-5d59fe88232e",
       "Number": 5076,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "If the vote is yes, Priya\u0027s household receives \u03A63,200 from the payout; if the vote is no, she receives nothing and stays in a bloc that will force-descend in six weeks with no salvage proceeds. The arithmetic is not ambiguous.",
-      "EscalationTarget": "7",
+      "Meaning": "If the vote is yes, Prita\u0027s household receives a payout share on top of her \u03A62,100 quota \u2014 the exact figure still depends on the pool\u0027s total mass, unresolved until every household\u0027s allocation is run. If the vote is no, she receives nothing extra and stays in a bloc that will force-descend in six weeks with no salvage proceeds. The direction of the arithmetic is not ambiguous, even before the number is final.",
+      "EscalationTarget": "8",
       "EventType": "calculation",
-      "RevelationMode": "suspense",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3608,
-      "Score": 60,
-      "Flags": [],
+      "ProseLength": 2817,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7dba-ac48-4cdb516fbe3b",
       "Number": 5077,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "She owns more mass than any other household: forty years of books, photographs, furniture. Her jettison quota is \u03A64,800. If she votes yes, the payout is distributed across forty-one households and Priya\u0027s shortfall closes. If she votes no, the payout shrinks and Priya\u0027s daughter does not get her neuretics.",
+      "Meaning": "She owns more mass than any other household: forty years of books, photographs, furniture. Her jettison quota is \u03A64,800. If she votes yes, the payout is distributed across forty-one households and Prita\u0027s shortfall closes. If she votes no, the payout shrinks and Prita\u0027s daughter does not get her neuretics.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 5716,
-      "Score": 80,
-      "Flags": [],
+      "ProseLength": 4673,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-76d9-b315-c96e26515f40",
       "Number": 5078,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "scene-break",
       "Act": 0,
@@ -366,185 +386,194 @@
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 5889,
-      "Score": 84.00000000000001,
-      "Flags": [],
+      "ProseLength": 5422,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7dbb-9cb7-6f09fa574f0d",
       "Number": 5079,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "The vote is scheduled for three days hence. She reads Ruslan\u0027s offer again, word for word. She asks if anyone has questions. No one does.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "8",
       "EventType": "assembly",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 6040,
-      "Score": 60,
-      "Flags": [],
+      "ProseLength": 2527,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-75fb-9e51-6ec11a7b51d4",
       "Number": 5080,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "She does not ask for her vote. She tells Dagny that her daughter needs the neuretics and that Dagny\u0027s allocation is the only thing that makes the payout large enough. Dagny listens and does not respond.",
       "EscalationTarget": "8",
-      "EventType": "approach",
+      "EventType": "negotiation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 5666,
-      "Score": 80,
-      "Flags": [],
+      "ProseLength": 5369,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-7b63-8663-ec0908a8d08b",
       "Number": 5081,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "He asks if AshgraveMaterials will guarantee that the workshop jigs are recycled and not melted. Ruslan tells him that recycling and melting are the same process. Wen asks if he is being cruel. Ruslan says he is being honest.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "9",
       "EventType": "confrontation",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 6291,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 5909,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-75dc-9826-31380555311f",
       "Number": 5082,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "scene-break",
       "Act": 0,
       "Meaning": "She sees the lake far below, the Gray Zone beyond, the Spires in the distance. The bloc is still buoyant. In six weeks, it will not be. She understands that her job is not to save it; it is to calculate what reaches the ground.",
-      "EscalationTarget": "6",
-      "EventType": "vigil",
+      "EscalationTarget": "8",
+      "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4866,
-      "Score": 80,
-      "Flags": [],
+      "ProseLength": 4244,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-793d-b34d-8f9c4c20143d",
       "Number": 5083,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
       "Meaning": "Forty-one households vote on the descent and the salvage offer. The tally is twenty-three yes, seventeen no, one abstention. Sigrun\u0027s abstention does not change the outcome. The vote passes.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "10",
       "EventType": "ceremony",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4837,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 4558,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-79aa-9508-70cef45e6964",
       "Number": 5084,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "Her allocation tips the payout large enough for Priya\u0027s daughter to receive her neuretics. Dagny does not explain. She votes and walks back to Household 12.",
+      "Meaning": "Her allocation tips the payout large enough for Prita\u0027s daughter to receive her neuretics. Dagny does not explain. She votes and walks back to Household 12.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4266,
-      "Score": 100,
-      "Flags": [],
+      "ProseLength": 3768,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397d-79ca-a9e8-0f755bb8f7fc",
       "Number": 5085,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "climax",
       "Act": 0,
-      "Meaning": "She finds Dagny in her quarters and thanks her. Dagny tells her that she did not vote for her daughter; she voted because the bloc is sinking and the vote is real. Priya asks if there is a difference. Dagny does not answer.",
-      "EscalationTarget": "8",
+      "Meaning": "She finds Dagny in her quarters and thanks her. Dagny tells her that she did not vote for her daughter; she voted because the bloc is sinking and the vote is real. Prita asks if there is a difference. Dagny does not answer.",
+      "EscalationTarget": "9",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4685,
-      "Score": 94.28571428571428,
-      "Flags": [],
+      "ProseLength": 4272,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397e-76e6-a3e7-0452f331ee17",
       "Number": 5086,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "denouement",
       "Act": 0,
       "Meaning": "The descent is scheduled. The households have thirty days to pack. AshgraveMaterials will strip the bloc\u0027s structural mass and distribute the proceeds. The eigenlift frame will fail on schedule. The bloc will land.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "8",
       "EventType": "inventory",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4716,
-      "Score": 85.71428571428571,
-      "Flags": [],
+      "ProseLength": 5676,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397e-7e89-84b6-9711ec43940e",
       "Number": 5087,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "scene-break",
       "Act": 0,
       "Meaning": "The lathes are bolted to the floor. In four weeks, they will be cut loose and recycled. He runs his hands over the calibration marks and understands that the workshop has already left. He is just the last thing to go.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "7",
       "EventType": "loss",
       "RevelationMode": "none",
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 5011,
-      "Score": 71.42857142857143,
-      "Flags": [],
+      "ProseLength": 4595,
+      "Flags": [
+        "UNSCORED"
+      ],
       "Covered": true
     },
     {
       "BeatId": "019f3ac8-397e-7f44-8ed6-52c6c9b5d0ad",
       "Number": 5088,
-      "Chapter": "Ballast",
+      "Chapter": "Chapter 1 \u2014 Ballast",
       "ChapterIndex": 0,
       "StructureRole": "denouement",
       "Act": 0,
       "Meaning": "The eigenlift frame loses coherence at 320 meters. The descent is controlled. The households are relocated. The vote was real. The cost was real. The bloc reaches the ground.",
-      "EscalationTarget": "10",
+      "EscalationTarget": "6",
       "EventType": "descent",
       "RevelationMode": "none",
-      "BeatTags": [
-        "intertextual-touchpoint"
+      "BeatTags": [],
+      "ProseLength": 5728,
+      "Flags": [
+        "UNSCORED"
       ],
-      "ProseLength": 4773,
-      "Score": 94.28571428571428,
-      "Flags": [],
       "Covered": true
     }
   ]

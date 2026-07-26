@@ -1525,7 +1525,7 @@ The voice came back before Inés was out of sight. Warm, close, forward-left. No
 
 And she did have what she needed. The address in Pilsen. The time, the day after tomorrow. The appointment that would close the channel and take her the rest of the way to him.
 
-The voice hadn't taken anything from her. It had only stayed. Everyone else walked off up the path, and it stayed. That was how it felt.
+The voice hadn't taken anything from her. It had only stayed. Everyone else walked off up the path, and it stayed.
 
 That was exactly how it was built to feel.
 

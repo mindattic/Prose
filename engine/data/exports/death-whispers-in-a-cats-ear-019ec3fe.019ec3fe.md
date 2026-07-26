@@ -1522,7 +1522,7 @@ The voice came back before Inés was out of sight. Warm, close, forward-left. No
 
 And she did have what she needed. The address in Pilsen. The time, the day after tomorrow. The appointment that would close the channel and take her the rest of the way to him. She only had to keep the voice close until then — hold on to it through the two days between, and not let anyone talk it quiet the way Inés had almost done.
 
-The voice hadn't taken anything from her. It had only stayed. Everyone else walked off up the path, and it stayed. That was how it felt.
+The voice hadn't taken anything from her. It had only stayed. Everyone else walked off up the path, and it stayed.
 
 That was exactly how it was built to feel.
 
@@ -2796,7 +2796,7 @@ The passage was wrong the way a cleaned place is wrong. Industrial solvent sat u
 
 The girl was small and young. Cat ears — pale fur, cream-white shading to gold at the tips, still in the careful post-surgery stage where the shape was new and the healing recent. Not a week old. She'd had them done, and then this had happened, in that order, close together.
 
-Mira crouched to read the surgical work up close — and stopped. The fur pattern, the gold shading, the exact stage of healing: she'd seen it before. Two weeks ago. A different corridor, a different girl, filed and closed and signed off as an isolated overdose. Not isolated. She'd been wrong then, which meant whoever did this had already done it once with her name on the paperwork saying nothing happened. This wasn't a body she'd been called to find. It was a second one — and the trail she'd need to follow ran straight back through her own signature, through a case she'd let close, through however many others had gone the same way while she wasn't looking. The answer she'd come here for had opened a door onto something far larger, and far worse, than one girl behind a compactor.
+Mira crouched to read the surgical work up close — and stopped. The fur pattern, the gold shading, the exact stage of healing: she'd seen it before. Two weeks ago. A different corridor, a different girl, filed and closed and signed off as an isolated overdose. Not isolated. She'd been wrong then, which meant whoever did this had already done it once with her name on the paperwork saying nothing happened. This wasn't a body she'd been called to find. It was a second one — and the trail she'd need to follow ran straight back through her own signature, through a case she'd let close, through however many others had gone the same way while she wasn't looking.
 
 She photographed before she read. Always that order. The photographs could be shown to anyone — a tribunal, a family, Isaac. The Read could be shown to no one. She did the part that counted in the open first.
 
