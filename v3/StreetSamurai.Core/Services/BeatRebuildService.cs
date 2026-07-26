@@ -88,6 +88,8 @@ public class BeatRebuildService
         [JsonPropertyName("sceneEnd")] public bool SceneEnd { get; set; }
     }
 
+    private record RebeatCheckpoint(Guid NodeId, int SourceBeatsProcessed, List<LlmBeat> Beats);
+
     /// <summary>
     /// Re-segment one node. With <paramref name="apply"/>=false this is a dry run:
     /// it computes the proposed beats + retention and mutates nothing. With
@@ -112,18 +114,41 @@ public class BeatRebuildService
         if (sourceText.Trim().Length == 0)
             return new(nodeId, slug, title, false, ordered.Count, 0, 0, false, null, "Node beats are empty — nothing to rebuild.");
 
+        // ── Checkpoint — load prior progress so a killed run can resume ──
+        var ckptPath = Path.Combine(Path.GetTempPath(), $"rebeat-chk-{nodeId:N}.json");
+        var rebuilt = new List<RebuiltBeat>();
+        int ckptSourcesDone = 0;
+        if (File.Exists(ckptPath))
+        {
+            try
+            {
+                var ckptRaw = await File.ReadAllTextAsync(ckptPath, ct);
+                var ckpt = JsonSerializer.Deserialize<RebeatCheckpoint>(ckptRaw, JsonDefaults.LlmParsing);
+                if (ckpt?.NodeId == nodeId && ckpt.SourceBeatsProcessed > 0)
+                {
+                    rebuilt.AddRange(ckpt.Beats.Select(b => new RebuiltBeat(b.Text, b.SceneEnd)));
+                    ckptSourcesDone = ckpt.SourceBeatsProcessed;
+                    log.LogInformation("[rebeat] Resuming from checkpoint: {N}/{Total} source beats, {M} rebuilt beats.",
+                        ckptSourcesDone, ordered.Count, rebuilt.Count);
+                }
+            }
+            catch { /* corrupt checkpoint — start fresh */ }
+        }
+
         // ── LLM re-segmentation — process each source beat as its own unit ──
         // Passing each chapter beat individually lets the LLM see a full chapter
         // and identify all its internal Scene/Sequel arcs. Assembling into one
         // stream then re-chunking crosses chapter boundaries, producing only 1-2
         // beats per window instead of the expected 6-10.
         var system = BuildSystemPrompt();
-        var rebuilt = new List<RebuiltBeat>();
+        int sourceIdx = 0;
         foreach (var entry in ordered)
         {
             ct.ThrowIfCancellationRequested();
             var beatText = (entry.Beat.Text ?? "").Trim();
+            sourceIdx++;
             if (beatText.Length == 0) continue;
+            if (sourceIdx <= ckptSourcesDone) continue;  // already in checkpoint
 
             // Beats within the large-beat threshold are passed as a single call;
             // outlier beats are sub-windowed so JSON output stays manageable.
@@ -140,6 +165,11 @@ public class BeatRebuildService
                     rebuilt.AddRange(beats);
                 }
             }
+
+            // Persist checkpoint after each source beat so a kill can resume here.
+            var ckptData = new RebeatCheckpoint(nodeId, sourceIdx,
+                rebuilt.Select(b => new LlmBeat { Text = b.Text, SceneEnd = b.SceneEnd }).ToList());
+            await File.WriteAllTextAsync(ckptPath, JsonSerializer.Serialize(ckptData), ct);
         }
         rebuilt = rebuilt.Where(b => !string.IsNullOrWhiteSpace(b.Text)).ToList();
         if (rebuilt.Count == 0)
@@ -164,6 +194,7 @@ public class BeatRebuildService
             return new(nodeId, slug, title, false, ordered.Count, rebuilt.Count, retention, true, null, $"Backup export failed ({ex.Message}) — left untouched."); }
 
         await ReplaceBeatsAsync(nodeId, rebuilt, ct);
+        if (File.Exists(ckptPath)) File.Delete(ckptPath);
         log.LogInformation("Rebuilt node {Slug}: {Old} → {New} beats (retention {Ret:P0}).", slug, ordered.Count, rebuilt.Count, retention);
         return new(nodeId, slug, title, true, ordered.Count, rebuilt.Count, retention, true, backupPath, "Rebuilt and gaps assigned.");
     }
