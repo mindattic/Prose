@@ -57,7 +57,7 @@ public class BeatDoctrineRules
         "SCENE beat: the POV character enters with a specific, immediate Goal; faces Conflict (opposition, complication, obstacle); ends in Disaster (failure, reversal, or a worse situation — never full success that kills tension).",
         "SEQUEL beat: follows a Disaster; POV character Reacts (involuntary, before thought — grief, shock, anger); faces a Dilemma (all options are bad); makes a Decision that launches the next Scene.",
         "One beat = one complete Scene OR one complete Sequel. Never merge a Scene and its Sequel into one beat. Never split a Scene's Goal/Conflict/Disaster across multiple beats.",
-        "Scale: a 400-page novel produces roughly 400–600 beats (approximately 1 beat per page). A 3-page scene with one goal/conflict/disaster is ONE beat — do not fragment it into paragraphs.",
+        "Scale: one complete Scene arc (however many pages it takes) = ONE beat. One complete Sequel arc = ONE beat. Do not fragment a single Scene or Sequel across multiple beats. Do not merge separate Scenes or Sequels into one beat.",
         "Dialogue, action, description, and inner monologue are all INTERIOR to a beat. A 10-line back-and-forth is part of the Conflict inside one Scene beat — not 10 separate beats.",
         "Inside a beat: real sentences; each speaker's dialogue on its own line (NOT its own beat); questions end with '?'; question attribution uses asks/asked, not says/said; inner monologue is italic on its own line, never labeled.",
         "Mark sceneEnd=true on the last beat before a time/location jump. Mark it false everywhere else.",

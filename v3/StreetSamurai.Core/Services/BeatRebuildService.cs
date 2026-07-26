@@ -245,13 +245,12 @@ public class BeatRebuildService
             rules + "\n\n" + tone + "\n\n" +
             "TASK: Divide the passage below into Swain SCENE and SEQUEL beats per the doctrine above. " +
             "Each beat is one complete Scene (Goal→Conflict→Disaster) or one complete Sequel (Reaction→Dilemma→Decision). " +
-            "SCALE RULE: target roughly 1 beat per page (250 words). A 3,000-word chapter = ~12 beats; a 1,000-word chapter = ~4 beats. " +
-            "Find every natural Goal-launch or Reaction-launch in the prose and start a new beat there. " +
-            "One complete Scene (Goal+Conflict+Disaster, one or more pages) = ONE beat entry. " +
-            "One complete Sequel (Reaction+Dilemma+Decision, often a paragraph or two) = ONE beat entry. " +
+            "Find every Goal-launch or Reaction-launch in the prose and start a new beat there. " +
+            "One complete Scene arc = ONE beat entry, regardless of length. " +
+            "One complete Sequel arc = ONE beat entry, regardless of length. " +
             "A sustained dialogue exchange is the Conflict inside ONE Scene beat — do NOT split dialogue into multiple beats. " +
-            "A short paragraph of a character reacting to a disaster = ONE Sequel beat, even if brief. " +
-            "When in doubt, split — too many small beats is acceptable; too few giant beats loses the structure. " +
+            "A short passage of a character reacting to a disaster = ONE Sequel beat. " +
+            "When the structure is ambiguous, split — a missed boundary loses shape; a spurious boundary is easy to merge later. " +
             "Apply ONLY these mechanical fixes within each beat: put each speaker's dialogue on its own LINE (not its own beat); end questions with '?'; " +
             "use asks/asked (not says/said) for question attribution.\n" +
             "HARD CONSTRAINTS:\n" +
