@@ -37,8 +37,8 @@ public class LiteraryRulesData
 /// The canonical, codified definition of what a Beat is — the single source the
 /// story generator AND the re-beater both read (surfaced by
 /// <see cref="StreetSamurai.Core.Services.DatabaseService.GetLiteraryRulesPrompt"/>).
-/// A beat is a STORY BEAT, not a typographic paragraph: one unit of story that
-/// leads to the next. Defaults are baked in here so the doctrine is always
+/// A beat is a complete SCENE or SEQUEL in Dwight Swain's Scene-Sequel doctrine.
+/// NOT a paragraph, NOT an MRU. Defaults are baked in here so the doctrine is always
 /// present even against a DB literary_rules row that predates it; the stored
 /// setting may override.
 /// </summary>
@@ -46,20 +46,21 @@ public class BeatDoctrineRules
 {
     [JsonPropertyName("definition")]
     public string Definition { get; set; } =
-        "A beat is a STORY BEAT: one discrete unit of story that moves it forward and hands off to the next. " +
-        "It is USUALLY a single paragraph, but it can be a line of dialogue, a moment of action, an image, or a " +
-        "realization — judged by narrative function, not by length.";
+        "A beat is one complete SCENE or one complete SEQUEL in Dwight Swain's Scene-Sequel doctrine. " +
+        "NOT a paragraph. NOT a Motivation-Reaction Unit (MRU). MRUs are the sentence-level fabric INSIDE a beat. " +
+        "A SCENE runs: Goal (POV character enters wanting something specific) → Conflict (obstacle blocks it) → Disaster (ends in failure or reversal — never full success). " +
+        "A SEQUEL runs: Reaction (gut-level involuntary response to the disaster) → Dilemma (all choices are bad) → Decision (new goal that launches the next Scene).";
 
     [JsonPropertyName("rules")]
     public List<string> Rules { get; set; } =
     [
-        "One beat does ONE thing: a moment of action, a line (or one tight exchange) of dialogue, an image, a realization, or a turn. When the story turns to the next thing, that is the next beat.",
-        "Usually a beat is one paragraph; sometimes a single line, sometimes a few sentences that form one moment. Never a fixed line count.",
-        "Beats CHAIN — each leads into the next so the sequence reads as continuous momentum, not disconnected fragments.",
-        "NOT a run-on block: never cram a whole scene into one beat.",
-        "NOT sentence-shrapnel: never split one continuous moment across many tiny beats.",
-        "Inside a beat: real sentences; each speaker's dialogue on its own line; questions end with '?'; question attribution uses asks/asked, not says/said; inner monologue is italic on its own line, never labeled.",
-        "Between beats there is a GAP of narration silence: short after a line of dialogue, longer after a narration beat, longest at a scene or section break.",
+        "SCENE beat: the POV character enters with a specific, immediate Goal; faces Conflict (opposition, complication, obstacle); ends in Disaster (failure, reversal, or a worse situation — never full success that kills tension).",
+        "SEQUEL beat: follows a Disaster; POV character Reacts (involuntary, before thought — grief, shock, anger); faces a Dilemma (all options are bad); makes a Decision that launches the next Scene.",
+        "One beat = one complete Scene OR one complete Sequel. Never merge a Scene and its Sequel into one beat. Never split a Scene's Goal/Conflict/Disaster across multiple beats.",
+        "Scale: a 400-page novel produces roughly 400–600 beats (approximately 1 beat per page). A 3-page scene with one goal/conflict/disaster is ONE beat — do not fragment it into paragraphs.",
+        "Dialogue, action, description, and inner monologue are all INTERIOR to a beat. A 10-line back-and-forth is part of the Conflict inside one Scene beat — not 10 separate beats.",
+        "Inside a beat: real sentences; each speaker's dialogue on its own line (NOT its own beat); questions end with '?'; question attribution uses asks/asked, not says/said; inner monologue is italic on its own line, never labeled.",
+        "Mark sceneEnd=true on the last beat before a time/location jump. Mark it false everywhere else.",
     ];
 }
 

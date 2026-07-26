@@ -41,8 +41,17 @@ public class BeatRebuildService
     /// rebuilt prose for the result to be auto-applied. Below this = refuse + flag.</summary>
     public const double MinWordRetention = 0.90;
 
-    /// <summary>Sentence-aligned window size fed to the LLM per call.</summary>
-    private const int WindowChars = 3500;
+    /// <summary>Sentence-aligned window size fed to the LLM per call.
+    /// 12,000 chars ≈ 2,000 words ≈ 8 pages. Large enough to see a full scene
+    /// or sequel in context; small enough that the JSON output (same prose
+    /// re-packaged) stays well under MaxOutputTokens and dialogue quotes are
+    /// escaped reliably.</summary>
+    private const int WindowChars = 12000;
+
+    /// <summary>Max output tokens for the segmentation call. Must be large enough
+    /// to hold the window's prose re-emitted as JSON (≈ WindowChars / 3 tokens)
+    /// plus structure overhead.</summary>
+    private const int MaxOutputTokens = 16000;
 
     public BeatRebuildService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
@@ -177,9 +186,15 @@ public class BeatRebuildService
             "You are a structural editor for a fiction engine. Your ONLY job is to re-segment an existing passage " +
             "into STORY BEATS and apply mechanical formatting — NOT to rewrite it.\n\n" +
             rules + "\n\n" + tone + "\n\n" +
-            "TASK: Divide the passage below into story beats per the doctrine above (a beat is one unit of story " +
-            "that leads to the next; usually a paragraph, sometimes a single line of dialogue or one moment). " +
-            "Apply ONLY these mechanical fixes: put each speaker's dialogue on its own beat/line; end questions with '?'; " +
+            "TASK: Divide the passage below into Swain SCENE and SEQUEL beats per the doctrine above. " +
+            "Each beat is one complete Scene (Goal→Conflict→Disaster) or one complete Sequel (Reaction→Dilemma→Decision). " +
+            "SCALE RULE: this window is roughly 8 pages of prose; expect 6–10 beats in the window, NOT 50+. " +
+            "One complete Scene (Goal+Conflict+Disaster, spanning multiple paragraphs and dialogue) = ONE beat entry. " +
+            "One complete Sequel (Reaction+Dilemma+Decision) = ONE beat entry. " +
+            "A multi-page dialogue exchange is ONE beat (the Conflict phase of a Scene). " +
+            "A page of a character processing a disaster is ONE Sequel beat. " +
+            "When in doubt, merge — too few large beats is correct; too many small beats is WRONG. " +
+            "Apply ONLY these mechanical fixes within each beat: put each speaker's dialogue on its own LINE (not its own beat); end questions with '?'; " +
             "use asks/asked (not says/said) for question attribution.\n" +
             "HARD CONSTRAINTS:\n" +
             "- PRESERVE THE AUTHOR'S WORDING. Do not add, remove, summarize, or rephrase content. Keep every sentence.\n" +
@@ -191,7 +206,7 @@ public class BeatRebuildService
     private async Task<List<RebuiltBeat>> SegmentWindowAsync(string system, string window, CancellationToken ct)
     {
         string raw;
-        try { raw = await llm.GenerateAsync(system, window, temperature: 0.1, maxTokens: 8000, ct: ct); }
+        try { raw = await llm.GenerateAsync(system, window, temperature: 0.1, maxTokens: MaxOutputTokens, ct: ct); }
         catch (Exception ex) { log.LogWarning(ex, "LLM segmentation call failed; keeping window as one beat.");
             return [new RebuiltBeat(window.Trim(), false)]; }
 
