@@ -46,12 +46,12 @@ public class NodeWorkbenchServiceTests
     private async Task<Node> MakeNodeAsync(string title = "Test Node")
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var s = new StoryNode
+        var s = new BookNode
         {
             Id = Guid.CreateVersion7(),
             Slug = "test-" + Guid.NewGuid().ToString("N")[..8],
             Title = title,
-            Kind = "story",
+            Kind = "book",
             Status = "draft",
             SortKey = 100,
         };
@@ -353,7 +353,7 @@ public class NodeWorkbenchServiceTests
         Node a, b;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            a = new StoryNode   { Id = Guid.CreateVersion7(), Slug = "a-" + Guid.NewGuid().ToString("N")[..6], Title = "A", Kind = "story",   Status = "draft", SortKey = 100 };
+            a = new BookNode    { Id = Guid.CreateVersion7(), Slug = "a-" + Guid.NewGuid().ToString("N")[..6], Title = "A", Kind = "book",    Status = "draft", SortKey = 100 };
             b = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "b-" + Guid.NewGuid().ToString("N")[..6], Title = "B", Kind = "chapter", Status = "draft", SortKey = 200, ParentNodeId = a.Id };
             db.Nodes.AddRange(a, b);
             await db.SaveChangesAsync();
@@ -416,10 +416,10 @@ public class NodeWorkbenchServiceTests
                 Title = "Keep", Kind = "chapter", Status = "draft",
                 ParentNodeId = root.Id, SortKey = 100,
             };
-            drafts = new StoryNode
+            drafts = new BookNode
             {
                 Id = Guid.CreateVersion7(), Slug = "drafts-" + Guid.NewGuid().ToString("N")[..6],
-                Title = "Drafts", Kind = "story", Status = "draft",
+                Title = "Drafts", Kind = "book", Status = "draft",
                 ParentNodeId = root.Id, SortKey = 200,
             };
             draftGrandchild = new ChapterNode

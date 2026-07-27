@@ -42,7 +42,7 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
     {
         await using var db = await factory.CreateDbContextAsync(ct);
         var node = await db.Nodes
-            .Where(n => n.Kind == "story" &&
+            .Where(n => n.Kind == "book" &&
                         (n.NodeCode == nodeCodeOrSlug || n.Slug == nodeCodeOrSlug))
             .FirstOrDefaultAsync(ct);
         return node is null ? null : await BuildReportAsync(db, node, ct);
@@ -62,7 +62,7 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
     {
         await using var db = await factory.CreateDbContextAsync(ct);
         var stories = await db.Nodes
-            .Where(n => n.Kind == "story")
+            .Where(n => n.Kind == "book")
             .OrderBy(n => n.NodeCode)
             .ToListAsync(ct);
 

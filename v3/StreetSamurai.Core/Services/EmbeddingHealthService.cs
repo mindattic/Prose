@@ -110,7 +110,7 @@ public class EmbeddingHealthService
 
     /// <summary>
     /// Find semantic outliers within a story. Uses a recursive CTE to collect
-    /// beats across the node subtree (handles leaf StoryNodes and chapter books).
+    /// beats across the node subtree (handles leaf BookNodes and chapter books).
     /// Returns each beat's average cosine distance to all story peers, normalised
     /// to sigma units.
     /// </summary>

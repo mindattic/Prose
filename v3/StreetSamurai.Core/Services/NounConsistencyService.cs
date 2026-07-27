@@ -16,7 +16,7 @@ namespace StreetSamurai.Core.Services;
 // Scan logic:
 //   • Whole-word, case-insensitive match.
 //   • Covers the target node's direct beats AND one level of chapter children
-//     (so calling with a StoryNode slug covers its ChapterNode children).
+//     (so calling with a BookNode slug covers its ChapterNode children).
 // ─────────────────────────────────────────────────────────────────────────────
 
 public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> dbFactory)
@@ -97,7 +97,7 @@ public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> db
         if (rules.Count == 0)
             return new NounConsistencyReport(node.Title, node.Slug, node.NodeCode, 0, []);
 
-        // Include one level of chapter children so a StoryNode slug covers its chapters.
+        // Include one level of chapter children so a BookNode slug covers its chapters.
         var nodeIds = new List<Guid> { node.Id };
         var childIds = await db.Nodes.AsNoTracking()
             .Where(n => n.ParentNodeId == node.Id)

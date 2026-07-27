@@ -113,9 +113,9 @@ public class NodeWorkbenchService
         foreach (var d in direct)
             acc.Add(new OrderedBeat(d.Beat, nodeId, d.SortKey, d.IsEnabled));
 
-        // Then child nodes in SortKey order — skip story-kind nodes (draft buckets).
+        // Then child nodes in SortKey order — skip book-kind nodes (draft buckets).
         var children = await db.Nodes
-            .Where(s => s.ParentNodeId == nodeId && s.Kind != "story")
+            .Where(s => s.ParentNodeId == nodeId && s.Kind != "book")
             .OrderBy(s => s.SortKey)
             .Select(s => s.Id)
             .ToListAsync(ct);
@@ -386,7 +386,7 @@ public class NodeWorkbenchService
     /// </summary>
     public async Task<Guid> CreateNodeFromBeatsAsync(
         string title, IReadOnlyList<string> beatTexts, string? description = null,
-        string kind = "story", string? seed = null, bool chapterStartFirst = false, CancellationToken ct = default)
+        string kind = "book", string? seed = null, bool chapterStartFirst = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // Serializable transaction guards the two MaxAsync calls (Node.SortKey and
@@ -450,7 +450,7 @@ public class NodeWorkbenchService
     /// new id + slug.
     /// </summary>
     /// <param name="title">Display title (required).</param>
-    /// <param name="kind">Free-form category — "story" (root), "book", "chapter", etc.</param>
+    /// <param name="kind">Free-form category — "book" (root), "chapter", etc.</param>
     /// <param name="description">Optional back-of-book description.</param>
     /// <param name="seed">Optional one-line generator seed / logline.</param>
     /// <param name="nodeCode">Optional short reference code (e.g. "SRZR"). Upper-cased;
@@ -458,7 +458,7 @@ public class NodeWorkbenchService
     /// <param name="previousNodeId">Optional prior node this one continues (sequel commandments).</param>
     /// <param name="parentNodeId">Optional parent (makes this a sub-node under a book/saga).</param>
     public async Task<(Guid Id, string Slug)> CreateNodeAsync(
-        string title, string kind = "story", string? description = null, string? seed = null,
+        string title, string kind = "book", string? description = null, string? seed = null,
         string? nodeCode = null, Guid? previousNodeId = null, Guid? parentNodeId = null,
         CancellationToken ct = default)
     {
@@ -592,8 +592,8 @@ public class NodeWorkbenchService
 
         // Display label only — the TPH discriminator (NodeType) is fixed at
         // creation, so a split leaf keeps its concrete type. Splitting is only
-        // offered on story-level nodes, where type and label already agree.
-        parent.Kind = "story";
+        // offered on book-level nodes, where type and label already agree.
+        parent.Kind = "book";
         parent.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
         log.LogInformation("Split '{Title}' into a Collection: {Children} child nodes, {Beats} beats.", parent.Title, segments.Count, beatCount);

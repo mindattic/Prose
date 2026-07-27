@@ -41,7 +41,7 @@ public static class EnsureChapterCli
         var targets = new List<(Guid Id, string Slug, string Title)>();
         if (all)
         {
-            var flat = await db.Nodes.OfType<StoryNode>().AsNoTracking().IgnoreQueryFilters()
+            var flat = await db.Nodes.OfType<BookNode>().AsNoTracking().IgnoreQueryFilters()
                 .Where(n => !db.Nodes.IgnoreQueryFilters().Any(c => c.ParentNodeId == n.Id)
                     && db.BeatNodes.Any(b => b.NodeId == n.Id && b.IsEnabled))
                 .Select(n => new { n.Id, n.Slug, n.Title }).ToListAsync();

@@ -11,7 +11,7 @@ plus its review score, spread, and structure. Read-only. NO votes, NO panels, NO
 
 ## Fixed facts
 - DB (read-only): `sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"` (Windows Auth).
-- Story nodes = `Nodes.NodeType='story'` (TPH discriminator; in EF, `db.Nodes.OfType<StoryNode>()`).
+- Story nodes = `Nodes.NodeType='book'` (TPH discriminator; in EF, `db.Nodes.OfType<BookNode>()`).
 - Coordination is `ss --coordinate --slug <slug>` — read-only, no LLM. It writes
   `reports/coordination/<CODE>.coordination.json` and stamps `## Beat Coordination Index` into
   the node bible. Run against the **built** DLL for speed:
@@ -45,7 +45,7 @@ plus its review score, spread, and structure. Read-only. NO votes, NO panels, NO
      (SELECT COUNT(*) FROM BeatNodes bn WHERE bn.NodeId=n.Id AND bn.IsEnabled=1) AS directBeats,
      CAST(n.Score AS decimal(6,2)) AS score
    FROM Nodes n JOIN Universe u ON n.UniverseId=u.Id
-   WHERE n.NodeType='story' ORDER BY u.Slug, n.NodeCode;
+   WHERE n.NodeType='book' ORDER BY u.Slug, n.NodeCode;
    ```
 
 3. **SD + ballots (clean).** Compute mean/SD/ballot count from valid ballots only:
@@ -56,7 +56,7 @@ plus its review score, spread, and structure. Read-only. NO votes, NO panels, NO
      CAST(AVG(CASE WHEN r.Score>0 THEN CAST(r.Score AS float) END) AS decimal(6,2)) AS mean,
      CAST(STDEV(CASE WHEN r.Score>0 THEN CAST(r.Score AS float) END) AS decimal(6,2)) AS sd
    FROM Nodes n LEFT JOIN NodeReviews r ON r.NodeId=n.Id
-   WHERE n.NodeType='story' GROUP BY n.NodeCode;
+   WHERE n.NodeType='book' GROUP BY n.NodeCode;
    ```
 
 4. **Coverage + gaps per story.** From each `reports/coordination/<CODE>.coordination.json`:

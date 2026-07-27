@@ -301,7 +301,7 @@ The project follows the **MindAttic Codex** documentation standard. The source o
 - **`docs/FRANCHISE.md`** — **GLMZ** franchise & IP bible: commercial positioning, genre, logline.
   Hand-edit directly.
 - **`Nodes.NodeBible`** (DB, L0 per-story) — story arc, beat spine, character rules, locks,
-  voice register, structural blueprint. **The single source of truth for that StoryNode.**
+  voice register, structural blueprint. **The single source of truth for that BookNode.**
   Mirrored to `docs/nodes/<CODE>.md` as a generated read-only file — never hand-edit the file.
 - **`docs/USER_STORIES.md`** (L2) — test-cited stories + backlog + audit log. Every `✅` names its
   verifying test or recorded evidence.
@@ -353,7 +353,7 @@ Working rules:
    `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
 2. **Entities** — seed every named character, CorpoNation, place, or weapon into the DB via CLI or
    MCP **before any prose is generated**.
-3. **Story structure (SS-A43)** — create a **StoryNode** (MCP `create_story` / CLI `--create-story`)
+3. **Story structure (SS-A43)** — create a **BookNode** (MCP `create_story` / CLI `--create-story`)
    + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
    outline) = the story node's `seed` text.
 4. **Structural blueprint (StoryScope countermeasures)** — after the bible/spine exists, run

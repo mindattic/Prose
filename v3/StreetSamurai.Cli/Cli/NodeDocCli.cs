@@ -42,7 +42,7 @@ public static class NodeDocCli
         if (all)
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            // Root nodes (ParentNodeId == null) with a NodeCode — SeriesNodes and StoryNodes
+            // Root nodes (ParentNodeId == null) with a NodeCode — SeriesNodes and BookNodes
             var nodes = await db.Nodes
                 .Where(n => n.NodeCode != null && n.ParentNodeId == null)
                 .OrderBy(n => n.NodeCode)

@@ -267,7 +267,7 @@ All entities must be seeded before prose begins.
 - [ ] `docs/nodes/VIGL.md` written
 - [ ] Codex doctor passes after all doc edits
 - [ ] Entity seeding complete (MCP)
-- [ ] StoryNode `VIGL` created in DB
+- [ ] BookNode `VIGL` created in DB
 - [ ] ChapterNodes created in DB (14 chapters minimum)
 - [ ] Structural blueprint generated
 - [ ] Node bible does NOT exist yet — brief precedes bible ✓ (brief written first)

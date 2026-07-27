@@ -73,7 +73,7 @@ public class ContinuityExtractionService
     /// Extract continuity claims from one chapter's prose.
     /// </summary>
     /// <param name="storySlug">
-    /// Code of the parent StoryNode (e.g. "BCODA"). When provided, each extracted
+    /// Code of the parent BookNode (e.g. "BCODA"). When provided, each extracted
     /// claim is tagged with this slug so cross-story consistency queries can identify
     /// which story the claim originates from. Pass <c>null</c> when the story context
     /// is not available (existing callers are unaffected — the field stays null).

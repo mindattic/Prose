@@ -246,4 +246,4 @@ Run `ss --scan-entity-mentions --slug oppn` after each chapter draft.
 - [x] World-Revelation Sequencing checked — confirms no locked revelation
 - [x] Entity seeding done: Rafi Sarkissian, Halvard Onwe (characters), Ashgrave Spire (place) seeded; Reza/Tavi/Coeli/Auda Vane/Scraps + AshgraveMaterials/Axiom reused
 - [x] Title confirmed by author: **The Fall Down** (code OPPN); bookends *The Come Up*
-- [x] StoryNode `the-fall-down-019f78f4` + 4 ChapterNodes + 14-beat dual-POV spine + hand-authored bible + blueprint created 2026-07-19; prose drafting
+- [x] BookNode `the-fall-down-019f78f4` + 4 ChapterNodes + 14-beat dual-POV spine + hand-authored bible + blueprint created 2026-07-19; prose drafting

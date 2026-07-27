@@ -179,7 +179,7 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] NodeBibleFallback failed, continuing"); }
         }
 
-        // Fix 4: auto-populate Location from StoryNode.DefaultLocation when caller doesn't set it.
+        // Fix 4: auto-populate Location from BookNode.DefaultLocation when caller doesn't set it.
         // Enables SceneContextBuilder (ambient grounding) and AmbientAnomalyService for every beat.
         if (string.IsNullOrWhiteSpace(context.Location) && context.NodeId != Guid.Empty && dbFactory != null)
         {

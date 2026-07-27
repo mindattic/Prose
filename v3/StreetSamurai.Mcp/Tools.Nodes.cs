@@ -55,14 +55,14 @@ public class NodeTools
         this.nodeDoc = nodeDoc;
     }
 
-    [McpServerTool, Description("Create a SeriesNode — the top-level grouping (saga / anthology) that StoryNodes hang under. Never holds beats. Returns the new id, slug, and URL.")]
+    [McpServerTool, Description("Create a SeriesNode — the top-level grouping (saga / anthology) that BookNodes hang under. Never holds beats. Returns the new id, slug, and URL.")]
     public Task<string> CreateSeries(
         [Description("Series title. Required.")] string title,
         [Description("Optional short reference code (e.g. 'BCODA'). Upper-cased; rejected if already in use.")] string code = "",
         [Description("Optional one-line description (back-of-book text).")] string description = "")
         => CreateNodeCoreAsync(title, "series", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: "", code: code, previous: "");
 
-    [McpServerTool, Description("Create a StoryNode — a single story arc (book / novella / standalone). Pass 'seed' to also generate a story bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.")]
+    [McpServerTool, Description("Create a BookNode — a single story arc (book / novella / standalone). Pass 'seed' to also generate a story bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.")]
     public Task<string> CreateStory(
         [Description("Story title. Required.")] string title,
         [Description("Optional back-of-book description.")] string description = "",
@@ -71,12 +71,12 @@ public class NodeTools
         [Description("Optional parent SeriesNode Guid id (or slug). Empty = standalone.")] string parentNodeIdOrSlug = "",
         [Description("Optional short author-assigned reference code (e.g. 'ATTE'). Uppercased, unique lookup key.")] string code = "",
         [Description("Optional prior story this one continues (slug or GUID) — sequel commandments apply.")] string previous = "")
-        => CreateNodeCoreAsync(title, "story", description, seed, targetBeats, parentNodeIdOrSlug, code, previous);
+        => CreateNodeCoreAsync(title, "book", description, seed, targetBeats, parentNodeIdOrSlug, code, previous);
 
     [McpServerTool, Description("Create a ChapterNode under a story. Chapters hold beats and never carry a reference code. parentNodeIdOrSlug is REQUIRED. Returns the new id, slug, and url.")]
     public Task<string> CreateChapter(
         [Description("Chapter title. Required.")] string title,
-        [Description("Parent StoryNode Guid id or slug. Required.")] string parentNodeIdOrSlug,
+        [Description("Parent BookNode Guid id or slug. Required.")] string parentNodeIdOrSlug,
         [Description("Optional back-of-book description.")] string description = "")
         => CreateNodeCoreAsync(title, "chapter", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: parentNodeIdOrSlug, code: "", previous: "");
 
@@ -166,7 +166,7 @@ public class NodeTools
     {
         if (string.IsNullOrWhiteSpace(title))
             return JsonSerializer.Serialize(new { error = "title_required" }, CanonTools.JsonOpts);
-        var resolvedKind = string.IsNullOrEmpty(kind) ? "story" : kind;
+        var resolvedKind = string.IsNullOrEmpty(kind) ? "book" : kind;
 
         Guid? previousId = await ResolveNodeIdAsync(previous);
         if (!string.IsNullOrWhiteSpace(previous) && previousId == null)
@@ -1039,10 +1039,10 @@ public class NodeTools
 
     private static string? KindCompatibilityError(string parentKind, string childKind) => (parentKind, childKind) switch
     {
-        ("series", "story")   => null,
-        ("story",  "chapter") => null,
-        ("story",  "story")   => "A story cannot contain another story — only a series can.",
-        ("series", "chapter") => "A chapter must be under a story, not directly under a series.",
+        ("series", "book")    => null,
+        ("book",   "chapter") => null,
+        ("book",   "book")    => "A book cannot contain another book — only a series can.",
+        ("series", "chapter") => "A chapter must be under a book, not directly under a series.",
         ("chapter", _)        => "A chapter cannot contain other nodes (it holds beats).",
         _                     => $"A '{childKind}' cannot be placed under a '{parentKind}'.",
     };

@@ -84,12 +84,12 @@ public class NodeMigrationServiceTests
         Assert.That(report.BeatsAdded,    Is.EqualTo(24));
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        Assert.That(await db.Nodes.CountAsync(s => s.Kind == "story"),   Is.EqualTo(2));
+        Assert.That(await db.Nodes.CountAsync(s => s.Kind == "book"),    Is.EqualTo(2));
         Assert.That(await db.Nodes.CountAsync(s => s.Kind == "chapter"), Is.EqualTo(6));
         Assert.That(await db.Beats.CountAsync(),                            Is.EqualTo(24));
         Assert.That(await db.BeatNodes.CountAsync(),                      Is.EqualTo(24));
 
-        // Parent-child wiring: every chapter node points at a story node.
+        // Parent-child wiring: every chapter node points at a book node.
         var orphans = await db.Nodes
             .Where(s => s.Kind == "chapter" && s.ParentNodeId == null)
             .CountAsync();

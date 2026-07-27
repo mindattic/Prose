@@ -14,11 +14,11 @@ namespace StreetSamurai.Cli;
 /// Args:
 ///   --min-chars &lt;N&gt;   Only beats with Text.Length &gt; N are burst. Default 800.
 ///   --node &lt;slug&gt;   Restrict to one node (by slug). Repeatable.
-///   --book &lt;slug&gt;     Descend from a story-level node into all chapter descendants
-///                        and burst beats on each leaf. Repeatable. Stories-are-nodes /
-///                        chapters-are-subnodes means filtering on kind="story" alone
+///   --book &lt;slug&gt;     Descend from a book-level node into all chapter descendants
+///                        and burst beats on each leaf. Repeatable. Books-are-nodes /
+///                        chapters-are-subnodes means filtering on kind="book" alone
 ///                        catches zero beats — they live on the chapter children.
-///   --kind &lt;kind&gt;     Restrict to nodes of a given Kind ("story", "chapter").
+///   --kind &lt;kind&gt;     Restrict to nodes of a given Kind ("book", "chapter").
 ///   --dry-run            Don't write; just report what would change.
 ///
 /// Shared beats (in &gt;1 node) are skipped — the burst would create

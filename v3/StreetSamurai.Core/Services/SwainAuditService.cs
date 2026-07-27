@@ -101,7 +101,7 @@ public sealed class SwainAuditService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes
-            .Where(n => n.Kind == "story" && (n.Slug == slugOrCode || n.NodeCode == slugOrCode))
+            .Where(n => n.Kind == "book" && (n.Slug == slugOrCode || n.NodeCode == slugOrCode))
             .Select(n => new { n.Id, Code = n.NodeCode ?? n.Slug ?? "", n.Title })
             .FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Story node not found: '{slugOrCode}'");
@@ -113,7 +113,7 @@ public sealed class SwainAuditService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var nodes = await db.Nodes
-            .Where(n => n.Kind == "story")
+            .Where(n => n.Kind == "book")
             .OrderBy(n => n.NodeCode)
             .Select(n => new { n.Id, Code = n.NodeCode ?? n.Slug ?? "", n.Title })
             .ToListAsync(ct);

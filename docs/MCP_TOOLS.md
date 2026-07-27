@@ -1021,12 +1021,12 @@ Clone a node into a fully independent copy: new Node row + new Beat rows, same p
 Create a ChapterNode under a story. Chapters hold beats and never carry a reference code. parentNodeIdOrSlug is REQUIRED. Returns the new id, slug, and url.
 
 - `title` (string, required) — Chapter title. Required.
-- `parentNodeIdOrSlug` (string, required) — Parent StoryNode Guid id or slug. Required.
+- `parentNodeIdOrSlug` (string, required) — Parent BookNode Guid id or slug. Required.
 - `description` (string, optional) — Optional back-of-book description.
 
 ### `create_series`
 
-Create a SeriesNode — the top-level grouping (saga / anthology) that StoryNodes hang under. Never holds beats. Returns the new id, slug, and URL.
+Create a SeriesNode — the top-level grouping (saga / anthology) that BookNodes hang under. Never holds beats. Returns the new id, slug, and URL.
 
 - `title` (string, required) — Series title. Required.
 - `code` (string, optional) — Optional short reference code (e.g. 'BCODA'). Upper-cased; rejected if already in use.
@@ -1034,7 +1034,7 @@ Create a SeriesNode — the top-level grouping (saga / anthology) that StoryNode
 
 ### `create_story`
 
-Create a StoryNode — a single story arc (book / novella / standalone). Pass 'seed' to also generate a story bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.
+Create a BookNode — a single story arc (book / novella / standalone). Pass 'seed' to also generate a story bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.
 
 - `title` (string, required) — Story title. Required.
 - `description` (string, optional) — Optional back-of-book description.

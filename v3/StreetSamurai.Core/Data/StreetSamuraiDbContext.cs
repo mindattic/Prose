@@ -121,7 +121,7 @@ public class StreetSamuraiDbContext : DbContext
     // Typed TPH views over the same Nodes table (legacy Books/Chapters DbSets
     // below belong to the retired Book/Chapter schema, hence the *Nodes names).
     public DbSet<SeriesNode>       SeriesNodes       => Set<SeriesNode>();
-    public DbSet<StoryNode>        StoryNodes        => Set<StoryNode>();
+    public DbSet<BookNode>         BookNodes         => Set<BookNode>();
     public DbSet<ChapterNode>      ChapterNodes      => Set<ChapterNode>();
     public DbSet<BeatNode>         BeatNodes         => Set<BeatNode>();
     public DbSet<NodePublication>  NodePublications  => Set<NodePublication>();
@@ -524,13 +524,13 @@ public class StreetSamuraiDbContext : DbContext
         });
         b.Entity<Node>(e =>
         {
-            // Table-per-hierarchy: SeriesNode / StoryNode / ChapterNode share
+            // Table-per-hierarchy: SeriesNode / BookNode / ChapterNode share
             // the Nodes table, discriminated by NodeType. Kind remains the
             // free-form display label; NodeType is the structural truth.
             e.ToTable("Nodes");
             e.HasDiscriminator<string>("NodeType")
                 .HasValue<SeriesNode>("series")
-                .HasValue<StoryNode>("story")
+                .HasValue<BookNode>("book")
                 .HasValue<ChapterNode>("chapter");
             e.Property("NodeType").HasMaxLength(20);
             e.HasKey(x => x.Id);

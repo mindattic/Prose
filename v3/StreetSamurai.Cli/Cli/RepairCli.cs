@@ -79,13 +79,13 @@ public static class RepairCli
             Console.WriteLine();
             Console.WriteLine("[normalize-kinds]");
             await using var db = await sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContextAsync();
-            // series/story: root level (ParentNodeId IS NULL), except explicit series nodes which stay "series"
-            // story: null-parent nodes that aren't already "series"
+            // series/book: root level (ParentNodeId IS NULL), except explicit series nodes which stay "series"
+            // book: null-parent nodes that aren't already "series"
             var storyRows = await db.Database.ExecuteSqlRawAsync(
-                "UPDATE Nodes SET Kind = 'story' WHERE ParentNodeId IS NULL AND Kind <> 'series'");
+                "UPDATE Nodes SET Kind = 'book' WHERE ParentNodeId IS NULL AND Kind <> 'series'");
             var chapterRows = await db.Database.ExecuteSqlRawAsync(
-                "UPDATE Nodes SET Kind = 'chapter' WHERE ParentNodeId IS NOT NULL AND Kind NOT IN ('story','series')");
-            Console.WriteLine($"  root nodes set to story  : {storyRows}");
+                "UPDATE Nodes SET Kind = 'chapter' WHERE ParentNodeId IS NOT NULL AND Kind NOT IN ('book','series')");
+            Console.WriteLine($"  root nodes set to book   : {storyRows}");
             Console.WriteLine($"  child nodes set to chapter: {chapterRows}");
         }
 
@@ -105,18 +105,18 @@ public static class RepairCli
                 {
                     var uid = grp.Key;
                     var drafts = await db.Nodes.FirstOrDefaultAsync(s =>
-                        s.Title == "Drafts" && s is StoryNode && s.ParentNodeId == null && s.UniverseId == uid);
+                        s.Title == "Drafts" && s is BookNode && s.ParentNodeId == null && s.UniverseId == uid);
                     if (drafts == null)
                     {
                         await using var repairTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable);
                         var maxSort = await db.Nodes.Where(s => s.ParentNodeId == null)
                             .MaxAsync(s => (double?)s.SortKey) ?? 0;
-                        drafts = new StreetSamurai.Core.Data.Entities.StoryNode
+                        drafts = new StreetSamurai.Core.Data.Entities.BookNode
                         {
                             Id = Guid.CreateVersion7(),
                             Slug = $"drafts-{Guid.CreateVersion7().ToString("N")[..8]}",
                             Title = "Drafts",
-                            Kind = "story",
+                            Kind = "book",
                             Status = "draft",
                             SortKey = maxSort + 100.0,
                             UniverseId = uid,

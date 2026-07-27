@@ -17,7 +17,7 @@
 @inject StreetSamurai.Core.Services.NodeReviewService ReviewSvc
 @inject StreetSamurai.Shared.Services.TabService TabSvc
 @*
-   Story index over the node tree (SeriesNode / StoryNode / ChapterNode).
+   Story index over the node tree (SeriesNode / BookNode / ChapterNode).
    Lists every top-level node grouped by kind. Click to open in the
    unified writer/recorder at /node/{id}. The Create CTA below creates a
    blank top-level node and routes you there.
@@ -272,7 +272,7 @@
     /// <summary>Id of the parent node currently running a collection export. Null when idle.</summary>
     private Guid? exportingCollectionId;
     private string newTitle = "";
-    private string newKind = "story";
+    private string newKind = "book";
 
     // ── Inline title/synopsis/summary editing ────────────────────────────
     private Guid? editingId;
@@ -315,8 +315,8 @@
             var local = nodes.FirstOrDefault(x => x.Id == id);
             if (local != null) { local.Title = entity.Title; local.Description = entity.Description; local.Summary = entity.Summary; }
             grouped = nodes.GroupBy(s => s.Kind).OrderBy(g => g.Key);
-            allStories = nodes.Where(n => n.Kind == "story")
-                .Concat(childNodes.Values.SelectMany(kids => kids.Where(k => k.Kind == "story")))
+            allStories = nodes.Where(n => n.Kind == "book")
+                .Concat(childNodes.Values.SelectMany(kids => kids.Where(k => k.Kind == "book")))
                 .OrderBy(s => s.SortKey).ThenBy(s => s.Title).ToList();
             CancelEdit();
             Toast.Info("SAVED", "Story updated.");
@@ -456,8 +456,8 @@
         });
 
         grouped = nodes.GroupBy(s => s.Kind).OrderBy(g => g.Key);
-        allStories = nodes.Where(n => n.Kind == "story")
-            .Concat(childNodes.Values.SelectMany(kids => kids.Where(k => k.Kind == "story")))
+        allStories = nodes.Where(n => n.Kind == "book")
+            .Concat(childNodes.Values.SelectMany(kids => kids.Where(k => k.Kind == "book")))
             .OrderBy(s => s.SortKey).ThenBy(s => s.Title)
             .ToList();
         loading = false;
@@ -533,10 +533,10 @@
         {
             var universeId = Universe.CurrentId;
             var drafts = await db.Nodes.FirstOrDefaultAsync(s =>
-                s.Title == "Drafts" && s is StreetSamurai.Core.Data.Entities.StoryNode && s.ParentNodeId == null && s.UniverseId == universeId);
+                s.Title == "Drafts" && s is StreetSamurai.Core.Data.Entities.BookNode && s.ParentNodeId == null && s.UniverseId == universeId);
             if (drafts == null)
             {
-                drafts = new StreetSamurai.Core.Data.Entities.StoryNode
+                drafts = new StreetSamurai.Core.Data.Entities.BookNode
                 {
                     Id = Guid.CreateVersion7(),
                     Slug = $"drafts-{Guid.CreateVersion7().ToString("N")[..8]}",
@@ -593,7 +593,7 @@
     private static string KindLabel(string kind) => kind switch
     {
         "series"    => "Series",
-        "story"     => "Stories",
+        "book"      => "Stories",
         "chapter"   => "Chapters",
         "reference" => "Reference",
         _           => kind,
@@ -694,14 +694,14 @@
     private static string ScoreBadge(int score) =>
         score >= 80 ? "bg-success" : score >= 60 ? "bg-info text-dark" : score >= 40 ? "bg-warning text-dark" : "bg-danger";
 
-    // Enforces the hierarchy: series → story → chapter.
+    // Enforces the hierarchy: series → book → chapter.
     // Returns an error message if the combination is invalid, null if OK.
     private static string? KindCompatibilityError(string parentKind, string childKind) => (parentKind, childKind) switch
     {
-        ("series", "story")   => null,
-        ("story",  "chapter") => null,
-        ("story",  "story")   => "A story cannot contain another story — only a series can.",
-        ("series", "chapter") => "A chapter must be under a story, not directly under a series.",
+        ("series", "book")    => null,
+        ("book",   "chapter") => null,
+        ("book",   "book")    => "A book cannot contain another book — only a series can.",
+        ("series", "chapter") => "A chapter must be under a book, not directly under a series.",
         ("chapter", _)        => "A chapter cannot contain other nodes (it holds beats).",
         _                     => $"A '{childKind}' cannot be placed under a '{parentKind}'.",
     };

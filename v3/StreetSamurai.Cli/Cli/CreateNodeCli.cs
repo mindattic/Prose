@@ -11,7 +11,7 @@ namespace StreetSamurai.Cli;
 ///
 ///   --title "..."          Display title. Required.
 ///   --code &lt;CODE&gt;          Optional short reference code (e.g. SRZR). Upper-cased; must be unique.
-///   --kind &lt;k&gt;             Category — "story" (default), "book", "chapter", "vignette"…
+///   --kind &lt;k&gt;             Category — "book" (default), "chapter", "vignette"…
 ///   --description "..."       Optional one-line description.
 ///   --logline "..."        Optional one-line generator seed / logline (stored in Node.Seed).
 ///                          (Named --logline, not --seed, to avoid the global DB seed-runner flag.)
@@ -25,7 +25,7 @@ public static class CreateNodeCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? title = null, code = null, description = null, seed = null, previous = null, parent = null;
-        string kind = "story";
+        string kind = "book";
 
         for (int i = 0; i < args.Length; i++)
         {

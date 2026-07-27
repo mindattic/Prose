@@ -275,7 +275,7 @@ public class NightlyHealthService
     private async Task<List<StoryMeta>> ResolveStoriesAsync(string? slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var query = db.Nodes.OfType<StoryNode>().AsNoTracking();
+        var query = db.Nodes.OfType<BookNode>().AsNoTracking();
         if (slug != null)
             query = query.Where(n => n.Slug == slug);
         else

@@ -36,7 +36,7 @@ public static class ExportSynopsisCli
         List<(Guid Id, string Title)> targets;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Nodes.AsNoTracking().OfType<StoryNode>().AsQueryable();
+            var q = db.Nodes.AsNoTracking().OfType<BookNode>().AsQueryable();
             if (!all) q = q.Where(n => n.Slug == slug);
             targets = (await q.Select(n => new { n.Id, n.Title }).ToListAsync())
                 .Select(n => (n.Id, n.Title)).ToList();

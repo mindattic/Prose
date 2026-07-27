@@ -63,13 +63,13 @@ public class NodeMigrationService
         {
             var b = bookRows[i];
             if (existingNodeIds.Contains(b.Id)) continue;
-            db.Nodes.Add(new StoryNode
+            db.Nodes.Add(new BookNode
             {
                 Id       = b.Id,
                 Slug     = ResolveSlug(b.Slug, b.Title, b.Id),
                 Title    = b.Title ?? "Untitled book",
                 Description = b.Tagline,
-                Kind     = "story",
+                Kind     = "book",
                 Status   = "draft",
                 SortKey  = (i + 1) * 100.0,
             });

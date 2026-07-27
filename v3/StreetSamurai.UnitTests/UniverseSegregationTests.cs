@@ -148,7 +148,7 @@ public class UniverseSegregationTests
         universe.CurrentId = UniverseA;
         using (var db = factory.CreateDbContext())
         {
-            db.Nodes.Add(new StoryNode { Id = Guid.CreateVersion7(), Slug = "a-tale", Title = "A Tale", Kind = "story", Status = "draft" });
+            db.Nodes.Add(new BookNode { Id = Guid.CreateVersion7(), Slug = "a-tale", Title = "A Tale", Kind = "book", Status = "draft" });
             db.SaveChanges();
         }
         universe.CurrentId = UniverseB;

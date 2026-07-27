@@ -3,15 +3,15 @@
 /// <summary>
 /// Abstract base of the story tree (table-per-hierarchy on the Nodes table,
 /// discriminated by the <c>NodeType</c> column). The hierarchy unifies
-/// Series, Story, and Chapter under one polymorphic root:
+/// Series, Book, and Chapter under one polymorphic root:
 ///
 ///   SeriesNode  — top-level grouping (e.g. "Bushido Coda", a saga/anthology).
-///     StoryNode — a single story arc; a book. May hold beats directly when it
-///                 is a standalone/leaf story with no chapter children.
-///       ChapterNode — organizational unit inside a story; holds beats.
+///     BookNode  — a single story arc; a book. May hold beats directly when it
+///                 is a standalone/leaf book with no chapter children.
+///       ChapterNode — organizational unit inside a book; holds beats.
 ///
 /// Beats attach via <see cref="BeatNode"/> to ChapterNodes and to leaf
-/// StoryNodes; a SeriesNode never holds beats directly. Walking the tree in
+/// BookNodes; a SeriesNode never holds beats directly. Walking the tree in
 /// SortKey order gives the reading sequence.
 ///
 /// The <see cref="Kind"/> field remains a free-form display label ("book",
@@ -51,7 +51,7 @@ public abstract class Node
     /// "episode", "scene", "saga", "anthology", "vignette". UI groups by
     /// this. Storage doesn't constrain it; the structural truth is the CLR
     /// type (NodeType discriminator). Defaulted per subclass.</summary>
-    public string Kind { get; set; } = "story";
+    public string Kind { get; set; } = "book";
 
     /// <summary>"draft" | "generating" | "narrating" | "ready" | "failed" |
     /// "stopped". Mirrors the old Episode.Status semantics.</summary>
@@ -280,7 +280,7 @@ public static class NodeFactory
 {
     /// <summary>New empty node of the concrete type implied by a free-form
     /// kind label ("series"/"saga"/"anthology" → SeriesNode; "chapter"/"scene"/
-    /// "episode"/"snippet" → ChapterNode; anything else → StoryNode). Used where
+    /// "episode"/"snippet" → ChapterNode; anything else → BookNode). Used where
     /// the type arrives as data (CLI flags, import files) rather than statically.
     /// The label itself is preserved on <see cref="Node.Kind"/> for display.</summary>
     public static Node Create(string? kind)
@@ -289,7 +289,7 @@ public static class NodeFactory
         {
             "series" or "saga" or "anthology"            => (Node)new SeriesNode(),
             "chapter" or "scene" or "episode" or "snippet" => new ChapterNode(),
-            _                                            => new StoryNode(),
+            _                                            => new BookNode(),
         };
         if (!string.IsNullOrWhiteSpace(kind)) node.Kind = kind.Trim();
         return node;
@@ -300,14 +300,14 @@ public static class NodeFactory
     {
         SeriesNode  => new SeriesNode(),
         ChapterNode => new ChapterNode(),
-        _           => new StoryNode(),
+        _           => new BookNode(),
     };
 }
 
 // ── Concrete node types (TPH discriminator NodeType) ─────────────────────
 
 /// <summary>Top-level grouping: a saga, series, or anthology. Children are
-/// StoryNodes. Never holds beats directly.</summary>
+/// BookNodes. Never holds beats directly.</summary>
 public class SeriesNode : Node
 {
     public SeriesNode() { Kind = "series"; }
@@ -315,13 +315,13 @@ public class SeriesNode : Node
 
 /// <summary>A single story arc — a book, novella, or standalone piece. Parent
 /// (optional) is a SeriesNode; children (optional) are ChapterNodes. A leaf
-/// StoryNode with no chapters holds its beats directly.</summary>
-public class StoryNode : Node
+/// BookNode with no chapters holds its beats directly.</summary>
+public class BookNode : Node
 {
-    public StoryNode() { Kind = "story"; }
+    public BookNode() { Kind = "book"; }
 }
 
-/// <summary>Organizational unit inside a story. Parent is a StoryNode; holds
+/// <summary>Organizational unit inside a book. Parent is a BookNode; holds
 /// beats, never child nodes.</summary>
 public class ChapterNode : Node
 {

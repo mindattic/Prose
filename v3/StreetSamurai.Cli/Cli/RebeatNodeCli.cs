@@ -57,9 +57,9 @@ public static class RebeatNodeCli
                 { { Count: 1 } m => m[0], _ => null };
                 if (node == null) { Console.Error.WriteLine("[rebeat] Node not found (or id prefix ambiguous)."); return 1; }
 
-                // Rebeat targets chapters, not the story node — beats live in chapters.
-                // If the node is a story, expand to its chapter children.
-                if (node.Kind == "story")
+                // Rebeat targets chapters, not the book node — beats live in chapters.
+                // If the node is a book, expand to its chapter children.
+                if (node.Kind == "book")
                 {
                     var chapters = await db.Nodes.AsNoTracking()
                         .Where(c => c.ParentNodeId == node.Id && c.Kind == "chapter")
