@@ -30,6 +30,7 @@ public class DocxExportService
     private const string Body12 = "24";   // half-points → 12pt
     private const string Chapter16 = "32";
     private const string Title28 = "56";
+    private const string Subtitle18 = "36";
     private const string Author14 = "28";
     // Words-per-page base rate, calibrated via least-squares over 7 stories (UNDR, DWIACE, MNEMO,
     // SRZR, MxG, ATTE, TEST): pages ≈ words/306 + chapters*1.1, avg error ±3.6 pages.
@@ -70,44 +71,9 @@ public class DocxExportService
             .Select(u => u.Slug)
             .FirstOrDefaultAsync(ct);
         var baseDir = settings.GetExportDirectory(universeSlug);
-        var safeTitle = SanitizeTitle(node.Title);
-
-        // De-dup: if a sibling node produces the same folder name, prefix with
-        // NodeCode — or GUID7 if NodeCode is null or shared with a colliding sibling.
-        var siblings = await db.Nodes.AsNoTracking()
-            .Where(s => s.Id != nodeId && s.ParentNodeId == node.ParentNodeId)
-            .Select(s => new { s.Title, s.NodeCode })
-            .ToListAsync(ct);
-        if (siblings.Any(s => SanitizeTitle(s.Title) == safeTitle))
-        {
-            var code = node.NodeCode;
-            if (string.IsNullOrWhiteSpace(code) ||
-                siblings.Any(s => SanitizeTitle(s.Title) == safeTitle && s.NodeCode == code))
-                code = node.Id.ToString("N")[..7];
-            safeTitle = $"[{code}] {safeTitle}";
-        }
-
-        // Mirror the node's series/book ancestry in the output path so a story
-        // in a series publishes one level deeper (e.g. ".../Street Samurai/Bushido
-        // Coda/Bushido Coda V5.docx"); standalone stories stay at ".../<Title>/...".
-        var ancestors = new List<string>();
-        var parentId = node.ParentNodeId;
-        for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
-        {
-            var parent = await db.Nodes.AsNoTracking()
-                .Where(s => s.Id == pid)
-                .Select(s => new { s.Title, s.ParentNodeId })
-                .FirstOrDefaultAsync(ct);
-            if (parent is null) break;
-            ancestors.Insert(0, SanitizeTitle(parent.Title));   // top-down order
-            parentId = parent.ParentNodeId;
-        }
-        var pathParts = new List<string> { baseDir };
-        pathParts.AddRange(ancestors);
-        pathParts.Add(safeTitle);
-        var nodeDir = Path.Combine(pathParts.ToArray());
+        var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct);
         cleanup.Clean(nodeDir);
-        var exportPath = Path.Combine(nodeDir, $"{safeTitle} V{nextVersion}.docx");
+        var exportPath = Path.Combine(nodeDir, $"{fileBaseName} V{nextVersion}.docx");
 
         using (var doc = WordprocessingDocument.Create(exportPath, WordprocessingDocumentType.Document))
         {
@@ -203,6 +169,8 @@ public class DocxExportService
             // ── Title page ──
             body.AppendChild(BlankLines(8));
             body.AppendChild(Centered(node.Title, Title28, bold: true));
+            if (!string.IsNullOrWhiteSpace(node.Subtitle))
+                body.AppendChild(Centered(node.Subtitle!, Subtitle18));
             if (!string.IsNullOrWhiteSpace(author))
                 body.AppendChild(Centered(author!, Author14, italic: true));
             body.AppendChild(PageBreak());
@@ -569,15 +537,6 @@ public class DocxExportService
         return run;
     }
 
-    /// <summary>Safe folder/file segment — strips chars invalid on Windows paths.</summary>
-    private static string SanitizeTitle(string title)
-    {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        invalid.Add('\''); invalid.Add('’');
-        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
-        kept = Regex.Replace(kept, @"\s+", " ").Trim();
-        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
-    }
 
     private static string HyphenateTitle(string title)
     {

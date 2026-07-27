@@ -240,38 +240,12 @@ public sealed class SynopsisExportService(
 
     private async Task<string> NodePublishDirAsync(Guid nodeId, CancellationToken ct)
     {
-        var ancestors = new List<string>();
-        string? universeSlug;
-        string title;
-        await using (var db = await dbFactory.CreateDbContextAsync(ct))
-        {
-            var self = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
-                .Select(s => new { s.ParentNodeId, s.UniverseId, s.Title }).FirstAsync(ct);
-            title = self.Title;
-            universeSlug = await db.Universes.AsNoTracking()
-                .Where(u => u.Id == self.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
-            var parentId = self.ParentNodeId;
-            for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
-            {
-                var parent = await db.Nodes.AsNoTracking().Where(s => s.Id == pid)
-                    .Select(s => new { s.Title, s.ParentNodeId }).FirstOrDefaultAsync(ct);
-                if (parent is null) break;
-                ancestors.Insert(0, SanitizeTitle(parent.Title));
-                parentId = parent.ParentNodeId;
-            }
-        }
-        var parts = new List<string> { settings.GetExportDirectory(universeSlug) };
-        parts.AddRange(ancestors);
-        parts.Add(SanitizeTitle(title));
-        return Path.Combine(parts.ToArray());
-    }
-
-    private static string SanitizeTitle(string? title)
-    {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        invalid.Add('\''); invalid.Add('’');
-        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
-        kept = Regex.Replace(kept, @"\s+", " ").Trim();
-        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId).FirstAsync(ct);
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
+        var baseDir = settings.GetExportDirectory(universeSlug);
+        var (nodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct);
+        return nodeDir;
     }
 }

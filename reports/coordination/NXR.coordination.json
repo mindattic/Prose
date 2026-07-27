@@ -2,9 +2,9 @@
   "nodeCode": "NXR",
   "slug": "neon-rust-019f06da",
   "title": "Neon \u0026 Rust",
-  "generatedAtUtc": "2026-07-25 23:04:58Z",
-  "totalBeats": 26,
-  "covered": 26,
+  "generatedAtUtc": "2026-07-27 09:39:42Z",
+  "totalBeats": 356,
+  "covered": 0,
   "chapterGranular": false,
   "storyScope": {
     "TemporalScheme": "linear",
@@ -16,467 +16,5402 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 26
+    "MISSING_MEANING": 356,
+    "UNSCORED": 356,
+    "NO_CONSTRUCTION": 330
   },
   "beats": [
     {
-      "BeatId": "019f06e7-3e54-7851-a428-ffa6415aa14e",
-      "Number": 4830,
+      "BeatId": "019fa00b-058b-74c0-9327-c8638debd6d1",
+      "Number": 7187,
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 1 \u2014 The Message: Rook reads the dead-drop note; processes that Ohara used a contact point that should not exist; decides before she finishes the sentence.",
       "EscalationTarget": "2",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 3882,
+      "ProseLength": 359,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11d1-05c1-70bc-850f-122c220846d4",
-      "Number": 4898,
+      "BeatId": "019fa00b-05af-7bb1-bc6f-2e336afaaa9f",
+      "Number": 7188,
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Rook\u0027s disciplined self-awareness as she resists the pull of habit, grounding the reader in her methodology before the crew-assembly plot begins.",
       "EscalationTarget": "3",
       "EventType": "departure",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 5126,
+      "ProseLength": 297,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-4c8b-72a7-9f91-f1d1db03c542",
-      "Number": 4831,
+      "BeatId": "019fa00b-05b2-7bc9-8e38-8fad7ccff070",
+      "Number": 7189,
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 2 \u2014 Assembly: Rook finds the crew; nobody asks how she got their current address; everyone\u0027s reason for coming back is different and nobody names it.",
       "EscalationTarget": "4",
       "EventType": "arrival",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint",
-        "subplot"
-      ],
-      "ProseLength": 6073,
+      "BeatTags": [],
+      "ProseLength": 31,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11d1-3e3d-7ef3-b157-89fdb60d5eaf",
-      "Number": 4899,
+      "BeatId": "019fa00b-05b2-7a4f-9c0c-25edbdf0dda6",
+      "Number": 7190,
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Rook\u0027s independent investigative capability and signals that she withholds methods from her crew, establishing a quiet asymmetry of trust.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 6722,
+      "ProseLength": 219,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-5906-7976-83f7-e04c50c2ee9b",
-      "Number": 4832,
+      "BeatId": "019fa00b-05b2-7406-96bb-0a5872d17816",
+      "Number": 7191,
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 3 \u2014 Ohara\u0027s Briefing: Full scope \u2014 the partition, the hardware degradation timeline, the working theory about what is inside; the window is weeks, possibly less.",
       "EscalationTarget": "6",
       "EventType": "confession",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 5491,
+      "BeatTags": [],
+      "ProseLength": 528,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-664e-7df6-af13-e52429b68ba8",
-      "Number": 4833,
+      "BeatId": "019fa00b-05b2-774d-b65b-4b734667779e",
+      "Number": 7192,
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 4 \u2014 Vox\u0027s Tap: Four-channel network sweep; PEREGRINE\u0027s new paper and new funder identified; the competitor is moving fast; the window is shorter than Ohara estimated.",
       "EscalationTarget": "6",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 5267,
+      "ProseLength": 594,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a20-c458-760f-a947-0e82f951d162",
-      "Number": 4983,
+      "BeatId": "019fa00b-05b2-7a02-a715-123a62b88b04",
+      "Number": 7193,
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Plants the story\u0027s central mystery by showing Vox discover that someone inside PEREGRINE is covertly searching for a specific missing person, escalating the stakes beyond the job.",
       "EscalationTarget": "7",
       "EventType": "negotiation",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4242,
+      "BeatTags": [],
+      "ProseLength": 295,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f1363-8893-7947-aefa-213c10195684",
-      "Number": 4915,
-      "Chapter": "Chapter 2 \u2014 The Partitio",
-      "ChapterIndex": 1,
+      "BeatId": "019fa00b-05b2-70a6-9f90-5fee7edbdcfc",
+      "Number": 7194,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off Vox\u0027s technical ingenuity by showing her exploit an overlooked legacy vulnerability, establishing the crew\u0027s operational edge against a better-resourced adversary.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 5233,
+      "BeatTags": [],
+      "ProseLength": 231,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-7402-79d5-9e36-4bb731ecf7b8",
-      "Number": 4834,
-      "Chapter": "Chapter 2 \u2014 The Partitio",
-      "ChapterIndex": 1,
+      "BeatId": "019fa00b-05b2-7d2e-bb3a-706dc7a2a63a",
+      "Number": 7195,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 5 \u2014 Into Z2: The infrastructure district; the neon thins; the rust shows; Stave\u0027s location identified by Scout\u0027s crawlers; the gray-market broker\u0027s building is load-bearing to the approach.",
       "EscalationTarget": "8",
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 5464,
+      "ProseLength": 65,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11d1-6f8b-706f-ba04-6013a656f5c8",
-      "Number": 4900,
-      "Chapter": "Chapter 2 \u2014 The Partitio",
-      "ChapterIndex": 1,
+      "BeatId": "019fa00b-05b2-7b46-bed4-68626e80d7f3",
+      "Number": 7196,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates tension through environmental detail while establishing Scout\u0027s reconnaissance method and the crew\u0027s proximity to a dangerous, overtaxed infrastructure.",
       "EscalationTarget": "8",
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 7885,
+      "ProseLength": 231,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-8195-7e7c-8fe4-f490d7b63186",
-      "Number": 4835,
-      "Chapter": "Chapter 2 \u2014 The Partitio",
-      "ChapterIndex": 1,
+      "BeatId": "019fa00b-05b2-70be-b952-0888a47ea001",
+      "Number": 7197,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 6 \u2014 The Debt: Rook finds Stave; the broker situation explained; the payment negotiated; Stave agrees under terms that cost Rook something she did not price in.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 5113,
+      "ProseLength": 48,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-8fcb-75eb-87a4-51afbfe690b6",
-      "Number": 4836,
-      "Chapter": "Chapter 2 \u2014 The Partitio",
-      "ChapterIndex": 1,
+      "BeatId": "019fa00b-05b3-7e16-8cf9-2dfc4e7745a7",
+      "Number": 7198,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 7 \u2014 Stave\u0027s Condition: Stave explains the prior crack \u2014 what went wrong, what they have been accounting for since; the rate of degradation, the point of no return; the procedure is survivable, probably.",
       "EscalationTarget": "9",
       "EventType": "negotiation",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 6072,
+      "ProseLength": 449,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11d1-9ff4-726c-9f4f-17c0c5d56bc5",
-      "Number": 4901,
-      "Chapter": "Chapter 2 \u2014 The Partitio",
-      "ChapterIndex": 1,
+      "BeatId": "019fa00b-05b3-7931-9c60-2e79cbe018a2",
+      "Number": 7199,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Justifies the crew\u0027s exposure by revealing the precise technical constraints that force them into a compromised location, making the risk feel earned rather than arbitrary.",
       "EscalationTarget": "9",
       "EventType": "repair",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 7016,
+      "BeatTags": [],
+      "ProseLength": 302,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-9e11-735b-a881-b92412d97857",
-      "Number": 4837,
-      "Chapter": "Chapter 2 \u2014 The Partitio",
-      "ChapterIndex": 1,
+      "BeatId": "019fa00b-05b3-7476-8c41-5ea943fc96d2",
+      "Number": 7200,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 8 \u2014 Lace Surfaces: What Lace has known since the safe house in MGUN comes out; the crew\u0027s position on the board changes; the thing the story has been carrying puts weight on a different point.",
       "EscalationTarget": "10",
       "EventType": "confession",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 5525,
+      "ProseLength": 59,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11d1-d0af-7664-a27d-763269f256df",
-      "Number": 4902,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
+      "BeatId": "019fa00b-05b3-7128-a147-5507a6dea618",
+      "Number": 7201,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Lace\u0027s competence and reliability by showing her preparation work already complete before the crew arrives, building confidence before the operation fractures.",
       "EscalationTarget": "10",
       "EventType": "arrival",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 7407,
+      "BeatTags": [],
+      "ProseLength": 150,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-ab37-7a74-8059-2652f01aa8c2",
-      "Number": 4838,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
+      "BeatId": "019fa00b-05b3-7229-aa1b-8ac2db58d2e0",
+      "Number": 7202,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 9 \u2014 The Setup: Location secured; Ohara prepped; Stave\u0027s equipment deployed; PEREGRINE\u0027s approach vector established; Scout locks into the crawlers and goes quiet.",
       "EscalationTarget": "10",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 9060,
+      "ProseLength": 485,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f1364-2664-79a1-813f-4d919150921e",
-      "Number": 4916,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
+      "BeatId": "019fa00b-05b3-78ba-898a-ffe3088dc56c",
+      "Number": 7203,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns the scene from controlled operation to crisis, revealing PEREGRINE\u0027s arrival and using Ohara\u0027s stillness to crystallize what is about to be lost.",
       "EscalationTarget": "9",
       "EventType": "ambush",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 1516,
+      "ProseLength": 349,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f21b1-82ea-7b82-8fe7-138814fab82d",
-      "Number": 4972,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
+      "BeatId": "019fa00b-05b3-7cfd-aa63-c78168075864",
+      "Number": 7204,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates the reversal by showing PEREGRINE has already penetrated the crew\u0027s systems, stripping Rook of her last tactical option and demonstrating the adversary\u0027s superiority.",
       "EscalationTarget": "8",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 1712,
+      "ProseLength": 84,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a20-eea3-7d8f-8909-7747e2487f5a",
-      "Number": 4984,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
+      "BeatId": "019fa00b-05b3-7c25-9e51-6e886ec52c1b",
+      "Number": 7205,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Boiler\u0027s hidden preparation and reframes his four months in the building as deliberate, giving the crew a concealed last resort while raising the cost of using it.",
       "EscalationTarget": "9",
       "EventType": "betrayal",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 7812,
+      "BeatTags": [],
+      "ProseLength": 372,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-bb77-79ce-ab41-698f8a89620a",
-      "Number": 4839,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
+      "BeatId": "019fa00b-05b3-7c55-b7ac-5e6ccee2fcd2",
+      "Number": 7206,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 10 \u2014 PEREGRINE Closes: Vox flags the approach; the window compresses; the procedure has to run at the wrong pace or not at all; something external fails at the worst moment.",
       "EscalationTarget": "10",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 5755,
+      "ProseLength": 291,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-cbe4-7184-b532-b8b071231fbc",
-      "Number": 4840,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
+      "BeatId": "019fa00b-05b3-7320-b015-c2ebc2a345ac",
+      "Number": 7207,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 11 \u2014 The Procedure: Vox reads the partition from inside via the Tap; Stave prepped the reference then left before the crack; the reference fails mid-read (Adalemo cut it at the source); the open comes wrong \u2014 older data, locked by Ohara\u0027s own hand, for reasons she had forgotten she had.",
       "EscalationTarget": "10",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 5637,
+      "ProseLength": 350,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11d2-0805-7f2e-99cd-fb513abf04c0",
-      "Number": 4903,
-      "Chapter": "Chapter 4 \u2014 The Walk-Off",
-      "ChapterIndex": 3,
+      "BeatId": "019fa00b-05b3-75d7-a658-f9ec1215b5f6",
+      "Number": 7208,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Vox\u0027s unease about the partition\u0027s unexpectedly archaic signal to deepen the mystery of what Stave is reading inside, raising the stakes before the reveal.",
       "EscalationTarget": "10",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 5107,
+      "ProseLength": 487,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-e22b-799c-9725-59f875ed3bfc",
-      "Number": 4841,
-      "Chapter": "Chapter 4 \u2014 The Walk-Off",
-      "ChapterIndex": 3,
+      "BeatId": "019fa00b-05b3-7f4e-bb3d-183cc42e9ddc",
+      "Number": 7209,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 12 \u2014 The Contents: What was inside; what it means; the decision that has to be made before PEREGRINE gets through the door.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 7398,
+      "ProseLength": 174,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e7-f043-7e9c-8c3f-588f0d4d34eb",
-      "Number": 4842,
-      "Chapter": "Chapter 4 \u2014 The Walk-Off",
-      "ChapterIndex": 3,
+      "BeatId": "019fa00b-05b3-71b9-9db5-e24a4a9d6d18",
+      "Number": 7210,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 13 -- The Decision: Adalemo arrives, reveals he cut the reference tone himself, and confirms his own private search for Sefi Okonkwo; Vox reseals the manifest; three of PEREGRINE\u0027s four operators are delayed, disabled, or turned by the crew\u0027s own fight upstream; Boiler\u0027s building is where it happens.",
       "EscalationTarget": "8",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 8630,
+      "ProseLength": 914,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a21-0185-74aa-a517-801e4c704747",
-      "Number": 4985,
-      "Chapter": "Chapter 4 \u2014 The Walk-Off",
-      "ChapterIndex": 3,
+      "BeatId": "019fa00b-05b3-7b1c-be2d-2860d823a57c",
+      "Number": 7211,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off Rook\u0027s worst-case preparation while immediately undercutting relief by revealing Ohara\u0027s looping question as evidence of cognitive damage, recontextualizing her apparent recovery as loss.",
       "EscalationTarget": "6",
       "EventType": "escape",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4407,
+      "ProseLength": 176,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f06e8-0bee-72c6-b971-a22e3ddf5b7b",
-      "Number": 4843,
-      "Chapter": "Chapter 4 \u2014 The Walk-Off",
-      "ChapterIndex": 3,
+      "BeatId": "019fa00b-05b3-723c-9d71-4b84a035f030",
+      "Number": 7212,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 14 -- The Count: Rook at the Sojourn, the Z1 diner by the lake; six people now carry a piece of the twenty-one, against the five who carried the Class V truth at the Spine; what she is counting, and why six is different from five, made legible on the page.",
       "EscalationTarget": "5",
       "EventType": "arrival",
       "RevelationMode": "none",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4148,
+      "BeatTags": [],
+      "ProseLength": 285,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-7305-ab20-dc48f36cd42b",
+      "Number": 7213,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 433,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-7518-8c96-c8a1d5703474",
+      "Number": 7214,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 398,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-7fbb-87fe-5eca2ed1cfbd",
+      "Number": 7215,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 212,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-72d2-880b-78aff24893a4",
+      "Number": 7216,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 94,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-731f-842c-380ba18e50ce",
+      "Number": 7217,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 183,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-7d84-894e-41f826d04152",
+      "Number": 7218,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 356,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-7985-9ae5-8ee4b8548cce",
+      "Number": 7219,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 689,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-745e-bda4-eb643bdfe830",
+      "Number": 7220,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 124,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-72ef-91e4-8ffd838c1152",
+      "Number": 7221,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 576,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-7b3f-ab72-fdbf3c386977",
+      "Number": 7222,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 96,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b3-7674-82d6-ebc6e63a3f5b",
+      "Number": 7223,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 638,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7774-99cd-42ea440940ed",
+      "Number": 7224,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 299,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7865-83b1-4ac987c46d84",
+      "Number": 7225,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 262,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7f27-b78e-6ecfa15df8ae",
+      "Number": 7226,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 398,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-73a0-9341-227988645a28",
+      "Number": 7227,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 62,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7309-a70c-66a90dfe4787",
+      "Number": 7228,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 671,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7abc-b47b-e405c99237d9",
+      "Number": 7229,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 22,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7895-8930-aed8a7d29e9a",
+      "Number": 7230,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 530,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-79b6-b3c8-9e7fa918cac8",
+      "Number": 7231,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 563,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7329-a372-089e13137219",
+      "Number": 7232,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 67,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7e43-bab0-1c39d546eec4",
+      "Number": 7233,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 294,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-712a-b536-11b6acb88de8",
+      "Number": 7234,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 216,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-75d9-be41-d1992af7e684",
+      "Number": 7235,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 676,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7299-ae8f-dd1f4f8d146f",
+      "Number": 7236,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 43,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7756-8f82-ee62532abc50",
+      "Number": 7237,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 400,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7061-aa75-907cd8d230b5",
+      "Number": 7238,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 136,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7b91-995f-33126102ae0e",
+      "Number": 7239,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 239,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7a0e-8092-5c9b3cbf7c79",
+      "Number": 7240,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 485,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-7467-a72c-7df288ad9d77",
+      "Number": 7241,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 208,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-72a8-a1c1-aaf86df0b515",
+      "Number": 7242,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 508,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-72b6-93c7-fc0f323fd96d",
+      "Number": 7243,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 332,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-77cc-ae70-aefae52b347d",
+      "Number": 7244,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 848,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b4-78f3-a8f4-26ab36456e5b",
+      "Number": 7245,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 378,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7ce3-92cb-feddd24d4e6b",
+      "Number": 7246,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 730,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-75ad-9bdb-e688ccc4cf7d",
+      "Number": 7247,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 361,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-71e7-a9c5-98eb7ecabd28",
+      "Number": 7248,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 353,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7a1c-9cad-0404bdcc79cb",
+      "Number": 7249,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 37,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-72fc-88e2-00c4190f1577",
+      "Number": 7250,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 384,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7fc5-9be7-4ec5a4a7ae95",
+      "Number": 7251,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 111,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-75f9-b3c4-5c5f8f55fa45",
+      "Number": 7252,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 218,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7222-a530-ba9ffc5adc91",
+      "Number": 7253,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 213,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7515-a528-8ad6df65b4fe",
+      "Number": 7254,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 31,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-74c4-ace9-189ac1f4a427",
+      "Number": 7255,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 623,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7dc3-9ae4-9351c079c830",
+      "Number": 7256,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1255,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7616-803a-daee2eee81e5",
+      "Number": 7257,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 323,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7458-9e15-9c56fb0520fa",
+      "Number": 7258,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 160,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7d42-ab02-e87a40a5f56e",
+      "Number": 7259,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 444,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7245-9ac3-8323b628e794",
+      "Number": 7260,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 533,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-76d6-bae1-92649dc58af3",
+      "Number": 7261,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 547,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7e22-92c0-33a82944a378",
+      "Number": 7262,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 311,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7fa5-8101-6e0dce440700",
+      "Number": 7263,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 237,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-748b-8fc4-fbad6b498137",
+      "Number": 7264,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 562,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7a02-837b-7766dc077e82",
+      "Number": 7265,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 426,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-79b2-b8b4-df0c9518d309",
+      "Number": 7266,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 721,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-75f3-b9d1-6b8eae8f3ec3",
+      "Number": 7267,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 675,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-737a-85a5-209af591441c",
+      "Number": 7268,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 116,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7066-b95b-ab219aa3f8ef",
+      "Number": 7269,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 727,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7c25-9462-60d014223408",
+      "Number": 7270,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 745,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-76c1-9dff-45ed8af45bd2",
+      "Number": 7271,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 149,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7ef8-b35c-2f5589c3e033",
+      "Number": 7272,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 206,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b5-7827-937a-429d20645ce6",
+      "Number": 7273,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 596,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-70b9-8013-b1aab1587251",
+      "Number": 7274,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 818,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-713a-8f4f-973a15bc74db",
+      "Number": 7275,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 149,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-706f-96ef-df56811aa0cf",
+      "Number": 7276,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 359,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-7add-ac38-fbfcc8785a56",
+      "Number": 7277,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 602,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-781e-89c1-4c36518416c9",
+      "Number": 7278,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 333,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-7978-be98-6c993408d733",
+      "Number": 7279,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 659,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-7773-9fbd-d5375e249077",
+      "Number": 7280,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 248,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-7ee5-ae97-202ee1935575",
+      "Number": 7281,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 815,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-7cd7-999c-f911f7a0b041",
+      "Number": 7282,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 549,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-75eb-b5c9-d6de6016abbc",
+      "Number": 7283,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 624,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-7dfb-9c71-7de3cbf68b7d",
+      "Number": 7284,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 179,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00b-05b6-7b04-9264-c823412a643e",
+      "Number": 7285,
+      "Chapter": "Chapter 1 \u2014 The Ghost Re",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 231,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-745c-bb10-a5b0f9b943e5",
+      "Number": 7292,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 897,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-73e5-90f3-cc64ad39ea54",
+      "Number": 7293,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 146,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-7eb6-8dbf-8052cb04eba7",
+      "Number": 7294,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 927,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-7819-b213-96da00cf26d6",
+      "Number": 7295,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 475,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-758f-899a-57b5cc3e830f",
+      "Number": 7296,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 351,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-7705-b13f-6094b4480257",
+      "Number": 7297,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 495,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-7357-9b6e-1c2c9cdcff0e",
+      "Number": 7298,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 492,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-7a38-8752-063833a5f1b2",
+      "Number": 7299,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1247,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-706b-a3ea-8d7dd47bacc2",
+      "Number": 7300,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 192,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0331-7287-b0c3-e3e545d134f8",
+      "Number": 7301,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 48,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7c7b-9329-234a0255fa56",
+      "Number": 7302,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 701,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7e93-a7da-69b430d5ff8c",
+      "Number": 7303,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 484,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7ebd-a143-9509588ba0c7",
+      "Number": 7304,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 364,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-727e-8a63-ac1f7af543dc",
+      "Number": 7305,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 157,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-73b8-a2e5-e54e0ce3c0ec",
+      "Number": 7306,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 859,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-779a-ae1d-295752bc544f",
+      "Number": 7307,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 311,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7df6-9486-8b5015dd83cb",
+      "Number": 7308,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 346,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7f2e-b268-585a7e56ce5d",
+      "Number": 7309,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 405,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7cf6-971e-818dd4f8daa2",
+      "Number": 7310,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 86,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7712-af14-4b3b0961ba75",
+      "Number": 7311,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 681,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7f03-b5dc-8239de08055e",
+      "Number": 7312,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 248,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-75fb-9ce1-84079d1d2690",
+      "Number": 7313,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 397,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-71f9-8bae-0326f47a8651",
+      "Number": 7314,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 364,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7600-ad56-64e2cdfc3751",
+      "Number": 7315,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 459,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7be7-900c-9487c7f97d0f",
+      "Number": 7316,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 641,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7b52-a2a1-4949d9f94763",
+      "Number": 7317,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 136,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-7010-9f4b-9bc9eaee462d",
+      "Number": 7318,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 780,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-73c4-932e-6994415183f8",
+      "Number": 7319,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 552,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-750d-adc9-ed934e2975a2",
+      "Number": 7320,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1054,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-70fd-bf3c-f41ae1ded92d",
+      "Number": 7321,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 527,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-76ac-9d4f-9efe11169e5a",
+      "Number": 7322,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 419,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0332-79ef-9e99-28293387bcc9",
+      "Number": 7323,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 430,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7cbe-ad71-65103a387bd5",
+      "Number": 7324,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 453,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-710d-940c-6b712fb695d6",
+      "Number": 7325,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 236,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7cc6-8473-8acd73acfa68",
+      "Number": 7326,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 318,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7c70-a141-a764fae9b90b",
+      "Number": 7327,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 539,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-72ca-b3ff-af9ddf74ec88",
+      "Number": 7328,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 141,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7703-851d-076473a15782",
+      "Number": 7329,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 306,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7830-bc19-dbbaa3a47667",
+      "Number": 7330,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 639,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7fa5-ad75-eccb75635fbc",
+      "Number": 7331,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 166,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7e7e-984f-10e51a150088",
+      "Number": 7332,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 405,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7ddc-812e-da3d619b1d51",
+      "Number": 7333,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 650,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-73e8-8b3d-5f999caf7e35",
+      "Number": 7334,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 747,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7d4c-b4cd-99db1bac04ec",
+      "Number": 7335,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 483,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7787-bd46-0eaddd905bfc",
+      "Number": 7336,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 601,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7c87-b75f-0f477b8e4cd6",
+      "Number": 7337,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 744,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-717e-9978-be523cf9efca",
+      "Number": 7338,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1002,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-71e7-ae3f-7ed1ce00ce0c",
+      "Number": 7339,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 331,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7b32-b7ea-ed22ed5f47ea",
+      "Number": 7340,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 553,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7605-805b-442b13aab36f",
+      "Number": 7341,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 630,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-79c5-9dbb-ffdb8bb410d2",
+      "Number": 7342,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 170,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7d1e-86af-367e03247321",
+      "Number": 7343,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 454,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7d2d-8cb4-b7d08e6979a0",
+      "Number": 7344,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 111,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7610-b9c1-e161694b3324",
+      "Number": 7345,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 784,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7720-a1af-b24955365f60",
+      "Number": 7346,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 163,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-70b5-a812-d261b826cdbb",
+      "Number": 7347,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 317,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-74d2-8532-c8d802dadfce",
+      "Number": 7348,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1255,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-78ef-9545-061d97e55ccb",
+      "Number": 7349,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 352,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0333-7b1d-a673-3b42b4b678ee",
+      "Number": 7350,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 697,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7e59-9c23-569c58dc11fb",
+      "Number": 7351,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 392,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7a07-b3a1-c41a3d61dcd0",
+      "Number": 7352,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 153,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7194-94b9-d4b928957420",
+      "Number": 7353,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 25,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7530-8262-608b5e89d0ab",
+      "Number": 7354,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 721,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-70fa-8c53-94f8ffdc3b99",
+      "Number": 7355,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 293,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7cab-8b8a-f6d64768e4d4",
+      "Number": 7356,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 130,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7cd8-a2a8-c8af2e0001de",
+      "Number": 7357,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 129,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7cee-aae2-7a571afffd8c",
+      "Number": 7358,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 63,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-70be-b68b-581db3d0baf2",
+      "Number": 7359,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 618,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-73bd-aab7-40a648c86618",
+      "Number": 7360,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 95,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7cf0-9bc0-57b05f34efc6",
+      "Number": 7361,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 42,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7814-ab5c-bdbc663d1eaf",
+      "Number": 7362,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 680,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-73fa-aa62-a318263e0060",
+      "Number": 7363,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 92,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-75df-823a-a547dd53b757",
+      "Number": 7364,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 42,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7268-b95d-ad569a510178",
+      "Number": 7365,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 463,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7950-9a18-0eb39086e541",
+      "Number": 7366,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 554,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7ff0-ac4b-0bd8f896a8d7",
+      "Number": 7367,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 23,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7389-898f-d08e8f4971e6",
+      "Number": 7368,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 586,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-70cd-a920-670498a1c395",
+      "Number": 7369,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 61,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7dc4-bab2-74b2570eca4f",
+      "Number": 7370,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 317,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7d7e-ab6e-63dce10c8f1c",
+      "Number": 7371,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 204,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7d10-8c6a-3472a0e9ec61",
+      "Number": 7372,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 560,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0334-7370-862e-4e47e981608e",
+      "Number": 7373,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 333,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7a45-96f9-b87a89b68f6e",
+      "Number": 7374,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 408,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7aab-941f-20c54989849d",
+      "Number": 7375,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 147,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-75cf-955b-0ed1bbaf57e3",
+      "Number": 7376,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 281,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7bf0-9996-af4accdb9a4b",
+      "Number": 7377,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 121,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7b06-986c-7400461e47a7",
+      "Number": 7378,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 492,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7fc1-b136-c6ea4021ef2d",
+      "Number": 7379,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 348,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7f41-aab3-9b3771fb4cc1",
+      "Number": 7380,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 795,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7b96-a97a-360b9d1cf733",
+      "Number": 7381,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7443-81e0-7c4151a8e729",
+      "Number": 7382,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 158,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7cab-9202-9fb5ee2e31c1",
+      "Number": 7383,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 830,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7ede-9733-b883af11c1f3",
+      "Number": 7384,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 544,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-746d-a3ff-6a362ad9e051",
+      "Number": 7385,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 705,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-706d-b890-dbca90f02cd7",
+      "Number": 7386,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 492,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7351-a41b-48e46657805b",
+      "Number": 7387,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 220,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-718d-a801-6a1579ccc796",
+      "Number": 7388,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 484,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00d-0335-7e55-8506-135d8cecfaea",
+      "Number": 7389,
+      "Chapter": "Chapter 2 \u2014 The Partitio",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 184,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7f01-bc68-a994030b9f12",
+      "Number": 7390,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 56,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-77bd-92fc-cce235556273",
+      "Number": 7391,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 535,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7037-90bf-4594432a4119",
+      "Number": 7392,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 406,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7746-b19b-5ae105c08374",
+      "Number": 7393,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 514,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-738b-bbf0-23e46e38337b",
+      "Number": 7394,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 418,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7566-b510-116ee517e6b7",
+      "Number": 7395,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 613,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-74c4-ac35-9de5b233ad87",
+      "Number": 7396,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 97,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-78a8-bdfb-c6c35cfd1f4a",
+      "Number": 7397,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 602,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7556-82f1-14a1add562eb",
+      "Number": 7398,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 355,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-705e-ad74-ed300c322c39",
+      "Number": 7399,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 610,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7acb-8b50-872ec6625ddf",
+      "Number": 7400,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 943,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-76dd-9343-e8626ac721f3",
+      "Number": 7401,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 333,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-712a-b1e7-400a920b7372",
+      "Number": 7402,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 273,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7d20-ad42-29d9c6435a78",
+      "Number": 7403,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 153,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-709d-bd46-81adab348245",
+      "Number": 7404,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 427,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7728-878c-aeea0d71ad5c",
+      "Number": 7405,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 37,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7f10-9814-fd8acbde4b62",
+      "Number": 7406,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 759,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-761d-a060-15cf08d8b1aa",
+      "Number": 7407,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 266,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cec9-7d17-9f88-349c77553bd4",
+      "Number": 7408,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 279,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-713d-9f75-1cee12b15bcc",
+      "Number": 7409,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 752,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7142-8bf3-0c17e8b70a5c",
+      "Number": 7410,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 245,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7529-9a55-af104bf19110",
+      "Number": 7411,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 695,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-706d-943d-4c584912e007",
+      "Number": 7412,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 203,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7b99-817f-5f83c327d94e",
+      "Number": 7413,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 685,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7bdb-bbe4-c732ee02d73b",
+      "Number": 7414,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 836,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7939-ac0b-e0e3ac4167ae",
+      "Number": 7415,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 517,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7143-8720-b6f545ec27c1",
+      "Number": 7416,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 584,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-772a-b951-f2c7116dc592",
+      "Number": 7417,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 485,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7ed6-a715-1cbc03fe08f9",
+      "Number": 7418,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 636,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-747e-a3a5-eeb4517ca941",
+      "Number": 7419,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 587,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7b0e-a557-57550e4d98e3",
+      "Number": 7420,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 593,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-72f3-9d92-2245611aa418",
+      "Number": 7421,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 121,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7070-90fb-a8df0e0a03bd",
+      "Number": 7422,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 126,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7497-8774-d86bdf574f44",
+      "Number": 7423,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 373,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7b0d-8caa-4a879f433843",
+      "Number": 7424,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 155,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7880-8cda-43f153984c07",
+      "Number": 7425,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 46,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-74d3-9b49-a06a29060e84",
+      "Number": 7426,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 503,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7975-b618-bcb1f064c6e4",
+      "Number": 7427,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 374,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7181-89e9-f0f677e1f4e7",
+      "Number": 7428,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 245,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7b43-ba7f-6c70888bdd62",
+      "Number": 7429,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 298,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-75a4-8f9b-7734f21091b0",
+      "Number": 7430,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 31,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7930-bb0b-3666132057be",
+      "Number": 7431,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 160,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-77fa-9fce-395b457b13dc",
+      "Number": 7432,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 405,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7abc-ac35-de0aaf991fba",
+      "Number": 7433,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 556,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7f87-9a38-ad6bb515a5c9",
+      "Number": 7434,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 18,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-764a-8731-5b1d6df950c6",
+      "Number": 7435,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 41,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7571-8a22-ebf2c52e5b06",
+      "Number": 7436,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 420,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7c5c-95fb-20d64ac06d9f",
+      "Number": 7437,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 172,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7d16-ba24-d0291cbd8709",
+      "Number": 7438,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 90,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7d1e-81f4-d3a58cba4b6a",
+      "Number": 7439,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 302,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-740d-bf71-c2ac5530b643",
+      "Number": 7440,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 38,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-73e9-8771-d4648722d1f5",
+      "Number": 7441,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 407,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7f1a-9314-20e3280ed135",
+      "Number": 7442,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 95,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-73eb-989e-c7d93a5e9e94",
+      "Number": 7443,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 178,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-78f3-abe7-7866f47a9e5e",
+      "Number": 7444,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 552,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7e4f-a6c9-6aa9b3854504",
+      "Number": 7445,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 591,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-79cd-a6af-9ff7b4c6f385",
+      "Number": 7446,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 189,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-779b-9bbb-aa0a2b84feb2",
+      "Number": 7447,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 661,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7c6e-bdc5-ab3df8cb73c4",
+      "Number": 7448,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 12,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-7078-bf40-9578a4609a68",
+      "Number": 7449,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 407,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-ceca-75b8-b1c5-794616872ce1",
+      "Number": 7450,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 575,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-779b-8f4b-dea6996aeece",
+      "Number": 7451,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 469,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7930-94a0-702439cdd108",
+      "Number": 7452,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 532,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7f72-867c-5686fbc7aaa7",
+      "Number": 7453,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 702,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-79f6-b4b6-e821d2b39985",
+      "Number": 7454,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1347,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-771a-baeb-8208408c11f2",
+      "Number": 7455,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 875,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7cae-82de-29204c5cc22a",
+      "Number": 7456,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 660,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-78ec-85f5-3ea7e1dccffe",
+      "Number": 7457,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 232,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7e62-85b8-9412740cba99",
+      "Number": 7458,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 783,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7c41-95f9-8aaf9bb0ab0c",
+      "Number": 7459,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 234,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-78f5-bf25-3ffd601070a0",
+      "Number": 7460,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 804,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7abe-b9cd-1279a5f05527",
+      "Number": 7461,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 156,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7031-9b35-ecc39490423f",
+      "Number": 7462,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 725,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-731f-b9f4-de49188fe49e",
+      "Number": 7463,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 404,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7837-b4ed-5d1ed0b85b7a",
+      "Number": 7464,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 414,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7263-8f9d-1b3c1a5fb31e",
+      "Number": 7465,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 509,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7504-aed8-ed58ea5b2a65",
+      "Number": 7466,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 677,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7888-84f4-d5104a534b37",
+      "Number": 7467,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 543,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-752b-b0c7-4a962ee5a7f6",
+      "Number": 7468,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 55,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-748d-bd7d-b3a99259ec58",
+      "Number": 7469,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 438,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-74f3-b77e-43b00140a488",
+      "Number": 7470,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 718,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7e99-8482-528dc5a6d134",
+      "Number": 7471,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 318,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7966-a3dc-1962ccd7ff87",
+      "Number": 7472,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1131,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-79f8-a38a-913bee6c4168",
+      "Number": 7473,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1022,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7802-bc2e-03906c26a58b",
+      "Number": 7474,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 948,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-737d-bb10-f31f79669660",
+      "Number": 7475,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 427,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa00e-cecb-7cd2-b968-b968e0c3557c",
+      "Number": 7476,
+      "Chapter": "Chapter 3 \u2014 The Crack",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 890,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7a4f-afa1-1b3acafec2c4",
+      "Number": 7477,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7ef7-bd25-b5db6f1f6d7e",
+      "Number": 7478,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 491,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7c62-abd2-d69d24f6e5ac",
+      "Number": 7479,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 438,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-73ba-943a-13c9b93c9d38",
+      "Number": 7480,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 27,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7578-a464-3463bb96bfc2",
+      "Number": 7481,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 707,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7948-bd88-d197dba41a02",
+      "Number": 7482,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 310,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-73b4-b94b-b24ff7443e70",
+      "Number": 7483,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 392,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7f98-a5ab-9939702e5a71",
+      "Number": 7484,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 749,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-705f-82c3-3c912d1a5c83",
+      "Number": 7485,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 266,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7d15-81f2-d730d3f613cf",
+      "Number": 7486,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 681,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7390-8db6-f31705ee550c",
+      "Number": 7487,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 75,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7af1-a223-fb4e300b2fec",
+      "Number": 7488,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 371,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7497-9139-f916920f12e1",
+      "Number": 7489,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 426,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7e22-b381-f301e49b2c38",
+      "Number": 7490,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 138,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-77e4-8748-b85f84b93f66",
+      "Number": 7491,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 522,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7198-9c99-f79b344fff63",
+      "Number": 7492,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 512,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7f2c-b90a-d8ac96ee7e5e",
+      "Number": 7493,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-78da-b00b-6b09b616b091",
+      "Number": 7494,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 376,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7367-a72f-e08416abfbcd",
+      "Number": 7495,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 125,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-708d-bf17-596b4a1f3860",
+      "Number": 7496,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 681,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7425-8af1-fd1c939e03b1",
+      "Number": 7497,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 411,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7944-bf06-61890592df85",
+      "Number": 7498,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 483,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7181-9300-c45f85ef073a",
+      "Number": 7499,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 47,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7bc3-985c-ff884728b5c6",
+      "Number": 7500,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 558,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-74ce-b269-017d68154509",
+      "Number": 7501,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 778,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-75a8-adff-f89351bda1f4",
+      "Number": 7502,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 682,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-70f3-9f92-1c540fe0fcf0",
+      "Number": 7503,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 485,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7d38-86bc-28c544d7ff38",
+      "Number": 7504,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 552,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-768c-b326-620e8cde065e",
+      "Number": 7505,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 693,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7f72-adc2-6c9e8fbd5904",
+      "Number": 7506,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 410,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-72cf-a0cf-23ec9e31f56b",
+      "Number": 7507,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 48,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7145-8cfc-d3096768901a",
+      "Number": 7508,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 757,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7eb8-acc9-6e24dd02f5e1",
+      "Number": 7509,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 448,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-70ba-93a1-0164ecaa0626",
+      "Number": 7510,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 420,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7a64-8e44-df63079195f1",
+      "Number": 7511,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 978,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7f12-8947-a3bc2b456b79",
+      "Number": 7512,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 316,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7cad-9209-8292bee30914",
+      "Number": 7513,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 298,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7a53-8064-45a86b0400a7",
+      "Number": 7514,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 181,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-75e7-8921-72d2740434ee",
+      "Number": 7515,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7302-914e-b82f2874770d",
+      "Number": 7516,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 646,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7e56-bbc2-f97c8861b23f",
+      "Number": 7517,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1327,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7bf6-ad66-fba6574f269d",
+      "Number": 7518,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 12,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7e99-8def-d6635cc9ec19",
+      "Number": 7519,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 951,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7458-9638-fb4e73dbd6ad",
+      "Number": 7520,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 363,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7020-9b0e-54d814e70654",
+      "Number": 7521,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-73e8-a095-4b74429c902b",
+      "Number": 7522,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 704,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-794d-968b-69f39980f84a",
+      "Number": 7523,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 505,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7314-9dae-2b76f993c8d6",
+      "Number": 7524,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 88,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-77a6-9b40-4f10268100e7",
+      "Number": 7525,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 389,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7ad6-b3fb-e0e7bfa700fa",
+      "Number": 7526,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 124,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-779e-bf94-680dfe0c6508",
+      "Number": 7527,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 768,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7c43-ae2f-d302a5c86867",
+      "Number": 7528,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 52,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7d41-9494-b6a3ad01c8bb",
+      "Number": 7529,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 506,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7921-9c68-38edee7db5be",
+      "Number": 7530,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 131,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-71ce-94e6-932cdef444fe",
+      "Number": 7531,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 362,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7070-a4a3-ef7a84df3ef3",
+      "Number": 7532,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 450,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7025-98dc-ecee29d87f88",
+      "Number": 7533,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 124,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7dcb-9b81-b8d954f13587",
+      "Number": 7534,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1124,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7734-8f17-38e60c4e8210",
+      "Number": 7535,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 410,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-720d-bb42-8a7dea599327",
+      "Number": 7536,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 158,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-72b7-a6a5-c8e56e6df87f",
+      "Number": 7537,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 163,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-73f7-957a-c093133dafe6",
+      "Number": 7538,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 94,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7f1e-bb63-dfba5d42dd4a",
+      "Number": 7539,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 679,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-701f-8729-c9abcd8c8fea",
+      "Number": 7540,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 498,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7ba5-a1a1-268dfe2ad6b1",
+      "Number": 7541,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 448,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-71fd-94fb-c8a37d9a2546",
+      "Number": 7542,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 24,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7a16-aea6-7569482f1ff7",
+      "Number": 7543,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 564,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-72ab-a357-45ca5ffc8b9b",
+      "Number": 7544,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 573,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-77cd-bd92-ad7c554985bf",
+      "Number": 7545,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 430,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7bc2-a64b-ef9769e64a69",
+      "Number": 7546,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 262,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-731c-84fc-18eebd0cce92",
+      "Number": 7547,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 25,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa010-2620-7be6-b7dd-e1de552e73c6",
+      "Number": 7548,
+      "Chapter": "Chapter 4 \u2014 The Walk-Off",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 636,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
     }
   ]
 }

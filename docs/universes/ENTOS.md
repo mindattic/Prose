@@ -67,7 +67,7 @@ Each Sphere is a closed cell with its own membrane, and the Spheres do NOT share
 
 **The creature is aware.** A mother carrying a child knows she is pregnant. The creature knows the cells are there. It knows the cluster is growing inside it. Whether the membrane activity -- a thousand years of Scrying and Piercing, the cumulative laceration and scarring of cell walls across a civilization's entire recorded history -- registers to it the way a fetal kick registers, or the way inflammation registers, or the way nothing at all registers, is not known. What is established: the creature's awareness of the Spheres is not an open question. The Entos's awareness of the creature is.
 
-**The Gifted matter is the Amnios fluid.** The substance the Liturgy harvests, infuses into the loyal, and wrought into Relics -- the material no House has ever Scried or Pierced from any Sphere, because it does not come from a Sphere -- is the creature's own amniotic fluid. Introducing the biology of a creature of that scale into a human body produces transformation. A controlled dose, administered over years by trained Lectors, produces a Champion. An uncontrolled exposure produces a monster. The mechanism is the same. The quantity and guidance are everything. "the Expectant" -- the name the Liturgy gives to the source of the material, the entity their doctrine holds gifted it to them -- is the creature. Whether this was a gift freely given, a covenant the creature entered knowingly, or a harvest the Liturgy constructed a theology around to make sense of what they were doing: this is the question the Liturgy's Silence holds and will not share.
+**The Gifted matter is the Amnios fluid.** The substance the Liturgy harvests, infuses into the loyal, and wrought into Relics -- the material no House has ever Scried or Pierced from any Sphere, because it does not come from a Sphere -- is the creature's own amniotic fluid. Introducing the biology of a creature of that scale into a human body produces transformation. A controlled dose, administered over years by trained Lectors, produces a Champion. An uncontrolled exposure produces a monster. The mechanism is the same. The quantity and guidance are everything. "the Expectant" -- the name the Liturgy gives to the source of the material, the entity their doctrine holds gifted it to them -- is the creature. Whether this was a gift freely given, a covenant the creature entered knowingly, or a harvest the Liturgy constructed a theology around to make sense of what they were doing: this is the question the Liturgy's Quiet Mass holds and will not share.
 
 **The Bolide was a foreign body -- a tiny thing, virus-like, alien to the Expectant entirely.** It was not a Sphere and it was not of the Expectant. It was a pathogen that reached the Amnios from outside and punctured through the Entos's own membrane at the Sinter heartland -- a mote small enough to slip the fluid and pierce one cell wall, the way a virus breaches a single cell. It did not descend from the sky. It came through the membrane, from the Amnios, in the 13th month of 1312 (0 AoV). What landed was not a rock from space. It was alien cellular biology from a neighboring cell, already dying in a way that was consuming and restructuring matter rather than living within it. The Sinter territory is not healing because it cannot heal. The foreign biology is not geological damage. It is an infection in the Entos's cell wall, metabolizing the stone from the impact point downward, eating through the cell from the inside. The membrane ruptures at ground level are not the Scrywell array's containment failing. They are the cancer cell's own biology tearing through what it landed in, creating new breaches as it spreads. The Vigil's quarantine line at The Pass is, without knowing it, containing cancer spread between cells. What comes out of the Sinter Zone uncontrolled is not a resource or a threat in any framework the Houses have. It is the biology of a dying cell, leaking through into a healthy one.
 
@@ -473,8 +473,9 @@ vernacular; the common Entos tongue is what a soldier curses in and a scribe wri
 his letters home in. The Liturgy runs on something else — older-sounding, colder,
 patterned like law and rite at once. The Liturgy calls it **the Received Tongue**.
 Commoners call it the High Speech, or cathedral-talk, or, on The Pass where the
-watch stands its long rotations, Silence-tongue. Nobody calls it what it is, because
-nobody in the Entos knows what it is.
+watch stands its long rotations, Liturgin — a word they take for the Liturgy's own
+coinage, since it sounds enough like *Liturgy* to pass for one. Nobody calls it what
+it is, because nobody in the Entos knows what it is.
 
 **It was Scried. It is one of the first things the Liturgy ever took.** Before the
 Liturgy administered ceremonies, before it distributed Relics, it was a clerical
@@ -540,7 +541,7 @@ who grew up in the world the tongue was taken from, who saw it over a church doo
 on a coin and at the bottom of a physician's chart, who maybe half-learned it in a
 schoolroom and forgot it. To such a person the Liturgy's untouchable sacred cipher is
 not the voice of God. It is a Thursday. They are the one soul in the Entos who can
-read the Silence's own writs — and they have every reason the institution relies on
+read the Quiet Mass's own writs — and they have every reason the institution relies on
 to never say so: no language when they arrive, no framework in the listener, no
 anchor, no one safe to tell. The tongue that guarantees the Liturgy's authority could
 be undone by any millworker from the right world, and the Liturgy's entire machinery
@@ -548,8 +549,9 @@ of silence exists to guarantee that millworker is never believed.
 
 **Hard rules:**
 - The Entos name for the language is **the Received Tongue** (formal) / the High
-  Speech / Silence-tongue (colloquial). No character born in the Entos knows the word
-  "Latin," knows it is dead, or knows it came from Sphere 31.
+  Speech / Liturgin (colloquial). Commoners use the word "Liturgin" freely — but no
+  character born in the Entos knows that it is Earth's Latin, knows Latin is a real
+  dead language, or knows the tongue came from Sphere 31.
 - Do not have the Liturgy call the acquisition a theft; the Liturgy's word is
   *received*. Only an outsider from Sphere 31 privately knows otherwise.
 - Render the tongue in prose sparingly and let it do its work by sound and effect, not
@@ -619,7 +621,7 @@ the Ceremony, which would mean losing the loyalty instrument they've built every
   and distributes Relics; assesses worthiness; cannot be commanded by any Warrior King or Seat
 - **Canon** — senior authority; interprets doctrine; oversees Lector assignments; assesses
   complex worthiness cases the Lectors escalate
-- **The Silence** — the Liturgy's governing body; never appears publicly; communicates through
+- **The Quiet Mass** — the Liturgy's governing body; never appears publicly; communicates through
   Canon-level intermediaries; their decisions are final and are not explained
 
 **What the Houses know:** The Liturgy administers the Ceremony. Lectors are trusted. The
@@ -627,8 +629,8 @@ origin of the Gifted matter — the Catalysts — is not confirmed or denied by 
 the Houses have been too dependent to press the question.
 
 **What the Houses don't know:** The Liturgy's actual assessment criteria for worthiness. The
-source and acquisition mechanism of the Gifted matter. The Silence's agenda. Whether the
-Lectors report back to the Silence on every House they visit, and what those reports contain.
+source and acquisition mechanism of the Gifted matter. The Quiet Mass's agenda. Whether the
+Lectors report back to the Quiet Mass on every House they visit, and what those reports contain.
 
 **Hard bans on the Liturgy:**
 - The Liturgy fields no armies and holds no territory — it fights no House's war. But it is not defenseless: it keeps the **Vigil**, its own holy-warrior order — the guard of its stations, relics, and archives across the land, its covert arm for the work it does not speak of, and the standing command of the joint Sinter quarantine at The Pass, where soldiers from every House serve under Vigil authority. The Vigil is not a field army and never takes territory; it is the Liturgy's sworn sword, answerable to the Canon Immaculate alone.
@@ -1092,7 +1094,7 @@ of active war between them. The Vigil Compact (Year 1315) established:
 - Pallor, Loera, and Calyx provide monetary assessment and supply: quarterly contributions
   to The Pass's maintenance, emergency response reserves, and specialist labor contracts
 - The Liturgy administers the Quarantine as its institutional mandate, separate from its
-  House-affiliated functions; the Vigil Administration is the Silence's most public role
+  House-affiliated functions; the Vigil Administration is the Quiet Mass's most public role
 
 The Vigil Watch is the only place in the Entos where enemies hold the same fortified
 line without fighting. A Pallor conscript and a Loera intelligence operative may be posted
@@ -1137,7 +1139,7 @@ did not warn Sinter. When the House of Peacemakers was destroyed, the role of ar
 neutral administrative function that Sinter had held and the Liturgy had always coveted —
 passed to the Liturgy by default. The Liturgy now administers the Compact disputes Sinter
 once resolved. The Liturgy now runs the Quarantine that was built on Sinter's ruin. The
-Liturgy's Silence gained more from Sinter's fall than from any other single event in the
+Liturgy's Quiet Mass gained more from Sinter's fall than from any other single event in the
 Entos's history.
 
 This is in no formal record. It is said quietly. It has been said quietly for six hundred years.
@@ -1176,7 +1178,7 @@ knowledge — had been transferred to another institution without anyone having 
 site.
 
 Cresset dissolved formally into collective Compact administration. Their site is now the only
-active installation managed directly by the Silence rather than by a named House. The eastern
+active installation managed directly by the Quiet Mass rather than by a named House. The eastern
 cultures that extracted them are not part of the Entos. The Entos does not discuss them
 openly. They are the thing the Entos's historical record goes quiet about in the same way
 Fjorheim's record goes quiet about the Blood Century.
@@ -1206,7 +1208,7 @@ their mutual obligations. Three Houses sent practitioners to help Orvaine restor
 One House sent nothing. Orvaine's site eventually came back online with outside help, but
 the House never reconstituted itself as an independent institution. It became a Compact
 administrative body — not a named House with a Seat and a Keeper but a managed site under
-shared administration. The Silence absorbed it.
+shared administration. The Quiet Mass absorbed it.
 
 The House that sent nothing during Orvaine's collapse is House Loera. This is four hundred
 years old. It is in the record. Loera knows it is in the record and has never disputed it
@@ -1532,7 +1534,7 @@ Their Catalyst contamination problem is institutional consequence. The same netw
 they use to route tainted supply into enemy supply chains also route their own supply.
 They have run this operation long enough that provenance is no longer traceable — their
 own people cannot tell a clean batch from a compromised one with certainty. The Lectors
-who flagged this filed reports. The Silence did not respond. Whether the Silence did not
+who flagged this filed reports. The Quiet Mass did not respond. Whether the Quiet Mass did not
 respond because it agreed with Loera's methodology, because it did not understand the
 reports, or because it has made a calculation about what exposing Loera would cost —
 this is the question none of the other Houses have been able to answer and all of them
@@ -1721,7 +1723,7 @@ undertrained practitioner with a compromised supply. Loera weaponizes this delib
 is compromised. The same methods used to contaminate enemy supplies create the conditions for
 contamination to travel. The provenance of any given Catalyst batch in Loera's inventory is no
 longer fully traceable. Their Lectors know. They have flagged it through internal channels. The
-Silence has not responded. Yet.
+Quiet Mass has not responded. Yet.
 
 ---
 
@@ -1953,7 +1955,7 @@ them. They do not negotiate with Houses the way Houses negotiate with each other
 
 **Exactly one living Champion per House.** The Liturgy will not sanction a second concurrent
 course of Champion-tier infusions for a House that already holds one. Doctrine calls a standing
-corps of them a desecration; the unspoken reason is more practical — the Silence has never been
+corps of them a desecration; the unspoken reason is more practical — the Quiet Mass has never been
 willing to find out what an army of the physically ascendant does to the balance the Compact
 maintains. A House that lost its restraint and grew several would not be fielding soldiers
 anymore. It would be fielding a different kind of problem, and the Liturgy that dosed them would
@@ -1966,7 +1968,7 @@ further doses with growth and the course ends. What is being rebuilt is muscle, 
 metabolism that feeds both. **The mind is never the target and is never altered.** A Champion's
 temperament, judgment, memory, and plain intelligence are the same ones they walked in with at
 fourteen — this is doctrinally load-bearing, not incidental: a Catalyst capable of reshaping
-loyalty or judgment would be a weapon the Liturgy could use on itself, and the Silence has never
+loyalty or judgment would be a weapon the Liturgy could use on itself, and the Quiet Mass has never
 authorized that risk even in principle. The gap between what a Champion's body can do and how a
 Champion thinks is not a flaw in the process. It is the process working as intended.
 
@@ -1976,7 +1978,7 @@ without one against a House that has one is not a disadvantage, it is a rout wai
 scheduled, and there is no image that empties a battle line faster than a thirteen-foot soldier
 tearing an armored man out of his line and throwing the body two hundred meters into the men
 behind him. Houses not currently committed to a campaign — or five years clear of their last one,
-whichever the Silence's ledger says comes first — rotate their Champion onto neutral, Liturgy-
+whichever the Quiet Mass's ledger says comes first — rotate their Champion onto neutral, Liturgy-
 administered postings instead: Eirene's Gate chief among them. The posting runs House by House in
 sequence. Because a Loera corsair takes eight weeks each way from most Houses to the Gate, no
 House sends its Champion for a tour shorter than a year — anything less wastes more of the
@@ -2221,7 +2223,7 @@ be told it.
 - It does not speak clearly to anyone.
 - Do not name it anything other than "The Prisoner."
 - The Expectant identity is felt, never stated: it lives only in the cosmology's authorial
-  layer. No character -- not the Liturgy, not the Silence, not Orim -- may confirm the two are one.
+  layer. No character -- not the Liturgy, not the Quiet Mass, not Orim -- may confirm the two are one.
 
 ---
 
@@ -2255,7 +2257,7 @@ No House owns the Old Rite. This is part of why soldiers practice it.
 | **The Liturgy** | Religious-scientific sect; administers the Ceremony and distributes Relics; outside House control |
 | **Lector** | Liturgy field practitioner; administers the Ceremony; assesses worthiness independently |
 | **Canon** | Senior Liturgy authority; oversees Lectors; assesses complex worthiness cases |
-| **The Silence** | Liturgy's governing body; never public; final authority |
+| **The Quiet Mass** | Liturgy's governing body; never public; final authority |
 | **the Expectant** | Liturgy term for the source of the Gifted matter; possibly The Prisoner; not confirmed |
 | **Godkin** | Informal term for the deeply Transmuted; the ascendant end of the spectrum |
 | **Knight / Dame** | Formal Transmutation rank; Dame = female Knight; visibly ascendant; earned not appointed |

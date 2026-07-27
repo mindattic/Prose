@@ -1,228 +1,769 @@
 {
   "nodeCode": "LDGR",
-  "generatedAtUtc": "2026-07-25 23:31:26Z",
-  "beatsScanned": 15,
-  "cleanBeats": 3,
-  "totalFindings": 21,
+  "generatedAtUtc": "2026-07-27 08:12:23Z",
+  "beatsScanned": 153,
+  "cleanBeats": 83,
+  "totalFindings": 75,
   "bySeverity": {
-    "MODERATE": 1,
-    "MINOR": 20
+    "MODERATE": 12,
+    "MINOR": 63
   },
   "byType": {
-    "GRIPE": 16,
-    "MEANING-MISMATCH": 3,
-    "CLICHE": 2
+    "MEANING-MISMATCH": 4,
+    "GRIPE": 65,
+    "CONTRADICTION": 3,
+    "CLICHE": 3
   },
   "findings": [
     {
-      "BeatId": "45bbd397-9230-42e2-9c7d-81bda5edd5b7",
-      "Number": 5461,
+      "BeatId": "019fa001-ec09-7d6b-9554-f449d567a143",
+      "Number": 6756,
+      "Chapter": "Double Entry",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "She had built the audit site before she died and laid it out for whoever the trigger brought.",
+      "Note": "This states the deduction outright as narrative fact rather than the character\u0027s inference, undercutting the \u0027read the room\u0027 detective beat that precedes it \u2014 the prior lines show him reasoning, then this line just tells the conclusion flatly.",
+      "Fix": "Frame it as his inference: \u0027She\u0027d built this for whoever the trigger brought \u2014 he was sure of it now.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec09-770c-9a78-467d3a48f7cb",
+      "Number": 6762,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MODERATE",
-      "Quote": "A moment before either could improve his angle, and he spent it on Vig.",
-      "Note": "Mid-firefight cutaway to abstract reflection undercuts tension and reads as a non-sequitur rather than characterization; the sentence construction (\u0027he spent it on Vig\u0027) is also mechanically awkward.",
-      "Fix": "Cut or relocate this to the post-fight breath beat where the Vig reflection already lands."
+      "Quote": "written in no incentive to make him behave correctly, because she had already decided he would",
+      "Note": "tells us her certainty and his character rather than showing evidence for it; reads as an assertion the story hasn\u0027t earned yet",
+      "Fix": "cut the explanation or replace with a concrete detail proving her certainty (a specific clause she omitted, a specific trust she extended)"
     },
     {
-      "BeatId": "019f76eb-7aee-72f4-8a45-b471c0d965a2",
-      "Number": 5447,
+      "BeatId": "019fa001-ec0a-7563-a91c-3049793ecc2c",
+      "Number": 6800,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "a gesture worn so smooth the hand made it without the man",
+      "Note": "purple abstraction that doesn\u0027t survive literal scrutiny \u2014 a hand cannot act \u0027without the man\u0027; it tells us the signature is habitual rather than showing it",
+      "Fix": "the same tilt and pressure each time, a signature made without thinking"
+    },
+    {
+      "BeatId": "019fa001-ec0b-7da7-93d3-ca98db358d65",
+      "Number": 6801,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "she tracked the receipts the way you track a thing you always knew was real and never expected to watch cross a table in daylight",
+      "Note": "Overwrought abstraction that tells the emotion rather than showing it; the simile is vague and doesn\u0027t clarify what \u0027in daylight\u0027 physically means here.",
+      "Fix": "Cut the simile; show a concrete physical detail \u2014 e.g., \u0027her eyes moved over each line twice before she let herself blink.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0b-78e8-aa7d-46141fac3cfa",
+      "Number": 6816,
+      "Chapter": "Double Entry",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "\u0022I am the principal for these purposes.\u0022",
+      "Note": "Quire earlier speaks strictly as the broker\u0027s representative relaying the broker\u0027s preferences (ref 1: \u0022The broker prefers,\u0022 \u0022the broker would rather know\u0022), consistently distinguishing himself from the broker. Here he abruptly claims to be the principal himself, which contradicts the established relayed-agent framing without any acknowledgment of the shift.",
+      "Fix": "Have Quire clarify the shift explicitly, e.g. \u0022For logging purposes, treat me as the principal,\u0022 so it reads as a deliberate legal fiction rather than an unflagged reversal."
+    },
+    {
+      "BeatId": "019fa001-ec0b-7fa0-9238-45293d956285",
+      "Number": 6817,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "the kind of hiding that ends with priced paper in a private vault",
+      "Note": "vague noir-flavored phrase that sounds portentous but doesn\u0027t literally clarify what \u0027priced paper in a private vault\u0027 means in context; reads as filler mystique rather than concrete stakes",
+      "Fix": "replace with a concrete specific, e.g. \u0027hiding that ends with forged instruments locked away where no auditor will ever see them\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0b-7792-ae87-e28155d945fb",
+      "Number": 6832,
+      "Chapter": "Double Entry",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MODERATE",
+      "Quote": "The Compact had no category for a person who wrote the truth in the private language of her own book and then filed none of it.",
+      "Note": "beat\u0027s apparent purpose is a legal-logic reveal, but the claim that omission is categorically outside Compact authority is asserted rather than demonstrated, leaving the deduction feeling stated rather than earned",
+      "Fix": "add one concrete clause or precedent showing why filing status is the operative boundary, not just declare it"
+    },
+    {
+      "BeatId": "019fa001-ec0b-7b83-8f31-fafab1470b32",
+      "Number": 6837,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "his face built over forty years of careful habits around the knowledge that he was not big enough to win an argument with his own body",
+      "Note": "convoluted abstraction that tells rather than shows character/physicality, and strains under literal parsing (a face \u0027built\u0027 around \u0027knowledge\u0027)",
+      "Fix": "His face carried forty years of a small man\u0027s caution \u2014 the habits of someone who\u0027d learned early he couldn\u0027t win a fight with his own body."
+    },
+    {
+      "BeatId": "019fa001-ec0c-708b-a71d-8ae07bd0572b",
+      "Number": 6852,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "Forty years of carrying a figure he could never say out loud, and then, at last, someone else saying it for him.",
+      "Note": "Reads as a summarizing, pseudo-profound statement of emotional significance rather than a dramatized moment; tells the reader how to feel about backstory not yet earned on the page.",
+      "Fix": "Trim to a more concrete beat, e.g. \u0027Forty years he\u0027d never said the number aloud. Vig just had.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0c-72fe-b90d-96466244a771",
+      "Number": 6855,
+      "Chapter": "Double Entry",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "a non-evidentiary finding needed no entry, and he made one anyway",
+      "Note": "stated rule and action directly conflict without explanation, and no reason is given for the deviation, making it read as a contradiction rather than characterization",
+      "Fix": "add a clause grounding why he logs it anyway, e.g. \u0027anyway, because habit outranked rule\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0e-7c6d-88e0-ed01d495f920",
+      "Number": 6877,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "They are materially accurate records of what occurred. The absence is the document: the choice not to file these entries was not error or omission. It was the record itself.",
+      "Note": "Pseudo-profound aphorism stacking; the last three sentences restate the same idea with increasing abstraction rather than adding information, reading as authorial flourish rather than in-world document voice.",
+      "Fix": "Cut to one assertion: \u0027The absence from every registry is not an omission. It is the record.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0e-7908-9188-3c2bc3877f68",
+      "Number": 6892,
+      "Chapter": "Double Entry",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "eleven pages, \u03A614,200 net, settlement marks verified, Section 14 satisfied. The carrier counted the sheets, three plus the attached key",
+      "Note": "The summary is described as eleven pages, but the carrier counts only three sheets plus a key \u2014 these figures don\u0027t reconcile without explanation.",
+      "Fix": "Either change the summary length to match (e.g., \u0027three pages\u0027) or clarify that the eleven-page document was condensed into a three-sheet certified extract."
+    },
+    {
+      "BeatId": "019fa001-ec09-7101-8e82-9686e982e0cc",
+      "Number": 6755,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "The obligation outlived them,.",
-      "Note": "Stray comma-period typo breaks mechanics",
-      "Fix": "The obligation outlived them."
+      "Quote": "On the receipt the letters started child-large and finished small and adult \u2014 the same shift in the hand he would later find inside the book.",
+      "Note": "Forward-referencing detail (\u0027he would later find\u0027) breaks the present-tense discovery mode and tips foreshadowing rather than letting it land later.",
+      "Fix": "Cut the clause after the dash; let the echo register naturally when he opens the book."
     },
     {
-      "BeatId": "019f76eb-7aee-72f4-8a45-b471c0d965a2",
-      "Number": 5447,
+      "BeatId": "019fa001-ec09-748a-9bef-0b91ace1da1a",
+      "Number": 6758,
       "Chapter": "Double Entry",
-      "Type": "MEANING-MISMATCH",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Poverty or a choice \u2014 he couldn\u0027t yet tell which.",
-      "Note": "This deduction is repeated almost verbatim two paragraphs later (\u0027In 2226 that meant poverty, or it meant intention\u0027), making the first instance feel redundant rather than building suspense",
-      "Fix": "Cut the first instance or differentiate the framing"
+      "Quote": "He had been code before he was a body",
+      "Note": "Slightly precious phrasing that leans toward aphorism-for-effect rather than concrete world detail, though it does carry information.",
+      "Fix": "Consider grounding it more concretely, e.g. \u0027He had existed as code for years before the body was grown for him.\u0027"
     },
     {
-      "BeatId": "019f76eb-a96b-774f-83e0-1c294446342e",
-      "Number": 5448,
+      "BeatId": "019fa001-ec09-770c-9a78-467d3a48f7cb",
+      "Number": 6762,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Room arranged, disposal clause placed, trigger armed \u2014 and then she had died and let it fire without her.",
+      "Note": "the list-then-pivot construction is a common rhythmic crutch; \u0027let it fire without her\u0027 slightly personifies the trigger in a way that verges on stock noir phrasing",
+      "Fix": "tighten to something more literal: \u0027Then she had died, and the trigger fired without her.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec09-76a1-a51b-36da354a5cbe",
+      "Number": 6764,
+      "Chapter": "Double Entry",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the settled weight of a thing that had been sitting here waiting",
+      "Note": "\u0027waiting\u0027 objects and \u0027settled weight\u0027 are worn atmospheric filler common to this genre",
+      "Fix": "cut to concrete sensory detail: dust pattern, scuff marks, temperature difference"
+    },
+    {
+      "BeatId": "019fa001-ec09-76a1-a51b-36da354a5cbe",
+      "Number": 6764,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He held there a moment he could not have justified on any bill.",
+      "Note": "cute aphoristic aside that tells us his professionalism/emotion rather than showing it; slightly undercuts the tension with wit",
+      "Fix": "cut the line or replace with a physical beat (breath held, latch cold under thumb)"
+    },
+    {
+      "BeatId": "019fa001-ec0a-7f48-97a9-665b2db4922e",
+      "Number": 6766,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "Not faded, not dirty. Settled into itself.",
-      "Note": "Borders on purple abstraction that doesn\u0027t quite cash out physically \u2014 \u0027settled into itself\u0027 describes a color reaching a mystical state rather than a concrete visual",
-      "Fix": "Tie it to a concrete color descriptor, e.g. \u0027gone the brown-black of old varnish\u0027"
+      "Note": "Vague abstraction stands in for a concrete visual; tells rather than shows the color/texture.",
+      "Fix": "Name the actual hue it settled into \u2014 e.g. \u0027a flat brown-grey, like tea gone cold.\u0027"
     },
     {
-      "BeatId": "019f76eb-a96b-774f-83e0-1c294446342e",
-      "Number": 5448,
+      "BeatId": "019fa001-ec0a-798d-8dba-11dfda60af60",
+      "Number": 6768,
       "Chapter": "Double Entry",
-      "Type": "MEANING-MISMATCH",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "The amounts we",
-      "Note": "Beat cuts off mid-word/mid-sentence, likely a text-truncation artifact rather than intentional; if intentional cliffhanger it doesn\u0027t read as one",
-      "Fix": "Complete the sentence or end on a full clause"
+      "Quote": "A working object, then \u2014 carried, not shelved.",
+      "Note": "Overt statement of the deduction the preceding sensory details already convey; redundant explanatory tag.",
+      "Fix": "Cut the sentence and let the corner/grease details stand alone."
     },
     {
-      "BeatId": "019f76eb-d89a-7a2f-a04f-f46535df6dca",
-      "Number": 5450,
+      "BeatId": "019fa001-ec0a-7f28-8a38-76a4bdae1f0b",
+      "Number": 6769,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the spacing of someone still learning what letters were for",
+      "Note": "Slightly overwritten explanatory clause telling us what the handwriting means rather than trusting the concrete detail already given.",
+      "Fix": "Cut the clause and let \u0027large and a little uneven\u0027 stand alone."
+    },
+    {
+      "BeatId": "019fa001-ec0a-72e8-a3b7-e423f0e48841",
+      "Number": 6771,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He ran the first ten against the fringe registry. Seven came back as hits, amount and settlement date and witness, all accurate. He ran the next twenty. Eleven verified outright; nine more confirmed through Compact secondary records.",
+      "Note": "Numbers stack up cleanly (7/10, then 11\u002B9=20/20) reading as tidy exposition rather than investigative texture; the perfect confirmation rate undercuts tension.",
+      "Fix": "Introduce at least one discrepancy or unresolved entry to break the mechanical accounting."
+    },
+    {
+      "BeatId": "019fa001-ec0a-7fdc-a855-d2fbfdaec38b",
+      "Number": 6774,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The amounts were not small.",
+      "Note": "Isolated one-line beat is vague filler \u2014 tells us scale without any concrete figure or image, functioning as a placeholder rather than a beat.",
+      "Fix": "Give a concrete number or comparison, or cut and fold the info into the surrounding beat."
+    },
+    {
+      "BeatId": "019fa001-ec0a-7058-8813-29347cde6040",
+      "Number": 6775,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He laid the pen across the page and sat with it.",
+      "Note": "Generic contemplative gesture that reads as stock \u0027thinking pose\u0027 business rather than a specific, telling action.",
+      "Fix": "Replace with a more particular physical detail tied to his character or the document."
+    },
+    {
+      "BeatId": "019fa001-ec0a-7d79-908b-ce9838ab70fc",
+      "Number": 6779,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Fourteen years of this work had taught him to know a family by its skull.",
+      "Note": "Tells the reader his expertise rather than showing it through specific observation; reads as an inserted credential rather than perception.",
+      "Fix": "Cut or fold into the jaw-recognition beat: \u0027He\u0027d learned to read a family in its bones \u2014 the Voigt jaw hadn\u0027t changed in three generations.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0a-7d79-908b-ce9838ab70fc",
+      "Number": 6779,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She read the book on the table before she read him, and the order of that told him something.",
+      "Note": "Withholds the actual inference (\u0027told him something\u0027) as a vague tease rather than delivering the observation, which reads as coy filler.",
+      "Fix": "State what it told him: \u0027She read the book on the table before she read him \u2014 she\u0027d come for the ledger, not the man.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0a-78ff-bce3-9d3f7c6071c6",
+      "Number": 6784,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "rehearsed past the point where she still believed they\u0027d work",
+      "Note": "Tells the reader her emotional state (loss of belief) rather than showing it through action or subtext; slightly abstract phrasing for a line otherwise grounded in concrete detail.",
+      "Fix": "Cut the clause or replace with a physical tell, e.g. \u0022Her words came out level, the kind of level that takes rehearsal.\u0022"
+    },
+    {
+      "BeatId": "019fa001-ec0a-7c5b-b282-d1ccdd0e3b73",
+      "Number": 6787,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The first silence she had filled because she thought she was supposed to. This one she left alone.",
+      "Note": "Tells the reader the meaning/motive of both silences rather than letting the contrast register through action; slightly over-explains an already-clear beat.",
+      "Fix": "Cut the explanatory clause: \u0022The first silence she had filled. This one she left alone.\u0022"
+    },
+    {
+      "BeatId": "019fa001-ec0a-74b3-b3d1-01504518e38f",
+      "Number": 6792,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "let the room hold the rest",
+      "Note": "",
+      "Fix": "consider a more concrete, less abstract close, e.g. \u0027and said nothing more.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0a-75f6-b11f-8ba0cc2d4c33",
+      "Number": 6794,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the settled stance of a man who had spent a career letting his body do the negotiating",
-      "Note": "Slides toward telling-not-showing the character trait it\u0027s simultaneously trying to show physically",
-      "Fix": "Cut the explanatory clause and let the physical description alone carry it"
+      "Note": "Vague tough-guy characterization by abstraction rather than concrete detail; tells us he\u0027s intimidating without showing anything specific.",
+      "Fix": "Cut to a concrete physical tell instead of the generalized claim."
     },
     {
-      "BeatId": "019f76eb-e25e-799c-805b-8b1f0b9b7e82",
-      "Number": 5451,
+      "BeatId": "019fa001-ec0a-75f6-b11f-8ba0cc2d4c33",
+      "Number": 6794,
+      "Chapter": "Double Entry",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the glance experienced men trade: once, brief, enough",
+      "Note": "Stock \u0027knowing look between professionals\u0027 beat, vague enough to be filler.",
+      "Fix": "Specify what the glance actually communicated or cut the aphoristic framing."
+    },
+    {
+      "BeatId": "019fa001-ec0a-77a2-8320-13fe188fded8",
+      "Number": 6796,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "The last line arrived carrying more than it said. Other jobs. Oth",
-      "Note": "Sentence cuts off mid-word, breaking mechanics (may be a truncation artifact, but as delivered it\u0027s a clunky dangling fragment).",
-      "Fix": "Complete the sentence or end cleanly: \u0027Other jobs. Other clients.\u0027"
+      "Quote": "Someone had kept these against a day they knew would come.",
+      "Note": "Ominous-portent aphorism that tells us meaning/foreboding rather than letting the physical evidence (aging, storage) speak for itself.",
+      "Fix": "Cut the line or replace with another concrete physical detail about the papers."
     },
     {
-      "BeatId": "019f76eb-e25e-799c-805b-8b1f0b9b7e82",
-      "Number": 5451,
+      "BeatId": "019fa001-ec0a-75aa-bfa2-935a49281d92",
+      "Number": 6798,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Eleven pages, eleven settled entries in the first forty",
+      "Note": "the parallel numbers read as a rhetorical flourish rather than a natural audit observation, slightly overpolished for a log-style beat",
+      "Fix": "Eleven entries settled out of the first forty pages,"
+    },
+    {
+      "BeatId": "019fa001-ec0a-7da4-bc4f-7d57f6279b39",
+      "Number": 6799,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Not a quanta over it, not a quanta under.",
+      "Note": "the repetition is a stock intensifier construction that reads as filler emphasis rather than earned precision",
+      "Fix": "Exact, to the quanta."
+    },
+    {
+      "BeatId": "019fa001-ec0b-7da7-93d3-ca98db358d65",
+      "Number": 6801,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Knowing was one register; this was another.",
+      "Note": "Aphoristic filler that states the theme rather than dramatizing it.",
+      "Fix": "Replace with a concrete sensory beat showing the gap between knowledge and confrontation."
+    },
+    {
+      "BeatId": "019fa001-ec0b-706c-9073-44ef4e6e8090",
+      "Number": 6804,
+      "Chapter": "Double Entry",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "He marked it and gave it no weight.",
+      "Note": "With no stated purpose, this reads as a Chekhov\u0027s-gun setup, but the flat delivery (\u0027marked it and gave it no weight\u0027) undercuts any tension the detail seems designed to plant.",
+      "Fix": "Either cut the vehicle detail or let his dismissal carry a beat of doubt to justify its inclusion."
+    },
+    {
+      "BeatId": "019fa001-ec0b-7633-ab79-6f5288f4caa4",
+      "Number": 6805,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The knock of someone who had decided before they got there that they would be let in.",
+      "Note": "Tells the reader how to interpret the knock rather than letting the detail carry it; slightly over-explains an already-clear image.",
+      "Fix": "Cut the sentence and let the single knock stand alone."
+    },
+    {
+      "BeatId": "019fa001-ec0b-7208-9c4a-f5bc84821db4",
+      "Number": 6806,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "features assembled from half a dozen coastlines and filed under none of them",
-      "Note": "Purple metaphor stretches past literal sense \u2014 faces aren\u0027t \u0027filed,\u0027 and \u0027coastlines\u0027 as ethnicity-signifier is vague enough to feel like reaching for color rather than image.",
-      "Fix": "Trim to a plainer physical description or commit to the metaphor\u0027s logic more concretely."
+      "Note": "Purple phrasing that gestures at ambiguity without giving a concrete visual; reads as a stock \u0027mysterious face\u0027 description.",
+      "Fix": "Replace with one or two specific, contradictory details (e.g., an accent mismatched to a jawline)."
     },
     {
-      "BeatId": "019f76eb-ec32-78cd-a79f-40748eb0dd45",
-      "Number": 5452,
+      "BeatId": "019fa001-ec0b-7614-abb6-46ff367be7b1",
+      "Number": 6810,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the twenty-two that meant something only to someone who was dead",
-      "Note": "Slightly sentimental capstone that tells the emotional weight rather than trusting the preceding accounting detail to carry it.",
-      "Fix": "Cut or replace with a more concrete closing image tied to the ledger itself."
+      "Quote": "The hands folded on the table, unhurried.",
+      "Note": "Synecdoche used to avoid naming the speaker reads as affectation rather than clarity; \u0027unhurried\u0027 tells the manner instead of showing it.",
+      "Fix": "Name the subject or cut the adverb: \u0022He folded his hands on the table.\u0022"
     },
     {
-      "BeatId": "019f76eb-f641-7f37-b2a5-757f11b16d67",
-      "Number": 5453,
+      "BeatId": "019fa001-ec0b-7e1c-95ab-cbe6cb97d3f2",
+      "Number": 6811,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "he turned the shape of that over once and set it aside",
+      "Note": "Vague gesture-of-thought filler that tells us he\u0027s processing without showing any actual reasoning or conclusion.",
+      "Fix": "Replace with a concrete inference or cut."
+    },
+    {
+      "BeatId": "019fa001-ec0b-7413-8bd0-d9ad82e75912",
+      "Number": 6812,
+      "Chapter": "Double Entry",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "\u0022The broker is not a corponation,\u0022 Quire said.",
+      "Note": "Stated as a flat assertion with no apparent question or context prompting it, so the exchange reads as disconnected fragments rather than a coherent beat.",
+      "Fix": "Add a connecting line or attribute the preceding question so the logic chain is visible."
+    },
+    {
+      "BeatId": "019fa001-ec0b-74f4-9d3f-b36cb735fa86",
+      "Number": 6814,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The question came out already flattened into paperwork.",
+      "Note": "Vague metaphor \u2014 a question can\u0027t be physically flattened into a category of document; reads as reaching for texture rather than depicting anything precise.",
+      "Fix": "The question came out clipped, procedural, as if he were reading it off a form."
+    },
+    {
+      "BeatId": "019fa001-ec0b-7f65-a1c3-baae33826982",
+      "Number": 6815,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The last line arrived carrying more than it said.",
+      "Note": "Tells the reader there\u0027s subtext rather than trusting the implication already present in dialogue; slightly redundant scaffolding.",
+      "Fix": "Cut the sentence and let the fragments (\u0022Other jobs. Other books.\u0022) carry the beat alone."
+    },
+    {
+      "BeatId": "019fa001-ec0b-7a75-8ca8-6f9996d4272d",
+      "Number": 6819,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He worked through the night.",
+      "Note": "flat, generic time-passage line that tells rather than shows and adds little given the detailed catalog work that follows",
+      "Fix": "cut, or fold the time marker into the next beat\u0027s opening line"
+    },
+    {
+      "BeatId": "019fa001-ec0b-762d-a792-3dcd5fde2f48",
+      "Number": 6822,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He set the results down and sat with them.",
+      "Note": "Vague, low-information gesture standing in for interiority; \u0027sat with them\u0027 is a soft abstraction that tells rather than shows a reaction.",
+      "Fix": "Cut or replace with a concrete action that shows his response, e.g. \u0027He read the list a second time, slower.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0b-72c4-81af-feda826400ad",
+      "Number": 6824,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The shape of the absence was the finding.",
+      "Note": "Slightly aphoristic phrasing that leans toward pseudo-profound summary rather than concrete detail, though it\u0027s grounded by what follows.",
+      "Fix": "Could be tightened to state the deduction plainly, e.g. \u0027Nothing existed anywhere. That was the finding.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0b-722d-aeb3-d765a8c2b950",
+      "Number": 6825,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Unless she had never meant them to be instruments.",
+      "Note": "Fragment functions as vague portentous hook without concrete content; reads as filler suspense rather than earned insight.",
+      "Fix": "Anchor it to a specific referent so the negation lands: \u0027Unless she had never meant the ledgers to be instruments at all.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0b-7d5a-a2b4-532f8a8b71a4",
+      "Number": 6826,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a number curdling into a threat",
+      "Note": "Metaphor strains under literal scrutiny\u2014numbers don\u0027t curdle\u2014and edges toward purple phrasing for what is otherwise a precise, restrained passage.",
+      "Fix": "Consider a plainer verb: \u0027before the number read as a threat.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0b-78e8-9826-486fef1a473f",
+      "Number": 6829,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "by morning it had set itself in him without effort",
+      "Note": "",
+      "Fix": "cut or make concrete: \u0027by morning he could recite it without looking\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0b-7a48-b53b-c36e828c0e33",
+      "Number": 6831,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "Three days of one held temperature had made the air feel like a surface.",
-      "Note": "Metaphor doesn\u0027t resolve into a clear sensation \u2014 \u0027air feel like a surface\u0027 is abstract enough to stall the read rather than ground it.",
-      "Fix": "Replace with a concrete sensory detail (e.g., \u0027The air had gone stale and close, three days unmoved.\u0027)"
+      "Note": "purple metaphor that doesn\u0027t quite parse literally \u2014 air \u0027feeling like a surface\u0027 is unclear sensory logic",
+      "Fix": "clarify what the sensation actually is, e.g. \u0027The stale, unmoving air pressed at him like a wall.\u0027"
     },
     {
-      "BeatId": "019f76ec-0040-7119-a624-bb72d0e1dcaf",
-      "Number": 5454,
+      "BeatId": "019fa001-ec0b-7722-9692-1e22ba3f996d",
+      "Number": 6835,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The gap between the structure and the extension is not falsification.",
+      "Note": "Reads as a slightly too-neat aphoristic legal hairsplit, verging on pseudo-profound phrasing for a private internal justification.",
+      "Fix": "Ground it more concretely, e.g. specify what document or clause he\u0027s measuring against, rather than a clean maxim-like sentence."
+    },
+    {
+      "BeatId": "019fa001-ec0b-7dba-83bc-a2d43e6fcc3a",
+      "Number": 6836,
+      "Chapter": "Double Entry",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "and he did not come alone",
+      "Note": "Stock ominous-arrival phrasing used often to signal menace.",
+      "Fix": "Specify who/what accompanied him instead of the stock formulation."
+    },
+    {
+      "BeatId": "019fa001-ec0c-7bb8-9c81-66214c107fcd",
+      "Number": 6840,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "He regarded the book the way a man regards a dispute he has been patient about for a very long time.",
-      "Note": "Slightly circular simile \u2014 describes the look by restating the situation rather than giving a distinct image.",
-      "Fix": "Ground it in a specific physical tell instead of restating patience/dispute abstractly."
+      "Note": "vague comparison that gestures at meaning without specifying what the patience or dispute looks like \u2014 tells the emotional stance rather than showing it",
+      "Fix": "He regarded the book the way a man regards a debt he\u0027s decided not to mention again \u2014 until he does."
     },
     {
-      "BeatId": "019f76ec-0a1b-7d31-a22b-e9865d028aec",
-      "Number": 5455,
+      "BeatId": "019fa001-ec0c-724f-9238-2f7ea049de07",
+      "Number": 6841,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "a woman confirming a shape she\u0027d already half traced",
-      "Note": "Abstract, slightly overwrought metaphor for realization that doesn\u0027t add concrete texture.",
-      "Fix": "Replace with a more literal beat of recognition tied to what she\u0027s seeing/hearing."
+      "Quote": "The breath went out of Vig through his nose \u2014 barely there, involuntary, finished before it began.",
+      "Note": "Over-engineered micro-gesture; the three-part qualifier chain undercuts itself and reads as straining to prove restraint rather than showing it.",
+      "Fix": "Trim to one or two beats: \u0027The breath went out of Vig through his nose, involuntary.\u0027"
     },
     {
-      "BeatId": "019f76ec-0a1b-7d31-a22b-e9865d028aec",
-      "Number": 5455,
+      "BeatId": "019fa001-ec0c-75a6-8420-81230636c621",
+      "Number": 6844,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "She took it in like someone getting the exact measurements of a room she had already paced out in the dark.",
-      "Note": "Simile is doing work the scene has already done (she\u0027d \u0027half traced\u0027 the shape moments earlier); redundant purple phrasing rather than new information.",
-      "Fix": "Cut or replace with a shorter, more physical reaction beat."
+      "Quote": "The pattern of something making sure of a place.",
+      "Note": "Vague abstraction stands in for the observation itself; tells us it\u0027s a pattern of surveillance without grounding the inference in a concrete detail.",
+      "Fix": "Cut or replace with a specific tell, e.g. \u0027Checking, not passing.\u0027"
     },
     {
-      "BeatId": "019f76ec-14a5-7161-b58b-3cecb0231611",
-      "Number": 5456,
-      "Chapter": "Double Entry",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "a sound that had been in the room four days and that he was only now hearing",
-      "Note": "Serviceable but slightly stock \u0027suddenly noticing ambient sound\u0027 device to signal shock; leans toward familiar interiority shorthand.",
-      "Fix": "Anchor to a more specific/unexpected sensory detail unique to this character."
-    },
-    {
-      "BeatId": "019f76ec-2837-7ca8-a480-16312add6469",
-      "Number": 5458,
-      "Chapter": "Double Entry",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "She had known these pages might one day leave the book. She had stitched them to go.",
-      "Note": "Repetitive restatement of the same idea for emphasis reads as a manufactured poignancy beat rather than earned insight.",
-      "Fix": "Cut one of the two sentences."
-    },
-    {
-      "BeatId": "019f76ec-2837-7ca8-a480-16312add6469",
-      "Number": 5458,
-      "Chapter": "Double Entry",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "Her jaw held.",
-      "Note": "Stock shorthand for stoic restraint under emotion.",
-      "Fix": "Show a more specific physical detail unique to Renn."
-    },
-    {
-      "BeatId": "019f76ec-32c1-76fb-8efe-f51983c92690",
-      "Number": 5459,
-      "Chapter": "Double Entry",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "a careful man in a careful man\u0027s employ",
-      "Note": "Cute parallel phrasing that reads as authorial wit rather than character observation, slightly undercutting the flat procedural tone.",
-      "Fix": "Cut the aphoristic tag or replace with a concrete action detail."
-    },
-    {
-      "BeatId": "019f76ec-32c1-76fb-8efe-f51983c92690",
-      "Number": 5459,
-      "Chapter": "Double Entry",
-      "Type": "GRIPE",
-      "Severity": "MINOR",
-      "Quote": "Whatever Vig imagined a certified audit was worth was Vig\u0027s business. \u03A6200 was \u03A6200.",
-      "Note": "Verges on a filler-wit universal-truth quip that steps outside the scene to editorialize.",
-      "Fix": "Trim to the transaction fact without the aphoristic doubling."
-    },
-    {
-      "BeatId": "45bbd397-9230-42e2-9c7d-81bda5edd5b7",
-      "Number": 5461,
-      "Chapter": "Double Entry",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "The breath through the nose. Barely there, involuntary.",
-      "Note": "Micro-tell-of-emotion via breath is a stock physiological cue, doubled down on later with the \u0027Relief. That was what the breath had been\u0027 explainer.",
-      "Fix": "Trust the later payoff and cut the early flagging, or make the physical detail more specific/unusual."
-    },
-    {
-      "BeatId": "45bbd397-9230-42e2-9c7d-81bda5edd5b7",
-      "Number": 5461,
+      "BeatId": "019fa001-ec0c-7940-a9e9-66f4f0677189",
+      "Number": 6848,
       "Chapter": "Double Entry",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "A man hearing a number for the first time does not breathe out like that.",
-      "Note": "Aphoristic phrasing states a universal truth to explain interiority rather than dramatizing it \u2014 borders on telling dressed as insight.",
-      "Fix": "Ground it in his specific sensation instead of a generalized claim about \u0027a man.\u0027"
+      "Note": "Reads as an aphoristic generalization rather than grounded observation, slightly telling rather than showing the deduction.",
+      "Fix": "Tie it more directly to the specific man/moment: \u0027Not the breath of a man hearing the number cold.\u0027"
     },
     {
-      "BeatId": "45bbd397-9230-42e2-9c7d-81bda5edd5b7",
-      "Number": 5461,
+      "BeatId": "019fa001-ec0c-7801-b62f-76492fc003fa",
+      "Number": 6850,
       "Chapter": "Double Entry",
-      "Type": "MEANING-MISMATCH",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "The case sat empty a",
-      "Note": "Sentence cuts off mid-clause, leaving the closing image (and the beat) incomplete.",
-      "Fix": "Finish the sentence to land the final beat."
+      "Quote": "He had never been running from the body.",
+      "Note": "Abstract aphoristic phrasing that tells rather than shows the character\u0027s nature; slightly detached from the immediate action.",
+      "Fix": "Cut or ground it in a concrete detail, e.g. \u0027The body was armor, not him.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0c-704e-8bef-4434e0d16d58",
+      "Number": 6854,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "his thumb found the hole before he\u0027d decided to touch anything",
+      "Note": "telling-not-showing gesture toward involuntary reaction reads as a stock \u0027body acts before mind\u0027 beat without adding specific information",
+      "Fix": "cut or replace with a concrete observation about the hole\u0027s diameter or depth"
+    },
+    {
+      "BeatId": "019fa001-ec0c-7f45-af16-3d37aaa246ef",
+      "Number": 6856,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "But the scope had never been the number.",
+      "Note": "aphoristic contrast that trades on abstraction (\u0027scope\u0027 vs \u0027the number\u0027) without grounding either term concretely in this beat, leaning on portentous vagueness",
+      "Fix": "specify what \u0027the scope\u0027 and \u0027the number\u0027 refer to so the line lands as insight rather than gnomic filler"
+    },
+    {
+      "BeatId": "019fa001-ec0d-7325-91ef-e7edfe29df9b",
+      "Number": 6859,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Quire spent two seconds on Renn",
+      "Note": "Attributing a precise duration to a glance is a slightly clunky mechanic \u2014 reads as authorial stage direction rather than observed action.",
+      "Fix": "Quire glanced at Renn \u2014 three days in the same corner..."
+    },
+    {
+      "BeatId": "019fa001-ec0d-70f8-90b8-63ddedc91041",
+      "Number": 6860,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Not a challenge. Just certain.",
+      "Note": "Terse fragment pair tips into telling-not-showing the emotional register of the gesture rather than letting the action carry it.",
+      "Fix": "Cut or fold into the preceding action: his palm settling over Quire\u0027s fingers, unhurried, certain."
+    },
+    {
+      "BeatId": "019fa001-ec0d-7766-80dc-e84bddf39e3a",
+      "Number": 6862,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "not a question, a woman confirming a shape she\u0027d already half traced",
+      "Note": "abstract, slightly overwrought clarification of tone that tells rather than shows; \u0027shape half traced\u0027 is vague filler imagery",
+      "Fix": "cut to just the line of dialogue, or replace with something concrete she\u0027s confirming"
+    },
+    {
+      "BeatId": "019fa001-ec0d-751d-b90a-d161649daa1f",
+      "Number": 6863,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "like someone getting the exact measurements of a room she had already paced out in the dark",
+      "Note": "purple simile that strains under literal scrutiny \u2014 measuring a room \u0027paced out in the dark\u0027 is an odd, overworked image for absorbing information calmly",
+      "Fix": "simplify to something plainer, e.g. \u0027like someone confirming what she already knew\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0d-7af6-be13-b9234ffef793",
+      "Number": 6864,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she said it the way you say a thing you\u0027ve known was the answer for years and only been waiting to say out loud",
+      "Note": "pseudo-profound explanatory aside that tells the reader how to feel about the line instead of letting the dialogue carry it",
+      "Fix": "cut the explanatory clause and let \u0027Burn them.\u0027 stand alone"
+    },
+    {
+      "BeatId": "019fa001-ec0d-703a-bce7-1e746bfb3b79",
+      "Number": 6867,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He decoded it the way he\u0027d decoded all the others: amount on the right, source in the center column.",
+      "Note": "Mechanical restatement of process without new information; reads as filler exposition rather than advancing tension.",
+      "Fix": "Cut or compress to a single clause focused on what\u0027s different this time, not the repeated method."
+    },
+    {
+      "BeatId": "019fa001-ec0d-7722-a230-e690952436a9",
+      "Number": 6870,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a sound that had been in the room four days and that he was only now hearing",
+      "Note": "The specificity of \u0027four days\u0027 is asserted without grounding; reads as a precise-sounding but unearned detail rather than observed fact.",
+      "Fix": "Cut to \u0027a sound that had been there all along\u0027 or establish the four-day timeframe earlier."
+    },
+    {
+      "BeatId": "019fa001-ec0d-76d7-808b-e50e73246a3f",
+      "Number": 6874,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she had earned whatever she\u0027d come to see",
+      "Note": "Vague abstraction stating emotional/narrative weight rather than showing it; reads as a hedge rather than concrete justification.",
+      "Fix": "Specify what she\u0027d earned or witnessed, e.g., \u0027she had sat through the worst of it, and she\u0027d stay for the rest.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0e-73c3-8009-2d4d2375174d",
+      "Number": 6880,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Her jaw was set exactly as it had been on the first day.",
+      "Note": "Tells the reader continuity of resolve without showing what that expression looked like or means here; relies on the reader recalling an unspecified \u0027first day\u0027 image.",
+      "Fix": "Specify the concrete detail: \u0027Her jaw was set, the same tight line it had been the first day she signed.\u0027"
+    },
+    {
+      "BeatId": "019fa001-ec0e-7b79-a95d-3236a378803c",
+      "Number": 6883,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She had known these pages might one day leave the book. She had stitched them to go.",
+      "Note": "Restates the preceding sentence\u0027s information (thread meant to release) as portentous doubled aphorism, telling the reader what to feel rather than adding new information.",
+      "Fix": "Cut one of the two sentences, or replace the second with a concrete detail (e.g., what she does now that they\u0027re gone) rather than restating intent."
+    },
+    {
+      "BeatId": "019fa001-ec0e-7c63-8aa7-221c978d31f3",
+      "Number": 6886,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "and the page caught and went",
+      "Note": "vague, slightly euphemistic mechanics for an act the beat wants to land with weight",
+      "Fix": "and the page caught, curled, and blackened"
+    },
+    {
+      "BeatId": "019fa001-ec0e-787e-ac4e-a666fad8b981",
+      "Number": 6888,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Her jaw held.",
+      "Note": "telling-not-showing shorthand for composure; too compressed to register as characterization",
+      "Fix": "specify the physical detail that signals restraint, e.g. the muscle at her jaw standing out"
+    },
+    {
+      "BeatId": "019fa001-ec0e-7545-8301-06f1043e5eb2",
+      "Number": 6893,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It weighed the sealed notice, then Ledger.",
+      "Note": "Ambiguous mechanics \u2014 \u0027weighed\u0027 applied to a person reads as unintentional double meaning (physical weighing vs. consideration), momentarily confusing subject-object relations.",
+      "Fix": "It weighed the sealed notice, then considered Ledger."
+    },
+    {
+      "BeatId": "019fa001-ec0e-7efb-a128-343c0227db1a",
+      "Number": 6894,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the one mark on the page that existed nowhere else in the world",
+      "Note": "Overreaching abstraction \u2014 a signature is not literally unique \u0027in the world\u0027 in a way that supports the quiet, concrete moment; tips toward telling-not-showing significance rather than letting the gesture (thumb along the edge) carry it.",
+      "Fix": "the one mark on the page that was only his"
+    },
+    {
+      "BeatId": "019fa001-ec0e-7a65-b052-16f9b6866b10",
+      "Number": 6896,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "when he could no longer hear them he went on listening a while anyway",
+      "Note": "Borders on a sentimental beat (listening to silence for emotional effect) common enough to edge toward clich\u00E9 territory, though restrained enough to mostly earn it.",
+      "Fix": "when he could no longer hear them he stayed still another moment before moving"
+    },
+    {
+      "BeatId": "019fa001-ec0e-775c-b6e7-4ff9e9b0a502",
+      "Number": 6899,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It was the most accurate record he could still make of them.",
+      "Note": "Editorializing summary line that tells the reader how to assess the act rather than letting the detail (the notation itself) carry the weight; slightly softens the documentary precision of the surrounding prose.",
+      "Fix": "Cut the sentence, or replace with a concrete detail (e.g., the exact wording he checked twice)."
+    },
+    {
+      "BeatId": "019fa001-ec0e-7b6b-8076-abf337391d0a",
+      "Number": 6904,
+      "Chapter": "Double Entry",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The book weighed 380 grams; it had weighed that on the first day, and it weighed that now.",
+      "Note": "The stated-fact-as-profundity move (weight unchanged despite implied significance) reads as a pseudo-meaningful flourish rather than an earned observation, especially stacked after the corridor silence beat.",
+      "Fix": "Cut the sentence or ground it in a concrete sensory detail tied to the scene rather than stated as a standalone truth."
     }
   ]
 }

@@ -471,7 +471,13 @@ public class NodeWorkbenchService
 
         if (code != null)
         {
-            var clash = await db.Nodes.AsNoTracking()
+            // NodeCode is a GLOBAL namespace, not per-universe: IX_Nodes_NodeCode is a plain
+            // unique index on NodeCode alone (no UniverseId), so IgnoreQueryFilters() here
+            // matches the real DB constraint. Without it, this check only sees codes within
+            // whichever universe is currently scoped and would report a cross-universe clash
+            // as "available" — the insert would then fail at SaveChangesAsync with a raw,
+            // unhandled DbUpdateException instead of this clean error.
+            var clash = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .FirstOrDefaultAsync(s => s.NodeCode == code, ct);
             if (clash != null)
                 throw new InvalidOperationException(

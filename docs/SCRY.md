@@ -5,8 +5,10 @@ code: SCRY
 layer: universe
 universe: scry
 status: live
+tier: series
+scope: SCRY
 triggers: SCRY, Entos, Fantasy, Sphere, Amnios, Keeper, Myrmidon, Verlaine, Lyra, Soren, Ocipheus, vigil, Sinter, accumulation
-updated: 2026-07-18
+updated: 2026-07-26
 related: docs/CRAFT.md
 ---
 

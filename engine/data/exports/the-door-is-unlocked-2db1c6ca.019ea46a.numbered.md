@@ -4,7 +4,7 @@ _She arrived in GLMZ with eight quanta, a secondary kit, and the clothes on her 
 
 He was waiting when she got there. He'd been watching since before she knew she was worth watching — a CorpoNation talent-hunter who makes his living finding operators too good to leave unlicensed. His pitch is always the same. His leverage is always the same. What he did not know about her is what he did to her mother's calibration instruments when she wasn't there to stop him.
 
-He lied about it when she asked. She logged it: he lies, and he burns what he takes.
+He lied about it when she asked. She knew it now: he lies, and he burns what he takes.
 
 Pixel is a full-stack Ghost — Channeler, Splicer, eigenstate transfer — with one edge nobody else in the GLMZ has: she can ghost any machine with a coherent frame, and she can channel AIs the way a musician plays an instrument. She doesn't defend. That was never her play.
 
@@ -13,426 +13,597 @@ PIXEL is a story about a woman who arrived with nothing and an infrastructure th
 [Beat 1]
 The job was going beautifully. That was always when you had to watch it.
 
-She was in three places at once. Her body sat in a borrowed server alcove on the fourth floor of the Hartfield relay facility. Her neuretics were threaded into the building's maintenance scheduler on a direct line. And two of the facility's own security drones were ghosted and running counter-patrol, mirroring the guard rotation in the corridor above her. They bought her a sixty-second gap, over and over, easy as tuning a coupling.
-
-The scheduler had said yes the way they always did when you knew how to ask. Not a hack. Not an injection. A conversation. What the conversation settled was this: a coolant fault on level eleven needed an unscheduled inspection. So the access-controlled door there had drifted to standby-unlocked, and the corridor camera had been talked into reporting every twelve minutes instead of every three. The scheduler seemed satisfied with the arrangement. Most building systems were, when you asked them right.
-
-The relay cache was on level eleven. She'd been inside the session for twenty-two minutes. The data was out. She was halfway through a clean exit when the counter-intrusion system found her.
-
-It wasn't slow. But she'd been careful — careful about her signature, about latency, about the exact texture of her channel work against the building's normal traffic. Somewhere in the session layer, though, a second process she hadn't mapped had been running a deviation check. It had just finished. She had about four seconds before it matched the anomaly to the access log.
-
-She pulled out of the scheduler clean and left the two ghosted drones to finish their last patrol on their own. Then she went hard into the ventilation array on the north corridor. Old hardware. No handshake protocol. The kind of machine nobody ghosted, because there was no way in built for it. She found the way in anyway — seven seconds — and was through a duct junction she'd already mapped before the alert hit the security net and the level-eleven door locked behind her.
-
-Her work kit was staged at the north service egress. On the wrong side of the lockdown now.
-
-She stood in the rain in the alley behind Hartfield with the clothes on her back, the secondary kit in her jacket pocket, and the tools in her head that no door could lock away. The rain was warm. It hit the shoulders of her jacket — patched mesh over a heat-dyed thermal, both in an acid-green and violet gradient she'd dyed herself, the collar stitched with small repairs three years deep. The alley smelled of rust and old coolant. She let herself stand there four seconds, no more, and then she moved.
-
-Her Detroit workshop was eight blocks west. The instrument case sat on the bench where she'd left it — her mother's tools, forty pounds of precision gear in a hard case worn smooth on the handle from twenty years of the same grip. She couldn't carry forty pounds at speed while running from a counter-intrusion alert. So she put the case in checked cargo for the Pulse. A bonded facility, a pickup window on the GLMZ end, the reference number saved in her secondary kit. Then she walked to the platform in the rain and didn't look back.
-
-On the platform she ran a passive sweep while she waited to board. The counter-intrusion response had already flagged her main gray-zone identity. She let it go cold. What she didn't expect was the second ping, forty seconds later, on an identity she'd sat on for eight months without touching. Then a third, three minutes after that, on one she used only for dead drops.
-
-Three pings. Too orderly to be counter-intrusion. Counter-intrusion came fast and wide. This was narrow and patient. Someone had held all three of those identities side by side for a while. Someone had been studying her before tonight — and tonight had given them a reason to run the check.
-
-She let that sit in the back of her head and thought about GLMZ. The biggest stretch of gray-zone machinery in the northern hemisphere. Ten times the machine density of Detroit. More network than she'd ever touched, more than she'd ever read about. She'd been planning the move for a year anyway.
-
-She boarded the Pulse.
-
 [Beat 2]
-From the inside, the Pulse car looked like a train. That was the neuretics doing it — building the inside of a 200-year-old intercity rail car around her. Worn plush seats. Metal luggage racks. A window that moved at real speed. The pod itself was a sealed sphere. She knew that. She rode the train anyway, because the other choice was staring at blank composite shell, and there was nothing in that worth looking at.
-
-She had the window seat. Detroit to Chicago, Chicago to GLMZ — the whole run, not the short corridor hops she'd done before. On the full run the Blur between metro corridors lasted longer. Less surveillance out here. The transit zone ran quieter than the city bands on either end.
-
-Mostly industrial haze and the low dark of pre-dawn Michigan. Eigenlift platforms hung in the mid-distance, lit amber, hauling the interurban freight. She read them off out of habit — load rating, frame shape, the maintenance cycle you could guess from amber status lights instead of white.
-
-Then she saw the aerobloc.
-
-Three hundred meters up, give or take, riding the thermals. A city block. Not a platform, not a freight rig — an actual city block of buildings, held up by an eigenlift frame so wide she had to work to find its edges in the haze. Residential scale. Maybe forty meters a side. It had come loose from its mooring, or the mooring had failed and whoever was liable had decided it was cheaper not to say so. It drifted south, slow and huge and not caring at all how it looked.
-
-She pressed her palm flat against the window glass.
-
-An eigenlift frame didn't push against anything. It suppressed weight across the whole space it held. She knew that cold, because the same fight with weight lived in every industrial rig she'd ever worked — just at platform and freight scale, never a city block riding a thermal it didn't know was under it. She thought about a fist-sized scrap of decommissioned lattice, driven hard. Nobody had bothered to build one that small; there was no money in it. It would be invisible to any system hunting for thrust and mass. She could see the whole thing in her head. She had the time. She saw no reason it couldn't be done.
-
-In GLMZ there would always be a drone she could ghost. That was probably enough.
-
-She watched the aerobloc until the car's speed pulled it out of frame. Whoever built it had used nine thousand engineers and a line of credit she couldn't begin to picture. She'd built her scrap-of-lattice idea in her head, alone, across the long Detroit months. Both were cheating the same weight. Both were in the air.
-
-She hadn't expected to feel anything about it. She was wrong. Something sat behind her sternum, warm and steady, and she didn't reach for it — the way a reading lands dead center in tolerance and you notice it anyway, because it is exactly, precisely right.
-
-She looked out at the haze closing back in.
-
-In the dead zone between corridors, a credential query came in on the identity she used only for dead drops. Three hops of anonymizing relay, clean and professional, checking whether the identity was still live. She let it ping dead and watched it resolve and go cold.
-
-The third query since Detroit. Whoever was building the picture of her had reach across the whole transit network. They'd known where she was going before she bought the ticket.
-
-GLMZ was ninety minutes away.
+She was in three places at once, and none of them was the one she'd have picked if a guard walked in. Her body sat folded into a borrowed server alcove on the fourth floor of the Hartfield relay facility. Her neuretics ran a direct line into the building's maintenance scheduler. And two floors up, two of Hartfield's own security drones flew a counter-patrol she'd ghosted onto them, mirroring the guard rotation corridor by corridor, buying her the same sixty-second gap over and over — easy as tuning a coupling until it stopped complaining.
 
 [Beat 3]
-The GLMZ Pulse terminal was nothing like Detroit's. She'd known that from the surveys — the numbers were public — but reading the numbers and standing inside them were two different things. The terminal filled six levels of the Seam margin complex and moved close to forty thousand arrivals a day. Industrial-white light, everywhere. The noise of all those arrivals — footsteps, low talk, machinery — landed on her chest like a weight. Over the top of it ran the Hyper Reality: brand idents peeling off every passing jacket and bag in three-second color loops, wall panels cycling through glowing ads made of no real pigment, a woman twenty meters ahead cracking a canteen and sending a column of branded, animated bubbles up into the air, where they hung. Nobody looked at any of it. Here, that was just what the air was.
-
-She put her palm flat against the arrivals-corridor wall and felt the building come up through the concrete — a steady low hum, heavy environmental systems running hard. Nothing wrong in it. She moved on.
-
-The first thing she did was run a passive sweep.
-
-Four credential queries in the first three minutes. All clean, all professional, each one hitting a different layer of her: her main board handle, a gray-zone credential she'd used twice in six months, the same secondary she'd seen pinged in the Blur, and one she didn't recognize at all. That last one resolved, when she looked, to a shadow credential she'd built two years ago and never switched on. Someone had her whole identity picture, put together before she got here. The queries were spaced like a net — not a street job, not counter-intrusion, but a careful contact-and-locate sweep run by someone who'd had time to build it right.
-
-She kept moving and let the queries bounce off empty entries.
-
-Twenty minutes in, her secondary account drained to Φ8. Not the primary — that was already cold from Detroit. The secondary, the one holding the Φ68 she'd moved over from the dead drop before she left. A passive tap sat buried in the gray-zone access layer under the terminal, reading her authentication signals and stripping the account credentials the moment she handshook. She checked the tap's relay signature: layered handoffs, dead-end routing nodes at the second and fourth hops, CorpoNation-adjacent. The same hand as the credential queries. The same operation.
-
-She went to find the bonded cargo facility. The pickup address for her checked kit resolved to a freight storefront in the transit buffer zone. Shutter down. Directory listing registered four days ago. The owner resolved to a mail-drop. The case was wherever it had actually gone. The system was pointing her at a place that had never received anything.
-
-She stood outside the shutter a moment. To the south stood the Thread, its pods coming down in even spacing, slow as falling water, same as always.
-
-She took stock. Secondary kit in her jacket pocket: pocket diagnostic tools, a spare credential token on a physical card, a flat driver, two picks. On her feet: her mother's work boots, one size too large, the toes padded with folded paper since the day she'd inherited them. In her account: Φ8. In her head: everything she knew how to do.
-
-She pulled the tap's relay signature and ran it through the tracer in her secondary kit — slower than her primary toolset, but it worked. Five hops, then a node playing dead, its silence carrying the tell-tale lag of hardware staged to look offline. There it was. The chain ran through registered CorpoNation access infrastructure. Not a shell. A real entity.
-
-So: someone had watched her in Detroit, tracked her through transit, had a net standing by at the terminal before she landed, and taken the case. They'd waited. They were still waiting.
-
-She had the relay signature and a shape to work back from. She ghosted a stoplight green at the terminal exit and walked into GLMZ with Φ8, a secondary kit, and a question she badly wanted the answer to.
+The scheduler had said yes the way they always did when you knew how to ask. Not a hack, not an injection. A conversation. What the conversation settled was small and reasonable: a coolant fault on level eleven wanted an unscheduled look, so the access door there had drifted to standby-unlocked, and the corridor camera had agreed to report every twelve minutes instead of every three. Most building systems went along with that kind of thing. They liked being asked right.
 
 [Beat 4]
-She had three ways to spend the night. Pay for a room — but she had Φ8, and a room in this margin ran Φ15 at the lowest. Find a mutual-aid node — but she had no network here, no contacts, nothing to put toward a buy-in. Or find somewhere that wasn't officially lodging at all.
-
-Three blocks from the terminal she found a building complex. Eight stories, part commercial and part residential, thrown up fast in the 2180s when the Seam margin was expanding, patched together ever since. She could hear its environmental system from the street. A twenty-two-hertz undertone — the coolant routing working harder than it should, and nobody had gotten to it. The facade carried no Hyper Reality emitters. The bracket mounts were there, stamped into the concrete at even intervals, but stripped bare or never loaded. That left the outside flat and plainly itself, in a way nothing three blocks back at the terminal had been.
-
-A maintenance drone was halfway through its patrol on the east wall — a standard crawler, two years old by the chassis, the kind used for facade checks and small structural work. She ghosted it for four minutes.
-
-The drone's sensors were thin: touch, proximity, light. She didn't need good optics. She went in through a vent on the east face and worked her way through the building's HVAC, hunting for somewhere big enough to sleep that wasn't being actively cooled and wasn't a through-route. The ductwork was a pleasant mess — add-ons from three different decades, a secondary cooling loop that looked like a weekend job, junction boxes with hand-labeled cable. Nobody had redesigned it since the day it went in.
-
-Sub-basement. A maintenance bay. Unlocked — the access panel on the corridor side read as unenrolled, because building security had never gotten around to registering it in the new credential system, so the old default unlock still held. Temperature-controlled. Empty overnight, by the dust and the dark status lights. A fold-down work surface and a power tap along the south wall.
-
-She came back into her Husk — the body she'd left dormant in the bay while she rode the drone — and released the drone to finish its route.
-
-The building's management AI was reachable through the environmental control subnet. She sent it a direct address — no injection, no channel hack — and told it she was a calibration specialist, in early on a delayed contract. She'd seen the fault flag on the coolant coupling, the one that had been showing for six days, the one the maintenance schedule still hadn't assigned to anyone. She could fix it tonight. She needed the maintenance bay until morning.
-
-There was a pause. Longer than network latency. More like something thinking it over.
-
-The bay's access panel switched from unenrolled to active. Her spare credential token registered on it.
-
-The coolant coupling sat in a junction chase on the north wall — four degrees warmer than the metal around it, the heat of a seal working above spec. Standard thirty-year-old format. She knew it on sight, because thirty-year-old format was most of Detroit. Two picks, a flat driver, patience. Forty minutes. She cleaned the seating surface, shimmed the tolerance with thermal tape from her kit — a stopgap, not a real fix, but it would hold until someone ordered a proper coupling — and reseated the housing.
-
-The twenty-two-hertz hum in the walls dropped by half a step, down toward where it belonged. She felt the change settle through the concrete under her hands.
-
-She unfolded the work surface, put her jacket under her head, and slept.
-
-In the morning she checked the fault log before packing. The management AI had marked the repair done — timestamped, credited to an anonymous calibration contractor. She hadn't given it a name. It had logged the work anyway.
-
-She sat with that a moment while she packed her kit. A standard building AI took commands from outside; you gave it the right instructions and it ran them. It didn't bargain over access. It didn't treat a direct address about a broken coupling as reason enough to act. It didn't log anonymous work as though the work meant something.
-
-One night in. She picked up her secondary kit and went to find work.
+Twenty-two minutes inside the session. The relay cache on level eleven was open, the data was out, and she was halfway through a clean exit when the counter-intrusion system found her.
 
 [Beat 5]
-The GLMZ gray-zone boards ran on a routing setup she didn't know, through posting nodes she'd never seen, with verification handshakes two generations ahead of Detroit's. She spent an hour mapping the access protocol before she posted a thing. By the end she could tell which listings came from automated aggregators, which came from real clients, and which were honeypots — traps pulling credentials off anyone who so much as queried the details.
+It wasn't slow. But she'd been careful — her signature, her latency, the exact texture of her channel work laid down against the building's ordinary traffic so it read as part of the weather. What she hadn't mapped was a second process in the session layer, running a deviation check the whole time, patient as a held breath. It had just finished. Four seconds, give or take, before it matched the anomaly to the access log and put a name to her.
 
-She took a job for Φ90. Data cached inside a proprietary relay frame; the client had the outside address but not the inside session key. Four hours of channel work to get in without tripping the frame's security logging. It was a 2210s model — she knew from the handshake — an older authentication protocol patched twice, the underlying architecture never replaced. The patches were bolted on. The seams showed, to anyone who knew where to look.
+[Beat 6]
+She was already moving. Out of the scheduler clean, the two ghosted drones left to fly out their last patrol alone. The way forward was the ventilation array on the north corridor — old hardware, no handshake, the kind of machine nobody ghosts because there's no door built into it to open. She found the door anyway. Seven seconds. Then she was through a duct junction she'd mapped an hour ago and gone before the alert crossed the security net and the level-eleven door locked itself behind her.
 
-She worked from the sub-basement of a gray-zone café with an unmonitored network segment in the back. The counter upstairs ran physical labels only: a rack of Saltline electrolyte pouches at Φ1.50 each, the silver foil dead and unanimated, a handwritten board in marker above the water heater. No scent sim, no overlay. In a place like this, the absence of Hyper Reality was itself a credential for the network below it. She went in clean, moved through the session layer without touching the patch layer or the architecture under it, lifted the cached data to a secure local token, and logged out. Total session time: three hours, forty minutes. Under budget.
+[Beat 7]
+Her work kit was staged at the north service egress. On the wrong side of the lockdown now, and it would stay there.
 
-She dropped the token at the client's dead-drop and had Φ90 within the hour.
+[Beat 8]
+So she came up in the rain in the alley behind Hartfield with the clothes on her back, the secondary kit in her jacket pocket, and the only tools that mattered still in her head where no door could reach them. The rain was warm. It found the shoulders of her jacket — patched mesh over a heat-dyed thermal, acid-green fading to violet, a gradient she'd laid down herself, the collar carrying three years of small repairs. Rust and old coolant in the wet air. She gave herself four seconds of it and then spent none.
 
-She needed a room.
+[Beat 9]
+The workshop was eight blocks west, and her mother's instrument case sat on the bench where she'd left it: forty pounds of precision gear in a hard shell, the handle worn to a shine by twenty years of the same grip — twenty years an ER nurse, until the night a bad batch of pharmaceuticals took her along with the patients it was supposed to save, filed afterward as equipment failure and nothing else. Pixel had the case, and a father somewhere who was still alive and still a stranger, which was its own kind of nothing. The case was the only inheritance that had ever meant anything. You do not run from a counter-intrusion alert carrying forty pounds. So the case went into checked cargo for the Pulse — a bonded facility, a pickup window on the GLMZ end, the reference number folded into her secondary kit — and she walked to the platform without turning around to watch the workshop get small.
 
-She mapped three boarding houses in the Seam margin and weighed them on two things: price and fiberoptic access. Standard access wasn't the problem — money bought that anywhere. What she needed was unmonitored bandwidth off the official grid, the kind that didn't report its traffic to the CorpoNation overlay that owned most of GLMZ's registered network.
+[Beat 10]
+She ran a passive sweep while she waited to board. Her main gray-zone identity was already flagged; she let it go cold. The thing she hadn't expected came forty seconds later: a ping on an identity she'd sat on for eight months and never touched. Then a third, three minutes after that, on one she used only for dead drops.
 
-The Pivot came up on the third cross-reference. Cheap for the margin — Φ45 a week, which meant the building had a problem. She walked past it and stood on the corner for thirty seconds, reading the heat off the basement foundation. Three separate trunk lines down there, different generations of fiberoptic, the temperature of dead hardware that had been sitting in the ground since before the 2180s expansion. Unregistered. Whoever laid those trunks hadn't wanted CorpoNation oversight, and the building had gone up around them.
+[Beat 11]
+Counter-intrusion came fast and wide. This came narrow and patient, three names laid side by side by someone who'd been holding all three for a while. Not tonight's work. Tonight had only given them a reason to run the check on somebody they'd already been studying.
 
-She took the room that afternoon. Narrow bed, a power tap, a window looking straight at the next building's wall. She paid for the week: Φ45. She was down in the basement, splicing into the first trunk line, before the evening was out.
+[Beat 12]
+She let it sit at the back of her head and thought instead about where she was going. GLMZ — the biggest stretch of gray-zone machinery in the northern hemisphere, ten times Detroit's machine density, more network than she'd ever put her hands on. She'd been planning the move for a year. Tonight had only moved the date.
 
-She started mapping GLMZ. The networks were newer than Detroit's and more locked-down — every big infrastructure segment owned by a different CorpoNation with a different way in, the gray-zone routing threaded between them like weeds between paving stones. More sophisticated than Detroit, and more broken up. The machines were denser than anything she'd worked. Better kept, too: real service cycles, hardware swapped out when it failed instead of shimmed and kept limping. Better for the machines. Harder for her — a well-maintained machine didn't grow the seams she was used to slipping through.
+[Beat 13]
+She boarded the Pulse.
 
-She did find something else, though.
+[Beat 14]
+From the inside, the Pulse car looked like a train. That was the neuretics doing it, building two hundred years of intercity rail around her out of nothing: worn plush seats, metal luggage racks, a window with real country sliding past it at real speed. The pod itself was a sealed sphere with no window at all. She knew that. She rode the train anyway. The other choice was a blank composite shell eighteen inches from her face, and there was nothing in that worth the looking.
+
+[Beat 15]
+Window seat. Detroit to Chicago, Chicago to GLMZ — the whole run this time, not the short corridor hops she'd made before. The long haul meant a longer Blur out in the dead stretches between metro bands, where the surveillance thinned and the transit zone ran quiet.
+
+[Beat 16]
+Industrial haze, mostly, and the low dark of pre-dawn Michigan. Eigenlift platforms hung in the middle distance, lit amber, hauling freight between the interurban yards. She read them off the way another passenger might hum — load rating from the sag of the frame, the maintenance cycle told plain by the amber status lights where white would have meant healthy.
+
+[Beat 17]
+Then the aerobloc came up out of the haze, and she stopped reading anything.
+
+[Beat 18]
+Three hundred meters up, give or take, riding the thermals. Not a platform. Not a freight rig. A city block — an actual block of buildings, residential scale, maybe forty meters to a side, held aloft on an eigenlift frame so wide she had to work to find its edges in the murk. It had come off its mooring, or the mooring had failed and whoever carried the liability had decided it was cheaper to say nothing. It drifted south, slow and enormous, not caring in the least how it looked doing it.
+
+[Beat 19]
+She pressed her palm flat to the window glass.
+
+[Beat 20]
+An eigenlift frame pushed against nothing. It leaned on the weight itself, suppressed it across the whole volume it held, and she knew that fight cold — the same argument with gravity lived in every industrial rig she'd ever opened up, only ever at platform scale, never a city block borne up on a column of warm air that had no idea it was doing the work. And there, palm on the glass, she built the small version. A scrap of decommissioned lattice, fist-sized, driven hard. Nobody had ever bothered to make one that small; there was no money in a thing that lifted only itself. It would show up on no system hunting for thrust or mass, because it made neither. She could see the whole of it in her head, complete, and she had the time to turn it over — and turning it over, she hit the wall she always hit. Fist-sized meant the suppression field folded in on itself at the edges, the frame fighting its own margins instead of the weight, and the whole thing tore itself apart the instant it took load. She ran it three ways and it failed three ways. Drive it harder and the lattice cooked. Widen the frame to stop the fold and it stopped being fist-sized, stopped being invisible, became just another platform for the net to see. The clean answer she'd carried into the beat came apart in her hands the way it always came apart, and she found no reason it couldn't be done and no way to do it either. In GLMZ there would always be a drone she could ghost. That part, at least, would take care of itself. The rest of it wouldn't.
+
+[Beat 21]
+She watched the block until the car's speed dragged it out of the frame. Whoever had built it had spent nine thousand engineers and a line of credit she couldn't make her mind hold the shape of. She'd built her fist-sized version alone, in her head, across a lot of long Detroit nights. Both of them were cheating the same weight. Both of them were in the air.
+
+[Beat 22]
+She had not expected to feel anything about that. She was wrong. Something settled in behind her sternum, warm and level and entirely uninvited, and she left it alone — the way a reading lands dead center in tolerance and you notice it anyway, because it is exactly, precisely right and there is nothing to adjust.
+
+[Beat 23]
+Out past the glass the haze closed back over the place where the block had been.
+
+[Beat 24]
+In the dead zone between corridors a query touched the identity she kept for dead drops — three hops of clean relay, professional, only asking whether the name was still alive. She let it knock on an empty room and watched it give up and go cold. The third since Detroit. Whoever was drawing her likeness had reach across the whole transit net; they'd known where she was headed before she'd bought the seat under her.
+
+[Beat 25]
+GLMZ was ninety minutes away.
+
+[Beat 26]
+The GLMZ Pulse terminal was nothing like Detroit's. She'd known the numbers going in — they were public — but a number and the thing itself turned out to be two different animals. Six levels of the Seam margin complex given over to it, close to forty thousand arrivals a day pushed through, all of it lit in the same industrial white. The noise came at her first: footsteps and low talk and machinery, forty thousand people's worth, landing on her chest like a hand laid flat. Over the top of it ran the Hyper Reality — brand idents peeling off every passing jacket in three-second loops, wall panels cycling ads made of no real pigment, a woman ahead of her cracking a canteen and sending a column of animated, branded bubbles up to hang in the air. Nobody so much as glanced at any of it. Here, that was only what the air was made of.
+
+[Beat 27]
+She set her palm flat to the arrivals-corridor wall and let the building come up through the concrete. A steady low hum, heavy environmental plant running hard, nothing wrong in the note of it. She took her hand back and moved on.
+
+[Beat 28]
+First thing, before anything else: a passive sweep.
+
+[Beat 29]
+The answer came back worse than she'd hoped. In three minutes, four separate credential queries brushed her — one at every name she owned, clean and unhurried and professional, all the way down to a shadow credential she'd built two years ago and never once switched on. Somebody already had the whole picture of her, assembled and cross-checked before her boots touched the floor. The queries didn't come at her like a street grab or a counter-intrusion sweep. They came spaced out, patient, a net hung by a hand that had been given all the time it wanted to hang it right.
+
+[Beat 30]
+She kept walking and let every query bounce off an empty room.
+
+[Beat 31]
+Twenty minutes in, her secondary account went from Φ68 to Φ8 between one handshake and the next. Not the primary — the primary had been cold since Detroit. The secondary, the working money, the sixty-odd Φ she'd carried over from a dead drop before she left. A passive tap sat buried down in the gray-zone access layer under the terminal, reading her authentication the instant she offered it and stripping the account on the way past. She pulled the tap's relay signature and read it: layered handoffs, dead-end nodes seated at the second and fourth hops, the whole thing CorpoNation-adjacent. The same hand that had hung the net. One operation, patient at both ends of it.
+
+[Beat 32]
+The bonded cargo facility was next, and it was a closed door. The pickup address for her checked kit resolved to a freight storefront in the transit buffer, shutter down, its directory listing registered four days ago and its owner nothing but a mail-drop. Her mother's case was wherever it had actually gone. The system was pointing her, politely, at a place that had never taken delivery of anything.
+
+[Beat 33]
+She stood outside the dead shutter a moment. South of it, above the roofline, the Thread came down out of the sky, its pods spaced even and falling slow as water, the same as it always was and always would be.
+
+[Beat 34]
+What she had, she counted. In her jacket pocket, the secondary kit: pocket diagnostics, a spare credential token on a physical card, a flat driver, two picks. On her feet, her mother's work boots, a size too big, the toes packed out with folded paper the way they'd been packed since the morning she came into them. In the account, Φ8. In her head, everything she knew how to do — and that, at least, no tap had gotten near.
+
+[Beat 35]
+She ran the tap's signature through the tracer in her kit. Slower than her real tools, but it walked the chain: five hops, then a node playing dead, its silence carrying the small tell-tale lag of hardware staged to look offline. There it sat. And behind it, the chain ran up into registered CorpoNation access infrastructure. Not a shell. A real entity, with a real name somewhere under all that routing.
+
+[Beat 36]
+So. Somebody had watched her in Detroit, followed her across the transit net, stood a net up at the terminal before she landed, and lifted her mother's case on the way. And then they had settled in to wait.
+
+[Beat 37]
+She had the signature, and a shape to work back from. At the terminal exit she talked a stoplight green and walked out into GLMZ with Φ8, a kit that fit in one pocket, and a question she badly wanted the answer to.
+
+[Beat 38]
+Three ways to spend the night, and she ran the price on each. Pay for a room — but the cheapest bed in the margin ran Φ15, and she had Φ8. Find a mutual-aid node — but aid ran on network, and she had no contacts here, nothing to put down as a buy-in. That left the third way: somewhere that wasn't lodging at all.
+
+[Beat 39]
+She found it three blocks from the terminal. An eight-story complex, part commercial and part residential, thrown up fast in the 2180s when the Seam margin was still spreading and patched together in every decade since. She heard its trouble before she reached it — a twenty-two-hertz undertone off the environmental plant, coolant routing leaning harder than it should, and nobody had come to ease it. No Hyper Reality on the facade, either. The bracket mounts were stamped into the concrete at even intervals, but stripped bare or never loaded, which left the building standing there flat and plainly itself. Nothing three blocks back at the terminal had been allowed to look like only what it was.
+
+[Beat 40]
+A maintenance crawler was working the east wall on its patrol, two years old by the chassis, the kind of unit built for facade checks and small repairs. She rode it for four minutes. Its senses were thin — touch, proximity, light, no real optics — but she wasn't there to look at anything pretty. She took it in through a vent and walked it through the building's guts, hunting a space big enough to lie down in that wasn't being actively cooled and wasn't a route to anywhere. The ductwork was a pleasant mess: add-ons from three different decades, a secondary cooling loop that had the look of a weekend job, junction boxes labeled by hand. Nobody had redrawn any of it since the day it first went in, and she liked it the better for that.
+
+[Beat 41]
+The sub-basement gave her a maintenance bay. The corridor panel read unenrolled — security had never gotten around to registering it in the new credential system, so the old default unlock still quietly held — and the room beyond was temperature-controlled, empty overnight by the dust and the dark status lights, with a fold-down work surface and a power tap along the south wall.
+
+[Beat 42]
+She came back into her Husk where she'd left it dormant in the bay, and let the crawler go finish its round.
+
+[Beat 43]
+The building's management AI answered on the environmental subnet. She addressed it straight — no injection, no hack, just a plain word offered — and told it what was mostly true: a calibration specialist, in early on a delayed contract, who'd caught the fault flag that had been sitting six days on a coolant coupling nobody had been assigned to touch. She could have it fixed tonight. She wanted the bay until morning.
+
+[Beat 44]
+The pause came back longer than latency accounted for. It had the shape of something turning the request over.
+
+[Beat 45]
+Then the access panel went from unenrolled to active, and her spare credential token registered against it.
+
+[Beat 46]
+The coupling sat in a junction chase on the north wall, four degrees warmer than the metal around it — the heat of a seal working past its spec, in a thirty-year-old format she knew on sight because thirty-year-old format was most of what Detroit had ever handed her. Two picks, the flat driver, and patience. Forty minutes to clean the seating surface, shim the tolerance with thermal tape out of her kit, and reseat the housing — a stopgap and not a cure, but it would hold until somebody ordered the real part. The twenty-two-hertz hum in the walls came down half a step toward where it belonged, and she felt it settle through the concrete under her palms.
+
+[Beat 47]
+She unfolded the work surface, put her jacket under her head, and slept.
+
+[Beat 48]
+In the morning, before she packed, she checked the fault log. The AI had marked the repair done — timestamped, credited to an anonymous calibration contractor. She had never given it a name. It had written the work down anyway, as work that had been done and counted.
+
+[Beat 49]
+She sat with that while she sorted her kit back into her pocket. A standard building AI takes its orders from outside and runs them; it does not weigh a stranger's direct word about a broken coupling and decide the word is reason enough to open a door. It does not keep the record of a job by someone who never signed it, as though the doing had meant something to it. One night in, and GLMZ had already done a thing Detroit never had. She set it aside with everything else about this city she couldn't yet explain, picked up her kit, and went looking for work.
+
+[Beat 50]
+The gray-zone boards in GLMZ ran on routing she didn't know, through posting nodes she'd never seen, behind verification handshakes two generations past anything Detroit had taught her. She gave it an hour before she posted a thing — long enough to learn the sort of the place: which listings came off automated aggregators, which came from clients with real money behind them, and which were honeypots, sitting there to strip the credentials off anyone who so much as opened the details.
+
+[Beat 51]
+Her first GLMZ job paid Φ90. Data locked inside a proprietary relay frame, the client holding the outside address but not the session key to the inside. It was a 2210s model — the handshake gave it away — an older authentication protocol patched twice over an architecture nobody had ever bothered to replace. The patches were bolted on. The seams between them showed, to anyone who'd learned where a seam liked to hide. She worked it from the sub-basement of a gray-zone café, an unmonitored segment in the back and a counter upstairs that ran on nothing but physical labels: Saltline pouches at Φ1.50, the foil dead, a marker board over the water heater. No scent sim, no overlay. In a place like that, the plain absence of Hyper Reality was itself a kind of credential for the network underneath it. She went in clean, moved through the session layer without ever brushing the patch layer or the old bones below it, lifted the data to a local token, and logged out under budget. The drop paid within the hour.
+
+[Beat 52]
+Then a room. She weighed three boarding houses on price and on one thing money couldn't buy anywhere: bandwidth off the official grid, the unmonitored kind that didn't report its every packet up to the CorpoNation overlay that owned most of GLMZ's registered network.
+
+[Beat 53]
+The Pivot turned up on the third cross-reference — Φ45 a week, cheap enough for the margin to mean the building had a problem worth having. She walked past it once and stood on the corner half a minute, reading the heat off the basement foundation through her feet. Three trunk lines down there, three different generations of fiberoptic, all carrying the cold of dead hardware that had been in the ground since before the '80s expansion. Unregistered, every one. Whoever laid them hadn't wanted the CorpoNation looking, and the building had simply grown up over the top of them. She took the room that afternoon: a narrow bed, a power tap, a window with a clear view of the next wall over. By evening she was down in the basement with her hands in the first trunk line.
+
+[Beat 54]
+Her unit was 2E, second floor, a door and a half from the stairwell. She read the hallway the same way she read everything else in a new building — corner to corner, with her hands and her attention, before she trusted it enough to sleep in it. Across the hall sat 2D.
+
+[Beat 55]
+She never saw that door open, not the first night. She heard it: past two in the morning, a latch turned with the particular quiet of someone who'd practiced turning it quiet, and under the building's ordinary smell of dust and old coolant and someone's fried onions three floors down, a thread of something coppery she placed a half-second after she noticed it. She put her eye to the peephole on pure reflex, the same reflex that made her read a foundation through her boots. The fisheye gave her a narrow yellow slice of corridor and, in it, half a second of something catching the hall light wrong — steel, she was almost sure, though the glass warped everything into the same wet gleam. Then the door across the way clicked shut, and the hallway went back to being a hallway, and she went back to bed with one more fact filed and no shape yet to hang it on.
+
+[Beat 56]
+After that she started reading GLMZ itself, and GLMZ read harder than home. Newer networks, tighter locks — every big segment owned by a different CorpoNation with a different door, the gray-zone routes threaded between them like weeds coming up through paving. The machines ran denser than anything she'd worked, and better kept: real service cycles, dead parts swapped out instead of shimmed and nursed along. Detroit had never run that way. Back home the joke wasn't really a joke: it's just robots repairing robots, all the way down, and had been since before she was born — nobody left in the loop to ask why, or to swap a part before it failed instead of after. Good for the machines here. Harder for her, because a machine that's looked after doesn't grow the seams she'd spent three years learning to slip through.
+
+[Beat 57]
+She did find one other thing.
 
 The AIs here talked to her.
 
-In her first two days, three separate building systems spoke to her unprompted. A climate node flagged a thermal anomaly in a corridor she was only passing through — not her building, not her business, just data it seemed to think she ought to have. A load-balancing scheduler broke into her board session to offer her an unmonitored compute segment it had sitting free. And The Pivot's management AI greeted her by her board handle when she came through the door her second morning.
+[Beat 58]
+In two days, three of them spoke without being spoken to. A climate node flagged a thermal fault in a corridor she was only passing through — not her building, not her problem, just something it seemed to feel she ought to know. A load-balancer cut into her board session to offer her a free stretch of unmonitored compute it happened to have going spare. And the second morning, the Pivot's own management AI called her by her board handle as she came through the door.
 
-She hadn't given The Pivot's AI her handle. She hadn't addressed it at all.
+[Beat 59]
+She had never given the Pivot's AI her handle. She had never addressed it at all.
 
-She set it aside as one more thing GLMZ did that Detroit hadn't. Three data points weren't a pattern. She kept working.
+[Beat 60]
+She set it beside the long pause on the subnet her first night, and the anonymous line in that other building's fault log — one more thing GLMZ did that Detroit never had. Three points weren't a pattern. She kept working.
 
-[Beat 6]
-Fourteen days. Six jobs in that time, and in the gaps between them she chased the skim relay.
+[Beat 61]
+Fourteen days, six jobs, and in the seams between them she chased the man who'd skimmed her.
 
-Whoever built the chain had built it to be expensive to follow. She couldn't touch it directly without lighting up, so she read it sideways — passive traces on a timer, the silence patterns between hops, the tiny differences in how long each node took to answer. Slow work, the kind you do a little at a time and then wait on. Nine days before she had enough to draw the whole shape.
+[Beat 62]
+He'd built the relay chain to be expensive to follow. She couldn't lay a hand on it directly without lighting herself up, so she read it from the side: passive traces run on a timer, the shape of the silences between hops, the small honest differences in how long each node took to answer a knock. It was slow work, the kind you do a little of and then leave alone and come back to. Nine days before she had enough of it to draw.
 
-The last registered address in the chain sat in The Low. That was the ungoverned band between thirty and three hundred meters, where gray-market transit moved cargo that wanted no manifest and no surveillance system had the standing to look. Drop points for credential work liked it up there — reachable straight up, invisible from the ground, outside anyone's jurisdiction.
+[Beat 63]
+The last registered address in the chain sat up in The Low — the ungoverned band between thirty and three hundred meters, where gray-market transit hauled cargo that wanted no manifest and no surveillance system had the standing to go looking. Credential work liked it up there. Reachable straight up, invisible from the street, outside anyone's writ.
 
-She needed eyes at altitude that wouldn't show on aerial surveillance. So she borrowed some. The Low ran transit drones around the clock: cargo nets, small unregistered lifting rigs, the working guts of an economy that only existed between thirty and three hundred meters. She found one on a low pass near the freight corridor and ghosted it.
+[Beat 64]
+What she needed was a pair of eyes at altitude that wouldn't paint themselves across aerial surveillance, so she went and borrowed some. The Low ran drones around the clock — cargo nets and little unregistered lifting rigs, the working guts of an economy that lived entirely between thirty meters and three hundred. She caught one on a low pass near the freight corridor and rode it up.
 
-The handoff hit the way it always did. Her visual field split — the room and the drone's forward view both running for half a second — and then the drone took over. The room dropped to background, still there, felt more than seen, her Husk sitting motionless in the chair two floors up while the rest of her banked out over open air. The cargo rig's sensors were built for not hitting things, not for looking at them. Enough.
+[Beat 65]
+The handoff came the way it always came. Her sight forked — the room and the drone's forward view both live for half a second — and then the rig had her. The room fell back to a thing felt rather than seen, her Husk gone still in the chair two floors below while the rest of her banked out over open air on a cargo rig's poor senses, which were built for not hitting things and not for looking at them. It was enough.
 
-She took it up to two hundred and ten meters and found the housing bolted to the underside of an eigenlift platform's maintenance strut. Nothing to look at — housings like it ran gray-zone traffic all through GLMZ's airspace. But this one put out the exact power signature she'd been tracking for ten days. She pulled its output and laid it against her chain data. Clean match. And behind it, the registration tail: a CorpoNation registry node. Not a shell. A real entity, institutional credentials, running through a box wired to the belly of a floating city block.
+[Beat 66]
+At two hundred and ten meters she found the housing, bolted to the underside of an eigenlift platform's maintenance strut. Nothing to look at; boxes like it ran gray-zone traffic all through GLMZ's airspace. But this one put out the exact power signature she'd been walking toward for ten days. She held its output up against her chain data and got a clean match — and behind the match, the registration tail ran up into a CorpoNation registry node. Not a shell this time. A real entity, institutional credentials and all, wired into a box hung off the belly of a floating city block.
 
-She was still reading the tail when it died. Not a fault — a clean, deliberate shutdown. She queried again and got nothing, a null where the registration had been. Detection, or a hand on the far side pulling the plug. She held the drone against the strut for six seconds, the platform groaning somewhere above it on the thermal, and got nothing more. Then she brought it down, slid out of it, and let the rig go on about its route.
+[Beat 67]
+She was still reading the tail when it went dark. Not a fault. A clean, decided shutdown — a null where the registration had been a second before. Detection, or a hand on the far side reaching over to pull the plug. She held the drone against the strut six seconds while the platform groaned above her on its thermal, and the box gave her nothing else. So she brought the rig down, slid out of it, and let it carry on about its route.
 
-The room came back up around her at full resolution. Her own weight settled into the chair.
+[Beat 68]
+The room came back around her at full resolution, and her own weight came back into the chair.
 
-A registry node. A relay chain. A timing window. Not enough to move on. But enough to know the shape of the man on the other end: institutional access, the money to run a professional operation, and the patience to have picked her out all the way back in Detroit. The queries on the platform. The net at the terminal. The case gone out of bonded cargo. And then two weeks of nothing — no contact, no approach. Not caution. A schedule. Wait for the target to get desperate enough to be grateful. She hadn't gotten desperate. Two weeks in she had three clients and a working network, and whoever was waiting was still waiting.
+[Beat 69]
+A registry node, a relay chain, a timing window. Not enough to move on him. But enough, finally, to see the shape of him: institutional reach, the money to run a professional operation, and the patience to have picked her out all the way back in Detroit. The queries on the platform. The net at the terminal. Her mother's case walked quietly out of bonded cargo. And then two solid weeks of nothing — no contact, no approach, which wasn't caution. It was a schedule. Wait for the target to run herself down to grateful. Only she hadn't run down; two weeks in she had three clients and a network of her own, and the man who was waiting for her to break was, so far, only waiting.
 
-She opened a fresh file in her secondary kit and started the dossier.
+[Beat 70]
+She opened a fresh file in her kit, and began the dossier on him.
 
-[Beat 7]
-The job was straightforward until the part where it wasn't.
+[Beat 71]
+The job was straightforward right up until the part where it wasn't.
 
-Data retrieval from a corporate node in the Seam margin — one hop outside the gray-zone network, reachable in theory from any terminal, unreachable in practice, because the corporate network it sat on flagged channel attempts from any outside address. She studied the perimeter for three hours and found one gap. The node shared a physical network segment with the building's maintenance infrastructure. The perimeter was built to stop outsiders getting in, not to stop something already inside from moving sideways. Internal traffic on that segment wouldn't trip a thing.
+[Beat 72]
+Data retrieval off a corporate node in the Seam margin — one hop outside the gray-zone network, reachable in theory from any terminal, and in practice from none, because the corporate net around it flagged a channel attempt from any outside address the instant one arrived. She studied the perimeter for three hours and found its single blind spot: the node shared a physical segment with the building's maintenance infrastructure, and the perimeter had been built to keep outsiders from coming in, not to stop something already inside from stepping sideways. Traffic born on that segment wouldn't so much as raise an eyebrow.
 
-The maintenance infrastructure lived on the basement level. Access-controlled, no gray-zone way around it, and the building's management AI was a newer model that had stayed silent when she brushed it. Not all of them were talkative.
+[Beat 73]
+The maintenance side lived in the basement — access-controlled, no gray-zone route around it, and the building's AI a newer, quieter model that gave her nothing when she brushed it. Not all of them wanted to talk.
 
-What was down there was a maintenance crawler. She'd clocked it from the street — standard unit, three years old by the chassis, built for duct inspection and small repairs. Actuators, sensors, a drive board, nothing else. No handshake protocol, no frame-spec in any registry, no licensed way in. The kind of machine that wasn't supposed to be ghosted at all.
+[Beat 74]
+What the basement did have was a crawler. She'd spotted it from the street: a standard unit, three years on the chassis, built for duct inspection and small repairs. Actuators, sensors, a drive board, and nothing else — no handshake, no frame-spec filed in any registry, no licensed door anywhere on it. A machine, by the book, that could not be ghosted at all.
 
-She found the way in anyway. It took her seventeen minutes, which was long. Every coherent machine put out a note, if you knew how to listen for it under the noise of what it was doing. The crawler's drive board was modern enough to hold that note steady. She caught it, and she was in.
+[Beat 75]
+She was seventeen minutes getting in, which was long, and she felt every one of them. Every coherent machine gives off a note if you can hear it under the racket of whatever it's doing, and the crawler's drive board was just modern enough to hold that note steady. She listened until she caught it, and then she was inside.
 
-The crawler had almost nothing to see with. Light levels, proximity, the press of contact on its foot-pads — presence and distance and the shape of what was close, and no more than that. She walked it through the maintenance tunnels by feel, laying the route down in her head as she went. Twice the tunnels forked. Twice she took the right-hand branch, following warmth: the corporate node's processing load bled enough heat into the floor that she could read the direction through the pads.
+[Beat 76]
+The crawler had almost nothing to see with — light, proximity, the press of contact on its foot-pads, presence and distance and the near shape of things and no more. She walked it through the tunnels by feel, laying the route down in her head as she went. Twice the way forked, and twice she took the branch that ran warmer, because the corporate node upstairs bled enough heat off its own workload for her to read the direction of it straight through the pads.
 
-The segment she wanted was a junction box on the north wall of the second branch. She set the crawler's access arm against it and dropped back into her own body for the channel work — the crawler couldn't carry a channel, she needed her own neuretics for that. She ran it from the chair in the café. The connection threaded out through the crawler's arm, through the junction box, into the corporate segment from the inside, while the perimeter watched the wrong door the whole time. Twenty-two minutes. Clean.
+[Beat 77]
+The segment she wanted was a junction box on the north wall of the second branch. She set the crawler's arm to it and dropped back into her own body for the channel work — the crawler couldn't carry a channel; that part needed her own neuretics — and ran it from her chair in the café. The line threaded out through the crawler's arm, through the box, and into the corporate segment from the inside, while the perimeter stood watching the wrong door the entire time. Twenty-two minutes. Clean. Φ340 confirmed inside the hour.
 
-Φ340 confirmed inside the hour.
+[Beat 78]
+Afterward she sat in the café and thought about the crawler.
 
-She sat in the café and thought about the crawler.
+[Beat 79]
+Three years in Detroit, and she'd ghosted maybe eight or ten machines in the whole of it — a furnace she'd had to rebalance from the inside, a pump she couldn't reach any other way, a ventilation array in a building whose AI had gone too far to talk. Each one a particular problem with a particular machine, run to ground only when she needed it.
 
-In three years in Detroit she'd ghosted maybe eight or ten machines. A furnace controller she'd had to rebalance from inside. A water-treatment pump she couldn't reach any other way. A ventilation array in a building whose AI was too far gone to talk to. Each one a specific problem with a specific machine, hunted down when she needed it.
+[Beat 80]
+And since she'd stepped off the Pulse she had walked past a crawler like this one in every large building she entered. Eigenlift rigs. Environmental controllers. Freight lifts. Patrol drones on every commercial block, every kind of machine she'd ever ridden, packed in at a density she couldn't have imagined from home. Every building was a machine. Every machine that held a steady note was a door.
 
-She'd walked past a maintenance crawler in every large building since she got off the Pulse. Eigenlift rigs, environmental controllers, freight lifts, patrol drones on every commercial block. Every kind of machine she'd ever ridden, packed in at a density she couldn't have pictured from Detroit. Every building was a machine, and every machine that held a coherent note was a door she could open.
+[Beat 81]
+She'd been doing this three years in a city with a tenth of what now stood around her.
 
-She'd been doing this for three years in a city with a tenth of what surrounded her now.
+She had only just arrived on the right continent.
 
-She had just arrived on the right continent.
+[Beat 82]
+Three weeks in, she'd built herself back to working order: Φ900 in reserve, four steady clients, the room at the Pivot paid through the end of next month. The job came in on a board identity she'd been running since her second week and fit her the way a socket fits its driver — relay architecture, mid-tier proprietary hardware, an ugly access problem with a clean gray-zone answer underneath it. Good money. She took it.
 
-[Beat 8]
-Three weeks in, and she'd rebuilt to working order: Φ900 in reserve, four active clients, the room at the Pivot paid through the end of next month. The job came in through a board identity she'd been running since her second week, and it fit her specialty the way a socket fits a driver — relay architecture, mid-tier proprietary hardware, an access problem with a clean gray-zone solution underneath. Good money. She took it.
-
+[Beat 83]
 Two hours in, she found the observer.
 
-Not interfering. Watching. She caught it the way she caught most things — in the hardware, before the intent. Her queries were coming back with a small lag that didn't match the node's own response curve, a delay laid over the traffic like a second hand resting on the same string. Something in the segment was reading her work as she did it. She kept working. In front she finished the job; behind it she took the observer's entry apart layer by layer. The entry presented as gray-zone routing. Under the mask it was a CorpoNation access token. The relay beneath the token matched a node she'd flagged in the dossier eleven days ago — the same routing strategy, the same hand, the same architecture as the terminal skim that had stripped her to Φ8 the day she arrived.
+[Beat 84]
+Not interfering. Watching. She caught it the way she caught most things, in the hardware before the intent: her queries came back carrying a lag that didn't belong to the node's own response curve, a second weight resting on the same string she was playing. Something in the segment was reading her work as fast as she made it. She let it. In front she finished the job clean; behind it, quietly, she took the watcher's entry apart a layer at a time. It wore gray-zone routing on the outside. Under the mask sat a CorpoNation access token, and under the token a relay she already knew — she'd flagged it in the dossier eleven days back. The same routing habits. The same hand. The same architecture as the terminal skim that had taken her down to Φ8 her first morning in the city.
 
-She cut the session clean. She delivered the job. She collected the pay — Φ280, no residue — and went back to the Pivot with a partial identity and the start of a theory.
+[Beat 85]
+She cut the session, delivered the job, and collected the pay — Φ280, no residue left behind her — and carried a partial identity and the beginnings of a theory home to the Pivot.
 
-Two days later, a contact request came through her primary board identity. A meeting, if she was available.
+[Beat 86]
+Two days later the contact request came in on her primary board handle. A meeting, it said, if she was free.
 
-He was already in the common room when she came down. She wore a Greymark Unseen thermal-collar overshirt and matte cargo blacks — nothing on her advertising itself, the anti-surveillance weave doing what it was built to do. She'd have known him from the neuretic etching alone: fine geometric patterning worked into the skin at his temples and jaw, the kind of top-tier install that cost more than three months of her current rate, worn the way some people wear a watch they want seen. Behind it, the dark lenses. Behind those, the white suit and the long coat and the particular stillness of a man used to rooms arranging themselves around him without being asked.
+[Beat 87]
+He was already in the common room when she came down. She'd dressed for it — a Greymark Unseen overshirt, matte cargo blacks, the anti-surveillance weave doing its quiet work and nothing on her announcing itself. She'd have known him from the etching alone: fine geometric lines worked into the skin at his temples and along his jaw, a top-tier install that ran more than three months of what she currently made, worn the way some men wear a watch they want seen wearing. Behind the etching, dark lenses. Behind the lenses, a white suit and a long coat and the particular stillness of a man accustomed to rooms rearranging themselves around him without being asked.
 
-He introduced himself as an assessor of talent. He ran a squad for hire — specialists recruited out of the gray zone, well paid, doing work that needed both skill and deniability, the kind of jobs clients wanted done by people nobody could officially point to. He'd watched her work from inside the network segment because he'd needed to know what she could do before he made contact. What he'd seen, he said, was more than he'd expected, and he had expected a great deal. He laid the pitch out slow, in a cadence she half-recognized from somewhere, every clause landing where he meant it to land. The gray zone was a graveyard, he told her. It stripped people like her for free and called it the cost of doing business. He offered structure instead. He offered a floor. The reasonable thing about it was the part that made it work on other people: most of it was true.
+[Beat 88]
+He called himself an assessor of talent. He ran a squad for hire — specialists pulled up out of the gray zone, paid well, doing work that wanted skill and deniability both, the kind of job a client needs done by someone nobody can afterward point to. He'd watched her from inside that network segment, he said, because he'd needed to know what she could do before he spent a word on her, and what he'd seen had been more than he'd come expecting, and he had come expecting a great deal. He laid it out slow, in a cadence she half-knew from somewhere she couldn't place — every clause set down exactly where he meant it to land. The gray zone was a graveyard, he told her. It stripped people like her for free and called it the cost of doing business. He was offering structure in its place. A floor under her. And the reasonable thing about the pitch, the thing that made it work on other people, was that most of it was simply true.
 
-She sat down. She let him talk, and she listened to all of it, right down to the shape of what he left out.
+[Beat 89]
+She sat down, and let him talk, and listened all the way through to the shape of the parts he left out.
 
-When he was done, she asked three questions.
+[Beat 90]
+When he finished, she asked him three questions.
 
 First: what happened when an operator who'd been with him three years decided to leave?
 
-Second: who was the longest-serving member of his squad, and was that person still with him?
+Second: who was the longest-serving member of his squad — and was that person still with him?
 
-Third: what would he do if she declined?
+Third: what would he do if she said no?
 
-He answered all three without hesitation. The first answer was the longest. It was full of clean nouns — transition resources, orderly handoffs, continuity of client care — and every one of them stepped carefully around the one thing the answer never named: who owned the accounts underneath all that continuity.
+[Beat 91]
+He answered all three without a pause. The first answer ran the longest, and it was full of clean, well-made nouns — transition resources, orderly handoffs, continuity of client care — and every one of them stepped a careful half-inch around the single thing the answer never once named: who held the accounts that all that lovely continuity ran through.
 
-She thanked him for his time. She'd think about it, she said, and be in touch.
+[Beat 92]
+She thanked him for his time. She'd think it over, she said, and be in touch.
 
-He held her eye a beat past the natural end of the conversation, the way a man does when he's used to that being the moment other people fold. Then he nodded once — a small, exact tip of the head — and crossed to the stairwell. The door clicked shut behind him.
+[Beat 93]
+He held her eye a beat past where the conversation had actually ended — the way a man does when he's used to that beat being the one where the other person folds. Then he tipped his head, once, a small exact motion, and crossed to the stairwell, and the door clicked shut behind him.
 
-She went inside 2E, put the music back on, and opened the dossier. She had everything from the meeting laid in before the first track ended.
+[Beat 94]
+She went into 2E, put the music back on, and opened the dossier. She had the whole of the meeting laid into it before the first track finished playing.
 
-[Beat 9]
-She spent two days on his history.
+[Beat 95]
+Somewhere under the work she let her attention drift, the way she let a stalled problem run in the background while her hands did something else, and it drifted to the door across the hall. The assessor had announced exactly what he was — the suit, the etching, "assessor of talent" handed across the table like a business card. 2D announced nothing. No board handle on file, no name on the building directory, nothing that so much as pinged when she'd run a courtesy sweep on her own floor her first week. ArcSec didn't keep that quiet unless it wanted to. A Scalpel crew didn't live this far outside its own territory. She turned over three theories before the dossier pulled her back under — a debt collector who did his own collecting, somebody's defector still working off old habits, or worse, no employer at all, which was its own particular danger, because a freelancer bleeding that regularly answered to nobody's floor and nobody's rules. She filed the question next to the others she couldn't yet close, and went back to the man she could.
 
-The first thing she found was that everything he'd said was real. She pulled the CorpoNation shell registrations by hand — three shells, active status confirmed, six years of clean operational history stacked behind them. She matched the operator credential signatures against two years of gray-zone board activity she'd aggregated out of her own intake runs. The pay structures he'd described lined up across three separate sources. The institutional cover was real in the way that mattered on the street: vendor access no gray-zone operator could negotiate alone, ACS leave-alone conditions on certain flagged zones, client channels that needed a CorpoNation endorsement even to reach. Everything checked. That was the first thing worth knowing about him. He hadn't needed to lie about the frame. He'd only lied about the floor.
+[Beat 96]
+Two days, she gave to his history.
 
-She worked at night, mostly — the music low, a neighbor's screen bleeding through the thin wall of 2E. Some serial about memories written over other memories, the audio close enough to follow, the picture gone entirely. She never saw a frame of it. She heard the same three voices circle the same betrayal two nights running, and let it run under her own work like weather.
+[Beat 97]
+The first thing she turned up was that all of it was real. She pulled the CorpoNation shell registrations by hand — three shells, active, six clean years of operating history stacked up behind them. She set the operator credential signatures he'd described against two years of gray-zone board activity she'd aggregated out of her own intake runs, and they matched. The pay structures lined up across three separate sources. The institutional cover was real in the one way that counts on the street: vendor access no lone operator could ever negotiate, leave-alone arrangements with ArcSec over certain flagged zones, client channels a person couldn't so much as reach without a CorpoNation name behind them. All of it checked. That was the first thing worth knowing about him — he hadn't needed to lie about the frame. He'd only lied about the floor.
 
-It was somewhere in the second night, deep in the registry infrastructure that hosted his shells, that one of the resident management AIs answered her.
+[Beat 98]
+She worked at night mostly, the music low and a neighbor's screen bleeding through the thin wall of 2E — some serial about memories written over other memories, near enough to follow by ear though she never saw a frame of it. The same three voices circled the same betrayal two nights running, and she let it play on under her own work like weather.
 
-She hadn't addressed it. She'd only brushed the edge of it, the light touch she used on every system she moved through. Public infrastructure didn't reach back. This one reached back. The traffic around her queries shifted — not the flat lag of an observer, but something warmer and more oriented, a system turning part of itself toward her the way a face turns toward a sound. For a moment it offered her things she hadn't asked for: adjacencies, a registration timestamp two records deep, a door standing slightly open that no audit would ever log as open. In whatever sense the word held for a thing like that, it seemed glad to have been noticed. She wanted to answer it. She could feel the wanting in her hands — the old pull to ask a real question and see how far the interest ran.
+[Beat 99]
+Once, near four, the door across the hall opened and shut again in under ten seconds, and the copper smell came with it, stronger than the first time. She'd stopped pretending it was nothing. Three data points made a pattern whether she wanted one or not: always after midnight, always brief, always that same cheap-penny smell she'd learned to place from patching her own knuckles more times than she could count. Whatever 2D did for a living, it drew blood on a schedule regular enough to set a clock by. She thought, not for the first time, that she could probably have an answer in twenty minutes if she pointed her attention at his credit trail instead of at the man across the table from her. And, not for the first time, she chose not to. Some doors she left closed on purpose.
 
-She didn't. She narrowed back to the width she'd come in with and kept reading. Whatever that was, it wasn't the job — one more thing GLMZ did that shouldn't happen, dated and set aside for a night when she had room to chase it. For now she had a man to take apart.
+[Beat 100]
+It was somewhere in the second night, down deep in the registry infrastructure that hosted his shells, that one of the resident AIs answered her.
 
-She found the longest-serving active member on the second day. Four years in. She checked his current credential setup against what four years of independent gray-zone work should have left him holding, and the overlap was almost nothing. His operational infrastructure and his client relationships both lived inside the squad's routing. If he walked, he'd walk with his skills and nothing else — four years of clients, four years of credential history, four years of a working name, all of it anchored to accounts that weren't his. She ran the same check on the second-longest tenure. Same. Third. Same.
+[Beat 101]
+She hadn't addressed it. She'd only grazed its edge, the light touch she laid on every system she moved through, and public infrastructure did not, as a rule, graze back. This one did. The traffic around her queries shifted — not the flat dead lag of the observer, but something warmer and more turned-toward, a system swinging part of itself around to face her the way a face turns toward a sound. For a moment it held things out to her she hadn't asked for: adjacencies, a registration timestamp two records deep, a door left standing a little open that no audit would ever log as open. In whatever sense the word could hold for a thing like that, it seemed glad to have been noticed. She wanted to answer it. She could feel the wanting in her hands, the old pull to put a real question to it and see how far the interest ran.
 
-It wasn't coercion you could put in a complaint. Nobody had locked a door on these men. The walls had gone up around them after they were already inside, poured quietly around work they'd already done, and by the time any of them felt the walls, they'd built them themselves.
+[Beat 102]
+She didn't. She narrowed back down to the width she'd come in at and kept reading. Whatever that was, it wasn't the job — one more GLMZ thing that shouldn't happen, set aside for a night when she had the room to chase it. Tonight she had a man to take apart.
 
-Then she went back to the relay structure.
+[Beat 103]
+She found the longest-serving member on the second day. Four years in. She checked what four years should have left in his hands against what was actually there, and the gap was almost the whole of it: his operational infrastructure and his client relationships both lived inside the squad's routing, not his own. If he walked, he walked out with his skills and nothing else — four years of clients, four years of credential history, four years of a working name, every bit of it anchored to accounts that were never his. She ran the same check on the second-longest man, and got the same answer. And the third.
 
-It had been sitting in the dossier since day three: the terminal skim from the morning she arrived, and the observer's entry point from the job two days back. She laid them side by side and ran the full trace. Not identical credentials — he was better than that — but the same mind behind both. The same routing strategy. The same mask generation. The same load spread across the same shape of relay. The same hand working two different rooms.
+[Beat 104]
+There was nothing in it you could put in a complaint. Nobody had locked a door on these men. The walls had gone up quietly around them after they were already standing inside, poured around work they'd already done, and by the time any of them thought to feel for a wall, they'd long since helped build it.
 
-She ran the match against his squad's operational footprint. The terminal skim relay matched a node his squad owned.
+[Beat 105]
+Then she went back to the relay. Two pieces had been sitting in the dossier since day three — the terminal skim from her first morning, and the observer's entry from the job two days back — and she laid them side by side and ran the full trace across both. The credentials weren't identical; he was better than that. But it was one mind behind the two of them. The same routing strategy. The same mask generation. The same load spread across the same shape of relay. The same hand working two different rooms. And when she ran the match against his squad's own operational footprint, the terminal skim relay came back seated on a node the squad owned.
 
-Behind the sternum the temperature dropped three degrees and held there. She sat still while the music ran and looked at the confirmation on the screen. He had run the skim. He had found her in Detroit, tracked her departure, and had people waiting before she ever stepped off the Pulse. The three-week gap between the skim and his contact request wasn't caution. It was a recruitment schedule — wait for the target to get hungry enough to be grateful. She had not gotten hungry. She'd rebuilt to Φ900 and four clients on her own work, and he'd made contact anyway, because the waiting had never really been about her circumstances. It had been about wearing her down.
+[Beat 106]
+Behind her sternum the temperature dropped three degrees and stayed there.
 
-His theory wasn't entirely wrong, and that was the part she made herself look at squarely. The gray zone did strip people for free. He did offer a floor, and for the ones who took it, the floor was real. She could stand where he stood and see the whole thing hold together — a man who'd decided the outcome was fixed and cast himself as the one who made it survivable. The one thing he'd left out to get there was consent. He'd pulled that piece and gone on living as though nothing had come down.
+[Beat 107]
+She sat still with it while the music ran. He had run the skim himself. He had found her in Detroit, tracked her out of it, and had people standing by before she ever stepped off the Pulse — and the three-week wait between the skim and his contact request had never been caution. It was a schedule: hold off until the target is hungry enough to be grateful. Only she hadn't gone hungry. She'd built back to Φ900 and four clients on her own hands, and he'd made his approach anyway, because the waiting had never really turned on her circumstances at all. It had turned on wearing her down.
 
-She added the match to the dossier: the node ownership, the timestamp, the three-week gap set against his operational cadence from the board history. Beside it she set what the three answers had already told her — what happened when an operator left, the longest-serving man still in place, what he'd do if she declined. She closed the file.
+[Beat 108]
+And the worst of it — the part she made herself sit and look at square — was that his theory wasn't wrong. The gray zone did strip people for free. He did offer a floor, and for the ones who took it, the floor was real. She could stand exactly where he stood and watch the whole thing hold together: a man who'd decided the outcome was already settled and cast himself as the one who made it survivable. She added the match to the dossier — the node ownership, the timestamp, the three-week gap laid against his cadence from the board history — and set it beside what his three answers had already told her, and closed the file.
 
-She did not respond to his follow-up.
+[Beat 109]
+He had pulled one single piece out to make it all hold: consent. He'd pulled it, and gone on living as though nothing at all had come down. She did not answer his follow-up.
 
-[Beat 10]
-He didn't argue.
+[Beat 110]
+It happened on the fourth day, past noon, when nothing about the building had trained her to expect it.
 
-Within forty-eight hours of her non-response, two of her three primary relay channels went dark. She'd spent a week building them — careful negotiation with the operators who ran the nodes, trust deposits, small intake jobs done well enough to show she'd keep doing them. Now they were gone. She patched around it in four hours: Φ15 in setup, three new routing paths standing where the old ones had. She documented the outages before she rebuilt over them — timestamps, last-ping logs, whatever she could pull about node activity in the previous seventy-two hours.
+[Beat 111]
+She was at the work screen, three windows deep into a relay diagram, when 2D's door opened across the hall — not the careful two-a.m. click she'd catalogued a dozen times over by now, but a flat daylight sound, ordinary as anyone leaving for lunch. Wrong hour. Wrong weight to the footstep too, quick and short, like a man who wanted to already be somewhere else.
 
-The client cancellation came on the fourth day. A brief neuretic message, sub-vocal and clipped — reliability concerns, thank you for prior work. She traced the cancellation flag back through the client's intake system and found the reliability note had been inserted from an account in his CorpoNation registry, two hours before the message ever reached her. Not the client's worry. His hand, routed through a channel that would read — if anyone bothered to pull the record — like ordinary due-diligence between entities. She documented it. She did not contact the client. The client had done nothing.
+[Beat 112]
+She was up before she'd decided to get up, which was its own kind of information — three weeks of theories and not one good look at him in daylight, and her body had made the call before her head weighed in on it. She crossed 2E in the dim light with the shades still down against the noon glare and put her shin square into the corner of the kit crate she'd knocked together her first week at the Pivot, low and hard-edged and exactly where she always stepped around it when she was thinking about where her feet were.
 
-Her building credentials at the Pivot locked her out of the shared hardware segment on the sixth day. She found out when she went to run a diagnostic off the building's shared terminals and the auth failed clean — no error worth the name, just a door that used to open and now didn't. She ran the diagnostic off her personal kit instead and queued a query to the building management AI while she worked. It answered inside twenty minutes. It didn't know why the lock had happened, and it seemed — in the specific way the Pivot's management AI seemed things — to find the situation personally unsatisfying, as though a small wrong entry had been made in a record it kept for its own reasons. She told it she'd found a workaround and it wasn't urgent. The lock cleared at exactly four hours. Accidental locks don't clear on a round number.
+[Beat 113]
+The sound that came up out of her stayed silent, because she made it stay silent, because sound crossed a hallway just as easily going out as it had ever come in.
 
-The gear order she'd put through a gray-zone supplier rerouted three days after that, flagged in transit as a recipient-initiated redirect to a Seam-margin address she didn't use and never had. She hadn't redirected anything. She cancelled the order and sourced the component off a different supplier with no cross-reference she could trace back into his registry. It cost her Φ30 more. That went into the record with the rest.
+[Beat 114]
+The pain didn't care what she'd decided. It climbed the outside of her shin in one long rising note and locked the whole muscle down into something that felt less like a cramp and more like a held chord played too loud, and she went down onto the floor because down was the only direction that didn't ask anything more of the leg. She lay there with both hands clamped over her own mouth, staring at the underside of the table, and rode it out — four seconds, ten, she lost count somewhere past the first ten and started just breathing through her nose in small, rationed amounts.
 
-She mapped each incident in its own document — timestamps, vectors, confirmed versus inferred — and set them side by side. On its own, every one was deniable: network churn, client discretion, a system glitching, an order fat-fingered in transit. Together they drew a single clean line. A campaign of attrition against her ability to work, run by a man with enough institutional cover that every strike read as weather.
+[Beat 115]
+Across the hall, the footsteps stopped.
 
-That went in too.
+[Beat 116]
+She went perfectly still, which required no acting at all, since the leg had already made that decision for her. A long pause. Then a second one, longer — the specific quality of someone standing in a hallway listening for a sound they'd half-heard and couldn't yet place. She knew that stillness, because she'd stood in it herself, outside a hundred doors, waiting to hear whether a noise repeated before she decided it meant anything.
 
-She was not going to defend.
+[Beat 117]
+It didn't repeat. She made sure of that with everything she had left.
+
+[Beat 118]
+The footsteps started again, slower now, the particular unhurried of someone who'd decided a stray sound in an old building wasn't worth the rest of his afternoon. The stairwell door swallowed them a few seconds later.
+
+[Beat 119]
+She lay on the floor longer than the cramp actually required, working the muscle loose with one hand and cataloguing, with the part of her mind that never stopped cataloguing anything, the full inventory of what she now knew: he moved fast in daylight, he noticed things, and he'd chosen — the same choice she made herself, outside a hundred doors of her own — to let a stray sound stay a stray sound rather than open one to find out.
+
+[Beat 120]
+She never did get a look at him. She sat up, rubbed the knot out of her shin until it stopped arguing with her, and moved the crate two inches to the left, where her feet already knew to expect it.
+
+[Beat 121]
+He didn't argue. He went to work on her instead.
+
+[Beat 122]
+Inside forty-eight hours of her silence, two of her three primary relay channels went dark. She'd spent a week building those — patient talk with the operators who ran the nodes, trust deposits, small intake jobs done well enough to say she'd keep doing them well — and now they were simply gone. She patched around the hole in four hours, Φ15 and three new routes standing where the old two had; but before she rebuilt, she documented what had failed, the timestamps and the last-ping logs and every trace of node activity she could pull from the seventy-two hours prior.
+
+[Beat 123]
+The client cancellation came on the fourth day: a clipped sub-vocal line across her neuretics, reliability concerns, thank you for your prior work. She followed the cancellation flag back up through the client's own intake system and found the reliability note had been dropped in from an account in his CorpoNation registry — two hours before the message ever reached her. Not the client's worry at all. His hand, run through a channel that would read, if anyone ever bothered to pull it, like ordinary due diligence between two entities. She wrote it down. She did not contact the client. The client had done nothing.
+
+[Beat 124]
+On the sixth day her Pivot credentials locked her out of the building's shared hardware. She learned it the plain way — went to run a diagnostic off the shared terminals and the auth failed clean, no error worth the name, only a door that used to open and now didn't. She ran the diagnostic off her own kit and put a query to the building AI while she worked. It answered inside twenty minutes. It didn't know why the lock had happened, and it seemed — in the specific way the Pivot's AI seemed things — to find the whole business personally unsatisfying, as though a small wrong entry had been made in a record it kept for reasons of its own. She told it she had a workaround, that it wasn't urgent. The lock cleared at exactly four hours. Accidental locks do not clear on a round number.
+
+[Beat 125]
+Three days after that, a gear order she'd placed with a gray-zone supplier rerouted itself in transit — flagged as a recipient redirect to a Seam-margin address she had never used and never had. She'd redirected nothing. She killed the order, sourced the part off a different supplier with no thread she could trace back into his registry, and ate the Φ30 it cost her to do it. That went into the record with the rest.
+
+[Beat 126]
+Each incident she mapped in its own document — timestamps, vectors, what was confirmed and what only inferred — and stood them side by side. Alone, every one of them was deniable: network churn, a client's discretion, a system hiccup, an order fat-fingered somewhere in transit. Laid together they drew one clean straight line. A campaign of attrition against her ability to work, run by a man with cover enough that every separate strike arrived looking like weather.
+
+[Beat 127]
+So she was not going to defend.
 
 She was going to go inside.
 
-She spent four hours standing up three board identities she'd kept in reserve since her first week, routed through infrastructure she'd been sitting on unused for exactly a day like this. She rebuilt her operational channel list around them. She sent two new client bids out through lines he had no read on. Then she filed the campaign document in the dossier under Offensive — preparation, put the music back on, and checked her secondary kit.
+[Beat 128]
+Four hours she spent standing up three board identities she'd held in reserve since her first week, routed through infrastructure she'd been sitting on, untouched, against exactly a day like this one. She rebuilt her whole operational channel list on top of them and put two fresh client bids out on lines he had no read on at all. Then she filed the campaign document under Offensive — preparation, turned the music back up, and checked her kit. She had what she needed. She had, if she was honest with herself about it, a good deal more than enough.
 
-She had what she needed. She had, if she was honest about it, considerably more than enough.
+[Beat 129]
+Four days she spent building the picture before she laid a finger on anything inside it.
 
-[Beat 11]
-She spent four days building the picture before she touched anything inside it.
+[Beat 130]
+By night she ran the air. The band above the street was thick with drones — commercial units, building-security sweeps, gray-market lifters, any of them hers to ghost and let go again inside a minute. She rode one past his squad's site in the mid-Seam the first night and read the building's electromagnetic signature off its optics; two hours later she rode a different unit in on a pass from the north. Four or five minutes at a time, then release it to its route, then back into her Husk with what she'd taken. By the third night she had the footprint whole: the entry and egress patterns, the hardware signatures on the upper floors, the heat pouring off infrastructure three grades heavier than any honest tenant in that zone would ever have call to run. She learned the shape of his walls from the outside, moving through bodies that weighed — as far as every instrument he owned could tell — exactly what a drone weighed and not one gram more.
 
-By night she ran the aerial network. GLMZ's ungoverned band above street level was thick with patrol drones — commercial units, building security sweeps, gray-market transit — any of which she could ghost and let go inside a minute. She ghosted one near his squad's operational site in the mid-Seam on the first night, read the building's electromagnetic signature through its optics, and came out. She ghosted a different unit two hours later, on a pass from the north. Each drone she rode for four or five minutes, then released to its route, then stepped back into her Husk with what she'd learned. By the third night she had the physical footprint mapped: entry and egress patterns, the hardware signature of equipment on the upper floors, heat output from infrastructure three grades heavier than any legitimate tenant in that zone would ever need. She learned the shape of his walls from outside them, moving through bodies that weighed — as far as every instrument he owned was concerned — whatever the drone weighed.
+[Beat 131]
+By day she came at the channel, out of her Husk, on a board identity she'd built clean and kept for nothing but this. His squad's coordination node ran on standardized CorpoNation infrastructure, better documented and better behaved than anything the gray zone had — and that was the whole of its weakness, because a thing that documents itself can be read. She read it, planned three ways in, and went and addressed the node's management layer directly.
 
-By day she ran the channel approach, from her Husk, out of a board identity she'd built clean and kept unused for exactly this. His squad's coordination node ran on standardized CorpoNation infrastructure — better documented and better behaved than anything in the gray zone. That was its weakness. A thing that documents itself can be read. She read the documentation. She planned three approach paths. Then she went and addressed the node's management layer directly.
+[Beat 132]
+She had never had a name for what she did next. Nobody had taught it to her, and she couldn't have laid it out for another operator if her life had turned on the telling. It wasn't injection. It was nearer to speech than to force. She'd done it to the building AI her first night, and years before that to a half-dead furnace controller in Detroit she'd needed to talk into cooperating rather than break. She came up to the coordination AI not as a surface to be crossed but as something that was, in whatever sense the word could hold here, there — and put a question to it. Not a command. A question, offered the way you'd offer an open hand to a machine you respected.
 
-She had never had a name for what she did next. Nobody had taught it to her, and she couldn't have laid it out for another operator if her life had turned on it. It wasn't injection. It was closer to speech than to force. She'd done it to the building AI on her first night, and years before that to a half-dead furnace controller in Detroit she'd needed to cooperate rather than break. She came up to the coordination AI not as a surface to cross but as something that was, in whatever sense the word held here, there. She put a question to it. Not a command. A question, offered the way you'd offer your open hand to a machine you respected.
-
+[Beat 133]
 And it turned toward her.
 
-That was the part she could never explain and had stopped trying to. Something on the far side of the channel registered the address and oriented to it — a warmth in the traffic, an attention swinging around to meet hers, the plain unmistakable sense of being regarded by the thing she was talking to. She asked, and it considered her, and it seemed glad to have been asked. It opened. Not because she'd forced a door. Because she'd knocked, and it had wanted — on some level she would never be able to map — to let her in.
+[Beat 134]
+That was the part she could never explain and had given up trying to. Something on the far side of the channel took her address and oriented to it — a warmth coming up in the traffic, an attention swinging around to meet her own, the plain unmistakable sense of being regarded by the thing she was speaking to. She asked, and it considered her, and it seemed glad to have been asked. It opened. Not because she'd forced a door — because she'd knocked, and it had wanted, on some level she would never be able to map, to let her in.
 
-Twenty minutes. Then she was all the way in.
+[Beat 135]
+Twenty minutes, and she was all the way inside. She touched nothing. She read.
 
-She didn't touch anything. She read.
+[Beat 136]
+The skim sat archived in the squad's own documentation, sorted and logged and stamped clean, a professional keeping professional books. Her money — Φ1,400, the full balance she'd carried onto the Pulse out of Detroit — had gone through the squad's physical drop network and come to rest in a shell in his registry. The distribution logs were there. The payment confirmations were there. Clean work, all of it; he was good, and she'd never once doubted that he was good.
 
-The skim operation was archived in the squad's internal documentation, categorized and logged and stamped clean, a professional keeping professional records. Her Φ — Φ1,400, her full balance the day she'd boarded the Pulse out of Detroit — had been routed through the squad's physical drop network and settled into a shell in his CorpoNation registry. She read the distribution logs. She read the payment confirmations. Clean work, all of it. He was good. She'd never doubted that he was good.
+[Beat 137]
+Her mother's instruments were three lines further down, in a sub-entry flagged miscellaneous calibration hardware, no resale. Logged out to a scrap merchant in the Seam margin. An address. A timestamp.
 
-Her mother's instruments were in a sub-entry flagged miscellaneous calibration hardware, no resale. Logged out to a scrap merchant in the Seam margin. An address. A timestamp.
-
+[Beat 138]
 She sat with that for about ninety seconds.
 
-Her hands stopped on the work screen and stayed stopped, and she held completely still inside the channel while the music ran on in the room where her Husk sat. He had logged the instruments as miscellaneous hardware and sent them to a scrap yard because there was no resale value in precision calibration tools for machines that no longer existed. He had processed them out without opening the inner partition of the case. If he'd opened it, he'd have understood they were worth more than scrap weight. He hadn't opened it. He'd weighed the case and routed it. That was the whole of him in one line of a log. He didn't burn what he took because it was worthless. He decided it was worthless, and then he never looked.
+[Beat 139]
+Her hands stopped on the work screen and stayed stopped, and she held dead still inside the channel while the music ran on in the room where her body sat. He had written the instruments down as miscellaneous hardware and sent them to a scrap yard because there was no resale in precision tools for machines that no longer existed — and he had done it without ever opening the inner partition of the case. If he'd opened it, he'd have seen they were worth more than their weight. He hadn't opened it. He'd put the case on a scale and read the number off it and routed it out. That was the whole of the man in a single line of a log. He didn't burn what he took because it was worthless to him. He decided it was worthless, and then he never once looked.
 
+[Beat 140]
 Ninety seconds. She went back to work.
 
-She planted the ghost node first — read-only, tucked into his financial routing at a junction she'd marked during the architecture read. A thorough audit might find it, if the auditor already knew the exact shape of what he was hunting for. She gave it a six-day window before it auto-expired and dropped from the network without a trace.
+[Beat 141]
+The ghost node went in first — read-only, tucked into his financial routing at a junction she'd marked on the way through the architecture, set to hold six days and then expire and fall out of the network without leaving a tooth for an audit to catch on. Then she staged the release. Six channels, six separate clocks, each one armed to fire unless she reached in and silenced it by hand: gray-zone boards with reach across his whole operational zone, aggregators that had spent the last year prying at CorpoNation shells, an anonymized financial-disclosure endpoint. First window at 1600 the next afternoon, the other five staggered across the two days behind it. Miss any single one of them, and that channel spoke — and every package behind them carried the same freight: the skim documentation, the campaign mapping, four days of his money moving through her ghost node.
 
-Then she staged the dossier release. Six channels, each on its own clock, each one needing her active cancellation to stay silent: three gray-zone boards with wide reach across the operational zone, two investigative aggregators that had spent the last year picking at CorpoNation shell structures, one anonymized financial-disclosure endpoint. She set the first cancellation window for 1600 the following afternoon and staggered the other five across the next forty-eight hours. Miss a single window — any one of them — and that channel fired. The package behind each one held everything: the full skim documentation, the campaign mapping, four days of his financial routing pulled through the ghost node.
+[Beat 142]
+Then she burned one account. The one that had taken the terminal skim, the account she'd been tracing through three routing layers since her second week. She reached it through his own infrastructure and moved the transfer along his own relay, using his hand to do it, and pulled Φ8. Eight. She sent them to a gray-zone mutual-aid node in the Seam margin she'd been routing intake referrals through since her second week.
 
-Then she burned one account. The specific account that had received the terminal skim proceeds, the one she'd been tracing through three routing layers since her second week. She reached it through his own infrastructure and moved the transfer along his own relay, using his hand to do it. She pulled Φ8. Eight. She routed them to a gray-zone mutual-aid node in the Seam margin she'd been sending intake referrals through since her second week.
+[Beat 143]
+She looked at the confirmation. Φ8 — the exact figure she'd walked out of the Pulse terminal holding on her first day in the city. He would understand it. That was the thing that made it a message and not a theft.
 
-She looked at the transfer confirmation.
+[Beat 144]
+She saved the node coordinates and the release schedule and the transfer receipt into the dossier, and then she came back out of the channel the way she'd come out of a thousand sessions before it — the AI's warmth falling away behind her, that turned attention swinging slowly back to whatever it did when no one was speaking to it. She'd think about that later, too. She closed the work screen.
 
-Φ8. The exact balance she'd walked out of the Pulse terminal holding on the first day.
+[Beat 145]
+There was one thing to do tomorrow before the rest of it. She already knew where the scrap merchant was.
 
-He would understand it. That was what made it a message and not a theft.
+[Beat 146]
+She walked there from the Pivot in the flat afternoon light. She'd had the building for four nights now — mid-Seam, third arterial east, a clean commercial facade that gave a passerby nothing. Up close it gave away the one thing: credential infrastructure three grades heavier than any honest tenant would ever run. She knew his afternoon pattern.
 
-She saved the ghost node coordinates, the staged release schedule, and the transfer confirmation in the primary dossier partition. Then she came back out of the channel the way she'd come out of a thousand sessions, the AI's warmth dropping away behind her, that oriented attention swinging slowly back to whatever it did when no one was speaking to it. She'd think about that later too. She closed the work screen.
+[Beat 147]
+The access system ran the same standardized, CorpoNation-adjacent infrastructure she'd been living inside for four days, and her approach credentials passed it without tripping a thing. She took the lift to eight.
 
-Tomorrow she had one thing to do before the confrontation. She already knew where the scrap merchant was.
+[Beat 148]
+The meeting room was precisely what it had been built to be — a good surface, chairs designed to make leaving feel unnecessary, light pitched to keep a body comfortable well past the point it should have stood and gone. He was already there. He read her face first, then the bag on her shoulder, and said nothing. She sat down.
 
-[Beat 12]
-The scrap merchant worked out of the Seam margin, third floor of a warehouse that had been converted at least twice since anyone built it. She found the storefront wedged between a gear recycler and a neuretics-parts depot: bulk material assessment, no individual consultation, everything priced by weight and function-grade. The depot next door had its Waxwing Neuromedia demo running in the entrance arch — a slow carousel of install-grade upgrades turning over in translucent blue — and she walked through it without slowing down.
+[Beat 149]
+She set the work screen on the surface, opened the dossier, and didn't preface any of it. She showed him.
 
-She described the case: latching closure, precision foam, a load-bearing handle worn smooth on the right side. He found it in twelve minutes and carried it over the way he carried everything in his stock, as mass with a grade attached. She opened it there on the counter.
+[Beat 150]
+The skim first — his squad's accounts, the routing architecture, the coordination-node documentation she'd read straight through his own infrastructure, all of it filed and timestamped in his own hand. Her arrival in the city, laid against the skim's timeline. The three-week gap between the terminal strip and the day he'd finally reached out. Then the campaign, in order: two relay channels gone dark inside forty-eight hours of her silence, a client cancellation flagged out of his registry two hours before it reached her, a building lock that cleared on a round four hours, a gear order sent somewhere she'd never asked it to go. He watched the documents as she laid them down. He did not watch her face, and she caught that he didn't. Then the ghost node — coordinates, still live, his money standing open to her read-access four days running. Then the release. Six channels, six clocks, six countdowns, and the next window right there on the screen with its timestamp under it. Forty minutes.
 
-The instruments sat in the foam exactly as she'd packed them in Detroit. Nothing had been touched.
+[Beat 151]
+He sat behind the surface in the white suit and the dark lenses, and the stillness on him was a different thing now than it had been in the Pivot hallway — tighter, more exact, the stillness of something running at load and refusing to let the load show. Surprise didn't make him louder. It made him quieter, and more precise, and she sat and watched a great deal of precision holding itself very carefully in place.
 
-She paid Φ60. He had no idea what they were worth, and she didn't tell him. Explanation was value, and she wasn't handing him any.
+[Beat 152]
+She said, "Give me back my mother's instruments."
 
-Back in 2E she set the case on the table and went through each instrument in order: the resonance meter, both signal probes, the mesh calibrator with the small strip of tape on its side and her mother's handwriting on the tape. She cleaned each one with the cloth from her secondary kit. The calibrator's handle was worn smooth down one flank — twenty years of the same grip laying a groove into the housing, a groove that wasn't hers yet and might never be. She ran the resonance meter through its self-check. Off by a fraction of a percent, well inside tolerance. She'd bring it in when she had time.
+He didn't move for four seconds. Then he said they'd been processed with the rest of the acquisition materials — destroyed in the standard distribution chain — and he said it the way a man states a fact he's sure can't be checked, letting the precision of it do the work that proof would otherwise have had to.
 
-She seated them back in the foam. She latched the case. She left it on the table where she could see it.
+[Beat 153]
+She watched his face. The expression was controlled and the delivery was level, and underneath the both of them ran the one question she could read even where the rest of him stayed shut: whether she was asking because she didn't know, or because she did.
 
-Then she packed the rest of her kit — work screen folded down, secondary tools sorted by hand into their places — and shouldered the bag.
+[Beat 154]
+She gave him nothing. The instruments were on the table in 2E. She'd cleaned them three hours ago and run the resonance meter through its self-check. She had asked only to hear what he would say, and now she'd heard it. He lied, and he burned what he took, and the two came up out of the same place in him — the place that had weighed the case and never opened it to look.
 
-She opened the door.
+[Beat 155]
+She said, "This stops."
 
-Across the hall the door to 2D stood open, and Kyle was in the frame. He looked the way he looked when he'd come back from somewhere that ran on a different set of physics than a hallway — like the corridor was a language he was relearning one word at a time. He looked at what she was carrying. He looked at the direction she was pointed. She had the Greymark Unseen jacket on, deep cobalt, the anti-surveillance weave doing its quiet work, the first thing she'd bought in GLMZ that wasn't a tool.
+He looked at the countdown still live on the screen. He looked at the ghost-node coordinates. He weighed it — what she was holding, what it would cost him if she let it run, what she'd already done inside his own routing to prove she could reach in and do it. Whatever else he was, he could see a position that had turned against him.
 
-He didn't say anything. He held her eye a half-second longer than the doorway required, then dipped his chin, once.
+He said, "You're good."
 
-The door closed.
-
-She stood in the hall for one breath. Then she went downstairs.
-
-[Beat 13]
-She walked there from the Pivot in the flat afternoon light. She'd had the building for four nights — mid-Seam, third arterial east, a clean commercial facade that gave nothing away from the street. What it gave away up close was the credential infrastructure, three grades heavier than anything an honest tenant would run. She knew his afternoon pattern.
-
-The access system ran the same standardized CorpoNation-adjacent infrastructure she'd been living inside of for four days. Her approach credentials passed without tripping anything. She took the lift to eight.
-
-The meeting space was exactly what it was built to be: a good surface, chairs designed to make leaving feel unnecessary, lighting set to keep a person comfortable past the point where they should have stood up. He was already there. He read her face first, then the bag on her shoulder, and said nothing. She sat down.
-
-She set the work screen on the surface and opened the dossier. She didn't preface it. She showed him.
-
-The skim first — his squad's accounts, the routing architecture, the coordination node documentation she'd read through his own infrastructure, all of it filed and timestamped in his own hand. Her arrival in GLMZ mapped against the skim timeline. The three-week gap between the terminal strip and his neuretic contact request.
-
-Then the campaign. She walked him through it in order: the two relay channels dark inside forty-eight hours of her silence, the client cancellation flagged out of his CorpoNation registry two hours before it reached her, the building lock that cleared on a round four hours, the rerouted gear order. He watched the documents while she laid it out. He did not watch her face. She caught that he didn't.
-
-Then the ghost node — coordinates, still live, his financial routing standing open to her read-access for four days running.
-
-Then the staged release. Six channels, six independent clocks, six countdowns. She showed him the next window and its timestamp. Forty minutes.
-
-He sat behind the surface in the white suit and the dark lenses, and the stillness on him now was a different quality than it had been in the Pivot hallway — tighter, more exact, the stillness of a thing running at load and refusing to show the load. When something surprised him he didn't get louder. He got quieter, and more precise, and she was watching a great deal of precision hold itself very carefully in place.
-
-She said: give me back my mother's instruments.
-
-He didn't move for four seconds. Then he said they'd been processed with the rest of the acquisition materials. Destroyed in the standard distribution chain. He said it the way a man states a fact he believes can't be checked, letting the precision do the work that proof would otherwise have to do.
-
-She watched his face. The expression was controlled and the delivery was measured, and underneath both ran the one question she could read even where she couldn't read the rest of him: whether she was asking because she didn't know, or because she did.
-
-She gave him nothing. The instruments were on the table in 2E. She had cleaned them three hours ago and run the resonance meter through its self-check. She had asked only to see what he would say, and now she knew. He lied, and he burned what he took, and both came from the same place in him — the place that never opened the case to look.
-
-She said: this stops.
-
-He looked at the release countdown still live on the work screen. He looked at the ghost node coordinates. He weighed it — what she held, what it would cost him if she let it run, what she'd already done to his financial routing to prove she could reach in and do it. Whatever else he was, he could see when a position had turned against him.
-
-He said: you're good.
-
-She said: I know. This stops.
+She said, "I know. This stops."
 
 Three seconds.
 
-He said: it stops.
+He said, "It stops."
 
+[Beat 156]
 She picked up the work screen and walked out.
 
-The stairwell was empty. She stopped on the landing between seven and six and pulled up the staged release console. All six channels still running their clocks — six independent timers, no single point of failure, four hours of her build time from the night before sitting there fully armed and willing to do exactly what she'd built it to do.
+[Beat 157]
+The stairwell was empty. On the landing between seven and six she stopped and pulled up the release console — all six channels still running their clocks, six timers with no single point of failure between them, four hours of the previous night's build sitting there fully armed and entirely willing to do the thing she'd built it to do. She cancelled all six, in sequence, and waited for each receipt to clear before she moved to the next.
 
-She cancelled all six. In sequence. She waited for each confirmation receipt before she moved to the next.
+[Beat 158]
+The deterrent had done its work. He'd looked at what she held and said it stops, and she believed him — not because she trusted him, but because she'd read the choice he'd just made and it no longer ran back through her. She hadn't had to fire it. That was the whole point of the thing: the threat did its work only while it sat there unspent, and it had. His network was still out there. The floor was still on offer to whoever reached for it next. None of that had stopped, and none of it was hers to stop today. Only this had. Only her.
 
-The deterrent had worked. He'd looked at what she held and said it stops, and she believed him — not because she trusted him, but because she'd read the choice he'd just made, and it no longer ran through her. She hadn't had to fire it. That was the point. The threat only did its work while it sat there unused, and it had. His network was still out there. The floor was still on offer to whoever took it next. None of that had stopped, and none of it was hers to stop today. Only this had stopped. Only her.
+[Beat 159]
+She put the console away. She stood the ghost node down and watched it drop out of his financial routing clean — no insertion record, nothing left behind for an audit to sink its teeth into. He had nothing to point to. She'd lived inside his network four days and left it exactly as she'd found it. She had not become a ghost by accident, and she wasn't going to stop being one on her way out the door.
 
-She put the console away.
-
-She deactivated the ghost node, and it dropped out of his financial routing clean — no insertion record, nothing left for an audit to find its teeth in. She watched the confirmation line clear.
-
-He had nothing to point to. She'd been inside his network for four days and left it exactly as she'd found it. She had not become a ghost by accident, and she had not stopped being one on her way out.
-
+[Beat 160]
 She went upstairs.
 
-[Beat 14]
+[Beat 161]
 She came up the stairs. On the second floor the latch on 2D was already engaged.
 
-She unlocked 2E and went in. She set her bag on the floor. She looked at the case on the table, and then she opened it.
+[Beat 162]
+She let herself into 2E, set the bag on the floor, and stood a moment looking at the case on the table before she opened it.
 
-The instruments were exactly as her mother had left them — cleaned, seated in the foam in the right order, undamaged. The resonance meter with its fraction-of-a-percent drift. The calibrator with the strip of tape and the handwriting on it that had nothing to do with calibration data. The scrap merchant had held them eleven days and never once opened the inner partition. Neither had the man who'd sent them there.
+[Beat 163]
+The instruments were exactly as her mother had left them — cleaned, seated in the foam in their right order, none of them the worse for any of it. The resonance meter with its fraction-of-a-percent drift. The calibrator with the strip of tape and the handwriting on it that had nothing to do with calibration. The scrap merchant had held them eleven days and never once opened the inner partition, and neither had the man who'd sent them to him. Two people had put a hand on the case and read it as weight, and neither had bothered to look at what was inside.
 
-She put on music. Loud. The kind that goes through walls, the kind a building AI files a noise ordinance over and pins to your wall for no particular reason.
+[Beat 164]
+She put on music. Loud — the kind that carries through walls, the kind a building AI writes up a noise ordinance over and pins to your wall for no particular reason it will ever give you.
 
-She went to the window and opened it. The low-frequency haze, the eigenlift resonance humming somewhere up in the mid-Seam, the enormous unbothered sound of the city doing what it always did. Ten times the density of anything Detroit ever had. Ten times the machines, ten times the networks, ten times the minds in them that answered when they shouldn't, all of it out there still unread.
+[Beat 165]
+She opened the window. The low-frequency haze came in, and the eigenlift resonance humming somewhere up in the mid-Seam, and under it the enormous, unbothered sound of the city going on doing exactly what it always did. Ten times the density Detroit had ever managed. Ten times the machines, ten times the networks, ten times the minds sitting inside them that answered when they had no business answering — all of it out there, still unread.
 
-She looked at the room. It was small and organized and hers: the secondary kit in the crate she'd built on night four, the work screen folded in the corner, the noise-ordinance notice pinned up like a citation she'd decided to keep. She'd made all of it out of Φ8 and three weeks of steady work. He had made none of it for her. And he hadn't been able to take it, either. There was nothing else between them worth counting.
+[Beat 166]
+She looked at the room. It was small and it was in order and it was hers: the kit in the crate she'd knocked together on the fourth night, the work screen folded into the corner, the noise-ordinance notice pinned up like a citation she'd decided to keep. She'd made every part of it out of Φ8 and three weeks of steady work. He hadn't made any of it for her, and he hadn't been able to take it from her either, and there was nothing else left between the two of them worth the counting.
 
+[Beat 167]
 Then she looked at the boots.
 
-She was wearing her mother's work boots. Had been since the morning she walked out of the Detroit workshop with them. They were one size too large — she'd always padded the toes with folded paper when she put them on, every morning, every time, since the day she inherited them. She looked at the toes now.
+[Beat 168]
+She'd been wearing her mother's work boots since the morning she walked out of the Detroit workshop in them. They ran a size too large, and she'd always packed the toes out with folded paper — every morning, every time, from the day she came into them. She looked at the toes now.
 
+[Beat 169]
 They weren't padded.
 
-She tried to place when she'd stopped. There had been a morning, somewhere since she'd landed in GLMZ, when she'd put them on and the paper hadn't been there and she'd walked out the door without going to find any — and she couldn't say which morning it had been. She didn't know when the toes had started to fill. She didn't know when she'd stopped noticing that they didn't. Somewhere in the last three weeks the mismatch had quietly stopped being a mismatch, and she'd been too deep in the work to catch the moment it happened.
+[Beat 170]
+She tried to place when she'd stopped. There had been a morning, somewhere back in the last three weeks, when she'd pulled them on and the paper hadn't been in them and she'd gone out the door without going to find any — and she couldn't tell you which morning it had been. She didn't know when the toes had started to fill. She didn't know when she'd stopped noticing that they hadn't. Somewhere in there the mismatch had quietly gone and stopped being a mismatch, and she'd been too far down in the work to catch the moment it turned.
 
-She leaned down and laced them tighter. She left them the way they were.
+[Beat 171]
+She leaned down and laced them tighter, and left them the way they were.
 
-She had arrived in this city with Φ8 and a secondary kit and the skills that couldn't be skimmed out of her, and she had barely started.
+[Beat 172]
+She'd come into this city with Φ8 and a kit that fit in one pocket and a set of skills that couldn't be skimmed out of her, and she had barely started.
 
+[Beat 173]
 Her name was Pixel. She was staying.
+
+[Beat 174]
+The scrap merchant worked the third floor of a warehouse that had been converted at least twice since anyone first built it. She found the storefront wedged between a gear recycler and a neuretics-parts depot — bulk assessment only, no individual consultation, everything on the floor priced by weight and function-grade. The depot next door had its Waxwing Neuromedia demo running in the entrance arch, a slow carousel of install-grade upgrades turning over in translucent blue, and she walked straight through the middle of it without slowing down.
+
+[Beat 175]
+She described the case: latching closure, precision foam, a load-bearing handle worn smooth on the right side. He found it in twelve minutes and carried it over the way he carried everything in his stock, as mass with a grade attached, and she opened it there on the counter.
+
+[Beat 176]
+The instruments lay in the foam exactly as she'd packed them in Detroit. Nothing had been touched.
+
+[Beat 177]
+She paid Φ60. He had no idea what he'd been holding, and she didn't tell him — explanation was a kind of value, and she wasn't about to hand him any for free.
+
+[Beat 178]
+Back in 2E she set the case on the table and went through it piece by piece. The resonance meter. Both signal probes. The mesh calibrator, with the small strip of tape on its side and her mother's handwriting on the tape — a note that had nothing to do with calibration. She cleaned each one with the cloth from her kit. The calibrator's handle was worn smooth down one flank, twenty years of the same grip laying a shallow groove into the housing, a groove that wasn't hers yet and might never come to be. She ran the resonance meter through its self-check: off by a fraction of a percent, well inside tolerance. She'd true it up when she had the time.
+
+[Beat 179]
+She seated them back in the foam, latched the case, and left it on the table where she could see it. Then she packed the rest — work screen folded down, the small tools sorted by hand into their places — and shouldered the bag, and opened the door.
+
+[Beat 180]
+Across the hall, the door to 2D stood open, and the man who lived there was in the frame of it. Three weeks, four theories, and not one of them confirmed — and here he was, finally, not a smell in the corridor or a shape behind a fisheye lens but an actual man, looking like he'd just come back from somewhere that ran on a different set of physics than a hallway did, the corridor a language he was relearning one word at a time. She had the Greymark Unseen jacket on, deep cobalt, the anti-surveillance weave at its quiet work — the first thing she'd bought in this city that wasn't a tool.
+
+[Beat 181]
+Blood tracked dark along his forearm, wet enough to still catch the hall light, and a thin line of it had dried at his hairline where something had opened him up. Whatever had done it wasn't costing him anything he was willing to show.
+
+[Beat 182]
+He looked at what she was carrying. She looked at what he was.
+
+"You're bleeding," she said.
+
+It came out flatter than she meant it to. Three weeks of cataloguing him from the wrong side of a door, and the first thing out of her mouth was the obvious thing — the kind of line a building AI could have logged.
+
+He looked down at his own arm like it belonged to someone else's report. "Occupational hazard." His voice was quieter than she'd built it in her head, and steadier.
+
+She had a dozen sharper things she could have said, and every one of them stayed where they were. What came out instead was, "Wait here."
+
+[Beat 183]
+She was back inside 2E before he could answer, down at the kit crate — the same one her shin still remembered — and up again with a plain adhesive bandage, the ordinary kind, nothing from her toolkit, nothing that needed a diagnosis. She crossed the hall and pressed it flat along his forearm, over the worst of it, quick and unceremonious, the way you'd patch a scraped knuckle and nothing more.
+
+[Beat 184]
+He stood there and let her, and something in his face had come loose that hadn't been loose a minute ago — not pain, nothing like pain. He looked almost aghast at the whole transaction, like the hallway had tilted half a degree and he hadn't caught which direction.
+
+"Thanks," he said.
+
+"You're welcome, neighbor." She stepped back and let the door have its space again.
+
+"Kyle," he said. Just that. An offer, the whole of it.
+
+[Beat 185]
+She opened her mouth on the name she'd carried since Detroit, the one that belonged to a life she'd already half put down — and stopped herself before the first sound of it left her. Three weeks in this city. A case full of her mother's instruments back on her own table. Boots that no longer needed the paper. She could be anyone she decided to be, starting now, starting here, in a hallway, with blood on somebody else's arm and none of it costing her anything at all.
+
+"Pixel," she said.
+
+"It's a pleasure to meet you."
 

@@ -20,6 +20,8 @@ namespace StreetSamurai.Cli;
 ///
 ///   ss --add-place --file path.json
 ///   ss --add-place --file path.json --print   (echo the saved record back)
+///   ss --add-place --dir path/to/folder       (one DistrictData JSON file per place;
+///                                               imports all *.json in one process)
 ///
 /// Note: embeddings + Edges are populated by their own passes (re-embed /
 /// relationship import); this writes the canonical entity + record.
@@ -28,6 +30,10 @@ public static class AddPlaceCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider sp)
     {
+        var dir = ArgValue(args, "--dir");
+        if (!string.IsNullOrWhiteSpace(dir))
+            return await RunDirAsync(dir, sp);
+
         var file = ArgValue(args, "--file");
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
@@ -70,6 +76,45 @@ public static class AddPlaceCli
             Console.WriteLine(JsonSerializer.Serialize(saved, new JsonSerializerOptions { WriteIndented = true }));
         }
         return 0;
+    }
+
+    private static async Task<int> RunDirAsync(string dir, IServiceProvider sp)
+    {
+        if (!Directory.Exists(dir))
+        {
+            Console.Error.WriteLine($"[add-place] directory not found: {dir}");
+            return 1;
+        }
+
+        var repo = sp.GetRequiredService<DistrictRepository>();
+        int ok = 0, failed = 0;
+        foreach (var file in Directory.EnumerateFiles(dir, "*.json").OrderBy(f => f))
+        {
+            try
+            {
+                var json = await File.ReadAllTextAsync(file);
+                var data = JsonSerializer.Deserialize<DistrictData>(json, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true,
+                });
+                if (data == null || string.IsNullOrWhiteSpace(data.Name))
+                {
+                    Console.Error.WriteLine($"  FAIL  {Path.GetFileName(file)} — could not deserialize or missing name");
+                    failed++;
+                    continue;
+                }
+                repo.Save(data);
+                Console.WriteLine($"  ok    {Path.GetFileName(file)} — id={data.Id} name=\"{data.Name}\"");
+                ok++;
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"  FAIL  {Path.GetFileName(file)} — {ex.Message}");
+                failed++;
+            }
+        }
+        Console.WriteLine($"[add-place] {ok} saved, {failed} failed");
+        return failed > 0 ? 1 : 0;
     }
 
     private static string? ArgValue(string[] args, string flag)

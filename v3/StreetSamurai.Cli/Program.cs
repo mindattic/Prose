@@ -1987,22 +1987,38 @@ if (args.Contains("--cost") && (args.Length == 1 || (args.Length == 2 && (args.C
 // HTTP server, no Kestrel, no Blazor middleware.
 // ────────────────────────────────────────────────────────────────────────────
 
+// Eagerly resolves IUniverseContext so its constructor sets UniverseScope.Current
+// immediately (StreetSamurai.Core/Services/UniverseContext.cs line ~169), before any CLI
+// dispatch block runs. This makes every command's universe scoping fully DB-driven off the
+// live Universe table — the same path IUniverseContext already uses — instead of depending
+// on whichever dispatch blocks happen to resolve IUniverseContext themselves. Adding a new
+// universe (a new Universe row) needs no C# change anywhere after this: UniverseBootstrap.
+// ResolveWellKnownId's hardcoded switch only still matters for a process that never calls
+// this (there are none left, post-fix), so it's inert now rather than load-bearing.
+// Cheap and safe pre-migration: the constructor doesn't touch the DB — catalog load is lazy
+// and already has a try/catch fallback to an empty/no-op scope.
+static IServiceProvider Finalize(IServiceProvider sp)
+{
+    sp.GetRequiredService<IUniverseContext>();
+    return sp;
+}
+
 static IServiceProvider BuildCoreServices(string[] args)
-    => Host.CreateDefaultBuilder(args)
+    => Finalize(Host.CreateDefaultBuilder(args)
         .ConfigureLogging(lb => lb.AddConsole())
         .ConfigureServices((_, svc) => svc.AddStreetSamuraiServices())
         .Build()
-        .Services;
+        .Services);
 
 static IServiceProvider BuildCoreServicesNoLogging(string[] args)
-    => Host.CreateDefaultBuilder(args)
+    => Finalize(Host.CreateDefaultBuilder(args)
         .ConfigureLogging(lb => lb.ClearProviders())
         .ConfigureServices((_, svc) => svc.AddStreetSamuraiServices())
         .Build()
-        .Services;
+        .Services);
 
 static IServiceProvider BuildServicesWithVault(string[] args)
-    => Host.CreateDefaultBuilder(args)
+    => Finalize(Host.CreateDefaultBuilder(args)
         .ConfigureAppConfiguration(cfg =>
             cfg.AddMindAtticVaultFiles())
         .ConfigureLogging(lb => lb.AddConsole())
@@ -2012,7 +2028,7 @@ static IServiceProvider BuildServicesWithVault(string[] args)
             svc.AddStreetSamuraiServices();
         })
         .Build()
-        .Services;
+        .Services);
 
 static IServiceProvider BuildServicesWithVaultAndAuth(string[] args)
 {
@@ -2036,5 +2052,5 @@ static IServiceProvider BuildServicesWithVaultAndAuth(string[] args)
                 });
         })
         .Build();
-    return host.Services;
+    return Finalize(host.Services);
 }

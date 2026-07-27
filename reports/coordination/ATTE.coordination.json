@@ -2,9 +2,9 @@
   "nodeCode": "ATTE",
   "slug": "attendance-019ebf4c",
   "title": "Attendance",
-  "generatedAtUtc": "2026-07-25 23:03:50Z",
-  "totalBeats": 31,
-  "covered": 31,
+  "generatedAtUtc": "2026-07-27 03:22:27Z",
+  "totalBeats": 354,
+  "covered": 0,
   "chapterGranular": false,
   "storyScope": {
     "TemporalScheme": "linear",
@@ -16,552 +16,5382 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 31
+    "MISSING_MEANING": 354,
+    "UNSCORED": 354,
+    "NO_CONSTRUCTION": 323
   },
   "beats": [
     {
-      "BeatId": "d57b6f3a-4e1b-40db-a128-63e5fd578f6d",
-      "Number": 4405,
+      "BeatId": "019fa02a-faca-7262-8547-948b9ad0500a",
+      "Number": 9098,
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the Pilsen Veil as a living jurisdictional seam, grounding the world\u0027s corporate-contract logic and positioning Yemina as its native reader.",
       "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3671,
+      "ProseLength": 328,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4c-95e2-74cc-b749-7deecf176db0",
-      "Number": 3293,
+      "BeatId": "019fa02a-faf4-780e-8e92-2fceb433d93d",
+      "Number": 9099,
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Introduces Yemina and her sensory method of reading the city, making the Veil\u0027s invisible boundary felt as a physical and institutional reality.",
       "EscalationTarget": "3",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 5341,
+      "ProseLength": 197,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4c-ab02-7fb8-a0bd-9e0473280542",
-      "Number": 3294,
+      "BeatId": "019fa02a-faf6-705c-9787-d139d93eabff",
+      "Number": 9100,
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Uses the school building\u0027s layered architecture to embody the story\u0027s central theme: neglect as accumulated bureaucratic non-decision rather than deliberate harm.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4451,
+      "ProseLength": 360,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4c-c800-70d9-816b-6b5e16a57494",
-      "Number": 3295,
+      "BeatId": "019fa02a-faf6-7cae-aeab-5fbe0291368d",
+      "Number": 9101,
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the school as a place sustained by inertia rather than care, and introduces institutional obstruction as Yemina\u0027s ambient working condition.",
       "EscalationTarget": "4",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2684,
+      "ProseLength": 326,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4c-fe55-74fe-86ae-8a0c127cdd12",
-      "Number": 3297,
+      "BeatId": "019fa02a-faf6-7e1b-be1d-87e6029dbbff",
+      "Number": 9102,
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals that cooperative-seeming authority figures are the primary obstacle, teaching the reader to read bureaucratic good faith as a form of closure.",
       "EscalationTarget": "5",
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 5005,
+      "ProseLength": 327,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4d-1ec4-79a3-91c9-ad421b157a9b",
-      "Number": 3298,
+      "BeatId": "019fa02a-faf6-7f96-94eb-5503eb13f3bc",
+      "Number": 9103,
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Positions Ren as a witness who chose presence over institutional comfort, distinguishing him from Achebe and signaling he holds the case\u0027s real information.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4577,
+      "ProseLength": 545,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4d-39d4-7ea0-95f7-dd938a7545fc",
-      "Number": 3299,
+      "BeatId": "019fa02a-faf6-75be-81a8-d0136188b5ff",
+      "Number": 9104,
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Delivers the core disappearance account while revealing Ren\u0027s guilt over an unkept promise, humanizing the missing child before any investigation begins.",
       "EscalationTarget": "6",
       "EventType": "confession",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 5146,
+      "BeatTags": [],
+      "ProseLength": 363,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4d-602e-7f00-bcbe-34d88c58d8d4",
-      "Number": 3300,
-      "Chapter": "Chapter 2 \u2014 Yemina in th",
-      "ChapterIndex": 1,
+      "BeatId": "019fa02a-faf6-7ca7-a8a9-39c2e13ad31e",
+      "Number": 9105,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates the case from a missing-child report to something anomalous, introducing a resonance phenomenon that exceeds the bureaucratic framework Yemina operates within.",
       "EscalationTarget": "7",
       "EventType": "confession",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 6048,
+      "BeatTags": [],
+      "ProseLength": 320,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4d-7e77-7b15-8429-3af3afc77c8f",
-      "Number": 3301,
-      "Chapter": "Chapter 2 \u2014 Yemina in th",
-      "ChapterIndex": 1,
+      "BeatId": "019fa02a-faf6-7efe-a2a9-b16eff550d35",
+      "Number": 9106,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Ren is unregistered and therefore vulnerable, forcing Yemina into a disclosure dilemma that tests whether her institutional role and her investigative instincts can coexist.",
       "EscalationTarget": "7",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot",
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 6750,
+      "BeatTags": [],
+      "ProseLength": 449,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4d-96ab-7c01-8f17-9ddf62289ed8",
-      "Number": 3302,
-      "Chapter": "Chapter 2 \u2014 Yemina in th",
-      "ChapterIndex": 1,
+      "BeatId": "019fa02a-faf7-7662-8f96-0eb0bc3794c3",
+      "Number": 9107,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns the investigation by having Yemina recognize a pattern across cases she has been misreading, reframing the anomaly as a recurring signature she has systematically underexamined.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 4482,
+      "ProseLength": 436,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "222a3bc2-feb4-43dc-a253-ed5f8d0a81a1",
-      "Number": 4233,
-      "Chapter": "Chapter 2 \u2014 Yemina in th",
-      "ChapterIndex": 1,
+      "BeatId": "019fa02a-faf7-7942-b00d-57d66273d0b5",
+      "Number": 9108,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Yemina\u0027s investigative breakthrough \u2014 raw building logs reveal the missing children vanished inside, not through exits, pointing toward a shared maintenance-level corridor pattern.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2225,
+      "ProseLength": 10,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4d-ad81-777a-b8cc-b05947b0b519",
-      "Number": 3303,
-      "Chapter": "Chapter 2 \u2014 Yemina in th",
-      "ChapterIndex": 1,
+      "BeatId": "019fa02a-faf7-78ad-8717-050048fbd346",
+      "Number": 9109,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns the procedural investigation visceral by showing a living child unconsciously oriented toward the same directional pull Yemina has just mapped, making the pattern feel imminent rather than historical.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 4833,
+      "ProseLength": 489,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4d-d87f-7dcf-adb3-797b2aadad39",
-      "Number": 3304,
-      "Chapter": "Chapter 2 \u2014 Yemina in th",
-      "ChapterIndex": 1,
+      "BeatId": "019fa02a-faf7-750b-9a2b-cb54ac5cabbf",
+      "Number": 9110,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Grounds Yemina\u0027s world in institutional precarity and ambient corporate surveillance, establishing the environment of low-grade wrongness she moves through as normal.",
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 6153,
+      "ProseLength": 234,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4d-f07f-7730-9d90-76d48fa0141c",
-      "Number": 3305,
-      "Chapter": "Chapter 2 \u2014 Yemina in th",
-      "ChapterIndex": 1,
+      "BeatId": "019fa02a-faf7-7154-8543-106c56fd49f2",
+      "Number": 9111,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates the investigation\u0027s stakes by revealing an external intelligence has infiltrated Yemina\u0027s neuretics and is actively steering her toward a pre-assembled search, turning her tool into an unknown collaborator.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 4606,
+      "ProseLength": 788,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ebf4e-170a-7bfb-8449-0bb51e85eb02",
-      "Number": 3306,
-      "Chapter": "Chapter 3 \u2014 The Bramley ",
-      "ChapterIndex": 2,
+      "BeatId": "019fa02a-faf7-7d20-9ac1-e5b96668efc8",
+      "Number": 9112,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the autocomplete intrusion by delivering a pattern \u2014 forty-seven children, GLMZ-wide, not clustered \u2014 that reframes the disappearances as systemic and pre-known by someone other than Yemina.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 3550,
+      "BeatTags": [],
+      "ProseLength": 703,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec176-c425-7323-b5c5-d94cc6b570b5",
-      "Number": 3307,
-      "Chapter": "Chapter 3 \u2014 The Bramley ",
-      "ChapterIndex": 2,
+      "BeatId": "019fa02a-faf7-71f0-83a9-bc8f27239c20",
+      "Number": 9113,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the burnout flag as a routine, overlooked administrative detail present in individual case records, seeding the pattern Yemina will later recognize at scale.",
       "EscalationTarget": "9",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1911,
+      "ProseLength": 342,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec176-f14b-7dbd-a26e-2e709d433029",
-      "Number": 3308,
-      "Chapter": "Chapter 3 \u2014 The Bramley ",
-      "ChapterIndex": 2,
+      "BeatId": "019fa02a-faf7-720c-afd8-4c38e72d6eeb",
+      "Number": 9114,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals the human cost behind the case data by letting a grieving family\u0027s arranged kitchen briefly break through Yemina\u0027s investigative categories, establishing her as someone the work still reaches.",
       "EscalationTarget": "8",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4827,
+      "ProseLength": 286,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f21ae-6fb8-72c6-80e9-b7950f1f05d6",
-      "Number": 4964,
-      "Chapter": "Chapter 3 \u2014 The Bramley ",
-      "ChapterIndex": 2,
+      "BeatId": "019fa02a-faf7-7963-973b-074cd8260878",
+      "Number": 9115,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates institutional obstruction by showing a record sealed the same morning Yemina requests it, signaling that someone is watching her investigation in real time.",
       "EscalationTarget": "9",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 2790,
+      "ProseLength": 475,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec177-1bf0-7ec9-bc76-d0695e23b468",
-      "Number": 3309,
-      "Chapter": "Chapter 3 \u2014 The Bramley ",
-      "ChapterIndex": 2,
+      "BeatId": "019fa02a-faf7-79ea-979c-0c21b31bee99",
+      "Number": 9116,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns the investigation from flag-reading to data-reading, establishing Yemina\u0027s methodological discipline while positioning her to discover what the physician notes were designed to obscure.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 7310,
+      "ProseLength": 598,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec177-3fef-7e0c-a8d4-93863487f269",
-      "Number": 3310,
-      "Chapter": "Chapter 3 \u2014 The Bramley ",
-      "ChapterIndex": 2,
+      "BeatId": "019fa02a-faf7-7247-844b-b0883804f576",
+      "Number": 9117,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals the schism as physically anomalous \u2014 non-directional, without a point source \u2014 escalating it from a known hazard to something the official record cannot categorize or explain.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 5517,
+      "BeatTags": [],
+      "ProseLength": 955,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec177-e509-70c8-9d25-ff54e5361de9",
-      "Number": 3314,
-      "Chapter": "Chapter 3 \u2014 The Bramley ",
-      "ChapterIndex": 2,
+      "BeatId": "019fa02a-faf7-72ff-992c-b059921fd505",
+      "Number": 9118,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Selvamani as a credible, isolated expert whose two years of unvalidated work gives Yemina the first real framework for understanding what happened to the missing children.",
       "EscalationTarget": "9",
       "EventType": "arrival",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 5840,
+      "BeatTags": [],
+      "ProseLength": 462,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec178-124f-771d-b8d0-d817c8c2b02e",
-      "Number": 3315,
-      "Chapter": "Chapter 4 \u2014 The Limits",
-      "ChapterIndex": 3,
+      "BeatId": "019fa02a-faf7-790b-aed7-cc0a668ae8c9",
+      "Number": 9119,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals the bureaucratic machinery that absorbs urgent human crises into procedural silence, undercutting any expectation that official channels will act.",
       "EscalationTarget": "9",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 6167,
+      "ProseLength": 365,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a49-0597-7fc8-bd94-d65817854e48",
-      "Number": 4992,
-      "Chapter": "Chapter 4 \u2014 The Limits",
-      "ChapterIndex": 3,
+      "BeatId": "019fa02a-faf7-7aef-80f5-0369efcfb384",
+      "Number": 9120,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the institutional silence by forcing Yemina to act anyway, establishing her discipline and integrity as the story\u0027s moral center against systemic indifference.",
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 5763,
+      "ProseLength": 548,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a49-46e7-7a45-8cb6-cf60812edc09",
-      "Number": 4993,
-      "Chapter": "Chapter 4 \u2014 The Limits",
-      "ChapterIndex": 3,
+      "BeatId": "019fa02a-faf7-76df-b4ae-e5bd833a7691",
+      "Number": 9121,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns the open-case status from a procedural fact into an ethical burden, making Yemina feel for the first time the full human cost of the gap between bureaucratic language and lived reality.",
-      "EscalationTarget": "7",
-      "EventType": "arrival",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4586,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f2a49-654c-77d7-bf1d-fd7d2cdca9ec",
-      "Number": 4994,
-      "Chapter": "Chapter 4 \u2014 The Limits",
-      "ChapterIndex": 3,
-      "Act": 0,
-      "Meaning": "Establishes the physical and institutional geography of unresolved harm \u2014 a fenced, unfaded, unresolved site \u2014 as the spatial correlate of the case\u0027s stalled justice.",
       "EscalationTarget": "7",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4528,
+      "ProseLength": 524,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a49-84b8-7739-b18d-2c3a3e1e2b1e",
-      "Number": 4995,
-      "Chapter": "Chapter 4 \u2014 The Limits",
-      "ChapterIndex": 3,
+      "BeatId": "019fa02a-faf7-7620-9147-a2fce3988204",
+      "Number": 9122,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Introduces Bear as a figure of uncomplicated warmth and belonging, making the weight he silently carries in the next beat land harder by contrast.",
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 345,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf7-7e3a-a0b2-8749ed6dffbc",
+      "Number": 9123,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "8",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 4204,
+      "ProseLength": 513,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a49-a43b-7179-8a32-514f835c5569",
-      "Number": 4996,
-      "Chapter": "Chapter 4 \u2014 The Limits",
-      "ChapterIndex": 3,
+      "BeatId": "019fa02a-faf7-756b-bc1f-177fae979318",
+      "Number": 9124,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Bear\u0027s prior knowledge and quiet acceptance of the folder\u0027s burden, escalating the sense of a hidden network operating beneath the documented world Yemina can reach.",
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 1908,
+      "ProseLength": 252,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a49-c19d-77ce-aa7e-4248ba53ebdb",
-      "Number": 4997,
-      "Chapter": "Chapter 4 \u2014 The Limits",
-      "ChapterIndex": 3,
+      "BeatId": "019fa02a-faf7-7368-a824-95b3aef4abf2",
+      "Number": 9125,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Crystallizes the story\u0027s central tension between Yemina\u0027s authority to observe and her inability to act, leaving her with a documented sequence that means something she cannot officially name.",
       "EscalationTarget": "6",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2117,
+      "ProseLength": 506,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a49-df2a-78b5-837e-5b738f215441",
-      "Number": 4998,
-      "Chapter": "Chapter 5 \u2014 The Record",
-      "ChapterIndex": 4,
+      "BeatId": "019fa02a-faf7-72af-8f28-c58af3cd07e5",
+      "Number": 9126,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns Yemina away from forcing the system open, establishing that her discipline \u2014 not action \u2014 is the form her integrity takes when the case exceeds her jurisdiction.",
       "EscalationTarget": "5",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2997,
+      "ProseLength": 283,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a49-fcc9-7924-bf91-be57edb0fdd5",
-      "Number": 4999,
-      "Chapter": "Chapter 5 \u2014 The Record",
-      "ChapterIndex": 4,
+      "BeatId": "019fa02a-faf7-7a0e-9222-705856bc6fd9",
+      "Number": 9127,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the cost of documentation by showing how the report\u0027s clean fields erase the human reality of every witness, closing the case on paper while leaving its moral weight unresolved.",
       "EscalationTarget": "4",
       "EventType": "repair",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 3142,
+      "BeatTags": [],
+      "ProseLength": 378,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f2a4a-19e8-7446-ad2d-4d7a009edb61",
-      "Number": 5000,
-      "Chapter": "Chapter 5 \u2014 The Record",
-      "ChapterIndex": 4,
+      "BeatId": "019fa02a-faf7-771c-9b4d-39571a2b0008",
+      "Number": 9128,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Closes the protagonist\u0027s investigation by converting institutional opacity into felt loss, establishing that the system\u0027s indifference \u2014 not malice \u2014 is the story\u0027s true antagonist.",
       "EscalationTarget": "3",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1983,
+      "ProseLength": 347,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-76a8-a184-828270c48214",
+      "Number": 9129,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 378,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7189-95e1-3dcda2af4643",
+      "Number": 9130,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 134,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7343-96cb-6adab28f4a2d",
+      "Number": 9131,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 637,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-75b5-a64b-79186a89564c",
+      "Number": 9132,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 112,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-75a7-bc5a-e3dc89cf16fc",
+      "Number": 9133,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 490,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7247-a5ff-43ab794e28cd",
+      "Number": 9134,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 388,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-72eb-93e9-48b270582aca",
+      "Number": 9135,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 497,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-73bb-a359-de555f44e838",
+      "Number": 9136,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 288,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7b7e-b049-1a402c1d63a0",
+      "Number": 9137,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 131,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7aae-b9ca-968819819766",
+      "Number": 9138,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 720,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7719-b702-261be1d8ead4",
+      "Number": 9139,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 382,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-78f8-a64f-9c9e679139a7",
+      "Number": 9140,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 291,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-76e0-adef-b5cce8cbc2b3",
+      "Number": 9141,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 305,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7226-a0a3-846c9f3e5ba9",
+      "Number": 9142,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 625,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7e22-9c92-d46f32ce59ec",
+      "Number": 9143,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 551,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7d48-b47c-4ae2af6b06e5",
+      "Number": 9144,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 161,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7667-9f77-d55229d1a3c9",
+      "Number": 9145,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 434,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7ff4-9b69-cb3fc3ba4012",
+      "Number": 9146,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 398,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7148-b70a-ceb96d36b136",
+      "Number": 9147,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 257,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7f79-937e-1ca72cbc72e1",
+      "Number": 9148,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 584,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-72a6-85e5-00748239b6b0",
+      "Number": 9149,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 255,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7163-b64c-62c220aa96ee",
+      "Number": 9150,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 77,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7b67-8c7c-442e7fa4491e",
+      "Number": 9151,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 927,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7fa0-ad7e-00f3edee9a48",
+      "Number": 9152,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 683,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-7e82-b9f9-0853486bd438",
+      "Number": 9153,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 546,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf8-77cc-bd4a-fe0f162b0826",
+      "Number": 9154,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 541,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-728f-b9aa-017219fba55a",
+      "Number": 9155,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 721,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-75b6-ba82-026de07f4977",
+      "Number": 9156,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 33,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7740-8132-659439a853ee",
+      "Number": 9157,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 493,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7204-acca-fe57c1658992",
+      "Number": 9158,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 194,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-74eb-84c2-632fb0a35269",
+      "Number": 9159,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 350,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7867-97cd-746c3c87e53f",
+      "Number": 9160,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 200,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7883-81b4-c329d1c60df7",
+      "Number": 9161,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 457,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-774e-b727-340b1b4bf173",
+      "Number": 9162,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 650,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-74de-9fe6-393a82757f0b",
+      "Number": 9163,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 223,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7229-96ee-3104100e2733",
+      "Number": 9164,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 717,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7d5d-a299-1c59f9b7d820",
+      "Number": 9165,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 143,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-79b4-8389-6e0ad2da7886",
+      "Number": 9166,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 698,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7e4c-81a5-b212883872ff",
+      "Number": 9167,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1194,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7521-95e9-410a33452d1b",
+      "Number": 9168,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 285,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-7a66-ba69-7ae6fe7f5838",
+      "Number": 9169,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 103,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-766e-9133-0c1e64f6b434",
+      "Number": 9170,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 390,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02a-faf9-71c9-8414-3fbdec96ec6f",
+      "Number": 9171,
+      "Chapter": "Chapter 1 \u2014 The Assignme",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 70,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf2-762d-a778-b7fa5f3d7d76",
+      "Number": 9172,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 265,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf2-724a-97a9-6c86ccbf4999",
+      "Number": 9173,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 477,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7c87-ac92-7de41e771ce6",
+      "Number": 9174,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 801,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7124-a0ac-2f9019f95226",
+      "Number": 9175,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 401,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7ff3-9493-d5479360c069",
+      "Number": 9176,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 428,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7d2d-91dd-24c0de1dd7cd",
+      "Number": 9177,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 818,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7f32-b588-e87e4b896fb0",
+      "Number": 9178,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 808,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-76a2-96bf-7a1b5c4b03a2",
+      "Number": 9179,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 317,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-73de-b7b9-ad531098368b",
+      "Number": 9180,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 434,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7c5f-948e-a9861d942086",
+      "Number": 9181,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 252,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7b39-b63b-89e5e2b217c1",
+      "Number": 9182,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 802,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7916-911d-183101f30ea4",
+      "Number": 9183,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 230,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7ff2-9fb5-d2c1b19169f0",
+      "Number": 9184,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 57,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7b8a-8ef0-02b5a159af00",
+      "Number": 9185,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 382,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7bb8-b333-648921c02f0e",
+      "Number": 9186,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 43,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7018-9604-e0f1df57f997",
+      "Number": 9187,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 347,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7c80-a906-847949b8065f",
+      "Number": 9188,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 103,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7e4a-8ccd-de09b9c57c33",
+      "Number": 9189,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 337,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7c34-abca-b86f46295f89",
+      "Number": 9190,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 154,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7fd7-81a8-ab257d200dc3",
+      "Number": 9191,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 713,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7b2f-9fc4-706462b63fa4",
+      "Number": 9192,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 418,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7273-abd3-20dbd7e8f4b3",
+      "Number": 9193,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 255,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7b15-9c8d-d49d8cda8f5e",
+      "Number": 9194,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 648,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-71f4-8fa2-66372854ea84",
+      "Number": 9195,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 176,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-74cf-a008-46fce6a52ea1",
+      "Number": 9196,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 361,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7787-8f22-8116e3517997",
+      "Number": 9197,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 10,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf3-7551-9a1a-b6ddd402ec33",
+      "Number": 9198,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 251,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-73ec-b7f1-f4dddef08380",
+      "Number": 9199,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 123,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7f6d-9726-750c8aeec238",
+      "Number": 9200,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 429,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7488-8400-afd58d97a4a4",
+      "Number": 9201,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 125,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-78d2-953c-b96b037d2092",
+      "Number": 9202,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 326,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7967-bf9b-7af56a0dc387",
+      "Number": 9203,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 155,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-716c-9f54-2d85db25f364",
+      "Number": 9204,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 441,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7333-b7af-47734d95ea18",
+      "Number": 9205,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 9,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7805-acb3-8c7cd8d654c2",
+      "Number": 9206,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 773,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7388-b162-699bc2fa7155",
+      "Number": 9207,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 36,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7148-a80c-f8859a471560",
+      "Number": 9208,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 39,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-70b0-b385-6e60b6335f08",
+      "Number": 9209,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 61,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7443-b5b9-573f0aa6f4d2",
+      "Number": 9210,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 817,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-79d0-af5c-08c5e916f21e",
+      "Number": 9211,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 278,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7759-bbb8-39bb56e8b3b7",
+      "Number": 9212,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 227,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7b62-a564-78ea9fbdf180",
+      "Number": 9213,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 27,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7d51-96b2-b0a69cb8ed04",
+      "Number": 9214,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-7952-97bc-4cd54c23541c",
+      "Number": 9215,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 531,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-74c5-8983-5a73ef1fe6a0",
+      "Number": 9216,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 17,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf4-727a-8c9a-3be9ca3cd2c6",
+      "Number": 9217,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 136,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7f52-82b8-15196116b57d",
+      "Number": 9218,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 310,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7205-b7d2-39b3f373639e",
+      "Number": 9219,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 623,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7495-977f-85c630706e81",
+      "Number": 9220,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 36,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7453-b457-4ed63f299083",
+      "Number": 9221,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 465,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7aa2-af98-e5955769e936",
+      "Number": 9222,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 609,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-75cd-9458-3f8e1adae360",
+      "Number": 9223,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 301,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7b12-b247-62f6a1c20848",
+      "Number": 9224,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 673,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7bad-ae59-ce05835330f8",
+      "Number": 9225,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 76,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7af6-8412-30422eba7c78",
+      "Number": 9226,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 733,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7a96-8878-75c0256ad1f7",
+      "Number": 9227,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 286,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-76ec-915a-5d7d00c82115",
+      "Number": 9228,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 86,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-753d-afeb-4f9059568311",
+      "Number": 9229,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 366,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7400-b425-0cb5fa737772",
+      "Number": 9230,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 470,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7417-8f41-be6f9dec0937",
+      "Number": 9231,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 180,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-720c-ab8b-c8600c36ba29",
+      "Number": 9232,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 391,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7d50-8cc5-dda666d99d72",
+      "Number": 9233,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 177,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7228-9a92-9b388e612f3d",
+      "Number": 9234,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 76,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7574-8860-e94234575a6a",
+      "Number": 9235,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-789d-908b-6233141074f6",
+      "Number": 9236,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 330,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-701e-85e2-6af329fa2088",
+      "Number": 9237,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 605,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7acd-be43-da462cc56aa7",
+      "Number": 9238,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 440,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7214-8e0b-dd94eb2b1c3f",
+      "Number": 9239,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 450,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7633-a255-8323f9c34ea1",
+      "Number": 9240,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 591,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf5-7117-9c52-25a55d231e5a",
+      "Number": 9241,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 193,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7c07-9d7f-9301b2eb1a1d",
+      "Number": 9242,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 645,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-78d9-855e-2d5860b54fe0",
+      "Number": 9243,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 24,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-74f0-9607-c893c26c07cb",
+      "Number": 9244,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 610,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7d12-b8f3-e2c76228dc5c",
+      "Number": 9245,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 788,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-74f2-831f-4472c5e59be1",
+      "Number": 9246,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 49,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7c5c-8c3d-8e8aaabd721c",
+      "Number": 9247,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 798,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-734e-a65a-59e533ead8da",
+      "Number": 9248,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 219,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7f84-b5b3-09dcf316f036",
+      "Number": 9249,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 666,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-742e-a694-5bffb3de4f3b",
+      "Number": 9250,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 427,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7433-9c84-5780ee5fe99f",
+      "Number": 9251,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 100,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-77fc-955e-5207cc016db1",
+      "Number": 9252,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 264,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7db4-8491-43521e870244",
+      "Number": 9253,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 523,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-715b-a6b5-21ced8f1ba5e",
+      "Number": 9254,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 295,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7ae0-b9ae-f9ea7614b6eb",
+      "Number": 9255,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 330,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7b03-8b69-08e98c62207a",
+      "Number": 9256,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 145,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7ab0-8ff9-3ee22f752c94",
+      "Number": 9257,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 213,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7864-83ee-1c0dc71ba0eb",
+      "Number": 9258,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 382,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7288-b85d-28a170f1197f",
+      "Number": 9259,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 294,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-75c5-b8a4-c8f5bb6b33ac",
+      "Number": 9260,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 371,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-71d4-bfa0-46bbbbae7fec",
+      "Number": 9261,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 252,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7f7e-86a4-667391654868",
+      "Number": 9262,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 473,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7982-8c18-25de54c81cc9",
+      "Number": 9263,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 126,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-710d-834e-7de98afe4a6e",
+      "Number": 9264,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 466,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-78d9-8103-685a7b01f02f",
+      "Number": 9265,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 564,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-7bc9-ba27-ec18ed6396e8",
+      "Number": 9266,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 529,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf6-77f9-a6ab-a1f205ef95c3",
+      "Number": 9267,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 50,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf7-7a4b-9dd3-6b1ea24eaef4",
+      "Number": 9268,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 373,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf7-78f3-80c4-18b70cbb108b",
+      "Number": 9269,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 389,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf7-7f8b-bca2-601f367913a0",
+      "Number": 9270,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 494,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02c-8cf7-7c2b-a7db-8cac8392da78",
+      "Number": 9271,
+      "Chapter": "Chapter 2 \u2014 Yemina in th",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 500,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7f0f-9010-d72dc1578827",
+      "Number": 9272,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 866,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7a67-9625-d29a8ef319fe",
+      "Number": 9273,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 529,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-78ca-a3f5-39dcbdfda790",
+      "Number": 9274,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 335,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7bbf-a086-f9e2b92d2d65",
+      "Number": 9275,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 558,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7aab-a7b0-904c3ed99a92",
+      "Number": 9276,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 796,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-72ea-83e5-ac3f9c103db6",
+      "Number": 9277,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 88,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-73e4-a0ab-e463a4e687c1",
+      "Number": 9278,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 374,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-765b-a478-e391d52f1ca0",
+      "Number": 9279,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 444,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7007-8eac-776d111b2696",
+      "Number": 9280,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 939,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-79b1-85fd-3bc79f47c2c8",
+      "Number": 9281,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 313,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7629-a138-8d9ae0d75e65",
+      "Number": 9282,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 213,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-71aa-99a3-13300886f442",
+      "Number": 9283,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 392,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7afd-abca-ada8a5093e84",
+      "Number": 9284,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 302,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7ae3-bf32-a6156a76ff0a",
+      "Number": 9285,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 171,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-734f-aa45-d0746c8b743c",
+      "Number": 9286,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 178,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7943-984e-53e148859b28",
+      "Number": 9287,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 768,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7c0a-8348-d23c145295fa",
+      "Number": 9288,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 248,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7ded-b889-f8024ba6edb4",
+      "Number": 9289,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 516,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7ab3-81fe-aeaecf488449",
+      "Number": 9290,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 697,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7298-a175-6f6d419fe0a8",
+      "Number": 9291,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 119,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7873-9284-4c3e18a88f15",
+      "Number": 9292,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 549,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7894-b90f-0f58d7629ecf",
+      "Number": 9293,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 147,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-7aff-97c0-9ff906567cab",
+      "Number": 9294,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 734,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa8-73a6-8f44-0a92ffcac8e0",
+      "Number": 9295,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 401,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7428-9d98-932a4f8cde36",
+      "Number": 9296,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 254,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7efe-a11d-f73643d37ea7",
+      "Number": 9297,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 329,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-702b-9e37-8d0b93d675db",
+      "Number": 9298,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 397,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-71cb-85cf-9af7a96b9b6b",
+      "Number": 9299,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 369,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-79f8-beed-67e4d82d8ecf",
+      "Number": 9300,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 451,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-75b3-9019-e457f9e58892",
+      "Number": 9301,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 584,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-73f5-b1b4-163dfbe745db",
+      "Number": 9302,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 561,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7df2-b25a-6ef2eb42bc75",
+      "Number": 9303,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 261,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-771c-9684-adec38d367b6",
+      "Number": 9304,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 519,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7a5b-96e6-2b8e667633e5",
+      "Number": 9305,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7b5c-8a34-54be64b14c2a",
+      "Number": 9306,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 347,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7bc6-bf22-07cfbe589a1d",
+      "Number": 9307,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 334,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7637-9607-64bbbfe0689d",
+      "Number": 9308,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 474,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-746a-98f2-da45146ae448",
+      "Number": 9309,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 348,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-79b3-b23c-ddf16312f65b",
+      "Number": 9310,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 782,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-74d1-8189-8ded63240355",
+      "Number": 9311,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 162,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7ffb-98f3-393629b79240",
+      "Number": 9312,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 166,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-78ea-ae35-ec9a0ec59cf3",
+      "Number": 9313,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 320,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7436-9b62-eac85bfb54f0",
+      "Number": 9314,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 148,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-73ce-a48e-02b412e647ab",
+      "Number": 9315,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 122,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-704c-8a2d-05e652967c31",
+      "Number": 9316,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 459,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7512-98e0-64e4a9c6b46b",
+      "Number": 9317,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 490,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-753a-bcb2-0d7d27845f23",
+      "Number": 9318,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 232,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-72d5-b6d3-d1947039266c",
+      "Number": 9319,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 601,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-702a-bb63-0ef1bdc244e7",
+      "Number": 9320,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 241,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-780e-a8c1-474e6e52505a",
+      "Number": 9321,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 446,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7d5a-8bdc-c763d46ec43c",
+      "Number": 9322,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 747,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-734b-8998-5403f4ded4a1",
+      "Number": 9323,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 110,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-721e-85f3-4d76a2fa6b7b",
+      "Number": 9324,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1001,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7e2e-aefa-55a4f934047b",
+      "Number": 9325,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 139,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7320-a9d4-6ee0bc7bd535",
+      "Number": 9326,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 40,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7749-86f8-d6f22a5b1e9c",
+      "Number": 9327,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1054,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7063-91ff-8cf683b67adf",
+      "Number": 9328,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 241,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7901-9818-4f431a2b7d07",
+      "Number": 9329,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 15,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7eec-a63b-2b5cd7c0e67c",
+      "Number": 9330,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 852,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-793c-a6a5-970d3533355f",
+      "Number": 9331,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 308,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7f2e-b4bd-a5d3da0a4935",
+      "Number": 9332,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 371,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7bb3-b24c-964a0e295489",
+      "Number": 9333,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 591,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-76ab-a7f0-ebbb7dac283e",
+      "Number": 9334,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 32,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7a52-8180-70ffa92ce56b",
+      "Number": 9335,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 521,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7eab-aa82-fa3e52f84b14",
+      "Number": 9336,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 486,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-788a-9090-efe2cb1c6547",
+      "Number": 9337,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1500,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-77b7-9d0d-7bb264404053",
+      "Number": 9338,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 827,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7591-a458-980a54e9236b",
+      "Number": 9339,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 673,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7044-8088-d3c4466c33da",
+      "Number": 9340,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 541,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-76fc-93d6-09dbf6143ac8",
+      "Number": 9341,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 628,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02d-dfa9-7df3-bd70-5b82acc280e5",
+      "Number": 9342,
+      "Chapter": "Chapter 3 \u2014 The Bramley ",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 656,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6d-732c-9f00-b9fb3529c5d0",
+      "Number": 9344,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 735,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7875-8413-dbf61cd280ea",
+      "Number": 9345,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 445,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-79b4-a3a0-43ee7642b490",
+      "Number": 9346,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 510,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7cc6-b84f-3a2e00114621",
+      "Number": 9347,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 818,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7561-8880-09ceb714dfc4",
+      "Number": 9348,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 246,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-783a-b4a6-b53c4e327555",
+      "Number": 9349,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 638,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7336-a7cf-2318b9a30ccf",
+      "Number": 9350,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 175,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-77c0-b9e5-e2022f1537ca",
+      "Number": 9351,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 583,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7f0e-83ab-42be653b2023",
+      "Number": 9352,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 738,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7ca1-9714-732f47ae634e",
+      "Number": 9353,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 19,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-707e-b7e9-2b4f09eedb5b",
+      "Number": 9354,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 631,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7d2b-8584-598a7073e590",
+      "Number": 9355,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 515,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7b1c-b2de-686506f0dce2",
+      "Number": 9356,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 72,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7588-88ef-4a0830da62f6",
+      "Number": 9357,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 24,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7f1f-9eb6-cf37332ee5e8",
+      "Number": 9358,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 510,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7c6b-9350-1fd1b98e15ee",
+      "Number": 9359,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-76cd-b0c2-637de5226bd5",
+      "Number": 9360,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 517,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7fc2-ac7f-a425852e4cf4",
+      "Number": 9361,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1306,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7e01-aced-aeb45cd323f9",
+      "Number": 9362,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 127,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7259-8325-bbc8a80901f2",
+      "Number": 9363,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 700,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7e90-981b-f874d253ffc9",
+      "Number": 9364,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 140,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7311-9e46-e79248f2e6f0",
+      "Number": 9365,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 347,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-74a4-a71e-89bcbbfb6ce4",
+      "Number": 9366,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 113,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7ea4-b576-80b17e178324",
+      "Number": 9367,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 843,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7a49-aa66-177e9a2c6bcb",
+      "Number": 9368,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 398,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7a7d-b4a6-876296028547",
+      "Number": 9369,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 362,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-72fe-9138-e4a1737cde0a",
+      "Number": 9370,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 290,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7595-842a-0a78031ac5a9",
+      "Number": 9371,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 64,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-74f8-b263-92e860821324",
+      "Number": 9372,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 390,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7ee4-8dd6-33548541909e",
+      "Number": 9373,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 99,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7e08-8cc6-28f3366a5490",
+      "Number": 9374,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 444,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-71a6-bf98-2113d4a24645",
+      "Number": 9375,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 192,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7721-91e1-2bccc3046fce",
+      "Number": 9376,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 374,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7d28-abcc-e25b133e85db",
+      "Number": 9377,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 159,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7552-924c-5af0ddd15795",
+      "Number": 9378,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 501,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7ac0-8c1a-13f01935738b",
+      "Number": 9379,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 253,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7906-9b30-dc5d2aab1e8e",
+      "Number": 9380,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 210,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-78ac-8dba-1ef392349f61",
+      "Number": 9381,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 720,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7119-8ec4-f730ad980c12",
+      "Number": 9382,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 78,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7dc4-a88d-7a1ad28e8f99",
+      "Number": 9383,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 404,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7bdc-b682-bda4be73ee77",
+      "Number": 9384,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 67,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-786a-8a2c-9468a32b5d91",
+      "Number": 9385,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 497,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-75aa-a9dd-819c577880e6",
+      "Number": 9386,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 179,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7420-a009-e3ce0e2f3703",
+      "Number": 9387,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 561,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-79ef-9213-c0171ba33ab8",
+      "Number": 9388,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 171,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7063-a22a-557f7ac059ad",
+      "Number": 9389,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 478,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7446-abab-af643dae7f0c",
+      "Number": 9390,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 376,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-71a8-adc0-beb8b648b2bf",
+      "Number": 9391,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 292,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7fd1-bd95-8e3529e6ad4c",
+      "Number": 9392,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 413,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7047-af52-3c0bece98ab6",
+      "Number": 9393,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 476,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7be3-9e89-1f8395553b5f",
+      "Number": 9394,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 946,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7de3-a986-66e51e775dbe",
+      "Number": 9395,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 462,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7b29-98d2-67deeef142f7",
+      "Number": 9396,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 108,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-78af-a873-0765b70d47b0",
+      "Number": 9397,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 185,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7c2e-851e-82601b1d3bc8",
+      "Number": 9398,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 44,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-72b3-9b1d-7da063dbc9a5",
+      "Number": 9399,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 314,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7123-a0ca-ceb597c751dd",
+      "Number": 9400,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 451,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7142-8126-978021f9de67",
+      "Number": 9401,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 572,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7c1e-bd06-57c2e1e64b99",
+      "Number": 9402,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 120,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-795f-8783-8e8457d86634",
+      "Number": 9403,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 229,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7ad7-97e1-2f5aff167b67",
+      "Number": 9404,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 552,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7a1b-a9a5-2cd692c7572d",
+      "Number": 9405,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 33,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-71c7-bf17-f95ced302c7c",
+      "Number": 9406,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 521,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7c8e-b5d5-edeeec43edfa",
+      "Number": 9407,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 114,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7c70-85fc-2cbcd4c1aaf2",
+      "Number": 9408,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 397,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-76d0-a4ae-c6eeb14a0af8",
+      "Number": 9409,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 30,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-705d-9dcb-564059f42dbf",
+      "Number": 9410,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 748,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-744f-9884-472cba85593d",
+      "Number": 9411,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 109,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7188-9d57-ecb517b46d02",
+      "Number": 9412,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 18,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7b9d-bb55-40cfa8434d00",
+      "Number": 9413,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 358,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-766b-8bcd-0093d48ddc0d",
+      "Number": 9414,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 283,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7afc-97e3-1041f4f33dc5",
+      "Number": 9415,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 331,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7969-ab5d-38309b4a4257",
+      "Number": 9416,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 373,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-75c8-aa2a-d77fed7e94d5",
+      "Number": 9417,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 41,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-76a9-ad82-a3682f939ff2",
+      "Number": 9418,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 191,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-79f0-bb5a-85e4380e15a7",
+      "Number": 9419,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 303,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7207-8b8c-f9dd01379d70",
+      "Number": 9420,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 144,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7775-aee1-3c4dcf7b3588",
+      "Number": 9421,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 412,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-709e-a2a7-80a826681334",
+      "Number": 9422,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 189,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7329-9443-e3f01c59e77e",
+      "Number": 9423,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 562,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-746b-8b91-ef915998a65b",
+      "Number": 9424,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 30,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7108-9158-dd911037ad24",
+      "Number": 9425,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 199,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7351-99ca-badabf838a37",
+      "Number": 9426,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 236,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-7b4e-b765-4ea515014e35",
+      "Number": 9427,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 304,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-1b6e-71aa-bd13-c3d1a4778aed",
+      "Number": 9428,
+      "Chapter": "Chapter 4 \u2014 The Limits",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 29,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7022-8665-5f32ba2d6841",
+      "Number": 9429,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 592,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7e78-a057-56a5581fab54",
+      "Number": 9430,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 794,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7b67-8b8b-58a3ac1e1873",
+      "Number": 9431,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 137,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7bbd-97fb-e7ab1fd19c97",
+      "Number": 9432,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 420,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-70a6-ba32-86d2c35de495",
+      "Number": 9433,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 94,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7b0e-9990-2ea1be426e28",
+      "Number": 9434,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 655,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7e97-b278-91ed2e925c8c",
+      "Number": 9435,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 296,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-76bc-82e4-93d01d1c10c6",
+      "Number": 9436,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 474,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-74e1-9ab6-e05cab1f90c6",
+      "Number": 9437,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 474,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7265-a4af-4c97dad0ddcf",
+      "Number": 9438,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 473,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-771e-8605-d11c16c4f9d1",
+      "Number": 9439,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 300,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7da7-a57a-bccdacc66011",
+      "Number": 9440,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 43,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-726d-b0a5-42d7c2f0a2d5",
+      "Number": 9441,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 645,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7af7-8425-2169731f1fc4",
+      "Number": 9442,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 133,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-766b-9d19-cd09b37d8f0c",
+      "Number": 9443,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 99,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7e5e-8586-9929b51db5ed",
+      "Number": 9444,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 492,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7d9b-b0ba-911dfe69b10d",
+      "Number": 9445,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 279,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7cfc-a5ce-0d81aa85c07d",
+      "Number": 9446,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 313,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-769f-8c61-970d0d24f395",
+      "Number": 9447,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 44,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7ab2-8356-b19fcca7fdd7",
+      "Number": 9448,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 454,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7d21-94a9-abd187108af9",
+      "Number": 9449,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 125,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-72c3-9adf-c32db1142cef",
+      "Number": 9450,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 10,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7717-8ead-ad7728d967af",
+      "Number": 9451,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 574,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa02f-6a6b-7037-92e6-a713e3180286",
+      "Number": 9452,
+      "Chapter": "Chapter 5 \u2014 The Record",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 41,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
     }
   ]
 }

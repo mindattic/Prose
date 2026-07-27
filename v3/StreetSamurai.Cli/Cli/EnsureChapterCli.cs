@@ -36,12 +36,13 @@ public static class EnsureChapterCli
         await using var db = await dbFactory.CreateDbContextAsync();
 
         // Resolve the target story set. --all = every flat story (no chapter children,
-        // has direct beats). Query filter is off in the CLI, so this spans universes.
+        // has direct beats), across every universe — explicit via IgnoreQueryFilters()
+        // rather than depending on no universe happening to be ambient in this process.
         var targets = new List<(Guid Id, string Slug, string Title)>();
         if (all)
         {
-            var flat = await db.Nodes.OfType<StoryNode>().AsNoTracking()
-                .Where(n => !db.Nodes.Any(c => c.ParentNodeId == n.Id)
+            var flat = await db.Nodes.OfType<StoryNode>().AsNoTracking().IgnoreQueryFilters()
+                .Where(n => !db.Nodes.IgnoreQueryFilters().Any(c => c.ParentNodeId == n.Id)
                     && db.BeatNodes.Any(b => b.NodeId == n.Id && b.IsEnabled))
                 .Select(n => new { n.Id, n.Slug, n.Title }).ToListAsync();
             foreach (var f in flat) targets.Add((f.Id, f.Slug, f.Title));

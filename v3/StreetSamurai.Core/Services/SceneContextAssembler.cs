@@ -170,6 +170,7 @@ public class SceneContextAssembler(
     // name → (entityId, canonicalName, entityType, singleToken). Built once, refreshed lazily.
     private Dictionary<string, (Guid Id, string Name, string Type, bool SingleToken)>? nameIndex;
     private DateTime nameIndexBuiltAt;
+    private int nameIndexBuiltEpoch = -1;
     private static readonly TimeSpan NameIndexTtl = TimeSpan.FromMinutes(10);
     private readonly SemaphoreSlim indexLock = new(1, 1);
 
@@ -359,11 +360,18 @@ public class SceneContextAssembler(
 
     private async Task<Dictionary<string, (Guid, string, string, bool)>> GetNameIndexAsync(CancellationToken ct)
     {
-        if (nameIndex != null && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl) return nameIndex;
+        // Universe-switch invalidation (mirrors WorldGraphService's builtEpoch pattern): a
+        // process that switches universe mid-run (CLI --universe, MCP switch_universe, the
+        // web dropdown) must not keep serving the previous universe's roster for up to
+        // NameIndexTtl minutes.
+        var currentEpoch = UniverseScope.Epoch;
+        if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
+            return nameIndex;
         await indexLock.WaitAsync(ct);
         try
         {
-            if (nameIndex != null && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl) return nameIndex;
+            if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
+                return nameIndex;
 
             var idx = new Dictionary<string, (Guid, string, string, bool)>(StringComparer.Ordinal);
             await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -376,7 +384,14 @@ public class SceneContextAssembler(
                 if (!ExcludedTypes.Contains(e.EntityType) && !e.Name.StartsWith('('))
                     idx.TryAdd(e.Name, (e.Id, e.Name, e.EntityType, RequiresStrictCase(e.Name)));
 
-            // character aliases ("Pixel" for a character whose canonical name differs, etc.)
+            // character aliases ("Pixel" for a character whose canonical name differs, etc.).
+            // Character/CharacterAlias carry no UniverseId of their own (Character.Id IS the
+            // parent Entity.Id — see FormatCharacterAsync, which looks both up by the same id).
+            // Scope aliases to the entityIds set above (already correctly filtered by the
+            // ambient universe via Entity's HasQueryFilter) instead of trusting Character/
+            // CharacterAlias directly — otherwise a GLMZ/SCRY character's alias leaks into a
+            // GSPL (or any other universe's) name-scan regardless of which universe is active.
+            var entityIds = entities.Select(e => e.Id).ToHashSet();
             var aliases = await db.Set<CharacterAlias>().AsNoTracking()
                 .Where(a => a.Value.Length >= 3)
                 .Select(a => new { a.CharacterId, a.Value })
@@ -385,11 +400,12 @@ public class SceneContextAssembler(
                 .Select(c => new { c.Id, c.Name })
                 .ToDictionaryAsync(c => c.Id, c => c.Name, ct);
             foreach (var a in aliases)
-                if (characterNames.TryGetValue(a.CharacterId, out var canonical))
+                if (entityIds.Contains(a.CharacterId) && characterNames.TryGetValue(a.CharacterId, out var canonical))
                     idx.TryAdd(a.Value, (a.CharacterId, canonical, "character", RequiresStrictCase(a.Value)));
 
             nameIndex = idx;
             nameIndexBuiltAt = DateTime.UtcNow;
+            nameIndexBuiltEpoch = currentEpoch;
             log.LogInformation("Scene name index built: {Count} triggers", idx.Count);
             return idx;
         }

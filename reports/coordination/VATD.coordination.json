@@ -2,9 +2,9 @@
   "nodeCode": "VATD",
   "slug": "vultures-at-the-door-019ec467",
   "title": "Vultures at the Door",
-  "generatedAtUtc": "2026-07-25 23:04:47Z",
-  "totalBeats": 27,
-  "covered": 27,
+  "generatedAtUtc": "2026-07-27 12:48:29Z",
+  "totalBeats": 308,
+  "covered": 0,
   "chapterGranular": false,
   "storyScope": {
     "TemporalScheme": "nonlinear",
@@ -16,487 +16,4684 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 27
+    "MISSING_MEANING": 308,
+    "UNSCORED": 308,
+    "NO_CONSTRUCTION": 281
   },
   "beats": [
     {
-      "BeatId": "019ec467-b03f-7dca-80a8-b3b7c146307f",
-      "Number": 3868,
+      "BeatId": "019fa011-7705-7470-9e95-dde5d505d434",
+      "Number": 7549,
       "Chapter": "Chapter 1 \u2014 The Contract",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the protagonists\u0027 morally compromised routine and the world\u0027s organ-debt economy, grounding the reader in the story\u0027s ethical baseline before the inciting incident.",
       "EscalationTarget": "2",
       "EventType": "departure",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot",
-        "intertextual-touchpoint",
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 5397,
+      "BeatTags": [],
+      "ProseLength": 279,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "42aff3fa-1659-4a55-8461-50e0aebe39db",
-      "Number": 3916,
+      "BeatId": "019fa011-7724-7bbe-8ec9-156d4eba8771",
+      "Number": 7550,
       "Chapter": "Chapter 1 \u2014 The Contract",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Introduces Ekow as a subordinated but self-possessed operative, establishing his relationship to the Lotus and the missing-person case that will collide with the main plot.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint",
-        "intertextual-touchpoint",
-        "anachrony-cut"
-      ],
-      "ProseLength": 2480,
+      "BeatTags": [],
+      "ProseLength": 461,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec467-cc85-7430-8191-c45ab4475bbe",
-      "Number": 3869,
+      "BeatId": "019fa011-7726-7cfc-bbf2-f762e78addaf",
+      "Number": 7551,
       "Chapter": "Chapter 1 \u2014 The Contract",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Dramatizes the organ-reclamation system\u0027s institutional coldness, positioning Tomas as complicit in a dehumanizing machinery he has learned to emotionally insulate himself from.",
       "EscalationTarget": "5",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4219,
+      "ProseLength": 224,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec467-e45a-772e-afab-6d75fd520010",
-      "Number": 3870,
+      "BeatId": "019fa011-7726-7b86-ae3b-d1313263ee42",
+      "Number": 7552,
       "Chapter": "Chapter 1 \u2014 The Contract",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Tomas\u0027s suppressed moral awareness and foreshadows the ethical reckoning ahead by marking his deliberate incuriosity about the system he serves.",
       "EscalationTarget": "6",
       "EventType": "negotiation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1226,
+      "ProseLength": 80,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f21b2-244f-7e82-9948-ac48de611329",
-      "Number": 4973,
+      "BeatId": "019fa011-7726-73b8-8726-da19101d356a",
+      "Number": 7553,
       "Chapter": "Chapter 1 \u2014 The Contract",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Tomas\u0027s professional caution and situational intelligence, and seeds the Lotus\u0027s territorial presence as a latent threat surrounding the upcoming recall.",
       "EscalationTarget": "6",
       "EventType": "reconnaissance",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3005,
+      "ProseLength": 337,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec467-ff22-763c-b972-08f2b547e8f9",
-      "Number": 3871,
+      "BeatId": "019fa011-7726-7bd5-a169-89f9701ed8b2",
+      "Number": 7554,
       "Chapter": "Chapter 1 \u2014 The Contract",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates tension by introducing an unknown armed variable and exposing Levin\u0027s drug-compromised reflexes as a liability at the worst possible moment.",
       "EscalationTarget": "7",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 4132,
+      "ProseLength": 248,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-17e3-7899-9e48-b053fc37ade4",
-      "Number": 3872,
+      "BeatId": "019fa011-7726-7cb1-9379-14fc6950d4d4",
+      "Number": 7555,
       "Chapter": "Chapter 1 \u2014 The Contract",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns the story irrevocably by forcing Tomas to kill, converting a routine job into a catastrophic entanglement whose consequences the rest of the narrative must reckon with.",
       "EscalationTarget": "8",
       "EventType": "ambush",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 3307,
+      "BeatTags": [],
+      "ProseLength": 675,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "098a25fd-693d-4e55-a1ff-5c2918dbe39d",
-      "Number": 3917,
-      "Chapter": "Chapter 2 \u2014 The Investig",
-      "ChapterIndex": 1,
+      "BeatId": "019fa011-7726-7afb-825c-19cdab9a8b19",
+      "Number": 7556,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Introduces Ekow\u0027s investigative method and reconstructs the shooting scene to show him converging on Tomas\u0027s trail, tightening the net around the protagonists.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2349,
+      "ProseLength": 753,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-2e6b-71cd-80f8-ad3dac186f55",
-      "Number": 3873,
-      "Chapter": "Chapter 2 \u2014 The Investig",
-      "ChapterIndex": 1,
+      "BeatId": "019fa011-7726-780b-ace5-0b4e4424d3ca",
+      "Number": 7557,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates stakes by revealing the victim is the Lotus heir with an irreplaceable heart, transforming an accidental killing into a ticking-clock crisis with political consequences.",
       "EscalationTarget": "6",
       "EventType": "repair",
       "RevelationMode": "none",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4260,
+      "BeatTags": [],
+      "ProseLength": 369,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-54ed-7644-ace2-5ecad80a9756",
-      "Number": 3874,
-      "Chapter": "Chapter 2 \u2014 The Investig",
-      "ChapterIndex": 1,
+      "BeatId": "019fa011-7726-7977-bb0b-69b06b4ff764",
+      "Number": 7558,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the Lotus worldbuilding by revealing the full political catastrophe Tomas has triggered, reframing the shooting as the potential spark for a gang war.",
       "EscalationTarget": "7",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 6456,
+      "ProseLength": 507,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11eb-fb83-7c27-8875-fb35c33feb1d",
-      "Number": 4910,
-      "Chapter": "Chapter 2 \u2014 The Investig",
-      "ChapterIndex": 1,
+      "BeatId": "019fa011-7726-7dd0-9341-feefea47db2e",
+      "Number": 7559,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the investigation\u0027s opening conditions by grounding Tomas as a seasoned professional entering a suspicious death scene, seeding the Lotus mark as a narrative thread and Levin\u0027s competence as a working variable.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 2838,
+      "ProseLength": 244,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-6e8d-7548-8f4c-86369208f743",
-      "Number": 3875,
-      "Chapter": "Chapter 2 \u2014 The Investig",
-      "ChapterIndex": 1,
+      "BeatId": "019fa011-7726-7fb9-bfa9-2d23d6d9ccc4",
+      "Number": 7560,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates the stakes by revealing that someone is conducting methodical, expert interrogation-torture ahead of the protagonists, establishing an unseen antagonist whose patience and skill outclass the trade\u0027s routine violence.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 7481,
+      "ProseLength": 484,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f21b2-68bb-71e5-b5ab-5fd14153a87d",
-      "Number": 4974,
-      "Chapter": "Chapter 2 \u2014 The Investig",
-      "ChapterIndex": 1,
+      "BeatId": "019fa011-7726-7111-a493-98d25df566e2",
+      "Number": 7561,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Tomas\u0027s professional discipline under direct pressure, demonstrating that protecting the ward requires active deception of an organized search party closing in on them.",
       "EscalationTarget": "8",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2374,
+      "ProseLength": 340,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "4ce30a3b-5851-4738-833a-593e517e0ff7",
-      "Number": 3918,
-      "Chapter": "Chapter 2 \u2014 The Investig",
-      "ChapterIndex": 1,
+      "BeatId": "019fa011-7726-7e96-891c-fc996052e1e2",
+      "Number": 7562,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off Ekow\u0027s investigative thread by delivering the clinic lead that redirects the hunt, while the folded handkerchief establishes his ritual orderliness as a character signature.",
       "EscalationTarget": "7",
       "EventType": "interrogation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1718,
+      "ProseLength": 393,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-87c2-7d7b-bcfd-5e525f59fd27",
-      "Number": 3876,
-      "Chapter": "Chapter 3 \u2014 The Confront",
-      "ChapterIndex": 2,
+      "BeatId": "019fa011-7726-7bce-a5df-2a6c64c2f89b",
+      "Number": 7563,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns a dead end into a plot pivot by having a routine manifest call accidentally surface a potential donor, reframing the ward\u0027s impossible medical problem as solvable through the protagonists\u0027 own job.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 8948,
+      "ProseLength": 325,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-a620-7b9b-afb2-931eff2acb0a",
-      "Number": 3877,
-      "Chapter": "Chapter 3 \u2014 The Confront",
-      "ChapterIndex": 2,
+      "BeatId": "019fa011-7726-7078-89cd-0647c689c310",
+      "Number": 7564,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the emotional cost of Levin\u0027s failure by having Tomas name it plainly, and deepens their partnership by showing Levin absorb accountability without deflection.",
       "EscalationTarget": "9",
       "EventType": "confession",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 4524,
+      "BeatTags": [],
+      "ProseLength": 412,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-c151-77da-996a-ee2ac19d2f23",
-      "Number": 3878,
-      "Chapter": "Chapter 3 \u2014 The Confront",
-      "ChapterIndex": 2,
+      "BeatId": "019fa011-7726-7eb7-8cf4-5fb17d790a42",
+      "Number": 7565,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals that Levin\u0027s drug tolerance has crossed a threshold into genuine crisis, escalating his dependency from a managed liability to an immediate threat to his and Tomas\u0027s survival.",
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 6515,
+      "BeatTags": [],
+      "ProseLength": 246,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11ec-2d1d-7998-bab7-377563a678d8",
-      "Number": 4911,
-      "Chapter": "Chapter 3 \u2014 The Confront",
-      "ChapterIndex": 2,
+      "BeatId": "019fa011-7727-733f-9bd5-0e4797cb7b4f",
+      "Number": 7566,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the episode\u0027s tension by having Levin disclose, minimally but honestly, that the Resonance Zone geometry is haunting him, marking the furthest he has opened on the subject in their partnership.",
       "EscalationTarget": "9",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2501,
+      "ProseLength": 728,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-d9d6-785c-bc17-8c51b07e5866",
-      "Number": 3879,
-      "Chapter": "Chapter 3 \u2014 The Confront",
-      "ChapterIndex": 2,
+      "BeatId": "019fa011-7727-7058-875f-5f509525b5ba",
+      "Number": 7567,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates the antagonist\u0027s threat to personal danger by confirming he has traced the protagonists through Osei, turning an abstract pursuer into an imminent one with their descriptions in hand.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 4035,
+      "ProseLength": 557,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec468-f760-7dfc-8b6a-5e9420dd1e51",
-      "Number": 3880,
-      "Chapter": "Chapter 3 \u2014 The Confront",
-      "ChapterIndex": 2,
+      "BeatId": "019fa011-7727-71ad-8e59-f64cc908bc55",
+      "Number": 7568,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Raises the confrontation\u0027s urgency to its peak by converging the donor solution, the dying ward, and the closing hunter at a single location, forcing the protagonists to race their own exposure.",
       "EscalationTarget": "7",
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 7646,
+      "ProseLength": 206,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f0f2c-b4f5-7189-b67e-1cc04fc235dc",
-      "Number": 4859,
-      "Chapter": "Chapter 3 \u2014 The Confront",
-      "ChapterIndex": 2,
+      "BeatId": "019fa011-7727-76a3-85f3-140e5ff97381",
+      "Number": 7569,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the trap closing around the heir\u0027s apartment while revealing Tomas\u0027s ingenuity in exploiting the Ward\u0027s social invisibility to smuggle the boy home, then pivots to introduce a dangerous unknown figure already waiting inside.",
       "EscalationTarget": "8",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 7429,
+      "ProseLength": 385,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec469-0fa3-75ad-94ea-5e75ade6ecbb",
-      "Number": 3881,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "ChapterIndex": 3,
+      "BeatId": "019fa011-7727-7215-8e87-6f09b55c099e",
+      "Number": 7570,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Ekow\u0027s expertise as a scene-fabricator to establish his criminal depth and complicity, while paying off the heist\u0027s stakes by showing the cover story being constructed with professional precision.",
       "EscalationTarget": "9",
       "EventType": "ceremony",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 5592,
+      "ProseLength": 396,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "6368424e-e71e-4f9b-b8de-ae643964c68d",
-      "Number": 3919,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "ChapterIndex": 3,
+      "BeatId": "019fa011-7727-7635-8424-fdba62210fab",
+      "Number": 7571,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off Tomas\u0027s decade of invisible service by letting him witness, for once, the consequence of his own action in real time, while the stand-down order signals the deception has succeeded.",
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3331,
+      "ProseLength": 768,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec469-2c9a-7202-b6e5-5f63a7e39598",
-      "Number": 3882,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "ChapterIndex": 3,
+      "BeatId": "019fa011-7727-788a-88ef-7b2583ff9295",
+      "Number": 7572,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Provides a brief tonal reset that isolates Ekow in indifferent nature, signaling his deliberate detachment from the operation\u0027s outcome and the limits of his loyalty.",
       "EscalationTarget": "5",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1218,
+      "ProseLength": 449,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11ec-6045-7667-8c23-ed6a53c45819",
-      "Number": 4912,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "ChapterIndex": 3,
+      "BeatId": "019fa011-7727-7663-aab5-273a18f641fe",
+      "Number": 7573,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns Levin\u0027s arc from passive guilt toward active redemption by having Tomas offer an unexpected second chance, with Levin\u0027s wordless acceptance marking a decisive moral choice.",
       "EscalationTarget": "6",
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 1166,
+      "BeatTags": [],
+      "ProseLength": 680,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec6b2-6a27-7cce-a27d-66d0528956c9",
-      "Number": 3915,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "ChapterIndex": 3,
+      "BeatId": "019fa011-7727-7e37-bcb9-ce715faef980",
+      "Number": 7574,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the organ\u0027s narrative thread by showing Tomas\u0027s quiet, pre-planned act of conscience finally executed, restoring what was taken and closing the moral debt to the old man.",
       "EscalationTarget": "7",
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3128,
+      "ProseLength": 434,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ec469-7d02-7b03-beb6-419a463cdc32",
-      "Number": 3885,
-      "Chapter": "Chapter 4 \u2014 The Cost",
-      "ChapterIndex": 3,
+      "BeatId": "019fa011-7727-750d-93df-0a6f5c05fc30",
+      "Number": 7575,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Closes Levin\u0027s arc by showing him look at the photograph of his former self for the first time rather than away from it, signaling that returning the kidney has cracked open the possibility of recovery.",
       "EscalationTarget": "6",
       "EventType": "departure",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 2260,
+      "BeatTags": [],
+      "ProseLength": 64,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7510-b0e3-14e7d26d4457",
+      "Number": 7576,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 166,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7d26-97b2-6559377a0fd7",
+      "Number": 7577,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 532,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7eaf-a2a7-3a282c7c2372",
+      "Number": 7578,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 344,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7d42-a7fa-4f068d17de97",
+      "Number": 7579,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 546,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7647-b68a-0090002a0a78",
+      "Number": 7580,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 280,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7206-b480-3088184d3d01",
+      "Number": 7581,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 397,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7007-a34c-921287f7ef89",
+      "Number": 7582,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 366,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-75f8-a319-c1c120b5c710",
+      "Number": 7583,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 476,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-70e5-95ac-6bc0fe99d9c1",
+      "Number": 7584,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 266,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7d6c-a031-8e49190d2110",
+      "Number": 7585,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 391,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-788e-9ce9-84de51ebfd4a",
+      "Number": 7586,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 848,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-765d-b8a8-e072ee2a49b9",
+      "Number": 7587,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 288,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7659-afd3-7591980f5891",
+      "Number": 7588,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 359,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7a06-95a6-fb904683c056",
+      "Number": 7589,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 356,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7584-87e8-2afa7a522b83",
+      "Number": 7590,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 81,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7331-b836-a80138f529b7",
+      "Number": 7591,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 721,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7b85-bd55-a301e3b10f17",
+      "Number": 7592,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 764,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-77ea-87a9-70bcc386fea7",
+      "Number": 7593,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 590,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7f02-ae8a-4fdc03f6b83d",
+      "Number": 7594,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 390,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-784b-8dca-5c32cea7c947",
+      "Number": 7595,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 457,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-76e2-827d-19d7d5d1c9bc",
+      "Number": 7596,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 147,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-7e7a-ac6a-c3d1f7c31558",
+      "Number": 7597,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 412,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7727-71cf-b7c9-6088e908efba",
+      "Number": 7598,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 93,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-7f39-a3bb-edef282f650e",
+      "Number": 7599,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 113,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-7fd3-90a0-64e7d27aa4e8",
+      "Number": 7600,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 65,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-7c3a-ad5a-2db602dc867f",
+      "Number": 7601,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 247,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-7112-9243-4a4e3deb98db",
+      "Number": 7602,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 317,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-77aa-9d82-76a694733f25",
+      "Number": 7603,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 405,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-7598-aea1-81cdc6fb4d01",
+      "Number": 7604,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 503,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-7dfe-89e5-85b9de5ea1b2",
+      "Number": 7605,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 65,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-7351-9df0-1e18047c97e1",
+      "Number": 7606,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 309,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-725e-9cd5-64909530c504",
+      "Number": 7607,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 55,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-79c9-89f0-c6fdcef444f8",
+      "Number": 7608,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 728,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa011-7728-749f-866b-46b150115fe2",
+      "Number": 7609,
+      "Chapter": "Chapter 1 \u2014 The Contract",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 558,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03c-7c99-a439-0f621451642a",
+      "Number": 7610,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 348,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-7870-a256-d299d590a56b",
+      "Number": 7611,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 105,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-72de-9b0f-f8f13ac44cdb",
+      "Number": 7612,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 133,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-7df8-9665-b9911af81885",
+      "Number": 7613,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 327,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-750f-addc-a9e8bf59fad2",
+      "Number": 7614,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 112,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-783a-88c4-5efa76dc25ca",
+      "Number": 7615,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 238,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-727f-9312-cdb272d031b9",
+      "Number": 7616,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 173,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-70a1-89c0-b08af289fafd",
+      "Number": 7617,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 437,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-7b49-880c-a8f9f450bb5e",
+      "Number": 7618,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 246,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-7f2a-8f21-cc81196a8165",
+      "Number": 7619,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 215,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-7f85-9861-4c19eee94927",
+      "Number": 7620,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 297,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-7a05-b371-763e43897999",
+      "Number": 7621,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 211,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-71c2-88c4-607a71353f77",
+      "Number": 7622,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 669,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03d-76f0-948d-09abc5bbb29f",
+      "Number": 7623,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 234,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-78f1-a360-2216c1c7f12f",
+      "Number": 7624,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 428,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7311-a953-af4e89be2568",
+      "Number": 7625,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 453,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-73f0-98e7-72ebcb25fc20",
+      "Number": 7626,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 249,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-73cb-8e9e-7d7d54f410b1",
+      "Number": 7627,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 559,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-74f7-b2af-5b310bd8b508",
+      "Number": 7628,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 314,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-74fa-a138-bf916d15d89f",
+      "Number": 7629,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 305,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7acd-9fd2-1abafc338e04",
+      "Number": 7630,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 253,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7460-819c-a207f7a20021",
+      "Number": 7631,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 272,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7708-9d2c-92d8f624a292",
+      "Number": 7632,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 148,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-753f-b695-13a5056da762",
+      "Number": 7633,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 453,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7ea2-8ad3-aff1c64785bf",
+      "Number": 7634,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1541,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7f7a-b0d3-9a82254b926e",
+      "Number": 7635,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 170,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7c17-897a-ef922a4162fa",
+      "Number": 7636,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1320,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7de4-bcdf-e160afa3bb4e",
+      "Number": 7637,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1071,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7056-a1a2-1399b2f4d971",
+      "Number": 7638,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 62,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-7ff4-afe9-932686170db2",
+      "Number": 7639,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 420,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03e-79db-a5c1-02e17b933245",
+      "Number": 7640,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 134,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-7dc9-89f0-e46f6250cffa",
+      "Number": 7641,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 515,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-73fd-a7da-42f8572888dd",
+      "Number": 7642,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 195,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-70b3-ae0a-92b95b5daa1a",
+      "Number": 7643,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 300,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-7c83-af28-e8894ad32a1e",
+      "Number": 7644,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 106,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-736a-baab-ea22ca113237",
+      "Number": 7645,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 425,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-7891-af95-74b5bf5e1ba5",
+      "Number": 7646,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 652,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-71de-ba07-400843740deb",
+      "Number": 7647,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 568,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-7406-a81e-d5b82ad7c10f",
+      "Number": 7648,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 15,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-76e3-b431-a589a1960a48",
+      "Number": 7649,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 584,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-767f-935d-613280d60d27",
+      "Number": 7650,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 589,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-77d9-86e8-5b762125e32b",
+      "Number": 7651,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 304,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-7971-91b9-9758aa18263e",
+      "Number": 7652,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 304,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-7b39-a982-676f9b3c08a7",
+      "Number": 7653,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 79,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-7aac-a779-8bd7568031e3",
+      "Number": 7654,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1063,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-7d8c-95f3-d7e12b98445a",
+      "Number": 7655,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 148,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-73ad-8a42-32fcf405e096",
+      "Number": 7656,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 573,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d03f-753e-94b2-74eb1db2cbbb",
+      "Number": 7657,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 217,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-75e8-b3ac-22f4c9802185",
+      "Number": 7658,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 26,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-759b-ae0d-7f2a7bd052fe",
+      "Number": 7659,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 135,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-76cf-b062-080be7e1f5cd",
+      "Number": 7660,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 34,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7cdc-bc41-919741e9e801",
+      "Number": 7661,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 551,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7b3e-a952-67ec63fff6f7",
+      "Number": 7662,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 411,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-718c-92ab-2ec3cc87d4bf",
+      "Number": 7663,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 82,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7045-b498-5e7e876a243d",
+      "Number": 7664,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 600,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7566-afbe-644c51fb9506",
+      "Number": 7665,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 685,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-750c-af4c-f220508c4eee",
+      "Number": 7666,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 560,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7abf-8d1f-13dd1f3e4e98",
+      "Number": 7667,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 158,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-793a-be26-b42838952477",
+      "Number": 7668,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 636,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7514-a1ab-1608bd6ddb7c",
+      "Number": 7669,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 218,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7fb5-acfa-85c7c5c3773c",
+      "Number": 7670,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 671,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7fa4-9f1d-b7f3001c4b1c",
+      "Number": 7671,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 387,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-7f9e-b83c-3373d7d4c55a",
+      "Number": 7672,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 89,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-78b1-887d-8732a6437ef6",
+      "Number": 7673,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 279,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-78c6-a122-1bd5c6c33470",
+      "Number": 7674,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 278,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-793d-bde0-2a5b53c40679",
+      "Number": 7675,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 112,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d040-76bf-9570-d50f5d30f1b5",
+      "Number": 7676,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 274,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-71b1-a65f-2bd002cec3ee",
+      "Number": 7677,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 209,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-7ac6-9589-90311c3832a1",
+      "Number": 7678,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 305,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-71c9-bd89-ed80949fccaf",
+      "Number": 7679,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 61,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-71a3-b264-a7b6e3418f47",
+      "Number": 7680,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 367,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-71c3-8c16-8ac786de36f2",
+      "Number": 7681,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 23,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-7c0d-a2ed-4b62961fb7d6",
+      "Number": 7682,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 107,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-7143-a0a2-0ec0eb54447d",
+      "Number": 7683,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 319,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-7b6b-9dc7-38f379dd4e34",
+      "Number": 7684,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 53,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-797b-80e4-5b2c25f1cafa",
+      "Number": 7685,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 744,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-7d35-8be5-1bb8140ad62c",
+      "Number": 7686,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 361,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa012-d041-7c81-a63b-d380b5ccadf0",
+      "Number": 7687,
+      "Chapter": "Chapter 2 \u2014 The Investig",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 101,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8c-7c54-a501-145217847786",
+      "Number": 7688,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 773,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8c-7de0-82a9-1f6609187eba",
+      "Number": 7689,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 78,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7062-830d-2924d61c3cca",
+      "Number": 7690,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 467,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7418-8732-96f02a917219",
+      "Number": 7691,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 443,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7f6d-b60d-d36b40f15c33",
+      "Number": 7692,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 293,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7d86-ab30-d770f73db722",
+      "Number": 7693,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 304,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7b92-9b90-d61606a2716b",
+      "Number": 7694,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-74c3-aa50-0dd68b06345b",
+      "Number": 7695,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 456,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7779-a5dc-f8173701645d",
+      "Number": 7696,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 309,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7f7f-b129-947cbd500f9f",
+      "Number": 7697,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 971,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7c90-bf64-5ae19012f99e",
+      "Number": 7698,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 395,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7e72-af08-94cbf06a2e77",
+      "Number": 7699,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 406,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-74d7-b5a3-e75174596bfe",
+      "Number": 7700,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 173,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-789c-b929-204ad70c6059",
+      "Number": 7701,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 742,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7927-aa66-228de7ca93ea",
+      "Number": 7702,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 210,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7023-8802-4cf6f7186343",
+      "Number": 7703,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 93,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7e84-b471-e20fb3e4787f",
+      "Number": 7704,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 146,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-76fa-b169-deb4165b5f9b",
+      "Number": 7705,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 375,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7dc2-9fcc-176dedc21913",
+      "Number": 7706,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 432,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-70e7-97d3-e351e964d5b6",
+      "Number": 7707,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 637,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7518-8661-465981e4fab8",
+      "Number": 7708,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 331,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-724b-a4a5-713e98ae7935",
+      "Number": 7709,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 347,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7141-b555-76fa01c5bace",
+      "Number": 7710,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 325,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-79fb-b44c-0a59d043e745",
+      "Number": 7711,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 148,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7eaa-a602-50c650eba9b5",
+      "Number": 7712,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 165,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7021-a4d5-7dccb39464d6",
+      "Number": 7713,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 161,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7b37-ad9c-35bbce064f09",
+      "Number": 7714,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 117,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7b60-a3e4-c2e40293bb81",
+      "Number": 7715,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 167,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-76db-9cd2-7022a7b3eb17",
+      "Number": 7716,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 510,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7500-bb45-ab76525d6811",
+      "Number": 7717,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 241,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-753e-8423-0638dd8f576c",
+      "Number": 7718,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 178,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7500-adb9-b7c7351b5ded",
+      "Number": 7719,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 259,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7439-aeee-668f32fb842a",
+      "Number": 7720,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 579,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7f90-83a8-1dc240cd43e2",
+      "Number": 7721,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 319,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-73e8-9a18-dd7e4e2d156e",
+      "Number": 7722,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 181,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-79a0-a6cb-5d1dc20b9df4",
+      "Number": 7723,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 103,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-718f-9a48-1abba7dac463",
+      "Number": 7724,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 288,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-74ae-bab8-001d8941d982",
+      "Number": 7725,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 194,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-71da-a998-ef615bec3d28",
+      "Number": 7726,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 372,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-71ac-a32b-1a6c9162c254",
+      "Number": 7727,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 288,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7a6b-9cc1-ce8001ada36b",
+      "Number": 7728,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 160,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7f7e-ade8-d2a7eabed1a9",
+      "Number": 7729,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 187,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7e21-96ce-55ce7e1c3b97",
+      "Number": 7730,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7984-804e-7b48e1570fce",
+      "Number": 7731,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 518,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-79bf-8ce1-44f079a57344",
+      "Number": 7732,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 290,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-76d2-83a2-88d980d4acf2",
+      "Number": 7733,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 346,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7b20-ac58-3d3f3a5a6eaa",
+      "Number": 7734,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 637,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7611-adba-56098e4711e5",
+      "Number": 7735,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 171,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-73e0-9f27-e8ed1f933961",
+      "Number": 7736,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 82,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-78a2-96e1-b01d4d913377",
+      "Number": 7737,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 815,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7190-adc6-13ce3d3ba01f",
+      "Number": 7738,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 340,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7492-a6b3-96e933f02c5d",
+      "Number": 7739,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 682,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7afa-ba49-53c1410f2ab7",
+      "Number": 7740,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 241,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7c83-933b-bbc9a7d9d4d7",
+      "Number": 7741,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 630,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-750a-9a15-377eeb699474",
+      "Number": 7742,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 274,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7900-a6cd-242f625b4193",
+      "Number": 7743,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 34,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-78fb-9267-4a3a6d26fae5",
+      "Number": 7744,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 363,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-7482-afd6-12394bbbc044",
+      "Number": 7745,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 343,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8d-75b5-851d-d7fb77823e8c",
+      "Number": 7746,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 142,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7ea9-9979-f8a9bcdb07c9",
+      "Number": 7747,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 382,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7eba-a828-f98db12291f5",
+      "Number": 7748,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 200,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7514-ab7c-76679d42110b",
+      "Number": 7749,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 546,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7797-8f1a-f5fb46def7b7",
+      "Number": 7750,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 233,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7e1e-8609-0c7503cde1a8",
+      "Number": 7751,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 405,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7b7f-ab87-3c5332619c83",
+      "Number": 7752,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 357,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7091-b888-cdbdef4d9782",
+      "Number": 7753,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 663,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-79fe-86d3-28e5a1f9aa08",
+      "Number": 7754,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 148,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-74ca-8e22-4c6d1e59bad8",
+      "Number": 7755,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 35,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7eec-9365-c16b7e90ec61",
+      "Number": 7756,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 106,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-729d-9bc8-a6d348967ade",
+      "Number": 7757,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 256,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7dab-9d14-819b5cbf7b0e",
+      "Number": 7758,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 615,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7128-9f36-db65a9f3550d",
+      "Number": 7759,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 241,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7235-a411-22a21ce8da6b",
+      "Number": 7760,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 398,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-71b1-ac62-e2aa9b4451af",
+      "Number": 7761,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 370,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7ede-92f9-ccf5f06685d2",
+      "Number": 7762,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 493,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7b53-b1f1-01a7cd692f6f",
+      "Number": 7763,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 759,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7c36-bc7f-608030ad49b2",
+      "Number": 7764,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 112,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-75dd-8b46-a4a8e44663db",
+      "Number": 7765,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 345,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-70db-b640-579a2fd9ee83",
+      "Number": 7766,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 433,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7ba3-8090-5a92ec5bf7ce",
+      "Number": 7767,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 220,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-75bd-a76a-5ef090d08ffe",
+      "Number": 7768,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 472,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-76b2-b729-23d33556d349",
+      "Number": 7769,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 206,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7545-a58f-63ad76d4c215",
+      "Number": 7770,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 809,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7172-991c-23ec037c7f1c",
+      "Number": 7771,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 265,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7925-96cd-3b1c7438f296",
+      "Number": 7772,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 592,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7a58-a83c-07e76965e079",
+      "Number": 7773,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 442,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-77e8-ae65-786df6b9a77d",
+      "Number": 7774,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 279,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7ca7-8f5f-4e6781128384",
+      "Number": 7775,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 106,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7b9f-8d2c-b88863b416b3",
+      "Number": 7776,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 404,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7a7b-970c-3d1b96b05315",
+      "Number": 7777,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 764,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-75c9-9466-9d5705d6f2e9",
+      "Number": 7778,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 624,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-72d9-bd8d-2e74524d90b9",
+      "Number": 7779,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 635,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7391-86b8-844b6f564e02",
+      "Number": 7780,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 470,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7a22-bd22-a69acc5ede50",
+      "Number": 7781,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 862,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-70dc-964a-8acd946f56eb",
+      "Number": 7782,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 423,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7639-bc03-145359b6109c",
+      "Number": 7783,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 50,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7074-930e-6400a89d2147",
+      "Number": 7784,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 428,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-72d4-89aa-ce357207e6fd",
+      "Number": 7785,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 172,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7fbe-89b2-9687b1ad8b2e",
+      "Number": 7786,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 697,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7d09-9b8e-04aa202f9ad5",
+      "Number": 7787,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 39,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-78d7-9f1a-e6b9b12d44b0",
+      "Number": 7788,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 228,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-72ac-93e3-24e73e8033aa",
+      "Number": 7789,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 113,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7c67-9428-4c6076df86d8",
+      "Number": 7790,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1008,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7b67-b681-93f1eb5fa800",
+      "Number": 7791,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 995,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-71ba-8bab-12c182d6a3e1",
+      "Number": 7792,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7cc7-b7be-71c5f6c40c69",
+      "Number": 7793,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 44,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-70dc-a6cf-849574649212",
+      "Number": 7794,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 23,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7761-b149-d6a684f6eeeb",
+      "Number": 7795,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1035,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7430-bdf4-d9b801a5a1ec",
+      "Number": 7796,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 58,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-735a-891d-dbd3cfcb62e9",
+      "Number": 7797,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 818,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7c5b-bdff-102b2d007aea",
+      "Number": 7798,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7c4c-a45f-2e7b4ea41021",
+      "Number": 7799,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 557,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa014-dc8e-7d32-bab7-ef9aa9bbbd45",
+      "Number": 7800,
+      "Chapter": "Chapter 3 \u2014 The Confront",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 657,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-70a3-980c-4f7cc3f4666f",
+      "Number": 7801,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 154,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7ec2-a775-a851a2057427",
+      "Number": 7802,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 561,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-756b-be9c-cf869c075f13",
+      "Number": 7803,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 663,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7cc7-904b-23874993cf7e",
+      "Number": 7804,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 335,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7968-9033-4a2816deebf3",
+      "Number": 7805,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 119,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7f5e-b477-c77413fe4306",
+      "Number": 7806,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 510,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-78b7-b0e5-336a6aa15b2c",
+      "Number": 7807,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 355,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7cbe-8de5-4b403056d345",
+      "Number": 7808,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 395,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-752a-bf5c-dbf03b85ae7e",
+      "Number": 7809,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 367,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-79ab-b9c5-faee315d2f4e",
+      "Number": 7810,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 598,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-78e4-81e2-c3814dbaad5e",
+      "Number": 7811,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 208,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7e3a-8ebd-3c1900154356",
+      "Number": 7812,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 240,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7210-a99c-54f33eea5737",
+      "Number": 7813,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 406,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-79e6-a249-d7356414f67a",
+      "Number": 7814,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 520,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7841-9707-24738dfa13ac",
+      "Number": 7815,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 140,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-747a-bd78-dc671630f305",
+      "Number": 7816,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 353,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-79f9-ba8c-8b5b0ce40982",
+      "Number": 7817,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 318,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7341-9351-e603aaeaf46c",
+      "Number": 7818,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 656,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd2-7490-b709-1d2bab4139da",
+      "Number": 7819,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 202,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7422-b7a8-fd9b828bf385",
+      "Number": 7820,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 593,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7983-8031-e34bb6cdb00f",
+      "Number": 7821,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 652,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-717a-b38a-6af511d2bb78",
+      "Number": 7822,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 246,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7635-861a-b1f0676d89ef",
+      "Number": 7823,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 139,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7ef4-adc0-8e6b5cd9351b",
+      "Number": 7824,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 143,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7007-9d8c-9389a700618b",
+      "Number": 7825,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 261,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7d33-a65e-7a4667aa3cfe",
+      "Number": 7826,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 320,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7f10-87a0-38464075a025",
+      "Number": 7827,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 185,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7e2c-a8a8-543721f5d20f",
+      "Number": 7828,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 447,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7b5a-b24f-f0c9b1eec13e",
+      "Number": 7829,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 311,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-770d-8d77-f1ed69c68da6",
+      "Number": 7830,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 275,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7f1f-9f01-3f6377d5336a",
+      "Number": 7831,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 193,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7a81-90e9-78cebabcae5c",
+      "Number": 7832,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 211,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7ff0-bb36-6569aef7b99d",
+      "Number": 7833,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 171,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7cc6-9caf-ccb1eed55e56",
+      "Number": 7834,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 800,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7361-b269-6b2fb4bd69c6",
+      "Number": 7835,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 197,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7c33-a64a-d00e644dd903",
+      "Number": 7836,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 153,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-73d5-b530-eb2ecfc69ea7",
+      "Number": 7837,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 43,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7a84-b382-bc21c67eb0ef",
+      "Number": 7838,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 109,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-789a-a6c3-829b58e637ff",
+      "Number": 7839,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 185,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7dcb-92cc-25f7cee3f8dc",
+      "Number": 7840,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 321,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-732d-a4d1-63cc8153f573",
+      "Number": 7841,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 46,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-77cf-a613-462d9ae572a2",
+      "Number": 7842,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 77,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7246-a49f-2dc68759228e",
+      "Number": 7843,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 225,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7922-9ee7-7219bccbb922",
+      "Number": 7844,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 390,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7600-80dd-a2a1ec6ceadb",
+      "Number": 7845,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 64,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7b9e-8623-75ae4b3165a6",
+      "Number": 7846,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 47,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-739f-958c-eb651ba76cfa",
+      "Number": 7847,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 174,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-78dc-ae50-0a1432561ec6",
+      "Number": 7848,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 282,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7340-8e0c-0d62328a5b0a",
+      "Number": 7849,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 126,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7b7e-add1-cfd9b9197a6b",
+      "Number": 7850,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 186,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7ab8-9367-e28fd379f1c7",
+      "Number": 7851,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 345,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-72f8-9632-4fc3a09fa01a",
+      "Number": 7852,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 170,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7b2e-a622-730b6c9150fc",
+      "Number": 7853,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 579,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7fc4-b69d-4a5395e54de0",
+      "Number": 7854,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 299,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-7fcc-8d45-8bbe4054f309",
+      "Number": 7855,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 291,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa015-9dd3-712f-869d-95bf47b868d9",
+      "Number": 7856,
+      "Chapter": "Chapter 4 \u2014 The Cost",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 171,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
     }
   ]
 }

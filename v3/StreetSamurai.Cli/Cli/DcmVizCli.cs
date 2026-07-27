@@ -42,14 +42,10 @@ public static class DcmVizCli
         var settings  = sp.GetService<SettingsService>();
 
         // Resolve node
-        Guid nodeId; string nodeCode; string nodeTitle; string universeSlug;
-        var ancestors = new List<string>();
+        Guid nodeId; string nodeCode; string nodeTitle; string universeSlug; string resolvedNodeDir;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var node = await db.Nodes.AsNoTracking()
-                .Where(n => n.Slug == slug)
-                .Select(n => new { n.Id, n.NodeCode, n.Title, n.UniverseId, n.ParentNodeId })
-                .FirstOrDefaultAsync();
+            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug);
             if (node == null) { Console.Error.WriteLine($"[dcm-viz] node not found: {slug}"); return 1; }
             nodeId    = node.Id;
             nodeCode  = node.NodeCode ?? slug.ToUpperInvariant();
@@ -62,19 +58,11 @@ public static class DcmVizCli
                     .Select(u => u.Slug)
                     .FirstOrDefaultAsync() ?? "glmz";
 
-            // Series/book ancestry (top-down) so the viz lands in the story's own
-            // publish folder — same layout as ManuscriptExportService / ReviewReportExporter.
-            var parentId = node.ParentNodeId;
-            for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
-            {
-                var parent = await db.Nodes.AsNoTracking()
-                    .Where(s => s.Id == pid)
-                    .Select(s => new { s.Title, s.ParentNodeId })
-                    .FirstOrDefaultAsync();
-                if (parent is null) break;
-                ancestors.Insert(0, SanitizeTitle(parent.Title));
-                parentId = parent.ParentNodeId;
-            }
+            // Same layout as ManuscriptExportService / DocxExportService: NodeCode-first flat
+            // folder when the node has a code, legacy ancestor-nested fallback otherwise.
+            var root = settings?.GetExportDirectory(universeSlug)
+                       ?? Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            (resolvedNodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, root, default);
         }
 
         Console.WriteLine($"[dcm-viz] Story: \"{nodeTitle}\" ({slug})  code={nodeCode}");
@@ -123,21 +111,8 @@ public static class DcmVizCli
         Console.WriteLine();
 
         // Determine output path: explicit --out wins; otherwise the story's own publish
-        // folder (<universe export dir>/<Series…>/<Title>), beside its .docx/.epub exports.
-        string dir;
-        if (!string.IsNullOrWhiteSpace(outDir))
-        {
-            dir = outDir;
-        }
-        else
-        {
-            var root = settings?.GetExportDirectory(universeSlug)
-                       ?? Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            var parts = new List<string> { root };
-            parts.AddRange(ancestors);
-            parts.Add(SanitizeTitle(nodeTitle));
-            dir = Path.Combine(parts.ToArray());
-        }
+        // folder, beside its .docx/.epub exports.
+        var dir = !string.IsNullOrWhiteSpace(outDir) ? outDir : resolvedNodeDir;
         Directory.CreateDirectory(dir);
 
         var outputPath = Path.Combine(dir, $"{nodeCode}-dcm-viz.htm");
@@ -180,16 +155,6 @@ public static class DcmVizCli
     }
 
     // ── helpers ───────────────────────────────────────────────────────────────
-
-    /// <summary>Mirror of ManuscriptExportService.SanitizeTitle so folder names match exactly.</summary>
-    private static string SanitizeTitle(string? title)
-    {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        invalid.Add('\''); invalid.Add('’');
-        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
-        kept = System.Text.RegularExpressions.Regex.Replace(kept, @"\s+", " ").Trim();
-        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
-    }
 
     private static string? ArgValue(string[] args, string flag)
     {

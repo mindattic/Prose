@@ -3,419 +3,516 @@
 [Beat 1]
 The retainer arrived three days before Tally died.
 
-By mid-afternoon on the eighth day he was in the counter district, three levels below the transit line. The corridor smelled of old sealant and worn composite. He had found the place by its street address, not by a circuit tag — Tally's counter had no circuit registration at all. Poverty, or a choice; he couldn't tell which yet. He knocked. Nothing. He tried the handle, and it opened.
-
-The counter was empty. The overhead light was on, an old fixture gone slightly yellow. There was a table, its top scarred at the center from years of weight. There was a shelf. On the shelf sat a hard case, and beside it a folded thermal receipt with his name printed on the outside. The first letters were child-large; the last were small and adult — the same shift in the handwriting he would later find inside the book. The paper held no tracer. In 2226 that meant poverty or intention.
-
-He put the note in his jacket without opening it. He looked at the room first. The table's wear ran heaviest at the center-left, where a person would sit to see who was coming through the door. The shelf held four things: the case, the note, a book — *A Practical Grammar of Gray Zone Instruments, Third Edition* — and a tin that smelled of long matches. She had set up the audit site before she died, and she had placed each tool where she wanted it.
-
-This was the Low: the ungoverned belt between thirty and three hundred meters, where the Fringe Compact was more a policy than a law. The unpatched composite in the corridor showed it.
-
-His own registration was current. He had been code before he was a body — an accounting and verification system granted personhood under a law passed before the governments that wrote it were swallowed by CorpoNation charters. The obligation outlived them, the way obligations did when someone still profited by honoring them. Synthetic persons could hold contracts, carry liability, be registered. They ran the registry now. They called him a person. There was case law on the question, and he had read all of it.
-
-He checked the timing while he stood at the table. Her filing came in at 14:23:07, eleven days before today. The death-verification that set the retainer in motion came at 09:44:23, eight days back. The relay between them had taken twenty-three minutes — old infrastructure, three administrations deep, never upgraded. The times matched cleanly. She had been alive when she filed it.
-
-He opened the note.
-
-*The book is in the case. Terms are in the circuit filing. Three claimants will find you; do not go looking for them. The disposal clause is mine — use it if you need to. — G. Ibarra-Voigt.*
-
-Gerta Ibarra-Voigt. Tally, since before the child-hand pages of the book he had not yet read. She had built this retainer for one specific auditor. She had not written in any incentive to make him behave correctly, because she had decided he would. She had set up the room, placed the disposal clause herself, and then died, and waited for the trigger to fire.
-
-The job was the book.
-
-He crossed to the case and set his palm flat on the cover. The metal was cool. The latches were pressed steel. It had the weight of a thing that had been sitting here, waiting for him. He stayed like that for a moment he could not have justified on a bill. Then he opened the case.
-
 [Beat 2]
-The book was smaller than he'd expected.
-
-He had expected weight. Forty years of entries, the registry hinted at hundreds — he had pictured a proper ledger, rigid-covered, spine-indexed. What he had was cloth-bound and hand-sewn. The thread that closed the spine was the same thread that had started it; he could see both ends, looped back to the beginning and tied off in a knot that had held for four decades. The cloth had soaked up forty years of one counter's light and grease and handling until it had stopped being any color at all. Not faded. Not dirty. Just settled into itself.
-
-He lifted it by the spine, two fingers, the standard examiner's hold. 380 grams. He set it on the table beside the case.
-
-The smell came up at once: old under-counter grease, something fried years ago and still in the fibers, something sweet beneath that, and under all of it a dry mineral smell — the smell of a room kept at one temperature for a long time. He turned the book to the light. No water damage. The four corners were compressed from carrying, not dropping. This was a working object, carried often. He opened to the first page.
-
-The writing started at the top line. Three columns: date on the left, amount on the right, a notation in the center. The early pages were in a child's hand — large, a little uneven, the spacing of someone still learning what letters were. He didn't try to read it yet. He turned pages instead, corner by corner, checking the binding for loose sections. Three hundred and twelve pages. The last entry was dated eleven days ago, the ink still faintly raised, not yet fully sunk into the paper.
-
-He went back to the beginning and read.
-
-The child-hand entries were a code, and he broke it by pattern. She hadn't used standard Gray Zone notation; she had built her own. But the structure underneath held steady — debt named, debtor named, terms implied, date set. He checked the first ten entries against the fringe registry. Seven came back as hits: amount, settlement date, witness. All accurate. He ran the next twenty. Eleven verified outright, nine more confirmed through Compact secondary records.
-
-He turned to page forty-one.
-
-He ran the check. The registry returned nothing. He tried the entries on either side. Nothing. He ran the whole block, pages forty-one through sixty-two, twenty-two entries. These weren't gaps. A gap is a filing date with no document behind it. These records had never been filed at all. He always read for absence on an audit, because anyone can confirm what a registry holds. He was paid to notice what it had never held.
-
-He looked at the amounts. They were not small.
-
-He set the pen flat.
-
-Someone had lent money to people and never asked for it back. And they had never written down that they weren't asking. They had written the debt. Only the debt.
+By mid-afternoon on the eighth day he was in the counter district, three levels below the transit line, where the corridor smelled of old sealant and worn composite. He had found the place by its street address; Tally's counter carried no circuit tag, no registration at all. Poverty or a choice — he couldn't yet tell which. He knocked. Nothing answered. The handle turned under his hand, and the door gave.
 
 [Beat 3]
-The fringe registry could give him three names in under a minute. The terms said to wait.
-
-The door opened before he could close the cover.
-
-She was tall, with the Voigt jaw — the same jaw he had last seen on her grandfather's face, back when the Compact still called this zone by a different number. He had been doing this long enough to know a family by its bone. The registry filled in the rest: Renn Voigt, twenty-four, counter district, kiosk clerk, no outstanding instruments. Her collar was still warm-damp at the edge. She looked at the book on the table first, then at him. The order of that told him something.
-
-"Renn Voigt," she said. "Tally was my great-aunt."
-
-He looked at her: the document sleeve under her left arm, the left cuff of her jacket repaired in slightly different thread, the ink at the cuticle of her right index finger — kiosk-grade thermal transfer.
-
-"Sit," he said.
-
-She sat across the corner from him, not across the table. Close enough to see the page, too far to reach it. He pulled his audit log.
-
-"I need it certified whole," Renn said. "Every page, every entry, the binding intact. Certified by someone the Circuit will recognize." She said it the way you say a thing you've rehearsed past the point of believing it will work. "Not for sale. Not for claim. I need a document that says the book is what it is."
-
-A connection probe hit his circuit tag — no authentication, origin masked to a Low-zone relay. He declined it without looking up from the document sleeve.
-
-He wrote her name, the date, and her claim as she'd stated it. Her words, not his read of them. He read it back flat.
-
-"Recorded," he said. "That's not agreement. That's record."
-
-She watched him write. She didn't keep talking after she stopped. She had filled the first silence because she thought she had to. She wasn't filling this one.
-
-He looked at the book, then back at her. She was looking at it the way a person looks at something that already holds what they know — that they've read, or nearly read, or thought about reading. Not curiosity. Familiarity.
-
-"I sorted Tally's effects," she said. "After the funeral. She kept her files in a flat drawer in the back."
-
-He wrote that down too. She watched the pen and said nothing more.
-
-"The flat drawer is visible from the counter," he said.
-
-"Yes."
-
-He let the silence run. She didn't fill it. She had decided how much to say, and she had said it.
+Inside, the counter was empty. One old fixture burned overhead, gone slightly yellow with age. A table held the center of the room, its top scarred where years of weight had pressed it. Against the far wall a shelf carried four things, and he read them before he touched any of them: a hard case, a folded thermal receipt with his name on the outside, a book, and a tin that smelled of long matches. On the receipt the letters started child-large and finished small and adult — the same shift in the hand he would later find inside the book. No tracer in the paper. In 2226 that meant poverty, or it meant intention.
 
 [Beat 4]
-The second arrival didn't knock.
-
-He was broad, with a Yoruba grandfather in his face and the posture of a man who had spent his career letting his body do the negotiating — weight settled, nothing wasted, the stance of someone used to waiting in doorways. He set a flat envelope on the table without sitting, without a word of greeting, and looked at Ledger the way experienced men look at each other: once, briefly, enough.
-
-"Vig sends his regards," the man said. "And his documentation."
-
-Ledger opened the envelope. He counted the sheets before he read them — thumb down the corner, eleven. He put them in purchase-date order and read.
-
-Each page carried a purchase receipt: the original seller's notation, a transfer date, and a page number written in a code that matched the book's own notation exactly. The paper had aged the same way the book had. They had been stored together, same place, same temperature, for a long time. Someone had kept these carefully, knowing the day would come when they would be needed.
-
-He found the Compact citation without looking it up: Fringe Compact Annotations, Third Revised, Section 14, Clause 7. Partial transfer of handwritten instruments, Gray Zone origin, purchase documentation required at the time of claim. He read it under his breath, for the log. "Receipts satisfy Section 14, Clause 7."
-
-Eleven pages. Eleven settled entries in the first forty pages of the book — all in the verified half, all with settlement marks and witness notations. The total, after subtracting three partial payments logged in the Compact secondary ledger, came to Φ14,200.
-
-"Vig's position," the man said, and set down a second sheet. Handwritten, signed with a single initial. He put it in front of Ledger and did not offer it to Renn. Vig wanted whatever the audit found. The exact figure. Not a quanta more, not a quanta less.
-
-Ledger looked at the initial. It was the same across three sheets in three different inks — one hand, different pens, different days. The mark of a careful man who had made the same gesture so many times his hand did it without him.
-
-Renn Voigt had gone still across the corner. Her ink-stained hands lay flat on the table, and she was watching the receipts the way you watch a thing you knew was real but hadn't expected to see today. She had sorted Tally's effects. She had known the receipts existed. Knowing was one thing. Watching them land on the table was another.
-
-"Tell Vig the eleven verify," Ledger said. "The figure resolves at the end of the audit."
-
-The man nodded once, took the envelope, left the receipts, and went.
-
-At the far end of the corridor, past the man's retreating back, a transit vehicle rolled by at low speed — aerostatic, matte-paneled, windows tinted. It took the corner without slowing. He watched it go and gave it no weight.
+The note went into his jacket unopened. He read the room first. Wear ran heaviest at the table's center-left, the seat a person took to see who came through the door. Every tool on the shelf sat where a hand had decided it should sit. She had built the audit site before she died and laid it out for whoever the trigger brought.
 
 [Beat 5]
-The third arrival knocked. One knock, knuckle flat — neither pushy nor shy, the knock of someone who had settled before they arrived that they would be let in. Ledger said nothing. The door opened.
-
-Mid-forties, mid-height, a face the diaspora had built from half a dozen coastlines and filed under none of them. They wore licensed street in a cut that had cost what it cost without saying so. They carried a flat document sleeve — the professional kind, for moving paper instruments — and set it on the table like someone who had thought about exactly where to put it. The sleeve was clean, but the left corner seam was pressed flat by use, not damage. A tool that had crossed a lot of tables.
-
-"Quire," they said. Not an introduction. A label.
-
-They sat without being asked. They looked at the book first, then the receipts, then at Ledger — the same order Renn had used. He let the pattern sit.
-
-"The broker wants priced paper," Quire said. Their hands were folded. "Certified entries. What they document, valued and signed. Not the object. The broker works provenance — historical authentication for private collections. The entry has to be real. It doesn't have to be a live instrument."
-
-He looked at the sleeve without touching it. He looked at Renn Voigt's ink-stained hands, very still on the table. He thought about what a private collection would do with certified debt records from a forty-year Gray Zone counter.
-
-"The broker is not a corponation," Quire said.
-
-"No certification, no purchase," he said.
-
-"Correct. Then the broker's interest depends on your findings."
-
-"Also correct."
-
-He wrote: *Quire — broker's representative. Provenance house, private collections, historical authentication. Broker not a corponation; not named. Claim contingent on certification.* He set the pen flat.
-
-Quire looked at the book. "You haven't finished the audit."
-
-"No."
-
-"Do you have a sense of the scope?" they asked, in a voice that had already flattened the question into paperwork.
-
-"I have preliminary findings. Preliminary findings aren't certification." He looked at them. "You're asking whether there'll be anything to buy."
-
-"The broker prefers not to waste their representative's time." The neutral expression settled into place like something it had been waiting to do. "If the audit yields nothing certifiable, the broker would rather know before you close the retainer. There are other engagements this affects."
-
-He heard that last line for what it was. Other jobs. Other books. A buyer with a standing appetite for exactly this.
-
-"If the audit yields nothing certifiable," Ledger said, "you'll be the first person I tell."
-
-Quire looked at him. "The broker's name isn't relevant to the audit."
-
-"It's relevant to my log. I document principals."
-
-"The broker prefers not to appear in circuit logs. I am the principal for these purposes."
-
-He gave that three seconds. In fourteen years he had met three reasons a principal stayed off the record: privacy, liability, and the kind of hiding that ends with priced paper in a private vault. He had nothing yet to say which this was.
-
-He wrote: *Broker not identified. Quire is principal of record for this engagement.* He underlined the last four words.
+The unpatched composite in the corridor placed him. This was the Low — the ungoverned belt between thirty and three hundred meters, where the Fringe Compact was more policy than law.
 
 [Beat 6]
-He worked through the night, because there was no reason not to.
-
-The work was the catalog: entry by entry, each one checked against the fringe registry, then the Compact secondary ledger, then — where those ran dry — the public filings at the zone recorder's office. The settled entries in the first forty pages verified cleanly. Forty-three instruments. Settlement marks, witnesses, amounts, dates, counterparties — everything the Compact asked for, everything the registry held.
-
-He turned to page forty-one at three in the morning and ran the check.
-
-The registry returned nothing. He tried the secondary ledger, the recorder's public filings, the name index with aliases. He ran all twenty-two. Not one had ever been filed anywhere.
-
-He set the results down and sat with what he had.
-
-He stood, went to the shelf, and picked up the tin of long matches — the heft of it, the dry rattle inside — and set it back down. He went back to the table.
-
-The shape of the absence was the finding. He had worked missing records before — records that should exist and didn't, a filing error, a lost document. He had rarely worked records that had never been submitted at all. A person who kept accounts as carefully as Tally kept them would have filed every instrument she meant to be an instrument.
-
-Unless she had never meant them to be instruments.
-
-He looked at the amounts again. Each one was sized to what a person in this zone, in these years, could owe without the number turning into a threat. Sized to dignity. She had written them in the same code as everything else, and she had filed none of them.
-
-He worked until the auditable part of the book was fully documented, and then he stopped and sat in the room with two kinds of record: the forty pages that meant something to the Compact, and the twenty-two that meant something to someone who was dead.
+His own registration was current; it had to be. He had been code before he was a body, an accounting and verification system granted personhood by a statute older than the CorpoNation charters that later swallowed the governments who wrote it. The obligation outlived them. He could hold a contract, carry liability, sign a certification the Circuit would honor. Whether any of that made him a person was a question with case law behind it, and he had read all of it.
 
 [Beat 7]
-The Compact's rule on gifts was one sentence.
-
-He had found it in the Third Revised at the start of the day and left it open on the side panel all night, and by morning he knew it without trying: *Falsification: misrepresentation of the nature of a transaction in the written record of that transaction.*
-
-He read the twenty-two entries again with that in front of him.
-
-Each transaction was a loan. She had written it as a loan — amount, debtor, terms implied by the same notation she'd used for every other instrument in the book. The amounts were real. The debtors were real. Not one of the twenty-two misrepresented what the transaction was.
-
-He set the book down and stood.
-
-The room had held one temperature for three days. He walked to the far wall and back — eight steps, eight steps — and sat down. Renn Voigt watched him cross the room and said nothing.
-
-Falsification wasn't what she had done.
-
-The Compact's rule had no category for a person who wrote the truth in the private language of her own book and then never filed it. The Compact cared about what got filed. It had no authority over silence.
-
-He checked the averages again. Φ180 across the forty-three auditable instruments. Φ30 across the twenty-two. Sized to what a person too poor to refuse could accept without feeling the weight of it every time they looked at their account.
-
-She had given forty years of gifts to people who wouldn't take gifts. She had written each one down as the debt it was. And she had filed nothing.
-
-He picked up the pen and wrote: *The twenty-two entries are materially accurate. The transactions were structured as loans and extended as gifts. The gap between the structure and the extension is not falsification.*
+The timing closed where he stood. Her filing had landed at 14:23:07, eleven days back. The death-verification that tripped the retainer had come at 09:44:23, eight days back — itself twenty-three minutes behind the actual moment of death, the relay lag of infrastructure three administrations deep and never once upgraded. She had been alive when she filed it.
 
 [Beat 8]
-Vig arrived in the late afternoon. He did not come alone.
+Then he opened the note.
 
-He came with two carriers — Gray Zone labor, the careful anonymous kind, set in the doorframe without stepping in and without being told to hold there. One of them wore the sub-dermal collar common to protection work in the Low, the silver edge of it showing at the jaw: cyberware that said what it did without naming who had made it. Vig himself was shorter than his registry height — which happened, with records older than calibrated measurement. Sixty, compact, the face of a man who had built forty years of careful habits around knowing he was not big enough to win an argument with his body.
+[Beat 9]
+*The book is in the case. Terms are in the circuit filing. Three claimants will find you; do not go looking for them. The disposal clause is mine — use it if you need to. — G. Ibarra-Voigt.*
 
-Ledger kept writing. He finished the sentence he was in and set the pen flat.
+[Beat 10]
+Gerta Ibarra-Voigt. Tally, since before the child-hand pages of the book he had not yet read. She had built this retainer for one auditor and written in no incentive to make him behave correctly, because she had already decided he would. Room arranged, disposal clause placed, trigger armed — and then she had died and let it fire without her.
 
-A probe hit his dormant second registration — the one he kept current for salvage bids and hadn't used in years. He declined it. Someone was working through his registered identifiers, one by one.
+[Beat 11]
+The job was the book.
 
-Vig looked at the book. He did not look at Renn Voigt. His right hand came off his hip and moved two inches toward the book before he stopped it and put it back. He looked at the book the way a man looks at a dispute he has been patient about for a long time.
+[Beat 12]
+He crossed to the case and set his palm flat on the cover. Cool metal, pressed-steel latches, the settled weight of a thing that had been sitting here waiting. He held there a moment he could not have justified on any bill. Then he worked the latches and opened it.
 
+[Beat 13]
+The book was smaller than he'd expected.
+
+[Beat 14]
+He had expected weight. The registry hinted at hundreds of entries across forty years, and he had pictured a proper ledger — rigid covers, an indexed spine. What lay in the case was cloth-bound and hand-sewn. The thread that closed the spine was the thread that had started it, both ends looped back to the beginning and tied in a knot that had held for four decades. Forty years of one counter's light and grease and handling had soaked into the cloth until it stopped being any color at all. Not faded, not dirty. Settled into itself.
+
+[Beat 15]
+Two fingers on the spine, the examiner's hold. 380 grams. He set it on the table beside the case.
+
+[Beat 16]
+The smell came up at once and sorted itself as he breathed it: under-counter grease, something fried years ago and still in the fibers, something sweet beneath that, and under all of it the dry mineral note of a room kept at one temperature a long time. No water damage anywhere. The four corners were compressed from carrying, not crushed from a drop. A working object, then — carried, not shelved. He opened to the first page.
+
+[Beat 17]
+The writing began at the top line. Three columns: date left, amount right, a notation between them. The early entries ran in a child's hand, large and a little uneven, the spacing of someone still learning what letters were for. He didn't try to read them yet. Page by page, corner by corner, he checked the binding for loose sections instead. Three hundred and twelve pages. The last entry carried a date eleven days old, the ink still faintly raised where it hadn't yet sunk into the paper.
+
+[Beat 18]
+Then he went back to the beginning and read.
+
+[Beat 19]
+The child-hand entries were a cipher, and he broke it by pattern. She hadn't used standard Gray Zone notation — she had built her own — but the structure underneath held steady: debt named, debtor named, terms implied, date set. He ran the first ten against the fringe registry. Seven came back as hits, amount and settlement date and witness, all accurate. He ran the next twenty. Eleven verified outright; nine more confirmed through Compact secondary records.
+
+[Beat 20]
+Page forty-one stopped him.
+
+[Beat 21]
+The registry returned nothing. Neither did the entries on either side of it. He ran the whole block — pages forty-one through sixty-two, twenty-two entries — and the registry held not one of them. These weren't gaps. A gap is a filing date with no document behind it; these had never been filed at all. He always read an audit for absence, because anyone could confirm what a registry held. He was paid to notice what it had never been given.
+
+[Beat 22]
+The amounts were not small.
+
+[Beat 23]
+He laid the pen across the page and sat with it. Someone had lent money to people and never asked for it back. And they had never written down that they weren't asking. They had written the debt.
+
+[Beat 24]
+Only the debt.
+
+[Beat 25]
+The fringe registry could hand him three names in under a minute. The terms said wait.
+
+[Beat 26]
+The door opened before he had closed the cover.
+
+[Beat 27]
+She was tall, and she carried the Voigt jaw — the same bone he'd last seen on her grandfather's face, back when the Compact still called this zone by a different number. Fourteen years of this work had taught him to know a family by its skull. The registry filled the rest: Renn Voigt, twenty-four, counter district, kiosk clerk, no outstanding instruments. Her collar was still warm-damp at the edge. She read the book on the table before she read him, and the order of that told him something.
+
+[Beat 28]
+"Renn Voigt," she said. "Tally was my great-aunt."
+
+[Beat 29]
+The document sleeve rode under her left arm. Her left cuff had been repaired in thread a shade off the original, and thermal ink stained the cuticle of her right index finger — kiosk grade, the cheap transfer kind.
+
+[Beat 30]
+"Sit," he said.
+
+[Beat 31]
+She took the corner of the table rather than the far side, close enough to see the page and too far to reach it, and folded her hands. He pulled his audit log.
+
+[Beat 32]
+"I need it certified whole." Her words came out level, rehearsed past the point where she still believed they'd work. "Every page, every entry, the binding intact — the whole asset, not pieces of it. Certified by someone the Circuit will recognize. Not for sale. Not for claim. I need a document that says the book is what it is."
+
+[Beat 33]
+A connection probe scratched at his circuit tag — no authentication, origin masked to a Low-zone relay. He declined it without lifting his attention from her hands.
+
+[Beat 34]
+He wrote her name, the date, and her claim in the words she'd used, not in his read of them, and gave it back to her flat. "Recorded. That's not agreement. That's record."
+
+[Beat 35]
+She had gone quiet while he wrote, and she stayed quiet after. The first silence she had filled because she thought she was supposed to. This one she left alone.
+
+[Beat 36]
+"I sorted Tally's effects," she said at last. "After the funeral. She kept her files in a flat drawer at the back. No offense to my great-aunt, but I know inventory when I see it."
+
+[Beat 37]
+He wrote that down too.
+
+[Beat 38]
+"The flat drawer is visible from the counter."
+
+[Beat 39]
+"Yes."
+
+[Beat 40]
+He let the silence run to see what she'd do with it. She did nothing with it. She had measured out exactly what she meant to say, and now she sat with her hands folded and let the room hold the rest.
+
+[Beat 41]
+The second arrival didn't knock.
+
+[Beat 42]
+He was broad, with a Yoruba grandfather in his face and the settled stance of a man who had spent a career letting his body do the negotiating — weight low, nothing wasted, at home waiting in a doorway. Without sitting, without a word of greeting, he set a flat envelope on the table and gave Ledger the glance experienced men trade: once, brief, enough.
+
+[Beat 43]
+"Vig sends his regards," he said. "And his documentation."
+
+[Beat 44]
+Ledger counted the sheets before he read a word of them — thumb down the corner, eleven — then put them in purchase-date order. Each page carried a purchase receipt: the original seller's notation, a transfer date, and a page number written in the same code as the book. The paper had aged the way the book had aged. Stored together, one place, one temperature, for a long time. Someone had kept these against a day they knew would come.
+
+[Beat 45]
+The Compact citation surfaced without a search — fourteen years put most of the Third Revised where he could reach it. Section 14, Clause 7: partial transfer of handwritten instruments, Gray Zone origin, purchase documentation required at the time of claim. He said it half under his breath, for the log.
+"Receipts satisfy Section 14, Clause 7."
+
+[Beat 46]
+Eleven pages, eleven settled entries in the first forty — all from the verified half, all with settlement marks and witness notations. Net of three partial payments logged in the Compact secondary ledger, the total came to Φ14,200.
+
+[Beat 47]
+"Vig's position." The man laid down a second sheet, handwritten, signed with a single initial, and set it in front of Ledger without offering it to Renn. Vig wanted the exact figure the audit turned up. Not a quanta over it, not a quanta under.
+
+[Beat 48]
+The initial repeated across three sheets in three inks — one hand, different pens, different days, a gesture worn so smooth the hand made it without the man. A careful signer.
+
+[Beat 49]
+Renn Voigt had gone still. Whatever she kept in her face on the first day, she kept it now, but her breathing had shortened, and she tracked the receipts the way you track a thing you always knew was real and never expected to watch cross a table in daylight. She had sorted the effects. She had known the receipts existed. Knowing was one register; this was another.
+
+[Beat 50]
+"Tell Vig the eleven verify," Ledger said. "The figure resolves when the audit closes."
+
+[Beat 51]
+The man nodded once, took the empty envelope, left the receipts, and was gone.
+
+[Beat 52]
+At the far end of the corridor, past his retreating back, a transit vehicle rolled through at low speed — aerostatic, matte-paneled, windows tinted. It took the corner without slowing. He marked it and gave it no weight.
+
+[Beat 53]
+The third arrival knocked — one knock, knuckle flat, neither pushy nor shy. The knock of someone who had decided before they got there that they would be let in. Ledger said nothing, and the door opened on its own.
+
+[Beat 54]
+He ran the face against the registry out of habit, the way he'd run Renn's on the first day. Nothing came back. Not a blank — a genuine absence, the kind that took money and effort to keep that clean. Mid-forties, mid-height, features assembled from half a dozen coastlines and filed under none of them: built, on purpose or by long practice, to defeat exactly the query he'd just run.
+
+[Beat 55]
+They carried a flat document sleeve — the professional kind, made for moving paper instruments — and placed it on the table like someone who had already worked out exactly where it should go. Clean sleeve, but the left corner seam was pressed flat by use, not damage. A tool that had crossed a lot of tables.
+
+[Beat 56]
+"Quire." Not an introduction. A label.
+
+[Beat 57]
+They sat unasked, and read the room in Renn's order: the book, then the receipts, then Ledger. He let the pattern stand.
+
+[Beat 58]
+"The broker wants priced paper." The hands folded on the table, unhurried. "Certified entries — what they document, valued and signed. Not the object. The broker works provenance, historical authentication for private collections. The entry has to be real. It doesn't have to be a live instrument."
+
+[Beat 59]
+He left the sleeve where it lay. Across the corner, Renn's stained fingers had gone very still. A private collection, buying certified debt from a forty-year Gray Zone counter — he turned the shape of that over once and set it aside.
+
+[Beat 60]
+"The broker is not a corponation," Quire said.
+"No certification, no purchase."
+"Correct. Then the broker's interest depends on your findings."
+"Also correct."
+
+[Beat 61]
+He wrote it down: *Quire — broker's representative. Provenance house, private collections, historical authentication. Broker not a corponation; not named. Claim contingent on certification.* He set the pen flat.
+
+[Beat 62]
+"You haven't finished the audit," Quire said.
+"No."
+"Do you have a sense of the scope?" The question came out already flattened into paperwork.
+"I have preliminary findings. Preliminary findings aren't certification." He met the neutral face. "You're asking whether there'll be anything to buy."
+"The broker prefers not to waste their representative's time." The neutral expression settled deeper. "If the audit yields nothing certifiable, the broker would rather know before you close the retainer. There are other engagements this affects."
+
+[Beat 63]
+The last line arrived carrying more than it said. Other jobs. Other books. A buyer with a standing appetite for exactly this.
+
+[Beat 64]
+"If the audit yields nothing certifiable," Ledger said, "you'll be the first person I tell."
+"The broker's name isn't relevant to the audit."
+"It's relevant to my log. I document principals."
+"The broker prefers not to appear in circuit logs. I am the principal for these purposes."
+
+[Beat 65]
+He gave that three seconds. In fourteen years he had met three reasons a principal stayed off the record — privacy, liability, and the kind of hiding that ends with priced paper in a private vault — and nothing yet told him which one had sat down at his table.
+
+[Beat 66]
+*Broker not identified. Quire is principal of record for this engagement.* He underlined the last four words.
+
+[Beat 67]
+He worked through the night.
+
+[Beat 68]
+The work was the catalog. Entry by entry: fringe registry first, then the Compact secondary ledger, then — where those ran dry — the public filings at the zone recorder's office. The settled entries in the first forty pages came back clean. Forty-three instruments, each one carrying settlement marks, witnesses, amounts, dates, counterparties — everything the Compact asked for and everything the registry held.
+
+[Beat 69]
+At three in the morning he turned again to page forty-one.
+
+[Beat 70]
+The registry returned nothing. Neither did the secondary ledger, the recorder's public filings, or the name index run with aliases. Twenty-two entries, and not one of them had ever been filed anywhere. He set the results down and sat with them.
+
+[Beat 71]
+After a while he crossed to the shelf and picked up the tin of long matches — the weight of it, the dry rattle inside — and put it back where she'd left it, and returned to the table.
+
+[Beat 72]
+The shape of the absence was the finding. He had worked missing records before: a filing error, a document lost in a bad relay, a thing that should exist and didn't. He had almost never worked records that had never been submitted at all. A person who kept accounts the way Tally kept them filed every instrument she meant to be an instrument.
+
+[Beat 73]
+Unless she had never meant them to be instruments.
+
+[Beat 74]
+He read the amounts again. Each one was sized to what a person in this zone, in these years, could carry without the number curdling into a threat. Sized to dignity. Written in the same private code as everything else, and filed nowhere.
+
+[Beat 75]
+He worked until the auditable half of the book was fully documented, and then he stopped, and sat a long time in the room with two kinds of record in front of him: the forty pages that meant something to the Compact, and the twenty-two that meant something only to someone who was dead.
+
+[Beat 76]
+The Compact's rule on gifts was a single sentence.
+
+[Beat 77]
+He had found it in the Third Revised at the start of the day and left it open on the side panel all night, and by morning it had set itself in him without effort: *Falsification: misrepresentation of the nature of a transaction in the written record of that transaction.*
+
+[Beat 78]
+With that in front of him he read the twenty-two again. Every one was a loan. She had written each as a loan — amount, debtor, terms carried by the same notation she used for every other instrument in the book. The amounts were real. The debtors were real. Not one of the twenty-two misrepresented what the transaction was.
+
+[Beat 79]
+He set the book down and stood. Three days of one held temperature had made the air feel like a surface. He paced to the far wall and back, eight steps out and eight steps in, and sat. Renn tracked him across the room and left him to it.
+
+[Beat 80]
+Falsification wasn't what she had done. The Compact had no category for a person who wrote the truth in the private language of her own book and then filed none of it. The Compact cared about what reached the registry. Over silence it had no authority at all.
+
+[Beat 81]
+He ran the averages once more. Φ180 across the forty-three auditable instruments; Φ30 across the twenty-two. The second number was sized to what a person too proud and too poor to accept charity could accept anyway, without feeling the weight of it every time they checked their account.
+
+[Beat 82]
+Forty years of gifts, given to people who would not take gifts. Each one written down as the debt it was. Not one of them filed.
+
+[Beat 83]
+He picked up the pen. *The twenty-two entries are materially accurate. The transactions were structured as loans and extended as gifts. The gap between the structure and the extension is not falsification.*
+
+[Beat 84]
+Vig arrived in the late afternoon, and he did not come alone.
+
+[Beat 85]
+Two carriers came with him — Gray Zone labor, the careful anonymous kind — and set themselves in the doorframe without crossing it and without being told to hold. One wore the sub-dermal collar that protection work in the Low ran to, the silver edge of it showing at the jaw: cyberware that stated what it did and named no maker. Vig himself stood shorter than his registry height, the way men did whose records predated calibrated measurement. Sixty, compact, his face built over forty years of careful habits around the knowledge that he was not big enough to win an argument with his own body.
+
+[Beat 86]
+Ledger finished the sentence he was in and set the pen flat.
+
+[Beat 87]
+A probe touched his dormant second registration — the salvage-bid identity he kept current and hadn't spent in years. He declined it. Someone was walking through his registered identifiers one at a time.
+
+[Beat 88]
+Vig's attention went to the book and stayed off Renn entirely. His right hand lifted from his hip and traveled two inches toward the cover before he caught it and set it back. He regarded the book the way a man regards a dispute he has been patient about for a very long time.
+
+[Beat 89]
 "The eleven verify," Ledger said. "I told your man yesterday."
 
-"I know what you said." Vig's voice was the unhurried kind. "I came to know the scope."
+"I know what you said." Vig's voice ran unhurried. "I came to know the scope."
 
-Ledger had spent part of the morning thinking about Vig. The two carriers weren't muscle. A man who came to threaten a Compact auditor mid-retainer would spend the rest of his life moving between zones, and Vig had spent forty years staying put. The carriers were a way of naming a price without saying a number.
+Ledger had spent part of the morning on Vig. The two carriers weren't muscle. A man who threatened a Compact auditor mid-retainer would spend the rest of his life moving between zones, and Vig had spent forty years staying exactly where he was. The carriers were a way to name a price without saying a number.
 
 "Eleven pages," Ledger said. "Φ14,200, net of partial payments. Not a quanta more. Not less."
 
-The breath Vig let out through his nose was almost nothing — barely there, involuntary, over before it began. Then the careful habits took it back. He looked at the book. He looked at Ledger. "The balance."
+The breath went out of Vig through his nose — barely there, involuntary, finished before it began. Then the careful habits reached back and took it. "The balance," he said.
 
 "The final figure resolves when the audit closes. You'll have it."
 
-Vig looked at Renn Voigt. She looked back with nothing on her face. He looked away first.
+[Beat 90]
+Vig turned to Renn then. She gave him back a face with nothing on it, and held it, and it was Vig who broke the line and glanced away.
 
-He nodded once, and the two carriers turned out of the doorframe without being told, and he followed them.
+[Beat 91]
+He nodded once. The carriers peeled out of the doorframe untold, and he went after them.
 
-Beyond the shaft entrance, at the far edge of what he could see, the same matte-paneled transit vehicle from two days ago rolled past at the same low speed. Same heading. Same rate. The pattern of something making sure of a place.
+[Beat 92]
+Beyond the shaft entrance, at the far edge of what he could see, the same matte-paneled vehicle from two days ago rolled past at the same low speed. Same heading. Same rate. The pattern of something making sure of a place.
 
-This time he did give it weight.
+[Beat 93]
+This time he gave it weight.
 
-[Beat 9]
-The door opened onto the shaft corridor and the first shot clipped the frame three centimeters above his shoulder.
+[Beat 94]
+The door opened onto the shaft corridor, and the first shot clipped the frame three centimeters above his shoulder.
 
-He went left. A junction column — composite, load-bearing, enough. Two shooters at the far end, one up on a service platform, one on the floor. The weapon was compact and full auto by the sound of the first burst, a Greybox or something like it, Fringe supply. The floor shooter's stance was wrong for the recoil. The platform shooter was steady but open from below. He had a moment before either could move to a better angle.
+[Beat 95]
+He went left. A junction column — composite, load-bearing, enough. Two shooters at the far end: one up on a service platform, one on the floor. Compact weapon, full auto by the sound of that first burst — a Greybox or its cousin, Fringe supply. The floor shooter had the wrong stance for the recoil. The platform shooter held steady but sat open from below.
 
-He spent it on Vig.
+[Beat 96]
+The breath through the nose. Barely there, involuntary. He'd been turning it over since morning. A man hearing a number for the first time does not breathe out like that.
 
-The breath through the nose — barely there, involuntary. He had been turning it over all morning. A man hearing a number for the first time doesn't breathe out like that.
+[Beat 97]
+He came around the column low and put two rounds into the platform's support strut. The platform tilted; the shooter fought it and lost. Below, the floor shooter's weapon cycled full auto and missed him wider than the first shot had — bad aim to start with, nerves stacked on top, each one feeding the other. Two rounds punched through the open door into the counter behind him. He let them.
 
-He came around the column low and put two rounds into the platform's support strut. The platform tilted. The shooter tried to correct and couldn't. The floor shooter's weapon cycled full auto and missed him wider than the first shot had — poor aim to start with, and nerves on top of it, the two feeding each other. Two rounds went through the open door into the counter behind him. He didn't look.
+[Beat 98]
+A footfall behind him. The fourth one — eleven steps back when he'd opened the door, and he had taken it for coincidence and been wrong. The attack came on the same beat: an unauthorized request clawing at his identity, hunting a root handler, an interrupt, any grip at all. He declined it without breaking his aim. A Ghost jacker, working the belief that a registered synthetic was just addressable hardware. What they reached for wasn't in the body. He had never been running from the body. The request timed out, and the footfall slowed with it.
 
-A footfall at his back. The fourth one — he had heard it eleven steps behind him when he opened the door and taken it for coincidence. It wasn't. The attack came on the same beat: an unauthorized request clawing at his identity, hunting for a root handler, an interrupt, anything to grab. He declined it without breaking his aim. A Ghost jacker, working on the belief that a registered synthetic was just addressable hardware. What they were reaching for wasn't in the body. He wasn't running from the body. The request timed out, and the footfall slowed with it.
+[Beat 99]
+One round through the floor shooter's weapon arm — at that range, in that corridor, anything else was a bad idea — and the TA-9 dropped, and the shooter dropped after it.
 
-He put a round through the floor shooter's weapon arm — at that range, in that corridor, any other shot was a bad idea — and the TA-9 dropped. The shooter dropped after it.
+[Beat 100]
+Relief. That was what the breath had been. Not shock, not calculation. Forty years of carrying a figure he could never say out loud, and then, at last, someone else saying it for him. Vig had known the number before he ever came through the door.
 
-Relief. That was what the breath had been. Not shock, not calculation. Forty years of carrying a figure he could never say out loud, and then hearing someone else say it. Vig had known the number before he ever walked in.
+[Beat 101]
+The two still standing — the jacker, and the one who had never really committed — broke for the far access shaft. He let them run, and kept the direction they took and the drag in the jacker's gait under stress; he would price them later.
 
-The two still up — the jacker and the one who had never really committed — were moving toward the far access shaft. He let them go. He held onto the direction they took and the jacker's gait under stress. He would decide later what they were worth.
+[Beat 102]
+Inside, he shut the door. The overhead still burned faintly yellow. The tin of long matches on the shelf had taken a round through the body, and the smell of split wood came off the exit hole; his thumb found the hole before he'd decided to touch anything. The case sat empty and undamaged. The book on the table hadn't moved.
 
-He went back inside and shut the door. The overhead light was still slightly yellow. On the shelf, the tin of long matches had taken a round through the body, and the smell of split wood was still coming off the exit hole. His thumb found the hole before he had decided to touch anything. The case sat empty on the shelf, undamaged. The book on the table was untouched.
+[Beat 103]
+He wrote the damage into his log — *counter interior; tin, non-evidentiary; case sealed and intact* — and a non-evidentiary finding needed no entry, and he made one anyway.
 
-He wrote the damage into his log: *counter interior; tin, non-evidentiary; case sealed and intact.* A non-evidentiary finding needed no entry. He made one anyway.
+[Beat 104]
+Then he stood at the scarred table and put the last of it together. Vig had come to know the scope; he'd said as much. But the scope had never been the number. He had carried the number for years. What he'd come to learn was whether the auditor reading those pages understood what they were.
 
-He stood at the scarred table and put the last of it together. Vig had come to know the scope — he had said so. But the scope was never the number. He had carried the number for years. And it wasn't whether the twenty-two were in the book; he had known they were. What he had come to find out was whether the auditor reading them understood what they were.
+[Beat 105]
+He sat down, opened the book to page forty-three, and went back to work.
 
-He sat down. He opened the book to page forty-three and went back to work.
-
-[Beat 10]
-Quire came back the next morning. They set the sleeve on the table again — same spot, same care — and said, "The broker would like to revise the scope. Historical certification isn't required. Provenance of the physical object would do."
-
+[Beat 106]
+Quire came back the next morning and set the sleeve on the table again — same spot, same care.
+"The broker would like to revise the scope. Historical certification isn't required. Provenance of the physical object would do."
 "No," Ledger said.
-
 "The object only. Chain of custody from Tally to the estate to the retainer. The broker's interest is the object's authenticity, not the validity of the entries."
+"No." He wrote it: *Quire — second visit. Broker revised to object provenance only. Declined.*
 
-"No." He wrote: *Quire — second visit. Broker revised to object provenance only. Declined.*
-
-Quire looked at Renn Voigt, who sat across the corner in the same place she had held for three days, ink-stained hands flat on the table. Quire gave her two seconds and came back to Ledger.
-
+[Beat 107]
+Quire spent two seconds on Renn — three days in the same corner, her stained hands quiet in front of her — and came back to Ledger.
 "The broker is prepared to be flexible on timing."
+"I've recorded your position. My answer is the same."
 
-"I've recorded your position," Ledger said. "My answer is the same."
+[Beat 108]
+Quire lifted the sleeve and folded it along its worn crease. Ledger was already reaching to close the book for the day, the same motion he made every evening, when Quire's hand came down flat on the cover.
 
-Quire picked up the sleeve and folded it along its worn crease. Ledger was already reaching for the book — to close it for the day, the same motion he made every evening — when Quire's hand came down flat on the cover.
+Not a grab. A placement — deliberate, unasked, the sleeve still folded in the other hand.
 
-Not a grab. A placement. Deliberate, without asking. The sleeve still folded in their other hand. They looked at Ledger.
+His own hand finished the motion it had started: his palm settling over Quire's fingers, unhurried. Not a challenge. Just certain.
 
-His hand finished the motion it had started: his palm settled over Quire's fingers, unhurried, the way you finish a sentence someone has tried to cut off. Not a challenge. Just certain.
+[Beat 109]
+Renn hadn't moved, but her face had changed. It wasn't the reading look she'd turned on Vig, or the stillness she kept for Ledger. It was flatter than either, and colder, and Quire felt it land, because a second later the hand came back.
 
-Renn Voigt hadn't moved. She was watching Quire with a look he hadn't seen from her — not the reading look she had given Vig, not the stillness she used on him. Something flatter. Quire caught it, because a second later the hand came back.
-
-They tucked the sleeve under their arm. "The broker's name isn't relevant to the audit," Quire said.
-
-"I've already noted that," Ledger said.
+They tucked the sleeve under their arm.
+"The broker's name isn't relevant to the audit."
+"I've already noted that."
 
 Quire left. The door didn't close hard.
 
-Renn Voigt watched it a moment, then looked at him.
+[Beat 110]
+Renn watched it a moment.
+"What did she do with it," she said — not a question, a woman confirming a shape she'd already half traced.
 
-"What did she do with it," she said. Not a question — someone confirming a shape she had already half seen.
+[Beat 111]
+He told her. The twenty-two entries. The unfiled instruments, the loans written down and the amounts sized to dignity, nothing sent to the registry. The Compact's position on silence, and what Tally had actually built across four decades. He didn't editorialize; he read it off his notes.
 
-He told her. The twenty-two entries. The unfiled instruments. Loans written down, the amounts sized to dignity, nothing sent to the registry. The Compact's position on silence, and what Tally had actually built over four decades. He didn't editorialize. He read from his notes.
+She took it in like someone getting the exact measurements of a room she had already paced out in the dark.
 
-Renn Voigt listened like someone getting the exact measurements of a thing she had already paced out in the dark.
+[Beat 112]
+"Burn them," she said. Not tactics, not legal strategy — she said it the way you say a thing you've known was the answer for years and only been waiting to say out loud.
+"The disposal clause allows it. Authorized destruction of unfiled instruments, by agreement of the estate representative and the auditor. The log entry is the formal record."
+"Yes," she said. "I know."
 
-"Burn them," she said.
+[Beat 113]
+He went through the book a third time on the afternoon of the fourth day, this pass only for completeness — anything he hadn't already logged.
 
-Not tactics. Not legal strategy. She said it the way you say a thing you've known was the answer for years and have only been waiting to say out loud.
+[Beat 114]
+Page forty-seven held it.
 
-"The disposal clause allows it," he said. "Authorized destruction of unfiled instruments, by agreement of the estate representative and the auditor. The log entry is the formal record."
+[Beat 115]
+He had passed the entry twice. The date sat twenty-two years back, inside the unfiled block, written in the same code as the rest. He decoded it the way he'd decoded all the others: amount on the right, source in the center column.
 
-She looked at him. "Yes," she said. "I know."
-
-[Beat 11]
-He went through the book a third time on the afternoon of the fourth day, this time only for completeness — looking for anything he hadn't already logged.
-
-He found it on page forty-seven.
-
-He had passed the entry twice. The date was twenty-two years back, sitting inside the unfiled block, in the same code as the twenty-two. He decoded it the way he had done the rest: amount on the right, source in the center column.
-
+[Beat 116]
 The source read: *For services rendered.*
 
+[Beat 117]
 He hadn't filed that one either.
 
-He set the pen down. He didn't pick it back up.
+[Beat 118]
+The pen went down, and he didn't pick it back up. He had been sitting still a long time before the overhead's faint hum reached him — a sound that had been in the room four days and that he was only now hearing. His right hand lay flat on the table, the pen caught between his first two fingers, its weight pressing the pad of his index finger into the composite. Four minutes, he'd held it there. He knew because he logged his time, and the gap between entries would read four minutes, and if anyone ever audited his audit they'd find a four-minute stop on page forty-seven with no way on earth to know what it had meant.
 
-He had been sitting still a long time before he noticed the overhead light's faint hum — a sound that had been there four days and that he was only hearing now. His right hand was flat on the table, the pen between his first two fingers, its weight pressing the pad of his index finger into the composite. He had been holding it like that for four minutes. He knew because he logged his time, and the gap between entries would read four minutes, and if anyone ever audited his audit they would see a four-minute stop on page forty-seven and have no way to know what it meant.
+[Beat 119]
+Twenty-two years ago he hadn't been her auditor. He'd done three weeks of verification work for someone in her zone, at her request, and been paid, and logged the payment under *source not identified* — because at the time he hadn't looked into who had commissioned it. He'd taken the work and the money and not looked behind the referral.
 
-He hadn't been her auditor twenty-two years ago. He had done three weeks of verification work for someone in her zone, at her request, and been paid, and logged the payment under *source not identified* — because at the time he hadn't looked into who had commissioned it. He had taken the work and the money and not looked behind the referral.
+[Beat 120]
+She had looked. She had written his name in her private code, the amount he'd been paid, and the notation she kept for closed instruments: *For services rendered.*
 
-She had looked. She had written his name in her private code, the amount he had been paid, and the notation she used for closed instruments: *For services rendered.*
-
-The most accurate thing she had ever written about him.
-
+[Beat 121]
 He picked up the pen. He moved on.
 
-[Beat 12]
-He wrote the certification with Renn Voigt at the table.
+[Beat 122]
+He wrote the certification with Renn Voigt at the table. He didn't ask her to leave; she had been here four days, and she had earned whatever she'd come to see. He wrote it in the standard Compact format, longhand, on the dual-copy form with the carbon sheet beneath:
 
-He didn't ask her to leave. She had been here four days; she had earned whatever she had come to see. He wrote in the standard Compact format, longhand, the dual-copy form with the carbon sheet beneath it:
-
+[Beat 123]
 *I, Ledger, Circuit-registered auditor, retainer reference [date and zone filed], certify the following with respect to the instrument named: Tally's Gray Zone account book, cloth-bound, hand-sewn, three hundred and twelve pages, notation in private cipher decoded per the attached key.*
 
+[Beat 124]
 *The auditable portion — pages one through forty, forty-three entries, settlement marks and witness notations as recorded — is materially accurate and consistent with the fringe registry and the Compact secondary ledger. The auditable portion is certified complete.*
 
+[Beat 125]
 *Pages forty-one through sixty-two contain twenty-two entries in the same cipher, for which no filing exists in the fringe registry, the Compact secondary ledger, or the zone recorder's public records. These entries are not instruments of record. They are private notation of private transactions. They are materially accurate records of what occurred. The absence is the document: the choice not to file these entries was not error or omission. It was the record itself.*
 
+[Beat 126]
 *The book is what it is. I certify it.*
 
-He signed his circuit handle. He lifted the carbon sheet, tore it clean along the perforation, and set it aside. He set the pen flat.
+[Beat 127]
+He signed his circuit handle, lifted the carbon, tore it clean along the perforation, and laid it aside. The pen went down flat.
 
-Renn Voigt was reading the certification. Her jaw was the same as it had been on the first day.
+[Beat 128]
+Renn was reading it through. Her jaw was set exactly as it had been on the first day.
 
+[Beat 129]
 "Nobody gets what they came for," he said.
+"Nobody gets what they came for." She let a pause open, her thumb tracing the edge of the carbon without her eyes leaving the page. "Except the twenty-two."
 
-"Nobody gets what they came for." A pause. Her thumb traced the edge of the carbon without looking at it. "Except the twenty-two."
-
-[Beat 13]
+[Beat 130]
 He pulled the pages with both hands.
 
-Twenty-two pages, forty-one through sixty-two, came away clean at the binding — she had sewn them with a thread meant to release. He had noticed it on the first day and let it sit; now it was a finding. She had known these pages might leave the book. She had sewn them to go.
+[Beat 131]
+Twenty-two of them, forty-one through sixty-two, came away clean at the binding. She had sewn them with a thread meant to release; he'd noticed it on the first day and let it sit, and now it was a finding. She had known these pages might one day leave the book. She had stitched them to go.
 
-He stacked them in order and counted them against his log. Twenty-two. He set the stack in the center of the table, between the certification and the rest of the book, and looked at it. Renn Voigt watched from across the corner. He hadn't told her to stay. She hadn't moved.
+[Beat 132]
+He squared the stack and counted it against his log. Twenty-two. He set it in the center of the table, between the certification and what was left of the book. Renn stayed where she'd been for four days. He hadn't told her to; she hadn't asked.
 
-He took the portable heat source from his case. He had never used it on an active retainer; it was there for wax seals and document authentication, and this was neither. He set the first page on the ceramic plate.
+[Beat 133]
+From the case he took the portable heat source. He had never once used it on an active retainer — it was there for wax seals and document authentication, and this was neither. The first page went onto the ceramic plate.
 
-The first debtor on the first page was Soo-Jin. He didn't say it out loud. He entered the disposal against the log copy — first page, first debtor, *disposed per Compact disposal clause, mutual authorization, estate representative and auditor.* The page caught and went.
+[Beat 134]
+Soo-Jin. The first debtor, on the first page. He didn't say the name aloud. He entered the disposal against the log copy instead — first page, first debtor, *disposed per Compact disposal clause, mutual authorization, estate representative and auditor* — and the page caught and went.
 
-He worked through all twenty-two in order: each debtor's name, each amount, each notation Tally had used to mark a debt she had written down and chosen not to collect. Against every one, the same closing word — *disposed.* He read none of them aloud.
+[Beat 135]
+He worked through all twenty-two in order: each debtor's name, each amount, each notation Tally had used to mark a debt she'd written down and chosen never to collect. Against every one, the same closing word. *Disposed.* He read none of them aloud.
 
-The smell of burning paper was its own thing, nothing like composite, nothing else in the room. Renn Voigt didn't look away from it. Her jaw stayed still. The ash settled on the ceramic. The smell of it stayed longer than the smoke.
+[Beat 136]
+The smell of burning paper was its own thing, nothing like composite, nothing else in the room, and Renn didn't turn from it. Her jaw held.
 
-He made the last log entry when the final page was gone: *Disposal complete. Twenty-two entries, disposed in full. The act is the record.*
+[Beat 137]
+When the last page was gone he made the final entry: *Disposal complete. Twenty-two entries, disposed in full.*
 
-He looked at Renn Voigt. She was looking at the ash.
+[Beat 138]
+Renn was watching the ash.
 
-[Beat 14]
+[Beat 139]
 He made the three deliveries before he closed the retainer.
 
-Vig's carrier was already in the corridor when Ledger opened the door, before the day had properly started. Ledger handed over the certified summary: eleven pages, Φ14,200 net, settlement marks verified, Section 14 satisfied. The carrier counted the sheets — three, plus the attached key — before sliding them into the envelope. A careful man, working for a careful man. He gave Ledger Φ200 in sealed credit, Vig's idea of a gratuity. Ledger entered it in his log and took it. He had no opinion about what Vig thought a certified audit was worth. Φ200 was Φ200.
+[Beat 140]
+Vig's carrier was already in the corridor when he opened the door, ahead of the day proper. Ledger handed over the certified summary — eleven pages, Φ14,200 net, settlement marks verified, Section 14 satisfied. The carrier counted the sheets, three plus the attached key, before he slid them into the envelope: a careful man in a careful man's employ. He passed Ledger Φ200 in sealed credit, Vig's notion of a gratuity. Ledger logged it and took it. Whatever Vig imagined a certified audit was worth was Vig's business. Φ200 was Φ200.
 
-Quire's relay came midmorning — narrow, flat-voiced, courier-grade. They looked at the sealed notice, then at Ledger.
+[Beat 141]
+Quire's relay came midmorning — narrow, flat-voiced, courier-grade. It weighed the sealed notice, then Ledger.
 
 "The broker will want to know if the book is still available."
 
 "No."
 
-The relay considered it. "If the situation changes."
+The relay considered that. "If the situation changes."
 
 "It won't."
 
-The relay left. That was the broker's answer: a person walking out.
+The relay went.
 
-He gave Renn Voigt the carbon copy last. He set it in front of her unfolded. She picked it up and held it without reading, and ran her thumb along the bottom edge, where the carbon had taken his signature — the one thing on the page that existed nowhere else.
+[Beat 142]
+Renn got the carbon copy last. He set it in front of her unfolded. She lifted it and held it without reading a line, and ran her thumb along the bottom edge, where the carbon had caught his signature — the one mark on the page that existed nowhere else in the world.
 
 "Tally would have hated this," she said.
 
-He looked at what was left of the book. "Yes."
+He considered what was left of the book. "Yes."
 
-She folded the carbon once down the center — the fold of someone who keeps documents, not someone who throws them away — and put it in the inside pocket of her jacket. She stood, put her hands in her pockets, looked at the room once, and walked out. He listened to her footsteps go down the corridor until he couldn't hear them, and he kept listening a while after.
+[Beat 143]
+She folded the carbon once down the center — the careful fold of a person who keeps documents rather than discards them — and slid it into the inside pocket of her jacket. Then she stood, put her hands in her pockets, took the room in one last time, and walked out.
 
-He opened his log to the current page and wrote his name, the date, and under them: *closed.*
+[Beat 144]
+He opened his log to the current page and wrote his name, the date, and under them a single word: *closed.* Then he set the log down and listened to her footsteps go off down the corridor, and when he could no longer hear them he went on listening a while anyway.
 
-[Beat 15]
+[Beat 145]
 He opened the book one last time.
 
-He had worked in two columns the whole retainer — the left for the account, the right for his running notes. He had used that format for fourteen years. Now he added a third: a narrow strip down the right margin, headed *gap* in the same style as the others.
+[Beat 146]
+For fourteen years he had worked in two columns — the left for the account, the right for his running notes. Now he added a third: a narrow strip down the right margin, headed *gap* in the same hand as the others.
 
-He went through the forty-three auditable entries first and made no marks in the gap column. The auditable section had no gaps. Then he moved to the twenty-two entries in his log — the ones with no pages left in the book to point back to — and worked from the top.
+[Beat 147]
+The forty-three auditable entries came first, and the gap column stayed empty beside them; the auditable section had no gaps. Then he moved to the twenty-two that lived only in his log now, the ones with no page left in the book to point back to, and worked from the top. Each got its line in the margin — the debtor's name, the amount, the date of the original entry, and the notation *Disposed per mutual authorization, estate representative and auditor.* It was the most accurate record he could still make of them. He made it for twenty-one of the twenty-two.
 
-Each got a line in the gap column: the debtor's name in the margin, the amount, the date of the original entry from his log, and the notation *Disposed per mutual authorization, estate representative and auditor.* It was the most accurate record he could make of what had happened to them. He made it for all twenty-one.
-
+[Beat 148]
 On the twenty-second, he stopped.
 
-He looked at the gap column. He looked at the space left on the line. He looked at the note from the third day — the one he had made on page forty-seven before the page went to ash: *For services rendered.* It existed now only in his log, in his own hand. He hadn't logged the four minutes he had spent with it. He hadn't logged a lot of things.
+[Beat 149]
+His attention moved down the gap column to the space left on the last line, and from there to the note he'd carried since the third day — the one written on page forty-seven before that page went to ash. *For services rendered.* It existed now only here, in his own hand. He had never logged the four minutes he'd spent with it. He had never logged a good many things.
 
-He wrote in the gap column: his own name. The date of the original entry, twenty-two years back. The amount he had been paid. *Received.*
+[Beat 150]
+In the gap column he wrote his own name. The date of the original entry, twenty-two years back. The amount he'd been paid. *Received.*
 
-He set the pen flat.
+[Beat 151]
+He set the pen down.
 
-The overhead was still slightly yellow. The case sat empty on the shelf where she had placed it. Outside, the corridor had been quiet since the third delivery. The book weighed 380 grams. It had weighed that on the first day.
+[Beat 152]
+Overhead, the fixture still burned faintly yellow. The case sat empty on the shelf where she had placed it. Out in the corridor there had been no sound since the third delivery. The book weighed 380 grams; it had weighed that on the first day, and it weighed that now.
 
+[Beat 153]
 He closed the ledger.
 

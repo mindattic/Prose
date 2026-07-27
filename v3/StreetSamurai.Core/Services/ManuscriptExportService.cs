@@ -47,14 +47,19 @@ public class ManuscriptExportService
     /// </summary>
     public async Task<string> ExportMarkdownAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
-        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        // Resolution order: explicit param → node.Author → "MindAttic" (pen name)
+        author = string.IsNullOrWhiteSpace(author)
+            ? (string.IsNullOrWhiteSpace(node.Author) ? "MindAttic" : node.Author!.Trim())
+            : author.Trim();
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
         var md = new StringBuilder();
         md.AppendLine($"# {node.Title}");
+        if (!string.IsNullOrWhiteSpace(node.Subtitle))
+            md.AppendLine($"### {node.Subtitle!.Trim()}");
         md.AppendLine();
         if (!string.IsNullOrWhiteSpace(author))
         {
@@ -131,8 +136,11 @@ public class ManuscriptExportService
     /// <summary>Export the node as a KDP-ready PDF to Downloads; returns the path.</summary>
     public async Task<string> ExportPdfAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
-        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         var (manuscript, path) = await LoadAsync(nodeId, "pdf", ct);
+        // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
+        author = string.IsNullOrWhiteSpace(author)
+            ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
+            : author.Trim();
 
         // 6" × 9" KDP paperback trim (points: 1" = 72pt).
         // Margins: top/bottom 1", left/right 0.75" symmetric for screen reading.
@@ -152,6 +160,8 @@ public class ManuscriptExportService
                 p.Content().AlignCenter().AlignMiddle().Column(col =>
                 {
                     col.Item().Text(manuscript.Title).FontSize(28).Bold();
+                    if (!string.IsNullOrWhiteSpace(manuscript.Subtitle))
+                        col.Item().PaddingTop(8).Text(manuscript.Subtitle!.Trim()).FontSize(16).FontColor(Colors.Grey.Darken2);
                     if (!string.IsNullOrWhiteSpace(author))
                         col.Item().PaddingTop(24).Text(author!.Trim()).FontSize(14).Italic().FontColor(Colors.Grey.Darken1);
                     // Synopsis intentionally omitted from the title page (back-cover blurb only).
@@ -199,8 +209,11 @@ public class ManuscriptExportService
     /// <summary>Export the node as a KDP-ready EPUB 3 to Downloads; returns the path.</summary>
     public async Task<string> ExportEpubAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
-        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         var (manuscript, path) = await LoadAsync(nodeId, "epub", ct);
+        // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
+        author = string.IsNullOrWhiteSpace(author)
+            ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
+            : author.Trim();
         var authorName = author;
         var bookUuid = $"urn:uuid:{Guid.NewGuid()}";
 
@@ -235,11 +248,16 @@ public class ManuscriptExportService
     /// </summary>
     public async Task<string> ExportAudioTxtAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
-        author = string.IsNullOrWhiteSpace(author) ? "MindAttic" : author.Trim();
         var (manuscript, path) = await LoadAsync(nodeId, "txt", ct);
+        // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
+        author = string.IsNullOrWhiteSpace(author)
+            ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
+            : author.Trim();
 
         var sb = new StringBuilder();
         sb.AppendLine(manuscript.Title);
+        if (!string.IsNullOrWhiteSpace(manuscript.Subtitle))
+            sb.AppendLine(manuscript.Subtitle!.Trim());
         if (!string.IsNullOrWhiteSpace(author))
             sb.AppendLine($"by {author!.Trim()}");
         sb.AppendLine();
@@ -282,6 +300,7 @@ public class ManuscriptExportService
         body { font-family: Georgia, "Times New Roman", serif; line-height: 1.55; margin: 1em; }
         h1, h2, h3 { font-family: inherit; line-height: 1.2; }
         h1.book-title { font-size: 2em; margin: 1.5em 0 0.4em; text-align: center; }
+        p.book-subtitle { text-align: center; font-size: 1.2em; color: #555; margin: 0 0 1em; }
         p.author { text-align: center; margin-top: 2em; font-size: 1.1em; }
         p.synopsis { text-align: center; color: #666; font-style: italic; margin-top: 1em; }
         body.title-page { text-align: center; }
@@ -296,6 +315,9 @@ public class ManuscriptExportService
         // Synopsis intentionally omitted from the title page (back-cover blurb only);
         // it still ships as the ebook <dc:description> catalog metadata.
         var synopsis = "";
+        var subtitleHtml = string.IsNullOrWhiteSpace(m.Subtitle)
+            ? ""
+            : $"""<p class="book-subtitle">{EpubEsc(m.Subtitle!.Trim())}</p>""";
         return $"""
             <?xml version="1.0" encoding="UTF-8"?>
             <!DOCTYPE html>
@@ -303,6 +325,7 @@ public class ManuscriptExportService
             <head><title>{EpubEsc(m.Title)}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>
             <body class="title-page">
               <h1 class="book-title">{EpubEsc(m.Title)}</h1>
+              {subtitleHtml}
               <p class="author">{EpubEsc(author)}</p>{synopsis}
             </body></html>
             """;
@@ -414,7 +437,7 @@ public class ManuscriptExportService
 
     // ── shared load + beat walk ──────────────────────────────────────────────
 
-    private sealed record Manuscript(string Title, string Slug, string? Description, List<Chapter> Chapters);
+    private sealed record Manuscript(string Title, string? Subtitle, string Slug, string? Description, string? Author, List<Chapter> Chapters);
     private sealed record Chapter(string? Heading, List<ContentBlock> Blocks);
     /// <summary>One rendered unit of chapter content: either an ordinary body paragraph
     /// (<c>IsSubHeading=false</c>) or a genuine mid-chapter sub-heading like "Three Barrels"
@@ -504,45 +527,8 @@ public class ManuscriptExportService
                     chapters[i] = chapters[i] with { Heading = $"Chapter {i + 1}" };
         }
 
-        // Mirror the node's series/book ancestry in the output path so a story
-        // that belongs to a series publishes one (or more) levels deeper — e.g.
-        // "<base>/Street Samurai/Bushido Coda/Bushido Coda V5.docx" — while a
-        // standalone story stays at "<base>/<Title>/...".
-        var ancestors = new List<string>();
-        var parentId = node.ParentNodeId;
-        for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
-        {
-            var parent = await db.Nodes.AsNoTracking()
-                .Where(s => s.Id == pid)
-                .Select(s => new { s.Title, s.ParentNodeId })
-                .FirstOrDefaultAsync(ct);
-            if (parent is null) break;
-            ancestors.Insert(0, SanitizeTitle(parent.Title));   // top-down order
-            parentId = parent.ParentNodeId;
-        }
-
         var dir = ResolveExportDir(universeSlug);
-        var safeTitle = SanitizeTitle(node.Title);
-
-        // De-dup: if a sibling node produces the same folder name, prefix with
-        // NodeCode — or GUID7 if NodeCode is null or shared with a colliding sibling.
-        var siblings = await db.Nodes.AsNoTracking()
-            .Where(s => s.Id != nodeId && s.ParentNodeId == node.ParentNodeId)
-            .Select(s => new { s.Title, s.NodeCode })
-            .ToListAsync(ct);
-        if (siblings.Any(s => SanitizeTitle(s.Title) == safeTitle))
-        {
-            var code = node.NodeCode;
-            if (string.IsNullOrWhiteSpace(code) ||
-                siblings.Any(s => SanitizeTitle(s.Title) == safeTitle && s.NodeCode == code))
-                code = node.Id.ToString("N")[..7];
-            safeTitle = $"[{code}] {safeTitle}";
-        }
-
-        var pathParts = new List<string> { dir };
-        pathParts.AddRange(ancestors);
-        pathParts.Add(safeTitle);
-        var nodeDir = Path.Combine(pathParts.ToArray());
+        var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, dir, ct);
         Directory.CreateDirectory(nodeDir);
 
         // Delete stale prior-version files of this format so the node folder keeps
@@ -555,9 +541,9 @@ public class ManuscriptExportService
             catch (UnauthorizedAccessException) { }
         }
 
-        var path = Path.Combine(nodeDir, $"{safeTitle} V{node.Version}.{ext}");
+        var path = Path.Combine(nodeDir, $"{fileBaseName} V{node.Version}.{ext}");
 
-        return (new Manuscript(node.Title, node.Slug, node.Description, chapters), path);
+        return (new Manuscript(node.Title, node.Subtitle, node.Slug, node.Description, node.Author, chapters), path);
     }
 
     private string ResolveExportDir(string? universeSlug = null)
@@ -578,15 +564,6 @@ public class ManuscriptExportService
 
     private static bool LooksLikeChapterHeading(string title) =>
         ChapterOrInterludeHeadingPattern.IsMatch(title);
-
-    private static string SanitizeTitle(string title)
-    {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        invalid.Add('\''); invalid.Add('’');
-        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
-        kept = Regex.Replace(kept, @"\s+", " ").Trim();
-        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
-    }
 
     private static IEnumerable<string> SplitParagraphs(string text) =>
         text.Replace("\r\n", "\n").Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);

@@ -2,9 +2,9 @@
   "nodeCode": "MXG",
   "slug": "magenta-gunmetal-019f00a6",
   "title": "Magenta \u0026 Gunmetal",
-  "generatedAtUtc": "2026-07-25 23:04:55Z",
-  "totalBeats": 16,
-  "covered": 16,
+  "generatedAtUtc": "2026-07-27 09:13:50Z",
+  "totalBeats": 281,
+  "covered": 0,
   "chapterGranular": false,
   "storyScope": {
     "TemporalScheme": "linear",
@@ -16,297 +16,4257 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 16
+    "MISSING_MEANING": 281,
+    "UNSCORED": 281,
+    "NO_CONSTRUCTION": 265
   },
   "beats": [
     {
-      "BeatId": "019f00b0-d892-702d-96cb-690051709cda",
-      "Number": 4745,
+      "BeatId": "019fa005-9a37-77ef-8550-9a8ab7deff2d",
+      "Number": 6906,
       "Chapter": "Chapter 1 \u2014 The Job",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Rook\u0027s competence, wariness, and the corporate-saturated world she moves through, grounding the reader in her perspective and the story\u0027s setting.",
       "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 6479,
+      "BeatTags": [],
+      "ProseLength": 20,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b0-e180-7b32-84e1-891cd8b2418a",
-      "Number": 4746,
+      "BeatId": "019fa005-9a57-75f9-9f25-6585cc21d2b0",
+      "Number": 6907,
       "Chapter": "Chapter 1 \u2014 The Job",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Introduces Agwu as a capable ally and signals the professional, transactional nature of the crew\u0027s relationships before the job begins.",
       "EscalationTarget": "3",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 12453,
+      "ProseLength": 355,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b0-ec7b-70f6-80ec-81a27efb2550",
-      "Number": 4747,
+      "BeatId": "019fa005-9a59-7901-9a98-612c3abf2c33",
+      "Number": 6908,
       "Chapter": "Chapter 1 \u2014 The Job",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Builds tension through patient surveillance, establishing Compound 7 as the target and Rook\u0027s disciplined, solitary methodology.",
       "EscalationTarget": "3",
       "EventType": "surveillance",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 11044,
+      "ProseLength": 594,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b0-f606-7ec9-a460-d2f6750a52d3",
-      "Number": 4748,
+      "BeatId": "019fa005-9a59-7aed-9c9e-1442ed229bf8",
+      "Number": 6909,
       "Chapter": "Chapter 1 \u2014 The Job",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals the crew\u0027s plan in operational detail, establishing each member\u0027s role and the specific vulnerabilities they intend to exploit.",
       "EscalationTarget": "4",
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 7229,
+      "ProseLength": 244,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b1-0063-7b5b-8efc-0580b52b1960",
-      "Number": 4749,
+      "BeatId": "019fa005-9a59-7c1b-90ee-8bf7ffcedfbe",
+      "Number": 6910,
       "Chapter": "Chapter 1 \u2014 The Job",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns the job\u0027s premise by revealing Ohara is both client and cargo, escalating stakes and exposing the hidden complexity Rook has been working inside.",
       "EscalationTarget": "5",
       "EventType": "confession",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot",
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 8946,
+      "BeatTags": [],
+      "ProseLength": 419,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b1-09c3-7304-a725-ef932a398abd",
-      "Number": 4750,
+      "BeatId": "019fa005-9a59-7ff4-b1c5-0f61ecca36b1",
+      "Number": 6911,
       "Chapter": "Chapter 1 \u2014 The Job",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates danger by revealing a sophisticated, predictive threat tracking the crew\u0027s digital residue, signaling they are outmatched in ways they don\u0027t yet understand.",
       "EscalationTarget": "6",
       "EventType": "chase",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 9449,
+      "BeatTags": [],
+      "ProseLength": 166,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11da-2c3c-7375-a6f1-f1b94eefdfeb",
-      "Number": 4905,
-      "Chapter": "Chapter 2 \u2014 The Escalati",
-      "ChapterIndex": 1,
+      "BeatId": "019fa005-9a59-7f57-ae61-0ac5c3318864",
+      "Number": 6912,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Deepens the threat by revealing the pursuers are not chasing but herding, shifting the crew from reactive to trapped and raising the cost of Rook\u0027s earlier compromise.",
       "EscalationTarget": "7",
       "EventType": "pursuit",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 4291,
+      "ProseLength": 270,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b1-1405-70df-9c38-fb1f6c5dd9c1",
-      "Number": 4751,
-      "Chapter": "Chapter 2 \u2014 The Escalati",
-      "ChapterIndex": 1,
+      "BeatId": "019fa005-9a59-7b78-a2e5-b9f80dcb0696",
+      "Number": 6913,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off Boiler\u0027s earlier reconnaissance by turning his bridge knowledge into the crew\u0027s tactical counter-move against PEREGRINE\u0027s encirclement.",
       "EscalationTarget": "8",
       "EventType": "evasion",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 9193,
+      "ProseLength": 27,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b1-1d86-7d2a-aa10-106aaabd9c8c",
-      "Number": 4752,
-      "Chapter": "Chapter 2 \u2014 The Escalati",
-      "ChapterIndex": 1,
+      "BeatId": "019fa005-9a5a-7a27-b874-a0781fddf22b",
+      "Number": 6914,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Raises the stakes by revealing Ohara\u0027s deliberate, months-long sabotage of Axiom\u0027s data, making her irreplaceable and the crew\u0027s exposure permanent.",
       "EscalationTarget": "8",
       "EventType": "confession",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 11366,
+      "BeatTags": [],
+      "ProseLength": 233,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11da-608e-7382-a89a-d1a13b4fb867",
-      "Number": 4906,
-      "Chapter": "Chapter 2 \u2014 The Escalati",
-      "ChapterIndex": 1,
+      "BeatId": "019fa005-9a5a-767c-a15a-c2721bd23331",
+      "Number": 6915,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Delivers the act\u0027s crisis point as PEREGRINE closes in on the safehouse, converting accumulated tension into immediate physical threat.",
       "EscalationTarget": "9",
       "EventType": "ambush",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 1804,
+      "ProseLength": 733,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f21af-204c-752c-b7e5-14cd25e63ba0",
-      "Number": 4966,
-      "Chapter": "Chapter 2 \u2014 The Escalati",
-      "ChapterIndex": 1,
+      "BeatId": "019fa005-9a5a-70ed-9561-507625216a97",
+      "Number": 6916,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes PEREGRINE as a superior tactical threat by showing they read and neutralized the crew\u0027s contingency plan before it could execute, raising the stakes immediately.",
       "EscalationTarget": "9",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 3713,
+      "BeatTags": [],
+      "ProseLength": 681,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b1-2f8d-763a-9ff3-46a7b7f5d914",
-      "Number": 4754,
-      "Chapter": "Chapter 2 \u2014 The Escalati",
-      "ChapterIndex": 1,
+      "BeatId": "019fa005-9a5a-71ba-a315-515066d839b0",
+      "Number": 6917,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Gault\u0027s betrayal and his own accounting of it, turning him from ally to cautionary figure while grounding the crew\u0027s vulnerability in institutional complicity rather than simple treachery.",
       "EscalationTarget": "5",
       "EventType": "betrayal",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 6406,
+      "ProseLength": 80,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b1-3973-7892-9ab5-3c633c905eff",
-      "Number": 4755,
-      "Chapter": "Chapter 3 \u2014 The Lake Pla",
-      "ChapterIndex": 2,
+      "BeatId": "019fa005-9a5a-7f98-b78a-b6d5918c8bbb",
+      "Number": 6918,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates tension by staging the final approach to the objective, using the hostile environment and visible enemy presence to make the crew\u0027s disadvantage concrete and physical.",
       "EscalationTarget": "7",
       "EventType": "departure",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 7581,
+      "BeatTags": [],
+      "ProseLength": 177,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f11da-93fa-77dc-8e5a-8e06083d16aa",
-      "Number": 4907,
-      "Chapter": "Chapter 3 \u2014 The Lake Pla",
-      "ChapterIndex": 2,
+      "BeatId": "019fa005-9a5a-7246-8dc7-28ae803b97c4",
+      "Number": 6919,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns Rook\u0027s relationship to her crew by paying off her prior emotional withholding \u2014 she has told them the truth and they stayed, reframing the mission as chosen rather than transactional.",
       "EscalationTarget": "8",
       "EventType": "approach",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 2623,
+      "BeatTags": [],
+      "ProseLength": 507,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b1-59b6-7b78-937c-a1b5904f8460",
-      "Number": 4757,
-      "Chapter": "Chapter 3 \u2014 The Lake Pla",
-      "ChapterIndex": 2,
+      "BeatId": "019fa005-9a5a-730d-b4c2-182f82190e6a",
+      "Number": 6920,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Delivers the assault\u0027s opening beats to establish each crew member\u0027s competence under pressure, converting the plan from abstraction into demonstrated capability.",
       "EscalationTarget": "9",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 16523,
+      "ProseLength": 356,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b1-62a0-7c7b-99e5-445de15a84e1",
-      "Number": 4758,
-      "Chapter": "Chapter 3 \u2014 The Lake Pla",
-      "ChapterIndex": 2,
+      "BeatId": "019fa005-9a5a-7062-96bb-b2d5fb4d04d2",
+      "Number": 6921,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the Gault betrayal by revealing the identical price Axiom paid him, forcing Rook to sit with the symmetry of complicity and the cost of a door.",
       "EscalationTarget": "3",
       "EventType": "exchange",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 5000,
+      "BeatTags": [],
+      "ProseLength": 58,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5a-7f74-a91b-6dfba5d5b9d4",
+      "Number": 6922,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 220,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5a-7098-92b2-af28752191c5",
+      "Number": 6923,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 142,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5a-730e-b006-5bd429ba8b48",
+      "Number": 6924,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 205,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5a-7e58-82f1-463805409de8",
+      "Number": 6925,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 304,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7396-b949-3d4b8ddbab59",
+      "Number": 6926,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 123,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7f0d-88b3-04cd50811a85",
+      "Number": 6927,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 351,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7d36-a12d-6b4721d8e85e",
+      "Number": 6928,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 180,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7492-be33-8a9ccd71b0ba",
+      "Number": 6929,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 222,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-76a3-9859-fb967af7a1af",
+      "Number": 6930,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 539,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-78c8-940b-97fa9f70d069",
+      "Number": 6931,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 325,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7593-8fbc-0cc3e96ee976",
+      "Number": 6932,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2398,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7f85-be47-2b631cf47205",
+      "Number": 6933,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 996,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7e5e-91b8-70749bd58baf",
+      "Number": 6934,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1612,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7338-b73b-54c78b0357d2",
+      "Number": 6935,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1061,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-77bc-824f-6f31a3ea789f",
+      "Number": 6936,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1664,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-78db-9980-11938cf32a73",
+      "Number": 6937,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 378,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7243-b025-bc10e919a7f4",
+      "Number": 6938,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1184,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7bd7-bfda-1845c612550f",
+      "Number": 6939,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1632,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-78d9-9726-26d9b03d5a00",
+      "Number": 6940,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 408,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7d5e-894f-cf3b95fd23d8",
+      "Number": 6941,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 163,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7368-a9c3-4ff14a72414f",
+      "Number": 6942,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 876,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7296-9cc0-cea84eb6b22c",
+      "Number": 6943,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 236,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-728d-8de5-d686cea6ee42",
+      "Number": 6944,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 569,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-79ae-80e9-107a5994fd06",
+      "Number": 6945,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2104,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-787f-948e-061a6d7a3a4d",
+      "Number": 6946,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1139,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7cac-b8cd-d6aa030214cd",
+      "Number": 6947,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1518,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-799c-bc43-6dc5db4db634",
+      "Number": 6948,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 141,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-749a-aba7-6828b8ec1e5d",
+      "Number": 6949,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 583,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7618-8ec3-81599c02cb18",
+      "Number": 6950,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 460,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-78d2-a155-ba9b0d54f32b",
+      "Number": 6951,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 731,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-77f9-ae11-213ca8607822",
+      "Number": 6952,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 470,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5b-7ceb-86b2-27596a4ded06",
+      "Number": 6953,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 408,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7d07-ae5d-d4da1079f4fb",
+      "Number": 6954,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 423,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7d37-9c85-4194bea9a6d6",
+      "Number": 6955,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 388,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7bd0-b5ed-dbd26e22a88a",
+      "Number": 6956,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 422,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-70ea-ad67-d40ea891e147",
+      "Number": 6957,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 402,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7876-8222-a09ddd27237e",
+      "Number": 6958,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 412,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7030-88e6-341e4da834e3",
+      "Number": 6959,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 648,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-71b4-aa6d-b80637f57220",
+      "Number": 6960,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 764,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7fc4-8714-211fb699b09b",
+      "Number": 6961,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 235,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-71ff-aa25-0fa807df114a",
+      "Number": 6962,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 620,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-73a5-acb2-74e1f87c7a5e",
+      "Number": 6963,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7f86-a008-ed58beba1bc0",
+      "Number": 6964,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 468,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-78d6-bb72-4eee5cc8916f",
+      "Number": 6965,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 564,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7a80-9552-9e41ed4c4fe3",
+      "Number": 6966,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 309,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-74ba-ad96-adcb11e5a6eb",
+      "Number": 6967,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 126,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7785-a943-a7a3c3aaca78",
+      "Number": 6968,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 282,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7d68-98ed-850b37aff1cb",
+      "Number": 6969,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 230,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-778e-a5b5-a213c17ddc8e",
+      "Number": 6970,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 373,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7cef-b6cb-74cfdab5e3a1",
+      "Number": 6971,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 116,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7411-a0df-7d31b3762ba0",
+      "Number": 6972,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 343,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-72cd-9e1e-fa50f4c49fb0",
+      "Number": 6973,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 204,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7953-83d0-3c6d1f62fcc0",
+      "Number": 6974,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 226,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-71a7-b0c8-a7f61acc7b3a",
+      "Number": 6975,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 589,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-73ad-ac25-3aa40239e9df",
+      "Number": 6976,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 445,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-70b5-9dc7-8d78a9bc33b7",
+      "Number": 6977,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 67,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7b3d-988a-acf63df9a7a4",
+      "Number": 6978,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 491,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-74b7-826f-63c5f4932875",
+      "Number": 6979,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 172,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7983-a6bc-7f58b1e06fa7",
+      "Number": 6980,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 512,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7afa-aa82-89883a126be9",
+      "Number": 6981,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 56,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-78b3-af0b-923fd3138109",
+      "Number": 6982,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 226,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5c-7f4e-8041-1658aa39deb6",
+      "Number": 6983,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 309,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7513-9a49-f54f9072fd72",
+      "Number": 6984,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 618,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7d49-a893-087d9fa904a3",
+      "Number": 6985,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 328,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7e11-9edd-d04d0a3ba200",
+      "Number": 6986,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 302,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7b5c-802e-a033915cfcef",
+      "Number": 6987,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 455,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7711-96be-f318297ce4b7",
+      "Number": 6988,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 206,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7a46-9e78-2cc24e4176e5",
+      "Number": 6989,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 402,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7ab0-911d-ef17c6822f48",
+      "Number": 6990,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 490,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-75f6-8d68-aeb2e327aa1c",
+      "Number": 6991,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 721,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-70bb-9386-6a4455f154c2",
+      "Number": 6992,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 211,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7c2f-8e37-df72be89bb46",
+      "Number": 6993,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 610,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7848-b844-bc765f746718",
+      "Number": 6994,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 574,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7e5a-8858-1bff0fe7638c",
+      "Number": 6995,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 363,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-76d9-9885-3e6423735a4c",
+      "Number": 6996,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 470,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-75e6-9c75-7f5633098d26",
+      "Number": 6997,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 386,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-76cd-a615-66c3e20aa708",
+      "Number": 6998,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 599,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7954-aa2e-ffecc3ae9e86",
+      "Number": 6999,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 341,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-70da-bd63-ed0b28266165",
+      "Number": 7000,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 701,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-74f2-81ae-ef51387c660a",
+      "Number": 7001,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 22,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-76ba-b147-764235365c9f",
+      "Number": 7002,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 643,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7032-9a73-a9b37d6cc7b1",
+      "Number": 7003,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 534,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7161-ae5d-a55e96fd7a03",
+      "Number": 7004,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 254,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-71df-9bbd-90af2aba0663",
+      "Number": 7005,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 947,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-74a9-b82d-96c6302769d0",
+      "Number": 7006,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 307,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-75d8-8a47-e079bc0e3477",
+      "Number": 7007,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 772,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7d47-a0c2-332f714ecbec",
+      "Number": 7008,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 567,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7d52-b779-c2811ddf1df1",
+      "Number": 7009,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 417,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-7c7d-ae9a-98635ccfaed3",
+      "Number": 7010,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 131,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-77b3-94ab-8724d28db0d4",
+      "Number": 7011,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 599,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-720e-942f-0af02119cf27",
+      "Number": 7012,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 537,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5d-75be-8ee1-5b4395b46b43",
+      "Number": 7013,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 886,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5e-7770-935f-8d5117133a06",
+      "Number": 7014,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 549,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5e-7db6-acd8-fff357691874",
+      "Number": 7015,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 328,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5e-7e14-a2d1-8447d83ea86c",
+      "Number": 7016,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 545,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa005-9a5e-7b06-ab7e-90dfb959b228",
+      "Number": 7017,
+      "Chapter": "Chapter 1 \u2014 The Job",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 686,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7120-789e-8c39-057e73030756",
+      "Number": 7018,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 444,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7120-7d7d-b837-fddc69de729a",
+      "Number": 7019,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 121,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7120-7796-a849-5e30d512926d",
+      "Number": 7020,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 472,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7120-781f-a8c0-ba17e8c7b060",
+      "Number": 7021,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 408,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7120-7e1d-9507-c114a82284af",
+      "Number": 7022,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 855,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-735c-b425-1ba79d31dbfb",
+      "Number": 7023,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 30,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-793f-984c-a441111e9af4",
+      "Number": 7024,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 330,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-7132-9cee-441a2422226a",
+      "Number": 7025,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 372,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-749f-928f-8353407735a0",
+      "Number": 7026,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 588,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-71d6-ae41-6004b389bde8",
+      "Number": 7027,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 432,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-7f44-9a90-d9d187630be4",
+      "Number": 7028,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 194,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-720e-9689-0c99b22f84d8",
+      "Number": 7029,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 30,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-715d-b7dc-a6635a78d4c0",
+      "Number": 7030,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 288,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-77ea-8d86-a620aaacdc13",
+      "Number": 7031,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 49,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-78fa-ab25-bf5a331fae65",
+      "Number": 7032,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 570,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-72a1-b5fd-e64d0330c96f",
+      "Number": 7033,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 666,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-758a-913a-bc94adcb9c33",
+      "Number": 7034,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 481,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-73e6-a378-3ca5f4b683c4",
+      "Number": 7035,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 234,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-718a-a72c-34dfbce58586",
+      "Number": 7036,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 281,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-714d-b308-d0fde3c7b74e",
+      "Number": 7037,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 466,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-797d-9804-76fb2bba8a7e",
+      "Number": 7038,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 310,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-75ce-8832-388c855bb270",
+      "Number": 7039,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 698,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-7ead-8cd1-329167a6b5a3",
+      "Number": 7040,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 747,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7121-71a3-ad1f-83fd80f0e18b",
+      "Number": 7041,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 199,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-74b9-99ac-b73c59cc16a5",
+      "Number": 7042,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 604,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7976-ae35-a562f318eccb",
+      "Number": 7043,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 683,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-71a6-b1b9-a2668370282e",
+      "Number": 7044,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7431-838b-2826ecbd813e",
+      "Number": 7045,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 535,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7204-8d16-95c7b64407ca",
+      "Number": 7046,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 92,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-78af-9037-fe483c97fa9d",
+      "Number": 7047,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 719,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-760b-a83e-db923416f197",
+      "Number": 7048,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 675,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-775a-a9ed-c2edec854880",
+      "Number": 7049,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 375,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7844-9efa-20cc782925e4",
+      "Number": 7050,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 229,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7024-8c68-e3b969421e9f",
+      "Number": 7051,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 525,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-76dd-a822-a1dca9a089fd",
+      "Number": 7052,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1500,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7ee9-bba8-67192186bc69",
+      "Number": 7053,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1518,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7d79-85f8-919cc23d4447",
+      "Number": 7054,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 371,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7773-a5d2-4cd620169bc1",
+      "Number": 7055,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 615,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-73e0-82db-682adcb02418",
+      "Number": 7056,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 450,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-7e70-831b-f94797707cd9",
+      "Number": 7057,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1081,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-70fe-8b29-be27bf4dda1f",
+      "Number": 7058,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 928,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-79d1-adb3-ee89e398769e",
+      "Number": 7059,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 185,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7122-703f-94ed-fe282f4ff4a7",
+      "Number": 7060,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 882,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-72a9-9271-45fbea102789",
+      "Number": 7061,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 526,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7ddc-9617-e20e1a8ce83f",
+      "Number": 7062,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 522,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7a0a-8bd4-b58e70a23a76",
+      "Number": 7063,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 532,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7447-bb48-b847897f1afb",
+      "Number": 7064,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 131,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-777d-89e6-1dd176723ae1",
+      "Number": 7065,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 897,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7ee4-8836-5ec2af6d71f8",
+      "Number": 7066,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 404,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7d79-98d1-59782b7a5f9a",
+      "Number": 7067,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 266,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7140-86eb-8a4ecc520a9e",
+      "Number": 7068,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 92,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-759b-a7a1-d9db5eb63417",
+      "Number": 7069,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 51,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7f46-9a91-efe7ebfec4c5",
+      "Number": 7070,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 572,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-734e-82ec-2b37f0981167",
+      "Number": 7071,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 86,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7869-9d39-243008ce40af",
+      "Number": 7072,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 417,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7300-8810-06b5dd7b8ef2",
+      "Number": 7073,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 580,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7d39-b421-ebb0c096142d",
+      "Number": 7074,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 38,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-755d-a457-0df5de30aad2",
+      "Number": 7075,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 683,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-7378-9ca8-e547469da5eb",
+      "Number": 7076,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 69,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7123-78b3-bf11-0ea87dd05612",
+      "Number": 7077,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 27,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7d3a-9537-9569ebbb9f04",
+      "Number": 7078,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 837,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7711-bc11-762991a9678d",
+      "Number": 7079,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 803,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7c04-bddc-23b0f299fac6",
+      "Number": 7080,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 77,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7a2f-9c2e-10e393d01ff4",
+      "Number": 7081,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 975,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7125-a9f1-e4115abd2a8b",
+      "Number": 7082,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 17,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-77cd-824c-81f9d9342fb3",
+      "Number": 7083,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 174,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7d38-9057-c415c875f876",
+      "Number": 7084,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 374,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7898-b5c8-df9543fd2710",
+      "Number": 7085,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 256,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7d36-a54f-0bb4c208f0b4",
+      "Number": 7086,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 50,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7d3e-a905-f651bf77a8cc",
+      "Number": 7087,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 236,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7dce-858e-f580a39728e4",
+      "Number": 7088,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 464,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-782c-b79d-2c1356fe9a79",
+      "Number": 7089,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 410,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-71a4-acbe-48eb2e8a2b88",
+      "Number": 7090,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 94,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7100-b5ff-8c95e1d1353a",
+      "Number": 7091,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 275,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7fae-925c-0ebc60f8f54a",
+      "Number": 7092,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 243,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-74b8-bc27-1db63d089e5c",
+      "Number": 7093,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 309,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7ad2-9139-e7ec4717287b",
+      "Number": 7094,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 328,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-7c04-a9e2-ab774ca68c46",
+      "Number": 7095,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 125,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7124-73c5-acce-cad4f9eacfb8",
+      "Number": 7096,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 118,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7882-a616-ca17e8d5deac",
+      "Number": 7097,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 286,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-769c-a06e-cfac440a5826",
+      "Number": 7098,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 214,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-76f4-a431-2b0f6640552f",
+      "Number": 7099,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 282,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7453-a8e4-c7001cc30d7d",
+      "Number": 7100,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 54,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7f12-bd46-aab034105996",
+      "Number": 7101,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 376,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7be1-a2b4-7f0193ca40cf",
+      "Number": 7102,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 126,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7da3-b989-70932c9e5d73",
+      "Number": 7103,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 332,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7bc6-9d30-49f09a6c711c",
+      "Number": 7104,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 394,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-700b-91ac-d55e4eb308ed",
+      "Number": 7105,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 121,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7de0-8a73-0de56b701383",
+      "Number": 7106,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 209,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7fe8-8697-e3e4d37615de",
+      "Number": 7107,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 216,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7785-830e-c610b46d0f19",
+      "Number": 7108,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 218,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa007-7125-7cfd-80f3-7b2b7610d1b2",
+      "Number": 7109,
+      "Chapter": "Chapter 2 \u2014 The Escalati",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 255,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17d9-7f59-9f08-c50d8c1bf598",
+      "Number": 7110,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 103,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17d9-76f5-a55d-f79c0270ef20",
+      "Number": 7111,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 506,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17d9-7b62-b87d-7705e830e216",
+      "Number": 7112,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 99,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17d9-71e1-a909-31fad5d024c7",
+      "Number": 7113,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 356,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17d9-736d-a5f2-f0bb93df6105",
+      "Number": 7114,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 151,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17d9-7a59-8eaf-de31dc4846e9",
+      "Number": 7115,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 648,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7009-807c-2d072e93e9da",
+      "Number": 7116,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 478,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7070-8a6e-07b1aff46699",
+      "Number": 7117,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 225,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7966-b228-5caa37fbb433",
+      "Number": 7118,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 518,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7be3-aa6a-c9d0a35f3581",
+      "Number": 7119,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 288,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-777e-9b1f-272a5336b528",
+      "Number": 7120,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 138,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7299-b641-408ffaeb21e7",
+      "Number": 7121,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 428,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-789a-8450-5e90797c84cf",
+      "Number": 7122,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 418,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7981-a00f-6865500a4f6b",
+      "Number": 7123,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 181,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7a6a-b6fb-5aa90db19a16",
+      "Number": 7124,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 100,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7a2d-a87b-1829437455f5",
+      "Number": 7125,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 975,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-76a5-9e5b-1f1f038b92b9",
+      "Number": 7126,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 98,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-773e-89eb-59fe8a16e4b1",
+      "Number": 7127,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 340,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-749e-9eda-c6fb0a902126",
+      "Number": 7128,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 383,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7a2f-a81a-20526d1e1ee7",
+      "Number": 7129,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 41,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7086-8dd4-b7896b0e91ab",
+      "Number": 7130,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 310,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-79e1-8de5-370756c1b568",
+      "Number": 7131,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 344,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-72ef-bd47-14cca8e95ce9",
+      "Number": 7132,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 19,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7cef-92ae-89d485971eef",
+      "Number": 7133,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 253,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7b7c-b9a7-f03df8866ef2",
+      "Number": 7134,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 61,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7a53-9144-a89e3540b745",
+      "Number": 7135,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 63,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-720b-8106-566dedbb1b52",
+      "Number": 7136,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 609,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-72c6-97c4-383f87d16504",
+      "Number": 7137,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 517,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-74aa-a86c-f4d318cae42b",
+      "Number": 7138,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 646,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-79db-9794-d50dcabfb146",
+      "Number": 7139,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 850,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-77e3-92d4-24de02850fc6",
+      "Number": 7140,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 239,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-727d-a93f-047fce2b6228",
+      "Number": 7141,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 290,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7c7e-86e1-52a71b7b9eac",
+      "Number": 7142,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 806,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7fed-ae09-20a76731d81e",
+      "Number": 7143,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 538,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7014-8d1c-a9b97763f327",
+      "Number": 7144,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 599,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-737b-a3d4-fbb786c8369e",
+      "Number": 7145,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 364,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-78e9-b0bc-5ab9a9c57be4",
+      "Number": 7146,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 309,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-76c6-b7df-a1c5a4951e3f",
+      "Number": 7147,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 659,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-78d9-86b9-682829bf1b58",
+      "Number": 7148,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 312,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7e64-8749-35c02be7c0a9",
+      "Number": 7149,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 655,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7da2-a3b4-6f4b0b2c94d4",
+      "Number": 7150,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 192,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-7567-9b90-e09429160d25",
+      "Number": 7151,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 470,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-726c-bff7-e8e01061fddd",
+      "Number": 7152,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2376,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17da-73eb-a69e-def1dd6d1d21",
+      "Number": 7153,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 314,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7fbf-9613-fc139ab86233",
+      "Number": 7154,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 950,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7c8a-b86d-6ac1098eb2b8",
+      "Number": 7155,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 360,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-74df-9d41-a7867c62740e",
+      "Number": 7156,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 458,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-72e2-9e0b-bddf6e7267ba",
+      "Number": 7157,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 539,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7b8d-b7cf-2c5050540125",
+      "Number": 7158,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 250,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7184-956d-dc1dbedda327",
+      "Number": 7159,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 332,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-71ba-908c-057fa3f6f678",
+      "Number": 7160,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 495,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7b89-97ef-9a77a15f570f",
+      "Number": 7161,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 473,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-779b-adc8-1ba654f89285",
+      "Number": 7162,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 269,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-745d-8610-a0a4fd6967f2",
+      "Number": 7163,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 422,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7e09-9474-a9be4e03da09",
+      "Number": 7164,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7442-b379-51614006cd99",
+      "Number": 7165,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 297,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7a57-a438-430e332adb3a",
+      "Number": 7166,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 391,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-761c-91de-d9d410a3ad07",
+      "Number": 7167,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 509,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7361-9b43-30411a50c304",
+      "Number": 7168,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 299,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-73c4-869f-66e12fc1a3d1",
+      "Number": 7169,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 102,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7ae9-a7a3-8ba735cd110f",
+      "Number": 7170,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 755,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-737f-9862-fe98e2a3fb78",
+      "Number": 7171,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 389,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-710c-8d5e-816f3c25340d",
+      "Number": 7172,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 550,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7641-9505-fd28df21a334",
+      "Number": 7173,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 198,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7ec8-a15f-e9eed84d5a8f",
+      "Number": 7174,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 313,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7b65-9329-1dfa0828e4f8",
+      "Number": 7175,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 77,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7546-9d58-383c6a43c914",
+      "Number": 7176,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 403,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7308-b0fc-944e962de20d",
+      "Number": 7177,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 512,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7ae3-86c0-dfe150b2df41",
+      "Number": 7178,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 955,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7062-aef8-a9a45d25ef2e",
+      "Number": 7179,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 565,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-73ad-ad16-afc9047c5975",
+      "Number": 7180,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 441,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-70e5-9d52-c9f97b145961",
+      "Number": 7181,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 603,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-728c-9d7c-6e8fadde8480",
+      "Number": 7182,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 298,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-739b-9946-4162b150fd56",
+      "Number": 7183,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 46,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7883-a3a0-d0d5698dbf59",
+      "Number": 7184,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 367,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7803-87be-1457abdbec83",
+      "Number": 7185,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 333,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa009-17db-7232-93f9-672abfdfc767",
+      "Number": 7186,
+      "Chapter": "Chapter 3 \u2014 The Lake Pla",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 76,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
     }
   ]
 }

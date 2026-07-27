@@ -58,14 +58,19 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
 
         // Roll up child nodes: a book's coverage is the union of its chapters' logs.
         // Draft subtrees are out-of-scope material and excluded from coverage.
-        var childIds = await db.Nodes.AsNoTracking()
+        // IgnoreQueryFilters(): nodeId is already a resolved, specific id by the time it
+        // reaches here (from a properly-scoped slug lookup, or from GetAllNodesWithGapsAsync's
+        // cross-universe sweep) — an id-exact lookup is unambiguous regardless of universe, so
+        // the universe filter is redundant here and would otherwise wrongly drop non-default-
+        // universe nodes when this runs with no ambient universe selected.
+        var childIds = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(s => s.ParentNodeId == nodeId)
             .Select(s => s.Id).ToListAsync(ct);
         var scopeIds = new List<Guid>(childIds) { nodeId };
 
         var logs = await db.BeatServiceLogs.AsNoTracking()
             .Where(x => scopeIds.Contains(x.NodeId)).ToListAsync(ct);
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(s => s.Id == nodeId)
             .Select(s => new { s.Slug, s.Title, s.NodeCode, s.NodeBibleGeneratedAt })
             .FirstOrDefaultAsync(ct);
@@ -130,7 +135,9 @@ public class WorkflowMonitorService(IDbContextFactory<StreetSamuraiDbContext> db
     public async Task<int> GetEntityEmbeddingGapCountAsync(CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.Entities.AsNoTracking()
+        // IgnoreQueryFilters(): this is a global corpus-wide check by design (every universe's
+        // embedding coverage), not scoped to whichever universe happens to be ambient.
+        return await db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.IsActive && !db.EntityEmbeddings.Any(em => em.EntityId == e.Id))
             .CountAsync(ct);
     }

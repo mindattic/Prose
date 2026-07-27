@@ -278,6 +278,10 @@ public class NightlyHealthService
         var query = db.Nodes.OfType<StoryNode>().AsNoTracking();
         if (slug != null)
             query = query.Where(n => n.Slug == slug);
+        else
+            // "analysing all non-WIP stories" is meant to sweep every universe's stories, not
+            // whichever universe happens to be ambient in this process.
+            query = query.IgnoreQueryFilters();
         return await query
             .OrderBy(n => n.SortKey)
             .Select(n => new StoryMeta(n.Id, n.Slug, n.NodeCode))

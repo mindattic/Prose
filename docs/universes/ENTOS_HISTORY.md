@@ -203,7 +203,7 @@ The mirror — *La Pace*, the Peace — was found in the valley's deepest membra
 
 She died at ninety-six, in the valley, surrounded by the practitioners she had trained. Her service record — Sinter kept service records like Fjorheim, because the diplomatic tradition required documentation — closes at Year 391: *withdrew from practice. Died in the valley. La Pace held at the time of death and recovered from her hands.* The mirror passed to the Sinter institution and was used in every arbitration the House conducted until Year 1079.
 
-The Liturgy has held La Pace since Year 1082. It is the one Relic that passed to the Liturgy rather than remaining with a named House. The Quarantine Administration uses it in formal sessions. What the Silence has seen in it, looking into the mirror's surface during those sessions, has not been disclosed.
+The Liturgy has held La Pace since Year 1082. It is the one Relic that passed to the Liturgy rather than remaining with a named House. The Quarantine Administration uses it in formal sessions. What the Quiet Mass has seen in it, looking into the mirror's surface during those sessions, has not been disclosed.
 
 ---
 
@@ -377,7 +377,7 @@ The Quarantine Compact's terms:
 
 **The Levy.** Pallor, Lacerta, and Calyx commit to quarterly monetary and supply contributions to the Watch's operational costs and emergency response reserve. The Levy is assessed on a sliding scale based on the contributing House's membrane revenue — the richer your Scrying output, the more you pay. This formula was Sinter's. The Sinter practitioners worked it out in two hours at Rimholt. The other Houses have been paying it for six hundred years.
 
-**The Administration.** The Liturgy administers the Quarantine as a separate institutional mandate, distinct from its House-affiliated functions. The Quarantine Administration answers to the Silence, not to any Warrior King or Keeper. This was the most contested clause at Rimholt: every House understood that giving the Liturgy its own standing administrative domain would expand the Liturgy's institutional power permanently. Every House signed anyway, because nobody trusted any of the other Houses to administer it neutrally, and the Liturgy was the only body that had demonstrated that it could be trusted by people who were otherwise committed to destroying each other.
+**The Administration.** The Liturgy administers the Quarantine as a separate institutional mandate, distinct from its House-affiliated functions. The Quarantine Administration answers to the Quiet Mass, not to any Warrior King or Keeper. This was the most contested clause at Rimholt: every House understood that giving the Liturgy its own standing administrative domain would expand the Liturgy's institutional power permanently. Every House signed anyway, because nobody trusted any of the other Houses to administer it neutrally, and the Liturgy was the only body that had demonstrated that it could be trusted by people who were otherwise committed to destroying each other.
 
 **The Clause of Greater Good.** A single sentence, Clause 14, written by the Sinter archivist who held La Pace during the Rimholt sessions: *The quarantine obligation supersedes all coalition politics, all active war between Houses, and all Compact dispute mechanisms for the duration of any emergence event or perimeter breach at any point on the Sinter line.* This means that if Fjorheim and Ocipheus are in active combat on the Channel front, and an emergence event occurs on the Sinter line, both Houses immediately redirect whatever resources the Administration requests, for as long as the event continues, before resuming their war.
 
@@ -532,7 +532,7 @@ The Houses are not, in Year 1700, at peace. The Living War has been running for 
 
 Every House has lost membrane installations. Every House has lost Champions. Every House has sent sons and daughters to other Houses and watched some of them not come back. The Compact's framework has been strained to near-breaking and has held, after a fashion, because the alternative to the framework is the Blood Century, and the institutional memory of the Blood Century is still in the records.
 
-The four remaining Fallen Houses confirm in this period. House Venn was absorbed into Ocipheus in Year 1651; the Venn practitioner tradition vanished into Ocipheus's institutional culture, leaving behind only the word *vigil operators* use for the membrane on night watches when the administration is not present. House Orvaine was formally absorbed by the Silence in Year 1680; the Orvaine site is now the only active installation in the Entos administered directly by the Liturgy rather than a named House.
+The four remaining Fallen Houses confirm in this period. House Venn was absorbed into Ocipheus in Year 1651; the Venn practitioner tradition vanished into Ocipheus's institutional culture, leaving behind only the word *vigil operators* use for the membrane on night watches when the administration is not present. House Orvaine was formally absorbed by the Quiet Mass in Year 1680; the Orvaine site is now the only active installation in the Entos administered directly by the Liturgy rather than a named House.
 
 ### The Current Coalition Alignment
 
@@ -557,7 +557,7 @@ The Relic weapons are physical objects of Gifted matter origin that have passed 
 | Fjorheim | Kaldvinn | Cold-Surrender | Longspear; black iron head; non-corroding; cold regardless of ambient temperature; shaft of non-local wood species | Last held by Malvina Ironflood; lost at sea in Year 1689; not recovered |
 | Pallor | Caer Gwyn | The White Keep | Round shield; polished silver-alloy; boss shaped as closed eye that opens when struck; what it sees is not recorded | Pallor Station; held by Long Seat; opening eye not invoked in current record |
 | Lacerta | Las Tres Navajas | The Three Blades | Three matched short knives; white metal; tarnish in presence of deceit; one per founding line | Lacerta holds all three; testing schedule not public |
-| **Sinter (fallen)** | La Pace | The Peace | Circular mirror, fifty centimeters; shows viewer the face of the person they are most in conflict with, in real time; no weapon use documented in eight founding centuries | Liturgy/Quarantine Administration holds; used in formal sessions; Silence has not described what they see in it |
+| **Sinter (fallen)** | La Pace | The Peace | Circular mirror, fifty centimeters; shows viewer the face of the person they are most in conflict with, in real time; no weapon use documented in eight founding centuries | Liturgy/Quarantine Administration holds; used in formal sessions; Quiet Mass has not described what they see in it |
 
 ---
 

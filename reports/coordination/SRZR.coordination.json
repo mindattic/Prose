@@ -2,9 +2,9 @@
   "nodeCode": "SRZR",
   "slug": "steppin-razor-019ef7be",
   "title": "Steppin\u0027 Razor",
-  "generatedAtUtc": "2026-07-25 23:04:25Z",
-  "totalBeats": 31,
-  "covered": 31,
+  "generatedAtUtc": "2026-07-27 10:41:45Z",
+  "totalBeats": 297,
+  "covered": 0,
   "chapterGranular": false,
   "storyScope": {
     "TemporalScheme": "nonlinear",
@@ -16,573 +16,4527 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 31
+    "MISSING_MEANING": 297,
+    "UNSCORED": 297,
+    "NO_CONSTRUCTION": 266
   },
   "beats": [
     {
-      "BeatId": "019f1166-3225-7703-aaf2-fd50fcaee8f6",
-      "Number": 4860,
+      "BeatId": "019fa020-b09e-7a66-8f76-1c8c9cac7810",
+      "Number": 8452,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Sasha as a professional operative by showing her competence, self-containment, and the precise terms she sets for her own engagement.",
       "EscalationTarget": "3",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "anachrony-cut"
-      ],
-      "ProseLength": 5525,
+      "BeatTags": [],
+      "ProseLength": 294,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f1166-c247-74b1-9766-8df3087d643a",
-      "Number": 4861,
+      "BeatId": "019fa020-b0be-7b39-aad2-66c915f8009a",
+      "Number": 8453,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates Sasha\u0027s post-Kankakee danger by introducing an organized interception, revealing the documentation man\u0027s network has already mobilized against her.",
       "EscalationTarget": "4",
       "EventType": "ambush",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 1610,
+      "BeatTags": [],
+      "ProseLength": 526,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f1167-58a1-730f-a0e2-52f178983f74",
-      "Number": 4862,
+      "BeatId": "019fa020-b0bf-7d0c-af8e-ba924d265534",
+      "Number": 8454,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the economic trap forcing Sasha into a morally compromising contract, showing how the Kankakee fallout is compressing her options.",
       "EscalationTarget": "5",
       "EventType": "negotiation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4405,
+      "ProseLength": 31,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f1167-ce36-753c-aab5-055150aec401",
-      "Number": 4863,
+      "BeatId": "019fa020-b0c0-7aeb-855a-2318cc9d80a0",
+      "Number": 8455,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals Sasha\u0027s internal anomaly \u2014 the unexplained warmth \u2014 as a persistent, unresolved strangeness she deliberately sets aside to survive immediate pressure.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 2113,
+      "BeatTags": [],
+      "ProseLength": 353,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f1168-783e-7450-9426-a54f05a28951",
-      "Number": 4864,
+      "BeatId": "019fa020-b0c0-7503-8711-32fcc7054a70",
+      "Number": 8456,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Wilmington as a rare moment of belonging and reduced internal suffering, raising the stakes for whatever will destroy it.",
       "EscalationTarget": "5",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4600,
+      "ProseLength": 430,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f1169-f747-71c8-9381-b3d1ddf083f1",
-      "Number": 4865,
+      "BeatId": "019fa020-b0c0-759e-be87-efd4fb0ca8aa",
+      "Number": 8457,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns Sasha\u0027s Wilmington refuge into a liability by showing the involuntary mechanism that costs her safety and relationships she cannot afford to lose.",
       "EscalationTarget": "6",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3332,
+      "ProseLength": 91,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f116a-893e-7d83-a9de-374560f4d0ef",
-      "Number": 4866,
+      "BeatId": "019fa020-b0c0-78d1-95b2-68a48b713340",
+      "Number": 8458,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates the standing order from network noise to a credible personal threat by introducing a hunter who correctly reads Sasha rather than underestimating her.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3874,
+      "ProseLength": 543,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f116b-16a5-7ed8-a58c-7337a97bd22b",
-      "Number": 4867,
+      "BeatId": "019fa020-b0c0-78f6-a10c-607a97ae78fb",
+      "Number": 8459,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates the order\u0027s resources and resolve, showing the pursuit is adapting to Sasha\u0027s capabilities and closing the operational gap between them.",
       "EscalationTarget": "7",
       "EventType": "chase",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3162,
+      "ProseLength": 553,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f116b-83d9-72d7-b5ed-99f8a8f8f52b",
-      "Number": 4868,
+      "BeatId": "019fa020-b0c0-7749-83c4-43d40702b325",
+      "Number": 8460,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the accumulated geography of the series by mapping Sasha\u0027s shrinking world, externalizing her isolation and the systematic closure of every exit.",
       "EscalationTarget": "6",
       "EventType": "inventory",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 2863,
+      "BeatTags": [],
+      "ProseLength": 421,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f116c-060f-7081-ae6e-2a901c26f0e7",
-      "Number": 4869,
+      "BeatId": "019fa020-b0c0-7eef-8e12-8373ef11f78a",
+      "Number": 8461,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reestablishes Sasha\u0027s survival methodology in a new location while grounding her precarity in the gap between outdated intelligence and present danger.",
       "EscalationTarget": "5",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3092,
+      "ProseLength": 449,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ef7f7-6364-71d2-98e1-141ff36e2bb2",
-      "Number": 4419,
+      "BeatId": "019fa020-b0c0-7975-85c1-539bb15690f0",
+      "Number": 8462,
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
-      "StructureRole": "opening-image",
       "Act": 0,
-      "Meaning": "The Hereafter \u2014 a frontier bar at the dead SW edge; a century-old cooking show on the screen (\u0022out here it passed for a window\u0022); a man two stools down decides her size is an invitation; she picks up the bar bottle and holds it like a tool, and he backs down without a blow landing \u2014 the only quiet she ever gets, bought and instantly lost. Sasha is the dead-straight straight man; the world does the absurd bits at her. Establish menace under deadpan.",
       "EscalationTarget": "6",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 2075,
+      "BeatTags": [],
+      "ProseLength": 70,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ef7f7-79ad-7155-85ed-9ced6c543b56",
-      "Number": 4420,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "inciting-incident",
+      "BeatId": "019fa020-b0c0-72f9-8e7d-66792548955f",
+      "Number": 8463,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "The dead rails \u2014 outside is Joliet, kept like a tooth the city means to pull; freight rails nobody rides, rust the color of dried blood; the towers a stuck smear of light a hundred km northeast. She wants a road with no people and walks the rail bed north toward the only light. Then: a camel on the rail bed. There are no camels in Joliet. Her body understands the wrongness a half-second before she does.",
       "EscalationTarget": "7",
       "EventType": "departure",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 2907,
+      "BeatTags": [],
+      "ProseLength": 237,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ef7f7-8efb-79b8-9a60-b48ff8534f0f",
-      "Number": 4421,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "rising-action",
+      "BeatId": "019fa020-b0c0-7d78-96b3-5917c1bf9dcc",
+      "Number": 8464,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "The exchange \u2014 the man on the camel speaks in the it/they/we collective register, no linear time, displaced premises (\u0022The camel is not my thrall\u2026 we just happen to be going the same way.\u0022 / \u0022Which way is that?\u0022 / \u0022We just arrived.\u0022). Her hand goes to Problem Solver on her right hip; he is unthreatened because threatening a projection is threatening a phone call. The animals beat: the camel puts its head down and breathes at her, the way every stray goes for her. She does not like that they like her.",
       "EscalationTarget": "7",
       "EventType": "confrontation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1812,
+      "ProseLength": 395,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ef7f7-a5e7-7f20-80bf-cc283fd61512",
-      "Number": 4422,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "midpoint-turn",
+      "BeatId": "019fa020-b0c0-77f7-84f2-c09935799cc3",
+      "Number": 8465,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "\u0022You were left open\u0022 \u2014 the entity gets under her guard exactly once. Body before mind: the breath she didn\u0027t take, the held half-second, when it says someone should have closed you and did not, and we are glad of the oversight. Then she shuts the door the way she shuts everything and the anger comes back like it only stepped out for air. \u0022Don\u0027t.\u0022 / \u0022We have already stopped.\u0022 Her never-closed neuretics are why it can reach her \u2014 never explain it on the page.",
       "EscalationTarget": "8",
       "EventType": "breach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 1119,
+      "ProseLength": 516,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019ef7f7-bb1e-76cd-965d-bd73d39f721a",
-      "Number": 4423,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "break-into-two",
+      "BeatId": "019fa020-b0c0-79ca-b268-54da14ff9abb",
+      "Number": 8466,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "The inward hook \u2014 she names the wrongness out here and up there (a pull, low and constant). The entity: \u0022You make a hole in a thing, and the thing is on both sides of the hole. They dig toward us. We arrive toward them.\u0022 It is NOT the Lure (\u0022Are you the thing that\u0027s been taking the kids?\u0022 / \u0022No. That one does not know what a person is. We know.\u0022). It points northeast, at the towers \u2014 the one place she\u0027s spent her life avoiding \u2014 and she falls into step against every instinct. Edge\u2192core vector set.",
       "EscalationTarget": "7",
       "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1939,
+      "ProseLength": 267,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f1173-0854-76e2-9b82-aad3a0de10a6",
-      "Number": 4876,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
+      "BeatId": "019fa020-b0c0-73f6-bea3-66a10acae657",
+      "Number": 8467,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes that Sasha has lost her professional footing while refusing to admit it, raising the stakes of her encounter with a force that operates outside her operational frameworks.",
       "EscalationTarget": "6",
       "EventType": "disclosure",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1827,
+      "ProseLength": 330,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b9-3935-7056-bf5b-595888e2a440",
-      "Number": 4767,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "rising-action",
-      "Act": 1,
-      "Meaning": "Entry to the Glooms - the transit slug from the frontier into the city proper; towers closing in kilometer by kilometer; the hum getting louder with the density. The city performs its absurd bits at her - a busker with a seven-string shamisen, a corpo tourist asking directions to a plaza she has never heard of, a woman feeding pigeons in a station where the air smells like burnt ceramic. She catalogs it. She does not react. The pull from the northeast is stronger here than it was on the rail bed, directional and patient, like a tide that has been waiting.",
+      "BeatId": "019fa020-b0c0-7560-b2b1-9b65786086d7",
+      "Number": 8468,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "7",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3348,
+      "ProseLength": 344,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00b9-c381-7c2f-b98d-0231e3bcacdc",
-      "Number": 4768,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "rising-action",
-      "Act": 1,
-      "Meaning": "Gray-zone contact - at a checkpoint in the inner Glooms a fixer named Dawit who works the inner-ring perimeter stops her; he mistakes her for working a paid job. She neither confirms nor denies. He gives her what he has: anomalous readings clustering in the Loop sector in the last three weeks, logged as dead-well cold-reads by Consensus instruments, but the cluster geometry does not look like dead wells to him. He has nothing to compare it to. She takes the data. She does not explain why. She leaves before he finishes his question.",
+      "BeatId": "019fa020-b0c0-7fd1-b1cb-139467567388",
+      "Number": 8469,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3412,
+      "ProseLength": 177,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f116d-5772-7cd7-a1f5-9dbb6706673e",
-      "Number": 4870,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
+      "BeatId": "019fa020-b0c0-7835-b7ca-6e1de40aa5d9",
+      "Number": 8470,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Grounds the reader in The Glooms as a liminal, degraded space while revealing that Sasha has long suppressed an instinct she is now, for the first time, following.",
       "EscalationTarget": "8",
       "EventType": "traversal",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint",
-        "subplot",
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 3722,
+      "BeatTags": [],
+      "ProseLength": 296,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00bc-4c49-760f-9ecd-2a70784ef69c",
-      "Number": 4769,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "rising-action",
-      "Act": 1,
-      "Meaning": "The first anomaly - she stops on a high transit bridge above the Exchange district and feels it: not the cracked-bell 19 Hz ring of a dead well she has cataloged for years, but a draw, directional and alive, pulling at something behind her sternum. A live well, here, inside the perimeter, nowhere near where Consensus says the frontier incidents cluster. She calibrates it the way she calibrates a shot - angle, distance, depth. She stands there three minutes with the lake wind in her face. Then she walks toward it because there is nothing else to do.",
+      "BeatId": "019fa020-b0c0-7926-8701-b380ba290904",
+      "Number": 8471,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2991,
+      "ProseLength": 502,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00bd-0ed8-779c-a0ee-76c5a9806d29",
-      "Number": 4770,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "rising-action",
-      "Act": 1,
-      "Meaning": "Entanglement - she follows the pull to an address implicit in Dawit\u0027s cluster data; a dead-drop node, message waiting for a sensor-class operator, no name. Someone has been looking for what she is. The message: Halcyon Combine Strategic Resources knows a live well exists in the Exchange corridor. If you can feel it you are worth \u03A650,000 alive and nothing dead to the people running the drill. The person who left the message wants her to run. The message includes the drill\u0027s approximate location. She does not run.",
+      "BeatId": "019fa020-b0c0-702e-b4e4-aa0f4b25def4",
+      "Number": 8472,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "9",
       "EventType": "recovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2895,
+      "ProseLength": 228,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00bd-26e5-7b1a-b692-527ce5e8ca5d",
-      "Number": 4771,
-      "Chapter": "Chapter 2 \u2014 Contact",
-      "ChapterIndex": 1,
-      "StructureRole": "dark-night-setup",
-      "Act": 2,
-      "Meaning": "Cost - she is made leaving the dead-drop; a two-person tail from a Halcyon Combine security team. She makes them immediately. She leads them into a side corridor off the transit underbelly, somewhere narrow and bad-lit, and gives them the professional courtesy of a moment to reconsider. One takes it. The other does not and it costs him significantly more than he planned to spend. She comes out with a bruised rib, one fewer shadow, and the name on their authorization: Halcyon Combine Strategic Resources asset recovery. She is now an asset to be recovered.",
+      "BeatId": "019fa020-b0c0-74a8-907d-96409b7e5931",
+      "Number": 8473,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "8",
       "EventType": "ambush",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3820,
+      "ProseLength": 57,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f116e-fa83-7296-b3f8-f1315d3c249b",
-      "Number": 4873,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
+      "BeatId": "019fa020-b0c0-78ef-a470-f925e6b0a9d2",
+      "Number": 8474,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns Sasha from flight to descent, paying off her accumulated losses by showing her choose the mission over survival on others\u0027 terms.",
       "EscalationTarget": "9",
       "EventType": "vigil",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 1426,
+      "ProseLength": 231,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00bd-3e33-7011-8f66-70f617835a2c",
-      "Number": 4772,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
-      "StructureRole": "all-is-lost",
-      "Act": 2,
-      "Meaning": "The camel-man in the towers - she sees the camel on an elevated pedestrian walkway twenty floors above the street, in a crowd of six thousand, no one reacting. The man sits it with the same thousand-year patience. She walks up to him because that is the only register she has left for the impossible. The entity tells her the drill site is specific: not under Tessera Grand Exchange proper but under its eastern colonnade, where the signal is softer and the instrument read is dirtier. Less than a kilometer. The camel breathes at her. She does not step back this time.",
+      "BeatId": "019fa020-b0c0-77b7-9a40-181529fedaaf",
+      "Number": 8475,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "8",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2461,
+      "ProseLength": 409,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f247a-4e28-788f-9e97-fb8a6a009735",
-      "Number": 4975,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
+      "BeatId": "019fa020-b0c0-7eb5-96d5-f9b32d8ef9d7",
+      "Number": 8476,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Reveals an indigenous underground presence that validates Sasha\u0027s anomaly-sense and escalates the threat by confirming the Warm itself is compromised.",
       "EscalationTarget": "9",
       "EventType": "confrontation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3824,
+      "ProseLength": 513,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00bd-55e4-7d1d-86ed-beceef506ae5",
-      "Number": 4773,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
-      "StructureRole": "break-into-three",
-      "Act": 2,
-      "Meaning": "Under the eastern colonnade - she finds the drill site: a maintenance corridor disguised as a Consensus monitoring array. What she feels is not one live well but three, staged at different depths, each pulling at a different frequency. She stands in the corridor and maps them by feel - depth, direction, the difference between passive monitoring and active extraction. They are drilling toward the far side hard and deliberate, under the most densely populated zone on the continent. A schism-bloom here would kill ten thousand people minimum. She can feel the far side pushing back: 72 Hz, steady, something that does not want to be reached.",
+      "BeatId": "019fa020-b0c0-73c5-97e0-4d6a5541a6b8",
+      "Number": 8477,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "10",
       "EventType": "discovery",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 3116,
+      "BeatTags": [],
+      "ProseLength": 12,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f21b1-06b3-7773-93e4-38f8780b931e",
-      "Number": 4971,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
+      "BeatId": "019fa020-b0c0-7e54-bb6f-0102327168d9",
+      "Number": 8478,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates tension by interrupting Sasha\u0027s only means of proof at the moment of contact, forcing her to improvise under tightening operational pressure.",
       "EscalationTarget": "9",
       "EventType": "ambush",
       "RevelationMode": "none",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 2475,
+      "BeatTags": [],
+      "ProseLength": 753,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f116f-842c-7160-8198-09d526fc36e6",
-      "Number": 4874,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
+      "BeatId": "019fa020-b0c0-7815-9e64-536931bf9ec7",
+      "Number": 8479,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Pays off the investigation by revealing the cover operation\u0027s paper contradiction, proving deliberate concealment of live infrastructure behind a closed survey\u0027s legitimate credentials.",
       "EscalationTarget": "10",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 2631,
+      "BeatTags": [],
+      "ProseLength": 74,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00bd-6cb3-73ef-bb8f-7dc7c1238753",
-      "Number": 4774,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
-      "StructureRole": "finale",
-      "Act": 2,
-      "Meaning": "Found - she is in the access corridor mapping the third well when the Halcyon team arrives: four, corpo-grade, not gray zone. They came for the sensor. They are prepared for a Signal/Noise wash; they are not prepared for her cross-draw geometry or the fact that she is not afraid. She is efficient. She comes out with a hole in her jacket above the ribs, their comms gear, and enough clearance to send something before they lock the signal.",
+      "BeatId": "019fa020-b0c0-73ee-95b6-44652f4af1a7",
+      "Number": 8480,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "9",
       "EventType": "confrontation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3566,
+      "ProseLength": 380,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00bd-83c8-729d-adb9-62e87f7d7c83",
-      "Number": 4775,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
+      "BeatId": "019fa020-b0c0-72f6-bc29-6be8fdb680a6",
+      "Number": 8481,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "The receiver\u0027s problem - she finds a maintenance platform on the Z5 exterior wall, looking out at the lake. She knows where the drills are. She knows they are live. She knows Halcyon is running them under Consensus cover. She has the comms gear and a signal window. She does not know who to trust with information this weight. She thinks about the entity\u0027s register - you make a hole in a thing and the thing is on both sides of the hole - and understands she is the hole. A receiver in a world of closed doors, holding data that matters to both sides of a membrane being deliberately punctured. She sends the data to the dead-drop channel and leaves the comms gear on the platform.",
       "EscalationTarget": "8",
       "EventType": "transmission",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 2538,
+      "ProseLength": 295,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f00bd-9b01-7fa4-bbe1-ac06bedeb11a",
-      "Number": 4776,
-      "Chapter": "Chapter 3 \u2014 The Edge",
-      "ChapterIndex": 2,
-      "StructureRole": "final-image",
-      "Act": 2,
-      "Meaning": "Final image - she is on a transit platform on the north edge of the Loop, in the densest crowd she has ever stood in. The hum is the loudest it has ever been - the live wells pulling, the far side at 72 Hz, steady and unresigned. She is still here. She has spent her whole life at the edge of things and the edge was never where the rot was. She does not know what comes next. She buys a transit slug north and walks onto the platform without putting her back to the door.",
+      "BeatId": "019fa020-b0c0-794b-af92-f1bd70d895ea",
+      "Number": 8482,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "7",
       "EventType": "loss",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 3167,
+      "BeatTags": [],
+      "ProseLength": 26,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7bba-a926-2204fda70f26",
+      "Number": 8483,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 230,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7982-b69e-a2e5f1ee253e",
+      "Number": 8484,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 242,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-71de-bd5b-5975999fa10a",
+      "Number": 8485,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 27,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-70ae-94df-ba6426f86363",
+      "Number": 8486,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 459,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-717d-928b-c9699a5c90d4",
+      "Number": 8487,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 438,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7c60-a5ec-0b02b3d6964b",
+      "Number": 8488,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-793f-b3cd-8e4f37b92a22",
+      "Number": 8489,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 268,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7a29-96b7-a78692d97376",
+      "Number": 8490,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 584,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7634-915f-ce098602b267",
+      "Number": 8491,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 208,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7b77-bdad-068c8590b399",
+      "Number": 8492,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 65,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-756f-9690-c3c754c98f3c",
+      "Number": 8493,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 239,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7c97-b439-a2e7d98e1570",
+      "Number": 8494,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 108,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7317-a7ab-bb050bb522db",
+      "Number": 8495,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 561,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-73e6-bc6c-ad5e35b6e854",
+      "Number": 8496,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 49,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-71ac-8fa5-493082d44eee",
+      "Number": 8497,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 286,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7660-bb06-d27145e1f05d",
+      "Number": 8498,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 186,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7cba-a86c-a6692e3d80f6",
+      "Number": 8499,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 205,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-72fb-a9ed-e2304a924e97",
+      "Number": 8500,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 757,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7b83-be9b-3e52d3613cf2",
+      "Number": 8501,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 183,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-79e2-a657-a84daf95fd88",
+      "Number": 8502,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 325,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7923-90cd-61eb5aef9e53",
+      "Number": 8503,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 558,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7812-9ed4-3b07e8987aaa",
+      "Number": 8504,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 242,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7b53-be3b-f702cfe7ca93",
+      "Number": 8505,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1115,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7fe0-a28e-c5a8a89ef73d",
+      "Number": 8506,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 365,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-795e-8433-5a380e6d3277",
+      "Number": 8507,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 300,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7422-aaf9-b9aa4e069b91",
+      "Number": 8508,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 213,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-72c4-b78d-db3aaa299096",
+      "Number": 8509,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 143,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7351-95ef-0bd4c0051115",
+      "Number": 8510,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 41,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-79c8-a4f8-0559a3fb233e",
+      "Number": 8511,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 257,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7554-9e48-8b5b235bf9b1",
+      "Number": 8512,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 421,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7b00-8d5b-cec0caa7d457",
+      "Number": 8513,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 240,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7f4f-aae5-56fc1a6a2924",
+      "Number": 8514,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 35,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-73e7-97ed-12fb049d5c69",
+      "Number": 8515,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 520,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-784d-9781-f6070f65ea89",
+      "Number": 8516,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 118,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7b7c-8178-161295e926db",
+      "Number": 8517,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-79e6-82de-072e0593a9b5",
+      "Number": 8518,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 284,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7a24-a44b-be6aa468fc15",
+      "Number": 8519,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 267,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7003-aef3-ac60d4758d54",
+      "Number": 8520,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 346,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c1-7b9e-b729-b1a34de83a84",
+      "Number": 8521,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 350,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7b7a-bb35-13917fd1d598",
+      "Number": 8522,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 36,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-71dd-9107-855259ac3b7d",
+      "Number": 8523,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 335,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7c51-a2a2-aec12ce6ef7e",
+      "Number": 8524,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 63,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7694-977c-5189f6065c0b",
+      "Number": 8525,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 608,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-75eb-862c-f272de4b3cd0",
+      "Number": 8526,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 58,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-74dd-8199-e3fe0cd179c6",
+      "Number": 8527,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 822,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7c8c-95c2-26125d5a7fd1",
+      "Number": 8528,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 254,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-71c9-b0fa-5a9d4e5290ed",
+      "Number": 8529,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 14,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7820-9577-f31bb0f0979b",
+      "Number": 8530,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 399,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-78e5-bb42-9c5358125a70",
+      "Number": 8531,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 18,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7528-b64b-b2519b22b4f4",
+      "Number": 8532,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 74,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7e43-b099-5cd4e9146c20",
+      "Number": 8533,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 509,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7db7-aa4b-9cfc00b67388",
+      "Number": 8534,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 189,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7d15-b5d0-509f4629af40",
+      "Number": 8535,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 18,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7ffe-9fc2-a72d291e746b",
+      "Number": 8536,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 170,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-74bc-9586-17c33d661b7f",
+      "Number": 8537,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 129,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7d50-97cd-17f51c022a55",
+      "Number": 8538,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 21,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-70aa-92dd-fbe077c5c8a9",
+      "Number": 8539,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 14,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-750e-911a-c7ea5b00bdca",
+      "Number": 8540,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 490,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-79d5-9bba-5449e8e38fef",
+      "Number": 8541,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 578,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-74b8-8fba-b5790b0a2969",
+      "Number": 8542,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 499,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7ad6-83ed-c40603548fd2",
+      "Number": 8543,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 402,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-75be-90fd-ad4fb9c34b7e",
+      "Number": 8544,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 13,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7d6a-be04-761c0f68cfb0",
+      "Number": 8545,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 837,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7b1c-95be-ac0dfff1d025",
+      "Number": 8546,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 70,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7b10-9c17-8bd1fca77a3d",
+      "Number": 8547,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 756,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-753c-8131-d15108264270",
+      "Number": 8548,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 369,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-728f-823f-67bad89bc355",
+      "Number": 8549,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 113,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7371-80a5-d3be204d6bad",
+      "Number": 8550,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 95,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-760e-a625-ea165d9820b3",
+      "Number": 8551,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 18,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7f33-a378-8efc2efb4aea",
+      "Number": 8552,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 653,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-77b8-9f7b-8570c50b5964",
+      "Number": 8553,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 49,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-721f-b714-bc30fda4645f",
+      "Number": 8554,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 239,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-775e-9f6a-da6570e1b4ed",
+      "Number": 8555,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 198,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7d4e-97a1-6606008a0b23",
+      "Number": 8556,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-717f-a613-4d4ee5f53610",
+      "Number": 8557,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 387,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7d93-a935-21cbdb430c56",
+      "Number": 8558,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 601,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7718-8b8f-edc5e97372fe",
+      "Number": 8559,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 22,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7760-b64d-2ac3db5732d6",
+      "Number": 8560,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 30,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c2-7942-9d65-1418b441cdda",
+      "Number": 8561,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 579,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c3-71dd-bc10-ae4674571607",
+      "Number": 8562,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 501,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c3-77d5-9c47-b2473c4dcdf8",
+      "Number": 8563,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 525,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c3-7be1-a8bb-19a842ca3fbf",
+      "Number": 8564,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 289,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c3-7911-8ec6-45219777c932",
+      "Number": 8565,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1057,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c3-7e25-916e-44b0bdb6f1d1",
+      "Number": 8566,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 139,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c3-7132-9621-1e3813b34d12",
+      "Number": 8567,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 630,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c3-7d96-8746-0836fbec5779",
+      "Number": 8568,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 706,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa020-b0c3-7cc0-af88-68882d5cd011",
+      "Number": 8569,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 742,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f771-751e-aa6a-4f8666e88760",
+      "Number": 8570,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 321,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f771-7481-b687-2c313937c239",
+      "Number": 8571,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 660,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f771-74d4-914b-d242c909ec38",
+      "Number": 8572,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 162,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f771-750b-9cfd-1a5e282aed3f",
+      "Number": 8573,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 19,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f771-7073-9134-66859c8e5f1a",
+      "Number": 8574,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 31,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7ed2-b4ac-5d5e5281061f",
+      "Number": 8575,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 309,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-72e5-9fd9-00d9754a944b",
+      "Number": 8576,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 14,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7ed1-8a7a-0938b815f814",
+      "Number": 8577,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 430,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7532-857b-725f560d8666",
+      "Number": 8578,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 449,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-76a9-aba9-b6efc7cce18e",
+      "Number": 8579,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 213,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7fe2-aa06-442e933a78fd",
+      "Number": 8580,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 285,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7be3-aef6-416dab5374fd",
+      "Number": 8581,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 127,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7a49-b88d-e486c854fff4",
+      "Number": 8582,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 160,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7714-a59a-b5d5a59e8f00",
+      "Number": 8583,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 205,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-738e-9294-4a9fb90b18eb",
+      "Number": 8584,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 150,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-79d9-a921-d9406e691fa3",
+      "Number": 8585,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 167,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-76b7-8a71-13285c41148f",
+      "Number": 8586,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 391,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7457-bfa5-6b9277fe65a5",
+      "Number": 8587,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 119,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7716-bdfa-a90d4c0219c4",
+      "Number": 8588,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 213,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7347-beeb-9aec091ff73c",
+      "Number": 8589,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 98,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-79c8-80b9-1727e6349e77",
+      "Number": 8590,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 165,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7238-be75-d24c795b62b7",
+      "Number": 8591,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 91,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-78ed-90c3-377e571ddf50",
+      "Number": 8592,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 143,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7301-a8fe-62575e5847dd",
+      "Number": 8593,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 463,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-72d4-b4b1-87ccdb3e5c0b",
+      "Number": 8594,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 46,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7284-830a-c7ea90f1f8d3",
+      "Number": 8595,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 278,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7663-a94d-aba7a9a36d54",
+      "Number": 8596,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 90,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f772-7b55-9c0a-c9fcb394fdb8",
+      "Number": 8597,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7c55-8526-a19b7f82adeb",
+      "Number": 8598,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 79,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7678-b8e2-eb6068304953",
+      "Number": 8599,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 245,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7d1e-a041-38ac2c17d6e3",
+      "Number": 8600,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 425,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7141-a9cb-4f76af4f09ea",
+      "Number": 8601,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 223,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-74e3-af28-63dc2731837c",
+      "Number": 8602,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 127,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7d8b-9be4-6f6745e6133d",
+      "Number": 8603,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 262,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7647-aff1-ce051f5a5956",
+      "Number": 8604,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 191,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-79b4-8db6-217400412c27",
+      "Number": 8605,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 131,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7b64-8450-2b15e39888ae",
+      "Number": 8606,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 151,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-71fd-b5cb-5114798813b9",
+      "Number": 8607,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 20,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7961-9d05-e714955d08db",
+      "Number": 8608,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 381,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7c86-84da-897e9254a1fb",
+      "Number": 8609,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 101,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-70bb-91fd-449599bfa9d1",
+      "Number": 8610,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 320,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7197-bf51-2a3a8e595c2a",
+      "Number": 8611,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 257,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7e27-a3c5-5f979aa6d968",
+      "Number": 8612,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 281,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-707b-90d6-4b5f74992c33",
+      "Number": 8613,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 438,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7d9a-8c4d-63ae0d2af6ad",
+      "Number": 8614,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 41,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-73c8-a7ad-b718880b585b",
+      "Number": 8615,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 412,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-71c2-b8cd-5949e9674449",
+      "Number": 8616,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 481,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-75b1-9618-cc04586b7190",
+      "Number": 8617,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 572,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7b61-b28f-6757fb233531",
+      "Number": 8618,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 261,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7c7b-a589-22a6d34505f0",
+      "Number": 8619,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 357,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7f77-855b-de67598dda9b",
+      "Number": 8620,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 525,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7ac0-a142-382864f201a4",
+      "Number": 8621,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 429,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-75b3-971b-20139b310822",
+      "Number": 8622,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 305,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f773-7bca-9267-de2adb353cdf",
+      "Number": 8623,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 434,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7a14-be85-4850bae607a7",
+      "Number": 8624,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 261,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7525-bd98-f0b916aaba59",
+      "Number": 8625,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 205,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-72a8-94e4-f25cfc50b4d9",
+      "Number": 8626,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 331,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7ae4-9586-60b4aadbae31",
+      "Number": 8627,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 220,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-72bc-9d76-1cc69a66d8fa",
+      "Number": 8628,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 411,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-776c-a616-2ba946a38304",
+      "Number": 8629,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 189,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7cb2-b336-f543f9de3c8c",
+      "Number": 8630,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 346,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-76d3-8392-d71b7ebc6c33",
+      "Number": 8631,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 89,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7064-8b5c-7c71204ecab3",
+      "Number": 8632,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 338,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7438-8d46-c73761e2d6e1",
+      "Number": 8633,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 63,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7535-a12c-cb639205a939",
+      "Number": 8634,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 507,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7f3a-8876-adf04863213e",
+      "Number": 8635,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 205,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7bcf-9865-0dbde7c5a21c",
+      "Number": 8636,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 417,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-777c-a08c-5a9af56df656",
+      "Number": 8637,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 574,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7a6a-a247-e32bc1a82f3e",
+      "Number": 8638,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 401,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7b3f-8092-538cfc8e490c",
+      "Number": 8639,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 549,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7e92-b9f5-aff0d64215ce",
+      "Number": 8640,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 140,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-78eb-9cec-cfd379829b2f",
+      "Number": 8641,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 958,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7cbc-8adb-dc4c57790b75",
+      "Number": 8642,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 470,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7f18-8c14-9df2b709bfb4",
+      "Number": 8643,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 203,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7eff-93db-1e6549420df6",
+      "Number": 8644,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 339,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7579-a1f3-7e62b4ce8942",
+      "Number": 8645,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 73,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7ade-a502-f75e2496285f",
+      "Number": 8646,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 491,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7f98-b899-7c39c30d93f4",
+      "Number": 8647,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 623,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7f10-b285-d480de7ce6d6",
+      "Number": 8648,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 264,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f774-7d74-b303-ee80990bcaaa",
+      "Number": 8649,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 406,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7bbf-aab3-98cc999f6731",
+      "Number": 8650,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 281,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7092-9def-b5bf668ff792",
+      "Number": 8651,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 298,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-764d-8ce5-fa4bdef1d478",
+      "Number": 8652,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 456,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7aef-a674-901742e7c381",
+      "Number": 8653,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 353,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7d28-bbe9-57b8882e8ab8",
+      "Number": 8654,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 476,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7363-84db-4166fd0de8bb",
+      "Number": 8655,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 461,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-72bf-903b-27feb8deb74e",
+      "Number": 8656,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 103,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-716c-b9ca-1ea8969311de",
+      "Number": 8657,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 18,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7a48-8123-a34c2d43b7a4",
+      "Number": 8658,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 474,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7c49-a2c6-7c764a8b7123",
+      "Number": 8659,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 546,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-700a-ac52-c401676036de",
+      "Number": 8660,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 507,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-786e-b187-d142c07a4751",
+      "Number": 8661,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 269,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7867-bf61-0bc523053bc3",
+      "Number": 8662,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 280,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-71de-ac99-ee8ea0d58f1c",
+      "Number": 8663,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 145,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-725f-ad76-4d82099d8115",
+      "Number": 8664,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 290,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7084-a98b-788d8fa44795",
+      "Number": 8665,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 536,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-72ea-909f-449cb9de09fe",
+      "Number": 8666,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 105,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-760c-9015-1c36f24352fe",
+      "Number": 8667,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 54,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7400-a6df-41a1747f58d5",
+      "Number": 8668,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 219,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-7251-834a-b91e23609edb",
+      "Number": 8669,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 574,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa021-f775-77b4-901d-5fcd827ba360",
+      "Number": 8670,
+      "Chapter": "Chapter 2 \u2014 Contact",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 826,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011e-7487-bdf6-efec0c35c8dd",
+      "Number": 8671,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 510,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7849-b127-27bf1c807e37",
+      "Number": 8672,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 164,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7ee1-8eaf-de96d6b5d253",
+      "Number": 8673,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 396,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7d36-a919-46bfb39098c2",
+      "Number": 8674,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 351,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-724f-8d88-4c6280313434",
+      "Number": 8675,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 292,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7601-920b-2ee256dfce7c",
+      "Number": 8676,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 554,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7405-8a66-c38e70c4fcc2",
+      "Number": 8677,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 20,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7a3a-86ae-b7679fb6acf7",
+      "Number": 8678,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 716,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7e52-a278-f6e122de3033",
+      "Number": 8679,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 495,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7b11-b5ae-e26b31d1d5d6",
+      "Number": 8680,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 22,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-78e1-bfc1-1a7429421dab",
+      "Number": 8681,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 123,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-710a-9012-17622f2fad16",
+      "Number": 8682,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 234,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-789a-9cc5-c49099508da0",
+      "Number": 8683,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 23,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7b83-93e9-a06d3ea44183",
+      "Number": 8684,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 404,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-71e1-8457-def26c610f76",
+      "Number": 8685,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 31,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-741a-b680-26a085b84245",
+      "Number": 8686,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 405,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-76af-9480-b9800f96724e",
+      "Number": 8687,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-738f-85f7-39bff3ba5008",
+      "Number": 8688,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 43,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-76ae-89e9-2ab1a857e765",
+      "Number": 8689,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 298,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-799d-9a33-c0edd5ffe336",
+      "Number": 8690,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 307,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-76f3-8ea5-22e25afd1c9e",
+      "Number": 8691,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 292,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7158-b56e-c6cc54d306a9",
+      "Number": 8692,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 19,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-70a9-aed1-feee2516c80a",
+      "Number": 8693,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 361,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7cbb-b3e7-12e896ec6edf",
+      "Number": 8694,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 168,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7bcd-8c2b-9d0a5e0d34a8",
+      "Number": 8695,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 230,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7b0c-b127-aee357e3d8c4",
+      "Number": 8696,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7fe9-91aa-43c02180ca7b",
+      "Number": 8697,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 186,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7907-92f5-7bca1d2da29f",
+      "Number": 8698,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 49,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-723f-bfb6-76fbdaa56685",
+      "Number": 8699,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 258,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-745c-8404-0c778fbdd0a9",
+      "Number": 8700,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 21,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-75e9-8da8-74a8a4099ccb",
+      "Number": 8701,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 370,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7206-861a-22924de0e4f9",
+      "Number": 8702,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 204,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-74ef-9c49-5de50d619630",
+      "Number": 8703,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 21,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7cd5-9ea3-2b74ca952745",
+      "Number": 8704,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 611,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-76ea-b707-414dda7c5442",
+      "Number": 8705,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 92,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-701a-b2b7-f085ecb609d6",
+      "Number": 8706,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 553,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-75c1-9f6e-2c04ce2660a0",
+      "Number": 8707,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 475,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7f7a-bf16-8ad8a49b360c",
+      "Number": 8708,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 175,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-73bb-ba64-7ead161e810f",
+      "Number": 8709,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 274,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7410-bcdc-ca97a5e7e787",
+      "Number": 8710,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 443,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-74f3-9079-0c3c8fd42203",
+      "Number": 8711,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 130,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7cc4-ad7f-56f411a0d919",
+      "Number": 8712,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 127,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7fb8-a2f8-fca6fbeb83c9",
+      "Number": 8713,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 222,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7e4e-9485-796b799bfec9",
+      "Number": 8714,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 298,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7147-bb36-594bb07248bb",
+      "Number": 8715,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 622,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7d31-b709-59eba653f8f3",
+      "Number": 8716,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 77,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-74b0-b22c-7ba72f86623a",
+      "Number": 8717,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 701,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-79d4-9427-f921c4365687",
+      "Number": 8718,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 413,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-78a0-819d-ffeb6b18e341",
+      "Number": 8719,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 356,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-742e-807c-ad76876cd138",
+      "Number": 8720,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 66,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7ec1-be53-ed70c22af01a",
+      "Number": 8721,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 452,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7373-b53f-10675a2e0253",
+      "Number": 8722,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 390,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-78a1-a19c-a521e8dffb10",
+      "Number": 8723,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 51,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7c72-a0c2-9ccee5f7f4e1",
+      "Number": 8724,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 204,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7bb4-aca8-09ef29a2f0b4",
+      "Number": 8725,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 320,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-74b8-ae1d-80a0c85ed23d",
+      "Number": 8726,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 623,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7d10-8281-871331037729",
+      "Number": 8727,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 220,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7b84-b6d1-186525d832bb",
+      "Number": 8728,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 167,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7a16-a928-c3a7645ac050",
+      "Number": 8729,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 103,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7f8d-97f4-a9bc44319edf",
+      "Number": 8730,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 17,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-779a-937a-50c7c260c197",
+      "Number": 8731,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 772,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7700-95b3-aa379bfa1901",
+      "Number": 8732,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 853,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7c1c-ae8d-fe1fc70d1fdf",
+      "Number": 8733,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 599,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-77fe-8c19-ed1848f4f899",
+      "Number": 8734,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 527,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-7bc8-b87a-5499943545a3",
+      "Number": 8735,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 310,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-011f-78b6-bb54-8417a3396376",
+      "Number": 8736,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 498,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-7362-a4a4-cd6344096169",
+      "Number": 8737,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 637,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-7196-852b-43c495e1262f",
+      "Number": 8738,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 17,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-7588-bcef-359fa7d44465",
+      "Number": 8739,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 788,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-70a5-9316-e244d2f1b67c",
+      "Number": 8740,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 535,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-7bf7-8ead-a3955b72b1e7",
+      "Number": 8741,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 559,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-72da-9b65-2ff1d322b80c",
+      "Number": 8742,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 789,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-7386-aecd-30cadec3deab",
+      "Number": 8743,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 608,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-7cb0-83cb-f80394fb51d5",
+      "Number": 8744,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 476,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-7c43-bb9c-b02c22f5347c",
+      "Number": 8745,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 283,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-71e4-a20a-61db1d0b7c17",
+      "Number": 8746,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 25,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-733a-93c0-66344d1dd132",
+      "Number": 8747,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 650,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fa023-0120-7ab6-91f1-ce2fc3fd3d58",
+      "Number": 8748,
+      "Chapter": "Chapter 3 \u2014 The Edge",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 329,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
     }
   ]
 }

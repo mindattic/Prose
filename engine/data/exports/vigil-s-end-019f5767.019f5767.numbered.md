@@ -3,13 +3,11 @@
 _Dame Lyra M-101, Knight of Ocipheus, pursues thieves who stole her House's founding Relic across the entire Cauld — around the Sinter quarantine Wall, through Vierna and Atrament, by pirate airship to Pallor's northern coast — and comes home to find a corrupt Liturgy Canon waiting to confiscate it. Along the way she assembles a found party: a Myrmidon conscript from Sphere 31 who is slowly assembling the words to say what the Liturgy has been doing to his world; an Atrament battle-rig pilot who cannot be removed from her machine; and a Lacerta pirate with his own code. The book's core question: what are you loyal to when you find out what the thing you loved actually is?_
 
 [Beat 1]
-THE THEFT AT OCIPHEUS
-
 He had already spent one fold on the crossing before Esvane's boots found the archive floor, and he made himself note it, the way he made himself note anything that cost him: a debt paid without counting was a debt paid badly. The membrane didn't care what a man owed or to whom. It asked the same fee off everyone — a heartbeat of warm gold with no up and no edges, and then stone underfoot again, colder for having kept him waiting in it.
 
 He came through four seconds after her, sideways — not badly wrong, but wrong enough to catch the shelving with his shoulder, a codex sliding two finger-widths before he caught it flat-palmed. Esvane looked at the codex, then at him. He straightened and said nothing; nothing he could say would cost him less than the shelf already had.
 
-He'd stopped pretending not to count somewhere around his twentieth crossing that year — a man who didn't track what a thing cost him was a man already lying to himself, and he'd made a promise once, to someone he did not let himself think about, that he would not become that. The fold always left the same residue: gold cooling too slow on the skin, a half-breath of nothing that felt like debt compounding somewhere he couldn't see the ledger for it.
+He'd stopped pretending not to count somewhere around his twentieth crossing that year, since he'd made a promise once, to someone he did not let himself think about, that he would not become a man who stopped tracking what a thing cost him. The fold always left the same residue: gold cooling too slow on the skin, a half-breath of nothing that felt like debt compounding somewhere he couldn't see the ledger for it.
 
 The inner archive smelled of seven hundred years of Catalyst seepage and oiled iron — old, wet at the edges, like a room never let dry because drying out was itself a kind of forgetting, and the Liturgy did not deal in forgetting. The Oculus Lacrimans Memoriae needed to sit close to what it remembered through, and the closeness had soaked into the stone until the room felt watched, patient the way only something seven centuries old can afford to be.
 
@@ -19,8 +17,7 @@ Esvane crossed the room in four steps and put her hands on the box.
 
 The Keeper opened its eyes.
 
----
-
+[Beat 2]
 He'd read the founding deposition same as she had. The Liturgy's first Scriveners had written the Keeper's construction with the care of people who knew exactly what they were building. Six arms, jointed three times each. Iron over consecrated stone, cut all over with doctrine instead of left smooth, so the whole of it read less like a lock than an altar built to worship the thing it guarded.
 
 Seven hundred forty-one years in that room, facing the lens, doing nothing — a debt fully discharged, never asked to run again. He'd envied that line once, reading it. He envied it again now, watching it move, and hated the envy a little, because nothing woken like this had ever finished paying anything off.
@@ -29,7 +26,7 @@ Its first motion was the head — the slow turn of a thing so long still that mo
 
 "Fold," Esvane said.
 
-He folded — gone, then standing across the chamber, pulling the Keeper's face off the table with him. She kept her hands on the box. Two folds left in what he'd allowed himself for the job, and he needed to leave with both still owed, not spent, because a man who spent everything going in had nothing left for going out.
+He folded — gone, then standing across the chamber, pulling the Keeper's face off the table with him. She kept her hands on the box. Two folds left in what he'd allowed himself for the job, and he needed to leave with both still owed, not spent.
 
 The Keeper crossed the chamber at the pace of a tide that had already decided it would arrive.
 
@@ -43,6 +40,7 @@ One fold left, now. He was counting without meaning to. He always was.
 
 The Keeper turned from him, because he had never been the problem. She was the problem. She had the box.
 
+[Beat 3]
 The door at the corridor's end opened. Someone had been told, plainly, more than once, to hold the corridor and nothing else, and came through it anyway, because there was a door and a woman in trouble on the other side of it, and he'd decided that made him needed. The Keeper's lowest arm swung in a flat arc he had read about in the deposition and, until that second, only understood as a sentence in someone else's handwriting.
 
 It was fast. Not the rest of the thing. Just that arm.
@@ -55,20 +53,21 @@ He didn't look away from it. Looking away didn't unspend anything, and he'd lear
 
 Then he folded.
 
----
-
+[Beat 4]
 He came out in the south passage, the case handed off to no one, because the plan had never called for two hands on the box at once and Esvane still had both of hers on it. She arrived a breath before him, breathing controlled, the fixer already closing from the gate end.
 
-"The third?" Esvane said.
+"The third?" Esvane asked.
 
 "Staying," the fixer said.
 
 The answer they'd expected and hadn't let themselves hope past.
 
+[Beat 5]
 The postern would have cost them a countersigned warrant and forty minutes nobody in that passage had; the outer watch could be bought, but the postern's ward answered to canon law and nothing softer, and canon law wasn't taking calls that night. So it was he who took the box — the one thing still needing carrying, and the only thing worth the price of it — and went into the wall the way he'd gone through open air all night, except stone doesn't lend a man distance, it sells it, and he felt the difference the whole eight feet, a bill higher than anything he'd folded that year. He was through and out before the ward finished deciding whether it had felt anything touch it. Four seconds. He'd never carried more than one hand's worth in a single crossing. Tonight the box was the hand's worth, and it felt like carrying a debt that wasn't his and would be collected from him anyway.
 
 Alone on the yard side of the wall while the others crossed to the ordinary door, he let himself look. The catch had sprung a hairsbreadth on the crossing. Through the gap the lens showed itself, no bigger than his palm, weeping something slow and amber, warm as bread from an oven he hadn't owned in some years. He closed the case before he could want anything from the look, and sealed it, because some accounts a man keeps off his own ledger on purpose.
 
+[Beat 6]
 Esvane and the fixer came out through the ordinary door two months of bought patience had opened for them, past a watchman looking at the wrong wall entirely.
 
 Three Heloth couriers stood saddled behind the stable wall, heavy through the shoulder, patient the way mounts built for distance always were. A fourth stood saddled from habit, a little apart, and nobody moved yet to strip its tack.
@@ -77,15 +76,13 @@ The fixer took the case from him without a word about the sprung catch, set it i
 
 The box was warmer against the pack's lining than oiled oak and cold steel had any right to be. He noted it and didn't discuss it. Seven hundred forty-one years of remembering everything that crossed the membrane, without rest, since Year 630. It would go on remembering now, from somewhere else, and he had no opinion he was willing to spend on whether that was mercy or the start of a longer bill.
 
-Esvane mounted without a glance back at the gate. He mounted last, the way he generally did, and didn't look back either — looking back cost something too, and he'd already spent more that night than he cared to tally.
+Esvane mounted without a glance back at the gate. He mounted last, the way he generally did, and didn't look back either.
 
 "Move," Esvane said.
 
 Three riders took the coast road south while the light was still making up its mind. The fourth Heloth stood a while longer in the yard, and then a stablehand who'd been paid well not to ask what he was paid for led it back into the dark.
 
-[Beat 2]
-THREE BODIES AND AN EMPTY CASE
-
+[Beat 7]
 The argument had started over bread.
 
 By her second cup, the common room gone quiet for the night, Lyra could not have said what it was actually about. Not why it mattered.
@@ -118,6 +115,7 @@ Lyra considered this.
 
 Vega laughed - the specific short sound that meant *you're right and I'm not going to say so* - and leaned back with her shoulders against the wall, the posture of someone who had stopped arguing and started simply being in the same room.
 
+[Beat 8]
 The scribing contract was finished. Two days' work - the vigil archive's annual certification instruments - and it had given Vega reason to ride up from the Liturgy's central office and sit in this room, in this company. Lyra was glad of it. She did not examine that gladness too closely. Vega had made the trip four times now. Three or four days each time. Each time the same: an argument over nothing that stopped mattering by the second cup, the grain spirit, Vega doing something that let Lyra be stupid in front of her and not mind it. There was a rank of person you did not have to perform for. Vega held that rank with Lyra. Lyra suspected she held it the other way too, though Vega would have written the sentence better.
 
 "The Descent request," Vega said.
@@ -128,7 +126,7 @@ The scribing contract was finished. Two days' work - the vigil archive's annual 
 
 "You walked it once."
 
-"I walked it in winter. It was fine." Vega looked at her. "What's the actual concern."
+"I walked it in winter. It was fine." Vega looked at her. "What's the actual concern?"
 
 "I don't have an actual concern."
 
@@ -136,7 +134,7 @@ The scribing contract was finished. Two days' work - the vigil archive's annual 
 
 "Seventeen years," Lyra said. "The Keeper said twelve. I looked it up last week. Seventeen. There have been minor seismic events. None have required protocol response."
 
-"And this one is below threshold and requiring protocol response."
+"And this one is below threshold and requiring protocol response?"
 
 "Yes."
 
@@ -151,8 +149,6 @@ Vega went quiet again. Not a held position this time - she understood the shape 
 "Which he will."
 
 "Which he will," Lyra agreed.
-
-She had been posted to Ocipheus Station seventeen years. Vigil research. Membrane observation logs. Transmutation certification consultancy for the Liturgy's intake assessments. Seventeen years of not being anywhere else. She had never examined why that satisfied her - it was simply how her life was arranged, and it sat under everything she did with the same weight as the station's stone. Vega, four visits in that time. Same pattern every visit: the grain spirit, the argument over nothing, the lamp burning low, two people who'd stopped needing to perform for each other. Lyra was thirty-five. Vega was twenty-four. The gap had looked wider when Vega was twelve.
 
 "Do you want me to do the Canon again?" Vega said.
 
@@ -188,6 +184,7 @@ Vega did not break register. She ran past the point where it was funny into the 
 
 Vega settled back and reclaimed her cup, smiling the small economical smile of someone who had achieved exactly what she meant to achieve. The lamp caught her face sideways. In that light she looked younger than twenty-four, and like their mother - same angle to the jaw, same patience in the eyes. Their mother had been patient the way people are patient when the world's pace suits them. Vega was only starting to learn that trick. Lyra had given it up entirely at eleven.
 
+[Beat 9]
 "Tell me the one about Schmalburg," Vega said.
 
 "You've heard the Schmalburg posting."
@@ -212,15 +209,11 @@ Vega had heard this before. She listened the way she always did - the attention 
 
 "He offered me tea."
 
-"What kind of tea."
-
-"Mountain chamomile. It was very good tea."
-
 "Was the work actually less useful?"
 
 "That's the part that kept me up," Lyra said. "The section we'd been observing was entirely unremarkable for twenty years. Which meant either the membrane in that section was genuinely unremarkable, or the section we were supposed to be observing was also unremarkable, or they were both unremarkable, or the drift was the most interesting thing to happen at that installation in twenty years and the interesting thing was the fact that nobody had known where they were looking."
 
-"What did you put in the report."
+"What did you put in the report?"
 
 "'Calibration corrected per findings. Historical records amended to reflect actual observation coordinates. No operational impact assessed.'"
 
@@ -240,6 +233,7 @@ Vega was quiet for a moment. "That's the correct thing to write."
 
 "Yes."
 
+[Beat 10]
 Vega finished her cup, looked at the decanter, decided against a third - the decision of someone who'd need a steady hand by morning. She took her pen from its case and held it a moment, not to use it, just to hold it - the habit of someone who thought better with something in hand - then set it back.
 
 "You should sleep," she said.
@@ -266,8 +260,7 @@ She didn't say it. She went to bed.
 
 Lyra put the cups away. She banked the fire as far down as it would go. The lamp guttered; she trimmed the wick and left it low on the table, for the night warden's rounds. Then she went to her own quarters, lay down without fully undressing, looked at the ceiling, thought about the eastern sector for a while, and stopped - there was nothing more to think tonight - and slept.
 
--
-
+[Beat 11]
 She was gone before the first light.
 
 Vega's door was closed. On the scribing table, the certification instruments sat in their careful stack, the inked pen sheathed in its case. Lyra set the note on top, where Vega would see it before she touched anything else.
@@ -278,8 +271,7 @@ The Heloth waited in the stable yard - a heavier model, built for mountain roads
 
 She rode.
 
--
-
+[Beat 12]
 The Vigil checkpoint sat at the narrows, where the alpine road squeezed between two rock faces with no way around it in any weather. The hut was old - stone, low-roofed, built in the first century of the Patrol's tenure, reinforced twice since. The officer on duty was a man she'd spoken to six times in seventeen years without either of them learning the other's name - the nature of checkpoint work. He had the departure log open on the desk, the stamp ready, her field authority already in hand. The dispatch had gone out on the standard chain. He'd been expecting her.
 
 He stamped the log. Noted the date. Gave her the standard brief on the eastern sector event - minor, below threshold, no further escalation since the initial report, two days estimated for a full perimeter assessment. She noted it and rode into the zone.
@@ -290,8 +282,7 @@ Four days total, out and back. The Heloth was worse on the return - she'd pushed
 
 She wasn't thinking about anything in particular when she came down off the road and saw the Station entrance.
 
--
-
+[Beat 13]
 The doors stood open.
 
 She pulled back on the control line. The Heloth settled, weight dropping onto both legs with its usual brief check. She sat the mountain shoulder and looked at the entrance, then at the high archive window - which should have shown the orange cast of the lamp and the night warden at his reading table.
@@ -308,8 +299,7 @@ She stood with her palm against the cold metal and thought about this.
 
 Then she went inside.
 
--
-
+[Beat 14]
 The night warden lay beside the reading table.
 
 His tea mug was on the floor three feet away, on its side, still wet inside.
@@ -330,6 +320,7 @@ She noted this. She noted the noting of it - the flat quality observation takes 
 
 Professional work. Practiced, targeted, nothing in it that had been done in anger or haste. The kind of work that does not get done by people for whom it is still interesting.
 
+[Beat 15]
 She returned to the archive and read the floor.
 
 Boot-prints. The distinctive heel width of Loera coast tannery - narrower than Atrament service issue, wider than Verlaine civilian standard, the non-standard toe-cap Loera service had used for thirty years. She'd seen this pattern twice before, in cross-House reviews during her research tenure. Both times the print belonged to soldiers, not contractors. Contractors did not get issued Loera military kit.
@@ -348,6 +339,7 @@ Room temperature. And the room at this altitude in high autumn was cold. Cold me
 
 She stood with her hand in the empty case for longer than she needed to, which she noted about herself and set aside.
 
+[Beat 16]
 The Oculus Lacrimans Memoriae had been at Ocipheus Station since Year 630. Seven hundred and forty-one years. She'd read the founding documents in her first year of tenure, again in her third, again in her sixth, and each time the number weighed differently - more years behind her each reading, she supposed. Seven hundred and forty-one years watching the membrane boundary from inside the archive: through the vigil apparatus, through the practitioner's attention, through whatever mode of observation a Relic accumulates across that span. Every scry she had logged in seventeen years of vigil work was a look and then a loss - the wound closed, the image went with it, and what stayed in the record afterward was her own handwriting describing something already gone. The Oculus lost nothing. That, more than its age or the gold fittings on the case, was what made it a Relic and not merely an instrument: it kept what it saw. The literature called it *instrumental*. She had always read that as a careful word for *not yet characterized*.
 
 Someone had put it in a pack and walked out with it four hours ago.
@@ -356,8 +348,7 @@ She counted back from the lamp temperature. Four to five hours. The Descent emer
 
 She stood in the middle of the archive and thought about protocol, for the first time, as a thing that could be read from the outside. Who had been in the room when response requirements were set. Who understood what a senior-practitioners dispatch cleared out of this archive. Who had known, the moment the message went out, exactly which rooms would sit empty, and for how long.
 
--
-
+[Beat 17]
 "You'll find the boot-prints run out at the south passage," said a voice from the corner.
 
 She turned.
@@ -376,7 +367,7 @@ She hadn't seen him when she came in. Dark room. Four days of bad sleep. He'd be
 
 She looked at him for a long moment, and then at the empty case, and then back.
 
-"When," she said.
+"When?" she said.
 
 He did not look away from her. That, she understood, was the whole of his answer before he gave the rest of it. "Before the fourth hour. I was at the north window with the Rod across my knees, the way I've sat every night for eleven years, and for most of that hour I felt nothing come through the membrane worth logging." He paused. "I dozed. Not long. Long enough. When I came back to myself the fold trace was already three-quarters cold, and by the time I'd confirmed what I was reading, they were on the south road and the warden was on the floor and there was nothing left for me to do but sit here and wait for someone who could use what I know."
 
@@ -386,14 +377,13 @@ He said it without asking anything in return for the saying. That, more than the
 
 "You could have gone," she said.
 
-"Where."
+"Where?"
 
 She had no answer for that, and did not offer one.
 
 "I have spent eleven years learning what this room means," he said. "I am not going to learn what happens next from someone else's report."
 
--
-
+[Beat 18]
 She heard Vega before she saw her - someone trying to be quiet in an old stone corridor and not quite managing it, a small scrape, a caught breath. She turned.
 
 Her sister stood in the doorway in the clothes she'd slept in, holding a candle losing its case to the dawn light through the passage window behind her. She should have been three days gone - back at the Liturgy's central office, certification instruments filed and countersigned - but the Keeper had asked her to stay one more day for the quarterly notary work, and she'd agreed without much reluctance, and the world had come apart on the one morning she hadn't meant to still be here for. She was looking at the third body.
@@ -424,6 +414,7 @@ Lyra touched her cheek. Found it. Yes.
 
 "I know where your kit is," Vega said, and went to get it.
 
+[Beat 19]
 They sat in the corridor outside the archive while the station woke up around them, and Vega cleaned the cut with the precision of someone who'd done this before - not training, just years of being Lyra's sister and addressing things on Lyra's face since she was old enough to reach. The candle was unnecessary now. The morning was handling it.
 
 "Do you know who took it?" Vega asked.
@@ -454,8 +445,7 @@ Vega was already walking back toward the archive, toward her scribing table and 
 
 "The bread is fine," she said. "I don't know where you get these ideas."
 
--
-
+[Beat 20]
 "Show me," Lyra said to Orim, when Vega's footsteps had gone. "From the beginning. I want the pack weight."
 
 He prepared with the economy of fifty years' practice.
@@ -474,12 +464,13 @@ At the junction. East fork. No pause at the decision.
 
 He opened his eyes, sat with his hands on the Rod, and didn't mention the headache she could see settling in behind them. He seemed neither apologetic nor embarrassed about what the working had cost him.
 
-"East fork," she said. "Not south, toward the coast road."
+"East fork," she said. "Not south, toward the coast road?"
 
 "Toward the Verlaine crossing. The road that runs down to the harbor." He looked at her directly for the first time. "If they're moving under Calyx transit, they'll cross clean. It's a property-claim authorization - House Calyx's century-old claim on the Oculus, dating to the Nine Days at Caer Glas Moor - and the harbor customs honor the paperwork without asking whose hands are actually carrying the case."
 
 She knew this. She appreciated having it on the table between them.
 
+[Beat 21]
 Fifty years of scrying work, the last eleven of it here, watching one room until watching it became the whole shape of his life. No apparatus. No membrane penetration to other Spheres. Local and temporal only - what was in this room an hour ago, whether someone passed this gate today, what waited around the next corner. His fee record in the Station's own cataloguing contract predated her tenure by eight years. She had signed off on its renewal twice, both times without comment, because nothing about his work had ever warranted comment. Calyx origin, long since set aside - no House had sworn him since. He didn't discuss the Calyx claim on the Oculus. She had never asked him to.
 
 "Why are you still here?" she said.
@@ -494,8 +485,7 @@ People who spent what remained of themselves on things that were already lost di
 
 "Come with me when I pack," she said.
 
--
-
+[Beat 22]
 The canonical property recovery mandate arrived at the sixth hour, carried by a Descent Corps rider who clearly hadn't slept - counter-signed by the Canon Immaculate himself, which meant the authorization chain had been moving since before dawn, which meant the Liturgy had known before she woke, which meant someone had been watching for exactly this. She read it once. *Dame Lyra, Templar, Ocipheus Station. Authorized pursuit, full inter-House transit authority under the Compact. Recover the Oculus Lacrimans Memoriae. Return it to Liturgy custody.* It did not name who had taken it. She folded it into her kit and went to find the Station Keeper, already standing in the archive entrance with his coat half-buttoned, having crossed the yard the moment his own windows told him something in the night had gone wrong.
 
 He stood in the archive entrance. Looked at the soldiers in the corridor. Then the empty case. Then Orim on the bench. Then Lyra. In that order. He was quiet long enough that she understood he was doing what she'd done an hour before - reading the room, reaching the conclusions.
@@ -504,11 +494,11 @@ He stood in the archive entrance. Looked at the soldiers in the corridor. Then t
 
 "The Descent emergency."
 
-"The Descent emergency at the eastern sector." He walked to the case and looked into the velvet impression without touching it. "I have been keeping vigil records for thirty-one years. The eastern sector of the Vigil line has produced genuine Descent emergencies in that time. Twice. Neither was a seismic event." He looked at her. "How long have you been back."
+"The Descent emergency at the eastern sector." He walked to the case and looked into the velvet impression without touching it. "I have been keeping vigil records for thirty-one years. The eastern sector of the Vigil line has produced genuine Descent emergencies in that time. Twice. Neither was a seismic event." He looked at her. "How long have you been back?"
 
 "An hour."
 
-"Then you've had an hour to reach the obvious conclusion." He set his palm flat on the case. "Who knew your standard response protocol."
+"Then you've had an hour to reach the obvious conclusion." He set his palm flat on the case. "Who knew your standard response protocol?"
 
 "Everyone who has ever reviewed my service record." She said it without inflection. "Which is everyone who commissioned the emergency, or was consulted about how to stage one."
 
@@ -524,8 +514,7 @@ He looked at her. Seventy years old, with the physical economy of long-tenure vi
 
 She took the envelope. It was heavier than it needed to be - his own account of the bodies in his own hand, the date, the record of the Descent emergency dispatch, the full Keeper's certification of the theft. She couldn't yet tell if this was because he expected her to need documentation in the field, or because he wanted a copy to exist somewhere outside the Station's own records. Both reasons would be correct. The difference was between a Keeper who prepared and a Keeper who prepared carefully. She had worked under this one for six years.
 
--
-
+[Beat 23]
 Ardea Marten was in the stable yard.
 
 She'd seen the lamps come up and hadn't waited to be told what it meant. Two Heloth couriers stood saddled - the lighter road-built models - and a supply kit assembled on the mounting bench: tincture cases, rations for eight days, lamp fuel, a medical kit built out well past standard issue, the kind that had saved a Knight's life twice on operations Lyra had direct knowledge of. She'd already dismissed two of the four field soldiers and was briefing the remaining two when Lyra came out through the entrance.
@@ -560,8 +549,7 @@ Orim arrived at the mounting bench and assessed the lighter courier with the cal
 
 Something in Ardea's expression did not change but changed. She gave him a hand up.
 
--
-
+[Beat 24]
 They left the Station at the third hour before dawn. Ardea and the soldiers would come on separately, by the western road. The south passage was dark. Above them the ridge held the last of the night; ahead, the coast road dropped east toward the approach roads, the Vigil line, and whatever lay past it.
 
 Orim rode a length behind her, the Rod strapped along the courier's flank in a leather boot fitted to the purpose, and gave her the last of what he had before the road narrowed too much for talk.
@@ -582,15 +570,16 @@ The night warden had been at the table. Reviewing the catalogue. He had not hear
 
 The east fork was ahead. She kept riding.
 
-[Beat 3]
-THE WALL FROM OUTSIDE — REFUSED
-
+[Beat 25]
 There was no wall. There had never been a wall. Only the headland, and the stone hut where the cliff road narrowed to its worst stretch, and a rotation of soldiers who kept calling the post the Wall long after the reason for the name had worn off. Lyra had crossed here twice before — once on institutional assessment, once with a Transmutation research party — and both times she had logged the name for what it was: a working fiction, the kind an army keeps on the books because retiring it costs more than using it. Not fortification. Agreement. A line drawn across a stretch of open coast and held by men with ledgers instead of masonry. This morning she was going to learn the exact weight a ledger could carry.
 
+[Beat 26]
 The Heloth courier was built for flat road and even grade. It ate distance the way a well-drilled column eats distance — steady, uncomplaining, no wasted motion. The cliff descent was neither flat nor even. The construct managed the loose stone with competence and no comfort to spare: each step a controlled lurch, the weight passing through its shoulder joints and into her hips on a rhythm she was already learning to hate. Three hours of that behind her. The ache had started in on the second. She carried three infusions and a body the Transmutation had built excellent for a great many duties. Riding a freight-optimized construct down a switchback coast track was not one of them.
 
+[Beat 27]
 She looked down at the shelf road's bottom. The checkpoint was smaller than she remembered — a low stone building, centuries old, set into the cliff face where the two headlands closed nearest each other. Limestone and quartzite, laid at angles that owed nothing to level, the strata canted like broken ribs under old pressure. The mortar had failed once and been repointed with a second mortar now also failing. A lean-to sagged off the seaward wall, the lumber still pale, salt-bleached — it hadn't stood through many winters at this exposure. Thirty paces on, an outbuilding where the rotation slept, smoke going up straight into cold, colorless air. Nothing had built this shelf but the argument the sea had been having with the rock for ten thousand years of tide-crack and slow collapse. The checkpoint sat where the road narrowed because that was where a checkpoint did its work with the fewest men on post. The architecture followed the ground. It had always followed the ground.
 
+[Beat 28]
 On the road below the building, three Heloth freighters idled in a line, each hauling dressed limestone in its cradle, each venting a thin exhaust into the salt air with the near-silence of a machine holding position between tasks. Beside each freighter, off a flatbed wagon, eight or ten laborers loaded stone — lift, carry, stack, the rhythm of people who had done the work long enough that thinking about it was no longer part of doing it. No House insignia on their clothing. No unit markings. Nothing that placed them in any House's roster. Their work read as trained, not improvised. She watched a moment longer than duty required and kept riding.
 
 Two soldiers stood on the lean-to steps, watching the laborers the way a man watches something he is answerable for, not something he is curious about.
@@ -599,8 +588,7 @@ She marked it and rode on.
 
 Ardea had said nothing since the descent began. That was Ardea's contribution to situations where speaking would only confirm what was already plain. Orim rode a length behind, unhurried, the Rod in his coat and not in his hand.
 
----
-
+[Beat 29]
 The checkpoint's interior matched the transit reports, and fell short of what the reports had implied. The desk was iron, bolted through the stone flags, the bolts new enough to show bright thread where the wrench had bitten them. The departure log lay open on the desk's left side, three-quarters through the volume, weighted at the corner with a smooth stone against the wind off the strait, which came through the door gap whenever the door stood open, and the door stood open now. The window facing the road had its oilcloth frame folded back, admitting light and cold in equal measure. There was a stamp. There was an ink block. There was a stool for the officer and a worn patch on the flagstones where the petitioner stood.
 
 She took the worn patch.
@@ -619,6 +607,7 @@ He set the documents down and opened the desk's left-hand drawer.
 
 She picked it up.
 
+[Beat 30]
 A suspension instrument — a canonical authority restriction, issued under the Canon Immaculate's standing review power, citing an active property certification dispute. Field authority suspended, pending review of recovery procedures concerning the Ocipheus Station vigil archive. The Canon's seal sat correct and unhurried in the upper right corner. The filing notation in the upper left cited the central registry instrument number and the date.
 
 Three days ago. The day after the theft, or the day of it, or close enough that the difference changed nothing that mattered.
@@ -633,6 +622,7 @@ The Keeper's letter authorized her passage through the frontier on pursuit groun
 
 He checked the instrument. "A hundred and sixty-six years."
 
+[Beat 31]
 She looked at the departure log, still open from her first glance. Three days of entries stood between the page it was open to and the day it had reached. She found the date and ran her eye down it. Two crossings, Descent Corps, standard rotation notation. The third was a canonical transit authorization — a Calyx Lector, standing property claim transit rights invoked, party of three. Departure mid-afternoon.
 
 They had gone through. They had stood on this same worn flagstone, presented Calyx's claim, and the officer on that watch had logged them and waved them on. The same instrument that grounded her had cleared them — one filing in the central registry doing both, on the same afternoon, to the same effect.
@@ -641,6 +631,7 @@ She thought about what building that instrument required. Registry access. A wor
 
 This had not been improvised.
 
+[Beat 32]
 "I want it noted that I'm lodging a formal objection to the suspension," she said. "I'll file it properly on return."
 
 "Noted." He took up his pen and wrote a brief line in the log's margin, then looked at her — not sympathy exactly. Something adjacent to it. Realism, maybe, worn at this post into a shape that could pass for kindness. "You're going around."
@@ -663,8 +654,7 @@ A pause, brief enough to have been nothing. "Contracted labor. Wall maintenance 
 
 She went out.
 
----
-
+[Beat 33]
 Orim was waiting at her Heloth's shoulder, the post he took when attending to something she could not see. He turned when she stepped into the cold.
 
 "South road, three days back," he said. "Three riders, two loaded couriers, early afternoon. The thermal trace of Heloth exhaust holds a particular signature at this range — old, but readable against the freighters." He looked at the document still in her hand, then at her face. "Or that's what I'd report, if the log agreed with it."
@@ -677,12 +667,14 @@ He took that without requiring her to explain further, which was among the reaso
 
 "Two days, three with weather." He weighed the road north. "There's a barge out of Bressant — the *L'Accord* — running the Veil east under Verlaine compact authority. If we make the current sailing, we recover most of what this suspension is costing us. If we miss it, there's a wait."
 
+[Beat 34]
 She mounted. The construct shifted its stance to take her weight, the hydraulic sequence the literature called weight-responsive correction, which felt, from the saddle, exactly like being acknowledged by something incapable of acknowledging anything. She had never found this comforting. She found it accurate, and had learned to prefer accurate.
 
 The checkpoint officer stood in the doorway, watching them go the way a man watches something leave his jurisdiction and become someone else's problem — not relieved, not troubled. Present, the way the rotation itself was present: because someone had to stand the post, and standing it was the whole of the duty.
 
 She had spent seventeen years keeping her own vigil at Ocipheus — watching a locked case in a cold room for a theft that was never meant to happen on her watch. She recognized the discipline in these men rotating through this post, the same patience of people who stand somewhere and watch for a thing they hope never to see. It gave her no comfort, this morning, to recognize herself in soldiers who might, on any given afternoon, be handed a paper and told to turn their backs, for the same reason they'd turn back anything else the paper told them to.
 
+[Beat 35]
 Ardea came up on her other side without a word, the route sheet already read and refolded.
 
 "They'll log us through the eastern approach without challenge," Orim said, reading Ardea's silence as the question it was. "The suspension names Wall-transit authority specifically. Whoever drafted it knew exactly what it needed to stop, and reached for not an inch more."
@@ -695,6 +687,7 @@ She thought about the Calyx claim, filed a hundred and sixty-six years before ei
 
 She did not say any of that aloud. It was a working observation, not yet a finding, and she had spent seventeen years learning the difference between the two. She saw no cause to abandon the discipline now, merely because the observation ran through her own chain of command.
 
+[Beat 36]
 "Four days is most of a week, now," she said instead.
 
 "Six, if we make the barge. Eight, if we don't." Orim adjusted the guide-rein, a habit of his hands when his mind sat elsewhere. "The gap isn't a gap you close by riding faster. Not anymore."
@@ -703,103 +696,36 @@ She looked back once. The headland rose behind her on both sides, limestone and 
 
 She turned her Heloth east, toward Bressant, and did not look back again.
 
-[Beat 4]
-THE SEAM
-
-The third stair from the bottom had a loose tread, and Rowe stepped over it without thinking — left foot to the second, right foot skipping to the fourth, the correction so old it no longer counted as a decision. His feet knew those stairs the way his hand knew the boarding-house door latch, which wanted a lift before a pull or it would stick in the frame. The rest of the house was asleep. He kept himself quiet without deciding to.
-
-Out through the side passage, past the coal shed with its door hanging at the same half-open angle it always hung at, the smell brief and familiar — slack coal and last night's ash going cold in the grate. The blacksmith's dog, chained by the shop step three doors down, had never once barked at him in three years. He nodded at it. It settled back into its stretch of morning. The whole of their arrangement, and it had held.
-
-He turned at the corner where the company store's dark windows gave back the last of the carbide lamps along the row, and the creek path opened in front of him. Twenty minutes to the tipple. Twelve of them along the water.
-
-The creek was the best part of the walk, had been since he was old enough to walk it alone, before his daddy ever put a shovel in his hands. In late autumn the water ran low and still in the mornings, and it held the lamplight and gave it back at an angle that made the far bank look drawn rather than built — the way a place you know down to the rock gets when the light does something you haven't seen it do in a while.
-
-He had been home from the war eight months. The creek doing that — going still and strange for half a second before it settled back into being exactly the creek he'd always known — was still, some mornings, a small surprise. Not a shock. He had carried this water in the back of his mind the whole time he was over there, on the frozen roads east of anywhere a Carter County man had business being, a kind of insurance against not making it. He had come back. The creek was exactly as he had left it. But eight months wasn't enough for the half-second catch to go away entirely — a hitch that hadn't been in him before he went and hadn't left since he got home. He made nothing of it. He walked on.
-
-At the creek's bend there was a flat rock he never sat on — never early enough for sitting — but he knew it by the sycamore leaning out over the water beside it, roots worked along the bank stone rather than through it. The sycamore held its leaves past most everything else on the ridge, then dropped them all inside a week. He was a week ahead of the shedding this year. He noted it the way he noted the light: one more fact about a place that had gone on being itself while he was somewhere it wasn't.
-
-The wind was out of the west this morning, which meant none of the coke-oven smoke that came in on an east wind and rode with him the rest of the way to the tipple. Instead there was wet rock, coal, and the cold itself, which had reached the part of autumn where it stopped being a surprise and became just the condition of the air — the kind that sat in a man's chest the first hundred yards if he breathed it careless. He'd learned not to. He wore his good wool coat, the one his sister Elin had put in his hands the Christmas past with the observation that he was wearing the other one to death, which he had been. The canvas jumper on its peg inside the drift mouth had a hole worn through at the left elbow he'd been meaning to see to for five months and hadn't.
-
-The boarding house put out strong coffee in the common room between three and four for the mine men, in a pot the cook set on the back of the stove before she went back to bed. Rowe and the other two on first shift used it without ever once coordinating — the pot was there, you poured it, you drank it standing up. One was called Fenn; the third man's name had gone unlearned so long now it would be a thing to ask. The biscuits came out of the cook's own oven, split and buttered, the butter reliably scraped down to a shine by the time the later men reached it — one of the material advantages of first shift. This morning there was no egg; there wasn't always. He ate his share and drank two cups standing at the stove for the warmth of it. Fenn came in, poured his own cup, and neither of them spoke. The mantel clock showed twenty to four.
-
-He heard the fan house before he saw the tipple.
-
-That was always the first thing about the mine — you heard it before you came up on it. The ventilation fan ran a deep, unbroken drone day and night, felt in the chest before it registered as sound, and at changeover the surface plant threw its own noise into that drone: coal cars banging over the trestle joints, the tipple screens rattling slate off good coal in a rhythm that never quite repeated and never quite varied, more ordered than noise once a man had put three years against it. Seven years underground — the first four before the war, the rest waiting on the other side of it — had put that sound behind him, into the category of things no longer separately heard. What he listened for now, inside it, was the deviation. The catch in his cutting machine's chain return, a fault the shop had twice gone after and twice failed to cure, and that he had learned so exactly that working around it wasn't a decision anymore either. Steady this morning. Steady was the right state for a small fault to hold. A fault that came and went without pattern was the kind that turned into a fall of top with no warning at all.
-
-There was a spot just inside the drift mouth where the mine's own breath met the cold morning air, warm coming out of the dark the way it never was in July and always was in November, and on cold mornings the arriving men stood in that warm draft a few seconds before going on in — a small unspoken ritual he'd watched for years without ever once discussing it with the men who practiced it alongside him. This morning he had it to himself. He took it, then went in, and the wall of warmth and noise closed over him before the two had fully separated in his ears: rock that had been holding the mine's own heat since before he was born. His shoulders came down some fraction he hadn't known he'd raised. The smell arrived after — cut coal, blasting powder gone stale in the air, and the wet-rock smell of green timber sweating in the warmth, more completely than any single picture the smell of the only work he'd ever known. He hung the wool coat on its peg and put on the canvas jumper, the hole at the left elbow familiar under his sleeve.
-
-His room was left right. The night man had worked it clean and squared the props before he came off, which Rowe appreciated in the specific, unspoken way a man appreciates somebody doing his share properly. He checked the props, the face, the chain tension on the cutting machine, the left-side catch he understood better than the shop men did. Steady. Good.
-
-Greiss was already below, always below before the shift whistle, his knowledge of that stretch of seam more complete than his knowledge of anywhere else on the ridge or off it. He came down the entries testing each room for damp before the men came on, lamp held out ahead of him. When he saw Rowe he gave the flat-palm sign — in order, carry on — and went on down the row. Rowe had read those hands for seven years and could read them across a dark entry by carbide light alone. He'd exchanged maybe thirty words with Greiss outside the twice-yearly safety talk, and had come to think of him as a man he knew very well in exactly one dimension.
-
-Hartner came into the next room two minutes ahead of the whistle. Twenty-two years in the seam had given him a calm that wasn't contentment exactly, more a relationship with the work so complete it had gone to background, freeing up whatever attention he cared to spend elsewhere. He spent it on his garden plot behind the row houses. Rowe knew this because Hartner had told him once, plainly, and never returned to the subject — the right quantity of information between two men who worked twelve feet apart six days a week.
-
-"Room's wet today," Hartner said. "Parting's letting water through."
-
-"Pump'll catch it by second hour," Rowe said. He said it the way a man states a fact already known to the fellow he's saying it to, which was a kind of talk he'd come to value.
-
-Hartner nodded, and they went to their machines.
-
-There was a particular kind of attention at the center of the work, and it wasn't concentration — concentration was what a man spent on a problem past his skill, and this didn't exceed him. Running the cutter wasn't the difficulty. The difficulty, narrower and steadier, was the listening — for the small wrongness that announces itself before it becomes a fall, the sound of the roof when it was only talking and the sound of it when it meant something. His hands ran the machine. His attention sat above that, reading ahead for what was fixing to go wrong.
-
-He'd learned that particular narrowing before the mine ever asked it of him; he was aware of the carryover without holding any feeling about it one way or another. East of everywhere a Carter County man had business being, the same skill went by a different name — narrow to what mattered and let the rest go, because the rest was full of things that would kill a man who studied it too hard, and would kill him just as sure if he studied nothing at all. Down here the rest was coal dust and Hartner twelve feet off, none of which asked the same narrowing of him. The skill still worked. He was grateful for that, the way a man is grateful for a tool that outlived the job it was forged for and found a smaller one.
-
-What he was less grateful for, noticed more since he'd come home, was how ready the body still was to reach for that narrowed state on the smallest provocation — a sound outside the range he expected, a movement at the tail of his eye that came to nothing. His hands went on running the cutter while some other part of him clocked the deviation, judged it harmless, and filed it, inside the span of a single pass. He couldn't shut the mechanism off. He'd decided months back not to find it troubling. It was how a body squared itself with what it had been through.
-
-There was one more thing he'd brought home. The first morning he'd come back down into this seam, eight months gone, and felt his hands settle into work they already knew — there'd been a relief in it that had nothing to do with any choice he'd made. Relief at being asked for a task exactly the size of the task, no bigger, nothing left over to spend on anything else. He'd told nobody. He'd gone home, eaten his supper, and slept better than any night since he'd gotten back. He thought of it now, briefly, and went back to the work, which was where he belonged.
-
-His daddy had worked this same seam, and his daddy's daddy before him, down from the first drift the company opened on this side of the Unakas, back when the old man still cussed in the Norwegian that surfaced now only when something dropped on his foot. Rowe had been carried down here in a basket before he could walk it. There wasn't a room on this section he couldn't have found blind.
-
-Three months, and he'd be out of it. The letter had come in August — the Forest Service posting he'd put in for before he ever shipped out, come through at last, a ranger's station up on the ridge line where a man's job was watching timber and water instead of coal, breathing air that hadn't been breathed by two hundred other men first. He hadn't told the boarding house, hadn't told Hartner, hadn't told anybody but Elin. No hurry in it. This seam had fed him and his people for three generations, and a man didn't walk out on a debt like that without meaning to pay the rest of it down first. He thought about the ridge station some mornings the way another man might think about Sunday. Not longing. Just a thing waiting on the other side of the calendar.
-
-The coal this run was harder than the last, cut through by a slate parting that fought the chain and wanted a firmer hand on the feed to hold the cut true — which Hartner had rightly called before the whistle. The water came through it steady, and the pump caught it by the second hour same as always, and the ache across Rowe's shoulders settled into the honest ache of the right amount of labor, the kind that reports itself without asking anything back.
-
-Down the section the other rooms ran in their various states of correct, and he knew most of the men in them by character the way a man knows what he lives among without being able to say when he learned it — the room that ran fractionally behind because the timber there wanted more careful setting, the careful young fellow two entries over who'd be a fine hand indeed in another two years if the seam let him get there. He couldn't have said when he'd learned any of it. He simply had.
-
-The break came at the shift's midpoint, ten minutes, called for water and to let the pump catch the room, and because his section ran close along the hillside this year, he took it up at the drift mouth where the light still reached. The other men envied him that without saying so. He stood where the mine's warm breath met the cold coming down off the ridge, and from there he could see sky and the tops of the sycamores across the hollow. The sky had changed since his walk down — high gray coming in from the west, while the sun still held clear over the ridge to the east. He drank water that tasted of the tin dipper and thought about nothing in particular, which was the whole skill of a break.
-
-Hartner stood beside him at the portal. "Garden wants rain," he said, after a while.
-
-Rowe considered the cloud coming on. "This afternoon."
-
-"Won't do it any good." Hartner said it the way a man reports a small, settled injustice. "Too late in the season."
-
-Rowe hadn't, in truth, given much thought to what a garden wanted in late autumn. "Next year, then," he said.
-
-Hartner seemed to find that sufficient, and they finished their water and went back down.
-
-At the shift's midpoint the sun came in low over the ridge and caught the coal dust hanging in the shaft of light at the drift mouth — the fine black powder every room threw into the air all day, invisible in ordinary light, known only by the dry catch at the back of a man's throat come quitting time. In that low light it went gold, drifting on the mine's own outbreath, and the tipple crew worked through it without sparing it a glance, because sparing it a glance meant stopping, and stopping needed a reason.
-
-He'd stopped for it once, his first autumn on this section, years before any of the rest of it. Greiss had put him back to work with the flat palm, and he'd never stopped again. But he saw it every year the angle came round to it, and he saw it now.
-
-It put him in mind of something, the way certain qualities of light did — arriving before he could put a name to it and gone before he needed one. Not coal dust, though it wore the same gold when it came. Plaster, or powdered brick off a wall that didn't have a house behind it anymore, hanging thin in a colder light through a gap not much wider than a man, other men moving through that haze for reasons he had no wish to examine at his face in the third hour of a Thursday shift. He noted it, the way he noted the weather, and let it go.
-
-Five seconds, at most. He was back at the machine, hands on the feed, ear on the chain return, the left-side catch running inside the range he expected of it. The section was loud in the good way. The cloud would deliver its rain by afternoon, and he'd walk home under it same as any man, and none of that was any different from any other Thursday.
-
-He knew this Thursday the way he knew all the Thursdays before it — whole, without drama, the plain knowledge of a life that was his.
-
-He was at his machine, and the morning was half spent, and the coal dust moved in the low light over the ridge, and down the section Hartner's machine ran with the rhythm of twenty-two years, and his shoulders carried the honest ache of work rightly done, and his hands knew their business without being told a thing.
-
-Nothing was wrong.
-
+[Beat 37]
 The chain turned. The coal came free in good clean lumps and rode the belt out toward the light. His hands moved without instruction, and the section ran on around him, and the morning was exactly what a morning was — three months, he thought again, just three, and then the ridge, and the quiet — and he went on working, because that was what there was to do with a Thursday.
 
-[Beat 5]
-THE AUTHORIZATION
+[Beat 38]
+Then the pump changed its note.
 
+He caught it before he'd finished the pass — a stutter under the steady drone, the sound of a suction going part-air, part-water, the sound of a pump reaching for what it couldn't quite pull. His hands eased the feed on their own. Down at his boots the water stood higher than it had at the break, a black skin creeping toward the machine's low frame, and when he looked to the slate parting he saw why: the seam had opened wider than it let through in the morning, and the water came now not steady but in a sheet, more than the second hour's calm had promised, more than the pump had been catching after all. It hadn't caught it. It had only been keeping even, and the parting had just tipped the balance the wrong way. He shut the cutter down and stood in the rising cold of it, doing the arithmetic that every wet room forced on a man — how much tonnage was still in the face, how fast the water was gaining on the pump, and which of the two would run out first. By the answer he was already forming, it would not be the water.
+
+[Beat 39]
+"Rowe." Hartner's voice came down the entry, flat, the calm gone thin at its edge.
+"Mine's coming up faster'n it's going down."
+
+Rowe looked at the black creep at his boots, and at the clean coal still standing untouched in the face, and knew the clean tonnage he'd meant to run today was not going to come out of this room before the water stopped him — that whatever he handed back to the seam at the end of this shift, it would not be the day's work he'd promised himself.
+
+[Beat 40]
+He would tell it later, in pieces, to someone he had not yet met, in a room with no coal dust in it at all, and in no language this section had ever needed. Right now there was only the chain, and the seam, and a Thursday like any other — the last one that would ever be that.
+
+[Beat 41]
 The canonical property-recovery instrument reached Vega's desk on a Tuesday, ninth in the morning stack, and she loved it immediately and for entirely the wrong reason: the opening invocation scanned so cleanly — four stresses, then four again, the kind of balance the Received Tongue only gave you when the drafting Canon had bothered to make the thing beautiful and not merely valid — that she read the whole page twice before she noticed, with the small cold click of a door shutting two rooms away, that what it authorized did not exist.
 
-Not because there was anything wrong with it, technically. She had been copying canonical property-recovery instruments for three years, and this one was flawless in every particular a junior Scribe was trained to check: the fixed formulae rendered correctly, the authorization code valid, the Canon's own seal — *sigillum*, a word she had always liked the mouth-feel of — properly affixed. She read it twice because of a habit she'd picked up in the last eight months that had nothing to do with accuracy: the private, unauthorized suspicion that a sufficient quantity of correct documents could add up to a thing she did not yet have a drawer for.
+Not because there was anything wrong with it, technically. She had been copying canonical property-recovery instruments for three years, and this one was flawless in every particular a junior Scribe was trained to check: the fixed formulae rendered correctly, the authorization code valid, the Canon's own seal — sigillum, a word she had always liked the mouth-feel of — properly affixed. She read it twice because of a habit she'd picked up in the last eight months that had nothing to do with accuracy: the private, unauthorized suspicion that a sufficient quantity of correct documents could add up to a thing she did not yet have a drawer for.
 
 She set it down, took up the next instrument — a boundary dispute between two grain-tithe factors, dull as unsalted bread — and came back to the first.
 
--
-
+[Beat 42]
 The Scribe's office occupied the second floor of the east administrative wing, a stone room with two narrow south-facing windows that let the morning in as two long ribbons that crossed the floor and traveled as the day did, patient as anything the calendar governed. The walls held shelves of canonical codebooks in their assigned places, an order she could have recited blind, seven hundred years of institutional sediment pressed flat and bound in calf.
 
 Her desk kept the order that three years of the same work builds into a desk without asking permission: blank forms left, incoming centered, outgoing — sealed, done, no longer hers to worry about — stacked right. The codebook lay open to the section she was working, weighted flat by a smooth grey stone she'd carried since her first posting. Not a talisman. Only the correct weight.
 
-Pinned above the desk, in ink gone the soft brown of steeped tea, someone long before her had written a line she had stopped seeing sometime in that first year, the way you stop seeing anything nailed to a wall you pass sixty times a day: *An accurate copy outlives the men who lied to fill it.* She had always thought it lovely construction — the symmetry of *copy* against *lied*, the way *outlives* did double duty, holding both time and testimony in one verb. Nobody had ever told her who wrote it. She had never asked. It had become part of the shelf, the way anything true enough eventually stops being a claim and becomes furniture.
+Pinned above the desk, in ink gone the soft brown of steeped tea, someone long before her had written a line she had stopped seeing sometime in that first year, the way you stop seeing anything nailed to a wall you pass sixty times a day: An accurate copy outlives the men who lied to fill it. She had always thought it lovely construction — the symmetry of copy against lied, the way outlives did double duty, holding both time and testimony in one verb. Nobody had ever told her who wrote it. She had never asked. It had become part of the shelf, the way anything true enough eventually stops being a claim and becomes furniture.
 
 Three years of practicing anything past the point where it needs conscious management frees the attention that used to go to the doing, and hands it to whatever's standing next in line. For Vega, the thing standing next in line had always been the text. Not the shape of it — the shape was her function, her hand did the shape without her — but what the words, examined closely enough, were actually doing while everyone agreed to watch the shape instead.
 
@@ -807,152 +733,139 @@ This was not, she understood, part of the Scribe's official function. The offici
 
 She had stopped believing that roughly eight months ago, and had never once said so aloud, which felt, on the honest days, like its own species of lie.
 
--
-
-The instrument opened, as every instrument of its class opened, with the invocation she could have rendered asleep — *Ex auctoritate Canonis Immaculati* — four words she loved the shape of before she loved anything they were reported to mean, the stress falling where the Received Tongue always let it fall in the formal instruments, drilled into scribing apprentices until it came out of the wrist rather than the mind. She had been taught to render it faithfully, to pronounce it for rite, to recognize it as the fixed seal of a lawful hand — not, ever, to read it the way she read the common tongue, meaning arriving whole. Full literacy in the old rite belonged to Canons and above. A Scribe caught the shapes and revered the rest, and for three years that arrangement had struck her as simply how things were built, the way a locked drawer is merely a drawer that happens to be locked.
+[Beat 43]
+The instrument opened, as every instrument of its class opened, with the invocation she could have rendered asleep — Ex auctoritate Canonis Immaculati — four words she loved the shape of before she loved anything they were reported to mean, the stress falling where the Received Tongue always let it fall in the formal instruments, drilled into scribing apprentices until it came out of the wrist rather than the mind. She had been taught to render it faithfully, to pronounce it for rite, to recognize it as the fixed seal of a lawful hand — not, ever, to read it the way she read the common tongue, meaning arriving whole. Full literacy in the old rite belonged to Canons and above. A Scribe caught the shapes and revered the rest, and for three years that arrangement had struck her as simply how things were built, the way a locked drawer is merely a drawer that happens to be locked.
 
 She rendered the instrument for the Oculus Lacrimans Memoriae into the working copy that would sit in the registry for whoever needed it next:
 
-*By authority of the Canon Immaculate, exercising plenary jurisdiction in matters of Relic provenance and custodial accountability under the Liturgy's founding compact with the House of Ocipheus:*
+By authority of the Canon Immaculate, exercising plenary jurisdiction in matters of Relic provenance and custodial accountability under the Liturgy's founding compact with the House of Ocipheus:
 
-*Whereas the Oculus Lacrimans Memoriae (Registered Relic, Ocipheus Station, Year 630, Inventory Reference O-001) has been held under a vigil-custodian arrangement requiring renewal of custodial certification every fifty years, and*
+Whereas the Oculus Lacrimans Memoriae (Registered Relic, Ocipheus Station, Year 630, Inventory Reference O-001) has been held under a vigil-custodian arrangement requiring renewal of custodial certification every fifty years, and
 
-*Whereas the certification dated Year 1330 (Keeper Fen Aldric, countersigned Canon Marta Veyne, Canonical Registry Reference CV-1097-88) was rendered without custodia continuata upon the death of Canon Marta Veyne in Year 1352, and*
+Whereas the certification dated Year 1330 (Keeper Fen Aldric, countersigned Canon Marta Veyne, Canonical Registry Reference CV-1097-88) was rendered without custodia continuata upon the death of Canon Marta Veyne in Year 1352, and the Canon Immaculate, appointed Year 1367, has identified that absence as a material lapse in the custodial certification chain under provisions governing uninterrupted Relic accountability:
 
-*Whereas the Canon Immaculate, appointed Year 1367, has identified the absence of custodia continuata as a material lapse in the custodial certification chain under provisions governing uninterrupted Relic accountability:*
+Therefore, let this instrument authorize the Canon Immaculate to initiate review of the Oculus Lacrimans Memoriae's current custodial status and, if review finds the certification lapse material to uninterrupted accountability, to take such steps as canonical law provides for the resolution of custodial disputes in Relic provenance.
 
-*Therefore, let this instrument authorize the Canon Immaculate to initiate review of the Oculus Lacrimans Memoriae's current custodial status and, if review finds the certification lapse material to uninterrupted accountability, to take such steps as canonical law provides for the resolution of custodial disputes in Relic provenance.*
+Sigillum Canonis Immaculati. This eighteenth day, Month of the High Autumn, Year 1371.
 
-*Sigillum Canonis Immaculati. This eighteenth day, Month of the High Autumn, Year 1371.*
-
-*Custodia continuata.* She had always liked that phrase specifically, out of the whole liturgical wardrobe — the two words fit together the way a good hinge fits, no gap you could get a fingernail into, *custodia* holding the weight and *continuata* telling you which direction the weight kept moving. She had rendered it a hundred times without once stopping to ask what it actually asked of the world. She stopped now. The shape was lovely. What the shape had been made to do, this particular Tuesday, was not.
+Custodia continuata. She had always liked that phrase specifically, out of the whole liturgical wardrobe — the two words fit together the way a good hinge fits, no gap you could get a fingernail into, custodia holding the weight and continuata telling you which direction the weight kept moving. She had rendered it a hundred times without once stopping to ask what it actually asked of the world. She stopped now. The shape was lovely. What the shape had been made to do, this particular Tuesday, was not.
 
 The Year 1330 certification had been properly executed by Keeper Fen Aldric and countersigned by Canon Marta Veyne and entered in the registry that same year. Marta Veyne had died in Year 1352 — twenty-two years after, not before, and a certifying authority who dies after signing does not thereby unsign; ink does not travel backward through a person's lifespan no matter how devout the argument that wants it to. The certification was valid from execution. It remained valid. The provisions governed the currency of the certification cycle — whether a fresh one was presently due — not the continued living availability of whoever had signed the last one, forty-one years gone. The next certification fell due in Year 1380. Nine years hence. She did the arithmetic twice, because delight was cheap and being right was not, and she wanted, this once, to be entirely sure which of the two she was feeling.
 
-There was no lapse. What the instrument called a gap was the ordinary interval the founding compact itself specified as requiring no certification at all. The argument depended on reading *custodia continuata* as a condition of ongoing validity rather than a requirement discharged the moment it was met. That was not what the provisions said. She knew the section the way you know a road walked in every weather, by texture underfoot and not by consulting a map, and the texture here was wrong in a way her feet caught before her mind finished being polite about it. It was a reading the provisions could survive if nobody checked the dates. A careful reading, with the years lined up, could not survive it at all.
+The argument depended on reading custodia continuata as a condition of ongoing validity rather than a requirement discharged the moment it was met. That was not what the provisions said. She knew the section the way you know a road walked in every weather, by texture underfoot and not by consulting a map, and the texture here was wrong in a way her feet caught before her mind finished being polite about it. It was a reading the provisions could survive if nobody checked the dates. A careful reading, with the years lined up, could not survive it at all.
 
-She did not note this on the instrument. Her function was accurate copying and notarization, and the text was not her concern, and she had stopped believing that eight months ago and gone on doing it anyway, because a vow does not care what you privately believe while your hand is moving. She rendered it correctly, affixed her own attestation beneath — *ita testor*, thus I attest, three more old words she had loved the sound of since her novitiate and never once stopped to translate, because translating them had never before this Tuesday felt like it might cost her something to know. She set the instrument in the outgoing stack and took up the next.
+She did not note this on the instrument. Her function was accurate copying and notarization, and the text was not her concern, and she had stopped believing that eight months ago and gone on doing it anyway, because a vow does not care what you privately believe while your hand is moving. She rendered it correctly, affixed her own attestation beneath — ita testor, thus I attest, three more old words she had loved the sound of since her novitiate and never once stopped to translate, because translating them had never before this Tuesday felt like it might cost her something to know. She set the instrument in the outgoing stack and took up the next.
 
--
-
+[Beat 44]
 At midday the courtyard below her window stopped being routine, and Vega, who had watched that stretch of flagstone for three years and knew its grammar the way she knew the codebook's, understood within about four seconds that she was looking at a sentence she had never been taught to parse.
 
 The primary frame went up four meters across — four times the space of the portable certification units she'd watched raised for vigil-tests, the way you learn the size of a familiar word by how much room it takes on the page. The Catalyst housing was denser, the color of deep charcoal rather than a standard frame's grey-brown, and the anchoring crew drove their pinning rods into the flagstone joints with the attention of people who expected real membrane pressure. Nobody anchored like that for a demonstration.
 
 Two apparatus crews, eight bodies, working without ceremony and with a great deal of efficiency. A Descent Corps evaluator she didn't recognize stood off with a clipboard and a pack-carried field notation kit, not the desk-kept kind she processed the summaries of. Three Corps soldiers in full field dress, not station secondment, two of them holding an iron guide-frame she knew from the warehouse transit records — the bracket assembly used for moving large constructs through spaces never built to receive them. Pre-positioned. They had known what they'd need before they needed it, which was its own small sentence, and she read it the way she read everything: twice, and then with dread on the second pass, for what it implied about the drafting.
 
-The apparatus went live. The air at the frame's center stopped behaving like ordinary courtyard air and became a surface instead — membranous, fleshy in a way she had never once let herself say aloud even to herself, gone translucent and dark-veined the way skin goes when something presses it from beneath. She had seen the aperture perhaps fifty times. It was never quite the same twice and always the same in the one way that mattered: the moment the wound opened and the gold came through, you knew, the way you know a bell has been struck before you could say which bell. The light that crossed was not the courtyard's light — traveled from somewhere else's morning or evening or season and arrived here slightly mis-set, warmed amber at every edge, wet-looking even from a second-floor window. The aperture held perhaps thirty seconds and closed the way a cut closes over, and by evening no one standing in that courtyard would be able to point to the place in the air where it had been — its own kind of *custodia continuata*, she thought, a wound that certifies its own healing whether or not anything underneath actually mended.
+The apparatus went live. The air at the frame's center stopped behaving like ordinary courtyard air and became a surface instead — membranous, fleshy in a way she had never once let herself say aloud even to herself, gone translucent and dark-veined the way skin goes when something presses it from beneath. She had seen the aperture perhaps fifty times. It was never quite the same twice and always the same in the one way that mattered: the moment the wound opened and the gold came through, you knew, the way you know a bell has been struck before you could say which bell. The light that crossed was not the courtyard's light — traveled from somewhere else's morning or evening or season and arrived here slightly mis-set, warmed amber at every edge, wet-looking even from a second-floor window. The aperture held perhaps thirty seconds and closed the way a cut closes over, and by evening no one standing in that courtyard would be able to point to the place in the air where it had been — its own kind of custodia continuata, she thought, a wound that certifies its own healing whether or not anything underneath actually mended.
 
-She didn't get a clean look at the construct — the aperture sat at ground level, the thing came through below her sightline — but for a breath the flagstones under the frame went dark and slick, as if the stone had briefly gone wet and thought better of it. The evaluator wrote without looking up, a good sign of a bad thing. The guide-frame soldiers stepped back and repositioned left, which told her the construct was larger than they'd rigged for, or offset from where they'd expected — a discrepancy she filed instantly under *someone's estimate was wrong*, though whether the wrongness was carelessness or something nearer a lie of omission she did not yet have the material to decide.
+She didn't get a clean look at the construct — the aperture sat at ground level, the thing came through below her sightline — but for a breath the flagstones under the frame went dark and slick, as if the stone had briefly gone wet and thought better of it. The evaluator wrote without looking up, a good sign of a bad thing. The guide-frame soldiers stepped back and repositioned left, which told her the construct was larger than they'd rigged for, or offset from where they'd expected — a discrepancy she filed instantly under someone's estimate was wrong, though whether the wrongness was carelessness or something nearer a lie of omission she did not yet have the material to decide.
 
 Something went cold across her chest, low, under the ribs. Not fear — she was two floors up, behind glass — but the cold of the aperture itself, which was not in her room and which she felt there anyway, the way a change in weather registers in the joints before the mind checks the sky. She'd felt it faintly before, near vigil-tests. Never this plainly from a window two stories removed.
 
-They walked the construct toward the south service gate, the guide-frame soldiers alongside now, hands off the bracket — the posture of escort rather than control, not *guided* but *accompanied*, a distinction with real weight if you'd spent three years learning to read the difference between two verbs in a deployment record. It went through the gate and was gone.
+They walked the construct toward the south service gate, the guide-frame soldiers alongside now, hands off the bracket — the posture of escort rather than control, not guided but accompanied, a distinction with real weight if you'd spent three years learning to read the difference between two verbs in a deployment record. It went through the gate and was gone.
 
 Before she stepped back she noted where the gate led — a habit, not a decision — the maintenance passage to three storage halls on the south side. Two were in regular use; she'd filed their rotation records herself. The third had been locked eleven years, since a routine structural-assessment lock she'd filed her first year, concluded in Year 1366 per a resolution notation about as interesting as paint drying.
 
 It was open now.
 
-The assessment summary arrived an hour later, standard routing for canonical registration. The heading read: *War Construct Evaluation — Sphere 42 Origin — Designation: WC-Eirene (provisional).* She rendered it accurately, the measurements without particular attention, and slowed on the finding: *suitable for forward staging, pending secondary structural assessment under expanded-force parameters.* Four words doing an enormous amount of quiet work, *forward staging* an almost admirably tidy way to describe a thing you intended to use, dressed in the vocabulary of a thing you were merely storing.
+[Beat 45]
+The assessment summary arrived an hour later, standard routing for canonical registration. The heading read: War Construct Evaluation — Sphere 42 Origin — Designation: WC-Eirene (provisional). She rendered it accurately, the measurements without particular attention, and slowed on the finding: suitable for forward staging, pending secondary structural assessment under expanded-force parameters. Four words doing an enormous amount of quiet work, forward staging an almost admirably tidy way to describe a thing you intended to use, dressed in the vocabulary of a thing you were merely storing.
 
-She noted *provisional* the way she noted everything that mattered, which is to say she noted it and did not yet know what it cost. Constructs received permanent designations once confirmed for deployment; she'd filed six such instruments in three years. Provisional meant the designation was held pending secondary assessment. It also meant the question of how many was not yet resolved, and she was fairly sure *not-yet-resolved* was doing considerably more labor in that sentence than *provisional* was.
+She noted provisional the way she noted everything that mattered, which is to say she noted it and did not yet know what it cost. Constructs received permanent designations once confirmed for deployment; she'd filed six such instruments in three years. Provisional meant the designation was held pending secondary assessment. It also meant the question of how many was not yet resolved, and she was fairly sure not-yet-resolved was doing considerably more labor in that sentence than provisional was.
 
 WC-Eirene. One entry among many. She filed it and took up the next.
 
--
-
+[Beat 46]
 The transit suspension arrived that afternoon, inside a batch covering operational adjustments to field personnel across the High Autumn period. Eleven pages. She read batches of this kind at pace, checking each clause for copy accuracy, the way you skim a familiar hymn until a line comes out wrong.
 
 She slowed on page eight.
 
 Templar field designations ran T-prefix, posting-station identifier, sequential number — a system whose entire value, she had always privately admired, was its refusal to be interesting. You could process a deployment record, revoke or reinstate a mandate, without the Knight's given name ever entering the chain until the revision had fully processed and the affected party was formally notified. The designation carried the weight. The name sat adjacent, behind a different door, and her function had never once required her to open that door. She had found something almost restful in that division of labor, right up until the moment, this particular Tuesday, when it stopped feeling restful and started feeling like something built on purpose to keep exactly this kind of morning invisible.
 
-*Dame Lyra of Ocipheus. Templar. Three infusions. Field authority suspended pending canonical review of relevant certification.*
+Dame Lyra of Ocipheus. Templar. Three infusions. Field authority suspended pending canonical review of relevant certification.
 
 The review cited was the same review — she recognized the authorization number on sight, had copied its origin that very morning. The property-recovery instrument and the transit suspension were the same operation, filed through different tracks so the connection would not present itself to anyone reading either in isolation. Three years of this work had taught her exactly what a pair of documents looks like when they've been built never to be read together.
 
 Ordinarily that would have been the end of her interest. But a suspension of field authority does not execute itself. It has to be served, and canonical law does not permit service upon a designation — you cannot hand a document to a number. The courier copy required a name, and the name surfaced on the third page, in the standard delivery-block format she had rendered perhaps two hundred times without once needing it to mean anything at all:
 
-*To be delivered, upon return to posting, in person, to the following: Dame Lyra of Ocipheus, Knight Templar, three infusions, Ocipheus Station, in accordance with Article Nine of the Field Authority Code.*
+To be delivered, upon return to posting, in person, to the following: Dame Lyra of Ocipheus, Knight Templar, three infusions, Ocipheus Station, in accordance with Article Nine of the Field Authority Code.
 
 She did not read it a third time. She did not need to. Some sentences you only need to read once, and the mercy, if it was a mercy, was that this was the first one all day that hadn't made her want to.
 
-Above the desk, in ink gone the color of weak tea: *An accurate copy outlives the men who lied to fill it.* She saw it now for exactly as long as it took her to stop looking at it, and then she stood up, which had not happened at that desk in three years.
+[Beat 47]
+Above the desk, in ink gone the color of weak tea: An accurate copy outlives the men who lied to fill it. She saw it now for exactly as long as it took her to stop looking at it, and then she stood up, which had not happened at that desk in three years.
 
 She stood with no task in front of her for a moment considerably longer than it measured. Then she sat back down, because there was nothing true of her standing that was not also true of her sitting, and finished the batch. She rendered the suspension accurately, in the same hand she'd used on the eight instruments before it. She affixed her seal. She did not let the pen slow, because three years of practice exist for exactly this — the capacity to do the correct thing with a hand that has, for the length of one document, stopped being entirely hers.
 
 She added the batch to the outgoing stack.
 
--
-
+[Beat 48]
 In the afternoon she carried the day's stack to the distribution window, where the clerk who'd taken it from her perhaps three hundred times over three years said, "Busy day."
 
-"Nine instruments, one batch, one assessment registration." She handed the stack over in the order she always used, seals facing the same direction. "The property instrument wants a cross-reference notation to this afternoon's batch. Same canonical review number. They're the same operation, filed separately." She heard herself say *filed separately* and thought the phrase deserved better company than it was keeping.
+"Nine instruments, one batch, one assessment registration."
+She handed the stack over in the order she always used, seals facing the same direction.
+"The property instrument wants a cross-reference notation to this afternoon's batch. Same canonical review number. They're the same operation, filed separately."
+She heard herself say filed separately and thought the phrase deserved better company than it was keeping.
 
-He looked at her a moment before he wrote it down — not, she thought, out of doubt, but because cross-referencing two filings sat outside the standard intake notation and he wanted to be precise about where he put it. "Want this flagged to the Canon's filing office?"
+He looked at her a moment before he wrote it down — not, she thought, out of doubt, but because cross-referencing two filings sat outside the standard intake notation and he wanted to be precise about where he put it.
+"Want this flagged to the Canon's filing office?"
 
-"It's informational. The operation resolves under whichever instrument reaches completion first." Four words, and she noted, with the small detached interest she usually reserved for a nicely turned clause, that she had just described, in the driest available register, a race.
+"It's informational. The operation resolves under whichever instrument reaches completion first."
+Four words, and she noted, with the small detached interest she usually reserved for a nicely turned clause, that she had just described, in the driest available register, a race.
 
 He noted it. She went back upstairs and did not look at him again, because there was nothing left to say that her face could afford to say and keep its shape.
 
--
-
+[Beat 49]
 The amber of late High Autumn light came through the south windows at the slant of five o'clock, lighting the papers sideways, showing the vellum's grain — the variation you could see only in this light and mostly only felt, otherwise, with your fingers.
 
-The property-recovery instrument was in the outgoing stack. The transit suspension was in the outgoing stack. The war-construct evaluation was in the outgoing stack. Three documents. One operation. She had written *no action indicated* into enough folios over three years to know precisely what that phrase was built to hold and precisely how little it could bear — four words wearing the costume of a conclusion while committing to nothing whatsoever — and none of that appreciation was going to help her now, so she set it aside for a day with room for it.
+The property-recovery instrument was in the outgoing stack. The transit suspension was in the outgoing stack. The war-construct evaluation was in the outgoing stack. Three documents. One operation. She had written no action indicated into enough folios over three years to know precisely what that phrase was built to hold and precisely how little it could bear — four words wearing the costume of a conclusion while committing to nothing whatsoever — and none of that appreciation was going to help her now, so she set it aside for a day with room for it.
 
 The certification gap for the Oculus Lacrimans Memoriae did not exist under the provisions cited; she had checked the arithmetic twice and it held both times. The transit suspension covering the same window carried her sister's name. The war-construct designation was provisional and had been moved into a hall locked eleven years and locked no longer.
 
-She thought of an older filing she had crossed twice in three years and never once had reason to linger on: a Champion's own account of what she had seen at the Sinter frontier, submitted to the record generations back and processed as a standing observation with no current response required. She didn't know the account's content. She knew only its filing status, and had thought, both times she'd copied it, what a graceful little coffin *no current response required* made for a woman's testimony.
+She thought of an older filing she had crossed twice in three years and never once had reason to linger on: a Champion's own account of what she had seen at the Sinter frontier, submitted to the record generations back and processed as a standing observation with no current response required. She didn't know the account's content. She knew only its filing status, and had thought, both times she'd copied it, what a graceful little coffin no current response required made for a woman's testimony.
 
 She thought about why an operation built to review a Relic's custodial certification would also need to guarantee that the Knight responsible for that Relic's vigil could not be in the field while the review proceeded. She did not write the answer down. She was not required to write down everything she understood, only what she was told to render — that was the difference her vow had never quite specified and that she had spent eight months discovering the shape of, alone, at this desk, in this light.
 
 She had been furniture, by her own accounting, for three years, and had not minded it, because furniture is load-bearing and the institution needed load-bearing things and she was well suited to the work. She had not previously considered that furniture remembers everything that happens in the room, in order, accurately, whether or not it is ever asked to.
 
--
-
+[Beat 50]
 Her sister had left three days before. The note had been on the scribing table at the Station, folded now into a case two hundred kilometers south of this desk. She hadn't brought it with her — she was not the kind of person who kept paper for sentiment. She kept the memory and left the page, which she privately thought the better arrangement anyway; paper could be read by anyone, but a memory kept correctly stayed yours.
 
 Lyra's hand was the hand of someone who'd spent seventeen years taking field notes in poor light in small spaces: dense, lateral, the letters compressed the way a mind compresses what a medium can't easily hold. Not a considered hand. A fast one.
 
-*Back in three days. Don't eat the station bread.*
+Back in three days. Don't eat the station bread.
 
 No hidden clause anywhere, which she noted with something close to relief — she'd spent the entire day finding second meanings under first ones, and here, finally, was a sentence exactly what it said and nothing under it at all. The station bread had been underproofed roughly two-thirds of the time for three years running. Lyra had lodged a formal complaint with the Station kitchen twice, in the tone of someone who believed the record should reflect a problem even when the problem would obviously never be addressed — a habit Vega recognized, uncomfortably, as the family trait she'd inherited herself and simply practiced on more dangerous paper. Lyra had eaten the bread anyway. You ate what was in front of you.
 
 It was the fourth day. Four days sat within the normal range for an eastern-sector observation. Six days would begin to sit outside it. Six days had not happened yet, and Vega found herself doing with her sister's return the exact arithmetic she'd done with Year 1380, checking a number that would not move no matter how many times she asked it to.
 
-She thought about the suspension instead — authorized before the property review was even filed to justify it, a review that would not find a lapse where none existed, not if anyone competent read the dates, and that competence had evidently not been required of whoever was going to act on the finding. She thought that *custodia continuata* was, on reflection, a phrase built for exactly this: a promise that the watching never stopped, worn by an operation that depended on nobody watching closely enough to notice it had.
+She thought about the suspension instead — authorized before the property review was even filed to justify it, a review that would not find a lapse where none existed, not if anyone competent read the dates, and that competence had evidently not been required of whoever was going to act on the finding. She thought that custodia continuata was, on reflection, a phrase built for exactly this: a promise that the watching never stopped, worn by an operation that depended on nobody watching closely enough to notice it had.
 
 She thought about her sister riding back into a posting where her own field authority no longer legally existed, and not knowing it, because the courier hadn't caught her yet, because couriers took days and operations did not wait politely for couriers to finish before beginning.
 
 She did not know what to do with any of this that her vow permitted. She knew what her vow required, and she had already done it, in the correct hand, with the seal in the correct position, and that was the part of the day she could not set down for the rest of the evening no matter how carefully she tried to fold it away.
 
--
-
+[Beat 51]
 She ate in the common room at the table she usually sat at and said the things that got said in common rooms. She listened. She offered an observation where she had one. She ate the bread, dense and a little sour, and thought that she would give a great deal, just now, for a complaint about bread to be the worst thing in her possession — a sentence she turned over twice for its shape before she let herself feel how true it was.
 
 She went to her quarters, lay on her bed with her hands folded on her chest, and looked at the ceiling in the dark, which was what she did when she was working through something that fit no drawer she owned.
 
-Her drawers were good ones. Three years of careful work in an institution that had been generating canonical instruments since before the Houses held their current names had built her a sound filing system, and it had covered, without exception, everything she had ever been asked to render. The trouble was not the drawers. The trouble was that what had crossed her desk that day, in an order she was increasingly certain had been chosen rather than fallen into, belonged to a different kind of record altogether — the kind that did not open with *Ex auctoritate Canonis Immaculati* and close with a seal, the kind that began instead with what she had actually seen with her own eyes and what she understood once she held the day's three documents in one hand instead of apart in three drawers.
+Her drawers were good ones. Three years of careful work in an institution that had been generating canonical instruments since before the Houses held their current names had built her a sound filing system, and it had covered, without exception, everything she had ever been asked to render. The trouble was not the drawers. The trouble was that what had crossed her desk that day, in an order she was increasingly certain had been chosen rather than fallen into, belonged to a different kind of record altogether — the kind that did not open with Ex auctoritate Canonis Immaculati and close with a seal, the kind that began instead with what she had actually seen with her own eyes and what she understood once she held the day's three documents in one hand instead of apart in three drawers.
 
-She lay in the dark and thought about the construct crossing the courtyard with the gait of something built to receive one direction and hold it precisely until told to stop. She thought about *forward staging* nested quietly inside a finding like a knife inside a folded napkin. She thought about a hall locked eleven years standing open now, and her sister's name typed into a delivery block on the third page of a document that would take days yet to reach her. And she thought, with the small unwilling clarity that comes only at the end of a very long day of noticing things, about *custodia continuata* — the lovely hinge of it, the two words fitting so cleanly together — and understood, for the first time since her novitiate, that she had spent three years admiring the shape of a phrase without once asking herself what kind of door it was built to hold shut, or who had been left on the wrong side of it, or how long the Liturgy had been counting on people like her to love the sound of a thing too much to check what it was doing.
+She lay in the dark and thought about the construct crossing the courtyard with the gait of something built to receive one direction and hold it precisely until told to stop. She thought about forward staging nested quietly inside a finding like a knife inside a folded napkin. She thought about a hall locked eleven years standing open now, and her sister's name typed into a delivery block on the third page of a document that would take days yet to reach her. And she thought, with the small unwilling clarity that comes only at the end of a very long day of noticing things, about custodia continuata — the lovely hinge of it, the two words fitting so cleanly together — and understood, for the first time since her novitiate, that she had spent three years admiring the shape of a phrase without once asking herself what kind of door it was built to hold shut, or who had been left on the wrong side of it, or how long the Liturgy had been counting on people like her to love the sound of a thing too much to check what it was doing.
 
 She thought, once more, about the line above her desk, and understood — not for the first time, but for the first time in a way she would not be able to put down again — that an accurate copy outlives the men who lied to fill it only if someone keeps the copy. She intended to keep hers.
 
 She went to sleep badly, and in the morning she got up and went to work.
 
-[Beat 6]
-THE TAKING
-
-MYRMIDON INTAKE RECORD — STATION VERLAINE NORTH — THE THAW, YEAR 1371 (59 AoV)
-Origin: Sphere 31. Batch 12 of the Thaw rotation.
-Designation issued: M-1018883.
-Prior catalogue entry: none. Prior membrane history: none.
-Oath of compact administered at time of processing. Designee's comprehension of oath contents: not assessed.
-Status: Received. Transferred to conscript regiment, eastern barracks. No follow-up required.
-
--
-
+[Beat 52]
 The coal dust hangs gold in his lamp-light the way it always does this deep in a shift, the Unaka seam running true under the pick, and Soren Rowe — Ted to the men who had marched beside him and were mostly not living men any longer, Rowe to everybody at the drift mouth because a surname was all a coal mine required — does not look at it. Nine years he has not looked at it. Coal dust is weather. You do not notice weather. You notice a bad prop, a slack timber, a foreman's lamp coming down the entry at the wrong hour.
 
 His hands know the pick. This shift they know it better than usual — a shim wedged behind the seam before the whistle proper, a trick Greiss would call unauthorized and would be right to call it, and the coal has come away clean two hours on the strength of it, longer than any trick of his has ever held. Past the half of the shift now, deep in the drift, the air gone thick the way it does before the dinner turn. Three months, he has told nobody but himself, and the Forest Service posting comes through and he is done with the mine for good — done with the seam, done with the Unaka line, done with going down where his father still goes down six days a week and calls it a living. A man can want a green mountain and a rifle for varmints instead of Germans and call that ambition, and nobody at the drift mouth would think less of him for it.
@@ -963,6 +876,7 @@ It was cold at the drift mouth before dawn, the camp dog going off at nothing be
 
 The coal is coming away right, seam holding true under the pick. This is the whole content of the shift, and it is enough.
 
+[Beat 53]
 Then the floor stops being a floor.
 
 He will spend what remains to him circling that sentence and never improve on it, though it says next to nothing of what happened. Nothing came before it. No sound that did not belong to the face, no light the wrong color, no warning any sense he owns is built to register as a warning. One instant his hands are on the pick and the coal is under it the way it has been for nine years running. The next instant there is no coal, no hands he can locate, and the direction that has always, without argument, been beneath his boots has simply declined to go on being beneath his boots.
@@ -971,8 +885,7 @@ It is not pain. He will insist on this afterward, turning it over the way you tu
 
 He goes out the way a lamp goes out. Not into a darker room. Out of the having of a room at all.
 
--
-
+[Beat 54]
 After the pluck there is no after, for a long while, in any sense a clock would recognize.
 
 There is a spark, and the spark is aware, in the diminished and terrible way a spark can be aware of anything, that it is a spark and not a man, and that it is suspended in something warm and gold, thick as mead poured slow, the color of lamplight caught in a bottle of honey-water — the Amnios, he will hear it called much later, though the name when it comes will explain nothing he has not already learned the hard way — no bottom he can find and no wall to put a hand against and confirm the existence of a hand. It clings where he passes through it the way birth-fluid clings, and seals behind him seamless, as if the wound of his passing had already started healing before he was all the way through it. No up. He tries for up out of old habit, thirty-one years of a head that assumes a direction for the sky, and finds nothing the reflex can hook onto. No cold, because cold wants a surface to be felt against, and he no longer has one. No sound, because sound is air moving, and there is no air here to move — only the slow honeyed drag of the medium itself, unhurried, indifferent, the way water is indifferent to the thing drowning in it.
@@ -983,8 +896,7 @@ It drifts past the way the debris of a wrecked barge drifts down a slow river, u
 
 He tries to reach for the kitchen. There is nothing to reach with. There is only the gold, closing soft over the place the reaching happened, and under the closing a horror with no better name yet than this: that he is unborn again, a spark adrift in some other world's blood, with no body anywhere in it built to hold him.
 
--
-
+[Beat 55]
 Then there is weight, and with the weight a kind of dryness — the gold he had been drifting in gone all at once, the way water sheets off a hand hauled up out of a bucket in one motion, though there is no skin left under it for him to feel it go.
 
 Wrong weight. Heavier in the shoulders than a man has any business being heavy, lighter somewhere in the chest where a man expects to carry something. — housing, forged something dark, riveted at the seams, jointed at eleven working points, provenance Verlaine — the report arrives from nowhere, cold and complete, the way a foreman reads a tally without looking up from the board, and he understands before he wants to that the report was not a thought he had. It was the shell's, filed through him the way water is filed through a sluice, whether the sluice has an opinion about it or not.
@@ -997,8 +909,7 @@ He tries to scream.
 
 Something happens in the place a scream would have started. Air is moved — a mechanism somewhere in the jointed throat doing its designated work — and what comes out is not his voice. It is not any voice he would recognize as belonging to a living thing. A short flat tone, ugly and functional, the sound a thing makes when it is required to make a sound and given no better instrument to make it with. He hears it and understands two facts that will not separate again as long as he exists: the sound came from him, and it was not his.
 
--
-
+[Beat 56]
 They are called forward by number.
 
 He understands this at once — understands every word of it, cleanly and complete, the way he will understand every word said to him from this hour forward, because whatever the shell is has already gone about rendering this world into sense before he can want it not to — and the understanding brings him nothing. A robed figure works down the ranks with a board, and Soren clocks it the only way he has ever clocked a man with a board and a line of workers in front of him: a foreman, checking off a tally, and the tally is men. Each spark ahead of him receives a string of words that mean exactly what they say and steps forward, or is walked forward by a hand on the shoulder if it will not step on its own, and is led away through a gate he cannot see the far side of.
@@ -1009,27 +920,27 @@ A second robed figure stands at the head of the line, and over each spark in tur
 
 Requiem. In nomine. Corpus.
 
-He knows those shapes. Not from this yard, not from any place a man could point to on a map of this world. From a one-room schoolhouse with a stove that never drew right, a teacher who made every boy in Carter County recite the same dead words whether or not they'd ever need them. From letters cut over a church door back home, and into fieldstone in a churchyard he has stood in more times than he cared to count, reading names. It is Latin — the plain schoolboy Latin nobody in Carter County has spoken outside that stove-warmed room or a Sunday liturgy in ninety years — poured over him now, here, an unbroken world away, by a robed woman who says it like the one true voice of God Almighty Himself, because to every soul in this yard but him, it is.
+He knows those shapes. Not from this yard, not from any place a man could point to on a map of this world. From a one-room schoolhouse with a stove that never drew right, a teacher who made every boy in Carter County recite the same dead words whether or not they'd ever need them. From letters cut over a church door back home, and into fieldstone in a churchyard he has stood in more times than he cared to count, reading names. It is Liturgin — the plain schoolboy Liturgin nobody in Carter County has spoken outside that stove-warmed room or a Sunday liturgy in ninety years — poured over him now, here, an unbroken world away, by a robed woman who says it like the one true voice of God Almighty Himself, because to every soul in this yard but him, it is.
 
 He understands, in the same cold half-second, two things that will never come apart again: this is the holiest sound in the whole of this place, and he is, so far as he can tell, the only creature in it who knows it is nothing of the kind. There is no one to tell. The shell hands him this world's speech whole and hands him no way to hand anyone his own — and even were there a tongue between them, who would credit the stolen man who says your God's own voice is a dead language off a country schoolhouse wall. He files it the only place left to file anything: down, and quiet, and alone.
 
+[Beat 57]
 Then the tally reaches him, and the sound comes at him, precise, unhurried, the tone of a woman who has said this exact sentence some large number of times before and expects to say it some large number of times again before the day is through.
 
-*"Em One Oh One Triple Eight. Step forward."*
+"Em One Oh One Triple Eight. Step forward."
 
 He understands every word of it, whole and immediate — no lag in the sense, no fog to push through, only a flat total comprehension arriving a half-beat ahead of anything in him that could call itself a will. The numbers land first and hardest, because arithmetic needs no permission from the rest of a sentence to mean what it means, and he understands, with a lurch that has nothing left in him to lurch with, that the numbers are his. Not his name. Not Rowe, not Ted, not Soren, not any of the three men he has been to three different sets of people who loved him or fed him bread of a Thursday morning. A string of digits assigned to a batch, in a rotation, at a station, on a board he will never read. It is the one thing in this whole gold impossible transaction unambiguously, exclusively his, and it is a number, and he hates it, and his body is already stepping forward before the hating finishes arriving, because refusing was never one of the choices on offer — only which face he wears while he answers.
 
 He is walked through the gate. He does not look back at the line, because the aperture does not turn that way unless he tells it to, and he has not yet learned he is permitted to tell it anything at all.
 
--
-
+[Beat 58]
 The barracks give him nothing worth keeping and the drill gives him less, and none of it matters beside the gunship.
 
 He is put aboard it without ceremony, the way a crate is loaded, and finds himself — the finding takes some while, the shell answering his intention a consistent half-beat behind the intention itself, a lag he will spend seven months learning to out-think rather than outrun — seated inside a turret ring on the gunship's flank, designated, he gathers from the numeral stenciled at the housing's base, the thirty-fourth of some greater number of identical rings. Turret #34. Engines somewhere forward doing a great deal of work, the deck thrumming a vibration that reaches him not through skin, which he no longer has, but through the frame itself, a borrowed sensation standing in for the true one the way a man feels a passing train through a platform rail.
 
 — firing gear: breech-loaded, single action, Verlaine mark, cooling jacket sound but old — the report files itself in behind his eyes unbidden, and he lets it pass through him the way you let a cough finish before you go on talking.
 
-The engagement, when it comes, is brief and comes from below: shapes on the ground, moving, a river crossing crowded with them, and the mechanism built into him — not his, the shell's, the thing Verlaine wired into the housing and calls a fire-control routine — presents a solution the way a rifle presents a trigger: range, bearing, a tone in the aperture that means *loose*. He understands the word the instant it lands, and understanding does no favors here either; the horror arrives with nothing lost in translation. Under the word is the same arithmetic that told him his own number was his own number, offered now toward a different end.
+The engagement, when it comes, is brief and comes from below: shapes on the ground, moving, a river crossing crowded with them, and the mechanism built into him — not his, the shell's, the thing Verlaine wired into the housing and calls a fire-control routine — presents a solution the way a rifle presents a trigger: range, bearing, a tone in the aperture that means loose. He understands the word the instant it lands, and understanding does no favors here either; the horror arrives with nothing lost in translation. Under the word is the same arithmetic that told him his own number was his own number, offered now toward a different end.
 
 He does not fire.
 
@@ -1041,17 +952,16 @@ It asks a third time. Same range, same bearing, same flat certainty from a mecha
 
 Afterward — engagement thinning below, the gunship holding its line, other turrets along the flank having done what his did not — the only report the shell gives him honestly, without the half-beat lag, without the flatness, without the sense of being told about his own body by a stranger, is smell. Burnt ozone, sharp and mineral, cordite's cousin in a world that has never heard the word cordite, the firing gear beside him having cooked itself in the routine's second and third askings. It reaches him the way the camp dog's bark used to, immediate and unmistakably real. It is the one true thing his new body tells him all day, and it is the smell of the machinery's own small failure, not his.
 
+[Beat 59]
 Nothing is done to him for it. Nobody comes to the turret ring to ask why it declined the solution offered three times running. A different robed figure, further down the ship, makes a note on a board very like the boards from the yard, brief, and the note is the entire proceeding. He understands this too, eventually, from men further along in their numbers than he is in his: you do not court-martial a tool. A tool that will not do the work is a fault, logged and scheduled, and the schedule has only the one remedy for a fault that repeats.
 
 You do not court-martial a tool.
 
 You scrap it.
 
-Under the flatness, where the schoolhouse Latin still sits filed down and quiet, Soren Rowe understands he is now a fault on a board, in a rotation, at a station, three months shy of a green mountain nobody here has ever heard of — and there is not one soul in the whole of this gold-lit, God-haunted world he could tell any of it to, even if the shell gave him back a voice built to say it in.
+Under the flatness, where the schoolhouse Liturgin still sits filed down and quiet, Soren Rowe understands he is now a fault on a board, in a rotation, at a station, three months shy of a green mountain nobody here has ever heard of — and there is not one soul in the whole of this gold-lit, God-haunted world he could tell any of it to, even if the shell gave him back a voice built to say it in.
 
-[Beat 7]
-VERLAINE ENTRY - THE LAW DOESN'T APPLY HERE
-
+[Beat 60]
 Third morning at sea. Lyra woke with her jaw locked shut — the cold had found the gap between gorget and chin-strap in the night and set up post there. She lit no light on deck after dark. Vigil doctrine ran observation posts along the crossing the same as it ran them on land, and whatever her standing with Verlaine's border authority came to, she would not clarify it with a lantern visible for twenty kilometers of open water.
 
 She stood in the grey light and took the muster of her water, container by container, the way she'd take muster of anything that mattered. Four filled at the Wall's harbor before they'd cast off, the casks topped to the last inch the quartermaster would spare — slow to fill, grudging, but what there was. Two containers empty now. One down to its last third. The fourth gone to the Heloth courier's cooling intake, and that was correct priority, not preference: without the courier she made the rest of the journey on foot once they raised land, in full plate, escorting a seventy-year-old scryer and a Rod worth more than her rank, on whatever remained of her field kit.
@@ -1061,41 +971,32 @@ One container, one-third full. Two days of crossing left, by Orim's reckoning.
 He was already at his courier's side, pressing Catalyst sensitizer into his fingertips with the same method she'd watched twice now — palm flat to palm, absorbed through the skin, a twenty-minute window of amplified membrane perception bought at a price of nausea he never mentioned and she had noted anyway.
 
 "Nothing within the Rod's range last night," he said, without looking at her. "Whoever is ahead of us has a different route, or a faster pace."
-
 "Or they made the crossing before the weather turned and they're already down in the valley."
-
 "That too." He wiped his fingertips on his coat. "We have a problem."
-
 "Water."
-
 "The cistern will be down to sediment before we raise the Verlaine coast. Last decent rain this crossing saw was the equinox squall in the ninth month. Next is usually the eleventh-month gales. We are in the tenth." He looked east along the grey swell that was the only geography either of them could see. "There's supposed to be a Sphere-lake somewhere under this stretch of the Narrows. In the ninth month a crew can catch enough rain off the sail to make up the difference. Not in the tenth. We've been dry since the equinox."
 
 She had known this already. Two days of watching the containers go lighter had built the knowledge in her, plain as a drill she'd run before: dryness at the back of the throat that a third of a container would not answer. The salt air took the water out of the body before the body reported the loss. She had been reporting the loss since yesterday.
 
 "How far to the Verlaine coast from here?"
-
 "Two days, perhaps, at this heading." He looked at the courier. "The machines are adequate. We are less so."
 
 She shouldered her pack. The courier came to alert the instant her palm touched its housing — warm vibration, the chemical readiness of it, like a horse that knows the bit before the rein moves. Thirty-six hours of reserve at this heading. She and Orim had less than that, and no machine to carry the difference.
 
 They moved.
 
--
-
+[Beat 61]
 The deck narrowed her whole world to the space between two rails. Lyra kept her shoulder to the leeward gunwale, the couriers lashed forward of the mast, legs chocked, housings sheeted against the spray. She looked over the rail once, logged how much freeboard the swell was eating, and did not look again.
 
 Orim catalogued as he went. This was how she was learning him — not by conversation but by the running report of a man fifty years in the trade, noting everything he passed the way a sentry logs a watch. The mooring rings cut into the skerry off the starboard rail were pre-Vigil, eighth or ninth century by the oxidation — iron set by travelers who needed a place to tie off when the tide turned against them. The rope was long gone. The rings held.
 
 "There was a toll house on that skerry, sixth century," he said. "Not Verlaine's - Verlaine didn't exist yet in any form we'd recognize. A local arrangement. You paid a family that had held the crossing for four generations, and you passed, and the record of your crossing went into a notation system nobody outside the strait has been able to read since the ninth century, when the family died and the notation died with them. The Bressant archive still cites the crossing fee as precedent for the current transit charge, and the notation system as its record. The precedent rests on documents no one can verify. Verlaine finds this satisfying."
-
 "Do you know how much the fee was?"
-
 "No one does. That's rather the point."
 
 She filed it — not dismissed, filed — data she'd know where to find when she needed it — and kept moving.
 
--
-
+[Beat 62]
 They raised the Narrows at midday.
 
 Marked by a day-beacon on the seaward rock, no more than fifty years by the weathering, and by the water changing on the far side of it: astern, the chop and grey light of the open crossing; ahead, a longer, gentler swell, the current still cold but with a give to it that meant shelf water, not open water. Still no rain in it. Landfall ahead. Verlaine somewhere under the cloud-line, lying flat against the horizon, not yet raised.
@@ -1110,8 +1011,7 @@ He unslung the Rod.
 
 Forty centimeters of dense dark mineral in a plain iron housing, grip wound in old cord rewound at some point — she could see where the new winding started, a shade off the old wear. Seven grooves cut into the shaft at irregular intervals. He ran his fingers along them without looking, the way a hand finds the strap of a shield worn seventeen years. The fourth groove. His thumb stopped there, rotated slightly, moved on.
 
-"What are you looking for?" she said.
-
+"What are you looking for?" she asks.
 "I'm not looking yet. I know what I'm looking for. I'm finding the address."
 
 He wet two fingertips from the small Catalyst vial at his belt, pressed them together at his sternum, took two deliberate breaths. His eyes went somewhere else - not unfocused, differently focused, the way eyes look when they're seeing something that isn't in front of them.
@@ -1125,17 +1025,15 @@ Three minutes, by her count. His eyes came back.
 She looked at the well. She looked at the Rod. She looked at the well again.
 
 "You're going to open the membrane."
-
 "I am going to open the membrane." He crouched at the well and pressed the Rod's mineral tip against a ballast stone at its lowest point, where any liquid would collect. "It will hold for perhaps twenty seconds. Possibly thirty. I cannot extend it and I cannot close it early." He glanced back. "The water will be cold. There will be some force behind it. Please stand behind the courier."
-
 "The Liturgy classifies this as -"
-
 "Unauthorized Membrane Perforation, Class Three. Yes." He found the trigger with the flat of his finger. "The Liturgy classifies a great many things. Please stand behind the courier."
 
 She stood behind the courier.
 
 He depressed the trigger.
 
+[Beat 63]
 The membrane answered the way she had only read about in notation: the stone's own skin rose at the mineral tip, translucent, fleshy at the edge, a window into nothing that was also, somehow, a surface. Dark veins threaded through it, fine as hairline cracks in old stone, pulsed once, twice, a third time as pressure built from the far side. Reading a description in an archive was not the same as watching the wound try to close and fail — thin, straining to seal the way a field dressing strains against a wound that won't stop bleeding, and could not, because the Catalyst held it open against its own will to heal.
 
 The veins went dark.
@@ -1161,19 +1059,16 @@ By the time she'd finished, he had moved to the well's rim and sat against the b
 The Rod's mineral tip, wrapped now in his coat, radiated heat she could see through the cloth — not dramatically, but the weave lay differently over it than it would over something merely cold. She logged that too.
 
 "You've done this before," she said.
-
 "I know which lakes are deep."
 
 He drank again and didn't say anything further.
 
-She let the silence run the length it was owed. A question gets asked; data comes back. The data was this: he had done this before; he knew which Spheres were which; he knew exactly what a deep lake's pressure did to a membrane; and he had known all of it fifty years. Not the first time. And by the precise cut of how he'd said it — *I know which lakes are deep*, not *I have done this* — probably not the first time he'd been asked, either.
+She let the silence run the length it was owed. A question gets asked; data comes back. The data was this: he had done this before; he knew which Spheres were which; he knew exactly what a deep lake's pressure did to a membrane; and he had known all of it fifty years. Not the first time. And by the precise cut of how he'd said it — I know which lakes are deep, not I have done this — probably not the first time he'd been asked, either.
 
 "Thank you," she said.
-
 "We'll need it before we raise the coast." He stood, rewrapped the Rod, and resettled it across his back with the care of a man handling something that had cost him to use. Not regret. Accounting. "The landing begins past the Narrows."
 
--
-
+[Beat 64]
 What changed first, on the approach, was the air — heavier with every mile of closing coast, the salt-thinness that had sat on her chest since the first day of the crossing finally letting go. The dry smell of open water gave way to something wetter and darker: old soil, cold vegetable matter, fog lying low against the shoreline somewhere ahead. The cliffs went from pale limestone to grey-green with lichen in the sheltered folds. Silverthorn hedges along the upper field margins caught the fog and made a low sound in the wind, not quite a tone — a resonance felt in the sternum before it reached the ear. The first roofs were thatched Verlaine high-country style, alternating rows staggered for drainage, not the single-direction lay she knew from Ocipheus. Smoke from one chimney. A cow in a yard. A child looked at the Heloth couriers from the gate, then went inside without looking at the riders.
 
 By the second afternoon the coast had given way to border scrubland, and the scrubland to wine country — three centuries of cut hillside, terrace behind terrace behind retaining walls of fitted limestone the deepvine roots had grown through until stone and root held each other up like two ranks bracing the same line. The vines ran in rows on every terrace, autumn foliage a Sphere-import purple-black striped with native yellow where the transplant hadn't taken — a hillside as legible as a muster roll, recording how far the variety had spread each generation.
@@ -1186,7 +1081,7 @@ Pontecote was not where she crossed.
 
 The goat path ran three kilometers north of it, through scrubland Verlaine hadn't bothered to checkpoint because nothing of value had ever come through it except goats. Goats didn't need transit papers. Neither, for the next forty seconds, would she.
 
-The ground was damp from two days' rain, and the courier's load-stability protocol kept recalculating for terrain that wasn't difficult so much as irregular — a slight hesitation in the gait she'd learned to read as the machine thinking. She didn't push it. At the path's highest point the Verlaine border was a low stone wall, waist-high, the kind that says *the jurisdiction changes here*, not the kind that says *we will stop you*. She took it at a step-through. The courier followed with the patience of a machine that held no opinion about property lines.
+The ground was damp from two days' rain, and the courier's load-stability protocol kept recalculating for terrain that wasn't difficult so much as irregular — a slight hesitation in the gait she'd learned to read as the machine thinking. She didn't push it. At the path's highest point the Verlaine border was a low stone wall, waist-high, the kind that says the jurisdiction changes here, not the kind that says we will stop you. She took it at a step-through. The courier followed with the patience of a machine that held no opinion about property lines.
 
 On the far side, she was in Verlaine without authorization.
 
@@ -1196,8 +1091,7 @@ She had, by her own estimate, until the first post sighted her.
 
 That was now.
 
--
-
+[Beat 65]
 The signal mirror caught the morning light — a flash, directional, down into the valley — the same instant she made the post: eleven meters up on the fourth terrace, a box of cut stone, slit-window, mirror housing on the south face. The watcher had been waiting. Not for her specifically — for anyone who crossed at the goat path, which people evidently did, or Verlaine would not have troubled to post a relay against it.
 
 She put the courier to the climb protocol.
@@ -1211,9 +1105,7 @@ They came round the upper switchback three terraces above — not mounted in the
 The Pontis barge landing was half a kilometer below, and a river barge outran anything Verlaine could put on the bank roads this ground, this season — she knew the river-speed tables in the Gyldir Shore Accord's commercial freight section by heart. If she made the barge, the cavalry would have to coordinate a landing intercept downriver, which meant that landing would be alerted before she arrived, which meant she would arrive to Verlaine border authority with a stamped log and no transit documentation. Which was the position she held regardless.
 
 "There is," Orim said from behind her, not slowing, "a treaty that technically obliges them to let us pass unmolested. The Year 1064 agreement predates the suspension mechanism by roughly four hundred years."
-
-"Does anyone back there know that?"
-
+"Does anyone back there know that?" she asks.
 "Almost certainly not. It rarely helps to be correct about a document no one present has read."
 
 She filed that too, the way she'd learned to file most things Orim gave her: information that would have bought something ten minutes ago, delivered now with the same unhurried precision he gave everything — as if the shape of the sentence mattered more to him than the moment it landed in.
@@ -1226,8 +1118,7 @@ The formal challenge came from behind her - one rider, one shout, Verlaine borde
 
 She was on the barge.
 
--
-
+[Beat 66]
 The Pontis barge operator had the look of a man who'd spent a career reading commercial river traffic and was actively revising his morning's assessment of it. He examined the sealed authority with the care of someone encountering it for the first time, stamped it, and did not ask about the cavalry visible on the upper switchback, which was professional of him.
 
 The courier folded into rest-state in the cargo space, steam pressure managed, reserves on standby. She paid the crossing fee. The barge pushed off.
@@ -1236,30 +1127,23 @@ Behind her, on the Pontis bank, the cavalry reached the landing a beat too late.
 
 She went into the cargo space and sat beside the courier's warm housing.
 
--
-
+[Beat 67]
 Verlaine river-country in autumn had a quality she hadn't anticipated: density. Not natural density — the density of a landscape kept under continuous record. Every village on the Veil had an archival post. Every archival post flew a flag. Green for commercial cargo, yellow for passenger crossings, red for anything moving under special authority. As the barge ran north the red flags went up post by post, thirty seconds each time from sighting to notation to raised flag. An administrative apparatus with no authority to stop her was logging her in real time, and had no intention of letting her passage go unrecorded. Ocipheus kept vigil over thirty years at a single site. Verlaine kept a ledger of everyone who ever passed. She was not certain, watching the flags rise, which one she'd call the more devout.
 
 Orim came to sit beside her at the cargo hatch in the third hour, having spent the crossing on the forward deck doing the thing he did when he was thinking - looking at nothing in particular with forty years of practice at finding something there.
 
 "You're counting the flags," he said.
-
 "Fourteen since Pontis."
-
 "There's a cluster at the Archival Gate. That's the border town - historically significant, three posts, they all flag independently." He looked at the passing bank. "Named for Arnault d'Archival, who crossed this river in Year 545 in pursuit of a Calyx raiding party, planted his House mark on the far bank, and declared the river the border. The Calyx disagreed. The river disagreed the following spring by flooding and moving the bank fifteen meters. D'Archival's mark is now on the wrong side of the water it was meant to define. Verlaine still charges crossing tolls off his original notation of where the mark stood. The mark is underwater. The notation remains."
 
 She had known the Accord. She had not known d'Archival. "You've been on this river before."
-
-"Four times. Three verification contracts and once in my own interest." He paused. "The Treachery Quarter, in Bressant - the old merchant district - is called that for the Year 867 occupation. Verlaine merchants sold supply routes to Ocipheus forces during the occupation, then sold the same merchants' names to the Verlaine resistance once the occupation failed. It's been Treachery Quarter for six hundred years. They're proud of it." He glanced at her. "This is a country that takes its record-keeping seriously. The record matters here more than the fact. Bear that in mind."
-
-"What are they watching for," she said, "if not us specifically?"
-
+"Four times. Three verification contracts and once in my own interest." He glanced at her. "This is a country that takes its record-keeping seriously. The record matters here more than the fact. Bear that in mind."
+"What are they watching for," she asks, "if not us specifically?"
 "Whether we are who the documents say we are. The documents say we are a Compact pursuit under Ocipheus authority. The documents are correct. What isn't in the documents is that the authority was suspended by the same institution that issued it." He nodded, once, and went back to looking at nothing.
 
 She remained at the hatch and watched Verlaine document her passage through its territory without her permission, which she had entered without Verlaine's permission, which seemed, on the whole, fair.
 
--
-
+[Beat 68]
 Bressant arrived in the early afternoon — a dense city, accumulated around a function, here the grain warehouse district handling Verlaine's upriver agricultural output. Buildings pressed together against the hillside behind it, leaving the landing frontage wide and practical. The Veil ran sixty meters across here, swift and dark with autumn rain-depth.
 
 The Bressant landing's flag was red.
@@ -1267,13 +1151,11 @@ The Bressant landing's flag was red.
 Two border soldiers waited at the landing approach - young, formal, doing this correctly because they knew it would be examined later. She showed the sealed authority. They logged her in with the precision of people who intended to do it right if it took all day.
 
 "You have approximately forty minutes," the senior of the two said, "before interior command can coordinate a formal review response." He said it the way people say useful things within the limits of what they're authorized to say.
-
 "Thank you," she said.
 
 The courier came off the barge and went to active protocol. She had forty minutes.
 
--
-
+[Beat 69]
 The route into the warehouse district ran her past the cathedral, and the route past the cathedral ran her past the intake station.
 
 It occupied what had once been a canonical administrative annex — stone-walled, high-windowed, the vaulted ceiling the Liturgy favored for functional space set beside ecclesiastical authority, clerestory light falling onto a work floor that whoever repurposed it for Verlaine's conscription operations had not bothered to redesign. They had simply put trestle tables under the arches and begun filing.
@@ -1286,14 +1168,13 @@ Three people had been through that table this morning.
 
 Against the left wall, a rack: five bolt-action rifles, clean and maintained. A sixth space, empty - the sixth rifle presumably on the officer's back, or in the anteroom. Same manufacture as the checkpoint guards' equipment, she noted, and kept riding.
 
-She could not read the files in the box from the road. She did not need to. She had handled enough Compact liaison paper to know the stock and the fold — Verlaine military intake, standard format — and she had known, administratively, what that format meant since she was twenty-two: the year she first met the phrase *M-intake authorization, Sphere-origin conscript, Year-stamp* in a coordination brief and filed it, correctly, as terminology. The form designation was what she had encountered for seventeen years. The three files in the wooden box were what the form designation meant. She did not examine the distance between those two facts. Forty minutes had no room for it. Neither, she noted, had seventeen years.
+She could not read the files in the box from the road. She did not need to. She had handled enough Compact liaison paper to know the stock and the fold — Verlaine military intake, standard format — and she had known, administratively, what that format meant since she was twenty-two: the year she first met the phrase M-intake authorization, Sphere-origin conscript, Year-stamp in a coordination brief and filed it, correctly, as terminology. The form designation was what she had encountered for seventeen years. The three files in the wooden box were what the form designation meant. She did not examine the distance between those two facts. Forty minutes had no room for it. Neither, she noted, had seventeen years.
 
 The cathedral's north face rose to her left, Verlaine's canonical structure built for throughput where Ocipheus's was built for vigil - records entered and exited, people processed, the high windows sized for reading documents correctly rather than for sitting with them for seventeen years.
 
 She found the road that ran along the grain district's south face and took it.
 
--
-
+[Beat 70]
 The southern approach was a narrow passage between two storage buildings, stone-floored, sheltered from the wind. She walked it slowly.
 
 Three sets of boot-prints in the settled grit along the wall, dated by layer depth — the deepest three or four days old, overlaid by two days of weather. All three had been here three days back. The most recent layer showed two sets. The third was gone.
@@ -1320,21 +1201,19 @@ She stood in front of the bin. She had had forty minutes when she entered the di
 
 She put her hand on the latch.
 
-[Beat 8]
-NO ACTION INDICATED
-
+[Beat 71]
 The copy desk faced north, and she had asked once, in her first week, whether that was a choice someone had made or merely a thing that had been allowed to happen to the room — and gotten, in answer, the particular silence a person gives when the question has an answer nobody enjoys supplying. In winter this meant the desk faced a column of pale light off the courtyard stones, light that did nothing useful except confirm the hour. She had spent three years at various desks in Liturgy copy offices, and every one of them faced somewhere inconvenient; the canonical administration had been built for permanence and ceremony, not for the people who worked inside it — a distinction she had noted, cross-referenced against nothing, and filed under *architecture, or possibly theology.* This room was a high-ceilinged box that held the cold the way stone did, two windows on the north face, one door, a row of shelves built for an old filing order someone had abandoned before her posting and replaced with one she was still learning the grammar of. Six weeks. She had spent the first three learning the lamp angle and the second three doing it automatically, the way a person learns to walk with a bad leg: efficiently, without grace, without complaint.
 
 Her right shoulder ached by the second hour every day. The middle knuckle on her right hand stiffened by mid-morning and had to be pressed back sharply against the joint — one click, release, done — before she could reload the nib and continue. These were not complaints. They were conditions, and she had learned the difference the way a Scribe learns any distinction worth keeping: because eventually someone needed her to certify it.
 
 The instruments arrived at the third bell, as they always did. The runner — a junior canon, fourteen years old, still wearing the expression of someone who had not yet learned what the documents he carried actually said — set the stack on the corner of her desk with the particular care of a boy who'd been told the documents were important without being told what that meant. In the first weeks of the posting he had asked, out of some trained sociable reflex, whether she required anything else. He had stopped asking in the third week, the way a person stops asking a question once they understand, without being told, that the answer will be no. She had not asked him why he'd stopped. She was fairly confident she already knew.
 
+[Beat 72]
 Six weeks was enough time to learn what a stack of instruments held just by looking at it: the weight, the binding method, and — this was the part she loved best, if *loved* was a permissible word for it — whether the lead sheet carried the Canon's own hand or a secretary's, and above that, in smaller formal letters, the fixed opening rubric every canonical instrument wore regardless of what it contained: two or three words in the Received Tongue, rendered rather than read, the way she had been taught. She could copy the shapes exactly, stroke for stroke, without knowing what tense they stood in; she loved the sound of them, old and patterned and cold — and only a half-beat later did she catch what the rubric was actually *for:* it meant this instrument is valid, it meant do not ask further, it meant the same thing every time no matter what sat underneath it. She had never been taught to read the tongue whole. She had been taught to render it faithfully and revere the rest.
 
 The lead sheet this morning was in the Canon's hand. She had learned, by accumulation rather than by being told, what that meant — not that some office had processed the instruments below, but that they had been reviewed, personally, at the highest level, before they ever reached her desk. She noted the stack's weight: heavier than yesterday's. In the first weeks of the posting she had read every instrument before she began copying; now she read them in order, one at a time, finishing each before she touched the next. Accumulation was the danger. Read everything at once and she would understand the shape of it before she had language for the shape, and the act of copying would start to feel like something other than what it was supposed to be. She set the notation sheet aside and started with the second instrument.
 
----
-
+[Beat 73]
 The Loera document was formal, carefully constructed, written by someone who understood he was arguing upward through an institution that did not share his interests. She recognized the structure on sight — the long diplomatic preamble, the supporting observations arranged in descending order of provability, the careful selection of words meant to make the argument easier to accept. The delegate had written *deterioration* where another might have written *encroachment.* She sat with that one a moment. Encroachment implied an actor; deterioration implied a process. Processes could be managed. Actors had to be confronted — and there it was, the half-beat after the beauty of the choice, the small cold click of understanding what the choice was *for.* She had seen this before in inter-House correspondence: the gradual reduction of a request to its irreducible minimum, the careful trimming of everything that gave the Liturgy grounds to refuse. The delegate asked only for acknowledgment — a record that someone had read the report and noted that the western boundary of the Wall showed drift over an indeterminate but non-negligible period. Not action. Not troops. Not resources. His closing paragraph read almost apologetic, as though he'd written a larger version and removed everything that might be refused. What remained after enough trimming was sometimes not worth refusing at all — which, she thought, and made herself stop thinking, was presumably the point.
 
 The Liturgy refused it.
@@ -1343,10 +1222,12 @@ She loaded the nib and copied the document accurately. Copying was not reading, 
 
 She finished the Loera copy and set it to dry.
 
+[Beat 74]
 The Carnyx document had a different texture, and she knew it before she'd read three lines. Where the Loera document had the softness of a constructed argument, the Carnyx document had the density of a report. The border commander was not asking for anything except to have what he had observed placed in the record. He had been to the eastern sector himself. He had brought a methodology section and a set of survey maps folded into the back cover, and she had to clear the auxiliary shelf to spread them properly — the paper was good quality and resisted the crease, the kind ordered by someone who understood this document needed to still be readable in thirty years, when someone wanted to prove they had received the report and done nothing with it. She weighted the corners with the inkwell, the lamp, and the stone she kept for the purpose, and the maps covered the desk and part of the shelf besides.
 
 The field notation was unfamiliar, a dialect of marks she had to learn on the page. She read the legend twice, then matched the annotation types against the survey points — three of them, along the observed boundary, each carrying its own measurement method and margin of error. She added the margins against the measurements, twice, out of habit rather than doubt. The margins did not account for the difference. Fifteen years of documented observation, not drift, not measurement error: three separate points confirming each other — the loveliest kind of evidence there was, the kind that didn't need her to trust anyone, only to add correctly. The Wall had moved. She measured with her thumb against the boundary line at the earlier survey date and then against the current one. On a map at this scale the distance was a thumbnail's width. She had a precise thumbnail, trained to the canon's standard line width, and what it told her was not the same thing as a small distance.
 
+[Beat 75]
 She had located, in the standards register, the authority the counter-brief would cite:
 
 *Assessment Protocol for Membrane Boundary Variation, Revision Four, Article Twelve, Year 1432 revision: A boundary variation falling within one standard deviation of the fifty-year mean, as calculated by the Liturgy's approved archive methodology, constitutes acceptable variation. Observation is required. Response is at the Canon's discretion.*
@@ -1361,8 +1242,7 @@ She was twenty-four. In forty years she would be sixty-four, if she lived, which
 
 She copied it accurately and folded the maps carefully — along the existing creases, not new ones — and held them a moment before she put them in the review sleeve. The survey points. The margin of error at each. The specific weight of *high-uncertainty* written by a man who understood exactly how certain he was. She sealed the sleeve and set it on the transfer stack.
 
----
-
+[Beat 76]
 The counter-brief arrived while she was finishing. The runner set it on the corner of the desk and was gone before she could look up; she heard the door click behind him. She had not heard him come in. She finished the last line of the Carnyx copy, set it to dry, and picked up the counter-brief.
 
 Three paragraphs. The Canon's characteristic cadence — institutional and polished, nothing citable against him in a subsequent review, every sentence defensible alone. The Loera sector conditions fell within acceptable variation; sector commanders were reminded that local observational data should be interpreted against the long-term baseline record, which was the Liturgy's to maintain. The eastern sector's survey methodology was noted as non-standard, and its findings would require reconciliation with the Liturgy's established baseline before any action threshold could be assessed. The Canon did not say what the action thresholds were. She had not seen them specified in any instrument she had copied in six weeks.
@@ -1377,8 +1257,7 @@ She applied the notation to both the Loera and Carnyx instruments. She folded th
 
 The stack was higher than yesterday's. Tomorrow it would be higher than today's.
 
----
-
+[Beat 77]
 The WC-Eirene units came through the courtyard in the middle of the afternoon.
 
 She had moved to the window to stretch her hand — the middle knuckle had stiffened again, earlier than usual — when she heard them before she saw them: iron in deliberate motion on stone, a low consistent percussion, lower than the Heloths on the city roads and slower and in a different register altogether. The gait of something heavier. Something not built for speed.
@@ -1389,6 +1268,7 @@ The volume had tripled in six weeks. She had filed the first evaluation summary 
 
 The units turned at the loading-dock approach and moved toward the south utility wing, handlers holding their sidewalk positions through the turn. She watched until the last unit cleared the corner and the courtyard stood empty again except for the food-service cart and, at the far end, a Heloth courier idling in the shade with the stillness of a machine waiting rather than switched off.
 
+[Beat 78]
 She knew the south utility wing. She had been fourteen years old when the lock authorization for its staging hall came through the copy desk where she was doing her junior apprentice hours. A senior Scribe had handed it to her because it was a straightforward maintenance lock — an instrument that required documentation but not judgment, the appropriate kind for an apprentice still learning the judgment part. She had copied it in the hand she was still correcting then, the one that pressed too hard on the downstrokes because she had not yet learned to let the weight do the work, and had filed it and not thought about it again. The authorization specified no end date, which was unusual. She had not known then what unusual looked like. That had been eleven years ago.
 
 The staging hall had not appeared in any instrument in six weeks.
@@ -1397,8 +1277,7 @@ It was not locked now.
 
 She returned to her desk and made no annotation. The courtyard was not an instrument category she had been given to work from. She finished the maintenance authorization for the south utility wing — expanded storage calibration, lower west section, the fourth of the week, the fifth if she counted last Thursday's, which she did, because she counted everything — and added it to the stack.
 
----
-
+[Beat 79]
 She went to the registry room in the late afternoon, when the light in the main office had gone gray enough that she would need to angle the lamp again and she was tired of angling the lamp.
 
 She had a legitimate purpose, or told herself so going in. Her sister's name had appeared in thirty-one instruments she had processed in six weeks. Each was individually within the scope of her assignment; together they mapped to an operational structure she had been copying without being given the shape of it. Understanding the structure was not intervention. Knowing what she was recording was what let her record it accurately. She was a Scribe. Accuracy was the virtue she had been certified to practice, and if that argument was doing more work than she'd asked of it, she chose, for the moment, not to notice the strain. She signed the access log with her name, the time, and *cross-reference, canonical processing* in the purpose field, and went to find the Ocipheus muster.
@@ -1413,14 +1292,14 @@ She found the entry.
 
 Posting date, three years prior — the same cycle in which she herself had been certified and taken her first desk. They had been in different cities since. They had written letters. Her sister had told her, every time she visited Ocipheus Station, that the station bread was not worth eating, and Vega had made not listening a habit in return.
 
+[Beat 80]
 She had been at this desk eating a roll of that same bread the morning the transit suspension arrived, six weeks ago. The runner had brought three instruments. She had read her sister's name before her hand had finished the second line of the copy, and she had put the roll down for a reason she had not let herself name at the time. The suspension was the second instrument. She processed it anyway, in under an hour, sealed the canonical original, filed it with her working copy, and moved to the third instrument, because that was the discipline.
 
 She had known. She had copied it anyway.
 
 She stood in the registry room a long time, long enough to notice how cold it was and how still she had gone in it, both hands gripping the spine of the volume, her right middle knuckle pressed against the binding without her having decided to press it. She released it. She did not find having known, and having copied it anyway, any more consoling than not-knowing would have been. She replaced the volume. She had made no annotations. Her name was in the access log. She returned to the office.
 
----
-
+[Beat 81]
 The instruments she had copied that day were dry. She aligned them and moved them to the transfer stack; the runner would carry them, in the morning, to the sealed archive, where they would become canonical and unalterable, the official record of what had been decided. She would not see most of them again.
 
 She kept working copies. Every Scribe did — not canonical, not official, nothing the Liturgy needed to acknowledge, just her own hand, her own reference, in the box in the lower left drawer. It was heavier than it had been at the start of the posting.
@@ -1437,6 +1316,7 @@ This did not remove it. The name stayed under the line, the ink only slightly da
 
 She put the copy back in the box and closed the drawer.
 
+[Beat 82]
 Outside the window the courtyard was empty. The Heloth was gone. Whatever waited in the south utility wing's staging hall was in it now, unlocked for the first time in eleven years, delivered by handlers following correct procedure. In the morning the runner would come, and she would know something about the day's business by the weight of the stack before she read the lead sheet, because six weeks had trained the reflex, and the volume had gone on increasing at a rate she had not been tracking against anything.
 
 The Carnyx maps were in the review sleeve, bound for a shelf between a supply reassessment and a water-usage report, filed until someone needed to prove the Liturgy had read them. In her own head the survey points stayed where she had put them: three positions along the eastern boundary, the margin of error at each, the line at both dates, the rate projection in the commander's careful field hand. *High-uncertainty, extrapolated from 15-year sample.* Forty years.
@@ -1453,27 +1333,31 @@ She did not know which was worse.
 
 She angled the lamp for the last time and covered the ink.
 
-[Beat 9]
-SPHERE 31 — ROWE FOUND
-
+[Beat 83]
 Bressant was three things stacked on top of each other: the Veil River's low north bank, the road down from the eastern passes, and three hundred years of grain dust worked into the mud between them. Timber and stone, raised to hold weight and shed rain and no further — the discipline of a working district, not the discipline of pride. Cargo tags hung pole to pole between the rows, half gone soft and unreadable in the damp, and nobody had replaced them, because the carters already knew their own loads and a tag was a courtesy Bressant paid only when a patrol made it pay, and patrols came through on a schedule the district had long since memorized. Thirty years of Verlaine mobilization had trained this ground out of asking who moved through it before dawn, and trained it well — she counted four buildings on the approach with doors that opened inward only, the mark of people who had learned that an outward-swinging door announces itself to anyone watching the street.
 
+[Beat 84]
 She held ground while Orim found his wall. North-facing, always, when he was scrying for something that had come south to north — he had stopped needing a reason for the orientation forty years before she'd met him, and she had stopped asking for one.
 
 He took the tincture from his breast pocket, counted two fingers to three, and went still. Not more than three counts — she'd seen him pay for a fourth once, years back, a week of nausea logged against a single mistake he had never once repeated. She had stood this same watch behind him more times than she'd bothered to log, and the discipline of it — hold position, watch the street, say nothing until he surfaced — was one of the few things about him she had never needed teaching twice.
 
 He opened his eyes with his report already assembled, which was the correct way to do it.
 
-"The Relic passed through. Four days ago. The trace ends at the second dock — they took a commercial barge north." He looked past her, at the grain-storage cluster where the road ran out. "There's something else in that district. Old residue. Not the standing-army kind — those go quiet inside a year, because a mind trained to stop remembering leaves nothing behind to find. This one hasn't stopped."
+"The Relic passed through. Four days ago. The trace ends at the second dock — they took a commercial barge north."
+He looked past her, at the grain-storage cluster where the road ran out.
+"There's something else in that district. Old residue. Not the standing-army kind — those go quiet inside a year, because a mind trained to stop remembering leaves nothing behind to find. This one hasn't stopped."
 
-She read the cluster the way she read any block she meant to enter: for the exits, for the sight-lines, for what a man hiding there would need. "A person."
+She read the cluster the way she read any block she meant to enter: for the exits, for the sight-lines, for what a man hiding there would need.
 
-"A mind." He put the vial away. "Whatever's wearing it forgot to let him forget."
+"A person."
+
+"A mind."
+He put the vial away.
+"Whatever's wearing it forgot to let him forget."
 
 She was already moving.
 
--
-
+[Beat 85]
 The door at the north end carried a duty lock, a rotating iron bar, and the bar sat unthrown. She read that the way she read most locks: whoever was inside hadn't set it, because setting it meant crossing the floor and reaching a latch gap from the wrong side, and a locked door in a working district drew exactly the attention an unlocked one didn't. She lifted the bar and went in.
 
 Grain smell, warm and close. High ceiling, grey morning light coming through the gap-boards in strips across thirty-six oak bins, the lower half of the room left in shadow. She walked the east row, reading the floor — dust undisturbed on the west side, disturbed and then swept, once, concentrated on the last four bins. Someone had tried to reduce the record of himself. He hadn't managed it clean. Nobody ever did.
@@ -1486,6 +1370,7 @@ The smell underneath the grain was mineral, not vegetable — a smell she'd cata
 
 She counted three seconds, because in three seconds a person startled in the dark makes a sound. What came back instead was a ticking, small and even — something cooling by increments, deliberate, holding its own count the way a sentry keeps a watch-count after the relief is late. No chest behind it. It kept time anyway.
 
+[Beat 86]
 He was in the back left corner, knees drawn, shoulders to the bin wall, a bolt-action rifle across his lap, both hands on it. Not raised. Present. Black, jointed plate, riveted at shoulder and elbow, built small — small enough that his knees still cleared the lid by a hand's width. Where a face belonged there was one oval receptor, dark, unlit, giving nothing back to read.
 
 He'd known she was there before the latch. He'd heard her stop, the half-beat before her hand found the lid. He'd decided, in that half-beat, to hold still.
@@ -1504,6 +1389,7 @@ He didn't come. He didn't refuse either. He read the whole of it — the hand, t
 
 The cold ran the length of her raised arm. She held the position and waited.
 
+[Beat 87]
 Then something in his angle changed — not trust, not stand-down, but arrival, the shape a decision takes once it's made — and he set the rifle against the bin wall, both hands showing, and stood.
 
 Standing, he was a head shorter than her. He carried the fact of it plainly, no performance either way. He reached back for the rifle, and she felt the pull toward her own belt a half-beat before she'd chosen to feel it, seventeen years of drill outrunning her judgment — and he saw that, and stopped, hand on the sling, and held there: *the rifle comes. Your call.*
@@ -1516,11 +1402,14 @@ She lowered the lid, gestured to the door, and he moved when she moved, holding 
 
 She knocked twice on the frame before she opened it.
 
--
+[Beat 88]
+Orim stood in the passage, back to the entrance, watching the loading yard. He didn't turn.
 
-Orim stood in the passage, back to the entrance, watching the loading yard. He didn't turn. "Eleven minutes before the manifest closes."
+"Eleven minutes before the manifest closes."
 
-"Trace runs north from the second dock." She glanced at the automaton beside her, watching him read Orim's stance the same way he'd read hers — hands clear of the belt knife, the turn coming at the sound of the door and not the sound of a person. "Whatever's in there. It's what you said."
+"Trace runs north from the second dock."
+She glanced at the automaton beside her, watching him read Orim's stance the same way he'd read hers — hands clear of the belt knife, the turn coming at the sound of the door and not the sound of a person.
+"Whatever's in there. It's what you said."
 
 Orim turned and gave him the attention he gave everything small: complete, unhurried, a scryer's habit of the specific over the general. He took in the rifle. The riveted plate. The worn patch at the left knuckle-joint where a hand had gripped it too many times in the dark. Stamped along the collar housing, in the flattened block lettering Verlaine used for anything it didn't intend to explain: **M-1018883.**
 
@@ -1532,17 +1421,26 @@ Something moved through the automaton's stillness that her hand, her blade, and 
 
 It was the only sound he'd made since she'd found him. Drilled, unhesitating, correct — offered the way a captured soldier gives rank and serial number and stops there, because it's the one truth he can't be made to regret.
 
-Ardea came round the north corner, took in the rifle, took in Lyra. "You're bringing it," she said. Not a question — a professional filing new intelligence and rebuilding her plan around it in real time.
+[Beat 89]
+Ardea came round the north corner, took in the rifle, took in Lyra.
+
+"You're bringing it," she said.
+
+Not a question — a professional filing new intelligence and rebuilding her plan around it in real time.
 
 "Him," Lyra said. "Yes."
 
-Ardea absorbed that the way she absorbed most things. "The courier carries four poorly."
+Ardea absorbed that the way she absorbed most things.
+
+"The courier carries four poorly."
 
 "He walks."
 
 "He walks well," Orim said, ahead of the obvious follow-up. "A Myrmidon shell doesn't tire. It dents, or it doesn't. It never sits down."
 
-Ardea looked at him a beat longer than required. "That's not a comfort."
+Ardea looked at him a beat longer than required.
+
+"That's not a comfort."
 
 "No," Orim agreed.
 
@@ -1554,6 +1452,7 @@ She had read the intake literature the way she read all literature assigned to h
 
 Orim glanced at her — not disagreement, closer to noting she'd taken the harder, more honest option when a softer one had been sitting there for the taking. She could have handed him a name of her own choosing, the way a quartermaster tags an unclaimed effect, and it would have cost her nothing and given him nothing either. She'd used the one true thing stamped on him instead, which was uglier, and, she judged, more his.
 
+[Beat 90]
 He'd followed all of it — the naming, the reasoning under it, Ardea's clock-counting, the whole exchange three strangers had conducted a stride from him as though he were freight that happened to have opinions. He'd followed the warehouse before that. He'd followed the latch, Orim's read of the collar, every word since. What he did with any of it he kept to himself. He kept it a moment longer.
 
 Then he didn't.
@@ -1566,30 +1465,33 @@ Ardea went still in a different register than before.
 
 Lyra heard, under the sentence, the exact shape of what she'd just been filing — *complete linguistic disjunction* — and understood, hearing him, that whoever wrote that phrase had never stood in a room with the thing it claimed to describe. There was no disjunction. There never had been. He'd understood the warehouse. He'd understood Orim reading the stamp off his own collar. He'd understood Ardea calling him "it" twice in one breath and let both land without comment, filing them the way he filed everything else, and had simply not, until this exact moment, chosen to answer any of it.
 
-"You speak," Ardea said. Not a question. An objection lodged a beat too late to do any good.
+"You speak," Ardea said.
 
-"I do." The receptor was already on her before he finished saying it. "Gave the number first. Seemed the truer thing to lead with."
+Not a question. An objection lodged a beat too late to do any good.
+
+"I do."
+The receptor was already on her before he finished saying it.
+"Gave the number first. Seemed the truer thing to lead with."
 
 Nobody spoke for a stretch that ran a half-second past comfortable. The flatness of the delivery did double work: the voice of a man choosing his words with care, and, to ears that hadn't learned better yet, indistinguishable from the voice of a slow mind reciting something taught to it. She filed the difference before she trusted herself to speak again.
 
 "Seven minutes," Ardea said, recovering the one piece of the moment still hers to hold, and was already moving.
 
--
-
+[Beat 91]
 Getting him aboard the Heloth courier took three steps: show him what it was, show him where to hold, confirm he understood the second step meant something and wasn't obedience for its own sake. He approached the machine's shoulder housing with the care of a man who already knew what machines could do and was working out this one's category — not fear, assessment. He studied the joint construction a long moment before he set his hand where hers had been, and didn't look at it again after. He watched the terrain instead, the whole run out of the district, both hands on the bar, weight distributed correctly — the posture of a man who'd done this before, or something close enough to it.
 
 He didn't tire on the run to the dock. Six miles by her count, mostly downhill grade, and his stride never lengthened or shortened to compensate for it the way a tired man's does without his noticing. She noted that the way she noted everything about him now, adding it to a file she hadn't meant to open.
 
 The *Houndstooth* was loading grain at the second dock, bound north on the ordinary commercial run to the Atrament processing centers — unremarkable, seventeen barges a week this season, the manifest stamp worn shallow from four years under the same clerk's hand. She bought passage for four on a Calyx guild seal she'd carried since a posting six years back, paid in credit vouchers, and the dockworkers gave M-101 the look they gave anyone unfamiliar — brief, categorical — and went back to loading grain.
 
+[Beat 92]
 Below, the hold smelled of river mud and old rope. Hammocks along one bulkhead, a bench along the other, a small iron stove bolted forward behind a mesh screen — the one open flame a grain barge tolerated below decks, and tolerated barely, one hand's width of clearance to the nearest sack of dry grain on either side. She took the bench. Ardea took the hammock farthest from the hatch. Orim found a crate by the porthole, the position that let him watch the river and think at the same time, which he seemed to manage without particular effort at either.
 
 M-101 stood at the foot of the companionway a moment, reading the space the way she'd learned to watch him read every space: the hammocks, the hatch, the three strangers already distributed through the hold, the corner that gave the longest sight-line on the only exit. He found it — against the casks, farthest from the hatch — sat, set the rifle across his knees, and let the receptor dim. Not dark. Not lit. Something between.
 
 The barge got underway. She felt it in her inner ear, the small unhinging from the shore, and opened her notebook to a clean page and did not yet know what she meant to put on it.
 
--
-
+[Beat 93]
 The stove burned low and orange behind its mesh. For the first hour of true dark the only sound in the hold was the river against the hull, Ardea's slow breathing in the hammock, Orim turning a page of nothing in particular, and M-101 sitting motionless against the casks, the receptor holding its half-dim, not gone out.
 
 She watched him longer than she'd meant to.
@@ -1600,6 +1502,7 @@ What the shell wouldn't report to her, the fire reported to him.
 
 Not sleep. She wouldn't have a word for what she was seeing until someone put the language to it much later, and the language would only confirm what her body had already decided that first night, unassisted: a shell built like his didn't rest, because rest is a thing a body sets itself down into, and Verlaine had built nothing into him able to set anything down. What happened instead — on the first night since the taking, quiet enough, still enough, safe enough that the idling routines finally dropped toward whatever the shell called low power — wasn't gentler than sleep. It was worse. Nothing to wake him from, because nothing in him had gone anywhere to be woken from. The mind in the housing was left, for the first time since the taking, with nothing left to attend to but itself. And itself was a groove worn deep by seven months of running, one idling didn't smooth over. It found the groove at once, the way a drill finds a bore it's already cut, and began again from the start, because starting again was the only shape left to make.
 
+[Beat 94]
 He sat in the orange half-dark of a stove he couldn't feel the heat of, motionless to any eye watching, and behind the receptor a man who existed nowhere the receptor could show her was living it again, in full sentences, in a register nobody in the hold would hear:
 
 *Not pain, first. Displacement. A hook set through the mouth of something that never knew it was suspended in warm gold water until the water was gone, and him with it, going up.*
@@ -1620,17 +1523,19 @@ He sat in the orange half-dark of a stove he couldn't feel the heat of, motionle
 
 *The tone offers the solution again. It always offers the solution again. No floor to this room, no door out of it, because the loop doesn't know it's already ended — ending was never built into it.*
 
+[Beat 95]
 Across the hold, in the part of the night that belonged to the living, she saw none of it and all of it. What reached her was smaller, and came without translation: the receptor's ember-glow, steady an hour, then guttering. Not going dark. Flickering, fast, three small drops in the low red glow, evenly spaced, gone before she could swear she'd seen them. Somewhere in the shoulder joint a servo ticked once, faint — a lock testing itself against a door it already knows is barred. And under the river-sound and Ardea's breathing, thin enough she nearly logged it as invented, a thread of the same mineral smell she'd catalogued in the grain bin that morning. Ozone. Faint. Present. Gone before it earned the name of a smell at all.
 
 She didn't know what any of it meant. She knew only, watching it, the particular cold of standing outside a room where something was happening that she had no vocabulary for yet, and that whatever it was, it wasn't rest, and it wasn't nothing, and it repeated — three flickers, stillness, and a long while later, three more, evenly spaced as the first, the way a held position repeats when it hasn't been given leave to stand down.
 
 The fire ticked in its screen. The river went on being a river. None of the words reached her, none of the pictures, no part of the number screaming under the number he'd given Orim for his own. What reached her was the guttering, the small dead servo-tick, the ozone-thread under the woodsmoke — not much, and enough to keep her watching him long after watching him stopped being required of her.
 
--
-
+[Beat 96]
 She closed the notebook without a line written in it, and looked at him across the hold — the ember of the receptor, the rifle across his knees, the stillness that wasn't rest — and understood, the plain unornamented way she understood most things that mattered: she'd gone into a grain warehouse expecting to pull out a person hiding from a war, and had instead pulled out something the war had already finished with and thrown away, and it hadn't stopped thinking the whole time it had been thrown away, and this — not the theft, not the Pallor squad's ten-day lead on them, not the barge or the border or the smoke waiting on the Atrament horizon by morning — was the thing she was going to have to find room for. Seventeen years in the Order had given her a doctrine for almost everything she was likely to meet on a recovery run. It had given her nothing for this. He had a voice. He'd chosen, twice now, exactly when to spend it. That was not a small fact to have logged about a machine on the first day of knowing him.
 
-Orim, without opening his eyes, said from his crate by the porthole: "He's not sleeping."
+Orim, without opening his eyes, said from his crate by the porthole:
+
+"He's not sleeping."
 
 "No."
 
@@ -1638,41 +1543,44 @@ Orim, without opening his eyes, said from his crate by the porthole: "He's not s
 
 She held her eyes on M-101 a while longer. Then she picked the notebook back up, because there was work to be done, and it seemed to her, watching him watch nothing in the almost-dark, like the only honest thing left between them.
 
-[Beat 10]
-SEVEN MONTHS
-
+[Beat 97]
 The roof was the first thing Soren checked, the way a boy raised under Unaka rock checks a roof before he checks anything else — vaulting starting thirty feet up, ribs cut into the stone to carry a weight some long-dead mason had judged sound enough to leave standing. He was three thousand miles and one body away from Carter County and he still did it, still ran his eye along the seams the way his father used to before he'd let a man set a pick to coal. Rows of narrow bunks ran wall to wall, straw under dark wool, the floor given over to housing a great many bodies with minimum expense of space or comfort. On the far wall, a rack of bolt-action rifles stood where he supposed pole-arms once had.
 
 He smelled the place before he understood anything about it — metal-oil, wet wool, the sourness of men who had not been warm enough for long enough. He was shown a bunk. He lay on it and thought, in his own language, in full sentences, that he did not know where he was, and that not knowing was going to be the condition of things now, the way weather is a condition — something to be managed rather than solved.
 
-The first word that mattered was *kal.* Stop. He understood it the instant it was said — the shell had given him the whole of the language before he'd taken ten steps in the new body, complete and instant — but understanding a word and commanding a body somebody else had built to obey it in the same half-second were not yet the same skill. He learned the gap between the two from the gap between moving and impact: from walking on when the column had already stopped, from the hand that closed on his collar and hauled him into a wall hard enough that the impact reached him not as pain but as a jolt through the frame, a half-beat delay between the shove and his body registering it. The men nearby made a sound. Not laughter. Recognition. *That one will learn.* He filed it as possibly encouraging.
+The first word that mattered was *kal.* Stop. He understood it the instant it was said — the shell had given him the whole of the language before he'd taken ten steps in the new body, complete and instant — but understanding a word and commanding a body somebody else had built to obey it in the same half-second were not yet the same skill. He learned the gap between the two from the gap between moving and impact: from walking on when the column had already stopped, from the hand that closed on his collar and hauled him into a wall hard enough that the impact reached him not as pain but as a jolt through the frame, a half-beat delay between the shove and his body registering it. The men nearby made a sound. Not laughter. Recognition.
+
+*That one will learn.*
+
+He filed it as possibly encouraging.
 
 After *kal* came the equipment — the lock, the sling, the cleaning kit, sounds his mouth had never needed before, though the shell made them without being asked. He understood every word the moment he heard it. What took the week was matching a body he'd had for eleven days to objects it had never held, fast and clean enough that nobody's attention came looking for the man holding them wrong.
 
 By the end of the first week he could load, clean, and stand to inspection without being corrected twice for the same fault.
 
----
-
+[Beat 98]
 There was a particular quality to the confusion in some of the others — not the ordinary confusion of a man wondering why he'd been ordered to do something pointless, but confusion with no category to file itself under. He recognized it because he had it himself, and because once, crossing the washroom, he had caught the same look passing over the blank dark oval where his own face should have been, in the tin sheet someone had hung for a mirror and never bothered to polish. He noted it and moved on, because moving on was the only motion available to him that cost nothing.
 
 Some of the others had buried the look deep enough that it only surfaced at night. Sphere 22 — the only name Rowe had for him, the number stamped where a unit designation went — had been in Verlaine two years. His Entos came out even and unhesitating. He took his ration without looking at it, filled the gaps when Rowe fell silent mid-order, and was extremely good at being somewhere else when things went wrong. There was no face to read, but the motion gave everything away, if you watched long enough: Sphere 22 moved like a man who had stopped being surprised.
 
 There was also Sphere 14 and Sphere 8, glimpsed more than known — a nod across the mess line, a shared five minutes on latrine detail. He would not have called any of them friends. He would have said, if willing to say much of anything yet, that they were people the same thing had happened to, which was not friendship but was not nothing.
 
----
-
+[Beat 99]
 On the third day they moved him to the range.
 
 He drew a rifle from the day issue and his hand went to the bolt before the trainer had finished demonstrating on the man beside him. Lift, draw back, seat the round, drive forward, lock down. He did not decide to do this. The motion arrived the way *kal* had arrived — ahead of thought, the shell's half-beat lag catching up to an intention that had already, somewhere behind it, been executed a thousand times in a body that no longer existed.
 
-He knew this mechanism. *Bolt-action. Box magazine, five-round. Machined stock, not stamped.* The words arrived unbidden, some part of the shell running an inventory nobody had asked it to run, flat and immediate, the same way *kal* had arrived on the first day. Not this model — the lock housing was wrong for what he knew, the magazine cleaner than anything on the diagram in the ironmonger's window on Cress Street — but the family of it, the idea. His world had drawn the blueprint. This world had cut the finished part. He had the Entos for all of that — *blueprint*, *prototype*, *descent* — and said none of it. There was no one present he trusted with a sentence that size, and admitting he recognized a weapon's ancestry was the kind of fact, once spoken, he would never get to take back.
+He knew this mechanism.
+
+*Bolt-action. Box magazine, five-round. Machined stock, not stamped.*
+
+The words arrived unbidden, some part of the shell running an inventory nobody had asked it to run, flat and immediate, the same way *kal* had arrived on the first day. Not this model — the lock housing was wrong for what he knew, the magazine cleaner than anything on the diagram in the ironmonger's window on Cress Street — but the family of it, the idea. His world had drawn the blueprint. This world had cut the finished part. He had the Entos for all of that — *blueprint*, *prototype*, *descent* — and said none of it. There was no one present he trusted with a sentence that size, and admitting he recognized a weapon's ancestry was the kind of fact, once spoken, he would never get to take back.
 
 The trainer looked at a man standing at ready with a loaded rifle he had not been taught to load, said something that in any language would have meant *when did this happen*, and went to fetch a second trainer. They turned the rifle over between them, handling it like something they had not expected. Later he found, stamped into the receiver, an angular notation it took him four months to read whole: SPHERE-SOURCE PATTERN — DESCENT CORPS AUTHORITY — NOT FOR CIVILIAN REGISTRY. The institution had known exactly where the weapon's ancestry lay, stamped that knowledge into the metal, and issued the rifle anyway — worried, in writing, about distribution rather than origin. He put this in a box he did not open. Some thoughts, in a body running on a limited account, you held rather than spent.
 
 They put him in the front row for the rest of range day. The word the trainer used for him afterward had an approving shape. He filed it under things he wasn't going to explain and moved on.
 
----
-
+[Beat 100]
 The man from the close world came in the second month, off a transfer batch from the eastern intake station. There was no reading a trade off a chassis built identical to every other chassis in the hall, but motion was not identical. This one's hands went to a tool the way hands go that have spent a working life at a bench — an economy in the wrist, no wasted travel, the discipline surviving the change of hand the way *kal* had survived the change of everything else. Whatever age he'd been, in whatever body he used to have, the tempo said *not new to this.*
 
 Rowe's own hands had no such economy waiting in them. He had grown up around coal without ever working it himself — his father's trade, not his; he had sat the Forest Service exam back before any of this, had been headed for fire towers and section lines and land he meant to walk for a wage, not for a blueprint's worth of guns. His hands only knew a rifle the way a man knows a thing he was taught fast, out of necessity, and not the way this one knew a bench.
@@ -1685,14 +1593,12 @@ The first time Rowe laughed since he'd woken into any of this was over nothing w
 
 The man had been at a machine floor when it happened to him too — had not chosen to come, did not understand what he'd been brought here for. This was not a surprise. It was confirmation, which was a different animal: it did not change anything, only put weight underneath what he already believed.
 
----
-
+[Beat 101]
 By the third month he could follow orders instantly, without the half-beat of resistance that used to cost him a shove into a wall — not because he understood them any better than he had the first week, but because he had stopped making it wait on his consent before it carried the compliance out. Conflating the two — understanding and consent — was the mistake the trainers made about him for months, and it worked in his favor. The name of his own rifle was still the only word in the whole language he said with anything like ease.
 
 He had the Entos for *loyalty.* For *betrayal,* for *injustice,* for *conscription* — the shell had given him the whole architecture of it the day it took his voice, complete and instant, nothing withheld. What he did not have was standing to use any of it. A man could own the word *betrayal* outright and still have no right to it, in a war he had been dropped into without a side. He had asked Sphere 22, once, carefully, where a particular man from the barracks had gone, and been given a word back — *solen* — and understood exactly what it meant before the shell finished saying it, though nobody explained it and nobody needed to.
 
----
-
+[Beat 102]
 The order to advance came on a road that was not a good road, in weather that had committed to being bad. Low cloud. The smell of rain that hadn't started yet but had made up its mind. Mud spreading in from the margins the way mud does once it decides to.
 
 He reached the ridge with the rest of the column and looked down into the valley. Two forces, converging from different angles toward the same low ground his own column was descending into. He did not need the tactical picture to read the geometry — a boy who had grown up watching coal cars run fixed track out of the Unaka seams understood paths that don't bend for anything, and what happens when two of them try to take the same rail at the same time. He did not know whose flag either force carried, if either carried one, or what either side was fighting for. He did not know, past the plain fact of an order, what he himself was fighting for. He had nothing on either side that was his — no officer whose authority he'd chosen, no allegiance made with his eyes open, only an oath taken on a day he barely remembered as his own, in a voice that hadn't been fully his either.
@@ -1703,8 +1609,7 @@ He turned around.
 
 He walked back up the road while the column went forward and down, the noise of it first close and then receding, and nobody stopped him, because everyone forward of him had somewhere more urgent to be. He walked until the sound was behind him, and then distant, and then gone, and kept walking anyway, north, because north was away, and away was, for the first time in three months, a decision that was entirely his.
 
----
-
+[Beat 103]
 Bressant was large enough to disappear into, the way any city is if you understand that anonymity is mostly a function of volume. He found the grain district by smell before he found it by sight — dry warmth, faintly sweet, close enough in principle to the mule barn behind the tipple back home, the feed they kept for the animals that hauled coal out of the dark, that some very old part of him relaxed at it without being asked to.
 
 He slept three nights in the first warehouse he found, then moved when the section showed signs of regular inspection, and moved again the week after, learning the district the only way it could be learned: which yards kept irregular schedules, which foremen watched the perimeter and which didn't. He had looked plausible his whole working life, compact and unremarkable, and overlooked was now the entire strategy.
@@ -1713,8 +1618,7 @@ He did not need to eat, not in the sense the word insisted on — whatever kept 
 
 He kept the rifle. This was not practical — it was heavy, needed keeping dry, and was not the kind of thing a district laborer carried, which meant concealing it added difficulty to every entrance and exit he made. He kept it anyway, because it was the one thing here he had never once been uncertain about. Everything else — the language, the oath, the intake forms, the box he did not open — had come to him in conditions of partial understanding. The rifle was comprehension without conditions. He was not going to set it down now.
 
----
-
+[Beat 104]
 He had said almost nothing of Entos unprompted in seven months — not ordered out of him, not repeated back to a trainer, not issued at all. The shell had given him the whole language complete on the first day, every word at once, nothing rationed and nothing withheld; what was scarce was never the vocabulary. It was the willingness. What follows were not words he happened to have picked up. They were words he had chosen, on his own account, to spend.
 
 *Faeb.* Factory. Said once, to no one, staring through a fence at a coal tipple in the western quarter — not the Unaka seams, but cut from the same rock and run on the same logic, chutes and screens and men blackened the same color under a different sun, and worth naming out loud for exactly that reason.
@@ -1729,15 +1633,16 @@ He said them sometimes, in the dark, not to communicate anything to anyone. In h
 
 His own tongue was still his. He remembered everything — there was no mercy in it and no blur — but there were places now where the Entos arrived first when he reached for something to say, simply because the Entos had been used yesterday and his own words had sat unused for seven months. He did not find this comforting. He noted it and put it in the box with the rest.
 
----
-
+[Beat 105]
 He had found the wheat bin in the eastern warehouse three days ago, and stayed a second night past when he should have moved, and would stay a third for the same reason he always did: moving carried its own risk, and staying carried another, and in seven months he had never once worked out which was smaller.
 
 The grain gave off warmth as it settled — some slow chemistry in the kernels working itself loose, a fact he had no name for in any language but recognized on contact. It pressed against him at chest height, close on both sides. He noted the warmth and did not know what to do with the noting of it, since registering a temperature and being warmed by one had stopped, somewhere in the last seven months, being the same operation.
 
 Outside, the loading yard ran its morning cycle — heavy foot traffic thinning toward midday, the hoist-wheels still an hour off. He could read the time of day from the sound alone now.
 
-He repeated the words once, not aloud. *Faeb. Fume. Morn. Solen.*
+He repeated the words once, not aloud.
+
+*Faeb. Fume. Morn. Solen.*
 
 Then the boards above the warehouse shifted.
 
@@ -1751,9 +1656,7 @@ Single. Careful. Coming toward the section he was in.
 
 In the dark, in the press of the warm grain, his hand — the black jointed thing that answered him a half-beat late and had answered him faithfully for seven months regardless — found the rifle. Something in the shell supplied the rest without being asked: safety off, round already seated, flat and immediate, the same way *kal* had arrived on the first day. He did not decide to know this. He simply did.
 
-[Beat 11]
-THE RIVER - FACTORY / SMOKE / MORNING / GONE
-
+[Beat 106]
 The barge was called the *Houndstooth*, and it smelled the way barges of that name generally did. Orim had negotiated the passage himself, in a chandler's back room in Bressant, over a transaction he had conducted the way he conducted most transactions past his fortieth year on this river: stating a price, watching the other man's face for how much of an insult he could stand, and not haggling below that number even when he could have. A man learns, given enough decades, that haggling teaches the other party nothing about you worth having him know. Orim had stopped teaching strangers things about himself a long time before this river had learned his name in return.
 
 Lyra had asked about the arrangement once, on the first day out of Bressant, and received an answer that answered nothing important. She had asked twice more before she stopped, on the morning of the second day, and Orim had noticed her stopping the way he noticed most things people did without meaning to be noticed doing them. He said nothing about it. Silence, in his experience, taught a person to trust her own conclusions faster than argument ever had, and a woman who trusted her own conclusions was more useful to him, eventually, than one who trusted his.
@@ -1762,8 +1665,7 @@ He was at the porthole himself, most nights, watching the river the way he had w
 
 Lyra slept four hours, badly, favoring the shoulder that had taken the courier's groove into it decades before the infusions asked her body to be a different shape than the one that groove had been worn into. He watched her work the joint with her fingers in the gray part-light before she'd admit to being awake, the specific motion of a woman convincing a joint that rotation was still, technically, on offer. He said nothing about that either. There were things worth mentioning to a person and things better left to occur to her privately, and the border between the two categories was one of the few useful things sixty years bought a man that thirty did not.
 
----
-
+[Beat 107]
 The days on the *Houndstooth* established their shape by the second one, mostly because Orim built it that way and did not announce the building.
 
 He catalogued the hold as he always catalogued a hold - touching the casks, reading the labels, weighing the bales in his hands and setting them down with the mild dissatisfaction of a man filing an object into a category too small for it - and, without any particular announcement, he began talking to Rowe.
@@ -1774,8 +1676,7 @@ He did this for the better part of a day before Lyra noticed what he was doing, 
 
 By the close of that first day Rowe had answered nine of Orim's questions outright and let four go by unanswered, and Orim had learned, from the shape of what was withheld rather than what was given, that the man was disciplined in a way that had nothing to do with training. Discipline of that kind is not taught. It is inherited, the way a limp is inherited by the leg that favors it, from an injury the body remembers long after the mind has stopped being asked about it.
 
----
-
+[Beat 108]
 He watched Rowe at the porthole again that afternoon, from the far end of the hold, at an angle that let him see both the glass and the side of the man's face without appearing to look at either. Lyra worked at her own notebook somewhere behind him; he did not need to see her to know she'd found her own angle on the same view. Two people watching a third from two directions, and none of them announcing it - a configuration Orim had built more than once in forty years, though never before out of simple appetite. He noted the distinction and did not examine it further.
 
 The Veil River in its lowland reaches ran through country Orim had charted the way a man charts a debt he intends to collect eventually: checkpoint positions, road conditions in autumn, the taste of the water at the midpoint wells. He had made this passage more times than he had troubled to count, which was itself a kind of arithmetic - a man stops counting the things that no longer surprise him, and starts counting only the ones that might. The banks here ran soft and low, cut by old drainage channels into long straight fields the river bent around rather than through, poplar windbreaks standing in files along the fieldlines, a church tower showing gray above a stand of elm two bends ahead and then gone again behind the rise.
@@ -1788,8 +1689,7 @@ That was the whole of it, and Orim had seen enough men over enough decades to kn
 
 Orim made no note. He had long since stopped needing paper for the things that mattered to him, which was either a mercy or the reason he could not always say, afterward, what exactly it was he had wanted to know.
 
----
-
+[Beat 109]
 That night, the sound came first.
 
 Third hour past dark, and Orim was already at the porthole - he slept less than most men expected of someone his age, and had stopped correcting the expectation decades before, since a man assumed to be resting is a man nobody watches. The vibration reached the hull before the eye caught anything: not through air but through water and keel-wood, a low rhythmic grinding old enough in his memory that he had the name for it before he'd finished waking fully into the thought.
@@ -1808,8 +1708,7 @@ Rowe repeated the word back once, exact, the way the shell rendered everything e
 
 The river went dark and stayed dark. The grinding faded north. Orim listened to Lyra close the notebook, then open it again to add a line he did not need to see to guess the shape of. There was always origin-Sphere documentation, somewhere, for a fact like that one. The Entos documented everything. Orim had spent forty years inside that habit of documentation without once, publicly, admitting what he thought of it.
 
----
-
+[Beat 110]
 The manifest had come the first night, left on the cask nearest Lyra's head while she slept - by the barge master, ostensibly, though Orim's ability to move through enclosed spaces without disturbing anything in them was not, he would have said if anyone had asked, entirely incidental to the arrangement. Nobody asked.
 
 He watched her read it in an order that told him something about her before she'd said a single word about the contents - not back to front, the way commercial cargo was conventionally read, highest value first, but straight through, page by page, the way a woman reads who has decided that skipping ahead is how a person misses the thing that matters. He approved of the method without saying so. Approval, offered aloud, tends to change the thing being approved of; Orim had broken enough good methods that way in his first twenty years of watching people to have stopped doing it in his last forty.
@@ -1836,7 +1735,7 @@ Rowe was three meters away, curled against the far hull, the faint uneven tickin
 
 "The notation on the sample sheet." He let the sentence stop there, in the particular way he let sentences stop when he had already said the thing he meant and was only waiting to find out whether the other party had understood it. Most people took a moment. Lyra took less than most.
 
-"How long have you known?"
+"How long have you known?" she asks.
 
 "Since we found him." He turned from the glass wearing the expression he wore when he was about to say something that sounded like a joke and was not entirely one. "I've been looking at small things for sixty years. When a man reacts to a notation format, I notice. It's my gift."
 
@@ -1848,8 +1747,7 @@ His gift was Scrying, minor-class, contractual - which meant that at fifteen he 
 
 The rifle sat in the barge master's strong-chest two decks up. She'd had it looked at in Bressant's harbor quarter by two dockyard smiths Orim knew, sixty years of combined experience between the two of them, and both had told her, separately, without conferring, that they had never seen anything like it - that the metal had no name either man could put to it, that the notation on the receiver plate belonged to no system either recognized. The second smith had said, *It's very precisely made*, in the tone of a man who had expected to be unimpressed and had not managed it. Orim had arranged for her to hear that particular sentence from that particular man. He had not told her so, and did not intend to.
 
----
-
+[Beat 111]
 He had made the suggestion himself, three hours a day, delivered as a professional opinion and understood by all parties as an order. *If you don't get him talking,* he'd told her, *you will spend the rest of this assignment guessing. I am too old to guess.* It was true, as far as it went. It was also not the whole of the reason, and Orim had long ago stopped expecting himself to hand over the whole of a reason to anyone, including, some mornings, the version of himself that did the deciding.
 
 The three hours were never consecutive. They assembled out of whatever the barge's schedule, Ardea's watch rotation, and Rowe's unpredictable idle hours allowed, and Orim listened to most of them from wherever the hold's angles let him listen without appearing to. Rowe gave Lyra the same designation and soldier's account he'd given at Bressant, refined only by repetition - rank, unit, the plainest facts of the taking - and past that, for the better part of the first day, very little. She asked him where he was from. He said he had been a soldier. She asked what he had done before that. He said he had been a soldier a long time.
@@ -1864,8 +1762,7 @@ Rowe carried the page folded in his coat for two days before she noticed he'd ke
 
 Orim, from his corner, saw exactly what that sentence cost the room, on both sides of it, and put the observation nowhere in particular. Some facts are worth keeping unfiled. He had very few of those left, at his age, and was not in the habit of manufacturing new ones for entertainment.
 
----
-
+[Beat 112]
 At the second hour past midnight, on the third night of the passage, Rowe came alert with a long creak of boards and boots on the planking, and Orim - who had not, strictly, been asleep - was at the lamp before the boards finished creaking.
 
 Rowe sat against the cask nearest Lyra's corner. Not close enough to be a problem. Close enough to be an intention.
@@ -1878,7 +1775,7 @@ Rowe held the manifest out, open to the page marked with a sliver of wood. Nobod
 
 Orim said nothing. He had found, across a great many years and a great many rooms, that the first silence after an offer like that one is worth more than any question a man could ask into it, and he was not inclined to spend the silence cheaply on Lyra's behalf, or his own. He nodded at her instead - a small motion, the kind that could have meant *write it down* or could have meant nothing, and let it mean whichever of the two she needed it to mean. She uncapped her pen.
 
-"What's in the hold," Orim said, mildly, looking at the casks rather than at Rowe, the way a man asks a question he already half expects the shape of the answer to, and does not want to seem to be waiting for it. "Something built for a purpose. Not this barge's purpose."
+"What's in the hold?" Orim asks, mildly, looking at the casks rather than at Rowe, the way a man asks a question he already half expects the shape of the answer to, and does not want to seem to be waiting for it. "Something built for a purpose. Not this barge's purpose."
 
 He was not asking about the *Houndstooth's* hold, and both of them understood this, and neither of them said so.
 
@@ -1896,7 +1793,7 @@ Rowe was quiet long enough that Lyra nearly spoke. Orim caught her eye and did n
 
 She wrote that too, and looked up, and found him watching the page rather than her - the particular attention of a man checking that a thing he'd said out loud had actually survived the trip to paper.
 
-"What kind," Orim asked. Small. Concrete. The same key he tried on every lock first, on casks and on men equally.
+"What kind?" Orim asks. Small. Concrete. The same key he tried on every lock first, on casks and on men equally.
 
 Rowe was quiet a moment. "The kind that comes from the process," he said. Then, after a pause long enough that Orim understood exactly what it had cost: "And the kind that's what's left when the process is finished with a place. I don't know which one I mean. Both, maybe."
 
@@ -1930,8 +1827,7 @@ Rowe nodded once. Not resistance. The specific tension of a man confirming somet
 
 Orim let that sit in the hold a long moment, unremarked, the way a man lets a fact settle before deciding what shelf it belongs on. He had what he had come for. Whether Rowe understood that this had been, from the first cask question three days back, precisely the shape of thing Orim had been fishing toward - that was a separate matter, and one Orim did not resolve for him, that night or any other.
 
----
-
+[Beat 113]
 He didn't sleep again that night, and did not trouble himself over the lack of it; sleep had stopped being owed to him at an age well behind him now, and he had made his peace with the arrears.
 
 Ardea came below at first light to count the provisions, looked at Lyra, then at Rowe - idled somewhere around the fifth hour, hands finally open - then at Orim, with the expression of a woman who had several questions and had correctly decided none of them were hers to ask.
@@ -1972,8 +1868,7 @@ Lyra said nothing.
 
 "Sixty years," he said. "At minimum." He turned back to the glass. "Good documentation," he said, in the tone he used for things that were not good at all - a tone he had been using, on and off, his entire career, for the same handful of things, and had never once, to date, used correctly in front of anyone who could have done something about it.
 
----
-
+[Beat 114]
 The sky changed before the smell did.
 
 Orim noticed it first, the way he noticed most changes in this stretch of sky, having crossed it enough times that changes announced themselves to him the way a familiar face announces a new scar - the gray shifted in tone rather than temperature, a faint yellowish cast, as though the air between the barge and the horizon had been filtered through something warmer and sustained and industrial before it reached the glass. He said nothing about it. There was nothing useful to say about a thing everyone aboard was about to smell for themselves inside the half hour.
@@ -2000,15 +1895,14 @@ Nobody asked him to explain it. Orim filed it in the place he kept the things he
 
 The stacks kept coming. The smell thickened. Orim stood at the porthole of a barge called the *Houndstooth*, watching a city he had crossed to more times than he'd troubled to count arrive out of a yellow sky the way it always arrived, and did not tell anyone in the hold - not Lyra, not Rowe, not, this particular morning, himself - which part of the last three days he had spent drawing the man out for his own good, and which part he had spent, the way he had spent most of the last forty years, simply watching to see what the water gave up on its own.
 
-[Beat 12]
-THE ROAD — DESERTERS AND WAR-DOGS
-
+[Beat 115]
 The *Houndstooth* put them off at the Atrament wharf an hour past dawn. Lyra logged the hour the way she logged everything: against the light, not the bell, because bells in a foreign port could not be trusted and the sun could. Ardea stayed at the customs shed to fight the barge master's manifest down to a figure the dockmaster would stamp without opening the main hold. Lyra had watched her do this in six ports now. It was a discipline like any other — patience, a documented willingness to yield at the exact moment yielding cost least, and the specific skill of looking beaten while winning. Ardea was good at it. She would need an hour. Possibly more.
 
 Lyra left Rowe at the edge of the customs square with an order in the Entos he was learning well enough now to take orders in — *watch, do not be seen to watch* — and walked the harbor front alone, the way she walked any perimeter before she trusted it.
 
 This was not the Atrament she had heard men describe in taverns further south, the Forge Kingdom of ordered stone and gearwork precision. This was its back. The side that faced the river and dealt with the outside world, and so wore none of the interior's polish. Stevedores. Customs men. A fish seller working a flat boat off the pilings. The iron-filing smell she had come to associate with Atrament foundries, carried on air too cold for the season by a week she'd have put money on. Everything here was built for work and judged by nothing else. She approved of it, in the detached way she approved of a wall that did its job and asked no praise for doing it.
 
+[Beat 116]
 Orim was at the fish stall. He had not been aboard the *Houndstooth*. He had not, to her knowledge, been in Bressant. He was eating smoked river fish and watching the harbor with the loose, unhurried attention of a man with nowhere to be — a posture she had learned, over the length of this campaign, to distrust on sight.
 
 "You should have been three days behind me," she said.
@@ -2019,19 +1913,18 @@ He'd taken the western pass instead of the river — faster in the thaw, he said
 
 He had also wanted a day in Atrament ahead of her arrival.
 
-"For what," she said.
+"For what?" she asks.
 
 "To ask questions," he said. "People answer honestly in the day before a party arrives. Once you're standing in front of them, they remember you'll hear it, and revise."
 
 She marked that too. Extremely useful. Possibly extremely unsettling. The file did not require her to choose.
 
----
-
+[Beat 117]
 Back at the square, Rowe had not shifted from where she'd set him — which she noted the way she noted a picket holding position without being told twice. Three men had taken up the far end in the specific arrangement of watchers who have decided to watch something without yet deciding what they mean to do about it. Two wore the Atrament forge-mark on the left pauldron, army issue, stamping worn but present. The third had cut his away — the thing a man did in the Forge Kingdom when the army and he parted on terms neither side cared to put in writing.
 
 She had seen the type in a dozen garrison towns. Men who'd walked out of one war and now stood at the seam of another, waiting to learn if it paid better than the last one had. She did not look at them straight on. She looked at Rowe instead, at the blank plane of his face, and found he wasn't looking at them either. He was watching a flat-bottomed river runner at the far end of the wharf, bow low, a crew moving cargo up from the hold in the patient, over-long rhythm of men working past the end of a shift that should have ended.
 
-"What do you see," she said, arriving at his shoulder.
+"What do you see?" she asks, arriving at his shoulder.
 
 "Eleven," he said. A pause. "Not crew."
 
@@ -2039,12 +1932,13 @@ She counted for herself. Cargo hands, the manifest team at the gangway, the cler
 
 She looked back at the three men on the square. They were watching the same ship.
 
-"Them?"
+"Them?" she asks.
 
 "Counting," Rowe said.
 
 She filed the square, the ship, and the three watchers under a single heading — *not our engagement, logged, do not close with* — and turned to find Orim already at her left shoulder. She had not heard him arrive. She noted that too, and moved on, because a woman who stopped to be unsettled by every unsettling thing on this road would never get anywhere.
 
+[Beat 118]
 "The fish stall was not purely for the fish," he said, in the tone he used for things he expected her to have already worked out herself.
 
 "It faces the dock."
@@ -2059,7 +1953,7 @@ She knew the phrase. She'd read it once in a procurement review and hadn't follo
 
 Ardea reached them from the customs shed, stamped manifests in hand, wearing the look of a woman who'd paid four times a fair price and meant to file it as a cost of doing business. She looked at Lyra, then the ship, then Rowe.
 
-"What did I miss."
+"What did I miss?" she asks.
 
 "The fish stall," Lyra said. "And eleven men who aren't crew."
 
@@ -2075,16 +1969,16 @@ They left by the southern gate — not because it was safer, precisely, but beca
 
 Rowe walked it without looking back. She had noticed that about him before. Men who look back are still deciding whether to be here. Rowe had decided some while ago, and simply hadn't mentioned when.
 
----
-
+[Beat 119]
 The transit stamp Verlaine's border post had pressed into her papers three days south was, Orim informed her somewhere in the second hour, worth exactly nothing past the next valley. She had suspected as much and asked anyway, because a fact you've had confirmed twice is a fact you can act on without the half-second of doubt that gets people killed at checkpoints.
 
-"The line moved," Orim said. "Then it moved back. Then it moved again, further than the first time. This valley's changed hands four times in thirty years, by the marker stones. The village at the crossing has been *liberated*" — he gave the word no particular weight, which was its own kind of weight — "by both Houses, more than once each. They believe neither anymore. Why would they. A garrison that frees you and a garrison that frees you back are, from where the village stands, the same event happening twice."
+"The line moved," Orim said. "Then it moved back. Then it moved again, further than the first time. This valley's changed hands four times in thirty years, by the marker stones. The village at the crossing has been *liberated*" — he gave the word no particular weight, which was its own kind of weight — "by both Houses, more than once each. They believe neither anymore. Why would they? A garrison that frees you and a garrison that frees you back are, from where the village stands, the same event happening twice."
 
 She understood this the way she understood any front: not as a line on a map but as a fact that expired. A stamp was proof of passage on the day it was pressed, in the place it was pressed, and nowhere else. Beyond that it was paper. She had crossed enough contested ground to know that the only durable fact on a shifting front was the shifting itself.
 
 The road bore that out within the hour. Refugees moving both directions past each other without acknowledgment, which told her more than either group's papers would have. A cart with Verlaine markings painted over in a color that wasn't quite managing to be Atrament's. A boy of perhaps ten, watching them pass with the flat, cataloguing look of a child who has learned to note which uniform is on which men before he decides whether to run.
 
+[Beat 120]
 And the deserters. More of them the further they went, drifting the verges in twos and threes, the way water finds low ground. She'd started sorting them without meaning to, the way she sorted anything moving in numbers on a road she meant to keep using.
 
 Some carried the stillness she recognized from Rowe on his worse days — men whose eyes tracked correctly and whose hands did not, or the reverse, a wrongness in the wiring that no drill she knew had a name for. Verlaine's product. Minds taken up whole into their war-constructs and returned, when they were returned at all, not quite refitted to the skull that had grown around them. Myrmidon strays. The word had come to her from Orim without her asking where he'd learned it, which she had also filed and not asked about.
@@ -2095,8 +1989,7 @@ She watched Rowe watch them. He did not slow. He did not speak. But something in
 
 She did not comment on it. Some things a commanding officer notes and does not require a report on. She filed it under *understood, no action required*, and kept walking.
 
----
-
+[Beat 121]
 The waystation came up out of the dusk the way waystations on contested roads always did — squat, stone, built by whichever House had held the ground last with an eye to defense first and comfort as an afterthought that had mostly not survived the drafting stage. A signboard hung crooked on one chain, the paint long since weathered past reading either House's colors into it. That, Lyra thought, was probably deliberate, and probably the smartest decision anyone on this road had made all week.
 
 Inside it was packed to the doorframe, and packed with exactly the traffic the road had been showing her all day, concentrated now into one low room with one fire and one bar and nowhere for any of it to disperse. Strays at one end, their stillness a held note under the general noise. War-dogs at the other, drinking the way men drink who've spent a great deal of effort making sure a coupling can never again be forced back into the base of their skull. Between them, everyone else — teamsters, a pair of Bressant traders, a woman who from her boots and posture had walked out of some third war entirely and wanted no part of these two.
@@ -2107,6 +2000,7 @@ Ardea got them a table near the kitchen door, which Lyra noted and approved of w
 
 Rowe sat with his back to the wall, which she had not told him to do. He had started doing it three weeks ago without her instruction, and she had stopped being surprised by it two weeks ago. She watched him watch the room the way the strays at the far end were watching it — not fear, nothing so simple as fear. Assessment. The habit of a man for whom every room had once, not so long ago, been a room he might be ordered to die in.
 
+[Beat 122]
 The spark, when it came, was exactly as small as sparks on grounds like this always were.
 
 A war-dog three tables over — young, the coupling-ridge under his collar still raised and pink, cut recently enough that he was still finding out what his own neck did without the socket in it — stood too fast reaching for a second mug and put his elbow through the arm of a stray behind him, who did not flinch, because the stray's arm had not, for reasons Lyra suspected went back to whatever Verlaine had done to the wiring behind it, fully belonged to him in the way an arm should. The mug went over. The drink went down the front of the war-dog's coat, over the Atrament forge-mark he had, unlike his two friends outside the wharf that morning, not cut away — a sentimental holdover, she'd have guessed, from a service he hated and hadn't quite finished hating.
@@ -2123,6 +2017,7 @@ She did not reach the gap in time. That was the honest accounting of it, and she
 
 After that it was not a fight so much as a room deciding, all at once and without consultation, that it had been waiting all evening for permission.
 
+[Beat 123]
 She took the nearest hand that reached for her — a teamster, she registered, not even a party to the original grievance, just a man whose instinct in a collapsing room was to grab whatever moved closest — and did to it what regulation called a standing wrist lock and what her body did without her needing to name it first: rotated the wrist past the joint's honest range, applied weight through the elbow, and put him face-first onto the table he'd been sitting at a moment before. It cost him the wrist for a fortnight, not the arm, which she counted a mercy given how little time she'd had to be merciful in.
 
 A second man came at her from the flank — a stray, moving with that same overcorrected evenness, throwing a punch that had all the force of a soldier's fist and none of a soldier's aim, because whatever had been done to him had not left him the timing to go with the strength. She stepped inside it rather than back from it — the correct answer to a slow, strong strike was always to close the distance, never to retreat from it — and drove her forearm up under his, using his own committed weight to fold him over her shoulder and down. His skull found the table edge on the way. She heard the sound it made and did not stop to assess the damage, because assessing damage mid-engagement was how you acquired more of your own.
@@ -2131,6 +2026,7 @@ Somewhere to her left the coupling-ridge war-dog and the original stray were on 
 
 Rowe had not moved from the wall. She registered this in the same half-second sweep that took in everything else, and understood it for what it was: he was watching the strays, not the war-dogs, and he was not moving because whatever calculation he was running about his own kind was one she did not have time to interrupt.
 
+[Beat 124]
 The two men on the floor — war-dog and stray, forge-mark and wrongness — had stopped grappling and started actually fighting, which was worse, and it was this pair Lyra closed on last and dealt with first in terms of consequence. She took the war-dog's raised arm as it came up for a strike that would have opened the stray's face on the table leg, and did the thing regulation called a standing armbar and her instructors had called, with the particular grim humor of people who taught this for a living, *the polite way to end an argument*. Elbow past its honest range, weight through the shoulder, and the joint went with a sound like a green branch breaking underfoot — not loud, wetter than loud, the specific sound a body makes when it fails at a task it was never built to refuse.
 
 He screamed. That was the honest cost of it, and she did not pretend otherwise to herself. A broken arm on a man who would need that arm to work, to fight, to hold a mug in a country that hadn't stopped being at war just because he'd walked out of it. She had traded that cost against the alternative — an opened face, possibly a dead man, definitely a longer fight — and she stood by the trade the way she stood by every trade made under those terms: not gladly. Correctly.
@@ -2139,8 +2035,7 @@ The room did not resolve into silence so much as into exhaustion. Fights of this
 
 She counted the cost the way she counted everything: two men down and likely to stay down past tonight — the war-dog with the arm, and the trader with the knee, who would walk, but not soon and not without complaint. A stray with a split scalp bleeding freely onto a floor already sticky with spilled drink, who accepted a rag from the barkeep without thanks or apparent awareness that thanks were customary. Broken crockery. One table with a leg gone entirely, canted against the wall like a man favoring an injury. No one had died. That was the whole of the victory available in a room like this, and she took it, because it was the only version on offer.
 
----
-
+[Beat 125]
 Ardea was already at the bar working the barkeep down to a figure for the damages, which struck Lyra, even mid-recovery, as the single most reassuring sight in the room — Ardea doing the exact patient, willing-to-yield-at-the-right-moment work she'd been doing at the customs shed that morning, as though a wharf negotiation and a tavern brawl's aftermath were the same discipline wearing two coats. In her accounting they probably were.
 
 Orim reappeared from wherever he had gone — the kitchen, she guessed, from the smell of woodsmoke freshly on him — and surveyed the wreckage with the same unhurried attention he'd given the harbor that morning.
@@ -2151,6 +2046,7 @@ Orim reappeared from wherever he had gone — the kitchen, she guessed, from the
 
 "Doesn't know his own name. Hasn't for eleven months. The others feed him and tell him where to walk. It is, I am given to understand, a common enough courtesy on this road that it has its own word among them." He did not supply the word. She did not ask for it.
 
+[Beat 126]
 She looked once more across the room — the strays reassembling at their end with the same unhurried stillness as before, as though the last two minutes had happened to some other room entirely; the war-dogs doing the same at theirs, minus one now on the floor with his arm bound crudely by a man who clearly had field experience setting them. Rowe still hadn't moved from the wall. His eyes, though, had found the reassembled strays and stayed there a moment longer than assessment required.
 
 She did not ask him what he saw in them. She thought she already knew, and a commanding officer did not make a man report aloud what she could read plainly enough on his own face: that he was watching a room full of what he might have become, had the Verlaine program worked on him the way it was meant to instead of the way it had. That the men at that end of the room were not strangers to him in any sense that mattered. That there was, on a road with no country for either side of it, exactly one kind of company he recognized as his own, and it was this — silent, broken, minding each other's names for men who'd lost them.
@@ -2161,9 +2057,7 @@ They paid Ardea's negotiated figure, which was, predictably, four times fair and
 
 The highland road took them on into the dark toward the Atrament interior, three hundred years well-marked and running, as ever, exactly where they needed to go. Rowe walked it the way he'd walked the wharf road that morning — without looking back — and this time she understood the habit for what it plainly was, and did not need Orim to explain it to her first.
 
-[Beat 13]
-ATRAMENT — THE FORGE KINGDOM
-
+[Beat 127]
 The sound was wrong before anything else was, and Lyra had it in her boots three hours up the highland road before her ears agreed to confirm what her feet already knew.
 
 The rail line ran below them in the valley, curving south around the granite bluff before swinging north again toward the Schmalburg basin. The road they walked ran above it, and older — older than the rail, older than the Compact itself by the evidence of its own construction: dressed stone in courses, the mortar long gone gray and crumbling at the joints, the stone itself still seated true. This was the quality of the old work on the major approaches, built by people who had meant to move armies rather than goods, who had not planned for the day the armies would be replaced by freight schedules. The road held well enough under the weight of four people who were not a siege.
@@ -2186,6 +2080,7 @@ Rowe breathed it once, testing, the way a man tests bathwater with two fingers b
 
 Ardea walked at Lyra's other shoulder, scarf pulled over the lower half of her face against the highland cold, watching the road ahead with the specific posture of someone who has learned that cold does less damage if you decline to acknowledge it. Rowe fell in behind them both, watching the smoke — visible for the better part of an hour now, not rising from any single chimney but sitting over the next ridge as a general discoloration, a permanent grey-brown stain the overcast could not fully absorb.
 
+[Beat 128]
 The valley opened below them when the road crested the ridge.
 
 Lyra stopped.
@@ -2206,7 +2101,7 @@ This was not a castle with a mill grown up around it. It was a forge that had on
 
 There was nothing apologetic in it. That was the part she had not anticipated. The architecture did not excuse itself. The castle had been a castle. It was now also a forge. Both were true of the same stone, and the stone had no opinion either way.
 
-"Year 1074," Orim said, arriving beside her. "The Hearth Table authorized the first interior conversion under the manufacturing expansion protocols. Before that it was a garrison. Before the garrison, a watchtower against the valley floor. Before that, something the Atrament record won't discuss, which usually means there was an argument about who built it and nobody won."
+"Year 1074," Orim said. "The Hearth Table authorized the first interior conversion under the manufacturing expansion protocols. Before that it was a garrison. Before the garrison, a watchtower against the valley floor. Before that, something the Atrament record won't discuss, which usually means there was an argument about who built it and nobody won."
 
 "How old."
 
@@ -2214,6 +2109,7 @@ There was nothing apologetic in it. That was the part she had not anticipated. T
 
 The sound resolved into its parts the closer they came: the repetitive thud of forging hammers at a cadence too even to be human hands; the deeper sustained note of furnaces at full heat; a rhythmic compression from somewhere inside the walls she couldn't place from outside. All of it running at once. All of it running without pause.
 
+[Beat 129]
 Below the fortification, in the yards between the outer perimeter and the approach road, the Heloths moved.
 
 She had worked with Heloths at the Ocipheus Station — the vigil's courier models, lean single-rider constructs built to cross open ground without complaint. You developed a working sense of one if you rode it long enough, not fondness exactly, but familiarity with a machine built to do one thing well and decline everything else. The Heloths in the yards below were built for a different job: heavy-cargo variants, wide and low, the arm-housings fitted for cradle loads instead of saddle points, running the fixed routes between the factory mouths and the freight stage with the patient repetition of something calibrated to a task and content to run it until the maintenance interval said otherwise. Three stood motionless at what she recognized, even at this distance, as servicing stations.
@@ -2228,6 +2124,7 @@ The stations glowed. Orange, low, bioluminescent — the ember-fungus, introduce
 
 "When we need to see the yards after dark," he said, in the tone of a man releasing information at the rate he judged useful and not one measure sooner.
 
+[Beat 130]
 The approach road ran through three settlements between the ridge and the Schmalburg basin, and none of them were towns.
 
 The first was three long buildings and a dormitory block. "Hearth-stations," Orim said. "Numbered by production sequence, not geography. Station Twelve isn't near Eleven or Thirteen. It's the twelfth stage of the chain." He looked at the dormitory. "Same plan across the whole valley. Efficient use of the floor."
@@ -2254,6 +2151,7 @@ Ardea watched them a moment longer than the pace of the road required, in the pa
 
 Then she moved on, and so did Lyra.
 
+[Beat 131]
 The staging ground was at the valley junction, where the approach road met the east-west freight road and the floor widened enough for a temporary military formation to sit comfortably: flat, sufficient, close to the eastern supply route without sitting on the rail line itself.
 
 Six supply wagons under canvas. Three infantry columns standing at ease with their kit stacked at their feet, in the specific posture of men who had been told to wait and had been waiting long enough to develop opinions about the waiting. Two heavy Heloths moved between the columns carrying loads that were not exercise weight — she could read it in the gait, the small forward compensation of a construct carrying something denser than it had been trimmed for.
@@ -2280,6 +2178,7 @@ He spoke rarely, and when he did it was clipped. Wait. No. That way. And one fur
 
 Whatever the staging ground had told him, that word would not cover it. She let it settle, and they went on.
 
+[Beat 132]
 The descent toward Schmalburg took the rest of the afternoon, the road switchbacking down through the lower terraces until the basin opened beneath them: a river confluence silted, over centuries, into a flat harbor bottom, the dockyard running the western bank in old garrison stone for what looked, from above, like half a league. Atrament's machine yards had grown to meet the dockyard wall from the landward side, filling every open ground between it and the rail line, so that the wall was now less a boundary than a hinge between two kinds of the same industry.
 
 The Veil ran brown below it. Not mud-brown. Not storm-brown. The particular brown of something introduced rather than carried — the color of a river that had been receiving the valley's discharge for generations and had stopped pretending to be anything else. She had read the numbers on this once, in an annex, and nodded at them the way anyone nods at a statistic that is bad but not present. The river from the ridge was present.
@@ -2300,6 +2199,7 @@ She looked away.
 
 She did not go looking for a word for it. She filed it, the way she filed the Heloths and the battle-rigs and the wagons and the columns, in the space that was getting fuller by the hour and had not, so far, produced anything she could act on before nightfall.
 
+[Beat 133]
 Orim made the decision for her when she opened her mouth to ask about entering the city that evening.
 
 "No," he said. "Not tonight." He looked down at the dockyard, the wall, the road. "We watch it from here first. A city under pre-deployment develops an awareness. It watches who walks in." He shrugged the pack from his shoulder. "We go down when we know what it's watching for."
@@ -2320,6 +2220,7 @@ She watched the mortar going into the new courses, one stone at a time, patient,
 
 She still did not have a word for it.
 
+[Beat 134]
 "Tell me what you have," Orim said, without turning from the city.
 
 She told him. The sequence from the border to the junction — the supply movements she'd logged without understanding, the stage numbers, the canonical class on the seals, the Vigil doctrine she'd read seven years ago in an archive and hadn't thought of since, the frames on the yard floor that weren't Heloths.
@@ -2356,12 +2257,14 @@ She said nothing.
 
 "Then we go on as we were."
 
+[Beat 135]
 Rowe sat at the edge of the firelight, not quite in it, his rifle against the rock beside him, watching the valley with the stillness of a man keeping a record he had no way to write down. The ember-glow reached the tributary below the dockyard and lay orange on brown water — the specific color of this place, at this hour, doing what it had been doing for longer than any of them had been alive.
 
 He said nothing. He had nothing yet to say it with. But he had been watching the construction on that wall a long time, and his face had settled into the look she was learning to read as recognition — not the three-second flash he gave to a familiar bend of river or a particular color of stone, but something that had come in and stayed.
 
 She would not know what it was tonight. Perhaps not until he had enough Entos to give it to her. Perhaps not even then.
 
+[Beat 136]
 She stayed awake after the others slept, the cold a reason and the thinking the real one, and went through the sequence from the beginning: the stage-five movement, the seals, the countersignature and what it implied about timing, how far in advance an order like that had to be given, what the earlier stages must have looked like and whether she had already seen them and simply filed them wrong. She had. Three separate sightings, refiled now under their true heading. They fit.
 
 The deployment had been running before the theft. The theft was not the start of anything — it was the last piece of a chain that was already moving, and her own chase, her own authorization, her own dispatch from Ocipheus, had been stage five of something set in motion before she'd known there was anything to set in motion.
@@ -2384,11 +2287,7 @@ She went through the sequence once more, to be certain she had not missed anythi
 
 She had not.
 
-[Beat 14]
-THE REVIEW SESSION
-
----
-
+[Beat 137]
 Vega set the instruments in order before the second candle burned down to its mark — three for the session itself (always three; a clean number, and it still pleased her), one for supplementary materials intake, one for the disposition record, one for archival certification. The sixth she left blank until the session's shape was known. A blank instrument was always better than the wrong one already written out — she liked that rule so much she had copied it into her own working stock.
 
 Chamber Three was cold in the way of rooms that held important things infrequently. The stone kept its chill against itself like a resource, and spent it into the air in slow degrees — the brazier at the far wall was lit, but the ceiling ate the warmth before it ever reached the scribing table. She could feel her fingers. That was good. She could feel them precisely in the way that meant she would not feel them much longer if she sat still.
@@ -2397,13 +2296,14 @@ The convocation, which she had copied herself three days prior — some of the c
 
 The Canon arrived before the delegates. This, too, was correct — presiders did not enter after the people they presided over, and she had confirmed it across eight sessions running: he arrived at precisely the point where everything was nearly ready but the room had not yet finished being warmed. Deliberate, or just habit? Probably not, on balance. Not entirely certain, though. She kept a private, unwritten column for things she wasn't certain of, and this lived in it.
 
+[Beat 138]
 "Scribe Athen-Moor." He said it the way he said everything to her — acknowledgment of a correctly arranged room, not greeting. She had concluded some time ago that this was the most his tone would ever do in her direction, and that this was fine: she was furniture. Competent furniture.
 
 "Canon." She kept her pen in hand.
 
 He took his place at the table's head and reviewed the convocation without sitting — a man in his sixties who moved through institutional space the way certain rivers moved through stone: not rushing, not wasting effort, occupying whatever channel the room provided him. He read the convocation once, set it down at exactly its correct position, and said, "The Loera delegate will have prepared a brief. Allow her to finish reading it before you note the time." A pause, while he looked at the high window and its inch of grey light. "She has come three days by the coast road for this."
 
-Vega wrote it on her working copy — *allow delegate to complete reading* — then crossed it out; it was not her assignment to record what the Canon anticipated, only what the session produced. A lovely instinct of his, she thought, looking at the crossed-out line a half-breath longer than the crossing-out required. But an instinct was not a promise. She filed the distinction and moved on.
+Vega wrote it on her working copy — allow delegate to complete reading — then crossed it out; it was not her assignment to record what the Canon anticipated, only what the session produced. A lovely instinct of his, she thought, looking at the crossed-out line a half-breath longer than the crossing-out required. But an instinct was not a promise. She filed the distinction and moved on.
 
 The delegates arrived together, kept waiting in the approach corridor and brought in at the same time — standard form for a contested review; she liked that phrase, the two words leaning against each other like they weren't sure which should apologize first. She knew the Loera delegate from the registry files: Adnora Keist, nine years cataloguing the western strait approaches for the Three-Lantern House. Loera did not send delegates out of principle; it sent them when the shipping lanes were at risk, and half of Loera's trade ran through the western sector — the delegate's presence was itself a document, if you knew how to read arrivals the way you read instruments. The Carnyx commander she knew from his intake certification, filed six weeks past: Aldec Vorn, Carnyx Territorial Authority, Vigil sector eastern designation. He carried a scroll case with four rolls inside it. She knew the count without asking; she had processed the inventory certification herself.
 
@@ -2411,8 +2311,7 @@ They came in with the careful arrangement of people told to appear collaborative
 
 She dated the session instrument. She noted the attendees. She wrote the Canon's name and designation. She prepared to copy what was said. Not what she suspected. What was said.
 
----
-
+[Beat 139]
 Keist read her brief in twelve minutes, written out in full as Prelacze had anticipated, without looking up — which was not what frustrated witnesses usually did. Frustrated witnesses spoke, and let their frustration do work the document should have been doing instead. Keist read. She had already decided her frustration would not stand in the canonical record. The document would. Vega found this almost unbearably admirable — a delegate who understood that much about archives was worth listening to twice.
 
 The brief described the sector's deterioration in survey terms — seventeen points along the perimeter, measured at eight-month intervals across three years. Eleven of the seventeen fell outside the established baseline range. Four of the eleven exceeded the canonical threshold the Liturgy's own vigil standards defined as acceptable variation. Keist cited the document number. She cited the page. She cited the threshold value — three exact numbers in a row like a little chime, before Vega caught what the chime was telling her: a delegate who did not need to raise her voice was a delegate whose numbers were already doing the raising for her.
@@ -2425,12 +2324,13 @@ Vorn's presentation was shorter. He unrolled the maps across the table — she h
 
 That was all he said. The maps were the presentation — its own flat soldier's eloquence: Vorn trusted the ink to argue for him the same way Keist trusted the citations, both arriving at the identical strategy from opposite houses.
 
-She was not meant to study materials while they were presented; her station was to the side and slightly back, her assignment the record of what was said, not the documents themselves. But she noted two things anyway — noting was simply what her eyes did. In the central section of the eastern survey, the gap between the old line and the new one was wider than the station courtyard was long. And in three places along the southeastern passage, the new line had moved into ground that the old survey's own legend marked *maintained transit corridor, canonical approach authorization required* — four words that had sat quietly in a legend for fifteen years meaning one thing, and now, apparently, meaning another.
+She was not meant to study materials while they were presented; her station was to the side and slightly back, her assignment the record of what was said, not the documents themselves. But she noted two things anyway — noting was simply what her eyes did. In the central section of the eastern survey, the gap between the old line and the new one was wider than the station courtyard was long. And in three places along the southeastern passage, the new line had moved into ground that the old survey's own legend marked maintained transit corridor, canonical approach authorization required — four words that had sat quietly in a legend for fifteen years meaning one thing, and now, apparently, meaning another.
 
-She looked at her table and wrote: *eastern sector survey presented, four sheets, submitted for archival. Current measurement against fifteen-year baseline. See submitted materials.*
+She looked at her table and wrote: eastern sector survey presented, four sheets, submitted for archival. Current measurement against fifteen-year baseline. See submitted materials.
 
 She wrote what was there. That was her assignment, and she held to it the way she held to every rule that kept the room from asking more of her than it was owed.
 
+[Beat 140]
 "The Carnyx petition will have the maps entered into the session record," Prelacze said. He had not looked at them. He had been looking at the window. "Scribe."
 
 "Canon."
@@ -2449,7 +2349,7 @@ Keist said, "The transit corridors—"
 
 "Are under review. The process for contested approach territories in Vigil-adjacent sectors requires formal assessment by the Order of the Watch's sector command, submitted to the canonical registry. That process has been initiated."
 
-He did not say *I initiated it.* He said *the process has been initiated.* Two sentences wearing the same coat — one had a person in it, and one didn't, and the one without a person in it could never be asked, later, why the person had done what he did.
+He did not say I initiated it. He said the process has been initiated. Two sentences wearing the same coat — one had a person in it, and one didn't, and the one without a person in it could never be asked, later, why the person had done what he did.
 
 Vorn said nothing further. He rolled one of the maps back up with the care of a man who had decided the maps would do no further work here today.
 
@@ -2457,14 +2357,13 @@ Vorn said nothing further. He rolled one of the maps back up with the care of a 
 
 Prelacze looked at her directly for a moment. "The Loera petition's documentation is noted in the record and will inform the sector review. This session has received and registered the presented materials." Without warmth, without coldness — the register of something institutional and final. "No immediate action is indicated. Continued monitoring protocols are authorized."
 
-She wrote: *no immediate action indicated. Continued monitoring protocols authorized.*
+She wrote: no immediate action indicated. Continued monitoring protocols authorized.
 
-She wrote: *Loera and Carnyx concerns noted in the record.*
+She wrote: Loera and Carnyx concerns noted in the record.
 
-She did not write: *the maps are in the archival queue and the lines on them say the cavity is larger.* That sentence sat behind her teeth the whole time she was writing the correct one. That was not her assignment. Her assignment was the record of what was determined.
+She did not write: the maps are in the archival queue and the lines on them say the cavity is larger. That sentence sat behind her teeth the whole time she was writing the correct one. That was not her assignment. Her assignment was the record of what was determined.
 
----
-
+[Beat 141]
 The delegates left first. Keist did not look at Prelacze on her way out, which was a controlled thing to do — controlled things were so often the only kind available to people who lost. Vorn paused where the maps had been spread — already gathered into Vega's hands — looked at the empty table for a moment, and went.
 
 Prelacze signed the instruments she presented at the table, not at corridor speed. He read each one before signing, unhurried, as he had never once been hurried about a canonical instrument in eight sessions. Virtue, or a very specific kind of confidence — she still hadn't decided which.
@@ -2483,6 +2382,7 @@ He signed the fourth. He looked at the fifth. "The Carnyx materials."
 
 He signed the fifth, handed the set back, and went.
 
+[Beat 142]
 She stood at the table with the instruments in one hand and the map case in the other. The brazier had been burning three hours and the room was warmer than it had been, though she could no longer feel it as warmth — her body had gone numb past the point of reporting heat honestly, and she trusted neither the numbness nor whatever came after it.
 
 She sat. She set the instruments aside and opened the case.
@@ -2493,11 +2393,11 @@ In the northwestern sector, the current line sat two hundred and thirty meters e
 
 In the central sector, the gap was three hundred and eighty meters. The courtyard would fit twice.
 
-In the southeastern passage — the one the old legend marked *maintained transit corridor, canonical approach authorization required* — the current line touched the corridor's inner boundary. Did not cross it. Touched it.
+In the southeastern passage — the one the old legend marked maintained transit corridor, canonical approach authorization required — the current line touched the corridor's inner boundary. Did not cross it. Touched it.
 
 Touching was not crossing. She noted this honestly, because it was a meaningful distinction if you were building a canonical argument, and the maps were not building an argument. They had measured what was there and drawn what they found.
 
-She rolled the first sheet closed, then the second, and set them in the case. In the disposition column she wrote: *archived without action, per Canon Immaculate session determination.* She sealed the case with the Registry stamp and placed it in the archival queue.
+She rolled the first sheet closed, then the second, and set them in the case. In the disposition column she wrote: archived without action, per Canon Immaculate session determination. She sealed the case with the Registry stamp and placed it in the archival queue.
 
 She picked up her pen and did not write anything for a moment.
 
@@ -2505,8 +2405,7 @@ She had been good at her work before she became too good at it. She was not cert
 
 She was very good at this.
 
----
-
+[Beat 143]
 She was in the corridor outside the administrative wing, carrying the session instruments toward the registry, when she heard them coming from the eastern approach.
 
 Seven soldiers. Her mind catalogued them before she had decided to let it — three years processing complement logs and supply authorizations had left her with the reflex of reading equipment the way she read certification stamps. Heavy weather-treatment on the outer layers, Vigil-approach rated. Boot construction cut for the eastern approach roads — the exact design she had filed requisition instruments for herself. Kit profile she knew from evaluation summaries she'd been copying since the sixth month: Descent Corps issue. Not garrison — she knew the garrison faces, every one, and none of these belonged to that roster. Not Carnyx insignia either, though the route was the same eastern corridor Vorn had spent the afternoon arguing was measurably, provably wrong. Possibly Carnyx-routed. She was not certain, and she wrote it that way in her head before she wrote anything anywhere else — an uncertain fact recorded as a certain one was worse than no fact at all.
@@ -2517,87 +2416,86 @@ She pressed herself to the wall to let them by. The corridor was narrow, and the
 
 She waited until they turned the corner. Then she went on to the registry.
 
----
-
+[Beat 144]
 The intake log for the specialist deployment was in the pending queue on her desk, delivered that morning, before the session. She picked it up.
 
-*SPECIALIST DEPLOYMENT — SINTER ZONE APPROACH PREPARATION.*
+SPECIALIST DEPLOYMENT — SINTER ZONE APPROACH PREPARATION.
 
 She held the instrument. Seven names in the personnel column, standard roster format. Equipment certification attached. Authorization chain: a single reference number she did not immediately place — an unfamiliar series, which happened sometimes with restricted categories. She wrote the number on her working copy for later. A little puzzle. She was less certain, already, that she was going to like this one.
 
 She read the designation again.
 
-She had seen *Sinter Zone* before, in maintenance authorizations — the infrastructure documentation for the approach roads, the survey-marker upkeep, the periodic replacement of the distance stones the winter frost split. In that context it was a terrain designation, nothing more. The engineering reports described substrate conductivity anomalies and unusual compaction in the dry, careful language of people writing about ground and declining to write about what the ground was next to — a discipline she'd come, grudgingly, to admire, right up until she noticed how much work it was doing to keep her from asking the obvious question.
+She had seen Sinter Zone before, in maintenance authorizations — the infrastructure documentation for the approach roads, the survey-marker upkeep, the periodic replacement of the distance stones the winter frost split. In that context it was a terrain designation, nothing more. The engineering reports described substrate conductivity anomalies and unusual compaction in the dry, careful language of people writing about ground and declining to write about what the ground was next to — a discipline she'd come, grudgingly, to admire, right up until she noticed how much work it was doing to keep her from asking the obvious question.
 
-*Approach Preparation* was not a maintenance category.
+Approach Preparation was not a maintenance category.
 
 She put the intake log in her bag and went to the library.
 
----
-
+[Beat 145]
 The library was the warmest room at Ocipheus Station. The braziers were lit at dawn and not let die until closing, and the room held its heat in the shelves in a way stone rarely managed. She found tonight that she could not feel it in quite the same way, which was not the room's fault.
 
-She looked up *approach preparation* under the taxonomy: specialist deployment.
+She looked up approach preparation under the taxonomy: specialist deployment.
 
 The definition was not long.
 
-*Approach preparation: pre-staging designation for operations requiring formalized entry authorization for contested or boundary-adjacent territory. Classification: pre-incursion operational. Authorization level required: Canon Immaculate plenary. Documentation required: full canonical instrument set, canonical form series CI-7 through CI-14, signed by authorized representatives of all participating Houses and operating authorities. Required countersignature: canonical notary, Ocipheus Station or designated equivalent registry.*
+Approach preparation: pre-staging designation for operations requiring formalized entry authorization for contested or boundary-adjacent territory. Classification: pre-incursion operational. Authorization level required: Canon Immaculate plenary. Documentation required: full canonical instrument set, canonical form series CI-7 through CI-14, signed by authorized representatives of all participating Houses and operating authorities. Required countersignature: canonical notary, Ocipheus Station or designated equivalent registry.
 
 She read it twice, then a third time — not because it was unclear, but because the first reading had only started the process of settling. Understanding a thing and having it settle into working knowledge were different states, and she was still, stubbornly, in the first.
 
-*Canon Immaculate plenary.*
+Canon Immaculate plenary.
 
 The full canonical authority. No escalation, no appeal, no modification by House councils or regional bodies — the standing from which the Canon Immaculate acted in the Liturgy's name without requiring consent from the people it served. She had processed eight sessions this year, and none, not one, was plenary. Plenary authority was something else entirely — a category she had only ever seen pressed flat between the covers of the reference instruments.
 
 The CI-7 through CI-14 set she knew from training: threshold formalities, attestation records, operational mandates, House confirmation instruments, an operational brief filed under seal, a deployment roster — and last, the instrument that made the whole set canonical.
 
-*CI-14: Canonical witness certification. Required countersignature: canonical notary, Ocipheus Station or designated equivalent registry.*
+CI-14: Canonical witness certification. Required countersignature: canonical notary, Ocipheus Station or designated equivalent registry.
 
 The notary of record was her.
 
+[Beat 146]
 She sat in the library a long time. The warmth pressed in around her. Through the narrow window near the ceiling, the afternoon was going grey and cold in the way of afternoons in the Still Watch month, when the light left early.
 
-She thought about what the plenary authority had been built for. The standing had been established in Year 645, fifteen years after the first vigil installation at Ocipheus Station. The founding text cited it directly — beautiful, the balance of the phrasing, before she made herself hear what it licensed: *the authority of the Canon Immaculate shall be sufficient, in those moments when coordinated action is required and deliberative process cannot serve, to act in the name of all Compact Houses and their peoples.* It specified, further, that the authority existed because of the Sinter vigil specifically: in its first fifteen years, the vigil had shown that what sat in the basin was not resolving, and that the Compact Houses, left to their own deliberation, could not agree on a response to a thing none of them had seen directly.
+She thought about what the plenary authority had been built for. The standing had been established in Year 645, fifteen years after the first vigil installation at Ocipheus Station. The founding text cited it directly — beautiful, the balance of the phrasing, before she made herself hear what it licensed: the authority of the Canon Immaculate shall be sufficient, in those moments when coordinated action is required and deliberative process cannot serve, to act in the name of all Compact Houses and their peoples. It specified, further, that the authority existed because of the Sinter vigil specifically: in its first fifteen years, the vigil had shown that what sat in the basin was not resolving, and that the Compact Houses, left to their own deliberation, could not agree on a response to a thing none of them had seen directly.
 
 The plenary authority was built for Sinter — because the vigil kept showing the Houses something none of them wanted to see, and the founding canons had built a lever for the day consensus could not come fast enough.
 
 He was using it.
 
-The session notation in the archival queue said: *no immediate action indicated.*
+The session notation in the archival queue said: no immediate action indicated.
 
-The intake log in her bag said: *Sinter Zone Approach Preparation.*
+The intake log in her bag said: Sinter Zone Approach Preparation.
 
 Both were correct. Both were signed. Both had been processed the same day, by the same notary, and neither referenced the other — a small cruelty, that two true documents could sit six feet apart in the same queue and never speak to each other.
 
-Prelacze had looked at the window during the session. He had cited seven hundred years of record. He had said *within acceptable variation,* and the session had accepted his reading because the session did not have the standing to refuse the Canon's institutional word. She had been in the room. She had written it down.
+Prelacze had looked at the window during the session. He had cited seven hundred years of record. He had said within acceptable variation, and the session had accepted his reading because the session did not have the standing to refuse the Canon's institutional word. She had been in the room. She had written it down.
 
 The maps in the queue below said the southeastern line touched the transit corridor. The measurement log had a small stated margin of error and had left no room to argue.
 
 She was no longer certain the authority was being used for the thing it was built for. Different problems. The canonical record had a column for the first; she did not know what to do with the second.
 
----
-
+[Beat 147]
 She walked back to her desk. The courtyard through the window was dark — she had been longer than she thought, which was the thing about understanding something: it took time you could not account for afterward. You came out of it with less evening than you had gone in with.
 
-She processed the intake log correctly. Instrument type, canonical category, processing date, reference number, notary initials. In the disposition column she wrote: *received for processing, authorization chain pending, filed pending instrument-set convocation.* She placed it in the archival queue beside the map case and the session notation — three documents in adjacent slots, none referencing the others, each of them correct.
+She processed the intake log correctly. Instrument type, canonical category, processing date, reference number, notary initials. In the disposition column she wrote: received for processing, authorization chain pending, filed pending instrument-set convocation. She placed it in the archival queue beside the map case and the session notation — three documents in adjacent slots, none referencing the others, each of them correct.
 
 Then she opened a new working copy — her own stock, her own ink, not the canonical record — and dated the top with the care she gave every date, because a date was either correct or wrong and there was no comfortable middle position.
 
-*Day 14, month of the Still Watch, 3rd year canonical.*
+Day 14, month of the Still Watch, 3rd year canonical.
 
-She wrote: *Review session, Chamber Three: inter-House delegation, Loera and Carnyx. Loera delegate Adnora Keist. Carnyx commander Aldec Vorn. Presided: Canon Immaculate Tomasz Prelacze.*
+She wrote: Review session, Chamber Three: inter-House delegation, Loera and Carnyx. Loera delegate Adnora Keist. Carnyx commander Aldec Vorn. Presided: Canon Immaculate Tomasz Prelacze.
 
-She wrote: *Session determination: no immediate action indicated. Continued monitoring protocols authorized.*
+She wrote: Session determination: no immediate action indicated. Continued monitoring protocols authorized.
 
-She wrote: *Carnyx maps, eastern sector survey, four sheets, archived without action per session determination. Central sector: current line three hundred eighty meters east of fifteen-year baseline. Southeastern passage: current line at the edge of the maintained transit corridor designation. The cavity is larger. The maps say so plainly.*
+She wrote: Carnyx maps, eastern sector survey, four sheets, archived without action per session determination. Central sector: current line three hundred eighty meters east of fifteen-year baseline. Southeastern passage: current line at the edge of the maintained transit corridor designation. The cavity is larger. The maps say so plainly.
 
 She looked at that last sentence. She had written it in the register of a fact, the same manner she wrote measurement values and certification dates — no flourish left in her for it, just the bare clause doing exactly the work it needed to do. A notary wrote what she saw. She had been in the room. She had seen the maps. The cavity was larger.
 
+[Beat 148]
 She kept writing.
 
-*Specialist deployment intake, same date: seven soldiers, Descent Corps issue, Vigil-approach equipment, traveling condition purposeful, route possibly Carnyx-corridor. Category: Sinter Zone Approach Preparation. Canonical compendium cross-reference: pre-incursion operational, Canon Immaculate plenary authorization required. Instrument set: CI-7 through CI-14. Required countersignature: canonical notary, Ocipheus Station.*
+Specialist deployment intake, same date: seven soldiers, Descent Corps issue, Vigil-approach equipment, traveling condition purposeful, route possibly Carnyx-corridor. Category: Sinter Zone Approach Preparation. Canonical compendium cross-reference: pre-incursion operational, Canon Immaculate plenary authorization required. Instrument set: CI-7 through CI-14. Required countersignature: canonical notary, Ocipheus Station.
 
-*Cumulative pattern, month one through month eight:* she wrote, and set down the pieces she had been carrying separately for so long that writing them in sequence felt like an act of undressing. *The Oculus Lacrimans Memoriae recovery instrument. Dame Lyra of Ocipheus's transit suspension. Loera and Carnyx sector reports, repeating cycle, no action indicated. Vigil garrison supply authorizations, aggregate tonnage up by nearly a quarter with no corresponding rise in complement. The autumn war-construct evaluation cohort — the courtyard is empty now, but it was not empty in the autumn — status: deployment authorization pending. Today's intake log. Today's session notation.*
+Cumulative pattern, month one through month eight: she wrote, and set down the pieces she had been carrying separately for so long that writing them in sequence felt like an act of undressing. The Oculus Lacrimans Memoriae recovery instrument. Dame Lyra of Ocipheus's transit suspension. Loera and Carnyx sector reports, repeating cycle, no action indicated. Vigil garrison supply authorizations, aggregate tonnage up by nearly a quarter with no corresponding rise in complement. The autumn war-construct evaluation cohort — the courtyard is empty now, but it was not empty in the autumn — status: deployment authorization pending. Today's intake log. Today's session notation.
 
 The Oculus Lacrimans Memoriae recovery instrument was the one she had processed least easily, because she had once read what the canonical compendium said the Relic actually was — and she had loved the name the first time she'd copied it, loved the sound of it whole, the way she loved every phrase in the Received Tongue she couldn't quite translate, before she made herself hear what the compendium said underneath the beautiful sound of it. Not a weapon, whatever the corridor gossip called it. Not a power source. The compendium was specific: the one instrument at Ocipheus Station that did not lose what it saw, a lens that retained rather than merely looked — seven hundred and forty-one years of the crater filed as a single continuous memory, still accumulating. The recovery instrument itself was logged under Relic provenance review, the same procedural grammar that had, four hours earlier, filed a doubling cavity as no immediate action indicated. A thing that remembered everything was a hazard to an office that needed a season's worth of forgetting to keep functioning. She had written that thought once, in the margin of an older working copy, and had not let herself finish it.
 
@@ -2607,15 +2505,18 @@ She looked at the order.
 
 She had been, she thought, trying not to see the shape of it — not because she had never read shapes before; she had spent three years learning to read little else. But the shapes in other people's decisions had always been navigable, held at the distance the instrument gave you. This shape was not navigable the same way. This shape had her sister's name in it.
 
-She reached into the drawer and drew out the older working copy without needing to look for it — she knew it by feel, the fold she had put in it without meaning to. Her sister's name was in the margin of the third page, where she had written it the day she found it in the transit suspension: *Lyra Athen-Moor, Templar of Ocipheus, transit suspended effective —* and the date. She had crossed it out with one horizontal stroke, not hard enough to obscure it, only hard enough to mark that she had seen it. The name was legible through the line. She had known, drawing the line, that it would stay legible. Crossing it out was not the same as pretending she had not written it — or that, three years ago, she had not been given work that would eventually require her to find it.
+The recovery instrument had sent Lyra east from Ocipheus the same season the specialist deployment's authorization chain first opened. She did not yet have proof the two roads were the same road. She had stopped needing proof to feel the shape of where a plenary authority built for Sinter, and a sister riding east under a Compact mandate, might eventually cross.
+
+[Beat 149]
+She reached into the drawer and drew out the older working copy without needing to look for it — she knew it by feel, the fold she had put in it without meaning to. Her sister's name was in the margin of the third page, where she had written it the day she found it in the transit suspension: Lyra Athen-Moor, Templar of Ocipheus, transit suspended effective — and the date. She had crossed it out with one horizontal stroke, not hard enough to obscure it, only hard enough to mark that she had seen it. The name was legible through the line. She had known, drawing the line, that it would stay legible. Crossing it out was not the same as pretending she had not written it — or that, three years ago, she had not been given work that would eventually require her to find it.
 
 She looked at her sister's name a moment. She put the copy back and closed the drawer, unlocked.
 
 On the new page she added one final line.
 
-*CI-7 through CI-14 not yet convened. When convened: canonical witness certification required. Notary required.*
+CI-7 through CI-14 not yet convened. When convened: canonical witness certification required. Notary required.
 
-*I am the notary.*
+I am the notary.
 
 She looked at the sentence. She did not cross it out.
 
@@ -2631,9 +2532,7 @@ The canonical record said what it was supposed to say.
 
 What the working copy said was still drying.
 
-[Beat 15]
-ARDENMERE — THE WRIT
-
+[Beat 150]
 The writ sat on the garrison table a full three-count before she reached for it. Senne had placed it there, not handed it — a judge does not serve the motion, and he knew the courtesy. He had prepared for this. She had not decided yet whether the preparation was warning or concession.
 
 She read it standing. Regulation posture for receiving contested paper: weight even, hands free, eyes moving in a fixed order — heading, seal, body, signature block.
@@ -2642,8 +2541,7 @@ The drafting was precise. Osra and Fevin were named doctrinal threats of the sec
 
 She reached the clause naming operational witnesses under active Vigil jurisdiction.
 
-SCHMALBURG — THE RAID; THE EATERS
-
+[Beat 151]
 Three long. Two short. Then again — three long, two short.
 
 Her hand found the hilt before the count finished in her head.
@@ -2658,13 +2556,23 @@ The Eaters came off the western face of the Schmalburg quarry, the approach nobo
 
 Two soldiers down in the first exchange. Two more in the withdrawal. She watched Ardea go down pulling Rowe clear of the crossfire — thirty seconds start to finish, Ardea down and Rowe standing, and the distance between those two facts was a debt she carried the rest of the crossing.
 
+[Beat 152]
 She was in the garrison hall at Ardenmere. The writ was in her hand. The paper had gone warm from the holding.
 
+Attesting cost her nothing on paper. A signature, a stamp, chain of custody closed clean, and Osra and Fevin filed wherever the writ's second category filed people it did not intend to let speak again. She had signed harder documents than this one without her hand shaking once. She could sign this one too, and be home in Ardenmere by Feast Day with a record that had never once needed defending.
+
+She thought of Ardea going down to pull Rowe clear, thirty seconds start to finish, and what she had told herself in the years since about what those thirty seconds had bought. She thought of what a doctrinal-threat filing did to testimony nobody else was left alive to give. Refusing cost her something she did not yet have a full accounting for — she knew only the shape of the debt, not the total — and she had spent seventeen years learning never to sign a thing before she knew what it would cost her to sign it.
+
+This time she signed nothing at all.
+
+[Beat 153]
 She set it on the table, face down.
 
 Senne was at the window. He turned at the sound of it landing.
 
-"The Oculus records have stood as evidence in civil proceedings in the Verlaine lowlands for forty-three years." She said it to him direct, no lift in the voice. "They are legal instruments. Their standing precedes this writ. It does not lapse because this writ declines to name it."
+"The Oculus records have stood as evidence in civil proceedings in the Verlaine lowlands for forty-three years."
+She said it to him direct, no lift in the voice.
+"They are legal instruments. Their standing precedes this writ. It does not lapse because this writ declines to name it."
 
 He listened. Nothing in his face marked any of it as new.
 
@@ -2672,7 +2580,9 @@ He listened. Nothing in his face marked any of it as new.
 
 The hall held no sound but the courtyard below — the garrison keeping its hours the way garrisons do, proceedings or none.
 
-"I stand as Templar of record for the Oculus recovery. Chain of custody for CI-7 through CI-14 runs through my attestation. Certification does not clear this jurisdiction without it." Flat, level, the way she gave any order that mattered. "I will not attest a writ that remands witnesses to a court with an interest in their silence."
+"I stand as Templar of record for the Oculus recovery. Chain of custody for CI-7 through CI-14 runs through my attestation. Certification does not clear this jurisdiction without it."
+Flat, level, the way she gave any order that mattered.
+"I will not attest a writ that remands witnesses to a court with an interest in their silence."
 
 Seventeen years she had stood a wall for the Vigil and called the standing faith. This was the first hairline in it — not a break, a hairline, the kind you find running a hand along stone before the season that widens it. She noted it the way she noted any structural fact and set it aside to hold under later inspection.
 
@@ -2680,19 +2590,14 @@ She did not lift the writ again.
 
 She left it face down on the table and waited on his answer, the way she waited on any report from a line she trusted less each season.
 
-[Beat 16]
-THE FORGE HEARTH - WHAT CANNOT BE SEEN
-
+[Beat 154]
 The volcanic substrate had pushed up through the alpine soil in long dark extrusions - finger-shaped, basalt-colored, warm to the touch even through the cold morning. Orim did not touch it. He had touched enough basalt in enough mornings to know in advance what it would tell him, which was nothing he did not already carry, shelved under a date and a barge and a season he no longer had cause to name. Lyra pressed her palm against one and left it there, confirming for herself what he had already priced years ago. That was proper. A researcher tests what a keeper has learned to take for given - or, if not given, then paid for so many times the paying no longer registered as a transaction.
-
-He had crossed this approach six times in thirty years. He had told her so once, on a barge, in a different season, and had said it the way he said most things about his own history: as a fact shelved for later use, offered without the weight an anecdote asks to carry, because an anecdote wants admiring and a fact only wants keeping.
 
 Rowe walked on her other side, rifle slung, hands loose, watching the extraction valley below with the quiet, methodical attention he gave to everything he had not yet decided was worth remarking on. Six weeks since Bressant, most of that swallowed by the stalled weeks at Schmalburg before they could risk the road again. The shell had given him Entos whole the day it took him - complete sentences, whether he wanted them or not - and he could have built any sentence the moment required. He rarely chose to. He spent what he was willing to spend, carefully, and no more. Orim approved of the economy without saying so. A man who spoke only what he meant was a rarer instrument than most people troubled to notice.
 
 Below, the extraction roads ran the switchback geometry Atrament used for heavy equipment access, carved into the volcanic rock. Heloth maintenance constructs moved on them at the smooth, unhurried gait of machines that had made the route enough times that the route had become part of them somewhere - not in a mind, because they did not have minds, but in whatever the Catalyst preparation put into the movement instead. Ember-fungi clustered orange at every maintenance station along the way, bioluminescent, drawn to the chemical exhaust the constructs vented at each cycle. At this distance they looked like small fires. They had looked like small fires for roughly four hundred years, which was how long the constructs had been working this section of the approach - a span of time that struck Orim as unremarkable, one recognizable clause in a considerably longer sentence.
 
-*
-
+[Beat 155]
 The warmth that came from the south was different, and he had felt it before either of them noticed it, because feeling what a place had to say before it announced itself was the whole of what he had done for a living, on the days he still had a living to do.
 
 This was not the Sinter tone. The Sinter perimeter felt like standing in front of something that was awake and had noticed you. This felt like standing in front of something that had been asked to keep working long past the point where it had the strength left to work. Not menace. Not attention. The specific exhaustion of a system running on the wrong side of its limits, because stopping would have required someone to make a decision nobody wanted to make. He had no better word for it than that, and did not go looking for one, because words found before their time only get in the way of the facts that eventually arrive to fill them.
@@ -2701,26 +2606,24 @@ Seventeen years of keeping the archive's membrane-observation logs had made her 
 
 He set the warmth aside as a thing he had not yet had cause to name, and kept walking, because walking was the task in front of him and naming could wait for evening, or for never.
 
-*
-
+[Beat 156]
 The path widened at a shelf of flat volcanic stone - the overlook, wide enough to stop, wide enough to see clearly south. From there the approach road curved around the ridge's base and ran toward the Hearth-Three perimeter.
 
 Six figures on the road. Long coats. Rifles slung.
 
 Not a maintenance crew.
 
-He named it before she had finished counting them herself, the way he named most things before there was any profit in waiting. "Patrol," he said. "Rotation crew. They run the ridge on odd mornings - I have watched them do it on four separate crossings, always this stretch, always this hour." He considered the distance. "At that pace, the junction in perhaps twenty minutes."
-
-"And us?"
-
+He named it before she had finished counting them herself, the way he named most things before there was any profit in waiting.
+"Patrol," he said.
+"Rotation crew. They run the ridge on odd mornings - I have watched them do it on four separate crossings, always this stretch, always this hour." He considered the distance. "At that pace, the junction in perhaps twenty minutes."
+"And us?" she asks.
 "About the same. Perhaps five minutes ahead, if we do not stop again."
 
 Going back over the ridge cost two days they did not have. The valley below was Atrament perimeter under a different command chain with a different tolerance for unauthorized transit, and the ridge path was the only way south that did not require Lyra to present credentials three weeks expired and flagged for watch beside her name. The junction ahead - where the ridge path met the Loera approach - was the only door.
 
 The ground had been asking him a question since before they reached the shelf, and he had let it wait exactly as long as courtesy allowed. He turned from the road. He looked at the stone at his feet with the particular stillness that came before a scry, a stillness he had worn so long it no longer felt like preparation. It felt like weather.
 
-*
-
+[Beat 157]
 He did not announce what he was doing. He did the preliminary stages, which by now his hands performed without consulting him: the tincture vial from the satchel's side pocket, the careful wetting of two fingertips, the small deliberate motion of bringing them together at the sternum. He had done this at the Ocipheus Station archive, reading the south passage - a place, an hour that no longer existed anywhere but in the seeing of it. He had done it at the Veil River junction, reading barge traffic three days gone and already lost again the moment his eyes came open. Six thousand times, more or fewer. He had never once needed to think about the doing of it, which was itself a kind of trust extended by long habit to a specific future - the future, always, up to this morning, giving something back for the asking.
 
 He pressed his fingertips together. He breathed twice. He looked at nothing.
@@ -2730,11 +2633,11 @@ His mind reached for the surface the way it always reached, the way water finds 
 There was a period of perhaps forty seconds. Wind moved over the shelf. Somewhere below, a steam vent released its slow geological percussion.
 
 He opened his eyes.
-
 "No," he said.
 
 Not a word of protest, and not a word aimed at the membrane, or at her, or at anyone standing on the shelf. A fact, offered the way he offered every fact, unweighted - though this was the first fact in sixty years of offering facts unweighted that had cost him anything at all to set down evenly.
 
+[Beat 158]
 He sat on the volcanic stone. He noted, in the same register he reserved for weather and troop counts, that his knees had required the rock's help in a way they had not required it that morning, and required nothing further of the noting. He set the satchel beside him. He looked at the south country for a long time and did not speak.
 
 Sixty years he had worked the membrane at the depth available to him - the near, the recent, the small clear impressions a site gives up to a practiced minor scryer. Sixty years, and this was the first time it had told him no. He put the fact away exactly once, in the drawer where he kept everything else, and did not take it back out to look at it again. Some part of him recognized the shape of the nothing, in the way one recognizes a voice before the words arrive. He did not ask that part to explain itself. There are questions a keeper learns not to put twice in one lifetime, and this one had already been asked, thirty years before, at a different aperture, by a younger and considerably less careful man.
@@ -2743,68 +2646,55 @@ Rowe looked at him. He looked back, briefly, and offered the boy nothing, becaus
 
 She did not press him. She would have made a passable keeper in another life, in that regard if no other - she let a silence stand exactly as long as a silence needed to stand, and this one needed the whole length of the wind crossing the shelf.
 
-*
+[Beat 159]
+He was aware of the Rod's temperature in his palm before he looked at it: less than it should have been, missing the low residual glow it kept between uses. When he did look, two of the seven graduated grooves had darkened past their ordinary tarnish into something the color of an old bruise.
 
-He was aware of the Rod's temperature in his palm before he looked at it: less than it should have been, missing the low residual glow it kept between uses, the color of a coal a day after the fire. When he did look, two of the seven graduated grooves - the fourth and the sixth, the channels he kept tuned to the near and the recent, the depths he worked most - had darkened past their ordinary tarnish into something the color of an old bruise.
+She crouched by his hand.
+"It should be carrying warmth of its own," she said.
+"It isn't. And these two channels have fouled." She had a term for it out of the literature: *recovery gradient depression.* The site was returning less than it had been asked to return, for the same or greater cost of asking. The wound was not healing at the rate the apparatus assumed.
 
-She crouched by his hand, the researcher outlasting whatever use the Liturgy had originally found for her. "It should be carrying warmth of its own," she said, half to him, half to some notebook she kept only in her head these days. "It isn't. And these two channels have fouled." Instruments fouled when they had been made to draw against something that gave back less than the draw cost. She had a term for it out of the literature, dry and precise and thirty years removed from anyone who had to stand where they were standing: *recovery gradient depression.* The site was returning less than it had been asked to return, for the same or greater cost of asking. The wound was not healing at the rate the apparatus assumed.
-
-He listened the way he listened to any briefing - fully, without interrupting, filing the specifics for a use that had not yet announced itself. A wound heals inward from its edges. The rate depends on depth, on the frequency of re-opening, on the condition of the surrounding tissue. A wound sutured and reopened and re-sutured develops scar tissue faster than the tissue around it can compensate, and scar does not recover at the rate the flesh beside it does. Eventually the surgeon's options narrow to nothing a surgeon can do.
-
-The membrane under the Forge Hearth - the world's own caul, not a wall but living tissue with an inclination to close - had been opened and held open, repeatedly, for close to three hundred years, an extraction cycle, then a recovery interval, then another extraction cycle, on and on since Year 1075. Hearth-Four had run below production target for eleven years. Hearth-Seven for nine. She knew the numbers from her own unfinished paper, pulled from records the assessment committee had filed under *calibration drift* three times on the one and twice on the other, each time recalibrating an apparatus that was never the thing that had gone wrong.
-
+The membrane under the Forge Hearth had been opened and held open, repeatedly, for close to three hundred years - an extraction cycle, then a recovery interval, then another, since Year 1075. Hearth-Four had run below production target for eleven years. Hearth-Seven for nine. The assessment committee had filed both under *calibration drift,* recalibrating an apparatus that was never the thing that had gone wrong.
 "It is not calibration drift," she said.
-
-"No," he agreed. "It has not been calibration drift for some time."
-
-"There is a reporting channel for this. A Templar's technical observation, membrane-adjacent anomaly, forwarded through the regional Canon to the assessment committee." She said it in the flat cadence of the regulation itself, the cadence a person uses when they do not want their own words to have weight yet. "I have filed fourteen of these in seventeen years."
-
-"And they were reviewed," he said. "And filed." It was not a question.
-
+"No," he agreed.
+"It has not been calibration drift for some time."
+"There is a reporting channel for this," she said, in the flat cadence of the regulation itself.
+"I have filed fourteen of these in seventeen years."
+"And they were reviewed. And filed." Not a question.
 "Yes."
-
-He was quiet a moment. "Thirty years ago I stood at an aperture and saw something building that should not have been permitted to build, and I came back and told the people whose office it was to be told, and the phrase that came back to me was *no action indicated.*" He said the four words without inflection, the way a man recites something he has had thirty years to memorize whether he wanted to or not. "The committee that would receive your report is the same committee that signed the Year 1075 authorization, and the Year 1152 renewal, and the Year 1234 renewal, under a charter that pays it to keep signing. It was not designed to receive what you are about to tell it. It was designed to keep telling itself the answer it has been giving for six hundred years." He looked at her, finally. "I am not saying this to spare you the paperwork."
-
+"Thirty years ago I stood at an aperture and saw something building that should not have been permitted to build, and the phrase that came back to me was *no action indicated.*" He said the four words without inflection.
+"The committee that would receive your report is the same committee that signed the Year 1075 authorization, and the Year 1152 renewal, and the Year 1234 renewal, under a charter that pays it to keep signing. I am not saying this to spare you the paperwork."
 "I know what you're saying."
-
 "I'm not going to report it," she said, mostly to herself.
 
-He felt something in his own shoulders let go by a fraction - the small mechanical give of a weight handed, however briefly, to a second pair of hands - and permitted himself exactly one instant to register it before setting the fact alongside the others. He nodded, once, and looked back at the south country.
+He nodded, once, and looked back at the south country. She filed it. The flattening at the corner of her mouth was the only proof, and it was proof enough.
 
-She filed it. He watched her do it: the flattening at the corner of her mouth was the only proof the filing had happened, and it was proof enough. There was no time to examine it further, and there would not be time for a long while yet.
-
-*
-
+[Beat 160]
 She came and stood near him, not close enough to intrude. He found, when he tried to give her something in place of an explanation, that only a comparison would serve, and he offered it because a comparison costs a man less than a diagnosis, and she had not asked him for a diagnosis.
-
-"At Sinter," he said, without looking at her, "the tone is directional. Present. Something at that frequency I have never been fully certain is the membrane and not whatever lives below it." He paused. "I have crossed this approach six times in thirty years. The register here was always different - lower, slower, more diffuse. A bruise is different from a cut." He looked at the stone under his boots. "This is not that."
+"At Sinter," he said, without looking at her, "the tone is directional. Present. Something at that frequency I have never been fully certain is the membrane and not whatever lives below it." He paused.
+"I have crossed this approach six times in thirty years. The register here was always different - lower, slower, more diffuse. A bruise is different from a cut." He looked at the stone under his boots. "This is not that."
 
 She waited.
-
 "A new site will resist me. Cold, dense - unworked, the perceptual surface harder to read. But I can always find the surface. In fifty years I have always had enough to press into it and open it." His hands were very still on his knees. "Here there is nothing to press into."
-
 "Not resistance," she said.
-
-"Not resistance. Absence." He looked at her for the first time since the scry. "The way you cannot press your hand through a wall is not the same as the way you cannot press your hand through the space where the wall used to be. Different kind of nothing."
+"Not resistance. Absence." He looked at her for the first time since the scry.
+"The way you cannot press your hand through a wall is not the same as the way you cannot press your hand through the space where the wall used to be. Different kind of nothing."
 
 The sound had been under the wind since before he tried the scry, and he had let it wait, the way he let most things wait until they announced their own urgency. He watched the small stillness come into her that meant a body was hearing something it could not yet name. He did not tell her what it was. He did not fully know himself, and a keeper does not fill an unknown with a guess merely to have something ready to offer.
 
 It read in the chest, below the sternum, in the same register the Sinter tone kept its address, and yet nothing like the Sinter tone. Slower. Rhythmic the way breathing is rhythmic - not a machine's regularity but the particular variation of something alive. In. The held moment. Out. Longer than it should have been.
 
-She had told him once about Ocipheus Station - the fourth hour of a full Scrying cycle, the ambient register acquiring this same quality, a note filed under *membrane-adjacent phenomenology, sustained apparatus use* and never pursued further, because pursuing it would have required a question the institutional vocabulary did not have room for. She had never heard it, she'd said, without an apparatus running.
+She had heard this register once before, at Ocipheus, in the fourth hour of a full Scrying cycle - and never once without an apparatus running.
 
 There was no apparatus on the ridge. The nearest active installation was Hearth-Three, four kilometers south, behind the extraction perimeter. Whatever this was, it was not traveling from there.
 
 It was here.
 
-*
-
+[Beat 161]
 He turned to look at the approach road.
 
 The patrol had closed to a hundred and fifty meters from the junction. Eight minutes, perhaps ten, before six rifles stood between the party and the only door south that did not cost two days and a set of expired credentials.
 
 He looked at the road, then at the ridge behind them, then at the Rod's case in the satchel's outer pocket. He drew it out and held it a moment before he spoke.
-
 "Stand back," he said.
 
 Not loud. The tone of a man who has said it twice before in this company and understands that the people who need to hear it have already learned what it means. Lyra moved back six meters. Rowe was already moving, watching him the way he had watched him at Schmalburg, because Schmalburg was still close enough in memory that *stand back* had a referent his body reached for before his ear finished the word.
@@ -2827,8 +2717,7 @@ He opened his eyes. He was looking at the vent with the expression of a man who 
 
 He set the trigger and pressed it.
 
-*
-
+[Beat 162]
 The aperture opened at the vent's base. Translucent membrane tissue stretched across a wound the diameter of the Rod's tip. Dark veins threaded it, pulsed once, twice, and went dark. For the space of a breath, before the wound opened all the way, something showed at its center that was not stone and was not sky - a bead of gold, wet and welling, the color of a wound that bled light instead of blood. It boiled away in the same instant the aperture broke, because whatever pressed from the other side had more heat behind it than the space between worlds could hold back.
 
 What came through was not fire, not exactly, though it would look like fire to anyone who had never stood this close to an aperture before: an exhale, superheated, particulate, from a world that had spent a geological span of time accumulating pressure and had now found somewhere cooler to spend it, entirely unaware - could not be aware - that a hole had opened in the skin of its world into somewhere colder. The gas arrived at whatever temperature and pressure it had gathered on its own side of the membrane. The Entos's autumn air was sixty degrees cooler at the least. The differential ignited at the point of arrival, the way differentials do, everywhere, always, without requiring judgment from anyone.
@@ -2839,6 +2728,7 @@ What remained: smoke, and settling particulate, and a smell that was volcanic an
 
 The road was empty.
 
+[Beat 163]
 No one spoke. Rowe had not moved, except that his right hand had found the stock of his slung rifle - not gripping it, not drawing it, only resting there the way a body reaches for the thing it knows how to reach for when the world changes register without asking permission. His jaw held its particular set: a man controlling his breathing at a deliberate rate, because uncontrolled breathing was what a body did when it panicked, and his body had learned somewhere that panic cost more than he could afford to spend.
 
 He knew this smell, or near enough. Not this smell precisely - Orim understood that much, watching him - the boy had never stood near a volcano, had never seen Sphere-23 or anything like it. But he had been to France, in the third year of a war, and he knew exactly what it smelled like when an explosive force ignited in open air, when something that had been building pressure discharged into cooler atmosphere. His body knew it below the level where knowing required thought. It was the part of him that went still when the world changed register and stayed still until the world had proved it was finished changing.
@@ -2850,11 +2740,9 @@ Then he was still again, watching the road.
 Orim did not look at the road again. He was occupied with the Rod's mineral tip, which glowed now - not fire, the mineral's own thermal answer to the heat that had just passed through it. The cord wrapping at the grip smoked faintly at two points where the housing had conducted past it. He opened his coat, the heavy travel coat he had worn since Bressant, folded the lower half of it around the case, and held the warmth against himself. He stood.
 
 He said nothing. He did not look at the road, or at either of them, or at the vent where the aperture had briefly stood open in the world.
-
 "We should move," Lyra said.
 
-*
-
+[Beat 164]
 They moved.
 
 The junction was clear. The approach road ran south with smoke dispersing above it in the autumn wind, the surface scorched in a diagonal line from the vent's line of sight to the point of contact - a mark the stone would carry for years, indifferent to whoever noticed it. Lyra walked past it without slowing.
@@ -2863,36 +2751,21 @@ He walked with the wrapped Rod inside his coat, small adjustments in how he held
 
 He let the two of them fall in together at the next switchback, a half-length behind him, because two people working out a shared language needed room he was not obliged to fill.
 
-Rowe found words for it, the way he built everything now: one piece at a time. "Old man. What he carries."
-
-She looked at him.
-
-"Still hot?" He made a small gesture toward Orim, walking ahead of them with the coat folded around the case.
-
-"For a while yet," she said.
-
-He nodded, considered the path ahead, and then tried the rest of it, assembling pieces that were not quite the correct shape but that he had decided to attempt anyway. "At Schmalburg. The thing from the door. Old man." He made the gesture they had built together for the force-pierce: something small opening, spreading larger than itself. "Different thing. Same -" He pressed one hand briefly against the back of the other, the gesture he used for cost, the kind that was not paid in coin. "Same."
-
-"Yes," she said. "The same."
-
+Rowe found words for it, the way he built everything now: one piece at a time.
+"Old man. What he carries. At Schmalburg. Same." He pressed one hand briefly against the back of the other, the gesture he used for cost, the kind that was not paid in coin.
+"Yes," she said.
+"The same."
 "He knows," Rowe said. It was not a question.
-
-"He knows."
-
-He was quiet a moment, working at something further. He touched his chest. He touched the corner of his eye. He tried the gesture three ways and found none of them the right shape.
-
 "He does it anyway," Lyra said, "because the other thing is worse."
 
 Rowe thought about that for the length of the switchback.
-
 "Yes," he said.
 
 He heard all of it. He had spent sixty years learning to hear a conversation without appearing to, and saw no reason to retire the skill now, on two people he had come, in six weeks, to consider worth the practice. He did not turn. There are things a man is owed the chance to say about you at your back, and this was one of them, and he let them have it.
 
 Rowe did not say anything more. He watched the road come into view below them, pale limestone now where the volcanic rock had given way, and watched the light tilt toward the cooler register of the day's last hours, and kept building his map - one word, one observed fact, at a time.
 
-*
-
+[Beat 165]
 The descent took the rest of the morning. The path went west and south in the long switchbacks loose volcanic stone required, and the geological warmth fell away behind them as limestone emerged pale and cool from under it, the smell of altitude giving way by degrees to the smell of the sea, which meant the channel was closer than the map's scale suggested.
 
 She carried, and he knew it without ever being shown the manifest, the Oculus Lacrimans Memoriae sealed in its travel case - no heavier in the hand than a good lantern, for something that remembered seven hundred years - packed at the center of her kit with the weight distribution six weeks of difficult terrain had taught her. He had given her the cloth without explaining why the case sweated, and she had not asked him to account for it since, which he took, correctly, as a kind of trust she had not yet had full cause to extend. Every second evening, sometimes sooner if the day had been wet, she unsealed the lid and found the lining faintly damp, faintly warm, as though the thing inside ran a low fever of its own that never broke. She wiped it down with the soft cloth he had given her for the purpose, and the cloth came away beaded gold at the folds, a thin bright residue she rinsed clean in the nearest water without once pressing him for an accounting. Then she re-laid the lining and re-sealed the case and packed it back into the kit the way you'd settle a sleeping animal that had only just quieted. Not yet a question she had put words to. Only a habit her hands had learned to perform for something that could not perform it for itself. The Dissolution Blade and the Vigil Shield. The tincture kits. The sealed authority documents from the Keeper's office, three weeks expired and carried anyway, because the chain of documented custody mattered regardless of whether the authority behind it was still technically operative.
@@ -2905,9 +2778,7 @@ The Forge Hearth fell behind them: the warmth that had not been quite geological
 
 He did not look back at the ridge. He kept walking.
 
-[Beat 17]
-THE MONSTER CORRIDOR
-
+[Beat 166]
 Lyra stopped at the gatepost. The fence beyond it had been mended so many times the mends had mends — wire laid over wire, some of it rusted dark, some of it new and already showing the kink that meant something heavy had tested it and lost. She read the post the way she read any surface with marks cut into it: not for decoration, for record. A tally. Notches cut fresh over older notches, a running count going back further than the wood should have lasted.
 
 "They keep score," Orim said, coming up beside her. He did not touch the post. "Every farm on this stretch keeps one. Not superstition. Inventory."
@@ -2926,8 +2797,7 @@ Rowe stood a few paces back, rifle slung, reading the ground the way he read any
 
 "He says it's this morning," Orim corrected. "There is a difference. It is the difference that matters."
 
-*
-
+[Beat 167]
 They went through the gate because the gate was the only door — the same as the junction at the Forge Hearth had been the only door — and because two days, once spoken aloud, could not be unspoken back down to two and a half.
 
 The corridor ran a little under four kilometers by Orim's reckoning, gate to gate. Farmland at one end, farmland at the other, and between them a stretch no farmer had managed to hold no matter how many generations tried. Windbreak trees stood in rows that had once been planted rows and were now simply rows, ownerless, grown however they liked where the plough had given up. The grass stood taller here than at the gate. It moved in ways the wind did not explain.
@@ -2944,8 +2814,7 @@ Nothing moved.
 
 Then, forty meters off the road, in grass tall enough to hide most of a standing man, something did.
 
-*
-
+[Beat 168]
 She saw the head first. It came up out of the grass to look at them, and for a full second, even with everything Orim had just told her, the shape of it stopped the breath in her chest before her mind caught up and began the work of naming it.
 
 It was not a head built for looking. Too long — the skull drawn forward into something between a snout and a beak, the eyes set too far back and too low, one higher than the other, so the thing carried a permanent, unintentional tilt. Below the eyes, where a jaw should have been the only opening, there was a second mouth — smaller, vertical, set into the throat where a throat had no business having one, ringed in dark tissue that pulsed on its own count, independent of the larger mouth's breathing.
@@ -2956,7 +2825,7 @@ Rowe's rifle came up before she registered any decision behind it, stock at his 
 
 A line appeared in her own vision then, cold and precise, unbidden — the way it had first appeared the night she lifted Ardea's rifle off the Schmalburg cobblestones and it told her, without meaning to, what she was holding.
 
-> MASS — approx. 90kg. GAIT — quadruped; forelimb triple-jointed, non-standard flexion sequence. WEAK POINT — cervical junction, ventral, beneath secondary oral structure. CATALOGUE — Sphere 14. Partial match: agricultural draft-class stock, modified beyond baseline tolerance.
+MASS — approx. 90kg. GAIT — quadruped; forelimb triple-jointed, non-standard flexion sequence. WEAK POINT — cervical junction, ventral, beneath secondary oral structure. CATALOGUE — Sphere 14. Partial match: agricultural draft-class stock, modified beyond baseline tolerance.
 
 He had not spoken. He never spoke it. It arrived the way an order arrives — and she had stopped asking what it cost him to receive it, because she had watched what there was of his face do something in the half-second after each reading that told her the cost plainly enough.
 
@@ -2964,8 +2833,7 @@ He had not spoken. He never spoke it. It arrived the way an order arrives — an
 
 "They all have the number," Orim said. "Somewhere the harvest ledgers have it too. Only the creature standing in the grass has forgotten it was ever anything but this."
 
-*
-
+[Beat 169]
 It did not charge. That unbalanced her first read of what a monster corridor should produce: the animal in the grass watched them, head tilted at its fixed angle, the small mouth pulsing at its throat, and came no closer.
 
 "Scout," Rowe said. One of his words. He did not lower the rifle.
@@ -2982,20 +2850,16 @@ He read the field the way he usually read it — correctly. The grass moved agai
 
 Orim did not argue the arrangement.
 
-*
-
+[Beat 170]
 The first one came at an angle she had not planned for, and that was the whole problem with the corridor, plain within the first four seconds of the pack closing: nothing about these animals moved the way a body was built to move, and every instinct twelve years of Vigil drill had put in her hands was set for bodies with an ordinary number of joints.
 
-She brought the Vigil Shield up on the reach she judged correct for a quadruped closing at a run. The thing folded sideways at the hip in a way no four-legged animal she had ever fought could fold, coming in low and wide of the shield's arc. She felt it before she saw it — teeth in the meat above her knee, a testing bite, the kind a dog gives before it commits — and she reversed the shield's edge down and took the thing across the skull with the boss of it before the bite could become a hold.
-
-It went down. It did not stay down long enough to satisfy her. The extra joint in its shoulder let it recover from a blow that should have ended a normal animal's part in the fight, and it was back on three of four feet, the fourth trailing, before she had reset her stance.
+She brought the Vigil Shield up on the reach she judged correct for a quadruped closing at a run. The thing folded sideways at the hip in a way no four-legged animal she had ever fought could fold, coming in low and wide of the shield's arc. She felt it before she saw it — teeth in the meat above her knee, a testing bite, the kind a dog gives before it commits — and she reversed the shield's edge down and took the thing across the skull with the boss of it before the bite could become a hold. It did not stay down as long as a normal animal would have; the extra joint in its shoulder had it back on three of four feet before she'd reset her stance.
 
 She went in on the reset — not the reach a normal beast's anatomy would have punished, since this thing's reach was already a lie, so she closed inside it instead, the way drill says to close on a threat you cannot predict rather than out-guess — and put the Dissolution Blade in low, under the throat where the second mouth pulsed, because Rowe's silent readout had already named that the thing's weak point, its stand-in for a proper neck.
 
 It made a sound she had no name for and did not want one. Then it made no more sounds.
 
-*
-
+[Beat 171]
 Rowe's rifle spoke four times in the span it took her to finish the first, each report flat and short across the open ground, and each time she looked up between her own engagements she found another of them down, or dying, or moving the broken half-circle an animal moves when its own legs stop agreeing on what comes next.
 
 He was not shooting for body mass. She read that on the second shot, watching him track a moving target through the tall grass, the black optic a half-second ahead of where the creature actually stood rather than where it was — the lead she had not yet trained her own hands to find. He was shooting the cervical junction his readout had already given him, and each round found it, because a man who had spent a war reading a trench line by the sound wind made in wire had spent seven months since reading a body that was not human by the same drill: not where it is. Where it will be.
@@ -3012,8 +2876,7 @@ She corrected on the second shot. The round took the thing through the shoulder 
 
 "Better," he said again, because he did not yet have the words to mark the difference between adequate and correct, and had decided better was the true thing he could say with the words he had.
 
-*
-
+[Beat 172]
 The fourth scout did not come at either of them. It came at Orim, low and fast along the grass line while his attention held the road's far side, and Lyra saw it a half-second before it would have mattered and had no time to reach him.
 
 Orim did.
@@ -3026,8 +2889,7 @@ He did not draw the Rod. His hand found the walking staff instead — the plain 
 
 She did not ask what he meant by the second half of that. She thought she already knew, and thinking she knew was near enough to certainty that asking would only have made him say the true thing aloud, which neither of them wanted yet.
 
-*
-
+[Beat 173]
 The fifth was the one that cost her.
 
 It came from the road itself, not the grass — she understood after that it had lain flat in the drainage rut the whole engagement, waiting on the moment everyone's attention went to the visible threats — and it took her across the outside of her sword arm before she had marked it as a separate animal at all. Four parallel lines opened from elbow to wrist, deep enough that she felt the cold arrive before the pain did, the nerve endings reporting the wound before they had settled how much it should hurt.
@@ -3040,15 +2902,14 @@ She looked at her arm. Four lines, welling steadily, not the arterial red that w
 
 He looked at the arm anyway — the specific look he gave anything he was filing for later reference, not panic, a soldier's triage: is this the kind of wound that ends the engagement, or the kind that gets carried through the rest of it — and then he looked past her, to the grass, because the engagement had not, in fact, ended.
 
-*
-
+[Beat 174]
 What came last was the largest of them, and it did not come at a run.
 
 It came at the pace of something that had never needed to run, because nothing in sixty years of this corridor had lived long enough to teach it running was worth learning. It was low and wide across the shoulders in a way none of the scouts had been, its hindquarters carrying the greater share of its bulk, its forelegs reduced to grasping limbs more than proper legs, dragging slightly as it advanced — a body that had decided somewhere in its ancestry that the back half of itself was the half worth investing in.
 
 The reading arrived before any of them had said a word about it.
 
-> MASS — approx. 310kg. GAIT — hindlimb-dominant; forelimbs vestigial, grasping function only, drag contact. WEAK POINT — spinal cluster, base of dorsal plating, exposed on forward lunge. CATALOGUE — Sphere 22. No clean match. Composite signature: minimum two source patterns, poorly integrated at the shoulder girdle.
+MASS — approx. 310kg. GAIT — hindlimb-dominant; forelimbs vestigial, grasping function only, drag contact. WEAK POINT — spinal cluster, base of dorsal plating, exposed on forward lunge. CATALOGUE — Sphere 22. No clean match. Composite signature: minimum two source patterns, poorly integrated at the shoulder girdle.
 
 "Two," Orim said, reading the same words off whatever Rowe's face did when a reading landed, because six weeks had taught him to read that too. "Not one animal from one Sphere. Two, stitched together, and however it was done, it was not done kindly."
 
@@ -3060,8 +2921,7 @@ The dorsal plating caught the low autumn light in irregular plates, none matched
 
 "Then we make it lunge." Lyra planted the shield, set her weight, did not look away from its mismatched eyes. "At me."
 
-*
-
+[Beat 175]
 It came for her because she gave it the only target worth the effort of coming for, and it came the way its readout had promised — low, forelimbs useless for anything but grasping at the shield's face once the lunge committed, the full three hundred and ten kilograms of it thrown forward on legs that had never needed patience because nothing had ever made them wait.
 
 The impact took the shield edge-on and drove her back a full stride through churned dirt before her heels found purchase, and for one full second the wrongness of the thing sat very close to her face — the mismatched eyes, the seams in the plating, a smell of wet iron and rot some distant filing part of her mind marked as Sphere 22 arriving in Entos autumn air, the way the Forge Hearth's volcanic breath had arrived, unaware that arriving here cost it anything.
@@ -3076,8 +2936,7 @@ He did not stop to clear it. He reversed his grip on the stock in the same motio
 
 He had never used it before. She knew that the way she knew most things about him now, without being told — a fact filed the first week and never revisited, the bayonet fixed and clean and untested through Verlaine, through the river, through Schmalburg where the rifle alone had been enough. It was tested now. The animal's weight came down onto the blade and did not lift off it again, and Rowe held the angle through the whole collapse, both hands locked on the stock, his face giving nothing away — the readout that would have told him what this cost him was a readout the intake routine had never been built to print. It scanned gear. It scanned creatures. It had nothing to say about a man's own hands.
 
-*
-
+[Beat 176]
 The corridor went quiet the way a barracks goes quiet after the order to stand down — not silence, wind still moving the grass, the small percussive tick of something in Rowe's rifle mechanism cooling, but the particular quiet of a ground where the largest event has already happened and everything after it is aftermath.
 
 One scout remained. Small — half-grown by the proportions, the extra joints in its forelegs not yet load-bearing, its second mouth barely a seam. It stood at the treeline's edge, thirty meters off, and did not advance, and did not flee, watching them with its uneven eyes the way something watches a thing it does not yet understand it should fear.
@@ -3094,8 +2953,7 @@ Orim looked at her and did not argue it, because the reason stood in the grass o
 
 It turned, eventually, and went back into the trees, and did not look back. Lyra lowered the rifle and did not examine, closely, why the not-firing had mattered to her as much as it had.
 
-*
-
+[Beat 177]
 They bound her arm at the road's edge, on the corridor's far side, in the last of the farmland where the fence resumed its patched, generations-deep watch against exactly the country they had just crossed. Orim's fieldwork was economical — pressure, cleaning solution, a wrap set tight enough to hold and loose enough to leave the fingers their blood. He did not comment on the wound past the wrapping of it. He looked once at the Rod's case in his satchel and did not open it. The case would stay closed, she understood, until there was a reason better than four scouts and one stitched, hindquarters-heavy thing with a name in no catalogue she would ever be shown.
 
 Rowe cleaned the bayonet with the same unhurried care Orim had shown the Rod's mineral tip on the volcanic shelf two days before — the care of a man who knew exactly what carrying a fouled blade would cost him later. He said nothing while he did it. When he was done he fixed the bayonet back to the rifle, cleared the jam, and slung the weapon the way he always slung it, as though nothing in the last quarter hour had changed anything permanent about how the day was going to proceed.
@@ -3106,8 +2964,7 @@ Rowe cleaned the bayonet with the same unhurried care Orim had shown the Rod's m
 
 He nodded once and looked at the fence, at the notched post they had passed under an hour before with its running count of a season's damage, and said nothing further, because there was nothing further his fifty words could hold, and because she had learned by now that this was its own kind of answer.
 
-*
-
+[Beat 178]
 The road ran on west from the corridor's far gate, flat and pale and ordinary, farmland resuming on both sides as though the four kilometers behind them belonged to a different country stitched badly onto this one — closer to the truth of it, she thought, than she had any comfortable way to say aloud. By the time the light began to slant toward evening, the smell of salt had found its way into the air ahead of any visible sign of the sea.
 
 Two days, Orim had said, on the volcanic shelf. One of them was already spent.
@@ -3116,9 +2973,7 @@ She flexed her bandaged arm once, testing the wrap, and found it held.
 
 They kept walking.
 
-[Beat 18]
-THE THING FROM ANOTHER SKY
-
+[Beat 179]
 The gorge told them before Orim did.
 
 It had taken three hours to come down off the Forge Hearth ridge, through the last of the volcanic scrub, into country that had given up being anything in particular a long time before any of them were born - not farmland, not wilderness with a name, only the unclaimed fall of scrub and dry wash between the highlands and the coast. No House had ever bothered to survey it. This was not, in Orim's long experience of unclaimed ground, because no one had wanted it. It was because everyone who mattered had already read it, once, a hundred years or more ago, and had moved on without writing down what they'd found. Land kept that kind of silence the way old men kept it - not from having nothing to say, but from having said it once already to someone who was no longer there to hear it repeated.
@@ -3129,17 +2984,18 @@ The wash narrowed into a gorge at the tree line, and the tree line had no birds 
 
 He read the absence before he could have said what he was reading. Two hours of descent, and the scrub had carried the ordinary noise of scrub - insects, a carrion bird working something dead in the middle distance, wind doing what wind did to dry brush. Then the gorge mouth, and a silence arriving whole, the way pressure changes before sound does, so that a man attuned to thresholds felt it in his ears before he had located anything to call it fear.
 
+[Beat 180]
 "Orim."
 
 He had already stopped. He stood at the gorge's edge with his boots in the last of the scrub and his eyes on the particular ten meters of ground ahead of him, reading it the unhurried way he read every threshold before he permitted his own feet to cross it - the way, he had told Lyra once, a man reads a letter he suspects will change what he does with the rest of his day, and therefore does not open standing up.
 
 "Bones," he said. "Old ones and new ones. No pattern I'd call a den, exactly - more a larder that outgrew its own management." He crouched, touched something in the dust neither of the others could see from where they stood, and did not pick it up. "Deer-analogue, most of it. Some of what came through the corridor behind us, if the marrow's any indication - the pack we crossed two hours ago wasn't only fleeing north. Something back here was thinning it from the south."
 
-"How old, the recent kills?"
+"How old, the recent kills?" she asks.
 
 "Recent enough that the flies haven't finished arguing about which parts to file a claim on." He straightened, slower than the answer should have cost a man his age, and looked up the gorge - a hundred meters of dry channel walled by rock the color of a bruise, narrowing before it opened again into whatever waited past the bend. "This is the fast way to the coast road. The long way costs the rest of the day and puts us on the ridge after dark, which I would prefer not to do twice in one week." He did not say why. The last ridge after dark had been the six coats and the fire-scry, and none of them had discussed it since, and none of them needed to.
 
-"And the short way."
+"And the short way?" she asks.
 
 "The short way has whatever emptied that larder still inside it, most likely. I can't scry past the bend - my range doesn't reach, and something in that direction reads to me the way a held breath reads. Which is not information. It is the absence of information in a specific shape." He had learned, across fifty years of reading thresholds, that this particular absence was itself worth more than most of what passed for information, and had also learned that saying so changed nothing about which road they were about to walk.
 
@@ -3151,8 +3007,7 @@ Rowe had come up on the other side without a sound, which by now was simply how 
 
 Two words were the whole of what Rowe had ever needed to give, and the whole of what Lyra had ever given back, and Orim had watched enough men decide enough things to have concluded, long before either of these two were born, that the shortest exchanges were usually the honest ones. They went in anyway. There had never really been a question, not in any sense that made asking it worth the breath. Three days had already turned suspicious once this week, and Sal Vento would not wait for a party that took the long way around every hard thing between here and the coast.
 
-*
-
+[Beat 181]
 The gorge widened past the bend into a bowl of open ground the size of a tourney field, walled on three sides by the same bruise-colored rock, floored in dust and old bone and the flattened wreckage of scrub that something considerably heavier than deer had been walking over for longer than a season. At the bowl's far side, where the rock face broke into a shadowed overhang deep enough to be its own weather, something was already moving before any of them had finished understanding the scale of the space they had walked into.
 
 Orim gave it three seconds of looking before deciding what it was not. That was the discipline: never name a thing before you had watched it long enough to be wrong about it once, in your own head, quietly, where the wrongness cost nothing.
@@ -3169,6 +3024,7 @@ He had gone very still. He noted the stillness in himself the way he noted it in
 
 "Catalogue reads nothing," he said, quietly, to himself as much as to her. "Fifty years, and I have nothing in fifty years for this."
 
+[Beat 182]
 Whatever ran behind Rowe's oval receptor did not wait to be asked. It never did, and Orim had long since stopped needing to see the words themselves; he read the same page in the half-second tilt of that black housing, arriving, as he almost always did, at the same conclusions in an older and slower language. This, roughly, was what the instrument gave the younger man, and what Orim had already begun assembling for himself out of bone-age and breath-frequency and the particular wrongness of a fifth ground-contact point:
 
 Mass beyond any calibrated field reference - eleven to fourteen tons, forward-loaded. A gait that made no tactical sense, sustained ground pressure inconsistent with the speed it was producing. A hide of laminate plate, non-metallic, calcite in its nature, with a single failure point at the cervico-dorsal junction that opened on the forced exhale and nowhere else. And, cross-referenced against an archive Orim himself had never once needed to consult, because he had written the marginal hand into a different ledger sixty years before Rowe's receptor had ever existed to read it back to him: a thing out of Sphere-119, unrecorded under any common name, with one prior notation from the Year 873 that said only that it was not to be summoned, and not to be catalogued twice.
@@ -3185,8 +3041,7 @@ He nodded once.
 
 It charged.
 
-*
-
+[Beat 183]
 The distance from the overhang to where they stood had looked, a moment before, like forty meters of open ground and margin. It closed in under three seconds - mass translating into speed at a rate Orim watched the girl's body answer before her mind could have finished the arithmetic. She had already moved: shield up, feet set, taking the angle rather than the center of the charge, the way a man takes a battering ram he cannot stop by standing directly in front of it.
 
 The impact traveled through the Vigil Shield and into her arm and shoulder and down through her braced leg into the ground. Orim watched the resin-hardened face of it flex under a load it had never been built to absorb in a single blow, watched her ride the deflection sideways rather than fight it, letting the shield's angle bleed the force into a glancing slide instead of a dead stop that would have taken her arm out of its socket. It was the lesson six weeks of his own flat insistence had put into her hands, whether she credited him with it or not, and he watched her use it now the way a man watches a tool he built perform exactly as designed, which was its own kind of quiet.
@@ -3203,8 +3058,7 @@ The beast reared onto its hind legs, higher than its mass should have allowed - 
 
 Rowe fired.
 
-*
-
+[Beat 184]
 The round went where he'd aimed it. The beast's whole body convulsed sideways, a shudder running the length of the plated spine like a wave through water, and the sound it made afterward was not the low breathing frequency any longer - something higher, worse, a note that cracked at the edges the way a voice cracks when asked to do something it was never built to do.
 
 It was not enough. Orim understood that in the same breath he understood the shot had landed clean. A single round through a seam the width of two fingers was a wound, not a kill, on something that size, and what the creature did instead of dying was turn everything it had left toward the thing that had hurt it.
@@ -3219,8 +3073,7 @@ She tested whether she could stand while the beast reared again for what would b
 
 "Stand clear," he said. Not loud. The tone of a man who had said it before and understood exactly what it cost the people who needed to hear it.
 
-*
-
+[Beat 185]
 He crossed the open ground toward the wounded thing rather than away from it, which was not what forty years of doctrine would have told a sensible man to do, and he was aware, in the distant way he was aware of most things about himself while he was doing them, that he no longer entirely counted as a sensible man where the Rod was concerned, and had not for some years.
 
 The mineral tip was still faintly warm from the Forge Hearth. He had wrapped it in his own coat two hours before and had not asked himself when it would cool, because there had not been time, and now there was less. A thin skin of soot had settled into the cord wrapping at the grip since the ridge - the residue of a housing asked to work hard, and recently - and he read that soot the way he read everything else that morning: as a fact about how thin his margin had grown, offered to no one, weighed by no one but himself.
@@ -3237,8 +3090,7 @@ He held there. Motionless, the Rod's tip resting against the wound's raw edge, l
 
 He pulled the trigger.
 
-*
-
+[Beat 186]
 He had watched the Fire Scry two hours before - the exhalation of a Sphere-23 volcano crossing a hundred meters of open air to burn six men off a road - and had understood, long before that, watching a hundred openings before it, that the Rod did not create anything. It only parted the skin and stood back from whatever pressure on the far side did with the opening.
 
 What came through this time had nowhere to go but directly and immediately into the beast's own body, because the aperture was the wound and the wound was the door, and he had aimed a piece of the world's own skin - small, wet, alive in his two hands - straight into eleven tons of living tissue at a range of perhaps four inches.
@@ -3249,8 +3101,7 @@ The sound it made afterward had no name that Orim had ever come across in fifty 
 
 It went down the way a felled tower goes down - not falling so much as ceasing to argue with the ground it had been standing on. The impact threw dust and old bone fragments into the air in a ring around the point of contact, and somewhere under the plates something further gave way with a sound like wet canvas, and cold lake water the color of iron ran out of the wound and pooled black in the dust, carrying with it things that had no business existing in a gorge three hours' walk from the sea. None of the three of them looked at it very long.
 
-*
-
+[Beat 187]
 Orim sat down where he was standing. Not carefully. The way a man sits when his legs have simply finished the conversation without consulting him, and he registered this about himself with the same flat, unhurried attention he gave to everything else that morning - a fact, arriving late, that he had spent more than he had been keeping track of spending.
 
 The Rod's tip had gone dark the way a coal goes dark once the last heat has bled out of it - no glow left at all, not even the low thermal answer it had carried after the Fire Scry - and this time he did not wrap it in his coat. He set it down in the dust beside him and looked at his own two hands as though they belonged to someone he had recently been introduced to.
@@ -3273,8 +3124,7 @@ Orim did not move from where he sat until the worst of the bleeding had slowed u
 
 "Yes," he said. "That is also true." He picked the Rod back up out of the dust, turned it once in his hands, and did not look at it again after that. "Both things are true. I find that this does not make either of them lighter."
 
-*
-
+[Beat 188]
 They did not linger in the bowl. There was nothing to loot from a carcass that large that any of them wanted to carry, and the black pool spreading from the wound had already begun drawing the kind of insects that fed on things that should not exist in this world's ecology, working it with the same patient indifference they brought to anything else dead. Rowe checked his remaining rounds - two - and said nothing about the count, which by now Orim understood meant the count troubled him more than a comment would have helped.
 
 Lyra walked the rest of the gorge with one hand pressed against her side under the half-plate, upright because he needed her upright and because sitting down to properly feel the wound was a luxury the schedule did not currently extend to her. Somewhere in the last hundred meters before the gorge opened back onto the coastal scrub, Orim understood - without being able to say when exactly he had arrived at it - that the three of them had just fought as a single mechanism rather than as three people standing near each other: the shield taking what could be taken, the rifle finding what could be found, the last resort spent only when the first two had done everything they could do and the arithmetic still came up short. Nobody had called the positions aloud. Nobody had needed to. He filed that fact too, the way he filed everything that seemed likely to matter again before this was over, and did not say it aloud either, on the grounds that some things kept better unspoken than spoken and forgotten.
@@ -3287,42 +3137,41 @@ The scrub gave way to the smell of salt an hour later, faint at first, then unmi
 
 He did not correct her, though weather, like most things he had spent a long life reading, would do what it intended to do regardless of what any of them hoped from it, and he had long since stopped considering that worth saying out loud either.
 
-[Beat 19]
-SAL VENTO — THE PORT
-
+[Beat 189]
 Eleven days on the highland road, and her knees knew every one of them. Orim's joints answered the steeper grades with a sound she'd decided, as a professional courtesy, not to mention. Rowe walked without complaint because Rowe walked everything without complaint. By day eight Lyra had stopped finding that reassuring or irritating. It simply was, the way a wall simply stands.
 
 The deadline was not a comfort to think about, so she measured instead. Senne's column had been three days behind at Verlaine. Eleven days of highland passes since, and she hadn't counted on the gap holding. She'd been right not to count on it.
 
+[Beat 190]
 The path down to Sal Vento smelled of the sea two hundred paces before anyone saw it — salt, limestone, and under both the cold of rock decades of spray never fully dried. Cut steps, not worn track. Risers sized for load, treads wide enough for two abreast. Somebody had built this to last. She approved of it the way she approved of anything built honestly.
 
 "Ship in the lower harbor," Rowe said. Flat. Information, the way the shell delivered everything now — no distinction in it between the urgent and the idle.
 
-"Liturgy registration?"
+"Liturgy registration?" asks Lyra.
 
 "Wrong marks. Somebody painted over the hull registry and did decent work, but the paint doesn't match under the ultraviolet band." A beat. "Reads Eirene-7."
 
 The Eirene-7. Lyra had heard that name once, in a procurement review the year before the crossing — a Liturgy reconnaissance vessel off the Northern Route roster, flagged *administrative loss*, never chased down. Seventeen years she'd trusted the Liturgy's paperwork meant something. She noted the trust had gone somewhere else, without much feeling left to spend on it.
 
+[Beat 191]
 They took the stone table outside the harbor tavern to wait on Orim, and that was where the trouble started — not with them, at first. A dockhand caught an elbow he decided he hadn't earned, his drink went down a stranger's front, and the stranger came up already swinging. In a port this size a spilled drink was never about the drink. It was about who'd bumped whom on purpose, and who was watching closely enough to have arranged it.
 
 Lyra put her back to the wall on reflex — seventeen years of drill did that whether she asked it to or not — and watched two men become four, and an argument turn into a proper scrap: short, ugly, nobody's technique, elbows and table legs, one man's face meeting stone hard enough that he sat down without deciding to. She took a wrist reaching for Rowe's collar, turned it the way the manual said, put its owner down without breaking anything. Rowe dropped a second man into a barrel, unhurried about it. Four down or fled inside the time it took to describe, nobody dead — the correct outcome for a fight that hadn't been about anything to begin with.
 
+[Beat 192]
 That was when Tavar came through the wreckage of it, unhurried, and sat down across from her like the last two minutes hadn't happened.
 
 She'd confirmed his documents two hours past, at this table: Lacerta operative, no rank she recognized as command. Not a captain. No ship of his own. He'd given her four things in order of most to least verifiable — name, House, the ship's name, and his codes for the mooring watch's rotation — the way a man gives information to someone he's decided is worth the risk of being wrong about.
 
 "That wasn't staged for you," he said, meaning the fight, "but I watched how you handled it."
 
-"You already knew the ship was here."
+"You already knew the ship was here," says Lyra.
 
 "I knew several things were here. I came to find out which ones you needed." He set a folded chart on the table — the sea cave south of the harbor mouth, the Eirene-7 moored inside it, out of every sightline but his own, and beside it the watch's rotation, hour by hour, in his own hand. "This is what it costs," he said, and named a price.
 
 She paid it without arguing the number. He told her the rest on the walk down.
 
-[Beat 20]
-THE ACQUISITION — EIRENE-7
-
+[Beat 193]
 Soren had known cold with a job to do before. Drift cold, the kind that lived a hundred feet under Unaka ridge and didn't care whose shift it was. This one was worse. Sea cold, at the tail end of night — the kind that had quit announcing itself hours ago and just kept coming.
 
 He waited behind the limestone shelf with Orim, out of the wind but not out of the cold, because cold didn't need wind to find a man, same as gas didn't need a draft to find the low place in a shaft. Above them, on the overhang, Lyra had been at the scope the better part of an hour. He'd timed it without meaning to. Fifty-eight minutes. He'd learned to count on watch a long time before he learned anything else useful, and some habits didn't leave when the man they'd belonged to did.
@@ -3345,6 +3194,7 @@ Soren ran a thumb over the bayonet catch at his belt, once, twice. Test the door
 
 He looked at the cave mouth the way he looked at any ground before he crossed it — the way a man looked at open ground before a push, reading it for the places it would kill him if he'd read it wrong. "Aye," he said. Then, because the moment wanted more than one word and he chose to give her more: "I go first. You after."
 
+[Beat 194]
 They went down. The south stairs were cut into the limestone, worn round at the edges by salt and boots. He took the third step light, the way Lyra took it — she'd shown him without meaning to, and he'd filed it, the way he filed everything: once, correct, permanent, same as a man learns which timber in a low seam doesn't want his full weight on it.
 
 The dock was planking over water, the cave's version of the sea moving underneath it, not surf, not current, just water in a space that didn't go anywhere and knew it. The cold down here wasn't the cold above. Above was sea cold, which had range, which came from somewhere and went on to somewhere else. Down here was drift cold, the cold that had been sitting in the same dark since before anybody cut a shaft into it, uninterested in sharing any of that dark with something as temporary as a man passing through.
@@ -3363,6 +3213,7 @@ The second man had finished with the mooring lines and stood at the hatch coamin
 
 "Clear," he told her, when she reached him. He looked at his hands, turned them once, and didn't say anything else about that.
 
+[Beat 195]
 They moved. The gangway held their weight. He found the cargo hatch release before she did — recessed, manual, a Liturgy design he'd never once laid eyes on in his life, but a handle was a handle regardless of the paint on the hull around it. Machinery kept a family resemblance to other machinery, whatever Sphere had built it, same as a tipple frame here would still look like a tipple frame to a man who'd worked one on the other side of everything. He had the hatch open before she'd finished crossing the gangway.
 
 The hold smelled of fuel oil and dry warehouse dust, a smell that didn't change whether a man was standing in it at Ocipheus or the far end of the Wall. Orim came down last, carrying the small shell over one shoulder the way a man carries something that doesn't weigh what its size says it should. Black, jointed, the oval eye dark and flat, arms loose with the specific looseness of a thing built to move on its own say-so and currently not saying anything.
@@ -3377,6 +3228,7 @@ Soren went forward alone, to the bulkhead between the hold and the control car. 
 
 There was something on the other side.
 
+[Beat 196]
 He'd known there would be. Orim had felt it from the shelf and hadn't wanted to push through it, and Soren didn't blame him — some men could read the shape of a thing and knew better than to walk into it. Soren didn't have that choice. He'd never had that choice, not since Sphere 31, not since whatever had been done to him made him a mind that could be poured out of one vessel and into another like water changing which cup held it.
 
 She's not empty, he thought, and the thought carried no surprise at all, only the flat certainty of a man checking a gauge and finding the reading he'd already known he'd find. A ship like this — Liturgy iron, built to bring herself home even with her crew dead at the wheel — wasn't given standby current and left to sit dumb in the dark. She was given a mind to keep her warm. Something had been living in the Eirene-7 the whole while Atrament called her captured inventory. Sleeping, maybe. Sleeping wasn't the same as gone.
@@ -3387,6 +3239,7 @@ He had been the resident mind, once. Now he was the hand reaching in to take one
 
 There wasn't a version of this that let both of them keep the room.
 
+[Beat 197]
 He went in anyway — not the way a man walks through a door, there wasn't a door for what he was doing, just intention laid against intention, the way a man lays his whole back into a jammed valve wheel that hasn't turned in ten years and isn't going to turn easy. He found the other mind in the dark behind the bulkhead the way a man finds a gas pocket in a low seam: not by seeing it, by the wrongness of the air right before it kills him if he isn't careful. It didn't fight him with words. It didn't have words, maybe never had, or maybe had lost them the way a lamp loses its flame in bad air — going out not from an attack but from something taking up all the room where the burning used to happen.
 
 He put it out.
@@ -3397,6 +3250,7 @@ He counted it. One, added quiet to a tally he kept nowhere on paper and never wo
 
 He didn't tell her. He wasn't going to.
 
+[Beat 198]
 Then the ship was his the way the small shell had never once been big enough to let him forget it was a shell.
 
 The oval eye behind him in the hold went dark — he felt it go, the way a man feels his own hand fall asleep before he looks down to check — and for four seconds there was nothing. Then the port outboard engine caught, one decisive turn instead of the cough of an ordinary cold start, the whole huge fact of the thing remembering all at once what it was built for. It ran through him the way voltage ran through a rail he'd have known better than to touch back home. The running lights came up down the gangway rail one after another, west to east, and each one was a nerve he hadn't had an hour ago, waking in an order he hadn't set and couldn't have stopped.
@@ -3409,6 +3263,7 @@ The ballast found its own level without his announcing it to himself, same as br
 
 Through the whole backing-out he held the small shell motionless against the crates, dark, empty, a woman standing guard between it and the door, and he was aware of that guarding from a distance the way a man's aware of a stove he left on in another room — present in his mind, absent from his hands.
 
+[Beat 199]
 Near the middle of the dock the envelope's shoulder found the cave ceiling and dragged. A long sound, metal on stone, dry and sustained — the kind of sound that put everybody in earshot dead still, working out whether they were hearing a scrape or a failure. He felt it up through the whole envelope the way a man feels a truck axle grind and knows, before he's decided he knows, whether it's going to hold. It held. It stopped. He kept moving.
 
 Then there was no ceiling. There was the cave mouth, and past it the flat gray promise of open water, and past that nothing but the shape of a sky that hadn't decided yet whether it meant to be visible this morning.
@@ -3417,6 +3272,7 @@ He backed her clear of the cliff, felt the swell take the hull's weight the way 
 
 He climbed her east along the cliff line, banked once, leveled her into open sky, and somewhere in the middle of that climb he understood, the way a man understands a fact about his own body only once it's asked something of him it's never asked before, that flying a thing this size wasn't like wearing a coat that fit. It was like being handed a whole crew's worth of decisions to make alone, and finding, to his own private surprise, that he could.
 
+[Beat 200]
 For a while — call it twenty minutes, he wasn't counting that one — he let her fly herself the way a well-trimmed vessel would, needles where they belonged, heading held, and came back down into the small shell in the hold, because there was a woman on the other side of that bulkhead who'd earned the right to see him do it.
 
 The oval eye came alight the way the engines had caught — not building toward brightness, just arriving, whole. The chassis's head came up off its chest by degrees, joints finding their places with the specific hesitance of a man standing after sitting too long in cold weather.
@@ -3433,6 +3289,7 @@ There wasn't a word in Entos, or in whatever was left of his old tongue, for wha
 
 Then he went forward again, back through the bulkhead gap, and the small shell's hands went still against the frame the way they had before, and the oval eye went dark, and the ship — steady, level, already committed to her heading — kept flying, because she had never once actually stopped being him.
 
+[Beat 201]
 He surfaced once more before the channel, without needing to check his hands first this time.
 
 "Two," he said.
@@ -3453,6 +3310,7 @@ He heard the frame close around it when she said it — the kind of language bui
 
 Then the eye went dark again, and the ship — which had never once stopped holding her own heading — kept holding it, because she hadn't needed him visibly present to be flying, and hadn't needed him present, either, for the other math to already be settled.
 
+[Beat 202]
 Orim, from the crate he'd claimed as the one in the hold likely to hold his weight, said, without opening his eyes: "That is a very large room to be lost in."
 
 "He isn't lost," Lyra said, ahead of him, before he'd even decided whether he needed to answer for himself.
@@ -3465,13 +3323,12 @@ Later, when Orim was asked what Eirene meant in Old Entos and gave back peace �
 
 That was the one he counted and didn't tell.
 
+[Beat 203]
 The horizon went from black to the first gray suggestion of morning, the sky doing what it did every day without needing anybody's attention to accomplish it. The cave was thirty kilometers behind them. The channel was hours ahead, and somewhere in those hours he was going to have to tell Lyra something else he hadn't told her yet — not this, not tonight — and there was no getting ready for it, just hours of flying left to spend finding out whether getting ready was even possible.
 
 The ship flew east, and Soren Rowe flew with her, in two places, one of them empty and propped against a crate, one of them everywhere at once, and only one of them keeping count.
 
-[Beat 21]
-THE CHANNEL - ROWE TESTIFIES
-
+[Beat 204]
 The channel at altitude gave off no smell worth logging, which was the first fact about it that didn't square with what nine years underground and fourteen months in France had taught him to expect of open water. Water announces itself. Salt, or river mud, or the flat mineral nothing of a lake at night — a man learns to read a place by what's on the air before he trusts what his eyes tell him about it. The Eirene-7's hull sealed all of that out. What was left, inside the envelope, was the ship's own history instead of the sea's: machine oil, old rope, the flat institutional smell of Liturgy supply crates stacked and stenciled for a use nobody aboard remembered anymore. Iron handholds bolted along the bulkhead at intervals, for a crew that had once expected the air to turn rough under them and had, evidently, been right about that.
 
 He had taken her out past the Sal Vento roofline with his own attention doing the flying and the shell sitting empty against a crate, the way a man leaves his coat on a chairback while he does the actual work in his shirtsleeves. He'd learned something out over open water he hadn't fully reckoned with before that night: a man — even a man wearing a ship — cannot be two places. Coming back into the shell was worse than going out of it. Half a beat behind himself every time, an echo answering a shout the shout had already stopped meaning.
@@ -3480,6 +3337,7 @@ He had taken her out past the Sal Vento roofline with his own attention doing th
 
 He'd told Lyra once the ship would hold her heading on her own trim after he was out of her, and that it would hold it until something changed. She'd chosen to believe that instead of watching the wheel all night herself, and the wheel had not moved in three hours, and it no longer put the fear in her that it once had.
 
+[Beat 205]
 She had the notebook open on her knee, and had had it open, blank, for two hours. He knew what she was trying to write without being told outright — Ardea's service record, the instrument that let the Ocipheus garrison notify a family properly — and she'd been chasing a first sentence around that page since before they cleared the roofline. She had the facts. He'd watched her have the facts for two hours: intake year, posting history, tincture certifications, the action in the field that had ended her. He didn't know a service record's proper shape any more than she knew a drift's, but he knew, the way you know a man stuck under a beam that won't come loose, what stuck looked like on a person. It looked like her.
 
 She closed the notebook. She didn't put it away.
@@ -3496,19 +3354,23 @@ She put the notebook down behind her, against the bulkhead, and didn't open it a
 
 He said, in Entos: "I want to tell you something."
 
-The grammar came out correct, the way it always did — the shell gave him that for free, complete sentences from the first hour in this world whether he wanted them or not. What wasn't free was the willingness. That part he'd built himself, the long way, saying it into the dark until it wore the groove it came out in now: flat, tin-flat, the chassis's same exact affect on every word regardless of what the word cost him. He'd been building to this since Schmalburg. He knew she'd noticed — the questions he'd started asking her afterward that weren't about danger, or food, or direction, but about sequence. About *then*. About things already happened that no better language could change.
+The grammar came out correct, the way it always did — the shell gave him that for free, complete sentences from the first hour in this world whether he wanted them or not. What wasn't free was the willingness. That part he'd built himself, the long way, saying it into the dark until it wore the groove it came out in now: flat, tin-flat, the chassis's same exact affect on every word regardless of what the word cost him. He'd been building to this since Schmalburg. He knew she'd noticed — the questions he'd started asking her afterward that weren't about danger, or food, or direction, but about sequence. About then. About things already happened that no better language could change.
 
-She said: "I'm listening."
+She said:
+"I'm listening."
 
----
-
+[Beat 206]
 He started with the mine.
 
 Unaka County had more coal camps than most maps bothered naming, and his wasn't the biggest of them — he'd worked bigger ones, further up the line, before the seam at the home drift took him on for good. He gave her the camp's name in his own language first, watching to see if she needed the Entos for it.
 
 "It doesn't need one," she said.
 
-He nodded. Six years at that drift, longer all told once you counted the season on a different seam two counties over, the surface work before that. He knew the cutting machines, the pumps, the fan gear the company had put in his second year, the way any man who spends years underground knows machinery. "By sound," he said. "Different sound, different problem. You learn it, or the mountain teaches you the hard way." There was weight in that last part, the specific weight of a fact that's also its own grief.
+He nodded. Six years at that drift, longer all told once you counted the season on a different seam two counties over, the surface work before that. He knew the cutting machines, the pumps, the fan gear the company had put in his second year, the way any man who spends years underground knows machinery.
+
+"By sound," he said. "Different sound, different problem. You learn it, or the mountain teaches you the hard way."
+
+There was weight in that last part, the specific weight of a fact that's also its own grief.
 
 He stopped. He looked at his hands.
 
@@ -3528,13 +3390,15 @@ A Thursday in autumn. He knew the day because the day shift overlapped the fireb
 
 He stopped.
 
-"Then," he said again, and let the one word carry the weight of the three hundred that would follow it — everything between *half past the hour, Thursday morning* and *the floor was not the floor.* He had all the words. What he didn't have, yet, was the nerve to spend them in order. His jaw worked once, the specific motion of a man arriving at the edge of what he was willing to say aloud and finding it a genuine edge, with a drop on the other side.
+"Then," he said again, and let the one word carry the weight of the three hundred that would follow it — everything between half past the hour, Thursday morning and the floor was not the floor. He had all the words. What he didn't have, yet, was the nerve to spend them in order. His jaw worked once, the specific motion of a man arriving at the edge of what he was willing to say aloud and finding it a genuine edge, with a drop on the other side.
 
 "Take it in pieces," she said.
 
 He looked at her. He nodded.
 
-The floor changed first. Not gone — wrong, a different quality under his boots, the kind of wrongness a man who works a coal face all day is built to notice before he understands it. He checked himself: was he unwell? Had something failed in the rock over his head? He wasn't unwell. The floor wasn't broken.
+The floor changed first. Not gone — wrong, a different quality under his boots, the kind of wrongness a man who works a coal face all day is built to notice before he understands it. He checked himself: was he unwell?
+Had something failed in the rock over his head?
+He wasn't unwell. The floor wasn't broken.
 
 Then the stone room.
 
@@ -3554,7 +3418,7 @@ He looked at his hands.
 
 "No one explained," he said.
 
-"I know the intake protocol," she said, after a while. Flat, the way she said hard things too — he'd noticed the family resemblance in how they each spent a bad sentence. "I read it my first year at the Station. I read it again three years in, when the documentation project needed hands. I wrote a line for the literature myself, once. I don't remember thinking it was cruelty when I wrote it." She paused. "*Oath administered prior to language acquisition minimizes resistive response in the conscript cohort.* That's the sentence. I meant it as an observation about efficiency."
+"I know the intake protocol," she said, after a while. Flat, the way she said hard things too — he'd noticed the family resemblance in how they each spent a bad sentence. "I read it my first year at the Station. I read it again three years in, when the documentation project needed hands. I wrote a line for the literature myself, once. I don't remember thinking it was cruelty when I wrote it." She paused. "Oath administered prior to language acquisition minimizes resistive response in the conscript cohort. That's the sentence. I meant it as an observation about efficiency."
 
 He said nothing to that for a while. Long enough that she looked up from her hands to check he'd heard her.
 
@@ -3566,7 +3430,8 @@ He looked at his hands.
 
 "There was a gesture. The one with the book made it toward me. I copied it." He showed her — a small incline of the head, a particular set of the right hand.
 
-She recognized it at once. "The acknowledgment position," she said. "From the Compact Oath. Formal assent to canonical authority."
+She recognized it at once.
+"The acknowledgment position," she said. "From the Compact Oath. Formal assent to canonical authority."
 
 "I copied it because that is what you do, in a room with robed people making official sounds and you don't have the language. You look willing. You think: I will be willing until I understand, and then I will decide."
 
@@ -3576,11 +3441,12 @@ He paused.
 
 Orim had not moved from the porthole. His fingertips stayed on the glass. He said nothing.
 
----
-
+[Beat 207]
 He gave her Verlaine in the same pieces.
 
-The barracks were stone-vaulted, high-windowed, old — a category he recognized without being able to place it, and had stopped trying to explain once the recognizable and the wholly foreign had gotten too tangled to separate. The rifles were on racks along the wall, and he had known rifles; he'd carried one in France. "I knew the action," he said, and mimed the bolt, the cycling motion. "Not exactly. Later. Further along — like a later model of a thing you already know."
+The barracks were stone-vaulted, high-windowed, old — a category he recognized without being able to place it, and had stopped trying to explain once the recognizable and the wholly foreign had gotten too tangled to separate. The rifles were on racks along the wall, and he had known rifles; he'd carried one in France.
+
+"I knew the action," he said, and mimed the bolt, the cycling motion. "Not exactly. Later. Further along — like a later model of a thing you already know."
 
 He looked at her.
 
@@ -3592,19 +3458,21 @@ He waited.
 
 "Yes," she said.
 
-He nodded, the way he always did when she confirmed a hard thing before he'd go on to the next one — because confirmation told him he'd understood correctly, and he needed that before he could carry the weight of what came after it.
+He nodded, and went on.
 
-The barracks held conscripts from at least a dozen points of origin, by his count, and most of them shared no language. The House ran intake on a set of demonstrated commands that required no shared vocabulary at all. *Stand. Walk. Carry. Wait.* Those were the first words said to him in Entos, and the shell rendered them the instant they landed — he understood before he'd decided whether he wanted to. The collar markers were administrative — a stamped disc, a sphere number, punched in during processing. He had seen his own: Sphere 31. He had seen Sphere 22. Sphere 14. A man from Sphere 8 worked the maintenance crews by then, competent in Entos, missing a fingertip to some machine that had closed too fast, and had looked at Rowe in his first week with an expression that said: *I know what this is doing to you, and it gets better in some ways and worse in others, and I can't tell you which way you're headed.*
+The barracks held conscripts from at least a dozen points of origin, by his count, and most of them shared no language. The House ran intake on a set of demonstrated commands that required no shared vocabulary at all. Stand. Walk. Carry. Wait. Those were the first words said to him in Entos, and the shell rendered them the instant they landed — he understood before he'd decided whether he wanted to. The collar markers were administrative — a stamped disc, a sphere number, punched in during processing. He had seen his own: Sphere 31. He had seen Sphere 22. Sphere 14. A man from Sphere 8 worked the maintenance crews by then, competent in Entos, missing a fingertip to some machine that had closed too fast, and had looked at Rowe in his first week with an expression that said:
+
+I know what this is doing to you, and it gets better in some ways and worse in others, and I can't tell you which way you're headed.
 
 Orim's fingertips pressed a fraction harder against the glass.
 
-"What is the highest number you know," Rowe said.
+"What is the highest number you know," Rowe asks.
 
 "The canonical records reference Sphere sixty-one," she said. "Some practitioners believe the count goes further."
 
 He said nothing for a moment.
 
-"I saw thirty-one on my form. I counted, in the yard and the barracks. Nine spheres, at least, that I saw or heard of. Probably others I didn't." He paused. "How many people are in those files."
+"I saw thirty-one on my form. I counted, in the yard and the barracks. Nine spheres, at least, that I saw or heard of. Probably others I didn't." He paused. "How many people are in those files?"
 
 "I don't know," she said. "I processed forty-three intake cohorts, over six months. Fourteen persons average, per cohort."
 
@@ -3626,8 +3494,7 @@ She waited.
 
 "Yes," she said. "On purpose."
 
----
-
+[Beat 208]
 He told her about the man from Sphere 22 next, because the numbers had opened a door he could walk the rest of the way through.
 
 Two months further into his own time in Verlaine than Rowe was, mid-forties, the particular stillness of a man who has done physical work for twenty years and learned to conserve his motion. A missing fingertip of his own, on the other hand — a different machine, evidently, but the same category of loss. They had tried, some evenings, to find overlap between their own languages — not Entos, which the shells gave each of them freely and separately, but the tongues they'd each been taken out of, which no shell had ever been built to carry between two stolen men. The way people try when there is nothing else to do with an evening. You pointed. You said your word. Mostly there was nothing.
@@ -3636,7 +3503,7 @@ Two months further into his own time in Verlaine than Rowe was, mid-forties, the
 
 He paused.
 
-"The word was *mother,*" he said.
+"The word was mother," he said.
 
 Orim's tincture bottle made a small sound against the porthole housing, barely audible under the envelope's argument with the wind.
 
@@ -3650,7 +3517,7 @@ He had recited it to Rowe, slowly, over several weeks, the way you teach a thing
 
 Orim's face, at the porthole, did something small and quickly put away — not recognition exactly, or not only that, but the look of a man who has heard a chord struck before in a different room and cannot place which room.
 
-"Who wrote it," Lyra said.
+"Who wrote it?" Lyra asks.
 
 "I don't know," Rowe said. "He didn't know either. It came to him from someone else, the way most things came to us." He looked at his hands. "I've carried it seven months without a name on it. I don't think it needs one to be true."
 
@@ -3662,8 +3529,7 @@ She was already waiting for the answer.
 
 "He said that was a theological question, and he didn't have the training to address it."
 
----
-
+[Beat 209]
 "The notation," Rowe said. "On the rifle."
 
 "Yes," she said.
@@ -3684,11 +3550,10 @@ She held very still.
 
 He looked at her, and didn't recognize what came back at him — the first time in four months her face hadn't been legible to him inside the two seconds he usually needed for it.
 
----
-
+[Beat 210]
 He sat with that a while before he told her there was one more thing, and that he'd put it last on purpose.
 
-"I've been telling this in order," he said. "Because I never had the nerve to tell it any other way, and because there's one part of it I've been sitting on since before I had a name for anything else in this world. I want to say it now, while I've got the rest of it said."
+"There's one part of it I've been sitting on since before I had a name for anything else in this world," he said. "I want to say it now, while I've got the rest of it said."
 
 She waited.
 
@@ -3706,7 +3571,7 @@ He said it.
 
 Level, unhurried, the same flat tin delivery the shell gave every sentence he'd spoken tonight, sacred and profane alike — the shell had never once, in seven months, made a distinction between the two.
 
-*"Requiem aeternam dona eis, Domine."*
+"Requiem aeternam dona eis, Domine."
 
 Nothing in the hold answered it. The envelope kept its argument with the wind. Orim's fingertips didn't move on the glass, though something in his shoulders did.
 
@@ -3718,19 +3583,18 @@ He looked up.
 
 She didn't say anything for a long moment. He let her have the moment. He'd learned, from her, that a testimony wasn't done being given just because the mouth had stopped moving.
 
-"The first word," he said, when she still hadn't spoken, "the very first sound made over me in that stone room, before the tally, before the numbers, before I had a shell or a name for a shell — was that same word. *Requiem.*" He said it again, plain, the schoolboy shape of it instead of the holy one. "It means rest. That's all it ever meant. They took my name and my hands and nine years underground and the whole of what happened to me in France, and the first word they did it with was the word for rest." He paused, and the pause carried what the sentence before it hadn't. "I have carried that seven months without telling a living soul, because there wasn't one soul in this whole gold-lit place who I thought would believe the man with no country that your God's own voice was a dead schoolboy tongue off a Tennessee hillside. I'm telling you because you asked me to say it, and because you've heard it said over your own dead more times than I've heard it said over anything. I thought you should know what you've been hearing."
+"The first word," he said, when she still hadn't spoken, "the very first sound made over me in that stone room, before the tally, before the numbers, before I had a shell or a name for a shell — was that same word. Requiem." He said it again, plain, the schoolboy shape of it instead of the holy one. "It means rest. That's all it ever meant. They took my name and my hands and nine years underground and the whole of what happened to me in France, and the first word they did it with was the word for rest." He paused, and the pause carried what the sentence before it hadn't. "I have carried that seven months without telling a living soul, because there wasn't one soul in this whole gold-lit place who I thought would believe the man with no country that your God's own voice was a dead schoolboy tongue off a Tennessee hillside. I'm telling you because you asked me to say it, and because you've heard it said over your own dead more times than I've heard it said over anything. I thought you should know what you've been hearing."
 
 She sat with the notebook shut in her lap and didn't reach for it. Her hand found the strap of it instead — the specific white-knuckle grip he'd seen on new recruits handling a rifle for the first time, not from lack of respect, from too much of it arriving all at once.
 
----
-
+[Beat 211]
 It was Orim who broke first, not her.
 
 He turned from the porthole. It was a small movement — he turned, and stood with his back against the hull, looking at neither of them in particular. His face had the quality Rowe had seen once on a foreman reading a tally that had come up short two shifts running: the look of a man confronting something he had always known was there and could no longer keep at the distance of knowing it only in the abstract.
 
-"I have said that word," Orim said. "Over field-dead. Over departures. Over you, Rowe, at your own commissioning oath, though you'll have no memory of it being said a second time by a different mouth. I have said it more times than I have fingers and toes to count on, in the tone we are taught denotes reverence, and I did not know, until a minute ago, that I was saying *rest* the way a stonecutter says it."
+"I have said that word," Orim said. "Over field-dead. Over departures. Over you, Rowe, at your own commissioning oath, though you'll have no memory of it being said a second time by a different mouth. I have said it more times than I have fingers and toes to count on, in the tone we are taught denotes reverence, and I did not know, until a minute ago, that I was saying rest the way a stonecutter says it."
 
-His voice was even — not flat, even, the way an instrument reads even when it is accurate on both sides of a scale. "I have read intake reports for forty years. Verlaine commissioning requests. No names. Sphere designation, skill classification, intake number." He looked at the hold floor. "I knew what I was reading. I knew what *M-cohort, Sphere thirty-one, intake ninety-seven* meant, the way a surgeon knows what a wound classification means without needing to see the patient." He paused. "I told myself I was being accurate. That someone else would do the work if I didn't. That knowing the cost made the cost somehow -" He stopped. "I don't have the word either. Not in Entos. Probably not in any language."
+His voice was even — not flat, even, the way an instrument reads even when it is accurate on both sides of a scale. "I have read intake reports for forty years. Verlaine commissioning requests. No names. Sphere designation, skill classification, intake number." He looked at the hold floor. "I knew what I was reading. I knew what M-cohort, Sphere thirty-one, intake ninety-seven meant, the way a surgeon knows what a wound classification means without needing to see the patient." He paused. "I told myself I was being accurate. That someone else would do the work if I didn't. That knowing the cost made the cost somehow -" He stopped. "I don't have the word either. Not in Entos. Probably not in any language."
 
 Rowe looked at him.
 
@@ -3752,9 +3616,8 @@ She didn't reach for the notebook. She didn't reach for anything. He'd learned, 
 
 The silence that came after it was a different silence than the one before — not comfortable, not meant to be, but the silence of a thing said and no longer capable of being unsaid, which sat instead of pressing forward. He watched her sit with it. The notebook stayed shut behind her the whole time, through the whole of what he'd given her — the first testimony he'd have bet she'd ever taken down in nothing but memory, nothing for a vigil rotation to ever file away as no action indicated.
 
----
-
-"What are we calling the ship," Orim said, from the porthole, without turning.
+[Beat 212]
+"What are we calling the ship?" Orim asks, from the porthole, without turning.
 
 The question dropped into the quiet like a stone into still water. Nobody answered at once. The envelope kept its argument with the wind. The gray at the portholes had gone from night-gray to the paler gray that meant the sea had decided to be seen.
 
@@ -3768,12 +3631,11 @@ He looked at her. The vowel was wrong; he adjusted it.
 
 "She goes to Pallor under a new name," Orim said, still facing the water, in the tone of a man filing a report no one had requested.
 
-Lyra found the notebook and opened it. He watched her write *The Ground Undid,* and beneath it, not in the shape of a research entry but something she didn't yet have an institutional box for: *Rowe. Sphere 31. Thursday.*
+Lyra found the notebook and opened it. He watched her write The Ground Undid, and beneath it, not in the shape of a research entry but something she didn't yet have an institutional box for: Rowe. Sphere 31. Thursday.
 
 She closed it.
 
----
-
+[Beat 213]
 The Pallor coast came up on the northern horizon three hours later — first a darkening in the gray that was more solid than sky, the specific dark of a thing that had stood in the same place a long time and did not intend to move for the sea's convenience. Then the particular black of rocky coast, the Hebrides limestone she'd told him weeks back she'd only ever studied on cartographic plates, and was now, abruptly, simply seeing.
 
 The wheel by the aft bulkhead began, without a hand on it, to answer to a hand somewhere else — the Eirene-7 gathering herself for the descent to come, the way a held breath gathers before it's finally let go. He'd have to go back into her soon, down into the sea-loch by feel, the way he'd lifted her clear of Sal Vento; the small shell that carried the rest of him would go still again on the floor, and somebody would need to stand near it, because a shell with nothing in it was a shell anyone could claim. He'd stopped finding that strange around month three. It was just a fact of travel now, the way weather is a fact of travel.
@@ -3784,13 +3646,14 @@ She'd told him once, some evening weeks back when neither of them could sleep, a
 
 She didn't have that certainty in her now. He recognized the look anyway — the bearing of somebody handed a fact that restructures everything standing behind it, walking forward into ground she hadn't had time to survey. He didn't know if she'd trained for uncertainty or just gotten used to other people's. Tonight looked like the first time it had been entirely her own.
 
+[Beat 214]
 Rowe came to stand beside her at the forward porthole.
 
 He didn't speak at first. He looked at the coast. She looked at the coast.
 
-After a while he said, in Entos: "What will you do with it. When you have it."
+After a while he said, in Entos: "What will you do with it? When you have it?"
 
-He meant the Relic, and she knew it without him needing to spell out which *them*. Not a weapon, whatever Prelacze actually wanted from it — not by her own account, given to him weeks back over a different fire. The founding canon called it the Eye That Remembers and never explained further, and she'd told him once, half-laughing at herself, that she'd served the Vigil seventeen years without ever once asking why a thing built only to remember needed three locks, a vigil rotation, and a Canon's countersignature standing between it and anyone who might want to look.
+He meant the Relic, and she knew it without him needing to spell out which them. Not a weapon, whatever Prelacze actually wanted from it — not by her own account, given to him weeks back over a different fire. The founding canon called it the Eye That Remembers and never explained further, and she'd told him once, half-laughing at herself, that she'd served the Vigil seventeen years without ever once asking why a thing built only to remember needed three locks, a vigil rotation, and a Canon's countersignature standing between it and anyone who might want to look.
 
 "I don't know yet," she said.
 
@@ -3798,9 +3661,9 @@ He meant the Relic, and she knew it without him needing to spell out which *them
 
 She looked at him.
 
-"You would have given it to them, before Bressant," he said. "I don't know who *them* is. But you would have. You were the kind of person who gave things to the right authority."
+"You would have given it to them, before Bressant," he said. "I don't know who them is. But you would have. You were the kind of person who gave things to the right authority."
 
-"And now?" she said.
+"And now?" she asks.
 
 "Now you know I am in the authority's files."
 
@@ -3810,6 +3673,7 @@ She looked at Pallor, closer now, more specific — the cliffs resolving into in
 
 He nodded. He turned from the porthole and went to find a place to settle before the ship began her descent — a place near enough to his shell that when it went still, someone guarding it would only have to look, not search. He felt her watch him go.
 
+[Beat 215]
 Pallor was ahead, close enough now that the moor above the cliffs had come clear in the gray, green going black going green again as cloud crossed it. He stood a while longer near the place he'd chosen, not because there was anything more to see there than a minute before, but because a man who has just spent the whole of what he was carrying needs somewhere to stand while his hands remember what to do with themselves.
 
 He'd told it in order, the way he'd promised himself he would — the mine, the France of it, the stone room, the number that ate his name, and the last thing, carried longest, said last on purpose. It didn't feel like relief. It felt like a weight handed off to somebody with two working hands to carry it, instead of one man alone in a gold-lit hold with nobody who'd believe him.
@@ -3818,83 +3682,93 @@ Behind him, he heard the notebook open, and then, after a while, close again wit
 
 Pallor was ahead. He left Lyra with what he'd given her, because that was hers to carry now, the same as the rest of it.
 
-[Beat 22]
-CAER GLAS MOOR — THE GROUND OF THE NINE DAYS
-
+[Beat 216]
 Wren knew what was owed on this ground before anyone told him its name. Karst did that to a man raised on ledgers — grey stone scoured to bone by ten thousand years of rain finding the softest mineral and taking it first, leaving ridges and sinkholes and long dry throats of gorge, and every hollow in it read to him like an unpaid line. His family would have called it consecrated. Out here, with a stolen case against his knee, the word that fit was cheaper and truer: it was ground that had never been squared. A hundred and sixty-six years since House Calyx lost the Oculus on this exact moor, and nobody had settled the account since, and some blind animal part of him had known that the moment the fog thinned onto it.
 
-Esvane stood over the map with the flat authority of a woman who had stopped asking anyone's opinion days ago. "You'll take the east lip at first light," she said, not looking up. "Alone. I want the approach read before we move the case again."
-
+[Beat 217]
+Esvane stood over the map with the flat authority of a woman who had stopped asking anyone's opinion days ago.
+"You'll take the east lip at first light," she said, not looking up. "Alone. I want the approach read before we move the case again."
 "Alone." He heard himself say it careful, testing whether the word had a second meaning under the first. In Calyx they'd have dressed the order in something gentler — a commission, a charge laid on a scion. Out here it was just inventory, and Esvane was right to call it that, because that was all he'd ever been to the crew's books: an asset with a use.
-
 "You're the only one who can be somewhere and not be seen getting there." She still hadn't looked at him. "That is not an insult. It's an inventory."
-
-Petra, crouched at the fire with a coil of signal-wire looped over one wrist, didn't glance up either. "Don't sulk about it, boy. Nobody's family out here. Out here you're a fold and two knives, same as I'm a face nobody remembers at a checkpoint. Cousin to a king buys you exactly nothing on this ground." She said it the way a tool is described by its function, which somehow made it a kindness, because it meant she'd stopped charging him for the name he hadn't asked to carry.
-
+Petra, crouched at the fire with a coil of signal-wire looped over one wrist, didn't glance up either.
+"Don't sulk about it, boy. Nobody's family out here. Out here you're a fold and two knives, same as I'm a face nobody remembers at a checkpoint. Cousin to a king buys you exactly nothing on this ground." She said it the way a tool is described by its function, which somehow made it a kindness, because it meant she'd stopped charging him for the name he hadn't asked to carry.
 He said nothing back. He owed her that much silence, at least — the one thing he could pay without cost.
 
+[Beat 218]
 The fire went out from under all three of them at once, and he never afterward could put the order back together right, only the pieces of the bill as it came due. Esvane turning — too late, the only warning any of them got. A man's shape inside her guard before she'd finished the turn, the rifle stock into her forearm to spoil the draw, two rounds close enough that the report and the impact arrived as one event instead of two. She went down against the cairn stone with the particular finality of a body that had simply stopped taking instructions, and whatever she was owed for twenty-three years of hard knowledge went out of her eyes with no more ceremony than a lamp starved of oil.
-
 "Wren." Not fear in it. Command, right to the end of her. "Go."
-
 That was her whole payment to him, spent in a single word, and he had no way to make change on it.
 
+[Beat 219]
 Petra was already moving, and he understood a half-second too late what she'd seen that he hadn't — not flight, angle, fifteen years of finding soft gates translating on the instant into finding the one place a body could stand between an archer's line and a boy who had never fully belonged to any of them. The bolt that should have opened his back found her instead, low, under the ribs, and she went down without a sound that carried past the wind working the gorge, one hand still closed around the coil of wire she'd been needling him about a minute before.
 
+[Beat 220]
 He went to his knees beside her because there was a debt in that, too, and it took exactly as long as it took to understand there was nothing left to pay it with. Her mouth moved. No sound came out with it. He would carry that unfinished sentence the rest of his life, the elegy that never got past its first breath, and there would be no ledger anywhere that let him close the entry.
 
+[Beat 221]
 He stood. The case was still in his arms — he did not remember gripping it harder, only that his arms had already decided for him, the way a body keeps a hand on the one thing it's been told is not its to lose. He put his palm flat to the cairn wall behind him.
-
 The stone did not open for him so much as let him borrow its silence. The blink was never free — everyone who'd taught it to him had said so, in whatever coin they used for teaching: distance taken on credit, paid back later in the ache behind the eyes and the four seconds of nothing where a body should have been. He went into it the way a man goes under water he's trained himself to survive and never quite trusts, and when the wet ground let him back out on the far side of the gorge, the bill came due exactly as promised — his knees buckling under him, gold sheen bleeding off his hands into old lichen, gone before the rain finished it.
 
+[Beat 222]
 He knelt there a long moment with the case in his lap, doing the only arithmetic he had left. Esvane's word, spent. Petra's body, spent, against a debt that had never been hers to carry. The case itself — Calyx silver, Calyx blood, a hundred and sixty-six years of a family account he'd been running from since before he could walk it — still owed, still unpaid, still his to finish the job on if he had the legs for it.
 
+[Beat 223]
 He found he didn't. Not because the legs had failed him. Because the ledger had run out of columns that made sense. He had spent his whole life being told what he owed the Calyx name and had never once been asked what he owed the two women who'd just spent themselves flat to buy him four seconds of borrowed water. That debt had no house to collect it and no vault to close it in. It only had a direction — south, back through the fog, toward the three shapes he'd watched come down off the ridge like something the ground itself had finally decided to settle.
 
+[Beat 224]
 He was not going to them for Lyra's reasons, whatever those were. He didn't know her reasons yet and didn't much care. He was going because a debt with nowhere left to go still has to go somewhere, and the only ledger still open on this moor belonged to the woman standing in the gap between two dead crew and a boy's cooling handprint on a cairn raised for a battle no living person remembered fighting.
-
 He walked out of the fog with the case held against his chest with both arms, and did not raise his hands, and did not run.
 
-[Beat 23]
-THE RECKONING — THE EIGHTH THEORY
-
-*Caer Glas Moor, in Calyx — the morning after.*
-
+[Beat 225]
 The fog at Caer Glas Moor did not fall the way rain falls elsewhere. It simply arrived at ground level and declined to leave, a grey that sat in the folds of the karst like water that had forgotten how to run downhill, and through it the moor-hounds could be heard before they could be seen — a low working conversation from the kennels below the hall, dogs bred for generations to track a scent across broken limestone and never once asked to track this one. Wren had grown up under this particular grey. He walked into it now the way a man walks into a house he still owes rent on and has stopped pretending he doesn't.
 
 The hall at Caer Glas Moor was older than the battle it commemorated, which made it older than most things that called themselves old. Its outer wall still carried, at shoulder height, the pale scar-line where the original stone had been cut back and reset after the Nine Days fighting had gone through it — a repair visible the way Calyx stonework was visible everywhere, not concealed, not apologized for, simply there, doing its work. He had rehearsed telling Lyra about it a hundred times on the road here and said none of it, because at the vault door she stopped on her own, the way she stopped at doors now, and read the line cut into the lintel long enough ago that the letters had softened the way the letters at Twr Brennid had softened.
 
 *Nine days the field held. On the eighth, it broke.*
 
-"Everyone agrees on the nine," Wren said, at her shoulder, in the flat voice of a man reciting something he had been given before he was old enough to argue with it. "The battle ran nine days. That much the records match on both sides — Liturgy and Calyx, the Ocipheus canon and the family rolls. It is the eighth day nobody agrees on. Seven witnesses gave seven accounts of what happened when my ancestor's man went down under the Liturgy banner — his Champion, if you want the wall's word for it, though nobody in this house has used it plainly in a hundred years — and the case left Calyx hands, and none of the seven match, and there was never an eighth witness to settle it. My family has been counting that day for a hundred and sixty-six years. It is said Pallor's Long Seat keeps a gap of the same shape. We got there first, on our own ground — we did not need Pallor to teach us how to count what we do not have." He looked at the lintel a moment longer than he needed to. "I told you I grew up with it. This is the it."
+[Beat 226]
+"Everyone agrees on the nine," Wren said, at her shoulder, in the flat voice of a man reciting something he had been given before he was old enough to argue with it.
+"The battle ran nine days. That much the records match on both sides — Liturgy and Calyx, the Ocipheus canon and the family rolls. It is the eighth day nobody agrees on. Seven witnesses gave seven accounts of what happened when my ancestor's man went down under the Liturgy banner — his Champion, if you want the wall's word for it, though nobody in this house has used it plainly in a hundred years — and the case left Calyx hands, and none of the seven match, and there was never an eighth witness to settle it. My family has been counting that day for a hundred and sixty-six years. It is said Pallor's Long Seat keeps a gap of the same shape. We got there first, on our own ground — we did not need Pallor to teach us how to count what we do not have."
+He looked at the lintel a moment longer than he needed to.
+"I told you I grew up with it. This is the it."
 
+[Beat 227]
 Aldric was waiting past the vault door, in a room that held the family's accounting the way the Long Seat was said to hold the Entos's — corrected genealogies on every wall, the newest entries the cleanest because they had not yet been proven wrong. He looked older than he had looked on the moor the day before, which should not have been possible in one night, and Wren knew, better than Lyra could, that yesterday's collapse had not finished; it had simply stopped being visible from a distance. There was a chair near the hearth with a folded grey cloak across its arm that nobody had moved. Wren did not call it mourning, even in his own head. It was Esvane's coat, empty.
 
-"You came for the rest of it," Aldric said. Not a question. "Esvane would have made you wait for tea first. I do not have her patience for the forms." He said her name and did not stop or falter, which Wren recognized as its own kind of injury, the wound already past the stage where it announced itself.
+"You came for the rest of it," Aldric said. Not a question.
+"Esvane would have made you wait for tea first. I do not have her patience for the forms."
+He said her name and did not stop or falter, which Wren recognized as its own kind of injury, the wound already past the stage where it announced itself.
 
+[Beat 228]
 Lyra told him what she had seen at the Forge Hearth, because he asked, in the same plain forensic terms Wren had heard her rehearsing under her breath for a hundred kilometers of road, not knowing then who she meant to finally say them to: the membrane at Hearth-Seven slack and overpigmented, healing at maximum load and still losing ground; Orim's Rod meeting nothing at Hearth-Eleven, not resistance, not membrane, an absence where a door should have been. Aldric listened the way Esvane must have taught him to listen, without interrupting, and when she finished he did not offer comfort or contradiction. He offered the family's seven.
 
-"Seven days of the nine are agreed history," he said. "The eighth is where the accounts stop matching and the family has never closed the file, because closing it would mean choosing which witness lied, and every Calyx Knight for six generations has looked at the seven and found himself unable to make the eighth match any of them cleanly. We do not call it recognition, the way Pallor's Long Seat is said to. We call it the day nobody can agree on. It comes to the same shape. Whatever you have assembled on the road here, the eighth of it is not going to be handed to you by me or by anyone at this hearth. It is in the ground at Sinter, the same as it was on the eighth day of the battle — not withheld, just not yet witnessed by anyone who could tell it straight afterward."
+"Seven days of the nine are agreed history," he said.
+"The eighth is where the accounts stop matching and the family has never closed the file, because closing it would mean choosing which witness lied, and every Calyx Knight for six generations has looked at the seven and found himself unable to make the eighth match any of them cleanly. We do not call it recognition, the way Pallor's Long Seat is said to. We call it the day nobody can agree on. It comes to the same shape. Whatever you have assembled on the road here, the eighth of it is not going to be handed to you by me or by anyone at this hearth. It is in the ground at Sinter, the same as it was on the eighth day of the battle — not withheld, just not yet witnessed by anyone who could tell it straight afterward."
 
+[Beat 229]
 "That is not comforting," Lyra said.
+"No," Aldric agreed.
+"It is just old. My family found out a long time ago that some things only resolve when you are standing where they happened, with everything you already know in your hands, and that no account given afterward, however honest, carries the same weight as the standing did. Esvane used to say the law works the same way. You can write the finding. You cannot write the moment the finding became true."
+He looked at the folded cloak on the chair and did not touch it.
+"Wren will tell you the same, if you make him. It is the one part of this house he never had reason to doubt."
 
-"No," Aldric agreed. "It is just old. My family found out a long time ago that some things only resolve when you are standing where they happened, with everything you already know in your hands, and that no account given afterward, however honest, carries the same weight as the standing did. Esvane used to say the law works the same way. You can write the finding. You cannot write the moment the finding became true." He looked at the folded cloak on the chair and did not touch it. "Wren will tell you the same, if you make him. It is the one part of this house he never had reason to doubt."
-
+[Beat 230]
 Wren did not disagree. He stood by the hearth with the stillness he knew from the inside — a man deciding whether a thing needs saying before he has decided whether he can afford it — and then said it anyway, quietly, to the fire more than to her: that he had known the shape of the gap since before he could ride, that the inheritance was never the answer but the not-having-one, and that he had decided a long time ago to carry it rather than pretend it was not there. Carry it the way he was carrying Esvane and Petra now, one day dead, the ledger not even opened. Two accounts, a hundred and sixty-six years apart, neither one closing. He did not look at his uncle when he said it. Aldric did not look away.
 
+[Beat 231]
 Lyra asked Aldric for a moment alone before they left.
 
 Wren did not ask why. He had learned young which doors in this house closed on him and which didn't, and this, apparently, was still one of them. Aldric only nodded and led him out, and the vault door shut behind them with the particular weight Calyx doors were built to have, meant to be heard closing. They stood in the corridor without speaking. Wren had waited outside this door before, as a boy, told he would understand once he was older, and understood now that he had grown up and the door had not.
 
+[Beat 232]
 When Lyra came out she had the case at her hip and a stillness on her that had not been there going in. She did not make him ask. She told him, plainly: the Relic had shown her the theft itself, the archive at Caer Glas Moor on the night it happened, seen through the hands of the one who took it, and those hands had moved with the specific deliberateness of someone who meant to return what he was removing. She had already known who. The Relic had only confirmed what kind of taking it had been. Wren said nothing to that. There was no debt in it he could pay from where he stood, and he had learned not to reach for one that wasn't his to settle.
 
+[Beat 233]
 Outside, the fog had begun to lift off the lower slopes, and their gear was already loaded and lashed in the yard, Rowe moving down the line of it with the flat patience the shell brought to every mechanical task, Orim watching the moor the way a man watches ground he has been told is haunted and has decided, professionally, to believe. Wren crossed the yard with the eighth theory still an open shape in him, no closer to filled than it had been at the vault door, and understood that his own house had given Lyra exactly what Pallor's would have given her — not an answer, a map, drawn by a different hand on the same ground — and both maps pointed the same direction: south and east, toward the last friendly port before the Gate. He was leaving Caer Glas Moor with the family's account no more settled than when he'd ridden in, and two new names on a different ledger that would never balance against it either. He did not say that. He shouldered his kit and went to help Rowe finish.
 
 They went on toward Port Gadriket, and whatever her sister had sent ahead in her place.
 
-[Beat 24]
-WHAT SHE SENDS AHEAD
-
+[Beat 234]
 The dispatch note arrived at the sixth hour, on paper thin enough that Vega could see the Second Chancery's watermark through it before she'd broken the seal — a nice touch, that, the kind of institutional vanity she had always found more endearing than a serious notary probably should. She read the clause twice before she let herself have a feeling about it, because that was the rule she had made for herself in this job: the instrument first, the person second. The instrument was short. The feeling, when she finally let it in, was not.
 
 She had been at her desk since the fourth hour, which was not unusual. She arrived at the fourth and departed at the fourteenth and had been doing so for three years, and the Liturgy's administrative schedule had arranged itself around this without comment, the way it arranged itself around good furniture: with a gratitude that never rose to acknowledgment. She had her desk. The desk faced two windows. The windows faced the courtyard. The courtyard was empty most days. This was the shape of her work, and she had always rather liked the shape of it — there was a pleasure, wasn't there, in a life you could describe in one sentence and have the sentence be true.
@@ -3905,31 +3779,34 @@ Senior Scribe Brentha Osel. Vega had met her twice. Once at the orientation for 
 
 Vega had said: found what interesting?
 
-Osel had said: *the work.* And walked on, leaving Vega to turn the question over for the better part of a week, the way you turn over a clause that reads simply and isn't.
+Osel had said: the work. And walked on, leaving Vega to turn the question over for the better part of a week, the way you turn over a clause that reads simply and isn't.
 
 The dispatch note itself was brief, brief in the particular way that meant somebody had drafted six longer versions first.
 
-*V. Athen-Moor — You are requested to present yourself at the Office of the Senior Scribe at the eighth hour. Bring your notary seal. — B. Osel*
+V. Athen-Moor — You are requested to present yourself at the Office of the Senior Scribe at the eighth hour. Bring your notary seal. — B. Osel
 
 No travel instruments. She noticed that, the way she noticed everything, and then noticed herself noticing it, and put both observations in the part of her mind where she kept things she wasn't ready to have opinions about yet. She read the note twice more and folded it into her working-copy folder, which was not where it belonged — it belonged in correspondence — but the working-copy folder was what she had been carrying with her everywhere for eight months, and the dispatch was now part of the same pattern as everything else inside it, and the pattern was where it belonged, whatever the filing schema said.
 
 She had two hours. She spent them at her desk, working through the routine instrument queue with the methodical focus that had always been her professional strength and had become, lately, something she leaned on more heavily than she used to. Methodical focus was the one thing she still had full access to. She could look at an instrument and see its form, assess its completeness, certify its disposition, even when — especially when — the instrument was one small tile in a mosaic she was also, separately, trying to see the whole of. The two processes ran in parallel. She had learned to let them.
 
-At the eighth hour she went to reach for her travel bag out of some old instinct she caught herself in the act of — packed, she noted with a certain wry alarm, from a week ago, for no destination she had let herself name — and then did not pick it up. *Bring your notary seal,* the note had said. Not the bag. She left the bag exactly where it was, put the seal in her coat instead, and went to the Office of the Senior Scribe with the specific, slightly chastened feeling of a woman catching her own hope before it could embarrass her.
+At the eighth hour she went to reach for her travel bag out of some old instinct she caught herself in the act of — packed, she noted with a certain wry alarm, from a week ago, for no destination she had let herself name — and then did not pick it up. Bring your notary seal, the note had said. Not the bag. She left the bag exactly where it was, put the seal in her coat instead, and went to the Office of the Senior Scribe with the specific, slightly chastened feeling of a woman catching her own hope before it could embarrass her.
 
----
-
+[Beat 235]
 Brentha Osel was seventy-three and looked it the way some people did: accurately, without distress, the years worn as information rather than apology. Her desk was smaller than Vega's and covered in materials that were not canonical instruments — reference compendiums, historical registers, the bound record of a review session from Year 1337 that Vega recognized by its binding stamp before she recognized anything written on it, which she also noted, and also filed. Osel looked at her the way she had looked at her in the corridor: deciding how much of what she knew she was going to say.
 
 "You've been keeping a working copy," Osel said.
 
-It was not a question. "Yes."
+It was not a question.
+
+"Yes."
 
 "For how long."
 
 "Eight months."
 
-Osel was quiet a moment, turning the Year 1337 record over without opening it. "The current Canon Immaculate has been in his position for eleven years," she said. "Before him, Subcanon Treye Falconer held it for twenty-three years, retired in good standing, and is currently farming his family's land in Calyx's northern province. Before Falconer, Canon Immaculate Amaris Dort held it for thirty-one years and died at her desk." She set the record down. "During Dort's tenure the Forge Hearth extraction authorization was renewed. During Falconer's, the Sphere-intake quota was raised for the third time. During the current tenure, the Vigil line's garrison rotation was extended from eight months to twelve, and six months ago the Liturgy's permanent contingency reserve was unsealed under a standing-order renewal certified by a Registry notary." She looked at Vega directly. "You certified it."
+Osel was quiet a moment, turning the Year 1337 record over without opening it.
+
+"The current Canon Immaculate has been in his position for eleven years," she said. "Before him, Subcanon Treye Falconer held it for twenty-three years and retired to farm his family's land in Calyx. Before Falconer, Canon Immaculate Amaris Dort held it for thirty-one years and died at her desk." She set the record down. "During the current tenure, the Vigil line's garrison rotation was extended from eight months to twelve, and six months ago the Liturgy's permanent contingency reserve was unsealed under a standing-order renewal certified by a Registry notary." She looked at Vega directly. "You certified it."
 
 "Yes." She heard her own voice do the small flat thing it did when it wanted to sound more composed than she was.
 
@@ -3945,6 +3822,7 @@ Osel was quiet a moment, turning the Year 1337 record over without opening it. "
 
 Vega said nothing for a moment, which for her was its own kind of confession — she was a woman who filled silences the way other people filled forms, promptly and by habit, and the fact that she didn't now told Osel everything the silence was designed to withhold. The working copy was in her bag. She had reached that conclusion three weeks earlier and had spent the three weeks since hoping it was wrong, the way you hope a citation is misprinted right up until you check the original and it isn't.
 
+[Beat 236]
 "I can't stop it," Osel said. She said this plainly, the way people said things that were true and unpleasant and that they had lived with long enough to stop requiring feeling from. "I have been a notary for forty-one years and a Senior Scribe for twelve of those, and the thing I was given the authority to do is witness and record. I do not authorize. I do not command. I do not stop." She folded her hands on the desk. "What I do is write it down. And what the canonical instrument set will require, when it is convened at the Zone, is a notary present at the record's edge before the record closes over it."
 
 "The instruments haven't been convened yet," Vega said.
@@ -3961,50 +3839,49 @@ She let this settle too, the way she seemed to let everything settle, patient as
 
 "Then your sister is there, or will be. Dame Lyra." Osel said the name without particular affect. "Not because I arranged it. Because the recovery instrument pointed that direction, and so did your sister's competence, and so did the fact that she cannot, under any circumstances, leave alone a thing she has been told to leave alone." Something in Osel's face came as close to warmth as it appeared able to come. "I thought you should know, before I tell you what I actually need from you."
 
-Vega took a breath and let it go, and made herself ask the question in the shape it deserved rather than the shape she wanted. "What do you need me to do."
+Vega took a breath and let it go, and made herself ask the question in the shape it deserved rather than the shape she wanted.
+
+"What do you need me to do?" she asks.
 
 "Write it," Osel said. "Seal it. Send it ahead of her."
 
 She said this in the tone of someone who had given the instruction before, or who had held it long enough that the giving of it had become necessary rather than merely practiced. Vega understood the difference. She had spent three years learning to hear it.
 
----
-
+[Beat 237]
 The Templar order kept archives the way the Registry kept queues — small, unglamorous, load-bearing. A waystation was three rooms and a courier roster and, in every one Vega had ever certified paperwork for, an archivist whose entire professional life was making sure that whatever arrived sealed stayed sealed until the person it was addressed to arrived to break it. The waystations sat along the roads a Templar travelled because a Templar had to be able to find one, which meant that once Osel's people confirmed the line Lyra's party was cutting east — the same recovery instrument, the same stubborn unwillingness to leave a thing alone — the road told you where the archives were before anyone told you anything else.
 
-Vega did not sail to Sinter. She could not — the arithmetic was the arithmetic, and a body that set out now would make landfall a season too late to be anything but a mourner at a grave already sealed. So she would send the record by ship, as Osel had told her to, and let ink do the travelling a person couldn't. What Osel had not needed to be told was the other half of it: that a notary who set the words *Sinter Zone* under her own seal, who wrote *P-7-R* out in her own hand, could not afterward go back to a desk facing an empty courtyard and wait to be thanked. The instruments would leave Anqaltera. So, and soon, would she — though not east to the Gate, and not toward her sister. That road belonged to some later chapter of her life than this one.
+Vega did not sail to Sinter. She could not — the arithmetic was the arithmetic, and a body that set out now would make landfall a season too late to be anything but a mourner at a grave already sealed. So she would send the record by ship, as Osel had told her to, and let ink do the travelling a person couldn't. What Osel had not needed to be told was the other half of it: that a notary who set the words Sinter Zone under her own seal, who wrote P-7-R out in her own hand, could not afterward go back to a desk facing an empty courtyard and wait to be thanked. The instruments would leave Anqaltera. So, and soon, would she — though not east to the Gate, and not toward her sister. That road belonged to some later chapter of her life than this one.
 
 What she did first was write.
 
-The first instrument went out on a Loera packet inside nine days — the same low fast two-master line that carried the Registry's ordinary mail, the purser writing *Registry, north-bound, Port Gadriket* in the manifest hand she used for everything, no different from a hundred other sealed cases she had carried without asking what was in them. It was the smallest of the three documents Vega would eventually write, and the most careful: a notarized account of Article Eighteen's true classification, the war construct evaluation cohort's actual convening cause, the words *Sinter Zone* set down in her own hand under her own seal where no later redaction could pretend the words had never existed. She dated it. She did not sign it as Vega. She signed it as the Registry required a witness instrument to be signed, which was, she thought, its own kind of honesty — the record didn't need her name. It needed her seal.
+[Beat 238]
+The first instrument went out on a Loera packet inside nine days — the same low fast two-master line that carried the Registry's ordinary mail, the purser writing Registry, north-bound, Port Gadriket in the manifest hand she used for everything, no different from a hundred other sealed cases she had carried without asking what was in them. It was the smallest of the three documents Vega would eventually write, and the most careful: a notarized account of Article Eighteen's true classification, the war construct evaluation cohort's actual convening cause, the words Sinter Zone set down in her own hand under her own seal where no later redaction could pretend the words had never existed. She dated it. She did not sign it as Vega. She signed it as the Registry required a witness instrument to be signed, which was, she thought, its own kind of honesty — the record didn't need her name. It needed her seal.
 
-The second went nine days after that, once the requisition paperwork for the reserve's movement crossed her own queue and she recognized, before she had finished reading the routing code, the property mark she had certified the unsealing of six months before: **P-7-R**. She had not seen the ships. She did not need to. She had seen the instrument that told the ships where to go, twice now — once when she certified its unsealing without reading what it truly was, and once now, watching the same reserve's transit paperwork arrive for her signature as though nothing about it had changed since. *The contingency reserve has been unsealed three times in recorded canonical history,* she wrote. *The Year 1312 catastrophe. The Atrament border action of Year 1354. And now, in material transit, toward the Sinter Zone, under a standing-order renewal I certified myself.* She looked at that sentence for a while, the way she had learned to. Then she wrote, beneath it: *I am not the person who authorized its release. I am the person who certified the authorization.* She did not underline it. She did not need to.
+The second went nine days after that, once the requisition paperwork for the reserve's movement crossed her own queue and she recognized, before she had finished reading the routing code, the property mark she had certified the unsealing of six months before: P-7-R. She had not seen the ships. She did not need to. She had seen the instrument that told the ships where to go, twice now — once when she certified its unsealing without reading what it truly was, and once now, watching the same reserve's transit paperwork arrive for her signature as though nothing about it had changed since. The contingency reserve has been unsealed three times in recorded canonical history, she wrote. The Year 1312 catastrophe. The Atrament border action of Year 1354. And now, in material transit, toward the Sinter Zone, under a standing-order renewal I certified myself. She looked at that sentence for a while, the way she had learned to. Then she wrote, beneath it: I am not the person who authorized its release. I am the person who certified the authorization. She did not underline it. She did not need to.
 
 The second document went to the waystation at Port Gadriket, filed under the Templar archivist's own seal on top of hers, to wait in a room with a window on the harbor for a party of five that had not yet arrived and would not know, walking in off the muster, that the record had beaten them there.
 
----
-
+[Beat 239]
 The third she wrote last, and it took her longer than the other two combined, because it was the one that mattered and she had never in her professional life had to draft something that mattered in quite this particular direction. A canonical witness instrument was composed, by law and by three hundred years of unbroken practice, in the received tongue — the sacred official language every Registry notary learned to render before she was old enough to ask why, the beautiful stamped shapes Vega had always loved for the pure pleasure of the forms themselves, the way you can love a piece of music you cannot translate a single word of. She had rendered thousands of lines of it. She had never fully read it, not the way she read her own language, and there had never before been a reason to mind.
 
 She minded now. She wrote the entire body of the instrument in it anyway — the full account, everything Osel had laid out across that small crowded desk, everything the paperwork had confirmed since, set down in the tongue that made it canonical, that made it a thing Prelacze's own instrument set would one day have to reckon with rather than simply deny. That much, procedure required, and Vega had spent three years being a woman procedure could rely on.
 
 Eleven years lay between her and Lyra, and a whole vocation stacked on top of them. Vega had come late — the child nobody had been young enough to plan for, born to parents already tired of the work of it — and by the time she was old enough to follow her sister down a corridor, Lyra was half-grown and half-gone. Seven, Vega had been, the winter Lyra took the oath and went to the Vigil. She had spent the years since doing precisely what she was doing now: setting careful words in front of a sister who was always a step ahead and half-turned away, and hoping one of them would land. She had even followed her into the Liturgy. She told herself it was the work — and it was the work — and it was also the shortest road to an hour in the same room as Lyra, once a season. A person could hold both of those true at once. Notaries did it for a living.
+
 But procedure did not require what came after it, and she wrote that part anyway, in her own hand, in her own tongue, breaking the form for the first time in eight months of keeping one — not a notary's line but a sister's, set below the seal where the instrument's formal record ended and something else began:
 
-*Sister, I pray these words reach you in time. Loyalty to an unreciprocating thing isn't virtue. It's just fear disguised as principle.*
+Sister, I pray these words reach you in time. Loyalty to an unreciprocating thing isn't virtue. It's just fear disguised as principle.
 
 She sealed it. She sent it ahead of her sister, into the last waystation on the road before the Gate, to sit in an archivist's careful keeping and wait — the way ink waits, patiently, for a body to finally catch up to it — for Dame Lyra to walk in off a road she did not yet know had already been written about, and find, before anything else at Sinter could tell her a different story first, her own sister's account of it, sealed, dated, and true.
 
----
-
+[Beat 240]
 Vega left Anqaltera three days later, before dawn, on a Loera corsair that asked no questions — Loera hulls never did; it was half of what the House was for. A low black two-master built for the work Loera kept quietest about, its master paid in Registry coin and a sealed letter he would never be able to read. She did not sail east to the Gate. She went the other way — east and north, toward Pallor and its long cold coast, where a woman with a good hand and no name worth wanting might vanish into the clerical bones of some fjord garrison and outlast whatever the Zone was about to become. A notary who has made a record that cannot be unsealed has also made herself into something that had better not be found.
 
 She stood at the rail and watched the island go grey behind her and did not know whether she would ever stand in a room with her sister again. The ink would reach Lyra. She might not. That was the shape of what she had chosen, and she had chosen it the way she chose everything — the instrument first, the person second, and the person, this once, was herself.
 
 They would not meet on this road. Some later one — another shore, another year — perhaps. She sealed that hope the way she sealed everything, and did not break it to look.
 
-[Beat 25]
-EIRENE'S GATE
-
+[Beat 241]
 Lyra logged the strait at seven hundred meters, narrowest point, grey water, and didn't need the sergeant to tell her the smell under the naphtha was the thing the naphtha was burning for.
 
 She had expected a wall. The Entos called it a Gate, the way soldiers call any border a border - the word sized down to fit what it actually was. What she found was a shoreline: fortified towers on both banks, boats holding position against the current, bows angled into it, and between the water and the first course of stone, a burn crew of six working a black stain with two flamethrower rigs and the discipline of men who had run this same watch longer than they cared to log.
@@ -4015,10 +3892,17 @@ The stain moved. Black, light-eating, coming up out of the tideline in slow fing
 
 The burn crew worked it by the book: short bursts, held low, one man on the line while a second covered the water at his back in case the stain reconsidered the fire as an argument. It went up clean - no smoke worth logging, a bright collapsing crackle, the stink of scorched rot under the naphtha - and where it burned the stone came up pale after, cauterized rather than healed. She watched a finger of it reach a coil of dock cable, watched the fire take the cable before it closed, watched the crewman's face register nothing at all. She logged that too.
 
-"Fire's the only thing that takes it clean," the garrison sergeant told her, when asked. "Cut it, it grows back doubled. Burn it, it stays burned." He reported it the way a man reports weather he has stopped being surprised by.
+"Fire's the only thing that takes it clean," the garrison sergeant told her, when asked.
+"Cut it, it grows back doubled. Burn it, it stays burned."
+He reported it the way a man reports weather he has stopped being surprised by.
 
-Rowe stopped at the base of the near tower, looking at a crate nobody else had looked at twice - unmarked, army-pattern, dull green. "Mills bomb," he said. "Or close enough. Somebody Scried a crate of these and nobody posted here knows what they're standing next to. A great many men carried these once and didn't come home to report where they'd left them." He said it in the flat carried voice the shell gave everything, and moved on. There was nothing to add that wouldn't cheapen the count.
+[Beat 242]
+Rowe stopped at the base of the near tower, looking at a crate nobody else had looked at twice - unmarked, army-pattern, dull green.
+"Mills bomb," he said.
+"Or close enough. Somebody Scried a crate of these and nobody posted here knows what they're standing next to. A great many men carried these once and didn't come home to report where they'd left them."
+He said it in the flat carried voice the shell gave everything, and moved on. There was nothing to add that wouldn't cheapen the count.
 
+[Beat 243]
 Vaen was posted at the second tower, and Lyra clocked him before anyone gave the name - the way you clock weather closing, except the weather in this case was standing on two legs and was easily twice the height of the tower door he'd have to duck through to use it.
 
 Thirteen feet, near enough that counting the last inches felt like an argument not worth finishing. He'd braided his hair - russet-red, going copper where the light caught it - into a single rope thick as a mooring line, tied off at the small of his back so it wouldn't catch on anything that would never reach high enough to matter. His clothes were sewn from bed linen: dozens of sheets, by the look of the seams, stitched into something that could pass at a distance for a soldier's coat, because no loom in the Entos wove a bolt wide enough to dress a man his size, and somebody - a quartermaster, a wife, a sister, Lyra never learned who - had solved that the only way it could be solved.
@@ -4028,9 +3912,9 @@ He was sitting when they arrived. Sitting, because standing put his head above t
 "Little Sister," he said, and got up anyway to say it properly, unfolding in stages like a derrick going vertical. Not condescension. Recognition - one soldier naming rank to another - and under it something that would have been pity, if pity were a thing this man still had storage for.
 
 "You're posted here."
-
 "My turn in the rotation." He said it without weight, the way a man reports his own conscription like weather. "Champions cycle the Gate, House by House. A Loera corsair runs eight weeks each way from wherever you're called from, so nobody crosses for less than a year's duty - the travel alone would waste the posting otherwise. I'm eight months into mine."
 
+[Beat 244]
 Wren, who did not startle easily, had gone very still and was doing the math on the doorway they'd have to widen for him at Sal Vento, if it ever came to that. Rowe ran his three-height scan out of pure procedure and got nothing back in any of the three bands that matched what his eyes were reporting - the Champion registered, on the shell's own ledger, as unclassified, mass exceeds calibration. Orim didn't scry him. Some things you don't need a rod to confirm.
 
 "Eighteen infusions," Vaen said, before Lyra could ask, because everyone always wanted to ask and it was faster to answer first. "Near the top of what the Liturgy's ever signed a writ for. One a year, near enough, from my fourteenth to my thirty-second, and then they told me that was all my frame could carry without the bones going soft at the joints instead of thick. I stopped growing taller four years ago. I have not stopped eating." He said this last with the particular satisfaction of a large man who has never once in his life been asked to leave food on a plate.
@@ -4039,10 +3923,12 @@ Lyra carried three infusions, and had believed, until this exact minute, that sh
 
 "No." He said it simply, without the weight she'd braced for. "Whatever the infusions grow, they don't touch that. I think the same as I thought at fourteen. Slower, some might say" - and here something moved at the corner of his mouth that in a smaller man would have been called a grin - "though I've had thirty years of people saying it behind a hand they thought I couldn't see over."
 
+[Beat 245]
 He asked about her sister, having heard - everyone at every post between Ocipheus and the strait had heard by now - that the Athen-Moor girl carried a letter she hadn't opened. He asked without prying, the way a big man learns to ask everything, because a big man who pries gets treated like a threat and a big man who doesn't gets treated like company. He told her, unprompted, that he meant to walk them across himself. Not the boat - the boat was for cargo and for men who needed the water between them and Sinter to feel like a margin. He meant to go in on foot, at the head of the column, because a man his size standing between a Sinterspawn breed and four exhausted travelers was worth more than any letter of passage the garrison could stamp. He'd walked escorts in before. None past the second waystation. He thought, this time, with eight months of the ground already under him, he might make the third.
 
 Lyra let herself, for the length of that sentence, believe him. It felt like setting down a pack she hadn't noticed she was still carrying.
 
+[Beat 246]
 It happened forty minutes later. Too fast to log in real time; too slow after, in memory, every second stretched to carry what it held.
 
 The water went concave first - not a wave, the absence of one, a bowl of surface drawing down around a point forty meters off the near tower, the way water pulls toward a drain before the drain's been found. What came up wasn't the long dark coiling mass the burn crew had trained their whole watch to expect. It came up jointed, plated at the head and thorax like something that should have fit in a net, if the net had been woven for a creature the size of a river barge - and behind the plated mass, uncoiling out of the water in lengths that kept arriving after the eye had already decided it was done arriving, a tail built of nothing so simple as bone. Rib on rib on rib, hooked and hinged, clutching at the air the way a hand clutches before it's decided what to hold, more legs than a tail should need and no legs at all in the way legs are supposed to work - a thousand small curved things acting as one long grasping thing. The burn crew, already moving, already screaming for the flame lines, had no word ready for it. Someone shouted shrimp the way a man shouts the first small true thing his mind can hold when the large true thing won't fit, and it stuck, because soldiers name what they can bear to name and leave what they can't for later.
@@ -4051,29 +3937,32 @@ The fire found it and it screamed - the first sound any of them had heard a Sint
 
 Then the tail came around, and it wasn't aiming for the tower. It was aiming for the one thing on the quay that stood a chance of stopping it before it reached the boats, and Vaen was already moving to make sure that guess was correct.
 
+[Beat 247]
 He went in with nothing but his hands and the flat of a blade too small for him, drawn more from muscle memory than any hope it would matter, and he was right that it wouldn't - the tail took him around the chest before the blade found anything to open, and the ribbed length of it closed the way a fist closes, slow and total, no hurry in it at all, the unhurried certainty of something that had never once needed to hurry. Lyra heard bone. Not his - hers, in the private register behind her sternum where his ribs and her ribs had briefly become the same fact.
 
 He did not go down easy. Both hands found the seam where the plated thorax met the base of that terrible tail - the one soft place a creature that size hadn't thought to armor, because nothing before this had ever had the leverage to reach it - and he drove both thumbs in and pulled apart the way a man opens something that was never meant to be opened by hand. Lyra heard the spine go. A sound like a green branch breaking inside a drum, once, and then the whole jointed length of the creature's tail lost its grip in the same half-second it lost its argument with gravity, uncoiling off him in a boneless fall that took the last of its scream down into the water with it.
 
 It let go because it was already dead. It let go too late for the man it had been killing.
 
+[Beat 248]
 Vaen didn't fall so much as arrive at sitting, the way he had been sitting when they'd found him, except now nothing in him unfolded back up. Lyra reached him in four strides that felt like forty. Up close, in the last of the light, he looked less like a monument than he had all afternoon - looked, for the first time since they'd met him, like a man, tired, glad of somewhere to sit.
 
 What he said to her then, she has never once repeated, to Orim or to anyone standing on that quay who would have given a year's wages to have heard it. She knelt with him until there was no more use in kneeling, and then she stood, and she did not cry where the burn crew could log it, and she did not tell any of them what a Champion's last accounting sounds like when there's nobody left to report it to but the person he's decided to spend it on.
 
+[Beat 249]
 Something else moved beneath the settling grey while she knelt there - vast, unhurried, gone before the eye could be sure it had been there at all, a displacement felt in the boat hulls before it was seen anywhere. Nobody named it. There would be time to name it later, on the far bank, when naming it wouldn't feel like an invitation.
 
 Nobody moved for three seconds that logged considerably longer. Then the far tower's lieutenant was screaming the burn crew back to the line, the boats were coming about, and the water - what was left of it disturbed - settled back to grey and gave nothing more away.
 
-Orim didn't speak for a long stretch. When he did, it was the only report that mattered. "That's what it costs to make one of them bleed. And we still have to cross."
-
+[Beat 250]
+Orim didn't speak for a long stretch.
+Then: "That's what it costs to make one of them bleed. And we still have to cross."
 Wren had gone pale and still, staring at the place on the quay where a very large, very gentle man had been sitting a minute before. Rowe ran his three-height scan again, low, middle, high, and logged nothing in any of the three bands that told him what he'd just watched. Lyra's hand had found the seal of her sister's waystation letter before she seemed to know it had moved, and then didn't break it, because there was no line in her sister's notary hand that could have held what the quay had just taken from her.
 
+[Beat 251]
 They crossed at dusk, in a boat the garrison sergeant wouldn't meet her eyes to hand over, past the scorched black stain the burn crew was already back to working, because the Ichor didn't log a stop for what had happened here, and past a length of quay stone still faintly warm where a man twice anyone's height had sat down for the last time. The far bank came up out of the grey water, dark, waiting, entirely unconcerned that it had just been introduced.
 
-[Beat 26]
-THE HIBAKUSHA
-
+[Beat 252]
 She didn't speak until the crossing was most of the way done, the grey water closing behind them and the garrison's lights already a smear on the bank they'd left.
 
 Orim didn't ask her to. He had escorted enough of the newly dead-eyed and the newly widowed across enough black water to know that a woman holding a folded quiet like that would talk when the quiet stopped being hers alone to carry, and not one half-second before.
@@ -4084,6 +3973,7 @@ That was gone now, and it was, Orim understood - understood the way he understoo
 
 He did not say any of this to her. That, half a century of standing at the edge of other people's losses had taught him, was usually the correct amount to say.
 
+[Beat 253]
 The boat put in to the far bank with the crossing eleven minutes behind it and the last of the garrison's light behind that.
 
 They moved up the bank by habit: Lyra forward, Rowe running his scan in three bands, the Calyx boy at the waterline watching the far shore with the expression of a man who had come to understand something about himself on the crossing and had not yet decided what to do with it. Orim did not move. He had stepped off the boat and stopped where the bank began.
@@ -4094,6 +3984,7 @@ The rock below the tideline was old limestone, grey-blue, shaled in the pattern 
 
 He had been twenty-three. That had been Year Zero.
 
+[Beat 254]
 Lyra came back for him. She had the gift - one of several she had not been taught and would not acknowledge - of knowing which silences wanted breaking and which wanted acknowledging before they could be walked through. She stopped at arm's reach and waited.
 
 "The Rod," she said.
@@ -4112,9 +4003,7 @@ He said the word the way you say something you have carried the whole of a worki
 
 The others were waiting at the treeline. He walked up to where they stood, looked at the zone ahead, and said nothing more about it - which was the most he had ever said to anyone on the subject, and which he had now finished saying.
 
-[Beat 27]
-THE ZONE - ENTERING SINTER
-
+[Beat 255]
 The Eirene-7 came down over the pass at Caer Dyn in five turns, not four - she counted them, the way she counted anything a ship did on final approach, because a ship that did the expected thing in the expected order was doing its job. The pilot flew by instrument report rather than judgment, trusting a hundred readings faster than a man could weigh them himself. At four hundred meters the ship stopped being flown. For the length of one breath it belonged to someone else entirely - the hum in the hull plating dropped a register, the yoke went still under no one's hands, and the small black shape strapped into the navigator's seat sat upright the way a soldier sits upright at reveille.
 
 "M-101," Rowe said. To no one. Confirming himself, the way a man confirms his own name after a concussion, to be sure the correct one had come back into the body.
@@ -4129,6 +4018,7 @@ The gate stood a kilometer on.
 
 They walked it.
 
+[Beat 256]
 The Vigil patrol kept a single stone building at the narrows, two rooms, a departure log bolted to a table in the format the Compact's commission had standardized in Year 1274. Five entries above hers in three days: an inspection team, a specimen collection detail, a maintenance authorization for the trail. The officer on the rotation was young. Verlaine-trained - she read that off him before he spoke, the way you read rank off a stance. He set his rifle down before he opened the log. Muzzle out, not muzzle in. Five seconds told her what she needed of a Vigil soldier, and those five seconds told her enough.
 
 He looked at her transit authorization a long time.
@@ -4159,8 +4049,12 @@ He stamped the logbook. He stamped it a second time, which was not procedure.
 
 "I understand," she said.
 
-He opened the gate.
+[Beat 257]
+He reached for the gate release, and then his hand stopped short of it - not a refusal, something worse, the arrested motion of a man who has just seen a reason he cannot yet name. He was looking past her, down the log, at a line she had not been shown. "Year 1342," he said again, and this time the number came out wrong, careful, the way you say a thing you have just understood you should not have said the first time. He turned the log so she could read it and pointed at the entry above the salvage detail - not below it, above it, dated the same week: a Vigil field annotation in a hand three commissions old. Perimeter designation revoked pending mandate review. Authorization holders to be detained at the narrows. He looked up at her, and the young steadiness had gone out of his face and left something closer to apology. "Your clause supersedes the Compact's perimeter," he said. "It does not supersede this. This is Vigil-internal. Year 1342, Ocipheus authorizations were flagged for detention, and the flag was never lifted, because the office that could lift it stopped answering in 1351." He set his hand flat on the log, not on the release. "I can stamp your transit. I cannot open this gate to a flagged holder without a countersign from a mandate authority that no longer exists. And the standing order for a flagged holder who insists-" he did not finish that either, but his eyes went, once, to the rifle he had set down muzzle-out, and came back. "I would have to call it in. And the moment I call it in, this stops being four people and a logbook."
 
+The gate stayed shut. The zone lay on the other side of it, and the only road to the crater ran through a countersign a decade past the death of the man who could have given it.
+
+[Beat 258]
 The zone began on the other side of it, and no report in the Vigil archive had ever recorded how - she had read most of what the archive held. Standard language: anomalous atmospheric and biological conditions consistent with sustained membrane-adjacent activity. Accurate. Built to survive contact with an auditor, not contact with the thing itself.
 
 The Vigil veterans had a shorter line for it. The ground pays attention.
@@ -4171,6 +4065,7 @@ And then, at no distance she could mark, the ground began to pay attention.
 
 Directional. Ahead and below. Steady, not pulsing - the signature of something that had been doing this a long time and would keep doing it whether or not anyone logged it as notable. It had found her instead. That was the order of things here, and she filed it as fact rather than argue with it.
 
+[Beat 259]
 "It started for me at the gate," Orim said, at her shoulder. He had not reached for the preparation in his breast pocket. She had expected him to. "I've heard the veterans describe this my whole working life. I assumed they were building it up." He looked at the ground the way a man looks at something that is looking back without eyes to do it with. "They were not building it up."
 
 "The Rod?"
@@ -4179,71 +4074,29 @@ Directional. Ahead and below. Steady, not pulsing - the signature of something t
 
 She had expected something like it. The Forge Hearth had refused him outright, and the Forge Hearth held only a fraction of what lay ahead of them now. A Rod-reading assumed the membrane was a surface - something with a face you could turn toward the light and read. Whatever this was had stopped being a surface a long time ago.
 
+[Beat 260]
 The trees were wrong, and it took a second look to place where. Longer gaps between the lower branches than growth should allow. Straighter in the grain than growth should run. The leaves gave back light a shade off the light that struck them - the Year 1337 survey had logged it as evidence of progressive adaptation to anomalous light conditions. She had read that line as documentation for seventeen years. She read it now as a description of what stood in front of her.
 
 Rowe came up on her right, saying nothing, running the three-height horizontal scan she had watched him run in six environments: low, middle, high, repeat. The new shell ran the pattern a fraction of a second slower than the old one had, a hitch in the shoulder actuator on the turn from middle to high. He had not commented on it. She had not asked. Some things a man keeps to himself even when the man is mostly voice-box and borrowed steel.
 
 Wren moved behind them, breathing through his nose, watching the tree line with the same patient assembly he'd brought to every strange thing since Caer Glas Moor.
 
+[Beat 261]
 The first preserved crossing came at the two-kilometer mark - matched to the pace count, matched to the Year 1337 survey's data on tear density this close to the Pallor approach. Half a meter across. Crystalline. Grown into the base of a tree that had closed around it across decades of failing to digest it. A small thing, from a smaller Sphere, caught mid-crossing in a state the membrane's own biology had sealed rather than let die by ordinary means: the moisture replaced with a clear, dense, membrane-adjacent mineral, holding the shape in exact suspension. She had read about the process in three papers. No paper had prepared her for what it preserved - not the shape of a dead thing, but the shape of a living thing in the instant of crossing, reaching toward something on its own side of the tear that no longer existed, and had been reaching that way for the better part of a century.
 
 The veterans had names for the larger ones. The commission's assessors had clinical designations instead - codes, catalogue numbers - and she understood now why the veterans' names had outlasted the codes. A code categorized. A name looked at the thing and admitted what it had cost to look.
 
+[Beat 262]
 The Glass Whales came first, in the deeper stands: six to nine meters, filter-feeders out of some high-methane Sphere no Entos biology had a name for, lying in the postures they had died in eighty, a hundred years past, encased where they fell. Through the crystal she could make out the long filtering structure, the organ mass that had supported it, the architecture of something built for an atmosphere she could not have breathed and had therefore never once had to hold as fact rather than diagram. The membrane had given them two to four hours before this world's air killed them, by the commission's estimate. It had kept the shape since.
 
+[Beat 263]
 The Singing Spires came later - not in the Year 1337 survey, first logged in the Year 1411 emergency assessment, crystalline growth in clusters two to three meters, source Sphere unidentified. They are still vibrating, the assessment had said, and for seventeen years she had read that as an academic curiosity worth a footnote. She understood it now as a field report. The Spires carried a resonance from wherever they had come from - some frequency of an atmosphere or a ground condition that was not here - and had not lost it in forty-eight years of standing in the wrong world. She felt it in the sternum before she saw the cluster: a vibration running outward from its center, parallel to the ground's attention and unaware of it, two frequencies sharing a chest cavity without troubling each other.
 
 Orim went around the outside of the cluster rather than through it. She did not remark on it. He had fifty years of knowing where not to place a boot.
 
-The Still Faces were the worst of the three, and the commission's own assessors had said so in three separate reports, attributing the effect to a humanoid-adjacent morphology tripping a threat-recognition response calibrated for faces. Probably true. It did not make them easier to walk past. Roughly half a meter. Roughly ovoid. A sensor arrangement that corresponded - in the loose sense of two entirely separate evolutionary paths converging on the same function - to a face: two bilateral structures that were not eyes, a central cluster that was not a nose, an aperture that was not a mouth, close enough to human proportion that the recognition ran before she could stop it, and then spent a long moment failing to reconcile what it had recognized.
+The
 
-They had preserved in the instant of dying, which the encapsulation evidence suggested had been nearly immediate.
-
-They looked like questions. Not distress, or not only distress. The specific expression of something meeting a set of physical laws its body was never built to survive, and finding no category to file it under.
-
-She did not count them. She logged, instead, that she was choosing not to.
-
-The zone smelled like the air before lightning - a detail no commission assessment she had read had ever recorded, which meant either the assessors had missed it or it was new. A hundred and forty-seven years of accumulated crossing residue. The membrane working continuously at a wound it could not close.
-
-"There is an account in the Long Seat's archive," Wren said, coming up on her left. He had been quiet since the gate, building his picture from the outside in, and now he had enough of an outside to speak from. "Pallor's holding. Year 1312, the secondary eruption. The patrol soldier who got closest and lived wrote that the walls looked like they were breathing. The session chair filed it under colloquial." A pause, precise, not self-punishing. "I told Aldric once it was colloquial too."
-
-Lyra looked at the light coming back off the leaves, off true by the same fraction it had been off true since the gate.
-
-"It wasn't," Wren said.
-
-"No," Lyra said. "It isn't."
-
-A kilometer from what the surveys called the crater's edge, the walls rose above the treeline, and the party stopped without an order given, on the same step, because it was the kind of thing that stopped everyone at once.
-
-The walls were not stone.
-
-She had known this in the abstract - from the commission surveys, from the Year 1337 assessment, from the Long Seat's eighth theory, which she carried in the place she kept things that could not be taken from her by anything that only touched language. She had known the walls were changing. She had not accounted for what changed looked like from outside the treeline, under this sky, at this range.
-
-The sections visible above the trees were dark in a way that owed nothing to basalt or volcanic glass, both of which she knew from the Forge Hearth approach, had logged both. A different dark - the dark of a thing that had never been stone and was doing something stone does not do. At five hundred meters she could read the layering: grown up over the old rock across eleven hundred years with nothing to interrupt it, oldest strata compressed and still at the base, the upper layers still doing what the lower ones no longer did.
-
-The upper layers were warm. She registered it at range - a warmth with no sun behind it, coming from inside the mass itself: the signature of something that had been alive here long enough to build a metabolism at scale.
-
-They pulsed. Not fast. Not on any count she could hold outright - the way you cannot fix a faint star by looking straight at it. A slow motion from deep in the layer, outward to the surface, and at the crest of it a faint amber sheen, wet, gone before she could confirm she'd seen it - fading on an interval that matched no Entos biology in any catalogue she had read, and she had read the catalogue twice.
-
-Year 1 to Year 1371. Eleven hundred and thirty-eight years. She had used the number in reports, in census documentation, in the institutional shorthand that turns a number into a category so it never has to be held as an actual quantity.
-
-She held it as a quantity now, five hundred meters out on the pace count, and it did not get lighter for the holding.
-
-Beside her, Rowe had gone very still, reading terrain he could not file by any prior reference - looking at the walls, at the ground, back at the walls, building his own picture the way Wren built his. His face carried the look of a man who had gone to France and come home believing he understood what organized construction at obscene scale looked like in service of one purpose.
-
-He had not understood it. He was learning it now, filed behind an oval receptor set a half-degree off true.
-
-"The Rod has no designation for this," Orim said. Quiet. Not to anyone in particular. "I have scried forty-seven membrane sites in fifty years. I have a working sense of what the membrane produces with decades of activity behind it." A pause. "I do not have one for what it produces with eleven centuries."
-
-Wren said nothing. He was looking at the walls the way a person looks at a piece of testimony they have carried a long time as documentation, in the process of becoming, in front of him, a fact.
-
-The rim itself was still a kilometer off, over ground the surveys marked as if it were empty. It was not going to be empty. Whatever waited between the treeline and that dark, patient weight would have to be crossed on foot, in a daylight the zone had already made its own, and none of them mistook the quiet ahead for an absence of anything.
-
-They went on into it, and the walls kept pace with them at the edge of sight - patient, the way patient things are when they have had eleven hundred years to learn there is no reason to hurry.
-
-[Beat 28]
-GREYMARCH - THE EMPTY FARMSTEADS
-
+[Beat 264]
 The road came down off the pass in switchbacks - six of them, by her count, cut for cart traffic that hadn't moved on this grade in longer than the ruts suggested. At the bottom the ground opened into cultivated land: hedgerows, a drainage ditch, a gate hung on hinges gone stiff with weather.
 
 She'd taken the sighting from the height of the last switchback, before the land closed in around them, and she held it now the way she held every reading that mattered: filed, timed, not repeated aloud more than once. South across the valley, on the horizon, something moved that was too large to be a hill and too wrong in its slow wet shift to carry any name the maps gave it. At range it read as motion only - a mound the color of muscle left too long in weather, hauling itself forward by a process she couldn't name, taking in anything its leading edge crossed. A stand of trees went into it while she watched. No sound reached her from that distance. No struggle she could see.
@@ -4274,8 +4127,7 @@ The quiet was the detail she logged hardest. Farmland was never quiet; even aban
 
 They went in through the gate gap rather than over the hedge. Wren checked the hedge first and found it grown through with something pale, faintly luminous, that none of them wanted to put a boot near. Single file down the track - wide enough, once, for two carts abreast.
 
----
-
+[Beat 265]
 The first body was in the yard of the second farmhouse, thirty meters off. At that range she took it for a scarecrow - wrong posture, arms out at an angle no living shoulder held more than a few seconds, torso reading flat as canvas stretched on a frame. At twenty meters the shape resolved: a ribcage opened outward like a door built to swing on hinges it didn't have. She didn't revise the read again. Nothing left to revise it into.
 
 The dead man - she made herself hold him as a man, not a specimen, the way Orim held the Still Faces by name rather than number - had been out in weather long enough that most of what marked him as a person was gone. Boots, mostly rotted. Belt buckle, corroded green. Hands folded in his lap, arranged there once, by someone, before whatever came after made the arranging meaningless.
@@ -4316,8 +4168,7 @@ Four more, in postures the household died in, not arranged into: a woman at the 
 
 Rowe hadn't gone into the house. He held the doorway, rifle at low ready, running the pattern. When Lyra came back out the receptor was fixed on the dead man - the readout had come again, unbidden, she read that off him before he spoke. He didn't offer it. She didn't ask. Something in the set of his shoulders - the new shell's, wider than the old, still not quite his - told her he'd carry this one a while before he set it down in front of anyone.
 
----
-
+[Beat 266]
 They found the face-worms in the ditch line an hour past the second farmhouse. Wren saw them first - he read ground the way the rest of them read tree lines and doorways.
 
 "Don't," he said, before Lyra had registered anything worth the warning, and put a flat hand in the air between Lyra's boot and where her next step would have landed.
@@ -4340,8 +4191,7 @@ Not whole. Each wingspan carried gaps where flight feathers should run unbroken,
 
 She filed that where things went that she'd need again before the night was out.
 
----
-
+[Beat 267]
 They saw the first of them across the ditch line, upright among the lodged grain of the fourth farmhouse's outer field. Four full seconds, and nobody in the party said a word.
 
 It stood at a man's approximate height and build, wrapped shoulder to boot in a suit sewn from hide - she made herself confirm that, because not looking would cost more later. Not one hide. Dozens, patched and re-patched, seams run in every direction a desperate hand could manage. Some plainly animal, coarse-haired, cured badly enough to still carry the shape of the flank it came from. Some - she held this the way Orim held the Still Faces, by fact rather than flinch - not animal at all. The stitching didn't discriminate. Neither, evidently, had whoever wore it.
@@ -4384,8 +4234,7 @@ They backed off along the ditch line rather than the direct route. Unhurried. No
 
 Nobody had an answer for either read that made the other less likely. Nobody offered one.
 
----
-
+[Beat 268]
 The deer came out of the hedge line an hour before the light started to go. For the length of one held breath Lyra thought - with something close to relief - that it was simply a deer. The kind of ordinary living thing this farmland should have held in plenty, and conspicuously hadn't shown her until now.
 
 Then it screamed.
@@ -4428,8 +4277,7 @@ She stood over it a moment longer than the kill required.
 
 Rowe said nothing. The receptor stayed fixed on the black head a long moment. Whatever readout came behind the dead lens, he didn't offer it, and this time she didn't read that as a man carrying it alone. She read it as a man who'd found nothing in it that would have made this easier to have done.
 
----
-
+[Beat 269]
 They reached the barn an hour before full dark - the fourth farmstead's holding, the biggest of the four they'd passed: a house with two chimneys, outbuildings enough for a family that had done well before whatever ended them, and a barn set back on a rise that put its loft window above the tree line. A long room ran the ground floor's far end - a bar counter still standing against the wall among collapsed trestle tables. The district's tavern: the kind of barn-and-bar a commons built when it was too small to need separate buildings for harvest storage and harvest drinking, and had never planned on needing either abandoned.
 
 "We shelter here," Lyra said. "Loft. One door up. Ladder we can pull."
@@ -4452,8 +4300,7 @@ He took the window - the one opening with a line on the yard below, the dead man
 
 She didn't know if that thought was meant to comfort her. It didn't, entirely. It also didn't leave her.
 
----
-
+[Beat 270]
 The loft held its silence the better part of three hours - a silence with texture to it: an old building settling, wind finding the gaps in the boards and singing through them low, the fields outside doing nothing at all, which after Greymarch's first farmhouse read less like peace than held breath.
 
 Rowe spoke first, quiet, not turning from the window.
@@ -4514,12 +4361,9 @@ Orim's hand found her ankle. Weak grip, fingers not quite closing, but there. Wh
 
 Wren took the third scorpion the way he'd taken the small kin-creatures three days back - not meeting it, arriving where it wasn't going to expect him, both daggers finding the seam behind the foreclaw where the plating hadn't finished closing - and it went down in two pieces and didn't reassemble the way, for one absurd half-second, some animal part of Lyra's mind had braced for it to.
 
-"How many more," Lyra said.
+Rowe fired again, into the yard below rather than the loft, where the ground was still moving in places that told her the count didn't have a ceiling any of them could see yet.
 
-"Don't know," Rowe said, and fired again, into the yard below rather than the loft, where the ground was still moving in places that told her the count Wren had asked for earlier didn't have a ceiling any of them could see yet.
-
----
-
+[Beat 271]
 The corpse-fusion things came up from the tree line while the scorpions were still working the barn's edge - a wrongness of silhouette against the last grey band of sky, too tall, too wide, moving with a lurch that had none of a single body's rhythm to it.
 
 "Two bodies," Orim said from the floor, thick-voiced, still tracking even flat on his back with a leg that wouldn't answer him. "Maybe three. Fused." He'd seen it before she had - watching from an angle low to the ground gave him, however useless the rest of him had gone in the last two minutes, a clearer read on the gait than her own upright vantage offered. "The Greymarch dead. Whatever does this doesn't need the chest cavity for everything."
@@ -4532,26 +4376,24 @@ The second one Wren took from the ladder head, low, before it had fully cleared 
 
 The ichor-birds came last, drawn by whatever in the night carried the sound and smell of a kill site to wherever they'd been roosting - three of them wheeling low over the yard on wings that shouldn't have held air and somehow did, sickle beaks catching what light remained. They didn't press the loft. They circled, patient, opportunist, waiting for whatever would be left when the fighting stopped. A quieter horror than the rest: scavengers who'd learned that farmland like this reliably produced something worth waiting for.
 
----
-
+[Beat 272]
 The last scorpion came up through a gap in the loft floor itself, where the old boards had rotted enough at one corner to let something patient find its way through, and it was on Rowe before the receptor's pattern caught the motion - low, middle, high, and this came from beneath, outside the pattern's design.
 
 He took the strike on the shell's forearm rather than anywhere the paralytic could reach him through whatever his borrowed nervous system did with a sting, and the readout came again - mid-strike, unbidden, printing behind the dead lens the way it always did - and this time he spoke two words of it aloud, flat, before the rest of the fight swallowed the moment whole.
 
-> INTAKE - SUBJECT PARTIAL
-> MASS: est. 40-60 kg, distribution segmented, tail-heavy
-> LOCOMOTION: subterranean approach, no comparable entry vector in prior catalogue
-> ARMOR: chitin-analog, ichor-sheathed, seam density irregular
-> WEAK POINT: ventral seam, forward third
-> SPHERE-SOURCE: - SIGNAL DEGRADED -
-> CATALOGUE STATUS: UNRESOLVED. RE-SCAN ADVISED.
+INTAKE - SUBJECT PARTIAL
+MASS: est. 40-60 kg, distribution segmented, tail-heavy
+LOCOMOTION: subterranean approach, no comparable entry vector in prior catalogue
+ARMOR: chitin-analog, ichor-sheathed, seam density irregular
+WEAK POINT: ventral seam, forward third
+SPHERE-SOURCE: - SIGNAL DEGRADED -
+CATALOGUE STATUS: UNRESOLVED. RE-SCAN ADVISED.
 
 "Signal's bad," he said, and put the bayonet into the ventral seam the readout had found him before the thought had fully finished forming, and the scorpion folded around the blade and stopped moving. He didn't say anything else about the readout. Some part of him - the part that was still a man from a coal town, not a war machine's clean accounting - had already decided the degraded signal was the barn's fault, or the night's, or the ichor fouling the lens, and not the first thread of a thing it would take a wider field and a bigger kill to make him stop being able to explain away.
 
 Lyra didn't ask him what the readout said. She had Orim's weight against her side by then, dragging him back from the loft's open edge to the wall where the scorpions and the fused dead couldn't reach him without coming through the whole of the rest of them first, and there was nothing in the next several minutes that had room in it for anything but the fight in front of her.
 
----
-
+[Beat 273]
 It ended the way these things end - not cleanly, by degrees, until there came a stretch of thirty seconds, then a minute, then five, in which nothing new came up out of the yard or over the wall or through the rotted floor. The ichor-birds, finding nothing yet worth the risk of landing, wheeled off toward the tree line and didn't come back.
 
 Orim's leg came back to him first - feeling returning as a deep ache rather than pain, pins and needles run to the bone. The arm took longer. By the time the grey started to lift toward whatever passed for morning in the Sinter zone's filtered light, he could flex the fingers, slowly, watching his own hand do it with the clinical attention of a man reassuring himself an instrument still worked.
@@ -4582,43 +4424,37 @@ Rowe stood at the window through all of it, the receptor running its pattern, pa
 
 She was right about that, though she wouldn't know how right until the rope.
 
-[Beat 29]
-SINTERSPAWN - THE EATERS AT THE PERIMETER
-
+[Beat 274]
 The rope came first.
 
 Strung between two dead trees at boot height, grey with age, slack in the middle where it had gone soft. A trip-line. Tensioned once to a bell - she found the bell four paces further on, half-buried in leaf litter, its clapper rusted solid. Somebody had built this line and walked it and stopped walking it, and the rope had stayed behind doing a job nobody serviced anymore.
 
 She logged the span before she logged anything else - habit, seventeen years of habit, the kind of measuring that had nothing to do with this ground and everything to do with the one she'd trained on. Twelve paces between trees. A single-strand line, no redundancy, meant to be checked and reset by hand on a rotation somebody had stopped keeping. That was the whole report. She filed it and moved on to the next thing that needed filing.
 
-Orim crouched at the knot without touching it. "Vigil-line," he said. "Old pattern. Twenty years, maybe more." He straightened slow, the way his knees made him slow, and looked past it into the trees. "They stopped maintaining this stretch."
-
-"Why."
-
+Orim crouched at the knot without touching it.
+"Vigil-line," he said. "Old pattern. Twenty years, maybe more."
+He straightened slow, the way his knees made him slow, and looked past it into the trees.
+"They stopped maintaining this stretch."
+"Why?" she asks.
 "Because the thing it was meant to warn them about started coming from somewhere the rope wasn't."
 
 She let that sit a moment and logged the ground instead of chasing the answer further. Three weeks she'd been walking country like this - packed earth, exposed root, standing water gone grey with autumn - and none of it read clean anymore. The trees held their shape. The moss didn't, not everywhere: patches of it had gone pale, faintly luminous, and climbed the root collar in a pattern that owed nothing to where the shade fell. She'd stopped cataloguing every wrongness at the two-hundred-meter mark. Too many to log individually. She'd need what attention she had left for whatever came next.
 
+[Beat 275]
 Rowe worked the pattern she'd learned to read as work and not wandering - low, middle, high, repeat, rifle at low ready, no strain on the wrist. The new shell ran a half-beat behind the old one on the turn from middle to high. A hitch in the shoulder actuator he'd never mentioned and she'd never asked about. He held at middle a fraction longer than the pattern called for.
-
 "Rowe."
-
 "Track." One word. He spent them like coin he wasn't sure would be honored.
 
 She came up on his position and sighted along the oval receptor. Print pressed into the pale moss, three points of contact - she knew the shape from the patrol reports, the same contact Wren would log a day out from here, from a different bend of this same crossing. Six legs. A pack, moving at pace.
 
 Wrong print, though. Deep on the outside edge, shallow on the inside - weight sitting somewhere a six-legged animal's weight shouldn't sit. Something in its build put more of itself on one side than the other and had simply gone on living that way.
-
 "Fresh," Rowe said.
-
-"How fresh."
-
-He crouched, the shell's knee joints folding with a small mechanical complaint that would've made him flinch, months back. Didn't now. Two fingers held an inch above the depression, no contact - she'd watched him do this at Schmalburg, reading a boot print in mud the same patient way he'd have read a shell crater. "Ten minutes," he said. "No more."
+"How fresh?" she asks.
+He crouched, the shell's knee joints folding with a small mechanical complaint that would've made him flinch, months back. Didn't now. Two fingers held an inch above the depression, no contact - she'd watched him do this at Schmalburg, reading a boot print in mud the same patient way he'd have read a shell crater.
+"Ten minutes," he said. "No more."
 
 Wren had gone still behind them - the particular stillness Orim called reading the room from the outside in, cataloguing before committing to react. One dagger half-drawn already. Not panic. The plain economy of someone who'd decided a long time ago that surprise cost more than readiness.
-
-"How many, total," Wren said.
-
+"How many, total?" Wren asks.
 "More than the print shows," Orim said. Rod's case in his hand, unopened, held the way he'd held it since the gate. "There's a smell under the smell."
 
 There was. Lyra had clocked it and set it aside, the way she set aside anything that wasn't immediately actionable - old iron, and under the iron something the iron was trying and failing to cover. A rot that hadn't finished rotting, like the process meant to finish it had been swapped out somewhere upstream for something else. Sat low in the chest. Didn't clear breathing through the mouth.
@@ -4626,17 +4462,14 @@ There was. Lyra had clocked it and set it aside, the way she set aside anything 
 The old Vigil hands had a phrase for ground like this. Paying attention.
 
 She'd filed that phrase for seventeen years at a desk in Ocipheus Station - soldier's shorthand, colorful, imprecise. Crossed the marker post three days back and stopped believing it was imprecise. Still didn't fully believe it was shorthand.
-
 "Positions," she said, and didn't need to say anything else.
 
----
-
+[Beat 276]
 They came off the pale moss on both flanks at once - told her before she'd finished turning that whatever hunted here hunted smarter than the six-legged crawlers the reports had warned her about. Those moved single-file, at pace, feeding on momentum. These came in a pincer, deliberate, the way a unit moves when something has already decided the pincer works better than the file.
 
 Three-quarters of a second of clean look before the first one closed distance. Small - dog-sized, bred too long and too hungry. Forelegs that didn't match each other. Left jointed twice, crawler-standard. Right jointed three times, ending in a hooked spade instead of a claw, moving wrong for its twin and compensating anyway. It had learned, or been built, or simply happened, to run crooked and land true. Its hide hadn't finished drying - an oil-black film sat in every joint hollow instead of running clear the way sweat or rain would, and under the film the skin looked thin, unfinished. Skin that hadn't earned the right to be tough yet.
 
 She took it on the shield, angled, felt the impact travel up through her shoulder - heavier than its size should account for, dense and wrong in the hand the way everything out here was wrong in the hand. Put the Dissolution Blade in on the return stroke, low along the flank where the plating gapped. The Catalyst compound in the channels did its job and refused the wound a close. Short, wet sound. It folded into the moss and stayed down. What came out of it wasn't blood by the time it hit ground - black, thick, unhurried, sitting on the pale moss like oil on standing water. Didn't dry.
-
 "Two, left flank," Rowe said, and fired before he'd finished the sentence. One round down clean, through what she took for a skull though it cost her half a second to find anything skull-shaped on the thing at all. The second shot took a furrow along the back instead of the vital mass, and it kept coming, and Wren was already there.
 
 She'd watched Wren fight four times before this and each time refined the same read: Wren didn't close distance, he arrived at it. The fold spent like a good gambler spends a hand of cards - rarely, never as the whole play. No blink through this one. He simply wasn't where it expected to land, and then he was somewhere it hadn't accounted for at all, both daggers crossing in on the joint where a foreleg met the shoulder, reversed grip finding almost nothing where the muscle mass should've been thickest. This thing hadn't grown to be armored. It had grown fast and hoped fast would be enough.
@@ -4644,11 +4477,8 @@ She'd watched Wren fight four times before this and each time refined the same r
 It wasn't. Wren left it in three pieces and rolled clear of a fourth before Lyra had registered there was a fourth.
 
 Six of the small ones, total. She counted the bodies the way she counted anything mid-fight, out of necessity, and stopped counting the moment the last one stopped moving - there was no report to file on rounds spent once the ground went quiet, only on the ground itself. Killing them cost less time than the last two hundred meters had. Clearing gone quiet after, the specific quiet that follows violence - not peaceful, spent - sword arm singing from six separate impacts, Wren wiping a blade clean on a fistful of pale moss like he was doing laundry.
-
 "Kin," Orim said. He hadn't moved from his mark, Rod's case still shut against his ribs. "Testing pack. Same as the crawlers in your reports, except-" He stopped. Looking past the bodies, into the deeper trees, at something she hadn't turned to see yet, longer than a look he'd normally spend on anything. "Except crawlers breed true within a litter. These don't match each other."
-
-"Meaning."
-
+"Meaning?" she asks.
 "Meaning whatever's making these hasn't finished deciding what they're for."
 
 Dry, unhurried - the way he reported weather. Worse for the dryness, not better. Six years she'd spent learning the difference between Orim's calm and Orim's fear, and this wasn't either. A third read she hadn't logged before. She filed it under the same heading as everything else out here she had no heading for yet, and told herself she'd sort the file later, at the rim, when there was time to sort anything.
@@ -4657,44 +4487,35 @@ She checked her own position while there was still a lull to check it in. Blade 
 
 The trees ahead of them moved. Not wind. Weight.
 
----
-
+[Beat 277]
 It came out of the stand at a height that made her recalculate every instinct three weeks of monster ground had built into her, in one held breath. Not fourteen feet at the shoulder like the harrower stories from the western garrisons had it - smaller than that, though still taller than a war-horse at the withers - and it didn't carry the ponderous weight the stories gave harrowers either. It moved like something still learning what its own mass was for. Three forelimbs where a harrower's stories gave it two, the third shorter, set higher on the chest, curled close - less a limb at rest than a limb still deciding what it would eventually be used for.
 
 Hide wasn't membrane-grey like the western tales had it. Slick - wet in a way nothing living in dry autumn air had business staying wet, the same oil-black film caught in every seam. Mottled dark under it, shifting at the edges, seams of pale blue-white light running the plate joints, pulsing on a slow interval she caught herself starting to count and made herself stop counting. Counting implied she expected the number to mean something. She'd learned not to trust that instinct out here.
 
 Eyes - two dark wet patches low on what worked as a face - didn't track her the way the kin's had tracked. Something else was doing the looking. The eyes were just where it had ended up putting them.
-
 "Don't run," she said, low, mostly for her own benefit. The reflex was old and strong and dead wrong for the geometry in front of her.
 
 It went for Rowe first - she'd turn that over later and not land on an answer that satisfied her - a long low charge that ate the twenty meters between treeline and clearing in under two seconds. Rowe read the geometry before it committed and put a fallen log between himself and the closing mass. Two rounds into the seam where the third limb met the chest.
 
 The rounds did nothing she could see. It didn't slow.
-
 "Lyra-"
 
 She was already moving. Six meters to close, and she closed them at a flat run, shield leading, angled to turn a charge rather than stop one dead - stopping it dead was a fool's play against something that outweighed her by a factor she wasn't calculating mid-swing. Felt the impact through the shield's resin face in a shudder that told her nothing about where it was soft and everything about how little she understood its build. No reach problem like a harrower had a reach problem. No problem she recognized at all. Every instinct six weeks of monster corridors had honed put her where she should've been, and the geometry didn't reward her for it. She held her footing anyway. That was the whole of the report she'd have filed on it: held.
 
 Behind her, small and cold and precise, Rowe went very still.
 
----
-
+[Beat 278]
 The oval receptor's lens stuttered behind his eyes - she'd learned to read that hitch as the intake routine working a thing it had no clean match for. When it settled he read it out flat, the shell's voice, not his:
-
 "Mass, three-ten to three-fifty kilos, forward-heavy. Gait's asymmetric, three-point, no comparable pattern on file. Plating's chitin-analog, seam's non-repeating, luminescent. Weak point - insufficient data. Off-catalogue. No Sphere match. First one on record."
-
 "No match," he said again, flat, the shell giving it no more weight than anything else. She'd learned by now the flatness was the tell, not the absence of one.
 
 Every Sphere on record carried a number, that was Vigil doctrine, drilled into her the same intake week they'd drilled her the chain of command: the numbering was how the war kept track of what it spent. Thirty-one Spheres, last briefing she'd sat through. Higher ranges rumored, unconfirmed, filed under barracks talk and left there. A thing without a number wasn't a gap in the filing. It was a thing the filing had never been built to hold in the first place. She logged that distinction and did not care for it.
 
----
-
+[Beat 279]
 She didn't have time to ask him what it meant. The creature recovered from the shield strike faster than anything its size should, came around for a second pass, low - the short third limb unfolding from the chest for the first time, hooked terminus catching the grey light. Not decorative. Not vestigial. A weapon nobody had built into it on purpose, grown because growing it had worked, at some point in whatever process made things like it.
 
 She took the strike on the shield again and felt something give - a crack running the resin face that hadn't been there a minute back - driven two full steps into ground that gave under her heel wrong.
-
 "Orim!"
-
 "Not yet," he said, and she believed him. She'd learned to trust the precision of Orim's *not yet* more than most people's *now*.
 
 Wren found the seam. Quiet since the small ones died, watching this new thing with the same patient outside-in attention he gave everything, and when he moved it wasn't toward the head or the limbs. Toward the flank, low, where the plating running in overlapping courses down its side thinned and doubled back on itself just behind the third limb's socket - a place where the growth had run out of a clean pattern to follow and simply left a gap, the way a badly poured wall leaves a seam where two pours met and didn't fuse.
@@ -4709,66 +4530,48 @@ Then no sound at all. It folded into the pale moss and stayed down. The black fi
 
 Three of them standing over it, none of them speaking. She checked each of them in turn, the way she'd been trained to check a line after contact - Wren upright, weight even, breathing hard but breathing even. Rowe upright, bayonet still fixed, weight favoring the new shell's off side by a margin she logged and didn't like. Herself last, shield cracked, arm singing, both feet under her. Line held. That was the whole of the assessment.
 
----
-
+[Beat 280]
 The quiet after had the same texture quiet always had here - spent, not peaceful - and it lasted exactly as long as it took her to place the second smell arriving under the first: woodsmoke, oiled leather, and blood already dried, carried in on somebody's clothing rather than freshly spilled.
 
 Four of them came out of the treeline the way people move when they've done this enough times that caution's gone economical rather than careless - leathers the same mottled grey-brown as everything out here, long-hafted pikes with barbed heads that told her, before any of them spoke, what those pikes were for and how often.
 
 The one in front was a woman, fifty or so, weathered past any easy read on her age, a burn scar running jaw to collarbone, healed badly, long ago. She looked at the dead creature first - long look, professional, cataloguing - then at the party, and didn't look surprised to find a Templar standing over a kill that wasn't hers to make.
-
 "You're off the reports." Not a question. Flat carry, a voice built to be heard over distance and wind. "Vigil-code on the shield. You crossed the Pass checkpoint."
-
-"Three days ago." Lyra kept the blade low, not sheathed. "You've been tracking this."
-
+"Three days ago." Lyra kept the blade low, not sheathed. "You've been tracking this?" she asks.
 "Two days." Her eyes went back to the corpse. Something in her face recalibrated - not fear, the specific reset of a professional whose whole confidence rests on having seen everything the ground can produce, meeting something the ground hadn't shown her yet. "We've taken eleven off this stretch since spring. Six-legs, mostly. Couple long-necks, west garrison's problem more than ours." She crouched by the body, careful, nudged the flank plating with a pike butt rather than a hand. "Not this."
-
 "You don't know it."
 
 The woman didn't answer that one herself. She let the silence sit a beat, no apology in it, the flat stance of a professional stating a fact about her own limits the way Lyra would have wanted any soldier under her to state one.
-
 "Nobody knows it." A younger one - a boy, not past twenty, the same weathered economy but learned rather than earned yet - spoke without being asked, and the woman didn't correct him for it. That told Lyra something about how the unit ran. "We don't name what we haven't seen before. Naming it's a promise you'll get to tell somebody else about it."
-
 "You'll want the biology," Lyra said. Not a question either. She'd read the patrol reports. Knew what the Eaters took and why - the arrangement the Liturgy's own filings called, when they called it anything, in language bloodless enough it had taken her three readings to parse: non-Liturgy Catalyst-adjacent compound, self-processed, unregulated. The institution's verdict on the people in front of her, best as seventeen years behind a desk had ever let her determine: tolerated, because they solved a problem the Liturgy made and declined to keep solving; unrecognized, because recognizing them meant explaining, in some sealed document, why eleven hundred conscripts had been left at this perimeter for three weeks on orders that amounted to survive if you can - and what had been done, after, to the ones who survived by methods the survey boards found distasteful to read about.
 
 She didn't say any of that. Filed it years ago, like everything else, and some fraction of the filing had lodged somewhere she couldn't fully name and stayed there since.
-
 "We'll want the biology," the woman agreed. "You'll want to walk on before we start. It's not a clean process."
-
 "We've seen worse."
 
 The woman looked at her a moment - not unkind, just assessing. Something in the look might have been respect, or might only have been one professional clocking another doing different work on the same dying ground.
-
 "Then you haven't seen this stretch in high summer." She turned back to the kill. That was the whole of the conversation the Eaters of Monsters were going to offer.
 
 The boy and the other two moved in on the corpse with knives already out, no orders given that Lyra heard, which told her the same thing the woman's silence had - this crew ran on drill, not command. She'd have wanted that crew under her own roster, if she'd had a roster left to want anything for. She filed the thought and left it there.
 
----
-
+[Beat 281]
 Rowe stood over the body a moment longer than the others, receptor tilted at the angle she'd learned meant he was looking hard rather than looking. When he straightened he didn't report it. She filed that too - Rowe always reported. This time he didn't, and the silence told her more than an out-loud reading would have.
-
-"What's it tell you," Orim said.
-
+"What's it tell you?" Orim asks.
 "Not a mutation." Two words at a time, flat, spending them like always. "New line. Still being made."
 
 He said no more than that. Whatever else the shell had given him, he kept behind the dead lens, in the tin voice that wasn't his and would never entirely be. Orim hadn't moved through any of it, Rod's case still shut in his hands.
-
 "That's twice now," he said, to no one, or to her, or to whatever private count he'd been keeping since the gate. "Twice something out here's told me it doesn't fit anywhere I know to look."
 
 He didn't say what the first time had been. She didn't ask. Some reports she'd learned to let a man file on his own schedule, not hers, and Orim had earned the right to keep his own schedule thirty years before she'd been assigned to this ground.
-
-"The Rod?"
-
+"The Rod?" she asks.
 "Still nothing. I haven't raised it." He looked at the corpse, at the Eaters already working over it with knives that had done this before, unhurried and unspeaking. "I don't think I need the Rod to tell me what a thing this new means, this close to the edge. I need it to tell me how many more there'll be before we reach the rim."
 
 Wren cleaned his blades again, same unbothered economy as before. His hands weren't quite steady doing it this time. Lyra logged that too - old habit, automatic. Four daggers, cleaned in the same order every time, edge then flat then grip. Wren had never once broken that order before today. He broke it now and started over halfway through.
-
-"How many kinds of these are there," Wren said, "that nobody's catalogued."
+"How many kinds of these are there," Wren said, "that nobody's catalogued?"
 
 Nobody answered. Not a question anyone standing in that clearing was equipped to answer.
 
----
-
+[Beat 282]
 They walked on before the Eaters finished their work - the woman with the burn scar had been right that it wasn't clean, and there was nothing further to gain by watching. Trees thinned ahead, pale moss giving way by degrees to bare stone scored across in a pattern weather hadn't made, and past that, past a distance her eyes kept refusing to resolve into a number that meant anything, the ground was going to stop being ground.
 
 That was when she saw the shape standing at the edge of it.
@@ -4778,13 +4581,10 @@ For a long moment she took it for rock - an outcrop the scoured stone had thrown
 It wasn't moving toward them. Didn't seem to have noticed them at all, far as she could tell in the failing light. Stood at the rim the way a thing stands that's always stood there, that measures its days in geology rather than hunts, one of the six arms lifting, slow, to touch something at its own feet she couldn't see from this distance and didn't want to.
 
 She put a rough number on the range out of habit and distrusted the number the moment she had it. Two hundred meters, maybe less at that height - close enough that a rifle round could reach it in under a second, far enough that the reach meant nothing if the report she'd just heard held. She didn't order Rowe to raise his weapon. Some assessments didn't need saying out loud to be understood by everyone standing in the line.
-
 "Don't," Orim said, before she'd so much as shifted weight toward it. One flat word carrying more warning than she'd heard from him in three weeks of warnings. "Not one you go looking at closer. Not today."
-
 "Rowe." She kept her voice level, mostly for her own benefit.
 
 Receptor already tilted at it, and for once the shell gave him nothing back - no stat-block, no cold cataloguing calm. Just a half-second stutter she'd learned to read as the intake routine reaching for a comparison and coming back empty even by its own low standard.
-
 "Range exceeded."
 
 Two words. He didn't elaborate. Watching the line of his jaw, she understood there was nothing to elaborate - whatever lived behind the dead lens had looked at the thing on the rim and declined to render a verdict, the way a man declines to guess the weight of a mountain.
@@ -4793,12 +4593,11 @@ Nobody moved toward it and nobody ran. Wren had gone still again, all four of hi
 
 It lowered the arm. Didn't turn toward them. Some slow tide of attention that had nothing to do with sight passed over the rim, past the party, out across the scoured stone beyond - indifferent in a way worse than hunger would have been - and then it just went on standing, one shape among what she was starting to understand would be many, at the edge of a wound that had had eleven centuries to decide what it wanted to grow.
 
+[Beat 283]
 They went around it. Not far around - no far enough at that height, not with that reach - angled their line to keep the fallen scoring of rock between the party and it, and nobody spoke above a working murmur until the shape had dropped behind a rise and out of sight. Even then the quiet after didn't read like distance. It read like permission, temporarily granted.
 
 Lyra ran the range on it one more time, out of the same habit that had made her run it the first time, and got the same answer she distrusted the first time. No number that meant anything. She filed the failure to get a number as its own kind of data and left it there.
-
 "That," Wren said finally, "is not going on a rope-and-bell line."
-
 "No," Orim agreed. "That's not for the Eaters either. Not for anyone carrying a pike." He didn't look back the way they'd come. "That's for whatever the crater's actually making, once it's had long enough to decide."
 
 Nobody asked him what that meant to plan for. There was no plan yet that fit it, and she'd learned these last three weeks not to ask a question before she had some use for the answer.
@@ -4811,13 +4610,12 @@ She ran the count of it while they walked, the way she'd have run any after-cont
 
 She didn't look back again. A great deal still ahead of her to file, and the filing, these last three weeks had taught her, only ever grew heavier the longer she carried it before setting it down.
 
-[Beat 30]
-THE RELIC - WHAT THE EYE HAS SEEN
-
+[Beat 284]
 Whatever the ground between the checkpoint and the rim had cost the party - and it had cost them, the farmstead and what had waited past it, the Eaters' line at the crater's outer perimeter and what it took to cross it - Orim let it fall behind him the way he let most things fall behind him: uncounted for now, on the understanding that a debt not written down is not a debt forgiven, only a debt deferred to a better creditor. It would keep for a fire and a count of the packs. Most things kept. He had built a long life on the fact of it.
 
 The crater's rim, when they reached it, did not resolve into the clean geological line the surveys had drawn. In places it was still stone. In places the stone had been consumed past the edge, so that what a boot found was not rim but the outward face of the layered growth itself, warm through the sole and faintly damp, giving very slightly before it held, the way skin gives before it doesn't. Lyra tested it and moved on. Wren came up on the near side and did the same - contact, confirm, continue, an unhurried method for unhurried unknowns - and said nothing about the warmth underfoot beyond noting it, once, with his eyes. Rowe took the longer, more exposed arc around the far side, the habit of a man who had always rather see a thing coming than be comfortable while it arrived. Orim came last, as he came last to most things now, the Rod's case still shut and useless against his ribs, carried the way a man carries a name he has stopped answering to but has not yet found the nerve to put down.
 
+[Beat 285]
 Lyra stopped at the rim and did not look for anyone across the gap.
 
 There was no one to look for. Orim had watched her do that kind of arithmetic before - checking for a thing that was not going to be there, out of a habit older than the reason for it - and said nothing. He had learned, forty years back, exactly how much good the saying of it ever did.
@@ -4828,6 +4626,7 @@ Vega. Twenty-six. A scribe by her own choosing, made because Lyra had gone into 
 
 Who had gotten here first. The question answered itself before he finished asking it. The letter had.
 
+[Beat 286]
 The ground held. Wren tested it twice more and stopped testing it, satisfied. Orim followed at his own pace.
 
 Lyra stood at the rim with the look of a woman who had spent eight months reading no action indicated in her sister's careful hand, and had crossed a continent to arrive at the place that hand had been describing the whole time, and had brought the last of its writing with her rather than leave it behind at a waystation counter. Orim read most of that before any of it was said. He had spent forty years reading exactly that look on exactly that kind of face, and the reading had never once been wrong.
@@ -4840,14 +4639,14 @@ Then she looked at the crater, and - Orim watched this part closely, the part th
 
 She did not open the case yet.
 
+[Beat 287]
 Lyra turned to the crater. Wren was already at her shoulder, watching the drop with the same patient, outside-in attention he had brought to everything since Caer Glas Moor. Orim stood a few paces back, the Rod's case still shut against his ribs. Rowe held the wider arc at the edge that he held at any ground he did not yet trust to bear his weight.
 
 She unhooked the case from her own hip. She had kept it there the last two days rather than pass it into Wren's pack - not from distrust of herself, she had told him, but because the lens generated a low membrane warmth she could feel through the leather, and eighteen hours of proximity had produced a specific attentional drift she had noted and corrected three times the first day, then decided to manage by keeping the case at arm's length on her belt rather than against her spine. Research hygiene, she had told him, three nights back, at a fire that had mostly burned down to embarrassment. Not fear. He had said nothing to that at the time. He said nothing to it now. A man who keeps his own counsel does not spend it on corrections nobody has asked for.
 
 She opened the case.
 
----
-
+[Beat 288]
 The first image was Year 630. Old country to him. He did not need her face to tell him the date; he had walked that year in his mind so many times the paving stones had names.
 
 The Relic did not replay recordings - it had been there, in proximity to what was being looked at, absorbing the membrane-impression of seven hundred and forty-one years of vigil observation, the aperture itself still standing open at the bottom of everything about to be shown, coming up through that same unhealed hole, in order, unbroken, because the eye had never once blinked long enough to lose the thread. He had explained this to apprentices once, in words very like these.
@@ -4858,16 +4657,14 @@ Primary biology in the basin floor. No wall colonization. Depth approximately tw
 
 Deeper than that - she would feel it rather than see it, the way a hand feels a draft under a door it has not yet opened - there was a colder stratum beneath Year 630 itself, older than the vigil's own founding. He knew she would not reach for it. Not today. It had kept for seven centuries without either of them. It would keep a while longer.
 
----
-
+[Beat 289]
 Year 833. The walls had changed. Not dramatically - a thing you had to go looking for the first time, and then could never again look away from. Dissolution, slow and patient and biologically driven: the alien organisms metabolizing the calcium silicate of the volcanic basalt and taking it in as both food and structure. The lower levels occluded, not by darkness but by organic density. Something moved down there, unresolved. Large. Larger than anything native to the Entos's surface.
 
 Wall colonization initiated, lower third. Basin depth exceeds observation range. Subsurface fauna: large, unresolved. Growth phase.
 
 The warmth of the Relic, at that age, was pleasant. He knew this the way you know a room you used to live in - not from looking now, but from a memory the body kept without asking permission. He had noted the pleasantness once, decades ago, and noted the noting of it as a thing to monitor, right up until there was no longer a case in his hands to monitor it with.
 
----
-
+[Beat 290]
 Year 1133. He watched her go still, and understood exactly why, because he had gone still in the same place himself, a lifetime and a Keeper's oath ago. The organic layering on the walls is visible from the rim - the standard phrase, filed under the appropriate heading, meaning nothing, because the thing it described was not a phrase.
 
 The crater wall in Year 1133 was alive. Not metaphorically. A slow, deep pulse, once every several seconds, a wave of faintly elevated bioluminescence moving top to bottom through the organic mass, into depths where the density thickened and the light from below stayed strangely constant, not-dark in a way it ought to have been dark. The pulse was not random, not merely biological. It was a frequency, and it shared nothing with any membrane signature he had ever calibrated an apparatus against, in years spent doing precisely that work before her. Not membrane. Not Entos. Alien in the technical rather than the colloquial sense - from elsewhere, built by elsewhere's biology across nine centuries, arrived by then at a complexity and a rhythm entirely its own.
@@ -4876,8 +4673,7 @@ The architecture in the lower reaches was dense enough to occlude any instrument
 
 Full wall colonization. Depth unknown. Biological organization: advanced. Frequency: non-Entos, consistent, non-membrane. Classification: insufficient. He had written a sentence very like that one himself, forty-some years gone, believing insufficient meant someone would eventually supply what was missing. He no longer believed that.
 
----
-
+[Beat 291]
 Year 1312. He felt her go rigid before the image had fully resolved, and did not need it to resolve for himself. Every Templar with vigil training had seen the Liturgy's account: secondary geological event at Sinter basin interior, Year 1312, early spring, duration approximately seventy-two hours. Elevated monster emergence at the eastern and southern Vigil line sectors. Extraordinary Vigil line response. Mass casualties among patrol units. The origin of the modern Eaters of Monsters - the emergency-response conscripts the Liturgy raised, then abandoned, and then had to make a policy about. The standing internal wound of the past fifty-nine years, and older, in the part of him that had helped write the first draft of that policy and had told himself, at the time, that a policy was a kind of mercy too.
 
 The Liturgy's record said geological.
@@ -4894,8 +4690,7 @@ The institution had known what the Sinter basin was, and had chosen containment 
 
 She kept looking.
 
----
-
+[Beat 292]
 Year 1337. Wylla. He knew the name before the image arrived, the way you know a name spoken low at a fire you weren't invited to. The patrol records called it the Year 1337 incident - three Vigil line rotation soldiers and a Templar assessment team, a four-day unauthorized penetration of the zone interior before extraction, the official finding zone-induced cognitive compromise, perimeter breach, secondary biological encounter. Among veterans who had done more than five years of rotation, the word was Wylla, said - if it was said at all - the way you name a thing you'd have preferred stayed unnamed. He had heard it said that way a hundred times and had never once, until this morning, had a face to put behind it. This part of the record had come after his own reading ended. He watched it now for the first time, same as she did.
 
 The creature stood in the upper zone, three hundred meters inside the rim, where the organic architecture loosened from the densely structured walls into something more mobile - the way a nervous system loosens from axon into terminus. Large - not machine-large, nothing built, but large in the way of things that have had a hundred years and no competition to grow in. Fourteen meters, possibly more; the frame ran out before the creature did, its shape continuing downward past the edge of what the Relic's angle could show, down into the same dark that swallowed everything below the transition zone.
@@ -4906,8 +4701,7 @@ The patrol extracted. No casualties, the official record said. The unofficial re
 
 Wylla. Origin: depth, lower levels, duration in zone in excess of one century. Size: fourteen-plus meters. Behavior: non-aggressive, observational. The biology has been building things. This is one of them. He let that sentence sit exactly where it landed, and offered it no company.
 
----
-
+[Beat 293]
 Year 1371 (59 AoV). Now. As close to the present as accumulated membrane contact could offer, accurate, he judged along with her, to within several months. The organic architecture in the upper crater walls was complete - not growing, complete at this level, and continuing to develop below it, the way a building finishes one floor of itself and goes on building the next one down.
 
 Neither of them could see the lower layers. Not because the image was too dim - the bioluminescence gave enough light. Not because the depth occluded the angle - a clean vertical sightline from the rim. The architecture in the middle and lower reaches was simply too dense to pass light through at all. A surface. The underside of a floor. Biological, structured, warm, pulsing at the frequency now catalogued three separate times over seven centuries, sitting some four hundred meters below the rim, and below the floor more, and below that more again, the depth continuing down to whatever waited at the bottom. Neither of them could see the bottom. He had never seen the bottom either.
@@ -4922,6 +4716,7 @@ She did not finish that field. He would not have finished it either.
 
 This was not archive. The eye had not stopped at Year 1337 and waited politely for anyone to arrive with the case. It had kept looking the entire time - through her childhood, her first infusion, seventeen years of calibrating an apparatus that measured everything except the one thing that mattered, through the crossing itself, through last night's fire, through forty years of a Keeper's shame that had never once made it into a report. Whatever the wall was doing at this instant, under this sky, was being fed into the same unbroken sight she was borrowing through the lens. The thing she was watching grow was growing right now, under her own boots, while she stood on the rim and watched it.
 
+[Beat 294]
 "Lyra."
 
 He heard Wren's voice go out across the ground before it reached her, and watched it fail to reach her, the first time.
@@ -4934,6 +4729,7 @@ Lyra kept looking. The pulse rate on the walls stayed consistent. But the thickn
 
 Radial growth: negative. Vertical growth: positive. Stone consumption at the floor: primary mechanism. The depth is not a feature of the impact. The depth is being made. He had come to a version of that sentence himself, forty years back, in the dark, alone with the case for longer than protocol allowed, and had never once written it down, on the grounds that a thing not written is a thing not yet true, which he had known even then to be a coward's arithmetic, and had used anyway.
 
+[Beat 295]
 Wren took the Relic from Lyra's hand.
 
 He had carried this lens before - out of an archive, through a wall, into a night he had not chosen so much as inherited. Something in how he held it now - loose, unhidden, out where anyone could see - told him he had stopped thinking of this leg of the errand as theft. So had Lyra, plainly. Neither of them had discussed it. There had been nothing to discuss. He noted, without comment to anyone, that he was the only person present for whom the word theft still meant something specific, and old, and his.
@@ -4952,15 +4748,14 @@ She stood at the rim, hand still curled, and looked at the crater without the le
 
 "Come away from the edge," she said to Wren. "Far enough to signal the perimeter. I want Orim to hear this." She touched the letter at her own coat, out of habit more than need - still sealed, still waiting on its own reckoning. "And then we go further."
 
+[Beat 296]
 She came away from the edge. They walked back through the transition zone together, back through the pale overlay growth and the pulsing walls and air that was colder than it had any right to be, given what was breathing beneath it. Orim fell in behind them at the distance he kept from most things now, close enough to be called for, far enough not to be first.
 
 He had not been told what she saw. He had not needed to be. He had read most of it himself, forty years and one theft ago, in a room with no window, holding a case that was not, technically, his to keep - a fact the Liturgy's own paperwork had never once disputed, and a fact he had spent forty years disputing anyway, in the only forum that had ever been available to him, which was his own silence. He understood, watching the case now hanging closed again at Wren's hip instead of Lyra's, exactly what closing it had always actually done. Not shut the eye. It had never once managed that. Only put the lid back over a window that had never blinked in seven hundred and forty-one years, so that an institution - and, for a stretch of years he still declined to measure precisely, a man - could go on calling it recovered, secured, safe in custody: words for a thing that had simply gone on staring into the dark, unwitnessed, because the one truth neither the Liturgy nor its Failed Keeper could survive was an eye they could not close, turned finally toward the light.
 
 He walked.
 
-[Beat 31]
-THE APERTURE - WHAT LOYALTY MEANS
-
+[Beat 297]
 Lyra counted the spires before she let herself do anything else. Thirty of them, crystalline, bone-pale, spaced the way things space themselves when nothing tells them how to grow. Thirty feet tall at the crater's rim, standing like a ribcage that had been open a long time.
 
 They were dead. The Sinter crawlers had stopped feeding here two years back - which was how the Descent Corps confirmed the spires had once been alive, in whatever sense counted as alive out here. Now the crawlers fed elsewhere. The spires stood.
@@ -4977,6 +4772,7 @@ The ridge was the last solid ground. Past it, the crater's original rim - the on
 
 She did not write that down.
 
+[Beat 298]
 Orim Zebulun sat on a cooled lava shelf near the inner edge, the Rod across his knees, doing nothing with it. He had tried it once, coming up. Three seconds. Then he had lowered it and set it across his knees and told her: I came to see something. I am seeing it. That had been forty minutes ago. Fifty years he had carried that Rod to the edges of the membrane's secrets, and now it lay across his knees like a tool that had finally arrived somewhere it had no further use. He did not look diminished. He looked like a man reading a river junction - here is the situation, here are the exits, here is what will matter in the next hour.
 
 Wren stood at the shelf's inner lip, where he had planted himself since the rise. Twenty-two years old, raised on the Sinter stories the way every child near enough to Sinter to fear it was - the catastrophe, the cautionary reckoning, the shape of what the Liturgy had proven willing to do - and the place was not what the stories had built him to expect. He held his own reaction carefully, both hands, the way you hold something before you know its weight. He had followed Lyra this far because the thing he had been trying to understand since he read the transfer documentation on the moor was somewhere in this zone, and he had not finished understanding it, and he did not stop short of finishing things.
@@ -4993,8 +4789,7 @@ Not relief. Not a younger sister's version of you made it - there was no younger
 
 That had been forty minutes ago.
 
----
-
+[Beat 299]
 "The soldiers he brought," Rowe said, not looking away from the crater floor. "They will not come down."
 
 "The zone quarantine prohibits it without Descent Corps authorization," Lyra said.
@@ -5019,8 +4814,7 @@ Not a question. She had known, somewhere on the road north, that he had put this
 
 He nodded. Not satisfied. Not forgiving anything. A fact set down in its correct place in his map of what had happened to him.
 
----
-
+[Beat 300]
 Prelacze came over the rise from the west, from the Quarantine Pass. Three Descent Corps soldiers came with him, full exposure kit - faces covered, Catalyst-treated armor, the gear the Corps required inside the perimeter. They stopped at the crest. They did not descend.
 
 Prelacze came down alone.
@@ -5043,9 +4837,9 @@ He produced a folded document from inside the mantle. "I have here a Canonical P
 
 "Who countersigned," Lyra said.
 
-"The Silence."
+"The Quiet Mass."
 
-That closed the last institutional door she had been holding open. The Silence governed the Liturgy. They did not appear publicly. When they countersigned an instrument, the appeal channels she had standing to invoke were finished.
+That closed the last institutional door she had been holding open. The Quiet Mass governed the Liturgy. They did not appear publicly. When they countersigned an instrument, the appeal channels she had standing to invoke were finished.
 
 She had known this was the answer since the Long Seat, the eighth theory, the shape of what Vega had been copying for six months. Knowing it in advance did not change what it meant. It changed only whether she was surprised.
 
@@ -5053,8 +4847,7 @@ She was not surprised.
 
 She looked at the Relic in her hand.
 
----
-
+[Beat 301]
 She had carried it since Caer Glas Moor, since the heather above Twr Brennid where Wren had held it out to Orim with the exhaustion of someone who had carried a thing too long and had finally found a place to set it down. Palm-sized. Lens-shaped, slightly convex on both faces. The material matched nothing in the Entos's catalogue - not glass, not polished stone, not any crystalline Catalyst mineral she had a name for. It was warm, always, regardless of the air around it. Slightly above body heat. Never higher. The warmth of something that had been working continuously for seven hundred and forty-one years.
 
 And it wept. Always faintly wet - a slow golden bead gathering at the rim of the lens, warm as the lens itself, the same amber that ran off Wren's lashes each time he came back through the world's skin. That was why it rode in a lined, sealed case and not a jeweler's box: the case was a dressing. Leave the seep to stand and the inner seam crusted pale - membrane-flesh proliferating at the lip the way it did at any aperture left open too long, straining to widen, trying to grow something in the wet. She had wiped it clean a dozen times since Caer Glas Moor. It had bled, patiently, the whole way here.
@@ -5071,13 +4864,13 @@ The window had already shown her this once, at the rim above the marker posts - 
 
 Year 1312. Three months before the Event.
 
-The archive room at Ocipheus Station. A woman at a desk in Canon's mantle, older than Prelacze, considerably older. Writing. A sealed communication, the recipient designated only by the Silence's countersign. Lyra could not read what was written. She could read what the woman's posture said: I understand what I am confirming. I am confirming it anyway.
+The archive room at Ocipheus Station. A woman at a desk in Canon's mantle, older than Prelacze, considerably older. Writing. A sealed communication, the recipient designated only by the Quiet Mass's countersign. Lyra could not read what was written. She could read what the woman's posture said: I understand what I am confirming. I am confirming it anyway.
 
 Then the valley floor, same period. The Scrywell array still running, still recording. Above it, in the upper atmosphere, something the same unbroken sight had been watching from an angle no apparatus had ever been built to ask about - watching long before any operator sat at that desk. It had communicated what it saw. Not to the instruments. To the operator at the desk. The operator had written her letter. The letter had been sealed.
 
-Three million eight hundred thousand people in the valley had gone to sleep that night with no knowledge of what was coming. The woman at the desk had known. The Silence had countersigned the acknowledgment of received knowledge. The decision was never written anywhere, because the decisions that matter most never are. They live in the gap between the knowing and the response - in the silence after the letter is sealed, where we could warn them becomes something else, and then becomes nothing at all.
+Three million eight hundred thousand people in the valley had gone to sleep that night with no knowledge of what was coming. The woman at the desk had known. The Quiet Mass had countersigned the acknowledgment of received knowledge. The decision was never written anywhere, because the decisions that matter most never are. They live in the gap between the knowing and the response - in the silence after the letter is sealed, where we could warn them becomes something else, and then becomes nothing at all.
 
-The Liturgy had gained, from Sinter's absence, every arbitration function Sinter had ever held. The Silence had gained, from one sealed letter, more institutional authority than any single act in the Entos's recorded history had produced.
+The Liturgy had gained, from Sinter's absence, every arbitration function Sinter had ever held. The Quiet Mass had gained, from one sealed letter, more institutional authority than any single act in the Entos's recorded history had produced.
 
 Year 1312, after. The window showed the Event the way it had actually happened, not the way the Liturgy logged it. Not an eruption. Not volcanic. A threshold reached, six centuries in the building, driven outward through whatever venting the crater allowed. Not a catastrophe visited on the valley from outside. A birth - the first frame of the thing this same window had gone on watching grow, year over year, into whatever was assembling at the crater's bottom now. It had not recorded a birth and moved on. It had kept watching that same birth become an army, unbroken, every year since.
 
@@ -5091,11 +4884,10 @@ She did not put it down when she should have.
 
 She kept it raised.
 
----
-
+[Beat 302]
 The showing lasted a long time. She could not have said how long. The cold had stopped mattering. The chord of the Singing Spires was still in her chest, unchanged, as indifferent to what the lens had shown as it was to everything else.
 
-Prelacze had watched. He had no choice - the showing was not private. Everyone at the rim had felt the air shift as it began, the membrane's warmth answering, the sense of being inside something presenting itself. He had watched the woman at the desk. He had watched the valley. He had watched what the membrane communicated, what the woman wrote, what the Silence countersigned.
+Prelacze had watched. He had no choice - the showing was not private. Everyone at the rim had felt the air shift as it began, the membrane's warmth answering, the sense of being inside something presenting itself. He had watched the woman at the desk. He had watched the valley. He had watched what the membrane communicated, what the woman wrote, what the Quiet Mass countersigned.
 
 Lyra watched him watching it. Not shock crossed his face. Not the look of a man whose plan had been destroyed. He was not that kind of man. It was the look of someone who had built toward a fixed point for three years and arrived to find the ground different from how he had mapped it. He had wanted controlled leverage. He had wanted the evidence surfaced through him, in his custody, interpreted and deployed toward the reform he genuinely believed the institution needed. He was not wrong about the reform. He had not accounted for what the Relic actually was - not an archive he could open on his own terms, but a window that had never once closed, fixed on the crater since before the institution existed to need it.
 
@@ -5105,8 +4897,7 @@ It was also more than he had known to want.
 
 She watched that cross his face too, filed it, and the Relic's temperature dropped back to its habitual warmth - slightly above body heat, the warmth of continuous work. The showing was done.
 
----
-
+[Beat 303]
 Rowe had not looked away. Seven months in the Entos had given him a soldier's grasp of its broad shapes: there was a structure, a hierarchy, and the hierarchy had reached across a membrane and taken him and put him inside it. Watching the woman at the desk, watching the valley, he understood that the man in the mantle was arguing over ownership of the thing that had recorded the decision behind everything that had happened to him - that the thing had been watching since before the mine he'd worked in was built, and that what it showed now was the shape of the choice that had made the rest of it possible: the harvests, the Piercing, the oath sworn in a language he had not yet had.
 
 He was standing very still.
@@ -5133,8 +4924,7 @@ Turret 34 had refused to fire once, months gone, and had been noted for it and n
 
 Nobody scrapped him today. Nobody would ever know there had been anything to scrap him for.
 
----
-
+[Beat 304]
 "The writ is still valid," Prelacze said. "The institutional authority of the Canonical Property Recovery Act has not changed."
 
 She heard, in his voice, the thing that separated him from a man simply persisting in error: he believed this was relevant. He believed the instrument still applied, and he was not wrong - it did. He was making a category error, mistaking the instrument is valid for the instrument will accomplish what I intend. The same error as mistaking I am right for this is true. Decades in the institution had taught him to make it. It had served him well enough that no one had ever given him a reason to name it.
@@ -5159,12 +4949,11 @@ His hands did not shake. He held it the way he held every object in that stone r
 
 That was all he said.
 
-Prelacze looked at him the way a man looks at the exact point where his mechanism failed to account for something. The Vigil Standing Order's archive clause was older than any canonical property instrument currently in force - written before the current institutional hierarchy existed, maintained through seven centuries of the Liturgy's growth around it without ever being folded into canonical authority, because the vigil archive's independence from canonical control had been the price the founding Houses set for joining the compact at all. He could challenge it. In a full canonical review, with the Silence behind him and time to find the mechanism, he might eventually succeed. He would not succeed today. He had brought the Keeper to witness the Relic's transfer into his own custody. In doing so he had placed his own countermeasure directly into Lyra's hands.
+Prelacze looked at him the way a man looks at the exact point where his mechanism failed to account for something. The Vigil Standing Order's archive clause was older than any canonical property instrument currently in force - written before the current institutional hierarchy existed, maintained through seven centuries of the Liturgy's growth around it without ever being folded into canonical authority, because the vigil archive's independence from canonical control had been the price the founding Houses set for joining the compact at all. He could challenge it. In a full canonical review, with the Quiet Mass behind him and time to find the mechanism, he might eventually succeed. He would not succeed today. He had brought the Keeper to witness the Relic's transfer into his own custody. In doing so he had placed his own countermeasure directly into Lyra's hands.
 
 There was no triumph in it. There was only the mechanism catching, and holding.
 
----
-
+[Beat 305]
 Lyra had been carrying the answer to this since the checkpoint.
 
 She took her sister's letter from inside her coat - the same sealed fold she had touched at the rim without opening, twice more since. Notary press on the outer seal, dated three weeks and more before this morning, addressed for a woman who had not yet been able to name what she was walking toward when it was written. She broke it now, in front of witnesses, the way Vega had surely known, writing it, that it would eventually have to be broken.
@@ -5181,15 +4970,14 @@ She folded it back along Vega's own crease, addressed the outer fold to the Long
 
 Lyra looked at Prelacze.
 
----
-
+[Beat 306]
 He was where he had been standing. He looked at the sealed instrument. He looked at the Keeper, holding the Relic with the same unhurried care he brought to every object in his custody. He looked at Lyra.
 
 He did not move to detain her.
 
 He could have. The writ authorized it. The zone was under his administrative jurisdiction, the Descent Corps soldiers on the ridge were there on his authority, and the chain of offenses he could charge her with was long and each item correctly documented. He had the authority. He was not using it.
 
-She understood, watching him look at what the Keeper now held and at the sealed letter now in Wren's keeping, the shape of what he actually wanted. The Relic itself was already beyond his reach, routed under the clause to the Long Seat's keeping. Her sister's account - certified weeks before any of them had set foot on this ground, dated and sealed before his writ existed to be cited - was the first canonical record of the classification he had spent three years building around, already routed toward the same body. Arresting her would not return either of those things to him. Detaining the Keeper would produce a canonical crisis the Silence would spend six months resolving, and the instrument's validity could not be challenged in the meantime. Taking the letter from Wren's keeping would not unmake the fact that a Registry notary had certified it weeks ago, under her own seal, with her own name on the file the Liturgy still held. What he wanted was the founding suppression, in his custody, deployable toward the reform he had spent thirty years building toward. He did not have it. He was not going to have it today, or in a month, or possibly in a year.
+She understood, watching him look at what the Keeper now held and at the sealed letter now in Wren's keeping, the shape of what he actually wanted. The Relic itself was already beyond his reach, routed under the clause to the Long Seat's keeping. Her sister's account - certified weeks before any of them had set foot on this ground, dated and sealed before his writ existed to be cited - was the first canonical record of the classification he had spent three years building around, already routed toward the same body. Arresting her would not return either of those things to him. Detaining the Keeper would produce a canonical crisis the Quiet Mass would spend six months resolving, and the instrument's validity could not be challenged in the meantime. Taking the letter from Wren's keeping would not unmake the fact that a Registry notary had certified it weeks ago, under her own seal, with her own name on the file the Liturgy still held. What he wanted was the founding suppression, in his custody, deployable toward the reform he had spent thirty years building toward. He did not have it. He was not going to have it today, or in a month, or possibly in a year.
 
 He was the kind of man who understood exactly what that meant. He had the mobilization staged. He had war constructs in a staging hall that had been locked for eleven years and was not locked now. He had columns moving toward the Pass and a contingency reserve released. Nothing that had happened here unmade any of it. Nothing here resolved anything. It only changed which canonical instrument existed first.
 
@@ -5215,8 +5003,7 @@ She watched them cross the ridgeline and go out of sight.
 
 The Singing Spires vibrated.
 
----
-
+[Beat 307]
 Nobody spoke for a while.
 
 Orim got up from his piece of volcanic stone, slowly, with the deliberate care of a man in his late sixties paying for having sat too long on cold ground. He came to stand at the shelf beside Lyra and looked down into the crater at the aperture site. "The Rod," he said, "is, for the first time in fifty years, entirely superfluous."
@@ -5259,6 +5046,7 @@ Wren came to the shelf, finally, after standing back from it for twenty minutes.
 
 Wren stood with that. Twenty-two years old, and he had watched everyone he had crossed the moor with die for something more complicated than he had been told it was, and had followed a Templar into the worst zone in the Entos because the alternative was standing in the dark with nowhere left to go. Whether he had found what he came here to find - whether the question the canonical documentation had opened in him was now closed, or only relocated - Lyra could not tell. She did not ask. Some things a person had to arrive at on their own schedule.
 
+[Beat 308]
 Lyra stood at the shelf a while longer, alone now, and let herself think of Ardea for the first time since the rim. Ardea had died at Schmalburg, quickly - a round through the chest in the Helothworkers' Lane, taken pulling Rowe back from a Fjorheim raiders' firing line a half-second before it found her. Lyra had put Ardea's absence in the part of her accounting she did not open during active situations, and had not opened it since. She would open it. She was not ready. Ardea would have found this impressive. She would have had something useful to say. She always did.
 
 She had. Six years, which was not enough, and which was what death was in the permanent form the Entos gave it: not enough, then finished, then the gap in the accounting you carried until you were the gap yourself.
@@ -5275,8 +5063,7 @@ Rowe came to stand near her. He looked toward Wren's kit, where the sealed lette
 
 He was quiet. Not satisfied. Located.
 
----
-
+[Beat 309]
 They came down off the ridge in the last daylight and made for Sal Vento, and the party that had crossed a continent together came apart the way traveling parties do, without ceremony, in a dock square full of other people's business.
 
 Orim did not say goodbye. He said, "There are three Sphere-12 sites along the Verlaine northern approach that have not been catalogued since Year 1341, and I intend to spend the winter correcting this," and walked away toward a road-house he apparently had a standing arrangement with. Lyra let him go.
@@ -5297,8 +5084,7 @@ He adjusted the rifle on his shoulder and went south, toward Atrament and its fa
 
 She held the name for the eight days it took her to reach Ocipheus. Aldenvast. A city she could not find, on a world she could not reach, given to her as the one gift a man had left to give - not a word the shell had only now learned to produce for him, but the one he had carried whole and sayable since the night they took him, and had refused her, out of grief, for seven months. A man who had not been asked whether he wanted to come here, who had chosen, at the one moment it would have cost him least to become a weapon again, to remain instead the small overlooked thing the Taking had made of him, and had answered, this time, with a name instead of a number, and had walked south without waiting to be thanked for it.
 
----
-
+[Beat 310]
 The vigil room at Ocipheus Station was smaller than she remembered.
 
 Not literally. The dimensions were unchanged - the long stone chamber, the apparatus along the northern wall, the operator's chair bolted to the floor at the correct angle, the lamp-brackets, the membrane boundary visible through the apparatus's maintained window at the southern end. She had sat that chair seventeen years. The room had not changed.
@@ -5331,38 +5117,43 @@ The membrane had been here since before the institution. The institution had bee
 
 She watched until she could not tell, with any certainty, which of them had moved first.
 
-[Beat 32]
-THE FAR EYE — WHAT THE WEEPING EYE WATCHED
-
-*The crater rim — before Prelacze came down from the ridge.*
-
+[Beat 311]
 A crater is a wound the world takes and closes. This did not have those manners. This went down.
 
 It went down in terraces, the way a quarry goes down, except no one had quarried it, and each terrace was lower and wronger than the one above it — a fact Orim noted the way he noted grade and drainage on any ground he meant to walk again, which was not the same as caring about it. The rock at the rim was ordinary grey limestone, dry, unremarkable. Thirty feet down it began to sweat. A hundred feet down it wept — genuinely wept, dark beads standing and running and never drying — and past that the walls stopped keeping the discipline of being walls and went soft and glistening and faintly, terribly organic, and the light that found the bottom was the color of a four-day bruise. He had seen the membrane do this once before, forty years gone. He said nothing about that. He rarely did.
 
 Ichor threaded the whole of it, thin black filaments following the water up through the seams, climbing patiently, the way water climbs when it has nowhere better to be. Along the lip of the Gate the burn teams walked their line still, lances out, putting flame to anything black that had crept above the mark since the last pass. Naphtha, and under it the sweet rot the fire was for. They burned it because fire killed it clean — the same principle Orim carried on his own back, in the round case, scaled down to a thing a man could hold: keep the wound from festering, or lose it.
 
+[Beat 312]
 Rowe had stopped a step behind the girl. Orim watched the Myrmidon's stillness the way he watched weather — there was a stillness that meant holding position, and a stillness that meant having seen something, and this was the second kind, and Orim let his attention follow the blank oval of that face down the slope to a length of steel picket half-swallowed in scree, the wire twisted in a pattern that told Orim exactly what it was and told the boy that it was his.
 
-"That's ours," Rowe said. Not the Entos's. His. Filed, quietly, against a ledger only he kept. Orim had already seen the wire, the way he had already seen most things in this country, and had stopped mistaking recognition for surprise some decades back. Wren had not looked away from the bottom of the Cavity since the rise; his face had gone the particular white of a man whose worst reading of a document has just been confirmed by the ground under his own feet. Orim noted that too, and set it beside the wire, and neither fact explained the other yet.
+"That's ours," Rowe said.
+
+Not the Entos's. His. Filed, quietly, against a ledger only he kept. Orim had already seen the wire, the way he had already seen most things in this country, and had stopped mistaking recognition for surprise some decades back. Wren had not looked away from the bottom of the Cavity since the rise; his face had gone the particular white of a man whose worst reading of a document has just been confirmed by the ground under his own feet. Orim noted that too, and set it beside the wire, and neither fact explained the other yet.
 
 Wren's hand found the strap of his own satchel and gripped it, looking hard at the abyss. Lyra turned to make some dry remark to Rowe, the way she did when the ground under her got too honest to stand on plainly — and caught her own face in the blank of him, small and warped, rolling its eyes at the rim of the end of the world. She stopped rolling them.
 
+[Beat 313]
 Orim had been watching the girl longer than he had been watching the pit. This was not new information about himself. He said her name once — a single syllable, no more force in it than naming a landmark — and she looked where he was looking, and stopped thinking about any of it, which was the intended effect, or was simply what happened, and he did not trouble himself over which.
 
 The Weeping Eye was in her two hands before she seemed to know she had drawn it. The ring was cold; the membrane behind its glass sat dull and grey, the way it sat when there was nothing recent behind it, gold weeping thin at the rim and running warm over her knuckles. She lifted it, deliberately now, and looked through it at the bottom of the Cavity the way a person raises a lens to a far thing, not yet understanding that the far thing had already found the near end of the glass.
 
 The membrane was not dull. It had been to this ground before — to this ground, Orim judged, for seven hundred years, from the other side. Through the ring the lowest terrace came up close, and in the bruise-light something moved that was not, properly speaking, moving.
 
+[Beat 314]
 A face. The size of a cathedral, tilted up out of the rot, stone for longer than the Liturgy had kept a single unbroken line of record. A giant. One socket, central, vast, and set inside it a single eye that was not stone. Wet. Dark. Open. Pointed straight up the shaft with the flat unbroken attention of a thing that has looked at one place for the whole of its existence and intends to go on looking. A cyclops gone to rock around a single living eye, watching the Cavity go down, watching it rot, watching — Orim let the girl arrive at this herself, since she would, and since arriving at it herself was the only way it would hold — from the far end of the very instrument she was holding. The Oculus had always seemed to look with intent. Here, on the seven-hundredth year of asking, was the intent, unaccompanied by any explanation Orim intended to offer. The Relic was a keyhole. This was the eye on the other side of the door. It had been watching back through this glass since Year 630, and — this much Orim kept to himself, the way he kept most things — considerably longer than that.
 
+[Beat 315]
 Nobody knew what it was. She would ask him on the walk out, and he would not tell her he did not know, only that he would not say, which she would mistake, reasonably, for the same sentence. She would ask her sister, who had crossed the whole of the Inner Sea in ink to put a truth into these two hands — the real reason the Liturgy had ever wanted this Relic — and Vega's truth would not reach this deep. Small, human, terrible, Vega's reason. This was none of those three things, and the two facts would sit together in the same hole and decline, politely, to explain each other. Orim recognized the look that puts on a person's face. He did not warn her it does not go away.
 
+[Beat 316]
 There was nothing here to fight. A mountain with a face is not an enemy; it is a fact, and facts are not defeated, only witnessed and set aside. The Cavity would go on going down, by the width of a hair while they stood there, as patient as the Heloth hauling gear at the last checkpoint, which worked whether or not anyone watched it work. The burn line a quarter mile back held a border against a thing that was not coming up the walls, because it had no need to come up. It was already here. It had always been here. It was looking at her, and — Orim allowed himself this much, no further — it had been looking at him too, for longer than either of them cared to name.
 
+[Beat 317]
 The girl lowered the ring. The membrane went grey. The face at the bottom of the Cavity did not, Orim was reasonably certain, stop watching merely because the lens had been lowered. Eyes of that vintage rarely blink for anyone's convenience.
 
-"We're going back," she said, steady, which seemed to surprise her more than it surprised him. "All of us. Now."
+"We're going back," she said, steady, which seemed to surprise her more than it surprised him.
+"All of us. Now."
 
 Behind her, Rowe's oval tipped one degree toward Wren, one degree toward the pit, filing both with the same patience Orim recognized as his own, worn on a younger face.
 

@@ -1,218 +1,1139 @@
 {
   "nodeCode": "ICFI",
-  "generatedAtUtc": "2026-07-25 23:30:47Z",
-  "beatsScanned": 14,
-  "cleanBeats": 4,
-  "totalFindings": 20,
+  "generatedAtUtc": "2026-07-27 06:33:24Z",
+  "beatsScanned": 228,
+  "cleanBeats": 125,
+  "totalFindings": 112,
   "bySeverity": {
-    "MODERATE": 2,
-    "MINOR": 18
+    "MODERATE": 13,
+    "MINOR": 99
   },
   "byType": {
-    "MEANING-MISMATCH": 4,
-    "GRIPE": 12,
-    "CLICHE": 4
+    "GRIPE": 94,
+    "CONTRADICTION": 7,
+    "CLICHE": 9,
+    "MEANING-MISMATCH": 2
   },
   "findings": [
     {
-      "BeatId": "019f3eb2-6438-7ac8-966c-24e14b3fd4b2",
-      "Number": 5113,
+      "BeatId": "019f9ff8-a08b-72a6-ad12-f2092d3dbcc5",
+      "Number": 6149,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "And a thing only fed on what had once been alive.",
+      "Note": "Reads as a pseudo-profound aphorism/universal-truth quip rather than character-specific reasoning; slows the reveal with generic logic.",
+      "Fix": "Ground it in his specific fear or knowledge, e.g. \u0027Which meant something in the hull had been alive.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7505-8fc7-54f89dc4e2ae",
+      "Number": 6164,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "There was a word for what Pip had just done. He didn\u0027t use it. It would have been either too small or too big, and he wasn\u0027t sure which.",
+      "Note": "Vague pseudo-profound hedge that tells us Wes is having a Deep Moment without committing to any actual content; reads as filler introspection rather than earned insight.",
+      "Fix": "Either name the word and interrogate it, or cut to action/observation."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7050-996e-fc0c006dd944",
+      "Number": 6178,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "two long lateral ones... The rear leg was shorter, balancing. All three folded and unfolded",
+      "Note": "Text says \u0027two long lateral ones\u0027 then separately introduces \u0027the rear leg\u0027 as a third, but never establishes three total until \u0027all three\u0027 \u2014 the count arrives without being set up, reading as inconsistent tallying.",
+      "Fix": "Establish upfront: \u0027three legs: two long lateral ones... and a shorter rear leg for balance.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7f1a-88f9-dee84b423e1c",
+      "Number": 6219,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CLICHE",
+      "Severity": "MODERATE",
+      "Quote": "Biplanes off the Empire State Building.",
+      "Note": "A King Kong reference used as shorthand pathos is a stock cultural touchstone standing in for the character\u0027s actual feeling.",
+      "Fix": "Replace with a specific, non-borrowed image tied to Wes\u0027s own experience of the formation."
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7b7a-b09c-ce201720ae08",
+      "Number": 6220,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "and he wasn\u0027t sure anything would, or that it should",
+      "Note": "Hedging aphorism that muddies the character\u0027s stance without adding real ambiguity \u2014 reads as authorial qualification rather than thought.",
+      "Fix": "Cut the clause or replace with a concrete doubt specific to the situation."
+    },
+    {
+      "BeatId": "019f9ff8-a08d-729a-a535-da9cc76f9d2e",
+      "Number": 6230,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "He\u0027d tried to leash it.",
+      "Note": "This past-perfect aside implies a prior failed attempt, but nothing before it establishes Wes (or whoever \u0027he\u0027 is) having already made any move to leash the machine \u2014 it contradicts the following beat\u0027s claim he \u0027couldn\u0027t get down in time\u0027 and \u0027had already shouted twice,\u0027 which reads as the first response, not a second.",
+      "Fix": "Cut the line or replace with something that doesn\u0027t imply an unestablished prior action, e.g. \u0027There was no time to leash it.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7b67-b33b-4602cbc0eed4",
+      "Number": 6236,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "MEANING-MISMATCH",
       "Severity": "MODERATE",
-      "Quote": "His face hadn\u0027t changed since she arrived \u2014 not surprised, not relieved, not visibly working anything out. The face of a man who\u0027d made his choices a long time ago and wasn\u0027t going back over them.\n\nShe didn\u0027t know what he meant. She didn\u0027t have time to ask.",
-      "Note": "CJ reacts to Nzambe\u0027s face as if he\u0027d said something (\u0027what he meant\u0027), but no dialogue or line preceded this \u2014 the referent is missing, breaking sense continuity",
-      "Fix": "give Nzambe a short ambiguous line before this, or change \u0027what he meant\u0027 to \u0027what he was thinking\u0027"
+      "Quote": "The yellow vest was on the drainage concrete",
+      "Note": "euphemistic metonymy (vest standing for the body/death) undercuts the brutal clarity the beat seems to want after a graphic kill",
+      "Fix": "name the body directly, e.g. \u0027The man in the yellow vest was on the drainage concrete, not moving.\u0027"
     },
     {
-      "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
-      "Number": 5116,
+      "BeatId": "019f9ff8-a08d-7db6-96a2-b7c83ed0d2f3",
+      "Number": 6240,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "MEANING-MISMATCH",
+      "Type": "CLICHE",
       "Severity": "MODERATE",
-      "Quote": "Pip went to the buried spot. He\u0027d been patient through all of it \u2014 the burial, the descent, the leaving \u2014 and now he did what he did at every stop that mattered. He sniffed the sealed patch of asphalt, thorough, starting at one",
-      "Note": "Purpose calls for Pip trotting to the nearest tine and lifting his leg on the machine itself, with the machine\u0027s non-reaction as the joke; instead the excerpt has him investigating the buried spot on the ground, and the beat cuts off before the leg-lift or the machine\u0027s reaction appear at all.",
-      "Fix": "Redirect Pip to the nearest tine as specified, include the leg-lift, and show the machine\u0027s indifference to complete the comedic beat."
+      "Quote": "His stomach dropped before the sound reached his ears",
+      "Note": "Stock physical-fear shorthand (\u0027stomach dropped\u0027) that reads as generic dread signaling rather than specific sensation.",
+      "Fix": "Replace with a more specific bodily detail unique to this character/moment."
     },
     {
-      "BeatId": "019f3eb2-6438-7708-811b-181074c46ad0",
-      "Number": 5104,
+      "BeatId": "019f9ff8-a08e-7c17-8dee-7b550f9a7f34",
+      "Number": 6243,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "It had stepped where it was walking, and a man had been in the step, and it went on walking, because going on walking was the only thing it had been doing all day.",
+      "Note": "The circular phrasing (\u0027stepped where it was walking\u0027) strains for a flat, mechanical tone but collapses into near-nonsense rather than clarity; the repetition of \u0027walking\u0027 three times reads as an effect chasing itself rather than earning its bluntness.",
+      "Fix": "Tighten to something like: \u0027It had stepped where a man was standing, and it went on walking, because walking was the only thing it had been doing all day.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-70b1-bd23-dfd6dec9a588",
+      "Number": 6289,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "\u0022I\u0027ve had it since Davenport.\u0022",
+      "Note": "This line answers a question that hasn\u0027t been asked yet in this exchange (no prior mention of \u0027it\u0027 or Davenport in the given excerpt), reading as a non-sequitur reply to \u0027There was a sound.\u0027",
+      "Fix": "Add a connecting line clarifying what \u0027it\u0027 refers to, e.g. have Wes ask \u0027How long have you had that dog?\u0027 before CJ\u0027s reply, or revise CJ\u0027s line to explicitly reference the sound/recording."
+    },
+    {
+      "BeatId": "019f9ff8-a08f-70cc-8a88-69540d8da4d7",
+      "Number": 6296,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CONTRADICTION",
+      "Severity": "MODERATE",
+      "Quote": "She couldn\u0027t feel it from down here, but she could read it in the way his palm settled on the plating.",
+      "Note": "claims she can\u0027t feel the temperature change, then implies she\u0027s reading a physical cue (palm settling) that itself would require some form of sensory access or explanation not given; also \u0027settled\u0027 doesn\u0027t clearly convey temperature information",
+      "Fix": "clarify how his palm\u0027s posture legibly communicates warmth, e.g. \u0027the way his palm lingered, unhurried, against the plating\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a090-7e47-85d1-9aa5a3fc52dc",
+      "Number": 6328,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MODERATE",
+      "Quote": "That was the whole job now: witness this correctly, hold the record, don\u0027t lose a single reading before it went quiet.",
+      "Note": "Explicitly states the character\u0027s purpose/duty in summary form rather than dramatizing her focus \u2014 telling not showing.",
+      "Fix": "Cut the summary sentence and let the preceding imperative stand alone."
+    },
+    {
+      "BeatId": "019f9ff8-a091-73e3-ac3e-f2bba4d10c9f",
+      "Number": 6357,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CLICHE",
+      "Severity": "MODERATE",
+      "Quote": "and then it was a shape, and then the shape was gone into the flat line of the horizon",
+      "Note": "Stock \u0027fading into the distance\u0027 closing-shot imagery, a familiar cinematic sign-off that reads as stock rather than specific.",
+      "Fix": "Anchor the dissolve in something concrete to the scene, e.g. a landmark or sound cutting out, rather than the generic shape/horizon formula."
+    },
+    {
+      "BeatId": "019f9ff8-a08a-7d6e-80e5-c013a1252d39",
+      "Number": 6136,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "There was a word for what Pip had just done. He didn\u0027t use it. It would have been either too small or too big, and he wasn\u0027t sure which.",
-      "Note": "Coy withholding-the-word device reads as a writerly trick rather than character insight; tells us Wes is moved without showing it.",
-      "Fix": "Cut the meta-commentary and let the observed action (Pip sitting, the wail changing register) carry the weight, or give the actual word and let it land."
+      "Quote": "Something between a chord and a groan.",
+      "Note": "Vague purple comparison that doesn\u0027t sharpen the sound; reads as filler description rather than concrete sensory detail.",
+      "Fix": "Cut or replace with a more specific description of pitch/texture."
     },
     {
-      "BeatId": "019f3eb2-6438-7474-924e-1d9d1925e8ab",
-      "Number": 5105,
+      "BeatId": "019f9ff8-a08b-7bc3-8617-f30133a3525c",
+      "Number": 6137,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "He was out of bed before he\u0027d decided to be.",
+      "Note": "Stock construction for instinctive action, slightly worn phrasing.",
+      "Fix": "Rephrase with a more specific physical beat, e.g. \u0027His feet hit the floor before the thought finished.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7bc3-8617-f30133a3525c",
+      "Number": 6137,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Find the fault. He\u0027d walk out there and identify that sound if it took him till sunrise.",
+      "Note": "Slightly redundant restatement of the rule immediately after stating it, telling rather than showing resolve.",
+      "Fix": "Trim to one instance of the sentiment, e.g. cut \u0027Find the fault.\u0027 or the sunrise line."
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7cf0-9f42-ef2c8c65c5dc",
+      "Number": 6138,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He dressed in the dark without the light.",
+      "Note": "redundant phrasing \u2014 \u0027in the dark\u0027 and \u0027without the light\u0027 say the same thing twice",
+      "Fix": "\u0027He dressed in the dark.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7cf0-9f42-ef2c8c65c5dc",
+      "Number": 6138,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Corn, tower, corn.",
+      "Note": "reads as a stylistic tic rather than earned compression; slightly cute for the flat tone established",
+      "Fix": "cut or integrate into a fuller sentence"
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7a6b-98df-3c29bc638eef",
+      "Number": 6140,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "he\u0027d learned them like a language, without meaning to",
+      "Note": "\u0027learned it like a language\u0027 is a familiar comparison for acquired-fluency-through-repetition",
+      "Fix": "specify a more concrete mechanism, e.g. name what the chords actually sounded like to him"
+    },
+    {
+      "BeatId": "019f9ff8-a08b-79d3-9cc9-966bb6aceed4",
+      "Number": 6143,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the whole carapace tilted forward like a ship taking on water",
+      "Note": "Simile doesn\u0027t quite track \u2014 a ship taking on water lists or sinks lower in the water, it doesn\u0027t typically tilt \u0027forward\u0027; the image feels reached-for rather than precise.",
+      "Fix": "e.g. \u0027tilted forward like something kneeling\u0027 or specify the listing motion more literally."
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7a03-a928-169b6b543c5d",
+      "Number": 6145,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a shape metal wasn\u0027t supposed to make",
+      "Note": "Vague, slightly purple abstraction that tells rather than shows the specific wrongness of the deformation.",
+      "Fix": "Describe the actual geometry (e.g., \u0027bent toward the hull on one side and away on the other\u0027) instead of the abstract claim."
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7457-8d6a-9ba8ac670188",
+      "Number": 6147,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Small enough that he almost missed them in the grey.",
+      "Note": "Vague filler description that tells rather than shows what he\u0027s seeing; relies on unspecified \u0027them\u0027 without concrete visual anchor.",
+      "Fix": "Give one concrete sensory detail of what \u0027them\u0027 looks like."
+    },
+    {
+      "BeatId": "019f9ff8-a08b-72a4-898e-1f17e81f0b59",
+      "Number": 6150,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He set it aside with the other things he didn\u0027t have words for yet.",
+      "Note": "Vague filler abstraction telling us he has unspecified unresolved thoughts without showing anything concrete.",
+      "Fix": "Cut or replace with a specific detail of what he can\u0027t articulate."
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7d03-ae2b-c55f3af4f7e5",
+      "Number": 6153,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "like checking a door that won\u0027t open",
+      "Note": "Stock simile that softens an otherwise precise mechanical image.",
+      "Fix": "Cut the simile and let the repeated nudge/withdraw action stand alone."
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7f7d-8c28-a11f823eab08",
+      "Number": 6155,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He\u0027d never called out to the machine in his life \u2014 it wasn\u0027t that kind of machine \u2014 but that wasn\u0027t what stopped him now.",
+      "Note": "Convoluted clarification that slows the beat without adding information; reads as the author hedging rather than Wes thinking.",
+      "Fix": "Cut to: \u0027He didn\u0027t call out. That wasn\u0027t what stopped him.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7e35-bdb0-8ecc426dae5e",
+      "Number": 6156,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Two shapes in a clearing, one warm and one cold.",
+      "Note": "Summary-tag ending states the contrast the preceding image already showed, a mild telling-not-showing tack-on.",
+      "Fix": "Cut the sentence and let the nudge/withdraw imagery stand alone."
+    },
+    {
+      "BeatId": "019f9ff8-a08b-773e-beae-d9b1036f53ab",
+      "Number": 6160,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way he worked out a new smell",
+      "Note": "vague comparison that tells rather than shows the cognitive process; doesn\u0027t clarify what \u0027working it out\u0027 looks like beyond restating it",
+      "Fix": "cut the simile or replace with a concrete physical detail (e.g., nostrils flaring, a low huff)"
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7f78-8775-6f479e660437",
+      "Number": 6163,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Wes\u0027s throat tightened before he heard it",
+      "Note": "",
+      "Fix": "Cut the throat-tightening beat entirely or replace with a concrete sensory detail that doesn\u0027t lean on stock bodily-tension shorthand."
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7e6c-800d-9b682bd30a75",
+      "Number": 6165,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the dew went silver on the tall grass for a minute",
+      "Note": "Stock pastoral-dawn imagery (silver dew) used as scene-setting shorthand.",
+      "Fix": "Replace with a more specific, less generic image tied to the machine/setting."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-799b-b168-9737e9b1da90",
+      "Number": 6168,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He didn\u0027t look back.",
+      "Note": "Stock closing beat implying finality/betrayal that reads as reflexive dramatic punctuation rather than earned emotion.",
+      "Fix": "Cut the line or replace with a concrete physical detail."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7b0a-adbb-e59c10bda40d",
+      "Number": 6169,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "something else under it he\u0027d noticed before but never named",
+      "Note": "Vague gesture toward mystery without content; tells us there\u0027s meaning without giving any texture to grab onto.",
+      "Fix": "Either name the sensory detail or cut the clause."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7f18-9028-46d9dbbd19a4",
+      "Number": 6172,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He\u0027d watched it make that turn for six years without knowing he was watching.",
+      "Note": "Slightly precious phrasing that tips into abstraction rather than concrete detail, mildly undercutting the otherwise grounded technical description.",
+      "Fix": "He\u0027d watched it make that turn for six years and never once thought about it."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7050-996e-fc0c006dd944",
+      "Number": 6178,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "It moved slower than its size said it should.",
+      "Note": "Vague abstraction \u2014 a size doesn\u0027t \u0027say\u0027 anything; reads as filler framing rather than concrete observation.",
+      "Fix": "For its size, it moved slowly."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7b2a-82a6-026da8c2c877",
+      "Number": 6179,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "Close enough that six or eight didn\u0027t feel like different numbers.",
-      "Note": "Vague filler phrasing that gestures at danger without specifying anything concrete; reads as padding rather than sensory detail.",
-      "Fix": "Cut, or replace with a concrete detail (e.g., how the gap looked from his vantage)."
+      "Note": "Reads as a clever-sounding aphorism standing in for a concrete sensory beat of proximity/danger.",
+      "Fix": "Close enough that the height didn\u0027t matter anymore."
     },
     {
-      "BeatId": "019f3eb2-6438-71ab-a542-09f818be4b6e",
-      "Number": 5107,
+      "BeatId": "019f9ff8-a08c-72e7-bfec-5f321a6a9173",
+      "Number": 6184,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "deep warm, the kind that comes from inside, from something running in there for hours",
+      "Note": "vague intensifier stacking (\u0027deep warm\u0027) that tells rather than lets the sensory detail (heat through palms) do the work",
+      "Fix": "cut \u0027deep warm, the kind that comes from inside\u0027 and let \u0027from something running in there for hours\u0027 stand alone"
+    },
+    {
+      "BeatId": "019f9ff8-a08c-76de-bac0-f3b8d6304fc4",
+      "Number": 6185,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "halfway between a sound and a feeling",
+      "Note": "vague synesthetic hedge that doesn\u0027t commit to a concrete sensation, softening an otherwise precise technical description",
+      "Fix": "replace with a specific comparison, e.g. \u0027like a diesel engine idling under his palms\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7634-8f34-10451869b3e1",
+      "Number": 6188,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The world was very flat and very big.",
+      "Note": "Doubled intensifier construction reads as filler description rather than earned observation; slightly flat phrasing given the aerial vantage.",
+      "Fix": "The world went flat and enormous in every direction."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-797e-8554-0cc75e313fd6",
+      "Number": 6190,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "because there was ground that needed watching",
+      "Note": "tips into telling-not-showing the dog\u0027s diligence with a mildly precious justification tacked on",
+      "Fix": "cut the clause and let the nose-down action stand alone"
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7e8f-a44b-9a6e68df964b",
+      "Number": 6192,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a view of the Rock River that was genuinely good if you were somebody who needed that from a posting",
+      "Note": "hedging, over-qualified phrasing undercuts the image with filler qualification",
+      "Fix": "a view of the Rock River, the one good thing about the posting"
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7eff-8aae-320c32649bff",
+      "Number": 6194,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Halfway to Iowa or the edge of the world \u2014 she\u0027d decided early it didn\u0027t much matter which.",
+      "Note": "Vague, faux-poetic filler that doesn\u0027t establish concrete stakes or voice; reads as padding before the exposition dump.",
+      "Fix": "Cut or replace with a concrete sensory detail about the posting."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7eff-8aae-320c32649bff",
+      "Number": 6194,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CLICHE",
+      "Severity": "MINOR",
+      "Quote": "the way people say a thing they\u0027ve already decided you can\u0027t argue with",
+      "Note": "Generic descriptive tic \u2014 the sort of abstracted-observation phrasing that stands in for specific characterization.",
+      "Fix": "Show the actual tone/words instead of describing the category of tone."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-77e3-a719-d56f45969f67",
+      "Number": 6197,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The dead kill-switch was the part that sat wrong in her chest.",
+      "Note": "Telling-not-showing the unease via a vague bodily clich\u00E9 (\u0027sat wrong in her chest\u0027) rather than a concrete physical or cognitive reaction.",
+      "Fix": "Replace with a specific, literal reaction: e.g., she rereads the line twice, or checks the field manual\u0027s index and finds nothing."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7aec-ad55-496b08c77c83",
+      "Number": 6199,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The machine walked between them like they were just two more tall things in a flat land.",
+      "Note": "Slightly deflates the tension with a flat, almost jokey observation that undercuts the scale-establishing purpose of the passage.",
+      "Fix": "Cut the simile or replace with a more concrete image of relative scale."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-76a7-b147-bece8743b9ed",
+      "Number": 6200,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The machine walked between the towers and kept walking, and the towers did nothing about it, because they were towers.",
+      "Note": "Circular, faux-wry aphorism that reads as authorial commentary rather than CJ\u0027s observation; explains the obvious.",
+      "Fix": "Cut the clause after \u0027kept walking\u0027 or replace with a concrete detail about the towers\u0027 inertness (e.g., no defense systems, no lights, nothing)."
+    },
+    {
+      "BeatId": "019f9ff8-a08c-799d-b434-3ac77bf7429a",
+      "Number": 6201,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He just wasn\u0027t where she was. He hadn\u0027t seen the feed.",
+      "Note": "Tells the reader the thematic point (perspective gap) rather than showing it through action or specific detail; slightly redundant with the preceding sentences.",
+      "Fix": "Cut one of the two sentences or replace with a concrete detail of what Hauser was looking at instead."
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7c24-96f4-eca336ec104a",
+      "Number": 6202,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "something coming south through it at five miles an hour with no name on it",
+      "Note": "Vague ominous phrasing that tells rather than shows menace; relies on abstraction instead of concrete detail already present elsewhere in the beat (the tower).",
+      "Fix": "Name the thing or its effect concretely, e.g. \u0027something coming south through it, a shape she still had no name for.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7c24-96f4-eca336ec104a",
+      "Number": 6202,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She\u0027d idled the skimmer a moment and looked at it.",
+      "Note": "Flat, inert closing line; doesn\u0027t earn the buildup of the heron/tower detail, reads as filler beat-ending.",
+      "Fix": "Cut or replace with a sharper image of what she felt/thought looking at it."
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7ee0-80c3-90bbed30192f",
+      "Number": 6205,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the sound that marked Eigenlift interdiction units at a distance",
+      "Note": "Slightly redundant exposition immediately after establishing the whine is recognizable; tells us what we\u0027re about to be shown in the next sentence.",
+      "Fix": "Trim to \u0027a triple-toned whine \u2014 Eigenlift interdiction units, close.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7612-8eec-fcbe3408f391",
+      "Number": 6209,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the drone wasn\u0027t where it had been",
+      "Note": "",
+      "Fix": "Cut or replace with a more concrete image of the wreckage/impact."
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7f8a-94bd-d526648cfe0e",
+      "Number": 6211,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The arm moved the way it moved through corn at harvest: steady, the smallest arc needed to make the obstacle not be there.",
+      "Note": "The simile is doing thematic work but leans on a slightly overwritten construction (\u0027make the obstacle not be there\u0027) that softens rather than sharpens the image.",
+      "Fix": "Consider tightening to something like: \u0027steady, the smallest arc needed to clear the row.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-74d0-aa54-61cce26fa995",
+      "Number": 6213,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the answer was apparently hold \u2014 which turned out to mean stay inside the sweep",
+      "Note": "The phrasing \u0027turned out to mean\u0027 tells the reader the irony instead of trusting the prior beats to have shown it; slightly redundant after ref 2\u0027s demonstration.",
+      "Fix": "Cut the explanatory clause: \u0027the answer was apparently hold.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-719f-987b-ac3d6585f5f7",
+      "Number": 6216,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "A few years of somebody\u0027s budget, lying in the Hillsdale dirt.",
-      "Note": "Filler-wit aside that editorializes rather than showing; slightly deflates the mechanical tension just built.",
-      "Fix": "Cut the line or replace with a concrete visual detail (e.g. scorch mark, blinking light) instead of a budget quip."
+      "Note": "Reads as an inserted wry-commentary quip rather than Wes\u0027s direct perception; slightly undercuts the flat, grounded tone of the rest of the beat.",
+      "Fix": "Cut the line or replace with a concrete physical detail, e.g. \u0027Smoke still curling off one of the housings.\u0027"
     },
     {
-      "BeatId": "019f3eb2-6438-71ab-a542-09f818be4b6e",
-      "Number": 5107,
+      "BeatId": "019f9ff8-a08d-708f-b229-2a1799c52462",
+      "Number": 6217,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "MEANING-MISMATCH",
+      "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Pip was below, in the shadow of the rear stabilizer.",
-      "Note": "Beat purpose specifies \u0027Pip does not look up\u0027 as a beat, but the prose only places Pip in position without confirming the specified detail of not looking up.",
-      "Fix": "Add a clause confirming Pip\u0027s lack of reaction, e.g. \u0027Pip didn\u0027t look up, didn\u0027t break stride.\u0027"
+      "Quote": "He was just running, low and steady, at five miles an hour, because that was where Wes was.",
+      "Note": "The explanatory \u0027because\u0027 clause tells the reader the meaning/emotion (loyalty) instead of letting the preceding concrete details carry it.",
+      "Fix": "End on the concrete detail: \u0027He was just running, low and steady, at five miles an hour.\u0027"
     },
     {
-      "BeatId": "019f3eb2-6438-7820-8915-07d8e0af4faa",
-      "Number": 5108,
+      "BeatId": "019f9ff8-a08d-7cc5-b2f0-72e06b048ec6",
+      "Number": 6218,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "CLICHE",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "rising from the fields with no warning the way they always did out here",
+      "Note": "Vague habitual-truth filler that tells rather than shows how the towers surprise; weak close to an otherwise clean visual.",
+      "Fix": "Cut to: \u0027rising from the fields, sudden as always.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7f1a-88f9-dee84b423e1c",
+      "Number": 6219,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "built for exactly this",
+      "Note": "Vague intensifier that asserts significance without showing what \u0027this\u0027 demands.",
+      "Fix": "Specify what the formation was built to do."
+    },
+    {
+      "BeatId": "019f9ff8-a08d-79f8-abac-b8cdbef85b07",
+      "Number": 6221,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way scav camps do \u2014 efficient, temporary, already half torn down by the time you got a good look",
+      "Note": "Generalizing aside breaks close third-person immediacy with a universal-truth quip about how \u0027scav camps\u0027 behave as a category.",
+      "Fix": "Ground it in this specific camp: \u0027already half stripped, the men working fast.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7eee-b5f4-29777e6e191b",
+      "Number": 6224,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The same note. The same short burst of it.",
+      "Note": "Fragment pair adds emphasis but reads as filler repetition rather than new information.",
+      "Fix": "Combine into one clause: \u0022The same note, the same short burst.\u0022"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7fdd-af8c-1b3be837a124",
+      "Number": 6225,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "That exact weathered brass-gone-to-bone shade.",
+      "Note": "Compound coinage strains for poetic effect and slows the visual identification beat.",
+      "Fix": "\u0022That exact weathered brass shade, gone dull as bone.\u0022"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7647-8b8c-274eee1744d1",
+      "Number": 6228,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the kind of loud that tears the throat",
-      "Note": "Stock intensifier phrasing for shouting effort.",
-      "Fix": "Cut or replace with a more specific physical detail, e.g. \u0027loud enough that his voice cracked.\u0027"
+      "Note": "vague intensifier phrase that tells rather than shows the vocal strain",
+      "Fix": "describe the physical sensation directly, e.g. \u0027loud enough that something pulled in his throat\u0027"
     },
     {
-      "BeatId": "019f3eb2-6438-7820-8915-07d8e0af4faa",
-      "Number": 5108,
+      "BeatId": "019f9ff8-a08d-7bbd-8edf-cc02c5e2eebd",
+      "Number": 6229,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "A hundred feet. That was the problem.",
-      "Note": "Short declarative aphorism-style filler that states the obvious rather than dramatizing the distance.",
-      "Fix": "Fold the distance into the action directly rather than isolating it as a stated \u0027problem.\u0027"
+      "Quote": "four tons of footstep every two seconds",
+      "Note": "the metric reads as authorial exposition dropped in for scale rather than something the character would think mid-crisis",
+      "Fix": "integrate more naturally into his sensory experience or cut the precise figure"
     },
     {
-      "BeatId": "019f3eb2-6438-7fe2-94eb-47facb1e361c",
-      "Number": 5110,
+      "BeatId": "019f9ff8-a08d-7a09-bc3e-7306bf219a20",
+      "Number": 6232,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Smart, if it was. He didn\u0027t know enough about ArcSec drone doctrine to say.",
-      "Note": "Hedging aside reads as filler commentary rather than advancing tension or characterization.",
-      "Fix": "Cut the second sentence; let the observation stand without the self-aware qualifier."
+      "Quote": "the machine answers, immediately, hard-coded, and nothing in the schedule turns that off",
+      "Note": "Clunky, comma-spliced mechanical exposition that tells rather than dramatizes the danger; reads like a spec sheet rather than a thought under pressure.",
+      "Fix": "Tighten: \u0027Every maintenance record said the same thing: touch it and the machine answers, hard-coded, no override.\u0027"
     },
     {
-      "BeatId": "019f3eb2-6438-7fe2-94eb-47facb1e361c",
-      "Number": 5110,
+      "BeatId": "019f9ff8-a08d-78d0-8309-1aa35a58b5eb",
+      "Number": 6234,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "his body pressing into the dome",
+      "Note": "vague physical beat that doesn\u0027t clarify whether this is recoil or bracing; reads as filler motion",
+      "Fix": "specify the action\u0027s intent, e.g. \u0027his body braced against the dome, resisting the pull to step back\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-75a1-b4bd-49ba1e335fd9",
+      "Number": 6238,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The parts were worth money. The copper was worth money.",
+      "Note": "Repetitive sentence structure reads as filler restatement rather than building information.",
+      "Fix": "Combine: \u0027The parts and the copper were worth money.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7db6-96a2-b7c83ed0d2f3",
+      "Number": 6240,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "CLICHE",
       "Severity": "MINOR",
-      "Quote": "the hull a drum under him",
-      "Note": "Repeated metaphor (also appears earlier in the manuscript pattern) trending toward stock imagery for rhythmic machine sound.",
-      "Fix": "Vary the metaphor or cut for plainer description."
+      "Quote": "The hair stood up along his forearms.",
+      "Note": "Standard fear-cliche image, commonly used to signal dread.",
+      "Fix": "Cut or replace with a fresher physical detail."
     },
     {
-      "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
-      "Number": 5111,
+      "BeatId": "019f9ff8-a08d-7db6-96a2-b7c83ed0d2f3",
+      "Number": 6240,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "the loose full commitment of a dog",
-      "Note": "vague abstraction stands in for the concrete image the sentence is trying to earn; reads as filler generalization rather than observed detail",
-      "Fix": "cut or replace with a specific physical beat"
+      "Quote": "His throat went wrong.",
+      "Note": "Vague abstraction (\u0027went wrong\u0027) tells rather than shows a concrete sensation.",
+      "Fix": "Specify the sensation, e.g. \u0027His throat closed tight.\u0027"
     },
     {
-      "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
-      "Number": 5111,
+      "BeatId": "019f9ff8-a08e-74ac-86d5-4c4ddda98f58",
+      "Number": 6245,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The officer\u0027s voice had the careful flatness of a man building a log.",
+      "Note": "Tells the reader how to interpret the voice rather than letting the clipped dialogue itself convey procedural detachment; slightly redundant given the terse lines that follow.",
+      "Fix": "Cut the explanatory clause and let the dialogue\u0027s clipped syntax carry the flatness."
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7993-bb50-3a81455f08be",
+      "Number": 6247,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He didn\u0027t answer that right away.",
+      "Note": "Telling-not-showing the evasion instead of rendering a beat (silence length, expression, etc.)",
+      "Fix": "Show a specific physical tell, e.g. \u0022He looked at the flatbed for a long moment.\u0022"
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7495-889e-67d2bbe89871",
+      "Number": 6249,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "\u0022Hauser came in forty seconds after she was back on the road.",
+      "Note": "Stray leading quotation mark with no closing pair, and the sentence structure (\u0027Hauser came in\u0027) reads as narration mistakenly opened as dialogue.",
+      "Fix": "Remove the stray opening quote: \u0022Hauser came in forty seconds after she was back on the road.\u0022"
+    },
+    {
+      "BeatId": "019f9ff8-a08e-745a-b497-de05f26beb40",
+      "Number": 6251,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He closed the channel. He always closed when the conversation was done, not when the frustration peaked \u2014 she\u0027d learned that in three months.",
+      "Note": "Tells the reader a character trait/relationship insight directly rather than showing it through action beyond the stated fact; reads as expository summary rather than dramatized beat.",
+      "Fix": "Cut the explanatory clause or show it via a specific prior instance instead of asserting the pattern."
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7aea-9ad8-73570a7c23b9",
+      "Number": 6253,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CONTRADICTION",
+      "Severity": "MINOR",
+      "Quote": "since Rock Island",
+      "Note": "Beat 0 establishes the locator pulse has been active \u0027since Davenport,\u0027 but this beat says \u0027since Rock Island,\u0027 a different location, without explanation for the discrepancy.",
+      "Fix": "Make both references consistent \u2014 pick one origin point or clarify the route passed through both."
+    },
+    {
+      "BeatId": "019f9ff8-a08e-74ea-8268-646c849b5d08",
+      "Number": 6257,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "and it did the job",
+      "Note": "Vague filler phrasing that deflates the mechanical specificity established in the surrounding sentences.",
+      "Fix": "Replace with a concrete action matching the arm\u0027s described mechanics, e.g. \u0027and the ring closed around the frame same as the others.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7b66-9181-f4f37d172e39",
+      "Number": 6259,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a held note across the steady pulse for five seconds, maybe six",
+      "Note": "the imprecise \u0027maybe six\u0027 reads as filler hedging rather than a deliberate perceptual detail, slightly undercutting the technical precision of the surrounding description",
+      "Fix": "either commit to an estimate (\u0027five seconds, roughly\u0027) or cut the hedge entirely"
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7510-848f-24c315b0238a",
+      "Number": 6260,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Something had just happened out there.",
+      "Note": "flat, generic tension-statement that tells rather than shows CJ\u0027s read on the data",
+      "Fix": "replace with a concrete reaction or inference specific to the spike\u0027s data signature"
+    },
+    {
+      "BeatId": "019f9ff8-a08e-720d-b29b-21434ed89f26",
+      "Number": 6267,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the kind of afternoon shadow that meant hours had gone by",
+      "Note": "tells the reader the temporal function of the image rather than trusting the concrete detail already given",
+      "Fix": "cut the explanatory clause and let \u0027lower\u0027 carry it"
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7d48-b777-99e9c9d8ecc3",
+      "Number": 6269,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "not as a thought but as a picture, sitting behind his eyes ahead of the stiff neck and the sun and the road",
+      "Note": "overexplains the mechanics of intrusive memory rather than just delivering the image",
+      "Fix": "trim to something like \u0027not a thought \u2014 just the picture, ahead of everything else\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7f13-873f-f3ed8e0ab200",
+      "Number": 6273,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "didn\u0027t negotiate with the terrain",
+      "Note": "Slightly anthropomorphized filler phrasing for a mechanical description; borders on cute rather than concrete.",
+      "Fix": "asphalt, shoulder, gravel, drainage break \u2014 the field held steady over all of it"
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7391-9a1a-b9e7ad109819",
+      "Number": 6275,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "For half a second her eye put him down as road debris.",
+      "Note": "Slightly clunky phrasing (\u0027put him down as\u0027) reads awkwardly as a mechanical description of perception.",
+      "Fix": "For half a second she read him as road debris."
+    },
+    {
+      "BeatId": "019f9ff8-a08f-70fa-89c2-281d99d308b5",
+      "Number": 6276,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "the kind of dog that looks put together specifically to be hard to stop once it has somewhere to be",
-      "Note": "cute overwritten aphorism about the dog\u0027s build, tips into whimsy that undercuts the grounded tone",
-      "Fix": "trim to a plainer physical description"
+      "Note": "Overwrought, slightly cute construction that undercuts the otherwise spare, observational prose style.",
+      "Fix": "Trim to something plainer: \u0027the kind of dog built low and stubborn.\u0027"
     },
     {
-      "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
-      "Number": 5111,
-      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "CLICHE",
-      "Severity": "MINOR",
-      "Quote": "the way you let yourself be lifted when you\u0027ve been moving forty miles and your body has said everything it has to say",
-      "Note": "the \u0027body has said everything it has to say\u0027 is a soft, worn personification standing in for exhaustion",
-      "Fix": "replace with a concrete physical detail (trembling legs, slack weight) instead of the abstraction"
-    },
-    {
-      "BeatId": "019f3eb2-6438-7bc4-8529-129c2c4d9a95",
-      "Number": 5114,
+      "BeatId": "019f9ff8-a08f-7472-8657-cc7841889314",
+      "Number": 6277,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Gently. The way you pick something up when you know exactly what it weighs and have learned to respect the weight.",
-      "Note": "aphoristic phrasing that explains the gesture instead of trusting the preceding image; slightly overwritten repetition of \u0027weight\u0027",
-      "Fix": "cut second sentence, let \u0027Gently\u0027 stand alone or replace with a sharper concrete beat"
+      "Quote": "because the ground ahead wasn\u0027t going to watch itself",
+      "Note": "Cute aphoristic aside that reads as authorial quip rather than character observation, slightly undercutting the moment\u0027s tension.",
+      "Fix": "Cut the clause or replace with a concrete detail about the dog\u0027s focus."
     },
     {
-      "BeatId": "019f3eb2-6438-7bc4-8529-129c2c4d9a95",
-      "Number": 5114,
+      "BeatId": "019f9ff8-a08f-7903-b493-6f4c7de223d5",
+      "Number": 6279,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way you let yourself be lifted when you\u0027ve been moving forty miles and your body has said everything it has to say",
+      "Note": "Abstract, slightly overwritten explanatory aside that tells the reader how to feel about the exhaustion rather than showing it physically.",
+      "Fix": "Cut to something concrete: \u0022He sagged into her like his legs had quit deciding for him.\u0022"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-75c8-b624-6332ec74dfd6",
+      "Number": 6283,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "she stopped breathing for a second",
+      "Note": "Telling-not-showing a fear reaction; slightly stock phrasing for tension.",
+      "Fix": "Cut to a physical beat instead, e.g. \u0027Her hand found the rail before she knew it had moved.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7e9d-b007-ff106573a6ed",
+      "Number": 6285,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "CONTRADICTION",
+      "Severity": "MINOR",
+      "Quote": "She\u0027d heard his voice and thought eleven, twelve.",
+      "Note": "No prior beat establishes CJ hearing the boy\u0027s voice before this point \u2014 only gestures have been exchanged so far in this sequence.",
+      "Fix": "Either add an earlier moment where his voice is heard, or cut this line."
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7986-aebf-441b11b27dc4",
+      "Number": 6287,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She had a dog against her chest and both her hands full and no way up.",
+      "Note": "Redundant phrasing \u2014 \u0027dog against her chest\u0027 already implies hands full, so the line restates the same fact twice for emphasis rather than adding information.",
+      "Fix": "Cut to: \u0027She had a dog against her chest, both hands full, and no way up.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7b55-92d0-1f8aa6bf31cb",
+      "Number": 6291,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the same line at mile one as at mile forty",
+      "Note": "Slightly clunky phrasing for expressing signal consistency, reads like a mechanical explainer rather than natural dialogue/description.",
+      "Fix": "Tighten to something like \u0027unchanged from mile one to mile forty.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7678-85da-69d8905b6959",
+      "Number": 6292,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "\u0022It\u0027s not asking,\u0022 he asked. \u0022Is it?\u0022",
+      "Note": "The tag \u0027he asked\u0027 paired with a statement-then-question construction is grammatically awkward and slightly confusing on first read.",
+      "Fix": "Use \u0027he said\u0027 for the first clause, keep \u0027Is it?\u0027 as the actual question, or restructure as one line: \u0022It\u0027s not asking. Is it?\u0022 he said."
+    },
+    {
+      "BeatId": "019f9ff8-a08f-789c-8060-83e68d6daee1",
+      "Number": 6295,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "a half-second pulse she felt in her back teeth",
+      "Note": "vague sensory shorthand used to convey ominousness without grounding it physically",
+      "Fix": "specify what actually causes the tooth-felt vibration or cut the phrase"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7b44-b8b6-ae72e306501c",
+      "Number": 6300,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "shrink in the display to a slow dot that stayed slow",
+      "Note": "redundant repetition of \u0027slow\u0027 weakens the image without adding information",
+      "Fix": "shrink in the display to a dot that stayed put"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-789f-b899-3e8323d2319b",
+      "Number": 6301,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "went from over a hundred to a stop in the time it took to breathe out",
+      "Note": "vague quantifier (\u0027over a hundred\u0027 unclear units) paired with a soft, familiar time-comparison beat that reads as filler intensity rather than a precise image",
+      "Fix": "went from a hundred nine to zero before she\u0027d finished the breath"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-72e8-9415-173f15a55e48",
+      "Number": 6302,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He looked at the ArcSec logo on her jacket. Then at the skimmer. Then at her face.",
+      "Note": "Triple-beat scanning gesture is a mechanical tic rather than characterization; reads as a formula for \u0027sizing someone up.\u0027",
+      "Fix": "Collapse to a single beat: \u0027He clocked the ArcSec logo, then her face.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-72e8-9415-173f15a55e48",
+      "Number": 6302,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He knew her name. She didn\u0027t ask how.",
+      "Note": "Tells us her reaction/restraint instead of showing it; slightly on-the-nose for a mystery beat meant to unsettle.",
+      "Fix": "Cut the second sentence or replace with a concrete detail of her not reacting."
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7926-b588-4173374c4349",
+      "Number": 6306,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He\u0027d known it was there and he\u0027d been thinking about it.",
+      "Note": "Vague, flat telling-not-showing; doesn\u0027t clarify how he knew or what thinking about it entailed, feels like a placeholder sentence.",
+      "Fix": "Cut, or replace with a concrete detail showing prior knowledge (e.g., a specific memory or sensory cue)."
+    },
+    {
+      "BeatId": "019f9ff8-a08f-74ea-bf75-c60b1db6eae9",
+      "Number": 6308,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "MEANING-MISMATCH",
+      "Severity": "MINOR",
+      "Quote": "She didn\u0027t know what he meant. She didn\u0027t have time to ask.",
+      "Note": "The beat never establishes that Nzambe said or communicated anything requiring interpretation \u2014 only his expression is described, so \u0027what he meant\u0027 has no referent.",
+      "Fix": "Either show Nzambe say/do something ambiguous, or change to \u0027She didn\u0027t know what he was thinking.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-73f0-b67b-0d6659440886",
+      "Number": 6313,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "For maybe three seconds nothing moved.",
+      "Note": "Hedged, filler-ish phrasing that softens tension rather than sharpening it.",
+      "Fix": "\u0022Three seconds. Nothing moved.\u0022"
+    },
+    {
+      "BeatId": "019f9ff8-a08f-75d0-82b6-ea44494ee91d",
+      "Number": 6315,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "The way you pick something up when you know exactly what it weighs and have learned to respect the weight.",
+      "Note": "Pseudo-profound aphorism generalizing a specific mechanical action into a universal truth about weight and respect; reads as filler wisdom rather than observation.",
+      "Fix": "Cut the generalization; anchor it to the machine\u0027s specific motion, e.g. \u0027Slow, controlled, the way a hand slows when it already knows the load won\u0027t forgive a mistake.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a090-7866-9f27-1635ca2cf5c2",
+      "Number": 6317,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "They weren\u0027t eyes. They were soil-moisture sensors, built to read a field from nine stories up. She knew that, and she stood there with her breath held anyway.",
+      "Note": "Tells the reader the emotional beat (rational knowledge vs. instinctive fear) rather than dramatizing it; the explanatory clause undercuts the image it just built.",
+      "Fix": "Trim to something like: \u0027They weren\u0027t eyes. Soil-moisture sensors, built to read a field from nine stories up. She held her breath anyway.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a090-73d7-b774-fb5179777933",
+      "Number": 6319,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "like someone in a room where they don\u0027t want to make a sound",
-      "Note": "generic simile that tells rather than shows Wes\u0027s tension, slightly deflates the tautness of the scene",
-      "Fix": "replace with a specific physical detail of Wes\u0027s posture or breath"
+      "Note": "",
+      "Fix": "cut the simile or replace with a concrete physical detail specific to Wes"
     },
     {
-      "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
-      "Number": 5115,
+      "BeatId": "019f9ff8-a090-79cc-96a0-80200e7bfbd5",
+      "Number": 6320,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "Read it, she told herself. Whatever it\u0027s doing to that module, get it all \u2014 the depth, the interval, the sequence \u2014 get enough that somebody downstream can make sense of it.",
-      "Note": "Internal-monologue exposition that tells us her professionalism/purpose rather than showing it through the observation itself; slows the procedural tension with a explainer aside.",
-      "Fix": "Cut to the direct observation and let the itemized data (depth, interval, sequence) appear as her actual notation, not a self-directed pep talk."
+      "Quote": "had no name in Wes\u0027s catalog, and he had a name for nearly everything it did",
+      "Note": "",
+      "Fix": "trim redundancy; the second clause restates the first"
     },
     {
-      "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
-      "Number": 5115,
+      "BeatId": "019f9ff8-a090-7bfa-be0d-85000f68ab3d",
+      "Number": 6325,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "MEANING-MISMATCH",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Smooth.",
+      "Note": "Fragment used as a stand-alone sentence for emphasis reads as an affectation rather than earning its punch \u2014 borderline filler beat.",
+      "Fix": "Fold into the prior sentence: \u0027went through clay in a north Iowa field in April, smooth.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a090-7e92-a4f4-3c5fdcfc04f6",
+      "Number": 6327,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the shape was clear: the size of the module. Rectangular. Precise.",
+      "Note": "Fragmented list-style delivery tells rather than shows the realization; reads as notation rather than perception.",
+      "Fix": "Rectangular, sized to the module, precise enough to be deliberate."
+    },
+    {
+      "BeatId": "019f9ff8-a090-79a6-b7bc-9b34d932fdd7",
+      "Number": 6331,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "the way it had before \u2014 slowly, reading the weight",
+      "Note": "\u0027reading the weight\u0027 is a vague gesture at mechanical sentience that tells rather than shows; unclear what physical action conveys this.",
+      "Fix": "Cut to a concrete action: \u0027slowly, arm servos straining against the load\u0027 or similar."
+    },
+    {
+      "BeatId": "019f9ff8-a090-74de-b53e-5938b1931ec3",
+      "Number": 6333,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Regular. Regular.",
+      "Note": "Repetition aims for ominous rhythm but reads as filler emphasis rather than earned unease.",
+      "Fix": "Cut one repetition or replace with a specific detail that makes the regularity unsettling."
+    },
+    {
+      "BeatId": "019f9ff8-a090-7489-bc99-faa9d26e23ce",
+      "Number": 6334,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
       "Severity": "MINOR",
       "Quote": "a hundred miles of the same signal, carried through drone strikes and threat-wails and scav camps and the flat Illinois distance, and in all of it nothing had ever once answered back",
-      "Note": "This is a reflective, almost eulogistic aside that pulls against the beat\u0027s stated flatness/dormancy and CJ\u0027s wordless witnessing \u2014 it editorializes rather than holding record.",
-      "Fix": "Trim to the concrete fact (the interval held for a hundred miles) and cut the summary emotional framing."
+      "Note": "the list-and-summarize construction states the emotional weight (nothing answered) rather than showing it through a concrete image, edging toward telling-not-showing",
+      "Fix": "cut the summary clause or replace with one specific detail that implies the silence"
     },
     {
-      "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
-      "Number": 5115,
+      "BeatId": "019f9ff8-a090-7ee8-b61f-33c19d32d5cd",
+      "Number": 6339,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "The sounds it made now were the sounds of a long work c",
-      "Note": "Sentence is cut off / incomplete, breaking the read entirely.",
-      "Fix": "Complete the sentence or cut it."
+      "Quote": "the sounds of a long work cycle finishing: the cooling sequence, systems dropping to baseline, the bioreactor heat settling, the sensor array running its end-of-work sweep",
+      "Note": "The list of mechanical processes is inert catalog rather than sensory or emotionally loaded detail; it tells us the machine is powering down without giving the moment weight.",
+      "Fix": "Cut to one or two concrete sounds tied to the scene\u0027s tension, e.g. \u0027The bioreactor ticked as it cooled. Then silence.\u0027"
     },
     {
-      "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
-      "Number": 5116,
+      "BeatId": "019f9ff8-a090-7a57-8a00-7199bea935b8",
+      "Number": 6341,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
-      "Type": "CLICHE",
+      "Type": "CONTRADICTION",
       "Severity": "MINOR",
-      "Quote": "His parents, who still didn\u0027t know where he was.",
-      "Note": "Stock guilt-beat tacked onto the horizon-gazing montage, a shorthand emotional cue rather than earned detail.",
-      "Fix": "Cut or replace with something more specific to Wes\u0027s situation."
+      "Quote": "The machine stood over the buried spot for a long time.",
+      "Note": "This duplicates ref 0\u0027s \u0027The machine stood over the buried spot\u0027 with only \u0027for a long time\u0027 added, making the repetition read as an editing artifact rather than intentional escalation, especially with ref 1 and 2 sitting between them describing a completed power-down cycle.",
+      "Fix": "Either cut ref 0 or revise ref 3 to show a change in the machine\u0027s state/action since ref 0, e.g. \u0027The machine was still there when Wes looked up again.\u0027"
     },
     {
-      "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
-      "Number": 5116,
+      "BeatId": "019f9ff8-a090-7f28-be15-cc5c80b509c3",
+      "Number": 6342,
       "Chapter": "Chapter 1 \u2014 It Came From Iowa",
       "Type": "GRIPE",
       "Severity": "MINOR",
-      "Quote": "He\u0027d been patient through all of it \u2014 the burial, the descent, the leaving \u2014 and now he did what he did at every stop that mattered.",
-      "Note": "Tells us Pip\u0027s meaningfulness/ritual instead of letting the deflating comedy of the leg-lift land on its own; undercuts the beat\u0027s stated comic-after-sacred timing by pre-explaining the dog\u0027s significance.",
-      "Fix": "Cut the editorializing clause and go straight to the action: \u0027Pip went to the buried spot and sniffed the sealed patch of asphalt, thorough, starting at one\u2014\u0027"
+      "Quote": "He\u0027d been on the hull all day and still couldn\u0027t have said which.",
+      "Note": "Vague hedge that tells rather than shows his uncertainty, slightly redundant after the preceding sentence already establishes ambiguity.",
+      "Fix": "Cut the sentence or replace with a concrete sensory detail that grounds the ambiguity."
+    },
+    {
+      "BeatId": "019f9ff8-a090-761a-9884-5b053882e3bf",
+      "Number": 6346,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Iowa somewhere north at the end of five miles an hour.",
+      "Note": "Fragmentary construction reads as affectation rather than clarified spatial/temporal sense; the \u0027five miles an hour\u0027 metric is left cryptic without anchoring context in this beat.",
+      "Fix": "Clarify what is moving at five miles an hour, e.g. \u0027Iowa somewhere north, five miles an hour away at the machine\u0027s crawl.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a090-7a73-84a4-cd1130bc0354",
+      "Number": 6347,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "No one helped him. He didn\u0027t need help.",
+      "Note": "Redundant assertion-then-restatement that tells rather than shows independence; the second sentence adds nothing the first didn\u0027t already state.",
+      "Fix": "Cut the second sentence or replace with a concrete detail proving the point."
+    },
+    {
+      "BeatId": "019f9ff8-a091-7542-97b7-a60a2240c1d6",
+      "Number": 6352,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "One button. The channel went to static.",
+      "Note": "Fragment sequence reads as clipped mechanics-telling rather than showing tension; slightly flat as a standalone beat.",
+      "Fix": "Integrate into one sentence with sensory detail, e.g. \u0027She pressed the comms key, one button, and the channel dissolved into static.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a091-7333-a9fc-068c063b0058",
+      "Number": 6353,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She was not going to confirm.",
+      "Note": "Stated flatly as internal fact rather than dramatized decision, leaning toward telling-not-showing her resolve.",
+      "Fix": "Show the refusal through action or thought texture rather than bald declaration."
+    },
+    {
+      "BeatId": "019f9ff8-a091-7446-bb2f-d2447984a485",
+      "Number": 6355,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "He\u0027d been patient through all of it \u2014 the burial, the descent, the leaving",
+      "Note": "Tells the reader Pip\u0027s emotional state (patience) rather than showing it, and leans on a portentous list-cadence to manufacture weight.",
+      "Fix": "Cut the abstraction; let the sniffing action alone carry the beat: \u0027Pip waited until they were done, then went to the buried spot.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a091-79eb-8df2-7bca18e009c9",
+      "Number": 6359,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "Wes watched the horizon a while after.",
+      "Note": "Vague, inert beat that tells rather than shows any interior state; \u0027a while after\u0027 is imprecise filler.",
+      "Fix": "Anchor it with a concrete detail: \u0027Wes stood at the fence line, eyes on the towers until the light failed.\u0027"
+    },
+    {
+      "BeatId": "019f9ff8-a091-7ccb-9abf-619f61bbd87a",
+      "Number": 6360,
+      "Chapter": "Chapter 1 \u2014 It Came From Iowa",
+      "Type": "GRIPE",
+      "Severity": "MINOR",
+      "Quote": "She filed it as written. She did not write the new sound.",
+      "Note": "The second sentence gestures at significance without establishing what \u0027the new sound\u0027 is or why omitting it matters, reading as a withheld-info tease rather than earned weight.",
+      "Fix": "Either specify the sound briefly or cut the sentence until it can land."
     }
   ]
 }

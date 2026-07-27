@@ -249,6 +249,11 @@ public abstract class Node
     /// needs a different attribution.</summary>
     public string? Author { get; set; }
 
+    /// <summary>Optional subtitle shown beneath the title on the title page
+    /// (e.g. "Book 1: Matthew" under a series title of "Gospel: History vs.
+    /// Heritage"). Null or empty means no subtitle line is printed.</summary>
+    public string? Subtitle { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 

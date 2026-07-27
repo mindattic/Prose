@@ -5,8 +5,10 @@ code: GLMZ
 layer: universe
 universe: glmz
 status: live
+tier: series
+scope: GLMZ
 triggers: GLMZ, glmz, Kyle, Glooms, Chicago, 2226, CorpoNation, Lotus, neuretics, quanta, circuit, street samurai
-updated: 2026-07-21
+updated: 2026-07-26
 related: docs/CRAFT.md
 ---
 

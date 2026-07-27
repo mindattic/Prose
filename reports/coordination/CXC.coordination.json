@@ -2,9 +2,9 @@
   "nodeCode": "CXC",
   "slug": "marrow-chrome-019f0968",
   "title": "Crimson \u0026 Chrome",
-  "generatedAtUtc": "2026-07-25 23:05:02Z",
-  "totalBeats": 14,
-  "covered": 14,
+  "generatedAtUtc": "2026-07-27 05:16:12Z",
+  "totalBeats": 193,
+  "covered": 0,
   "chapterGranular": false,
   "storyScope": {
     "TemporalScheme": "linear",
@@ -16,261 +16,2933 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 14
+    "MISSING_MEANING": 193,
+    "UNSCORED": 193,
+    "NO_CONSTRUCTION": 179
   },
   "beats": [
     {
-      "BeatId": "019f0969-c7d9-70f2-9d23-338a6570d2dc",
-      "Number": 4844,
+      "BeatId": "019f9ff9-cc2d-759e-987e-78a2c257ecb0",
+      "Number": 6362,
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 1 \u2014 The Job She Dreaded. Soraya brings Rook the one job she\u0027s avoided since MGUN: the twenty-one are alive, hunted, and it\u0027s time. At Mrs. Chen\u0027s or its like; the trilogy\u0027s register at full volume. Rook says yes before she\u0027s done hearing it \u2014 and knows exactly what that costs, because she taught herself to. Establish: Lightning-leader Rook, rotating trusted cast, the count motif, the Reibo under the coat. Marrow/chrome color language opens.",
       "EscalationTarget": "2",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 2427,
+      "BeatTags": [],
+      "ProseLength": 216,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f0969-e214-7353-805e-8e661b46ca0b",
-      "Number": 4845,
+      "BeatId": "019f9ff9-cc4d-7a38-bcf6-271590487609",
+      "Number": 6363,
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 2 \u2014 The Trusted List. Rook reassembles the rotating cast (Vox, Lace, Boiler, Scout) \u2014 the warmth of a crew that chooses to come back, each rendered by signature (Boiler\u0027s structure-read, Scout\u0027s Gerald, Vox a beat late, Lace reading the room). Stave is the reluctant key. Everyone\u0027s reason is different and she carries all of them. No no-repeat rule; this is the family the trilogy built.",
       "EscalationTarget": "3",
       "EventType": "assembly",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 5294,
+      "ProseLength": 504,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f0969-fc91-7b5a-bc13-2e7ac349c5be",
-      "Number": 4846,
+      "BeatId": "019f9ff9-cc4f-7bb6-877f-ccd8ad9e1122",
+      "Number": 6364,
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 3 \u2014 The Survivor List. Stave surfaces the twenty-one under the weight of the old gray-market debt; the relocation-order-as-harvest revealed; the subject who didn\u0027t come back is connected to the Marrow. Introduce Sefi Okonkwo-Reyes (a survivor with a name/face/drive): \u0022There were twenty-one of us. I can give you nine.\u0022 The barge, Old Harbor, registered Reads \u2014 the NRST manifest pays off as people.",
       "EscalationTarget": "4",
       "EventType": "arrival",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint",
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 6445,
+      "BeatTags": [],
+      "ProseLength": 63,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-1536-760f-baa1-281fb7b49625",
-      "Number": 4847,
+      "BeatId": "019f9ff9-cc4f-78e5-9bd4-f03dcca4a6db",
+      "Number": 6365,
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 4 \u2014 The Seam in the Trilogy. The crew realizes their own past jobs are the corp\u0027s audit trail \u2014 MGUN got Soraya out of Axiom clean for a Helix buyer; NRST\u0027s partition crack surfaced the survivor list Helix had lost. Rook has been a contractor to her own ending. The clues, named (the \u0022offer felt too available,\u0022 the competitor refining the public Class V). The diligent reader\u0027s payoff stated in-world.",
       "EscalationTarget": "5",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 2977,
+      "BeatTags": [],
+      "ProseLength": 322,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-3318-7944-80f8-0c5177b61994",
-      "Number": 4848,
+      "BeatId": "019f9ff9-cc4f-747a-95ec-626a5b2ce7d3",
+      "Number": 6366,
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 5 \u2014 The Mirror Crosses. Goldberg brings what PEREGRINE knew and picks a side \u2014 counting what he\u0027d left uncounted (\u0022I never read a forty-first name,\u0022 NRST, paid off). Uneasy alliance; two planners who finally serve the same ledger. Establish him as Rook\u0027s MGUN/NRST mirror now crossing fully \u2014 not an enemy neutralized, a man who changed which ledger he served.",
       "EscalationTarget": "7",
       "EventType": "negotiation",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 4047,
+      "BeatTags": [],
+      "ProseLength": 26,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-4a8f-7136-b5d7-e0d7ceace8e7",
-      "Number": 4849,
-      "Chapter": "Chapter 2 \u2014 The Mirror C",
-      "ChapterIndex": 1,
+      "BeatId": "019f9ff9-cc4f-7f18-8b42-2375ed6632dc",
+      "Number": 6367,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 6 \u2014 The Marrow. The body-bank established: Helix\u0027s chrome over a charnel logic; registered Reads processed into Class V-compatible neural substrate. The horror is procedural, not lurid \u2014 seamless surfaces, paperwork, throughput. Marrow-under-chrome color language at full weight. Sefi\u0027s account grounds it; the deferred-maintenance theme reaches the body (the Reads are the infrastructure the GLMZ stopped maintaining, priced as substrate).",
       "EscalationTarget": "7",
       "EventType": "confession",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4078,
+      "ProseLength": 390,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-6c7e-7e10-95ce-bba2b085e52e",
-      "Number": 4850,
-      "Chapter": "Chapter 2 \u2014 The Mirror C",
-      "ChapterIndex": 1,
+      "BeatId": "019f9ff9-cc4f-761a-8d97-4031fb867e68",
+      "Number": 6368,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 7 \u2014 The Fatal Thread. The plan against a facility that can\u0027t be starved or blinded (like Stave\u0027s substation, escalated). Vox\u0027s face \u2014 sold to Stave in NRST \u2014 flagged as the thread Helix will pull to ID the whole crew. The cost of the way in is named. Rook\u0027s arithmetic strains under the body-count this job could carry; she builds contingencies because the people walk on her numbers.",
       "EscalationTarget": "8",
       "EventType": "revelation",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 4736,
+      "ProseLength": 16,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-80c3-790f-91c8-eb11db81a546",
-      "Number": 4851,
-      "Chapter": "Chapter 2 \u2014 The Mirror C",
-      "ChapterIndex": 1,
+      "BeatId": "019f9ff9-cc4f-79b0-9c1c-b9e20350f25e",
+      "Number": 6369,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 8 \u2014 Soraya Becomes Her. Soraya stops protecting herself from the woman who saw the harvest coming and saved twenty-one anyway; she gives the crew the key only that woman has (credentials, the partition\u0027s true buried contents paying off from NRST). Her arc completes: she becomes the version of herself she locked away. The \u0022protect herself from who she was\u0022 thread lands.",
       "EscalationTarget": "8",
       "EventType": "betrayal",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 5441,
+      "BeatTags": [],
+      "ProseLength": 330,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-98e4-78b2-bef2-ae750268ad1c",
-      "Number": 4852,
-      "Chapter": "Chapter 2 \u2014 The Mirror C",
-      "ChapterIndex": 1,
+      "BeatId": "019f9ff9-cc4f-7422-b7e5-37abfea40f96",
+      "Number": 6370,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 9 \u2014 The Setup. Position, prep, the storm-equivalent pressure (a clock that closes). Scout will have to ride IN, not hold the perimeter \u2014 the rider who lives in absence must be present; Gerald matters out loud. Boiler studies a structure full of people, not empty concrete \u2014 his cheer meets its limit. Loadout/gear density (Reibo, crawlers, Boiler\u0027s resonance kit). Everyone in their frame.",
       "EscalationTarget": "6",
       "EventType": "planning",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 5334,
+      "ProseLength": 319,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-b08c-75b3-928a-cd1a627b1ab6",
-      "Number": 4853,
-      "Chapter": "Chapter 2 \u2014 The Mirror C",
-      "ChapterIndex": 1,
+      "BeatId": "019f9ff9-cc4f-7c5c-bf06-6b203ba787a8",
+      "Number": 6371,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 10 \u2014 The Run In. The big setpiece begins; the Marrow from the inside; Scout rides into the body-bank and comes back changed; the twenty-one found \u2014 as people, terrified, real (Palesa among them, one of the twelve Sefi had watched go through a locked door and given up for gone). Procedural horror lands. Combat-prose discipline; gear specifics; PEREGRINE-grade opposition now Helix\u0027s. The vault that is a person.",
       "EscalationTarget": "8",
       "EventType": "infiltration",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 10633,
+      "ProseLength": 49,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-c84e-7990-a5d0-8eabc3df7839",
-      "Number": 4854,
-      "Chapter": "Chapter 3 \u2014 The Run",
-      "ChapterIndex": 2,
+      "BeatId": "019f9ff9-cc4f-7594-b326-405d74af301c",
+      "Number": 6372,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 11 \u2014 Vox Steps Into the Light. Helix pulls the Vox-face thread and IDs the crew; Vox chooses to be seen \u2014 the unseen channel becomes the loud one on purpose \u2014 to pull Helix\u0027s attention off the rescue. Her arc completes: being named was the thing she most feared; she spends it to save the others. Pays off NRST\u0027s sold face. The crew protects her in turn.",
       "EscalationTarget": "9",
       "EventType": "ambush",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4021,
+      "BeatTags": [],
+      "ProseLength": 174,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-de7b-712b-892f-2974fe7b467b",
-      "Number": 4855,
-      "Chapter": "Chapter 3 \u2014 The Run",
-      "ChapterIndex": 2,
+      "BeatId": "019f9ff9-cc4f-77dd-90c4-eca268cbfb7e",
+      "Number": 6373,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 12 \u2014 The Executive. Rook faces Anneke Oyelowo \u2014 the trilogy\u0027s human machine, a planner who priced people and never stopped: Rook\u0027s true mirror (what she\u0027d be if the count never came out in names). The argument neither can win clean (\u0022We pay for a thing; someone else receives it. You built a career in that gap. So have I.\u0022). Anneke\u0027s one mercy \u2014 letting the twenty-one run \u2014 is the thread that undoes her.",
       "EscalationTarget": "10",
       "EventType": "confrontation",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 6098,
+      "BeatTags": [],
+      "ProseLength": 127,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096a-f6b7-7065-9c65-875b2932e606",
-      "Number": 4856,
-      "Chapter": "Chapter 3 \u2014 The Run",
-      "ChapterIndex": 2,
+      "BeatId": "019f9ff9-cc4f-7238-9dac-ec573a013558",
+      "Number": 6374,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 13 \u2014 The Burning-Down. Boiler brings the harvest capability down \u2014 the load that was people, his structural empathy turned human and costing him his cheer. The twenty-one out of reach; the cost paid (someone is hurt; the win is NOT clean \u2014 trilogy lock 6). Goldberg\u0027s crossing completes on screen. Helix wounded, not erased. The corp\u0027s role made undeniable enough the GLMZ can\u0027t fully file it.",
       "EscalationTarget": "9",
       "EventType": "sabotage",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 5518,
+      "ProseLength": 562,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f096b-238d-7af5-a7a1-b4fc939968d0",
-      "Number": 4857,
-      "Chapter": "Chapter 3 \u2014 The Run",
-      "ChapterIndex": 2,
+      "BeatId": "019f9ff9-cc4f-7a08-8b67-05baa1724b36",
+      "Number": 6375,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Beat 14 \u2014 The Count, With Names. Rook at a window over the lake \u2014 the trilogy\u0027s third diner (MGUN\u0027s Spine, NRST\u0027s Sojourn). The count comes out in names this time, and \u2014 because she refused, once, to let the paid-for and the saved be different people \u2014 it comes out whole: twenty-one, written down, kept. The series motif resolves (\u0022the count never says who didn\u0027t\u0022 \u2192 it finally does, and she writes them anyway). The lake is the same. She is not. Marrow over chrome.",
       "EscalationTarget": "7",
       "EventType": "repair",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 8300,
+      "ProseLength": 205,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7ca9-a117-1d61a3399a63",
+      "Number": 6376,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 117,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7b36-a86f-ad5afc84a6f3",
+      "Number": 6377,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 579,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7cc6-bb34-43ad13bf5379",
+      "Number": 6378,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 210,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7045-ac9e-83eefa301bce",
+      "Number": 6379,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 154,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-75ad-83f5-0f5f07246be9",
+      "Number": 6380,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 359,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-73cb-b78e-1bdf81b7d451",
+      "Number": 6381,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 57,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-763f-b44a-2c9e4483d921",
+      "Number": 6382,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 77,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-72cb-9d2f-6651a8276458",
+      "Number": 6383,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 434,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-74b1-a275-2866381fd1e4",
+      "Number": 6384,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 200,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7213-b340-6c7e299bca2f",
+      "Number": 6385,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 96,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-712d-98a9-f1765a6adbb8",
+      "Number": 6386,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 157,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-727a-825e-73d2cf8fda1f",
+      "Number": 6387,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 613,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7175-bb40-a3729386800f",
+      "Number": 6388,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 45,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7a9b-836a-b58f204ed2b5",
+      "Number": 6389,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 316,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7174-ae9f-51193e6c97aa",
+      "Number": 6390,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 82,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-734e-8405-a6fe46aa19da",
+      "Number": 6391,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 37,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-71cb-b6e5-e0e71f08e4a1",
+      "Number": 6392,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 237,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-739d-b532-d2fbc14a9649",
+      "Number": 6393,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 136,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-72fd-b5b5-a7bf160524be",
+      "Number": 6394,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 463,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7e07-ad8a-e7d18bd0e393",
+      "Number": 6395,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 56,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7214-a7ca-a841fab1cf1c",
+      "Number": 6396,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 383,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-71e7-829a-d109b72dbb9c",
+      "Number": 6397,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 307,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7010-86b2-941a8488049f",
+      "Number": 6398,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 61,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-7e69-8927-e345bea2fb15",
+      "Number": 6399,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 351,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-749d-9a46-4d2748bbaacf",
+      "Number": 6400,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 475,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc50-735a-b8c6-05b508ce98ee",
+      "Number": 6401,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 386,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-723d-9a06-b738be25f058",
+      "Number": 6402,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 135,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7b38-9ed5-8b3a3390ede3",
+      "Number": 6403,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 347,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-70fa-b95f-be23840e7155",
+      "Number": 6404,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 193,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7222-9dd2-e22c92514929",
+      "Number": 6405,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 366,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7dbf-965b-0f7e73e5d1eb",
+      "Number": 6406,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 637,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7f4e-b044-d5fde41282ef",
+      "Number": 6407,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 35,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-76ba-8b7c-4000c91c50dd",
+      "Number": 6408,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 532,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7cdd-8b21-71bf33bac3c6",
+      "Number": 6409,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 49,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-70f7-848a-8a103793b2b8",
+      "Number": 6410,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 60,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7d33-ba52-d8dae4caef0e",
+      "Number": 6411,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 443,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7a70-aeec-e4ff5f8ef532",
+      "Number": 6412,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 118,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-70a2-84a1-892239843a29",
+      "Number": 6413,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 462,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7981-a703-1853314bf0f7",
+      "Number": 6414,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 54,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7aae-83d4-87c4c76382a5",
+      "Number": 6415,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 246,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-755c-9ed2-f7fedf941ab2",
+      "Number": 6416,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 517,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7fb7-b78d-f07b5f12d3c5",
+      "Number": 6417,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 203,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7028-a932-9d7aa686ffd4",
+      "Number": 6418,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 901,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7b0d-a73e-07be8a022f17",
+      "Number": 6419,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 200,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7471-906c-d5cdc276f404",
+      "Number": 6420,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 483,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-729e-a183-69097db45469",
+      "Number": 6421,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 165,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7ed6-9f48-bee00ada5e7c",
+      "Number": 6422,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 293,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7b1f-b364-34bcf793f819",
+      "Number": 6423,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 191,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7f93-920a-c3e7585f9a02",
+      "Number": 6424,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 410,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-71cf-b289-777df28b1429",
+      "Number": 6425,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 109,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-736a-afd6-a257c5742bbf",
+      "Number": 6426,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 86,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7381-86ec-746bc645639b",
+      "Number": 6427,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 91,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-79d6-98a7-96243fc92c0f",
+      "Number": 6428,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 39,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7ea2-9372-327a19946c60",
+      "Number": 6429,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 343,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-714a-8c14-0d3ba0855ac9",
+      "Number": 6430,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 790,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-765c-b996-156964a30cec",
+      "Number": 6431,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 664,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-7195-86e4-69261f0f4b16",
+      "Number": 6432,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 18,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-715b-acba-5a71eb206fec",
+      "Number": 6433,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 475,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc51-70a4-9e42-33be82b1ad82",
+      "Number": 6434,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 215,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc52-758d-88e0-ed8d3376aafe",
+      "Number": 6435,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 855,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff9-cc52-7e51-9c1f-f7de4036edab",
+      "Number": 6436,
+      "Chapter": "Chapter 1 \u2014 The Reunion",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 607,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-7a09-9f39-18c3bba7519a",
+      "Number": 6437,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 414,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-745f-9b95-8667c2074520",
+      "Number": 6438,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 662,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-7acf-ad49-441ae48e561f",
+      "Number": 6439,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 65,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-75f3-b9da-61f4b7d0ca41",
+      "Number": 6440,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 511,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-7270-a2d5-52a6e869beee",
+      "Number": 6441,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 563,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-7ebe-894a-3119e2c2ece7",
+      "Number": 6442,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 19,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-7f63-b39e-3cad05980675",
+      "Number": 6443,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 399,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-7886-9818-f9b8d3af79c9",
+      "Number": 6444,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 379,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-726a-9706-d8be30a9ef43",
+      "Number": 6445,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 266,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-7529-af7e-ccd7fbd6f1c9",
+      "Number": 6446,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 149,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4685-79b7-8852-237bd87aec12",
+      "Number": 6447,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 638,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-718f-a4c5-3a993bbcfe6a",
+      "Number": 6448,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 492,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7f1c-8782-20034116d7b3",
+      "Number": 6449,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 394,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-78b6-9747-be6f75079150",
+      "Number": 6450,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 65,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7dbf-983a-17aef53fc7e9",
+      "Number": 6451,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 326,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7f32-bb71-82309a664cde",
+      "Number": 6452,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 472,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7325-a2be-76c87e74dd4d",
+      "Number": 6453,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 411,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7397-8136-a50c32da6c0b",
+      "Number": 6454,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 337,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7fc4-b82a-67bda21d2dc7",
+      "Number": 6455,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 364,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7fdb-aa07-cc675dc852ba",
+      "Number": 6456,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-765f-bb02-d846527425ec",
+      "Number": 6457,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 458,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7632-a5b2-110db14f1685",
+      "Number": 6458,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 86,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-725b-8680-3d242fec7770",
+      "Number": 6459,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 60,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7340-88ad-2b21e145bacd",
+      "Number": 6460,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 550,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-73ce-9c6f-44f1e1db6458",
+      "Number": 6461,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 127,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7904-8d93-87771cf49406",
+      "Number": 6462,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 226,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-76b9-b24b-fa9126e123d9",
+      "Number": 6463,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 59,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7f72-b244-2aa456503651",
+      "Number": 6464,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 95,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7758-818a-e933dcae0fff",
+      "Number": 6465,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 122,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-77c3-a718-67fdc7a18aa9",
+      "Number": 6466,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 227,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7bdb-8719-d2ab0f71a5dd",
+      "Number": 6467,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 756,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7669-b260-293b5ae88ab9",
+      "Number": 6468,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 389,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4686-7749-93a0-cc540074b317",
+      "Number": 6469,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 688,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7c3a-8026-9937e92a024a",
+      "Number": 6470,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 427,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-701d-bcd2-93e5a6c8302a",
+      "Number": 6471,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 342,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7731-a614-a3df281aec02",
+      "Number": 6472,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 313,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7486-a74d-23e53251ee2d",
+      "Number": 6473,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 204,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7a15-883f-ed08471b585e",
+      "Number": 6474,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 914,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-72b5-b8e9-aa8c2a47d560",
+      "Number": 6475,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 38,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7849-bf84-890ebc8fa304",
+      "Number": 6476,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 713,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7513-8780-2d76059aa718",
+      "Number": 6477,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 301,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7323-a3f3-c1c2f7b7b183",
+      "Number": 6478,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 41,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7e75-a125-4f343507da18",
+      "Number": 6479,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 82,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7aa7-bbcb-2cddac669467",
+      "Number": 6480,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 218,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7635-9c84-57b07651a3a7",
+      "Number": 6481,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 600,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7c5c-b940-fe8f7235040b",
+      "Number": 6482,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 569,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-77f9-a73d-f732fac7c2ef",
+      "Number": 6483,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1301,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7ec6-abbe-74f2a8dbd50b",
+      "Number": 6484,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 205,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7bce-89e0-2fd6f01f53ee",
+      "Number": 6485,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 733,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7e11-a856-e7b49aa82d01",
+      "Number": 6486,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 484,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7bec-b1b5-f1852c31d076",
+      "Number": 6487,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 549,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7d1c-8e2d-363dc0ab4c78",
+      "Number": 6488,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 671,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7795-bb58-59f3b1a61456",
+      "Number": 6489,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 605,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7513-999d-9267cf8e3e1f",
+      "Number": 6490,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 426,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7020-b903-8c47fb4c0856",
+      "Number": 6491,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1060,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-764d-be12-169ae75f2601",
+      "Number": 6492,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 885,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-790b-aabd-a17622da3f5d",
+      "Number": 6493,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 621,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7aaa-8fb2-091daed2744b",
+      "Number": 6494,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 106,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4687-7477-95ea-85a0c98ad26c",
+      "Number": 6495,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 340,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-736d-9613-254022bcff8e",
+      "Number": 6496,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 570,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-7afe-b843-30e3f8021986",
+      "Number": 6497,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 673,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-7ad9-a026-ece645557903",
+      "Number": 6498,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 20,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-7595-92a4-33dcaa1eea6d",
+      "Number": 6499,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 766,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-79e1-983c-b622054e78ad",
+      "Number": 6500,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 640,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-727e-8585-cb2578db436a",
+      "Number": 6501,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 315,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-7fd2-99ad-e8d4a87e8f40",
+      "Number": 6502,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 484,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-70c3-8509-7d3d0f7ce353",
+      "Number": 6503,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 492,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-7077-990e-5edfbd1742e1",
+      "Number": 6504,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 35,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-73c8-9516-1483cbe07323",
+      "Number": 6505,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 96,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-7f3a-bfce-350a8a5c5cc6",
+      "Number": 6506,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 803,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-7e1b-9699-3aae19603c8a",
+      "Number": 6507,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1045,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-7393-a37b-35352234c3a0",
+      "Number": 6508,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 402,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffb-4688-71cd-87d9-ed99060fc20e",
+      "Number": 6509,
+      "Chapter": "Chapter 2 \u2014 The Mirror C",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 230,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea2-745d-ac3b-cae47fcb28e5",
+      "Number": 6510,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 802,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea2-7b03-a0d8-9da27c13e2cc",
+      "Number": 6511,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 565,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea2-723f-89bd-bea1051e10ce",
+      "Number": 6512,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 605,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7871-b0cb-5fd1c1e3d982",
+      "Number": 6513,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 875,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7743-9933-a112609bcfb1",
+      "Number": 6514,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 296,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7bc1-bf84-49a0c5c175aa",
+      "Number": 6515,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 241,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7c24-94ec-2dfef3aeac6b",
+      "Number": 6516,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 643,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-70c5-b33c-b6fd912fb439",
+      "Number": 6517,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 697,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7b91-884e-91d533bb9282",
+      "Number": 6518,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 668,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7bf3-8c87-7bc3c83581b3",
+      "Number": 6519,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 212,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-79df-b9f7-2dfd8a003d86",
+      "Number": 6520,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 563,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7b82-a646-e68d47869a95",
+      "Number": 6521,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 556,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7141-b574-087fc4634a02",
+      "Number": 6522,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 44,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-795a-aab0-95f94d37af39",
+      "Number": 6523,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 537,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-79ef-8c51-960c21ca159c",
+      "Number": 6524,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 432,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7168-a5e5-2fffc05834de",
+      "Number": 6525,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 126,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7974-b30e-ae0e4c8797ab",
+      "Number": 6526,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 305,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-77fb-baa0-1049354dd6de",
+      "Number": 6527,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 570,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7524-aa7f-e01d56e45c17",
+      "Number": 6528,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 499,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-73db-a7a4-a7cf4155d1ca",
+      "Number": 6529,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 275,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-740a-98a2-3c8773e6103b",
+      "Number": 6530,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 510,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7cd3-898a-72c18b05c4a5",
+      "Number": 6531,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 788,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-79f8-8c53-7ac99d87bdc4",
+      "Number": 6532,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 468,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7a51-a30f-d14db36afb90",
+      "Number": 6533,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1461,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-72ec-934f-23fb1f32afe6",
+      "Number": 6534,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1097,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-79b5-b4ce-6abccb9a244f",
+      "Number": 6535,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1051,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7d4e-8453-f532eb20c5ab",
+      "Number": 6536,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 648,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7bc2-bbd4-335c0acd26e7",
+      "Number": 6537,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 772,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-79eb-bc46-301273f4cbd5",
+      "Number": 6538,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 362,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7c4a-bcf3-02ad574bc859",
+      "Number": 6539,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 250,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7a2a-bf30-2d26fc582d0b",
+      "Number": 6540,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 711,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7263-9ac7-0feb98b25f3e",
+      "Number": 6541,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 588,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7071-a21d-4b5dee516cda",
+      "Number": 6542,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 223,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7256-aaee-e0caed079511",
+      "Number": 6543,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 385,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-73ec-bca7-5c0dafbbaf5d",
+      "Number": 6544,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 489,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7772-9d2d-2213eeb4507d",
+      "Number": 6545,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 777,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7115-9020-f675896431ad",
+      "Number": 6546,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 272,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7e28-9eac-e2e732804caf",
+      "Number": 6547,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 758,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-705e-8a92-44a05ffc6bb5",
+      "Number": 6548,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 126,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7e11-a464-aa9042e825a4",
+      "Number": 6549,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 322,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7d45-b64b-b9cd818f2aae",
+      "Number": 6550,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 600,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-775c-ac01-63017adc88f6",
+      "Number": 6551,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 612,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7dc5-a976-da1c032cd70a",
+      "Number": 6552,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 433,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-7f91-a06e-2ddd6ce32b14",
+      "Number": 6553,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 395,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ffc-5ea3-75e8-9f13-3cf6f968857c",
+      "Number": 6554,
+      "Chapter": "Chapter 3 \u2014 The Run",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 232,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
     }
   ]
 }

@@ -8,8 +8,6 @@ She knows what they want before they reach for it. She knows which one will hesi
 
 READ THE ROOM is a story about a psionic who can hear every thought in the building — and the one decision she never saw coming._
 
-## Chapter 1 - Read the Room
-
 The last chord was still hanging out front when Ethan Wolfe pushed through the green room door and let it swing shut. The wall took the crowd and folded it down to a low roar you felt in the concrete more than heard. The Velvet Tine had been built to hold worse than a Tuesday-night noise set. Its green room was a box of gray concrete, a lamp on a chain swinging in its own draft, cables taped down in fat black rivers along the floor.
 
 He stood with his hands loose and let the shaking finish. That was the part nobody warned you about — not the nerves before, the after. Eighty minutes of giving the room everything, then a door. His shirt was soaked through the back. His pulse ticked in his throat, and his hands, when he looked at them, weren't quite his yet.
@@ -30,7 +28,9 @@ The door opened again and Mona came through backward, dragging the mic stands tw
 
 "No."
 
-"Good. Don't let Dayo's people at the water before I count it." She crouched by the equipment table and laid the night's takings into the case in even stacks — a fan of credsticks, the club's cut already skimmed. The light-strip under the skin of her forearm caught the movement and pulsed once, twice, a soft amber run chasing up toward her wrist, the last of the bass still living in it. Then her hands went still over the case and the strip went white, edge to edge, like a held breath.
+"Good. Don't let Dayo's people at the water before I count it."
+
+She crouched by the equipment table and laid the night's takings into the case in even stacks — a fan of credsticks, the club's cut already skimmed. The light-strip under the skin of her forearm caught the movement and pulsed once, twice, a soft amber run chasing up toward her wrist, the last of the bass still living in it. Then her hands went still over the case and the strip went white, edge to edge, like a held breath.
 
 Ethan watched it go pale. He always watched. He'd told himself once it was a bassist's habit, keeping an eye on the light. It wasn't a bassist's habit.
 
@@ -54,7 +54,7 @@ This was the part Ethan liked. Not the stage — he'd have said the stage if you
 
 And that was exactly why he'd decided, somewhere in the last three songs, to hold the room here a while longer — to keep the three of them inside this quiet until Dayo came, to stall the count and the handshake and the load-out, to buy one more hour of the thing before the night carried it off. Small goal, maybe. But he wanted it, and he meant to get it, and he'd need Mona to slow down for once to let it happen.
 
-"How long till Dayo shows?" he asked.
+"How long till Dayo shows?" he asks.
 
 Mona checked the count against nothing, an old habit. "Soon. He said soon." She stood and brushed her knees, the strip still white on her still arm. "You should eat something before he gets here. You always spend it all up there and then wonder why you're shaking."
 
@@ -88,7 +88,7 @@ The first was all noise and motion — tall, Nigerian, twenty-seven and already 
 
 Rill tipped his head a half-inch. She took it as a full conversation and kept going.
 
-Ethan wasn't watching her. He was watching the second one. He wanted a name — just that, just the small fact of who she was — and he wanted it before Dayo's line of goods pulled the room's attention down and the moment closed. More than the name, he wanted what came with it: some thread he could follow, some reason she was here that wasn't only Dayo's charity, because a woman who read a room like that and said nothing was either very careful or very certain, and he needed to know which before the night sorted itself into its usual shapes and left no opening for the question.
+Ethan wasn't watching her. He was watching the second one. He wanted a name — just that, just the small fact of who she was — and he wanted it before Dayo's line of goods pulled the room's attention down and the moment closed. More than the name, he wanted what came with it: some thread he could follow, some reason she was here that wasn't only Dayo's charity.
 
 She'd come in last and quiet, and stopped just inside the door — small, a head shorter than Nkechi, built close rather than slight. Blonde bob, damp at the temples from the walk. A jacket she'd had a long time — not circuit, Greymark Unseen canvas, worn past caring. Her hands, which Ethan looked at before faces, were the hands of someone who worked with them: strong in the knuckles, clean under the nails, a faint flour-whiteness at the inside of one wrist. Scandinavian, if he had to guess, and he was usually right about faces. Bright-eyed. Open in a way he'd learned to be careful of — the open face was often the one running the most behind it.
 
@@ -136,7 +136,9 @@ Dayo answered the way he answered most things, by moving. He drew a finger down 
 
 "That's the tour," Nkechi said from the couch. "He's a poet."
 
-Faith reached over and turned one of the gold tabs on its paper with a fingertip, not lifting it. "What's Candor do?"
+Faith reached over and turned one of the gold tabs on its paper with a fingertip, not lifting it.
+
+"What's Candor do?" she asks.
 
 "Turns the volume up," Dayo said. "On the people. You'll feel the room."
 
@@ -178,11 +180,11 @@ Rill made the sound that in another man was a laugh, eyes still shut.
 
 Faith had come off the table. Ethan didn't see her decide to. She was just closer — hipped against the equipment case near him now, her face open and turned up. The Candor was in her; he could see it land, a small settling in her shoulders, a woman lowering herself into water that turned out to be the right temperature.
 
-"You write that four-bar drop, or is it a happy accident?"
+"You write that four-bar drop, or is it a happy accident?" she asks.
 
 "I wrote it."
 
-"On purpose?"
+"On purpose?" she asks.
 
 "You can't do it on accident. The bass has to know it's leaving."
 
@@ -208,7 +210,9 @@ It started small. A word that wasn't hers, arriving in the middle of her own tho
 
 She blinked. Kept the smile on, because it was already there. Candor, she thought. Strong batch. Dayo didn't cut anything and he didn't measure it either, and here it was doing exactly what he'd promised. You'll feel the room. Except the room she was feeling had a cold edge to it, a draft under a door that was supposed to be shut.
 
-She reached for the thread of what Ethan was saying and found it. "The one where it doesn't come back," she said. "Tell me."
+She reached for the thread of what Ethan was saying and found it.
+
+"The one where it doesn't come back," she said. "Tell me."
 
 "It's not finished," he said. "It hasn't been finished for four years."
 
@@ -244,7 +248,9 @@ She could still tell herself it was the Candor. She wanted to. She held that for
 
 Then a fourth fragment came, tired and small — *feet hurt, new shoes, tell him to hurry* — from a different direction than the other three, from past the side wall. And she understood, with a cold dropping certainty, that she wasn't hearing one imagined man. She was hearing several real ones, set around the outside of this concrete box, and they had positions, and they had a plan, and one of them had bad shoes.
 
-Ethan was watching her now, properly, the Fade making his attention slow and deep and a half-second behind itself. "Where'd you go? You laughed and then you—"
+Ethan was watching her now, properly, the Fade making his attention slow and deep and a half-second behind itself.
+
+"Where'd you go? You laughed and then you—"
 
 "Ethan." Her voice came out level, which surprised her. Level and clipped, her voice doing the thing it always did while the rest of her caught up. "Don't move fast. Don't look at the side door. I need you to keep your face exactly like it is."
 
@@ -268,7 +274,7 @@ He stood at the far end of the equipment table, still cooling down, the current 
 
 She'd feel bad about using it later, from somewhere that wasn't here. Right now she was going to use it to get him out of the room alive.
 
-She put her glass down and crossed the room in a line that ended at him. She came up on his left, below his sightline, and turned to face him when she was close enough. She tilted her face up at the angle she'd read he'd been imagining, which was exactly the angle, and she felt the recognition land through him like a plucked string. She held it there. Let him have it.
+She put her glass down and crossed the room in a line that ended at him. She came up on his left, below his sightline, and turned to face him when she was close enough. She tilted her face up at the angle she'd read he'd been imagining, which was exactly the angle, and she felt the recognition land through him. She held it there. Let him have it.
 
 His eyes went to her mouth first. Then up.
 
@@ -295,17 +301,13 @@ Faith-sized. Not Ethan-sized. She saw that and set it aside to deal with in a se
 She stepped back and put one finger up. Wait.
 
 "You want to tell me what—"
-
 "Four maybe five. That was the first one." She kept her voice under the tap's drip, quick and low. "Then one about the door being reinforced and a side window catch. Then one that stopped me — *the bassist looks strong, don't give her a reason.*" She watched his face hold still. "And one from further off, past the side wall, a tired one. His feet hurt. New shoes."
-
 "Faith." Gentle. The register that gives you less than you want. "You took Candor an hour ago. It turns the volume up on the people. You're hearing the club. The strut guys, the—"
-
 "The strut's condemned, there's nobody on it, Nkechi's been telling us for an hour. And the club's the other way. Every one of these came from the side, from the wall with the side entrance behind it. And they weren't feelings, Ethan. Candor's supposed to be feelings. These were sentences with plans in them."
 
 He was quiet. The tap dripped. She watched him try to walk himself back to the warm easy version of the night where a woman he'd met an hour ago was just being strange in a bathroom.
 
 "You can't hear thoughts," he said. Reasonable. Kind, even.
-
 "No. I can't." Her voice cracked on it, once, and she hated it. "My whole life I've just been good at people. Too perceptive — my mother said it like I'd done something. And tonight there's a gold tab under my tongue and suddenly it's words." She made herself slow down, because fast wasn't convincing him and one thing might. "The tired one. His feet hurt. New shoes. Nobody puts that in a story they're making up in a bathroom. It's too small and too stupid and too true. I didn't invent a man's bad shoes."
 
 Something moved behind his face. Not belief yet. The place right before it, where the ground you're standing on stops being ground.
@@ -315,11 +317,8 @@ Something moved behind his face. Not belief yet. The place right before it, wher
 Ethan looked at the door. The line of light under it. His band on the other side — Rill gone soft with the Glass, Mona on her heels with the count squared, both of them warm and unaware in the box she'd just told him was surrounded.
 
 "If you're wrong," he said slowly, "we scared ourselves in a bathroom and we laugh about it."
-
 "Yes."
-
 "If you're right and we walk back out and start telling people—"
-
 "They hear it through the wall. Or somebody's face changes and the men outside decide it's time. We can't warn a room without warning them. Not from in here."
 
 She turned to the window, got a knee up on the cold lid of the cistern, reached the catch, and worked it — old paint cracking off in flakes, the furred metal fighting her, then giving with a small gritted shriek that made them both freeze. Nothing came. Milwaukee came, is all: cold night air off the lower terrace, forty meters up, wet with low cloud, and under it the deep indifferent quiet of a city at two in the morning.
@@ -327,7 +326,6 @@ She turned to the window, got a knee up on the cold lid of the cistern, reached 
 The pane swung out on its hinge. The gap was exactly as wide as she'd feared and hoped. Faith-sized. She looked back at the slim frame of him, the shoulders that had carried a room for eighty minutes, and measured him against it the same way he was.
 
 "I don't fit," he said.
-
 "You fit. Barely. You go second and you exhale." She got both hands on the frame. Cold bit into her palms. "I go first, I hit the alley, I tell you if it's clear on the ground. If I say go, you come. If I say don't—" She didn't have the end of that sentence. She left it.
 
 He looked at her. One full second — a man deciding whether the ground was ground. She felt the exact moment he stopped deciding. It came off him clean and quiet, no words in it at all, and she caught it without meaning to. So that was belief, from the outside.
@@ -350,9 +348,15 @@ She didn't know which way. She only knew *away*, and she took his sleeve and mov
 
 The breach came through the wall behind them like a cough. Not loud. A dull concussive thud, the side entrance giving all at once. And under it, right away, the change in the voices — the patient outside ones going close and busy and *inside*, and one bright terrified new one that was Nkechi, Nkechi's actual throat, screaming through two hundred years of concrete.
 
-Faith's knees nearly went. Ethan caught her arm — and then he turned back for the pane, one step, his free hand already reaching for the sill, Mona's name half out of his mouth. Faith got a fist in his jacket and hauled. "They're inside," she breathed. "One's coming for the bathroom. He's thinking about the window." His hand came off the sill like the metal had gone live. "Go," he said, and they went.
+Faith's knees nearly went. Ethan caught her arm — and then he turned back for the pane, one step, his free hand already reaching for the sill, Mona's name half out of his mouth. Faith got a fist in his jacket and hauled.
 
----
+"They're inside," she breathed.
+
+"One's coming for the bathroom. He's thinking about the window."
+
+His hand came off the sill like the metal had gone live.
+
+"Go," he said, and they went.
 
 Mona heard the door before it was a door.
 
@@ -360,7 +364,9 @@ A scuff of grit on the wrong side of the wall, a weight settling, the particular
 
 Then the side entrance stopped being a door.
 
-It came in fast, no drama to it, a slab of cheap composite folding off its hinges and the cold rushing in behind three shapes that moved like they'd walked this exact room a hundred times in their heads. Nkechi screamed — a real scream, high and whole, up off the couch and *running*, not toward anything, just the animal doing the only true thing in the room. Mona felt the truth of it hit her own legs and refused it. You don't run at people who came in like that. Running is what they're built to catch.
+It came in fast, no drama to it, a slab of cheap composite folding off its hinges and the cold rushing in behind three shapes that moved like they'd walked this exact room a hundred times in their heads. Nkechi screamed — a real scream, high and whole, up off the couch and *running*, not toward anything, just the animal doing the only true thing in the room. Mona felt the truth of it hit her own legs and refused it.
+
+You don't run at people who came in like that. Running is what they're built to catch.
 
 She dropped.
 
@@ -398,7 +404,9 @@ She cut right.
 
 He hadn't seen the reason. There wasn't one, not to his eye — more lane, another rust-breathing vent, a skip slumped against a strut. But she'd gone right two full steps before the lane forked, and when it forked, the left branch dead-ended in a chained gate and the right ran clean toward the terrace edge. She'd known. Not guessed. Known.
 
-He watched the back of her head, the blonde bob damp and flattened, and thought: she is turning before the turn.
+He watched the back of her head, the blonde bob damp and flattened, and thought:
+
+she is turning before the turn.
 
 Milwaukee lay around them, indifferent. The Low — forty meters up on a lower terrace of Zone 4, ungoverned air, nobody's jurisdiction. The Eigenlift towers went up into the low cloud, lit from within, amber and bruise-violet where they lost their tops in the overcast. A Waxwing Neuromedia stop sign burned regulation red in the empty air above a crosswalk with no pedestrians.
 
@@ -420,7 +428,8 @@ She turned in the recess, back to the sealed door, chest going, and for the firs
 
 Ethan came in after her under the brow, and it all landed at once — the breach, Nkechi's scream through the concrete, Rill and Mona still in the box, the six turns, the man with the long weapon an arm's length away. He put a hand out. Got a fistful of her sleeve. Not rough. Just enough to make the world hold still where he could look at it.
 
-"Slow down," he said. His voice came out wrong, sanded. "Faith. Slow — down. A second."
+"Slow down," he said. His voice came out wrong, sanded.
+"Faith. Slow — down. A second."
 
 She let him hold the sleeve. Her eyes came up to his, fast and clear and not slow at all, the light off the far towers catching one side of her face and leaving the rest in the recess dark.
 
@@ -470,7 +479,7 @@ His hand had found something in his jacket pocket. He drew it out without seemin
 
 He'd shifted in the last silence without her seeing him do it. The arm's length of recess dark had gone to half. Still not close. But closer. He'd stopped keeping it so precise.
 
-"Does it hurt?" he asked. Quiet. He wasn't looking at her. He was looking at the capsule.
+"Does it hurt?" he asks. Quiet. He wasn't looking at her. He was looking at the capsule.
 
 She knew which *it* he meant. Not the situation. The thing she was. The window with no shutter.
 
@@ -598,27 +607,51 @@ They went back the way the city would least expect two people to go — toward i
 
 Faith set the pace this time, and Ethan let her, a good passenger, watching his own feet find the wet composite and going where she led. She kept them off the terrace walk and down into the service run behind it, the narrow gutted stretch where the club's back-of-house bled into the next block's. Cable trays overhead, a smell of rust and standing water, and under it the ozone breath of Eigenlift work somewhere close. She moved in short pushes — three steps and a stop, three steps and a stop — her head tilted toward something only she was hearing.
 
-Ethan, without deciding to, shaped a question in the sub-vocal register, the neuretics habit running ahead of sense. No channel open. No recipient assigned. He'd done it reflexively for fifteen years, and the question left him shaped and aimed at nobody: *which side.*
+Ethan, without deciding to, shaped a question in the sub-vocal register, the neuretics habit running ahead of sense. No channel open. No recipient assigned. He'd done it reflexively for fifteen years, and the question left him shaped and aimed at nobody:
 
-Her answer came back before he'd finished forming it. Not through the mesh — she had none — but the thought had surfaced in him in the compressed shape of neuretics intent, and she'd read it before the words finished assembling. "Left, fire-escape side." Barely breath. Aimed at his ear with the precision of something practiced.
+*which side.*
+
+Her answer came back before he'd finished forming it. Not through the mesh — she had none — but the thought had surfaced in him in the compressed shape of neuretics intent, and she'd read it before the words finished assembling.
+
+"Left, fire-escape side."
+
+Barely breath. Aimed at his ear with the precision of something practiced.
 
 From there it became the working language. He shaped the questions sub-vocal; she answered in sound barely below nothing, or with her hands — two fingers on his left forearm, left; his right, right; a palm between his shoulders, stop. They moved.
 
-"Left," she said, barely voiced. "Side entrance, the one they came in. He's still on it. Been standing there too long, and his feet hurt, and he's thinking about the door behind him more than the alley in front of him." A beat. "New shoes. It's the same one. The tired one from before. They left him outside to watch the fire escape."
+"Left," she said, barely voiced.
+
+"Side entrance, the one they came in. He's still on it. Been standing there too long, and his feet hurt, and he's thinking about the door behind him more than the alley in front of him."
+
+A beat.
+
+"New shoes. It's the same one. The tired one from before. They left him outside to watch the fire escape."
 
 "You're sure it's the same man."
 
-"I don't forget a voice." She almost laughed at herself. "Turns out that goes for the ones I hear the other way too."
+"I don't forget a voice."
+
+She almost laughed at herself.
+
+"Turns out that goes for the ones I hear the other way too."
 
 They came up the run to where it kinked around the back of the Velvet Tine, and Faith put her hand to his chest — wait — the same press as the alley, and he waited. Above them the towers went up into the pearl overcast and lost their tops. The club sat squat and ugly against all that lit air, two hundred years of ferrocement with a burnt neon antler on the far side. On this side, a fire escape hung off the second terrace like a dropped ladder, and a man stood at the foot of it.
 
 A Waxwing Neuromedia crowd-flow arrow hung above the platform in regulation blue, pointing nobody anywhere at 0200, still cycling its slow automated rotation through air that owed it nothing.
 
-Faith read him and gave Ethan what she got, quiet, exact. "He doesn't want to be here. That's the whole shape of him. Not scared — bored and sore and counting minutes, same as us. He keeps looking at the fire escape and thinking about how much it's going to hurt to climb it if this goes long." She turned her head a fraction. "He's not thinking about the back run. He doesn't know we came back. Why would we come back."
+Faith read him and gave Ethan what she got, quiet, exact.
+
+"He doesn't want to be here. That's the whole shape of him. Not scared — bored and sore and counting minutes, same as us. He keeps looking at the fire escape and thinking about how much it's going to hurt to climb it if this goes long."
+
+She turned her head a fraction.
+
+"He's not thinking about the back run. He doesn't know we came back. Why would we come back."
 
 "Because Mona's still in there," Ethan said.
 
-"He doesn't know that either. He thinks in shifts, Ethan. He's a man on a shift." She said it almost gently, and he understood she was talking the man out loud into a person, so neither of them would forget he was one — so that when it happened, it happened the smallest way it could.
+"He doesn't know that either. He thinks in shifts, Ethan. He's a man on a shift."
+
+She said it almost gently, and he understood she was talking the man out loud into a person, so neither of them would forget he was one — so that when it happened, it happened the smallest way it could.
 
 That was when Ethan saw the skip.
 
@@ -626,17 +659,33 @@ Set back in the run where the block's renovation had left it — half full of br
 
 He picked it up. It was heavier than it looked, and it looked heavy. It came off the skip with a low iron scrape and settled into his hands, and he stood there holding it, a slim man in a soaked stage shirt forty meters over Milwaukee, and looked at it like it had been left for him.
 
-Faith looked at it too. "Don't tell me," she said, "that that's your plan."
+Faith looked at it too.
+
+"Don't tell me," she said, "that that's your plan."
 
 "It's my starting position."
 
-She let out a breath that wanted to be a laugh and wasn't allowed to be one. "You've never held anything heavier than a mic in your life."
+She let out a breath that wanted to be a laugh and wasn't allowed to be one.
 
-"I've held you responsible for six correct turns." He hefted it, adjusted his grip. "Where's he looking?"
+"You've never held anything heavier than a mic in your life."
 
-She went still. Read the man at the fire escape end to end. "At his own feet. He just shifted his weight off the left one, it's the one the shoe's cutting into, and he's picturing taking the boot off. That's the whole of him right now. One boot off, one minute of relief." Her voice dropped. "He won't hear you if you come along the wall. The run's on his blind side, and he's a sore man thinking about his feet."
+"I've held you responsible for six correct turns."
 
-"Long or short," Ethan said. Meaning the haft.
+He hefted it, adjusted his grip.
+
+"Where's he looking?"
+
+She went still. Read the man at the fire escape end to end.
+
+"At his own feet. He just shifted his weight off the left one, it's the one the shoe's cutting into, and he's picturing taking the boot off. That's the whole of him right now. One boot off, one minute of relief."
+
+Her voice dropped.
+
+"He won't hear you if you come along the wall. The run's on his blind side, and he's a sore man thinking about his feet."
+
+"Long or short," Ethan said.
+
+Meaning the haft.
 
 "He's got something on his hip. Small. He hasn't thought about it once."
 
@@ -644,7 +693,11 @@ Ethan moved.
 
 Under the drug-slow surface there was a man who had never done this, on the far side of a decision. The deciding was over, so there was only the doing. He came along the ferrocement out of the man's blind side, the hammer low, and the sore man got exactly the warning Faith had promised, which was none. Ethan did not swing the head. He'd heard her — not scared, bored and sore, a man on a shift — and something in him took the head out of it. He brought the haft around instead, the long steel shaft, hard across the backs of the man's knees, and the man's legs simply stopped being legs. He went down folded, a short grunt punched out of him, the boot with the cruel shoe skidding out from under. Before the shape of him had finished arriving on the wet composite, Ethan had the haft down across the backs of his shoulders. Pinning, not crushing. Enough to keep him folded. Enough to take him out of the count.
 
-"Stay down," Ethan said. Quiet. Nothing extra in it. "You're done tonight. That's all this is."
+"Stay down," Ethan said.
+
+Quiet. Nothing extra in it.
+
+"You're done tonight. That's all this is."
 
 The man stayed down. He was sore and bored and now he was also on the ground, and even a man on a shift understood what the ground meant.
 
@@ -716,15 +769,18 @@ Ethan racked it. The sound was enormous. Somewhere back in the color, the shut q
 
 The shut quiet mind she couldn't read came around the last black curtain of the mist, and it had Mona with it.
 
-Not dragging her. Not holding a weapon on her. That was the first thing Ethan's eye refused — Koss wasn't doing any of the things a man does when he takes a person. He simply had her in front of him, one hand resting on the point of her shoulder, light, almost companionable. He'd put the two of them where the equipment table cut the room and the chain lamp threw its light across their faces and the fallen cover was all on his side. He'd walked her into an angle he controlled. Ethan had stood on enough stages to feel a room's sightlines, and he felt this one close around him like a hand: he could not bring the Wolfpack up on Koss without bringing it up on Mona. Koss had arranged that before Ethan finished coming through the wall.
+Not dragging her. Not holding a weapon on her. That was the first thing Ethan's eye refused — Koss wasn't doing any of the things a man does when he takes a person. He simply had her in front of him, one hand resting on the point of her shoulder, light, almost companionable. He'd put the two of them where the equipment table cut the room and the chain lamp threw its light across their faces and the fallen cover was all on his side. He'd walked her into an angle he controlled. Ethan had stood on enough stages to feel a room's sightlines, and he felt this one close around him: he could not bring the Wolfpack up on Koss without bringing it up on Mona. Koss had arranged that before Ethan finished coming through the wall.
 
-"Set it down," Koss said. Nothing in it that had to travel. The voice that had never once had to climb. "You're not going to use that with her this close. You know it and I know it, so let's not spend time on it."
+"Set it down," Koss said. Nothing in it that had to travel. The voice that had never once had to climb.
+"You're not going to use that with her this close. You know it and I know it, so let's not spend time on it."
 
 Mona's eyes found Ethan's over the table. Her light-strip lay white along her forearm, dead even, the honest little strip telling its one truth. She didn't speak. She'd said everything down a wire an hour ago and kept her voice level doing it, and now she just looked at him, and the look said don't, and it said I'm sorry, and it said a third thing the band had been building a wall against for four years, and there wasn't time to read it.
 
 Faith stepped up beside him.
 
-She'd been low, reading, her eyes going everywhere his couldn't. Now she came up level with his shoulder and turned that attention on the man behind the table, and Ethan felt her do it. He'd learned the shape of her working: the small tilt, the three steps and a stop, the quiet stream of narration that had kept them both alive across a night. *He's thinking. He wants. He's going to.*
+She'd been low, reading, her eyes going everywhere his couldn't. Now she came up level with his shoulder and turned that attention on the man behind the table, and Ethan felt her do it. He'd learned the shape of her working: the small tilt, the three steps and a stop, the quiet stream of narration that had kept them both alive across a night.
+
+*He's thinking. He wants. He's going to.*
 
 It didn't come.
 
@@ -741,9 +797,7 @@ She understood, standing there in the settling color, that his crew was gone and
 Barely above a murmur. Not for Koss. For Ethan — low against the ringing quiet, the way she'd read the fire-escape man to him so neither of them would forget he was a person. There was no person in this one to keep hold of. Only the closed still thing. Her voice knew it.
 
 "He decided already. Before you walked in."
-
 "How—" Ethan started.
-
 "Now."
 
 Ethan moved.
@@ -768,7 +822,7 @@ His hands arrived at her before he had any instruction for them. That was the th
 
 Faith was reading him.
 
-She couldn't not. She'd told him in the doorway — only when everyone's loud — and now there was only him, close, his palm a warm weight on her face. The pain had opened the aperture the rest of the way, jammed the shutter she'd never had against a wall, and he came flooding up the line into her at a range of no distance at all. She read him clean. The terror first, honest, no performance in it: a man watching a person bleed and being simply and wholly afraid. Then the guilt, hard under it — *you moved into it, you moved the wrong way, I should have, I should have* — guilt over a thing he couldn't take back. And under the guilt, running beneath the fear like the low end under a song, a bright astonished thing he had no defense against and didn't understand: surprise at himself. That she mattered this much. After one night. After two hours and six correct turns and a bathroom window. He was appalled by how much.
+She couldn't not. She'd told him in the doorway — only when everyone's loud — and now there was only him, close, his palm a warm weight on her face. The pain had opened the aperture the rest of the way, jammed the shutter she'd never had against a wall, and he came flooding up the line into her at a range of no distance at all. She read him clean. The terror first, honest, no performance in it: a man watching a person bleed and being simply and wholly afraid. Then the guilt, hard under it — *you moved into it, you moved the wrong way, I should have, I should have* — guilt over a thing he couldn't take back. And under the guilt, a bright astonished thing he had no defense against and didn't understand: surprise at himself. That she mattered this much. After one night. After two hours and six correct turns and a bathroom window. He was appalled by how much.
 
 And under even that, in the place where she'd found the closed decision in Koss and found nothing to give it, she found the other thing. The specific quiet thing. It had been there all night, she understood now. Since the green room. It didn't have words on it either. But it wasn't a picture and it wasn't a closed decision. It was just quiet, and it was aimed, and it had her name where a name would go.
 
@@ -780,11 +834,11 @@ It came up out of her the way the first laugh had, two hours and a lifetime ago 
 
 "Stop thinking about the blood," she said.
 
-"What?"
+"What?" he asks.
 
 "You're thinking about the blood. I can hear it, it's all you're — stop." She swallowed, and it cost her. "Think about something good."
 
-"*What?*"
+"*What?*" he asks.
 
 "Anything good." Barely voiced now, an edge of something soft in it. "Doesn't matter what. Just — turn it that way. Loudest thing in the room. Give me something good to read."
 
@@ -805,8 +859,6 @@ She didn't say anything else. She just watched him hold it.
 And passed out.
 
 Her hand slid off his. Her head went heavy in his palm. Somewhere very close Mona was already making the call — the real one, the emergency handle, the flare going up the mesh into the indifferent city with a bassist's level voice reciting an address forty meters over Milwaukee. And the next six hours came for all of them: the full trauma cart banging in through the ruined side entrance, the cold light, the hands that knew the shape of it when his hadn't. The next six hours are not this story.
-
----
 
 Three months later the Velvet Tine had a new PA and the same rusted lamp.
 

@@ -43,38 +43,14 @@ public sealed class ReviewReportExporter
     /// different universe than the manuscript it accompanies.</summary>
     private async Task<string> NodePublishDirAsync(Guid nodeId, string title, CancellationToken ct)
     {
-        var ancestors = new List<string>();
-        string? universeSlug;
-        await using (var db = await dbFactory.CreateDbContextAsync(ct))
-        {
-            var self = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
-                .Select(s => new { s.ParentNodeId, s.UniverseId }).FirstOrDefaultAsync(ct);
-            universeSlug = self is null ? null : await db.Universes.AsNoTracking()
-                .Where(u => u.Id == self.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
-            var parentId = self?.ParentNodeId;
-            for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
-            {
-                var parent = await db.Nodes.AsNoTracking().Where(s => s.Id == pid)
-                    .Select(s => new { s.Title, s.ParentNodeId }).FirstOrDefaultAsync(ct);
-                if (parent is null) break;
-                ancestors.Insert(0, SanitizeTitle(parent.Title));
-                parentId = parent.ParentNodeId;
-            }
-        }
-        var parts = new List<string> { settings.GetExportDirectory(universeSlug) };
-        parts.AddRange(ancestors);
-        parts.Add(SanitizeTitle(title));
-        return Path.Combine(parts.ToArray());
-    }
-
-    /// <summary>Mirror of ManuscriptExportService.SanitizeTitle so folder names match exactly.</summary>
-    private static string SanitizeTitle(string title)
-    {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        invalid.Add('\''); invalid.Add('’');
-        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
-        kept = Regex.Replace(kept, @"\s+", " ").Trim();
-        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct);
+        if (node is null) return Path.Combine(settings.GetExportDirectory(null), ExportPathResolver.SanitizeTitle(title));
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
+        var baseDir = settings.GetExportDirectory(universeSlug);
+        var (nodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct);
+        return nodeDir;
     }
 
     private static readonly JsonSerializerOptions JsonOpts = new()
@@ -104,7 +80,7 @@ public sealed class ReviewReportExporter
         // Named by title, brain-suffixed so a cloud run and a local run don't overwrite each
         // other; re-running the SAME brain overwrites (one current report per brain, like the
         // manuscripts keep one current version).
-        var stem = $"{SanitizeTitle(input.Title)} reviews ({input.Brain})";
+        var stem = $"{ExportPathResolver.SanitizeTitle(input.Title)} reviews ({input.Brain})";
         var jsonPath = Path.Combine(dir, stem + ".json");
         var htmPath = Path.Combine(dir, stem + ".htm");
 

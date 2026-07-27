@@ -2,9 +2,9 @@
   "nodeCode": "ICFI",
   "slug": "it-came-from-iowa-019f3eb2",
   "title": "It Came From Iowa",
-  "generatedAtUtc": "2026-07-25 23:04:02Z",
-  "totalBeats": 14,
-  "covered": 14,
+  "generatedAtUtc": "2026-07-27 06:28:55Z",
+  "totalBeats": 228,
+  "covered": 0,
   "chapterGranular": false,
   "storyScope": {
     "TemporalScheme": "nonlinear",
@@ -16,273 +16,3458 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 14
+    "MISSING_MEANING": 228,
+    "UNSCORED": 228,
+    "NO_CONSTRUCTION": 214
   },
   "beats": [
     {
-      "BeatId": "019f3eb2-6438-7381-901d-fb023a9011fd",
-      "Number": 5103,
+      "BeatId": "019f9ff8-a062-78ed-81de-f4fd68962516",
+      "Number": 6134,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "opening-image",
       "Act": 0,
-      "Meaning": "Pre-dawn, Iowa farm near Davenport. Wes follows a low mourning sound into the north field and finds it: a dead Behemoth in the tall grass, one tine snapped. The living machine is prodding it with a manipulator arm, pausing, waiting. Wes stands at the edge of the clearing and watches one Behemoth mourn another.",
       "EscalationTarget": "3",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4894,
+      "ProseLength": 210,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7708-811b-181074c46ad0",
-      "Number": 5104,
+      "BeatId": "019f9ff8-a088-7596-9ef1-0b087e6562f8",
+      "Number": 6135,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "inciting-incident",
       "Act": 0,
-      "Meaning": "Pip trots across the clearing without being called and sits down beside the dead machine. The living Behemoth stops prodding. The wail again \u2014 quieter. At dawn, the machine begins to move. South. Five miles per hour. Straight line. Pip is male; he has already claimed this as his business.",
       "EscalationTarget": "4",
       "EventType": "departure",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3114,
+      "ProseLength": 15,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7474-924e-1d9d1925e8ab",
-      "Number": 5105,
+      "BeatId": "019f9ff8-a08a-7d6e-80e5-c013a1252d39",
+      "Number": 6136,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "Wes runs and catches the hull struts while the machine is still building speed. He climbs forty feet to the Crown. Pip appears at the base of the tines below, trotting to keep pace. The Iowa fields begin to roll. He does not stop. Neither does Pip.",
       "EscalationTarget": "5",
       "EventType": "ascent",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4254,
+      "ProseLength": 324,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7587-acc1-5a8600539152",
-      "Number": 5106,
+      "BeatId": "019f9ff8-a08b-7bc3-8617-f30133a3525c",
+      "Number": 6137,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "CJ Anderson at her outer buffer post in Dixon, Illinois \u2014 halfway to Iowa or the edge of the world; didn\u0027t matter which. The alert board: unregistered autonomous mass, 5 mph, bearing from Davenport, no transponder, no kill-switch. Hauser wants demolition assets pre-authorized. CJ asks for time. He gives her less than she wants.",
       "EscalationTarget": "4",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint",
-        "anachrony-cut",
-        "subplot"
-      ],
-      "ProseLength": 4036,
+      "BeatTags": [],
+      "ProseLength": 287,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-71ab-a542-09f818be4b6e",
-      "Number": 5107,
+      "BeatId": "019f9ff8-a08b-7cf0-9f42-ef2c8c65c5dc",
+      "Number": 6138,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "First wave of Eigenlift interdiction drones arrives in formation over the Hillsdale cornfields. The machine\u0027s scythe-arm takes them down one by one without breaking stride \u2014 no urgency, the rotating blade catching each unit clean and dropping it into the corn. Wes watches them fall. Pip does not look up. By the third unit, the formation strategy is visibly futile.",
       "EscalationTarget": "6",
       "EventType": "ambush",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3444,
+      "ProseLength": 561,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7820-8915-07d8e0af4faa",
-      "Number": 5108,
+      "BeatId": "019f9ff8-a08b-7137-96be-b5a16d2d2de9",
+      "Number": 6139,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "Near Erie. The machine\u0027s path crosses a buffer-zone scav camp. Wes shouts from the Crown. A scav attaches a winch line to a forward tine. The machine steps. The tine comes down on the man who was in the way. The threat-wail starts: layered frequencies, electronic shriek on top and something older and wrong underneath. The scavs scatter. The machine keeps walking. It was stepping. It did not deviate.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 4895,
+      "ProseLength": 216,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-74ae-8c65-64d5b582c6ac",
-      "Number": 5109,
+      "BeatId": "019f9ff8-a08b-7a6b-98df-3c29bc638eef",
+      "Number": 6140,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "ArcSec patrol at the scav camp radios CJ: civilian down, machine still mobile, bearing unchanged. Hauser files escalation request four. CJ asks for more time. The old Highway 88 corridor ahead is open farmland \u2014 and Eigenlift towers rising out of the corn without transition, thirty stories of GLMZ infrastructure in a flat Iowa-Illinois field.",
       "EscalationTarget": "7",
       "EventType": "inventory",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 4175,
+      "BeatTags": [],
+      "ProseLength": 226,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7fe2-94eb-47facb1e361c",
-      "Number": 5110,
+      "BeatId": "019f9ff8-a08b-78c5-a3d9-da611adaa794",
+      "Number": 6141,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "A larger drone formation arrives near Prophetstown. The machine takes three arm movements to clear them \u2014 methodical. After the last unit drops it broadcasts the signal louder, as if answering back. Then the threat-wail fades. The machine resumes its rhythm: five miles per hour, steady footfall, the hull a drum. Wes, awake since before dawn and through the violence, falls asleep on the Crown. When he wakes, the light has changed. He leans over the edge: Pip, still trotting below.",
       "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3221,
+      "ProseLength": 25,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7003-8243-927d5d7d6d8a",
-      "Number": 5111,
+      "BeatId": "019f9ff8-a08b-7dfc-bd3f-3149d6a392b6",
+      "Number": 6142,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "midpoint",
       "Act": 0,
-      "Meaning": "CJ rides out from Dixon on her Eigenlift repulsor skimmer along the 88 corridor \u2014 past drone wreckage, past the scav camp aftermath. Near Lyndon she finds Pip: small male terrier, trotting at 5 mph, paws raw, forty miles in like it\u0027s just what he does. She scoops him up. He lets her. She calls up to the Crown. A kid answers.",
       "EscalationTarget": "8",
       "EventType": "interception",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 4565,
+      "BeatTags": [],
+      "ProseLength": 73,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7cf6-b752-8e0318f41808",
-      "Number": 5112,
+      "BeatId": "019f9ff8-a08b-79d3-9cc9-966bb6aceed4",
+      "Number": 6143,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "revelation",
       "Act": 0,
-      "Meaning": "Wes tells CJ about the mourning scene \u2014 the dead Behemoth, the living machine prodding it. CJ runs six hours of acoustic telemetry while riding alongside. The broadcast signal is constant: same interval, same rhythm, a question in the pattern. Every matching return reduces the machine\u0027s agitation. It came to the largest concentration of humans it could resolve because it believes someone there will answer.",
       "EscalationTarget": "7",
       "EventType": "exchange",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4051,
+      "BeatTags": [],
+      "ProseLength": 368,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7ac8-966c-24e14b3fd4b2",
-      "Number": 5113,
+      "BeatId": "019f9ff8-a08b-745c-a265-ee4e7ed4f04f",
+      "Number": 6144,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "pre-climax",
       "Act": 0,
-      "Meaning": "CJ riding alongside on her skimmer, Wes on the Crown \u2014 both start transmitting the broadcast pattern back. Wes with his knuckles on the hull, CJ from the ground below. Hauser\u0027s fire order goes live. Dixon ahead. The Rock River. The Zone-12 boundary. They are both answering the same question from different directions.",
       "EscalationTarget": "9",
       "EventType": "negotiation",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot",
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 2969,
+      "BeatTags": [],
+      "ProseLength": 439,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3eb2-6438-7bc4-8529-129c2c4d9a95",
-      "Number": 5114,
+      "BeatId": "019f9ff8-a08b-7a03-a928-169b6b543c5d",
+      "Number": 6145,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "climax",
       "Act": 0,
-      "Meaning": "The machine crosses into Dixon. Both Wes and CJ transmit the answer simultaneously. The mourning wail stops. The machine goes still. The new sound arrives \u2014 described only by what it is not and what it does to the bodies of the people hearing it. It has no analogue. It is never named.",
       "EscalationTarget": "10",
       "EventType": "return",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2273,
+      "ProseLength": 327,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3f12-9415-7759-a812-5c60a268f3bb",
-      "Number": 5115,
+      "BeatId": "019f9ff8-a08b-7c19-8c46-667dcc255841",
+      "Number": 6146,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "resolution",
       "Act": 0,
-      "Meaning": "CJ closes her comms. Hauser\u0027s channel goes to static. The machine stands at the edge of Dixon, dormant, framed against an Eigenlift tower and the flat Illinois sky. Nobody fires with a junior ArcSec officer standing ground-side. She does not explain herself. She does not need to.",
       "EscalationTarget": "9",
       "EventType": "ceremony",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2802,
+      "ProseLength": 70,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f3f12-af1f-7d6c-a4ed-5d67331cb356",
-      "Number": 5116,
+      "BeatId": "019f9ff8-a08b-7457-8d6a-9ba8ac670188",
+      "Number": 6147,
       "Chapter": "Chapter 1 \u2014 It Came From",
       "ChapterIndex": 0,
-      "StructureRole": "final-image",
       "Act": 0,
-      "Meaning": "Wes comes down from the Crown. CJ puts Pip down beside the machine. Pip trots to the nearest tine, sniffs it thoroughly, and lifts his leg. The machine does nothing. The comedy lands right after the sacred moment \u2014 the new sound still in everyone\u0027s chest, and the dog marking his territory. CJ files her report: behavioral anomaly, origin unknown, threat level zero. She recommends the dead machine in Iowa be left in place. She has never seen it. She does not write the new sound.",
       "EscalationTarget": "6",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3702,
+      "ProseLength": 206,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7900-88c7-57c4696e5240",
+      "Number": 6148,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 109,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-72a6-ad12-f2092d3dbcc5",
+      "Number": 6149,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 105,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-72a4-898e-1f17e81f0b59",
+      "Number": 6150,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 97,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-780f-9295-801015ca9390",
+      "Number": 6151,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 81,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7b62-a6ef-6a50aa03d0b7",
+      "Number": 6152,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 35,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7d03-ae2b-c55f3af4f7e5",
+      "Number": 6153,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 296,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-70a4-80be-7690107e4f4b",
+      "Number": 6154,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 113,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7f7d-8c28-a11f823eab08",
+      "Number": 6155,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 308,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7e35-bdb0-8ecc426dae5e",
+      "Number": 6156,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 223,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-715c-a39b-39415bec2273",
+      "Number": 6157,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 60,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-74f8-8a36-a7fb396bcc68",
+      "Number": 6158,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 76,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-71a6-b5bf-5c24cdc8d534",
+      "Number": 6159,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 252,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-773e-beae-d9b1036f53ab",
+      "Number": 6160,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 396,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-770e-9a5e-6db6fbf37051",
+      "Number": 6161,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 338,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7191-8c82-f5cd1e7bf937",
+      "Number": 6162,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 317,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7f78-8775-6f479e660437",
+      "Number": 6163,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 226,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7505-8fc7-54f89dc4e2ae",
+      "Number": 6164,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 163,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08b-7e6c-800d-9b682bd30a75",
+      "Number": 6165,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 246,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7713-9472-a4a24df2fa6b",
+      "Number": 6166,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 327,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-757d-b17f-7af42f3a7ab4",
+      "Number": 6167,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 269,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-799b-b168-9737e9b1da90",
+      "Number": 6168,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 200,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7b0a-adbb-e59c10bda40d",
+      "Number": 6169,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 280,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7837-8ad8-e51483fd1e33",
+      "Number": 6170,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 80,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7ab1-b34f-d23686e3c5cc",
+      "Number": 6171,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 28,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7f18-9028-46d9dbbd19a4",
+      "Number": 6172,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 472,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7098-b063-429ddc26e4ec",
+      "Number": 6173,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 174,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7c67-90bc-b27a9ea9f3b3",
+      "Number": 6174,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 385,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7bd9-b825-efa0a546a218",
+      "Number": 6175,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 23,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-70fa-855f-dd71d1d2f624",
+      "Number": 6176,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 139,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-75c8-a6a1-6f0cc9cb146b",
+      "Number": 6177,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 52,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7050-996e-fc0c006dd944",
+      "Number": 6178,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 665,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7b2a-82a6-026da8c2c877",
+      "Number": 6179,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 288,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-712f-9412-404f832de051",
+      "Number": 6180,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 31,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7565-9157-185ffbfaa07a",
+      "Number": 6181,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 10,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7d15-a3a9-67fbf720e428",
+      "Number": 6182,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 221,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-795a-837b-f4a19b728765",
+      "Number": 6183,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 18,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-72e7-bfec-5f321a6a9173",
+      "Number": 6184,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 320,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-76de-bac0-f3b8d6304fc4",
+      "Number": 6185,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 308,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7f9f-8ed9-9ab0b327afb0",
+      "Number": 6186,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 21,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-74e9-b66c-c953201ded52",
+      "Number": 6187,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 344,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7634-8f34-10451869b3e1",
+      "Number": 6188,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 56,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-75ab-8941-699c87f7f329",
+      "Number": 6189,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 38,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-797e-8554-0cc75e313fd6",
+      "Number": 6190,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 386,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-771d-97ca-6e2bd1994488",
+      "Number": 6191,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 235,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7e8f-a44b-9a6e68df964b",
+      "Number": 6192,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 187,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7e08-aa64-1b6a695305a5",
+      "Number": 6193,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 43,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7eff-8aae-320c32649bff",
+      "Number": 6194,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 530,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7177-aea0-adec1977c5bd",
+      "Number": 6195,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 381,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7bb4-b6ef-2e1ad4931b77",
+      "Number": 6196,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 161,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-77e3-a719-d56f45969f67",
+      "Number": 6197,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 234,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7f0b-a1aa-c49a64ae99cb",
+      "Number": 6198,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 24,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-7aec-ad55-496b08c77c83",
+      "Number": 6199,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 747,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-76a7-b147-bece8743b9ed",
+      "Number": 6200,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 803,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08c-799d-b434-3ac77bf7429a",
+      "Number": 6201,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 301,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7c24-96f4-eca336ec104a",
+      "Number": 6202,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 550,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7f30-a839-999f038f8c1b",
+      "Number": 6203,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 55,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-77ca-9e3f-45d9ddfbd0f4",
+      "Number": 6204,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 83,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7ee0-80c3-90bbed30192f",
+      "Number": 6205,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 314,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-779f-a35d-b54a728d8918",
+      "Number": 6206,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 165,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7c4d-be89-130cbdfdb412",
+      "Number": 6207,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 24,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7dfa-b6c9-c8ccb386d1f9",
+      "Number": 6208,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 253,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7612-8eec-fcbe3408f391",
+      "Number": 6209,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 382,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-795b-b381-e3b772148553",
+      "Number": 6210,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 40,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7f8a-94bd-d526648cfe0e",
+      "Number": 6211,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 414,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-73d7-afe0-5ef75584efaf",
+      "Number": 6212,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 44,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-74d0-aa54-61cce26fa995",
+      "Number": 6213,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 162,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-79b8-b1fb-67ffd9eb53a6",
+      "Number": 6214,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 65,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7bec-bfff-3939929e652c",
+      "Number": 6215,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 300,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-719f-987b-ac3d6585f5f7",
+      "Number": 6216,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 280,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-708f-b229-2a1799c52462",
+      "Number": 6217,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 233,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7cc5-b2f0-72e06b048ec6",
+      "Number": 6218,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 181,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7f1a-88f9-dee84b423e1c",
+      "Number": 6219,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 247,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7b7a-b09c-ce201720ae08",
+      "Number": 6220,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 234,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-79f8-abac-b8cdbef85b07",
+      "Number": 6221,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 385,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7052-9905-d16c15ce79e5",
+      "Number": 6222,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-70f8-98b4-8e1241b8415b",
+      "Number": 6223,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 262,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7eee-b5f4-29777e6e191b",
+      "Number": 6224,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 209,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7fdd-af8c-1b3be837a124",
+      "Number": 6225,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 236,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7038-bff8-a4eb2b1b163a",
+      "Number": 6226,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 140,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-783e-81f2-c2c230cd9e18",
+      "Number": 6227,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 99,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7647-8b8c-274eee1744d1",
+      "Number": 6228,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 186,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7bbd-8edf-cc02c5e2eebd",
+      "Number": 6229,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 185,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-729a-a535-da9cc76f9d2e",
+      "Number": 6230,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 359,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7aa0-aa09-24197a18aa06",
+      "Number": 6231,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 119,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7a09-bc3e-7306bf219a20",
+      "Number": 6232,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 313,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-75de-9415-7f412203b838",
+      "Number": 6233,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 15,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-78d0-8309-1aa35a58b5eb",
+      "Number": 6234,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 310,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-79d0-a66f-aed14b9c1c9a",
+      "Number": 6235,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 83,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7b67-b33b-4602cbc0eed4",
+      "Number": 6236,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 314,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-74f3-934f-86164d338317",
+      "Number": 6237,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 29,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-75a1-b4bd-49ba1e335fd9",
+      "Number": 6238,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 338,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7625-9d57-3f3e82b8d5fc",
+      "Number": 6239,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 57,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08d-7db6-96a2-b7c83ed0d2f3",
+      "Number": 6240,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 465,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7d70-82fb-c92b60649f4b",
+      "Number": 6241,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 11,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7794-a001-1d2a16cbb7e8",
+      "Number": 6242,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 199,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7c17-8dee-7b550f9a7f34",
+      "Number": 6243,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 242,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7b3d-bb1a-871bd3fb46b6",
+      "Number": 6244,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 232,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-74ac-86d5-4c4ddda98f58",
+      "Number": 6245,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 322,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7d80-8319-b923dbbe619a",
+      "Number": 6246,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 414,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7993-bb50-3a81455f08be",
+      "Number": 6247,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1063,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7846-ba7a-1d699d73f7ed",
+      "Number": 6248,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 198,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7495-889e-67d2bbe89871",
+      "Number": 6249,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 366,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-706b-bd53-e26e09736bc5",
+      "Number": 6250,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 383,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-745a-b497-de05f26beb40",
+      "Number": 6251,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 472,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-773f-942c-2d0609039a58",
+      "Number": 6252,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 194,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7aea-9ad8-73570a7c23b9",
+      "Number": 6253,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 357,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-71fa-9ebf-2fba394dc183",
+      "Number": 6254,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 393,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7142-b228-b473b1aa3bec",
+      "Number": 6255,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 42,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7b4a-962f-126cd22e399e",
+      "Number": 6256,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 265,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-74ea-8268-646c849b5d08",
+      "Number": 6257,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 437,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7ae8-bd1b-45f45b005ba3",
+      "Number": 6258,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 101,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7b66-9181-f4f37d172e39",
+      "Number": 6259,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 323,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7510-848f-24c315b0238a",
+      "Number": 6260,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 160,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7922-85f1-9b1f827a562b",
+      "Number": 6261,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 291,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7f18-b19b-454ab90c117f",
+      "Number": 6262,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 260,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7913-a5e2-7ce189a59f83",
+      "Number": 6263,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 34,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-767e-b452-29858e0ad640",
+      "Number": 6264,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 248,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-77cc-a7c2-794927308c16",
+      "Number": 6265,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 23,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7fdd-8f8d-6e55eb2db35b",
+      "Number": 6266,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 22,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-720d-b29b-21434ed89f26",
+      "Number": 6267,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 466,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7d0f-86cf-5ab82f4f91d2",
+      "Number": 6268,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 68,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7d48-b777-99e9c9d8ecc3",
+      "Number": 6269,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 296,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-79d8-ac3a-c54c6898dbd0",
+      "Number": 6270,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 137,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-72f3-8f3d-2ac2b1339d9a",
+      "Number": 6271,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 22,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7b5d-943f-0e7ed46a7cab",
+      "Number": 6272,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 182,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7f13-873f-f3ed8e0ab200",
+      "Number": 6273,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 371,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7357-86ea-883c95a99f1b",
+      "Number": 6274,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 177,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08e-7391-9a1a-b9e7ad109819",
+      "Number": 6275,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 350,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-70fa-89c2-281d99d308b5",
+      "Number": 6276,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 419,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7472-8657-cc7841889314",
+      "Number": 6277,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 315,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7cdc-a885-d67a27fb12bc",
+      "Number": 6278,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 36,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7903-b493-6f4c7de223d5",
+      "Number": 6279,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 378,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7dff-aa1b-fd76e48a6299",
+      "Number": 6280,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 227,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7b6e-a8d6-ed74e4b26130",
+      "Number": 6281,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 266,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7b83-b68e-eeaf440fc0d6",
+      "Number": 6282,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 332,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-75c8-b624-6332ec74dfd6",
+      "Number": 6283,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 351,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-721c-b29a-acdaacdc88e3",
+      "Number": 6284,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 163,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7e9d-b007-ff106573a6ed",
+      "Number": 6285,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 190,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7dcb-be7c-c43fe920e630",
+      "Number": 6286,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 615,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7986-aebf-441b11b27dc4",
+      "Number": 6287,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 169,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7071-92ab-6f10041a7c8c",
+      "Number": 6288,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 151,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-70b1-bd23-dfd6dec9a588",
+      "Number": 6289,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 452,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-718a-a796-16d93cb0369a",
+      "Number": 6290,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 447,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7b55-92d0-1f8aa6bf31cb",
+      "Number": 6291,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 367,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7678-85da-69d8905b6959",
+      "Number": 6292,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 409,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7783-82d4-e2346ff6d3f3",
+      "Number": 6293,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 203,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-765e-8e67-ef8a9be2d877",
+      "Number": 6294,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 207,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-789c-8060-83e68d6daee1",
+      "Number": 6295,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 511,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-70cc-8a88-69540d8da4d7",
+      "Number": 6296,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 525,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-736b-98ba-fc0d8d1d9a2a",
+      "Number": 6297,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 260,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-70b6-a26a-1a7d90b431f4",
+      "Number": 6298,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 262,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-720a-bd1f-2d441ea1860e",
+      "Number": 6299,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 236,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7b44-b8b6-ae72e306501c",
+      "Number": 6300,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 135,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-789f-b899-3e8323d2319b",
+      "Number": 6301,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 312,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-72e8-9415-173f15a55e48",
+      "Number": 6302,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 202,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7ecd-838c-d5661db2b41c",
+      "Number": 6303,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 335,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-70b0-ba0f-44ccf167412a",
+      "Number": 6304,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 416,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-71bf-bb02-280797c5b5df",
+      "Number": 6305,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 57,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7926-b588-4173374c4349",
+      "Number": 6306,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 519,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-737b-8045-019741bd226b",
+      "Number": 6307,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 80,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-74ea-bf75-c60b1db6eae9",
+      "Number": 6308,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 299,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7ba4-808e-c50bf36458b2",
+      "Number": 6309,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 339,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-75d3-a85b-984add9d3a24",
+      "Number": 6310,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 259,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-72b8-9a90-ee9d199e1698",
+      "Number": 6311,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 67,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7a82-a9fd-f62886572a3b",
+      "Number": 6312,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 152,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-73f0-b67b-0d6659440886",
+      "Number": 6313,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 201,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-7ac4-a65a-3960bb4ffbd5",
+      "Number": 6314,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 287,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a08f-75d0-82b6-ea44494ee91d",
+      "Number": 6315,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 114,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7973-82a6-d26ee2b9c83d",
+      "Number": 6316,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 24,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7866-9f27-1635ca2cf5c2",
+      "Number": 6317,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 354,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7bdc-a3c6-f53ee906024f",
+      "Number": 6318,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 40,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-73d7-b774-fb5179777933",
+      "Number": 6319,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 285,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-79cc-96a0-80200e7bfbd5",
+      "Number": 6320,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 430,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7cb5-8833-76f95bc09e10",
+      "Number": 6321,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 128,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-73e4-b75b-49292c701c6b",
+      "Number": 6322,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 105,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7db1-8a98-f029e71d5e00",
+      "Number": 6323,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 65,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-71a6-8d9b-e172369bf3f3",
+      "Number": 6324,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 62,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7bfa-be0d-85000f68ab3d",
+      "Number": 6325,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 434,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7abc-8789-14e36b684a33",
+      "Number": 6326,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 56,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7e92-a4f4-3c5fdcfc04f6",
+      "Number": 6327,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 278,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7e47-85d1-9aa5a3fc52dc",
+      "Number": 6328,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 293,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7b5e-b444-52b762224ed0",
+      "Number": 6329,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 167,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-71ed-ba76-e74f20be48c1",
+      "Number": 6330,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 23,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-79a6-b7bc-9b34d932fdd7",
+      "Number": 6331,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 257,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7f87-be42-f867dd5e9942",
+      "Number": 6332,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 9,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-74de-b53e-5938b1931ec3",
+      "Number": 6333,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 97,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7489-bc99-faa9d26e23ce",
+      "Number": 6334,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 341,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7d71-b50e-0d49ecdd25f9",
+      "Number": 6335,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 29,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7355-a77d-97683c01c8b2",
+      "Number": 6336,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 408,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-742c-8d94-cd796899d3eb",
+      "Number": 6337,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 24,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7bad-93af-7e49a3ed3d7f",
+      "Number": 6338,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 39,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7ee8-b61f-33c19d32d5cd",
+      "Number": 6339,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 200,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7aed-afe4-26744488b421",
+      "Number": 6340,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 55,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7a57-8a00-7199bea935b8",
+      "Number": 6341,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 55,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7f28-be15-cc5c80b509c3",
+      "Number": 6342,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 208,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7956-b1e7-32a25b4a965d",
+      "Number": 6343,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 23,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-713b-80a9-3f68fef3aae8",
+      "Number": 6344,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 171,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7191-8a58-36f76fe9d2f0",
+      "Number": 6345,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-761a-9884-5b053882e3bf",
+      "Number": 6346,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 228,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7a73-84a4-cd1130bc0354",
+      "Number": 6347,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 414,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7008-a216-6ee7cd7aaf23",
+      "Number": 6348,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 233,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-7726-9e09-a445c5426d7d",
+      "Number": 6349,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 51,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-75fc-a1eb-7d4a6f9214e1",
+      "Number": 6350,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 446,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a090-71bf-971e-7610e16f2638",
+      "Number": 6351,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 183,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-7542-97b7-a60a2240c1d6",
+      "Number": 6352,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 66,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-7333-a9fc-068c063b0058",
+      "Number": 6353,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 200,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-7205-b8d7-383deb6ae5fe",
+      "Number": 6354,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 63,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-7446-bb2f-d2447984a485",
+      "Number": 6355,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 340,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-7aa7-acf9-8b2f2199a617",
+      "Number": 6356,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 102,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-73e3-ac3e-f2bba4d10c9f",
+      "Number": 6357,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 224,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-7cf5-829b-97caffe22adf",
+      "Number": 6358,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 118,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-79eb-8df2-7bca18e009c9",
+      "Number": 6359,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 38,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-7ccb-9abf-619f61bbd87a",
+      "Number": 6360,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 221,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9ff8-a091-76bc-bc30-0a5d0b0af2c2",
+      "Number": 6361,
+      "Chapter": "Chapter 1 \u2014 It Came From",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 274,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
     }
   ]
 }
