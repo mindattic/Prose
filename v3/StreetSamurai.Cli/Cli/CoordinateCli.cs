@@ -38,7 +38,7 @@ public static class CoordinateCli
         Console.WriteLine($"Beats       : {r.TotalBeats}");
         Console.WriteLine($"Covered     : {r.Covered}/{r.TotalBeats} "
             + $"({100.0 * r.Covered / Math.Max(1, r.TotalBeats):F1}%)");
-        Console.WriteLine($"Blueprint   : {(r.StoryScope.HasBlueprint ? $"yes (granularity={r.StoryScope.Granularity})" : "MISSING")}");
+        Console.WriteLine($"Blueprint   : {(r.BookScope.HasBlueprint ? $"yes (granularity={r.BookScope.Granularity})" : "MISSING")}");
         Console.WriteLine();
 
         if (r.FlagCounts.Count > 0)

@@ -151,6 +151,6 @@ the bible wins on LOCKS.
 findings filed as `OutlineDrift`); 100↔10 ft and 10↔10 ft = the logic sweep itself
 (dimensions 1–5). Planning and review START at chapter altitude — read
 `story-synopsis.txt` first, drop to beat altitude only where a finding points. The same
-model applies to entities: story-level (which books), chapter-level (which chapters),
+model applies to entities: book-level (which books), chapter-level (which chapters),
 beat-level (which scenes, and how — acting / listening / mentioned / discussed) via
-`vw_EntityStoryAppearances` / `vw_EntityChapterAppearances` / `BeatEntityPresence`.
+`vw_EntityBookAppearances` / `vw_EntityChapterAppearances` / `BeatEntityPresence`.

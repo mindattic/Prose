@@ -39,7 +39,7 @@ public class OutlineAdherenceService(
 
             bibleText = node?.NodeBible;
 
-            // SS-A43: beats live on chapter nodes (children), not directly on the story node.
+            // SS-A43: beats live on chapter nodes (children), not directly on the book node.
             var childIds = await db.Nodes.AsNoTracking()
                 .Where(s => s.ParentNodeId == nodeId)
                 .Select(s => s.Id)
@@ -74,7 +74,7 @@ public class OutlineAdherenceService(
                 SCORE: <integer 0-100>  (100=fully on track, 0=completely off course)
                 SUMMARY: <one sentence — what drifted or what's still aligned>
                 """,
-            user: $"STORY BIBLE:\n{bibleText![..Math.Min(1500, bibleText.Length)]}\n\nCHAPTER SUMMARY:\n{chapterSummaryText}\n\nREMAINING PLANNED BEATS:\n{remainingBlock}",
+            user: $"BOOK BIBLE:\n{bibleText![..Math.Min(1500, bibleText.Length)]}\n\nCHAPTER SUMMARY:\n{chapterSummaryText}\n\nREMAINING PLANNED BEATS:\n{remainingBlock}",
             temperature: 0.2,
             maxTokens: 150,
             ct: ct);
@@ -90,7 +90,7 @@ public class OutlineAdherenceService(
 
     /// <summary>
     /// When drift score is below the threshold, rewrite the remaining beat goals to
-    /// re-anchor the story toward the original bible's promised arc.
+    /// re-anchor the book toward the original bible's promised arc.
     /// Updates Beat.Description in DB. Returns the number of beats recalibrated.
     /// </summary>
     public async Task<int> RecalibrateAsync(
@@ -104,7 +104,7 @@ public class OutlineAdherenceService(
         List<(Guid BeatId, string CurrentGoal)> emptyBeats;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            // SS-A43: beats live on chapter nodes (children), not directly on the story node.
+            // SS-A43: beats live on chapter nodes (children), not directly on the book node.
             var childIds = await db.Nodes.AsNoTracking()
                 .Where(s => s.ParentNodeId == nodeId)
                 .OrderBy(s => s.SortKey)

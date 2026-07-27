@@ -20,7 +20,7 @@ namespace StreetSamurai.Core.Services;
 /// <b>Legacy fallback (no NodeCode):</b> nodes without a code keep the older
 /// title-derived, series-ancestry-nested path (".../Street Samurai/Bushido Coda/Bushido
 /// Coda V5.docx") with a sibling-collision de-dup prefix. This exists only so older or
-/// not-yet-coded story nodes keep exporting somewhere sane — assign every book a NodeCode
+/// not-yet-coded book nodes keep exporting somewhere sane — assign every book a NodeCode
 /// to move it onto the flat convention.
 /// </summary>
 public static class ExportPathResolver
@@ -34,9 +34,9 @@ public static class ExportPathResolver
             return (Path.Combine(baseDir, code), code);
         }
 
-        // Legacy path: mirror the node's series/book ancestry so a story that belongs to a
+        // Legacy path: mirror the node's series/book ancestry so a book that belongs to a
         // series publishes one (or more) levels deeper — e.g. "<base>/Street
-        // Samurai/Bushido Coda/Bushido Coda V5.docx" — while a standalone story stays at
+        // Samurai/Bushido Coda/Bushido Coda V5.docx" — while a standalone book stays at
         // "<base>/<Title>/...".
         var ancestors = new List<string>();
         var parentId = node.ParentNodeId;

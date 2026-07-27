@@ -8,11 +8,11 @@ namespace StreetSamurai.Cli;
 /// <c>ss --import-cover</c> — import a local image file into the Media table.
 ///
 /// Usage:
-///   ss --import-cover --file PATH [--story-code CODE] [--type TYPE] [--notes TEXT]
+///   ss --import-cover --file PATH [--book-code CODE] [--type TYPE] [--notes TEXT]
 ///
 /// Arguments:
 ///   --file PATH          Required. Path to the image file (png, jpg, webp).
-///   --story-code CODE   Associate with a node by its NodeCode (e.g. ATTE, VATD).
+///   --book-code CODE    Associate with a node by its NodeCode (e.g. ATTE, VATD).
 ///                        Omit for global assets like logos or watermarks.
 ///   --type TYPE          Media type. Default: cover_image.
 ///                        Values: cover_image | logo | watermark | banner | thumbnail | promotional
@@ -20,7 +20,7 @@ namespace StreetSamurai.Cli;
 ///   --dry-run            Parse and validate only — do not write to DB.
 ///
 /// Examples:
-///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\Sparrow\cover.jpg" --story-code SPRW
+///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\Sparrow\cover.jpg" --book-code SPRW
 ///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\M.png" --type logo
 ///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\RedBand.png" --type watermark
 /// </summary>
@@ -29,7 +29,7 @@ public static class ImportCoverImageCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider sp)
     {
         var file       = Arg(args, "--file");
-        var nodeCode = Arg(args, "--story-code");
+        var nodeCode = Arg(args, "--book-code");
         var type       = Arg(args, "--type") ?? "cover_image";
         var notes      = Arg(args, "--notes");
         var dryRun     = args.Contains("--dry-run");

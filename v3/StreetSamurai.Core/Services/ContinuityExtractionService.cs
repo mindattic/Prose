@@ -72,10 +72,10 @@ public class ContinuityExtractionService
     /// <summary>
     /// Extract continuity claims from one chapter's prose.
     /// </summary>
-    /// <param name="storySlug">
+    /// <param name="bookSlug">
     /// Code of the parent BookNode (e.g. "BCODA"). When provided, each extracted
-    /// claim is tagged with this slug so cross-story consistency queries can identify
-    /// which story the claim originates from. Pass <c>null</c> when the story context
+    /// claim is tagged with this slug so cross-book consistency queries can identify
+    /// which book the claim originates from. Pass <c>null</c> when the book context
     /// is not available (existing callers are unaffected — the field stays null).
     /// </param>
     public async Task<ContinuityExtractionResult> ExtractFromChapterAsync(
@@ -83,7 +83,7 @@ public class ContinuityExtractionService
         Quorum quorum = Quorum.Plurality,
         int maxTokens = 4096,
         int minVoters = 1,
-        string? storySlug = null,
+        string? bookSlug = null,
         CancellationToken ct = default)
     {
         var chapter = chapters.LoadChapter(chapterId)
@@ -192,7 +192,7 @@ public class ContinuityExtractionService
                 Voice               = cand.Voice,
                 Confidence          = cand.Confidence,
                 ExtractedBy         = cand.Voters,
-                StorySlug           = storySlug,
+                BookSlug            = bookSlug,
             };
             var r = store.Upsert(claim);
             switch (r.Outcome)
@@ -223,7 +223,7 @@ public class ContinuityExtractionService
             ct.ThrowIfCancellationRequested();
             try
             {
-                var r = await ExtractFromChapterAsync(cid, quorum, maxTokens, minVoters, storySlug: null, ct);
+                var r = await ExtractFromChapterAsync(cid, quorum, maxTokens, minVoters, bookSlug: null, ct);
                 results.Add(r);
             }
             catch (Exception ex)

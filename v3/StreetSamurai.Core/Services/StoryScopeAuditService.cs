@@ -72,7 +72,7 @@ public class StoryScopeAuditService(
 
         // ── LLM-graded layer ─────────────────────────────────────────────────
         // The bible excerpt travels with every holistic check so the judge's fix
-        // suggestions don't contradict the story's own deliberate design (narrative
+        // suggestions don't contradict the book's own deliberate design (narrative
         // locks, register choices) — the ATTE pilot showed judges recommending
         // against locked decisions when blind to them.
         var bibleExcerpt = string.IsNullOrWhiteSpace(node.NodeBible)
@@ -548,7 +548,7 @@ public class StoryScopeAuditService(
         var system = """
             You are auditing one structural property of a story — a measurable tell that separates
             AI fiction from human fiction. Be specific: cite prose, name beats, count when asked.
-            If the story's design notes (bible) show a flagged property is a deliberate, locked
+            If the book's design notes (bible) show a flagged property is a deliberate, locked
             choice, say so in the evidence and never propose a fix that contradicts a lock —
             deliberate design is reported, not corrected.
             Respond as JSON only:
@@ -562,7 +562,7 @@ public class StoryScopeAuditService(
             """;
 
         var bibleBlock = bibleExcerpt.Length > 0
-            ? $"\nSTORY DESIGN NOTES (the story's own bible — locks and register choices are deliberate):\n{bibleExcerpt}\n"
+            ? $"\nBOOK DESIGN NOTES (the book's own bible — locks and register choices are deliberate):\n{bibleExcerpt}\n"
             : "";
 
         var user = $"""

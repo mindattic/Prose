@@ -1,8 +1,8 @@
 namespace StreetSamurai.Core.Data.Entities;
 
 /// <summary>
-/// One arc-level plot state transition recorded for a story node.
-/// The StoryStateLedgerService appends events here (auto-extracted from prose
+/// One arc-level plot state transition recorded for a book node.
+/// The BookStateLedgerService appends events here (auto-extracted from prose
 /// or manually seeded) and queries the latest value per StateKey to build the
 /// per-beat context block that prevents crisis-amnesia between beats.
 ///
@@ -14,7 +14,7 @@ namespace StreetSamurai.Core.Data.Entities;
 ///   Alliance        : Active → Strained → Broken | Restored
 ///   Information     : Hidden → Revealed → Confirmed | Contested
 /// </summary>
-public class StoryPlotEvent
+public class BookPlotEvent
 {
     public Guid   Id      { get; set; }
     public Guid   NodeId  { get; set; }

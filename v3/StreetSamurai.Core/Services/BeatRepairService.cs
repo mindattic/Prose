@@ -28,7 +28,7 @@ public class BeatRepairService(
     public async Task<string?> RepairAsync(
         Guid beatId, Guid nodeId,
         IReadOnlyList<LensIssue> blockers,
-        string? storyBibleOverride = null,
+        string? bookBibleOverride = null,
         CancellationToken ct = default)
     {
         if (blockers.Count == 0) return null;
@@ -36,8 +36,8 @@ public class BeatRepairService(
         string? currentText = null;
         string? beatGoal    = null;
         string? subtext     = null;
-        string  storyBible  = "";
-        Guid    storyNodeId = nodeId; // updated below if nodeId is a chapter child (book-mode)
+        string  bookBible   = "";
+        Guid    bookNodeId  = nodeId; // updated below if nodeId is a chapter child (book-mode)
 
         try
         {
@@ -58,11 +58,11 @@ public class BeatRepairService(
                 .Where(n => n.Id == nodeId)
                 .Select(n => new { n.Seed, n.NodeBible, n.ParentNodeId })
                 .FirstOrDefaultAsync(ct);
-            if (node?.ParentNodeId != null) storyNodeId = node.ParentNodeId.Value;
-            if (storyBibleOverride != null)
-                storyBible = storyBibleOverride;
+            if (node?.ParentNodeId != null) bookNodeId = node.ParentNodeId.Value;
+            if (bookBibleOverride != null)
+                bookBible = bookBibleOverride;
             else if (node != null)
-                storyBible = node.Seed ?? node.NodeBible ?? "";
+                bookBible = node.Seed ?? node.NodeBible ?? "";
         }
         catch (Exception ex)
         {
@@ -99,7 +99,7 @@ public class BeatRepairService(
         // Build MUST FIX constraint block (kept in RepairConstraintContext, NOT XRayContext,
         // so ProseWriterRouter can populate XRayContext with full character profiles independently).
         var mustFix = new StringBuilder();
-        mustFix.AppendLine("MUST FIX — story-lens audit flagged the following defects in this beat:");
+        mustFix.AppendLine("MUST FIX — book-lens audit flagged the following defects in this beat:");
         foreach (var issue in blockers)
         {
             mustFix.AppendLine($"• [{issue.Kind}] {issue.Evidence}");
@@ -115,8 +115,8 @@ public class BeatRepairService(
 
         var ctx = new BeatContext
         {
-            NodeId                  = storyNodeId,
-            StoryBibleContext       = storyBible,
+            NodeId                  = bookNodeId,
+            StoryBibleContext       = bookBible,
             SceneSoFar              = sceneSoFar,
             BeatGoal                = beatGoal ?? "",
             Subtext                 = subtext ?? "",

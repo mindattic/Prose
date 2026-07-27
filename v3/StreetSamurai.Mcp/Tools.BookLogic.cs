@@ -16,8 +16,8 @@ namespace StreetSamurai.Mcp;
 //                   they accumulate across a node.
 
 [McpServerToolType]
-public class StoryLogicTools(
-    StoryLogicAuditService auditService,
+public class BookLogicTools(
+    BookLogicAuditService auditService,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;

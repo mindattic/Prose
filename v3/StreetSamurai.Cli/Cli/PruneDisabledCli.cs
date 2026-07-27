@@ -7,8 +7,8 @@ namespace StreetSamurai.Cli;
 /// <summary>
 /// <c>ss --prune-disabled --slug &lt;slug&gt; [--dry-run]</c>
 ///
-/// Hard-deletes every disabled (IsEnabled=false) beat from a story node and its
-/// chapter children (SS-A43). Use this when the story is publish-ready and you
+/// Hard-deletes every disabled (IsEnabled=false) beat from a book node and its
+/// chapter children (SS-A43). Use this when the book is publish-ready and you
 /// want to permanently remove placeholder beats that will never be used.
 ///
 /// Safety:
@@ -47,7 +47,7 @@ public static class PruneDisabledCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        // Resolve the story node.
+        // Resolve the book node.
         var node = Guid.TryParse(slugOrId, out var gid)
             ? await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == gid)
             : await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slugOrId || s.NodeCode == slugOrId);
@@ -58,7 +58,7 @@ public static class PruneDisabledCli
             return 1;
         }
 
-        // SS-A43: collect all node IDs (story + chapter children).
+        // SS-A43: collect all node IDs (book + chapter children).
         var childIds = await db.Nodes.AsNoTracking()
             .Where(n => n.ParentNodeId == node.Id)
             .Select(n => n.Id).ToListAsync();

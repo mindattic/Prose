@@ -1,6 +1,6 @@
 ---
 name: logic-sweep
-description: Run the canonical Logic Sweep (docs/LOGIC.md, SS-A44) on one or more stories — six-dimension logic/continuity audit, severity triage, minimal-splice fixes, verification. NO votes, NO panels. Usage /logic-sweep [slug ...]; no argument = every story with beats changed since its last sweep.
+description: Run the canonical Logic Sweep (docs/LOGIC.md, SS-A44) on one or more books — six-dimension logic/continuity audit, severity triage, minimal-splice fixes, verification. NO votes, NO panels. Usage /logic-sweep [slug ...]; no argument = every book with beats changed since its last sweep.
 ---
 
 # /logic-sweep — the canonical QA pass (SS-A44)
@@ -10,7 +10,7 @@ or reviews from this skill** — if the user wants a score, they will say so exp
 
 ## Fixed facts
 - DB: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai` (Windows Auth, read-only for audits).
-- Live story = enabled beats in reading order: `JOIN NodeBeats nb ... WHERE nb.IsEnabled = 1
+- Live book = enabled beats in reading order: `JOIN NodeBeats nb ... WHERE nb.IsEnabled = 1
   ORDER BY nb.SortKey`. Books: chapter children by `Nodes.SortKey`, beats within by `nb.SortKey`.
   NEVER order by `Beats.Number`.
 - Reports → `audit-outlines-<today>/logic/<CODE>.md`. Fix files → `.../fixes/<CODE>/`.
@@ -24,12 +24,12 @@ or reviews from this skill** — if the user wants a score, they will say so exp
 
 ## Steps
 
-1. **Resolve scope.** Args = those slugs. No args: find stories whose beats changed since their
-   last sweep (compare `Beats.UpdatedAt` / `NodeBeats` changes against the story's most recent
+1. **Resolve scope.** Args = those slugs. No args: find books whose beats changed since their
+   last sweep (compare `Beats.UpdatedAt` / `NodeBeats` changes against the book's most recent
    `audit-outlines-*/logic/<CODE>.md` date; when in doubt, include it). Small edit → scoped sweep
-   (touched beats + blast radius); structural change (merge/disable/reorder) → full-story sweep.
+   (touched beats + blast radius); structural change (merge/disable/reorder) → full-book sweep.
 
-2. **AUDIT (report-only agents, one per 1–2 stories, Sonnet).** Each agent reads the story
+2. **AUDIT (report-only agents, one per 1–2 books, Sonnet).** Each agent reads the book
    end-to-end and reports on the six dimensions of `docs/LOGIC.md` §3:
    causality chain / knowledge states (incl. names-before-coining) / timeline (respect
    bible-marked deliberate impossibilities) / plant-payoff ledger incl. arithmetic walked
@@ -39,11 +39,11 @@ or reviews from this skill** — if the user wants a score, they will say so exp
    Instruct verbatim: "Do not invent problems — if the logic holds, say so."
    Bible agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): `ss --altitude-audit
    --slug <slug>` automates the 10,000↔100 ft comparison (bible/blueprint vs chapter
-   synopses; findings filed as OutlineDrift); agents may read the story's
+   synopses; findings filed as OutlineDrift); agents may read the book's
    `story-synopsis.txt` (or `NodeChapterSummaries`) for cheap chapter-altitude scoping
    before deep beat reads.
-   Cross-story canon (shared characters, series arcs): one additional cross-read agent over the
-   affected set when a series story is in scope.
+   Cross-book canon (shared characters, series arcs): one additional cross-read agent over the
+   affected set when a series book is in scope.
 
 3. **VERIFY QUOTE GROUNDING (mechanical, before triage — docs/LOGIC.md §SS-LOGIC-4a).**
    Every finding that quotes beat text gets checked against the DB before it's trusted, not
@@ -70,5 +70,5 @@ or reviews from this skill** — if the user wants a score, they will say so exp
    forced to satisfy a checklist.
 
 7. **CLOSE.** Write/refresh `audit-outlines-<today>/logic/<CODE>.md` verdicts and, for
-   multi-story sweeps, a `CORPUS-REPORT.md`. Summarize per story: verdict, findings by
+   multi-book sweeps, a `CORPUS-REPORT.md`. Summarize per book: verdict, findings by
    severity, fixes applied, anything deferred.

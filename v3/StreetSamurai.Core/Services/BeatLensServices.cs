@@ -116,7 +116,7 @@ public abstract class BeatLensService
 
 {{Rubric}}
 
-The prose below is one story node. Beats are separated and labelled "### Beat N".
+The prose below is one book node. Beats are separated and labelled "### Beat N".
 
 Return ONLY a JSON object with these exact keys:
 {

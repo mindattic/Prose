@@ -200,7 +200,7 @@ before prose begins. Cross-check against the Entity Seeding Roadmap in `docs/ser
 | Tally's Book | document | [x] — seeded `019f760a4a9f72b289a1284bf1bd9e44` | `ss --add-doc` (seeded 2026-07-18) |
 | The Vig Crew | faction | [x] — seeded `019f760a34077cbe85e27b5779e13ece` | `ss --add-faction --file` (seeded 2026-07-18) |
 
-Seed JSONs: `.cli-tmp/ldgr-seed/`. Story node created 2026-07-18: slug `double-entry-019f760b`,
+Seed JSONs: `.cli-tmp/ldgr-seed/`. Book node created 2026-07-18: slug `double-entry-019f760b`,
 code LDGR — bible + 14-beat spine + structural blueprint generated; node doc materialized at
 `docs/nodes/LDGR.md` (ephemeral). One generation artifact cleaned: the first bible draft
 hallucinated an off-canon cast; its 14 planned beats were soft-deleted via `ss --beat delete`

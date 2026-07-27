@@ -4,7 +4,7 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// <c>ss --kdp-status</c> — show KDP publication status for all tracked story nodes.
+/// <c>ss --kdp-status</c> — show KDP publication status for all tracked book nodes.
 ///
 /// PublicationStatus values:
 ///   Published      = live on KDP, no edits since last publish.
@@ -53,7 +53,7 @@ public static class KdpStatusCli
         }
 
         // For Published nodes: check whether any beat was edited after KdpPublishedAt
-        // Collect story-level latest-beat-edit via both direct BeatNodes and chapter children
+        // Collect book-level latest-beat-edit via both direct BeatNodes and chapter children
         var nodeIds = await db.Nodes
             .AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.PublicationStatus != null)
@@ -65,23 +65,23 @@ public static class KdpStatusCli
             .AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.ParentNodeId != null && nodeIds.Contains(n.ParentNodeId.Value))
             .Join(db.BeatNodes.AsNoTracking().Where(nb => nb.IsEnabled), ch => ch.Id, nb => nb.NodeId, (ch, nb) => new { ch.ParentNodeId, nb.BeatId })
-            .Join(db.Beats.AsNoTracking(), x => x.BeatId, b => b.Id, (x, b) => new { StoryId = x.ParentNodeId!.Value, b.UpdatedAt })
-            .GroupBy(x => x.StoryId)
-            .Select(g => new { StoryId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
+            .Join(db.Beats.AsNoTracking(), x => x.BeatId, b => b.Id, (x, b) => new { BookId = x.ParentNodeId!.Value, b.UpdatedAt })
+            .GroupBy(x => x.BookId)
+            .Select(g => new { BookId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
             .ToListAsync();
 
-        // Latest beat edit via direct BeatNodes on the story node
+        // Latest beat edit via direct BeatNodes on the book node
         var direct = await db.BeatNodes
             .AsNoTracking()
             .Where(nb => nodeIds.Contains(nb.NodeId) && nb.IsEnabled)
             .Join(db.Beats.AsNoTracking(), nb => nb.BeatId, b => b.Id, (nb, b) => new { nb.NodeId, b.UpdatedAt })
             .GroupBy(x => x.NodeId)
-            .Select(g => new { StoryId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
+            .Select(g => new { BookId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
             .ToListAsync();
 
         var lastEdits = viaChapters
             .Concat(direct)
-            .GroupBy(x => x.StoryId)
+            .GroupBy(x => x.BookId)
             .ToDictionary(g => g.Key, g => (DateTime?)g.Max(x => x.LastEdit));
 
         // Resolve node IDs for the status nodes

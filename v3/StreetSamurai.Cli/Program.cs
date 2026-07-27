@@ -417,10 +417,10 @@ if (args.Contains("--legion"))
 //   ss --seed <name>              apply one
 //   ss --seed --all [--force]     apply every known seed in order
 // NOTE: --seed is also the prompt flag of --write-node / --write-story /
-// --create-story — those commands must win the dispatch or their calls get
+// --create-book — those commands must win the dispatch or their calls get
 // hijacked by the SQL seeder.
 if (args.Contains("--seed") && !args.Contains("--write-node")
-    && !args.Contains("--write-story") && !args.Contains("--create-story")
+    && !args.Contains("--write-story") && !args.Contains("--create-book")
     && !args.Contains("--run-corpus"))
 {
     var sp = BuildCoreServices(args);
@@ -429,8 +429,8 @@ if (args.Contains("--seed") && !args.Contains("--write-node")
 }
 
 // CLI mode: (re)generate the node bible for an existing node.
-//   ss --story-bible --slug <slug> [--beats N] [--replace-beats]
-if (args.Contains("--story-bible"))
+//   ss --book-bible --slug <slug> [--beats N] [--replace-beats]
+if (args.Contains("--book-bible"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await NodeBibleCli.RunAsync(args, sp);
@@ -448,7 +448,7 @@ if (args.Contains("--generate-canon-md"))
     return;
 }
 
-// CLI mode: assemble the unified Story Context Document for a node.
+// CLI mode: assemble the unified Book Context Document for a node.
 // Merges hand-authored NodeBible + Structural Blueprint + Beat Spine into one document,
 // writes to Nodes.NodeBible (DB) and docs/nodes/{CODE}.md (read-only disk mirror).
 //   ss --generate-node-doc --slug <slug>
@@ -480,8 +480,8 @@ if (args.Contains("--edit-beat"))
 }
 
 // CLI mode: create a new empty root node (bible-first; no beats yet).
-//   ss --create-story --title "..." [--code SRZR] [--kind story] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
-if (args.Contains("--create-story"))
+//   ss --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
+if (args.Contains("--create-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await CreateNodeCli.RunAsync(args, sp);
@@ -561,14 +561,14 @@ if (args.Contains("--migrate-blueprint-rows"))
 }
 
 //   ss --verify-beat --id <beatId> [--json]
-//   ss --verify-story --slug <slug> [--json]
+//   ss --verify-book --slug <slug> [--json]
 //   ss --verify-quote --id <beatId> --quote "<claimed text>" [--claimed-by <name>] [--json]
 //   ss --verify-quotes-batch --json-file <path> [--json]
 // Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision
 // contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node.
 // QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears
 // in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a).
-if (args.Contains("--verify-beat") || args.Contains("--verify-story")
+if (args.Contains("--verify-beat") || args.Contains("--verify-book")
     || args.Contains("--verify-quote") || args.Contains("--verify-quotes-batch"))
 {
     var sp = BuildCoreServices(args);
@@ -605,8 +605,8 @@ if (args.Contains("--sync-audio"))
 // CLI mode: (re)narrate an EXISTING node by id (full or prefix) or slug.
 // Runs the same NarrateAsync path the Record button uses. Use to re-record a
 // node whose beats failed (e.g. a TTS 400) without regenerating prose.
-//   ss --narrate-story (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--narrate-story"))
+//   ss --narrate-book (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--narrate-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await NarrateNodeCli.RunAsync(args, sp);
@@ -662,12 +662,12 @@ if (args.Contains("--worker-mode"))
 // honest, scored reader review (saved to NodeReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
 //   ss --review-node (--id <guid|prefix> | --slug <slug>) [--readers N]
-//   ss --review-story / --run-panel  (legacy aliases)
-if (args.Contains("--review-node") || args.Contains("--review-story") || args.Contains("--run-panel"))
+//   ss --review-book / --run-panel  (legacy aliases)
+if (args.Contains("--review-node") || args.Contains("--review-book") || args.Contains("--run-panel"))
 {
     var sp = BuildServicesWithVault(args);
     var cmdRn = args.Contains("--review-node") ? "--review-node"
-              : args.Contains("--review-story") ? "--review-story" : "--run-panel";
+              : args.Contains("--review-book") ? "--review-book" : "--run-panel";
     var (proceedRn, estRn) = await CostGateCli.ConfirmAsync(cmdRn, args, sp);
     if (!proceedRn) return;
     var beforeRn = CostGateCli.SnapshotCost(sp);
@@ -740,8 +740,8 @@ if (args.Contains("--update-register-exemplars"))
 // CLI mode: review-driven auto-editor. Weight the latest reviews, target the
 // lowest / most-flagged beats (raise the floor), and emit conservative
 // before/after rewrite PROPOSALS (JSON) for an approval survey. Nothing is written.
-//   ss --edit-story (--id <guid|prefix> | --slug <slug>) [--top N]
-if (args.Contains("--edit-story"))
+//   ss --edit-book (--id <guid|prefix> | --slug <slug>) [--top N]
+if (args.Contains("--edit-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await EditNodeCli.RunAsync(args, sp);
@@ -751,8 +751,8 @@ if (args.Contains("--edit-story"))
 // CLI mode: stitch an existing node's beats into one combined file (WAV →
 // MP3), copy it to the publish output dir (Downloads by default), and record
 // the publication run + process-event ledger. Headless Publish button.
-//   ss --publish-story (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--publish-story"))
+//   ss --publish-book (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--publish-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await PublishNodeCli.RunAsync(args, sp);
@@ -797,8 +797,8 @@ if (args.Contains("--export-node"))
     return;
 }
 
-// CLI mode: hard-delete all disabled (IsEnabled=false) beats from a story.
-// Use ONLY when a story is export-ready and placeholder beats will never be used.
+// CLI mode: hard-delete all disabled (IsEnabled=false) beats from a book.
+// Use ONLY when a book is export-ready and placeholder beats will never be used.
 // Temporal history retains all deleted beats; data is recoverable by a DBA.
 //   ss --prune-disabled --slug <slug> [--dry-run] [--yes]
 if (args.Contains("--prune-disabled"))
@@ -1014,8 +1014,8 @@ if (args.Contains("--sanitize-beats"))
     return;
 }
 
-//   ss --print-story (--id <guid|prefix> | --slug <slug>)
-if (args.Contains("--print-story"))
+//   ss --print-book (--id <guid|prefix> | --slug <slug>)
+if (args.Contains("--print-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await PrintNodeCli.RunAsync(args, sp);
@@ -1026,8 +1026,8 @@ if (args.Contains("--print-story"))
 // re-segmentation (story beats + dialogue/'?' mechanics + gaps). Dry-run by
 // default; --apply backs up to markdown then replaces beats if the word-retention
 // guard passes. --all targets every doctrine-violating node.
-//   ss --rebeat-story (--slug <s> | --id <guid> | --all) [--apply]
-if (args.Contains("--rebeat-story"))
+//   ss --rebeat-book (--slug <s> | --id <guid> | --all) [--apply]
+if (args.Contains("--rebeat-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await RebeatNodeCli.RunAsync(args, sp);
@@ -1079,8 +1079,8 @@ if (args.Contains("--harvest-voice"))
 }
 
 // CLI mode: list every node as a table (or JSON). Headless twin of /nodes.
-//   ss --list-stories [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
-if (args.Contains("--list-stories"))
+//   ss --list-books [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
+if (args.Contains("--list-books"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ListNodesCli.RunAsync(args, sp);
@@ -1123,8 +1123,8 @@ if (args.Contains("--import-md"))
 // "?" on questions that lack one, and "asks"/"asked" (not "says") on question
 // dialogue. Dry-run by default; --apply commits. Beats edited beyond those bounds
 // are rejected (word-token guard) and left untouched.
-//   ss --reflow-story (--id <guid|prefix> | --slug <slug>) [--apply]
-if (args.Contains("--reflow-story"))
+//   ss --reflow-book (--id <guid|prefix> | --slug <slug>) [--apply]
+if (args.Contains("--reflow-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ReflowNodeCli.RunAsync(args, sp);
@@ -1134,8 +1134,8 @@ if (args.Contains("--reflow-story"))
 // CLI mode: deep-duplicate a node (and its sub-node tree) into a fresh,
 // independent copy — every beat cloned to a new row (prose + metadata kept;
 // audio/score/stale reset). Editing the copy never touches the original.
-//   ss --duplicate-story (--id <guid|prefix> | --slug <slug>) --title "New Title"
-if (args.Contains("--duplicate-story"))
+//   ss --duplicate-book (--id <guid|prefix> | --slug <slug>) --title "New Title"
+if (args.Contains("--duplicate-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await DuplicateNodeCli.RunAsync(args, sp);
@@ -1146,8 +1146,8 @@ if (args.Contains("--duplicate-story"))
 // fresh node. The complement to --write-story (LLM-generated): this is for
 // drafts written elsewhere (chat exports, transcripts, paper notes typed up).
 // See ImportNodeCli class doc for the file format.
-//   ss --import-story --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
-if (args.Contains("--import-story"))
+//   ss --import-book --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
+if (args.Contains("--import-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ImportNodeCli.RunAsync(args, sp);
@@ -1155,8 +1155,8 @@ if (args.Contains("--import-story"))
 }
 
 // CLI mode: import a local image file (png, jpg, webp) into the Media table.
-// Optionally links to a node by --story-code and sets the media type.
-//   ss --import-cover --file PATH [--story-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
+// Optionally links to a node by --book-code and sets the media type.
+//   ss --import-cover --file PATH [--book-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
 if (args.Contains("--import-cover"))
 {
     var sp = BuildCoreServices(args);
@@ -1239,7 +1239,7 @@ if (args.Contains("--beat-granularity"))
 if (args.Contains("--consistency-audit"))
 {
     var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CrossStoryConsistencyAuditCli.RunAsync(args, sp);
+    Environment.ExitCode = await CrossBookConsistencyAuditCli.RunAsync(args, sp);
     return;
 }
 
@@ -1316,12 +1316,12 @@ if (args.Contains("--write-outline"))
     return;
 }
 
-// ss --diagnose-story --slug <nodeSlug> [--json]
+// ss --diagnose-book --slug <nodeSlug> [--json]
 // Pre-flight structural analysis before running the review panel.
 // Runs 12 targeted checks (antagonist cost, protagonist behavior change,
 // exposition density, etc.) and reports Pass/Warn/Fail with evidence + fixes.
 // Exit 0 = ready, 1 = warnings, 2 = blocking failures.
-if (args.Contains("--diagnose-story"))
+if (args.Contains("--diagnose-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await DiagnoseNodeCli.RunAsync(args, sp);
@@ -1436,7 +1436,7 @@ if (args.Contains("--delete-node"))
 
     // Cascade to child nodes (chapters/sub-nodes) first so FK_Nodes_ParentNode
     // doesn't block the parent delete. One level of recursion is sufficient for
-    // the story→chapter structure; nested chapters are not supported.
+    // the book→chapter structure; nested chapters are not supported.
     var childIds = await db.Nodes
         .Where(n => n.ParentNodeId == deleteNodeId)
         .Select(n => n.Id)
@@ -1656,7 +1656,7 @@ if (args.Contains("--dcm-viz"))
     return;
 }
 
-// CLI mode: backfill entity-doc MarkdownFiles rows for a story's characters.
+// CLI mode: backfill entity-doc MarkdownFiles rows for a book's characters.
 //   ss --backfill-entity-docs --slug <slug> [--text]
 // Replays EntityDocService.InferFromTextAsync over every beat goal (+ prose text with
 // --text) so future prose generation and the DCM viz see per-character entity docs.
@@ -1700,25 +1700,25 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
     return;
 }
 
-// ss --audit-story --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
+// ss --audit-book --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
 // The "Player Piano" — one repeatable command running the full QA battery (census +
-// coverage + plant/prose audits; --deep adds per-chapter examine-emotion + story-audit +
+// coverage + plant/prose audits; --deep adds per-chapter examine-emotion + book-audit +
 // diagnose + fidelity). --model retargets the deep tier (e.g. Haiku) for the run.
-if (args.Contains("--audit-story"))
+if (args.Contains("--audit-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await AuditNodeCli.RunAsync(sp, args);
     return;
 }
 
-// ss --story-audit --slug <nodeSlug> [--json]
+// ss --book-audit --slug <nodeSlug> [--json]
 // Audits a node against 7 commandments — gateway (PreviousNodeId=null) or
 // sequel (PreviousNodeId set). Pass/warn/fail per commandment with fix hints.
 // Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
-if (args.Contains("--story-audit"))
+if (args.Contains("--book-audit"))
 {
     var sp = BuildCoreServices(args);
-    Environment.ExitCode = await StoryAuditCli.RunAsync(args, sp);
+    Environment.ExitCode = await BookAuditCli.RunAsync(args, sp);
     return;
 }
 
@@ -1739,7 +1739,7 @@ if (args.Contains("--generate-blueprint"))
 }
 
 // ss --storyscope-audit --slug <nodeSlug> [--json]
-// Verifies the story against measurable AI-fiction structural tells (StoryScope):
+// Verifies the book against measurable AI-fiction structural tells (StoryScope):
 // flat escalation, event monoculture, moral gloss, emotion ratio, char-intro
 // method, resolution mode, subplot execution, consensus clichés, TTCW originality.
 // Findings triaged BLOCKER/MODERATE/MINOR; loop back into future beat prompts.
@@ -1863,8 +1863,8 @@ if (args.Contains("--narrative-science"))
     return;
 }
 
-// ss --clone-story (--id <guid> | --slug <slug>) [--title "New Title"] [--story-code SM1] [--draft] [--status ready]
-if (args.Contains("--clone-story"))
+// ss --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1] [--draft] [--status ready]
+if (args.Contains("--clone-book"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await CloneNodeCli.RunAsync(args, sp);

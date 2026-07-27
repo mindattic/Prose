@@ -9,9 +9,9 @@ namespace StreetSamurai.Cli;
 /// <c>ss --backfill-entity-docs --slug &lt;slug&gt; [--text]</c>
 ///
 /// Materializes per-entity <c>MarkdownFiles</c> rows (category="entity-doc") for every
-/// entity referenced in a story's beat goals. Entity docs are normally created on-demand
+/// entity referenced in a book's beat goals. Entity docs are normally created on-demand
 /// during prose generation (via EntityDocService.InferFromTextAsync inside PrepareForNodeAsync),
-/// but stories written before the entity-doc system was active have zero entries.
+/// but books written before the entity-doc system was active have zero entries.
 ///
 /// This command replays the inference pass over every enabled beat's goal text so future
 /// prose generation — and the DCM viz — see the character docs they should have had.
@@ -37,7 +37,7 @@ public static class BackfillEntityDocsCli
         var dbFactory  = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         var entityDocs = sp.GetRequiredService<EntityDocService>();
 
-        // Resolve node (story or chapter)
+        // Resolve node (book or chapter)
         Guid nodeId;
         string nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
@@ -55,7 +55,7 @@ public static class BackfillEntityDocsCli
             nodeTitle = node.Title ?? slug;
         }
 
-        Console.WriteLine($"[backfill-entity-docs] Story: \"{nodeTitle}\" ({slug})");
+        Console.WriteLine($"[backfill-entity-docs] Book: \"{nodeTitle}\" ({slug})");
 
         // Collect all enabled beats across this node and its chapter children.
         var beats = await CollectBeatsAsync(nodeId, dbFactory, includeText);

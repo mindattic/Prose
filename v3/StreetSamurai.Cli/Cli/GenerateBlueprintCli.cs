@@ -9,7 +9,7 @@ namespace StreetSamurai.Cli;
 /// <summary>
 /// ss --generate-blueprint --slug &lt;nodeSlug&gt; [--retrofit] [--json]
 ///
-/// Generates the StructuralBlueprint for a story node — the pre-prose anti-tell
+/// Generates the StructuralBlueprint for a book node — the pre-prose anti-tell
 /// commitments (subplot, temporal scheme, resolution mode, moral polarity,
 /// escalation curve, event-type palette, form device, ending style, intertextual
 /// anchors). StoryScope countermeasures: these are the narrative-structure
@@ -93,7 +93,7 @@ public static class GenerateBlueprintCli
             return 0;
         }
 
-        Console.WriteLine($"Subplot:    {(bp.HasSubplot ? bp.SubplotSummary : "(none — story too short for a forced one)")}");
+        Console.WriteLine($"Subplot:    {(bp.HasSubplot ? bp.SubplotSummary : "(none — book too short for a forced one)")}");
         if (bp.SubplotTheme != null)
             Console.WriteLine($"  parallel: {bp.SubplotTheme}");
         Console.WriteLine($"Temporal:   {bp.TemporalScheme}{(bp.AnachronyPlan != null ? $" — {bp.AnachronyPlan}" : "")}");

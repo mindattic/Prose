@@ -1389,7 +1389,7 @@ Return ONLY a JSON object, nothing else:
 
         var system = BuildBallotSystemPrompt(persona, export.Title, export.BeatCount, lessonsBlock);
         // beat_scores only requested for ≤150 beats; above that the JSON would exceed typical
-        // model output limits. Large stories get score+flow+gripes only (~400 tokens output).
+        // model output limits. Large books get score+flow+gripes only (~400 tokens output).
         var maxTok = export.BeatCount <= 150
             ? Math.Min(8000, 900 + export.BeatCount * 6)
             : 1000;
@@ -1456,7 +1456,7 @@ Return ONLY a JSON object, nothing else:
         var who = BuildWhoBlock(persona);
         var lessonsSection = string.IsNullOrWhiteSpace(lessonsBlock) ? "" : $"\n\n{lessonsBlock}\n";
         // beat_scores JSON grows ~11 tokens/beat; above 150 beats it exceeds most model output
-        // limits and the entire ballot becomes unparseable. Drop it for large stories.
+        // limits and the entire ballot becomes unparseable. Drop it for large books.
         var beatScoresClause = beatCount <= 150
             ? $@"- ""beat_scores"": rate EVERY beat across four dimensions, keyed 1..{beatCount}. Each is 1-5 (1=fails, 3=works, 5=outstanding):
   - ""beat"": does this beat execute its dramatic function? (Swain: active Scene goal/conflict/disaster, or Sequel reaction/dilemma/decision)

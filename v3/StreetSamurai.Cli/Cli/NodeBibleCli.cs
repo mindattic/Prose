@@ -5,10 +5,10 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// <c>ss --story-bible</c> — (re)generate the node bible for an existing node.
+/// <c>ss --book-bible</c> — (re)generate the node bible for an existing node.
 ///
 /// Use this to add a bible to a node created before the bible system existed,
-/// or to regenerate the plan when the story direction changes.
+/// or to regenerate the plan when the book direction changes.
 ///
 /// Args:
 ///   --slug &lt;slug&gt;    Target node by slug. Required.
@@ -34,8 +34,8 @@ public static class NodeBibleCli
 
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("[story-bible] --slug is required.");
-            Console.Error.WriteLine("Usage: ss --story-bible --slug <slug> [--beats N] [--replace-beats]");
+            Console.Error.WriteLine("[book-bible] --slug is required.");
+            Console.Error.WriteLine("Usage: ss --book-bible --slug <slug> [--beats N] [--replace-beats]");
             return 2;
         }
 
@@ -48,18 +48,18 @@ public static class NodeBibleCli
         var node = await db.Nodes.FirstOrDefaultAsync(s => s.Slug == slug);
         if (node == null)
         {
-            Console.Error.WriteLine($"[story-bible] No node found with slug '{slug}'.");
+            Console.Error.WriteLine($"[book-bible] No node found with slug '{slug}'.");
             return 1;
         }
 
         var seed = node.Seed ?? node.Description ?? node.Title;
         if (string.IsNullOrWhiteSpace(seed))
         {
-            Console.Error.WriteLine($"[story-bible] Node '{slug}' has no Seed or Description to drive generation. Set one first.");
+            Console.Error.WriteLine($"[book-bible] Node '{slug}' has no Seed or Description to drive generation. Set one first.");
             return 1;
         }
 
-        // SS-A43: beats live on chapter children for book-mode stories.
+        // SS-A43: beats live on chapter children for book-mode books.
         var childNodeIds = await db.Nodes.AsNoTracking()
             .Where(n => n.ParentNodeId == node.Id)
             .Select(n => n.Id)
@@ -73,9 +73,9 @@ public static class NodeBibleCli
             if (targetBeats <= 0) targetBeats = 12;
         }
 
-        Console.WriteLine($"[story-bible] Node: {node.Title} ({node.Id})");
-        Console.WriteLine($"[story-bible] Seed: {seed}");
-        Console.WriteLine($"[story-bible] Target beats: {targetBeats}");
+        Console.WriteLine($"[book-bible] Node: {node.Title} ({node.Id})");
+        Console.WriteLine($"[book-bible] Seed: {seed}");
+        Console.WriteLine($"[book-bible] Target beats: {targetBeats}");
 
         if (replaceBeats)
         {
@@ -90,11 +90,11 @@ public static class NodeBibleCli
             {
                 foreach (var row in emptyBeats) row.sb.IsEnabled = false;
                 await db.SaveChangesAsync();
-                Console.WriteLine($"[story-bible] Soft-deleted {emptyBeats.Count} empty planned beats.");
+                Console.WriteLine($"[book-bible] Soft-deleted {emptyBeats.Count} empty planned beats.");
             }
         }
 
-        Console.WriteLine($"[story-bible] Generating bible…");
+        Console.WriteLine($"[book-bible] Generating bible…");
         string bibleText;
         try
         {
@@ -102,7 +102,7 @@ public static class NodeBibleCli
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"[story-bible] Bible generation failed: {ex.Message}");
+            Console.Error.WriteLine($"[book-bible] Bible generation failed: {ex.Message}");
             return 1;
         }
 
@@ -113,11 +113,11 @@ public static class NodeBibleCli
 
         // Scaffold user stories template if not yet set.
         await spineService.ScaffoldAsync(node.Id, node.Title, bibleAlreadySet: true);
-        Console.WriteLine($"[story-bible] Spine user-stories scaffolded.");
+        Console.WriteLine($"[book-bible] Spine user-stories scaffolded.");
 
         var beatPlans = NodeBibleService.ParseBeatSpine(bibleText);
         Console.WriteLine();
-        Console.WriteLine($"[story-bible] Done. {beatPlans.Count} spine entries parsed.");
+        Console.WriteLine($"[book-bible] Done. {beatPlans.Count} spine entries parsed.");
         Console.WriteLine($"   URL: https://localhost:7103/node/{node.Slug}");
 
         return 0;

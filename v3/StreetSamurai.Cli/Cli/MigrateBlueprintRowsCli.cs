@@ -9,11 +9,11 @@ namespace StreetSamurai.Cli;
 /// <summary>
 /// ss --migrate-blueprint-rows [--slug &lt;slug&gt;] [--dry-run]
 ///
-/// Step B2: decomposes per-story JSON blob arrays (EscalationCurveJson,
+/// Step B2: decomposes per-book JSON blob arrays (EscalationCurveJson,
 /// EventTypePaletteJson) and NodeStructuralBlueprintBeatTags rows into
 /// per-beat BeatBlueprintDecision rows.
 ///
-/// For each story node that has a blueprint:
+/// For each book node that has a blueprint:
 ///   1. Load beats in SortKey order from the primary chapter.
 ///   2. Parse EscalationCurveJson (int[]) → EscalationFloor per beat by position.
 ///   3. Parse EventTypePaletteJson ({beatIndex, eventType, revelationMode}[]) →
@@ -65,7 +65,7 @@ public static class MigrateBlueprintRowsCli
 
         foreach (var bp in blueprints)
         {
-            // Load beats for this story in spine order via its primary chapter
+            // Load beats for this book in spine order via its primary chapter
             var beats = await db.BeatNodes
                 .Where(bn => bn.NodeId == bp.NodeId)
                 .OrderBy(bn => bn.SortKey)

@@ -4,26 +4,26 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Surfaces factual contradictions that span multiple story nodes.
+/// Surfaces factual contradictions that span multiple book nodes.
 /// Wraps the existing <see cref="ContinuityService"/> contradiction data but
-/// filters to groups where conflicting claims originate from different stories
-/// (different <c>ContinuityClaim.StorySlug</c> values).
-/// Same-story contradictions are the existing per-story continuity system's job.
+/// filters to groups where conflicting claims originate from different books
+/// (different <c>ContinuityClaim.BookSlug</c> values).
+/// Same-book contradictions are the existing per-book continuity system's job.
 /// </summary>
-public class CrossStoryConsistencyService
+public class CrossBookConsistencyService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
 
-    public CrossStoryConsistencyService(IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    public CrossBookConsistencyService(IDbContextFactory<StreetSamuraiDbContext> dbFactory)
     {
         this.dbFactory = dbFactory;
     }
 
     /// <summary>
-    /// Returns all cross-story conflicts, optionally limited to those first detected
+    /// Returns all cross-book conflicts, optionally limited to those first detected
     /// within the last <paramref name="since"/> window.
     /// </summary>
-    public async Task<CrossStoryConsistencyReport> GetCrossStoryConflictsAsync(
+    public async Task<CrossBookConsistencyReport> GetCrossBookConflictsAsync(
         DateTime? since = null,
         CancellationToken ct = default)
     {
@@ -32,7 +32,7 @@ public class CrossStoryConsistencyService
 
         var claims = await db.ContinuityClaims
             .AsNoTracking()
-            .Where(c => live.Contains(c.Status) && c.StorySlug != null)
+            .Where(c => live.Contains(c.Status) && c.BookSlug != null)
             .ToListAsync(ct);
 
         if (since.HasValue)
@@ -47,9 +47,9 @@ public class CrossStoryConsistencyService
             {
                 var objectValues = g.Select(c => c.Object.Trim().ToLowerInvariant()).Distinct().ToList();
                 if (objectValues.Count <= 1) return false;
-                // Must have claims from at least two different stories
-                var stories = g.Select(c => c.StorySlug!).Distinct().ToList();
-                return stories.Count > 1;
+                // Must have claims from at least two different books
+                var books = g.Select(c => c.BookSlug!).Distinct().ToList();
+                return books.Count > 1;
             })
             .Select(g =>
             {
@@ -57,8 +57,8 @@ public class CrossStoryConsistencyService
                     .GroupBy(c => c.Object.Trim().ToLowerInvariant())
                     .Select(og =>
                     {
-                        var stories = og.Select(c => c.StorySlug!).Distinct().OrderBy(s => s).ToList();
-                        return new ObjectVariant(og.First().Object, stories, og.Count());
+                        var books = og.Select(c => c.BookSlug!).Distinct().OrderBy(s => s).ToList();
+                        return new ObjectVariant(og.First().Object, books, og.Count());
                     })
                     .OrderByDescending(v => v.ClaimCount)
                     .ToList();
@@ -66,53 +66,53 @@ public class CrossStoryConsistencyService
                 var majority = byObject.First();
                 var minority = byObject.Last();
 
-                // Only include if the majority and minority come from different stories
-                var allStories = byObject.SelectMany(v => v.Stories).Distinct().ToList();
-                bool isCrossStory = allStories.Count > 1;
+                // Only include if the majority and minority come from different books
+                var allBooks = byObject.SelectMany(v => v.Books).Distinct().ToList();
+                bool isCrossBook = allBooks.Count > 1;
 
-                return new CrossStoryConflict(
+                return new CrossBookConflict(
                     EntityId:       g.Key.EntityId,
                     EntityName:     g.First().EntityName,
                     EntityKind:     g.First().EntityKind,
                     Predicate:      g.Key.Predicate,
                     MajorityObject: majority.Object,
-                    MajorityStories: majority.Stories,
+                    MajorityBooks:  majority.Books,
                     MajorityCount:  majority.ClaimCount,
                     MinorityObject: minority.Object,
-                    MinorityStories: minority.Stories,
+                    MinorityBooks:  minority.Books,
                     MinorityCount:  minority.ClaimCount,
-                    IsCrossStory:   isCrossStory
+                    IsCrossBook:    isCrossBook
                 );
             })
-            .Where(c => c.IsCrossStory)
+            .Where(c => c.IsCrossBook)
             .OrderByDescending(c => c.MajorityCount - c.MinorityCount)
             .ThenBy(c => c.EntityName)
             .ToList();
 
-        return new CrossStoryConsistencyReport(DateTime.UtcNow, conflicts);
+        return new CrossBookConsistencyReport(DateTime.UtcNow, conflicts);
     }
 }
 
 // ── Data models ──────────────────────────────────────────────────────────────
 
-public record CrossStoryConsistencyReport(
+public record CrossBookConsistencyReport(
     DateTime GeneratedAt,
-    IReadOnlyList<CrossStoryConflict> Conflicts);
+    IReadOnlyList<CrossBookConflict> Conflicts);
 
-public record CrossStoryConflict(
+public record CrossBookConflict(
     string EntityId,
     string EntityName,
     string EntityKind,
     string Predicate,
     string MajorityObject,
-    IReadOnlyList<string> MajorityStories,
+    IReadOnlyList<string> MajorityBooks,
     int MajorityCount,
     string MinorityObject,
-    IReadOnlyList<string> MinorityStories,
+    IReadOnlyList<string> MinorityBooks,
     int MinorityCount,
-    bool IsCrossStory);
+    bool IsCrossBook);
 
 internal record ObjectVariant(
     string Object,
-    IReadOnlyList<string> Stories,
+    IReadOnlyList<string> Books,
     int ClaimCount);

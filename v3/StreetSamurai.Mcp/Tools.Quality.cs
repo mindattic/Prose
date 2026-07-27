@@ -121,7 +121,7 @@ public class QualityTools
 
     /// <summary>Run a sampled Legion review panel against a node. Automatically runs structural pre-flight first — blocking failures (missing antagonist cost, passive protagonist, etc.) halt the review and tell you what to fix. Non-blocking warnings are appended to the report. Casts score-only ballots and a few full prose upgrades. Returns the pooled mean, SD, 95% CI, per-beat heat map, clustered weakness tags, and the Pareto/contested/seam report.</summary>
     [McpServerTool, Description("Run the sampled Legion review panel against a node. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts node id (GUID) for the nodeIdOrSlug param.")]
-    public async Task<string> ReviewStory(
+    public async Task<string> ReviewBook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Number of score-only ballots to cast. 0 = use the effort tier (if given) or the ReviewBallots setting (default 20). A non-zero value overrides the tier.")] int ballots = 0,
         [Description("Number of full prose reviews to write (upgraded from ballots). 0 = use the effort tier (if given) else 0. A non-zero value overrides the tier.")] int prose = 0,
@@ -252,7 +252,7 @@ public class QualityTools
 
     /// <summary>Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel (antagonist cost, protagonist behavior change, stakes embodiment, exposition density, character embodiment, pacing gear change, affectation lines, dramatic question, passive protagonist, character function, dialogue subtext, jargon front-loading). Returns Pass/Warn/Fail per check with evidence quoted from the text and a concrete fix. Blocking failures mean: fix the structure before running 60 ballots — structural issues cap scores regardless of prose quality.</summary>
     [McpServerTool, Description("Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_node. Accepts node id (GUID) or slug. max_chars controls how much of the assembled node text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length nodes; lower to reduce cost, raise for very long nodes).")]
-    public async Task<string> DiagnoseStory(
+    public async Task<string> DiagnoseBook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long nodes (max practical: ~160000).")] int maxChars = 40000)
     {
@@ -406,7 +406,7 @@ public class QualityTools
 
     /// <summary>List individual ballot reviews for a node — one row per persona reader.</summary>
     [McpServerTool, Description("List individual ballot reviews for a node — one row per persona reader, showing persona name, provider, score, flow score (if study mode), improvements, and content hash. Use to inspect which personas scored low and what they said, or to compare how different providers voted. Results are sorted most-recent-first. Accepts node id (GUID) or slug.")]
-    public async Task<string> ListStoryReviews(
+    public async Task<string> ListBookReviews(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Only return reviews from this content hash (i.e. one specific review run). Leave empty for all reviews.")] string contentHash = "",
         [Description("Maximum rows to return. Default 50.")] int limit = 50)
@@ -457,8 +457,8 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Check the semantic fidelity of a node — detect the Goodhart's Law gap where beats score high but drift from the story's original meaning. Returns bible alignment (prose vs story Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for each scored beat, with SEMANTIC-DRIFT findings filed for violations. Run after review_node to verify the score reflects real quality, not metric gaming.</summary>
-    [McpServerTool, Description("Check the Semantic Fidelity Gap for a node — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the story's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a high-scoring beat that no longer resembles the story it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.")]
+    /// <summary>Check the semantic fidelity of a node — detect the Goodhart's Law gap where beats score high but drift from the book's original meaning. Returns bible alignment (prose vs book Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for each scored beat, with SEMANTIC-DRIFT findings filed for violations. Run after review_node to verify the score reflects real quality, not metric gaming.</summary>
+    [McpServerTool, Description("Check the Semantic Fidelity Gap for a node — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the book's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a high-scoring beat that no longer resembles the book it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.")]
     public async Task<string> CheckSemanticFidelity(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {

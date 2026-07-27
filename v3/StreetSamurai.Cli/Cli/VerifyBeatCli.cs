@@ -6,7 +6,7 @@ namespace StreetSamurai.Cli;
 
 /// <summary>
 /// ss --verify-beat --id &lt;beatId&gt; [--json]
-/// ss --verify-story --slug &lt;slug&gt; [--json]
+/// ss --verify-book --slug &lt;slug&gt; [--json]
 ///
 /// Beat Verification Engine (Track C — Truth-First Architecture).
 /// Checks whether generated prose fulfilled its declared BeatBlueprintDecision contract.
@@ -16,7 +16,7 @@ namespace StreetSamurai.Cli;
 ///   EventType          — BeatModeLog.Mode vs declared EventType (approximate)
 ///   SubplotCarrier     — subplot entities present when SubplotCarrier=true
 ///   EscalationFloor    — EmotionalBeatScore.Depth vs declared floor (when scored)
-///   EscalationMonotonic — story-wide curve regression (--verify-story only)
+///   EscalationMonotonic — book-wide curve regression (--verify-book only)
 ///
 /// Semantic checks (embedding similarity):
 ///   DeclaredPurpose    — cosine similarity: declared purpose vs prose (requires embeddings)
@@ -33,7 +33,7 @@ public static class VerifyBeatCli
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        bool isStory = args.Contains("--verify-story");
+        bool isBook = args.Contains("--verify-book");
         bool isJson  = args.Contains("--json");
         bool isQuote = args.Contains("--verify-quote");
         bool isQuoteBatch = args.Contains("--verify-quotes-batch");
@@ -120,8 +120,8 @@ public static class VerifyBeatCli
             return failed.Count > 0 ? 1 : 0;
         }
 
-        // ── Story mode ────────────────────────────────────────────────────────
-        if (isStory)
+        // ── Book mode ─────────────────────────────────────────────────────────
+        if (isBook)
         {
             string? slug = null;
             for (int i = 0; i < args.Length - 1; i++)
@@ -129,12 +129,12 @@ public static class VerifyBeatCli
 
             if (string.IsNullOrEmpty(slug))
             {
-                Console.Error.WriteLine("Usage: ss --verify-story --slug <slug>");
+                Console.Error.WriteLine("Usage: ss --verify-book --slug <slug>");
                 return 2;
             }
 
-            Console.WriteLine($"[verify-story] Running verification for: {slug}");
-            var summary = await svc.VerifyStoryAsync(slug);
+            Console.WriteLine($"[verify-book] Running verification for: {slug}");
+            var summary = await svc.VerifyBookAsync(slug);
 
             if (isJson)
             {

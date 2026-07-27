@@ -129,12 +129,12 @@ public class ConfigTools
     [McpServerTool, Description(
         "Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. " +
         "Returns one budgeted block plus the resident docs (tier + why each loaded). Pass nodeCode (e.g. " +
-        "'BCODA') to include that story's bible + its one register; pass text (scene/goal/conversation) to " +
+        "'BCODA') to include that book's bible + its one register; pass text (scene/goal/conversation) to " +
         "trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that " +
         "matter now instead of dumping hundreds.")]
     public async Task<string> DocContextPrepare(
         [Description("Scene/goal/conversation text to trigger topic docs against.")] string text,
-        [Description("Optional node CODE (e.g. 'BCODA') to also load that story's bible + register.")] string? nodeCode = null,
+        [Description("Optional node CODE (e.g. 'BCODA') to also load that book's bible + register.")] string? nodeCode = null,
         [Description("Token budget for the assembled block. Default 2000.")] int budget = 2000)
     {
         var result = await docContext.PrepareContextAsync(SessionKey(nodeCode), nodeCode, text, budget);
@@ -241,10 +241,10 @@ public class ConfigTools
         "Pin a canon .md doc so it is always included in every beat prompt, regardless of LRU tier. " +
         "Identify the doc by relative path fragment (e.g. 'ICFI', 'BIBLE', 'wound') or its GUID. " +
         "The override lasts 24 h or until remove_context_doc / clear_context is called. " +
-        "Optionally scope to a single story with nodeSlug so only that story's beats include it.")]
+        "Optionally scope to a single book with nodeSlug so only that book's beats include it.")]
     public async Task<string> AddContextDoc(
         [Description("Relative path fragment or GUID of the markdown doc to pin.")] string doc,
-        [Description("Optional story slug to scope the pin (e.g. 'icfi'). Omit for session-global.")] string? nodeSlug = null)
+        [Description("Optional book slug to scope the pin (e.g. 'icfi'). Omit for session-global.")] string? nodeSlug = null)
     {
         var (docId, docPath, err) = await ResolveDocIdAsync(doc);
         if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
@@ -269,7 +269,7 @@ public class ConfigTools
         "The override lasts 24 h or until remove_context_doc / clear_context is called.")]
     public async Task<string> ExcludeContextDoc(
         [Description("Relative path fragment or GUID of the markdown doc to exclude.")] string doc,
-        [Description("Optional story slug to scope the exclusion. Omit for session-global.")] string? nodeSlug = null)
+        [Description("Optional book slug to scope the exclusion. Omit for session-global.")] string? nodeSlug = null)
     {
         var (docId, docPath, err) = await ResolveDocIdAsync(doc);
         if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
@@ -293,7 +293,7 @@ public class ConfigTools
         "Pass the same doc path/GUID and optional nodeSlug used when the override was created.")]
     public async Task<string> RemoveContextDoc(
         [Description("Relative path fragment or GUID of the markdown doc whose override to remove.")] string doc,
-        [Description("Optional story slug the override was scoped to.")] string? nodeSlug = null)
+        [Description("Optional book slug the override was scoped to.")] string? nodeSlug = null)
     {
         var (docId, docPath, err) = await ResolveDocIdAsync(doc);
         if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
@@ -305,9 +305,9 @@ public class ConfigTools
 
     [McpServerTool, Description(
         "Clear ALL active context overrides for this session (both pins and excludes). " +
-        "Pass nodeSlug to clear only overrides scoped to that story; omit for session-wide clear.")]
+        "Pass nodeSlug to clear only overrides scoped to that book; omit for session-wide clear.")]
     public async Task<string> ClearContext(
-        [Description("Optional story slug to clear only overrides for that node. Omit for full session clear.")] string? nodeSlug = null)
+        [Description("Optional book slug to clear only overrides for that node. Omit for full session clear.")] string? nodeSlug = null)
     {
         var nodeId = nodeSlug != null ? await ResolveNodeIdAsync(nodeSlug) : null;
         if (nodeSlug != null && nodeId == null)
@@ -340,7 +340,7 @@ public class ConfigTools
     // ── Liberty Report (Rule of Cool) ─────────────────────────────────────────
 
     [McpServerTool, Description(
-        "Show the liberty analysis (Rule of Cool) for a single beat or all beats in a story. " +
+        "Show the liberty analysis (Rule of Cool) for a single beat or all beats in a book. " +
         "A 'liberty' is any creative departure from the beat goal or entity roster: " +
         "entity_invention (name not in DB), tech_departure (GLMZ physics violated), " +
         "or creative_departure (plot beyond the beat goal). " +
@@ -349,7 +349,7 @@ public class ConfigTools
         "Reports are written automatically after each beat write; this tool reads them.")]
     public async Task<string> GetLibertyReport(
         [Description("Beat GUID to retrieve the report for that specific beat.")] string? beatId = null,
-        [Description("Story slug (e.g. 'icfi') to retrieve all reports for that story, newest first.")] string? slug = null)
+        [Description("Book slug (e.g. 'icfi') to retrieve all reports for that book, newest first.")] string? slug = null)
     {
         if (beatId != null)
         {

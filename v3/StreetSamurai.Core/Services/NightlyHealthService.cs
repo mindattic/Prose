@@ -27,12 +27,12 @@ public sealed record BeatHealthRecord(
 
 public sealed record NightlyHealthReport(
     DateTime RunAt,
-    int StoriesAnalyzed,
+    int BooksAnalyzed,
     int BeatsAnalyzed,
     IReadOnlyList<BeatHealthRecord> Tier1,
     IReadOnlyList<BeatHealthRecord> Tier2,
     IReadOnlyList<BeatHealthRecord> Tier3,
-    IReadOnlyDictionary<string, double> StoryMeanPredictedScore,
+    IReadOnlyDictionary<string, double> BookMeanPredictedScore,
     IReadOnlyList<string> Warnings);
 
 /// <summary>
@@ -68,8 +68,8 @@ public class NightlyHealthService
     }
 
     /// <summary>
-    /// Run the nightly health scan on all non-WIP story nodes (or a single
-    /// story when <paramref name="slug"/> is supplied). Returns the consolidated
+    /// Run the nightly health scan on all non-WIP book nodes (or a single
+    /// book when <paramref name="slug"/> is supplied). Returns the consolidated
     /// report and writes findings to FindingsService.
     /// </summary>
     public async Task<NightlyHealthReport> RunAsync(
@@ -78,27 +78,27 @@ public class NightlyHealthService
         var runAt    = DateTime.UtcNow;
         var warnings = new List<string>();
 
-        // ── 1. Resolve target story nodes ─────────────────────────────────
-        var stories = await ResolveStoriesAsync(slug, ct);
-        if (stories.Count == 0)
+        // ── 1. Resolve target book nodes ──────────────────────────────────
+        var books = await ResolveBooksAsync(slug, ct);
+        if (books.Count == 0)
         {
-            warnings.Add(slug != null ? $"No non-WIP story found with slug '{slug}'" : "No non-WIP stories found");
+            warnings.Add(slug != null ? $"No non-WIP book found with slug '{slug}'" : "No non-WIP books found");
             return new NightlyHealthReport(runAt, 0, 0,
                 [], [], [], new Dictionary<string, double>(), warnings);
         }
 
         var allRecords             = new List<BeatHealthRecord>();
-        var storyMeanPredicted     = new Dictionary<string, double>();
+        var bookMeanPredicted      = new Dictionary<string, double>();
         int totalBeats             = 0;
 
-        foreach (var story in stories)
+        foreach (var book in books)
         {
             if (ct.IsCancellationRequested) break;
-            log.LogInformation("NightlyHealth: analysing '{Slug}' ({Code})", story.Slug, story.NodeCode);
+            log.LogInformation("NightlyHealth: analysing '{Slug}' ({Code})", book.Slug, book.NodeCode);
 
             try
             {
-                var records = await AnalyseStoryAsync(story, ct);
+                var records = await AnalyseBookAsync(book, ct);
                 allRecords.AddRange(records);
                 totalBeats += records.Count;
 
@@ -107,11 +107,11 @@ public class NightlyHealthService
                     .Select(r => r.PredictedScore!.Value)
                     .ToList();
                 if (predicted.Count > 0)
-                    storyMeanPredicted[story.Slug] = predicted.Average();
+                    bookMeanPredicted[book.Slug] = predicted.Average();
             }
             catch (Exception ex)
             {
-                var msg = $"Story '{story.Slug}' failed: {ex.Message}";
+                var msg = $"Book '{book.Slug}' failed: {ex.Message}";
                 log.LogWarning(ex, "NightlyHealth: {Message}", msg);
                 warnings.Add(msg);
             }
@@ -126,18 +126,18 @@ public class NightlyHealthService
         WriteFindings(tier1, tier2, tier3);
 
         return new NightlyHealthReport(
-            runAt, stories.Count, totalBeats,
+            runAt, books.Count, totalBeats,
             tier1, tier2, tier3,
-            storyMeanPredicted, warnings);
+            bookMeanPredicted, warnings);
     }
 
-    // ── Story-level analysis ──────────────────────────────────────────────
+    // ── Book-level analysis ───────────────────────────────────────────────
 
-    private async Task<List<BeatHealthRecord>> AnalyseStoryAsync(
-        StoryMeta story, CancellationToken ct)
+    private async Task<List<BeatHealthRecord>> AnalyseBookAsync(
+        BookMeta book, CancellationToken ct)
     {
         // Tree walk: collect all beats in reading order across the whole subtree
-        var orderedBeats = await GetOrderedBeatsAsync(story.Id, ct);
+        var orderedBeats = await GetOrderedBeatsAsync(book.Id, ct);
         if (orderedBeats.Count == 0) return [];
 
         // Run surface stats on every beat — pure text, zero cost
@@ -145,10 +145,10 @@ public class NightlyHealthService
             .ToDictionary(b => b.BeatId, b => ProseStatsService.Analyze(b.BeatId, b.Text));
 
         // Run embedding analyses — uses cached ProseEmbeddings, zero API calls
-        var outliers      = await embHealth.ComputeOutliersAsync(story.Id, ct);
+        var outliers      = await embHealth.ComputeOutliersAsync(book.Id, ct);
         var outlierById   = outliers.ToDictionary(o => o.BeatId);
 
-        var voiceDrift    = await embHealth.ComputeVoiceDriftAsync(story.Id, ct);
+        var voiceDrift    = await embHealth.ComputeVoiceDriftAsync(book.Id, ct);
         var driftById     = voiceDrift.ToDictionary(d => d.BeatId);
 
         // Identify which pairs are monotonous/jarring for O(n) lookup
@@ -184,8 +184,8 @@ public class NightlyHealthService
                 BeatId:             ob.BeatId,
                 BeatNumber:         ob.Number,
                 Title:          ob.Title,
-                NodeSlug:           story.Slug,
-                NodeCode:           story.NodeCode,
+                NodeSlug:           book.Slug,
+                NodeCode:           book.NodeCode,
                 Score:              ob.Score,
                 RiskScore:          riskScore,
                 PredictedScore:     knn?.PredictedScore,
@@ -263,7 +263,7 @@ public class NightlyHealthService
 
     // ── Helpers ───────────────────────────────────────────────────────────
 
-    private sealed record StoryMeta(Guid Id, string Slug, string? NodeCode);
+    private sealed record BookMeta(Guid Id, string Slug, string? NodeCode);
 
     private sealed record OrderedBeatMeta(
         Guid    BeatId,
@@ -272,19 +272,19 @@ public class NightlyHealthService
         string? Text,
         double? Score);
 
-    private async Task<List<StoryMeta>> ResolveStoriesAsync(string? slug, CancellationToken ct)
+    private async Task<List<BookMeta>> ResolveBooksAsync(string? slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var query = db.Nodes.OfType<BookNode>().AsNoTracking();
         if (slug != null)
             query = query.Where(n => n.Slug == slug);
         else
-            // "analysing all non-WIP stories" is meant to sweep every universe's stories, not
+            // "analysing all non-WIP books" is meant to sweep every universe's books, not
             // whichever universe happens to be ambient in this process.
             query = query.IgnoreQueryFilters();
         return await query
             .OrderBy(n => n.SortKey)
-            .Select(n => new StoryMeta(n.Id, n.Slug, n.NodeCode))
+            .Select(n => new BookMeta(n.Id, n.Slug, n.NodeCode))
             .ToListAsync(ct);
     }
 
@@ -334,7 +334,7 @@ public class NightlyHealthService
         var sb = new StringBuilder();
         sb.AppendLine($"# Nightly Prose Health Report");
         sb.AppendLine($"Run: {report.RunAt:yyyy-MM-dd HH:mm} UTC  |  " +
-                      $"Stories: {report.StoriesAnalyzed}  |  Beats: {report.BeatsAnalyzed}  |  API calls: 0");
+                      $"Books: {report.BooksAnalyzed}  |  Beats: {report.BeatsAnalyzed}  |  API calls: 0");
         sb.AppendLine();
 
         void AppendTier(string header, IReadOnlyList<BeatHealthRecord> tier)
@@ -342,7 +342,7 @@ public class NightlyHealthService
             if (tier.Count == 0) return;
             sb.AppendLine($"## {header} — {tier.Count} beats");
             sb.AppendLine();
-            sb.AppendLine("| Story | # | Title | kNN | Outlier | Adverbs | Passive | Telling | Risk |");
+            sb.AppendLine("| Book | # | Title | kNN | Outlier | Adverbs | Passive | Telling | Risk |");
             sb.AppendLine("|---|---|---|---|---|---|---|---|---|");
             foreach (var r in tier)
             {
@@ -363,11 +363,11 @@ public class NightlyHealthService
         AppendTier("RISK TIER 2 — worth a read", report.Tier2);
         AppendTier("RISK TIER 3 — low signal", report.Tier3);
 
-        if (report.StoryMeanPredictedScore.Count > 0)
+        if (report.BookMeanPredictedScore.Count > 0)
         {
-            sb.AppendLine("## kNN Story Predictions (unscored)");
+            sb.AppendLine("## kNN Book Predictions (unscored)");
             sb.AppendLine();
-            foreach (var (slug, mean) in report.StoryMeanPredictedScore.OrderBy(kvp => kvp.Value))
+            foreach (var (slug, mean) in report.BookMeanPredictedScore.OrderBy(kvp => kvp.Value))
                 sb.AppendLine($"- **{slug}** — mean predicted {mean:F1}");
             sb.AppendLine();
         }

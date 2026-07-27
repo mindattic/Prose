@@ -7,7 +7,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// ss --diagnose-story --slug &lt;nodeSlug&gt; [--json]
+/// ss --diagnose-book --slug &lt;nodeSlug&gt; [--json]
 ///
 /// Pre-flight structural analysis before running the review panel.
 /// Runs 12 targeted checks in parallel and reports Pass/Warn/Fail
@@ -30,7 +30,7 @@ public static class DiagnoseNodeCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --diagnose-story --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: ss --diagnose-book --slug <nodeSlug> [--json]");
             return 2;
         }
 

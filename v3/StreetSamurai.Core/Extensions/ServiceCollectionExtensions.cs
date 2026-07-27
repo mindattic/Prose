@@ -311,9 +311,9 @@ public static class ServiceCollectionExtensions
         // PeriodicTimer-based BackgroundService — no Quartz/Hangfire dep.
         services.AddSingleton<ContinuityLongSweepService>();
 
-        // Cross-story consistency — surfaces contradictions that span multiple story nodes.
+        // Cross-story consistency — surfaces contradictions that span multiple book nodes.
         // CPU-only query over the existing ContinuityClaims table. Used by ss --consistency-audit.
-        services.AddSingleton<CrossStoryConsistencyService>();
+        services.AddSingleton<CrossBookConsistencyService>();
 
         // Per-beat prose quality metrics — CPU-only nightly compute (sentence stats,
         // TTR, MTLD, Flesch-Kincaid). Used by ss --compute-metrics and ss --morning-report.
@@ -905,7 +905,7 @@ public static class ServiceCollectionExtensions
 
         // Pre-flight structural diagnostics — 12 parallel LLM checks that catch
         // structural problems (missing antagonist cost, passive protagonist, etc.)
-        // BEFORE the 60-ballot review panel. Available via `ss --diagnose-story`
+        // BEFORE the 60-ballot review panel. Available via `ss --diagnose-book`
         // and the `diagnose_node` MCP tool.
         services.AddSingleton<StructuralDiagnosticService>();
 
@@ -927,10 +927,10 @@ public static class ServiceCollectionExtensions
         // and the Tools.PlantPayoff MCP tools.
         services.AddSingleton<PlantPayoffService>();
 
-        // Story commandment audits — gateway (standalone) and sequel commandment sets.
+        // Book commandment audits — gateway (standalone) and sequel commandment sets.
         // Determined automatically from Node.PreviousNodeId.
-        // Available via `ss --story-audit` and the Tools.StoryAudit MCP tools.
-        services.AddSingleton<StoryAuditService>();
+        // Available via `ss --book-audit` and the Tools.StoryAudit MCP tools.
+        services.AddSingleton<BookAuditService>();
 
         // Structural blueprints — pre-prose StoryScope anti-tell commitments
         // (subplot, chronology, resolution mode, escalation curve, event palette,
@@ -1006,14 +1006,14 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ReaderKnowledgeService>();
         services.AddSingleton<ChapterSummaryService>();
         services.AddSingleton<OpenThreadsService>();
-        services.AddSingleton<StoryStateLedgerService>();
+        services.AddSingleton<BookStateLedgerService>();
         services.AddSingleton<PremiseToOutlineService>();
         services.AddSingleton<OutlineAdherenceService>();
         services.AddSingleton<NarrativeForkService>();
         services.AddSingleton<ChapterCloseProcessorService>();
         services.AddSingleton<ProseWriterRouter>();
         services.AddSingleton<LibertyReportService>();
-        services.AddSingleton<StoryLogicAuditService>();
+        services.AddSingleton<BookLogicAuditService>();
 
         return services;
     }

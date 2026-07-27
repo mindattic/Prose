@@ -6,7 +6,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// <c>ss --narrate-story</c> — (re)run TTS narration on an EXISTING node,
+/// <c>ss --narrate-book</c> — (re)run TTS narration on an EXISTING node,
 /// resolved by id (full or prefix) or slug. The complement to
 /// <c>--write-story --narrate</c> (which only narrates a node it just
 /// generated). Runs the same <see cref="NodeWorkbenchService.NarrateAsync"/>
@@ -36,8 +36,8 @@ public static class NarrateNodeCli
 
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("[narrate-story] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --narrate-story (--id <guid|prefix> | --slug <slug>)");
+            Console.Error.WriteLine("[narrate-book] One of --id or --slug is required.");
+            Console.Error.WriteLine("Usage: ss --narrate-book (--id <guid|prefix> | --slug <slug>)");
             return 1;
         }
 
@@ -68,7 +68,7 @@ public static class NarrateNodeCli
                     .ToListAsync();
                 if (matches.Count > 1)
                 {
-                    Console.Error.WriteLine($"[narrate-story] Id prefix '{id}' is ambiguous — matches multiple nodes. Use a longer prefix or the full id.");
+                    Console.Error.WriteLine($"[narrate-book] Id prefix '{id}' is ambiguous — matches multiple nodes. Use a longer prefix or the full id.");
                     return 1;
                 }
                 node = matches.FirstOrDefault();
@@ -76,7 +76,7 @@ public static class NarrateNodeCli
 
             if (node == null)
             {
-                Console.Error.WriteLine($"[narrate-story] No node found for {(slug != null ? $"slug '{slug}'" : $"id '{id}'")}.");
+                Console.Error.WriteLine($"[narrate-book] No node found for {(slug != null ? $"slug '{slug}'" : $"id '{id}'")}.");
                 return 1;
             }
             nodeId    = node.Id;
@@ -84,11 +84,11 @@ public static class NarrateNodeCli
             nodeTitle = node.Title;
         }
 
-        Console.WriteLine($"[narrate-story] Narrating node:");
+        Console.WriteLine($"[narrate-book] Narrating node:");
         Console.WriteLine($"   Id:    {nodeId}");
         Console.WriteLine($"   Slug:  {nodeSlug}");
         Console.WriteLine($"   Title: {nodeTitle}");
-        Console.WriteLine($"[narrate-story] Running TTS — this may take a while…");
+        Console.WriteLine($"[narrate-book] Running TTS — this may take a while…");
 
         try
         {
@@ -96,7 +96,7 @@ public static class NarrateNodeCli
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"[narrate-story] Narration crashed: {ex.Message}");
+            Console.Error.WriteLine($"[narrate-book] Narration crashed: {ex.Message}");
             return 1;
         }
 
@@ -105,9 +105,9 @@ public static class NarrateNodeCli
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             var done = await db.Nodes.AsNoTracking().FirstAsync(s => s.Id == nodeId);
-            Console.WriteLine($"[narrate-story] Status: {done.Status}  ({done.NarratedBeatCount}/{done.TotalBeatsToNarrate} beats narrated)");
+            Console.WriteLine($"[narrate-book] Status: {done.Status}  ({done.NarratedBeatCount}/{done.TotalBeatsToNarrate} beats narrated)");
             if (!string.IsNullOrEmpty(done.Error))
-                Console.WriteLine($"[narrate-story] Error: {done.Error}");
+                Console.WriteLine($"[narrate-book] Error: {done.Error}");
             return done.Status == "ready" ? 0 : 1;
         }
     }

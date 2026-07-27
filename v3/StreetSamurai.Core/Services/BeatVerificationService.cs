@@ -14,7 +14,7 @@ public record BeatVerificationResult(
     string? Evidence,
     string VerifiedBy = "mechanical");
 
-public record StoryVerificationSummary(
+public record BookVerificationSummary(
     Guid NodeId,
     string Slug,
     int BeatsChecked,
@@ -36,7 +36,7 @@ public record StoryVerificationSummary(
 ///   EventType          — declared event type vs BeatModeLog.Mode (approximate)
 ///   BannedPattern      — "internal_understanding" and epilogue anti-patterns
 ///   SubplotCarrier     — subplot character absent from BeatEntities when declared
-///   EscalationMonotonic — story-wide curve regression detection
+///   EscalationMonotonic — book-wide curve regression detection
 ///
 /// Semantic checks (embedding similarity — requires EmbeddingService):
 ///   DeclaredPurpose    — embed cosine similarity between declared purpose and prose
@@ -118,9 +118,9 @@ public class BeatVerificationService
         return results;
     }
 
-    // ── Verify all beats in a story ──────────────────────────────────────────
+    // ── Verify all beats in a book ──────────────────────────────────────────
 
-    public async Task<StoryVerificationSummary> VerifyStoryAsync(
+    public async Task<BookVerificationSummary> VerifyBookAsync(
         string slugOrCode, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -131,8 +131,8 @@ public class BeatVerificationService
         if (node == null)
             throw new InvalidOperationException($"Node '{slugOrCode}' not found.");
 
-        // Beats may live directly on the story node OR on chapter children (SS-A43 hierarchy).
-        // Collect all node IDs in the subtree (story + chapters) before querying beats.
+        // Beats may live directly on the book node OR on chapter children (SS-A43 hierarchy).
+        // Collect all node IDs in the subtree (book + chapters) before querying beats.
         var nodeIds = new List<Guid> { node.Id };
         var chapterIds = await db.Nodes
             .Where(n => n.ParentNodeId == node.Id)
@@ -161,7 +161,7 @@ public class BeatVerificationService
             }
         }
 
-        // Story-wide escalation monotonicity check
+        // Book-wide escalation monotonicity check
         var escalationResults = await CheckEscalationMonotonicAsync(db, node.Id, ct);
         allResults.AddRange(escalationResults);
         foreach (var r in escalationResults)
@@ -169,7 +169,7 @@ public class BeatVerificationService
         await db.SaveChangesAsync(ct);
 
         var slug = node.Slug;
-        return new StoryVerificationSummary(
+        return new BookVerificationSummary(
             node.Id, slug,
             beatIds.Count,
             allResults.Count(r => r.Result == "Fail" && r.Severity == "BLOCKER"),
@@ -329,7 +329,7 @@ public class BeatVerificationService
 
         if (results.Count == 0 && decisions.Count > 0)
         {
-            // Report Pass on the last beat as a story-level summary
+            // Report Pass on the last beat as a book-level summary
             var lastBeatId = decisions[^1].BeatId;
             results.Add(new(lastBeatId, "EscalationMonotonic", "Pass", "MODERATE",
                 $"Escalation curve is non-decreasing across {decisions.Count} declared beats"));

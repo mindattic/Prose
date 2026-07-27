@@ -88,7 +88,7 @@ public class BeatProseMetricsService
     {
         using var db = dbFactory.CreateDbContext();
 
-        // All enabled beats across all story nodes
+        // All enabled beats across all book nodes
         var beatRows = await db.BeatNodes
             .Where(bn => bn.IsEnabled)
             .Join(db.Beats, bn => bn.BeatId, b => b.Id, (bn, b) => new { b.Id, b.Text, bn.NodeId })

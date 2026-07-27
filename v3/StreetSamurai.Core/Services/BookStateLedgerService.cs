@@ -16,7 +16,7 @@ namespace StreetSamurai.Core.Services;
 ///
 /// Write path: ExtractAndRecordAsync fires fire-and-forget after each beat via ProseWriterRouter,
 ///   sending a cheap Haiku call to extract state transitions from the new prose.
-/// Read path: BuildContextAsync returns a compact "STORY PLOT STATE" block injected into every
+/// Read path: BuildContextAsync returns a compact "BOOK PLOT STATE" block injected into every
 ///   BeatContext as PlotEventsContext — a per-beat arc-memory snapshot.
 ///
 /// State machine reference per StateType:
@@ -27,10 +27,10 @@ namespace StreetSamurai.Core.Services;
 ///   Alliance        : Active → Strained → Broken | Restored
 ///   Information     : Hidden → Revealed → Confirmed | Contested
 /// </summary>
-public class StoryStateLedgerService(
+public class BookStateLedgerService(
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,
     ILlmService llm,
-    ILogger<StoryStateLedgerService> log)
+    ILogger<BookStateLedgerService> log)
 {
     // ── Terminal (done) state values ────────────────────────────────────────
     // These states are final — the context block marks them DO-NOT-REOPEN.
@@ -57,7 +57,7 @@ public class StoryStateLedgerService(
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        db.StoryPlotEvents.Add(new StoryPlotEvent
+        db.BookPlotEvents.Add(new BookPlotEvent
         {
             Id         = Guid.CreateVersion7(),
             NodeId     = nodeId,
@@ -132,7 +132,7 @@ public class StoryStateLedgerService(
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "StoryStateLedger: LLM extraction failed for beat {BeatId}", beatId);
+            log.LogWarning(ex, "BookStateLedger: LLM extraction failed for beat {BeatId}", beatId);
             return;
         }
 
@@ -166,11 +166,11 @@ public class StoryStateLedgerService(
                 && TerminalStates.Contains(prev.NewValue)
                 && !verb.Equals("reopen", StringComparison.OrdinalIgnoreCase))
             {
-                log.LogDebug("StoryStateLedger: skipping {Key} — already in terminal state {State}", stateKey, prev.NewValue);
+                log.LogDebug("BookStateLedger: skipping {Key} — already in terminal state {State}", stateKey, prev.NewValue);
                 continue;
             }
 
-            db.StoryPlotEvents.Add(new StoryPlotEvent
+            db.BookPlotEvents.Add(new BookPlotEvent
             {
                 Id        = Guid.CreateVersion7(),
                 NodeId    = nodeId,
@@ -187,21 +187,21 @@ public class StoryStateLedgerService(
         }
 
         try { await db.SaveChangesAsync(ct); }
-        catch (Exception ex) { log.LogWarning(ex, "StoryStateLedger: save failed for beat {BeatId}", beatId); }
+        catch (Exception ex) { log.LogWarning(ex, "BookStateLedger: save failed for beat {BeatId}", beatId); }
     }
 
     // ── Read ────────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Returns the latest StoryPlotEvent per StateKey for this node (current arc state snapshot).
+    /// Returns the latest BookPlotEvent per StateKey for this node (current arc state snapshot).
     /// Dictionary keyed by StateKey.
     /// </summary>
-    public async Task<Dictionary<string, StoryPlotEvent>> GetCurrentStateAsync(
+    public async Task<Dictionary<string, BookPlotEvent>> GetCurrentStateAsync(
         Guid nodeId,
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var all = await db.StoryPlotEvents
+        var all = await db.BookPlotEvents
             .AsNoTracking()
             .Where(e => e.NodeId == nodeId)
             .OrderBy(e => e.CreatedAt)
@@ -225,7 +225,7 @@ public class StoryStateLedgerService(
         if (state.Count == 0) return "";
 
         var sb = new StringBuilder();
-        sb.AppendLine("STORY PLOT STATE — arc-level facts established across all beats so far:");
+        sb.AppendLine("BOOK PLOT STATE — arc-level facts established across all beats so far:");
 
         // Group by StateType for readability; terminal states flagged as closed.
         var groups = state.Values
@@ -259,9 +259,9 @@ public class StoryStateLedgerService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         const string ddl = """
-            IF OBJECT_ID('dbo.StoryPlotEvents','U') IS NULL
+            IF OBJECT_ID('dbo.BookPlotEvents','U') IS NULL
             BEGIN
-                CREATE TABLE [dbo].[StoryPlotEvents] (
+                CREATE TABLE [dbo].[BookPlotEvents] (
                     [Id]         UNIQUEIDENTIFIER NOT NULL,
                     [NodeId]     UNIQUEIDENTIFIER NOT NULL,
                     [BeatId]     UNIQUEIDENTIFIER NULL,
@@ -273,14 +273,14 @@ public class StoryStateLedgerService(
                     [NewValue]   NVARCHAR(100) NOT NULL,
                     [Source]     NVARCHAR(50)  NOT NULL DEFAULT 'auto',
                     [CreatedAt]  DATETIME2(7)  NOT NULL DEFAULT SYSUTCDATETIME(),
-                    CONSTRAINT [PK_StoryPlotEvents] PRIMARY KEY ([Id]),
-                    CONSTRAINT [FK_StoryPlotEvents_Nodes_NodeId]
+                    CONSTRAINT [PK_BookPlotEvents] PRIMARY KEY ([Id]),
+                    CONSTRAINT [FK_BookPlotEvents_Nodes_NodeId]
                         FOREIGN KEY ([NodeId]) REFERENCES [dbo].[Nodes]([Id]) ON DELETE CASCADE
                 );
-                CREATE INDEX [IX_StoryPlotEvents_NodeId_StateKey]
-                    ON [dbo].[StoryPlotEvents]([NodeId], [StateKey]);
-                CREATE INDEX [IX_StoryPlotEvents_NodeId_CreatedAt]
-                    ON [dbo].[StoryPlotEvents]([NodeId], [CreatedAt]);
+                CREATE INDEX [IX_BookPlotEvents_NodeId_StateKey]
+                    ON [dbo].[BookPlotEvents]([NodeId], [StateKey]);
+                CREATE INDEX [IX_BookPlotEvents_NodeId_CreatedAt]
+                    ON [dbo].[BookPlotEvents]([NodeId], [CreatedAt]);
             END;
             """;
         await db.Database.ExecuteSqlRawAsync(ddl, ct);

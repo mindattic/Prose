@@ -73,7 +73,7 @@ public class SanityScanService(IDbContextFactory<StreetSamuraiDbContext> dbFacto
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        // Load the node + its ordered beats (same pattern as StoryAuditService)
+        // Load the node + its ordered beats (same pattern as BookAuditService)
         var node = await db.Nodes
             .AsNoTracking()
             .Include(s => s.BeatNodes)

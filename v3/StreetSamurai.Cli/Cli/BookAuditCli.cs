@@ -7,7 +7,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// ss --story-audit --slug &lt;nodeSlug&gt; [--json]
+/// ss --book-audit --slug &lt;nodeSlug&gt; [--json]
 ///
 /// Audits a node against its 7 commandments:
 ///   • Gateway commandments — when PreviousNodeId is null (standalone / first in series)
@@ -18,7 +18,7 @@ namespace StreetSamurai.Cli;
 ///
 /// Exit codes: 0 = all pass, 1 = warnings only, 2 = blocking failures.
 /// </summary>
-public static class StoryAuditCli
+public static class BookAuditCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -32,11 +32,11 @@ public static class StoryAuditCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --story-audit --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: ss --book-audit --slug <nodeSlug> [--json]");
             return 2;
         }
 
-        var auditSvc  = services.GetRequiredService<StoryAuditService>();
+        var auditSvc  = services.GetRequiredService<BookAuditService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
@@ -52,7 +52,7 @@ public static class StoryAuditCli
         var mode = isSequel ? "sequel" : "gateway";
 
         if (!jsonMode)
-            Console.WriteLine($"Auditing '{node.Title}' as {mode.ToUpperInvariant()} story — running 7 commandment checks…\n");
+            Console.WriteLine($"Auditing '{node.Title}' as {mode.ToUpperInvariant()} book — running 7 commandment checks…\n");
 
         var report = await auditSvc.AuditAsync(node.Id);
 

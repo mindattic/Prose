@@ -12,12 +12,12 @@ namespace StreetSamurai.Core.Services;
 public record NodeDocResult(string NodeCode, int BeatCount, bool HasBlueprint, string Path, DateTime GeneratedAt);
 
 /// <summary>
-/// Assembles the unified Story Context Document — hand-authored NodeBible content
+/// Assembles the unified Book Context Document — hand-authored NodeBible content
 /// plus generated Structural Blueprint and Beat Spine sections — and writes it to
 /// both <c>Nodes.NodeBible</c> (DB) and <c>docs/nodes/{CODE}.md</c> (disk mirror).
 ///
 /// The disk file is a generated read-only view; never hand-edit it.
-/// Edit hand-authored content via <c>set_story_bible</c> MCP, then re-run.
+/// Edit hand-authored content via <c>set_book_bible</c> MCP, then re-run.
 /// </summary>
 public class NodeDocService
 {
@@ -53,8 +53,8 @@ public class NodeDocService
         // Preserve hand-authored content; strip any prior generated sections
         var handAuthored = ExtractHandAuthored(node.NodeBible);
         if (string.IsNullOrWhiteSpace(handAuthored))
-            handAuthored = $"# Story Context: {node.Title} ({nodeCode})\n\n" +
-                           $"_No hand-authored content yet. Use `set_story_bible` MCP to add arc, characters, voice register, and narrative locks._\n";
+            handAuthored = $"# Book Context: {node.Title} ({nodeCode})\n\n" +
+                           $"_No hand-authored content yet. Use `set_book_bible` MCP to add arc, characters, voice register, and narrative locks._\n";
 
         // Load generated data
         var blueprint = await blueprintService.GetAsync(nodeId, ct);
@@ -257,7 +257,7 @@ public class NodeDocService
         }
         else
         {
-            // Direct beats on story node — use IsChapterStart to detect chapter boundaries
+            // Direct beats on book node — use IsChapterStart to detect chapter boundaries
             var beats = await db.BeatNodes
                 .Where(bn => bn.NodeId == nodeId && bn.IsEnabled)
                 .OrderBy(bn => bn.SortKey)

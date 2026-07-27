@@ -4,14 +4,14 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Generates XKCD-style narrative chart data for a story node.
+/// Generates XKCD-style narrative chart data for a book node.
 ///
 /// Inspired by Randall Munroe's "Movie Narrative Charts" — each character is a flowing
-/// line through the story's timeline. Lines that are close together (or touching) mean
+/// line through the book's timeline. Lines that are close together (or touching) mean
 /// the characters share a scene. Lines that diverge mean characters are separated.
 /// Events are labeled at key inflection points.
 ///
-/// At each beat (a temporal cross-section of the story):
+/// At each beat (a temporal cross-section of the book):
 ///   ONSCREEN characters  — active in the current scene; their lines converge.
 ///   OFFSCREEN characters — doing things in parallel that build toward their next
 ///                          emergence into an onscreen moment. Their line flows
@@ -43,7 +43,7 @@ public class NarrativeChartService(IDbContextFactory<StreetSamuraiDbContext> dbF
         int TrackIndex);
 
     /// <summary>
-    /// One labeled event on the narrative chart — a major inflection point in the story.
+    /// One labeled event on the narrative chart — a major inflection point in the book.
     /// </summary>
     public record ChartEvent(
         int BeatIndex,
@@ -53,7 +53,7 @@ public class NarrativeChartService(IDbContextFactory<StreetSamuraiDbContext> dbF
 
     /// <summary>
     /// A single beat's cross-section through the narrative chart.
-    /// Shows the state of every tracked character at this moment in story time.
+    /// Shows the state of every tracked character at this moment in book time.
     /// </summary>
     public record BeatCrossSection(
         int BeatIndex,
@@ -64,7 +64,7 @@ public class NarrativeChartService(IDbContextFactory<StreetSamuraiDbContext> dbF
         IReadOnlyList<ChartEvent> Events);
 
     /// <summary>
-    /// Complete narrative chart data for a story node.
+    /// Complete narrative chart data for a book node.
     /// Contains the full timeline of cross-sections — one per beat.
     /// </summary>
     public record NarrativeChart(
@@ -93,13 +93,13 @@ public class NarrativeChartService(IDbContextFactory<StreetSamuraiDbContext> dbF
             .FirstOrDefaultAsync(ct)
             ?? throw new ArgumentException($"Node {nodeId} not found.");
 
-        // SS-A43: beats live on chapter children for book-mode stories.
+        // SS-A43: beats live on chapter children for book-mode books.
         var childIds = await db.Nodes.AsNoTracking()
             .Where(n => n.ParentNodeId == nodeId)
             .Select(n => n.Id).ToListAsync(ct);
         var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
 
-        // Load beats for this node in story order (via BeatNode join to Beat)
+        // Load beats for this node in book order (via BeatNode join to Beat)
         var beatRows = await db.BeatNodes
             .AsNoTracking()
             .Where(nb => beatNodeIds.Contains(nb.NodeId) && nb.IsEnabled)

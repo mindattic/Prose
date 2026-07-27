@@ -8,20 +8,20 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.UnitTests;
 
 /// <summary>
-/// Pins the 2026-06-23 fix where StoryAuditService audits a BOOK node against
+/// Pins the 2026-06-23 fix where BookAuditService audits a BOOK node against
 /// its live child-chapter prose instead of the book node's own beats (which
 /// for legacy books still hold an old condensed/outline draft). A capturing fake
 /// ILlmService records the exact prose handed to each commandment check so we can
 /// assert which text was audited — no real model calls, no network.
 /// </summary>
 [TestFixture]
-public class StoryAuditChapterAssemblyTests
+public class BookAuditChapterAssemblyTests
 {
     private string tempRoot = "";
     private TestPathProviderWithRoot paths = null!;
     private IDbContextFactory<StreetSamuraiDbContext> dbFactory = null!;
     private CapturingLlmService llm = null!;
-    private StoryAuditService svc = null!;
+    private BookAuditService svc = null!;
     private int beatNumber;
 
     [SetUp]
@@ -32,7 +32,7 @@ public class StoryAuditChapterAssemblyTests
         paths = new TestPathProviderWithRoot(tempRoot);
         dbFactory = TestDbFactory.For(paths, "nodes");
         llm = new CapturingLlmService();
-        svc = new StoryAuditService(llm, new PlantPayoffService(dbFactory), dbFactory);
+        svc = new BookAuditService(llm, new PlantPayoffService(dbFactory), dbFactory);
     }
 
     [TearDown]

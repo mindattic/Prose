@@ -17,7 +17,7 @@ public class BeatGeneratorService
     private readonly ActionConfigService? actionConfig;
     private readonly IUniverseContext? universe;
     private readonly PlantPayoffService? plantPayoffs;
-    private readonly StoryAuditService? storyAudit;
+    private readonly BookAuditService? bookAudit;
     private readonly UniversalFactsService? universalFacts;
 
     public BeatGeneratorService(
@@ -30,7 +30,7 @@ public class BeatGeneratorService
         ActionConfigService? actionConfig = null,
         IUniverseContext? universe = null,
         PlantPayoffService? plantPayoffs = null,
-        StoryAuditService? storyAudit = null,
+        BookAuditService? bookAudit = null,
         UniversalFactsService? universalFacts = null)
     {
         this.llm = llm;
@@ -42,7 +42,7 @@ public class BeatGeneratorService
         this.actionConfig = actionConfig;
         this.universe = universe;
         this.plantPayoffs = plantPayoffs;
-        this.storyAudit = storyAudit;
+        this.bookAudit = bookAudit;
         this.universalFacts = universalFacts;
     }
 
@@ -77,9 +77,9 @@ public class BeatGeneratorService
         // scene. Empty when the prose-embedding cache is cold.
         var anchorBlock = await BuildBeatAnchorsAsync(context, ct);
 
-        // Universal world facts — always injected regardless of which story is being written.
-        // Facts that apply to every story in this universe (transport mechanics, vocabulary,
-        // social structure) live here rather than in per-story bibles.
+        // Universal world facts — always injected regardless of which book is being written.
+        // Facts that apply to every book in this universe (transport mechanics, vocabulary,
+        // social structure) live here rather than in per-book bibles.
         var worldFactsBlock = universalFacts != null
             ? await universalFacts.BuildWorldFactsBlockAsync(ct)
             : "";
@@ -94,10 +94,10 @@ public class BeatGeneratorService
             catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
         }
 
-        // Story commandment context: gateway (null PreviousNodeId) or sequel
+        // Book commandment context: gateway (null PreviousNodeId) or sequel
         // commandments, injected as writing goals for this node.
         var commandmentBlock = "";
-        if (storyAudit != null && context.NodeId != Guid.Empty)
+        if (bookAudit != null && context.NodeId != Guid.Empty)
         {
             try
             {
@@ -107,7 +107,7 @@ public class BeatGeneratorService
                     .Select(x => new { x.PreviousNodeId, x.UniverseId })
                     .FirstOrDefaultAsync(ct);
                 if (s != null)
-                    commandmentBlock = storyAudit.BuildCommandmentContext(s.PreviousNodeId.HasValue, s.UniverseId);
+                    commandmentBlock = bookAudit.BuildCommandmentContext(s.PreviousNodeId.HasValue, s.UniverseId);
             }
             catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
         }
@@ -172,7 +172,7 @@ public class BeatGeneratorService
             ? context.EntityPreCheckWarnings
             : "";
 
-        // Stable prefix: content identical for every beat in the same story session.
+        // Stable prefix: content identical for every beat in the same book session.
         // Sent as an Anthropic ephemeral cache block — 60-80% input token saving after beat 1.
         var stablePrefix = $"""
             {UniverseLine()}{worldFactsBlock}
@@ -182,7 +182,7 @@ public class BeatGeneratorService
             blind_spots, secret. Specific named things, not abstract archetypes. Do NOT use bracketed
             tags like [WOUND] or [IDEAL] — those are retired.
 
-            STORY BIBLE AND LITERARY RULES:
+            BOOK BIBLE AND LITERARY RULES:
             {context.StoryBibleContext}{commandmentBlock}{storyScienceBlock}
             """;
 
@@ -881,7 +881,7 @@ public record BeatContext
     /// <summary>
     /// Node this beat belongs to. When set, BeatGeneratorService injects:
     ///   - active plant/payoff pairs (PlantPayoffService)
-    ///   - gateway or sequel commandments (StoryAuditService, per PreviousNodeId)
+    ///   - gateway or sequel commandments (BookAuditService, per PreviousNodeId)
     /// Leave as Guid.Empty to skip both injections (legacy callers).
     /// </summary>
     public Guid NodeId { get; init; }
@@ -905,7 +905,7 @@ public record BeatContext
 
     /// <summary>
     /// Doc Context Stack (DocContextService): the rotating cast of pertinent canon .md docs for
-    /// this beat — the universal always-tier core, the story's node bible + register, and any
+    /// this beat — the universal always-tier core, the book's node bible + register, and any
     /// topic docs triggered by the beat goal/scene. Empty when DocContextService is not wired or
     /// NodeId is empty. Injected by ProseWriterRouter alongside EntityStackContext.
     /// </summary>
@@ -952,7 +952,7 @@ public record BeatContext
     // ── New ProseWriterRouter enrichment fields (SS-A29) ─────────────────────
 
     /// <summary>Character state constraints from ConsequenceService + ConsequenceEngine.
-    /// Gear, cyberware, status, and cross-story persistent consequences — hard constraints injected before generation.</summary>
+    /// Gear, cyberware, status, and cross-book persistent consequences — hard constraints injected before generation.</summary>
     public string ConsequenceContext { get; init; } = "";
 
     /// <summary>Ambient anomaly texture from AmbientAnomalyService.
@@ -987,13 +987,13 @@ public record BeatContext
     public string OpenThreadsContext { get; init; } = "";
 
     /// <summary>
-    /// Arc-level plot state snapshot from StoryStateLedgerService.
+    /// Arc-level plot state snapshot from BookStateLedgerService.
     /// Named plot states (crises, dramatic questions, objectives, threats, alliances,
     /// information reveals) with their current status — Open, Escalated, Resolved, etc.
     /// Terminal states (Resolved, Answered, Achieved, Failed) are flagged do-not-reopen
     /// so the generator cannot accidentally re-open a settled crisis or repeat a completed
     /// objective. The core fix for the BLST-style crisis-amnesia pattern.
-    /// Empty when StoryStateLedgerService is not wired or no events exist yet.
+    /// Empty when BookStateLedgerService is not wired or no events exist yet.
     /// </summary>
     public string PlotEventsContext { get; init; } = "";
 

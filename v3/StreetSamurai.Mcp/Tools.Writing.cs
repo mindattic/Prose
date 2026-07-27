@@ -34,8 +34,8 @@ public class WritingTools
         this.chapters = chapters;
     }
 
-    /// <summary>Create or upsert a legacy Book record (retired Book/Chapter schema — new work uses create_series / create_story).</summary>
-    [McpServerTool, Description("LEGACY Book/Chapter schema — new work should use create_series / create_story instead. Create or upsert a Book record. Pass an empty id to create a new book (a v7 GUID is assigned and returned); pass a known id to update an existing book. Returns the persisted Book including assigned id.")]
+    /// <summary>Create or upsert a legacy Book record (retired Book/Chapter schema — new work uses create_series / create_book).</summary>
+    [McpServerTool, Description("LEGACY Book/Chapter schema — new work should use create_series / create_book instead. Create or upsert a Book record. Pass an empty id to create a new book (a v7 GUID is assigned and returned); pass a known id to update an existing book. Returns the persisted Book including assigned id.")]
     public string CreateLegacyBook(
         [Description("Book title. Required.")] string title,
         [Description("One-paragraph premise — feeds the chapter director when extending.")] string premise,

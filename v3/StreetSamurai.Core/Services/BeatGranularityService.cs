@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 /// (MERGE) relative to the 4,000–7,500 char (~800–1,500 word) dramatic-scene target.
 ///
 /// The target is empirically grounded:
-///   - Stories in range (STSH, ATTE, BLST, TEST) cluster at InterBeatSD ≈ 0.45–0.49.
+///   - Books in range (STSH, ATTE, BLST, TEST) cluster at InterBeatSD ≈ 0.45–0.49.
 ///   - BCODA (avg 1,621 chars) and DWIACE (avg 905 chars) are too fine — fragments
 ///     lack a complete goal/conflict/outcome arc.
 ///   - VIGL (avg 21,855 chars) is too coarse — a poor-scoring beat requires rewriting
@@ -36,7 +36,7 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
 
     // ── Public analysis ───────────────────────────────────────────────────────
 
-    /// <summary>Analyse one story by NodeCode or Slug. Returns null if not found.</summary>
+    /// <summary>Analyse one book by NodeCode or Slug. Returns null if not found.</summary>
     public async Task<BeatGranularityReport?> AnalyzeAsync(
         string nodeCodeOrSlug, CancellationToken ct = default)
     {
@@ -48,7 +48,7 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
         return node is null ? null : await BuildReportAsync(db, node, ct);
     }
 
-    /// <summary>Analyse one story by its DB identifier. Returns null if not found.</summary>
+    /// <summary>Analyse one book by its DB identifier. Returns null if not found.</summary>
     public async Task<BeatGranularityReport?> AnalyzeByIdAsync(
         Guid nodeId, CancellationToken ct = default)
     {
@@ -57,18 +57,18 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
         return node is null ? null : await BuildReportAsync(db, node, ct);
     }
 
-    /// <summary>Analyse all story nodes. Ordered by NodeCode.</summary>
+    /// <summary>Analyse all book nodes. Ordered by NodeCode.</summary>
     public async Task<List<BeatGranularityReport>> AnalyzeAllAsync(CancellationToken ct = default)
     {
         await using var db = await factory.CreateDbContextAsync(ct);
-        var stories = await db.Nodes
+        var books = await db.Nodes
             .Where(n => n.Kind == "book")
             .OrderBy(n => n.NodeCode)
             .ToListAsync(ct);
 
-        var results = new List<BeatGranularityReport>(stories.Count);
-        foreach (var story in stories)
-            results.Add(await BuildReportAsync(db, story, ct));
+        var results = new List<BeatGranularityReport>(books.Count);
+        foreach (var book in books)
+            results.Add(await BuildReportAsync(db, book, ct));
         return results;
     }
 
@@ -112,16 +112,16 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
     // ── Internal ─────────────────────────────────────────────────────────────
 
     private static async Task<BeatGranularityReport> BuildReportAsync(
-        StreetSamuraiDbContext db, Node story, CancellationToken ct)
+        StreetSamuraiDbContext db, Node book, CancellationToken ct)
     {
-        // 1. Chapter children (direct children of the story node)
+        // 1. Chapter children (direct children of the book node)
         var chapterIds = await db.Nodes
-            .Where(n => n.ParentNodeId == story.Id)
+            .Where(n => n.ParentNodeId == book.Id)
             .Select(n => n.Id)
             .ToListAsync(ct);
 
         if (chapterIds.Count == 0)
-            return EmptyReport(story);
+            return EmptyReport(book);
 
         // 2. Enabled beats ordered by position — char count from Text.Length → LEN()
         var beatRows = await db.BeatNodes
@@ -132,7 +132,7 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
             .ToListAsync(ct);
 
         if (beatRows.Count == 0)
-            return EmptyReport(story);
+            return EmptyReport(book);
 
         // 3. Optional word counts from BeatProseMetrics
         var beatIds = beatRows.Select(r => r.Id).ToList();
@@ -143,7 +143,7 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
 
         // 4. Optional review score stats
         var reviewIds = await db.NodeReviews
-            .Where(r => r.NodeId == story.Id)
+            .Where(r => r.NodeId == book.Id)
             .Select(r => r.Id)
             .ToListAsync(ct);
 
@@ -186,17 +186,17 @@ public class BeatGranularityService(IDbContextFactory<StreetSamuraiDbContext> fa
 
         var charList = entries.Select(e => (double)e.CharCount).ToList();
         return new BeatGranularityReport(
-            NodeId:      story.Id,
-            NodeCode:    story.NodeCode ?? story.Slug,
-            Title:       story.Title,
+            NodeId:      book.Id,
+            NodeCode:    book.NodeCode ?? book.Slug,
+            Title:       book.Title,
             Beats:       entries,
             AvgChars:    charList.Average(),
             StdDevChars: StdDev(charList),
             ScoreStats:  scoreStats);
     }
 
-    private static BeatGranularityReport EmptyReport(Node story) =>
-        new(story.Id, story.NodeCode ?? story.Slug, story.Title,
+    private static BeatGranularityReport EmptyReport(Node book) =>
+        new(book.Id, book.NodeCode ?? book.Slug, book.Title,
             [], 0, 0, null);
 }
 
@@ -229,7 +229,7 @@ public record BeatGranularityEntry(
     int           WordCount,
     BeatSizeLabel Label);
 
-/// <summary>Full granularity report for one story node.</summary>
+/// <summary>Full granularity report for one book node.</summary>
 public record BeatGranularityReport(
     Guid                     NodeId,
     string                   NodeCode,
@@ -245,7 +245,7 @@ public record BeatGranularityReport(
 
     /// <summary>
     /// Estimated optimal beat count: TotalChars / target midpoint (5,750 chars).
-    /// Shows how many beats this story would have if every beat were at mid-range.
+    /// Shows how many beats this book would have if every beat were at mid-range.
     /// </summary>
     public int EstimatedOptimalCount
     {

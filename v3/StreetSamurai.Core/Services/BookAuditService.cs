@@ -8,7 +8,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 // ─────────────────────────────────────────────────────────────────────────────
-// StoryAuditService
+// BookAuditService
 //
 // Audits a node against the 7 Gateway Commandments (standalone / first-in-
 // series) or the 7 Sequel Commandments (when PreviousNodeId is set).
@@ -25,7 +25,7 @@ namespace StreetSamurai.Core.Services;
 // the short one") are enriched with actual PlantPayoff registry data.
 // ─────────────────────────────────────────────────────────────────────────────
 
-public class StoryAuditService(
+public class BookAuditService(
     ILlmService llm,
     PlantPayoffService plantPayoffs,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
@@ -137,20 +137,20 @@ public class StoryAuditService(
          "bare acronym is preferred — do not re-expand."),
 
         ("pay_previous_due",
-         "Pay the previous story its due, then move",
+         "Pay the previous book its due, then move",
          "Acknowledge the cost or victory the reader is carrying from last time — one beat that confirms it mattered and stuck " +
          "— then turn forward. Readers came back partly to see that the previous ending had weight. Honor it briefly; don't relitigate it."),
 
         ("open_door_left_ajar",
          "Open the door the last ending left ajar",
-         "A sequel inherits a pull — the 'what happens in this city' the previous story planted. Name that thread early so the " +
+         "A sequel inherits a pull — the 'what happens in this city' the previous book planted. Name that thread early so the " +
          "returning reader feels the continuity, then complicate it. The reward for coming back is seeing the question they left " +
          "with get bigger, not just answered."),
 
         ("reward_long_memory",
          "Reward the long memory without taxing the short one",
          "The deepest payoffs can reach back across stories — a callback that lands hard for the reader who remembers, invisible " +
-         "to the one who doesn't. But the current story must stand on its own; never make this installment's comprehension depend " +
+         "to the one who doesn't. But the current book must stand on its own; never make this installment's comprehension depend " +
          "on remembering the last. Continuity is a gift to the faithful, not a toll on the rest."),
 
         ("escalate_not_repeat",
@@ -162,7 +162,7 @@ public class StoryAuditService(
 
     // ── Public API ────────────────────────────────────────────────────────────
 
-    public async Task<StoryAuditReport> AuditAsync(Guid nodeId, CancellationToken ct = default)
+    public async Task<BookAuditReport> AuditAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes
@@ -216,7 +216,7 @@ public class StoryAuditService(
             previousTitle = prev != null ? $"{prev.Title} ({prev.Slug})" : node.PreviousNodeId.ToString();
         }
 
-        return new StoryAuditReport(
+        return new BookAuditReport(
             NodeSlug:      node.Slug,
             NodeTitle:     node.Title,
             Mode:            mode,
@@ -239,7 +239,7 @@ public class StoryAuditService(
             ? p
             : p[..50000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50000..];
 
-    async Task<StoryAuditCheck> CheckCommandmentAsync(
+    async Task<BookAuditCheck> CheckCommandmentAsync(
         string key,
         string title,
         string body,
@@ -287,7 +287,7 @@ public class StoryAuditService(
         {
             var raw = await llm.GenerateAsync(system, user, temperature: 0.2, maxTokens: 400, ct: ct);
             var parsed = ParseJson<AuditCheckRaw>(raw);
-            return new StoryAuditCheck(
+            return new BookAuditCheck(
                 Key:        key,
                 Title:      title,
                 Status:     parsed?.Status ?? "warn",
@@ -296,7 +296,7 @@ public class StoryAuditService(
         }
         catch (Exception ex)
         {
-            return new StoryAuditCheck(Key: key, Title: title, Status: "warn",
+            return new BookAuditCheck(Key: key, Title: title, Status: "warn",
                 Evidence: $"Evaluation failed: {ex.Message}", Fix: null);
         }
     }
@@ -342,19 +342,19 @@ public class StoryAuditService(
 
 // ── Result models ─────────────────────────────────────────────────────────────
 
-public record StoryAuditCheck(
+public record BookAuditCheck(
     string  Key,
     string  Title,
     string  Status,     // "pass" | "warn" | "fail"
     string  Evidence,
     string? Fix);
 
-public record StoryAuditReport(
+public record BookAuditReport(
     string             NodeSlug,
     string             NodeTitle,
     string             Mode,            // "gateway" | "sequel"
     string?            PreviousNode,
-    List<StoryAuditCheck> Checks,
+    List<BookAuditCheck> Checks,
     bool               GatewayReady,
     int                BlockingCount,
     int                AdvisoryCount,

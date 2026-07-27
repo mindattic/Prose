@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StreetSamurai.Core.Data;
 
@@ -11,9 +12,11 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Core.Migrations
 {
     [DbContext(typeof(StreetSamuraiDbContext))]
-    partial class StreetSamuraiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260727181022_RenameContinuityClaimStorySlugToBookSlug")]
+    partial class RenameContinuityClaimStorySlugToBookSlug
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1433,63 +1436,6 @@ namespace StreetSamurai.Core.Migrations
                         .IsUnique();
 
                     b.ToTable("BookChapterOrder");
-                });
-
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.BookPlotEvent", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("BeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("BeatIndex")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Label")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("NewValue")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<Guid>("NodeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Source")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("StateKey")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("StateType")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Verb")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NodeId", "CreatedAt");
-
-                    b.HasIndex("NodeId", "StateKey");
-
-                    b.ToTable("BookPlotEvents");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.BookProtagonist", b =>
@@ -8762,6 +8708,63 @@ namespace StreetSamurai.Core.Migrations
                     b.ToTable("Species");
                 });
 
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StoryPlotEvent", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("BeatIndex")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Label")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("NewValue")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Source")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("StateKey")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("StateType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Verb")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeId", "CreatedAt");
+
+                    b.HasIndex("NodeId", "StateKey");
+
+                    b.ToTable("StoryPlotEvents");
+                });
+
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StructuralReading", b =>
                 {
                     b.Property<Guid>("BeatId")
@@ -10583,17 +10586,6 @@ namespace StreetSamurai.Core.Migrations
                     b.Navigation("Chapter");
                 });
 
-            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.BookPlotEvent", b =>
-                {
-                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
-                        .WithMany()
-                        .HasForeignKey("NodeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Node");
-                });
-
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.BookProtagonist", b =>
                 {
                     b.HasOne("StreetSamurai.Core.Data.Entities.Book", "Book")
@@ -12405,6 +12397,17 @@ namespace StreetSamurai.Core.Migrations
                         .IsRequired();
 
                     b.Navigation("Entity");
+                });
+
+            modelBuilder.Entity("StreetSamurai.Core.Data.Entities.StoryPlotEvent", b =>
+                {
+                    b.HasOne("StreetSamurai.Core.Data.Entities.Node", "Node")
+                        .WithMany()
+                        .HasForeignKey("NodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Node");
                 });
 
             modelBuilder.Entity("StreetSamurai.Core.Data.Entities.Subsidiary", b =>

@@ -16,13 +16,13 @@ namespace StreetSamurai.Core.Services;
 /// CLI: ss --write-outline --slug &lt;slug&gt; [--skip-audit]
 /// MCP: write_outline
 /// </summary>
-public class StoryLogicAuditService(
+public class BookLogicAuditService(
     ILlmService llm,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     // ── Public API ───────────────────────────────────────────────────────────
 
-    public async Task<StoryLogicAuditResult> AuditAsync(
+    public async Task<BookLogicAuditResult> AuditAsync(
         Guid nodeId,
         bool includeLogicCheck = true,
         CancellationToken ct = default)
@@ -33,7 +33,7 @@ public class StoryLogicAuditService(
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        // Respect the same book/chapter hierarchy StoryAuditService uses.
+        // Respect the same book/chapter hierarchy BookAuditService uses.
         var childChapters = await db.Nodes.AsNoTracking()
             .Where(s => s.ParentNodeId == nodeId && s is ChapterNode)
             .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
@@ -60,7 +60,7 @@ public class StoryLogicAuditService(
                 .ToList() ?? []);
 
         if (indexedBeats.Count == 0)
-            return new StoryLogicAuditResult
+            return new BookLogicAuditResult
             {
                 NodeId = nodeId, Title = node.Title, BeatCount = 0,
                 Outline = "(No enabled beats found.)", Findings = []
@@ -72,7 +72,7 @@ public class StoryLogicAuditService(
             ? await RunLogicAuditAsync(node.Title, corpus, ct)
             : [];
 
-        return new StoryLogicAuditResult
+        return new BookLogicAuditResult
         {
             NodeId = nodeId,
             Title    = node.Title,
@@ -108,7 +108,7 @@ public class StoryLogicAuditService(
             - Do not editorialize or praise; just describe
             - Note the protagonist's key decisions (not just events)
             """;
-        var user = $"Story: \"{title}\"\n\nBeats:\n{corpus}";
+        var user = $"Book: \"{title}\"\n\nBeats:\n{corpus}";
         return await llm.GenerateAsync(system, user, temperature: 0.3, maxTokens: 8192, ct: ct);
     }
 
@@ -146,7 +146,7 @@ public class StoryLogicAuditService(
             Only report a finding if you can point to a specific beat and describe exactly what is wrong.
             Do not hallucinate findings. When uncertain, err toward fewer findings.
             """;
-        var user = $"Story: \"{title}\"\n\nBeats:\n{corpus}";
+        var user = $"Book: \"{title}\"\n\nBeats:\n{corpus}";
         string raw;
         try { raw = await llm.GenerateAsync(system, user, temperature: 0.1, maxTokens: 8192, ct: ct); }
         catch { return []; }
@@ -177,7 +177,7 @@ public class StoryLogicAuditService(
 
 // ── Result types ──────────────────────────────────────────────────────────────
 
-public class StoryLogicAuditResult
+public class BookLogicAuditResult
 {
     public Guid   NodeId  { get; init; }
     public string Title     { get; init; } = "";

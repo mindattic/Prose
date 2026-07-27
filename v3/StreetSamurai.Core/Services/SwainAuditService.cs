@@ -24,7 +24,7 @@ public sealed record SwainBeatResult(
     public bool IsPass => Severity.Length == 0;
 }
 
-/// <summary>Swain audit results for one story node.</summary>
+/// <summary>Swain audit results for one book node.</summary>
 public sealed record SwainAuditReport(
     Guid   NodeId,
     string NodeCode,
@@ -41,7 +41,7 @@ public sealed record SwainAuditReport(
 // ── Service ───────────────────────────────────────────────────────────────────
 
 /// <summary>
-/// Classifies every enabled beat in a story against Dwight Swain's Scene/Sequel
+/// Classifies every enabled beat in a book against Dwight Swain's Scene/Sequel
 /// doctrine using a fast Haiku pass, then optionally splices in the missing
 /// structural element (disaster turn, decision, etc.) with Sonnet.
 ///
@@ -104,7 +104,7 @@ public sealed class SwainAuditService(
             .Where(n => n.Kind == "book" && (n.Slug == slugOrCode || n.NodeCode == slugOrCode))
             .Select(n => new { n.Id, Code = n.NodeCode ?? n.Slug ?? "", n.Title })
             .FirstOrDefaultAsync(ct)
-            ?? throw new InvalidOperationException($"Story node not found: '{slugOrCode}'");
+            ?? throw new InvalidOperationException($"Book node not found: '{slugOrCode}'");
         return await AuditNodeAsync(node.Id, node.Code, node.Title ?? "", classifyModel, ct);
     }
 
@@ -193,8 +193,8 @@ public sealed class SwainAuditService(
         Guid nodeId, string nodeCode, string title, string? classifyModel, CancellationToken ct)
     {
         // Load all beats first (single query) — DbContext is not thread-safe.
-        // Beats live on chapter-child nodes (SS-A43), not directly on the story node.
-        // Collect the story node itself + all direct chapter children, then query BeatNodes.
+        // Beats live on chapter-child nodes (SS-A43), not directly on the book node.
+        // Collect the book node itself + all direct chapter children, then query BeatNodes.
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var scopeIds = await db.Nodes
             .Where(n => n.Id == nodeId || n.ParentNodeId == nodeId)

@@ -5,8 +5,8 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// <c>ss --create-story</c> — create a new empty root node (no beats). The
-/// bible-first entry point for a brand-new story; write the bible + beats
+/// <c>ss --create-book</c> — create a new empty root node (no beats). The
+/// bible-first entry point for a brand-new book; write the bible + beats
 /// afterward (UI, <c>--edit-beat</c>, or <c>--write-story</c>).
 ///
 ///   --title "..."          Display title. Required.
@@ -43,8 +43,8 @@ public static class CreateNodeCli
 
         if (string.IsNullOrWhiteSpace(title))
         {
-            Console.Error.WriteLine("[create-story] --title is required.");
-            Console.Error.WriteLine("Usage: ss --create-story --title \"...\" [--code SRZR] [--kind story] [--description \"...\"] [--logline \"...\"] [--previous <slug|id>] [--parent <slug|id>]");
+            Console.Error.WriteLine("[create-book] --title is required.");
+            Console.Error.WriteLine("Usage: ss --create-book --title \"...\" [--code SRZR] [--kind book] [--description \"...\"] [--logline \"...\"] [--previous <slug|id>] [--parent <slug|id>]");
             return 2;
         }
 
@@ -54,13 +54,13 @@ public static class CreateNodeCli
         Guid? previousId = await ResolveNodeAsync(dbFactory, previous);
         if (previous != null && previousId == null)
         {
-            Console.Error.WriteLine($"[create-story] --previous node not found: {previous}");
+            Console.Error.WriteLine($"[create-book] --previous node not found: {previous}");
             return 1;
         }
         Guid? parentId = await ResolveNodeAsync(dbFactory, parent);
         if (parent != null && parentId == null)
         {
-            Console.Error.WriteLine($"[create-story] --parent node not found: {parent}");
+            Console.Error.WriteLine($"[create-book] --parent node not found: {parent}");
             return 1;
         }
 
@@ -69,7 +69,7 @@ public static class CreateNodeCli
             var (id, slug) = await workbench.CreateNodeAsync(
                 title!, kind, description, seed, code, previousId, parentId);
 
-            Console.WriteLine($"[create-story] Created node:");
+            Console.WriteLine($"[create-book] Created node:");
             Console.WriteLine($"   Id:    {id}");
             Console.WriteLine($"   Slug:  {slug}");
             Console.WriteLine($"   Title: {title}");
@@ -81,7 +81,7 @@ public static class CreateNodeCli
         }
         catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
         {
-            Console.Error.WriteLine($"[create-story] {ex.Message}");
+            Console.Error.WriteLine($"[create-book] {ex.Message}");
             return 1;
         }
     }

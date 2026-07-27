@@ -62,18 +62,18 @@ public class NodeTools
         [Description("Optional one-line description (back-of-book text).")] string description = "")
         => CreateNodeCoreAsync(title, "series", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: "", code: code, previous: "");
 
-    [McpServerTool, Description("Create a BookNode — a single story arc (book / novella / standalone). Pass 'seed' to also generate a story bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.")]
-    public Task<string> CreateStory(
-        [Description("Story title. Required.")] string title,
+    [McpServerTool, Description("Create a BookNode — a single book arc (book / novella / standalone). Pass 'seed' to also generate a book bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.")]
+    public Task<string> CreateBook(
+        [Description("Book title. Required.")] string title,
         [Description("Optional back-of-book description.")] string description = "",
-        [Description("One-line generation seed. When provided, the story bible and planned beats are created immediately after the row is inserted.")] string seed = "",
+        [Description("One-line generation seed. When provided, the book bible and planned beats are created immediately after the row is inserted.")] string seed = "",
         [Description("Target beat count for the bible spine (only used when seed is provided). Default 12.")] int targetBeats = 12,
         [Description("Optional parent SeriesNode Guid id (or slug). Empty = standalone.")] string parentNodeIdOrSlug = "",
         [Description("Optional short author-assigned reference code (e.g. 'ATTE'). Uppercased, unique lookup key.")] string code = "",
-        [Description("Optional prior story this one continues (slug or GUID) — sequel commandments apply.")] string previous = "")
+        [Description("Optional prior book this one continues (slug or GUID) — sequel commandments apply.")] string previous = "")
         => CreateNodeCoreAsync(title, "book", description, seed, targetBeats, parentNodeIdOrSlug, code, previous);
 
-    [McpServerTool, Description("Create a ChapterNode under a story. Chapters hold beats and never carry a reference code. parentNodeIdOrSlug is REQUIRED. Returns the new id, slug, and url.")]
+    [McpServerTool, Description("Create a ChapterNode under a book. Chapters hold beats and never carry a reference code. parentNodeIdOrSlug is REQUIRED. Returns the new id, slug, and url.")]
     public Task<string> CreateChapter(
         [Description("Chapter title. Required.")] string title,
         [Description("Parent BookNode Guid id or slug. Required.")] string parentNodeIdOrSlug,
@@ -91,22 +91,15 @@ public class NodeTools
             .Where(s => s.Slug == slugOrId || s.NodeCode == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
     }
 
-    [McpServerTool, Description("List nodes. Use kind='story' to list all root narratives (includes both kind='story' and kind='book'); kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
-    public async Task<string> ListStories(
-        [Description("Optional Kind filter — 'story' (root nodes, includes book-kind too) or 'chapter' (sub-nodes with beats) or 'book' (book-only). Case-insensitive equality match.")] string kind = "",
+    [McpServerTool, Description("List nodes. Use kind='book' to list all root narratives; kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
+    public async Task<string> ListBooks(
+        [Description("Optional Kind filter — 'book' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.")] string kind = "",
         [Description("Maximum rows to return. Default 100.")] int limit = 100)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var q = db.Nodes.AsNoTracking();
         if (!string.IsNullOrWhiteSpace(kind))
-        {
-            // 'story' is the canonical caller-facing value for "root narrative node";
-            // include 'book' nodes too since they are root narratives with chapters.
-            if (kind.Equals("story", StringComparison.OrdinalIgnoreCase))
-                q = q.Where(s => s.Kind == "story" || s.Kind == "book");
-            else
-                q = q.Where(s => s.Kind == kind.ToLowerInvariant());
-        }
+            q = q.Where(s => s.Kind == kind.ToLowerInvariant());
         var rows = await q.OrderBy(s => s.Kind).ThenBy(s => s.Title).Take(limit).ToListAsync();
 
         var ids = rows.Select(r => r.Id).ToList();
@@ -131,7 +124,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, title, description).")]
-    public async Task<string> GetStory(
+    public async Task<string> GetBook(
         [Description("Node Guid id or slug.")] string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);
@@ -159,7 +152,7 @@ public class NodeTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Shared implementation behind CreateSeries / CreateStory / CreateChapter.</summary>
+    /// <summary>Shared implementation behind CreateSeries / CreateBook / CreateChapter.</summary>
     private async Task<string> CreateNodeCoreAsync(
         string title, string kind, string description, string seed,
         int targetBeats, string parentNodeIdOrSlug, string code, string previous)
@@ -183,7 +176,7 @@ public class NodeTools
         }
         else if (resolvedKind == "chapter")
         {
-            return JsonSerializer.Serialize(new { error = "kind_incompatible", message = "A chapter must have a parent story. Provide parentNodeIdOrSlug." }, CanonTools.JsonOpts);
+            return JsonSerializer.Serialize(new { error = "kind_incompatible", message = "A chapter must have a parent book. Provide parentNodeIdOrSlug." }, CanonTools.JsonOpts);
         }
 
         await using var db = await dbFactory.CreateDbContextAsync();
@@ -228,7 +221,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Deep-duplicate a node (and its sub-node tree) into a fresh, independent copy. Every beat is cloned into a new row — prose and narration metadata are preserved, but audio, review scores, and the stale flag are reset. Editing the copy never affects the original. Accepts a Guid id OR a slug. Returns the new node's id, slug, and writer URL.")]
-    public async Task<string> DuplicateStory(
+    public async Task<string> DuplicateBook(
         [Description("Source node Guid id or slug.")] string idOrSlug,
         [Description("Title for the new duplicate. Required.")] string newTitle)
     {
@@ -241,8 +234,8 @@ public class NodeTools
         return JsonSerializer.Serialize(new { ok = true, id, slug, title = newTitle, url = $"/node/{slug}", source_id = source.Id }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode for per-experiment isolation. Use this instead of DuplicateStory when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.")]
-    public async Task<string> CloneStory(
+    [McpServerTool, Description("Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode for per-experiment isolation. Use this instead of DuplicateBook when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.")]
+    public async Task<string> CloneBook(
         [Description("Source node Guid id or slug.")] string idOrSlug,
         [Description("Title for the clone. Defaults to 'Source Title (Clone)'.")] string title = "",
         [Description("Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.")] string nodeCode = "",
@@ -536,7 +529,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Kick off TTS narration for every un-narrated beat in this node (and its child nodes recursively). Returns immediately — narration runs in the background; poll get_node to observe progress. Returns an error response (without spawning anything) if TTS is not configured.")]
-    public async Task<string> NarrateStory(
+    public async Task<string> NarrateBook(
         [Description("Node Guid id or slug.")] string nodeIdOrSlug)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
@@ -558,7 +551,7 @@ public class NodeTools
     // ── Node Bible tools ────────────────────────────────────────────────
 
     [McpServerTool, Description("Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.")]
-    public async Task<string> GetStoryBible(
+    public async Task<string> GetBookBible(
         [Description("Node Guid id or slug.")] string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);
@@ -583,7 +576,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Generate (or regenerate) the node bible for a node. Uses the node's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the node has no beats yet. Returns the generated bible text.")]
-    public async Task<string> GenerateStoryBible(
+    public async Task<string> GenerateBookBible(
         [Description("Node Guid id or slug.")] string idOrSlug,
         [Description("Target number of beats in the spine. 0 = auto (use existing beat count or 12).")] int targetBeats = 0)
     {
@@ -592,7 +585,7 @@ public class NodeTools
 
         var seed = node.Seed ?? node.Description ?? node.Title;
         if (string.IsNullOrWhiteSpace(seed))
-            return JsonSerializer.Serialize(new { error = "no_seed", message = "Node has no Seed or Description to drive generation. Set one first with SetStoryBible or UpdateBeatMetadata." }, CanonTools.JsonOpts);
+            return JsonSerializer.Serialize(new { error = "no_seed", message = "Node has no Seed or Description to drive generation. Set one first with SetBookBible or UpdateBeatMetadata." }, CanonTools.JsonOpts);
 
         if (targetBeats <= 0)
         {
@@ -612,7 +605,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible.")]
-    public async Task<string> SetStoryBible(
+    public async Task<string> SetBookBible(
         [Description("Node Guid id or slug.")] string idOrSlug,
         [Description("Full bible markdown text to store. Empty string clears the bible.")] string bibleText)
     {
@@ -631,7 +624,7 @@ public class NodeTools
         return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, cleared = string.IsNullOrEmpty(bibleText) }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Assemble the unified Story Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. Run this before editing a story to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.")]
+    [McpServerTool, Description("Assemble the unified Book Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.")]
     public async Task<string> GenerateNodeDoc(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug)
     {
@@ -659,7 +652,7 @@ public class NodeTools
 
     /// <summary>Copy-edit a node's prose in-place: proper paragraph/dialogue spacing, "?" on questions, "asks"/"asked" on question dialogue. Dry-run by default — pass apply=true to commit. Returns a report of what changed, was rejected, or errored.</summary>
     [McpServerTool, Description("Copy-edit a node's prose in-place: adds missing '?' on questions, swaps 'says/said' → 'asks/asked' on question dialogue lines, and normalises paragraph/dialogue spacing. Dry-run by default — set apply=true to commit. Beats the model modified beyond those specific edits are rejected and left untouched. Returns changed/unchanged/rejected/errors counts plus per-beat diff previews.")]
-    public async Task<string> ReflowStory(
+    public async Task<string> ReflowBook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Set to true to write the edits to the DB. Default false = dry run.")] bool apply = false)
     {
@@ -693,7 +686,7 @@ public class NodeTools
 
     /// <summary>LLM-rebeat a node: re-segment all beats to the beat doctrine (proper formatting, no run-ons, no sentence-shrapnel). Dry-run by default; set apply=true to export a backup then replace beats (only if the word-retention guard passes).</summary>
     [McpServerTool, Description("Re-segment a node's beats to the codified beat doctrine via LLM re-segmentation. Dry-run by default (safe to call freely). Set apply=true to export a Markdown backup then replace the beats — only committed if the word-retention guard passes (prevents silent content loss). Returns old/new beat counts, retention %, guard result, and a note if it was blocked.")]
-    public async Task<string> RebeatStory(
+    public async Task<string> RebeatBook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Set to true to commit the new segmentation. Default false = dry run.")] bool apply = false)
     {
@@ -814,7 +807,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
-    public async Task<string> UpdateStory(
+    public async Task<string> UpdateBook(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
         [Description("Back-of-book description. Omit to leave unchanged; pass empty string to clear.")] string? description = null,
@@ -928,7 +921,7 @@ public class NodeTools
         "Return the full narrative spine for a node: bible, user stories, all amendments (in order), " +
         "and the latest spine version pin (which records the content hashes and amendment count at the " +
         "last docx export). Use this before writing prose to understand the narrative contract.")]
-    public async Task<string> GetStorySpine(
+    public async Task<string> GetBookSpine(
         [Description("Node id (GUID) or slug.")] string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);
@@ -970,8 +963,8 @@ public class NodeTools
     [McpServerTool, Description(
         "Set (replace) the user stories / acceptance criteria for a node. " +
         "Write this before starting prose — it defines what scenes, arcs, and voice moments must be present " +
-        "for the node to reach ≥82% standalone and ≥85% cumulative story score.")]
-    public async Task<string> SetStoryUserStories(
+        "for the node to reach ≥82% standalone and ≥85% cumulative book score.")]
+    public async Task<string> SetBookUserStories(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("Full user stories markdown. Will replace any existing content.")] string userStoriesText)
     {
@@ -988,7 +981,7 @@ public class NodeTools
         "Amendments are append-only — they form an auditable change log of narrative decisions. " +
         "Use when: changing a character's motivation after beats are written, retconning world rules, " +
         "or noting why a section was expanded or cut.")]
-    public async Task<string> AppendStoryAmendment(
+    public async Task<string> AppendBookAmendment(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("One-line summary of the change.")] string summary,
         [Description("Full amendment body (markdown). Explain what changed and why.")] string body)
@@ -1013,7 +1006,7 @@ public class NodeTools
         "Records the SHA-256 hashes of the current bible and user stories, plus the amendment count, " +
         "so future drift checks can tell when prose was written against a stale spine. " +
         "Call this after every significant prose session or whenever the spine changes.")]
-    public async Task<string> PinStorySpineVersion(
+    public async Task<string> PinBookSpineVersion(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("Optional human note explaining what changed at this version.")] string notes = "")
     {
@@ -1085,7 +1078,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Print all beats of a node as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts node id (GUID) or slug. Use this to read the full prose of a node in one call.")]
-    public async Task<string> PrintStory(
+    public async Task<string> PrintBook(
         [Description("Node Guid id or slug.")] string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);

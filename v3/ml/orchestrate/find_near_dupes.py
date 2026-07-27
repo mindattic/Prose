@@ -34,11 +34,11 @@ SELECT
     b.Text                        AS BeatText,
     CONVERT(nvarchar(36), n.Id)   AS NodeId,
     ISNULL(
-        -- direct story node
+        -- direct book node
         CASE WHEN n.ParentNodeId IS NULL THEN n.NodeCode ELSE NULL END,
-        -- chapter → story node (parent)
+        -- chapter → book node (parent)
         (SELECT TOP 1 p.NodeCode FROM Nodes p WHERE p.Id = n.ParentNodeId AND p.ParentNodeId IS NULL)
-    )                             AS StoryCode
+    )                             AS BookCode
 FROM BeatNodes bn
 JOIN Beats b  ON b.Id  = bn.BeatId
 JOIN Nodes n  ON n.Id  = bn.NodeId
@@ -104,7 +104,7 @@ def run(threshold: float = SIMILARITY_THRESHOLD, batch_size: int = 256):
     else:
         # Chunked: compute one row-slice at a time, collect pairs immediately.
         CHUNK = 512
-        story_codes = df["StoryCode"].fillna("").tolist()
+        book_codes = df["BookCode"].fillna("").tolist()
         beat_ids    = df["BeatId"].tolist()
         beat_nums   = df["BeatNumber"].tolist()
         findings = []
@@ -118,18 +118,18 @@ def run(threshold: float = SIMILARITY_THRESHOLD, batch_size: int = 256):
                 for j in js:
                     if global_i >= int(j):
                         continue
-                    if story_codes[global_i] == story_codes[int(j)]:
+                    if book_codes[global_i] == book_codes[int(j)]:
                         continue
                     sim     = float(row[j])
-                    story_a = story_codes[global_i] or "unknown"
-                    story_b = story_codes[int(j)]   or "unknown"
+                    book_a  = book_codes[global_i] or "unknown"
+                    book_b  = book_codes[int(j)]   or "unknown"
                     summary = (f"Beat #{beat_nums[global_i]} ~ Beat #{beat_nums[int(j)]} "
-                               f"({sim:.3f}) across {story_a}/{story_b}")
+                               f"({sim:.3f}) across {book_a}/{book_b}")
                     fp      = f"beat:{beat_ids[global_i]}"
                     snippet = f"Also: beat:{beat_ids[int(j)]}"
                     dedup   = f"{fp}|NearDuplicate|{beat_ids[int(j)]}".lower()[:450]
                     findings.append((fp, summary, snippet, dedup))
-        console.print(f"[green]{len(findings)} cross-story near-duplicate pair(s) found.[/green]")
+        console.print(f"[green]{len(findings)} cross-book near-duplicate pair(s) found.[/green]")
         if findings:
             with get_connection() as conn:
                 for fp, summary, snippet, dedup in findings:
@@ -137,8 +137,8 @@ def run(threshold: float = SIMILARITY_THRESHOLD, batch_size: int = 256):
             console.print(f"[green]{len(findings)} finding(s) written to Findings table.[/green]")
         return
 
-    # Find pairs above threshold from different stories
-    story_codes = df["StoryCode"].fillna("").tolist()
+    # Find pairs above threshold from different books
+    book_codes = df["BookCode"].fillna("").tolist()
     beat_ids    = df["BeatId"].tolist()
     beat_nums   = df["BeatNumber"].tolist()
 
@@ -150,19 +150,19 @@ def run(threshold: float = SIMILARITY_THRESHOLD, batch_size: int = 256):
 
     findings = []
     for i, j in zip(pairs_i, pairs_j):
-        if story_codes[i] == story_codes[j]:
-            continue  # same story — skip
+        if book_codes[i] == book_codes[j]:
+            continue  # same book — skip
         sim     = float(sim_matrix[i, j])
-        story_a = story_codes[i] or "unknown"
-        story_b = story_codes[j] or "unknown"
+        book_a  = book_codes[i] or "unknown"
+        book_b  = book_codes[j] or "unknown"
         summary = (f"Beat #{beat_nums[i]} ~= Beat #{beat_nums[j]} "
-                   f"({sim:.3f}) across {story_a}/{story_b}")
+                   f"({sim:.3f}) across {book_a}/{book_b}")
         fp      = f"beat:{beat_ids[i]}"
         snippet = f"Also: beat:{beat_ids[j]}"
         dedup   = f"{fp}|NearDuplicate|{beat_ids[j]}".lower()[:450]
         findings.append((fp, summary, snippet, dedup))
 
-    console.print(f"[green]{len(findings)} cross-story near-duplicate pair(s) found.[/green]")
+    console.print(f"[green]{len(findings)} cross-book near-duplicate pair(s) found.[/green]")
 
     if findings:
         with get_connection() as conn:

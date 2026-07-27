@@ -6,7 +6,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// <c>ss --rebeat-story (--slug &lt;s&gt; | --id &lt;guid|prefix&gt;) [--apply]</c> —
+/// <c>ss --rebeat-book (--slug &lt;s&gt; | --id &lt;guid|prefix&gt;) [--apply]</c> —
 /// rebuild a node's beats to the codified beat doctrine via LLM re-segmentation
 /// (<see cref="BeatRebuildService"/>). Dry-run by default: prints the proposed
 /// old→new beat counts and the word-retention guard result without touching the
@@ -72,7 +72,7 @@ public static class RebeatNodeCli
                     }
                     else
                     {
-                        // No chapters — fall back to the story node itself.
+                        // No chapters — fall back to the book node itself.
                         targets.Add((node.Id, node.Title));
                     }
                 }

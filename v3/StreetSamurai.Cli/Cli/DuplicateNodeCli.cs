@@ -6,7 +6,7 @@ using StreetSamurai.Core.Services;
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// <c>ss --duplicate-story (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) --title "New Title"</c>
+/// <c>ss --duplicate-book (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) --title "New Title"</c>
 /// — deep-copy a node (and its sub-node tree) into a fresh independent node.
 /// Every beat becomes a new row (prose + metadata preserved; audio/score/stale
 /// reset), so editing the copy never touches the original.
@@ -27,12 +27,12 @@ public static class DuplicateNodeCli
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("[duplicate-story] One of --id or --slug is required.");
+            Console.Error.WriteLine("[duplicate-book] One of --id or --slug is required.");
             return 1;
         }
         if (string.IsNullOrWhiteSpace(title))
         {
-            Console.Error.WriteLine("[duplicate-story] --title \"New Title\" is required.");
+            Console.Error.WriteLine("[duplicate-book] --title \"New Title\" is required.");
             return 1;
         }
 
@@ -48,21 +48,21 @@ public static class DuplicateNodeCli
             else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
             else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
             { { Count: 1 } m => m[0], _ => null };
-            if (node == null) { Console.Error.WriteLine("[duplicate-story] Source node not found."); return 1; }
+            if (node == null) { Console.Error.WriteLine("[duplicate-book] Source node not found."); return 1; }
             sourceId = node.Id; sourceTitle = node.Title;
         }
 
-        Console.WriteLine($"[duplicate-story] Duplicating \"{sourceTitle}\" -> \"{title}\"…");
+        Console.WriteLine($"[duplicate-book] Duplicating \"{sourceTitle}\" -> \"{title}\"…");
         try
         {
             var (newId, newSlug) = await workbench.DuplicateNodeAsync(sourceId, title!);
-            Console.WriteLine($"[duplicate-story] OK");
+            Console.WriteLine($"[duplicate-book] OK");
             Console.WriteLine($"   Id:    {newId}");
             Console.WriteLine($"   Slug:  {newSlug}");
             Console.WriteLine($"   Title: {title}");
             Console.WriteLine($"   URL:   https://localhost:7103/node/{newSlug}");
             return 0;
         }
-        catch (Exception ex) { Console.Error.WriteLine($"[duplicate-story] Failed: {ex.Message}"); return 1; }
+        catch (Exception ex) { Console.Error.WriteLine($"[duplicate-book] Failed: {ex.Message}"); return 1; }
     }
 }

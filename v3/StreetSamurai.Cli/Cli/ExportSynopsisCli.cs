@@ -11,7 +11,7 @@ namespace StreetSamurai.Cli;
 ///
 /// Standalone chapter-by-chapter synopsis export (the same artifact <c>--export-node</c>
 /// emits): generates/refreshes NodeChapterSummaries from the live prose and writes
-/// <c>story-synopsis.txt</c> into each story's export folder. <c>--force</c> ignores
+/// <c>story-synopsis.txt</c> into each book's export folder. <c>--force</c> ignores
 /// the per-chapter content-hash cache and regenerates everything.
 /// </summary>
 public static class ExportSynopsisCli
@@ -41,7 +41,7 @@ public static class ExportSynopsisCli
             targets = (await q.Select(n => new { n.Id, n.Title }).ToListAsync())
                 .Select(n => (n.Id, n.Title)).ToList();
         }
-        if (targets.Count == 0) { Console.Error.WriteLine("[synopsis] No matching story."); return 1; }
+        if (targets.Count == 0) { Console.Error.WriteLine("[synopsis] No matching book."); return 1; }
 
         int failed = 0;
         foreach (var (nodeId, title) in targets)

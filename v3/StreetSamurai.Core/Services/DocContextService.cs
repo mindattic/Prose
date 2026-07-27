@@ -53,7 +53,7 @@ public sealed class DocContextService(
         CancellationToken ct = default)
     {
         var code = (nodeCode ?? "").Trim();
-        // Dynamic Context Memory: pass node code so the stack can evict stale node-tier docs on story change.
+        // Dynamic Context Memory: pass node code so the stack can evict stale node-tier docs on book change.
         stack.BeginAction(contextId, code);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -74,20 +74,20 @@ public sealed class DocContextService(
             foreach (var c in candidates.Where(c => c.Tier == "always"))
                 stack.Push(contextId, MakeEntry(c, "always", 100));
 
-        // 2 — node (scope match): the story's one bible + one register + story docs
+        // 2 — node (scope match): the book's one bible + one register + book docs
         if (includeNode)
             foreach (var c in candidates.Where(c => c.Tier == "node" && ScopeMatches(c.Scope, code)))
                 stack.Push(contextId, MakeEntry(c, string.IsNullOrEmpty(code) ? "node:*" : $"node:{code}", 90));
 
-        // 2.5 — series (scope match): cross-story arc docs (docs/series/*.md) that declare this
+        // 2.5 — series (scope match): cross-book arc docs (docs/series/*.md) that declare this
         //        node's series code in their scope. Survives ~8 beats before eviction — long enough
         //        to carry a plant/payoff callback from a previous book across a scene.
         //
         //        BUG FIX: a series doc's Scope is the series/universe identifier itself (e.g.
         //        "GLMZ" from docs/series/GLMZ.md, or "ROOK" from a hypothetical docs/series/ROOK.md
-        //        — see MarkdownFileService.ClassifyFile), never an individual story's own NodeCode.
-        //        Matching it against `code` (this story's NodeCode, e.g. "BCODA"/"MxG") could never
-        //        succeed, so the series tier was silently dead for every story. Resolve the story's
+        //        — see MarkdownFileService.ClassifyFile), never an individual book's own NodeCode.
+        //        Matching it against `code` (this book's NodeCode, e.g. "BCODA"/"MxG") could never
+        //        succeed, so the series tier was silently dead for every book. Resolve the book's
         //        actual series-scope keys (its Universe.Name + any ancestor SeriesNode's Title) and
         //        match against those instead.
         if (includeNode)
@@ -268,7 +268,7 @@ public sealed class DocContextService(
 
         foreach (var e in active)
         {
-            // Node-tier docs are the story's bible + register — the do-not-contradict layer.
+            // Node-tier docs are the book's bible + register — the do-not-contradict layer.
             // A 1500c clip loses character rules and locks (how BLST drifted); give them room.
             var perDocCap = e.Tier switch { "topic" => 800, "series" => 4_000, "node" => 16_000, _ => 1500 };
             var clip = StripFrontmatter(contentById.GetValueOrDefault(e.DocId, ""));
@@ -298,8 +298,8 @@ public sealed class DocContextService(
         new(c.Id, c.RelativePath, c.Tier, c.Scope, c.Triggers, reason, score, 0, 0, c.RelatedIds);
 
     /// <summary>
-    /// Resolves the broader series/universe identifiers a story node belongs to, so series-tier
-    /// docs (scoped by series/universe name, not by any individual story's own NodeCode) can be
+    /// Resolves the broader series/universe identifiers a book node belongs to, so series-tier
+    /// docs (scoped by series/universe name, not by any individual book's own NodeCode) can be
     /// matched correctly. Walks up to 3 ancestor levels looking for a SeriesNode (Kind == "series")
     /// and includes the node's own Universe name. Returns an empty list if <paramref name="nodeId"/>
     /// is not a real node (e.g. a session-key context id) or has none of the above.

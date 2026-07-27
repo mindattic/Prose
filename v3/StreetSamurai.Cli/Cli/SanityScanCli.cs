@@ -9,7 +9,7 @@ namespace StreetSamurai.Cli;
 /// <summary>
 /// ss --sanity-scan (--slug &lt;slug|code&gt; | --all) [--json]
 ///
-/// Scans a finished story node's prose for problems:
+/// Scans a finished book node's prose for problems:
 ///   A) Internal node-code leak  — "NRST" / "BCODA" / etc. in prose
 ///   B) Undefined all-caps acronym — possible placeholder or leaked code
 ///   C) Heft / length floor        — estimated PDF page count vs 50-page minimum

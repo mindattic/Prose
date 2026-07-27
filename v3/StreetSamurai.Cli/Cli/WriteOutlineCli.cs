@@ -39,7 +39,7 @@ public static class WriteOutlineCli
             return 2;
         }
 
-        var auditSvc  = services.GetRequiredService<StoryLogicAuditService>();
+        var auditSvc  = services.GetRequiredService<BookLogicAuditService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 

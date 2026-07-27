@@ -317,7 +317,7 @@ else
         </div>
 
         @* Table of Contents — anchor links to each chapter section below.
-           Suppressed for single-chapter stories: one chapter prints no chapter chrome. *@
+           Suppressed for single-chapter books: one chapter prints no chapter chrome. *@
         @if (children.Count > 1)
         {
             <div class="node-toc">
@@ -367,8 +367,8 @@ else
                     position++;
                     var b = entry.Beat;
                     @* Chapter section header — injected whenever the NodeId changes (only relevant
-                       for story nodes whose beats come from multiple chapter children).
-                       A single-chapter story prints no heading — we never show "Chapter 1". *@
+                       for book nodes whose beats come from multiple chapter children).
+                       A single-chapter book prints no heading — we never show "Chapter 1". *@
                     @if (children.Count > 1 && entry.NodeId != lastChapterId)
                     {
                         lastChapterId = entry.NodeId;
@@ -1831,7 +1831,7 @@ else
         try
         {
             var bibleBlock = !string.IsNullOrWhiteSpace(node?.NodeBible)
-                ? $"\n\nNODE BIBLE (the full story plan — stay consistent with this arc):\n{node!.NodeBible}"
+                ? $"\n\nNODE BIBLE (the full book plan — stay consistent with this arc):\n{node!.NodeBible}"
                 : "";
             var system = "You are an assistant rewriting a single beat of prose for a noir/cyberpunk narrative. " +
                          "Return ONLY the rewritten beat text — no preamble, no commentary, no quotes around it. " +

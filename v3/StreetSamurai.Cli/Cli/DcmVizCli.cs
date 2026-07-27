@@ -8,7 +8,7 @@ namespace StreetSamurai.Cli;
 /// <summary>
 /// <c>ss --dcm-viz --slug &lt;slug&gt; [--out &lt;dir&gt;]</c>
 ///
-/// Dry-runs the Dynamic Context Memory (DCM) stack across every enabled beat of a story and
+/// Dry-runs the Dynamic Context Memory (DCM) stack across every enabled beat of a book and
 /// generates a self-contained <c>&lt;CODE&gt;-dcm-viz.htm</c> file showing:
 ///
 ///   • Count chart — how many .md files were in the working set at each beat.
@@ -19,8 +19,8 @@ namespace StreetSamurai.Cli;
 /// it would during real prose generation, so the output reflects true DCM behavior.
 ///
 /// Args:
-///   --slug &lt;slug&gt;   Story node slug (required).
-///   --out  &lt;dir&gt;    Output directory (default: the story's own publish folder —
+///   --slug &lt;slug&gt;   Book node slug (required).
+///   --out  &lt;dir&gt;    Output directory (default: the book's own publish folder —
 ///                   &lt;universe export dir&gt;/&lt;Series…&gt;/&lt;Title&gt; — beside its manuscript exports).
 /// </summary>
 public static class DcmVizCli
@@ -65,7 +65,7 @@ public static class DcmVizCli
             (resolvedNodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, root, default);
         }
 
-        Console.WriteLine($"[dcm-viz] Story: \"{nodeTitle}\" ({slug})  code={nodeCode}");
+        Console.WriteLine($"[dcm-viz] Book: \"{nodeTitle}\" ({slug})  code={nodeCode}");
 
         // Collect all enabled beats across this node and its chapter children (book layout).
         var allBeats = await CollectBeatsAsync(nodeId, dbFactory);
@@ -110,7 +110,7 @@ public static class DcmVizCli
         }
         Console.WriteLine();
 
-        // Determine output path: explicit --out wins; otherwise the story's own publish
+        // Determine output path: explicit --out wins; otherwise the book's own publish
         // folder, beside its .docx/.epub exports.
         var dir = !string.IsNullOrWhiteSpace(outDir) ? outDir : resolvedNodeDir;
         Directory.CreateDirectory(dir);

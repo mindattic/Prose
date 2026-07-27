@@ -7,25 +7,25 @@ using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Mcp;
 
-// ── Story Audit tools ─────────────────────────────────────────────────────────
+// ── Book Audit tools ─────────────────────────────────────────────────────────
 // Two tools that audit a node against the appropriate commandment set.
 //
-//   audit_story_commandments — run all 7 gateway or sequel commandment checks
+//   audit_book_commandments — run all 7 gateway or sequel commandment checks
 //                              (auto-detected from Node.PreviousNodeId)
-//   set_previous_story      — link a node's predecessor to activate sequel mode
+//   set_previous_book      — link a node's predecessor to activate sequel mode
 
 [McpServerToolType]
-public class StoryAuditTools(
-    StoryAuditService storyAudit,
+public class BookAuditTools(
+    BookAuditService bookAudit,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
-    // ── audit_story_commandments ──────────────────────────────────────────────
+    // ── audit_book_commandments ──────────────────────────────────────────────
 
     /// <summary>Audit a node against its 7 commandments. Gateway commandments apply when PreviousNodeId is null (standalone or first in series). Sequel commandments apply when PreviousNodeId is set. Each commandment returns pass/warn/fail with evidence and a fix suggestion. The gateway_ready boolean is true when no commandment fails.</summary>
-    [McpServerTool, Description("Audit a node against all 7 commandments — gateway (for first/standalone stories) or sequel (for stories with a PreviousNodeId set). Auto-detected: null PreviousNodeId → gateway commandments; set → sequel commandments. Each commandment check returns status (pass/warn/fail), specific evidence from the prose, and a concrete one-sentence fix when not passing. Returns gateway_ready (no failing checks), blocking_count (failures), advisory_count (warnings), plus plant_count and orphaned_plants from the PlantPayoff registry (relevant for the 'reward re-reading' commandment). Accepts node id (GUID) or slug.")]
-    public async Task<string> audit_story_commandments(
+    [McpServerTool, Description("Audit a node against all 7 commandments — gateway (for first/standalone books) or sequel (for books with a PreviousNodeId set). Auto-detected: null PreviousNodeId → gateway commandments; set → sequel commandments. Each commandment check returns status (pass/warn/fail), specific evidence from the prose, and a concrete one-sentence fix when not passing. Returns gateway_ready (no failing checks), blocking_count (failures), advisory_count (warnings), plus plant_count and orphaned_plants from the PlantPayoff registry (relevant for the 'reward re-reading' commandment). Accepts node id (GUID) or slug.")]
+    public async Task<string> audit_book_commandments(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
@@ -34,7 +34,7 @@ public class StoryAuditTools(
 
         try
         {
-            var report = await storyAudit.AuditAsync(nodeId.Value);
+            var report = await bookAudit.AuditAsync(nodeId.Value);
             return JsonSerializer.Serialize(new
             {
                 node_slug      = report.NodeSlug,
@@ -62,11 +62,11 @@ public class StoryAuditTools(
         }
     }
 
-    // ── set_previous_story ───────────────────────────────────────────────────
+    // ── set_previous_book ───────────────────────────────────────────────────
 
-    /// <summary>Set or clear a node's PreviousNodeId to switch between gateway mode (null) and sequel mode (set). When PreviousNodeId is set, the story automatically uses sequel commandments in audit_story_commandments and in beat-writing context injection.</summary>
-    [McpServerTool, Description("Link a node to its predecessor, switching it from gateway mode to sequel mode. When previous_node_id_or_slug is provided, Node.PreviousNodeId is set — the story will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both node arguments as id (GUID) or slug.")]
-    public async Task<string> set_previous_story(
+    /// <summary>Set or clear a node's PreviousNodeId to switch between gateway mode (null) and sequel mode (set). When PreviousNodeId is set, the book automatically uses sequel commandments in audit_book_commandments and in beat-writing context injection.</summary>
+    [McpServerTool, Description("Link a node to its predecessor, switching it from gateway mode to sequel mode. When previous_node_id_or_slug is provided, Node.PreviousNodeId is set — the book will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both node arguments as id (GUID) or slug.")]
+    public async Task<string> set_previous_book(
         [Description("The node to update — id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("The preceding node — id (GUID) or slug. Omit or pass null to clear.")] string? previousNodeIdOrSlug = null,
         [Description("Set true to clear PreviousNodeId (revert to gateway mode).")] bool clear = false)

@@ -7,12 +7,12 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Manages the separation between universal facts (world mechanics, vocabulary, social structure
-/// that apply to EVERY story in this universe) and story-specific facts (<c>Node.NodeBible</c>).
+/// that apply to EVERY book in this universe) and book-specific facts (<c>Node.NodeBible</c>).
 ///
 /// Universal facts live in <c>Universe.WorldFacts</c> and are injected into every beat-generation
-/// prompt regardless of which story is being written — so a fact like "Pulse pods are individual
-/// spheres with a neuretic train hallucination" is always present without requiring each story
-/// bible to repeat it. Story facts (<c>Node.NodeBible</c>) stay story-scoped.
+/// prompt regardless of which book is being written — so a fact like "Pulse pods are individual
+/// spheres with a neuretic train hallucination" is always present without requiring each book
+/// bible to repeat it. Book facts (<c>Node.NodeBible</c>) stay book-scoped.
 ///
 /// The human-editable source is <c>docs/universes/&lt;slug&gt;.md</c>; <c>ss --sync-markdown</c>
 /// syncs it into <c>Universe.WorldFacts</c>.
@@ -57,11 +57,11 @@ public class UniversalFactsService
     }
 
     /// <summary>
-    /// Returns the story-specific bible text for <paramref name="nodeId"/>, or empty string
-    /// if the node has no bible yet. Story facts are distinct from universal facts — they
-    /// cover only the arc, characters, and rules for that specific story node.
+    /// Returns the book-specific bible text for <paramref name="nodeId"/>, or empty string
+    /// if the node has no bible yet. Book facts are distinct from universal facts — they
+    /// cover only the arc, characters, and rules for that specific book node.
     /// </summary>
-    public async Task<string> GetStoryBibleAsync(Guid nodeId, CancellationToken ct = default)
+    public async Task<string> GetBookBibleAsync(Guid nodeId, CancellationToken ct = default)
     {
         if (nodeId == Guid.Empty) return "";
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -99,6 +99,6 @@ public class UniversalFactsService
         var facts = await GetWorldFactsAsync(ct);
         return string.IsNullOrWhiteSpace(facts)
             ? ""
-            : $"\n\nUNIVERSAL WORLD FACTS (apply to every story in this universe — treat as hard canon):\n{facts}";
+            : $"\n\nUNIVERSAL WORLD FACTS (apply to every book in this universe — treat as hard canon):\n{facts}";
     }
 }

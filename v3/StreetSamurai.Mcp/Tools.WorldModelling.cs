@@ -321,7 +321,7 @@ public class WorldModellingTools(
         "use it after importing or rewriting a node to catch all clichés, " +
         "pseudo-profound constructs, on-the-nose interiority, and italicised dialogue " +
         "in one pass. Returns a per-beat summary of violations found.")]
-    public async Task<string> ScanStoryViolations(
+    public async Task<string> ScanBookViolations(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();

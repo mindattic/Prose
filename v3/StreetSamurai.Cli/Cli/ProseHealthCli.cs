@@ -24,17 +24,17 @@ public static class ProseHealthCli
         if (!json)
         {
             Console.WriteLine();
-            Console.WriteLine($"Stories: {report.StoriesAnalyzed}  |  Beats: {report.BeatsAnalyzed}  |  API calls: 0");
+            Console.WriteLine($"Stories: {report.BooksAnalyzed}  |  Beats: {report.BeatsAnalyzed}  |  API calls: 0");
             Console.WriteLine();
 
             PrintTier("RISK TIER 1 — fix before next review", report.Tier1, ConsoleColor.Red);
             PrintTier("RISK TIER 2 — worth a read",          report.Tier2, ConsoleColor.Yellow);
             PrintTier("RISK TIER 3 — low signal",            report.Tier3, ConsoleColor.DarkGray);
 
-            if (report.StoryMeanPredictedScore.Count > 0)
+            if (report.BookMeanPredictedScore.Count > 0)
             {
                 Console.WriteLine("kNN Predictions (unscored stories):");
-                foreach (var (s, mean) in report.StoryMeanPredictedScore.OrderBy(kv => kv.Value))
+                foreach (var (s, mean) in report.BookMeanPredictedScore.OrderBy(kv => kv.Value))
                     Console.WriteLine($"  {s,-20} mean predicted {mean:F1}");
                 Console.WriteLine();
             }

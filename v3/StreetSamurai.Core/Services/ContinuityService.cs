@@ -476,7 +476,7 @@ public class ContinuityClaim
     public DateTime? StoryDate         { get; set; }
 
     /// <summary>Code of the BookNode this claim was extracted from (e.g. "BCODA", "RTR"). Null for entity-record sources.</summary>
-    public string? StorySlug           { get; set; }
+    public string? BookSlug            { get; set; }
 }
 
 public class ClaimUpsertResult

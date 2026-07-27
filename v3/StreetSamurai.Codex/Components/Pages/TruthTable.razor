@@ -29,7 +29,7 @@
     <select class="form-select form-select-sm bg-dark text-light border-secondary" style="max-width:320px"
             @onchange="OnStoryChanged">
         <option value="">— select a story —</option>
-        @foreach (var s in stories)
+        @foreach (var s in books)
         {
             <option value="@s.Slug" selected="@(selectedSlug == s.Slug)">
                 @(s.NodeCode ?? s.Slug) — @s.Title
@@ -196,16 +196,16 @@
         "EscalationFloor", "EscalationMonotonic", "DeclaredPurpose",
     };
 
-    record StoryRow(string? NodeCode, string Slug, string Title);
+    record BookRow(string? NodeCode, string Slug, string Title);
     record BeatRow(Guid BeatId, double SortKey, string Goal, string? DeclaredPurpose,
                    Dictionary<string, VerifResult> Checks);
     record VerifResult(string Result, string Severity, string? Evidence);
 
-    List<StoryRow> stories = new();
+    List<BookRow> books = new();
     string? selectedSlug;
     bool running;
     string? error;
-    StoryVerificationSummary? summary;
+    BookVerificationSummary? summary;
     List<BeatRow> beatRows = new();
     Guid? expandedBeat;
 
@@ -217,10 +217,10 @@
     protected override async Task OnInitializedAsync()
     {
         await using var db = await Db.CreateDbContextAsync();
-        stories = await db.Nodes.AsNoTracking()
-            .Where(n => n.Kind == "story")
+        books = await db.Nodes.AsNoTracking()
+            .Where(n => n.Kind == "book")
             .OrderBy(n => n.NodeCode ?? n.Slug)
-            .Select(n => new StoryRow(n.NodeCode, n.Slug, n.Title))
+            .Select(n => new BookRow(n.NodeCode, n.Slug, n.Title))
             .ToListAsync();
     }
 
@@ -294,7 +294,7 @@
 
             // Build summary from loaded data (no re-run)
             var allV = verifications;
-            summary = new StoryVerificationSummary(
+            summary = new BookVerificationSummary(
                 NodeId:       storyNode.Id,
                 Slug:         selectedSlug,
                 BeatsChecked: beats.Count,
@@ -325,7 +325,7 @@
         StateHasChanged();
         try
         {
-            summary = await VerifySvc.VerifyStoryAsync(selectedSlug);
+            summary = await VerifySvc.VerifyBookAsync(selectedSlug);
             await LoadVerificationResults();
         }
         catch (Exception ex) { error = ex.Message; }

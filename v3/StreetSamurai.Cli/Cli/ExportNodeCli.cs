@@ -12,7 +12,7 @@ namespace StreetSamurai.Cli;
 /// <c>Node.Description</c> is set. <c>--export-dir</c> overrides and persists the
 /// export directory <em>for the node's universe</em>
 /// (<c>UniverseExportDirectories[slug]</c>), never the shared global — so
-/// exporting a Scry story can't redirect where GLMZ stories land, and vice versa.
+/// exporting a Scry book can't redirect where GLMZ books land, and vice versa.
 /// <para>NOTE: this is local file rendering only — there is no KDP API
 /// integration. "Export" is the correct name; it does not touch
 /// <see cref="Node.PublishUrl"/> or <see cref="Node.PublicationStatus"/>, which
@@ -63,8 +63,8 @@ public static class ExportNodeCli
         }
 
         // --export-dir persists to THIS node's universe key, never the shared
-        // global — otherwise exporting a Scry story rewrites the default that
-        // GLMZ stories (with no per-universe entry) fall back to, and they land
+        // global — otherwise exporting a Scry book rewrites the default that
+        // GLMZ books (with no per-universe entry) fall back to, and they land
         // in the wrong universe's directory. Fall back to the global only when
         // the universe slug can't be resolved.
         if (!string.IsNullOrWhiteSpace(exportDir))
@@ -96,7 +96,7 @@ public static class ExportNodeCli
 
         // ── pre-export BLOCKER verification gate (Track C — Truth-First Architecture) ──
         // Reads existing BeatVerification rows — does NOT re-run checks. Run
-        // 'ss --verify-story --slug <slug>' first to refresh, then fix any BLOCKERs.
+        // 'ss --verify-book --slug <slug>' first to refresh, then fix any BLOCKERs.
         await using (var dbV = await dbFactory.CreateDbContextAsync())
         {
             var chapterIds = await dbV.Nodes.AsNoTracking()
@@ -118,7 +118,7 @@ public static class ExportNodeCli
                 Console.Error.WriteLine($"[export-node] ❌ {blockers.Count} BLOCKER verification finding(s) — fix before exporting:");
                 foreach (var b in blockers.Take(10))
                     Console.Error.WriteLine($"  [{b.CheckType,-22}] Beat {b.BeatId}: {b.Evidence ?? "(no detail)"}");
-                Console.Error.WriteLine("[export-node] Run 'ss --verify-story --slug <slug>' for full report.");
+                Console.Error.WriteLine("[export-node] Run 'ss --verify-book --slug <slug>' for full report.");
                 return 1;
             }
         }

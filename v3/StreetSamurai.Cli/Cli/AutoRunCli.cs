@@ -81,9 +81,9 @@ public static class AutoRunCli
         var beatRepair   = services.GetRequiredService<BeatRepairService>();
         var ledger       = services.GetRequiredService<TokenLedger>();
 
-        string storyBible;
-        try { storyBible = canonDb.GetLiteraryRulesPrompt() ?? ""; }
-        catch { storyBible = ""; }
+        string bookBible;
+        try { bookBible = canonDb.GetLiteraryRulesPrompt() ?? ""; }
+        catch { bookBible = ""; }
 
         // Resolve the target node
         Guid nodeId;
@@ -104,7 +104,7 @@ public static class AutoRunCli
             nodeKind  = node.Kind ?? "episode";
 
             if (!string.IsNullOrWhiteSpace(node.Seed))
-                storyBible = storyBible
+                bookBible = bookBible
                     + "\n\n=== STORY PREMISE (BINDING — every beat must comply; contradicting it is a defect) ===\n"
                     + node.Seed.Trim()
                     + "\nInvent NO named characters beyond those in the premise; background residents stay unnamed.";
@@ -141,8 +141,8 @@ public static class AutoRunCli
             {
                 Console.WriteLine();
                 Console.WriteLine($"[auto-run] ── Chapter {totalChapters + 1}: \"{chapterTitle}\" ──");
-                var chapterBible = string.IsNullOrWhiteSpace(chapterSeed) ? storyBible
-                    : storyBible + "\n\n=== CHAPTER OUTLINE (BINDING — beats must fulfil these chapter goals) ===\n" + chapterSeed.Trim();
+                var chapterBible = string.IsNullOrWhiteSpace(chapterSeed) ? bookBible
+                    : bookBible + "\n\n=== CHAPTER OUTLINE (BINDING — beats must fulfil these chapter goals) ===\n" + chapterSeed.Trim();
                 await ExpandAndRepairAsync(chapterId, nodeId, chapterBible, router, workbench, reflow,
                     chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
                     forks, allowVotes, noRepair, totalChapters);
@@ -153,7 +153,7 @@ public static class AutoRunCli
         }
         else
         {
-            await ExpandAndRepairAsync(nodeId, nodeId, storyBible, router, workbench, reflow,
+            await ExpandAndRepairAsync(nodeId, nodeId, bookBible, router, workbench, reflow,
                 chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
                 forks, allowVotes, noRepair, chapterIndex: 0);
             Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded.");
@@ -164,7 +164,7 @@ public static class AutoRunCli
     }
 
     private static async Task ExpandAndRepairAsync(
-        Guid chapterId, Guid nodeId, string storyBible,
+        Guid chapterId, Guid nodeId, string bookBible,
         ProseWriterRouter router, NodeWorkbenchService workbench,
         ProseReflowService reflow, ChapterCloseProcessorService chapterClose,
         BeatAuditService beatAudit, BeatRepairService beatRepair,
@@ -173,7 +173,7 @@ public static class AutoRunCli
         int forks, bool allowVotes, bool noRepair,
         int chapterIndex)
     {
-        var (written, skipped) = await ExpandBeatNodesAsync(chapterId, nodeId, storyBible, router, workbench, force, dryRun, targetWords);
+        var (written, skipped) = await ExpandBeatNodesAsync(chapterId, nodeId, bookBible, router, workbench, force, dryRun, targetWords);
         stats.Written  += written;
         stats.Skipped  += skipped;
 
@@ -233,7 +233,7 @@ public static class AutoRunCli
                 Console.Write($"[auto-run]   repair beat #{group.Key} (attempt {attempt + 1}/{MaxRepairAttempts})… ");
                 try
                 {
-                    var newText = await beatRepair.RepairAsync(beatId, chapterId, group.ToList(), storyBible);
+                    var newText = await beatRepair.RepairAsync(beatId, chapterId, group.ToList(), bookBible);
                     if (string.IsNullOrWhiteSpace(newText)) { Console.WriteLine("empty — skipped."); break; }
 
                     await workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null);
@@ -265,8 +265,8 @@ public static class AutoRunCli
 
     private static async Task<(int Written, int Skipped)> ExpandBeatNodesAsync(
         Guid nodeId,
-        Guid storyNodeId,
-        string storyBible,
+        Guid bookNodeId,
+        string bookBible,
         ProseWriterRouter router,
         NodeWorkbenchService workbench,
         bool force,
@@ -307,8 +307,8 @@ public static class AutoRunCli
             {
                 var ctx = new BeatContext
                 {
-                    NodeId            = storyNodeId,
-                    StoryBibleContext = storyBible,
+                    NodeId            = bookNodeId,
+                    StoryBibleContext = bookBible,
                     SceneSoFar        = sceneSoFar.Length > 6000 ? sceneSoFar[^6000..] : sceneSoFar,
                     BeatGoal          = goal,
                     Subtext           = beat.Subtext ?? "",

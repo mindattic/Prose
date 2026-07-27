@@ -12,7 +12,7 @@ namespace StreetSamurai.Core.Services;
 ///   <c>always</c> — pinned; never evicted (the small universal core).
 ///   <c>node</c>   — evicted when the active node code changes (Dynamic Context Memory: node-scoped, not global).
 ///                   Does not count against <see cref="TopicCapacity"/>.
-///   <c>series</c> — cross-story context: docs relevant to the whole book/arc (e.g. docs/series/*.md).
+///   <c>series</c> — cross-book context: docs relevant to the whole book/arc (e.g. docs/series/*.md).
 ///                   Evicted after <see cref="SeriesEvictAfterActions"/> actions without refresh (~8 beats).
 ///                   Sits between node and topic in TierRank so it survives longer than keyword hits.
 ///   <c>topic</c>  — LRU: evicted after <see cref="TopicEvictAfterActions"/> actions without a
@@ -41,7 +41,7 @@ public sealed class DocContextStack
     {
         public readonly ConcurrentDictionary<Guid, StackEntry> Entries = new();
         public int ActionCounter;
-        public string? ActiveNodeCode; // Dynamic Context Memory: tracks current node for node-tier eviction on story change
+        public string? ActiveNodeCode; // Dynamic Context Memory: tracks current node for node-tier eviction on book change
     }
 
     private readonly ConcurrentDictionary<Guid, ContextState> contexts = new();
@@ -60,7 +60,7 @@ public sealed class DocContextStack
         var state = GetOrCreate(contextId);
         Interlocked.Increment(ref state.ActionCounter);
 
-        // Dynamic Context Memory: evict node-tier docs when the story changes so stale bibles never bleed across nodes.
+        // Dynamic Context Memory: evict node-tier docs when the book changes so stale bibles never bleed across nodes.
         var code = nodeCode?.Trim();
         if (!string.IsNullOrEmpty(code) && code != state.ActiveNodeCode)
         {
@@ -123,7 +123,7 @@ public sealed class DocContextStack
         }
     }
 
-    // Dynamic Context Memory: evict all node-tier entries when switching to a different story node.
+    // Dynamic Context Memory: evict all node-tier entries when switching to a different book node.
     private static void EvictNodeTier(ContextState state)
     {
         foreach (var e in state.Entries.Values.ToList())

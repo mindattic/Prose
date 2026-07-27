@@ -10,7 +10,7 @@ questions: 34
 # GLMZ Canon Synchronization Survey {#SS-SURVEY-2026-07-04}
 
 > Generated from a contradiction-discovery workflow that extracted 753 factual claims from
-> `docs/BIBLE.md`, `docs/GLMZ_SETTING.md`, `docs/universes/GLMZ.md`, story node bibles,
+> `docs/BIBLE.md`, `docs/GLMZ_SETTING.md`, `docs/universes/GLMZ.md`, book node bibles,
 > and DB entity descriptions. 34 contradictions across 9 categories.
 >
 > **Instructions:** mark the canonical answer with `[x]`. One answer per question unless

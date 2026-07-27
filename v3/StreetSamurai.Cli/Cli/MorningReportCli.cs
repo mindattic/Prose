@@ -24,7 +24,7 @@ public static class MorningReportCli
 
         var since = DateTime.UtcNow.AddHours(-hours);
         var db    = sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>().CreateDbContext();
-        var cross = sp.GetRequiredService<CrossStoryConsistencyService>();
+        var cross = sp.GetRequiredService<CrossBookConsistencyService>();
         var metrics = sp.GetRequiredService<BeatProseMetricsService>();
         var settings = sp.GetRequiredService<SettingsService>();
 
@@ -36,10 +36,10 @@ public static class MorningReportCli
 
         var sections = new List<string>();
 
-        // ── 1. Cross-story contradictions ───────────────────────────────────
-        Console.WriteLine("§1  Cross-Story Contradictions");
+        // ── 1. Cross-book contradictions ───────────────────────────────────
+        Console.WriteLine("§1  Cross-Book Contradictions");
         Console.WriteLine(new string('─', 60));
-        var crossReport = await cross.GetCrossStoryConflictsAsync(since);
+        var crossReport = await cross.GetCrossBookConflictsAsync(since);
         if (crossReport.Conflicts.Count == 0)
         {
             Console.WriteLine("    ✓ None");
@@ -47,7 +47,7 @@ public static class MorningReportCli
         else
         {
             foreach (var c in crossReport.Conflicts.Take(10))
-                Console.WriteLine($"    {c.EntityName} | {c.Predicate}: \"{c.MajorityObject}\" vs \"{c.MinorityObject}\"  [{string.Join("/", c.MinorityStories)}]");
+                Console.WriteLine($"    {c.EntityName} | {c.Predicate}: \"{c.MajorityObject}\" vs \"{c.MinorityObject}\"  [{string.Join("/", c.MinorityBooks)}]");
             if (crossReport.Conflicts.Count > 10)
                 Console.WriteLine($"    ... and {crossReport.Conflicts.Count - 10} more. Run ss --consistency-audit for full list.");
         }
@@ -133,8 +133,8 @@ public static class MorningReportCli
         }
         Console.WriteLine();
 
-        // ── 6. Story score leaderboard ───────────────────────────────────────
-        Console.WriteLine("§6  Story Score Leaderboard");
+        // ── 6. Book score leaderboard ───────────────────────────────────────
+        Console.WriteLine("§6  Book Score Leaderboard");
         Console.WriteLine(new string('─', 60));
         var scoreHistory = await db.NodeScoreHistories.AsNoTracking().ToListAsync();
         var nodeNames    = await db.Nodes.AsNoTracking()
@@ -153,7 +153,7 @@ public static class MorningReportCli
         }
         else
         {
-            Console.WriteLine($"    {"Story",-20} {"Score",6}  {"Reviews",8}");
+            Console.WriteLine($"    {"Book",-20} {"Score",6}  {"Reviews",8}");
             foreach (var s in latestScores)
                 Console.WriteLine($"    {s.Slug,-20} {s.MeanScore,6:F1}  {s.ReviewCount,8}");
         }
@@ -173,13 +173,13 @@ public static class MorningReportCli
 
     // ── HTML builders ──────────────────────────────────────────────────────────
 
-    private static string BuildContradictionsHtml(CrossStoryConsistencyReport r)
+    private static string BuildContradictionsHtml(CrossBookConsistencyReport r)
     {
-        if (r.Conflicts.Count == 0) return "<p>✓ No cross-story contradictions.</p>";
+        if (r.Conflicts.Count == 0) return "<p>✓ No cross-book contradictions.</p>";
         var rows = r.Conflicts.Take(25).Select(c =>
             $"<tr><td>{Esc(c.EntityName)}</td><td>{Esc(c.Predicate)}</td>" +
-            $"<td>{Esc(c.MajorityObject)}<br><small>{Esc(string.Join(", ", c.MajorityStories))}</small></td>" +
-            $"<td>{Esc(c.MinorityObject)}<br><small>{Esc(string.Join(", ", c.MinorityStories))}</small></td></tr>");
+            $"<td>{Esc(c.MajorityObject)}<br><small>{Esc(string.Join(", ", c.MajorityBooks))}</small></td>" +
+            $"<td>{Esc(c.MinorityObject)}<br><small>{Esc(string.Join(", ", c.MinorityBooks))}</small></td></tr>");
         return $"<table><thead><tr><th>Entity</th><th>Predicate</th><th>Majority</th><th>Minority</th></tr></thead><tbody>{string.Join("", rows)}</tbody></table>";
     }
 
@@ -216,9 +216,9 @@ public static class MorningReportCli
     private static string BuildFullHtml(List<string> sections, double hours, DateTime since)
     {
         var titles = new[] {
-            "§1 Cross-Story Contradictions", "§2 New Findings",
+            "§1 Cross-Book Contradictions", "§2 New Findings",
             "§3 Prose Metrics Outliers", "§4 Near-Duplicate Alerts",
-            "§5 Score Correlation Model", "§6 Story Score Leaderboard"
+            "§5 Score Correlation Model", "§6 Book Score Leaderboard"
         };
         var body = new System.Text.StringBuilder();
         body.AppendLine($"<h1>StreetSamurai Morning Report — {DateTime.UtcNow:yyyy-MM-dd}</h1>");

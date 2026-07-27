@@ -148,7 +148,7 @@ public class LibertyReportService(
                 .FirstOrDefaultAsync(ct);
             if (nodeId == null) return [];
 
-            // SS-A43: beats live on chapter nodes (children), not directly on the story node.
+            // SS-A43: beats live on chapter nodes (children), not directly on the book node.
             var childIds = await db.Nodes.AsNoTracking()
                 .Where(n => n.ParentNodeId == nodeId)
                 .Select(n => n.Id).ToListAsync(ct);

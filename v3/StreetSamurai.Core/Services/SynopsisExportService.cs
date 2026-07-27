@@ -11,14 +11,14 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Chapter-by-chapter synopsis layer — the middle altitude of the three-tier story
-/// understanding (story = bible/blueprint, chapter = this, beat = prose).
+/// Chapter-by-chapter synopsis layer — the middle altitude of the three-tier book
+/// understanding (book = bible/blueprint, chapter = this, beat = prose).
 ///
-/// For every chapter of a story node, generates a concrete what-happens summary from
+/// For every chapter of a book node, generates a concrete what-happens summary from
 /// the live prose (events, decisions, reveals — spoiler-complete, no marketing tone),
 /// persists it to <see cref="NodeChapterSummary"/> (content-hash cached, so unchanged
 /// chapters never re-bill), and writes the assembled <c>story-synopsis.txt</c> into the
-/// story's export folder beside its .docx/.epub/.pdf exports. Runs as part of
+/// book's export folder beside its .docx/.epub/.pdf exports. Runs as part of
 /// <c>ss --export-node</c> and standalone via <c>ss --export-synopsis</c>.
 /// </summary>
 public sealed class SynopsisExportService(
@@ -35,38 +35,38 @@ public sealed class SynopsisExportService(
 
     private sealed record ChapterUnit(Guid NodeId, int Index, string Title, string SourceText, int BeatCount);
 
-    /// <summary>Generates/refreshes all chapter summaries for the story (content-hash
+    /// <summary>Generates/refreshes all chapter summaries for the book (content-hash
     /// cached in NodeChapterSummaries) and returns them in reading order. This is the
     /// chapter-altitude view — consumed by story-synopsis.txt and the altitude audit.</summary>
     public async Task<List<(int Index, string Title, string Synopsis)>> GetChapterSummariesAsync(
-        Guid storyNodeId, bool force = false, CancellationToken ct = default)
+        Guid bookNodeId, bool force = false, CancellationToken ct = default)
     {
-        var chapters = await LoadChapterUnitsAsync(storyNodeId, ct);
+        var chapters = await LoadChapterUnitsAsync(bookNodeId, ct);
         var sections = new List<(int Index, string Title, string Synopsis)>(chapters.Count);
         foreach (var ch in chapters)
         {
             ct.ThrowIfCancellationRequested();
-            var synopsis = await GetOrGenerateAsync(storyNodeId, ch, force, ct);
+            var synopsis = await GetOrGenerateAsync(bookNodeId, ch, force, ct);
             sections.Add((ch.Index, ch.Title, synopsis));
         }
         return sections;
     }
 
-    /// <summary>Generates/refreshes all chapter summaries for the story and writes
+    /// <summary>Generates/refreshes all chapter summaries for the book and writes
     /// story-synopsis.txt to its publish folder. Returns the file path, or null when
-    /// the story has no enabled prose.</summary>
-    public async Task<string?> ExportAsync(Guid storyNodeId, bool force = false, CancellationToken ct = default)
+    /// the book has no enabled prose.</summary>
+    public async Task<string?> ExportAsync(Guid bookNodeId, bool force = false, CancellationToken ct = default)
     {
-        var sections = await GetChapterSummariesAsync(storyNodeId, force, ct);
+        var sections = await GetChapterSummariesAsync(bookNodeId, force, ct);
         if (sections.Count == 0) return null;
 
-        string storyTitle;
+        string bookTitle;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
-            storyTitle = await db.Nodes.AsNoTracking().Where(n => n.Id == storyNodeId)
+            bookTitle = await db.Nodes.AsNoTracking().Where(n => n.Id == bookNodeId)
                 .Select(n => n.Title).FirstAsync(ct);
 
         var sb = new StringBuilder();
-        sb.AppendLine(storyTitle.ToUpperInvariant());
+        sb.AppendLine(bookTitle.ToUpperInvariant());
         sb.AppendLine($"Chapter-by-chapter synopsis — generated {DateTime.UtcNow:yyyy-MM-dd} from the live prose.");
         sb.AppendLine(new string('=', 72));
         foreach (var (_, title, synopsis) in sections)
@@ -77,7 +77,7 @@ public sealed class SynopsisExportService(
             sb.AppendLine(synopsis.Trim());
         }
 
-        var dir = await NodePublishDirAsync(storyNodeId, ct);
+        var dir = await NodePublishDirAsync(bookNodeId, ct);
         Directory.CreateDirectory(dir);
         var path = Path.Combine(dir, "story-synopsis.txt");
         // BOM on purpose: this .txt is opened by humans in arbitrary Windows editors,
@@ -89,20 +89,20 @@ public sealed class SynopsisExportService(
 
     // ── chapter loading ──────────────────────────────────────────────────────
 
-    private async Task<List<ChapterUnit>> LoadChapterUnitsAsync(Guid storyNodeId, CancellationToken ct)
+    private async Task<List<ChapterUnit>> LoadChapterUnitsAsync(Guid bookNodeId, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var chapterNodes = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == storyNodeId)
+            .Where(n => n.ParentNodeId == bookNodeId)
             .OrderBy(n => n.SortKey)
             .Select(n => new { n.Id, n.Title })
             .ToListAsync(ct);
 
-        // Flat story (no chapter children): the story node is one unit.
+        // Flat book (no chapter children): the book node is one unit.
         var sources = chapterNodes.Count > 0
             ? chapterNodes.Select(c => (c.Id, Title: c.Title ?? "")).ToList()
-            : new List<(Guid Id, string Title)> { (storyNodeId, "") };
+            : new List<(Guid Id, string Title)> { (bookNodeId, "") };
 
         var units = new List<ChapterUnit>();
         for (int i = 0; i < sources.Count; i++)
@@ -118,7 +118,7 @@ public sealed class SynopsisExportService(
             if (text.Length > MaxSourceChars) text = text[..MaxSourceChars] + "\n[SOURCE TRUNCATED]";
 
             var title = string.IsNullOrWhiteSpace(sources[i].Title)
-                ? (sources.Count == 1 ? "The Story" : $"Chapter {i + 1}")
+                ? (sources.Count == 1 ? "The Book" : $"Chapter {i + 1}")
                 : sources[i].Title;
             units.Add(new ChapterUnit(sources[i].Id, i, title, text, beats.Count));
         }
@@ -127,13 +127,13 @@ public sealed class SynopsisExportService(
 
     // ── per-chapter generation with content-hash cache ───────────────────────
 
-    private async Task<string> GetOrGenerateAsync(Guid storyNodeId, ChapterUnit ch, bool force, CancellationToken ct)
+    private async Task<string> GetOrGenerateAsync(Guid bookNodeId, ChapterUnit ch, bool force, CancellationToken ct)
     {
         var hash = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(ch.SourceText)));
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var existing = await db.NodeChapterSummaries
-            .FirstOrDefaultAsync(s => s.NodeId == storyNodeId && s.ChapterIndex == ch.Index, ct);
+            .FirstOrDefaultAsync(s => s.NodeId == bookNodeId && s.ChapterIndex == ch.Index, ct);
 
         // Cache key = source hash + generating model, so a model upgrade regenerates
         // stale-quality summaries incrementally (resumable after provider hiccups).
@@ -162,7 +162,7 @@ public sealed class SynopsisExportService(
             db.NodeChapterSummaries.Add(new NodeChapterSummary
             {
                 Id = Guid.CreateVersion7(),
-                NodeId = storyNodeId,
+                NodeId = bookNodeId,
                 ChapterIndex = ch.Index,
                 SummaryText = synopsis,
                 FactsJson = storedFacts,
@@ -195,7 +195,7 @@ public sealed class SynopsisExportService(
             fate or motive is explicit, mirror its wording. End with one sentence stating the
             explicit final fate of every named character who was harmed, captured, or
             neutralized in this chapter (alive/wounded/dead/stopped — exactly as the text has
-            it). Your summary is used to audit the story against its bible, so precision on
+            it). Your summary is used to audit the book against its bible, so precision on
             fates, motives, and counts is the job.
             Return STRICT JSON only, no markdown fence:
             {"synopsis":"...","facts":{"entities":["..."],"locations":["..."],"events":["..."],"state_changes":["..."]}}

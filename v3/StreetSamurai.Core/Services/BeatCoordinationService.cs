@@ -9,7 +9,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Full-coverage bible↔blueprint↔beat coordination for a story node.
+/// Full-coverage bible↔blueprint↔beat coordination for a book node.
 ///
 /// Produces a 3-coordinate record for EVERY enabled beat:
 ///   • MEANING      — what the beat means            (Beat.Description + bible)
@@ -86,7 +86,7 @@ public class BeatCoordinationService
             .Select(c => new { c.Id, c.NodeCode, c.Title, c.SortKey })
             .ToListAsync(ct);
 
-        // Direct beats (single-node stories) count as one "chapter 0"
+        // Direct beats (single-node books) count as one "chapter 0"
         var chapterIndex = new Dictionary<Guid, int>();
         for (int i = 0; i < chapters.Count; i++) chapterIndex[chapters[i].Id] = i;
         var chapterLabel = chapters.ToDictionary(
@@ -123,7 +123,7 @@ public class BeatCoordinationService
         // The blueprint arrays are indexed by the blueprint's own granularity:
         // chapter-granular blueprints are chapter-parallel (one entry per chapter),
         // beat-granular blueprints are beat-parallel (one entry per beat in reading
-        // order) — regardless of whether the story is chaptered or flat. Key the
+        // order) — regardless of whether the book is chaptered or flat. Key the
         // construction slice by the matching index so every beat reads its OWN slice.
         int ordinal = -1;
 
@@ -146,7 +146,7 @@ public class BeatCoordinationService
 
             if (r.Score is null or <= 0) flags.Add("UNSCORED");
 
-            // Construction slice (chapter-parallel for chaptered stories, beat-parallel for flat ones)
+            // Construction slice (chapter-parallel for chaptered books, beat-parallel for flat ones)
             string? esc = constrIdx >= 0 && constrIdx < escalation.Length
                 ? escalation[constrIdx].ToString() : null;
             var evt = constrIdx >= 0 ? events.FirstOrDefault(e => e.BeatIndex == constrIdx) : null;
@@ -177,8 +177,8 @@ public class BeatCoordinationService
             });
         }
 
-        // Story-wide construction context (applies to every beat)
-        var storyScope = new StoryScopeContext
+        // Book-wide construction context (applies to every beat)
+        var bookScope = new BookScopeContext
         {
             TemporalScheme = bp?.TemporalScheme,
             ResolutionMode = bp?.ResolutionMode,
@@ -204,7 +204,7 @@ public class BeatCoordinationService
             totalBeats = coords.Count,
             covered = coords.Count(c => c.Covered),
             chapterGranular,
-            storyScope,
+            bookScope,
             flagCounts,
             beats = coords,
         };
@@ -227,7 +227,7 @@ public class BeatCoordinationService
             var bibleFile = Path.Combine(paths.DataRoot, "docs", "nodes", $"{nodeCode}.md");
             if (File.Exists(bibleFile))
             {
-                var section = BuildIndexSection(nodeCode, coords, storyScope, flagCounts, jsonPath);
+                var section = BuildIndexSection(nodeCode, coords, bookScope, flagCounts, jsonPath);
                 await ReplaceSectionAsync(bibleFile, section, ct);
                 await markdown.SyncAllAsync(ct: ct);
                 stampedTo = bibleFile;
@@ -240,12 +240,12 @@ public class BeatCoordinationService
 
         return new CoordinationReport(
             nodeCode, coords.Count, coords.Count(c => c.Covered),
-            flagCounts, storyScope, coords, jsonPath, stampedTo);
+            flagCounts, bookScope, coords, jsonPath, stampedTo);
     }
 
     // ── Index section builder (idempotent; grouped by chapter) ──
     private static string BuildIndexSection(
-        string nodeCode, List<BeatCoordinate> coords, StoryScopeContext scope,
+        string nodeCode, List<BeatCoordinate> coords, BookScopeContext scope,
         Dictionary<string, int> flagCounts, string jsonPath)
     {
         var sb = new StringBuilder();
@@ -257,7 +257,7 @@ public class BeatCoordinationService
         sb.AppendLine($"> Full record: `{RelPath(jsonPath)}`.");
         sb.AppendLine();
         sb.AppendLine($"**Coverage:** {coords.Count(c => c.Covered)}/{coords.Count} beats fully covered. "
-            + $"Story-wide construction: temporal={scope.TemporalScheme}, resolution={scope.ResolutionMode}, "
+            + $"Book-wide construction: temporal={scope.TemporalScheme}, resolution={scope.ResolutionMode}, "
             + $"moral={scope.MoralPolarity}, ending={scope.EndingStyle}, granularity={scope.Granularity}.");
         sb.AppendLine();
         if (flagCounts.Count > 0)
@@ -384,7 +384,7 @@ public class BeatCoordinate
     public bool Covered { get; set; }
 }
 
-public class StoryScopeContext
+public class BookScopeContext
 {
     public string? TemporalScheme { get; set; }
     public string? ResolutionMode { get; set; }
@@ -400,7 +400,7 @@ public record CoordinationReport(
     int TotalBeats,
     int Covered,
     Dictionary<string, int> FlagCounts,
-    StoryScopeContext StoryScope,
+    BookScopeContext BookScope,
     List<BeatCoordinate> Beats,
     string JsonPath,
     string? StampedTo);

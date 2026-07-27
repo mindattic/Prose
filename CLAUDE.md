@@ -30,9 +30,9 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
 
-**HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any story/beat removal must go through the CLI (`ss --beat delete`). If a story genuinely needs to be deleted, get explicit user confirmation naming the story by title and slug before touching the DB.
+**HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any book/beat removal must go through the CLI (`ss --beat delete`). If a book genuinely needs to be deleted, get explicit user confirmation naming the book by title and slug before touching the DB.
 
-**Node deletion cascade order (system rule):** When deleting a story node via `--delete-node`, the required order is beats → chapters → story node. The CLI handles this automatically (cascade was added 2026-07-18). Never try to delete a parent node before its chapter children — `FK_Nodes_ParentNode` will block it. Delete order for manual confirmation: (1) BeatNodes memberships + exclusive beats for the child chapter, (2) structural blueprints for the child, (3) the child chapter node, (4) then the same sequence for the parent story node.
+**Node deletion cascade order (system rule):** When deleting a book node via `--delete-node`, the required order is beats → chapters → book node. The CLI handles this automatically (cascade was added 2026-07-18). Never try to delete a parent node before its chapter children — `FK_Nodes_ParentNode` will block it. Delete order for manual confirmation: (1) BeatNodes memberships + exclusive beats for the child chapter, (2) structural blueprints for the child, (3) the child chapter node, (4) then the same sequence for the parent book node.
 
 ## Code Style
 - Do NOT use underscore-prefixed variables (e.g., `_myField`). Use `camelCase` for private fields without the underscore prefix.
@@ -61,7 +61,7 @@ What it means in practice:
 
 ## Per-Node Documentation (SS-A11 + SS-A45)
 
-Every story node with active prose has a **unified Story Context Document** stored in
+Every book node with active prose has a **unified Book Context Document** stored in
 `Nodes.NodeBible` (DB) and mirrored to `docs/nodes/<CODE>.md` (generated read-only file).
 
 **SS-A45 (shipped 2026-07-15): ALL generated `.md` files are gitignored. They do not exist
@@ -74,7 +74,7 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 | Location | Contains | Source of truth / how to edit |
 |---|---|---|
 | `CanonDocumentSections` (DB) | Engine invariants, GLMZ canon, Entos canon, etc. | MCP `set_canon_section`; generates to `docs/BIBLE.md`, `docs/WORLD.md`, `docs/universes/ENTOS.md`, etc. |
-| `Nodes.NodeBible` (DB) | **The single source of truth for that story** — arc, characters, voice, locks, blueprint, beat spine | `set_story_bible` MCP (hand-authored sections) |
+| `Nodes.NodeBible` (DB) | **The single source of truth for that book** — arc, characters, voice, locks, blueprint, beat spine | `set_book_bible` MCP (hand-authored sections) |
 | `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
 | `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/ENTOS.md` | Generated canon docs — ephemeral, gitignored | Re-run `ss --generate-canon-md --all` to materialize |
 | `docs/CRAFT.md` | Universal prose rules — **Base layer** of DCM static hierarchy; all universes (the DON'Ts) | Hand-edit directly |
@@ -87,11 +87,11 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 
 ### The Three Altitudes — the named examination model
 
-Every story is examined at three magnifications (canonical definition: `docs/LOGIC.md` §8):
+Every book is examined at three magnifications (canonical definition: `docs/LOGIC.md` §8):
 
 | Altitude | What you see | Instrument |
 |---|---|---|
-| **10,000 ft — story** | Arc, locks, structure-as-designed | `Nodes.NodeBible` + structural blueprint |
+| **10,000 ft — book** | Arc, locks, structure-as-designed | `Nodes.NodeBible` + structural blueprint |
 | **100 ft — chapter** | What actually happens, in order | `NodeChapterSummaries` / `story-synopsis.txt` |
 | **10 ft — beat** | The prose; who's in the room | Beat text + `BeatEntityPresence` + verifications |
 
@@ -104,8 +104,8 @@ drop to beat altitude only where a finding points.
 ### Dynamic Context Memory (Dynamic Context Memory) — the named protocol
 
 **"Dynamic Context Memory" (Dynamic Context Memory)** is the canonical name for the beat-scoped, drift-free
-context loading protocol used in all StreetSamurai prose generation (new stories AND edits
-to existing stories). Use this name when referring to the system in code comments, docs,
+context loading protocol used in all StreetSamurai prose generation (new books AND edits
+to existing books). Use this name when referring to the system in code comments, docs,
 and conversation.
 
 **Three phases:**
@@ -125,21 +125,21 @@ resources in DCM. Everything else (entities, topics, relational cascade) is dyna
 | Layer | File | Scope | How loaded |
 |---|---|---|---|
 | **1 — Base** | `docs/CRAFT.md` | All universes, all stories | Globally pinned via `add_context_doc` (24h; renew each session) |
-| **2 — Universe** | `docs/GLMZ.md` (GLMZ) or `docs/SCRY.md` (Fantasy) | One universe | Globally pinned; keyword triggers activate per-story |
-| **3 — StoryBible** | `docs/nodes/<CODE>.md` | One story | `node` tier — auto-loaded by DocContextService; evicts on story change |
+| **2 — Universe** | `docs/GLMZ.md` (GLMZ) or `docs/SCRY.md` (Fantasy) | One universe | Globally pinned; keyword triggers activate per-book |
+| **3 — BookBible** | `docs/nodes/<CODE>.md` | One book | `node` tier — auto-loaded by DocContextService; evicts on book change |
 | **4 — Register (SS-A46)** | The **POV character's Character record** (`SpeechVocabulary` / `SpeechCadence` / `SpeechSubtext` / `SpeechUnderPressure` / `SpeechIntimacyRegister` / `PsychologySecret`) | One narrating character (**per beat** — POV can change within a book) | The beat's narrator (from the bible **POV Map** → `BeatEntityPresence` `PresenceType='pov'` row) is materialized and **pinned dominant** (score 999) by `DocContextService.PrepareForNodeAsync(povEntityId:)`; other present characters' registers still load via clue-gathering (step 0) but don't override the narrator's |
 
-**Hierarchy resolution:** When layers conflict, the lower tier wins for its own story (Register > StoryBible > Universe > Base). Use the narrowest scope that is authoritative.
+**Hierarchy resolution:** When layers conflict, the lower tier wins for its own book (Register > BookBible > Universe > Base). Use the narrowest scope that is authoritative.
 
 **Voice is the character, not a file (SS-A46, 2026-07-20).** There are no `docs/registers/<NAME>.md` files and no imposed tonal/flagship registers (JOY, SORROW, Kyle/CODA are retired and deleted). A narrator's voice lives in their **Character record's speech/psychology fields** — so it is loaded automatically by the existing DCM entity-doc path when that character is on the page, and it **evolves as the record evolves**: update the character (via `create_character` with the id, or a wound/continuity claim) and the next beat's prose tracks the change. The clear base voice (CRAFT.md §0–§2) is the floor; the character's own diction and attention are the only "register." A Pixel chapter reads in Pixel's voice; a Bear chapter in Bear's.
 
 **Why Dynamic Context Memory prevents drift:** The LLM sees only what is pertinent to the current beat's world.
-Unrelated canon, stale entity states, and out-of-scope story data never enter the prompt.
+Unrelated canon, stale entity states, and out-of-scope book data never enter the prompt.
 Drift happens when context is too wide; Dynamic Context Memory keeps it narrow by construction.
 
-**Applies to:** all new stories (including M101), all beat-by-beat edits to existing stories.
+**Applies to:** all new books (including M101), all beat-by-beat edits to existing books.
 The prose engine (ProseWriterRouter) implements Dynamic Context Memory automatically; Claude Code triggers it
-by calling prose generation tools at beat scope, not story scope.
+by calling prose generation tools at beat scope, not book scope.
 
 **How the system works:**
 
@@ -161,7 +161,7 @@ subset of .md files is present at any moment — never a full dump of all data.
 
 Then PrepareContextAsync runs its five passes:
 1. **always** — pinned universal core (BIBLE.digest.md)
-2. **node** — the active story's bible + register (evicted on story change)
+2. **node** — the active book's bible + register (evicted on book change)
 3. **keyword** — topic docs whose Triggers match the beat-goal text (includes newly-created
    entity docs from step 0, since they carry name/slug triggers)
 4. **embedding** — topic docs semantically near the beat goal (markdown embedding scope)
@@ -175,14 +175,14 @@ relevant to the current prose:
 
 - A character present on every page (e.g. Lyra in VIGL) keeps their `LastTouchedAction`
   refreshed on every beat through `RecordMentions()`. They never evict.
-- A character who leaves the story for many beats (e.g. Vega between Part 1 and Port
+- A character who leaves the book for many beats (e.g. Vega between Part 1 and Port
   Gadriket reunion) evicts automatically after `EvictAfterActions = 4` beats without a
   reference. Their `.md` vanishes from the working set until the prose references them again.
 - **Worst case:** a character's `.md` evicts before it is needed again. The engine re-fetches
   from DB on the next `PrepareForNodeAsync()` call. No state is lost — the DB is the heap.
 
 The tuning knob is `EvictAfterActions` in `DocContextStack`. Topic docs evict after 4 beats;
-`node`-tier docs evict on story change (not time). Do not change `EvictAfterActions` without
+`node`-tier docs evict on book change (not time). Do not change `EvictAfterActions` without
 understanding the Lyra/Vega tradeoff: lower = tighter context, higher = warmer cache.
 
 **Dynamic Context Memory relational graph — the `related:` frontmatter field:**
@@ -235,7 +235,7 @@ which beat, in-world date) before Chapter 4's `.md` is generated. Never edit the
 generation), trigger generation at the **narrowest possible scope**:
 
 ```powershell
-ss --generate-node-doc --slug <slug>      # one story's bible + blueprint
+ss --generate-node-doc --slug <slug>      # one book's bible + blueprint
 ss --generate-canon-md --type <type>      # one canon doc (not --all unless needed)
 ss --sync-markdown                        # push to MarkdownFiles so DocContextService sees it
 ```
@@ -245,10 +245,10 @@ Or MCP: `generate_node_doc` (slug required) + `sync_markdown_files`. Do not run
 
 **Workflow:**
 
-1. **Before writing or editing a story** — trust the prose engine to auto-inject context.
+1. **Before writing or editing a book** — trust the prose engine to auto-inject context.
    For planning/review where Claude Code needs to read the bible: generate at narrow scope,
    then GC when done (`powershell -File tools/codex.ps1 gc`).
-2. **To update arc, characters, voice register, or narrative locks** — call `set_story_bible` MCP
+2. **To update arc, characters, voice register, or narrative locks** — call `set_book_bible` MCP
    with updated hand-authored markdown. Then re-run `generate_node_doc` so the engine
    picks up the change on the next prose call.
 3. **When a story event confirms an empirical fact** — update DB first (entity row, continuity
@@ -300,20 +300,20 @@ The project follows the **MindAttic Codex** documentation standard. The source o
   works. (Craft/voice rules moved to `docs/CRAFT.md` + `docs/GLMZ.md`.) Hand-edit directly.
 - **`docs/FRANCHISE.md`** — **GLMZ** franchise & IP bible: commercial positioning, genre, logline.
   Hand-edit directly.
-- **`Nodes.NodeBible`** (DB, L0 per-story) — story arc, beat spine, character rules, locks,
+- **`Nodes.NodeBible`** (DB, L0 per-book) — book arc, beat spine, character rules, locks,
   voice register, structural blueprint. **The single source of truth for that BookNode.**
   Mirrored to `docs/nodes/<CODE>.md` as a generated read-only file — never hand-edit the file.
 - **`docs/USER_STORIES.md`** (L2) — test-cited stories + backlog + audit log. Every `✅` names its
   verifying test or recorded evidence.
-- **`docs/series/GLMZ.md`** — GLMZ universe story coordination board: main series chapter
-  roster (Books 1–5), standalone story roster, character arc ledger, villain supply chain,
-  cross-story plant/payoff registry, world-revelation sequencing, entity seeding roadmap.
-  **Update this doc whenever a story is added, a character state is resolved, or a plant/payoff
+- **`docs/series/GLMZ.md`** — GLMZ universe book coordination board: main series chapter
+  roster (Books 1–5), standalone book roster, character arc ledger, villain supply chain,
+  cross-book plant/payoff registry, world-revelation sequencing, entity seeding roadmap.
+  **Update this doc whenever a book is added, a character state is resolved, or a plant/payoff
   is confirmed.** This is a planning instrument, not a canon source.
-- **`docs/planning/_TEMPLATE.md`** — mandatory 10-section story brief template. Every new GLMZ
-  story fills `docs/planning/<CODE>-brief.md` from this template before a node bible is created
+- **`docs/planning/_TEMPLATE.md`** — mandatory 10-section book brief template. Every new GLMZ
+  book fills `docs/planning/<CODE>-brief.md` from this template before a node bible is created
   (see New Story Workflow Step 0 below).
-- **`docs/rfc/`** — design notes that graduate into BIBLE.md or story bibles.
+- **`docs/rfc/`** — design notes that graduate into BIBLE.md or book bibles.
 - **`docs/data/`** (L5) — canon-as-data: JSON Schemas + the master entity-identity table for the
   `engine_data/*.json` seed corpus. **Live canon is the SQL DB, not files** (SS-LAW-1).
 - **`docs/BIBLE.digest.md`** — GENERATED by `tools/codex.ps1 digest`; never hand-edit. The
@@ -325,12 +325,12 @@ canonical destinations. Do not append to it. Do not reference it.
 Working rules:
 - **Canon changes go DIRECTLY into the authoritative source** — `docs/BIBLE.md` (or `docs/WORLD.md`) for
   GLMZ/engine world facts, `docs/universes/ENTOS.md` for Fantasy/Entos world facts, `Nodes.NodeBible` (via
-  `set_story_bible` MCP) for story-specific facts, `docs/CRAFT.md` for universal prose craft rules,
+  `set_book_bible` MCP) for book-specific facts, `docs/CRAFT.md` for universal prose craft rules,
   `docs/GLMZ.md` for GLMZ craft additions, `docs/SCRY.md` for SCRY/Fantasy craft additions.
   There is no amendment layer. After updating NodeBible, re-run `generate_node_doc` + `ss --sync-markdown`.
   After editing CRAFT.md / GLMZ.md / SCRY.md / registers, run `ss --sync-markdown`.
 - A fact lives in **exactly one file**; cite it by its stable `{#SS-...}` id, never by line number.
-- Update the Bible/stories status in the **same change** that moves a goal; "done" means a test or
+- Update the Bible/books status in the **same change** that moves a goal; "done" means a test or
   build proves it.
 - After editing any `docs/*` canon file, run `powershell -File tools/codex.ps1 digest` then
   `powershell -File tools/codex.ps1 doctor` — doctor must pass. (`pwsh` is not installed; use `powershell`.)
@@ -339,23 +339,23 @@ Working rules:
 
 ## New Story Workflow (mandatory — see [docs/BIBLE.md §10](docs/BIBLE.md#SS-§10))
 
-**Every new story/book follows this sequence without exception:**
+**Every new book follows this sequence without exception:**
 
 0. **Series Brief** — fill `docs/planning/<CODE>-brief.md` using the template at
    `docs/planning/_TEMPLATE.md`. The brief must cover all 10 sections before a node bible is
-   created. A story that cannot answer all 10 sections does not belong in the roster yet.
-   After filing: update `docs/series/GLMZ.md` Story Roster (§1–2), Character Arc Ledger exit
+   created. A book that cannot answer all 10 sections does not belong in the roster yet.
+   After filing: update `docs/series/GLMZ.md` Book Roster (§1–2), Character Arc Ledger exit
    states (§3), and Plant/Payoff Registry (§5). Check World-Revelation Sequencing (§6) — this
-   story must not reveal anything before its designated book.
+   book must not reveal anything before its designated book.
 1. **Docs first** — if new world facts: GLMZ facts → `docs/BIBLE.md` or `docs/WORLD.md`; Fantasy/Entos
-   facts → `docs/universes/ENTOS.md`. For story-specific facts (arc, characters, voice register, locks),
-   write the hand-authored content via `set_story_bible` MCP into `Nodes.NodeBible`. Add story entry to
+   facts → `docs/universes/ENTOS.md`. For book-specific facts (arc, characters, voice register, locks),
+   write the hand-authored content via `set_book_bible` MCP into `Nodes.NodeBible`. Add story entry to
    `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
 2. **Entities** — seed every named character, CorpoNation, place, or weapon into the DB via CLI or
    MCP **before any prose is generated**.
-3. **Story structure (SS-A43)** — create a **BookNode** (MCP `create_story` / CLI `--create-story`)
+3. **Book structure (SS-A43)** — create a **BookNode** (MCP `create_book` / CLI `--create-book`)
    + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
-   outline) = the story node's `seed` text.
+   outline) = the book node's `seed` text.
 4. **Structural blueprint (StoryScope countermeasures)** — after the bible/spine exists, run
    `ss --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). This commits the
    structural anti-tell decisions BEFORE prose: thematically-parallel subplot + carrier beats,
@@ -386,17 +386,17 @@ for all prose writing — it coordinates all the services below and logs coverag
 |---|---|---|
 | `BeatModeDetector` | Classifies beat as Combat/Narrative/EmotionalClimax/Dialogue/Transition/Revelation | Keyword scan on BeatGoal |
 | `PacingService` | BREATHE/FLOW/TIGHTEN/STRIKE/SETTLE prose rhythm | Position + BeatGoal keywords; Combat forces STRIKE |
-| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in story |
-| `PlantPayoffService` | Active plant/payoff pairs for the story | `BeatContext.NodeId != Guid.Empty` |
-| `StoryAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
+| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in book |
+| `PlantPayoffService` | Active plant/payoff pairs for the book | `BeatContext.NodeId != Guid.Empty` |
+| `BookAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
 | `CombatProseGuidance` | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
 | `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode (forensic mind-reads-system, involuntary body-truth, end-on-the-act, image-once, distinct per-narrator rhythm) | All beat modes (mode-keyed) |
 | `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`ss --generate-blueprint`) |
 
 ### Coverage monitoring
 ```
-ss --workflow-status --slug <slug>    # per-story service coverage matrix + gaps
-ss --workflow-status --all            # global utilization across all stories
+ss --workflow-status --slug <slug>    # per-book service coverage matrix + gaps
+ss --workflow-status --all            # global utilization across all books
 ```
 MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 
@@ -405,28 +405,28 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` — NOT BeatGeneratorService directly
 3. After writing, run `ss --examine-emotion --slug <slug>` to score emotional dimensions
 4. After enough beats scored, run `ss --update-register-exemplars --slug <slug>` to update the voice register
-5. After story complete, run `ss --story-audit --slug <slug>` to audit gateway/sequel commandments
-6. After story complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
-7. After story complete, run `ss --storyscope-audit --slug <slug>` to verify the structural
+5. After book complete, run `ss --book-audit --slug <slug>` to audit gateway/sequel commandments
+6. After book complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
+7. After book complete, run `ss --storyscope-audit --slug <slug>` to verify the structural
    anti-tells held (escalation monotonic, event types varied, no moral gloss, no epilogue,
    subplot executed). BLOCKER findings fix per logic-sweep minimal-splice rules, then re-audit.
 
 ## Quality Verification SOP — Logic Sweeps, NOT Votes (LAW: SS-A44)
 
-**Default QA for any story that changes or needs validation is a LOGIC & CONTINUITY SWEEP,
+**Default QA for any book that changes or needs validation is a LOGIC & CONTINUITY SWEEP,
 not a review panel and not a Legion vote.** Panels and votes are too expensive — run them
 ONLY when the user explicitly asks for a vote/review/score in that conversation. The engine
 enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:true` only).
 
 **Canonical methodology: [docs/LOGIC.md](docs/LOGIC.md). Invocable runbook: `/logic-sweep [slug ...]`.**
 
-**The logic sweep:** agents read the story end-to-end (enabled beats only:
+**The logic sweep:** agents read the book end-to-end (enabled beats only:
 `NodeBeats.IsEnabled=1 ORDER BY NodeBeats.SortKey`) and audit six dimensions:
 1. **Causality chain** — every event has an established cause, every decision a motivation,
    every capability an on-page origin.
 2. **Knowledge states** — who knows what, when they learned it; nobody acts on knowledge
    they don't have.
-3. **Timeline** — reconstruct the story clock; no impossibilities.
+3. **Timeline** — reconstruct the book clock; no impossibilities.
 4. **Plant/payoff ledger** — two-way: every plant pays, every payoff was planted.
 5. **Orphan references** — nothing references removed/disabled/merged content.
 6. **Bible agreement** — prose and `Nodes.NodeBible` (the hand-authored sections) tell the same

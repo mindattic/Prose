@@ -53,7 +53,7 @@ public class ProseWriterRouter(
     StoryScienceService? storyScience = null,
     NarrativeChartService? narrativeChart = null,
     StructuralBlueprintService? structuralBlueprint = null,
-    StoryStateLedgerService? storyStateLedger = null,
+    BookStateLedgerService? bookStateLedger = null,
     WorldGraphService? worldGraph = null,
     CanonGroundingService? canonGrounding = null,
     LibertyReportService? libertyReport = null)
@@ -147,8 +147,8 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(DocContextService)); }
         }
 
-        // Node-bible fallback: an empty doc stack means the story's bible never reached the prompt
-        // (typically docs/nodes/<CODE>.md not yet synced into MarkdownFiles). A story node must never
+        // Node-bible fallback: an empty doc stack means the book's bible never reached the prompt
+        // (typically docs/nodes/<CODE>.md not yet synced into MarkdownFiles). A book node must never
         // generate bible-blind — fall back to Nodes.NodeBible and warn so the missing sync stays visible.
         if (docStackContext.Length == 0 && settings?.DocContextEnabled == true
             && context.NodeId != Guid.Empty && dbFactory != null)
@@ -163,7 +163,7 @@ public class ProseWriterRouter(
                 if (!string.IsNullOrWhiteSpace(nodeBible))
                 {
                     const int maxBibleChars = 16000;
-                    docStackContext = "## NODE BIBLE (authoritative for this story — do not contradict)\n"
+                    docStackContext = "## NODE BIBLE (authoritative for this book — do not contradict)\n"
                         + (nodeBible.Length > maxBibleChars ? nodeBible[..maxBibleChars] : nodeBible);
                     log.LogWarning(
                         "Doc context stack EMPTY for node {NodeId} — fell back to Nodes.NodeBible ({Chars} chars). Run 'ss --sync-markdown' to restore the full doc stack.",
@@ -322,7 +322,7 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(ConsequenceService)); }
         }
 
-        // Cross-story persistent consequences for named characters (contract outcomes, faction burns).
+        // Cross-book persistent consequences for named characters (contract outcomes, faction burns).
         if (consequenceEngine != null && context.CharactersInScene.Count > 0)
         {
             try
@@ -395,10 +395,10 @@ public class ProseWriterRouter(
         // Story plot state: arc-level named states (crises, dramatic questions, objectives,
         // threats, alliances) across all beats — prevents crisis-amnesia on long nodes.
         var plotEventsContext = context.PlotEventsContext;
-        if (string.IsNullOrEmpty(plotEventsContext) && storyStateLedger != null && context.NodeId != Guid.Empty)
+        if (string.IsNullOrEmpty(plotEventsContext) && bookStateLedger != null && context.NodeId != Guid.Empty)
         {
-            try { plotEventsContext = await storyStateLedger.BuildContextAsync(context.NodeId, ct); }
-            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(StoryStateLedgerService)); }
+            try { plotEventsContext = await bookStateLedger.BuildContextAsync(context.NodeId, ct); }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(BookStateLedgerService)); }
         }
 
         // Story Science: King + Storr craft laws — psychometric consistency, status dynamics,
@@ -410,7 +410,7 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(StoryScienceService)); }
         }
 
-        // Structural Blueprint: this story's pre-committed anti-tell decisions (StoryScope
+        // Structural Blueprint: this book's pre-committed anti-tell decisions (StoryScope
         // countermeasures) — subplot carrier, anachrony cut, escalation floor, event type,
         // ending/resolution mode. Empty when the node has no blueprint; never blocks writing.
         var structuralBlueprintGuidance = context.StructuralBlueprintGuidance;
@@ -474,7 +474,7 @@ public class ProseWriterRouter(
                 var storyScopeGuidance = await BuildFindingsGuidanceAsync(
                     context.NodeId,
                     summaryPrefix: "STORYSCOPE",
-                    headerLine: "STORYSCOPE AUDIT GUIDANCE — a structural audit found these AI-fiction tells in this story; do not reproduce them in this beat:",
+                    headerLine: "STORYSCOPE AUDIT GUIDANCE — a structural audit found these AI-fiction tells in this book; do not reproduce them in this beat:",
                     includeSuggestedFix: true,
                     ct: ct);
                 if (storyScopeGuidance.Length > 0)
@@ -674,10 +674,10 @@ public class ProseWriterRouter(
             }
 
             // Story plot state: extract arc-level state transitions from the completed beat.
-            if (storyStateLedger != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            if (bookStateLedger != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
             {
-                try { await storyStateLedger.ExtractAndRecordAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); }
-                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAndRecordAsync failed", nameof(StoryStateLedgerService)); }
+                try { await bookStateLedger.ExtractAndRecordAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAndRecordAsync failed", nameof(BookStateLedgerService)); }
             }
 
             // C2: CanonGroundingService — flag PROVISIONAL-ENTITY findings for invented names (opt-in).

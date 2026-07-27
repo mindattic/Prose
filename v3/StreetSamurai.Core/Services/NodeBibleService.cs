@@ -13,11 +13,11 @@ namespace StreetSamurai.Core.Services;
 /// register, characters, a numbered beat spine, and seeds-and-payoffs.
 ///
 /// The prose engine (BeatGeneratorService / Node.razor LLM sheet) reads the
-/// bible as <c>StoryBibleContext</c> on every beat so the full arc is always
+/// bible as <c>BookBibleContext</c> on every beat so the full arc is always
 /// in view.
 ///
 /// Usage:
-///   1. Call <see cref="GenerateAndSaveAsync"/> once (or whenever the story plan changes).
+///   1. Call <see cref="GenerateAndSaveAsync"/> once (or whenever the book plan changes).
 ///   2. Read <see cref="GetBibleTextAsync"/> to surface the bible in the UI.
 ///   3. The <see cref="BeatPlan"/> list returned by <see cref="ParseBeatSpine"/>
 ///      drives planned-beat creation: each entry becomes a Beat row with

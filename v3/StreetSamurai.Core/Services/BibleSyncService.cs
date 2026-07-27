@@ -86,7 +86,7 @@ public class BibleSyncService
 
         var system = """
 You are a narrative analyst extracting canon facts from prose beats.
-For each beat, identify concrete facts that should be permanently recorded in the story bible:
+For each beat, identify concrete facts that should be permanently recorded in the book bible:
 - Character details established (appearance, voice quirks, specific behavior, relationship dynamics)
 - World or setting details described in specific terms
 - Plot events that are now canon
@@ -104,7 +104,7 @@ Output STRICT JSON — no markdown fences, no commentary:
 }
 """;
 
-        var user = $"Story: {node.Title ?? node.Slug}\nSession: {session.Label}\n\nBeats:\n\n{corpus}";
+        var user = $"Book: {node.Title ?? node.Slug}\nSession: {session.Label}\n\nBeats:\n\n{corpus}";
 
         List<BibleSyncFact> facts = new();
         try

@@ -10,7 +10,7 @@ namespace StreetSamurai.Mcp;
 
 // ── Canon document tools (Track A — Truth-First Architecture) ─────────────────
 // Structured canon editing: every world-level .md file has a DB source of truth.
-// Edits go through set_canon_section / set_story_bible_section; the .md artifacts
+// Edits go through set_canon_section / set_book_bible_section; the .md artifacts
 // are regenerated on demand and NEVER hand-edited.
 //
 // Document types: WorldBible, WorldMaster, Franchise, UniverseCanon
@@ -149,12 +149,12 @@ public class CanonDocTools
     // ── NodeBibleSections ─────────────────────────────────────────────────────
 
     [McpServerTool, Description(
-        "Update or create a structured section in a story's node bible (NodeBibleSections table). " +
+        "Update or create a structured section in a book's node bible (NodeBibleSections table). " +
         "sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. " +
         "Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain " +
         "structured per-category content. After calling this, run generate_node_doc to refresh the " +
         "docs/nodes/<CODE>.md artifact and then ss --sync-markdown so DocContextService picks it up.")]
-    public async Task<string> SetStoryBibleSection(
+    public async Task<string> SetBookBibleSection(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug,
         [Description("Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.")] string sectionType,
         [Description("Section content (markdown). Replaces any existing content for this sectionType.")] string content)
@@ -183,9 +183,9 @@ public class CanonDocTools
     }
 
     [McpServerTool, Description(
-        "List all NodeBibleSections for a story node. Shows section types, content lengths, and last-updated timestamps. " +
-        "Use this to see which typed sections exist before calling set_story_bible_section.")]
-    public async Task<string> ListStoryBibleSections(
+        "List all NodeBibleSections for a book node. Shows section types, content lengths, and last-updated timestamps. " +
+        "Use this to see which typed sections exist before calling set_book_bible_section.")]
+    public async Task<string> ListBookBibleSections(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
