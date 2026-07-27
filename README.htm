@@ -337,7 +337,7 @@ MCP server  (v3/StreetSamurai.Mcp/ -- separate host)
       <td><code>BeatContext.StrandId != Guid.Empty</code></td>
     </tr>
     <tr>
-      <td><code>StoryAuditService</code></td>
+      <td><code>BookAuditService</code></td>
       <td>Gateway or Sequel commandments (7 each, auto-detected from <code>PreviousStrandId</code>)</td>
       <td><code>BeatContext.StrandId != Guid.Empty</code></td>
     </tr>
@@ -832,7 +832,7 @@ pwsh tools/codex.ps1 doctor   # must pass</code></pre>
     <tr><td><code>EmotionalDepthService</code></td><td>8-dimension emotional examination at beat level (0&ndash;4 per dimension): stakes, interiority, vulnerability, subtext, conflict physicality, reader engagement, thematic resonance, emotional surprise (SS-A15)</td></tr>
     <tr><td><code>FindingsService</code></td><td>Inbox for all autonomous findings &mdash; CRUD + status tracking</td></tr>
     <tr><td><code>FindingApplyService</code></td><td>Applies a single approved finding (before/after) to a beat</td></tr>
-    <tr><td><code>StoryAuditService</code></td><td>Gateway or Sequel commandment auditing (7 commandments each)</td></tr>
+    <tr><td><code>BookAuditService</code></td><td>Gateway or Sequel commandment auditing (7 commandments each)</td></tr>
     <tr><td><code>PlantPayoffService</code></td><td>Plant/payoff pair registry; seeds active plants into prose context; orphan-audit on strand completion</td></tr>
   </tbody>
 </table>
