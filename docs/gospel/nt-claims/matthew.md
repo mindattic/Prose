@@ -88,7 +88,7 @@ queue, ahead of strict verse order, when this campaign resumes.
 | 24:1–51 | Olivet Discourse (Temple destruction prediction, signs of the end) | Checkable | Pending | **Flag: major** — the Temple destruction prediction (fulfilled 70 CE) is central to dating Matthew's own composition; this is one of the most consequential single claims in the book for establishing when the text itself was written |
 | 25:1–46 | Parables (ten virgins, talents, sheep and goats) | Theological | Noted | |
 | 26:1–5 | Plot to kill Jesus | Checkable | Drafted | Caiaphas ossuary — in-book Note [17] |
-| 26:6–13 | Anointing at Bethany | Checkable | **Pending — prose gap** | Not yet present in the chapter's own prose at all (verified 2026-07-27); the chapter jumps from 26:3-5 straight to 26:14-16 |
+| 26:6–13 | Anointing at Bethany | Checkable | Drafted | Four-Gospel harmonization problem (Matthew/Mark vs. Luke vs. John — different women, settings, timing), in-book Note [53] (added 2026-07-27) |
 | 26:14–16 | Judas's bargain — thirty pieces of silver | Checkable | Drafted | Covered in-book, explicitly flagged as unverifiable from outside — the correct treatment per method, not a gap |
 | 26:17–30 | The Last Supper | Checkable | Drafted | **Flag: major**, now resolved in-book — Synoptic/John Passover-timing contradiction covered, in-book Note [18] |
 | 26:31–35 | Prediction of Peter's denial | Theological | Noted | |
@@ -99,7 +99,7 @@ queue, ahead of strict verse order, when this campaign resumes.
 | 27:1–2 | Jesus handed over to Pilate | Checkable | Drafted | [`pontius-pilate.md`](../pontius-pilate.md) + in-book prose |
 | 27:3–10 | Judas's death by hanging | Checkable | Drafted | Contradicts Acts 1:18 — flagged in [`twelve-apostles.md`](../twelve-apostles.md) §1; Field of Blood/Jeremiah-vs-Zechariah misattribution, in-book Note [51] |
 | 27:11–26 | Trial before Pilate; hand-washing; Barabbas | Checkable | Drafted | [`pontius-pilate.md`](../pontius-pilate.md) |
-| 27:27–31 | Roman soldiers mock Jesus | Checkable | **Pending — prose gap** | Not yet present in the chapter's own prose at all (verified 2026-07-27); ch. 27 jumps from the Pilate trial straight to the crucifixion |
+| 27:27–31 | Roman soldiers mock Jesus | Checkable | Drafted | Philo's Carabas mockery (In Flaccum 6.36-39) as an independent parallel ritual, in-book Note [54] (added 2026-07-27) |
 | 27:32–44 | Crucifixion — Simon of Cyrene, Golgotha, the titulus, two thieves | Checkable | Drafted | Covered in-book |
 | 27:45–56 | Death of Jesus — darkness, the temple veil torn, earthquake, saints raised | Checkable | Drafted | **Flag: major**, now resolved in-book — the cleanest Gap Table "legendary accretion" case in the book, in-book Note [20] |
 | 27:57–61 | Burial by Joseph of Arimathea | Checkable | Drafted | Covered in-book |

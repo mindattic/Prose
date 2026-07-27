@@ -33,7 +33,7 @@ table with columns **Reference | Claim type | Status | Doc**. Status is one of:
 
 | # | Book | Chapters | Status |
 |---|---|---|---|
-| 1 | [Matthew](matthew.md) | 28 | Drafted end-to-end, incl. Notes chapter (52 citations) + Glossary (95 entries) — two isolated prose gaps remain (26:6–13 Anointing at Bethany, 27:27–31 the mocking of Jesus; see ledger) |
+| 1 | [Matthew](matthew.md) | 28 | Complete end-to-end — 28 chapters, Notes chapter (54 citations), Glossary (95 entries), no known prose or citation gaps |
 | 2 | Mark | 16 | Not started |
 | 3 | Luke | 24 | Not started |
 | 4 | John | 21 | Not started |
