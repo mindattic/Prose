@@ -318,6 +318,32 @@ mechanism, not the encoding argument). Verify with a spot-check on a known em-da
 (`UNICODE(...)` must read `8212`) and a `COUNT(*)` of remaining `UNICODE(...)=65279` rows (must be
 zero) before trusting a bulk insert batch.
 
+### 5g1. Hard line-wrap corruption when authoring beat text directly (not via subagent)
+
+When Claude Code authors a Notes/Glossary entry's text directly in a `Write` tool call (as
+opposed to a subagent returning its final message text), the content sometimes comes out with a
+literal line break (`\n`) every ~90-100 characters mid-paragraph — an artifact of how the content
+gets composed, not something the model intends. Piped through `--beat insert`/`--beat update
+--text -`, that single `\n` is stored verbatim in `Beats.Text` and the export pipeline renders
+each one as its own paragraph (visible as short, choppy "paragraphs" with extra spacing in the
+`.pdf`/`.docx` — caught via a user screenshot of Note 1, 2026-07-27). Subagent-authored text (the
+`Agent` tool's returned final message) has NOT shown this problem — only text typed directly by
+the main thread into a `Write` call.
+
+**Detection:** count single newlines not part of a `\n\n` paragraph break
+(`(?<!\n)\n(?!\n)`, regex) relative to text length; a ratio above roughly 0.5% with more than a
+few matches indicates hard-wrap corruption, not intentional paragraph breaks. Run this across
+every beat under the book node, not just the entries just written — the very first "depth pass"
+session had this same bug and it silently affected all 51 original Notes plus the original 3
+Glossary entries (Jericho/Moab/Ruth) until caught here.
+
+**Fix:** collapse each offending lone `\n` into a single space — EXCEPT when the character
+immediately before it is a hyphen, in which case concatenate directly with no space (word-wrap
+never splits mid-word, so a hyphen right before a wrap point already belonged to a compound like
+"2nd-millennium-BCE", not to hyphenation the fix should re-introduce a space into). Recompute
+`TextHash` afterward, same as any other direct-SQL `Text` update. Re-export and grep the fresh
+`.txt` for the fixed note's opening line to confirm it now reads as one flowing paragraph.
+
 ### 5g. Export and final verification
 
 Export the **book-level node**, never a chapter individually — `ss --export-node --slug
