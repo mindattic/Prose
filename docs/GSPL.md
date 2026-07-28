@@ -76,13 +76,18 @@ enough (`(11)` vs `[11]`) that using the same bracket style for both is a real a
 stylistic nitpick — a reader can't tell a verse reference from a citation number at a glance
 unless the brackets differ.
 
-- **Numbering is one flat sequence across the whole work** — plain `(1)`, `(2)`, `(3)`...,
-  assigned once and never renumbered or reused, continuing straight through every book in
-  canonical order. By Luke or John this climbs into the hundreds or thousands, and that's fine —
-  it's a growing reference list, not a display a reader scans end to end. (Superseded
-  2026-07-26, twice: a first pass tried book-prefixed codes like `MTW-16`/`MRK-1`; dropped
-  because the prefix added a lookup layer without solving anything a plain running number
-  doesn't already solve on its own.)
+- **Numbering is one flat sequence per book, restarting at each Gospel** — plain `(1)`, `(2)`,
+  `(3)`..., assigned once within that book and never renumbered or reused, running straight
+  through that book's own chapters in canonical order. Matthew, Mark, Luke, and John are each
+  their own `BookNode` (siblings under the GSPL series root), published as separate KDP titles
+  ("Gospel: History vs. Heritage — Matthew" / "— Mark" / "— Luke" / "— John"), so each restarts
+  its own numbering at `[1]` rather than continuing a series-wide count — a reader of the Mark
+  volume alone has no use for a note sequence that starts in the thousands because Matthew came
+  first. (Superseded 2026-07-26, twice, before the 4-separate-books decision: a first pass tried
+  book-prefixed codes like `MTW-16`/`MRK-1`; dropped because the prefix added a lookup layer
+  without solving anything a plain running number doesn't already solve on its own. Superseded
+  again 2026-07-28: the running-number-across-the-whole-series design was reconsidered once each
+  Gospel shipped as its own standalone book rather than one combined volume.)
 - **One number per claim instance, not one per source.** If the same source (say, Ehrman, 2006)
   supports five different claims across the book, each gets its own number with the specific
   page/detail relevant to that claim — not one shared number reused five times. Standard
@@ -94,11 +99,13 @@ unless the brackets differ.
   This supersedes the in-line book:chapter:verse convention used in the *grounding research
   docs* under `docs/gospel/` (those remain APA-style research documents, unchanged) — the
   numbered-note convention applies specifically to finished, reader-facing GSPL prose (beats).
-- **Where notes actually live:** a single **Notes chapter** — a `ChapterNode` sibling to
-  Matthew/Mark/Luke/John/... under the GSPL book, positioned *last* — holds every note from
-  every book as one growing, addressable pool, one beat per note. Not a per-book Notes chapter,
-  not a per-chapter Notes beat: one destination, appended to as the book grows, so any later
-  beat in any book can cite a number from that same running sequence.
+- **Where notes actually live:** a single **Notes chapter** per book — a `ChapterNode` sibling
+  to that book's own numbered chapters (e.g. Matthew's `Chapter 1`...`Chapter 28`), positioned
+  *last* within that book — holds every note from that Gospel alone as one growing, addressable
+  pool, one beat per note. Not a per-chapter Notes beat, and not a single Notes chapter shared
+  across Matthew/Mark/Luke/John: each book gets its own destination, appended to as that book
+  grows, so a later beat within the same book can cite a number from that book's own running
+  sequence — never a number belonging to a different Gospel's book.
 - A Notes-chapter entry contains the full citation (APA-formatted for modern sources; standard
   reference form for ancient primary texts and scripture) plus, where relevant, the specific
   locator (page, section, verse) that grounds that particular claim.
@@ -125,6 +132,14 @@ reading having to carry that weight itself.
   with. "Ruth was a Moabite" in prose should be immediately resolvable to a Ruth glossary entry
   that explains what a Moabite was, when, and where, which in turn cites the Notes chapter for
   its own evidentiary claims.
+- **Each book has its own Glossary chapter; the underlying entity record is shared.** Jesus,
+  Pilate, Herod, and Jerusalem recur across Matthew/Mark/Luke/John — one entity record per
+  name, reused everywhere — but each Gospel's own Glossary chapter carries its own beat/entry
+  for any name that book actually uses, citing that book's own Notes sequence (§1a). A name that
+  only recurs (no new evidentiary claim in this book beyond what Matthew's Glossary already
+  covered) still gets its own entry in this book's Glossary — written fresh against this book's
+  own Notes numbers — not a cross-reference back to another book's chapter, since a reader of
+  the Mark volume alone won't have Matthew's Notes chapter in hand.
 - **Three tiers, three jobs, no skipping:** Prose asserts a claim and cites a note code for it
   directly when the claim is central to that beat's own argument. Terms/figures/places used only
   in passing (a name mentioned without being the beat's subject) don't need an inline note code
@@ -204,10 +219,19 @@ next book doesn't have to rediscover them. Read this before starting Mark.
 
 ### 5a. Node structure and SortKey spacing
 
-A GSPL book is one `BookNode` (created via `ss --create-book --kind book`) with `ChapterNode`
-children, one per source chapter (`--kind chapter --parent <book-slug>`), **plus two trailing structural
-chapters**: a **Notes** chapter and a **Glossary** chapter, both siblings of the numbered
-chapters, both positioned with a `SortKey` *higher than every chapter's*. This is the one
+**Series root, then one BookNode per Gospel.** `gospel-history-vs-heritage-<id>` (`ParentNodeId`
+NULL) is the series-organizing node only — it is never itself exported and carries no
+Title/Subtitle/Author metadata of its own. Each Gospel (Matthew, Mark, Luke, John) is its own
+`BookNode`, a *child* of that series root, with `Title = "Gospel: History vs. Heritage"` and its
+own `Subtitle` (`"Matthew"` / `"Mark"` / `"Luke"` / `"John"`) and `Author = "Pulpit Press"` — this
+is the node `ss --export-node` actually targets, one per published KDP title.
+
+A GSPL book is one `BookNode` (created via `ss --create-book --kind book --parent <series-slug>`)
+with `ChapterNode` children, one per source chapter (`--kind chapter --parent <book-slug>`),
+**plus two trailing structural chapters**: a **Notes** chapter and a **Glossary** chapter, both
+siblings of the numbered chapters *within that same book*, both positioned with a `SortKey`
+*higher than every chapter's*. Notes and Glossary belong to their own book only (§1a, §1b) — Mark's
+Notes chapter is a sibling of Mark's own chapters, never a sibling of Matthew's. This is the one
 mistake most likely to recur: `ss --create-book` assigns default SortKeys that can tie with an
 already-created chapter (e.g., Notes created at the same SortKey as Chapter 2), which makes the
 exported order interleave Notes/Glossary into the middle of the book instead of appending them

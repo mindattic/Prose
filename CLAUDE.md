@@ -271,7 +271,7 @@ exist in the repo and may not exist on disk.
 - `docs/nodes/M101.md` — M-101 / Soren Rowe origin before VIGL (Fantasy; Verlaine Taking → desertion)
 - `docs/nodes/MxG.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
 - `docs/nodes/RTR.md` — Read the Room / Faith Larson & Ethan Wolfe (GLMZ; Fenris band; Faith is a Read; Milwaukee dive club)
-- `docs/nodes/LSSS.md` — Lyra, Sinterspawn Slayer (Fantasy; standalone; COMPLETE; VIGL prose register exemplar; 1 beat)
+- `docs/nodes/LLSS.md` — Lieutenant Lyra, Sinterkin Slayer (Fantasy; standalone; COMPLETE; VIGL prose register exemplar; 1 beat; was LSSS/"Lyra, Sinterspawn Slayer")
 - `docs/books/bushido-coda-strands-bible.md` — BCODA (legacy long-form; superseded by BCODA.md above)
 
 ## Codex (how to work with the canon)

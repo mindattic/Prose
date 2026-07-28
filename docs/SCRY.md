@@ -24,12 +24,12 @@ related: docs/CRAFT.md
 
 ## 1. Naming Canon (SCRY world facts — always observe)
 
-- **The universe is SCRY.** The world within it is **The Entos**. These are not
+- **The universe is SCRY.** The world within it is **Entos**. These are not
   interchangeable: SCRY names the cosmological system (Spheres, Amnios, the Oculus);
-  The Entos names the inhabited world Lyra, Soren, and the rest live in.
-- Write "The Entos" — always capitalized, always with the article. Never "the Entos" (lowercase
-  t) in narration. Never "Entos" alone unless a character uses it in dialogue as shorthand.
-- Characters call their world "the Entos" in speech; narration writes "The Entos."
+  Entos names the inhabited world Lyra, Soren, and the rest live in.
+- "Entos" takes no article — it's a proper noun exactly like "Europe": never "the Entos,"
+  never "The Entos," in narration or in dialogue. Write "Entos is," "in Entos," "Entos's
+  own membrane" — the same construction you'd use for any real continent's name.
 
 ---
 

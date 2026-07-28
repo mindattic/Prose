@@ -34,9 +34,9 @@ table with columns **Reference | Claim type | Status | Doc**. Status is one of:
 | # | Book | Chapters | Status |
 |---|---|---|---|
 | 1 | [Matthew](matthew.md) | 28 | Complete end-to-end — 28 chapters, Notes chapter (54 citations), Glossary (95 entries), no known prose or citation gaps |
-| 2 | Mark | 16 | Not started |
-| 3 | Luke | 24 | Not started |
-| 4 | John | 21 | Not started |
+| 2 | Mark | 16 | In progress — ch.1-3 drafted (Notes 1-34, Glossary 29 entries); ch.4-16 pending |
+| 3 | Luke | 24 | In progress — ch.1-3 drafted (Notes 1-45, Glossary 33 entries); ch.4-24 pending |
+| 4 | John | 21 | In progress — ch.1-3 drafted (Notes 1-29, Glossary 21 entries); ch.4-21 pending |
 | 5 | Acts | 28 | Not started |
 | 6 | Romans | 16 | Not started |
 | 7 | 1 Corinthians | 16 | Not started |
