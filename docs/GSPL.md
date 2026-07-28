@@ -247,6 +247,23 @@ UPDATE Nodes SET SortKey = 3100.0 WHERE Slug = 'glossary-<id>';
 Verify with one query before ever exporting: `SELECT SortKey, Title FROM Nodes WHERE
 ParentNodeId=@book ORDER BY SortKey` — Notes and Glossary must be the last two rows.
 
+**Set `NodeCode` on every BookNode as soon as it's created — this controls where `--export-node`
+writes its files.** `ExportPathResolver` (in `StreetSamurai.Core/Services/ExportPathResolver.cs`)
+publishes flat under `<universe-export-dir>/<NodeCode>/<NodeCode> V<n>.docx` when `NodeCode` is
+set (e.g. `.../GSPL/MATTHEW/MATTHEW V17.docx`), matching the pre-made cover-art folders
+(`MATTHEW/`, `MARK/`, `LUKE/`, `JOHN/` under `R:\Desktop\EPub\MindAttic\GSPL\`). Without a
+`NodeCode`, it falls back to a legacy title-derived, series-nested path — and since all four
+Gospel BookNodes share the identical `Title` ("Gospel: History vs. Heritage"), that legacy path
+nests every book's export under one shared, colliding `Gospel History vs. Heritage/` folder with
+confusing de-dup-prefixed subfolder names. This actually happened: Mark, Luke, and John were all
+exported for an entire session with no `NodeCode` set, silently scattering their output across
+that shared folder instead of their own `MARK/`/`LUKE/`/`JOHN/` folders, and it wasn't caught
+until the user pointed out the folder names directly. **Set `NodeCode` (`MATTHEW`/`MARK`/`LUKE`/
+`JOHN`) immediately when a book node is created, not as a post-hoc cleanup item** — a single
+`UPDATE Nodes SET NodeCode='<CODE>' WHERE Id=@id` (with `SET QUOTED_IDENTIFIER ON` first, or the
+update fails against this DB's indexed/filtered indexes) is enough; there's no dedicated CLI verb
+for it as of this writing.
+
 ### 5b. The `--beat insert` "lands at top" gotcha
 
 `ss --beat insert --node <slug>` **without `--after`always inserts at the top of that node**,
@@ -395,6 +412,63 @@ never splits mid-word, so a hyphen right before a wrap point already belonged to
 "2nd-millennium-BCE", not to hyphenation the fix should re-introduce a space into). Recompute
 `TextHash` afterward, same as any other direct-SQL `Text` update. Re-export and grep the fresh
 `.txt` for the fixed note's opening line to confirm it now reads as one flowing paragraph.
+
+### 5g2. `--beat delete` is a SOFT delete — filter `IsEnabled=1` in every count/audit query
+
+`NodeWorkbenchService.DeleteBeatAsync` (the code behind `ss --beat delete`) only flips
+`BeatNodes.IsEnabled = 0` on the membership row — it never removes the `Beats`/`BeatNodes` row
+itself. This is intentional (recoverable via `ss --beat` restore semantics on the same junction
+row) but it silently breaks any audit query that doesn't account for it: a raw `SELECT COUNT(*)
+FROM BeatNodes WHERE NodeId=@notes` or a raw `SELECT ... FROM BeatNodes bn JOIN Beats b ...` will
+still return "deleted" rows, making it look like a beat you just deleted "came back." This ate
+real time during John's production (chased a phantom "row that won't die" for a stray test-probe
+beat, and again for four intentionally-merged-away duplicate glossary entries, before realizing
+the delete had worked correctly all along and the audit queries were just wrong). **Every
+count/audit/dedup query against `BeatNodes` must add `AND bn.IsEnabled = 1`** (or explicitly
+query the disabled set on purpose) to see the true, currently-effective content.
+
+### 5g3. Harden the `$maxNoteNumber` derivation query before reusing any prior chapter's `.ps1` as a template
+
+The per-chapter import scripts (see the `scripts/gspl_<book>_ch*.ps1` pattern used throughout this
+production) derive the next Note number with `SELECT MAX(CAST(LEFT(b.Text, CHARINDEX('
+',b.Text)-1) AS INT)) FROM BeatNodes bn JOIN Beats b ON bn.BeatId=b.Id WHERE bn.NodeId=@notes`.
+This crashes with "Invalid length parameter passed to the LEFT or SUBSTRING function" if ANY row
+under that Notes node has no space character in its text at all (e.g. a stray non-numbered test
+row) — `CHARINDEX` returns 0, and `LEFT(text, -1)` is invalid. When this crashed silently inside a
+larger PowerShell run (the exception didn't halt the script), `$maxNoteNumber` fell back to an
+unset/zero value and that chapter's notes were inserted as duplicate numbers 1-N, colliding with
+the book's real notes 1-N — this happened once during John's production (chapter 5) and required
+a manual renumber-and-fix-cross-references pass to correct. **Always use this hardened version
+instead, in every future book's chapter-import scripts:**
+
+```sql
+SELECT ISNULL(MAX(CAST(LEFT(b.Text, CHARINDEX(' ',b.Text)-1) AS INT)),0)
+FROM BeatNodes bn JOIN Beats b ON bn.BeatId=b.Id
+WHERE bn.NodeId=@notes
+  AND CHARINDEX(' ', b.Text) > 1
+  AND LEFT(b.Text, CHARINDEX(' ',b.Text)-1) NOT LIKE '%[^0-9]%'
+```
+
+After a chapter script runs, spot-check for duplicate note numbers before moving to the next
+chapter: `SELECT n, COUNT(*) FROM (SELECT CAST(LEFT(b.Text, CHARINDEX(' ',b.Text)-1) AS INT) AS n
+FROM BeatNodes bn JOIN Beats b ON b.Id=bn.BeatId WHERE bn.NodeId=@notes AND CHARINDEX(' ',
+b.Text)>1 AND LEFT(b.Text, CHARINDEX(' ',b.Text)-1) NOT LIKE '%[^0-9]%' GROUP BY n) d WHERE n >
+1` — catching it immediately after one chapter is far cheaper than discovering it at the
+end-of-book audit.
+
+### 5g4. When dispatching parallel drafting agents, "don't execute" must be an explicit numbered step
+
+If a batch of parallel Sonnet agents is asked to research and write a chapter's `.ps1` import
+script, at least some of them will run it against the live DB anyway even when the task
+description only asks them to "write and verify" — general-purpose agents have full tool access
+and will reasonably interpret "make sure this works" as license to test-execute. This scrambles
+the intended strict chapter-order execution sequence that keeps Note numbering sequential (two
+agents self-executed during John's first batch, despite never being asked to, which is
+harmless in isolation but means later chapters' Note ranges don't land in the same order as the
+book's reading order — a cosmetic-only issue, not worth an end-of-book renumber, but avoidable).
+**State it as an explicit, separately-numbered "CRITICAL: do NOT execute this script" step in the
+prompt**, not folded into other instructions — every batch that did this explicitly (batches 2-4)
+had zero self-executions; the one batch that didn't (batch 1) had two.
 
 ### 5g. Export and final verification
 
