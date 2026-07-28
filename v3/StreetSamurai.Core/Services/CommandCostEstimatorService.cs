@@ -22,7 +22,7 @@ public class CommandCostEstimatorService
             ["--write-story"]         = 0.12,
             ["--refine-story"]        = 0.08,
             ["--review-node"]         = 0.50,
-            ["--review-story"]        = 0.50,
+            ["--review-book"]         = 0.50,
             ["--run-panel"]           = 0.50,
             ["--auto-run"]            = 0.30,
             ["--harvest-voice"]       = 0.06,

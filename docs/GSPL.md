@@ -204,11 +204,11 @@ next book doesn't have to rediscover them. Read this before starting Mark.
 
 ### 5a. Node structure and SortKey spacing
 
-A GSPL book is one `BookNode` (created via `ss --create-story --kind book`) with `ChapterNode`
+A GSPL book is one `BookNode` (created via `ss --create-book --kind book`) with `ChapterNode`
 children, one per source chapter (`--kind chapter --parent <book-slug>`), **plus two trailing structural
 chapters**: a **Notes** chapter and a **Glossary** chapter, both siblings of the numbered
 chapters, both positioned with a `SortKey` *higher than every chapter's*. This is the one
-mistake most likely to recur: `ss --create-story` assigns default SortKeys that can tie with an
+mistake most likely to recur: `ss --create-book` assigns default SortKeys that can tie with an
 already-created chapter (e.g., Notes created at the same SortKey as Chapter 2), which makes the
 exported order interleave Notes/Glossary into the middle of the book instead of appending them
 at the end. **Always explicitly set SortKey after creating Notes/Glossary**, well above the

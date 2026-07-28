@@ -7,7 +7,7 @@ namespace StreetSamurai.Cli;
 /// named reviewer panel of N enriched personas drawn at random but DISJOINT
 /// from every existing focus group (no persona is on two panels). Cheap: just
 /// sampling + a DB insert, no LLM calls. Reuse the panel later with
-/// <c>--review-story --group "Group B"</c> to track that audience over versions.
+/// <c>--review-book --group "Group B"</c> to track that audience over versions.
 /// Running several disjoint panels (A/B/C) gives independent replication —
 /// more data mass, lower-variance, less-biased aggregates.
 /// </summary>
@@ -35,7 +35,7 @@ public static class MakeGroupCli
         {
             var (id, count) = await reviewer.CreateDisjointGroupAsync(name!, size);
             Console.WriteLine($"[make-group] Created panel '{name}' with {count} personas (disjoint from all existing groups). Id {id}.");
-            Console.WriteLine($"[make-group] Run it with:  ss --review-story --slug <slug> --group \"{name}\"");
+            Console.WriteLine($"[make-group] Run it with:  ss --review-book --slug <slug> --group \"{name}\"");
             return 0;
         }
         catch (Exception ex)

@@ -17,6 +17,13 @@ namespace StreetSamurai.Core.Migrations
         }
 
         /// <inheritdoc />
+        /// <remarks>
+        /// Not a lossless inverse of Up(): any BookNode created AFTER this migration ran
+        /// (NodeType='book' natively, never 'story') gets incorrectly stamped back to 'story'
+        /// on rollback, a discriminator value with no CLR type in the current model. Safe only
+        /// as an immediate rollback right after Up(); do not run against a database that has
+        /// had new books created since.
+        /// </remarks>
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.Sql("UPDATE Nodes SET NodeType = 'story' WHERE NodeType = 'book';");

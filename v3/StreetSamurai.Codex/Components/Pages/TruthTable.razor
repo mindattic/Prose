@@ -17,7 +17,7 @@
         <p class="small text-muted mb-0">
             Per-beat verification status against declared
             <code>BeatBlueprintDecision</code> contracts. BLOCKER findings block
-            <code>ss --export-node</code>. Run <code>ss --verify-story --slug CODE</code>
+            <code>ss --export-node</code>. Run <code>ss --verify-book --slug CODE</code>
             to refresh.
         </p>
     </div>
@@ -100,7 +100,7 @@
     @* Per-beat table *@
     @if (beatRows.Count == 0)
     {
-        <p class="text-muted small">No verification results yet. Run <code>ss --verify-story --slug @selectedSlug</code> first.</p>
+        <p class="text-muted small">No verification results yet. Run <code>ss --verify-book --slug @selectedSlug</code> first.</p>
     }
     else
     {
