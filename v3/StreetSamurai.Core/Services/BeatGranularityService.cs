@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 /// (MERGE) relative to the 4,000–7,500 char (~800–1,500 word) dramatic-scene target.
 ///
 /// The target is empirically grounded:
-///   - Books in range (STSH, ATTE, BLST, TEST) cluster at InterBeatSD ≈ 0.45–0.49.
+///   - Books in range (TLC, ATTE, BLST, TEST) cluster at InterBeatSD ≈ 0.45–0.49.
 ///   - BCODA (avg 1,621 chars) and DWIACE (avg 905 chars) are too fine — fragments
 ///     lack a complete goal/conflict/outcome arc.
 ///   - VIGL (avg 21,855 chars) is too coarse — a poor-scoring beat requires rewriting

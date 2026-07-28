@@ -133,7 +133,7 @@ All GLMZ stories not owned by a main series book chapter. Listed alphabetically 
 | RTR | Read the Room | Faith Larson + Ethan Wolfe | Read (psionic) world · Fenris band | B3–B4 | COMPLETE (14 beats) |
 | SPRW | Sparrow | Elias Macias | Rogue AI misdirect · AI mystery | B4–B5 | Active (never fires) |
 | SRZR | Steppin' Razor | Sasha Võ | Lotus · Halcyon/OBERON | B3 | Active |
-| STSH | The Long Cut | Doc Stash | Medical noir · GLMZ world | — | COMPLETE (48 beats; 89%) |
+| TLC | The Long Cut | Doc Stash | Medical noir · GLMZ world | — | COMPLETE (48 beats; 89%) |
 | TEST | Testament | Bear (Boris Johansen) | Military · GLMZ world | — | Active |
 | UNDR | Underclan | Glim | Underground world · Gray Zone | — | IsWIP=1 (54 beats) |
 | VATD | Vultures at the Door | Tomas Alvarado / Ekow Ato | Vultures world · Renko | B2 | Active |

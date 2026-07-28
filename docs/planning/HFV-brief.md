@@ -130,7 +130,7 @@ energy, body-true appetite) through the come-up, then cools to an elegiac, quiet
 drift. Not Grey (no admin-horror), not a straight combat piece.
 
 **Adjacent stories in the same release window:** LDGR (Grey/quiet audit procedural), MNEMO
-(neuretics), the Rook standalones (Lotus heist kinetics), STSH (medical noir).
+(neuretics), the Rook standalones (Lotus heist kinetics), TLC (medical noir).
 
 **How it complements them:** Everything adjacent is about someone who already *is* someone —
 a professional exercising a craft they already own. HFV is the only story about acquiring the

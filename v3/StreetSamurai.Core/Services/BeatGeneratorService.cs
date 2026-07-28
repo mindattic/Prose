@@ -1034,7 +1034,7 @@ public record BeatContext
     /// <summary>
     /// Target prose length for this beat in words. 0 = the classic short-beat
     /// instruction (2-4 paragraphs, ~350 words). Set ~950 for chapter-scale
-    /// full-scene beats (the proven STSH shape: ~1000-word beats for 100+ page
+    /// full-scene beats (the proven TLC shape: ~1000-word beats for 100+ page
     /// works). Raises the generation maxTokens accordingly.
     /// </summary>
     public int TargetWords { get; init; } = 0;

@@ -35,7 +35,7 @@ stories' beats *do* — see §14. The point of this doc is to make that reproduc
 competent mind is already reading — the body knowing before the mind names it.** The reader is
 inside a perceiver, moving, from the first line.
 
-- *"She hears the door before she sees the woman."* — [STSH b4]
+- *"She hears the door before she sees the woman."* — [TLC b4]
 - *"The smell reached him first. Turned earth and warm metal... Wes lay still in bed and knew
   the machine had been working in the night."* — [ICFI b1]
 - *"It comes from the front-left corner... It arrives the way warmth arrives — before the sound,
@@ -94,10 +94,10 @@ An unforgiven number carries more moral weight than any adjective, and readers r
 
 - *"Forty-three. He pays on the twenty-first."* — [TEST b9]
 - *"Category C is the smallest: sixty-seven subjects... The cost per subject in Category C is F43.
-  The same number she keeps in the petty cash box."* — [STSH b22]
+  The same number she keeps in the petty cash box."* — [TLC b22]
 
 **Why it lands:** a specific, refused number is the genre's cleanest instrument of stakes —
-"the human body as infrastructure, the record as resistance" (STSH / Dalary). The character who
+"the human body as infrastructure, the record as resistance" (TLC / Dalary). The character who
 keeps the count is the character readers trust.
 
 ---
@@ -239,7 +239,7 @@ variety is itself a driver.** The corpus-wide complaint is monotony — one cade
 POV — and the data shows readers scoring *against* it and *for* its opposite.
 
 Evidence is the spread across the 99 itself:
-- Stash — clipped surgical present tense: *"Stash runs a code for eight minutes."* — [STSH b6]
+- Stash — clipped surgical present tense: *"Stash runs a code for eight minutes."* — [TLC b6]
 - Bear — deadpan military ledger: *"He held it... He counted forty-three distinct voices."* — [TEST b9]
 - Corvin — cold analytic, long controlled clauses: *"The pronoun wasn't a slip. It was the first
   word in the message that mattered."* — [DWIACE b191]
