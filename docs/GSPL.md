@@ -342,6 +342,34 @@ mechanism, not the encoding argument). Verify with a spot-check on a known em-da
 (`UNICODE(...)` must read `8212`) and a `COUNT(*)` of remaining `UNICODE(...)=65279` rows (must be
 zero) before trusting a bulk insert batch.
 
+### 5g0a. PowerShell script-*source* mojibake — a distinct bug from the pipe corruption above
+
+A `.ps1` file written by the `Write` tool (or any tool that emits plain UTF-8 without a byte-order
+mark) is **misread by Windows PowerShell 5.1's own script parser**, not just its output pipe. Any
+literal em dash or accented character typed directly into the script's source (e.g. `Update-
+ChapterTitle $id 'Chapter 6 — ...'`) gets mangled into UTF-8-read-as-cp1252 mojibake (`—` becomes
+`â€"`, `ő`/`ö` become `Å‘`/`Ã¶`) **before the script ever runs** — this happens even when using
+`System.Data.SqlClient` directly with parameterized queries (i.e. it is *not* the same bug as
+§5g0's pipe-to-`dotnet run` corruption; there is no child process or pipe involved at all here).
+Symptom: `UNICODE(SUBSTRING(Title,...))` reads `226` (â) instead of `8212` (—), or the script
+fails to parse entirely with `TerminatorExpectedAtEndOfString` if a mangled byte happens to
+produce a stray quote character.
+
+**Fix, verified working:** prepend a UTF-8 BOM (`EF BB BF`) to the `.ps1` file before running it —
+this forces PowerShell 5.1 to correctly recognize and decode the file as UTF-8. The `Write` tool
+does not add one, so do it as a separate step after every `.ps1` write that contains any
+non-ASCII character (em dashes, curly quotes, accented names like "Győző Vörös"):
+
+```bash
+printf '\xef\xbb\xbf' | cat - script.ps1 > script.ps1.bom && mv script.ps1.bom script.ps1
+```
+
+Then run normally (`powershell -File script.ps1`). Verify afterward with the same `UNICODE(...)`
+spot-check as §5g0 (must read `8212` for an em dash, not `226`). This is the reliable way to author
+bulk-insert scripts (chapter titles, Notes, Glossary) using real Unicode characters directly in
+PowerShell rather than avoiding them via ASCII approximation — confirmed safe for both em dashes
+and Hungarian/German-style diacritics in a live test during the Mark chapter 4-7 import (2026-07-28).
+
 ### 5g1. Hard line-wrap corruption when authoring beat text directly (not via subagent)
 
 When Claude Code authors a Notes/Glossary entry's text directly in a `Write` tool call (as
