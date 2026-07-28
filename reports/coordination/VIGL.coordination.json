@@ -2,11 +2,11 @@
   "nodeCode": "VIGL",
   "slug": "vigil-s-end-019f5767",
   "title": "Vigil\u0027s End",
-  "generatedAtUtc": "2026-07-15 01:31:15Z",
-  "totalBeats": 29,
-  "covered": 29,
+  "generatedAtUtc": "2026-07-28 09:29:53Z",
+  "totalBeats": 317,
+  "covered": 0,
   "chapterGranular": false,
-  "storyScope": {
+  "bookScope": {
     "TemporalScheme": "nonlinear",
     "ResolutionMode": "mixed",
     "MoralPolarity": "ambivalent",
@@ -16,551 +16,4827 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "UNSCORED": 7
+    "MISSING_MEANING": 317,
+    "UNSCORED": 317,
+    "NO_CONSTRUCTION": 286
   },
   "beats": [
     {
-      "BeatId": "40855320-b613-4683-a3dc-460f522fd539",
-      "Number": 5306,
-      "Chapter": "Vigil\u0027s End",
+      "BeatId": "019f9f96-b9c5-7cf1-95b9-eece59be1418",
+      "Number": 5550,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the archive setting and the membrane-crossing ritual to ground the reader in the world\u0027s physical and institutional logic before the theft begins.",
-      "EscalationTarget": "4",
-      "EventType": "intrusion",
-      "RevelationMode": "suspense",
-      "BeatTags": [
-        "temporal-anachrony\u2713"
-      ],
-      "ProseLength": 7388,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973b-79df-a99f-e0621a41a867",
-      "Number": 5249,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Lyra arrives at the Veth Reliquary at dawn to find the Oculus stolen, the night-warden dead, and three sets of boot-prints leading north into the Cauld. She is given twelve days by Canon Aldric\u0027s written order before the Vigil sends a suppression column that will burn the trail and everyone on it.",
       "EscalationTarget": "3",
-      "EventType": "discovery",
+      "EventType": "infiltration",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "temporal-anachrony\u2713"
-      ],
-      "ProseLength": 46304,
-      "Score": 80,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-7d2c-a1f7-8e7ef8fe3336",
-      "Number": 5250,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Lyra cannot cross the Cauld alone in winter; she hires Osra as guide at the north gate. Osra names her price in coin and in one condition: Lyra must hear whatever Osra chooses to say on the crossing. Lyra agrees without considering what that condition means.",
-      "EscalationTarget": "4",
-      "EventType": "negotiation",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "escalation\u2713"
-      ],
-      "ProseLength": 14235,
-      "Score": 80,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-78d3-9002-99ac8df81722",
-      "Number": 5251,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Fevin is found sheltering in a waystation the two women stop at. He has a forged transit pass. Lyra confiscates the pass, reads the suppression citation folded inside it, and conscripts him rather than detain him, because she needs a third body to manage the supply sledge.",
-      "EscalationTarget": "3",
-      "EventType": "arrival",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot\u2713"
-      ],
-      "ProseLength": 14937,
+      "BeatTags": [],
+      "ProseLength": 2019,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f5768-973c-7aa2-ab34-df50caac6946",
-      "Number": 5252,
-      "Chapter": "Vigil\u0027s End",
+      "BeatId": "019f9f96-b9e7-7e07-b1fb-2816cc5f2a46",
+      "Number": 5551,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
-      "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "The party locates the thieves\u0027 first camp at a crevasse crossing. Signs show three people reduced to two: Maret fell or was left. Lyra reads the camp as a professional tracker; Osra reads it as a person who has lost someone and says so plainly.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2440,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-70e1-afbc-7eee68f66096",
+      "Number": 5552,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "5",
+      "EventType": "refusal",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 940,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-78c0-a6a7-558f301e9538",
+      "Number": 5553,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 393,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-7421-9518-3322ceb7df0a",
+      "Number": 5554,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "4",
       "EventType": "discovery",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "form-device\u2713"
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1348,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
-      "ProseLength": 25122,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f5768-973c-7a19-b890-60e39776ce9a",
-      "Number": 5253,
-      "Chapter": "Vigil\u0027s End",
+      "BeatId": "019f9f96-b9e8-7256-8180-76e54a4b30bf",
+      "Number": 5555,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
-      "StructureRole": "rising-action",
       "Act": 0,
-      "Meaning": "Osra tells Lyra the specific facts of her daughter Calla\u0027s case: the confession recorded by the Oculus, the doctrinal tribunal, the land-right stripped under Canon Senne\u0027s seal. She does not ask for sympathy. She states the sequence of events. Lyra listens and says nothing, which is itself a response Osra names.",
       "EscalationTarget": "6",
+      "EventType": "loss",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1395,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-7b7f-8c31-bdf85bb1d07d",
+      "Number": 5556,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "crossing",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2836,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-7ec5-bd1f-9d508e91d411",
+      "Number": 5557,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "5",
+      "EventType": "suppression",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4681,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-76a5-a7d9-1ae60e6a2db4",
+      "Number": 5558,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3227,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-7e41-91b1-e49cd3e9cd34",
+      "Number": 5559,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "7",
       "EventType": "confession",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot\u2713"
-      ],
-      "ProseLength": 16881,
-      "Score": 96.66666666666666,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-72ef-a7ff-f7d46b699caa",
-      "Number": 5254,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "The party catches up to Bren and his remaining accomplice in a wind-cut passage. A chase and short fight. The accomplice escapes west. Bren is taken. Lyra recovers the Oculus, intact, from Bren\u0027s pack.",
-      "EscalationTarget": "5",
-      "EventType": "chase",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "escalation\u2713"
-      ],
-      "ProseLength": 29667,
-      "Score": 83.33333333333334,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-7c21-b83f-d9e0d5461cd4",
-      "Number": 5255,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Bound and moving, Bren tells Lyra why he stole the device: he names six families whose confessional records were weaponized by the Vigil in property and inheritance disputes over eleven years. He was a novice who witnessed one tribunal. He provides names, dates, and Canon Senne\u0027s seal on each ruling. Fevin recognizes his father\u0027s name in the list.",
-      "EscalationTarget": "4",
-      "EventType": "testimony",
-      "RevelationMode": "surprise",
-      "BeatTags": [
-        "form-device\u2713"
-      ],
-      "ProseLength": 24479,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-7417-bc74-23a80031430a",
-      "Number": 5256,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Fevin stops walking. He demands Lyra confirm or deny whether the Vigil used his father\u0027s recorded confession to void his inheritance. Lyra cannot deny it; she has seen Canon Senne\u0027s administrative style for twelve years and the pattern Bren describes is recognizable. She confirms it by silence. Fevin does not leave; he stays, which is harder.",
-      "EscalationTarget": "5",
-      "EventType": "confrontation",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "subplot\u2713"
-      ],
-      "ProseLength": 26050,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-7b77-aae2-4a782412b29c",
-      "Number": 5257,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Lyra allows Osra to hold the Oculus. Osra does not destroy it. She asks whether Calla\u0027s confession is still inside. Lyra does not know the answer. The not-knowing is the point.",
-      "EscalationTarget": "5",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot\u2713"
-      ],
-      "ProseLength": 16720,
+      "BeatTags": [],
+      "ProseLength": 1973,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f5768-973c-77e6-b1ce-3a121c24b5ad",
-      "Number": 5258,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "On day ten, Lyra spots the Vigil\u0027s advance riders on the southern horizon: Canon Senne has sent the column early. The twelve-day window was not a deadline; it was a test of whether Lyra would return fast enough to be absorbed back into the institution before she thought too much.",
-      "EscalationTarget": "4",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
-      "BeatTags": [
-        "escalation\u2713"
-      ],
-      "ProseLength": 32647,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f60d1-084a-76e4-9f45-a65045c46b10",
-      "Number": 5376,
-      "Chapter": "Vigil\u0027s End",
+      "BeatId": "019f9f96-b9e8-74c3-a5b5-f24cbbe64a3d",
+      "Number": 5560,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Introduces the core trio\u0027s dynamic and competencies through the mundane logistics of arrival, seeding trust in their professional interdependence.",
-      "EscalationTarget": "5",
-      "EventType": "ceremony",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "escalation"
-      ],
-      "ProseLength": 21360,
-      "Score": 80,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-71af-a894-38225de286d1",
-      "Number": 5259,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Lyra delivers Bren to the Ardenmere garrison as a captured thief, which is her lawful duty and protects him from the column\u0027s summary authority. She registers the Oculus as recovered and logged, which creates a paper record the column cannot quietly erase. She does this in front of Fevin and Osra as witnesses.",
-      "EscalationTarget": "5",
-      "EventType": "arrival",
-      "RevelationMode": "suspense",
-      "BeatTags": [
-        "escalation\u2713"
-      ],
-      "ProseLength": 25606,
-      "Score": 93.33333333333333,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-79cc-b1b8-65ca17729978",
-      "Number": 5260,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Canon Aldric Senne arrives at Ardenmere personally with a writ of suppression naming Osra, Fevin, and Bren as doctrinal threats to be remanded to Vigil custody. The writ also formally commends Lyra and orders her to countersign as the arresting Dame.",
-      "EscalationTarget": "5",
-      "EventType": "refusal",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "form-device\u2713"
-      ],
-      "ProseLength": 26628,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-74a2-af0c-586632589059",
-      "Number": 5261,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Lyra reads the writ fully, in silence, in front of Senne. She sets it on the garrison table unsigned. She states three specific facts: the Oculus records were used as legal instruments in civil disputes, the twelve-day window was shortened deliberately, and she will not countersign a document that remands witnesses to a court with a material interest in their silence. She does not raise her voice.",
-      "EscalationTarget": "8",
-      "EventType": "departure",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "body-snatch-setpiece"
-      ],
-      "ProseLength": 46519,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f5768-973c-7640-8058-f27f04ee0ac0",
-      "Number": 5262,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "StructureRole": "rising-action",
-      "Act": 0,
-      "Meaning": "Senne leaves with the column. The writ sits unsigned on the table. Lyra\u0027s rank, her designation M-101, and her place in the Vigil\u0027s rolls are forfeit by the act of refusal, and she knows this. Osra, Fevin, and Bren\u0027s garrison custody stand. Lyra walks out of the Ardenmere gate onto the Cauld-road with no order to follow and no institution behind her.",
       "EscalationTarget": "6",
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "threshold\u2713"
-      ],
-      "ProseLength": 28531,
+      "BeatTags": [],
+      "ProseLength": 683,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "019f60d1-12d4-71a4-bfa2-48b8b968af63",
-      "Number": 5377,
-      "Chapter": "Vigil\u0027s End",
+      "BeatId": "019f9f96-b9e8-7e37-bd13-7e421c42895f",
+      "Number": 5561,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Escalates stakes by forcing a conscious choice to enter dangerous territory, revealing each character\u0027s relationship to risk through their silence and reading of signs.",
-      "EscalationTarget": "6",
-      "EventType": "acquisition",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "creature-combat"
-      ],
-      "ProseLength": 25603,
-      "Score": 76.66666666666667,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f60d1-71c2-705c-bc95-13bc4e2a174f",
-      "Number": 5379,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Builds dread through environmental absence rather than presence, establishing Orim as the group\u0027s threshold-reader and signaling a threat beyond ordinary danger.",
       "EscalationTarget": "7",
-      "EventType": "testimony",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "monster-setpiece"
-      ],
-      "ProseLength": 25410,
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2071,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "da607263-a95f-4803-a932-f790a4e6fc36",
-      "Number": 5291,
-      "Chapter": "Vigil\u0027s End",
+      "BeatId": "019f9f96-b9e8-7e95-8904-575ce1079639",
+      "Number": 5562,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Marks the journey\u0027s end-phase arrival while using the destination\u0027s physical approach to externalize the group\u0027s accumulated exhaustion and narrowing time pressure.",
-      "EscalationTarget": "4",
-      "EventType": "dispatch",
-      "RevelationMode": "suspense",
-      "BeatTags": [
-        "escalation\u2713"
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1154,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
-      "ProseLength": 23831,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "3dba7a47-5cc4-460f-ac50-1d5571fde6af",
-      "Number": 5292,
-      "Chapter": "Vigil\u0027s End",
+      "BeatId": "019f9f96-b9e8-7eee-a880-d9622a356ce3",
+      "Number": 5563,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Turns the mission from pursuit to acquisition by confirming the target and revealing Lyra\u0027s tactical gap-exploitation as her defining operational method.",
+      "EscalationTarget": "5",
+      "EventType": "vigil",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1898,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-7916-b4b3-1b153e9daf46",
+      "Number": 5564,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
       "EscalationTarget": "8",
       "EventType": "confrontation",
       "RevelationMode": "none",
-      "BeatTags": [
-        "body-snatch-setpiece\u2713"
-      ],
-      "ProseLength": 24354,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "302f6e3f-6cbd-4af4-8b1d-7eeac1b5eb65",
-      "Number": 5293,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Reveals Lyra\u0027s interior grief through her inability to write Ardea\u0027s service record, paying off the earlier absence by naming what the loss has cost her.",
-      "EscalationTarget": "5",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint\u2713"
-      ],
-      "ProseLength": 27147,
-      "Score": 96.66666666666666,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "90e0ffe7-ef7f-42d4-a5c7-e084ececb948",
-      "Number": 5294,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Introduces an institutional ally operating outside the vertical chain of command, establishing that the Liturgy\u0027s own archival memory may be working against its executive arm.",
-      "EscalationTarget": "5",
-      "EventType": "discovery",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "form-device\u2713"
-      ],
-      "ProseLength": 21463,
-      "Score": 66.66666666666667,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "76d2dbd6-784e-47d6-8762-9c30eb71ecad",
-      "Number": 5295,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Pays off the eleven-day crossing by landing Rowe\u0027s distributed consciousness as the cost of the journey, reframing his sacrifice as the mission\u0027s hidden price.",
-      "EscalationTarget": "9",
-      "EventType": "arrival",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "body-snatch-setpiece\u2713"
-      ],
-      "ProseLength": 37966,
-      "Score": 93.33333333333333,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "9ba2cf72-f009-4820-8864-5d4c4f3f73c2",
-      "Number": 5297,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Reestablishes the group\u0027s fragmented status on arrival to show that reaching the destination has not resolved their vulnerability, only changed its shape.",
-      "EscalationTarget": "6",
-      "EventType": "refusal",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "intertextual-touchpoint\u2713"
-      ],
-      "ProseLength": 34263,
-      "Score": 83.33333333333334,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "2ff3b7a6-4771-42b0-9418-2420a987952d",
-      "Number": 5298,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Establishes the expedition\u0027s arrival in hostile territory while revealing Rowe\u0027s fractured post-Pallor identity, seeding unease about what the team has already lost before the mission begins.",
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "escalation\u2713"
-      ],
-      "ProseLength": 16905,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f612a-267d-7d92-8fd9-a4317fad24dc",
-      "Number": 5380,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Introduces the titan mound as an overwhelming, unkillable environmental threat to calibrate the scale of danger and establish Lyra\u0027s pragmatic coping method under impossible conditions.",
-      "EscalationTarget": "8",
-      "EventType": "refusal",
-      "RevelationMode": "suspense",
-      "BeatTags": [
-        "horror-combat"
-      ],
-      "ProseLength": 40675,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f60d1-1ca7-7de9-a59a-8b4faacc99a9",
-      "Number": 5378,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Reveals the Zone has already outlasted human attempts to contain it, escalating dread by showing the Vigil\u0027s prior failure and priming the reader for what the party is walking into.",
-      "EscalationTarget": "8",
-      "EventType": "departure",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "horror-combat"
-      ],
-      "ProseLength": 33050,
-      "Score": 80,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "37b58d26-1005-4b20-ab01-f9d97c208bae",
-      "Number": 5296,
-      "Chapter": "Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Pays off the crossing\u0027s implied cost while delivering the story\u0027s central surprise \u2014 Vega is alive at the crater rim \u2014 turning Lyra\u0027s mission from investigation to something far more personal.",
-      "EscalationTarget": "6",
-      "EventType": "ceremony",
-      "RevelationMode": "suspense",
-      "BeatTags": [
-        "revelation\u2713"
-      ],
-      "ProseLength": 27826,
+      "BeatTags": [],
+      "ProseLength": 2275,
       "Flags": [
+        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": true
+      "Covered": false
     },
     {
-      "BeatId": "367915a7-6a6f-4d5a-ad64-84bce308286a",
-      "Number": 5299,
-      "Chapter": "Vigil\u0027s End",
+      "BeatId": "019f9f96-b9e8-7d22-8314-192090f530f7",
+      "Number": 5565,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes the Singing Spires as an ambient, indifferent force that cannot be adapted to, deepening the Zone\u0027s alienness and isolating Lyra within an environment that refuses to acknowledge human presence.",
-      "EscalationTarget": "10",
-      "EventType": "transit",
-      "RevelationMode": "none",
-      "BeatTags": [
-        "resolution-mode\u2713"
+      "EscalationTarget": "7",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1825,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
-      "ProseLength": 45839,
-      "Score": 100,
-      "Flags": [],
-      "Covered": true
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-7835-8c0f-918ce818901c",
+      "Number": 5566,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "passage",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3266,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e8-70d4-9d9b-269b71618f21",
+      "Number": 5567,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "ambush",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1692,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-72c7-a1a8-33a60e0297f0",
+      "Number": 5568,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "arrival",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1544,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7e87-bc8b-05ac6be48504",
+      "Number": 5569,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "acquisition",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3029,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ce7-9a25-7aa293fdd79c",
+      "Number": 5570,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "confession",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1871,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7577-85a8-3849360ee82b",
+      "Number": 5571,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "confrontation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3581,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7f37-a271-e77e8890665e",
+      "Number": 5572,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "reckoning",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2878,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7b99-a4e5-2c90c60addb7",
+      "Number": 5573,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "dispatch",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3259,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7c4b-9e13-a872b22b354f",
+      "Number": 5574,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 718,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-79be-afc8-4974df3175be",
+      "Number": 5575,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "crossing",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 688,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7faf-a099-e88687a84a95",
+      "Number": 5576,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "passage",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 987,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7021-a7a7-8f9308e8c511",
+      "Number": 5577,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "ambush",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1064,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7a04-9b02-605b106f4168",
+      "Number": 5578,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "reunion",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1823,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7229-b359-68e366477a1a",
+      "Number": 5579,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1412,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-77a8-9c1d-2a91a8c28365",
+      "Number": 5580,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1141,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-786e-8ac9-7b7beae05064",
+      "Number": 5581,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1505,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-77c5-99c8-8c579e8e3f72",
+      "Number": 5582,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 993,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7cb9-9efc-98ca8a9a46f0",
+      "Number": 5583,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1217,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7bd7-b2b8-76cd58bdba19",
+      "Number": 5584,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1274,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-76d3-8cd9-8ea2a36e6d5e",
+      "Number": 5585,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 768,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ec9-8192-e76cbc909180",
+      "Number": 5586,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 376,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ae3-8d4a-f4f9c8148367",
+      "Number": 5587,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1064,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-758d-9fd4-ed2d08c85592",
+      "Number": 5588,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 476,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7e93-9e69-ef9359bb8f0c",
+      "Number": 5589,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 277,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7968-9906-dd5a19cac60d",
+      "Number": 5590,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1343,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7279-a693-a4664b326e9e",
+      "Number": 5591,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2246,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7344-85cb-3334434c348c",
+      "Number": 5592,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4938,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7673-bbc5-4b76764ea318",
+      "Number": 5593,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4579,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-771f-819c-59439d5ca6ef",
+      "Number": 5594,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1167,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7bcb-9ddf-77d2a0f586bf",
+      "Number": 5595,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2573,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7922-818e-bbdc1a5fc868",
+      "Number": 5596,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 855,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-79b0-9dc5-559d3fd14789",
+      "Number": 5597,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1302,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-76f1-99fb-1b11be42dce9",
+      "Number": 5598,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2535,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ce9-b051-e10bf0b3a5de",
+      "Number": 5599,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2927,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7cdc-b682-dee4be9ce948",
+      "Number": 5600,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2838,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7c8d-9087-dbacb34ad37c",
+      "Number": 5601,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2281,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7af7-8fc7-1d8d45b3f4cd",
+      "Number": 5602,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1829,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ef2-8d48-7ae83d7ccc38",
+      "Number": 5603,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2728,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7bc3-a31d-f90be53e6003",
+      "Number": 5604,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2478,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7eca-9e35-4bff82fed05c",
+      "Number": 5605,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2776,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-74a5-b732-00279d50c23d",
+      "Number": 5606,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1511,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7578-8e7d-0f4c74c8b255",
+      "Number": 5607,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3829,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7849-955d-4966949331b5",
+      "Number": 5608,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 993,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7976-96c2-13bdde959f95",
+      "Number": 5609,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3178,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7128-b5c2-573196748fc0",
+      "Number": 5610,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1591,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7dbf-89ce-263af1f4048d",
+      "Number": 5611,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3747,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7014-b282-06dbee39f9fc",
+      "Number": 5612,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3718,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7d4b-b6bf-cad895f02937",
+      "Number": 5613,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3909,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-77e7-aafb-e8bb582a8485",
+      "Number": 5614,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3467,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7bd5-9420-056bb0048018",
+      "Number": 5615,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 833,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7405-961c-06270daf30fd",
+      "Number": 5616,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2678,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-72ab-8c48-0a243d45d346",
+      "Number": 5617,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 999,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7e15-856d-74e58a645fb6",
+      "Number": 5618,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2480,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7aa2-bd2c-29e0ad2f20df",
+      "Number": 5619,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2701,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-73b8-8e1d-b0ea101f0f72",
+      "Number": 5620,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2427,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7a92-a590-3d62875c2397",
+      "Number": 5621,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1817,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7c99-9dc0-70cefae284ab",
+      "Number": 5622,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2495,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-704f-be54-bdb8f23c23cd",
+      "Number": 5623,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1891,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7990-a3f0-0d932fe51884",
+      "Number": 5624,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2349,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7148-9104-d146bc1d40d1",
+      "Number": 5625,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3038,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-726c-867a-f2c228be5bf9",
+      "Number": 5626,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2595,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7b17-830f-7ca58f54d21c",
+      "Number": 5627,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1256,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-775a-aa20-9a030a0d68db",
+      "Number": 5628,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3447,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7787-b9b7-86f104306e57",
+      "Number": 5629,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1090,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7bbc-ba1c-71e5c79133ca",
+      "Number": 5630,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1994,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7799-80f6-f4c39d6e3ab4",
+      "Number": 5631,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2853,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7cb0-89f3-6c2445a7d33a",
+      "Number": 5632,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 982,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7051-8c76-57f94558b8af",
+      "Number": 5633,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1508,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7163-8add-21946aab11f2",
+      "Number": 5634,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1875,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7734-a040-3c8b9774717d",
+      "Number": 5635,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2231,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7e49-afcd-9cc7b39a6135",
+      "Number": 5636,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1071,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7670-be4b-4c2373523995",
+      "Number": 5637,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1475,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7060-b119-b6bfa73af095",
+      "Number": 5638,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2209,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-79e6-95b2-84ef64811ac1",
+      "Number": 5639,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2234,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7081-9fc8-6c263f55bc34",
+      "Number": 5640,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1508,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-768a-8d9c-7e91eab5ce22",
+      "Number": 5641,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1167,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7b2b-87f4-a160fae7c4fc",
+      "Number": 5642,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2240,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7f43-b1f3-dce9b8d68561",
+      "Number": 5643,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2567,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7d4a-8e12-1cf7b5ad438f",
+      "Number": 5644,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1565,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-72f5-a0a0-1086dd2673fc",
+      "Number": 5645,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1430,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-748d-902f-7263a86d29db",
+      "Number": 5646,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2447,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-726c-acf4-a595448d7e63",
+      "Number": 5647,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1488,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7eb5-9552-0dc0f884fb51",
+      "Number": 5648,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2287,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-75c8-b23f-f55534b0d675",
+      "Number": 5649,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2458,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7bec-9f9f-764db4abf9aa",
+      "Number": 5650,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1174,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-70be-936c-25888bf13984",
+      "Number": 5651,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2064,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-776f-bb31-5b1372edf6b8",
+      "Number": 5652,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1936,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7e0f-b6ae-542abbd24a15",
+      "Number": 5653,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2366,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7c7f-a516-ce9d1caf2a84",
+      "Number": 5654,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2094,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7914-983b-96a72bbfc6cd",
+      "Number": 5655,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2805,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7512-a055-3f74163a0126",
+      "Number": 5656,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1849,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7229-91de-5294ddc20876",
+      "Number": 5657,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2747,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-77e1-841f-b0f212752043",
+      "Number": 5658,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2882,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-74d1-8829-8351e5579905",
+      "Number": 5659,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5815,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7487-83ac-70beaff2aad3",
+      "Number": 5660,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3488,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7e30-9924-87b06c0d54a5",
+      "Number": 5661,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6713,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-771d-bac1-970db9da6a86",
+      "Number": 5662,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3545,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7724-9cab-f31473c18fae",
+      "Number": 5663,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4991,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7b7c-9571-ee278741ae93",
+      "Number": 5664,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1580,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7403-9b74-fd3701b1ca57",
+      "Number": 5665,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1251,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7d1b-9c3e-97502783892c",
+      "Number": 5666,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1918,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-79f0-83ae-4ff718cbb9d0",
+      "Number": 5667,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2158,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7281-991d-67e808f0a0aa",
+      "Number": 5668,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1683,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-71d0-a478-767ad594d7e8",
+      "Number": 5669,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1867,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-747d-9cfc-47ecf888f306",
+      "Number": 5670,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2303,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7476-8d9a-f0a03825fc90",
+      "Number": 5671,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2211,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-763d-a734-c8068b4e2b40",
+      "Number": 5672,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2375,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-760e-bc7c-323c384a020d",
+      "Number": 5673,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2384,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7d8e-bd77-c13a96992aa8",
+      "Number": 5674,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1375,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7874-a98c-bb6fb972b1b3",
+      "Number": 5675,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2168,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-71a6-9857-ec6584c23b04",
+      "Number": 5676,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4195,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7c7e-aaa7-07140a8cecb3",
+      "Number": 5677,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3388,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7ce2-9662-0dee2bfc36c4",
+      "Number": 5678,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3265,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7b3e-aac9-c0584aedbd73",
+      "Number": 5679,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2164,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-71f7-98ef-d0d8b08ad6b3",
+      "Number": 5680,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4102,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7296-beb9-7f6b399540fb",
+      "Number": 5681,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2519,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7784-bdfb-56fb310f748b",
+      "Number": 5682,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1912,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-70c7-8434-8d117f8aac78",
+      "Number": 5683,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3599,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7260-ac7c-50d7ecd01dcc",
+      "Number": 5684,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 858,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7fde-ba8d-319b5ac9b410",
+      "Number": 5685,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2565,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-77b3-9824-d704bdd94e48",
+      "Number": 5686,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2046,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7f7e-8e13-efa66767f6e3",
+      "Number": 5687,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2660,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7435-964c-124eeeb876dd",
+      "Number": 5688,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2950,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-763e-9c7f-381d4d5bd794",
+      "Number": 5689,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2855,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7d24-841f-e8286cbd57a3",
+      "Number": 5690,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 972,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7f03-9229-6e7d1d2d5d0c",
+      "Number": 5691,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3074,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7250-8846-a0c77846e4bf",
+      "Number": 5692,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1876,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-72cf-ac93-d37e750c0bda",
+      "Number": 5693,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1400,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-797d-a731-90aa59b5c427",
+      "Number": 5694,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2129,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7829-a2ad-1a83f4abb24d",
+      "Number": 5695,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2392,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7efe-8cf1-68a6a70b98d9",
+      "Number": 5696,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1981,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7b56-882a-3c20f866345a",
+      "Number": 5697,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3220,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-761c-b721-2c2cb30819d5",
+      "Number": 5698,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2376,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7bf7-9ea7-a72c3697571e",
+      "Number": 5699,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1218,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-779e-a4c6-f8dd3a8b9a00",
+      "Number": 5700,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1311,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-74ce-ac26-a3c0a3f2399d",
+      "Number": 5701,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1066,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7bed-8a4f-6cc5b8757370",
+      "Number": 5702,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1635,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7e73-a538-f8ea7c0a61a8",
+      "Number": 5703,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2294,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-77af-95c1-ff27cdecc334",
+      "Number": 5704,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1730,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-76d1-a1cd-443709d6aed5",
+      "Number": 5705,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1541,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-77b3-ba0b-e2b613b213f5",
+      "Number": 5706,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1840,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7fa9-93bb-ec02dd32c1e5",
+      "Number": 5707,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1632,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7f91-bab7-44a4ce89b773",
+      "Number": 5708,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2136,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7a10-a40f-e4ecdf2d8ce6",
+      "Number": 5709,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2389,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7504-ab9d-bd2f35c7cbda",
+      "Number": 5710,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2594,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-71d9-9636-72abee194fd8",
+      "Number": 5711,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2105,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-741a-b915-2e8bdb218768",
+      "Number": 5712,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2205,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7c0e-aaec-1e0898618351",
+      "Number": 5713,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2069,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-77e7-97c7-9c91249b82ef",
+      "Number": 5714,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3502,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-71bb-b2aa-41b520afb941",
+      "Number": 5715,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1818,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-79a3-8212-260fb11ce052",
+      "Number": 5716,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2491,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-74ea-aa7d-f22287d47cc6",
+      "Number": 5717,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2372,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e79-afd3-fabf157796ff",
+      "Number": 5718,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1412,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7747-9ca0-e1187edac5b3",
+      "Number": 5719,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1539,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7897-b027-fcb5cc37e390",
+      "Number": 5720,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1799,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e65-85e3-41fb88c52d52",
+      "Number": 5721,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1358,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7c50-8ccc-9c896522da0e",
+      "Number": 5722,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1636,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7613-a05c-a7c0e35ad05a",
+      "Number": 5723,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2031,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7ba8-ac8b-a7ec6cd8902b",
+      "Number": 5724,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3052,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7932-8234-8f524de5182b",
+      "Number": 5725,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1480,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7171-a4a9-cffcac090a0b",
+      "Number": 5726,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2011,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-795a-9cd1-cb761c7cc0f2",
+      "Number": 5727,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 614,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-79f8-ad11-7c00f6d514bd",
+      "Number": 5728,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1887,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-76ea-82d6-964dad31a296",
+      "Number": 5729,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3080,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7522-80a3-8c9913757f78",
+      "Number": 5730,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3314,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-785d-b780-9af20b9a612d",
+      "Number": 5731,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2082,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-72ff-8326-57e1ac9b7a56",
+      "Number": 5732,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2867,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7216-b65a-c6059ec7f0c1",
+      "Number": 5733,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2232,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-75bf-b703-4f07aef23970",
+      "Number": 5734,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3218,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7fd7-9ab3-9e6fde875a16",
+      "Number": 5735,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2962,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7c76-870f-ffe79f5a9ffe",
+      "Number": 5736,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3718,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7b1e-9ec5-4b6736eaeded",
+      "Number": 5737,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2340,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7ede-855d-10ce37727b6e",
+      "Number": 5738,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 625,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7479-807b-32f0653fc9e2",
+      "Number": 5739,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1083,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-73b6-9dbe-17ffa258b37c",
+      "Number": 5740,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1091,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7447-bb06-9081f32b2752",
+      "Number": 5741,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1094,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7bc9-a944-b6c5b9d9ee12",
+      "Number": 5742,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3045,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7813-96c5-96101164e88a",
+      "Number": 5743,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3350,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7724-b184-dc5e7bbd10fe",
+      "Number": 5744,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1890,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-72ab-81f0-ad39994a62a3",
+      "Number": 5745,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1668,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e80-8c4b-cd43e1e6ff10",
+      "Number": 5746,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1469,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7eb7-8271-edc9c57b2a10",
+      "Number": 5747,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2231,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e48-997f-a1626b4a4c31",
+      "Number": 5748,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1640,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-704e-a727-57e17fde49ef",
+      "Number": 5749,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2002,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-79bf-a413-a21b128e230f",
+      "Number": 5750,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1758,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-73ab-b86e-f376d03c911d",
+      "Number": 5751,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1227,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7258-9784-c7bdaf0e914c",
+      "Number": 5752,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 666,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7b34-bb54-76bcde973bdc",
+      "Number": 5753,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1918,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e10-82aa-0a78b4ccc85e",
+      "Number": 5754,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2864,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7207-81ae-89de9170521c",
+      "Number": 5755,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6387,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-760c-acae-e4c9cdb938d4",
+      "Number": 5756,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3513,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7f74-8b5f-8399b42a7907",
+      "Number": 5757,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3815,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-72ec-bf27-d2efe6e226ea",
+      "Number": 5758,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1530,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7de1-a01a-5354c87428e0",
+      "Number": 5759,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4187,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-73ad-b99b-a33bb328b71e",
+      "Number": 5760,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2973,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7da4-80e1-fee8d9862b51",
+      "Number": 5761,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1208,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-75c9-bb2b-0a4b1cb00eff",
+      "Number": 5762,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1911,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7d1b-b345-0bb949e17f58",
+      "Number": 5763,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1599,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-70dc-a4f8-a5ecd3258b19",
+      "Number": 5764,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1045,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-73ab-bc66-ca5b26d08215",
+      "Number": 5765,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 726,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7a82-a6ef-733ede41e018",
+      "Number": 5766,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1341,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7dbb-91b5-f78ab6d1b5f4",
+      "Number": 5767,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 856,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-79fa-b6de-a39dad5e4ff1",
+      "Number": 5768,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 563,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7dbc-ac7a-cd16ed1e9507",
+      "Number": 5769,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 384,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-75de-b1b5-bca21cef1252",
+      "Number": 5770,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 907,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7217-9a23-0ec1b1a06eaa",
+      "Number": 5771,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 420,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-73b8-97f6-d182bd223151",
+      "Number": 5772,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 562,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-76c6-bbae-43c5496f76b1",
+      "Number": 5773,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 529,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7cb2-ac7f-6f684b7a2504",
+      "Number": 5774,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1424,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-75ed-bfa7-0fc99d09d61c",
+      "Number": 5775,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1032,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7776-8671-df08379bf252",
+      "Number": 5776,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 985,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7223-9aa0-fed7e65bd8df",
+      "Number": 5777,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1422,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7e69-9968-dc1ed57663fa",
+      "Number": 5778,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 637,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-79b8-8958-ec13490ed26e",
+      "Number": 5779,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 713,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7957-9a4e-86a044aafac0",
+      "Number": 5780,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 562,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-710d-bd68-035f5cd63d9f",
+      "Number": 5781,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 652,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-75cd-89d5-cd3828d2ee12",
+      "Number": 5782,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1080,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7620-9588-811f4450674a",
+      "Number": 5783,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4721,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7cf8-8b6e-86bb9ff8a5b0",
+      "Number": 5784,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2862,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7a71-ac2a-2aa42255da5d",
+      "Number": 5785,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3804,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7f6f-856e-a6f62b6c5d24",
+      "Number": 5786,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1510,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7416-a633-25f2af28ef9e",
+      "Number": 5787,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2323,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-761f-b511-89b6ebc146aa",
+      "Number": 5788,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3012,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7b8b-abd3-498b957d5ca5",
+      "Number": 5789,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1251,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7ee2-8254-846a288882ac",
+      "Number": 5790,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1719,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7fe2-b9d5-618552909916",
+      "Number": 5791,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 497,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-73c7-9c39-4350705b2e08",
+      "Number": 5792,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1880,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7aa2-bfc1-d359f54776a5",
+      "Number": 5793,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1765,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7972-ae4a-1782e0b2c07c",
+      "Number": 5794,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1055,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-715c-a914-bae40ff0e980",
+      "Number": 5795,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1883,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7ec3-87ed-5afde55e80aa",
+      "Number": 5796,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1332,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-70c9-876d-0e345aac709c",
+      "Number": 5797,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 836,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-71c4-91a9-7b8f99ff4d07",
+      "Number": 5798,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 604,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-77c2-85fd-df35b359d8d6",
+      "Number": 5799,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 643,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7908-90f0-9bda605a7f2d",
+      "Number": 5800,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 459,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7a34-8e09-1738149031ff",
+      "Number": 5801,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2030,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-745f-b081-c13423e4c6ae",
+      "Number": 5802,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1193,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7f7b-b503-e36465f3980f",
+      "Number": 5803,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1616,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7774-96e5-b8ea446327b2",
+      "Number": 5804,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2137,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7979-a513-43f71809fc1e",
+      "Number": 5805,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2609,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7f4d-916d-bf9ffe898b2d",
+      "Number": 5806,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1753,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-79a5-9f85-d9945af3e685",
+      "Number": 5807,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1417,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7836-96db-61c0f7321fe0",
+      "Number": 5808,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1375,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7589-93ca-12971a08dbce",
+      "Number": 5809,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1083,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7e4b-8a65-a19c91d52398",
+      "Number": 5810,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1188,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-79b3-8391-58aec6b63ef5",
+      "Number": 5811,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 648,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7455-a4d3-4fcb57b3b4a2",
+      "Number": 5812,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 963,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-71b0-80c3-92bf2483fedb",
+      "Number": 5813,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3374,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-784a-8ee9-d8923133ef4e",
+      "Number": 5814,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4226,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7031-a0e0-af1b46b4b435",
+      "Number": 5815,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2569,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-766f-a830-45b627b6b6ef",
+      "Number": 5816,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3773,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7bd7-b1f5-bf7c43bb06d8",
+      "Number": 5817,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4781,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7f4d-aeb0-db86c595e7d3",
+      "Number": 5818,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3174,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-79a9-b7e6-ad60d7fad9ad",
+      "Number": 5819,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6182,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7ac7-b24c-0b15369664ad",
+      "Number": 5820,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2733,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7bb6-b52e-b4ce2fc3ebe0",
+      "Number": 5821,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2000,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7fca-9e65-8e8a29dad110",
+      "Number": 5822,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3200,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-789a-bafb-b83d7b46ce0f",
+      "Number": 5823,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1800,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7245-9fc5-88ca108381d9",
+      "Number": 5824,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2659,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7f56-89a5-1fdc87437e1a",
+      "Number": 5825,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4476,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-78fd-a80b-1706e54d5faf",
+      "Number": 5826,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2722,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7515-b18e-22091a306cd0",
+      "Number": 5827,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1157,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-72b2-8742-558de3d46664",
+      "Number": 5828,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3083,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-77c7-acfd-9f7caf983db4",
+      "Number": 5829,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4238,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7cfb-b576-325cfe4d0457",
+      "Number": 5830,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1996,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7148-8d9e-2a3cff8360fe",
+      "Number": 5831,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4017,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7083-95e8-be82d010992b",
+      "Number": 5832,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2730,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7f9f-b81c-77da4ede828a",
+      "Number": 5833,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1553,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7f19-8dda-8108b8673fa5",
+      "Number": 5834,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1802,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7c9f-a068-50834db9cb2d",
+      "Number": 5835,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1425,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7d6f-b0e6-45ea681325ce",
+      "Number": 5836,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1136,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7414-823d-648afa01cd39",
+      "Number": 5837,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1744,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7c06-8341-26747bcc2aeb",
+      "Number": 5838,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 987,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-79ce-b5a1-8fd444d355d0",
+      "Number": 5839,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1874,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-773f-aa28-82b4110afa71",
+      "Number": 5840,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4090,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7012-949e-180b8c050560",
+      "Number": 5841,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2992,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-752b-b5a5-f2261886f338",
+      "Number": 5842,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2786,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7334-bf92-bb53d5f6c4d1",
+      "Number": 5843,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2029,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7058-93f8-23479d0f9037",
+      "Number": 5844,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2217,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7074-b4c0-17233cf3ec10",
+      "Number": 5845,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1447,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-71da-9744-08069a60bc75",
+      "Number": 5846,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2815,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-711b-90c2-0ef6c5bb0b51",
+      "Number": 5847,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3427,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-770a-a961-912c567282ba",
+      "Number": 5848,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1179,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7d43-a79a-154c46b537a5",
+      "Number": 5849,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3346,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7d2b-9c38-a1b0da354ef3",
+      "Number": 5850,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6560,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7946-b497-48d28ca122c6",
+      "Number": 5851,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1626,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7b3c-b8bf-ad27dcd4c7ed",
+      "Number": 5852,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4502,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7084-8848-f74ac791def1",
+      "Number": 5853,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4114,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-722c-8bb4-dfb85d7bd795",
+      "Number": 5854,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2420,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-79e0-9612-949f6929b26a",
+      "Number": 5855,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3795,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-711e-98d4-9354ca39c476",
+      "Number": 5856,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2395,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7070-8463-76ab5c491423",
+      "Number": 5857,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1946,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7343-930d-e525bc9bd53c",
+      "Number": 5858,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2944,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-759b-8873-1397026b67f4",
+      "Number": 5859,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3878,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-75cb-ba38-157f1d631fe7",
+      "Number": 5860,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1474,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ef-7fe9-a31f-cb938549e374",
+      "Number": 5861,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1382,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ef-7f2e-a9c0-d64a35f1bc03",
+      "Number": 5862,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1141,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ef-742f-9311-fc106b662d91",
+      "Number": 5863,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1094,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ef-7858-8fef-de0f07fc0038",
+      "Number": 5864,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 679,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ef-73ab-921b-b2097b9ba406",
+      "Number": 5865,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 672,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ef-7bbf-a49d-30cddae29799",
+      "Number": 5866,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1041,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
     }
   ]
 }
