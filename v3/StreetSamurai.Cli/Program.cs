@@ -1532,10 +1532,14 @@ if (args.Contains("--harvest-entities"))
 //   list      Print all universes
 //   current   Print the active universe
 //   use       --slug <slug> | --id <guid>
-if (args.Contains("--universe"))
+// Only hijacks dispatch when --universe is the PRIMARY command (args[0]). Elsewhere in argv,
+// --universe <slug> is the scoping flag other commands accept (parsed at line 28 into
+// UniverseBootstrap.RequestedSlug) — args.Contains("--universe") would incorrectly steal
+// dispatch from every command block defined after this one (e.g. --coordinate, --verdict).
+if (args.Length > 0 && args[0] == "--universe")
 {
     var sp = BuildCoreServices(args);
-    var uniArgs = args.SkipWhile(a => a != "--universe").Skip(1).ToArray();
+    var uniArgs = args.Skip(1).ToArray();
     Environment.ExitCode = await UniverseCli.RunAsync(uniArgs, sp);
     return;
 }
