@@ -191,13 +191,92 @@ trusted; that trust is the whole product.
 
 ## 3a. Publishing Imprint (GSPL-specific exception to the global "author = MindAttic" rule)
 
-**Every book-level node under GSPL (Matthew, and Mark/Luke/John as they're created) has
-`Node.Author` set to `"Pulpit Press"`**, not `"MindAttic"`. This is a deliberate, explicit
-exception to this project's global export-author rule, scoped to GSPL only — set once per book
-node (`UPDATE Nodes SET Author = 'Pulpit Press' WHERE Slug = '<book-slug>'`) so `ss --export-node`
-picks it up automatically without needing `--author` passed on every export. New chapters added
-to an existing book inherit this via the book node's own `Author` field; a brand-new book node
-(Mark, Luke, John) needs the same one-time `Author` update when it's created.
+**Every book-level node under GSPL (Matthew, Mark, Luke, John) has `Node.Author` set to
+`"Pulpit Press"`**, not `"MindAttic"`. This is a deliberate, explicit exception to this project's
+global export-author rule, scoped to GSPL only — set once per book node (`UPDATE Nodes SET Author
+= 'Pulpit Press' WHERE Slug = '<book-slug>'`) so `ss --export-node` picks it up automatically
+without needing `--author` passed on every export. New chapters added to an existing book inherit
+this via the book node's own `Author` field; a brand-new book node needs the same one-time
+`Author` update when it's created.
+
+## 3b. Levity — the dry-wit register {#SS-GSPL-3b}
+
+**This material would be a dry report by default, and a dry report is a failed book.** The
+antidote is not jokes; it's *dryness deployed on purpose* — the register of a very well-read
+friend who finds a fact funny because it is genuinely funny, and trusts you to catch it without
+being nudged. Mark chapter 4's "Thirtyfold was already exceptional; sixty- and a hundredfold
+were the stuff of stories, not spreadsheets" is the standard: the wit is carried entirely by an
+accurate fact and a well-chosen noun.
+
+**The four moves that work:**
+
+1. **The deadpan juxtaposition.** Put the ancient fact and its unglamorous mechanism side by
+   side and decline to comment. ("It's a practical detail before it's anything else — water
+   carries a voice, and a boat is a natural amphitheater when you can't build one.")
+2. **The honest aside.** When the evidence is thin or the pericope has nothing checkable in it,
+   say so in the first person plural and move on — the candor *is* the humor. ("There is little
+   here to fact-check in the archaeological sense; it is, honestly, closer to pure agricultural
+   observation dressed as theology.")
+3. **The undercutting specific.** Let a real number, price, or title deflate a grand claim
+   without editorializing. ("Luke's version is the better deal.")
+4. **The scholarly-brawl aside.** Real academic disputes are frequently comic in their
+   persistence; you may say so, as long as both sides are represented accurately and neither is
+   the butt of the joke.
+
+**Hard limits on levity — these are not negotiable:**
+
+- **Never at the expense of the believer, the text, or the dead.** The joke is never "look what
+  these credulous people thought." Punch at *bad evidence*, *institutional convenience*, and
+  *our own modern smugness* — never at faith, and never at a named ancient person's suffering.
+  Crucifixion, infant massacre, execution, slavery, and rape get no wit at all: those passages
+  are written flat and plain.
+- **Never at the expense of accuracy.** A funnier phrasing that shades a fact is a defect (§1).
+  If the wit requires the fact to bend, drop the wit.
+- **Never a punchline the reader has to be told is one.** No "ironically," no "amusingly," no
+  exclamation points, no winking. State it straight and let it land.
+- **Rate limit: roughly one wry moment per beat, not per paragraph.** Levity is seasoning. A
+  chapter that is continuously clever reads as flippant, which forfeits exactly the trust §3
+  exists to build.
+
+## 3c. "Then and Now" — the mandatory closing movement {#SS-GSPL-3c}
+
+**Every numbered chapter in every GSPL book ends with a short section headed `Then and Now`** —
+one to three paragraphs, roughly 150–250 words — observing what has actually changed between
+that chapter's world and the reader's, and what has not. It is the series' signature and its
+single most reader-facing feature: the place where a wall of first-century detail becomes a
+statement about being alive.
+
+**What it is for.** The rest of a chapter establishes that the ancient world was *specific* — a
+real price, a real title, a real building. Then and Now is where that specificity earns its
+keep, by naming the one thing a modern reader would find genuinely alien and the one thing they
+would recognize immediately. Both halves are required: a section that only says "how strange
+they were" is condescension, and one that only says "people never change" is wallpaper.
+
+**Rules:**
+
+- **It is bound by §1 exactly like every other beat.** The ancient half must rest on facts
+  already established (and cited) earlier in that same chapter — Then and Now introduces no new
+  ancient claim that hasn't been grounded, and reuses that chapter's existing note numbers
+  rather than minting citations for a closing flourish.
+- **The modern half stays qualitative.** Do not reach for a modern statistic, wage figure,
+  percentage, or dated survey to make the comparison land: a modern number needs a citation as
+  much as an ancient one, and an uncited "today, 40 percent of…" is precisely the invented
+  specific §4 prohibits. Compare *kinds of experience* — what a thing cost in labour, what it
+  felt like to wait for news, who got believed — not indices.
+- **This is where the levity lives.** §3b's register belongs here more than anywhere else,
+  because Then and Now is the one place the narrator is permitted to be a person with an opinion
+  about the present. The permitted target of that opinion is *us* — modern assumptions, modern
+  self-congratulation — never the ancients.
+- **No moral instruction, no altar call, no lesson.** Observe; do not advise. The reader draws
+  their own conclusion, including a religious one. This is the §2 no-verdict rule applied to the
+  present tense.
+- **Never the same observation twice.** Across a book, the closing sections must not keep
+  landing on one theme (typically "life was cheap" or "information travelled slowly"). Vary the
+  axis: money, law, medicine, distance, literacy, food, women's testimony, debt, weather, noise,
+  smell, who gets believed, who gets counted.
+- **Structural placement:** it is the final beat of the chapter node (highest `SortKey`), and its
+  text opens with the literal line `Then and Now` on its own, so the export renders it as a
+  visible section break rather than another body paragraph.
 
 ## 4. Hard Prohibitions (GSPL)
 
@@ -325,7 +404,28 @@ that tag is what lets a future beat correctly characterize whose reading a citat
 
 ### 5f. Chapter titles
 
-Every chapter `Title` is `"Chapter N — <descriptive subtitle>"` (em dash, not hyphen — set it via
+**Every chapter title is evocative, not descriptive** (series-wide standard, set 2026-07-28 — all
+89 chapters across the four Gospels were retitled to it in one pass). A GSPL table of contents is
+the first thing a browsing reader sees, and a contents page reading "The Temptation, the First
+Disciples, and the Capernaum Ministry" advertises a reference work, which is the one thing §0 says
+this is not. Mark's chapters 4–16 — written later than the rest and to a better instinct — set the
+pattern that became the rule: `Chapter 4 — Seeds, Lamps, and a Sea That Would Not Behave`,
+`Chapter 16 — The Ending That Isn't`.
+
+- **The title must be true.** It is prose, not decoration, and §1 binds it: an evocative title may
+  compress and it may be wry, but it may not assert anything the chapter doesn't establish. Naming
+  the chapter after the strangest *real* thing in it is almost always the right move.
+- **Prefer the concrete object over the abstract theme** — the stone jars, the coin, the fig tree,
+  the headcount — because the concrete object is what the chapter can actually prove.
+- **The rule-of-three list and the withheld turn both work** ("The Mountain, the Boy, and the
+  Valley"; "The Ending That Isn't"); a bare topic label does not.
+- **No spoiling a genuine open question.** If the chapter's payload is that scholarship is
+  unsettled, the title should pose it, not resolve it.
+- Same levity limits as §3b: no wit on crucifixion, infant massacre, or execution chapters —
+  those get titles that are plain and grave (`Chapter 27 — The Nail, the Titulus, and the
+  Governor Who Had the Last Word` is the ceiling; nothing lighter).
+
+The format is `"Chapter N — <title>"` (em dash, not hyphen — set it via
 a UTF-8 `.sql` script file run with `sqlcmd -f 65001`, never inline through a shell command; git
 Bash's default codepage silently flattens em dashes to plain hyphens otherwise, and this is easy
 to miss since the mangled output still looks plausible in a terminal that renders both the same
