@@ -75,15 +75,47 @@ public class StreetSamuraiDbContext : DbContext
         }
     }
 
+    /// <summary>
+    /// Keep <see cref="Beat.TextHash"/> in lockstep with <see cref="Beat.Text"/> on every save.
+    ///
+    /// Why this is central rather than per-call-site: the hash is what
+    /// <c>NodeReviewService</c> uses to decide which beats changed since they were last
+    /// scored. A call site that writes prose and forgets the hash makes an edited beat
+    /// look UNCHANGED — it keeps a score awarded to different words, and nothing reports
+    /// it. That is a silent-correctness failure, so it must not depend on remembering.
+    /// <c>DistributedWorkerCoordinator.SubmitBeatWriteAsync</c> was exactly that bug: it
+    /// wrote generated prose and left the hash null.
+    ///
+    /// Only recomputed when Text is genuinely new or modified. An unrelated edit
+    /// (Stale, GapAfterMs, AudioPath) must NOT bless a hash that is already wrong,
+    /// because doing so would erase the evidence that the prose drifted.
+    ///
+    /// NOTE: raw-SQL writes bypass EF entirely and cannot be caught here. Those are the
+    /// backstop's job — see scripts/audit_beat_text_hash.ps1.
+    /// </summary>
+    private void StampBeatTextHash()
+    {
+        foreach (var entry in ChangeTracker.Entries<Beat>())
+        {
+            if (entry.State != EntityState.Added && entry.State != EntityState.Modified) continue;
+            if (entry.State == EntityState.Modified && !entry.Property(nameof(Beat.Text)).IsModified) continue;
+
+            var expected = Beat.ComputeHash(entry.Entity.Text);
+            if (entry.Entity.TextHash != expected) entry.Entity.TextHash = expected;
+        }
+    }
+
     public override int SaveChanges(bool acceptAllChangesOnSuccess)
     {
         StampUniverseOnAdded();
+        StampBeatTextHash();
         return base.SaveChanges(acceptAllChangesOnSuccess);
     }
 
     public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
     {
         StampUniverseOnAdded();
+        StampBeatTextHash();
         return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
     }
 

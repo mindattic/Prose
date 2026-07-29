@@ -397,6 +397,10 @@ public class DistributedWorkerCoordinator
         }
 
         beat.Text      = TextSanitizerService.Sanitize(bw.ProseText);
+        // Written prose must carry its hash, or review-score invalidation cannot tell this
+        // beat from an unwritten one. The DbContext enforces this on save too; setting it
+        // here keeps the intent visible at the call site.
+        beat.TextHash  = Beat.ComputeHash(beat.Text);
         beat.UpdatedAt = DateTime.UtcNow;
         beat.Version   = beat.Version + 1;
         await db.SaveChangesAsync(ct);

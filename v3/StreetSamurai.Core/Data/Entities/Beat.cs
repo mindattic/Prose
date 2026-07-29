@@ -35,12 +35,30 @@ public class Beat
     /// <summary>The paragraph. Authoritative; nothing else holds a copy.</summary>
     public string Text { get; set; } = "";
 
-    /// <summary>SHA-256 hex of the prose at the last point it was either
-    /// hand-edited or successfully narrated. The Stale flag is computed by
-    /// comparing this against a fresh hash of <see cref="Text"/>. Survives
-    /// re-record so single-beat re-renders can stitch from the persisted
-    /// <see cref="LastRequestId"/> of neighbours.</summary>
+    /// <summary>SHA-256 hex of <see cref="Text"/>, kept in lockstep with it.
+    ///
+    /// This is NOT what drives narration staleness — <see cref="Stale"/> is an
+    /// explicit flag, set by every edit path and cleared on render. The real
+    /// consumer is review-score invalidation: <c>NodeReviewService</c> compares
+    /// this against the <c>NodeReviewBeatScore.BeatTextHash</c> recorded when the
+    /// beat was last scored, to decide which beats changed and must be re-reviewed.
+    ///
+    /// So a hash left stale after a prose edit makes an edited beat look
+    /// UNCHANGED: it silently keeps a score that was awarded to different words.
+    /// That is why <c>StreetSamuraiDbContext.StampBeatTextHash()</c> recomputes it
+    /// on every save rather than trusting call sites to remember.</summary>
     public string? TextHash { get; set; }
+
+    /// <summary>Canonical hash for <see cref="TextHash"/> — SHA-256 of the
+    /// UTF-8 bytes of the trimmed text, lowercase hex. Must stay byte-identical
+    /// to <c>NodeWorkbenchService.ComputeTextHash</c> and its two siblings, since
+    /// hashes written by one are compared against hashes written by another.</summary>
+    public static string ComputeHash(string? text)
+    {
+        var normalized = (text ?? "").Trim();
+        using var sha = System.Security.Cryptography.SHA256.Create();
+        return Convert.ToHexString(sha.ComputeHash(System.Text.Encoding.UTF8.GetBytes(normalized))).ToLowerInvariant();
+    }
 
     // ── Narrative metadata ───────────────────────────────────────────────
 
