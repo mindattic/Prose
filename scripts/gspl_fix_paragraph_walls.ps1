@@ -23,6 +23,19 @@ function Is-RealSentenceEnd([string]$text, [int]$dotIdx) {
     # dotIdx points at a '.' followed by ' ' + uppercase.
     # Walk back to collect the token immediately before the period.
     $i = $dotIdx - 1
+    # Step back over a trailing note/citation reference - "...side [34]." or "...(12)." -
+    # otherwise the token walk hits ']' immediately, collects nothing, and rejects a
+    # genuine sentence end. Most sentences in this corpus end with a bracketed note.
+    if ($i -ge 0 -and ($text[$i] -eq ']' -or $text[$i] -eq ')')) {
+        $open = '['
+        if ($text[$i] -eq ')') { $open = '(' }
+        $j = $i - 1
+        while ($j -ge 0 -and $text[$j] -ne $open) { $j-- }
+        if ($j -ge 0) { $i = $j - 1 }
+        # "...side [34]." leaves us on the space before '['; skip it so the token
+        # walk below actually reaches the word.
+        while ($i -ge 0 -and $text[$i] -eq ' ') { $i-- }
+    }
     $tok = ''
     while ($i -ge 0 -and $text[$i] -match '[A-Za-z\.]') { $tok = $text[$i] + $tok; $i-- }
     if ($tok.Length -eq 0) { return $false }
