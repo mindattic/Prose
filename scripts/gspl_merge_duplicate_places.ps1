@@ -15,23 +15,18 @@ param([switch]$Apply)
 
 $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
-Add-Type -AssemblyName System.Data
+$ErrorActionPreference = 'Stop'
 
-$conn = New-Object System.Data.SqlClient.SqlConnection("Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;")
-$conn.Open()
+# Loud DB helpers: New-SSRow drops IDENTITY columns automatically, Invoke-SSNonQuery
+# turns a SqlException into a terminating error, Assert-SSCount verifies afterwards.
+. "$PSScriptRoot\gspl_db.ps1"
+
+$conn = Open-SS
 $em = [char]8212
 $GSPL = [guid]"0197E9C9-0003-7000-8000-000000000003"
 
-function Exec([string]$sql, [hashtable]$p) {
-    $c = $conn.CreateCommand(); $c.CommandText = $sql
-    foreach ($k in $p.Keys) { [void]$c.Parameters.AddWithValue("@$k", $p[$k]) }
-    return $c.ExecuteNonQuery()
-}
-function Scalar([string]$sql, [hashtable]$p) {
-    $c = $conn.CreateCommand(); $c.CommandText = $sql
-    foreach ($k in $p.Keys) { [void]$c.Parameters.AddWithValue("@$k", $p[$k]) }
-    return $c.ExecuteScalar()
-}
+function Exec([string]$sql, [hashtable]$p) { return Invoke-SSNonQuery $conn $sql $p }
+function Scalar([string]$sql, [hashtable]$p) { return Invoke-SSScalar $conn $sql $p }
 
 # Each edit: anchor text that must already exist, and what to insert immediately after it.
 $merges = @(
@@ -119,26 +114,31 @@ foreach ($m in $merges) {
     foreach ($a in $m.aliases) {
         $have = [int](Scalar "SELECT COUNT(*) FROM PlaceAliases WHERE PlaceId=@P AND Value=@V" @{ P = [guid]$m.keeper; V = $a })
         if ($have -gt 0) { Write-Host "    alias exists: $a"; continue }
-        # PlaceAliases.Id is a bigint IDENTITY, same as DeprecatedEntityNames.Id - omit it.
-        [void](Exec "INSERT INTO PlaceAliases (PlaceId, Position, Value) VALUES (@P, @Pos, @V)" @{ P = [guid]$m.keeper; Pos = $pos; V = $a })
+        # New-SSRow drops PlaceAliases.Id (bigint IDENTITY) itself and asserts 1 row landed.
+        [void](New-SSRow $conn 'PlaceAliases' @{ PlaceId = [guid]$m.keeper; Position = $pos; Value = $a } -Quiet)
         $pos++
     }
 
     # name-resolution breadcrumb
     $dep = [int](Scalar "SELECT COUNT(*) FROM DeprecatedEntityNames WHERE EntityId=@E AND DeprecatedName=@D" @{ E = [guid]$m.keeper; D = $m.stubName })
     if ($dep -eq 0) {
-        # Id is a bigint IDENTITY - omit it. (Passing a GUID here fails silently-ish:
-        # the .NET exception is non-terminating, so the script carries on and reports
-        # success for the surrounding steps.)
-        [void](Exec @"
-INSERT INTO DeprecatedEntityNames (UniverseId, DeprecatedName, CanonicalName, EntityId, Notes, AddedAt)
-VALUES (@U, @D, @C, @E, @N, SYSUTCDATETIME())
-"@ @{ U = $GSPL; D = $m.stubName; C = $m.keeperName; E = [guid]$m.keeper
-      N = "Duplicate place row merged into the canonical entry; unique content folded in, row retired." })
+        # DeprecatedEntityNames.Id is also bigint IDENTITY - New-SSRow handles it.
+        [void](New-SSRow $conn 'DeprecatedEntityNames' @{
+            UniverseId = $GSPL; DeprecatedName = $m.stubName; CanonicalName = $m.keeperName
+            EntityId = [guid]$m.keeper
+            Notes = "Duplicate place row merged into the canonical entry; unique content folded in, row retired."
+            AddedAt = [datetime]::UtcNow
+        } -Quiet)
     }
 
     # soft-retire the stub (never a hard DELETE)
-    [void](Exec "UPDATE Entities SET IsActive=0, Status='merged', ArchivedAt=SYSUTCDATETIME(), ModifiedAt=SYSUTCDATETIME() WHERE Id=@Id" @{ Id = [guid]$m.stub })
+    [void](Invoke-SSNonQuery $conn "UPDATE Entities SET IsActive=0, Status='merged', ArchivedAt=SYSUTCDATETIME(), ModifiedAt=SYSUTCDATETIME() WHERE Id=@Id" @{ Id = [guid]$m.stub } -Expect 1 -What "retire stub $($m.stubName)")
+
+    # Verify every side effect actually landed before claiming success. "APPLIED" used to
+    # print over failed inserts; now the assertions throw instead.
+    Assert-SSCount $conn "SELECT COUNT(*) FROM PlaceAliases WHERE PlaceId=@P AND Value IN ('$($m.aliases -join "','")')" @{ P = [guid]$m.keeper } -Expect $m.aliases.Count -What "aliases on $($m.keeperName)"
+    Assert-SSCount $conn "SELECT COUNT(*) FROM DeprecatedEntityNames WHERE EntityId=@E AND DeprecatedName=@D" @{ E = [guid]$m.keeper; D = $m.stubName } -Expect 1 -What "deprecated-name breadcrumb for $($m.stubName)"
+    Assert-SSCount $conn "SELECT COUNT(*) FROM Entities WHERE Id=@Id AND IsActive=0 AND Status='merged'" @{ Id = [guid]$m.stub } -Expect 1 -What "stub retired"
     Write-Host "    APPLIED"
 }
 

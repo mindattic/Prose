@@ -10,6 +10,7 @@
 # Dry-run by default; pass -Apply to write.
 
 param([switch]$Apply, [int]$Threshold = 1800, [int]$ShowBreaks = 0)
+$ErrorActionPreference = 'Stop'   # fail loudly: a SqlException is otherwise non-terminating
 
 $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)

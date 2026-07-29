@@ -1,4 +1,5 @@
 param([switch]$Apply)
+$ErrorActionPreference = 'Stop'   # fail loudly: a SqlException is otherwise non-terminating
 
 $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
