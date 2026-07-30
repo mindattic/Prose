@@ -539,6 +539,15 @@ public class StreetSamuraiDbContext : DbContext
         // ── Unified node schema ───────────────────────────────────────────
         b.Entity<Beat>(e =>
         {
+            // TR_Beats_TextHashDriftGuard (migration 20260730001502) is an AFTER UPDATE
+            // trigger on this table. SQL Server rejects an OUTPUT clause without INTO on
+            // any DML against a triggered table, and EF's default SaveChanges relies on
+            // OUTPUT to read back generated values — without this annotation, EVERY save
+            // that touches a Beat throws DbUpdateException. HasTrigger tells EF to fall
+            // back to a non-OUTPUT strategy for this table. Found 2026-07-30 when the VIGL
+            // logic sweep's `ss --beat update` calls started failing; do not remove this
+            // without also removing (or rewriting) the trigger.
+            e.ToTable("Beats", tb => tb.HasTrigger("TR_Beats_TextHashDriftGuard"));
             e.HasKey(x => x.Id);
             e.Property(x => x.Text).IsRequired();
             e.Property(x => x.SceneType).HasMaxLength(40).IsRequired();
