@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**246 tools** across **37 tool families.**
+**247 tools** across **37 tool families.**
 
 ## Families
 
@@ -20,7 +20,7 @@
 | [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
 | [Book Audit](#book-audit) | 2 |
-| [Book Logic](#book-logic) | 1 |
+| [Book Logic](#book-logic) | 2 |
 | [Canon](#canon) | 9 |
 | [Canon Doc](#canon-doc) | 7 |
 | [Chekhov Audit](#chekhov-audit) | 1 |
@@ -121,12 +121,17 @@ Link a node to its predecessor, switching it from gateway mode to sequel mode. W
 
 <sub>`BookLogicTools`</sub>
 
-### `write_outline`
+### `logic_sweep`
 
-Generate a narrative outline and adversarial logic audit for a node. Finds plot holes, canon violations, prop errors, causality breaks, and contradictions. Returns outline (beat-by-beat narrative summary grouped by act) + findings list with severity/category/problem/suggestion per issue. Pass skip_audit=true for outline only (faster). Accepts node id (GUID) or slug.
+Run docs/LOGIC.md's six-dimension logic sweep on a node: causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references, bible agreement. This is a single LLM call per dimension over the whole node's prose — a coarse, automatable gate, NOT a replacement for the full /logic-sweep Claude Code skill on a large book (that skill splits the book across range-scoped subagents, verifies quotes, and does a separate fix + re-verify pass). Findings persist to the Findings table and auto-heal on re-run. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `skip_audit` (bool, optional) — Skip the logic audit and return outline only. Default false.
+
+### `write_outline`
+
+Generate a beat-by-beat narrative outline (act-grouped) for a node. For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/bible-agreement), call logic_sweep instead. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Canon
 

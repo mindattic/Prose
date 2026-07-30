@@ -4,29 +4,31 @@ using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Services;
+using StreetSamurai.Core.Services.Audit;
 
 namespace StreetSamurai.Mcp;
 
-// ── Story Logic / Outline tools ───────────────────────────────────────────────
+// ── Story Outline + Logic Sweep tools ──────────────────────────────────────────
 //
-//   write_outline — generate a beat-by-beat narrative outline + adversarial
-//                   logic audit (plot holes, canon violations, prop errors,
-//                   causality breaks, contradictions). Core sanity check for
-//                   catching "the straightness of a katana"-level errors before
-//                   they accumulate across a node.
+//   write_outline — generate a beat-by-beat narrative outline (act-grouped).
+//   logic_sweep   — docs/LOGIC.md's six-dimension sweep (SS-A44) as a single-pass
+//                   LLM-per-dimension check. For a large book or a thorough pass,
+//                   prefer the /logic-sweep Claude Code skill instead (range-scoped
+//                   subagents + quote verification + fix + re-verify).
 
 [McpServerToolType]
 public class BookLogicTools(
-    BookLogicAuditService auditService,
+    NodeOutlineService outlineService,
+    LogicSweepService logicSweepService,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
-    /// <summary>Generate a beat-by-beat outline and run an adversarial logic audit. Use this before reviewing a node to catch plot holes, canon violations, impossible actions, prop errors (e.g. a curved sword described as straight), causality breaks, and contradictions. Returns the outline (act-grouped narrative summary) and a findings list. Each finding has beat_number, severity (critical/major/minor), category, problem description, and a concrete fix suggestion. Pass skip_audit=true for outline only.</summary>
-    [McpServerTool, Description("Generate a narrative outline and adversarial logic audit for a node. Finds plot holes, canon violations, prop errors, causality breaks, and contradictions. Returns outline (beat-by-beat narrative summary grouped by act) + findings list with severity/category/problem/suggestion per issue. Pass skip_audit=true for outline only (faster). Accepts node id (GUID) or slug.")]
+    [McpServerTool, Description("Generate a beat-by-beat narrative outline (act-grouped) for a node. " +
+        "For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/bible-agreement), " +
+        "call logic_sweep instead. Accepts node id (GUID) or slug.")]
     public async Task<string> write_outline(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Skip the logic audit and return outline only. Default false.")] bool skip_audit = false)
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)
@@ -34,22 +36,52 @@ public class BookLogicTools(
 
         try
         {
-            var result = await auditService.AuditAsync(nodeId.Value, includeLogicCheck: !skip_audit);
+            var result = await outlineService.GenerateAsync(nodeId.Value);
             return JsonSerializer.Serialize(new
             {
                 node_id    = result.NodeId,
-                title        = result.Title,
-                beat_count   = result.BeatCount,
-                outline      = result.Outline,
-                has_critical = result.HasCritical,
-                has_major    = result.HasMajor,
-                findings     = result.Findings.Select(f => new
+                title      = result.Title,
+                beat_count = result.BeatCount,
+                outline    = result.Outline,
+            }, JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts);
+        }
+    }
+
+    [McpServerTool, Description("Run docs/LOGIC.md's six-dimension logic sweep on a node: causality chain, " +
+        "knowledge states, timeline, plant/payoff (two-way), orphan references, bible agreement. " +
+        "This is a single LLM call per dimension over the whole node's prose — a coarse, automatable gate, " +
+        "NOT a replacement for the full /logic-sweep Claude Code skill on a large book (that skill splits " +
+        "the book across range-scoped subagents, verifies quotes, and does a separate fix + re-verify pass). " +
+        "Findings persist to the Findings table and auto-heal on re-run. Accepts node id (GUID) or slug.")]
+    public async Task<string> logic_sweep(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    {
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+
+        try
+        {
+            var report = await logicSweepService.RunAsync(nodeId.Value);
+            return JsonSerializer.Serialize(new
+            {
+                node_id        = report.NodeId,
+                title          = report.NodeTitle,
+                beat_count     = report.BeatCount,
+                clean          = report.Clean,
+                blocker_count  = report.BlockerCount,
+                moderate_count = report.ModerateCount,
+                minor_count    = report.MinorCount,
+                findings       = report.Findings.Select(f => new
                 {
-                    beat       = f.BeatNumber,
-                    severity   = f.Severity,
-                    category   = f.Category,
-                    problem    = f.Problem,
-                    suggestion = f.Suggestion,
+                    dimension = f.RuleKey,
+                    severity  = f.Severity,
+                    evidence  = f.Evidence,
+                    fix       = f.Fix,
                 }),
             }, JsonOpts);
         }

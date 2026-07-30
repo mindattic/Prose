@@ -51,15 +51,25 @@ public interface IDeterministicAuditRule : IAuditRule
 }
 
 /// <summary>
-/// A rule checked by a single LLM call. <see cref="AuditRunner"/> owns the call itself and the
-/// JSON-envelope parsing — every LLM rule speaks the same
-/// <c>{"status":"pass"|"warn"|"fail","evidence":"...","fix":"..."}</c> contract (the shape
-/// BookAuditService's commandments already used) so there is exactly one parser instead of one
-/// per audit service. A rule only supplies its prompt and, if it wants "fail" to land somewhere
-/// other than BLOCKER, overrides <see cref="SeverityOnFail"/>.
+/// A rule checked by a single LLM call. <see cref="AuditRunner"/> owns making the call; response
+/// parsing defaults to the shared <c>{"status":"pass"|"warn"|"fail","evidence":"...","fix":"..."}</c>
+/// contract (one verdict per rule — the shape BookAuditService's commandments use) via
+/// <see cref="ParseResponse"/>'s default implementation, so most rules need only supply a prompt.
+/// A rule whose single LLM call can legitimately surface a VARIABLE number of findings (e.g. a
+/// LogicSweepService dimension scanning a whole book for causality breaks — could be zero, could
+/// be five, each at a different beat) overrides <see cref="ParseResponse"/> to parse its own
+/// richer JSON shape (typically an array) instead of the single-verdict envelope.
 /// </summary>
 public interface ILlmAuditRule : IAuditRule
 {
     string SeverityOnFail => "BLOCKER";
+    /// <summary>Response budget for this rule's call — commandment-style single-verdict rules
+    /// fit comfortably in the default; a rule reading a whole book for a variable-length list of
+    /// findings needs much more room to enumerate them.</summary>
+    int MaxResponseTokens => 400;
     (string System, string User) BuildPrompt(AuditContext ctx);
+    /// <summary>Receives the same <paramref name="ctx"/> BuildPrompt got — a rule that maps a
+    /// beat-number citation back to a real BeatId (for <see cref="AuditVerdict.Location"/>)
+    /// needs <c>ctx.Beats</c> to do it.</summary>
+    IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => AuditRunner.ParseSingleVerdict(this, raw);
 }

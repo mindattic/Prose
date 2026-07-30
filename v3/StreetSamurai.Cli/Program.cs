@@ -1304,15 +1304,27 @@ if (args.Contains("--score-trend"))
     return;
 }
 
-// ss --write-outline --slug <nodeSlug> [--json] [--skip-audit]
-// Generates a beat-by-beat narrative outline (act-grouped, one sentence per beat)
-// and runs an adversarial logic audit: plot holes, canon violations, impossible actions,
-// causality breaks, prop errors, contradictions. Use --skip-audit for outline only.
-// Exit 0 = no issues, 1 = minor/major findings, 2 = critical findings.
+// ss --write-outline --slug <nodeSlug> [--json]
+// Generates a beat-by-beat narrative outline (act-grouped, one sentence per beat).
+// For a logic check, use --logic-sweep instead.
 if (args.Contains("--write-outline"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await WriteOutlineCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --logic-sweep --slug <nodeSlug> [--json]
+// Codifies docs/LOGIC.md's six-dimension sweep (SS-A44) as one LLM call per dimension:
+// causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references,
+// bible agreement. A single-pass approximation over the whole node's prose — for a large
+// book or a thorough pass, prefer the /logic-sweep Claude Code skill (range-scoped
+// subagents + quote verification + fix + re-verify). Findings persist to Findings and
+// auto-heal on re-run. Exit 0 = clean, 1 = MODERATE/MINOR only, 2 = any BLOCKER.
+if (args.Contains("--logic-sweep"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await LogicSweepCli.RunAsync(args, sp);
     return;
 }
 

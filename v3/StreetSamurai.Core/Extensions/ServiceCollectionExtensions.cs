@@ -1019,7 +1019,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ChapterCloseProcessorService>();
         services.AddSingleton<ProseWriterRouter>();
         services.AddSingleton<LibertyReportService>();
-        services.AddSingleton<BookLogicAuditService>();
+        services.AddSingleton<NodeOutlineService>();
+        services.AddSingleton<StreetSamurai.Core.Services.Audit.LogicSweepService>();
 
         return services;
     }

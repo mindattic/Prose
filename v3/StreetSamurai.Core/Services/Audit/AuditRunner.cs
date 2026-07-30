@@ -123,7 +123,17 @@ public class AuditRunner(ILlmService llm, FindingsService findings)
     async Task<IReadOnlyList<AuditVerdict>> RunLlmRuleAsync(ILlmAuditRule rule, AuditContext ctx, CancellationToken ct)
     {
         var (system, user) = rule.BuildPrompt(ctx);
-        var raw = await llm.GenerateAsync(system, user, temperature: 0.2, maxTokens: 400, ct: ct);
+        var raw = await llm.GenerateAsync(system, user, temperature: 0.2, maxTokens: rule.MaxResponseTokens, ct: ct);
+        return rule.ParseResponse(raw, ctx);
+    }
+
+    /// <summary>Default <see cref="ILlmAuditRule.ParseResponse"/> implementation — the shared
+    /// single-verdict <c>{"status","evidence","fix"}</c> envelope every commandment-style rule
+    /// speaks. Public so a rule overriding ParseResponse for its own shape can still fall back to
+    /// this for the common case, and so a genuinely bespoke rule elsewhere in the app can reuse it
+    /// without depending on AuditRunner's internals.</summary>
+    public static IReadOnlyList<AuditVerdict> ParseSingleVerdict(ILlmAuditRule rule, string raw)
+    {
         var parsed = ParseVerdictEnvelope(raw);
         var severity = parsed?.Status switch
         {
