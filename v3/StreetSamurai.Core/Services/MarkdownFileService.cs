@@ -250,10 +250,18 @@ public class MarkdownFileService
                 var existing  = await db.MarkdownFiles
                     .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
 
-                // Honor any explicit frontmatter (tier:/scope:/triggers:) declared in the assembled
-                // content (e.g. a preamble section added via set_canon_section). Hardcoded defaults
-                // were preventing keyword-triggered loading for universe canon docs (CAUL.md etc.).
-                var canonFm       = ParseFrontmatter(assembled);
+                // Tier/scope/triggers come from the type's own ExtraFrontMatter (the same data
+                // GenerateMdAsync stamps into the disk file's header) — the authoritative source.
+                // Fall back to parsing frontmatter out of the assembled section content only if the
+                // type declares nothing: an older doc might still carry it embedded in a "preamble"
+                // section (a workaround from before CanonDocumentTypes existed; harmless to keep
+                // honoring, since nothing currently depends on it once its type's ExtraFrontMatter
+                // is populated).
+                var typeFm  = await typeRegistry.GetFrontMatterAsync(doc.DocumentType, ct);
+                var canonFm = ParseFrontmatter($"---\n{typeFm}---\n");
+                if (!canonFm.ContainsKey("tier") && !canonFm.ContainsKey("triggers"))
+                    canonFm = ParseFrontmatter(assembled);
+
                 var resolvedTier  = canonFm.TryGetValue("tier", out var fmT) && !string.IsNullOrWhiteSpace(fmT) ? NormalizeTier(fmT) : tier;
                 var resolvedScope = canonFm.TryGetValue("scope", out var fmS) ? NormalizeCsv(fmS) : "";
                 var resolvedTrigs = canonFm.TryGetValue("triggers", out var fmKw) && !string.IsNullOrWhiteSpace(fmKw) ? NormalizeCsv(fmKw) : "";

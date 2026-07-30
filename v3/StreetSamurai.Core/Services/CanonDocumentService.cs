@@ -142,7 +142,10 @@ public class CanonDocumentService
         var fmBase = await typeRegistry.GetFrontMatterAsync(documentType, ct);
         var fm     = $"---\n{fmBase}updated: {today}\n---\n\n";
         var withHeader = $"{fm}<!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type {documentType} -->\n\n{assembled}";
-        await File.WriteAllTextAsync(filePath, withHeader, Encoding.UTF8, ct);
+        // Encoding.UTF8 emits a BOM preamble; UTF8Encoding(false) does not. A generated .md
+        // should be clean UTF-8 like everything else in this project (see the BOM checks the
+        // logic-sweep skill runs on beat text) — nothing intentionally wants a BOM here.
+        await File.WriteAllTextAsync(filePath, withHeader, new UTF8Encoding(false), ct);
         File.SetAttributes(filePath, FileAttributes.ReadOnly);
 
         // Update checksum
@@ -224,7 +227,16 @@ public class CanonDocumentService
             else
             {
                 var heading = section.SectionTitle ?? section.SectionKey;
-                var anchor  = section.SectionKey.Contains('§') ? $" {{#{section.SectionKey}}}" : "";
+                // Re-emit the explicit anchor the section was originally keyed by (e.g. "SS-LAW-1",
+                // "SS-CRAFT-0") so other docs can keep citing it stably. "section-<slug>-<n>" is the
+                // auto-slugified fallback MigrateCanonDocsCli assigns to a heading that had no
+                // {#anchor} in the source file — those never had a real anchor to begin with, so
+                // they stay anchor-less. Previously this checked for a literal '§' character, which
+                // happened to cover BIBLE.md's "SS-§N" convention but silently dropped every anchor
+                // that doesn't use it (CRAFT.md's "SS-CRAFT-N", etc.) — a real regression waiting to
+                // trigger on the next doc migrated without a '§' in its anchor scheme.
+                var anchor = section.SectionKey.StartsWith("section-", StringComparison.Ordinal)
+                    ? "" : $" {{#{section.SectionKey}}}";
                 sb.AppendLine($"## {heading}{anchor}");
                 sb.AppendLine();
                 sb.AppendLine(section.Content);

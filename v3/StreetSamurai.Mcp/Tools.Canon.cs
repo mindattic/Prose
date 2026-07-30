@@ -13,7 +13,9 @@ namespace StreetSamurai.Mcp;
 // Edits go through set_canon_section / set_book_bible_section; the .md artifacts
 // are regenerated on demand and NEVER hand-edited.
 //
-// Document types: WorldBible, WorldMaster, Franchise, UniverseCanon
+// Document types are data-driven (CanonDocumentTypes table, not a fixed list) — call
+// list_canon_document_types for the current set. Ships with WorldBible, WorldMaster,
+// Franchise, UniverseCanon, CraftGuide, DelightGuide.
 // Bible section types: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, BeatSpine
 
 [McpServerToolType]
@@ -36,12 +38,28 @@ public class CanonDocTools
     // ── World-level canon ─────────────────────────────────────────────────────
 
     [McpServerTool, Description(
+        "List every registered canon DocumentType (e.g. WorldBible, CraftGuide) — the current " +
+        "valid values for the documentType parameter on every other tool in this file. Data-driven " +
+        "(CanonDocumentTypes table), so this grows as new document types are migrated; don't rely " +
+        "on a hardcoded list from memory.")]
+    public async Task<string> ListCanonDocumentTypes()
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var types = await db.CanonDocumentTypes
+            .Where(t => t.IsActive)
+            .OrderBy(t => t.SortKey)
+            .Select(t => new { document_type = t.DocumentType, scope = t.Scope, path_template = t.PathTemplate })
+            .ToListAsync();
+        return JsonSerializer.Serialize(new { types }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
         "Get a full world-canon document assembled from its DB sections. " +
-        "documentType: WorldBible | WorldMaster | Franchise | UniverseCanon. " +
+        "Call list_canon_document_types for the current valid documentType values. " +
         "universeSlug: glmz | scry/fantasy/caul (or a universe GUID). " +
         "Returns the complete assembled markdown — same content that generate_canon_md would write to disk.")]
     public async Task<string> GetCanonDocument(
-        [Description("Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.")] string documentType,
+        [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
     {
         var universeId = CanonDocumentService.ResolveUniverseId(universeSlug);
@@ -61,7 +79,7 @@ public class CanonDocTools
         "List all sections in a world-canon document with their keys, titles, sort order, and last-updated times. " +
         "Use this to find the sectionKey you need before calling set_canon_section.")]
     public async Task<string> ListCanonSections(
-        [Description("Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.")] string documentType,
+        [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
     {
         var universeId = CanonDocumentService.ResolveUniverseId(universeSlug);
@@ -91,11 +109,12 @@ public class CanonDocTools
 
     [McpServerTool, Description(
         "Update or create a section in a world-canon document. This is the ONLY way to edit world canon — " +
-        "do NOT hand-edit docs/BIBLE.md, docs/WORLD.md, docs/FRANCHISE.md, or docs/universes/CAUL.md. " +
+        "do NOT hand-edit the generated .md files under docs/ (BIBLE.md, WORLD.md, FRANCHISE.md, " +
+        "CRAFT.md, DELIGHT.md, docs/universes/*.md). " +
         "After setting a section, call generate_canon_md to write the updated .md artifact to disk. " +
         "To find available sectionKeys, call list_canon_sections first.")]
     public async Task<string> SetCanonSection(
-        [Description("Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.")] string documentType,
+        [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Stable section key — e.g. 'SS-LAW-1', 'SS-§3', 'preamble'. Use list_canon_sections to find existing keys.")] string sectionKey,
         [Description("Full section content (markdown). Replaces the existing content for this key.")] string content,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz",
@@ -125,7 +144,7 @@ public class CanonDocTools
         "updates the LastChecksum so codex doctor validates the file as current. " +
         "Run this after every set_canon_section call.")]
     public async Task<string> GenerateCanonMd(
-        [Description("Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.")] string documentType,
+        [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
     {
         var universeId = CanonDocumentService.ResolveUniverseId(universeSlug);

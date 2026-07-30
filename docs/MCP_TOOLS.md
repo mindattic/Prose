@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**245 tools** across **37 tool families.**
+**246 tools** across **37 tool families.**
 
 ## Families
 
@@ -22,7 +22,7 @@
 | [Book Audit](#book-audit) | 2 |
 | [Book Logic](#book-logic) | 1 |
 | [Canon](#canon) | 9 |
-| [Canon Doc](#canon-doc) | 6 |
+| [Canon Doc](#canon-doc) | 7 |
 | [Chekhov Audit](#chekhov-audit) | 1 |
 | [Combat](#combat) | 1 |
 | [Config](#config) | 14 |
@@ -194,14 +194,14 @@ List every place / district in canon. Use this to find a location for a scene.
 
 Regenerate a world-canon .md file from its DB sections. Writes the assembled content to disk and updates the LastChecksum so codex doctor validates the file as current. Run this after every set_canon_section call.
 
-- `documentType` (string, required) — Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.
+- `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
 
 ### `get_canon_document`
 
-Get a full world-canon document assembled from its DB sections. documentType: WorldBible | WorldMaster | Franchise | UniverseCanon. universeSlug: glmz | scry/fantasy/caul (or a universe GUID). Returns the complete assembled markdown — same content that generate_canon_md would write to disk.
+Get a full world-canon document assembled from its DB sections. Call list_canon_document_types for the current valid documentType values. universeSlug: glmz | scry/fantasy/caul (or a universe GUID). Returns the complete assembled markdown — same content that generate_canon_md would write to disk.
 
-- `documentType` (string, required) — Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.
+- `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
 
 ### `list_book_bible_sections`
@@ -210,11 +210,17 @@ List all NodeBibleSections for a book node. Shows section types, content lengths
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 
+### `list_canon_document_types`
+
+List every registered canon DocumentType (e.g. WorldBible, CraftGuide) — the current valid values for the documentType parameter on every other tool in this file. Data-driven (CanonDocumentTypes table), so this grows as new document types are migrated; don't rely on a hardcoded list from memory.
+
+- _(no parameters)_
+
 ### `list_canon_sections`
 
 List all sections in a world-canon document with their keys, titles, sort order, and last-updated times. Use this to find the sectionKey you need before calling set_canon_section.
 
-- `documentType` (string, required) — Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.
+- `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
 
 ### `set_book_bible_section`
@@ -227,9 +233,9 @@ Update or create a structured section in a book's node bible (NodeBibleSections 
 
 ### `set_canon_section`
 
-Update or create a section in a world-canon document. This is the ONLY way to edit world canon — do NOT hand-edit docs/BIBLE.md, docs/WORLD.md, docs/FRANCHISE.md, or docs/universes/CAUL.md. After setting a section, call generate_canon_md to write the updated .md artifact to disk. To find available sectionKeys, call list_canon_sections first.
+Update or create a section in a world-canon document. This is the ONLY way to edit world canon — do NOT hand-edit the generated .md files under docs/ (BIBLE.md, WORLD.md, FRANCHISE.md, CRAFT.md, DELIGHT.md, docs/universes/*.md). After setting a section, call generate_canon_md to write the updated .md artifact to disk. To find available sectionKeys, call list_canon_sections first.
 
-- `documentType` (string, required) — Document type: WorldBible, WorldMaster, Franchise, or UniverseCanon.
+- `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `sectionKey` (string, required) — Stable section key — e.g. 'SS-LAW-1', 'SS-§3', 'preamble'. Use list_canon_sections to find existing keys.
 - `content` (string, required) — Full section content (markdown). Replaces the existing content for this key.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
