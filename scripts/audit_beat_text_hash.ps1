@@ -19,7 +19,15 @@
 # That is the intended outcome — it stops a stale score being trusted. It does NOT touch the
 # Stale flag, which is what narration/audio uses.
 
-param([switch]$Fix)
+# -Universe scopes the audit. Default GSPL, because GLMZ and especially SCRY/VIGL are
+# actively authored from other sessions: a beat mid-write legitimately shows a NULL hash
+# (the trigger doing its job on an in-flight raw write), and reporting that as "drift" here
+# is noise. Pass -Universe all when you deliberately want the whole picture.
+param(
+    [switch]$Fix,
+    [ValidateSet('gspl','glmz','scry','all')]
+    [string]$Universe = 'gspl'
+)
 $ErrorActionPreference = 'Stop'
 
 $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
@@ -40,6 +48,15 @@ $uniName = @{
     '0197e9c9-0003-7000-8000-000000000003' = 'GSPL'
 }
 
+$uniIds = @{
+    gspl = "'0197E9C9-0003-7000-8000-000000000003'"
+    glmz = "'0197E9C9-0001-7000-8000-000000000001'"
+    scry = "'0197E9C9-0002-7000-8000-000000000002'"
+}
+$scope = ''
+if ($Universe -ne 'all') { $scope = "  AND n.UniverseId = $($uniIds[$Universe])" }
+Write-Host ("scope: {0}" -f $Universe.ToUpper())
+
 $cmd = $conn.CreateCommand()
 $cmd.CommandText = @"
 SELECT DISTINCT bt.Id, bt.Text, bt.TextHash, n.UniverseId, n.Slug
@@ -47,6 +64,7 @@ FROM Nodes n
 JOIN BeatNodes bn ON bn.NodeId = n.Id
 JOIN Beats bt ON bt.Id = bn.BeatId
 WHERE bn.IsEnabled = 1
+$scope
 "@
 $rdr = $cmd.ExecuteReader()
 $stale = New-Object System.Collections.ArrayList
