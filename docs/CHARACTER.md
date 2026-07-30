@@ -1,12 +1,17 @@
 ---
-doc: CHARACTER
-title: The Character Doctrine — "Everyone Is the Main Character"
-layer: L0
-status: binding
-applies-to: all universes, all strands
+codex: SS
+project: StreetSamurai
+code: SS
+layer: craft
+status: live
+tier: topic
+triggers: character, cast, protagonist, antagonist, relationship, interpersonal, dialogue, motive, arc, growth, behavior, pov, depth
+updated: 2026-07-30
 ---
 
-# The Character Doctrine {#SS-CHAR}
+<!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type CharacterDoctrine -->
+
+## The Character Doctrine {#SS-CHAR}
 
 > "Everyone is the main character." — Yoshinori Kitase, on *Final Fantasy VI*
 
@@ -94,7 +99,7 @@ If the honest answer to "Drive" is *"to perform their job on the team,"* you hav
 
 ---
 
-### §2b — The Action Figure Test / The Cosplay Test (the bar for leading characters) {#SS-CHAR-§2b}
+## §2b — The Action Figure Test / The Cosplay Test (the bar for leading characters) {#SS-CHAR-§2b}
 
 A leading character must clear a harder bar than §2: **would a reader want their action figure —
 and would a fan cosplay as them?** These are the same test from two directions. The action figure
@@ -400,7 +405,7 @@ change as an arc.
 
 ---
 
-## §8 — The Mandate {#SS-CHAR-§8}
+## §11 — The Mandate {#SS-CHAR-§11}
 
 1. Run the §2 test on every named character before prose. Write the four answers into the
    character's psychology fields.
