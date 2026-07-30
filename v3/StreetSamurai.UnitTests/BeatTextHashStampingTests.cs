@@ -90,6 +90,41 @@ public class BeatTextHashStampingTests
     }
 
     [Test]
+    public async Task Both_SaveChanges_overloads_route_through_the_stamp()
+    {
+        // Only SaveChanges(bool) / SaveChangesAsync(bool, ct) are overridden. The parameterless
+        // and cancellation-token-only forms must delegate to them, or half the call sites in the
+        // codebase would silently skip the stamp. Pin that rather than assume it.
+        var syncId = Guid.NewGuid();
+        using (var ctx = new StreetSamuraiDbContext(options))
+        {
+            var b = NewBeat("written through the parameterless overload");
+            b.Id = syncId; b.TextHash = null;
+            ctx.Beats.Add(b);
+            ctx.SaveChanges();                       // no-arg
+        }
+
+        var asyncId = Guid.NewGuid();
+        using (var ctx = new StreetSamuraiDbContext(options))
+        {
+            var b = NewBeat("written through the token-only async overload");
+            b.Id = asyncId; b.TextHash = null;
+            ctx.Beats.Add(b);
+            await ctx.SaveChangesAsync(CancellationToken.None);   // token-only
+        }
+
+        using (var ctx = new StreetSamuraiDbContext(options))
+        {
+            foreach (var id in new[] { syncId, asyncId })
+            {
+                var saved = ctx.Beats.Single(b => b.Id == id);
+                Assert.That(saved.TextHash, Is.EqualTo(Beat.ComputeHash(saved.Text)),
+                    $"beat {id} was saved without its hash being stamped");
+            }
+        }
+    }
+
+    [Test]
     public void An_unrelated_edit_does_not_bless_an_already_wrong_hash()
     {
         // A hash that is already wrong is EVIDENCE that prose drifted. Saving an unrelated
