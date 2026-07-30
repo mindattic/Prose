@@ -30,6 +30,12 @@ sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
 
 Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
 
+**Key schema facts for queries:**
+- **Beats → Nodes relationship:** Use `BeatNodes` table (fields: `NodeId`, `BeatId`, `SortKey`, `IsEnabled`)
+  - Pattern: `Beats b JOIN BeatNodes bn ON b.Id = bn.BeatId JOIN Nodes n ON bn.NodeId = n.Id`
+- **Beat scoring:** Column is `Score` (not `MeanScore`), type `float`; NULL if unscored
+- **Example:** Count beats in a book: `SELECT COUNT(*) FROM BeatNodes WHERE NodeId = @nodeId AND IsEnabled = 1`
+
 **HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any book/beat removal must go through the CLI (`ss --beat delete`). If a book genuinely needs to be deleted, get explicit user confirmation naming the book by title and slug before touching the DB.
 
 **Node deletion cascade order (system rule):** When deleting a book node via `--delete-node`, the required order is beats → chapters → book node. The CLI handles this automatically (cascade was added 2026-07-18). Never try to delete a parent node before its chapter children — `FK_Nodes_ParentNode` will block it. Delete order for manual confirmation: (1) BeatNodes memberships + exclusive beats for the child chapter, (2) structural blueprints for the child, (3) the child chapter node, (4) then the same sequence for the parent book node.
@@ -38,7 +44,7 @@ Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's bu
 - Do NOT use underscore-prefixed variables (e.g., `_myField`). Use `camelCase` for private fields without the underscore prefix.
 - JSON only for all data files. No Python scripts, no YAML, no Markdown files except README.
 - Web-only project (Blazor Server). No MAUI host.
-- The null-conditional operator `?.` (and `?[]`) is **not allowed inside an EF Core expression-tree lambda** (anything that becomes a SQL query — `Select`/`Where`/`GroupBy` projections, etc.). It fails to compile (`CS8072`). Project the scalar **before** the terminal operator instead: write `g.OrderByDescending(h => h.RecordedAt).Select(h => h.MeanScore).FirstOrDefault()`, not `g.OrderByDescending(...).FirstOrDefault()?.MeanScore ?? 0`.
+- The null-conditional operator `?.` (and `?[]`) is **not allowed inside an EF Core expression-tree lambda** (anything that becomes a SQL query — `Select`/`Where`/`GroupBy` projections, etc.). It fails to compile (`CS8072`). Project the scalar **before** the terminal operator instead: write `g.OrderByDescending(h => h.CreatedAt).Select(h => h.Score).FirstOrDefault()`, not `g.OrderByDescending(...).FirstOrDefault()?.Score ?? 0`.
 
 ## Prose Content — Graphic Adult Content
 
