@@ -35,6 +35,7 @@ Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's bu
   - Pattern: `Beats b JOIN BeatNodes bn ON b.Id = bn.BeatId JOIN Nodes n ON bn.NodeId = n.Id`
 - **Beat scoring:** Column is `Score` (not `MeanScore`), type `float`; NULL if unscored
 - **Example:** Count beats in a book: `SELECT COUNT(*) FROM BeatNodes WHERE NodeId = @nodeId AND IsEnabled = 1`
+- **HARD RULE — Book→Chapter→Beat hierarchy:** Always verify all three levels before assessing a book. Books with chapters ARE books, even if ChapterBeats is empty. Use `scripts/book-status-audit.sql` to audit any book: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -i scripts/book-status-audit.sql -v BookSlug="<slug>"`. Never say a book is "empty" or "planning stage only"—say "chapters structured, prose not yet written."
 
 **HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any book/beat removal must go through the CLI (`ss --beat delete`). If a book genuinely needs to be deleted, get explicit user confirmation naming the book by title and slug before touching the DB.
 

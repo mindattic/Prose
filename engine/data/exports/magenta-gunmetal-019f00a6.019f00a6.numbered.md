@@ -19,7 +19,7 @@ The bar ran magenta.
 Nobody had chosen it. The decor was the usual Z3 pretension — pale recycled wood, low brass lamps someone thought said warmth. But the east wall held a full Axiom BioNanics ad, and it pulsed pink every three seconds. The color bled across the mirror behind the bar. It caught in the glassware. It lay over every white shirt in the room like a second skin.
 
 [Beat 3]
-Rook used the mirror the way she used every reflective surface — to watch the room at her back. Her own face came with it, washed pink: olive skin, dark hair pushed back and still rain-wet at the ends, pale grey-green eyes already finding the doors. A thin scar sat high on her right cheekbone. It caught the light for half a second and let it go. Her overlay tagged the ad's price — F8,400 per treatment, more for members — and she blinked it away like everything else the city tried to sell her. Her coat was Greymark Unseen, matte gray, the kind that didn't announce its brand to strangers.
+Rook used the mirror the way she used every reflective surface — to watch the room at her back. Her own face came with it, washed pink: olive skin, dark hair pushed back and still rain-wet at the ends, pale grey-green eyes already finding the doors. A thin scar sat high on her right cheekbone. It caught the light for half a second and let it go. Her overlay tagged the ad's price — Φ8,400 per treatment, more for members — and she blinked it away like everything else the city tried to sell her. Her coat was Greymark Unseen, matte gray, the kind that didn't announce its brand to strangers.
 
 [Beat 4]
 The bartender moved through the pink and didn't seem to notice it. Two suits talked low at the bar, faces washed the same color. Her overlay tagged the nearer one's coat as Thornfield — top-tier archology tailoring. She blinked that away too.
@@ -89,7 +89,7 @@ Ohara was Axiom's soft-nano line — Class II medical, the kind that went in wit
 "Forty thousand quanta. Five-way. Eight each."
 
 [Beat 17]
-She turned the number over. F8,000 for a compound pull — five bodies, high-security target. Not generous, not insulting. The calibrated number, the one that drew talent without drawing attention. Acquisition, not ransom.
+She turned the number over. Φ8,000 for a compound pull — five bodies, high-security target. Not generous, not insulting. The calibrated number, the one that drew talent without drawing attention. Acquisition, not ransom.
 
 [Beat 18]
 "Timeline?"
@@ -112,7 +112,7 @@ What she watched, in the quiet, was his hands. They'd come loose when she named 
 He nodded slowly, and his shoulders came down the same degree hers had. "I'll tell them to expect contact."
 
 [Beat 22]
-She stood, left F40 for the water she'd barely touched, and walked back out through the magenta into the street. Z3 at evening was all brass light and recycled air, and a block over a quantum rack hummed under load. This was the real GLMZ — gunmetal and neon and the specific cold that came off the lake when the ventilation corridors lined up wrong.
+She stood, left Φ40 for the water she'd barely touched, and walked back out through the magenta into the street. Z3 at evening was all brass light and recycled air, and a block over a quantum rack hummed under load. This was the real GLMZ — gunmetal and neon and the specific cold that came off the lake when the ventilation corridors lined up wrong.
 
 [Beat 23]
 She blinked open a blank contact thread on her neuretics. Four people to pull in from wherever they'd scattered, and a frame to build around each before the job built one for her.
@@ -139,11 +139,11 @@ They went outside. The coffee turned out useful after all — Rook set it on a p
 
 "It was nearly finished." Agwu folded her hands. "What do you need?"
 
-Rook gave her the outline in sixty seconds. One target building. One window of access. Someone who could wear whoever the room required. She said the number last: F8,000.
+Rook gave her the outline in sixty seconds. One target building. One window of access. Someone who could wear whoever the room required. She said the number last: Φ8,000.
 
 Agwu looked past her at the cityline for a moment. It wasn't hesitation. It was thought that already had a shape.
 
-"I need a Level IV fabrication suite," she said. "The Daedalic Modular. They cost F22,000 and the waiting list is eight months. I'm skipping the waiting list."
+"I need a Level IV fabrication suite," she said. "The Daedalic Modular. They cost Φ22,000 and the waiting list is eight months. I'm skipping the waiting list."
 
 "That's not a question."
 
@@ -183,7 +183,7 @@ She gave him the outline. He listened with his arms crossed and his weight back 
 
 "Good." He seemed relieved on the ceiling's behalf. "Some of those Z2 retrofits go down to 2.8. I have to think about myself."
 
-"F8,000."
+"Φ8,000."
 
 "Yeah, all right. My dehumidifier destroyed itself, and I refuse to buy Arclight brand again." He turned back to the wall. His hand came up and rested against the column — not pushing it, just touching it, the way you touch something you've diagnosed and made peace with. "Send me whatever you have on the sub-basement. I like to know what I'm standing on."
 
@@ -258,7 +258,7 @@ She blinked once. Looked at the crawlers on the table as if counting them. Then 
 
 Diallo looked at her crawlers again. "I have seven operational. Three are named. The crew names them." It wasn't a complaint, and it wasn't quite resignation either. "I've stopped arguing."
 
-"F8,000."
+"Φ8,000."
 
 A pause. She picked up the cold tea and drank half of it without expression, the way a person refuels.
 
@@ -1037,7 +1037,7 @@ Gault sat in the back booth, a glass in front of him and a pad he wasn't reading
 He closed his eyes. It wasn't performance. He left them shut a moment, then opened them onto the ring of condensation his glass had left on the laminate — a surface that had been through thirty years of meetings like this one and worse.
 
 [Beat 183]
-"Three days ago. Axiom's legal division, through an intermediary. Formal, no pressure. They wanted the safe house and confirmation of the target's identity. F8,000. They called it asset-recovery due diligence." He kept his eyes on the table. "Legal division doesn't run wet squads. You sell a room number, a man knocks on a door, that's the end of it. I've done it a dozen times in fourteen years. I read the risk as low."
+"Three days ago. Axiom's legal division, through an intermediary. Formal, no pressure. They wanted the safe house and confirmation of the target's identity. Φ8,000. They called it asset-recovery due diligence." He kept his eyes on the table. "Legal division doesn't run wet squads. You sell a room number, a man knocks on a door, that's the end of it. I've done it a dozen times in fourteen years. I read the risk as low."
 
 "You read it wrong."
 
@@ -1458,13 +1458,13 @@ The replacement escrow arrived at 6:14 AM, routed through a dead-drop Ohara had 
 Rook read it, closed the message on her neuretics, and reached into her coat for the cash.
 
 [Beat 270]
-Φ8,000 in physical currency. She laid it out in the booth and began counting.
+The credstick transfer was confirmed. She brought up the balance screen on her neuretics, the numbers cold and explicit. Terminal balance: Φ8,000. Confirmed received. No pending transactions. Fully liquid.
 
 [Beat 271]
-The bills were mixed denomination, the way distribution always ran through Cooperative channels. She sorted first, then counted by stack, then recounted the stacks against each other. The woman at the counter refilled her coffee without being asked. The diner smelled of synth-fat and old heating elements. Through the window, Lake Michigan lay flat and gray under a featureless sky. No wind. No chop.
+She looked at it longer than the data needed. She and the crew had walked out intact. The numbers proved it — five names, five transfers, each one showing the same amount in separate accounts. Five Φ8,000 allotments, each one live, each one clearable against their own credentials. The woman at the counter refilled her coffee without being asked. The diner smelled of synth-fat and old heating elements. Through the window, Lake Michigan lay flat and gray under a featureless sky. No wind. No chop.
 
 [Beat 272]
-She finished the count. Φ8,000. She counted it again. Still Φ8,000, which was the number, and she'd known it was the number. The counting wasn't about the number. It was the one ritual she still let herself keep — hands doing a small honest thing while the rest of her caught up. What the rest of her caught up to this morning was that Axiom's legal division had paid Gault the exact same figure to say a room number out loud. Same door. Same price. She squared the stack on the laminate and put it in her coat.
+She verified the figure once more, watching the balance hold steady on the overlay. Φ8,000. Still Φ8,000, which was the number, and she'd known it was the number. The verification wasn't about the number. It was the one ritual she still let herself keep — a terminal showing proof that the transaction had executed exactly as promised. What the rest of her caught up to this morning was that Axiom's legal division had paid Gault the exact same figure to say a room number out loud. Same door. Same price. She closed the terminal and put her neuretics back offline.
 
 [Beat 273]
 Vox's summary had come through at 6:02, twelve minutes before the payment, as if her agents had been watching for it. Axiom down eighteen percent at open. The formula public domain, indexed across seventeen research repositories before Rotterdam opened. Every working biochemist in the GLMZ had access now. The military pathway was still possible; it just wasn't possible for Axiom alone. Anyone who found the Class V pathway from here wouldn't be reverse-engineering a patent — they'd be continuing public research, and there was no law in the Meridian Charter or anywhere else to stop them. Ohara had wanted one specific lock broken, and it was broken, and the door it had been on now stood open to everyone. A victory or a different and larger problem, depending on who walked through first. Ohara had known that too. She'd decided an open door was better than a buried one, and spent four years and her whole career being willing to be right about it.
