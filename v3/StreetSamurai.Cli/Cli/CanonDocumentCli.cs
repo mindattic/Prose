@@ -1,5 +1,4 @@
 using Microsoft.Extensions.DependencyInjection;
-using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Cli;
@@ -17,14 +16,6 @@ namespace StreetSamurai.Cli;
 /// </summary>
 public static class CanonDocumentCli
 {
-    private static readonly (string Type, Guid UniverseId)[] AllDocuments =
-    [
-        ("WorldBible",    Universe.GlmzId),
-        ("WorldMaster",   Universe.GlmzId),
-        ("Franchise",     Universe.GlmzId),
-        ("UniverseCanon", Universe.FantasyId),
-    ];
-
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? type  = null;
@@ -36,28 +27,35 @@ public static class CanonDocumentCli
             if (args[i] == "--type" && i + 1 < args.Length) type = args[++i];
         }
 
+        var registry = services.GetRequiredService<CanonDocumentTypeRegistry>();
+
         if (!all && string.IsNullOrWhiteSpace(type))
         {
+            var validTypes = string.Join(", ", await registry.ListActiveTypeNamesAsync());
             Console.Error.WriteLine("[generate-canon-md] --type <type> or --all is required.");
-            Console.Error.WriteLine("Usage: ss --generate-canon-md --type <WorldBible|WorldMaster|Franchise|UniverseCanon>");
+            Console.Error.WriteLine($"Usage: ss --generate-canon-md --type <{validTypes}>");
             Console.Error.WriteLine("       ss --generate-canon-md --all");
             return 2;
         }
 
         var svc = services.GetRequiredService<CanonDocumentService>();
 
+        // "--all" means every (DocumentType, UniverseId) pair actually migrated into
+        // CanonDocuments — reflects what's real, not a compile-time list that drifts from it.
+        var migrated = await registry.ListMigratedAsync();
         var targets = all
-            ? AllDocuments
-            : AllDocuments.Where(d => d.Type.Equals(type, StringComparison.OrdinalIgnoreCase)).ToArray();
+            ? migrated
+            : migrated.Where(d => d.DocumentType.Equals(type, StringComparison.OrdinalIgnoreCase)).ToList();
 
-        if (targets.Length == 0)
+        if (targets.Count == 0)
         {
-            Console.Error.WriteLine($"[generate-canon-md] Unknown document type '{type}'. Valid: WorldBible, WorldMaster, Franchise, UniverseCanon.");
+            var validTypes = string.Join(", ", await registry.ListActiveTypeNamesAsync());
+            Console.Error.WriteLine($"[generate-canon-md] Unknown or unmigrated document type '{type}'. Valid: {validTypes}.");
             return 1;
         }
 
         if (!quiet)
-            Console.WriteLine($"[generate-canon-md] Generating {targets.Length} document(s)…");
+            Console.WriteLine($"[generate-canon-md] Generating {targets.Count} document(s)…");
 
         int ok = 0, fail = 0;
         foreach (var (docType, universeId) in targets)

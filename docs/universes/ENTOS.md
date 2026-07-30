@@ -4,15 +4,10 @@ project: StreetSamurai
 code: SS
 layer: universe
 status: live
-updated: 2026-07-28
+updated: 2026-07-30
 ---
 
 <!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type UniverseCanon -->
-
----
-tier: topic
-triggers: Entos, Entosborne, sinterspawn, harrower, vigil watcher, vigil, myrmidon, keeper, verlaine, ocipheus, atrament, calyx, loera, pallor, amnios, sphere, transmutation, scrying, membrane, bheur, relics, oathless, liturgy, heloth, eaters
----
 
 ## Entos — Universal World Facts
 

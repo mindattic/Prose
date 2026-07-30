@@ -463,6 +463,11 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<CanonDocument>        CanonDocuments        => Set<CanonDocument>();
     public DbSet<CanonDocumentSection> CanonDocumentSections => Set<CanonDocumentSection>();
 
+    // Data-driven DocumentType → path/title/frontmatter lookup — see CanonDocumentTypeRegistry.
+    // Replaces the hardcoded dictionaries formerly duplicated across CanonDocumentService,
+    // CanonDocumentCli, MigrateCanonDocsCli, and MarkdownFileService.
+    public DbSet<CanonDocumentType>    CanonDocumentTypes    => Set<CanonDocumentType>();
+
     // Truth-First Architecture (Track A) — structured NodeBible sections replace
     // the Nodes.NodeBible text blob. Edits go through set_book_bible_section MCP.
     public DbSet<NodeBibleSection> NodeBibleSections => Set<NodeBibleSection>();
@@ -663,6 +668,16 @@ public class StreetSamuraiDbContext : DbContext
 
         // ── Truth-First Architecture: Track A ────────────────────────────────
 
+        b.Entity<CanonDocumentType>(e =>
+        {
+            e.HasKey(x => x.DocumentType);
+            e.Property(x => x.DocumentType).HasMaxLength(40);
+            e.Property(x => x.PathTemplate).HasMaxLength(400).IsRequired();
+            e.Property(x => x.TitleTemplate).HasMaxLength(300).IsRequired();
+            e.Property(x => x.Scope).HasMaxLength(20).IsRequired();
+            e.Property(x => x.FrontMatterLayer).HasMaxLength(60);
+        });
+
         b.Entity<CanonDocument>(e =>
         {
             e.HasKey(x => x.Id);
@@ -672,6 +687,15 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => new { x.UniverseId, x.DocumentType }).IsUnique()
                 .HasDatabaseName("UX_CanonDocuments_Universe_Type");
             e.HasIndex(x => x.UniverseId);
+            // Real FK (unlike Entity/Node/Book's universe-scoping, which is deliberately
+            // unenforced for insert-volume reasons — this table is a handful of rarely-written
+            // rows, so the FK is cheap insurance against a typo'd DocumentType silently
+            // creating an orphaned document nothing can ever resolve a path/title for).
+            e.HasOne<CanonDocumentType>()
+                .WithMany()
+                .HasForeignKey(x => x.DocumentType)
+                .HasPrincipalKey(t => t.DocumentType)
+                .OnDelete(DeleteBehavior.Restrict);
         });
 
         b.Entity<CanonDocumentSection>(e =>

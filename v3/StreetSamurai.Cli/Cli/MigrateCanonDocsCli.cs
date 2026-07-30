@@ -5,23 +5,32 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
+using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.Cli;
 
 /// <summary>
-/// ss --migrate-canon-docs [--dry-run]
+/// ss --migrate-canon-docs [--dry-run]                                          (legacy bulk mode)
+/// ss --migrate-canon-docs --type &lt;type&gt; --universe &lt;slug&gt; --file &lt;relPath&gt; [--dry-run]   (single-doc mode)
 ///
 /// Step A2: migrates hand-editable canon .md files into CanonDocument +
 /// CanonDocumentSection rows. After this runs, the .md files become generated
 /// read-only artifacts; all edits go through set_canon_section MCP.
 ///
-/// Documents migrated:
-///   docs/BIBLE.md       → WorldBible  (GLMZ)
-///   docs/WORLD.md       → WorldMaster (GLMZ)
-///   docs/FRANCHISE.md   → Franchise   (GLMZ)
-///   docs/universes/CAUL.md → UniverseCanon (Fantasy/SCRY)
+/// Bulk mode (no args) replays the 4 original migrations exactly as they shipped —
+/// docs/BIBLE.md→WorldBible(GLMZ), docs/WORLD.md→WorldMaster(GLMZ),
+/// docs/FRANCHISE.md→Franchise(GLMZ), docs/universes/CAUL.md→UniverseCanon(Fantasy) — kept
+/// as a fixed historical list rather than derived from CanonDocumentTypes, because a
+/// Scope="universe" type with a literal (non-templated) PathTemplate doesn't itself encode
+/// which universe it belongs to; auto-crossing every active universe against every such type
+/// would try to re-import the same literal file under the wrong universe. All 4 are already
+/// migrated, so this mode is a no-op today (every spec hits the exists-check and is skipped).
 ///
-/// Idempotent: skips any document whose (UniverseId, DocumentType) already exists.
+/// Single-doc mode (--type/--universe/--file) is the path for migrating a NEW file — it
+/// resolves title/scope from the CanonDocumentTypes row via CanonDocumentTypeRegistry, so
+/// there is no new hardcoded copy to add per file.
+///
+/// Idempotent either way: skips any document whose (UniverseId, DocumentType) already exists.
 /// </summary>
 public static class MigrateCanonDocsCli
 {
@@ -44,22 +53,57 @@ public static class MigrateCanonDocsCli
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        bool dryRun = args.Contains("--dry-run");
-
-        var specs = new[]
-        {
-            new DocSpec(Path.Combine(RepoRoot, "docs", "BIBLE.md"),
-                "WorldBible", Universe.GlmzId, "GLMZ World Bible"),
-            new DocSpec(Path.Combine(RepoRoot, "docs", "WORLD.md"),
-                "WorldMaster", Universe.GlmzId, "GLMZ World Master"),
-            new DocSpec(Path.Combine(RepoRoot, "docs", "FRANCHISE.md"),
-                "Franchise", Universe.GlmzId, "GLMZ Franchise Bible"),
-            new DocSpec(Path.Combine(RepoRoot, "docs", "universes", "CAUL.md"),
-                "UniverseCanon", Universe.FantasyId, "Caul Universe Canon"),
-        };
+        bool    dryRun       = args.Contains("--dry-run");
+        string? typeArg      = GetArg(args, "--type");
+        string? universeArg  = GetArg(args, "--universe");
+        string? fileArg      = GetArg(args, "--file");
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
+
+        DocSpec[] specs;
+        if (typeArg != null || universeArg != null || fileArg != null)
+        {
+            if (typeArg == null || universeArg == null || fileArg == null)
+            {
+                Console.Error.WriteLine("[migrate-canon-docs] Single-doc mode requires all of --type, --universe, --file.");
+                return 2;
+            }
+
+            var universeId = CanonDocumentService.ResolveUniverseId(universeArg);
+            if (universeId == null)
+            {
+                Console.Error.WriteLine($"[migrate-canon-docs] Unknown universe '{universeArg}'.");
+                return 2;
+            }
+
+            var registry = services.GetRequiredService<CanonDocumentTypeRegistry>();
+            var effectiveUniverseId = await registry.ResolveEffectiveUniverseIdAsync(typeArg, universeId.Value);
+            var title = await registry.GetTitleAsync(typeArg, effectiveUniverseId);
+            if (title == null)
+            {
+                var validTypes = string.Join(", ", await registry.ListActiveTypeNamesAsync());
+                Console.Error.WriteLine($"[migrate-canon-docs] Unknown document type '{typeArg}'. Valid: {validTypes}.");
+                return 2;
+            }
+
+            specs = [new DocSpec(Path.Combine(RepoRoot, fileArg.Replace('/', Path.DirectorySeparatorChar)),
+                typeArg, effectiveUniverseId, title)];
+        }
+        else
+        {
+            specs =
+            [
+                new DocSpec(Path.Combine(RepoRoot, "docs", "BIBLE.md"),
+                    "WorldBible", Universe.GlmzId, "GLMZ World Bible"),
+                new DocSpec(Path.Combine(RepoRoot, "docs", "WORLD.md"),
+                    "WorldMaster", Universe.GlmzId, "GLMZ World Master"),
+                new DocSpec(Path.Combine(RepoRoot, "docs", "FRANCHISE.md"),
+                    "Franchise", Universe.GlmzId, "GLMZ Franchise Bible"),
+                new DocSpec(Path.Combine(RepoRoot, "docs", "universes", "CAUL.md"),
+                    "UniverseCanon", Universe.FantasyId, "Caul Universe Canon"),
+            ];
+        }
 
         int docsCreated = 0, sectionsCreated = 0, skipped = 0;
 
@@ -81,7 +125,7 @@ public static class MigrateCanonDocsCli
                 continue;
             }
 
-            var content = await File.ReadAllTextAsync(spec.FilePath);
+            var content = StripLeadingFrontMatter(await File.ReadAllTextAsync(spec.FilePath));
             var sections = ParseMarkdownSections(content);
 
             Console.WriteLine($"  {(dryRun ? "DRY " : "")}CREATE  {spec.DocumentType} ({sections.Count} sections) ← {Path.GetFileName(spec.FilePath)}");
@@ -163,6 +207,30 @@ public static class MigrateCanonDocsCli
         }
 
         return results;
+    }
+
+    /// <summary>
+    /// Drop a leading YAML frontmatter block before section-parsing. Without this, the original
+    /// migration's <c>##</c>-heading regex swallowed frontmatter whole into the "preamble"
+    /// section (frontmatter has no heading), and <c>GenerateMdAsync</c> then prepended a SECOND,
+    /// freshly-computed frontmatter block ahead of it on every regeneration — doubled headers in
+    /// the generated file. Mirrors the boundary detection in
+    /// <c>MarkdownFileService.ParseFrontmatter</c>.
+    /// </summary>
+    private static string StripLeadingFrontMatter(string markdown)
+    {
+        var text = markdown.Replace("\r\n", "\n");
+        if (!text.StartsWith("---\n")) return markdown;
+        var end = text.IndexOf("\n---", 4, StringComparison.Ordinal);
+        if (end < 0) return markdown;
+        var closeLineEnd = text.IndexOf('\n', end + 1);
+        return closeLineEnd < 0 ? "" : text[(closeLineEnd + 1)..].TrimStart('\n');
+    }
+
+    private static string? GetArg(string[] args, string flag)
+    {
+        var i = Array.IndexOf(args, flag);
+        return i >= 0 && i + 1 < args.Length ? args[i + 1] : null;
     }
 
     private static string SlugifyHeading(string heading)

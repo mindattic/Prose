@@ -678,6 +678,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatGeneratorService>();
         services.AddSingleton<NodeBibleService>();
         services.AddSingleton<NodeDocService>();
+        services.AddSingleton<CanonDocumentTypeRegistry>();
         services.AddSingleton<CanonDocumentService>();
         services.AddSingleton<BeatVerificationService>();
         services.AddSingleton<SceneGenerationService>();

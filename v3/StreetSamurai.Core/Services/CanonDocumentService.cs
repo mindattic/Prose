@@ -15,37 +15,17 @@ public class CanonDocumentService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly IPathProvider paths;
+    private readonly CanonDocumentTypeRegistry typeRegistry;
 
     public CanonDocumentService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        IPathProvider paths)
+        IPathProvider paths,
+        CanonDocumentTypeRegistry typeRegistry)
     {
-        this.dbFactory = dbFactory;
-        this.paths     = paths;
+        this.dbFactory    = dbFactory;
+        this.paths        = paths;
+        this.typeRegistry = typeRegistry;
     }
-
-    // ── Document-type → file path mapping ────────────────────────────────────
-
-    private static readonly Dictionary<string, Func<string, string>> FilePaths = new(
-        StringComparer.OrdinalIgnoreCase)
-    {
-        ["WorldBible"]    = root => Path.Combine(root, "docs", "BIBLE.md"),
-        ["WorldMaster"]   = root => Path.Combine(root, "docs", "WORLD.md"),
-        ["Franchise"]     = root => Path.Combine(root, "docs", "FRANCHISE.md"),
-        ["UniverseCanon"] = root => Path.Combine(root, "docs", "universes", "ENTOS.md"),
-    };
-
-    public static string? GetFilePath(string documentType, string dataRoot)
-        => FilePaths.TryGetValue(documentType, out var fn) ? fn(dataRoot) : null;
-
-    private static readonly Dictionary<string, string> FrontMatter = new(
-        StringComparer.OrdinalIgnoreCase)
-    {
-        ["WorldBible"]    = "codex: SS\nproject: StreetSamurai\ncode: SS\nlayer: bible\nstatus: live\n",
-        ["WorldMaster"]   = "codex: SS\nproject: StreetSamurai\ncode: SS\nlayer: world\nstatus: live\n",
-        ["Franchise"]     = "codex: SS\nproject: StreetSamurai\ncode: SS\nlayer: franchise\nstatus: live\n",
-        ["UniverseCanon"] = "codex: SS\nproject: StreetSamurai\ncode: SS\nlayer: universe\nstatus: live\n",
-    };
 
     // ── Resolve a universe slug or id string → Guid ───────────────────────────
 
@@ -143,10 +123,10 @@ public class CanonDocumentService
             return new GenerateResult(false, null, "document_not_found",
                 $"No {documentType} document for universe {universeId}.");
 
-        var filePath = GetFilePath(documentType, paths.DataRoot);
+        var filePath = await typeRegistry.GetFilePathAsync(documentType, universeId, paths.DataRoot, ct);
         if (filePath == null)
             return new GenerateResult(false, null, "unknown_document_type",
-                $"No file-path mapping for document type '{documentType}'.");
+                $"No CanonDocumentTypes row for document type '{documentType}'. Run ss --list-canon-types to see what's registered.");
 
         var assembled = AssembleDocument(doc.Title ?? documentType, doc.Sections);
         var checksum  = ComputeChecksum(assembled);
@@ -159,9 +139,8 @@ public class CanonDocumentService
             File.Delete(filePath);
         }
         var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
-        var fm    = FrontMatter.TryGetValue(documentType, out var fmBase)
-            ? $"---\n{fmBase}updated: {today}\n---\n\n"
-            : "";
+        var fmBase = await typeRegistry.GetFrontMatterAsync(documentType, ct);
+        var fm     = $"---\n{fmBase}updated: {today}\n---\n\n";
         var withHeader = $"{fm}<!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type {documentType} -->\n\n{assembled}";
         await File.WriteAllTextAsync(filePath, withHeader, Encoding.UTF8, ct);
         File.SetAttributes(filePath, FileAttributes.ReadOnly);
@@ -234,6 +213,11 @@ public class CanonDocumentService
         {
             if (section.SectionKey == "preamble")
             {
+                // A preamble whose entire content is itself a YAML frontmatter block (e.g. a
+                // stray `tier:`/`triggers:` block swallowed by an early, naive migration import)
+                // must not be rendered into the visible body — GenerateMdAsync already writes
+                // its own frontmatter header above this, so rendering it here doubled it.
+                if (section.Content.TrimStart().StartsWith("---")) continue;
                 sb.AppendLine(section.Content);
                 sb.AppendLine();
             }

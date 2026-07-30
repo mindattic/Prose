@@ -27,11 +27,16 @@ public class MarkdownFileService
 
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly IPathProvider paths;
+    private readonly CanonDocumentTypeRegistry typeRegistry;
 
-    public MarkdownFileService(IDbContextFactory<StreetSamuraiDbContext> dbFactory, IPathProvider paths)
+    public MarkdownFileService(
+        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        IPathProvider paths,
+        CanonDocumentTypeRegistry typeRegistry)
     {
-        this.dbFactory = dbFactory;
-        this.paths     = paths;
+        this.dbFactory    = dbFactory;
+        this.paths        = paths;
+        this.typeRegistry = typeRegistry;
     }
 
     // ── Discovery ─────────────────────────────────────────────────────────
@@ -223,13 +228,11 @@ public class MarkdownFileService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         // ── World-canon documents ────────────────────────────────────────────
-        var docPathMap = new Dictionary<string, (string RelativePath, string Tier)>(StringComparer.OrdinalIgnoreCase)
-        {
-            ["WorldBible"]    = ("docs/BIBLE.md",                "topic"),
-            ["WorldMaster"]   = ("docs/WORLD.md",                "topic"),
-            ["Franchise"]     = ("docs/FRANCHISE.md",            "topic"),
-            ["UniverseCanon"] = ("docs/universes/CAUL.md",       "topic"),
-        };
+        // Path/default-tier resolution goes through CanonDocumentTypeRegistry — this used to
+        // be a hardcoded dict here (a 4th independent copy of the same type→path mapping) and
+        // it had drifted: UniverseCanon pointed at "docs/universes/CAUL.md", a file that no
+        // longer exists (real file is ENTOS.md), left over from an incomplete Caul→Entos rename.
+        const string defaultTier = "topic";
 
         var docs = await db.CanonDocuments
             .Include(d => d.Sections.OrderBy(s => s.SortKey))
@@ -237,8 +240,9 @@ public class MarkdownFileService
 
         foreach (var doc in docs)
         {
-            if (!docPathMap.TryGetValue(doc.DocumentType, out var pathInfo)) continue;
-            var (relPath, tier) = pathInfo;
+            var relPath = await typeRegistry.GetRelativePathAsync(doc.DocumentType, doc.UniverseId, ct);
+            if (relPath == null) continue;
+            var tier = defaultTier;
             try
             {
                 var assembled = AssembleFromSections(doc.Sections);
@@ -485,12 +489,18 @@ public class MarkdownFileService
         // here we capture the raw CSV so the caller can store it for resolution.
         var relatedRaw = fm.TryGetValue("related", out var rel) ? NormalizeCsv(rel) : "";
 
-        if (fm.TryGetValue("tier", out var fmTier) && !string.IsNullOrWhiteSpace(fmTier))
+        var hasFmTier     = fm.TryGetValue("tier", out var fmTier) && !string.IsNullOrWhiteSpace(fmTier);
+        var hasFmTriggers = fm.TryGetValue("triggers", out var fmTriggers) && !string.IsNullOrWhiteSpace(fmTriggers);
+        // Either key alone means the author hand-authored explicit routing metadata — honor
+        // it. Previously this required BOTH keys, so files like CRAFT.md/DELIGHT.md (triggers:
+        // set, no tier:) silently fell through to the generic auto-seeded "topic" branch below
+        // and lost their hand-written trigger list.
+        if (hasFmTier || hasFmTriggers)
         {
             var scope    = fm.TryGetValue("scope", out var s) ? NormalizeCsv(s) : "";
-            var triggers = fm.TryGetValue("triggers", out var t) && !string.IsNullOrWhiteSpace(t)
-                ? NormalizeCsv(t) : SeedTriggers(f, fm);
-            return new(NormalizeTier(fmTier), scope, triggers, AutoTier: false, relatedRaw);
+            var triggers = hasFmTriggers ? NormalizeCsv(fmTriggers!) : SeedTriggers(f, fm);
+            var tier     = hasFmTier ? NormalizeTier(fmTier!) : "topic";
+            return new(tier, scope, triggers, AutoTier: false, relatedRaw);
         }
 
         var fileName = Path.GetFileName(f.FilePath);
