@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**247 tools** across **37 tool families.**
+**248 tools** across **38 tool families.**
 
 ## Families
 
@@ -29,6 +29,7 @@
 | [Context](#context) | 4 |
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 4 |
+| [Craft Audit](#craft-audit) | 1 |
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 4 |
@@ -503,6 +504,16 @@ Create or update a place / district in canon. Pass empty id to create new; pass 
 - `storyHooks` (string, optional) — Comma-separated story hooks.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing place id to update.
+
+## Craft Audit
+
+<sub>`CraftAuditTools`</sub>
+
+### `craft_audit`
+
+Audit a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms — associative chains, cognitive-architecture tics, the observation tic, mood-soup, purple prose at the peak, italic-thought crutch, over-explanation, jargon front-loading). Each numbered item is parsed live from CanonDocumentSections, so editing §8 via set_canon_section changes what's checked on the next run — no code change needed. Findings persist to the Findings table and auto-heal on re-run. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Edit Session
 

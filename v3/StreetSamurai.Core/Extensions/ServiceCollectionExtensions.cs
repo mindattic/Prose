@@ -1021,6 +1021,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LibertyReportService>();
         services.AddSingleton<NodeOutlineService>();
         services.AddSingleton<StreetSamurai.Core.Services.Audit.LogicSweepService>();
+        services.AddSingleton<StreetSamurai.Core.Services.Audit.CraftRuleAuditService>();
 
         return services;
     }

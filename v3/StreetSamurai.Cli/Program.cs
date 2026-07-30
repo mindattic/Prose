@@ -1328,6 +1328,18 @@ if (args.Contains("--logic-sweep"))
     return;
 }
 
+// ss --craft-audit --slug <nodeSlug> [--json]
+// Audits a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms), parsed live from
+// CanonDocumentSections — each numbered item becomes its own check, no hand-duplicated C#
+// array to drift out of sync. Edit §8 via set_canon_section MCP; the next run picks it up.
+// Findings persist to Findings and auto-heal on re-run. Exit 0 = clean, 1 = findings present.
+if (args.Contains("--craft-audit"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await CraftAuditCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --diagnose-book --slug <nodeSlug> [--json]
 // Pre-flight structural analysis before running the review panel.
 // Runs 12 targeted checks (antagonist cost, protagonist behavior change,
