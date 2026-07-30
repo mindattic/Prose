@@ -1,9 +1,7 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
-using StreetSamurai.Core.Interfaces;
+using StreetSamurai.Core.Services.Audit;
 
 namespace StreetSamurai.Core.Services;
 
@@ -26,7 +24,7 @@ namespace StreetSamurai.Core.Services;
 // ─────────────────────────────────────────────────────────────────────────────
 
 public class BookAuditService(
-    ILlmService llm,
+    AuditRunner auditRunner,
     PlantPayoffService plantPayoffs,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
@@ -201,10 +199,22 @@ public class BookAuditService(
                 .Where(t => !string.IsNullOrWhiteSpace(t)));
 
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
+        var rereadKey = isSequel ? "reward_long_memory" : "reread_reward";
 
-        // run all commandment checks in parallel
-        var tasks = commandments.Select(c => CheckCommandmentAsync(c.Key, c.Title, c.Body, prose, plants, isSequel, ct));
-        var checks = await Task.WhenAll(tasks);
+        var rules = commandments
+            .Select(c => (IAuditRule)new CommandmentRule(c.Key, c.Title, c.Body, isSequel, rereadKey))
+            .ToList();
+        var ctx = new AuditContext(nodeId, node.UniverseId, prose, [],
+            new Dictionary<string, object?> { ["plants"] = plants });
+
+        var verdicts = await auditRunner.RunAsync(
+            "BOOKAUDIT", $"node:{node.Slug}", FindingCategory.Other, rules, ctx, ct: ct);
+        var checks = commandments.Select(c =>
+        {
+            var v = verdicts.First(v => v.RuleKey == c.Key);
+            var status = v.Severity switch { "PASS" => "pass", "BLOCKER" => "fail", _ => "warn" };
+            return new BookAuditCheck(c.Key, c.Title, status, v.Evidence, v.Fix);
+        }).ToArray();
 
         string? previousTitle = null;
         if (isSequel && node.PreviousNodeId.HasValue)
@@ -239,88 +249,55 @@ public class BookAuditService(
             ? p
             : p[..50000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50000..];
 
-    async Task<BookAuditCheck> CheckCommandmentAsync(
-        string key,
-        string title,
-        string body,
-        string prose,
-        List<Data.Entities.PlantPayoff> plants,
-        bool isSequel,
-        CancellationToken ct)
+    /// <summary>One commandment, adapted to the shared <see cref="ILlmAuditRule"/> dispatch —
+    /// AuditRunner owns the actual LLM call and the {status,evidence,fix} JSON parse now;
+    /// this only supplies the prompt. Commandment 6 (gateway "reward re-reading" / sequel
+    /// "reward the long memory") gets the node's plant/payoff registry appended, same as
+    /// before the refactor — reads it from <see cref="AuditContext.Extra"/>["plants"].</summary>
+    sealed class CommandmentRule(string key, string title, string body, bool isSequel, string rereadKey)
+        : ILlmAuditRule
     {
-        var rereadKey = isSequel ? "reward_long_memory" : "reread_reward";
-        var plantContext = key == rereadKey && plants.Count > 0
-            ? "\n\nRegistered plant/payoff pairs for this node:\n" +
-              string.Join("\n", plants.Select(p =>
-                  $"  [{p.Category}] PLANT: {p.PlantDescription} | PAYOFF: {p.PayoffDescription} | transparent: {p.IsTransparent}"))
-            : "";
+        public string Key => key;
+        public string Title => title;
 
-        var mode = isSequel ? "sequel" : "standalone/gateway";
-        var system = $$"""
-            You are auditing a {{mode}} story against one specific commandment.
-            A gateway story must work for first-time readers unfamiliar with the universe;
-            a sequel must honor returning readers while staying accessible to newcomers.
-
-            Respond as JSON only — no prose wrapper.
-            {
-              "status":   "pass" | "warn" | "fail",
-              "evidence": "1-2 sentence specific observation or quote from the prose",
-              "fix":      "one concrete sentence or null if passing"
-            }
-            """;
-
-        var user = $$"""
-            COMMANDMENT: {{title}}
-            RULE: {{body}}{{plantContext}}
-
-            NODE PROSE:
-            {{ClampProse(prose)}}
-
-            Evaluate: does this node satisfy the commandment?
-            - "pass" = clearly satisfied
-            - "warn" = partially present but could be stronger
-            - "fail" = absent, violated, or actively working against the commandment
-            Be specific — cite actual prose or structural observations. Not generalizations.
-            """;
-
-        try
+        public (string System, string User) BuildPrompt(AuditContext ctx)
         {
-            var raw = await llm.GenerateAsync(system, user, temperature: 0.2, maxTokens: 400, ct: ct);
-            var parsed = ParseJson<AuditCheckRaw>(raw);
-            return new BookAuditCheck(
-                Key:        key,
-                Title:      title,
-                Status:     parsed?.Status ?? "warn",
-                Evidence:   parsed?.Evidence ?? "(evaluation failed)",
-                Fix:        parsed?.Fix);
-        }
-        catch (Exception ex)
-        {
-            return new BookAuditCheck(Key: key, Title: title, Status: "warn",
-                Evidence: $"Evaluation failed: {ex.Message}", Fix: null);
-        }
-    }
+            var plants = ctx.Extra.TryGetValue("plants", out var p) ? (List<PlantPayoff>)p! : [];
+            var plantContext = key == rereadKey && plants.Count > 0
+                ? "\n\nRegistered plant/payoff pairs for this node:\n" +
+                  string.Join("\n", plants.Select(pl =>
+                      $"  [{pl.Category}] PLANT: {pl.PlantDescription} | PAYOFF: {pl.PayoffDescription} | transparent: {pl.IsTransparent}"))
+                : "";
 
-    static T? ParseJson<T>(string raw)
-    {
-        try
-        {
-            var start = raw.IndexOf('{');
-            var end   = raw.LastIndexOf('}');
-            if (start < 0 || end < start) return default;
-            return JsonSerializer.Deserialize<T>(raw[start..(end + 1)], new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-            });
-        }
-        catch { return default; }
-    }
+            var mode = isSequel ? "sequel" : "standalone/gateway";
+            var system = $$"""
+                You are auditing a {{mode}} story against one specific commandment.
+                A gateway story must work for first-time readers unfamiliar with the universe;
+                a sequel must honor returning readers while staying accessible to newcomers.
 
-    private class AuditCheckRaw
-    {
-        [JsonPropertyName("status")]   public string? Status   { get; set; }
-        [JsonPropertyName("evidence")] public string? Evidence { get; set; }
-        [JsonPropertyName("fix")]      public string? Fix      { get; set; }
+                Respond as JSON only — no prose wrapper.
+                {
+                  "status":   "pass" | "warn" | "fail",
+                  "evidence": "1-2 sentence specific observation or quote from the prose",
+                  "fix":      "one concrete sentence or null if passing"
+                }
+                """;
+
+            var user = $$"""
+                COMMANDMENT: {{title}}
+                RULE: {{body}}{{plantContext}}
+
+                NODE PROSE:
+                {{ClampProse(ctx.Prose)}}
+
+                Evaluate: does this node satisfy the commandment?
+                - "pass" = clearly satisfied
+                - "warn" = partially present but could be stronger
+                - "fail" = absent, violated, or actively working against the commandment
+                Be specific — cite actual prose or structural observations. Not generalizations.
+                """;
+            return (system, user);
+        }
     }
 
     // ── Commandment access (for beat generator context injection) ─────────────

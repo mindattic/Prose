@@ -928,6 +928,11 @@ public static class ServiceCollectionExtensions
         // and the Tools.PlantPayoff MCP tools.
         services.AddSingleton<PlantPayoffService>();
 
+        // Shared audit-rule dispatch + Findings persistence (BookAuditService,
+        // NounConsistencyService, and future audits build on this instead of each
+        // hand-rolling their own LLM fan-out / JSON parse / Findings lifecycle).
+        services.AddSingleton<StreetSamurai.Core.Services.Audit.AuditRunner>();
+
         // Book commandment audits — gateway (standalone) and sequel commandment sets.
         // Determined automatically from Node.PreviousNodeId.
         // Available via `ss --book-audit` and the Tools.StoryAudit MCP tools.

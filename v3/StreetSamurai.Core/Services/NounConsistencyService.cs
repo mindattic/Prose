@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
+using StreetSamurai.Core.Services.Audit;
 
 namespace StreetSamurai.Core.Services;
 
@@ -17,9 +18,14 @@ namespace StreetSamurai.Core.Services;
 //   • Whole-word, case-insensitive match.
 //   • Covers the target node's direct beats AND one level of chapter children
 //     (so calling with a BookNode slug covers its ChapterNode children).
+//
+// Each DeprecatedEntityName rule now also runs through AuditRunner (as an
+// IDeterministicAuditRule) so violations persist to Findings — this used to write nothing
+// anywhere; the NounConsistencyReport/NounViolation return shape is unchanged for existing
+// callers (ss --validate-nouns, MCP validate_nouns).
 // ─────────────────────────────────────────────────────────────────────────────
 
-public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> dbFactory, AuditRunner auditRunner)
 {
     // ── Public API ────────────────────────────────────────────────────────────
 
@@ -29,7 +35,7 @@ public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> db
         var node = await db.Nodes.AsNoTracking()
             .FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
-        return await ScanAsync(db, node, ct);
+        return await ScanAsync(db, node, auditRunner, ct);
     }
 
     public async Task<NounConsistencyReport> ValidateSlugAsync(string slug, CancellationToken ct = default)
@@ -38,7 +44,7 @@ public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> db
         var node = await db.Nodes.AsNoTracking()
             .FirstOrDefaultAsync(n => n.Slug == slug, ct)
             ?? throw new InvalidOperationException($"Node slug '{slug}' not found.");
-        return await ScanAsync(db, node, ct);
+        return await ScanAsync(db, node, auditRunner, ct);
     }
 
     public async Task<DeprecatedEntityName> AddRuleAsync(
@@ -81,13 +87,17 @@ public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> db
         if (rule == null) return false;
         db.DeprecatedEntityNames.Remove(rule);
         await db.SaveChangesAsync(ct);
+        // A rule this run's node-scoped auto-heal will never see again (it's not in the
+        // rules list to iterate over next time, not just producing zero violations this
+        // time) — clear whatever it already wrote, wherever it wrote it.
+        auditRunner.DeleteAllForRule("NOUNCONSISTENCY", RuleKeyFor(rule));
         return true;
     }
 
     // ── Core scan ─────────────────────────────────────────────────────────────
 
     static async Task<NounConsistencyReport> ScanAsync(
-        StreetSamuraiDbContext db, Node node, CancellationToken ct)
+        StreetSamuraiDbContext db, Node node, AuditRunner auditRunner, CancellationToken ct)
     {
         var rules = await db.DeprecatedEntityNames
             .AsNoTracking()
@@ -145,8 +155,23 @@ public class NounConsistencyService(IDbContextFactory<StreetSamuraiDbContext> db
             }
         }
 
+        // Persist through the shared Findings lifecycle. The scan loop above is unchanged
+        // (kept as the direct, already-correct computation rather than re-run through
+        // AuditRunner's rule dispatch — there's no LLM step here for the dispatcher to add
+        // value to, only the delete-then-recreate persistence pattern is worth sharing).
+        var verdicts = violations.Select(v => new AuditVerdict(
+            RuleKey:  RuleKeyFor(rules.First(r => r.DeprecatedName == v.DeprecatedName)),
+            Title:    $"No references to deprecated name '{v.DeprecatedName}'",
+            Severity: "MODERATE",
+            Evidence: $"Beat {v.BeatNumber}: uses '{v.DeprecatedName}' (should be '{v.CanonicalName}') — {v.Snippet}",
+            Location: v.BeatId.ToString())).ToList();
+        auditRunner.WriteFindingsForRules("NOUNCONSISTENCY", $"node:{node.Slug}", FindingCategory.Other,
+            rules.Select(RuleKeyFor).ToList(), verdicts);
+
         return new NounConsistencyReport(node.Title, node.Slug, node.NodeCode, beats.Count, violations);
     }
+
+    static string RuleKeyFor(DeprecatedEntityName rule) => $"noun_{rule.Id}";
 
     static string Snippet(string text, int matchIndex, int radius)
     {

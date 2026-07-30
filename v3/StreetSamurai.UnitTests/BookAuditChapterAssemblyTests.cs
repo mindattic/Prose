@@ -4,6 +4,7 @@ using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
+using StreetSamurai.Core.Services.Audit;
 
 namespace StreetSamurai.UnitTests;
 
@@ -32,7 +33,8 @@ public class BookAuditChapterAssemblyTests
         paths = new TestPathProviderWithRoot(tempRoot);
         dbFactory = TestDbFactory.For(paths, "nodes");
         llm = new CapturingLlmService();
-        svc = new BookAuditService(llm, new PlantPayoffService(dbFactory), dbFactory);
+        var auditRunner = new AuditRunner(llm, new FindingsService(dbFactory, paths));
+        svc = new BookAuditService(auditRunner, new PlantPayoffService(dbFactory), dbFactory);
     }
 
     [TearDown]
