@@ -59,9 +59,14 @@ public class CanonDocumentTypeRegistry(IDbContextFactory<StreetSamuraiDbContext>
         return type.TitleTemplate.Replace("{name}", name ?? "");
     }
 
-    /// <summary>Full YAML frontmatter block (without the enclosing <c>---</c> fences) for a
-    /// document type — the shared boilerplate plus this type's <c>layer:</c>/extra lines.</summary>
-    public async Task<string> GetFrontMatterAsync(string documentType, CancellationToken ct = default)
+    /// <summary>Full YAML frontmatter block (without the enclosing <c>---</c> fences) for one
+    /// document: the shared boilerplate, this type's <c>layer:</c>, then the type's own
+    /// <c>ExtraFrontMatter</c> (the common case — identical across every document of this type),
+    /// then finally this SPECIFIC document's own <see cref="CanonDocument.ExtraFrontMatter"/> if
+    /// set — needed when a type has more than one universe's row and each needs its own
+    /// <c>scope:</c>/<c>triggers:</c>/<c>related:</c> (e.g. GLMZ.md and SCRY.md are both
+    /// "UniverseCraft" but obviously don't share a trigger-keyword list).</summary>
+    public async Task<string> GetFrontMatterAsync(string documentType, Guid universeId, CancellationToken ct = default)
     {
         var type = await GetAsync(documentType, ct);
         var sb = new System.Text.StringBuilder("codex: SS\nproject: StreetSamurai\ncode: SS\n");
@@ -70,6 +75,15 @@ public class CanonDocumentTypeRegistry(IDbContextFactory<StreetSamuraiDbContext>
         sb.Append("status: live\n");
         if (type?.ExtraFrontMatter is { Length: > 0 } extra)
             sb.Append(extra.TrimEnd('\n')).Append('\n');
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var docExtra = await db.CanonDocuments
+            .Where(d => d.DocumentType == documentType && d.UniverseId == universeId)
+            .Select(d => d.ExtraFrontMatter)
+            .FirstOrDefaultAsync(ct);
+        if (docExtra is { Length: > 0 })
+            sb.Append(docExtra.TrimEnd('\n')).Append('\n');
+
         return sb.ToString();
     }
 

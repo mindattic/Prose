@@ -24,6 +24,14 @@ public class CanonDocument
     /// generator and doctor fails (INV-02).</summary>
     public string? LastChecksum { get; set; }
 
+    /// <summary>Extra YAML frontmatter lines specific to THIS document (appended after the
+    /// type's own <see cref="CanonDocumentType.ExtraFrontMatter"/>, not instead of it) — for
+    /// per-universe content a shared type-level default can't express, e.g. two different
+    /// universes' own <c>scope:</c>/<c>triggers:</c>/<c>related:</c> under the same
+    /// <c>DocumentType</c> (GLMZ.md and SCRY.md both being "UniverseCraft"). Null = the type's
+    /// own ExtraFrontMatter is everything this document needs.</summary>
+    public string? ExtraFrontMatter { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 

@@ -6,7 +6,7 @@ sessions/*/facet_responses/
 
 # Generated docs — source of truth is the DB; ephemeral stack variables, not source files.
 # Regenerate: ss --generate-canon-md --all   (BIBLE.md / WORLD.md / FRANCHISE.md / ENTOS.md /
-#                                              CRAFT.md / DELIGHT.md)
+#                                              CRAFT.md / DELIGHT.md / GLMZ.md / SCRY.md)
 #             ss --generate-node-doc --all    (docs/nodes/*.md)
 #             powershell -File tools/codex.ps1 digest  (BIBLE.digest.md)
 #             powershell -File tools/gen-schema.ps1     (schema.md)
@@ -19,6 +19,8 @@ docs/BIBLE.digest.md
 docs/universes/ENTOS.md
 docs/CRAFT.md
 docs/DELIGHT.md
+docs/GLMZ.md
+docs/SCRY.md
 docs/schema.md
 
 # Engine data (rebuilt from canon, not tracked)

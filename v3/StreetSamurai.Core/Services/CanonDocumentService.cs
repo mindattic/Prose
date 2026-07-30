@@ -131,22 +131,13 @@ public class CanonDocumentService
         var assembled = AssembleDocument(doc.Title ?? documentType, doc.Sections);
         var checksum  = ComputeChecksum(assembled);
 
-        // Write disk mirror with generated-file header (delete-then-rewrite + ReadOnly, matching NodeDocService)
-        Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
-        if (File.Exists(filePath))
-        {
-            File.SetAttributes(filePath, FileAttributes.Normal);
-            File.Delete(filePath);
-        }
         var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
-        var fmBase = await typeRegistry.GetFrontMatterAsync(documentType, ct);
+        var fmBase = await typeRegistry.GetFrontMatterAsync(documentType, universeId, ct);
         var fm     = $"---\n{fmBase}updated: {today}\n---\n\n";
         var withHeader = $"{fm}<!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type {documentType} -->\n\n{assembled}";
-        // Encoding.UTF8 emits a BOM preamble; UTF8Encoding(false) does not. A generated .md
-        // should be clean UTF-8 like everything else in this project (see the BOM checks the
-        // logic-sweep skill runs on beat text) — nothing intentionally wants a BOM here.
-        await File.WriteAllTextAsync(filePath, withHeader, new UTF8Encoding(false), ct);
-        File.SetAttributes(filePath, FileAttributes.ReadOnly);
+        // Atomic (per-process scratch file + rename) so two CLI/MCP processes regenerating the
+        // same canon doc concurrently can't corrupt or race it.
+        await GeneratedFileWriter.WriteReadOnlyAsync(filePath, withHeader, ct);
 
         // Update checksum
         var row = await db.CanonDocuments.FindAsync([doc.Id], ct)!;

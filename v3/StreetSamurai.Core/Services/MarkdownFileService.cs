@@ -257,7 +257,7 @@ public class MarkdownFileService
                 // section (a workaround from before CanonDocumentTypes existed; harmless to keep
                 // honoring, since nothing currently depends on it once its type's ExtraFrontMatter
                 // is populated).
-                var typeFm  = await typeRegistry.GetFrontMatterAsync(doc.DocumentType, ct);
+                var typeFm  = await typeRegistry.GetFrontMatterAsync(doc.DocumentType, doc.UniverseId, ct);
                 var canonFm = ParseFrontmatter($"---\n{typeFm}---\n");
                 if (!canonFm.ContainsKey("tier") && !canonFm.ContainsKey("triggers"))
                     canonFm = ParseFrontmatter(assembled);
