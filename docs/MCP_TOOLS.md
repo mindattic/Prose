@@ -231,7 +231,7 @@ List all sections in a world-canon document with their keys, titles, sort order,
 
 ### `set_book_bible_section`
 
-Update or create a structured section in a book's node bible (NodeBibleSections table). sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain structured per-category content. After calling this, run generate_node_doc to refresh the docs/nodes/<CODE>.md artifact and then ss --sync-markdown so DocContextService picks it up.
+Update or create a structured section in a book's node bible (NodeBibleSections table). sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain structured per-category content. The docs/nodes/<CODE>.md artifact and the MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 - `sectionType` (string, required) — Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.
@@ -239,7 +239,7 @@ Update or create a structured section in a book's node bible (NodeBibleSections 
 
 ### `set_canon_section`
 
-Update or create a section in a world-canon document. This is the ONLY way to edit world canon — do NOT hand-edit the generated .md files under docs/ (BIBLE.md, WORLD.md, FRANCHISE.md, CRAFT.md, DELIGHT.md, docs/universes/*.md). After setting a section, call generate_canon_md to write the updated .md artifact to disk. To find available sectionKeys, call list_canon_sections first.
+Update or create a section in a world-canon document. This is the ONLY way to edit world canon — do NOT hand-edit the generated .md files under docs/ (BIBLE.md, WORLD.md, FRANCHISE.md, CRAFT.md, DELIGHT.md, docs/universes/*.md). The .md artifact and the MarkdownFiles sync (what DocContextService reads at generation time) are regenerated automatically as part of this call — no follow-up call needed. To find available sectionKeys, call list_canon_sections first.
 
 - `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `sectionKey` (string, required) — Stable section key — e.g. 'SS-LAW-1', 'SS-§3', 'preamble'. Use list_canon_sections to find existing keys.

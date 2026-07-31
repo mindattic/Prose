@@ -24,15 +24,18 @@ public class CanonDocTools
     private readonly CanonDocumentService canonDocs;
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly NodeDocService nodeDoc;
+    private readonly MarkdownFileService markdownFiles;
 
     public CanonDocTools(
         CanonDocumentService canonDocs,
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-        NodeDocService nodeDoc)
+        NodeDocService nodeDoc,
+        MarkdownFileService markdownFiles)
     {
-        this.canonDocs = canonDocs;
-        this.dbFactory = dbFactory;
-        this.nodeDoc   = nodeDoc;
+        this.canonDocs     = canonDocs;
+        this.dbFactory     = dbFactory;
+        this.nodeDoc       = nodeDoc;
+        this.markdownFiles = markdownFiles;
     }
 
     // ── World-level canon ─────────────────────────────────────────────────────
@@ -111,7 +114,8 @@ public class CanonDocTools
         "Update or create a section in a world-canon document. This is the ONLY way to edit world canon — " +
         "do NOT hand-edit the generated .md files under docs/ (BIBLE.md, WORLD.md, FRANCHISE.md, " +
         "CRAFT.md, DELIGHT.md, docs/universes/*.md). " +
-        "After setting a section, call generate_canon_md to write the updated .md artifact to disk. " +
+        "The .md artifact and the MarkdownFiles sync (what DocContextService reads at generation time) " +
+        "are regenerated automatically as part of this call — no follow-up call needed. " +
         "To find available sectionKeys, call list_canon_sections first.")]
     public async Task<string> SetCanonSection(
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
@@ -129,13 +133,22 @@ public class CanonDocTools
         if (!result.Ok)
             return JsonSerializer.Serialize(new { error = result.Error, message = result.ErrorMessage }, CanonTools.JsonOpts);
 
+        // Cascade immediately — the edit isn't "done" until the .md on disk and the MarkdownFiles
+        // row DocContextService actually reads both reflect it. No hint string, no follow-up call
+        // to remember: the write and the propagation are one operation.
+        var genResult = await canonDocs.GenerateMdAsync(documentType, universeId.Value);
+        var syncResult = await markdownFiles.SyncAllAsync();
+
         return JsonSerializer.Serialize(new
         {
-            ok           = true,
-            action       = result.Action,
-            section_key  = result.SectionKey,
+            ok            = true,
+            action        = result.Action,
+            section_key   = result.SectionKey,
             document_type = documentType,
-            next_step    = $"Call generate_canon_md(documentType='{documentType}', universeSlug='{universeSlug}') to write the updated .md to disk.",
+            regenerated   = genResult.Ok,
+            file_path     = genResult.FilePath,
+            checksum      = genResult.Checksum,
+            synced        = new { inserted = syncResult.Inserted, updated = syncResult.Updated, unchanged = syncResult.Unchanged, errors = syncResult.Errors },
         }, CanonTools.JsonOpts);
     }
 
@@ -171,8 +184,8 @@ public class CanonDocTools
         "Update or create a structured section in a book's node bible (NodeBibleSections table). " +
         "sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. " +
         "Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain " +
-        "structured per-category content. After calling this, run generate_node_doc to refresh the " +
-        "docs/nodes/<CODE>.md artifact and then ss --sync-markdown so DocContextService picks it up.")]
+        "structured per-category content. The docs/nodes/<CODE>.md artifact and the MarkdownFiles " +
+        "sync (what DocContextService reads) are regenerated automatically as part of this call.")]
     public async Task<string> SetBookBibleSection(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug,
         [Description("Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.")] string sectionType,
@@ -187,17 +200,23 @@ public class CanonDocTools
         if (!result.Ok)
             return JsonSerializer.Serialize(new { error = result.Error, message = result.ErrorMessage }, CanonTools.JsonOpts);
 
+        // Cascade immediately — same reasoning as SetCanonSection: propagation is part of the write,
+        // not a follow-up step a caller has to remember. GenerateAsync throws on genuine failure
+        // (e.g. node not found) rather than returning an error union — nodeId is already validated
+        // above, so a thrown exception here is a real regeneration bug, not an expected outcome.
+        var genResult = await nodeDoc.GenerateAsync(nodeId.Value);
+        var syncResult = await markdownFiles.SyncAllAsync();
+
         return JsonSerializer.Serialize(new
         {
             ok           = true,
             action       = result.Action,
             section_type = result.SectionKey,
             node_id      = nodeId,
-            next_steps   = new[]
-            {
-                $"generate_node_doc(nodeIdOrSlug='{nodeIdOrSlug}') — regenerate docs/nodes/<CODE>.md",
-                "ss --sync-markdown — sync the .md to MarkdownFiles table for DocContextService",
-            },
+            regenerated  = true,
+            file_path    = genResult.Path,
+            beat_count   = genResult.BeatCount,
+            synced       = new { inserted = syncResult.Inserted, updated = syncResult.Updated, unchanged = syncResult.Unchanged, errors = syncResult.Errors },
         }, CanonTools.JsonOpts);
     }
 

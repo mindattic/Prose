@@ -44,6 +44,7 @@ public class CanonDocumentService
         Guid universeId,
         CancellationToken ct = default)
     {
+        universeId = await typeRegistry.ResolveEffectiveUniverseIdAsync(documentType, universeId, ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var doc = await db.CanonDocuments
@@ -66,6 +67,7 @@ public class CanonDocumentService
         string? sectionTitle = null,
         CancellationToken ct = default)
     {
+        universeId = await typeRegistry.ResolveEffectiveUniverseIdAsync(documentType, universeId, ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var doc = await db.CanonDocuments
@@ -112,6 +114,7 @@ public class CanonDocumentService
         Guid universeId,
         CancellationToken ct = default)
     {
+        universeId = await typeRegistry.ResolveEffectiveUniverseIdAsync(documentType, universeId, ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var doc = await db.CanonDocuments
