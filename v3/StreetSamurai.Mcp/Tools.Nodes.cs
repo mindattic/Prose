@@ -30,6 +30,7 @@ public class NodeTools
     private readonly NodeSpineService spine;
     private readonly AudiblePackageService audible;
     private readonly NodeDocService nodeDoc;
+    private readonly MarkdownFileService markdownFiles;
 
     public NodeTools(
         NodeWorkbenchService workbench,
@@ -41,7 +42,8 @@ public class NodeTools
         DocxExportService docxExport,
         NodeSpineService spine,
         AudiblePackageService audible,
-        NodeDocService nodeDoc)
+        NodeDocService nodeDoc,
+        MarkdownFileService markdownFiles)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
@@ -53,6 +55,7 @@ public class NodeTools
         this.spine = spine;
         this.audible = audible;
         this.nodeDoc = nodeDoc;
+        this.markdownFiles = markdownFiles;
     }
 
     [McpServerTool, Description("Create a SeriesNode — the top-level grouping (saga / anthology) that BookNodes hang under. Never holds beats. Returns the new id, slug, and URL.")]
@@ -601,10 +604,25 @@ public class NodeTools
         var spine = NodeBibleService.ParseBeatSpine(bibleText)
             .Select(p => new { index = p.Index, title = p.Title, goal = p.Goal, structure_role = p.StructureRole });
 
-        return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, bible = bibleText, beat_spine = spine }, CanonTools.JsonOpts);
+        // Cascade immediately — GenerateAndSaveAsync only wrote Node.NodeBible; the docs/nodes/{CODE}.md
+        // mirror and the MarkdownFiles row DocContextService actually reads both need to reflect it too.
+        var genResult = await nodeDoc.GenerateAsync(node.Id);
+        var syncResult = await markdownFiles.SyncAllAsync();
+
+        return JsonSerializer.Serialize(new
+        {
+            ok          = true,
+            id          = node.Id,
+            slug        = node.Slug,
+            bible       = bibleText,
+            beat_spine  = spine,
+            regenerated = true,
+            file_path   = genResult.Path,
+            synced      = new { inserted = syncResult.Inserted, updated = syncResult.Updated, unchanged = syncResult.Unchanged, errors = syncResult.Errors },
+        }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible.")]
+    [McpServerTool, Description("Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible. The docs/nodes/{CODE}.md mirror and MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.")]
     public async Task<string> SetBookBible(
         [Description("Node Guid id or slug.")] string idOrSlug,
         [Description("Full bible markdown text to store. Empty string clears the bible.")] string bibleText)
@@ -621,10 +639,24 @@ public class NodeTools
         row.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync();
 
-        return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, cleared = string.IsNullOrEmpty(bibleText) }, CanonTools.JsonOpts);
+        // Cascade immediately — same reasoning as GenerateBookBible/SetCanonSection: propagation
+        // is part of the write, not a follow-up step the caller has to remember.
+        var genResult = await nodeDoc.GenerateAsync(node.Id);
+        var syncResult = await markdownFiles.SyncAllAsync();
+
+        return JsonSerializer.Serialize(new
+        {
+            ok          = true,
+            id          = node.Id,
+            slug        = node.Slug,
+            cleared     = string.IsNullOrEmpty(bibleText),
+            regenerated = true,
+            file_path   = genResult.Path,
+            synced      = new { inserted = syncResult.Inserted, updated = syncResult.Updated, unchanged = syncResult.Unchanged, errors = syncResult.Errors },
+        }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Assemble the unified Book Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.")]
+    [McpServerTool, Description("Assemble the unified Book Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. The MarkdownFiles sync (what DocContextService reads at generation time) runs automatically as part of this call — no follow-up call needed. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.")]
     public async Task<string> GenerateNodeDoc(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug)
     {
@@ -634,6 +666,7 @@ public class NodeTools
         try
         {
             var result = await nodeDoc.GenerateAsync(node.Id);
+            var syncResult = await markdownFiles.SyncAllAsync();
             return JsonSerializer.Serialize(new
             {
                 ok           = true,
@@ -642,6 +675,7 @@ public class NodeTools
                 has_blueprint = result.HasBlueprint,
                 path         = result.Path,
                 generated_at = result.GeneratedAt,
+                synced       = new { inserted = syncResult.Inserted, updated = syncResult.Updated, unchanged = syncResult.Unchanged, errors = syncResult.Errors },
             }, CanonTools.JsonOpts);
         }
         catch (Exception ex)

@@ -6,6 +6,7 @@ using StreetSamurai.Core.Interfaces;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 
 namespace StreetSamurai.Core.Services;
 
@@ -23,6 +24,14 @@ public class NodeDocService
 {
     internal const string GeneratedMarker =
         "<!-- ==== GENERATED SECTIONS — do not hand-edit below this line ==== -->";
+
+    // Tolerant of the marker's em-dash getting mangled by an encoding mismatch upstream
+    // (seen in the wild — a stray non-UTF8 write turned "—" into a mojibake byte). Matching
+    // loosely here means a corrupted marker still gets recognized and stripped as generated
+    // content on the next regenerate, instead of permanently freezing into "hand-authored".
+    private static readonly Regex GeneratedMarkerPattern = new(
+        @"<!-- ==== GENERATED SECTIONS .{0,4} do not hand-edit below this line ==== -->",
+        RegexOptions.Compiled);
 
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly StructuralBlueprintService blueprintService;
@@ -112,8 +121,8 @@ public class NodeDocService
     internal static string ExtractHandAuthored(string? nodeBible)
     {
         if (string.IsNullOrWhiteSpace(nodeBible)) return "";
-        var idx = nodeBible.IndexOf(GeneratedMarker, StringComparison.Ordinal);
-        return idx >= 0 ? nodeBible[..idx].TrimEnd() : nodeBible.TrimEnd();
+        var match = GeneratedMarkerPattern.Match(nodeBible);
+        return match.Success ? nodeBible[..match.Index].TrimEnd() : nodeBible.TrimEnd();
     }
 
     // ── Blueprint section ─────────────────────────────────────────────────────

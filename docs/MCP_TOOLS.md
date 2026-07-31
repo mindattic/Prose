@@ -1133,7 +1133,7 @@ Generate (or regenerate) the node bible for a node. Uses the node's Seed field (
 
 ### `generate_node_doc`
 
-Assemble the unified Book Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.
+Assemble the unified Book Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. The MarkdownFiles sync (what DocContextService reads at generation time) runs automatically as part of this call — no follow-up call needed. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 
@@ -1248,7 +1248,7 @@ Set the silence (in ms) the audio engine inserts AFTER this beat, before the nex
 
 ### `set_book_bible`
 
-Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible.
+Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible. The docs/nodes/{CODE}.md mirror and MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 - `bibleText` (string, required) — Full bible markdown text to store. Empty string clears the bible.
@@ -1632,7 +1632,7 @@ List every book on the shelf. Returns id, title, premise, chapter count, status,
 
 ### `generate_structural_blueprint`
 
-Generate the StructuralBlueprint for a book node — pre-prose structural anti-tell commitments (StoryScope countermeasures): thematically-parallel subplot with carrier beats, temporal scheme (linear/frame/nonlinear), resolution mode (external/unresolved/mixed — never internal-understanding), moral polarity (ambivalent default), per-beat 1-10 escalation curve (kills flat escalation, Claude's #1 fingerprint), per-beat event-type + revelation-mode palette (kills event monoculture), optional form device, ending style (avalanche default, no epilogue), and 3-5 intertextual anchors pulled from the entity DB. The blueprint is injected per-beat into prose generation and verified afterward by the storyscope audit. Requires Node.NodeBible unless retrofit=true (infers from written prose). Accepts node id (GUID) or slug.
+Generate the StructuralBlueprint for a book node — pre-prose structural anti-tell commitments (StoryScope countermeasures): thematically-parallel subplot with carrier beats, temporal scheme (linear/frame/nonlinear), resolution mode (external/unresolved/mixed — never internal-understanding), moral polarity (ambivalent default), per-beat 1-10 escalation curve (kills flat escalation, Claude's #1 fingerprint), per-beat event-type + revelation-mode palette (kills event monoculture), optional form device, ending style (avalanche default, no epilogue), and 3-5 intertextual anchors pulled from the entity DB. The blueprint is injected per-beat into prose generation and verified afterward by the storyscope audit. Requires Node.NodeBible unless retrofit=true (infers from written prose). The docs/nodes/{CODE}.md mirror (Structural Blueprint section) and the MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `retrofit` (bool, optional) — Set true to infer the blueprint from already-written prose (for stories that predate the blueprint system).
