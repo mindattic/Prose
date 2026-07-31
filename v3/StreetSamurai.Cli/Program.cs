@@ -27,6 +27,33 @@ QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 // here before the dispatch chain so every CLI block + the web host inherit it.
 UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
 
+// HARD RULE: no silent GLMZ default. Before this check, an omitted --universe/SS_UNIVERSE
+// fell through to UniverseContext's persisted "current_universe" default (in practice, GLMZ)
+// — every content-touching command would silently scope to the wrong universe with no error,
+// the exact failure mode "Universe division absolute" exists to prevent (a `--slug <SCRY node>`
+// lookup against a GLMZ-scoped query filter just returns "not found", never "wrong universe").
+// UNIVERSE_AGNOSTIC_COMMANDS is a short, explicit allowlist of the few flags that are genuinely
+// cross-universe utilities (each resolves its own per-row UniverseId, not the ambient scope) or
+// touch no universe-scoped data at all (auth). Everything else must name its universe explicitly.
+if (UniverseBootstrap.RequestedSlug == null
+    && string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("SS_UNIVERSE")))
+{
+    string[] UniverseAgnosticCommands =
+    [
+        "--reset-password", "--sync-markdown", "--generate-canon-md", "--migrate-canon-docs",
+        "--schema", "--universe", "--help", "-h", "--sql-export", "--gpu", "--runpod",
+    ];
+    var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
+    if (!isAgnostic)
+    {
+        Console.Error.WriteLine(
+            "[universe] No universe scope given. Pass --universe glmz|scry (or set SS_UNIVERSE) — " +
+            "this command touches universe-scoped data and no longer silently defaults to GLMZ.");
+        Environment.ExitCode = 2;
+        return;
+    }
+}
+
 // CLI mode: dotnet run --project ... -- --rebuild-graph [--universe <slug>]
 // Rebuilds the scoped universe's <slug>_universe_graph.json cache from source data
 // without starting the web server. One universe per invocation (scope is pinned below).
