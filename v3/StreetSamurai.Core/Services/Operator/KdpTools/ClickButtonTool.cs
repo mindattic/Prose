@@ -55,7 +55,17 @@ public class ClickButtonTool : IKdpTool
             var candidates = {{candidatesJson}}.map(function (c) { return c.toLowerCase(); });
 
             function textOf(el) {
-                return (el.tagName === 'INPUT' ? (el.value || '') : (el.textContent || '')).trim().toLowerCase();
+                // Icon-only buttons (e.g. a modal's "X" close button) commonly have NO visible
+                // text at all — just an <i> icon child rendered via CSS — so textContent is
+                // empty and this element would never match "close"/"done" without falling back
+                // to aria-label/title, which is where their accessible name actually lives.
+                // Confirmed live: KDP's post-publish success modal's close button is exactly
+                // this shape: <button aria-label="Close"><i class="a-icon-close"></i></button>.
+                var direct = el.tagName === 'INPUT' ? (el.value || '') : (el.textContent || '');
+                direct = direct.trim();
+                if (direct) return direct.toLowerCase();
+                var fallback = el.getAttribute('aria-label') || el.getAttribute('title') || '';
+                return fallback.trim().toLowerCase();
             }
             function inFooterOrNav(el) {
                 return !!el.closest('footer, nav, [class*="footer" i], [id*="footer" i], [class*="nav" i], [id*="nav" i]');

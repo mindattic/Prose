@@ -143,7 +143,7 @@ public class KdpManifestService
                 // current disk version has already gone up or not. Conservative: flag for a check
                 // rather than silently assuming it's current.
                 stale = true;
-                effectiveStatus = "Unknown (no baseline)";
+                effectiveStatus = "-";
                 baselineWarning = "KdpPublishedAt never recorded for this book — treating as needing a check; run --kdp-mark-published once you confirm what's live.";
             }
             else
