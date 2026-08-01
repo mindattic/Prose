@@ -715,6 +715,18 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Services.Operator.WriterToolRegistry>();
         services.AddScoped<Services.Operator.WriterOperatorService>();
 
+        // KDP operator — same Anthropic tool-use loop shape, driving a live KDP browser page
+        // (via IKdpBrowser, implemented by KdpPublish) instead of the prose services.
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.FindAndOpenBookTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.UploadManuscriptTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.ClickButtonTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.CheckCheckboxTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.GetPageStatusTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.MarkPublishedTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.LogNoteTool>();
+        services.AddSingleton<Services.Operator.KdpToolRegistry>();
+        services.AddScoped<Services.Operator.KdpOperatorService>();
+
         // Geographic navigation, pathfinding, and dynamic place generation
         services.AddSingleton<NavigationService>();
         services.AddSingleton<DynamicPlaceGenerator>();
@@ -857,6 +869,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ExportCleanupService>();
         services.AddSingleton<DocxExportService>();
         services.AddSingleton<ManuscriptExportService>();
+        services.AddSingleton<KdpManifestService>();
+        services.AddSingleton<KdpMarkPublishedService>();
         services.AddSingleton<AudiblePackageService>(sp =>
             new AudiblePackageService(
                 sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),

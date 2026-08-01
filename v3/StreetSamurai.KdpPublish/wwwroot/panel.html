@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>KdpPublish — Control Panel</title>
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+    <div class="ss-panel">
+        <header class="ss-hdr">
+            <h1>◈ KdpPublish</h1>
+            <div class="ss-hdr-counts" id="counts">— selected · — tracked</div>
+        </header>
+
+        <p class="ss-loading" id="loading">Loading manifest…</p>
+
+        <div id="main-body" style="display:none; display:contents;">
+            <div class="ss-toolbar">
+                <button id="btn-select-all">Select All</button>
+                <button id="btn-mark-unpublished">Mark Unpublished</button>
+            </div>
+
+            <div class="ss-checklist">
+                <table class="ss-table">
+                    <thead>
+                        <tr>
+                            <th class="ss-col-check"></th>
+                            <th class="ss-col-code">Code</th>
+                            <th class="ss-col-version">Ver</th>
+                            <th class="ss-col-status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rows"></tbody>
+                </table>
+            </div>
+
+            <button class="ss-start" id="btn-start" disabled>▶ Start Selected (0)</button>
+        </div>
+
+        <div class="ss-log" id="log"></div>
+    </div>
+
+    <script>
+        (function () {
+            var entries = [];
+            var selected = new Set();
+            var running = false;
+            var everLoaded = false;
+
+            function post(msg) { window.chrome.webview.postMessage(msg); }
+
+            function statusClass(e) {
+                if (e.needsRepublish) return 'flagged';
+                if (e.publicationStatus === 'Published') return 'ok';
+                if (e.publicationStatus === 'WorkInProgress') return 'wip';
+                return 'warn';
+            }
+
+            // Fixed universe ordering — anything not in this list (unexpected/new universe
+            // slugs) still renders, just sorted alphabetically after these three.
+            var UNIVERSE_ORDER = ['glmz', 'gspl', 'scry'];
+
+            function groupByUniverse(list) {
+                var groups = {};
+                list.forEach(function (e) {
+                    var key = (e.universe || 'other').toLowerCase();
+                    (groups[key] = groups[key] || []).push(e);
+                });
+                var keys = Object.keys(groups).sort(function (a, b) {
+                    var ia = UNIVERSE_ORDER.indexOf(a), ib = UNIVERSE_ORDER.indexOf(b);
+                    if (ia === -1) ia = UNIVERSE_ORDER.length;
+                    if (ib === -1) ib = UNIVERSE_ORDER.length;
+                    return ia !== ib ? ia - ib : a.localeCompare(b);
+                });
+                return keys.map(function (k) { return { universe: k, items: groups[k] }; });
+            }
+
+            function render() {
+                document.getElementById('counts').textContent = selected.size + ' selected · ' + entries.length + ' tracked';
+                var tbody = document.getElementById('rows');
+                tbody.innerHTML = '';
+
+                groupByUniverse(entries).forEach(function (group) {
+                    var trHeader = document.createElement('tr');
+                    trHeader.className = 'ss-group-row';
+                    var tdHeader = document.createElement('td');
+                    tdHeader.className = 'ss-group-header';
+                    tdHeader.colSpan = 4;
+                    tdHeader.textContent = group.universe.toUpperCase() + ' (' + group.items.length + ')';
+                    trHeader.appendChild(tdHeader);
+                    tbody.appendChild(trHeader);
+
+                    group.items.forEach(function (e) {
+                        var tr = document.createElement('tr');
+                        tr.className = 'ss-row' + (e.needsRepublish ? ' ss-row-flagged' : '');
+
+                        var tdCheck = document.createElement('td');
+                        tdCheck.className = 'ss-col-check';
+                        var cb = document.createElement('input');
+                        cb.type = 'checkbox';
+                        cb.checked = selected.has(e.code);
+                        cb.addEventListener('change', function () {
+                            if (cb.checked) selected.add(e.code); else selected.delete(e.code);
+                            render();
+                        });
+                        tdCheck.appendChild(cb);
+
+                        var tdCode = document.createElement('td');
+                        tdCode.className = 'ss-col-code';
+                        tdCode.title = e.title;
+                        tdCode.textContent = e.code;
+
+                        var tdVer = document.createElement('td');
+                        tdVer.className = 'ss-col-version';
+                        tdVer.textContent = 'V' + e.version;
+
+                        var tdStatus = document.createElement('td');
+                        tdStatus.className = 'ss-col-status';
+                        var span = document.createElement('span');
+                        span.className = 'ss-status ss-status-' + statusClass(e);
+                        span.textContent = e.publicationStatus;
+                        tdStatus.appendChild(span);
+
+                        tr.appendChild(tdCheck);
+                        tr.appendChild(tdCode);
+                        tr.appendChild(tdVer);
+                        tr.appendChild(tdStatus);
+                        tbody.appendChild(tr);
+                    });
+                });
+
+                var startBtn = document.getElementById('btn-start');
+                startBtn.textContent = running ? 'Running…' : ('▶ Start Selected (' + selected.size + ')');
+                startBtn.disabled = running || selected.size === 0;
+
+                var allSelected = entries.length > 0 && selected.size === entries.length;
+                document.getElementById('btn-select-all').textContent = allSelected ? 'Unselect All' : 'Select All';
+            }
+
+            document.getElementById('btn-select-all').addEventListener('click', function () {
+                var allSelected = entries.length > 0 && selected.size === entries.length;
+                selected = allSelected ? new Set() : new Set(entries.map(function (e) { return e.code; }));
+                render();
+            });
+            document.getElementById('btn-mark-unpublished').addEventListener('click', function () {
+                if (selected.size === 0) return;
+                post({ action: 'mark-unpublished', codes: Array.from(selected) });
+            });
+            document.getElementById('btn-start').addEventListener('click', function () {
+                post({ action: 'start', codes: Array.from(selected) });
+            });
+
+            // C# calls these via ExecuteScriptAsync.
+            window.ssPanel = {
+                onManifest: function (entriesJson) {
+                    entries = JSON.parse(entriesJson);
+                    // Only default-select outdated books on the very first load. A later
+                    // refresh (e.g. auto-refresh after a book publishes mid-run) must preserve
+                    // whatever the user currently has checked, just dropping codes that no
+                    // longer exist — otherwise every post-publish status update would silently
+                    // wipe the in-progress selection out from under the user.
+                    if (!everLoaded) {
+                        selected = new Set(entries.filter(function (e) { return e.needsRepublish; }).map(function (e) { return e.code; }));
+                        everLoaded = true;
+                    } else {
+                        var validCodes = new Set(entries.map(function (e) { return e.code; }));
+                        selected = new Set(Array.from(selected).filter(function (c) { return validCodes.has(c); }));
+                    }
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('main-body').style.display = 'contents';
+                    render();
+                },
+                onLog: function (line) {
+                    var div = document.createElement('div');
+                    div.className = 'ss-log-line';
+                    div.textContent = line;
+                    var log = document.getElementById('log');
+                    log.appendChild(div);
+                    log.scrollTop = log.scrollHeight;
+                },
+                onRunState: function (isRunning) {
+                    running = isRunning;
+                    render();
+                }
+            };
+
+            post({ action: 'ready' });
+        })();
+    </script>
+</body>
+</html>

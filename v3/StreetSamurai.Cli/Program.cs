@@ -42,6 +42,7 @@ if (UniverseBootstrap.RequestedSlug == null
     [
         "--reset-password", "--sync-markdown", "--generate-canon-md", "--migrate-canon-docs",
         "--schema", "--universe", "--help", "-h", "--sql-export", "--gpu", "--runpod",
+        "--kdp-status", "--kdp-manifest", "--kdp-mark-published",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -1121,6 +1122,26 @@ if (args.Contains("--kdp-status"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await KdpStatusCli.RunAsync(args, sp);
+    return;
+}
+
+//   ss --kdp-manifest [--out <path>] [--userscript]
+//   Reconciles DB + disk + tools/kdp/title-ids.json into tools/kdp/manifest.json (the ground
+//   truth for what needs to go up on KDP). --userscript also regenerates
+//   tools/kdp/kdp-panel.user.js from tools/kdp/kdp-panel.template.js.
+if (args.Contains("--kdp-manifest"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await KdpManifestCli.RunAsync(args, sp);
+    return;
+}
+
+//   ss --kdp-mark-published --slug <slug> [--url <amazonUrl>] [--title-id <id>]
+//   Closes the loop after a republish actually completes on KDP.
+if (args.Contains("--kdp-mark-published"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await KdpMarkPublishedCli.RunAsync(args, sp);
     return;
 }
 

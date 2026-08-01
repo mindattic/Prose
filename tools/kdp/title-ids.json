@@ -1,0 +1,49 @@
+{
+  "_comment": "NodeCode -\u003E KDP dashboard identity crosswalk. titleId is KDP\u0027s internal dashboard id (different from the public ASIN) \u2014 it\u0027s what lets a link jump straight to a book\u0027s edit page at https://kdp.amazon.com/en_US/title-setup/kindle/{titleId}/content, skipping the bookshelf hunt-and-click. Harvest by opening the KDP bookshelf, right-clicking \u0027Edit eBook content\u0027 on a title, and copying the href \u2014 it contains .../kindle/{titleId}/content. Or paste the raw \u003Ca\u003E tag to Claude Code and it will add the entry here. asin/itemSetId are optional extras carried along for reference.",
+  "LUKE": {
+    "titleId": "A2CLOZG9ACHE0O",
+    "asin": "B0HC1MZN95",
+    "itemSetId": "8J3CHMXP2EP",
+    "owningItemSetId": "8B4H04KYFPG"
+  },
+  "BCODA": {
+    "titleId": "A32TB71CWUFJNN",
+    "asin": "B0H6V2F8N3"
+  },
+  "MNEMO": {
+    "titleId": "A3JIGIDUH3O7GT",
+    "asin": "B0H6PFGVRB"
+  },
+  "RTR": {
+    "titleId": "AO1NPMWW9FZFX",
+    "asin": "B0H8KQTD7T"
+  },
+  "MxG": {
+    "titleId": "A3QU9VRZ6MRE8E",
+    "asin": "B0H6PCBVTD"
+  },
+  "NxR": {
+    "titleId": "A1XX5OC9QLASLY",
+    "asin": "B0H6VWNZ24"
+  },
+  "CxC": {
+    "titleId": "A8P0AF8SPJ7WH",
+    "asin": "B0H6VX1KGN"
+  },
+  "SRZR": {
+    "titleId": "A2BKIH0Z6C92M9",
+    "asin": "B0H6PDMWWW"
+  },
+  "TEST": {
+    "titleId": "A3KYXBXIS6Q42K",
+    "asin": "B0H65425H3"
+  },
+  "UNDR": {
+    "titleId": "A9M6MWAGRKNDZ",
+    "asin": "B0H6PFPQ47"
+  },
+  "VATD": {
+    "titleId": "A2MCW0D30OBLU9",
+    "asin": "B0H59FBCZV"
+  }
+}

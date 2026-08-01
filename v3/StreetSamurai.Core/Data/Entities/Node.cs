@@ -174,6 +174,23 @@ public abstract class Node
     /// a non-null PublishUrl means the book exists on Amazon at that address.</summary>
     public string? PublishUrl { get; set; }
 
+    /// <summary>The book's Amazon ASIN (e.g. "B0H8KK2GJ9"). Previously derived on the fly via
+    /// regex from PublishUrl each time — stored directly instead (canon is the DB, not a
+    /// recomputed value) since it's also used as an exact, unambiguous search key against KDP's
+    /// own bookshelf search box (confirmed live: typing an ASIN into "Search by title" resolves
+    /// to that exact book, unlike title text which commonly diverges from KDP's displayed title
+    /// by a subtitle/series suffix). Null = not yet known (not published, or recorded before
+    /// this column existed — falls back to parsing PublishUrl).</summary>
+    public string? Asin { get; set; }
+
+    /// <summary>KDP's internal "titleId" for this book's edit-content session (e.g.
+    /// "A412I146N52A1", found in the bookshelf's data-link-parameters attribute and in the
+    /// title-setup URL). Lets automation jump straight to the book's Edit eBook Content page —
+    /// https://kdp.amazon.com/en_US/title-setup/kindle/{KdpTitleId}/content — with zero title
+    /// or ASIN search needed at all. Recorded automatically the first time find_and_open_book
+    /// locates this book. Null = not yet discovered.</summary>
+    public string? KdpTitleId { get; set; }
+
     // ── Generation / cost / resume state ─────────────────────────────────
 
     /// <summary>For LLM-generated nodes, the one-line seed that fed the
