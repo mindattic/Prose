@@ -212,6 +212,13 @@ public class KdpOperatorService
            success from silence or from an old version number still showing. If you skipped step
            3 because the version already matched, skip this check too and go straight to step 5.
 
+           IMPORTANT — check isProcessing on every get_page_status result from here through step
+           5: KDP shows a distinct "still preparing/converting/scanning" status for the uploaded
+           file, separate from the eventual success banner. Checking the confirmation checkboxes
+           while isProcessing is true does not reliably stick — confirmed live. If isProcessing
+           is true (even if a success banner also happens to be showing), wait and call
+           get_page_status again; do not call check_checkbox until isProcessing is false.
+
         5. Call check_checkbox with candidates like ["confirm that my answers are accurate"].
            KDP repeats this SAME confirmation checkbox once per section that had a new upload
            (manuscript, cover, etc.) — a single page commonly has TWO OR MORE identical
