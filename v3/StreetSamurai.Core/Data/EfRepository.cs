@@ -188,6 +188,24 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
         var existing = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existing == null)
         {
+            // Save() upserts by Id only — a caller that doesn't already know the
+            // canonical Id for an entity that's already in the corpus (e.g. a
+            // hand-authored seed JSON with no "id" field, or a re-run seed script)
+            // silently creates a SECOND row with the same (EntityType, Name) instead
+            // of updating the original. A 2026-08-02 live-corpus sweep
+            // (WorldValidationTests.NoSameTypeNameCollisions) found ~150+ such
+            // duplicate rows accumulated across many entity types over months —
+            // this warning is the fix to stop the count from growing further; it
+            // does not touch existing data (merging duplicates safely needs a
+            // deliberate, reviewed pass, not an automatic one here).
+            var nameCollision = db.Entities.Any(e => e.IsActive && e.EntityType == entityType
+                && e.Id != id && e.Name.ToLower() == name.ToLower());
+            if (nameCollision)
+                Console.Error.WriteLine(
+                    $"[EfRepository] WARNING: creating a NEW '{entityType}' entity named '{name}' " +
+                    $"(Id {id}) but an active entity of the same type already has this name. " +
+                    "If this is meant to be the same entity, pass its existing Id instead of omitting one.");
+
             var slug = ResolveSlug(db, name, id, currentSlug: null);
             existing = new Entity
             {

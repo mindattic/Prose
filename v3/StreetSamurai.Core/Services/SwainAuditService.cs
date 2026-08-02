@@ -248,7 +248,7 @@ public sealed class SwainAuditService(
         }
     }
 
-    private static SwainBeatResult ParseClassification(
+    internal static SwainBeatResult ParseClassification(
         Guid beatId, int position, string title, int charCount, string? raw)
     {
         if (string.IsNullOrWhiteSpace(raw))

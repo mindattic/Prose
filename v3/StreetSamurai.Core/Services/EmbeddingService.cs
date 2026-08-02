@@ -265,7 +265,6 @@ public class EmbeddingService
         {
             new("@p_k", Math.Max(1, k)),
             new("@p_query", queryJson),
-            new("@p_universe", QueryUniverseId()),
         };
         var scopeFilter = "";
         if (!string.IsNullOrWhiteSpace(scopeKind))
@@ -274,15 +273,24 @@ public class EmbeddingService
             parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@p_kind", scopeKind));
         }
 
-        // Universe scope is always applied; the optional ScopeKind filter is ANDed onto it.
-        var universeClause = scopeFilter.Length > 0
-            ? scopeFilter + " AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR UniverseId = @p_universe)"
-            : " WHERE (@p_universe = '00000000-0000-0000-0000-000000000000' OR UniverseId = @p_universe)";
+        // NOTE: deliberately NOT filtering on ProseEmbeddings.UniverseId here (unlike
+        // FindSimilarAsync / FindSimilarBeatNodesAsync, which join to the authoritative
+        // Entities/Nodes table). That column is a drift-prone copy stamped from whatever
+        // universe happened to be active when the row was last (re)embedded — trusting it
+        // directly caused the SS-A46 cross-universe leak fixed elsewhere in this file.
+        // This method has no authoritative per-ScopeKind table to join instead (its one live
+        // caller uses ScopeKind="markdown", and MarkdownFile isn't a universe-owned entity —
+        // docs like CRAFT.md are intentionally cross-universe). Correctness here comes from
+        // the CALLER: DocContextService only keeps a hit whose ScopeId is already present in
+        // its own universe/node-scoped candidate set (see the `byId.TryGetValue` gate in
+        // PrepareContextAsync step 4) — an unfiltered hit that isn't a valid candidate is
+        // simply dropped, never leaked. If a future ScopeKind needs true DB-level universe
+        // isolation, join to its authoritative source table instead of adding this filter back.
         var sql = $"""
             SELECT TOP (@p_k)
                 ScopeKind, ScopeId,
                 1.0 - VECTOR_DISTANCE('cosine', Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
-            FROM dbo.ProseEmbeddings{universeClause}
+            FROM dbo.ProseEmbeddings{scopeFilter}
             ORDER BY VECTOR_DISTANCE('cosine', Vector, CAST(@p_query AS VECTOR(1536))) ASC;
             """;
 
@@ -396,8 +404,14 @@ public class EmbeddingService
                 1.0 - VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
             FROM dbo.ProseEmbeddings pe
             JOIN dbo.BeatNodes sb ON sb.BeatId = pe.ScopeId AND sb.IsEnabled = 1
+            JOIN dbo.Nodes n ON n.Id = sb.NodeId
             WHERE pe.ScopeKind = '{ScopeBeatNode}'
-              AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR pe.UniverseId = @p_universe){scopeFilter}
+              -- Filter on the NODE's universe (authoritative), NOT pe.UniverseId: the embedding
+              -- tag is a drift-prone copy that silently defaults to GLMZ when a beat is embedded
+              -- without an active scope — the same class of bug fixed for EntityEmbeddings in
+              -- FindSimilarAsync above (SS-A46). n.UniverseId is the single source of truth for
+              -- which universe a beat actually belongs to.
+              AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR n.UniverseId = @p_universe){scopeFilter}
             ORDER BY VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) ASC;
             """;
 

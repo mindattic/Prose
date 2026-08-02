@@ -97,4 +97,109 @@ public class SwainAuditServiceTests
         Assert.That(Enum.GetValues<SwainClass>(), Has.Member(SwainClass.Ambiguous));
         Assert.That(Enum.GetValues<SwainClass>(), Has.Member(SwainClass.Deficient));
     }
+
+    // ── ParseClassification: the untrusted-LLM-JSON parser ─────────────────────
+    // Made `internal` (was `private`) specifically so this real logic — not just
+    // the record/enum shape — gets exercised. This is the part that actually
+    // touches unpredictable model output and is where a real bug would live.
+
+    private static readonly Guid Id = Guid.NewGuid();
+
+    [Test]
+    public void ParseClassification_PlainJson_MapsAllFields()
+    {
+        var raw = """{"class":"Scene","missing":"none","note":"goal stated in para 1"}""";
+        var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, raw);
+
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Scene));
+        Assert.That(r.MissingElement, Is.EqualTo("none"));
+        Assert.That(r.Note, Is.EqualTo("goal stated in para 1"));
+        Assert.That(r.IsPass, Is.True);
+    }
+
+    [Test]
+    public void ParseClassification_MarkdownFencedJson_StripsFence()
+    {
+        var raw = "```json\n{\"class\":\"Sequel\",\"missing\":\"none\",\"note\":\"decision at end\"}\n```";
+        var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, raw);
+
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Sequel));
+        Assert.That(r.IsPass, Is.True);
+    }
+
+    [Test]
+    public void ParseClassification_ChatterAroundJson_ExtractsInnerObject()
+    {
+        // LLMs sometimes prepend/append commentary despite the system prompt; the
+        // parser locates the first '{' and last '}' rather than requiring the
+        // whole response to be pure JSON.
+        var raw = "Sure, here is my answer:\n{\"class\":\"Ambiguous\",\"missing\":\"dilemma\",\"note\":\"no real choice\"}\nHope that helps!";
+        var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, raw);
+
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Ambiguous));
+        Assert.That(r.MissingElement, Is.EqualTo("dilemma"));
+        Assert.That(r.Severity, Is.EqualTo("MODERATE"));
+    }
+
+    [Test]
+    public void ParseClassification_MissingOptionalFields_DefaultsApplied()
+    {
+        var raw = """{"class":"Scene"}""";
+        var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, raw);
+
+        Assert.That(r.MissingElement, Is.EqualTo("none"));
+        Assert.That(r.Note, Is.EqualTo(""));
+    }
+
+    [Test]
+    public void ParseClassification_UnknownClassValue_FallsBackToDeficientBlocker()
+    {
+        var raw = """{"class":"Whatever","missing":"goal","note":"n/a"}""";
+        var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, raw);
+
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Deficient));
+        Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
+    }
+
+    [Test]
+    public void ParseClassification_EmptyRaw_FailsAsBlockerWithEmptyNote()
+    {
+        var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, "   ");
+
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Deficient));
+        Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
+        Assert.That(r.Note, Does.Contain("Empty LLM response"));
+    }
+
+    [Test]
+    public void ParseClassification_NoJsonBraces_FailsWithDiagnosticNote()
+    {
+        var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, "I refuse to answer.");
+
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Deficient));
+        Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
+        Assert.That(r.Note, Does.Contain("No JSON in response"));
+    }
+
+    [Test]
+    public void ParseClassification_MalformedJson_FailsWithParseErrorNote()
+    {
+        var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, "{\"class\":\"Scene\", oops}");
+
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Deficient));
+        Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
+        Assert.That(r.Note, Does.Contain("JSON parse error"));
+    }
+
+    [Test]
+    public void ParseClassification_PreservesPositionTitleAndCharCount()
+    {
+        var raw = """{"class":"Scene","missing":"none","note":"ok"}""";
+        var r = SwainAuditService.ParseClassification(Id, 7, "The Ambush", 1234, raw);
+
+        Assert.That(r.Position,  Is.EqualTo(7));
+        Assert.That(r.Title,    Is.EqualTo("The Ambush"));
+        Assert.That(r.CharCount, Is.EqualTo(1234));
+        Assert.That(r.BeatId,   Is.EqualTo(Id));
+    }
 }
