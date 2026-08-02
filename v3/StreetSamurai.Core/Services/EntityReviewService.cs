@@ -781,9 +781,14 @@ Entry type: {entityType}
 Entry name: {entityName}";
     }
 
-    private record RelationshipExtract(string TargetName, string RelationType, string Description, string Sentiment, double Confidence);
+    internal record RelationshipExtract(string TargetName, string RelationType, string Description, string Sentiment, double Confidence);
 
-    private static List<RelationshipExtract> ParseRelationships(string? raw)
+    /// <summary>Parses the LLM's extracted-relationships response. Each item is parsed in its
+    /// own try/catch and "confidence" is ValueKind-guarded — JsonElement.GetDouble() THROWS
+    /// InvalidOperationException on a non-Number token (e.g. a hallucinated null), and without
+    /// these guards one malformed relationship would discard every relationship extracted in
+    /// the same response (same bug class fixed in several LLM-batch parsers this session).</summary>
+    internal static List<RelationshipExtract> ParseRelationships(string? raw)
     {
         var result = new List<RelationshipExtract>();
         if (string.IsNullOrWhiteSpace(raw)) return result;
@@ -796,13 +801,21 @@ Entry name: {entityName}";
                 return result;
             foreach (var item in arr.EnumerateArray())
             {
-                var targetName   = item.TryGetProperty("targetName",   out var n)  ? n.GetString()  ?? "" : "";
-                var relationType = item.TryGetProperty("relationType", out var rt) ? rt.GetString() ?? "" : "";
-                var description  = item.TryGetProperty("description",  out var d)  ? d.GetString()  ?? "" : "";
-                var sentiment    = item.TryGetProperty("sentiment",    out var s)  ? s.GetString()  ?? "neutral" : "neutral";
-                var confidence   = item.TryGetProperty("confidence",   out var c)  ? c.GetDouble()  : 0.5;
-                if (!string.IsNullOrWhiteSpace(targetName) && !string.IsNullOrWhiteSpace(relationType))
-                    result.Add(new RelationshipExtract(targetName, relationType, description, sentiment, confidence));
+                try
+                {
+                    var targetName   = item.TryGetProperty("targetName",   out var n)  ? n.GetString()  ?? "" : "";
+                    var relationType = item.TryGetProperty("relationType", out var rt) ? rt.GetString() ?? "" : "";
+                    var description  = item.TryGetProperty("description",  out var d)  ? d.GetString()  ?? "" : "";
+                    var sentiment    = item.TryGetProperty("sentiment",    out var s)  ? s.GetString()  ?? "neutral" : "neutral";
+                    var confidence   = item.TryGetProperty("confidence", out var c) && c.ValueKind == JsonValueKind.Number
+                        ? c.GetDouble() : 0.5;
+                    if (!string.IsNullOrWhiteSpace(targetName) && !string.IsNullOrWhiteSpace(relationType))
+                        result.Add(new RelationshipExtract(targetName, relationType, description, sentiment, confidence));
+                }
+                catch
+                {
+                    // Skip just this malformed relationship — not the whole batch.
+                }
             }
         }
         catch { }
