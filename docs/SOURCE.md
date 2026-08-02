@@ -26,15 +26,17 @@ related: docs/CRAFT.md, docs/gospel/README.md
 
 ## 0. What SOURCE is {#SS-SOURCE-0}
 
-**SOURCE** (formerly GSPL/"Gospel") is StreetSamurai's citation-grounded historical-religious
-research universe — exhaustively researched, popular narrative nonfiction where every factual
-claim traces to a real, verifiable source, "something you would use as an APA citation." It is
-broader than any one book: **Gospel: History vs. Heritage** (Matthew/Mark/Luke/John) was the
-first production line; **Sons of God, Daughters of Men: A Cultural History of the Nephilim**
-(NEPH) is the second; further Old Testament and cross-cutting topics (the Exodus, David and
-Solomon's kingdom, the Dead Sea Scrolls, the Council of Nicaea) are queued. Every book in this
-universe shares the same method and the same discipline below, regardless of which scripture or
-tradition it examines.
+**SOURCE** (formerly GSPL/"Gospel") is StreetSamurai's citation-grounded **nonfiction** universe —
+home for ANY exhaustively researched, popular narrative nonfiction book where every factual claim
+traces to a real, verifiable source, "something you would use as an APA citation." It is not
+scoped to religious or historical subject matter specifically — that has simply been every book
+produced here so far. **Gospel: History vs. Heritage** (Matthew/Mark/Luke/John) was the first
+production line; **Sons of God, Daughters of Men: A Cultural History of the Nephilim** (NEPH) is
+the second; further Old Testament and cross-cutting topics (the Exodus, David and Solomon's
+kingdom, the Dead Sea Scrolls, the Council of Nicaea) are queued — but a future SOURCE book could
+just as easily be about science, true crime, biography, or any other nonfiction subject. The one
+requirement is the discipline below: every claim cited, every gap in the record stated honestly.
+Every book in this universe shares that same method regardless of subject.
 
 Each book is an entertaining, readable examination of its subject — what the text or tradition
 says, set against what the independent historical and archaeological record says, and what the
