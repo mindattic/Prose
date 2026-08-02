@@ -108,7 +108,7 @@ public static class WorkflowMonitorCli
         }
 
         if (unseededCount > 0)
-            Console.WriteLine($"\n  !  EntityEmbeddings: {unseededCount} active entity/entities have no embedding row — embedding lookup silently misses them. Run 'ss --embed-entities'.");
+            Console.WriteLine($"\n  !  EntityEmbeddings: {unseededCount} active {(unseededCount == 1 ? "entity has" : "entities have")} no embedding row — embedding lookup silently misses them. Run 'ss --reembed --universe <slug>'.");
         else
             Console.WriteLine($"\n  ✓  EntityEmbeddings: all active entities have embeddings.");
     }
