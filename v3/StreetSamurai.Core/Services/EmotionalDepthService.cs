@@ -336,7 +336,26 @@ PROSE:
 
         try
         {
-            var raw  = await llm.GenerateAsync(system, prompt, 0.1, maxTok, null, ct);
+            var raw = await llm.GenerateAsync(system, prompt, 0.1, maxTok, null, ct);
+            return ParseBeatCurve(raw, beatNumbers);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Beat curve failed");
+            return new List<BeatEmotionalScore>();
+        }
+    }
+
+    /// <summary>Parses the per-beat curve LLM response into scored beats. Each entry's
+    /// beat_number/depth getters are ValueKind-guarded (JsonElement.GetInt32() THROWS on a
+    /// non-Number token, e.g. a hallucinated null) and scoped to a per-entry try/catch — an
+    /// ungated getter with the try/catch outside the loop would let one bad entry silently
+    /// discard the WHOLE curve (same bug class fixed in LogicSweepService/ChekhovAuditService
+    /// this session).</summary>
+    internal static List<BeatEmotionalScore> ParseBeatCurve(string raw, IReadOnlyList<int> beatNumbers)
+    {
+        try
+        {
             var json = ExtractJsonArray(raw);
             using var doc = JsonDocument.Parse(json);
 
@@ -344,19 +363,27 @@ PROSE:
             int idx = 0;
             foreach (var el in doc.RootElement.EnumerateArray())
             {
-                int beatNum = el.TryGetProperty("beat_number", out var bnp) ? bnp.GetInt32()
-                    : idx < beatNumbers.Count ? beatNumbers[idx] : idx + 1;
-                int depth   = el.TryGetProperty("depth", out var dp) ? Math.Clamp(dp.GetInt32(), 0, 4) : 2;
-                var note    = el.TryGetProperty("note",  out var np) ? np.GetString() : null;
-                results.Add(new BeatEmotionalScore(beatNum, depth, note));
+                try
+                {
+                    int beatNum = el.TryGetProperty("beat_number", out var bnp) && bnp.ValueKind == JsonValueKind.Number
+                        ? bnp.GetInt32()
+                        : idx < beatNumbers.Count ? beatNumbers[idx] : idx + 1;
+                    int depth = el.TryGetProperty("depth", out var dp) && dp.ValueKind == JsonValueKind.Number
+                        ? Math.Clamp(dp.GetInt32(), 0, 4) : 2;
+                    var note = el.TryGetProperty("note", out var np) ? np.GetString() : null;
+                    results.Add(new BeatEmotionalScore(beatNum, depth, note));
+                }
+                catch
+                {
+                    // Skip just this malformed entry — not the whole curve.
+                }
                 idx++;
             }
             return results;
         }
-        catch (Exception ex)
+        catch
         {
-            log.LogWarning(ex, "Beat curve failed");
-            return new List<BeatEmotionalScore>();
+            return [];
         }
     }
 
