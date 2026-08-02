@@ -71,7 +71,7 @@ public class CraftRuleAuditService(
         var rules = mannerisms
             .Select(m => (IAuditRule)new MannerismRule($"craft_{m.Number}", m.Title, m.Description))
             .ToList();
-        var ctx = new AuditContext(nodeId, node.UniverseId, ClampProse(prose), [],
+        var ctx = new AuditContext(nodeId, node.UniverseId, AuditProseUtils.ClampProse(prose), [],
             new Dictionary<string, object?>());
 
         var verdicts = await auditRunner.RunAsync(
@@ -83,11 +83,6 @@ public class CraftRuleAuditService(
             NodeTitle:     node.Title,
             Findings:      verdicts.Where(v => v.Severity != "PASS").ToList());
     }
-
-    static string ClampProse(string p) =>
-        p.Length <= 100_000
-            ? p
-            : p[..50_000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50_000..];
 
     internal static IReadOnlyList<(int Number, string Title, string Description)> ParseMannerisms(string sectionContent)
     {

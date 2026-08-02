@@ -1,5 +1,19 @@
 namespace StreetSamurai.Core.Services.Audit;
 
+/// <summary>Shared prose-clamping used by every audit that hands a whole node's concatenated
+/// prose to a single LLM call (BookAuditService, StoryScopeAuditService, LogicSweepService,
+/// CraftRuleAuditService — previously four identical private copies of this method).</summary>
+public static class AuditProseUtils
+{
+    /// <summary>Keeps head AND tail on truncation — checks that read the opening or the ending
+    /// (a Save-the-Cat "Final Image" check, an ending-style check, etc.) would false-fail on a
+    /// head-only truncation of an oversized manuscript.</summary>
+    public static string ClampProse(string p) =>
+        p.Length <= 100_000
+            ? p
+            : p[..50_000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50_000..];
+}
+
 /// <summary>One enabled beat, pre-loaded once per audit run so individual rules don't each
 /// re-query the DB.</summary>
 public record AuditBeat(Guid Id, int Number, string Text);

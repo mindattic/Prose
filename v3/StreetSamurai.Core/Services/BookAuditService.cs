@@ -241,14 +241,6 @@ public class BookAuditService(
 
     // ── Internal ─────────────────────────────────────────────────────────────
 
-    // Keep both the opening AND the ending when a manuscript is too long for one
-    // prompt — commandments split between "open with the world" (head) and "land
-    // one beat past the handoff" (tail), so head-only truncation false-fails the latter.
-    static string ClampProse(string p) =>
-        p.Length <= 100000
-            ? p
-            : p[..50000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50000..];
-
     /// <summary>One commandment, adapted to the shared <see cref="ILlmAuditRule"/> dispatch —
     /// AuditRunner owns the actual LLM call and the {status,evidence,fix} JSON parse now;
     /// this only supplies the prompt. Commandment 6 (gateway "reward re-reading" / sequel
@@ -288,7 +280,7 @@ public class BookAuditService(
                 RULE: {{body}}{{plantContext}}
 
                 NODE PROSE:
-                {{ClampProse(ctx.Prose)}}
+                {{AuditProseUtils.ClampProse(ctx.Prose)}}
 
                 Evaluate: does this node satisfy the commandment?
                 - "pass" = clearly satisfied

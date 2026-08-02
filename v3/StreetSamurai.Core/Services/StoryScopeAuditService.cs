@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
+using StreetSamurai.Core.Services.Audit;
 
 namespace StreetSamurai.Core.Services;
 
@@ -484,7 +485,7 @@ public class StoryScopeAuditService(
 
     IEnumerable<HolisticCheck> BuildHolisticChecks(Node node, string prose, NodeStructuralBlueprint? blueprint)
     {
-        var full = ClampProse(prose);
+        var full = AuditProseUtils.ClampProse(prose);
         var tail = prose.Length <= 25000 ? prose : prose[^25000..];
 
         yield return new HolisticCheck("moral_gloss", "Narrator moral gloss",
@@ -693,7 +694,7 @@ public class StoryScopeAuditService(
             would expect most LLMs to produce for this premise — the statistically safe choices.
 
             STORY PROSE:
-            {ClampProse(prose)}
+            {AuditProseUtils.ClampProse(prose)}
             """;
 
         try
@@ -790,12 +791,6 @@ public class StoryScopeAuditService(
     static string Truncate(string s, int max) => s.Length <= max ? s : s[..max];
 
     // ── Shared helpers ────────────────────────────────────────────────────────
-
-    // Keep head AND tail — ending checks false-fail on head-only truncation.
-    internal static string ClampProse(string p) =>
-        p.Length <= 100000
-            ? p
-            : p[..50000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50000..];
 
     internal static T? ParseJson<T>(string raw)
     {

@@ -4,12 +4,13 @@ namespace StreetSamurai.UnitTests;
 
 /// <summary>
 /// Tests for StoryScopeAuditService's deterministic, LLM-free helpers — the only parts of this
-/// 871-line service testable without mocking an LLM call. <c>LongestRun</c>, <c>ClampProse</c>,
-/// and <c>ParseJson&lt;T&gt;</c> are made <c>internal</c> (were <c>private</c>) specifically so
+/// 871-line service testable without mocking an LLM call. <c>LongestRun</c> and
+/// <c>ParseJson&lt;T&gt;</c> are made <c>internal</c> (were <c>private</c>) specifically so
 /// this real logic is exercised, not just the record/enum shapes. <c>ParseJson</c> in particular
 /// is the same class of untrusted-LLM-JSON parser as SwainAuditService.ParseClassification (see
 /// SwainAuditServiceTests) and backs every one of the service's LLM-graded checks — a bug here
-/// would silently corrupt all of them.
+/// would silently corrupt all of them. (Prose truncation is now the shared
+/// <c>AuditProseUtils.ClampProse</c> — see <c>AuditProseUtilsTests.cs</c>.)
 /// </summary>
 [TestFixture]
 public class StoryScopeAuditServiceTests
@@ -81,38 +82,6 @@ public class StoryScopeAuditServiceTests
         Assert.That(value, Is.EqualTo("A"));
         Assert.That(length, Is.EqualTo(2));
         Assert.That(start, Is.EqualTo(0));
-    }
-
-    // ── ClampProse: keeps head AND tail so ending checks don't false-fail on truncation ──
-
-    [Test]
-    public void ClampProse_ShortText_ReturnedUnchanged()
-    {
-        var text = new string('x', 500);
-        Assert.That(StoryScopeAuditService.ClampProse(text), Is.EqualTo(text));
-    }
-
-    [Test]
-    public void ClampProse_ExactlyAtLimit_ReturnedUnchanged()
-    {
-        var text = new string('x', 100000);
-        Assert.That(StoryScopeAuditService.ClampProse(text), Is.EqualTo(text));
-    }
-
-    [Test]
-    public void ClampProse_OverLimit_KeepsHeadAndTail()
-    {
-        var head = new string('a', 50000);
-        var tail = new string('b', 50000);
-        var middle = new string('m', 10000);
-        var text = head + middle + tail;
-
-        var clamped = StoryScopeAuditService.ClampProse(text);
-
-        Assert.That(clamped, Does.StartWith(head));
-        Assert.That(clamped, Does.EndWith(tail));
-        Assert.That(clamped, Does.Contain("elided for length"));
-        Assert.That(clamped, Does.Not.Contain(middle));
     }
 
     // ── ParseJson<T>: the untrusted-LLM-JSON parser shared by every LLM-graded check ──

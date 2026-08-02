@@ -74,7 +74,7 @@ public class LogicSweepService(
             ["plants"]            = plants,
             ["disabledSnippets"]  = disabledSnippets,
         };
-        var ctx = new AuditContext(nodeId, node.UniverseId, ClampProse(prose), beats, extra);
+        var ctx = new AuditContext(nodeId, node.UniverseId, AuditProseUtils.ClampProse(prose), beats, extra);
 
         IReadOnlyList<IAuditRule> rules =
         [
@@ -91,14 +91,6 @@ public class LogicSweepService(
 
         return new LogicSweepReport(nodeId, node.Slug, node.Title, beats.Count, verdicts);
     }
-
-    // Same head+tail clamp as BookAuditService — commandments split opening/ending checks
-    // across the truncation boundary; a logic sweep has the same problem for causality/
-    // timeline threads that span the whole book, so the same mitigation applies.
-    internal static string ClampProse(string p) =>
-        p.Length <= 100000
-            ? p
-            : p[..50000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50000..];
 
     // ── Shared JSON-array parsing for all six dimensions ──────────────────────────
 

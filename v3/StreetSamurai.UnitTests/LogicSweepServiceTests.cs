@@ -3,12 +3,13 @@ using StreetSamurai.Core.Services.Audit;
 namespace StreetSamurai.UnitTests;
 
 /// <summary>
-/// Tests for LogicSweepService's deterministic, LLM-free helpers. The six audit dimensions
+/// Tests for LogicSweepService's deterministic, LLM-free helper. The six audit dimensions
 /// themselves (causality, knowledge states, timeline, plant/payoff, orphan references, bible
 /// agreement) are each a single LLM call and aren't practically unit-testable, but
 /// <c>ParseFindingsArray</c> — the ONE parser all six dimensions share for their untrusted LLM
-/// JSON output — and <c>ClampProse</c> are pure logic worth covering directly. Both made
-/// <c>internal</c> (were <c>private</c>); <c>InternalsVisibleTo</c> already covers this project.
+/// JSON output — is pure logic worth covering directly. Made <c>internal</c> (was <c>private</c>);
+/// <c>InternalsVisibleTo</c> already covers this project. (Prose truncation is now the shared
+/// <c>AuditProseUtils.ClampProse</c> — see <c>AuditProseUtilsTests.cs</c>.)
 /// </summary>
 [TestFixture]
 public class LogicSweepServiceTests
@@ -131,29 +132,6 @@ public class LogicSweepServiceTests
 
         Assert.That(results, Has.Count.EqualTo(3));
         Assert.That(results.Select(r => r.Severity), Is.EqualTo(new[] { "BLOCKER", "MODERATE", "MINOR" }));
-    }
-
-    // ── ClampProse ─────────────────────────────────────────────────────────────
-
-    [Test]
-    public void ClampProse_ShortText_ReturnedUnchanged()
-    {
-        var text = new string('x', 500);
-        Assert.That(LogicSweepService.ClampProse(text), Is.EqualTo(text));
-    }
-
-    [Test]
-    public void ClampProse_OverLimit_KeepsHeadAndTail()
-    {
-        var head = new string('a', 50000);
-        var tail = new string('b', 50000);
-        var text = head + new string('m', 5000) + tail;
-
-        var clamped = LogicSweepService.ClampProse(text);
-
-        Assert.That(clamped, Does.StartWith(head));
-        Assert.That(clamped, Does.EndWith(tail));
-        Assert.That(clamped, Does.Contain("elided for length"));
     }
 
     // ── LogicSweepReport aggregation ───────────────────────────────────────────
