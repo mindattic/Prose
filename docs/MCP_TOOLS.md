@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**248 tools** across **38 tool families.**
+**251 tools** across **39 tool families.**
 
 ## Families
 
@@ -48,6 +48,7 @@
 | [Story](#story) | 6 |
 | [Story Scope](#story-scope) | 3 |
 | [Survey](#survey) | 7 |
+| [Swain](#swain) | 3 |
 | [Universe](#universe) | 5 |
 | [Verification](#verification) | 5 |
 | [Voice](#voice) | 5 |
@@ -1296,6 +1297,7 @@ Update a node's metadata fields. Pass only the fields you want to change — omi
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `title` (string, optional) — New title. Omit to leave unchanged.
+- `subtitle` (string, optional) — Subtitle (e.g. 'A GLMZ Novella'). Omit to leave unchanged; pass empty string to clear.
 - `description` (string, optional) — Back-of-book description. Omit to leave unchanged; pass empty string to clear.
 - `kind` (string, optional) — Kind label: book | chapter | episode | novella | novel | node | scene | saga | anthology. Omit to leave unchanged.
 - `status` (string, optional) — Status: draft | ready | canon | archived. Omit to leave unchanged.
@@ -1703,6 +1705,31 @@ Mark a survey question as applied (or skipped) after the fix has been made. appl
 - `questionKey` (string, required) — Question key, e.g. 'Q-001'.
 - `applyNotes` (string, required) — Description of what was changed.
 - `applyStatus` (string, optional) — 'Applied' or 'Skipped'. Defaults to 'Applied'.
+
+## Swain
+
+<sub>`SwainTools`</sub>
+
+### `swain_audit`
+
+Classify every enabled beat in a book against Dwight Swain's Scene/Sequel doctrine via a Haiku pass. Scene (Goal→Conflict→Disaster) and Sequel (Reaction→Dilemma→Decision) both pass; Ambiguous (one element weak/underwritten) is MODERATE; Deficient (neither pattern executes) is BLOCKER. Returns per-beat classification plus book-level pass/MODERATE/BLOCKER counts and compliance rate. Accepts node id (GUID) or slug/NodeCode.
+
+- `nodeIdOrSlug` (string, required) — Book node id (GUID), slug, or NodeCode.
+- `useOpus` (bool, optional) — Set true to use Opus instead of Haiku for classification (stubborn/ambiguous beats).
+
+### `swain_audit_all`
+
+Run the Swain Scene/Sequel doctrine audit across every book node in the current universe scope. Returns a per-book summary (beat count, pass/MODERATE/BLOCKER counts, compliance rate) plus corpus-wide totals. Use this first to see which books need attention before calling swain_audit on a specific one.
+
+- `useOpus` (bool, optional) — Set true to use Opus instead of Haiku for classification (slower, costlier, more accurate on stubborn beats).
+
+### `swain_repair`
+
+Repair Swain BLOCKER findings in a book by auto-splicing the missing structural element (disaster turn, decision, etc.) into each deficient beat. Re-runs the audit first, then for each BLOCKER (or just beatId if given): loads the beat's current text, asks an LLM to add ONLY the missing element without rewriting existing sentences, and applies the result via the workbench. Returns per-beat repair outcomes. Accepts node id (GUID) or slug/NodeCode.
+
+- `nodeIdOrSlug` (string, required) — Book node id (GUID), slug, or NodeCode.
+- `beatId` (string, optional) — Only repair this specific beat id (GUID), if given — otherwise every BLOCKER in the book.
+- `useOpus` (bool, optional) — Set true to use Opus instead of Sonnet for the splice (stubborn beats that resist a Sonnet pass).
 
 ## Universe
 
