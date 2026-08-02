@@ -258,7 +258,7 @@ public class StoryScopeAuditService(
     static StoryScopeCheck Pass(string key, string title, string evidence) =>
         new(key, title, "PASS", evidence, null, null, null);
 
-    static (string? Value, int Length, int StartIndex) LongestRun(List<string> values)
+    internal static (string? Value, int Length, int StartIndex) LongestRun(List<string> values)
     {
         string? bestVal = null; int bestLen = 0, bestStart = 0;
         int i = 0;
@@ -792,12 +792,12 @@ public class StoryScopeAuditService(
     // ── Shared helpers ────────────────────────────────────────────────────────
 
     // Keep head AND tail — ending checks false-fail on head-only truncation.
-    static string ClampProse(string p) =>
+    internal static string ClampProse(string p) =>
         p.Length <= 100000
             ? p
             : p[..50000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50000..];
 
-    static T? ParseJson<T>(string raw)
+    internal static T? ParseJson<T>(string raw)
     {
         try
         {
