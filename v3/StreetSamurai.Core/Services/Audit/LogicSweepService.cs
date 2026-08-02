@@ -95,7 +95,7 @@ public class LogicSweepService(
     // Same head+tail clamp as BookAuditService — commandments split opening/ending checks
     // across the truncation boundary; a logic sweep has the same problem for causality/
     // timeline threads that span the whole book, so the same mitigation applies.
-    static string ClampProse(string p) =>
+    internal static string ClampProse(string p) =>
         p.Length <= 100000
             ? p
             : p[..50000] + "\n\n[... middle of the manuscript elided for length ...]\n\n" + p[^50000..];
@@ -104,7 +104,7 @@ public class LogicSweepService(
 
     /// <summary>Every dimension asks for the same finding shape — a JSON array of
     /// {beat_number, severity, evidence, fix} — so there is one parser instead of six.</summary>
-    static IReadOnlyList<AuditVerdict> ParseFindingsArray(
+    internal static IReadOnlyList<AuditVerdict> ParseFindingsArray(
         string ruleKey, string title, string raw, IReadOnlyList<AuditBeat> beats)
     {
         try
@@ -116,17 +116,33 @@ public class LogicSweepService(
             var results = new List<AuditVerdict>();
             foreach (var f in doc.RootElement.EnumerateArray())
             {
-                var beatNumber = f.TryGetProperty("beat_number", out var bn) && bn.TryGetInt32(out var n) ? n : (int?)null;
-                var location = beatNumber.HasValue
-                    ? beats.FirstOrDefault(b => b.Number == beatNumber.Value)?.Id.ToString()
-                    : null;
-                var severity = f.TryGetProperty("severity", out var sv) ? sv.GetString()?.ToUpperInvariant() : null;
-                severity = severity is "BLOCKER" or "MODERATE" or "MINOR" or "DEVIATION" ? severity : "MODERATE";
-                var evidence = f.TryGetProperty("evidence", out var ev) ? ev.GetString() ?? "" : "";
-                if (evidence.Length == 0) continue; // don't persist an empty/malformed entry
-                var fix = f.TryGetProperty("fix", out var fx) ? fx.GetString() : null;
-                var evidenceWithBeat = beatNumber.HasValue ? $"Beat #{beatNumber}: {evidence}" : evidence;
-                results.Add(new AuditVerdict(ruleKey, title, severity, evidenceWithBeat, location, fix));
+                try
+                {
+                    // beat_number is documented to the LLM as "<int or null>" for whole-book
+                    // findings (plant/payoff, bible agreement) — JsonElement.TryGetInt32 THROWS
+                    // InvalidOperationException on a JSON null (it doesn't fail soft like the
+                    // name implies), so this must check ValueKind first or one whole-book finding
+                    // silently discards every other finding in the same response via the outer
+                    // catch below.
+                    var beatNumber = f.TryGetProperty("beat_number", out var bn)
+                        && bn.ValueKind == JsonValueKind.Number
+                        && bn.TryGetInt32(out var n) ? n : (int?)null;
+                    var location = beatNumber.HasValue
+                        ? beats.FirstOrDefault(b => b.Number == beatNumber.Value)?.Id.ToString()
+                        : null;
+                    var severity = f.TryGetProperty("severity", out var sv) ? sv.GetString()?.ToUpperInvariant() : null;
+                    severity = severity is "BLOCKER" or "MODERATE" or "MINOR" or "DEVIATION" ? severity : "MODERATE";
+                    var evidence = f.TryGetProperty("evidence", out var ev) ? ev.GetString() ?? "" : "";
+                    if (evidence.Length == 0) continue; // don't persist an empty/malformed entry
+                    var fix = f.TryGetProperty("fix", out var fx) ? fx.GetString() : null;
+                    var evidenceWithBeat = beatNumber.HasValue ? $"Beat #{beatNumber}: {evidence}" : evidence;
+                    results.Add(new AuditVerdict(ruleKey, title, severity, evidenceWithBeat, location, fix));
+                }
+                catch
+                {
+                    // One malformed entry must not discard every other finding in the same
+                    // response — skip just this entry, not the whole array.
+                }
             }
             return results;
         }
