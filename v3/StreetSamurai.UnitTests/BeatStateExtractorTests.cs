@@ -64,7 +64,9 @@ public class BeatStateExtractorTests
 /// <summary>Stub IChapterRepository — no-op, never fires OnChapterSaved.</summary>
 file sealed class NoOpChapterRepository : IChapterRepository
 {
+#pragma warning disable CS0067 // required by IChapterRepository; this stub never fires it
     public event Action<Chapter>? OnChapterSaved;
+#pragma warning restore CS0067
     public List<Chapter> ListChapters() => [];
     public Chapter? LoadChapter(string id) => null;
     public void SaveChapter(Chapter chapter) { }

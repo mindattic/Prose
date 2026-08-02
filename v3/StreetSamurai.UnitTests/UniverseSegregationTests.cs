@@ -200,7 +200,7 @@ public class UniverseSegregationTests
         {
             var s = id.ToString();
             Assert.That(s[14], Is.EqualTo('7'), $"{s} must be UUIDv7 (version nibble)");
-            Assert.That("89ab", Does.Contain(char.ToLower(s[19])), $"{s} must have a valid UUID variant");
+            Assert.That(char.ToLower(s[19]), Is.AnyOf('8', '9', 'a', 'b'), $"{s} must have a valid UUID variant");
         }
     }
 
