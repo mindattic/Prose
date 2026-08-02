@@ -1499,6 +1499,13 @@ $@"
 YOUR MEASURED PSYCHOMETRIC PROFILE — let it genuinely shape what you notice, what bothers you, and how you score: {profile.Summary()}.
 Read through this psychology, not a generic critic's: high Openness welcomes the strange, lyrical, and rule-breaking; low Openness wants clarity and convention. High Conscientiousness is impatient with looseness, purple prose, and unearned flourish; lower Conscientiousness forgives it for energy and feel. High Neuroticism feels stakes and dread sharply; low Neuroticism stays cool. Let your Agreeableness set how gentle or blunt your review reads. React as THIS person actually would.";
 
+        // Expert Reader Panel personas (ExpertReaderCatalog, id prefix "xreader-")
+        // already author their own complete fandom/expertise framing above — skip
+        // the generic genre-fan overlay so a SCRY grimdark persona doesn't also get
+        // told "you are ALSO a die-hard cyberpunk fan".
+        if (persona.Id.StartsWith("xreader-", StringComparison.Ordinal))
+            return who;
+
         var genre = GenreOverride?.Trim();
         if (string.IsNullOrWhiteSpace(genre))
         {
@@ -2138,14 +2145,18 @@ Be specific; do not invent praise the reviews don't support.";
     /// roster into Persona objects for a rerun).</summary>
     public List<Persona> PersonasForIds(IReadOnlyList<string> ids) => PersonasByIds(ids);
 
-    /// <summary>Resolve a fixed set of personas by id (focus-group rerun),
-    /// preserving order and skipping any id no longer in the library.</summary>
+    /// <summary>Resolve a fixed set of personas by id (focus-group rerun, or an
+    /// Expert Reader Panel run), preserving order and skipping any id found in
+    /// neither the library nor the expert catalog.</summary>
     private static List<Persona> PersonasByIds(IReadOnlyList<string> ids)
     {
         var byId = PersonaLibrary.All.ToDictionary(p => p.Id, p => p);
         var list = new List<Persona>(ids.Count);
         foreach (var id in ids)
+        {
             if (byId.TryGetValue(id, out var p)) list.Add(p);
+            else if (ExpertReaderCatalog.AllById.TryGetValue(id, out var xp)) list.Add(xp);
+        }
         return list;
     }
 

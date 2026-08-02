@@ -25,6 +25,10 @@ namespace StreetSamurai.Cli;
 ///   --model ID          Force a specific model for all cloud providers this run.
 ///   --model-map MAP     Per-provider model overrides: "claude-team=claude-opus-4-7,openai=gpt-4.1".
 ///                       Takes precedence over --model for providers named in the map.
+///   --experts           Run ONLY the fixed Expert Reader Panel for the current --universe
+///                       (3 calibrated genre/domain superfans; see ExpertReaderCatalog) instead
+///                       of the random persona pool. On-demand only — never runs by default.
+///                       Mutually exclusive with --group/--same-personas/--census/--study/--by-act/--delta.
 ///
 /// Exit codes:
 ///   0 — at least one review was saved.
@@ -39,7 +43,7 @@ public static class ReviewNodeCli
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
             ballots = settings.ReviewBallots, prose = settings.ReviewProse;
         bool samePersonas = false, study = false, census = false, skipDiagnosis = false, byAct = false, delta = false;
-        bool allowVotes = false, forceReview = false;
+        bool allowVotes = false, forceReview = false, experts = false;
         bool useLocal = false; string? localModel = null, localUrl = null, localKey = null, localLabel = null, modelOverride = null, providersOverride = null, modelMapRaw = null; int localCtx = 0;
         int segChars = 90000, segBallots = 8;
         // RFC 0009 §2 — cost tier. Explicit --ballots/--prose/--skip-diagnosis still win over the tier.
@@ -80,6 +84,7 @@ public static class ReviewNodeCli
                 case "--local-label":     if (i + 1 < args.Length) localLabel = args[++i]; break;
                 case "--allow-votes":     allowVotes = true; break;
                 case "--force":           forceReview = true; break;
+                case "--experts":         experts = true; break;
             }
         }
 
@@ -87,6 +92,12 @@ public static class ReviewNodeCli
         var votingGate = services.GetRequiredService<VotingGate>();
         try { votingGate.EnsureAllowed("review-node", allowVotes); }
         catch (VotingDisabledException ex) { Console.Error.WriteLine($"[review-node] {ex.Message}"); return 1; }
+
+        if (experts && (study || census || samePersonas || byAct || delta || !string.IsNullOrWhiteSpace(group)))
+        {
+            Console.Error.WriteLine("[review-node] --experts cannot be combined with --group/--same-personas/--census/--study/--by-act/--delta.");
+            return 1;
+        }
 
         // --local-url/--local-key: point this run at a remote/rented OpenAI-compatible
         // endpoint (e.g. a vast.ai/RunPod box). Persisted so the UI + later runs reuse it
@@ -126,6 +137,7 @@ public static class ReviewNodeCli
             Console.Error.WriteLine("  --effort draft     ~6 calls — mid-draft spot check (per-beat gripes; not a gate)");
             Console.Error.WriteLine("  --effort standard  ~15 calls — standalone gate (>=82%)");
             Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/export gate (>=85%)");
+            Console.Error.WriteLine("  --experts          run ONLY the fixed Expert Reader Panel (3 calibrated genre superfans for the current --universe); on-demand only");
             Console.Error.WriteLine("  --model TAG        override the cloud model for all active providers this run (e.g. gpt-4.1, gemini-2.5-pro)");
             Console.Error.WriteLine("  --local            run ballots on the local LLM (Ollama) -- free, no cloud calls (default + --by-act only)");
             Console.Error.WriteLine("  --local-model TAG  override the local model tag for this run (default: settings.LocalReviewModel)");
@@ -176,10 +188,10 @@ public static class ReviewNodeCli
 
         // --local is wired only for the economical default (sampled) and --by-act paths.
         // The census/study/focus-group paths still run on the cloud panel.
-        if (useLocal && (study || census || samePersonas || !string.IsNullOrWhiteSpace(group)))
+        if (useLocal && (study || census || samePersonas || experts || !string.IsNullOrWhiteSpace(group)))
         {
             Console.Error.WriteLine("[review-node] --local applies to the default sampled review and --by-act only; "
-                + "--census/--study/--group/--same-personas still run on the cloud panel. Ignoring --local for this run.");
+                + "--census/--study/--group/--same-personas/--experts still run on the cloud panel. Ignoring --local for this run.");
             useLocal = false;
         }
 
@@ -288,7 +300,7 @@ public static class ReviewNodeCli
         // ── DEFAULT: economical SAMPLED two-tier — cheap score-ballots + a few prose
         //    upgrades + the per-beat study, in one pass. Explicit modes (--census,
         //    --group, --same-personas) opt out into full-review runs below. ──
-        if (!census && string.IsNullOrWhiteSpace(group) && !samePersonas)
+        if (!census && string.IsNullOrWhiteSpace(group) && !samePersonas && !experts)
         {
             if (ballots <= 0) ballots = 20;
             if (prose < 0) prose = 0;
@@ -403,13 +415,33 @@ public static class ReviewNodeCli
             readers = personaIds.Count;
         }
 
-        Console.WriteLine("[review-node] Reviewing node:");
+        // Expert Reader Panel mode: the fixed, calibrated genre-superfan roster for
+        // the current --universe (ExpertReaderCatalog) — on-demand only.
+        string? universeSlugForBanner = null;
+        if (experts)
+        {
+            var universeCtx = services.GetRequiredService<IUniverseContext>();
+            universeSlugForBanner = universeCtx.CurrentSlug;
+            var expertPersonas = ExpertReaderCatalog.ForUniverse(universeSlugForBanner);
+            if (expertPersonas.Count == 0)
+            {
+                Console.Error.WriteLine($"[review-node] --experts: no calibrated Expert Reader Panel for universe '{universeSlugForBanner}'.");
+                return 1;
+            }
+            personaIds = expertPersonas.Select(p => p.Id).ToList();
+            readers = personaIds.Count;
+        }
+
+        Console.WriteLine(experts
+            ? $"[review-node] EXPERT READER PANEL ({readers} {universeSlugForBanner} specialists):"
+            : "[review-node] Reviewing node:");
         Console.WriteLine($"   Id:      {nodeId}");
         Console.WriteLine($"   Slug:    {nodeSlug}");
         Console.WriteLine($"   Title:   {nodeTitle}");
         Console.WriteLine($"   Readers: {readers} personas (round-robin across the trusted-4)"
             + (samePersonas ? "  [SAME personas as last run]" : "")
-            + (group != null ? $"  [Focus group: {group}]" : ""));
+            + (group != null ? $"  [Focus group: {group}]" : "")
+            + (experts ? $"  [Expert Reader Panel: {universeSlugForBanner}]" : ""));
         Console.WriteLine("[review-node] Running — each persona reads the whole node; this may take a few minutes…");
 
         var total = readers;
