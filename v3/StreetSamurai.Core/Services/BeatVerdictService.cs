@@ -111,26 +111,7 @@ Output STRICT JSON, no fences, no commentary:
             {
                 var raw = await llm.GenerateAsync(system, sb.ToString(), temperature: 0.2,
                     maxTokens: 2200, model: LlmModels.Sonnet, ct: ct);
-                using var doc = JsonDocument.Parse(StripFences(raw));
-                if (doc.RootElement.TryGetProperty("beats", out var arr))
-                {
-                    foreach (var el in arr.EnumerateArray())
-                    {
-                        if (!el.TryGetProperty("ref", out var refEl)) continue;
-                        if (!refMap.TryGetValue(refEl.GetInt32(), out var meta)) continue;
-                        if (!el.TryGetProperty("findings", out var fArr)) continue;
-                        foreach (var f in fArr.EnumerateArray())
-                        {
-                            findings.Add(new VerdictFinding(
-                                meta.Id, meta.Number, meta.Chapter,
-                                Str(f, "type") ?? "GRIPE",
-                                Str(f, "severity") ?? "MINOR",
-                                Str(f, "quote"),
-                                Str(f, "note") ?? "",
-                                Str(f, "fix")));
-                        }
-                    }
-                }
+                findings.AddRange(ParseVerdictBatch(raw, refMap));
                 scanned += batch.Count;
             }
             catch (Exception ex)
@@ -163,6 +144,46 @@ Output STRICT JSON, no fences, no commentary:
             JsonSerializer.Serialize(summary, new JsonSerializerOptions { WriteIndented = true }), ct);
 
         return new VerdictReport(nodeCode, scanned, scanned - beatsWithFindings, findings, jsonPath);
+    }
+
+    /// <summary>Parses one LLM batch response into findings, keyed back to real beats via
+    /// refMap. Each "beats" entry is parsed in its own try/catch and its "ref" getter is
+    /// ValueKind-guarded — JsonElement.GetInt32() THROWS InvalidOperationException on a
+    /// non-Number token (e.g. a hallucinated "ref": null), and without these guards one
+    /// malformed entry would discard every finding for the WHOLE batch (same bug class fixed
+    /// in LogicSweepService/ChekhovAuditService/EmotionalDepthService/BookOutlineService this
+    /// session).</summary>
+    internal static List<VerdictFinding> ParseVerdictBatch(
+        string raw, IReadOnlyDictionary<int, (Guid Id, int Number, string Chapter)> refMap)
+    {
+        var findings = new List<VerdictFinding>();
+        using var doc = JsonDocument.Parse(StripFences(raw));
+        if (!doc.RootElement.TryGetProperty("beats", out var arr)) return findings;
+
+        foreach (var el in arr.EnumerateArray())
+        {
+            try
+            {
+                if (!el.TryGetProperty("ref", out var refEl) || refEl.ValueKind != JsonValueKind.Number) continue;
+                if (!refMap.TryGetValue(refEl.GetInt32(), out var meta)) continue;
+                if (!el.TryGetProperty("findings", out var fArr)) continue;
+                foreach (var f in fArr.EnumerateArray())
+                {
+                    findings.Add(new VerdictFinding(
+                        meta.Id, meta.Number, meta.Chapter,
+                        Str(f, "type") ?? "GRIPE",
+                        Str(f, "severity") ?? "MINOR",
+                        Str(f, "quote"),
+                        Str(f, "note") ?? "",
+                        Str(f, "fix")));
+                }
+            }
+            catch
+            {
+                // Skip just this malformed "beats" entry — not the whole batch.
+            }
+        }
+        return findings;
     }
 
     private static string? Str(JsonElement el, string prop)
