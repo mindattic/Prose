@@ -150,7 +150,7 @@ public class ChekhovAuditService(
         return ParseSightings(raw, beats);
     }
 
-    static List<ChekhovSighting> ParseSightings(string raw, List<NodeWorkbenchService.OrderedBeat> beats)
+    internal static List<ChekhovSighting> ParseSightings(string raw, List<NodeWorkbenchService.OrderedBeat> beats)
     {
         try
         {
@@ -170,20 +170,34 @@ public class ChekhovAuditService(
                 .Select((b, i) => (Label: $"Beat {i + 1}", SortKey: (float)b.SortKey))
                 .ToDictionary(x => x.Label, x => x.SortKey);
 
-            return arr.EnumerateArray().Select(e =>
+            var results = new List<ChekhovSighting>();
+            foreach (var e in arr.EnumerateArray())
             {
-                var beatLabel = e.TryGetProperty("beat_label", out var bl) ? bl.GetString() ?? "" : "";
-                var llmSortKey = e.TryGetProperty("sort_key", out var sk) ? (float)sk.GetDouble() : 0f;
-                var sortKey = beatIndex.TryGetValue(beatLabel.Trim(), out var real) ? real : llmSortKey;
-                return new ChekhovSighting(
-                    BeatLabel: beatLabel,
-                    SortKey:   sortKey,
-                    PropName:  e.TryGetProperty("prop_name",  out var pn) ? pn.GetString() ?? "" : "",
-                    PropType:  e.TryGetProperty("prop_type",  out var pt) ? pt.GetString() ?? "physical" : "physical",
-                    Context:   e.TryGetProperty("context",    out var cx) ? cx.GetString() ?? "" : "");
-            })
-            .Where(s => !string.IsNullOrWhiteSpace(s.PropName))
-            .ToList();
+                try
+                {
+                    var beatLabel = e.TryGetProperty("beat_label", out var bl) ? bl.GetString() ?? "" : "";
+                    // JsonElement.GetDouble() THROWS InvalidOperationException on a non-Number
+                    // ValueKind (e.g. a hallucinated "sort_key": null) — same failure mode fixed
+                    // in LogicSweepService.ParseFindingsArray. Guarded here so one malformed
+                    // sighting can't discard every other real sighting in the same LLM response.
+                    var llmSortKey = e.TryGetProperty("sort_key", out var sk) && sk.ValueKind == JsonValueKind.Number
+                        ? (float)sk.GetDouble() : 0f;
+                    var sortKey = beatIndex.TryGetValue(beatLabel.Trim(), out var real) ? real : llmSortKey;
+                    var sighting = new ChekhovSighting(
+                        BeatLabel: beatLabel,
+                        SortKey:   sortKey,
+                        PropName:  e.TryGetProperty("prop_name",  out var pn) ? pn.GetString() ?? "" : "",
+                        PropType:  e.TryGetProperty("prop_type",  out var pt) ? pt.GetString() ?? "physical" : "physical",
+                        Context:   e.TryGetProperty("context",    out var cx) ? cx.GetString() ?? "" : "");
+                    if (!string.IsNullOrWhiteSpace(sighting.PropName))
+                        results.Add(sighting);
+                }
+                catch
+                {
+                    // Skip just this malformed sighting — not the whole batch.
+                }
+            }
+            return results;
         }
         catch
         {
