@@ -95,8 +95,8 @@ public class AuditRunner(ILlmService llm, FindingsService findings)
     // '@' always separates the rule key from whatever follows (an "@location" then "): ", or
     // straight to "): " when there's no location) — never valid inside a rule key — so it's a
     // safe, unambiguous prefix boundary no other key's summaries can accidentally match.
-    static string DeleteKeyPrefix(string prefix, string ruleKey) => $"{prefix} {ruleKey}@";
-    static string SummaryFor(string prefix, string ruleKey, string? location) =>
+    internal static string DeleteKeyPrefix(string prefix, string ruleKey) => $"{prefix} {ruleKey}@";
+    internal static string SummaryFor(string prefix, string ruleKey, string? location) =>
         $"{DeleteKeyPrefix(prefix, ruleKey)}{location}: ";
 
     async Task<IReadOnlyList<AuditVerdict>> EvaluateOneAsync(IAuditRule rule, AuditContext ctx, CancellationToken ct)
@@ -145,7 +145,7 @@ public class AuditRunner(ILlmService llm, FindingsService findings)
         return [new AuditVerdict(rule.Key, rule.Title, severity, parsed?.Evidence ?? "(evaluation failed)", null, parsed?.Fix)];
     }
 
-    static VerdictEnvelope? ParseVerdictEnvelope(string raw)
+    internal static VerdictEnvelope? ParseVerdictEnvelope(string raw)
     {
         try
         {
@@ -158,9 +158,9 @@ public class AuditRunner(ILlmService llm, FindingsService findings)
         catch { return null; }
     }
 
-    static string Truncate(string s, int max) => s.Length <= max ? s : s[..max] + "…";
+    internal static string Truncate(string s, int max) => s.Length <= max ? s : s[..max] + "…";
 
-    class VerdictEnvelope
+    internal class VerdictEnvelope
     {
         [JsonPropertyName("status")]   public string? Status   { get; set; }
         [JsonPropertyName("evidence")] public string? Evidence { get; set; }
