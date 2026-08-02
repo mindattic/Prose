@@ -392,7 +392,7 @@ public class BookOutlineService
         var bestVote = voting.IndividualVotes.FirstOrDefault(v => !v.IsError && !string.IsNullOrWhiteSpace(v.Decision));
         if (bestVote == null) return outline;
 
-        var generated = ParseGenerated(bestVote.Decision, outline);
+        var generated = ParseGenerated(bestVote.Decision);
         if (generated == null) return outline;
 
         outline = MergeGenerated(outline, generated);
@@ -454,11 +454,11 @@ public class BookOutlineService
         return sb.ToString();
     }
 
-    private record GenChapter(int Number, string? Title, string? Pov, string? Body);
-    private record GenThread(string Name, string Description, int? PlantedNum, int? PaysOffNum);
-    private record GenOutline(string? Theme, string? Structure, List<GenChapter> Chapters, List<GenThread> Threads);
+    internal record GenChapter(int Number, string? Title, string? Pov, string? Body);
+    internal record GenThread(string Name, string Description, int? PlantedNum, int? PaysOffNum);
+    internal record GenOutline(string? Theme, string? Structure, List<GenChapter> Chapters, List<GenThread> Threads);
 
-    private static GenOutline? ParseGenerated(string answer, BookOutline existing)
+    internal static GenOutline? ParseGenerated(string answer)
     {
         var start = answer.IndexOf('{');
         var end = answer.LastIndexOf('}');
@@ -475,29 +475,42 @@ public class BookOutlineService
                 foreach (var c in chArr.EnumerateArray())
                 {
                     if (c.ValueKind != JsonValueKind.Object) continue;
-                    // Tolerate either the new "body" shape or the legacy structured shape —
-                    // older voters may still respond with short_synopsis / long_synopsis /
-                    // key_beats / opens_threads / closes_threads. Whatever we get, fold it
-                    // into one body string and let the editor surface that.
-                    string? body = c.TryGetProperty("body", out var b) ? b.GetString() : null;
-                    if (string.IsNullOrWhiteSpace(body))
+                    try
                     {
-                        var sb = new StringBuilder();
-                        if (c.TryGetProperty("long_synopsis",  out var l) && !string.IsNullOrWhiteSpace(l.GetString())) sb.AppendLine(l.GetString());
-                        else if (c.TryGetProperty("short_synopsis", out var s) && !string.IsNullOrWhiteSpace(s.GetString())) sb.AppendLine(s.GetString());
-                        var beats  = ReadStringArray(c, "key_beats");
-                        var opens  = ReadStringArray(c, "opens_threads");
-                        var closes = ReadStringArray(c, "closes_threads");
-                        if (beats.Count  > 0) sb.AppendLine("Beats: "  + string.Join(" | ", beats));
-                        if (opens.Count  > 0) sb.AppendLine("Opens: "  + string.Join("; ",  opens));
-                        if (closes.Count > 0) sb.AppendLine("Closes: " + string.Join("; ",  closes));
-                        body = sb.ToString().TrimEnd();
+                        // Tolerate either the new "body" shape or the legacy structured shape —
+                        // older voters may still respond with short_synopsis / long_synopsis /
+                        // key_beats / opens_threads / closes_threads. Whatever we get, fold it
+                        // into one body string and let the editor surface that.
+                        string? body = c.TryGetProperty("body", out var b) ? b.GetString() : null;
+                        if (string.IsNullOrWhiteSpace(body))
+                        {
+                            var sb = new StringBuilder();
+                            if (c.TryGetProperty("long_synopsis",  out var l) && !string.IsNullOrWhiteSpace(l.GetString())) sb.AppendLine(l.GetString());
+                            else if (c.TryGetProperty("short_synopsis", out var s) && !string.IsNullOrWhiteSpace(s.GetString())) sb.AppendLine(s.GetString());
+                            var beats  = ReadStringArray(c, "key_beats");
+                            var opens  = ReadStringArray(c, "opens_threads");
+                            var closes = ReadStringArray(c, "closes_threads");
+                            if (beats.Count  > 0) sb.AppendLine("Beats: "  + string.Join(" | ", beats));
+                            if (opens.Count  > 0) sb.AppendLine("Opens: "  + string.Join("; ",  opens));
+                            if (closes.Count > 0) sb.AppendLine("Closes: " + string.Join("; ",  closes));
+                            body = sb.ToString().TrimEnd();
+                        }
+                        // ValueKind-guarded: JsonElement.TryGetInt32 THROWS InvalidOperationException
+                        // on a non-Number token (e.g. a hallucinated "number": null) despite the
+                        // Try- name — ungated, one bad chapter would take the outer catch below and
+                        // discard the ENTIRE generated outline (same bug class fixed in
+                        // LogicSweepService/ChekhovAuditService/EmotionalDepthService this session).
+                        chapters.Add(new GenChapter(
+                            Number: c.TryGetProperty("number", out var n) && n.ValueKind == JsonValueKind.Number
+                                && n.TryGetInt32(out var ni) ? ni : 0,
+                            Title:  c.TryGetProperty("title", out var t) ? t.GetString() : null,
+                            Pov:    c.TryGetProperty("pov_character", out var p) ? p.GetString() : null,
+                            Body:   body));
                     }
-                    chapters.Add(new GenChapter(
-                        Number: c.TryGetProperty("number", out var n) && n.TryGetInt32(out var ni) ? ni : 0,
-                        Title:  c.TryGetProperty("title", out var t) ? t.GetString() : null,
-                        Pov:    c.TryGetProperty("pov_character", out var p) ? p.GetString() : null,
-                        Body:   body));
+                    catch
+                    {
+                        // Skip just this malformed chapter — not the whole outline.
+                    }
                 }
             }
             var threads = new List<GenThread>();
@@ -506,11 +519,20 @@ public class BookOutlineService
                 foreach (var t in thArr.EnumerateArray())
                 {
                     if (t.ValueKind != JsonValueKind.Object) continue;
-                    threads.Add(new GenThread(
-                        Name:        t.TryGetProperty("name", out var n) ? n.GetString() ?? "" : "",
-                        Description: t.TryGetProperty("description", out var d) ? d.GetString() ?? "" : "",
-                        PlantedNum:  t.TryGetProperty("planted_in_chapter_number", out var pl) && pl.TryGetInt32(out var pli) ? pli : null,
-                        PaysOffNum:  t.TryGetProperty("pays_off_in_chapter_number", out var po) && po.TryGetInt32(out var poi) ? poi : null));
+                    try
+                    {
+                        threads.Add(new GenThread(
+                            Name:        t.TryGetProperty("name", out var n) ? n.GetString() ?? "" : "",
+                            Description: t.TryGetProperty("description", out var d) ? d.GetString() ?? "" : "",
+                            PlantedNum:  t.TryGetProperty("planted_in_chapter_number", out var pl)
+                                && pl.ValueKind == JsonValueKind.Number && pl.TryGetInt32(out var pli) ? pli : null,
+                            PaysOffNum:  t.TryGetProperty("pays_off_in_chapter_number", out var po)
+                                && po.ValueKind == JsonValueKind.Number && po.TryGetInt32(out var poi) ? poi : null));
+                    }
+                    catch
+                    {
+                        // Skip just this malformed thread — not the whole outline.
+                    }
                 }
             }
             return new GenOutline(
