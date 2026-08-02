@@ -126,32 +126,7 @@ public class SuggestionEngineService
         try
         {
             var response = await llm.GenerateAsync(system, user, 0.7f, 1500, null, ct);
-            var json = ExtractJsonArray(response);
-            var arr = System.Text.Json.JsonDocument.Parse(json);
-
-            var suggestions = new List<BeatSuggestion>();
-            foreach (var item in arr.RootElement.EnumerateArray())
-            {
-                suggestions.Add(new BeatSuggestion
-                {
-                    Title = item.TryGetProperty("title", out var t) ? t.GetString() ?? "" : "",
-                    Description = item.TryGetProperty("description", out var d) ? d.GetString() ?? "" : "",
-                    Tone = item.TryGetProperty("tone", out var tn) ? tn.GetString() ?? "tense" : "tense",
-                    Tension = item.TryGetProperty("tension", out var te) ? te.GetInt32() : 5,
-                    CharactersInvolved = item.TryGetProperty("characters_involved", out var ci)
-                        ? ci.EnumerateArray().Select(e => e.GetString() ?? "").Where(s => s.Length > 0).ToList()
-                        : cast,
-                    SeedsResolved = item.TryGetProperty("seeds_resolved", out var sr)
-                        ? sr.EnumerateArray().Select(e => e.GetString() ?? "").Where(s => s.Length > 0).ToList()
-                        : [],
-                    NewSeeds = item.TryGetProperty("new_seeds", out var ns)
-                        ? ns.EnumerateArray().Select(e => e.GetString() ?? "").Where(s => s.Length > 0).ToList()
-                        : [],
-                    Rationale = item.TryGetProperty("rationale", out var r) ? r.GetString() ?? "" : "",
-                });
-            }
-
-            return suggestions;
+            return ParseSuggestions(response, cast);
         }
         catch
         {
@@ -188,6 +163,55 @@ public class SuggestionEngineService
         {
             return "";
         }
+    }
+
+    /// <summary>Parses the LLM's 2-3 suggested-next-beats response. Each item is parsed in its
+    /// own try/catch and the "tension" getter is ValueKind-guarded — JsonElement.GetInt32()
+    /// THROWS InvalidOperationException on a non-Number token (e.g. a hallucinated null), and
+    /// without these guards one malformed suggestion would discard every suggestion in the
+    /// response (same bug class fixed in several audit services this session).</summary>
+    internal static List<BeatSuggestion> ParseSuggestions(string response, List<string> cast)
+    {
+        var suggestions = new List<BeatSuggestion>();
+        try
+        {
+            var json = ExtractJsonArray(response);
+            var arr = System.Text.Json.JsonDocument.Parse(json);
+
+            foreach (var item in arr.RootElement.EnumerateArray())
+            {
+                try
+                {
+                    suggestions.Add(new BeatSuggestion
+                    {
+                        Title = item.TryGetProperty("title", out var t) ? t.GetString() ?? "" : "",
+                        Description = item.TryGetProperty("description", out var d) ? d.GetString() ?? "" : "",
+                        Tone = item.TryGetProperty("tone", out var tn) ? tn.GetString() ?? "tense" : "tense",
+                        Tension = item.TryGetProperty("tension", out var te) && te.ValueKind == System.Text.Json.JsonValueKind.Number
+                            ? te.GetInt32() : 5,
+                        CharactersInvolved = item.TryGetProperty("characters_involved", out var ci)
+                            ? ci.EnumerateArray().Select(e => e.GetString() ?? "").Where(s => s.Length > 0).ToList()
+                            : cast,
+                        SeedsResolved = item.TryGetProperty("seeds_resolved", out var sr)
+                            ? sr.EnumerateArray().Select(e => e.GetString() ?? "").Where(s => s.Length > 0).ToList()
+                            : [],
+                        NewSeeds = item.TryGetProperty("new_seeds", out var ns)
+                            ? ns.EnumerateArray().Select(e => e.GetString() ?? "").Where(s => s.Length > 0).ToList()
+                            : [],
+                        Rationale = item.TryGetProperty("rationale", out var r) ? r.GetString() ?? "" : "",
+                    });
+                }
+                catch
+                {
+                    // Skip just this malformed suggestion — not the whole list.
+                }
+            }
+        }
+        catch
+        {
+            // Malformed JSON entirely — return whatever (nothing) was parsed so far.
+        }
+        return suggestions;
     }
 
     private static string ExtractJsonArray(string text)
