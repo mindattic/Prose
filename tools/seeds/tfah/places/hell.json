@@ -1,0 +1,14 @@
+{
+  "type": "place",
+  "name": "Hell",
+  "aliases": [],
+  "description": "A bounded prison with literal gates, not an omnipresent constraint -- the mechanism by which Satan can physically leave lives here: Hell is walled by fire and guarded at its one gate by Sin and Death, who hold the key. This is the answer to 'why can Satan leave Hell' (docs/planning/TFAH-brief.md §9): it is a place with a door, not a metaphysical state with no exit.",
+  "power_structure": "Self-styled principality under Satan; infernal council of Beelzebub, Moloch, Belial, Mammon",
+  "notable_locations": [
+    {"name": "Pandemonium", "description": "Capital of Hell, built by Mulciber's design from ore Mammon's crews mine -- name is Milton's own coinage, literally 'all demons.'"},
+    {"name": "The Gates of Hell", "description": "The physical exit, guarded by Sin and Death."},
+    {"name": "The Burning Lake", "description": "Where the fallen angels first land after their nine-day fall from Heaven."}
+  ],
+  "story_hooks": ["The infernal council debate (Book II)", "Satan's departure through the gate (Book II)"],
+  "tags": ["GSPL", "TFAH", "infernal-realm"]
+}

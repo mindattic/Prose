@@ -1,0 +1,13 @@
+{
+  "type": "character",
+  "name": "John Milton",
+  "aliases": [],
+  "species": "human",
+  "role": "The real historical author; blind, dictating this account in Restoration London under real personal risk -- the book's framing/interstitial figure, not a Paradise Lost character",
+  "status": "deceased",
+  "location": "Restoration London (historical, 1608-1674)",
+  "affiliation": "Formerly Secretary for Foreign Tongues (Latin Secretary) to Cromwell's Commonwealth; politically disgraced ex-revolutionary under the restored monarchy",
+  "description": "Fully verified historical biography, see docs/milton/milton-biography.md. Born 1608, Cambridge-educated; wrote Areopagitica (1644) against licensing/censorship; defended Charles I's execution in print (The Tenure of Kings and Magistrates, 1649) and served as Cromwell's Latin Secretary. Went completely blind by 1652 (probable glaucoma, unconfirmed). After the 1660 Restoration his books were burned by royal proclamation and he was briefly imprisoned; Andrew Marvell's intercession is the best-attested reason he survived (the popular 'Davenant saved him' story is contested, likely reversed). Composed Paradise Lost (1658-1663) by dictation to his daughters (Anne, Mary, Deborah) and paid amanuenses -- the poem's own 'celestial patroness' nightly-visitation imagery (Books 1,3,7,9) is his own poetic self-mythology, not an externally verified claim. Published 1667 (10 books) for a contract worth roughly £10 total across all royalty thresholds; 1674 second edition reorganized into 12 books. His private theological treatise De Doctrina Christiana (unpublished in his lifetime; manuscript discovered 1823, published 1825) reveals him privately far more heterodox (Arian, mortalist, Arminian-eclectic) than anything he published.",
+  "narrative_function": "Frame-narrative figure for the 'Blind Poet' interstitials proposed in docs/planning/TFAH-brief.md §9 -- bridges each retold chapter back to the real, documented circumstances of its composition and sourcing.",
+  "tags": ["historical-figure", "framing-device", "GSPL", "TFAH"]
+}

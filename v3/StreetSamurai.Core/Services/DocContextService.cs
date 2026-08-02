@@ -176,10 +176,7 @@ public sealed class DocContextService(
         Guid? povDocId = null;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            code = await db.Nodes.AsNoTracking()
-                .Where(s => s.Id == nodeId)
-                .Select(s => s.NodeCode)
-                .FirstOrDefaultAsync(ct) ?? "";
+            code = await ResolveEffectiveNodeCodeAsync(db, nodeId, ct);
 
             if (povEntityId is { } pov && entityDocs != null)
             {
@@ -335,6 +332,40 @@ public sealed class DocContextService(
         }
 
         return keys;
+    }
+
+    /// <summary>
+    /// Resolves the NodeCode that scopes this node's "node" tier doc match (the book's one bible +
+    /// one register, per <see cref="PrepareContextAsync"/> §2). SS-A43 book+chapter books set
+    /// NodeCode ONLY on the book-level node (docs/GSPL.md §5a — chapters never carry one), but
+    /// beats live on chapter children. Without this ancestor walk, a chapter node's own NodeCode is
+    /// always empty, <see cref="ScopeMatches"/> requires a non-empty code and always returns false,
+    /// and the "node" tier — the book's own bible/voice register — never matches for ANY beat
+    /// generated on a chapter, in any universe. Same technique <see cref="ResolveSeriesScopeKeysAsync"/>
+    /// already uses for series-tier ancestor resolution, applied here to the node tier.
+    /// </summary>
+    private static async Task<string> ResolveEffectiveNodeCodeAsync(
+        StreetSamuraiDbContext db, Guid nodeId, CancellationToken ct)
+    {
+        var current = await db.Nodes.AsNoTracking()
+            .Where(n => n.Id == nodeId)
+            .Select(n => new { n.NodeCode, n.ParentNodeId })
+            .FirstOrDefaultAsync(ct);
+        if (current == null) return "";
+        if (!string.IsNullOrWhiteSpace(current.NodeCode)) return current.NodeCode;
+
+        var parentId = current.ParentNodeId;
+        for (var depth = 0; depth < 5 && parentId is { } pid; depth++)
+        {
+            var parent = await db.Nodes.AsNoTracking()
+                .Where(n => n.Id == pid)
+                .Select(n => new { n.NodeCode, n.ParentNodeId })
+                .FirstOrDefaultAsync(ct);
+            if (parent == null) break;
+            if (!string.IsNullOrWhiteSpace(parent.NodeCode)) return parent.NodeCode;
+            parentId = parent.ParentNodeId;
+        }
+        return "";
     }
 
     private static bool ScopeMatches(string scope, string code)

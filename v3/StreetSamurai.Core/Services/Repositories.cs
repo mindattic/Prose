@@ -152,19 +152,28 @@ public class CharacterRepository : EfRepository<CharacterData>
                 Name = name,
                 Slug = ResolveCharacterSlug(db, name, id, currentSlug: null),
                 Status = "canon",
+                Description = item.Description,
                 CreatedAt = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name = name;
-            existingEntity.Slug = ResolveCharacterSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            // Description lives on CharacterData/Characters as the source of truth, but
+            // Entity.Description is the field SceneContextAssembler.FormatCharacterAsync
+            // actually reads for live prose-generation context — without this sync it silently
+            // stays null/stale forever and a character's description never reaches generated
+            // prose no matter how carefully it's written on the Character record. Confirmed via
+            // a real incident: every TFAH-book character had a populated Characters.Description
+            // but a null Entities.Description, so none of it had ever reached the DCM pipeline.
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveCharacterSlug(db, name, id, existingEntity.Slug);
+            }
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 

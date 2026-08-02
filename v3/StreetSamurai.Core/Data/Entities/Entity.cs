@@ -54,6 +54,23 @@ public class Entity
     /// so the LLM never generates a grammatically wrong construction for this entity.</summary>
     public string? GrammarNote { get; set; }
 
+    /// <summary>
+    /// The book or series Node this entity instance is scoped to, when it is NOT a
+    /// universe-wide shared entity. Null = shared/canonical across the whole universe (the
+    /// default/legacy behavior — e.g. GLMZ's Kyle, reused by every story). Set = this entity is
+    /// specific to one book's own continuity and must not be confused with another entity of the
+    /// same Name in a different book context.
+    ///
+    /// Exists to disambiguate genuinely different entities that happen to share a Name within
+    /// one Universe — e.g. GSPL's historical/citation-grounded "Raphael" (the Gospel books'
+    /// research entry, OriginNodeId = null, universe-wide) versus EPIC's literary-fictional
+    /// "Raphael" (Milton's character in TFAH, OriginNodeId = TFAH's BookNode.Id). Before this
+    /// field existed, <c>SceneContextAssembler.GetNameIndexAsync</c> silently resolved same-name
+    /// collisions to whichever row the query happened to enumerate first — see
+    /// <see cref="Services.EntityDisambiguationService"/>, which is the actual resolver.
+    /// </summary>
+    public Guid? OriginNodeId { get; set; }
+
     // Navigation
     public ICollection<EntityProperty> Properties { get; set; } = new List<EntityProperty>();
     public ICollection<EntityTaxonomy> Taxonomies { get; set; } = new List<EntityTaxonomy>();

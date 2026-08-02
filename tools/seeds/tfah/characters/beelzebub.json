@@ -1,0 +1,13 @@
+{
+  "type": "character",
+  "name": "Beelzebub",
+  "aliases": ["Baal-zebub"],
+  "species": "unknown",
+  "role": "Satan's second-in-command",
+  "status": "alive",
+  "location": "Hell",
+  "affiliation": "Hell",
+  "description": "Category A: name origin 2 Kings 1:2-3,6,16 (\"Baal-zebub, the god of Ekron\" -- Philistine deity consulted by King Ahaziah; the name likely means 'lord of the flies,' possibly a mocking corruption of 'Baal-zebul,' lord of the [heavenly] dwelling). By the Gospels the name has migrated to mean chief of demons (Matthew 12:24). Milton's elaborate characterization as Satan's chief lieutenant and orator in the infernal council (Book II) is Miltonic invention (D) built on a one-line biblical name. See docs/milton/character-catalog.md §II.",
+  "narrative_function": "Satan's closest ally, first roused from the burning lake, presents Satan's plan to the infernal council.",
+  "tags": ["fallen-angel", "category-A+D", "GSPL", "TFAH"]
+}

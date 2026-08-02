@@ -1,0 +1,13 @@
+{
+  "type": "character",
+  "name": "Mulciber",
+  "aliases": ["fallen Vulcan", "fallen Hephaestus"],
+  "species": "unknown",
+  "role": "Architect of Pandemonium",
+  "status": "alive",
+  "location": "Hell",
+  "affiliation": "Hell",
+  "description": "Category C, classical borrowing: Milton's name for the fallen Vulcan/Hephaestus, the Greek/Roman fire-and-forge god. Milton explicitly identifies him with the classical architect-god who 'fell from Heaven' -- echoing Hephaestus's mythic fall from Olympus -- and was later worshipped as Vulcan/Mulciber. Not biblical at all. See docs/milton/character-catalog.md §II.",
+  "narrative_function": "Designs and builds Pandemonium from the gold Mammon's crews mine -- keep distinct from Mammon in prose; popular shorthand conflates the two roles.",
+  "tags": ["fallen-angel", "category-C", "GSPL", "TFAH"]
+}

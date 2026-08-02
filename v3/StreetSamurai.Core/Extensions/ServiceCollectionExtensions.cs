@@ -431,6 +431,7 @@ public static class ServiceCollectionExtensions
         // X-Ray scene assembly (RFC 0002): entity roster + voice/psychology context
         // block for the entities present in a beat. Complements SceneContextBuilder
         // (ambient texture) — this one carries WHO is on screen and how they speak.
+        services.AddSingleton<EntityDisambiguationService>();
         services.AddSingleton<SceneContextAssembler>();
         services.AddSingleton<WoundLedgerService>();
 
@@ -722,6 +723,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.ClickButtonTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.CheckCheckboxTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.GetPageStatusTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SyncSubtitleTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.MarkPublishedTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.LogNoteTool>();
         services.AddSingleton<Services.Operator.KdpToolRegistry>();

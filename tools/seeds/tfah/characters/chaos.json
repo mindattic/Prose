@@ -1,0 +1,13 @@
+{
+  "type": "character",
+  "name": "Chaos",
+  "aliases": ["Old Chaos"],
+  "species": "unknown",
+  "role": "Ruler of the primordial void between Hell and the created universe",
+  "status": "alive",
+  "location": "The Abyss",
+  "affiliation": "Neutral / the Abyss",
+  "description": "Category C, essentially non-biblical. Draws overwhelmingly on Hesiod's Theogony, where Chaos is the first thing to exist. Genesis 1:2 ('the earth was without form, and void') gives Milton only the barest hint of a pre-creation formless state; the elaborate personified mythology of Chaos as a ruling deity with a court (also naming Orcus, Ades/Hades, Demogorgon in passing) is classical borrowing, not biblical content. See docs/milton/character-catalog.md §III.",
+  "narrative_function": "Grants Satan passage through the Abyss toward the newly created World -- the geography Satan must cross to reach Eden.",
+  "tags": ["cosmic-entity", "category-C", "GSPL", "TFAH"]
+}

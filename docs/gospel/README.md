@@ -2,18 +2,19 @@
 
 ## What this is
 
-**Gospel (GSPL)** is StreetSamurai's 3rd Universe (registered in `dbo.Universe`, slug `gspl`,
-alongside GLMZ and SCRY) — a real, DB-backed universe using the same `Nodes`/`Beats`/
-`BeatNodes` schema, sharing the prose-generation pipeline. It differs from GLMZ/SCRY only in
-subject matter (the real world, not an invented one) and in an added craft discipline: every
-factual claim in finished prose must be citation-grounded — see
-[`../GSPL.md`](../GSPL.md) for the Universe-layer craft rules this enforces (the DCM hierarchy's
-tier-2 layer, same role `GLMZ.md`/`SCRY.md` play for their universes).
+**Gospel** is one production line within **SOURCE** (formerly GSPL — renamed 2026-08-02 once the
+universe's scope proved broader than the Gospels alone; registered in `dbo.Universe`, slug
+`source`, alongside GLMZ, SCRY, and EPIC) — a real, DB-backed universe using the same
+`Nodes`/`Beats`/`BeatNodes` schema, sharing the prose-generation pipeline. It differs from
+GLMZ/SCRY/EPIC only in subject matter (the real world, not an invented one) and in an added craft
+discipline: every factual claim in finished prose must be citation-grounded — see
+[`../SOURCE.md`](../SOURCE.md) for the Universe-layer craft rules this enforces (the DCM
+hierarchy's tier-2 layer, same role `GLMZ.md`/`SCRY.md` play for their universes).
 
 The research documents in this directory (this file's Topics/campaign sections below) are the
-**grounding material** GSPL prose is written from — the same role a `NodeBible` or entity doc
-plays for fiction — not the finished, reader-facing deliverable. A finished GSPL beat is prose,
-citation-numbered per `docs/GSPL.md` §1a; the Scriptural-Claim/Spectrum/Gap-Table documents here
+**grounding material** Gospel prose is written from — the same role a `NodeBible` or entity doc
+plays for fiction — not the finished, reader-facing deliverable. A finished Gospel beat is prose,
+citation-numbered per `docs/SOURCE.md` §1a; the Scriptural-Claim/Spectrum/Gap-Table documents here
 are the research substrate underneath it.
 
 **The subject:** a topic-by-topic reexamination of the Abrahamic scriptural record against the

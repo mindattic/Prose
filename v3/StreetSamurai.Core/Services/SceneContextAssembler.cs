@@ -42,6 +42,7 @@ public class SceneContextAssembler(
     Interfaces.ILlmService llm,
     FindingsService findings,
     WoundLedgerService wounds,
+    EntityDisambiguationService disambiguation,
     ILogger<SceneContextAssembler> log)
 {
     private bool schemaEnsured;
@@ -109,7 +110,9 @@ public class SceneContextAssembler(
         var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
         if (beat == null || string.IsNullOrWhiteSpace(beat.Text) || beat.Text.Length < 120) return 0;
 
-        var ctx = await AssembleAsync(beat.Text, tokenBudget: 600, ct);
+        var ownerNodeId = await db.BeatNodes.AsNoTracking()
+            .Where(bn => bn.BeatId == beatId).Select(bn => (Guid?)bn.NodeId).FirstOrDefaultAsync(ct);
+        var ctx = await AssembleAsync(beat.Text, tokenBudget: 600, ct, ownerNodeId);
         var named = ctx.Roster.Where(r => r.MatchSource == "name").Take(6).ToList();
         if (named.Count == 0) return 0;
 
@@ -167,8 +170,10 @@ public class SceneContextAssembler(
     private static readonly HashSet<string> ExcludedTypes =
         new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat" };
 
-    // name → (entityId, canonicalName, entityType, singleToken). Built once, refreshed lazily.
-    private Dictionary<string, (Guid Id, string Name, string Type, bool SingleToken)>? nameIndex;
+    // name → all entities sharing that Name (usually exactly one). Built once, refreshed lazily,
+    // universe-wide (not per-book) — same-name collisions across different books' entities (see
+    // EntityDisambiguationService) are resolved per-call in ResolveIndexForContext, not here.
+    private Dictionary<string, List<(Guid Id, string Name, string Type, bool SingleToken, Guid? OriginNodeId)>>? nameIndex;
     private DateTime nameIndexBuiltAt;
     private int nameIndexBuiltEpoch = -1;
     private static readonly TimeSpan NameIndexTtl = TimeSpan.FromMinutes(10);
@@ -198,7 +203,9 @@ public class SceneContextAssembler(
             ? Math.Max(tokenBudget - scienceBlock.Length / CharsPerToken, 200)
             : tokenBudget;
 
-        var ctx = await AssembleAsync(beat.Text ?? "", effectiveBudget, ct);
+        var ownerNodeId = await db.BeatNodes.AsNoTracking()
+            .Where(bn => bn.BeatId == beatId).Select(bn => (Guid?)bn.NodeId).FirstOrDefaultAsync(ct);
+        var ctx = await AssembleAsync(beat.Text ?? "", effectiveBudget, ct, ownerNodeId);
         if (scienceBlock.Length == 0) return ctx;
 
         return new SceneContext
@@ -251,9 +258,21 @@ public class SceneContextAssembler(
     }
 
     /// <summary>Assemble the scene context for arbitrary prose text.</summary>
-    public async Task<SceneContext> AssembleAsync(string proseText, int tokenBudget = 2000, CancellationToken ct = default)
+    /// <param name="contextNodeId">
+    /// The current beat/scene's owning Node (chapter, typically), when known. Used only to
+    /// disambiguate a Name that collides across more than one entity (see
+    /// <see cref="EntityDisambiguationService"/>) — omit for callers with no book context
+    /// (e.g. an ad-hoc text snippet not tied to any node), which falls back to universe-wide
+    /// (OriginNodeId == null) entities for any colliding name. Kept as the LAST parameter
+    /// (after <paramref name="ct"/>) specifically so every pre-existing positional call site
+    /// (<c>AssembleAsync(text, tokenBudget: N, ct)</c>) keeps binding <c>ct</c> to the
+    /// CancellationToken slot unchanged — only callers that want disambiguation need to pass
+    /// this one by name.
+    /// </param>
+    public async Task<SceneContext> AssembleAsync(string proseText, int tokenBudget = 2000, CancellationToken ct = default, Guid? contextNodeId = null)
     {
-        var index = await GetNameIndexAsync(ct);
+        var rawIndex = await GetNameIndexAsync(ct);
+        var index = await ResolveIndexForContextAsync(rawIndex, contextNodeId, ct);
 
         // 1 — name/alias scan (the lorebook trigger).
         var matched = new Dictionary<Guid, SceneEntityRef>();
@@ -358,7 +377,7 @@ public class SceneContextAssembler(
             || (tokens.Length == 2 && tokens[0].ToLowerInvariant() is "the" or "a" or "an");
     }
 
-    private async Task<Dictionary<string, (Guid, string, string, bool)>> GetNameIndexAsync(CancellationToken ct)
+    private async Task<Dictionary<string, List<(Guid Id, string Name, string Type, bool SingleToken, Guid? OriginNodeId)>>> GetNameIndexAsync(CancellationToken ct)
     {
         // Universe-switch invalidation (mirrors WorldGraphService's builtEpoch pattern): a
         // process that switches universe mid-run (CLI --universe, MCP switch_universe, the
@@ -373,16 +392,25 @@ public class SceneContextAssembler(
             if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
                 return nameIndex;
 
-            var idx = new Dictionary<string, (Guid, string, string, bool)>(StringComparer.Ordinal);
+            // List-valued (not TryAdd-first-wins): two entities CAN legitimately share a Name
+            // within one Universe — e.g. a historical/citation-grounded research entry and a
+            // literary-fictional character of the same name, scoped to different books via
+            // OriginNodeId. Collecting every candidate here and resolving per-call (see
+            // ResolveIndexForContext) is what makes that distinction real instead of a coin flip.
+            var idx = new Dictionary<string, List<(Guid, string, string, bool, Guid?)>>(StringComparer.Ordinal);
             await using var db = await dbFactory.CreateDbContextAsync(ct);
 
             var entities = await db.Set<Entity>().AsNoTracking()
                 .Where(e => e.IsActive && e.Status != "archived" && e.Name.Length >= 3)
-                .Select(e => new { e.Id, e.Name, e.EntityType })
+                .Select(e => new { e.Id, e.Name, e.EntityType, e.OriginNodeId })
                 .ToListAsync(ct);
             foreach (var e in entities)
                 if (!ExcludedTypes.Contains(e.EntityType) && !e.Name.StartsWith('('))
-                    idx.TryAdd(e.Name, (e.Id, e.Name, e.EntityType, RequiresStrictCase(e.Name)));
+                {
+                    if (!idx.TryGetValue(e.Name, out var list))
+                        idx[e.Name] = list = new();
+                    list.Add((e.Id, e.Name, e.EntityType, RequiresStrictCase(e.Name), e.OriginNodeId));
+                }
 
             // character aliases ("Pixel" for a character whose canonical name differs, etc.).
             // Character/CharacterAlias carry no UniverseId of their own (Character.Id IS the
@@ -391,7 +419,8 @@ public class SceneContextAssembler(
             // ambient universe via Entity's HasQueryFilter) instead of trusting Character/
             // CharacterAlias directly — otherwise a GLMZ/SCRY character's alias leaks into a
             // GSPL (or any other universe's) name-scan regardless of which universe is active.
-            var entityIds = entities.Select(e => e.Id).ToHashSet();
+            var entityById = entities.ToDictionary(e => e.Id);
+            var entityIds = entityById.Keys.ToHashSet();
             var aliases = await db.Set<CharacterAlias>().AsNoTracking()
                 .Where(a => a.Value.Length >= 3)
                 .Select(a => new { a.CharacterId, a.Value })
@@ -401,7 +430,11 @@ public class SceneContextAssembler(
                 .ToDictionaryAsync(c => c.Id, c => c.Name, ct);
             foreach (var a in aliases)
                 if (entityIds.Contains(a.CharacterId) && characterNames.TryGetValue(a.CharacterId, out var canonical))
-                    idx.TryAdd(a.Value, (a.CharacterId, canonical, "character", RequiresStrictCase(a.Value)));
+                {
+                    if (!idx.TryGetValue(a.Value, out var list))
+                        idx[a.Value] = list = new();
+                    list.Add((a.CharacterId, canonical, "character", RequiresStrictCase(a.Value), entityById[a.CharacterId].OriginNodeId));
+                }
 
             nameIndex = idx;
             nameIndexBuiltAt = DateTime.UtcNow;
@@ -410,6 +443,32 @@ public class SceneContextAssembler(
             return idx;
         }
         finally { indexLock.Release(); }
+    }
+
+    /// <summary>
+    /// Collapses the raw (possibly multi-candidate) name index into the single-candidate shape
+    /// <see cref="ScanNames"/> expects, resolving any same-name collisions via
+    /// <see cref="EntityDisambiguationService"/> against the current scene's book/series context.
+    /// Cheap: only names with more than one candidate ever call the disambiguation service.
+    /// </summary>
+    private async Task<Dictionary<string, (Guid Id, string Name, string Type, bool SingleToken)>> ResolveIndexForContextAsync(
+        Dictionary<string, List<(Guid Id, string Name, string Type, bool SingleToken, Guid? OriginNodeId)>> rawIndex,
+        Guid? contextNodeId,
+        CancellationToken ct)
+    {
+        Guid? contextBookId = null;
+        if (contextNodeId is { } cid)
+            contextBookId = await disambiguation.ResolveNearestBookOrSeriesNodeIdAsync(cid, ct);
+
+        var resolved = new Dictionary<string, (Guid, string, string, bool)>(rawIndex.Count, StringComparer.Ordinal);
+        foreach (var (name, candidates) in rawIndex)
+        {
+            var best = candidates.Count == 1
+                ? candidates[0]
+                : disambiguation.ResolveBestMatch(candidates, c => c.OriginNodeId, contextBookId, name);
+            resolved[name] = (best.Id, best.Name, best.Type, best.SingleToken);
+        }
+        return resolved;
     }
 
     // ── pass 4: per-type formatters + budget ───────────────────────────────────

@@ -1,0 +1,13 @@
+{
+  "type": "character",
+  "name": "Adam",
+  "aliases": [],
+  "species": "human",
+  "role": "TFAH literary character (Milton's Paradise Lost) -- the first man. DISTINCT from the historical/scriptural Gospel-book Adam entity (same universe, different book context, e.g. Luke's genealogy).",
+  "status": "alive",
+  "location": "Eden",
+  "affiliation": "Eden",
+  "description": "TFAH literary character, distinct from the Gospel-book Adam (referenced in Luke's genealogy). Category A (the facts) + D (nearly everything else) -- Genesis 1:26-31/2:7-25 gives only the bare facts; virtually all of Milton's Adam (courtship, conversations with Raphael, grief and reconciliation after the Fall) is Miltonic invention. See docs/milton/character-catalog.md §VI.",
+  "narrative_function": "Eats the fruit out of solidarity with Eve; receives Michael's vision of future history (Books XI-XII).",
+  "tags": ["human", "category-A+D", "GSPL", "TFAH", "literary-fiction", "milton-paradise-lost"]
+}
