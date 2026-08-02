@@ -99,23 +99,19 @@ Output STRICT JSON, no fences, no commentary:
             {
                 var raw = await llm.GenerateAsync(system, sb.ToString(), temperature: 0.3,
                     maxTokens: 1500, model: LlmModels.Sonnet, ct: ct);
-                using var doc = JsonDocument.Parse(StripFences(raw));
-                if (!doc.RootElement.TryGetProperty("items", out var arr)) { failed += batch.Count; continue; }
+                var meanings = ParseMeaningBatch(raw, refMap);
+                if (meanings.Count == 0) { failed += batch.Count; continue; }
 
                 // Reload tracked beats for this batch and update
                 var ids = batch.Select(b => b.Id).ToList();
                 var tracked = await db.Beats.Where(b => ids.Contains(b.Id)).ToListAsync(ct);
                 var trackedById = tracked.ToDictionary(b => b.Id);
 
-                foreach (var el in arr.EnumerateArray())
+                foreach (var (beatId, meaning) in meanings)
                 {
-                    if (!el.TryGetProperty("ref", out var refEl)) continue;
-                    var meaning = el.TryGetProperty("meaning", out var m) ? m.GetString() : null;
-                    if (string.IsNullOrWhiteSpace(meaning)) continue;
-                    if (!refMap.TryGetValue(refEl.GetInt32(), out var beatId)) continue;
                     if (trackedById.TryGetValue(beatId, out var beat))
                     {
-                        if (!dryRun) beat.Description = meaning.Trim();
+                        if (!dryRun) beat.Description = meaning;
                         filled++;
                     }
                 }
@@ -132,6 +128,45 @@ Output STRICT JSON, no fences, no commentary:
         }
 
         return new MeaningBackfillReport(nodeCode, missing.Count, filled, failed);
+    }
+
+    /// <summary>Parses one LLM batch response into (BeatId, Meaning) pairs, keyed back to real
+    /// beats via refMap. Each "items" entry is parsed in its own try/catch and its "ref" getter
+    /// is ValueKind-guarded — JsonElement.GetInt32() THROWS InvalidOperationException on a
+    /// non-Number token (e.g. a hallucinated "ref": null), and without these guards one
+    /// malformed entry would discard every meaning in the WHOLE batch (same bug class fixed in
+    /// LogicSweepService/ChekhovAuditService/EmotionalDepthService/BookOutlineService/
+    /// BeatVerdictService this session).</summary>
+    internal static List<(Guid BeatId, string Meaning)> ParseMeaningBatch(
+        string raw, IReadOnlyDictionary<int, Guid> refMap)
+    {
+        var results = new List<(Guid, string)>();
+        try
+        {
+            using var doc = JsonDocument.Parse(StripFences(raw));
+            if (!doc.RootElement.TryGetProperty("items", out var arr)) return results;
+
+            foreach (var el in arr.EnumerateArray())
+            {
+                try
+                {
+                    if (!el.TryGetProperty("ref", out var refEl) || refEl.ValueKind != JsonValueKind.Number) continue;
+                    var meaning = el.TryGetProperty("meaning", out var m) ? m.GetString() : null;
+                    if (string.IsNullOrWhiteSpace(meaning)) continue;
+                    if (!refMap.TryGetValue(refEl.GetInt32(), out var beatId)) continue;
+                    results.Add((beatId, meaning.Trim()));
+                }
+                catch
+                {
+                    // Skip just this malformed "items" entry — not the whole batch.
+                }
+            }
+        }
+        catch
+        {
+            // Malformed JSON entirely — return whatever (nothing) was parsed so far.
+        }
+        return results;
     }
 
     private static string StripFences(string s)
