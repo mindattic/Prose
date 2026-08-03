@@ -95,6 +95,21 @@ public class MarkdownFileService
             if (Directory.Exists(universesDir))
                 foreach (var f in Directory.EnumerateFiles(universesDir, "*.md"))
                     yield return new(f, "project", ToRelative(projectRoot, f), "universe-facts");
+
+            // docs/series/*.md — cross-book arc boards. These were never discovered, so they had
+            // no MarkdownFiles row at all — which made ClassifyFile's `docs/series/` branch (and
+            // with it the entire `series` tier for hand-authored docs) unreachable dead code.
+            var seriesDir = Path.Combine(docsDir, "series");
+            if (Directory.Exists(seriesDir))
+                foreach (var f in Directory.EnumerateFiles(seriesDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "series");
+
+            // docs/gospel/*.md — SOURCE-universe research notes. Undiscovered until now, which is
+            // why docs/SOURCE.md's `related: docs/gospel/README.md` silently resolved to nothing.
+            var gospelDir = Path.Combine(docsDir, "gospel");
+            if (Directory.Exists(gospelDir))
+                foreach (var f in Directory.EnumerateFiles(gospelDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "gospel");
         }
 
         // Claude Code project memory files
@@ -208,7 +223,7 @@ public class MarkdownFileService
         // Resolve raw `related:` relative paths → MarkdownFile.Id GUIDs now that all files are in the DB.
         if (!dryRun && rawRelatedMap.Count > 0)
         {
-            try { await ResolveRelatedIdsAsync(db, rawRelatedMap, ct); }
+            try { errors.AddRange(await ResolveRelatedIdsAsync(db, rawRelatedMap, ct)); }
             catch (Exception ex) { errors.Add($"related-resolution: {ex.Message}"); }
         }
 
@@ -731,11 +746,21 @@ public class MarkdownFileService
     /// resolve the raw relative-path CSV into a CSV of <see cref="MarkdownFile.Id"/> GUIDs.
     /// Project files take precedence when a path exists in multiple roots.
     /// </summary>
-    private static async Task ResolveRelatedIdsAsync(
+    /// <remarks>
+    /// Returns one message per <c>related:</c> path that did not resolve. These used to be
+    /// discarded by a bare <c>.Where(id =&gt; id != null)</c> with no log, so a link that pointed at
+    /// an undiscovered folder or a renamed file simply stopped existing — the declaring doc kept
+    /// working, its neighbour silently never cascaded, and nothing anywhere said so. (Live example
+    /// before this change: <c>docs/SOURCE.md</c> declared
+    /// <c>related: docs/CRAFT.md, docs/gospel/README.md</c> and the second half was dropped,
+    /// because <c>docs/gospel</c> was never enumerated by <see cref="DiscoverFiles"/>.)
+    /// </remarks>
+    private static async Task<List<string>> ResolveRelatedIdsAsync(
         StreetSamuraiDbContext db,
         Dictionary<(string fileRoot, string relPath), string> rawRelatedMap,
         CancellationToken ct)
     {
+        var unresolved = new List<string>();
         var allFiles = await db.MarkdownFiles.AsNoTracking()
             .Select(m => new { m.Id, m.RelativePath, m.FileRoot })
             .ToListAsync(ct);
@@ -755,11 +780,12 @@ public class MarkdownFileService
                 .FirstOrDefaultAsync(m => m.RelativePath == relPath && m.FileRoot == fileRoot, ct);
             if (row == null) continue;
 
-            var resolvedIds = rawRelated
-                .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                .Select(p => lookup.TryGetValue(p, out var id) ? id.ToString() : null)
-                .Where(id => id != null)
-                .ToList();
+            var resolvedIds = new List<string>();
+            foreach (var p in rawRelated.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+            {
+                if (lookup.TryGetValue(p, out var id)) resolvedIds.Add(id.ToString());
+                else unresolved.Add($"{relPath}: unresolved related: '{p}' (no MarkdownFiles row — is its folder discovered?)");
+            }
 
             var resolved = string.Join(", ", resolvedIds);
             if (row.RelatedIds != resolved)
@@ -768,6 +794,8 @@ public class MarkdownFileService
                 await db.SaveChangesAsync(ct);
             }
         }
+
+        return unresolved;
     }
 
     // ── Helpers ───────────────────────────────────────────────────────────

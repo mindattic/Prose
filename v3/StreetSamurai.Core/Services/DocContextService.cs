@@ -271,7 +271,15 @@ public sealed class DocContextService(
             var clip = StripFrontmatter(contentById.GetValueOrDefault(e.DocId, ""));
             if (clip.Length > perDocCap) clip = clip[..perDocCap].TrimEnd() + "…";
 
-            if (usedChars + clip.Length > budgetChars && loaded.Count > 0) break;
+            // `continue`, NOT `break`: one oversized doc must not drop everything behind it.
+            // With `break`, the first doc that didn't fit truncated the whole remainder of the
+            // block regardless of tier or score — so a node bible or a POV character's register
+            // could be resident in the stack and still never reach the prompt, purely because an
+            // unrelated doc ahead of it was large. Skipping just the doc that doesn't fit lets
+            // smaller lower-priority docs through and makes emission depend on size, not on
+            // position behind something big. (`loaded.Count > 0` keeps the original guarantee
+            // that at least one doc always emits, even if it alone exceeds the budget.)
+            if (usedChars + clip.Length > budgetChars && loaded.Count > 0) continue;
 
             if (e.Tier != lastTier)
             {

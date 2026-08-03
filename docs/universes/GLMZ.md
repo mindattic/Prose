@@ -2,6 +2,8 @@
 universe: glmz
 title: Great Lakes Metropolitan Zone — Universal World Facts
 layer: universe-facts
+tier: topic
+triggers: neuretics, the pulse, aeroblocs, aerostatic, quanta, credstick, corponation, lotus syndicate, hyper reality, nanotech, schism, automata, psionics, the read, gray zone, the low, eigenlift, the thread, splicer, channeler
 updated: 2026-07-04
 ---
 

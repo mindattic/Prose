@@ -100,14 +100,28 @@ public sealed class DocContextStack
                 state.Entries[id] = e with { LastTouchedAction = state.ActionCounter };
     }
 
-    /// <summary>Active docs ordered by tier (always → node → topic), then most-recently-touched, then score.</summary>
+    /// <summary>
+    /// Active docs ordered by tier (always → node → series → topic), then most-recently-touched,
+    /// then score, then path.
+    ///
+    /// The trailing <c>RelativePath</c> comparison is load-bearing, not cosmetic.
+    /// <see cref="ContextState.ActionCounter"/> advances once per <see cref="BeginAction"/>, not
+    /// per push — so EVERY doc pushed during a single PrepareContextAsync shares the same
+    /// <c>LastTouchedAction</c>. Without a final tiebreak, docs that also tie on tier and score
+    /// (e.g. two `always` docs both at 100) fell through to <see cref="ConcurrentDictionary"/>
+    /// bucket enumeration order, so two runs of the same beat could emit the same docs in a
+    /// different order. Now that BuildBlockAsync skips oversized docs instead of truncating at the
+    /// first one, order also decides which docs fit the budget — making that nondeterminism
+    /// visible in the prompt.
+    /// </summary>
     public IReadOnlyList<StackEntry> GetActive(Guid contextId)
     {
         if (!contexts.TryGetValue(contextId, out var state)) return [];
         return [.. state.Entries.Values
             .OrderBy(e => TierRank(e.Tier))
             .ThenByDescending(e => e.LastTouchedAction)
-            .ThenByDescending(e => e.Score)];
+            .ThenByDescending(e => e.Score)
+            .ThenBy(e => e.RelativePath, StringComparer.Ordinal)];
     }
 
     public void Clear(Guid contextId) => contexts.TryRemove(contextId, out _);
@@ -131,9 +145,23 @@ public sealed class DocContextStack
                 state.Entries.TryRemove(e.DocId, out _);
     }
 
+    /// <summary>
+    /// Drop the least-recently-touched non-pinned entry once capacity is exceeded.
+    ///
+    /// Ties on <c>LastTouchedAction</c> are the common case, not the rare one: every doc pushed
+    /// during one action shares the counter, so at capacity the whole non-pinned set usually ties
+    /// and the victim was whichever entry <see cref="ConcurrentDictionary"/> happened to enumerate
+    /// first. The <c>RelativePath</c> tiebreak makes the choice reproducible — the same beat
+    /// evicts the same doc every time, so a dropped doc is a bug that can be reproduced rather
+    /// than one that moves between runs.
+    /// </summary>
     private static void EvictLruTopic(ContextState state)
     {
-        var lru = state.Entries.Values.Where(e => !IsPinned(e)).MinBy(e => e.LastTouchedAction);
+        var lru = state.Entries.Values
+            .Where(e => !IsPinned(e))
+            .OrderBy(e => e.LastTouchedAction)
+            .ThenBy(e => e.RelativePath, StringComparer.Ordinal)
+            .FirstOrDefault();
         if (lru != null) state.Entries.TryRemove(lru.DocId, out _);
     }
 }
