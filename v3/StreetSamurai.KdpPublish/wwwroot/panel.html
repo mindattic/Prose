@@ -57,8 +57,8 @@
             }
 
             // Fixed universe ordering — anything not in this list (unexpected/new universe
-            // slugs) still renders, just sorted alphabetically after these three.
-            var UNIVERSE_ORDER = ['glmz', 'gspl', 'scry'];
+            // slugs) still renders, just sorted alphabetically after these four.
+            var UNIVERSE_ORDER = ['glmz', 'scry', 'source', 'epic'];
 
             function groupByUniverse(list) {
                 var groups = {};
@@ -107,8 +107,8 @@
 
                         var tdCode = document.createElement('td');
                         tdCode.className = 'ss-col-code';
-                        tdCode.title = e.title;
-                        tdCode.textContent = e.code;
+                        tdCode.title = e.title + (e.readyToPublish ? '' : ' — no .publish marker, will be skipped');
+                        tdCode.textContent = e.code + (e.readyToPublish ? '' : ' ⚠');
 
                         var tdVer = document.createElement('td');
                         tdVer.className = 'ss-col-version';
@@ -160,7 +160,13 @@
                     // longer exist — otherwise every post-publish status update would silently
                     // wipe the in-progress selection out from under the user.
                     if (!everLoaded) {
-                        selected = new Set(entries.filter(function (e) { return e.needsRepublish; }).map(function (e) { return e.code; }));
+                        // Default selection: anything outdated (existing behavior), plus anything
+                        // never published that's been signed off via its .publish marker — so a
+                        // ready-to-go new book (like a freshly-marked JOAN) is picked up without
+                        // the user having to hunt for it in a long per-universe list.
+                        selected = new Set(entries.filter(function (e) {
+                            return e.needsRepublish || (e.readyToPublish && e.publicationStatus !== 'Published');
+                        }).map(function (e) { return e.code; }));
                         everLoaded = true;
                     } else {
                         var validCodes = new Set(entries.map(function (e) { return e.code; }));

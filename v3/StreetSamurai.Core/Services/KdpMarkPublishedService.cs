@@ -14,7 +14,8 @@ public record KdpMarkPublishedResult(
     string? Title,
     DateTime? KdpPublishedAt,
     string? PublishUrl,
-    string? RecordedTitleId
+    string? RecordedTitleId,
+    string? Asin
 );
 
 /// <summary>
@@ -44,7 +45,7 @@ public class KdpMarkPublishedService
 
         var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug, ct);
         if (node == null)
-            return new KdpMarkPublishedResult(false, $"No node with slug '{slug}'.", null, null, null, null, null);
+            return new KdpMarkPublishedResult(false, $"No node with slug '{slug}'.", null, null, null, null, null, null);
 
         node.KdpPublishedAt = DateTime.UtcNow;
         node.PublicationStatus = "Published";
@@ -80,7 +81,7 @@ public class KdpMarkPublishedService
             recordedTitleId = titleId;
         }
 
-        return new KdpMarkPublishedResult(true, null, node.NodeCode ?? node.Slug, node.Title, node.KdpPublishedAt, node.PublishUrl, recordedTitleId);
+        return new KdpMarkPublishedResult(true, null, node.NodeCode ?? node.Slug, node.Title, node.KdpPublishedAt, node.PublishUrl, recordedTitleId, node.Asin);
     }
 
     /// <summary>

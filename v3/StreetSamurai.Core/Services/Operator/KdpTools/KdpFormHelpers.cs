@@ -27,9 +27,23 @@ internal static class KdpFormHelpers
     /// copy, because "quality check" isn't a substring of "processing"/"scanning"/etc. One
     /// pattern maintained in one place means a newly-discovered KDP status phrase only needs
     /// adding here to fix both the LLM's visibility into it AND the tick-refusal below.
+    ///
+    /// A bare "in progress" was removed 2026-08 after a confirmed live false-positive on the
+    /// new-listing Details page: KDP's own 3-step tracker (Details/Content/Pricing, each showing
+    /// "Complete" / "In Progress..." / "Not Started...") permanently labels whichever step you're
+    /// currently on "In Progress..." — that's a static UI chip, not a real processing signal, and
+    /// it blocked check_checkbox/click_button indefinitely on a page that was never actually busy.
+    /// "upload in progress" (the real, specific phrasing) still matches; the bare standalone
+    /// phrase no longer does.
+    ///
+    /// A trailing negative lookahead for "complete/finished/done" was added 2026-08 after a
+    /// second confirmed live false-positive on the new-listing Content page: KDP's OWN success
+    /// banner reads "File processing complete. Manuscript check complete." — which contains the
+    /// bare words "processing" and "check" and was blocking every subsequent step indefinitely
+    /// even though the banner is explicitly announcing completion, not describing ongoing work.
     /// </summary>
     public const string ProcessingWordsPattern =
-        "preparing|processing|converting|scanning|please wait|uploading|in progress|is not (yet )?ready|quality check|running.{0,20}check";
+        "(preparing|processing|converting|scanning|please wait|uploading|upload.{0,10}in progress|is not (yet )?ready|quality check|running.{0,20}check)(?!\\s*(is\\s+)?(complete|completed|finished|done|successfully))";
 
     /// <summary>Result of a checkbox-ticking attempt. <see cref="BlockedByProcessing"/> true means
     /// nothing was ticked because KDP's processing/quality-check banner was showing — the caller
@@ -92,24 +106,32 @@ internal static class KdpFormHelpers
         return new TickResult(matches, false, null);
     }
 
+    // Deliberately scoped-elements-only, no whole-page bodyText fallback, AND visible-only:
+    // confirmed live (2026-08) as the repeated root cause of a whole family of false-positive
+    // lockups on the new-listing flow — KDP's DOM keeps plenty of static help text, hidden
+    // banner templates, and permanent section headings that happen to CONTAIN these words
+    // without describing active work ("Kindle eBook Preview / Online Preview and Quality
+    // Check...", the 3-step tracker's "In Progress...", the manuscript success banner's own
+    // "File processing complete.", a hidden "A manuscript hasn't been uploaded yet" banner for a
+    // scenario that didn't apply). A whole-body scan or a hidden-element match catches all of
+    // that; a short, specifically-classed, actually-RENDERED status chip does not. Length-capped
+    // at 100 (not the old 300) for the same reason — a real status chip is a short phrase, not a
+    // paragraph of help text a wide net would also catch.
     private static string ProcessingCheckScript => $$"""
     (function() {
+        function isVisible(el) {
+            var r = el.getBoundingClientRect();
+            return r.width > 0 && r.height > 0;
+        }
         var processingWords = /{{ProcessingWordsPattern}}/i;
         var processingEls = Array.from(document.querySelectorAll(
             '[class*="status"], [class*="progress"], [class*="spinner"], [class*="loading"], [class*="processing"], [class*="preparing"]'
-        )).map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
-          .filter(function (t) { return t.length > 0 && t.length < 300; });
-        var bodyText = (document.body.innerText || '').replace(/\s+/g, ' ');
+        )).filter(isVisible)
+          .map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
+          .filter(function (t) { return t.length > 0 && t.length < 100; });
         var matches = Array.from(new Set(processingEls.filter(function (t) { return processingWords.test(t); })));
-        var isProcessing = matches.length > 0 || processingWords.test(bodyText);
+        var isProcessing = matches.length > 0;
         var indicator = matches[0] || null;
-        if (isProcessing && !indicator) {
-            var m = bodyText.match(processingWords);
-            if (m) {
-                var idx = m.index;
-                indicator = bodyText.slice(Math.max(0, idx - 40), idx + 60).trim();
-            }
-        }
         return JSON.stringify({ isProcessing: isProcessing, indicator: indicator });
     })()
     """;

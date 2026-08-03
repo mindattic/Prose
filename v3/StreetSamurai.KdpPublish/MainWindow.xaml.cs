@@ -186,6 +186,25 @@ public partial class MainWindow : Window
         foreach (var book in toRun)
         {
             if (runCts.IsCancellationRequested) break;
+
+            // Human-controlled gate: an empty .publish marker file in the book's export folder.
+            // Authoritative — refuse to process a book lacking it even if it was checked in the
+            // UI, so a full automated sweep can never touch something nobody signed off on.
+            if (!book.ReadyToPublish)
+            {
+                await PostLogAsync($"{book.Code}: skipped — no .publish marker in {book.FolderPath} (not signed off for publish).");
+                continue;
+            }
+
+            // Local cache fast-path: .publish already recorded this exact manuscript filename as
+            // successfully published — skip opening the browser at all rather than spending a
+            // whole run just to reach Content and discover the same thing three steps in.
+            if (book.UpToDateViaLocalMarker)
+            {
+                await PostLogAsync($"{book.Code}: skipped — .publish already shows \"{book.LocalPublishMarker?.File}\" published (current version on disk matches).");
+                continue;
+            }
+
             await PostLogAsync($"— {book.Code} — {book.Title} —");
             try
             {
@@ -229,7 +248,9 @@ public partial class MainWindow : Window
 
     private async Task PostLogAsync(string line)
     {
-        var jsArg = JsonSerializer.Serialize($"[{DateTime.Now:HH:mm:ss}] {line}");
+        var stamped = $"[{DateTime.Now:HH:mm:ss}] {line}";
+        Console.WriteLine(stamped);
+        var jsArg = JsonSerializer.Serialize(stamped);
         await ControlPanel.CoreWebView2.ExecuteScriptAsync($"window.ssPanel.onLog({jsArg})");
     }
 

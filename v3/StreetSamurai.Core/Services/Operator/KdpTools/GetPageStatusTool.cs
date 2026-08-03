@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.RegularExpressions;
 
 namespace StreetSamurai.Core.Services.Operator.KdpTools;
 
@@ -22,7 +23,10 @@ public class GetPageStatusTool : IKdpTool
         "moving to the next step. If isProcessing is true, do NOT proceed to check_checkbox — " +
         "the confirmation checkboxes are unreliable (or absent) until processing finishes; wait " +
         "and call get_page_status again instead. Call it again after a short pause if nothing " +
-        "conclusive shows up yet, rather than assuming success.";
+        "conclusive shows up yet, rather than assuming success. Also returns titleId, parsed " +
+        "from the current URL — populated once KDP has minted one for this listing (after the " +
+        "first successful Details save on a brand-new book, or immediately for one you opened " +
+        "via find_and_open_book); null before that. Remember it and pass it to mark_published.";
 
     public string ParametersJsonSchema => """{ "type": "object", "properties": {} }""";
 
@@ -33,35 +37,42 @@ public class GetPageStatusTool : IKdpTool
     // pattern maintained in one place (KdpFormHelpers) fixes both call sites at once.
     private static string Script => $$"""
     (function() {
+        // KDP's DOM keeps plenty of banner/status elements around HIDDEN (display:none, a
+        // collapsed accordion panel, a template for a scenario that doesn't apply this time) —
+        // textContent still reads them regardless of visibility. Confirmed live (2026-08) as the
+        // real root cause behind a whole family of false-positive lockups on the new-listing
+        // flow (a hidden "A manuscript hasn't been uploaded yet" banner reported on the Pricing
+        // page for a book whose manuscript WAS accepted; the 3-step tracker's permanent "In
+        // Progress..." chip; the "Kindle eBook Preview / Online Preview and Quality Check"
+        // section's own static heading). Filtering by actual rendered size catches all of these
+        // at once instead of chasing each specific phrase collision one at a time.
+        function isVisible(el) {
+            var r = el.getBoundingClientRect();
+            return r.width > 0 && r.height > 0;
+        }
+
         var banners = Array.from(document.querySelectorAll(
             '[class*="alert"], [class*="success"], [class*="error"], [class*="banner"], [role="alert"], [role="dialog"]'
-        )).map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
+        )).filter(isVisible)
+          .map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
           .filter(function (t) { return t.length > 0 && t.length < 400; });
         var uniqueBanners = Array.from(new Set(banners));
 
         // KDP shows a distinct "still working on it" status while the uploaded file is being
         // converted/scanned/quality-checked server-side, separate from the eventual success/error
-        // banner — this is NOT reliably in a [class*=alert]/[role=alert] element, so scan broadly:
-        // both status-shaped class names AND plain visible text containing the words KDP actually
-        // uses for this state. Confirmed necessary live: checking the confirmation checkboxes
-        // while this is still showing does not reliably stick.
+        // banner — this is NOT reliably in a [class*=alert]/[role=alert] element, so also scan
+        // short, specifically-classed status chips (visible ones only — see isVisible above).
+        // See KdpFormHelpers.ProcessingCheckScript's identical logic and remarks — kept in sync by
+        // hand since GetPageStatusTool surfaces this to the LLM directly rather than going through
+        // KdpFormHelpers.CheckIsProcessingAsync.
         var processingWords = /{{KdpFormHelpers.ProcessingWordsPattern}}/i;
         var processingEls = Array.from(document.querySelectorAll(
             '[class*="status"], [class*="progress"], [class*="spinner"], [class*="loading"], [class*="processing"], [class*="preparing"]'
-        )).map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
-          .filter(function (t) { return t.length > 0 && t.length < 300; });
-        var bodyText = (document.body.innerText || '').replace(/\s+/g, ' ');
+        )).filter(isVisible)
+          .map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
+          .filter(function (t) { return t.length > 0 && t.length < 100; });
         var processingMatches = Array.from(new Set(processingEls.filter(function (t) { return processingWords.test(t); })));
-        var isProcessing = processingMatches.length > 0 || processingWords.test(bodyText);
-        // If the only evidence is a raw body-text match (no specific element found), surface the
-        // matched snippet so the caller can see what triggered it instead of just a bare flag.
-        if (isProcessing && processingMatches.length === 0) {
-            var m = bodyText.match(processingWords);
-            if (m) {
-                var idx = m.index;
-                processingMatches.push(bodyText.slice(Math.max(0, idx - 40), idx + 60).trim());
-            }
-        }
+        var isProcessing = processingMatches.length > 0;
 
         var h1 = document.querySelector('h1, h2');
         return JSON.stringify({
@@ -76,5 +87,22 @@ public class GetPageStatusTool : IKdpTool
     """;
 
     public async Task<string> InvokeAsync(JsonElement args, KdpOperatorContext ctx, CancellationToken ct)
-        => await ctx.Browser.EvalAsync(Script, ct);
+    {
+        var result = await ctx.Browser.EvalAsync(Script, ct);
+        var titleId = ExtractTitleId(ctx.Browser.CurrentUrl);
+        if (titleId == null) return result;
+
+        using var doc = JsonDocument.Parse(result);
+        var merged = new Dictionary<string, object?>();
+        foreach (var prop in doc.RootElement.EnumerateObject())
+            merged[prop.Name] = JsonSerializer.Deserialize<object?>(prop.Value.GetRawText());
+        merged["titleId"] = titleId;
+        return JsonSerializer.Serialize(merged);
+    }
+
+    private static string? ExtractTitleId(string url)
+    {
+        var m = Regex.Match(url ?? "", @"/title-setup/kindle/([^/]+)/");
+        return m.Success && m.Groups[1].Value != "new" ? m.Groups[1].Value : null;
+    }
 }

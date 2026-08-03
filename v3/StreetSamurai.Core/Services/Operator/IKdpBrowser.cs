@@ -28,4 +28,13 @@ public interface IKdpBrowser
     /// role=checkbox component) specifically ignore synthetic/untrusted click events, so a
     /// genuinely dispatched input event is required to actually toggle their state.</summary>
     Task ClickAtPointAsync(double x, double y, CancellationToken ct);
+
+    /// <summary>Types <paramref name="text"/> as real, trusted keyboard input into whatever
+    /// element currently has focus, one character at a time via CDP's Input.dispatchKeyEvent —
+    /// distinct from setting an input's value via JS, which some KDP fields' auto-calculation
+    /// logic (e.g. deriving every international marketplace price from a typed US list price)
+    /// may be wired to genuine keystroke events rather than the value/input/change events a
+    /// synthetic property-setter dispatch produces. Caller must focus the target element first
+    /// (e.g. via a real click or element.focus()).</summary>
+    Task TypeTextAsync(string text, CancellationToken ct);
 }

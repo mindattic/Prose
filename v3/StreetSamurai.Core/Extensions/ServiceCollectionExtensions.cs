@@ -726,6 +726,17 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SyncSubtitleTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.MarkPublishedTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.LogNoteTool>();
+        // First-time-publish (new-listing) tools — a book with no ASIN/KdpTitleId yet.
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.CreateNewListingTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SetFieldTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SetDescriptionTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SelectFormOptionTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SelectCategoriesTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.EnterKeywordsTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.UploadCoverTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SetPriceTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SetAiDisclosureTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.CapturePublishedAsinTool>();
         services.AddSingleton<Services.Operator.KdpToolRegistry>();
         services.AddScoped<Services.Operator.KdpOperatorService>();
 

@@ -62,4 +62,26 @@ public class WebView2KdpBrowser : IKdpBrowser
         var releaseParams = JsonSerializer.Serialize(new { type = "mouseReleased", x, y, button = "left", clickCount = 1 });
         await WithTimeout(core.CallDevToolsProtocolMethodAsync("Input.dispatchMouseEvent", releaseParams), "CallDevToolsProtocolMethodAsync(mouseReleased)", ct);
     }
+
+    /// <summary>
+    /// Types each character via CDP Input.dispatchKeyEvent (keyDown carrying the character in
+    /// its "text" field, then keyUp) — the same real-trusted-input technique as
+    /// <see cref="ClickAtPointAsync"/>, applied to the keyboard instead of the mouse. Added after
+    /// a specific concern about KDP's Pricing page: the international-marketplace price fields
+    /// may only recalculate off genuine keystroke events on the US list-price field, not off a
+    /// value set via a synthetic property-setter + dispatched input/change events (the technique
+    /// that works fine for every other text field in this app). Targets whatever element
+    /// currently has focus — the caller must focus the field first.
+    /// </summary>
+    public async Task TypeTextAsync(string text, CancellationToken ct)
+    {
+        foreach (var c in text)
+        {
+            var keyDownParams = JsonSerializer.Serialize(new { type = "keyDown", text = c.ToString(), unmodifiedText = c.ToString() });
+            await WithTimeout(core.CallDevToolsProtocolMethodAsync("Input.dispatchKeyEvent", keyDownParams), "CallDevToolsProtocolMethodAsync(keyDown)", ct);
+            var keyUpParams = JsonSerializer.Serialize(new { type = "keyUp", text = c.ToString(), unmodifiedText = c.ToString() });
+            await WithTimeout(core.CallDevToolsProtocolMethodAsync("Input.dispatchKeyEvent", keyUpParams), "CallDevToolsProtocolMethodAsync(keyUp)", ct);
+            await Task.Delay(40, ct);
+        }
+    }
 }

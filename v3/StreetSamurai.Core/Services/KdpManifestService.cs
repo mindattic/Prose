@@ -26,14 +26,17 @@ namespace StreetSamurai.Core.Services;
 public class KdpManifestService
 {
     private static readonly Regex VersionFileRx = new(@"^(?<code>.+) V(?<ver>\d+)\.(?<ext>docx|epub)$", RegexOptions.IgnoreCase);
+    private static readonly JsonSerializerOptions MarkerJsonOpts = new() { PropertyNameCaseInsensitive = true };
 
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly SettingsService settings;
+    private readonly SettingsKvStore kv;
 
-    public KdpManifestService(IDbContextFactory<StreetSamuraiDbContext> dbFactory, SettingsService settings)
+    public KdpManifestService(IDbContextFactory<StreetSamuraiDbContext> dbFactory, SettingsService settings, SettingsKvStore kv)
     {
         this.dbFactory = dbFactory;
         this.settings = settings;
+        this.kv = kv;
     }
 
     /// <summary>Locates the repo root (walks up from <paramref name="startDir"/> — typically
@@ -248,6 +251,45 @@ public class KdpManifestService
                 ? $"https://kdp.amazon.com/en_US/title-setup/kindle/{tid}/content"
                 : null;
 
+            // First-time-publish metadata (price/categories/DRM/KDP Select/AI disclosure) — a
+            // book only needs this once, hand-authored via kv.Set("kdp.newbook.<CODE>", ...)
+            // before its first publish run. Irrelevant (and left null) for every already-live
+            // book, which republishes off the manuscript/subtitle alone.
+            var newListingPlan = kv.Get<KdpNewListingPlan>($"kdp.newbook.{code}");
+
+            // Human-controlled publish gate: a .publish marker file in the book's export folder.
+            // Every book directory gets one by default; the human deletes it from any book that
+            // isn't actually ready, so a full automated sweep (publish-new-and-republish-newer)
+            // can run unattended without ever touching a book nobody signed off on. Authoritative,
+            // not just a UI hint — RunSelectedAsync refuses to process a selected code lacking
+            // this file even if it was manually checked.
+            //
+            // Once non-empty, its JSON body doubles as a local cache of what was last actually
+            // confirmed published — {lastPublishedFile, publishedAtUtc} — written by
+            // KdpOperatorService only after a real publish-confirmation modal, never
+            // speculatively (see mark_published's own rule). If that filename matches the
+            // current highest-version file on disk, this book needs no republish work at all —
+            // UpToDateViaLocalMarker lets the caller skip launching the browser entirely instead
+            // of opening the book just to discover the same thing three steps in.
+            var publishMarkerPath = Path.Combine(nodeDir, ".publish");
+            var readyToPublish = File.Exists(publishMarkerPath);
+            PublishMarker? publishMarker = null;
+            if (readyToPublish)
+            {
+                var markerRaw = ReadIfExists(publishMarkerPath)?.Trim();
+                if (!string.IsNullOrEmpty(markerRaw))
+                {
+                    try { publishMarker = JsonSerializer.Deserialize<PublishMarker>(markerRaw, MarkerJsonOpts); }
+                    catch { /* malformed/legacy-empty marker — treat as no publish history yet */ }
+                }
+            }
+            var currentManuscriptFilename = epubPath != null ? Path.GetFileName(epubPath)
+                : docxPath != null ? Path.GetFileName(docxPath) : null;
+            var upToDateViaLocalMarker = readyToPublish
+                && currentManuscriptFilename != null
+                && publishMarker?.File != null
+                && string.Equals(publishMarker.File, currentManuscriptFilename, StringComparison.OrdinalIgnoreCase);
+
             entries.Add(new KdpManifestEntry(
                 Code: code,
                 Slug: n.Slug,
@@ -271,7 +313,11 @@ public class KdpManifestService
                 Asin: asin,
                 KdpTitleId: titleId,
                 KdpDirectEditUrl: directEditUrl,
-                Warning: warning
+                Warning: warning,
+                NewListingPlan: newListingPlan,
+                ReadyToPublish: readyToPublish,
+                LocalPublishMarker: publishMarker,
+                UpToDateViaLocalMarker: upToDateViaLocalMarker
             ));
         }
 
@@ -322,5 +368,49 @@ public record KdpManifestEntry(
     string? Asin,
     string? KdpTitleId,
     string? KdpDirectEditUrl,
-    string? Warning
+    string? Warning,
+    KdpNewListingPlan? NewListingPlan,
+    bool ReadyToPublish,
+    PublishMarker? LocalPublishMarker,
+    bool UpToDateViaLocalMarker
+);
+
+/// <summary>
+/// The JSON body of a book's <c>.publish</c> marker file once it has recorded real publish
+/// history — e.g. <c>{"File":"Story V1.epub","ASIN":"ABC123","PublishedAtUtc":"2026-08-02T23:03:00Z"}</c>.
+/// Written by <see cref="StreetSamurai.Core.Services.Operator.KdpOperatorService"/> only after a
+/// genuine publish-confirmation modal (never speculatively), read back by
+/// <see cref="KdpManifestService"/> to short-circuit re-processing a book whose current on-disk
+/// manuscript already matches what was last published. Deliberately a loose bag of nullable
+/// fields (not a strict contract) so new keys can be added later without breaking old marker
+/// files — see the file's own doc remarks for why this exists.
+/// </summary>
+public record PublishMarker(
+    string? File,
+    string? Asin,
+    string? PublishedAtUtc
+);
+
+/// <summary>
+/// Hand-authored, one-time metadata for a book's FIRST publish on KDP — everything the republish
+/// flow never touches because it's fixed at creation (price, categories, DRM, KDP Select
+/// enrollment, the AI-generated-content disclosure). Stored via <c>kv.Set("kdp.newbook.&lt;CODE&gt;",
+/// ...)</c> (see <see cref="SettingsKvStore"/>) before running a book through the new-listing
+/// flow; irrelevant once the book is live (KdpManifestEntry.Asin/KdpTitleId/PublishUrl take over).
+/// </summary>
+public record KdpNewListingPlan(
+    decimal PriceUsd,
+    List<List<string>> CategoryPaths,
+    bool KdpSelect,
+    bool Drm,
+    // Exact KDP dropdown option text for the AI-generated-content questionnaire's three fields
+    // (confirmed live stable ids generative-ai-questionnaire-text/-images/-translations) — e.g.
+    // "None" or "Entire work, with extensive editing" for text/translations, "One or a few
+    // AI-generated images, with minimal or no editing" for images. AiTextTool/AiImagesTool fill
+    // the "Which tool(s) did you use" field that appears when the option isn't "None".
+    string AiTextOption,
+    string? AiTextTool,
+    string AiImagesOption,
+    string? AiImagesTool,
+    string AiTranslationsOption
 );
