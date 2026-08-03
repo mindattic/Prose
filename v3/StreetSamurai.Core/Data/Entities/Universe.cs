@@ -53,6 +53,11 @@ public class Universe
     public static readonly Guid GlmzId    = new("0197e9c9-0001-7000-8000-000000000001");
     /// <summary>Universe #2 — Scry (The Cauld; fantasy world).</summary>
     public static readonly Guid FantasyId = new("0197e9c9-0002-7000-8000-000000000002");
+    /// <summary>Universe #3 — SOURCE (citation-grounded nonfiction; formerly GSPL).
+    /// Without this constant, `--universe source` CLI processes fell back to Guid.Empty
+    /// scoping (a silent no-op) until the full UniverseContext resolved — one of the
+    /// contributing factors in the PURSUED DCM failure (2026-08-03).</summary>
+    public static readonly Guid SourceId  = new("0197e9c9-0003-7000-8000-000000000003");
 
     /// <summary>
     /// Sentinel id for config that is shared across ALL universes (operational, not world content):

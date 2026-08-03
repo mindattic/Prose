@@ -550,6 +550,10 @@ public class MarkdownFileService
             "first","book","story","outline","canon","service","descent",
             // writer model tokens — appear in every beat goal / prose write context
             "beat","beats","strands","strand","nodes","stage","panel","rebuild",
+            // filename-generic tokens — "readme" auto-seeded from gospel/README.md and fired
+            // Gospel context into PURSUED (Irish history) beats. A filename this generic can
+            // never be a meaningful topic trigger.
+            "readme","index","overview","summary","notes","template","config","settings",
             // common English body/action words that appear in any prose passage
             "ground","teeth","every","reversed","survives","survive","mandate",
             "rewrite","revision","supreme","doctrine","bloodless","replaced",

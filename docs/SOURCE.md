@@ -7,9 +7,9 @@ universe: source
 status: live
 tier: series
 scope: SOURCE
-triggers: Gospel, SOURCE, history vs heritage, New Testament, Canaan, apostles, Pilate, Pontius, Herod, Quirinius, genealogy, nativity, Jesus, gospel claims
-updated: 2026-07-26
-related: docs/CRAFT.md, docs/gospel/README.md
+triggers: SOURCE, citation, primary source, history vs heritage, nonfiction
+updated: 2026-08-03
+related: docs/CRAFT.md
 ---
 
 # SOURCE — Universe Craft Rules {#SS-SOURCE}

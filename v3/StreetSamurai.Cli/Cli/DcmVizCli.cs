@@ -146,11 +146,23 @@ public static class DcmVizCli
         var beatRows = await db.BeatNodes.AsNoTracking()
             .Where(bn => sourceIds.Contains(bn.NodeId) && bn.IsEnabled)
             .OrderBy(bn => bn.SortKey)
-            .Select(bn => new { bn.Beat!.Title, bn.Beat.Description })
+            .Select(bn => new { bn.Beat!.Title, bn.Beat.Description, bn.Beat.Text })
             .ToListAsync();
 
+        // Trigger text mirrors real generation (goal + prose window). Books written
+        // outside the engine (e.g. PURSUED) have NULL Title/Description on every beat —
+        // replaying goal-only would show zero dynamics regardless of DCM health. The
+        // prose itself is where entity names actually live, so fall back to it
+        // (clamped: keyword matching is O(text) per candidate doc).
         return beatRows
-            .Select((b, i) => (i, b.Title, b.Description ?? b.Title))
+            .Select((b, i) =>
+            {
+                var goal = !string.IsNullOrWhiteSpace(b.Description) ? b.Description : b.Title;
+                var prose = b.Text ?? "";
+                if (prose.Length > 4000) prose = prose[..4000];
+                var trigger = string.IsNullOrWhiteSpace(goal) ? prose : $"{goal}\n\n{prose}";
+                return (i, b.Title, (string?)trigger);
+            })
             .ToList();
     }
 

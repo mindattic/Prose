@@ -1394,6 +1394,19 @@ if (args.Contains("--logic-sweep"))
     return;
 }
 
+// ss --dcm-backfill --slug <slug> [--dry-run]
+// Retroactive DCM footprint for books written OUTSIDE the engine (update_beat_text /
+// --edit-beat / --import-md bypass ProseWriterRouter, so step-0 entity inference never
+// ran — PURSUED shipped 127 beats with zero entity docs this way). Runs
+// EntityDocService.InferFromTextAsync over every enabled beat's prose; hash-gated,
+// no prose touched. Run after --generate-node-doc + --sync-markdown.
+if (args.Contains("--dcm-backfill"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await DcmBackfillCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --reader-qa (--slug <slug> | --all) [--force] [--json]
 // Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality instrument.
 // Phase 1: comprehension probes — a cheap model reads each chapter cold, diffed against
