@@ -411,7 +411,7 @@ public class NodeWorkbenchService
         int i = 0;
         foreach (var raw in beatTexts)
         {
-            var text = (raw ?? "").Trim();
+            var text = TextSanitizerService.Sanitize((raw ?? "").Trim());
             if (text.Length == 0) continue;
             var beat = new Beat
             {
@@ -668,6 +668,7 @@ public class NodeWorkbenchService
     /// very top of the node.</summary>
     public async Task<Beat> InsertBeatAsync(Guid nodeId, Guid? afterBeatId, string initialText = "", CancellationToken ct = default)
     {
+        initialText = TextSanitizerService.Sanitize(initialText ?? "");
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var ordered = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)

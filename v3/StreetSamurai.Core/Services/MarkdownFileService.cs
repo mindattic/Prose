@@ -178,7 +178,7 @@ public class MarkdownFileService
             try
             {
                 if (!File.Exists(f.FilePath)) continue;
-                var content = await File.ReadAllTextAsync(f.FilePath, ct);
+                var content = TextSanitizerService.Sanitize(await File.ReadAllTextAsync(f.FilePath, ct));
                 var hash    = ComputeHash(content);
                 var cls     = ClassifyFile(f, content);
 
