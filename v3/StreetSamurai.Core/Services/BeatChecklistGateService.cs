@@ -232,7 +232,7 @@ public sealed class BeatChecklistGateService(
         var moves = delightSections
             .Where(s => int.TryParse(s.SectionKey["SS-DELIGHT-".Length..], out var n) && n is >= 1 and <= 13)
             .OrderBy(s => int.Parse(s.SectionKey["SS-DELIGHT-".Length..]))
-            .Select(s => new DelightMove(s.SectionKey, s.SectionTitle, Gist(s.Content)))
+            .Select(s => new DelightMove(s.SectionKey, s.SectionTitle ?? s.SectionKey, Gist(s.Content)))
             .ToList();
         if (moves.Count == 0)
             throw new InvalidOperationException("DELIGHT.md moves not found in CanonDocumentSections (DelightGuide).");

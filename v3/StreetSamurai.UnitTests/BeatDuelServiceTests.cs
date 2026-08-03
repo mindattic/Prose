@@ -52,6 +52,37 @@ public class BeatDuelServiceTests
             [B("better"), B("better"), B("better"), B("better"), B("worse"), B("worse"), B("same")]),
             Is.EqualTo("keep"));
 
+    // ── Order-swap merging (position-bias cancellation, EQ-bench method) ──
+
+    static DuelBallot B2(string vote, double conf = 0.8) => new("lens", vote, conf, "r");
+
+    [Test]
+    public void MergeOrders_Agreement_KeepsVote_AveragesConfidence()
+    {
+        var merged = BeatDuelService.MergeOrders(B2("better", 0.9), B2("better", 0.5));
+        Assert.That(merged.Vote, Is.EqualTo("better"));
+        Assert.That(merged.Confidence, Is.EqualTo(0.7).Within(1e-9));
+        Assert.That(merged.OrderChecked, Is.True);
+        Assert.That(merged.OrderFlipped, Is.False);
+    }
+
+    [Test]
+    public void MergeOrders_SamePlusDirectional_TakesDirectionalAtReducedConfidence()
+    {
+        var merged = BeatDuelService.MergeOrders(B2("same"), B2("worse", 0.8));
+        Assert.That(merged.Vote, Is.EqualTo("worse"));
+        Assert.That(merged.Confidence, Is.EqualTo(0.6).Within(1e-9));
+    }
+
+    [Test]
+    public void MergeOrders_Flip_DiscardsToSame()
+    {
+        var merged = BeatDuelService.MergeOrders(B2("better"), B2("worse"));
+        Assert.That(merged.Vote, Is.EqualTo("same"));
+        Assert.That(merged.OrderFlipped, Is.True);
+        Assert.That(merged.Confidence, Is.EqualTo(0));
+    }
+
     // ── Blueprint JSON extraction (multi-fragment / truncated responses) ──
 
     [Test]

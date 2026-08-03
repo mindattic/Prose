@@ -37,7 +37,8 @@ namespace StreetSamurai.Core.Services;
 public class BeatDuelService(
     ILlmService llm,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory,
-    ILogger<BeatDuelService> log)
+    ILogger<BeatDuelService> log,
+    ReviewLlmTransport? transport = null)
 {
     // ── Lenses ────────────────────────────────────────────────────────────────
 
@@ -183,19 +184,62 @@ public class BeatDuelService(
         bool requireRationale,
         CancellationToken ct)
     {
-        // Deterministic-but-varied order per lens: even-indexed lenses see the
-        // original first, odd-indexed see the revision first. Position bias
-        // cancels across the panel without needing nondeterministic RNG.
-        var tasks = lenses.Select((lens, i) =>
-            CastOneAsync(lens.Key, lens.Brief, originalText, revisionText,
-                originalFirst: i % 2 == 0, context, requireRationale, ct));
+        // Cross-FAMILY jury seats: each lens is assigned to a different live provider
+        // family (Claude/GPT/Gemini/DeepSeek/Kimi, whatever is actually alive), because
+        // same-model voters make correlated errors — N same-family votes ≈ 1 vote.
+        // When only one family is alive, seats vary the Claude TIER instead. When the
+        // transport is absent (unit tests) or no jury is live, fall back to the single
+        // ILlmService — same behavior duels always had.
+        var seats = transport != null ? await transport.AssignJuryAsync(lenses.Length, ct) : new();
+        if (transport != null && seats.Count == 0)
+            log.LogWarning("[duel] no live jury providers — falling back to the default LLM for all lenses (reduced independence).");
+
+        // Position-bias cancellation (EQ-bench method): each lens judges BOTH orders
+        // (A→B and B→A). Agreeing directional votes stand; a verdict that flips with
+        // presentation order is order-sensitive noise and is discarded to "same".
+        var tasks = lenses.Select(async (lens, i) =>
+        {
+            var seat = seats.Count > 0 ? seats[i % seats.Count] : null;
+            var forward  = CastOneAsync(lens.Key, lens.Brief, originalText, revisionText,
+                originalFirst: true, context, requireRationale, seat, ct);
+            var backward = CastOneAsync(lens.Key, lens.Brief, originalText, revisionText,
+                originalFirst: false, context, requireRationale, seat, ct);
+            var pair = await Task.WhenAll(forward, backward);
+            return MergeOrders(pair[0], pair[1]);
+        });
         return (await Task.WhenAll(tasks)).ToList();
+    }
+
+    /// <summary>Merge a lens's two order-swapped ballots into one vote.
+    /// Agreement → that vote; same+directional → the directional vote at reduced
+    /// confidence; better-vs-worse (an order flip) → "same" — a verdict that depends
+    /// on presentation order carries no signal about the text.</summary>
+    internal static DuelBallot MergeOrders(DuelBallot forward, DuelBallot backward)
+    {
+        if (forward.Vote == backward.Vote)
+            return forward with { Confidence = (forward.Confidence + backward.Confidence) / 2, OrderChecked = true };
+
+        var directional = forward.Vote != "same" ? forward : backward;
+        var other = ReferenceEquals(directional, forward) ? backward : forward;
+        if (other.Vote == "same")
+            return directional with { Confidence = directional.Confidence * 0.75, OrderChecked = true };
+
+        // better vs worse — the verdict flipped with order.
+        return forward with
+        {
+            Vote = "same",
+            Confidence = 0,
+            OrderChecked = true,
+            OrderFlipped = true,
+            Rationale = $"(discarded — verdict flipped with presentation order) fwd: {forward.Rationale} | bwd: {backward.Rationale}",
+        };
     }
 
     async Task<DuelBallot> CastOneAsync(
         string lensKey, string lensBrief,
         string originalText, string revisionText, bool originalFirst,
-        DuelContext context, bool requireRationale, CancellationToken ct)
+        DuelContext context, bool requireRationale,
+        ReviewLlmTransport.JurySeat? seat, CancellationToken ct)
     {
         var (v1, v2) = originalFirst ? (originalText, revisionText) : (revisionText, originalText);
 
@@ -238,7 +282,9 @@ public class BeatDuelService(
 
         try
         {
-            var raw = await llm.GenerateAsync(system, user, temperature: 0.3, maxTokens: 350, ct: ct);
+            var raw = seat != null
+                ? await transport!.CallSeatAsync(seat, system, user, maxTokens: 350, temperature: 0.3, ct)
+                : await llm.GenerateAsync(system, user, temperature: 0.3, maxTokens: 350, ct: ct);
             var parsed = ParseJson<BallotRaw>(raw);
             var verdict = parsed?.Verdict?.ToLowerInvariant() ?? "same";
 
@@ -249,12 +295,15 @@ public class BeatDuelService(
                 "version2" => originalFirst ? "better" : "worse",
                 _           => "same",
             };
-            return new DuelBallot(lensKey, vote, parsed?.Confidence ?? 0.5, parsed?.Rationale ?? "");
+            return new DuelBallot(lensKey, vote, parsed?.Confidence ?? 0.5, parsed?.Rationale ?? "",
+                seat?.Provider ?? "default", seat?.Model ?? "");
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "[duel] ballot failed for lens {Lens} — counting as 'same'", lensKey);
-            return new DuelBallot(lensKey, "same", 0, $"(ballot failed: {ex.Message})");
+            log.LogWarning(ex, "[duel] ballot failed for lens {Lens} via {Provider} — counting as 'same'",
+                lensKey, seat?.Provider ?? "default");
+            return new DuelBallot(lensKey, "same", 0, $"(ballot failed: {ex.Message})",
+                seat?.Provider ?? "default", seat?.Model ?? "");
         }
     }
 
@@ -296,8 +345,15 @@ public record DuelContext(
     string? PrecedingText = null,
     Guid?   BeatId        = null);
 
-/// <summary>One voter's ballot. Vote is relative to the REVISION: better/worse/same.</summary>
-public record DuelBallot(string Lens, string Vote, double Confidence, string Rationale);
+/// <summary>One voter's ballot. Vote is relative to the REVISION: better/worse/same.
+/// Provider/Model identify the jury seat (model family) that cast it; OrderChecked
+/// marks a merged A→B/B→A pair; OrderFlipped marks a discarded order-sensitive
+/// verdict (counted as "same" — no signal). Older cached ballots deserialize with
+/// the defaults.</summary>
+public record DuelBallot(
+    string Lens, string Vote, double Confidence, string Rationale,
+    string Provider = "default", string Model = "",
+    bool OrderChecked = false, bool OrderFlipped = false);
 
 /// <summary>Duel outcome. Replace=false with 2 rounds run means the panel stayed
 /// contested — the escalation ballots' rationales are the revision fuel.</summary>

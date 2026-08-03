@@ -194,6 +194,17 @@ public sealed class ReviewLlmTransport
     /// <summary>One juror's assigned wire target.</summary>
     public sealed record JurySeat(string Provider, string Model);
 
+    /// <summary>Send one call to an assigned jury seat — resolves the key and picks
+    /// the right wire path (Legion vs registry) for the seat's provider.</summary>
+    public Task<string> CallSeatAsync(JurySeat seat, string system, string user,
+        int maxTokens = 512, double temperature = 0.3, CancellationToken ct = default)
+    {
+        var key = ResolveKey(seat.Provider)
+            ?? throw new InvalidOperationException($"No API key for jury provider '{seat.Provider}'.");
+        var llm = registry.Contains(seat.Provider) ? (IReviewLlm)registryLlm : cloudLlm;
+        return llm.CallAsync(seat.Provider, key, seat.Model, system, user, maxTokens, temperature, ct);
+    }
+
     /// <summary>Distinct Claude tiers used to stretch diversity when fewer live FAMILIES
     /// exist than jury seats. Different tiers are different models (different training
     /// runs and behaviors) — weaker independence than cross-family, far better than the
