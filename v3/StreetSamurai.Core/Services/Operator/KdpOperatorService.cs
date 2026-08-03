@@ -23,7 +23,14 @@ public class KdpOperatorService
 
     private const string Model = "claude-opus-4-7";
     private const int MaxTokens = 4096;
-    private const int MaxToolIterations = 40;
+    // Was 40 — confirmed live (2026-08-03 full sweep) too tight: several books genuinely
+    // completed the entire republish (manuscript check, checkboxes, Save and Continue,
+    // Pricing, Publish, redirect confirmed) but exhausted the cap on capture_published_asin/
+    // mark_published, the two steps closing out the loop — meaning the book was actually LIVE
+    // on KDP but never recorded as such in the DB. Raised with real headroom rather than a
+    // minimal bump, since a wasted iteration here just costs a little time, while running out
+    // one step before mark_published silently desyncs the DB from reality.
+    private const int MaxToolIterations = 60;
     private const int MaxToolIterationsNewListing = 80;
 
     public KdpOperatorService(AnthropicToolClient client, KdpToolRegistry tools, ILogger<KdpOperatorService> log)

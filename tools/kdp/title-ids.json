@@ -2,9 +2,7 @@
   "_comment": "NodeCode -\u003E KDP dashboard identity crosswalk. titleId is KDP\u0027s internal dashboard id (different from the public ASIN) \u2014 it\u0027s what lets a link jump straight to a book\u0027s edit page at https://kdp.amazon.com/en_US/title-setup/kindle/{titleId}/content, skipping the bookshelf hunt-and-click. Harvest by opening the KDP bookshelf, right-clicking \u0027Edit eBook content\u0027 on a title, and copying the href \u2014 it contains .../kindle/{titleId}/content. Or paste the raw \u003Ca\u003E tag to Claude Code and it will add the entry here. asin/itemSetId are optional extras carried along for reference.",
   "LUKE": {
     "titleId": "A2CLOZG9ACHE0O",
-    "asin": "B0HC1MZN95",
-    "itemSetId": "8J3CHMXP2EP",
-    "owningItemSetId": "8B4H04KYFPG"
+    "asin": "B0HC1MZN95"
   },
   "BCODA": {
     "titleId": "A32TB71CWUFJNN",
@@ -49,5 +47,33 @@
   "ATTE": {
     "titleId": "A1I620HXKWWEUP",
     "asin": "B0H5937163"
+  },
+  "BLST": {
+    "titleId": "A35GVY30KZM69X",
+    "asin": "B0H6P5YY8Y"
+  },
+  "MARK": {
+    "titleId": "A2M1KSJEAWXXKK",
+    "asin": "B0HC23ZXXB"
+  },
+  "SPRW": {
+    "titleId": "A1AJ9CDJ3FXU3L",
+    "asin": "B0H5V8LMY2"
+  },
+  "DWIACE": {
+    "titleId": "AKULHBQ9EO956",
+    "asin": "B0H58RP3FQ"
+  },
+  "ICFI": {
+    "titleId": "A412I146N52A1",
+    "asin": "B0H8KK2GJ9"
+  },
+  "JOHN": {
+    "titleId": "A3G12DKSL7T6M6",
+    "asin": "B0HC1DJLS9"
+  },
+  "TLC": {
+    "titleId": "A1CG8SZ09ONK9A",
+    "asin": "B0H7PY6VS3"
   }
 }
