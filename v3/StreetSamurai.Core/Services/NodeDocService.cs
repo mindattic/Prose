@@ -198,6 +198,19 @@ public class NodeDocService
     private static string BuildBeatSpineSection(string beatSpine, DateTime now) =>
         $"## Beat Spine\n<!-- generated {now:O} from Beats table — edit via MCP beat tools -->\n\n{beatSpine.TrimEnd()}";
 
+    /// <summary>
+    /// Opens/closes preview label for the compressed (&gt;60 beat) Beat Spine view. Post-Swain-rebeat
+    /// books never populate Beat.Title (only Description, via the MeaningBackfillService), so a bare
+    /// "Title ?? '—'" fallback rendered every compressed spine as a content-free "— — opens" stub.
+    /// Falls back to a clipped Description, which IS populated for those books.
+    /// </summary>
+    private static string BeatLabel(string? title, string? desc)
+    {
+        if (!string.IsNullOrWhiteSpace(title)) return title;
+        if (!string.IsNullOrWhiteSpace(desc)) return desc.Length > 80 ? desc[..80].TrimEnd() + "…" : desc;
+        return "—";
+    }
+
     private static async Task<(string SpineText, int BeatCount)> BuildBeatSpineAsync(
         StreetSamuraiDbContext db, Guid nodeId, CancellationToken ct)
     {
@@ -251,8 +264,8 @@ public class NodeDocService
                     {
                         var first = beats.First();
                         var last  = beats.Last();
-                        sb.AppendLine($"- B{first.Pos:D2} · {first.Title ?? "—"} — opens");
-                        sb.AppendLine($"- B{last.Pos:D2}  · {last.Title ?? "—"} — closes");
+                        sb.AppendLine($"- B{first.Pos:D2} · {BeatLabel(first.Title, first.Desc)} — opens");
+                        sb.AppendLine($"- B{last.Pos:D2}  · {BeatLabel(last.Title, last.Desc)} — closes");
                     }
                 }
                 sb.AppendLine();

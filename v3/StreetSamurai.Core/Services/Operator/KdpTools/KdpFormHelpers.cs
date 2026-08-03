@@ -17,13 +17,53 @@ internal static class KdpFormHelpers
 {
     private const int MaxIterations = 10;
 
+    /// <summary>
+    /// Single source of truth for the words that mean "KDP is still working on this server-side
+    /// (converting/scanning/quality-checking the upload) — do not trust the form yet." Shared by
+    /// <see cref="GetPageStatusTool"/> (surfaced to the LLM as `isProcessing`) and the hard guard
+    /// in <see cref="CheckIsProcessingAsync"/> below. Before this was unified, each tool kept its
+    /// own copy of this regex — which is exactly how KDP's "Running quality check. This could
+    /// take up to a minute." banner slipped through undetected (2026-08-01): it matched neither
+    /// copy, because "quality check" isn't a substring of "processing"/"scanning"/etc. One
+    /// pattern maintained in one place means a newly-discovered KDP status phrase only needs
+    /// adding here to fix both the LLM's visibility into it AND the tick-refusal below.
+    /// </summary>
+    public const string ProcessingWordsPattern =
+        "preparing|processing|converting|scanning|please wait|uploading|in progress|is not (yet )?ready|quality check|running.{0,20}check";
+
+    /// <summary>Result of a checkbox-ticking attempt. <see cref="BlockedByProcessing"/> true means
+    /// nothing was ticked because KDP's processing/quality-check banner was showing — the caller
+    /// must not proceed to Save/Continue/Publish, and should surface <see cref="ProcessingIndicator"/>
+    /// to the LLM so it knows to wait and retry instead of assuming the checkboxes are just absent.</summary>
+    public sealed record TickResult(List<string> Matches, bool BlockedByProcessing, string? ProcessingIndicator);
+
+    /// <summary>True (plus the matched snippet) if the page shows KDP's server-side processing/
+    /// quality-check banner. See <see cref="ProcessingWordsPattern"/> for why this exists as a
+    /// single shared check rather than being reimplemented per-tool.</summary>
+    public static async Task<(bool IsProcessing, string? Indicator)> CheckIsProcessingAsync(
+        KdpOperatorContext ctx, CancellationToken ct)
+    {
+        var result = await ctx.Browser.EvalAsync(ProcessingCheckScript, ct);
+        using var doc = JsonDocument.Parse(result);
+        var root = doc.RootElement;
+        var isProcessing = root.GetProperty("isProcessing").GetBoolean();
+        var indicator = isProcessing && root.TryGetProperty("indicator", out var el) ? el.GetString() : null;
+        return (isProcessing, indicator);
+    }
+
     /// <summary>Ticks every unchecked confirm-checkbox matching <paramref name="candidates"/>
     /// (KDP's real markup for these is a custom &lt;div role=checkbox&gt; widget, not a native
-    /// input — see CheckCheckboxTool's remarks for the full story). Returns the matched label
-    /// texts, one per checkbox actually ticked.</summary>
-    public static async Task<List<string>> TickMatchingCheckboxesAsync(
+    /// input — see CheckCheckboxTool's remarks for the full story). Refuses to click anything —
+    /// returning <see cref="TickResult.BlockedByProcessing"/> instead — while KDP's processing/
+    /// quality-check banner is showing; checkboxes are confirmed unreliable until it clears, and
+    /// this guard applies unconditionally so it can't be skipped by an agent that forgot to call
+    /// get_page_status first (a real, previously-observed failure mode — see class remarks).</summary>
+    public static async Task<TickResult> TickMatchingCheckboxesAsync(
         KdpOperatorContext ctx, string[] candidates, CancellationToken ct)
     {
+        var (isProcessing, indicator) = await CheckIsProcessingAsync(ctx, ct);
+        if (isProcessing) return new TickResult(new List<string>(), true, indicator);
+
         var candidatesJson = JsonSerializer.Serialize(candidates);
         var matches = new List<string>();
 
@@ -49,8 +89,30 @@ internal static class KdpFormHelpers
             matches.Add(text);
         }
 
-        return matches;
+        return new TickResult(matches, false, null);
     }
+
+    private static string ProcessingCheckScript => $$"""
+    (function() {
+        var processingWords = /{{ProcessingWordsPattern}}/i;
+        var processingEls = Array.from(document.querySelectorAll(
+            '[class*="status"], [class*="progress"], [class*="spinner"], [class*="loading"], [class*="processing"], [class*="preparing"]'
+        )).map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
+          .filter(function (t) { return t.length > 0 && t.length < 300; });
+        var bodyText = (document.body.innerText || '').replace(/\s+/g, ' ');
+        var matches = Array.from(new Set(processingEls.filter(function (t) { return processingWords.test(t); })));
+        var isProcessing = matches.length > 0 || processingWords.test(bodyText);
+        var indicator = matches[0] || null;
+        if (isProcessing && !indicator) {
+            var m = bodyText.match(processingWords);
+            if (m) {
+                var idx = m.index;
+                indicator = bodyText.slice(Math.max(0, idx - 40), idx + 60).trim();
+            }
+        }
+        return JSON.stringify({ isProcessing: isProcessing, indicator: indicator });
+    })()
+    """;
 
     private static string LocateNextScript(string candidatesJson) => $$"""
     (function() {

@@ -21,6 +21,16 @@ namespace StreetSamurai.Cli;
 ///           Print a beat's full text and metadata.
 ///   list    --node &lt;slug|id&gt;
 ///           List beats in a node (position, id, first 80 chars of text).
+///   clear   --node &lt;slug|id&gt;
+///           Soft-delete every currently-enabled beat in a node, in one process —
+///           for a full replot where the whole existing beat set is being discarded.
+///           Same soft-delete as `delete` (BeatNode.IsEnabled = false); reversible via
+///           the writer UI's restore, never a raw SQL delete.
+///   seed-spine --node &lt;slug|id&gt;
+///           Create planned (empty-text) beats from the book node's *already-saved*
+///           NodeBible "## BEAT SPINE" section — no LLM call, no bible regeneration.
+///           For when a bible was hand-written (e.g. via set_book_bible) and the node
+///           currently has zero enabled beats. No-op if the node already has beats.
 /// </summary>
 public static class BeatCli
 {
@@ -37,14 +47,87 @@ public static class BeatCli
 
         return sub switch
         {
-            "insert" => await InsertAsync(rest, services),
-            "delete" => await DeleteAsync(rest, services),
-            "update" => await UpdateAsync(rest, services),
-            "meta"   => await MetaAsync(rest, services),
-            "show"   => await ShowAsync(rest, services),
-            "list"   => await ListAsync(rest, services),
-            _        => PrintUsage(),
+            "insert"     => await InsertAsync(rest, services),
+            "delete"     => await DeleteAsync(rest, services),
+            "clear"      => await ClearAsync(rest, services),
+            "seed-spine" => await SeedSpineAsync(rest, services),
+            "update"     => await UpdateAsync(rest, services),
+            "meta"       => await MetaAsync(rest, services),
+            "show"       => await ShowAsync(rest, services),
+            "list"       => await ListAsync(rest, services),
+            _            => PrintUsage(),
         };
+    }
+
+    // ── seed-spine ────────────────────────────────────────────────────────────
+
+    private static async Task<int> SeedSpineAsync(string[] args, IServiceProvider services)
+    {
+        string? nodeIdOrSlug = null;
+        for (int i = 0; i < args.Length; i++)
+            if (args[i] == "--node" && i + 1 < args.Length) nodeIdOrSlug = args[++i];
+
+        if (string.IsNullOrWhiteSpace(nodeIdOrSlug)) { Console.Error.WriteLine("[beat seed-spine] --node <slug|id> is required."); return 1; }
+
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug, services);
+        if (nodeId == null) { Console.Error.WriteLine($"[beat seed-spine] Node '{nodeIdOrSlug}' not found."); return 1; }
+
+        var bibleSvc = services.GetRequiredService<NodeBibleService>();
+        var bibleText = await bibleSvc.GetBibleTextAsync(nodeId.Value);
+        if (string.IsNullOrWhiteSpace(bibleText)) { Console.Error.WriteLine("[beat seed-spine] Node has no NodeBible — set one first."); return 1; }
+
+        var plans = NodeBibleService.ParseBeatSpine(bibleText);
+        if (plans.Count == 0) { Console.Error.WriteLine("[beat seed-spine] No \"## BEAT SPINE\" entries parsed from the bible."); return 1; }
+
+        Console.WriteLine($"[beat seed-spine] Parsed {plans.Count} spine entries. Creating planned beats…");
+        await bibleSvc.SaveBibleAndCreateBeatsAsync(nodeId.Value, bibleText);
+        Console.WriteLine("[beat seed-spine] Done (no-op logged above if the node already had beats).");
+        return 0;
+    }
+
+    // ── clear ─────────────────────────────────────────────────────────────────
+
+    private static async Task<int> ClearAsync(string[] args, IServiceProvider services)
+    {
+        string? nodeIdOrSlug = null;
+        bool directOnly = args.Contains("--direct-only");
+        for (int i = 0; i < args.Length; i++)
+            if (args[i] == "--node" && i + 1 < args.Length) nodeIdOrSlug = args[++i];
+
+        if (string.IsNullOrWhiteSpace(nodeIdOrSlug)) { Console.Error.WriteLine("[beat clear] --node <slug|id> is required."); return 1; }
+
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug, services);
+        if (nodeId == null) { Console.Error.WriteLine($"[beat clear] Node '{nodeIdOrSlug}' not found."); return 1; }
+
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
+        // (NodeId, BeatId) pairs — beats live on chapter children, not the book node
+        // (SS-A43), so DeleteBeatAsync must be called with each beat's ACTUAL owning
+        // node, not the id/slug the caller passed in. Using the passed-in id blindly
+        // (as this command originally did) silently no-ops when it's a book: the
+        // junction lookup finds nothing under the book id and returns early.
+        List<(Guid NodeId, Guid BeatId)> pairs;
+        if (directOnly)
+        {
+            var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
+            await using var db = await dbFactory.CreateDbContextAsync();
+            pairs = await db.BeatNodes.Where(bn => bn.NodeId == nodeId.Value && bn.IsEnabled)
+                .Select(bn => new ValueTuple<Guid, Guid>(bn.NodeId, bn.BeatId)).ToListAsync();
+        }
+        else
+        {
+            pairs = (await workbench.GetOrderedBeatsAsync(nodeId.Value))
+                .Select(ob => (ob.NodeId, ob.Beat.Id)).ToList();
+        }
+
+        Console.WriteLine($"[beat clear] Soft-deleting {pairs.Count} beat(s) from node {nodeId.Value}{(directOnly ? " (direct only)" : "")}…");
+        int n = 0;
+        foreach (var (ownerNodeId, beatId) in pairs)
+        {
+            await workbench.DeleteBeatAsync(ownerNodeId, beatId);
+            n++;
+        }
+        Console.WriteLine($"[beat clear] Done. {n} beat(s) disabled.");
+        return 0;
     }
 
     // ── insert ────────────────────────────────────────────────────────────────
@@ -255,6 +338,8 @@ public static class BeatCli
         Console.Error.WriteLine("Usage: ss --beat <subcommand> [args]");
         Console.Error.WriteLine("  insert  --node <slug|id> [--after <beatId>] [--text \"...\"]");
         Console.Error.WriteLine("  delete  --id <beatId> [--node <slug|id>]");
+        Console.Error.WriteLine("  clear   --node <slug|id>  (soft-delete every enabled beat in the node)");
+        Console.Error.WriteLine("  seed-spine --node <slug|id>  (create planned beats from the node's saved bible spine)");
         Console.Error.WriteLine("  update  --id <beatId> --text \"...\"  (use '-' for stdin)");
         Console.Error.WriteLine("  meta    --id <beatId> [--title \"...\"] [--kind \"...\"] [--description \"...\"] [--tone \"...\"] [--pace \"...\"] [--role \"...\"] [--scene-type \"...\"] [--act N] [--chapter-start]");
         Console.Error.WriteLine("  show    --id <beatId>");

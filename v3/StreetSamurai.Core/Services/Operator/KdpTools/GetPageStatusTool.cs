@@ -26,7 +26,12 @@ public class GetPageStatusTool : IKdpTool
 
     public string ParametersJsonSchema => """{ "type": "object", "properties": {} }""";
 
-    private const string Script = """
+    // isProcessing detection shares KdpFormHelpers.ProcessingWordsPattern rather than keeping its
+    // own copy of the regex — a second copy is exactly how KDP's "Running quality check. This
+    // could take up to a minute." banner slipped through undetected once already (2026-08-01):
+    // it matched neither the old copy here nor the old copy in the checkbox-ticking guard. One
+    // pattern maintained in one place (KdpFormHelpers) fixes both call sites at once.
+    private static string Script => $$"""
     (function() {
         var banners = Array.from(document.querySelectorAll(
             '[class*="alert"], [class*="success"], [class*="error"], [class*="banner"], [role="alert"], [role="dialog"]'
@@ -35,12 +40,12 @@ public class GetPageStatusTool : IKdpTool
         var uniqueBanners = Array.from(new Set(banners));
 
         // KDP shows a distinct "still working on it" status while the uploaded file is being
-        // converted/scanned server-side, separate from the eventual success/error banner — this
-        // is NOT reliably in a [class*=alert]/[role=alert] element, so scan broadly: both
-        // status-shaped class names AND plain visible text containing the words KDP actually
+        // converted/scanned/quality-checked server-side, separate from the eventual success/error
+        // banner — this is NOT reliably in a [class*=alert]/[role=alert] element, so scan broadly:
+        // both status-shaped class names AND plain visible text containing the words KDP actually
         // uses for this state. Confirmed necessary live: checking the confirmation checkboxes
         // while this is still showing does not reliably stick.
-        var processingWords = /preparing|processing|converting|scanning|please wait|uploading|in progress|is not (yet )?ready/i;
+        var processingWords = /{{KdpFormHelpers.ProcessingWordsPattern}}/i;
         var processingEls = Array.from(document.querySelectorAll(
             '[class*="status"], [class*="progress"], [class*="spinner"], [class*="loading"], [class*="processing"], [class*="preparing"]'
         )).map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })

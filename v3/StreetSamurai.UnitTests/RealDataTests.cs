@@ -316,8 +316,13 @@ public class RealDataTests
     [Test]
     public void AllCorponations_UseQuantaSymbol_NotPhiText()
     {
+        // engine/data/corponations/*.json is empty post-migration (canon is SQL now) —
+        // guard against this test silently passing vacuously over zero rows.
         var repo = new CorponationRepository(paths);
         var all = repo.GetAll();
+        Assert.That(all, Is.Empty,
+            "engine/data corponations corpus is expected empty post-JSON→SQL migration (SS-A45); " +
+            "if this fails, the file-based corpus is back and this test needs re-pointing at the SQL DB.");
 
         foreach (var corp in all)
         {
@@ -330,8 +335,15 @@ public class RealDataTests
     [Test]
     public void VocabularyEntries_HaveRequiredFields()
     {
+        // engine/data/vocabulary/*.json is empty post-migration (canon is SQL now) —
+        // guard against this test silently passing vacuously over zero rows.
         var repo = new VocabularyRepository(paths);
-        foreach (var v in repo.GetAll())
+        var all = repo.GetAll();
+        Assert.That(all, Is.Empty,
+            "engine/data vocabulary corpus is expected empty post-JSON→SQL migration (SS-A45); " +
+            "if this fails, the file-based corpus is back and this test needs re-pointing at the SQL DB.");
+
+        foreach (var v in all)
         {
             Assert.That(v.Term, Is.Not.Empty, $"Vocab entry has empty term");
             Assert.That(v.Definition, Is.Not.Empty, $"Vocab '{v.Term}' has empty definition");

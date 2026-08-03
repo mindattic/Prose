@@ -155,6 +155,7 @@ public class KdpOperatorService
         - Slug: {book.Slug}
         - Target version: V{book.Version}
         - Manuscript to upload: {manuscriptPath}
+        {(string.IsNullOrWhiteSpace(book.Subtitle) ? "- Subtitle: (none — this book has no subtitle set; skip step 1a, don't clear an existing KDP subtitle either)" : $"- Subtitle: {book.Subtitle}")}
         {(string.IsNullOrWhiteSpace(book.KdpTitleId) ? "" : $"- Known titleId from a previous run: {book.KdpTitleId} — pass this as find_and_open_book's known_title_id so it can skip straight there.")}
         {(string.IsNullOrWhiteSpace(book.Asin) ? "" : $"- Known ASIN: {book.Asin} — pass this as find_and_open_book's known_asin. This is the PRIMARY way to find this book: searching KDP's own bookshelf search box for this exact ASIN resolves to this one book with zero ambiguity, unlike the title text above (which commonly diverges from KDP's displayed title by a subtitle/series suffix).")}
 
@@ -181,6 +182,20 @@ public class KdpOperatorService
            log_note saying so and STOP, don't retry or invent another cause. If it returns
            found:false with no likelyPublishing, the book genuinely isn't on the bookshelf under
            that title — call log_note explaining that and STOP; do not guess or invent a match.
+
+        1a. If you were given a Subtitle above (not the "none" placeholder), call sync_subtitle
+            with it now, before anything else. This detours to the Details step and back — that's
+            expected, not an error. It reads the live Subtitle field and only writes to it if the
+            value differs from what you gave it; changed:false means it already matched and
+            nothing was touched. After calling it, call check_checkbox then click_button with
+            ["save and continue"] to advance off the Details step (same as any other step-change
+            in this flow — do this even if changed was false, to get back to Content), then call
+            get_page_status once to confirm you're looking at the Edit eBook content page again
+            before continuing to step 2. If sync_subtitle returns found:false, call log_note
+            noting the Subtitle field wasn't found and continue anyway — the manuscript replace
+            below matters more than this correction, don't let it block the rest of the flow. If
+            you were given the "none" placeholder, skip this step entirely — do not navigate to
+            Details, do not call sync_subtitle, do not clear an existing subtitle KDP already has.
 
         2. Once on the Edit eBook content page, call get_page_status BEFORE uploading anything.
            KDP shows the currently-attached manuscript's filename and version in a success
@@ -283,8 +298,8 @@ public class KdpOperatorService
           describing any error, listing state, or account condition. A tool returning an error
           (e.g. upload_manuscript failing, or get_page_status returning banners:[]) means exactly
           what it says and nothing more.
-        - Touch ONLY the manuscript-replace flow — do not change price, rights, categories, or
-          anything else on the listing.
+        - Touch ONLY the manuscript-replace flow and the Subtitle field (step 1a) — do not change
+          price, rights, categories, the title, the description, or anything else on the listing.
         - If a step fails or times out after a few retries, call log_note explaining what
           happened and stop — don't loop indefinitely on the same failing action.
         - When you are done (success or a clean stop with a reason logged), reply with a short

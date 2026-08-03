@@ -318,7 +318,7 @@ public class BeatCoordinationService
         {
             body = text.TrimEnd() + "\n\n" + section.TrimEnd() + "\n";
         }
-        await File.WriteAllTextAsync(file, body.TrimEnd() + "\n", ct);
+        await GeneratedFileWriter.WriteReadOnlyAsync(file, body.TrimEnd() + "\n", ct);
     }
 
     private static int[] ParseIntArray(string? json)

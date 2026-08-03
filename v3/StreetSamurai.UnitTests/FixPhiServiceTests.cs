@@ -1,84 +1,110 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
 
+/// <summary>
+/// Rewritten for the 2026-05-08 JSON→SQL canon migration: FixPhiService now
+/// scans Records.Json blobs (via DataScanUtility), not engine_data/*.json files.
+/// Seeds an Entity + Record row per fixture instead of writing a file.
+/// </summary>
 [TestFixture]
-[Ignore("Service migrated to SQL — tests need rewrite to seed Records.Json instead of files.")]
 public class FixPhiServiceTests
 {
     private string tempDir = "";
-    private string entityDir = "";
+    private TestPathProviderWithRoot paths = null!;
+    private IDbContextFactory<StreetSamuraiDbContext> factory = null!;
     private FixPhiService svc = null!;
 
     [SetUp]
     public void SetUp()
     {
-        tempDir   = Path.Combine(Path.GetTempPath(), $"ss_phi_{Guid.NewGuid():N}");
-        entityDir = Path.Combine(tempDir, "engine_data", "people");
-        Directory.CreateDirectory(entityDir);
-        var paths = new TestPathProviderWithRoot(tempDir);
-        svc = new FixPhiService(TestDbFactory.For(paths, "phi"));
+        tempDir = Path.Combine(Path.GetTempPath(), $"ss_phi_{Guid.NewGuid():N}");
+        Directory.CreateDirectory(tempDir);
+        paths = new TestPathProviderWithRoot(tempDir);
+        TestDbFactory.Reset(paths);
+        factory = TestDbFactory.For(paths, "phi");
+        svc = new FixPhiService(factory);
     }
 
     [TearDown]
     public void TearDown()
     {
+        TestDbFactory.Reset(paths);
         if (Directory.Exists(tempDir)) Directory.Delete(tempDir, recursive: true);
     }
 
-    private string WriteEntity(object data)
+    private Guid SeedEntity(object data)
     {
-        var path = Path.Combine(entityDir, $"{Guid.NewGuid():N}.json");
-        File.WriteAllText(path, JsonSerializer.Serialize(data));
-        return path;
+        var id = Guid.NewGuid();
+        using var db = factory.CreateDbContext();
+        db.Entities.Add(new Entity
+        {
+            Id         = id,
+            EntityType = "character",
+            Name       = "Test Entity",
+            Slug       = $"test-entity-{id:N}",
+            Status     = "canon",
+            IsActive   = true,
+            CreatedAt  = DateTime.UtcNow,
+            ModifiedAt = DateTime.UtcNow,
+        });
+        db.Records.Add(new Record { EntityId = id, Json = JsonSerializer.Serialize(data) });
+        db.SaveChanges();
+        return id;
     }
 
-    private JsonObject ReadEntity(string path) =>
-        JsonNode.Parse(File.ReadAllText(path)) as JsonObject ?? throw new InvalidOperationException();
+    private JsonObject ReadEntity(Guid id)
+    {
+        using var db = factory.CreateDbContext();
+        var row = db.Records.First(r => r.EntityId == id);
+        return JsonNode.Parse(row.Json) as JsonObject ?? throw new InvalidOperationException();
+    }
 
     // ── Phi → Quanta replacement ──────────────────────────────────────────────
 
     [Test]
     public async Task Run_PhiUppercaseInDescription_ReplacedWithQuanta()
     {
-        var path = WriteEntity(new { name = "Test", description = "Costs 50 Phi per dose." });
+        var id = SeedEntity(new { name = "Test", description = "Costs 50 Phi per dose." });
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(path)["description"]?.GetValue<string>(), Is.EqualTo("Costs 50 Quanta per dose."));
+        Assert.That(ReadEntity(id)["description"]?.GetValue<string>(), Is.EqualTo("Costs 50 Quanta per dose."));
     }
 
     [Test]
     public async Task Run_PhiLowercaseInDescription_ReplacedWithQuanta()
     {
-        var path = WriteEntity(new { name = "Test", description = "Price is 100 phi." });
+        var id = SeedEntity(new { name = "Test", description = "Price is 100 phi." });
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(path)["description"]?.GetValue<string>(), Is.EqualTo("Price is 100 quanta."));
+        Assert.That(ReadEntity(id)["description"]?.GetValue<string>(), Is.EqualTo("Price is 100 quanta."));
     }
 
     [Test]
     public async Task Run_PhiSymbolUnchanged()
     {
-        var path = WriteEntity(new { name = "Test", description = "Costs Φ500 per unit." });
+        var id = SeedEntity(new { name = "Test", description = "Costs Φ500 per unit." });
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(path)["description"]?.GetValue<string>(), Is.EqualTo("Costs Φ500 per unit."));
+        Assert.That(ReadEntity(id)["description"]?.GetValue<string>(), Is.EqualTo("Costs Φ500 per unit."));
     }
 
     [Test]
     public async Task Run_MixedPhiAndSymbol_OnlyWordFormReplaced()
     {
-        var path = WriteEntity(new { name = "Test", description = "Φ50 phi per transaction." });
+        var id = SeedEntity(new { name = "Test", description = "Φ50 phi per transaction." });
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(path)["description"]?.GetValue<string>(), Is.EqualTo("Φ50 quanta per transaction."));
+        Assert.That(ReadEntity(id)["description"]?.GetValue<string>(), Is.EqualTo("Φ50 quanta per transaction."));
     }
 
     // ── Word-boundary: no partial replacements ────────────────────────────────
@@ -87,11 +113,11 @@ public class FixPhiServiceTests
     public async Task Run_PhiAsPartOfWord_NotReplaced()
     {
         // "Philip" starts with "Phil" but \bPhi\b should not match "Philip"
-        var path = WriteEntity(new { name = "Test", description = "Philip owes 50 Phi." });
+        var id = SeedEntity(new { name = "Test", description = "Philip owes 50 Phi." });
 
         await svc.RunAsync();
 
-        var desc = ReadEntity(path)["description"]?.GetValue<string>();
+        var desc = ReadEntity(id)["description"]?.GetValue<string>();
         Assert.That(desc, Does.Contain("Philip"));
         Assert.That(desc, Does.Contain("Quanta"));
     }
@@ -101,21 +127,21 @@ public class FixPhiServiceTests
     [Test]
     public async Task Run_PhiInNameField_NotReplaced()
     {
-        var path = WriteEntity(new { name = "Phi Korvann", description = "A person." });
+        var id = SeedEntity(new { name = "Phi Korvann", description = "A person." });
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(path)["name"]?.GetValue<string>(), Is.EqualTo("Phi Korvann"));
+        Assert.That(ReadEntity(id)["name"]?.GetValue<string>(), Is.EqualTo("Phi Korvann"));
     }
 
     [Test]
     public async Task Run_PhiInTitle_NotReplaced()
     {
-        var path = WriteEntity(new { name = "Person", title = "Phi Chancellor", description = "Costs 10 Phi." });
+        var id = SeedEntity(new { name = "Person", title = "Phi Chancellor", description = "Costs 10 Phi." });
 
         await svc.RunAsync();
 
-        var obj = ReadEntity(path);
+        var obj = ReadEntity(id);
         Assert.That(obj["title"]?.GetValue<string>(), Is.EqualTo("Phi Chancellor"));
         Assert.That(obj["description"]?.GetValue<string>(), Is.EqualTo("Costs 10 Quanta."));
     }
@@ -123,11 +149,11 @@ public class FixPhiServiceTests
     [Test]
     public async Task Run_PhiInCodename_NotReplaced()
     {
-        var path = WriteEntity(new { name = "Agent", codename = "Operation Phi", description = "Budget is 200 phi." });
+        var id = SeedEntity(new { name = "Agent", codename = "Operation Phi", description = "Budget is 200 phi." });
 
         await svc.RunAsync();
 
-        var obj = ReadEntity(path);
+        var obj = ReadEntity(id);
         Assert.That(obj["codename"]?.GetValue<string>(), Is.EqualTo("Operation Phi"));
         Assert.That(obj["description"]?.GetValue<string>(), Is.EqualTo("Budget is 200 quanta."));
     }
@@ -137,11 +163,11 @@ public class FixPhiServiceTests
     [Test]
     public async Task Run_PhiInNestedObject_Replaced()
     {
-        var path = WriteEntity(new { name = "Test", stats = new { note = "Earns 500 phi annually." } });
+        var id = SeedEntity(new { name = "Test", stats = new { note = "Earns 500 phi annually." } });
 
         await svc.RunAsync();
 
-        var obj = ReadEntity(path);
+        var obj = ReadEntity(id);
         var stats = obj["stats"] as JsonObject;
         Assert.That(stats?["note"]?.GetValue<string>(), Is.EqualTo("Earns 500 quanta annually."));
     }
@@ -151,11 +177,11 @@ public class FixPhiServiceTests
     [Test]
     public async Task Run_PhiInArrayElement_Replaced()
     {
-        var path = WriteEntity(new { name = "Test", notes = new[] { "Costs 100 phi.", "No phi here actually." } });
+        var id = SeedEntity(new { name = "Test", notes = new[] { "Costs 100 phi.", "No phi here actually." } });
 
         await svc.RunAsync();
 
-        var obj = ReadEntity(path);
+        var obj = ReadEntity(id);
         var notes = obj["notes"] as JsonArray;
         Assert.That(notes?[0]?.GetValue<string>(), Is.EqualTo("Costs 100 quanta."));
         Assert.That(notes?[1]?.GetValue<string>(), Is.EqualTo("No quanta here actually."));
@@ -166,12 +192,12 @@ public class FixPhiServiceTests
     [Test]
     public async Task Run_NoPhiPresent_NoChange()
     {
-        var path = WriteEntity(new { name = "Test", description = "Nothing currency-related here." });
-        var before = File.ReadAllText(path);
+        var id = SeedEntity(new { name = "Test", description = "Nothing currency-related here." });
+        var before = ReadEntity(id).ToJsonString();
 
         await svc.RunAsync();
 
-        Assert.That(File.ReadAllText(path), Is.EqualTo(before));
+        Assert.That(ReadEntity(id).ToJsonString(), Is.EqualTo(before));
     }
 
     // ── Result count ─────────────────────────────────────────────────────────
@@ -179,8 +205,8 @@ public class FixPhiServiceTests
     [Test]
     public async Task Run_MultiplePhi_ReturnsCorrectChangeCount()
     {
-        WriteEntity(new { name = "A", description = "100 Phi for service." });
-        WriteEntity(new { name = "B", description = "No currency." });
+        SeedEntity(new { name = "A", description = "100 Phi for service." });
+        SeedEntity(new { name = "B", description = "No currency." });
 
         var result = await svc.RunAsync();
 

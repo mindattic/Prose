@@ -48,7 +48,7 @@ if (UniverseBootstrap.RequestedSlug == null
     if (!isAgnostic)
     {
         Console.Error.WriteLine(
-            "[universe] No universe scope given. Pass --universe glmz|scry (or set SS_UNIVERSE) — " +
+            "[universe] No universe scope given. Pass --universe glmz|scry|gspl (or set SS_UNIVERSE) — " +
             "this command touches universe-scoped data and no longer silently defaults to GLMZ.");
         Environment.ExitCode = 2;
         return;
@@ -183,6 +183,24 @@ if (args.Contains("--add-corponation"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await AddCorponationCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: insert a Weapon from a WeaponryData JSON file.
+//   ss --add-weapon --file path.json
+if (args.Contains("--add-weapon"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await AddWeaponryCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: insert an Apparel item from an ApparelData JSON file.
+//   ss --add-apparel --file path.json
+if (args.Contains("--add-apparel"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await AddApparelCli.RunAsync(args, sp);
     return;
 }
 
@@ -787,8 +805,8 @@ if (args.Contains("--publish-book"))
     return;
 }
 
-// CLI mode: seed Amazon KDP keywords for published nodes.
-//   ss --seed-keywords [--slug <slug>]
+// CLI mode: set Amazon KDP backend keywords for one node (no generic default).
+//   ss --seed-keywords --slug <slug> --keywords "phrase one|phrase two|..."
 if (args.Contains("--seed-keywords"))
 {
     var sp = BuildCoreServices(args);
@@ -2075,7 +2093,25 @@ if (args.Contains("--cost") && (args.Length == 1 || (args.Length == 2 && (args.C
 // and already has a try/catch fallback to an empty/no-op scope.
 static IServiceProvider Finalize(IServiceProvider sp)
 {
-    sp.GetRequiredService<IUniverseContext>();
+    var universe = sp.GetRequiredService<IUniverseContext>();
+
+    // HARD RULE: an explicitly-requested --universe/SS_UNIVERSE slug that doesn't match any
+    // registered universe must NEVER silently fall through to the persisted "current_universe"
+    // default. Without this check, a typo (`--universe scyr`) or a slug that hasn't been
+    // registered yet resolves to Guid.Empty in UniverseContext.EnsureLoaded's catalog lookup,
+    // processOverride stays unset, and the command silently scopes to whatever the last human
+    // left as default — the exact cross-universe bleed this rule exists to make impossible.
+    // "Unacceptable" per user directive 2026-08-01: fail loud, never fail quiet.
+    var requested = UniverseBootstrap.RequestedSlug ?? Environment.GetEnvironmentVariable("SS_UNIVERSE");
+    if (!string.IsNullOrWhiteSpace(requested)
+        && !string.Equals(universe.CurrentSlug, requested, StringComparison.OrdinalIgnoreCase))
+    {
+        var known = string.Join(", ", universe.ListUniverses().Select(u => u.Slug));
+        Console.Error.WriteLine(
+            $"[universe] Unknown universe slug '{requested}'. Registered universes: {known}. " +
+            "Refusing to fall back to a default — pass a valid --universe slug.");
+        Environment.Exit(2);
+    }
     return sp;
 }
 

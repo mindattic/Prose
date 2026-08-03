@@ -1,30 +1,36 @@
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
 
-// RETIRED by the 2026-05-08 JSON→SQL canon migration. These tests seed file-based
-// engine_data/people/*.json fixtures and assert the rule scan flags violations from them,
-// but WorldConsistencyService now scans the SQL DB (an empty in-memory TestDbFactory here),
-// so written files are ignored. The "clean → no violations" case passes only vacuously.
-// To re-enable: rewrite to seed the SQL test DB instead of writing JSON files.
+/// <summary>
+/// Rewritten for the 2026-05-08 JSON→SQL canon migration: WorldConsistencyService's
+/// rule-scan phase now reads Records.Json blobs directly from SQL (CollectRecords),
+/// not engine_data/*.json files. Seeds an Entity + Record row per fixture instead of
+/// writing a file.
+/// </summary>
 [TestFixture]
-[Ignore("Retired file-based path (2026-05-08 JSON→SQL migration); rewrite to seed the SQL test DB. See class comment.")]
 public class WorldConsistencyServiceTests
 {
     private string tempDir = "";
-    private string peopleDir = "";
+    private TestPathProviderWithRoot paths = null!;
+    private IDbContextFactory<StreetSamuraiDbContext> factory = null!;
     private WorldConsistencyService svc = null!;
 
     [SetUp]
     public void SetUp()
     {
-        tempDir    = Path.Combine(Path.GetTempPath(), $"ss_wcs_{Guid.NewGuid():N}");
-        peopleDir  = Path.Combine(tempDir, "engine_data", "people");
-        Directory.CreateDirectory(peopleDir);
+        tempDir = Path.Combine(Path.GetTempPath(), $"ss_wcs_{Guid.NewGuid():N}");
+        Directory.CreateDirectory(tempDir);
+        paths = new TestPathProviderWithRoot(tempDir);
+        TestDbFactory.Reset(paths);
+        factory = TestDbFactory.For(paths, "consistency");
 
         var services = new ServiceCollection();
         services.AddLogging();
@@ -32,10 +38,9 @@ public class WorldConsistencyServiceTests
         services.AddSingleton(new SettingsService(tempDir));
         var provider = services.BuildServiceProvider();
 
-        var paths = new TestPathProviderWithRoot(tempDir);
         svc = new WorldConsistencyService(
             provider.GetRequiredService<IServiceScopeFactory>(),
-            StreetSamurai.Core.Data.TestDbFactory.For(paths, "consistency"),
+            factory,
             NullLoggers.For<WorldConsistencyService>());
 
         svc.RunRuleScan      = true;
@@ -46,13 +51,27 @@ public class WorldConsistencyServiceTests
     [TearDown]
     public void TearDown()
     {
+        TestDbFactory.Reset(paths);
         if (Directory.Exists(tempDir)) Directory.Delete(tempDir, recursive: true);
     }
 
-    private void WriteEntity(string dir, object data)
+    private void SeedEntity(object data, string entityType = "character")
     {
-        var path = Path.Combine(dir, $"{Guid.NewGuid():N}.json");
-        File.WriteAllText(path, JsonSerializer.Serialize(data));
+        var id = Guid.NewGuid();
+        using var db = factory.CreateDbContext();
+        db.Entities.Add(new Entity
+        {
+            Id         = id,
+            EntityType = entityType,
+            Name       = "Test Entity",
+            Slug       = $"test-entity-{id:N}",
+            Status     = "canon",
+            IsActive   = true,
+            CreatedAt  = DateTime.UtcNow,
+            ModifiedAt = DateTime.UtcNow,
+        });
+        db.Records.Add(new Record { EntityId = id, Json = JsonSerializer.Serialize(data) });
+        db.SaveChanges();
     }
 
     // ── Rule scan: no violations ───────────────────────────────────────────
@@ -60,7 +79,7 @@ public class WorldConsistencyServiceTests
     [Test]
     public async Task RuleScan_CleanEntities_NoViolations()
     {
-        WriteEntity(peopleDir, new { name = "Kira Voss", description = "A freelancer in Z2." });
+        SeedEntity(new { name = "Kira Voss", description = "A freelancer in Z2." });
 
         await svc.RunAsync();
 
@@ -72,7 +91,7 @@ public class WorldConsistencyServiceTests
     [Test]
     public async Task RuleScan_MetroPoliceInDescription_ReportsViolation()
     {
-        WriteEntity(peopleDir, new { name = "Bent Cop", description = "Works for the metro police precinct in Z1." });
+        SeedEntity(new { name = "Bent Cop", description = "Works for the metro police precinct in Z1." });
 
         await svc.RunAsync();
 
@@ -83,7 +102,7 @@ public class WorldConsistencyServiceTests
     [Test]
     public async Task RuleScan_MeridianPdInDescription_ReportsViolation()
     {
-        WriteEntity(peopleDir, new { name = "Badge", description = "Active Meridian PD detective patrolling Z2." });
+        SeedEntity(new { name = "Badge", description = "Active Meridian PD detective patrolling Z2." });
 
         await svc.RunAsync();
 
@@ -95,69 +114,81 @@ public class WorldConsistencyServiceTests
     [Test]
     public async Task RuleScan_BehemothIsAlive_ReportsViolation()
     {
-        WriteEntity(peopleDir, new { name = "Watcher", description = "The Iowan Behemoth is a living machine." });
+        SeedEntity(new { name = "Watcher", description = "The Iowan Behemoth is a living machine." });
 
         await svc.RunAsync();
 
         Assert.That(svc.RuleViolations.Any(v => v.Rule.Contains("Behemoth")), Is.True);
     }
 
-    // ── Rule: No Shelf ────────────────────────────────────────────────────
+    // ── Rule: Phi symbol ────────────────────────────────────────────────────
+
+    [Test]
+    public async Task RuleScan_PhiSymbolMisdescribed_ReportsViolation()
+    {
+        SeedEntity(new { name = "Currency Note", description = "The phi symbol represents the letter phi in Greek." });
+
+        await svc.RunAsync();
+
+        Assert.That(svc.RuleViolations.Any(v => v.Rule.Contains("phi") || v.Rule.Contains("Φ")), Is.True);
+    }
+
+    // ── Rule: The Shelf ─────────────────────────────────────────────────────
 
     [Test]
     public async Task RuleScan_TheShelfDistrict_ReportsViolation()
     {
-        WriteEntity(peopleDir, new { name = "Resident", description = "Lives in the shelf district near the wall." });
+        SeedEntity(new { name = "Resident", description = "Lives in the shelf district near the wall." });
 
         await svc.RunAsync();
 
         Assert.That(svc.RuleViolations.Any(v => v.Rule.Contains("Shelf")), Is.True);
     }
 
-    // ── Rule: No wedding cake ─────────────────────────────────────────────
+    // ── Rule: wedding cake tiers ────────────────────────────────────────────
 
     [Test]
     public async Task RuleScan_WeddingCakeTiers_ReportsViolation()
     {
-        WriteEntity(peopleDir, new { name = "Architect", description = "Designed the tiered wedding cake city layout." });
+        SeedEntity(new { name = "Skyline", description = "GLMZ rises in a wedding cake tiers pattern above the bay." });
 
         await svc.RunAsync();
 
         Assert.That(svc.RuleViolations.Any(v => v.Rule.Contains("wedding cake")), Is.True);
     }
 
-    // ── Rule: Ferrogate ───────────────────────────────────────────────────
+    // ── Rule: Ferrogate railroad ────────────────────────────────────────────
 
     [Test]
     public async Task RuleScan_FerrogateRailroad_ReportsViolation()
     {
-        WriteEntity(peopleDir, new { name = "Foreman", description = "Manages the Ferrogate railroad cargo operations." });
+        SeedEntity(new { name = "Old Line", description = "Cargo moves on the Ferrogate railroad south of the wall." });
 
         await svc.RunAsync();
 
         Assert.That(svc.RuleViolations.Any(v => v.Rule.Contains("Ferrogate")), Is.True);
     }
 
-    // ── Violation includes entity name and matched text ────────────────────
+    // ── Violation record shape ──────────────────────────────────────────────
 
     [Test]
     public async Task RuleScan_ViolationContainsEntityName()
     {
-        WriteEntity(peopleDir, new { name = "Dirty Badge", description = "Currently a Meridian PD officer in active service." });
+        SeedEntity(new { name = "Bent Cop", description = "Works for the metro police precinct." });
 
         await svc.RunAsync();
 
-        Assert.That(svc.RuleViolations[0].EntityName, Is.EqualTo("Dirty Badge"));
+        Assert.That(svc.RuleViolations[0].EntityName, Is.EqualTo("Bent Cop"));
     }
 
     [Test]
     public async Task RuleScan_ViolationContainsMatchedText()
     {
-        WriteEntity(peopleDir, new { name = "Cop", description = "Reports to the metro police precinct." });
+        SeedEntity(new { name = "Bent Cop", description = "Works for the metro police precinct." });
 
         await svc.RunAsync();
 
-        Assert.That(svc.RuleViolations[0].MatchedText, Is.Not.Empty);
+        Assert.That(svc.RuleViolations[0].MatchedText, Does.Contain("metro police"));
     }
 
     // ── Dedup with no Claude ──────────────────────────────────────────────
@@ -167,7 +198,7 @@ public class WorldConsistencyServiceTests
     {
         var names = new[] { "Alex Kron", "Alex Kron" };
         foreach (var n in names)
-            WriteEntity(peopleDir, new { name = n, description = "A person." });
+            SeedEntity(new { name = n, description = "A person." });
 
         svc.RunRuleScan      = false;
         svc.RunConflictCheck = false;
@@ -182,8 +213,8 @@ public class WorldConsistencyServiceTests
     [Test]
     public async Task Dedup_VeryDifferentNames_NotDuplicates()
     {
-        WriteEntity(peopleDir, new { name = "Alex Kron", description = "Person." });
-        WriteEntity(peopleDir, new { name = "Zephyr Nakamura-Bell", description = "Other person." });
+        SeedEntity(new { name = "Alex Kron", description = "Person." });
+        SeedEntity(new { name = "Zephyr Nakamura-Bell", description = "Other person." });
 
         svc.RunRuleScan      = false;
         svc.RunConflictCheck = false;
@@ -199,8 +230,8 @@ public class WorldConsistencyServiceTests
     public async Task Dedup_NearMatchNames_ReportedAboveThreshold()
     {
         // "Kira Voss" vs "Kira Voss" — identical, score = 1.0
-        WriteEntity(peopleDir, new { name = "Kira Voss", description = "First." });
-        WriteEntity(peopleDir, new { name = "Kira Voss", description = "Second." });
+        SeedEntity(new { name = "Kira Voss", description = "First." });
+        SeedEntity(new { name = "Kira Voss", description = "Second." });
 
         svc.RunRuleScan      = false;
         svc.RunConflictCheck = false;
@@ -215,8 +246,8 @@ public class WorldConsistencyServiceTests
     [Test]
     public async Task Dedup_ThresholdFiltersLowSimilarity()
     {
-        WriteEntity(peopleDir, new { name = "Alex Kron", description = "." });
-        WriteEntity(peopleDir, new { name = "Alexa Krone", description = "." }); // similar but not above 0.95
+        SeedEntity(new { name = "Alex Kron", description = "." });
+        SeedEntity(new { name = "Alexa Krone", description = "." }); // similar but not above 0.95
 
         svc.RunRuleScan      = false;
         svc.RunConflictCheck = false;

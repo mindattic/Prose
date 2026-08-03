@@ -727,8 +727,29 @@ public class NodeTools
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
 
-        var r = await rebuilder.RebuildAsync(node.Id, apply);
-        return JsonSerializer.Serialize(new
+        // Beats live on chapter children, not the book node (SS-A43) — rebeat must
+        // target the chapter(s). RebuildAsync's own beat lookup walks down to child
+        // beats, but its write-back (delete old BeatNodes / insert new) uses whatever
+        // id it's given, so passing the book id here silently wrote the resegmented
+        // beats onto the book node while the chapter's original beats sat untouched.
+        var targets = new List<(Guid Id, string Label)> { (node.Id, node.Title ?? node.Slug ?? node.Id.ToString()) };
+        if (node.Kind == "book")
+        {
+            await using var db = await dbFactory.CreateDbContextAsync();
+            var chapters = await db.Nodes.AsNoTracking()
+                .Where(c => c.ParentNodeId == node.Id && c.Kind == "chapter")
+                .OrderBy(c => c.SortKey)
+                .Select(c => new { c.Id, c.Title })
+                .ToListAsync();
+            if (chapters.Count > 0)
+                targets = chapters.Select(c => (c.Id, $"{node.Title} / {c.Title}")).ToList();
+        }
+
+        var reports = new List<BeatRebuildService.BeatRebuildReport>();
+        foreach (var (id, _) in targets)
+            reports.Add(await rebuilder.RebuildAsync(id, apply));
+
+        object Shape(BeatRebuildService.BeatRebuildReport r) => new
         {
             node_id      = r.NodeId,
             slug           = r.Slug,
@@ -740,7 +761,11 @@ public class NodeTools
             guard_passed   = r.GuardPassed,
             backup_path    = r.BackupPath,
             note           = r.Note,
-        }, CanonTools.JsonOpts);
+        };
+
+        return reports.Count == 1
+            ? JsonSerializer.Serialize(Shape(reports[0]), CanonTools.JsonOpts)
+            : JsonSerializer.Serialize(new { chapters = reports.Select(Shape).ToList() }, CanonTools.JsonOpts);
     }
 
     /// <summary>Export a node as a KDP-ready Word .docx to the configured export directory (defaults to Desktop). CLI equivalent: `ss --export-node`, which additionally emits .epub/.pdf/.txt. Local file rendering only — no KDP API integration.</summary>
@@ -844,6 +869,7 @@ public class NodeTools
     public async Task<string> UpdateBook(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
+        [Description("Subtitle (e.g. 'A GLMZ Novella'). Omit to leave unchanged; pass empty string to clear.")] string? subtitle = null,
         [Description("Back-of-book description. Omit to leave unchanged; pass empty string to clear.")] string? description = null,
         [Description("Kind label: book | chapter | episode | novella | novel | node | scene | saga | anthology. Omit to leave unchanged.")] string? kind = null,
         [Description("Status: draft | ready | canon | archived. Omit to leave unchanged.")] string? status = null,
@@ -862,6 +888,7 @@ public class NodeTools
             if (row == null) return JsonSerializer.Serialize(new { error = "node_row_missing", id = node.Id }, CanonTools.JsonOpts);
 
             if (title        != null) row.Title        = title;
+            if (subtitle     != null) row.Subtitle     = string.IsNullOrEmpty(subtitle) ? null : subtitle;
             if (description  != null) row.Description  = string.IsNullOrEmpty(description) ? null : description;
             if (kind         != null) row.Kind         = kind;
             if (status       != null) row.Status       = status;

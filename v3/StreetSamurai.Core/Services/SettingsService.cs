@@ -953,7 +953,7 @@ public class SettingsService : IDisposable
         public int ReviewPanel { get; set; } = 128;
         public int ReviewReaders { get; set; } = 50;
         public string ReviewJudgeProvider { get; set; } = "gemini";
-        public string ReviewAllowedProviders { get; set; } = "claude-api,openai,gemini";
+        public string ReviewAllowedProviders { get; set; } = "claude-api";
         public int ReviewMaxConcurrency { get; set; } = 10;
         // Local-LLM review (--local) defaults
         public string LocalReviewBaseUrl { get; set; } = "http://localhost:11434/v1/chat/completions";

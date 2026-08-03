@@ -2,11 +2,11 @@
   "nodeCode": "ATTE",
   "slug": "attendance-019ebf4c",
   "title": "Attendance",
-  "generatedAtUtc": "2026-07-27 03:22:27Z",
+  "generatedAtUtc": "2026-08-01 15:09:29Z",
   "totalBeats": 354,
-  "covered": 0,
+  "covered": 31,
   "chapterGranular": false,
-  "storyScope": {
+  "bookScope": {
     "TemporalScheme": "linear",
     "ResolutionMode": "unresolved",
     "MoralPolarity": "ambivalent",
@@ -16,7 +16,6 @@
     "HasBlueprint": true
   },
   "flagCounts": {
-    "MISSING_MEANING": 354,
     "UNSCORED": 354,
     "NO_CONSTRUCTION": 323
   },
@@ -27,16 +26,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Opens the story by establishing the Veil\u0027s grinding, mechanical rhythm as an oppressive baseline reality rather than a normal city morning.",
       "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 328,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf4-780e-8e92-2fceb433d93d",
@@ -44,16 +43,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Uses a small physical detail\u2014dead advertising\u2014to visually establish the border between the two governing systems.",
       "EscalationTarget": "3",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 197,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf6-705c-9787-d139d93eabff",
@@ -61,16 +60,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds the divided city in mundane human texture, showing how bureaucratic neglect stalls ordinary lives on the poorer side.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 360,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf6-7cae-aeab-5fbe0291368d",
@@ -78,16 +77,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Yemina and her ownership of the seam, framing the divide as something felt through paperwork rather than ideology.",
       "EscalationTarget": "4",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 326,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf6-7e1b-be1d-87e6029dbbff",
@@ -95,16 +94,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Demonstrates the absurd administrative fracture underlying the setting through a single bridge answering to two incompatible authorities.",
       "EscalationTarget": "5",
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 327,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf6-7f96-94eb-5503eb13f3bc",
@@ -112,16 +111,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals how the dual bureaucracy actively endangers children by letting them fall between incompatible tracking systems.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 545,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf6-75be-81a8-d0136188b5ff",
@@ -129,16 +128,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Uses sensory displacement\u2014the misdirected cold\u2014to underscore how the divided city\u0027s geography feels subtly wrong and disorienting.",
       "EscalationTarget": "6",
       "EventType": "confession",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 363,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf6-7ca7-a8a9-39c2e13ad31e",
@@ -146,16 +145,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Shows Yemina\u0027s disciplined self-control, quietly establishing her character through a small bodily reaction she overrides.",
       "EscalationTarget": "7",
       "EventType": "confession",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 320,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf6-7efe-a2a9-b16eff550d35",
@@ -163,16 +162,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Personalizes the case by revealing Yemina\u0027s emotional investment in three children the system treats as abstractions.",
       "EscalationTarget": "7",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 449,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7662-8f96-0eb0bc3794c3",
@@ -180,16 +179,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sets the plot in motion as Yemina resolves to act outside her jurisdiction to reach a hidden truth before bureaucracy can stop her.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 436,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7942-b00d-57d66273d0b5",
@@ -197,16 +196,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Opens the story on a spare, isolating image that establishes the protagonist\u0027s solitary forward motion as the narrative\u0027s baseline state.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 10,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-78ad-8717-050048fbd346",
@@ -214,16 +213,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the corporate world\u0027s texture through an object, establishing how contractor life erodes identity into anonymous neutrality.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 489,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-750b-9a2b-cb54ac5cabbf",
@@ -231,16 +230,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds the protagonist in mundane routine while quietly establishing the fractured, corporatized geography she navigates daily.",
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 234,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7154-8543-106c56fd49f2",
@@ -248,16 +247,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the setting\u0027s central worldbuilding conceit: corporate boundaries replacing civic ones, made tangible through sensory contrast.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 788,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7d20-9ac1-e5b96668efc8",
@@ -265,16 +264,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens the world\u0027s fragmentation by showing how competing corporate branding literally divides public infrastructure and neglect.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 703,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-71f0-83a9-bc8f27239c20",
@@ -282,16 +281,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reinforces the boundary motif through sound, showing the protagonist\u0027s practiced, weary familiarity with the divided city.",
       "EscalationTarget": "9",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 342,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-720c-afd8-4c38e72d6eeb",
@@ -299,16 +298,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Characterizes the protagonist through controlled body language, revealing a guarded professional history of surveillance and self-discipline.",
       "EscalationTarget": "8",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 286,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7963-973b-074cd8260878",
@@ -316,16 +315,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the protagonist\u0027s case work and stakes, foregrounding the missing-children thread that will drive her investigation.",
       "EscalationTarget": "9",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 475,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-79ea-979c-0c21b31bee99",
@@ -333,16 +332,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Plants a mysterious recurring anomaly and links it ominously to the timeline of her personal cases, seeding dread.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 598,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7247-844b-b0883804f576",
@@ -350,16 +349,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the mystery into confrontation, revealing a corporate cover-up as her own neural hardware is shown to betray her.",
       "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 955,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-72ff-992c-b059921fd505",
@@ -367,16 +366,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the story\u0027s inciting unease by showing Yemina sense that the case numbers hint at a hidden scale beyond her authorized knowledge.",
       "EscalationTarget": "9",
       "EventType": "arrival",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 462,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-790b-aed7-cc0a668ae8c9",
@@ -384,16 +383,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the setting through Yemina\u0027s habitual analytical lens, establishing her character method of reading institutions from their material history.",
       "EscalationTarget": "9",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 365,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7aef-80f5-0369efcfb384",
@@ -401,16 +400,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Develops the building as a symbol of fragmented, unaccountable authority, foreshadowing the bureaucratic tangle Yemina is about to enter.",
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 548,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-76df-b4ae-e5bd833a7691",
@@ -418,16 +417,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens the setting\u0027s texture and Yemina\u0027s expertise, grounding the mystery in tactile, sensory detail that signals long institutional neglect.",
       "EscalationTarget": "7",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 524,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7620-9147-a2fce3988204",
@@ -435,16 +434,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Continues cataloguing the building\u0027s layered history to reinforce the theme of patchwork governance standing in for real repair.",
       "EscalationTarget": "7",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 345,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7e3a-a0b2-8749ed6dffbc",
@@ -452,16 +451,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Extends the visual metaphor of unfinished healing to underscore that the system\u0027s newest efforts have also failed, escalating the sense of decay.",
       "EscalationTarget": "8",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 513,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-756b-bc1f-177fae979318",
@@ -469,16 +468,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "States the chapter\u0027s thematic thesis explicitly, linking the building\u0027s condition to Yemina\u0027s broader disillusionment with institutions she\u0027s served.",
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 252,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7368-a824-95b3aef4abf2",
@@ -486,16 +485,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the plaque\u0027s hollow permanence to sharpen the irony of institutional memory outliving its own relevance or accountability.",
       "EscalationTarget": "6",
       "EventType": "exchange",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 506,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-72af-8f28-c58af3cd07e5",
@@ -503,16 +502,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Shows Yemina\u0027s deliberate professionalism, establishing that she treats observation itself as a form of evidence-gathering before compromise can occur.",
       "EscalationTarget": "5",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 283,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-7a0e-9222-705856bc6fd9",
@@ -520,16 +519,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the scene into a thriller beat by revealing an unseen authority actively suppressing her record, escalating the story\u0027s central mystery.",
       "EscalationTarget": "4",
       "EventType": "repair",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 378,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf7-771c-9b4d-39571a2b0008",
@@ -537,16 +536,16 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the story\u0027s central obstacle as institutional opacity, framing authority as physically and symbolically powerless against systems designed to withhold.",
       "EscalationTarget": "3",
       "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 347,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa02a-faf8-76a8-a184-828270c48214",
@@ -554,10 +553,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds the investigation in tactile, remembered dread, signaling Yemina\u0027s prior familiarity with places like this one.",
       "BeatTags": [],
       "ProseLength": 378,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -569,10 +568,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Undercuts any hope of an easy investigation by making the building\u0027s single cooperation ironic and minimal.",
       "BeatTags": [],
       "ProseLength": 134,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -584,10 +583,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the school\u0027s decayed physicality as evidence of institutional neglect the reader must read alongside Yemina.",
       "BeatTags": [],
       "ProseLength": 637,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -599,10 +598,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s practiced cynicism, framing the setting as part of a pattern rather than an isolated failure.",
       "BeatTags": [],
       "ProseLength": 112,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -614,10 +613,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the reception android as an uncanny gatekeeper whose manufactured warmth masks calculated withholding.",
       "BeatTags": [],
       "ProseLength": 490,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -629,10 +628,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Signals the android\u0027s controlling grip on the investigation by naming the case\u0027s central mystery, Kito\u0027s disappearance, before Yemina can ask.",
       "BeatTags": [],
       "ProseLength": 388,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -644,10 +643,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s investigative instinct, establishing her theory that absence of paperwork marks the most important witness.",
       "BeatTags": [],
       "ProseLength": 497,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -659,10 +658,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Plants suspicion that the android is stalling or managing Yemina, foreshadowing hidden coordination within the building.",
       "BeatTags": [],
       "ProseLength": 288,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -674,10 +673,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the scene into momentum, establishing Yemina\u0027s resolve to act before the institution can intercept her.",
       "BeatTags": [],
       "ProseLength": 131,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -689,10 +688,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s investigative instincts and introduces Achebe as a bureaucratic obstacle performing cooperation while steering her away from the real witness.",
       "BeatTags": [],
       "ProseLength": 720,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -704,10 +703,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates Achebe\u0027s redirection into a repeated, condescending push, revealing his intent to control the narrative rather than genuinely assist.",
       "BeatTags": [],
       "ProseLength": 382,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -719,10 +718,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s seasoned judgment of institutional actors, framing Achebe as a sincere obstruction rather than a villain, raising the stakes of complacent gatekeeping.",
       "BeatTags": [],
       "ProseLength": 291,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -734,10 +733,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the conversation into direct confrontation as Yemina names her actual request and Achebe\u0027s body language betrays his resistance.",
       "BeatTags": [],
       "ProseLength": 305,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -749,10 +748,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens Yemina\u0027s reasoning by exposing why the \u0027official\u0027 channel is a dead end, justifying her refusal to be redirected.",
       "BeatTags": [],
       "ProseLength": 625,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -764,10 +763,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the classroom teacher as the true source of unfiled truth, sharpening the story\u0027s central quest for the missing minutes.",
       "BeatTags": [],
       "ProseLength": 551,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -779,10 +778,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Crystallizes Yemina\u0027s investigative principle, turning Achebe\u0027s evasiveness itself into confirmation of where the truth lies.",
       "BeatTags": [],
       "ProseLength": 161,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -794,10 +793,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the standoff as Yemina wields procedural leverage, turning bureaucratic language into a direct threat to force compliance.",
       "BeatTags": [],
       "ProseLength": 434,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -809,10 +808,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Pays off the tension by showing Achebe\u0027s composure crack, revealing his fear of accountability over his professed concern for process.",
       "BeatTags": [],
       "ProseLength": 398,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -824,10 +823,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Resolves the confrontation as Achebe capitulates, marking Yemina\u0027s first small victory in breaching institutional resistance.",
       "BeatTags": [],
       "ProseLength": 257,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -839,10 +838,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes an unsettling institutional stillness that primes the reader for something out of joint beneath ordinary school routine.",
       "BeatTags": [],
       "ProseLength": 584,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -854,10 +853,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Characterizes Yemina\u0027s investigative instinct, reading spaces by what they withhold rather than what they show.",
       "BeatTags": [],
       "ProseLength": 255,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -869,10 +868,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Plants a small factual anomaly \u2014 an occupied classroom at an empty hour \u2014 to hook curiosity.",
       "BeatTags": [],
       "ProseLength": 77,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -884,10 +883,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals through careful observation that the classroom\u0027s population has silently shrunk, seeding the story\u0027s central mystery of missing children.",
       "BeatTags": [],
       "ProseLength": 927,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -899,10 +898,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Ren visually and materially, marking him as someone deliberately unremarkable, primed for scrutiny.",
       "BeatTags": [],
       "ProseLength": 683,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -914,10 +913,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Ren\u0027s suppressed grief and vigilance, showing a man haunted by the room rather than merely working in it.",
       "BeatTags": [],
       "ProseLength": 546,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -929,10 +928,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Opens the interview by establishing Yemina\u0027s controlled authority and Ren\u0027s guarded, resigned relief at finally being asked.",
       "BeatTags": [],
       "ProseLength": 541,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -944,10 +943,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Demonstrates Yemina\u0027s practiced command of power dynamics, choosing positioning over comfort to keep control of the interview.",
       "BeatTags": [],
       "ProseLength": 721,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -959,10 +958,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Cuts straight to the investigation\u0027s purpose, signaling Yemina\u0027s directness and the reader\u0027s entry into testimony.",
       "BeatTags": [],
       "ProseLength": 33,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -974,10 +973,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens the stakes by revealing Ren\u0027s exhaustion with being disbelieved, foreshadowing that his account will challenge official narratives.",
       "BeatTags": [],
       "ProseLength": 493,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -989,10 +988,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Yemina signals her willingness to bear witness without flinching, establishing her role as the steady listener the story needs.",
       "BeatTags": [],
       "ProseLength": 194,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1004,10 +1003,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The rearranged chairs quietly foreshadow disruption and mark the ordinary setting as the site of something unresolved.",
       "BeatTags": [],
       "ProseLength": 350,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1019,10 +1018,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Ren\u0027s rehearsed delivery reveals how repetition has hollowed his trauma into routine, priming readers to distrust surface calm.",
       "BeatTags": [],
       "ProseLength": 200,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1034,10 +1033,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The precise, checked details establish Ren\u0027s need to be believed, and Yemina\u0027s note-taking offers him a first flicker of validation.",
       "BeatTags": [],
       "ProseLength": 457,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1049,10 +1048,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "This beat humanizes the missing child through a small unresolved promise, turning an abstract case into a personal debt Ren carries.",
       "BeatTags": [],
       "ProseLength": 650,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1064,10 +1063,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Ren\u0027s admission of not witnessing the vanishing itself escalates the mystery by making the disappearance literally unseen and unexplainable.",
       "BeatTags": [],
-      "ProseLength": 223,
+      "ProseLength": 224,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1079,10 +1078,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The methodical replay of the ordinary classroom moment underscores how easily catastrophe hides inside routine, deepening the story\u0027s unease.",
       "BeatTags": [],
       "ProseLength": 717,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1094,10 +1093,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Revealing the kept name strips establishes Ren\u0027s private ritual of memory-keeping, foreshadowing a pattern beyond one isolated case.",
       "BeatTags": [],
       "ProseLength": 143,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1109,10 +1108,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Naming the other missing children escalates the stakes from a single incident to a suspected pattern, while asserting their humanity against bureaucratic erasure.",
       "BeatTags": [],
       "ProseLength": 698,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1124,10 +1123,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The bureaucratic dead ends indict the system\u0027s failure, motivating Ren\u0027s manual, paper-based persistence and setting up the investigation\u0027s true obstacle.",
       "BeatTags": [],
       "ProseLength": 1194,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1139,10 +1138,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the story\u0027s central conceit\u2014that the bureaucratic system literally cannot categorize what\u0027s happening\u2014framing absence itself as the case\u0027s core obstacle.",
       "BeatTags": [],
       "ProseLength": 285,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1154,10 +1153,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Signals that something has broken the interviewer\u0027s professional composure, marking the moment the case turns personal and unsettling for her too.",
       "BeatTags": [],
       "ProseLength": 103,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1169,10 +1168,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Dramatizes the phenomenon\u0027s uncanny pull by having the investigator\u0027s body react to the wrongness before her conscious mind can process or justify it.",
       "BeatTags": [],
       "ProseLength": 390,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1184,10 +1183,10 @@
       "Chapter": "Chapter 1 \u2014 The Assignme",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reasserts professional control after the unsettling moment, pushing the witness to continue and keeping the investigation moving forward.",
       "BeatTags": [],
       "ProseLength": 70,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1199,10 +1198,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the witness\u0027s first concrete account of the anomaly, anchoring the mystery in a specific, disturbing sensory detail.",
       "BeatTags": [],
       "ProseLength": 265,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1214,10 +1213,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the investigator\u0027s practiced patience as a technique, showing her expertise while building tension through silence before the witness\u0027s key disclosure.",
       "BeatTags": [],
       "ProseLength": 477,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1229,10 +1228,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the mystery by detailing the phenomenon\u0027s eerie, directionless nature, establishing it as something outside physical logic that eludes pursuit.",
       "BeatTags": [],
       "ProseLength": 801,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1244,10 +1243,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals that the investigator herself is physically susceptible to the phenomenon, undermining her authority and blurring the line between observer and witness.",
       "BeatTags": [],
       "ProseLength": 401,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1259,10 +1258,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Widens the scope of the mystery by showing it recurs across multiple witnesses, establishing a pattern that validates the phenomenon as real and systemic.",
       "BeatTags": [],
       "ProseLength": 428,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1274,10 +1273,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens the investigator\u0027s personal stake by revealing a past case that broke her professional detachment, foreshadowing the emotional cost of this new one.",
       "BeatTags": [],
       "ProseLength": 818,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1289,10 +1288,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s practice of filtering official record from unspeakable truth, sharpening the story\u0027s central tension between institutional language and what she actually knows.",
       "BeatTags": [],
       "ProseLength": 808,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1304,10 +1303,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s deliberate omissions as an act of protection, deepening her moral complexity and foreshadowing the private reckoning she\u0027s building outside the system.",
       "BeatTags": [],
       "ProseLength": 317,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1319,10 +1318,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the routine, detached ritual of Yemina\u0027s job to set up the contrast about to break it.",
       "BeatTags": [],
       "ProseLength": 434,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1334,10 +1333,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns Yemina\u0027s professional numbness into personal investment, marking the moment this case stops being routine for her.",
       "BeatTags": [],
       "ProseLength": 252,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1349,10 +1348,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s private resolve to pursue the truth herself, escalating her covert investigation beyond her sanctioned role.",
       "BeatTags": [],
       "ProseLength": 802,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1364,10 +1363,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms Yemina\u0027s decision as instinctive and inevitable, reinforcing that her investigation is now driven by conviction rather than procedure.",
       "BeatTags": [],
       "ProseLength": 230,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1379,10 +1378,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Launches a direct confrontation that will test Ren\u0027s honesty and expose the gap between official process and lived experience.",
       "BeatTags": [],
       "ProseLength": 57,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1394,10 +1393,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the procedural rhythm of Yemina\u0027s questioning to highlight how the coming answer will break that rhythm.",
       "BeatTags": [],
-      "ProseLength": 382,
+      "ProseLength": 381,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1409,10 +1408,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals through Ren\u0027s hesitation that something is being withheld, raising suspicion just before the truth is tested.",
       "BeatTags": [],
       "ProseLength": 43,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1424,10 +1423,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s expertise in reading deception, framing Ren\u0027s pause as evidence he\u0027s weighing a costly truth rather than a simple yes or no.",
       "BeatTags": [],
       "ProseLength": 347,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1439,10 +1438,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the interrogation\u0027s real subject by having Ren deflect toward institutional cover before the personal question can land.",
       "BeatTags": [],
       "ProseLength": 103,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1454,10 +1453,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s core skill and turns Ren\u0027s flat denial into an implicit confession she alone can hear.",
       "BeatTags": [],
       "ProseLength": 337,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1469,10 +1468,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Characterizes Yemina\u0027s guardedness, showing how instinctively she protects information even in the act of recording it.",
       "BeatTags": [],
       "ProseLength": 154,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1484,10 +1483,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the story\u0027s central mechanism of institutional surveillance, raising the stakes of what Ren just revealed.",
       "BeatTags": [],
       "ProseLength": 713,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1499,10 +1498,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns Yemina from neutral investigator to active protector by having her quietly refuse to feed Ren into the system.",
       "BeatTags": [],
       "ProseLength": 418,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1514,10 +1513,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the scene by having Ren volunteer a second, more damning confession just as the interview seemed to end.",
       "BeatTags": [],
       "ProseLength": 255,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1529,10 +1528,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s true method of reading people, deepening our trust in her perception as the story\u0027s moral instrument.",
       "BeatTags": [],
       "ProseLength": 648,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1544,10 +1543,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pays off Ren\u0027s confession by showing Yemina register his grief as authentic and non-procedural, cementing her sympathy for him.",
       "BeatTags": [],
       "ProseLength": 176,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1559,10 +1558,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns Yemina\u0027s professional detachment into personal commitment by having her write and keep a word that defies protocol.",
       "BeatTags": [],
       "ProseLength": 361,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1574,10 +1573,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Closes the scene on a decisive physical beat, signaling Yemina\u0027s resolve to act on what she\u0027s chosen to protect.",
       "BeatTags": [],
       "ProseLength": 10,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1589,10 +1588,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Yemina physically lowers her guard to signal that what follows is a personal disclosure, not procedure.",
       "BeatTags": [],
       "ProseLength": 251,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1604,10 +1603,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the mystery from an isolated incident to a pattern, widening the story\u0027s stakes beyond one classroom.",
       "BeatTags": [],
       "ProseLength": 123,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1619,10 +1618,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s willingness to break protocol, establishing her as someone who prioritizes people over process.",
       "BeatTags": [],
       "ProseLength": 429,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1634,10 +1633,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pays off Yemina\u0027s rule-breaking by delivering absolution, clarifying her true motive for staying.",
       "BeatTags": [],
       "ProseLength": 125,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1649,10 +1648,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Distinguishes deliberate kindness from mere bureaucratic silence, defining what Yemina believes she owes another human being.",
       "BeatTags": [],
-      "ProseLength": 326,
+      "ProseLength": 324,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1664,10 +1663,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks the moment the teacher accepts the gift of absolution, turning gratitude into quiet intimacy.",
       "BeatTags": [],
       "ProseLength": 155,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1679,10 +1678,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the emotional weight beneath his thanks, confirming that Yemina\u0027s gesture landed as intended.",
       "BeatTags": [],
       "ProseLength": 441,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1694,10 +1693,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Closes the scene abruptly to let the preceding intimacy stand without dilution.",
       "BeatTags": [],
       "ProseLength": 9,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1709,10 +1708,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the lingering cost of the incident by showing the teacher\u0027s composure collapsing once he believes he\u0027s alone.",
       "BeatTags": [],
       "ProseLength": 773,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1724,10 +1723,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Underscores the story\u0027s theme that some truths and burdens resist institutional categorization.",
       "BeatTags": [],
       "ProseLength": 36,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1739,10 +1738,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks a deceptively simple exit that sets up the corridor sequence as a space for internal reckoning.",
       "BeatTags": [],
       "ProseLength": 39,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1754,10 +1753,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals that an unresolved realization is about to force itself into Yemina\u0027s awareness.",
       "BeatTags": [],
       "ProseLength": 61,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1769,10 +1768,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s professional instinct for error-detection as the story\u0027s mechanism for surfacing buried truth.",
       "BeatTags": [],
       "ProseLength": 817,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1784,10 +1783,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the specific linguistic slippage that has let Yemina misread the case for weeks, deepening the mystery\u0027s stakes.",
       "BeatTags": [],
       "ProseLength": 278,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1799,10 +1798,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Exposes a pattern across cases that shows Yemina\u0027s assumption has been systemic, not isolated, raising the scope of her error.",
       "BeatTags": [],
       "ProseLength": 227,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1814,10 +1813,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks the physical toll of realization taking hold, showing insight overtaking composure.",
       "BeatTags": [],
       "ProseLength": 27,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1829,10 +1828,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the pivotal reframe that recasts the entire mystery\u0027s premise and turns the investigation\u0027s direction.",
       "BeatTags": [],
       "ProseLength": 28,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1844,10 +1843,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Unpacks the reframe to show Yemina recognizing her own complicity in overlooking the truth hidden in her own notes.",
       "BeatTags": [],
       "ProseLength": 531,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1859,10 +1858,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Crystallizes the story\u0027s new central question, replacing \u0027what happened\u0027 with a more urgent \u0027to what end.\u0027",
       "BeatTags": [],
       "ProseLength": 17,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1874,10 +1873,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows Yemina choosing forward motion over paralysis, establishing her resolve to act on the revelation.",
       "BeatTags": [],
       "ProseLength": 136,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1889,10 +1888,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Yemina reframes the investigation\u0027s premise, turning \u0027disappearance\u0027 into \u0027destination\u0027 and reopening a case she thought was closed.",
       "BeatTags": [],
       "ProseLength": 310,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1904,10 +1903,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Yemina recognizes her core interpretive error, converting a false ending into an unresolved trail she must now follow.",
       "BeatTags": [],
       "ProseLength": 623,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1919,10 +1918,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "A stark internal admission crystallizes her failure into a single unanswered question driving the next phase of investigation.",
       "BeatTags": [],
       "ProseLength": 36,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1934,10 +1933,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Yemina masks her breakthrough while reasoning that scattered incidents may actually converge, escalating stakes by implying a hidden pattern.",
       "BeatTags": [],
       "ProseLength": 465,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1949,10 +1948,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes that overlooked bureaucratic data may hold the buried evidence she needs, seeding hope that the trail isn\u0027t cold.",
       "BeatTags": [],
       "ProseLength": 609,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1964,10 +1963,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Creates urgency by grounding her discovery in a ticking clock, pushing her toward immediate action.",
       "BeatTags": [],
       "ProseLength": 301,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1979,10 +1978,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Grounds the investigative turn in mundane physical detail, heightening realism before she accesses the crucial record.",
       "BeatTags": [],
       "ProseLength": 673,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1994,10 +1993,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the first concrete clue, revealing the child vanished mid-building rather than at an exit, escalating the mystery.",
       "BeatTags": [],
       "ProseLength": 76,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2009,10 +2008,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms a pattern of unexplained disappearance within the school itself, deepening the mystery toward a specific hidden mechanism.",
       "BeatTags": [],
       "ProseLength": 733,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2024,10 +2023,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes a repeating pattern across locations, confirming intentional design behind the disappearances and propelling her toward the next lead.",
       "BeatTags": [],
       "ProseLength": 286,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2039,10 +2038,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "A sharp self-accusation reveals Yemina recognizing her own past complicity in overlooking the very evidence she now pursues.",
       "BeatTags": [],
       "ProseLength": 86,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2054,10 +2053,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The ordinary rhythm of the school resumes, marking Yemina\u0027s investigation as newly productive\u2014three points now form a line.",
       "BeatTags": [],
       "ProseLength": 366,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2069,10 +2068,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Mundane classroom chaos grounds the scene in innocent normalcy, sharpening the dread of what Yemina knows lurks beneath it.",
       "BeatTags": [],
       "ProseLength": 470,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2084,10 +2083,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Yemina\u0027s altered perception shows how the case has begun to overlay itself on reality, escalating her paranoia and focus.",
       "BeatTags": [],
       "ProseLength": 180,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2099,10 +2098,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "An uncanny childhood gesture toward nothing signals the supernatural pattern intruding into an ordinary school moment, raising dread.",
       "BeatTags": [],
       "ProseLength": 391,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2114,10 +2113,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Yemina connects the girl\u0027s inexplicable gaze to her own investigative bearings, confirming the pattern is real and directional.",
       "BeatTags": [],
       "ProseLength": 177,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2129,10 +2128,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The girl\u0027s return to normalcy underscores the eerie invisibility of the phenomenon\u2014dangerous precisely because it looks like nothing.",
       "BeatTags": [],
       "ProseLength": 76,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2144,10 +2143,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Yemina registers a moment of premonition too intangible for official record, deepening her isolation between knowledge and proof.",
       "BeatTags": [],
       "ProseLength": 268,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2159,10 +2158,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The shift back to bureaucratic ritual reestablishes the institution\u0027s controlling facade after the uncanny break in the hallway.",
       "BeatTags": [],
       "ProseLength": 330,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2174,10 +2173,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The dated android\u0027s uncanny approximation of warmth crystallizes the story\u0027s theme of institutions performing care without truly possessing it.",
       "BeatTags": [],
       "ProseLength": 605,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2189,10 +2188,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the android\u0027s uncanny, procedural courtesy to frame the building\u0027s system as orderly, patient, and impersonal.",
       "BeatTags": [],
       "ProseLength": 440,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2204,10 +2203,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s core distrust\u2014that flawless records themselves have become suspect\u2014establishing the investigation\u0027s central irony.",
       "BeatTags": [],
       "ProseLength": 450,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2219,10 +2218,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns a rote pleasantry into dramatic irony, exposing the system\u0027s blind spot: its most crucial witness can never be questioned.",
       "BeatTags": [],
       "ProseLength": 591,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2234,10 +2233,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Closes the scene\u0027s ritual exchange to underscore how routine and unremarkable this haunted transaction feels.",
       "BeatTags": [],
       "ProseLength": 193,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2249,10 +2248,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the building\u0027s uncanny self-sufficiency, showing its indifference to her as a symbol of the case\u0027s impenetrability.",
       "BeatTags": [],
       "ProseLength": 645,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2264,10 +2263,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Transitions the scene, grounding the reader back in the mundane world outside the investigation\u0027s uncanny interior.",
       "BeatTags": [],
       "ProseLength": 24,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2279,10 +2278,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s weary, underfunded routine to ground her character in lived physical detail and institutional neglect.",
       "BeatTags": [],
       "ProseLength": 610,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2294,10 +2293,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Seeds a lingering anomaly\u2014the endlessly circling drone\u2014to plant suspicion that the jurisdiction\u0027s clean records are systematically compromised.",
       "BeatTags": [],
       "ProseLength": 788,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2309,10 +2308,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Transitions into investigative mode, signaling the shift from atmosphere to active casework.",
       "BeatTags": [],
       "ProseLength": 49,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2324,10 +2323,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the mechanics and limits of her augmented perception to ground the story\u0027s technology and her professional expertise.",
       "BeatTags": [],
       "ProseLength": 798,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2339,10 +2338,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Lays out three disparate missing-child cases in flat bureaucratic terms to establish the scale and coldness of the pattern Yemina is about to uncover.",
       "BeatTags": [],
       "ProseLength": 219,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2354,10 +2353,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals why no one else could see the pattern, positioning Yemina as uniquely and unsettlingly situated to find it.",
       "BeatTags": [],
       "ProseLength": 666,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2369,10 +2368,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows Yemina exhausting the obvious investigative approach to underscore that conventional thinking has failed and a reframe is needed.",
       "BeatTags": [],
       "ProseLength": 427,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2384,10 +2383,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks the pivot from a dead-end method to the breakthrough approach, building anticipation for the discovery.",
       "BeatTags": [],
       "ProseLength": 100,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2399,10 +2398,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Demonstrates her methodical narrowing of data to heighten suspense as the query refuses to eliminate any of the three cases.",
       "BeatTags": [],
       "ProseLength": 264,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2414,10 +2413,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the core clue, shifting the mystery\u0027s shape from a hunter to a hidden condition afflicting the children themselves.",
       "BeatTags": [],
       "ProseLength": 523,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2429,10 +2428,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows Yemina\u0027s diligence pushing her into overlooked data, setting up the next, more damning discovery.",
       "BeatTags": [],
       "ProseLength": 295,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2444,10 +2443,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the horror by revealing the cases were assigned to her before the disappearances were even official, implicating the system itself.",
       "BeatTags": [],
       "ProseLength": 330,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2459,10 +2458,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Crystallizes the impossible timing pattern, forcing Yemina to confront that someone or something knew in advance.",
       "BeatTags": [],
       "ProseLength": 145,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2474,10 +2473,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Ends the chapter on a cliffhanger, priming the reveal of who or what is orchestrating the assignments.",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2489,10 +2488,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes an impossible system anomaly that marks the case as engineered rather than organic, hooking the mystery\u0027s central puzzle.",
       "BeatTags": [],
       "ProseLength": 382,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2504,10 +2503,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Grounds the uncanny discovery in mundane sensory routine, letting dread settle before the scene escalates.",
       "BeatTags": [],
       "ProseLength": 294,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2519,10 +2518,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the interface\u0027s seamless integration into her perception to set up how deeply a violation of it will unsettle her.",
       "BeatTags": [],
       "ProseLength": 371,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2534,10 +2533,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals her practiced investigator\u0027s instinct catching a wrongness before conscious analysis, building tension through restraint.",
       "BeatTags": [],
       "ProseLength": 252,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2549,10 +2548,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes a concrete technical impossibility\u2014her tier can\u0027t do this\u2014turning vague unease into a hard, evidentiary anomaly.",
       "BeatTags": [],
       "ProseLength": 473,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2564,10 +2563,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the impossible completion itself, escalating the mystery by showing the system articulating what only she knows.",
       "BeatTags": [],
       "ProseLength": 126,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2579,10 +2578,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms the completion isn\u0027t coincidence but reads her unwritten intent, escalating the threat from anomaly to active surveillance of her mind.",
       "BeatTags": [],
       "ProseLength": 466,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2594,10 +2593,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens the wrongness by showing the anomaly defies her entire coding system, reinforcing that something outside known categories is acting on her.",
       "BeatTags": [],
       "ProseLength": 564,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2609,10 +2608,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pins the violation down to an intimate, personal signature-level detail, proving the intrusion mimics her but isn\u0027t her.",
       "BeatTags": [],
       "ProseLength": 529,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2624,10 +2623,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Names the reveal outright, turning ambient dread into an explicit statement that her own system has been compromised.",
       "BeatTags": [],
       "ProseLength": 50,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2639,10 +2638,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes an intrusion so intimate that no technical boundary remains between Yemina and whatever is writing to her, escalating the story\u0027s central violation.",
       "BeatTags": [],
       "ProseLength": 373,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2654,10 +2653,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s trained coping discipline, showing she suppresses fear through procedure rather than confronting it, deepening her characterization.",
       "BeatTags": [],
       "ProseLength": 389,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2669,10 +2668,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns her hesitation into a moral choice by reframing avoidance as complicity, setting up her decision to engage rather than retreat.",
       "BeatTags": [],
       "ProseLength": 494,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2684,10 +2683,10 @@
       "Chapter": "Chapter 2 \u2014 Yemina in th",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pays off the buildup by having Yemina consciously choose engagement over safety, establishing her as an active investigator rather than a passive target.",
       "BeatTags": [],
       "ProseLength": 500,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2699,10 +2698,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the mystery by proving the anomalous entity anticipated her action, reframing the search as evidence of premeditated manipulation rather than random intrusion.",
       "BeatTags": [],
       "ProseLength": 866,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2714,10 +2713,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers the case\u0027s inciting data payload, turning abstract dread into a concrete, procedural mystery she can investigate through pattern-reading.",
       "BeatTags": [],
       "ProseLength": 529,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2729,10 +2728,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Subverts expectation of a localized threat, widening the mystery\u0027s scope to citywide scale and heightening its uncanny, systemic nature.",
       "BeatTags": [],
       "ProseLength": 335,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2744,10 +2743,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the perpetrator\u0027s methodical patience, escalating dread by characterizing an antagonist defined by control rather than compulsion.",
       "BeatTags": [],
       "ProseLength": 558,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2759,10 +2758,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Complicates Yemina\u0027s role by revealing she was manipulated into finding the first victim, raising the story\u0027s central question of agency versus instrumentality.",
       "BeatTags": [],
       "ProseLength": 796,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2774,10 +2773,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Crystallizes Yemina\u0027s moral compromise, marking her willingness to accept troubling means if the ends serve the children she\u0027s sworn to protect.",
       "BeatTags": [],
-      "ProseLength": 88,
+      "ProseLength": 86,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2789,10 +2788,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s covert method and introduces an ongoing mystery she\u0027s not yet ready to confront directly.",
       "BeatTags": [],
       "ProseLength": 374,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2804,10 +2803,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the grandmother\u0027s raw, sustained grief as the human stakes behind the case\u0027s bureaucratic surface.",
       "BeatTags": [],
       "ProseLength": 444,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2819,10 +2818,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the system\u0027s designed blindness, framing Yemina\u0027s search for the singular detail that could distinguish a stolen child from an ordinary one.",
       "BeatTags": [],
       "ProseLength": 939,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2834,10 +2833,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Underscores that institutional records erase exactly the human evidence\u2014the grandmother\u0027s grief and vigilance\u2014that would prove the case matters.",
       "BeatTags": [],
-      "ProseLength": 313,
+      "ProseLength": 311,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2849,10 +2848,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens the bond between investigator and grieving witness through a small, wordless act of mutual respect and restraint.",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2864,10 +2863,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Sets a visual motif of overlaid, half-erased pasts that mirrors the story\u0027s theme of records covering deeper truths.",
       "BeatTags": [],
       "ProseLength": 392,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2879,10 +2878,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Signals that this case is not isolated, revealing a pattern of repeated visits and mounting institutional fatigue around missing children.",
       "BeatTags": [],
       "ProseLength": 302,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2894,10 +2893,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces the mother\u0027s controlled composure as another face of grief the system fails to register.",
       "BeatTags": [],
       "ProseLength": 171,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2909,10 +2908,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Plants a quiet, devastating image of suspended hope that will anchor the scene\u0027s emotional weight.",
       "BeatTags": [],
       "ProseLength": 178,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2924,10 +2923,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows Yemina\u0027s professional detachment momentarily breaking under the weight of a grief too specific to be filed away, then reasserting itself.",
       "BeatTags": [],
       "ProseLength": 768,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2939,10 +2938,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Daria\u0027s uncanny sensitivity as the story\u0027s first concrete clue, hinting the anomaly predates its official discovery.",
       "BeatTags": [],
       "ProseLength": 248,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2954,10 +2953,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Lech\u0027s quiet, methodical grief through his self-made record, establishing him as an ally who has already been failed by the system.",
       "BeatTags": [],
       "ProseLength": 516,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2969,10 +2968,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens Yemina\u0027s recognition of Lech\u0027s makeshift documentation as a mirror of her own professional discipline, forging unspoken kinship between them.",
       "BeatTags": [],
       "ProseLength": 697,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2984,10 +2983,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the confrontation by forcing Yemina to declare which side of the bureaucracy she represents.",
       "BeatTags": [],
       "ProseLength": 119,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2999,10 +2998,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s integrity by refusing to deflect blame, earning trust while exposing the marriage\u0027s strained division of grief.",
       "BeatTags": [],
       "ProseLength": 549,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3014,10 +3013,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the emotional scene into procedural evidence, marking the first official trace of the case\u0027s earlier warning signs.",
       "BeatTags": [],
       "ProseLength": 147,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3029,10 +3028,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the story\u0027s central tension between lived truth and bureaucratic legibility, showing how systems erase what they can\u0027t categorize.",
       "BeatTags": [],
       "ProseLength": 734,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3044,10 +3043,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Advances the investigation\u0027s mechanics, showing the fragmented, siloed nature of institutional records Yemina must navigate.",
       "BeatTags": [],
       "ProseLength": 401,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3059,10 +3058,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Demonstrates Yemina\u0027s deliberate, procedural care in building an unimpeachable trail as she works within the system\u0027s own rules.",
       "BeatTags": [],
       "ProseLength": 254,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3074,10 +3073,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Builds anticipation as the case\u0027s buried evidence finally surfaces, poised to become part of Yemina\u0027s growing record.",
       "BeatTags": [],
       "ProseLength": 329,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3089,10 +3088,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the case by revealing an outside actor has actively blocked Yemina\u0027s access, turning bureaucratic friction into evident concealment.",
       "BeatTags": [],
       "ProseLength": 397,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3104,10 +3103,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the clerk as a sympathetic but constrained witness, confirming the seal\u0027s origin while withholding its cause to deepen the mystery.",
       "BeatTags": [],
       "ProseLength": 369,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3119,10 +3118,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the timing connection to the earlier interview, implicating the official\u0027s evasive body language as the trigger for the cover-up.",
       "BeatTags": [],
       "ProseLength": 451,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3134,10 +3133,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Defines Yemina\u0027s investigative method and resolve, reframing the seal itself as evidence and vowing to pursue the truth by other means.",
       "BeatTags": [],
       "ProseLength": 584,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3149,10 +3148,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s solitary, resourceful work process, showing her improvising a workspace and method to begin the deeper investigation.",
       "BeatTags": [],
       "ProseLength": 561,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3164,10 +3163,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s investigative philosophy, establishing that she seeks patterns before theories to keep her conclusions honest.",
       "BeatTags": [],
       "ProseLength": 261,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3179,10 +3178,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the case\u0027s baseline anomaly, showing a suspiciously uniform flag across many records that primes Yemina\u0027s suspicion of institutional pattern-hiding.",
       "BeatTags": [],
       "ProseLength": 519,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3194,10 +3193,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns Yemina\u0027s inquiry toward raw data, escalating her scrutiny beyond sanitized summaries to search for what\u0027s been omitted.",
       "BeatTags": [],
       "ProseLength": 268,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3209,10 +3208,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers the pivotal clue, revealing a hidden anomalous signal the official record suppressed, igniting the story\u0027s central mystery.",
       "BeatTags": [],
       "ProseLength": 347,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3224,10 +3223,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirms the anomaly as a genuine pattern rather than error, escalating suspicion of a deliberate, systemic phenomenon being concealed across sites.",
       "BeatTags": [],
       "ProseLength": 334,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3239,10 +3238,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the anomaly\u0027s improbable consistency, escalating a personal case into evidence of a citywide, engineered pattern.",
       "BeatTags": [],
       "ProseLength": 474,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3254,10 +3253,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals a mysterious outside presence has already done her research, turning routine investigation into unsettling collaboration.",
       "BeatTags": [],
       "ProseLength": 348,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3269,10 +3268,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Defines the intruder\u0027s nature and intent, distinguishing it from known threats and deepening the story\u0027s central mystery.",
       "BeatTags": [],
       "ProseLength": 782,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3284,10 +3283,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows her adapting to an impossible situation by directly engaging the unknown presence through the only channel available.",
       "BeatTags": [],
       "ProseLength": 162,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3299,10 +3298,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers a key clue linking the children\u0027s cases to the schism, escalating the mystery\u0027s stakes and scope.",
       "BeatTags": [],
       "ProseLength": 166,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3314,10 +3313,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reframes the hazard zone as an active, intentional signal, transforming ambient background danger into a deliberate mystery.",
       "BeatTags": [],
       "ProseLength": 320,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3329,10 +3328,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Underscores her disciplined restraint, marking the gap between suspicion and proof that drives her forward.",
       "BeatTags": [],
       "ProseLength": 148,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3344,10 +3343,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Plants a quiet, ordinary detail that reasserts surveillance and normalcy as counterpoint to the uncanny events inside.",
       "BeatTags": [],
       "ProseLength": 122,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3359,10 +3358,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces a second, contrasting intelligence, escalating tension by revealing she isn\u0027t alone with just one anomaly.",
       "BeatTags": [],
       "ProseLength": 459,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3374,10 +3373,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Heightens danger and dehumanization by showing this new presence is indifferent, mechanical, and searching blindly through her mind.",
       "BeatTags": [],
       "ProseLength": 490,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3389,10 +3388,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the intrusion\u0027s true nature as an omnipresent, doorless force to escalate the story\u0027s sense of violation beyond ordinary surveillance.",
       "BeatTags": [],
       "ProseLength": 232,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3404,10 +3403,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Raises the stakes by revealing the intrusion is indiscriminately probing toward her hidden private log, threatening exposure without malicious intent.",
       "BeatTags": [],
       "ProseLength": 601,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3419,10 +3418,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the scene abruptly by having the intrusion cut itself off, denying resolution and reframing the encounter as controlled by an unseen third party.",
       "BeatTags": [],
       "ProseLength": 241,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3434,10 +3433,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals her core realization that she was both examined and rescued mid-examination, deepening the mystery of who or what intervened and why.",
       "BeatTags": [],
       "ProseLength": 446,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3449,10 +3448,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes her uneasy reliance on the intruder\u0027s leftover tools, characterizing her resourcefulness while underscoring the discomfort of using power that isn\u0027t hers.",
       "BeatTags": [],
       "ProseLength": 747,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3464,10 +3463,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks the pivot into active investigation as she tests a key phrase across both layers of access to see what surfaces.",
       "BeatTags": [],
       "ProseLength": 110,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3479,10 +3478,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals that official knowledge treats the schism purely as a hazard to contain, exposing an institutional gap around its actual nature that fuels her suspicion.",
       "BeatTags": [],
       "ProseLength": 1001,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3494,10 +3493,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates her unease by confirming that even expected ignorance about the schism is thinner than she anticipated, deepening the mystery.",
       "BeatTags": [],
       "ProseLength": 139,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3509,10 +3508,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks her decisive shift into forbidden territory, committing to use the intruder\u0027s own resources to seek answers.",
       "BeatTags": [],
       "ProseLength": 40,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3524,10 +3523,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals a buried history of suppressed research suggesting the schisms may be deliberate signals, escalating the case into a wider conspiracy.",
       "BeatTags": [],
       "ProseLength": 1054,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3539,10 +3538,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the field\u0027s suppression as deliberate neglect rather than scientific failure, sharpening Yemina\u0027s suspicion that something was buried on purpose.",
       "BeatTags": [],
       "ProseLength": 241,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3554,10 +3553,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Signals a narrative turn by isolating a single surviving lead from an otherwise barren record.",
       "BeatTags": [],
       "ProseLength": 15,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3569,10 +3568,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces Selvamani as a discredited but named researcher, revealing how consensus was manufactured through unread citations rather than genuine rebuttal.",
       "BeatTags": [],
       "ProseLength": 852,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3584,10 +3583,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Plants ambiguity around the word \u0027lapsed,\u0027 inviting parallel between the researcher\u0027s erased credibility and Yemina\u0027s own hidden history.",
       "BeatTags": [],
       "ProseLength": 308,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3599,10 +3598,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the story\u0027s uncanny intrusion motif by showing the mysterious agent again outpacing Yemina\u0027s own investigation.",
       "BeatTags": [],
       "ProseLength": 371,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3614,10 +3613,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens Yemina\u0027s unease and rivalry with the unseen intruder, reframing the case as a race for authorship of the truth, not just its discovery.",
       "BeatTags": [],
       "ProseLength": 591,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3629,10 +3628,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks a small decisive turn as Yemina commits to acting on a lead she distrusts but cannot ignore.",
       "BeatTags": [],
       "ProseLength": 32,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3644,10 +3643,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Sets the scene for confrontation, characterizing Selvamani through her isolation and obsessive devotion to a discredited theory.",
       "BeatTags": [],
       "ProseLength": 521,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3659,10 +3658,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Selvamani\u0027s intellectual honesty as a mark of credibility, distinguishing her from those who fake certainty.",
       "BeatTags": [],
       "ProseLength": 486,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3674,10 +3673,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers key world-building exposition that redefines the schism as a placeless, untraceable threshold, deepening the mystery\u0027s stakes.",
       "BeatTags": [],
       "ProseLength": 1500,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3689,10 +3688,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes a buried, fragmented data layer as the story\u0027s central hidden evidence, framing systemic negligence as bureaucratic design rather than malice.",
       "BeatTags": [],
       "ProseLength": 827,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3704,10 +3703,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows Yemina\u0027s rigorous, self-skeptical method of pattern-finding, establishing her credibility as the one who can turn scattered data into an accusation.",
       "BeatTags": [],
       "ProseLength": 673,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3719,10 +3718,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the mystery by revealing a deliberate, uniform threshold-gaming across all sites, proving coordination rather than coincidence.",
       "BeatTags": [],
       "ProseLength": 541,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3734,10 +3733,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s unique structural position as the only one who can see the pattern, turning her demotion into unexpected narrative significance.",
       "BeatTags": [],
       "ProseLength": 628,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3749,10 +3748,10 @@
       "Chapter": "Chapter 3 \u2014 The Bramley ",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces the fixed, anomalous schism as the case\u0027s ticking central clue, tying its stability directly to the timeline of the disappearances.",
       "BeatTags": [],
       "ProseLength": 656,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3764,10 +3763,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns Yemina\u0027s professional caution into a personal betrayal, underscoring the cost of institutional limits on Selvamani\u0027s two-year isolation with the truth.",
       "BeatTags": [],
       "ProseLength": 735,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3779,10 +3778,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Begins Yemina\u0027s attempt to escalate the case through official channels, setting up the bureaucracy as the next obstacle to justice.",
       "BeatTags": [],
       "ProseLength": 445,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3794,10 +3793,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates the systemic obstruction by showing how the reporting system\u0027s design filters urgency behind layers only insiders can navigate.",
       "BeatTags": [],
       "ProseLength": 510,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3809,10 +3808,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals the hold system as a deliberate liability shield, exposing bureaucracy\u0027s true function as self-protection rather than response.",
       "BeatTags": [],
       "ProseLength": 818,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3824,10 +3823,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Shows Yemina\u0027s grim endurance within a system built to exhaust complainants, reinforcing the theme of institutional indifference disguised as process.",
       "BeatTags": [],
       "ProseLength": 246,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3839,10 +3838,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Yemina reframes desperate testimony as procedural fact, exploiting the system\u0027s own bureaucratic blind spot to force it to register what it wants to dismiss.",
       "BeatTags": [],
       "ProseLength": 638,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3854,10 +3853,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks Yemina\u0027s shift from advocacy back into investigative method, signaling she will apply her core skill to the case\u0027s central discrepancy.",
       "BeatTags": [],
       "ProseLength": 175,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3869,10 +3868,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Introduces the ticking deadline as a structural mismatch rather than a rescue timeline, escalating dread by reframing the stakes.",
       "BeatTags": [],
       "ProseLength": 583,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3884,10 +3883,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals the horrifying twist that the rescue protocol itself may permanently seal the children\u0027s only way back, turning help into threat.",
       "BeatTags": [],
       "ProseLength": 738,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3899,10 +3898,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Closes the bureaucratic action decisively, pivoting the narrative from procedural maneuvering toward Yemina\u0027s direct, physical confrontation with the mystery.",
       "BeatTags": [],
       "ProseLength": 19,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3914,10 +3913,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Introduces an uncanny, ambiguous image that grounds the abstract institutional horror in an intimate, unsettling human moment.",
       "BeatTags": [],
       "ProseLength": 631,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3929,10 +3928,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Underscores the investigation\u0027s failure to locate the missing children in literal space, deepening the case\u0027s core epistemological gap.",
       "BeatTags": [],
       "ProseLength": 515,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3944,10 +3943,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the child\u0027s message as intentional and complete, giving Yemina\u2014and the reader\u2014an answer that resists rational verification.",
       "BeatTags": [],
       "ProseLength": 72,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3959,10 +3958,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Signals Yemina\u0027s retreat from confronting the uncanny directly, choosing composure over immediate reckoning with what she\u0027s witnessed.",
       "BeatTags": [],
       "ProseLength": 24,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3974,10 +3973,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers an anticlimactic non-resolution that reinforces the story\u0027s theme of institutional silence as its own devastating verdict.",
       "BeatTags": [],
       "ProseLength": 510,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -3989,10 +3988,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Elena\u0027s resolve to document the case despite knowing its futility, framing the chapter\u0027s central tension between duty and powerlessness.",
       "BeatTags": [],
       "ProseLength": 28,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4004,10 +4003,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals her need for small, controllable rituals as armor against a case that defies her usual sense of order.",
       "BeatTags": [],
       "ProseLength": 517,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4019,10 +4018,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes her professional discipline and the report\u0027s rigid structure, showing how she compartmentalizes what fits the form from what doesn\u0027t.",
       "BeatTags": [],
       "ProseLength": 1306,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4034,10 +4033,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns the narrative toward the report\u0027s central gap, linking the unresolved case to the earlier loss of Kito to underline what remains unaccounted for.",
       "BeatTags": [],
       "ProseLength": 127,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4049,10 +4048,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Deepens her cynicism by establishing the institutional pattern of cosmetic non-response she expects the case to receive.",
       "BeatTags": [],
       "ProseLength": 700,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4064,10 +4063,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reinforces the divide between her private knowledge and what the bureaucracy will ever officially acknowledge.",
       "BeatTags": [],
       "ProseLength": 140,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4079,10 +4078,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pays off her internal conflict by forcing her to commit a hollow, technically-true sentence that stands in for the truth she can\u0027t file.",
       "BeatTags": [],
       "ProseLength": 347,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4094,10 +4093,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates unease by having the system respond with suspicious speed, planting a mystery beneath the mundane bureaucratic surface.",
       "BeatTags": [],
       "ProseLength": 113,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4109,10 +4108,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates the story\u0027s uncanny undercurrent, revealing a recurring pattern of impossible system behavior she deliberately excludes from official record.",
       "BeatTags": [],
       "ProseLength": 843,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4124,10 +4123,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns the plot forward by issuing an ominous, non-negotiable summons that pulls her from paperwork into direct confrontation with the case\u0027s hidden machinery.",
       "BeatTags": [],
       "ProseLength": 398,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4139,10 +4138,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s disciplined caution by flagging an anomaly in procedure without letting herself prematurely interpret it.",
       "BeatTags": [],
       "ProseLength": 362,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4154,10 +4153,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks the report\u0027s completion as a quiet, weighty ritual, underscoring how much this case has come to cost her personally.",
       "BeatTags": [],
       "ProseLength": 290,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4169,10 +4168,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Sets up an obligation that delays the freight dock plot, signaling this visit matters as much as the mission.",
       "BeatTags": [],
       "ProseLength": 64,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4184,10 +4183,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Chinwe\u0027s grief-worn vigilance through a small habitual detail, deepening reader sympathy before the hard conversation.",
       "BeatTags": [],
       "ProseLength": 390,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4199,10 +4198,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Cuts through pleasantries to establish the transaction\u0027s true stakes: information, not comfort, is what\u0027s being exchanged.",
       "BeatTags": [],
       "ProseLength": 99,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4214,10 +4213,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Foreshadows the notice\u0027s emptiness while dramatizing Chinwe\u0027s ritual of bracing herself for bad news.",
       "BeatTags": [],
-      "ProseLength": 444,
+      "ProseLength": 443,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4229,10 +4228,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Confirms the case\u0027s non-resolution plainly, exposing the gap between bureaucratic language and lived hope.",
       "BeatTags": [],
       "ProseLength": 192,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4244,10 +4243,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Articulates the story\u0027s central irony\u2014open cases as bureaucratic fiction\u2014forcing Yemina to confront her role in perpetuating false hope.",
       "BeatTags": [],
       "ProseLength": 374,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4259,10 +4258,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Visually echoes Chinwe\u0027s earlier restraint to show grief becoming habitual, a practiced self-protection against further loss.",
       "BeatTags": [],
       "ProseLength": 159,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4274,10 +4273,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers Chinwe\u0027s hard-won clarity about institutional indifference, turning her from passive griever into the story\u0027s moral authority.",
       "BeatTags": [],
       "ProseLength": 501,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4289,10 +4288,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s refusal to lie to Chinwe, cementing her integrity even when the truth offers nothing comforting.",
       "BeatTags": [],
       "ProseLength": 253,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4304,10 +4303,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Chinwe\u0027s guarded, self-protective way of asking for news she dreads receiving in full.",
       "BeatTags": [],
       "ProseLength": 210,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4319,10 +4318,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Deepens Yemina\u0027s internal conflict by contrasting institutional evasion with the harder honesty of admitting ignorance.",
       "BeatTags": [],
       "ProseLength": 720,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4334,10 +4333,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pays off Yemina\u0027s resolve by having her deliver the blunt truth instead of a comforting lie.",
       "BeatTags": [],
       "ProseLength": 78,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4349,10 +4348,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Affirms the dignity of shared silence over false reassurance, defining Yemina\u0027s ethical code.",
       "BeatTags": [],
       "ProseLength": 404,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4364,10 +4363,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Closes the exchange with a mutual, unspoken promise that keeps the search open without false hope.",
       "BeatTags": [],
       "ProseLength": 67,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4379,10 +4378,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks the emotional scene\u0027s end and pivots back to the mission\u0027s mundane machinery via the waiting folder.",
       "BeatTags": [],
       "ProseLength": 497,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4394,10 +4393,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates urgency by tying the emotional aftermath directly to a ticking, high-stakes deadline.",
       "BeatTags": [],
       "ProseLength": 179,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4409,10 +4408,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the Halsted Freight Yard as a liminal, unmonitored space outside the story\u0027s usual surveillance rules.",
       "BeatTags": [],
       "ProseLength": 561,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4424,10 +4423,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Shows Yemina prioritizing her covert mission over personal risk, escalating tension as she enters unfamiliar territory.",
       "BeatTags": [],
       "ProseLength": 171,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4439,10 +4438,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the playground\u0027s uncanny preservation as a mystery hook while showing Yemina\u0027s disciplined, rule-bound approach to observation.",
       "BeatTags": [],
       "ProseLength": 478,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4454,10 +4453,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Grounds the scene in mundane working reality to make the coming strangeness land against a believable backdrop.",
       "BeatTags": [],
       "ProseLength": 376,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4469,10 +4468,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals that Yemina\u0027s presence was engineered to be unremarkable, hinting at unseen orchestration behind the meeting.",
       "BeatTags": [],
       "ProseLength": 292,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4484,10 +4483,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Plants a quiet wrongness in Nadia\u0027s behavior to signal she\u0027s protecting something beyond the visible task.",
       "BeatTags": [],
       "ProseLength": 413,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4499,10 +4498,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Uses Yemina\u0027s investigative habit to surface a cryptic manifest entry that deepens the mystery of Nadia\u0027s role.",
       "BeatTags": [],
       "ProseLength": 476,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4514,10 +4513,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers the handoff itself, contrasting Yemina\u0027s need for procedure with the exchange\u0027s stripped-down, unofficial minimalism.",
       "BeatTags": [],
       "ProseLength": 946,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4529,10 +4528,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reframes Nadia\u0027s silence as innocence rather than evasion, distinguishing her from a typical suspicious witness archetype.",
       "BeatTags": [],
       "ProseLength": 462,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4544,10 +4543,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks Yemina\u0027s resignation to the encounter\u0027s incompleteness, closing the exchange without resolution.",
       "BeatTags": [],
       "ProseLength": 108,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4559,10 +4558,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Sets up an expectation of a normal, explicable next step to heighten the coming subversion.",
       "BeatTags": [],
       "ProseLength": 185,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4574,10 +4573,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Subverts expectation by sending Nadia away from resolution and toward ambiguity, deepening the mystery going forward.",
       "BeatTags": [],
       "ProseLength": 44,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4589,10 +4588,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Yemina crossing her own professional boundary, signaling investment that overrides procedure and propels her into voyeuristic witness.",
       "BeatTags": [],
       "ProseLength": 314,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4604,10 +4603,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Introduces the recipient through physical description, marking him as singular and imposing before he\u0027s even named.",
       "BeatTags": [],
       "ProseLength": 451,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4619,10 +4618,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the man\u0027s warmth and easy camaraderie to make the coming rupture more poignant by contrast.",
       "BeatTags": [],
       "ProseLength": 572,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4634,10 +4633,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Fixes the nickname as the only identity available, reinforcing his anonymity to outsiders even as he becomes central to the story.",
       "BeatTags": [],
-      "ProseLength": 120,
+      "ProseLength": 118,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4649,10 +4648,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns the scene\u0027s register from casual to consequential as the delivery finally lands, framed as an almost clinical event Yemina observes from a remove.",
       "BeatTags": [],
       "ProseLength": 229,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4664,10 +4663,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals the emotional cost of the delivery, showing dread long-carried finally confirmed rather than sprung as a surprise.",
       "BeatTags": [],
       "ProseLength": 552,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4679,10 +4678,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks the moment of acceptance, showing him absorbing the blow instead of resisting it.",
       "BeatTags": [],
       "ProseLength": 33,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4694,10 +4693,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Underscores the isolation of his reckoning by contrasting it with the oblivious ordinary bustle continuing around him.",
       "BeatTags": [],
       "ProseLength": 521,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4709,10 +4708,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Shows him receiving further information wordlessly, deepening the sense of resigned understanding rather than shock.",
       "BeatTags": [],
       "ProseLength": 114,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4724,10 +4723,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Closes the delivery sequence by having Nadia vanish as mysteriously as she operates, reinforcing her role as an untraceable agent beyond ordinary rules.",
       "BeatTags": [],
       "ProseLength": 397,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4739,10 +4738,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Yemina as a fixed observer, framing the scene that follows as something she witnesses rather than participates in.",
       "BeatTags": [],
       "ProseLength": 30,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4754,10 +4753,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s dawning realization that she misjudged the system\u0027s nature, deepening the story\u0027s central mystery about where the case is really going.",
       "BeatTags": [],
       "ProseLength": 748,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4769,10 +4768,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Confirms Yemina\u0027s own complicity in the breach, sharpening her guilt and personal stake in what she\u0027s uncovering.",
       "BeatTags": [],
       "ProseLength": 109,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4784,10 +4783,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns expectation by withholding the obvious action, building tension around the courier\u0027s unreadable restraint.",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4799,10 +4798,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates the scene\u0027s quiet dread by showing the courier\u0027s ritualized, almost reverent handling of the folder.",
       "BeatTags": [],
       "ProseLength": 358,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4814,10 +4813,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Yemina\u0027s ingrained investigative habit resurfacing involuntarily, underscoring how deeply the case has conditioned her.",
       "BeatTags": [],
       "ProseLength": 283,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4829,10 +4828,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the courier\u0027s uncanny composure as evidence he already understands the stakes, deepening the story\u0027s sense of hidden knowledge and control.",
       "BeatTags": [],
       "ProseLength": 331,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4844,10 +4843,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates the eeriness by contrasting the courier\u0027s outward normalcy with his inward stillness, defying Yemina\u0027s expectations of human reaction.",
       "BeatTags": [],
       "ProseLength": 373,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4859,10 +4858,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks a small narrative pause, letting Yemina\u0027s judgment override her compulsive tracking as tension briefly resolves.",
       "BeatTags": [],
       "ProseLength": 41,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4874,10 +4873,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pays off Yemina\u0027s arc of obsessive quantification by showing her instinctively abandon it, signaling this moment exceeds her usual frameworks of control.",
       "BeatTags": [],
-      "ProseLength": 191,
+      "ProseLength": 189,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4889,10 +4888,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes that the courier remains unaware of her surveillance, preserving her covert advantage.",
       "BeatTags": [],
       "ProseLength": 303,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4904,10 +4903,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Sets the physical stage of anonymous storage, foreshadowing the significance of an unmarked locker.",
       "BeatTags": [],
       "ProseLength": 144,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4919,10 +4918,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals the courier\u0027s practiced, ritualized competence, marking the drop as part of an established system rather than improvisation.",
       "BeatTags": [],
       "ProseLength": 412,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4934,10 +4933,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Confirms the courier\u0027s professional composure has fully returned, showing the encounter left no visible trace on him.",
       "BeatTags": [],
       "ProseLength": 189,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4949,10 +4948,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Clarifies the legal boundary constraining her, sharpening the tension between what she\u0027s witnessed and what she\u0027s allowed to act on.",
       "BeatTags": [],
       "ProseLength": 562,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4964,10 +4963,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks her turn from watching to documenting, converting observation into procedural action.",
       "BeatTags": [],
       "ProseLength": 30,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4979,10 +4978,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers the formal record of the surveillance, anchoring the vague suspicion into an official, citable fact.",
       "BeatTags": [],
       "ProseLength": 199,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -4994,10 +4993,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reinterprets the scene\u0027s meaning, revealing the folder as an active asset in play rather than evidence being disposed of.",
       "BeatTags": [],
       "ProseLength": 236,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5009,10 +5008,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Shows her turning limited authority into leveraged progress, seeding the locker for future investigators despite her own restraint.",
       "BeatTags": [],
       "ProseLength": 304,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5024,10 +5023,10 @@
       "Chapter": "Chapter 4 \u2014 The Limits",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Closes the scene on restraint and patience, underscoring her discipline in working within the system\u0027s limits.",
       "BeatTags": [],
       "ProseLength": 29,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5039,10 +5038,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Establishes Yemina\u0027s core survival discipline, choosing retreat over confrontation, to characterize how she has endured fifteen years inside a hostile system.",
       "BeatTags": [],
       "ProseLength": 592,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5054,10 +5053,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Reveals the protagonist methodically assembling disparate anomalies into a coherent pattern, escalating the mystery\u0027s stakes without yet naming its shape.",
       "BeatTags": [],
       "ProseLength": 794,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5069,10 +5068,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Underscores the gap between observation and understanding, sharpening the story\u0027s central frustration that seeing is not the same as knowing.",
       "BeatTags": [],
       "ProseLength": 137,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5084,10 +5083,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Introduces her private off-record log as a narrative device signaling that some truths exist outside official sanction and demand new categories.",
       "BeatTags": [],
       "ProseLength": 420,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5099,10 +5098,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Marks her formal surrender of the thread within institutional bounds, closing this beat\u0027s investigation while leaving unresolved tension for later.",
       "BeatTags": [],
       "ProseLength": 94,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5114,10 +5113,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Turns the story back toward mundane bureaucratic duty, reinforcing her identity as someone who completes tasks even when meaning eludes her.",
       "BeatTags": [],
       "ProseLength": 655,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5129,10 +5128,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Grounds the emotional weight of the morning in small physical sensation, showing her self-regulation as a quiet parallel to her professional restraint.",
       "BeatTags": [],
       "ProseLength": 296,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5144,10 +5143,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Sets the drab, unremarkable backdrop of institutional routine to contrast with the extraordinary morning she\u0027s just suppressed.",
       "BeatTags": [],
       "ProseLength": 474,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5159,10 +5158,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Exposes the moral cost of bureaucratic language by showing how official forms erase the human toll behind a clean disposition.",
       "BeatTags": [],
       "ProseLength": 474,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5174,10 +5173,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Reinforces the theme of institutional erasure, showing a colleague\u0027s significant risk and insight reduced to a bloodless administrative closure.",
       "BeatTags": [],
       "ProseLength": 473,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5189,10 +5188,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Establishes the ritual of documentation as a moral act, framing written record as the only truth that outlasts its witness.",
       "BeatTags": [],
       "ProseLength": 300,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5204,10 +5203,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Isolates one child\u0027s name from the aggregate count to signal this case will resist closure.",
       "BeatTags": [],
       "ProseLength": 43,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5219,10 +5218,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Dramatizes her resistance to false closure, revealing the gap between institutional language and unresolved truth.",
       "BeatTags": [],
       "ProseLength": 645,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5234,10 +5233,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Turns the record itself into an act of quiet defiance, naming the limit of her authority instead of faking resolution.",
       "BeatTags": [],
       "ProseLength": 133,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5249,10 +5248,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Validates the unsatisfying entry as more honest than any tidy answer, affirming integrity over comfort.",
       "BeatTags": [],
       "ProseLength": 99,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5264,10 +5263,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Uses the unchanged car to underscore how ordinary surfaces conceal what she now knows lies beneath them.",
       "BeatTags": [],
       "ProseLength": 492,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5279,10 +5278,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Marks the boundary of her power clearly, replacing metaphorical obstacles with a concrete, named unknown to pursue.",
       "BeatTags": [],
       "ProseLength": 279,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5294,10 +5293,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Shows her covertly crossing professional bounds to chase the one loose thread, revealing personal stakes beneath procedure.",
       "BeatTags": [],
       "ProseLength": 313,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5309,10 +5308,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Signals her reluctant acceptance of the search\u0027s limits, choosing restraint over further exposure or futile pursuit.",
       "BeatTags": [],
       "ProseLength": 44,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5324,10 +5323,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Closes the chapter on an image of institutional opacity, emphasizing that some truths vanish into unaccountable systems.",
       "BeatTags": [],
-      "ProseLength": 454,
+      "ProseLength": 453,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5339,10 +5338,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Establishes the protagonist\u0027s overwhelming, under-supported workload to justify why systemic warning signs routinely slip through the cracks.",
       "BeatTags": [],
       "ProseLength": 125,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5354,10 +5353,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Marks a transition beat, propelling her forward into the next stage of investigation without dwelling on process.",
       "BeatTags": [],
       "ProseLength": 10,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5369,10 +5368,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Reveals the bureaucracy\u0027s indifference by showing her urgent findings reduced to routine paperwork, escalating the reader\u0027s sense of dread.",
       "BeatTags": [],
       "ProseLength": 574,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -5384,10 +5383,10 @@
       "Chapter": "Chapter 5 \u2014 The Record",
       "ChapterIndex": 4,
       "Act": 0,
+      "Meaning": "Confirms the system\u0027s failure to recognize the report\u0027s significance, deepening the irony and stakes of institutional neglect.",
       "BeatTags": [],
       "ProseLength": 41,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],

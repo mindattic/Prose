@@ -161,9 +161,8 @@ public class CanonDocumentService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        // Verify node exists
-        bool nodeExists = await db.Nodes.AnyAsync(n => n.Id == nodeId, ct);
-        if (!nodeExists)
+        var node = await db.Nodes.FirstOrDefaultAsync(n => n.Id == nodeId, ct);
+        if (node == null)
             return new UpsertResult(false, null, "node_not_found", $"Node {nodeId} not found.");
 
         var section = await db.NodeBibleSections
@@ -183,6 +182,20 @@ public class CanonDocumentService
 
         section!.Content   = content;
         section.UpdatedAt  = DateTime.UtcNow;
+
+        // NodeDocService.GenerateAsync (the cascade every caller of this method runs immediately
+        // after) reads hand-authored content exclusively from Nodes.NodeBible — it never reads
+        // NodeBibleSections. sectionType "Full" is documented as "replace the entire hand-authored
+        // bible blob", so it must also land here or the cascade regenerates from the stale blob
+        // and silently discards this write. (Typed sections below Full have no downstream reader
+        // yet — recording them in NodeBibleSections is honest storage, not a composed bible edit.)
+        if (string.Equals(sectionType, "Full", StringComparison.OrdinalIgnoreCase))
+        {
+            node.NodeBible = string.IsNullOrEmpty(content) ? null : content;
+            node.NodeBibleGeneratedAt = DateTime.UtcNow;
+            node.UpdatedAt = DateTime.UtcNow;
+        }
+
         await db.SaveChangesAsync(ct);
 
         return new UpsertResult(true, nodeId, null, null, isNew ? "created" : "updated", sectionType);

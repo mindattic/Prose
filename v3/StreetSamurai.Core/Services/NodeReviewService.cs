@@ -1294,8 +1294,13 @@ Return ONLY a JSON object, nothing else:
         var system = studyMode
             ? BuildStudyReviewerSystemPrompt(persona, export.Title, export.BeatCount)
             : BuildReviewerSystemPrompt(persona, export.Title);
-        // study mode also returns a per-beat score object — budget grows with beat count
-        var maxTok = studyMode ? Math.Min(8000, Math.Max(2400, 900 + export.BeatCount * 6)) : 1400;
+        // study mode also returns a per-beat score object — budget grows with beat count.
+        // The plain full-review path's output size doesn't scale with book length (score +
+        // one prose paragraph + improvements/contradictions arrays) but DOES scale with how
+        // verbose the reviewing model is — 1400 silently truncated every Claude-Sonnet-5
+        // review mid-JSON (losing Improvements/Contradictions) while shorter GPT/Gemini output
+        // stayed under it undetected. 4096 covers Sonnet 5's longest observed full review.
+        var maxTok = studyMode ? Math.Min(8000, Math.Max(2400, 900 + export.BeatCount * 6)) : 4096;
         var raw = await legion.CallAsync(provider, key!, model, system, export.Markdown, maxTokens: maxTok, temperature: 0.85, ct, cacheUserMessage: true);
 
         int score; string reviewText; List<string> improvements;
@@ -2167,6 +2172,43 @@ Be specific; do not invent praise the reviews don't support.";
         return string.IsNullOrEmpty(line) ? null : (line.Length > 400 ? line[..400] : line);
     }
 
+    /// <summary>Some reviewer models (observed consistently with Claude Sonnet 5) write
+    /// literal newline/tab characters inside JSON string values instead of escaping them
+    /// as \n/\t. That's invalid per strict JSON (RFC 8259), so System.Text.Json's
+    /// JsonDocument.Parse throws on an otherwise well-formed, complete response — silently
+    /// losing the whole structured payload (improvements/contradictions/beat_scores) to a
+    /// much lossier regex fallback. Re-escapes control characters found INSIDE string
+    /// literals only (tracked via quote/escape state), leaving the surrounding JSON
+    /// structure untouched, so the primary parse path succeeds instead.</summary>
+    private static string SanitizeJsonControlChars(string json)
+    {
+        var sb = new System.Text.StringBuilder(json.Length + 16);
+        bool inString = false, escaped = false;
+        foreach (var c in json)
+        {
+            if (!inString)
+            {
+                if (c == '"') inString = true;
+                sb.Append(c);
+                continue;
+            }
+            if (escaped) { sb.Append(c); escaped = false; continue; }
+            if (c == '\\') { sb.Append(c); escaped = true; continue; }
+            if (c == '"') { inString = false; sb.Append(c); continue; }
+            switch (c)
+            {
+                case '\n': sb.Append("\\n"); break;
+                case '\r': sb.Append("\\r"); break;
+                case '\t': sb.Append("\\t"); break;
+                default:
+                    if (c < 0x20) continue; // drop other stray control chars
+                    sb.Append(c);
+                    break;
+            }
+        }
+        return sb.ToString();
+    }
+
     /// <summary>Tolerant JSON extraction: strips code fences, isolates the first
     /// {...} object, reads score/review/improvements. Falls back to a bare
     /// "score": N scan with the whole text as the review.</summary>
@@ -2178,7 +2220,7 @@ Be specific; do not invent praise the reviews don't support.";
         if (open < 0 || close <= open) return [];
         try
         {
-            using var doc = JsonDocument.Parse(raw[open..(close + 1)]);
+            using var doc = JsonDocument.Parse(SanitizeJsonControlChars(raw[open..(close + 1)]));
             if (!doc.RootElement.TryGetProperty("contradictions", out var arr) || arr.ValueKind != JsonValueKind.Array)
                 return [];
             return arr.EnumerateArray()
@@ -2210,7 +2252,7 @@ Be specific; do not invent praise the reviews don't support.";
             var json = text[open..(close + 1)];
             try
             {
-                using var doc = JsonDocument.Parse(json);
+                using var doc = JsonDocument.Parse(SanitizeJsonControlChars(json));
                 var root = doc.RootElement;
                 if (root.TryGetProperty("score", out var sEl))
                 {
@@ -2301,7 +2343,7 @@ Be specific; do not invent praise the reviews don't support.";
         if (open < 0 || close <= open) return false;
         try
         {
-            using var doc = JsonDocument.Parse(text[open..(close + 1)]);
+            using var doc = JsonDocument.Parse(SanitizeJsonControlChars(text[open..(close + 1)]));
             var root = doc.RootElement;
             if (root.TryGetProperty("score", out var sEl))
             {
@@ -2361,7 +2403,7 @@ Be specific; do not invent praise the reviews don't support.";
         if (open < 0 || close <= open) return false;
         try
         {
-            using var doc = JsonDocument.Parse(text[open..(close + 1)]);
+            using var doc = JsonDocument.Parse(SanitizeJsonControlChars(text[open..(close + 1)]));
             var root = doc.RootElement;
             if (root.TryGetProperty("score", out var sEl))
             {

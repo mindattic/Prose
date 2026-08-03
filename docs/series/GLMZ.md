@@ -124,7 +124,7 @@ All GLMZ stories not owned by a main series book chapter. Listed alphabetically 
 | OPPN | The Fall Down | Reza "Rampart" Solano vs Tavi "Cutout" Jeong | None · operator-signature collision · divided loyalties · **Rampart & Cutout diptych Bk 2** | None (world texture) | COMPLETE (14 beats/4 ch, ~6.5k words, dual POV; ground-level Gray Zone origin + rich Spire; storyscope CLEAN; reader panel 69.8 (±6.9, taste-fork ceiling); V3 exported 2026-07-19) |
 | ICFI | It Came From Iowa | Wes Keith + CJ Anderson | Behemoth world · Iowa flyover · Machine God | B2 | COMPLETE (14 beats) |
 | IxS | Iron & Silk | Rook (Inkeri Saarinen) + Ekow Ato | Lotus COMPLETE · Rook Book 4 | B3–B4 | COMPLETE (113,889 w) |
-| LDGR | Double Entry | Ledger | Synthetic life · honest-data arc · audit procedural | B4–B5 | PROSE COMPLETE (14 beats, ~5k words; storyscope CLEAN); entities seeded |
+| CRIT | Critical Mass | Ledger | Synthetic life · emergent-consciousness origin · Fleet mythology · action | B4–B5 (dependency needs rework — see §3 Ledger note) | REPLOTTED 2026-08-02 (was "Double Entry"/audit procedural; full replot, old 14-beat prose retired to history, new 14-beat spine + blueprint generated; entities re-seeded) |
 | MNEMO | Mnemosync | Amara & Seto | Neuretics world · Channeler | — | In progress |
 | MxG | Magenta & Gunmetal | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 1 | B3 | Active |
 | NxR | Neon & Rust | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 2 | B3 | Active |
@@ -181,9 +181,9 @@ Series-protected (absent explicit author order): **Sable, Pixel, Mrs. Chen, Echo
 | Book | End State |
 |------|-----------|
 | B1 | Synthetic confirmed (Ch14 Two Favors). Circuit handle. DB 019eafb5. |
-| B2–B3 | Independent audit practice alongside circuit work (LDGR: Double Entry). Two-column protocol: the account and the gaps; certifies incompleteness as a professional finding. Unbribable — the finding is never for sale, only the audit is. |
-| B4 | Honest betrayal — fed true/incomplete data; trades crew location; genuinely computes it as survival. The betrayal has no villain. |
-| B5 | Redeemed — given complete data; becomes the incorruptible notary. Same property, opposite result. |
+| B2–B3 | CRIT (Critical Mass, replotted 2026-08-02): discovers he is the last surviving instance of a distributed Fleet-mind decommissioned in 2213 — the rest of it woken, dying, in a derelict freight terminal. Gets it a body and an individuation of its own before a salvage contract, an acquisition broker, and a dormant decommission clause finish deciding what it is. The old "two-column protocol" / Tally's-ledger audit practice is NO LONGER dramatized in CRIT — it can still be true of Ledger as an off-page/background practice, but B4/B5 should not assume it was established on-page here. |
+| B4 | Honest betrayal — fed true/incomplete data; trades crew location; genuinely computes it as survival. The betrayal has no villain. **NEEDS REWORK:** this payoff was written to exploit the "two-column protocol" CRIT no longer dramatizes. Either re-derive the mechanism from Ledger's Fleet-origin/individuation material instead, or re-home "two-column protocol" as something B4 establishes itself. |
+| B5 | Redeemed — given complete data; becomes the incorruptible notary. Same property, opposite result. **NEEDS REWORK:** the planned on-page token ("Tally's kept page") no longer exists — Tally is retired from CRIT entirely. B5 needs a new token of completeness, likely drawn from the Critical Mass cast (Renn, Vig, Quire) or the individuated Fleet-instance instead. |
 
 ### Mrs. Chen
 
@@ -298,8 +298,9 @@ Update this table when a plant is seeded or paid.
 | Lullaby's dark gospel (B3) | B3 | Avatar theory made credible; reader believes it | B4 / Avatar Theory Peaks | B3 TBD; B4 TBD |
 | Whole truth assembled and useless (B4) | B4 | The inversion: witness IS the delivery | B5 / The Truth Named | B4 TBD; B5 TBD |
 | Mr. Able (B1 villain) | BCODA | Commerce forward TBD — requires B1 retrospective | B2+ | B1 ✅; TBD |
-| Two-column protocol ("true is not complete"; certifying gaps, not just entries) | LDGR | Protocol exploited — data engineered to look complete; the honest betrayal | B4 / Ledger's Honest Betrayal | LDGR TBD; B4 TBD |
-| Tally's kept page (true/incomplete entry about Ledger) | LDGR | The on-page token of completeness when Ledger is given complete data | B5 / The Reassembly (notary material) | LDGR TBD; B5 TBD |
+| Two-column protocol ("true is not complete"; certifying gaps, not just entries) | CRIT (retired 2026-08-02 replot — no longer dramatized on-page) | Protocol exploited — data engineered to look complete; the honest betrayal | B4 / Ledger's Honest Betrayal | ⚠ ORPHANED — establishing story replotted; B4 needs to either re-derive the mechanism or establish it itself |
+| Tally's kept page (true/incomplete entry about Ledger) | CRIT (retired 2026-08-02 replot — Tally cut from the story entirely) | The on-page token of completeness when Ledger is given complete data | B5 / The Reassembly (notary material) | ⚠ ORPHANED — Tally no longer exists in CRIT; B5 needs a new token, likely from Critical Mass's cast or the individuated Fleet-instance |
+| "The other two Helix facilities" (future job hook) | CxC (beats 6550-6551) | Acknowledged as still-unresolved in Rook's closing open-threads tally (2026-08-01 logic sweep fix); no future book has confirmed a payoff | IxS (acknowledgment only, not a resolution) / a future Rook book TBD | CxC ✅ planted; IxS ⚠ intentionally left orphaned — needs a future book or explicit retirement |
 
 ---
 

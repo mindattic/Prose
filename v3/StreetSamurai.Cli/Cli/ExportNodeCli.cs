@@ -184,6 +184,33 @@ public static class ExportNodeCli
             }
             catch (Exception ex) { Console.Error.WriteLine($"[export-node] ⚠ Synopsis failed (non-fatal): {ex.Message}"); }
 
+            // ── keywords.txt ──────────────────────────────────────────────────────
+            // Amazon KDP backend search keywords (up to 7, one per line, ordered by
+            // NodeKeyword.SortOrder). Every book must carry its own unique set — see
+            // ss --seed-keywords for how these get populated per node.
+            try
+            {
+                await using var db3 = await dbFactory.CreateDbContextAsync();
+                var keywords = await db3.NodeKeywords.AsNoTracking()
+                    .Where(k => k.NodeId == nodeId)
+                    .OrderBy(k => k.SortOrder)
+                    .Select(k => k.Keyword)
+                    .ToListAsync();
+
+                if (keywords.Count > 0)
+                {
+                    var outDir = Path.GetDirectoryName(docxPath)!;
+                    var kwPath = Path.Combine(outDir, "keywords.txt");
+                    await File.WriteAllTextAsync(kwPath, string.Join(Environment.NewLine, keywords));
+                    Console.WriteLine($"[export-node] Wrote keywords: {kwPath} ({keywords.Count} phrases)");
+                }
+                else
+                {
+                    Console.Error.WriteLine("[export-node] ⚠ No keywords found for this node — run ss --seed-keywords --slug <slug> first.");
+                }
+            }
+            catch (Exception ex) { Console.Error.WriteLine($"[export-node] ⚠ Keywords export failed (non-fatal): {ex.Message}"); }
+
             // DCM lifecycle Gantt (<CODE>-dcm-viz.htm) into the same folder.
             try
             {

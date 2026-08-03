@@ -1,51 +1,69 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
+using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
 
+/// <summary>
+/// Rewritten for the 2026-05-08 JSON→SQL canon migration: TagNormalizerService now
+/// scans Records.Json blobs (via DataScanUtility), not engine_data/*.json files.
+/// Seeds an Entity + Record row per fixture instead of writing a file.
+/// </summary>
 [TestFixture]
-[Ignore("Service migrated to SQL — tests need rewrite to seed Records.Json instead of files.")]
 public class TagNormalizerServiceTests
 {
     private string tempDir = "";
-    private string peopleDir = "";
-    private string syntheticsDir = "";
-    private string weaponsDir = "";
+    private TestPathProviderWithRoot paths = null!;
+    private IDbContextFactory<StreetSamuraiDbContext> factory = null!;
     private TagNormalizerService svc = null!;
 
     [SetUp]
     public void SetUp()
     {
         tempDir = Path.Combine(Path.GetTempPath(), $"ss_tags_{Guid.NewGuid():N}");
-        peopleDir     = Path.Combine(tempDir, "engine_data", "people");
-        syntheticsDir = Path.Combine(tempDir, "engine_data", "synthetics");
-        weaponsDir    = Path.Combine(tempDir, "engine_data", "weaponry");
-        Directory.CreateDirectory(peopleDir);
-        Directory.CreateDirectory(syntheticsDir);
-        Directory.CreateDirectory(weaponsDir);
-        var paths = new TestPathProviderWithRoot(tempDir);
-        svc = new TagNormalizerService(TestDbFactory.For(paths, "tags"));
+        Directory.CreateDirectory(tempDir);
+        paths = new TestPathProviderWithRoot(tempDir);
+        TestDbFactory.Reset(paths);
+        factory = TestDbFactory.For(paths, "tags");
+        svc = new TagNormalizerService(factory);
     }
 
     [TearDown]
     public void TearDown()
     {
+        TestDbFactory.Reset(paths);
         if (Directory.Exists(tempDir)) Directory.Delete(tempDir, recursive: true);
     }
 
-    private string WriteEntity(string dir, object data)
+    /// <summary>Seeds an Entity + Records.Json row and returns the EntityId for re-reading.</summary>
+    private Guid SeedEntity(string entityType, object data)
     {
-        var id = Guid.NewGuid().ToString("N");
-        var path = Path.Combine(dir, $"{id}.json");
-        File.WriteAllText(path, JsonSerializer.Serialize(data));
-        return path;
+        var id = Guid.NewGuid();
+        using var db = factory.CreateDbContext();
+        db.Entities.Add(new Entity
+        {
+            Id         = id,
+            EntityType = entityType,
+            Name       = "Test Entity",
+            Slug       = $"test-entity-{id:N}",
+            Status     = "canon",
+            IsActive   = true,
+            CreatedAt  = DateTime.UtcNow,
+            ModifiedAt = DateTime.UtcNow,
+        });
+        db.Records.Add(new Record { EntityId = id, Json = JsonSerializer.Serialize(data) });
+        db.SaveChanges();
+        return id;
     }
 
-    private List<string> ReadTags(string path)
+    private List<string> ReadTags(Guid id)
     {
-        var obj = JsonNode.Parse(File.ReadAllText(path)) as JsonObject;
+        using var db = factory.CreateDbContext();
+        var row = db.Records.First(r => r.EntityId == id);
+        var obj = JsonNode.Parse(row.Json) as JsonObject;
         if (obj?["tags"] is not JsonArray arr) return [];
         return arr.Select(n => n?.GetValue<string>() ?? "").ToList();
     }
@@ -55,31 +73,31 @@ public class TagNormalizerServiceTests
     [Test]
     public async Task Process_PeopleDir_AddsCategoryTagPerson()
     {
-        var path = WriteEntity(peopleDir, new { name = "Vex", tags = Array.Empty<string>() });
+        var id = SeedEntity("character", new { name = "Vex", tags = Array.Empty<string>() });
 
         await svc.RunAsync();
 
-        Assert.That(ReadTags(path), Does.Contain("person"));
+        Assert.That(ReadTags(id), Does.Contain("person"));
     }
 
     [Test]
     public async Task Process_SyntheticsDir_AddsCategoryTagSynthetic()
     {
-        var path = WriteEntity(syntheticsDir, new { name = "Unit-3", tags = Array.Empty<string>() });
+        var id = SeedEntity("synthetic", new { name = "Unit-3", tags = Array.Empty<string>() });
 
         await svc.RunAsync();
 
-        Assert.That(ReadTags(path), Does.Contain("synthetic"));
+        Assert.That(ReadTags(id), Does.Contain("synthetic"));
     }
 
     [Test]
     public async Task Process_WeaponsDir_NoCategoryTagAdded()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Blade", tags = new[] { "lethal" } });
+        var id = SeedEntity("weapon", new { name = "Blade", tags = new[] { "lethal" } });
 
         await svc.RunAsync();
 
-        var tags = ReadTags(path);
+        var tags = ReadTags(id);
         Assert.That(tags, Does.Not.Contain("person"));
         Assert.That(tags, Does.Not.Contain("synthetic"));
     }
@@ -87,21 +105,21 @@ public class TagNormalizerServiceTests
     [Test]
     public async Task Process_PeopleDir_PersonTagNotDuplicated()
     {
-        var path = WriteEntity(peopleDir, new { name = "Vex", tags = new[] { "person", "runner" } });
+        var id = SeedEntity("character", new { name = "Vex", tags = new[] { "person", "runner" } });
 
         await svc.RunAsync();
 
-        Assert.That(ReadTags(path).Count(t => t == "person"), Is.EqualTo(1));
+        Assert.That(ReadTags(id).Count(t => t == "person"), Is.EqualTo(1));
     }
 
     [Test]
     public async Task Process_CategoryTagDisabled_NoCategoryTagAdded()
     {
-        var path = WriteEntity(peopleDir, new { name = "Vex", tags = Array.Empty<string>() });
+        var id = SeedEntity("character", new { name = "Vex", tags = Array.Empty<string>() });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false));
 
-        Assert.That(ReadTags(path), Does.Not.Contain("person"));
+        Assert.That(ReadTags(id), Does.Not.Contain("person"));
     }
 
     // ── Lowercase normalization ───────────────────────────────────────────────
@@ -109,11 +127,11 @@ public class TagNormalizerServiceTests
     [Test]
     public async Task Process_UpperCaseTags_AreLowercased()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Spike", tags = new[] { "Lethal", "MELEE" } });
+        var id = SeedEntity("weapon", new { name = "Spike", tags = new[] { "Lethal", "MELEE" } });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false, ValidateKeywords: false));
 
-        var tags = ReadTags(path);
+        var tags = ReadTags(id);
         Assert.That(tags, Does.Contain("lethal"));
         Assert.That(tags, Does.Contain("melee"));
         Assert.That(tags, Does.Not.Contain("Lethal"));
@@ -124,22 +142,22 @@ public class TagNormalizerServiceTests
     [Test]
     public async Task Process_DuplicateTags_AreRemoved()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Spike", tags = new[] { "lethal", "lethal", "melee" } });
+        var id = SeedEntity("weapon", new { name = "Spike", tags = new[] { "lethal", "lethal", "melee" } });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false, ValidateKeywords: false));
 
-        var tags = ReadTags(path);
+        var tags = ReadTags(id);
         Assert.That(tags.Count(t => t == "lethal"), Is.EqualTo(1));
     }
 
     [Test]
     public async Task Process_CaseInsensitiveDuplicates_AreCollapsed()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Spike", tags = new[] { "lethal", "Lethal" } });
+        var id = SeedEntity("weapon", new { name = "Spike", tags = new[] { "lethal", "Lethal" } });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false, ValidateKeywords: false));
 
-        Assert.That(ReadTags(path), Has.Count.EqualTo(1));
+        Assert.That(ReadTags(id), Has.Count.EqualTo(1));
     }
 
     // ── Keyword validation ────────────────────────────────────────────────────
@@ -148,68 +166,68 @@ public class TagNormalizerServiceTests
     public async Task Process_TagKeywordMissing_TagIsRemoved()
     {
         // "war" tag requires war/battle/combat/etc in entity text — none here
-        var path = WriteEntity(weaponsDir, new { name = "Paperclip", description = "Mundane office supply.", tags = new[] { "war" } });
+        var id = SeedEntity("weapon", new { name = "Paperclip", description = "Mundane office supply.", tags = new[] { "war" } });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false));
 
-        Assert.That(ReadTags(path), Does.Not.Contain("war"));
+        Assert.That(ReadTags(id), Does.Not.Contain("war"));
     }
 
     [Test]
     public async Task Process_TagKeywordPresent_TagIsKept()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Spike", description = "Used in battle and combat.", tags = new[] { "war" } });
+        var id = SeedEntity("weapon", new { name = "Spike", description = "Used in battle and combat.", tags = new[] { "war" } });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false));
 
-        Assert.That(ReadTags(path), Does.Contain("war"));
+        Assert.That(ReadTags(id), Does.Contain("war"));
     }
 
     [Test]
     public async Task Process_UnknownTag_AlwaysKept()
     {
         // Tags not in the keyword dict are kept unconditionally
-        var path = WriteEntity(weaponsDir, new { name = "Spike", description = "No relevant text.", tags = new[] { "my-custom-tag" } });
+        var id = SeedEntity("weapon", new { name = "Spike", description = "No relevant text.", tags = new[] { "my-custom-tag" } });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false));
 
-        Assert.That(ReadTags(path), Does.Contain("my-custom-tag"));
+        Assert.That(ReadTags(id), Does.Contain("my-custom-tag"));
     }
 
     [Test]
     public async Task Process_ValidationDisabled_TagsNotStripped()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Spike", description = "Nothing relevant.", tags = new[] { "war" } });
+        var id = SeedEntity("weapon", new { name = "Spike", description = "Nothing relevant.", tags = new[] { "war" } });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false, ValidateKeywords: false));
 
-        Assert.That(ReadTags(path), Does.Contain("war"));
+        Assert.That(ReadTags(id), Does.Contain("war"));
     }
 
     [Test]
     public async Task Process_HackingTagWithCyber_Kept()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Brain Tap", description = "Cyber intrusion tool for direct neural hacking.", tags = new[] { "hacking" } });
+        var id = SeedEntity("weapon", new { name = "Brain Tap", description = "Cyber intrusion tool for direct neural hacking.", tags = new[] { "hacking" } });
 
         await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false));
 
-        Assert.That(ReadTags(path), Does.Contain("hacking"));
+        Assert.That(ReadTags(id), Does.Contain("hacking"));
     }
 
     // ── Empty tags array ─────────────────────────────────────────────────────
 
     [Test]
-    public async Task Process_EmptyTagsArray_NoError()
+    public void Process_EmptyTagsArray_NoError()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Spike", tags = Array.Empty<string>() });
+        SeedEntity("weapon", new { name = "Spike", tags = Array.Empty<string>() });
 
         Assert.DoesNotThrowAsync(async () => await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false)));
     }
 
     [Test]
-    public async Task Process_NoTagsField_NoError()
+    public void Process_NoTagsField_NoError()
     {
-        var path = WriteEntity(weaponsDir, new { name = "Spike" });
+        SeedEntity("weapon", new { name = "Spike" });
 
         Assert.DoesNotThrowAsync(async () => await svc.RunAsync(new TagNormalizerService.Options(AddCategoryTags: false)));
     }

@@ -471,6 +471,16 @@ public static class ReviewNodeCli
             return 1;
         }
 
+        if (!string.IsNullOrEmpty(run.ContentHash))
+        {
+            try
+            {
+                var gripes = await reviewer.ConsolidateGripesAsync(nodeId, run.ContentHash);
+                if (!string.IsNullOrEmpty(gripes)) { Console.WriteLine(); Console.WriteLine(gripes); }
+            }
+            catch (Exception ex) { Console.Error.WriteLine($"[review-node] Gripe consolidation failed: {ex.Message}"); }
+        }
+
         Console.WriteLine("[review-node] Synthesizing Amazon-style summary…");
         try
         {

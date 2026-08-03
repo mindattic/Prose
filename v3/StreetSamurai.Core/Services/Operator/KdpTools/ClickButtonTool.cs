@@ -47,7 +47,22 @@ public class ClickButtonTool : IKdpTool
         if (candidates.Length == 0)
             return JsonSerializer.Serialize(new { error = "text_candidates was empty." });
 
-        var autoTicked = await KdpFormHelpers.TickMatchingCheckboxesAsync(ctx, ConfirmCheckboxCandidates, ct);
+        var tickResult = await KdpFormHelpers.TickMatchingCheckboxesAsync(ctx, ConfirmCheckboxCandidates, ct);
+        if (tickResult.BlockedByProcessing)
+        {
+            // Refuse the click entirely, not just the auto-tick — a Save/Continue/Publish click
+            // while KDP is still quality-checking/converting the upload depends on checkboxes we
+            // just confirmed we can't reliably tick yet, so clicking now would race the same
+            // unreliable-form state this guard exists to avoid.
+            return JsonSerializer.Serialize(new
+            {
+                clicked = false,
+                blockedByProcessing = true,
+                processingIndicator = tickResult.ProcessingIndicator,
+                hint = "KDP is still running its server-side quality check/processing. Call get_page_status and wait for it to clear before retrying.",
+            });
+        }
+        var autoTicked = tickResult.Matches;
 
         var candidatesJson = JsonSerializer.Serialize(candidates);
         var script = $$"""
