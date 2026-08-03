@@ -140,6 +140,55 @@ public class FindingsService
     private static DateTime? ParseDate(string s)
         => DateTime.TryParse(s, null, System.Globalization.DateTimeStyles.RoundtripKind, out var d) ? d : null;
 
+    /// <summary>Prefix every beat-anchored finding's <c>FilePath</c> carries.</summary>
+    internal const string BeatFilePathPrefix = "beat:";
+
+    /// <summary>
+    /// Dismiss open findings anchored to a beat that is no longer enabled in any node.
+    ///
+    /// <b>The bug this closes.</b> Beat-scoped findings (ENTITY-CONFLICT from
+    /// <see cref="EntityContextService"/>, and anything else writing <c>beat:&lt;guid&gt;</c>) are
+    /// written while a beat is live. When that beat is later soft-deleted — a replot, a rename, a
+    /// superseded draft — <see cref="Data.Entities.BeatNode.IsEnabled"/> goes false but the
+    /// finding stays New forever, still quoting prose that is no longer in the book. On TRNY
+    /// (2026-08-02) that produced 19 open Medium findings, 10 of them quoting a character name
+    /// that had been renamed out of the manuscript entirely; every one was a false positive and
+    /// each had to be re-verified by hand against the live prose before it could be dismissed.
+    ///
+    /// A finding is only reaped when the beat is enabled NOWHERE — a beat shared across nodes
+    /// stays live as long as one membership is enabled — and only if still open, so a human's
+    /// Applied/Dismissed decision is never overwritten.
+    /// </summary>
+    public async Task<int> DismissStaleBeatFindingsAsync(CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var open = await db.Findings
+            .Where(f => (f.Status == "New" || f.Status == "Triaged") && f.FilePath.StartsWith(BeatFilePathPrefix))
+            .ToListAsync(ct);
+        if (open.Count == 0) return 0;
+
+        var liveKeys = (await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.IsEnabled)
+                .Select(bn => bn.BeatId)
+                .Distinct()
+                .ToListAsync(ct))
+            .Select(id => id.ToString("N"))
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        var stale = open
+            .Where(f => !liveKeys.Contains(f.FilePath[BeatFilePathPrefix.Length..].Trim()))
+            .ToList();
+
+        foreach (var f in stale)
+        {
+            f.Status     = "Dismissed";
+            f.ResolvedAt = DateTime.UtcNow;
+        }
+        if (stale.Count > 0) await db.SaveChangesAsync(ct);
+        return stale.Count;
+    }
+
     public long Upsert(
         string filePath,
         string? chapterId,

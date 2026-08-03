@@ -12,6 +12,7 @@ sessions/*/facet_responses/
 #             powershell -File tools/gen-schema.ps1     (schema.md)
 # GC: powershell -File tools/codex.ps1 gc
 docs/nodes/*.md
+docs/ENGINE.md
 docs/BIBLE.md
 docs/WORLD.md
 docs/FRANCHISE.md

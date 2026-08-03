@@ -43,7 +43,16 @@ public class AuditRunner(ILlmService llm, FindingsService findings)
         var results = await Task.WhenAll(rules.Select(r => EvaluateOneAsync(r, ctx, ct)));
         var verdicts = results.SelectMany(v => v).ToList();
         if (writeFindings)
+        {
+            // Reap beat-anchored findings whose beat has since been soft-deleted before writing
+            // this run's rows. The delete-then-recreate lifecycle below only cleans up findings
+            // THIS audit wrote; findings written by the prose pipeline (EntityContextService's
+            // ENTITY-CONFLICT) are never revisited by anything else, so a superseded draft beat
+            // leaves them open forever, quoting prose no longer in the book. Any audit run is a
+            // safe, cheap moment to clear them — see FindingsService.DismissStaleBeatFindingsAsync.
+            await findings.DismissStaleBeatFindingsAsync(ct);
             WriteFindingsForRules(auditName, filePathKey, category, rules.Select(r => r.Key).ToList(), verdicts);
+        }
         return verdicts;
     }
 

@@ -15,8 +15,17 @@ public static class AuditProseUtils
 }
 
 /// <summary>One enabled beat, pre-loaded once per audit run so individual rules don't each
-/// re-query the DB.</summary>
-public record AuditBeat(Guid Id, int Number, string Text);
+/// re-query the DB.
+///
+/// <paramref name="SortKey"/> is the beat's position within its node (<c>BeatNodes.SortKey</c>),
+/// NOT a display index — it carries real structural history. Beats laid down in one pass sit on
+/// an even grid (50, 100, 150…); a beat inserted later is wedged between two existing ones at the
+/// midpoint, so repeated insertion produces a binary-subdivision trail (75, 87.5, 93.75, 96.875).
+/// That trail is the only surviving evidence of which beats were written against an already-fixed
+/// neighbourhood, which is exactly where state contradictions hide — see
+/// <c>InsertedBeatDriftRule</c>. Defaults to 0 so test fixtures and rules that don't care about
+/// position can keep constructing beats positionally.</summary>
+public record AuditBeat(Guid Id, int Number, string Text, double SortKey = 0);
 
 /// <summary>
 /// Everything a rule needs to evaluate one node. <see cref="Prose"/> is the whole node's
