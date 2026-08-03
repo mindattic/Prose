@@ -103,6 +103,48 @@ public class ProsePatternGuardTests
 
 
     [Test]
+    public void Check_CorrectPhiForm_NotFlagged()
+    {
+        var result = guard.Check("The fee was Φ40, released on completion. The mesh cost Φ11,200 with the array.");
+        Assert.That(result.Any(v => v.Category == ProseViolationCategory.CurrencyFormat), Is.False);
+    }
+
+    [Test]
+    public void Check_DigitsBeforePhi_Flagged()
+    {
+        var result = guard.Check("The fee was 40 Φ, released on completion.");
+        Assert.That(result.Any(v => v.Category == ProseViolationCategory.CurrencyFormat), Is.True);
+    }
+
+    [Test]
+    public void Check_DigitsBeforePhiNoSpace_Flagged()
+    {
+        var result = guard.Check("He counted out 100Φ at the counter.");
+        Assert.That(result.Any(v => v.Category == ProseViolationCategory.CurrencyFormat), Is.True);
+    }
+
+    [Test]
+    public void Check_SpelledNumberBeforePhi_Flagged()
+    {
+        var result = guard.Check("\"Forty Φ — and one true answer,\" Vey said.");
+        Assert.That(result.Any(v => v.Category == ProseViolationCategory.CurrencyFormat), Is.True);
+    }
+
+    [Test]
+    public void Check_HyphenatedSpelledNumberBeforePhi_Flagged()
+    {
+        var result = guard.Check("Thirty-five Φ a week is not a retirement plan.");
+        Assert.That(result.Any(v => v.Category == ProseViolationCategory.CurrencyFormat), Is.True);
+    }
+
+    [Test]
+    public void Check_BareQsAndHalfAPhi_NotFlagged()
+    {
+        var result = guard.Check("Carver paid him in Qs. He sent half a Φ back up the contract.");
+        Assert.That(result.Any(v => v.Category == ProseViolationCategory.CurrencyFormat), Is.False);
+    }
+
+    [Test]
     public void Check_MultipleViolations_AllReturned()
     {
         var text = "The chrome gleam blinded him. In that moment, he thought about how the neon-washed street looked.";

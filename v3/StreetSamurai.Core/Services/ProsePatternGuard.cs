@@ -8,6 +8,7 @@ public enum ProseViolationCategory
     PseudoProfound,
     OnTheNose,
     ItalicisedDialogue,
+    CurrencyFormat,
 }
 
 public class ProseViolation
@@ -81,6 +82,21 @@ public class ProsePatternGuard
     private static readonly Regex ItalicDialogue = new(
         @"[*_]+""[^""]{1,200}""[*_]+", RegexOptions.Compiled);
 
+    // Φ is the Quanta currency sign and ALWAYS precedes the amount — Φ40, like a dollar
+    // sign (author ruling 2026-08-03). Trailing forms ("40 Φ", "40Φ", "forty Φ",
+    // "Thirty-five Φ") are violations everywhere, spoken dialogue included. Bare
+    // "Q"/"Qs"/"quanta" with no number attached, and "half a Φ", stay legal.
+    private static readonly (Regex Pattern, string Rule, string? Suggestion)[] CurrencyFormat =
+    [
+        (new Regex(@"\d[\d,.]*\s*Φ", RegexOptions.Compiled),
+            "number before Φ — the sign precedes the amount (Φ40, never 40 Φ)",
+            "Rewrite as Φ<amount>"),
+        (new Regex(@"\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million)(-plus)?\s+Φ",
+                RegexOptions.IgnoreCase | RegexOptions.Compiled),
+            "spelled-out number before Φ — the sign precedes the amount in digits (Φ40, never forty Φ), dialogue included",
+            "Rewrite as Φ<digits>"),
+    ];
+
 
 
     /// <summary>
@@ -97,6 +113,7 @@ public class ProsePatternGuard
         CheckPatterns(text, HardcodedCliches, ProseViolationCategory.Cliche, violations);
         CheckPatternPairs(text, PseudoProfound, ProseViolationCategory.PseudoProfound, violations);
         CheckPatternPairs(text, OnTheNose, ProseViolationCategory.OnTheNose, violations);
+        CheckPatterns(text, CurrencyFormat, ProseViolationCategory.CurrencyFormat, violations);
         CheckItalicDialogue(text, violations);
 
         if (additionalProhibitions != null)
