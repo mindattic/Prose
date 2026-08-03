@@ -76,7 +76,10 @@
                                 <span class="story-code">@s.NodeCode</span>
                             }
                             @if (beatCount > 0) { <span class="story-stat">@beatCount beats</span> }
-                            @if (s.Score.HasValue) { <span class="story-stat story-stat--score">@s.Score.Value.ToString("0")%</span> }
+                            @* 0-100 opinion scores retired (Reader-Proxy QA, 2026-08-03) — the
+                               quality signal is now open findings, not a panel mean. *@
+                            @{ var openQa = openFindingCounts.GetValueOrDefault(s.Slug ?? "", 0); }
+                            @if (openQa > 0) { <span class="story-stat story-stat--score" title="Open QA findings (comprehension / checklist / gripes / sweep)">@openQa open</span> }
                             @{ var pages = pageCounts.GetValueOrDefault(s.Id, 0); }
                             @if (pages > 0) { <span class="story-stat">@pages pg</span> }
                             @{ var dur = audioDurations.GetValueOrDefault(s.Id); }
@@ -344,6 +347,8 @@
     }
 
 
+    private Dictionary<string, int> openFindingCounts = new(StringComparer.OrdinalIgnoreCase);
+
     private async Task LoadAsync()
     {
         loading = true;
@@ -354,6 +359,15 @@
             .AsNoTracking()
             .ToListAsync();
         var ids = nodes.Select(s => s.Id).ToHashSet();
+
+        // Open QA findings per book (Reader-Proxy QA + sweeps) — the replacement for
+        // the retired 0-100 panel score. FilePath convention: "node:<slug>[/...]".
+        openFindingCounts = (await db.Findings.AsNoTracking()
+                .Where(f => (f.Status == "New" || f.Status == "Triaged") && f.FilePath.StartsWith("node:"))
+                .Select(f => f.FilePath)
+                .ToListAsync())
+            .GroupBy(p => p["node:".Length..].Split('/')[0].Split(':')[0], StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.Count(), StringComparer.OrdinalIgnoreCase);
 
         // Recursive descendant count: walk the parent → children map in memory
         // so a book node reports total beats across all chapter children,

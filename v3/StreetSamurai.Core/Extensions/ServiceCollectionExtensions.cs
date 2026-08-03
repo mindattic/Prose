@@ -828,6 +828,13 @@ public static class ServiceCollectionExtensions
         // CRAFT §8 DON'Ts per beat + "≥1 applicable DELIGHT move" per beat + book-level
         // move-monotony counters (DELIGHT §14). One cheap call per CHANGED beat only.
         services.AddSingleton<BeatChecklistGateService>();
+
+        // Reader-Proxy QA Instrument 4: findings-only gripe jury — cross-family
+        // full-read complaints (NO scores), deterministic quote-grounding, Sonnet
+        // arbitration, ReaderGripe findings. Replaces ConsolidateGripesAsync
+        // (console-only) and ProposeEditsAsync (orphaned temp JSON). The optional
+        // apply arm routes every splice through the BeatDuelService gate (SS-A44).
+        services.AddSingleton<GripePassService>();
         services.AddSingleton<VotingConfiguration>(sp =>
         {
             var s = sp.GetRequiredService<SettingsService>();

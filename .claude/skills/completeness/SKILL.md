@@ -1,13 +1,21 @@
 ---
 name: completeness
-description: Build the all-universe Book Completeness dashboard as an HTML artifact — per-book coverage (bible↔blueprint↔beat), chapter count, blueprint granularity, open gaps, node score, standard deviation, and ballot count, across every universe. Usage /completeness [--fresh]. --fresh re-runs coordination first (no LLM); default reads the latest reports/coordination/*.json.
+description: Build the all-universe Book Completeness dashboard as an HTML artifact — per-book coverage (bible↔blueprint↔beat), chapter count, blueprint granularity, open gaps, and open Reader-Proxy QA findings by category/severity, across every universe. Usage /completeness [--fresh]. --fresh re-runs coordination first (no LLM); default reads the latest reports/coordination/*.json.
 ---
 
 # /completeness — Book Completeness Dashboard
 
 Produce ONE visual dashboard covering **every book in every universe**: how complete each
 book is across the three coordinates (MEANING = bible, CONSTRUCTION = blueprint, PROSE = beat),
-plus its review score, spread, and structure. Read-only. NO votes, NO panels, NO LLM.
+plus its open QA findings and structure. Read-only. NO votes, NO panels, NO LLM.
+
+> **Scores retired (2026-08-03, docs/READER-QA.md):** the 0–100 panel score / SD / ballot
+> columns are REPLACED by **open findings by category** — query
+> `SELECT FilePath, Category, Severity FROM Findings WHERE Status IN ('New','Triaged')`,
+> group by book slug parsed from `FilePath` (`node:<slug>[/...]`), and show counts per
+> category (`ComprehensionDefect`/`CraftChecklist`/`ReaderGripe`/logic-sweep categories)
+> with High severity highlighted. `Nodes.Score` is historical display only — never a column
+> to sort or gate on.
 
 ## Fixed facts
 - DB (read-only): `sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"` (Windows Auth).

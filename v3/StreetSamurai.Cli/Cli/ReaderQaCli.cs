@@ -30,12 +30,22 @@ public static class ReaderQaCli
         bool all = args.Contains("--all");
         bool force = args.Contains("--force");
         bool json = args.Contains("--json");
+        bool gripePass = args.Contains("--gripe-pass");
+        int readers = 4;
         for (int i = 0; i < args.Length; i++)
+        {
             if (args[i] == "--slug" && i + 1 < args.Length) slug = args[i + 1];
+            if (args[i] == "--readers" && i + 1 < args.Length) int.TryParse(args[i + 1], out readers);
+        }
 
         if (!all && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --reader-qa (--slug <slug> | --all) [--force] [--json]");
+            Console.Error.WriteLine("Usage: ss --reader-qa (--slug <slug> | --all) [--gripe-pass [--readers N]] [--force] [--json]");
+            return 2;
+        }
+        if (gripePass && all)
+        {
+            Console.Error.WriteLine("[reader-qa] --gripe-pass runs one book at a time (--slug).");
             return 2;
         }
 
@@ -51,6 +61,28 @@ public static class ReaderQaCli
                 .Select(n => (n.Id, n.Title)).ToList();
         }
         if (targets.Count == 0) { Console.Error.WriteLine("[reader-qa] No matching book."); return 2; }
+
+        if (gripePass)
+        {
+            var gripes = services.GetRequiredService<GripePassService>();
+            var (gid, gtitle) = targets[0];
+            Console.WriteLine($"[reader-qa] {gtitle} — gripe pass ({readers} readers, findings only, no scores)…");
+            GripePassService.GripeRunResult gr;
+            try { gr = await gripes.RunAsync(gid, readers); }
+            catch (Exception ex) { Console.Error.WriteLine($"[reader-qa]   FAILED: {ex.Message}"); return 2; }
+
+            Console.WriteLine($"[reader-qa]   jury: {gr.ReaderSeats}");
+            Console.WriteLine($"[reader-qa]   {gr.RawComplaints} raw → {gr.QuoteGroundingKills} quote-grounding kill(s) → " +
+                              $"{gr.Confirmed.Count} confirmed, {gr.Rejected.Count} rejected by arbiter.");
+            foreach (var g in gr.Confirmed.OrderBy(g => g.BeatNumber))
+                Console.WriteLine($"      [{g.Severity.ToUpperInvariant()}] beat #{g.BeatNumber} ({g.Voters}v): {g.Complaint}");
+            Console.WriteLine($"[reader-qa]   {gr.FindingsFiled} finding(s) filed (Category=ReaderGripe). Apply via " +
+                              $"update_beat_text + ss --duel, or apply_finding.");
+            if (json)
+                Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(gr,
+                    new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+            return gr.FindingsFiled > 0 ? 1 : 0;
+        }
 
         var anyDefects = false;
         foreach (var (nodeId, title) in targets)

@@ -3,6 +3,11 @@ name: review-node
 description: Economical node evaluation in one call — a sampled panel casts cheap score-ballots (overall + per-beat + one gripe), clusters them into a Pareto/contested/seam study, upgrades the most informative few to full prose, and prints one report with the node score + 95% CI. Usage /review-node [slug-or-id]; defaults to the most-recently-edited node.
 ---
 
+> **⚠ LEGACY (2026-08-03): this runs the quarantined persona SCORE panel — explicit user
+> request only (SS-A44). The default reader-facing QA is `/reader-qa` (docs/READER-QA.md):
+> comprehension probes + craft/delight checklist + gripe jury, findings-based, no scores.
+> The 0–100 gates are retired; scores this skill produces are display-only history.**
+
 One call that grades a node and tells you what to fix — cheaply. The default is a **sampled two-tier** run (NOT a 1024-persona census): a stratified panel casts score-only ballots, those ballots double as the segment study, and only the most informative handful get upgraded to readable prose. The user invokes it as `/review-node <slug>` (slug optional).
 
 ## Fixed facts for this engine

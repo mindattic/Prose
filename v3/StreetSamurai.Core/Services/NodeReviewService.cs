@@ -12,12 +12,23 @@ using StreetSamurai.Core.Services.Local;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Persona reader-review system. Many distinct Legion personas (from the
-/// 1000-persona library) each read a node and, IN CHARACTER, write an honest
-/// review with a 1-100 score and concrete improvement notes — round-robined
-/// across the trusted-4 providers for genuine model + viewpoint diversity. The
-/// reviews are saved to <see cref="NodeReview"/>; an Amazon-style aggregate is
-/// synthesized into <see cref="NodeReviewSummary"/>.
+/// ⚠ LEGACY PANEL — QUARANTINED (2026-08-03). Persona score panels are no longer the
+/// default QA: correlated-error research showed N same-model persona ballots ≈ one
+/// vote, and the 0–100 means waffled 70–90 on judge noise (author ruling: "remove
+/// scores; they mean nothing"). The default reader-facing QA is READER-PROXY QA —
+/// docs/READER-QA.md: ComprehensionProbeService, BeatChecklistGateService,
+/// BeatDuelService, GripePassService — all findings-based, no scores.
+///
+/// This class stays compilable and callable BEHIND the SS-A44 VotingGate for explicit
+/// user-requested runs only; the 1024-persona library it samples lives in the external
+/// MindAttic.Legion package, preserved for other projects. Do not wire it into any
+/// default path.
+///
+/// <para>Original design: many distinct Legion personas (from the 1000-persona
+/// library) each read a node and, IN CHARACTER, write an honest review with a 1-100
+/// score and concrete improvement notes — round-robined across the trusted-4
+/// providers. Reviews save to <see cref="NodeReview"/>; an Amazon-style aggregate is
+/// synthesized into <see cref="NodeReviewSummary"/>.</para>
 /// </summary>
 public class NodeReviewService
 {

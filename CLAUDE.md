@@ -443,5 +443,22 @@ Reports land in `audit-outlines-<date>/logic/`; findings are triaged
 **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Fix what a finding names;
 if you can't name the failure, leave the beat alone.
 
-The old dual-review machinery (standalone ≥82 / cumulative ≥85, `--review-node` panels,
-Legion votes) still exists — **on explicit user request only**.
+**Reader-facing craft/comprehension QA is READER-PROXY QA (`ss --reader-qa`), not the
+persona panel — canonical methodology: [docs/READER-QA.md](docs/READER-QA.md).** Four
+instruments, all findings-based, NO scores: (1) Haiku comprehension probes diffed against
+the Sonnet synopsis, Sonnet-arbitrated → `ComprehensionDefect` findings; (2) hash-gated
+binary craft/delight checklist (`ss --craft-checklist`) → `CraftChecklist` findings;
+(3) cross-family pairwise duels for every splice (`ss --duel`, SS-A44-gated);
+(4) findings-only gripe jury (`ss --reader-qa --gripe-pass`) → `ReaderGripe` findings.
+Instruments 1/2/4-report are measurements, not votes — not vote-gated. Everything is
+hash-cached: unchanged content re-runs free.
+
+**The 0–100 score gates are RETIRED (author ruling 2026-08-03: "remove scores; they mean
+nothing").** The ≥82/≥85 gates no longer exist; dashboards show open findings instead of
+`Node.Score`; nothing writes new scores except an explicitly requested legacy panel run.
+Publish-readiness = logic sweep clean at BLOCKER + zero open High/BLOCKER Reader-Proxy QA
+findings.
+
+The old dual-review machinery (`--review-node` panels, Legion votes, `RunSampledReviewAsync`)
+is quarantined behind the SS-A44 gate — **on explicit user request only**. The 1024-persona
+library lives in the external MindAttic.Legion package, preserved for other projects.

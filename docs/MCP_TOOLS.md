@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**253 tools** across **40 tool families.**
+**254 tools** across **40 tool families.**
 
 ## Families
 
@@ -42,7 +42,7 @@
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 11 |
-| [Reader Qa](#reader-qa) | 2 |
+| [Reader Qa](#reader-qa) | 3 |
 | [Repository](#repository) | 2 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
@@ -1533,6 +1533,13 @@ Reader-Proxy QA comprehension probes: a cheap model reads each chapter cold (rol
 
 - `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
 - `force` (bool, optional) — Re-probe every chapter even if unchanged (default false).
+
+### `reader_qa_gripe_pass`
+
+Reader-Proxy QA findings-only gripe jury: a small cross-family jury full-reads the book and emits ONLY page-anchored complaints (beat number + verbatim quote + what's wrong) — NO scores, ever. Complaints are deduped, quote-grounded deterministically (hallucinated quotes die free), then Sonnet-arbitrated against the actual beat text and triaged blocker/moderate/minor. Confirmed gripes persist as ReaderGripe findings (see list_findings) and supersede on re-run. Report-only — applying a fix is a separate deliberate action (update_beat_text, optionally gated by a duel). Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
+- `readers` (int, optional) — Jury size (default 4; one seat per live model family, Claude tiers fill in).
 
 ## Repository
 

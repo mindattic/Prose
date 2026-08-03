@@ -19,6 +19,7 @@ namespace StreetSamurai.Mcp;
 public class ReaderQaTools(
     ComprehensionProbeService probes,
     BeatChecklistGateService checklist,
+    GripePassService gripes,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
@@ -103,6 +104,43 @@ public class ReaderQaTools(
                 flat_beats = r.Beats.Where(b => b.MovesLanded.Count == 0 && b.WordCount >= 120)
                     .Select(b => new { beat_number = b.BeatNumber, word_count = b.WordCount, job = b.BeatJob }),
                 book_level = r.BookLevelFindings,
+            }, JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts);
+        }
+    }
+
+    [McpServerTool, Description("Reader-Proxy QA findings-only gripe jury: a small cross-family jury full-reads the book " +
+        "and emits ONLY page-anchored complaints (beat number + verbatim quote + what's wrong) — NO scores, ever. " +
+        "Complaints are deduped, quote-grounded deterministically (hallucinated quotes die free), then Sonnet-arbitrated " +
+        "against the actual beat text and triaged blocker/moderate/minor. Confirmed gripes persist as ReaderGripe findings " +
+        "(see list_findings) and supersede on re-run. Report-only — applying a fix is a separate deliberate action " +
+        "(update_beat_text, optionally gated by a duel). Accepts node id (GUID) or slug.")]
+    public async Task<string> reader_qa_gripe_pass(
+        [Description("Book node id (GUID) or slug.")] string nodeIdOrSlug,
+        [Description("Jury size (default 4; one seat per live model family, Claude tiers fill in).")] int readers = 4)
+    {
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+
+        try
+        {
+            var r = await gripes.RunAsync(nodeId.Value, readers);
+            return JsonSerializer.Serialize(new
+            {
+                node_id = r.NodeId,
+                slug = r.Slug,
+                title = r.Title,
+                jury = r.ReaderSeats,
+                raw_complaints = r.RawComplaints,
+                quote_grounding_kills = r.QuoteGroundingKills,
+                findings_filed = r.FindingsFiled,
+                confirmed = r.Confirmed.Select(g => new
+                { g.BeatNumber, g.BeatId, g.Severity, g.Voters, g.Complaint, g.Quote, g.ArbiterRationale }),
+                rejected = r.Rejected.Select(g => new { g.BeatNumber, g.Complaint, g.ArbiterRationale }),
             }, JsonOpts);
         }
         catch (Exception ex)
