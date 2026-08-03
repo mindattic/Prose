@@ -1761,6 +1761,18 @@ if (args.Contains("--backfill-entity-docs"))
     return;
 }
 
+// CLI mode: re-materialize the entity-doc row for EVERY active entity, in every universe.
+//   ss --repair-entity-docs [--dry-run]
+// Unlike --backfill-entity-docs (per-book, inference-driven, so it only reaches entities a
+// given book mentions) this iterates the entity table itself — which is what stamping
+// MarkdownFiles.UniverseId on all of them requires.
+if (args.Contains("--repair-entity-docs"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await RepairEntityDocsCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --workflow-status [--slug <slug> | --all] [--json]
 // Per-node or global prose service coverage matrix. Shows which services
 // (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active

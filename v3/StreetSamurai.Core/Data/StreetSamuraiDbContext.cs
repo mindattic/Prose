@@ -1671,6 +1671,22 @@ public class StreetSamuraiDbContext : DbContext
         ConfigureGear(b);
         ConfigureMisc(b);
 
+        // MarkdownFiles universe scoping (RFC 0006 / SS-LAW-15). Declared HERE, not in the static
+        // ConfigureMisc where the rest of MarkdownFile is configured, because the filter has to
+        // close over the INSTANCE property ScopedUniverseId: EF re-evaluates an instance member per
+        // query, but treats a static property access as a constant and bakes it into the cached
+        // model — which would pin every query to whichever universe was active at model build.
+        //
+        // A doc is visible when it belongs to the current universe OR is SHARED (ENGINE.md,
+        // CRAFT.md, the digest, CLAUDE.md, memory). Without this, DocContextService's candidate
+        // query saw every doc in every universe: entity docs carry Scope = "", so the keyword and
+        // embedding passes could pull a GLMZ character into a SCRY beat and no Scope rule could
+        // prevent it.
+        b.Entity<MarkdownFile>().HasQueryFilter(x =>
+            ScopedUniverseId == Guid.Empty
+            || x.UniverseId == ScopedUniverseId
+            || x.UniverseId == SharedUniverseId);
+
         // ── Books / chapters / beats ─────────────────────────────────────────
         b.Entity<Book>(e =>
         {
@@ -2563,12 +2579,19 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Triggers).HasMaxLength(2000).HasDefaultValue("");
             e.Property(x => x.AutoTier).HasDefaultValue(true);
             e.Property(x => x.RelatedIds).HasMaxLength(4000).HasDefaultValue("");
+            e.Property(x => x.UniverseId).HasDefaultValue(Universe.SharedId);
             e.HasIndex(x => x.Tier);
             // Composite unique: the project and global CLAUDE.md share RelativePath
             // "CLAUDE.md" but differ by FileRoot, so RelativePath alone is not unique.
             e.HasIndex(x => new { x.FileRoot, x.RelativePath }).IsUnique();
             e.HasIndex(x => x.Category);
             e.HasIndex(x => x.LastSyncedAt);
+            e.HasIndex(x => x.UniverseId);
+            // NOTE: the universe query filter for MarkdownFile is NOT declared here. It must
+            // close over the INSTANCE property ScopedUniverseId so EF re-evaluates it per query;
+            // a static property access is treated as a constant and baked into the cached model,
+            // which silently pins every query to whichever universe was active at model build.
+            // ConfigureMisc is static, so the filter lives in OnModelCreating instead.
         });
 
         // ── Noun consistency — deprecated/renamed noun registry ───────────────

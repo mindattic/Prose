@@ -47,7 +47,13 @@ public sealed class EntityDocService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var entity = await db.Entities.AsNoTracking()
+        // IgnoreQueryFilters: this method is universe-agnostic by construction — it stamps the doc
+        // with whatever universe the entity itself declares, so it does not need the ambient scope
+        // to agree. Without this, a maintenance pass (ss --repair-entity-docs) could only ever
+        // reach the entities of whichever universe happened to be active. During normal prose
+        // generation the ids come from SceneContextAssembler, which is already universe-scoped, so
+        // nothing widens there.
+        var entity = await db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.Id == entityId && e.IsActive)
             .FirstOrDefaultAsync(ct);
         if (entity == null) return false;
@@ -56,10 +62,18 @@ public sealed class EntityDocService(
         var hash    = ComputeHash(content);
         var relPath = $"{EntityDocRoot}/{entity.Slug}.md";
 
-        var existing = await db.MarkdownFiles
+        // IgnoreQueryFilters: this is an upsert keyed on the UNIQUE (FileRoot, RelativePath)
+        // index, which is not universe-scoped. Under the universe query filter a row belonging to
+        // another universe would come back null here, and the insert below would then violate that
+        // unique index. The row must be found regardless of which universe currently owns it.
+        var existing = await db.MarkdownFiles.IgnoreQueryFilters()
             .FirstOrDefaultAsync(m => m.RelativePath == relPath && m.FileRoot == "project", ct);
 
-        if (existing != null && existing.ContentHash == hash) return false;
+        // The UniverseId comparison is part of the gate, not decoration: the gate short-circuits on
+        // unchanged content, so a pure back-fill of UniverseId (which does not alter the rendered
+        // doc, and therefore not the hash) would skip every already-correct row and never stamp it.
+        if (existing != null && existing.ContentHash == hash && existing.UniverseId == entity.UniverseId)
+            return false;
 
         if (existing == null)
         {
@@ -79,6 +93,9 @@ public sealed class EntityDocService(
                 Scope        = "",
                 Triggers     = triggers,
                 AutoTier     = false,
+                // An entity doc belongs to exactly the universe its entity does — this is what
+                // keeps a GLMZ character out of a SCRY beat's keyword/embedding candidate set.
+                UniverseId   = entity.UniverseId,
             });
         }
         else
@@ -88,6 +105,7 @@ public sealed class EntityDocService(
             existing.Triggers     = triggers;
             existing.LastSyncedAt = DateTime.UtcNow;
             existing.SyncedBy     = "inferred";
+            existing.UniverseId   = entity.UniverseId;
         }
 
         await db.SaveChangesAsync(ct);

@@ -251,6 +251,24 @@ public class MarkdownFile
     public string   Triggers      { get; set; } = "";
     public bool     AutoTier      { get; set; } = true;
     public string   RelatedIds    { get; set; } = "";
+
+    /// <summary>
+    /// Which universe this doc belongs to, or <see cref="Universe.SharedId"/> for docs that apply
+    /// to every universe (CRAFT.md, ENGINE.md, the digest, CLAUDE.md, memory files).
+    ///
+    /// <para><b>Why this exists.</b> MarkdownFiles was the only DCM-relevant table with no universe
+    /// scoping, in a codebase whose SS-LAW-15 says every row belongs to exactly one universe.
+    /// <c>DocContextService</c>'s candidate query was <c>Where(m =&gt; m.Category != "memory")</c> —
+    /// every doc in every universe, every beat. <c>Scope</c> could not substitute: entity docs are
+    /// written with <c>Scope = ""</c>, so the keyword and embedding passes scanned all ~900 of
+    /// them across all universes and a SCRY beat could load a GLMZ character on a shared token.
+    /// That is why <c>--universe scry</c> did not stop GLMZ entities appearing in SCRY books.</para>
+    ///
+    /// <para>Enforced by a global query filter (see <c>StreetSamuraiDbContext</c>), so it fixes
+    /// every DCM pass at once rather than one pass at a time. Maintenance paths that must see
+    /// across universes (list/search/restore) opt out with <c>IgnoreQueryFilters()</c>.</para>
+    /// </summary>
+    public Guid     UniverseId    { get; set; } = Universe.SharedId;
 }
 
 // ── Vocabulary ─────────────────────────────────────────────────────────────

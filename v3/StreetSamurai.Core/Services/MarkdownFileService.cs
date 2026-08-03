@@ -22,6 +22,17 @@ namespace StreetSamurai.Core.Services;
 public class MarkdownFileService
 {
     public record DiscoveredFile(string FilePath, string FileRoot, string RelativePath, string Category);
+    /// <summary>
+    /// Every column EF maps for <see cref="MarkdownFile"/>, for the <c>FOR SYSTEM_TIME</c> raw
+    /// queries. A <c>FromSqlRaw</c> projection must return the full mapped set or EF throws when
+    /// materializing — the previous hand-written list stopped at <c>SyncedBy</c> and omitted
+    /// Tier/Scope/Triggers/AutoTier/RelatedIds, which meant the <c>--as-of</c> restore path was
+    /// already broken before UniverseId was added to it.
+    /// </summary>
+    private const string TemporalColumns =
+        "Id, FilePath, FileRoot, RelativePath, FileName, Category, Content, ContentHash, " +
+        "LastSyncedAt, SyncedBy, Tier, Scope, Triggers, AutoTier, RelatedIds, UniverseId";
+
     public record SyncResult(int Inserted, int Updated, int Unchanged, List<string> Errors);
     public record RestoreResult(int Written, int Skipped, List<string> Errors);
 
@@ -139,6 +150,29 @@ public class MarkdownFileService
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
+        // NodeCode → owning universe, for docs/nodes/<CODE>.md.
+        //
+        // A node bible can reach MarkdownFiles by either of two paths: SyncFromCanonDbAsync (from
+        // NodeBibleSections, which knows the node and therefore its universe) or this disk sync
+        // (which historically knew nothing). A book whose bible exists only as a generated file on
+        // disk — no "Full" NodeBibleSections row — therefore landed on Universe.SharedId and was
+        // visible to every universe. That is how the SCRY bibles (VIGL, M101, TRNY, LLSS) ended up
+        // shared. ClassifyFile already derives Scope from the filename for this folder, so the code
+        // is available here; resolve it to the real universe.
+        var nodeUniverseByCode = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.UniverseId != Guid.Empty)
+            .Select(n => new { Code = (n.NodeCode ?? n.Slug).ToUpper(), n.UniverseId })
+            .ToListAsync(ct);
+        var nodeUniverseLookup = nodeUniverseByCode
+            .GroupBy(x => x.Code, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.First().UniverseId, StringComparer.OrdinalIgnoreCase);
+
+        Guid UniverseForFile(DocClassification c) =>
+            c.Tier == "node" && !string.IsNullOrWhiteSpace(c.Scope)
+            && nodeUniverseLookup.TryGetValue(c.Scope.Trim(), out var uid)
+                ? uid
+                : Universe.SharedId;
+
         foreach (var f in files)
         {
             try
@@ -151,7 +185,11 @@ public class MarkdownFileService
                 // Match on (FileRoot, RelativePath): the project and global CLAUDE.md
                 // share RelativePath "CLAUDE.md" and would otherwise clobber each other,
                 // leaving only one of them in the DB.
-                var existing = await db.MarkdownFiles
+                //
+                // IgnoreQueryFilters: this upsert is keyed on the UNIQUE (FileRoot, RelativePath)
+                // index, which is not universe-scoped. Without it, a row owned by another universe
+                // reads as null and the insert below violates that index.
+                var existing = await db.MarkdownFiles.IgnoreQueryFilters()
                     .FirstOrDefaultAsync(x => x.RelativePath == f.RelativePath && x.FileRoot == f.FileRoot, ct);
 
                 // Track raw `related:` paths for post-sync GUID resolution.
@@ -178,6 +216,7 @@ public class MarkdownFileService
                             Scope        = cls.Scope,
                             Triggers     = cls.Triggers,
                             AutoTier     = cls.AutoTier,
+                            UniverseId   = UniverseForFile(cls),
                         });
                         await db.SaveChangesAsync(ct);
                     }
@@ -185,9 +224,11 @@ public class MarkdownFileService
                 }
                 else
                 {
+                    var universeId     = UniverseForFile(cls);
                     var contentChanged = existing.ContentHash != hash;
                     var classChanged   = existing.Tier != cls.Tier || existing.Scope != cls.Scope
-                                      || existing.Triggers != cls.Triggers || existing.AutoTier != cls.AutoTier;
+                                      || existing.Triggers != cls.Triggers || existing.AutoTier != cls.AutoTier
+                                      || existing.UniverseId != universeId;
                     if (contentChanged || classChanged)
                     {
                         if (!dryRun)
@@ -202,6 +243,7 @@ public class MarkdownFileService
                             existing.Scope        = cls.Scope;
                             existing.Triggers     = cls.Triggers;
                             existing.AutoTier     = cls.AutoTier;
+                            existing.UniverseId   = universeId;
                             existing.LastSyncedAt = DateTime.UtcNow;
                             existing.SyncedBy     = "cli";
                             await db.SaveChangesAsync(ct);
@@ -262,7 +304,9 @@ public class MarkdownFileService
             {
                 var assembled = AssembleFromSections(doc.Sections);
                 var hash      = ComputeHash(assembled);
-                var existing  = await db.MarkdownFiles
+                // IgnoreQueryFilters — upsert on the non-universe-scoped unique index; see the
+                // matching note in SyncAllAsync.
+                var existing  = await db.MarkdownFiles.IgnoreQueryFilters()
                     .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
 
                 // Tier/scope/triggers come from the type's own ExtraFrontMatter (the same data
@@ -283,9 +327,14 @@ public class MarkdownFileService
                 var resolvedAuto  = !canonFm.ContainsKey("tier");
 
                 var isNew = existing == null;
+                // UniverseId participates so a back-fill isn't skipped: it doesn't change the
+                // assembled content (and so not the hash), and a universe-scoped type like
+                // UniverseCraft has one CanonDocuments row per universe pointing at a DIFFERENT
+                // path, so the stamp is the only thing that separates them in MarkdownFiles.
                 var contentChanged = !isNew && (existing!.ContentHash != hash
                     || existing.Triggers != resolvedTrigs
-                    || existing.Scope != resolvedScope);
+                    || existing.Scope != resolvedScope
+                    || existing.UniverseId != doc.UniverseId);
                 if (isNew || contentChanged)
                 {
                     if (!dryRun)
@@ -308,6 +357,10 @@ public class MarkdownFileService
                                 Scope        = resolvedScope,
                                 Triggers     = resolvedTrigs,
                                 AutoTier     = resolvedAuto,
+                                // Base-scope types (CRAFT, DELIGHT, ENGINE) already carry
+                                // Universe.SharedId on their CanonDocuments row, so this is
+                                // correct for both shared and universe-scoped documents.
+                                UniverseId   = doc.UniverseId,
                             });
                             await db.SaveChangesAsync(ct);
                         }
@@ -321,6 +374,7 @@ public class MarkdownFileService
                             existing.Scope         = resolvedScope;
                             existing.Triggers      = resolvedTrigs;
                             existing.AutoTier      = resolvedAuto;
+                            existing.UniverseId    = doc.UniverseId;
                             await db.SaveChangesAsync(ct);
                         }
                     }
@@ -346,6 +400,7 @@ public class MarkdownFileService
                 s.Content,
                 NodeCode = (n.NodeCode ?? n.Slug).ToUpperInvariant(),
                 n.Slug,
+                n.UniverseId,
             })
             .ToListAsync(ct);
 
@@ -365,11 +420,14 @@ public class MarkdownFileService
             {
                 var content  = full.Content;
                 var hash     = ComputeHash(content);
-                var existing = await db.MarkdownFiles
+                // IgnoreQueryFilters — upsert on the non-universe-scoped unique index; see the
+                // matching note in SyncAllAsync.
+                var existing = await db.MarkdownFiles.IgnoreQueryFilters()
                     .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
 
                 var isNew          = existing == null;
-                var contentChanged = !isNew && existing!.ContentHash != hash;
+                var contentChanged = !isNew && (existing!.ContentHash != hash
+                    || existing.UniverseId != full.UniverseId);
                 if (isNew || contentChanged)
                 {
                     if (!dryRun)
@@ -392,6 +450,8 @@ public class MarkdownFileService
                                 Scope        = nodeCode,
                                 Triggers     = "",
                                 AutoTier     = true,
+                                // A book bible belongs to its book's universe.
+                                UniverseId   = full.UniverseId,
                             });
                             await db.SaveChangesAsync(ct);
                         }
@@ -403,6 +463,7 @@ public class MarkdownFileService
                             existing.SyncedBy      = "db-canon";
                             existing.Tier          = "node";
                             existing.Scope         = nodeCode;
+                            existing.UniverseId    = full.UniverseId;
                             await db.SaveChangesAsync(ct);
                         }
                     }
@@ -623,7 +684,9 @@ public class MarkdownFileService
     public async Task<List<MarkdownFile>> ListAsync(CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.MarkdownFiles
+        // IgnoreQueryFilters: listing is a maintenance view, not generation context. Scoping it to
+        // the active universe would make `--list-markdown` silently hide most of the corpus.
+        return await db.MarkdownFiles.IgnoreQueryFilters()
             .OrderBy(x => x.FileRoot)
             .ThenBy(x => x.RelativePath)
             .ToListAsync(ct);
@@ -645,7 +708,8 @@ public class MarkdownFileService
         var like = $"%{k}%";
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.MarkdownFiles.AsNoTracking()
+        // IgnoreQueryFilters — search is a maintenance view; see ListAsync.
+        return await db.MarkdownFiles.AsNoTracking().IgnoreQueryFilters()
             .Where(x => EF.Functions.Like(x.RelativePath, like)
                      || EF.Functions.Like(x.FileName, like)
                      || EF.Functions.Like(x.Category, like)
@@ -666,14 +730,16 @@ public class MarkdownFileService
             var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
             return await db.MarkdownFiles
                 .FromSqlRaw(
-                    $"SELECT Id, FilePath, FileRoot, RelativePath, FileName, Category, Content, ContentHash, LastSyncedAt, SyncedBy " +
+                    $"SELECT {TemporalColumns} " +
                     $"FROM MarkdownFiles FOR SYSTEM_TIME AS OF '{ts}' " +
                     $"WHERE RelativePath = {{0}}",
                     relativePath)
+                .IgnoreQueryFilters()
                 .FirstOrDefaultAsync(ct);
         }
 
-        return await db.MarkdownFiles
+        // IgnoreQueryFilters — point lookup by path, used by restore/inspection tooling.
+        return await db.MarkdownFiles.IgnoreQueryFilters()
             .FirstOrDefaultAsync(x => x.RelativePath == relativePath, ct);
     }
 
@@ -698,13 +764,14 @@ public class MarkdownFileService
             var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
             rows = await db.MarkdownFiles
                 .FromSqlRaw(
-                    $"SELECT Id, FilePath, FileRoot, RelativePath, FileName, Category, Content, ContentHash, LastSyncedAt, SyncedBy " +
+                    $"SELECT {TemporalColumns} " +
                     $"FROM MarkdownFiles FOR SYSTEM_TIME AS OF '{ts}'")
+                .IgnoreQueryFilters()
                 .ToListAsync(ct);
         }
         else
         {
-            rows = await db.MarkdownFiles.ToListAsync(ct);
+            rows = await db.MarkdownFiles.IgnoreQueryFilters().ToListAsync(ct);
         }
 
         var errors  = new List<string>();
@@ -761,7 +828,13 @@ public class MarkdownFileService
         CancellationToken ct)
     {
         var unresolved = new List<string>();
-        var allFiles = await db.MarkdownFiles.AsNoTracking()
+        // IgnoreQueryFilters on both queries: link resolution runs once for the whole corpus during
+        // a sync, and a `related:` edge may legitimately cross universes (a universe doc pointing
+        // at shared CRAFT.md). Scoping this to the active universe would resolve fewer links every
+        // run and — now that misses are reported — turn a correct cross-universe link into a false
+        // sync error. Whether a linked doc is USED is decided later by the query filter at load
+        // time, which is the right place for it.
+        var allFiles = await db.MarkdownFiles.AsNoTracking().IgnoreQueryFilters()
             .Select(m => new { m.Id, m.RelativePath, m.FileRoot })
             .ToListAsync(ct);
 
@@ -776,7 +849,7 @@ public class MarkdownFileService
 
         foreach (var ((fileRoot, relPath), rawRelated) in rawRelatedMap)
         {
-            var row = await db.MarkdownFiles
+            var row = await db.MarkdownFiles.IgnoreQueryFilters()
                 .FirstOrDefaultAsync(m => m.RelativePath == relPath && m.FileRoot == fileRoot, ct);
             if (row == null) continue;
 
