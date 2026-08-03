@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**252 tools** across **40 tool families.**
+**253 tools** across **40 tool families.**
 
 ## Families
 
@@ -42,7 +42,7 @@
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 11 |
-| [Reader Qa](#reader-qa) | 1 |
+| [Reader Qa](#reader-qa) | 2 |
 | [Repository](#repository) | 2 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
@@ -1519,6 +1519,13 @@ Scan arbitrary prose against every world rule (no city police, no Behemoth-as-al
 ## Reader Qa
 
 <sub>`ReaderQaTools`</sub>
+
+### `beat_checklist_audit`
+
+Reader-Proxy QA binary craft/delight checklist per beat, hash-gated on Beat.TextHash + rule-set version — unchanged beats never re-bill; editing CRAFT.md §8 or a DELIGHT move re-evaluates the book. DON'Ts = CRAFT §8 banned mannerisms (literal binaries); DO = '≥1 applicable DELIGHT move lands' (short connective beats exempt); book level = move-monotony counters (DELIGHT §14 — a palette, not a stamp; never 'all 13 per beat'). Findings persist as CraftChecklist and auto-supersede per run. Emits NO scores. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
+- `force` (bool, optional) — Re-evaluate every beat even if unchanged (default false).
 
 ### `reader_qa_comprehension`
 

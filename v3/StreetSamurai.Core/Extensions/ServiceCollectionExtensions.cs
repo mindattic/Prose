@@ -823,6 +823,11 @@ public static class ServiceCollectionExtensions
         // findings. A measurement, not a vote — not VotingGate-gated (SS-A44 exemption,
         // same as craft_audit / logic sweep).
         services.AddSingleton<ComprehensionProbeService>();
+
+        // Reader-Proxy QA Instrument 2: hash-gated binary craft/delight checklist —
+        // CRAFT §8 DON'Ts per beat + "≥1 applicable DELIGHT move" per beat + book-level
+        // move-monotony counters (DELIGHT §14). One cheap call per CHANGED beat only.
+        services.AddSingleton<BeatChecklistGateService>();
         services.AddSingleton<VotingConfiguration>(sp =>
         {
             var s = sp.GetRequiredService<SettingsService>();

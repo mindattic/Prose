@@ -18,6 +18,7 @@ namespace StreetSamurai.Mcp;
 [McpServerToolType]
 public class ReaderQaTools(
     ComprehensionProbeService probes,
+    BeatChecklistGateService checklist,
     IDbContextFactory<StreetSamuraiDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
@@ -58,6 +59,50 @@ public class ReaderQaTools(
                         .Select(d => new { d.Kind, d.Severity, d.Description, d.Evidence }),
                     probe_hallucinations_discarded = c.Defects.Count(d => !d.ReaderPlausible || d.Kind == "hallucination"),
                 }),
+            }, JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts);
+        }
+    }
+
+    [McpServerTool, Description("Reader-Proxy QA binary craft/delight checklist per beat, hash-gated on Beat.TextHash + " +
+        "rule-set version — unchanged beats never re-bill; editing CRAFT.md §8 or a DELIGHT move re-evaluates the book. " +
+        "DON'Ts = CRAFT §8 banned mannerisms (literal binaries); DO = '≥1 applicable DELIGHT move lands' (short connective " +
+        "beats exempt); book level = move-monotony counters (DELIGHT §14 — a palette, not a stamp; never 'all 13 per beat'). " +
+        "Findings persist as CraftChecklist and auto-supersede per run. Emits NO scores. Accepts node id (GUID) or slug.")]
+    public async Task<string> beat_checklist_audit(
+        [Description("Book node id (GUID) or slug.")] string nodeIdOrSlug,
+        [Description("Re-evaluate every beat even if unchanged (default false).")] bool force = false)
+    {
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+
+        try
+        {
+            var r = await checklist.RunAsync(nodeId.Value, force);
+            var flagged = r.Beats.Where(b => b.DontViolations.Count > 0).ToList();
+            return JsonSerializer.Serialize(new
+            {
+                node_id = r.NodeId,
+                slug = r.Slug,
+                title = r.Title,
+                beats = r.Beats.Count,
+                evaluated = r.Evaluated,
+                from_cache = r.FromCache,
+                findings_filed = r.FindingsFiled,
+                mean_pass_fraction = r.Beats.Count > 0 ? Math.Round(r.Beats.Average(b => b.PassFraction), 4) : 1.0,
+                dont_hits = flagged.Select(b => new
+                {
+                    beat_number = b.BeatNumber,
+                    beat_id = b.BeatId,
+                    violations = b.DontViolations.Select(d => new { d.Key, d.Title, d.Evidence }),
+                }),
+                flat_beats = r.Beats.Where(b => b.MovesLanded.Count == 0 && b.WordCount >= 120)
+                    .Select(b => new { beat_number = b.BeatNumber, word_count = b.WordCount, job = b.BeatJob }),
+                book_level = r.BookLevelFindings,
             }, JsonOpts);
         }
         catch (Exception ex)

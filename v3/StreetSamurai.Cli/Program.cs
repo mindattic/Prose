@@ -1407,6 +1407,18 @@ if (args.Contains("--reader-qa"))
     return;
 }
 
+// ss --craft-checklist --slug <slug> [--force] [--json]
+// Reader-Proxy QA Instrument 2: binary craft/delight checklist per beat, hash-gated on
+// Beat.TextHash + rule-set version (unchanged beats never re-bill). CRAFT §8 DON'Ts +
+// "≥1 applicable DELIGHT move" + book-level move-monotony counters (DELIGHT §14).
+// Findings persist as CraftChecklist. No scores. Exit 0 = clean, 1 = findings, 2 = error.
+if (args.Contains("--craft-checklist"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BeatChecklistCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --craft-audit --slug <nodeSlug> [--json]
 // Audits a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms), parsed live from
 // CanonDocumentSections — each numbered item becomes its own check, no hand-duplicated C#

@@ -188,6 +188,8 @@ public class StreetSamuraiDbContext : DbContext
     public DbSet<FocusGroupMember>      FocusGroupMembers      => Set<FocusGroupMember>();
     // Per-beat micro-scores (study mode) — the reviewer x beat matrix.
     public DbSet<NodeReviewBeatScore> NodeReviewBeatScores => Set<NodeReviewBeatScore>();
+    // Reader-Proxy QA Instrument 2 — hash-gated per-beat craft/delight checklist cache.
+    public DbSet<BeatChecklistResult> BeatChecklistResults => Set<BeatChecklistResult>();
     // Emotional Intelligence Examination (SS-A15): examination parent + dimension/beat children + ledger cache.
     public DbSet<EmotionalExamination>      EmotionalExaminations      => Set<EmotionalExamination>();
     public DbSet<EmotionalDimensionResult>  EmotionalDimensionResults  => Set<EmotionalDimensionResult>();
@@ -2523,6 +2525,18 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => new { x.NodeId, x.ChapterIndex }).IsUnique();
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── BeatChecklistResult (Reader-Proxy QA Instrument 2 cache) ───────
+        b.Entity<BeatChecklistResult>(e =>
+        {
+            e.HasKey(x => x.Id);
+            // One evaluation per (book, beat); re-evaluation overwrites in place.
+            e.HasIndex(x => new { x.NodeId, x.BeatId }).IsUnique();
+            e.Property(x => x.BeatTextHash).HasMaxLength(80);
+            e.Property(x => x.RuleSetVersion).HasMaxLength(80);
+            e.HasOne(x => x.Beat).WithMany()
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
         });
 
         // ── NodeOpenThread ─────────────────────────────────────────────────
