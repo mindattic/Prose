@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StreetSamurai.Core.Data;
 using StreetSamurai.Core.Data.Entities;
 using StreetSamurai.Core.Interfaces;
@@ -6,8 +6,8 @@ using StreetSamurai.Core.Models.Canon;
 
 namespace StreetSamurai.Core.Services;
 
-// ──────────────────────────────────────────────────────────────────────────────
-// EF-backed repositories — total conversion off JsonDirectoryRepository.
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// EF-backed repositories â€” total conversion off JsonDirectoryRepository.
 // Public surface is unchanged (GetAll / GetById / GetByName / GetBySlug / Save /
 // Delete / Reload / Count / OnItemSaved / RepoName / GetExportEntries) so every
 // existing consumer compiles. Storage = StreetSamurai SQL Server database.
@@ -16,7 +16,7 @@ namespace StreetSamurai.Core.Services;
 // to EfRepository<T>. The legacy `IPathProvider` ctor is preserved so unit-test
 // fixtures that constructed repos directly continue to compile; in production the
 // DbContext factory is injected by DI and used for real SQL persistence.
-// ──────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 /// <summary>
 /// Fully relational CharacterRepository. Reads materialize CharacterData from
@@ -25,7 +25,7 @@ namespace StreetSamurai.Core.Services;
 /// Phrases / PhysicalMarks / TerritoryZones + Reputations / BelongingsGear +
 /// Extras / BioBatteryThresholds / NeuralAbilities / Changelog / Cyberware /
 /// Knowledge + KnowledgeEntities / Conditions / Relationships / Timeline +
-/// TimelineBodyChanges) — never from Records.Json. Writes wipe child bridges
+/// TimelineBodyChanges) â€” never from Records.Json. Writes wipe child bridges
 /// and re-insert via <see cref="CharacterMapper"/>.
 /// </summary>
 public class CharacterRepository : EfRepository<CharacterData>
@@ -35,9 +35,9 @@ public class CharacterRepository : EfRepository<CharacterData>
     public CharacterRepository(IPathProvider paths)
         : base(TestDbFactory.For(paths, "character"), "character", c => c.Name) { }
 
-    // CharacterMapper.LoadAll fans out into ~25 Include collections × 1240
-    // characters and is the slowest read in the app (~50–80 s cold). Cache the
-    // result here — invalidated by Save() and the OnItemSaved hook on the
+    // CharacterMapper.LoadAll fans out into ~25 Include collections Ã— 1240
+    // characters and is the slowest read in the app (~50â€“80 s cold). Cache the
+    // result here â€” invalidated by Save() and the OnItemSaved hook on the
     // base class so writes from this repo are visible immediately. Reload()
     // also clears it. Without this cache /characters re-ran the full load on
     // every page visit and the user-facing spinner could spin for minutes.
@@ -62,7 +62,7 @@ public class CharacterRepository : EfRepository<CharacterData>
     }
 
     // List-view-only cache. Contains lightweight CharacterData (Id / Name /
-    // Role / Status / Tags / Rating / VoteCount) — fields beyond that read as
+    // Role / Status / Tags / Rating / VoteCount) â€” fields beyond that read as
     // empty defaults. Use this for dictionary/list/filter UIs and re-fetch the
     // full record via GetById when a row is opened for edit.
     private List<CharacterData>? mappedCacheLite;
@@ -84,19 +84,19 @@ public class CharacterRepository : EfRepository<CharacterData>
     /// <summary>
     /// Fast single-character fetch that bypasses the full LoadAll pipeline.
     /// Hits CharacterMapper.LoadOne (one row + 25 Includes scoped to that
-    /// character — ~50 ms) instead of materialising every character first.
+    /// character â€” ~50 ms) instead of materialising every character first.
     /// Required for the lite-list-then-Edit flow: the dictionary list shows
     /// the lite projection; clicking a row re-fetches the full record here.
     ///
     /// Deliberately bypasses CharacterMapper.LoadOneFromReadModel's cached
     /// projection (unlike GetAll). That cache's staleness check only compares
-    /// Entities.ModifiedAt against the read-model's RefreshedAt — a bridge-table
+    /// Entities.ModifiedAt against the read-model's RefreshedAt â€” a bridge-table
     /// write that never touches the Entities row (e.g. a direct SQL INSERT into
     /// CharacterAliases for a manual data repair) is invisible to it, so the
     /// cache can serve a snapshot that predates the bridge change. That would be
     /// harmless for a plain read, but GetById's result also feeds
     /// CharacterRepository.Save's wipe-and-reinsert of every bridge table (see
-    /// CharacterMapper.PersistAsync) — the read/mutate-scalars/write round trip
+    /// CharacterMapper.PersistAsync) â€” the read/mutate-scalars/write round trip
     /// every upsert caller (e.g. the create_character MCP tool) performs. Serving
     /// a stale Aliases (or any other bridge) list there means Save silently wipes
     /// rows that were never stale in the database, only in the cache. GetById is
@@ -118,7 +118,7 @@ public class CharacterRepository : EfRepository<CharacterData>
 
     public override List<CharacterData> GetAllIncludingArchived()
     {
-        // Archived view bypasses the cache — it's used by audit/restore flows
+        // Archived view bypasses the cache â€” it's used by audit/restore flows
         // that explicitly want fresh data and tolerate the cost.
         using var db = dbFactory.CreateDbContext();
         return CharacterMapper.LoadAll(db, includeArchived: true);
@@ -162,7 +162,7 @@ public class CharacterRepository : EfRepository<CharacterData>
         {
             // Description lives on CharacterData/Characters as the source of truth, but
             // Entity.Description is the field SceneContextAssembler.FormatCharacterAsync
-            // actually reads for live prose-generation context — without this sync it silently
+            // actually reads for live prose-generation context â€” without this sync it silently
             // stays null/stale forever and a character's description never reaches generated
             // prose no matter how carefully it's written on the Character record. Confirmed via
             // a real incident: every TFAH-book character had a populated Characters.Description
@@ -178,7 +178,7 @@ public class CharacterRepository : EfRepository<CharacterData>
         }
 
         // Persist column + bridge state via the mapper (sync wrapper around the
-        // async API — Save is a synchronous repository contract).
+        // async API â€” Save is a synchronous repository contract).
         CharacterMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
 
         // Refresh tags via the universal layer.
@@ -242,7 +242,7 @@ public class CharacterRepository : EfRepository<CharacterData>
 
     /// <summary>
     /// Add any tag names that aren't already attached to this entity. The
-    /// universal Tag/EntityTag tables are the source of truth — this only adds,
+    /// universal Tag/EntityTag tables are the source of truth â€” this only adds,
     /// matching the existing import behavior (tag removal is a manual op).
     /// </summary>
     private static void SyncTagsForEntity(StreetSamuraiDbContext db, Guid entityId, IReadOnlyList<string>? tags)
@@ -279,7 +279,7 @@ public class CharacterRepository : EfRepository<CharacterData>
                 byName[tagName] = tag;
             }
             // Use the navigation property so EF resolves TagId (including for
-            // brand-new Tag rows) on the caller's single SaveChanges — no more
+            // brand-new Tag rows) on the caller's single SaveChanges â€” no more
             // one-commit-per-tag inside the loop.
             db.EntityTags.Add(new EntityTag { EntityId = entityId, Tag = tag });
         }
@@ -288,7 +288,7 @@ public class CharacterRepository : EfRepository<CharacterData>
 
 /// <summary>
 /// Fully relational CorponationRepository. Reads materialize CorponationData from the
-/// Corponations table + CorponationCommonNames bridge — never from Records.Json. Writes
+/// Corponations table + CorponationCommonNames bridge â€” never from Records.Json. Writes
 /// persist via <see cref="CorponationMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class CorponationRepository : EfRepository<CorponationData>
@@ -447,7 +447,7 @@ public class CorponationRepository : EfRepository<CorponationData>
 /// Fully relational DistrictRepository. Reads materialize DistrictData from the
 /// Places table + all 10 child bridges (Aliases / Dangers / Opportunities /
 /// StoryHooks / AtmosphereItems / Adjacencies / Exits / FrequentedBy /
-/// NotableLocations / RelatedEntities) — never from Records.Json. Writes persist
+/// NotableLocations / RelatedEntities) â€” never from Records.Json. Writes persist
 /// via <see cref="PlaceMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class DistrictRepository : EfRepository<DistrictData>
@@ -536,24 +536,30 @@ public class DistrictRepository : EfRepository<DistrictData>
         {
             existingEntity = new Entity
             {
-                Id         = id,
-                EntityType = entityType,
-                Name       = name,
-                Slug       = ResolvePlaceSlug(db, name, id, currentSlug: null),
-                Status     = "canon",
-                CreatedAt  = DateTime.UtcNow,
-                ModifiedAt = DateTime.UtcNow,
+                Id          = id,
+                EntityType  = entityType,
+                Name        = name,
+                Slug        = ResolvePlaceSlug(db, name, id, currentSlug: null),
+                Status      = "canon",
+                Description = item.Description,
+                CreatedAt   = DateTime.UtcNow,
+                ModifiedAt  = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolvePlaceSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolvePlaceSlug(db, name, id, existingEntity.Slug);
+            }
+            // Entity.Description is the field SceneContextAssembler/DocContextService actually
+            // reads for DCM context and the SOURCE Glossary tier (docs/SOURCE.md Â§1b) â€” Places
+            // table Description is not enough on its own, same bug class already fixed for
+            // CharacterRepository (see its Save()).
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -605,7 +611,7 @@ public class DistrictRepository : EfRepository<DistrictData>
 /// <summary>
 /// Fully relational FactionRepository. Reads materialize FactionData from the
 /// Factions table + all child bridges (Aliases / Methods / Resources / Goals /
-/// StoryHooks / Relationships + RelationshipTags / Members) — never from
+/// StoryHooks / Relationships + RelationshipTags / Members) â€” never from
 /// Records.Json. Writes wipe child bridges and re-insert via
 /// <see cref="FactionMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
@@ -705,19 +711,21 @@ public class FactionRepository : EfRepository<FactionData>
                 Name       = name,
                 Slug       = ResolveFactionSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveFactionSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveFactionSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -768,7 +776,7 @@ public class FactionRepository : EfRepository<FactionData>
 
 /// <summary>
 /// Fully relational WorldbuildingDocRepository. Reads materialize WorldbuildingDocument
-/// from the Documents table + DocumentHeadings bridge — never from Records.Json. Writes
+/// from the Documents table + DocumentHeadings bridge â€” never from Records.Json. Writes
 /// persist via <see cref="DocumentMapper"/>. Records.Json is left intact (additive-only).
 /// Note: Entity.Name mirrors FileName (or Title as fallback), matching the original
 /// EfRepository nameSelector <c>d => d.FileName</c>.
@@ -928,7 +936,7 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 
 /// <summary>
 /// Fully relational MotifRepository. Reads materialize MotifData from the
-/// Motifs table + MotifAppearances bridge — never from Records.Json.
+/// Motifs table + MotifAppearances bridge â€” never from Records.Json.
 /// Writes wipe the bridge and re-insert via <see cref="MotifMapper"/>.
 /// Records.Json is left intact (additive-only). (RFC 0007)
 /// </summary>
@@ -1023,19 +1031,21 @@ public class MotifRepository : EfRepository<MotifData>
                 Name       = name,
                 Slug       = ResolveMotifSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveMotifSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveMotifSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -1086,7 +1096,7 @@ public class MotifRepository : EfRepository<MotifData>
 /// <summary>
 /// Fully relational WeaponryRepository. Reads materialize WeaponryData from the
 /// Weapons table + all child bridges (Aliases / BaseTechnologies / KnownUsers /
-/// AmmunitionTypes / StoryHooks) — never from Records.Json. Writes persist
+/// AmmunitionTypes / StoryHooks) â€” never from Records.Json. Writes persist
 /// via <see cref="WeaponMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class WeaponryRepository : EfRepository<WeaponryData>
@@ -1180,19 +1190,21 @@ public class WeaponryRepository : EfRepository<WeaponryData>
                 Name       = name,
                 Slug       = ResolveWeaponSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveWeaponSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveWeaponSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -1244,7 +1256,7 @@ public class WeaponryRepository : EfRepository<WeaponryData>
 /// <summary>
 /// Fully relational AmmunitionRepository. Reads materialize AmmunitionData from the
 /// Ammunitions table + all child bridges (Aliases / CompatibleWeapons / Variants /
-/// StoryHooks) — never from Records.Json. Writes wipe child bridges and re-insert via
+/// StoryHooks) â€” never from Records.Json. Writes wipe child bridges and re-insert via
 /// <see cref="AmmunitionMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class AmmunitionRepository : EfRepository<AmmunitionData>
@@ -1338,19 +1350,21 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
                 Name       = name,
                 Slug       = ResolveAmmunitionSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveAmmunitionSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveAmmunitionSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -1401,7 +1415,7 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
 
 /// <summary>
 /// Fully relational EquipmentRepository. Reads materialize EquipmentData from the
-/// EquipmentItems table + all child bridges — never from Records.Json. Writes persist
+/// EquipmentItems table + all child bridges â€” never from Records.Json. Writes persist
 /// via <see cref="EquipmentMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class EquipmentRepository : EfRepository<EquipmentData>
@@ -1495,19 +1509,21 @@ public class EquipmentRepository : EfRepository<EquipmentData>
                 Name       = name,
                 Slug       = ResolveSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -1558,7 +1574,7 @@ public class EquipmentRepository : EfRepository<EquipmentData>
 
 /// <summary>
 /// Fully relational TechnologyRepository. Reads materialize TechnologyData from the
-/// Technologies table + all child bridges — never from Records.Json. Writes persist
+/// Technologies table + all child bridges â€” never from Records.Json. Writes persist
 /// via <see cref="TechnologyMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class TechnologyRepository : EfRepository<TechnologyData>
@@ -1652,19 +1668,21 @@ public class TechnologyRepository : EfRepository<TechnologyData>
                 Name       = name,
                 Slug       = ResolveSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -1715,7 +1733,7 @@ public class TechnologyRepository : EfRepository<TechnologyData>
 
 /// <summary>
 /// Fully relational CyberwareRepository. Reads materialize CyberwareData from the
-/// CyberwareItems table + all child bridges — never from Records.Json. Writes persist
+/// CyberwareItems table + all child bridges â€” never from Records.Json. Writes persist
 /// via <see cref="CyberwareMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class CyberwareRepository : EfRepository<CyberwareData>
@@ -1809,19 +1827,21 @@ public class CyberwareRepository : EfRepository<CyberwareData>
                 Name       = name,
                 Slug       = ResolveSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -1872,7 +1892,7 @@ public class CyberwareRepository : EfRepository<CyberwareData>
 
 /// <summary>
 /// Fully relational VocabularyRepository. Reads materialize VocabularyData from the
-/// VocabularyEntries table — never from Records.Json. Writes persist columns via
+/// VocabularyEntries table â€” never from Records.Json. Writes persist columns via
 /// <see cref="VocabularyMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class VocabularyRepository : EfRepository<VocabularyData>
@@ -2032,7 +2052,7 @@ public class VocabularyRepository : EfRepository<VocabularyData>
 
 /// <summary>
 /// Fully relational GenemodRepository. Reads materialize GenemodData from the
-/// Genemods table + all child bridges (Aliases / StoryHooks) — never from
+/// Genemods table + all child bridges (Aliases / StoryHooks) â€” never from
 /// Records.Json. Writes wipe child bridges and re-insert via
 /// <see cref="GenemodMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
@@ -2127,19 +2147,21 @@ public class GenemodRepository : EfRepository<GenemodData>
                 Name       = item.Name ?? "",
                 Slug       = ResolveGenemodSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, item.Name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = item.Name ?? "";
-            existingEntity.Slug       = ResolveGenemodSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, item.Name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = item.Name ?? "";
+                existingEntity.Slug = ResolveGenemodSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -2190,7 +2212,7 @@ public class GenemodRepository : EfRepository<GenemodData>
 
 /// <summary>
 /// Fully relational TransportationRepository. Reads materialize TransportationData
-/// from the Transportations table + all child bridges (Aliases / StoryHooks) — never
+/// from the Transportations table + all child bridges (Aliases / StoryHooks) â€” never
 /// from Records.Json. Writes wipe child bridges and re-insert via
 /// <see cref="TransportationMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
@@ -2285,19 +2307,21 @@ public class TransportationRepository : EfRepository<TransportationData>
                 Name       = name,
                 Slug       = ResolveTransportationSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveTransportationSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveTransportationSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -2348,7 +2372,7 @@ public class TransportationRepository : EfRepository<TransportationData>
 
 /// <summary>
 /// Fully relational ContractRepository. Reads materialize ContractData from the
-/// Contracts table + bridge tables (ContractBonuses / ContractComplications) — never
+/// Contracts table + bridge tables (ContractBonuses / ContractComplications) â€” never
 /// from Records.Json. Writes persist via <see cref="ContractMapper"/>. Records.Json
 /// is left intact (additive-only).
 /// </summary>
@@ -2445,19 +2469,21 @@ public class ContractRepository : EfRepository<ContractData>
                 Name       = name,
                 Slug       = ResolveContractSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveContractSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveContractSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -2509,7 +2535,7 @@ public class ContractRepository : EfRepository<ContractData>
 /// <summary>
 /// Fully relational AutomatonRepository. Reads materialize AutomatonData from the
 /// Automata table + all child bridges (Aliases / Armament / Sensors /
-/// KnownDeployments / StoryHooks) — never from Records.Json. Writes wipe child
+/// KnownDeployments / StoryHooks) â€” never from Records.Json. Writes wipe child
 /// bridges and re-insert via <see cref="AutomatonMapper"/>.
 /// Records.Json is left intact (additive-only). (RFC 0007)
 /// </summary>
@@ -2604,19 +2630,21 @@ public class AutomatonRepository : EfRepository<AutomatonData>
                 Name       = name,
                 Slug       = ResolveAutomatonSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveAutomatonSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveAutomatonSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -2667,7 +2695,7 @@ public class AutomatonRepository : EfRepository<AutomatonData>
 
 /// <summary>
 /// Fully relational SubsidiaryRepository. Reads materialize SubsidiaryData from the
-/// Subsidiaries table + SubsidiaryProducts bridge — never from Records.Json. Writes
+/// Subsidiaries table + SubsidiaryProducts bridge â€” never from Records.Json. Writes
 /// persist via <see cref="SubsidiaryMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class SubsidiaryRepository : EfRepository<SubsidiaryData>
@@ -2761,19 +2789,21 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
                 Name       = name,
                 Slug       = ResolveSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -2825,7 +2855,7 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
 /// <summary>
 /// Fully relational EntertainmentRepository. Reads materialize EntertainmentData from
 /// the EntertainmentItems table + all child bridges (Aliases / KnownFans / StoryHooks)
-/// — never from Records.Json. Writes persist via <see cref="EntertainmentMapper"/>.
+/// â€” never from Records.Json. Writes persist via <see cref="EntertainmentMapper"/>.
 /// Records.Json is left intact (additive-only).
 /// </summary>
 public class EntertainmentRepository : EfRepository<EntertainmentData>
@@ -2919,19 +2949,21 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
                 Name       = name,
                 Slug       = ResolveEntertainmentSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveEntertainmentSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveEntertainmentSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -2982,7 +3014,7 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
 
 /// <summary>
 /// Fully relational ApparelRepository. Reads materialize ApparelData from the
-/// Apparels table + all child bridges (Aliases / Materials / WornBy / StoryHooks) —
+/// Apparels table + all child bridges (Aliases / Materials / WornBy / StoryHooks) â€”
 /// never from Records.Json. Writes persist via <see cref="ApparelMapper"/>. Records.Json is
 /// left intact (additive-only).
 /// </summary>
@@ -3077,19 +3109,21 @@ public class ApparelRepository : EfRepository<ApparelData>
                 Name       = name,
                 Slug       = ResolveApparelSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveApparelSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveApparelSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -3140,7 +3174,7 @@ public class ApparelRepository : EfRepository<ApparelData>
 
 /// <summary>
 /// Fully relational NewsRepository. Reads materialize NewsData from the News table
-/// + bridge tables (NewsEntitiesInvolved / NewsLocations) — never from Records.Json.
+/// + bridge tables (NewsEntitiesInvolved / NewsLocations) â€” never from Records.Json.
 /// Writes persist via <see cref="NewsMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class NewsRepository : EfRepository<NewsData>
@@ -3300,7 +3334,7 @@ public class NewsRepository : EfRepository<NewsData>
 /// <summary>
 /// Fully relational ArchetypeRepository. Reads materialize ArchetypeData from the
 /// Archetypes table + all child bridges (WillAlways / WillNever / Unless /
-/// SimilarTo / OppositeOf) — never from Records.Json. Writes wipe child bridges
+/// SimilarTo / OppositeOf) â€” never from Records.Json. Writes wipe child bridges
 /// and re-insert via <see cref="ArchetypeMapper"/>. Records.Json is left intact
 /// (additive-only).
 /// </summary>
@@ -3395,19 +3429,21 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
                 Name       = name,
                 Slug       = ResolveArchetypeSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveArchetypeSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveArchetypeSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -3458,7 +3494,7 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
 
 /// <summary>
 /// Fully relational MaterialRepository. Reads materialize MaterialData from the
-/// Materials table + all child bridges (Aliases / StoryHooks) — never from
+/// Materials table + all child bridges (Aliases / StoryHooks) â€” never from
 /// Records.Json. Writes wipe child bridges and re-insert via
 /// <see cref="MaterialMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
@@ -3553,19 +3589,21 @@ public class MaterialRepository : EfRepository<MaterialData>
                 Name       = item.Name ?? "",
                 Slug       = ResolveMaterialSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, item.Name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = item.Name ?? "";
-            existingEntity.Slug       = ResolveMaterialSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, item.Name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = item.Name ?? "";
+                existingEntity.Slug = ResolveMaterialSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -3616,7 +3654,7 @@ public class MaterialRepository : EfRepository<MaterialData>
 
 /// <summary>
 /// Fully relational PharmaceuticalRepository. Reads materialize PharmaceuticalData from the
-/// Pharmaceuticals table + all child bridges — never from Records.Json. Writes persist
+/// Pharmaceuticals table + all child bridges â€” never from Records.Json. Writes persist
 /// via <see cref="PharmaceuticalMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
@@ -3710,19 +3748,21 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
                 Name       = name,
                 Slug       = ResolveSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -3773,7 +3813,7 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
 
 /// <summary>
 /// Fully relational ConsumerGoodRepository. Reads materialize ConsumerGoodData from the
-/// ConsumerGoods table + child bridges — never from Records.Json. Writes persist
+/// ConsumerGoods table + child bridges â€” never from Records.Json. Writes persist
 /// via <see cref="ConsumerGoodMapper"/>. Records.Json is left intact (additive-only).
 /// </summary>
 public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
@@ -3867,19 +3907,21 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
                 Name       = name,
                 Slug       = ResolveSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
@@ -3929,7 +3971,7 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
 }
 
 /// <summary>
-/// Fully relational QuoteRepository. Reads materialize QuoteData from the Quotes table —
+/// Fully relational QuoteRepository. Reads materialize QuoteData from the Quotes table â€”
 /// never from Records.Json. Writes persist via <see cref="QuoteMapper"/>. Records.Json is
 /// left intact (additive-only).
 /// </summary>
@@ -4082,10 +4124,10 @@ public class QuoteRepository : EfRepository<QuoteData>
     }
 }
 
-// Singleton repositories — one JSON document each, persisted as a row in the
+// Singleton repositories â€” one JSON document each, persisted as a row in the
 // universal Settings table (keyed by name). Earlier these used the path-only
 // JsonSingletonRepository ctor which routed through NullFactory and silently
-// returned defaults on every Get — fixed 2026-05-06.
+// returned defaults on every Get â€” fixed 2026-05-06.
 public class ToneBibleRepository : JsonSingletonRepository<ToneBibleData>
 {
     public ToneBibleRepository(IDbContextFactory<StreetSamuraiDbContext> db)
@@ -4120,7 +4162,7 @@ public class CharacterProfileRepository : JsonSingletonRepository<CharacterProfi
 
 /// <summary>
 /// Fully relational LabSpecimenRepository. Reads materialize LabSpecimenData from the
-/// LabSpecimens table + all child bridges (Aliases / KnownLocations / StoryHooks) —
+/// LabSpecimens table + all child bridges (Aliases / KnownLocations / StoryHooks) â€”
 /// never from Records.Json. Writes wipe child bridges and re-insert via
 /// <see cref="LabSpecimenMapper"/>. Records.Json is left intact (additive-only). (RFC 0007)
 /// </summary>
@@ -4278,7 +4320,7 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
 
 /// <summary>
 /// Fully relational FlyoverEntityRepository. Reads materialize FlyoverEntityData from the
-/// FlyoverEntities table + all child bridges (Aliases / KnownLocations / StoryHooks) —
+/// FlyoverEntities table + all child bridges (Aliases / KnownLocations / StoryHooks) â€”
 /// never from Records.Json. Writes wipe child bridges and re-insert via
 /// <see cref="FlyoverEntityMapper"/>. Records.Json is left intact (additive-only). (RFC 0007)
 /// </summary>
@@ -4436,7 +4478,7 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
 
 /// <summary>
 /// Fully relational PsionicRepository. Reads materialize PsionicData from the
-/// Psionics table + all child bridges (Aliases / KnownPractitioners / StoryHooks) —
+/// Psionics table + all child bridges (Aliases / KnownPractitioners / StoryHooks) â€”
 /// never from Records.Json. Writes wipe child bridges and re-insert via
 /// <see cref="PsionicMapper"/>. Records.Json is left intact (additive-only). (RFC 0007)
 /// </summary>
@@ -4594,8 +4636,8 @@ public class PsionicRepository : EfRepository<PsionicData>
 
 /// <summary>Read access to the first-class <see cref="Species"/> taxonomy (the
 /// controlled vocabulary Character.Species references). A small lookup table, not
-/// a canon entity — kept off the Records/embedding/graph machinery on purpose
-/// (separation of responsibilities, §2a). Cached after first read.</summary>
+/// a canon entity â€” kept off the Records/embedding/graph machinery on purpose
+/// (separation of responsibilities, Â§2a). Cached after first read.</summary>
 public class SpeciesRepository
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
@@ -4626,7 +4668,7 @@ public class SpeciesRepository
         return GetAll().FirstOrDefault(s => string.Equals(s.Name, n, StringComparison.OrdinalIgnoreCase));
     }
 
-    /// <summary>The five valid species names — the allowed Character.Species values.</summary>
+    /// <summary>The five valid species names â€” the allowed Character.Species values.</summary>
     public IReadOnlyCollection<string> ValidNames() => GetAll().Select(s => s.Name).ToList();
 
     public void Reload() { lock (gate) cache = null; }
@@ -4635,7 +4677,7 @@ public class SpeciesRepository
 /// <summary>
 /// Fully relational SyntheticLifeRepository. Reads materialize SyntheticLifeData from
 /// the SyntheticLives table + all child bridges (Aliases / KnownAssociations / StoryHooks)
-/// — never from Records.Json. Writes persist via <see cref="SyntheticMapper"/>.
+/// â€” never from Records.Json. Writes persist via <see cref="SyntheticMapper"/>.
 /// Records.Json is left intact (additive-only).
 /// </summary>
 public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
@@ -4729,19 +4771,21 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
                 Name       = name,
                 Slug       = ResolveSyntheticSlug(db, name, id, currentSlug: null),
                 Status     = "canon",
+                Description = item.Description,
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             };
             db.Entities.Add(existingEntity);
         }
-        else if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
-        {
-            existingEntity.Name       = name;
-            existingEntity.Slug       = ResolveSyntheticSlug(db, name, id, existingEntity.Slug);
-            existingEntity.ModifiedAt = DateTime.UtcNow;
-        }
         else
         {
+            if (!string.Equals(existingEntity.Name, name, StringComparison.Ordinal))
+            {
+                existingEntity.Name = name;
+                existingEntity.Slug = ResolveSyntheticSlug(db, name, id, existingEntity.Slug);
+            }
+            if (!string.Equals(existingEntity.Description, item.Description, StringComparison.Ordinal))
+                existingEntity.Description = item.Description;
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
