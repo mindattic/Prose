@@ -53,10 +53,28 @@ public class KdpOperatorService
             yield break;
         }
 
-        var manuscriptPath = book.EpubPath ?? book.DocxPath;
-        if (string.IsNullOrWhiteSpace(manuscriptPath))
+        // Hard gate, enforced here (not just in the UI's RunSelectedAsync) so it can never be
+        // bypassed by any other caller: a book needs an actual .epub (not a docx-only fallback —
+        // KDP auto-converts docx, but that conversion is unverified and this is the format we
+        // actually want live), a cover.jpg, and the human sign-off marker before it's even
+        // eligible to run, for EITHER flow. Republish never re-uploads the cover, but a book
+        // missing one is incomplete regardless — better to refuse it here than silently republish
+        // text-only forever.
+        if (!book.ReadyToPublish)
         {
-            yield return new OperatorEvent.Error($"{book.Code}: no manuscript file on disk — run ss --export-node.");
+            yield return new OperatorEvent.Error($"{book.Code}: no .publish marker in {book.FolderPath} — not signed off for publish.");
+            yield break;
+        }
+        if (string.IsNullOrWhiteSpace(book.EpubPath))
+        {
+            yield return new OperatorEvent.Error($"{book.Code}: no .epub found in {book.FolderPath} — run ss --export-node (a .docx alone is not enough).");
+            yield break;
+        }
+        var manuscriptPath = book.EpubPath;
+        var coverPath = Path.Combine(book.FolderPath, "cover.jpg");
+        if (!File.Exists(coverPath))
+        {
+            yield return new OperatorEvent.Error($"{book.Code}: no cover.jpg found in {book.FolderPath}.");
             yield break;
         }
 
@@ -67,7 +85,6 @@ public class KdpOperatorService
             && string.IsNullOrWhiteSpace(book.KdpTitleId)
             && string.IsNullOrWhiteSpace(book.PublishUrl);
 
-        string? coverPath = null;
         if (isNewListing)
         {
             if (book.NewListingPlan == null)
@@ -75,12 +92,6 @@ public class KdpOperatorService
                 yield return new OperatorEvent.Error(
                     $"{book.Code}: no first-time-publish plan configured — set kv.Set(\"kdp.newbook.{book.Code}\", ...) " +
                     "(price, categories, DRM, KDP Select, AI-generated-content disclosure) before running this book.");
-                yield break;
-            }
-            coverPath = Path.Combine(book.FolderPath, "cover.jpg");
-            if (!File.Exists(coverPath))
-            {
-                yield return new OperatorEvent.Error($"{book.Code}: no cover.jpg found in {book.FolderPath} — a first-time listing needs a cover image.");
                 yield break;
             }
         }

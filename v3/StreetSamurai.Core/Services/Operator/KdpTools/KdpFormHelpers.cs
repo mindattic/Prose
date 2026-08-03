@@ -117,6 +117,13 @@ internal static class KdpFormHelpers
     // that; a short, specifically-classed, actually-RENDERED status chip does not. Length-capped
     // at 100 (not the old 300) for the same reason — a real status chip is a short phrase, not a
     // paragraph of help text a wide net would also catch.
+    //
+    // [role="dialog"] was added 2026-08 after a reported live "Preparing your files" modal that
+    // can block for up to a minute — it was already visible to the LLM via get_page_status's
+    // `banners` scan (which includes role=dialog), but NOT included here in the hard-blocking
+    // isProcessing check, since modal containers commonly don't carry a status/progress/spinner/
+    // loading/preparing-named class. Without it, a real blocking modal could be invisible to the
+    // one check that actually refuses to click/tick while something is still working.
     private static string ProcessingCheckScript => $$"""
     (function() {
         function isVisible(el) {
@@ -125,10 +132,13 @@ internal static class KdpFormHelpers
         }
         var processingWords = /{{ProcessingWordsPattern}}/i;
         var processingEls = Array.from(document.querySelectorAll(
-            '[class*="status"], [class*="progress"], [class*="spinner"], [class*="loading"], [class*="processing"], [class*="preparing"]'
+            '[class*="status"], [class*="progress"], [class*="spinner"], [class*="loading"], [class*="processing"], [class*="preparing"], [role="dialog"]'
         )).filter(isVisible)
           .map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
-          .filter(function (t) { return t.length > 0 && t.length < 100; });
+          // 200, not the original 100 — a role=dialog modal's full text (title + description +
+          // any chrome) commonly runs longer than a small status chip; the completion-lookahead
+          // in ProcessingWordsPattern already guards against a long paragraph false-matching.
+          .filter(function (t) { return t.length > 0 && t.length < 200; });
         var matches = Array.from(new Set(processingEls.filter(function (t) { return processingWords.test(t); })));
         var isProcessing = matches.length > 0;
         var indicator = matches[0] || null;

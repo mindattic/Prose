@@ -67,10 +67,10 @@ public class GetPageStatusTool : IKdpTool
         // KdpFormHelpers.CheckIsProcessingAsync.
         var processingWords = /{{KdpFormHelpers.ProcessingWordsPattern}}/i;
         var processingEls = Array.from(document.querySelectorAll(
-            '[class*="status"], [class*="progress"], [class*="spinner"], [class*="loading"], [class*="processing"], [class*="preparing"]'
+            '[class*="status"], [class*="progress"], [class*="spinner"], [class*="loading"], [class*="processing"], [class*="preparing"], [role="dialog"]'
         )).filter(isVisible)
           .map(function (el) { return (el.textContent || '').trim().replace(/\s+/g, ' '); })
-          .filter(function (t) { return t.length > 0 && t.length < 100; });
+          .filter(function (t) { return t.length > 0 && t.length < 200; });
         var processingMatches = Array.from(new Set(processingEls.filter(function (t) { return processingWords.test(t); })));
         var isProcessing = processingMatches.length > 0;
 
