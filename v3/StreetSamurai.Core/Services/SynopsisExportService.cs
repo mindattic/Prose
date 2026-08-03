@@ -33,7 +33,14 @@ public sealed class SynopsisExportService(
     private const string SynopsisModel = "claude-sonnet-5";
     private const int MaxSourceChars = 180_000;
 
-    private sealed record ChapterUnit(Guid NodeId, int Index, string Title, string SourceText, int BeatCount);
+    /// <summary>One chapter's live prose, in reading order — shared with
+    /// <see cref="ComprehensionProbeService"/> so probes and synopses always segment
+    /// the book identically (same indexes, same source text, same cache keys).</summary>
+    public sealed record ChapterUnit(Guid NodeId, int Index, string Title, string SourceText, int BeatCount);
+
+    /// <summary>Public access to the chapter segmentation (no LLM calls).</summary>
+    public Task<List<ChapterUnit>> GetChapterSourcesAsync(Guid bookNodeId, CancellationToken ct = default) =>
+        LoadChapterUnitsAsync(bookNodeId, ct);
 
     /// <summary>Generates/refreshes all chapter summaries for the book (content-hash
     /// cached in NodeChapterSummaries) and returns them in reading order. This is the

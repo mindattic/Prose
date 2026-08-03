@@ -490,6 +490,25 @@ public class SettingsService : IDisposable
     /// <summary>Maximum simultaneous LLM calls during a review run.</summary>
     public int ReviewMaxConcurrency { get => data.ReviewMaxConcurrency; set { data.ReviewMaxConcurrency = Math.Max(1, Math.Min(50, value)); ScheduleSave(); } }
 
+    // ── Reader-Proxy QA (docs/READER-QA.md) ──────────────────────────────────────
+    /// <summary>Comma-separated provider IDs Reader-Proxy QA juries draw from — cross-FAMILY
+    /// diversity is the point (correlated-error research: same-family voters ≈ one vote).
+    /// Providers without keys or failing their liveness ping are skipped automatically;
+    /// juries degrade gracefully to whatever is alive.</summary>
+    public string ReaderQaJuryProviders { get => data.ReaderQaJuryProviders; set { data.ReaderQaJuryProviders = value; ScheduleSave(); } }
+    /// <summary>JSON array declaring OpenAI-compatible jury providers OUTSIDE the Legion
+    /// catalog (Kimi, Grok, Mistral, …): [{"id","baseUrl","cheapModel","model?","label?",
+    /// "inPerMtok?","cacheWritePerMtok?","cacheReadPerMtok?","outPerMtok?"}]. Keys resolve
+    /// from MindAtticCredentialStore by id. Adding a family is a settings edit, not code.</summary>
+    public string ExtraJuryProvidersJson { get => data.ExtraJuryProvidersJson; set { data.ExtraJuryProvidersJson = value; ScheduleSave(); } }
+    /// <summary>The cheap "median reader" instrument for comprehension probes. Its GENUINE
+    /// misreadings are the signal — do not upgrade this to a strong model, that defeats
+    /// the instrument (a strong model reads too well to proxy a casual reader).</summary>
+    public string ComprehensionProbeModel { get => data.ComprehensionProbeModel; set { data.ComprehensionProbeModel = value; ScheduleSave(); } }
+    /// <summary>Arbiter that checks each candidate misreading against the chapter text
+    /// (separates reader-plausible confusion from probe hallucination).</summary>
+    public string ComprehensionArbiterModel { get => data.ComprehensionArbiterModel; set { data.ComprehensionArbiterModel = value; ScheduleSave(); } }
+
     // ── Local-LLM review (--local) ───────────────────────────────────────────────
     /// <summary>OpenAI-compatible chat-completions endpoint of the local inference server
     /// (Ollama default). Only used by <c>--local</c> node reviews; cloud reviews never touch it.</summary>
@@ -955,6 +974,14 @@ public class SettingsService : IDisposable
         public string ReviewJudgeProvider { get; set; } = "gemini";
         public string ReviewAllowedProviders { get; set; } = "claude-api";
         public int ReviewMaxConcurrency { get; set; } = 10;
+        // Reader-Proxy QA jury roster (cross-family; dead/keyless providers auto-skip)
+        public string ReaderQaJuryProviders { get; set; } = "claude-api,openai,gemini,deepseek,kimi";
+        // Registry of OpenAI-compatible jury families outside the Legion catalog.
+        // Kimi K2.6 pricing per platform.moonshot.ai 2026-08: $0.60/M in, $0.16/M cache read, $2.50/M out.
+        public string ExtraJuryProvidersJson { get; set; } =
+            "[{\"id\":\"kimi\",\"baseUrl\":\"https://api.moonshot.ai/v1\",\"cheapModel\":\"kimi-k2.6\",\"label\":\"Kimi K2.6\",\"inPerMtok\":0.60,\"cacheReadPerMtok\":0.16,\"outPerMtok\":2.50}]";
+        public string ComprehensionProbeModel { get; set; } = LlmModels.Haiku;
+        public string ComprehensionArbiterModel { get; set; } = LlmModels.Sonnet;
         // Local-LLM review (--local) defaults
         public string LocalReviewBaseUrl { get; set; } = "http://localhost:11434/v1/chat/completions";
         public string LocalReviewModel { get; set; } = "qwen2.5-32b-rev-128k";

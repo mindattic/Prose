@@ -24,6 +24,7 @@ public class NodeReviewService
     private readonly LegionClient legion;
     private readonly CloudReviewLlm cloudLlm;
     private readonly LocalReviewLlm localLlm;
+    private readonly ReviewLlmTransport transport;
     private readonly VotingConfiguration cfg;
     private readonly SettingsService settings;
     private readonly NodeMarkdownExporter exporter;
@@ -65,6 +66,7 @@ public class NodeReviewService
         LegionClient legion,
         CloudReviewLlm cloudLlm,
         LocalReviewLlm localLlm,
+        ReviewLlmTransport transport,
         VotingConfiguration cfg,
         SettingsService settings,
         NodeMarkdownExporter exporter,
@@ -80,6 +82,7 @@ public class NodeReviewService
         this.legion = legion;
         this.cloudLlm = cloudLlm;
         this.localLlm = localLlm;
+        this.transport = transport;
         this.cfg = cfg;
         this.settings = settings;
         this.exporter = exporter;
@@ -93,43 +96,14 @@ public class NodeReviewService
         this.proseLessons = proseLessons;
     }
 
-    /// <summary>The transport + provider/key/model resolution chosen for one review run.
-    /// Cloud (default) routes through <see cref="CloudReviewLlm"/> across the trusted-4;
-    /// local (<c>--local</c>) routes a single "local" pseudo-provider through
-    /// <see cref="LocalReviewLlm"/>. Built once per run by <see cref="BuildRoute"/> so the
-    /// two paths can never interleave within a run.</summary>
-    private sealed record ReviewRoute(
-        IReviewLlm Llm, List<string> Providers, int MaxConcurrencyValue,
-        Func<string, string?> KeyFor, Func<string, bool, string> ModelFor);
-
-    /// <summary>Pick the transport for a run. The ONLY place cloud-vs-local is decided —
-    /// everything downstream just uses the returned route.</summary>
-    private ReviewRoute BuildRoute(bool useLocal, string? allowedProvidersOverride = null, string? localModelOverride = null,
-        string? cloudModelOverride = null, IReadOnlyDictionary<string, string>? modelMap = null)
-    {
-        if (useLocal)
-        {
-            var model = string.IsNullOrWhiteSpace(localModelOverride) ? settings.LocalReviewModel : localModelOverride;
-            return new ReviewRoute(
-                localLlm,
-                new List<string> { "local" },
-                Math.Max(1, settings.LocalReviewMaxConcurrency),
-                _ => "local",         // dummy key; LocalReviewLlm ignores it
-                (_, _) => model);     // one local model, regardless of provider/cheap
-        }
-        // Resolution order: modelMap[provider] → cloudModelOverride → ResolveBallotModel
-        Func<string, bool, string> modelFor = (modelMap != null || cloudModelOverride != null)
-            ? (p, cheap) => (modelMap != null && modelMap.TryGetValue(p, out var mapped) ? mapped : null)
-                            ?? cloudModelOverride
-                            ?? ResolveBallotModel(p, cheap)
-            : ResolveBallotModel;
-        return new ReviewRoute(
-            cloudLlm,
-            ReviewProviderIds(allowedProvidersOverride),
-            cfg.MaxConcurrency ?? MaxConcurrency,
-            ResolveKey,
-            modelFor);
-    }
+    /// <summary>Pick the transport for a run — now a thin delegation to the shared
+    /// <see cref="ReviewLlmTransport"/> (extracted so Reader-Proxy QA services reuse
+    /// the same routing seam). Semantics are unchanged for the legacy panel: the
+    /// default allowed-provider list keeps registry families out of persona reviews.</summary>
+    private ReviewLlmTransport.Route BuildRoute(bool useLocal, string? allowedProvidersOverride = null, string? localModelOverride = null,
+        string? cloudModelOverride = null, IReadOnlyDictionary<string, string>? modelMap = null) =>
+        transport.BuildRoute(useLocal, allowedProvidersOverride, localModelOverride, cloudModelOverride, modelMap,
+            maxConcurrency: cfg.MaxConcurrency ?? MaxConcurrency);
 
     public record ReviewRunResult(int Requested, int Saved, int Failed, double AvgScore, string ContentHash, string ExportPath);
     public record ScoreHistoryPoint(DateTime RecordedAt, double Score, double? Sd, int ReviewCount);
@@ -776,7 +750,7 @@ public class NodeReviewService
     /// prose review of it (same JSON contract as the whole-node reviewer). Scoped to the
     /// segment so the prompt fits the local context window.</summary>
     private async Task<(string review, List<string> improvements)?> SegmentProseOnceAsync(
-        string title, NodeMarkdownExporter.NodeSegment segment, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
+        string title, NodeMarkdownExporter.NodeSegment segment, Persona persona, string provider, ReviewLlmTransport.Route route, CancellationToken ct,
         Action<int>? trackOutput = null)
     {
         var key = route.KeyFor(provider);
@@ -806,7 +780,7 @@ Return ONLY a JSON object and nothing else:
 
     private async Task<NodeReview?> SegmentBallotOnceAsync(
         Guid nodeId, string title, NodeMarkdownExporter.NodeSegment segment, int totalBeatCount,
-        Persona persona, string provider, ReviewRoute route, CancellationToken ct, string? lessonsBlock,
+        Persona persona, string provider, ReviewLlmTransport.Route route, CancellationToken ct, string? lessonsBlock,
         IReadOnlyDictionary<int, string>? beatHashes = null, Action<int>? trackOutput = null)
     {
         var key = route.KeyFor(provider);
@@ -1359,32 +1333,12 @@ Return ONLY a JSON object, nothing else:
 
     /// <summary>One cheap SCORE-ONLY ballot: overall + flow + per-beat 1-5 + a single
     /// weakness tag, no prose paragraph. The wide-net scoring/per-beat tier.</summary>
-    /// <summary>RFC 0009 — the cheapest model each trusted provider offers, mirroring
-    /// BeatGeneratorService.LowTierModelFor. Used by the Draft effort tier so spot-check
-    /// ballots cost a fraction per call; gate tiers (Standard/Deep) keep the mid-tier
-    /// defaults because their scores drive 82%/85% decisions.</summary>
-    private static readonly Dictionary<string, string> CheapModels = new(StringComparer.OrdinalIgnoreCase)
-    {
-        ["claude-api"]  = "claude-haiku-4-5-20251001",
-        ["claude-team"] = "claude-haiku-4-5-20251001",
-        ["openai"]   = "gpt-4.1-nano",
-        ["gemini"]   = "gemini-2.0-flash",
-        ["deepseek"] = "deepseek-chat",
-    };
-
-    /// <summary>Resolve the model for a ballot/prose call. When <paramref name="cheap"/>,
-    /// prefer the provider's cheapest model; otherwise honor the configured override then the
-    /// Legion default. Never mutates persisted settings — the choice is per-run.</summary>
-    private string ResolveBallotModel(string provider, bool cheap)
-    {
-        if (cheap && CheapModels.TryGetValue(provider, out var c) && !string.IsNullOrWhiteSpace(c))
-            return c;
-        return cfg.ModelOverrides.TryGetValue(provider, out var m) && !string.IsNullOrWhiteSpace(m)
-            ? m : LegionClient.DefaultModels.GetValueOrDefault(provider, "");
-    }
+    /// <summary>Resolve the model for a ballot/prose call — delegated to the shared
+    /// <see cref="ReviewLlmTransport"/> (RFC 0009 cheap-tier map lives there now).</summary>
+    private string ResolveBallotModel(string provider, bool cheap) => transport.ResolveModel(provider, cheap);
 
     private async Task<NodeReview?> BallotOnceAsync(
-        Guid nodeId, NodeMarkdownExporter.NodeExport export, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
+        Guid nodeId, NodeMarkdownExporter.NodeExport export, Persona persona, string provider, ReviewLlmTransport.Route route, CancellationToken ct,
         string? lessonsBlock = null, bool cheapModels = false, IReadOnlyDictionary<int, string>? beatHashes = null,
         Action<int>? trackOutput = null)
     {
@@ -1444,7 +1398,7 @@ Return ONLY a JSON object, nothing else:
     /// <summary>Full prose review for an already-balloted persona — used to upgrade
     /// the most informative ballots with readable text (returns text only).</summary>
     private async Task<(string review, List<string> improvements)?> ProseOnceAsync(
-        NodeMarkdownExporter.NodeExport export, Persona persona, string provider, ReviewRoute route, CancellationToken ct,
+        NodeMarkdownExporter.NodeExport export, Persona persona, string provider, ReviewLlmTransport.Route route, CancellationToken ct,
         bool cheapModels = false, Action<int>? trackOutput = null)
     {
         var key = route.KeyFor(provider);
@@ -2067,33 +2021,11 @@ Be specific; do not invent praise the reviews don't support.";
 
     // ── helpers ──────────────────────────────────────────────────────────
 
-    private string? ResolveKey(string provider)
-    {
-        // OAuth providers must always be resolved fresh — the token in cfg.ApiKeys is a
-        // startup snapshot that expires mid-session.  GetClaudeTeamOAuthToken() calls
-        // ClaudeCodeOAuthSource which auto-refreshes when within 60 s of expiry.
-        if (string.Equals(provider, "claude-team", StringComparison.OrdinalIgnoreCase))
-            return LegionClient.GetClaudeTeamOAuthToken();
-        if (cfg.ApiKeys.TryGetValue(provider, out var k) && !string.IsNullOrWhiteSpace(k)) return k;
-        return MindAtticCredentialStore.GetKey(provider);
-    }
+    private string? ResolveKey(string provider) => transport.ResolveKey(provider);
 
-    /// <summary>Providers used for reviews — all active trusted providers (Claude,
-    /// OpenAI, DeepSeek, Gemini), round-robined for model + temperament diversity.
-    /// (Single chokepoint: narrow this here if a provider ever needs excluding.)</summary>
-    private List<string> ReviewProviderIds(string? allowedOverride = null)
-    {
-        var active = cfg.ActiveProviderIds;
-        // RFC 0009: a per-run override (e.g. Draft's "claude,gemini") wins over the
-        // persisted setting without mutating it. Empty/blank → fall back to settings.
-        var source = string.IsNullOrWhiteSpace(allowedOverride) ? settings.ReviewAllowedProviders : allowedOverride;
-        var allowed = new HashSet<string>(
-            source.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries),
-            StringComparer.OrdinalIgnoreCase);
-        var filtered = allowed.Count > 0 ? active.Where(p => allowed.Contains(p)).ToList() : active.ToList();
-        // Never let an override empty the panel (e.g. none of its providers have keys).
-        return filtered.Count > 0 ? filtered : active.ToList();
-    }
+    /// <summary>Providers used for reviews — delegated to the shared transport.
+    /// The default allowed list keeps legacy panel behavior identical.</summary>
+    private List<string> ReviewProviderIds(string? allowedOverride = null) => transport.ProviderIds(allowedOverride);
 
     /// <summary>Distinct enriched personas (real personalities, not the empty
     /// per-provider defaults), drawn without replacement.</summary>
@@ -2603,7 +2535,7 @@ Be specific; do not invent praise the reviews don't support.";
 
     private async Task<NodeReview?> DeltaBallotOnceAsync(
         Guid nodeId, string title, List<Beat> orderedBeats, HashSet<int> changedPositions,
-        string contentHash, Persona persona, string provider, ReviewRoute route,
+        string contentHash, Persona persona, string provider, ReviewLlmTransport.Route route,
         IReadOnlyDictionary<int, string> beatHashes, CancellationToken ct)
     {
         var key = route.KeyFor(provider);

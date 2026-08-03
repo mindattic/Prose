@@ -1394,6 +1394,19 @@ if (args.Contains("--logic-sweep"))
     return;
 }
 
+// ss --reader-qa (--slug <slug> | --all) [--force] [--json]
+// Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality instrument.
+// Phase 1: comprehension probes — a cheap model reads each chapter cold, diffed against
+// the Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect
+// findings. NO scores (measurement, not vote — SS-A44 exempt). Hash-cached per chapter.
+// Exit 0 = clean, 1 = defects found, 2 = error.
+if (args.Contains("--reader-qa"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ReaderQaCli.RunAsync(args, sp);
+    return;
+}
+
 // ss --craft-audit --slug <nodeSlug> [--json]
 // Audits a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms), parsed live from
 // CanonDocumentSections — each numbered item becomes its own check, no hand-duplicated C#

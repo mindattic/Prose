@@ -21,13 +21,36 @@ public static class ReviewCostEstimator
         double CacheReadPerMtok,
         double OutputPerMtok);
 
-    private static readonly Dictionary<string, ModelPricing> KnownPricing =
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, ModelPricing> KnownPricing =
         new(StringComparer.OrdinalIgnoreCase)
         {
             ["claude-haiku-4-5-20251001"] = new("Haiku 4.5",   0.80,  1.00, 0.08,  4.00),
             ["claude-sonnet-4-6"]         = new("Sonnet 4.6",  3.00,  3.75, 0.30, 15.00),
+            ["claude-sonnet-5"]           = new("Sonnet 5",    3.00,  3.75, 0.30, 15.00),
             ["claude-opus-4-8"]           = new("Opus 4.8",   15.00, 18.75, 1.50, 75.00),
         };
+
+    /// <summary>Register pricing for a model at runtime — used by
+    /// <see cref="JuryProviderRegistry"/> so registry-declared families (Kimi, …)
+    /// estimate at their real rates instead of the Haiku fallback.</summary>
+    public static void RegisterPricing(string model, string label,
+        double inPerMtok, double cacheWritePerMtok, double cacheReadPerMtok, double outPerMtok) =>
+        KnownPricing[model] = new(label,
+            inPerMtok,
+            cacheWritePerMtok > 0 ? cacheWritePerMtok : inPerMtok,
+            cacheReadPerMtok  > 0 ? cacheReadPerMtok  : inPerMtok,
+            outPerMtok);
+
+    /// <summary>True when the model has a real pricing row (estimates for unknown
+    /// models fall back to Haiku rates and are labeled as such in the table).</summary>
+    public static bool IsKnown(string model) => KnownPricing.ContainsKey(model);
+
+    private static ModelPricing PricingFor(string model) =>
+        KnownPricing.TryGetValue(model, out var p)
+            ? p
+            // Unknown model: estimate at Haiku rates but SAY SO in the table label —
+            // a silent fallback under-estimated Sonnet arbiters 4-19× before this.
+            : KnownPricing["claude-haiku-4-5-20251001"] with { Label = $"{model} (unknown — Haiku rates)" };
 
     // Tokens for the ballot system prompt (persona description + rubric).
     private const int SystemTokensPerVoter = 1_500;
@@ -63,8 +86,7 @@ public static class ReviewCostEstimator
         string storyTitle, int beatCount, int storyTokens,
         int voterCount, string model, bool ballotOnly)
     {
-        var pricing = KnownPricing.TryGetValue(model, out var p) ? p
-            : KnownPricing["claude-haiku-4-5-20251001"];
+        var pricing = PricingFor(model);
 
         var outputPerVoter = ballotOnly
             ? Math.Min(8_000, 900 + beatCount * 6)
@@ -88,8 +110,7 @@ public static class ReviewCostEstimator
         string storyTitle, int beatCount, int storyTokens,
         int votersFired, string model, bool ballotOnly, int outputTokensActual)
     {
-        var pricing = KnownPricing.TryGetValue(model, out var p) ? p
-            : KnownPricing["claude-haiku-4-5-20251001"];
+        var pricing = PricingFor(model);
 
         var cacheWrite = storyTokens / 1_000_000.0 * pricing.CacheWritePerMtok;
         var cacheRead  = storyTokens / 1_000_000.0 * pricing.CacheReadPerMtok * Math.Max(0, votersFired - 1);

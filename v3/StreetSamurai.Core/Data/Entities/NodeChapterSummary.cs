@@ -22,6 +22,12 @@ public class NodeChapterSummary
     /// <summary>Structured facts as JSON: { entities, locations, events, state_changes }.</summary>
     public string   FactsJson      { get; set; } = "{}";
 
+    /// <summary>Reader-Proxy QA comprehension probe cache (docs/READER-QA.md):
+    /// { probeHash, probeModel, arbiterModel, probe:{summary,facts,confusions,prediction},
+    ///   defects:[…], evaluatedAt }. Null = never probed. The hash gates re-billing —
+    /// an unchanged chapter re-probes for free.</summary>
+    public string?  ComprehensionJson { get; set; }
+
     public DateTime CreatedAt      { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt      { get; set; } = DateTime.UtcNow;
 }

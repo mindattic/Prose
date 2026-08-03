@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**251 tools** across **39 tool families.**
+**252 tools** across **40 tool families.**
 
 ## Families
 
@@ -42,6 +42,7 @@
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 11 |
+| [Reader Qa](#reader-qa) | 1 |
 | [Repository](#repository) | 2 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
@@ -1514,6 +1515,17 @@ Update review-voting settings. Pass only the fields you want to change — omit 
 Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/city police, no phi/Greek-letter confusion). Returns the list of matched violations with the surrounding context. Call this on a chapter draft BEFORE delivering it — catches rule slips Claude might miss.
 
 - `text` (string, required) — The prose to scan. Pass an entire chapter or a single beat.
+
+## Reader Qa
+
+<sub>`ReaderQaTools`</sub>
+
+### `reader_qa_comprehension`
+
+Reader-Proxy QA comprehension probes: a cheap model reads each chapter cold (rolling recap only) and its GENUINE reading is diffed against the fidelity-strict Sonnet synopsis; a Sonnet arbiter confirms which mismatches the chapter text itself plausibly supports (reader-plausible confusion vs probe hallucination). Confirmed defects are filed as ComprehensionDefect findings (see list_findings) and auto-supersede on re-run. Hash-cached per chapter — unchanged chapters never re-bill. Emits NO scores: this is the default reader-facing QA, replacing persona score panels. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
+- `force` (bool, optional) — Re-probe every chapter even if unchanged (default false).
 
 ## Repository
 

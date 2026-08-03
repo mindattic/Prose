@@ -807,6 +807,22 @@ public static class ServiceCollectionExtensions
         // self-contained Ollama client used ONLY by `--local` reviews. They never mix.
         services.AddSingleton<StreetSamurai.Core.Services.Local.CloudReviewLlm>();
         services.AddHttpClient<StreetSamurai.Core.Services.Local.LocalReviewLlm>(c => c.Timeout = TimeSpan.FromMinutes(10));
+
+        // Reader-Proxy QA transport layer (docs/READER-QA.md). JuryProviderRegistry
+        // parses the settings-declared OpenAI-compatible families (Kimi, …);
+        // RegistryReviewLlm is their wire path; ReviewLlmTransport is the single
+        // routing seam shared by the legacy panel and every new QA instrument —
+        // including per-provider liveness pings so dead/unfunded accounts are
+        // excluded from juries instead of failing runs.
+        services.AddSingleton<JuryProviderRegistry>();
+        services.AddHttpClient<StreetSamurai.Core.Services.Local.RegistryReviewLlm>(c => c.Timeout = TimeSpan.FromMinutes(10));
+        services.AddSingleton<ReviewLlmTransport>();
+
+        // Reader-Proxy QA Instrument 1: Haiku comprehension probes diffed against the
+        // Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect
+        // findings. A measurement, not a vote — not VotingGate-gated (SS-A44 exemption,
+        // same as craft_audit / logic sweep).
+        services.AddSingleton<ComprehensionProbeService>();
         services.AddSingleton<VotingConfiguration>(sp =>
         {
             var s = sp.GetRequiredService<SettingsService>();
