@@ -293,6 +293,16 @@ public sealed class ComprehensionProbeService(
             - readerPlausible=false → the text is clear; the cheap reader hallucinated or
               got sloppy (kind="hallucination"). Not the chapter's fault.
             Judge against the TEXT, not against what the author intended.
+            STRICT BAR for kind=missed-fact / misread: a summary OMITTING a fact is NOT a
+            defect when the chapter states that fact plainly at the scene where it matters —
+            summaries compress; that is normal reading, not confusion. Confirm missed-fact
+            ONLY when the fact appears just once, in passing, away from its point of use, or
+            is contradicted elsewhere — and your evidence must QUOTE the sole/oblique mention
+            to prove it. Deliberately open mysteries the text itself marks as unresolved
+            (a character saying they don't know; an explicitly unexplained signal) are the
+            text working as intended — reject, do not confirm.
+            (Calibration: BCODA 2026-08-03 — 7 of 7 arbiter-confirmed missed-fact defects
+            were dismissed on human read; every "missed" fact was explicit on the page.)
             Return STRICT JSON only, no markdown fence:
             {"defects":[{"kind":"missed-fact|misread|confusion|hallucination",
                          "description":"what a reader gets wrong or cannot follow",
