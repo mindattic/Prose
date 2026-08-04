@@ -4,25 +4,26 @@ project: StreetSamurai
 layer: planning
 code: TFAH
 title: The First Anti-Hero
-universe: EPIC
-updated: 2026-08-02
+universe: FICTION
+updated: 2026-08-04
 ---
 
 # Story Brief: TFAH — The First Anti-Hero {#SS-BRIEF-TFAH}
 
-> **SUPERSEDED UNIVERSE ASSIGNMENT (2026-08-02, later same day):** TFAH was originally drafted as
-> a GSPL sub-track (below) but has since been moved to its own new universe, **EPIC** — a
-> dedicated home for fiction retellings of classic epic literature/myth, distinct from GSPL
-> (renamed **SOURCE**), which is nonfiction historical-religious research. Rationale: SOURCE is a
+> **SUPERSEDED UNIVERSE ASSIGNMENT (2026-08-02, later same day; universe renamed again
+> 2026-08-04):** TFAH was originally drafted as a GSPL sub-track (below) but has since been moved
+> to its own new universe, **FICTION** (formerly EPIC, renamed 2026-08-04) — a dedicated home for
+> fiction retellings of classic epic literature/myth, distinct from GSPL (renamed SOURCE, then
+> **NONFICTION**), which is nonfiction historical-religious research. Rationale: NONFICTION is a
 > "historic research engine" (citation-grounded, real-world claims); TFAH is fiction built from a
-> poem. The two need genuinely different entities for same-named figures (e.g. SOURCE's
-> historically-researched Raphael vs. EPIC's Milton-literary-character Raphael in TFAH) — see
+> poem. The two need genuinely different entities for same-named figures (e.g. NONFICTION's
+> historically-researched Raphael vs. FICTION's Milton-literary-character Raphael in TFAH) — see
 > `EntityDisambiguationService` (`v3/StreetSamurai.Core/Services/EntityDisambiguationService.cs`)
 > and the `OriginNodeId` field on `Entity`. **Everything below this notice describes the original
 > GSPL framing and is kept as historical record of the reasoning** (the citation-grounding
 > discipline, the "spectrum not verdict" methodology, the entity-origin research) — still
 > substantively accurate — but any literal "universe: gspl"/"Author: Pulpit Press" references
-> below are superseded: the live BookNode is universe `epic`, Author `MindAttic`.
+> below are superseded: the live BookNode is universe `fiction`, Author `MindAttic`.
 >
 > **DOCS-TO-DB MIGRATION (2026-08-02, later still):** `docs/milton/*.md` (README.md,
 > milton-biography.md, character-catalog.md, theology-and-sources.md) has been **deleted**. Per

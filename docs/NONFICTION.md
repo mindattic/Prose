@@ -1,39 +1,40 @@
 ---
 codex: SS
 project: StreetSamurai
-code: SOURCE
+code: NONFICTION
 layer: universe
-universe: source
+universe: nonfiction
 status: live
 tier: series
-scope: SOURCE
-triggers: SOURCE, citation, primary source, history vs heritage, nonfiction
-updated: 2026-08-03
+scope: NONFICTION
+triggers: NONFICTION, citation, primary source, history vs heritage, nonfiction
+updated: 2026-08-04
 related: docs/CRAFT.md
 ---
 
-# SOURCE — Universe Craft Rules {#SS-SOURCE}
+# NONFICTION — Universe Craft Rules {#SS-NONFICTION}
 
-> **Scope: SOURCE universe stories only.** Universal prose rules live in **docs/CRAFT.md** (Base
+> **Scope: NONFICTION universe stories only.** Universal prose rules live in **docs/CRAFT.md** (Base
 > layer) — clarity standard, scene architecture, sentence/voice rules all apply here unchanged.
 > This file adds the one thing GLMZ and SCRY don't need: **every factual claim must be true to
-> a verifiable source**, because unlike GLMZ/SCRY, SOURCE's subject is the real world. The
+> a verifiable source**, because unlike GLMZ/SCRY, NONFICTION's subject is the real world. The
 > research method this doctrine enforces is documented in full in
 > [`docs/gospel/README.md`](gospel/README.md) — read that first; this file is the prose-craft
 > translation of it.
 
 ---
 
-## 0. What SOURCE is {#SS-SOURCE-0}
+## 0. What NONFICTION is {#SS-NONFICTION-0}
 
-**SOURCE** (formerly GSPL/"Gospel") is StreetSamurai's citation-grounded **nonfiction** universe —
+**NONFICTION** (formerly SOURCE, renamed 2026-08-04; formerly GSPL/"Gospel" before that) is
+StreetSamurai's citation-grounded **nonfiction** universe —
 home for ANY exhaustively researched, popular narrative nonfiction book where every factual claim
 traces to a real, verifiable source, "something you would use as an APA citation." It is not
 scoped to religious or historical subject matter specifically — that has simply been every book
 produced here so far. **Gospel: History vs. Heritage** (Matthew/Mark/Luke/John) was the first
 production line; **Sons of God, Daughters of Men: A Cultural History of the Nephilim** (NEPH) is
 the second; further Old Testament and cross-cutting topics (the Exodus, David and Solomon's
-kingdom, the Dead Sea Scrolls, the Council of Nicaea) are queued — but a future SOURCE book could
+kingdom, the Dead Sea Scrolls, the Council of Nicaea) are queued — but a future NONFICTION book could
 just as easily be about science, true crime, biography, or any other nonfiction subject. The one
 requirement is the discipline below: every claim cited, every gap in the record stated honestly.
 Every book in this universe shares that same method regardless of subject.
@@ -48,16 +49,16 @@ a scene, an anecdote, a turn of argument, a moment of "wait, actually" — not a
 **Not a debunking project, not an apologetic one.** The purpose (§1 of `docs/gospel/README.md`)
 is to supply the context needed to read scripture accurately — the "George Washington's
 dentures" standard: an unflattering, verifiable fact omitted from the popular version is not
-neutral, it's heritage substituting for history. SOURCE prose should leave a reader of any faith
+neutral, it's heritage substituting for history. NONFICTION prose should leave a reader of any faith
 position, or none, able to trust that what they just read is accurate.
 
 ---
 
-## 1. The Citation-Grounding Rule (SOURCE addition — no equivalent in GLMZ/SCRY)
+## 1. The Citation-Grounding Rule (NONFICTION addition — no equivalent in GLMZ/SCRY)
 
 **Every factual claim in a beat — a date, a name, a place, a document, an artifact, a quoted
 position — must be traceable to a citation in that beat's grounding research doc.** GLMZ and
-SCRY invent their world; SOURCE reports on this one. A beat that asserts a fact with no traceable
+SCRY invent their world; NONFICTION reports on this one. A beat that asserts a fact with no traceable
 source is not evocative prose, it's an error, full stop.
 
 - Never invent a page range, publisher, year, or specific detail that hasn't been verified
@@ -71,12 +72,12 @@ source is not evocative prose, it's an error, full stop.
   — and two different churches invented two opposite endings for him, centuries apart, for two
   entirely different reasons") — use it, don't hide it.
 - A citation-grounding check (mirroring the existing quote-grounding guard, `ss --verify-quote`)
-  should run on SOURCE beats before they're considered done: every specific factual claim traced
+  should run on NONFICTION beats before they're considered done: every specific factual claim traced
   back to the grounding doc's Sources section.
 
 ### 1a. Numbered Notes (the reader-facing citation format)
 
-**Every factual claim in finished SOURCE prose carries an inline number in square brackets** —
+**Every factual claim in finished NONFICTION prose carries an inline number in square brackets** —
 e.g., "... the prefect's actual title, contemporary records confirm [37], was..." — resolved in
 a dedicated **Notes chapter**, not inline parenthetical author-dates and not a per-chapter
 "Notes" beat.
@@ -90,7 +91,7 @@ unless the brackets differ.
 - **Numbering is one flat sequence per book, restarting at each Gospel** — plain `(1)`, `(2)`,
   `(3)`..., assigned once within that book and never renumbered or reused, running straight
   through that book's own chapters in canonical order. Matthew, Mark, Luke, and John are each
-  their own `BookNode` (siblings under the SOURCE series root), published as separate KDP titles
+  their own `BookNode` (siblings under the NONFICTION series root), published as separate KDP titles
   ("Gospel: History vs. Heritage — Matthew" / "— Mark" / "— Luke" / "— John"), so each restarts
   its own numbering at `[1]` rather than continuing a series-wide count — a reader of the Mark
   volume alone has no use for a note sequence that starts in the thousands because Matthew came
@@ -109,7 +110,7 @@ unless the brackets differ.
   Tacitus, Philo), and scripture references alike all get a number and a Notes-chapter entry.
   This supersedes the in-line book:chapter:verse convention used in the *grounding research
   docs* under `docs/gospel/` (those remain APA-style research documents, unchanged) — the
-  numbered-note convention applies specifically to finished, reader-facing SOURCE prose (beats).
+  numbered-note convention applies specifically to finished, reader-facing NONFICTION prose (beats).
 - **Where notes actually live:** a single **Notes chapter** per book — a `ChapterNode` sibling
   to that book's own numbered chapters (e.g. Matthew's `Chapter 1`...`Chapter 28`), positioned
   *last* within that book — holds every note from that Gospel alone as one growing, addressable
@@ -137,7 +138,7 @@ know what a Moabite is, or where Jericho sits, can look it up without the senten
 reading having to carry that weight itself.
 
 - **The Glossary tier is the existing Entity/Character/Place records, not a new structure.**
-  Every named person, place, or people-group mentioned in SOURCE prose must have an entity record
+  Every named person, place, or people-group mentioned in NONFICTION prose must have an entity record
   (per `docs/gospel/entity-catalog.md`'s seeding pattern) whose `Description` is a genuine,
   citation-backed glossary entry — not the terse one-line catalog summary these records start
   with. "Ruth was a Moabite" in prose should be immediately resolvable to a Ruth glossary entry
@@ -159,11 +160,11 @@ reading having to carry that weight itself.
   inline citation; make sure "Jericho" resolves to a Glossary entry that does.
 - **Every mention gets tracked**, not just first appearance — this reuses the existing
   entity-presence system (`BeatEntityPresence`, whole-word + alias scan) already built into the
-  engine for fiction; it applies unchanged to SOURCE. A term or figure that turns out to have no
+  engine for fiction; it applies unchanged to NONFICTION. A term or figure that turns out to have no
   entity record when it's used in prose is a seeding gap, not an acceptable omission — add the
   entity before or immediately after the beat that first needs it.
 
-## 2. The Spectrum, Rendered as Prose (SOURCE addition — the "no verdict" rule)
+## 2. The Spectrum, Rendered as Prose (NONFICTION addition — the "no verdict" rule)
 
 `docs/gospel/README.md` §2 defines the spectrum of scholarship a topic must cover before any
 prose gets written. In prose, that spectrum runs the full range from **Jewish rabbinic and
@@ -171,7 +172,7 @@ traditional scholarship** (readings grounded in Talmudic, midrashic, and confess
 through **Christian confessional scholarship**, through the **mainstream historical-critical
 academy** (the field's actual working center of gravity — named scholars, not anonymous
 "experts"), to the **hardcore empiricist/archaeological pole** that accepts only what physical
-evidence or contemporary documentary record directly attests. A SOURCE beat that stages a
+evidence or contemporary documentary record directly attests. A NONFICTION beat that stages a
 disagreement should let more than one of these positions speak in its own terms, with its own
 real argument — never a strawman stand-in for "faith" opposite a strawman stand-in for "science."
 
@@ -183,7 +184,7 @@ real argument — never a strawman stand-in for "faith" opposite a strawman stan
   built around watching a single claim (an apostle's grave, a governor's fate, a border) refract
   differently depending on who's answering, without resolving which answer is "right."
 
-## 3. Tone (SOURCE addition to CRAFT §0–2)
+## 3. Tone (NONFICTION addition to CRAFT §0–2)
 
 **Curious, not adversarial.** The reader should feel like they're in the room with someone who
 finds this stuff genuinely fascinating and is leveling with them — not someone building a case
@@ -200,17 +201,17 @@ a real citation every time; never rely on innuendo or implication to create the 
 correct, not a punchier invented specific. This universe's entire premise is that it can be
 trusted; that trust is the whole product.
 
-## 3a. Publishing Imprint (SOURCE-specific exception to the global "author = MindAttic" rule)
+## 3a. Publishing Imprint (NONFICTION-specific exception to the global "author = MindAttic" rule)
 
-**Every book-level node under SOURCE (Matthew, Mark, Luke, John) has `Node.Author` set to
+**Every book-level node under NONFICTION (Matthew, Mark, Luke, John) has `Node.Author` set to
 `"Pulpit Press"`**, not `"MindAttic"`. This is a deliberate, explicit exception to this project's
-global export-author rule, scoped to SOURCE only — set once per book node (`UPDATE Nodes SET Author
+global export-author rule, scoped to NONFICTION only — set once per book node (`UPDATE Nodes SET Author
 = 'Pulpit Press' WHERE Slug = '<book-slug>'`) so `ss --export-node` picks it up automatically
 without needing `--author` passed on every export. New chapters added to an existing book inherit
 this via the book node's own `Author` field; a brand-new book node needs the same one-time
 `Author` update when it's created.
 
-## 3b. Levity — the dry-wit register {#SS-SOURCE-3b}
+## 3b. Levity — the dry-wit register {#SS-NONFICTION-3b}
 
 **This material would be a dry report by default, and a dry report is a failed book.** The
 antidote is not jokes; it's *dryness deployed on purpose* — the register of a very well-read
@@ -249,9 +250,9 @@ accurate fact and a well-chosen noun.
   chapter that is continuously clever reads as flippant, which forfeits exactly the trust §3
   exists to build.
 
-## 3c. "Then and Now" — the mandatory closing movement {#SS-SOURCE-3c}
+## 3c. "Then and Now" — the mandatory closing movement {#SS-NONFICTION-3c}
 
-**Every numbered chapter in every SOURCE book ends with a short section headed `Then and Now`** —
+**Every numbered chapter in every NONFICTION book ends with a short section headed `Then and Now`** —
 one to three paragraphs, roughly 150–250 words — observing what has actually changed between
 that chapter's world and the reader's, and what has not. It is the series' signature and its
 single most reader-facing feature: the place where a wall of first-century detail becomes a
@@ -289,10 +290,10 @@ they were" is condescension, and one that only says "people never change" is wal
   text opens with the literal line `Then and Now` on its own, so the export renders it as a
   visible section break rather than another body paragraph.
 
-## 4. Hard Prohibitions (SOURCE)
+## 4. Hard Prohibitions (NONFICTION)
 
 - No invented citations, dates, page ranges, or specifics not traceable to a real source
-  (§1). This is the SOURCE equivalent of SCRY's "death is permanent" — a load-bearing rule with
+  (§1). This is the NONFICTION equivalent of SCRY's "death is permanent" — a load-bearing rule with
   no exceptions.
 - No adjudicating theological truth claims as settled by the prose (§2).
 - No treating a fringe position as equivalent in weight to the mainstream academic
@@ -316,7 +317,7 @@ Title/Subtitle/Author metadata of its own. Each Gospel (Matthew, Mark, Luke, Joh
 own `Subtitle` (`"Matthew"` / `"Mark"` / `"Luke"` / `"John"`) and `Author = "Pulpit Press"` — this
 is the node `ss --export-node` actually targets, one per published KDP title.
 
-A SOURCE book is one `BookNode` (created via `ss --create-book --kind book --parent <series-slug>`)
+A NONFICTION book is one `BookNode` (created via `ss --create-book --kind book --parent <series-slug>`)
 with `ChapterNode` children, one per source chapter (`--kind chapter --parent <book-slug>`),
 **plus two trailing structural chapters**: a **Notes** chapter and a **Glossary** chapter, both
 siblings of the numbered chapters *within that same book*, both positioned with a `SortKey`
@@ -340,8 +341,8 @@ ParentNodeId=@book ORDER BY SortKey` — Notes and Glossary must be the last two
 **Set `NodeCode` on every BookNode as soon as it's created — this controls where `--export-node`
 writes its files.** `ExportPathResolver` (in `StreetSamurai.Core/Services/ExportPathResolver.cs`)
 publishes flat under `<universe-export-dir>/<NodeCode>/<NodeCode> V<n>.docx` when `NodeCode` is
-set (e.g. `.../SOURCE/MATTHEW/MATTHEW V17.docx`), matching the pre-made cover-art folders
-(`MATTHEW/`, `MARK/`, `LUKE/`, `JOHN/` under `R:\Desktop\EPub\MindAttic\SOURCE\`). Without a
+set (e.g. `.../NONFICTION/MATTHEW/MATTHEW V17.docx`), matching the pre-made cover-art folders
+(`MATTHEW/`, `MARK/`, `LUKE/`, `JOHN/` under `R:\Desktop\EPub\MindAttic\NONFICTION\`). Without a
 `NodeCode`, it falls back to a legacy title-derived, series-nested path — and since all four
 Gospel BookNodes share the identical `Title` ("Gospel: History vs. Heritage"), that legacy path
 nests every book's export under one shared, colliding `Gospel History vs. Heritage/` folder with
@@ -416,7 +417,7 @@ that tag is what lets a future beat correctly characterize whose reading a citat
 ### 5f. Chapter titles
 
 **Every chapter title is evocative, not descriptive** (series-wide standard, set 2026-07-28 — all
-89 chapters across the four Gospels were retitled to it in one pass). A SOURCE table of contents is
+89 chapters across the four Gospels were retitled to it in one pass). A NONFICTION table of contents is
 the first thing a browsing reader sees, and a contents page reading "The Temptation, the First
 Disciples, and the Capernaum Ministry" advertises a reference work, which is the one thing §0 says
 this is not. Mark's chapters 4–16 — written later than the rest and to a better instinct — set the
@@ -541,8 +542,9 @@ query the disabled set on purpose) to see the true, currently-effective content.
 ### 5g3. Harden the `$maxNoteNumber` derivation query before reusing any prior chapter's `.ps1` as a template
 
 The per-chapter import scripts (the historical Gospel-production scripts used the
-`scripts/gspl_<book>_ch*.ps1` naming pattern; new SOURCE-universe books should use
-`scripts/source_<book>_ch*.ps1`) derive the next Note number with `SELECT MAX(CAST(LEFT(b.Text, CHARINDEX('
+`scripts/gspl_<book>_ch*.ps1` naming pattern; the 1381 book used the transitional
+`scripts/source_<book>_ch*.ps1` pattern; new NONFICTION-universe books should use
+`scripts/nonfiction_<book>_ch*.ps1`) derive the next Note number with `SELECT MAX(CAST(LEFT(b.Text, CHARINDEX('
 ',b.Text)-1) AS INT)) FROM BeatNodes bn JOIN Beats b ON bn.BeatId=b.Id WHERE bn.NodeId=@notes`.
 This crashes with "Invalid length parameter passed to the LEFT or SUBSTRING function" if ANY row
 under that Notes node has no space character in its text at all (e.g. a stray non-numbered test

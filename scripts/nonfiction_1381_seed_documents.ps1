@@ -20,7 +20,7 @@ function New-SSEntity {
     Write-Host "  ok    $EntityType/$Slug"
 }
 
-$sourceUniverseId = Invoke-SSScalar $conn "SELECT Id FROM Universe WHERE Name='SOURCE'"
+$sourceUniverseId = Invoke-SSScalar $conn "SELECT Id FROM Universe WHERE Name='NONFICTION'"
 
 $docs = @(
     @{ Name = 'The Anonimalle Chronicle'; Slug = 'anonimalle-chronicle'; Description = "A Middle-English/Anglo-Norman chronicle, one of the two most detailed contemporary narrative sources for the 1381 revolt (the other being Henry Knighton's Chronicon). It is the source for the election of Wat Tyler at Maidstone on 7 June 1381, and for the fullest surviving account of the Smithfield meeting's dialogue between Tyler and Richard II, including Tyler's demands for a charter, the abolition of the episcopal hierarchy, redistribution of church wealth, and a single law of the land. Modern scholarship (per R.B. Dobson's sourcebook) treats it as a secondary compilation rather than an eyewitness account in the strictest sense, assembled close to the events but not a verbatim transcript." },

@@ -16,7 +16,7 @@ related: docs/CRAFT.md
 
 > **Scope: HORROR universe stories only.** Universal prose rules live in **docs/CRAFT.md** (Base
 > layer) — clarity standard, scene architecture, sentence/voice rules all apply here unchanged.
-> This file adds what GLMZ/SCRY/SOURCE don't need: the specific discipline of **sustained,
+> This file adds what GLMZ/SCRY/NONFICTION don't need: the specific discipline of **sustained,
 > unresolved dread** — how to escalate wrongness without collapsing it into either a monster
 > manual or a tidy answer.
 

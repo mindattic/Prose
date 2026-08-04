@@ -4,16 +4,16 @@ project: StreetSamurai
 layer: planning
 code: 1381
 title: "1381: The Peasants' Revolt"
-universe: SOURCE
+universe: NONFICTION
 updated: 2026-08-02
 ---
 
 # Story Brief: 1381 — The Peasants' Revolt {#SS-BRIEF-1381}
 
-> **Mandatory before creating a node bible or any DB records** (per `docs/SOURCE.md` and the New
-> Story Workflow). Universe: SOURCE (`dbo.Universe` slug `source`), same schema/pipeline as
+> **Mandatory before creating a node bible or any DB records** (per `docs/NONFICTION.md` and the New
+> Story Workflow). Universe: NONFICTION (`dbo.Universe` slug `nonfiction` (was `source`, was `gspl`)), same schema/pipeline as
 > GLMZ/SCRY, same citation-grounding discipline as the Gospel books and NEPH. Third production
-> line in SOURCE, first fully secular-historical (no confessional/theological spectrum) subject.
+> line in NONFICTION, first fully secular-historical (no confessional/theological spectrum) subject.
 > Per SS-A45 / the NEPH precedent: **no permanent `docs/1381/` research folder** — research is
 > WebSearch-verified as each claim is drafted, and lands directly in Entity `Description` fields
 > and Notes-chapter beats, not in a hand-committed markdown pile.
@@ -22,7 +22,7 @@ updated: 2026-08-02
 
 ## 1. Series Position {#SS-BRIEF-1381-§1}
 
-**Universe:** SOURCE. **Story type:** Standalone SOURCE book, third production line after the
+**Universe:** NONFICTION. **Story type:** Standalone NONFICTION book, third production line after the
 Gospel tetralogy (Matthew/Mark/Luke/John) and NEPH (*Sons of God, Daughters of Men*). Each of
 those was a text/tradition-vs-history examination of a religious subject; this book applies the
 identical citation-grounding method to a **secular historical event**: the English Rising of
@@ -39,7 +39,7 @@ with suppression running into 1382); and its long-tail legacy and historiography
 
 ## 2. Mission Contribution {#SS-BRIEF-1381-§2}
 
-Which part of SOURCE's mission does this book advance?
+Which part of NONFICTION's mission does this book advance?
 
 - **[x] The "George Washington's dentures" standard, applied to a national founding myth rather
   than a religious one.** "Peasants' Revolt" is itself a 19th-century coinage (see §5, Naming) not
@@ -47,8 +47,8 @@ Which part of SOURCE's mission does this book advance?
   spontaneous violence) is heritage; the record shows organized urban and rural artisans,
   named leadership, written demands, and selective, targeted violence. Making that gap explicit,
   chapter by chapter, is this book's version of the Gospel books' historicity work.
-- **[x] Spectrum-of-scholarship as historiography, not confessional camps.** SOURCE's usual
-  Jewish/Christian-confessional/mainstream-critical/empiricist spectrum (`docs/SOURCE.md` §2)
+- **[x] Spectrum-of-scholarship as historiography, not confessional camps.** NONFICTION's usual
+  Jewish/Christian-confessional/mainstream-critical/empiricist spectrum (`docs/NONFICTION.md` §2)
   doesn't apply to secular political history. The equivalent spectrum here runs **Whig/liberal
   constitutional readings** (the revolt as proto-democratic milestone) through **Marxist social
   history** (Hilton's *Bond Men Made Free* — class conflict as the primary lens) to the
@@ -63,7 +63,7 @@ Which part of SOURCE's mission does this book advance?
 
 ## 3. Prerequisites {#SS-BRIEF-1381-§3}
 
-None. Fully standalone; no GLMZ/SCRY/other-SOURCE content required.
+None. Fully standalone; no GLMZ/SCRY/other-NONFICTION content required.
 
 ---
 
@@ -122,7 +122,7 @@ the largest crowd London has ever seen — and within a month the whole thing is
 nothing the rebels won survives on paper. The book's spine is the gap between how fast it moved
 and how little of it lasted in law, set against how much it actually changed underneath the law.
 
-**Register:** Same as the rest of SOURCE — curious, not adversarial; dry wit per `docs/SOURCE.md`
+**Register:** Same as the rest of NONFICTION — curious, not adversarial; dry wit per `docs/NONFICTION.md`
 §3b (rate-limited, never at the crown's, the rebels', or the dead's expense); "Then and Now"
 closer per chapter (§3c); no invented specifics; genuine open questions (Jack Straw's identity,
 the Bampton first-name confusion, whether Ball's Blackheath sermon text is contemporary or later
@@ -135,9 +135,9 @@ dialogue, interiority, or sensory detail beyond what a chronicle or record actua
 a chronicle *does* record direct speech (Tyler's Smithfield demands per the Anonimalle Chronicle,
 Ball's "When Adam delved" line), it is quoted and sourced as reported speech, not staged as scene.
 
-**What would be duplicated if this book didn't exist:** nothing — no other SOURCE work examines
+**What would be duplicated if this book didn't exist:** nothing — no other NONFICTION work examines
 secular English constitutional/social history; this is the template for future non-religious
-SOURCE subjects.
+NONFICTION subjects.
 
 ---
 
@@ -219,8 +219,8 @@ the Great Revolt / Peasants' Revolt naming dispute.
 
 Seed via `create_character`/`create_place`/entity MCP or `ss --add-character --dir` /
 `ss --add-place --dir`, checking `Entities` first (confirmed clean — no 1381-relevant entities
-exist yet in SOURCE, per DB query 2026-08-02). Tag each figure's Description with citation-backed
-detail per `docs/SOURCE.md` §1b — the Description IS the Glossary-tier content.
+exist yet in NONFICTION, per DB query 2026-08-02). Tag each figure's Description with citation-backed
+detail per `docs/NONFICTION.md` §1b — the Description IS the Glossary-tier content.
 
 ---
 
@@ -236,7 +236,7 @@ detail per `docs/SOURCE.md` §1b — the Description IS the Glossary-tier conten
 - [x] Chapter prose written, one beat per checkable claim cluster, Then and Now closers (15/15)
 - [x] Notes chapter populated, archival-complete citations (55 notes, verified 1-55 no gaps)
 - [x] Glossary chapter populated (50 entries, every seeded entity, all with "Cited in:")
-- [x] Export + QA — exported 2026-08-02 to R:\Desktop\EPub\MindAttic\SOURCE\1381\1381 V1.{docx,
+- [x] Export + QA — exported 2026-08-02 to R:\Desktop\EPub\MindAttic\NONFICTION\1381\1381 V1.{docx,
       epub,pdf,txt} (~22,350 words); verified all chapter headers, Then-and-Now count, trailing
       structure, and note sequence in the exported .txt
 

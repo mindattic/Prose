@@ -93,7 +93,7 @@ public static class UniverseBootstrap
         {
             "glmz" => StreetSamurai.Core.Data.Entities.Universe.GlmzId,
             "scry" or "fantasy-steampunk" or "fantasy" or "steampunk" => StreetSamurai.Core.Data.Entities.Universe.FantasyId,
-            "source" or "gspl" => StreetSamurai.Core.Data.Entities.Universe.SourceId,
+            "nonfiction" or "source" or "gspl" => StreetSamurai.Core.Data.Entities.Universe.NonfictionId,
             _ => null,
         };
     }
