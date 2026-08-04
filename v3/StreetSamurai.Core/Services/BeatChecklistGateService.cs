@@ -110,38 +110,44 @@ public sealed class BeatChecklistGateService(
                 continue;
             }
 
-            var verdict = await EvaluateBeatAsync(beat.Id, beat.Number, beat.Text, donts, moves, ct);
+            var (verdict, parseFailed) = await EvaluateBeatAsync(beat.Id, beat.Number, beat.Text, donts, moves, ct);
             evaluated++;
 
-            var json = JsonSerializer.Serialize(new
+            // A truncated/non-JSON response is a degraded placeholder for THIS run only — caching
+            // it under the current text hash would make the "will re-evaluate next run" promise a
+            // lie, since an unchanged beat would then hit the cache and never be re-asked.
+            if (!parseFailed)
             {
-                dontViolations = verdict.DontViolations,
-                delightMovesLanded = verdict.MovesLanded,
-                beatJob = verdict.BeatJob,
-                wordCount = verdict.WordCount,
-            });
-            if (cachedRows.TryGetValue(beat.Id, out var existing))
-            {
-                existing.BeatTextHash = textHash;
-                existing.RuleSetVersion = ruleSetVersion;
-                existing.ResultsJson = json;
-                existing.PassFraction = verdict.PassFraction;
-                existing.EvaluatedAt = DateTime.UtcNow;
-            }
-            else
-            {
-                db.BeatChecklistResults.Add(new BeatChecklistResult
+                var json = JsonSerializer.Serialize(new
                 {
-                    Id = Guid.CreateVersion7(),
-                    BeatId = beat.Id,
-                    NodeId = nodeId,
-                    BeatTextHash = textHash,
-                    RuleSetVersion = ruleSetVersion,
-                    ResultsJson = json,
-                    PassFraction = verdict.PassFraction,
+                    dontViolations = verdict.DontViolations,
+                    delightMovesLanded = verdict.MovesLanded,
+                    beatJob = verdict.BeatJob,
+                    wordCount = verdict.WordCount,
                 });
+                if (cachedRows.TryGetValue(beat.Id, out var existing))
+                {
+                    existing.BeatTextHash = textHash;
+                    existing.RuleSetVersion = ruleSetVersion;
+                    existing.ResultsJson = json;
+                    existing.PassFraction = verdict.PassFraction;
+                    existing.EvaluatedAt = DateTime.UtcNow;
+                }
+                else
+                {
+                    db.BeatChecklistResults.Add(new BeatChecklistResult
+                    {
+                        Id = Guid.CreateVersion7(),
+                        BeatId = beat.Id,
+                        NodeId = nodeId,
+                        BeatTextHash = textHash,
+                        RuleSetVersion = ruleSetVersion,
+                        ResultsJson = json,
+                        PassFraction = verdict.PassFraction,
+                    });
+                }
+                await db.SaveChangesAsync(ct);
             }
-            await db.SaveChangesAsync(ct);
             verdicts.Add(verdict);
         }
 
@@ -251,7 +257,10 @@ public sealed class BeatChecklistGateService(
 
     // ── per-beat evaluation ────────────────────────────────────────────────────────
 
-    private async Task<BeatVerdict> EvaluateBeatAsync(
+    /// <summary>Returns the verdict plus whether the LLM response failed to parse (e.g. truncated
+    /// JSON). Callers must NOT persist a failed-parse verdict to the cache — it is a degraded
+    /// all-pass placeholder for this run only, not a real evaluation of the beat.</summary>
+    private async Task<(BeatVerdict Verdict, bool ParseFailed)> EvaluateBeatAsync(
         Guid beatId, int beatNumber, string text,
         List<(string Key, string Title, string Desc)> donts, List<DelightMove> moves, CancellationToken ct)
     {
@@ -279,8 +288,12 @@ public sealed class BeatChecklistGateService(
              "movesLanded":["SS-DELIGHT-N"]}
             """);
 
+        // 8 DON'Ts + up to 13 possible movesLanded entries, each dontViolation carrying a quoted
+        // evidence string — worst case (a beat that trips most checks) genuinely exceeds 800
+        // tokens of JSON and gets cut off mid-string/array, not just under rare API flakiness.
+        // 2400 gives real headroom without meaningfully changing per-beat cost on a Haiku-tier model.
         var raw = await llm.GenerateAsync(sb.ToString(), $"BEAT #{beatNumber}:\n\n{text}",
-            temperature: 0.0, maxTokens: 800, model: settings.ComprehensionProbeModel, ct: ct);
+            temperature: 0.0, maxTokens: 2400, model: settings.ComprehensionProbeModel, ct: ct);
         raw = raw.Trim();
         if (raw.StartsWith("```"))
             raw = Regex.Replace(Regex.Replace(raw, @"^```(json)?\s*", ""), @"\s*```$", "");
@@ -289,6 +302,7 @@ public sealed class BeatChecklistGateService(
         var violations = new List<DontViolation>();
         var landed = new List<string>();
         var job = "other";
+        var parseFailed = false;
         try
         {
             using var doc = JsonDocument.Parse(raw);
@@ -308,14 +322,15 @@ public sealed class BeatChecklistGateService(
         }
         catch (JsonException)
         {
-            log.LogWarning("Checklist beat #{Number}: non-JSON response — treated as all-pass, will re-evaluate next run.", beatNumber);
+            parseFailed = true;
+            log.LogWarning("Checklist beat #{Number}: non-JSON response (likely truncated) — treated as all-pass for this run, NOT cached, will re-evaluate next run.", beatNumber);
         }
 
         var totalChecks = donts.Count + 1; // DON'Ts + the "≥1 applicable move" DO
         var passed = donts.Count - violations.Count
                      + (landed.Count >= 1 || wordCount < DelightExemptWordCount ? 1 : 0);
-        return new BeatVerdict(beatId, beatNumber, Math.Round((double)passed / totalChecks, 4), false,
-            violations, landed, job, wordCount);
+        return (new BeatVerdict(beatId, beatNumber, Math.Round((double)passed / totalChecks, 4), false,
+            violations, landed, job, wordCount), parseFailed);
     }
 
     private BeatVerdict FromRow(BeatChecklistResult row, int beatNumber, bool fromCacheFlag)
