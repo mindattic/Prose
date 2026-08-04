@@ -1,0 +1,41 @@
+{
+  "type": "character",
+  "name": "Priya Standish",
+  "aliases": ["G7PRS"],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Corroborating ham — retired schoolteacher, longtime net regular",
+  "age": 68,
+  "status": "alive",
+  "location": "Portsmouth, England",
+  "description": "Retired secondary-school science teacher, licensed thirty years, callsign G7PRS. Runs a modest but reliable station from a terraced house near the harbor and keeps a standing weekly schedule with Gordan on 20 meters that neither of them has missed in four years — until one week Priya logs the contact and Gordan has no memory of it.",
+  "psychology": {
+    "core_fears": ["Losing the small, dependable rituals that structure her retirement"],
+    "core_desires": ["Reliability — a schedule kept is a promise kept"],
+    "coping_mechanisms": ["Treats any irregularity as a technical puzzle to be solved together, not alone"],
+    "blind_spots": ["Assumes any oddness on Gordan's end is propagation or fatigue, not something wrong with Gordan himself"],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, plain, teacherly — explains things without condescension",
+    "cadence": "Unhurried, comfortable with long pauses on air",
+    "verbal_tics": ["Signs off with the same phrase every time, unfailingly"],
+    "example_lines": ["You were right on schedule, love — same as always. Why would I think anything of it?"],
+    "avoidances": [],
+    "subtext": "Her steadiness is what makes her corroboration devastating when it finally breaks Gordan's certainty.",
+    "under_pressure": "Gets gentler, not more anxious — tries to talk Gordan down with routine.",
+    "intimacy_register": "Genuinely fond of Gordan; treats him like a favorite former student."
+  },
+  "narration_voice": "",
+  "affiliation": "Independent",
+  "daily_life": "Retired; gardens, keeps her weekly radio schedule religiously.",
+  "relationships": [
+    {"name": "Gordan Rosniak", "type": "friend", "description": "Standing weekly HF schedule, four years running.", "status": "active"}
+  ],
+  "story_hooks": [
+    "Confirms a scheduled contact with 'Gordan' that Gordan has no memory of making",
+    "In the closing beat, reports thrilled to have 'finally worked' Gordan on a night Gordan never touched the rig"
+  ],
+  "tags": ["horror", "corroborating-witness", "ham-radio", "qrt"]
+}

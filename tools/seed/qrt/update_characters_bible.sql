@@ -1,0 +1,19 @@
+﻿SET QUOTED_IDENTIFIER ON;
+GO
+DELETE FROM NodeBibleSections WHERE NodeId='019FCA42-10A2-7AFF-9AA9-8E796D96B1E0' AND SectionType='Characters';
+INSERT INTO NodeBibleSections (Id, NodeId, SectionType, Content, UpdatedAt) VALUES ('35a7e546-25ef-4f54-9281-a6b3daac8abb', '019FCA42-10A2-7AFF-9AA9-8E796D96B1E0', 'Characters', N'**Gordan Rosniak (KJ7ROS) â€” POV, sole narrator throughout.** General-class amateur radio operator, 47, remote IT contractor, lives at the edge of Aldergrove Flats, WA, with his husband Aimes and their two adopted sons (twins, 8). Full profile in his Character record (Psychology/Speech* fields) â€” DCM loads this automatically as the pinned dominant register whenever he is on page (SS-A46). His technical rigor is both what almost saves him and what blinds him: he tests the layer his expertise prepares him to test (the RF chain) and never suspects the one channel he''s never thought to guard â€” his own subvocalized troubleshooting, muttered at a dead mic out of habit, in the one room of a full house that''s still entirely his.
+
+**Aimes Rosniak-Bishop** â€” Gordan''s husband, pediatric nurse. Warm, competent, genuinely doesn''t understand the hobby and has made peace with that. Present as household texture throughout, not a corroborating witness â€” he never hears the phenomenon himself. His function is to make Gordan''s isolation spatial (the shack) rather than domestic, which sharpens the horror: even surrounded by people who love him, Gordan still can''t say the real fear out loud.
+
+**Min-jun and Ji-ho (the boys)** â€” twins, 8, adopted from South Korea as infants. Background presence only; no individual dialogue or POV. Use lightly â€” a cracked bedroom door, bedtime routine â€” to establish why the shack is Gordan''s one private hour, not evidence that he''s alone.
+
+**Priya Standish (G7PRS)** â€” Portsmouth, England. Retired schoolteacher, standing weekly HF schedule with Gordan, four years running. Warm, steady, unhurried. Her corroboration in Ch2 (a contact she logged that Gordan has no memory of) is the first hard evidence. Her line in the closing beat of Ch5 ("finally worked you last week") is the book''s last word â€” deliver it in her established warm, unhurried register, not dramatized.
+
+**Owen Bui (VE7OWB)** â€” Nanaimo, BC. Audio engineer, licensed 6 years, analyzes Gordan''s session recordings professionally. Provides the technical vocabulary that makes the Ch2 tape anomaly concrete and credible (noise floor wrong, "too clean," "like the room isn''t there"). Has a genuine personal stake, not just an information-delivery role (added in the second Opus polish pass, per the StoryScope moderate finding): his profession rests on "the file is what happened," and the QRT anomaly threatens that premise directly â€” in Ch2 he admits to measuring his own room''s noise floor three times out of quiet panic; in Ch4 he asks Gordan for a private password (a word never said aloud) so he can verify who he''s actually talking to. In Ch4 he independently reports a private detail Gordan never transmitted â€” delivered as his own confusion/unease, not as exposition about what it means.
+
+**Sal Ferraro (W2SGF)** â€” Vineland, NJ. Old-timer, 52 years licensed, reflexively skeptical ("I don''t go in for that"). His independent corroboration in Ch4 â€” a different private detail, same category â€” is what rules out "one unreliable witness" and lands the pivot. His reluctance to believe is precisely why his confirmation carries weight; don''t soften his skepticism to make him more sympathetic sooner.
+
+**The Overlap (DB stub only â€” NEVER named or referenced by this label on the page).** No POV scenes, no dialogue that isn''t identical to something Gordan himself would say, no confirmed motive, origin, or mechanism. See Narrative Locks below and `docs/HORROR.md` Â§1/Â§3.
+', SYSUTCDATETIME());
+GO
+

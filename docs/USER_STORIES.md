@@ -177,6 +177,18 @@ updated: 2026-06-25
   universe-neutral dark mode. *(verified by removal of the console-bg/sacred-geometry/tv-static JS +
   the cyberspace DOM divs across `App.razor`, `Home.razor`, `CategoryBoard.razor`, `MainLayout.razor`;
   full-solution build green; the dark `.app-shell` base theme unchanged.)*
+- **SS-US-U8 ✅** As the author, a 4th universe (**HORROR**, contained-horror fiction, anthology-
+  shaped — no shared continuity requirement across books) is seeded and craft/world-doctrine docs
+  (`docs/HORROR.md`, `docs/universes/HORROR.md`) are authored and synced to `MarkdownFiles`.
+  *(verified by `add_universe_horror_20260803.sql`; `ss --universe list` showing `horror` active;
+  `codex doctor` PASS after digest.)*
+- **SS-US-U9 ✅** As the author, HORROR's flagship standalone **QRT** (5 chapters / 22 beats, an
+  amateur-radio identity-horror piece) ships end-to-end: brief → entities (6, incl. a grouped
+  family entity) → BookNode + ChapterNodes → hand-authored `NodeBibleSections` → structural
+  blueprint (retrofit) → prose → DCM backfill → logic sweep (1 BLOCKER + 1 MODERATE found and
+  fixed) → Reader-Proxy QA (comprehension 0 defects, craft checklist 0 findings) → export.
+  *(verified by `ss --storyscope-audit` CLEAN; `ss --reader-qa` 5/5 chapters clean;
+  `ss --craft-checklist` 0 findings; exported artifacts at `QRT V1.{docx,epub,pdf,txt}`.)*
 
 ## Epic H — GLMZ Books in progress
 

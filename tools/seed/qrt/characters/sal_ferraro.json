@@ -1,0 +1,40 @@
+{
+  "type": "character",
+  "name": "Sal Ferraro",
+  "aliases": ["W2SGF"],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corroborating ham — old-timer, skeptic",
+  "age": 74,
+  "status": "alive",
+  "location": "Vineland, New Jersey",
+  "description": "Fifty-two years licensed, callsign W2SGF, and proud of never once needing to log a contact he couldn't vouch for personally. Gruff, plainspoken, allergic to anything that sounds like nonsense — which is exactly why his corroboration lands harder than anyone else's when he gives it about Gordan.",
+  "psychology": {
+    "core_fears": ["Being made a fool of, or making a fool of a friend by indulging a story that isn't true"],
+    "core_desires": ["To be the reliable, no-nonsense voice in any room"],
+    "coping_mechanisms": ["Argues against a thing until the evidence leaves him no room left to argue"],
+    "blind_spots": ["His skepticism makes him slow to say what he heard, which delays the corroboration Dara needs"],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, blunt, old-school ham lingo",
+    "cadence": "Short sentences, long pauses before he concedes a point",
+    "verbal_tics": ["'I don't go in for that' as a stock deflection, right up until he does"],
+    "example_lines": ["I don't go in for that. But I heard what I heard, and I've been doing this since Nixon."],
+    "avoidances": ["Won't speculate past what he personally witnessed"],
+    "subtext": "His reluctance to believe is the thing that makes his eventual confirmation unimpeachable.",
+    "under_pressure": "Gets quieter and more literal, sticks strictly to what he can personally attest.",
+    "intimacy_register": "Doesn't do warmth out loud, but shows up for the people he calls friends."
+  },
+  "narration_voice": "",
+  "affiliation": "Independent",
+  "daily_life": "Retired machinist; runs a modest station most evenings out of habit as much as hobby.",
+  "relationships": [
+    {"name": "Gordan Rosniak", "type": "friend", "description": "Occasional contact; the second, independent corroboration of the impossible conversation.", "status": "active"}
+  ],
+  "story_hooks": [
+    "Independently corroborates a detail Owen also reports, closing off the possibility of one unreliable witness"
+  ],
+  "tags": ["horror", "corroborating-witness", "ham-radio", "qrt"]
+}

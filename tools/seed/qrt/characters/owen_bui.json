@@ -1,0 +1,41 @@
+{
+  "type": "character",
+  "name": "Owen Bui",
+  "aliases": ["VE7OWB"],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corroborating ham — audio engineer, technical ally",
+  "age": 31,
+  "status": "alive",
+  "location": "Nanaimo, British Columbia",
+  "description": "Vietnamese-Welsh audio engineer, licensed six years, callsign VE7OWB. Mixes for a small recording studio by trade and got into ham radio for the same reason he got into analog tape — he likes signals with texture. Gordan sends him recordings to analyze because he can hear things in a waveform that Gordan can only measure.",
+  "psychology": {
+    "core_fears": ["Being wrong about something he's staked his professional ear on"],
+    "core_desires": ["To find the technical explanation before anyone reaches for a non-technical one"],
+    "coping_mechanisms": ["Runs the audio through every analysis tool he owns before he'll say a word"],
+    "blind_spots": ["Trusts his own recall of a conversation as much as any recording, which is exactly the gap the story exploits"],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "Studio-technical — talks in noise floors, transients, spectral analysis",
+    "cadence": "Fast, enthusiastic when the puzzle is purely technical; slows down and goes quiet when it stops being one",
+    "verbal_tics": ["Describes sounds in visual/textural terms — 'grainy,' 'clean,' 'too clean'"],
+    "example_lines": ["The noise floor's wrong, Gordan. It's too quiet under your voice. Like the room isn't there."],
+    "avoidances": [],
+    "subtext": "His professional confidence is a shield he's not aware is thin.",
+    "under_pressure": "Reaches for more data, more passes through the analyzer, rather than a conclusion.",
+    "intimacy_register": "Genuine, low-key protective of Gordan once he realizes something is actually wrong."
+  },
+  "narration_voice": "",
+  "affiliation": "Independent",
+  "daily_life": "Studio audio engineer; ham radio and tape collecting as parallel hobbies.",
+  "relationships": [
+    {"name": "Gordan Rosniak", "type": "friend", "description": "Analyzes Gordan's session recordings for him.", "status": "active"}
+  ],
+  "story_hooks": [
+    "Finds the technical anomaly in the recordings (silence where a transmission should register)",
+    "Later repeats a private detail Gordan only ever thought at his dead mic, never transmitted — the Act 4 turn"
+  ],
+  "tags": ["horror", "corroborating-witness", "ham-radio", "qrt"]
+}

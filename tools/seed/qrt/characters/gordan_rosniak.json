@@ -1,0 +1,75 @@
+{
+  "id": "019fca41b018700b8c99d8cc397c7df8",
+  "type": "character",
+  "name": "Gordan Rosniak",
+  "aliases": ["KJ7ROS"],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Protagonist / POV — amateur radio operator, General class",
+  "age": 47,
+  "status": "alive",
+  "location": "Aldergrove Flats, Washington (fictional unincorporated community)",
+  "description": "Gordan Rosniak has held a General-class amateur radio license for eleven years, callsign KJ7ROS. By day he does remote systems administration for a logistics company, work that pays for a house at the edge of Aldergrove Flats with enough clear sky and clear silence for a real antenna farm. By night, after the house has gone quiet, he works HF — nets, ragchews, the occasional contest — with the same discipline he brings to a server migration: logged, timestamped, verifiable. Third-generation Polish-American, raised on a grandfather's stories about a first radio smuggled past a border, he found in Morse and in Linux both a language that didn't need translating for anyone. He shares the house with his husband, Aimes, and their two adopted sons — Min-jun and Ji-ho, twins, eight years old, home from South Korea as infants — and the shack, a converted mudroom off the kitchen, is the one room in a loud, full house that stays entirely his.",
+  "psychology": {
+    "core_fears": [
+      "That his own memory and senses can no longer be trusted",
+      "Being disbelieved — having a true, verifiable thing dismissed as fatigue or error",
+      "Discovering that the one private hour a day he still claims for himself has never actually been private"
+    ],
+    "core_desires": [
+      "Precision — a fact that can be checked and holds",
+      "Mastery of his instrument, total and provable",
+      "To be taken at his word by people who actually know what his word is worth"
+    ],
+    "coping_mechanisms": [
+      "Documents everything — logs, timestamps, signal reports — the instant something feels wrong",
+      "Retreats into procedure: if he can name the test, he can survive the result",
+      "Talks himself through troubleshooting out loud, a habit from years of working alone before Aimes, never fully retired"
+    ],
+    "blind_spots": [
+      "Assumes any threat to his identity must be technical — something reproducible in the RF chain — because that's the only kind of threat his expertise prepares him to fight",
+      "Never considers that his own unbroadcast interior monologue, muttered at a dead mic out of habit, is itself data",
+      "Assumes the shack is private because the door is closed, not because anyone actually agreed to leave him alone in it"
+    ],
+    "secret": "He narrates his own troubleshooting to himself constantly, even mic-off, even alone in the room — an old habit he's never mentioned to Aimes or anyone else, because saying it out loud makes it sound like talking to himself. It is the one channel he never thinks to suspect."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, technical, radio-operator's economy of words. Reaches for Q-code shorthand even in interior thought (QSL, QRM, QRT) because it says exactly what he means and nothing more.",
+    "cadence": "Clipped and procedural under normal conditions; sentences get longer and more technical, not shorter, when he's frightened — he explains his way toward calm.",
+    "verbal_tics": [
+      "Uses Q-codes conversationally, sometimes to strangers who don't know them",
+      "States timestamps and signal reports the way other people state feelings",
+      "Trails into diagnostic detail mid-sentence when anxious, as if solving the sentence will solve the fear"
+    ],
+    "example_lines": [
+      "Copy that — five-nine, but log it anyway, five-nine doesn't mean five-nine forever.",
+      "I'm not asking you to believe me. I'm asking you to check the timestamp."
+    ],
+    "avoidances": ["Downplays to Aimes how much the shack has started to unsettle him", "Deflects direct questions about the hobby's real cost into equipment talk"],
+    "subtext": "Every claim of technical confidence is also a request to be believed about something he can't yet prove.",
+    "under_pressure": "Gets more procedural, not less — narrates his own next steps aloud, runs a test before he'll admit to a feeling.",
+    "intimacy_register": "Warmth surfaces easily with Aimes and the boys; on the air it surfaces only in the unguarded middle of a long late-night contact."
+  },
+  "narration_voice": "Third-person limited (close/deep POV), present-tense-adjacent, technically fluent. Dread is filtered through procedure — he reaches for a test, a log entry, a signal report before he reaches for a feeling, and the gap between the two is where the horror lives.",
+  "affiliation": "Independent — no club net beyond informal regulars",
+  "daily_life": "Remote IT contractor by day; evenings on HF from a home shack with a tower he put up himself, once the boys are down and Aimes is reading.",
+  "relationships": [
+    {"name": "Aimes Rosniak-Bishop", "type": "spouse", "description": "Husband; pediatric nurse; keeps the household running around Gordan's odd radio hours without ever quite understanding the hobby.", "status": "married"},
+    {"name": "Priya Standish", "type": "friend", "description": "Longtime net regular and the first person Gordan tells about the logbook gaps.", "status": "active"},
+    {"name": "Owen Bui", "type": "friend", "description": "Younger ham with an audio-engineering background who helps Gordan analyze the recordings.", "status": "active"},
+    {"name": "Sal Ferraro", "type": "friend", "description": "Old-timer contact, gruff and skeptical, whose corroboration Gordan trusts precisely because he doesn't want to believe him.", "status": "active"}
+  ],
+  "story_hooks": [
+    "Discovers logbook entries in his own hand for contacts he doesn't remember making",
+    "Runs controlled baiting experiments against his own signal to test whether the phenomenon can be provoked and caught"
+  ],
+  "physical_description": {
+    "heritage": "Polish-American",
+    "build": "Lean, wiry, keeps odd hours",
+    "hair_color": "Grey-brown, close-cropped",
+    "eye_color": "Grey",
+    "clothing_style": "Practical — flannel, fingerless gloves for cold-shack winters"
+  },
+  "tags": ["horror", "protagonist", "pov", "ham-radio", "qrt"]
+}

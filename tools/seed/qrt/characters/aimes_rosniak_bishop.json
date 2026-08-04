@@ -1,0 +1,41 @@
+{
+  "id": "019fca531d3e78009d7027d8dae15f28",
+  "type": "character",
+  "name": "Aimes Rosniak-Bishop",
+  "aliases": [],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Gordan's husband — pediatric nurse",
+  "age": 44,
+  "status": "alive",
+  "location": "Aldergrove Flats, Washington (fictional unincorporated community)",
+  "description": "Pediatric nurse at the regional hospital forty minutes away, on his feet most shifts, home to a full house he runs with brisk, practiced calm. Married to Gordan eleven years, father to their two sons since each boy came home from South Korea as an infant. He has never once complained about the antenna tower in the yard or the hours Gordan keeps out in the shack after the boys are down, mostly because he genuinely doesn't understand ham radio and has made peace with not needing to.",
+  "psychology": {
+    "core_fears": ["Something happening to one of the boys, or to Gordan, that he can't fix with competence and presence"],
+    "core_desires": ["A calm, functioning household; to be the person people can hand a problem to"],
+    "coping_mechanisms": ["Triage — sorts a worry into urgent or not-urgent within seconds, out of professional habit"],
+    "blind_spots": ["Reads Gordan's growing withdrawal in Chapter 5 as stress or depression, not as fear of something specific"],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, direct, a nurse's plain competence",
+    "cadence": "Efficient but not cold — asks the real question first",
+    "verbal_tics": ["Asks 'on a scale of one to ten' out of professional habit, even at home"],
+    "example_lines": ["You've been in that shack every night this week. On a scale of one to ten, how worried should I be?"],
+    "avoidances": [],
+    "subtext": "His patience with the hobby is also patience with not being told everything.",
+    "under_pressure": "Gets calmer and more practical, the way he's trained to under a code.",
+    "intimacy_register": "Openly affectionate; the one person Gordan is least guarded with, which makes it notable when Gordan still doesn't tell him everything."
+  },
+  "narration_voice": "",
+  "affiliation": "",
+  "daily_life": "Pediatric nurse; runs the household's daily logistics around two eight-year-olds and a husband who keeps radio hours.",
+  "relationships": [
+    {"name": "Gordan Rosniak", "type": "spouse", "description": "Husband, eleven years married.", "status": "married"}
+  ],
+  "story_hooks": [
+    "Notices Gordan's withdrawal in Chapter 5 without knowing the real cause"
+  ],
+  "tags": ["horror", "family", "qrt"]
+}

@@ -41,6 +41,26 @@ public partial class App : Application
 
         Services = host.Services;
 
+        // Optional: `--crawl-categories <NodeCode> <level0> [level1] [...]` — a one-off, read-only
+        // documentation pass (see CategoryTreeCrawler) that walks every Subcategory branch and
+        // Placement leaf under the given starting path on KDP's live Categories modal, using the
+        // given (already-published) book's Details page purely as a place to open that modal.
+        // Never saves anything. Dumps the result to tools/kdp/category-tree-<slug>.json.
+        if (e.Args.Length > 1 && e.Args[0] == "--crawl-categories")
+        {
+            var nodeCode = e.Args[1];
+            var rest = e.Args.Skip(2).ToArray();
+            int? maxDepth = null;
+            if (rest.Length > 0 && int.TryParse(rest[0], out var d)) { maxDepth = d; rest = rest.Skip(1).ToArray(); }
+            new MainWindow(crawlCategories: (nodeCode, maxDepth, rest)).Show();
+            return;
+        }
+        if (e.Args.Length > 1 && e.Args[0] == "--probe-categories")
+        {
+            new MainWindow(probeCategoriesNodeCode: e.Args[1]).Show();
+            return;
+        }
+
         // Optional: a comma-separated NodeCode list as argv[0] auto-starts the exact same
         // RunSelectedAsync flow the panel's Start button triggers, once the manifest loads — a
         // way to exercise the real automation end-to-end without a human click, e.g.

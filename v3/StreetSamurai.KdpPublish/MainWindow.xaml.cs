@@ -33,11 +33,16 @@ public partial class MainWindow : Window
     private CancellationTokenSource? runCts;
     private readonly HashSet<string>? autoRunCodes;
     private bool autoRunTriggered;
+    private readonly (string NodeCode, int? MaxDepth, string[] StartPath)? crawlCategories;
+    private readonly string? probeCategoriesNodeCode;
+    private bool crawlTriggered;
 
-    public MainWindow(string[]? autoRunCodes = null)
+    public MainWindow(string[]? autoRunCodes = null, (string NodeCode, int? MaxDepth, string[] StartPath)? crawlCategories = null, string? probeCategoriesNodeCode = null)
     {
         InitializeComponent();
         this.autoRunCodes = autoRunCodes is { Length: > 0 } ? autoRunCodes.ToHashSet() : null;
+        this.crawlCategories = crawlCategories;
+        this.probeCategoriesNodeCode = probeCategoriesNodeCode;
 
 #if DEBUG
         KeyDown += (_, e) =>
@@ -111,6 +116,74 @@ public partial class MainWindow : Window
         KdpBrowser.CoreWebView2.Navigate("https://kdp.amazon.com/en_US/bookshelf");
 
         kdpBrowser = new WebView2KdpBrowser(KdpBrowser.CoreWebView2);
+
+        if (crawlCategories != null && !crawlTriggered)
+        {
+            crawlTriggered = true;
+            _ = RunCrawlCategoriesAsync(crawlCategories.Value.NodeCode, crawlCategories.Value.StartPath, crawlCategories.Value.MaxDepth);
+        }
+        if (probeCategoriesNodeCode != null && !crawlTriggered)
+        {
+            crawlTriggered = true;
+            _ = RunProbeCategoriesAsync(probeCategoriesNodeCode);
+        }
+    }
+
+    private async Task RunProbeCategoriesAsync(string nodeCode)
+    {
+        if (kdpBrowser == null) { Console.WriteLine("Probe aborted: KDP browser pane not ready."); return; }
+        var detailsUrl = ResolveDetailsUrl(nodeCode);
+        if (detailsUrl == null) return;
+
+        Console.WriteLine($"[probe-categories] Opening categories modal via {nodeCode}'s Details page…");
+        var result = await StreetSamurai.Core.Services.Operator.KdpTools.CategoryTreeCrawler.ProbeAsync(kdpBrowser, detailsUrl, CancellationToken.None);
+        Console.WriteLine("[probe-categories] Result:");
+        Console.WriteLine(result);
+
+        var repoRoot = StreetSamurai.Core.Services.KdpManifestService.FindRepoRoot();
+        var outPath = System.IO.Path.Combine(repoRoot, "tools", "kdp", "category-probe.json");
+        await System.IO.File.WriteAllTextAsync(outPath, result);
+        Console.WriteLine($"[probe-categories] Wrote {outPath}");
+    }
+
+    private string? ResolveDetailsUrl(string nodeCode)
+    {
+        var repoRoot = StreetSamurai.Core.Services.KdpManifestService.FindRepoRoot();
+        var titleIdsPath = System.IO.Path.Combine(repoRoot, "tools", "kdp", "title-ids.json");
+        if (!System.IO.File.Exists(titleIdsPath)) { Console.WriteLine($"Aborted: {titleIdsPath} not found."); return null; }
+
+        using var doc = System.Text.Json.JsonDocument.Parse(System.IO.File.ReadAllText(titleIdsPath));
+        if (!doc.RootElement.TryGetProperty(nodeCode, out var entry) || !entry.TryGetProperty("titleId", out var tid))
+        {
+            Console.WriteLine($"Aborted: no titleId found for '{nodeCode}' in title-ids.json.");
+            return null;
+        }
+        return $"https://kdp.amazon.com/en_US/title-setup/kindle/{tid.GetString()}/details";
+    }
+
+    /// <summary>
+    /// One-off, read-only documentation pass — see <see cref="StreetSamurai.Core.Services.Operator.KdpTools.CategoryTreeCrawler"/>.
+    /// Resolves the given NodeCode's titleId from tools/kdp/title-ids.json purely to have a
+    /// Details page to open the Categories modal on; never touches that book's real category
+    /// assignment (every visit reloads the page fresh instead of saving).
+    /// </summary>
+    private async Task RunCrawlCategoriesAsync(string nodeCode, string[] startPath, int? maxDepth)
+    {
+        if (kdpBrowser == null) { Console.WriteLine("Crawl aborted: KDP browser pane not ready."); return; }
+        var detailsUrl = ResolveDetailsUrl(nodeCode);
+        if (detailsUrl == null) return;
+
+        var repoRoot = StreetSamurai.Core.Services.KdpManifestService.FindRepoRoot();
+        Console.WriteLine($"[crawl-categories] Starting: {string.Join(" > ", startPath)} (via {nodeCode}'s Details page, never saved, maxDepth={maxDepth?.ToString() ?? "unbounded"})");
+
+        var tree = await StreetSamurai.Core.Services.Operator.KdpTools.CategoryTreeCrawler.CrawlAsync(
+            kdpBrowser, detailsUrl, startPath, msg => Console.WriteLine($"[crawl-categories] {msg}"), CancellationToken.None, maxDepth);
+
+        var slug = string.Join("-", startPath).ToLowerInvariant().Replace(" ", "-").Replace("&", "and");
+        var outPath = System.IO.Path.Combine(repoRoot, "tools", "kdp", $"category-tree-{slug}.json");
+        var json = tree.ToJsonString(new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+        await System.IO.File.WriteAllTextAsync(outPath, json);
+        Console.WriteLine($"[crawl-categories] Done. Wrote {outPath}");
     }
 
     private async void OnControlPanelMessage(object? sender, CoreWebView2WebMessageReceivedEventArgs args)

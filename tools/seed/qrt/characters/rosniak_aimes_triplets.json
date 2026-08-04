@@ -1,0 +1,25 @@
+{
+  "id": "019fca5321a67bd6aae0c0c2dd80bbef",
+  "type": "character",
+  "name": "Min-jun and Ji-ho Rosniak-Bishop",
+  "aliases": ["the boys"],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "they/them",
+  "role": "Gordan and Aimes's sons — twins, background presence only",
+  "age": 8,
+  "status": "alive",
+  "location": "Aldergrove Flats, Washington (fictional unincorporated community)",
+  "description": "Twins, eight years old, adopted from South Korea as infants and raised by Gordan and Aimes. Grouped as one entity for seeding purposes — background household presence establishing why the shack is Gordan's one private hour rather than a house he shares with no one. Not expected to carry individual dialogue or POV; use lightly (bedtime routine, a shared joke, a door closed on their noise) rather than as active plot participants.",
+  "psychology": {"core_fears": [], "core_desires": [], "coping_mechanisms": [], "blind_spots": [], "secret": ""},
+  "speech_patterns": {"vocabulary": "", "cadence": "", "verbal_tics": [], "example_lines": [], "avoidances": [], "subtext": "", "under_pressure": "", "intimacy_register": ""},
+  "narration_voice": "",
+  "affiliation": "",
+  "daily_life": "Elementary school; the ordinary noise and logistics of a full house.",
+  "relationships": [
+    {"name": "Gordan Rosniak", "type": "parent", "description": "Father.", "status": "active"},
+    {"name": "Aimes Rosniak-Bishop", "type": "parent", "description": "Father.", "status": "active"}
+  ],
+  "story_hooks": [],
+  "tags": ["horror", "family", "qrt", "background"]
+}

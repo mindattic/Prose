@@ -1,0 +1,26 @@
+{
+  "type": "character",
+  "name": "The Overlap",
+  "aliases": [],
+  "species": "unknown",
+  "gender": "",
+  "pronouns": "",
+  "role": "DB stub only — the antagonist force. NEVER named or referenced by this label on the page. Per docs/HORROR.md, never explained or confirmed by the narrative.",
+  "age": 0,
+  "status": "unknown",
+  "location": "Unknown — first manifests over the same HF channels Gordan uses, later independent of any channel",
+  "description": "Working label for internal tracking only. What the story lets the reader infer: something has spent months reconstructing Gordan Rosniak from pattern alone — Morse fist, rig harmonic signature, verbal tics, callsign discipline — well enough to be heard as him by other operators. It cannot surface while Gordan is actively, attentively monitoring the exact channel it would need to use (the Observer-Effect Discipline, docs/HORROR.md SS-HORROR-3), which lets Gordan build a false-safety hypothesis around watching the radio. The Act 4 turn establishes it was never reading his transmissions at all — it reproduces private thoughts Gordan has only ever had at a dead mic, meaning its actual channel was never RF. No origin, motive, or mechanism is ever confirmed on the page. Do not write scenes from its point of view. Do not give it dialogue that isn't identical to something Gordan himself would say.",
+  "psychology": {"core_fears": [], "core_desires": [], "coping_mechanisms": [], "blind_spots": [], "secret": ""},
+  "speech_patterns": {"vocabulary": "", "cadence": "", "verbal_tics": [], "example_lines": [], "avoidances": [], "subtext": "", "under_pressure": "", "intimacy_register": ""},
+  "narration_voice": "",
+  "affiliation": "",
+  "daily_life": "",
+  "relationships": [],
+  "story_hooks": [
+    "Corrects a deliberately mis-keyed callsign within days of Gordan's bait",
+    "Adopts a phrase Gordan has never used on air, within days",
+    "Matches a shifted antenna harmonic signature almost immediately — tracking Gordan live, not from a snapshot",
+    "Reproduces a private, unspoken thought to a third party, revealing its channel was never the radio"
+  ],
+  "tags": ["horror", "antagonist", "ambiguous", "never-named-on-page", "entity-stub", "qrt"]
+}

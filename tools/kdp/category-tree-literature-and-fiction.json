@@ -1,0 +1,225 @@
+{
+  "name": "Literature \u0026 Fiction",
+  "children": [
+    {
+      "name": "Action \u0026 Adventure",
+      "truncatedChildren": [
+        "Mystery, Thriller \u0026 Suspense"
+      ]
+    },
+    {
+      "name": "Anthologies \u0026 Literature Collections",
+      "leaves": [
+        "British",
+        "Classics",
+        "Drama \u0026 Plays",
+        "Horror",
+        "LGBTQ\u002B",
+        "Poetry",
+        "Short Stories",
+        "United States"
+      ]
+    },
+    {
+      "name": "Black \u0026 African American",
+      "leaves": [
+        "Christian",
+        "Fantasy",
+        "General",
+        "Historical",
+        "Horror",
+        "Mystery, Thriller \u0026 Suspense",
+        "Romance",
+        "Science Fiction",
+        "Urban",
+        "Women\u0027s Fiction"
+      ]
+    },
+    {
+      "name": "British",
+      "truncatedChildren": [
+        "Classics"
+      ]
+    },
+    {
+      "name": "Classics",
+      "truncatedChildren": [
+        "British \u0026 Irish"
+      ]
+    },
+    {
+      "name": "Contemporary Fiction",
+      "leaves": [
+        "American",
+        "British",
+        "Christian",
+        "Fantasy",
+        "Literary",
+        "Religious",
+        "Romance",
+        "Short Stories",
+        "Urban",
+        "Western",
+        "Women\u0027s Fiction"
+      ]
+    },
+    {
+      "name": "Drama \u0026 Plays",
+      "truncatedChildren": [
+        "Continental European",
+        "Regional \u0026 Cultural",
+        "Themes \u0026 Subjects",
+        "Type"
+      ]
+    },
+    {
+      "name": "Erotica",
+      "truncatedChildren": [
+        "LGBTQ\u002B Erotica"
+      ]
+    },
+    {
+      "name": "Essays \u0026 Correspondence",
+      "leaves": [
+        "Essays",
+        "Interviews",
+        "Letters \u0026 Correspondence"
+      ]
+    },
+    {
+      "name": "Foreign Language Fiction",
+      "truncatedChildren": [
+        "Other Languages"
+      ]
+    },
+    {
+      "name": "Genre Fiction",
+      "truncatedChildren": [
+        "Erotica",
+        "Family Life",
+        "LGBTQ\u002B Fiction",
+        "Westerns"
+      ]
+    },
+    {
+      "name": "Historical Fiction",
+      "truncatedChildren": [
+        "20th Century",
+        "Caribbean \u0026 Latin American"
+      ]
+    },
+    {
+      "name": "Horror",
+      "leaves": [
+        "British",
+        "Classics",
+        "Collections \u0026 Anthologies",
+        "Comedy",
+        "Cosmic \u0026 Eldritch",
+        "Dark Fantasy",
+        "General",
+        "LGBTQ\u002B Horror",
+        "Monsters \u0026 Creatures",
+        "Occult \u0026 Supernatural",
+        "Short Stories",
+        "United States",
+        "Westerns"
+      ]
+    },
+    {
+      "name": "Humor \u0026 Satire",
+      "leaves": [
+        "American",
+        "British",
+        "Classics",
+        "Dark Comedy",
+        "General Humor",
+        "Literary Humor",
+        "Satire"
+      ]
+    },
+    {
+      "name": "Literary Criticism",
+      "truncatedChildren": [
+        "Movements \u0026 Periods",
+        "Regions",
+        "Subjects \u0026 Themes"
+      ]
+    },
+    {
+      "name": "Literary Fiction",
+      "truncatedChildren": [
+        "British \u0026 Irish"
+      ]
+    },
+    {
+      "name": "Mythology \u0026 Folk Tales",
+      "leaves": [
+        "Fairy Tales",
+        "Folklore",
+        "General",
+        "Mythology"
+      ]
+    },
+    {
+      "name": "Poetry",
+      "truncatedChildren": [
+        "American",
+        "Ancient, Classical \u0026 Medieval",
+        "European",
+        "Single Authors",
+        "Subjects \u0026 Themes"
+      ]
+    },
+    {
+      "name": "Religious \u0026 Inspirational Fiction",
+      "truncatedChildren": [
+        "Christian",
+        "Science Fiction \u0026 Fantasy"
+      ]
+    },
+    {
+      "name": "Short Stories",
+      "leaves": [
+        "Action \u0026 Adventure",
+        "Anthologies \u0026 Collections",
+        "British",
+        "Classics",
+        "Contemporary",
+        "Historical",
+        "Horror",
+        "LGBTQ\u002B",
+        "Literary",
+        "Religious",
+        "Single Authors",
+        "Translations",
+        "United States",
+        "Westerns",
+        "Women\u0027s Fiction",
+        "World Literature"
+      ]
+    },
+    {
+      "name": "United States",
+      "truncatedChildren": [
+        "Black \u0026 African American",
+        "Poetry"
+      ]
+    },
+    {
+      "name": "Women\u0027s Fiction",
+      "truncatedChildren": [
+        "Mystery, Thriller \u0026 Suspense"
+      ]
+    },
+    {
+      "name": "World Literature",
+      "truncatedChildren": [
+        "Asian",
+        "British",
+        "Eastern European",
+        "Untranslated"
+      ]
+    }
+  ]
+}

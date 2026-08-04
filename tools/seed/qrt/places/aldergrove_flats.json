@@ -1,0 +1,20 @@
+{
+  "type": "place",
+  "name": "Aldergrove Flats",
+  "aliases": [],
+  "description": "A fictional unincorporated community in rural western Washington State — a scatter of houses along a county road between timberland and river bottom, chosen by hams for exactly the reasons that make it good horror geography: low population, low RF noise floor, and long, quiet nights. Gordan Rosniak's home and shack sit at the edge of it, tower visible above the fog line from the county road.",
+  "atmosphere": {
+    "sights": ["A self-installed HF tower rising out of ground fog", "Wet cedar and alder", "A single porch light down a long gravel drive"],
+    "sounds": ["Rain on a metal roof", "The hiss and pop of HF static between contacts", "Wind in the tower guy-wires"],
+    "smells": ["Wet bark", "Woodsmoke", "Ozone off warm tube equipment"],
+    "feel": "Isolated in the specific way that feels safe until it doesn't — quiet enough that Dara can hear her own thoughts, which turns out to matter."
+  },
+  "demographics": "Very low population; mostly older residents, a scattering of remote workers and retirees who wanted distance from town.",
+  "economy": "Rural residential; nearest services and grocery are a twenty-minute drive.",
+  "power_structure": "None of note — unincorporated, no local government beyond the county.",
+  "dangers": ["Genuine physical isolation — the nearest neighbor is out of shouting distance", "No cell service in parts of the property; the radio is Dara's most reliable link to anyone"],
+  "opportunities": ["Excellent HF propagation conditions", "Enough land for a proper antenna farm"],
+  "story_hooks": ["Gordan's home shack is the story's single primary location"],
+  "connections": {"adjacent_to": ["unnamed county road", "unnamed river bottom timberland"]},
+  "tags": ["horror", "qrt", "fictional-place", "pacific-northwest"]
+}
