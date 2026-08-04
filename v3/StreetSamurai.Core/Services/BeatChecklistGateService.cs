@@ -181,17 +181,12 @@ public sealed class BeatChecklistGateService(
                 suggestedFix: "Rewrite the flagged phrasing per CRAFT.md §8; if the hit is literal/diegetic, dismiss.");
             filed++;
         }
-        foreach (var v in verdicts.Where(v => v.MovesLanded.Count == 0 && v.WordCount >= DelightExemptWordCount))
-        {
-            findings.Upsert(
-                $"{filePathPrefix}/beat:{v.BeatId:N}", chapterId: null, FindingCategory.CraftChecklist,
-                FindingSeverity.Low,
-                $"{FindingSummaryPrefix} beat #{v.BeatNumber}: flat beat — {v.WordCount} words, no DELIGHT move lands (job: {v.BeatJob})",
-                snippet: null,
-                suggestedFix: "Not every beat needs a move — but a full scene that lands none usually reads inert. " +
-                              "Check DELIGHT.md for the 2-3 moves matching this beat's job.");
-            filed++;
-        }
+        // Flat beats (no DELIGHT move landed) are REPORTED but deliberately NOT filed as
+        // findings. Calibration lesson (BCODA 2026-08-03): the cheap judge marks "landed"
+        // conservatively — 448/507 beats filed as flat, drowning the inbox in Low noise
+        // while the book's real corpus standing says otherwise. Zero-moves-landed only
+        // carries signal in aggregate (the monotony counters below and the flat-rate in
+        // the run report); per-beat it violates "fix what a finding names".
         foreach (var bf in bookFindings)
         {
             findings.Upsert(filePathPrefix, chapterId: null, FindingCategory.CraftChecklist,
