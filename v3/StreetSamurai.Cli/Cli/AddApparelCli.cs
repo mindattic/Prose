@@ -40,9 +40,10 @@ public static class AddApparelCli
         }
 
         var repo = sp.GetRequiredService<ApparelRepository>();
+        var wasExisting = AdoptExistingId(repo, json, data);
         repo.Save(data);
 
-        Console.WriteLine($"[add-apparel] saved id={data.Id} name=\"{data.Name}\" category=\"{data.Category}\"");
+        Console.WriteLine($"[add-apparel] {(wasExisting ? "updated" : "created")} id={data.Id} name=\"{data.Name}\" category=\"{data.Category}\"");
         return 0;
     }
 
@@ -55,7 +56,7 @@ public static class AddApparelCli
         }
 
         var repo = sp.GetRequiredService<ApparelRepository>();
-        int ok = 0, failed = 0;
+        int ok = 0, failed = 0, updated = 0;
         foreach (var file in Directory.EnumerateFiles(dir, "*.json").OrderBy(f => f))
         {
             try
@@ -71,8 +72,10 @@ public static class AddApparelCli
                     failed++;
                     continue;
                 }
+                var wasExistingItem = AdoptExistingId(repo, json, data);
                 repo.Save(data);
-                Console.WriteLine($"  ok    {Path.GetFileName(file)} — id={data.Id} name=\"{data.Name}\"");
+                Console.WriteLine($"  {(wasExistingItem ? "upd " : "new ")}  {Path.GetFileName(file)} — id={data.Id} name=\"{data.Name}\"");
+                if (wasExistingItem) updated++;
                 ok++;
             }
             catch (Exception ex)
@@ -81,8 +84,26 @@ public static class AddApparelCli
                 failed++;
             }
         }
-        Console.WriteLine($"[add-apparel] {ok} saved, {failed} failed");
+        Console.WriteLine($"[add-apparel] {ok} saved ({ok - updated} new, {updated} updated), {failed} failed");
         return failed > 0 ? 1 : 0;
+    }
+
+
+    /// <summary>
+    /// When a seed file omits "id", reuse the id of an existing apparel with the same name-slug so
+    /// re-importing UPDATES instead of inserting a duplicate. See <see cref="SeedIdentity"/> for why
+    /// inspecting <c>data.Id</c> cannot detect this (the model self-assigns one on deserialization).
+    /// </summary>
+    private static bool AdoptExistingId(ApparelRepository repo, string rawJson, ApparelData data)
+    {
+        data.Id = SeedIdentity.ResolveId(
+            rawJson,
+            data.Id,
+            data.Name,
+            slug => repo.GetBySlug(slug)?.Id,
+            JsonDirectoryRepository<ApparelData>.ToSlug,
+            out var wasExisting);
+        return wasExisting;
     }
 
     private static string? ArgValue(string[] args, string flag)

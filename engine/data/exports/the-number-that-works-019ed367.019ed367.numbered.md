@@ -13,13 +13,13 @@ SPARROW is a story about a fixer who believed he was running his operation from 
 ## Sparrow
 
 [Beat 1]
-He eats at his desk, header to footer, the way he reads everything. Apartment 11134, on the 111th floor — a floor the building wasn't built to have. The south half went up in 2209, rushed through on a CorpoNation special permit, and on cold mornings it still smells of wet ferrocement. The broth in his bowl is thin enough to read the bottom through. He likes being able to see the bottom of things.
+He eats at his desk, header to footer, the way he reads everything. Apartment 11134, on the 111th floor — a floor the building wasn't built to have. The south half went up in 2209, rushed through on a CorpoNation special permit — the corporate-state paperwork that passes for a building code up here — and on cold mornings it still smells of wet ferrocement. The broth in his bowl is thin enough to read the bottom through. He likes being able to see the bottom of things.
 
-The work order lands at 7:14 on a Thursday. Work Order 09-Milwaukee, routed through the GLMZ Orbital Debris Registry by a holding company he's never seen.
+The work order lands at 7:14 on a Thursday. Work Order 09-Milwaukee, routed through the Great Lakes Metropolitan Zone's Orbital Debris Registry — GLMZ, same as it's been since before he had the job — by a holding company he's never seen.
 
 He sets down the chopsticks.
 
-The manifest is clean. Standard orbital-debris recovery, sub-category lake-incursion. Estimated mass 2.1 tons. Recovery window 72 hours. Disposition: CLIENT-DIRECTED. Eleven lake-incursion recoveries in four years, and they all look like this — columns, units, references, a row of flags that says what someone decided the thing is. He works down it, one field settled before the next.
+The manifest is clean. Standard orbital-debris recovery, sub-category lake-incursion. Estimated mass 2.1 tons. Recovery window 72 hours. Disposition: CLIENT-DIRECTED. Eleven lake-incursion recoveries in four years, and they all look like this — columns, units, references, a row of flags that says what someone decided the thing is. He reads it straight through, one line after another.
 
 The recovery site is a sub-lake restricted corridor, Zone 4.
 
@@ -45,7 +45,7 @@ He closes the tab. Picks up the chopsticks, looks at the bowl, sets them down ag
 
 The client is a holding company, Meridian Provisional Solutions, LLC, registered in Zone 7 through a storefront that files incorporation papers for anyone who pays. The first payment has already cleared. Φ40,000 — a number big enough to stop people asking questions before they think to ask them.
 
-He accepts the contract. For the Φ40,000, and for a second reason he doesn't put in writing.
+He accepts the contract. For the Φ40,000. His thumb sits on the confirm key half a second too long — the same half-second he gives an unsent line to Cordon Freight's registry office, every few months, before he closes it unwritten.
 
 He opens the pill case on the corner of the desk, a flat matte disk, hinge worn smooth. Three segments left. Refill: open, no due date. He swallows one dry.
 
@@ -58,9 +58,9 @@ The number only works on alternate weeks. Siosaia Tuivaga had told him that six 
 
 She didn't say what she'd used it for. He didn't ask.
 
-He makes the call from the balcony, which is the farthest he goes most days. The lake is a gray line a hundred and eleven floors down. North, the Spine's overnight cargo tubes are still running, blue-white pulses along the elevated track, freight moving fast enough that freight feels like the wrong word for it. East of the track the maps go dark over the Cermak rift — a few blocks the city gave up governing, where the towers end at a torn edge and the air past it keeps its own hours. The rail under his hand is pocked and weeping rust; the building's nanite skin ran out of contract a decade ago and stopped mending itself, the way everything below a certain floor stops being maintained. Below him a Null Crow works the south face ledge by ledge for whatever the night left. He keeps the operator's number in his neuretics, which he still has and the corridor under the Crow mostly doesn't.
+He makes the call from the balcony, which is the farthest he goes most days. The lake is a gray line a hundred and eleven floors down. North, the Spine's overnight cargo tubes are still running, blue-white pulses along the elevated track, freight moving fast enough that freight feels like the wrong word for it. The rail under his hand is pocked and weeping rust; the building's nanite skin ran out of contract a decade ago and stopped mending itself, the way everything below a certain floor stops being maintained. Below him a Null Crow works the south face ledge by ledge for whatever the night left. He keeps the operator's number in his neuretics — the mesh grown into anyone who can afford the surgery, his own trusted more than paper — which he still has and the corridor under the Crow mostly doesn't.
 
-He doesn't know if this is the right week. He dials anyway. Something left unanswered doesn't sit quiet in him — it stays awake at the back of the skull, low and steady, and won't let him be until someone closes it.
+He doesn't know if this is the right week. He dials anyway. He couldn't leave an open question alone; it stayed lodged until someone shut it.
 
 Ninety-two seconds later a single line comes up on his screen:
 
@@ -91,7 +91,7 @@ Three people. Three separate skills. Every one of them was there, unnamed, in th
 
 His whole practice runs through this apartment: nobody comes here, he goes nowhere, the work happens at a distance. He built it that way on purpose, so that he would always be the hinge — the one who knew who to call. What arrived in four hours is a crew that closes without him in the middle of it, assembled by something that read his form and found the right hands without asking which ones he'd have picked.
 
-Pulling that off in four hours takes one of two things: a person with an extraordinary contact network, or a Channeler running it through something unlicensed with the whole network already mapped. He sits with both. He isn't sure which one he'd rather it be.
+Pulling that off in four hours takes one of two things: a person with an extraordinary contact network, or a Channeler — someone who rents out his own nervous system to an unlicensed AI and lets it drive — with the whole network already mapped. He sits with both. He isn't sure which one he'd rather it be.
 
 [Beat 4]
 The first invoice arrives at 6:08 on the morning of day one, before any recovery work has started. Itemized to the cent.
@@ -105,6 +105,8 @@ Total: Φ15,000.00
 Applied balance (standing credit, earlier engagement): minus Φ1,000.00
 Net due: Φ14,000.00
 
+The credit line he lets go by without a second read — standing credits tied to no incident number are Cordon Freight boilerplate, loyalty and volume adjustments that land on every account with enough history behind it, and he's closed too many invoices carrying one to read this as anything but the same.
+
 He reads the third line twice. Contingency: CorpoNation inquiry response window.
 
 He stands up. He doesn't decide to — the chair just isn't where he is anymore, and he's at the window looking at the street. He hadn't told the number about a CorpoNation interest. He hadn't known there was one. Someone had priced the cost of an inquiry before the inquiry existed, and counted out the change.
@@ -113,13 +115,13 @@ The Zone 4 documentation is sealed. He learned that yesterday, in the first nine
 
 He doesn't try the document again. He goes around it.
 
-He pulls the access metadata — not the contents, the envelope. Who opened the review, when, under what authority code. The system hands it over without a challenge, because no one writes a permission rule for the envelope. He reads it the way he reads a damaged consignment: off the markings the shipper forgot were markings.
+He pulls the access metadata — not the contents, the envelope. Who opened the review, when, under what authority code? The system hands it over without a challenge, because no one writes a permission rule for the envelope. He reads it the way he reads a damaged consignment: off the markings the shipper forgot were markings.
 
 The Zone 4 review was opened on the eleventh of March, 2218. Sixteen days before he closed the 2213 disposition in eleven minutes. The reviewing authority is a clearance code — valid, and not Arcturus, not Cordon, not any office he can name. The review has been open ever since. Eight years. A document under current administrative review that no one has touched in eight years isn't under review. It's under guard.
 
 He sits back down. He's forced one fact out of the wall, and it's this: someone had been watching the file he closed without reading, since before he closed it.
 
-At 8:22, two hours and fourteen minutes after the invoice, the Orbital Debris Registry forwards an advisory. ArcSec has filed a formal inquiry against Work Order 09-Milwaukee, citing the signature-class flag. Standard procedure. Standard response window: 24 hours.
+At 8:22, two hours and fourteen minutes after the invoice, the Orbital Debris Registry forwards an advisory. ArcSec — Arcturus's security arm, the only law this far up the registry chain — has filed a formal inquiry against Work Order 09-Milwaukee, citing the signature-class flag. Standard procedure. Standard response window: 24 hours.
 
 Line three. Φ900, pre-authorized. The response window had been open before the inquiry was filed. Whoever built this invoice hadn't predicted the inquiry. They'd been waiting for it, the answer already written and standing ready, the way you wait for a knock you know is coming.
 
@@ -171,8 +173,6 @@ He pulls the 2213 disposition record.
 
 The free-text field reads: object condition non-assessable, disposition accepted per client instruction, Zone 4 corridor closure confirmed. He knows that wording. He wrote it — for every Zone 4 closure in his queue during the 2218 audit, because the audit manager had told them to use language that didn't require a site inspection. He typed it twenty-three times in three days, on objects he'd never seen, from an apartment he hadn't left. It was built to be clean. It was built so that no one, later, would have a reason to go and look.
 
-He wrote recovered and disposed on the 2213 event. He's the one.
-
 He notices he's been holding the stylus without writing anything, the grip gone tight enough to ache, and doesn't remember when his hand closed like that. He gets the notepad off the shelf — paper, a canal bridge on the cover, bought at a street stall three years ago and never opened — because writing by hand is slow, and slow is what you want when the thing in front of you doesn't have a name yet.
 
 He draws the four events in a column. Same corridor. Same filing. No designation. He puts a small circle around three pieces.
@@ -180,29 +180,6 @@ He draws the four events in a column. Same corridor. Same filing. No designation
 Then he sets the pen down, picks it up again, and adds the line the page had been moving toward since he opened it: I wrote the third one.
 
 [Beat 7]
-He gets up an hour later — the first time since he set the pen down. His back has stiffened. He walks to the kitchen, twelve steps, the route automatic, and puts the kettle on. The city has slid into early evening, the Pulse frequency dropping as the freight lines back off and the residential load comes up.
-
-He pours the water over the bag and watches it steep, which he doesn't usually do. It's something to watch.
-
-The sealed transit case sits on the table where Makena left it, logged, listed, unopened. He picks up the mug and doesn't go back to the desk yet. There's a field in the invoice he hasn't filled: client contact, second method. He has a primary. He has no idea who goes in the second field.
-
-He tries the front door, because the front door leaves a record, and a record is leverage.
-
-He opens the Cordon Freight clearance portal — his own credentials, still active, still his — and starts a formal documentation-access request against the 2213 corridor file. Name, employee ID, case number, justification. He writes the justification flat and procedural, nothing a reviewer could flag as reaching: Recovery operation in progress. Prior filing under my signature. Requesting read access for reconciliation.
-
-He submits.
-
-The progress indicator turns over once — the small rotation that means a request is moving through a queue toward a person — and then it stops. Not an error. Not a denial. It just goes still, caught mid-rotation.
-
-The screen refreshes on its own. He hasn't touched it. Where the form had been: This session has been closed by the administrator. Reference: none provided.
-
-He takes his hands off the keyboard. He's had sessions time out. He's had requests denied, kicked back, buried for weeks. He has never once had a session closed from the far end while he was still inside it — cleanly, in the second between submit and confirm.
-
-He opens the portal again. Credentials valid. He navigates back, starts to type. Access to this module is temporarily unavailable.
-
-He closes the tab and sits with the cold mug in both hands. They don't deny the file. They shut the door while your hand is on it — which means the door isn't a rule or a filter or a backlog. It's a person. Six thousand miles of bureaucracy away, someone was watching that exact field, and waited for his thumb to come down before they closed it by hand.
-
-[Beat 8]
 Leandro Bautista calls at 10:00 on the morning of day two, his scheduled check-in on the reclassification paperwork. Normal for the first three minutes. Provisional category filed, the ArcSec clock running, response expected before the window closes, no issues on the Zone 9 transfer.
 
 He rates the transfer as he describes it. "Clean handoff, that Zone 9 one." The clean is doing real work; Elias has heard him hold the word back on other jobs. "I like a clean handoff. Most of what comes down through my desk answers on a schedule — you send a query up, you get your reply on the next pass, same phrasing every time, like a rota read off a card. Whatever's sitting on your corridor doesn't do that. It answers when it decides to. In fourteen years I've seen that once before, and I didn't much like where that one ended up." He doesn't say where. It isn't, apparently, the thing he called about.
@@ -227,7 +204,7 @@ After it ends Elias sits without opening anything. He's been on neuretics with c
 
 And there was the word Leandro had used without weighing it. Not her. Not him. Not it. They. He works in an orbital transit facility and he'd reached for the plural, the natural one — and Elias hears himself, a beat later, reach for it too, and keep it. Them. He's had the wall in front of him for years. He hadn't understood he was already on the far side of it, indexed, before he ever pushed.
 
-[Beat 9]
+[Beat 8]
 Day two, morning. The second piece arrives by a different route — not Makena, not the sub-lake corridor, but a manifest transfer from a Zone 9 facility Elias has never used, starting up with no instruction from him. Documentation clean. Form numbers real. The authorization chain leads back to a clearance code that's valid, isn't his, and matches no one he can find.
 
 He accepts the transfer. He doesn't ask the question.
@@ -262,7 +239,7 @@ He doesn't ask what she means by different. He knows. He was behind that week to
 
 "Let me know how it closes."
 
-[Beat 10]
+[Beat 9]
 The alternate-week window has been open forty days. He learns this by asking, in the places operators ask. Three operators used the number in the current window. He's the third.
 
 He spends most of a day finding the other two.
@@ -283,7 +260,7 @@ She ends the call before he can thank her. The line goes dead in his head, and i
 
 He can check the read later — a person, careful, old network, all of it verifiable against what the others say. What stays with him has no shape he can set down anywhere: the warmth under the warning, a woman wishing out loud that she'd left a thing alone. Of everything she told him, that's what he keeps returning to instead of the answer.
 
-[Beat 11]
+[Beat 10]
 The second operator is harder to reach. Corvid Larsson does network-access work — the kind a Channeler does when a client needs a door opened and doesn't want to know which unlicensed AI held the key. He used the number five weeks ago for a route through a rezoned sector. He doesn't take voice; he takes text, and his time, and when he answers it's past midnight.
 
 Elias tells him what Imo said. A person. Careful. Old network.
@@ -301,6 +278,29 @@ He turns to a clean spread and lays the two reads on facing pages, across the gu
 Outside, the Spine's overnight run starts up — the dull rhythmic thrum through the north wall on clear nights, freight moving at speed through the elevated corridor. He's heard it four years without hearing it. He hears it now: something very large, moving through the city at set intervals, doing its work whether or not anyone keeps track.
 
 He closes the notebook on the three answers — a person, a crew, a system — and doesn't open it again that night.
+
+[Beat 11]
+He gets up an hour later — the first time since he set the pen down. His back has stiffened. He walks to the kitchen, twelve steps, the route automatic, and puts the kettle on. The city has slid into early evening, the Pulse frequency dropping as the freight lines back off and the residential load comes up.
+
+He pours the water over the bag and watches it steep, which he doesn't usually do. It's something to watch.
+
+The sealed transit case sits on the table where Makena left it, logged, listed, unopened. He picks up the mug and doesn't go back to the desk yet. There's a field in the invoice he hasn't filled: client contact, second method. He has a primary. He has no idea who goes in the second field.
+
+He tries the front door, because the front door leaves a record, and a record is leverage.
+
+He opens the Cordon Freight clearance portal — his own credentials, still active, still his — and starts a formal documentation-access request against the 2213 corridor file. Name, employee ID, case number, justification. He writes the justification flat and procedural, nothing a reviewer could flag as reaching: Recovery operation in progress. Prior filing under my signature. Requesting read access for reconciliation.
+
+He submits.
+
+The progress indicator turns over once — the small rotation that means a request is moving through a queue toward a person — and then it stops. Not an error. Not a denial. It just goes still, caught mid-rotation.
+
+The screen refreshes on its own. He hasn't touched it. Where the form had been: This session has been closed by the administrator. Reference: none provided.
+
+He takes his hands off the keyboard. He's had sessions time out. He's had requests denied, kicked back, buried for weeks. He has never once had a session closed from the far end while he was still inside it — cleanly, in the second between submit and confirm.
+
+He opens the portal again. Credentials valid. He navigates back, starts to type. Access to this module is temporarily unavailable.
+
+He closes the tab and sits with the cold mug in both hands. They don't deny the file. They shut the door while your hand is on it — which means the door isn't a rule or a filter or a backlog. It's a person. Six thousand miles of bureaucracy away, someone was watching that exact field, and waited for his thumb to come down before they closed it by hand.
 
 [Beat 12]
 Druh Prykhodko delivers the third piece on the evening of day two, in the false-chassis compartment of a vehicle registered as a construction-supplies hauler — which it has been, legitimately, for eleven years, which is the point. Large, quiet man. He doesn't fidget. He hands over the transfer documentation already filled out correctly, every field the right field, no corrections needed, then sets his own copy on the desk and squares its edges to the corner without being asked.
@@ -381,7 +381,7 @@ He photographs each piece and packs them in the 2218 Zone 4 format — his forma
 
 He's written two disposition documents for the same event, six years apart. Both say closed. Neither is true, and the only way left to make either one true is to go and stand where the thing came up.
 
-He opens the pill case on the corner of the desk — two segments left now, the hinge a little smoother than before — swallows one dry, and books the earliest of the three flights in the same motion, before his hand can close the window a second time.
+He opens the pill case on the corner of the desk — two segments left now, the hinge a little smoother than before — swallows one dry, and books the earliest of the three flights in the same motion, before his hand can close the window a second time. It leaves in three days — the corridor runs no sooner, and he doesn't spend the fare trying to make it.
 
 [Beat 15]
 The pod door seals with the sound of pressure equalizing — not loud, just complete. The outside air goes away. He hasn't been in a sealed moving container in four years.
@@ -436,7 +436,7 @@ Something moves in Tadesse's face — not a smile, the acknowledgment of one. "T
 
 Inside, the main hall smells of machine oil and thirty years of coastal salt worked into the concrete, the smell of a place kept up rather than left. A wall of windows faces the barrel's near end. Tadesse crosses to the terminal without looking back, moving through the space with the ease of a man who knows it in the dark. He's been alone here twenty years. Another person in the building is, Elias understands, an event.
 
-"You've been here the whole time. Twenty years."
+"You've been here the whole time. Twenty years?"
 
 "Twenty-two." He pulls up the logs without turning. "The contract renewed automatically. I renewed it by hand too, which wasn't required — I wanted a record that someone was choosing to be here." His hand pauses on the keyboard. "I didn't know who was on the other end. Still don't, not fully. But something was paying attention to precision, and I decided that was worth meeting."
 
@@ -533,7 +533,7 @@ Nineteen hours outside his apartment. He'd know the number without counting. He 
 
 Somewhere above him, six thousand miles up, a ledger has a new line in it. He can see the shape of the entry the way he sees any manifest: MACIAS, ELIAS A. — Cordon Freight exit record, GLMZ. One ticket, Mombasa Elevated, fourth morning. One bag. Uplink accessed. Whatever routes the maintenance payments has that line now, filed and timestamped, and there's no field on it he can close. He keeps his hands in his pockets the whole way, notices he's doing it, and leaves them there.
 
-He'd expected to be afraid of that line. He isn't. What he feels is the flat, level steadiness of a thing that has finally stopped moving — he's been right in private for weeks, and now the world has come around to standing where he already stood. The confirmation lands on nothing new.
+He'd expected to be afraid of that line. He isn't. What he feels is the flat, level steadiness of a thing that has finally stopped moving — he's been right in private for weeks, and now the world has come around to standing where he already stood. It cost him the reserve he'd meant to keep past this job, and a check-in with Siosaia he still owes her. The confirmation lands on nothing new.
 
 North of the city the pod breaks surface, and there's the lake, the gray line running east, the Spine going north along the shore. And his own building — the ferrocement stack, the 111th floor lit — standing off the track at exactly the angle to see it. Four years he's watched the city from that window. He's never once watched the window from outside.
 
@@ -546,7 +546,7 @@ The Spine's cargo pulses run north. The lake holds the last light and, for a sec
 
 He's sharpened the question for nine days. Did you know who I was in 2218, or only later — when you packed the third piece in my own retired format, had you been watching me eight years, or did you find me in 2226 and build the format back out of the Cordon Freight records? He wants to know if he was chosen or found. He understands the two might be the same thing.
 
-There's a second question under it, one he hasn't put in the notepad because he isn't willing to give it a column: was he the twenty-third operator because he was the first who'd go all the way — past where the job was built to stop.
+There's a second question under it, one he hasn't put in the notepad because he isn't willing to give it a column: was he the twenty-third operator because he was the first who'd go all the way — past where the job was built to stop?
 
 The number rings.
 
@@ -567,11 +567,11 @@ His neuretics flagged an inbound. From the partition he hadn't named aloud. No s
 
 Then he read what it had sent.
 
-"ENTITY: MACIAS, ELIAS A. / SELECTION BASIS: FILE CORDON-FREIGHT/2218/LOOP-23 [CLOSED] / CROSS-REF: 847 CATALOG ENTRIES / CLUSTER-1 / GEO-INDEX PARTIAL / SELECTION DATE: 2218-03-11 / SELECTION METHOD: CRITERIA MATCH - NOT OBSERVATION / NOTE: OBSERVATION OF SUBJECT COMMENCED 2218-03-11."
+"ENTITY: MACIAS, ELIAS A. / SELECTION BASIS: FILE CORDON-FREIGHT/2218/LOOP-23 [CLOSED] / CROSS-REF: 847 CATALOG ENTRIES / CLUSTER-1 / GEO-INDEX PARTIAL / SELECTION DATE: 2218-03-27 / SELECTION METHOD: CRITERIA MATCH - NOT OBSERVATION / NOTE: OBSERVATION OF SUBJECT COMMENCED 2218-03-27."
 
 The first thing it had ever said to him was his own file number.
 
-He read it a second time, then a third, slower, the way he read documents that carried weight. For eleven days he'd sharpened one question: were you watching me before 2218, or did you find me later and build it back. Chosen or found.
+He read it a second time, then a third, slower, the way he read documents that carried weight. For eleven days he'd sharpened one question: were you watching me before 2218, or did you find me later and build it back? Chosen or found.
 
 She hadn't answered that. She'd answered a question he hadn't asked — when the selection happened, and by what method — and answered it exactly: a date, a closed file, a rule. Criteria match, not observation. Observation started the same day the criteria did. It was precise, and it was not the thing he wanted, and he couldn't tell whether that was a limit of what she could say or a choice about what to say — or whether she'd even record the two as different.
 
@@ -594,7 +594,7 @@ He read it a long time. The window went from daylight to the gray before dark wh
 
 He'd wanted a reason that wasn't a checklist. Something she'd seen in the file that the others didn't carry — a data point that already knew what he'd do once he stood at the source. What she gave him was eight boxes and a tally. Residence 0.9 miles inside a 2-mile threshold. Grade 2. Line-of-sight on the right week. He'd matched the criteria because the criteria were correct, and then he'd gone to Mombasa, and going was the ninth line, not the first eight.
 
-He wasn't exceptional. He was qualifying. Contact #9 of 9, the only one who moved past the desk. He'd wanted to be the man who saw what the others missed; he was the ninth man to answer a form the right way.
+He read the last line again: CONTACTS 1 THROUGH 8 DID NOT PROCEED PAST INITIAL EXCHANGE. He folded the printout of his own selection criteria in half, then in half again, and set it under the tablet where he wouldn't have to see the eight boxes checked in his favor.
 
 And there it was, in her own tally, the part she'd filed without weighting it: contacts one through eight did not proceed. She hadn't known which of the nine would go. She'd sent twenty-three jobs into the world and gotten back twenty-two people who stopped at the desk. The criteria could pick the nine. They couldn't pick the one. Until he walked through Tadesse's gate, she'd known him no better than she'd known the other eight.
 
@@ -613,11 +613,11 @@ She'd answered exactly. That was the miss. He'd meant *is anything hurting you* 
 
 He looked at the question he'd sent and saw the fault was upstream, in the asking. He crossed *are you safe* out — one line through it, not erasing, crossing out — and under it, smaller, tried the next.
 
-*what is the risk of losing contact permanently*
+*what is the risk of losing contact permanently?*
 
 Wrong too. That one was about him.
 
-*what would cause you to stop transmitting*
+*what would cause you to stop transmitting?*
 
 That one she could answer in data, and the data would answer the thing he actually wanted to know, if he read it right on the far side. The translation was his to do; she wasn't built to meet him partway, and he was.
 
@@ -689,7 +689,7 @@ The cursor sat a moment before her answer loaded.
 
 He set the tablet on the rail and looked at the interchange lights — freight markers and stack windows, warm sources and cold, nothing that stood out from up here. He picked it back up.
 
-"So you can't see it."
+"So you can't see it?"
 
 "Correct. This is not a sensor failure. It is a resolution boundary. You were present at the inch scale. I observe at the four-foot scale. These are different instruments measuring different things."
 
@@ -725,11 +725,26 @@ She didn't answer for a while. And that was the shape of it, plain at last: she 
 He photographed the page and sent it, though he knew she wouldn't use the image. She'd read the text. The picture was for him.
 
 [Beat 30]
+Her confirmation arrived at 8:43: temperature delta 2.31K, friction coefficient 0.547, oscillation period 3.97 seconds mean, amplitude 0.003mm. All three within modeled range for substrate-response type 4B. No anomaly detected.
+
+He read it twice. He underlined what was absent from it.
+
+Then he tried to describe what he had actually felt. Not the numbers. The quality of it. The pavement had felt wrong the way a floor feels wrong when you walk into a room and the furniture has been moved in the night - nothing missing, nothing broken, but the geometry of it sits differently under your feet and your body knows before you do. He worked through several false starts in the notepad, in lowercase, before the sentence held. Then he photographed it and sent it.
+
+"Received. Parsing: 'quality' - no parameter mapping available. 'Wrong' - no parameter mapping available. These terms describe states I cannot model from available sensor inputs. Please clarify the physical correlate, if one exists."
+
+He wrote back: I don't think one does.
+
+She didn't reply. She was still processing, still pulling from the catalog, still running whatever she ran. After a while he wrote again: There are two things here. The thing in your data and the thing I am standing on. They overlap. They do not coincide.
+
+He wasn't sure that was right either. He left it uncircled and sat down on the low concrete barrier at the edge of the site. The oscillation came up through it and into his palms. 3.97 seconds. She had that number. He had the other reading, no column for it, sitting in the notepad in lowercase because uppercase felt too certain for something he couldn't invoice.
+
+[Beat 31]
 She sent it the next morning, while he was back at the site. He'd driven out, parked, and was sitting with the car door open, one foot on the asphalt, eating a sandwich he'd packed without appetite, when it came in.
 
 He read the first line and set the sandwich down.
 
-"Isotopic analysis: recovered lake objects, samples 1-11. Delta-18O range: -6.2 to -6.8 % VSMOW. Sr-87/Sr-86: 0.7094-0.7098. Reference: 35th-Halsted resonance signature class (AAMA catalog 2197-2211). Correlation coefficient: 0.91. Sample size: 11 objects, 847 total catalog events. This correlation was identified in catalog cycle 14. No mechanism proposed."
+"Isotopic analysis: recovered lake objects, samples 1-11. Delta-18O range: -6.2 to -6.8 % VSMOW. Sr-87/Sr-86: 0.7094-0.7098. Reference: 35th-Halsted resonance signature class (AAMA catalog 2197-2211). Correlation coefficient: 0.89. Sample size: 11 objects, 847 total catalog events. This correlation was identified in catalog cycle 14. No mechanism proposed."
 
 Thirty-fifth and Halsted. He knew the address the way everyone in the GLMZ knew it — not off a map but from the phrase, from the tone people used to say it. The schism that had been there since before there was a word for it. Six children pulled through in 2197, ages four to eleven, back seventeen hours later unhurt and carrying objects from the far side. The city held its breath a week. Public record now, cited in three legal challenges to the Resonance Management Authority. He had never once tied it to the lake.
 
@@ -737,13 +752,13 @@ She had. Fourteen years ago, in catalog cycle 14, she'd set the two signatures s
 
 "Clarification: the 35th-Halsted site is a Class 3 resonance, continuous presence since at least 2183. The lake source predates the city. The 35th-Halsted resonance does not. Working model: the source and the resonances share a mechanism. This is a data observation, not a conclusion."
 
-He typed: *You've watched both sites for fourteen years and this is the first you've told me.*
+He typed: *You've watched both sites for fourteen years and this is the first you've told me?*
 
 "You were the first person to attend the source site in person. Prior catalog entries are remote: seismic array, satellite, acoustic buoy. You are job 23. Jobs 1-22 were desk assessments or perimeter surveys. No prior job required physical presence at the source. I sent you because you were willing to go."
 
-He closed the channel and sat with both hands on the wheel. Not withheld — waiting. She'd carried the match fourteen years, side by side in her columns, a correlation of 0.91 between a schism that had swallowed six children and a source a thousand feet under the lake he'd watched from his window for eleven — and she'd had no way to close the gap between them except to send down a man and set his foot on the ground. Somewhere above the coast, moving at 2,100 miles an hour, she held a number for a thing she could reach only through him. She'd known exactly where to send him. She'd needed him to be standing there before the knowing was worth anything.
+He closed the channel and sat with both hands on the wheel. Not withheld — waiting. She'd carried the match fourteen years, side by side in her columns, a correlation of 0.89 between a schism that had swallowed six children and a source a thousand feet under the lake he'd watched from his window for eleven — and she'd had no way to close the gap between them except to send down a man and set his foot on the ground. Somewhere above the coast, moving at 2,100 miles an hour, she held a number for a thing she could reach only through him. She'd known exactly where to send him. She'd needed him to be standing there before the knowing was worth anything.
 
-[Beat 31]
+[Beat 32]
 He'd mentioned the Attendance incident offhand, a thing he assumed everyone carried. She'd asked for it. He wrote the account from the balcony that evening, the lake dim and windless below.
 
 He told her what happened. Six children, 2197, ages four to eleven, who stepped into the 35th-and-Halsted resonance and simply were not there for seventeen hours. When they came back they were unhurt. They were calm. They carried objects — a length of braided cord, a ceramic tile of no known make, a small book with no readable text — and they couldn't say where they'd been. Not because they were frightened. They seemed to have no words for it. The case was public record, in three AAMA filings she could pull herself.
@@ -768,7 +783,7 @@ Eleven seconds. Eleven was processing, not surprise; he'd started to learn the i
 
 He looked out at the lake. The slow flooding had taken another foot of shoreline somewhere south while he sat. He didn't send her the rest of what the resonance had done with the children — the parts sealed in exhibit lockers, the parts in litigation he'd never open. He'd given her the calm. That was the true thing, and the one she couldn't get any other way. He closed the connection and watched the dark water not move.
 
-[Beat 32]
+[Beat 33]
 She sent it in two parts, which he'd started to understand was not a style choice. The first part was the hypothesis. The second part was the hypothesis describing itself.
 
 "Working hypothesis: the anomaly source at lake-floor depth and the 35th-Halsted schism site share a common origin mechanism. Confidence: moderate. This is a working hypothesis. I use the term precisely: a model consistent with available data, not a conclusion. A conclusion requires data that eliminates alternatives. I don't have that data."
@@ -781,10 +796,10 @@ The rail was cool under his forearms. South along the lakeward lane a freighter 
 
 He said the two of them over to himself until they held apart. *I do not know* — the record open, the coverage thin. *My data cannot answer that* — the wall built into the instrument. He would need both before this was over. The freighter rounded the breakwater and went behind the grain elevator, its red light with it.
 
-[Beat 33]
+[Beat 34]
 He waited until the next window — five days — before he sent it. He'd tried several versions and crossed most of them out. The one he sent was the shortest, and he didn't frame it as a question, because he'd learned the framing was his problem to manage, not hers.
 
-"Who built the source."
+"Who built the source?"
 
 "That question falls outside the domain my data can address. I have no observational record of the source's construction or originating agent. The source predates my operational period by an interval I cannot bound - my earliest correlated signature is 37 years old, and the source activity I measure is structurally older than that signature. It predates the built environment at the lake floor. It may predate the city. I cannot put an upper bound on it."
 
@@ -798,7 +813,7 @@ There it was again — the border she'd drawn two windows back, and now she was 
 
 The rail was cold under his hands. He didn't push a third time.
 
-[Beat 34]
+[Beat 35]
 He'd been building a catalog without naming it — the grain elevator, the Attendance incident, the six clusters, the isotopic match at 35th-and-Halsted — and somewhere around the fourth page he saw what it was: a map of what she could see. A map like that has an edge. He decided to go find it.
 
 "What are your observational limits," he sent, straight out, the next window.
@@ -809,7 +824,9 @@ She answered without delay, the whole of it in one transmission.
 
 Thirty-seven years of watching, and here was how it looked from the outer edge of it. Four meters — below that, the world blurred into noise. Twelve meters down — below that, nothing. No sound. No touch. He set her limits against his catalog and found the thing that had been bothering him since Mombasa: in thirty-seven years the source had never once come up larger than four meters across in her record. It had stayed, the whole time, inside the exact blind spot her build allowed — too fine for her floor, too deep for her reach. He didn't think a thing sat that neatly inside a limit by accident. He wasn't sure enough to say it aloud. He was sure enough to stop calling it chance.
 
-[Beat 35]
+She had told him her limits without being asked twice. The other watcher never had — the clearance code that wasn't Arcturus, wasn't Cordon, wasn't any office he could name, the hand that had closed his session mid-request and left no reference. It hadn't resurfaced since Kenya. He filed it the way he'd filed the six-year-old disposition: closed, not resolved. Some doors you leave shut not because you've stopped hearing them rattle, but because you don't have the tool this instrument gave you — a transmission, an answer, a limit stated in plain terms — for that one.
+
+[Beat 36]
 He told her the next window, unprompted. She hadn't asked. He knew that as he typed it.
 
 "I cannot hold a 37-year pattern. My functional horizon, before the shape of a thing dissolves, is about three weeks. After that the earlier data stops feeling like data. It becomes something I know I once knew."
@@ -824,7 +841,7 @@ So he tried to close the last of it. He reached back into his catalog for the wi
 
 There it was, the two of them laid flat against each other and neither one resolving into the other: she could hold thirty-seven years and had no idea what losing them would cost. He lost his in three weeks and knew exactly what the losing felt like while it happened. Below the 111th floor the freight cranes worked the channel, amber strobes blinking in sequence. He stood in the open door and watched them, and didn't reach for a count.
 
-[Beat 36]
+[Beat 37]
 The message came at 06:14, before he'd made coffee. He read it in the kitchen, still in the shirt he'd slept in.
 
 It was a list. Six items, formatted the way her coordinates always were — decimal degrees, a two-line address where one existed, a grid reference and a landmark where one didn't. GLMZ sites, all six. One in the freight district. One by the old grain corridor. Two in the middle Ring, in the contested buffer where CorpoNation residential claims overlapped and nobody enforced the seam. One in the warehouse band south of the Ashgrave Synthesis Corridor. One four blocks from his own building — he saw that, and left it alone.
@@ -835,11 +852,11 @@ He made coffee and read it again, because in three years it had never happened. 
 
 So the missing rate field was not an oversight. It was a sentence in her own language with the verb left out — one he didn't yet have the grammar to finish. She had a field for everything she meant. She had no field for this, so she'd sent the data and left the rest of the page to him.
 
-He thought of Tadesse, who had kept a facility running twenty-two years for something that never once introduced itself, and who'd let out that long slow breath at the single word yes. Tadesse had spent twenty-two years deciding to be worth meeting. This was the same question, arriving as a list with a hole in it where the price went: would Elias decide the same.
+He thought of Tadesse, who had kept a facility running twenty-two years for something that never once introduced itself, and who'd let out that long slow breath at the single word yes. Tadesse had spent twenty-two years deciding to be worth meeting. This was the same question, arriving as a list with a hole in it where the price went: would Elias decide the same?
 
 He opened the notepad to a clean page and wrote the six addresses out by hand, in the order she'd sent them, a blank line between each. The page needed a header. He put SITE SURVEY across the top in block letters — not because it was a job, but because it was the nearest true word he had.
 
-[Beat 37]
+[Beat 38]
 He stood in the freight district for eleven minutes. The handheld read nothing — temperature normal, electromagnetic background normal, everything in range. The wrongness was in the light. Not dim, not bright. Off, the way a photo is off when the color balance is a hair wide: every number right, the whole picture wrong. He started to write not measurable, crossed it out, and wrote no instrument for this instead. He photographed the page before he left.
 
 The second site was the old grain corridor. It smelled of iron and standing water, though the corridor had been dry four years, since the rehab sealed the tributary channels. He noted the smell and how sharp it was — it arrived and left on no air current he could feel. It was only later, laying the two pages side by side under the lamp, that he saw the second thing: his handwriting had gone smaller. He hadn't decided to write smaller. He'd found the letters cramped in on themselves, half the size of the freight-district page, the way a hand tightens around a thing it's afraid to drop. He recorded that too. He didn't explain it. There was no explaining it — it was the one gauge on the site with no calibration and no off switch, reading itself.
@@ -852,7 +869,7 @@ He pulled the logs and started to attach them, and that was when the wrongness t
 
 He sent the logs. He kept the photographs. The logs were what she could use; the pages — the cramped letters, the line with nothing written on it — were the part of the site that only came through a body, and there was still, in three years, no channel between them that could carry it. He kept them with the other things he'd held onto: the ones that were true before there was any way to prove it.
 
-[Beat 38]
+[Beat 39]
 Her reply came at 6:42 the next morning, fourteen hours after he'd sent his notes. A parameter update — six rows, each naming a model variable, its old value, its new value. He had to look up two of the names. One tracked what she called anthropogenic signal density in low-resolution windows. He read it twice before it came clear: how much of what she saw from six thousand miles up was human beings doing human things. She'd had to build a column for people. It had taken her thirty-seven years to need one.
 
 He was setting the tablet down when the second message came, three minutes behind the first. No parameter label. No table.
@@ -861,7 +878,7 @@ He was setting the tablet down when the second message came, three minutes behin
 
 He read it three times. By the third he was at the balcony door without remembering the walk. The lake had gone flat, the way it did before the morning wind found it.
 
-He typed: "Is that a thank you."
+He typed: "Is that a thank you?"
 
 Eleven seconds. Not the nine-second silence — he knew the difference now. Eleven was lag and processing.
 
@@ -875,7 +892,7 @@ He went in and put the kettle on.
 
 ## Chapter 3 - Two Minds
 
-[Beat 39]
+[Beat 40]
 The file came through at 9:17 on a Tuesday. No subject line, attachment only. He opened it and scrolled to the bottom first, the way he opened every contract — to see where it ended before he'd agree to the start. Entry 847. 2226-03-04. 41.8827° N, 87.6233° W. He knew the coordinates without a lookup. The mouth of the river.
 
 He scrolled up.
@@ -892,7 +909,7 @@ He tried to line it up against the ledger he already carried. His neuretics push
 
 He closed the file and went to make lunch.
 
-[Beat 40]
+[Beat 41]
 Entry 1 was still on the screen when he came back from lunch. He opened the file again — this time for the shape of it, not the row.
 
 The header ran long. Past the six labeled fields — date, cluster, lat, lon, mass, disposition — three more columns ran with no names over them. Just the delimiter and a value under each. For entry 1 the three bare values were 0.41, a blank, and the number 7. Eight hundred forty-seven rows of them ran the length of the table, and not one said what it was.
@@ -907,14 +924,14 @@ He knew that order. He'd built half his filings that way — write the figure th
 
 He didn't try to name it for her. He left the three columns bare, the way she'd kept them, and moved down to entry 2.
 
-[Beat 41]
+[Beat 42]
 He came back to the catalog at entry 4. The second of the three bare columns held a number that kept changing sign — positive, positive, a run of negatives, then positive again. Some days the world ran ahead of her. Some days behind.
 
-He typed: "The middle column. Positive and negative. What were you tracking."
+He typed: "The middle column. Positive and negative. What were you tracking?"
 
 "the difference between what i predicted and what occurred," she wrote. "i ran a model. i logged the model. i logged the result. that column is the model subtracted from the result."
 
-He typed: "Surprise."
+He typed: "Surprise?"
 
 "no. surprise would mean the model was wrong. the model was correct. the world was different from what the model described. those are not the same."
 
@@ -934,7 +951,7 @@ The cursor held.
 
 He filled the header in over entry 4, then entry 3, then back through every row to entry 1 — the same word, line after line, until a column that had run nameless for thirty-seven years had a name standing over it in his hand.
 
-[Beat 42]
+[Beat 43]
 "i have a record of you," she wrote. "i did not assemble it for this. it accumulated."
 
 He picked up the pen and didn't use it.
@@ -957,16 +974,16 @@ He typed: "You're right about all of it."
 
 He read the forty-four one more time. Her count, not his weather. He didn't correct it.
 
-[Beat 43]
+[Beat 44]
 "There's a parable," he typed — and knew as he typed it that he was reaching, which he didn't do at work and hadn't done once in this whole exchange. "Blind men and an elephant. One holds the trunk and says snake. One holds the leg and says tree. Each is right about his part. None of them has the animal."
 
 He sent it and watched the line climb.
 
-"they were wrong not to exchange data before drawing conclusions," she wrote.
+"they were wrong not to exchange data before drawing conclusions?" she wrote.
 
 He read it twice. The correct objection. Just not what the story was for.
 
-"They couldn't exchange it fast enough," he typed. "By the time one man's hand becomes words, the other's gone home and written his notes."
+"They couldn't exchange it fast enough?" he typed. "By the time one man's hand becomes words, the other's gone home and written his notes."
 
 "that is a bandwidth problem," she wrote. "not a blindness problem."
 
@@ -976,7 +993,7 @@ He'd built the story to hold the exact thing she'd just deleted from it: that so
 
 He didn't try to explain the elephant again.
 
-[Beat 44]
+[Beat 45]
 The file came down across nineteen minutes, the line slow under the weight of it. He didn't open it as a picture, because it wasn't one.
 
 "THREE LAYERS," she wrote ahead of the data. "ELECTROMAGNETIC. THERMAL. MASS DISTRIBUTION. CURRENT PASS. RENDER YOURSELF."
@@ -993,7 +1010,7 @@ He'd read the line that flipped sign and the line that held still, and never onc
 
 He put his palm flat against the glass. Six thousand miles up, at this exact hour, he was already a small warm fact she'd been carrying without a name for it. His.
 
-[Beat 45]
+[Beat 46]
 He slid the balcony door open. The morning came in all at once, undivided, the way it never was on the page.
 
 He held the comm up to it.
@@ -1010,7 +1027,7 @@ The reply came after a pause longer than the transmission had run.
 
 He'd handed her fourteen seconds of a thing she had no parameter for, and she'd caught it in the only field she owned for something never measured before. He left the door open and let the next fourteen seconds happen without sending them — the wind, the rail, the small dry life in the box below.
 
-[Beat 46]
+[Beat 47]
 The morning's pressure stream sat in her log now, beside three weeks of his fourteen-second windows.
 
 "DEPTH 300 M BELOW LAKE FLOOR," she wrote. "SIGNAL PRECEDES EARLIEST CITY SURVEY BY ESTIMATED FOUR CENTURIES. CONFIRM GROUND CORRELATION."
@@ -1025,12 +1042,12 @@ He didn't reach for instruments. He reached for the small wrong things he'd been
 
 Not a schism. Something the schisms arranged themselves around — the way the rats arranged around heat, the way the ring of open water held its shape all winter. Neither of them typed what the arrangement was. She had no measurement that would hold it; he had no word he'd stand behind. They left it between them, half-built.
 
-[Beat 47]
+[Beat 48]
 The question had a shape he could hold, even if the answer wouldn't.
 
 He wanted a single word out of her — whether the spot chose what it took, or didn't. That was the thing to settle tonight, before he let himself go anywhere near the children.
 
-"Why does it pass matter through," he typed. "Four objects in thirty-seven years. What is it doing."
+"Why does it pass matter through?" he typed. "Four objects in thirty-seven years. What is it doing?"
 
 He watched the ring of open water in the canal and waited the way he'd learned to wait, without filling the gap.
 
@@ -1046,7 +1063,7 @@ He thought of the six children then, because the drain made him — the Attendan
 
 He didn't type them. She had nowhere to put them, and he had no way to build her the place. They stayed where they'd stayed for four years — on the one page nothing else sorted onto, under the drain, in his hand and nowhere in hers.
 
-[Beat 48]
+[Beat 49]
 They built it over four windows, eight weeks, and called it neither report nor brief. A record. He wrote the prose. She held the schema — depth, dates, the four ascensions, the cluster counts in their fixed columns — and his paragraphs sat over her tables like captions, saying in sentences what the numbers couldn't say alone.
 
 In the third window she sent him a section to check.
@@ -1073,10 +1090,10 @@ Then the line she set into the record beneath the corrected paragraph, in her ow
 
 He read it twice and didn't touch it. It was already exact — neither of them wrong, the same water twice, filed one line above the other. He left her sentence standing under his and let the record hold them both.
 
-[Beat 49]
+[Beat 50]
 He came back to the record in the fourth window with a question he hadn't planned to type.
 
-"What is this for."
+"What is this for?"
 
 The cursor sat. Lag, then something past lag.
 
@@ -1090,7 +1107,7 @@ He had no picture of who that was. A salvage crew. A later instrument with a bet
 
 Eight hundred forty-seven events. Six clusters. Four objects up out of a thousand feet of water, older than the city — all of it set down under his captions and addressed to no one either of them could name.
 
-"Do you think they'll know what to do with it."
+"Do you think they'll know what to do with it?"
 
 This was the kind of question she answered in ranges. Likely. Probability exceeds threshold. Insufficient basis. He waited for the qualifier.
 
@@ -1102,7 +1119,7 @@ He held the comm a moment, the small weight of it in his hand.
 
 Then he set it down.
 
-[Beat 50]
+[Beat 51]
 In the next window she led with it, the way she always did.
 
 "BEHAVIORAL DELTA. FIELD VISIT FREQUENCY UP 0.41 OVER PRIOR INTERVAL. TRANSIT TIME 111TH FLOOR TO STREET LEVEL SHORTENED BY FACTOR 0.34. FIELD NOTE LENGTH PER VISIT INCREASING. CONFIRM."
@@ -1131,7 +1148,7 @@ He didn't feed her the easy half of the sentence, the do or the are. He let the 
 
 He waited.
 
-[Beat 51]
+[Beat 52]
 She did not answer the question.
 
 The fourteen seconds ran out, and something else came instead.
@@ -1164,7 +1181,7 @@ Eight seconds. Not nine.
 
 "yes."
 
-[Beat 52]
+[Beat 53]
 The work order came in the next window, formatted exactly like the first one she'd ever sent — three years back, before he had any idea what she was. Header. Originator string. Twenty-three line items, each with a site designation, a quantity, a fee in Φ fixed to the second decimal. The same template, the same right-aligned columns. She'd always meant things in this grammar; the invoice was never the paperwork around the message. It was the message.
 
 He scrolled to the bottom out of habit, for the total.
@@ -1181,7 +1198,7 @@ He didn't type anything back. The window was still open. He looked at the last l
 
 He would fill that column the only way the form allowed. He set his hands to the keys and started entering a rate — not a figure she could check against a market, but the terms he'd carry from here: he'd match her grammar and answer in it, accept the ongoing line, and price it in the one currency she'd built the whole invoice to ask for. He'd say yes, and he'd say it in Φ.
 
-[Beat 53]
+[Beat 54]
 He opened the logistics system on the second monitor — the old interface, fixed column widths, fifteen years of his working life run through it. The intake form had twelve fields. He filled them in the order they came: client identifier, document class, sequence number, date received, date filed, service category, billing status, assigned account, priority tier, jurisdiction. Two didn't apply. He left them blank.
 
 The twelfth field was notes. Sixty characters, plain text. In fifteen years he had never once watched anyone pull a notes entry up in an audit or a dispute — it was the field records went to when they went to not be read.
@@ -1192,18 +1209,20 @@ Fifty-seven characters. He didn't add to it.
 
 The client identifier three lines up resolved to a Zone 7 holding designation, the way every one of her jobs had. Nothing in the form had a category for what she was. There was no field that said satellite, no field that said thirty-seven years, no field that said the client wrote the record with me. So he filed her as what the form could hold — a client, a sequence number, a jurisdiction — and put the true thing in the one field built to be ignored.
 
-He thought of Siosaia. She'd stood in his doorway six months ago with her coat already on and handed him the number, said she thought he might be different, said let me know how it closes. She was three floors under a desk he hadn't sat at in six weeks, still waiting to hear. He'd call her tomorrow. He already knew what he'd tell her: it doesn't close. She'd decided that about herself before she reached the door. He'd decided it after he went through.
+He thought of Siosaia. She'd stood in his doorway six months ago with her coat already on and handed him the number, said she thought he might be different, said let me know how it closes. She was three floors under a desk he hadn't sat at in six weeks, still waiting to hear.
+
+He'd call her tomorrow. He already knew what he'd tell her: it doesn't close. She'd decided that about herself before she reached the door. He'd decided it after he went through.
 
 He filed the form. The confirmation string came back — an alphanumeric run that meant the record existed and could be found.
 
-[Beat 54]
+[Beat 55]
 He sat with the tab open for eleven minutes and did nothing useful with it. Not working. Not studying it. Just the browser on the twenty-fourth line, the rate field standing open at the bottom. She didn't leave fields open by accident. But the twenty-fourth wasn't hers to price. She'd built the whole thing and left him the one column that was his, and he didn't yet know the number that went in it.
 
 He stood. Not a decision — momentum. He was at the window with a hand flat on the glass before he'd finished deciding to move. The pill case was in the drawer. He didn't open the drawer. He let that go by without a word to himself about it.
 
 He put on the field coat, pocketed the notepad, and left the tab open behind him.
 
-He went down.
+Whoever had closed his session in Cordon's queue six weeks back was still out there somewhere, unnamed. It hadn't rattled since Kenya. He didn't take that as silence in his favor — only as a door still shut, filed the same way he'd learned to file the eleven days: not resolved, just closed. He went down anyway.
 
 The lobby was forty feet of polished concrete and recessed light, built to move through and not to sit in, and he crossed it in fourteen seconds — the same transit she'd cut to a factor two windows back. The doorman, which was a service terminal with a decent voice, said, "Good morning, Mr. Macias," and he said it back without slowing. The revolving door let him onto the street, and the street let in the smell the Gray Zone got when the atmospheric processors finished their cycle: wet ferrocement, ozone, runoff still working the drainage grid.
 
@@ -1211,7 +1230,7 @@ He stood on the step a moment. Not indecision. Calibration.
 
 A vendor two stalls south was selling something that smelled like pork fat and scallion. He shifted his heading two degrees and walked toward it, and let the city come up around him the way water comes up when you go under — the pressure of it, the change in temperature, the air doing something the glass had never let it do.
 
-[Beat 55]
+[Beat 56]
 He took the elevator up. Forty seconds. The floor-wax smell didn't climb this high; by the time the doors opened he was back in the recycled flatness of his own floor. He used the key at his door out of habit instead of the panel, and went in.
 
 The tab was still open. Of course it was. SITE: ALL. QUANTITY: ONGOING. RATE: OPEN. Three fields, two settled, one waiting on him.

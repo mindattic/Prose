@@ -167,11 +167,25 @@ public class MarkdownFileService
             .GroupBy(x => x.Code, StringComparer.OrdinalIgnoreCase)
             .ToDictionary(g => g.Key, g => g.First().UniverseId, StringComparer.OrdinalIgnoreCase);
 
-        Guid UniverseForFile(DocClassification c) =>
-            c.Tier == "node" && !string.IsNullOrWhiteSpace(c.Scope)
-            && nodeUniverseLookup.TryGetValue(c.Scope.Trim(), out var uid)
-                ? uid
-                : Universe.SharedId;
+        // Slug → Universe.Id, for files whose frontmatter names its universe explicitly
+        // (`universe: scry`, etc.) — see ClassifyFile's `universeSlug` extraction. Without this,
+        // any hand-authored docs/universes/<CODE>.md file that isn't node-tier fell through to
+        // Universe.SharedId and became visible in every universe's DCM candidate set — the
+        // mechanism behind SCRY's Entos_HISTORY.md leaking into a NONFICTION book's context.
+        var universeBySlug = await db.Universes.AsNoTracking().IgnoreQueryFilters()
+            .Select(u => new { u.Slug, u.Id })
+            .ToDictionaryAsync(u => u.Slug, u => u.Id, StringComparer.OrdinalIgnoreCase, ct);
+
+        Guid UniverseForFile(DocClassification c)
+        {
+            if (c.Tier == "node" && !string.IsNullOrWhiteSpace(c.Scope)
+                && nodeUniverseLookup.TryGetValue(c.Scope.Trim(), out var nodeUid))
+                return nodeUid;
+            if (!string.IsNullOrWhiteSpace(c.UniverseSlug)
+                && universeBySlug.TryGetValue(c.UniverseSlug.Trim(), out var slugUid))
+                return slugUid;
+            return Universe.SharedId;
+        }
 
         foreach (var f in files)
         {
@@ -506,7 +520,7 @@ public class MarkdownFileService
 
     // ── Doc Context Stack classification (tier / scope / triggers) ──────────
 
-    public readonly record struct DocClassification(string Tier, string Scope, string Triggers, bool AutoTier, string Related = "");
+    public readonly record struct DocClassification(string Tier, string Scope, string Triggers, bool AutoTier, string Related = "", string UniverseSlug = "");
 
     // Registers are node-scoped — a story uses exactly ONE. Seed each register's
     // scope to the node CODE(s) that use it; unknowns get empty scope (curate via
@@ -577,6 +591,14 @@ public class MarkdownFileService
         // here we capture the raw CSV so the caller can store it for resolution.
         var relatedRaw = fm.TryGetValue("related", out var rel) ? NormalizeCsv(rel) : "";
 
+        // A hand-authored `universe: <slug>` frontmatter key is an explicit, unambiguous claim
+        // about which Universe this doc's CONTENT belongs to (as opposed to `scope:`, which is
+        // about DCM routing). Threaded through to UniverseForFile below so universe-specific
+        // canon (docs/universes/<CODE>.md) never silently falls back to Universe.SharedId just
+        // because it isn't a node-tier doc — that fallback is what let SCRY's Entos_HISTORY.md
+        // and HORROR's/GLMZ's universe-facts docs leak into every other universe's DCM context.
+        var universeSlug = fm.TryGetValue("universe", out var uSlug) ? uSlug.Trim().ToLowerInvariant() : "";
+
         var hasFmTier     = fm.TryGetValue("tier", out var fmTier) && !string.IsNullOrWhiteSpace(fmTier);
         var hasFmTriggers = fm.TryGetValue("triggers", out var fmTriggers) && !string.IsNullOrWhiteSpace(fmTriggers);
         // Either key alone means the author hand-authored explicit routing metadata — honor
@@ -588,18 +610,18 @@ public class MarkdownFileService
             var scope    = fm.TryGetValue("scope", out var s) ? NormalizeCsv(s) : "";
             var triggers = hasFmTriggers ? NormalizeCsv(fmTriggers!) : SeedTriggers(f, fm);
             var tier     = hasFmTier ? NormalizeTier(fmTier!) : "topic";
-            return new(tier, scope, triggers, AutoTier: false, relatedRaw);
+            return new(tier, scope, triggers, AutoTier: false, relatedRaw, universeSlug);
         }
 
         var fileName = Path.GetFileName(f.FilePath);
 
         if (AlwaysFiles.Contains(fileName))
-            return new("always", "*", "", AutoTier: true, relatedRaw);
+            return new("always", "*", "", AutoTier: true, relatedRaw, universeSlug);
 
         if (f.Category.Equals("register", StringComparison.OrdinalIgnoreCase))
         {
             var reg = Path.GetFileNameWithoutExtension(fileName);
-            return new("node", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true, relatedRaw);
+            return new("node", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true, relatedRaw, universeSlug);
         }
 
         // Node bibles live in docs/nodes/<CODE>.md (SS-A43); docs/strands/ kept for legacy layouts.
@@ -608,7 +630,7 @@ public class MarkdownFileService
             || relPath.StartsWith("docs/strands/", StringComparison.OrdinalIgnoreCase))
         {
             var code = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
-            return new("node", code, "", AutoTier: true, relatedRaw);
+            return new("node", code, "", AutoTier: true, relatedRaw, universeSlug);
         }
 
         // Series coordination docs (docs/series/*.md) are cross-story, so they get their own
@@ -617,10 +639,10 @@ public class MarkdownFileService
         if (relPath.StartsWith("docs/series/", StringComparison.OrdinalIgnoreCase))
         {
             var scope = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
-            return new("series", scope, SeedTriggers(f, fm), AutoTier: true, relatedRaw);
+            return new("series", scope, SeedTriggers(f, fm), AutoTier: true, relatedRaw, universeSlug);
         }
 
-        return new("topic", "", SeedTriggers(f, fm), AutoTier: true, relatedRaw);
+        return new("topic", "", SeedTriggers(f, fm), AutoTier: true, relatedRaw, universeSlug);
     }
 
     /// <summary>Parse top-level <c>key: value</c> pairs from a leading YAML frontmatter block.</summary>

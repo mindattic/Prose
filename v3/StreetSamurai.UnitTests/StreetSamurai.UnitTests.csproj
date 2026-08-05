@@ -25,6 +25,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StreetSamurai.Core\StreetSamurai.Core.csproj" />
+    <!-- Cli is referenced so argv-dispatch rules can be unit-tested (see UniverseCliDispatchTests).
+         Referencing an Exe is fine here: its entry point is ignored, the test host supplies its own. -->
+    <ProjectReference Include="..\StreetSamurai.Cli\StreetSamurai.Cli.csproj" />
   </ItemGroup>
 
 </Project>

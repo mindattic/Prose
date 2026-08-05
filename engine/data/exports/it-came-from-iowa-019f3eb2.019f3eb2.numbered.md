@@ -29,7 +29,9 @@ Low and steady. Not a failure sound. Not a bearing going bad or an actuator stic
 He was out of bed before he'd decided to be. If something was wrong with the machine, he'd find it and name it — that was the rule his father had drilled into him, the rule that kept a farm running. Find the fault. He'd walk out there and identify that sound if it took him till sunrise.
 
 [Beat 5]
-He dressed in the dark without the light. He'd done it enough times that his hands knew the way. He went out through the kitchen quiet, past his parents' door. They were still asleep, and this wasn't a sound you woke someone for until you knew what it was. He crossed the yard in his boots, laces only half-done. Two Eigenlift towers stood to the south in the pre-dawn grey, thirty stories each, rising straight out of the corn with no town around them. Corn, tower, corn. They'd been there longer than he had. They were just part of what Iowa looked like now.
+He dressed in the dark without the light. He'd done it enough times that his hands knew the way. He went out through the kitchen quiet, past his parents' door. They were still asleep, and this wasn't a sound you woke someone for until you knew what it was.
+
+He crossed the yard in his boots, laces only half-done. Two Eigenlift towers stood to the south in the pre-dawn grey, thirty stories each, rising straight out of the corn with no town around them. Corn, tower, corn. They'd been there longer than he had. They were just part of what Iowa looked like now.
 
 [Beat 6]
 The vibration reached him through the ground before he'd finished crossing the yard. Not a footfall. The machine didn't move that way at rest. He went faster and through the gate at the field margin without stopping.
@@ -47,7 +49,9 @@ He pushed through the underbrush and into the clearing. His feet stopped.
 The dead machine was at the far edge. It had collapsed onto two tines, the third snapped at the joint, the whole carapace tilted forward like a ship taking on water. Its hull was darker than the living machine's — more oxidized, the brass gone almost to char. It had been there days. Maybe longer. He hadn't come to the clearing in a week, and he hadn't known to look.
 
 [Beat 11]
-He moved closer and stopped. The hull had marks on it. Straight cuts at the panel seams, the kind a circular saw leaves when it's working fast and doesn't care about the surface. A mounting bracket bent away from the chassis the wrong way — pried, not unbolted. And low on the hull, a rectangular hole. Twenty inches by fourteen, where a module had sat in its bracket and was now gone. The edges of the hole were clean. Cut out, not torn.
+He moved closer and stopped. The hull had marks on it.
+
+Straight cuts at the panel seams, the kind a circular saw leaves when it's working fast and doesn't care about the surface. A mounting bracket bent away from the chassis the wrong way — pried, not unbolted. And low on the hull, a rectangular hole. Twenty inches by fourteen, where a module had sat in its bracket and was now gone. The edges of the hole were clean. Cut out, not torn.
 
 [Beat 12]
 He looked at the forward strut. It was wrong. Not broken. Not bent from the fall. It was twisted — the metal going two ways at once, a shape metal wasn't supposed to make. He'd read maintenance manuals since he was eight. Stress fracture, overload, impact — this was none of them. This was the strut doing something on its own.
@@ -56,7 +60,9 @@ He looked at the forward strut. It was wrong. Not broken. Not bent from the fall
 He was looking at the strut when he saw the movement at the hull seam.
 
 [Beat 14]
-Thin. A slow line of them, moving through the gap where the forward panel had warped away in the same wrong direction as the strut. Small enough that he almost missed them in the grey. He stood very still.
+Thin. A slow line of them, moving through the gap where the forward panel had warped away in the same wrong direction as the strut. Small enough that he almost missed them in the grey.
+
+He stood very still.
 
 [Beat 15]
 He'd read every manual his father kept in the barn. He thought he knew what a Behemoth was, and what it held.
@@ -80,7 +86,9 @@ Not working. Not calibrating. The scythe-arm was out, the ring still, the arm re
 The wail went on. Low and steady, the chest-note that had pulled him out of bed. It didn't rise or fall. It held.
 
 [Beat 22]
-Wes stood at the edge of the clearing with his hands at his sides. He didn't step forward. He didn't call out. He'd never called out to the machine in his life — it wasn't that kind of machine — but that wasn't what stopped him now. What stopped him was the feeling that he'd walked in on something private.
+Wes stood at the edge of the clearing with his hands at his sides. He didn't step forward. He didn't call out. He'd never called out to the machine in his life — it wasn't that kind of machine — but that wasn't what stopped him now.
+
+What stopped him was the feeling that he'd walked in on something private.
 
 [Beat 23]
 He watched the arm nudge the dark hull. Withdraw. Nudge again. The sensor apertures on the living machine's face were angled down at the dead one. The morning was very still. Two shapes in a clearing, one warm and one cold.
@@ -123,7 +131,9 @@ Wes stood at the treeline. There was a word for what Pip had just done. He didn'
 Dawn came. The sky went from dark grey to pale yellow along the horizon, and the dew went silver on the tall grass for a minute before it was just wet grass again. In the new light the dead machine's hull looked darker and more settled. Finished.
 
 [Beat 33]
-The living machine's manipulator arm retracted. Then the drill-tine. Then the sowing tube, still sealed, swinging back to its bracket. One by one, the way they went at the end of a work cycle. Then the tines shifted — a long stride-test, each leg finding its weight, the body swinging south. Not a calibration move. A bearing.
+The living machine's manipulator arm retracted. Then the drill-tine. Then the sowing tube, still sealed, swinging back to its bracket. One by one, the way they went at the end of a work cycle.
+
+Then the tines shifted — a long stride-test, each leg finding its weight, the body swinging south. Not a calibration move. A bearing.
 
 [Beat 34]
 Five miles an hour is slower than a run and faster than a walk. The machine had its direction before the first full stride finished. Each footfall came down with a weight Wes felt through the ground, through the grass, through the soles of his boots.
@@ -136,7 +146,9 @@ Pip stood up from beside the dead machine. He shook himself once — he always d
 He didn't look back.
 
 [Beat 36]
-The machine passed Wes at the treeline, close enough to smell — turned earth, warm metal, and something else under it he'd noticed before but never named. The hull passed, then the tines, then the rear stabilizers, and then he was watching it move away from him through the grey.
+The machine passed Wes at the treeline, close enough to smell — turned earth, warm metal, and something else under it he'd noticed before but never named.
+
+The hull passed, then the tines, then the rear stabilizers, and then he was watching it move away from him through the grey.
 
 [Beat 37]
 South. Straight line. Five miles an hour.
@@ -213,7 +225,9 @@ The Dixon outer buffer post was two rooms, a charging rack for the patrol drones
 CJ had stopped needing it around week four.
 
 [Beat 61]
-Three months in. Halfway to Iowa or the edge of the world — she'd decided early it didn't much matter which. She'd trained at Kansas City Division: eight months, full tactical track, mobile intercept certified, top quartile on the aerial deploy exam. Then the placement officer had said "Dixon" the way people say a thing they've already decided you can't argue with. It was where they sent juniors to prove they could handle a slow posting without their judgment going soft. He hadn't used the word boredom. He hadn't needed to.
+Three months in. Halfway to Iowa or the edge of the world — she'd decided early it didn't much matter which. She'd trained at Kansas City Division: eight months, full tactical track, mobile intercept certified, top quartile on the aerial deploy exam.
+
+Then the placement officer had said "Dixon" the way people say a thing they've already decided you can't argue with. It was where they sent juniors to prove they could handle a slow posting without their judgment going soft. He hadn't used the word boredom. He hadn't needed to.
 
 [Beat 62]
 Her alert board lit at 0614.
@@ -235,7 +249,9 @@ She read it again.
 No manufacturer tag. No registry — the system had queried twice and come back empty both times. Either the transponder had failed or it had never been installed.
 
 [Beat 64]
-The dead kill-switch was the part that sat wrong in her chest. Kill-switches were hardwired — not registered, not updated from a distance. A dead one meant either total internal failure or something the field manual had no words for.
+The dead kill-switch was the part that sat wrong in her chest.
+
+Kill-switches were hardwired — not registered, not updated from a distance. A dead one meant either total internal failure or something the field manual had no words for.
 
 [Beat 65]
 She put the coffee down.
@@ -279,7 +295,9 @@ She didn't touch the demolition log.
 The drones came in from the south while the machine was crossing through Hillsdale.
 
 [Beat 72]
-Wes heard them first — a triple-toned whine over the noise of the walking, the sound that marked Eigenlift interdiction units at a distance. Then he saw them: a staggered V, three units, gray and angular, hovering at hull height. They matched the machine's pace and held forty feet off the forward sensor cluster.
+Wes heard them first — a triple-toned whine over the noise of the walking, the sound that marked Eigenlift interdiction units at a distance. Then he saw them: a staggered V, three units, gray and angular, hovering at hull height.
+
+They matched the machine's pace and held forty feet off the forward sensor cluster.
 
 [Beat 73]
 Wes sat very still on the Crown. The machine didn't slow. The footfall kept its two-second beat. The formation drifted south at 4.9 miles an hour, holding, scanning.
@@ -288,16 +306,24 @@ Wes sat very still on the Crown. The machine didn't slow. The footfall kept its 
 The scythe-arm extended.
 
 [Beat 75]
-It came off the bracket smooth, the ring already spinning by the time the arm was half out — he could hear it in the pitch, that high whine he'd grown up with, the blade coming up to harvest speed. The arm tracked left, toward the formation, and swept.
+It came off the bracket smooth, the ring already spinning by the time the arm was half out — he could hear it in the pitch, that high whine he'd grown up with, the blade coming up to harvest speed.
+
+The arm tracked left, toward the formation, and swept.
 
 [Beat 76]
-He felt the sweep before he saw it land — the arm's weight leaning out and back through the hull, a slow shift in the tremor under him, then the return. One drone. The arm caught the unit on its port side, and it went sideways and down, forty feet into the Hillsdale corn. No explosion. Just polymer and aluminum meeting a ceramic edge, and then the drone wasn't where it had been.
+He felt the sweep before he saw it land — the arm's weight leaning out and back through the hull, a slow shift in the tremor under him, then the return. One drone. The arm caught the unit on its port side, and it went sideways and down, forty feet into the Hillsdale corn.
+
+No explosion. Just polymer and aluminum meeting a ceramic edge, and then the drone wasn't where it had been.
 
 [Beat 77]
 The machine kept walking. The arm reset.
 
 [Beat 78]
-The other two units tried to reposition — a tight adjustment, the kind programmed for losing one unit in formation — but the move brought one of them inside the sweep, and the arm came again. Same motion. No hurry in it, no aiming that Wes could see. The arm moved the way it moved through corn at harvest: steady, the smallest arc needed to make the obstacle not be there. The second unit dropped into the rows.
+The other two units tried to reposition — a tight adjustment, the kind programmed for losing one unit in formation — but the move brought one of them inside the sweep, and the arm came again.
+
+Same motion.
+
+No hurry in it, no aiming that Wes could see. The arm moved the way it moved through corn at harvest: steady, the smallest arc needed to make the obstacle not be there. The second unit dropped into the rows.
 
 [Beat 79]
 The third drone held for about four seconds.
@@ -318,16 +344,22 @@ Wes looked down at the field. One unit was still cycling, its nav light blinking
 Pip was below, in the shadow of the rear stabilizer. He hadn't changed pace when the drones came in. He hadn't looked up when they went down. He was just running, low and steady, at five miles an hour, because that was where Wes was.
 
 [Beat 85]
-The 88 corridor opened out ahead — flat land, corn, Eigenlift towers at the horizon, rising from the fields with no warning the way they always did out here. South, and more south.
+The 88 corridor opened out ahead — flat land, corn, Eigenlift towers at the horizon, rising from the fields with no warning the way they always did out here.
+
+South, and more south.
 
 [Beat 86]
-Wes thought about the footage. Somebody was watching this on a screen somewhere: the formation coming in clean, by the book, built for exactly this. The arm fires. The unit drops. The machine keeps walking. Biplanes off the Empire State Building.
+Wes thought about the footage. Somebody was watching this on a screen somewhere: the formation coming in clean, by the book, built for exactly this.
+
+The arm fires. The unit drops. The machine keeps walking. Biplanes off the Empire State Building.
 
 [Beat 87]
-Whatever stopped this was not going to come off a screen. If anything stopped it at all — and he wasn't sure anything would, or that it should — it was going to have to come from up here, from the one rider the machine had let stay.
+Whatever stopped this wasn't going to come off a screen. He gripped the Crown edge harder, the ceramic warm under his palms, and didn't let go. If anything stopped it at all — and he wasn't sure anything would, or that it should — it was going to have to come from up here, from the one rider the machine had let stay.
 
 [Beat 88]
-The drainage break at Erie ran under a concrete span, maybe forty feet of shadow, and the scav camp had set up in the shadow the way scav camps do — efficient, temporary, already half torn down by the time you got a good look. Salvage frames. A flatbed stacked with stripped copper conduit and machine-salvage brackets. Three men working, maybe more behind the frames he couldn't see.
+The drainage break at Erie ran under a concrete span, maybe forty feet of shadow, and the scav camp had set up in the shadow the way scav camps do — efficient, temporary, already half torn down by the time you got a good look.
+
+Salvage frames. A flatbed stacked with stripped copper conduit and machine-salvage brackets. Three men working, maybe more behind the frames he couldn't see.
 
 [Beat 89]
 Wes saw it from the Crown about two minutes out. He knew right away.
@@ -335,13 +367,17 @@ Wes saw it from the Crown about two minutes out. He knew right away.
 [Beat 90]
 The sensor array moved first.
 
-He'd watched it angle down at Pip and at the corn and at the road all morning, the two forward apertures tracking whatever was under the hull. Now it swung toward the flatbed and locked. The whole array rotated, precise, and held.
+He'd watched it angle down at Pip and at the corn and at the road all morning, the two forward apertures tracking whatever was under the hull.
+
+Now it swung toward the flatbed and locked. The whole array rotated, precise, and held.
 
 [Beat 91]
 The hull changed under him — a vibration he'd felt once before, in the clearing at dawn, when the scythe-arm kept returning to the hole in the dead machine's chassis. The same note. The same short burst of it.
 
 [Beat 92]
-He looked at the flatbed's load. Brackets in the sun. Stripped housings. Copper conduit. And there, half under a section of housing panel: a color he knew. That exact weathered brass-gone-to-bone shade. The dead machine's hull plating.
+He looked at the flatbed's load. Brackets in the sun. Stripped housings. Copper conduit.
+
+And there, half under a section of housing panel: a color he knew. That exact weathered brass-gone-to-bone shade. The dead machine's hull plating.
 
 [Beat 93]
 He understood what was on the flatbed. And in the half-second before anything else happened, he understood that the machine had read it too.
@@ -364,13 +400,19 @@ He'd tried to leash it.
 Wes couldn't get down in time — not while the machine was walking, not from a hundred feet. He'd already shouted twice.
 
 [Beat 99]
-He looked at the sensor array. Six inches from his right hand, the apertures clustered at the Crown's forward edge. Every maintenance record he'd read said the same thing about touching it: the machine answers, immediately, hard-coded, and nothing in the schedule turns that off. He had never wanted to test it.
+He looked at the sensor array. Six inches from his right hand, the apertures clustered at the Crown's forward edge.
+
+Every maintenance record he'd read said the same thing about touching it: the machine answers, immediately, hard-coded, and nothing in the schedule turns that off.
+
+He had never wanted to test it.
 
 [Beat 100]
 His hand moved.
 
 [Beat 101]
-The hull answered before his fingers landed — a vibration from somewhere inside, fast and wrong, nothing to do with the footfall — and his hand pulled back on its own, both palms flat on the Crown, his body pressing into the dome. He hadn't chosen it. The machine had answered before he finished the question.
+The hull answered before his fingers landed — a vibration from somewhere inside, fast and wrong, nothing to do with the footfall — and his hand pulled back on its own, both palms flat on the Crown, his body pressing into the dome.
+
+He hadn't chosen it. The machine had answered before he finished the question.
 
 [Beat 102]
 The machine stepped.
@@ -386,7 +428,9 @@ Wes kept his eyes open. There was no time in the gap between the step and what t
 He made himself keep looking.
 
 [Beat 105]
-The man had worn the high-visibility yellow that was supposed to mean here I am, take account of me. The parts were worth money. The copper was worth money. You went out early and you worked the load. It was the same reason Wes had spent his whole life around a maintenance crew — the same work, from the other end of the ownership line.
+The man had worn the high-visibility yellow that was supposed to mean here I am, take account of me. The parts were worth money. The copper was worth money. You went out early and you worked the load.
+
+It was the same reason Wes had spent his whole life around a maintenance crew — the same work, from the other end of the ownership line.
 
 [Beat 106]
 Then the threat-wail came from somewhere inside the hull.
@@ -407,11 +451,7 @@ The machine kept walking. The stride didn't change. The bearing didn't change. I
 The yellow vest fell behind them, then the drainage concrete, then the whole camp, and the corn came back on both sides. The threat-wail held, layered and wrong, and it carried over the rows long after the camp was gone behind them.
 
 [Beat 112]
-The call came in at 0947. ArcSec mobile, patrol five from the 88 corridor.
-
-"Anderson. Mass event near Erie. Civilian down, non-responsive." The officer's voice had the careful flatness of a man building a log. "Scav camp at the drainage break. Coordinates follow."
-
-She wrote them to the skimmer display and turned south.
+The call came in at 0947. ArcSec mobile — Arcturus's contract patrol, the only badge this corridor had had in a hundred years — patrol five from the 88 corridor.
 
 [Beat 113]
 A mobile unit was already staged at the drainage break, a single officer named Mistry who met her at the concrete span like he'd been waiting. The scene: a flatbed with its load still on it, a winch cable in the dirt, a yellow safety vest by the tine impression in the concrete. One man gone. Two survivors — one sedated in the mobile unit, one sitting against the drainage wall with a taped cut over his left eye.
@@ -441,7 +481,9 @@ He didn't answer that right away.
 
 "We sold the load four days ago. A junker who runs the corridor. Name's Ferko Nzambe. Takes whatever you've got, doesn't ask what it is. Runs an Eigenlift cargo platform, old flatbed type, beat-up gray. Heading south for the GLMZ run."
 
-"He took the broadcasting modules."
+South meant deeper into the Zone — the Great Lakes corridor, more buyers, fewer questions.
+
+"He took the broadcasting modules?"
 
 "We didn't mention it." He looked at the concrete. "He didn't ask."
 
@@ -456,7 +498,9 @@ Hauser came in forty seconds after she was back on the road.
 "Anderson. Civilian casualty confirmed at Erie. Three interdiction assets destroyed or disabled. Zone-Twelve perimeter breach in roughly ninety minutes at current pace." A pause. "My authorization doesn't require your concurrence. I'm asking because you were at the drainage break. What are you seeing?"
 
 [Beat 117]
-She was moving. The display had the machine's telemetry dot — 4.9 miles an hour, bearing unchanged — and while she watched it the shape of the thing came together. The machine wasn't walking toward the Zone density. It was walking toward Nzambe's load. Every eleven seconds, the same pulse: a locator. It had a fix on the parts, and it had been following that fix since Davenport.
+"It was moving." The display had the machine's telemetry dot — 4.9 miles an hour, bearing unchanged — and while she watched it the shape of the thing came together.
+
+The machine wasn't walking toward the Zone density. It was walking toward Nzambe's load. Every eleven seconds, the same pulse: a locator. It had a fix on the parts, and it had been following that fix since Davenport.
 
 [Beat 118]
 "Request more time, sir," she said.
@@ -469,10 +513,10 @@ Hauser let the channel go quiet for two seconds. That was his version of thinkin
 
 "Understood."
 
-He closed the channel. He always closed when the conversation was done, not when the frustration peaked — she'd learned that in three months.
+He closed the channel. He always closed when the conversation was done, not when the frustration peaked — she'd learned that in three months. He wasn't wrong to be afraid of what was walking through his sector. He was wrong about what it was afraid of.
 
 [Beat 119]
-She was logging non-concurrence against a case she couldn't disprove. On paper he wasn't wrong. He just didn't know what she'd learned at the drainage break.
+Her thumb hovered over the concurrence field before she logged the refusal instead. On paper he wasn't wrong. He just didn't know what she'd learned at the drainage break.
 
 She still had to find Ferko Nzambe.
 
@@ -495,7 +539,11 @@ The second wave came in near Prophetstown.
 Five units this time, not three, and a wider spread — two at hull height, two angled down from above, the fifth hanging back a hundred yards. Wes figured the fifth for a relay or a reserve. Smart, if it was. He didn't know enough about ArcSec drone doctrine to say.
 
 [Beat 124]
-The scythe-arm extended three times. The first unit at hull height went the way the Hillsdale drones had gone — the arm tracked out, the ring caught the frame, the drone dropped into the corn. The second went next, the arm redirecting without fully folding between passes, cleaner than the first time. The third was one of the high units, so the arm swung wider, and it did the job. No hurry in any of it. The same arc it used on corn.
+The scythe-arm extended three times. The first unit at hull height went the way the Hillsdale drones had gone — the arm tracked out, the ring caught the frame, the drone dropped into the corn.
+
+The second went next, the arm redirecting without fully folding between passes, cleaner than the first time.
+
+The third was one of the high units, so the arm swung wider, and it did the job. No hurry in any of it. The same arc it used on corn.
 
 [Beat 125]
 Two units pulled back out of the sweep. The reserve at a hundred yards held. The machine let them go.
@@ -510,7 +558,9 @@ In Dixon, the spike crossed CJ's display. The broadcast amplitude, already flagg
 The two survivors hovered at a hundred yards, then began moving south — parallel to the machine, wide, outside the sweep. Tracking, not attacking. Wes didn't know whether someone on the other end had decided that or the formation just did it when it ran out of moves. Either way it was fine.
 
 [Beat 129]
-The machine settled into its rhythm again — five miles an hour, footfall every two seconds, the hull a drum under him, the broadcast running patient under the stride. The morning was long gone. The sun was past overhead now, starting to pull the shadows long.
+The machine settled into its rhythm again — five miles an hour, footfall every two seconds, the hull a drum under him, the broadcast running patient under the stride.
+
+The morning was long gone. The sun was past overhead now, starting to pull the shadows long.
 
 [Beat 130]
 He'd been awake since before four.
@@ -531,10 +581,16 @@ He woke when the light had changed — lower, the kind of afternoon shadow that 
 He'd fallen asleep on the back of the thing he'd watched kill a man.
 
 [Beat 136]
-The yellow vest came back before he could stop it — not as a thought but as a picture, sitting behind his eyes ahead of the stiff neck and the sun and the road. The man with the winch cable, looking up once and going back to work. The tine rising into the next stride like nothing had happened.
+The yellow vest came back before he could stop it — not as a thought but as a picture, sitting behind his eyes ahead of the stiff neck and the sun and the road.
+
+The man with the winch cable, looking up once and going back to work.
+
+The tine rising into the next stride like nothing had happened.
 
 [Beat 137]
-He gripped the Crown edge until that steadied too. Below him Pip ran on, raw-padded, five miles an hour, because that was where Wes was.
+He gripped the Crown edge until that steadied too.
+
+Below him Pip ran on, raw-padded, five miles an hour, because that was where Wes was.
 
 [Beat 138]
 He didn't sleep again.
@@ -543,7 +599,9 @@ He didn't sleep again.
 CJ went west on the 88 past midday, the skimmer two feet off the asphalt, the afternoon flat and hot enough that she'd already shed the layer she'd grabbed off the rack that morning.
 
 [Beat 140]
-The 88 ran empty at this hour, and for one open stretch she let the throttle go. The repulsor field held its two feet above the surface and didn't negotiate with the terrain — asphalt, shoulder, gravel, drainage break, all the same to it. She pulled back before the drone wreckage: three units in the Hillsdale corn, a scatter she marked on the display without stopping.
+The 88 ran empty at this hour, and for one open stretch she let the throttle go. The repulsor field held its two feet above the surface and didn't negotiate with the terrain — asphalt, shoulder, gravel, drainage break, all the same to it.
+
+She pulled back before the drone wreckage: three units in the Hillsdale corn, a scatter she marked on the display without stopping.
 
 [Beat 141]
 The yellow vest was still at the drainage break, ArcSec mobile already on it. She logged her position and kept moving. Nothing she could do there that wasn't already being done.
@@ -556,10 +614,18 @@ She almost didn't. The forward display had the machine telemetry and the corrido
 Then she looked again.
 
 [Beat 143]
-A terrier cross. Small, built low, the kind of dog that looks put together specifically to be hard to stop once it has somewhere to be. He was running the road shoulder in the machine's shadow — same bearing, same pace, head-down, a trot he'd probably held since Davenport. From two feet up she could see his pads: raw, the kind of raw that stops most dogs thirty miles back. He was panting, and he was not stopping.
+A terrier cross. Small, built low, the kind of dog that looks put together specifically to be hard to stop once it has somewhere to be.
+
+He was running the road shoulder in the machine's shadow — same bearing, same pace, head-down, a trot he'd probably held since Davenport.
+
+From two feet up she could see his pads: raw, the kind of raw that stops most dogs thirty miles back.
+
+He was panting, and he was not stopping.
 
 [Beat 144]
-She brought the skimmer alongside and matched his pace, which put her hovering next to a terrier in the shadow of a forty-ton machine on the 88 west of Dixon. She looked at him. He looked up at her — ears forward, one quick flick — then went back to his work, because the ground ahead wasn't going to watch itself.
+She brought the skimmer alongside and matched his pace, which put her hovering next to a terrier in the shadow of a forty-ton machine on the 88 west of Dixon.
+
+She looked at him. He looked up at her — ears forward, one quick flick — then went back to his work, because the ground ahead wasn't going to watch itself.
 
 [Beat 145]
 She reached down and scooped him up.
@@ -604,7 +670,9 @@ Ten. No neuretics — too young for the mesh. She'd heard his voice and thought 
 "Okay," she said, and raised her voice over the wind. "Shouting works fine."
 
 [Beat 153]
-Then the machine's telemetry bloomed red across her forward display — the whole left column, gait error stacking on gait error, and a corridor flag she'd never seen thrown live: HERDING FAULT — WALKER OFF-ROUTE. The bearing on her overlay swung. The machine wasn't walking south anymore. It was turning, slow and certain, off the 88 and toward the Hillsdale corn — toward the drone wreckage she'd logged and left behind, three units of hot scatter in the standing crop — and there was a ten-year-old riding the Crown of it, ninety feet up, with nothing under his hands but a dome he'd already nearly come off once.
+Then the machine's telemetry bloomed red across her forward display — the whole left column, gait error stacking on gait error, and a corridor flag she'd never seen thrown live: HERDING FAULT — WALKER OFF-ROUTE.
+
+The bearing on her overlay swung. The machine wasn't walking south anymore. It was turning, slow and certain, off the 88 and toward the Hillsdale corn — toward the drone wreckage she'd logged and left behind, three units of hot scatter in the standing crop — and there was a ten-year-old riding the Crown of it, ninety feet up, with nothing under his hands but a dome he'd already nearly come off once.
 
 [Beat 154]
 She keyed Hauser. The channel gave her nothing but the flat tone of a node that wasn't answering.
@@ -629,7 +697,7 @@ She looked at the data. She didn't answer that.
 
 He was quiet a moment. "Yes."
 
-"Tell me what you saw."
+"Tell me what you saw?"
 
 [Beat 157]
 He described the clearing. The dead machine collapsed onto two tines, the hull oxidized darker than the living one. The living machine beside it, the scythe-arm out, nudging the dead hull. The sound that had pulled him out of bed.
@@ -644,7 +712,7 @@ CJ looked at the telemetry. The broadcast interval: eleven seconds, steady, the 
 [Beat 159]
 He was quiet long enough that she counted the interval out: eleven seconds. The machine broadcast. Nothing came back.
 
-"It's not asking," he said. "Is it?"
+"It's not asking," he asked. "Is it?"
 
 "No. I thought it was a question — an interval looking for a matching answer. But the agitation markers ticked down after Erie, not up. It's following the signal. Nzambe's load has been answering from wherever he's parked, whether he knows it or not."
 
@@ -695,7 +763,9 @@ Hauser's channel opened sixty seconds after she left. She was already at speed o
 CJ opened the throttle on the straight stretch west of Lyndon and let the machine shrink in the display to a slow dot that stayed slow.
 
 [Beat 168]
-She found Ferko Nzambe at the Zone-12 checkpoint, in the staging lane, his Eigenlift cargo platform fourth in the queue, hovering two feet off the road, the salvage load stacked under a weathered cargo net. She cut the throttle. The skimmer went from over a hundred to a stop in the time it took to breathe out.
+She found Ferko Nzambe at the Zone-12 checkpoint, in the staging lane, his Eigenlift cargo platform fourth in the queue, hovering two feet off the road, the salvage load stacked under a weathered cargo net.
+
+She cut the throttle. The skimmer went from over a hundred to a stop in the time it took to breathe out.
 
 [Beat 169]
 Nzambe was mid-fifties, a broad man in a gray work jacket. He looked at the ArcSec logo on her jacket. Then at the skimmer. Then at her face.
@@ -722,7 +792,11 @@ He looked at her a moment.
 Then he got off the platform.
 
 [Beat 173]
-The module was near the forward left corner of the load, under a broken housing panel and a coil of stripped conduit. He went straight to it, no searching. He'd known it was there and he'd been thinking about it. Rectangular, twenty inches on its longest side, the surface oxidized the same brass-to-bone color as the hull she'd been watching on telemetry all day. Still warm. Still broadcasting — close enough now that she could hear it without the scanner, a subsonic pulse every eleven seconds, patient and steady.
+The module was near the forward left corner of the load, under a broken housing panel and a coil of stripped conduit. He went straight to it, no searching.
+
+He'd known it was there and he'd been thinking about it.
+
+Rectangular, twenty inches on its longest side, the surface oxidized the same brass-to-bone color as the hull she'd been watching on telemetry all day. Still warm. Still broadcasting — close enough now that she could hear it without the scanner, a subsonic pulse every eleven seconds, patient and steady.
 
 [Beat 174]
 She took it in both hands. It was heavier than its size.
@@ -762,7 +836,9 @@ The machine stood still.
 For maybe three seconds nothing moved. The module sat between the forward tines, still broadcasting every eleven seconds, and the machine's sensor array was angled down at it.
 
 [Beat 181]
-Then an arm extended — not the scythe-ring but a different one, a manipulator she hadn't seen it use, narrower, three-fingered at the tip. It came down slow, ninety feet of descent over maybe eight seconds. She watched it lower over the module, pause as if reading its size, then close.
+Then an arm extended — not the scythe-ring but a different one, a manipulator she hadn't seen it use, narrower, three-fingered at the tip. It came down slow, ninety feet of descent over maybe eight seconds.
+
+She watched it lower over the module, pause as if reading its size, then close.
 
 [Beat 182]
 Gently. The way you pick something up when you know exactly what it weighs and have learned to respect the weight.
@@ -777,10 +853,14 @@ The arm raised it level with the sensor array — ninety feet off the ground, th
 The machine held the module a long time.
 
 [Beat 186]
-Wes had both palms flat on the hull. He wasn't looking at CJ. He was looking at the Crown plating under his hands, feeling something she couldn't feel from down here. She watched him hold still — the careful quality of it, like someone in a room where they don't want to make a sound.
+Wes had both palms flat on the hull. He wasn't looking at CJ. He was looking at the Crown plating under his hands, feeling something she couldn't feel from down here.
+
+She watched him hold still — the careful quality of it, like someone in a room where they don't want to make a sound.
 
 [Beat 187]
-The sound the machine made now had no name in Wes's catalog, and he had a name for nearly everything it did. It ran under all the others — under the mourning wail, under the broadcast pulse, under the threat-wail and the interval signal — lower than any of them: a single low harmonic, two notes at once, the kind the hull made when nothing else was pulling at it. Internal. A system holding a temperature it had carried all day.
+The sound the machine made now had no name in Wes's catalog, and he had a name for nearly everything it did.
+
+It ran under all the others — under the mourning wail, under the broadcast pulse, under the threat-wail and the interval signal — lower than any of them: a single low harmonic, two notes at once, the kind the hull made when nothing else was pulling at it. Internal. A system holding a temperature it had carried all day.
 
 [Beat 188]
 It held the module maybe twenty seconds.
@@ -807,10 +887,14 @@ This was not the walking angle — the walking angle was diagonal, a stride, wei
 A second tine. Next to the first. Same line, same angle.
 
 [Beat 194]
-CJ stood at the skimmer with Pip at her feet. She didn't move. The tines drove and withdrew in turn, working the hole into a shape, and the shape was clear: the size of the module. Rectangular. Precise. Four feet deep when she tried to read it off the tine geometry, then five.
+CJ stood at the skimmer with Pip at her feet. She didn't move.
+
+The tines drove and withdrew in turn, working the hole into a shape, and the shape was clear: the size of the module. Rectangular. Precise. Four feet deep when she tried to read it off the tine geometry, then five.
 
 [Beat 195]
-Read it, she told herself. Whatever it's doing to that module, get it all — the depth, the interval, the sequence — get enough that somebody downstream can make sense of it. That was the whole job now: witness this correctly, hold the record, don't lose a single reading before it went quiet.
+Read it, she told herself. Whatever it's doing to that module, get it all — the depth, the interval, the sequence — get enough that somebody downstream can make sense of it.
+
+That was the whole job now: witness this correctly, hold the record, don't lose a single reading before it went quiet.
 
 [Beat 196]
 Wes had both palms on the Crown plating. The tines driving down felt different from walking — percussive, purposeful, a rhythm with nothing to do with covering ground.
@@ -869,7 +953,11 @@ He looked at the flat Illinois horizon. Corn rows running north. Eigenlift tower
 [Beat 214]
 He started down.
 
-No one helped him. He didn't need help. He'd learned the hull's seams on the way up — the strut edges, the maintenance-plate edges, the repair seam on the southwest face he'd used as a landmark twice without meaning to. He went down the way the machine had gone all day: deliberate, unhurried. CJ was there when he reached the last strut, close enough to put a hand on his elbow when he landed.
+No one helped him. He didn't need help. He'd learned the hull's seams on the way up — the strut edges, the maintenance-plate edges, the repair seam on the southwest face he'd used as a landmark twice without meaning to.
+
+He went down the way the machine had gone all day: deliberate, unhurried.
+
+CJ was there when he reached the last strut, close enough to put a hand on his elbow when he landed.
 
 [Beat 215]
 He came off the last two feet onto the Dixon gravel. Scraped hands. Sunburned right cheek. Boots dirty from the Crown and the struts and from the yard in the dark before four that morning, when he'd gone out with his laces half-done.
@@ -910,7 +998,7 @@ The corn stood in the late light. The Rock River ran somewhere to the east, audi
 Wes watched the horizon a while after.
 
 [Beat 227]
-CJ pulled the scanner back off the rack. She wrote: behavioral anomaly, origin unknown, threat level zero. Recommendation: leave the dead machine in Iowa in place. She filed it as written. She did not write the new sound.
+CJ pulled the scanner back off the rack. She logged the anomaly and the recommendation — behavioral anomaly, origin unknown, threat level zero; leave the dead machine in Iowa in place — but left the new sound out of the report.
 
 [Beat 228]
 "What do you call it?" CJ asked.

@@ -612,6 +612,39 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LocalLlmService>();
         services.AddSingleton<DallEService>();
         services.AddSingleton<TokenLedger>();
+
+        // Cover image providers (openai/stability/google) — CoverImageService picks by id.
+        // All three call their REST APIs directly via IHttpClientFactory.CreateClient(name)
+        // (not the typed-client pattern), so they're named clients + plain singletons, not
+        // AddHttpClient<T>(). OpenAI bypasses Legion's image transport (see class doc) since
+        // Legion sends a `response_format` field OpenAI's current endpoint rejects outright.
+        services.AddHttpClient(nameof(Services.CoverImage.OpenAiCoverImageProvider));
+        services.AddSingleton<Services.CoverImage.OpenAiCoverImageProvider>();
+        services.AddHttpClient(nameof(Services.CoverImage.StabilityCoverImageProvider));
+        services.AddSingleton<Services.CoverImage.StabilityCoverImageProvider>();
+        services.AddHttpClient(nameof(Services.CoverImage.GoogleImagenCoverImageProvider));
+        services.AddSingleton<Services.CoverImage.GoogleImagenCoverImageProvider>();
+        services.AddSingleton<ICoverImageProvider>(sp => sp.GetRequiredService<Services.CoverImage.OpenAiCoverImageProvider>());
+        services.AddSingleton<ICoverImageProvider>(sp => sp.GetRequiredService<Services.CoverImage.StabilityCoverImageProvider>());
+        services.AddSingleton<ICoverImageProvider>(sp => sp.GetRequiredService<Services.CoverImage.GoogleImagenCoverImageProvider>());
+        services.AddSingleton<CoverPromptService>();
+        services.AddSingleton<CoverTitleCompositorService>();
+        services.AddSingleton<CoverImageService>();
+
+        // BookTok video providers (kling/runway/sora) — same named-client + singleton +
+        // AddSingleton<TInterface> pattern as the cover-image providers above.
+        services.AddHttpClient(nameof(Services.VideoGen.KlingVideoProvider));
+        services.AddSingleton<Services.VideoGen.KlingVideoProvider>();
+        services.AddHttpClient(nameof(Services.VideoGen.RunwayVideoProvider));
+        services.AddSingleton<Services.VideoGen.RunwayVideoProvider>();
+        services.AddHttpClient(nameof(Services.VideoGen.SoraVideoProvider));
+        services.AddSingleton<Services.VideoGen.SoraVideoProvider>();
+        services.AddSingleton<IVideoGenerationProvider>(sp => sp.GetRequiredService<Services.VideoGen.KlingVideoProvider>());
+        services.AddSingleton<IVideoGenerationProvider>(sp => sp.GetRequiredService<Services.VideoGen.RunwayVideoProvider>());
+        services.AddSingleton<IVideoGenerationProvider>(sp => sp.GetRequiredService<Services.VideoGen.SoraVideoProvider>());
+        services.AddSingleton<BookTokMockupService>();
+        services.AddSingleton<BookTokVideoService>();
+
         services.AddSingleton<CommandCostEstimatorService>();
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),
@@ -910,8 +943,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ExportCleanupService>();
         services.AddSingleton<DocxExportService>();
         services.AddSingleton<ManuscriptExportService>();
+        services.AddSingleton<NodeFullExportService>();
         services.AddSingleton<KdpManifestService>();
         services.AddSingleton<KdpMarkPublishedService>();
+        services.AddSingleton<KdpRunLogService>();
         services.AddSingleton<AudiblePackageService>(sp =>
             new AudiblePackageService(
                 sp.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>(),

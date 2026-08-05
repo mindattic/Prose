@@ -54,12 +54,14 @@ public class KdpOperatorService
         }
 
         // Hard gate, enforced here (not just in the UI's RunSelectedAsync) so it can never be
-        // bypassed by any other caller: a book needs an actual .epub (not a docx-only fallback —
-        // KDP auto-converts docx, but that conversion is unverified and this is the format we
-        // actually want live), a cover.jpg, and the human sign-off marker before it's even
-        // eligible to run, for EITHER flow. Republish never re-uploads the cover, but a book
-        // missing one is incomplete regardless — better to refuse it here than silently republish
-        // text-only forever.
+        // bypassed by any other caller — see KdpManifestEntry.MeetsHardPublishGate for the single
+        // authoritative rule (never re-derive it inline): .publish marker + cover.jpg +
+        // description.txt all present on disk, an actual .epub (not a docx-only fallback — KDP
+        // auto-converts docx, but that conversion is unverified and this is the format we
+        // actually want live), and the current .epub version strictly higher than whatever the
+        // .publish marker recorded as last published. Each branch below gives a specific reason
+        // rather than one opaque "gate failed" so a human reviewing the log knows exactly what's
+        // missing.
         if (!book.ReadyToPublish)
         {
             yield return new OperatorEvent.Error($"{book.Code}: no .publish marker in {book.FolderPath} — not signed off for publish.");
@@ -72,9 +74,19 @@ public class KdpOperatorService
         }
         var manuscriptPath = book.EpubPath;
         var coverPath = Path.Combine(book.FolderPath, "cover.jpg");
-        if (!File.Exists(coverPath))
+        if (!book.HasCover)
         {
             yield return new OperatorEvent.Error($"{book.Code}: no cover.jpg found in {book.FolderPath}.");
+            yield break;
+        }
+        if (!book.HasDescriptionFile)
+        {
+            yield return new OperatorEvent.Error($"{book.Code}: no description.txt found in {book.FolderPath} — run ss --export-node.");
+            yield break;
+        }
+        if (!book.HasNewerVersionThanPublished)
+        {
+            yield return new OperatorEvent.Info($"{book.Code}: skipped — .epub version {book.Version} is not newer than what's already recorded as published.");
             yield break;
         }
 

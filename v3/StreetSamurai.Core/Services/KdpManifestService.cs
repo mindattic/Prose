@@ -25,7 +25,9 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class KdpManifestService
 {
-    private static readonly Regex VersionFileRx = new(@"^(?<code>.+) V(?<ver>\d+)\.(?<ext>docx|epub)$", RegexOptions.IgnoreCase);
+    /// <summary>Shared with <see cref="KdpMarkPublishedService"/> so both sides parse "Title
+    /// V{N}.ext" filenames identically — never duplicate this pattern.</summary>
+    internal static readonly Regex VersionFileRx = new(@"^(?<code>.+) V(?<ver>\d+)\.(?<ext>docx|epub)$", RegexOptions.IgnoreCase);
     private static readonly JsonSerializerOptions MarkerJsonOpts = new() { PropertyNameCaseInsensitive = true };
 
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
@@ -74,29 +76,6 @@ public class KdpManifestService
             .OrderBy(n => n.NodeCode)
             .ToListAsync(ct);
 
-        // Same "was it edited since last publish" reconciliation as KdpStatusCli — kept in sync
-        // here rather than shared, because kdp-status's queries are already self-contained and
-        // splitting the logic out into a shared helper isn't worth the indirection for one query.
-        var nodeIds = nodes.Select(n => n.Id).ToList();
-        var viaChapters = await db.Nodes
-            .AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.ParentNodeId != null && nodeIds.Contains(n.ParentNodeId.Value))
-            .Join(db.BeatNodes.AsNoTracking().Where(nb => nb.IsEnabled), ch => ch.Id, nb => nb.NodeId, (ch, nb) => new { ch.ParentNodeId, nb.BeatId })
-            .Join(db.Beats.AsNoTracking(), x => x.BeatId, b => b.Id, (x, b) => new { BookId = x.ParentNodeId!.Value, b.UpdatedAt })
-            .GroupBy(x => x.BookId)
-            .Select(g => new { BookId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
-            .ToListAsync(ct);
-        var direct = await db.BeatNodes
-            .AsNoTracking()
-            .Where(nb => nodeIds.Contains(nb.NodeId) && nb.IsEnabled)
-            .Join(db.Beats.AsNoTracking(), nb => nb.BeatId, b => b.Id, (nb, b) => new { nb.NodeId, b.UpdatedAt })
-            .GroupBy(x => x.NodeId)
-            .Select(g => new { BookId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
-            .ToListAsync(ct);
-        var lastEdits = viaChapters.Concat(direct)
-            .GroupBy(x => x.BookId)
-            .ToDictionary(g => g.Key, g => (DateTime?)g.Max(x => x.LastEdit));
-
         // Broaden beyond DB-tracked rows: include every book folder actually present on disk
         // under each universe's export directory, even if it has neither PublicationStatus nor
         // PublishUrl set (WIP / not yet published — e.g. PXL, LDGR, IxS). These fall through to
@@ -135,25 +114,22 @@ public class KdpManifestService
             var universeSlug = universeNames.TryGetValue(n.UniverseId, out var slug) ? slug : "glmz";
             var code = n.NodeCode ?? n.Slug;
 
-            lastEdits.TryGetValue(n.Id, out var lastEdit);
             bool hasPublishUrl = !string.IsNullOrWhiteSpace(n.PublishUrl);
-            bool stale;
-            string effectiveStatus;
             string? baselineWarning = null;
             if (hasPublishUrl && n.KdpPublishedAt == null)
             {
                 // Live on Amazon (PublishUrl set) but we never recorded when — can't tell if the
                 // current disk version has already gone up or not. Conservative: flag for a check
                 // rather than silently assuming it's current.
-                stale = true;
-                effectiveStatus = "-";
                 baselineWarning = "KdpPublishedAt never recorded for this book — treating as needing a check; run --kdp-mark-published once you confirm what's live.";
             }
-            else
-            {
-                stale = n.KdpPublishedAt != null && lastEdit != null && lastEdit.Value > n.KdpPublishedAt.Value;
-                effectiveStatus = stale ? "Outdated" : (hasPublishUrl ? "Published" : (n.PublicationStatus ?? "WorkInProgress"));
-            }
+            // stale/effectiveStatus are finalized further down, once hasNewerVersionThanPublished
+            // is known — that (not a raw beat-edit timestamp) is the accurate "does this book
+            // actually need a republish" signal. A beat can be edited today with no fresh
+            // .epub ever exported, in which case there's genuinely nothing new to upload and the
+            // sidebar must say Published, not Outdated.
+            bool stale = false;
+            string effectiveStatus = "-";
 
             var baseDir = settings.GetExportDirectory(universeSlug);
             string nodeDir; string fileBaseName;
@@ -290,6 +266,52 @@ public class KdpManifestService
                 && publishMarker?.File != null
                 && string.Equals(publishMarker.File, currentManuscriptFilename, StringComparison.OrdinalIgnoreCase);
 
+            // Hard, code-level publish gate (not prompt guidance — see
+            // feedback_kdp_publish_gate_hardcoded): a book is only eligible to publish or
+            // republish if ALL of these hold. cover.jpg/description.txt must exist ON DISK
+            // (falling back to the DB Description column, as `description` above does, is fine
+            // for display but not for gating — a book with no description.txt genuinely never
+            // finished its export). The version check compares against the marker's OWN last-
+            // published version (falling back to parsing it out of the marker's recorded
+            // filename for markers written before the Version field existed), defaulting to 0
+            // for a book that has never published — so a first-time publish with any real
+            // version on disk still passes.
+            var hasCover = File.Exists(Path.Combine(nodeDir, "cover.jpg"));
+            var hasDescriptionFile = File.Exists(Path.Combine(nodeDir, "description.txt"));
+
+            // Has the CURRENT on-disk manuscript already been confirmed published? Prefer the
+            // marker's numeric Version (exact, unambiguous); fall back to a plain filename
+            // string comparison for legacy markers written before Version existed. Critically:
+            // a marker is only ever trusted as proof of a real publish if it also carries a
+            // PublishedAtUtc timestamp — mark_published only ever writes File/Version/Asin
+            // together WITH PublishedAtUtc after a genuine confirmed publish (never
+            // speculatively), so requiring PublishedAtUtc here is a defensive second check, not
+            // a redundant one: it means a matching filename can never be mistaken for "already
+            // published" if that version's publish was never actually confirmed (e.g. a
+            // first-time listing left sitting in Draft, or a hand-edited/malformed marker) —
+            // there is simply nothing to compare against, so it falls through to "needs work".
+            var hasConfirmedPublish = publishMarker?.PublishedAtUtc != null;
+            bool alreadyPublishedThisVersion;
+            if (!hasConfirmedPublish)
+                alreadyPublishedThisVersion = false;
+            else if (publishMarker?.Version is int publishedVersion)
+                alreadyPublishedThisVersion = version <= publishedVersion;
+            else
+                alreadyPublishedThisVersion = currentManuscriptFilename != null
+                    && string.Equals(publishMarker?.File, currentManuscriptFilename, StringComparison.OrdinalIgnoreCase);
+            var hasNewerVersionThanPublished = epubPath != null && !alreadyPublishedThisVersion;
+            var meetsHardPublishGate = readyToPublish && hasCover && hasDescriptionFile && hasNewerVersionThanPublished;
+
+            // Finalize status/NeedsRepublish now that the accurate signal is known. A book that's
+            // live but has no confirmed-publish record at all (see hasConfirmedPublish above)
+            // can't be judged either way — keep the original "needs a check" baseline warning
+            // rather than asserting Outdated or Published on no real evidence.
+            if (!(hasPublishUrl && n.KdpPublishedAt == null))
+            {
+                stale = hasPublishUrl && hasNewerVersionThanPublished;
+                effectiveStatus = stale ? "Outdated" : (hasPublishUrl ? "Published" : (n.PublicationStatus ?? "WorkInProgress"));
+            }
+
             entries.Add(new KdpManifestEntry(
                 Code: code,
                 Slug: n.Slug,
@@ -317,7 +339,11 @@ public class KdpManifestService
                 NewListingPlan: newListingPlan,
                 ReadyToPublish: readyToPublish,
                 LocalPublishMarker: publishMarker,
-                UpToDateViaLocalMarker: upToDateViaLocalMarker
+                UpToDateViaLocalMarker: upToDateViaLocalMarker,
+                HasCover: hasCover,
+                HasDescriptionFile: hasDescriptionFile,
+                HasNewerVersionThanPublished: hasNewerVersionThanPublished,
+                MeetsHardPublishGate: meetsHardPublishGate
             ));
         }
 
@@ -372,7 +398,15 @@ public record KdpManifestEntry(
     KdpNewListingPlan? NewListingPlan,
     bool ReadyToPublish,
     PublishMarker? LocalPublishMarker,
-    bool UpToDateViaLocalMarker
+    bool UpToDateViaLocalMarker,
+    bool HasCover,
+    bool HasDescriptionFile,
+    bool HasNewerVersionThanPublished,
+    /// <summary>The single hard, code-level publish gate: .publish marker + cover.jpg +
+    /// description.txt all present on disk, AND the current .epub version is strictly higher
+    /// than whatever the marker recorded as last published. Callers (KdpOperatorService,
+    /// KdpPublish's RunSelectedAsync) must check this — never re-derive the rule inline.</summary>
+    bool MeetsHardPublishGate
 );
 
 /// <summary>
@@ -388,7 +422,8 @@ public record KdpManifestEntry(
 public record PublishMarker(
     string? File,
     string? Asin,
-    string? PublishedAtUtc
+    string? PublishedAtUtc,
+    int? Version = null
 );
 
 /// <summary>

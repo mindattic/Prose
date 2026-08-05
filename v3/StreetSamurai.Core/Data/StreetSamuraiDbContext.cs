@@ -2601,6 +2601,9 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.Category);
             e.HasIndex(x => x.LastSyncedAt);
             e.HasIndex(x => x.UniverseId);
+            // No enforced FK to Entity (matches UniverseId's convention on this table) — entity
+            // docs can outlive a merged/deleted Entity row, and this table sees high write volume.
+            e.HasIndex(x => x.EntityId);
             // NOTE: the universe query filter for MarkdownFile is NOT declared here. It must
             // close over the INSTANCE property ScopedUniverseId so EF re-evaluates it per query;
             // a static property access is treated as a constant and baked into the cached model,

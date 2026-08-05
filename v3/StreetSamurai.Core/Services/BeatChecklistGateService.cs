@@ -295,8 +295,6 @@ public sealed class BeatChecklistGateService(
         var raw = await llm.GenerateAsync(sb.ToString(), $"BEAT #{beatNumber}:\n\n{text}",
             temperature: 0.0, maxTokens: 2400, model: settings.ComprehensionProbeModel, ct: ct);
         raw = raw.Trim();
-        if (raw.StartsWith("```"))
-            raw = Regex.Replace(Regex.Replace(raw, @"^```(json)?\s*", ""), @"\s*```$", "");
 
         var wordCount = Regex.Matches(text, @"\b\w+\b").Count;
         var violations = new List<DontViolation>();
@@ -305,7 +303,13 @@ public sealed class BeatChecklistGateService(
         var parseFailed = false;
         try
         {
-            using var doc = JsonDocument.Parse(raw);
+            // Haiku frequently ignores "STRICT JSON only" and appends free-text commentary
+            // after a perfectly valid JSON object (observed empirically — not truncation:
+            // response lengths are well under the token budget). JsonDocument.Parse rejects
+            // any trailing content after a complete value, so extract just the balanced
+            // {...} object rather than requiring the whole response to be pure JSON.
+            var jsonSlice = ExtractJsonObject(raw) ?? raw;
+            using var doc = JsonDocument.Parse(jsonSlice);
             var root = doc.RootElement;
             job = root.TryGetProperty("beatJob", out var j) ? j.GetString() ?? "other" : "other";
             if (root.TryGetProperty("dontViolations", out var dv) && dv.ValueKind == JsonValueKind.Array)
@@ -323,7 +327,7 @@ public sealed class BeatChecklistGateService(
         catch (JsonException)
         {
             parseFailed = true;
-            log.LogWarning("Checklist beat #{Number}: non-JSON response (likely truncated) — treated as all-pass for this run, NOT cached, will re-evaluate next run.", beatNumber);
+            log.LogWarning("Checklist beat #{Number}: non-JSON response (likely genuinely truncated mid-object) — treated as all-pass for this run, NOT cached, will re-evaluate next run.", beatNumber);
         }
 
         var totalChecks = donts.Count + 1; // DON'Ts + the "≥1 applicable move" DO
@@ -355,4 +359,37 @@ public sealed class BeatChecklistGateService(
     }
 
     private static string Truncate(string s, int max) => s.Length <= max ? s : s[..max] + "…";
+
+    /// <summary>Scans for the first balanced top-level JSON object in <paramref name="raw"/>,
+    /// respecting string literals (so braces/quotes inside quoted evidence text don't confuse
+    /// the brace count). Tolerates a leading markdown fence or preamble before the '{' and any
+    /// trailing commentary after the matching '}'. Returns null if no balanced object is found
+    /// (i.e. the response really was cut off mid-object).</summary>
+    private static string? ExtractJsonObject(string raw)
+    {
+        var start = raw.IndexOf('{');
+        if (start < 0) return null;
+        var depth = 0;
+        var inString = false;
+        var escape = false;
+        for (var i = start; i < raw.Length; i++)
+        {
+            var c = raw[i];
+            if (inString)
+            {
+                if (escape) escape = false;
+                else if (c == '\\') escape = true;
+                else if (c == '"') inString = false;
+                continue;
+            }
+            if (c == '"') { inString = true; continue; }
+            if (c == '{') depth++;
+            else if (c == '}')
+            {
+                depth--;
+                if (depth == 0) return raw[start..(i + 1)];
+            }
+        }
+        return null;
+    }
 }

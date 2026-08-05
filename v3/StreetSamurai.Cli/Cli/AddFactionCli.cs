@@ -30,9 +30,10 @@ public static class AddFactionCli
         }
 
         FactionData? data;
+        string json;
         try
         {
-            var json = await File.ReadAllTextAsync(file);
+            json = await File.ReadAllTextAsync(file);
             data = JsonSerializer.Deserialize<FactionData>(json, new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
@@ -51,10 +52,29 @@ public static class AddFactionCli
         }
 
         var repo = sp.GetRequiredService<FactionRepository>();
+        var wasExisting = AdoptExistingId(repo, json, data);
         repo.Save(data);
 
-        Console.WriteLine($"[add-faction] saved id={data.Id} name=\"{data.Name}\" territory=\"{data.Territory}\"");
+        Console.WriteLine($"[add-faction] {(wasExisting ? "updated" : "created")} id={data.Id} name=\"{data.Name}\" territory=\"{data.Territory}\"");
         return 0;
+    }
+
+
+    /// <summary>
+    /// When a seed file omits "id", reuse the id of an existing faction with the same name-slug so
+    /// re-importing UPDATES instead of inserting a duplicate. See <see cref="SeedIdentity"/> for why
+    /// inspecting <c>data.Id</c> cannot detect this (the model self-assigns one on deserialization).
+    /// </summary>
+    private static bool AdoptExistingId(FactionRepository repo, string rawJson, FactionData data)
+    {
+        data.Id = SeedIdentity.ResolveId(
+            rawJson,
+            data.Id,
+            data.Name,
+            slug => repo.GetBySlug(slug)?.Id,
+            JsonDirectoryRepository<FactionData>.ToSlug,
+            out var wasExisting);
+        return wasExisting;
     }
 
     private static string? ArgValue(string[] args, string flag)

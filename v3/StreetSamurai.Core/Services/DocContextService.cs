@@ -25,7 +25,8 @@ public sealed class DocContextService(
     EmbeddingService embeddings,
     ILogger<DocContextService> log,
     UserContextService? userContext = null,
-    EntityDocService? entityDocs = null)
+    EntityDocService? entityDocs = null,
+    EntityDisambiguationService? disambiguation = null)
 {
     /// <summary>ProseEmbeddings ScopeKind for a tracked markdown file (MarkdownFile.Id keyed).</summary>
     public const string ScopeMarkdown = "markdown";
@@ -37,7 +38,13 @@ public sealed class DocContextService(
     public sealed record LoadedDoc(Guid DocId, string RelativePath, string Tier, string Reason, double Score, int Chars);
     public sealed record DocContextResult(string Block, IReadOnlyList<LoadedDoc> Loaded, int EstimatedTokens);
 
-    private sealed record Candidate(Guid Id, string RelativePath, string Tier, string Scope, string Triggers, string RelatedIds);
+    // Category/EntityId/OriginNodeId exist so the keyword pass can tell entity docs apart from
+    // hand-authored topic docs and resolve same-universe, cross-book bare-name collisions (see
+    // BareTokenLooksLikePartOfLongerName / the step-3 collision guard below). OriginNodeId is
+    // null for the vast majority of entities (universe-wide by default, not just deliberately
+    // tagged ones) — it is a signal to consult when present, never assumed absent = safe to share.
+    private sealed record Candidate(Guid Id, string RelativePath, string Tier, string Scope, string Triggers,
+        string RelatedIds, string Category, Guid? EntityId, Guid? OriginNodeId);
 
     /// <summary>
     /// Load the doc working set for this context and return the budgeted block plus the
@@ -57,12 +64,35 @@ public sealed class DocContextService(
         stack.BeginAction(contextId, code);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var candidates = await db.MarkdownFiles.AsNoTracking()
+        var rows = await db.MarkdownFiles.AsNoTracking()
             .Where(m => m.Category != "memory")
-            .Select(m => new Candidate(m.Id, m.RelativePath, m.Tier, m.Scope, m.Triggers, m.RelatedIds))
+            .Select(m => new { m.Id, m.RelativePath, m.Tier, m.Scope, m.Triggers, m.RelatedIds, m.Category, m.EntityId })
             .ToListAsync(ct);
+
+        // Second, small, in-memory-joined query for the distinct entities behind this batch's
+        // entity docs — avoids a risky EF GroupJoin translation, and both tables already share
+        // the same universe query filter, so no extra scoping is needed here.
+        var entityIds = rows.Where(r => r.EntityId.HasValue).Select(r => r.EntityId!.Value).Distinct().ToList();
+        var originByEntityId = entityIds.Count > 0
+            ? await db.Entities.AsNoTracking()
+                .Where(e => entityIds.Contains(e.Id))
+                .Select(e => new { e.Id, e.OriginNodeId })
+                .ToDictionaryAsync(e => e.Id, e => e.OriginNodeId, ct)
+            : new Dictionary<Guid, Guid?>();
+
+        var candidates = rows.Select(r => new Candidate(
+            r.Id, r.RelativePath, r.Tier, r.Scope, r.Triggers, r.RelatedIds, r.Category, r.EntityId,
+            r.EntityId.HasValue && originByEntityId.TryGetValue(r.EntityId.Value, out var origin) ? origin : null)
+        ).ToList();
         var byId = candidates.ToDictionary(c => c.Id);
         var text = triggerText ?? "";
+
+        // The current context's nearest book/series ancestor — resolved once per call, used to
+        // arbitrate same-universe, cross-book entity-doc collisions in step 3/4 below. Null for a
+        // non-node context (e.g. a session key) or when no book/series ancestor exists.
+        var bookAncestorId = disambiguation != null
+            ? await disambiguation.ResolveNearestBookOrSeriesNodeIdAsync(contextId, ct)
+            : (Guid?)null;
 
         // 0 — user-pinned docs (override tier — always included, score 999)
         if (pinnedDocIds is { Count: > 0 })
@@ -99,12 +129,86 @@ public sealed class DocContextService(
         }
 
         // 3 — topic via keyword triggers
+        //
+        // Entity docs whose owning Entity has a single-word canonical Name (e.g. a book's own
+        // biblical figure literally named "James") emit a bare single-word trigger
+        // (EntityDocService.CollectNameTokens never emits a bare FIRST word for a multi-word
+        // name, only the surname — so this is specifically the single-word-Name case). A bare
+        // word matches as a substring of any longer name that starts or ends with it — RESIST's
+        // real "James Stephens" satisfies a completely unrelated NEPH entity's bare "james"
+        // trigger with zero semantic confusion involved, purely because the words overlap. Route
+        // bare entity-doc hits through two guards before admitting them; every other hit (multi-
+        // word entity-doc triggers, and all non-entity-doc topic docs like CRAFT.md) is untouched.
         if (text.Length > 0)
+        {
+            var deferredBareHits = new List<(Candidate Candidate, string Token)>();
             foreach (var c in candidates.Where(c => c.Tier == "topic"))
             {
                 var hit = FirstKeywordHit(c.Triggers, text);
-                if (hit != null) stack.Push(contextId, MakeEntry(c, $"keyword:{hit}", 50));
+                if (hit == null) continue;
+                if (c.Category == "entity-doc" && !hit.Contains(' '))
+                {
+                    deferredBareHits.Add((c, hit));
+                    continue;
+                }
+                stack.Push(contextId, MakeEntry(c, $"keyword:{hit}", 50));
             }
+
+            foreach (var group in deferredBareHits.GroupBy(h => h.Token, StringComparer.OrdinalIgnoreCase))
+            {
+                var groupCandidates = group.Select(h => h.Candidate).ToList();
+                if (groupCandidates.Count > 1)
+                {
+                    // Same-token collision: 2+ distinct entity docs in this universe reduce to the
+                    // identical bare word (e.g. two different books each having a "James"). Admit
+                    // only the one whose OriginNodeId matches this context's book; ambiguous ⇒
+                    // exclude all rather than guess — this is a coarse gate, not a per-beat answer
+                    // that must be produced (that's SceneContextAssembler's job, step 0).
+                    var winner = groupCandidates.FirstOrDefault(gc => gc.OriginNodeId.HasValue && gc.OriginNodeId == bookAncestorId);
+                    if (winner != null)
+                        stack.Push(contextId, MakeEntry(winner, $"keyword:{group.Key}", 50));
+                    else
+                        log.LogDebug(
+                            "DocContextService: bare trigger '{Token}' collides across {Count} entity docs with no book match for context {Context}; excluding all from the coarse candidate set",
+                            group.Key, groupCandidates.Count, contextId);
+                    continue;
+                }
+
+                var only = groupCandidates[0];
+                if (only.OriginNodeId.HasValue)
+                {
+                    // Explicit tag: admit only for its own book, exclude everywhere else.
+                    if (only.OriginNodeId == bookAncestorId)
+                        stack.Push(contextId, MakeEntry(only, $"keyword:{group.Key}", 50));
+                    continue;
+                }
+
+                // No same-token collision and no OriginNodeId to compare — but a bare first name
+                // ("michael") can still collide with a DIFFERENT entity-doc's fuller multi-word
+                // name ("michael collins") without that entity ever carrying a bare "michael"
+                // trigger itself (CollectNameTokens never emits a bare FIRST word). Treat that as
+                // the same kind of collision: ambiguous ⇒ exclude, don't guess which "Michael".
+                var hasPrefixCollision = candidates.Any(other => other.Id != only.Id && other.Category == "entity-doc"
+                    && other.Triggers.Split([',', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                        .Any(t => t.StartsWith(group.Key + " ", StringComparison.OrdinalIgnoreCase)));
+                if (hasPrefixCollision)
+                {
+                    log.LogDebug(
+                        "DocContextService: bare trigger '{Token}' is a prefix of another entity doc's fuller name for context {Context}; excluding the bare match rather than guessing",
+                        group.Key, contextId);
+                    continue;
+                }
+
+                // Otherwise fall back to a text-adjacency check: a bare word immediately flanked
+                // by another capitalized word is plausibly part of a longer, different name
+                // ("James" inside "James Stephens"). Known trade-off: a title before a bare name
+                // ("Captain James") also triggers this and suppresses a legitimate match for that
+                // one beat — an accepted false negative, since injecting the wrong book's entity
+                // is the far more expensive failure mode.
+                if (!BareTokenLooksLikePartOfLongerName(text, group.Key))
+                    stack.Push(contextId, MakeEntry(only, $"keyword:{group.Key}", 50));
+            }
+        }
 
         // 4 — topic via semantic embedding (markdown scope)
         if (useEmbedding && text.Length > 0)
@@ -113,7 +217,8 @@ public sealed class DocContextService(
             {
                 var hits = await embeddings.FindSimilarProseAsync(text, EmbeddingK, ScopeMarkdown, ct);
                 foreach (var h in hits.Where(h => h.Similarity >= EmbeddingFloor))
-                    if (byId.TryGetValue(h.ScopeId, out var c) && c.Tier == "topic")
+                    if (byId.TryGetValue(h.ScopeId, out var c) && c.Tier == "topic"
+                        && !(c.Category == "entity-doc" && c.OriginNodeId.HasValue && c.OriginNodeId != bookAncestorId))
                         stack.Push(contextId, MakeEntry(c, $"embedding {h.Similarity:0.00}", h.Similarity));
             }
             catch (Exception ex)
@@ -166,7 +271,7 @@ public sealed class DocContextService(
         // Dynamic Context Memory step 0 — clue-gathering inference: materialize entity docs from beat-goal text
         // BEFORE the candidate query so they are visible in the working set this beat.
         if (inferEntities && entityDocs != null && !string.IsNullOrWhiteSpace(triggerText))
-            await entityDocs.InferFromTextAsync(triggerText, ct);
+            await entityDocs.InferFromTextAsync(triggerText, ct, nodeId);
 
         // POV register priority (SS-A46 layer 4 + GLMZ §0): when the caller knows this beat's
         // narrator (from the bible POV map), materialize that character's register doc and mark it
@@ -395,6 +500,28 @@ public sealed class DocContextService(
                 return kw;
         }
         return null;
+    }
+
+    /// <summary>
+    /// True when <paramref name="bareToken"/>'s match in <paramref name="text"/> is immediately
+    /// flanked — separated by exactly one space, no intervening punctuation — by another
+    /// capitalized word. That shape means the bare word is plausibly part of a longer, different
+    /// proper name/phrase ("James" inside "James Stephens", "Thomas" inside "Thomas J. Kelly")
+    /// rather than a standalone reference to the entity whose canonical Name is that one word
+    /// ("James said nothing" — "said" isn't capitalized, not flanked).
+    /// </summary>
+    private static bool BareTokenLooksLikePartOfLongerName(string text, string bareToken)
+    {
+        var m = Regex.Match(text, $@"\b{Regex.Escape(bareToken)}\b", RegexOptions.IgnoreCase);
+        if (!m.Success) return false;
+
+        var before = Regex.Match(text[..m.Index], @"([A-Za-z]+) $");
+        if (before.Success && char.IsUpper(before.Groups[1].Value[0])) return true;
+
+        var after = Regex.Match(text[(m.Index + m.Length)..], @"^ ([A-Za-z]+)");
+        if (after.Success && char.IsUpper(after.Groups[1].Value[0])) return true;
+
+        return false;
     }
 
     private static string StripFrontmatter(string content)

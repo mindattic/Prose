@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**254 tools** across **40 tool families.**
+**258 tools** across **40 tool families.**
 
 ## Families
 
@@ -37,7 +37,7 @@
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Lore Triple](#lore-triple) | 7 |
 | [Narrative Science](#narrative-science) | 5 |
-| [Node](#node) | 34 |
+| [Node](#node) | 38 |
 | [Noun Consistency](#noun-consistency) | 3 |
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
@@ -1069,6 +1069,12 @@ Clone a node into a fully independent copy: new Node row + new Beat rows, same p
 - `nodeCode` (string, optional) — Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.
 - `status` (string, optional) — Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.
 
+### `composite_cover_title`
+
+Redraw the book title onto an already-saved cover image file in place, without calling an image-generation API again. Useful after tweaking the compositor or for a cover saved before title-compositing existed. Requires Node.CoverImagePath to already be set (run generate_cover_image first). Accepts node id (GUID) or slug.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
+
 ### `create_book`
 
 Create a BookNode — a single book arc (book / novella / standalone). Pass 'seed' to also generate a book bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.
@@ -1121,7 +1127,7 @@ Render the whole node as one continuous narration (no per-beat voice drift) and 
 
 ### `export_node`
 
-Render a node to a KDP-ready Word .docx and write it to the configured export directory (defaults to Desktop). Returns the path of the written file. The CLI command `ss --export-node --slug <slug>` renders the same .docx alongside .epub/.pdf/.txt in one pass. This only generates local files — it does not publish anything to Amazon/KDP. Use get_node first to confirm the node exists.
+Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), keywords.txt (from seeded NodeKeywords), and cover.jpg (only if missing), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `ss --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Use get_node first to confirm the node exists.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `author` (string, optional) — Author name to embed in the document properties. Optional.
@@ -1132,6 +1138,19 @@ Generate (or regenerate) the node bible for a node. Uses the node's Seed field (
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 - `targetBeats` (int, optional) — Target number of beats in the spine. 0 = auto (use existing beat count or 12).
+
+### `generate_cover_image`
+
+Render and save a book cover image (png/jpg) via a chosen image provider, using Node.CoverPrompt as the prompt (generating one first via generate_cover_prompt if it's not set yet). Requires that provider's API key to be configured in Settings — costs real money per call. Saves to the media dir under covers/{slug}.{ext} and records the path/provider on the node. Accepts node id (GUID) or slug.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
+- `provider` (string, required) — Image provider: "openai" (gpt-image-1), "stability" (Stable Image SD3.5), or "google" (Imagen via Gemini API).
+
+### `generate_cover_prompt`
+
+Generate and save a book-cover image prompt (Node.CoverPrompt) from the book's own Title/Summary/Description and universe — a single paragraph describing subject, setting, mood, palette, and composition for an image model. Kept commercial-cover-safe (never explicit) regardless of interior content. Overwrites any existing CoverPrompt. Accepts node id (GUID) or slug.
+
+- `idOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `generate_node_doc`
 
@@ -1162,6 +1181,12 @@ Get the node bible for a node — the dry structural plan (logline, premise, reg
 Return the full narrative spine for a node: bible, user stories, all amendments (in order), and the latest spine version pin (which records the content hashes and amendment count at the last docx export). Use this before writing prose to understand the narrative contract.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
+
+### `get_cover_provider_status`
+
+Return the current status of the cover pipeline: for each registered image provider, its id and whether an API key is configured. Use before calling generate_cover_image to know which providers are actually usable.
+
+- _(no parameters)_
 
 ### `get_score_history`
 
@@ -1294,7 +1319,7 @@ Update one beat's prose. Recomputes the hash, marks the beat stale, and invalida
 
 ### `update_book`
 
-Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
+Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count, cover_prompt. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `title` (string, optional) — New title. Omit to leave unchanged.
@@ -1306,6 +1331,7 @@ Update a node's metadata fields. Pass only the fields you want to change — omi
 - `code` (string, optional) — Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.
 - `voiceId` (string, optional) — ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.
 - `kdpPageCount` (int, optional) — KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.
+- `coverPrompt` (string, optional) — Hand-set cover art image prompt (overrides the generated one). Omit to leave unchanged; pass empty string to clear. Prefer generate_cover_prompt to derive this from the book itself.
 
 ## Noun Consistency
 

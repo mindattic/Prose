@@ -33,6 +33,7 @@ public class CommandCostEstimatorService
             ["--harvest-entities"]    = 0.08,
             ["--generate-blueprint"]  = 0.04,
             ["--storyscope-audit"]    = 0.05,
+            ["--booktok"]             = 3.00, // video-gen APIs (kling/runway/sora) charge dollars, not cents
         };
 
     public record CommandCostEstimate(double Estimated, string Confidence, int BasisRuns);

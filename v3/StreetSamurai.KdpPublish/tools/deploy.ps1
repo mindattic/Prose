@@ -12,8 +12,14 @@
        WebView2 user-data folders under %LocalAppData%\MindAttic\KdpPublish\ (which hold
        the KDP login session) are never touched, so the Amazon login survives redeploys.
     3. dotnet publish (Release, win-x64, framework-dependent single file) -> C:\Apps\KdpPublish\.
-    4. Writes C:\Apps\KdpPublish\launch.bat — a standalone double-click launcher that
-       doesn't depend on this repo existing at all.
+    4. Writes C:\Apps\KdpPublish\launch.bat. NOTE (changed from the original "fully
+       standalone" design): launch.bat now calls this same deploy.ps1 (by its baked-in
+       source path) EVERY time before launching, so a double-click always runs the
+       current source rather than risking a stale deployed copy (see the RESIST incident
+       memory — a 3-day-stale exe silently missing an entire feature). This means
+       launch.bat now DEPENDS on the source repo existing at the path baked in at deploy
+       time. If that path is missing (repo moved/deleted), it logs a warning and falls
+       back to launching whatever's already in this folder rather than refusing to start.
 
 .PARAMETER Launch
     After publishing, immediately run C:\Apps\KdpPublish\launch.bat.
@@ -84,12 +90,26 @@ if (-not (Test-Path $exe)) {
     exit 1
 }
 
-# ── Write standalone launcher ──────────────────────────────────────────────
-# Doesn't depend on this repo existing — C:\Apps\KdpPublish\ is fully self-sufficient.
+# ── Write self-redeploying launcher ─────────────────────────────────────────
+# Always redeploys from source before launching, so a double-click can never run a
+# stale build (see the RESIST incident: a 3-day-stale deployed exe silently missing an
+# entire feature). $PSScriptRoot here is THIS script's own folder — baked into the
+# batch file as an absolute path so it still resolves no matter where launch.bat itself
+# is invoked from. Falls back to launching the existing exe (with a warning) if that
+# path is missing, rather than refusing to start.
+$deployPs1Path = Join-Path $PSScriptRoot 'deploy.ps1'
 $launchBatPath = Join-Path $out 'launch.bat'
 @(
     '@echo off',
     'title KdpPublish',
+    "set `"DEPLOY_PS1=$deployPs1Path`"",
+    'if exist "%DEPLOY_PS1%" (',
+    '    echo Redeploying latest build from source...',
+    '    powershell -NoProfile -ExecutionPolicy Bypass -File "%DEPLOY_PS1%"',
+    '    if errorlevel 1 echo Redeploy failed - launching whatever is already in this folder instead.',
+    ') else (',
+    '    echo Source repo not found at "%DEPLOY_PS1%" - launching existing build without redeploying.',
+    ')',
     "start `"`" `"%~dp0$exeName`""
 ) | Set-Content $launchBatPath -Encoding ascii
 

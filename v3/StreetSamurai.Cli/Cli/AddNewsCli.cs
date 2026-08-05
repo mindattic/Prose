@@ -35,10 +35,29 @@ public static class AddNewsCli
         }
 
         var repo = sp.GetRequiredService<NewsRepository>();
+        var wasExisting = AdoptExistingId(repo, json, data);
         repo.Save(data);
 
-        Console.WriteLine($"[add-news] saved id={data.Id} headline=\"{data.Headline}\" outlet=\"{data.Source}\" reporter=\"{data.Reporter}\" date=\"{data.Date}\"");
+        Console.WriteLine($"[add-news] {(wasExisting ? "updated" : "created")} id={data.Id} headline=\"{data.Headline}\" outlet=\"{data.Source}\" reporter=\"{data.Reporter}\" date=\"{data.Date}\"");
         return 0;
+    }
+
+
+    /// <summary>
+    /// When a seed file omits "id", reuse the id of an existing news with the same name-slug so
+    /// re-importing UPDATES instead of inserting a duplicate. See <see cref="SeedIdentity"/> for why
+    /// inspecting <c>data.Id</c> cannot detect this (the model self-assigns one on deserialization).
+    /// </summary>
+    private static bool AdoptExistingId(NewsRepository repo, string rawJson, NewsData data)
+    {
+        data.Id = SeedIdentity.ResolveId(
+            rawJson,
+            data.Id,
+            data.Headline,
+            slug => repo.GetBySlug(slug)?.Id,
+            JsonDirectoryRepository<NewsData>.ToSlug,
+            out var wasExisting);
+        return wasExisting;
     }
 
     private static string? ArgValue(string[] args, string flag)

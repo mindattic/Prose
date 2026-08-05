@@ -43,10 +43,29 @@ public static class AddCharacterCli
         }
 
         var repo = sp.GetRequiredService<CharacterRepository>();
+        var wasExisting = AdoptExistingId(repo, json, data);
         repo.Save(data);
 
-        Console.WriteLine($"[add-character] saved id={data.Id} name=\"{data.Name}\" age={data.Age} role=\"{data.Role}\" affiliation=\"{data.Affiliation}\"");
+        var verb = wasExisting ? "updated" : "created";
+        Console.WriteLine($"[add-character] {verb} id={data.Id} name=\"{data.Name}\" age={data.Age} role=\"{data.Role}\" affiliation=\"{data.Affiliation}\"");
         return 0;
+    }
+
+    /// <summary>
+    /// When a seed file omits "id", reuse the id of an existing character with the same name-slug
+    /// so re-importing UPDATES instead of inserting a duplicate. See <see cref="SeedIdentity"/> for
+    /// why checking <c>data.Id</c> cannot detect this (the model self-assigns one).
+    /// </summary>
+    private static bool AdoptExistingId(CharacterRepository repo, string rawJson, CharacterData data)
+    {
+        data.Id = SeedIdentity.ResolveId(
+            rawJson,
+            data.Id,
+            data.Name,
+            slug => repo.GetBySlug(slug)?.Id,
+            JsonDirectoryRepository<CharacterData>.ToSlug,
+            out var wasExisting);
+        return wasExisting;
     }
 
     private static async Task<int> RunDirAsync(string dir, IServiceProvider sp)
@@ -58,7 +77,7 @@ public static class AddCharacterCli
         }
 
         var repo = sp.GetRequiredService<CharacterRepository>();
-        int ok = 0, failed = 0;
+        int ok = 0, failed = 0, updated = 0;
         foreach (var file in Directory.EnumerateFiles(dir, "*.json").OrderBy(f => f))
         {
             try
@@ -74,8 +93,10 @@ public static class AddCharacterCli
                     failed++;
                     continue;
                 }
+                var wasExisting = AdoptExistingId(repo, json, data);
                 repo.Save(data);
-                Console.WriteLine($"  ok    {Path.GetFileName(file)} — id={data.Id} name=\"{data.Name}\"");
+                Console.WriteLine($"  {(wasExisting ? "upd " : "new ")}  {Path.GetFileName(file)} — id={data.Id} name=\"{data.Name}\"");
+                if (wasExisting) updated++;
                 ok++;
             }
             catch (Exception ex)
@@ -84,7 +105,7 @@ public static class AddCharacterCli
                 failed++;
             }
         }
-        Console.WriteLine($"[add-character] {ok} saved, {failed} failed");
+        Console.WriteLine($"[add-character] {ok} saved ({ok - updated} new, {updated} updated), {failed} failed");
         return failed > 0 ? 1 : 0;
     }
 

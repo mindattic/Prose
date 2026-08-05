@@ -6513,6 +6513,9 @@ namespace StreetSamurai.Core.Migrations
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)");
 
+                    b.Property<Guid?>("EntityId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("FileName")
                         .IsRequired()
                         .HasMaxLength(500)
@@ -6577,6 +6580,8 @@ namespace StreetSamurai.Core.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("Category");
+
+                    b.HasIndex("EntityId");
 
                     b.HasIndex("LastSyncedAt");
 
@@ -7019,6 +7024,15 @@ namespace StreetSamurai.Core.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<DateTime?>("BookTokVideoGeneratedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("BookTokVideoPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BookTokVideoProvider")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("CanonAt")
                         .HasColumnType("datetime2");
 
@@ -7028,6 +7042,21 @@ namespace StreetSamurai.Core.Migrations
                     b.Property<string>("CombinedAudioPath")
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar(400)");
+
+                    b.Property<DateTime?>("CoverImageGeneratedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CoverImagePath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CoverImageProvider")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CoverPrompt")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CoverPromptGeneratedAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");

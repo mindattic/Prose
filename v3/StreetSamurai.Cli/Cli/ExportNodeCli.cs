@@ -41,8 +41,7 @@ public static class ExportNodeCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<StreetSamuraiDbContext>>();
-        var docx = services.GetRequiredService<DocxExportService>();
-        var manuscript = services.GetRequiredService<ManuscriptExportService>();
+        var fullExport = services.GetRequiredService<NodeFullExportService>();
         var mojiChecker = services.GetRequiredService<MojibakeRepairService>();
 
         Guid nodeId; string nodeTitle; string nodeSlug; string? universeSlug;
@@ -126,90 +125,39 @@ public static class ExportNodeCli
         Console.WriteLine($"[export-node] Rendering \"{nodeTitle}\" to .docx + .epub + .pdf + .txt…");
         try
         {
-            // docx first — it increments node.Version; epub + pdf + txt then read the same version.
-            var docxPath = await docx.ExportNodeAsync(nodeId, author);
-            Console.WriteLine($"[export-node] Wrote docx: {docxPath}");
-            var epubPath = await manuscript.ExportEpubAsync(nodeId, author);
-            Console.WriteLine($"[export-node] Wrote epub: {epubPath}");
-            var pdfPath = await manuscript.ExportPdfAsync(nodeId, author);
-            Console.WriteLine($"[export-node] Wrote pdf:  {pdfPath}");
-            var txtPath = await manuscript.ExportAudioTxtAsync(nodeId, author);
-            Console.WriteLine($"[export-node] Wrote txt:  {txtPath}");
+            // Shared pipeline (StreetSamurai.Core.Services.NodeFullExportService) — also used by
+            // the MCP export_node tool, so both entry points always write the same artifact set.
+            var result = await fullExport.ExportAllAsync(nodeId, author);
 
-            // ── post-export mojibake validation ─────────────────────────────
-            var docxHits = MojibakeRepairService.CountDocxMojibake(docxPath);
-            if (docxHits > 0)
-                Console.Error.WriteLine($"[export-node] ⚠  {docxHits} mojibake sequence(s) found in exported .docx — run 'ss --repair --fix-mojibake' then re-export.");
+            Console.WriteLine($"[export-node] Wrote docx: {result.DocxPath}");
+            Console.WriteLine($"[export-node] Wrote epub: {result.EpubPath}");
+            Console.WriteLine($"[export-node] Wrote pdf:  {result.PdfPath}");
+            Console.WriteLine($"[export-node] Wrote txt:  {result.TxtPath}");
+
+            if (result.DocxMojibakeHits > 0)
+                Console.Error.WriteLine($"[export-node] ⚠  {result.DocxMojibakeHits} mojibake sequence(s) found in exported .docx — run 'ss --repair --fix-mojibake' then re-export.");
             else
                 Console.WriteLine("[export-node] ✓ Mojibake check passed.");
 
-            // ── description.txt ──────────────────────────────────────────────────
-            // Always repair mojibake in the description before writing to disk,
-            // and persist the fix back to DB so the corruption doesn't recur.
-            await using (var db2 = await dbFactory.CreateDbContextAsync())
+            if (result.DescriptionPath != null)
             {
-                var nodeForDesc = await db2.Nodes
-                    .AsTracking()
-                    .Where(n => n.Id == nodeId)
-                    .FirstOrDefaultAsync();
-
-                var description = nodeForDesc?.Description;
-                var outDir = Path.GetDirectoryName(docxPath)!;
-
-                if (!string.IsNullOrWhiteSpace(description))
-                {
-                    var repaired = MojibakeRepairService.RepairMixed(description);
-                    if (repaired != null)
-                    {
-                        nodeForDesc!.Description = repaired;
-                        await db2.SaveChangesAsync();
-                        description = repaired;
-                        Console.WriteLine("[export-node] ✓ Repaired mojibake in description; DB updated.");
-                    }
-
-                    var descPath = Path.Combine(outDir, "description.txt");
-                    await File.WriteAllTextAsync(descPath, description.Trim());
-                    Console.WriteLine($"[export-node] Wrote description: {descPath}");
-                }
+                if (result.DescriptionMojibakeRepaired)
+                    Console.WriteLine("[export-node] ✓ Repaired mojibake in description; DB updated.");
+                Console.WriteLine($"[export-node] Wrote description: {result.DescriptionPath}");
             }
 
-            // ── metadata artifacts: export = ALL formats + ALL metadata ────────
-            // Chapter-by-chapter synopsis (story-synopsis.txt) — the chapter-altitude
-            // view of what happens in the book. Content-hash cached per chapter.
-            try
-            {
-                var synopsis = services.GetRequiredService<SynopsisExportService>();
-                var synPath = await synopsis.ExportAsync(nodeId);
-                if (synPath != null) Console.WriteLine($"[export-node] Wrote synopsis: {synPath}");
-            }
-            catch (Exception ex) { Console.Error.WriteLine($"[export-node] ⚠ Synopsis failed (non-fatal): {ex.Message}"); }
+            if (result.SynopsisPath != null)
+                Console.WriteLine($"[export-node] Wrote synopsis: {result.SynopsisPath}");
 
-            // ── keywords.txt ──────────────────────────────────────────────────────
-            // Amazon KDP backend search keywords (up to 7, one per line, ordered by
-            // NodeKeyword.SortOrder). Every book must carry its own unique set — see
-            // ss --seed-keywords for how these get populated per node.
-            try
-            {
-                await using var db3 = await dbFactory.CreateDbContextAsync();
-                var keywords = await db3.NodeKeywords.AsNoTracking()
-                    .Where(k => k.NodeId == nodeId)
-                    .OrderBy(k => k.SortOrder)
-                    .Select(k => k.Keyword)
-                    .ToListAsync();
+            if (result.KeywordsPath != null)
+                Console.WriteLine($"[export-node] Wrote keywords: {result.KeywordsPath} ({result.KeywordCount} phrases)");
+            else
+                Console.Error.WriteLine("[export-node] ⚠ No keywords found for this node — run ss --seed-keywords --slug <slug> first.");
 
-                if (keywords.Count > 0)
-                {
-                    var outDir = Path.GetDirectoryName(docxPath)!;
-                    var kwPath = Path.Combine(outDir, "keywords.txt");
-                    await File.WriteAllTextAsync(kwPath, string.Join(Environment.NewLine, keywords));
-                    Console.WriteLine($"[export-node] Wrote keywords: {kwPath} ({keywords.Count} phrases)");
-                }
-                else
-                {
-                    Console.Error.WriteLine("[export-node] ⚠ No keywords found for this node — run ss --seed-keywords --slug <slug> first.");
-                }
-            }
-            catch (Exception ex) { Console.Error.WriteLine($"[export-node] ⚠ Keywords export failed (non-fatal): {ex.Message}"); }
+            if (result.CoverPath != null)
+                Console.WriteLine($"[export-node] Wrote cover: {result.CoverPath}");
+            else
+                Console.WriteLine("[export-node] Cover already present or no image provider configured — skipped.");
 
             // DCM lifecycle Gantt (<CODE>-dcm-viz.htm) into the same folder.
             try

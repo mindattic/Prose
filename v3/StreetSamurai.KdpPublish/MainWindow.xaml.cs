@@ -31,6 +31,8 @@ public partial class MainWindow : Window
     private List<KdpManifestEntry> lastManifest = new();
     private IKdpBrowser? kdpBrowser;
     private CancellationTokenSource? runCts;
+    private KdpRunLogService? runLog;
+    private Guid? currentRunId;
     private readonly HashSet<string>? autoRunCodes;
     private bool autoRunTriggered;
     private readonly (string NodeCode, int? MaxDepth, string[] StartPath)? crawlCategories;
@@ -251,6 +253,9 @@ public partial class MainWindow : Window
         runCts = new CancellationTokenSource();
         await SetRunningAsync(true);
 
+        runLog = App.Services.GetRequiredService<KdpRunLogService>();
+        currentRunId = runLog.StartRun(KdpManifestService.FindRepoRoot(), codes);
+
         var operatorService = App.Services.GetRequiredService<KdpOperatorService>();
         var ctx = new KdpOperatorContext { Browser = kdpBrowser };
         var toRun = lastManifest.Where(e => codes.Contains(e.Code)).ToList();
@@ -278,6 +283,25 @@ public partial class MainWindow : Window
                 continue;
             }
 
+            // Same hard gate KdpOperatorService enforces authoritatively (this is a cheap early
+            // skip so the log says WHY before a browser session even opens) — cover.jpg,
+            // description.txt, and a strictly-newer .epub version than what's on record.
+            if (!book.HasCover)
+            {
+                await PostLogAsync($"{book.Code}: skipped — no cover.jpg in {book.FolderPath}.");
+                continue;
+            }
+            if (!book.HasDescriptionFile)
+            {
+                await PostLogAsync($"{book.Code}: skipped — no description.txt in {book.FolderPath}.");
+                continue;
+            }
+            if (!book.HasNewerVersionThanPublished)
+            {
+                await PostLogAsync($"{book.Code}: skipped — .epub version {book.Version} is not newer than what's already recorded as published.");
+                continue;
+            }
+
             await PostLogAsync($"— {book.Code} — {book.Title} —");
             try
             {
@@ -302,6 +326,7 @@ public partial class MainWindow : Window
 
         await PostLogAsync("Run finished.");
         await SetRunningAsync(false);
+        currentRunId = null;
     }
 
     /// <summary>
@@ -325,6 +350,12 @@ public partial class MainWindow : Window
         Console.WriteLine(stamped);
         var jsArg = JsonSerializer.Serialize(stamped);
         await ControlPanel.CoreWebView2.ExecuteScriptAsync($"window.ssPanel.onLog({jsArg})");
+
+        // Mirror every line to the durable DB table + .log file (see KdpRunLogService) so a
+        // terminal session with no view into this window's own UI can follow along during a
+        // run and query it afterward — best-effort, never allowed to block or throw here.
+        if (currentRunId is Guid rid && runLog != null)
+            _ = runLog.LogAsync(rid, line);
     }
 
     private async Task SetRunningAsync(bool running)
@@ -336,6 +367,7 @@ public partial class MainWindow : Window
         OperatorEvent.ToolStarted s => $"{code}: → {s.Name}({Truncate(s.ArgsJson, 120)})",
         OperatorEvent.ToolCompleted c => $"{code}: {(c.IsError ? "✗" : "✓")} {c.Name} → {Truncate(c.ResultJson, 160)}",
         OperatorEvent.Error e => $"{code}: ⚠ {e.Message}",
+        OperatorEvent.Info i => $"{code}: {i.Message}",
         _ => $"{code}: {evt}",
     };
 

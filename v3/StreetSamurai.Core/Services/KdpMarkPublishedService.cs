@@ -32,10 +32,12 @@ public record KdpMarkPublishedResult(
 public class KdpMarkPublishedService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly SettingsService settings;
 
-    public KdpMarkPublishedService(IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    public KdpMarkPublishedService(IDbContextFactory<StreetSamuraiDbContext> dbFactory, SettingsService settings)
     {
         this.dbFactory = dbFactory;
+        this.settings = settings;
     }
 
     public async Task<KdpMarkPublishedResult> MarkPublishedAsync(
@@ -59,6 +61,52 @@ public class KdpMarkPublishedService
             if (asinMatch.Success) node.Asin = asinMatch.Groups[1].Value;
         }
         await db.SaveChangesAsync(ct);
+
+        // Hard-coded rule: the .publish marker's JSON body must be refreshed with exactly what
+        // just went live — Filename, Version, ASIN, PublishedAtUtc — every time mark_published
+        // fires, before the caller's book loop advances to the next book. This runs synchronously
+        // inside this call (never speculatively — mark_published itself only fires after a real
+        // confirmed publish, per its own tool description), so "before starting the next" is
+        // satisfied by ordinary sequencing: the caller's foreach can't reach book N+1 until this
+        // returns.
+        try
+        {
+            var universeSlug = await db.Set<StreetSamurai.Core.Data.Entities.Universe>().AsNoTracking()
+                .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct) ?? "glmz";
+            var baseDir = settings.GetExportDirectory(universeSlug);
+            string nodeDir; string fileBaseName;
+            try { (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct); }
+            catch { nodeDir = Path.Combine(baseDir, node.NodeCode ?? node.Slug); fileBaseName = node.NodeCode ?? node.Slug; }
+
+            string? epubFile = null;
+            var version = node.Version;
+            if (Directory.Exists(nodeDir))
+            {
+                var best = Directory.GetFiles(nodeDir)
+                    .Select(f => KdpManifestService.VersionFileRx.Match(Path.GetFileName(f)))
+                    .Where(m => m.Success && string.Equals(m.Groups["ext"].Value, "epub", StringComparison.OrdinalIgnoreCase))
+                    .Select(m => (Ver: int.Parse(m.Groups["ver"].Value), File: m.Value))
+                    .OrderByDescending(x => x.Ver)
+                    .FirstOrDefault();
+                if (best.File != null) { version = best.Ver; epubFile = best.File; }
+            }
+
+            if (epubFile != null && Directory.Exists(nodeDir))
+            {
+                var marker = new PublishMarker(
+                    File: epubFile,
+                    Asin: node.Asin,
+                    PublishedAtUtc: node.KdpPublishedAt?.ToString("O"),
+                    Version: version);
+                await File.WriteAllTextAsync(Path.Combine(nodeDir, ".publish"),
+                    JsonSerializer.Serialize(marker, new JsonSerializerOptions { WriteIndented = true }), ct);
+            }
+        }
+        catch
+        {
+            // Marker refresh is best-effort bookkeeping, never a reason to fail a publish that
+            // has already gone live and been recorded in the DB above.
+        }
 
         string? recordedTitleId = null;
         if (!string.IsNullOrWhiteSpace(titleId) && !string.IsNullOrWhiteSpace(node.NodeCode))

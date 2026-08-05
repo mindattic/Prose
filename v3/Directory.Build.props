@@ -1,4 +1,25 @@
 <Project>
+  <!-- Concurrent agent sessions sometimes build with an isolated
+       -p:BaseIntermediateOutputPath=obj_<tag>\ -p:BaseOutputPath=bin_<tag>\ to avoid
+       clobbering each other's default obj\/bin\. The SDK's default Compile glob only
+       excludes the CURRENT invocation's own $(BaseIntermediateOutputPath)/$(BaseOutputPath),
+       so any other obj_*/bin_* folder left on disk by a sibling session's isolated build
+       gets swept into every subsequent build's Compile items too, producing spurious
+       CS0579 "duplicate attribute" errors (AssemblyInfo.cs, AssemblyAttributes.cs, etc.
+       generated once per isolated folder, all with identical assembly attributes).
+       Exclude every such folder unconditionally so isolated and default builds coexist.
+
+       This also has to explicitly exclude the plain "obj/**;bin/**" folders too: when a
+       build overrides BaseIntermediateOutputPath (e.g. to obj_<tag>\), the SDK's *implicit*
+       default exclude shifts to that new path — it no longer covers the plain "obj\"/"bin\"
+       left on disk by a sibling session's normal (non-isolated) build. Without an explicit
+       rule here, that sibling's plain obj/ AssemblyInfo.cs gets swept into this build's
+       Compile items alongside the isolated one, producing the same CS0579 duplicate-attribute
+       errors this file was added to prevent. -->
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj_*/**;bin_*/**;obj/**;bin/**</DefaultItemExcludes>
+  </PropertyGroup>
+
   <!-- SQLitePCLRaw.lib.e_sqlite3 2.1.11 has GHSA-2m69-gcr7-jv3q; 2.1.11 is the latest release — no fix available yet. -->
   <ItemGroup>
     <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-2m69-gcr7-jv3q" />

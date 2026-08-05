@@ -13,6 +13,18 @@ namespace StreetSamurai.Cli;
 /// </summary>
 public static class UniverseCli
 {
+    /// <summary>
+    /// The subcommands <c>ss --universe</c> actually accepts. Program.cs consults this before
+    /// claiming dispatch, so that <c>--universe &lt;slug&gt; --some-command</c> — where --universe
+    /// is the scoping flag rather than the command — falls through to the real command instead of
+    /// being swallowed and answered with usage text.
+    /// </summary>
+    private static readonly string[] Subcommands = ["list", "current", "use"];
+
+    /// <summary>True when <paramref name="token"/> names a universe subcommand.</summary>
+    public static bool IsSubcommand(string? token) =>
+        token != null && Subcommands.Contains(token, StringComparer.OrdinalIgnoreCase);
+
     public static Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         if (args.Length == 0 || args[0].StartsWith("--"))

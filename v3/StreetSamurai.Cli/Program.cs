@@ -25,7 +25,17 @@ QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 // process targets (SS-LAW-15). UniverseContext also honors the SS_UNIVERSE env
 // var (per terminal), so two CLIs can write different universes at once. Parsed
 // here before the dispatch chain so every CLI block + the web host inherit it.
-UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
+// `ss --universe <verb>` is universe MANAGEMENT, not universe SCOPING. The token after
+// --universe is then a verb (list/current/use), not a slug, so it must not be parsed as one:
+// doing so made `ss --universe current` die with "Unknown universe slug 'current'" during
+// service construction, before UniverseCli ever ran. Detected once and reused by the dispatch
+// block further down, so the two cannot disagree about what counts as a management command.
+var isUniverseManagementCommand =
+    args.Length > 0 && args[0] == "--universe"
+    && (args.Length == 1 || UniverseCli.IsSubcommand(args[1]));
+
+if (!isUniverseManagementCommand)
+    UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
 
 // HARD RULE: no silent GLMZ default. Before this check, an omitted --universe/SS_UNIVERSE
 // fell through to UniverseContext's persisted "current_universe" default (in practice, GLMZ)
@@ -503,6 +513,63 @@ if (args.Contains("--generate-node-doc"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await NodeDocCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: generate Node.CoverPrompt (image-model cover description) from the book's
+// own Title/Summary/Description/universe.
+//   ss --generate-cover-prompt --slug <slug>
+//   ss --generate-cover-prompt --all
+if (args.Contains("--generate-cover-prompt"))
+{
+    var sp = BuildCoreServices(args);
+    var (proceedCp, estCp) = await CostGateCli.ConfirmAsync("--generate-cover-prompt", args, sp);
+    if (!proceedCp) return;
+    var beforeCp = CostGateCli.SnapshotCost(sp);
+    Environment.ExitCode = await GenerateCoverPromptCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--generate-cover-prompt", estCp, beforeCp, sp);
+    return;
+}
+
+// CLI mode: render Node.CoverPrompt through an image provider (openai/stability/google)
+// and save the cover under the media dir. Costs real money — requires an API key.
+//   ss --generate-cover-image --slug <slug> --provider openai|stability|google
+if (args.Contains("--generate-cover-image"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await GenerateCoverImageCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: composite a book's cover onto a 3D mockup template, generate a short AI
+// image-to-video clip (hand shows the cover, opens it, flips pages) via a chosen video
+// provider (kling/runway/sora), and assemble a vertical 1080x1920 #booktok MP4. Costs
+// real money per call unless --dry-run, which stops after the local ImageMagick mockup.
+//   ss --booktok --slug <slug> --provider kling|runway|sora [--duration 8] [--dry-run] [--yes]
+//   ss --booktok --standalone --cover-path <path> --title "<title>" --provider kling|runway|sora
+if (args.Contains("--booktok"))
+{
+    var sp = BuildCoreServices(args);
+    if (args.Contains("--dry-run"))
+    {
+        // No paid API call happens in dry-run — skip the cost gate entirely.
+        Environment.ExitCode = await BookTokCli.RunAsync(args, sp);
+        return;
+    }
+    var gateArgs = args.Contains("--yes") ? args.Append("--no-confirm").ToArray() : args;
+    var (proceedBt, _) = await CostGateCli.ConfirmAsync("--booktok", gateArgs, sp);
+    if (!proceedBt) return;
+    Environment.ExitCode = await BookTokCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: redraw the title onto an already-saved cover image without calling an
+// image-generation API again.
+//   ss --composite-cover-title --slug <slug>
+if (args.Contains("--composite-cover-title"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await CompositeCoverTitleCli.RunAsync(args, sp);
     return;
 }
 
@@ -1660,11 +1727,19 @@ if (args.Contains("--harvest-entities"))
 //   list      Print all universes
 //   current   Print the active universe
 //   use       --slug <slug> | --id <guid>
-// Only hijacks dispatch when --universe is the PRIMARY command (args[0]). Elsewhere in argv,
-// --universe <slug> is the scoping flag other commands accept (parsed at line 28 into
-// UniverseBootstrap.RequestedSlug) — args.Contains("--universe") would incorrectly steal
-// dispatch from every command block defined after this one (e.g. --coordinate, --verdict).
-if (args.Length > 0 && args[0] == "--universe")
+// Only hijacks dispatch when --universe is the PRIMARY command (args[0]) AND is followed by a
+// real universe subcommand. Elsewhere in argv, --universe <slug> is the scoping flag other
+// commands accept (parsed at line 28 into UniverseBootstrap.RequestedSlug) —
+// args.Contains("--universe") would incorrectly steal dispatch from every command block defined
+// after this one (e.g. --coordinate, --verdict).
+//
+// The subcommand check matters because --universe is ALSO valid in first position as a scoping
+// flag: `ss --universe source --export-node --slug x` is a legitimate export, not a malformed
+// universe command. Matching on args[0] alone swallowed those silently — UniverseCli printed its
+// usage text and the real command never ran, which looks like a no-op rather than an error.
+// Bare `ss --universe` still lands here (args.Length == 1) so it prints usage instead of
+// falling through the whole dispatch chain and exiting silently.
+if (isUniverseManagementCommand)
 {
     var sp = BuildCoreServices(args);
     var uniArgs = args.Skip(1).ToArray();

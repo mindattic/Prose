@@ -69,10 +69,13 @@ public sealed class EntityDocService(
         var existing = await db.MarkdownFiles.IgnoreQueryFilters()
             .FirstOrDefaultAsync(m => m.RelativePath == relPath && m.FileRoot == "project", ct);
 
-        // The UniverseId comparison is part of the gate, not decoration: the gate short-circuits on
-        // unchanged content, so a pure back-fill of UniverseId (which does not alter the rendered
-        // doc, and therefore not the hash) would skip every already-correct row and never stamp it.
-        if (existing != null && existing.ContentHash == hash && existing.UniverseId == entity.UniverseId)
+        // The UniverseId/EntityId comparison is part of the gate, not decoration: the gate
+        // short-circuits on unchanged content, so a pure metadata back-fill (which does not alter
+        // the rendered doc, and therefore not the hash) would skip every already-correct row and
+        // never stamp it. This bit DocContextService.PrepareContextAsync once already for
+        // UniverseId; EntityId needs the same guard or pre-existing rows never get it.
+        if (existing != null && existing.ContentHash == hash
+            && existing.UniverseId == entity.UniverseId && existing.EntityId == entity.Id)
             return false;
 
         if (existing == null)
@@ -96,6 +99,11 @@ public sealed class EntityDocService(
                 // An entity doc belongs to exactly the universe its entity does — this is what
                 // keeps a GLMZ character out of a SCRY beat's keyword/embedding candidate set.
                 UniverseId   = entity.UniverseId,
+                // Back-reference so DocContextService can join to Entity.OriginNodeId and resolve
+                // same-universe, cross-book bare-name collisions (e.g. two books each having a
+                // character whose bare first name is "James") — Scope can't fill this gap, entity
+                // docs are always written with Scope = "".
+                EntityId     = entity.Id,
             });
         }
         else
@@ -106,6 +114,7 @@ public sealed class EntityDocService(
             existing.LastSyncedAt = DateTime.UtcNow;
             existing.SyncedBy     = "inferred";
             existing.UniverseId   = entity.UniverseId;
+            existing.EntityId     = entity.Id;
         }
 
         await db.SaveChangesAsync(ct);
@@ -122,12 +131,16 @@ public sealed class EntityDocService(
     /// This method is best-effort — errors per entity are logged and skipped; the overall
     /// call never throws.
     /// </summary>
-    public async Task<int> InferFromTextAsync(string text, CancellationToken ct = default)
+    /// <param name="contextNodeId">The book/chapter Node this text belongs to, when known — passed
+    /// through to <see cref="SceneContextAssembler.AssembleAsync"/> so its name-collision resolver
+    /// (<see cref="EntityDisambiguationService"/>) has book context instead of resolving blind.
+    /// Optional and trailing for call-site compatibility.</param>
+    public async Task<int> InferFromTextAsync(string text, CancellationToken ct = default, Guid? contextNodeId = null)
     {
         if (string.IsNullOrWhiteSpace(text)) return 0;
 
         SceneContext ctx;
-        try { ctx = await assembler.AssembleAsync(text, tokenBudget: 1200, ct); }
+        try { ctx = await assembler.AssembleAsync(text, tokenBudget: 1200, ct, contextNodeId); }
         catch (Exception ex)
         {
             log.LogDebug(ex, "EntityDocService: SceneContextAssembler unavailable; skipping inference");
@@ -253,12 +266,26 @@ public sealed class EntityDocService(
         sb.AppendLine();
     }
 
+    // Words that mean a multi-word name/alias is an epithet or a descriptive phrase, not a
+    // plain "First Last" personal name — "Herod the Great" (connector "the"), "Pharisee
+    // movement" or "Samaritan woman at the well" (a descriptive noun, not a surname). Their
+    // trailing word is a common English word, not a discriminating surname, and false-positive
+    // matches any unrelated prose that happens to use it ("a great army", "the movement began").
+    private static readonly HashSet<string> NonSurnameWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "the", "of", "at", "in", "on", "a", "an", "and", "or",
+        "son", "daughter", "brother", "sister", "father", "mother",
+        "movement", "group", "people", "tribe", "house", "clan", "order", "man", "woman",
+    };
+
     private static void CollectNameTokens(string name, List<string> list)
     {
         if (string.IsNullOrWhiteSpace(name)) return;
         list.Add(name);
         var parts = name.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        if (parts.Length > 1) list.Add(parts[^1]); // surname
+        // Only trust the last word as a surname when the whole phrase looks like a plain
+        // personal name — see NonSurnameWords above.
+        if (parts.Length > 1 && !parts.Any(p => NonSurnameWords.Contains(p))) list.Add(parts[^1]); // surname
     }
 
     private static string NormalizeTriggers(List<string> triggerList) =>

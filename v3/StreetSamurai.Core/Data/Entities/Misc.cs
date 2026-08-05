@@ -253,6 +253,20 @@ public class MarkdownFile
     public string   RelatedIds    { get; set; } = "";
 
     /// <summary>
+    /// The <see cref="Entity"/> this doc was materialized from, for <c>Category = "entity-doc"</c>
+    /// rows (see <c>EntityDocService.EnsureEntityDocAsync</c>). Null for every other category, and
+    /// for a pre-existing entity-doc row not yet re-stamped since this column was added — the
+    /// hash-gate in <c>EnsureEntityDocAsync</c> compares this alongside content hash specifically
+    /// so a metadata-only backfill (which doesn't change <see cref="Content"/>) still lands.
+    ///
+    /// <para>Lets <c>DocContextService</c> join back to <see cref="Entity.OriginNodeId"/> to
+    /// resolve same-universe, cross-book name collisions (e.g. two different books each having a
+    /// character whose bare first name is "James") — a gap <see cref="Scope"/> can't fill, since
+    /// entity docs are written with <c>Scope = ""</c>.</para>
+    /// </summary>
+    public Guid?    EntityId      { get; set; }
+
+    /// <summary>
     /// Which universe this doc belongs to, or <see cref="Universe.SharedId"/> for docs that apply
     /// to every universe (CRAFT.md, ENGINE.md, the digest, CLAUDE.md, memory files).
     ///

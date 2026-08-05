@@ -26,11 +26,15 @@ public class NodeTools
     private readonly NodeBibleService bible;
     private readonly ProseReflowService reflow;
     private readonly BeatRebuildService rebuilder;
-    private readonly DocxExportService docxExport;
+    private readonly NodeFullExportService fullExport;
     private readonly NodeSpineService spine;
     private readonly AudiblePackageService audible;
     private readonly NodeDocService nodeDoc;
     private readonly MarkdownFileService markdownFiles;
+    private readonly CoverPromptService coverPrompts;
+    private readonly CoverImageService coverImages;
+    private readonly CoverTitleCompositorService titleCompositor;
+    private readonly StreetSamurai.Core.Interfaces.IPathProvider paths;
 
     public NodeTools(
         NodeWorkbenchService workbench,
@@ -39,11 +43,15 @@ public class NodeTools
         NodeBibleService bible,
         ProseReflowService reflow,
         BeatRebuildService rebuilder,
-        DocxExportService docxExport,
+        NodeFullExportService fullExport,
         NodeSpineService spine,
         AudiblePackageService audible,
         NodeDocService nodeDoc,
-        MarkdownFileService markdownFiles)
+        MarkdownFileService markdownFiles,
+        CoverPromptService coverPrompts,
+        CoverImageService coverImages,
+        CoverTitleCompositorService titleCompositor,
+        StreetSamurai.Core.Interfaces.IPathProvider paths)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
@@ -51,11 +59,15 @@ public class NodeTools
         this.bible = bible;
         this.reflow = reflow;
         this.rebuilder = rebuilder;
-        this.docxExport = docxExport;
+        this.fullExport = fullExport;
         this.spine = spine;
         this.audible = audible;
         this.nodeDoc = nodeDoc;
         this.markdownFiles = markdownFiles;
+        this.coverPrompts = coverPrompts;
+        this.coverImages = coverImages;
+        this.titleCompositor = titleCompositor;
+        this.paths = paths;
     }
 
     [McpServerTool, Description("Create a SeriesNode — the top-level grouping (saga / anthology) that BookNodes hang under. Never holds beats. Returns the new id, slug, and URL.")]
@@ -768,8 +780,8 @@ public class NodeTools
             : JsonSerializer.Serialize(new { chapters = reports.Select(Shape).ToList() }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Export a node as a KDP-ready Word .docx to the configured export directory (defaults to Desktop). CLI equivalent: `ss --export-node`, which additionally emits .epub/.pdf/.txt. Local file rendering only — no KDP API integration.</summary>
-    [McpServerTool, Description("Render a node to a KDP-ready Word .docx and write it to the configured export directory (defaults to Desktop). Returns the path of the written file. The CLI command `ss --export-node --slug <slug>` renders the same .docx alongside .epub/.pdf/.txt in one pass. This only generates local files — it does not publish anything to Amazon/KDP. Use get_node first to confirm the node exists.")]
+    /// <summary>Export a node to every KDP-ready format (docx/epub/pdf/txt) plus description.txt/keywords.txt/cover.jpg, to the configured export directory (defaults to Desktop). Same pipeline as the CLI's `ss --export-node`, via the shared NodeFullExportService. Local file rendering only — no KDP API integration.</summary>
+    [McpServerTool, Description("Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), keywords.txt (from seeded NodeKeywords), and cover.jpg (only if missing), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `ss --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Use get_node first to confirm the node exists.")]
     public async Task<string> ExportNode(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Author name to embed in the document properties. Optional.")] string author = "")
@@ -777,8 +789,23 @@ public class NodeTools
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
 
-        var path = await docxExport.ExportNodeAsync(node.Id, string.IsNullOrWhiteSpace(author) ? null : author);
-        return JsonSerializer.Serialize(new { ok = true, path }, CanonTools.JsonOpts);
+        var result = await fullExport.ExportAllAsync(node.Id, string.IsNullOrWhiteSpace(author) ? null : author);
+        return JsonSerializer.Serialize(new
+        {
+            ok = true,
+            path = result.DocxPath,
+            docx_path = result.DocxPath,
+            epub_path = result.EpubPath,
+            pdf_path = result.PdfPath,
+            txt_path = result.TxtPath,
+            docx_mojibake_hits = result.DocxMojibakeHits,
+            description_path = result.DescriptionPath,
+            description_mojibake_repaired = result.DescriptionMojibakeRepaired,
+            synopsis_path = result.SynopsisPath,
+            keywords_path = result.KeywordsPath,
+            keyword_count = result.KeywordCount,
+            cover_path = result.CoverPath,
+        }, CanonTools.JsonOpts);
     }
 
     /// <summary>Render a node as a single continuous MP3 audiobook and write it to the configured export directory. Local file rendering only — no KDP/Audible API integration.</summary>
@@ -865,7 +892,7 @@ public class NodeTools
         return JsonSerializer.Serialize(new { count = rows.Count, nodes = rows }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
+    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count, cover_prompt. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
     public async Task<string> UpdateBook(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
@@ -876,7 +903,8 @@ public class NodeTools
         [Description("Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.")] string? seed = null,
         [Description("Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.")] string? code = null,
         [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null,
-        [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null)
+        [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null,
+        [Description("Hand-set cover art image prompt (overrides the generated one). Omit to leave unchanged; pass empty string to clear. Prefer generate_cover_prompt to derive this from the book itself.")] string? coverPrompt = null)
     {
         try
         {
@@ -896,6 +924,11 @@ public class NodeTools
             if (code         != null) row.NodeCode     = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
             if (voiceId      != null) row.VoiceId      = string.IsNullOrEmpty(voiceId) ? null : voiceId;
             if (kdpPageCount != null) row.KdpPageCount = kdpPageCount == 0 ? null : kdpPageCount;
+            if (coverPrompt  != null)
+            {
+                row.CoverPrompt            = string.IsNullOrEmpty(coverPrompt) ? null : coverPrompt;
+                row.CoverPromptGeneratedAt = DateTime.UtcNow;
+            }
             row.UpdatedAt = DateTime.UtcNow;
 
             await db.SaveChangesAsync();
@@ -914,6 +947,75 @@ public class NodeTools
         {
             return JsonSerializer.Serialize(new { error = "update_failed", message = ex.Message, idOrSlug }, CanonTools.JsonOpts);
         }
+    }
+
+    [McpServerTool, Description("Generate and save a book-cover image prompt (Node.CoverPrompt) from the book's own Title/Summary/Description and universe — a single paragraph describing subject, setting, mood, palette, and composition for an image model. Kept commercial-cover-safe (never explicit) regardless of interior content. Overwrites any existing CoverPrompt. Accepts node id (GUID) or slug.")]
+    public async Task<string> GenerateCoverPrompt(
+        [Description("Node id (GUID) or slug.")] string idOrSlug)
+    {
+        try
+        {
+            var node = await ResolveNodeAsync(idOrSlug);
+            if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+            var prompt = await coverPrompts.GenerateAndSaveAsync(node.Id);
+            return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, coverPrompt = prompt }, CanonTools.JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = "generate_cover_prompt_failed", message = ex.Message, idOrSlug }, CanonTools.JsonOpts);
+        }
+    }
+
+    [McpServerTool, Description("Render and save a book cover image (png/jpg) via a chosen image provider, using Node.CoverPrompt as the prompt (generating one first via generate_cover_prompt if it's not set yet). Requires that provider's API key to be configured in Settings — costs real money per call. Saves to the media dir under covers/{slug}.{ext} and records the path/provider on the node. Accepts node id (GUID) or slug.")]
+    public async Task<string> GenerateCoverImage(
+        [Description("Node id (GUID) or slug.")] string idOrSlug,
+        [Description("Image provider: \"openai\" (gpt-image-1), \"stability\" (Stable Image SD3.5), or \"google\" (Imagen via Gemini API).")] string provider)
+    {
+        try
+        {
+            var node = await ResolveNodeAsync(idOrSlug);
+            if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+            var relativePath = await coverImages.GenerateAndSaveAsync(node.Id, provider);
+            return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, provider, coverImagePath = relativePath }, CanonTools.JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = "generate_cover_image_failed", message = ex.Message, idOrSlug, provider }, CanonTools.JsonOpts);
+        }
+    }
+
+    [McpServerTool, Description("Redraw the book title onto an already-saved cover image file in place, without calling an image-generation API again. Useful after tweaking the compositor or for a cover saved before title-compositing existed. Requires Node.CoverImagePath to already be set (run generate_cover_image first). Accepts node id (GUID) or slug.")]
+    public async Task<string> CompositeCoverTitle(
+        [Description("Node id (GUID) or slug.")] string idOrSlug)
+    {
+        try
+        {
+            var node = await ResolveNodeAsync(idOrSlug);
+            if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
+            if (string.IsNullOrWhiteSpace(node.CoverImagePath))
+                return JsonSerializer.Serialize(new { error = "no_cover_image_yet", idOrSlug }, CanonTools.JsonOpts);
+
+            var fullPath  = Path.Combine(paths.MediaDir, node.CoverImagePath);
+            var extension = Path.GetExtension(fullPath).TrimStart('.');
+            var bytes     = await File.ReadAllBytesAsync(fullPath);
+            var composited = await titleCompositor.CompositeTitleAsync(bytes, node.Title, extension);
+            await File.WriteAllBytesAsync(fullPath, composited);
+
+            return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, coverImagePath = node.CoverImagePath }, CanonTools.JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = "composite_cover_title_failed", message = ex.Message, idOrSlug }, CanonTools.JsonOpts);
+        }
+    }
+
+    [McpServerTool, Description("Return the current status of the cover pipeline: for each registered image provider, its id and whether an API key is configured. Use before calling generate_cover_image to know which providers are actually usable.")]
+    public string GetCoverProviderStatus()
+    {
+        var rows = coverImages.AvailableProviders.Select(p => new { id = p.Id, configured = p.Configured });
+        return JsonSerializer.Serialize(new { providers = rows }, CanonTools.JsonOpts);
     }
 
     [McpServerTool, Description("Return the score history for a node as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts node id (GUID) or slug.")]

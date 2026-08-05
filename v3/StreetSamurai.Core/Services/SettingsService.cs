@@ -434,6 +434,28 @@ public class SettingsService : IDisposable
         get => ResolveApiKey("SS_FAL_API_KEY", "fal", data.FalApiKey);
         set { MindAtticCredentialStore.SetKey("fal", value); data.FalApiKey = value; ScheduleSave(); }
     }
+    /// <summary>Stability AI (Stable Image / SD3) API key. Used by CoverImageService's
+    /// "stability" provider — https://api.stability.ai — for cover art generation.</summary>
+    public string StabilityApiKey
+    {
+        get => ResolveApiKey("SS_STABILITY_API_KEY", "stability", data.StabilityApiKey);
+        set { MindAtticCredentialStore.SetKey("stability", value); data.StabilityApiKey = value; ScheduleSave(); }
+    }
+    /// <summary>Kling AI (image2video) API key, stored as "{accessKey}:{secretKey}" — Kling
+    /// authenticates with a short-lived JWT minted from that pair, not a plain bearer token.
+    /// Used by BookTokVideoService's "kling" provider.</summary>
+    public string KlingApiKey
+    {
+        get => ResolveApiKey("SS_KLING_API_KEY", "kling", data.KlingApiKey);
+        set { MindAtticCredentialStore.SetKey("kling", value); data.KlingApiKey = value; ScheduleSave(); }
+    }
+    /// <summary>Runway (Gen-4 image_to_video) API key. Used by BookTokVideoService's
+    /// "runway" provider.</summary>
+    public string RunwayApiKey
+    {
+        get => ResolveApiKey("SS_RUNWAY_API_KEY", "runway", data.RunwayApiKey);
+        set { MindAtticCredentialStore.SetKey("runway", value); data.RunwayApiKey = value; ScheduleSave(); }
+    }
     public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; ScheduleSave(); } }
     public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; ScheduleSave(); } }
     public string MistralModel { get => data.MistralModel; set { data.MistralModel = value; ScheduleSave(); } }
@@ -710,6 +732,9 @@ public class SettingsService : IDisposable
         MindAtticCredentialStore.SetKey("gemini",      data.GeminiApiKey);
         MindAtticCredentialStore.SetKey("ideogram",    data.IdeogramApiKey);
         MindAtticCredentialStore.SetKey("fal",         data.FalApiKey);
+        MindAtticCredentialStore.SetKey("stability",   data.StabilityApiKey);
+        MindAtticCredentialStore.SetKey("kling",       data.KlingApiKey);
+        MindAtticCredentialStore.SetKey("runway",      data.RunwayApiKey);
         MindAtticCredentialStore.SetKey("deepseek",    data.DeepSeekApiKey);
         MindAtticCredentialStore.SetKey("mistral",     data.MistralApiKey);
         MindAtticCredentialStore.SetKey("xai",         data.GrokApiKey);
@@ -755,6 +780,9 @@ public class SettingsService : IDisposable
         MigrateIfMissing("gemini",      data.GeminiApiKey);
         MigrateIfMissing("ideogram",    data.IdeogramApiKey);
         MigrateIfMissing("fal",         data.FalApiKey);
+        MigrateIfMissing("stability",   data.StabilityApiKey);
+        MigrateIfMissing("kling",       data.KlingApiKey);
+        MigrateIfMissing("runway",      data.RunwayApiKey);
         MigrateIfMissing("deepseek",    data.DeepSeekApiKey);
         MigrateIfMissing("mistral",     data.MistralApiKey);
         MigrateIfMissing("xai",         data.GrokApiKey);
@@ -930,6 +958,9 @@ public class SettingsService : IDisposable
         public string CohereApiKey { get; set; } = "";
         public string IdeogramApiKey { get; set; } = "";
         public string FalApiKey { get; set; } = "";
+        public string StabilityApiKey { get; set; } = "";
+        public string KlingApiKey { get; set; } = "";
+        public string RunwayApiKey { get; set; } = "";
         public string GeminiModel { get; set; } = "gemini-2.5-flash";
         public string DeepSeekModel { get; set; } = "deepseek-chat";
         public string MistralModel { get; set; } = "mistral-large-latest";

@@ -27,9 +27,10 @@ public static class AddCorponationCli
         }
 
         CorponationData? data;
+        string json;
         try
         {
-            var json = await File.ReadAllTextAsync(file);
+            json = await File.ReadAllTextAsync(file);
             data = JsonSerializer.Deserialize<CorponationData>(json, new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
@@ -48,10 +49,29 @@ public static class AddCorponationCli
         }
 
         var repo = sp.GetRequiredService<CorponationRepository>();
+        var wasExisting = AdoptExistingId(repo, json, data);
         repo.Save(data);
 
-        Console.WriteLine($"[add-corponation] saved id={data.Id} name=\"{data.Name}\" sector=\"{data.Sector}\"");
+        Console.WriteLine($"[add-corponation] {(wasExisting ? "updated" : "created")} id={data.Id} name=\"{data.Name}\" sector=\"{data.Sector}\"");
         return 0;
+    }
+
+
+    /// <summary>
+    /// When a seed file omits "id", reuse the id of an existing corponation with the same name-slug so
+    /// re-importing UPDATES instead of inserting a duplicate. See <see cref="SeedIdentity"/> for why
+    /// inspecting <c>data.Id</c> cannot detect this (the model self-assigns one on deserialization).
+    /// </summary>
+    private static bool AdoptExistingId(CorponationRepository repo, string rawJson, CorponationData data)
+    {
+        data.Id = SeedIdentity.ResolveId(
+            rawJson,
+            data.Id,
+            data.Name,
+            slug => repo.GetBySlug(slug)?.Id,
+            JsonDirectoryRepository<CorponationData>.ToSlug,
+            out var wasExisting);
+        return wasExisting;
     }
 
     private static string? ArgValue(string[] args, string flag)

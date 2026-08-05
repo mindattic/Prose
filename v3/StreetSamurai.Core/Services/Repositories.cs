@@ -116,6 +116,23 @@ public class CharacterRepository : EfRepository<CharacterData>
         return CharacterMapper.LoadOne(db, guid);
     }
 
+    /// <summary>
+    /// Look a character up by its entity slug. Mirrors <see cref="DistrictRepository.GetBySlug"/>.
+    /// Exists so seed importers can tell "this character is already in the DB" from "this is new"
+    /// WITHOUT trusting <see cref="CharacterData.Id"/> — that property self-assigns a fresh UUIDv7
+    /// on deserialization, so a seed file that omits "id" looks like a brand-new character on every
+    /// import and silently inserts a duplicate instead of updating.
+    /// </summary>
+    public new CharacterData? GetBySlug(string slug)
+    {
+        if (string.IsNullOrWhiteSpace(slug)) return null;
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.AsNoTracking()
+            .FirstOrDefault(e => e.EntityType == "character" && e.IsActive && e.Slug == slug);
+        if (entity == null) return null;
+        return CharacterMapper.LoadOne(db, entity.Id);
+    }
+
     public override List<CharacterData> GetAllIncludingArchived()
     {
         // Archived view bypasses the cache â€” it's used by audit/restore flows

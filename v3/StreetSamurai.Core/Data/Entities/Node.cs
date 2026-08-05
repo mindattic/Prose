@@ -271,6 +271,43 @@ public abstract class Node
     /// Heritage"). Null or empty means no subtitle line is printed.</summary>
     public string? Subtitle { get; set; }
 
+    // ── Cover art ─────────────────────────────────────────────────────────
+
+    /// <summary>LLM-authored visual description of what should appear on this
+    /// book's cover — subject, setting, mood, palette, composition, art style —
+    /// generated from the book's Summary/Description and universe. Contains no
+    /// title/author typography (that's composited separately); this is the
+    /// image-model prompt, not cover copy. Null = not yet generated. Written by
+    /// <c>CoverPromptService</c>, regenerate via <c>ss --generate-cover-prompt</c>.</summary>
+    public string? CoverPrompt { get; set; }
+
+    /// <summary>When <see cref="CoverPrompt"/> was last generated. Null = never.</summary>
+    public DateTime? CoverPromptGeneratedAt { get; set; }
+
+    /// <summary>Relative path (under the media dir) to the generated cover image
+    /// (png/jpg), e.g. "covers/atte.png". Written by <c>CoverImageService</c>
+    /// after a successful image-provider call. Null = no image generated yet.</summary>
+    public string? CoverImagePath { get; set; }
+
+    /// <summary>Which image provider produced <see cref="CoverImagePath"/>:
+    /// "openai" | "stability" | "google". Null = not yet generated.</summary>
+    public string? CoverImageProvider { get; set; }
+
+    /// <summary>When <see cref="CoverImagePath"/> was last generated. Null = never.</summary>
+    public DateTime? CoverImageGeneratedAt { get; set; }
+
+    /// <summary>Relative path (under the media dir) to the assembled #booktok
+    /// announcement MP4, e.g. "booktok/booktok-atte.mp4". Written by
+    /// <c>BookTokVideoService</c>. Null = no video generated yet.</summary>
+    public string? BookTokVideoPath { get; set; }
+
+    /// <summary>Which video provider produced <see cref="BookTokVideoPath"/>:
+    /// "kling" | "runway" | "sora". Null = not yet generated.</summary>
+    public string? BookTokVideoProvider { get; set; }
+
+    /// <summary>When <see cref="BookTokVideoPath"/> was last generated. Null = never.</summary>
+    public DateTime? BookTokVideoGeneratedAt { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 

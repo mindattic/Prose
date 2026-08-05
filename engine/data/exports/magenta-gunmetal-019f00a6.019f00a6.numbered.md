@@ -19,10 +19,16 @@ The bar ran magenta.
 Nobody had chosen it. The decor was the usual Z3 pretension — pale recycled wood, low brass lamps someone thought said warmth. But the east wall held a full Axiom BioNanics ad, and it pulsed pink every three seconds. The color bled across the mirror behind the bar. It caught in the glassware. It lay over every white shirt in the room like a second skin.
 
 [Beat 3]
-Rook used the mirror the way she used every reflective surface — to watch the room at her back. Her own face came with it, washed pink: olive skin, dark hair pushed back and still rain-wet at the ends, pale grey-green eyes already finding the doors. A thin scar sat high on her right cheekbone. It caught the light for half a second and let it go. Her overlay tagged the ad's price — Φ8,400 per treatment, more for members — and she blinked it away like everything else the city tried to sell her. Her coat was Greymark Unseen, matte gray, the kind that didn't announce its brand to strangers.
+Rook used the mirror the way she used every reflective surface — to watch the room at her back. Her own face came with it, washed pink: olive skin, dark hair pushed back and still rain-wet at the ends, pale grey-green eyes already finding the doors. A thin scar sat high on her right cheekbone. It caught the light for half a second and let it go.
+
+Her overlay tagged the ad's price — F8,400 per treatment, more for members — and she blinked it away like everything else the city tried to sell her. Her coat was Greymark Unseen, matte gray, the kind that didn't announce its brand to strangers.
 
 [Beat 4]
-The bartender moved through the pink and didn't seem to notice it. Two suits talked low at the bar, faces washed the same color. Her overlay tagged the nearer one's coat as Thornfield — top-tier archology tailoring. She blinked that away too.
+The bartender moved through the pink and didn't seem to notice it.
+
+Two suits talked low at the bar, faces washed the same color.
+
+Her overlay tagged the nearer one's coat as Thornfield — top-tier archology tailoring. She blinked that away too.
 
 [Beat 5]
 She stood at the door and counted exits. Three. Service corridor on the left, main door behind her, fire exit past the bathrooms. She'd counted them since the day the city police dissolved. She counted them a little differently now. These days she also checked which door she'd send someone else through, and how fast she could reach them if the door turned out to be wrong. That habit had a name. The name was Wennick.
@@ -53,12 +59,16 @@ She crossed and read the room on the way. Two solo drinkers. A four-top celebrat
 "Agwu. Väinämöinen. Okafor."
 
 [Beat 11]
-Rook let the names settle, and her shoulders dropped a degree before she decided to let them. She'd run two jobs with Blessing Agwu and trusted her read of a room more than most instruments. She'd put Väinämöinen on a crane once and never had to look back. She'd worked Okafor twice, watched her run six AI agents at machine speed without dropping one, and learned to listen when the kid went quiet — quiet came right before she said the thing that mattered. Rook told people she kept a rule against repeat crew. She didn't. She kept a list, in her head, of operators she'd open a door in front of. The list was short. Three of the names on it had just come out of Gault's mouth.
+Rook let the names settle, and her shoulders dropped a degree before she decided to let them.
+
+She'd run two jobs with Blessing Agwu and trusted her read of a room more than most instruments. She'd put Väinämöinen on a crane once and never had to look back. She'd worked Okafor twice, watched her run six AI agents at machine speed without dropping one, and learned to listen when the kid went quiet — quiet came right before she said the thing that mattered.
+
+Rook told people she kept a rule against repeat crew. She didn't. She kept a list, in her head, of operators she'd open a door in front of. The list was short. Three of the names on it had just come out of Gault's mouth.
 
 [Beat 12]
 "Fifth?"
 
-"Diallo. Ghost, drone support. NSB specialist. Expensive. Consistent."
+"Diallo. Ghost, drone support. Expensive. Consistent."
 
 [Beat 13]
 The fourth name she'd have picked herself. She kept the warmth off her face. The job didn't need it yet, and spending it early was a habit she'd trained out of herself long ago.
@@ -81,7 +91,11 @@ She looked at the ad. The pulse hit its peak, the room went pink, then ebbed. "C
 "Dr. Halina Soraya. Listed internally as staff, Ohara division. That's all intake's offering."
 
 [Beat 15]
-Ohara was Axiom's soft-nano line — Class II medical, the kind that went in with a prescription and built targeted structures in your blood over three months. So Soraya was working on something the client wanted, or wanted stopped, or wanted to be sure she hadn't finished. Three different jobs, once you were past the wire. No way yet to tell them apart.
+Ohara was Axiom's soft-nano line — Class II medical, the kind that went in with a prescription and built targeted structures in your blood over three months.
+
+So Soraya was working on something the client wanted, or wanted stopped, or wanted to be sure she hadn't finished.
+
+Three different jobs, once you were past the wire. No way yet to tell them apart.
 
 [Beat 16]
 "Payment."
@@ -89,7 +103,7 @@ Ohara was Axiom's soft-nano line — Class II medical, the kind that went in wit
 "Forty thousand quanta. Five-way. Eight each."
 
 [Beat 17]
-She turned the number over. Φ8,000 for a compound pull — five bodies, high-security target. Not generous, not insulting. The calibrated number, the one that drew talent without drawing attention. Acquisition, not ransom.
+She turned the number over. F8,000 for a compound pull — five bodies, high-security target. Not generous, not insulting. The calibrated number, the one that drew talent without drawing attention. Acquisition, not ransom.
 
 [Beat 18]
 "Timeline?"
@@ -104,7 +118,9 @@ She turned the number over. Φ8,000 for a compound pull — five bodies, high-se
 She nodded. She'd known that. The water came. She wrapped both hands around the cold glass and looked at Gault a moment without saying anything, and let the silence do the thing it always did before a yes.
 
 [Beat 20]
-What she watched, in the quiet, was his hands. They'd come loose when she named the crew — flat on the laminate now, the held thing let go. Under the careful-reasonable face, he'd wanted one answer and hadn't been sure he'd get it. She said nothing about it, and didn't decide what to do with it either.
+What she watched, in the quiet, was his hands. They'd come loose when she named the crew — flat on the laminate now, the held thing let go.
+
+Under the careful-reasonable face, he'd wanted one answer and hadn't been sure he'd get it. She said nothing about it, and didn't decide what to do with it either.
 
 [Beat 21]
 "I'll run it."
@@ -112,16 +128,24 @@ What she watched, in the quiet, was his hands. They'd come loose when she named 
 He nodded slowly, and his shoulders came down the same degree hers had. "I'll tell them to expect contact."
 
 [Beat 22]
-She stood, left Φ40 for the water she'd barely touched, and walked back out through the magenta into the street. Z3 at evening was all brass light and recycled air, and a block over a quantum rack hummed under load. This was the real GLMZ — gunmetal and neon and the specific cold that came off the lake when the ventilation corridors lined up wrong.
+She stood, left F40 for the water she'd barely touched, and walked back out through the magenta into the street.
+
+Z3 at evening was all brass light and recycled air, and a block over a quantum rack hummed under load. This was the real GLMZ — gunmetal and neon and the specific cold that came off the lake when the ventilation corridors lined up wrong.
 
 [Beat 23]
-She blinked open a blank contact thread on her neuretics. Four people to pull in from wherever they'd scattered, and a frame to build around each before the job built one for her.
+She blinked open a blank contact thread on her neuretics.
+
+Four people to pull in from wherever they'd scattered, and a frame to build around each before the job built one for her.
 
 [Beat 24]
-The corpo lobby at Z3-Meridian ran three stories of imported Baltic marble and made no apologies for it. Rook stood at the mezzanine rail with a coffee she wasn't drinking and watched Blessing Agwu run a building manager.
+The corpo lobby at Z3-Meridian ran three stories of imported Baltic marble and made no apologies for it.
+
+Rook stood at the mezzanine rail with a coffee she wasn't drinking and watched Blessing Agwu run a building manager.
 
 [Beat 25]
-Agwu was deep in it. Her face was different — not dramatically, just precisely. The jaw sat at a slightly changed angle, the brow rode lower, the whole arrangement settling into the exact look of someone who'd tolerated a subordinate's excuses for eleven minutes and had four more of patience before the paperwork came out. Forty-three muscles, each one addressed on its own. Rook had read the technical writeup once and then stopped. There were things she could know about a person and things that felt like watching surgery on a friend.
+Agwu was deep in it. Her face was different — not dramatically, just precisely. The jaw sat at a slightly changed angle, the brow rode lower, the whole arrangement settling into the exact look of someone who'd tolerated a subordinate's excuses for eleven minutes and had four more of patience before the paperwork came out.
+
+Forty-three muscles, each one addressed on its own. Rook had read the technical writeup once and then stopped. There were things she could know about a person and things that felt like watching surgery on a friend.
 
 [Beat 26]
 She waited for the turn. It came in thirty seconds. Agwu glanced at something on her lenses, the manager suddenly found his own answers satisfying, and Blessing Agwu walked away from the conversation like someone closing a door she'd already measured to the millimeter.
@@ -139,11 +163,11 @@ They went outside. The coffee turned out useful after all — Rook set it on a p
 
 "It was nearly finished." Agwu folded her hands. "What do you need?"
 
-Rook gave her the outline in sixty seconds. One target building. One window of access. Someone who could wear whoever the room required. She said the number last: Φ8,000.
+Rook gave her the outline in sixty seconds. One target building. One window of access. Someone who could wear whoever the room required. She said the number last: F8,000.
 
 Agwu looked past her at the cityline for a moment. It wasn't hesitation. It was thought that already had a shape.
 
-"I need a Level IV fabrication suite," she said. "The Daedalic Modular. They cost Φ22,000 and the waiting list is eight months. I'm skipping the waiting list."
+"I need a Level IV fabrication suite," she said. "The Daedalic Modular. They cost F22,000 and the waiting list is eight months. I'm skipping the waiting list."
 
 "That's not a question."
 
@@ -151,7 +175,7 @@ Agwu looked past her at the cityline for a moment. It wasn't hesitation. It was 
 
 "Done," Rook said. Then, because she'd decided on the way up here to do it: "There's something the brief won't carry, so I'll say it. The client routing is wrong. Anonymous source, a relay Gault swears by — but the response times don't move like a corp paying for a routine pull. Either the client is a front for someone who doesn't want to be the client, or somebody already has a hand on this job that isn't us." She had told no one else. She hadn't planned to tell anyone at all. "I don't have the shape of it yet. I'm telling you so you walk in knowing the room might have a second floor."
 
-Agwu held her gaze. The micro-expression work went still — not performing anything now, just looking at her. "You're telling me because you want me to know. Not because the brief requires it."
+Agwu held her gaze. The micro-expression work went still — not performing anything now, just looking at her. "You're telling me because you want me to know. Not because the brief requires it?"
 
 "Yes."
 
@@ -183,7 +207,7 @@ She gave him the outline. He listened with his arms crossed and his weight back 
 
 "Good." He seemed relieved on the ceiling's behalf. "Some of those Z2 retrofits go down to 2.8. I have to think about myself."
 
-"Φ8,000."
+"F8,000."
 
 "Yeah, all right. My dehumidifier destroyed itself, and I refuse to buy Arclight brand again." He turned back to the wall. His hand came up and rested against the column — not pushing it, just touching it, the way you touch something you've diagnosed and made peace with. "Send me whatever you have on the sub-basement. I like to know what I'm standing on."
 
@@ -229,19 +253,21 @@ Okafor's eyes came most of the way back to the room, which from her was a hard s
 
 "It was."
 
-"Good standard." She was quiet a moment. "Send me the floor schematics. I need to see the topography. And tell whoever else you're running that I'll need two hours of undisturbed prep before breach."
+"Good standard." She was quiet a moment. "Send me the floor schematics. I need to see the topography? And tell whoever else you're running that I'll need two hours of undisturbed prep before breach."
 
 "Done."
 
 [Beat 32]
-She was already gone again, or most of her was. Rook watched her two seconds and saw what she'd seen last time: Okafor's body always ran a half-step behind her attention, always arriving at the conversation a little late. Most people in the work kept the visible self controlled at all costs. Okafor didn't have the bandwidth to spare on it, and had decided she didn't need to.
+She was already gone again, or most of her was. Rook watched her two seconds and saw what she'd seen last time: Okafor's body always ran a half-step behind her attention, always arriving at the conversation a little late.
+
+Most people in the work kept the visible self controlled at all costs. Okafor didn't have the bandwidth to spare on it, and had decided she didn't need to.
 
 [Beat 33]
 The diner at Z2-Fass was gunmetal and grease — formica counters, strip lighting with one bulb burning magenta where the white had died, the ambiance of a room that had stopped caring about ambiance before Rook was born. It left you alone, which was the only thing it advertised.
 
 Remi Diallo was at a corner table, eyes rolled back.
 
-Four crawlers sat on the table. Two more rested on the floor near her chair, facing outward. One held the windowsill. Her tea had gone cold the way tea goes cold when no one has looked at it in forty minutes. She was breathing maybe eight times a minute, completely still, except for one hand that made a small adjustment every few minutes — a finger extending, then curling back — mirroring some movement she was making in a space that wasn't here. Her NSB rig had her. Whatever she was seeing, she saw through the frames, and her body had been left at the table like a coat over a chair.
+Four crawlers sat on the table. Two more rested on the floor near her chair, facing outward. One held the windowsill. Her tea had gone cold the way tea goes cold when no one has looked at it in forty minutes. She was breathing maybe eight times a minute, completely still, except for one hand that made a small adjustment every few minutes — a finger extending, then curling back — mirroring some movement she was making in a space that wasn't here. Her rig had her. Whatever she was seeing, she saw through the frames, and her body had been left at the table like a coat over a chair.
 
 Rook sat down across from her, ordered tea she also wouldn't drink, and waited.
 
@@ -258,7 +284,7 @@ She blinked once. Looked at the crawlers on the table as if counting them. Then 
 
 Diallo looked at her crawlers again. "I have seven operational. Three are named. The crew names them." It wasn't a complaint, and it wasn't quite resignation either. "I've stopped arguing."
 
-"Φ8,000."
+"F8,000."
 
 A pause. She picked up the cold tea and drank half of it without expression, the way a person refuels.
 
@@ -266,7 +292,7 @@ A pause. She picked up the cold tea and drank half of it without expression, the
 
 "Done. And one thing the others already have." Rook said it plainly. "The client routing is wrong. Could be a front, could be a second hand on the job. I don't have it yet. You're going in knowing it, same as everyone."
 
-Diallo's eyes came back to her then — all the way back, the way they rarely did. She held the look a beat longer than her custom. "You're telling me the gap before you've closed it."
+Diallo's eyes came back to her then — all the way back, the way they rarely did. She held the look a beat longer than her custom. "You're telling me the gap before you've closed it?"
 
 "Yes."
 
@@ -285,7 +311,9 @@ She sent four identical messages: *Brief drops in six hours.*
 The café across from Compound 7 served two things worth having: the drip and the view. Rook had been nursing the first since ten past six. The second cost nothing.
 
 [Beat 37]
-Axiom BioNanics Research Compound 7 filled most of the Z5 block between Morrow and the freight rail, and it wore its brand the way the brand wanted to be worn. Magenta panels framed every entrance. Magenta trim ran the length of the transit pod bays. The logo scrolled in four-foot repeats along the upper parapet, where the building couldn't decide whether it was a research facility or a billboard for one. Through the front glass the lobby was a magenta aquarium — floor, signage, a soft arterial wash that made the two guards behind the desk look like people waiting to be born. Out on the street the Waxwing Neuromedia civic layer ran undisturbed: blue queue barriers at the pod bays, crowd-flow arrows in regulation amber, a holographic stop sign held at the legal height above the Morrow corner. The city's overlay was as carefully maintained as everything else in Z5.
+Axiom BioNanics Research Compound 7 filled most of the Z5 block between Morrow and the freight rail, and it wore its brand the way the brand wanted to be worn. Magenta panels framed every entrance. Magenta trim ran the length of the transit pod bays. The logo scrolled in four-foot repeats along the upper parapet, where the building couldn't decide whether it was a research facility or a billboard for one.
+
+Through the front glass the lobby was a magenta aquarium — floor, signage, a soft arterial wash that made the two guards behind the desk look like people waiting to be born. Out on the street the Waxwing Neuromedia civic layer ran undisturbed: blue queue barriers at the pod bays, crowd-flow arrows in regulation amber, a holographic stop sign held at the legal height above the Morrow corner. The city's overlay was as carefully maintained as everything else in Z5.
 
 [Beat 38]
 Rook kept her eyes on the east entrance, her coffee at her left hand, her neuretics on passive. She was watching the building breathe — when the pod bays filled, when the lobby thinned, which guard checked his feed and which one didn't.
@@ -300,13 +328,13 @@ Vox's voice arrived through the bone-conduction strip behind her left ear at 6:1
 
 "Outer ring is settling," Vox said. "Pink wall was thinking about us around noon. It stopped."
 
-"Stopped or paused?" Rook asks.
+"Stopped or paused?" Rook asked.
 
 "Stopped. Our agents were moving slow enough that the pattern read as noise, so the wall filed us under ambient." A pause. "It's a very confident wall."
 
 The pink wall was Axiom's outer security AI, and Vox's gray-market agents had been walking it all day at a pace Rook had approved before breakfast — slow enough to read as background traffic, deliberate enough to map what mattered. The wall believed it knew what noise looked like. Vox's whole job today was to keep it right about that until the moment it wasn't.
 
-"Camera system?" Rook asks.
+"Camera system?" Rook asked.
 
 "Ninety-second blind, every four hours and forty-three minutes," Vox said. "It's an unlocked door nobody knows is unlocked. Two subroutines written by different teams in 2218, and the team that would've caught the seam got laid off in 2221. Nobody left has the clearance to touch the firmware." She said it like a key left under a mat by someone who'd moved away. "Next window after our entry slot lands at 11:17 tonight."
 
@@ -316,7 +344,7 @@ A pause, then quieter, without the flat reporting tone: "Rook. I want to run a t
 
 "It might cost an agent. The one I'd use for the third pass is the same one I need for the entry window."
 
-"What's the chance the subnet's a problem?" Rook asks.
+"What's the chance the subnet's a problem?" Rook asked.
 
 "Twelve percent. With the sim, three."
 
@@ -333,11 +361,11 @@ Scout's body was three blocks east, in the safe room they'd rented for the week 
 
 "East corridor," Scout said, even and dry, the way she always sounded on the link. "Maintenance entrance. Two cameras, neither on the door."
 
-"Angle?" Rook asks.
+"Angle?" Rook asked.
 
 "One on the corridor junction. One on the service bay. The door sits in the gap. Steel frame, older than the build — retrofitted." A pause that meant she was easing a crawler past something. "Guard rotation runs the east corridor every forty minutes. Between rotations they don't check the bay. They check the log."
 
-"How honest is the log?" Rook asks.
+"How honest is the log?" Rook asked.
 
 "Maintenance crews use it to clock out early. So it's wrong, but wrong in a direction you can trust."
 
@@ -348,7 +376,9 @@ Lace had sat with her target — a man whose name she'd already let go of — fo
 
 She mentioned that her firm was bidding on a support contract for a couple of Z5 facilities, and that the paperwork was going to kill her before the work did. He laughed and said he knew exactly what she meant. Somewhere in the next twenty minutes he told her that contractor inspection used the north service bay off Morrow; that the badge color for inspection access this quarter was yellow — not visitor yellow, contractor yellow, which was more of a gold, really; and that the facility manager was named Nowak. Petra Nowak. She'd taken the role three months ago and was already making herself felt in the scheduling system.
 
-Lace wrote none of it down. She walked two blocks before she recited it into the crew channel, flat and in order, like reading off a list she'd held the whole time. She attached three authenticated recordings from Axiom's public archive: a 2224 all-hands address, a field briefing transcript with timestamps, and a 2225 Q3 threat assessment Adalemo had delivered in person — enough to map his clipped speech and low-urgency register. Then, not in report cadence but in her own: "The manager's the one to watch. Three months in and already rewriting other people's schedules. People like that walk the floor. They don't trust the log either."
+Lace wrote none of it down. She walked two blocks before she recited it into the crew channel, flat and in order, like reading off a list she'd held the whole time. She attached three authenticated recordings from Axiom's public archive: a 2224 all-hands address, a field briefing transcript with timestamps, and a 2225 Q3 threat assessment Adalemo had delivered in person — enough to map his clipped speech and low-urgency register.
+
+Then, not in report cadence but in her own: "The manager's the one to watch. Three months in and already rewriting other people's schedules. People like that walk the floor. They don't trust the log either."
 
 [Beat 43]
 At 6:44 Rook ordered a second coffee she didn't need and watched the lobby.
@@ -356,9 +386,11 @@ At 6:44 Rook ordered a second coffee she didn't need and watched the lobby.
 At 6:47 the lobby doors opened and Dr. Halina Soraya walked out.
 
 [Beat 44]
-She walked the way someone walks when they believe they know who's watching and have decided it doesn't matter — which was different from not caring, and different from not knowing. Rook took three seconds sorting the difference while Soraya crossed to the pod bay and scanned her wrist against the reader. The pod arrived in under forty seconds, which was fast. She boarded alone. She didn't check her neuretics while she waited, and she didn't look back at the building she'd just left.
+She walked the way someone walks when they believe they know who's watching and have decided it doesn't matter — which was different from not caring, and different from not knowing. Rook took three seconds sorting the difference while Soraya crossed to the pod bay and scanned her wrist against the reader.
 
-The pod pulled east toward the Z5 transfer hub. Rook noted the time and finished her coffee.
+The pod arrived in under forty seconds, which was fast. She boarded alone. She didn't check her neuretics while she waited, and she didn't look back at the building she'd just left.
+
+The pod pulled east toward the Z5 transfer hub. Rook checked the time and finished her coffee.
 
 [Beat 45]
 At six-fifty she paid and left. She walked back north via the freight siding — a different route than the one in, because repeated routes became patterns. The loading dock ran two meters above the maintenance lane. The stairs were padlocked. She looked at the drop and stepped off it, the impact spreading clean through her knees the way it did when you'd done it often enough that the joints had their own memory of it. Nobody was there to see. She walked on.
@@ -370,7 +402,7 @@ At six-fifty she paid and left. She walked back north via the freight siding —
 
 "Load capacity's rated for a Mikkola Class Four hauler" — which was forty-eight metric tons — and there was something under it: the quiet satisfaction of a man who'd found a useful problem and was telling you about it without telling you about it.
 
-"2224 stress assessment," Rook said. "Column wasn't a priority."
+"2224 stress assessment," Rook said. "Column wasn't a priority?"
 
 A pause. Then, warmly: "No, it wouldn't have been." He didn't say anything else. He didn't need to.
 
@@ -380,7 +412,11 @@ By nine o'clock Rook had it spread across the table in the apartment: the camera
 The seams were small. The window was real. The entrance was usable. Nowak was a name she'd carry now.
 
 [Beat 48]
-One item from Lace's source sat outside the diagram. A contractor access team — a Z3 logistics outfit, three people — had been dropped from Axiom's approved-vendor list seven weeks ago. No documented incident. No filed grievance. Just a flag on the name and a note in the security queue: *access suspended, security review.* Rook had no category for it yet. She wrote *seven weeks* and put a box around it.
+One item from Lace's source sat outside the diagram. A contractor access team — a Z3 logistics outfit, three people — had been dropped from Axiom's approved-vendor list seven weeks ago.
+
+No documented incident. No filed grievance. Just a flag on the name and a note in the security queue: *access suspended, security review.*
+
+Rook didn't know what to make of it yet. She underlined the seven weeks and left it alone.
 
 [Beat 49]
 She left Soraya for last, and read back what she'd written: *6:47, lobby exit, pod bay, east transfer, alone, always alone, forty-second pod response, no feed check.*
@@ -388,16 +424,24 @@ She left Soraya for last, and read back what she'd written: *6:47, lobby exit, p
 A forty-second pod response in Z5 at quarter to seven ran far faster than normal. You got a response like that only if the transit system was routing for you specifically. That meant a standing priority flag on the account, which meant someone had set it.
 
 [Beat 50]
-Soraya hadn't set it for herself. Someone else wanted her moving fast and clear through Z5 — wanted to know exactly where she was and get her there quickly. And in thirty hours of watching, Soraya had never once looked back at the building, never checked whether the café across the street held yesterday's two customers. She moved like a person who'd already been promised she was safe.
+Soraya hadn't set it for herself. Someone else wanted her moving fast and clear through Z5 — wanted to know exactly where she was and get her there quickly.
+
+And in thirty hours of watching, Soraya had never once looked back at the building, never checked whether the café across the street held yesterday's two customers. She moved like a person who'd already been promised she was safe.
 
 [Beat 51]
-Rook sat with that longer than the data needed. Either someone was protecting Soraya, or someone was keeping her on a leash she couldn't feel — and from the outside, the priority flag looked identical either way. It folded into what Gault's relay had already told her: a client who wasn't only a client, a hand on the job that wasn't hers. She didn't have the shape yet. She had two facts that wanted to be the same fact.
+Rook sat with that longer than the data needed. Either someone was protecting Soraya, or controlling her — the data looked the same from outside either way. It folded into what Gault's relay had already told her: a client who wasn't only a client, a hand on the job that wasn't hers.
+
+She didn't have the shape yet. She had two facts that wanted to be the same fact.
 
 [Beat 52]
-And the part she sat with longest wasn't operational. It was that Soraya moved like someone in the middle of a decision she'd already made — the missing backward glance that wasn't confidence but commitment. Rook knew that walk. She'd walked it. She set the cup down and did not look back at the building. Then she pulled the forty-eight-hour clock up on her neuretics, looked at it, and dismissed it.
+And the part she sat with longest wasn't operational. It was that Soraya moved like someone in the middle of a decision she'd already made — the missing backward glance that wasn't confidence but commitment. Rook knew that walk. She'd walked it. She set the cup down and did not look back at the building.
+
+Then she pulled the forty-eight-hour clock up on her neuretics, looked at it, and dismissed it.
 
 [Beat 53]
-The room cost Φ18 a night, which explained the smell — recycled air pushed through ductwork nobody had serviced since the last government that cared about such things. A table. Five chairs, and a crate pressed into service as a sixth. A portable display panel leaned against the wall, one edge held up by a strip of tape. No windows. The kind of room you rent when you need a room and nothing else it can offer.
+The room cost Φ18 a night, which explained the smell — recycled air pushed through ductwork nobody had serviced since the last government that cared about such things.
+
+A table. Five chairs, and a crate pressed into service as a sixth. A portable display panel leaned against the wall, one edge held up by a strip of tape. No windows. The kind of room you rent when you need a room and nothing else it can offer.
 
 [Beat 54]
 Rook stood at the panel and walked them through it.
@@ -411,7 +455,7 @@ Rook stood at the panel and walked them through it.
 [Beat 55]
 Lace watched the panel with the focused look she got when she measured the slope of authority in a space.
 
-"What does the badge rate? Facility access, or inspection?" she asks.
+"What does the badge rate? Facility access, or inspection?" she asked.
 
 "Inspection. ISB regulatory compliance. She can demand entry to any space under the 2218 Infrastructure Safety Mandate. Nowak can push back on procedure, but not on the threshold of a door."
 
@@ -427,7 +471,7 @@ Vox sat with her eyes not quite resting on the room. The Casque & Veil integrati
 
 "It isn't the wall that beats you," she said. "It's what the wall expects you to do. It's watching for external access, badge spoofing, signal intercept. Our agents come in underneath the maintenance cycle, not through it. Wrong kind of entry. It won't look up."
 
-"And the ninety seconds is ours?" Rook asks.
+"And the ninety seconds is ours?" Rook asked.
 
 "The ninety seconds is ours."
 
@@ -446,7 +490,7 @@ Scout's fingers stopped. That was the confirmation.
 [Beat 60]
 Boiler had been sitting with his arms crossed and his weight tipped back, the way he sat when something had already occurred to him.
 
-"Two hundred meters? South side?" he asks.
+"Two hundred meters? South side?" he asked.
 
 "Two hundred meters south. You're with the vehicle."
 
@@ -455,7 +499,7 @@ His eyes went to the display — to the elevated freight corridor drawn along th
 [Beat 61]
 "The vehicle's there if we need it," Rook said. "The plan doesn't call for it."
 
-"I know," Boiler said, at peace with it. "You're saying it in case something goes wrong."
+"I know," Boiler said, at peace with it. "You're saying it in case something goes wrong?"
 
 "I'm saying it because it's the plan."
 
@@ -479,7 +523,9 @@ Three things could go wrong. She had a plan for two. The third was low-probabili
 Nobody argued. They'd all run enough jobs to know that wasn't philosophy. It was the line between a plan and a wish.
 
 [Beat 67]
-It had been philosophy once. She'd carried a looser rule before Wennick — before the extraction where the window she'd called clean wasn't, and he went through a door she'd said was safe. She'd spent two years afterward reading the lesson as distance: keep the machinery between yourself and the outcome and nobody else lands on your account.
+It had been philosophy once. She'd carried a looser rule before Wennick — before the extraction where the window she'd called clean wasn't, and he went through a door she'd said was safe.
+
+She'd spent two years afterward reading the lesson as distance: keep the machinery between yourself and the outcome and nobody else lands on your account.
 
 [Beat 68]
 She looked at the eastern approach — the door she'd open, the forty meters Soraya would walk on her say-so — and rechecked the numbers, because Soraya was going to trust the read the same way Wennick had.
@@ -492,16 +538,26 @@ She turned off the display.
 She'd done the work to make it that way. One way in. One way out. Four people who knew their jobs. A ninety-second window that had been opening on schedule for four years.
 
 [Beat 70]
-Scout closed her crawler case with a click that carried its own finality, picked it up, and was already partway elsewhere — probably running the east corridor one more time to confirm a measurement she'd confirmed twice. Rook watched her go. Diallo moved through a room the way a person moves through a room they're only visiting; her real geography was elsewhere and had been since before Rook knew her. Two jobs in, Rook knew her name, her crawler count, and her preferences, and nothing else — and knew, tonight, that the wall between them was one she'd built, not a fact of the woman.
+Scout closed her crawler case with a click that carried its own finality, picked it up, and was already partway elsewhere — probably running the east corridor one more time to confirm a measurement she'd confirmed twice. Rook watched her go.
+
+Diallo moved through a room the way a person moves through a room they're only visiting; her real geography was elsewhere and had been since before Rook knew her. Two jobs in, Rook knew her name, her crawler count, and her preferences, and nothing else — and knew, tonight, that the wall between them was one she'd built, not a fact of the woman.
 
 [Beat 71]
-Vox was quiet in the way that meant her agents were reporting and she was listening to all three at once. Lace was reviewing the ISB mandate language on her display; she'd have it memorized by morning. Boiler stood and stretched, a movement that made the room briefly smaller, and looked at the south wall as though he could see through it — two hundred meters of city, a bridge, a parked vehicle, all of it waiting on the far side of morning.
+Vox was quiet in the way that meant her agents were reporting and she was listening to all three at once.
+
+Lace was reviewing the ISB mandate language on her display; she'd have it memorized by morning.
+
+Boiler stood and stretched, a movement that made the room briefly smaller, and looked at the south wall as though he could see through it — two hundred meters of city, a bridge, a parked vehicle, all of it waiting on the far side of morning.
 
 [Beat 72]
 The vehicle was moving. That was the only concession Rook had made.
 
 [Beat 73]
-Z5 ran commercial-industrial for twelve blocks north of Compound 7's service perimeter, which meant freight traffic and enough heat-signature noise to make passive pursuit expensive. Boiler had them in a mid-range cargo van, no livery, nothing on the panels — the kind of vehicle that dissolved into ordinary logistics. Rook had told him to hold thirty and stay in the marked lanes, and he'd taken it without asking why, the way he took most instructions while the numbers were still open.
+Z5 ran commercial-industrial for twelve blocks north of Compound 7's service perimeter, which meant freight traffic and enough heat-signature noise to make passive pursuit expensive.
+
+Boiler had them in a mid-range cargo van, no livery, nothing on the panels — the kind of vehicle that dissolved into ordinary logistics.
+
+Rook had told him to hold thirty and stay in the marked lanes, and he'd taken it without asking why, the way he took most instructions while the numbers were still open.
 
 [Beat 74]
 Ohara sat in the second row, watching the back of Rook's head.
@@ -526,7 +582,9 @@ The van ran a light without slowing. Boiler had a route.
 "I did. Through Gault. Fourteen months building a research escrow — shell account, clean routing. Three weeks ago I retained the cutout. You were contracted a week after that."
 
 [Beat 78]
-There it was. The second hand she'd felt on the job since the night Gault offered it — except the hand was the package itself, reaching back through the relay to hire its own extraction. She'd been right, and she disliked being right about half a second after she felt it. "Gault had two clients," she said.
+There it was. The second hand she'd felt on the job since the night Gault offered it — except the hand was the package itself, reaching back through the relay to hire its own extraction. She'd been right, and she disliked being right about half a second after she felt it.
+
+"Gault had two clients," she said.
 
 [Beat 79]
 Ohara looked at her steadily.
@@ -544,7 +602,9 @@ Ohara looked at her steadily.
 "By about eleven days."
 
 [Beat 80]
-Eleven days ahead. A research escrow built over fourteen months. A cutout she controlled, a payment she arranged, a plan she'd been running while she was still badging into the building every morning. Rook knew that trade. She'd made it herself once, with a count of three exits and a dead colleague's trust. She didn't say so.
+Eleven days ahead. A research escrow built over fourteen months. A cutout she controlled, a payment she arranged, a plan she'd been running while she was still badging into the building every morning.
+
+Rook knew that trade. She'd made it herself once, with a count of three exits and a dead colleague's trust. She didn't say so.
 
 [Beat 81]
 Lace was watching Ohara's face from the third row. She'd been watching since Compound 7, and her expression hadn't changed, but she'd shifted — weight back off the balls of her feet, shoulders down an inch. The posture of someone who'd finished reading a person and started reading the room around her.
@@ -566,6 +626,8 @@ Boiler nodded at the road ahead, as if she'd confirmed something he'd long suspe
 
 [Beat 85]
 Vox said, without looking up from the interface across her left forearm, "PEREGRINE's running a track protocol." The flat reporting tone had a hairline crack in it. "Axiom's perimeter relay logged a compound anomaly twenty-two minutes ago. Someone flagged the badge exception before the door finished closing." The interface shifted color by two shades. "They were waiting for it. I don't have their search grid yet."
+
+PEREGRINE was Axiom's answer to problems legal couldn't solve with paperwork — in-house recovery and containment, the kind of contractor a corp kept off the books precisely so it never had to explain what they did.
 
 "Get it," Rook said.
 
@@ -592,7 +654,7 @@ Rook turned back to the mirror. Z5 was giving way to the civic buffer between th
 
 "Meridian Charter, 2219. Three miles out, outside CorpoNation jurisdiction. The Science Cooperative's public broadcast node runs under the Meridian Open Data Protocol — irrevocable once published. If I put the formula into that node, it enters the public domain. Unpatentable. Free." A pause that was precision, not hesitation. "It doesn't erase the dual-use risk. Nothing erases that now. But it makes Axiom's military filing worthless. They can't hold a patent on what everyone already has."
 
-"Three miles," Scout said.
+"Three miles?" Scout said.
 
 Nobody had asked her. Nobody answered. Rook let it sit.
 
@@ -613,12 +675,14 @@ She turned back. "The job's the same job. Extract a researcher. The extraction p
 
 "Yes."
 
-"I need to know what you actually think they send."
+"I need to know what you actually think they send?"
 
 Ohara looked at her without blinking. "I think they send someone like you. Except they don't have someone like you, so I don't know who they send. That's the problem."
 
 [Beat 92]
-Rook held the look a beat longer than the conversation needed. Most people, on the far side of a plan this large, would have softened the admission. Ohara hadn't softened anything. She looked at Rook with the steadiness of a person who'd decided, after four years and fourteen months and eleven days, that the woman across from her was the most useful instrument she could have bought.
+Rook held the look a beat longer than the conversation needed. Most people, on the far side of a plan this large, would have softened the admission. Ohara hadn't softened anything.
+
+She looked at Rook with the steadiness of a person who'd decided, after four years and fourteen months and eleven days, that the woman across from her was the most useful instrument she could have bought.
 
 [Beat 93]
 "You're not afraid I'll sell you back to them," Rook said. Not a question either. "You read me the same way."
@@ -635,7 +699,11 @@ Rook faced forward. The lake approach was coming up — three miles of civic wat
 That was the job.
 
 [Beat 95]
-The Bloom Quarter smelled like cooked protein and ozone and something medicinal Rook had never been able to name — whatever the Class I dispensaries used to hide the fact that they sold the same substrates as the gray-market stalls three meters away, only with liability waivers attached. The transit corridor was narrow. Two people moving opposite ways had to work it out with their shoulders. Rook had liked that when they picked the route. Crowd friction as cover. Density as noise. The overlay had gone quiet here — no ident tags off the stalls, no product holograms, just dead panels that had stopped paying relay fees years back. After Z5, the Bloom Quarter's dark felt like partial blindness.
+The Bloom Quarter smelled like cooked protein and ozone and something medicinal Rook had never been able to name — whatever the Class I dispensaries used to hide the fact that they sold the same substrates as the gray-market stalls three meters away, only with liability waivers attached. A woman a few stalls down was deep in an argument over one of those waivers, one hand up, finger raised, arguing like the price was the only unfair thing left in the world that morning.
+
+The transit corridor was narrow. Two people moving opposite ways had to work it out with their shoulders. Rook had liked that when they picked the route. Crowd friction as cover. Density as noise.
+
+The overlay had gone quiet here — no ident tags off the stalls, no product holograms, just dead panels that had stopped paying relay fees years back. After Z5, the Bloom Quarter's dark felt like partial blindness.
 
 [Beat 96]
 She was revising that.
@@ -652,10 +720,14 @@ The man at the end of the corridor had been standing still too long.
 
 "Box," she said.
 
-Forty meters. Large. Military posture worn down by years of trying not to look military — and failing, in the way that said he knew it and had stopped caring. His hands were loose and empty, which in a corridor this tight meant a contact weapon: a monoedge baton, a palm-shock unit, the close-in tools PEREGRINE carried where a drawn gun was a liability and a body was paperwork. Behind them the engine note changed. The driver had repositioned.
+Forty meters. Large. Military posture worn down by years of trying not to look military — and failing, in the way that said he knew it and had stopped caring. His hands were loose and empty, which in a corridor this tight meant a contact weapon: a monoedge baton, a palm-shock unit, the close-in tools PEREGRINE carried where a drawn gun was a liability and a body was paperwork.
+
+Behind them the engine note changed. The driver had repositioned.
 
 [Beat 99]
-"Oh, interesting," Boiler said — the way a structural engineer says it, noticing something odd about a load. Then he was moving, and the corridor narrowed around him, less from his size than from his certainty. The crowd parted before it had decided to.
+"Oh, interesting," Boiler said — the way a structural engineer says it, noticing something odd about a load.
+
+Then he was moving, and the corridor narrowed around him, less from his size than from his certainty. The crowd parted before it had decided to.
 
 [Beat 100]
 PEREGRINE's close man had trained for this. You could see it in his first movement, the drop of weight, the footwork trying to own the corridor's width. He was good. Boiler arrived anyway.
@@ -665,10 +737,14 @@ PEREGRINE's close man had trained for this. You could see it in his first moveme
 The specialist hit the base of the nearest column with a sound that emptied two stalls of their customers. Boiler hadn't deflected the strike — he'd caught it, folded the force into his own frame, and handed it back as angle. The man's own technique, used against the column he didn't know was there. His shoulder hit concrete, wrong-footed, and there was no time left to take the fall right.
 
 [Beat 101]
-Then the second man came through the door the first had opened — out of the stall behind Ohara, from the side, the way PEREGRINE's two-person cells always ran it. Ohara wasn't where she'd been. She'd read the angles the same instant Rook had and moved two meters sideways into the crowd without being told.
+Then the second man came through the door the first had opened — out of the stall behind Ohara, from the side, the way PEREGRINE's two-person cells always ran it.
+
+Ohara wasn't where she'd been. She'd read the angles the same instant Rook had and moved two meters sideways into the crowd without being told.
 
 [Beat 102]
-The second man reached empty space. And here was the thing Rook would carry, the thing that set him apart from every guard she'd ever planned around: he didn't hesitate, didn't reassess, didn't adjust for the fact that the corridor was packed shoulder to shoulder with people who had nothing to do with any of it. He raised a Daewon machine pistol — stubby, suppressed, the subsonic caseless that left no brass and no muzzle flash for Vox's agents to catch — and fired through the space where Ohara's head had been.
+The second man reached empty space. And here was the thing Rook would carry, the thing that set him apart from every guard she'd ever planned around: he didn't hesitate, didn't reassess, didn't adjust for the fact that the corridor was packed shoulder to shoulder with people who had nothing to do with any of it.
+
+He raised a Daewon machine pistol — stubby, suppressed, the subsonic caseless that left no brass and no muzzle flash for Vox's agents to catch — and fired through the space where Ohara's head had been.
 
 A flat, hard cough. No louder than the first man hitting the column.
 
@@ -680,7 +756,9 @@ It took a substrate vendor through the throat.
 A woman. Fifties. Four seconds ago she'd been mid-argument about the price of a waiver, one hand up, a finger raised to make a point that no longer mattered. The round took her at the base of the neck and she sat down. Not dramatically. Not the way violence sat people down in the feeds. She sat the way a person sits when their legs have simply been told they're off duty. Her back found the stall front. The finger was still half-raised. Her mouth made the shape of the rest of the sentence and no sound came with it.
 
 [Beat 104]
-Her eyes found Rook. Across four meters of stall light, the one still point in a corridor coming apart. There was no accusation in them, which was worse. There was only plain bewilderment — a person learning that the world had a price list she'd never been shown, and that she was on it. Her eyes lost convergence — drifting apart by a degree, then held. The pupils fixed at a point past Rook's shoulder, at nothing.
+Her eyes found Rook. Across four meters of stall light, the one still point in a corridor coming apart. There was no accusation in them, which was worse. There was only plain bewilderment — a person learning that the world had a price list she'd never been shown, and that she was on it.
+
+Her eyes lost convergence — drifting apart by a degree, then held. The pupils fixed at a point past Rook's shoulder, at nothing.
 
 [Beat 105]
 The corridor broke. Not screams first. Motion — the animal surge of a crowd that has understood violence before it understands why.
@@ -694,10 +772,14 @@ She knew it a half-second late, with her body already committed to the stillness
 The shooter saw it. That was the part she'd meet again, on a rail in the rain. He clocked her freeze — the planner gone briefly to stone over a body that wasn't on anyone's manifest — and he read it right, and he didn't exploit it. Exploiting it wasn't efficient, and he wasn't there to kill the runner. He was there to recover an asset. He wrote her off and adjusted, the way she would normally have written off him. Two professionals, and one of them had just learned the other one stopped for the dead. He'd remember it. So would she.
 
 [Beat 108]
-Then her body came back. She moved — not toward the shooter, toward Ohara, getting her weight between the woman and the gun, because the freeze had cost her nothing she could still spend and the only currency left was speed. She caught the shooter's collar in passing and drove him off-balance into the side of a cart. Three seconds of it, the steel edge catching him high on the cheekbone as he went in, splitting a thin line that would mark him a week. Not long enough to put him down. He recovered military-fast and didn't pursue — the cut across his face the only receipt she'd get to write him — and peeled off with it, no wasted motion, rejoining a partner she never saw. The discipline of a unit run by someone who treated a botched grab as data, not failure. Somewhere behind these two was a hand that had decided exactly how much it would spend, and had spent not a gram more.
+Then her body came back. She moved — not toward the shooter, toward Ohara, getting her weight between the woman and the gun, because the freeze had cost her nothing she could still spend and the only currency left was speed. She caught the shooter's collar in passing and drove him off-balance into the side of a cart.
+
+Three seconds of it, the steel edge catching him high on the cheekbone as he went in, splitting a thin line that would mark him a week. Not long enough to put him down. He recovered military-fast and didn't pursue — the cut across his face the only receipt she'd get to write him — and peeled off with it, no wasted motion, rejoining a partner she never saw. The discipline of a unit run by someone who treated a botched grab as data, not failure. Somewhere behind these two was a hand that had decided exactly how much it would spend, and had spent not a gram more.
 
 [Beat 109]
-Boiler looked at his own hands, satisfied. There was a little of someone else's blood on his left shoulder that he'd either not noticed or decided wasn't his problem. Rook was already moving Ohara ahead of her — Ohara not running, walking at the controlled pace of someone who understood that running announced itself. She hadn't watched Boiler work. She'd watched the shooter, and the woman who went down, and she hadn't looked away from either. Rook saw her not look away, and set it beside the other things she was carrying out of this corridor.
+Boiler looked at his own hands, satisfied. There was a little of someone else's blood on his left shoulder that he'd either not noticed or decided wasn't his problem. Rook was already moving Ohara ahead of her — Ohara not running, walking at the controlled pace of someone who understood that running announced itself.
+
+She hadn't watched Boiler work. She'd watched the shooter, and the woman who went down, and she hadn't looked away from either. Rook saw her not look away, and set it beside the other things she was carrying out of this corridor.
 
 [Beat 110]
 "Trace is burned," Vox said, the way someone sounds after a run not quite short enough to be easy. Her voice was wrong by a degree. She'd been close enough to hear the cough. "They had ninety seconds of fix. They know our direction of travel."
@@ -707,7 +789,9 @@ Boiler looked at his own hands, satisfied. There was a little of someone else's 
 "The burn cost them certainty, not location. So — enough."
 
 [Beat 111]
-They cleared the bend, past a magenta Axiom ad threading substrate nano through idealized bodies — *certified clean, certified effective* — into a junction where the stalls crowded closer and the signage strobed against itself. The soft trace had come from their own digital work. A tap pre-installed on Axiom's alert infrastructure. Pre-deployed. Bait. The job had felt slightly too available from day two — forty thousand, four ways, the price of a frame and not a fee. The second hand on the job had a glove on now, and she'd seen its color.
+They cleared the bend, past a magenta Axiom ad threading substrate nano through idealized bodies — *certified clean, certified effective* — into a junction where the stalls crowded closer and the signage strobed against itself.
+
+The soft trace had come from their own digital work. A tap pre-installed on Axiom's alert infrastructure. Pre-deployed. Bait. The job had felt slightly too available from day two — forty thousand, four ways, the price of a frame and not a fee. The second hand on the job had a glove on now, and she'd seen its color.
 
 [Beat 112]
 She didn't say it. They needed to move. But she said one thing, because Vox's voice had been wrong by that degree.
@@ -725,7 +809,11 @@ The junction split three ways and Rook took the middle without slowing. The midd
 Forty thousand, four ways. She'd known the job was underpriced on day two. She'd needed the money. She'd taken it anyway.
 
 [Beat 115]
-"Junction," she said. The word was quiet and complete, and Vox heard it and angled without being told — pressing Ohara left, into the vendor wall, out of the sightline the middle passage would give anyone coming fast from behind. Boiler was already sideways, one shoulder to the crowd-flow, scanning back. The four pacers hadn't sped up. They should have moved when she moved. They hadn't. They weren't chasing. They were steering. Which meant something waited in front.
+"Junction," she said. The word was quiet and complete, and Vox heard it and angled without being told — pressing Ohara left, into the vendor wall, out of the sightline the middle passage would give anyone coming fast from behind.
+
+Boiler was already sideways, one shoulder to the crowd-flow, scanning back.
+
+The four pacers hadn't sped up. They should have moved when she moved. They hadn't. They weren't chasing. They were steering. Which meant something waited in front.
 
 [Beat 116]
 The vendor density was wrong. The signage strobed in overlapping frequencies — magenta, white, the cold blue of a substrate tap running open. And under it, under the crowd noise and the tap-hiss and Vox's steady breathing two meters left, there was a thin electric whine with no source she could point to. Not loud. Low and constant under everything — hardware running at a load it hadn't been built to hide.
@@ -737,7 +825,9 @@ She found the source on the second read. Not a thing at first, just a shape the 
 They wanted Ohara in the cone.
 
 [Beat 119]
-Not a kill. A lock. Walk the researcher inside forty meters of that mast, take a clean read off her, and the corridor stopped being a crowd and became a room with one door PEREGRINE owned. The crush had been the crew's advantage since they chose the route. Past the mast it became PEREGRINE's. So they would not go past the mast.
+Not a kill. A lock. Walk the researcher inside forty meters of that mast, take a clean read off her, and the corridor stopped being a crowd and became a room with one door PEREGRINE owned. The crush had been the crew's advantage since they chose the route. Past the mast it became PEREGRINE's.
+
+So they would not go past the mast.
 
 [Beat 120]
 "North mouth. Now." She kept it under the crowd noise, low instead of loud, the register that carried by going quiet. "Boiler, wall side, break the line. Vox — the cart at twenty, the mast on it. Blind it. Don't slow down doing it."
@@ -747,10 +837,18 @@ Not a kill. A lock. Walk the researcher inside forty meters of that mast, take a
 "Two."
 
 [Beat 121]
-They broke before the pacers read the break. Rook took Ohara above the elbow — not a grip, a steer, the same steer PEREGRINE had been working on the whole crew, turned back now against the grain of the funnel — and cut them hard left through a gap the herd had left open exactly because no one was meant to want it. A service lane ran behind the vendor row, narrow and dark and sharp with the protein runoff the Quarter never quite washed down. It ran north. At the north end of it, nose out and idling, sat the van. Boiler had left it the way a man leaves a thing he means to need fast.
+They broke before the pacers read the break. Rook took Ohara above the elbow — not a grip, a steer, the same steer PEREGRINE had been working on the whole crew, turned back now against the grain of the funnel — and cut them hard left through a gap the herd had left open exactly because no one was meant to want it.
+
+A service lane ran behind the vendor row, narrow and dark and sharp with the protein runoff the Quarter never quite washed down. It ran north. At the north end of it, nose out and idling, sat the van. Boiler had left it the way a man leaves a thing he means to need fast.
 
 [Beat 122]
-Behind them the mast's whine climbed a half-step and then came apart into nothing — Vox's two seconds, spent clean, the cone folding before it closed on anyone. A pacer said something into a collar. All four gave up shopping at once and moved, fast now, no pretense left. By then it didn't matter. The crew was already folding into the van, Boiler had the wheel, and the engine was live under Rook's boots before the door sealed.
+Behind them the mast's whine climbed a half-step and then came apart into nothing — Vox's two seconds, spent clean, the cone folding before it closed on anyone.
+
+A pacer said something into a collar.
+
+All four gave up shopping at once and moved, fast now, no pretense left.
+
+By then it didn't matter. The crew was already folding into the van, Boiler had the wheel, and the engine was live under Rook's boots before the door sealed.
 
 [Beat 123]
 The four didn't chase them down the lane. They peeled — each toward a different mouth of the junction, toward vehicles, the funnel turning itself from a room into a road without a wasted motion.
@@ -825,7 +923,11 @@ Ahead, the forward hauler reached the far side and began to brake. Boiler accele
 Then he triggered it.
 
 [Beat 137]
-The sound wasn't what Rook braced for. She'd been around enough demolition to expect the flat concussive crack of a charge, and it opened that way — a deep percussive thud — but it didn't stop there. The thud rolled straight into a sound like a heavy cable parting under tension, and then into a long grinding groan she felt in her back teeth before she heard it. The east column didn't explode. It fractured, base to top, the crack chasing up the concrete in a line she could follow even at distance. Then the load went somewhere it wasn't built to go, and the eastern fifteen feet of the span let go.
+The sound wasn't what Rook braced for. She'd been around enough demolition to expect the flat concussive crack of a charge, and it opened that way — a deep percussive thud — but it didn't stop there.
+
+The thud rolled straight into a sound like a heavy cable parting under tension, and then into a long grinding groan she felt in her back teeth before she heard it. The east column didn't explode. It fractured, base to top, the crack chasing up the concrete in a line she could follow even at distance.
+
+Then the load went somewhere it wasn't built to go, and the eastern fifteen feet of the span let go.
 
 [Beat 138]
 It came down in pieces. Not all at once — the way a thing comes apart when it was already coming apart and something just fixed the timeline. The concrete sections separated from the rebar first. The rebar held two seconds longer, stripped bright where it tore, then let go too, and the whole eastern section dropped a hundred and thirty feet into the trench. The sound reached her in stages: the fracture, the drop, the impact slamming up off the trench floor, and a long settling that ran on for six full seconds as the wreckage found its rest. Dust and pulverized aggregate climbed above the trench line and hung there, lit gray-orange from the infrastructure lighting underneath.
@@ -852,21 +954,29 @@ Rook found her in the rear mirror. "Yes."
 
 "The 2224 stress report estimated lateral failure under load would produce section separation within fifteen to twenty seconds. Eleven is faster." She turned it over, unhurried. "The column was worse than the report indicated."
 
-"You read a stress report on a bridge."
+"You read a stress report on a bridge?"
 
 "I read stress reports on load-bearing infrastructure before any operation I'm involved in," Ohara said — precisely, without apology, without any sense that this wasn't something people generally did. "The report was flagged for emergency remediation in 2224. The remediation budget was not allocated."
 
 [Beat 143]
-Rook held her in the mirror two seconds, then looked back at the road. She'd started this job reading Ohara as one more frightened person who over-prepares because they don't know what to prepare for. That read wanted amending. Frightened people don't read stress reports. People who intend to be standing exactly where the stress report matters read it, remember the numbers, and check them against the wreckage afterward to see how good their information was. Ohara wasn't preparing against fear. She was the most prepared person in the van, and the only one of them whose hands had never touched a weapon, and Rook caught herself respecting that more than she'd meant to.
+Rook held her in the mirror two seconds, then looked back at the road. She'd started this job reading Ohara as one more frightened person who over-prepares because they don't know what to prepare for. That read wanted amending.
+
+Frightened people don't read stress reports. People who intend to be standing exactly where the stress report matters read it, remember the numbers, and check them against the wreckage afterward to see how good their information was. Ohara wasn't preparing against fear. She was the most prepared person in the van, and the only one of them whose hands had never touched a weapon, and Rook caught herself respecting that more than she'd meant to.
 
 [Beat 144]
 Boiler, from the front, said cheerfully, "She was already going. I just helped her go in the right direction." He flexed his hand once, the one that had set the driver, the way you'd ease a hand that had done good work. "Cheaper than charges. And it leaves the right kind of evidence, which is to say none. A failed column on a bridge nobody funded. Civic tragedy. Very sad."
 
 [Beat 145]
-Nobody laughed, but the van eased a degree — Vox's thumb stopped moving on the earpiece cable. Boiler took them north, unhurried, up into the part of the industrial quarter where the freight stacks thinned and gave the sky back.
+Nobody laughed, but the van eased a degree — Vox's thumb stopped moving on the earpiece cable.
+
+Boiler took them north, unhurried, up into the part of the industrial quarter where the freight stacks thinned and gave the sky back.
 
 [Beat 146]
-The lake unit was a rented mid-block Z4 flat — magnolia walls someone had painted over twice without priming, the second coat already lifting at the seams. Boiler checked the exits before anyone set down their gear. Three ways in, two ways out, one of the two a window onto a maintenance corridor Vox said looked quiet. Six hours, Rook gave it. Maybe less, if PEREGRINE ran a tighter grid search than she'd expected — and she was no longer confident in her expectations about PEREGRINE. That was the part she kept circling.
+The lake unit was a rented mid-block Z4 flat — magnolia walls someone had painted over twice without priming, the second coat already lifting at the seams.
+
+Boiler checked the exits before anyone set down their gear. Three ways in, two ways out, one of the two a window onto a maintenance corridor Vox said looked quiet.
+
+Six hours, Rook gave it. Maybe less, if PEREGRINE ran a tighter grid search than she'd expected — and she was no longer confident in her expectations about PEREGRINE. That was the part she kept circling.
 
 [Beat 147]
 Ohara set the hard case on the kitchen table like she meant to open it, then didn't. She stood beside it, hands at her sides, squared to the middle of the room.
@@ -901,7 +1011,7 @@ She'd assumed *asset* meant Ohara — had built the whole thing as a recovery jo
 
 "Yes," Ohara said.
 
-"PEREGRINE already knew about you."
+"PEREGRINE already knew about you?"
 
 Ohara was quiet for the first time since she'd started talking. Three seconds, maybe four. "That is correct. I thought I had more time."
 
@@ -956,9 +1066,13 @@ Rook's jaw went tight, one involuntary degree, before she'd decided anything. Sh
 "I'm not saying it for you," Vox said, still to the floor. "I'm saying it because if I don't say it to someone I'll carry it wrong all day tomorrow, and I need to carry it right tomorrow." A pause. "So. Said."
 
 [Beat 158]
-"She was a woman in her fifties," Rook said. "Arguing about a waiver price. She had her finger up. She looked at me when she went down — right at me, like I'd know what to do about it." She let it sit. "I'm not going to stop looking at her. I had a partner once who walked through a door I called safe, and it wasn't. His name was Wennick. That's the first time I've said it on a job in three years."
+"She was a woman in her fifties," Rook said. "Arguing about a waiver price. She had her finger up. She looked at me when she went down — right at me, like I'd know what to do about it."
 
-Vox was quiet a while. Then: "Okay." After another moment she pushed up off the wall and went back across the room to her array.
+She let it sit. "I'm not going to stop looking at her. I had a partner once who walked through a door I called safe, and it wasn't. His name was Wennick. That's the first time I've said it on a job in three years."
+
+Vox was quiet a while. Then: "Okay."
+
+After another moment she pushed up off the wall and went back across the room to her array.
 
 [Beat 159]
 "We move tomorrow night," Rook said. "The storm window."
@@ -966,10 +1080,20 @@ Vox was quiet a while. Then: "Okay." After another moment she pushed up off the 
 Nobody got up to leave. That was the part the plans never had a line for.
 
 [Beat 160]
-Boiler had found the unit's water heater and was listening to it tick, the unhurried attention he gave anything under load, and after a while he told the room it had maybe a year left in it — said it fondly, the way you note a thing's mortality once you've made peace with your own. Lace had taken the chair facing the door and was working a cloth slowly over her own knuckles, not cleaning anything that was dirty. Scout was gone into the crawlers, breathing three miles out — all but one, a scuffed six-legged unit she kept back from the others and set on the sill where she could feel it without riding it, the way you keep a hand on a sleeping animal. The crew had named that one Gerald two jobs ago. Scout had never used the name and had never corrected them, and she checked it last, every night, before she went in. It was the closest thing she let herself keep that the work didn't get.
+Boiler had found the unit's water heater and was listening to it tick, the unhurried attention he gave anything under load, and after a while he told the room it had maybe a year left in it — said it fondly, the way you note a thing's mortality once you've made peace with your own.
+
+Lace had taken the chair facing the door and was working a cloth slowly over her own knuckles, not cleaning anything that was dirty.
+
+Scout was gone into the crawlers, breathing three miles out — all but one, a scuffed six-legged unit she kept back from the others and set on the sill where she could feel it without riding it, the way you keep a hand on a sleeping animal.
+
+The crew had named that one Gerald two jobs ago. Scout had never used the name and had never corrected them, and she checked it last, every night, before she went in. It was the closest thing she let herself keep that the work didn't get.
 
 [Beat 161]
-Vox sat against the wall with her arm off the floor and her eyes half-shut, running the channels she had left, which were four and would be three by tomorrow night. "Four's enough," she said after a while, to the room, to no one — the first thing she'd offered all night that wasn't a reading. "I've run a job on two." Nobody answered, but Lace's mouth moved, not quite a smile, and that was an answer.
+Vox sat against the wall with her arm off the floor and her eyes half-shut, running the channels she had left, which were four and would be three by tomorrow night.
+
+"Four's enough," she said after a while, to the room, to no one — the first thing she'd offered all night that wasn't a reading. "I've run a job on two."
+
+Nobody answered, but Lace's mouth moved, not quite a smile, and that was an answer.
 
 [Beat 162]
 There was a warmth that wanted to come up at moments like this — the last quiet night before a thing some of them might not walk out of — and she'd spent years keeping it sealed. She let a little of it out now, into the not-quite-dark, where it cost nobody anything.
@@ -978,19 +1102,27 @@ There was a warmth that wanted to come up at moments like this — the last quie
 What woke Rook wasn't a sound. It was the loss of one. The water heater had stopped ticking.
 
 [Beat 164]
-*Boiler never walks away from something mid-cycle.*
+She knew it the way you know a habit's been broken: Boiler never walked away from something mid-cycle.
 
 [Beat 165]
-She was already off the floor before the thought finished, her hand finding the Reibo's grip in the dark by memory alone. The scuff of her boot was the only noise she made, and she killed that too. Across the room, Lace had frozen in the chair — cloth stopped, hands flat on her thighs, head tilted at the angle that meant she'd already heard something Rook hadn't. Scout's eyes were open. The crawler on the sill — Gerald — was still, which meant Scout had pulled her attention back from the three-mile perimeter and into this room, this sill. That was not a good sign.
+She was already off the floor before the thought finished, her hand finding the Reibo's grip in the dark by memory alone. The scuff of her boot was the only noise she made, and she killed that too.
+
+Across the room, Lace had frozen in the chair — cloth stopped, hands flat on her thighs, head tilted at the angle that meant she'd already heard something Rook hadn't.
+
+Scout's eyes were open. The crawler on the sill — Gerald — was still, which meant Scout had pulled her attention back from the three-mile perimeter and into this room, this sill. That was not a good sign.
 
 [Beat 166]
 Vox's eyes came all the way open. Her mouth shaped a number. Not four. Three, already.
 
 [Beat 167]
-The front window ran a thin bar of amber from the street below — neon off wet pavement, bent and wrong the way things bend in water. A shadow crossed it. One. Two. The second one didn't move like the first, and Rook had the body read a half-second before she had the word — the second shape was weighted wrong, arms too far from center, carrying something low and ahead of the hips — and her hand was already moving.
+The front window ran a thin bar of amber from the street below — neon off wet pavement, bent and wrong the way things bend in water. A shadow crossed it. One. Two.
+
+The second one didn't move like the first, and Rook had the body read a half-second before she had the word — the second shape was weighted wrong, arms too far from center, carrying something low and ahead of the hips — and her hand was already moving.
 
 [Beat 168]
-Then the word arrived. Breach ram — the squared, stubby silhouette of a hydraulic door-killer carried low against the second body, the tool you brought when you'd already decided not to try the handle. Nobody in the room moved. Everybody in the room was ready, five people gone to stone in the dark. In the half-second the amber held both shapes, Rook had time for one clean thought: the six hours she'd given the safe house had been about four too many. Then the first shape stepped aside. It cleared a lane for the second, the way you clear a lane for the one holding the tool.
+Then the word arrived. Breach ram — the squared, stubby silhouette of a hydraulic door-killer carried low against the second body, the tool you brought when you'd already decided not to try the handle. Nobody in the room moved. Everybody in the room was ready, five people gone to stone in the dark.
+
+In the half-second the amber held both shapes, Rook had time for one clean thought: the six hours she'd given the safe house had been about four too many. Then the first shape stepped aside. It cleared a lane for the second, the way you clear a lane for the one holding the tool.
 
 [Beat 169]
 The door came in on the second shadow.
@@ -1005,16 +1137,26 @@ She got the collar. She got Ohara up off the floor. She got one step.
 A hand closed on her wrist.
 
 [Beat 173]
-It came out of the dark on the door side — a gunmetal glove over a corp-black sleeve — and it stopped her the way a bolt stops a hinge. Complete. Mid-motion. Ohara's weight was still swinging forward on an arm that wasn't finishing the pull, and then not swinging forward at all, because the point man had turned Rook's own momentum against the grip and the researcher went where the force sent her — down, and sideways, out of Rook's hand and onto the wrong side of him, between the crew and the only exit that mattered. That was the part that told her how good they were. Not that he'd made the door. That he'd read the room in the half-second it took to breach and known, before his boots were fully inside, exactly which of six people to stop — and that stopping her and taking the package off the board were the same single motion.
+It came out of the dark on the door side — a gunmetal glove over a corp-black sleeve — and it stopped her the way a bolt stops a hinge. Complete. Mid-motion. Ohara's weight was still swinging forward on an arm that wasn't finishing the pull, and then not swinging forward at all, because the point man had turned Rook's own momentum against the grip and the researcher went where the force sent her — down, and sideways, out of Rook's hand and onto the wrong side of him, between the crew and the only exit that mattered.
+
+That was the part that told her how good they were: he'd read the room in the half-second it took to breach, and knew — before his boots were fully inside — exactly which of six people to stop.
 
 [Beat 174]
-The second man came through the breach behind him, and for two bad seconds the flat was not a room the crew owned. It was a killbox with the lights off and the exit on the wrong side of a professional. Boiler met the first rush of it with his whole body, took a breaching man the way a piling takes a wake, and bought the room two seconds. But the second man had an angle Boiler's mass couldn't cover, and he was already firing — the muzzle-flash strobing the dark into stop-motion: Ohara on the floor, Rook pinned mid-reach, Vox half-turned from her array with nowhere left to put herself. He clipped her. A graze, high on the left arm. She checked it the way she'd check a channel, one glance, and did not stop. The silent exit they'd rehearsed for two nights died right there beside the researcher.
+The second man came through the breach behind him, and for two bad seconds the flat was not a room the crew owned. It was a killbox with the lights off and the exit on the wrong side of a professional.
+
+Boiler met the first rush of it with his whole body, took a breaching man the way a piling takes a wake, and bought the room two seconds. But the second man had an angle Boiler's mass couldn't cover, and he was already firing — the muzzle-flash strobing the dark into stop-motion: Ohara on the floor, Rook pinned mid-reach, Vox half-turned from her array with nowhere left to put herself.
+
+He clipped her. A graze, high on the left arm. She checked it the way she'd check a channel, one glance, and did not stop. The silent exit they'd rehearsed for two nights died right there beside the researcher.
 
 [Beat 175]
 Then the crew took it back, in the order they always did — fast, and at cost.
 
 [Beat 176]
-Rook turned into the grip instead of against it, drove her elbow up through the line of the point man's jaw, and felt the hold break. He recovered before she'd cleared a full step, came back with the short-barreled piece already rising, and the flat was too tight for it. That was his mistake and her whole advantage. She was inside the barrel before it found her, the Reibo up under his chin, and the exchange after that lasted three seconds and put him on the floor slow to get up. She took the wrist first, then the knee, then let the floor finish it — the price of it landing in her shoulder, the specific strain of taking a trained body off its feet fast. He was on the concrete, one hand making a slow decision about whether to push up. Behind her, Vox finished what the graze had interrupted — two rounds, flat, from a woman who did her killing the way she did everything, at a remove, already turning back to her array before he dropped. She hadn't stopped working.
+Rook turned into the grip instead of against it, drove her elbow up through the line of the point man's jaw, and felt the hold break. He recovered before she'd cleared a full step, came back with the short-barreled piece already rising, and the flat was too tight for it. That was his mistake and her whole advantage.
+
+She was inside the barrel before it found her, the Reibo up under his chin, and the exchange after that lasted three seconds and put him on the floor slow to get up. She took the wrist first, then the knee, then let the floor finish it — the price of it landing in her shoulder, the specific strain of taking a trained body off its feet fast. He was on the concrete, one hand making a slow decision about whether to push up.
+
+Behind her, Vox finished what the graze had interrupted — two rounds, flat, from a woman who did her killing the way she did everything, at a remove, already turning back to her array before he dropped. She hadn't stopped working.
 
 [Beat 177]
 "Out," Rook said.
@@ -1037,14 +1179,16 @@ Gault sat in the back booth, a glass in front of him and a pad he wasn't reading
 He closed his eyes. It wasn't performance. He left them shut a moment, then opened them onto the ring of condensation his glass had left on the laminate — a surface that had been through thirty years of meetings like this one and worse.
 
 [Beat 183]
-"Three days ago. Axiom's legal division, through an intermediary. Formal, no pressure. They wanted the safe house and confirmation of the target's identity. Φ8,000. They called it asset-recovery due diligence." He kept his eyes on the table. "Legal division doesn't run wet squads. You sell a room number, a man knocks on a door, that's the end of it. I've done it a dozen times in fourteen years. I read the risk as low."
+"Three days ago. Axiom's legal division, through an intermediary. Formal, no pressure. They wanted the safe house and confirmation of the target's identity. F8,000. They called it asset-recovery due diligence." He kept his eyes on the table. "Legal division doesn't run wet squads. You sell a room number, a man knocks on a door, that's the end of it. I've done it a dozen times in fourteen years. I read the risk as low."
 
 "You read it wrong."
 
 "I read it wrong."
 
 [Beat 184]
-Rook had been standing since she walked in. She pulled out the chair across from him now and sat — not because she'd decided to stay, but because she found, to her own surprise, that she couldn't do this standing. He wasn't performing regret. He was sitting with what he'd done, in the same booth he'd probably sat in for years, like a man who'd already added up the total and wouldn't pretend it was smaller.
+Rook had been standing since she walked in. She pulled out the chair across from him now and sat — not because she'd decided to stay, but because she found, to her own surprise, that she couldn't do this standing.
+
+He wasn't performing regret. He was sitting with what he'd done, in the same booth he'd probably sat in for years, like a man who'd already added up the total and wouldn't pretend it was smaller.
 
 [Beat 185]
 "You didn't know it was a wet squad," Rook said. "That doesn't change what it did."
@@ -1059,7 +1203,7 @@ She let the bar noise be the only thing in the booth a moment — a transit work
 [Beat 187]
 Gault reached for the glass and didn't drink. "Recovery and containment." He set it down. "Those were the words. Recovery. Containment."
 
-"Containment."
+"Containment?"
 
 "I didn't think about what that meant." He looked at the wet ring. "Until you walked in."
 
@@ -1081,12 +1225,14 @@ She stood. And at the door she did the thing she'd taught the other four never t
 Gault in the booth with a glass he hadn't touched, his hands flat on the table. Not going anywhere. Present for the consequence of what he'd done, wearing the same careful reasonableness he'd worn the night he offered her the job. The same face. The inside of it entirely different now.
 
 [Beat 193]
-He hadn't checked the door once since she sat across from him — not when she walked in, not when the transit worker moved behind her, not now. She took the image with her out the door whether she wanted it or not.
+He hadn't checked the door once since she sat across from him — not when she walked in, not when the transit worker moved behind her, not now.
+
+She took the image with her out the door whether she wanted it or not.
 
 [Beat 194]
 The van was parked forty meters up — a panel job Boiler had sourced from his warehouse contact, registered to a fabrication outfit gone dormant six months ago. Lace leaned against the side panel. Scout was still running the perimeter crawler on the pad.
 
-"Done?" Lace asks.
+"Done?" Lace asked.
 
 "Done."
 
@@ -1096,7 +1242,7 @@ They got in. Boiler started the engine without asking.
 [Beat 196]
 Ohara sat in the back on the wheel well, jacket pulled around her, wearing the alertness of someone who'd taken what rest was available and was ready again. She said nothing when Rook came back to the van. She waited until Boiler pulled into the pre-dawn street before she spoke.
 
-"What happened to him?" she asks.
+"What happened to him?" she asked.
 
 "He's alive. He lost his network."
 
@@ -1106,7 +1252,9 @@ Ohara sat in the back on the wheel well, jacket pulled around her, wearing the a
 "Yes." The van ran a transition-lane marker, pale orange in the dark. "He should have asked more questions before he sold it."
 
 [Beat 198]
-Ohara turned her hands palm-up, looked at them, turned them back. Not idle. A person checking something. "He sold it because the framing was plausible and the risk read as low," she said. "He judged it wrong. He didn't lie about his intentions." She looked up. "I'm not arguing the verdict. I'm noting what kind of mistake it was."
+Ohara turned her hands palm-up, looked at them, turned them back. Not idle. A person checking something. "He sold it because the framing was plausible and the risk read as low," she said. "He judged it wrong. He didn't lie about his intentions."
+
+She looked up. "I'm not arguing the verdict. I'm noting what kind of mistake it was."
 
 [Beat 199]
 "I know what kind of mistake it was." Rook heard her own voice come out flatter than she meant. "It's the kind I make. The kind where you call a thing safe and you're wrong and somebody else pays the difference. I've burned people for less than what I just did to him, and I've forgiven myself for worse. So don't tell me what kind of mistake it was. I had the whole list of it before you did."
@@ -1119,7 +1267,9 @@ The van ran a quiet block. Ohara let it run. When she spoke again it wasn't to p
 "What?"
 
 [Beat 201]
-"You told me you'd go in, ask what you needed, and leave. You sat across from him." She said it the way she said everything — precisely, without leverage. "I watched you decide not to, and then do it anyway."
+"You told me you'd go in, ask what you needed, and leave. You sat across from him." She said it the way she said everything — precisely, without leverage.
+
+"I watched you decide not to, and then do it anyway."
 
 [Beat 202]
 Rook watched the shuttered kiosks, the transit pillar blinking yellow for maintenance, the city assembling itself in the dark. "It was a longer conversation than I planned for."
@@ -1127,7 +1277,9 @@ Rook watched the shuttered kiosks, the transit pillar blinking yellow for mainte
 "Yes," Ohara said. And left it there.
 
 [Beat 203]
-No one else spoke. Vox had her eyes closed, arm braced against her side. Boiler drove. Rook watched the Z3 fronts slide past, and Gault stayed with her — in the booth, hands flat, not going anywhere. She let him stay.
+No one else spoke. Vox had her eyes closed, arm braced against her side. Boiler drove.
+
+Rook watched the Z3 fronts slide past, and Gault stayed with her — in the booth, hands flat, not going anywhere. She let him stay.
 
 [Beat 204]
 They had a storm to fly into. She turned her face to the window and let both of them — the dead woman and the burned man — ride along in the glass, because she'd decided, somewhere back in that booth, to stop pretending she had anywhere clean to put them.
@@ -1136,13 +1288,17 @@ They had a storm to fly into. She turned her face to the window and let both of 
 The bay doors had been open for twenty minutes and the lake had found every gap in the building's skin.
 
 [Beat 206]
-Rook stood at the threshold where the concrete met the dock, collar turned up against the spray. Lake Michigan in November was a physical fact: gray-green swells running three feet, white at the tips, the whole surface shuddering under a wind that tasted of iron and rain. The Lake Platform was three miles out, visible only as a smear of lit windows in the low cloud. South of the dock the Thread had its own string of lights, pods running down into the dark at the speed of something that had all night.
+Rook stood at the threshold where the concrete met the dock, collar turned up against the spray. Lake Michigan in November was a physical fact: gray-green swells running three feet, white at the tips, the whole surface shuddering under a wind that tasted of iron and rain.
+
+The Lake Platform was three miles out, visible only as a smear of lit windows in the low cloud. South of the dock the Thread had its own string of lights, pods running down into the dark at the speed of something that had all night.
 
 [Beat 207]
 She could see the PEREGRINE VTOL on the top deck. Even at this distance. Even in the failing light.
 
 [Beat 208]
-Boiler was doing something to the maintenance VTOL's fueling panel that she'd stopped trying to follow. It was a Kaneko LightWork — built for cargo runs and medical supply in the outer zones, a box with rotors and a nose repaired so many times it was three different colors now. It would get them there. He'd said so. She hadn't asked follow-up questions.
+Boiler was doing something to the maintenance VTOL's fueling panel that she'd stopped trying to follow. It was a Kaneko LightWork — built for cargo runs and medical supply in the outer zones, a box with rotors and a nose repaired so many times it was three different colors now.
+
+It would get them there. He'd said so. She hadn't asked follow-up questions.
 
 [Beat 209]
 "That is where the terminal is," Ohara said beside her, looking at the platform. She picked up her hard case. The statement needed nothing from anyone.
@@ -1196,7 +1352,7 @@ Rook looked at each of them once.
 
 "Vox. Layers one and two before we land. Layer three is Ohara's." She looked at Ohara, who had set the hard case down and was checking what was inside without looking up.
 
-"Scout. Deck 1 and deck 3. Strategic problems."
+"Scout. Deck 1 and deck 3. Strategic problems?"
 
 "Understood."
 
@@ -1214,7 +1370,9 @@ He nodded once, the way you commit load to a beam you've checked twice. "Nobody 
 No one asked about the return. They would leave in the PEREGRINE VTOL. She didn't say this either.
 
 [Beat 222]
-Outside, the wind changed — lower, steadier, pushing in from the northwest. The swells were building. By eight o'clock nothing commercial would be flying. PEREGRINE's pilot would be fighting position-hold with both hands, watching instruments instead of the deck, which was the only useful thing the storm was going to do for them tonight.
+Outside, the wind changed — lower, steadier, pushing in from the northwest. The swells were building. By eight o'clock nothing commercial would be flying.
+
+PEREGRINE's pilot would be fighting position-hold with both hands, watching instruments instead of the deck, which was the only useful thing the storm was going to do for them tonight.
 
 [Beat 223]
 The Kaneko's rotors spun up. Boiler sealed the panel, walked to the cockpit, and climbed in without ceremony. The rotor noise filled the bay, pulled at loose tarps along the wall. Ohara had her case. Vox had her array folded to transit configuration. Scout was already in the cargo hold. Lace was last, trailing her headset cable until she hit the plug limit and swapped to wireless.
@@ -1244,7 +1402,9 @@ The platform's lights held in the rain ahead — steady, unaware.
 The platform grew in the windscreen by degrees. Not fast, the way a threat usually came at you — slow and steady, already in motion long before you looked up at it. Rook counted the lights from the cargo hold doorway, braced against the frame with one hand. Twelve personnel. Four PEREGRINE. The crane arm operational. Scout's numbers ran through her in the order Scout had given them, and she was grateful for how exact they were, the way you're grateful for a floor that holds your weight — not warmly, but completely. Wennick had trusted her numbers too. She let that sit where it landed and kept counting.
 
 [Beat 232]
-Ohara was behind her, seated, her case latched between her knees. Vox had her eyes closed, running whatever pre-op ritual she ran. Scout was somewhere in that middle distance that wasn't sleep and wasn't presence. Boiler was up front, both hands on the stick, correcting in the crosswind with the quiet competence of a man who had never once needed to announce himself. She'd told all four of them the truth — the client, the gap, the freeze in the corridor, the name — and every one of them was in this hull anyway.
+Ohara was behind her, seated, her case latched between her knees. Vox had her eyes closed, running whatever pre-op ritual she ran. Scout was somewhere in that middle distance that wasn't sleep and wasn't presence. Boiler was up front, both hands on the stick, correcting in the crosswind with the quiet competence of a man who had never once needed to announce himself.
+
+She'd told all four of them the truth — the client, the gap, the freeze in the corridor, the name — and every one of them was in this hull anyway.
 
 [Beat 233]
 The platform's running lights separated from the general smear of rain and became specific: deck markers, crane housing, the helipad's approach strobes blinking orange in the dark. PEREGRINE's VTOL was visible from this angle, its position-hold thrusters working hard against the northwest push, the pilot's full attention on instruments. Rook read the landing posture and felt the approach window open — thirty seconds where the PEREGRINE pilot's eyes would be inward, on the panel, not outward on the deck. She put her hand on the bulkhead and turned back into the hold.
@@ -1252,11 +1412,15 @@ The platform's running lights separated from the general smear of rain and becam
 "Thirty seconds," she said. "When we touch down, we are already moving."
 
 [Beat 234]
-The words were still in the air when the deck strobes below them died. Not flickered — died, all of them at once, the orange pulse gone black between one beat and the next. Then they came back, but wrong: red now, and steady, and every deck light on the platform came up with them in a hard sodium wash that turned the rain to falling wire. Boiler's voice came flat off the front.
+The words were still in the air when the deck strobes below them died. Not flickered — died, all of them at once, the orange pulse gone black between one beat and the next. Then they came back, but wrong: red now, and steady, and every deck light on the platform came up with them in a hard sodium wash that turned the rain to falling wire.
 
-"That's not weather. That's a switch."
+Boiler's voice came flat off the front.
 
-Below, the PEREGRINE pilot's head came up off the panel and turned outward — toward the deck, toward the dark spot in the sky where they were — and the crane arm that had been idle began, unhurried, to swing. Vox's eyes were open. Twelve personnel had become twelve personnel who knew. The window Rook had counted on was closing from the far side, and someone down there had started the clock a good deal earlier than she had.
+"That's not weather. That's a switch?"
+
+Below, the PEREGRINE pilot's head came up off the panel and turned outward — toward the deck, toward the dark spot in the sky where they were — and the crane arm that had been idle began, unhurried, to swing.
+
+Vox's eyes were open. Twelve personnel had become twelve personnel who knew. The window Rook had counted on was closing from the far side, and someone down there had started the clock a good deal earlier than she had.
 
 [Beat 235]
 The maintenance VTOL came down wrong. Boiler feathered the throttle too late, caught a gust broadside, and the touchdown was a controlled stumble — the left skid kissed the deck at thirty degrees before it corrected. Not a crash. Adequate.
@@ -1308,13 +1472,17 @@ Rook clocked the loose rail and kept moving. A thing to use or a thing to die on
 Seun Adalemo was standing at the array shelter's near corner, and he saw her come up the stairwell the same instant she saw him. Soaked through, coat dark with rain, his position exactly where she'd have put herself in his place — clear line to the stair access, cover behind the shelter angle, wind at his back.
 
 [Beat 244]
-Ohara wasn't where she was supposed to be. Rook hadn't told her to move laterally behind the structural columns. Ohara had looked at the deck layout for four seconds when they crested the stairs and decided, on her own, that a support column beat open sightlines whatever came next — the same read she'd made in the corridor an hour before, the same instinct that had put her two meters sideways in the Bloom Quarter before anyone told her to move. Rook clocked the empty space where Ohara should have been, clocked the shape behind the column instead, and let it go. It cost her nothing. It was the right call, made by the person best placed to make it.
+Ohara wasn't where she was supposed to be. Rook hadn't told her to move laterally behind the structural columns. Ohara had looked at the deck layout for four seconds when they crested the stairs and decided, on her own, that a support column beat open sightlines whatever came next — the same read she'd made in the corridor an hour before, the same instinct that had put her two meters sideways in the Bloom Quarter before anyone told her to move.
+
+Rook clocked the empty space where Ohara should have been, clocked the shape behind the column instead, and let it go. It cost her nothing. It was the right call, made by the person best placed to make it.
 
 [Beat 245]
 Adalemo came at her from the shelter corner, and they closed the distance in two steps — his forearm came up, she caught it above the elbow, and they went into the shelter wall shoulder-first.
 
 [Beat 246]
-He was good. Not faster than her — no one who'd been operating at his level for four hours was faster than anyone — but adapted, reading her weight shifts the way you read them when you've done this enough that the reading is below thought. They ended up on the loose section of railing, the one that had failed, and it gave another centimeter under their combined weight and screamed on its remaining anchor. The lake was forty meters down and very dark and very cold.
+He was good. Not faster than her — no one who'd been operating at his level for four hours was faster than anyone — but adapted, reading her weight shifts the way you read them when you've done this enough that the reading is below thought.
+
+They ended up on the loose section of railing, the one that had failed, and it gave another centimeter under their combined weight and screamed on its remaining anchor. The lake was forty meters down and very dark and very cold.
 
 [Beat 247]
 Adalemo held the railing with his left hand. His right was on her forearm. Her hand was on his shoulder. It was collaborative in a way neither of them had planned — two people balancing each other over the water while they decided which one was going in.
@@ -1386,7 +1554,9 @@ Four minutes and twelve seconds after authentication began: published. Global. I
 Ohara stepped back. Her hands were still steady. Her expression wasn't quite anything that had a word for it — the face of a person who has watched a count she ran for two years come out even, her hands still on the terminal, not moving away from it.
 
 [Beat 254]
-PEREGRINE's VTOL had been holding off deck 1 — the pilot steady, reading altitude, waiting for Adalemo's extraction call. When the broadcast acknowledgment went through and no call came and Adalemo's position read null, the pilot made the correct decision and began climbing. Pulling out was correct. Rook would have done the same.
+PEREGRINE's VTOL had been holding off deck 1 — the pilot steady, reading altitude, waiting for Adalemo's extraction call. When the broadcast acknowledgment went through and no call came and Adalemo's position read null, the pilot made the correct decision and began climbing.
+
+Pulling out was correct. Rook would have done the same.
 
 [Beat 255]
 She was on deck 3. The stairwell to deck 1 was on the far side of the array shelter from where she stood. The maintenance VTOL — the battered LightWork that had barely beaten the storm out here — was on deck 1 with Boiler. But the plan since the bay had been to leave in PEREGRINE's bird, and PEREGRINE's bird was leaving.
@@ -1425,13 +1595,21 @@ The landing was bad. One skid hit hard before the other, the deck was wet, and t
 "Okay," Rook said. She climbed out.
 
 [Beat 261]
-Deck 1 in the rain. Boiler was down from the crane, shaking water off his shoulders, apparently unbothered by the forty minutes he'd spent hanging over the lake in a storm. Ohara came down the stairwell forty seconds later, coat soaked, carrying nothing. Vox was in the maintenance VTOL — agents disconnecting, channels closing one by one, three becoming two becoming one becoming silence.
+Deck 1 in the rain. Boiler was down from the crane, shaking water off his shoulders, apparently unbothered by the forty minutes he'd spent hanging over the lake in a storm.
+
+Ohara came down the stairwell forty seconds later, coat soaked, carrying nothing.
+
+Vox was in the maintenance VTOL — agents disconnecting, channels closing one by one, three becoming two becoming one becoming silence.
 
 [Beat 262]
-Scout sat up in the back seat. Her eyes came back in stages — the narrow return, the human field of view replacing whatever the crawlers had shown her. She blinked. Looked at Rook through the rain-streaked window. Her expression said she had been entirely elsewhere for all of it, which was true, and that she didn't find this a flaw, which was also true. She'd cut the lights. Her crawlers had done everything she needed them to. She hadn't been present for any of it, and she'd been essential to all of it.
+Scout sat up in the back seat. Her eyes came back in stages — the narrow return, the human field of view replacing whatever the crawlers had shown her. She blinked. Looked at Rook through the rain-streaked window. Her expression said she had been entirely elsewhere for all of it, which was true, and that she didn't find this a flaw, which was also true.
+
+She'd cut the lights. Her crawlers had done everything she needed them to. She hadn't been present for any of it, and she'd been essential to all of it.
 
 [Beat 263]
-From deck 2, the Cooperative maintenance crew began unlocking their own lab doors. They'd been in there the whole time. They came out cautious, found an empty corridor and a downed man and the storm still running, and Rook supposed they'd have questions. The questions would take a while to arrive.
+From deck 2, the Cooperative maintenance crew began unlocking their own lab doors. They'd been in there the whole time. They came out cautious, found an empty corridor and a downed man and the storm still running, and Rook supposed they'd have questions.
+
+The questions would take a while to arrive.
 
 [Beat 264]
 "We're taking their VTOL," Rook said. "Boiler flies."
@@ -1439,13 +1617,23 @@ From deck 2, the Cooperative maintenance crew began unlocking their own lab door
 "Obviously," Boiler said, already moving to it.
 
 [Beat 265]
-It was a better aircraft than the maintenance VTOL, and for the ninety seconds it took Boiler to lift it off the deck and climb into the rain, nobody in the cabin said anything — and the nothing wasn't the operational quiet Rook was used to. It was the quiet of five people who had gone into a storm to keep a wet squad from containing a woman, and had, and were all of them still breathing to feel the heater come up. Vox had her bad arm in her lap. Lace had her eyes shut. Ohara sat with the case between her boots, watching the back of Rook's seat with something Rook caught in the canopy glass and had no clean word for — not gratitude, which Ohara would have found imprecise. Something quieter, aimed at the people who had carried her numbers home.
+It was a better aircraft than the maintenance VTOL, and for the ninety seconds it took Boiler to lift it off the deck and climb into the rain, nobody in the cabin said anything — and the nothing wasn't the operational quiet Rook was used to.
+
+It was the quiet of five people who had gone into a storm to keep a wet squad from containing a woman, and had, and were all of them still breathing to feel the heater come up.
+
+Vox had her bad arm in her lap. Lace had her eyes shut. Ohara sat with the case between her boots, watching the back of Rook's seat with something Rook caught in the canopy glass and had no clean word for — not gratitude, which Ohara would have found imprecise. Something quieter, aimed at the people who had carried her numbers home.
 
 [Beat 266]
-Rook looked at the four of them and the fifth she hadn't planned to keep, and her hands did the count out of habit and came up five. Five, and all of them still on their feet. The woman in the Bloom Quarter was PEREGRINE's count, not hers — she knew the difference, and had stopped expecting the difference to help. She didn't put the woman anywhere. Tonight she didn't pretend she could.
+Rook looked at the four of them and the fifth she hadn't planned to keep, and her hands did the count out of habit and came up five. Five, and all of them still on their feet.
+
+The woman in the Bloom Quarter was PEREGRINE's count, not hers — she knew the difference, and had stopped expecting the difference to help. She didn't put the woman anywhere. Tonight she didn't pretend she could.
 
 [Beat 267]
-Forty meters below the observation deck, Seun Adalemo's float was keeping him warm enough. He'd be recovered. He'd file a report that was largely accurate and changed nothing, because the data was already out — transmitting behind them from a broadcast array indistinguishable from any other unit on a civic science platform, doing exactly what it had been built to do. *It's a cold way to be right,* he'd said. She turned that over and decided she could live with cold. Cold and alive and with everyone she'd brought still in the cabin behind her.
+Forty meters below the observation deck, Seun Adalemo's float was keeping him warm enough. He'd be recovered. He'd file a report that was largely accurate and changed nothing, because the data was already out — transmitting behind them from a broadcast array indistinguishable from any other unit on a civic science platform, doing exactly what it had been built to do.
+
+*It's a cold way to be right,* he'd said.
+
+She turned that over and decided she could live with cold. Cold and alive and with everyone she'd brought still in the cabin behind her.
 
 [Beat 268]
 The crew was already half-gone, in the way that counted: the job had made them and the end of it was unmaking them, one closed channel at a time. Rook watched the lake go black beneath the aircraft.
@@ -1458,16 +1646,22 @@ The replacement escrow arrived at 6:14 AM, routed through a dead-drop Ohara had 
 Rook read it, closed the message on her neuretics, and reached into her coat for the cash.
 
 [Beat 270]
-The credstick transfer was confirmed. She brought up the balance screen on her neuretics, the numbers cold and explicit. Terminal balance: Φ8,000. Confirmed received. No pending transactions. Fully liquid.
+Φ8,000 in physical currency. She laid it out in the booth and began counting.
 
 [Beat 271]
-She looked at it longer than the data needed. She and the crew had walked out intact. The numbers proved it — five names, five transfers, each one showing the same amount in separate accounts. Five Φ8,000 allotments, each one live, each one clearable against their own credentials. The woman at the counter refilled her coffee without being asked. The diner smelled of synth-fat and old heating elements. Through the window, Lake Michigan lay flat and gray under a featureless sky. No wind. No chop.
+The bills were mixed denomination, the way distribution always ran through Cooperative channels. She sorted first, then counted by stack, then recounted the stacks against each other.
+
+The woman at the counter refilled her coffee without being asked.
+
+The diner smelled of synth-fat and old heating elements. Through the window, Lake Michigan lay flat and gray under a featureless sky. No wind. No chop.
 
 [Beat 272]
-She verified the figure once more, watching the balance hold steady on the overlay. Φ8,000. Still Φ8,000, which was the number, and she'd known it was the number. The verification wasn't about the number. It was the one ritual she still let herself keep — a terminal showing proof that the transaction had executed exactly as promised. What the rest of her caught up to this morning was that Axiom's legal division had paid Gault the exact same figure to say a room number out loud. Same door. Same price. She closed the terminal and put her neuretics back offline.
+She finished the count. Φ8,000. She counted it again. Still Φ8,000, which was the number, and she'd known it was the number. The counting wasn't about the number. It was the one ritual she still let herself keep — hands doing a small honest thing while the rest of her caught up.
+
+What the rest of her caught up to this morning was that Axiom's legal division had paid Gault the exact same figure to say a room number out loud. Same door. Same price. She squared the stack on the laminate and put it in her coat.
 
 [Beat 273]
-Vox's summary had come through at 6:02, twelve minutes before the payment, as if her agents had been watching for it. Axiom down eighteen percent at open. The formula public domain, indexed across seventeen research repositories before Rotterdam opened. Every working biochemist in the GLMZ had access now. The military pathway was still possible; it just wasn't possible for Axiom alone. Anyone who found the Class V pathway from here wouldn't be reverse-engineering a patent — they'd be continuing public research, and there was no law in the Meridian Charter or anywhere else to stop them. Ohara had wanted one specific lock broken, and it was broken, and the door it had been on now stood open to everyone. A victory or a different and larger problem, depending on who walked through first. Ohara had known that too. She'd decided an open door was better than a buried one, and spent four years and her whole career being willing to be right about it.
+Vox's summary had come through at 6:02, twelve minutes before the payment, as if her agents had been watching for it. Axiom down eighteen percent at open. The formula public domain, indexed across seventeen research repositories before Rotterdam opened. Every working biochemist in the GLMZ had access now. The military pathway was still possible; it just wasn't possible for Axiom alone. Anyone who found the Class V pathway from here wouldn't be reverse-engineering a patent — they'd be continuing public research, and there was no law in the Meridian Charter or anywhere else to stop them. Ohara had wanted one specific lock broken, and it was broken, and the door it had been on now stood open to everyone. A victory or a different and larger problem, depending on who walked through first. Ohara had known that too. She'd decided an open door was better than a buried one.
 
 [Beat 274]
 Seun Adalemo's location was unknown. She'd checked. He was the kind of asset that survived because he was built to. PEREGRINE would dissolve or reconstitute the way units like that did, and Axiom would buy another.
@@ -1477,7 +1671,9 @@ Seun Adalemo's location was unknown. She'd checked. He was the kind of asset tha
 She still believed cold was the price of a door worth trusting. She let herself notice, in the warm diner, with the money in her coat and four people scattered safely across the city, that it had cost him something to become the man on the other end of that conversation.
 
 [Beat 275]
-She thought about the crew. Scout, Lace, Boiler, Vox would peel off the way they always did — gone before she arrived anywhere, the courtesy of the work and not its coldness. But the four of them were on the short list she carried in her head — the operators she'd open a door in front of. She'd work all four again. She'd already caught herself hoping the next one would line up while they still owed each other nothing but the wanting to.
+She thought about the crew. Scout, Lace, Boiler, Vox would peel off the way they always did — gone before she arrived anywhere, the courtesy of the work and not its coldness. But the four of them were on the short list she carried in her head — the operators she'd open a door in front of.
+
+She'd work all four again. She'd already caught herself hoping the next one would line up while they still owed each other nothing but the wanting to.
 
 [Beat 276]
 She thought about Vox's arm — the compression sleeve, the way she'd held the injured side off the seat back the whole ride out, not complaining, running what agents she had left. Three channels instead of six now, down from the four she'd carried into the flat.
@@ -1487,16 +1683,22 @@ She thought about Vox's arm — the compression sleeve, the way she'd held the i
 And she thought about the night before that — a dead woman in the Bloom Quarter, said out loud instead of stored away, two people carrying it right together. A partner's name said out loud for the first time in three years. Rook hadn't done any of that before.
 
 [Beat 277]
-*That is correct,* the note had said. A receipt. Ohara had routed her own exit before Rook was ever in the room, and left two words to confirm the count came out even. Rook never learned the exit route. She didn't go looking. The woman had planned everything else; she'd earned one unwatched door.
+*That is correct,* the note had said. A receipt. Ohara had routed her own exit before Rook was ever in the room, and left two words to confirm the count came out even.
+
+Rook never learned the exit route. She didn't go looking. The woman had planned everything else; she'd earned one unwatched door.
 
 [Beat 278]
 She squared the empty coffee cup on the table.
 
 [Beat 279]
-It had come out even. Everybody got paid, the door was open, nobody she'd brought was in the lake. Even — except for the woman she hadn't brought and couldn't stop seeing, who would not balance against anything and was not supposed to. Rook let the count stay one short. It was honest that way. She left Φ12 on the table for the coffee, buttoned her coat, and stood.
+It had come out even. Everybody got paid, the door was open, nobody she'd brought was in the lake. Even — except for the woman she hadn't brought and couldn't stop seeing.
+
+Rook let the count stay one short. She left Φ12 on the table for the coffee, buttoned her coat, and stood.
 
 [Beat 280]
-Through the window the lake was the same flat gunmetal it had been, and she looked at it one second longer than she had to — not because of the storm, or the railing, or the water forty meters down, but because she was thinking about the next time. The list that was four names and still had room for more, if she decided to let it.
+Through the window the lake was the same flat gunmetal it had been, and she looked at it one second longer than she had to — not because of the storm, or the railing, or the water forty meters down, but because she was thinking about the next time.
+
+The list that was four names and still had room for more, if she decided to let it.
 
 [Beat 281]
 She made herself stop looking, and went out through the door onto the Spine.
