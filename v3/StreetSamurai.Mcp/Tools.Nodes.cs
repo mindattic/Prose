@@ -468,7 +468,8 @@ public class NodeTools
         [Description("Plot-act number 0–5. 0 = unassigned.")] int act = 0,
         [Description("Scene type: scene | summary | transition | interstitial.")] string sceneType = "scene",
         [Description("True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading.")] bool isChapterStart = false,
-        [Description("Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.")] string kind = "prose")
+        [Description("Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.")] string kind = "prose",
+        [Description("Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched — unlike the other params above, this one is NOT overwritten by an empty default.")] string? eventSummary = null)
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
@@ -483,6 +484,22 @@ public class NodeTools
             SceneType:      sceneType,
             IsChapterStart: isChapterStart,
             Kind:           kind));
+
+        if (eventSummary != null)
+        {
+            // Deliberately NOT folded into BeatMetadataUpdate above — that record overwrites
+            // every field unconditionally from its params, which would clobber EventSummary
+            // on every ordinary metadata call. This is a separate, targeted, opt-in write.
+            await using var db = await dbFactory.CreateDbContextAsync();
+            var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == bid.Value);
+            if (beat != null)
+            {
+                beat.EventSummary = eventSummary.Length == 0 ? null : eventSummary;
+                beat.EventSummaryHash = beat.TextHash;
+                await db.SaveChangesAsync();
+            }
+        }
+
         return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
     }
 

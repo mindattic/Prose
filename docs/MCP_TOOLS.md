@@ -11,12 +11,13 @@
 > All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**258 tools** across **40 tool families.**
+**265 tools** across **42 tool families.**
 
 ## Families
 
 | Family | Tools |
 | --- | --- |
+| [Beat Event List](#beat-event-list) | 3 |
 | [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
 | [Book Audit](#book-audit) | 2 |
@@ -35,6 +36,7 @@
 | [Entity Context](#entity-context) | 4 |
 | [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
+| [Glossary](#glossary) | 4 |
 | [Lore Triple](#lore-triple) | 7 |
 | [Narrative Science](#narrative-science) | 5 |
 | [Node](#node) | 38 |
@@ -57,6 +59,29 @@
 | [World Entity Crud](#world-entity-crud) | 5 |
 | [World Modelling](#world-modelling) | 16 |
 | [Writing](#writing) | 3 |
+
+## Beat Event List
+
+<sub>`BeatEventListTools`</sub>
+
+### `export_event_list`
+
+Export the current per-beat plot-event list for a node to docs/nodes/{CODE}-Events.txt (deliberately .txt, not .md, so it's never picked up by sync_markdown_files / DCM). No LLM call — reads current DB state only.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+
+### `generate_event_list`
+
+Generate/refresh the per-beat plot-event list (Beat.EventSummary) for a node — terse, present-tense, name-anchored 'what happened' lines (e.g. 'Thieves steal Relic.'), hash-gated so unchanged beats cost nothing on re-run. Distinct from Description (authorial-intent register — 'why this beat exists'). Accepts node id (GUID) or slug. force=true regenerates every beat's line regardless of cache.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `force` (bool, optional) — Regenerate every beat's line even if its TextHash hasn't changed.
+
+### `get_event_list`
+
+Return the current per-beat plot-event list for a node as ordered structured data — one entry per enabled beat with its SortKey, title, POV, and EventSummary line. Reads DB state only, no LLM call, no disk write — the fast, in-session way to read a whole book's plot flow without opening docs/nodes/{CODE}-Events.txt or reading the raw prose. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Beat Lens
 
@@ -948,6 +973,37 @@ Create or update a weapon in canon. Pass empty id to create new; pass an existin
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing weapon id to update.
 
+## Glossary
+
+<sub>`GlossaryTools`</sub>
+
+### `generate_book_glossary`
+
+Regenerate one book's Glossary (docs/nodes/{CODE}-Glossary.htm/.json/.txt) — the subset of its universe's Master Glossary whose terms actually appear in the book's live prose, detected fresh each call (not a stored join). A term the book stops using drops out on the next regenerate; a term added to the universe glossary after the book's last edit picks up automatically.
+
+- `idOrSlug` (string, required) — Node Guid id or slug/NodeCode of the book.
+
+### `generate_glossary`
+
+Regenerate the current universe's Master Glossary — Glossary.htm/.json/.txt under docs/universes/{SLUG}/ — from the GlossaryTerms table. Run after upsert_glossary_term calls.
+
+- _(no parameters)_
+
+### `list_glossary_terms`
+
+List every Master Glossary entry for the current universe, grouped by category.
+
+- _(no parameters)_
+
+### `upsert_glossary_term`
+
+Add or update one Master Glossary entry for the current universe. term is the word/acronym as it appears in prose (e.g. 'GLMZ'); fullForm is its expansion if it's an acronym (e.g. 'Great Lakes Metropolitan Zone'), empty for plain vocabulary; definition is the reader-facing back-matter explanation (can carry more context than an in-voice gloss would); category groups entries in the rendered glossary (e.g. 'Enforcement', 'Currency', 'Tech'). Upserts by (universe, term) — case-sensitive exact match, calling again with the same term overwrites it.
+
+- `term` (string, required) — The term/acronym as it appears in prose.
+- `fullForm` (string, required) — Full expansion if an acronym; empty for plain vocabulary.
+- `definition` (string, required) — Reader-facing definition shown in the glossary.
+- `category` (string, optional) — Optional grouping category (e.g. 'Enforcement', 'Currency').
+
 ## Lore Triple
 
 <sub>`LoreTripleTools`</sub>
@@ -1309,6 +1365,7 @@ Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, Structure
 - `sceneType` (string, optional) — Scene type: scene | summary | transition | interstitial.
 - `isChapterStart` (bool, optional) — True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading.
 - `kind` (string, optional) — Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.
+- `eventSummary` (string, optional) — Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched — unlike the other params above, this one is NOT overwritten by an empty default.
 
 ### `update_beat_text`
 

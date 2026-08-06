@@ -712,6 +712,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatGeneratorService>();
         services.AddSingleton<NodeBibleService>();
         services.AddSingleton<NodeDocService>();
+        services.AddSingleton<GlossaryService>();
         services.AddSingleton<CanonDocumentTypeRegistry>();
         services.AddSingleton<CanonDocumentService>();
         services.AddSingleton<BeatVerificationService>();
@@ -1086,6 +1087,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BlueprintSyncService>();
         services.AddSingleton<BeatCoordinationService>();
         services.AddSingleton<MeaningBackfillService>();
+        services.AddSingleton<BeatEventSummaryService>();
         services.AddSingleton<BeatVerdictService>();
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();

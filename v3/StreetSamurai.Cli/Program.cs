@@ -516,6 +516,27 @@ if (args.Contains("--generate-node-doc"))
     return;
 }
 
+// CLI mode: regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under
+// docs/universes/{SLUG}/) from the GlossaryTerms table.
+//   ss --generate-glossary --universe <slug>   (omit --universe for all)
+if (args.Contains("--generate-glossary"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await GlossaryCli.RunMasterAsync(args, sp);
+    return;
+}
+
+// CLI mode: regenerate a book's Glossary (docs/nodes/{CODE}-Glossary.htm/.json/.txt) — the
+// subset of its universe's Master Glossary whose terms appear in the book's live prose.
+//   ss --generate-book-glossary --slug <slug>
+//   ss --generate-book-glossary --all
+if (args.Contains("--generate-book-glossary"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await GlossaryCli.RunBookAsync(args, sp);
+    return;
+}
+
 // CLI mode: generate Node.CoverPrompt (image-model cover description) from the book's
 // own Title/Summary/Description/universe.
 //   ss --generate-cover-prompt --slug <slug>
@@ -2175,6 +2196,24 @@ if (args.Contains("--backfill-meaning"))
 {
     var sp = BuildServicesWithVault(args);
     Environment.ExitCode = await BackfillMeaningCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --generate-event-list --slug <slug> [--force] [--limit N] [--dry-run] [--model <id>]
+// Fill the per-beat plot-EVENT one-liner (Beat.EventSummary) — "what happened".
+if (args.Contains("--generate-event-list"))
+{
+    var sp = BuildServicesWithVault(args);
+    Environment.ExitCode = await GenerateEventListCli.RunAsync(args, sp);
+    return;
+}
+
+// ss --export-event-list --slug <slug>
+// Write the current per-beat event list to docs/nodes/{CODE}-Events.txt (no LLM call).
+if (args.Contains("--export-event-list"))
+{
+    var sp = BuildServicesWithVault(args);
+    Environment.ExitCode = await ExportEventListCli.RunAsync(args, sp);
     return;
 }
 

@@ -88,6 +88,24 @@ public class Beat
     /// and ElevenLabs tone direction.</summary>
     public string? Description { get; set; }
 
+    /// <summary>Terse, present-tense, name-anchored plot-EVENT line — "what happened" in
+    /// this beat, not why it matters. Distinct register from <see cref="Description"/>
+    /// (authorial intent). Written by BeatEventSummaryService; null = not yet generated.
+    /// A beat with no new plot event honestly says so (e.g. "No new event — transitional
+    /// beat") rather than inventing significance — repeated/near-duplicate lines are a
+    /// legitimate pacing diagnostic, not a prompt bug to eliminate. Deliberately kept out
+    /// of the node bible / DCM prose-generation context path — this is a human-readable
+    /// QA artifact, not a story-generation input.</summary>
+    public string? EventSummary { get; set; }
+
+    /// <summary>TextHash value at the time EventSummary was last generated (or last
+    /// manually confirmed via update_beat_metadata's eventSummary override). Compared
+    /// against the beat's CURRENT TextHash to hash-gate regeneration: equal = skip (free),
+    /// different = beat's prose changed since — regenerate. Same shape/maxlength as
+    /// TextHash; NOT a general Version/Stale signal — touching this field must never
+    /// mark the beat Stale or invalidate audio (see BeatEventSummaryService).</summary>
+    public string? EventSummaryHash { get; set; }
+
     /// <summary>What is happening beneath the surface of this beat —
     /// foreshadowing, unspoken motivations, dramatic irony, hidden agendas.
     /// Visible to the prose writer LLM but never printed; it informs the

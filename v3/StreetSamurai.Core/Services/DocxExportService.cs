@@ -24,6 +24,7 @@ public class DocxExportService
     private readonly NodeWorkbenchService workbench;
     private readonly SettingsService settings;
     private readonly ExportCleanupService cleanup;
+    private readonly GlossaryService glossary;
     private readonly ILogger<DocxExportService> log;
 
     private const string Serif = "Garamond";
@@ -43,12 +44,14 @@ public class DocxExportService
         NodeWorkbenchService workbench,
         SettingsService settings,
         ExportCleanupService cleanup,
+        GlossaryService glossary,
         ILogger<DocxExportService> log)
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
         this.settings = settings;
         this.cleanup = cleanup;
+        this.glossary = glossary;
         this.log = log;
     }
 
@@ -65,6 +68,10 @@ public class DocxExportService
             author = author.Trim();
         var nextVersion = node.Version + 1;  // commit to DB only after file is written
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+        // Back-matter glossary — the subset of this book's universe glossary whose terms
+        // actually appear in its live prose (see GlossaryService). Never interrupts the prose
+        // itself; SS-LAW-20's "term before acronym" is satisfied by this reference instead.
+        var glossaryTerms = await glossary.GetUsedTermsAsync(nodeId, ct);
 
         var universeSlug = await db.Universes.AsNoTracking()
             .Where(u => u.Id == node.UniverseId)
@@ -237,6 +244,14 @@ public class DocxExportService
                 if (isChapterStart[i])
                     tocEntries.Add((chapterTitle[i]!, TocAnchor(tocEntries.Count)));
 
+            // Glossary gets one more TOC entry + bookmark, appended after every chapter's.
+            string? glossaryAnchor = null;
+            if (glossaryTerms.Count > 0)
+            {
+                glossaryAnchor = TocAnchor(tocEntries.Count);
+                tocEntries.Add(("Glossary", glossaryAnchor));
+            }
+
             // ── Table of Contents (only when enabled and there is more than one chapter) ──
             if (settings.DocxIncludeToc && chapterCount >= 2)
             {
@@ -271,6 +286,19 @@ public class DocxExportService
                 wordCount += CountWords(text);
                 foreach (var para in SplitParagraphs(text))
                     body.AppendChild(BodyParagraph(para));
+            }
+
+            // ── Back matter: Glossary ──
+            if (glossaryTerms.Count > 0)
+            {
+                body.AppendChild(PageBreak());
+                body.AppendChild(ChapterHeading("Glossary", glossaryAnchor, bookmarkId: tocEntries.Count));
+                // Flat alphabetical list — no category grouping (author decision 2026-08-05).
+                foreach (var term in glossaryTerms)
+                {
+                    body.AppendChild(GlossaryEntryHeading(term.Term, term.FullForm));
+                    body.AppendChild(BodyParagraph(term.Definition));
+                }
             }
 
             // Estimate KDP page count from word count + chapter overhead; store for gutter selection.
@@ -493,6 +521,21 @@ public class DocxExportService
         var r = new Run(new RunProperties(new NoProof(), new WebHidden()));
         foreach (var c in children) r.AppendChild(c);
         return r;
+    }
+
+    /// <summary>One glossary entry's term line: bold term, then its full expansion (if any)
+    /// after an em dash in italic. Left-justified, unlike the centered chapter headings —
+    /// this is reference text, read top to bottom, not a page title.</summary>
+    private static Paragraph GlossaryEntryHeading(string term, string? fullForm)
+    {
+        var p = new Paragraph(new ParagraphProperties(
+            new KeepNext(),
+            new SpacingBetweenLines { Before = "240", After = "40" },
+            new Justification { Val = JustificationValues.Left }));
+        p.AppendChild(MakeRun(term, Body12, bold: true));
+        if (!string.IsNullOrWhiteSpace(fullForm))
+            p.AppendChild(MakeRun($" — {fullForm}", Body12, italic: true));
+        return p;
     }
 
     private static Paragraph BodyParagraph(string text)

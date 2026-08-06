@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StreetSamurai.Core.Data;
 
@@ -11,9 +12,11 @@ using StreetSamurai.Core.Data;
 namespace StreetSamurai.Core.Migrations
 {
     [DbContext(typeof(StreetSamuraiDbContext))]
-    partial class StreetSamuraiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260805185421_AddGlossaryTerms")]
+    partial class AddGlossaryTerms
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -940,13 +943,6 @@ namespace StreetSamurai.Core.Migrations
 
                     b.Property<bool>("EntityStale")
                         .HasColumnType("bit");
-
-                    b.Property<string>("EventSummary")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EventSummaryHash")
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
 
                     b.Property<string>("GapAfterAudioPath")
                         .HasColumnType("nvarchar(max)");

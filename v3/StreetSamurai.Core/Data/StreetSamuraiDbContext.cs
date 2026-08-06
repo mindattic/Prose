@@ -63,6 +63,7 @@ public class StreetSamuraiDbContext : DbContext
                 case CharacterReadModel rm when rm.UniverseId == Guid.Empty: rm.UniverseId = target; break;
                 case PlantPayoff pp when pp.UniverseId == Guid.Empty: pp.UniverseId = target; break;
                 case DeprecatedEntityName den when den.UniverseId == Guid.Empty: den.UniverseId = target; break;
+                case GlossaryTerm gt when gt.UniverseId == Guid.Empty: gt.UniverseId = target; break;
                 case BeatServiceLog bsl when bsl.UniverseId == Guid.Empty: bsl.UniverseId = target; break;
                 case BeatModeLog bml when bml.UniverseId == Guid.Empty:    bml.UniverseId = target; break;
                 // Config rows: operational/shared keys are tagged with the SHARED sentinel so every
@@ -452,6 +453,11 @@ public class StreetSamuraiDbContext : DbContext
     // not appear in prose. Scanned by NounConsistencyService / validate_nouns MCP.
     public DbSet<DeprecatedEntityName>   DeprecatedEntityNames   => Set<DeprecatedEntityName>();
 
+    // Master Glossary — universe-scoped acronym/term definitions for back-matter glossary
+    // generation (Glossary.htm/.json/.txt). Per-book glossaries are a live-detected subset,
+    // not a stored join — see GlossaryService.
+    public DbSet<GlossaryTerm>            GlossaryTerms           => Set<GlossaryTerm>();
+
     // Canon-sync surveys — persisted questions, answers, and apply logs so the
     // full decision trail survives across sessions. Managed by SurveyService /
     // survey MCP tools / ss --list-surveys / ss --get-survey.
@@ -562,6 +568,7 @@ public class StreetSamuraiDbContext : DbContext
             e.Property(x => x.Title).HasMaxLength(400);
             e.Property(x => x.AudioPath).HasMaxLength(400);
             e.Property(x => x.TextHash).HasMaxLength(80);
+            e.Property(x => x.EventSummaryHash).HasMaxLength(80);
             e.Property(x => x.LastRequestId).HasMaxLength(120);
             e.HasIndex(x => x.Slug);
             // Beat.Number is the stable "Beat #134" handle the CLI and writer
@@ -1862,6 +1869,23 @@ public class StreetSamuraiDbContext : DbContext
             e.HasIndex(x => x.BeatGuid);
             e.HasIndex(x => x.UniverseId);
             // Universe scoping (RFC 0006). No-op when unscoped.
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
+        });
+
+        // ── Master Glossary — universe-scoped acronym/term definitions ────────
+        b.Entity<GlossaryTerm>(e =>
+        {
+            e.ToTable("GlossaryTerms");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).HasDefaultValueSql("NEWSEQUENTIALID()");
+            e.Property(x => x.Term).HasMaxLength(100).IsRequired();
+            e.Property(x => x.FullForm).HasMaxLength(300);
+            e.Property(x => x.Definition).HasMaxLength(2000).IsRequired();
+            e.Property(x => x.Category).HasMaxLength(100);
+            e.Property(x => x.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
+            e.Property(x => x.UpdatedAt).HasDefaultValueSql("GETUTCDATE()");
+            e.HasIndex(x => x.UniverseId);
+            e.HasIndex(x => new { x.UniverseId, x.Term }).IsUnique();
             e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
 
