@@ -45,9 +45,13 @@ canon_queue/rejected/
 # Database files (regenerated locally)
 *.db
 
-# .NET build artifacts
+# .NET build artifacts (including named variants used for parallel/lock-free builds,
+# e.g. bin_attn/, obj_ironsilk2/ — these slipped past the plain bin//obj/ patterns before
+# and got committed by mistake; ~1900 files cleaned up 2026-08-07)
 **/bin/
 **/obj/
+**/bin_*/
+**/obj_*/
 v3/.vs/
 *.user
 
