@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Per-beat plot-event list — "what happened", not why it matters ────────
 // Distinct from Beat.Description (authorial-intent register, filled by backfill_meaning).
@@ -18,9 +18,9 @@ namespace StreetSamurai.Mcp;
 public class BeatEventListTools
 {
     private readonly BeatEventSummaryService eventSummaries;
-    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
 
-    public BeatEventListTools(BeatEventSummaryService eventSummaries, IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    public BeatEventListTools(BeatEventSummaryService eventSummaries, IDbContextFactory<ProseDbContext> dbFactory)
     {
         this.eventSummaries = eventSummaries;
         this.dbFactory = dbFactory;

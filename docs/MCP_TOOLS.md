@@ -1,14 +1,14 @@
-# StreetSamurai MCP Tools
+# Prose MCP Tools
 
 > **GENERATED — do not hand-edit.** Produced by `ToolDocGenerator` from the
-> `[McpServerTool]` + `[Description]` attributes in `v3/StreetSamurai.Mcp/Tools*.cs`,
+> `[McpServerTool]` + `[Description]` attributes in `v3/Prose.Mcp/Tools*.cs`,
 > the same source the MCP host registers via `WithToolsFromAssembly()`. To refresh:
 > 
 > ```powershell
-> dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md
+> dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
 > ```
 >
-> All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a
+> All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
 **265 tools** across **42 tool families.**
@@ -290,7 +290,7 @@ Chekhov's Gun audit for a story node: extract all concrete props, environmental 
 
 ### `draft_combat_scene`
 
-Generate an action sequence using the StreetSamurai combat writer. Respects participants' canon loadouts, current injuries/stress, and tracks ammo/grenade counts across beats. Tone shapes word choice and pacing — pick deliberately. Always pass preceding_context (last 1–3 paragraphs leading into the fight) so the prose transitions cleanly. sides_json must be a JSON array of side objects; see parameter description for shape. Returns the generated beats plus the full stitched text. Run validate_canon_text on the result before staging it into a chapter.
+Generate an action sequence using the Prose combat writer. Respects participants' canon loadouts, current injuries/stress, and tracks ammo/grenade counts across beats. Tone shapes word choice and pacing — pick deliberately. Always pass preceding_context (last 1–3 paragraphs leading into the fight) so the prose transitions cleanly. sides_json must be a JSON array of side objects; see parameter description for shape. Returns the generated beats plus the full stitched text. Run validate_canon_text on the result before staging it into a chapter.
 
 - `battlefieldLocation` (string, required) — Place name or district where the fight occurs (used to pull terrain/cover).
 - `sidesJson` (string, required) — JSON array of combat sides. Each entry: { "label": str, "combatants": [canon character names], "unnamed_combatants": ["three drones", ...], "initial_position": str, "goal": str, "shared_loadout": str }. Label is required; everything else is optional. Usually 2 sides; up to 3 for a three-way.

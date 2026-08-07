@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Plant/Payoff tools ────────────────────────────────────────────────────────
 // Four tools for managing narrative plants and their payoffs per node.
@@ -21,7 +21,7 @@ namespace StreetSamurai.Mcp;
 [McpServerToolType]
 public class PlantPayoffTools(
     PlantPayoffService plantPayoffs,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 

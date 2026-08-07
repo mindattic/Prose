@@ -1,0 +1,215 @@
+@page "/users"
+@attribute [Authorize(Policy = MaPolicies.Admin)]
+@inject IUserAdminService UserAdmin
+@inject PasswordPolicyDescriptor Policy
+@inject IWriteAccessProvider Access
+
+<h4 class="text-danger mb-3">User Management</h4>
+
+@if (!Access.IsAdministrator)
+{
+    <div class="alert alert-danger">Administrator access required.</div>
+}
+else
+{
+    <div class="dict-layout">
+        <div class="dict-list">
+            <div class="card bg-dark text-light border-secondary mb-2 card-body">
+                <button class="btn btn-sm btn-outline-danger w-100" @onclick="StartNewUser"><i class="bi bi-plus-lg"></i><div class="btn-lbl"> New User</div></button>
+            </div>
+            <div class="dict-items">
+                @foreach (var u in users)
+                {
+                    <div class="list-item text-light @(editing?.Id == u.Id ? "active" : "")" @onclick="() => Edit(u)">
+                        <div class="fw-bold small">
+                            @u.UserName
+                            @if (!u.IsActive)
+                            {
+                                <span class="badge bg-secondary ms-1">inactive</span>
+                            }
+                        </div>
+                        <div class="text-muted" style="font-size: 0.7rem;">@u.Email &mdash; @u.Role</div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="dict-editor">
+            @if (editing != null)
+            {
+                <div class="d-flex align-items-center gap-2 mb-3 border-bottom border-secondary pb-2">
+                    <h5 class="text-danger mb-0 flex-grow-1">@(isNew ? "New User" : editing.UserName)</h5>
+                    <button class="btn btn-sm btn-success" @onclick="SaveUser"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
+                    @if (!isNew)
+                    {
+                        <button class="btn btn-sm btn-outline-danger" @onclick="DeactivateUser" disabled="@(!editing.IsActive)"><i class="bi bi-person-slash"></i><div class="btn-lbl"> Deactivate</div></button>
+                    }
+                </div>
+
+                <div class="field-label text-danger">Account</div>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <div style="flex:3; min-width:220px;">
+                        <div class="field-label">Email / Username</div>
+                        <input type="email" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               @bind="editing.Email" disabled="@(!isNew)" />
+                        @if (!isNew)
+                        {
+                            <div class="text-muted" style="font-size:0.68rem;">Username is fixed after creation.</div>
+                        }
+                    </div>
+                    <div style="flex:1; min-width:120px;">
+                        <div class="field-label">Role</div>
+                        <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Role">
+                            @foreach (var role in roles)
+                            {
+                                <option value="@role">@role</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field-label text-danger">Password</div>
+                <div class="d-flex flex-wrap gap-2 mb-1">
+                    <div style="flex:1; min-width:200px;">
+                        <div class="field-label">@(isNew ? "Password" : "New Password (leave blank to keep current)")</div>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="newPassword" />
+                    </div>
+                </div>
+                <div class="text-muted mb-3" style="font-size: 0.68rem; line-height: 1.6;">
+                    @foreach (var req in Policy.Requirements)
+                    {
+                        <div><i class="bi bi-dot"></i> @req</div>
+                    }
+                </div>
+
+                @if (!string.IsNullOrEmpty(statusMessage))
+                {
+                    <div class="alert @(isError ? "alert-danger" : "alert-success") py-2 small mt-2">@statusMessage</div>
+                }
+
+                @if (!isNew)
+                {
+                    <div class="text-muted small mt-3">
+                        <div>Created: @editing.CreatedUtc.ToString("yyyy-MM-dd HH:mm")</div>
+                        @if (editing.LastLoginUtc.HasValue)
+                        {
+                            <div>Last login: @editing.LastLoginUtc.Value.ToString("yyyy-MM-dd HH:mm")</div>
+                        }
+                        <div>Status: @(editing.IsActive ? "Active" : "Inactive")</div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+}
+
+@code {
+    private sealed class UserEdit
+    {
+        public Guid Id { get; set; }
+        public string UserName { get; set; } = "";
+        public string? Email { get; set; }
+        public string Role { get; set; } = "User";
+        public bool IsActive { get; set; } = true;
+        public DateTime CreatedUtc { get; set; }
+        public DateTime? LastLoginUtc { get; set; }
+    }
+
+    private readonly string[] roles = { "User", "Contributor", MaRoles.Admin };
+
+    private IReadOnlyList<AuthUserSummary> users = [];
+    private UserEdit? editing;
+    private bool isNew;
+    private string newPassword = "";
+    private string statusMessage = "";
+    private bool isError;
+
+    protected override async Task OnInitializedAsync() => await LoadUsers();
+
+    private async Task LoadUsers() => users = await UserAdmin.ListAsync();
+
+    private void Edit(AuthUserSummary user)
+    {
+        editing = new UserEdit
+        {
+            Id = user.Id,
+            UserName = user.UserName,
+            Email = user.Email,
+            Role = user.Role,
+            IsActive = user.IsActive,
+            CreatedUtc = user.CreatedUtc,
+            LastLoginUtc = user.LastLoginUtc,
+        };
+        isNew = false;
+        newPassword = "";
+        statusMessage = "";
+    }
+
+    private void StartNewUser()
+    {
+        editing = new UserEdit { Role = "User" };
+        isNew = true;
+        newPassword = "";
+        statusMessage = "";
+    }
+
+    private async Task SaveUser()
+    {
+        if (editing == null) return;
+
+        if (isNew)
+        {
+            if (string.IsNullOrWhiteSpace(editing.Email))
+            {
+                Fail("Email is required for new users.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(newPassword))
+            {
+                Fail("Password is required for new users.");
+                return;
+            }
+            // Login is by username; for Prose the username IS the email.
+            var r = await UserAdmin.CreateAsync(
+                userName: editing.Email!, email: editing.Email, role: editing.Role,
+                password: newPassword, mustChangePassword: true);
+            if (!r.Ok) { Fail(r.Error ?? "Could not create the user."); return; }
+        }
+        else
+        {
+            var profile = await UserAdmin.UpdateProfileAsync(editing.Id, editing.Email);
+            if (!profile.Ok) { Fail(profile.Error ?? "Could not update the profile."); return; }
+
+            var roleResult = await UserAdmin.SetRoleAsync(editing.Id, editing.Role);
+            if (!roleResult.Ok) { Fail(roleResult.Error ?? "Could not change the role."); return; }
+
+            if (!string.IsNullOrWhiteSpace(newPassword))
+            {
+                var pwd = await UserAdmin.ResetPasswordAsync(editing.Id, newPassword, requireChange: true);
+                if (!pwd.Ok) { Fail(pwd.Error ?? "Could not reset the password."); return; }
+            }
+        }
+
+        await LoadUsers();
+        statusMessage = "Saved.";
+        isError = false;
+        isNew = false;
+        newPassword = "";
+    }
+
+    private async Task DeactivateUser()
+    {
+        if (editing == null || isNew) return;
+        var r = await UserAdmin.SetActiveAsync(editing.Id, active: false);
+        if (!r.Ok) { Fail(r.Error ?? "Could not deactivate the user."); return; }
+        editing = null;
+        statusMessage = "";
+        await LoadUsers();
+    }
+
+    private void Fail(string message)
+    {
+        statusMessage = message;
+        isError = true;
+    }
+}

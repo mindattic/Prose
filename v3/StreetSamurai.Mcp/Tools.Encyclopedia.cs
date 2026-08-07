@@ -1,9 +1,9 @@
 using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Services;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Encyclopedia tools — list/get for every remaining canon repo ───────────
 // Same pattern as CanonTools (characters, places, factions, CorpoNations) but

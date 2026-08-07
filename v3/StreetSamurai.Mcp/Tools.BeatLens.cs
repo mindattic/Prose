@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── "Behave like people" beat lenses ───────────────────────────────────────────
 // Three single-LLM-call reads over a node's numbered beats. Each files advisory
@@ -24,7 +24,7 @@ public class BeatLensTools
     private readonly CausalityService causality;
     private readonly AffectBehaviorService affect;
     private readonly InterpersonalDynamicsService interpersonal;
-    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
 
     private static readonly JsonSerializerOptions JsonOpts = new() { WriteIndented = true };
 
@@ -32,7 +32,7 @@ public class BeatLensTools
         CausalityService causality,
         AffectBehaviorService affect,
         InterpersonalDynamicsService interpersonal,
-        IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+        IDbContextFactory<ProseDbContext> dbFactory)
     {
         this.causality = causality;
         this.affect = affect;

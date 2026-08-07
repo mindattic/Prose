@@ -3,10 +3,10 @@ using System.Text;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 /// <summary>
 /// MCP tools for inspecting the self-referential entity context stack.
@@ -17,7 +17,7 @@ namespace StreetSamurai.Mcp;
 public class EntityContextTools(
     EntityContextService entityContext,
     EntityMentionService mentionService,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     [McpServerTool, Description("Inspect the entity working memory currently active for a node. Shows depth-0 (directly named), depth-1 (semantic neighbors), and depth-2 (neighbors of neighbors) entities with their canon descriptions. Call after generating beats to see what was in scope.")]
     public async Task<string> get_entity_context(

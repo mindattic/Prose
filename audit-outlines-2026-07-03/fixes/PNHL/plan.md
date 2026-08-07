@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: PNHL
 layer: fix-plan
 title: Pinhole — Structural Rebuild Plan

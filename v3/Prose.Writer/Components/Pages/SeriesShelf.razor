@@ -1,0 +1,264 @@
+@page "/series"
+@attribute [Authorize(Policy = MaPolicies.Admin)]
+@using Prose.Core.Models
+@using Prose.Core.Interfaces
+@inject ISeriesRepository SeriesRepo
+@inject IBookRepository BookRepo
+@inject NavigationManager Nav
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="text-danger mb-0"><i class="bi bi-collection me-2"></i>Series</h4>
+    <div class="d-flex gap-2 align-items-center">
+        <a href="/books" class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-book"></i><div class="btn-lbl"> Bookshelf</div>
+        </a>
+        <button class="btn btn-sm btn-outline-danger" @onclick="OpenNew">
+            <i class="bi bi-plus-lg"></i><div class="btn-lbl"> New Series</div>
+        </button>
+    </div>
+</div>
+
+<p class="text-muted small">A Series groups Books that share continuity — same world, same recurring characters across multiple publishable volumes. Books with no Series stay on the Bookshelf.</p>
+
+@if (newOpen)
+{
+    <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+    <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseNew">
+        <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation="true">
+            <div class="modal-content bg-dark text-light border-danger">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-danger"><i class="bi bi-collection me-2"></i>New Series</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseNew"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">Title <span class="text-danger">*</span></label>
+                        <input class="form-control bg-black text-light border-secondary" @bind="newTitle" placeholder="The Kyle Cycle" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">Premise</label>
+                        <textarea class="form-control bg-black text-light border-secondary" rows="3" @bind="newPremise"
+                                  placeholder="What ties these books together — protagonist, world thread, thematic line."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button class="btn btn-secondary btn-sm" @onclick="CloseNew">Cancel</button>
+                    <button class="btn btn-danger btn-sm" @onclick="SaveNew" disabled="@string.IsNullOrWhiteSpace(newTitle)">
+                        <i class="bi bi-check-lg"></i> Create
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="series-list">
+    @foreach (var s in series)
+    {
+        var seriesBooks = books.Where(b => b.SeriesId == s.Id).ToList();
+        <div class="series-card">
+            <div class="series-header">
+                <div class="flex-grow-1">
+                    <h5 class="text-warning mb-0">@s.Title</h5>
+                    @if (!string.IsNullOrEmpty(s.Premise))
+                    {
+                        <p class="text-muted small mb-0 mt-1">@s.Premise</p>
+                    }
+                    <div class="text-muted small mt-1">
+                        @seriesBooks.Count @(seriesBooks.Count == 1 ? "book" : "books")
+                    </div>
+                </div>
+                <div class="d-flex gap-1">
+                    <button class="btn btn-sm btn-outline-info" @onclick="() => StartEdit(s)" title="Edit series">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-warning" @onclick="() => Delete(s.Id)" title="Archive series">
+                        <i class="bi bi-archive"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="series-books">
+                @foreach (var b in seriesBooks)
+                {
+                    <span class="series-book-pill-group">
+                        <a class="series-book-pill" href="@($"/write/{b.Id}")">
+                            <span class="text-light">@b.Title</span>
+                            <span class="badge bg-dark ms-1">@b.ChapterIds.Count</span>
+                        </a>
+                        <button class="btn btn-sm btn-link text-muted py-0 px-1" title="Detach from series"
+                                @onclick="() => Detach(b.Id, s.Id)">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </span>
+                }
+                @if (looseBooksByCount > 0)
+                {
+                    <button class="btn btn-sm btn-outline-success py-0" @onclick="() => OpenAttach(s.Id)" title="Add a book to this series">
+                        <i class="bi bi-plus-lg"></i> Add book
+                    </button>
+                }
+            </div>
+        </div>
+    }
+    @if (!series.Any())
+    {
+        <div class="text-muted py-4">No series yet. Create one to group books.</div>
+    }
+</div>
+
+@if (attachOpen != null)
+{
+    <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+    <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseAttach">
+        <div class="modal-dialog modal-dialog-centered" @onclick:stopPropagation="true">
+            <div class="modal-content bg-dark text-light border-success">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="bi bi-link-45deg me-2"></i>Add Book to Series</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseAttach"></button>
+                </div>
+                <div class="modal-body">
+                    @{ var loose = books.Where(b => string.IsNullOrEmpty(b.SeriesId)).ToList(); }
+                    @if (loose.Any())
+                    {
+                        <div class="list-group">
+                            @foreach (var b in loose)
+                            {
+                                <button class="list-group-item list-group-item-action bg-black text-light border-secondary"
+                                        @onclick="() => Attach(b.Id)">
+                                    <strong>@b.Title</strong>
+                                    @if (!string.IsNullOrEmpty(b.Tagline))
+                                    {
+                                        <div class="small text-muted">@b.Tagline</div>
+                                    }
+                                </button>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-muted small">No unassigned books available.</div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    .series-list { display: flex; flex-direction: column; gap: 16px; }
+    .series-card {
+        background: #1a1a1a;
+        border: 1px solid #333;
+        border-left: 3px solid #c00;
+        padding: 14px 16px;
+    }
+    .series-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+    .series-books { display: flex; flex-wrap: wrap; gap: 6px; }
+    .series-book-pill {
+        background: #0a0a0a;
+        border: 1px solid #444;
+        padding: 4px 10px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+    .series-book-pill:hover { border-color: #c00; }
+    .series-book-pill-group { display: inline-flex; align-items: center; gap: 2px; }
+</style>
+
+@code {
+    private List<Series> series = [];
+    private List<Book> books = [];
+    private bool newOpen;
+    private string newTitle = "";
+    private string newPremise = "";
+    private string? attachOpen;
+    private int looseBooksByCount;
+
+    protected override void OnInitialized() => Reload();
+
+    private void Reload()
+    {
+        series = SeriesRepo.ListSeries();
+        books = BookRepo.ListBooks();
+        looseBooksByCount = books.Count(b => string.IsNullOrEmpty(b.SeriesId));
+    }
+
+    private void OpenNew() { editing = null; newTitle = ""; newPremise = ""; newOpen = true; }
+    private void CloseNew() { newOpen = false; editing = null; }
+
+    private void SaveNew()
+    {
+        if (string.IsNullOrWhiteSpace(newTitle)) return;
+        // Editing an existing series? Mutate it. Otherwise create.
+        // The form is shared; the receiver is determined by `editing`.
+        if (editing != null)
+        {
+            editing.Title = newTitle.Trim();
+            editing.Premise = newPremise.Trim();
+            SeriesRepo.SaveSeries(editing);
+        }
+        else
+        {
+            var s = new Series { Title = newTitle.Trim(), Premise = newPremise.Trim() };
+            SeriesRepo.SaveSeries(s);
+        }
+        newOpen = false;
+        editing = null;
+        Reload();
+    }
+
+    private Series? editing;
+    private void StartEdit(Series s) { editing = s; newTitle = s.Title; newPremise = s.Premise; newOpen = true; }
+
+    private void Detach(string bookId, string seriesId)
+    {
+        var book = books.FirstOrDefault(b => b.Id == bookId);
+        if (book == null) return;
+        book.SeriesId = null;
+        BookRepo.SaveBook(book);
+        var s = SeriesRepo.LoadSeries(seriesId);
+        if (s != null)
+        {
+            s.BookIds.Remove(bookId);
+            SeriesRepo.SaveSeries(s);
+        }
+        Reload();
+    }
+
+    private void Delete(string id)
+    {
+        // Also drop SeriesId from any book pointing here so they go back to "loose" on the bookshelf.
+        foreach (var b in books.Where(b => b.SeriesId == id))
+        {
+            b.SeriesId = null;
+            BookRepo.SaveBook(b);
+        }
+        SeriesRepo.DeleteSeries(id);
+        Reload();
+    }
+
+    private void OpenAttach(string seriesId) => attachOpen = seriesId;
+    private void CloseAttach() => attachOpen = null;
+
+    private void Attach(string bookId)
+    {
+        if (attachOpen == null) return;
+        var book = books.FirstOrDefault(b => b.Id == bookId);
+        if (book == null) return;
+
+        book.SeriesId = attachOpen;
+        BookRepo.SaveBook(book);
+
+        // Also push the book id onto the series's BookIds list.
+        var s = SeriesRepo.LoadSeries(attachOpen);
+        if (s != null && !s.BookIds.Contains(bookId))
+        {
+            s.BookIds.Add(bookId);
+            SeriesRepo.SaveSeries(s);
+        }
+
+        attachOpen = null;
+        Reload();
+    }
+}

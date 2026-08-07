@@ -1,5 +1,5 @@
 // ──────────────────────────────────────────────────────────────────────────
-// Azure SQL provisioning for StreetSamurai.
+// Azure SQL provisioning for Prose.
 //
 // Provisions:
 //   1. SQL logical server with AAD-only authentication (no SQL admin password).
@@ -8,7 +8,7 @@
 //      principal (for CI/CD migration runs).
 //   2. SQL Database on Serverless General Purpose tier (Gen5, autoscale
 //      0.5–2 vCores, auto-pause after 60 min). Supports vector data type
-//      + temporal tables, which StreetSamurai requires.
+//      + temporal tables, which Prose requires.
 //   3. Firewall rule allowing all Azure-internal services so the App Service
 //      can connect. Tighten later via private endpoint if you want.
 //   4. The App Service's system-assigned managed identity is granted as a
@@ -18,7 +18,7 @@
 //
 // What this file does NOT do:
 //   - Create the resource group (do it once with az cli — see infra/README.md).
-//   - Create the App Service (already exists at `streetsamurai`).
+//   - Create the App Service (already exists at `prose`).
 //   - Run schema migrations (handled by GitHub Actions, not Bicep).
 //
 // Deploy:
@@ -32,10 +32,10 @@
 param location string = resourceGroup().location
 
 @description('SQL logical server name. Globally unique; lowercase + digits + hyphens. Becomes <name>.database.windows.net.')
-param sqlServerName string = 'streetsamurai-sql'
+param sqlServerName string = 'prose-sql'
 
 @description('SQL database name. Doesn\'t need to be globally unique; lives under the server.')
-param sqlDatabaseName string = 'StreetSamurai'
+param sqlDatabaseName string = 'Prose'
 
 @description('AAD object ID of the human admin (you). Find with: az ad signed-in-user show --query id -o tsv')
 param aadAdminObjectId string
@@ -95,7 +95,7 @@ resource sqlDatabase 'Microsoft.Sql/servers/databases@2023-08-01-preview' = {
     autoPauseDelay: autoPauseDelayMinutes
     minCapacity: json('0.5')
     collation: 'SQL_Latin1_General_CP1_CI_AS'
-    // Enable system-versioning support and any other defaults StreetSamurai
+    // Enable system-versioning support and any other defaults Prose
     // uses. Temporal tables work without a DB-level toggle on Azure SQL —
     // the CREATE TABLE ... PERIOD FOR SYSTEM_TIME is enough.
     requestedBackupStorageRedundancy: 'Local'

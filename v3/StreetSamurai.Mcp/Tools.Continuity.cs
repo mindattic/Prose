@@ -3,12 +3,12 @@ using System.Diagnostics;
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Interfaces;
-using StreetSamurai.Core.Models;
-using StreetSamurai.Core.Models.Canon;
-using StreetSamurai.Core.Services;
+using Prose.Core.Interfaces;
+using Prose.Core.Models;
+using Prose.Core.Models.Canon;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Continuity / contradiction tooling ─────────────────────────────────────
 // find_contradictions runs the canon-grounded contradiction sweep over a
@@ -216,7 +216,7 @@ public class ContinuityTools
             {
                 error = "contradiction_detector_script_not_found",
                 expected_path = resolvedScriptPath,
-                hint = "Make sure tools/check-contradictions.js exists in the StreetSamurai repo root and the MCP server's working directory is the repo root.",
+                hint = "Make sure tools/check-contradictions.js exists in the Prose repo root and the MCP server's working directory is the repo root.",
             }, CanonTools.JsonOpts);
         }
 
@@ -355,7 +355,7 @@ public class ContinuityTools
             {
                 error = "contradiction_detector_script_not_found",
                 expected_path = resolvedScriptPath,
-                hint = "Make sure tools/check-contradictions.js exists in the StreetSamurai repo root and the MCP server's working directory is the repo root.",
+                hint = "Make sure tools/check-contradictions.js exists in the Prose repo root and the MCP server's working directory is the repo root.",
             }, CanonTools.JsonOpts);
         }
 

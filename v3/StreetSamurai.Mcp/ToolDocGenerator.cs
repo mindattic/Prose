@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 /// <summary>
 /// Generates <c>docs/MCP_TOOLS.md</c> by REFLECTING over this assembly's
@@ -11,7 +11,7 @@ namespace StreetSamurai.Mcp;
 /// the exact same source the MCP host registers via <c>WithToolsFromAssembly()</c>.
 /// Because the doc is generated from the attributes, it can never drift from the
 /// running server. Re-run it whenever a tool is added/changed:
-/// <code>dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md</code>
+/// <code>dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md</code>
 /// (the SessionStart/pre-commit wiring keeps it current automatically — see README).
 /// </summary>
 public static class ToolDocGenerator
@@ -41,17 +41,17 @@ public static class ToolDocGenerator
         }
 
         var sb = new StringBuilder();
-        sb.AppendLine("# StreetSamurai MCP Tools");
+        sb.AppendLine("# Prose MCP Tools");
         sb.AppendLine();
         sb.AppendLine("> **GENERATED — do not hand-edit.** Produced by `ToolDocGenerator` from the");
-        sb.AppendLine("> `[McpServerTool]` + `[Description]` attributes in `v3/StreetSamurai.Mcp/Tools*.cs`,");
+        sb.AppendLine("> `[McpServerTool]` + `[Description]` attributes in `v3/Prose.Mcp/Tools*.cs`,");
         sb.AppendLine("> the same source the MCP host registers via `WithToolsFromAssembly()`. To refresh:");
         sb.AppendLine("> ");
         sb.AppendLine("> ```powershell");
-        sb.AppendLine("> dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md");
+        sb.AppendLine("> dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md");
         sb.AppendLine("> ```");
         sb.AppendLine(">");
-        sb.AppendLine("> All tools are MCP-prefixed `mcp__streetsamurai__<name>` by the client. Most return a");
+        sb.AppendLine("> All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a");
         sb.AppendLine("> JSON string; the canon is the SQL database, scoped to the active Universe.");
         sb.AppendLine();
         sb.AppendLine($"**{total} tools** across **{families.Count} tool families.**");

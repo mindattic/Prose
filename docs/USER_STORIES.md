@@ -1,16 +1,16 @@
 ﻿---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: SS
 layer: stories
 status: living
 updated: 2026-06-25
 ---
 
-# StreetSamurai — User Stories
+# Prose — User Stories
 > ✅ done (shipped & tested) · 🟡 partial · ⬜ planned · 🗑️ cut. Every ✅ cites the test.
 > Migrated from `ARCHITECTURE.md` §4 (goals table) on 2026-06-07. Test tokens are NUnit
-> methods/classes in `v3/StreetSamurai.UnitTests/`. CLI smokes run against LocalDB.
+> methods/classes in `v3/Prose.UnitTests/`. CLI smokes run against LocalDB.
 
 ## Epic A — Canon-as-database foundation
 
@@ -128,13 +128,13 @@ updated: 2026-06-25
     at Class-2 schism threshold, 127s LOG GAP, source ID matches 11-year relay shell, first contact
     sent at 01:14, job accepted in morning). *(2026-06-21)*
   - **G5g ⬜** Full 16-chapter review campaign: each chapter ≥82% standalone; cumulative ≥85%.
-    Use: `dotnet run --project v3/StreetSamurai.Cli -- --review-strand --slug <slug> --readers 20`
+    Use: `dotnet run --project v3/Prose.Cli -- --review-strand --slug <slug> --readers 20`
 
 ## Epic U — Multi-Universe support
 
 > The engine becomes universe-agnostic: GLMZ is Universe #1, Fantasy/Steampunk is Universe #2, and
 > more can be added. Single `UniverseId` FK per row (1:M); crossover entities are duplicated, not
-> bridged. No project rename — "StreetSamurai" stays the engine codename. See
+> bridged. No project rename — "Prose" stays the engine codename. See
 > [SS-A2](AMENDMENTS.md) and [SS-LAW-15](BIBLE.md#SS-§5).
 
 - **SS-US-U1 ✅** As the engine, I store a `Universe` lookup table and a non-null `UniverseId` on
@@ -146,13 +146,13 @@ updated: 2026-06-25
 - **SS-US-U2 ✅** As the operator, all existing rows are backfilled to the GLMZ universe in the same
   migration (NOT NULL DEFAULT GLMZ), so no row is orphaned. *(verified by SQL scan: 0 non-GLMZ rows
   across 12,096 Entities / 94 Strands / 11 Books after migration; DB backed up first to
-  `backups/StreetSamurai_preuniverse_20260615.bak`.)*
+  `backups/Prose_preuniverse_20260615.bak`.)*
 - **SS-US-U3 ✅** As the author, a Fantasy/Steampunk placeholder universe is seeded alongside GLMZ.
   *(verified by SQL: `Universe` seeded with `glmz` + `scry`, each with a `WorldPrimer`.)*
 - **SS-US-U4 ✅** As the author, I can **SwitchUniverse** — set the current universe independently in
   the UI and in each CLI/MCP process — so I can write GLMZ in one terminal and Fantasy in another at
   the same time. **Selection is per-process / per-session, never a single shared global.** Precedence:
-  `--universe <slug>` flag → `SS_UNIVERSE` env var (per terminal) → UI selection → global default
+  `--universe <slug>` flag → `PROSE_UNIVERSE` env var (per terminal) → UI selection → global default
   `current_universe` KV. A UI dropdown (`NavMenu`), CLI flag, and MCP `switch_universe` tool set it;
   an EF global query filter (`IUniverseContext` / `UniverseScope`) scopes every read. *(verified by
   CLI smoke `--list-strands --universe glmz` → 94 vs `--universe scry` → 0, the universe
@@ -407,7 +407,7 @@ updated: 2026-06-25
   > was returning empty completions on heavy calls (blueprint; latent for long prose beats) because
   > Legion omitted the `thinking` field and Sonnet-5 defaults adaptive thinking ON, consuming the whole
   > `max_tokens` budget before any `text` block. Legion 22.0.0 sends `thinking: { type: "disabled" }`
-  > for the temperature-deprecated family (Sonnet 5+/Opus 4.7+). StreetSamurai.Core bumped
+  > for the temperature-deprecated family (Sonnet 5+/Opus 4.7+). Prose.Core bumped
   > `MindAttic.Legion` 21.0.0 → 22.0.0 (2026-07-18); verified: `--generate-blueprint` on the default
   > `claude-sonnet-5` now returns `responseLen=4900` (was 0). The HFV first draft was written with the
   > `--model claude-sonnet-4-6` workaround before the bump; the engine now works on the default model.
@@ -582,7 +582,7 @@ updated: 2026-06-25
 > automated tests, not just convention. Stories in this epic add or extend the gate test suite to
 > make law violations build-breakers.
 
-- **SS-US-K1 ✅** As the codebase, no generation service injects `StreetSamuraiDbContext` or
+- **SS-US-K1 ✅** As the codebase, no generation service injects `ProseDbContext` or
   queries `EntityEmbeddings` directly (SCL-1). *(verified by `DiRegistrationTests` + architectural
   conventions; `CanonRetrievalService` is the single retrieval surface.)*
 
@@ -750,7 +750,7 @@ updated: 2026-06-25
 ### Audit log
 
 - **2026-07-04 — Voting kill-switch SHIPPED ([SS-A44](BIBLE.md#SS-LAW-17)).** Central `VotingGate`
-  (`v3/StreetSamurai.Core/Services/VotingGate.cs`) reads `legion.json` `"votingEnabled"` (default
+  (`v3/Prose.Core/Services/VotingGate.cs`) reads `legion.json` `"votingEnabled"` (default
   OFF). Gated at service entry: `NodeReviewService` (4 ballot methods), `EntityReviewService`,
   `EntityRatingService`, `StoryQualityService`, `BookReviewService`, and `ChapterCloseProcessorService`
   (skips the tiered panel + narrative fork gracefully). CLI `--allow-votes` on `--review-node`
@@ -791,17 +791,17 @@ updated: 2026-06-25
   table + `UniverseId` on Entities/Strands/Books (temporal dance), backfilled all rows to GLMZ,
   seeded GLMZ + Fantasy/Steampunk, per-universe unique slug indexes, an EF global query filter +
   insert-stamping via ambient `IUniverseContext`/`UniverseScope`, SwitchUniverse in UI (`NavMenu`
-  dropdown) + CLI (`--universe` / `SS_UNIVERSE`) + MCP (`switch_universe`/`list_universes` tools),
+  dropdown) + CLI (`--universe` / `PROSE_UNIVERSE`) + MCP (`switch_universe`/`list_universes` tools),
   the `WorldPrimer` generation seam (GLMZ byte-identical), and removed the CyberSpace background for
   plain dark mode. Full solution builds clean; 129 gate tests pass; CLI smoke proves read scoping
   (GLMZ 94 strands / Fantasy 0). U5 (full prompt de-hardcoding) left 🟡. See [SS-A3](AMENDMENTS.md).
 - **2026-06-15 — multi-universe (docs-first).** Added Epic U. Decisions locked with the author:
-  (1) **no rename** — "StreetSamurai" stays the engine codename, "GLMZ" becomes the name of
+  (1) **no rename** — "Prose" stays the engine codename, "GLMZ" becomes the name of
   Universe #1; (2) **single `UniverseId` FK (1:M)**, not an M:M bridge — crossover entities are
   duplicated (author prefers ~10 dupe rows over a double-bridge refactor); (3) **SwitchUniverse is
-  per-process / per-session** (flag → `SS_UNIVERSE` env → UI session → global default), so two CLIs
+  per-process / per-session** (flag → `PROSE_UNIVERSE` env → UI session → global default), so two CLIs
   can write different universes at once; (4) execution is **docs + backup only** this pass — DB
-  backed up to `backups/StreetSamurai_preuniverse_20260615.bak` (RESTORE VERIFYONLY passed); schema
+  backed up to `backups/Prose_preuniverse_20260615.bak` (RESTORE VERIFYONLY passed); schema
   and code build deferred to a reviewed follow-up. New engine invariant [SS-LAW-15](BIBLE.md#SS-§5);
   GLMZ-specific laws (SS-LAW-8, 10–14) re-scoped to the GLMZ universe in BIBLE §5/§9.
 - **2026-06-07 — migration.** This file was synthesized from `ARCHITECTURE.md` §4 (PAST/PRESENT/

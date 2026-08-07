@@ -1,9 +1,9 @@
 using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Services;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Beat Verification tools (Track C — Truth-First Architecture) ──────────────
 // Verify that generated prose fulfilled its declared BeatBlueprintDecision contract.

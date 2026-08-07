@@ -116,49 +116,49 @@ info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
       Received HTTP response headers after 5446.0488ms - 200
 info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
       End processing HTTP request after 5449.8747ms - 200
-info: StreetSamurai.Core.Services.ClaudeService[0]
+info: Prose.Core.Services.ClaudeService[0]
       Claude response: model=claude-sonnet-5, responseLen=754
 info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
       Received HTTP response headers after 6321.5599ms - 200
 info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
       End processing HTTP request after 6321.6259ms - 200
-info: StreetSamurai.Core.Services.ClaudeService[0]
+info: Prose.Core.Services.ClaudeService[0]
       Claude response: model=claude-sonnet-5, responseLen=829
 info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
       Received HTTP response headers after 6656.7939ms - 200
 info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
       End processing HTTP request after 6656.8513ms - 200
-info: StreetSamurai.Core.Services.ClaudeService[0]
+info: Prose.Core.Services.ClaudeService[0]
       Claude response: model=claude-sonnet-5, responseLen=630
 info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
       Received HTTP response headers after 6667.4788ms - 200
 info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
       End processing HTTP request after 6667.5511ms - 200
-info: StreetSamurai.Core.Services.ClaudeService[0]
+info: Prose.Core.Services.ClaudeService[0]
       Claude response: model=claude-sonnet-5, responseLen=1005
 info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
       Received HTTP response headers after 6931.5405ms - 200
 info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
       End processing HTTP request after 6931.5991ms - 200
-info: StreetSamurai.Core.Services.ClaudeService[0]
+info: Prose.Core.Services.ClaudeService[0]
       Claude response: model=claude-sonnet-5, responseLen=631
 info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
       Received HTTP response headers after 7260.7789ms - 200
 info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
       End processing HTTP request after 7263.971ms - 200
-info: StreetSamurai.Core.Services.ClaudeService[0]
+info: Prose.Core.Services.ClaudeService[0]
       Claude response: model=claude-sonnet-5, responseLen=775
 info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
       Received HTTP response headers after 7261.828ms - 200
 info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
       End processing HTTP request after 7261.8686ms - 200
-info: StreetSamurai.Core.Services.ClaudeService[0]
+info: Prose.Core.Services.ClaudeService[0]
       Claude response: model=claude-sonnet-5, responseLen=1066
 info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
       Received HTTP response headers after 7521.5846ms - 200
 info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
       End processing HTTP request after 7521.6414ms - 200
-info: StreetSamurai.Core.Services.ClaudeService[0]
+info: Prose.Core.Services.ClaudeService[0]
       Claude response: model=claude-sonnet-5, responseLen=847
 info: Microsoft.EntityFrameworkCore.Database.Command[20101]
       Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']

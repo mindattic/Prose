@@ -2,17 +2,17 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 [McpServerToolType]
 public class EditSessionTools(
     EditSessionService sessionSvc,
     BibleSyncService bibleSvc,
     BlueprintSyncService blueprintSvc,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     [McpServerTool, Description("Start a named edit session for a node. A session groups all prose edits until closed, enabling bible/blueprint sync afterward. Session types: prose-pass, gripes-cleanup, logic-sweep, custom.")]
     public async Task<string> start_edit_session(
@@ -123,7 +123,7 @@ public class EditSessionTools(
         return sb.ToString().TrimEnd();
     }
 
-    private async Task<StreetSamurai.Core.Data.Entities.Node?> ResolveNodeAsync(string nodeIdOrSlug)
+    private async Task<Prose.Core.Data.Entities.Node?> ResolveNodeAsync(string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(nodeIdOrSlug, out var id))

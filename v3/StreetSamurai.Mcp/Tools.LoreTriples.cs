@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using MindAttic.Legion;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Interfaces;
-using StreetSamurai.Core.Services;
+using Prose.Core.Interfaces;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Continuity claim tooling ───────────────────────────────────────────────
 // In-process MCP wrapper over the unified ContinuityService — extracts atomic

@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Markdown file backup / restore tools ─────────────────────────────────
 // Surfaces the MarkdownFileService so Claude Code can sync project-rules,
@@ -21,7 +21,7 @@ public class ConfigTools
     private readonly DocContextService docContext;
     private readonly UserContextService userContext;
     private readonly LibertyReportService libertyReport;
-    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly TokenLedger ledger;
 
     public ConfigTools(
@@ -29,7 +29,7 @@ public class ConfigTools
         DocContextService docContext,
         UserContextService userContext,
         LibertyReportService libertyReport,
-        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        IDbContextFactory<ProseDbContext> dbFactory,
         TokenLedger ledger)
     {
         this.svc          = svc;

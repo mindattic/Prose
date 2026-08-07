@@ -1,0 +1,157 @@
+﻿@page "/places"
+@using Prose.Core.Models.Canon
+@inject DistrictRepository Repo
+@inject SettingsService Settings
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+@inject WorldGraphService Graph
+
+<div class="dict-layout">
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <FilterBar AllTags="allTags" @bind-Filter="filter" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+
+        </div>
+        <div class="dict-items">
+            @foreach (var d in SortedItems)
+            {
+                <div class="list-item text-light @(editing?.Name == d.Name ? "active" : "")" @onclick="() => Edit(d)">
+                    <div class="fw-bold small">@d.Name</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@d.Type</div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="dict-editor">
+        @if (editing != null)
+        {
+            <EditViewToggle RepoName="places" Title="@(isNew ? "New Place" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
+                <HeaderButtons>
+                    @if (editing.Coordinates.Lat != 0)
+                    {
+                        <a href="@MapExternalUrl(editing.Coordinates.Lat, editing.Coordinates.Lng)" target="_blank"
+                           class="btn btn-sm btn-outline-info" title="View on map">
+                            <i class="bi bi-geo-alt"></i> Map
+                        </a>
+                    }
+                    @if (!_confirmDelete)
+                    {
+                        <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
+                        @if (!isNew) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
+                    }
+                    else
+                    {
+                        <span class="small text-muted me-1">Archive Entry?</span>
+                        <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Yes</div></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false"><div class="btn-lbl">No</div></button>
+                    }
+                </HeaderButtons>
+                <ChildContent>
+                    @* ── Map Embed ───────────────────────────────── *@
+                    @if (editing.Coordinates.Lat != 0 && Settings.MapService == "google" && !string.IsNullOrWhiteSpace(Settings.GoogleMapsApiKey))
+                    {
+                        <div class="mb-3 rounded overflow-hidden border border-secondary" style="height: 250px;">
+                            <iframe src="@($"https://www.google.com/maps/embed/v1/view?key={Settings.GoogleMapsApiKey}&center={editing.Coordinates.Lat},{editing.Coordinates.Lng}&zoom=14&maptype=roadmap")"
+                                    width="100%" height="100%" style="border: none;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    }
+                    else if (editing.Coordinates.Lat != 0 && Settings.MapService == "here" && !string.IsNullOrWhiteSpace(Settings.MapApiKey))
+                    {
+                        <div class="mb-3 rounded overflow-hidden border border-secondary" style="height: 250px;">
+                            <div id="here-map" style="width: 100%; height: 100%;"></div>
+                        </div>
+                    }
+                    else if (editing.Coordinates.Lat != 0)
+                    {
+                        <div class="mb-3 rounded overflow-hidden border border-secondary bg-black d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <div class="text-center">
+                                <i class="bi bi-geo-alt text-danger" style="font-size: 2rem;"></i>
+                                <div class="text-muted small mt-1">@editing.Coordinates.Lat.ToString("F4"), @editing.Coordinates.Lng.ToString("F4")</div>
+                                <a href="@MapExternalUrl(editing.Coordinates.Lat, editing.Coordinates.Lng)" target="_blank" class="btn btn-sm btn-outline-info mt-2">
+                                    <i class="bi bi-box-arrow-up-right"></i> Open in Maps
+                                </a>
+                            </div>
+                        </div>
+                    }
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div class="col-4"><div class="field-label">Demographics</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Demographics" /></div>
+                        <div class="col-4"><div class="field-label">Economy</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Economy" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-6">
+                            <div class="field-label">Latitude</div>
+                            <input type="number" step="0.0001" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Coordinates.Lat" />
+                        </div>
+                        <div class="col-6">
+                            <div class="field-label">Longitude</div>
+                            <input type="number" step="0.0001" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Coordinates.Lng" />
+                        </div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Power Structure</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.PowerStructure"></textarea></div>
+                    <div class="field-label mb-1">Atmosphere</div>
+                    <div class="mb-3"><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Atmosphere.Feel"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
+        }
+        else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a place or create a new one</div> }
+    </div>
+</div>
+
+@code {
+    private List<DistrictData> items = [];
+    private DistrictData? editing;
+    private bool isNew, _confirmDelete;
+    private string originalName = "";
+    private string filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
+
+    private List<DistrictData> FilteredItems
+    {
+        get
+        {
+            IEnumerable<DistrictData> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(d => d.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(d => selectedTags.All(tag => d.Tags.Contains(tag)));
+            return result.ToList();
+        }
+    }
+    private List<DistrictData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
+
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } } }
+    private void AddNew() { editing = new DistrictData(); isNew = true; _confirmDelete = false; }
+    private void Edit(DistrictData d) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_places", d.Id); editing = d; originalName = d.Name; isNew = false; _confirmDelete = false; if (!Nav.Uri.Contains("id=" + d.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + d.Id, forceLoad: false); }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Name); Repo.Delete(editing.Name); editing = null; _confirmDelete = false; items = Repo.GetAll(); }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
+        if (firstRender && editing == null && items.Count > 0 && !Nav.Uri.Contains("new=true") && !Nav.Uri.Contains("id="))
+        {
+            var lastId = "";
+            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_places") ?? ""; } catch { }
+            var target = (!string.IsNullOrEmpty(lastId) ? items.FirstOrDefault(x => x.Id == lastId) : null) ?? items.First();
+            if (target != null) { Edit(target); StateHasChanged(); }
+        }
+        if (editing != null && editing.Coordinates.Lat != 0 && Settings.MapService == "here" && !string.IsNullOrWhiteSpace(Settings.MapApiKey))
+        {
+            try { await JS.InvokeVoidAsync("hereMap.show", "here-map", Settings.MapAppId, Settings.MapApiKey,
+                editing.Coordinates.Lat, editing.Coordinates.Lng, editing.Name); }
+            catch { /* HERE Maps JS not loaded — graceful fallback to static display */ }
+        }
+    }
+
+    private string MapExternalUrl(double lat, double lng) => Settings.MapService == "google"
+        ? $"https://www.google.com/maps/@{lat},{lng},14z"
+        : $"https://wego.here.com/?map={lat},{lng},14,normal&x=ep";
+    private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
+}

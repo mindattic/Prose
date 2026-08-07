@@ -1,0 +1,931 @@
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.RegularExpressions;
+using Microsoft.EntityFrameworkCore;
+using Prose.Core.Data;
+using Prose.Core.Data.Entities;
+using Prose.Core.Interfaces;
+
+namespace Prose.Core.Services;
+
+// ── MarkdownFileService ────────────────────────────────────────────────────
+// Backs every project-rule, Codex doc, and Claude Code memory file into the
+// SQL Server database so they can survive disk loss and be recovered by
+// timestamp from the MarkdownFiles_History temporal table.
+//
+// FileRoot → base directory mapping:
+//   "project"               → IPathProvider.DataRoot
+//   "claude-user"           → ~/.claude
+//   "claude-project-memory" → ~/.claude/projects/{projectSlug}/memory
+// ──────────────────────────────────────────────────────────────────────────
+
+public class MarkdownFileService
+{
+    public record DiscoveredFile(string FilePath, string FileRoot, string RelativePath, string Category);
+    /// <summary>
+    /// Every column EF maps for <see cref="MarkdownFile"/>, for the <c>FOR SYSTEM_TIME</c> raw
+    /// queries. A <c>FromSqlRaw</c> projection must return the full mapped set or EF throws when
+    /// materializing — the previous hand-written list stopped at <c>SyncedBy</c> and omitted
+    /// Tier/Scope/Triggers/AutoTier/RelatedIds, which meant the <c>--as-of</c> restore path was
+    /// already broken before UniverseId was added to it.
+    /// </summary>
+    private const string TemporalColumns =
+        "Id, FilePath, FileRoot, RelativePath, FileName, Category, Content, ContentHash, " +
+        "LastSyncedAt, SyncedBy, Tier, Scope, Triggers, AutoTier, RelatedIds, UniverseId";
+
+    public record SyncResult(int Inserted, int Updated, int Unchanged, List<string> Errors);
+    public record RestoreResult(int Written, int Skipped, List<string> Errors);
+
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly IPathProvider paths;
+    private readonly CanonDocumentTypeRegistry typeRegistry;
+
+    public MarkdownFileService(
+        IDbContextFactory<ProseDbContext> dbFactory,
+        IPathProvider paths,
+        CanonDocumentTypeRegistry typeRegistry)
+    {
+        this.dbFactory    = dbFactory;
+        this.paths        = paths;
+        this.typeRegistry = typeRegistry;
+    }
+
+    // ── Discovery ─────────────────────────────────────────────────────────
+
+    public IEnumerable<DiscoveredFile> DiscoverFiles()
+    {
+        var projectRoot  = paths.DataRoot;
+        var userHome     = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        var claudeUser   = Path.Combine(userHome, ".claude");
+        var projectSlug  = DeriveCloudeProjectSlug(projectRoot);
+        var memoryRoot   = Path.Combine(claudeUser, "projects", projectSlug, "memory");
+
+        // Project-level CLAUDE.md
+        var projectRule = Path.Combine(projectRoot, "CLAUDE.md");
+        if (File.Exists(projectRule))
+            yield return new(projectRule, "project", "CLAUDE.md", "project-rule");
+
+        // Global ~/.claude/CLAUDE.md
+        var globalRule = Path.Combine(claudeUser, "CLAUDE.md");
+        if (File.Exists(globalRule))
+            yield return new(globalRule, "claude-user", "CLAUDE.md", "project-rule-global");
+
+        // Codex docs: docs/*.md
+        var docsDir = Path.Combine(projectRoot, "docs");
+        if (Directory.Exists(docsDir))
+        {
+            foreach (var f in Directory.EnumerateFiles(docsDir, "*.md", SearchOption.TopDirectoryOnly))
+                yield return new(f, "project", ToRelative(projectRoot, f), "codex");
+
+            // docs/registers/*.md
+            var registersDir = Path.Combine(docsDir, "registers");
+            if (Directory.Exists(registersDir))
+                foreach (var f in Directory.EnumerateFiles(registersDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "register");
+
+            // docs/rfc/*.md
+            var rfcDir = Path.Combine(docsDir, "rfc");
+            if (Directory.Exists(rfcDir))
+                foreach (var f in Directory.EnumerateFiles(rfcDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "rfc");
+
+            // docs/strands/*.md — per-node bibles
+            var nodesDir = Path.Combine(docsDir, "nodes");
+            if (Directory.Exists(nodesDir))
+                foreach (var f in Directory.EnumerateFiles(nodesDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "node-bible");
+
+            // docs/books/*.md — legacy long-form book spines
+            var booksDir = Path.Combine(docsDir, "books");
+            if (Directory.Exists(booksDir))
+                foreach (var f in Directory.EnumerateFiles(booksDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "book-spine");
+
+            // docs/universes/*.md — per-universe world facts (source for Universe.WorldFacts)
+            var universesDir = Path.Combine(docsDir, "universes");
+            if (Directory.Exists(universesDir))
+                foreach (var f in Directory.EnumerateFiles(universesDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "universe-facts");
+
+            // docs/series/*.md — cross-book arc boards. These were never discovered, so they had
+            // no MarkdownFiles row at all — which made ClassifyFile's `docs/series/` branch (and
+            // with it the entire `series` tier for hand-authored docs) unreachable dead code.
+            var seriesDir = Path.Combine(docsDir, "series");
+            if (Directory.Exists(seriesDir))
+                foreach (var f in Directory.EnumerateFiles(seriesDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "series");
+
+            // docs/gospel/*.md — SOURCE-universe research notes. Undiscovered until now, which is
+            // why docs/SOURCE.md's `related: docs/gospel/README.md` silently resolved to nothing.
+            var gospelDir = Path.Combine(docsDir, "gospel");
+            if (Directory.Exists(gospelDir))
+                foreach (var f in Directory.EnumerateFiles(gospelDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "gospel");
+        }
+
+        // Claude Code project memory files
+        if (Directory.Exists(memoryRoot))
+        {
+            foreach (var f in Directory.EnumerateFiles(memoryRoot, "*.md", SearchOption.TopDirectoryOnly))
+            {
+                var fname = Path.GetFileName(f);
+                var cat   = fname.Equals("MEMORY.md", StringComparison.OrdinalIgnoreCase)
+                    ? "memory-index"
+                    : "memory";
+                yield return new(f, "claude-project-memory", fname, cat);
+            }
+        }
+    }
+
+    // ── Sync: disk → DB ───────────────────────────────────────────────────
+
+    public async Task<SyncResult> SyncAllAsync(bool dryRun = false, CancellationToken ct = default)
+    {
+        var files  = DiscoverFiles().ToList();
+        var errors = new List<string>();
+        int inserted = 0, updated = 0, unchanged = 0;
+        // Accumulate raw `related:` frontmatter paths keyed by (FileRoot, RelativePath)
+        // for resolution to GUIDs after all files are upserted.
+        var rawRelatedMap = new Dictionary<(string, string), string>();
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // NodeCode → owning universe, for docs/nodes/<CODE>.md.
+        //
+        // A node bible can reach MarkdownFiles by either of two paths: SyncFromCanonDbAsync (from
+        // NodeBibleSections, which knows the node and therefore its universe) or this disk sync
+        // (which historically knew nothing). A book whose bible exists only as a generated file on
+        // disk — no "Full" NodeBibleSections row — therefore landed on Universe.SharedId and was
+        // visible to every universe. That is how the SCRY bibles (VIGL, M101, TRNY, LLSS) ended up
+        // shared. ClassifyFile already derives Scope from the filename for this folder, so the code
+        // is available here; resolve it to the real universe.
+        var nodeUniverseByCode = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.UniverseId != Guid.Empty)
+            .Select(n => new { Code = (n.NodeCode ?? n.Slug).ToUpper(), n.UniverseId })
+            .ToListAsync(ct);
+        var nodeUniverseLookup = nodeUniverseByCode
+            .GroupBy(x => x.Code, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.First().UniverseId, StringComparer.OrdinalIgnoreCase);
+
+        // Slug → Universe.Id, for files whose frontmatter names its universe explicitly
+        // (`universe: scry`, etc.) — see ClassifyFile's `universeSlug` extraction. Without this,
+        // any hand-authored docs/universes/<CODE>.md file that isn't node-tier fell through to
+        // Universe.SharedId and became visible in every universe's DCM candidate set — the
+        // mechanism behind SCRY's Entos_HISTORY.md leaking into a NONFICTION book's context.
+        var universeBySlug = await db.Universes.AsNoTracking().IgnoreQueryFilters()
+            .Select(u => new { u.Slug, u.Id })
+            .ToDictionaryAsync(u => u.Slug, u => u.Id, StringComparer.OrdinalIgnoreCase, ct);
+
+        Guid UniverseForFile(DocClassification c)
+        {
+            if (c.Tier == "node" && !string.IsNullOrWhiteSpace(c.Scope)
+                && nodeUniverseLookup.TryGetValue(c.Scope.Trim(), out var nodeUid))
+                return nodeUid;
+            if (!string.IsNullOrWhiteSpace(c.UniverseSlug)
+                && universeBySlug.TryGetValue(c.UniverseSlug.Trim(), out var slugUid))
+                return slugUid;
+            return Universe.SharedId;
+        }
+
+        foreach (var f in files)
+        {
+            try
+            {
+                if (!File.Exists(f.FilePath)) continue;
+                var content = TextSanitizerService.Sanitize(await File.ReadAllTextAsync(f.FilePath, ct));
+                var hash    = ComputeHash(content);
+                var cls     = ClassifyFile(f, content);
+
+                // Match on (FileRoot, RelativePath): the project and global CLAUDE.md
+                // share RelativePath "CLAUDE.md" and would otherwise clobber each other,
+                // leaving only one of them in the DB.
+                //
+                // IgnoreQueryFilters: this upsert is keyed on the UNIQUE (FileRoot, RelativePath)
+                // index, which is not universe-scoped. Without it, a row owned by another universe
+                // reads as null and the insert below violates that index.
+                var existing = await db.MarkdownFiles.IgnoreQueryFilters()
+                    .FirstOrDefaultAsync(x => x.RelativePath == f.RelativePath && x.FileRoot == f.FileRoot, ct);
+
+                // Track raw `related:` paths for post-sync GUID resolution.
+                if (!string.IsNullOrEmpty(cls.Related))
+                    rawRelatedMap[(f.FileRoot, f.RelativePath)] = cls.Related;
+
+                if (existing == null)
+                {
+                    if (!dryRun)
+                    {
+                        db.MarkdownFiles.Add(new MarkdownFile
+                        {
+                            Id           = Guid.NewGuid(),
+                            FilePath     = f.FilePath,
+                            FileRoot     = f.FileRoot,
+                            RelativePath = f.RelativePath,
+                            FileName     = Path.GetFileName(f.FilePath),
+                            Category     = f.Category,
+                            Content      = content,
+                            ContentHash  = hash,
+                            LastSyncedAt = DateTime.UtcNow,
+                            SyncedBy     = "cli",
+                            Tier         = cls.Tier,
+                            Scope        = cls.Scope,
+                            Triggers     = cls.Triggers,
+                            AutoTier     = cls.AutoTier,
+                            UniverseId   = UniverseForFile(cls),
+                        });
+                        await db.SaveChangesAsync(ct);
+                    }
+                    inserted++;
+                }
+                else
+                {
+                    var universeId     = UniverseForFile(cls);
+                    var contentChanged = existing.ContentHash != hash;
+                    var classChanged   = existing.Tier != cls.Tier || existing.Scope != cls.Scope
+                                      || existing.Triggers != cls.Triggers || existing.AutoTier != cls.AutoTier
+                                      || existing.UniverseId != universeId;
+                    if (contentChanged || classChanged)
+                    {
+                        if (!dryRun)
+                        {
+                            if (contentChanged)
+                            {
+                                existing.FilePath    = f.FilePath;
+                                existing.Content     = content;
+                                existing.ContentHash = hash;
+                            }
+                            existing.Tier         = cls.Tier;
+                            existing.Scope        = cls.Scope;
+                            existing.Triggers     = cls.Triggers;
+                            existing.AutoTier     = cls.AutoTier;
+                            existing.UniverseId   = universeId;
+                            existing.LastSyncedAt = DateTime.UtcNow;
+                            existing.SyncedBy     = "cli";
+                            await db.SaveChangesAsync(ct);
+                        }
+                        updated++;
+                    }
+                    else
+                    {
+                        unchanged++;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                errors.Add($"{f.RelativePath}: {ex.Message}");
+            }
+        }
+
+        // Resolve raw `related:` relative paths → MarkdownFile.Id GUIDs now that all files are in the DB.
+        if (!dryRun && rawRelatedMap.Count > 0)
+        {
+            try { errors.AddRange(await ResolveRelatedIdsAsync(db, rawRelatedMap, ct)); }
+            catch (Exception ex) { errors.Add($"related-resolution: {ex.Message}"); }
+        }
+
+        return new(inserted, updated, unchanged, errors);
+    }
+
+    // ── Sync: CanonDocumentSections + NodeBibleSections → MarkdownFiles ───────
+    // DB-sourced sync: assembles content from the Truth-First DB tables and upserts
+    // into MarkdownFiles. DB content always wins over file-sync content — this is how
+    // hand-edits to .md files are detected and reverted to the canonical DB source.
+
+    public async Task<SyncResult> SyncFromCanonDbAsync(bool dryRun = false, CancellationToken ct = default)
+    {
+        var errors = new List<string>();
+        int inserted = 0, updated = 0, unchanged = 0;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // ── World-canon documents ────────────────────────────────────────────
+        // Path/default-tier resolution goes through CanonDocumentTypeRegistry — this used to
+        // be a hardcoded dict here (a 4th independent copy of the same type→path mapping) and
+        // it had drifted: UniverseCanon pointed at "docs/universes/CAUL.md", a file that no
+        // longer exists (real file is ENTOS.md), left over from an incomplete Caul→Entos rename.
+        const string defaultTier = "topic";
+
+        var docs = await db.CanonDocuments
+            .Include(d => d.Sections.OrderBy(s => s.SortKey))
+            .ToListAsync(ct);
+
+        foreach (var doc in docs)
+        {
+            var relPath = await typeRegistry.GetRelativePathAsync(doc.DocumentType, doc.UniverseId, ct);
+            if (relPath == null) continue;
+            var tier = defaultTier;
+            try
+            {
+                var assembled = AssembleFromSections(doc.Sections);
+                var hash      = ComputeHash(assembled);
+                // IgnoreQueryFilters — upsert on the non-universe-scoped unique index; see the
+                // matching note in SyncAllAsync.
+                var existing  = await db.MarkdownFiles.IgnoreQueryFilters()
+                    .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
+
+                // Tier/scope/triggers come from the type's own ExtraFrontMatter (the same data
+                // GenerateMdAsync stamps into the disk file's header) — the authoritative source.
+                // Fall back to parsing frontmatter out of the assembled section content only if the
+                // type declares nothing: an older doc might still carry it embedded in a "preamble"
+                // section (a workaround from before CanonDocumentTypes existed; harmless to keep
+                // honoring, since nothing currently depends on it once its type's ExtraFrontMatter
+                // is populated).
+                var typeFm  = await typeRegistry.GetFrontMatterAsync(doc.DocumentType, doc.UniverseId, ct);
+                var canonFm = ParseFrontmatter($"---\n{typeFm}---\n");
+                if (!canonFm.ContainsKey("tier") && !canonFm.ContainsKey("triggers"))
+                    canonFm = ParseFrontmatter(assembled);
+
+                var resolvedTier  = canonFm.TryGetValue("tier", out var fmT) && !string.IsNullOrWhiteSpace(fmT) ? NormalizeTier(fmT) : tier;
+                var resolvedScope = canonFm.TryGetValue("scope", out var fmS) ? NormalizeCsv(fmS) : "";
+                var resolvedTrigs = canonFm.TryGetValue("triggers", out var fmKw) && !string.IsNullOrWhiteSpace(fmKw) ? NormalizeCsv(fmKw) : "";
+                var resolvedAuto  = !canonFm.ContainsKey("tier");
+
+                var isNew = existing == null;
+                // UniverseId participates so a back-fill isn't skipped: it doesn't change the
+                // assembled content (and so not the hash), and a universe-scoped type like
+                // UniverseCraft has one CanonDocuments row per universe pointing at a DIFFERENT
+                // path, so the stamp is the only thing that separates them in MarkdownFiles.
+                var contentChanged = !isNew && (existing!.ContentHash != hash
+                    || existing.Triggers != resolvedTrigs
+                    || existing.Scope != resolvedScope
+                    || existing.UniverseId != doc.UniverseId);
+                if (isNew || contentChanged)
+                {
+                    if (!dryRun)
+                    {
+                        if (isNew)
+                        {
+                            db.MarkdownFiles.Add(new MarkdownFile
+                            {
+                                Id           = Guid.NewGuid(),
+                                FilePath     = Path.Combine(paths.DataRoot, relPath.Replace('/', Path.DirectorySeparatorChar)),
+                                FileRoot     = "project",
+                                RelativePath = relPath,
+                                FileName     = Path.GetFileName(relPath),
+                                Category     = "codex",
+                                Content      = assembled,
+                                ContentHash  = hash,
+                                LastSyncedAt = DateTime.UtcNow,
+                                SyncedBy     = "db-canon",
+                                Tier         = resolvedTier,
+                                Scope        = resolvedScope,
+                                Triggers     = resolvedTrigs,
+                                AutoTier     = resolvedAuto,
+                                // Base-scope types (CRAFT, DELIGHT, ENGINE) already carry
+                                // Universe.SharedId on their CanonDocuments row, so this is
+                                // correct for both shared and universe-scoped documents.
+                                UniverseId   = doc.UniverseId,
+                            });
+                            await db.SaveChangesAsync(ct);
+                        }
+                        else
+                        {
+                            existing!.Content      = assembled;
+                            existing.ContentHash   = hash;
+                            existing.LastSyncedAt  = DateTime.UtcNow;
+                            existing.SyncedBy      = "db-canon";
+                            existing.Tier          = resolvedTier;
+                            existing.Scope         = resolvedScope;
+                            existing.Triggers      = resolvedTrigs;
+                            existing.AutoTier      = resolvedAuto;
+                            existing.UniverseId    = doc.UniverseId;
+                            await db.SaveChangesAsync(ct);
+                        }
+                    }
+                    if (isNew) inserted++; else updated++;
+                }
+                else
+                {
+                    unchanged++;
+                }
+            }
+            catch (Exception ex)
+            {
+                errors.Add($"{relPath}: {ex.Message}");
+            }
+        }
+
+        // ── Node bibles (NodeBibleSections) ───────────────────────────────────
+        var nodeBibles = await db.NodeBibleSections
+            .Join(db.Nodes, s => s.NodeId, n => n.Id, (s, n) => new
+            {
+                s.NodeId,
+                s.SectionType,
+                s.Content,
+                NodeCode = (n.NodeCode ?? n.Slug).ToUpperInvariant(),
+                n.Slug,
+                n.UniverseId,
+            })
+            .ToListAsync(ct);
+
+        // Group by node — assemble "Full" section as primary, skip if no Full
+        var nodeGroups = nodeBibles
+            .GroupBy(r => r.NodeCode)
+            .ToList();
+
+        foreach (var group in nodeGroups)
+        {
+            var nodeCode = group.Key;
+            var full     = group.FirstOrDefault(r => r.SectionType == "Full");
+            if (full == null) continue;
+
+            var relPath  = $"docs/nodes/{nodeCode}.md";
+            try
+            {
+                var content  = full.Content;
+                var hash     = ComputeHash(content);
+                // IgnoreQueryFilters — upsert on the non-universe-scoped unique index; see the
+                // matching note in SyncAllAsync.
+                var existing = await db.MarkdownFiles.IgnoreQueryFilters()
+                    .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
+
+                var isNew          = existing == null;
+                var contentChanged = !isNew && (existing!.ContentHash != hash
+                    || existing.UniverseId != full.UniverseId);
+                if (isNew || contentChanged)
+                {
+                    if (!dryRun)
+                    {
+                        if (isNew)
+                        {
+                            db.MarkdownFiles.Add(new MarkdownFile
+                            {
+                                Id           = Guid.NewGuid(),
+                                FilePath     = Path.Combine(paths.DataRoot, "docs", "nodes", $"{nodeCode}.md"),
+                                FileRoot     = "project",
+                                RelativePath = relPath,
+                                FileName     = $"{nodeCode}.md",
+                                Category     = "node-bible",
+                                Content      = content,
+                                ContentHash  = hash,
+                                LastSyncedAt = DateTime.UtcNow,
+                                SyncedBy     = "db-canon",
+                                Tier         = "node",
+                                Scope        = nodeCode,
+                                Triggers     = "",
+                                AutoTier     = true,
+                                // A book bible belongs to its book's universe.
+                                UniverseId   = full.UniverseId,
+                            });
+                            await db.SaveChangesAsync(ct);
+                        }
+                        else
+                        {
+                            existing!.Content      = content;
+                            existing.ContentHash   = hash;
+                            existing.LastSyncedAt  = DateTime.UtcNow;
+                            existing.SyncedBy      = "db-canon";
+                            existing.Tier          = "node";
+                            existing.Scope         = nodeCode;
+                            existing.UniverseId    = full.UniverseId;
+                            await db.SaveChangesAsync(ct);
+                        }
+                    }
+                    if (isNew) inserted++; else updated++;
+                }
+                else
+                {
+                    unchanged++;
+                }
+            }
+            catch (Exception ex)
+            {
+                errors.Add($"{relPath}: {ex.Message}");
+            }
+        }
+
+        return new(inserted, updated, unchanged, errors);
+    }
+
+    private static string AssembleFromSections(IEnumerable<CanonDocumentSection> sections)
+    {
+        var sb = new System.Text.StringBuilder();
+        foreach (var s in sections)
+        {
+            if (s.SectionKey == "preamble")
+            {
+                sb.AppendLine(s.Content);
+                sb.AppendLine();
+            }
+            else
+            {
+                sb.AppendLine($"## {s.SectionTitle ?? s.SectionKey}");
+                sb.AppendLine();
+                sb.AppendLine(s.Content);
+                sb.AppendLine();
+            }
+        }
+        return sb.ToString().TrimEnd() + "\n";
+    }
+
+    // ── Doc Context Stack classification (tier / scope / triggers) ──────────
+
+    public readonly record struct DocClassification(string Tier, string Scope, string Triggers, bool AutoTier, string Related = "", string UniverseSlug = "");
+
+    // Registers are node-scoped — a story uses exactly ONE. Seed each register's
+    // scope to the node CODE(s) that use it; unknowns get empty scope (curate via
+    // frontmatter). A frontmatter `scope:` always overrides this.
+    private static readonly Dictionary<string, string> RegisterScope =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            ["CODA"]     = "BCODA",
+            ["GREY"]     = "ATTE",
+            ["VULTURES"] = "VATD",
+            // JOY / SORROW: assignment ambiguous — leave empty, curate via frontmatter.
+        };
+
+    // The ONLY universal docs (loaded for every context). Keep this list short —
+    // anything here costs context budget on every prose write. Promote others by
+    // adding `tier: always` to their frontmatter.
+    private static readonly HashSet<string> AlwaysFiles =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            "BIBLE.digest.md",
+        };
+
+    private static readonly HashSet<string> TriggerStopwords =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            // structural / project words
+            "the","and","for","with","from","that","this","into","story","node",
+            "glmz","canon","note","docs","memory","when","what","over","your","their",
+            "json","yaml","file","files","rule","rules","page","data",
+            // generic common words that produce false topic fires
+            "only","read","real","true","anti","also","very","each","just","here",
+            "there","then","than","them","they","have","this","that","will","would",
+            "holding","more","less","some","most","such","been","were","being",
+            "about","after","before","other","under","which","while","these","those",
+            // process / meta-doc filename tokens (these docs are about HOW to work, not story
+            // canon — they should not fire on generic prose words)
+            "reverse","order","audit","self","gateway","pass","draft","plan","fixes",
+            "update","status","version","snapshot","workflow","campaign","playbook",
+            "pattern","loop","brief","recall","sync","export","deploy","goal","goals",
+            "review","quality","engine","system","refactor","subsystem","feedback",
+            "first","book","story","outline","canon","service","descent",
+            // writer model tokens — appear in every beat goal / prose write context
+            "beat","beats","strands","strand","nodes","stage","panel","rebuild",
+            // filename-generic tokens — "readme" auto-seeded from gospel/README.md and fired
+            // Gospel context into PURSUED (Irish history) beats. A filename this generic can
+            // never be a meaningful topic trigger.
+            "readme","index","overview","summary","notes","template","config","settings",
+            // common English body/action words that appear in any prose passage
+            "ground","teeth","every","reversed","survives","survive","mandate",
+            "rewrite","revision","supreme","doctrine","bloodless","replaced",
+            "single","using","used","added","built","wrote","wrote","done","good",
+            "never","still","back","down","away","long","full","open","hand","head",
+            "body","line","move","keep","make","take","give","come","going","left",
+        };
+
+    /// <summary>
+    /// Classify a file for the Doc Context Stack. Frontmatter <c>tier:</c>/<c>scope:</c>/<c>triggers:</c>
+    /// win (AutoTier=false); otherwise infer from category/path (AutoTier=true):
+    /// register → node (scope from RegisterScope) · docs/nodes/&lt;CODE&gt;.md (or legacy docs/strands/) → node scope=CODE ·
+    /// AlwaysFiles → always · everything else → topic (triggers seeded from file name + description).
+    /// Pure function of (file, content) so re-sync is idempotent.
+    /// </summary>
+    private static DocClassification ClassifyFile(DiscoveredFile f, string content)
+    {
+        var fm = ParseFrontmatter(content);
+
+        // `related:` is resolved from RelativePaths → GUIDs in a post-sync pass;
+        // here we capture the raw CSV so the caller can store it for resolution.
+        var relatedRaw = fm.TryGetValue("related", out var rel) ? NormalizeCsv(rel) : "";
+
+        // A hand-authored `universe: <slug>` frontmatter key is an explicit, unambiguous claim
+        // about which Universe this doc's CONTENT belongs to (as opposed to `scope:`, which is
+        // about DCM routing). Threaded through to UniverseForFile below so universe-specific
+        // canon (docs/universes/<CODE>.md) never silently falls back to Universe.SharedId just
+        // because it isn't a node-tier doc — that fallback is what let SCRY's Entos_HISTORY.md
+        // and HORROR's/GLMZ's universe-facts docs leak into every other universe's DCM context.
+        var universeSlug = fm.TryGetValue("universe", out var uSlug) ? uSlug.Trim().ToLowerInvariant() : "";
+
+        var hasFmTier     = fm.TryGetValue("tier", out var fmTier) && !string.IsNullOrWhiteSpace(fmTier);
+        var hasFmTriggers = fm.TryGetValue("triggers", out var fmTriggers) && !string.IsNullOrWhiteSpace(fmTriggers);
+        // Either key alone means the author hand-authored explicit routing metadata — honor
+        // it. Previously this required BOTH keys, so files like CRAFT.md/DELIGHT.md (triggers:
+        // set, no tier:) silently fell through to the generic auto-seeded "topic" branch below
+        // and lost their hand-written trigger list.
+        if (hasFmTier || hasFmTriggers)
+        {
+            var scope    = fm.TryGetValue("scope", out var s) ? NormalizeCsv(s) : "";
+            var triggers = hasFmTriggers ? NormalizeCsv(fmTriggers!) : SeedTriggers(f, fm);
+            var tier     = hasFmTier ? NormalizeTier(fmTier!) : "topic";
+            return new(tier, scope, triggers, AutoTier: false, relatedRaw, universeSlug);
+        }
+
+        var fileName = Path.GetFileName(f.FilePath);
+
+        if (AlwaysFiles.Contains(fileName))
+            return new("always", "*", "", AutoTier: true, relatedRaw, universeSlug);
+
+        if (f.Category.Equals("register", StringComparison.OrdinalIgnoreCase))
+        {
+            var reg = Path.GetFileNameWithoutExtension(fileName);
+            return new("node", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true, relatedRaw, universeSlug);
+        }
+
+        // Node bibles live in docs/nodes/<CODE>.md (SS-A43); docs/strands/ kept for legacy layouts.
+        var relPath = f.RelativePath.Replace('\\', '/');
+        if (relPath.StartsWith("docs/nodes/", StringComparison.OrdinalIgnoreCase)
+            || relPath.StartsWith("docs/strands/", StringComparison.OrdinalIgnoreCase))
+        {
+            var code = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
+            return new("node", code, "", AutoTier: true, relatedRaw, universeSlug);
+        }
+
+        // Series coordination docs (docs/series/*.md) are cross-story, so they get their own
+        // eviction window (SeriesEvictAfterActions=8 vs topic's 4). Scope = series name stem,
+        // e.g. "GLMZ" from docs/series/GLMZ.md — used by ScopeMatches in DocContextService.
+        if (relPath.StartsWith("docs/series/", StringComparison.OrdinalIgnoreCase))
+        {
+            var scope = Path.GetFileNameWithoutExtension(fileName).ToUpperInvariant();
+            return new("series", scope, SeedTriggers(f, fm), AutoTier: true, relatedRaw, universeSlug);
+        }
+
+        return new("topic", "", SeedTriggers(f, fm), AutoTier: true, relatedRaw, universeSlug);
+    }
+
+    /// <summary>Parse top-level <c>key: value</c> pairs from a leading YAML frontmatter block.</summary>
+    private static Dictionary<string, string> ParseFrontmatter(string content)
+    {
+        var fm = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        if (string.IsNullOrEmpty(content)) return fm;
+        var text = content.Replace("\r\n", "\n");
+        if (!text.StartsWith("---\n")) return fm;
+        var end = text.IndexOf("\n---", 4, StringComparison.Ordinal);
+        if (end < 0) return fm;
+
+        foreach (var line in text[4..end].Split('\n'))
+        {
+            if (line.Length == 0 || line[0] is ' ' or '\t' or '#') continue;  // top-level keys only
+            var idx = line.IndexOf(':');
+            if (idx <= 0) continue;
+            var key = line[..idx].Trim();
+            var val = line[(idx + 1)..].Trim().Trim('"', '\'');
+            if (key.Length > 0) fm[key] = val;
+        }
+        return fm;
+    }
+
+    /// <summary>Seed topic trigger keywords from the file name + frontmatter description.</summary>
+    private static string SeedTriggers(DiscoveredFile f, Dictionary<string, string> fm)
+    {
+        var terms = new List<string>();
+
+        var baseName = Path.GetFileNameWithoutExtension(f.FilePath);
+        baseName = Regex.Replace(baseName, @"^(project|reference|feedback|user)_", "", RegexOptions.IgnoreCase);
+        terms.AddRange(baseName.Split(['_', '-', ' '], StringSplitOptions.RemoveEmptyEntries));
+
+        if (fm.TryGetValue("description", out var desc) && !string.IsNullOrWhiteSpace(desc))
+        {
+            // ALLCAPS acronyms (GLMZ, ELF, RMA, QUANTA, E.L.F.) + distinctive Capitalized proper
+            // nouns 5+ chars (Triumvirate, Substrate, Mnemosync). Common-word noise (Holding, Story,
+            // Before, …) is filtered by TriggerStopwords below, not by excluding mixed-case outright.
+            var head = desc.Length > 240 ? desc[..240] : desc;
+            foreach (Match m in Regex.Matches(head, @"\b([A-Z]{2,}|[A-Z](?:\.[A-Z])+\.?|[A-Z][a-z]{4,})\b"))
+                terms.Add(m.Value.Replace(".", ""));
+        }
+
+        var cleaned = terms
+            .Select(t => t.Trim().Trim('.', ',', '"', '\'', '(', ')', ':', ';'))
+            .Where(t => t.Length >= 4 && !TriggerStopwords.Contains(t))
+            .Select(t => t.ToLowerInvariant())
+            .Distinct()
+            .Take(12);
+        return string.Join(", ", cleaned);
+    }
+
+    private static string NormalizeTier(string t)
+    {
+        t = t.Trim().ToLowerInvariant();
+        return t is "always" or "node" or "series" or "topic" ? t : "topic";
+    }
+
+    private static string NormalizeCsv(string s) =>
+        string.Join(", ", (s ?? "").Split([',', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                                    .Distinct(StringComparer.OrdinalIgnoreCase));
+
+    // ── List ──────────────────────────────────────────────────────────────
+
+    public async Task<List<MarkdownFile>> ListAsync(CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // IgnoreQueryFilters: listing is a maintenance view, not generation context. Scoping it to
+        // the active universe would make `--list-markdown` silently hide most of the corpus.
+        return await db.MarkdownFiles.IgnoreQueryFilters()
+            .OrderBy(x => x.FileRoot)
+            .ThenBy(x => x.RelativePath)
+            .ToListAsync(ct);
+    }
+
+    // ── Search (keyword recall) ────────────────────────────────────────────
+
+    /// <summary>
+    /// Find tracked markdown files whose path, file name, or category contains the
+    /// keyword (case-insensitive). With <paramref name="includeContent"/> the body
+    /// text is searched too. This backs <c>ss --recall &lt;keyword&gt;</c>: it lets a
+    /// caller "call up" the select few .md files relevant to a topic from the DB
+    /// instead of keeping hundreds of tiny files materialized on disk.
+    /// </summary>
+    public async Task<List<MarkdownFile>> SearchAsync(string keyword, bool includeContent = false, CancellationToken ct = default)
+    {
+        var k = (keyword ?? "").Trim();
+        if (k.Length == 0) return new List<MarkdownFile>();
+        var like = $"%{k}%";
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // IgnoreQueryFilters — search is a maintenance view; see ListAsync.
+        return await db.MarkdownFiles.AsNoTracking().IgnoreQueryFilters()
+            .Where(x => EF.Functions.Like(x.RelativePath, like)
+                     || EF.Functions.Like(x.FileName, like)
+                     || EF.Functions.Like(x.Category, like)
+                     || (includeContent && EF.Functions.Like(x.Content, like)))
+            .OrderBy(x => x.FileRoot)
+            .ThenBy(x => x.RelativePath)
+            .ToListAsync(ct);
+    }
+
+    // ── Get (with optional point-in-time) ─────────────────────────────────
+
+    public async Task<MarkdownFile?> GetAsync(string relativePath, DateTime? asOf = null, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        if (asOf.HasValue && db.Database.IsSqlServer())
+        {
+            var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+            return await db.MarkdownFiles
+                .FromSqlRaw(
+                    $"SELECT {TemporalColumns} " +
+                    $"FROM MarkdownFiles FOR SYSTEM_TIME AS OF '{ts}' " +
+                    $"WHERE RelativePath = {{0}}",
+                    relativePath)
+                .IgnoreQueryFilters()
+                .FirstOrDefaultAsync(ct);
+        }
+
+        // IgnoreQueryFilters — point lookup by path, used by restore/inspection tooling.
+        return await db.MarkdownFiles.IgnoreQueryFilters()
+            .FirstOrDefaultAsync(x => x.RelativePath == relativePath, ct);
+    }
+
+    // ── Restore: DB → disk ────────────────────────────────────────────────
+
+    public async Task<RestoreResult> RestoreAsync(
+        string?  relativePath = null,
+        DateTime? asOf        = null,
+        bool     dryRun       = false,
+        CancellationToken ct  = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        List<MarkdownFile> rows;
+        if (relativePath != null)
+        {
+            var row = await GetAsync(relativePath, asOf, ct);
+            rows = row != null ? new List<MarkdownFile> { row } : new List<MarkdownFile>();
+        }
+        else if (asOf.HasValue && db.Database.IsSqlServer())
+        {
+            var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+            rows = await db.MarkdownFiles
+                .FromSqlRaw(
+                    $"SELECT {TemporalColumns} " +
+                    $"FROM MarkdownFiles FOR SYSTEM_TIME AS OF '{ts}'")
+                .IgnoreQueryFilters()
+                .ToListAsync(ct);
+        }
+        else
+        {
+            rows = await db.MarkdownFiles.IgnoreQueryFilters().ToListAsync(ct);
+        }
+
+        var errors  = new List<string>();
+        int written = 0, skipped = 0;
+
+        foreach (var row in rows)
+        {
+            try
+            {
+                var destPath = ResolveAbsolutePath(row.FileRoot, row.RelativePath);
+                if (destPath == null)
+                {
+                    errors.Add($"Cannot resolve path for root='{row.FileRoot}' rel='{row.RelativePath}'");
+                    continue;
+                }
+
+                var dir = Path.GetDirectoryName(destPath)!;
+                if (!dryRun)
+                {
+                    Directory.CreateDirectory(dir);
+                    await File.WriteAllTextAsync(destPath, row.Content, ct);
+                }
+                written++;
+            }
+            catch (Exception ex)
+            {
+                errors.Add($"{row.RelativePath}: {ex.Message}");
+                skipped++;
+            }
+        }
+
+        return new(written, skipped, errors);
+    }
+
+    // ── RelatedIds resolution ─────────────────────────────────────────────
+
+    /// <summary>
+    /// Second-pass resolution: for each file that declared <c>related:</c> in its frontmatter,
+    /// resolve the raw relative-path CSV into a CSV of <see cref="MarkdownFile.Id"/> GUIDs.
+    /// Project files take precedence when a path exists in multiple roots.
+    /// </summary>
+    /// <remarks>
+    /// Returns one message per <c>related:</c> path that did not resolve. These used to be
+    /// discarded by a bare <c>.Where(id =&gt; id != null)</c> with no log, so a link that pointed at
+    /// an undiscovered folder or a renamed file simply stopped existing — the declaring doc kept
+    /// working, its neighbour silently never cascaded, and nothing anywhere said so. (Live example
+    /// before this change: <c>docs/SOURCE.md</c> declared
+    /// <c>related: docs/CRAFT.md, docs/gospel/README.md</c> and the second half was dropped,
+    /// because <c>docs/gospel</c> was never enumerated by <see cref="DiscoverFiles"/>.)
+    /// </remarks>
+    private static async Task<List<string>> ResolveRelatedIdsAsync(
+        ProseDbContext db,
+        Dictionary<(string fileRoot, string relPath), string> rawRelatedMap,
+        CancellationToken ct)
+    {
+        var unresolved = new List<string>();
+        // IgnoreQueryFilters on both queries: link resolution runs once for the whole corpus during
+        // a sync, and a `related:` edge may legitimately cross universes (a universe doc pointing
+        // at shared CRAFT.md). Scoping this to the active universe would resolve fewer links every
+        // run and — now that misses are reported — turn a correct cross-universe link into a false
+        // sync error. Whether a linked doc is USED is decided later by the query filter at load
+        // time, which is the right place for it.
+        var allFiles = await db.MarkdownFiles.AsNoTracking().IgnoreQueryFilters()
+            .Select(m => new { m.Id, m.RelativePath, m.FileRoot })
+            .ToListAsync(ct);
+
+        // RelativePath may not be globally unique (project vs claude-user CLAUDE.md).
+        // For related: links, prefer the project root; fall back to whatever exists.
+        var lookup = allFiles
+            .GroupBy(m => m.RelativePath, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(
+                g => g.Key,
+                g => (g.FirstOrDefault(x => x.FileRoot == "project") ?? g.First()).Id,
+                StringComparer.OrdinalIgnoreCase);
+
+        foreach (var ((fileRoot, relPath), rawRelated) in rawRelatedMap)
+        {
+            var row = await db.MarkdownFiles.IgnoreQueryFilters()
+                .FirstOrDefaultAsync(m => m.RelativePath == relPath && m.FileRoot == fileRoot, ct);
+            if (row == null) continue;
+
+            var resolvedIds = new List<string>();
+            foreach (var p in rawRelated.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+            {
+                if (lookup.TryGetValue(p, out var id)) resolvedIds.Add(id.ToString());
+                else unresolved.Add($"{relPath}: unresolved related: '{p}' (no MarkdownFiles row — is its folder discovered?)");
+            }
+
+            var resolved = string.Join(", ", resolvedIds);
+            if (row.RelatedIds != resolved)
+            {
+                row.RelatedIds = resolved;
+                await db.SaveChangesAsync(ct);
+            }
+        }
+
+        return unresolved;
+    }
+
+    // ── Helpers ───────────────────────────────────────────────────────────
+
+    public string? ResolveAbsolutePath(string fileRoot, string relativePath)
+    {
+        var userHome   = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        var claudeUser = Path.Combine(userHome, ".claude");
+        var slug       = DeriveCloudeProjectSlug(paths.DataRoot);
+
+        var baseDir = fileRoot switch
+        {
+            "project"               => paths.DataRoot,
+            "claude-user"           => claudeUser,
+            "claude-project-memory" => Path.Combine(claudeUser, "projects", slug, "memory"),
+            _                       => null,
+        };
+
+        if (baseDir == null) return null;
+        return Path.Combine(baseDir, relativePath.Replace('/', Path.DirectorySeparatorChar));
+    }
+
+    private static string DeriveCloudeProjectSlug(string projectRoot)
+        => projectRoot.Replace(":", "-").Replace("\\", "-").Replace("/", "-");
+
+    private static string ToRelative(string root, string absolute)
+        => Path.GetRelativePath(root, absolute).Replace('\\', '/');
+
+    private static string ComputeHash(string content)
+    {
+        var bytes = SHA256.HashData(Encoding.UTF8.GetBytes(content));
+        return Convert.ToHexString(bytes).ToLowerInvariant();
+    }
+}

@@ -19,7 +19,7 @@ $body = Get-Content -LiteralPath $digest -Raw -Encoding UTF8
 if ([string]::IsNullOrWhiteSpace($body)) { Write-Output '{}'; exit 0 }
 
 $preamble = @'
-The following StreetSamurai Codex digest is the AUTHORITATIVE source of truth for what this
+The following Prose Codex digest is the AUTHORITATIVE source of truth for what this
 project IS, is NOT, and the laws that keep it coherent (engine invariants + Bushido Coda narrative
 continuity). Treat it as binding. Full detail lives in docs/BIBLE.md; the append-only
 docs/AMENDMENTS.md wins on conflict; stories + status live in docs/USER_STORIES.md. Do not violate

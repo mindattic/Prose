@@ -3,11 +3,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
-using StreetSamurai.Core.Extensions;
-using StreetSamurai.Core.Interfaces;
-using StreetSamurai.Core.Services;
+using Prose.Core.Extensions;
+using Prose.Core.Interfaces;
+using Prose.Core.Services;
 
-// ── StreetSamurai MCP server ─────────────────────────────────────────────────
+// ── Prose MCP server ─────────────────────────────────────────────────
 // Exposes the canon (characters, places, factions, books, outlines, motifs,
 // literary rules) plus the semantic index as Model Context Protocol tools so
 // Claude (Desktop / Code / API clients) can call into the world without the
@@ -33,7 +33,7 @@ if (args.Contains("--export-tools"))
 {
     var idx = Array.IndexOf(args, "--export-tools");
     var outPath = (idx + 1 < args.Length && !args[idx + 1].StartsWith("--")) ? args[idx + 1] : "docs/MCP_TOOLS.md";
-    var n = StreetSamurai.Mcp.ToolDocGenerator.Generate(outPath);
+    var n = Prose.Mcp.ToolDocGenerator.Generate(outPath);
     Console.Error.WriteLine($"[export-tools] Wrote {n} tools to {Path.GetFullPath(outPath)}");
     return;
 }
@@ -54,7 +54,7 @@ Log.Logger = new LoggerConfiguration()
         shared: true)
     .CreateLogger();
 
-// Multi-universe: honor a `--universe <slug>` arg (and the SS_UNIVERSE env var)
+// Multi-universe: honor a `--universe <slug>` arg (and the PROSE_UNIVERSE env var)
 // so an MCP session can target GLMZ or Scry independently of other processes
 // (SS-LAW-15). A switch_universe tool can also change it mid-session.
 UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
@@ -67,7 +67,7 @@ builder.Logging.AddSerilog();
 
 // All Core services — repositories, BookOutlineService, SemanticIndexService,
 // MotifService, WritingQualityService, etc.
-builder.Services.AddStreetSamuraiServices();
+builder.Services.AddProseServices();
 
 // MCP server with stdio transport. WithToolsFromAssembly scans this assembly
 // for [McpServerToolType] classes and registers each [McpServerTool] method.
@@ -78,6 +78,6 @@ builder.Services
 
 var mcpHost = builder.Build();
 // Construct the universe context up front so canon reads are scoped to the
-// requested universe (--universe / SS_UNIVERSE) from the first tool call.
+// requested universe (--universe / PROSE_UNIVERSE) from the first tool call.
 mcpHost.Services.GetRequiredService<IUniverseContext>();
 await mcpHost.RunAsync();

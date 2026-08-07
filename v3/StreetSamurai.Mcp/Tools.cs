@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Models;
-using StreetSamurai.Core.Services;
+using Prose.Core.Models;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
-// ── Tool surface for the StreetSamurai MCP server ────────────────────────────
+// ── Tool surface for the Prose MCP server ────────────────────────────
 // Every method here is a tool Claude can call to look up canon, search the
 // world graph, or pull writing-context blocks. Read-mostly: the only mutation
 // is plant_motif, which is normally user-confirmed in the Blazor UI but is
@@ -153,13 +153,13 @@ public class CanonTools
 [McpServerToolType]
 public class StoryTools
 {
-    private readonly StreetSamurai.Core.Interfaces.IBookRepository books;
-    private readonly StreetSamurai.Core.Interfaces.IChapterRepository chapters;
+    private readonly Prose.Core.Interfaces.IBookRepository books;
+    private readonly Prose.Core.Interfaces.IChapterRepository chapters;
     private readonly BookOutlineService outlines;
 
     public StoryTools(
-        StreetSamurai.Core.Interfaces.IBookRepository books,
-        StreetSamurai.Core.Interfaces.IChapterRepository chapters,
+        Prose.Core.Interfaces.IBookRepository books,
+        Prose.Core.Interfaces.IChapterRepository chapters,
         BookOutlineService outlines)
     {
         this.books = books;

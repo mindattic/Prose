@@ -1,5 +1,5 @@
 Add-Type -AssemblyName System.Data
-$connStr = "Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Integrated Security=True;"
+$connStr = "Server=(localdb)\MSSQLLocalDB;Database=Prose;Integrated Security=True;"
 $conn = New-Object System.Data.SqlClient.SqlConnection $connStr
 $conn.Open()
 $cmd = $conn.CreateCommand()
@@ -26,7 +26,7 @@ $conn.Close()
 
 Write-Host "Total beats: $($rows.Count)"
 
-$outDir = "D:\Projects\MindAttic\StreetSamurai\audit-outlines-2026-08-05\structural"
+$outDir = "D:\Projects\MindAttic\Prose\audit-outlines-2026-08-05\structural"
 $numChunks = 8
 $chunkSize = [Math]::Ceiling($rows.Count / $numChunks)
 

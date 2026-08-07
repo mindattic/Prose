@@ -1,4 +1,4 @@
-"""pyodbc connection factory for the StreetSamurai LocalDB."""
+"""pyodbc connection factory for the Prose LocalDB."""
 import pyodbc
 import pandas as pd
 from contextlib import contextmanager

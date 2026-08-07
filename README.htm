@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StreetSamurai — Engineering Reference</title>
+<title>Prose — Engineering Reference</title>
 <style>
   :root {
     --bg: #1a1a2e;
@@ -225,7 +225,7 @@
 
 <nav>
   <h2>Overview</h2>
-  <a href="#what">What StreetSamurai Is</a>
+  <a href="#what">What Prose Is</a>
   <a href="#architecture">Architecture</a>
   <a href="#prose-engine">Prose Engine Pipeline</a>
 
@@ -256,9 +256,9 @@
 
 <main>
 
-<h1>StreetSamurai</h1>
+<h1>Prose</h1>
 <p class="tagline">A literary fiction engine for a cyberpunk century.</p>
-<a class="live-link" href="https://streetsamurai.azurewebsites.net/" target="_blank">streetsamurai.azurewebsites.net &rarr;</a>
+<a class="live-link" href="https://prose.azurewebsites.net/" target="_blank">prose.azurewebsites.net &rarr;</a>
 
 <div class="callout">
   <p><a href="docs/BIBLE.md">docs/BIBLE.md</a> is the architecture bible (Codex L0). <a href="docs/AMENDMENTS.md">docs/AMENDMENTS.md</a> is the append-only change log (an amendment wins over the bible). <a href="docs/USER_STORIES.md">docs/USER_STORIES.md</a> is the goal table with acceptance tests. <a href="docs/rfc/">docs/rfc/</a> holds design notes.</p>
@@ -266,9 +266,9 @@
 
 <hr>
 
-<h2 id="what">What StreetSamurai Is</h2>
+<h2 id="what">What Prose Is</h2>
 
-<p>StreetSamurai is a C#/.NET 10 Blazor Server application &mdash; web-only, fully responsive &mdash; that takes a one-line seed to a published, reader-reviewed, canon-consistent audiobook and manuscript. It is the authoring stack for <em>Bushido Coda</em> and a hundred stories beyond it, set in the GLMZ: a 500-kilometer vertical megacity stacked along the western shore of Lake Michigan in 2225, where ferrocement waves rise a hundred stories above the lake and CorpoNations hold sovereignty the old nations could not.</p>
+<p>Prose is a C#/.NET 10 Blazor Server application &mdash; web-only, fully responsive &mdash; that takes a one-line seed to a published, reader-reviewed, canon-consistent audiobook and manuscript. It is the authoring stack for <em>Bushido Coda</em> and a hundred stories beyond it, set in the GLMZ: a 500-kilometer vertical megacity stacked along the western shore of Lake Michigan in 2225, where ferrocement waves rise a hundred stories above the lake and CorpoNations hold sovereignty the old nations could not.</p>
 
 <p>Canon is a database, not a folder of files. SQL Server holds 12,000+ named entities &mdash; characters, places, factions, CorpoNations, weapons, biotech, nano, documents &mdash; bound by a directional graph of relationships, vector embeddings, and a two-axis time model. On top sits the writing surface: a Strand to Beat hierarchy spanning 36 strands and 2,443+ beats with an outline-first workflow, a multi-provider review pipeline (Legion-backed, 11 LLM providers), storytelling-science analysis, a deterministic continuity suite, and an export pipeline (Word / EPUB / PDF / Markdown / audiobook). A reader-review panel of synthetic personas measures reception from data, not vibes. For agentic authoring, an MCP server exposes the entire canon to Claude so the model can call the world directly. The human approves canon and voice changes; the engine writes.</p>
 
@@ -276,14 +276,14 @@
 
 <h2 id="architecture">Architecture Overview</h2>
 
-<div class="arch">CLI (dotnet run --project v3/StreetSamurai.Blazor -- &lt;args&gt;)
+<div class="arch">CLI (dotnet run --project v3/Prose.Blazor -- &lt;args&gt;)
   |
   v
-Blazor Server host  (v3/StreetSamurai.Blazor/)
+Blazor Server host  (v3/Prose.Blazor/)
   |  Web UI (Razor components) + ~118 CLI handlers in Program.cs
   |
   v
-Core services  (v3/StreetSamurai.Core/)
+Core services  (v3/Prose.Core/)
   |  ~214 services: prose generation, review, continuity, export, embeddings
   |  EF Core -> SQL Server (LocalDB in dev, Azure SQL in prod)
   |
@@ -293,7 +293,7 @@ Database  (SQL Server)
   |  System-versioned (temporal) Beats + Strands tables
   |  EntityStateEvents ledger . Edges graph . ContinuityClaims
 
-MCP server  (v3/StreetSamurai.Mcp/ -- separate host)
+MCP server  (v3/Prose.Mcp/ -- separate host)
   |  195+ tools across 23 tool-class files
   +-- Exposes entire canon to Claude Desktop / Claude Code / any MCP client</div>
 
@@ -447,9 +447,9 @@ ss --workflow-status --all           # global utilization across all strands</co
 
 <p>The alias <code>ss</code> expands to:</p>
 
-<pre><code>dotnet run --project v3/StreetSamurai.Blazor -- &lt;args&gt;</code></pre>
+<pre><code>dotnet run --project v3/Prose.Blazor -- &lt;args&gt;</code></pre>
 
-<p>All ~118 handlers are dispatched from <code>v3/StreetSamurai.Blazor/Program.cs</code>.</p>
+<p>All ~118 handlers are dispatched from <code>v3/Prose.Blazor/Program.cs</code>.</p>
 
 <h3>Key commands</h3>
 
@@ -581,18 +581,18 @@ ss --workflow-status --all           # global utilization across all strands</co
 
 <h3>Connection</h3>
 
-<pre><code>Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;</code></pre>
+<pre><code>Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;</code></pre>
 
-<p>Windows Authentication &mdash; no <code>-U</code>/<code>-P</code> needed. Same as <code>appsettings.json</code> &rarr; <code>ConnectionStrings:StreetSamurai</code>.</p>
+<p>Windows Authentication &mdash; no <code>-U</code>/<code>-P</code> needed. Same as <code>appsettings.json</code> &rarr; <code>ConnectionStrings:Prose</code>.</p>
 
 <h3>Direct queries (read-only lookups)</h3>
 
 <p>For strand lists, scores, entity counts, and other read-only lookups, query the DB directly &mdash; returns in under a second:</p>
 
-<pre><code>sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "SELECT Name, Score FROM Strands WHERE IsCanon = 1 ORDER BY Score DESC"</code></pre>
+<pre><code>sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "SELECT Name, Score FROM Strands WHERE IsCanon = 1 ORDER BY Score DESC"</code></pre>
 
 <div class="callout">
-  <p>Only use <code>dotnet run --project v3/StreetSamurai.Blazor -- &lt;args&gt;</code> when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.</p>
+  <p>Only use <code>dotnet run --project v3/Prose.Blazor -- &lt;args&gt;</code> when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.</p>
 </div>
 
 <h3>Schema reference</h3>
@@ -623,8 +623,8 @@ ss --workflow-status --all           # global utilization across all strands</co
 
 <h3>Connection string resolution order</h3>
 <ol>
-  <li>Environment variable <code>ConnectionStrings__StreetSamurai</code></li>
-  <li><code>appsettings.json</code> &rarr; <code>ConnectionStrings:StreetSamurai</code></li>
+  <li>Environment variable <code>ConnectionStrings__Prose</code></li>
+  <li><code>appsettings.json</code> &rarr; <code>ConnectionStrings:Prose</code></li>
   <li>LocalDB fallback (dev default)</li>
 </ol>
 
@@ -638,17 +638,17 @@ ss --workflow-status --all           # global utilization across all strands</co
 dotnet restore
 dotnet run --project ApplyMigrations   # apply schema + seed data
 
-dotnet run --project StreetSamurai.Blazor
+dotnet run --project Prose.Blazor
 # -> https://localhost:7103/</code></pre>
 
 <p>Run the MCP server as its own host:</p>
 
-<pre><code>dotnet build StreetSamurai.Mcp/StreetSamurai.Mcp.csproj -c Release
-dotnet run --project StreetSamurai.Mcp --no-build --configuration Release</code></pre>
+<pre><code>dotnet build Prose.Mcp/Prose.Mcp.csproj -c Release
+dotnet run --project Prose.Mcp --no-build --configuration Release</code></pre>
 
 <p>Register in Claude Code:</p>
 
-<pre><code>claude mcp add streetsamurai dotnet run --project D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Mcp/StreetSamurai.Mcp.csproj --no-build --configuration Release</code></pre>
+<pre><code>claude mcp add prose dotnet run --project D:/Projects/MindAttic/Prose/v3/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release</code></pre>
 
 <p>After editing any <code>docs/*</code> Codex file:</p>
 
@@ -769,7 +769,7 @@ pwsh tools/codex.ps1 doctor   # must pass</code></pre>
 
 <h2 id="subsystems">The Subsystems</h2>
 
-<p>~214 services in <code>v3/StreetSamurai.Core/Services/</code>, grouped by subsystem.</p>
+<p>~214 services in <code>v3/Prose.Core/Services/</code>, grouped by subsystem.</p>
 
 <h3><span class="subsystem-label">1</span> Canon &amp; data layer</h3>
 <table>
@@ -960,7 +960,7 @@ pwsh tools/codex.ps1 doctor   # must pass</code></pre>
 
 <h2 id="ui">The UI Surface</h2>
 
-<p>Live at <a href="https://streetsamurai.azurewebsites.net/">streetsamurai.azurewebsites.net</a> &middot; local dev at <code>https://localhost:7103/</code></p>
+<p>Live at <a href="https://prose.azurewebsites.net/">prose.azurewebsites.net</a> &middot; local dev at <code>https://localhost:7103/</code></p>
 
 <h3>Writing &amp; story management</h3>
 <table>
@@ -1018,9 +1018,9 @@ pwsh tools/codex.ps1 doctor   # must pass</code></pre>
 
 <h2 id="mcp">The MCP Surface</h2>
 
-<p><code>StreetSamurai.Mcp</code> exposes <strong>195+ <code>[McpServerTool]</code> methods</strong> across 23 tool-class files. The complete per-tool reference is <a href="docs/MCP_TOOLS.md">docs/MCP_TOOLS.md</a>, generated by reflection and auto-regenerated by the pre-commit hook.</p>
+<p><code>Prose.Mcp</code> exposes <strong>195+ <code>[McpServerTool]</code> methods</strong> across 23 tool-class files. The complete per-tool reference is <a href="docs/MCP_TOOLS.md">docs/MCP_TOOLS.md</a>, generated by reflection and auto-regenerated by the pre-commit hook.</p>
 
-<pre><code>dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md</code></pre>
+<pre><code>dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md</code></pre>
 
 <table>
   <thead><tr><th>File</th><th>Tool family</th></tr></thead>
@@ -1061,7 +1061,7 @@ pwsh tools/codex.ps1 doctor   # must pass</code></pre>
     <tr><td>Storytelling science</td><td><code>NarrativeScienceService</code> (Will Storr framework), injected into prose context</td></tr>
     <tr><td>Export</td><td>Word / EPUB / PDF / Markdown / HTML via <code>DocxExportService</code> + <code>ManuscriptExportService</code></td></tr>
     <tr><td>Audio</td><td>ElevenLabs TTS; local alternatives via Kokoro or Chatterbox (<code>tools/</code>)</td></tr>
-    <tr><td>Agents</td><td><code>StreetSamurai.Mcp</code> &mdash; MCP server exposing canon to Claude clients</td></tr>
+    <tr><td>Agents</td><td><code>Prose.Mcp</code> &mdash; MCP server exposing canon to Claude clients</td></tr>
     <tr><td>Credentials</td><td>Cloud-native resolution via <code>MindAttic.Vault</code></td></tr>
   </tbody>
 </table>
@@ -1070,17 +1070,17 @@ pwsh tools/codex.ps1 doctor   # must pass</code></pre>
 
 <h2 id="repo">Repository Layout</h2>
 
-<pre><code>StreetSamurai/
+<pre><code>Prose/
 ├── v3/                          # Active engine
-│   ├── StreetSamurai.slnx
-│   ├── StreetSamurai.Shared/    # POCOs, enums, DTOs
-│   ├── StreetSamurai.Core/      # Canon services, generation, embeddings, review, continuity
+│   ├── Prose.slnx
+│   ├── Prose.Shared/    # POCOs, enums, DTOs
+│   ├── Prose.Core/      # Canon services, generation, embeddings, review, continuity
 │   │   ├── Services/            # ~214 services
 │   │   ├── Services/Operator/   # Agentic writer tool-use loop
 │   │   └── Data/                # EF entities, DbContext, Sql/ migration scripts
-│   ├── StreetSamurai.Blazor/    # Blazor Server host -- live site + ~118 CLI handlers
-│   ├── StreetSamurai.Mcp/       # Model Context Protocol server (~195+ tools)
-│   ├── StreetSamurai.UnitTests/ # NUnit + bUnit tests
+│   ├── Prose.Blazor/    # Blazor Server host -- live site + ~118 CLI handlers
+│   ├── Prose.Mcp/       # Model Context Protocol server (~195+ tools)
+│   ├── Prose.UnitTests/ # NUnit + bUnit tests
 │   └── ApplyMigrations/         # One-shot EF Core migration runner
 ├── tools/
 │   ├── codex.ps1                # Codex digest + doctor
@@ -1095,7 +1095,7 @@ pwsh tools/codex.ps1 doctor   # must pass</code></pre>
 
 <h2 id="migrations">Database Migrations</h2>
 
-<p>Raw T-SQL files live under <code>v3/StreetSamurai.Core/Data/Sql/</code>. All scripts are idempotent.</p>
+<p>Raw T-SQL files live under <code>v3/Prose.Core/Data/Sql/</code>. All scripts are idempotent.</p>
 
 <pre><code>dotnet run --project v3/ApplyMigrations</code></pre>
 
@@ -1103,13 +1103,13 @@ pwsh tools/codex.ps1 doctor   # must pass</code></pre>
 
 <h2 id="deploy">Deploying to Azure</h2>
 
-<p>Live site: <strong>streetsamurai.azurewebsites.net</strong> on Azure App Service against Azure SQL (Serverless GP). CI/CD runs <code>build &rarr; migrate &rarr; deploy</code> on every push to master via GitHub Actions. Full provisioning guide: <a href="infra/README.md">infra/README.md</a>.</p>
+<p>Live site: <strong>prose.azurewebsites.net</strong> on Azure App Service against Azure SQL (Serverless GP). CI/CD runs <code>build &rarr; migrate &rarr; deploy</code> on every push to master via GitHub Actions. Full provisioning guide: <a href="infra/README.md">infra/README.md</a>.</p>
 
 <hr>
 
 <h2 id="tests">Tests</h2>
 
-<pre><code>dotnet test v3/StreetSamurai.UnitTests   # NUnit + bUnit
+<pre><code>dotnet test v3/Prose.UnitTests   # NUnit + bUnit
 
 npx cypress run     # headless e2e
 npx cypress open    # interactive</code></pre>

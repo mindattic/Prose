@@ -1,4 +1,4 @@
-﻿# StreetSamurai Project Rules
+﻿# Prose Project Rules
 
 ## Conversation
 - A bare "do" / "do it" / "yes" from the user means "continue", "keep going", "proceed". Resume the current task without asking for clarification.
@@ -22,20 +22,20 @@ See global rules in ~/.claude/CLAUDE.md. The rate-limit-monitor skill enforces:
 For **read-only lookups** (node lists, scores, entity counts, etc.), query the local DB directly — returns in under a second:
 
 ```
-sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"
+sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "<query>"
 ```
 
 - Auth: Windows Authentication (no `-U`/`-P` needed)
-- Same server as `appsettings.json` → `ConnectionStrings.StreetSamurai`
+- Same server as `appsettings.json` → `ConnectionStrings.Prose`
 
-Only use `dotnet run --project v3/StreetSamurai.Cli -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
+Only use `dotnet run --project v3/Prose.Cli -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
 
 **Key schema facts for queries:**
 - **Beats → Nodes relationship:** Use `BeatNodes` table (fields: `NodeId`, `BeatId`, `SortKey`, `IsEnabled`)
   - Pattern: `Beats b JOIN BeatNodes bn ON b.Id = bn.BeatId JOIN Nodes n ON bn.NodeId = n.Id`
 - **Beat scoring:** Column is `Score` (not `MeanScore`), type `float`; NULL if unscored
 - **Example:** Count beats in a book: `SELECT COUNT(*) FROM BeatNodes WHERE NodeId = @nodeId AND IsEnabled = 1`
-- **HARD RULE — Book→Chapter→Beat hierarchy:** Always verify all three levels before assessing a book. Books with chapters ARE books, even if ChapterBeats is empty. Use `scripts/book-status-audit.sql` to audit any book: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -i scripts/book-status-audit.sql -v BookSlug="<slug>"`. Never say a book is "empty" or "planning stage only"—say "chapters structured, prose not yet written."
+- **HARD RULE — Book→Chapter→Beat hierarchy:** Always verify all three levels before assessing a book. Books with chapters ARE books, even if ChapterBeats is empty. Use `scripts/book-status-audit.sql` to audit any book: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -i scripts/book-status-audit.sql -v BookSlug="<slug>"`. Never say a book is "empty" or "planning stage only"—say "chapters structured, prose not yet written."
 
 **HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any book/beat removal must go through the CLI (`ss --beat delete`). If a book genuinely needs to be deleted, get explicit user confirmation naming the book by title and slug before touching the DB.
 
@@ -111,7 +111,7 @@ drop to beat altitude only where a finding points.
 ### Dynamic Context Memory (Dynamic Context Memory) — the named protocol
 
 **"Dynamic Context Memory" (Dynamic Context Memory)** is the canonical name for the beat-scoped, drift-free
-context loading protocol used in all StreetSamurai prose generation (new books AND edits
+context loading protocol used in all Prose prose generation (new books AND edits
 to existing books). Use this name when referring to the system in code comments, docs,
 and conversation.
 

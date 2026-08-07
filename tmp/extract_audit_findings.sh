@@ -2,7 +2,7 @@
 # Extracts the trailing JSON object from each --book-audit log (EF Core info: lines precede it)
 # and pulls out just the acronym_after_term / gloss_in_voice / lighter_regloss checks.
 set -uo pipefail
-cd "D:/Projects/MindAttic/StreetSamurai/tmp/audits"
+cd "D:/Projects/MindAttic/Prose/tmp/audits"
 
 for f in *.json; do
   code="${f%.json}"

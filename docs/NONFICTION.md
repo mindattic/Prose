@@ -1,6 +1,6 @@
 ---
 codex: SS
-project: StreetSamurai
+project: Prose
 code: NONFICTION
 layer: universe
 universe: nonfiction
@@ -27,7 +27,7 @@ related: docs/CRAFT.md
 ## 0. What NONFICTION is {#SS-NONFICTION-0}
 
 **NONFICTION** (formerly SOURCE, renamed 2026-08-04; formerly GSPL/"Gospel" before that) is
-StreetSamurai's citation-grounded **nonfiction** universe —
+Prose's citation-grounded **nonfiction** universe —
 home for ANY exhaustively researched, popular narrative nonfiction book where every factual claim
 traces to a real, verifiable source, "something you would use as an APA citation." It is not
 scoped to religious or historical subject matter specifically — that has simply been every book
@@ -339,7 +339,7 @@ Verify with one query before ever exporting: `SELECT SortKey, Title FROM Nodes W
 ParentNodeId=@book ORDER BY SortKey` — Notes and Glossary must be the last two rows.
 
 **Set `NodeCode` on every BookNode as soon as it's created — this controls where `--export-node`
-writes its files.** `ExportPathResolver` (in `StreetSamurai.Core/Services/ExportPathResolver.cs`)
+writes its files.** `ExportPathResolver` (in `Prose.Core/Services/ExportPathResolver.cs`)
 publishes flat under `<universe-export-dir>/<NodeCode>/<NodeCode> V<n>.docx` when `NodeCode` is
 set (e.g. `.../NONFICTION/MATTHEW/MATTHEW V17.docx`), matching the pre-made cover-art folders
 (`MATTHEW/`, `MARK/`, `LUKE/`, `JOHN/` under `R:\Desktop\EPub\MindAttic\NONFICTION\`). Without a
@@ -446,7 +446,7 @@ not `45`.
 
 ### 5g0. PowerShell pipe corruption when bulk-inserting beats (`--beat insert`/`--beat update --text -`)
 
-`Get-Content <file> -Raw | & dotnet run --project v3/StreetSamurai.Cli -- ... --text -` is the
+`Get-Content <file> -Raw | & dotnet run --project v3/Prose.Cli -- ... --text -` is the
 right pattern (Program.cs sets `Console.InputEncoding`/`OutputEncoding` to UTF-8 specifically for
 it — see the comment at the top of `Program.cs`), but **Windows PowerShell 5.1's own pipe-to-native-process
 encoding is a separate, independent setting** (`$OutputEncoding`, a preference variable, not the

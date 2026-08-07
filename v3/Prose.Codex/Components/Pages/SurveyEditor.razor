@@ -1,0 +1,87 @@
+@using Microsoft.EntityFrameworkCore
+@using Prose.Core.Data
+@using Prose.Core.Data.Entities
+@using Prose.Shared.Services
+@inject IDbContextFactory<ProseDbContext> DbFactory
+@inject ToastNotifier Toast
+
+@* Inline scoring widget shown beneath an unscored episode on the inbox. *@
+<div class="border-top border-secondary pt-2 mt-2">
+    <div class="row g-2 align-items-end">
+        <div class="col-md-3">
+            <label class="form-label small text-muted mb-1">Overall</label>
+            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="score">
+                @for (int i = 1; i <= 5; i++)
+                {
+                    <option value="@i">@(new string('★', i))</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label small text-muted mb-1">Pacing</label>
+            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="pacing">
+                <option value="">—</option>
+                @for (int i = 1; i <= 5; i++) { <option value="@i">@i</option> }
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label small text-muted mb-1">Kyle's voice</label>
+            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="voice">
+                <option value="">—</option>
+                @for (int i = 1; i <= 5; i++) { <option value="@i">@i</option> }
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label small text-muted mb-1">Notes (optional)</label>
+            <input class="form-control form-control-sm bg-black text-light border-secondary" @bind="notes"
+                   placeholder="One line. What landed, what didn't." />
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-sm btn-danger w-100" @onclick="SaveAsync" disabled="@saving">
+                <i class="bi bi-check-lg me-1"></i>Save
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public Episode Episode { get; set; } = default!;
+    [Parameter] public EventCallback OnSaved { get; set; }
+
+    private int score = 3;
+    private string? pacing;
+    private string? voice;
+    private string notes = "";
+    private bool saving;
+
+    private async Task SaveAsync()
+    {
+        if (saving) return;
+        saving = true;
+        try
+        {
+            await using var db = await DbFactory.CreateDbContextAsync();
+            db.EpisodeSurveys.Add(new EpisodeSurvey
+            {
+                EpisodeId   = Episode.Id,
+                Score       = score,
+                Pacing      = int.TryParse(pacing, out var p) ? p : (int?)null,
+                Voice       = int.TryParse(voice,  out var v) ? v : (int?)null,
+                Notes       = string.IsNullOrWhiteSpace(notes) ? null : notes.Trim(),
+                WasInbox    = true,
+                CompletedAt = DateTime.UtcNow,
+            });
+            await db.SaveChangesAsync();
+            Toast.Success("SURVEY-OK", "Scored.");
+            await OnSaved.InvokeAsync();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("SURVEY-FAIL", ex.Message);
+        }
+        finally
+        {
+            saving = false;
+        }
+    }
+}

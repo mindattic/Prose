@@ -1,6 +1,6 @@
 ﻿---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: SS
 layer: rfc
 status: in-progress

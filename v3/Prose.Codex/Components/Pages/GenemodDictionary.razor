@@ -1,0 +1,129 @@
+﻿@page "/genemods"
+@using Prose.Core.Models.Canon
+@inject GenemodRepository Repo
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+<div class="dict-layout">
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <FilterBar AllTags="allTags" @bind-Filter="filter" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+
+        </div>
+        <div class="dict-items">
+            @foreach (var g in SortedItems)
+            {
+                <div class="list-item text-light @(editing?.Name == g.Name ? "active" : "")" @onclick="() => Edit(g)">
+                    <div class="fw-bold small">@g.Name</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@g.Category</div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="dict-editor">
+        @if (editing != null)
+        {
+            <EditViewToggle RepoName="genemods" Title="@(isNew ? "New Genemods" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
+                <HeaderButtons>
+                    @if (!_confirmDelete)
+                    {
+                        <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
+                        @if (!isNew) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
+                    }
+                    else
+                    {
+                        <span class="small text-muted me-1">Archive Entry?</span>
+                        <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Yes</div></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false"><div class="btn-lbl">No</div></button>
+                    }
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 2; min-width: 200px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Brand Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.BrandName" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Product Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ProductName" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Target System</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TargetSystem" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 150px;"><div class="field-label">Source Organism</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.SourceOrganism" /></div>
+                        <div style="flex: 1; min-width: 150px;"><div class="field-label">Manufacturer</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Manufacturer" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Legality</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Legality" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Expression Time</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ExpressionTime" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Reversibility</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Reversibility" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="4" @bind="editing.Description"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Procedure</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.Procedure"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Social Perception</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.SocialPerception"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Aliases (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editAliases"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Side Effects (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editSideEffects"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
+                </ChildContent>
+            </EditViewToggle>
+        }
+        else
+        {
+            <div class="text-center text-muted py-5"><i class="bi bi-virus" style="font-size:3rem;"></i><p class="mt-2">Select a geneware modification or create a new one.</p></div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<GenemodData> items = [];
+    private GenemodData? editing;
+    private string originalName = "";
+    private string filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
+    private bool isNew, _confirmDelete;
+    private string editAliases = "", editSideEffects = "", editStoryHooks = "";
+
+    private List<GenemodData> FilteredItems
+    {
+        get
+        {
+            IEnumerable<GenemodData> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(g => g.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(g => selectedTags.All(t => g.Tags.Contains(t)));
+            return result.ToList();
+        }
+    }
+    private List<GenemodData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
+
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
+    private void AddNew() { editing = new GenemodData(); isNew = true; _confirmDelete = false; editAliases = ""; editSideEffects = ""; editStoryHooks = ""; }
+    private void Edit(GenemodData g) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_genemods", g.Id); editing = g; originalName = g.Name; isNew = false; _confirmDelete = false; editAliases = string.Join("\n", g.Aliases); editSideEffects = string.Join("\n", g.SideEffects); editStoryHooks = string.Join("\n", g.StoryHooks); if (!Nav.Uri.Contains("id=" + g.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + g.Id, forceLoad: false); }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; editing.Aliases = editAliases.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.SideEffects = editSideEffects.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.StoryHooks = editStoryHooks.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void DoDelete() { if (editing != null) { Repo.Delete(editing.Name); editing = null; items = Repo.GetAll(); _confirmDelete = false; } }
+    private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
+        if (firstRender && !Nav.Uri.Contains("new=true") && !Nav.Uri.Contains("id=") && items.Count > 0)
+        {
+            var lastId = "";
+            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_genemods") ?? ""; } catch { }
+            if (!string.IsNullOrEmpty(lastId))
+            {
+                var target = items.FirstOrDefault(x => x.Id == lastId);
+                if (target != null) { Edit(target); StateHasChanged(); }
+            }
+        }
+    }
+
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
+}

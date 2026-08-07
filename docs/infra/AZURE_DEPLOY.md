@@ -1,6 +1,6 @@
 # Azure SQL Database Deployment Guide
 
-Deploying StreetSamurai (a .NET 10 Blazor Server app) to Azure App Service against an Azure SQL Database, authenticated via system-assigned managed identity. This is the canonical Microsoft pattern — no workarounds, no interceptors, no passwords on disk.
+Deploying Prose (a .NET 10 Blazor Server app) to Azure App Service against an Azure SQL Database, authenticated via system-assigned managed identity. This is the canonical Microsoft pattern — no workarounds, no interceptors, no passwords on disk.
 
 **Time to complete:** ~45 minutes if everything works the first time. ~3 hours if you hit the gotchas in the FAQ below.
 
@@ -18,11 +18,11 @@ Deploying StreetSamurai (a .NET 10 Blazor Server app) to Azure App Service again
                      ▼
         ┌──────────────────────────┐         ┌──────────────────────────┐
         │ Azure App Service        │  AAD    │ Azure SQL Database       │
-        │ streetsamurai            ├─token──►│ StreetSamurai            │
+        │ prose            ├─token──►│ Prose            │
         │ (system-assigned MI)     │         │ (AAD-only auth)          │
         │                          │         │                          │
-        │ env: ConnectionStrings__ │         │ User: streetsamurai      │
-        │      StreetSamurai       │         │   db_datareader          │
+        │ env: ConnectionStrings__ │         │ User: prose      │
+        │      Prose       │         │   db_datareader          │
         │      = Authentication=   │         │   db_datawriter          │
         │        Active Directory  │         └──────────────────────────┘
         │        Default           │
@@ -41,12 +41,12 @@ Deploying StreetSamurai (a .NET 10 Blazor Server app) to Azure App Service again
 | **GitHub CLI** (`gh`) | Trigger + watch deploys | `winget install --id GitHub.cli -e` |
 | **SqlPackage** | Export LocalDB → bacpac, import → Azure SQL | `dotnet tool install -g Microsoft.SqlPackage` |
 | **PowerShell 7+** | Multi-line scripts behave better than Windows PowerShell 5.1 | Built-in on Win 11, or `winget install Microsoft.PowerShell` |
-| **.NET 10 SDK** | Build the app + publish ApplyMigrations | Usually present if you're developing StreetSamurai |
+| **.NET 10 SDK** | Build the app + publish ApplyMigrations | Usually present if you're developing Prose |
 
 Azure resources you should already have:
 
 - A subscription
-- An App Service named `streetsamurai` in resource group `MyApps`
+- An App Service named `prose` in resource group `MyApps`
 - (Optional) Existing Azure SQL Server — we'll create one if not.
 
 ---
@@ -90,8 +90,8 @@ Drop both values into `infra/azure-sql.parameters.json`:
 {
   "parameters": {
     "location":              { "value": "centralus" },              // matches App Service region
-    "sqlServerName":         { "value": "streetsamurai-sql" },      // becomes <name>.database.windows.net
-    "sqlDatabaseName":       { "value": "StreetSamurai" },
+    "sqlServerName":         { "value": "prose-sql" },      // becomes <name>.database.windows.net
+    "sqlDatabaseName":       { "value": "Prose" },
     "aadAdminLogin":         { "value": "you@tenant.onmicrosoft.com" },
     "aadAdminObjectId":      { "value": "<your AAD object id>" },
     "githubOidcSpObjectId":  { "value": "00000000-0000-0000-0000-000000000000" },  // unused for now
@@ -109,7 +109,7 @@ az deployment group create `
   --resource-group MyApps `
   --template-file infra/azure-sql.bicep `
   --parameters @infra/azure-sql.parameters.json `
-  --name streetsamurai-sql-initial
+  --name prose-sql-initial
 ```
 
 Takes ~3–5 minutes. Watch for `"provisioningState": "Succeeded"` in the JSON output. The Bicep creates:
@@ -121,7 +121,7 @@ Takes ~3–5 minutes. Watch for `"provisioningState": "Succeeded"` in the JSON o
 ### 1.5 Enable the App Service managed identity
 
 ```powershell
-az webapp identity assign --name streetsamurai --resource-group MyApps
+az webapp identity assign --name prose --resource-group MyApps
 ```
 
 Returns a JSON blob — copy the `principalId` for later reference. This identity is what the App Service presents to the SQL database; it has no permissions yet.
@@ -133,7 +133,7 @@ The `AllowAzureServices` firewall rule lets the App Service in but doesn't inclu
 Easiest: open the Azure Portal Query Editor for the database:
 
 ```
-https://portal.azure.com/#@/resource/subscriptions/<sub-id>/resourceGroups/MyApps/providers/Microsoft.Sql/servers/streetsamurai-sql/databases/StreetSamurai/queryEditor
+https://portal.azure.com/#@/resource/subscriptions/<sub-id>/resourceGroups/MyApps/providers/Microsoft.Sql/servers/prose-sql/databases/Prose/queryEditor
 ```
 
 It'll show a pink banner "Your IP address isn't allowed" with a one-click **Allowlist IP X.X.X.X** button. Click it.
@@ -143,15 +143,15 @@ It'll show a pink banner "Your IP address isn't allowed" with a one-click **Allo
 In the Portal Query Editor (or via PowerShell — see § 1.8), run:
 
 ```sql
-CREATE USER [streetsamurai] FROM EXTERNAL PROVIDER;
-ALTER ROLE db_datareader ADD MEMBER [streetsamurai];
-ALTER ROLE db_datawriter ADD MEMBER [streetsamurai];
+CREATE USER [prose] FROM EXTERNAL PROVIDER;
+ALTER ROLE db_datareader ADD MEMBER [prose];
+ALTER ROLE db_datawriter ADD MEMBER [prose];
 
 -- Verify:
-SELECT name, type_desc FROM sys.database_principals WHERE name = 'streetsamurai';
+SELECT name, type_desc FROM sys.database_principals WHERE name = 'prose';
 ```
 
-The name `[streetsamurai]` must match the App Service name exactly — Azure resolves it to the managed identity by display name. Expected result: one row showing `streetsamurai — EXTERNAL_USER`.
+The name `[prose]` must match the App Service name exactly — Azure resolves it to the managed identity by display name. Expected result: one row showing `prose — EXTERNAL_USER`.
 
 ### 1.8 (Alternative) GRANT via PowerShell + access token
 
@@ -160,11 +160,11 @@ If you don't want to use the Portal:
 ```powershell
 $token = az account get-access-token --resource https://database.windows.net/ --query accessToken -o tsv
 $conn = New-Object System.Data.SqlClient.SqlConnection
-$conn.ConnectionString = "Server=tcp:streetsamurai-sql.database.windows.net,1433;Database=StreetSamurai;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+$conn.ConnectionString = "Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 $conn.AccessToken = $token
 $conn.Open()
 $cmd = $conn.CreateCommand()
-$cmd.CommandText = "CREATE USER [streetsamurai] FROM EXTERNAL PROVIDER; ALTER ROLE db_datareader ADD MEMBER [streetsamurai]; ALTER ROLE db_datawriter ADD MEMBER [streetsamurai];"
+$cmd.CommandText = "CREATE USER [prose] FROM EXTERNAL PROVIDER; ALTER ROLE db_datareader ADD MEMBER [prose]; ALTER ROLE db_datawriter ADD MEMBER [prose];"
 $cmd.ExecuteNonQuery() | Out-Null
 $conn.Close()
 Write-Host "Granted."
@@ -177,13 +177,13 @@ Note the SQL is on one line. Multi-line `@"..."@` here-strings break PowerShell'
 **Use the Portal, not `az ... appsettings set` — the CLI mangles values containing spaces.** See FAQ.
 
 ```
-https://portal.azure.com/#@/resource/subscriptions/<sub-id>/resourceGroups/MyApps/providers/Microsoft.Web/sites/streetsamurai/configuration
+https://portal.azure.com/#@/resource/subscriptions/<sub-id>/resourceGroups/MyApps/providers/Microsoft.Web/sites/prose/configuration
 ```
 
-Find `ConnectionStrings__StreetSamurai` (or **add it** if missing). Set the value to:
+Find `ConnectionStrings__Prose` (or **add it** if missing). Set the value to:
 
 ```
-Server=tcp:streetsamurai-sql.database.windows.net,1433;Database=StreetSamurai;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;
+Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;
 ```
 
 Click **OK** → **Apply** at top → **Continue** on the restart prompt.
@@ -192,8 +192,8 @@ Click **OK** → **Apply** at top → **Continue** on the restart prompt.
 
 ```powershell
 az webapp config appsettings list `
-  --name streetsamurai --resource-group MyApps `
-  --query "[?name=='ConnectionStrings__StreetSamurai']" `
+  --name prose --resource-group MyApps `
+  --query "[?name=='ConnectionStrings__Prose']" `
   -o json
 ```
 
@@ -215,8 +215,8 @@ This brings schema + all rows in one shot.
 mkdir D:\tmp -ErrorAction SilentlyContinue | Out-Null
 sqlpackage `
   /Action:Export `
-  /SourceConnectionString:"Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;" `
-  /TargetFile:"D:\tmp\streetsamurai.bacpac" `
+  /SourceConnectionString:"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;" `
+  /TargetFile:"D:\tmp\prose.bacpac" `
   /OverwriteFiles:True
 ```
 
@@ -225,7 +225,7 @@ Takes 1–3 minutes. If you hit `Error SQL71501: Error validating element [dbo].
 **Drop the empty cloud database** (SqlPackage Import only works against a non-existent target):
 
 ```powershell
-az sql db delete --resource-group MyApps --server streetsamurai-sql --name StreetSamurai --yes
+az sql db delete --resource-group MyApps --server prose-sql --name Prose --yes
 ```
 
 **Import the bacpac** (recreates the DB at the right tier + with all your data):
@@ -235,9 +235,9 @@ $token = az account get-access-token --resource https://database.windows.net/ --
 
 sqlpackage `
   /Action:Import `
-  /SourceFile:"D:\tmp\streetsamurai.bacpac" `
-  /TargetServerName:"streetsamurai-sql.database.windows.net" `
-  /TargetDatabaseName:"StreetSamurai" `
+  /SourceFile:"D:\tmp\prose.bacpac" `
+  /TargetServerName:"prose-sql.database.windows.net" `
+  /TargetDatabaseName:"Prose" `
   /AccessToken:$token `
   /p:DatabaseEdition=GeneralPurpose `
   /p:DatabaseServiceObjective=GP_S_Gen5_2 `
@@ -255,11 +255,11 @@ Takes ~10–30 minutes depending on bacpac size + upload speed.
 ```powershell
 $token = az account get-access-token --resource https://database.windows.net/ --query accessToken -o tsv
 $conn = New-Object System.Data.SqlClient.SqlConnection
-$conn.ConnectionString = "Server=tcp:streetsamurai-sql.database.windows.net,1433;Database=StreetSamurai;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+$conn.ConnectionString = "Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 $conn.AccessToken = $token
 $conn.Open()
 $cmd = $conn.CreateCommand()
-$cmd.CommandText = "CREATE USER [streetsamurai] FROM EXTERNAL PROVIDER; ALTER ROLE db_datareader ADD MEMBER [streetsamurai]; ALTER ROLE db_datawriter ADD MEMBER [streetsamurai];"
+$cmd.CommandText = "CREATE USER [prose] FROM EXTERNAL PROVIDER; ALTER ROLE db_datareader ADD MEMBER [prose]; ALTER ROLE db_datawriter ADD MEMBER [prose];"
 $cmd.ExecuteNonQuery() | Out-Null
 $conn.Close()
 ```
@@ -269,11 +269,11 @@ $conn.Close()
 If you don't need to copy local data — just run the schema migrations against the new empty cloud database:
 
 ```powershell
-$env:ConnectionStrings__StreetSamurai = "Server=tcp:streetsamurai-sql.database.windows.net,1433;Database=StreetSamurai;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
+$env:ConnectionStrings__Prose = "Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
 dotnet run --project v3/ApplyMigrations
 ```
 
-ApplyMigrations applies every `*.sql` file under `v3/StreetSamurai.Core/Data/Sql/` in order. Idempotent — re-runs are safe.
+ApplyMigrations applies every `*.sql` file under `v3/Prose.Core/Data/Sql/` in order. Idempotent — re-runs are safe.
 
 ---
 
@@ -284,7 +284,7 @@ ApplyMigrations applies every `*.sql` file under `v3/StreetSamurai.Core/Data/Sql
 Local dev uses `C:\LocalNuGet` for private MindAttic packages (`MindAttic.Legion`, `MindAttic.Vault`). GitHub-hosted runners can't see that folder. Bundle the .nupkg files into the repo:
 
 ```powershell
-mkdir D:\Projects\MindAttic\StreetSamurai\lib\local-packages -Force | Out-Null
+mkdir D:\Projects\MindAttic\Prose\lib\local-packages -Force | Out-Null
 Copy-Item C:\LocalNuGet\MindAttic.Legion.<version>.nupkg lib\local-packages\
 Copy-Item C:\LocalNuGet\MindAttic.Vault.<version>.nupkg  lib\local-packages\
 ```
@@ -309,7 +309,7 @@ When you bump a MindAttic package version, drop the new `.nupkg` in `lib/local-p
 `.github/workflows/azure-deploy.yml` should be the simple two-stage build → deploy. No `migrate` job unless you've also set up OIDC federation (separate task, see `infra/README.md`).
 
 ```yaml
-name: Build and deploy StreetSamurai to Azure App Service
+name: Build and deploy Prose to Azure App Service
 
 on:
   push:
@@ -323,20 +323,20 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
         with: { dotnet-version: '10.x' }
-      - run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj
-      - run: dotnet publish v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj -c Release -o publish --no-restore
+      - run: dotnet restore v3/Prose.Blazor/Prose.Blazor.csproj
+      - run: dotnet publish v3/Prose.Blazor/Prose.Blazor.csproj -c Release -o publish --no-restore
       - uses: actions/upload-artifact@v4
-        with: { name: streetsamurai-app, path: publish/ }
+        with: { name: prose-app, path: publish/ }
 
   deploy:
     runs-on: windows-latest
     needs: build
     steps:
       - uses: actions/download-artifact@v4
-        with: { name: streetsamurai-app, path: publish/ }
+        with: { name: prose-app, path: publish/ }
       - uses: azure/webapps-deploy@v3
         with:
-          app-name: streetsamurai
+          app-name: prose
           slot-name: Production
           package: publish/
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
@@ -347,17 +347,17 @@ The `AZURE_WEBAPP_PUBLISH_PROFILE` secret comes from the App Service's "Get publ
 ### 3.3 Push and watch
 
 ```powershell
-cd D:\Projects\MindAttic\StreetSamurai
+cd D:\Projects\MindAttic\Prose
 git push
 gh run watch
 ```
 
-When both jobs show ✓, the new code is on `streetsamurai.azurewebsites.net`.
+When both jobs show ✓, the new code is on `prose.azurewebsites.net`.
 
 ### 3.4 Verify the site
 
 ```
-https://streetsamurai.azurewebsites.net/
+https://prose.azurewebsites.net/
 ```
 
 First request after a deploy: ~20–40 sec cold start (App Service spin-up + serverless SQL wake-from-pause). Subsequent requests are fast.
@@ -374,7 +374,7 @@ To bias toward cost over latency, increase `autoPauseDelayMinutes` to a smaller 
 
 ---
 
-## App Service Plan SKU — F1 vs B1+ for StreetSamurai
+## App Service Plan SKU — F1 vs B1+ for Prose
 
 The App Service plan tier matters a LOT for this app, more than typical web apps. The home page alone fires ~26 parallel `COUNT(*)` queries against the cloud DB, the warm-up populates the embedding cache (~10k entities), and the Quorum review pipeline boots eleven LLM providers. Memory footprint after warm-up is 400–700 MB; CPU spikes during page load.
 
@@ -400,7 +400,7 @@ The App Service plan tier matters a LOT for this app, more than typical web apps
 
 ### Why F1 will hurt this specific app
 
-- **Memory:** the 256 MB per-app ceiling is below StreetSamurai's warm-up footprint. The platform will OOM-kill the worker repeatedly — you'll see this as 502s + cold starts at random intervals.
+- **Memory:** the 256 MB per-app ceiling is below Prose's warm-up footprint. The platform will OOM-kill the worker repeatedly — you'll see this as 502s + cold starts at random intervals.
 - **CPU quota:** 60 min/day is *active CPU seconds*, not wall clock. A warm-up + a few page loads can burn 1–2 minutes. Heavy use during the day hits the cap by afternoon; **Azure auto-stops the app until midnight UTC**, returning HTTP 403 ("This web app is stopped") to every request.
 - **No AlwaysOn:** Every 20-minute idle period unloads the .NET worker. Next request pays a ~30s cold start *on top of* the serverless SQL wake-from-pause. ~40s before anything renders.
 - **Cascading stall:** the 26-parallel-COUNT homepage against a cold serverless DB on a memory-constrained worker is the recipe for "click → stall → 403 stopped" that triggers the daily quota cliff.
@@ -410,7 +410,7 @@ The App Service plan tier matters a LOT for this app, more than typical web apps
 - 1.75 GB RAM (≈7× more headroom than F1).
 - Unlimited CPU minutes — the per-request SLA still applies, but the daily quota disappears.
 - AlwaysOn keeps the worker warm. Only the serverless SQL pays cold-start on first hit, ~10s instead of ~40s.
-- Custom domain support if you ever want to point `streetsamurai.com` at it.
+- Custom domain support if you ever want to point `prose.com` at it.
 
 ### When B1 isn't enough
 
@@ -421,7 +421,7 @@ Bump to S1 if you want:
 
 P1v3+ is overkill for a hobby-scale app. Don't pay for it unless you've measured a need.
 
-### Recommended setting for StreetSamurai
+### Recommended setting for Prose
 
 For a single-author literary fiction engine with bursty usage, **B1 with AlwaysOn enabled** is the right floor. ~$13/mo. One-line bump (substitute your plan name):
 
@@ -431,8 +431,8 @@ az appservice plan list --resource-group MyApps --query "[].name" -o tsv
 
 # Bump the SKU + enable AlwaysOn + restart
 az appservice plan update --name <plan-name> --resource-group MyApps --sku B1
-az webapp config set --name streetsamurai --resource-group MyApps --always-on true
-az webapp restart --name streetsamurai --resource-group MyApps
+az webapp config set --name prose --resource-group MyApps --always-on true
+az webapp restart --name prose --resource-group MyApps
 ```
 
 Takes ~1 min. No data loss, no DNS change, same URL.
@@ -440,8 +440,8 @@ Takes ~1 min. No data loss, no DNS change, same URL.
 ### If money is genuinely tight
 
 Stay on F1 and accept the rough edges:
-- Pre-warm with `Invoke-WebRequest https://streetsamurai.azurewebsites.net/ -UseBasicParsing` before sessions.
-- When you see HTTP 403 "This web app is stopped", run `az webapp start --name streetsamurai --resource-group MyApps` and wait ~30s.
+- Pre-warm with `Invoke-WebRequest https://prose.azurewebsites.net/ -UseBasicParsing` before sessions.
+- When you see HTTP 403 "This web app is stopped", run `az webapp start --name prose --resource-group MyApps` and wait ~30s.
 - The CPU-minute quota resets at midnight UTC every night.
 - Expect 30–45s page loads on first hit after an idle period.
 
@@ -451,10 +451,10 @@ Stay on F1 and accept the rough edges:
 
 ### Schema changes
 
-Add a new `.sql` file to `v3/StreetSamurai.Core/Data/Sql/`, append the filename to the `migrations` array in `v3/ApplyMigrations/Program.cs`, then:
+Add a new `.sql` file to `v3/Prose.Core/Data/Sql/`, append the filename to the `migrations` array in `v3/ApplyMigrations/Program.cs`, then:
 
 ```powershell
-$env:ConnectionStrings__StreetSamurai = "Server=tcp:streetsamurai-sql.database.windows.net,1433;Database=StreetSamurai;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
+$env:ConnectionStrings__Prose = "Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
 dotnet run --project v3/ApplyMigrations
 ```
 
@@ -465,8 +465,8 @@ Then commit + push the code that depends on the new schema. GitHub Actions deplo
 `az login` first (as yourself, the AAD admin), then:
 
 ```powershell
-$env:ConnectionStrings__StreetSamurai = "Server=tcp:streetsamurai-sql.database.windows.net,1433;Database=StreetSamurai;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
-dotnet run --project v3/StreetSamurai.Blazor
+$env:ConnectionStrings__Prose = "Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
+dotnet run --project v3/Prose.Blazor
 ```
 
 `Active Directory Default` will pick up your az-cli credential automatically. Without setting the env var, `appsettings.json` falls back to LocalDB.
@@ -475,13 +475,13 @@ dotnet run --project v3/StreetSamurai.Blazor
 
 ```powershell
 # Production (no auto-login, generic error pages)
-az webapp config appsettings set --name streetsamurai --resource-group MyApps --settings ASPNETCORE_ENVIRONMENT=Production
+az webapp config appsettings set --name prose --resource-group MyApps --settings ASPNETCORE_ENVIRONMENT=Production
 
 # Development (DevAuth auto-login enabled, full stack traces in browser)
-az webapp config appsettings set --name streetsamurai --resource-group MyApps --settings ASPNETCORE_ENVIRONMENT=Development
+az webapp config appsettings set --name prose --resource-group MyApps --settings ASPNETCORE_ENVIRONMENT=Development
 
 # Always restart to pick up the new value
-az webapp restart --name streetsamurai --resource-group MyApps
+az webapp restart --name prose --resource-group MyApps
 ```
 
 **Don't leave the public-facing site in Development mode** — DevAuth logs anyone in as Administrator without a password.
@@ -490,14 +490,14 @@ az webapp restart --name streetsamurai --resource-group MyApps
 
 ## FAQ
 
-### Q: `az ... appsettings list --query "[?name=='ConnectionStrings__StreetSamurai'].value" -o tsv` shows the connection string truncated. What gives?
+### Q: `az ... appsettings list --query "[?name=='ConnectionStrings__Prose'].value" -o tsv` shows the connection string truncated. What gives?
 
 **A:** `-o tsv` lies about values containing internal spaces. The actual stored value is fine. Always verify with `-o json` instead:
 
 ```powershell
 az webapp config appsettings list `
-  --name streetsamurai --resource-group MyApps `
-  --query "[?name=='ConnectionStrings__StreetSamurai']" `
+  --name prose --resource-group MyApps `
+  --query "[?name=='ConnectionStrings__Prose']" `
   -o json
 ```
 
@@ -514,7 +514,7 @@ JSON shows the value byte-for-byte, no formatting lies. I wasted ~90 minutes cha
 **A:** A view in your LocalDB references columns that no longer exist on the underlying table (typical after denorm-column cleanups). Drop the stale view and re-export:
 
 ```powershell
-sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -E -Q "DROP VIEW IF EXISTS dbo.vw_Characters;"
+sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -E -Q "DROP VIEW IF EXISTS dbo.vw_Characters;"
 ```
 
 The view is broken in LocalDB too — dropping it doesn't cost anything live.
@@ -528,8 +528,8 @@ $token = az account get-access-token --resource https://database.windows.net/ --
 
 sqlpackage `
   /Action:Import `
-  /TargetServerName:"streetsamurai-sql.database.windows.net" `
-  /TargetDatabaseName:"StreetSamurai" `
+  /TargetServerName:"prose-sql.database.windows.net" `
+  /TargetDatabaseName:"Prose" `
   /AccessToken:$token `
   ...
 ```
@@ -549,13 +549,13 @@ Use `/TargetServerName + /TargetDatabaseName + /AccessToken` instead of `/Target
 **A:** Usually means a prior deploy left the App Service in a stuck state (file locks, partial extraction). Fix:
 
 ```powershell
-az webapp stop --name streetsamurai --resource-group MyApps
+az webapp stop --name prose --resource-group MyApps
 Start-Sleep -Seconds 20
 gh workflow run azure-deploy.yml --ref master
 Start-Sleep -Seconds 10
 gh run watch
 # After ✓:
-az webapp start --name streetsamurai --resource-group MyApps
+az webapp start --name prose --resource-group MyApps
 ```
 
 Stopping releases file locks; starting after the deploy ensures a clean process.
@@ -565,9 +565,9 @@ Stopping releases file locks; starting after the deploy ensures a clean process.
 **A:** ASP.NET Core unhandled exceptions are showing IIS's static error page instead of the .NET-side developer page. Two things to enable:
 
 ```powershell
-az webapp config appsettings set --name streetsamurai --resource-group MyApps `
+az webapp config appsettings set --name prose --resource-group MyApps `
   --settings ASPNETCORE_ENVIRONMENT=Development ASPNETCORE_DETAILEDERRORS=true
-az webapp restart --name streetsamurai --resource-group MyApps
+az webapp restart --name prose --resource-group MyApps
 ```
 
 Wait 30 sec, refresh — you'll get a yellow exception page with the actual stack trace. Switch back to Production after diagnosis.
@@ -579,7 +579,7 @@ Wait 30 sec, refresh — you'll get a yellow exception page with the actual stac
 For real logs, download the LogFiles archive:
 
 ```powershell
-az webapp log download --name streetsamurai --resource-group MyApps --log-file D:\tmp\logs.zip
+az webapp log download --name prose --resource-group MyApps --log-file D:\tmp\logs.zip
 Expand-Archive D:\tmp\logs.zip D:\tmp\logs -Force
 # eventlog.xml has the Windows EventLog entries; LogFiles\http\RawLogs\ has IIS requests
 ```
@@ -589,7 +589,7 @@ Expand-Archive D:\tmp\logs.zip D:\tmp\logs -Force
 **A:** The connection string is missing the `Authentication=Active Directory Default` keyword, so SqlClient tries to connect with no credentials. Fix the connection string in App Service via the Portal:
 
 ```
-Server=tcp:streetsamurai-sql.database.windows.net,1433;Database=StreetSamurai;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;
+Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;
 ```
 
 ### Q: `ArgumentException: Invalid value for key 'authentication'.`
@@ -598,16 +598,16 @@ Server=tcp:streetsamurai-sql.database.windows.net,1433;Database=StreetSamurai;Au
 1. The connection string value got truncated when stored, leaving a partial value like `Active Directory Managed` (instead of `Active Directory Managed Identity`). Re-save via the **Portal** (not CLI) and verify with `-o json`.
 2. Your deployed `Microsoft.Data.SqlClient` is too old to recognize that keyword. Check: `dotnet list <csproj> package --include-transitive | grep -i sqlclient`. You want 4.0+ for `Active Directory Default`, 5.x is best.
 
-### Q: `Principal 'streetsamurai' could not be found at this Azure Active Directory tenant.`
+### Q: `Principal 'prose' could not be found at this Azure Active Directory tenant.`
 
 **A:** The MI isn't enabled on the App Service yet, or AAD hasn't propagated the MI's display name. Run:
 
 ```powershell
-az webapp identity assign --name streetsamurai --resource-group MyApps
+az webapp identity assign --name prose --resource-group MyApps
 # Wait 60 seconds for AAD to propagate
 ```
 
-Then retry the `CREATE USER [streetsamurai] FROM EXTERNAL PROVIDER;` statement.
+Then retry the `CREATE USER [prose] FROM EXTERNAL PROVIDER;` statement.
 
 ### Q: `Cannot open server '<name>' requested by the login. Client with IP… is not allowed.`
 
@@ -617,7 +617,7 @@ Then retry the `CREATE USER [streetsamurai] FROM EXTERNAL PROVIDER;` statement.
 $ip = (Invoke-RestMethod ifconfig.me).Trim()
 az sql server firewall-rule create `
   --resource-group MyApps `
-  --server streetsamurai-sql `
+  --server prose-sql `
   --name 'my-laptop' `
   --start-ip-address $ip `
   --end-ip-address   $ip
@@ -631,7 +631,7 @@ az sql server firewall-rule create `
 
 **A:** App Service is in the **Stopped** state. Two common causes:
 
-1. **F1 daily CPU quota exhausted.** Free-tier App Services get 60 active CPU minutes per day. When you exceed that, Azure forcibly stops the app until midnight UTC. StreetSamurai's homepage burns CPU quickly (26 parallel COUNT queries + embedding cache warm-up + LLM provider init), so this happens easily on F1 with even moderate use.
+1. **F1 daily CPU quota exhausted.** Free-tier App Services get 60 active CPU minutes per day. When you exceed that, Azure forcibly stops the app until midnight UTC. Prose's homepage burns CPU quickly (26 parallel COUNT queries + embedding cache warm-up + LLM provider init), so this happens easily on F1 with even moderate use.
 
 2. **Manual stop.** If you ran `az webapp stop` earlier in a stop-deploy-start cycle and didn't follow up with `az webapp start`, the app stays stopped.
 
@@ -639,11 +639,11 @@ Confirm and fix:
 
 ```powershell
 # Check current state
-az webapp show --name streetsamurai --resource-group MyApps --query state -o tsv
+az webapp show --name prose --resource-group MyApps --query state -o tsv
 # → "Stopped" confirms the diagnosis
 
 # Start it back up
-az webapp start --name streetsamurai --resource-group MyApps
+az webapp start --name prose --resource-group MyApps
 ```
 
 If this is happening repeatedly (multiple times per day), you're hitting the F1 quota cliff. See § App Service Plan SKU — F1 vs B1+ — bumping to B1 (~$13/mo) eliminates the quota entirely and adds AlwaysOn support.
@@ -673,7 +673,7 @@ App Service also has a "Deployment Center → Deployments" UI in the Portal that
 **A:** `az webapp config appsettings set --settings KEY=VALUE` **replaces** the listed keys but doesn't touch others. Make sure you're not accidentally overwriting other settings by typo'ing a key name. Always verify with:
 
 ```powershell
-az webapp config appsettings list --name streetsamurai --resource-group MyApps --query "[].name" -o tsv | Sort-Object
+az webapp config appsettings list --name prose --resource-group MyApps --query "[].name" -o tsv | Sort-Object
 ```
 
 `-o tsv` is fine for **just the names** since names don't have spaces.
@@ -689,7 +689,7 @@ az webapp config appsettings list --name streetsamurai --resource-group MyApps -
 **A:** Drop the database first (SqlPackage Import won't overwrite an existing one), re-import, re-GRANT:
 
 ```powershell
-az sql db delete --resource-group MyApps --server streetsamurai-sql --name StreetSamurai --yes
+az sql db delete --resource-group MyApps --server prose-sql --name Prose --yes
 sqlpackage /Action:Import ...
 # Re-run the CREATE USER + GRANT block
 ```
@@ -730,7 +730,7 @@ No interceptors, no token plumbing in code, no workarounds.
 - `infra/README.md` — End-to-end deployment guide (includes the OIDC path for CI-driven migrations).
 - `.github/workflows/azure-deploy.yml` — Build + deploy pipeline.
 - `v3/ApplyMigrations/Program.cs` — Schema migration runner.
-- `v3/StreetSamurai.Core/Data/Sql/` — Raw `.sql` migration files in dated order.
+- `v3/Prose.Core/Data/Sql/` — Raw `.sql` migration files in dated order.
 
 ---
 

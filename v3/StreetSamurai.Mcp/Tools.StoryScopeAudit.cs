@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── StoryScope tools ──────────────────────────────────────────────────────────
 // Countermeasures for the measurable structural tells of AI fiction (StoryScope,
@@ -19,7 +19,7 @@ namespace StreetSamurai.Mcp;
 public class StoryScopeTools(
     StructuralBlueprintService blueprints,
     StoryScopeAuditService storyScopeAudit,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+    IDbContextFactory<ProseDbContext> dbFactory,
     NodeDocService nodeDoc,
     MarkdownFileService markdownFiles)
 {

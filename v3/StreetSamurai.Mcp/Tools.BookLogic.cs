@@ -2,11 +2,11 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
-using StreetSamurai.Core.Services.Audit;
+using Prose.Core.Data;
+using Prose.Core.Services;
+using Prose.Core.Services.Audit;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Story Outline + Logic Sweep tools ──────────────────────────────────────────
 //
@@ -20,7 +20,7 @@ namespace StreetSamurai.Mcp;
 public class BookLogicTools(
     NodeOutlineService outlineService,
     LogicSweepService logicSweepService,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 

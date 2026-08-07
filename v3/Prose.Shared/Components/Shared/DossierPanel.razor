@@ -1,0 +1,203 @@
+@using Prose.Core.Models
+@using Prose.Core.Services
+@inject WorldStateService World
+@inject NavigationManager Nav
+
+@* Reusable dossier-viewer panel. Embeds in EntityDetail's "Dossier" tab; was
+   the body of /dossier/{id}. Pure view — sources are listed in the inline note. *@
+
+<div class="dossier-panel">
+    <div class="d-flex justify-content-between align-items-start mb-3">
+        <div class="small text-muted">
+            Live view assembled from <code>WorldGraphService</code> + <code>ContinuityService</code> + chapter beats + canonical record.
+            No file backs this — it rebuilds on every read.
+        </div>
+        <div class="d-flex gap-3 align-items-end">
+            <div class="d-flex flex-column gap-1 align-items-end">
+                <label class="small text-muted">In-world cursor (chapter)</label>
+                <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" style="width:120px;"
+                       min="0" placeholder="(now)" value="@asOfInput" @onchange="OnAsOfChanged" />
+            </div>
+            <div class="d-flex flex-column gap-1 align-items-end">
+                <label class="small text-muted" title="Rewind: query SYSTEM_TIME AS OF this date">DB rewind</label>
+                <input type="datetime-local" class="form-control form-control-sm bg-dark text-light border-secondary" style="width:200px;"
+                       value="@sysTimeInput" @onchange="OnSysTimeChanged" />
+            </div>
+        </div>
+    </div>
+
+    @if (rewoundJson != null)
+    {
+        <div class="card bg-dark text-warning border-warning mb-3">
+            <div class="card-header border-warning small">
+                <i class="bi bi-clock-history me-1"></i>REWIND VIEW — record as the database knew it on @rewoundAt?.ToLocalTime().ToString("g")
+                <button class="btn btn-sm btn-outline-warning float-end" @onclick="ClearRewind">Return to live view</button>
+            </div>
+            <div class="card-body">
+                <pre class="text-light small" style="white-space:pre-wrap; max-height:400px; overflow:auto;">@rewoundJson</pre>
+            </div>
+        </div>
+    }
+
+    @if (dossier == null)
+    {
+        <div class="alert alert-warning small">Could not assemble a dossier for <code>@EntityId</code>.</div>
+    }
+    else
+    {
+        <ul class="nav nav-tabs mb-3 small">
+            <li class="nav-item"><a class="nav-link @(view == "structured" ? "active" : "")" href="javascript:void(0)" @onclick='() => view = "structured"'>Structured</a></li>
+            <li class="nav-item"><a class="nav-link @(view == "prompt" ? "active" : "")" href="javascript:void(0)" @onclick='() => view = "prompt"'>Prompt string</a></li>
+            <li class="nav-item"><a class="nav-link @(view == "json" ? "active" : "")" href="javascript:void(0)" @onclick='() => view = "json"'>JSON</a></li>
+        </ul>
+
+        @if (view == "structured")
+        {
+            <div class="card bg-dark text-light border-secondary mb-3">
+                <div class="card-header border-secondary"><strong>@dossier.Subject.Name</strong> <span class="text-muted small">— @dossier.Subject.Kind, as of @dossier.AsOf.Describe()</span></div>
+                <div class="card-body">
+                    <div class="row g-2 small">
+                        @foreach (var (k, v) in dossier.Subject.Properties.OrderBy(p => p.Key))
+                        {
+                            <div class="col-md-6"><span class="text-muted">@k:</span> <span>@v</span></div>
+                        }
+                    </div>
+                    @foreach (var sec in dossier.Subject.Sections)
+                    {
+                        <hr class="border-secondary my-2" />
+                        <div class="text-info small fw-bold">@sec.Title</div>
+                        <ul class="small mb-0">
+                            @foreach (var line in sec.Lines) { <li>@line</li> }
+                        </ul>
+                    }
+                </div>
+            </div>
+
+            @if (dossier.Now.HasAny)
+            {
+                <div class="card bg-dark text-light border-success mb-3">
+                    <div class="card-header border-success small text-success">CURRENT STATE</div>
+                    <div class="card-body small">
+                        @if (!string.IsNullOrEmpty(dossier.Now.Location)) { <div>location: <span class="text-info">@dossier.Now.Location</span></div> }
+                        @if (!string.IsNullOrEmpty(dossier.Now.Status))   { <div>status: <span class="text-info">@dossier.Now.Status</span></div> }
+                        @if (dossier.Now.Holding.Count > 0)               { <div>holding: <span class="text-info">@string.Join(", ", dossier.Now.Holding)</span></div> }
+                        @if (dossier.Now.Wearing.Count > 0)               { <div>wearing: <span class="text-info">@string.Join(", ", dossier.Now.Wearing)</span></div> }
+                        @if (!string.IsNullOrEmpty(dossier.Now.LastSeenChapter)) { <div>last seen: <span class="text-info">@dossier.Now.LastSeenChapter</span></div> }
+                    </div>
+                </div>
+            }
+
+            @if (dossier.Linked.Count > 0)
+            {
+                <div class="card bg-dark text-light border-secondary mb-3">
+                    <div class="card-header border-secondary small">LINKED (1-hop — gear, partners, employers, locations)</div>
+                    <div class="card-body small">
+                        @foreach (var l in dossier.Linked)
+                        {
+                            <a href="@($"/entity/{l.Id}?tab=dossier{AsOfQueryAmp()}")" class="badge bg-secondary me-1 mb-1 text-decoration-none">[@l.Kind] @l.Name</a>
+                        }
+                    </div>
+                </div>
+            }
+
+            @if (dossier.Facts.Count > 0)
+            {
+                <div class="card bg-dark text-light border-secondary mb-3">
+                    <div class="card-header border-secondary small">CANONICAL FACTS (continuity DB)</div>
+                    <div class="card-body small">
+                        @foreach (var f in dossier.Facts.OrderBy(f => f.Predicate))
+                        {
+                            <div><span class="text-info">@f.Predicate</span>: @f.Object @if (!string.IsNullOrEmpty(f.SourceLabel)) { <span class="text-muted">[@f.SourceLabel]</span> }</div>
+                        }
+                    </div>
+                </div>
+            }
+
+            @if (dossier.Timeline.Count > 0)
+            {
+                <div class="card bg-dark text-light border-secondary mb-3">
+                    <div class="card-header border-secondary small">TIMELINE</div>
+                    <div class="card-body small">
+                        @foreach (var e in dossier.Timeline)
+                        {
+                            <div class="mb-1">
+                                <span class="text-info">Ch@(e.ChapterNumber?.ToString() ?? "?") §@e.BeatIndex</span>
+                                <span class="text-muted">"@e.ChapterTitle"</span>: @e.Snippet
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+
+            @if (dossier.Adjacent.Count > 0)
+            {
+                <div class="card bg-dark text-light border-secondary mb-3">
+                    <div class="card-header border-secondary small">ADJACENT (2-hop — context only)</div>
+                    <div class="card-body small">
+                        @foreach (var a in dossier.Adjacent)
+                        {
+                            <a href="@($"/entity/{a.Id}?tab=dossier{AsOfQueryAmp()}")" class="badge bg-dark border border-secondary me-1 mb-1 text-decoration-none">[@a.Kind] @a.Name</a>
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else if (view == "prompt")
+        {
+            <pre class="bg-dark text-light border border-secondary p-3" style="white-space:pre-wrap;">@dossier.ToPromptString()</pre>
+        }
+        else if (view == "json")
+        {
+            <pre class="bg-dark text-light border border-secondary p-3" style="white-space:pre-wrap; font-size:.8rem;">@System.Text.Json.JsonSerializer.Serialize(dossier, new System.Text.Json.JsonSerializerOptions { WriteIndented = true })</pre>
+        }
+    }
+</div>
+
+@code {
+    [Parameter] public string EntityId { get; set; } = "";
+    [Parameter] public int? AsOf { get; set; }
+
+    private string asOfInput = "";
+    private string sysTimeInput = "";
+    private string view = "structured";
+    private Dossier? dossier;
+    private string? rewoundJson;
+    private DateTime? rewoundAt;
+
+    private void OnSysTimeChanged(ChangeEventArgs e)
+    {
+        var v = e.Value?.ToString() ?? "";
+        sysTimeInput = v;
+        if (string.IsNullOrEmpty(v)) { ClearRewind(); return; }
+        if (!DateTime.TryParse(v, out var t)) return;
+        rewoundJson = World.GetRecordJsonAsOf(EntityId, t);
+        rewoundAt = t;
+        if (rewoundJson == null)
+            rewoundJson = "(no record at that timestamp — entity didn't exist yet, or system-versioning isn't on this database)";
+    }
+
+    private void ClearRewind()
+    {
+        rewoundJson = null;
+        rewoundAt = null;
+        sysTimeInput = "";
+    }
+
+    protected override void OnParametersSet()
+    {
+        asOfInput = AsOf?.ToString() ?? "";
+        var cursor = AsOf.HasValue ? new AsOfCursor(null, AsOf, null) : AsOfCursor.Current;
+        dossier = World.GetDossier(EntityId, cursor);
+    }
+
+    private string AsOfQueryAmp() => AsOf.HasValue ? $"&asOf={AsOf}" : "";
+
+    private void OnAsOfChanged(ChangeEventArgs e)
+    {
+        var v = e.Value?.ToString() ?? "";
+        var url = string.IsNullOrEmpty(v) || !int.TryParse(v, out var n)
+            ? $"/entity/{EntityId}?tab=dossier"
+            : $"/entity/{EntityId}?tab=dossier&asOf={n}";
+        Nav.NavigateTo(url);
+    }
+}

@@ -1,10 +1,10 @@
-name: Build and deploy StreetSamurai to Azure App Service
+name: Build and deploy Prose to Azure App Service
 
 # Three-stage pipeline:
 #   build   — restore + publish the Blazor host as a deployable artifact
 #   migrate — apply schema + enable SYSTEM_VERSIONING against Azure SQL,
 #             authenticated via the GitHub OIDC service principal (db_ddladmin)
-#   deploy  — push the artifact to the streetsamurai App Service slot
+#   deploy  — push the artifact to the prose App Service slot
 #
 # The migrate job runs `v3/ApplyMigrations`: the idempotent Data/Sql/*.sql
 # column migrations, the nested-strand fold, then EnableSystemVersioningAsync()
@@ -48,15 +48,15 @@ jobs:
       # --property:Configuration=Release bakes the project path into project.assets.json
       # and causes CS0234/CS0246 on every Release build.
       - name: Restore dependencies
-        run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj --property:Configuration=Release
+        run: dotnet restore v3/Prose.Blazor/Prose.Blazor.csproj --property:Configuration=Release
 
       - name: Publish
-        run: dotnet publish v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj -c Release -o publish --no-restore
+        run: dotnet publish v3/Prose.Blazor/Prose.Blazor.csproj -c Release -o publish --no-restore
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: streetsamurai-app
+          name: prose-app
           path: publish/
 
   migrate:
@@ -64,7 +64,7 @@ jobs:
     needs: build
 
     # OIDC: id-token lets azure/login@v2 mint a federated token for the
-    # streetsamurai-github service principal (db_ddladmin on the SQL DB).
+    # prose-github service principal (db_ddladmin on the SQL DB).
     permissions:
       id-token: write
       contents: read
@@ -92,13 +92,13 @@ jobs:
         run: dotnet restore v3/ApplyMigrations/ApplyMigrations.csproj --property:Configuration=Release
 
       # ApplyMigrations resolves the connection string from
-      # ConnectionStrings__StreetSamurai (env wins over appsettings/LocalDB).
+      # ConnectionStrings__Prose (env wins over appsettings/LocalDB).
       # AZURE_SQL_CONNECTION carries Authentication=Active Directory Default;
       # the OIDC token from azure/login flows through DefaultAzureCredential.
       # Idempotent — safe to run on every master push.
       - name: Apply schema + enable temporal versioning
         env:
-          ConnectionStrings__StreetSamurai: ${{ secrets.AZURE_SQL_CONNECTION }}
+          ConnectionStrings__Prose: ${{ secrets.AZURE_SQL_CONNECTION }}
         run: dotnet run --project v3/ApplyMigrations/ApplyMigrations.csproj -c Release --no-restore
 
   deploy:
@@ -109,13 +109,13 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: streetsamurai-app
+          name: prose-app
           path: publish/
 
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v3
         with:
-          app-name: streetsamurai
+          app-name: prose
           slot-name: Production
           package: publish/
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}

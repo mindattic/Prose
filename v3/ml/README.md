@@ -1,4 +1,4 @@
-# StreetSamurai ML Prose Engine
+# Prose ML Prose Engine
 
 A self-adapting machine-learning layer that mines 21,985+ reader-persona reviews to improve
 beat-level prose quality — retroactively auditing existing beats and preventively injecting
@@ -73,7 +73,7 @@ ODBC Driver 17 installer: https://aka.ms/odbc17
 **Run once from `v3/ml/`:**
 
 ```powershell
-cd D:\Projects\MindAttic\StreetSamurai\v3\ml
+cd D:\Projects\MindAttic\Prose\v3\ml
 
 # 1. Create the virtual environment
 python -m venv .venv
@@ -92,11 +92,11 @@ mkdir -Force artifacts
 These steps assume setup is complete. Total wall-clock: 2–4 hours.
 
 ```powershell
-cd D:\Projects\MindAttic\StreetSamurai\v3\ml
+cd D:\Projects\MindAttic\Prose\v3\ml
 
 # Export persona OCEAN profiles for the persona preference model
 # (only needed once; re-export if PersonaLibrary is updated)
-cd ..\StreetSamurai.Cli
+cd ..\Prose.Cli
 dotnet run --project . -- --export-personas-json
 cd ..\..\..\ml
 
@@ -111,11 +111,11 @@ You can leave this running overnight. Output appends to `ml_nightly.log` in the 
 
 ```powershell
 # How many ML findings were written?
-sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "SELECT COUNT(*), Severity FROM Findings WHERE Summary LIKE 'ML-PROSE-SCORE%' GROUP BY Severity"
+sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "SELECT COUNT(*), Severity FROM Findings WHERE Summary LIKE 'ML-PROSE-SCORE%' GROUP BY Severity"
 
 # What did the model learn? (RMSE < 0.6 = good; < 0.5 = excellent)
 # Open in browser: http://127.0.0.1:5000
-.venv\Scripts\mlflow ui --backend-store-uri sqlite:///D:/Projects/MindAttic/StreetSamurai/v3/ml/artifacts/mlflow.db
+.venv\Scripts\mlflow ui --backend-store-uri sqlite:///D:/Projects/MindAttic/Prose/v3/ml/artifacts/mlflow.db
 ```
 
 ---
@@ -145,17 +145,17 @@ Phases in order:
 After Night 2, register the nightly run to fire at 02:00 every night automatically:
 
 ```powershell
-# Run from repo root (D:\Projects\MindAttic\StreetSamurai)
-schtasks /Create /TN "StreetSamurai ML Nightly" /TR "D:\Projects\MindAttic\StreetSamurai\v3\ml\orchestrate\run_nightly.bat" /SC DAILY /ST 02:00 /RU "%USERNAME%" /RL HIGHEST /F
+# Run from repo root (D:\Projects\MindAttic\Prose)
+schtasks /Create /TN "Prose ML Nightly" /TR "D:\Projects\MindAttic\Prose\v3\ml\orchestrate\run_nightly.bat" /SC DAILY /ST 02:00 /RU "%USERNAME%" /RL HIGHEST /F
 
 # Verify it was created
-schtasks /Query /TN "StreetSamurai ML Nightly"
+schtasks /Query /TN "Prose ML Nightly"
 
 # Manually trigger (to test before sleeping)
-schtasks /Run /TN "StreetSamurai ML Nightly"
+schtasks /Run /TN "Prose ML Nightly"
 ```
 
-To remove: `schtasks /Delete /TN "StreetSamurai ML Nightly" /F`
+To remove: `schtasks /Delete /TN "Prose ML Nightly" /F`
 
 ---
 
@@ -259,7 +259,7 @@ Revelation/Narrative, plus mode_certainty.
 
 Check these in MLflow after each nightly run:
 ```powershell
-.venv\Scripts\mlflow ui --backend-store-uri sqlite:///D:/Projects/MindAttic/StreetSamurai/v3/ml/artifacts/mlflow.db
+.venv\Scripts\mlflow ui --backend-store-uri sqlite:///D:/Projects/MindAttic/Prose/v3/ml/artifacts/mlflow.db
 ```
 
 ---

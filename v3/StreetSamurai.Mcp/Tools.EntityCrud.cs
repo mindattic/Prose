@@ -1,10 +1,10 @@
 using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Models.Canon;
-using StreetSamurai.Core.Services;
+using Prose.Core.Models.Canon;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Entity CRUD tools — create / upsert for every canon entity type ────────
 // Mirrors the read surface in Tools.cs + Tools.Encyclopedia.cs but adds write

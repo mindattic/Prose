@@ -1,6 +1,6 @@
 #!/bin/bash
 set -uo pipefail
-cd "D:/Projects/MindAttic/StreetSamurai"
+cd "D:/Projects/MindAttic/Prose"
 mkdir -p tmp/audits
 
 declare -A SLUGS
@@ -33,7 +33,7 @@ SLUGS[VIGL]="vigil-s-end-019f5767|scry"
 for code in "${!SLUGS[@]}"; do
   IFS='|' read -r slug universe <<< "${SLUGS[$code]}"
   echo "=== $code ($slug, $universe) ==="
-  dotnet run --project v3/StreetSamurai.Cli -- --book-audit --slug "$slug" --universe "$universe" --json \
+  dotnet run --project v3/Prose.Cli -- --book-audit --slug "$slug" --universe "$universe" --json \
     > "tmp/audits/${code}.json" 2> "tmp/audits/${code}.log"
   echo "  exit=$? done"
 done

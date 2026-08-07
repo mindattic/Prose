@@ -11,9 +11,9 @@ description: Economical node evaluation in one call — a sampled panel casts ch
 One call that grades a node and tells you what to fix — cheaply. The default is a **sampled two-tier** run (NOT a 1024-persona census): a stratified panel casts score-only ballots, those ballots double as the segment study, and only the most informative handful get upgraded to readable prose. The user invokes it as `/review-node <slug>` (slug optional).
 
 ## Fixed facts for this engine
-- DB: `Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;`
-- CLI host project: `D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Cli`
-- **Invoke the CLI with `dotnet run --project <proj> -- <args>` directly. Do NOT use `ss.cmd`** — the shim mis-parses its own `rem` lines when spawned from a non-interactive shell and exits 255. Use `--no-build` if a VS instance holds the build lock. The CLI (`StreetSamurai.Cli`) is a separate project — the Writer/Codex web host running never blocks CLI builds.
+- DB: `Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;`
+- CLI host project: `D:\Projects\MindAttic\Prose\v3\Prose.Cli`
+- **Invoke the CLI with `dotnet run --project <proj> -- <args>` directly. Do NOT use `ss.cmd`** — the shim mis-parses its own `rem` lines when spawned from a non-interactive shell and exits 255. Use `--no-build` if a VS instance holds the build lock. The CLI (`Prose.Cli`) is a separate project — the Writer/Codex web host running never blocks CLI builds.
 - **Providers: all trusted-4** (Claude, OpenAI, DeepSeek, Gemini), round-robined for model + temperament diversity. DeepSeek runs harsh and Gemini generous; the spread is expected — read the pooled mean, not any single provider. (Single chokepoint to narrow if ever needed: `NodeReviewService.ReviewProviderIds()`.)
 - Reviews are **psychometric-grounded**: each persona reviews through its OCEAN/HEXACO/MBTI/Enneagram/DISC profile (delivered by the Legion package, injected via `BuildWhoBlock`).
 - Reviews fingerprint the exact text via `ContentHash`. Pool/score ALWAYS by the ContentHash the run produced.
@@ -58,7 +58,7 @@ A score needs precision, not volume: with population SD ≈ 8, a sample of ~120 
 Routes review ballots to a local Ollama model instead of the paid cloud panel. The whole
 review machinery (1024 personas, psychometric profiles, ballots, clustering, scoring,
 synopsis) is unchanged — only the final HTTP hop changes. Cloud and local transports are
-separate classes (`CloudReviewLlm` / `LocalReviewLlm` in `StreetSamurai.Core/Services/Local/`);
+separate classes (`CloudReviewLlm` / `LocalReviewLlm` in `Prose.Core/Services/Local/`);
 the cloud path and MindAttic.Legion itself are untouched.
 
 **One-time setup (RTX 3080 Ti, 12 GB):**
@@ -93,7 +93,7 @@ dotnet run --project <proj> --no-build -- --review-node --slug <slug> --local
 
 ## Reference: pooled-stats PowerShell skeleton
 ```powershell
-$cs='Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;'
+$cs='Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;'
 Add-Type -AssemblyName System.Data
 # newest hash:  SELECT TOP 1 ContentHash FROM NodeReviews WHERE NodeId=@nid ORDER BY ReviewedAt DESC
 # pooled:       latest review per persona for that hash -> AVG/STDEV/COUNT, CI = 1.96*SD/sqrt(n)

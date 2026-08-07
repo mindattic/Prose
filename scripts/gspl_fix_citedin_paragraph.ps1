@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'   # fail loudly: a SqlException is otherwise non-terminating
 $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 Add-Type -AssemblyName System.Data
-$conn = New-Object System.Data.SqlClient.SqlConnection("Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;")
+$conn = New-Object System.Data.SqlClient.SqlConnection("Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;")
 $conn.Open()
 function Sha256Hex([string]$t){$s=[System.Security.Cryptography.SHA256]::Create();([System.BitConverter]::ToString($s.ComputeHash([System.Text.Encoding]::UTF8.GetBytes($t.Trim()))) -replace '-','').ToLower()}
 $cmd=$conn.CreateCommand()

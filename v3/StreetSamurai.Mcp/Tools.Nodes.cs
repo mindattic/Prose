@@ -2,11 +2,11 @@
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Data.Entities;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Data.Entities;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Node tools — unified beat/node schema ──────────────────────────────
 // Mirrors the NodeWorkbenchService surface, exposed to chat-side callers.
@@ -21,7 +21,7 @@ namespace StreetSamurai.Mcp;
 public class NodeTools
 {
     private readonly NodeWorkbenchService workbench;
-    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly ElevenLabsTtsService tts;
     private readonly NodeBibleService bible;
     private readonly ProseReflowService reflow;
@@ -34,11 +34,11 @@ public class NodeTools
     private readonly CoverPromptService coverPrompts;
     private readonly CoverImageService coverImages;
     private readonly CoverTitleCompositorService titleCompositor;
-    private readonly StreetSamurai.Core.Interfaces.IPathProvider paths;
+    private readonly Prose.Core.Interfaces.IPathProvider paths;
 
     public NodeTools(
         NodeWorkbenchService workbench,
-        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        IDbContextFactory<ProseDbContext> dbFactory,
         ElevenLabsTtsService tts,
         NodeBibleService bible,
         ProseReflowService reflow,
@@ -51,7 +51,7 @@ public class NodeTools
         CoverPromptService coverPrompts,
         CoverImageService coverImages,
         CoverTitleCompositorService titleCompositor,
-        StreetSamurai.Core.Interfaces.IPathProvider paths)
+        Prose.Core.Interfaces.IPathProvider paths)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;

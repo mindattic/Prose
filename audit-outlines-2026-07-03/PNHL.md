@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: PNHL
 layer: audit
 title: Pinhole — Structural Audit

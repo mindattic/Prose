@@ -1,0 +1,336 @@
+@page "/recordings"
+@attribute [Authorize(Policy = MaPolicies.Admin)]
+@using Microsoft.EntityFrameworkCore
+@using Prose.Core.Data
+@using Prose.Core.Interfaces
+@using Prose.Core.Services
+@using Prose.Shared.Services
+@using BookM = Prose.Core.Models.Book
+@using ChapterM = Prose.Core.Models.Chapter
+@using EpisodeEntity = Prose.Core.Data.Entities.Episode
+@inject IBookRepository BookRepo
+@inject IChapterRepository ChapterRepo
+@inject ChapterRecordingService RecordingSvc
+@inject IDbContextFactory<ProseDbContext> DbFactory
+@inject ElevenLabsTtsService Tts
+@inject SettingsService Settings
+@inject NavigationManager Nav
+@inject ToastNotifier Toast
+
+<div class="container py-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h4 class="text-danger mb-0"><i class="bi bi-mic-fill me-2"></i>Recordings</h4>
+            <div class="text-muted small">Pearl-necklace narration. Each chapter is a recordable episode; each beat is an editable pearl.</div>
+        </div>
+        <div class="d-flex gap-2">
+            <a href="/listen" class="btn btn-sm btn-outline-info">
+                <i class="bi bi-headphones me-1"></i>Stand-alone episodes
+            </a>
+            <a href="/inbox" class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-inboxes me-1"></i>Inbox
+            </a>
+        </div>
+    </div>
+
+    <div class="mb-3 d-flex align-items-end gap-2 flex-wrap">
+        <div style="min-width:240px;">
+            <label class="form-label small text-muted mb-1">Narrator voice</label>
+            <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="selectedVoiceId">
+                @if (voices.Count == 0)
+                {
+                    <option value="@defaultVoiceId">Loading voices…</option>
+                }
+                else
+                {
+                    @foreach (var v in voices)
+                    {
+                        <option value="@v.VoiceId">@v.Name @(v.VoiceId == defaultVoiceId ? "(default)" : "")</option>
+                    }
+                }
+            </select>
+        </div>
+    </div>
+
+    @if (loading)
+    {
+        <div class="text-muted">Loading books…</div>
+    }
+    else if (books.Count == 0)
+    {
+        <div class="card bg-dark border-secondary text-center p-5 text-muted">
+            No books in the project. <a href="/books">Make one</a>.
+        </div>
+    }
+    else
+    {
+        @foreach (var b in books)
+        {
+            var bookGuid = TryParseId(b.Id);
+            var bookCh = bookGuid is { } bg ? recordingsByBook.GetValueOrDefault(bg) ?? new() : new();
+            // "Complete" means every chapter is ready AND has zero stale
+            // beats. A chapter with stale beats produces a combined audio with
+            // missing paragraphs — not something to roll up into a book audio.
+            var bookComplete = b.ChapterIds.Count > 0
+                && b.ChapterIds.All(cid => bookCh.Any(r => r.ChapterId == cid
+                    && r.Status == "ready"
+                    && (r.Beats == null || !r.Beats.Any(bt => bt.Stale))));
+            var bookStaleCount = bookCh.Sum(r => r.Beats?.Count(bt => bt.Stale) ?? 0);
+
+            <div class="card bg-dark border-secondary mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div>
+                            <h5 class="text-info mb-1"><i class="bi bi-book me-2"></i>@b.Title</h5>
+                            <div class="text-muted small">
+                                @b.ChapterIds.Count chapter(s) ·
+                                @bookCh.Count(r => r.Status == "ready") ready ·
+                                @bookCh.Count(r => r.Status == "narrating" || r.Status == "generating") in progress
+                                @if (bookStaleCount > 0)
+                                {
+                                    <span class="text-danger ms-2"><i class="bi bi-exclamation-triangle me-1"></i>@bookStaleCount stale beat(s)</span>
+                                }
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            @if (bookComplete && bookGuid.HasValue)
+                            {
+                                <button class="btn btn-sm btn-outline-success" @onclick="() => ExportBookAsync(bookGuid.Value)" disabled="@working">
+                                    <i class="bi bi-collection-play me-1"></i>String chapters into book audio
+                                </button>
+                            }
+                        </div>
+                    </div>
+
+                    @if (b.ChapterIds.Count == 0)
+                    {
+                        <div class="text-muted small fst-italic">No chapters yet.</div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-dark table-sm align-middle mb-0">
+                                <thead>
+                                    <tr class="text-muted small">
+                                        <th style="width:40px;">#</th>
+                                        <th>Chapter</th>
+                                        <th style="width:120px;">Status</th>
+                                        <th style="width:80px;">Beats</th>
+                                        <th style="width:320px;">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                @for (int i = 0; i < b.ChapterIds.Count; i++)
+                                {
+                                    var cid = b.ChapterIds[i];
+                                    var chapter = chapterById.GetValueOrDefault(cid);
+                                    var rec = bookCh.FirstOrDefault(r => r.ChapterId == cid);
+                                    var n = i + 1;
+                                    <tr>
+                                        <td class="text-muted">@n</td>
+                                        <td>
+                                            @if (chapter != null)
+                                            {
+                                                <div class="text-light">@chapter.Title</div>
+                                                <div class="text-muted small">@(chapter.Synopsis?.Length > 90 ? chapter.Synopsis[..90] + "…" : chapter.Synopsis)</div>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-danger small">missing chapter @cid</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (rec == null)
+                                            {
+                                                <span class="badge bg-secondary">not recorded</span>
+                                            }
+                                            else
+                                            {
+                                                var staleHere = rec.Beats?.Count(bt => bt.Stale) ?? 0;
+                                                <span class="badge bg-@StatusColor(rec.Status)">@rec.Status</span>
+                                                @if (staleHere > 0)
+                                                {
+                                                    <span class="badge bg-danger ms-1" title="Beats whose prose drifted past the audio — re-record to repair.">@staleHere stale</span>
+                                                }
+                                                @if (rec.CharsNarrated > 0)
+                                                {
+                                                    <div class="text-muted small mt-1">@rec.CharsNarrated.ToString("N0") chars</div>
+                                                }
+                                            }
+                                        </td>
+                                        <td class="text-muted">@(rec?.Beats?.Count ?? 0)</td>
+                                        <td>
+                                            <div class="d-flex gap-1 flex-wrap">
+                                                <a href="@($"/write/{b.Id}")" class="btn btn-sm btn-outline-secondary" title="Edit in writer">
+                                                    <i class="bi bi-pencil"></i>
+                                                </a>
+                                                @if (rec == null)
+                                                {
+                                                    <button class="btn btn-sm btn-outline-info" @onclick="() => RecordChapterAsync(cid)" disabled="@working">
+                                                        <i class="bi bi-record-circle me-1"></i>Record
+                                                    </button>
+                                                }
+                                                else
+                                                {
+                                                    <a href="@($"/listen?episode={rec.Id}")" class="btn btn-sm btn-outline-info" title="Listen">
+                                                        <i class="bi bi-play-fill"></i>
+                                                    </a>
+                                                    <button class="btn btn-sm btn-outline-warning" @onclick="() => ReRecordChapterAsync(cid)" disabled="@working" title="Re-record (replaces existing audio)">
+                                                        <i class="bi bi-arrow-repeat"></i>
+                                                    </button>
+                                                }
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private bool loading = true;
+    private bool working;
+    private List<BookM> books = new();
+    private Dictionary<string, ChapterM> chapterById = new();
+    private Dictionary<Guid, List<EpisodeEntity>> recordingsByBook = new();
+
+    private string defaultVoiceId = "";
+    private string selectedVoiceId = "";
+    private List<TtsVoice> voices = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Unified cutover: /recordings → /nodes.
+        Nav.NavigateTo("/nodes", replace: true);
+        await Task.CompletedTask;
+        return;
+#pragma warning disable CS0162
+        defaultVoiceId  = Settings.ElevenLabsVoiceId ?? "";
+        selectedVoiceId = defaultVoiceId;
+        try
+        {
+            voices = (await Tts.ListVoicesAsync()).OrderBy(v => v.Name).ToList();
+            if (!string.IsNullOrEmpty(defaultVoiceId) && !voices.Any(v => v.VoiceId == defaultVoiceId))
+                voices.Insert(0, new TtsVoice { VoiceId = defaultVoiceId, Name = "(saved default)" });
+        }
+        catch
+        {
+            voices = new() { new TtsVoice { VoiceId = defaultVoiceId, Name = "Default voice" } };
+        }
+        await LoadTreeAsync();
+#pragma warning restore CS0162
+    }
+
+    private async Task LoadTreeAsync()
+    {
+        loading = true;
+        StateHasChanged();
+        books = BookRepo.ListBooks();
+        var allChapters = ChapterRepo.ListChapters();
+        chapterById = allChapters.ToDictionary(c => c.Id, c => c);
+
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var allRecordings = await db.Episodes
+            .Where(e => e.BookId != null)
+            .Include(e => e.Beats)
+            .AsNoTracking()
+            .ToListAsync();
+        recordingsByBook = allRecordings
+            .GroupBy(e => e.BookId!.Value)
+            .ToDictionary(g => g.Key, g => g.ToList());
+
+        loading = false;
+        StateHasChanged();
+    }
+
+    private async Task RecordChapterAsync(string chapterId)
+    {
+        if (working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            var voice = string.IsNullOrEmpty(selectedVoiceId) ? null : selectedVoiceId;
+            var id = await Task.Run(() => RecordingSvc.RecordChapterAsync(chapterId, voice));
+            Toast.Success("CHAPTER-REC", $"Chapter recording started ({id.ToString("N")[..8]}…). Narration runs in background.");
+            await LoadTreeAsync();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("CHAPTER-REC-FAIL", ex.Message);
+        }
+        finally
+        {
+            working = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private async Task ReRecordChapterAsync(string chapterId)
+    {
+        if (working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            var voice = string.IsNullOrEmpty(selectedVoiceId) ? null : selectedVoiceId;
+            var id = await Task.Run(() => RecordingSvc.ReRecordChapterAsync(chapterId, voice));
+            Toast.Success("CHAPTER-RERECORD", $"Re-recording started ({id.ToString("N")[..8]}…). Old audio dropped.");
+            await LoadTreeAsync();
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("CHAPTER-RERECORD-FAIL", ex.Message);
+        }
+        finally
+        {
+            working = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private async Task ExportBookAsync(Guid bookId)
+    {
+        if (working) return;
+        working = true;
+        StateHasChanged();
+        try
+        {
+            var path = await Task.Run(() => RecordingSvc.ExportBookAudioAsync(bookId));
+            if (path == null)
+                Toast.Warning("BOOK-EXPORT", "No completed chapter recordings to stitch.");
+            else
+                Toast.Success("BOOK-EXPORT", $"Strung into {System.IO.Path.GetFileName(path)}");
+        }
+        catch (Exception ex)
+        {
+            Toast.Error("BOOK-EXPORT-FAIL", ex.Message);
+        }
+        finally
+        {
+            working = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private static Guid? TryParseId(string s) =>
+        Guid.TryParseExact(s, "N", out var g) ? g
+        : Guid.TryParse(s, out var g2) ? g2
+        : (Guid?)null;
+
+    private static string StatusColor(string status) => status switch
+    {
+        "ready"           => "success",
+        "ready_for_audio" => "info",
+        "narrating"       => "primary",
+        "generating"      => "primary",
+        "failed"          => "danger",
+        _                 => "secondary",
+    };
+}

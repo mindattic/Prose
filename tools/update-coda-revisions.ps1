@@ -5,7 +5,7 @@
 Set-StrictMode -Off
 Add-Type -AssemblyName System.Data
 
-$cs = 'Server=(localdb)\MSSQLLocalDB;Database=StreetSamurai;Trusted_Connection=True;TrustServerCertificate=True;'
+$cs = 'Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;'
 $conn = New-Object System.Data.SqlClient.SqlConnection($cs)
 $conn.Open()
 $qiCmd = $conn.CreateCommand()

@@ -1,6 +1,6 @@
 ---
 codex: SS
-project: StreetSamurai
+project: Prose
 code: HORROR
 layer: universe-facts
 universe: horror

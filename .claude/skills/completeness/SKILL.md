@@ -18,15 +18,15 @@ plus its open QA findings and structure. Read-only. NO votes, NO panels, NO LLM.
 > to sort or gate on.
 
 ## Fixed facts
-- DB (read-only): `sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "<query>"` (Windows Auth).
+- DB (read-only): `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "<query>"` (Windows Auth).
 - Book nodes = `Nodes.NodeType='book'` (TPH discriminator; in EF, `db.Nodes.OfType<BookNode>()`).
 - Coordination is `ss --coordinate --slug <slug>` — read-only, no LLM. It writes
   `reports/coordination/<CODE>.coordination.json` and stamps `## Beat Coordination Index` into
   the node bible. Run against the **built** DLL for speed:
-  `DLL=$(ls v3/StreetSamurai.Cli/bin/Debug/net*/StreetSamurai.Cli.dll | head -1)` then
+  `DLL=$(ls v3/Prose.Cli/bin/Debug/net*/Prose.Cli.dll | head -1)` then
   `dotnet "$DLL" --coordinate --slug <slug>` with `export Logging__LogLevel__Default=Warning
   Logging__LogLevel__Microsoft=Warning` to mute EF chatter. Build once if missing:
-  `dotnet build v3/StreetSamurai.Cli -c Debug -v q --nologo`.
+  `dotnet build v3/Prose.Cli -c Debug -v q --nologo`.
 - Score lives on `Nodes.Score` (trimmed panel figure). SD + ballot count are NOT in
   `NodeScoreHistory` (that table is empty) — compute them from the individual persona ballots in
   `NodeReviews`, EXCLUDING failed 0-score ballots (draft contamination inflates SD to 30-40).

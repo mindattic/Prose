@@ -1,0 +1,587 @@
+@page "/books/{BookId}/outline"
+@attribute [Authorize(Policy = MaPolicies.Admin)]
+@using Prose.Core
+@using Prose.Core.Models
+@using Prose.Core.Interfaces
+@using Prose.Core.Services
+@inject IBookRepository BookRepo
+@inject IChapterRepository ChapterRepo
+@inject BookOutlineService OutlineSvc
+@inject IStoryDirectorService Director
+@inject NavigationManager Nav
+
+@if (book == null || outline == null)
+{
+    <div class="alert alert-danger">Book not found. <a href="/books">Back to bookshelf</a></div>
+}
+else
+{
+    @* Always-on collaborative dialog with the LLM about THIS book. *@
+    <CoWriter BookId="@BookId" />
+}
+@if (book != null && outline != null)
+{
+    @* ── Header ─────────────────────────────────────────────────────── *@
+    <div class="d-flex justify-content-between align-items-start mb-3">
+        <div class="flex-grow-1 me-3">
+            <div class="small text-muted mb-1">
+                <a href="/books" class="text-muted text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Bookshelf</a>
+                <span class="mx-2">/</span>
+                <a href="@($"/write/{book.Id}")" class="text-muted text-decoration-none">@book.Title</a>
+            </div>
+            <h4 class="text-danger mb-0"><i class="bi bi-list-ol me-2"></i>Outline</h4>
+            <p class="small text-muted mb-0">
+                Build the plot before the prose. Fill what matters; the rest fills itself. Edit a detail and it propagates — before, during, and after.
+            </p>
+        </div>
+        <div class="d-flex gap-2 align-items-center flex-wrap justify-content-end">
+            @{
+                var statusClass = outline.Status switch
+                {
+                    OutlineStatus.Approved => "bg-success",
+                    OutlineStatus.InReview => "bg-warning text-dark",
+                    _ => "bg-secondary"
+                };
+            }
+            <span class="badge @statusClass" title="@OutlineStatusHelp(outline.Status)">@outline.Status</span>
+
+            @if (outline.Chapters.Count > 0)
+            {
+                <button class="btn btn-sm btn-outline-info" @onclick="GenerateFill" disabled="@working"
+                        title="Fill any blank field with LLM-generated content. Existing edits are kept exactly.">
+                    @if (working) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                    else { <i class="bi bi-stars me-1"></i> }
+                    Fill Blanks
+                </button>
+                <button class="btn btn-sm btn-success" @onclick="Approve"
+                        disabled="@(outline.Status == OutlineStatus.Approved || HasPendingAdjustments)">
+                    <i class="bi bi-check2-circle me-1"></i>Approve
+                </button>
+                <button class="btn btn-sm btn-danger" @onclick="StartAutopilot"
+                        disabled="@(working || autopilotRunning || outline.Status != OutlineStatus.Approved)"
+                        title="@(outline.Status == OutlineStatus.Approved ? "Generate prose for every chapter sequentially" : "Approve the outline first")">
+                    <i class="bi bi-play-fill me-1"></i>Write Full Book
+                </button>
+            }
+        </div>
+    </div>
+
+    @* ── Status messages ──────────────────────────────────────────── *@
+    @if (statusMessage != null)
+    {
+        <div class="alert alert-info small d-flex justify-content-between align-items-center">
+            <div>@statusMessage</div>
+            <button class="btn-close btn-close-white" @onclick="() => statusMessage = null"></button>
+        </div>
+    }
+    @if (autopilotRunning)
+    {
+        <div class="alert alert-danger small">
+            <span class="spinner-border spinner-border-sm me-2"></span>
+            <strong>Autopilot:</strong> Chapter @autopilotCurrent / @autopilotTotal — @autopilotMessage
+            <button class="btn btn-sm btn-outline-light ms-3" @onclick="CancelAutopilot">Stop</button>
+        </div>
+    }
+
+    @* ── Empty state: chapter setup wizard ─────────────────────────── *@
+    @if (outline.Chapters.Count == 0)
+    {
+        <div class="card bg-dark border-warning">
+            <div class="card-body">
+                <h5 class="text-warning"><i class="bi bi-magic me-2"></i>Set Up the Book</h5>
+                <p class="small text-muted">
+                    A book needs chapters before it has an outline. Tell us how many chapters and we'll create blank slots —
+                    then fill the outline together. You can always add or remove chapters later.
+                </p>
+
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label small text-info mb-1">Chapter count</label>
+                        <input type="number" min="1" max="40" class="form-control bg-black text-light border-secondary"
+                               @bind="setupChapterCount" />
+                    </div>
+                    <div class="col-md-9">
+                        <label class="form-label small text-info mb-1">Premise (optional but recommended)</label>
+                        <textarea class="form-control bg-black text-light border-secondary" rows="2"
+                                  @bind="outline.Premise" placeholder="One paragraph: who, what they want, what stands in their way."></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <label class="form-label small text-info mb-1">Arc target — where does the book land</label>
+                        <input class="form-control bg-black text-light border-secondary"
+                               @bind="outline.ArcTarget" placeholder="Redemption refused. Pyrrhic victory. Deliberate descent." />
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 mt-3">
+                    <button class="btn btn-warning" @onclick="ScaffoldChapters" disabled="@working">
+                        <i class="bi bi-plus-square me-1"></i>Create @setupChapterCount blank chapters
+                    </button>
+                    <button class="btn btn-outline-warning" @onclick="ScaffoldAndGenerate" disabled="@working">
+                        @if (working) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                        else { <i class="bi bi-stars me-1"></i> }
+                        Create + Auto-Generate Outline
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        @* ── Two-column layout: TOC sidebar + chapter cards ─────────────── *@
+        <div class="outline-layout">
+            <aside class="outline-toc">
+                <div class="outline-toc-header">
+                    <strong class="text-muted small">Chapters</strong>
+                </div>
+                <div class="outline-toc-list">
+                    <a href="#book-meta" class="outline-toc-item">
+                        <i class="bi bi-bookmark-star me-1"></i>Book-level
+                    </a>
+                    @foreach (var ch in outline.Chapters)
+                    {
+                        var pendingHere = outline.PendingAdjustments.Count(a => a.ChapterId == ch.ChapterId && a.Status == ReviewStatus.Pending);
+                        var isEmpty = string.IsNullOrWhiteSpace(ch.EffectiveBody);
+                        <a href="@($"#ch-{ch.Number}")" class="outline-toc-item">
+                            <span class="text-muted">@ch.Number.</span>
+                            <span class="ms-1">@ch.Title</span>
+                            @if (pendingHere > 0)
+                            {
+                                <span class="badge bg-warning text-dark ms-auto" title="@pendingHere proposed adjustment(s)">@pendingHere</span>
+                            }
+                            else if (isEmpty)
+                            {
+                                <span class="badge bg-dark text-muted ms-auto" title="Empty">empty</span>
+                            }
+                        </a>
+                    }
+                    @if (outline.Threads.Any())
+                    {
+                        <a href="#threads" class="outline-toc-item">
+                            <i class="bi bi-link-45deg me-1"></i>Threads (@outline.Threads.Count)
+                        </a>
+                    }
+                </div>
+            </aside>
+
+            <div class="outline-main">
+                @* ── Book-level fields ───────────────────────────────── *@
+                <div id="book-meta" class="card bg-dark border-secondary mb-3">
+                    <div class="card-header bg-black border-secondary py-2">
+                        <h6 class="text-info mb-0"><i class="bi bi-bookmark-star me-1"></i>Book-level</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <label class="form-label small text-muted mb-1">Premise</label>
+                                <textarea class="form-control bg-black text-light border-secondary small" rows="3"
+                                          @bind="outline.Premise" @bind:after="MarkBookDirty"></textarea>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label small text-muted mb-1">Arc target</label>
+                                <textarea class="form-control bg-black text-light border-secondary small" rows="3"
+                                          @bind="outline.ArcTarget" @bind:after="MarkBookDirty"></textarea>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label small text-muted mb-1">Theme — what the book is about underneath</label>
+                                <textarea class="form-control bg-black text-light border-secondary small" rows="3"
+                                          @bind="outline.Theme" @bind:after="MarkBookDirty"></textarea>
+                            </div>
+                        </div>
+                        @if (bookDirty)
+                        {
+                            <button class="btn btn-sm btn-primary mt-2" @onclick="SaveBookFields">
+                                <i class="bi bi-floppy"></i> Save book-level
+                            </button>
+                        }
+                    </div>
+                </div>
+
+                @* ── Chapter outlines ───────────────────────────────── *@
+                @foreach (var ch in outline.Chapters)
+                {
+                    <div id="@($"ch-{ch.Number}")" class="card bg-dark border-secondary mb-2 chapter-outline-card">
+                        <div class="card-header bg-black border-secondary py-2 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="text-danger fw-bold">Chapter @ch.Number</span>
+                                <span class="text-light ms-2">@ch.Title</span>
+                                @if (!string.IsNullOrEmpty(ch.PovCharacter))
+                                {
+                                    <span class="badge bg-dark text-info ms-2">POV: @ch.PovCharacter</span>
+                                }
+                            </div>
+                            <div class="d-flex gap-1">
+                                <button class="btn btn-sm btn-outline-info py-0" @onclick="() => FillChapter(ch)"
+                                        disabled="@working" title="Generate this chapter's outline only — fills its blanks">
+                                    <i class="bi bi-stars"></i> Fill
+                                </button>
+                                <button class="btn btn-sm btn-outline-warning py-0" @onclick="() => SaveAndReconsider(ch)"
+                                        disabled="@working" title="Save edits and propagate to neighbor chapters">
+                                    <i class="bi bi-arrow-left-right"></i> Save & Propagate
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-2">
+                                <div class="col-md-12">
+                                    <label class="form-label small text-muted mb-1">POV character</label>
+                                    <input class="form-control bg-black text-light border-secondary small" @bind="ch.PovCharacter" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-muted mb-1">
+                                        Outline
+                                        <span class="text-muted ms-1">— one paragraph: what happens, what beats fire, what threads open or close, end-state.</span>
+                                    </label>
+                                    <textarea class="form-control bg-black text-light border-secondary small" rows="6"
+                                              placeholder="Kyle takes the contract knowing Hua's reading the same dossier…"
+                                              @bind="ch.Body"></textarea>
+                                </div>
+                            </div>
+
+                            @{
+                                var pendingHere = outline.PendingAdjustments
+                                    .Where(a => a.ChapterId == ch.ChapterId && a.Status == ReviewStatus.Pending).ToList();
+                            }
+                            @if (pendingHere.Any())
+                            {
+                                <div class="mt-3 pt-2 border-top border-warning">
+                                    <h6 class="text-warning small mb-2">
+                                        <i class="bi bi-exclamation-diamond me-1"></i>
+                                        Propagated adjustment@(pendingHere.Count > 1 ? "s" : "") (@pendingHere.Count)
+                                    </h6>
+                                    @foreach (var a in pendingHere)
+                                    {
+                                        <div class="bg-black border border-warning rounded p-2 mb-2 small">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <div class="flex-grow-1">
+                                                    <strong class="text-warning">@a.Field</strong>
+                                                    <span class="text-muted ms-2">[@a.Direction]</span>
+                                                    <div class="text-muted mt-1">@a.Rationale</div>
+                                                    <div class="mt-1"><span class="text-danger">— </span><span style="white-space:pre-wrap;">@a.Before</span></div>
+                                                    <div><span class="text-success">+ </span><span style="white-space:pre-wrap;">@a.After</span></div>
+                                                </div>
+                                                <div class="d-flex gap-1 ms-2">
+                                                    <button class="btn btn-sm btn-success py-0" @onclick="() => ApplyAdjustment(a.Id)">
+                                                        <i class="bi bi-check-lg"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => DismissAdjustment(a.Id)">
+                                                        <i class="bi bi-x-lg"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+
+                @* ── Threads ───────────────────────────────── *@
+                @if (outline.Threads.Any())
+                {
+                    <div id="threads" class="card bg-dark border-info mt-3">
+                        <div class="card-header bg-black border-secondary py-2">
+                            <h6 class="text-info mb-0"><i class="bi bi-link-45deg me-1"></i>Through-Threads</h6>
+                        </div>
+                        <div class="card-body py-2">
+                            @foreach (var t in outline.Threads)
+                            {
+                                var planted = outline.Chapters.FirstOrDefault(c => c.ChapterId == t.PlantedInChapterId);
+                                var paysOff = outline.Chapters.FirstOrDefault(c => c.ChapterId == t.PaysOffInChapterId);
+                                <div class="d-flex justify-content-between align-items-center small py-1 border-bottom border-secondary">
+                                    <div>
+                                        <strong>@t.Name</strong>
+                                        <span class="text-muted ms-2">@t.Description</span>
+                                    </div>
+                                    <div class="text-muted">
+                                        @if (planted != null) { <span>plant Ch @planted.Number</span> }
+                                        @if (paysOff != null) { <span>→ pay Ch @paysOff.Number</span> }
+                                        <span class="badge @(t.Status == ThreadStatus.Resolved ? "bg-success" : "bg-secondary") ms-2">@t.Status</span>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}
+
+<style>
+    .outline-layout {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 20px;
+    }
+    @@media (max-width: 992px) {
+        .outline-layout { grid-template-columns: 1fr; }
+        .outline-toc { position: static !important; max-height: none !important; }
+    }
+    .outline-toc {
+        position: sticky;
+        top: 80px;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        background: #0a0a0a;
+        border: 1px solid #2a2a2a;
+        padding: 10px 8px;
+    }
+    .outline-toc-header { padding: 4px 8px 8px; border-bottom: 1px solid #2a2a2a; margin-bottom: 6px; }
+    .outline-toc-list { display: flex; flex-direction: column; gap: 1px; }
+    .outline-toc-item {
+        display: flex;
+        align-items: center;
+        padding: 6px 10px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: #cccccc;
+        border-left: 2px solid transparent;
+    }
+    .outline-toc-item:hover { background: #1a1a1a; border-left-color: #c00; color: #fff; }
+    .outline-main { min-width: 0; }
+    .chapter-outline-card { transition: border-color 0.2s; scroll-margin-top: 80px; }
+    .chapter-outline-card:focus-within { border-color: #c00; }
+</style>
+
+@code {
+    [Parameter] public string BookId { get; set; } = "";
+
+    private Book? book;
+    private BookOutline? outline;
+    private bool working;
+    private bool bookDirty;
+    private string? statusMessage;
+
+    // Setup wizard
+    private int setupChapterCount = 8;
+
+    // Autopilot
+    private bool autopilotRunning;
+    private int autopilotCurrent;
+    private int autopilotTotal;
+    private string autopilotMessage = "";
+    private CancellationTokenSource? autopilotCts;
+
+    // Per-chapter list-field text buffers (line-per-item).
+
+    private bool HasPendingAdjustments =>
+        outline?.PendingAdjustments.Any(a => a.Status == ReviewStatus.Pending) ?? false;
+
+    protected override void OnParametersSet() => Reload();
+
+    private void Reload()
+    {
+        book = BookRepo.LoadBook(BookId);
+        if (book == null) return;
+        outline = OutlineSvc.Load(BookId);
+        BuildBuffers();
+        bookDirty = false;
+    }
+
+    // BuildBuffers used to materialize line-joined dictionaries for the legacy
+    // multi-textarea editor. With the single Body textarea binding directly to
+    // ch.Body, no buffers are needed — kept as a no-op so the existing Reload /
+    // GenerateFill / SaveAndReconsider call sites don't have to learn that.
+    private void BuildBuffers() { }
+
+    private void MarkBookDirty() => bookDirty = true;
+
+    // ── Setup wizard ───────────────────────────────────────────────────
+
+    private void ScaffoldChapters()
+    {
+        if (book == null) return;
+        var count = Math.Clamp(setupChapterCount, 1, 40);
+        for (int i = 0; i < count; i++)
+        {
+            var ch = new Chapter { BookId = book.Id, Title = $"Chapter {book.ChapterIds.Count + 1}" };
+            ChapterRepo.SaveChapter(ch);
+            book.ChapterIds.Add(ch.Id);
+        }
+        BookRepo.SaveBook(book);
+        OutlineSvc.Save(outline!);  // sync chapter list into outline on next Load
+        Reload();
+        statusMessage = $"Created {count} blank chapters. Now fill the outline — or click Fill Blanks to auto-generate.";
+    }
+
+    private async Task ScaffoldAndGenerate()
+    {
+        ScaffoldChapters();
+        await GenerateFill();
+    }
+
+    // ── Outline operations ──────────────────────────────────────────────
+
+    private void SaveBookFields()
+    {
+        if (outline == null) return;
+        OutlineSvc.Save(outline);
+        bookDirty = false;
+        statusMessage = "Book-level fields saved.";
+    }
+
+    private async Task GenerateFill()
+    {
+        if (outline == null || working) return;
+        working = true;
+        statusMessage = "Filling blanks — your edits are preserved.";
+        StateHasChanged();
+        try
+        {
+            // Body textareas bind directly to ch.Body — no sync step required.
+            OutlineSvc.Save(outline);
+            outline = await OutlineSvc.GenerateOutlineAsync(BookId);
+            BuildBuffers();
+            statusMessage = "Outline filled. Review each chapter; tweak any detail and click Save & Propagate to ripple changes.";
+        }
+        catch (Exception ex) { statusMessage = $"Error: {ex.Message}"; }
+        finally { working = false; StateHasChanged(); }
+    }
+
+    private async Task FillChapter(BookChapterOutline ch)
+    {
+        // For the per-chapter fill, we run the same generator — only this chapter's blanks
+        // get filled because every other field is FIXED. Equivalent to a targeted Surprise.
+        await GenerateFill();
+    }
+
+    private async Task SaveAndReconsider(BookChapterOutline ch)
+    {
+        if (outline == null || working) return;
+        working = true;
+        statusMessage = $"Saving Chapter {ch.Number} and propagating change to neighbor chapters...";
+        StateHasChanged();
+        try
+        {
+            // Body textareas bind directly to ch.Body — no sync step required.
+            OutlineSvc.Save(outline);
+            outline = await OutlineSvc.ReconsiderAfterEditAsync(BookId, ch.ChapterId);
+            BuildBuffers();
+            var pending = outline.PendingAdjustments.Count(a => a.Status == ReviewStatus.Pending);
+            statusMessage = pending > 0
+                ? $"Change propagated — {pending} adjustment(s) proposed across other chapters. Review and accept/dismiss inline."
+                : "Change propagated — no adjustments needed.";
+        }
+        catch (Exception ex) { statusMessage = $"Error: {ex.Message}"; }
+        finally { working = false; StateHasChanged(); }
+    }
+
+    private void ApplyAdjustment(string id)
+    {
+        outline = OutlineSvc.ApplyAdjustment(BookId, id);
+        BuildBuffers();
+    }
+
+    private void DismissAdjustment(string id)
+    {
+        outline = OutlineSvc.DismissAdjustment(BookId, id);
+    }
+
+    private void Approve()
+    {
+        if (outline == null) return;
+        outline = OutlineSvc.Approve(BookId);
+        statusMessage = "Outline approved. Chapter prose generation is unlocked. Click Write Full Book to autopilot, or visit each chapter manually.";
+    }
+
+    private static string OutlineStatusHelp(OutlineStatus s) => s switch
+    {
+        OutlineStatus.Draft    => "Outline is being authored. Chapter prose generation is locked.",
+        OutlineStatus.InReview => "Edit triggered LLM coherence pass. Resolve pending adjustments before approving.",
+        OutlineStatus.Approved => "Outline locked. Chapter prose generation unlocked.",
+        _ => "",
+    };
+
+    // ── Autopilot — write every chapter sequentially ──────────────────
+
+    private async Task StartAutopilot()
+    {
+        if (outline == null || autopilotRunning) return;
+        try
+        {
+            // Service-layer guard — UI-only checks rot when new entry points appear.
+            // The thrown exception carries the current status for the surfaced message.
+            OutlineSvc.EnsureApprovedForGeneration(outline.BookId);
+        }
+        catch (OutlineNotApprovedException ex)
+        {
+            autopilotMessage = $"Outline must be Approved before autopilot can run (currently {ex.CurrentStatus}).";
+            statusMessage = autopilotMessage;
+            StateHasChanged();
+            return;
+        }
+        autopilotCts = new CancellationTokenSource();
+        autopilotRunning = true;
+        autopilotTotal = outline.Chapters.Count;
+        autopilotCurrent = 0;
+        StateHasChanged();
+
+        try
+        {
+            for (int i = 0; i < outline.Chapters.Count; i++)
+            {
+                if (autopilotCts.IsCancellationRequested) break;
+
+                var ch = outline.Chapters[i];
+                autopilotCurrent = i + 1;
+                autopilotMessage = $"Writing \"{ch.Title}\"...";
+                StateHasChanged();
+
+                // Skip chapters that already have prose to avoid clobbering manual writing.
+                var existingChapter = ChapterRepo.LoadChapter(ch.ChapterId);
+                if (existingChapter == null) continue;
+                if (!string.IsNullOrWhiteSpace(existingChapter.Html) && existingChapter.Html.Length > 500)
+                {
+                    autopilotMessage = $"\"{ch.Title}\" already has prose — skipping.";
+                    continue;
+                }
+
+                var protag = !string.IsNullOrEmpty(ch.PovCharacter) ? ch.PovCharacter
+                          : (book?.Protagonists.FirstOrDefault() ?? "");
+                if (string.IsNullOrEmpty(protag))
+                {
+                    autopilotMessage = $"\"{ch.Title}\" has no POV character — skipping.";
+                    continue;
+                }
+
+                var synopsis = ch.EffectiveBody;
+                if (string.IsNullOrWhiteSpace(synopsis) || synopsis.Length < 20)
+                {
+                    autopilotMessage = $"\"{ch.Title}\" has no outline body — skipping.";
+                    continue;
+                }
+
+                var story = await Director.GuidedStoryAsync([protag], synopsis, null, 8, autopilotCts.Token);
+                if (story.Complete)
+                {
+                    existingChapter.Title = ch.Title;
+                    existingChapter.Synopsis = synopsis;
+                    existingChapter.Characters = story.Characters;
+                    existingChapter.Html = AutonomousStoryFormatter.ToMarkdown(story);
+                    existingChapter.Beats = story.Beats.Select((b, idx) => new ChapterBeat
+                    {
+                        Index = idx, Title = b.Title, Text = b.Text, Act = b.Act,
+                        StructureRole = b.StructureRole, SceneType = b.SceneType,
+                    }).ToList();
+                    existingChapter.Status = Constants.Status.Draft;
+                    ChapterRepo.SaveChapter(existingChapter);
+                }
+            }
+            autopilotMessage = autopilotCts.IsCancellationRequested ? "Cancelled." : "All chapters written.";
+        }
+        catch (Exception ex) { autopilotMessage = $"Error: {ex.Message}"; }
+        finally
+        {
+            autopilotRunning = false;
+            statusMessage = autopilotMessage;
+            StateHasChanged();
+        }
+    }
+
+    private void CancelAutopilot()
+    {
+        autopilotCts?.Cancel();
+        autopilotMessage = "Stopping after current chapter...";
+    }
+}

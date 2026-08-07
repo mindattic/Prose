@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 layer: planning
 code: OPPN
 title: The Fall Down

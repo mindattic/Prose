@@ -1,9 +1,9 @@
 using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Services;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Swain Scene/Sequel doctrine tools ──────────────────────────────────────────
 // Classifies every enabled beat against Dwight Swain's Scene/Sequel doctrine

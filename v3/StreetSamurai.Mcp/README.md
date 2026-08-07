@@ -1,8 +1,8 @@
-# StreetSamurai.Mcp
+# Prose.Mcp
 
-Model Context Protocol server exposing the StreetSamurai world canon as MCP tools so Claude — Desktop, Code, or any MCP client — can call into the data without copy-pasting JSON.
+Model Context Protocol server exposing the Prose world canon as MCP tools so Claude — Desktop, Code, or any MCP client — can call into the data without copy-pasting JSON.
 
-The server uses `ModelContextProtocol` (Anthropic's C# MCP SDK), targets .NET 10, and re-uses every Core service (`StreetSamurai.Core`) via `AddStreetSamuraiServices()`. All `[McpServerToolType]` classes are auto-discovered by `WithToolsFromAssembly()` — adding a new tool only requires building.
+The server uses `ModelContextProtocol` (Anthropic's C# MCP SDK), targets .NET 10, and re-uses every Core service (`Prose.Core`) via `AddProseServices()`. All `[McpServerToolType]` classes are auto-discovered by `WithToolsFromAssembly()` — adding a new tool only requires building.
 
 ## Tool surface
 
@@ -29,12 +29,12 @@ The Quorum-based generation pipeline is excellent for *review* — multiple vote
 ### Claude Code
 
 ```bash
-claude mcp add streetsamurai dotnet run --project D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Mcp/StreetSamurai.Mcp.csproj --no-build --configuration Release
+claude mcp add prose dotnet run --project D:/Projects/MindAttic/Prose/v3/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
 ```
 
-Writes to `~/.claude.json` and persists across sessions. Tools appear as `mcp__streetsamurai__*`.
+Writes to `~/.claude.json` and persists across sessions. Tools appear as `mcp__prose__*`.
 
-To remove: `claude mcp remove streetsamurai`
+To remove: `claude mcp remove prose`
 
 ### Claude Desktop
 
@@ -43,11 +43,11 @@ Edit `%APPDATA%\Claude\claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "streetsamurai": {
+    "prose": {
       "command": "dotnet",
       "args": [
         "run", "--project",
-        "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Mcp\\StreetSamurai.Mcp.csproj",
+        "D:\\Projects\\MindAttic\\Prose\\v3\\Prose.Mcp\\Prose.Mcp.csproj",
         "--no-build", "--configuration", "Release"
       ]
     }
@@ -61,7 +61,7 @@ Restart Claude Desktop after editing.
 
 ```bash
 cd v3
-dotnet build StreetSamurai.Mcp/StreetSamurai.Mcp.csproj --configuration Release
+dotnet build Prose.Mcp/Prose.Mcp.csproj --configuration Release
 ```
 
 The `--no-build` flag in the registration command means the client launches the pre-built binary. Rebuild manually after code changes.
@@ -74,9 +74,9 @@ The server writes to `<canon-root>/engine/data/logs/mcp-{date}.txt`. **Stdout is
 
 After registration, start a fresh Claude Code session and ask: *"What motifs are registered for Bushido Coda?"*
 
-If Claude calls `mcp__streetsamurai__list_books` and `mcp__streetsamurai__get_motifs`, the server is wired.
+If Claude calls `mcp__prose__list_books` and `mcp__prose__get_motifs`, the server is wired.
 
 If tools do not appear:
-1. Build: `dotnet build StreetSamurai.Mcp/StreetSamurai.Mcp.csproj -c Release`
-2. Check registration: `claude mcp list` should show `streetsamurai`
+1. Build: `dotnet build Prose.Mcp/Prose.Mcp.csproj -c Release`
+2. Check registration: `claude mcp list` should show `prose`
 3. Tail the log: `<canon-root>/engine/data/logs/mcp-<today>.txt` should show `transport reading messages`

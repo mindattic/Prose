@@ -1,0 +1,144 @@
+﻿@namespace Prose.Shared.Components.Shared
+
+@* Shared, sortable reviews modal. Each row is one PERSONA (sorted by their latest
+   score); expand a row to see that persona's psychometric profile + their full
+   review history (every run, newest first) with body text and per-beat micro-chips.
+   Used for both NODE full reviews and per-BEAT micro-reviews. *@
+
+@if (Visible)
+{
+    <div class="rvm-backdrop" @onclick="CloseAsync"></div>
+    <div class="rvm-sheet" role="dialog" aria-modal="true">
+        <div class="rvm-head">
+            <div>
+                <h5 class="mb-0 text-light">@Title</h5>
+                <span class="text-muted small">@Items.Count persona@(Items.Count == 1 ? "" : "s") · sorted by latest score · expand a row for history</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <button class="btn btn-sm btn-outline-secondary" @onclick="ToggleSort" title="Toggle sort order">
+                    <i class="bi bi-sort-@(sortDesc ? "down" : "up")"></i> @(sortDesc ? "Highest first" : "Lowest first")
+                </button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="CloseAsync" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+            </div>
+        </div>
+        <div class="rvm-body">
+            @if (Items.Count == 0)
+            {
+                <div class="text-muted p-4 text-center">No reviews yet — run <code>/review-node</code>.</div>
+            }
+            else
+            {
+                @foreach (var r in Sorted)
+                {
+                    var open = expanded.Contains(r);
+                    <div class="rvm-row @(open ? "open" : "")">
+                        <div class="rvm-row-head" @onclick="() => Toggle(r)">
+                            <i class="bi bi-chevron-@(open ? "down" : "right") rvm-chev"></i>
+                            <span class="badge bg-@Color(Pct(r.Score)) rvm-score">@FormatScore(r.Score)@ScoreSuffix</span>
+                            <strong class="text-light">@r.Persona</strong>
+                            @if (string.Equals(r.Provider, "local", StringComparison.OrdinalIgnoreCase))
+                            {
+                                <span class="badge bg-warning text-dark" title="Reviewed by the LOCAL LLM (Ollama) — separate baseline from cloud reviews"><i class="bi bi-hdd-rack me-1"></i>Local LLM</span>
+                            }
+                            else
+                            {
+                                <span class="text-muted small" title="Cloud provider">@r.Provider</span>
+                            }
+                            @if (r.History is { Count: > 1 })
+                            {
+                                <span class="text-muted small ms-auto">@r.History.Count runs</span>
+                            }
+                        </div>
+                        @if (open)
+                        {
+                            <div class="rvm-detail">
+                                @if (!string.IsNullOrEmpty(r.Profile))
+                                {
+                                    <div class="rvm-profile" title="Psychometric profile"><i class="bi bi-person-badge me-1"></i>@r.Profile</div>
+                                }
+                                @if (r.History is { Count: > 0 })
+                                {
+                                    @foreach (var h in r.History)
+                                    {
+                                        <div class="rvm-hist">
+                                            <div class="rvm-hist-head">
+                                                <span class="badge bg-@Color(Pct(h.Score)) rvm-score">@FormatScore(h.Score)@ScoreSuffix</span>
+                                                <span class="text-muted small">@h.When · v@h.Version</span>
+                                            </div>
+                                            @if (!string.IsNullOrWhiteSpace(h.Body))
+                                            {
+                                                <div class="rvm-text">@h.Body</div>
+                                            }
+                                            @if (h.BeatScores is { Count: > 0 })
+                                            {
+                                                <div class="rvm-beats" title="This reviewer's per-beat micro-scores (1-5)">
+                                                    @for (int i = 0; i < h.BeatScores.Count; i++)
+                                                    {
+                                                        <span class="rvm-beat bg-@Color(h.BeatScores[i] / 5.0 * 100)" title="Beat @(i + 1): @h.BeatScores[i]/5">@(i + 1)</span>
+                                                    }
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <div class="text-muted small">No review detail.</div>
+                                }
+                            </div>
+                        }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+}
+
+@code {
+    /// <summary>One review in a persona's history. Score is raw (0-100 node / 1-5 beat).
+    /// BeatScores = this reviewer's per-beat micro-scores (1-5), positional order, or null.</summary>
+    public sealed record HistoryEntry(string When, string Version, double Score, string Body, IReadOnlyList<int>? BeatScores);
+
+    /// <summary>One persona row: latest score is the header; History (newest first) is the expand.</summary>
+    public sealed record Item(string Persona, string Provider, double Score, string? Profile, IReadOnlyList<HistoryEntry> History);
+
+    [Parameter] public bool Visible { get; set; }
+    [Parameter] public string Title { get; set; } = "Reviews";
+    [Parameter] public IReadOnlyList<Item> Items { get; set; } = Array.Empty<Item>();
+    [Parameter] public double Max { get; set; } = 100;
+    [Parameter] public string ScoreSuffix { get; set; } = "";
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private bool sortDesc = true;
+    private readonly HashSet<Item> expanded = new();
+
+    private IEnumerable<Item> Sorted => sortDesc ? Items.OrderByDescending(i => i.Score) : Items.OrderBy(i => i.Score);
+
+    private double Pct(double score) => Max > 0 ? score / Max * 100.0 : score;
+    private void ToggleSort() => sortDesc = !sortDesc;
+    private void Toggle(Item i) { if (!expanded.Add(i)) expanded.Remove(i); }
+    private async Task CloseAsync() { expanded.Clear(); await OnClose.InvokeAsync(); }
+
+    private static string FormatScore(double s) => s % 1 == 0 ? s.ToString("0") : s.ToString("0.0");
+    private static string Color(double pct) => pct >= 80 ? "success" : pct >= 60 ? "info" : pct >= 40 ? "warning" : "danger";
+}
+
+<style>
+    .rvm-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1050; }
+    .rvm-sheet { position: fixed; top: 0; right: 0; bottom: 0; width: min(620px, 96vw); background: #121212; border-left: 1px solid #2a2a2a; z-index: 1051; display: flex; flex-direction: column; box-shadow: -8px 0 28px rgba(0,0,0,0.5); }
+    .rvm-head { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1rem; border-bottom: 1px solid #2a2a2a; }
+    .rvm-body { overflow-y: auto; padding: 0.25rem 0.5rem 2rem; }
+    .rvm-row { border-bottom: 1px solid #1f1f1f; }
+    .rvm-row.open { background: #161616; }
+    .rvm-row-head { display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 0.5rem; cursor: pointer; }
+    .rvm-row-head:hover { background: #1b1b1b; }
+    .rvm-chev { color: #6c757d; font-size: 0.8rem; }
+    .rvm-score { font-variant-numeric: tabular-nums; }
+    .rvm-detail { padding: 0.25rem 0.75rem 0.75rem 1.6rem; }
+    .rvm-profile { font-size: 0.78rem; color: #5bc0de; font-family: ui-monospace, monospace; margin-bottom: 0.5rem; }
+    .rvm-hist { border-left: 2px solid #2a2a2a; padding: 0.35rem 0 0.35rem 0.6rem; margin-bottom: 0.4rem; }
+    .rvm-hist-head { display: flex; align-items: center; gap: 0.5rem; }
+    .rvm-text { margin-top: 0.35rem; color: #ced4da; font-size: 0.85rem; white-space: pre-wrap; line-height: 1.4; }
+    .rvm-beats { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 0.4rem; }
+    .rvm-beat { font-size: 0.6rem; min-width: 1.15rem; text-align: center; padding: 1px 2px; border-radius: 3px; color: #fff; opacity: 0.85; }
+</style>

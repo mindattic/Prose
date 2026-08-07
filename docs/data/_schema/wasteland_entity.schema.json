@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "ss://schema/wasteland_entity",
-  "title": "StreetSamurai canon — Wasteland Entity (engine_data/wasteland_entities/*.json)",
+  "title": "Prose canon — Wasteland Entity (engine_data/wasteland_entities/*.json)",
   "description": "A wasteland-origin organism/phenomenon beyond the GLMZ. Carries its own opaque hex id on disk.",
   "type": "object",
   "required": ["id", "type", "name"],

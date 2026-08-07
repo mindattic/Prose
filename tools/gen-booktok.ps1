@@ -36,7 +36,7 @@ if (-not (Test-Path $CoverPath)) {
 }
 
 $dotnetArgs = @(
-    "run", "--project", "v3/StreetSamurai.Cli", "--",
+    "run", "--project", "v3/Prose.Cli", "--",
     "--booktok", "--standalone",
     "--cover-path", $CoverPath,
     "--title", $Title,

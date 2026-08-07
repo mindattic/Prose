@@ -75,7 +75,7 @@ title/header — begin with prose.
    $t = (Get-Content "<file>" -Raw -Encoding utf8).Trim().Replace("'","''")
    $sql = "SET QUOTED_IDENTIFIER ON;`nUPDATE Beats SET [Text]=N'$t' WHERE Id='<GUID>';"
    [System.IO.File]::WriteAllText("push-NN.sql", $sql, (New-Object System.Text.UTF8Encoding $true))
-   sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -I -f 65001 -i "push-NN.sql"
+   sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -I -f 65001 -i "push-NN.sql"
    ```
    Then verify LEN > 4000 AND no mojibake:
    `sqlcmd ... -Q "SELECT LEN([Text]), CASE WHEN [Text] LIKE '%â€%' THEN 'MOJIBAKE' ELSE 'ok' END FROM Beats WHERE Id='<GUID>'"`

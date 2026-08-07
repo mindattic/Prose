@@ -1,5 +1,5 @@
 #Requires -Version 5.1
-# StreetSamurai ML Pipeline - interactive launcher
+# Prose ML Pipeline - interactive launcher
 # Run ml.bat to open, or: powershell -ExecutionPolicy Bypass -File ml.ps1
 
 Set-StrictMode -Version Latest
@@ -36,7 +36,7 @@ function Invoke-ML {
 }
 
 function Get-Strands {
-    $rows = sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai `
+    $rows = sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose `
         -Q "SET NOCOUNT ON; SELECT Slug FROM Strands ORDER BY Slug" `
         -h -1 2>$null
     return @($rows |
@@ -48,7 +48,7 @@ function Show-Header {
     Clear-Host
     Write-Host ""
     Write-Host "  ==========================================" -ForegroundColor Cyan
-    Write-Host "     StreetSamurai  ML  Pipeline" -ForegroundColor Cyan
+    Write-Host "     Prose  ML  Pipeline" -ForegroundColor Cyan
     Write-Host "  ==========================================" -ForegroundColor Cyan
     Write-Host ""
 }

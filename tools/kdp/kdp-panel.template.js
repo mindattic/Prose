@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         StreetSamurai KDP Panel
-// @namespace    mindattic.streetsamurai
+// @name         Prose KDP Panel
+// @namespace    mindattic.prose
 // @version      1
-// @description  Sidebar copilot for updating StreetSamurai books on KDP — republishing an
+// @description  Sidebar copilot for updating Prose books on KDP — republishing an
 //               updated manuscript on an existing live book (the common case, dozens of times
 //               a month) and, less often, walking a brand-new title through KDP's listing wizard.
 // @match        https://kdp.amazon.com/*
@@ -191,9 +191,9 @@
         label:     '5  Confirm & record',
         detail:    'Once Amazon confirms the update, run this so the\nmanifest stops flagging it:',
         action:    'pause',
-        copyValue: 'dotnet run --project v3/StreetSamurai.Cli -- --kdp-mark-published --slug ' + book.slug,
+        copyValue: 'dotnet run --project v3/Prose.Cli -- --kdp-mark-published --slug ' + book.slug,
         copyTip:   'Copy the ss command',
-        message:   'dotnet run --project v3/StreetSamurai.Cli -- --kdp-mark-published --slug ' + book.slug,
+        message:   'dotnet run --project v3/Prose.Cli -- --kdp-mark-published --slug ' + book.slug,
       },
     ];
   }
@@ -339,7 +339,7 @@
       '',
       '6. Click #ss-next → Step 5 "Confirm & record". This step is NOT a KDP action — it just',
       '   displays/copies a command like:',
-      '     dotnet run --project v3/StreetSamurai.Cli -- --kdp-mark-published --slug <slug>',
+      '     dotnet run --project v3/Prose.Cli -- --kdp-mark-published --slug <slug>',
       '   You have no terminal access — do not try to run it. Just record it for the final report.',
       '',
       '7. Move to the next code and repeat from step 1.',

@@ -1,10 +1,10 @@
 using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Models;
-using StreetSamurai.Core.Services;
+using Prose.Core.Models;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Combat scene generation — exposes CombatSceneWriter over MCP ────────────
 // The Core CombatSceneWriter / DraftCombatSceneTool pair is normally only
@@ -38,7 +38,7 @@ public class CombatTools
     }
 
     /// <summary>
-    /// Generate an action sequence using the StreetSamurai combat writer. Respects
+    /// Generate an action sequence using the Prose combat writer. Respects
     /// participants' canon loadouts and current injuries/stress and tracks
     /// ammo/grenade counts across beats. Tone shapes word choice and pacing — pick
     /// deliberately. Always pass preceding_context (last 1–3 paragraphs leading
@@ -47,7 +47,7 @@ public class CombatTools
     /// before staging it into a chapter.
     /// </summary>
     [McpServerTool, Description(
-        "Generate an action sequence using the StreetSamurai combat writer. " +
+        "Generate an action sequence using the Prose combat writer. " +
         "Respects participants' canon loadouts, current injuries/stress, and " +
         "tracks ammo/grenade counts across beats. Tone shapes word choice and " +
         "pacing — pick deliberately. Always pass preceding_context (last 1–3 " +

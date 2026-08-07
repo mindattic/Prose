@@ -1,10 +1,10 @@
 using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Interfaces;
-using StreetSamurai.Core.Models;
+using Prose.Core.Interfaces;
+using Prose.Core.Models;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Writing tools — book + chapter mutation ────────────────────────────────
 // The rest of the MCP surface is read-mostly; this file is the narrow exception.

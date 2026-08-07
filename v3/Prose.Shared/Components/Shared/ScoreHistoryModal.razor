@@ -1,0 +1,104 @@
+@namespace Prose.Shared.Components.Shared
+@inject NodeReviewService ReviewSvc
+@inject IJSRuntime JS
+
+@if (Visible)
+{
+    <div class="modal-backdrop fade show" style="z-index:1040" @onclick="HandleClose"></div>
+    <div class="modal fade show d-block" tabindex="-1" role="dialog" style="z-index:1050" @onclick:stopPropagation="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="background:#0f0f1a;border:1px solid #2a2a3e;">
+                <div class="modal-header" style="border-bottom:1px solid #2a2a3e;">
+                    <div>
+                        <h5 class="modal-title text-light mb-0">@NodeTitle</h5>
+                        <span class="text-muted small">Score history — each point is one review run</span>
+                    </div>
+                    <button class="btn btn-sm btn-outline-secondary ms-3" @onclick="HandleClose" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="modal-body" style="min-height:300px;">
+                    @if (_loading)
+                    {
+                        <div class="d-flex justify-content-center align-items-center" style="height:260px;">
+                            <div class="spinner-border text-warning"></div>
+                        </div>
+                    }
+                    else if (_points.Count == 0)
+                    {
+                        <div class="text-muted text-center py-5">
+                            <i class="bi bi-graph-up display-6 d-block mb-3 opacity-25"></i>
+                            No score history yet — run a review to start tracking.
+                        </div>
+                    }
+                    else
+                    {
+                        <div style="height:300px;position:relative;">
+                            <canvas id="@CanvasId"></canvas>
+                        </div>
+                        <div class="d-flex gap-4 mt-3 small text-muted justify-content-center">
+                            <span>
+                                <i class="bi bi-graph-up text-warning me-1"></i>
+                                Latest: <strong class="text-warning">@_points[^1].Score.ToString("0.#")%</strong>
+                            </span>
+                            <span>Best: <strong class="text-light">@_points.Max(p => p.Score).ToString("0.#")%</strong></span>
+                            <span>Runs: <strong class="text-light">@_points.Count</strong></span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool          Visible      { get; set; }
+    [Parameter] public EventCallback OnClose      { get; set; }
+    [Parameter] public Guid          NodeId     { get; set; }
+    [Parameter] public string        NodeTitle  { get; set; } = "";
+
+    private List<NodeReviewService.ScoreHistoryPoint> _points = [];
+    private bool _loading;
+    private bool _renderPending;
+    private Guid _loadedFor;
+
+    private string CanvasId => $"score-chart-{NodeId:N}";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Visible && NodeId != Guid.Empty && NodeId != _loadedFor)
+        {
+            _loading = true;
+            _renderPending = false;
+            _loadedFor = NodeId;
+            _points = [];
+            StateHasChanged();
+
+            _points = await ReviewSvc.GetScoreHistoryAsync(NodeId);
+            _loading = false;
+            _renderPending = _points.Count > 0;
+        }
+        else if (!Visible && _loadedFor != Guid.Empty)
+        {
+            await JS.InvokeVoidAsync("scoreChart.destroy", CanvasId);
+            _loadedFor = Guid.Empty;
+            _points = [];
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (_renderPending && Visible && _points.Count > 0)
+        {
+            _renderPending = false;
+            var payload = _points.Select(p => new
+            {
+                label = p.RecordedAt.ToString("MMM d"),
+                score = Math.Round(p.Score, 1),
+            }).ToArray();
+            await JS.InvokeVoidAsync("scoreChart.render", CanvasId, payload);
+        }
+    }
+
+    private async Task HandleClose() => await OnClose.InvokeAsync();
+}

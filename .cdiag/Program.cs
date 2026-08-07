@@ -1,6 +1,6 @@
 using Microsoft.Data.Sqlite;
 
-var dbPath = @"D:\Projects\MindAttic\StreetSamurai\engine\data\continuity.db";
+var dbPath = @"D:\Projects\MindAttic\Prose\engine\data\continuity.db";
 var cs = $"Data Source={dbPath};Mode=ReadOnly";
 
 using var conn = new SqliteConnection(cs);

@@ -2,11 +2,11 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Data.Entities;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Data.Entities;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Master Glossary tools — universe-scoped back-matter glossaries ────────
 // A term defined here never needs an in-voice gloss on the page (SS-LAW-20 is satisfied by
@@ -18,9 +18,9 @@ namespace StreetSamurai.Mcp;
 public class GlossaryTools
 {
     private readonly GlossaryService glossary;
-    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
 
-    public GlossaryTools(GlossaryService glossary, IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    public GlossaryTools(GlossaryService glossary, IDbContextFactory<ProseDbContext> dbFactory)
     {
         this.glossary = glossary;
         this.dbFactory = dbFactory;
@@ -40,7 +40,7 @@ public class GlossaryTools
         [Description("Optional grouping category (e.g. 'Enforcement', 'Currency').")] string category = "")
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var universeId = StreetSamurai.Core.Services.UniverseScope.EffectiveId;
+        var universeId = Prose.Core.Services.UniverseScope.EffectiveId;
         if (universeId == Guid.Empty)
             return JsonSerializer.Serialize(new { error = "no_universe_scope" }, CanonTools.JsonOpts);
 
@@ -54,7 +54,7 @@ public class GlossaryTools
         "List every Master Glossary entry for the current universe, grouped by category.")]
     public async Task<string> ListGlossaryTerms()
     {
-        var universeId = StreetSamurai.Core.Services.UniverseScope.EffectiveId;
+        var universeId = Prose.Core.Services.UniverseScope.EffectiveId;
         if (universeId == Guid.Empty)
             return JsonSerializer.Serialize(new { error = "no_universe_scope" }, CanonTools.JsonOpts);
 
@@ -71,7 +71,7 @@ public class GlossaryTools
         "docs/universes/{SLUG}/ — from the GlossaryTerms table. Run after upsert_glossary_term calls.")]
     public async Task<string> GenerateGlossary()
     {
-        var universeId = StreetSamurai.Core.Services.UniverseScope.EffectiveId;
+        var universeId = Prose.Core.Services.UniverseScope.EffectiveId;
         if (universeId == Guid.Empty)
             return JsonSerializer.Serialize(new { error = "no_universe_scope" }, CanonTools.JsonOpts);
 

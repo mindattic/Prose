@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Voice harvest tools — expose VoiceHarvestService over MCP ─────────────
 // Distill voice rules from winning nodes into the DB-backed rule store the
@@ -20,9 +20,9 @@ namespace StreetSamurai.Mcp;
 public class VoiceTools
 {
     private readonly VoiceHarvestService harvest;
-    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
 
-    public VoiceTools(VoiceHarvestService harvest, IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    public VoiceTools(VoiceHarvestService harvest, IDbContextFactory<ProseDbContext> dbFactory)
     {
         this.harvest = harvest;
         this.dbFactory = dbFactory;
@@ -101,7 +101,7 @@ public class VoiceTools
             : Error("not_found_or_already_resolved", entryId);
     }
 
-    private static object[] SerializeProposals(IEnumerable<StreetSamurai.Core.Data.Entities.VoiceChangeLogEntry> rows) =>
+    private static object[] SerializeProposals(IEnumerable<Prose.Core.Data.Entities.VoiceChangeLogEntry> rows) =>
         rows.Select(e => (object)new
         {
             id          = e.Id,

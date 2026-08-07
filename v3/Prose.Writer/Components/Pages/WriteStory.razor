@@ -1,0 +1,2553 @@
+@page "/stories/write-legacy/{ProjectId}"
+@attribute [Authorize(Policy = MaPolicies.Admin)]
+@using Prose.Core.Models
+@using Prose.Core.Interfaces
+@inject StoryStarterService Starter
+@inject IChapterRepository Repo
+@inject IBookRepository BookRepo
+@inject NavigationManager Nav
+@inject ElevenLabsTtsService TtsSvc
+@inject WindowsTtsService DraftTts
+@inject EntityExtractionService EntityExtract
+@inject ILlmService Llm
+@inject DatabaseService CanonDb
+@inject WorldGraphService Graph
+@inject IPathProvider Paths
+@inject ValidationService Validator
+@inject MarkdownService Markdown
+@inject ExportService Export
+@inject StoryStateService StoryState
+@inject EventLogService EventLog
+@inject KnowledgeMapService KnowledgeMap
+@inject AgendaEngine Agenda
+@inject OutlineService OutlineSvc
+@inject StoryRefinementService Refinement
+@inject IStoryDirectorService Director
+@inject SemanticIndexService SemanticIndex
+@inject InferenceService Inference
+@inject Prose.Core.Services.Operator.WriterOperatorService Operator
+@inject IJSRuntime JS
+@implements IDisposable
+
+@* Co-writer drawer pins to the right edge whenever this chapter belongs to a book. *@
+@if (book != null)
+{
+    <CoWriter BookId="@book.Id" />
+}
+
+@* ── Book Nav + Title + Save ────────────────────────────── *@
+<div class="d-flex align-items-center gap-2 mb-2" style="height: 32px;">
+    @if (book != null)
+    {
+        <a href="@($"/write/{book.Id}")" class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;" title="Back to write">
+            <i class="bi bi-pencil-square"></i>
+        </a>
+        <button class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;"
+                disabled="@(prevChapterId == null)"
+                @onclick="GoPrev" title="Previous chapter">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <span class="text-muted small text-nowrap" style="line-height: 32px;">
+            @(chapterNumber.HasValue ? $"Ch. {chapterNumber} / {book.ChapterIds.Count}" : $"in {book.Title}")
+        </span>
+        <button class="btn btn-sm btn-outline-secondary text-nowrap" style="height: 32px;"
+                disabled="@(nextChapterId == null)"
+                @onclick="GoNext" title="Next chapter">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    }
+    <input type="text" class="form-control form-control-sm bg-dark text-danger border-secondary fw-bold flex-grow-1"
+           style="font-family: Georgia, serif; font-size: 1rem; height: 32px;"
+           placeholder="Untitled"
+           @bind="project.Title" />
+    <button class="btn btn-sm btn-danger text-nowrap" style="height: 32px;" @onclick="ForceSave">
+        <i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div>
+    </button>
+</div>
+
+@* ── Ask Modal ───────────────────────────────────────── *@
+@if (showAskModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showAskModal = false">
+        <div class="card bg-dark text-light border-info" style="width: 650px; max-height: 85vh; overflow-y: auto;"
+             @onclick:stopPropagation="true">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-info fw-bold"><i class="bi bi-chat-dots"></i> Ask</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showAskModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" style="width: auto;" @bind="askScope">
+                        <option value="story">This Story</option>
+                        <option value="series">All Stories (Series)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control bg-dark text-light border-secondary" rows="3"
+                              placeholder="Ask a question about the world, characters, story..."
+                              @bind="commandText" @onkeydown="HandleAskKeyDown"
+                              style="font-family: Georgia, serif;"></textarea>
+                </div>
+                @if (busy)
+                {
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="spinner-border spinner-border-sm text-info"></div>
+                        <small class="text-muted">@statusMessage</small>
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(commandResult))
+                {
+                    <div class="mb-3 bg-black rounded p-3 small" style="white-space: pre-wrap; max-height: 400px; overflow-y: auto;">@commandResult</div>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="CloseAsk"><div class="btn-lbl">Close</div></button>
+                }
+                else if (!busy)
+                {
+                    <button class="btn btn-sm btn-info text-dark" @onclick="ExecuteAsk"><i class="bi bi-send"></i><div class="btn-lbl"> Ask</div></button>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Write Modal ─────────────────────────────────────── *@
+@if (showWriteModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showWriteModal = false">
+        <div class="card bg-dark text-light border-danger" style="width: 650px; max-height: 85vh; overflow-y: auto;"
+             @onclick:stopPropagation="true">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-danger fw-bold"><i class="bi bi-pen"></i> Write</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showWriteModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <textarea class="form-control bg-dark text-light border-secondary" rows="3"
+                              placeholder="What should happen next? Describe the scene, direction, or premise..."
+                              @bind="writeText" @onkeydown="HandleWriteKeyDown"
+                              style="font-family: Georgia, serif;"></textarea>
+                </div>
+                @if (busy)
+                {
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="spinner-border spinner-border-sm text-danger"></div>
+                        <small class="text-muted">@statusMessage</small>
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(writeResult))
+                {
+                    <div class="mb-3">
+                        <textarea class="form-control bg-dark text-light border-secondary" rows="8"
+                                  style="font-family: Georgia, serif; font-size: 14px; line-height: 1.7;"
+                                  @bind="writeResult"></textarea>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm btn-success" @onclick="ApplyWrite"><i class="bi bi-check-lg"></i><div class="btn-lbl"> Insert</div></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick='() => writeResult = ""'><div class="btn-lbl">Clear</div></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => showWriteModal = false"><div class="btn-lbl">Dismiss</div></button>
+                    </div>
+                }
+                else if (!busy)
+                {
+                    <button class="btn btn-sm btn-danger" @onclick="DoWrite"><i class="bi bi-pen"></i><div class="btn-lbl"> Generate</div></button>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@* ── What Next Modal ─────────────────────────────────── *@
+@if (showWhatNextModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showWhatNextModal = false">
+        <div class="card bg-dark text-light border-primary" style="width: 750px; max-height: 85vh; overflow-y: auto;"
+             @onclick:stopPropagation="true">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-primary fw-bold"><i class="bi bi-lightning"></i> What Next?</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showWhatNextModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                @if (generatingPremises)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-primary"></div>
+                        <small class="text-muted">Analyzing character goals and finding conflicts...</small>
+                    </div>
+                }
+                else if (conflictPremises.Any())
+                {
+                    <p class="text-muted small mb-3">Based on character goals and current story state, these conflicts are ready to erupt:</p>
+                    @foreach (var premise in conflictPremises)
+                    {
+                        var p = premise;
+                        <div class="border border-secondary rounded p-3 mb-2">
+                            <div class="d-flex justify-content-between align-items-start mb-1">
+                                <span class="fw-bold">@p.Title</span>
+                                <span class="badge bg-danger">Tension @p.Tension/10</span>
+                            </div>
+                            <div class="small text-muted mb-1">@p.ConflictType — @string.Join(", ", p.CharactersInvolved)</div>
+                            <div class="small mb-2">@p.Premise</div>
+                            <div class="small text-info mb-2">@p.ThematicResonance</div>
+                            <button class="btn btn-sm btn-outline-danger" @onclick="() => UseConflictPremise(p)">
+                                <i class="bi bi-pen"></i><div class="btn-lbl"> Write This</div>
+                            </button>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="text-muted text-center py-3">No conflicts found. Add more characters to the story.</div>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Outline Modal ──────────────────────────────────── *@
+@if (showOutlineModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showOutlineModal = false">
+        <div class="card bg-dark text-light border-success" style="width: 800px; max-height: 85vh; overflow-y: auto;"
+             @onclick:stopPropagation="true">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-success fw-bold"><i class="bi bi-list-ol"></i> Story Outline</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showOutlineModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                @if (generatingOutline)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-success"></div>
+                        <small class="text-muted">Architecting story arc...</small>
+                    </div>
+                }
+                else if (currentOutline != null)
+                {
+                    <StoryShapeChart Outline="currentOutline" OnWriteBeat="WriteBeatFromOutline" />
+                }
+                else
+                {
+                    <div class="mb-3">
+                        <label class="form-label text-muted">Premise</label>
+                        <textarea class="form-control bg-dark text-light border-secondary" rows="2"
+                                  placeholder="What's this story about?" @bind="outlinePremise"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-muted">Target Beats</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               min="6" max="24" @bind="outlineTargetBeats" style="width: 80px;" />
+                    </div>
+                    <button class="btn btn-sm btn-success" @onclick="GenerateOutline" disabled="@string.IsNullOrWhiteSpace(outlinePremise)">
+                        <i class="bi bi-list-ol"></i><div class="btn-lbl"> Generate Outline</div>
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Validate Modal ──────────────────────────────────── *@
+@if (showValidateModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);">
+        <div class="card bg-dark text-light border-warning" style="width: 900px; max-height: 85vh; overflow-y: auto;">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-warning fw-bold"><i class="bi bi-shield-check"></i> Validate @(validationResults.Count > 0 ? "(1 issue found)" : "")</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showValidateModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                @if (validating)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-warning"></div>
+                        <small class="text-muted">@validateProgress</small>
+                    </div>
+                    @if (validateTotal > 0)
+                    {
+                        <div class="progress mt-2" style="height: 4px;">
+                            <div class="progress-bar bg-warning" style="width: @(validateCompleted * 100 / validateTotal)%"></div>
+                        </div>
+                    }
+                }
+                else if (!validationResults.Any())
+                {
+                    <div class="text-success text-center py-4">
+                        <i class="bi bi-check-circle" style="font-size: 2rem;"></i>
+                        <div class="mt-2">No contradictions found</div>
+                    </div>
+                }
+                else
+                {
+                    @for (int idx = 0; idx < validationResults.Count; idx++)
+                    {
+                        var issue = validationResults[idx];
+                        var i = idx;
+                        <div class="border border-secondary rounded p-3 mb-3 @(i == activeIssueIdx ? "border-warning" : "")">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <span class="badge @(issue.Severity == IssueSeverity.Hard ? "bg-danger" : "bg-warning text-dark") me-2">@issue.Category</span>
+                                    <span class="fw-bold">@issue.EntityName</span>
+                                </div>
+                                <small class="text-muted">@(i + 1) / @validationResults.Count</small>
+                            </div>
+                            <div class="small text-muted mb-2">@issue.Description</div>
+
+                            @* Side-by-side: Canon (left) vs Story (right) *@
+                            <div class="row g-2 mb-2">
+                                <div class="col-6">
+                                    <div class="field-label text-success">Canon Truth</div>
+                                    <div class="bg-black rounded p-2 small" style="min-height: 40px;">@issue.CanonTruth</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="field-label text-danger">In Story</div>
+                                    <div class="bg-black rounded p-2 small" style="min-height: 40px;">@issue.StoryText</div>
+                                </div>
+                            </div>
+
+                            @* Resolution: Sync Story → Canon *@
+                            <div class="field-label text-success mb-1">Sync Story to Canon</div>
+                            <div class="d-flex flex-column gap-1 mb-2">
+                                @{ var storyFixes = issue.StoryFixes
+                                    .Select((fix, idx) => (fix, score: idx < issue.StoryFixScores.Count ? issue.StoryFixScores[idx] : 0))
+                                    .OrderByDescending(x => x.score)
+                                    .ToList(); }
+                                @foreach (var (fix, score) in storyFixes)
+                                {
+                                    var fixText = fix;
+                                    <button class="btn btn-sm btn-outline-info text-start" style="height:auto; white-space:normal;" @onclick="() => ResolveWithAlternative(i, fixText)">
+                                        @if (score > 0)
+                                        {
+                                            <span class="badge @(score >= 70 ? "bg-success" : score >= 40 ? "bg-warning text-dark" : "bg-secondary") me-1">@score%</span>
+                                        }
+                                        @fixText
+                                    </button>
+                                }
+                            </div>
+
+                            @* Resolution: Sync Canon → Story *@
+                            @if (issue.CanonFixes.Count > 0)
+                            {
+                                <div class="field-label text-warning mb-1">Sync Canon to Story</div>
+                                <div class="d-flex flex-column gap-1 mb-2">
+                                    @{ var canonFixes = issue.CanonFixes
+                                        .Select((fix, idx) => (fix, score: idx < issue.CanonFixScores.Count ? issue.CanonFixScores[idx] : 0))
+                                        .OrderByDescending(x => x.score)
+                                        .ToList(); }
+                                    @foreach (var (fix, score) in canonFixes)
+                                    {
+                                        var fixText = fix;
+                                        <button class="btn btn-sm btn-outline-warning text-start" style="height:auto; white-space:normal;" @onclick="() => ResolveUpdateCanon(i, fixText)">
+                                            @if (score > 0)
+                                            {
+                                                <span class="badge @(score >= 70 ? "bg-success" : score >= 40 ? "bg-warning text-dark" : "bg-secondary") me-1">@score%</span>
+                                            }
+                                            @fixText
+                                        </button>
+                                    }
+                                </div>
+                            }
+
+                            <div class="d-flex gap-1 mb-2">
+                                <button class="btn btn-sm btn-outline-secondary text-start" style="height:auto; white-space:normal;" @onclick="() => GenerateMore(i)" disabled="@generatingMore">
+                                    @if (generatingMore && activeIssueIdx == i) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                    <i class="bi bi-arrow-repeat me-1"></i><div class="btn-lbl"> More alternatives</div>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary text-start" style="height:auto; white-space:normal;" @onclick="() => DismissIssue(i)">
+                                    <i class="bi bi-x me-1"></i><div class="btn-lbl"> Ignore</div>
+                                </button>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Suggest Alternatives Modal ────────────────────────── *@
+@if (showAlternativesModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);">
+        <div class="card bg-dark text-light border-info" style="width: 800px; max-height: 85vh; overflow-y: auto;">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-info fw-bold"><i class="bi bi-lightbulb"></i> Suggest Alternatives</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showAlternativesModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                <div class="field-label text-muted mb-1">Original</div>
+                <div class="bg-black rounded p-2 small mb-3">@altOriginalText</div>
+
+                @if (generatingAlts)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-info"></div>
+                        <small class="text-muted">Generating alternatives...</small>
+                    </div>
+                }
+                else if (suggestedAlts.Count > 0)
+                {
+                    <div class="field-label text-info mb-1">Alternatives</div>
+                    <div class="d-flex flex-column gap-1 mb-2">
+                        @{ var sorted = suggestedAlts
+                            .Select((alt, idx) => (alt, score: idx < altScores.Count ? altScores[idx] : 0))
+                            .OrderByDescending(x => x.score)
+                            .ToList(); }
+                        @foreach (var (alt, score) in sorted)
+                        {
+                            var altText = alt;
+                            <button class="btn btn-sm btn-outline-info text-start" style="height:auto; white-space:normal;" @onclick="() => ApplyAlternative(altText)">
+                                @if (score > 0)
+                                {
+                                    <span class="badge @(score >= 70 ? "bg-success" : score >= 40 ? "bg-warning text-dark" : "bg-secondary") me-1">@score%</span>
+                                }
+                                @altText
+                            </button>
+                        }
+                    </div>
+                }
+
+                <div class="d-flex gap-1">
+                    <button class="btn btn-sm btn-outline-info" @onclick="GenerateMoreAlts" disabled="@generatingAlts">
+                        <i class="bi bi-arrow-repeat me-1"></i><div class="btn-lbl"> Generate more</div>
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => showAlternativesModal = false">
+                        <div class="btn-lbl">Close</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Formatting Toolbar ────────────────────────────────── *@
+<div class="d-flex gap-1 mb-1 align-items-center" style="overflow-x: auto; white-space: nowrap; padding-top: 3px; padding-bottom: 3px;">
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h1")' title="Heading 1 (# )"><div class="btn-lbl">H1</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h2")' title="Heading 2 (## )"><div class="btn-lbl">H2</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h3")' title="Heading 3 (### )"><div class="btn-lbl">H3</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("p")' title="Remove heading"><div class="btn-lbl">P</div></button>
+    <span class="text-secondary mx-1">|</span>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("bold")' title="Bold (**text**)"><i class="bi bi-type-bold"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("italic")' title="Italic (*text*)"><i class="bi bi-type-italic"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("strikethrough")' title="Strikethrough (~~text~~)"><i class="bi bi-type-strikethrough"></i></button>
+    <span class="text-secondary mx-1">|</span>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatList("unordered")' title="Bullet list (- )"><i class="bi bi-list-ul"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatList("ordered")' title="Numbered list (1. )"><i class="bi bi-list-ol"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("blockquote")' title="Blockquote (> )"><i class="bi bi-quote"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick="InsertHorizontalRule" title="Scene break (---)"><i class="bi bi-dash-lg"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick="() => showImageInsert = !showImageInsert" title="Insert image ![alt](url)"><i class="bi bi-image"></i></button>
+    <span class="text-secondary mx-1">|</span>
+    <button class="btn @(showSceneSidebar ? "btn-outline-danger" : "btn-outline-secondary") tb" @onclick="() => showSceneSidebar = !showSceneSidebar" title="Scene sidebar"><i class="bi bi-diagram-3"></i></button>
+    <div class="dropdown d-inline-block">
+        <button class="btn btn-outline-secondary tb dropdown-toggle" type="button" data-bs-toggle="dropdown" title="Export">
+            <i class="bi bi-download"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><button class="dropdown-item" @onclick="ExportAsTxt"><i class="bi bi-file-text me-2"></i>Plain Text (.txt)</button></li>
+            <li><button class="dropdown-item" @onclick="ExportAsMd"><i class="bi bi-markdown me-2"></i>Markdown (.md)</button></li>
+            <li><button class="dropdown-item" @onclick="ExportAsPdf"><i class="bi bi-file-pdf me-2"></i>PDF (Print)</button></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><button class="dropdown-item @(narrating || !ttsAvailable ? "disabled" : "")" @onclick="ExportAsMp3"><i class="bi bi-file-music me-2"></i>MP3 (Narration)</button></li>
+            <li><button class="dropdown-item @(narrating || !ttsAvailable ? "disabled" : "")" @onclick="ExportAsOgg"><i class="bi bi-file-music me-2"></i>OGG (Narration)</button></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row g-2">
+    <div class="@((showSceneSidebar || showRefinementPanel) ? "col-md-8" : "col-12")">
+
+        @* ── Split pane: editor left, preview right on desktop ── *@
+        @* Both panes use --editor-h so the drag handle below can resize them together. *@
+        <div id="editor-split" class="row g-1" style="--editor-h: calc(100vh - 545px);">
+
+            @* Editor pane: full width on mobile (hidden when preview mode), half on desktop always *@
+            <div class="col-12 col-md-6 @(viewMode == "preview" ? "d-none d-md-block" : "")">
+                <textarea id="story-surface" class="form-control bg-dark text-light border-secondary md-editor"
+                          style="height: var(--editor-h); resize: none; overflow-y: auto; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 14px; line-height: 1.6;"
+                          spellcheck="true" autocorrect="off" autocapitalize="off"
+                          @bind="storyText"
+                          @bind:event="oninput"
+                          @bind:after="OnMarkdownChanged"
+                          @onmouseup="OnTextareaInteract"
+                          @onkeyup="OnTextareaInteract"></textarea>
+            </div>
+
+            @* Preview pane: hidden on mobile when editing, always shown on desktop *@
+            <div class="col-12 col-md-6 @(viewMode == "editor" ? "d-none d-md-block" : "")">
+                <div id="preview-scroll-container" class="border border-secondary rounded" style="height: var(--editor-h); overflow-y: auto;">
+                    <div id="md-preview" class="story-preview-print bg-white text-dark p-4" style="font-family: Georgia, serif; font-size: 16px; line-height: 2; max-width: 700px; margin: 0 auto;">
+                        <p style="color:#6c757d;text-align:center;padding:2rem;font-style:italic;">Preview</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        @* Drag handle — lower-right, resizes both editor and preview together via --editor-h *@
+        <div class="d-flex justify-content-end mb-1">
+            <div id="editor-resize-handle" title="Drag to resize editor and preview"
+                 style="cursor: ns-resize; user-select: none; padding: 2px 10px; color: #6c757d; font-size: 0.85rem; line-height: 1; border: 1px solid #495057; border-top: none; border-radius: 0 0 4px 4px; background: #1a1d20;">
+                ⠿ resize
+            </div>
+        </div>
+
+        @* Story Shape Progress moved to bottom drawer — see Story Arc drawer below *@
+
+        @* ── Image Insert Panel ────────────────────────── *@
+        @* ── Image Insert Modal ─────────────────────── *@
+        @if (showImageInsert)
+        {
+            <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                 style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showImageInsert = false">
+                <div class="card bg-dark text-light border-secondary" style="width: 500px;" @onclick:stopPropagation="true">
+                    <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                        <span class="text-muted fw-bold"><i class="bi bi-image"></i> Insert Image</span>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => showImageInsert = false"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <textarea class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
+                                  placeholder="Paste base64 image data (data:image/png;base64,... or raw base64)"
+                                  @bind="imageBase64" style="font-family: monospace; font-size: 0.7rem; min-height: 80px;"></textarea>
+                        <div class="d-flex gap-2 align-items-center mb-2">
+                            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                                   placeholder="Alt text (optional)" @bind="imageAlt" />
+                            <button class="btn btn-sm btn-info text-dark text-nowrap" @onclick="DoInsertImage"
+                                    disabled="@string.IsNullOrWhiteSpace(imageBase64)">
+                                <i class="bi bi-image"></i><div class="btn-lbl"> Insert</div>
+                            </button>
+                        </div>
+                        @if (!string.IsNullOrWhiteSpace(imageBase64))
+                        {
+                            <div class="text-center">
+                                <img src="@NormalizeImageSrc(imageBase64)" alt="@imageAlt" style="max-width: 100%; max-height: 250px; border-radius: 4px;" />
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+
+
+        @* Audio Player + TTS Tag Bar moved to TTS drawer (see drawers below) *@
+        @* Action buttons (Outline / What Next? / Validate / Refine / Ask / Write) replaced by Claude chat drawer *@
+
+        @* ── Drawer: Claude Chat ─────────────────────────────── *@
+        @if (showChatDrawer)
+        {
+            <div class="bg-dark border border-info rounded mt-1 p-2">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <small class="text-info fw-bold"><i class="bi bi-chat-dots"></i> Refine</small>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => showChatDrawer = false"><i class="bi bi-x-lg"></i></button>
+                </div>
+                <div id="chat-history" class="bg-black rounded p-2 mb-2"
+                     style="height: 280px; overflow-y: auto; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 0.85rem;">
+                    @if (chatMessages.Count == 0)
+                    {
+                        <div class="text-muted small">
+                            Talk to Claude Code about this story. Examples:
+                            <ul class="mb-0 mt-1 ps-3">
+                                <li>"write a combat scene where Sasha ambushes the runner in The Spine"</li>
+                                <li>"check the last three paragraphs against canon"</li>
+                                <li>"who is currently in The Loop and why"</li>
+                                <li>"the export-to-PDF button is broken — investigate"</li>
+                            </ul>
+                        </div>
+                    }
+                    @foreach (var msg in chatMessages)
+                    {
+                        <div class="mb-2">
+                            @switch (msg.Role)
+                            {
+                                case "user":
+                                    <div class="text-info fw-bold small">You</div>
+                                    <div class="text-light" style="white-space: pre-wrap;">@msg.Text</div>
+                                    break;
+                                case "assistant":
+                                    <div class="text-warning fw-bold small">Operator</div>
+                                    <div class="text-light" style="white-space: pre-wrap;">@msg.Text</div>
+                                    break;
+                                case "tool":
+                                    <div class="bg-black border border-secondary rounded p-1 ps-2 small" style="border-left-width: 3px !important; border-left-color: #6f42c1 !important;">
+                                        <div class="text-purple fw-bold" style="color: #b78ff3;">→ @msg.Text</div>
+                                    </div>
+                                    break;
+                                case "tool-result":
+                                    <div class="bg-black border border-secondary rounded p-1 ps-2 small" style="border-left-width: 3px !important; border-left-color: #198754 !important;">
+                                        <div class="text-success">← @msg.Text</div>
+                                    </div>
+                                    break;
+                                case "error":
+                                    <div class="text-danger small fw-bold">⚠ @msg.Text</div>
+                                    break;
+                            }
+                        </div>
+                    }
+                    @if (chatBusy)
+                    {
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="spinner-border spinner-border-sm text-info"></div>
+                            <small class="text-muted">@chatStatus</small>
+                        </div>
+                    }
+                </div>
+                <div class="d-flex gap-1">
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary"
+                              rows="3"
+                              placeholder="Ask Claude to write a scene, query the canon, fix a bug, edit JSON... (Ctrl+Enter to send)"
+                              @bind="chatInput" @bind:event="oninput"
+                              @onkeydown="HandleChatKeyDown"
+                              disabled="@chatBusy"
+                              style="font-family: Georgia, serif;"></textarea>
+                    <div class="d-flex flex-column gap-1">
+                        <button class="btn btn-sm btn-info text-dark"
+                                @onclick="SendChatAsync"
+                                disabled="@(chatBusy || string.IsNullOrWhiteSpace(chatInput))"
+                                title="Send (Ctrl+Enter)">
+                            <i class="bi bi-send"></i>
+                        </button>
+                        @if (chatBusy)
+                        {
+                            <button class="btn btn-sm btn-outline-danger" @onclick="CancelChat" title="Cancel">
+                                <i class="bi bi-stop-circle"></i>
+                            </button>
+                        }
+                        else if (chatMessages.Count > 0)
+                        {
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="ClearChat" title="Clear history">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+
+        @* ── Modal: review pending edit proposals from the operator ── *@
+        @if (showEditProposalModal && pendingEdits.Count > 0)
+        {
+            <div class="modal-backdrop" style="position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 1050;"
+                 @onclick="CancelEditProposal"></div>
+            <div style="position: fixed; inset: 24px; z-index: 1051; overflow: auto;">
+                <div class="card bg-dark text-light border-info shadow-lg" style="max-width: 1400px; margin: 0 auto;"
+                     @onclick:stopPropagation="true">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <strong><i class="bi bi-pencil-square"></i> Operator proposes @pendingEdits.Count edit@(pendingEdits.Count == 1 ? "" : "s")</strong>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEditProposal">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <p class="small text-muted mb-2">
+                            Check the edits you want, uncheck the rest. Tweak the combined preview at the bottom before applying.
+                        </p>
+                        @for (int i = 0; i < pendingEdits.Count; i++)
+                        {
+                            var ix = i;
+                            var edit = pendingEdits[ix];
+                            <div class="mb-3 p-2 border border-secondary rounded">
+                                <div class="d-flex align-items-start gap-2 mb-1">
+                                    <input type="checkbox" class="form-check-input mt-1"
+                                           checked="@edit.Approved"
+                                           @onchange="e => OnEditToggled(ix, (bool)(e.Value ?? false))" />
+                                    <div class="flex-grow-1">
+                                        <strong class="text-info">@edit.Label</strong>
+                                        @if (edit.MatchCount != 1)
+                                        {
+                                            <span class="badge bg-danger ms-2">
+                                                @(edit.MatchCount == 0 ? "no match" : $"{edit.MatchCount} matches — ambiguous")
+                                            </span>
+                                        }
+                                        @if (!string.IsNullOrEmpty(edit.Rationale))
+                                        {
+                                            <div class="small text-muted">@edit.Rationale</div>
+                                        }
+                                    </div>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="small text-secondary mb-1">Original</div>
+                                        <pre class="bg-black p-2 rounded m-0" style="white-space: pre-wrap; color: #ff8a8a; font-family: Georgia, serif; font-size: 0.85rem; max-height: 240px; overflow-y: auto;">@edit.Find</pre>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="small text-secondary mb-1">Rewrite</div>
+                                        <pre class="bg-black p-2 rounded m-0" style="white-space: pre-wrap; color: #8aff8a; font-family: Georgia, serif; font-size: 0.85rem; max-height: 240px; overflow-y: auto;">@edit.Replace</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <hr class="border-secondary" />
+                        <div class="mb-2">
+                            <strong>Combined preview</strong>
+                            <span class="small text-muted ms-2">— this is the exact text that will replace the document. Edit freely.</span>
+                        </div>
+                        <textarea class="form-control bg-black text-light border-secondary"
+                                  rows="20"
+                                  style="font-family: Georgia, serif; font-size: 0.95rem; min-height: 400px; line-height: 1.5;"
+                                  @bind="combinedPreview" @bind:event="oninput"></textarea>
+                    </div>
+                    <div class="card-footer d-flex justify-content-end gap-2">
+                        <button class="btn btn-outline-secondary" @onclick="CancelEditProposal">Cancel</button>
+                        <button class="btn btn-outline-info" @onclick="RebuildCombinedPreview" title="Recompute the preview from the currently-checked edits, discarding manual tweaks">
+                            <i class="bi bi-arrow-repeat"></i> Recompute
+                        </button>
+                        <button class="btn btn-info text-dark" @onclick="ApplyEditProposal"
+                                disabled="@(string.IsNullOrEmpty(combinedPreview))">
+                            <i class="bi bi-check-lg"></i> Apply to story
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+
+        @* ── Drawer: Narration (TTS) ─────────────────────────── *@
+        @if (showTtsDrawer)
+        {
+            <div class="bg-dark border border-secondary rounded mt-1 p-2">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <small class="text-muted fw-bold"><i class="bi bi-volume-up"></i> Narration</small>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => showTtsDrawer = false"><i class="bi bi-x-lg"></i></button>
+                </div>
+                <AudioPlayer @ref="audioPlayer"
+                             Visible="true"
+                             OnDismissed="() => {}"
+                             OnInsertTag="InsertTag"
+                             OnReadSelected="ReadSelected"
+                             OnReadAll="ReadAll"
+                             HasSelection="hasSelection"
+                             Engine="@ttsEngine"
+                             EngineChanged="e => ttsEngine = e"
+                             ShowTagInserter="false"
+                             CssClass="" />
+                <div class="bg-dark border border-secondary rounded mt-1 d-flex align-items-center gap-1 px-3 py-1 flex-wrap" style="font-size: 0.75rem;">
+                    <small class="text-muted fw-bold me-1">TTS Tags</small>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[short pause]")'><div class="btn-lbl">short pause</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[long pause]")'><div class="btn-lbl">long pause</div></button>
+                    <span class="text-secondary mx-1">|</span>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[whispers]")'><div class="btn-lbl">whispers</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[sighs]")'><div class="btn-lbl">sighs</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[laughs]")'><div class="btn-lbl">laughs</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[chuckles]")'><div class="btn-lbl">chuckles</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[clears throat]")'><div class="btn-lbl">clears throat</div></button>
+                    <span class="text-secondary mx-1">|</span>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales]")'><div class="btn-lbl">exhales</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales sharply]")'><div class="btn-lbl">sharp exhale</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'><div class="btn-lbl">deep inhale</div></button>
+                </div>
+            </div>
+        }
+
+        @* ── Drawer: Story Arc ───────────────────────────────── *@
+        @if (showArcDrawer)
+        {
+            <div class="bg-dark border border-secondary rounded mt-1 p-2">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <small class="text-muted fw-bold"><i class="bi bi-graph-up"></i> Story Arc</small>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => showArcDrawer = false"><i class="bi bi-x-lg"></i></button>
+                </div>
+                @if (currentOutline != null)
+                {
+                    <div class="px-2 pt-1 pb-0" style="background:#0d1117;">
+                        <StoryShapeChart Outline="currentOutline"
+                                         Compact="true"
+                                         TrackScrollOf="preview-scroll-container" />
+                    </div>
+                }
+                else
+                {
+                    <small class="text-muted">No outline yet. Ask Claude to "outline a 12-beat arc about &lt;your premise&gt;".</small>
+                }
+            </div>
+        }
+
+        @* ── Bottom toggle bar: view toggle (mobile) + drawer buttons ── *@
+        <div class="d-flex align-items-center mt-1">
+            <div class="btn-group d-flex d-md-none">
+                <button class="btn btn-sm @(viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i><div class="btn-lbl"> Editor</div></button>
+                <button class="btn btn-sm @(viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i><div class="btn-lbl"> Preview</div></button>
+            </div>
+            <div class="ms-auto d-flex gap-2">
+                <button class="btn btn-sm @(showChatDrawer ? "btn-secondary" : "btn-outline-secondary")"
+                        @onclick='() => ToggleDrawer("chat")'>
+                    <i class="bi bi-chat-dots"></i><div class="btn-lbl"> Refine</div>
+                </button>
+                <button class="btn btn-sm @(showTtsDrawer ? "btn-secondary" : "btn-outline-secondary")"
+                        @onclick='() => ToggleDrawer("tts")'>
+                    <i class="bi bi-volume-up"></i><div class="btn-lbl"> TTS</div>
+                </button>
+                <button class="btn btn-sm @(showArcDrawer ? "btn-secondary" : "btn-outline-secondary")"
+                        @onclick='() => ToggleDrawer("arc")'>
+                    <i class="bi bi-graph-up"></i><div class="btn-lbl"> Story Arc</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    @if (showSceneSidebar)
+    {
+        <div class="col-md-4">
+            @* ── Validation Warnings ──────────────────── *@
+            @if (validationIssues.Count > 0)
+            {
+                <div class="card bg-dark text-light border-warning mb-2">
+                    <div class="card-header py-1 text-warning small fw-bold">
+                        <i class="bi bi-exclamation-triangle"></i> Canon Issues (@validationIssues.Count)
+                    </div>
+                    <div class="card-body py-2 small">
+                        @foreach (var issue in validationIssues)
+                        {
+                            <div class="d-flex align-items-start gap-1 mb-1">
+                                <i class="bi bi-exclamation-circle text-warning" style="margin-top: 2px;"></i>
+                                <span>@issue</span>
+                            </div>
+                        }
+                        <button class="btn btn-sm btn-outline-warning mt-1" @onclick="() => validationIssues.Clear()"><div class="btn-lbl">Dismiss</div></button>
+                    </div>
+                </div>
+            }
+
+            @* ── Live Outline ──────────────────────────── *@
+            <div class="card bg-dark text-light border-secondary mb-2">
+                <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                    <small class="text-muted fw-bold">Outline</small>
+                    <button class="btn btn-sm btn-outline-info py-0 px-1" @onclick="RefreshOutline" title="Rebuild outline from text">
+                        <i class="bi bi-arrow-repeat" style="font-size: 0.7rem;"></i>
+                    </button>
+                </div>
+                <div class="card-body py-1" style="max-height: 40vh; overflow-y: auto;">
+                    @if (outlineSections.Count == 0)
+                    {
+                        <small class="text-muted">Write some text, then refresh.</small>
+                    }
+                    @foreach (var sec in outlineSections)
+                    {
+                        <div class="mb-2">
+                            <div class="fw-bold small text-danger" style="cursor: pointer;" @onclick="() => ScrollToSection(sec.index)">
+                                @sec.title
+                            </div>
+                            @if (sec.characters.Count > 0)
+                            {
+                                <div class="ms-2">
+                                    @foreach (var ch in sec.characters)
+                                    {
+                                        <span class="badge bg-info me-1 mb-1" style="font-size: 0.6rem; cursor: pointer;" @onclick="() => ShowEntityDetail(ch.id)">@ch.name</span>
+                                    }
+                                </div>
+                            }
+                            @if (sec.locations.Count > 0)
+                            {
+                                <div class="ms-2">
+                                    @foreach (var loc in sec.locations)
+                                    {
+                                        <span class="badge bg-success me-1 mb-1" style="font-size: 0.6rem; cursor: pointer;" @onclick="() => ShowEntityDetail(loc.id)">@loc.name</span>
+                                    }
+                                </div>
+                            }
+                            @if (sec.items.Count > 0)
+                            {
+                                <div class="ms-2">
+                                    @foreach (var item in sec.items)
+                                    {
+                                        <span class="badge @GetTypeBadgeClass(item.nodeType) me-1 mb-1" style="font-size: 0.6rem; cursor: pointer;" @onclick="() => ShowEntityDetail(item.id)">@item.name</span>
+                                    }
+                                </div>
+                            }
+                            <small class="text-muted ms-2">@sec.wordCount words</small>
+                        </div>
+                    }
+                    @if (_sceneEntities.Count > 0)
+                    {
+                        <hr class="border-secondary my-2">
+                        <small class="text-muted fw-bold">All Entities (@_sceneEntities.Count)</small>
+                        @foreach (var group in _sceneEntities.GroupBy(e => e.nodeType))
+                        {
+                            <div class="mb-1">
+                                <small class="fw-bold" style="color: @GetTypeColor(group.Key);">@group.Key</small>
+                                @foreach (var ent in group)
+                                {
+                                    <span class="badge @GetTypeBadgeClass(group.Key) me-1" style="font-size: 0.55rem; cursor: pointer;" @onclick="() => ShowEntityDetail(ent.id)">@ent.name</span>
+                                }
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+            @* ── Entity Detail ─────────────────────────── *@
+            @if (detailNode != null)
+            {
+                <div class="card bg-dark text-light border-info mb-2">
+                    <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                        <span>
+                            <span class="badge @GetTypeBadgeClass(detailNode.NodeType) me-1">@detailNode.NodeType</span>
+                            <strong>@detailNode.Name</strong>
+                        </span>
+                        <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="() => detailNode = null"><i class="bi bi-x"></i></button>
+                    </div>
+                    <div class="card-body py-2 small" style="max-height: 30vh; overflow-y: auto; line-height: 1.4;">
+                        @foreach (var key in new[] { "gender", "pronouns", "role", "status", "age", "affiliation", "location", "category", "manufacturer" })
+                        {
+                            if (detailNode.Properties.TryGetValue(key, out var val) && val.Length > 0)
+                            {
+                                <div><span class="text-info">@key:</span> @val</div>
+                            }
+                        }
+                        @if (detailNode.Properties.TryGetValue("description", out var ddesc) && ddesc.Length > 0)
+                        {
+                            <div class="text-muted mt-1">@(ddesc.Length > 300 ? ddesc[..297] + "..." : ddesc)</div>
+                        }
+                        @{ var detailEdges = Graph.GetAllEdges(detailNode.Id); }
+                        @if (detailEdges.Count > 0)
+                        {
+                            <div class="mt-1"><small class="text-muted fw-bold">Relationships:</small></div>
+                            @foreach (var edge in detailEdges.Take(10))
+                            {
+                                var other = edge.Source == detailNode.Id ? edge.Target : edge.Source;
+                                var otherNode = Graph.GetNode(other);
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="badge bg-dark border border-secondary" style="font-size: 0.6rem;">@edge.RelationType</span>
+                                    <span>@(otherNode?.Name ?? other)</span>
+                                </div>
+                            }
+                        }
+                        @if (detailNode.History.Count > 0)
+                        {
+                            <div class="mt-1 text-warning"><small class="fw-bold">Timeline:</small></div>
+                            @foreach (var h in detailNode.History.OrderBy(x => x.StoryPoint))
+                            {
+                                <div>[@h.StoryPoint] @h.Property: @h.OldValue → @h.NewValue</div>
+                            }
+                        }
+                    </div>
+                </div>
+            }
+
+            @* ── Mini Scene Graph ──────────────────────── *@
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                    <small class="text-muted fw-bold">Scene Graph</small>
+                    <button class="btn btn-sm btn-outline-danger py-0 px-1" @onclick="RenderMiniGraph" title="Render">
+                        <i class="bi bi-play" style="font-size: 0.7rem;"></i>
+                    </button>
+                </div>
+                <div id="miniGraphCanvas" style="width: 100%; height: 25vh; background: #111; border-radius: 0 0 4px 4px;"></div>
+            </div>
+        </div>
+    }
+
+    @* ── Refinement Panel ────────────────────────────── *@
+    @if (showRefinementPanel)
+    {
+        <div class="col-md-4">
+            <div class="card bg-dark text-light border-info mb-2">
+                <div class="card-header py-1 d-flex justify-content-between align-items-center border-secondary">
+                    <span class="text-info fw-bold small"><i class="bi bi-magic"></i> Refinement Notes</span>
+                    <div class="d-flex gap-1">
+                        <button class="btn btn-sm btn-outline-info py-0 px-2" @onclick="RunRefinement" disabled="@refining" title="Re-analyze the current draft">
+                            @if (refining) { <span class="spinner-border spinner-border-sm"></span> }
+                            else { <i class="bi bi-arrow-repeat"></i> }
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary py-0 px-2" @onclick="() => showRefinementPanel = false"><i class="bi bi-x"></i></button>
+                    </div>
+                </div>
+                <div class="card-body py-2 small" style="max-height: calc(100vh - 260px); overflow-y: auto;">
+                    @if (refining)
+                    {
+                        <div class="d-flex align-items-center gap-2 text-info">
+                            <div class="spinner-border spinner-border-sm"></div>
+                            <span>@refineStatus</span>
+                        </div>
+                    }
+                    else if (refinement == null || refinement.Notes.Count == 0)
+                    {
+                        <div class="text-muted">
+                            @if (refinement == null)
+                            {
+                                <div>No refinement report yet.</div>
+                                <button class="btn btn-sm btn-info text-dark mt-2" @onclick="RunRefinement" disabled="@(busy || !hasExistingText)">
+                                    <i class="bi bi-magic"></i><div class="btn-lbl"> Run analysis</div>
+                                </button>
+                            }
+                            else { <div>No notes. The draft is clean — or the analyzer had nothing to say.</div> }
+                        </div>
+                    }
+                    else
+                    {
+                        var pendingCount = refinement.Notes.Count(n => n.Status == RefinementNoteStatus.Pending);
+                        var acceptedCount = refinement.Notes.Count(n => n.Status == RefinementNoteStatus.Accepted);
+                        var skippedCount = refinement.Notes.Count(n => n.Status == RefinementNoteStatus.Skipped);
+
+                        <div class="mb-2 d-flex gap-2 flex-wrap">
+                            <span class="badge bg-info text-dark">@pendingCount pending</span>
+                            @if (acceptedCount > 0) { <span class="badge bg-success">@acceptedCount accepted</span> }
+                            @if (skippedCount > 0) { <span class="badge bg-secondary">@skippedCount skipped</span> }
+                        </div>
+
+                        @foreach (var note in refinement.Notes.Where(n => n.Status == RefinementNoteStatus.Pending).OrderBy(n => n.BeatIndex))
+                        {
+                            var n = note;
+                            var cls = RefineKindClass(n.Kind);
+                            <div class="card bg-black border-@cls mb-2">
+                                <div class="card-header py-1 px-2 d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <span class="badge bg-@cls me-1" style="font-size: 0.6rem;">@n.Kind</span>
+                                        <small class="text-muted">Beat @(n.BeatIndex + 1)</small>
+                                    </span>
+                                    @if (applyingNoteId == n.Id) { <span class="spinner-border spinner-border-sm text-info"></span> }
+                                </div>
+                                <div class="card-body py-2 px-2">
+                                    <div class="text-muted fst-italic mb-1" style="font-size: 0.75rem; border-left: 2px solid #444; padding-left: 0.5rem;">&ldquo;@n.Quote&rdquo;</div>
+                                    <div class="mb-1"><strong class="text-info">Why:</strong> @n.Rationale</div>
+
+                                    @if (editingNoteId == n.Id)
+                                    {
+                                        <div class="mb-2">
+                                            <strong class="text-info d-block">Suggestion:</strong>
+                                            <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="editBuffer"></textarea>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="mb-2"><strong class="text-info">Suggestion:</strong> @n.Suggestion</div>
+                                    }
+
+                                    @if (!string.IsNullOrWhiteSpace(n.CanonFact))
+                                    {
+                                        <div class="mb-2" style="font-size: 0.75rem;"><strong class="text-warning">Canon:</strong> <span class="text-muted">@n.CanonFact</span></div>
+                                    }
+
+                                    <div class="d-flex gap-1">
+                                        @if (editingNoteId == n.Id)
+                                        {
+                                            <button class="btn btn-sm btn-success py-0 px-2" @onclick="() => AcceptNote(n, true)" disabled="@(applyingNoteId != null)"><i class="bi bi-check"></i><div class="btn-lbl"> Apply edit</div></button>
+                                            <button class="btn btn-sm btn-outline-secondary py-0 px-2" @onclick="CancelEdit"><div class="btn-lbl">Cancel</div></button>
+                                        }
+                                        else
+                                        {
+                                            <button class="btn btn-sm btn-outline-success py-0 px-2" @onclick="() => AcceptNote(n, false)" disabled="@(applyingNoteId != null)" title="Rewrite the paragraph incorporating the suggestion"><i class="bi bi-check"></i><div class="btn-lbl"> Accept</div></button>
+                                            <button class="btn btn-sm btn-outline-info py-0 px-2" @onclick="() => StartEdit(n)" disabled="@(applyingNoteId != null)" title="Edit the suggestion before applying"><i class="bi bi-pencil"></i><div class="btn-lbl"> Edit</div></button>
+                                            <button class="btn btn-sm btn-outline-secondary py-0 px-2" @onclick="() => SkipNote(n)" disabled="@(applyingNoteId != null)" title="Dismiss this note"><i class="bi bi-x"></i><div class="btn-lbl"> Skip</div></button>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@if (error != null)
+{
+    <div class="alert alert-warning mt-2 py-1 small">@error</div>
+}
+
+@if (graphStatus != null)
+{
+    <div class="d-flex align-items-center gap-2 mt-1">
+        @if (extracting) { <div class="spinner-border spinner-border-sm text-info" style="width: 0.8rem; height: 0.8rem;"></div> }
+        else { <i class="bi bi-diagram-3 text-info" style="font-size: 0.75rem;"></i> }
+        <small class="text-muted" style="font-size: 0.7rem;">@graphStatus</small>
+    </div>
+}
+
+@code {
+    [Parameter] public string? ProjectId { get; set; }
+
+    // ── Core state ──
+    private Chapter project = new();
+    private string storyText = "";
+
+    // ── Book context (Previous/Next nav) ──
+    private Book? book;
+    private string? prevChapterId;
+    private string? nextChapterId;
+    private int? chapterNumber;
+
+    /// <summary>Loads the parent book and computes prev/next ids from <see cref="Book.ChapterIds"/>.</summary>
+    private void ResolveBookContext()
+    {
+        book = null;
+        prevChapterId = null;
+        nextChapterId = null;
+        chapterNumber = null;
+
+        if (string.IsNullOrEmpty(project.BookId)) return;
+
+        book = BookRepo.LoadBook(project.BookId);
+        if (book == null) return;
+
+        var i = book.ChapterIds.IndexOf(project.Id);
+        if (i < 0) return;
+
+        chapterNumber = i + 1;
+        if (i > 0) prevChapterId = book.ChapterIds[i - 1];
+        if (i < book.ChapterIds.Count - 1) nextChapterId = book.ChapterIds[i + 1];
+    }
+
+    private void GoPrev()
+    {
+        if (prevChapterId == null) return;
+        if (dirty) Save();
+        Nav.NavigateTo($"/stories/write/{prevChapterId}", forceLoad: true);
+    }
+
+    private void GoNext()
+    {
+        if (nextChapterId == null) return;
+        if (dirty) Save();
+        Nav.NavigateTo($"/stories/write/{nextChapterId}", forceLoad: true);
+    }
+
+    private int wordCount;
+#pragma warning disable CS0414
+    private bool saved; // written by save logic; suppress "assigned but never used" until wired to UI
+#pragma warning restore CS0414
+    private string? error;
+    private bool busy;
+    private string statusMessage = "";
+
+    // ── Audio ──
+    private bool ttsAvailable;
+    private bool narrating;
+    private bool hasSelection;
+    private string currentSelection = "";
+
+    // ── Suggest Alternatives ──
+    private bool showAlternativesModal;
+    private bool generatingAlts;
+    private string altOriginalText = "";
+    private List<string> suggestedAlts = [];
+    private List<int> altScores = [];
+    private AudioPlayer? audioPlayer;
+    private string ttsEngine = "elevenlabs"; // "elevenlabs" or "windows"
+
+
+    // ── Image insert ──
+    private bool showImageInsert;
+    private string imageBase64 = "";
+    private string imageAlt = "";
+
+    // ── Entity extraction ──
+    private bool extracting;
+    private string? graphStatus;
+    private string lastExtractedText = "";
+
+    // ── Ask modal ──
+    private bool showAskModal;
+    private string commandText = "";
+    private string commandResult = "";
+    private string askScope = "story";
+
+    // ── Write modal ──
+    private bool showWriteModal;
+    private string writeText = "";
+    private string writeResult = "";
+
+    // ── What Next ──
+    private bool showWhatNextModal;
+    private bool generatingPremises;
+    private List<ConflictPremise> conflictPremises = [];
+
+    // ── Outline ──
+    private bool showOutlineModal;
+    private bool generatingOutline;
+    private StoryOutline? currentOutline;
+    private string outlinePremise = "";
+    private int outlineTargetBeats = 12;
+
+    // ── Validate ──
+    private bool showValidateModal;
+    private bool validating;
+    private bool generatingMore;
+    private int activeIssueIdx;
+    private string validateProgress = "";
+    private int validateCompleted, validateTotal;
+    private List<CanonIssue> validationResults = [];
+
+    // ── Editor ──
+    private string viewMode = "editor"; // "editor" or "preview" (mobile only; desktop shows both)
+    private string printHtml = "";
+
+    // ── Refinement ──
+    private bool showRefinementPanel;
+    private bool refining;
+    private string refineStatus = "";
+    private RefinementReport? refinement;
+    private string? editingNoteId;
+    private string editBuffer = "";
+    private string? applyingNoteId;
+
+    // ── Scene sidebar ──
+    private bool showSceneSidebar;
+    private List<(string id, string name, string nodeType)> _sceneEntities = [];
+    private List<string> validationIssues = [];
+    private WorldNode? detailNode;
+    private DotNetObjectReference<WriteStory>? miniGraphRef;
+    private List<OutlineSection> outlineSections = [];
+
+    private record OutlineSection(
+        int index,
+        string title,
+        int wordCount,
+        List<(string id, string name)> characters,
+        List<(string id, string name)> locations,
+        List<(string id, string name, string nodeType)> items);
+
+    private bool dirty;
+    private bool hasExistingText => !string.IsNullOrWhiteSpace(storyText);
+
+    // ── Bottom drawers (Claude / TTS / Story Arc) ──
+    private bool showChatDrawer;
+    private bool showTtsDrawer;
+    private bool showArcDrawer;
+
+    private void ToggleDrawer(string which)
+    {
+        // One-at-a-time: opening one closes the others.
+        var openSelf = which switch
+        {
+            "chat" => !showChatDrawer,
+            "tts"  => !showTtsDrawer,
+            "arc"  => !showArcDrawer,
+            _ => false,
+        };
+        showChatDrawer = which == "chat" && openSelf;
+        showTtsDrawer  = which == "tts"  && openSelf;
+        showArcDrawer  = which == "arc"  && openSelf;
+    }
+
+    // ── Claude Code CLI chat ──
+    private record ChatMessage(string Role, string Text)
+    {
+        public string Text { get; set; } = Text;
+    }
+    private readonly List<ChatMessage> chatMessages = [];
+    private string chatInput = "";
+    private bool chatBusy;
+    private string chatStatus = "";
+    private CancellationTokenSource? chatCts;
+
+    private async Task HandleChatKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && (e.CtrlKey || e.MetaKey))
+        {
+            await SendChatAsync();
+        }
+    }
+
+    private async Task SendChatAsync()
+    {
+        if (chatBusy || string.IsNullOrWhiteSpace(chatInput)) return;
+
+        var userText = chatInput.Trim();
+        chatInput = "";
+        chatMessages.Add(new ChatMessage("user", userText));
+
+        chatBusy = true;
+        chatStatus = "Operator working...";
+        chatCts = new CancellationTokenSource();
+        StateHasChanged();
+
+        var operatorCtx = new Prose.Core.Services.Operator.OperatorContext
+        {
+            ProjectId = project.Id,
+            StoryText = storyText ?? "",
+            StoryTitle = project.Title,
+        };
+
+        Prose.Core.Services.Operator.OperatorEvent? lastEvent = null;
+        try
+        {
+            await foreach (var ev in Operator.SendAsync(userText, operatorCtx, chatCts.Token))
+            {
+                lastEvent = ev;
+                switch (ev)
+                {
+                    case Prose.Core.Services.Operator.OperatorEvent.AssistantText txt:
+                        chatMessages.Add(new ChatMessage("assistant", txt.Text));
+                        chatStatus = "Operator working...";
+                        break;
+                    case Prose.Core.Services.Operator.OperatorEvent.ToolStarted started:
+                        chatMessages.Add(new ChatMessage("tool", $"{started.Name}({CompactArgs(started.ArgsJson)})"));
+                        chatStatus = $"Calling {started.Name}…";
+                        if (started.Name == "propose_story_edits")
+                        {
+                            CaptureEditProposal(started.ArgsJson);
+                        }
+                        break;
+                    case Prose.Core.Services.Operator.OperatorEvent.ToolCompleted done:
+                        chatMessages.Add(new ChatMessage("tool-result", $"{done.Name} {(done.IsError ? "errored" : "returned")} ({done.ResultJson.Length} chars)"));
+                        chatStatus = "Operator working...";
+                        break;
+                    case Prose.Core.Services.Operator.OperatorEvent.Error err:
+                        chatMessages.Add(new ChatMessage("error", err.Message));
+                        break;
+                }
+
+                StateHasChanged();
+                try { await JS.InvokeVoidAsync("eval", "var c = document.getElementById('chat-history'); if (c) c.scrollTop = c.scrollHeight;"); }
+                catch { /* JS interop unavailable during prerender — ignore */ }
+            }
+        }
+        catch (OperationCanceledException)
+        {
+            chatMessages.Add(new ChatMessage("error", "[cancelled]"));
+        }
+        catch (Exception ex)
+        {
+            chatMessages.Add(new ChatMessage("error", ex.Message));
+        }
+        finally
+        {
+            chatBusy = false;
+            chatStatus = "";
+            chatCts?.Dispose();
+            chatCts = null;
+            StateHasChanged();
+        }
+    }
+
+    private static string CompactArgs(string json)
+    {
+        if (string.IsNullOrEmpty(json)) return "";
+        // Strip whitespace and truncate so the tool-call line stays one row.
+        var compact = System.Text.RegularExpressions.Regex.Replace(json, @"\s+", " ");
+        return compact.Length > 90 ? compact[..87] + "…" : compact;
+    }
+
+    private void CancelChat()
+    {
+        chatCts?.Cancel();
+    }
+
+    private void ClearChat()
+    {
+        chatMessages.Clear();
+    }
+
+    // ── Edit-proposal review modal ──
+    // The propose_story_edits operator tool sends a tool_use block whose args
+    // are find/replace pairs. We intercept the ToolStarted event in the chat
+    // stream, parse the args, and pop a side-by-side diff modal for review.
+    private sealed class EditProposal
+    {
+        public string Label { get; set; } = "";
+        public string Find { get; set; } = "";
+        public string Replace { get; set; } = "";
+        public string Rationale { get; set; } = "";
+        public int MatchCount { get; set; }
+        public bool Approved { get; set; } = true;
+    }
+
+    private readonly List<EditProposal> pendingEdits = [];
+    private bool showEditProposalModal;
+    private string combinedPreview = "";
+
+    private void CaptureEditProposal(string argsJson)
+    {
+        try
+        {
+            using var doc = System.Text.Json.JsonDocument.Parse(argsJson);
+            if (!doc.RootElement.TryGetProperty("edits", out var arr) ||
+                arr.ValueKind != System.Text.Json.JsonValueKind.Array) return;
+
+            pendingEdits.Clear();
+            var sourceText = storyText ?? "";
+            foreach (var e in arr.EnumerateArray())
+            {
+                var find = e.TryGetProperty("find", out var f) ? f.GetString() ?? "" : "";
+                var matchCount = string.IsNullOrEmpty(find) ? 0 : CountOccurrences(sourceText, find);
+                pendingEdits.Add(new EditProposal
+                {
+                    Label = e.TryGetProperty("label", out var l) ? l.GetString() ?? "" : "",
+                    Find = find,
+                    Replace = e.TryGetProperty("replace", out var r) ? r.GetString() ?? "" : "",
+                    Rationale = e.TryGetProperty("rationale", out var ra) ? ra.GetString() ?? "" : "",
+                    MatchCount = matchCount,
+                    Approved = matchCount == 1,
+                });
+            }
+            if (pendingEdits.Count > 0)
+            {
+                RebuildCombinedPreview();
+                showEditProposalModal = true;
+            }
+        }
+        catch
+        {
+            // If args don't parse, the operator's proposal is malformed —
+            // leave it visible in chat but don't open the modal.
+        }
+    }
+
+    private void OnEditToggled(int index, bool approved)
+    {
+        if (index < 0 || index >= pendingEdits.Count) return;
+        pendingEdits[index].Approved = approved;
+        RebuildCombinedPreview();
+    }
+
+    private void RebuildCombinedPreview()
+    {
+        var working = storyText ?? "";
+        foreach (var edit in pendingEdits)
+        {
+            if (!edit.Approved) continue;
+            if (edit.MatchCount != 1) continue;
+            var idx = working.IndexOf(edit.Find, StringComparison.Ordinal);
+            if (idx < 0) continue;
+            working = working[..idx] + edit.Replace + working[(idx + edit.Find.Length)..];
+        }
+        combinedPreview = working;
+    }
+
+    private async Task ApplyEditProposal()
+    {
+        // Close the modal first so the user sees it dismiss immediately,
+        // even if the save / JS interop takes a moment.
+        var newText = combinedPreview;
+        pendingEdits.Clear();
+        combinedPreview = "";
+        showEditProposalModal = false;
+        StateHasChanged();
+
+        storyText = newText;
+        project.Html = newText;
+        Repo.SaveChapter(project);
+        try { await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText); }
+        catch { /* prerender — ignore */ }
+        UpdateWordCount();
+        chatMessages.Add(new ChatMessage("tool-result", "edits applied to story"));
+        StateHasChanged();
+    }
+
+    private void CancelEditProposal()
+    {
+        pendingEdits.Clear();
+        combinedPreview = "";
+        showEditProposalModal = false;
+        StateHasChanged();
+    }
+
+    private static int CountOccurrences(string haystack, string needle)
+    {
+        if (string.IsNullOrEmpty(haystack) || string.IsNullOrEmpty(needle)) return 0;
+        int count = 0, idx = 0;
+        while ((idx = haystack.IndexOf(needle, idx, StringComparison.Ordinal)) >= 0)
+        {
+            count++;
+            idx += needle.Length;
+        }
+        return count;
+    }
+
+    // ── Lifecycle ──
+
+    protected override async Task OnInitializedAsync()
+    {
+        ttsAvailable = await TtsSvc.IsConfiguredAsync();
+        if (!string.IsNullOrEmpty(ProjectId))
+        {
+            var loaded = Repo.LoadChapter(ProjectId);
+            if (loaded != null) project = loaded;
+        }
+        ResolveBookContext();
+        storyText = project.Html;
+        currentOutline = OutlineSvc.Load(project.Id);
+        refinement = Refinement.LoadReport(project.Id);
+        validationResults = LoadValidation();
+        if (validationResults.Count > 0) showValidateModal = true;
+        UpdateWordCount();
+
+        // Auto-save new projects so they appear in the Stories list
+        if (string.IsNullOrEmpty(ProjectId))
+        {
+            Repo.SaveChapter(project);
+            Nav.NavigateTo($"/stories/write/{project.Id}", replace: true);
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("writeInterop.initMdPreview", "story-surface", "md-preview");
+            await JS.InvokeVoidAsync("writeInterop.syncScroll", "story-surface", "preview-scroll-container");
+            await JS.InvokeVoidAsync("writeInterop.initEditorResizer");
+        }
+    }
+
+    // ── JS Callbacks ──
+
+    private void OnMarkdownChanged()
+    {
+        dirty = true;
+        saved = false;
+        UpdateWordCount();
+    }
+
+    private async Task OnTextareaInteract()
+    {
+        try
+        {
+            var sel = await JS.InvokeAsync<SelectionInfo>("writeInterop.getSelection", "story-surface");
+            var text = sel?.Text ?? "";
+            if (text != currentSelection)
+            {
+                currentSelection = text;
+                hasSelection = !string.IsNullOrWhiteSpace(currentSelection);
+                StateHasChanged();
+            }
+        }
+        catch { }
+    }
+
+    [JSInvokable]
+    public void OnEntityClicked(string entityId)
+    {
+        ShowEntityDetail(entityId);
+        if (!showSceneSidebar) showSceneSidebar = true;
+        StateHasChanged();
+    }
+
+    [JSInvokable] public void OnNodeClicked(string nodeId) => OnEntityClicked(nodeId);
+    [JSInvokable] public Task OnNodeExpand(string nodeId) { OnEntityClicked(nodeId); return Task.CompletedTask; }
+    [JSInvokable] public void OnBackgroundClicked() { detailNode = null; StateHasChanged(); }
+
+    // ── Command Execution ──
+
+    // ── Ask ──
+
+    private async Task ExecuteAsk()
+    {
+        if (string.IsNullOrWhiteSpace(commandText)) return;
+        busy = true;
+        commandResult = "";
+        statusMessage = askScope == "series" ? "Querying all stories + world graph..." : "Querying story + world graph...";
+        StateHasChanged();
+
+        try
+        {
+            var session = new NarrativeSessionContext(Graph);
+            session.ScanText(commandText);
+            if (hasExistingText) session.ScanText(storyText);
+            var worldContext = session.BuildContext();
+
+            string storyContext;
+            if (askScope == "series")
+            {
+                var allProjects = Repo.ListChapters();
+                var parts = new List<string>();
+                foreach (var proj in allProjects)
+                {
+                    var full = Repo.LoadChapter(proj.Id);
+                    if (full == null) continue;
+                    var text = full.PlainText;
+                    if (text.Length > 0)
+                        parts.Add($"=== {full.Title} ===\n{(text.Length > 8000 ? text[..8000] + "..." : text)}");
+                }
+                storyContext = string.Join("\n\n", parts);
+            }
+            else
+                storyContext = storyText;
+
+            var system = $"""
+                You are a story assistant. Answer ONLY using the story text and world graph data below.
+                Do NOT invent facts. If the answer is not in the provided data, say "Not found in available data."
+
+                WORLD GRAPH (canonical entity data):
+                {worldContext}
+
+                STORY TEXT:
+                {(storyContext.Length > 12000 ? storyContext[..12000] + "\n[truncated]" : storyContext)}
+                """;
+            commandResult = await Llm.GenerateAsync(system, commandText, 0.3, 2048);
+        }
+        catch (Exception ex) { commandResult = $"Error: {ex.Message}"; }
+        finally { busy = false; statusMessage = ""; }
+    }
+
+    private void CloseAsk() { commandResult = ""; showAskModal = false; }
+
+    private async Task HandleAskKeyDown(KeyboardEventArgs e)
+    {
+        if (e is { Key: "Enter", CtrlKey: true }) await ExecuteAsk();
+    }
+
+    // ── Write ──
+
+    private async Task DoWrite()
+    {
+        if (string.IsNullOrWhiteSpace(writeText)) return;
+        busy = true;
+        writeResult = "";
+        statusMessage = "Loading world context...";
+        StateHasChanged();
+
+        try
+        {
+            // Auto-detect characters and locations from existing story text + prompt
+            // so the LLM always has full graph context for every entity mentioned
+            var characters = new List<string>(project.Characters);
+            if (hasExistingText)
+            {
+                var session = new NarrativeSessionContext(Graph);
+                session.ScanText(storyText);
+                session.ScanText(writeText);
+                var snapshot = session.GetSnapshot();
+                foreach (var e in snapshot.PrimaryEntities.Where(e => e.NodeType == "character"))
+                    if (!characters.Contains(e.Name, StringComparer.OrdinalIgnoreCase))
+                        characters.Add(e.Name);
+            }
+
+            // Detect location from scene sidebar or graph scan
+            string? location = _sceneEntities
+                .Where(e => e.nodeType is "district" or "place" or "location")
+                .Select(e => e.name)
+                .FirstOrDefault();
+
+            statusMessage = "Writing...";
+            StateHasChanged();
+
+            if (!hasExistingText)
+            {
+                var opening = await Starter.GenerateOpeningAsync(new StoryStarterRequest
+                {
+                    Premise = writeText, Characters = characters, Location = location,
+                });
+                writeResult = opening.Text;
+                if (project.Title is Constants.Defaults.UntitledStory or "") project.Title = opening.Title;
+            }
+            else
+            {
+                var paragraphs = storyText.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
+                    .Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
+
+                // Inject story intelligence constraints
+                var storyConstraints = StoryState.BuildConstraints(project.Id);
+                var knowledgeConstraints = KnowledgeMap.BuildPovConstraints(project.Id, characters.FirstOrDefault() ?? "Kyle");
+                var eventContext = EventLog.BuildRecentContext(project.Id);
+                var outline = OutlineSvc.Load(project.Id);
+                var outlineCtx = outline != null ? OutlineSvc.BuildBeatContext(outline, StoryState.GetState(project.Id).BeatCount) : null;
+
+                writeResult = await Starter.ContinueAsync(paragraphs, writeText, null, location, characters,
+                    storyConstraints, knowledgeConstraints, eventContext, outlineCtx);
+            }
+        }
+        catch (Exception ex) { writeResult = $"Error: {ex.Message}"; }
+        finally { busy = false; statusMessage = ""; }
+    }
+
+    private async Task ApplyWrite()
+    {
+        if (string.IsNullOrEmpty(writeResult)) return;
+        await AppendEditorText(writeResult);
+        UpdateWordCount();
+        Save();
+        writeResult = "";
+        writeText = "";
+        showWriteModal = false;
+        _ = PostGenerationHook();
+        await FocusEditorEnd();
+    }
+
+    private async Task HandleWriteKeyDown(KeyboardEventArgs e)
+    {
+        if (e is { Key: "Enter", CtrlKey: true }) await DoWrite();
+    }
+
+    // ── Text ──
+
+    private void OnTextChanged()
+    {
+        UpdateWordCount();
+        dirty = true;
+        saved = false;
+    }
+
+    private void UpdateWordCount() =>
+        wordCount = string.IsNullOrWhiteSpace(storyText) ? 0
+            : storyText.Split((char[])[' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
+
+    // ── Persistence ──
+
+    private void Save()
+    {
+        project.Html = storyText;
+        project.Modified = DateTime.UtcNow;
+        Repo.SaveChapter(project);
+        saved = true;
+        dirty = false;
+    }
+
+    private async Task ForceSave()
+    {
+        // Read directly from DOM to catch any content not yet flushed via oninput binding
+        try
+        {
+            var domText = await JS.InvokeAsync<string>("writeInterop.getText", "story-surface");
+            if (!string.IsNullOrEmpty(domText)) storyText = domText;
+        }
+        catch { }
+        Save();
+    }
+
+    // ── Editor helpers ──
+
+    private async Task SetEditorText(string text)
+    {
+        storyText = text;
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", text);
+    }
+
+    private async Task AppendEditorText(string text)
+    {
+        storyText += (storyText.Length > 0 && !storyText.EndsWith("\n\n") ? "\n\n" : "") + text;
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
+    }
+
+    private async Task FocusEditorEnd() =>
+        await JS.InvokeVoidAsync("writeInterop.focusEnd", "story-surface");
+
+    // ── Formatting ──
+
+    private async Task FormatBlock(string tag)
+    {
+        var prefix = tag switch { "h1" => "# ", "h2" => "## ", "h3" => "### ", "blockquote" => "> ", _ => "" };
+        try { storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdPrefixLine", "story-surface", prefix); }
+        catch { }
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+    }
+
+    private async Task FormatInline(string command)
+    {
+        var (pre, suf) = command switch { "bold" => ("**", "**"), "italic" => ("*", "*"), "strikethrough" => ("~~", "~~"), _ => ("", "") };
+        if (pre.Length == 0) return;
+        try { storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdWrapSelection", "story-surface", pre, suf); }
+        catch { }
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+    }
+
+    private async Task FormatList(string type)
+    {
+        var prefix = type == "ordered" ? "1. " : "- ";
+        try { storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdPrefixLine", "story-surface", prefix); }
+        catch { }
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+    }
+
+    private async Task InsertHorizontalRule()
+    {
+        storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdWrapSelection", "story-surface", "\n\n---\n\n", "");
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+    }
+
+    private async Task DoInsertImage()
+    {
+        if (string.IsNullOrWhiteSpace(imageBase64)) return;
+        var src = NormalizeImageSrc(imageBase64);
+        var md = $"![{imageAlt}]({src})";
+        storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdWrapSelection", "story-surface", md, "");
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        imageBase64 = "";
+        imageAlt = "";
+        showImageInsert = false;
+    }
+
+    private static string NormalizeImageSrc(string input)
+    {
+        var trimmed = input.Trim();
+        if (trimmed.StartsWith("data:image/")) return trimmed;
+        // Guess PNG if no prefix
+        return $"data:image/png;base64,{trimmed}";
+    }
+
+    private async Task InsertTag(string tag)
+    {
+        storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdWrapSelection", "story-surface", tag, "");
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+    }
+
+    private void SwitchViewMode(string mode)
+    {
+        viewMode = mode;
+        StateHasChanged();
+    }
+
+    // ── Post-generation hook ──
+
+    private async Task PostGenerationHook()
+    {
+        // Entity linking happens automatically via the 2s input debounce in JS
+        if (showSceneSidebar) RefreshOutline();
+        _ = RunExtractionAsync();
+
+        // Closed-loop story intelligence: update state, log events, sync knowledge
+        var pid = project.Id;
+        var beatIdx = StoryState.GetState(pid).BeatCount;
+        try
+        {
+            // Extract what changed in the narrative (character positions, injuries, emotions)
+            await StoryState.UpdateFromTextAsync(pid, writeResult ?? storyText, storyText);
+
+            // Record structured events (who did what, where)
+            await EventLog.ExtractAndLogAsync(pid, writeResult ?? storyText, beatIdx);
+
+            // Sync knowledge map (who learned what, dramatic irony tracking)
+            var state = StoryState.GetState(pid);
+            var recentEvents = EventLog.GetEvents(pid);
+            KnowledgeMap.SyncFromState(pid, state, recentEvents, beatIdx);
+        }
+        catch { /* Story intelligence is best-effort — never break generation */ }
+    }
+
+    // ── Scene sidebar ──
+
+    private void ShowEntityDetail(string entityId)
+    {
+        detailNode = Graph.GetNode(entityId);
+    }
+
+    private void RefreshOutline()
+    {
+        if (string.IsNullOrWhiteSpace(storyText))
+        {
+            outlineSections = [];
+            _sceneEntities = [];
+            return;
+        }
+
+        // Split document on scene breaks (====== or <hr>)
+        var sections = storyText.Split(["======"], StringSplitOptions.None)
+            .Select(s => s.Trim())
+            .Where(s => s.Length > 0)
+            .ToList();
+
+        outlineSections = [];
+
+        for (int i = 0; i < sections.Count; i++)
+        {
+            var sectionText = sections[i];
+            var title = $"Section {i + 1}";
+            var wordCount = sectionText.Split((char[])[' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
+
+            // Detect entities in this section
+            var session = new NarrativeSessionContext(Graph);
+            session.ScanText(sectionText);
+            var snapshot = session.GetSnapshot();
+            var textLower = sectionText.ToLowerInvariant();
+
+            var chars = snapshot.PrimaryEntities
+                .Where(e => e.NodeType == "character" && textLower.Contains(e.Name.ToLowerInvariant()))
+                .Select(e => (id: Graph.ResolveId(e.Name) ?? "", name: e.Name))
+                .DistinctBy(e => e.name).ToList();
+
+            var locs = snapshot.PrimaryEntities
+                .Where(e => e.NodeType == "place" && textLower.Contains(e.Name.ToLowerInvariant()))
+                .Select(e => (id: Graph.ResolveId(e.Name) ?? "", name: e.Name))
+                .DistinctBy(e => e.name).ToList();
+
+            var items = snapshot.PrimaryEntities
+                .Where(e => e.NodeType is "weapon" or "equipment" or "technology" && textLower.Contains(e.Name.ToLowerInvariant()))
+                .Select(e => (id: Graph.ResolveId(e.Name) ?? "", name: e.Name, nodeType: e.NodeType))
+                .DistinctBy(e => e.name).ToList();
+
+            outlineSections.Add(new OutlineSection(i, title, wordCount, chars, locs, items));
+        }
+
+        // Also refresh the flat entity list
+        RefreshSceneEntities();
+
+        // Validation
+        validationIssues = Validator.ValidateQuick(storyText)
+            .Select(iss => $"[{iss.Category}] {iss.EntityName}: {iss.Description}").ToList();
+    }
+
+    private async Task ScrollToSection(int sectionIndex)
+    {
+        await JS.InvokeVoidAsync("writeInterop.scrollToSection", "story-surface", sectionIndex);
+    }
+
+    private void RefreshSceneEntities()
+    {
+        if (string.IsNullOrWhiteSpace(storyText)) return;
+        var session = new NarrativeSessionContext(Graph);
+        session.ScanText(storyText);
+        var snapshot = session.GetSnapshot();
+        var textLower = storyText.ToLowerInvariant();
+
+        _sceneEntities = snapshot.PrimaryEntities
+            .Where(e => textLower.Contains(e.Name.ToLowerInvariant()))
+            .Select(e => (id: Graph.ResolveId(e.Name) ?? "", name: e.Name, nodeType: e.NodeType))
+            .DistinctBy(e => e.name)
+            .OrderBy(e => e.nodeType).ThenBy(e => e.name)
+            .ToList();
+
+        validationIssues = Validator.ValidateQuick(storyText)
+            .Select(i => $"[{i.Category}] {i.EntityName}: {i.Description}").ToList();
+    }
+
+    private async Task RenderMiniGraph()
+    {
+        RefreshSceneEntities();
+        if (_sceneEntities.Count == 0) return;
+        miniGraphRef?.Dispose();
+        miniGraphRef = DotNetObjectReference.Create(this);
+
+        var ids = _sceneEntities.Select(e => e.id).Where(id => !string.IsNullOrEmpty(id)).ToHashSet();
+        var expanded = new HashSet<string>(ids);
+        foreach (var id in ids)
+            foreach (var n in Graph.GetNeighbors(id, 1))
+                expanded.Add(n.Id);
+
+        var nodes = expanded.Select(id => Graph.GetNode(id)).Where(n => n != null)
+            .Select(n => new { id = n!.Id, name = n.Name, nodeType = n.NodeType, edgeCount = Graph.GetAllEdges(n.Id).Count }).ToArray();
+        var edges = expanded.SelectMany(id => Graph.GetAllEdges(id))
+            .Where(e => expanded.Contains(e.Source) && expanded.Contains(e.Target))
+            .DistinctBy(e => (e.Source, e.Target, e.RelationType))
+            .Select(e => new { source = e.Source, target = e.Target, relationType = e.RelationType, weight = e.Weight, sentiment = e.Sentiment }).ToArray();
+
+        await JS.InvokeVoidAsync("graphInterop.init", "miniGraphCanvas", miniGraphRef, nodes, edges);
+    }
+
+    // ── Project management ──
+
+    private void LoadChapter(string id)
+    {
+        if (hasExistingText) Save();
+        var loaded = Repo.LoadChapter(id);
+        if (loaded == null) return;
+        project = loaded;
+        storyText = project.Html;
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        error = null;
+        UpdateWordCount();
+        Nav.NavigateTo($"/stories/write/{id}", replace: true);
+    }
+
+    private string SafeFilename(string ext) =>
+        project.Title.Replace(" ", "_").Replace("\"", "").Replace("'", "").Replace("/", "").Replace("\\", "") + ext;
+
+    private async Task ExportAsTxt()
+    {
+        var text = $"{project.Title}\n\n{Markdown.StripToPlainText(storyText)}";
+        await JS.InvokeVoidAsync("writeInterop.downloadText", SafeFilename(".txt"), text);
+    }
+
+    private async Task ExportAsMd()
+    {
+        var md = $"# {project.Title}\n\n{storyText}";
+        await JS.InvokeVoidAsync("writeInterop.downloadText", SafeFilename(".md"), md);
+    }
+
+    private async Task ExportAsPdf()
+    {
+        var rendered = Markdown.RenderToPrintHtml(storyText);
+        var html = Export.ToPrintHtml(project.Title, rendered, project.Characters);
+        await JS.InvokeVoidAsync("writeInterop.openPrintWindow", html);
+    }
+
+    private async Task ExportAsMp3() => await ExportAudio("mp3_44100_128", ".mp3", "audio/mpeg");
+    private async Task ExportAsOgg() => await ExportAudio("ogg_vorbis", ".ogg", "audio/ogg");
+
+    private async Task ExportAudio(string format, string ext, string mime)
+    {
+        if (narrating || !ttsAvailable || !hasExistingText) return;
+        narrating = true;
+        statusMessage = $"Synthesizing {ext.TrimStart('.')} narration...";
+        StateHasChanged();
+        try
+        {
+            var ttsText = ConvertTagsForTts(storyText);
+            var audio = await TtsSvc.SynthesizeAsync(ttsText, voiceId: null, outputFormat: format, ct: default);
+            var b64 = Convert.ToBase64String(audio);
+            await JS.InvokeVoidAsync("writeInterop.downloadBlob", SafeFilename(ext), b64, mime);
+        }
+        catch (Exception ex) { error = $"Audio export failed: {ex.Message}"; }
+        finally { narrating = false; statusMessage = ""; }
+    }
+
+    private void NewStory()
+    {
+        if (hasExistingText) Save();
+        project = new Chapter();
+        Repo.SaveChapter(project);
+        storyText = "";
+        printHtml = "";
+        error = null;
+        saved = false;
+        wordCount = 0;
+        Nav.NavigateTo($"/stories/write/{project.Id}", replace: true);
+    }
+
+    // ── Audio ──
+
+    private async Task ReadSelected()
+    {
+
+        if (narrating) return;
+        try
+        {
+            var surfaceId = "story-surface";
+            var sel = await JS.InvokeAsync<SelectionInfo>("writeInterop.getSelection", surfaceId);
+            if (sel != null && !string.IsNullOrWhiteSpace(sel.Text))
+                await NarrateText(sel.Text);
+        }
+        catch { }
+    }
+
+    private async Task ReadAll()
+    {
+
+        if (narrating || !hasExistingText) return;
+        await NarrateText(storyText);
+    }
+
+    private async Task NarrateText(string text)
+    {
+        narrating = true;
+        audioPlayer?.SetLoading(true);
+        StateHasChanged();
+        try
+        {
+            // Convert custom tags to ElevenLabs-compatible format
+            var ttsText = ConvertTagsForTts(text);
+
+            byte[] audio;
+            if (ttsEngine == "elevenlabs" && await TtsSvc.IsConfiguredAsync())
+                audio = await TtsSvc.SynthesizeAsync(ttsText);
+            else
+                audio = await DraftTts.SynthesizeAsync(ttsText);
+            if (audioPlayer != null) await audioPlayer.LoadAudioAsync(audio);
+        }
+        catch (Exception ex) { audioPlayer?.SetError(ex.Message); }
+        finally { narrating = false; }
+    }
+
+    // ── Entity extraction ──
+
+    private async Task RunExtractionAsync()
+    {
+        if (extracting || !hasExistingText) return;
+        extracting = true;
+        graphStatus = "Scanning for entities...";
+        await InvokeAsync(StateHasChanged);
+        try
+        {
+            var storyPoint = $"story:{project.Id}";
+            var (entities, relationships) = await EntityExtract.ExtractAndMergeAsync(storyText, project.Id, storyPoint);
+            lastExtractedText = storyText;
+
+            // Auto-detect characters
+            var session = new NarrativeSessionContext(Graph);
+            session.ScanText(storyText);
+            var detected = session.GetSnapshot().PrimaryEntities
+                .Where(e => e.NodeType == "character" && storyText.Contains(e.Name, StringComparison.OrdinalIgnoreCase))
+                .Select(e => e.Name);
+            foreach (var name in detected)
+                if (!project.Characters.Contains(name, StringComparer.OrdinalIgnoreCase))
+                    project.Characters.Add(name);
+
+            graphStatus = entities > 0 || relationships > 0
+                ? $"Graph: +{entities} entities, +{relationships} relationships"
+                : "Graph up to date";
+        }
+        catch (Exception ex) { graphStatus = $"Extraction failed: {ex.Message}"; }
+        finally
+        {
+            extracting = false;
+            await InvokeAsync(StateHasChanged);
+            _ = Task.Delay(5000).ContinueWith(_ => InvokeAsync(() => { graphStatus = null; StateHasChanged(); }));
+        }
+    }
+
+    // ── What Next ──
+
+    private async Task WhatNext()
+    {
+        showWhatNextModal = true;
+        generatingPremises = true;
+        conflictPremises.Clear();
+        StateHasChanged();
+        try
+        {
+            var characters = project.Characters.Count > 0 ? project.Characters : ["Kyle", "Sable"];
+            var state = StoryState.GetState(project.Id);
+            var events = EventLog.BuildRecentContext(project.Id);
+            conflictPremises = await Agenda.GenerateScenePremisesAsync(characters, state, events);
+        }
+        catch (Exception ex) { error = $"Agenda failed: {ex.Message}"; }
+        finally { generatingPremises = false; }
+    }
+
+    private void UseConflictPremise(ConflictPremise premise)
+    {
+        showWhatNextModal = false;
+        writeText = premise.Premise;
+        showWriteModal = true;
+    }
+
+    // ── Outline ──
+
+    private void ShowOutlineModal()
+    {
+        currentOutline = OutlineSvc.Load(project.Id);
+        showOutlineModal = true;
+    }
+
+    private async Task GenerateOutline()
+    {
+        generatingOutline = true;
+        StateHasChanged();
+        try
+        {
+            var characters = project.Characters.Count > 0 ? project.Characters : ["Kyle", "Sable"];
+            currentOutline = await OutlineSvc.GenerateOutlineAsync(
+                outlinePremise, characters, null, outlineTargetBeats);
+            OutlineSvc.Save(project.Id, currentOutline);
+            if (project.Title is Constants.Defaults.UntitledStory or "" && !string.IsNullOrEmpty(currentOutline.Title))
+                project.Title = currentOutline.Title;
+        }
+        catch (Exception ex) { error = $"Outline failed: {ex.Message}"; }
+        finally { generatingOutline = false; }
+    }
+
+    private void WriteBeatFromOutline(OutlineBeat beat)
+    {
+        showOutlineModal = false;
+        writeText = beat.Goal;
+        showWriteModal = true;
+        OutlineSvc.MarkBeatWritten(currentOutline!, beat.BeatIndex);
+        OutlineSvc.Save(project.Id, currentOutline!);
+    }
+
+    // ── Validate ──
+
+    private void SaveValidationState()
+    {
+        var path = StoryFolderHelper.GetFilePath(Paths.ChaptersDir, project.Id, "validation.json", project.Title);
+        var json = System.Text.Json.JsonSerializer.Serialize(validationResults,
+            new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+        System.IO.File.WriteAllText(path, json);
+    }
+
+    private List<CanonIssue> LoadValidation()
+    {
+        var path = StoryFolderHelper.FindFile(Paths.ChaptersDir, project.Id, "validation.json");
+        if (path == null) return [];
+        try
+        {
+            var json = System.IO.File.ReadAllText(path);
+            return System.Text.Json.JsonSerializer.Deserialize<List<CanonIssue>>(json) ?? [];
+        }
+        catch { return []; }
+    }
+
+    private async Task RunValidation()
+    {
+        showValidateModal = true;
+        validating = true;
+        validateProgress = "Preparing...";
+        validateCompleted = 0;
+        validateTotal = 0;
+        validationResults.Clear();
+        StateHasChanged();
+
+        void OnProgress(string message, int completed, int total)
+        {
+            validateProgress = message;
+            validateCompleted = completed;
+            validateTotal = total;
+            InvokeAsync(StateHasChanged);
+        }
+
+        Validator.OnValidationProgress += OnProgress;
+        try
+        {
+            var session = new NarrativeSessionContext(Graph);
+            session.ScanText(storyText);
+            var worldContext = session.BuildContext();
+            validationResults = await Validator.ValidateDeepAsync(storyText, worldContext);
+            SaveValidationState();
+        }
+        catch (Exception ex) { error = $"Validation failed: {ex.Message}"; }
+        finally
+        {
+            Validator.OnValidationProgress -= OnProgress;
+            validating = false;
+        }
+    }
+
+    private async Task ResolveKeepCanon(int idx)
+    {
+        if (idx < 0 || idx >= validationResults.Count) return;
+        var issue = validationResults[idx];
+        if (string.IsNullOrEmpty(issue.StoryText) || string.IsNullOrEmpty(issue.CanonTruth)) return;
+
+        // Replace the contradicting text in the editor with the canon truth
+        storyText = storyText.Replace(issue.StoryText, issue.CanonTruth);
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
+        Save();
+        validationResults.RemoveAt(idx);
+        SaveValidationState();
+    }
+
+
+    private void ResolveUpdateCanon(int idx, string canonFix)
+    {
+        if (idx < 0 || idx >= validationResults.Count) return;
+        var issue = validationResults[idx];
+        if (string.IsNullOrEmpty(issue.EntityName)) return;
+
+        // Find the entity in the graph and update its canon truth
+        var node = Graph.AllNodes()
+            .FirstOrDefault(n => n.Name.Equals(issue.EntityName, StringComparison.OrdinalIgnoreCase));
+        if (node != null)
+        {
+            // Update the relevant property — canon_truth stores what was wrong, canon_fix stores the correction
+            node.Properties["canon_override"] = canonFix;
+            // Also update description if the canon truth was from the description
+            if (node.Properties.TryGetValue("description", out var desc) &&
+                desc.Contains(issue.CanonTruth, StringComparison.OrdinalIgnoreCase))
+            {
+                node.Properties["description"] = desc.Replace(issue.CanonTruth, canonFix);
+            }
+            Graph.Save();
+        }
+
+        validationResults.RemoveAt(idx);
+        SaveValidationState();
+    }
+
+    private async Task ResolveWithAlternative(int idx, string altText)
+    {
+        if (idx < 0 || idx >= validationResults.Count) return;
+        var issue = validationResults[idx];
+        if (string.IsNullOrEmpty(issue.StoryText)) return;
+
+        // Replace story text with the chosen alternative
+        storyText = storyText.Replace(issue.StoryText, altText);
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
+        Save();
+        validationResults.RemoveAt(idx);
+        SaveValidationState();
+    }
+
+    private async Task GenerateMore(int idx)
+    {
+        if (idx < 0 || idx >= validationResults.Count) return;
+        activeIssueIdx = idx;
+        generatingMore = true;
+        StateHasChanged();
+        try
+        {
+            var issue = validationResults[idx];
+            var moreAlts = await Validator.GenerateAlternativesAsync(
+                issue.StoryText, issue.CanonTruth, storyText);
+            issue.Alternatives.AddRange(moreAlts);
+            SaveValidationState();
+        }
+        catch { }
+        finally { generatingMore = false; }
+    }
+
+    private void DismissIssue(int idx)
+    {
+        if (idx >= 0 && idx < validationResults.Count)
+            validationResults.RemoveAt(idx);
+        SaveValidationState();
+        if (!validationResults.Any())
+            showValidateModal = false;
+    }
+
+    // ── Suggest Alternatives ──
+
+    private async Task OpenSuggestAlternatives()
+    {
+
+        if (string.IsNullOrWhiteSpace(currentSelection)) return;
+        altOriginalText = currentSelection;
+        suggestedAlts.Clear();
+        altScores.Clear();
+        showAlternativesModal = true;
+        await GenerateMoreAlts();
+    }
+
+    private async Task GenerateMoreAlts()
+    {
+        generatingAlts = true;
+        StateHasChanged();
+        try
+        {
+            var system = $"""
+                You are rewriting a passage from a neo-noir story. Generate 5 alternative
+                phrasings that preserve the meaning but offer different voice, rhythm, or angle.
+                Each should feel like a different author's take on the same moment.
+
+                Story context (surrounding text):
+                {storyText[..Math.Min(2000, storyText.Length)]}
+
+                Return ONLY a JSON array of 5 strings. Nothing else.
+                """;
+
+            var response = await Llm.GenerateAsync(system, $"Rewrite this: {altOriginalText}", 0.8, 1024);
+            try
+            {
+                var json = response.Trim();
+                if (json.StartsWith("```")) { var nl = json.IndexOf('\n'); json = nl >= 0 ? json[(nl + 1)..] : json[3..]; }
+                if (json.EndsWith("```")) json = json[..^3];
+                var newAlts = System.Text.Json.JsonSerializer.Deserialize<List<string>>(json.Trim()) ?? [];
+                suggestedAlts.AddRange(newAlts);
+            }
+            catch { }
+
+            // Vote on all alternatives
+            if (suggestedAlts.Count > 0)
+            {
+                altScores = await Validator.VoteOnFixesAsync(
+                    altOriginalText, "", suggestedAlts, "rewrite alternative");
+            }
+        }
+        catch { }
+        finally { generatingAlts = false; }
+    }
+
+    private async Task ApplyAlternative(string altText)
+    {
+        storyText = storyText.Replace(altOriginalText, altText);
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
+        Save();
+        showAlternativesModal = false;
+    }
+
+    // ── Cleanup ──
+
+    public void Dispose()
+    {
+        if (dirty) { project.Html = storyText; Repo.SaveChapter(project); }
+        miniGraphRef?.Dispose();
+    }
+
+    // ── Helpers ──
+
+    private static string GetTypeBadgeClass(string type) => Constants.TypeBadge.For(type);
+
+    private static string GetTypeColor(string type) => type switch
+    {
+        "character" => "#17a2b8", "organization" => "#ffc107", "place" => "#28a745",
+        "faction" => "#6f42c1", "weapon" => "#dc3545", "equipment" => "#0d6efd",
+        "technology" => "#0dcaf0", _ => "#6c757d",
+    };
+
+    /// <summary>
+    /// Convert custom {pause:N}, {emotion:X} tags to ElevenLabs-compatible format.
+    /// ElevenLabs v3 understands [whispers], [sighs], [long pause], [short pause],
+    /// ellipses for pauses, and CAPITALS for emphasis.
+    /// </summary>
+    // Tags ElevenLabs v3 reliably interprets as vocal directions (not read aloud)
+    private static readonly HashSet<string> SafeTtsTags = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "whispers", "sighs", "laughs", "laughs harder", "chuckles",
+        "clears throat", "exhales", "exhales sharply", "inhales deeply",
+        "short pause", "long pause", "snorts", "gulps",
+    };
+
+    private static string ConvertTagsForTts(string text)
+    {
+        // Strip HTML tags
+        text = System.Text.RegularExpressions.Regex.Replace(text, "<[^>]+>", " ");
+
+        // Convert legacy {brace} tags to [bracket] equivalents
+        text = System.Text.RegularExpressions.Regex.Replace(text, @"\{pause:\d+\}", "[long pause]");
+        text = text.Replace("{emotion:whisper}", "[whispers]");
+        text = text.Replace("{emotion:sad}", "[sighs]");
+        text = System.Text.RegularExpressions.Regex.Replace(text, @"\{[a-z]+:[^}]+\}", "");
+
+        // Only keep [bracket] tags that ElevenLabs actually understands — strip all others
+        text = System.Text.RegularExpressions.Regex.Replace(text, @"\[([^\]]+)\]", match =>
+        {
+            var tag = match.Groups[1].Value.Trim();
+            return SafeTtsTags.Contains(tag) ? match.Value : "";
+        });
+
+        // Clean up
+        text = System.Text.RegularExpressions.Regex.Replace(text, @"  +", " ");
+        return text.Trim();
+    }
+
+    private record SelectionInfo(int Start, int End, string Text);
+
+    // ── Refinement handlers ──────────────────────────────────────────
+
+    private async Task ToggleRefinePanel()
+    {
+        if (showRefinementPanel) { showRefinementPanel = false; return; }
+        showSceneSidebar = false;
+        showRefinementPanel = true;
+        if (refinement == null) await RunRefinement();
+    }
+
+    private async Task RunRefinement()
+    {
+        if (refining) return;
+        refining = true;
+        refineStatus = "Loading story...";
+        StateHasChanged();
+
+        try
+        {
+            // The analyzer needs the structured AutonomousStory checkpoint, not the flat markdown.
+            var story = Director.LoadCheckpoint(project.Id);
+            if (story == null || story.Beats.Count == 0)
+            {
+                error = "No story checkpoint available — this editor can refine stories generated through the Stories pipeline.";
+                return;
+            }
+
+            refineStatus = $"Analyzing {story.Beats.Count} beats...";
+            StateHasChanged();
+
+            // Preserve any prior status (accepted/skipped) when re-analyzing by id match.
+            var prior = refinement?.Notes.ToDictionary(n => n.Id, n => (n.Status, n.AppliedAt)) ?? new();
+
+            refinement = await Refinement.AnalyzeAsync(story);
+
+            foreach (var n in refinement.Notes)
+            {
+                if (prior.TryGetValue(n.Id, out var prev))
+                {
+                    n.Status = prev.Status;
+                    n.AppliedAt = prev.AppliedAt;
+                }
+            }
+            Refinement.SaveReport(refinement);
+        }
+        catch (Exception ex) { error = $"Refinement failed: {ex.Message}"; }
+        finally
+        {
+            refining = false;
+            refineStatus = "";
+            StateHasChanged();
+        }
+    }
+
+    private void StartEdit(RefinementNote note)
+    {
+        editingNoteId = note.Id;
+        editBuffer    = note.Suggestion;
+    }
+
+    private void CancelEdit()
+    {
+        editingNoteId = null;
+        editBuffer    = "";
+    }
+
+    private async Task AcceptNote(RefinementNote note, bool useEditedSuggestion)
+    {
+        if (refinement == null || applyingNoteId != null) return;
+
+        // Apply the edit if the user was editing the suggestion text.
+        if (useEditedSuggestion)
+        {
+            if (string.IsNullOrWhiteSpace(editBuffer)) return;
+            note.Suggestion = editBuffer.Trim();
+        }
+
+        applyingNoteId = note.Id;
+        StateHasChanged();
+
+        try
+        {
+            var (original, startIdx, endIdx) = FindParagraphContaining(storyText, note.Quote);
+            if (original == null)
+            {
+                error = "Could not locate the quoted paragraph in the current text — it may have been edited.";
+                return;
+            }
+
+            var rewritten = await Refinement.ApplyNoteAsync(original, note);
+            if (string.IsNullOrWhiteSpace(rewritten))
+            {
+                error = "The rewrite came back empty; leaving the paragraph unchanged.";
+                return;
+            }
+
+            storyText = storyText[..startIdx] + rewritten + storyText[endIdx..];
+            project.Html = storyText;
+            await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
+            Save();
+            UpdateWordCount();
+            printHtml = Markdown.RenderToPrintHtml(storyText);
+
+            note.Status     = RefinementNoteStatus.Accepted;
+            note.AppliedAt  = DateTime.UtcNow;
+            Refinement.SaveReport(refinement);
+
+            editingNoteId = null;
+            editBuffer    = "";
+        }
+        catch (Exception ex) { error = $"Could not apply refinement: {ex.Message}"; }
+        finally
+        {
+            applyingNoteId = null;
+            StateHasChanged();
+        }
+    }
+
+    private void SkipNote(RefinementNote note)
+    {
+        if (refinement == null) return;
+        note.Status = RefinementNoteStatus.Skipped;
+        Refinement.SaveReport(refinement);
+    }
+
+    // Finds the paragraph containing `quote` in `text`, bounded by blank lines or a horizontal-rule
+    // scene break. Returns (paragraph, startIndex, endIndex) or (null, -1, -1) if not found.
+    private static (string? paragraph, int start, int end) FindParagraphContaining(string text, string quote)
+    {
+        if (string.IsNullOrEmpty(text) || string.IsNullOrEmpty(quote)) return (null, -1, -1);
+
+        var hit = text.IndexOf(quote, StringComparison.Ordinal);
+        if (hit < 0) hit = text.IndexOf(quote, StringComparison.OrdinalIgnoreCase);
+        if (hit < 0) return (null, -1, -1);
+
+        // Paragraph start: previous blank line or scene break (---), or text start.
+        int start = 0;
+        int blank = text.LastIndexOf("\n\n", hit, StringComparison.Ordinal);
+        if (blank >= 0) start = blank + 2;
+        int rule  = text.LastIndexOf("\n---\n", hit, StringComparison.Ordinal);
+        if (rule >= 0 && rule + 5 > start) start = rule + 5;
+
+        // Paragraph end: next blank line or scene break, or text end.
+        int end = text.Length;
+        int nextBlank = text.IndexOf("\n\n", hit, StringComparison.Ordinal);
+        if (nextBlank >= 0) end = nextBlank;
+        int nextRule  = text.IndexOf("\n---\n", hit, StringComparison.Ordinal);
+        if (nextRule >= 0 && nextRule < end) end = nextRule;
+
+        var paragraph = text[start..end].Trim();
+        return (paragraph, start, end);
+    }
+
+    private static string RefineKindClass(RefinementKind kind) => kind switch
+    {
+        RefinementKind.Impactful      => "success",
+        RefinementKind.Cluttered      => "warning",
+        RefinementKind.Underdeveloped => "info",
+        RefinementKind.ContextGap     => "danger",
+        RefinementKind.PacingMismatch => "secondary",
+        _                             => "secondary",
+    };
+}

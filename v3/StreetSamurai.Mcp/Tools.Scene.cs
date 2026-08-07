@@ -1,9 +1,9 @@
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Services;
+using Prose.Core.Services;
 using System.ComponentModel;
 using System.Text.Json;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 /// <summary>
 /// X-Ray scene assembly tools (RFC 0002). MCP twin of `ss --assemble-scene`,

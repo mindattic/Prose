@@ -1,29 +1,29 @@
 ---
 name: run
-description: Launch the StreetSamurai Writer host and open it in Chrome at localhost. No arguments needed.
+description: Launch the Prose Writer host and open it in Chrome at localhost. No arguments needed.
 ---
 
 # /run — launch the Writer host + open Chrome
 
-Starts the StreetSamurai.Writer app and opens it in Chrome at the local dev URL.
+Starts the Prose.Writer app and opens it in Chrome at the local dev URL.
 
 Fixed facts:
-- Host project: `v3/StreetSamurai.Writer`
+- Host project: `v3/Prose.Writer`
 - Default dev URL: **http://localhost:5200** (the `http` launch profile — no self-signed-cert warning).
   HTTPS profile is `https://localhost:7200` if ever needed.
 - Cookie auth: the app loads to a login/landing page; that's expected.
-- The CLI (`v3/StreetSamurai.Cli`) is a **separate project** — it is never affected by the Writer host running.
+- The CLI (`v3/Prose.Cli`) is a **separate project** — it is never affected by the Writer host running.
 
 When invoked:
 
 1. **Free the host.** Kill any running instance so the build lock and port 5200 are free:
    ```powershell
-   Get-Process StreetSamurai.Writer -ErrorAction SilentlyContinue | Stop-Process -Force
+   Get-Process Prose.Writer -ErrorAction SilentlyContinue | Stop-Process -Force
    ```
 
 2. **Launch the host in the background** (pin the http profile so the URL is deterministic):
    ```
-   dotnet run --project v3/StreetSamurai.Writer --launch-profile http
+   dotnet run --project v3/Prose.Writer --launch-profile http
    ```
    Use `run_in_background: true` — the host is long-lived. If a current build exists, add `--no-build` to start faster.
 
@@ -47,7 +47,7 @@ When invoked:
    ```
 
 5. Tell the user it's up at http://localhost:5200 and that the host keeps running in the background
-   (stop it with `Get-Process StreetSamurai.Writer | Stop-Process -Force`).
+   (stop it with `Get-Process Prose.Writer | Stop-Process -Force`).
 
 Notes:
 - If port 5200 is already listening when invoked, skip the relaunch and just open Chrome (the host is already up).

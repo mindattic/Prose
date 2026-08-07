@@ -9,7 +9,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/StreetSamurai/.claude/hooks/inject-digest.ps1\""
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/inject-digest.ps1\""
           }
         ]
       },
@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/StreetSamurai/.claude/hooks/restore-handoff.ps1\""
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/restore-handoff.ps1\""
           }
         ]
       }
@@ -31,7 +31,7 @@
             "type": "command",
             "timeout": 60,
             "statusMessage": "Running WorldValidation...",
-            "command": "node -e \"let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{const i=JSON.parse(d);const fp=i.tool_input?.file_path??'';if(fp.includes('engine') && fp.includes('data')){require('child_process').execSync('cd \\\"D:/Projects/MindAttic/StreetSamurai/v3\\\" && dotnet test StreetSamurai.UnitTests/StreetSamurai.UnitTests.csproj --filter \\\"Category=WorldValidation\\\" --logger \\\"console;verbosity=normal\\\" --no-build',{stdio:\\\"inherit\\\"});}});\""
+            "command": "node -e \"let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{const i=JSON.parse(d);const fp=i.tool_input?.file_path??'';if(fp.includes('engine') && fp.includes('data')){require('child_process').execSync('cd \\\"D:/Projects/MindAttic/Prose/v3\\\" && dotnet test Prose.UnitTests/Prose.UnitTests.csproj --filter \\\"Category=WorldValidation\\\" --logger \\\"console;verbosity=normal\\\" --no-build',{stdio:\\\"inherit\\\"});}});\""
           }
         ]
       }

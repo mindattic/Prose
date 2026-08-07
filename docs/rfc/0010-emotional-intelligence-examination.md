@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: SS
 layer: rfc
 status: draft
@@ -19,7 +19,7 @@ The author's diagnosis: *"the prose are great but they are still surface level e
 the human experience are 'lost like tears in rain' — formulate a system of emotional intelligence
 examination that allows for deeper levels of subtext."*
 
-The root cause, confirmed in code: StreetSamurai's emotional examination today is **binary**. In
+The root cause, confirmed in code: Prose's emotional examination today is **binary**. In
 `StructuralDiagnosticService.cs`, the five checks that touch emotion — `DialogueSubtext`,
 `StakesEmbodiment`, `CharacterEmbodiment`, `AffectationLines`, `PacingGearChange` — each return a
 single `Pass/Warn/Fail` plus one quoted line, at whole-strand granularity, with **no character
@@ -205,7 +205,7 @@ re-examine the beat and confirm its `EmotionalScore` rises and the Finding clear
 1. **Docs first (SS-A15)** — `AMENDMENTS.md`, `USER_STORIES.md`, `BIBLE.md` §10; `codex digest && doctor`.
 2. **Schema** — SQL reference file + `--emotional-examination` flag in `MigrateSqlCli.cs` (4 tables +
    `Beat.EmotionalScore`).
-3. **Entities** — 4 entity classes + DbSets + `b.Entity<>` configs in `StreetSamuraiDbContext.cs`
+3. **Entities** — 4 entity classes + DbSets + `b.Entity<>` configs in `ProseDbContext.cs`
    (mirror `StrandReviewBeatScore` ~line 537); add `Beat.EmotionalScore` property.
 4. **Ledger service** — `EmotionalLedgerService.cs` (parse bible → cache, infer fallback, bible-hash
    cache-bust).

@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 layer: series
 updated: 2026-07-18
 ---
@@ -326,7 +326,7 @@ book. Standalone stories may *allude* to mysteries but not answer them.
 ## 7. Entity Seeding Roadmap {#SS-GLMZ-COORD-§7}
 
 Entities that must exist in the DB before prose begins in each book.
-Verify: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai -Q "SELECT Name FROM Entities WHERE Name LIKE '%<name>%'"`
+Verify: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "SELECT Name FROM Entities WHERE Name LIKE '%<name>%'"`
 
 ### Before Book 2 prose begins
 

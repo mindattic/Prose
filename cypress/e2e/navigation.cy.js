@@ -56,7 +56,7 @@ function visitAndCheck(path) {
   });
 }
 
-describe('StreetSamurai navigation smoke', () => {
+describe('Prose navigation smoke', () => {
   it('home page boots', () => {
     cy.visit('/');
     cy.get('.board-grid', { timeout: 15000 }).should('exist');

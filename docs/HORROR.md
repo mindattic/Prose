@@ -1,6 +1,6 @@
 ---
 codex: SS
-project: StreetSamurai
+project: Prose
 code: HORROR
 layer: universe
 universe: horror
@@ -24,7 +24,7 @@ related: docs/CRAFT.md
 
 ## 0. What HORROR is {#SS-HORROR-0}
 
-**HORROR** is StreetSamurai's contained-horror fiction universe. Unlike GLMZ (one continuous
+**HORROR** is Prose's contained-horror fiction universe. Unlike GLMZ (one continuous
 cyberpunk metropolis) and SCRY (one continuous fantasy world), HORROR is **anthology-shaped**:
 each book stands in its own real-world-adjacent setting, with no requirement of shared
 geography, timeline, or antagonist across books. What every HORROR book shares is not a world —

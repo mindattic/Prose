@@ -2,11 +2,11 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Data.Entities;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Data.Entities;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Noun consistency tools ─────────────────────────────────────────────────
 // validate_nouns        — scan a node's beats for deprecated noun references
@@ -22,7 +22,7 @@ namespace StreetSamurai.Mcp;
 [McpServerToolType]
 public class NounConsistencyTools(
     NounConsistencyService nounConsistency,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = new() { WriteIndented = false };
 

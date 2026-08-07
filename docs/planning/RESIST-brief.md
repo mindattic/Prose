@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 layer: planning
 code: RESIST
 title: "Resistance: Three Centuries of Irish Rebellion"

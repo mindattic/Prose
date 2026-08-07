@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 layer: planning
 code: VIGL
 title: Vigil's End

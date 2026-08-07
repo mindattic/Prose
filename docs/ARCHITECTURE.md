@@ -1,4 +1,4 @@
-﻿# StreetSamurai — Architecture Bible
+﻿# Prose — Architecture Bible
 
 > **SUPERSEDED 2026-06-07 → see [docs/BIBLE.md](docs/BIBLE.md) (Codex L0 source of truth).** This
 > file is retained as a pointer; its content was migrated into `docs/BIBLE.md` (+ `docs/USER_STORIES.md`
@@ -10,7 +10,7 @@
 > order**, each with an acceptance test. When in doubt, this file wins; update it
 > in the same change that moves a goal.
 
-- **Project:** StreetSamurai — a canon-grounded story-generation engine for the GLMZ (Great Lakes Metropolitan Zone, 2200) cyberpunk universe.
+- **Project:** Prose — a canon-grounded story-generation engine for the GLMZ (Great Lakes Metropolitan Zone, 2200) cyberpunk universe.
 - **Stack:** .NET 10, Blazor Server (web-only), SQL Server (LocalDB in dev), ElevenLabs TTS, Legion/LLMVoting, embeddings (VECTOR_DISTANCE), QuikGraph.
 - **Quick start:** see `README.md`. **Conventions:** see `CLAUDE.md` (whole-number versioning; camelCase no-underscore; DB is the only canon store; web-only).
 
@@ -18,7 +18,7 @@
 
 ## 1. The Endpoint — "Definition of Done"
 
-A **complete StreetSamurai engine** can, with minimal human steering, do all of the following and prove it:
+A **complete Prose engine** can, with minimal human steering, do all of the following and prove it:
 
 1. **Reach everything.** Any of the ~28 canon entity types (characters, places, factions, gear, drugs, materials, orgs, synthetics, documents, …) can surface in generation when relevant — no "dead inventory."
 2. **Decide from truth.** Every generation/decision is grounded in canon facts + relationships + the codified house voice, all read from the **database** (never from an `.md` that might not be parsed).
@@ -85,7 +85,7 @@ A **complete StreetSamurai engine** can, with minimal human steering, do all of 
 - **Review/scoring:** `StrandReviewService`, `StrandReviewSummary`, focus groups.
 - **Audio/publish:** `StrandWorkbenchService`, `ElevenLabsTtsService`, `ManuscriptExportService`, `DocxExportService`, `EpisodeAudioService`.
 - **Observe:** `CoverageService`, `FindingsService`.
-- **Surfaces:** Blazor pages (`/strand`, `/strands`, `/generate`, `/continuity`, `/findings`, `/settings`, encyclopedia dictionaries), the MCP server (`StreetSamurai.Mcp`), and the `ss` CLI (dispatch in `Program.cs`).
+- **Surfaces:** Blazor pages (`/strand`, `/strands`, `/generate`, `/continuity`, `/findings`, `/settings`, encyclopedia dictionaries), the MCP server (`Prose.Mcp`), and the `ss` CLI (dispatch in `Program.cs`).
 
 ---
 
@@ -117,7 +117,7 @@ These keep SQL, QuikGraph, embeddings, and the memory rubric from growing confli
 
 Because Collection/Series are just parent `Strand`s, everything (export, edit, review, narrate, canon-mark) works at any level uniformly.
 
-**Root:** today there is one root Series — **"StreetSamurai"** — and every Collection/Strand hangs beneath it. Spin-offs add sibling root Series later, so the tree is `StreetSamurai (Series) → Collections → Strands → Beats` with room to grow horizontally at the top.
+**Root:** today there is one root Series — **"Prose"** — and every Collection/Strand hangs beneath it. Spin-offs add sibling root Series later, so the tree is `Prose (Series) → Collections → Strands → Beats` with room to grow horizontally at the top.
 
 Everything legacy (chapters/episodes/books) was migrated into this so the true breadth of existing writing is visible as Strands.
 
@@ -191,7 +191,7 @@ A full `Character` spans ~25 relational bridge tables; the deep `.Include()` loa
 
 ## 5. Testing & verification
 
-- **Unit (deterministic):** `CanonEngineTests` covers retrieval formatting, voice-harvest parsing/normalisation, contradiction parsing/chunking/severity, coverage math, and facet-removal regression guards. Pattern: expose pure helpers as `internal` (Core has `InternalsVisibleTo("StreetSamurai.UnitTests")`); LLM/DB paths are exercised by CLIs against live data.
+- **Unit (deterministic):** `CanonEngineTests` covers retrieval formatting, voice-harvest parsing/normalisation, contradiction parsing/chunking/severity, coverage math, and facet-removal regression guards. Pattern: expose pure helpers as `internal` (Core has `InternalsVisibleTo("Prose.UnitTests")`); LLM/DB paths are exercised by CLIs against live data.
 - **DI integrity:** `DiRegistrationTests` / `InterfaceRegistrationTests` prove the whole service graph resolves (run after any constructor change).
 - **Known pre-existing failures:** ~43 data-dependent integration tests (`*_LoadsRealData`, `RuleScan_*`, `ZoneInference_*`) require seeded data/DB not present in a clean `dotnet test`; they are not regressions (verified: untouched `WorldConsistencyService` tests fail identically). Treat the **filtered** suites as the gate until those are made self-seeding.
 - **Live smoke (CLI):** `--canon-retrieve`, `--coverage`, `--harvest-voice`, `--check-canon`, `--seed-voice-rules` each run against LocalDB.
@@ -210,7 +210,7 @@ A full `Character` spans ~25 relational bridge tables; the deep `.Include()` loa
 | `--migrate-sql --schema` / `--sql-export --data` | Schema migrate / full DB dump |
 
 ## 7. Deployment notes
-- Dev DB: `(localdb)\MSSQLLocalDB` / `StreetSamurai`. Prod: Azure SQL `streetsamurai-sql` / `StreetSamurai` (RG `MyApps`).
+- Dev DB: `(localdb)\MSSQLLocalDB` / `Prose`. Prod: Azure SQL `prose-sql` / `Prose` (RG `MyApps`).
 - New SQL artifacts to apply in prod: `Data/Sql/drop_facet_system_20260606.sql`, `Data/Sql/create_voice_change_log_20260606.sql`.
 - Backups before destructive schema changes are layered: native `.bak` (incl. `_History`), portable `--sql-export --data`, plus a targeted snapshot — all under `archives/db/`.
 - App MI is datareader/writer only; DDL needs the migrate job's SP (see memory `project_deploy_infra_reality`).

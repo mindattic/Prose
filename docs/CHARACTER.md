@@ -1,6 +1,6 @@
 ---
 codex: SS
-project: StreetSamurai
+project: Prose
 code: SS
 layer: craft
 status: live

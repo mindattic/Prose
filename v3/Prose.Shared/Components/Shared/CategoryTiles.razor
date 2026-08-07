@@ -1,0 +1,286 @@
+@inject CharacterRepository CharRepo
+@inject ArchetypeRepository ArchetypeRepo
+@inject CorponationRepository CorpRepo
+@inject SubsidiaryRepository SubsidiaryRepo
+@inject FactionRepository FactionRepo
+@inject WeaponryRepository WeaponRepo
+@inject AmmunitionRepository AmmoRepo
+@inject CyberwareRepository CyberRepo
+@inject EquipmentRepository EquipRepo
+@inject ApparelRepository ApparelRepo
+@inject GenemodRepository GenemodRepo
+@inject PharmaceuticalRepository PharmaRepo
+@inject DistrictRepository DistrictRepo
+@inject TransportationRepository TransportRepo
+@inject MaterialRepository MaterialRepo
+@inject TechnologyRepository TechRepo
+@inject AutomatonRepository AutomatonRepo
+@inject WorldbuildingDocRepository DocRepo
+@inject QuoteRepository QuoteRepo
+@inject VocabularyRepository VocabRepo
+@inject NewsRepository NewsRepo
+@inject EntertainmentRepository EntertainmentRepo
+@inject ConsumerGoodRepository GoodsRepo
+@inject ContractRepository ContractRepo
+@inject LabSpecimenRepository LabSpecimenRepo
+@inject FlyoverEntityRepository FlyoverRepo
+@inject PsionicRepository PsionicRepo
+@inject Microsoft.EntityFrameworkCore.IDbContextFactory<Prose.Core.Data.ProseDbContext> DbFactory
+@inject IWriteAccessProvider Access
+@inject Prose.Core.Services.HomeStatsCache Stats
+@inject Prose.Core.Services.RepositoryDefinitionService RepoDefs
+@inject Prose.Shared.Services.TabService TabSvc
+@inject NavigationManager Nav
+
+<div class="home-sections">
+
+    @* ── Writing ────────────────────────────────────────────────────── *@
+    @if (Access.IsContributor)
+    {
+        <div class="board-section">
+            <div class="board-section-label">Writing</div>
+            <div class="board-grid">
+                <a href="/writer" class="board-tile board-tile-tool"
+                   title="Writer — pick a node to open in the full editor."
+                   @onclick:preventDefault @onclick="OpenWriter">
+                    <i class="bi bi-pencil-square board-tile-icon"></i>
+                    <div class="board-tile-name">Writer</div>
+                </a>
+                <a href="/nodes" class="board-tile board-tile-tool"
+                   title="Stories — the unified writer + recorder + listener. Series group stories; stories hold chapters; chapters hold beats. Click to pick a story or start a new one."
+                   @onclick:preventDefault @onclick='() => Open("nodes","Stories","bi-collection","/nodes")'>
+                    <i class="bi bi-collection board-tile-icon"></i>
+                    <div class="board-tile-name">Stories</div>
+                </a>
+                <a href="/series" class="board-tile board-tile-tool"
+                   title="Series — group books into multi-book arcs. Stub for now; future home for series-level outlines and continuity."
+                   @onclick:preventDefault @onclick='() => Open("series","Series","bi-collection","/series")'>
+                    <i class="bi bi-collection board-tile-icon"></i>
+                    <div class="board-tile-name">Series</div>
+                </a>
+            </div>
+        </div>
+    }
+
+    @* ── Repositories ──────────────────────────────────────────────── *@
+    <div class="board-section">
+        <div class="board-section-label">Repositories</div>
+        <div class="board-grid">
+            <a href="/board/characters" class="board-tile"
+               title="Characters — people, synthetic life, archetypes, and ceramic men."
+               @onclick:preventDefault @onclick='() => Open("characters","Characters","bi-people-fill","/board/characters")'>
+                <i class="bi bi-people-fill board-tile-icon"></i>
+                <div class="board-tile-name">Characters</div>
+                <span class="board-tile-count">@Tile(charCount)</span>
+            </a>
+            <a href="/board/organizations" class="board-tile"
+               title="Organizations — CorpoNations, subsidiaries, and non-corporate factions."
+               @onclick:preventDefault @onclick='() => Open("organizations","Organizations","bi-buildings","/board/organizations")'>
+                <i class="bi bi-buildings board-tile-icon"></i>
+                <div class="board-tile-name">Organizations</div>
+                <span class="board-tile-count">@Tile(orgCount)</span>
+            </a>
+            <a href="/board/gear" class="board-tile"
+               title="Gear — weaponry, ammunition, cyberware, equipment, apparel, genemods, and pharmaceuticals."
+               @onclick:preventDefault @onclick='() => Open("gear","Gear","bi-tools","/board/gear")'>
+                <i class="bi bi-tools board-tile-icon"></i>
+                <div class="board-tile-name">Gear</div>
+                <span class="board-tile-count">@Tile(gearCount)</span>
+            </a>
+            <a href="/board/world" class="board-tile"
+               title="World — places, transportation, materials, technology, and automata."
+               @onclick:preventDefault @onclick='() => Open("world","World","bi-globe2","/board/world")'>
+                <i class="bi bi-globe2 board-tile-icon"></i>
+                <div class="board-tile-name">World</div>
+                <span class="board-tile-count">@Tile(worldCount)</span>
+            </a>
+            <a href="/board/culture" class="board-tile"
+               title="Culture — lore documents, quotes, vocabulary, news, entertainment, and consumer goods."
+               @onclick:preventDefault @onclick='() => Open("culture","Culture","bi-palette2","/board/culture")'>
+                <i class="bi bi-palette2 board-tile-icon"></i>
+                <div class="board-tile-name">Culture</div>
+                <span class="board-tile-count">@Tile(cultureCount)</span>
+            </a>
+            <a href="/contracts" class="board-tile"
+               title="Contracts — freelance contract registry with twists, moral dilemmas, and reputation effects."
+               @onclick:preventDefault @onclick='() => Open("contracts","Contracts","bi-file-earmark-check","/contracts")'>
+                <i class="bi bi-file-earmark-check board-tile-icon"></i>
+                <div class="board-tile-name">Contracts</div>
+                <span class="board-tile-count">@Tile(contractCount)</span>
+            </a>
+        </div>
+    </div>
+
+    @* ── World Data ─────────────────────────────────────────────────── *@
+    <div class="board-section">
+        <div class="board-section-label">World Data</div>
+        <div class="board-grid">
+            <a href="/quotes" class="board-tile board-tile-data"
+               title="Quotes — in-world quotations for chapters and epigraphs."
+               @onclick:preventDefault @onclick='() => Open("quotes","Quotes","bi-quote","/quotes")'>
+                <i class="bi bi-quote board-tile-icon"></i>
+                <div class="board-tile-name">Quotes</div>
+                <span class="board-tile-count">@Tile(quoteCount)</span>
+            </a>
+            <a href="/vocabulary" class="board-tile board-tile-data"
+               title="Vocabulary — GLMZ-specific terminology: slang, corporate jargon, technical terms."
+               @onclick:preventDefault @onclick='() => Open("vocabulary","Vocabulary","bi-chat-quote","/vocabulary")'>
+                <i class="bi bi-chat-quote board-tile-icon"></i>
+                <div class="board-tile-name">Vocabulary</div>
+                <span class="board-tile-count">@Tile(vocabCount)</span>
+            </a>
+            <a href="/archetypes" class="board-tile board-tile-data"
+               title="Archetypes — psychological / narrative templates used to seed character generation."
+               @onclick:preventDefault @onclick='() => Open("archetypes","Archetypes","bi-person-bounding-box","/archetypes")'>
+                <i class="bi bi-person-bounding-box board-tile-icon"></i>
+                <div class="board-tile-name">Archetypes</div>
+                <span class="board-tile-count">@Tile(archetypeCount)</span>
+            </a>
+            <a href="/rules" class="board-tile board-tile-data"
+               title="World Rules — hard prose constraints injected into every generation call."
+               @onclick:preventDefault @onclick='() => Open("rules","Universe Rules","bi-book","/rules")'>
+                <i class="bi bi-book board-tile-icon"></i>
+                <div class="board-tile-name">Universe Rules</div>
+            </a>
+        </div>
+    </div>
+
+    @* ── Custom Repositories ─────────────────────────────────────────── *@
+    @if (customRepos.Count > 0)
+    {
+        <div class="board-section">
+            <div class="board-section-label">Custom Repositories</div>
+            <div class="board-grid">
+                @foreach (var r in customRepos)
+                {
+                    <a href="@r.RoutePath" class="board-tile" title="@r.Description"
+                       @onclick:preventDefault @onclick="() => Open(r.RoutePath, r.Name, r.Icon, r.RoutePath)">
+                        <i class="bi @r.Icon board-tile-icon"></i>
+                        <div class="board-tile-name">@r.Name</div>
+                        <span class="board-tile-count">@r.Count</span>
+                    </a>
+                }
+            </div>
+        </div>
+    }
+
+    @* ── Visualizations ─────────────────────────────────────────────── *@
+    <div class="board-section">
+        <div class="board-section-label">Visualizations</div>
+        <div class="board-grid">
+            <a href="/graph" class="board-tile board-tile-viz"
+               title="World Graph — 2D D3 force-directed view of every entity and relationship."
+               @onclick:preventDefault @onclick='() => Open("graph","World Graph","bi-diagram-3","/graph")'>
+                <i class="bi bi-diagram-3 board-tile-icon"></i>
+                <div class="board-tile-name">World Graph</div>
+            </a>
+            <a href="/graph-3d" class="board-tile board-tile-viz"
+               title="World Graph 3D — three-dimensional rendering of the same graph."
+               @onclick:preventDefault @onclick='() => Open("graph-3d","Graph 3D","bi-bounding-box","/graph-3d")'>
+                <i class="bi bi-bounding-box board-tile-icon"></i>
+                <div class="board-tile-name">World Graph 3D</div>
+            </a>
+            <a href="/map" class="board-tile board-tile-viz"
+               title="Map — geographic layout of GLMZ districts."
+               @onclick:preventDefault @onclick='() => Open("map","Map","bi-map-fill","/map")'>
+                <i class="bi bi-map-fill board-tile-icon"></i>
+                <div class="board-tile-name">Map</div>
+            </a>
+            <a href="/heritage" class="board-tile board-tile-viz"
+               title="Heritage — ethnic / genetic ancestry heatmap of the cast."
+               @onclick:preventDefault @onclick='() => Open("heritage","Heritage","bi-tree-fill","/heritage")'>
+                <i class="bi bi-tree-fill board-tile-icon"></i>
+                <div class="board-tile-name">Heritage</div>
+            </a>
+        </div>
+    </div>
+
+    @* ── Tools ──────────────────────────────────────────────────────── *@
+    <div class="board-section">
+        <div class="board-section-label">Tools</div>
+        <div class="board-grid">
+            <a href="/dashboard" class="board-tile board-tile-tool"
+               title="Dashboard — live overview: entity counts, world-graph size, story counts, service status."
+               @onclick:preventDefault @onclick='() => Open("dashboard","Dashboard","bi-speedometer2","/dashboard")'>
+                <i class="bi bi-speedometer2 board-tile-icon"></i>
+                <div class="board-tile-name">Dashboard</div>
+            </a>
+            <a href="/ask" class="board-tile board-tile-tool"
+               title="Ask — natural-language questions against the live canon + chapter prose."
+               @onclick:preventDefault @onclick='() => Open("ask","Ask","bi-chat-dots","/ask")'>
+                <i class="bi bi-chat-dots board-tile-icon"></i>
+                <div class="board-tile-name">Ask</div>
+            </a>
+            <a href="/atlas" class="board-tile board-tile-tool"
+               title="Atlas — system-wide directory of every entity type, service, and architectural component."
+               @onclick:preventDefault @onclick='() => Open("atlas","Atlas","bi-book-half","/atlas")'>
+                <i class="bi bi-book-half board-tile-icon"></i>
+                <div class="board-tile-name">Atlas</div>
+            </a>
+            @if (Access.IsAdministrator)
+            {
+                <a href="/architecture" class="board-tile board-tile-tool"
+                   title="Architecture — live scan of every service, CLI verb, MCP tool, and Razor page."
+                   @onclick:preventDefault @onclick='() => Open("architecture","Architecture","bi-diagram-3","/architecture")'>
+                    <i class="bi bi-diagram-3 board-tile-icon"></i>
+                    <div class="board-tile-name">Architecture</div>
+                </a>
+            }
+            @if (Access.IsContributor)
+            {
+                <a href="/continuity" class="board-tile board-tile-tool"
+                   title="Continuity — atomic-claim store: extract, surface contradictions, apply resolutions."
+                   @onclick:preventDefault @onclick='() => Open("continuity","Continuity","bi-database-check","/continuity")'>
+                    <i class="bi bi-database-check board-tile-icon"></i>
+                    <div class="board-tile-name">Continuity</div>
+                </a>
+                <a href="/truth-table" class="board-tile board-tile-tool"
+                   title="Truth Table — per-beat BLOCKER/MODERATE/MINOR verification status against blueprint contracts. Export gate."
+                   @onclick:preventDefault @onclick='() => Open("truth-table","Truth Table","bi-table","/truth-table")'>
+                    <i class="bi bi-table board-tile-icon"></i>
+                    <div class="board-tile-name">Truth Table</div>
+                </a>
+            }
+        </div>
+    </div>
+
+</div>
+
+@code {
+    int charCount     => Stats.CharactersTotal;
+    int orgCount      => Stats.OrganizationsTotal;
+    int gearCount     => Stats.GearTotal;
+    int worldCount    => Stats.WorldTotal;
+    int cultureCount  => Stats.CultureTotal;
+    int contractCount => Stats.Contracts;
+    int quoteCount    => Stats.Quotes;
+    int vocabCount    => Stats.Vocabulary;
+    int archetypeCount => Stats.Archetypes;
+    int episodeCount  => Stats.Episodes;
+
+    string Tile(int n) => Stats.IsWarm ? n.ToString() : "—";
+
+    record CustomRepo(string Name, string Icon, string RoutePath, string? Description, int Count);
+    List<CustomRepo> customRepos = new();
+
+    protected override void OnInitialized()
+    {
+        customRepos = RepoDefs.List()
+            .Select(d => new CustomRepo(d.Name, d.Icon, d.RoutePath, d.Description, RepoDefs.CountInCurrentUniverse(d.Slug)))
+            .Where(r => r.Count > 0)
+            .ToList();
+    }
+
+    private void Open(string key, string label, string icon, string route)
+    {
+        TabSvc.Open(new Prose.Shared.Services.AppTab(key, label, icon, route));
+        Nav.NavigateTo(route);
+    }
+
+    private void OpenWriter()
+    {
+        // MatchPrefix="/node" keeps the Writer tab active while editing any node
+        TabSvc.Open(new Prose.Shared.Services.AppTab("writer", "Writer", "bi-pencil-square", "/writer", "/node"));
+        Nav.NavigateTo("/writer");
+    }
+}

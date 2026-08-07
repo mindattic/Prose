@@ -263,8 +263,8 @@ const html   = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>StreetSamurai — Engineering Reference</title>
-<meta name="description" content="Full engineering reference for the StreetSamurai literary fiction engine.">
+<title>Prose — Engineering Reference</title>
+<meta name="description" content="Full engineering reference for the Prose literary fiction engine.">
 <meta name="generated" content="${now}">
 <style>${CSS}</style>
 </head>

@@ -1,4 +1,4 @@
-"""Central configuration for the StreetSamurai ML package."""
+"""Central configuration for the Prose ML package."""
 import os
 from pathlib import Path
 
@@ -11,7 +11,7 @@ ARTIFACTS.mkdir(parents=True, exist_ok=True)
 DB_CONN_STR = (
     "Driver={ODBC Driver 17 for SQL Server};"
     "Server=(localdb)\\MSSQLLocalDB;"
-    "Database=StreetSamurai;"
+    "Database=Prose;"
     "Trusted_Connection=yes;"
 )
 

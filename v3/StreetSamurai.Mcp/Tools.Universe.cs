@@ -1,16 +1,16 @@
 using System.ComponentModel;
 using System.Text.Json;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Services;
-using StreetSamurai.Core.Data.Entities;
+using Prose.Core.Services;
+using Prose.Core.Data.Entities;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Multi-universe tools ─────────────────────────────────────────────────────
 // Select which universe (GLMZ, Scry, …) this MCP session targets.
 // All canon/book reads through the other tools are scoped to the current
 // universe (SS-LAW-15). The selection is per-process, so a session launched with
-// `--universe scry` (or SS_UNIVERSE) is isolated from other clients.
+// `--universe scry` (or PROSE_UNIVERSE) is isolated from other clients.
 // ─────────────────────────────────────────────────────────────────────────────
 
 /// <summary>

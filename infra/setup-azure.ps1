@@ -1,7 +1,7 @@
 # ──────────────────────────────────────────────────────────────────────────
 # setup-azure.ps1
 #
-# One-shot bootstrap that wires StreetSamurai's local code to a fresh Azure
+# One-shot bootstrap that wires Prose's local code to a fresh Azure
 # SQL deployment. Designed to be re-runnable: every step checks for existing
 # state and skips if already done. Reads its config from
 # infra/azure-sql.parameters.json (after you fill in the three __REPLACE__
@@ -15,12 +15,12 @@
 #   4. Runs infra/grant-managed-identity.sql against the DB to create
 #      contained users for the App Service MI and the GitHub OIDC SP.
 #   5. Sets the App Service Application Setting ConnectionStrings__
-#      StreetSamurai to the AAD-default connection string.
+#      Prose to the AAD-default connection string.
 #   6. Prints a checklist for the things that still require human action
 #      (GitHub repo secrets, smoke test).
 #
 # What it does NOT do:
-#   - Create the App Service (already exists at `streetsamurai`).
+#   - Create the App Service (already exists at `prose`).
 #   - Create the GitHub OIDC service principal + federated credential
 #     (one-shot per repo; instructions in infra/README.md § "GitHub OIDC").
 #   - Run schema migrations (GitHub Actions does that on the next push).
@@ -28,14 +28,14 @@
 # Usage:
 #   powershell -NoProfile -ExecutionPolicy Bypass -File infra/setup-azure.ps1 `
 #       -ResourceGroup street-samurai-rg `
-#       -AppServiceName streetsamurai `
-#       -GitHubSpName  streetsamurai-github
+#       -AppServiceName prose `
+#       -GitHubSpName  prose-github
 # ──────────────────────────────────────────────────────────────────────────
 [CmdletBinding()]
 param(
     [string]$ResourceGroup  = 'street-samurai-rg',
-    [string]$AppServiceName = 'streetsamurai',
-    [string]$GitHubSpName   = 'streetsamurai-github',
+    [string]$AppServiceName = 'prose',
+    [string]$GitHubSpName   = 'prose-github',
     [string]$ParametersFile = (Join-Path $PSScriptRoot 'azure-sql.parameters.json'),
     [switch]$SkipGrant,
     [switch]$SkipAppSettings
@@ -85,7 +85,7 @@ if ($rgExists) {
 
 # ── 2. Deploy Bicep ──────────────────────────────────────────────────────
 Section "Deploying Azure SQL via Bicep"
-$deploymentName = "streetsamurai-sql-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
+$deploymentName = "prose-sql-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
 $deployJson = az deployment group create `
     --resource-group $ResourceGroup `
     --template-file (Join-Path $PSScriptRoot 'azure-sql.bicep') `
@@ -119,11 +119,11 @@ if (-not $SkipGrant) {
 
 # ── 4. App Service Application Setting ───────────────────────────────────
 if (-not $SkipAppSettings) {
-    Section "Setting App Service application setting ConnectionStrings__StreetSamurai on '$AppServiceName'"
+    Section "Setting App Service application setting ConnectionStrings__Prose on '$AppServiceName'"
     az webapp config appsettings set `
         --resource-group $ResourceGroup `
         --name $AppServiceName `
-        --settings "ConnectionStrings__StreetSamurai=$connectionString" `
+        --settings "ConnectionStrings__Prose=$connectionString" `
         --output none
     if ($LASTEXITCODE -ne 0) { throw "App Service appsettings update failed (exit $LASTEXITCODE)." }
     Note "App setting written."
@@ -136,16 +136,16 @@ Section 'Setup complete. Next steps:'
 Write-Host @"
   [ ] GitHub Actions OIDC — confirm three repo secrets exist
       (Settings → Secrets and variables → Actions):
-        AZURE_CLIENT_ID        = appId of the streetsamurai-github SP
+        AZURE_CLIENT_ID        = appId of the prose-github SP
         AZURE_TENANT_ID        = $($account.tenantId)
         AZURE_SUBSCRIPTION_ID  = $($account.id)
         AZURE_SQL_CONNECTION   = $connectionString
 
   [ ] Push a no-op commit to master and watch the deploy job:
-        https://github.com/mindattic/StreetSamurai/actions
+        https://github.com/mindattic/Prose/actions
 
   [ ] Smoke test once the Action's "Apply DB migrations" step succeeds:
-        https://streetsamurai.azurewebsites.net/
+        https://prose.azurewebsites.net/
 
   [ ] (Optional) Tighten the firewall: replace AllowAzureServices with a
       Private Endpoint once you've verified the path works end-to-end.

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "ss://schema/transportation",
-  "title": "StreetSamurai canon — Transportation (engine_data/transportation/*.json)",
+  "title": "Prose canon — Transportation (engine_data/transportation/*.json)",
   "description": "A vehicle / transit entity. Descriptive registration; id derived as transportation.<slug(name)>.",
   "type": "object",
   "required": ["type", "name"],

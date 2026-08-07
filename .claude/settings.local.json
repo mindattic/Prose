@@ -5,9 +5,9 @@
   "permissions": {
     "allow": [
       "Bash(node -e \":*)",
-      "Bash(jq -r .[].title /d/Projects/MindAttic/StreetSamurai/engine_data/worldbuilding_docs.json)",
-      "Bash(python3 -c \"import json; data = json.load\\(open\\(''/d/Projects/MindAttic/StreetSamurai/engine_data/weaponry.json''\\)\\); print\\(''Total entries:'', len\\(data\\)\\); print\\(''Keys:'', list\\(data[0].keys\\(\\)\\) if isinstance\\(data, list\\) else list\\(data.keys\\(\\)\\)\\)\")",
-      "Bash(ls -lh /d/Projects/MindAttic/StreetSamurai/engine_data/*.json)"
+      "Bash(jq -r .[].title /d/Projects/MindAttic/Prose/engine_data/worldbuilding_docs.json)",
+      "Bash(python3 -c \"import json; data = json.load\\(open\\(''/d/Projects/MindAttic/Prose/engine_data/weaponry.json''\\)\\); print\\(''Total entries:'', len\\(data\\)\\); print\\(''Keys:'', list\\(data[0].keys\\(\\)\\) if isinstance\\(data, list\\) else list\\(data.keys\\(\\)\\)\\)\")",
+      "Bash(ls -lh /d/Projects/MindAttic/Prose/engine_data/*.json)"
     ]
   }
 }

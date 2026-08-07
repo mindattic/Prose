@@ -2,10 +2,10 @@
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 /// <summary>
 /// MCP tools for querying the prose workflow coverage monitoring system.
@@ -14,7 +14,7 @@ namespace StreetSamurai.Mcp;
 [McpServerToolType]
 public class WorkflowMonitorTools(
     WorkflowMonitorService monitor,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     [McpServerTool, Description("Get prose service coverage for a node. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.")]
     public async Task<string> workflow_status(

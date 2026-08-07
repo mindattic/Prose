@@ -1,5 +1,5 @@
 ﻿"""
-StreetSamurai ML orchestration pipeline.
+Prose ML orchestration pipeline.
 
 Phases:
     extract_gripes    -> pull reviewer gripes from DB -> Parquet cache
@@ -132,7 +132,7 @@ def phase_compute_metrics():
     # Call the .NET CLI to compute prose metrics for all beats.
     # Assumes dotnet is on PATH and the project is built.
     root = Path(__file__).parent.parent.parent  # v3/
-    cli  = root / "StreetSamurai.Cli" / "StreetSamurai.Cli.csproj"
+    cli  = root / "Prose.Cli" / "Prose.Cli.csproj"
     result = subprocess.run(
         ["dotnet", "run", "--project", str(cli), "--", "--compute-metrics", "--all"],
         capture_output=True, text=True
@@ -169,7 +169,7 @@ PHASE_FNS = {
 
 
 def main():
-    parser = argparse.ArgumentParser(description="StreetSamurai ML pipeline")
+    parser = argparse.ArgumentParser(description="Prose ML pipeline")
     parser.add_argument(
         "--phases", default="all",
         help=f"Comma-separated phases or 'all'. Choices: {', '.join(PHASES)}",

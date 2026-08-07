@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 layer: planning
 code: 1381
 title: "1381: The Peasants' Revolt"

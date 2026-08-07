@@ -2,11 +2,11 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Interfaces;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Interfaces;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Quality / self-check tools ─────────────────────────────────────────────
 // validate_canon_text scans arbitrary prose against the world rules (no city
@@ -39,7 +39,7 @@ public class QualityTools
     private readonly SemanticFidelityService fidelity;
     private readonly StructuralDiagnosticService structural;
     private readonly EmotionalDepthService emotionalDepth;
-    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly VotingGate votingGate;
     private readonly TokenLedger tokenLedger;
     private readonly CommandCostEstimatorService costEstimator;
@@ -56,7 +56,7 @@ public class QualityTools
         SemanticFidelityService fidelity,
         StructuralDiagnosticService structural,
         EmotionalDepthService emotionalDepth,
-        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        IDbContextFactory<ProseDbContext> dbFactory,
         VotingGate votingGate,
         TokenLedger tokenLedger,
         CommandCostEstimatorService costEstimator)

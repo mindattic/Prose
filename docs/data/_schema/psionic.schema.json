@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "ss://schema/psionic",
-  "title": "StreetSamurai canon — Psionic ability (engine_data/psionics/*.json)",
+  "title": "Prose canon — Psionic ability (engine_data/psionics/*.json)",
   "description": "A psionic enhancement/ability. Carries its own opaque hex id on disk.",
   "type": "object",
   "required": ["id", "type", "name"],

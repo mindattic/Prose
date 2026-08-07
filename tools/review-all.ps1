@@ -24,7 +24,7 @@ foreach ($code in $codes) {
     Write-Host ""
     Write-Host "[$i/$total] $code  (elapsed $([int]$elapsed.TotalMinutes)m)" -ForegroundColor Cyan
 
-    dotnet run --project v3/StreetSamurai.Cli -- `
+    dotnet run --project v3/Prose.Cli -- `
         --review-node --code $code $deltaFlag `
         --providers $Providers --effort $Effort --allow-votes
 
@@ -40,7 +40,7 @@ foreach ($slug in $slugs) {
     Write-Host ""
     Write-Host "[$i/$total] $slug  (elapsed $([int]$elapsed.TotalMinutes)m)" -ForegroundColor Cyan
 
-    dotnet run --project v3/StreetSamurai.Cli -- `
+    dotnet run --project v3/Prose.Cli -- `
         --review-node --slug $slug $deltaFlag `
         --providers $Providers --effort $Effort --allow-votes
 

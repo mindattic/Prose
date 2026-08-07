@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 layer: planning
 code: <CODE>
 title: <Story Title>

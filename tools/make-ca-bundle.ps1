@@ -4,7 +4,7 @@
 # the same CAs the OS/browser already trusts — no verification disabling.
 param([string]$Python = "python")
 $ErrorActionPreference = 'Stop'
-$out = "D:\Projects\MindAttic\StreetSamurai\tools\corp-ca-bundle.pem"
+$out = "D:\Projects\MindAttic\Prose\tools\corp-ca-bundle.pem"
 
 $stores = @('Cert:\LocalMachine\Root','Cert:\LocalMachine\CA','Cert:\CurrentUser\Root','Cert:\CurrentUser\CA')
 $seen = @{}

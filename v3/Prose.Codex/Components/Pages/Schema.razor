@@ -1,0 +1,134 @@
+@page "/schema"
+@attribute [Authorize]
+@using System.Text.Json
+@using Prose.Core.Services
+@inject SchemaGraphService SchemaSvc
+@inject IJSRuntime JS
+
+<div class="schema-shell">
+    <div class="schema-header">
+        <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-diagram-3-fill text-info"></i>
+            <span class="fw-bold text-light">Database Schema</span>
+            @if (graph != null)
+            {
+                <span class="text-muted small">
+                    @graph.Tables.Count tables · @graph.Edges.Count FK edges
+                    · @graph.Tables.Count(t => t.IsBridge) bridges
+                </span>
+            }
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <input class="form-control form-control-sm bg-dark text-light border-secondary"
+                   placeholder="filter table name…"
+                   style="width: 220px;"
+                   @bind="filterText"
+                   @bind:event="oninput"
+                   @onkeyup="OnFilterKey" />
+            <button class="btn btn-sm btn-outline-info" @onclick="OnFilter">
+                <i class="bi bi-search"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="OnResetLayout">
+                <i class="bi bi-arrow-clockwise"></i> re-layout
+            </button>
+            <span class="schema-legend">
+                <span class="lg-swatch" style="background:#1f4e79;"></span>core
+                <span class="lg-swatch" style="background:#1f6240;"></span>entity
+                <span class="lg-swatch" style="background:#3a4a30;"></span>character-child
+                <span class="lg-swatch" style="background:#3f3358;"></span>book-child
+                <span class="lg-swatch" style="background:#5b3737;"></span>bridge
+                <span class="lg-swatch" style="background:#3a3034;"></span>event
+                <span class="lg-swatch" style="background:#3d3a25;"></span>config
+            </span>
+        </div>
+    </div>
+
+    <div id="schema-graph" class="schema-canvas"></div>
+</div>
+
+@* vis-network from CDN — Apache 2.0, ~250 KB minified *@
+<script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+<script src="js/schema-viewer.js"></script>
+
+<style>
+    .schema-shell { display: flex; flex-direction: column; height: calc(100vh - 56px); }
+    .schema-header {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 8px 12px; border-bottom: 1px solid #444; gap: 12px; flex-wrap: wrap;
+        background: #15181d;
+    }
+    .schema-canvas {
+        flex: 1; min-height: 0; background: #0e1014;
+        border-top: 1px solid #2a2a32;
+    }
+    .schema-legend {
+        display: inline-flex; align-items: center; gap: 6px;
+        font-size: 0.7rem; color: #aaa; margin-left: 12px;
+    }
+    .lg-swatch {
+        display: inline-block; width: 14px; height: 14px;
+        margin-left: 8px; margin-right: 2px; border-radius: 3px; border: 1px solid #333;
+    }
+    /* vis-network's tooltips look fine on dark already */
+</style>
+
+@code {
+    private SchemaGraphService.SchemaGraph? graph;
+    private string filterText = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        graph = await SchemaSvc.GetGraphAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && graph != null)
+        {
+            // Serialize with camelCase so the JS side reads `isBridge`, `rowCount`, etc.
+            var opts = new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            };
+            var json = JsonSerializer.Serialize(new
+            {
+                tables = graph.Tables.Select(t => new {
+                    name        = t.Name,
+                    isBridge    = t.IsBridge,
+                    isTemporal  = t.IsTemporal,
+                    rowCount    = t.RowCount,
+                    group       = t.Group,
+                    pkColumns   = t.PkColumns,
+                    columns     = t.Columns.Select(c => new {
+                        name              = c.Name,
+                        type              = c.Type,
+                        isNullable        = c.IsNullable,
+                        isPk              = c.IsPk,
+                        isFk              = c.IsFk,
+                        fkRefersToTable   = c.FkRefersToTable,
+                    }),
+                }),
+                edges = graph.Edges.Select(e => new {
+                    fromTable   = e.FromTable,
+                    fromColumn  = e.FromColumn,
+                    toTable     = e.ToTable,
+                    toColumn    = e.ToColumn,
+                    onDelete    = e.OnDelete,
+                }),
+            }, opts);
+
+            await JS.InvokeVoidAsync("proseSchema.init", "schema-graph", json);
+        }
+    }
+
+    private async Task OnFilter() =>
+        await JS.InvokeVoidAsync("proseSchema.filter", filterText);
+
+    private async Task OnFilterKey(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") await OnFilter();
+    }
+
+    private async Task OnResetLayout() =>
+        await JS.InvokeVoidAsync("proseSchema.resetLayout");
+}

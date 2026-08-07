@@ -1,8 +1,8 @@
 {
-  "name": "streetsamurai-e2e",
+  "name": "prose-e2e",
   "version": "1.0.0",
   "private": true,
-  "description": "Cypress headless navigation suite for the StreetSamurai Blazor app.",
+  "description": "Cypress headless navigation suite for the Prose Blazor app.",
   "scripts": {
     "docs": "node --use-system-ca tools/build-readme.js",
     "e2e": "cypress run",

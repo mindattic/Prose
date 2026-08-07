@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: SS
 layer: rfc
 status: withdrawn
@@ -11,7 +11,7 @@ updated: 2026-07-15
 
 ## Problem
 
-StreetSamurai's structured narrative canon exists in two places: the **live SQL database** (the
+Prose's structured narrative canon exists in two places: the **live SQL database** (the
 only authoritative store, per [SS-LAW-1](../BIBLE.md#SS-§5)) and an on-disk **seed/export mirror**
 under `engine_data/*.json` (people, geneware, elfs, quotes, documents, lab_specimens, psionics,
 transportation, wasteland_entities). The on-disk corpus has no formal schema and no explicit stable

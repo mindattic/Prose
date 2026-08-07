@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: PNHL
 layer: fix-plan
 title: Pinhole — Round-Two Structural Pass (Antagonist Menace + Tech Specificity)

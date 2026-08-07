@@ -1,6 +1,6 @@
 ﻿---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: SS
 layer: rfc
 status: accepted
@@ -105,7 +105,7 @@ the relational tables + the missing `FactionRelationshipTags` bridge (`add_facti
 + faction `.tags` migrated to the universal `EntityTags` layer + `ss --rebuild-faction-relational`
 backfill CLI + `FactionRelationalParityTests` (13). **Live parity: 163 factions / 0 mismatches**
 across all 8 lists; **the faction `Records.Json` blob has been retired** (0 rows). Backup taken first
-(`backups/StreetSamurai_preFactionBlobDrop_20260615.bak`).
+(`backups/Prose_preFactionBlobDrop_20260615.bak`).
 
 **The repeatable recipe (copy for each remaining type):**
 1. Build `{Type}Mapper` from the `CharacterMapper`/`FactionMapper` template.
@@ -130,7 +130,7 @@ at_rest + will_always/will_never/unless/similar_to/opposite_of). Ammunition had 
 `tier_availability` empty for the 32 rows whose column was populated. Fixed the mapper both
 directions, added the `TierAvailability` assertion to the parity test, re-ran `--rebuild-ammunition-
 relational`, and verified live: 52 blob rows, **0 mismatches** across tier/legality/caliber + all four
-bridges. Backup `backups/StreetSamurai_preArchetypeAmmoBlobDrop_20260615.bak`; both blobs then dropped
+bridges. Backup `backups/Prose_preArchetypeAmmoBlobDrop_20260615.bak`; both blobs then dropped
 (602 rows: 550 archetype + 52 ammunition).
 
 ### ⚠️ CRITICAL LESSON (batch 3) — the recipe was insufficient

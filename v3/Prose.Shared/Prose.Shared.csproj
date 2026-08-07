@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- No packages.lock.json here: Prose.Core references MindAttic.Authentication as a
+         Debug-only source ProjectReference but a Release NuGet PackageReference (the dev-auth-bypass
+         pattern). A single lock file cannot hold both the "Project" (Debug) and "Package" (Release)
+         identity of that transitive dependency, which broke Release restore with NU1101. -->
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="10.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prose.Core\Prose.Core.csproj" />
+  </ItemGroup>
+
+</Project>

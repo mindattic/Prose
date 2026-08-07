@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services.Audit;
+using Prose.Core.Data;
+using Prose.Core.Services.Audit;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Craft Audit tool ──────────────────────────────────────────────────────────
 //
@@ -17,7 +17,7 @@ namespace StreetSamurai.Mcp;
 [McpServerToolType]
 public class CraftAuditTools(
     CraftRuleAuditService craftAudit,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 

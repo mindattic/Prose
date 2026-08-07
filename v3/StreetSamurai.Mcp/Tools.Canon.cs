@@ -2,11 +2,11 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Data.Entities;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Data.Entities;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Canon document tools (Track A — Truth-First Architecture) ─────────────────
 // Structured canon editing: every world-level .md file has a DB source of truth.
@@ -22,13 +22,13 @@ namespace StreetSamurai.Mcp;
 public class CanonDocTools
 {
     private readonly CanonDocumentService canonDocs;
-    private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly NodeDocService nodeDoc;
     private readonly MarkdownFileService markdownFiles;
 
     public CanonDocTools(
         CanonDocumentService canonDocs,
-        IDbContextFactory<StreetSamuraiDbContext> dbFactory,
+        IDbContextFactory<ProseDbContext> dbFactory,
         NodeDocService nodeDoc,
         MarkdownFileService markdownFiles)
     {

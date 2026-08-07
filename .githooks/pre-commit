@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # ─────────────────────────────────────────────────────────────────────────────
-# Pre-commit gate: StreetSamurai's trusted LLM voting panel (legion.json:
+# Pre-commit gate: Prose's trusted LLM voting panel (legion.json:
 # claude / openai / gemini / deepseek) must authenticate LIVE before a commit.
 # ss --legion and the continuity auto-resolver depend on it — no point
 # committing when a panel key is dead.
@@ -29,9 +29,9 @@ fi
 # [McpServerTool] attributes and stage it, so the doc never drifts from the code.
 # Non-fatal: a regen failure only warns — the LLM-key gate below is the real
 # blocker. Runs only when tool sources change, so normal commits are unaffected.
-if git diff --cached --name-only | grep -qE 'StreetSamurai\.Mcp/(Tools|ToolDocGenerator)'; then
+if git diff --cached --name-only | grep -qE 'Prose\.Mcp/(Tools|ToolDocGenerator)'; then
   echo "pre-commit: MCP tools changed — regenerating docs/MCP_TOOLS.md…"
-  if dotnet run --project v3/StreetSamurai.Mcp -- --export-tools docs/MCP_TOOLS.md >/dev/null 2>&1; then
+  if dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md >/dev/null 2>&1; then
     git add docs/MCP_TOOLS.md
     echo "pre-commit: docs/MCP_TOOLS.md refreshed and staged."
   else
@@ -44,8 +44,8 @@ if [ "${SKIP_LLM_KEY_CHECK:-0}" = "1" ]; then
   exit 0
 fi
 
-echo "pre-commit: validating StreetSamurai trusted LLM panel keys (live)…"
-if dotnet test v3/StreetSamurai.UnitTests -c Release \
+echo "pre-commit: validating Prose trusted LLM panel keys (live)…"
+if dotnet test v3/Prose.UnitTests -c Release \
       --filter "Category=LiveKeysTrusted" \
       --nologo --verbosity quiet; then
   echo "pre-commit: all trusted LLM keys valid — proceeding."

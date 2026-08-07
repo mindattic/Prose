@@ -20,7 +20,7 @@
 // call from their before/beforeEach hook.
 
 Cypress.Commands.add('login', (email, password) => {
-  const e = email || Cypress.env('test_email')    || 'admin@streetsamurai.local';
+  const e = email || Cypress.env('test_email')    || 'admin@prose.local';
   const p = password || Cypress.env('test_password') || 'admin';
 
   cy.session([e], () => {

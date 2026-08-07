@@ -1,0 +1,344 @@
+@page "/architecture"
+@attribute [Authorize(Policy = MaPolicies.Admin)]
+@inject ProjectArchitectureService Arch
+
+<div class="d-flex justify-content-between align-items-center mb-1">
+    <h4 class="text-danger mb-0"><i class="bi bi-diagram-3 me-2"></i>Architecture</h4>
+    <small class="text-muted">
+        Live scan of services, CLI verbs, MCP tools, Razor pages, and scripts.
+        @if (snapshot != null)
+        {
+            <span> · scanned @snapshot.ScannedAt.ToLocalTime():u</span>
+        }
+    </small>
+</div>
+<p class="text-muted mb-3">
+    The codebase has grown past my recall. This page is the inventory we work from
+    when we ask <em>what does this do, do we have two of these, can it die?</em>
+</p>
+
+@if (snapshot == null)
+{
+    <div class="text-muted">Scanning…</div>
+}
+else
+{
+    @* ── Filter ───────────────────────────────────────────────────────────── *@
+    <div class="d-flex gap-2 mb-3 flex-wrap align-items-center">
+        <input class="form-control form-control-sm bg-dark text-light border-secondary"
+               placeholder="filter by name / file / description"
+               style="max-width:360px"
+               @bind="filter" @bind:event="oninput" />
+        <button class="btn btn-sm btn-outline-secondary" @onclick="Rescan" disabled="@scanning">
+            @(scanning ? "Scanning…" : "Rescan")
+        </button>
+        <small class="text-muted ms-2">
+            @snapshot.Services.Count services ·
+            @snapshot.RazorPages.Count pages ·
+            @snapshot.CliCommands.Sum(c => c.Subcommands.Count) CLI subs ·
+            @snapshot.McpTools.Count MCP tools ·
+            @snapshot.Scripts.Count scripts ·
+            @snapshot.DuplicateClusters.Count duplicate clusters
+        </small>
+    </div>
+
+    @* ── Section nav ──────────────────────────────────────────────────────── *@
+    <div class="mb-3 d-flex gap-2 flex-wrap small">
+        <a href="#known-issues" class="badge bg-danger text-decoration-none">⚠ Known Issues</a>
+        <a href="#duplicates" class="badge bg-warning text-dark text-decoration-none">Duplicate Clusters</a>
+        <a href="#pages" class="badge bg-secondary text-decoration-none">Razor Pages</a>
+        <a href="#cli" class="badge bg-secondary text-decoration-none">CLI</a>
+        <a href="#mcp" class="badge bg-secondary text-decoration-none">MCP Tools</a>
+        <a href="#services" class="badge bg-secondary text-decoration-none">Services</a>
+        <a href="#di" class="badge bg-secondary text-decoration-none">DI Registrations</a>
+        <a href="#scripts" class="badge bg-secondary text-decoration-none">Scripts</a>
+    </div>
+
+    @* ── Known UX Issues (hand-curated) ───────────────────────────────────── *@
+    <h5 id="known-issues" class="text-danger mt-4 mb-2"><i class="bi bi-exclamation-triangle me-2"></i>Known UX Issues</h5>
+    <p class="text-muted small mb-2">Hand-curated list of paper-cuts that need design work, not just renaming.</p>
+
+    <div class="card bg-dark border-danger mb-3">
+        <div class="card-body">
+            <h6 class="text-warning mb-1">Writer / Chapters page — 11 buttons, no grouping</h6>
+            <p class="text-muted small mb-2">
+                <code>/stories</code> and <code>/books/{id}/chapters</code> stack 11 controls in one toolbar:
+                <strong>Outline · ⚙ · Review · Extract Continuity · Motifs · Publish ▾ · Absorb · Surprise Me · Guide Me · New Chapter · 💬 Co-Writer</strong>.
+                No visual grouping by intent (plan / write / refine / publish), no "primary action," and the Co-Writer floater overlaps the right edge.
+            </p>
+            <details>
+                <summary class="text-info small">What each one actually does</summary>
+                <ul class="small text-muted mt-2 mb-0">
+                    <li><strong>Outline</strong> → opens the book outline editor (<code>/books/{id}/outline</code>). Plot spine before prose.</li>
+                    <li><strong>⚙ Settings</strong> → book-level settings (title, premise, protagonists).</li>
+                    <li><strong>Review</strong> → multi-LLM Quorum reads every chapter, surfaces continuity gaps + dropped motifs (modal).</li>
+                    <li><strong>Extract Continuity</strong> → scans every chapter and pulls atomic (entity, predicate, object) claims into the continuity store.</li>
+                    <li><strong>Motifs</strong> → motif inventory + auto-detection. Badge shows registered count.</li>
+                    <li><strong>Publish ▾</strong> → dropdown: EPUB (Calibre-ready), HTML, Markdown.</li>
+                    <li><strong>Absorb</strong> → pull a loose (unbooked) chapter into this book.</li>
+                    <li><strong>Surprise Me</strong> → autopilot a new chapter end-to-end from the outline.</li>
+                    <li><strong>Guide Me</strong> → user-directed: synopsis + protagonist → chapter.</li>
+                    <li><strong>New Chapter</strong> → empty chapter shell, lands in editor.</li>
+                    <li><strong>Co-Writer</strong> (floater) → conversational wrap on top of canon: ask, draft, revise, challenge.</li>
+                </ul>
+            </details>
+            <p class="text-info small mt-2 mb-0">
+                Suggested fix: split into <em>Plan</em> (Outline · Motifs), <em>Write</em> (Surprise · Guide · New · Absorb),
+                <em>Refine</em> (Review · Extract Continuity), <em>Ship</em> (Publish ▾). Settings &amp; Co-Writer become page chrome,
+                not toolbar items.
+            </p>
+        </div>
+    </div>
+
+    <div class="card bg-dark border-danger mb-3">
+        <div class="card-body">
+            <h6 class="text-warning mb-1">Outline drift — outline never re-syncs from written prose</h6>
+            <p class="text-muted small mb-2">
+                The outline is built <em>before</em> prose so chapters share a spine. But once a chapter is written, the
+                prose changes the truth — beats get dropped, threads close earlier, state changes shift — and none of
+                that flows back to the outline. The outline ends up frozen at the pre-prose snapshot, so the next
+                chapter's "fill blanks" pulls from a story that's no longer the real one.
+            </p>
+            <p class="text-info small mb-0">
+                Suggested fix: add a reverse pass — after a chapter is written or edited, run an "outline reconciler"
+                that diffs prose ↔ outline beat-by-beat, proposes outline updates (reusing the
+                <code>OutlineReviewService</code> infra), and surfaces them with the same Apply/Dismiss workflow as
+                Book Review. Could be triggered by chapter save, or batched on a "Re-sync Outline" toolbar action.
+            </p>
+        </div>
+    </div>
+
+    @* ── Duplicate clusters ───────────────────────────────────────────────── *@
+    <h5 id="duplicates" class="text-warning mt-4 mb-2"><i class="bi bi-files me-2"></i>Duplicate / Overlapping Names</h5>
+    <p class="text-muted small mb-2">
+        Items grouped by shared camel-case tokens — a quick proxy for "do these step on each other?"
+        Treat as a hint, not a verdict.
+    </p>
+    <div class="row g-2 mb-3">
+        @foreach (var c in snapshot.DuplicateClusters)
+        {
+            <div class="col-lg-6">
+                <div class="card bg-dark border-secondary h-100">
+                    <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                        <span class="text-warning small fw-semibold">@c.Token</span>
+                        <span class="badge bg-secondary">@c.Members.Count</span>
+                    </div>
+                    <ul class="list-unstyled mb-0 px-3 py-2 small">
+                        @foreach (var m in c.Members)
+                        {
+                            <li class="text-light"><span class="badge bg-secondary me-1" style="font-size:.6rem">@m.Source</span>@m.Name <span class="text-muted">· @m.File</span></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+
+    @* ── Razor pages ──────────────────────────────────────────────────────── *@
+    <h5 id="pages" class="text-info mt-4 mb-2"><i class="bi bi-window me-2"></i>Razor Pages (@FilteredPages.Count)</h5>
+    <div class="table-responsive mb-3">
+        <table class="table table-sm table-dark table-striped align-middle small">
+            <thead><tr><th style="width:18%">Route</th><th style="width:24%">Title</th><th style="width:18%">Roles</th><th>File</th></tr></thead>
+            <tbody>
+                @foreach (var p in FilteredPages)
+                {
+                    <tr>
+                        <td><a href="@p.Route" class="text-info">@p.Route</a></td>
+                        <td>@p.Title</td>
+                        <td><span class="badge bg-secondary">@p.Roles</span></td>
+                        <td class="text-muted">@p.File</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @* ── CLI ──────────────────────────────────────────────────────────────── *@
+    <h5 id="cli" class="text-info mt-4 mb-2"><i class="bi bi-terminal me-2"></i>CLI Verbs (@FilteredCli.Count)</h5>
+    <p class="text-muted small mb-2">Every <code>dotnet run --project Prose.Blazor -- --&lt;verb&gt;</code> entry point.</p>
+    <div class="row g-2 mb-3">
+        @foreach (var c in FilteredCli)
+        {
+            <div class="col-lg-6">
+                <div class="card bg-dark border-secondary h-100">
+                    <div class="card-header py-1">
+                        <span class="text-warning small fw-semibold">@c.Class</span>
+                        @foreach (var v in c.Verbs)
+                        {
+                            <code class="ms-2 small text-info">@v</code>
+                        }
+                        <small class="text-muted ms-2">@c.File</small>
+                    </div>
+                    <div class="card-body py-2 small">
+                        @if (!string.IsNullOrWhiteSpace(c.Summary))
+                        {
+                            <p class="text-light mb-2">@c.Summary</p>
+                        }
+                        @if (c.Subcommands.Any())
+                        {
+                            <pre class="text-muted bg-black p-2 rounded mb-0" style="white-space:pre-wrap;">@string.Join('\n', c.Subcommands)</pre>
+                        }
+                        else
+                        {
+                            <span class="text-muted">(no subcommand usage parsed)</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @* ── MCP ──────────────────────────────────────────────────────────────── *@
+    <h5 id="mcp" class="text-info mt-4 mb-2"><i class="bi bi-robot me-2"></i>MCP Tools (@FilteredMcp.Count)</h5>
+    <p class="text-muted small mb-2">Tools the Prose MCP server exposes to Claude / external agents.</p>
+    <div class="table-responsive mb-3">
+        <table class="table table-sm table-dark table-striped align-middle small">
+            <thead><tr><th style="width:18%">Tool</th><th style="width:18%">Parameters</th><th>Description</th><th style="width:18%">File</th></tr></thead>
+            <tbody>
+                @foreach (var t in FilteredMcp)
+                {
+                    <tr>
+                        <td><code class="text-info">@t.Name</code></td>
+                        <td class="text-muted"><code>@t.Parameters</code></td>
+                        <td>@t.Description</td>
+                        <td class="text-muted">@t.File</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @* ── Services ─────────────────────────────────────────────────────────── *@
+    <h5 id="services" class="text-info mt-4 mb-2"><i class="bi bi-boxes me-2"></i>Services / Repositories (@FilteredServices.Count)</h5>
+    <p class="text-muted small mb-2">Every <code>class</code> / <code>interface</code> / <code>record</code> in any <code>/Services/</code> folder. Empty Summary = missing XML doc.</p>
+    <div class="table-responsive mb-3">
+        <table class="table table-sm table-dark table-striped align-middle small">
+            <thead><tr><th style="width:22%">Name</th><th style="width:8%">Kind</th><th style="width:14%">Project</th><th>Summary</th><th style="width:18%">File</th></tr></thead>
+            <tbody>
+                @foreach (var s in FilteredServices)
+                {
+                    <tr>
+                        <td><code class="text-info">@s.Name</code></td>
+                        <td>@s.Kind</td>
+                        <td><span class="badge bg-secondary">@s.Project</span></td>
+                        <td>
+                            @if (string.IsNullOrWhiteSpace(s.Summary))
+                            {
+                                <span class="text-muted fst-italic">(no XML doc)</span>
+                            }
+                            else
+                            {
+                                @s.Summary
+                            }
+                        </td>
+                        <td class="text-muted">@s.File</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @* ── DI registrations ─────────────────────────────────────────────────── *@
+    <h5 id="di" class="text-info mt-4 mb-2"><i class="bi bi-link-45deg me-2"></i>DI Registrations (@snapshot.DiRegistrations.Count)</h5>
+    <p class="text-muted small mb-2">From <code>ServiceCollectionExtensions.cs</code>. Anything in /Services/ that's not here is unused — candidate for deletion.</p>
+    <div class="row g-2 mb-3">
+        @foreach (var grp in snapshot.DiRegistrations.GroupBy(r => r.Lifetime))
+        {
+            <div class="col-md-4">
+                <h6 class="text-warning small text-uppercase">@grp.Key (@grp.Count())</h6>
+                <ul class="small text-muted ps-3 mb-0">
+                    @foreach (var r in grp.OrderBy(r => r.Types))
+                    {
+                        <li><code class="text-info">@r.Types</code></li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+
+    @* ── Scripts ──────────────────────────────────────────────────────────── *@
+    <h5 id="scripts" class="text-info mt-4 mb-2"><i class="bi bi-file-earmark-code me-2"></i>Standalone Scripts (@FilteredScripts.Count)</h5>
+    <p class="text-muted small mb-2">
+        Loose <code>.js</code> / <code>.py</code> files. Most of these are one-shot generators / migrations that
+        ran once and were left behind. Anything matching <code>generate_*</code>, <code>rewrite_*</code>,
+        <code>rename_*</code>, <code>fix_*</code> is a strong archive candidate.
+    </p>
+    <div class="table-responsive mb-3">
+        <table class="table table-sm table-dark table-striped align-middle small">
+            <thead><tr><th style="width:14%">Folder</th><th style="width:24%">Name</th><th style="width:6%">KB</th><th>Purpose (top comment)</th></tr></thead>
+            <tbody>
+                @foreach (var s in FilteredScripts)
+                {
+                    <tr class="@(IsArchiveCandidate(s.Name) ? "text-warning" : "")">
+                        <td class="text-muted">@s.Folder</td>
+                        <td><code>@s.Name</code></td>
+                        <td>@s.SizeKb</td>
+                        <td>
+                            @if (string.IsNullOrWhiteSpace(s.Purpose))
+                            {
+                                <span class="text-muted fst-italic">(no top-of-file comment)</span>
+                            }
+                            else
+                            {
+                                @s.Purpose
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    ArchitectureSnapshot? snapshot;
+    string filter = "";
+    bool scanning;
+
+    protected override void OnInitialized()
+    {
+        snapshot = Arch.Scan();
+    }
+
+    async Task Rescan()
+    {
+        scanning = true;
+        StateHasChanged();
+        await Task.Run(() => snapshot = Arch.Scan(force: true));
+        scanning = false;
+    }
+
+    bool Match(params string?[] fields)
+    {
+        if (string.IsNullOrWhiteSpace(filter)) return true;
+        var f = filter.Trim();
+        return fields.Any(s => s != null && s.Contains(f, StringComparison.OrdinalIgnoreCase));
+    }
+
+    List<ServiceEntry> FilteredServices =>
+        snapshot == null ? [] :
+        snapshot.Services.Where(s => Match(s.Name, s.Project, s.File, s.Summary)).ToList();
+
+    List<RazorPageEntry> FilteredPages =>
+        snapshot == null ? [] :
+        snapshot.RazorPages.Where(p => Match(p.Route, p.Title, p.File, p.Roles)).ToList();
+
+    List<CliCommand> FilteredCli =>
+        snapshot == null ? [] :
+        snapshot.CliCommands
+            .Where(c => Match(c.Class, c.File, c.Summary, string.Join(' ', c.Verbs), string.Join(' ', c.Subcommands)))
+            .ToList();
+
+    List<McpTool> FilteredMcp =>
+        snapshot == null ? [] :
+        snapshot.McpTools.Where(t => Match(t.Name, t.Description, t.Parameters, t.File)).ToList();
+
+    List<ScriptEntry> FilteredScripts =>
+        snapshot == null ? [] :
+        snapshot.Scripts.Where(s => Match(s.Name, s.Folder, s.Purpose)).ToList();
+
+    static bool IsArchiveCandidate(string name) =>
+        name.StartsWith("generate_") || name.StartsWith("rewrite_") ||
+        name.StartsWith("rename_")   || name.StartsWith("fix_")     ||
+        name.StartsWith("apply_");
+}

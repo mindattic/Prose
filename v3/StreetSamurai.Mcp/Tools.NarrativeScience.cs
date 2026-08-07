@@ -2,10 +2,10 @@ using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 // ── Narrative-Science tools (Will Storr frameworks) ───────────────────────────
 // Five tools that operationalize "The Science of Storytelling" (Storr, 2019):
@@ -27,7 +27,7 @@ namespace StreetSamurai.Mcp;
 [McpServerToolType]
 public class NarrativeScienceTools(
     NarrativeScienceService narrativeScience,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 

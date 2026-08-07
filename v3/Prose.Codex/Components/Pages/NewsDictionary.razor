@@ -1,0 +1,100 @@
+﻿@page "/news"
+@using Prose.Core.Models.Canon
+@inject NewsRepository Repo
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+<div class="dict-layout">
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <FilterBar AllTags="allTags" @bind-Filter="filter" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+
+        </div>
+        <div class="dict-items">
+            @foreach (var n in SortedItems)
+            {
+                <div class="list-item text-light @(editing?.Headline == n.Headline ? "active" : "")" @onclick="() => Edit(n)">
+                    <div class="fw-bold small">@n.Headline</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@n.Category</div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="dict-editor">
+        @if (editing != null)
+        {
+            <EditViewToggle RepoName="news" Title="@(isNew ? "New Report" : editing.Headline)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
+                <HeaderButtons>
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
+                    @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
+                    @if (confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Confirm</div></button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmDelete = false"><div class="btn-lbl">No</div></button> }
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 2; min-width: 200px;"><div class="field-label">Headline</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Headline" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Date</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="2185-03-14" @bind="editing.Date" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 150px;"><div class="field-label">Source</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Source" /></div>
+                        <div style="flex: 1; min-width: 150px;"><div class="field-label">Reporter</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Reporter" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Casualties</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Casualties" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Body</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="6" @bind="editing.Body"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Aftermath</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.Aftermath"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Runner Relevance</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" placeholder="Why this event matters to the freelance economy..." @bind="editing.RunnerRelevance"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
+        }
+        else
+        {
+            <div class="text-center text-muted py-5"><i class="bi bi-newspaper" style="font-size:3rem;"></i><p class="mt-2">Select a news report or create a new one.</p></div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<NewsData> items = [];
+    private NewsData? editing;
+    private string originalHeadline = "", filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
+    private bool isNew, confirmDelete;
+    private List<NewsData> FilteredItems
+    {
+        get
+        {
+            IEnumerable<NewsData> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(n => n.Headline.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(n => selectedTags.All(t => n.Tags.Contains(t)));
+            return result.ToList();
+        }
+    }
+    private List<NewsData> SortedItems => FilteredItems.OrderBy(x => x.Headline).ToList();
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
+    private void AddNew() { editing = new NewsData(); isNew = true; confirmDelete = false; }
+    private void Edit(NewsData n) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_news", n.Id); editing = n; originalHeadline = n.Headline; isNew = false; confirmDelete = false; if (!Nav.Uri.Contains("id=" + n.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + n.Id, forceLoad: false); }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Headline)) return; if (!isNew && originalHeadline != editing.Headline) Repo.Delete(originalHeadline); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void DoDelete() { if (editing != null) { Repo.Delete(editing.Headline); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Headline, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
+        if (firstRender && !Nav.Uri.Contains("new=true") && !Nav.Uri.Contains("id=") && items.Count > 0)
+        {
+            var lastId = "";
+            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_news") ?? ""; } catch { }
+            if (!string.IsNullOrEmpty(lastId))
+            {
+                var target = items.FirstOrDefault(x => x.Id == lastId);
+                if (target != null) { Edit(target); StateHasChanged(); }
+            }
+        }
+    }
+
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
+}

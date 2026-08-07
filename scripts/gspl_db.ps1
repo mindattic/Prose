@@ -34,7 +34,7 @@ Add-Type -AssemblyName System.Data
 $script:SSIdentityCache = @{}
 
 function Open-SS {
-    param([string]$Server = '(localdb)\MSSQLLocalDB', [string]$Database = 'StreetSamurai')
+    param([string]$Server = '(localdb)\MSSQLLocalDB', [string]$Database = 'Prose')
     $c = New-Object System.Data.SqlClient.SqlConnection("Server=$Server;Database=$Database;Trusted_Connection=True;TrustServerCertificate=True;")
     $c.Open()
     return $c

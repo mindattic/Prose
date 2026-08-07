@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "ss://schema/character",
-  "title": "StreetSamurai canon — Character (engine_data/people/*.json)",
+  "title": "Prose canon — Character (engine_data/people/*.json)",
   "description": "Sentient being living in the Characters repo (SS-LAW-4). Registers the existing on-disk shape; descriptive, not restrictive. id derived as character.<slug(name)>; on disk the row is keyed by filename + name.",
   "type": "object",
   "required": ["type", "name"],

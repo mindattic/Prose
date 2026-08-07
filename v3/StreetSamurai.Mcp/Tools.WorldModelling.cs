@@ -2,10 +2,10 @@
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
-using StreetSamurai.Core.Data;
-using StreetSamurai.Core.Services;
+using Prose.Core.Data;
+using Prose.Core.Services;
 
-namespace StreetSamurai.Mcp;
+namespace Prose.Mcp;
 
 [McpServerToolType]
 public class WorldModellingTools(
@@ -20,7 +20,7 @@ public class WorldModellingTools(
     PostBeatValidationService postBeatValidator,
     ProseLessonStore proseLessonStore,
     TimelineConsistencyService timelineSvc,
-    IDbContextFactory<StreetSamuraiDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory)
 {
     [McpServerTool, Description(
         "Returns a hierarchical relationship tree rooted at an entity, " +

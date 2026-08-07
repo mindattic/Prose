@@ -1,6 +1,6 @@
 # Azure SQL deployment
 
-End-to-end guide for standing StreetSamurai up against Azure SQL Database with **managed-identity authentication** and **GitHub Actions-driven schema migrations**. Everything in this folder is idempotent — re-running any step is safe.
+End-to-end guide for standing Prose up against Azure SQL Database with **managed-identity authentication** and **GitHub Actions-driven schema migrations**. Everything in this folder is idempotent — re-running any step is safe.
 
 ## Architecture
 
@@ -12,7 +12,7 @@ GitHub master push  ->  GitHub Actions (build -> migrate -> deploy)
                     +-----------+-----------+
                     |                       |
               Azure App Service        Azure SQL Database
-              (streetsamurai)          (AAD-only auth)
+              (prose)          (AAD-only auth)
               system-assigned MI        GitHub SP: db_ddladmin
                                         App Service MI: db_datareader/writer
 ```
@@ -53,7 +53,7 @@ Drop both into `azure-sql.parameters.json` (`aadAdminObjectId` and `aadAdminLogi
 ### 3. GitHub OIDC service principal
 
 ```powershell
-$app  = az ad app create --display-name streetsamurai-github | ConvertFrom-Json
+$app  = az ad app create --display-name prose-github | ConvertFrom-Json
 $sp   = az ad sp create --id $app.appId | ConvertFrom-Json
 $appId   = $app.appId    # -> AZURE_CLIENT_ID GitHub secret
 $spObjId = $sp.id        # -> azure-sql.parameters.json githubOidcSpObjectId
@@ -61,7 +61,7 @@ $spObjId = $sp.id        # -> azure-sql.parameters.json githubOidcSpObjectId
 $body = @{
     name      = 'github-master'
     issuer    = 'https://token.actions.githubusercontent.com'
-    subject   = 'repo:mindattic/StreetSamurai:ref:refs/heads/master'
+    subject   = 'repo:mindattic/Prose:ref:refs/heads/master'
     audiences = @('api://AzureADTokenExchange')
 } | ConvertTo-Json
 $body | az ad app federated-credential create --id $app.appId --parameters '@-'
@@ -84,8 +84,8 @@ $body | az ad app federated-credential create --id $app.appId --parameters '@-'
 powershell -NoProfile -ExecutionPolicy Bypass `
     -File infra/setup-azure.ps1 `
     -ResourceGroup street-samurai-rg `
-    -AppServiceName streetsamurai `
-    -GitHubSpName  streetsamurai-github
+    -AppServiceName prose `
+    -GitHubSpName  prose-github
 ```
 
 The script: creates the resource group if needed, deploys Bicep, grants database roles, sets the App Service connection string.
@@ -99,10 +99,10 @@ Push any commit to `master`. The Actions workflow runs:
 
 ## Connection-string resolution at runtime
 
-`v3/StreetSamurai.Core/Extensions/ServiceCollectionExtensions.cs` resolves in this order:
+`v3/Prose.Core/Extensions/ServiceCollectionExtensions.cs` resolves in this order:
 
-1. `ConnectionStrings__StreetSamurai` env var (App Service Application Setting in production)
-2. `IConfiguration.GetConnectionString("StreetSamurai")` from `appsettings.json`
+1. `ConnectionStrings__Prose` env var (App Service Application Setting in production)
+2. `IConfiguration.GetConnectionString("Prose")` from `appsettings.json`
 3. LocalDB fallback
 
 Production uses (1) with `Authentication=Active Directory Default` — the SqlClient resolves the managed identity transparently.
@@ -113,15 +113,15 @@ LocalDB works for everyday writing. Nothing changes:
 
 ```powershell
 dotnet run --project v3/ApplyMigrations
-dotnet run --project v3/StreetSamurai.Blazor
+dotnet run --project v3/Prose.Blazor
 # -> https://localhost:7103/
 ```
 
 To point local dev at the Azure SQL database:
 
 ```powershell
-$env:ConnectionStrings__StreetSamurai = '<connection string from Bicep output>'
-dotnet run --project v3/StreetSamurai.Blazor
+$env:ConnectionStrings__Prose = '<connection string from Bicep output>'
+dotnet run --project v3/Prose.Blazor
 ```
 
 `Authentication=Active Directory Default` uses your `az login` credentials.
@@ -141,7 +141,7 @@ dotnet run --project v3/StreetSamurai.Blazor
 ```powershell
 az sql server firewall-rule create `
     --resource-group street-samurai-rg `
-    --server streetsamurai-sql `
+    --server prose-sql `
     --name 'my-laptop' `
     --start-ip-address $(curl -s ifconfig.me) `
     --end-ip-address   $(curl -s ifconfig.me)

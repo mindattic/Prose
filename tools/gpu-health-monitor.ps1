@@ -7,10 +7,10 @@
 
 $PollSeconds = 60
 $VllmKey     = $env:VLLM_KEY   # set in environment; never hardcode here
-$WorkDir     = "D:\Projects\MindAttic\StreetSamurai"
+$WorkDir     = "D:\Projects\MindAttic\Prose"
 $LogFile     = "$WorkDir\gpu-health-monitor.log"
 $DbServer    = "(localdb)\MSSQLLocalDB"
-$DbName      = "StreetSamurai"
+$DbName      = "Prose"
 
 $Pods = @(
     [PSCustomObject]@{

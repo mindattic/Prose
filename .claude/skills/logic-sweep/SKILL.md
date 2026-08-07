@@ -9,12 +9,12 @@ The law lives in `docs/LOGIC.md`. This skill is the runbook. **Never launch vote
 or reviews from this skill** — if the user wants a score, they will say so explicitly.
 
 ## Fixed facts
-- DB: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d StreetSamurai` (Windows Auth, read-only for audits).
+- DB: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose` (Windows Auth, read-only for audits).
 - Live book = enabled beats in reading order: `JOIN NodeBeats nb ... WHERE nb.IsEnabled = 1
   ORDER BY nb.SortKey`. Books: chapter children by `Nodes.SortKey`, beats within by `nb.SortKey`.
   NEVER order by `Beats.Number`.
 - Reports → `audit-outlines-<today>/logic/<CODE>.md`. Fix files → `.../fixes/<CODE>/`.
-- Text pushes via built exe `v3\StreetSamurai.Cli\bin\Release\net10.0\StreetSamurai.Cli.exe
+- Text pushes via built exe `v3\Prose.Cli\bin\Release\net10.0\Prose.Cli.exe
   --beat update --id <guid> --text -` with OS-level `<` redirection (PowerShell pipelines inject
   BOM; verify `UNICODE(SUBSTRING(Text,1,1)) != 65279` after every push). One CLI invocation at a
   time (port). `dotnet run` may silently drop args — prefer the exe.

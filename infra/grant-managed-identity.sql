@@ -2,30 +2,30 @@
 -- grant-managed-identity.sql
 --
 -- One-shot script that creates contained SQL users for the two AAD
--- principals that need to talk to the StreetSamurai database, and grants
+-- principals that need to talk to the Prose database, and grants
 -- each the database roles its workflow needs:
 --
 --   1. App Service system-assigned managed identity
---      → display name = <APP_SERVICE_NAME>  (default: streetsamurai)
+--      → display name = <APP_SERVICE_NAME>  (default: prose)
 --      → runtime workflow: read + write canon, no schema changes
 --      → roles: db_datareader, db_datawriter
 --
 --   2. GitHub Actions OIDC service principal
---      → display name = <GITHUB_SP_NAME>    (e.g. streetsamurai-github)
+--      → display name = <GITHUB_SP_NAME>    (e.g. prose-github)
 --      → CI/CD workflow: run ApplyMigrations on every master push
 --      → role: db_owner (db_ddladmin is NOT enough — enabling SYSTEM_VERSIONING
 --        on temporal tables fails with "You do not have the required permissions"
 --        under db_ddladmin; db_owner supersets ddladmin + datareader + datawriter)
 --
--- Run this AGAINST THE StreetSamurai DATABASE (not master), as the AAD
+-- Run this AGAINST THE Prose DATABASE (not master), as the AAD
 -- admin you configured in azure-sql.bicep. Example:
 --
 --   sqlcmd ^
---     -S streetsamurai-sql.database.windows.net ^
---     -d StreetSamurai ^
+--     -S prose-sql.database.windows.net ^
+--     -d Prose ^
 --     -G ^
 --     -i infra/grant-managed-identity.sql ^
---     -v APP_SERVICE_NAME=streetsamurai GITHUB_SP_NAME=streetsamurai-github
+--     -v APP_SERVICE_NAME=prose GITHUB_SP_NAME=prose-github
 --
 -- -G uses AAD-interactive auth; you'll get a browser prompt. The two -v
 -- variables substitute into the FROM EXTERNAL PROVIDER clauses below.

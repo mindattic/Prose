@@ -4,7 +4,7 @@ Show a dashboard table of all non-archived strands with their Code, Title, Kind,
 
 ## Instructions
 
-Run the following SQL against `(localdb)\MSSQLLocalDB` database `StreetSamurai` and render the results as a markdown table, sorted by score descending (unscored last):
+Run the following SQL against `(localdb)\MSSQLLocalDB` database `Prose` and render the results as a markdown table, sorted by score descending (unscored last):
 
 ```sql
 WITH latest_srs AS (

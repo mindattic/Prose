@@ -1,6 +1,6 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 layer: methodology
 status: locked
 updated: 2026-07-18

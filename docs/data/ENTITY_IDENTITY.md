@@ -1,13 +1,13 @@
 ---
 codex: 1
-project: StreetSamurai
+project: Prose
 code: SS
 layer: data
 status: living
 updated: 2026-06-07
 ---
 
-# StreetSamurai — Master Entity-Identity Table (L5)
+# Prose — Master Entity-Identity Table (L5)
 
 > The register of structured canon-as-data. Per [SS-LAW-1](../BIBLE.md#SS-§5) the **live**
 > authoritative canon is the SQL database (`Entities` + `Records.Json`); `engine_data/*.json` is the

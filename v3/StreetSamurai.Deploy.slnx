@@ -1,9 +1,0 @@
-<Solution>
-  <!-- Deploy solution: open this to work on or publish the Blazor web hosts (Writer + Codex).
-       Not used during normal CLI/MCP development — use StreetSamurai.slnx for that. -->
-  <Project Path="../../MindAttic.Authentication/src/MindAttic.Authentication/MindAttic.Authentication.csproj" />
-  <Project Path="StreetSamurai.Codex/StreetSamurai.Codex.csproj" />
-  <Project Path="StreetSamurai.Core/StreetSamurai.Core.csproj" />
-  <Project Path="StreetSamurai.Shared/StreetSamurai.Shared.csproj" />
-  <Project Path="StreetSamurai.Writer/StreetSamurai.Writer.csproj" />
-</Solution>

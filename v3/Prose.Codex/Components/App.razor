@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <ResourcePreloader />
+    <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
+    <link rel="stylesheet" href="_content/Prose.UiUx/css/shared.css" />
+    <link rel="stylesheet" href="@Assets["app.css"]" />
+    <link rel="stylesheet" href="@Assets["Prose.Codex.styles.css"]" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" />
+    <ImportMap />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <HeadOutlet />
+</head>
+
+<body>
+    <div id="app-loader" style="display:none; position:absolute; bottom:0.75rem; right:0.75rem; z-index:99999; pointer-events:none;" aria-hidden="true">
+        <div class="spinner-border text-danger" style="width:1.4rem; height:1.4rem; border-width:0.18rem;" role="status"></div>
+    </div>
+    <script src="js/loader.js"></script>
+    <script src="js/home-bg.js?v=3"></script>
+    <script src="_content/Prose.UiUx/js/pin-footer.js"></script>
+    <script src="_content/Prose.UiUx/js/user-login.js"></script>
+    <script src="_content/Prose.UiUx/js/user-circle.js"></script>
+    <script src="_content/Prose.UiUx/js/user-timeout.js"></script>
+    <Routes @rendermode="InteractiveServer" />
+    <ReconnectModal />
+    <script src="@Assets["_framework/blazor.web.js"]"></script>
+    <script src="@Assets["lib/bootstrap/dist/js/bootstrap.bundle.min.js"]"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/graph-interop.js"></script>
+    <script src="js/episode-player.js"></script>
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.4/dist/3d-force-graph.min.js"></script>
+    <script src="js/graph-3d-interop.js"></script>
+    <script src="js/story-shape.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/write-interop.js"></script>
+    <script src="js/node-interop.js"></script>
+    <script src="js/here-map.js"></script>
+    <script src="js/meridian-map.js"></script>
+    <script src="js/geomap.js"></script>
+    <script src="js/treemap-interop.js"></script>
+    @* CyberSpace animated console background (sacred-geometry.js + console-bg.js) removed
+       2026-06-15 — plain dark mode (universe-neutral shell). *@
+    <script src="js/toasts.js"></script>
+    <script src="js/state.js"></script>
+    <!-- <script src="js/glyph-box.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="js/score-chart.js"></script>
+    <script src="js/webspeech.js"></script>
+
+</body>
+
+</html>
