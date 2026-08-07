@@ -1,0 +1,76 @@
+{
+  "node_slug": "high-five-019f787d",
+  "node_title": "The Way Up",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 1,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "There are strong sensory hooks that seduce before horror lands \u2014 Skillet Row\u0027s \u0027hot oil and wet concrete, and under that, something sweet,\u0027 Scraps ladling broth without breaking eye contact, the Glass sequence\u0027s tactile bloom \u2014 but much of the middle (job montages, clinic procedures, board mechanics) shifts into efficient exposition mode (\u0027The subdermal work took three hours... six thread-anchors seated at the C6 vertebra\u0027) that explains world mechanics accurately without lingering on texture to make GLMZ feel irresistible first.",
+      "Fix": "Slow down the expository stretches (clinic installation, Ozzie\u0027s board economics, the Vane rate-splitting) to root each in one vivid sensory or emotional hook before the mechanical/informational payload, so allure consistently precedes or interlaces with the horror rather than horror riding alone on bare competent description."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "pass",
+      "Evidence": "The opening beats \u2014 Tavi and Reza leaving Ozzie\u0027s squat, the Gray Zone described through a character who \u0027hadn\u0027t stopped once\u0027 looking at the Thread, and the mundane texture of Skillet Row\u0027s booths and haggling \u2014 establish the world through routine, lived-in detail before any plot demand (the debtor job) arrives.",
+      "Fix": null
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Most terms land well in-voice (\u0027civic neuretics everybody got seeded with,\u0027 \u0027the Thread... anchored somewhere near Crestwood, climbing until it stopped being visible\u0027), but some proprietary nouns arrive with zero gloss and rely on context alone \u2014 \u0027CorpoNations\u0027 never appears at all, and terms like \u0027Axiom logistics,\u0027 \u0027Lotus-adjacent contract,\u0027 \u0027Helix-grade,\u0027 and \u0027Ashgrave perimeter\u0027 are dropped as pure brand-texture with no orienting cue for a first-time reader to anchor scale or stakes.",
+      "Fix": "Add a half-clause of sensory or functional context on first use of the corporate/geographic proper nouns (e.g., \u0027an Axiom logistics courier \u2014 one of the big orbital shippers\u0027 or a physical detail that signals Ashgrave\u0027s function) so newcomers can place them without breaking the in-voice flow."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "Multiple acronyms appear with no expansion at all: \u0027Cermak Tier-2 consult\u0027 and \u0027the basic mesh\u0027, \u0027Helix-grade\u0027 haptic array, and most notably \u0027NSB\u0027-style world jargon isn\u0027t used, but GLMZ-type acronyms like tech terms are absent of gloss \u2014 e.g., there are no acronyms like \u0027NSB\u0027 here, but the story does use unexplained shorthand terms without any acronym-expansion pattern at all (e.g., no acronyms are ever glossed in-voice before use, since none appear in strict acronym form, but comparable jargon like \u0027Tier-1 mesh,\u0027 \u0027Tier-2 consult,\u0027 and \u0027Helix-grade\u0027 are dropped as if pre-established).",
+      "Fix": "If any acronym is intended to appear in this story, introduce it once with a natural in-voice gloss of the full term (e.g., \u0027the Cermak Tier-2 neural consult\u0027 before shortening it), and audit all technical shorthand for the same treatment."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The high-five callback across the whole node \u2014 \u0027the same crack as the squat, but bigger now, giddier\u0027 and later \u0027his hand came up an inch off his hip, old habit, reaching for a palm that wasn\u0027t there anymore\u0027 \u2014 gives Tavi a single tender, unguarded tell of attachment to Reza that he immediately buries by closing his hand around the pistol instead.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "pass",
+      "Evidence": "The final beat\u2014Tavi seeing Scraps hand a job to two fresh, wide-eyed nineteen-year-olds, his hand reaching for a palm that isn\u0027t there anymore, closing instead around the cold twin pistol, then simply \u0027He went to work\u0027\u2014resolves nothing plot-wise but adds the exact weight the rule calls for: the cycle restarting with new kids, the severed partnership, and the character hardening into the city\u0027s machinery.",
+      "Fix": null
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The recurring high-five motif works perfectly on a first read as a bonding gesture, but the final scenes deliberately track its erosion (\u0027his hand didn\u0027t come up... they both watched it stay there\u0027) and the closing image (\u0027his hand came up an inch off his hip, old habit, reaching for a palm that wasn\u0027t there anymore\u0027) recontextualizes every earlier slap as foreshadowing of the split \u2014 a detail that only fully lands once the reader knows the partnership ends.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose reads as a self-contained, ground-up origin story (two nineteen-year-olds from a squat building a partnership) rather than a retrofit of continuity-laden material \u2014 worldbuilding terms like \u0027the Glass,\u0027 \u0027Substrate,\u0027 \u0027quanta,\u0027 and \u0027chrome\u0027 are introduced through action and context (e.g., \u0027The Glass didn\u0027t invent anything. It took what was already there and stripped away whatever usually kept a body from feeling all of it at once\u0027) rather than via expository seams that suggest a rewrite bolted onto existing lore.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "The story vividly renders neuretics (jack ports, mesh tiers, the Glass), nanites as ambient infrastructure (coverage percentages, healing warmth, gray zone thinning), and CorpoNations/gray zones as governing texture (Ashgrave perimeter, Vane\u0027s contracts, checkpoints), but AIs as agentic factional entities never appear at all, and the Schism is completely absent \u2014 there is no rift, no wound in reality, no physics-breaking event referenced anywhere in the text.",
+      "Fix": "Weave in at least one concrete reference to the Schism as a physical/historical rupture (e.g., a landmark, a no-go zone, or a character\u0027s offhand memory of it) and introduce or gesture at an AI faction with its own visible agenda operating in this world."
+    }
+  ]
+}

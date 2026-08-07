@@ -1,0 +1,76 @@
+{
+  "node_slug": "the-door-is-unlocked-2db1c6ca",
+  "node_title": "Pixel",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "pass",
+      "Evidence": "The aerobloc passage seduces before any horror lands: \u0027A city block... held aloft on an eigenlift frame so wide she had to work to find its edges in the murk,\u0027 followed by her palm on the glass and the physical joy of reverse-engineering it \u2014 \u0027Something settled in behind her sternum, warm and level and entirely uninvited\u0027 \u2014 and the terminal\u0027s Hyper Reality noise, the AIs that \u0027talk to her,\u0027 and the lived-in wrongness of jury-rigged ductwork (\u0027Nobody had redrawn any of it since the day it first went in, and she liked it the better for that\u0027) all build allure through texture before the extortion plot\u0027s menace takes over.",
+      "Fix": null
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens directly with heist tension already engaged (\u0027The job was going beautifully. That was always when you had to watch it.\u0027) and plunges into active infiltration, drones, and counter-intrusion alarms within the first paragraphs \u2014 there is no grounded commute/transaction beat where a jaded local simply moves through the world before the plot demands attention.",
+      "Fix": "Precede the heist with a short, low-stakes beat of the protagonist doing something mundane in her world (paying for something, riding transit, reading a machine\u0027s hum) so the reader falls into the setting before the crisis begins."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Terms like \u0027neuretics\u0027 (used immediately for embodied action: \u0027Her neuretics ran a direct line into the building\u0027s maintenance scheduler\u0027) and \u0027Husk\u0027 are glossed lightly through function, but \u0027CorpoNations\u0027 and \u0027\u03A6\u0027 currency and \u0027GLMZ\u0027/\u0027The Low\u0027/\u0027Seam margin\u0027 are dropped in with only partial orientation (\u0027GLMZ \u2014 the biggest stretch of gray-zone machinery in the northern hemisphere, ten times Detroit\u0027s machine density\u0027 is a clean gloss, but \u0027CorpoNation-adjacent,\u0027 \u0027CorpoNation registry node,\u0027 and \u0027\u03A6\u0027 amounts appear dozens of times with no first-touch anchoring at all, relying on context alone).",
+      "Fix": "Give \u0027CorpoNations\u0027 and the \u03A6 currency one brief in-voice orienting beat at their true first mention (e.g., a passing thought like \u0027a CorpoNation name \u2014 the kind of backing that bought silence from ArcSec\u0027 or noting \u03A6 as \u0027the going gray-zone scrip\u0027 when she first counts it) rather than letting readers infer their meaning purely from repeated exposure."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "\u0027GLMZ\u0027 is used repeatedly throughout (e.g., \u0027She\u0027d been planning the move for a year... GLMZ \u2014 the biggest stretch of gray-zone machinery in the northern hemisphere\u0027) without ever giving its full expanded term; similarly \u0027ArcSec\u0027 appears (\u0027A Scalpel crew didn\u0027t live this far outside its own territory... ArcSec didn\u0027t keep that quiet\u0027) with no expansion at first use, and \u0027CorpoNation\u0027 is treated as a known compound term without explanation.",
+      "Fix": "Introduce GLMZ (and ArcSec) with an in-voice full-term gloss at first mention, e.g., \u0027the Great Lakes Machine Zone\u2014GLMZ, everyone called it,\u0027 before ever using the bare acronym."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The eigenlift-block moment \u2014 \u0027She had not expected to feel anything about that. She was wrong. Something settled in behind her sternum, warm and level and entirely uninvited, and she left it alone\u0027 \u2014 and the boots detail where she realizes she stopped padding the toes without noticing, both crack her armor briefly before she re-seals it (\u0027She looked at that a moment... She leaned down and laced them tighter, and left them the way they were\u0027).",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The plot business (skim resolved, mother\u0027s instruments recovered, boots no longer needing paper) resolves fully, and the final beat\u2014introducing herself as \u0027Pixel\u0027 to Kyle\u2014reads as a hopeful, forward-looking capstone (\u0027A pleasure to meet you\u0027) rather than a beat that adds cost or weight; it closes the arc neatly instead of leaving an unresolved pull.",
+      "Fix": "End one beat earlier or add a final quiet image that carries unresolved cost (e.g., a glance back at 2D\u0027s unexplained blood, or the unclosed question of who\u0027s really behind that door) instead of landing on the warm, settled note of a new name given freely."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The boots-and-paper detail (padded every morning, then quietly unpadded without her noticing when it changed) works as a complete emotional beat on first read, but a returning reader who knows the ending \u2014 her choosing \u0027Pixel\u0027 and stepping into a new identity \u2014 will recognize it retroactively as the story\u0027s real thesis stated early and physically: she outgrew the old inheritance without marking the moment. Similarly, the AI-warmth motif (\u0027it seemed glad to have been noticed\u0027) reads as flavor on a first pass but becomes a thematic rhyme with her own choice to let 2D\u0027s door stay closed and to open herself to Kyle, once a reader has the whole arc.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose reads as a fully self-contained heist/thriller arc (job, betrayal, investigation, confrontation, resolution) that explains its own terms as it goes\u2014\u0027ghosting,\u0027 \u0027Blur,\u0027 \u0027Husk,\u0027 eigenlift suppression fields, the neuretics-generated train\u2014through concrete sensory demonstration rather than lore-dump, which is exactly the \u0027add doors, don\u0027t rebuild the house\u0027 move a gateway pass should make.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "Nanites (used implicitly via \u0027suppression fields\u0027/eigenlift, matter-shaping repairs, and body infrastructure), Schism, and gray-zone/CorpoNation power are all richly textured, and AIs-as-agents is strongly present (the scheduler, the Pivot AI, the coordination node all \u0027want\u0027 to be asked right and respond with warmth). But neuretics are shown mainly as the protagonist\u0027s personal tool for hacking/riding the Pulse illusion, never framed as a social/economic divide between haves and have-nots; and the Schism itself is never named or referenced at all \u2014 the eigenlift/suppression-field tech reads as advanced engineering rather than a physics-breaking rift in reality.",
+      "Fix": "Add a beat that names the Schism explicitly as the origin of the physics-defying eigenlift/suppression tech, and include at least one line marking neuretics as a costly augmentation that divides those who can afford the edge from those who can\u0027t (e.g., a client or rival who lacks them and is visibly outmatched because of it)."
+    }
+  ]
+}

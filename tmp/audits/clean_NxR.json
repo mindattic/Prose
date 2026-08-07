@@ -1,0 +1,69 @@
+{
+  "node_slug": "neon-rust-019f06da",
+  "node_title": "Neon \u0026 Rust",
+  "mode": "sequel",
+  "previous_node": "Magenta \u0026 Gunmetal (magenta-gunmetal-019f00a6)",
+  "gateway_ready": false,
+  "blocking_count": 4,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "reenter_through_change",
+      "Title": "Re-enter through change, not summary",
+      "Status": "fail",
+      "Evidence": "The opening leans heavily on explicit backstory recap rather than a changed present carrying the memory: \u0027She\u0027d built it the year after Wennick, after one wrong call came back as a look she still couldn\u0027t shake\u0027 and later \u0027At the diner near the Spine, the morning after Axiom, it had been five who carried the truth...Six wasn\u0027t cleaner. Six had a stranger in it\u0027 \u2014 these are direct summary-mode exposition dumps explaining what happened rather than letting the present state (the rule, the crew, the count) imply it.",
+      "Fix": "Cut the explicit Wennick/Axiom explanations and let Rook\u0027s present behavior (the three-steps hesitation, the counting ritual, her wariness of Adalemo) carry the history without narrating the backstory that produced it."
+    },
+    {
+      "Key": "reintroduce_like_old_friend",
+      "Title": "Reintroduce names like an old friend would",
+      "Status": "warn",
+      "Evidence": "Some returning-cast introductions land exactly right (Boiler introduced \u0027reading a crack in a load-bearing column the way another man reads a letter he\u0027s carried too long,\u0027 Scout \u0027in four places up there, and not one of them was the roof her body sat on\u0027) \u2014 these are efficient, in-voice tags. But others front-load dossier-style backstory instead: Lace\u0027s entrance leans on abstract analysis (\u0027She came in the way she came into everywhere \u2014 sideways to the doorframe... present where the cost was lowest\u0027) before any concrete defining action, and Vox is introduced mid-scene via technical function (\u0027two fingers resting on the seam... feeling the four channels\u0027) without a single grounding gesture a lapsed reader could hook \u0027right, her\u0027 onto until much later.",
+      "Fix": "Give Lace and Vox one immediate, physical, defining beat on first appearance (the way Boiler gets the column and Scout gets the rooftop) before pivoting into the analytical description of how they operate."
+    },
+    {
+      "Key": "lighter_regloss",
+      "Title": "Refresh proprietary terms on a lighter touch than the gateway",
+      "Status": "warn",
+      "Evidence": "Proprietary terms like \u0027PEREGRINE,\u0027 \u0027the Lake Platform,\u0027 \u0027Wennick,\u0027 \u0027the Loop,\u0027 and \u0027Class V pathway\u0027 are dropped in with only glancing context (e.g., \u0027whether PEREGRINE had gone quiet or only quiet-sounding\u0027) that assumes the reader already carries the referent, while other terms like \u0027Greymark Unseen jacket\u0027 or \u0027ArcSec\u0027 get a quick functional gloss (\u0027filed no proximity contact with their readers\u0027) that does the re-teaching work well.",
+      "Fix": "Give the recurring proper nouns most load-bearing to backstory (Wennick, the Lake Platform, PEREGRINE\u0027s prior incarnation) at least one clause each that re-teaches their meaning through context, the way the Greymark jacket line already does, rather than trusting bare recall."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "Acronyms like \u0027NSB\u0027-style terms appear bare with no prior full-term gloss: \u0027GLMZ\u0027 is used repeatedly (e.g., \u0027At that hour the GLMZ was all lit surface\u0027) with no expansion ever given, and \u0027ArcSec\u0027 appears (\u0027A pair of ArcSec sat on a cart\u0027) with no full term preceding it, as does \u0027PEREGRINE\u0027 functioning like an org/program acronym-style proper noun introduced bare (\u0027whether PEREGRINE had gone quiet\u0027).",
+      "Fix": "Insert the full expansion in-voice at first use, e.g. introduce \u0027the Greater Lakes Metro Zone \u2014 the GLMZ\u0027 and \u0027Arcturus Security, ArcSec for short\u0027 before the bare acronyms are used again."
+    },
+    {
+      "Key": "pay_previous_due",
+      "Title": "Pay the previous book its due, then move",
+      "Status": "fail",
+      "Evidence": "The opening pages are dense with unglossed callbacks to prior events (Wennick, the Lake Platform, Axiom\u0027s Class V division, the diner near the Spine, the five-vs-six count comparison, PEREGRINE, Stave) that are treated as load-bearing emotional history without ever pausing to confirm to a first-time or returning reader what was won or lost and why it should land as weight; the text relitigates the rule/Wennick material repeatedly (the rusted-door metaphor recurs at least three times) rather than banking it once and moving forward.",
+      "Fix": "Replace the recurring abstract callbacks to Wennick/the rule with one concrete, early, self-contained beat that shows what the previous book\u0027s ending cost or won Rook, confirms it stuck, and then let the narrative move on without re-explaining it later."
+    },
+    {
+      "Key": "open_door_left_ajar",
+      "Title": "Open the door the last ending left ajar",
+      "Status": "warn",
+      "Evidence": "The prose leans heavily on prior events (Wennick, Lake Platform, Axiom, the 2206 tile, Rook\u0027s rule) as texture, but the \u0027ajar door\u0027 from the previous book is never named as a single clear question early on \u2014 instead the reader is dropped into a dense web of backstory (Adalemo\u0027s rail fall, the formula, the five-vs-six count) that reads as continuity-for-returning-readers without a legible single thread being reopened and complicated for someone tracking \u0027what happens in this city\u0027 from book one.",
+      "Fix": "Add an early, explicit line naming the specific unresolved question the last book ended on (e.g., what Rook actually decided about Adalemo, or what became of the formula) before burying it under new complications, so returning readers immediately recognize the reopened thread and newcomers get a clean hook."
+    },
+    {
+      "Key": "reward_long_memory",
+      "Title": "Reward the long memory without taxing the short one",
+      "Status": "fail",
+      "Evidence": "The prose leans heavily on unglossed prior-story events treated as load-bearing context \u2014 \u0027the year after Wennick,\u0027 \u0027the last job\u0027 where the rule slipped, \u0027the Lake Platform,\u0027 \u0027the diner near the Spine, the morning after Axiom\u0027 with \u0027five who carried the truth about the formula,\u0027 and Rook\u0027s fraught unresolved history with Adalemo (\u0027a man she\u0027d put in the lake once, in a storm, off a failed rail\u0027) \u2014 none of which are explained enough for a first-time reader to grasp their emotional stakes, yet the current plot\u0027s tension (why the rule matters, why six vs. five is a big deal, why Adalemo\u0027s loyalty is such a live question) depends on feeling their weight.",
+      "Fix": "Add brief in-scene grounding for each callback the moment it\u0027s invoked \u2014 e.g., a sentence clarifying what happened with Wennick, what the Axiom formula secret actually was, and what passed between Rook and Adalemo at the rail \u2014 so newcomers get the necessary emotional context without needing the previous book, while returning readers still get the deeper resonance."
+    },
+    {
+      "Key": "escalate_not_repeat",
+      "Title": "Escalate, don\u0027t repeat",
+      "Status": "pass",
+      "Evidence": "The heist escalates past the original engagement\u0027s stakes into new moral terrain: Vox discovers the wall she\u0027s cracking isn\u0027t PEREGRINE\u0027s target but Ohara\u0027s own buried atrocity-cover-up (sixty-one names, forty reconciled, twenty-one erased), forcing a real-time ethical choice (reseal vs. expose) that has no precedent in \u0027the last job,\u0027 and the story adds a genuinely new intimacy problem (Ohara\u0027s memory gap, the \u0027did it open?\u0027 repeated twice) and a new structural wrinkle (a sixth person, an enemy operative, now holding crew secrets) that a repeat of the Axiom job could never produce.",
+      "Fix": null
+    }
+  ]
+}

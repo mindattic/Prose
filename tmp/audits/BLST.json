@@ -1,0 +1,405 @@
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[Slug], [u].[Name], [u].[Theme], [u].[UniversePrimer], [u].[IsActive], [u].[SortKey], [u].[WorldFacts]
+      FROM [Universe] AS [u]
+      ORDER BY [u].[SortKey], [u].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@ef_filter__p2='?' (DbType = Boolean), @ef_filter__ScopedUniverseId='?' (DbType = Guid), @key='?' (Size = 120)], CommandType='Text', CommandTimeout='30']
+      SELECT [s].[Key], [s].[UniverseId], [s].[Json], [s].[UpdatedAt]
+      FROM [Settings] AS [s]
+      WHERE (@ef_filter__p2 = CAST(1 AS bit) OR [s].[UniverseId] = @ef_filter__ScopedUniverseId OR [s].[UniverseId] = '0197e9c9-0099-7000-8000-000000000099') AND [s].[Key] = @key
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF OBJECT_ID(N'[dbo].[Findings]', N'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[Findings] (
+        [Id]            BIGINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+        [DetectedAt]    DATETIME2     NOT NULL DEFAULT SYSUTCDATETIME(),
+        [FilePath]      NVARCHAR(900) NOT NULL,
+        [ChapterId]     NVARCHAR(80)  NULL,
+        [Category]      NVARCHAR(40)  NOT NULL,
+        [Severity]      NVARCHAR(20)  NOT NULL,
+        [Summary]       NVARCHAR(MAX) NOT NULL,
+        [Snippet]       NVARCHAR(MAX) NULL,
+        [SuggestedFix]  NVARCHAR(MAX) NULL,
+        [Status]        NVARCHAR(20)  NOT NULL,
+        [ResolvedAt]    DATETIME2     NULL,
+        [DedupKey]      NVARCHAR(450) NOT NULL
+    );
+    CREATE UNIQUE INDEX [UQ_Findings_DedupKey] ON [dbo].[Findings]([DedupKey]);
+    CREATE INDEX [IX_Findings_Status]   ON [dbo].[Findings]([Status]);
+    CREATE INDEX [IX_Findings_FilePath] ON [dbo].[Findings]([FilePath]);
+    CREATE INDEX [IX_Findings_ChapterId] ON [dbo].[Findings]([ChapterId]);
+END;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Findings] AS [f]) THEN CAST(1 AS bit)
+          ELSE CAST(0 AS bit)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@ef_filter__p2='?' (DbType = Boolean), @ef_filter__ScopedUniverseId='?' (DbType = Guid), @slug='?' (Size = 200), @slug0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [n].[Id], [n].[Asin], [n].[AudioCompletedAt], [n].[Author], [n].[BookTokVideoGeneratedAt], [n].[BookTokVideoPath], [n].[BookTokVideoProvider], [n].[CanonAt], [n].[CharsNarrated], [n].[CombinedAudioPath], [n].[CoverImageGeneratedAt], [n].[CoverImagePath], [n].[CoverImageProvider], [n].[CoverPrompt], [n].[CoverPromptGeneratedAt], [n].[CreatedAt], [n].[DefaultLocation], [n].[Description], [n].[Error], [n].[IsCanon], [n].[KdpPageCount], [n].[KdpPublishedAt], [n].[KdpTitleId], [n].[Kind], [n].[LastPlayedBeatId], [n].[LastPlayedSec], [n].[NarratedBeatCount], [n].[NodeBible], [n].[NodeBibleGeneratedAt], [n].[NodeCode], [n].[NodeType], [n].[NodeUserStories], [n].[NodeUserStoriesUpdatedAt], [n].[ParentNodeId], [n].[PreviousNodeId], [n].[PublicationStatus], [n].[PublishUrl], [n].[Score], [n].[ScoredAt], [n].[Seed], [n].[Slug], [n].[SortKey], [n].[StartedAt], [n].[Status], [n].[Subtitle], [n].[Summary], [n].[Title], [n].[TotalBeatsToNarrate], [n].[TtsEngine], [n].[UniverseId], [n].[UpdatedAt], [n].[Version], [n].[VoiceId], [n].[VoiceModel], [n].[VoiceSeed], [n].[VoiceSimilarity], [n].[VoiceStability], [n].[VoiceStyle]
+      FROM [Nodes] AS [n]
+      WHERE (@ef_filter__p2 = CAST(1 AS bit) OR [n].[UniverseId] = @ef_filter__ScopedUniverseId) AND ([n].[Slug] = @slug OR [n].[NodeCode] = @slug0)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@ef_filter__p2='?' (DbType = Boolean), @ef_filter__ScopedUniverseId='?' (DbType = Guid), @nodeId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [n0].[Id], [n0].[Asin], [n0].[AudioCompletedAt], [n0].[Author], [n0].[BookTokVideoGeneratedAt], [n0].[BookTokVideoPath], [n0].[BookTokVideoProvider], [n0].[CanonAt], [n0].[CharsNarrated], [n0].[CombinedAudioPath], [n0].[CoverImageGeneratedAt], [n0].[CoverImagePath], [n0].[CoverImageProvider], [n0].[CoverPrompt], [n0].[CoverPromptGeneratedAt], [n0].[CreatedAt], [n0].[DefaultLocation], [n0].[Description], [n0].[Error], [n0].[IsCanon], [n0].[KdpPageCount], [n0].[KdpPublishedAt], [n0].[KdpTitleId], [n0].[Kind], [n0].[LastPlayedBeatId], [n0].[LastPlayedSec], [n0].[NarratedBeatCount], [n0].[NodeBible], [n0].[NodeBibleGeneratedAt], [n0].[NodeCode], [n0].[NodeType], [n0].[NodeUserStories], [n0].[NodeUserStoriesUpdatedAt], [n0].[ParentNodeId], [n0].[PreviousNodeId], [n0].[PublicationStatus], [n0].[PublishUrl], [n0].[Score], [n0].[ScoredAt], [n0].[Seed], [n0].[Slug], [n0].[SortKey], [n0].[StartedAt], [n0].[Status], [n0].[Subtitle], [n0].[Summary], [n0].[Title], [n0].[TotalBeatsToNarrate], [n0].[TtsEngine], [n0].[UniverseId], [n0].[UpdatedAt], [n0].[Version], [n0].[VoiceId], [n0].[VoiceModel], [n0].[VoiceSeed], [n0].[VoiceSimilarity], [n0].[VoiceStability], [n0].[VoiceStyle], [s].[NodeId], [s].[BeatId], [s].[IsEnabled], [s].[SortKey], [s].[Id], [s].[Act], [s].[AudioPath], [s].[CreatedAt], [s].[Description], [s].[DurationSec], [s].[EmotionalScore], [s].[EmotionalTone], [s].[EntityStale], [s].[GapAfterAudioPath], [s].[GapAfterMs], [s].[IsChapterStart], [s].[Kind], [s].[LastRequestId], [s].[NarratedAt], [s].[Number], [s].[PaceHint], [s].[SceneType], [s].[Score], [s].[ScoredAt], [s].[Slug], [s].[Stale], [s].[StructureRole], [s].[Subtext], [s].[Text], [s].[TextHash], [s].[Title], [s].[UpdatedAt], [s].[Version], [s].[VoiceId], [s].[WasCorrected]
+      FROM (
+          SELECT TOP(1) [n].[Id], [n].[Asin], [n].[AudioCompletedAt], [n].[Author], [n].[BookTokVideoGeneratedAt], [n].[BookTokVideoPath], [n].[BookTokVideoProvider], [n].[CanonAt], [n].[CharsNarrated], [n].[CombinedAudioPath], [n].[CoverImageGeneratedAt], [n].[CoverImagePath], [n].[CoverImageProvider], [n].[CoverPrompt], [n].[CoverPromptGeneratedAt], [n].[CreatedAt], [n].[DefaultLocation], [n].[Description], [n].[Error], [n].[IsCanon], [n].[KdpPageCount], [n].[KdpPublishedAt], [n].[KdpTitleId], [n].[Kind], [n].[LastPlayedBeatId], [n].[LastPlayedSec], [n].[NarratedBeatCount], [n].[NodeBible], [n].[NodeBibleGeneratedAt], [n].[NodeCode], [n].[NodeType], [n].[NodeUserStories], [n].[NodeUserStoriesUpdatedAt], [n].[ParentNodeId], [n].[PreviousNodeId], [n].[PublicationStatus], [n].[PublishUrl], [n].[Score], [n].[ScoredAt], [n].[Seed], [n].[Slug], [n].[SortKey], [n].[StartedAt], [n].[Status], [n].[Subtitle], [n].[Summary], [n].[Title], [n].[TotalBeatsToNarrate], [n].[TtsEngine], [n].[UniverseId], [n].[UpdatedAt], [n].[Version], [n].[VoiceId], [n].[VoiceModel], [n].[VoiceSeed], [n].[VoiceSimilarity], [n].[VoiceStability], [n].[VoiceStyle]
+          FROM [Nodes] AS [n]
+          WHERE (@ef_filter__p2 = CAST(1 AS bit) OR [n].[UniverseId] = @ef_filter__ScopedUniverseId) AND [n].[Id] = @nodeId
+      ) AS [n0]
+      LEFT JOIN (
+          SELECT [b].[NodeId], [b].[BeatId], [b].[IsEnabled], [b].[SortKey], [b0].[Id], [b0].[Act], [b0].[AudioPath], [b0].[CreatedAt], [b0].[Description], [b0].[DurationSec], [b0].[EmotionalScore], [b0].[EmotionalTone], [b0].[EntityStale], [b0].[GapAfterAudioPath], [b0].[GapAfterMs], [b0].[IsChapterStart], [b0].[Kind], [b0].[LastRequestId], [b0].[NarratedAt], [b0].[Number], [b0].[PaceHint], [b0].[SceneType], [b0].[Score], [b0].[ScoredAt], [b0].[Slug], [b0].[Stale], [b0].[StructureRole], [b0].[Subtext], [b0].[Text], [b0].[TextHash], [b0].[Title], [b0].[UpdatedAt], [b0].[Version], [b0].[VoiceId], [b0].[WasCorrected]
+          FROM [BeatNodes] AS [b]
+          INNER JOIN [Beats] AS [b0] ON [b].[BeatId] = [b0].[Id]
+      ) AS [s] ON [n0].[Id] = [s].[NodeId]
+      ORDER BY [n0].[Id], [s].[NodeId], [s].[BeatId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@ef_filter__p2='?' (DbType = Boolean), @ef_filter__ScopedUniverseId='?' (DbType = Guid), @node_Id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [n].[Id], [n].[Asin], [n].[AudioCompletedAt], [n].[Author], [n].[BookTokVideoGeneratedAt], [n].[BookTokVideoPath], [n].[BookTokVideoProvider], [n].[CanonAt], [n].[CharsNarrated], [n].[CombinedAudioPath], [n].[CoverImageGeneratedAt], [n].[CoverImagePath], [n].[CoverImageProvider], [n].[CoverPrompt], [n].[CoverPromptGeneratedAt], [n].[CreatedAt], [n].[DefaultLocation], [n].[Description], [n].[Error], [n].[IsCanon], [n].[KdpPageCount], [n].[KdpPublishedAt], [n].[KdpTitleId], [n].[Kind], [n].[LastPlayedBeatId], [n].[LastPlayedSec], [n].[NarratedBeatCount], [n].[NodeBible], [n].[NodeBibleGeneratedAt], [n].[NodeCode], [n].[NodeType], [n].[NodeUserStories], [n].[NodeUserStoriesUpdatedAt], [n].[ParentNodeId], [n].[PreviousNodeId], [n].[PublicationStatus], [n].[PublishUrl], [n].[Score], [n].[ScoredAt], [n].[Seed], [n].[Slug], [n].[SortKey], [n].[StartedAt], [n].[Status], [n].[Subtitle], [n].[Summary], [n].[Title], [n].[TotalBeatsToNarrate], [n].[TtsEngine], [n].[UniverseId], [n].[UpdatedAt], [n].[Version], [n].[VoiceId], [n].[VoiceModel], [n].[VoiceSeed], [n].[VoiceSimilarity], [n].[VoiceStability], [n].[VoiceStyle], [s].[NodeId], [s].[BeatId], [s].[IsEnabled], [s].[SortKey], [s].[Id], [s].[Act], [s].[AudioPath], [s].[CreatedAt], [s].[Description], [s].[DurationSec], [s].[EmotionalScore], [s].[EmotionalTone], [s].[EntityStale], [s].[GapAfterAudioPath], [s].[GapAfterMs], [s].[IsChapterStart], [s].[Kind], [s].[LastRequestId], [s].[NarratedAt], [s].[Number], [s].[PaceHint], [s].[SceneType], [s].[Score], [s].[ScoredAt], [s].[Slug], [s].[Stale], [s].[StructureRole], [s].[Subtext], [s].[Text], [s].[TextHash], [s].[Title], [s].[UpdatedAt], [s].[Version], [s].[VoiceId], [s].[WasCorrected]
+      FROM [Nodes] AS [n]
+      LEFT JOIN (
+          SELECT [b].[NodeId], [b].[BeatId], [b].[IsEnabled], [b].[SortKey], [b0].[Id], [b0].[Act], [b0].[AudioPath], [b0].[CreatedAt], [b0].[Description], [b0].[DurationSec], [b0].[EmotionalScore], [b0].[EmotionalTone], [b0].[EntityStale], [b0].[GapAfterAudioPath], [b0].[GapAfterMs], [b0].[IsChapterStart], [b0].[Kind], [b0].[LastRequestId], [b0].[NarratedAt], [b0].[Number], [b0].[PaceHint], [b0].[SceneType], [b0].[Score], [b0].[ScoredAt], [b0].[Slug], [b0].[Stale], [b0].[StructureRole], [b0].[Subtext], [b0].[Text], [b0].[TextHash], [b0].[Title], [b0].[UpdatedAt], [b0].[Version], [b0].[VoiceId], [b0].[WasCorrected]
+          FROM [BeatNodes] AS [b]
+          INNER JOIN [Beats] AS [b0] ON [b].[BeatId] = [b0].[Id]
+      ) AS [s] ON [n].[Id] = [s].[NodeId]
+      WHERE (@ef_filter__p2 = CAST(1 AS bit) OR [n].[UniverseId] = @ef_filter__ScopedUniverseId) AND [n].[ParentNodeId] = @node_Id AND [n].[NodeType] = N'chapter'
+      ORDER BY [n].[SortKey], [n].[Id], [s].[NodeId], [s].[BeatId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@ef_filter__p2='?' (DbType = Boolean), @ef_filter__ScopedUniverseId='?' (DbType = Guid), @nodeId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [n].[Id]
+      FROM [Nodes] AS [n]
+      WHERE (@ef_filter__p2 = CAST(1 AS bit) OR [n].[UniverseId] = @ef_filter__ScopedUniverseId) AND [n].[ParentNodeId] = @nodeId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@searchIds1='?' (DbType = Guid), @searchIds2='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[IsTransparent], [p].[NodeId], [p].[PayoffBeatId], [p].[PayoffDescription], [p].[PlantBeatId], [p].[PlantDescription], [p].[SortKey], [p].[TransparencyNote], [p].[UniverseId], [p].[UpdatedAt]
+      FROM [PlantPayoffs] AS [p]
+      WHERE [p].[NodeId] IN (@searchIds1, @searchIds2)
+      ORDER BY [p].[SortKey]
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[100]
+      Start processing HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[100]
+      Sending HTTP request POST https://api.anthropic.com/v1/messages
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 3133.6909ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 3137.2223ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=459
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 4279.4827ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 4279.5661ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=434
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 4395.6612ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 4395.7234ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=475
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 4532.5221ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 4532.5852ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=536
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 5535.0017ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 5535.0557ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=717
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 5917.0243ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 5917.0785ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=645
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 6225.7605ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 6225.8177ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=767
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 6941.033ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 6945.3427ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=858
+info: System.Net.Http.HttpClient.LegionClient.ClientHandler[101]
+      Received HTTP response headers after 7978.1127ms - 200
+info: System.Net.Http.HttpClient.LegionClient.LogicalHandler[101]
+      End processing HTTP request after 7978.1975ms - 200
+info: StreetSamurai.Core.Services.ClaudeService[0]
+      Claude response: model=claude-sonnet-5, responseLen=795
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[Status] IN (N'New', N'Triaged') AND [f].[FilePath] LIKE N'beat:%'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT DISTINCT [b].[BeatId]
+      FROM [BeatNodes] AS [b]
+      WHERE [b].[IsEnabled] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      DELETE FROM [Findings]
+      OUTPUT 1
+      WHERE [Id] = @p0;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      DELETE FROM [Findings]
+      OUTPUT 1
+      WHERE [Id] = @p0;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      DELETE FROM [Findings]
+      OUTPUT 1
+      WHERE [Id] = @p0;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      DELETE FROM [Findings]
+      OUTPUT 1
+      WHERE [Id] = @p0;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      DELETE FROM [Findings]
+      OUTPUT 1
+      WHERE [Id] = @p0;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@filePathPrefix_startswith='?' (Size = 900), @summaryPrefix_startswith='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[FilePath] LIKE @filePathPrefix_startswith ESCAPE N'\' AND [f].[Summary] LIKE @summaryPrefix_startswith ESCAPE N'\'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      DELETE FROM [Findings]
+      OUTPUT 1
+      WHERE [Id] = @p0;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@dedup='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[DedupKey] = @dedup
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 40), @p1='?' (Size = 80), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (Size = 900), @p5='?' (DbType = DateTime2), @p6='?' (Size = 20), @p7='?' (Size = 4000), @p8='?' (Size = 20), @p9='?' (Size = 4000), @p10='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Findings] ([Category], [ChapterId], [DedupKey], [DetectedAt], [FilePath], [ResolvedAt], [Severity], [Snippet], [Status], [SuggestedFix], [Summary])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@dedup='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[DedupKey] = @dedup
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 40), @p1='?' (Size = 80), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (Size = 900), @p5='?' (DbType = DateTime2), @p6='?' (Size = 20), @p7='?' (Size = 4000), @p8='?' (Size = 20), @p9='?' (Size = 4000), @p10='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Findings] ([Category], [ChapterId], [DedupKey], [DetectedAt], [FilePath], [ResolvedAt], [Severity], [Snippet], [Status], [SuggestedFix], [Summary])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@dedup='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[DedupKey] = @dedup
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 40), @p1='?' (Size = 80), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (Size = 900), @p5='?' (DbType = DateTime2), @p6='?' (Size = 20), @p7='?' (Size = 4000), @p8='?' (Size = 20), @p9='?' (Size = 4000), @p10='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Findings] ([Category], [ChapterId], [DedupKey], [DetectedAt], [FilePath], [ResolvedAt], [Severity], [Snippet], [Status], [SuggestedFix], [Summary])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@dedup='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[DedupKey] = @dedup
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 40), @p1='?' (Size = 80), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (Size = 900), @p5='?' (DbType = DateTime2), @p6='?' (Size = 20), @p7='?' (Size = 4000), @p8='?' (Size = 20), @p9='?' (Size = 4000), @p10='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Findings] ([Category], [ChapterId], [DedupKey], [DetectedAt], [FilePath], [ResolvedAt], [Severity], [Snippet], [Status], [SuggestedFix], [Summary])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@dedup='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [f].[Id], [f].[Category], [f].[ChapterId], [f].[DedupKey], [f].[DetectedAt], [f].[FilePath], [f].[ResolvedAt], [f].[Severity], [f].[Snippet], [f].[Status], [f].[SuggestedFix], [f].[Summary]
+      FROM [Findings] AS [f]
+      WHERE [f].[DedupKey] = @dedup
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 40), @p1='?' (Size = 80), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (Size = 900), @p5='?' (DbType = DateTime2), @p6='?' (Size = 20), @p7='?' (Size = 4000), @p8='?' (Size = 20), @p9='?' (Size = 4000), @p10='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Findings] ([Category], [ChapterId], [DedupKey], [DetectedAt], [FilePath], [ResolvedAt], [Severity], [Snippet], [Status], [SuggestedFix], [Summary])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+{
+  "node_slug": "ballast-019f3ac7",
+  "node_title": "Ballast",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "fail",
+      "Evidence": "The prose is meticulous and controlled \u2014 the hum, the worn handholds outside 5-C, the commons wall\u0027s repainted numbers \u2014 but these textures are deployed as thematic reinforcement of the ledger-and-loss structure rather than as seductive, strange-beautiful sensory hooks; the piece opens with dry procedural exposition (stress readings, coherence decay curves, wrist displays) and stays in that register throughout, so allure never precedes or exceeds the accurate observation.",
+      "Fix": "Open with a sustained, sensory immersion in Candelaria\u0027s specific wrongness-made-beautiful (the sound of a bloc breathing, the smell of sixty-year-old recycled air, the vertiginous view through the outer ring) before pivoting to Teo\u0027s clinical readings, so the reader falls in love with the place before the ledger starts subtracting from it."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "pass",
+      "Evidence": "The opening beats \u2014 Teo checking stress readings on the gantry, the commons wall ritual of repainting the altitude number, the walk deck-by-deck through worn handholds and the machine shop sign \u2014 establish the world\u0027s ordinary texture (the Hush, freeboard, Air Tax) entirely through a character who has stopped being surprised by any of it, before the AshgraveMaterials letter introduces plot pressure.",
+      "Fix": null
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "pass",
+      "Evidence": "Terms like \u0027the Hush\u0027 (coherence drivers holding the bloc aloft), \u0027The Low\u0027 (no governance line, no Air Tax bracket, salvage waiting for a claimant), \u0027Air Tax\u0027 (a fee on altitude explained in one clause), and \u0027freeboard\u0027 (glossed via the surface-hull analogy \u0027back when hulls floated on water\u0027) are each folded into Teo\u0027s working thoughts as she\u0027d actually think them, oriented at first use without stopping the narrative to explain.",
+      "Fix": null
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "warn",
+      "Evidence": "The story is scrupulous about most in-universe jargon (e.g. \u0027Air Tax,\u0027 \u0027freeboard,\u0027 \u0027certified salvage\u0027 are all glossed), but the currency symbol \u0027\u03A6\u0027 is used from its very first appearance (\u0027Total offer: \u03A6847,000\u0027) with no explanation of what it stands for or how to read it, and \u0027NSB\u0027-style acronyms are otherwise avoided entirely, suggesting the rule was followed for true acronyms but the symbol itself was never glossed.",
+      "Fix": "Add a brief in-voice gloss the first time \u03A6 appears, e.g. having Teo mentally note \u0027\u03A6 \u2014 Phos, the city\u0027s standard currency mark\u0027 before or as she reads the AshgraveMaterials letter."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "warn",
+      "Evidence": "The clearest human crack for Teo is the tether-platform photograph \u0027propped against the wall where it always sat, never hung \u2014 because hanging it would have meant deciding it belonged somewhere permanent, and she still wasn\u0027t sure it did,\u0027 paired with her fifty-one-kilo life and the realization that her own lightness kept her from understanding what weight costs others until Prita\u0027s hand pressed to her sternum.",
+      "Fix": "Let that photograph beat breathe a moment longer with a concrete sensory or memory detail (what\u0027s in the photo, who\u0027s in it) rather than only abstracting it into the \u0027permanence\u0027 theme, so the crack lands as a felt image instead of another analytical observation."
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The final image\u2014Candelaria touching down after the Hum goes quiet\u2014is a genuine \u0027one beat past the handoff\u0027 gesture, but it lands as resolution rather than residue: the plot\u0027s central tension (will it sell, will it survive) is fully closed, and the descent is rendered as clean, almost peaceful (\u0027exactly the way a healthy descent should sound\u0027), which reads as a soft landing rather than a cost the reader is left holding.",
+      "Fix": "Cut the sequence off before or just after touchdown on a single small, unresolved physical detail\u2014Wen\u0027s calibration marks going dark, or Teo\u0027s crate by the door\u2014rather than narrating the full technical success of the landing, so the last note is one unaccounted-for weight rather than a completed process."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The story front-loads complete, first-pass sense (Teo\u0027s jettison math, the vote, the descent) while planting details that resonate only in hindsight \u2014 Wen\u0027s calibration marks \u0027still true\u0027 in the dark after his shop is stripped, Dagny\u0027s insistence that \u0027I want the question to not exist\u0027 paired with her later reveal that she voted for her own reasons rather than Prita\u0027s, and Teo\u0027s fifty-one kilos motif culminating in the blank relocation field that inverts her whole year of measuring others.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose reads as a self-contained, richly built story with invented terms (Hush, freeboard, jettison quota, Air Tax) that are consistently defined in-line through action and dialogue rather than lore-dump exposition \u2014 e.g. \u0027Freeboard, she called this... Candelaria\u0027s freeboard was altitude now\u0027 \u2014 which is a targeted accessibility addition, not a structural rewrite of the narrative itself.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "fail",
+      "Evidence": "Nanites (only fleeting robotic \u0027Almagre\u0027 as automaton/AI, not ambient bodily/matter infrastructure), neuretics (mentioned once as a delivery channel for a letter, with no cognitive-divide stakes), and Schism (never mentioned at all) are essentially absent; the story instead builds its own vivid but parallel apparatus of aerobloc physics, Air Tax, and salvage law that substitutes for the actual five pillars.",
+      "Fix": "Weave in explicit texture for the Schism as the reason airborne blocs and gray-zone law exist, show neuretics creating a real capability/status divide among residents (not just a message conduit), and depict nanites as literally repairing bodies or shaping matter in daily life rather than relying on a single ambiguous automaton called Almagre."
+    }
+  ]
+}

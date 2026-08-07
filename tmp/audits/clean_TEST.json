@@ -1,0 +1,76 @@
+{
+  "node_slug": "the-court-martial-019ed361",
+  "node_title": "Testament",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 5,
+  "advisory_count": 2,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The opening terminal-at-0300 section (mist, sodium lamps, sulfur smell, the turret cat) is genuinely seductive, textured world-building that pulls before horror lands, but this technique is abandoned almost entirely once the plot machinery (Brandt calls, IRB hearing, Cortland flashback, Orvenne, Halcyon bureaucracy) takes over \u2014 the back three-quarters reads as dense procedural/expository plotting with almost no sensory allure, just relentless information delivery.",
+      "Fix": "Redistribute the strange-beautiful texture (turret cats, sodium light, lived-in wrongness) throughout the later bureaucratic and hearing-room sections so the seduction doesn\u0027t vanish once the plot accelerates."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The opening lines immediately establish plot machinery (Bear running overnight security \u0027against the wrong kind of attention,\u0027 a dream, the Strix Harvest Frame, and within a page a flagged message from Brandt and a \u0027testament\u0027) rather than a grounded entry beat of ordinary world-texture; the mundane details (the cat, the sulfur smell, the soup) are folded into an already-tense surveillance/plot setup instead of preceding it.",
+      "Fix": "Delay the Brandt message and the frame\u0027s plot-critical mechanics for several more paragraphs, letting the terminal, the cat, and Bear\u0027s routine breathe as pure world/character texture before any inciting information arrives."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "fail",
+      "Evidence": "Terms like \u0027Strix Harvest Frame,\u0027 \u0027neuretics,\u0027 \u0027CorpoNations,\u0027 \u0027Halcyon,\u0027 \u0027the Spine,\u0027 and \u0027perifoot\u0027 are dropped in without any in-voice orientation (\u0027He ran the Manowar status through his neuretics, the read coming up clean\u0027 assumes the reader already knows what neuretics and Manowar authorization mean), while other terms like \u0027Manowar\u0027 and \u0027turret cat\u0027 later get small explanatory asides that read as inconsistent gloss placement rather than a deliberate technique.",
+      "Fix": "Give each proprietary term (neuretics, the Harvest Frame/Manowar naming inconsistency, CorpoNations, the Spine) one brief sensory or functional clause at first mention, in Bear\u0027s own rhythm, the way \u0027turret cat\u0027 is later explained through the cat\u0027s servo-smooth head swivel, and resolve whether the frame is called Strix Harvest Frame or Manowar so a first-time reader isn\u0027t left assuming two separate devices."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "\u0027NS-7\u0027 appears repeatedly (e.g., \u0027the NS-7 had been compensating for thirty-seven minutes\u0027) with only a vague relative clause about a relay implant, never a clear in-voice full-term expansion; similarly \u0027IRB\u0027 is used (\u0027the IRB panel date\u0027) before any gloss, and \u0027ArcSec\u0027 appears bare with no expansion at all.",
+      "Fix": "Introduce each acronym once with its full name glossed in-voice at first use\u2014e.g., \u0027the Neural Stabilization relay, the NS-7, that kept his brainstem firing\u0027; \u0027the Internal Review Board\u2014the IRB\u2014panel date\u0027; and give ArcSec a full-term first mention before using the bare acronym."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The soup daydream (\u0027marrow and root vegetables, the kind that took a whole afternoon and fogged the windows\u0027) and his laugh at the turret cat\u0027s yawn (\u0027he laughed once, a quiet push of air through the beard... He was big enough to lose to a cat\u0027) are small, unguarded human beats before he re-armors into operator mode.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The manuscript closes with a fully resolved, editorializing thesis statement \u2014 \u0027He\u0027d decided a long time ago exactly what he owed. He\u0027d never once missed a payment in eight years. He wasn\u0027t going to start now that no one was watching to see if he would\u0027 \u2014 followed by mundane forward motion (\u0027There was a soup he\u0027d been meaning to make... That was enough\u0027) that reads as contentment rather than cost.",
+      "Fix": "Cut the final editorial summary sentence and end instead on one small unresolved physical gesture (e.g., the hand on the dead frame finding no warmth, held a beat too long) that carries the weight of the obligation without stating its meaning."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The Brandt salute/handshake is explicitly flagged in advance (\u0027Later \u2014 in a lobby two floors up, at a hearing that hadn\u0027t happened yet \u2014 Brandt would straighten... The absence of a returned gesture \u2014 that was the thing that would matter\u0027) and then delivered in full later, which works as a complete beat on first read but recontextualizes the earlier flash-forward on a second pass; similarly the yellow flag on the third briefing item, the turret cat motif, and the number \u002743 seconds\u0027 after the handshake all reward a reader who already knows the ending.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "fail",
+      "Evidence": "The piece is an enormous, densely cross-referenced saga spanning multiple timelines (Thursday overnight, eight years earlier at Cortland, the hearing, Brandt\u0027s death, the Threshold, Ironbend, the closeout) with dozens of named institutions (Halcyon, Manowar/Strix Harvest Frame, NS-7, Orvenne, IRB, Ledger) introduced with zero onboarding scaffolding \u2014 terms like \u0027Manowar,\u0027 \u0027neuretics,\u0027 \u0027sub-license,\u0027 and \u0027the Glooms\u0027 are dropped as if the reader already holds the whole universe\u0027s vocabulary.",
+      "Fix": "Rather than layering in more elided backstory and new factions (Orvenne, the Threshold, Ledger) that expand the lore load, cut or compress these late additions and instead seed the two or three load-bearing terms (Manowar, Halcyon, the Cortland Engagement) early with light, organic context so a first-time reader isn\u0027t asked to absorb a fully reconstructed world."
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "Nanites/Manowar frame, neuretics, CorpoNation gray-zone texture, and Halcyon-as-institution are richly and repeatedly rendered (e.g. \u0027The Strix Harvest Frame ran warm through his chest,\u0027 \u0027his neuretics flagged a message,\u0027 \u0027Halcyon-licensed territory, every node carried its prefix\u0027), but two pillars are thin: AIs as agents with faction/agenda never clearly appear (Behemoths and turret cats are explicitly non-agentic: \u0027The Behemoths weren\u0027t alive and never pretended to be\u0027), and the Schism as a physics-breaking rift is never mentioned at all \u2014 the story\u0027s instability comes entirely from institutional/human betrayal, not a reality-wound.",
+      "Fix": "Weave in at least one moment where an AI faction with its own agenda acts on the plot (not just tool-like drones), and ground some piece of the setting\u0027s instability or danger explicitly in the Schism as a literal rift in reality rather than purely corporate/human corruption."
+    }
+  ]
+}

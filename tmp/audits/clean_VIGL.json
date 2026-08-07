@@ -1,0 +1,69 @@
+{
+  "node_slug": "vigil-s-end-019f5767",
+  "node_title": "Vigil\u0027s End",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 4,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "There are strong seductive textures scattered throughout (the fold\u0027s \u0027heartbeat of warm gold with no up and no edges,\u0027 the Sentinel as \u0027an altar built to worship the thing it guarded,\u0027 the lens \u0027weeping something slow and amber, warm as bread from an oven\u0027), but these are frequently interrupted by long stretches of procedural/expository material (the boot-print deduction, checkpoint logistics, institutional history recitation) that reads as observation rather than allure, diluting the pull before horror lands.",
+      "Fix": "Trim the investigative and expository passages (boot-print analysis, Relic provenance lectures, institutional history) so the strange-beautiful sensory details carry more of the narrative weight relative to procedural exposition."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens directly with a heist in progress \u2014 \u0027He had already spent one fold... on the crossing before Esvane\u0027s boots found the archive floor\u0027 \u2014 plunging straight into magic-system jargon (folds, membrane, Sentinel, Catalyst) and plot mechanics with no grounded entry beat like a commute or ordinary transaction to let a first-time reader acclimate before the stakes hit.",
+      "Fix": "Precede the heist with a short grounded beat \u2014 someone\u0027s mundane routine (a guard\u0027s rounds, a merchant\u0027s haggling, a commute through the city) seen by a person who has stopped being surprised by this world \u2014 before dropping into the fold-and-Sentinel action."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Terms like \u0027CorpoNations\u0027 don\u0027t appear, but proprietary nouns like \u0027Oculus Lacrimans Vigilantiae,\u0027 \u0027Orbis Omnividens,\u0027 \u0027Descent,\u0027 \u0027the Quiet Mass,\u0027 and \u0027Heloth couriers\u0027 are frequently introduced with dense parenthetical lore-dumps (\u0027Seven hundred and forty-one years of unbroken sight...the founding documents were plain about that much\u0027) rather than the light in-voice touch the rule asks for; some terms (Heloth, fold, Catalyst) do get graceful in-scene glosses (\u0027the trick of stepping clean through a membrane\u0027) that model the technique well elsewhere.",
+      "Fix": "Trim the extended genealogical exposition on the Oculus/Orbis and the Order\u0027s history into shorter, POV-filtered fragments woven into action rather than standalone explanatory paragraphs."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "\u0027AoV\u0027 appears bare in \u0027(59 AoV)\u0027 with no prior or subsequent gloss anywhere in the text expanding what it stands for (e.g. \u0027Age of Vigil\u0027 or similar), leaving first-time readers with an unexplained acronym.",
+      "Fix": "Precede the first use of AoV with an in-voice gloss of its full term, e.g. \u0027fifty-nine years After the Vigil (59 AoV)\u0027, before using the bare acronym."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The Wren line \u0022He\u0027d made a promise once, to someone he did not let himself think about, that he would not become a man who stopped noticing what a thing cost him\u0022 gives a flash of a past attachment and grief beneath his professional armor, and Lyra\u0027s private aching over Vega\u0027s letters (\u0022I know what you are going to have to do\u0022) and her removing her rank mark at the fire are similarly human cracks beneath their functional roles.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The excerpt ends with Vega settling in Pallor, leaving the door \u0027unbarred each night, the way you leave a door unbarred for someone you have already decided is coming home\u0027 \u2014 a hopeful, softly resolved image that closes on reunion-anticipation rather than adding an unresolved weight past the plot\u0027s business.",
+      "Fix": "Cut the hope-forward door image and replace it with one small, costed gesture that doesn\u0027t resolve toward reunion\u2014something that admits what\u0027s been lost or changed and pulls the reader toward the city/world\u0027s unfinished stakes rather than toward an emotionally settled wait."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "warn",
+      "Evidence": "Details like the rank mark Lyra never \u0027looked long enough to see,\u0027 the letter\u0027s buried line \u0027I know what you are going to have to do,\u0027 and Doyle\u0027s parallel to the turret-ring door all clearly reward a second pass, and first-pass comprehension does not depend on catching them \u2014 but the sheer density of deferred payoffs (Wren\u0027s unnamed promise to \u0027someone he did not let himself think about,\u0027 Petra\u0027s knife, Einmar, Sal Vento, the Quiet Mass\u0027s countersign) accumulates past the point of enriching a re-read into taxing a first read, since so many threads are gestured at without grounding.",
+      "Fix": "Trim or lightly anchor a few of the most opaque forward/backward references (e.g., Petra\u0027s knife, Einmar, Sal Vento) with a half-clause of context so first-time readers aren\u0027t left stacking too many unexplained proper nouns while still preserving their deeper resonance for rereaders."
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "fail",
+      "Evidence": "This \u0027node\u0027 is not a targeted gateway pass but an enormous multi-strand manuscript spanning several distinct casts, timelines, and mythologies (Wren/Esvane\u0027s heist, Lyra/Vega\u0027s sisterhood, the crater excavation, Doyle/Balthier, the Sinter Event revelation) with dense unexplained proper nouns (Heloth, Catalyst, the Quiet Mass, Loera tannery prints, Oculus/Orbis Omnividens, Sphere 31, Caer Glas Moor) piled up without orientation, which reads as the full architecture of an existing saga rather than a tuned entry point.",
+      "Fix": "Select and lightly annotate a single self-contained entry thread (e.g., the heist or the crater climax alone) with brief in-scene grounding for key terms, rather than presenting the full sprawling multi-arc manuscript as the gateway node."
+    }
+  ]
+}

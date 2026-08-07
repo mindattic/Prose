@@ -1,0 +1,79 @@
+[
+  {
+    "questionKey": "SK-1-umbrella",
+    "title": "Sinterkin retcon -- collapse to one umbrella term?",
+    "context": "Current canon (ENTOS.md) splits Sinterkin (pure, thinking, born of Sinter itself) from Sinterspawn (mindless, corrupted native creatures). You said the split is real but too confusing for readers, and that 'Sinterkin' could cover ALL creatures merged with/infected by/born of Sinter ichor.",
+    "questionType": "ContradictionResolve",
+    "options": [
+      { "key": "a", "label": "Retire 'Sinterspawn'; 'Sinterkin' becomes the sole umbrella term", "description": "One word for everything that came out of, or was made wrong by, Sinter ichor -- matches your last two messages." },
+      { "key": "b", "label": "Keep both words after all", "description": "Revert to the original two-tier taxonomy; readers get a short in-text gloss instead." },
+      { "key": "c", "label": "Custom", "description": "Different split -- specify in chat." }
+    ]
+  },
+  {
+    "questionKey": "SK-2-rare-trait",
+    "title": "How to flag the rare thinking/bargaining one, without implying a species split",
+    "context": "You said Sinterkin can't be neatly classified -- each is a unique mutation. But LLSS's plot needs a way to signal 'this one is unusually intelligent and can bargain,' unlike the mindless majority.",
+    "questionType": "ContradictionResolve",
+    "options": [
+      { "key": "a", "label": "Frame it as individual rarity, no species label", "description": "\"a Sinterkin that thinks,\" \"this one had gone strange even for a Sinterkin\" -- described case-by-case, never named as a class." },
+      { "key": "b", "label": "Light in-world shorthand for the trait", "description": "Give people a casual term for it anyway, e.g. \"a waking Sinterkin\" or \"a lucid one\" -- convenient but still explicitly not a species." },
+      { "key": "c", "label": "Custom", "description": "Different approach -- specify in chat." }
+    ]
+  },
+  {
+    "questionKey": "SK-3-harrower",
+    "title": "Retire 'Harrower' -- what replaces the big pack-anchor creature's name?",
+    "context": "'Harrower' read as a fixed species/body-type, which contradicts 'no two Sinterkin are alike.' LLSS and VIGL (8 beats) both use it for the larger, pack-anchoring creature.",
+    "questionType": "ContradictionResolve",
+    "options": [
+      { "key": "a", "label": "No fixed name -- describe by size/role each time", "description": "\"the big one,\" \"the one that ran the pack,\" \"the ford-thing\" -- reinforces that these things resist categorization." },
+      { "key": "b", "label": "Keep a folk nickname, but role-based not species-based", "description": "e.g. \"the grown one\" / \"the pack-leader\" as a recurring but explicitly informal tag, same spirit as 'Sinterkin Hounds.'" },
+      { "key": "c", "label": "Custom", "description": "Different replacement -- specify in chat." }
+    ]
+  },
+  {
+    "questionKey": "SK-4-folk-naming",
+    "title": "Confirm origin-based folk nicknames (non-taxonomic)",
+    "context": "You proposed 'Sinterkin Hounds' for pack members that used to be dogs -- a folk convenience name, not a claim that they're all alike.",
+    "questionType": "ContradictionResolve",
+    "options": [
+      { "key": "a", "label": "Yes -- \"Sinterkin [former animal]\" is standard folk shorthand", "description": "Explicitly non-taxonomic; two 'Sinterkin Hounds' can still look nothing alike. Apply consistently in LLSS/VIGL/TRUCE." },
+      { "key": "b", "label": "No nicknames at all -- always just \"Sinterkin\"", "description": "Simpler, but loses the texture of how villagers/soldiers actually talk about them." },
+      { "key": "c", "label": "Custom", "description": "Different convention -- specify in chat." }
+    ]
+  },
+  {
+    "questionKey": "SK-5-sinterfall",
+    "title": "Adopt 'Sinterfall' as the canonical event name?",
+    "context": "Currently the bolide impact (1312 / 0 AoV, per ENTOS.md) has no proper name -- just 'the Bolide' or 'what came through the membrane at Sinter.' You proposed 'Sinterfall.'",
+    "questionType": "ContradictionResolve",
+    "options": [
+      { "key": "a", "label": "Yes -- adopt 'Sinterfall' as the canonical event name", "description": "Add it to ENTOS.md's Sinter Cavity / Bolide section as the name characters actually use." },
+      { "key": "b", "label": "No -- keep calling it 'the Bolide' / 'the impact'", "description": "Leave the event unnamed/generic as it is now." },
+      { "key": "c", "label": "Custom", "description": "Different name -- specify in chat." }
+    ]
+  },
+  {
+    "questionKey": "SK-6-scope",
+    "title": "How far should this retcon reach once terms are locked?",
+    "context": "'Harrower'/'Sinterspawn' appear in: docs/universes/ENTOS.md (canon), docs/SCRY.md (craft note), LLSS NodeBible + 6 beats, VIGL (8 beats), TRUCE.md + TRNY-brief.md (Sinterspawn only, no retcon conflict there since TRUCE never uses the thinking/bargaining sense).",
+    "questionType": "ContradictionResolve",
+    "options": [
+      { "key": "a", "label": "Full pass now: canon docs + LLSS + VIGL + TRUCE", "description": "Rewrite everything in one pass for immediate consistency across all four affected books." },
+      { "key": "b", "label": "Canon docs + LLSS only for now", "description": "Fix the source-of-truth docs and LLSS (where the plot twist lives); leave VIGL's 8 beats and TRUCE for a later pass." },
+      { "key": "c", "label": "Custom", "description": "Different scope -- specify in chat." }
+    ]
+  },
+  {
+    "questionKey": "SK-7-title",
+    "title": "Keep the book title \"Lieutenant Lyra, Sinterkin Slayer\"?",
+    "context": "With 'Sinterkin' now the umbrella term for everything, does the title still work? Lyra's hunt in this book is specifically for a rare thinking one wearing an ordinary pack-anchor's silhouette.",
+    "questionType": "ContradictionResolve",
+    "options": [
+      { "key": "a", "label": "Keep the title unchanged", "description": "She's still a \"Sinterkin Slayer\" in the broad sense -- the title doesn't need to encode the rare/mindless distinction." },
+      { "key": "b", "label": "Retitle", "description": "The title should signal something more specific now -- specify in chat." },
+      { "key": "c", "label": "Custom", "description": "Other -- specify in chat." }
+    ]
+  }
+]

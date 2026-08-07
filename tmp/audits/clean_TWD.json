@@ -1,0 +1,69 @@
+{
+  "node_slug": "the-fall-down-019f78f4",
+  "node_title": "The Way Down",
+  "mode": "sequel",
+  "previous_node": "The Way Up (high-five-019f787d)",
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 5,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "reenter_through_change",
+      "Title": "Re-enter through change, not summary",
+      "Status": "warn",
+      "Evidence": "The opening does show changed present-state details well (Reza\u0027s eleven days on floor 43, the corporate promotion, the overlay/Air Tax hierarchy), but several key relational shifts are delivered via direct backstory statements rather than dramatized change \u2014 e.g. \u0027He had not thought about Tavi in a long time \u2014 not since the eigenlift terminal by the Bloom Quarter, the morning the split had gone from a feeling to a fact\u0027 and \u0027He\u0027d worked alone for fourteen months,\u0027 which summarize the rupture instead of letting the present scene imply it.",
+      "Fix": "Replace the explicit narration of the Reza/Tavi split and the fourteen-months-alone line with a concrete present-tense detail (a habit, a gesture, an object) that lets readers infer the history without being told it directly."
+    },
+    {
+      "Key": "reintroduce_like_old_friend",
+      "Title": "Reintroduce names like an old friend would",
+      "Status": "warn",
+      "Evidence": "Reza and Tavi (Rampart/Cutout) get strong reactivating detail through action and stance (\u0027He wasn\u0027t thinking about the door,\u0027 Tavi reading the doorway stance \u0027in a basement in Pilsen\u0027), but returning names dropped in via dossier-like exposition rather than in-voice tags \u2014 e.g. Onwe is introduced with zero physical or behavioral tag at all (\u0027Onwe found him at 0800, already three moves into a conversation\u0027), and Vane is introduced mostly through habit-description (\u0027Auda Vane avoided meeting in person when she could\u0027) which reads more like backstory than a reactivating gesture.",
+      "Fix": "Give Onwe and Vane the same treatment as Tavi/Reza \u2014 one concrete physical or behavioral beat on first appearance (a gesture, a stance, a tic) rather than a summarized habit or unmarked entrance."
+    },
+    {
+      "Key": "lighter_regloss",
+      "Title": "Refresh proprietary terms on a lighter touch than the gateway",
+      "Status": "warn",
+      "Evidence": "(evaluation failed)",
+      "Fix": null
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "Multiple acronyms appear without any in-voice expansion before their bare use: \u0027UBC\u0027 is mentioned as \u0027Universal Basic Credit\u0027 but only parenthetically after the term already reads like an aside rather than a clean gloss (\u0027drinking coffee that cost more than his monthly UBC \u2014 the Universal Basic Credit that used to be the whole of his money\u0027), which inverts the required order (acronym first, then gloss), and \u0027NSB\u0027-style terms like \u0027\u03A6\u0027 (used repeatedly as a bare symbol/unit with no expansion anywhere) and \u0027Tier 1 rig\u0027 are never expanded at all.",
+      "Fix": "Reorder each instance so the full term appears first in-voice (e.g., \u0027his monthly Universal Basic Credit, the UBC that used to be the whole of his money\u0027) and add an in-voice expansion for \u03A6 and any other unexplained abbreviation at its first appearance."
+    },
+    {
+      "Key": "pay_previous_due",
+      "Title": "Pay the previous book its due, then move",
+      "Status": "fail",
+      "Evidence": "The prose never names or gestures at what the previous book\u0027s ending actually was; it opens cold into a new job (forty-third floor routine, Onwe\u0027s orders) and only builds new backstory (Tavi/Reza\u0027s split, Pilsen, Vane) without ever confirming a prior victory or cost the returning reader carried away from book one.",
+      "Fix": "Add an early beat \u2014 a line of Reza\u0027s or Tavi\u0027s internal reflection \u2014 that explicitly names and confirms the outcome of the previous book\u0027s climax (what was won or lost) before pivoting into the new Spire job."
+    },
+    {
+      "Key": "open_door_left_ajar",
+      "Title": "Open the door the last ending left ajar",
+      "Status": "warn",
+      "Evidence": "The prose leans hard on continuity (Reza/Tavi\u0027s Pilsen history, the click-signal, the coffee-counter ritual, the split at the eigenlift terminal) but never names a single overarching thread the previous book left ajar the way the rule demands\u2014there\u0027s no explicit \u0027this is the question you left with\u0027 moment for a returning reader to latch onto early; instead the backstory arrives piecemeal and inferentially (Tavi\u0027s mention that \u0027he had not thought about Tavi in a long time\u0027 and the eigenlift reference come mid-scene, buried in action beats rather than framed as the inherited pull).",
+      "Fix": "Open with an explicit, early beat that names the specific unresolved question from book one (e.g., why Rampart and Cutout split, or what unfinished business the city itself represents for them) before burying it under new plot, so returning readers immediately recognize the door being reopened and see it complicate rather than just recur."
+    },
+    {
+      "Key": "reward_long_memory",
+      "Title": "Reward the long memory without taxing the short one",
+      "Status": "warn",
+      "Evidence": "The prose leans heavily on unexplained legacy weight \u2014 \u0027He knew one man who called that working from the inside out,\u0027 the click-signal from \u0027a stairwell in Pilsen,\u0027 Reza\u0027s unwillingness to even think Tavi\u0027s name, and the Rampart/Cutout backstory referenced via the in-world show \u0027Lacuna\u0027 \u2014 all of which clearly reward a returning reader but are dense enough (three overlapping mysteries: Pilsen, the split at the eigenlift terminal, the four-years-gone history) that a first-timer may struggle to track who these men are to each other and why the corridor fight matters emotionally, since it\u0027s delivered through allusion rather than grounding exposition.",
+      "Fix": "Add one or two concrete lines early in the Reza/Tavi corridor confrontation that plainly state their shared history (partners, betrayal, the split) in-scene rather than relying entirely on oblique callbacks like the click-signal and unspoken name, so newcomers get the emotional stakes without needing prior-book memory."
+    },
+    {
+      "Key": "escalate_not_repeat",
+      "Title": "Escalate, don\u0027t repeat",
+      "Status": "pass",
+      "Evidence": "The dual-contract trap (\u0027extract\u0027 vs \u0027terminate\u0027 on the same target, held by two people who share Pilsen history) and the corridor fight structurally escalate past a simple heist by forcing former partners into a duel neither wants and resolving it through mutual restraint rather than victory\u2014a beat the first story\u0027s frame couldn\u0027t have earned without that history. The ending also refuses catharsis: Reza loses his position, Tavi abandons his weapon, and the final image (a new augmented kid signing a slip, mirroring Tavi\u0027s own origin) explicitly signals the cycle continuing rather than resetting to a clean win.",
+      "Fix": null
+    }
+  ]
+}

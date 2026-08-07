@@ -1,0 +1,76 @@
+{
+  "node_slug": "underclan-019eff97",
+  "node_title": "Underclan",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 3,
+  "advisory_count": 1,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "pass",
+      "Evidence": "The opening pages build seduction through sensory ritual before any threat appears: Leaf\u0027s unteachable three-press rhythm on the heat-stone, glow-rats read like instruments, the blue bioluminescent Still pool described as giving \u0027the quietest light in the Hollow. Old light,\u0027 and the Oarsman\u0027s arm as \u0027gray and smooth and not quite the right color for anything alive\u0027 \u2014 strangeness rendered tactile and lovely before the horror (the withdrawing Current, Marl\u0027s story, the Tartar\u0027s dead cold) lands.",
+      "Fix": null
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "pass",
+      "Evidence": "The opening beats \u2014 Glim reading the air temperature, checking the glow-rat candle, Leaf\u0027s rhythmic heat-stone pressing \u0027no one taught her,\u0027 the sentinel candle check \u2014 are pure world-maintenance rituals performed by someone who \u0027stopped being surprised\u0027 by them, well before any plot demand (the Surfacing call, the wrongness in the left tunnel) intrudes.",
+      "Fix": null
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "fail",
+      "Evidence": "Terms like \u0027CorpoNations,\u0027 \u0027Exclusion Economy,\u0027 \u0027Downward Expansion,\u0027 \u0027the Mission,\u0027 \u0027Channeler,\u0027 and \u0027covenant\u0027 are dropped in with the assumption of stranger-orientation but several arrive as clustered lecture rather than in-voice gloss \u2014 e.g. Vesh\u0027s line \u0027Before the sealing-off, when the deep still had a door to the surface\u0027s markets. Before the Exclusion Economy shut that door and called the shutting a law. Before the Downward Expansion drove the ones it shut out into the Works\u0027 stacks three proprietary-history terms back to back in a single breath of dialogue, functioning as compressed worldbuilding exposition rather than a natural Listener\u0027s aside.",
+      "Fix": "Break Vesh\u0027s history-recitation into smaller, separately-earned beats spread across the scene (each gloss triggered by something in the room or a Brave\u0027s question) rather than delivering the Exclusion Economy and Downward Expansion as a rapid-fire, unbroken litany."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "The acronym GLMZ is not present, but other acronyms/initialisms appear bare and unglossed at first use, e.g. the surface entity introduced only as \u0027the Mission\u0027 with no expansion, and \u0027the One Word\u0027/\u0027the Second Word\u0027 treated as established terms rather than glossed abbreviations \u2014 more clearly, no acronym in the text (such terms as they exist) is ever preceded by a spelled-out full term rendered in-voice before its short form is used.",
+      "Fix": "Introduce each institutional shorthand (e.g., \u0027the Mission\u0027) the first time it appears with an in-voice gloss of the full term it stands for before using the short form again."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "Sorrel juggling the too-hot meat strip Leaf hands him, and \u0027He understood the joke only later, laughing about it with Sorrel. That was the point\u0027 \u2014 a small, warm, unguarded human beat before he re-armors into duty; reinforced by Knuckle\u0027s remembered gesture and the crying-without-sound fragment, which flash genuine vulnerability before Glim returns to Brave discipline.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The node ends on an unresolved, actively suspenseful plot beat \u2014 the Oarsman inexplicably stopping mid-crossing, waiting for an unspecified additional payment \u2014 rather than a quiet gesture past the story\u0027s resolution; the final lines even gesture forward to plot logistics (\u0027A new Fare. The Oarsman, waiting. The far bank behind him and the near bank ahead\u0027) instead of landing a settled emotional note.",
+      "Fix": "Resolve the crossing (let him land or clearly choose not to) and close instead on one small, concrete gesture \u2014 a candle checked, a name unsaid, a hand pressed to stone \u2014 that carries the accumulated cost without opening a new mystery."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "Details like Knuckle\u0027s hand-on-head gesture (echoed exactly when Knuckle repeats it years later), the pale face on a cord glimpsed in the Oarsman\u0027s basin, and Vesh\u0027s silence-piece \u0027I won\u0027t need it where I\u0027m going\u0027 all read as complete, comprehensible beats on first pass but visibly accrue meaning once the reader knows the ending (Vesh\u0027s death, the unresolved origin-mystery, the final triple Fare) \u2014 none of them block understanding if missed, since each is glossed in-scene (e.g., \u0027the same gesture... that had lived all these years in the nerves of his crown\u0027).",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The excerpt reads as a fully realized, self-consistent story with its own vocabulary (Oarsman, Fare, Tartar, Underclan) that is patiently explained through grounded sensory scenes (candle-reading, the heat-stone rhythm, the Oarsman\u0027s arm as bar) rather than exposition dumps; new-reader orientation is achieved through scene-embedded clarification, not structural rewrites.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "(evaluation failed)",
+      "Fix": null
+    }
+  ]
+}

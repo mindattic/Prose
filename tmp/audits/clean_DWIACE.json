@@ -1,0 +1,76 @@
+{
+  "node_slug": "death-whispers-in-a-cats-ear-019ec3fe",
+  "node_title": "Death Whispers in a Cat\u0027s Ear",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 4,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The opening bedroom sequence and the mod-hub scene deliver real texture pull \u2014 the helix zipper pull, the Saltline foil animation, In\u00E9s\u0027s fern-light tattoos, the amber Thread pods \u2014 but the back half becomes a dense procedural of office paperwork, filing, invoices, and case-closing logistics that observes GLMZ\u0027s bureaucracy and horror mechanics without offering comparable sensory seduction.",
+      "Fix": "Cut or compress the Rennick-office administrative stretch and redistribute its page-weight toward more strange-beautiful GLMZ texture (the flood-channel algae glow, the Thread pods, the mod-hub\u0027s living light) so allure keeps pace with the procedural horror throughout, not just in the first third."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens directly into Celeste\u0027s emotionally loaded bedroom scene\u2014memory objects, a dead ex-boyfriend\u0027s hologram, packing to run away with a possibly-sinister voice\u2014immediately demanding plot and backstory investment rather than a grounded, low-stakes entry beat of ordinary world-functioning.",
+      "Fix": "Precede this scene with a brief grounded moment\u2014a commute, a transaction, an ordinary city routine observed by someone jaded to it\u2014before dropping into Celeste\u0027s charged, plot-heavy departure."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "(evaluation failed)",
+      "Fix": null
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "The bare acronym \u0027GLMZ\u0027 is used with an in-line gloss (\u0027Great Lakes Metropolitan Zone \u2014 GLMZ on every form\u0027) which is fine, but \u0027E.L.F.\u0027 appears multiple times (e.g., \u0027The E.L.F. is absent from it\u0027) with no expansion anywhere in the text, and \u0027CorpoNation\u0027 is used as if self-explanatory without ever being unpacked as an acronym or term for a first-time reader.",
+      "Fix": "Add an in-voice gloss the first time E.L.F. appears, such as \u0027the Emergent Lattice Fragment\u2014E.L.F. in Arcturus\u0027s own shorthand\u2014\u0027 before any subsequent bare use of the acronym."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The moment tracing the helix zipper-pull \u2014 remembering watching Jace trace the same spiral on his wrist \u0027from the front row\u0027 and later using it herself to catch his overwhelm, then her fingers catching in the zipper track and her refusal to force it because \u0027force is exactly what she can\u0027t spend on the one thing she has left of him\u0027 \u2014 gives a small, specific, human crack beneath the tactical/functional scenes.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "pass",
+      "Evidence": "The final beat\u2014Rennick setting a second chair for a new, cold-walk-in client while feeling \u0027a cold seam running against the grain of the Network\u0027s steady weight\u0027 moving up the stairs with her\u2014resolves nothing; it reopens the case\u0027s engine on a new victim, landing exactly one beat past the paperwork/payout handoff that closed the Hartley file.",
+      "Fix": null
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The zipper-pull helix that Cel struggles with when packing reads first-pass as a poignant object of grief; on a reread, its jam (\u0027the harder she pulls the deeper it seats... force is exactly what she can\u0027t spend on the one thing she has left of him\u0027) mirrors the story\u0027s central irony that the voice she can\u0027t let go of is precisely the thing endangering her, and the closing Andersonville scene\u0027s \u0027half a degree off\u0027 cadence retroactively re-colors every earlier moment she overrides her own instinct to name the wrongness.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "warn",
+      "Evidence": "The Celeste thread reads as a tuned, gateway-accessible scene\u2014but the elided middle collapses into an ensemble procedural (Rennick, Tamsin, Corvin, Analog, Aleksei, Douglas, Mei-Lin) stacked with dense, unexplained lore (Meridian, Arcturus, the Tributary, Scatter, E.L.F., Aleksei\u0027s compute-lease chain, Feliksas\u0027s shadow log) dropped on a first-time reader with almost no orientation, which reads like the invested-reader version left structurally intact rather than a targeted new-reader pass.",
+      "Fix": "Add brief grounding beats (a clause or short aside) when introducing each new faction/term (Meridian, the Tributary, Arcturus OC unit, the Scatter/E.L.F.) so a first-time reader can track who\u0027s who without needing prior installment knowledge, without restructuring the ensemble scenes themselves."
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "(evaluation failed)",
+      "Fix": null
+    }
+  ]
+}

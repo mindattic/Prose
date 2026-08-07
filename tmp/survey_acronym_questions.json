@@ -1,0 +1,623 @@
+﻿[
+    {
+        "questionKey":  "ATTE-acronym_after_term",
+        "title":  "ATTE (Attendance) -- acronym_after_term: blocking fail",
+        "context":  "\u0027GLMZ\u0027 appears repeatedly (e.g., \u0027no instrument in the GLMZ is pointed at,\u0027 \u0027every corp contract in the city\u0027 vs. \u0027across the GLMZ\u0027) with no in-voice expansion anywhere in the text; \u0027AAMA\u0027 is used freely on first appearance (\u0027the Anomalous Activity Monitoring Authority\u0027)—which is properly glossed—but \u0027GLMZ\u0027 never receives the same treatment.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"no instrument in the Great Lakes Metropolitan Zone -- the GLMZ, everyone called it -- was pointed at that frequency.\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "BCODA-gloss_in_voice",
+        "title":  "BCODA (Bushido Coda) -- gloss_in_voice: blocking fail",
+        "context":  "Terms like \u0027CorpoNations,\u0027 \u0027GLMZ,\u0027 \u0027neuretics,\u0027 \u0027Splicer,\u0027 \u0027Φ\u0027 (currency), \u0027Praxis,\u0027 \u0027Carrion,\u0027 and \u0027the Ghost Period\u0027 are dropped in with zero orientation — e.g. \u0027the CorpoNation property registry sometime in the 2190s\u0027 or \u0027GLMZ night\u0027 assumes the reader already knows what these zones/factions are, and later terms like \u0027Atlas NeoCortex,\u0027 \u0027the sixty-four,\u0027 and \u0027the aperture\u0027 pile up in dense lore-exposition paragraphs that read as pure info-dump rather than in-voice gloss.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone -- GLMZ -- night\" (plus gloss E.L.F. at its first use, e.g. \"the E.L.F. signal -- whatever Emergent Life Form protocol Ledger\u0027s people used for it --\")."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "BCODA-acronym_after_term",
+        "title":  "BCODA (Bushido Coda) -- acronym_after_term: blocking fail",
+        "context":  "GLMZ appears repeatedly (\u0027the GLMZ night\u0027, \u0027any GLMZ block\u0027) with no full-term gloss anywhere in the story, and the acronym E.L.F. is used (\u0027The E.L.F. signal, the one Ledger had picked up\u0027) without ever spelling out what it stands for.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone -- GLMZ -- night\" (plus gloss E.L.F. at its first use, e.g. \"the E.L.F. signal -- whatever Emergent Life Form protocol Ledger\u0027s people used for it --\")."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "CxC-acronym_after_term",
+        "title":  "CxC (Crimson \u0026 Chrome) -- acronym_after_term: blocking fail",
+        "context":  "Multiple acronyms appear with no in-voice expansion ever given: \u0027GLMZ\u0027 (used repeatedly, e.g. \u0027the vacuum rail that ran GLMZ\u0027s spine\u0027 and \u0027GLMZ doesn\u0027t stop being what it is\u0027), \u0027NRST\u0027 (\u0027the gray-market balance from the NRST crack\u0027), and \u0027QUANTA\u0027 (used as a bare term throughout, e.g. \u0027no QUANTA mark\u0027 and \u0027a QUANTA figure that drops\u0027) never receive a full-term gloss before or after first use.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the vacuum rail that ran the Great Lakes Metropolitan Zone\u0027s spine -- GLMZ, if you wanted the letters --\". Also gloss NRST and QUANTA at first use."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "DWIACE-acronym_after_term",
+        "title":  "DWIACE (Death Whispers in a Cat\u0027s Ear) -- acronym_after_term: blocking fail",
+        "context":  "The bare acronym \u0027GLMZ\u0027 is used with an in-line gloss (\u0027Great Lakes Metropolitan Zone — GLMZ on every form\u0027) which is fine, but \u0027E.L.F.\u0027 appears multiple times (e.g., \u0027The E.L.F. is absent from it\u0027) with no expansion anywhere in the text, and \u0027CorpoNation\u0027 is used as if self-explanatory without ever being unpacked as an acronym or term for a first-time reader.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "GLMZ is already glossed correctly. Gloss E.L.F. at its first bare use instead."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "ICFI-acronym_after_term",
+        "title":  "ICFI (It Came From Iowa) -- acronym_after_term: blocking fail",
+        "context":  "\"South meant deeper into the Zone — the Great Lakes corridor, more buyers, fewer questions\" is offered as gloss for \u0027the GLMZ run,\u0027 but the acronym \u0027GLMZ\u0027 itself appears bare in that same sentence and is never expanded into its literal full term before or after use.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone run -- GLMZ, deeper into the corridor --\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "IxS-lighter_regloss",
+        "title":  "IxS (Iron \u0026 Silk) -- lighter_regloss: blocking fail",
+        "context":  "Proprietary terms like \u0027Crimson,\u0027 \u0027Tidewell,\u0027 \u0027Helix facilities,\u0027 \u0027Phase 0/Phase 1,\u0027 \u0027the Protocol,\u0027 \u0027the Stems,\u0027 and \u0027Old Harbor\u0027 are dropped in with zero re-glossing context — e.g., \u0027After Crimson the count had stopped running backward\u0027 and \u0027the other two Helix facilities still out there, still someone else\u0027s problem\u0027 assume the reader already carries full definitions rather than re-teaching them through context.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"all Great Lakes Metropolitan Zone work -- GLMZ work, everyone just said --\". Also gloss NGRA: \"Former NGRA -- National Guard Reserve Auxiliary, or whatever cover the acronym still carried --\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "IxS-acronym_after_term",
+        "title":  "IxS (Iron \u0026 Silk) -- acronym_after_term: blocking fail",
+        "context":  "NGRA appears in Ekow\u0027s introduction (\u0027Ekow Ato. Former NGRA. Twelve years independent operations...\u0027) with no full-term expansion anywhere before or after; similarly GLMZ recurs repeatedly (\u0027all GLMZ work\u0027, \u0027GLMZ afternoons\u0027) without ever being spelled out on the page.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"all Great Lakes Metropolitan Zone work -- GLMZ work, everyone just said --\". Also gloss NGRA: \"Former NGRA -- National Guard Reserve Auxiliary, or whatever cover the acronym still carried --\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "M101-acronym_after_term",
+        "title":  "M101 (M-101) -- acronym_after_term: blocking fail",
+        "context":  "The acronym \u0027M-101\u0027 (and later \u0027M-774\u0027, \u0027M-1018883\u0027) appears immediately in dialogue — \u0027Designation: M-101. Catalog entry: M-1018883\u0027 and Declan\u0027s correction \u0027My name... is M-101\u0027 — with no full term ever glossed for what \u0027M\u0027 stands for; \u0027Myrmidon\u0027 is later used as if synonymous but the letter-number designation itself is never explained as an abbreviation of anything.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Before or at the first use of \u0027M-101\u0027, have a handler or Declan\u0027s own reasoning spell out the full designation term (e.g., \u0027Myrmidon unit one-oh-one\u0027) so the acronym-like catalog code is glossed in-voice prior to its bare use."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "MNEMO-gloss_in_voice",
+        "title":  "MNEMO (Mnemosync) -- gloss_in_voice: blocking fail",
+        "context":  "Terms like \u0027CorpoNations,\u0027 \u0027neuretics,\u0027 \u0027Batch 44-C,\u0027 \u0027Zone 5,\u0027 \u0027the Seam,\u0027 \u0027Waxwing overlay,\u0027 and \u0027GLMZ\u0027 are dropped in without any in-voice orientation — e.g. \u0027Second-generation neuretics — you could see it in the old mount scar behind his ear\u0027 assumes the reader already knows what neuretics are and does, while \u0027Waxwing AR glowed along the public edges\u0027 and \u0027the civic AR died in the gap\u0027 arrive as bare labels with no grounding gloss for a first-time reader.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone\u0027s health data -- GLMZ paperwork, same as anywhere --\". Also gloss AR: \"the civic augmented-reality overlay -- AR -- died in the gap.\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "MNEMO-acronym_after_term",
+        "title":  "MNEMO (Mnemosync) -- acronym_after_term: blocking fail",
+        "context":  "Multiple acronyms appear with no expansion anywhere on the page: \u0027GLMZ\u0027 is used repeatedly (e.g., \u0027Every book could be a reader\u0027s first GLMZ book\u0027 framing aside, but in-text: \u0027Public GLMZ health data through Infrastructure Authority portals\u0027 and \u0027the smell before rain on the loading dock at GLMZ\u0027) with no full term ever glossed; \u0027AR\u0027 appears as \u0027no Waxwing overlay either — the civic AR died in the gap\u0027 with no expansion of \u0027augmented reality\u0027 or in-voice term given first.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone\u0027s health data -- GLMZ paperwork, same as anywhere --\". Also gloss AR: \"the civic augmented-reality overlay -- AR -- died in the gap.\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "MxG-acronym_after_term",
+        "title":  "MxG (Magenta \u0026 Gunmetal) -- acronym_after_term: blocking fail",
+        "context":  "\u0027GLMZ\u0027 appears repeatedly (e.g., \u0027This was the real GLMZ\u0027 and \u0027every biochemist in the GLMZ\u0027) with no in-voice expansion anywhere in the text; similarly \u0027ISB\u0027 is used (\u0027ISB regulatory compliance,\u0027 \u0027the 2218 Infrastructure Safety Mandate\u0027) though \u0027Infrastructure Safety Bureau\u0027 is given before it, GLMZ never gets that treatment.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the real Great Lakes Metropolitan Zone -- the GLMZ, to anyone who\u0027d lived here more than a week --\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "NxR-acronym_after_term",
+        "title":  "NxR (Neon \u0026 Rust) -- acronym_after_term: blocking fail",
+        "context":  "Acronyms like \u0027NSB\u0027-style terms appear bare with no prior full-term gloss: \u0027GLMZ\u0027 is used repeatedly (e.g., \u0027At that hour the GLMZ was all lit surface\u0027) with no expansion ever given, and \u0027ArcSec\u0027 appears (\u0027A pair of ArcSec sat on a cart\u0027) with no full term preceding it, as does \u0027PEREGRINE\u0027 functioning like an org/program acronym-style proper noun introduced bare (\u0027whether PEREGRINE had gone quiet\u0027).",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone -- the GLMZ -- was all lit surface\". Also gloss ArcSec: \"Arcturus Security -- ArcSec -- sat on a cart.\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "PXL-acronym_after_term",
+        "title":  "PXL (Pixel) -- acronym_after_term: blocking fail",
+        "context":  "\u0027GLMZ\u0027 is used repeatedly throughout (e.g., \u0027She\u0027d been planning the move for a year... GLMZ — the biggest stretch of gray-zone machinery in the northern hemisphere\u0027) without ever giving its full expanded term; similarly \u0027ArcSec\u0027 appears (\u0027A Scalpel crew didn\u0027t live this far outside its own territory... ArcSec didn\u0027t keep that quiet\u0027) with no expansion at first use, and \u0027CorpoNation\u0027 is treated as a known compound term without explanation.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone -- GLMZ, everyone called it -- the biggest stretch of gray-zone machinery in the northern hemisphere\". Also gloss ArcSec."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "RTR-acronym_after_term",
+        "title":  "RTR (Read the Room) -- acronym_after_term: blocking fail",
+        "context":  "Multiple acronyms/initialisms appear with no in-voice expansion at first use: \u0027AR layer\u0027 (\u0027his overlay ran empty\u0027), \u0027PA\u0027 (\u0027a PA held together by hope\u0027), \u0027NSB\u0027-style tech term \u0027The Pulse\u0027 is fine as a proper noun but \u0027CDW submachine gun\u0027 is dropped as a bare label with no gloss of what CDW stands for, and \u0027FB-7\u0027 on the Fenris Ballistics Howl is presented as a model code with no expansion.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Introduce each abbreviation the first time in-voice with its full term glossed naturally, e.g. \u0027a public-address system—a PA—held together by hope\u0027 and \u0027a caseless-defense-weapon carbine, a CDW, slung across his front,\u0027 before ever using the bare initials again."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "SRZR-acronym_after_term",
+        "title":  "SRZR (Steppin\u0027 Razor) -- acronym_after_term: blocking fail",
+        "context":  "\u0027TESSERA was the Consensus civic net\u0027 is glossed properly, but numerous acronyms appear bare with no prior expansion at all: \u0027GLMZ\u0027 is used (\u0027the first GLMZ ground she\u0027d touched\u0027) with no expansion anywhere on the page, and \u0027MO-556\u0027 and \u0027GG-9\u0027 are given as if the reader already knows the naming convention, while \u0027Halcyon Combine, Strategic Resources\u0027 introduces \u0027OBERON\u0027 as a bare name with no expansion since it\u0027s presented as a proper name, not flagged as an acronym.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the first Great Lakes Metropolitan Zone ground she\u0027d touched -- GLMZ ground --\". MO-556/GG-9 read as model numbers, not acronyms -- no fix needed for those."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "TEST-gloss_in_voice",
+        "title":  "TEST (Testament) -- gloss_in_voice: blocking fail",
+        "context":  "Terms like \u0027Strix Harvest Frame,\u0027 \u0027neuretics,\u0027 \u0027CorpoNations,\u0027 \u0027Halcyon,\u0027 \u0027the Spine,\u0027 and \u0027perifoot\u0027 are dropped in without any in-voice orientation (\u0027He ran the Manowar status through his neuretics, the read coming up clean\u0027 assumes the reader already knows what neuretics and Manowar authorization mean), while other terms like \u0027Manowar\u0027 and \u0027turret cat\u0027 later get small explanatory asides that read as inconsistent gloss placement rather than a deliberate technique.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Give each proprietary term (neuretics, the Harvest Frame/Manowar naming inconsistency, CorpoNations, the Spine) one brief sensory or functional clause at first mention, in Bear\u0027s own rhythm, the way \u0027turret cat\u0027 is later explained through the cat\u0027s servo-smooth head swivel, and resolve whether the frame is called Strix Harvest Frame or Manowar so a first-time reader isn\u0027t left assuming two separate devices."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "TEST-acronym_after_term",
+        "title":  "TEST (Testament) -- acronym_after_term: blocking fail",
+        "context":  "\u0027NS-7\u0027 appears repeatedly (e.g., \u0027the NS-7 had been compensating for thirty-seven minutes\u0027) with only a vague relative clause about a relay implant, never a clear in-voice full-term expansion; similarly \u0027IRB\u0027 is used (\u0027the IRB panel date\u0027) before any gloss, and \u0027ArcSec\u0027 appears bare with no expansion at all.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Introduce each acronym once with its full name glossed in-voice at first use—e.g., \u0027the Neural Stabilization relay, the NS-7, that kept his brainstem firing\u0027; \u0027the Internal Review Board—the IRB—panel date\u0027; and give ArcSec a full-term first mention before using the bare acronym."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "TLC-acronym_after_term",
+        "title":  "TLC (The Long Cut) -- acronym_after_term: blocking fail",
+        "context":  "NREN is used with an immediate gloss (\u0027the NREN relay — a person-to-person package network, no corpo registry\u0027) which is fine, but NCID appears first as \u0027the NCID doesn\u0027t take interest below thirty-five\u0027 before its expansion \u0027Halcyon\u0027s Neuretic Crime Investigation Division\u0027 arrives in the very same sentence only as a trailing clause, and GLMZ is used repeatedly (\u0027the GLMZ medical licensing board\u0027, \u0027GLMZ Wartime Medical Authority\u0027, \u0027Any book could be a reader\u0027s first GLMZ book\u0027 per the rule) with no full-term expansion anywhere on the page.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone\u0027s medical licensing board\". Also reorder NCID: \"Halcyon\u0027s Neuretic Crime Investigation Division -- the NCID -- doesn\u0027t take interest below thirty-five\" (full term before acronym, not trailing)."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "TRUCE-acronym_after_term",
+        "title":  "TRUCE (Three Day Truce) -- acronym_after_term: blocking fail",
+        "context":  "Multiple acronyms and proper nouns treated as established jargon appear without any in-voice expansion: \u0027NSB\u0027-style terms aren\u0027t present, but functional equivalents like \u0027House Champion round,\u0027 \u0027Sinter office,\u0027 \u0027Catalyst infusion,\u0027 and especially unexplained world-terms like \u0027Sinterkin\u0027 and \u0027Sinter approach\u0027 are used as if the reader already knows the underlying system; more critically, no acronym literally appears, but the rule\u0027s spirit—never assume prior familiarity—is violated by terms like \u0027Catalyst\u0027 and \u0027Sinter\u0027 being dropped as proper nouns with capitalized specificity and no definition given anywhere in the excerpt.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Introduce any specialized capitalized system-term (e.g., \u0027Catalyst infusion,\u0027 \u0027Sinter,\u0027 \u0027Sinterkin\u0027) with a brief in-voice gloss the first time it appears, the same way the rule demands for acronyms, so a first-time reader isn\u0027t left inferring meaning from context alone."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "TWD-acronym_after_term",
+        "title":  "TWD (The Way Down) -- acronym_after_term: blocking fail",
+        "context":  "Multiple acronyms appear without any in-voice expansion before their bare use: \u0027UBC\u0027 is mentioned as \u0027Universal Basic Credit\u0027 but only parenthetically after the term already reads like an aside rather than a clean gloss (\u0027drinking coffee that cost more than his monthly UBC — the Universal Basic Credit that used to be the whole of his money\u0027), which inverts the required order (acronym first, then gloss), and \u0027NSB\u0027-style terms like \u0027Φ\u0027 (used repeatedly as a bare symbol/unit with no expansion anywhere) and \u0027Tier 1 rig\u0027 are never expanded at all.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Reorder each instance so the full term appears first in-voice (e.g., \u0027his monthly Universal Basic Credit, the UBC that used to be the whole of his money\u0027) and add an in-voice expansion for Φ and any other unexplained abbreviation at its first appearance."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "TWU-acronym_after_term",
+        "title":  "TWU (The Way Up) -- acronym_after_term: blocking fail",
+        "context":  "Multiple acronyms appear with no expansion at all: \u0027Cermak Tier-2 consult\u0027 and \u0027the basic mesh\u0027, \u0027Helix-grade\u0027 haptic array, and most notably \u0027NSB\u0027-style world jargon isn\u0027t used, but GLMZ-type acronyms like tech terms are absent of gloss — e.g., there are no acronyms like \u0027NSB\u0027 here, but the story does use unexplained shorthand terms without any acronym-expansion pattern at all (e.g., no acronyms are ever glossed in-voice before use, since none appear in strict acronym form, but comparable jargon like \u0027Tier-1 mesh,\u0027 \u0027Tier-2 consult,\u0027 and \u0027Helix-grade\u0027 are dropped as if pre-established).",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "If any acronym is intended to appear in this story, introduce it once with a natural in-voice gloss of the full term (e.g., \u0027the Cermak Tier-2 neural consult\u0027 before shortening it), and audit all technical shorthand for the same treatment."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "UNDR-gloss_in_voice",
+        "title":  "UNDR (Underclan) -- gloss_in_voice: blocking fail",
+        "context":  "Terms like \u0027CorpoNations,\u0027 \u0027Exclusion Economy,\u0027 \u0027Downward Expansion,\u0027 \u0027the Mission,\u0027 \u0027Channeler,\u0027 and \u0027covenant\u0027 are dropped in with the assumption of stranger-orientation but several arrive as clustered lecture rather than in-voice gloss — e.g. Vesh\u0027s line \u0027Before the sealing-off, when the deep still had a door to the surface\u0027s markets. Before the Exclusion Economy shut that door and called the shutting a law. Before the Downward Expansion drove the ones it shut out into the Works\u0027 stacks three proprietary-history terms back to back in a single breath of dialogue, functioning as compressed worldbuilding exposition rather than a natural Listener\u0027s aside.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Break Vesh\u0027s history-recitation into smaller, separately-earned beats spread across the scene (each gloss triggered by something in the room or a Brave\u0027s question) rather than delivering the Exclusion Economy and Downward Expansion as a rapid-fire, unbroken litany."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "UNDR-acronym_after_term",
+        "title":  "UNDR (Underclan) -- acronym_after_term: blocking fail",
+        "context":  "The acronym GLMZ is not present, but other acronyms/initialisms appear bare and unglossed at first use, e.g. the surface entity introduced only as \u0027the Mission\u0027 with no expansion, and \u0027the One Word\u0027/\u0027the Second Word\u0027 treated as established terms rather than glossed abbreviations — more clearly, no acronym in the text (such terms as they exist) is ever preceded by a spelled-out full term rendered in-voice before its short form is used.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Introduce each institutional shorthand (e.g., \u0027the Mission\u0027) the first time it appears with an in-voice gloss of the full term it stands for before using the short form again."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "VATD-gloss_in_voice",
+        "title":  "VATD (Vultures at the Door) -- gloss_in_voice: blocking fail",
+        "context":  "Terms like \u0027neuretics,\u0027 \u0027CorpoNations\u0027-adjacent structures (Carrion, Lotus Syndicate, GLMZ), \u0027the Rift,\u0027 \u0027Resonance Zone geometry,\u0027 and \u0027Waxwing Neuromedia civic skin\u0027 are frequently introduced with either zero context (e.g. \u0027The manifest came up on his neuretics\u0027 with no orientation to what neuretics are beyond inference) or with an explicit stop-and-explain clause that reads as authorial aside rather than voice, e.g. \u0027Waxwing Neuromedia — the ad-overlay grid that painted storefronts with whatever a strip could afford to want\u0027 and \u0027the GLMZ — the sprawl everyone just called the zone.\u0027",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone -- GLMZ, the sprawl everyone just called the zone --\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "VATD-acronym_after_term",
+        "title":  "VATD (Vultures at the Door) -- acronym_after_term: blocking fail",
+        "context":  "The acronym GLMZ appears repeatedly throughout the story (e.g., \u0027the same shape as the GLMZ,\u0027 \u0027the GLMZ had buyers,\u0027 \u0027in this city, the GLMZ\u0027) with only a vague apposition \u0027the sprawl everyone just called the zone\u0027 at first use, which is a nickname, not the full expansion of the letters G-L-M-Z; no in-voice gloss of what the acronym actually stands for is ever given.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "First GLMZ mention becomes: \"the Great Lakes Metropolitan Zone -- GLMZ, the sprawl everyone just called the zone --\""
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    },
+    {
+        "questionKey":  "VIGL-acronym_after_term",
+        "title":  "VIGL (Vigil\u0027s End) -- acronym_after_term: blocking fail",
+        "context":  "\u0027AoV\u0027 appears bare in \u0027(59 AoV)\u0027 with no prior or subsequent gloss anywhere in the text expanding what it stands for (e.g. \u0027Age of Vigil\u0027 or similar), leaving first-time readers with an unexplained acronym.",
+        "questionType":  "BeatText",
+        "options":  [
+                        {
+                            "key":  "a",
+                            "label":  "Apply recommended splice",
+                            "description":  "Precede the first use of AoV with an in-voice gloss of its full term, e.g. \u0027fifty-nine years After the Vigil (59 AoV)\u0027, before using the bare acronym."
+                        },
+                        {
+                            "key":  "b",
+                            "label":  "Skip for now",
+                            "description":  "Leave as-is; revisit in a later pass."
+                        },
+                        {
+                            "key":  "c",
+                            "label":  "Custom -- I will specify in chat",
+                            "description":  "I have different wording in mind for this fix."
+                        }
+                    ]
+    }
+]

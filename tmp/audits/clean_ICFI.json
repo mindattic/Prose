@@ -1,0 +1,76 @@
+{
+  "node_slug": "it-came-from-iowa-019f3eb2",
+  "node_title": "It Came From Iowa",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 4,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The opening does seduce with sensory texture (\u0027the smell of a field right after a deep-till pass,\u0027 the hull \u0027warm... deep warm, the kind that comes from inside\u0027) and the Pip-mourning scene has genuine strange-beauty, but for long stretches (the drone battles, the CJ/Hauser procedural scenes, the checkpoint negotiation) the prose shifts into functional thriller-mechanics mode where observation and plot-logistics dominate over allure \u2014 the horror (a man\u0027s death, drone kills) lands amid mostly procedural describing rather than being preceded by seduction specific to that moment.",
+      "Fix": "Slow down and sensualize the mid-story machine-violence and procedural beats (the drone kills, the man\u0027s death, the checkpoint exchange) with the same lush, strange-beautiful texture given to the opening and the burial scene, so allure precedes every horror beat, not just the first one."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens directly with an inciting incident (a wrongness sound pulling Wes from bed) rather than a grounded, unremarkable entry beat; within the first few paragraphs we\u0027re already at the dead machine, tool marks, and a mystery, with no prior moment of ordinary world-functioning to earn the seduction first.",
+      "Fix": "Precede the wail with a short beat of Wes doing an ordinary morning task around the living machine \u2014 checking a gauge, watching it till a row, something mundane that shows the world working normally \u2014 before the wrongness interrupts it."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "CorpoNations/Eigenlift towers and neuretics are glossed lightly and in-voice (\u0027too young for the mesh\u0027 for neuretics; \u0027thirty stories each, rising straight out of the corn with no town around them\u0027 for Eigenlift towers), but some proprietary terms like \u0027ArcSec,\u0027 \u0027Zone-12,\u0027 \u0027GLMZ run,\u0027 and \u0027Crown\u0027 (for the machine\u0027s dome) are used repeatedly with zero orientation, forcing a first-time reader to infer meaning entirely from context over many paragraphs.",
+      "Fix": "Add one brief in-voice touch when \u0027Zone-12,\u0027 \u0027ArcSec,\u0027 or \u0027Crown\u0027 first appears\u2014e.g., have CJ\u0027s POV register ArcSec as \u0027the only badge this corridor had had in a hundred years\u0027 (already present) but do similarly for \u0027Zone-12 boundary\u0027 and clarify \u0027Crown\u0027 as the machine\u0027s platform the first time Wes climbs onto it."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "\u0022South meant deeper into the Zone \u2014 the Great Lakes corridor, more buyers, fewer questions\u0022 is offered as gloss for \u0027the GLMZ run,\u0027 but the acronym \u0027GLMZ\u0027 itself appears bare in that same sentence and is never expanded into its literal full term before or after use.",
+      "Fix": "Replace \u0027the GLMZ run\u0027 with something like \u0027the Great Lakes Multi-Zone run, GLMZ, deeper into the Zone corridor\u0027 so the full term precedes the acronym in-voice."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "\u0022He didn\u0027t look at her. \u0027Lord Long Legs.\u0027 / She looked at him. / \u0027I was five,\u0027 he said.\u0022 \u2014 a single, unguarded flash of the child Wes once was, immediately followed by his return to competent, unbothered self as he declines the ride and says he\u0027ll walk.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The node lands multiple resolutions (module buried, machine departs, Pip urinates on the patch, Wes names it \u0027Lord Long Legs\u0027) and then closes on \u0027I\u0027ll walk,\u0027 which reads as a hopeful/settled character beat rather than a quiet gesture that adds cost or dread; the final exchange is almost warm/whimsical, undercutting the \u0027holding the cost\u0027 effect.",
+      "Fix": "Cut or dampen the naming exchange and end instead on a single unresolved image (e.g., the sealed asphalt scar, or Wes\u0027s silence at the horizon) that carries unease about what the buried module means and what \u0027this city/corridor\u0027 will do next, without supplying an origin-story punchline like the dog\u0027s territorial joke."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The first-pass story is complete and legible as a boy-and-machine chase narrative, but details like the machine warming and slowing its rhythm when Wes rests on it, Pip\u0027s ritualized \u0027mourning\u0027 sit, the burial tamping described in the same procedural language as planting, and the final name \u0027Lord Long Legs\u0027 (revealed only at the very end to be a childhood nickname) all reread differently once the reader knows the machine grieves and Wes has known it since age five.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The story builds its universe (Behemoths, Eigenlift towers, ArcSec, Zone boundaries) entirely through in-scene action and Wes/CJ\u0027s grounded sensory experience rather than expository dumps; terms like \u0027kill-switch protocol\u0027 or \u0027Zone-12 boundary\u0027 arrive embedded in dialogue and alert boards that a first-time reader can parse contextually, while the emotional core (a machine mourning, a boy bonding with it, a dog\u0027s loyalty) needs no prior universe knowledge to land.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "CorpoNations (Eigenlift, ArcSec, Arcturus), nanites-as-Behemoths, and a systemic gray-zone economy (scavs, Nzambe, GLMZ run) are all richly textured, and the Behemoth is clearly an agent with stakes, not a tool. But the Schism is never mentioned or implied at all, and neuretics appear only glancingly (\u0027No neuretics \u2014 too young for the mesh\u0027) without establishing what they do or the social/economic divide they create.",
+      "Fix": "Add a beat where CJ\u0027s augmented reaction speed or cognitive load is contrasted against Wes\u0027s unaugmented perception, and weave in at least one concrete reference to the Schism as the historical rupture that shaped this world (e.g., why Behemoths exist, why the Zones are gray, or why the land looks the way it does)."
+    }
+  ]
+}

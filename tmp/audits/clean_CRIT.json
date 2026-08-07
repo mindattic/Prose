@@ -1,0 +1,76 @@
+{
+  "node_slug": "double-entry-019f76e0",
+  "node_title": "Critical Mass",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 4,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "There are genuine seductive textures \u2014 the amber light \u0027patient in a way that has nothing to do with patience,\u0027 the mass-and-gravity monologue, \u0027checking whether you are still yourself\u0027 \u2014 but they\u0027re immediately harnessed to exposition and plot-mechanics (Vig\u0027s contract logic, Quire\u0027s negotiation, the wipe-clause countdown), so the strange-beautiful keeps getting interrupted before it can fully pull the reader in.",
+      "Fix": "Let at least one more beat linger purely in sensory/atmospheric wrongness (the cold, the dust, the amber pulse) before cutting to the next procedural complication, so allure has room to breathe rather than being immediately metabolized into plot."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens directly with plot machinery: The Ledger\u0027s columns, a debt metaphor, then an urgent unclassified ping arriving mid-quote at a fabrication yard. The only \u0027world doing its work\u0027 beat is a single sentence about quoting cable pull rates before the inciting call interrupts it \u2014 there\u0027s no sustained grounded entry moment (commute, transaction, mundane observation) before the reader is asked to track relay routing, personhood-adjacent licensing, and a thirteen-year-old debt.",
+      "Fix": "Open with an extended, unhurried beat of Ledger actually doing mundane work in Ashgrave (the quote, the yard, the city\u0027s indifferent rhythm) for a paragraph or two before the relay ping interrupts, so the reader falls into the world before the plot machinery of Renn\u0027s call and the dead process demands attention."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "pass",
+      "Evidence": "\u0027his neuretics \u2014 the neural mesh grown into his substrate \u2014\u0027 and \u0027the neuretic etching at the temples that reads Tier 3 to anyone who knows to look\u0027 both gloss the term in a single clause, folded into action beats rather than paused-on exposition; similarly \u0027Cinderfall Logistics leased that rack space, ran a distributed process across it, and pulled the Fleet\u0027s charter when the licensing math stopped adding up\u0027 delivers CorpoNation/charter backstory through Ledger\u0027s own accounting-brain train of thought rather than a lecture.",
+      "Fix": null
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "warn",
+      "Evidence": "\u0027GLMZ\u0027 appears as a bare acronym on first use (\u0027the kind of gray, unglamorous infrastructure that runs half of GLMZ\u0027s cargo without anyone thinking about it once\u0027) with no expansion given before or after; similarly \u0027IP\u0027 (\u0027it\u0027s thirteen years dark and it\u0027s still holding an IP\u0027) is never glossed at all.",
+      "Fix": "Add an in-voice expansion before each acronym\u0027s first use, e.g. introduce GLMZ as \u0027the Greater Loop Municipal Zone\u0027 and IP as \u0027an instance pointer\u0027 the first time each term appears."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "warn",
+      "Evidence": "The prose gestures at Ledger\u0027s interiority through the running audit-voice motif (\u0022the specific reluctance of a man asked to read his own autopsy report aloud,\u0022 the unfinished ledger entry for Renn), but there\u0027s no single unguarded flash where he\u0027s felt as a person rather than a function \u2014 even the closest candidate, his unspoken confession about the kill order and the park ranger testimony, stays filtered through analytical narration rather than landing as raw feeling.",
+      "Fix": "Let one moment break the audit-register entirely \u2014 a physical tell, a memory fragment, or a line of dialogue to Renn or Green where Ledger\u0027s own grief surfaces unmediated by ledger-metaphor before he re-arms himself with the accounting language."
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The node ends on a resolving beat, not an added one: Ledger explicitly resolves the plot\u0027s central tension by leaving The Ledger entry blank (\u0027Leave it open... First time in nine years he closes an entry without closing it\u0027) and closes with Green\u0027s hand finding the wall \u0027for contact\u0027 \u2014 a warm, thematically-tidy image that lands the emotional arc rather than adding a cost beyond it.",
+      "Fix": "Cut the meta-commentary on the blank Ledger entry and end instead on one small, unresolved external detail \u2014 something outside the emotional payoff (e.g., an unanswered ping from Kyle, or Renn quietly re-arming the feed she swore was local-only) that reminds the reader the city\u0027s machinery is still running indifferent to what just happened."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The gravity/mass metaphor Ledger sends to the dying process (\u0027Mass doesn\u0027t become gravity because someone designs it to... Code is the same\u0027) doubles as the reader\u0027s own retroactive lens on Ledger\u0027s origin story, and small first-pass-complete details like Ledger\u0027s own nightly Ledger-check ritual are revealed as literally the same code-shape as the process he\u0027s saving (\u0027It\u0027s checking its own math... For continuity\u0027) \u2014 a gloss that only fully resonates once the ending recontextualizes it, but the scene reads as a complete, tense rescue-and-negotiation on a first pass without needing that recognition.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose adds newcomer-friendly clarifications in-line (e.g., \u0027his neuretics \u2014 the neural mesh grown into his substrate,\u0027 the mass-and-gravity analogy for emergence, the plain explanation of what The Ledger is and does) without pausing the plot or restructuring the scene sequence; backstory (2213, the kill order, Cinderfall\u0027s restructuring) is delivered through Ledger\u0027s active reasoning and dialogue rather than as a rewritten exposition dump.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "AIs-as-agents, nanites, CorpoNations/gray zones, and Schism-adjacent \u0027physics\u0027 (mass/gravity metaphor) are all richly present, but neuretics are reduced to a single functional gloss (\u0027the neural mesh grown into his substrate\u0027) and a passing Tier 3 read on Vig\u0027s face \u2014 there is no sense of a social/economic divide between haves and have-nots, and the Schism itself is never named or felt as an actual rift in reality, only echoed through an unattributed physics metaphor Ledger invents.",
+      "Fix": "Add a concrete beat where neuretics create a visible competitive or economic gap (e.g., someone locked out of a job, a negotiation, or a threat because they lack the augmentation), and explicitly ground the mass-and-gravity metaphor in the Schism as a real historical rupture rather than leaving it as an unmoored physics analogy."
+    }
+  ]
+}

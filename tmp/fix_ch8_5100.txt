@@ -1,0 +1,3 @@
+"The test cluster is the part I can't fix," Priya said. "It went live eleven days ago. Three nodes in the Z6 buffer zone - the same three I flagged as most vulnerable, out of seventeen candidates, in the original audit. I thought it was validation. Seven days in, the firmware copies itself to the offline backup registers, and the rollback doesn't touch the backups. It was written for a test meant to be reverted after a few days, not one left running eleven."
+
+She said it plainly, not as an apology. "A rollback at eleven kills the full grid deployment. It does not reach those backups. The two hundred thousand Z6 records have been queried since the day the cluster went live. That data is already gone. The rollback doesn't bring it back."

@@ -1,0 +1,76 @@
+{
+  "node_slug": "the-number-that-works-019ed367",
+  "node_title": "Sparrow",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 3,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The prose is dense with fascinating strangeness \u2014 the drain running the wrong direction, the volt rats, the lowercase \u0027yes\u0027 \u2014 but the sensory pull is buried under long stretches of procedural/invoice logistics, bureaucratic vocabulary, and financial itemization that reads more like worldbuilding infrastructure than seduction; the reader has to wade through invoices and clearance-code mechanics for a long time before the strange-beautiful textures (the lake reading differently by observer position, the eleven days with no name) land.",
+      "Fix": "Trim or compress the invoice/paperwork passages and foreground the uncanny sensory details (the calm children, the drain metaphor, the mismatched lake reflections) earlier and more often so allure consistently precedes and outweighs procedural exposition."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The opening beat (Elias eating at his desk) is compressed into a single paragraph before the plot device \u2014 a work order and a sealed corridor number \u2014 arrives at 7:14 and dominates every paragraph after; there is no unhurried commute, transaction, or lived-in city moment that isn\u0027t already in service of the mystery.",
+      "Fix": "Extend the opening beat into a genuine grounded routine (the broth, the apartment, the building\u0027s history, the street he can\u0027t reach) for several beats before the work order lands, so the reader falls into the world before being handed the inciting document."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Terms like \u0027CorpoNations,\u0027 \u0027Channeler,\u0027 and \u0027GLMZ\u0027 get quick in-voice glosses (\u0027the corporate-state paperwork that passes for a building code up here\u0027; \u0027someone who rents out his own nervous system to an unlicensed AI and lets it drive\u0027), but \u0027neuretics\u0027 is only glossed once, in passing, deep into an already-dense paragraph (\u0027the mesh grown into anyone who can afford the surgery, his own trusted more than paper\u0027), and by the time terms like \u0027\u03A6,\u0027 \u0027Attendance incident,\u0027 \u0027Resonance Management Authority,\u0027 or \u0027AAMA filings\u0027 appear, they arrive with no gloss at all, assuming the reader already tracks the currency symbol and acronyms.",
+      "Fix": "Add a brief in-voice touch the first time \u03A6, the Attendance incident, and AAMA are used, so a first-time reader isn\u0027t left to infer currency and lore purely from context clues buried in unrelated sentences."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "warn",
+      "Evidence": "GLMZ (Great Lakes Metropolitan Zone\u0027s Orbital Debris Registry) and ArcSec (\u0027Arcturus\u0027s security arm\u0027) are properly glossed at first use, but AAMA appears bare \u2014 \u0027in three AAMA filings she could pull herself\u0027 \u2014 with no prior expansion anywhere in the text.",
+      "Fix": "Expand AAMA at its first appearance, e.g. \u0027the Anomalous Activity Management Authority \u2014 AAMA \u2014 filings she could pull herself.\u0027"
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The hands-going-cold moment (\u0027He notices his hands have gone cold... watches them not quite steady, the way you\u0027d watch a gauge you didn\u0027t trust\u0027) and later the fourteen-second wait for the AI\u0027s answer where he registers \u0027wanting the answer anyway \u2014 wanting it enough that he noticed, standing there, that he wanted it\u0027 both puncture his controlled, ledger-reading register with a flash of unguarded human need.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The ending resolves into an active, forward-moving decision loop (clearing the rate field, leaving it OPEN, \u0027he began to work\u0027) rather than a single quiet gesture after the plot\u0027s business concludes; it reads as a continuation/setup for the next installment, not a landing.",
+      "Fix": "Cut the final page down to one small, concrete physical gesture (e.g., the coat, the window, the pigeon note) and end there, letting the open rate field and the six coordinates stay unresolved off-page so a cold reader feels weight and closure rather than an ongoing operational thread."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "Small first-pass-legible details are seeded to pay off later without gating comprehension: the pill case (\u0027Three segments left... Refill: open, no due date\u0027) reads as a minor character tic on first read but recontextualizes once the story\u0027s themes of dependency and open-ended obligation crystallize; likewise the recurring half-second hesitation (\u0027His thumb sits on the confirm key half a second too long \u2014 the same half-second he gives an unsent line to Cordon Freight\u0027s registry office\u0027) mirrors the final scene\u0027s held finger over the submission key, rewarding a reader who tracks the motif across the whole text.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "fail",
+      "Evidence": "The excerpt shows a dense, self-referential mythology (the number, the Channeler theory, the satellite catalog, Tadesse\u0027s facility, the \u0027delta-actual\u0027 column, the elephant parable, the twenty-fourth invoice line) accumulating almost entirely through opaque implication and withheld referents (\u0027them,\u0027 \u0027the number,\u0027 \u0027the source\u0027) with no onboarding scaffolding for a reader who doesn\u0027t already know the universe\u0027s rules about neuretics, CorpoNation zones, Channelers, or the Attendance incident.",
+      "Fix": "Add brief grounding beats early (e.g., one clarifying sentence when \u0027neuretics\u0027 or \u0027Channeler\u0027 first appears, or a line anchoring what kind of world this is) rather than trusting a first-time reader to infer the entire cosmology from context, without cutting or restructuring the existing plot machinery."
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "pass",
+      "Evidence": "The story systemically braids all five pillars: the AI-narrator relationship builds a genuine faction/agenda entity (\u0027working hypothesis... this is a data observation, not a conclusion\u0027; the unnamed CorpoNation clearance code shutting his session mid-request); nanites appear as decayed infrastructure (\u0027the building\u0027s nanite skin ran out of contract a decade ago and stopped mending itself\u0027); neuretics mark the social/technical divide (\u0027the mesh grown into anyone who can afford the surgery... which he still has and the corridor under the Crow mostly doesn\u0027t\u0027); the Schism is treated as a physics-breaking wound tied to a deep, unexplained mechanism (\u0027the source and the resonances share a mechanism... a drain running the wrong direction\u0027); and CorpoNations/gray zones structure the entire plot through permits, holding companies, ArcSec inquiries, and Zone 7 shell registrations that exist precisely because law can\u0027t reach them.",
+      "Fix": null
+    }
+  ]
+}

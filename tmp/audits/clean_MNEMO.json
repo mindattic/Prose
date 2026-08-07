@@ -1,0 +1,76 @@
+{
+  "node_slug": "mnemosync-019ee11e",
+  "node_title": "Mnemosync",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 5,
+  "advisory_count": 2,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "fail",
+      "Evidence": "The prose opens on flat, informational atmosphere (\u0027no diesel, no lake, no season,\u0027 an ident overlay \u0027slow enough only the body noticed\u0027) that reads as competent worldbuilding exposition rather than seduction; sensory detail throughout (recorder grips, bicycle bearings, checkpoint procedures) serves plot/tracking logic more than lush or strange-beautiful texture, and the horror (Type C reversals, bleed, calibration) arrives quickly via clinical taxonomy (\u0027Type A,\u0027 \u0027Type B,\u0027 \u0027Type C\u0027) before the reader has been pulled in by wonder or allure.",
+      "Fix": "Before cataloguing anomalies and mechanisms, slow down on one fully sensory, covetous image of GLMZ\u0027s enhanced life \u2014 the specific pleasure of carrier-grade fluency, the beauty of a body that reads a room or a road perfectly \u2014 so the wrongness lands as a violation of something the reader was first seduced into wanting."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The opening beats immediately foreground plot machinery \u2014 Amara noting the arcology has no clocks as a deliberate observation for the reader, then diving straight into an interview that exists to reveal Daud\u0027s manipulated affect (\u0027Fine. Four times in seven minutes\u0027). There is no unforced commute, transaction, or ordinary moment where the world is simply doing its work before the conspiracy demands attention; the very first paragraphs are already thematically loaded exposition about managed air and surveillance dread.",
+      "Fix": "Open with a genuinely mundane, plot-agnostic beat \u2014 Amara or Seto moving through an ordinary transaction or commute where the city\u0027s texture is enjoyed or endured for its own sake \u2014 before any hint of the calibration anomaly or investigation surfaces."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "fail",
+      "Evidence": "Terms like \u0027CorpoNations,\u0027 \u0027neuretics,\u0027 \u0027Batch 44-C,\u0027 \u0027Zone 5,\u0027 \u0027the Seam,\u0027 \u0027Waxwing overlay,\u0027 and \u0027GLMZ\u0027 are dropped in without any in-voice orientation \u2014 e.g. \u0027Second-generation neuretics \u2014 you could see it in the old mount scar behind his ear\u0027 assumes the reader already knows what neuretics are and does, while \u0027Waxwing AR glowed along the public edges\u0027 and \u0027the civic AR died in the gap\u0027 arrive as bare labels with no grounding gloss for a first-time reader.",
+      "Fix": "Give the earliest uses of core proprietary terms (neuretics, the Seam, Zone numbering, CorpoNations, Waxwing) one clause of sensory or functional context filtered through the POV\u0027s own frame of reference, e.g. \u0027neuretics \u2014 the in-skull hardware everyone her age had gotten used to ignoring\u0027 \u2014 rather than assuming the reader already carries the worldbuilding."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "Multiple acronyms appear with no expansion anywhere on the page: \u0027GLMZ\u0027 is used repeatedly (e.g., \u0027Every book could be a reader\u0027s first GLMZ book\u0027 framing aside, but in-text: \u0027Public GLMZ health data through Infrastructure Authority portals\u0027 and \u0027the smell before rain on the loading dock at GLMZ\u0027) with no full term ever glossed; \u0027AR\u0027 appears as \u0027no Waxwing overlay either \u2014 the civic AR died in the gap\u0027 with no expansion of \u0027augmented reality\u0027 or in-voice term given first.",
+      "Fix": "Introduce GLMZ and AR each with an in-voice full-term gloss on their first appearance (e.g., \u0027the Greater Lakes Metro Zone Authority \u2014 GLMZ \u2014 health data\u0027 and \u0027the civic augmented-reality overlay, AR, died in the gap\u0027) before using the bare acronym thereafter."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "Amara\u0027s \u0027ghost-grip, involuntary\u0027 hand curling toward a recorder she no longer holds, and later the small unplanned moment where \u0027She left the exits where they were, unread, and watched the water instead\u0027 \u2014 a professional whose whole body is trained to read rooms for danger choosing, once, not to \u2014 reveals a person under the function, and she immediately re-armors by not naming or interrogating the moment.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The final beat\u2014Amara\u0027s hand finding Seto\u0027s, her deciding to \u0027let the exits where they were, unread\u0027\u2014is a genuine quiet gesture past the plot\u0027s business, and it earns its stillness through the Nuru non-event (\u0027She didn\u0027t go\u0027). But it slides toward a soft, faintly hopeful resolution (\u0027watched the water instead\u0027) rather than landing on unresolved weight; the closing image reads more like relief/connection than cost, and the piece doesn\u0027t leave a final line pulling toward \u0027what happens in this city\u0027 so much as toward these two characters\u0027 private moment.",
+      "Fix": "Cut or complicate the tenderness of the final image\u2014end instead on a detail that reasserts the city\u0027s ongoing machinery (the fountain\u0027s timer, the next Tuesday cohort, the compliant ones still arriving) so the last beat carries cost and scale rather than settling into the couple\u0027s relief."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The recurring \u0027Fine\u0027 motif (Daud\u0027s flattened affect, Amara\u0027s own broadcast-neutral \u0027Fine,\u0027 and the closing single-word \u0027Fine.\u0027 before the fountain scene) works as a complete emotional beat on first read\u2014she notices sources have gone hollow\u2014but only pays off fully once a reader knows the calibration protocol strips weight from memory, retroactively recasting every earlier \u0027fine\u0027 as a diagnostic marker; likewise the exit-counting habit (read in full on first pass as tradecraft/anxiety) becomes poignant in hindsight when she \u0027left the exits where they were, unread\u0027 in the final line, a deliberate inversion that only lands once you\u0027ve tracked the pattern across the whole story.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "fail",
+      "Evidence": "The node is a dense, in-media-res thriller chapter that assumes deep familiarity with an entire pre-built mythology (Batch 44-C, the bleed mechanic, the Seam/zone geography, Waxwing AR, Orison\u0027s calibration protocol, 847 names, Ciro\u0027s razor motif, Doru, Tasmin, the courier trade lexicon) without ever pausing to orient a first-time reader; terms like \u0027the bleed,\u0027 \u0027recalibration,\u0027 and \u0027Type C\u0027 are used as established vocabulary rather than introduced.",
+      "Fix": "Add brief grounding beats early on\u2014one or two clarifying sentences or a short scene-setting aside\u2014that let a newcomer understand what the bleed is, what Batch 44-C means, and why the 847 names matter before the plot machinery accelerates, without cutting any existing scenes or restructuring the narrative."
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "(evaluation failed)",
+      "Fix": null
+    }
+  ]
+}

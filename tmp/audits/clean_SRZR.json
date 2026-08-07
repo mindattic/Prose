@@ -1,0 +1,76 @@
+{
+  "node_slug": "steppin-razor-019ef7be",
+  "node_title": "Steppin\u0027 Razor",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 6,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "There are genuine seductive textures \u2014 the camel breathing hay-and-dust on the elevated walkway while six thousand oblivious commuters flow around it, the boy who smells of stone and fungus, the android ferryman paid in a worthless transit receipt \u2014 but these strange-beautiful moments are consistently interrupted by dense worldbuilding exposition (Consensus credentials, Halcyon routing codes, TESSERA Docents, Ferrogate subsidiaries) that reads as procedural rather than enchanting.",
+      "Fix": "Trim the bureaucratic/corporate exposition passages (credential systems, routing codes, subsidiary signage) and let the sensory-uncanny beats \u2014 the camel, the warm patch of ground, the slate that was already listening for her \u2014 breathe longer before the plot machinery resumes."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The opening lines do establish a grounded transactional beat (paying \u03A63 at the gate, the dispatcher not looking at her) but within two paragraphs the prose pivots straight into a violent job with dialogue about \u0027corner position,\u0027 gray-market neuretics, and a documentation man sizing her up \u2014 the world\u0027s ordinary labor is a two-sentence backdrop before plot machinery (the deal, the bottle-strike, the flight) takes over.",
+      "Fix": "Extend the freight-yard opening into a longer unhurried beat of workers, cargo, and routine before introducing the deal or the violence, so the reader falls into the world\u0027s texture before being asked to follow a plot thread."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Several proprietary terms get a clean in-voice gloss (\u0027Neuretics: the mesh grown into your skull before you turn ten, meant to seal at twelve and go quiet for life\u0027) but others land as unglossed density spikes \u2014 \u0027TESSERA was the Consensus civic net\u0027 is a clean aside, while \u0027Consensus instruments logged the whole field as dead-well cold-reads\u0027 and terms like \u0027GLMZ ground,\u0027 \u0027Waxwing Neuromedia civic skins,\u0027 \u0027Halcyon Combine, Strategic Resources,\u0027 and \u0027the Thread\u0027s pods\u0027 arrive with no orientation at all, assuming the reader already knows the geography and faction map.",
+      "Fix": "Give each newly introduced proper noun (TESSERA, Consensus, Halcyon, the Thread, GLMZ) the same one-clause in-voice touch the neuretics and Pulse hub get, so a first-time reader isn\u0027t left inferring faction/geography meaning purely from context accumulation."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "\u0027TESSERA was the Consensus civic net\u0027 is glossed properly, but numerous acronyms appear bare with no prior expansion at all: \u0027GLMZ\u0027 is used (\u0027the first GLMZ ground she\u0027d touched\u0027) with no expansion anywhere on the page, and \u0027MO-556\u0027 and \u0027GG-9\u0027 are given as if the reader already knows the naming convention, while \u0027Halcyon Combine, Strategic Resources\u0027 introduces \u0027OBERON\u0027 as a bare name with no expansion since it\u0027s presented as a proper name, not flagged as an acronym.",
+      "Fix": "Add an in-voice gloss the first time GLMZ appears (e.g., \u0027Any book could be a reader\u0027s first Gray-zone Liminal Metro Zone\u2014GLMZ\u2014book\u0027 rephrased into Sasha\u0027s narration) and similarly expand MO-556/GG-9 on first mention if they are meant to be read as acronyms rather than model numbers."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "warn",
+      "Evidence": "The clearest human crack is Dawit\u0027s \u0027Then look at me\u0027 beat\u2014\u0027She didn\u0027t ask men for things\u0027\u2014and the moment with the man who walked back into the light, where Sasha deliberately gives him an out because she\u0027s tired of every quiet costing her a burned door. Both are genuine flashes of interiority beyond function.",
+      "Fix": "Trim the surrounding tradecraft-and-worldbuilding density around those two beats so the human flash lands with a clean, isolated beat instead of being immediately buried under the next action sequence or lore reveal."
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The final beat\u2014\u0027The doors sealed behind the cat\u0027s tail. The pod pulled into the dark.\u0027\u2014does land a quiet gesture (last through the door, cat at heel) rather than resolving the plot, but it\u0027s preceded by a paragraph of explicit thematic summary (\u0027She didn\u0027t know if the packet had reached anyone... She only knew the pull in her chest hadn\u0027t stopped\u0027) that edges toward editorializing the stakes rather than trusting the image to carry them.",
+      "Fix": "Cut the summarizing \u0027She didn\u0027t know... she only knew\u0027 paragraph and end on the concrete image of stepping through last with the cat, letting the doors sealing and the pod\u0027s dark swallow the meaning without narrating it."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "warn",
+      "Evidence": "The recurring \u0027ground goes blood-warm\u0027 motif, the neuretic mesh detail, and the four-second interval where \u0027the outside came up level with the inside\u0027 are exactly the kind of gestures that reward a second pass with hindsight meaning \u2014 but the story is so dense with unresolved lore (the man on the camel, OBERON, the boy, the wells, TESSERA, the Arrangement) that a first-time reader may struggle to get a genuinely complete story rather than a string of deferred mysteries.",
+      "Fix": "Tighten the ending beats so the first-pass reader receives clear closure on Sasha\u0027s immediate arc (the drill exposure, her physical wound, her choice to stay) even while the cosmic mythology remains intentionally open for rereading."
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "warn",
+      "Evidence": "The prose is dense, immersive, and largely self-sufficient (Kankakee, corner position, the \u03A6 currency, neuretics all get sensory/functional grounding on first mention), but the back half stacks unexplained proper nouns and lore-fragments at speed \u2014 TESSERA, GLMZ, Halcyon Combine, OBERON, the Arrangement, the camel-rider, the boy in the wall, Consensus credentials, the Schism \u2014 without the same integrative context-work the opening gave \u0027neuretics\u0027 or \u0027Pulse hub,\u0027 asking a first-time reader to absorb a whole cosmology in one long unbroken sprint.",
+      "Fix": "Add a few brief grounding beats (a sentence of context or a character\u0027s plain reaction) at the introduction of the heaviest new-mythology nouns (TESSERA, Halcyon/OBERON, the Arrangement, the boy/android/boat sequence) so newcomers get a foothold without altering the plot or trimming the existing scenes."
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "pass",
+      "Evidence": "The prose weaves all five pillars into texture: neuretics are explicitly explained as failed-seal implants that stratify who can \u0027compete\u0027 (Sasha\u0027s unsealed mesh, governed vs ungoverned ad-filtering); nanites/infrastructure appear as Pulse maglev, cargo slugs, and credential-gated access panels shaping daily movement; CorpoNations (Halcyon, Ferrogate, Waxwing) issue credentials, own city blocks, and price a person\u0027s life like inventory (\u0027Extraction Continuity \u2014 Priority One. Asset Recovery \u2014 Priority Two\u0027); the Gray Zone is named repeatedly as the law-optional space fixers and hunters operate in; the Schism surfaces as literal breach wells with frequencies (19Hz dead, 72Hz live) and an entity (\u0027the man on the camel\u0027) that treats reality\u0027s wound as a place people \u0027dig toward\u0027; and AIs-as-agents appear via OBERON, a named machine officer of record ranking wells above the asset, plus the enigmatic camel-rider faction with its own agenda about closing breaches.",
+      "Fix": null
+    }
+  ]
+}

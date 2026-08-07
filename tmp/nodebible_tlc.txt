@@ -1,0 +1,391 @@
+---
+codex: 1
+project: StreetSamurai
+code: TLC
+layer: node-bible
+universe: glmz
+status: in-progress
+updated: 2026-08-01
+---
+
+# NODE BIBLE - The Long Cut (TLC) {#SS-TLC}
+
+> **Purpose.** The dry spine of Jude Adeyemi's story: a dead runner, a broadcasting
+> implant, and the discovery that the cover-up she is trying to expose has her name in it.
+> What happens, not how it reads. When prose and spine disagree, fix one in the same change.
+> See [[../BIBLE]] for universe laws.
+
+## 0. What this story IS {#SS-TLC-0}
+
+A medical noir in three acts. A street medic in the Gray Zone inherits a dead corpo runner's
+evidence implant and has 72 hours to broadcast it before two competing kill-teams - one NSB
+(Halcyon Civil Security's Neuretic Security Bureau field division), one corporate (Scalpel
+Division, Sable Industries MedTech security arm) - eliminate the problem.
+
+The story is about complicity: what it means to have done something wrong without knowing it,
+and what it costs to correct the record once you know.
+
+**This is NOT:**
+- A Kyle story. Kyle does not appear. Kyle's register vocabulary (filing, arithmetic, parliament,
+  gap, geometry) is strictly forbidden in TLC prose.
+- An action thriller with a competent hero. Stash makes medical decisions with precision and
+  most other decisions badly. Her arc is accepting this.
+- A redemption story in the sentimental sense. The record is corrected; she is not forgiven.
+  She doesn't ask to be.
+- A conspiracy thriller with vast scope. The scale is two kill-teams and one implant. The
+  corruption is real but local: one subsidiary, one cover-up, 428 non-consensual subjects and
+  67 dead, fifteen years of silence.
+
+## 1. The central object {#SS-TLC-1}
+
+**The implant.** A surgical-grade data capsule, thoracic cavity placement, Model Nova-7 (Sable
+Industries MedTech line, 2210). No neural interface - physical broadcast only, tight-band
+frequency 412.7 MHz, range ~800 meters in open air, ~200 meters through ferrocement and water.
+The frequency is licensed to the Gray Zone medical monitoring network - dead channel since 2219.
+The device carries an internal battery sized for exactly one full broadcast; it discharges
+completely on transmission and cannot be recharged or reused. This reinforces the irreversibility
+of the act - once the broadcast starts, the implant is going dark for good.
+
+The implant contains:
+- 14.3 GB of encrypted trial records from the Sable Industries/MidNorth Medical neuretics
+  governor program, 2211. The records document 428 non-consensual surgical subjects -
+  Block War refugees held in the Z-7 gray zone relocation camps - used to test governor
+  suppression chips for the Praxis NeoCortex line.
+- Six video diary fragments recorded by Renata Emmei, the runner, between 2218 and 2225.
+  These play as non-continuous B-story interludes in the prose. They show what Renata witnessed
+  and remembered; they do not show what Stash suspects until the final fragment.
+- A 12-second voice message addressed specifically to Jude Adeyemi. This is the
+  dark night revelation: Renata knew Stash's name. Renata came to her on purpose.
+
+**Why Renata sought Stash:** Stash's name appears in the 2211 trial records as a junior field
+surgeon contracted by Sable Industries MedTech. She was 23. She believed she was doing routine
+post-op follow-up on war-injured patients. She was, in fact, closing the incisions after
+governor implantation without knowing what was inside. She did not consent to this use of her
+skills. Neither did the patients.
+
+The records prove both things: that the trials happened, and that Stash was an unknowing
+participant. Renata found this dual exculpation/implication and decided Stash was the only
+person with both the motive and the technical skill to broadcast the evidence in a format
+the Gray Zone's distributed network could route.
+
+## 2. The wound (background, never stated on the page) {#SS-TLC-2}
+
+Stash left Sable Industries in 2214 after two years of increasing unease: patients who would
+not make eye contact, incision sites she was told were "standard protocol," forms she was not
+permitted to review. She told herself she was quitting because corpo medicine was corrupt in
+general. She did not investigate what specifically she had been part of.
+
+She has run the Dispensary in the Gray Zone border between Z-7 and Z-8 since 2214. Twelve years
+of treating everyone who couldn't go official - exos, scavs, tunnelers, runners who caught
+something their employers wouldn't cover. She is good at this. She is also, as she will discover,
+running the clinic partly to outrun a specific memory she has refused to fully form.
+
+**Rule: the wound never surfaces until Chapter 11.** Before that, it functions as a texture -
+her over-caution with consent, her specific dislike of Sable Industries, the way she looks at
+her own hands when she finishes a surgery.
+
+## 3. Character rules for this story {#SS-TLC-3}
+
+### Jude Adeyemi - "Doc Stash" (POV protagonist) {#SS-TLC-3a}
+
+- 39 years old. Mixed Nigerian-Polish heritage. Compact, precise in movement.
+- Full name always available to readers. Handle is what the Gray Zone uses.
+- Voice register: **GREY adjacent, medical precision variant.** Close-third limited POV.
+  - Sees bodies as systems. Her narration reads in terms of deficits, pressures, drainage,
+    repair - not metaphysically, but because this is genuinely how she processes the world.
+  - Dark humor as shield. "That's going to be an interesting autopsy" is the kind of line
+    she says aloud in an empty room.
+  - **Anglo-Saxon base vocabulary** with medical/technical overlay deployed naturally.
+    She does not explain her terminology to herself or the reader.
+  - Sentences longer than Kyle's in contemplation; shorter in crisis. The compression is
+    situational, not habitual.
+  - She does not perform competence. She is competent and occasionally wrong and both
+    things show.
+- She takes payment. Not è20 minimum like Kyle - she takes what people have.
+- She does not carry a weapon habitually. She has a bone saw she has used in non-surgical
+  contexts exactly once. This matters in the finale.
+- She has one external tell for emotional distress: she catalogues supplies. When
+  something frightens her, she counts what is on the shelves.
+
+### Chit / Cayo Reyes-Ibarra {#SS-TLC-3b}
+
+- 52 years old. Colombian-Moroccan heritage. Circuit handle: Chit.
+- **Naming note (2026-07-21):** the handle was renamed from "Ledger" to "Chit" to eliminate a
+  cross-story name collision with an unrelated synthetic character in BCODA. Same person, same
+  role, same arc - only the handle token changed. Do not reintroduce "Ledger" for this character.
+- Information broker. His rule: he always gets paid first. It is also a confession - he has
+  arranged his entire life to avoid the moment of choosing between money and conscience.
+- **In Chapter 10:** Scalpel Division offers him the implant's location in exchange for
+  immunity. He accepts. Then, after one hour, he calls Stash to warn her.
+- His arc is not redemption; it is acknowledgment. He knows what he is. He acts anyway.
+
+### Lydia Roth {#SS-TLC-3c}
+
+- Halcyon Civil Security - NSB (Neuretic Security Bureau) Agent, GLMZ Field Division. Late 40s. Finnish-Somali heritage.
+- Her logic: the governor tech saves 1,200 people per year. The 428 victims were already dead.
+  She has done the arithmetic. She is not entirely wrong. She is wrong about the next set of 428.
+- She does not torture. She explains her position with complete honesty.
+- She is the most dangerous person in the story because she cannot be argued with.
+- **Naming note (2026-07-18):** earlier drafts of this bible used "NCID / RaNCID." The live
+  prose uses "NSB" consistently across every chapter she or her division appear in (5, 6, 9,
+  12, 13, 14). NSB is the correct in-story designation going forward; do not reintroduce
+  NCID/RaNCID for this story.
+
+### Commander Brauer {#SS-TLC-3d}
+
+- Scalpel Division commander, Sable Industries MedTech security arm. Former NGRA.
+- Professional, not sadistic. His job is asset recovery.
+- He survives the finale. When Lydia Roth invokes her authority and tells him to let the broadcast finish, he stands down. The Chapter 13 confrontation is a bloodless standoff, not a firefight.
+- Carries a Cascade suppressor (disrupts neural implants within 5 meters). Live prose (beat 10644)
+  has Stash clock it and dismiss it in the same breath: the Nova-7 has no neural interface, physical
+  broadcast only, so the suppressor is the wrong tool for this specific problem. It is planted for
+  what it establishes about Brauer's loadout and professionalism, not as a weapon he ever needs
+  against this device.
+
+### Femi Adebayo {#SS-TLC-3e}
+
+- 17 years old. Nigerian heritage. Came to Dispensary at 14 with compound fracture; stayed.
+- Knows every tunnel and crawlspace in a two-kilometer radius. This knowledge saves Stash's life.
+- He is the one who names the new clinic. He puts Renata's name on the wall.
+
+### Renata Emmei {#SS-TLC-3f}
+
+- Deceased before story opens. 51 years old at death. Ghanaian heritage.
+- Former corporate financial compliance officer (Sable Industries, 2209-2214). Built the implant herself.
+- Spent eleven years finding a way to broadcast the evidence. Researched Stash for two years.
+- Walked into the Dispensary knowing the killswitch would fire.
+- She is the story's moral center. She had the right answer and spent her life paying for it.
+
+## 4. Beat spine - 14 chapters, 48 beats (original planning outline; superseded by the live
+generated Beat Spine section below, which reflects the actual chapter titles and beat count
+after the Scene/Sequel rebeat) {#SS-TLC-4}
+
+Word target: ~50,000 words. [C]=Combat, [E]=Emotional Climax, [D]=Dialogue, [N]=Narrative.
+
+### Ch1 - The Dispensary
+- **1.1** [N] - 0311hrs. Stash closes a sternotomy on a 19yo scav runner. Works alone. Charges nothing.
+- **1.2** [D] - *Theme Stated.* Femi: "Are we getting paid?" Stash: "The job isn't the payment."
+- **1.3** [N] - Dispensary world. Debts, Chit's unanswered message, four in-patients. She knows all their names.
+
+### Ch2 - The Runner (Catalyst)
+- **2.1** [N] - *Catalyst.* Renata staggers in. Pulmonary hemorrhage. Frequency 412.7. Knows Stash's full name.
+- **2.2** [C] - Surgery. Stash stabilizes Renata through the night.
+- **2.3** [E] - *The killswitch.* 0612. Renata's chest ruptures. Stash finds the data capsule. Broadcasting. 412.7.
+
+### Ch3 - First Turning Point
+- **3.1** [N] - Stash moves the implant; identifies Nova-7 model, dead medical channel.
+- **3.2** [D] - She contacts Chit. Corpo financial-grade cipher. He can decode but won't unless paid.
+- **3.3** [N] - *Renata's Fragment 1.* 2218. The trial records. 428 names. Sable Industries.
+
+### Ch4 - Ticking Clock
+- **4.1** [D] - Chit in person. Decodes. He reads the summary. Quotes her a price. She pays.
+- **4.2** [N] - *Renata's Fragment 2.* 2219. The choice to go off-grid. She identifies the dead channel.
+- **4.3** [D] - Data cooperative wants the records but cannot receive a single-point broadcast. She needs the station.
+- **4.4** [N] - She tells Femi there's a ventilation problem in the surgical suite and sends him on a
+  supply errand to Bloom Quarter and West Town, to get him clear of the danger before the broadcast.
+  He goes along with it. He will not stay clear of it.
+
+### Ch5 - NSB Contact
+- **5.1** [D] - Lydia Roth appears. NSB credentials. Knows about the implant. Wants Stash to hand it over.
+- **5.2** [D] - Stash stalls. Lydia's logic: 1,200 alive now. 428 already dead.
+- **5.3** [N] - *Renata's Fragment 3.* 2221. Isolation. "I thought I would feel worse about this than I do."
+
+### Ch6 - Scalpel Division
+- **6.1** [C] - Two Scalpel operatives follow Stash. She loses them in Z-7's tunnel access points.
+- **6.2** [D] - Chit identifies Scalpel Division. Corpo security. Sable Industries MedTech arm. Two teams.
+- **6.3** [N] - She inventories: what she has, what she doesn't, what she needs.
+
+### Ch7 - The Records
+- **7.1** [E] - She reads the full trial records. All 428 names. All 428 procedures. All 428 outcomes.
+- **7.2** [D] - Chit identifies the monitoring station. Inside Scalpel's likely search perimeter. He will not help further.
+- **7.3** [E] - *The false victory.* She decides: broadcast. One hour of believing the problem is solved.
+
+### Ch8 - Bad Guys Close In (1)
+- **8.1** [N] - *Triangulation.* The implant has been broadcasting the entire time. She realizes too late.
+- **8.2** [D] - *Renata's Fragment 4.* 2223. "I spent six months deciding whether to come to you."
+- **8.3** [C] - Scalpel finds the van. They run. She gets out. Chit does not. She does not go back.
+
+### Ch9 - Bad Guys Close In (2)
+- **9.1** [N] - Abandoned first clinic, Z-7. Alone, cold, systematically terrified, processed as inventory.
+- **9.2** [D] - Lydia calls. Scalpel and NSB are not coordinating. Lydia: "I cannot protect you." Stash: "Why are you telling me?" Lydia: "I don't know."
+- **9.3** [N] - *Renata's Fragment 5.* 2224. "I'm not doing this because I'm brave. I have run out of alternatives and also because I'm right."
+- **9.4** [D] - Femi texts. He never actually stayed clear of the danger - he's been in the tunnels two blocks away the whole time.
+
+### Ch10 - All Is Lost
+- **10.1** [D] - Chit calls once, 63 minutes after taken. In a level, unstressed voice he states coordinates and a location name that read as accurate to anyone not local - Stash recognizes both are wrong because she was at the true location three hours earlier. He is misdirecting Scalpel while giving no sign of it and offers no separate warning; she decodes the deception herself from the call's content alone.
+- **10.2** [C] - She goes back for the patient records drive. Scalpel is inside. She watches them take it.
+- **10.3** [E] - Tunnel. Femi finds her. She catalogs: implant, dead phone, surgical kit, forty è, a pen. "What do you need?"
+
+### Ch11 - Dark Night of the Soul
+- **11.1** [N] - Femi charges the phone. She opens Fragment 6.
+- **11.2** [E] - *Renata's Fragment 6.* 2225. Speaks to Stash by name: "I found your name in the records. I decided it qualifies you." Four seconds looking at the camera. Then cuts the feed.
+- **11.3** [D] - She tells Femi what the records say. "Did you know?" No. "Then you didn't do it." "Are you going to argue with both of us?"
+- **11.4** [N] - Femi identifies the monitoring station. The plan was always complete.
+
+### Ch12 - Break into Three
+- **12.1** [D] - The plan. Four kilometers. Femi shows the discharge rod. She shows the bone saw. "Different context."
+- **12.2** [C] - Through the tunnels. Two hours. She learns he is better at this than she is.
+- **12.3** [N] - The monitoring station. Locked. Femi has the building authority code. Inside.
+
+### Ch13 - Finale (1): The Broadcast
+- **13.1** [N] - Station on standby seven years. Nova-7 interfaces directly. Broadcast initiated. Eleven minutes.
+- **13.2** [C] - Brauer arrives at six minutes. Cascade suppressor. Stash blocks with the bone saw. Brauer goes around.
+- **13.3** [C] - Lydia arrives at eight minutes. Ninety-second standoff. Lydia orders Brauer to let it finish; he stands down. Nobody is killed. Broadcast runs.
+- **13.4** [E] - Eleven minutes. Complete. 40 nodes. Implant goes dark. Stash holds the warm shell. "Did it work?" "Twelve hours, standard latency."
+
+### Ch14 - Final Image
+- **14.1** [D] - Lydia's deposition. Morning. No arrest. Stash's voluntary statement once, clearly, for the record.
+- **14.2** [N] - By 1400: three data brokers mirror the package. Legal collective files emergency review. Governor program under review; will not be immediately suspended.
+- **14.3** [E] - *Final Image.* Three weeks later. Z-6 sub-level unit. Stash restocking. Chit appears. Femi painting: Renata Emmei. The job is not the payment. She begins.
+
+## 5. Plant/payoff ledger {#SS-TLC-5}
+
+| # | Plant | Beat | Payoff | Beat |
+|---|-------|------|--------|------|
+| 1 | Killswitches on corpo runners (reputation) | 1.3 | Renata dies via killswitch | 2.3 |
+| 2 | Chit's "I always get paid first" | 4.4 | He sells her out - then calls to warn her | 10.1 |
+| 3 | Implant broadcasting on 412.7 MHz | 2.3 / 3.2 | Station accepts directly; broadcast uses dead network | 13.1 |
+| 4 | Femi's tunnel knowledge (background) | 4.1 / 9.4 | He guides Stash through perimeter undetected | 12.2 |
+| 5 | Stash's Sable Industries history, unexamined | 1.3 / 2.3 | Her name in trial records | 7.1 / 11.2 |
+| 6 | The bone saw (non-surgical context, once) | 1.1 | She uses it to block Brauer - futile | 13.2 |
+| 7 | Lydia: "I was not supposed to know about this operation" | 9.2 | She is at the station, tracking separately | 13.3 |
+| 8 | Stash pays building authority for old Z-7 clinic | 3.1 (implied) | Femi uses building authority codes to access station | 12.3 |
+| 9 | Femi's ventilation-repair/supply-errand cover story (Bloom Quarter/West Town) | 4.4 | He never really left - in the tunnels when she needs him | 9.4 |
+| 10 | Renata's fragments omit Stash's name five times | 4.3-9.3 | Fragment 6 addresses her by name; omission was deliberate | 11.2 |
+
+## 6. Voice register - TLC prose laws {#SS-TLC-6}
+
+**Governing register:** Medical precision variant. Close-third limited, Stash's POV throughout
+except during Renata's fragments (first-person video diary format, direct to camera).
+
+**What this register does:**
+- Diagnoses situations before judging them. Mechanism before moral weight.
+- Uses medical vocabulary naturally - "pressure deficit," "lavage," "sternotomy" - without glossing.
+- Counts and catalogs under stress. Her inventory reflex is an emotion tell.
+- Dark humor in internal narration and dialogue, never in high-stakes moments.
+- Contractions in dialogue always. Contractions in narration when situation is immediate.
+
+**What this register does NOT do:**
+- Does not use Kyle's vocabulary (filing, arithmetic, parliament, gap, geometry - FORBIDDEN).
+- Does not name emotions directly. Body signals carry the emotional load.
+- Does not describe her own appearance. There are no mirrors.
+- Does not editorialize. She describes; the description does the work.
+
+**Forbidden constructions:**
+- "She felt [emotion]." - replace with physical signal.
+- "It was as if-" - wrong register.
+- Sentimental register in the final image. Warmth is real but functional, not effusive.
+
+## 8. Locks {#SS-TLC-8}
+
+- Stash does not kill Brauer or Lydia. The story ends without her having killed anyone.
+- Chit does not become a hero. His one act of conscience is unexplained by him and costs him.
+- Femi does not die.
+- The broadcast succeeds. The records are out. The outcome is uncertain but the act is complete.
+- The governor program is not shut down by the end of the story. The legal process takes years.
+- Stash does not seek forgiveness. She does not get it. She does not need the story to provide it.
+- Renata's name goes on the wall. This is the final image and it is not negotiable.
+
+## Brand Environment & Character Loadout {#SS-TLC-brands}
+
+### Jude "Stash" Adeyemi
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Medical kit | **Sable Industries MedTech field kit** | Thematic: the corp whose cover-up she's exposing made her tools |
+| The implant | **Sable Industries Nova-7** (2210) | Canonized in 1 |
+| Apparel | **Gray zone reclaim** | Street medic; nothing that signals affiliation |
+
+### Setting Brand Environment
+
+- **Sable Industries** is the thematic brand throughout: trial records, medical tools, Scalpel Division
+- **Ringo vending machines** at zone boundaries - CramIt bars, contractor staples
+- **NCID overlay**: Lydia auto-identifies every piece of Stash's gear the moment she enters
+
+<!-- ==== GENERATED SECTIONS - do not hand-edit below this line ==== -->
+<!-- GENERATED-CHECKSUM: d0d386ca7353ae6c2e7ee0fc194390a2a6252f3daa24b03290a3e62e814e72b9 -->
+
+## Structural Blueprint
+<!-- generated 2026-08-03T23:51:56.3103220Z from NodeStructuralBlueprints - edit via ss --generate-blueprint -->
+
+- **Subplot**: Femi's maturation from errand-runner to autonomous agent mirrors Stash's arc from complicit silence to active witness. Both move from accepting systems that use them to choosing their own role in the outcome.
+- **Temporal scheme**: nonlinear
+  - _Six embedded video fragments (beats 11, 14, 19, 25, 29, 34-35) are Renata's retrospective testimony, shot over 7 years (2218-2225), interspersed with Stash's 72-hour present. The fragments withhold Renata's final decision until beat 34, creating delayed revelation of why she chose Stash specifically and what the nine-percent risk was._
+- **Resolution**: mixed
+- **Moral polarity**: ambivalent
+- **Ending**: avalanche, no epilogue
+- **Escalation**: 47-beat arc, peak 10/10 at beat 41
+
+## Beat Spine
+<!-- generated 2026-08-03T23:51:56.3103220Z from Beats table - edit via MCP beat tools -->
+
+### Chapter 1 - The Dispensary
+_(42 beats)_
+- B01 ú Establishes Jude's exhausted competence and ritualized precision as the baseline. - opens
+- B42  ú Turns the story from quiet deliberation to sudden crisis, using the interruption. - closes
+
+### Chapter 2 - The Runner
+_(59 beats)_
+- B43 ú Escalates tension by having Stash instantly recognize danger through sound alone. - opens
+- B101  ú A quick, unhesitating answer signals readiness and complicity, raising tension a. - closes
+
+### Chapter 3 - The Implant
+_(46 beats)_
+- B102 ú Introduces the body disposal timeline, grounding the aftermath in cold procedura. - opens
+- B147  ú Establishes Femi as a trusted, capable stand-in and sets up covert protocols tha. - closes
+
+### Chapter 4 - Break into Two
+_(57 beats)_
+- B148 ú Bridges into the next chapter by flagging an unseen confession, raising tension. - opens
+- B204  ú Chit warns her that any choice carries irreversible cost, raising the stakes bef. - closes
+
+### Chapter 5 - Fun and Games
+_(55 beats)_
+- B205 ú Kyra's claim to already understand is undercut, foreshadowing worse revelations. - opens
+- B259  ú Chit's clinical restraint and Stash's small act of self-control establish their. - closes
+
+### Chapter 6 - Fun and Games: NCID
+_(43 beats)_
+- B260 ú Establishes Stash's altered mental state, signaling that what follows will deman. - opens
+- B302  ú Stash refuses the bribe outright, asserting the victims' humanity over Lydia's c. - closes
+
+### Chapter 7 - Midpoint
+_(49 beats)_
+- B303 ú Establishes the grinding difficulty of cracking Renata's cipher to heighten anti. - opens
+- B351  ú Forces an accelerated commitment to action, raising stakes by compressing the ti. - closes
+
+### Chapter 8 - Bad Guys Close In
+_(57 beats)_
+- B352 ú Signals self-aware regret, foreshadowing a costly oversight about to surface. - opens
+- B408  ú Closes the beat with grim forward momentum, reaffirming her resolve to continue. - closes
+
+### Chapter 9 - Bad Guys Close In: NCID
+_(75 beats)_
+- B409 ú Grounds the setting in a private, long-nursed attachment, priming the reader to. - opens
+- B483  ú Kayla commits them to action, closing the deliberation beat and launching the mi. - closes
+
+### Chapter 10 - All Is Lost
+_(59 beats)_
+- B484 ú A late-night alert signals the fragile plan is about to be disrupted, raising te. - opens
+- B542  ú Marks the threshold moment where preparation ends and irreversible action begins. - closes
+
+### Chapter 11 - Dark Night of the Soul
+_(37 beats)_
+- B543 ú Signals the protagonist turning to hidden resources, teasing a revelation withhe. - opens
+- B579  ú Seals their mutual decision to act with terse, unadorned dialogue, marking the m. - closes
+
+### Chapter 12 - Break into Three
+_(41 beats)_
+- B580 ú Grounds the escape in logistical reality, reminding readers of the ticking const. - opens
+- B620  ú Confirms the room's long dormancy to heighten the stakes of reactivating somethi. - closes
+
+### Chapter 13 - Finale: The Broadcast
+_(90 beats)_
+- B621 ú Turns anticipation into momentum by showing the station's dormant infrastructure. - opens
+- B710  ú Delivers terse closure on the central promise-driven task, confirming the debt t. - closes
+
+### Chapter 14 - Final Image
+_(47 beats)_
+- B711 ú Opens the aftermath by introducing formal accountability, shifting the story fro. - opens
+- B757  ú Ends on ordinary forward motion, asserting that ongoing work and unresolved hist. - closes
+

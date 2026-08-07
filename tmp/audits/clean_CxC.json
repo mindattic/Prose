@@ -1,0 +1,69 @@
+{
+  "node_slug": "marrow-chrome-019f0968",
+  "node_title": "Crimson \u0026 Chrome",
+  "mode": "sequel",
+  "previous_node": "Neon \u0026 Rust (neon-rust-019f06da)",
+  "gateway_ready": false,
+  "blocking_count": 4,
+  "advisory_count": 4,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "reenter_through_change",
+      "Title": "Re-enter through change, not summary",
+      "Status": "fail",
+      "Evidence": "The scene establishes present state through direct exposition of backstory rather than dramatized change: \u0027Twenty-one people walked onto a boat off Tidewell, eleven years ago, and fourteen came home... She\u0027d promised herself, at a different window over this same lake, never to be sloppy again\u0027 and later Rook\u0027s monologue reciting the whole Axiom/Tidewell/Soraya history (\u0027Not Axiom. Tidewell... Seven years before Soraya... The seven weren\u0027t the cost... They were the product\u0027) functions as summary delivered in dialogue, not as a changed present the reader reconstructs from.",
+      "Fix": "Cut the explicit Tidewell/Axiom recitations and instead let the changed present (Rook\u0027s rules, the crew\u0027s new dynamics, Soraya\u0027s four-year silence surfacing as behavior) carry the history implicitly, trusting small physical tells rather than spoken-aloud backstory to do the reminding."
+    },
+    {
+      "Key": "reintroduce_like_old_friend",
+      "Title": "Reintroduce names like an old friend would",
+      "Status": "warn",
+      "Evidence": "Rook and Soraya get vivid in-voice reactivation tags (the three-finger count, chopstick precision), but crew members like Boiler, Scout, Lace, and Vox are reintroduced largely through Soraya\u0027s expository dossier (\u0027He\u0027ll want the building before the job,\u0027 \u0027Scout\u0027s still in the Gray Zone... She\u0027s got Gerald\u0027) followed by a flashback anecdote each -- a structure closer to briefing-plus-backstory than a lived-in tag. Vox and Lace in particular are named and characterized entirely secondhand before they appear in person much later.",
+      "Fix": "Let each returning crew member\u0027s first on-page appearance carry its own single physical/behavioral beat the way Boiler\u0027s calibration wheel does, rather than front-loading their identity through Soraya\u0027s dialogue and a retrospective anecdote."
+    },
+    {
+      "Key": "lighter_regloss",
+      "Title": "Refresh proprietary terms on a lighter touch than the gateway",
+      "Status": "warn",
+      "Evidence": "(evaluation failed)",
+      "Fix": null
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "Multiple acronyms appear with no in-voice expansion ever given: \u0027GLMZ\u0027 (used repeatedly, e.g. \u0027the vacuum rail that ran GLMZ\u0027s spine\u0027 and \u0027GLMZ doesn\u0027t stop being what it is\u0027), \u0027NRST\u0027 (\u0027the gray-market balance from the NRST crack\u0027), and \u0027QUANTA\u0027 (used as a bare term throughout, e.g. \u0027no QUANTA mark\u0027 and \u0027a QUANTA figure that drops\u0027) never receive a full-term gloss before or after first use.",
+      "Fix": "Insert an in-voice expansion at each acronym\u0027s first appearance, e.g. have a character gloss \u0027GLMZ\u0027 as its full name once before using the bare initials, and similarly expand \u0027NRST\u0027 and \u0027QUANTA\u0027 the first time each appears on the page."
+    },
+    {
+      "Key": "pay_previous_due",
+      "Title": "Pay the previous book its due, then move",
+      "Status": "fail",
+      "Evidence": "The prose leans almost entirely on relitigating Tidewell (the previous book\u0027s ending) through extended flashback texture \u2014 Wennick\u0027s unspoken name, Boiler\u0027s collapsing floor, Lace\u0027s read, Vox\u0027s coffee ritual, the \u0027seven weren\u0027t the cost, they were the product\u0027 reveal \u2014 rather than briefly confirming that ending\u0027s weight and pivoting forward; the node spends thousands of words re-processing old guilt as active plot fuel instead of a compact acknowledging beat.",
+      "Fix": "Trim the Tidewell material to one clear, contained beat early on that confirms what it cost and that it stuck (e.g., the Wennick line and the count-promise alone), then let the new twenty-one crisis carry the forward momentum without repeatedly re-litigating the old wound as new revelations throughout the piece."
+    },
+    {
+      "Key": "open_door_left_ajar",
+      "Title": "Open the door the last ending left ajar",
+      "Status": "warn",
+      "Evidence": "The prose repeatedly names the inherited Tidewell thread (\u0027Fourteen out of twenty-one, off Tidewell,\u0027 \u0027a name at the bottom of it you don\u0027t say out loud\u0027) and complicates it well by mapping it onto the new twenty-one and Rook\u0027s confession that \u0027The seven weren\u0027t the cost. They were the product\u0027 -- but this recontextualization depends entirely on backstory (Tidewell, Wennick, Axiom) that a first-time reader has no anchor for, so the \u0027door left ajar\u0027 is being opened almost exclusively for returning readers rather than being legible as a planted question from a specific prior ending.",
+      "Fix": "Add one grounding beat early that frames Tidewell explicitly as \u0027the job the last book ended on\u0027 with enough concrete stakes (what readers saw resolved, what was left unresolved) that a newcomer can feel the echo as continuity rather than untethered lore."
+    },
+    {
+      "Key": "reward_long_memory",
+      "Title": "Reward the long memory without taxing the short one",
+      "Status": "fail",
+      "Evidence": "The current plot\u0027s legibility depends on absorbing dense unexplained backstory delivered as fact rather than reintroduced context: \u0027Twenty-one people walked onto a boat off Tidewell, eleven years ago, and fourteen came home\u0027 is dropped in without scene-setting, and later the Axiom job, the routing code Rook \u0027read... four years ago, burned into the side of a tank while the tank was trying to kill her,\u0027 Vox\u0027s \u0027retail-grade, sold the second tier in the Gray Zone\u0027 history, and Goldberg\u0027s four-year-old defection are all treated as load-bearing knowledge the reader must already hold to track who owes whom what and why the vault-crack plan works.",
+      "Fix": "Add brief in-scene grounding for each callback the first time it\u0027s invoked (a line of context for Tidewell, Axiom, and Vox\u0027s proxy-network backstory) so a first-time reader can follow the present mission\u0027s stakes and character motivations without already knowing the prior book\u0027s events."
+    },
+    {
+      "Key": "escalate_not_repeat",
+      "Title": "Escalate, don\u0027t repeat",
+      "Status": "warn",
+      "Evidence": "The structural spine repeats Tidewell almost beat for beat (twenty-one names, a survivor count, a betrayal by a trusted ally who withheld the truth, a crew assembled by trait-based vignettes, a final tally written on paper) \u2014 even the closing beach/lake beat and \u0027that\u0027s not the same thing\u0027 reckoning mirror what the text says already happened once before, so the sequel\u0027s engine is explicitly the same engine re-run with new labels (Marrow instead of Axiom, Anneke instead of an unnamed handler).",
+      "Fix": "Cut or radically compress the Tidewell-parallel scaffolding (the recruiting montage, the exact 21-count echo) and let the new wrinkle \u2014 three facilities still running, Rook choosing not to chase them yet \u2014 become the actual spine of the story instead of a coda tacked onto a rerun, so the piece escalates into unresolved moral scale rather than resolving into another clean count."
+    }
+  ]
+}

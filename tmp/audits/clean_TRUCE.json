@@ -1,0 +1,69 @@
+{
+  "node_slug": "tournament-019fc10a",
+  "node_title": "Three Day Truce",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 4,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The Three Points fair opening (bunting, fiddle, tar-and-meat smell, banners crossing ropes, soldiers sharing wine before killing each other) delivers genuine sensory seduction, but this texture is front-loaded in the first few paragraphs and then abandoned for a long stretch of procedural plot machinery \u2014 clerks, ledgers, brackets, boons, manifests \u2014 where GLMZ\u0027s strange-beautiful quality gives way to functional exposition and dialogue-heavy negotiation scenes.",
+      "Fix": "Thread more of that lived-in-wrong sensory texture (the graft\u0027s hum under skin, the Sinterkin\u0027s flat unhurried gaze, the construct\u0027s steam-vent rhythms) through the long middle stretch of political and financial maneuvering so allure doesn\u0027t get crowded out by mechanism."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "pass",
+      "Evidence": "The opening paragraphs establish Three Points as a recurring, ritualized truce-fair through grounded sensory detail (bunting left up since last time, badly-tuned fiddle, tar and roasting meat) and a toll-master who \u0027does not care who you are\u0027 and counts coin \u0027because he has\u0027 done it ten thousand times \u2014 the world functioning on its own logic before Kaeric\u0027s personal crisis (the customs board) intrudes.",
+      "Fix": null
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Terms like \u0027CorpoNations,\u0027 \u0027neuretics,\u0027 \u0027Catalyst infusion,\u0027 and the Sinter/Rhine geography are mostly absorbed into action without a beat of orientation (e.g., \u0027Sinter office... Recalculates the surcharge every fair-week\u0027 is glossed well through the clerk\u0027s dialogue), but later terms like \u0027Heloth courier-construct,\u0027 \u0027ichor-proof plate,\u0027 and \u0027analog\u0027 as an insult are dropped in with only partial context, assuming the reader already tracks what a construct or the Catalyst program is.",
+      "Fix": "Add a half-beat of in-voice sensory or functional detail the first time \u0027Heloth construct\u0027 and \u0027Catalyst infusion/program\u0027 appear (as was done well for the toll and surcharge system) so a first-time reader can place them without inferring from later exposition."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "Multiple acronyms and proper nouns treated as established jargon appear without any in-voice expansion: \u0027NSB\u0027-style terms aren\u0027t present, but functional equivalents like \u0027House Champion round,\u0027 \u0027Sinter office,\u0027 \u0027Catalyst infusion,\u0027 and especially unexplained world-terms like \u0027Sinterkin\u0027 and \u0027Sinter approach\u0027 are used as if the reader already knows the underlying system; more critically, no acronym literally appears, but the rule\u0027s spirit\u2014never assume prior familiarity\u2014is violated by terms like \u0027Catalyst\u0027 and \u0027Sinter\u0027 being dropped as proper nouns with capitalized specificity and no definition given anywhere in the excerpt.",
+      "Fix": "Introduce any specialized capitalized system-term (e.g., \u0027Catalyst infusion,\u0027 \u0027Sinter,\u0027 \u0027Sinterkin\u0027) with a brief in-voice gloss the first time it appears, the same way the rule demands for acronyms, so a first-time reader isn\u0027t left inferring meaning from context alone."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "\u0022*Three days of this. Then the river again.*\u0022 followed by \u0022Kaeric has seen it enough seasons running. It catches behind his sternum anyway\u0022 \u2014 a small, human flicker of weariness/grief at the truce-fair\u0027s temporary peace, immediately followed by him walling it back up and walking on.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The final section does land a genuine \u0027one beat past\u0027 image\u2014the field going quiet, crows and dogs working the refuse, mud \u0027going still\u0027 while waiting for the next truce\u2014which is exactly the right register of weight-without-resolution. But it arrives only after an enormous cascade of unresolved plot threads (Morrint\u0027s fate, the unnamed boon, Meraq/Vaen\u0027s glove, Aeshel\u0027s debt, the freed Sinterkin) that a cold reader has no way to weigh, so the closing gesture reads as an epilogue to a sprawling saga rather than a handoff beat for this specific node.",
+      "Fix": "Trim the coda to focus tightly on one image tied to Kaeric/Sennah\u0027s throughline (the field, the axe, the folded paper) rather than letting it try to seal the entire multi-thread cast in one panoramic gesture."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "warn",
+      "Evidence": "The prose does plant hindsight-rewarding details cleanly on a first pass (e.g., Kaeric\u0027s flat \u0027No House?\u0027/\u0027No\u0027 at the gate reading differently once his sister-plot and Meraq\u0027s suppressed paternity thread surface; the glove/\u0027analog\u0027 exchange between Meraq and Vaen gains retroactive weight once Kaeric\u0027s parentage is implied), but several of these payoffs (the empty cage releasing a possible Sinterkin, the Heloth messenger scene, Morrint\u0027s ledger) are so heavily interior-monologued and thesis-stated (\u0027That is not a threat... a man being made to carry weight he does not understand\u0027) that they explain their own significance on first read rather than leaving room to be *discovered* later \u2014 reducing the gap between first-pass and second-pass meaning.",
+      "Fix": "Trim the explanatory interior monologue that spells out thematic parallels (e.g., Meraq\u0027s \u0027That is what I have done with the name for three years\u0027 or Corrik\u0027s \u0027If it\u0027s true Sinterkin... that\u0027s on him\u0027) so first-time readers get the scene\u0027s surface completely while the deeper resonance is left implicit for rereaders to assemble themselves."
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "fail",
+      "Evidence": "This is not a targeted gateway pass but a sprawling, structurally dense epic spanning at least four POV threads (Kaeric, Sennah, Meraq/Vaen, Corrik) with deep lore apparatus (Catalyst infusions, Sinterkin, House politics, boons, the Long Seat, quarantine charters) delivered through dense in-world jargon with minimal orientation for a first-time reader.",
+      "Fix": "Cut this back to a single through-line (Kaeric/Sennah) with the other threads trimmed or removed, and add brief orienting context for terms like Sinterkin, Catalyst infusion, and the Houses so a newcomer isn\u0027t relying on accumulated lore to track stakes."
+    }
+  ]
+}

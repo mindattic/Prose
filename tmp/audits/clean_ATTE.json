@@ -1,0 +1,76 @@
+{
+  "node_slug": "attendance-019ebf4c",
+  "node_title": "Attendance",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 4,
+  "plant_count": 4,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The piece is dense with exact, seductive textures early \u2014 the ads that \u0027cut off dead at the median,\u0027 the car \u0027gone gray \u2014 the color a thing turns when nobody argues with it anymore,\u0027 the building read \u0027bottom to top\u0027 like a scar history, the CramIt bar tasting \u0027like chocolate described to someone who\u0027d never eaten food\u0027 \u2014 and these do pull the reader in with lived-in wrongness before horror arrives. But once the schism/mesh-intrusion plot takes over, the prose shifts almost entirely to procedural, bureaucratic rhythm (forms, clearances, timestamps, cost lines) and the sensory allure thins dramatically; the horror (the sound \u0027above his chair,\u0027 the locker, the thing in her mesh) lands mostly through clinical description and dialogue exposition rather than through the same seductive texture-work established at the opening.",
+      "Fix": "Sustain the material, sensory specificity established in the opening (smells, light, texture of decay and mismatch) into the mid-and-late sections so the horror of the schism and the mesh-intrusion arrives wrapped in the same strange-beautiful concreteness rather than receding into procedural/administrative exposition."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "pass",
+      "Evidence": "The opening paragraphs establish Yemina\u0027s commute as a routine (\u0027ran the way it always ran... a machine that never stopped, only changed gears\u0027) and linger on infrastructural texture \u2014 the elevated train, ad emitters cutting off at the median, dueling permit offices \u2014 well before the missing-children plot is introduced through her caseload.",
+      "Fix": null
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Most terms (Arcturus/Meridian, neuretics, Pilsen Veil, ArcSec, calibration print) are woven in through concrete sensory and procedural detail \u2014 \u0027Her neuretics were contractor-grade: district-issue mesh, grown in a public clinic eleven years ago\u0027 reads as natural bureaucratic interiority. But several proprietary terms arrive as unglossed proper nouns a newcomer can\u0027t place \u2014 \u0027GLMZ\u0027, \u0027AAMA\u0027, \u0027Class-3 site\u0027, \u0027the schism\u0027 are used many times before any orienting context is given, and phrases like \u0027a hazard classification\u0027 or \u0027schism proximity\u0027 assume the reader already knows what a schism is in this world.",
+      "Fix": "Give \u0027the schism\u0027 and \u0027GLMZ\u0027 a single early in-voice anchor (e.g., a line where Yemina\u0027s own thought defines the schism as the thing that opened wrong in the world, the way she defines neuretics and the seam) so first-time readers aren\u0027t left inferring the central phenomenon purely from accumulated context clues."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "\u0027GLMZ\u0027 appears repeatedly (e.g., \u0027no instrument in the GLMZ is pointed at,\u0027 \u0027every corp contract in the city\u0027 vs. \u0027across the GLMZ\u0027) with no in-voice expansion anywhere in the text; \u0027AAMA\u0027 is used freely on first appearance (\u0027the Anomalous Activity Monitoring Authority\u0027)\u2014which is properly glossed\u2014but \u0027GLMZ\u0027 never receives the same treatment.",
+      "Fix": "Add an in-voice gloss at GLMZ\u0027s first appearance, e.g. \u0027no instrument in the Great Lakes Metro Zone\u2014the GLMZ, everyone called it\u2014was pointed at that frequency.\u0027"
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "warn",
+      "Evidence": "The heater-cold moment (\u0022Her shoulders drew up half an inch before she\u0027d decided anything. Then she put them down. It was March. The lake was where it had always been.\u0022) is the closest thing to a human crack, but it\u0027s a physical/stoic reflex quickly re-armored, not a flash of who she once was outside her function; the kitchen-table arithmetic on her debt and the West Lawn recording memory are also filtered entirely through her investigator register rather than a personal register.",
+      "Fix": "Give her one beat\u2014a memory, a name, a person outside the caseload\u2014that surfaces without being immediately converted into case logic, so the reader glimpses Yemina before she was \u0027the contractor.\u0027"
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The node ends on a plot beat, not a landing: \u0027She had a name, and an address, and a count that was running, and behind her eyes something patient that wanted the same answer she wanted and had never once told her why. She did not check the queue again. There was nothing in it she hadn\u0027t already agreed to.\u0027 This is business concluding (case accepted) plus forward momentum into the next case, which is a hook/cliffhanger structure rather than a quiet closing gesture.",
+      "Fix": "After the acceptance and before driving off, give one small, contained, non-editorial physical gesture (setting the cold tea in the sink, locking the car, touching the notebook margin she never crossed out) that lets the reader feel the accumulated cost settle rather than propel forward into case 48."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "All four registered plants land as complete, functional beats on a first pass (the drone as ambient world detail with a clean diagnostic log, the blank sender field read simply as bureaucratic strangeness, the neuretics described as \u0027always slightly behind\u0027 explaining her professional competence, the \u0027careful margins\u0027 of the intruder\u0027s edits read as just another unsettling sensory detail) while each is built to re-signify once the ending recontextualizes it \u2014 e.g. \u0027CAPTURE SUSPENDED \u2014 SPECTRUM RESERVED... 17\u201319 Hz\u0027 functions as an in-scene obstacle on first read and only becomes \u0027someone closed a shutter the same morning something started using it\u0027 on a second pass.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose reads as a fully worked, self-contained investigative narrative with world rules (Arcturus/Meridian seam, corp contracts, schisms, psionics) explained in-scene through Yemina\u0027s procedural habits rather than exposition dumps; nothing suggests structural patchwork for newcomers, e.g. the calibration-print/tuning realization and the locker sequence are organic escalations, not bolted-on onboarding beats.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "Neuretics (leased vs corp-grade mesh, \u03A690/month debt), CorpoNations (Arcturus/Meridian split jurisdiction, gray zones like the freight-yard locker handoff), and Schism-adjacent phenomena (the 17-19Hz signal, calibration prints, children \u0027crossing\u0027) are richly textured and systemic; but AIs as agentic factional entities are essentially absent \u2014 the reception android and voice menus read as bureaucratic set-dressing, not agents with stakes, and the \u0027thing in her mesh\u0027 is framed ambiguously as schism-adjacent rather than clearly identified as an AI faction actor.",
+      "Fix": "Give the entity riding Yemina\u0027s mesh (or another AI presence) explicit markers of agenda and factional identity \u2014 a name, a goal, a rivalry with another AI or corp system \u2014 so it reads unmistakably as an AI player in the setting rather than an unclassified schism effect."
+    }
+  ]
+}

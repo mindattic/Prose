@@ -1,0 +1,69 @@
+{
+  "node_slug": "m-101-019f69f4",
+  "node_title": "M-101",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 3,
+  "advisory_count": 2,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The piece is rich in horror-texture (the trout-hook drawing, the arc cannon\u0027s silhouette of ash, the recalibration that mutes moral volume) but the \u0027strange-beautiful\u0027 seduction is thin \u2014 the amnios/warmth passage and the resupply-point kinship with M-774 gesture at allure (\u0027I am glad you exist\u0027) yet are quickly subordinated to grief and dread rather than lingered in as irresistible textures.",
+      "Fix": "Slow down and sensualize at least one more GLMZ-world texture (the uniform pallor light, the perfect total memory, the wireless jump between machines) with the same lyrical dwelling given to the horror beats, so wonder pulls the reader before the war-horror closes over it."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens directly into a compressed backstory of unemployment and drinking, then a truck crash within the first few paragraphs, immediately followed by an isekai-style transportation into a war machine; there is no grounded, ordinary-world entry beat (a commute, a transaction, a mundane routine) before the fantastical plot machinery (the Taking, Myrmidons, Verlaine/Atrament factions) takes over.",
+      "Fix": "Precede the crash with a scene of Declan moving through his ordinary world doing something mundane and specific \u2014 a shift at the mine, an exchange at Marte\u0027s counter, the drive itself lingering on the unremarkable texture of the mountain and the county road \u2014 before introducing the whiskey, the crash, and the sci-fi transposition."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Terms like \u0027CorpoNations\u0027 don\u0027t appear (good, not forced), but \u0027Myrmidon,\u0027 \u0027Sphere,\u0027 \u0027yggdra smoke,\u0027 and \u0027Verlaine/Atrament\u0027 are dropped in with functional context clues (\u0027the shell,\u0027 \u0027the front\u0027) that mostly let a reader infer meaning, except \u0027Aldenvast\u0027 is never glossed at all despite being held up as an emotionally load-bearing proper noun (\u0027He held the name the way he had held the yggdra smoke\u0027), leaving a first-time reader unsure what Aldenvast even refers to.",
+      "Fix": "Add one grounding clause near the first use of Aldenvast (e.g., naming it as the place/world he now suspects he\u0027s woken into) so newcomers have the same footing the narrative assumes they already have."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "The acronym \u0027M-101\u0027 (and later \u0027M-774\u0027, \u0027M-1018883\u0027) appears immediately in dialogue \u2014 \u0027Designation: M-101. Catalog entry: M-1018883\u0027 and Declan\u0027s correction \u0027My name... is M-101\u0027 \u2014 with no full term ever glossed for what \u0027M\u0027 stands for; \u0027Myrmidon\u0027 is later used as if synonymous but the letter-number designation itself is never explained as an abbreviation of anything.",
+      "Fix": "Before or at the first use of \u0027M-101\u0027, have a handler or Declan\u0027s own reasoning spell out the full designation term (e.g., \u0027Myrmidon unit one-oh-one\u0027) so the acronym-like catalog code is glossed in-voice prior to its bare use."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The gambling-house tone drops entirely at \u0027He said: I am not a unit\u0027 \u2014 a small, human refusal of erasure \u2014 and later, the eavesdropped death scene (\u0027The real world...had just finished being real. Whatever his mother was doing with her hands in that room...none of it would ever reach him again\u0027) gives a raw grief beat before he re-armors by simply getting up and walking because \u0027the shell did not tire.\u0027",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The prose continues well past the emotional climax (the mother\u0027s death, the rope going slack) into a fresh forward-plot beat: \u0027He got up, eventually... He walked on. There was a river ahead, and beyond it a city... and a woman on a road who would ask him, kneeling, to come out of a hiding place with her hand open and her blade sheathed.\u0027 This is a teaser/sequel-hook, not a quiet final gesture.",
+      "Fix": "Cut the explicit flash-forward to the woman and the city\u0027s plot details, and end instead on the physical image of him walking toward the river with the shell\u0027s indifferent requirement to keep moving, letting that single unresolved verb carry the final weight."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The recurring \u0027small bell tolling a number instead of an hour\u0027 is fully comprehensible on first read as an eerie unexplained motif, but only pays off as a heart monitor once the reader reaches the death scene; similarly, \u0027this is a coma\u0027 and Declan\u0027s careful hedging (\u0027the shape hope takes when a man has nothing else to build one out of\u0027) work as first-pass emotional grounding while retroactively reframing every prior \u0027vision\u0027 scene as literal transmissions from his dying body.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose spends thousands of words establishing Declan\u0027s mundane grounding (mine, war, whiskey, road) before the Taking, and then re-teaches every piece of world-terminology (Myrmidon, Verlaine/Atrament, arc cannon, yggdra smoke, the wireless transfer) through Declan\u0027s own confused first encounter with it, which functions as organic onboarding rather than lore-dump exposition bolted onto an already-tight sequel scene.",
+      "Fix": null
+    }
+  ]
+}

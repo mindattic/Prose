@@ -1,0 +1,76 @@
+{
+  "node_slug": "ballast-019f3ac7",
+  "node_title": "Ballast",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "fail",
+      "Evidence": "The prose is meticulous and controlled \u2014 the hum, the worn handholds outside 5-C, the commons wall\u0027s repainted numbers \u2014 but these textures are deployed as thematic reinforcement of the ledger-and-loss structure rather than as seductive, strange-beautiful sensory hooks; the piece opens with dry procedural exposition (stress readings, coherence decay curves, wrist displays) and stays in that register throughout, so allure never precedes or exceeds the accurate observation.",
+      "Fix": "Open with a sustained, sensory immersion in Candelaria\u0027s specific wrongness-made-beautiful (the sound of a bloc breathing, the smell of sixty-year-old recycled air, the vertiginous view through the outer ring) before pivoting to Teo\u0027s clinical readings, so the reader falls in love with the place before the ledger starts subtracting from it."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "pass",
+      "Evidence": "The opening beats \u2014 Teo checking stress readings on the gantry, the commons wall ritual of repainting the altitude number, the walk deck-by-deck through worn handholds and the machine shop sign \u2014 establish the world\u0027s ordinary texture (the Hush, freeboard, Air Tax) entirely through a character who has stopped being surprised by any of it, before the AshgraveMaterials letter introduces plot pressure.",
+      "Fix": null
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "pass",
+      "Evidence": "Terms like \u0027the Hush\u0027 (coherence drivers holding the bloc aloft), \u0027The Low\u0027 (no governance line, no Air Tax bracket, salvage waiting for a claimant), \u0027Air Tax\u0027 (a fee on altitude explained in one clause), and \u0027freeboard\u0027 (glossed via the surface-hull analogy \u0027back when hulls floated on water\u0027) are each folded into Teo\u0027s working thoughts as she\u0027d actually think them, oriented at first use without stopping the narrative to explain.",
+      "Fix": null
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "warn",
+      "Evidence": "The story is scrupulous about most in-universe jargon (e.g. \u0027Air Tax,\u0027 \u0027freeboard,\u0027 \u0027certified salvage\u0027 are all glossed), but the currency symbol \u0027\u03A6\u0027 is used from its very first appearance (\u0027Total offer: \u03A6847,000\u0027) with no explanation of what it stands for or how to read it, and \u0027NSB\u0027-style acronyms are otherwise avoided entirely, suggesting the rule was followed for true acronyms but the symbol itself was never glossed.",
+      "Fix": "Add a brief in-voice gloss the first time \u03A6 appears, e.g. having Teo mentally note \u0027\u03A6 \u2014 Phos, the city\u0027s standard currency mark\u0027 before or as she reads the AshgraveMaterials letter."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "warn",
+      "Evidence": "The clearest human crack for Teo is the tether-platform photograph \u0027propped against the wall where it always sat, never hung \u2014 because hanging it would have meant deciding it belonged somewhere permanent, and she still wasn\u0027t sure it did,\u0027 paired with her fifty-one-kilo life and the realization that her own lightness kept her from understanding what weight costs others until Prita\u0027s hand pressed to her sternum.",
+      "Fix": "Let that photograph beat breathe a moment longer with a concrete sensory or memory detail (what\u0027s in the photo, who\u0027s in it) rather than only abstracting it into the \u0027permanence\u0027 theme, so the crack lands as a felt image instead of another analytical observation."
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The final image\u2014Candelaria touching down after the Hum goes quiet\u2014is a genuine \u0027one beat past the handoff\u0027 gesture, but it lands as resolution rather than residue: the plot\u0027s central tension (will it sell, will it survive) is fully closed, and the descent is rendered as clean, almost peaceful (\u0027exactly the way a healthy descent should sound\u0027), which reads as a soft landing rather than a cost the reader is left holding.",
+      "Fix": "Cut the sequence off before or just after touchdown on a single small, unresolved physical detail\u2014Wen\u0027s calibration marks going dark, or Teo\u0027s crate by the door\u2014rather than narrating the full technical success of the landing, so the last note is one unaccounted-for weight rather than a completed process."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The story front-loads complete, first-pass sense (Teo\u0027s jettison math, the vote, the descent) while planting details that resonate only in hindsight \u2014 Wen\u0027s calibration marks \u0027still true\u0027 in the dark after his shop is stripped, Dagny\u0027s insistence that \u0027I want the question to not exist\u0027 paired with her later reveal that she voted for her own reasons rather than Prita\u0027s, and Teo\u0027s fifty-one kilos motif culminating in the blank relocation field that inverts her whole year of measuring others.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose reads as a self-contained, richly built story with invented terms (Hush, freeboard, jettison quota, Air Tax) that are consistently defined in-line through action and dialogue rather than lore-dump exposition \u2014 e.g. \u0027Freeboard, she called this... Candelaria\u0027s freeboard was altitude now\u0027 \u2014 which is a targeted accessibility addition, not a structural rewrite of the narrative itself.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "fail",
+      "Evidence": "Nanites (only fleeting robotic \u0027Almagre\u0027 as automaton/AI, not ambient bodily/matter infrastructure), neuretics (mentioned once as a delivery channel for a letter, with no cognitive-divide stakes), and Schism (never mentioned at all) are essentially absent; the story instead builds its own vivid but parallel apparatus of aerobloc physics, Air Tax, and salvage law that substitutes for the actual five pillars.",
+      "Fix": "Weave in explicit texture for the Schism as the reason airborne blocs and gray-zone law exist, show neuretics creating a real capability/status divide among residents (not just a message conduit), and depict nanites as literally repairing bodies or shaping matter in daily life rather than relying on a single ambiguous automaton called Almagre."
+    }
+  ]
+}

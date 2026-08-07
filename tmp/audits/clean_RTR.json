@@ -1,0 +1,76 @@
+{
+  "node_slug": "read-the-room-019f4990",
+  "node_title": "Read the Room",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 4,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The opening green-room texture (chain lamp, taped cable rivers, Mona\u0027s light-strip pulsing amber to white, Rill\u0027s wrist-seam dampeners, Dayo\u0027s poet-naming of Glass/Fade/Candor) is genuinely seductive lived-in-wrong detail that pulls before horror lands \u2014 but once the Candor kicks in and the telepathy/horror machinery starts, the prose shifts almost entirely into thriller-mechanics mode (turns counted, read-outputs relayed like tactical comms) and stops finding new strange-beautiful textures to seduce with.",
+      "Fix": "Thread at least one or two more sensory/world-texture beats (the genemod fangs, the Thread space-elevator line, the neuretics handshake) into the escape and shootout sections so the seduction continues alongside the horror instead of yielding the floor entirely to plot mechanics."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens mid-adrenaline, immediately after a set: \u0027The last chord was still hanging out front when Ethan Wolfe pushed through the green room door\u0027 \u2014 the plot\u0027s emotional engine (exhaustion, the Mona tension, the imminent Dayo deal) is already running in paragraph one, with no grounded, plotless entry beat of a stranger-eyed world before the character-and-stakes machinery engages.",
+      "Fix": "Precede this with a short beat of ordinary world-texture untouched by plot \u2014 e.g., a bouncer counting a till, a bartender restocking, the city\u0027s mundane commerce outside the club \u2014 before dropping into Ethan\u0027s post-show nerves and the band\u0027s charged dynamics."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Most proprietary nouns (neuretics, CorpoNations-adjacent brand names like Waxwing Neuromedia, Fenris Ballistics, Greymark Unseen, The Low, The Thread) are dropped in via appositive or sensory action without lecturing \u2014 e.g. \u0027his overlay ran empty\u0027 and \u0027the Thread\u0027s pods barely moved against the dark, the space elevator holding its long thin line down\u0027 gloss geography cleanly in-voice. But some terms land as unglossed drops that assume prior context, like \u0027the dampeners in his wrists\u0027 and \u0027Rill went inward and the drums came out\u0027 for Glass, plus \u0027Zone 4\u0027 and \u0027Zone-4 Umami\u0027 used as if the reader already has the zone map, which risks losing a true first-timer.",
+      "Fix": "Add one small in-voice anchor the first time \u0027Zone 4\u0027 or \u0027The Low\u0027 appears (e.g. a short sensory or status cue showing what living in that zone means) so newcomers get their footing without a lecture."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "Multiple acronyms/initialisms appear with no in-voice expansion at first use: \u0027AR layer\u0027 (\u0027his overlay ran empty\u0027), \u0027PA\u0027 (\u0027a PA held together by hope\u0027), \u0027NSB\u0027-style tech term \u0027The Pulse\u0027 is fine as a proper noun but \u0027CDW submachine gun\u0027 is dropped as a bare label with no gloss of what CDW stands for, and \u0027FB-7\u0027 on the Fenris Ballistics Howl is presented as a model code with no expansion.",
+      "Fix": "Introduce each abbreviation the first time in-voice with its full term glossed naturally, e.g. \u0027a public-address system\u2014a PA\u2014held together by hope\u0027 and \u0027a caseless-defense-weapon carbine, a CDW, slung across his front,\u0027 before ever using the bare initials again."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "\u0022He didn\u0027t sit. If he sat he\u0027d stop, and if he stopped he\u0027d feel every one of his thirty-six years land at once\u0022 and the wall imagery with Mona (\u0022Twice in four years... they\u0027d gotten up and built the band into a wall between them, brick by brick\u0022) crack Ethan open as a tired, aging man carrying an unspoken loss before the plot machinery starts, and he re-armors immediately by greeting Rill and deflecting Mona\u0027s \u0022you\u0027re shaking.\u0022",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The story ends with a fully resolved diegetic \u0027punchline\u0027 scene: three months later, injuries healed, band back onstage, the unfinished song literally finished and sung, and Faith in the front row \u0027fine,\u0027 already knowing the words \u2014 a bow-tied conclusion rather than a quiet gesture past the resolution.",
+      "Fix": "Cut the epilogue\u0027s triumphant completeness (finished song, healed cast, crowd catching the line) and instead end on one small, unresolved physical or sensory detail \u2014 Ethan noticing the scorch mark on the table, or Faith\u0027s hand finding his in the dark without either speaking \u2014 that carries cost and unfinished weight rather than delivering closure and a happy tableau."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "Details like Faith reading the room \u0027the way you\u0027d read a face, and whatever she found made her go quiet a beat, like a woman who\u0027d walked into a party she already half-remembered,\u0027 the Fenris/Wolfpack shotgun joke, and Mona\u0027s light-strip going white/amber all function as complete first-pass sensory beats (mystery, irony, mood) while retroactively reframing as clues once the ending reveals Faith\u0027s telepathy and history once read.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "fail",
+      "Evidence": "This is a dense, structurally maximal short story \u2014 a full green-room-to-shootout-to-hospital-to-epilogue arc with layered worldbuilding (neuretics, mesh handles, Fade/Glass/Candor lore, Fenris Ballistics branding, Waxwing Neuromedia signage, The Low/The Thread geography) all introduced cold, plus a telepathy reveal, two on-page deaths, a gunfight, and a three-months-later coda \u2014 none of which reads like \u0027tuning\u0027 an existing piece for new readers but like the entire house being built from scratch at gateway scope.",
+      "Fix": "Strip this back to a single contained scene (the green room before the raid, or the raid itself) and let dense worldbuilding/lore (neuretics jargon, brand names, the telepathy mechanic\u0027s rules) be trimmed or clarified in place rather than layering an entire multi-act plot with a new superpower reveal into the \u0027gateway\u0027 pass."
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "Neuretics, nanites, and Schism-adjacent tech appear woven into texture (Ethan\u0027s neuretics pings, Mona\u0027s dampener wrists and light-strip, Rill\u0027s dampeners, the gray-zone Low), and CorpoNations-as-governance is gestured at via Waxwing Neuromedia signage and gray-zone framing of \u0027The Low\u0027 as ungoverned air; AIs-as-agents and the Schism itself are almost entirely absent \u2014 there is no AI character with faction/agenda anywhere in the story, and \u0027Schism\u0027 as a physics-breaking rift is never named or felt at all.",
+      "Fix": "Introduce at least one AI entity with visible stakes/faction (e.g., the venue\u0027s or mesh\u0027s AI reacting with its own agenda during the crisis) and thread in one concrete, felt reference to the Schism as a world-defining rupture, not just neuretics/nanites texture."
+    }
+  ]
+}

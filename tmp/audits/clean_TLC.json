@@ -1,0 +1,76 @@
+{
+  "node_slug": "the-long-cut-019f3007",
+  "node_title": "The Long Cut",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 3,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "fail",
+      "Evidence": "The opening pages establish GLMZ through procedural competence and hardship accounting (suture counts, \u03A6 balances, power-stabilizer failures, antibiotic-strip math) but almost nothing is offered as strange-beautiful or sensuously alluring before the horror of the device/conspiracy lands \u2014 the prose states \u0027The chlorine smell rises, thin and sharp\u0027 and \u0027No ad-glare this deep\u0027 as flat facts rather than textures meant to seduce, and the world\u0027s wrongness (Nova-7 in the chest, Scalpel, NCID) arrives as plot mechanism, not as something the reader is pulled toward.",
+      "Fix": "Slow down early on one or two sensory, specific-to-GLMZ images (the orange backup light, the thirty-meter ad-glare line, the Thread\u0027s pods drifting like water droplets) and let them do seductive world-building work before the plot\u0027s machinery of device/conspiracy takes over, rather than treating the setting mostly as logistical backdrop for competence-porn and exposition."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "pass",
+      "Evidence": "The opening beats \u2014 Jude closing Rudeboi\u0027s chest, the failing power stabilizer she \u0027knows its moods\u0027 on, the flat inventory of the Unit\u0027s economics, the tray-count ritual \u2014 establish a grounded, lived-in world through routine labor before Renata\u0027s arrival introduces the plot; the surgery and clinic finances are treated as unremarkable daily grind, exactly the \u0027stopped being surprised by it\u0027 texture the rule asks for.",
+      "Fix": null
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Early proprietary terms are glossed cleanly in-voice (\u0027NREN relay \u2014 a person-to-person package network, no corpo registry\u0027; \u0027the Low \u2014 the ungoverned band\u0027), but by mid-node dense worldbuilding nouns (Scalpel Division, NCID, Cascade suppressor, GLMZ, Thread\u0027s pods, Emergency Provision 7) arrive with thinner or no orientation, e.g. \u0027the Cascade suppressor rides on his right hip\u0027 is explained only via a technical aside about neural mesh rather than a natural first-touch gloss, and \u0027the Thread\u0027s pods hang low\u0027 gets zero context at all.",
+      "Fix": "Give each newly introduced proprietary noun (Scalpel, GLMZ, the Thread) the same one-clause in-voice orientation the early terms get, so a first-time reader isn\u0027t left to infer institutional stakes from context alone in the second half."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "NREN is used with an immediate gloss (\u0027the NREN relay \u2014 a person-to-person package network, no corpo registry\u0027) which is fine, but NCID appears first as \u0027the NCID doesn\u0027t take interest below thirty-five\u0027 before its expansion \u0027Halcyon\u0027s Neuretic Crime Investigation Division\u0027 arrives in the very same sentence only as a trailing clause, and GLMZ is used repeatedly (\u0027the GLMZ medical licensing board\u0027, \u0027GLMZ Wartime Medical Authority\u0027, \u0027Any book could be a reader\u0027s first GLMZ book\u0027 per the rule) with no full-term expansion anywhere on the page.",
+      "Fix": "Add an in-voice gloss for GLMZ at its first use (e.g., \u0027the Greater Lake Michigan Zone\u0027s medical licensing board\u0027) and restructure the NCID sentence so the full name precedes the acronym rather than trailing it."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "warn",
+      "Evidence": "The single closest \u0027human crack\u0027 moment is when Renata says Stash\u0027s full name and Stash \u0027stands one second with the woman\u0027s hand loose on the table. One second is all she gives herself for the fact of being known,\u0027 immediately re-armoring with \u0027Then she starts working.\u0027 It\u0027s present but brief and functional-adjacent; most other emotional beats (the tunnel scene, Femi\u0027s fracture backstory, the throat-tightness after the fragment video) are filtered through competence and task-focus rather than a raw personal flash untethered to the plot mechanics.",
+      "Fix": "Let one of these beats \u2014 the named moment, or the throat-tightness watching Renata\u0027s video message \u2014 linger a sentence longer without pivoting immediately to procedure, so the reader gets an unguarded flicker of Jude as a person before she re-armors."
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The story ends on institutional procedural closure (\u0027She catalogs what she has. She begins.\u0027) paired with a wall-mounted memorial name and a pending board hearing \u2014 this resolves rather than adds weight; it\u0027s a forward-looking bureaucratic status update (license, subpoena, hearing date) followed by a tidy inventory-taking gesture that reads as thematic bookending rather than a single quiet cost-bearing beat.",
+      "Fix": "Cut the board/hearing exposition paragraph and end instead on one small, wordless physical gesture \u2014 Stash\u0027s hand on the shelf, or her eyes on the still-warm space where the device used to sit \u2014 that carries the cost without narrating the legal machinery forward."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The seemingly throwaway detail that Stash \u0027has held Nova devices before... but has never seen one in the chest\u0027 and her later musing about 412.7 being a dead channel read as pure worldbuilding/procedural texture on a first pass, but on rereading with knowledge of Fragment Six (Renata\u0027s direct address explaining she chose Stash for her post-Sable history) these clinical observations retroactively become clues to Renata\u0027s eleven-year engineering of this exact encounter \u2014 the device warmth \u0027the way a machine is warm when it has been running,\u0027 the anatomically wrong placement \u0027exactly because it\u0027s the last place you\u0027d look,\u0027 all pay off differently once the reader knows Renata built this specifically for Stash\u0027s hands to find. Similarly, Stash\u0027s habitual instrument-counting ritual (\u0027she counts the tray before she has decided to\u0027) is introduced as pure characterization but becomes thematically loaded once the reader understands the story\u0027s climax turns on completeness versus partial transmission \u2014 \u0027a partial transmission... can be recovered. A full one is complete\u0027 \u2014 retroactively coloring every earlier counting scene as a rehearsal for the story\u0027s central stakes.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The excerpt is a dense, plot-forward thriller sequence (Renata, the device, Scalpel/NCID standoff) built on the same foundational voice and texture established in the opening surgical scenes (Stash\u0027s clinical habits, counting instruments, Femi\u0027s steadiness) \u2014 nothing about the prose suggests a rewrite for newcomers; exposition like the Nova-7 branding, the frequency history, and Stash\u0027s Sable backstory is delivered through natural investigative beats (Chit\u0027s analyzer, her own memory) rather than inserted signposts, so new readers are onboarded via the same causal chain returning readers would enjoy.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "warn",
+      "Evidence": "(evaluation failed)",
+      "Fix": null
+    }
+  ]
+}

@@ -44,7 +44,7 @@ public class BeatEventSummaryService
 {
     private readonly IDbContextFactory<StreetSamuraiDbContext> dbFactory;
     private readonly ILlmService llm;
-    private readonly IPathProvider paths;
+    private readonly SettingsService settings;
     private readonly ILogger<BeatEventSummaryService> log;
 
     private const int PerBeatClipChars = 12_000;
@@ -54,12 +54,12 @@ public class BeatEventSummaryService
     public BeatEventSummaryService(
         IDbContextFactory<StreetSamuraiDbContext> dbFactory,
         ILlmService llm,
-        IPathProvider paths,
+        SettingsService settings,
         ILogger<BeatEventSummaryService> log)
     {
         this.dbFactory = dbFactory;
         this.llm = llm;
-        this.paths = paths;
+        this.settings = settings;
         this.log = log;
     }
 
@@ -236,10 +236,12 @@ Output STRICT JSON, no fences, no commentary:
         return (nodeCode, node.Title, entries);
     }
 
-    /// <summary>Writes the current DB state to docs/nodes/{CODE}-Events.txt — deliberately
-    /// NOT .md (MarkdownFileService's DCM sync only globs *.md under docs/nodes, matching the
-    /// existing {CODE}-Glossary.htm/.json/.txt precedent) so this artifact can never be pinned
-    /// into prose-generation context. Read-only, no LLM call.</summary>
+    /// <summary>Writes the current DB state to the book's own publish folder (same
+    /// &lt;universe export dir&gt;/&lt;Series…&gt;/&lt;Title&gt; layout as description.txt and
+    /// {CODE}-dcm-viz.htm — see ExportPathResolver/SynopsisExportService.NodePublishDirAsync),
+    /// not docs/nodes — this artifact is a reader-facing QA export, not book-bible/DCM
+    /// material, so it belongs beside the manuscript exports it's meant to accompany.
+    /// Read-only, no LLM call.</summary>
     public async Task<string> ExportTxtAsync(string slugOrCode, CancellationToken ct = default)
     {
         var (nodeCode, title, entries) = await GetEventListAsync(slugOrCode, ct);
@@ -251,15 +253,48 @@ Output STRICT JSON, no fences, no commentary:
         sb.AppendLine();
         foreach (var e in entries)
         {
-            var pov = e.Pov ?? "";
-            var label = $"[SK{e.SortKey,-6}{pov,-20}]";
+            var pov = PovFirstName(e.Pov);
+            var label = $"[SK{e.SortKey,-6}{pov,-10}]";
             sb.AppendLine($"{label}  {e.EventSummary ?? "(not yet generated)"}");
         }
 
-        var dir = Path.Combine(paths.DataRoot, "docs", "nodes");
+        var dir = await NodePublishDirAsync(slugOrCode, ct);
         var path = Path.Combine(dir, $"{nodeCode}-Events.txt");
         await GeneratedFileWriter.WriteReadOnlyAsync(path, sb.ToString(), ct);
         return path;
+    }
+
+    /// <summary>Same publish-folder resolution as SynopsisExportService.NodePublishDirAsync /
+    /// DcmVizCli — &lt;universe export dir&gt;/&lt;Series…&gt;/&lt;Title&gt;, byte-for-byte the
+    /// exporters' layout (description.txt, {CODE}-dcm-viz.htm, story-synopsis.txt all live
+    /// here).</summary>
+    private async Task<string> NodePublishDirAsync(string slugOrCode, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(
+            n => n.Slug == slugOrCode || (n.NodeCode != null && n.NodeCode.ToUpper() == slugOrCode.ToUpper()), ct)
+            ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
+        var baseDir = settings.GetExportDirectory(universeSlug);
+        var (nodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct);
+        return nodeDir;
+    }
+
+    private static readonly HashSet<string> PovTitlePrefixes = new(StringComparer.OrdinalIgnoreCase)
+        { "Dame", "Sir", "Lord", "Lady", "Canon", "Sergeant", "Sgt", "Sgt.", "Captain",
+          "King", "Queen", "Knight", "Doctor", "Dr", "Dr.", "Warrior" };
+
+    /// <summary>Display-only: the export's POV column shows the narrator's given name alone
+    /// (e.g. "Lyra", not "Dame Lyra Ocipheus-Athen-Moor") — this never touches the underlying
+    /// BeatEntityPresence.EntityName data, which keeps the full form for every other consumer.</summary>
+    private static string PovFirstName(string? fullName)
+    {
+        if (string.IsNullOrWhiteSpace(fullName)) return "";
+        var tokens = fullName.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        var idx = 0;
+        if (tokens.Length > 1 && PovTitlePrefixes.Contains(tokens[0])) idx = 1;
+        return tokens.Length > idx ? tokens[idx] : fullName;
     }
 
     private static List<List<(Guid Id, string Text, string Chapter)>> BuildBatches(

@@ -1,0 +1,76 @@
+{
+  "node_slug": "magenta-gunmetal-019f00a6",
+  "node_title": "Magenta \u0026 Gunmetal",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 2,
+  "advisory_count": 3,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "warn",
+      "Evidence": "The opening magenta-bar imagery and later texture (the pink wall AI, the badge colors, the crane-arm firefight, Boiler\u0027s tactile relationship to structures) genuinely seduce, but the piece is dominated by dense operational plotting \u2014 payment tallies, timelines, network layers \u2014 that keeps pulling focus back to procedure rather than sensory allure once the extraction begins.",
+      "Fix": "Trim some of the mid-to-late logistics exposition (the escrow mechanics, the multiple client-reveal justifications) and replace it with more sustained sensory/strange-beautiful GLMZ texture like the opening magenta-bar passage, so seduction persists past the first scene instead of yielding almost entirely to plot machinery."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens directly on plot-critical action \u2014 Rook watching a bar, immediately followed by a client meeting where a five-person extraction job is pitched \u2014 with no grounded, plotless entry beat of someone simply moving through the city before the machinery engages.",
+      "Fix": "Precede the Gault meeting with a short beat of Rook navigating an ordinary piece of the city (a commute, a transaction, a routine errand) where the world\u0027s texture is felt before any job talk begins."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Most terms (Reibo flechette pistol, Greymark Unseen, Level IV fabrication suite, Casque \u0026 Veil integration layer) get an efficient in-voice gloss, but \u0027CorpoNations\u0027 itself is never actually glossed on first use \u2014 it appears only later (\u0027outside CorpoNation jurisdiction\u0027) assuming the reader already parses it as a governing bureaucratic entity, and \u0027Z3/Z5/GLMZ\u0027 zone geography is deployed dozens of times before any orienting cue beyond \u0027the usual Z3 pretension\u0027 and \u0027the real GLMZ\u0027 \u2014 a phrase that gestures at insider contrast without telling a newcomer what tier or hierarchy these zones represent.",
+      "Fix": "Add one grounding clause early \u2014 e.g. when Rook first crosses zone lines \u2014 that lets a newcomer infer the Z-numbering is a wealth/security gradient across the GLMZ sprawl, phrased as her own habitual read of a block rather than as narration stepping outside her voice."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "\u0027GLMZ\u0027 appears repeatedly (e.g., \u0027This was the real GLMZ\u0027 and \u0027every biochemist in the GLMZ\u0027) with no in-voice expansion anywhere in the text; similarly \u0027ISB\u0027 is used (\u0027ISB regulatory compliance,\u0027 \u0027the 2218 Infrastructure Safety Mandate\u0027) though \u0027Infrastructure Safety Bureau\u0027 is given before it, GLMZ never gets that treatment.",
+      "Fix": "Add an in-voice gloss the first time \u0027GLMZ\u0027 appears, e.g. \u0027the Greater Lake Metro Zone, GLMZ to anyone who\u0027d lived here more than a week,\u0027 before using the bare acronym thereafter."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The scene at the diner where Rook counts the cash but privately fixates on \u0027the woman she hadn\u0027t brought and couldn\u0027t stop seeing\u0027 \u2014 and earlier, saying Wennick\u0027s name aloud \u0027for the first time in three years\u0027 to Vox \u2014 gives a controlled but genuine crack: grief and guilt surfacing through the armor of competence.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The ending does land a quiet final gesture \u2014 Rook \u0027let the count stay one short,\u0027 pocketing the money while refusing to close the ledger on the Bloom Quarter woman \u2014 but it\u0027s buried under paragraphs of plot-resolution accounting (Vox\u0027s market summary, Adalemo\u0027s status, escrow receipt) that read as epilogue-tidying rather than a single held beat, and the closing lines (\u0027the list that was four names and still had room for more... she made herself stop looking\u0027) tip toward a hopeful/forward-looking note rather than pure weight.",
+      "Fix": "Cut the market-summary and status-update paragraphs entirely and end on the unresolved count \u2014 the coffee cup, the twelve francs, the lake \u2014 without the coda about the crew list and \u0027next time,\u0027 so the last image is the cost she\u0027s carrying rather than a gesture toward future jobs."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The magenta motif (Axiom\u0027s ad wash) is planted purely as scene color on first read, but retroactively colors the entire betrayal \u2014 the bar \u0027running magenta\u0027 before Rook even knows Axiom is involved, and later the compound wearing \u0027the brand the way the brand wanted to be worn\u0027 pays off differently once the reader knows Ohara has been steering events from inside that color scheme for fourteen months. Similarly, Rook\u0027s habitual door-counting and the Wennick references work as pure characterization on a first pass but reread as direct foreshadowing of the climactic choice to look back at Gault and to hang from a departing skid rather than let a door fail someone again.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose reads as a fully-realized standalone thriller with its own complete arc (job \u2192 betrayal \u2192 storm finale \u2192 resolution), and worldbuilding terms like \u0027Z3/Z5\u0027, \u0027neuretics\u0027, \u0027Ghost/Husk/Shell\u0027, and \u0027PEREGRINE\u0027 are consistently explained in-line at first use (e.g. \u0027The thing nobody outside the trade understood about Ghosts was the cost of admission...\u0027) rather than assuming prior familiarity.",
+      "Fix": null
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "pass",
+      "Evidence": "The story braids all five pillars into functioning texture: Okafor and Vox running AI agents with personality and stakes (\u0027The wall believed it knew what noise looked like\u0027), nanites as everyday economy and body-repair infrastructure (Ohara\u0027s formula literally encoded in her neural substrate, the F8,400 Axiom treatment ad), neuretics stratifying competence and cost (Diallo\u0027s commercial Atlas-grade vs. Vox\u0027s archology-tier \u0027visible was the point\u0027, Okafor\u0027s bandwidth-driven detachment), CorpoNations as the real law with PEREGRINE as their extralegal enforcement arm operating beyond any police (since dissolved), and gray zones like the Bloom Quarter and the Lake Platform\u0027s Meridian Charter waters existing explicitly outside CorpoNation jurisdiction.",
+      "Fix": "The Schism itself is never mentioned even obliquely \u2014 no reference to reality-warping aftermath, physics anomalies, or the rift as a lived environmental/historical fact, so a cold reader gets four pillars solidly but could finish the story without sensing the Schism exists at all."
+    }
+  ]
+}

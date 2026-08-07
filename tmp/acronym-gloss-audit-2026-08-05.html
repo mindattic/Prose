@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"></head><body>
+<title>GLMZ/SCRY Acronym-Gloss Audit -- Blocking Fails</title>
+
+<style>
+  :root {
+    --bg: #EDEEF2; --surface: #FFFFFF; --surface-alt: #F4F5F9;
+    --border: #D0D3DC; --border-strong: #B0B5C3;
+    --text-primary: #1B202E; --text-secondary: #5C6275; --text-muted: #8A90A0;
+    --accent: #3355CC; --accent-light: #E8EDF9; --accent-text: #2244AA;
+    --selected-bg: #EEF2FC; --selected-border: #3355CC;
+    --mono: 'Courier New', 'Lucida Console', monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0D1019; --surface: #171C2E; --surface-alt: #1E2438;
+      --border: #2C3248; --border-strong: #3D4560;
+      --text-primary: #E2E6F0; --text-secondary: #8A93AA; --text-muted: #5C6480;
+      --accent: #6B8FFF; --accent-light: #1C254A; --accent-text: #8AABFF;
+      --selected-bg: #1A2444; --selected-border: #6B8FFF;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0D1019; --surface: #171C2E; --surface-alt: #1E2438;
+    --border: #2C3248; --border-strong: #3D4560;
+    --text-primary: #E2E6F0; --text-secondary: #8A93AA; --text-muted: #5C6480;
+    --accent: #6B8FFF; --accent-light: #1C254A; --accent-text: #8AABFF;
+    --selected-bg: #1A2444; --selected-border: #6B8FFF;
+  }
+  :root[data-theme="light"] {
+    --bg: #EDEEF2; --surface: #FFFFFF; --surface-alt: #F4F5F9;
+    --border: #D0D3DC; --border-strong: #B0B5C3;
+    --text-primary: #1B202E; --text-secondary: #5C6275; --text-muted: #8A90A0;
+    --accent: #3355CC; --accent-light: #E8EDF9; --accent-text: #2244AA;
+    --selected-bg: #EEF2FC; --selected-border: #3355CC;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text-primary); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.6; padding: 40px 20px 80px; }
+  .container { max-width: 720px; margin: 0 auto; }
+  .header { margin-bottom: 36px; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .header h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 26px; font-weight: normal; line-height: 1.25; text-wrap: balance; margin-bottom: 10px; }
+  .header-meta { font-size: 13px; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; }
+  .progress-bar { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--accent); border-radius: 2px; width: 0%; transition: width 0.3s ease; }
+  .progress-label { margin-top: 6px; font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .question { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; margin-bottom: 18px; overflow: hidden; }
+  .q-header { padding: 18px 22px 16px; border-bottom: 1px solid var(--border); }
+  .q-tag { font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-text); background: var(--accent-light); padding: 2px 8px; border-radius: 3px; display: inline-block; margin-bottom: 9px; font-family: var(--mono); }
+  .q-title { font-family: Georgia, 'Times New Roman', serif; font-size: 16.5px; font-weight: normal; line-height: 1.35; text-wrap: balance; }
+  .q-body { padding: 16px 22px 0; }
+  .q-context { font-size: 13.5px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 12px; }
+  .options { display: flex; flex-direction: column; gap: 7px; padding: 14px 22px 20px; }
+  .opt { display: flex; align-items: flex-start; gap: 10px; padding: 10px 13px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer; transition: border-color 0.12s, background 0.12s; border-left-width: 3px; border-left-color: transparent; }
+  .opt:hover { border-color: var(--border-strong); background: var(--surface-alt); border-left-color: transparent; }
+  .opt.selected { border-color: var(--selected-border); background: var(--selected-bg); border-left-color: var(--selected-border); }
+  .opt input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+  .opt-dot { flex-shrink: 0; width: 15px; height: 15px; border: 2px solid var(--border-strong); border-radius: 50%; margin-top: 3px; display: flex; align-items: center; justify-content: center; transition: border-color 0.12s; }
+  .opt.selected .opt-dot { border-color: var(--accent); background: var(--accent); }
+  .opt.selected .opt-dot::after { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #fff; }
+  .opt-key { flex-shrink: 0; font-family: var(--mono); font-size: 11.5px; font-weight: 700; color: var(--accent-text); width: 14px; margin-top: 2px; }
+  .opt-text { font-size: 13.5px; color: var(--text-primary); line-height: 1.5; }
+  .opt-text em { font-style: normal; color: var(--text-secondary); font-size: 13px; }
+  .export-section { margin-top: 28px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .export-btn { background: var(--accent); color: #fff; border: none; padding: 10px 26px; font-size: 14px; font-weight: 600; border-radius: 5px; cursor: pointer; letter-spacing: 0.02em; transition: opacity 0.12s; font-family: inherit; }
+  .export-btn:hover:not(:disabled) { opacity: 0.85; }
+  .export-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+  .export-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .export-status { font-size: 13px; color: var(--text-muted); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="container">
+
+  <header class="header">
+
+    <div class="eyebrow">StreetSamurai · Canon Sync</div>
+
+    <h1>GLMZ/SCRY Acronym-Gloss Audit -- Blocking Fails</h1>
+
+    <div class="header-meta">
+
+      <span>2026-08-05</span>
+
+      <span>27 questions</span>
+
+    </div>
+
+    <div class="progress-bar"><div class="progress-fill" id="pf"></div></div>
+
+    <div class="progress-label"><span id="pc">0</span> of 27 answered</div>
+
+  </header>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">ATTE-ACR · BeatText</div>
+
+      <div class="q-title">ATTE (Attendance) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">'GLMZ' appears repeatedly (e.g., 'no instrument in the GLMZ is pointed at,' 'every corp contract in the city' vs. 'across the GLMZ') with no in-voice expansion anywhere in the text; 'AAMA' is used freely on first appearance ('the Anomalous Activity Monitoring Authority')—which is properly glossed—but 'GLMZ' never receives the same treatment.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="oatteacra">
+
+        <input type="radio" name="atteacr" value="a" onchange="pick('ATTE-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;no instrument in the Great Lakes Metropolitan Zone -- the GLMZ, everyone called it -- was pointed at that frequency.&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="oatteacrb">
+
+        <input type="radio" name="atteacr" value="b" onchange="pick('ATTE-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="oatteacrc">
+
+        <input type="radio" name="atteacr" value="c" onchange="pick('ATTE-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">BCODA-GLS · BeatText</div>
+
+      <div class="q-title">BCODA (Bushido Coda) -- gloss_in_voice: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Terms like 'CorpoNations,' 'GLMZ,' 'neuretics,' 'Splicer,' 'Φ' (currency), 'Praxis,' 'Carrion,' and 'the Ghost Period' are dropped in with zero orientation — e.g. 'the CorpoNation property registry sometime in the 2190s' or 'GLMZ night' assumes the reader already knows what these zones/factions are, and later terms like 'Atlas NeoCortex,' 'the sixty-four,' and 'the aperture' pile up in dense lore-exposition paragraphs that read as pure info-dump rather than in-voice gloss.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="obcodaglsa">
+
+        <input type="radio" name="bcodagls" value="a" onchange="pick('BCODA-GLS','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone -- GLMZ -- night&quot; (plus gloss E.L.F. at its first use, e.g. &quot;the E.L.F. signal -- whatever Emergent Life Form protocol Ledger's people used for it --&quot;).</em></span>
+
+      </label>
+
+      <label class="opt" id="obcodaglsb">
+
+        <input type="radio" name="bcodagls" value="b" onchange="pick('BCODA-GLS','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="obcodaglsc">
+
+        <input type="radio" name="bcodagls" value="c" onchange="pick('BCODA-GLS','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">BCODA-ACR · BeatText</div>
+
+      <div class="q-title">BCODA (Bushido Coda) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">GLMZ appears repeatedly ('the GLMZ night', 'any GLMZ block') with no full-term gloss anywhere in the story, and the acronym E.L.F. is used ('The E.L.F. signal, the one Ledger had picked up') without ever spelling out what it stands for.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="obcodaacra">
+
+        <input type="radio" name="bcodaacr" value="a" onchange="pick('BCODA-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone -- GLMZ -- night&quot; (plus gloss E.L.F. at its first use, e.g. &quot;the E.L.F. signal -- whatever Emergent Life Form protocol Ledger's people used for it --&quot;).</em></span>
+
+      </label>
+
+      <label class="opt" id="obcodaacrb">
+
+        <input type="radio" name="bcodaacr" value="b" onchange="pick('BCODA-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="obcodaacrc">
+
+        <input type="radio" name="bcodaacr" value="c" onchange="pick('BCODA-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">CxC-ACR · BeatText</div>
+
+      <div class="q-title">CxC (Crimson &amp; Chrome) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Multiple acronyms appear with no in-voice expansion ever given: 'GLMZ' (used repeatedly, e.g. 'the vacuum rail that ran GLMZ's spine' and 'GLMZ doesn't stop being what it is'), 'NRST' ('the gray-market balance from the NRST crack'), and 'QUANTA' (used as a bare term throughout, e.g. 'no QUANTA mark' and 'a QUANTA figure that drops') never receive a full-term gloss before or after first use.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="ocxcacra">
+
+        <input type="radio" name="cxcacr" value="a" onchange="pick('CxC-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the vacuum rail that ran the Great Lakes Metropolitan Zone's spine -- GLMZ, if you wanted the letters --&quot;. Also gloss NRST and QUANTA at first use.</em></span>
+
+      </label>
+
+      <label class="opt" id="ocxcacrb">
+
+        <input type="radio" name="cxcacr" value="b" onchange="pick('CxC-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="ocxcacrc">
+
+        <input type="radio" name="cxcacr" value="c" onchange="pick('CxC-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">DWIACE-ACR · BeatText</div>
+
+      <div class="q-title">DWIACE (Death Whispers in a Cat's Ear) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">The bare acronym 'GLMZ' is used with an in-line gloss ('Great Lakes Metropolitan Zone — GLMZ on every form') which is fine, but 'E.L.F.' appears multiple times (e.g., 'The E.L.F. is absent from it') with no expansion anywhere in the text, and 'CorpoNation' is used as if self-explanatory without ever being unpacked as an acronym or term for a first-time reader.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="odwiaceacra">
+
+        <input type="radio" name="dwiaceacr" value="a" onchange="pick('DWIACE-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>GLMZ is already glossed correctly. Gloss E.L.F. at its first bare use instead.</em></span>
+
+      </label>
+
+      <label class="opt" id="odwiaceacrb">
+
+        <input type="radio" name="dwiaceacr" value="b" onchange="pick('DWIACE-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="odwiaceacrc">
+
+        <input type="radio" name="dwiaceacr" value="c" onchange="pick('DWIACE-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">ICFI-ACR · BeatText</div>
+
+      <div class="q-title">ICFI (It Came From Iowa) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">&quot;South meant deeper into the Zone — the Great Lakes corridor, more buyers, fewer questions&quot; is offered as gloss for 'the GLMZ run,' but the acronym 'GLMZ' itself appears bare in that same sentence and is never expanded into its literal full term before or after use.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="oicfiacra">
+
+        <input type="radio" name="icfiacr" value="a" onchange="pick('ICFI-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone run -- GLMZ, deeper into the corridor --&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="oicfiacrb">
+
+        <input type="radio" name="icfiacr" value="b" onchange="pick('ICFI-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="oicfiacrc">
+
+        <input type="radio" name="icfiacr" value="c" onchange="pick('ICFI-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">IxS-LGL · BeatText</div>
+
+      <div class="q-title">IxS (Iron &amp; Silk) -- lighter_regloss: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Proprietary terms like 'Crimson,' 'Tidewell,' 'Helix facilities,' 'Phase 0/Phase 1,' 'the Protocol,' 'the Stems,' and 'Old Harbor' are dropped in with zero re-glossing context — e.g., 'After Crimson the count had stopped running backward' and 'the other two Helix facilities still out there, still someone else's problem' assume the reader already carries full definitions rather than re-teaching them through context.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="oixslgla">
+
+        <input type="radio" name="ixslgl" value="a" onchange="pick('IxS-LGL','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;all Great Lakes Metropolitan Zone work -- GLMZ work, everyone just said --&quot;. Also gloss NGRA: &quot;Former NGRA -- National Guard Reserve Auxiliary, or whatever cover the acronym still carried --&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="oixslglb">
+
+        <input type="radio" name="ixslgl" value="b" onchange="pick('IxS-LGL','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="oixslglc">
+
+        <input type="radio" name="ixslgl" value="c" onchange="pick('IxS-LGL','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">IxS-ACR · BeatText</div>
+
+      <div class="q-title">IxS (Iron &amp; Silk) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">NGRA appears in Ekow's introduction ('Ekow Ato. Former NGRA. Twelve years independent operations...') with no full-term expansion anywhere before or after; similarly GLMZ recurs repeatedly ('all GLMZ work', 'GLMZ afternoons') without ever being spelled out on the page.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="oixsacra">
+
+        <input type="radio" name="ixsacr" value="a" onchange="pick('IxS-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;all Great Lakes Metropolitan Zone work -- GLMZ work, everyone just said --&quot;. Also gloss NGRA: &quot;Former NGRA -- National Guard Reserve Auxiliary, or whatever cover the acronym still carried --&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="oixsacrb">
+
+        <input type="radio" name="ixsacr" value="b" onchange="pick('IxS-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="oixsacrc">
+
+        <input type="radio" name="ixsacr" value="c" onchange="pick('IxS-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">M101-ACR · BeatText</div>
+
+      <div class="q-title">M101 (M-101) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">The acronym 'M-101' (and later 'M-774', 'M-1018883') appears immediately in dialogue — 'Designation: M-101. Catalog entry: M-1018883' and Declan's correction 'My name... is M-101' — with no full term ever glossed for what 'M' stands for; 'Myrmidon' is later used as if synonymous but the letter-number designation itself is never explained as an abbreviation of anything.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="om101acra">
+
+        <input type="radio" name="m101acr" value="a" onchange="pick('M101-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>Before or at the first use of 'M-101', have a handler or Declan's own reasoning spell out the full designation term (e.g., 'Myrmidon unit one-oh-one') so the acronym-like catalog code is glossed in-voice prior to its bare use.</em></span>
+
+      </label>
+
+      <label class="opt" id="om101acrb">
+
+        <input type="radio" name="m101acr" value="b" onchange="pick('M101-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="om101acrc">
+
+        <input type="radio" name="m101acr" value="c" onchange="pick('M101-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">MNEMO-GLS · BeatText</div>
+
+      <div class="q-title">MNEMO (Mnemosync) -- gloss_in_voice: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Terms like 'CorpoNations,' 'neuretics,' 'Batch 44-C,' 'Zone 5,' 'the Seam,' 'Waxwing overlay,' and 'GLMZ' are dropped in without any in-voice orientation — e.g. 'Second-generation neuretics — you could see it in the old mount scar behind his ear' assumes the reader already knows what neuretics are and does, while 'Waxwing AR glowed along the public edges' and 'the civic AR died in the gap' arrive as bare labels with no grounding gloss for a first-time reader.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="omnemoglsa">
+
+        <input type="radio" name="mnemogls" value="a" onchange="pick('MNEMO-GLS','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone's health data -- GLMZ paperwork, same as anywhere --&quot;. Also gloss AR: &quot;the civic augmented-reality overlay -- AR -- died in the gap.&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="omnemoglsb">
+
+        <input type="radio" name="mnemogls" value="b" onchange="pick('MNEMO-GLS','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="omnemoglsc">
+
+        <input type="radio" name="mnemogls" value="c" onchange="pick('MNEMO-GLS','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">MNEMO-ACR · BeatText</div>
+
+      <div class="q-title">MNEMO (Mnemosync) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Multiple acronyms appear with no expansion anywhere on the page: 'GLMZ' is used repeatedly (e.g., 'Every book could be a reader's first GLMZ book' framing aside, but in-text: 'Public GLMZ health data through Infrastructure Authority portals' and 'the smell before rain on the loading dock at GLMZ') with no full term ever glossed; 'AR' appears as 'no Waxwing overlay either — the civic AR died in the gap' with no expansion of 'augmented reality' or in-voice term given first.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="omnemoacra">
+
+        <input type="radio" name="mnemoacr" value="a" onchange="pick('MNEMO-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone's health data -- GLMZ paperwork, same as anywhere --&quot;. Also gloss AR: &quot;the civic augmented-reality overlay -- AR -- died in the gap.&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="omnemoacrb">
+
+        <input type="radio" name="mnemoacr" value="b" onchange="pick('MNEMO-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="omnemoacrc">
+
+        <input type="radio" name="mnemoacr" value="c" onchange="pick('MNEMO-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">MxG-ACR · BeatText</div>
+
+      <div class="q-title">MxG (Magenta &amp; Gunmetal) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">'GLMZ' appears repeatedly (e.g., 'This was the real GLMZ' and 'every biochemist in the GLMZ') with no in-voice expansion anywhere in the text; similarly 'ISB' is used ('ISB regulatory compliance,' 'the 2218 Infrastructure Safety Mandate') though 'Infrastructure Safety Bureau' is given before it, GLMZ never gets that treatment.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="omxgacra">
+
+        <input type="radio" name="mxgacr" value="a" onchange="pick('MxG-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the real Great Lakes Metropolitan Zone -- the GLMZ, to anyone who'd lived here more than a week --&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="omxgacrb">
+
+        <input type="radio" name="mxgacr" value="b" onchange="pick('MxG-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="omxgacrc">
+
+        <input type="radio" name="mxgacr" value="c" onchange="pick('MxG-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">NxR-ACR · BeatText</div>
+
+      <div class="q-title">NxR (Neon &amp; Rust) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Acronyms like 'NSB'-style terms appear bare with no prior full-term gloss: 'GLMZ' is used repeatedly (e.g., 'At that hour the GLMZ was all lit surface') with no expansion ever given, and 'ArcSec' appears ('A pair of ArcSec sat on a cart') with no full term preceding it, as does 'PEREGRINE' functioning like an org/program acronym-style proper noun introduced bare ('whether PEREGRINE had gone quiet').</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="onxracra">
+
+        <input type="radio" name="nxracr" value="a" onchange="pick('NxR-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone -- the GLMZ -- was all lit surface&quot;. Also gloss ArcSec: &quot;Arcturus Security -- ArcSec -- sat on a cart.&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="onxracrb">
+
+        <input type="radio" name="nxracr" value="b" onchange="pick('NxR-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="onxracrc">
+
+        <input type="radio" name="nxracr" value="c" onchange="pick('NxR-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">PXL-ACR · BeatText</div>
+
+      <div class="q-title">PXL (Pixel) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">'GLMZ' is used repeatedly throughout (e.g., 'She'd been planning the move for a year... GLMZ — the biggest stretch of gray-zone machinery in the northern hemisphere') without ever giving its full expanded term; similarly 'ArcSec' appears ('A Scalpel crew didn't live this far outside its own territory... ArcSec didn't keep that quiet') with no expansion at first use, and 'CorpoNation' is treated as a known compound term without explanation.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="opxlacra">
+
+        <input type="radio" name="pxlacr" value="a" onchange="pick('PXL-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone -- GLMZ, everyone called it -- the biggest stretch of gray-zone machinery in the northern hemisphere&quot;. Also gloss ArcSec.</em></span>
+
+      </label>
+
+      <label class="opt" id="opxlacrb">
+
+        <input type="radio" name="pxlacr" value="b" onchange="pick('PXL-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="opxlacrc">
+
+        <input type="radio" name="pxlacr" value="c" onchange="pick('PXL-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">RTR-ACR · BeatText</div>
+
+      <div class="q-title">RTR (Read the Room) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Multiple acronyms/initialisms appear with no in-voice expansion at first use: 'AR layer' ('his overlay ran empty'), 'PA' ('a PA held together by hope'), 'NSB'-style tech term 'The Pulse' is fine as a proper noun but 'CDW submachine gun' is dropped as a bare label with no gloss of what CDW stands for, and 'FB-7' on the Fenris Ballistics Howl is presented as a model code with no expansion.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="ortracra">
+
+        <input type="radio" name="rtracr" value="a" onchange="pick('RTR-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>Introduce each abbreviation the first time in-voice with its full term glossed naturally, e.g. 'a public-address system—a PA—held together by hope' and 'a caseless-defense-weapon carbine, a CDW, slung across his front,' before ever using the bare initials again.</em></span>
+
+      </label>
+
+      <label class="opt" id="ortracrb">
+
+        <input type="radio" name="rtracr" value="b" onchange="pick('RTR-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="ortracrc">
+
+        <input type="radio" name="rtracr" value="c" onchange="pick('RTR-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">SRZR-ACR · BeatText</div>
+
+      <div class="q-title">SRZR (Steppin' Razor) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">'TESSERA was the Consensus civic net' is glossed properly, but numerous acronyms appear bare with no prior expansion at all: 'GLMZ' is used ('the first GLMZ ground she'd touched') with no expansion anywhere on the page, and 'MO-556' and 'GG-9' are given as if the reader already knows the naming convention, while 'Halcyon Combine, Strategic Resources' introduces 'OBERON' as a bare name with no expansion since it's presented as a proper name, not flagged as an acronym.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="osrzracra">
+
+        <input type="radio" name="srzracr" value="a" onchange="pick('SRZR-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the first Great Lakes Metropolitan Zone ground she'd touched -- GLMZ ground --&quot;. MO-556/GG-9 read as model numbers, not acronyms -- no fix needed for those.</em></span>
+
+      </label>
+
+      <label class="opt" id="osrzracrb">
+
+        <input type="radio" name="srzracr" value="b" onchange="pick('SRZR-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="osrzracrc">
+
+        <input type="radio" name="srzracr" value="c" onchange="pick('SRZR-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">TEST-GLS · BeatText</div>
+
+      <div class="q-title">TEST (Testament) -- gloss_in_voice: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Terms like 'Strix Harvest Frame,' 'neuretics,' 'CorpoNations,' 'Halcyon,' 'the Spine,' and 'perifoot' are dropped in without any in-voice orientation ('He ran the Manowar status through his neuretics, the read coming up clean' assumes the reader already knows what neuretics and Manowar authorization mean), while other terms like 'Manowar' and 'turret cat' later get small explanatory asides that read as inconsistent gloss placement rather than a deliberate technique.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="otestglsa">
+
+        <input type="radio" name="testgls" value="a" onchange="pick('TEST-GLS','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>Give each proprietary term (neuretics, the Harvest Frame/Manowar naming inconsistency, CorpoNations, the Spine) one brief sensory or functional clause at first mention, in Bear's own rhythm, the way 'turret cat' is later explained through the cat's servo-smooth head swivel, and resolve whether the frame is called Strix Harvest Frame or Manowar so a first-time reader isn't left assuming two separate devices.</em></span>
+
+      </label>
+
+      <label class="opt" id="otestglsb">
+
+        <input type="radio" name="testgls" value="b" onchange="pick('TEST-GLS','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="otestglsc">
+
+        <input type="radio" name="testgls" value="c" onchange="pick('TEST-GLS','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">TEST-ACR · BeatText</div>
+
+      <div class="q-title">TEST (Testament) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">'NS-7' appears repeatedly (e.g., 'the NS-7 had been compensating for thirty-seven minutes') with only a vague relative clause about a relay implant, never a clear in-voice full-term expansion; similarly 'IRB' is used ('the IRB panel date') before any gloss, and 'ArcSec' appears bare with no expansion at all.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="otestacra">
+
+        <input type="radio" name="testacr" value="a" onchange="pick('TEST-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>Introduce each acronym once with its full name glossed in-voice at first use—e.g., 'the Neural Stabilization relay, the NS-7, that kept his brainstem firing'; 'the Internal Review Board—the IRB—panel date'; and give ArcSec a full-term first mention before using the bare acronym.</em></span>
+
+      </label>
+
+      <label class="opt" id="otestacrb">
+
+        <input type="radio" name="testacr" value="b" onchange="pick('TEST-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="otestacrc">
+
+        <input type="radio" name="testacr" value="c" onchange="pick('TEST-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">TLC-ACR · BeatText</div>
+
+      <div class="q-title">TLC (The Long Cut) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">NREN is used with an immediate gloss ('the NREN relay — a person-to-person package network, no corpo registry') which is fine, but NCID appears first as 'the NCID doesn't take interest below thirty-five' before its expansion 'Halcyon's Neuretic Crime Investigation Division' arrives in the very same sentence only as a trailing clause, and GLMZ is used repeatedly ('the GLMZ medical licensing board', 'GLMZ Wartime Medical Authority', 'Any book could be a reader's first GLMZ book' per the rule) with no full-term expansion anywhere on the page.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="otlcacra">
+
+        <input type="radio" name="tlcacr" value="a" onchange="pick('TLC-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone's medical licensing board&quot;. Also reorder NCID: &quot;Halcyon's Neuretic Crime Investigation Division -- the NCID -- doesn't take interest below thirty-five&quot; (full term before acronym, not trailing).</em></span>
+
+      </label>
+
+      <label class="opt" id="otlcacrb">
+
+        <input type="radio" name="tlcacr" value="b" onchange="pick('TLC-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="otlcacrc">
+
+        <input type="radio" name="tlcacr" value="c" onchange="pick('TLC-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">TRUCE-ACR · BeatText</div>
+
+      <div class="q-title">TRUCE (Three Day Truce) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Multiple acronyms and proper nouns treated as established jargon appear without any in-voice expansion: 'NSB'-style terms aren't present, but functional equivalents like 'House Champion round,' 'Sinter office,' 'Catalyst infusion,' and especially unexplained world-terms like 'Sinterkin' and 'Sinter approach' are used as if the reader already knows the underlying system; more critically, no acronym literally appears, but the rule's spirit—never assume prior familiarity—is violated by terms like 'Catalyst' and 'Sinter' being dropped as proper nouns with capitalized specificity and no definition given anywhere in the excerpt.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="otruceacra">
+
+        <input type="radio" name="truceacr" value="a" onchange="pick('TRUCE-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice once SK questions are answered <em>Introduce any specialized capitalized system-term (e.g., 'Catalyst infusion,' 'Sinter,' 'Sinterkin') with a brief in-voice gloss the first time it appears, using whatever terminology the Sinterkin survey locks in.</em></span>
+
+      </label>
+
+      <label class="opt" id="otruceacrb">
+
+        <input type="radio" name="truceacr" value="b" onchange="pick('TRUCE-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="otruceacrc">
+
+        <input type="radio" name="truceacr" value="c" onchange="pick('TRUCE-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">TWD-ACR · BeatText</div>
+
+      <div class="q-title">TWD (The Way Down) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Multiple acronyms appear without any in-voice expansion before their bare use: 'UBC' is mentioned as 'Universal Basic Credit' but only parenthetically after the term already reads like an aside rather than a clean gloss ('drinking coffee that cost more than his monthly UBC — the Universal Basic Credit that used to be the whole of his money'), which inverts the required order (acronym first, then gloss), and 'NSB'-style terms like 'Φ' (used repeatedly as a bare symbol/unit with no expansion anywhere) and 'Tier 1 rig' are never expanded at all.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="otwdacra">
+
+        <input type="radio" name="twdacr" value="a" onchange="pick('TWD-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>Reorder each instance so the full term appears first in-voice (e.g., 'his monthly Universal Basic Credit, the UBC that used to be the whole of his money') and add an in-voice expansion for Φ and any other unexplained abbreviation at its first appearance.</em></span>
+
+      </label>
+
+      <label class="opt" id="otwdacrb">
+
+        <input type="radio" name="twdacr" value="b" onchange="pick('TWD-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="otwdacrc">
+
+        <input type="radio" name="twdacr" value="c" onchange="pick('TWD-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">TWU-ACR · BeatText</div>
+
+      <div class="q-title">TWU (The Way Up) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Multiple acronyms appear with no expansion at all: 'Cermak Tier-2 consult' and 'the basic mesh', 'Helix-grade' haptic array, and most notably 'NSB'-style world jargon isn't used, but GLMZ-type acronyms like tech terms are absent of gloss — e.g., there are no acronyms like 'NSB' here, but the story does use unexplained shorthand terms without any acronym-expansion pattern at all (e.g., no acronyms are ever glossed in-voice before use, since none appear in strict acronym form, but comparable jargon like 'Tier-1 mesh,' 'Tier-2 consult,' and 'Helix-grade' are dropped as if pre-established).</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="otwuacra">
+
+        <input type="radio" name="twuacr" value="a" onchange="pick('TWU-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>If any acronym is intended to appear in this story, introduce it once with a natural in-voice gloss of the full term (e.g., 'the Cermak Tier-2 neural consult' before shortening it), and audit all technical shorthand for the same treatment.</em></span>
+
+      </label>
+
+      <label class="opt" id="otwuacrb">
+
+        <input type="radio" name="twuacr" value="b" onchange="pick('TWU-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="otwuacrc">
+
+        <input type="radio" name="twuacr" value="c" onchange="pick('TWU-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">UNDR-GLS · BeatText</div>
+
+      <div class="q-title">UNDR (Underclan) -- gloss_in_voice: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Terms like 'CorpoNations,' 'Exclusion Economy,' 'Downward Expansion,' 'the Mission,' 'Channeler,' and 'covenant' are dropped in with the assumption of stranger-orientation but several arrive as clustered lecture rather than in-voice gloss — e.g. Vesh's line 'Before the sealing-off, when the deep still had a door to the surface's markets. Before the Exclusion Economy shut that door and called the shutting a law. Before the Downward Expansion drove the ones it shut out into the Works' stacks three proprietary-history terms back to back in a single breath of dialogue, functioning as compressed worldbuilding exposition rather than a natural Listener's aside.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="oundrglsa">
+
+        <input type="radio" name="undrgls" value="a" onchange="pick('UNDR-GLS','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>Break Vesh's history-recitation into smaller, separately-earned beats spread across the scene (each gloss triggered by something in the room or a Brave's question) rather than delivering the Exclusion Economy and Downward Expansion as a rapid-fire, unbroken litany.</em></span>
+
+      </label>
+
+      <label class="opt" id="oundrglsb">
+
+        <input type="radio" name="undrgls" value="b" onchange="pick('UNDR-GLS','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="oundrglsc">
+
+        <input type="radio" name="undrgls" value="c" onchange="pick('UNDR-GLS','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">UNDR-ACR · BeatText</div>
+
+      <div class="q-title">UNDR (Underclan) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">The acronym GLMZ is not present, but other acronyms/initialisms appear bare and unglossed at first use, e.g. the surface entity introduced only as 'the Mission' with no expansion, and 'the One Word'/'the Second Word' treated as established terms rather than glossed abbreviations — more clearly, no acronym in the text (such terms as they exist) is ever preceded by a spelled-out full term rendered in-voice before its short form is used.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="oundracra">
+
+        <input type="radio" name="undracr" value="a" onchange="pick('UNDR-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>Introduce each institutional shorthand (e.g., 'the Mission') the first time it appears with an in-voice gloss of the full term it stands for before using the short form again.</em></span>
+
+      </label>
+
+      <label class="opt" id="oundracrb">
+
+        <input type="radio" name="undracr" value="b" onchange="pick('UNDR-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="oundracrc">
+
+        <input type="radio" name="undracr" value="c" onchange="pick('UNDR-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">VATD-GLS · BeatText</div>
+
+      <div class="q-title">VATD (Vultures at the Door) -- gloss_in_voice: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">Terms like 'neuretics,' 'CorpoNations'-adjacent structures (Carrion, Lotus Syndicate, GLMZ), 'the Rift,' 'Resonance Zone geometry,' and 'Waxwing Neuromedia civic skin' are frequently introduced with either zero context (e.g. 'The manifest came up on his neuretics' with no orientation to what neuretics are beyond inference) or with an explicit stop-and-explain clause that reads as authorial aside rather than voice, e.g. 'Waxwing Neuromedia — the ad-overlay grid that painted storefronts with whatever a strip could afford to want' and 'the GLMZ — the sprawl everyone just called the zone.'</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="ovatdglsa">
+
+        <input type="radio" name="vatdgls" value="a" onchange="pick('VATD-GLS','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone -- GLMZ, the sprawl everyone just called the zone --&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="ovatdglsb">
+
+        <input type="radio" name="vatdgls" value="b" onchange="pick('VATD-GLS','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="ovatdglsc">
+
+        <input type="radio" name="vatdgls" value="c" onchange="pick('VATD-GLS','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">VATD-ACR · BeatText</div>
+
+      <div class="q-title">VATD (Vultures at the Door) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">The acronym GLMZ appears repeatedly throughout the story (e.g., 'the same shape as the GLMZ,' 'the GLMZ had buyers,' 'in this city, the GLMZ') with only a vague apposition 'the sprawl everyone just called the zone' at first use, which is a nickname, not the full expansion of the letters G-L-M-Z; no in-voice gloss of what the acronym actually stands for is ever given.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="ovatdacra">
+
+        <input type="radio" name="vatdacr" value="a" onchange="pick('VATD-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>First GLMZ mention becomes: &quot;the Great Lakes Metropolitan Zone -- GLMZ, the sprawl everyone just called the zone --&quot;</em></span>
+
+      </label>
+
+      <label class="opt" id="ovatdacrb">
+
+        <input type="radio" name="vatdacr" value="b" onchange="pick('VATD-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="ovatdacrc">
+
+        <input type="radio" name="vatdacr" value="c" onchange="pick('VATD-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="question">
+
+    <div class="q-header">
+
+      <div class="q-tag">VIGL-ACR · BeatText</div>
+
+      <div class="q-title">VIGL (Vigil's End) -- acronym_after_term: blocking fail</div>
+
+    </div>
+
+    <div class="q-body">
+
+      <p class="q-context">'AoV' appears bare in '(59 AoV)' with no prior or subsequent gloss anywhere in the text expanding what it stands for (e.g. 'Age of Vigil' or similar), leaving first-time readers with an unexplained acronym.</p>
+
+    </div>
+
+    <div class="options">
+
+      <label class="opt" id="oviglacra">
+
+        <input type="radio" name="viglacr" value="a" onchange="pick('VIGL-ACR','a',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">a</span>
+
+        <span class="opt-text">Apply recommended splice <em>Precede the first use of AoV with an in-voice gloss of its full term, e.g. 'fifty-nine years After the Vigil (59 AoV)', before using the bare acronym.</em></span>
+
+      </label>
+
+      <label class="opt" id="oviglacrb">
+
+        <input type="radio" name="viglacr" value="b" onchange="pick('VIGL-ACR','b',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">b</span>
+
+        <span class="opt-text">Skip for now <em>Leave as-is; revisit in a later pass.</em></span>
+
+      </label>
+
+      <label class="opt" id="oviglacrc">
+
+        <input type="radio" name="viglacr" value="c" onchange="pick('VIGL-ACR','c',this)">
+
+        <span class="opt-dot"></span>
+
+        <span class="opt-key">c</span>
+
+        <span class="opt-text">Custom -- I will specify in chat <em>I have different wording in mind for this fix.</em></span>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class="export-section">
+
+    <button class="export-btn" id="ebtn" onclick="doExport()" disabled>Export Answers</button>
+
+    <div class="export-status" id="estat">Answer all 27 questions to export</div>
+
+    <div id="json-out" style="display:none; width:100%; margin-top:12px;">
+
+      <div style="font-size:12px; color:var(--text-muted); margin-bottom:6px; letter-spacing:0.04em; text-transform:uppercase; font-weight:600;">Copy and paste this back:</div>
+
+      <textarea id="json-text" readonly onclick="this.select()" style="width:100%; height:160px; font-family:'Courier New',monospace; font-size:12px; background:var(--surface-alt); color:var(--text-primary); border:1px solid var(--border); border-radius:4px; padding:10px 12px; resize:vertical; line-height:1.5;"></textarea>
+
+      <button onclick="copyJson()" style="margin-top:8px; background:var(--surface-alt); color:var(--accent-text); border:1px solid var(--border); padding:6px 16px; border-radius:4px; font-size:13px; font-weight:600; cursor:pointer; font-family:inherit;" id="copybtn">Copy to clipboard</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+  const ans = {};
+
+  const N = 27;
+
+  const SURVEY_SLUG = 'acronym-gloss-audit-2026-08-05';
+
+  function pick(q, v, el) {
+    ans['q-' + q] = v;
+    document.querySelectorAll('[name="q' + q + '"]').forEach(r => r.closest('.opt').classList.remove('selected'));
+    el.closest('.opt').classList.add('selected');
+    const done = Object.keys(ans).length;
+    document.getElementById('pc').textContent = done;
+    document.getElementById('pf').style.width = (done / N * 100) + '%';
+    const btn = document.getElementById('ebtn');
+    const st = document.getElementById('estat');
+    if (done === N) {
+      btn.disabled = false;
+      st.textContent = 'All questions answered — ready to export';
+    } else {
+      btn.disabled = true;
+      const rem = N - done;
+      st.textContent = rem + ' question' + (rem !== 1 ? 's' : '') + ' remaining';
+    }
+  }
+  function doExport() {
+    const json = JSON.stringify({ survey: SURVEY_SLUG, answers: ans }, null, 2);
+    document.getElementById('json-text').value = json;
+    document.getElementById('json-out').style.display = 'block';
+    document.getElementById('estat').textContent = 'Copy the JSON below and paste it back:';
+  }
+  function copyJson() {
+    const ta = document.getElementById('json-text');
+    ta.select();
+    document.execCommand('copy');
+    document.getElementById('copybtn').textContent = 'Copied!';
+    setTimeout(() => { document.getElementById('copybtn').textContent = 'Copy to clipboard'; }, 2000);
+  }
+
+</script>
+
+
+</body></html>

@@ -1,0 +1,69 @@
+{
+  "node_slug": "iron-silk-019f43b9",
+  "node_title": "Iron \u0026 Silk",
+  "mode": "sequel",
+  "previous_node": "Crimson \u0026 Chrome (marrow-chrome-019f0968)",
+  "gateway_ready": false,
+  "blocking_count": 5,
+  "advisory_count": 3,
+  "plant_count": 10,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "reenter_through_change",
+      "Title": "Re-enter through change, not summary",
+      "Status": "fail",
+      "Evidence": "The opening establishes the present situation cleanly (the forty free minutes, the heist logistics), but the piece almost immediately pivots into extensive backward-looking recap: \u0027After Tidewell it started including names... After Crimson the count had stopped running backward,\u0027 and later entire paragraphs are spent reconstructing the prior operation\u0027s outcome (\u0027The Protocol was dissolved... the endowment funded... Priya in the cooperative\u0027s safe house\u0027) via direct narrated summary rather than through scene-level inference.",
+      "Fix": "Cut the explicit \u0027After Tidewell... After Crimson\u0027 exposition and the summarized aftermath recap, and instead let the changed present\u2014Vox\u0027s four-channel setup, the eased rapport with Rook, Boiler\u0027s community-center project\u2014carry the history implicitly through action and dialogue rather than through stated backstory."
+    },
+    {
+      "Key": "reintroduce_like_old_friend",
+      "Title": "Reintroduce names like an old friend would",
+      "Status": "warn",
+      "Evidence": "Some returning characters get vivid reactivation tags\u2014Vox\u0027s healed forearm graze and her narrowing \u0027four channels\u0027 philosophy, Ekow\u0027s notebook-touch tic\u2014but others like Lace, Boiler, and Scout are reintroduced mostly through job-function labels (\u0027Lace inside,\u0027 \u0027Boiler on the freight lane\u0027) before any embodied gesture accrues, and Rook herself gets no reactivating tag at all despite being the POV anchor a returning reader would want re-grounded in.",
+      "Fix": "Give each major returning character (especially Lace and Boiler) one small physical or behavioral beat at first mention in this node\u2014before their utility to the job is explained\u2014so old readers recognize them as people, not slots."
+    },
+    {
+      "Key": "lighter_regloss",
+      "Title": "Refresh proprietary terms on a lighter touch than the gateway",
+      "Status": "fail",
+      "Evidence": "Proprietary terms like \u0027Crimson,\u0027 \u0027Tidewell,\u0027 \u0027Helix facilities,\u0027 \u0027Phase 0/Phase 1,\u0027 \u0027the Protocol,\u0027 \u0027the Stems,\u0027 and \u0027Old Harbor\u0027 are dropped in with zero re-glossing context \u2014 e.g., \u0027After Crimson the count had stopped running backward\u0027 and \u0027the other two Helix facilities still out there, still someone else\u0027s problem\u0027 assume the reader already carries full definitions rather than re-teaching them through context.",
+      "Fix": "Fold a brief contextual cue into first uses of key proprietary terms per node (e.g., \u0027After Crimson \u2014 the job that had cost her the two names she still wouldn\u0027t say aloud \u2014 the count had stopped running backward\u0027) so returning readers are gently reminded and newcomers aren\u0027t left guessing."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "NGRA appears in Ekow\u0027s introduction (\u0027Ekow Ato. Former NGRA. Twelve years independent operations...\u0027) with no full-term expansion anywhere before or after; similarly GLMZ recurs repeatedly (\u0027all GLMZ work\u0027, \u0027GLMZ afternoons\u0027) without ever being spelled out on the page.",
+      "Fix": "Insert the full term in-voice at first use, e.g. \u0027Former NGRA \u2014 National Guard Reserve Auxiliary, or whatever cover the acronym still carried\u0027 and similarly gloss GLMZ (\u0027the Great Lakes Metro Zone, GLMZ to anyone who\u0027d lived here\u0027) before its first bare use."
+    },
+    {
+      "Key": "pay_previous_due",
+      "Title": "Pay the previous book its due, then move",
+      "Status": "fail",
+      "Evidence": "The node opens directly into a new job (the Rook heist/art recovery, then a sprawling continuation into the Protocol/Lotus arc) without any early beat that names what the previous book\u0027s ending cost or won; the only acknowledgments of past events (\u0027After Tidewell,\u0027 \u0027After Crimson\u0027) are folded in as internal characterization deep in the middle of a new operation rather than as an opening beat confirming the prior victory\u0027s weight before turning forward.",
+      "Fix": "Open with a short, contained beat\u2014before the new job\u0027s mechanics take over\u2014that explicitly shows the tangible, lasting effect of the previous book\u0027s climax (e.g., a concrete change in Rook\u0027s world or relationships that only exists because of how the last book ended), then transition into the Headcount job."
+    },
+    {
+      "Key": "open_door_left_ajar",
+      "Title": "Open the door the last ending left ajar",
+      "Status": "fail",
+      "Evidence": "The node never names a specific thread from a prior book\u0027s ending \u2014 the closest analogue is the recurring \u0027count\u0027 motif and vague references to \u0027Tidewell\u0027 and \u0027Crimson,\u0027 but these are treated as backstory texture, not an open question the reader was left holding. The story instead opens a brand-new job (the Headcount sculpture) and lets it balloon into an entirely new, self-contained arc (the Protocol/endowment/Lotus dissolution) with no stated connective tissue to what a returning reader was promised at the last book\u0027s close.",
+      "Fix": "Open by explicitly naming the unresolved question the previous book ended on (e.g., what the \u0027count\u0027 running forward actually obligates her to, or an unfinished consequence of Crimson) and show the Headcount job snagging on that exact thread before it grows into the larger Lotus conspiracy."
+    },
+    {
+      "Key": "reward_long_memory",
+      "Title": "Reward the long memory without taxing the short one",
+      "Status": "warn",
+      "Evidence": "Extensive callback machinery (Casimir\u0027s list/Berhane Haile reveal, Vox\u0027s four-channel arc, the diner-counting motif, Scout\u0027s dual-presence card) is transparently built for returning readers, but several passages assume prior-book context without re-grounding it in-scene \u2014 e.g., \u0027After Tidewell it started including names\u0027 and \u0027After Crimson the count had stopped running backward\u0027 are dropped as bare proper nouns with no immediate explanation of what Tidewell or Crimson were, forcing a first-time reader to infer meaning entirely from context rather than being given a self-sufficient gloss.",
+      "Fix": "Add a brief in-scene appositive or sensory anchor each time Tidewell and Crimson are invoked (e.g., \u0027After Tidewell \u2014 the job that had gone wrong in a way she still counted differently \u2014 the names started\u0027) so newcomers get a functional foothold while returning readers still get the deeper resonance."
+    },
+    {
+      "Key": "escalate_not_repeat",
+      "Title": "Escalate, don\u0027t repeat",
+      "Status": "warn",
+      "Evidence": "The node explicitly frames itself against the prior arcs (\u0027The first time she\u0027d counted exact change. The second, who came through. The third, names. This time the count had no number.\u0027) and the stakes do widen from a heist to institutional dissolution, but the middle stretch reprises the exact heist-assembly beats (crew calls to Lace/Vox/Scout/Boiler, building recon, camera counting, permit-pulling) almost procedurally identical to prior-book structure before the escalation into the Protocol plot kicks in.",
+      "Fix": "Compress or transform the familiar crew-assembly/heist-recon sequence (which reads as a structural repeat of prior installments) so the escalation into institutional-scale stakes begins earlier and the \u0027new\u0027 texture (unresolved forward-count, Boiler\u0027s civic pivot, Ekow\u0027s confession) gets more page-time relative to the repeated procedural setup."
+    }
+  ]
+}

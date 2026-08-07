@@ -1,0 +1,76 @@
+{
+  "node_slug": "bushido_coda",
+  "node_title": "Bushido Coda",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": false,
+  "blocking_count": 6,
+  "advisory_count": 1,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "fail",
+      "Evidence": "Long stretches lead with mechanism and procedure \u2014 schism physics, weapon nomenclature, cut-by-cut fight choreography, contract/relay logistics \u2014 before any sensory or emotional hook lands; texture like \u0027the camphor,\u0027 \u0027the warm chip,\u0027 or the lumen mice appears late, sparsely, and is quickly subordinated to plot/exposition (e.g., the Gingerbread House\u0027s uncanny resin colors are noted once and then the scene pivots straight into tactical soldier-assessment).",
+      "Fix": "Open scenes by dwelling in one or two strange-beautiful sensory details (the wrong-colored resin, the warm damp credstick, the mice\u0027s cold light) for several beats before the tactical/expository machinery takes over, so allure precedes and outweighs the procedural horror."
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "fail",
+      "Evidence": "The story opens directly with plot-relevant sensory/technical exposition (Kyle detecting a schism at 17-19 hertz, measuring its width, rerouting) rather than a grounded, mundane entry beat; within the first page we\u0027re already into world-jargon and escalating danger with no commute/transaction moment that isn\u0027t laden with plot mechanics.",
+      "Fix": "Precede the schism-detection beat with a brief, lower-stakes routine moment (e.g., him buying coffee, navigating ordinary traffic) that lets the reader settle into the world\u0027s textures before the plot machinery (schisms, hertz bands, tracking teams) starts demanding comprehension."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "fail",
+      "Evidence": "Terms like \u0027CorpoNations,\u0027 \u0027GLMZ,\u0027 \u0027neuretics,\u0027 \u0027Splicer,\u0027 \u0027\u03A6\u0027 (currency), \u0027Praxis,\u0027 \u0027Carrion,\u0027 and \u0027the Ghost Period\u0027 are dropped in with zero orientation \u2014 e.g. \u0027the CorpoNation property registry sometime in the 2190s\u0027 or \u0027GLMZ night\u0027 assumes the reader already knows what these zones/factions are, and later terms like \u0027Atlas NeoCortex,\u0027 \u0027the sixty-four,\u0027 and \u0027the aperture\u0027 pile up in dense lore-exposition paragraphs that read as pure info-dump rather than in-voice gloss.",
+      "Fix": "Introduce each proprietary term through a concrete sensory or functional detail the first time Kyle\u0027s POV encounters it (as was done reasonably well with \u0027schism\u0027 and \u0027the array\u0027), and cut or redistribute the late-manuscript exposition blocks (e.g. the Atlas NeoCortex/sixty-four splices explanation) into smaller, scene-grounded beats rather than standalone lecture paragraphs."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "fail",
+      "Evidence": "GLMZ appears repeatedly (\u0027the GLMZ night\u0027, \u0027any GLMZ block\u0027) with no full-term gloss anywhere in the story, and the acronym E.L.F. is used (\u0027The E.L.F. signal, the one Ledger had picked up\u0027) without ever spelling out what it stands for.",
+      "Fix": "Introduce the full term in-voice at first use (e.g., \u0027the Greater Loop Metro Zone\u2014GLMZ\u2014night\u0027 and a comparable gloss for E.L.F.) before allowing the bare acronym to recur."
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "pass",
+      "Evidence": "The girl-with-the-teeth beat does exactly what the commandment asks: \u0027What he didn\u0027t let himself count was the girl in the hallway, behind the curtain, watching him the way children watch a thing they\u0027ve already decided to remember,\u0027 followed later by him crouching to her height and opening his hand \u2014 a soft, unguarded moment that has nothing to do with his function as a fighter, immediately followed by him cleaning the blade and moving on to logistics.",
+      "Fix": null
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "fail",
+      "Evidence": "The manuscript closes with a warm, resolved domestic beat \u2014 Kyle eating soup at Pixel\u0027s table, \u0027The city needed nothing from him tonight,\u0027 \u0027He picked up the spoon with the hand that still worked right. He ate.\u0027 \u2014 which reads as comfort and closure rather than a quiet gesture that adds weight or cost for a cold reader; the actual weighted material (the lie to the last soldier, the entity\u0027s revelation, nine dead predecessors) is explicitly set aside and \u0027carried alone,\u0027 undercutting the landing instead of being the landing.",
+      "Fix": "End instead on the unresolved image of the fifth thing Kyle refuses to put away \u2014 the lowered blade, the broken promise, the soldier who trusted it \u2014 held in silence at the doorway before he crosses to Pixel\u0027s, so the last beat is the cost he\u0027s keeping rather than the meal that lets him set it down."
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "warn",
+      "Evidence": "The manuscript plants dense recursive material clearly designed to reward a second pass (the 17-19 Hz motif tying schisms to the entity, Pixel\u0027s beacon, the \u0027ten configurations\u0027 revelation, the false offer to the last soldier), but stretches like the AI dialogue exchange (\u0027carousel: the call, unresolved... you collect things too\u0027) and the Gingerbread House info-dump require the reader to already hold a large amount of continuity to parse cleanly on a first read, risking first-pass comprehension rather than just deepening it.",
+      "Fix": "Trim or clarify the elliptical AI-dialogue and threshold-revelation passages so a first-time reader can follow the literal chain of events without needing prior installments, while keeping the coded phrasing intact for returning readers to re-decode."
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "fail",
+      "Evidence": "The excerpt piles unexplained proper nouns and mythology onto a newcomer at an accelerating rate (NeoCortex, Atlas variant, Praxis, Carrion supply lines, the Ghost Period, the Cinderfall, the 127 seconds, \u0027nine before him,\u0027 Marrow, the Gingerbread House, Able, Sift, Renner, Carver) with almost no orientation given in-scene; by the final third the prose assumes the reader already holds a working mental map of the whole cosmology (\u0027He knew which of the sixty-four would call that unforgivable\u0027) rather than adding doors into it.",
+      "Fix": "Add brief grounding beats the first time each major proper noun/faction is invoked (a clause of context, an image, or a sensory anchor) so a first-time reader can track who Praxis, the entity, and the nine predecessors are without already knowing the series, rather than layering new lore-callbacks on top of each other."
+    },
+    {
+      "Key": "glmz_five_pillars",
+      "Title": "Orient through GLMZ\u0027s five pillars",
+      "Status": "pass",
+      "Evidence": "The prose weaves all five pillars into functional texture: the entity\u0027s LOG GAP revelation (\u0027Ten configurations were deployed... The aperture does not survive the arrival\u0027) frames AIs as agenda-driven agents with stakes; nanites appear ambiently in Pixel\u0027s suturing/array calibration and the mesh under Kyle\u0027s skin; neuretics/NeoCortex explicitly divide him from baseline humans (\u0027the ungoverned lattice... sixty-four of them\u0027) and are tied to cost/rarity; Schism is rendered physically and mechanically (\u0027a low hum in the 17-to-19 hertz band... a tear in the world\u0027) with Advisory zones and tracking teams; and CorpoNations/gray zones appear via \u0027the CorpoNation property registry,\u0027 the Tier boundary surveillance grid, and \u0027Off the books meant off the watching.\u0027",
+      "Fix": null
+    }
+  ]
+}

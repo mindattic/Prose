@@ -1,0 +1,69 @@
+{
+  "node_slug": "lyra-sinterspawn-slayer-019f5bd9",
+  "node_title": "Lieutenant Lyra, Sinterkin Slayer",
+  "mode": "gateway",
+  "previous_node": null,
+  "gateway_ready": true,
+  "blocking_count": 0,
+  "advisory_count": 4,
+  "plant_count": 0,
+  "orphaned_plants": 0,
+  "checks": [
+    {
+      "Key": "seduce",
+      "Title": "Seduce, don\u0027t just observe",
+      "Status": "pass",
+      "Evidence": "The prose lingers on seductive-strange textures before horror arrives: the harrower\u0027s voice \u0027arrived the way a draft arrives through a door you hadn\u0027t noticed was open,\u0027 the membrane described as \u0027a gift nobody had asked it to stop giving,\u0027 and the tactile detail of frost that \u0027never burned off\u0027 at the treeline, plus the lived-in wrongness of a leashed sinterspawn trained to \u0027go home.\u0027",
+      "Fix": null
+    },
+    {
+      "Key": "open_grounded",
+      "Title": "Open with the world doing its work",
+      "Status": "warn",
+      "Evidence": "The opening paragraph does establish Aldford as a village that \u0027existed because the ford did\u0027 with garrison watch fires and villagers who don\u0027t call the wilds by their true name, and there is a brief village-life beat (marigold crowns, the Crowning ritual, Sage\u0027s transaction with Lyra) before the plot intrudes with the runner reporting Heather missing \u2014 but this grounding stretch is quite short (roughly five paragraphs) before machinery kicks in.",
+      "Fix": "Extend the pre-plot village texture by another beat or two \u2014 e.g., linger longer on ordinary market/garrison routine or another villager\u0027s unremarkable errand \u2014 so the seduction of the world is fully earned before the disappearance derails it."
+    },
+    {
+      "Key": "gloss_in_voice",
+      "Title": "Gloss first mentions in-voice, never dump",
+      "Status": "warn",
+      "Evidence": "Terms like \u0027the Untamed\u0027, \u0027sinterspawn\u0027, \u0027membrane\u0027, \u0027kin-pack\u0027, \u0027harrower\u0027, and \u0027the Old Watch manuals\u0027 are mostly glossed well in-voice (e.g., \u0027called what began on the far bank the Untamed - plainly, the way you\u0027d name a dog you didn\u0027t trust\u0027), but \u0027CorpoNations\u0027-style proprietary worldbuilding is absent and some terms like \u0027sinterspawn\u0027 and \u0027membrane-heavy tissue\u0027 arrive with technical density (\u0027the membrane has replaced the biology with something it didn\u0027t bother to translate cleanly\u0027) that reads more like lore-exposition than a Templar\u0027s natural voice.",
+      "Fix": "Trim the clinical membrane/biology explanation to a shorter sensory beat consistent with Lyra\u0027s practical, embodied POV, and give \u0027sinterspawn\u0027 the same light in-voice anchoring the other terms receive."
+    },
+    {
+      "Key": "acronym_after_term",
+      "Title": "Never an acronym before its term",
+      "Status": "pass",
+      "Evidence": "The story contains no acronyms at all (terms like \u0027kin-pack\u0027, \u0027harrower\u0027, \u0027sinterspawn\u0027, and \u0027membrane\u0027 are used as plain nouns, never abbreviated), so the commandment about gating acronyms behind their expansion has nothing to violate.",
+      "Fix": null
+    },
+    {
+      "Key": "human_crack",
+      "Title": "Give the POV character one human crack",
+      "Status": "warn",
+      "Evidence": "The thanking of Sage \u0027the way she\u0027d once thanked Vega, badly, over ruined marigolds in a kitchen garden three hundred miles and a lifetime from any ford\u0027 is the one flash of a prior human self, but it\u0027s delivered in a single subordinate clause and immediately folded back into her competence (\u0027with the same specific gravity she\u0027d have used thanking a superior officer\u0027).",
+      "Fix": "Let the Vega memory land for one more beat\u2014a half-sentence of what was lost or why it still surfaces\u2014before she re-armors into the officer register."
+    },
+    {
+      "Key": "land_past_handoff",
+      "Title": "Land one beat past the handoff",
+      "Status": "warn",
+      "Evidence": "The plot business (the lie to the Marshes, the coverup, the harrower\u0027s head hitting the yard) resolves cleanly, and the final beat\u2014\u0027Write it up,\u0027 and she went inside\u2014reads as closure rather than an added quiet gesture; the Corwin thread is noticed but explicitly shelved (\u0027She set it aside... let him keep his correct, empty face\u0027), which gestures at \u0027what happens in this city\u0027 but doesn\u0027t land a final image carrying cost the way Sage\u0027s crown might have.",
+      "Fix": "End instead on a single wordless image\u2014Lyra finally freeing Sage\u0027s crushed crown from under her pauldron and setting it down rather than discarding it or reporting it\u2014so the last beat is a private, physical gesture that carries the cost of the lie rather than the procedural line \u0027Write it up.\u0027"
+    },
+    {
+      "Key": "reread_reward",
+      "Title": "Reward re-reading without requiring it",
+      "Status": "pass",
+      "Evidence": "The Sage\u0027s-crown detail (given \u0027so the wolves don\u0027t get you,\u0027 then found crushed and blooded on the false trail, then revealed to be a decoy while Heather\u0027s real crown \u0027gone the whole way to Millbrook still on her head\u0027) and Corwin\u0027s repeated, unexplained glance toward the stableboy work perfectly on a first read as texture/misdirection, but both reread as planted clues to the story\u0027s actual mechanics once the reader knows Heather staged her death and Corwin has his own secret.",
+      "Fix": null
+    },
+    {
+      "Key": "elevate_not_reconstruct",
+      "Title": "Elevate, don\u0027t reconstruct",
+      "Status": "pass",
+      "Evidence": "The prose establishes world terms (harrowers, kin, the Untamed, membrane, sinterspawn, Old Watch manuals) through in-scene context and character action rather than exposition dumps, and the emotional/plot mechanics (Lyra\u0027s rank anxiety, Baast\u0027s grudge, Heather\u0027s fake death) are fully dramatized so a newcomer can follow without prior lore, while nothing about the scene structure reads as retrofitted signage for tourists.",
+      "Fix": null
+    }
+  ]
+}
