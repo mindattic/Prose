@@ -59,7 +59,7 @@ public class BeatEventListTools
         "Return the current per-beat plot-event list for a node as ordered structured data — one " +
         "entry per enabled beat with its SortKey, title, POV, and EventSummary line. Reads DB state " +
         "only, no LLM call, no disk write — the fast, in-session way to read a whole book's plot " +
-        "flow without opening docs/nodes/{CODE}-Events.txt or reading the raw prose. Accepts node id " +
+        "flow without opening the exported {CODE}-Events.txt or reading the raw prose. Accepts node id " +
         "(GUID) or slug.")]
     public async Task<string> get_event_list(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
@@ -76,8 +76,9 @@ public class BeatEventListTools
     }
 
     [McpServerTool, Description(
-        "Export the current per-beat plot-event list for a node to docs/nodes/{CODE}-Events.txt " +
-        "(deliberately .txt, not .md, so it's never picked up by sync_markdown_files / DCM). No LLM " +
+        "Export the current per-beat plot-event list for a node to {CODE}-Events.txt in the node's " +
+        "publish-export folder (same layout as description.txt / {CODE}-dcm-viz.htm — not docs/nodes; " +
+        "deliberately .txt, not .md, so it's never picked up by sync_markdown_files / DCM). No LLM " +
         "call — reads current DB state only.")]
     public async Task<string> export_event_list(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)

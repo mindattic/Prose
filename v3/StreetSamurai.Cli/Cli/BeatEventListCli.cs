@@ -53,8 +53,9 @@ public static class GenerateEventListCli
 /// <summary>
 /// ss --export-event-list --slug &lt;slug&gt;
 ///
-/// Writes the current DB state (no LLM call) to docs/nodes/{CODE}-Events.txt — flat,
-/// SK-ordered, one line per enabled beat — and prints it to console.
+/// Writes the current DB state (no LLM call) to {CODE}-Events.txt in the node's
+/// publish-export folder (same layout as description.txt / {CODE}-dcm-viz.htm — not
+/// docs/nodes) — flat, SK-ordered, one line per enabled beat — and prints it to console.
 /// </summary>
 public static class ExportEventListCli
 {

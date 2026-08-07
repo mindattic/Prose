@@ -2209,7 +2209,7 @@ if (args.Contains("--generate-event-list"))
 }
 
 // ss --export-event-list --slug <slug>
-// Write the current per-beat event list to docs/nodes/{CODE}-Events.txt (no LLM call).
+// Write the current per-beat event list to {CODE}-Events.txt in the publish-export folder (no LLM call).
 if (args.Contains("--export-event-list"))
 {
     var sp = BuildServicesWithVault(args);

@@ -66,7 +66,7 @@
 
 ### `export_event_list`
 
-Export the current per-beat plot-event list for a node to docs/nodes/{CODE}-Events.txt (deliberately .txt, not .md, so it's never picked up by sync_markdown_files / DCM). No LLM call — reads current DB state only.
+Export the current per-beat plot-event list for a node to {CODE}-Events.txt in the node's publish-export folder (same layout as description.txt / {CODE}-dcm-viz.htm — not docs/nodes; deliberately .txt, not .md, so it's never picked up by sync_markdown_files / DCM). No LLM call — reads current DB state only.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
@@ -79,7 +79,7 @@ Generate/refresh the per-beat plot-event list (Beat.EventSummary) for a node —
 
 ### `get_event_list`
 
-Return the current per-beat plot-event list for a node as ordered structured data — one entry per enabled beat with its SortKey, title, POV, and EventSummary line. Reads DB state only, no LLM call, no disk write — the fast, in-session way to read a whole book's plot flow without opening docs/nodes/{CODE}-Events.txt or reading the raw prose. Accepts node id (GUID) or slug.
+Return the current per-beat plot-event list for a node as ordered structured data — one entry per enabled beat with its SortKey, title, POV, and EventSummary line. Reads DB state only, no LLM call, no disk write — the fast, in-session way to read a whole book's plot flow without opening the exported {CODE}-Events.txt or reading the raw prose. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
