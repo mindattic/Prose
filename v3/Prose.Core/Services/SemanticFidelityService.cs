@@ -23,15 +23,21 @@ namespace Prose.Core.Services;
 /// Violations are filed as SEMANTIC-DRIFT findings in FindingsService. The findings
 /// workflow (apply / dismiss) is the course-correction mechanism.
 ///
-/// The service is called automatically in the background after every review run
-/// (via NodeReviewService) whenever the node score meets the gaming threshold.
+/// <see cref="AuditNodeAsync"/> evaluates every beat that has prose — it does NOT gate on
+/// <see cref="ScoreGamingThreshold"/> (fixed 2026-08-08: under the no-panel-vote regime,
+/// SS-A44, fewer than 1% of beats corpus-wide ever have a Beat.Score, so gating on it here
+/// silently evaluated ~0 beats on 34 of 35 live books). Only <see cref="AuditNodeAsync"/>'s
+/// caller in NodeReviewService still uses the threshold — to decide whether a *just-reviewed*
+/// node scored well enough to be worth auditing for gaming at all; that's a legacy-panel-only
+/// decision, separate from which beats this method itself checks.
 /// It can also be invoked directly via `prose --check-fidelity` or the
 /// `check_semantic_fidelity` MCP tool.
 /// </summary>
 public class SemanticFidelityService
 {
-    /// <summary>Minimum beat score before fidelity checks engage. Below this threshold
-    /// there is no meaningful signal — the beat is not scoring well enough to suspect gaming.</summary>
+    /// <summary>Used only by NodeReviewService to decide whether a node's post-review score is
+    /// high enough to bother auditing for score-gaming at all (legacy panel path only — SS-A44).
+    /// Does NOT gate which beats <see cref="AuditNodeAsync"/> evaluates; see its remarks above.</summary>
     public const double ScoreGamingThreshold = 70.0;
 
     /// <summary>Cosine similarity floor for bible alignment. Below this the beat has
@@ -63,7 +69,7 @@ public class SemanticFidelityService
         Guid BeatId,
         int BeatNumber,
         string? BeatTitle,
-        double Score,
+        double? Score,
         double BibleAlignment,
         double? IntentAlignment,
         string Kind,
@@ -74,7 +80,7 @@ public class SemanticFidelityService
         Guid NodeId,
         string Slug,
         int BeatsChecked,
-        int BeatsScored,
+        int BeatsEvaluated,
         double? NodeScore,
         double MeanBibleAlignment,
         double? MeanIntentAlignment,
@@ -84,8 +90,9 @@ public class SemanticFidelityService
     /// <summary>
     /// Audit a node's prose for the Semantic Fidelity Gap. Ensures beat
     /// embeddings are fresh (drift-skipped), ranks every beat against the
-    /// story's bible anchor, computes intent alignment for scored beats that
-    /// have a Synopsis, then files SEMANTIC-DRIFT findings for violators.
+    /// story's bible anchor, computes intent alignment for every beat that
+    /// has a Synopsis, then files SEMANTIC-DRIFT findings for violators.
+    /// Beat.Score is informational only here — it is not a gate.
     /// </summary>
     public async Task<FidelityReport> AuditNodeAsync(
         Guid nodeId, CancellationToken ct = default)
@@ -156,13 +163,13 @@ public class SemanticFidelityService
         }
 
         // ── Intent alignment ──────────────────────────────────────────────
-        // For beats that score above the gaming threshold AND have a Synopsis, embed
+        // Every beat with a Synopsis and prose — no score gate (see class remarks: gating on
+        // Beat.Score here evaluated ~0 beats corpus-wide once panel voting went opt-in). Embed
         // synopsis+prose as a pair and compute their cosine similarity. One batch call
         // per ~64 beats keeps API cost near zero for typical node lengths.
         var intentAlignmentById = new Dictionary<Guid, double>();
         var intentCandidates = beats
-            .Where(b => (b.Score ?? 0) >= ScoreGamingThreshold
-                     && !string.IsNullOrWhiteSpace(b.Description)
+            .Where(b => !string.IsNullOrWhiteSpace(b.Description)
                      && !string.IsNullOrWhiteSpace(b.Text))
             .ToList();
 
@@ -184,23 +191,31 @@ public class SemanticFidelityService
         }
 
         // ── Identify violations ───────────────────────────────────────────
+        // Every beat with prose is checked — Beat.Score is informational only (see class
+        // remarks). The alignment floors are the only gate.
         var violations = new List<FidelityViolation>();
-        var scoredBeats = beats.Where(b => (b.Score ?? 0) >= ScoreGamingThreshold).ToList();
+        var evaluatedBeats = beats.Where(b => !string.IsNullOrWhiteSpace(b.Text)).ToList();
 
-        foreach (var b in scoredBeats)
+        foreach (var b in evaluatedBeats)
         {
-            var score       = b.Score!.Value;
+            var score       = b.Score;
+            var scoreLabel  = score.HasValue ? $"scores {score.Value:0.#}%" : "is unscored";
             var bibleAlign  = bibleAlignmentById.TryGetValue(b.Id, out var ba)  ? ba  : (double?)null;
             var intentAlign = intentAlignmentById.TryGetValue(b.Id, out var ia) ? ia  : (double?)null;
 
-            // Bible drift: high score + low alignment to the story's north star.
+            // Bible drift: prose has drifted from the story's north star. When the beat also
+            // has a (legacy panel) score, a high score alongside low alignment is specifically
+            // Goodhart's Law — gaming the metric while losing the meaning; call that out.
             if (hasBibleAnchor && bibleAlign.HasValue && bibleAlign.Value < BibleAlignmentFloor)
             {
                 var sev = bibleAlign.Value < 0.30 ? FindingSeverity.High
                         : bibleAlign.Value < 0.37 ? FindingSeverity.Medium
                         : FindingSeverity.Low;
-                var msg  = $"Beat #{b.Number} scores {score:0.#}% but aligns only {bibleAlign.Value:P0} with the story bible " +
-                           $"(floor {BibleAlignmentFloor:P0}). High score / low meaning alignment — Goodhart's Law in prose.";
+                var goodhart = score.HasValue
+                    ? " High score / low meaning alignment — Goodhart's Law in prose."
+                    : " Low meaning alignment with the story's own intent.";
+                var msg  = $"Beat #{b.Number} {scoreLabel} but aligns only {bibleAlign.Value:P0} with the story bible " +
+                           $"(floor {BibleAlignmentFloor:P0}).{goodhart}";
                 var fix  = $"Revise Beat #{b.Number} to re-anchor in the story's core intent. " +
                            $"Story seed: \"{(bibleAnchor!.Length > 120 ? bibleAnchor[..120] + "…" : bibleAnchor)}\". " +
                            $"Avoid rewriting purely to satisfy stylistic patterns the reviewers reward if it pulls the beat away from the story's centre of gravity.";
@@ -212,17 +227,17 @@ public class SemanticFidelityService
                     b.Text?.Length > 200 ? b.Text[..200] : b.Text, fix);
             }
 
-            // Intent drift: high score + prose no longer serves the beat's stated purpose.
+            // Intent drift: prose no longer serves the beat's stated purpose.
             if (intentAlign.HasValue && intentAlign.Value < IntentAlignmentFloor)
             {
                 var sev = intentAlign.Value < 0.35 ? FindingSeverity.High
                         : intentAlign.Value < 0.43 ? FindingSeverity.Medium
                         : FindingSeverity.Low;
                 var synopsis = b.Description!.Length > 120 ? b.Description[..120] + "…" : b.Description;
-                var msg  = $"Beat #{b.Number} scores {score:0.#}% but its prose aligns only {intentAlign.Value:P0} with its stated intent (\"{synopsis}\"). " +
-                           $"The rewrite served the score rubric, not the beat's purpose.";
+                var msg  = $"Beat #{b.Number} {scoreLabel} but its prose aligns only {intentAlign.Value:P0} with its stated intent (\"{synopsis}\"). " +
+                           $"The rewrite drifted from the beat's own purpose.";
                 var fix  = $"Beat #{b.Number} was supposed to: \"{b.Description}\". " +
-                           $"Revise to fulfil that purpose rather than chasing stylistic reviewer rewards.";
+                           $"Revise to fulfil that purpose.";
                 violations.Add(new FidelityViolation(
                     b.Id, b.Number, b.Title, score,
                     bibleAlign ?? 0, intentAlign, "intent", msg, fix));
@@ -239,16 +254,16 @@ public class SemanticFidelityService
         double? meanIntent = allIntentAligns.Count > 0 ? allIntentAligns.Average() : null;
 
         log.LogInformation(
-            "SemanticFidelity '{Slug}': {Total} beats, {Scored} scored, {V} violations, " +
+            "SemanticFidelity '{Slug}': {Total} beats, {Evaluated} evaluated, {V} violations, " +
             "mean bible={Bible:P0}{Intent}",
-            node.Slug, beats.Count, scoredBeats.Count, violations.Count, meanBible,
+            node.Slug, beats.Count, evaluatedBeats.Count, violations.Count, meanBible,
             meanIntent.HasValue ? $", mean intent={meanIntent:P0}" : "");
 
         return new FidelityReport(
             NodeId:           nodeId,
             Slug:               node.Slug,
             BeatsChecked:       beats.Count,
-            BeatsScored:        scoredBeats.Count,
+            BeatsEvaluated:     evaluatedBeats.Count,
             NodeScore:        node.Score,
             MeanBibleAlignment: meanBible,
             MeanIntentAlignment: meanIntent,
@@ -292,6 +307,25 @@ public class SemanticFidelityService
         }
     }
 
+    /// <summary>
+    /// Convenience overload for callers that only have the beat/node ids on hand (e.g.
+    /// <see cref="ProseWriterRouter"/>'s post-write hook) — resolves the beat number and node
+    /// slug the base overload needs, then delegates. Added 2026-08-08: this check was already
+    /// wired into the manual-edit save path (<see cref="NodeWorkbenchService"/>) but never into
+    /// the CLI/MCP generation path that actually authors the vast majority of beats, so it never
+    /// covered generated prose at all — only hand-edits made through the Blazor UI.
+    /// </summary>
+    public async Task CheckBeatIntentDriftAsync(
+        Guid beatId, Guid nodeId, string beatText, string synopsis, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(synopsis) || string.IsNullOrWhiteSpace(beatText)) return;
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var beatNumber = await db.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Number).FirstOrDefaultAsync(ct);
+        var nodeSlug = await db.Nodes.AsNoTracking().Where(n => n.Id == nodeId).Select(n => n.Slug).FirstOrDefaultAsync(ct);
+        if (string.IsNullOrEmpty(nodeSlug)) return;
+        await CheckBeatIntentDriftAsync(beatNumber, nodeSlug, beatText, synopsis, ct);
+    }
+
     private void EmitFinding(
         string filePath, FindingSeverity severity, string summary, string? snippet, string? fix)
     {
@@ -300,7 +334,7 @@ public class SemanticFidelityService
             findings.Upsert(
                 filePath:     filePath,
                 chapterId:    null,
-                category:     FindingCategory.Other,
+                category:     FindingCategory.SemanticDrift,
                 severity:     severity,
                 summary:      summary,
                 snippet:      snippet,

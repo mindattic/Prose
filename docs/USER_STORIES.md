@@ -4,7 +4,7 @@ project: Prose
 code: SS
 layer: stories
 status: living
-updated: 2026-06-25
+updated: 2026-08-08
 ---
 
 # Prose — User Stories
@@ -471,7 +471,12 @@ updated: 2026-06-25
 8. **SS-US-G4 ⬜** Develop the 100-story outline past the spine (premises 9+).
 9. **SS-US-Fc ✅** In-app canon toggle on the writer/`/strands` page (see SS-US-L7).
 10. **SS-US-F9 ✅** Living world tick (scheduled `EntityStateEvents`, off by default; see SS-US-L4).
-11. **SS-US-F10 ⬜** Voice flywheel proof: batch K+1 mean `Strand.Score` > batch K after harvests.
+11. **SS-US-F10 🗑️** Voice flywheel proof: batch K+1 mean `Strand.Score` > batch K after harvests.
+    **SUPERSEDED 2026-08-03 by SS-A44** (score retirement) before ever being demonstrated — see the
+    I8 entry below for the investigation. Not "done," not "still open": the metric this criterion
+    depends on no longer exists as a live measurement, so this acceptance test can't be satisfied
+    or failed going forward. A modern equivalent (findings-density trend over time) is proposed but
+    not built.
 12. **SS-US-U1…U7 ✅** Multi-Universe support (Epic U): `Universe` table + `UniverseId` + backfill to
     GLMZ → seed Fantasy/Steampunk → SwitchUniverse (per-process/per-session) in UI + CLI + MCP →
     full cross-over segregation (config + embeddings + prompts + caches + ledger) → plain dark mode.
@@ -526,10 +531,26 @@ updated: 2026-06-25
   `ReviewStrand` MCP tool runs structural pre-flight first — blocking failures return the diagnosis
   in place of ballots; CLI exit code 2 on blocking failures; 2026-06-21.)*
 
-- **SS-US-I8 ⬜** As the operator, the flywheel is provably spinning: batch K+1 mean `Strand.Score`
+- **SS-US-I8 🗑️** As the operator, the flywheel is provably spinning: batch K+1 mean `Strand.Score`
   is higher than batch K mean after at least N=5 voice-harvest approval cycles. *Acceptance:
   `prose --score-trend --batches 2` prints the before/after mean + delta; delta > 0.* (This is
   SS-US-F10 reframed as a concrete acceptance test.)
+  **Investigated 2026-08-08, then superseded.** `prose --score-trend` had never actually been run
+  successfully — it had two real bugs: a malformed C# format string (`"0.1"` silently drops the
+  decimal point instead of showing one digit, so every score/delta ever displayed was garbage,
+  e.g. a real 76.1 printed as `761`) and a `--universe` flag that did nothing (the query started
+  from `NodeScoreHistories`, which carries no universe query filter, so every universe returned
+  the identical unfiltered set). Both fixed in `ScoreTrendCli.cs`. With both bugs fixed, the actual
+  historical trend across all 21 scored GLMZ nodes is **flat-to-declining** at every batch count
+  tested (2/3/4/5) — e.g. at 3 batches: 76.3 → 75.6 → 74.0 — never rising. So even while this
+  metric was the project's live quality measure, the flywheel was never empirically shown to be
+  spinning forward. Moot as of 2026-08-03: SS-A44 retired the underlying `Node.Score` metric
+  entirely ("scores mean nothing") in favor of Reader-Proxy QA findings, so this acceptance
+  criterion can no longer be satisfied going forward — `horror` (published entirely post-SS-A44)
+  has zero `NodeScoreHistory` rows at all, confirming no new book will ever produce another data
+  point. See `project_flywheel_proof_2026_08_08` memory. A modern equivalent — a findings-density
+  trend (mean open Reader-Proxy QA findings per beat, weighted by severity, across books in
+  chronological order) — is proposed but not built; would need a fresh story number if pursued.
 
 ## Epic J — Quality Pipeline Surfaces {#epic-j}
 
@@ -682,38 +703,63 @@ updated: 2026-06-25
 ## Epic M — Emotional Intelligence Examination {#epic-m}
 
 > An 8-dimension, per-beat, character-aware emotional depth examiner that operationalizes the craft
-> laws from [CODA.md](registers/CODA.md) into graded, actionable findings. The emotional depth score
-> is advisory — a side-car to the 82/85 reader-panel headline — with a blocking advisory cap at the
-> Deep/publish gate for the two most diagnostic dimensions. See [RFC 0010](rfc/0010-emotional-intelligence-examination.md).
+> laws from [CODA.md](registers/CODA.md) into graded, actionable findings. Originally scoped as a
+> side-car to the 82/85 reader-panel headline score — that gate is now retired (SS-A44,
+> 2026-08-03; see Epic N), so this epic's "blocking advisory cap at the Deep/publish gate" framing
+> (M6) is stale pending a decision on what it should gate under Reader-Proxy QA instead.
+> See [RFC 0010](rfc/0010-emotional-intelligence-examination.md).
+>
+> **2026-08-08 status check:** the code shipped but has never been run at scale — 0 of 13,594
+> beats have `Beat.EmotionalScore` populated as of this date. A live test run
+> (`prose --examine-emotion --slug lyra-sinterspawn-slayer-019f5bd9 --universe scry`) confirmed
+> the CLI genuinely works end-to-end and produces high-quality, specific craft feedback — but also
+> surfaced a real design gap: the dimension set is GLMZ/CODA-specific (7 of 8 dimensions cite
+> CODA/GREY/JOY/SORROW registers explicitly), not generalized for the project's other 5 universes
+> (SCRY, HORROR, NONFICTION, FICTION, EROTICA). One hardcoded anchor (`RelationalSubtext` citing
+> "Kyle↔Pixel" by name) was fixed to be universe-neutral; the deeper question — what are the right
+> dimensions/anchors for a NONFICTION or EROTICA book — is an open author decision, not something
+> to invent unilaterally. See `project_emotional_guidance_bootstrap_decision_2026_08_08` memory.
+> A corpus-wide bootstrap would cost real money (~$0.27/6-beat-book observed, extrapolating to
+> several hundred dollars for the full corpus) and should not be run without that scope decision
+> and explicit cost sign-off first.
 
-- **SS-US-M1 ⬜** As an author, `prose --examine-emotion --slug <slug> --effort deep` runs 8 dimension
+- **SS-US-M1 ✅** As an author, `prose --examine-emotion --slug <slug> --effort deep` runs 8 dimension
   checks + a per-beat emotional curve + character ledger extraction, returning a 0–100
   `EmotionalDepthScore`, per-dimension 0–4 scores with strongest/weakest evidence and a beat-scoped
   craft fix, and a beat-by-beat depth curve. *(acceptance: `ExamineEmotionCli` dispatched from
   `Program.cs`; `EmotionalDepthService.ExamineStrandAsync` runs 8 parallel LLM calls; beat curve
-  covers every beat; exit 0 = none blocking, 1 = advisory, 2 = blocking.)*
+  covers every beat; exit 0 = none blocking, 1 = advisory, 2 = blocking. **Verified live 2026-08-08**
+  on LLSS (6 beats, SCRY universe): 9 LLM calls completed, full JSON envelope with per-dimension
+  scores/evidence/fixes and a 6-entry beat curve returned, cost $0.27 actual.)*
 
 - **SS-US-M2 ⬜** As an author, the `examine_emotional_depth` MCP tool returns the same examination
   envelope as the CLI. *(acceptance: `[McpServerTool]` in `Tools.Quality.cs`; GUID-or-slug
-  resolution; same JSON envelope.)*
+  resolution; same JSON envelope. **Checked 2026-08-08: no such tool exists in `Tools.Quality.cs`
+  — CLI-only, MCP surface genuinely not built.**)*
 
-- **SS-US-M3 ⬜** As an author, `prose --migrate-sql --emotional-examination` creates 4 tables +
+- **SS-US-M3 ✅** As an author, `prose --migrate-sql --emotional-examination` creates 4 tables +
   `Beat.EmotionalScore` column idempotently. *(acceptance: re-runnable, exits 0 on 2nd run; all 4
-  tables exist; `Beat.EmotionalScore` float? column on the temporal Beats table.)*
+  tables exist; `Beat.EmotionalScore` float? column on the temporal Beats table. Verified by CLI
+  run 2026-08-08: column and tables confirmed present in LocalDB; the examine-emotion run
+  exercised the schema successfully.)*
 
-- **SS-US-M4 ⬜** As an author, `prose --findings` surfaces `EMOTIONAL-DEPTH` findings from blocking
+- **SS-US-M4 ✅** As an author, `prose --findings` surfaces `EMOTIONAL-DEPTH` findings from blocking
   dimensions beside structural ones. *(acceptance: `FindingsService.Upsert` with
-  `summary: "EMOTIONAL-DEPTH [Name] beat N: fix"`; visible at `/findings`.)*
+  `summary: "EMOTIONAL-DEPTH [Name] beat N: fix"`; visible at `/findings`. Verified by CLI run
+  2026-08-08: the LLSS run's one blocking dimension (`CostFeltNotAsserted`) filed exactly one
+  `EMOTIONAL-DEPTH`-prefixed finding, confirmed via direct DB query.)*
 
 - **SS-US-M5 ⬜** As an author, the ledger sanity check passes: Rhea (TVYT) has
   Want="keep facts correct / not be managed" and Need="stop calling being-managed competence",
   matching [TVYT.md §71-73](nodes/TVYT.md). *(acceptance: `--examine-emotion --slug tvyt
-  --effort deep --json` returns Rhea ledger with `Inferred=false`.)*
+  --effort deep --json` returns Rhea ledger with `Inferred=false`. Not checked 2026-08-08 — TVYT-specific, not exercised by the LLSS smoke test.)*
 
 - **SS-US-M6 ⬜** As an author, a strand with an open blocking emotional dimension cannot be
   marked publish-ready at the Deep gate; resolving the finding clears the block. *(acceptance:
   publish-readiness check consults open blocking `EmotionalDimensionResults`; resolving the Finding
-  clears the block; `Strand.Score` is unchanged by the examination.)*
+  clears the block; `Strand.Score` is unchanged by the examination. Stale acceptance criterion —
+  the "Deep gate" it refers to predates the SS-A44 score retirement; needs re-scoping against
+  current Reader-Proxy QA publish-readiness criteria before this can be built or verified.)*
 
 ## Epic N — Voting kill-switch (SS-A44) {#epic-n}
 
@@ -746,6 +792,54 @@ updated: 2026-06-25
   pipeline skips (never fails on) the scoring step when voting is disabled. *(evidence:
   `VotingGateTests.ProseGenerationServices_DoNotDependOnVotingGate`;
   `ChapterCloseProcessorService.ProcessAsync` skips tiered review + fork when voting is off.)*
+
+## Epic O — Shipped since the last doc pass (added retroactively 2026-08-08) {#epic-o}
+
+> This file went 6 weeks (2026-06-25 → 2026-08-08) without a status refresh. These four
+> features shipped and are live in that window but had no entry here — a stale status doc is
+> worse than no doc, since it actively misleads a reader (including a future session) into
+> re-investigating settled questions. Backfilled from commit history + memory records with the
+> same evidentiary standard as the rest of this file.
+
+- **SS-US-O1 ✅** As the author, Reader-Proxy QA (SS-A44, shipped 2026-08-03) replaces the 0–100
+  reader-panel score as the default reader-facing QA — canonical doc `docs/READER-QA.md`, runbook
+  `/reader-qa`. Four findings-based instruments, no scores: (1) Haiku comprehension probes
+  diffed against a Sonnet-generated synopsis, Sonnet-arbitrated → `ComprehensionDefect` findings;
+  (2) hash-gated binary craft/delight checklist (`prose --craft-checklist`) → `CraftChecklist`
+  findings; (3) cross-family pairwise duels per splice (`prose --duel`, still SS-A44
+  vote-gated); (4) findings-only gripe jury (`prose --reader-qa --gripe-pass`) → `ReaderGripe`
+  findings. *(evidence: verified by CLI runs; commits `3bb9d2f19`/`7ef9078cd`/`484614b23`/
+  `c04e90e78`; E2E run on LLSS — comprehension probe caught a sinterspawn/harrower conflation, checklist caught
+  over-explanation, gripe jury 18 raw → 11 confirmed; verified at scale on BCODA — 28 Medium
+  comprehension findings triaged to 8 real + 20 dismissed after an arbiter strictness fix; gripe
+  pass 23 raw → 3 confirmed with one duel-gated splice auto-applied.)*
+
+- **SS-US-O2 ✅** As the author, the Master Glossary system (shipped 2026-08-05) gives each
+  universe a back-matter glossary, with each book's own glossary auto-derived as the live subset
+  of terms that actually appear in its prose (a term dropped from prose disappears from that
+  book's glossary on the next regenerate). *(evidence: `GlossaryTerms` DB table + migration
+  `AddGlossaryTerms`; `GlossaryService.GenerateMasterAsync`/`GenerateForBookAsync`; CLI
+  `--generate-glossary`/`--generate-book-glossary`; MCP `upsert_glossary_term`/
+  `list_glossary_terms`/`generate_glossary`/`generate_book_glossary`; DOCX export wired via
+  `DocxExportService` appending a page-broken Glossary section — EPUB/PDF back matter not yet
+  extended; seeded 27 GLMZ + 24 SCRY terms same day, both from primary-source docs, no invented
+  definitions.)*
+
+- **SS-US-O3 ✅** As the author, KdpPublish (`v3/StreetSamurai.KdpPublish`, WPF/WebView2)
+  automates a book's **first-time** KDP listing, not just republishing an existing one — no
+  ASIN/KdpTitleId required going in. *(evidence: `KdpOperatorService.ProcessBookAsync` branches to
+  a 25-step `BuildNewListingSystemPrompt` flow when `Asin`/`KdpTitleId`/`PublishUrl` are all null;
+  new tool set in `KdpTools/` — `CreateNewListingTool`, `SetPriceTool` (real CDP keystrokes, not
+  value-injection), `SelectCategoriesTool`, `SetAiDisclosureTool`, `CapturePublishedAsinTool`, etc.
+  Verified live twice via direct CLI/automation runs: JOAN ("Jeanne d'Arc: Prophecy or
+  Pathology?") published 2026-08-03, titleId `A2UB6TMY4GKY0C`; RESIST ("Resistance: Three
+  Centuries of Irish Rebellion") published 2026-08-04, titleId `A19W9UCNTX3YD1`, confirming the
+  flow generalizes beyond the first book — under 3 minutes / ~35 tool-call iterations end to end.)*
+
+- **SS-US-O4 ✅** As the author, a 6th universe (**EROTICA**) is seeded, alongside renaming
+  SOURCE→NONFICTION and EPIC→FICTION for naming clarity (2026-08-04). *(evidence: verified by
+  commit `f74d26f46` "feat(universes): add EROTICA (6th), rename SOURCE→NONFICTION,
+  EPIC→FICTION"; CLI `prose --universe list` shows all 6 slugs.)*
 
 ### Audit log
 

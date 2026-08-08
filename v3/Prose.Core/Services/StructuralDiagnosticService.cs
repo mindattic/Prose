@@ -145,7 +145,7 @@ public class StructuralDiagnosticService
             findings.Upsert(
                 filePath: $"node:{slug}",
                 chapterId: null,
-                category: FindingCategory.Other,
+                category: FindingCategory.StructuralFailure,
                 severity: FindingSeverity.High,
                 summary: $"STRUCTURAL-FAILURE [{check.Name}]: {check.Fix}",
                 snippet: check.Evidence,

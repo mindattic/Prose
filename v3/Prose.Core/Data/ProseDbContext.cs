@@ -570,7 +570,8 @@ public class ProseDbContext : DbContext
             e.Property(x => x.TextHash).HasMaxLength(80);
             e.Property(x => x.EventSummaryHash).HasMaxLength(80);
             e.Property(x => x.LastRequestId).HasMaxLength(120);
-            e.HasIndex(x => x.Slug);
+            // No index on Slug — the column is legacy/abandoned (see Beat.Slug doc
+            // comment); nothing queries by it.
             // Beat.Number is the stable "Beat #134" handle the CLI and writer
             // surface to humans. NextBeatNumberAsync allocates as MAX+1; the
             // unique index is the safety net that fails one of two racing

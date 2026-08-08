@@ -1,8 +1,8 @@
 namespace Prose.Core.Services.Audit;
 
 /// <summary>Shared prose-clamping used by every audit that hands a whole node's concatenated
-/// prose to a single LLM call (BookAuditService, StoryScopeAuditService, LogicSweepService,
-/// CraftRuleAuditService — previously four identical private copies of this method).</summary>
+/// prose to a single LLM call (BookAuditService, StoryScopeAuditService, LogicSweepService —
+/// previously several identical private copies of this method).</summary>
 public static class AuditProseUtils
 {
     /// <summary>Keeps head AND tail on truncation — checks that read the opening or the ending

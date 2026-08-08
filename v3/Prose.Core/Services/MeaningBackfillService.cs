@@ -135,8 +135,8 @@ Output STRICT JSON, no fences, no commentary:
     /// is ValueKind-guarded — JsonElement.GetInt32() THROWS InvalidOperationException on a
     /// non-Number token (e.g. a hallucinated "ref": null), and without these guards one
     /// malformed entry would discard every meaning in the WHOLE batch (same bug class fixed in
-    /// LogicSweepService/ChekhovAuditService/EmotionalDepthService/BookOutlineService/
-    /// BeatVerdictService this session).</summary>
+    /// LogicSweepService/ChekhovAuditService/EmotionalDepthService/BookOutlineService this
+    /// session, and in the now-retired BeatVerdictService).</summary>
     internal static List<(Guid BeatId, string Meaning)> ParseMeaningBatch(
         string raw, IReadOnlyDictionary<int, Guid> refMap)
     {

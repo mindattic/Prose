@@ -132,7 +132,6 @@ public class VotingGateTests
         {
             "Prose.Core.Services.NodeReviewService",
             "Prose.Core.Services.EntityReviewService",
-            "Prose.Core.Services.EntityRatingService",
             "Prose.Core.Services.StoryQualityService",
             "Prose.Core.Services.BookReviewService",
             "Prose.Core.Services.ChapterCloseProcessorService",

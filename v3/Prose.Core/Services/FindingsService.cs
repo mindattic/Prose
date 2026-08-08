@@ -6,7 +6,17 @@ using Prose.Core.Interfaces;
 
 namespace Prose.Core.Services;
 
-public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, Other }
+// SemanticDrift/ReaderKnows/StructuralFailure/Liberty/Causality/Interpersonal/AffectBehavior/Xray/
+// BookAudit/StoryScope added 2026-08-08: these subsystems previously all hardcoded
+// FindingCategory.Other because no dedicated value existed, which flattened ~5,200 real findings
+// into one undifferentiated bucket the /findings category-filter chips couldn't distinguish —
+// the main reason the findings backlog had ~0 triage throughput despite the UI supporting it.
+// CraftAudit (also added 2026-08-08) was retired the same day: CraftRuleAuditService, its sole
+// writer, was merged into BeatChecklistGateService (FindingCategory.CraftChecklist) — the two
+// services independently parsed the same CRAFT.md §8 rules, and the checklist's per-beat,
+// hash-cached implementation is the more complete one. No historical backlog existed under
+// CraftAudit at the time of the merge, so the value was removed rather than kept for history.
+public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, ReaderKnows, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Other }
 public enum FindingSeverity { Low, Medium, High }
 public enum FindingStatus   { New, Triaged, Applied, Dismissed }
 

@@ -855,13 +855,18 @@ public static class ServiceCollectionExtensions
         // Reader-Proxy QA Instrument 1: Haiku comprehension probes diffed against the
         // Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect
         // findings. A measurement, not a vote — not VotingGate-gated (SS-A44 exemption,
-        // same as craft_audit / logic sweep).
+        // same as craft_checklist / logic sweep).
         services.AddSingleton<ComprehensionProbeService>();
 
         // Reader-Proxy QA Instrument 2: hash-gated binary craft/delight checklist —
         // CRAFT §8 DON'Ts per beat + "≥1 applicable DELIGHT move" per beat + book-level
         // move-monotony counters (DELIGHT §14). One cheap call per CHANGED beat only.
         services.AddSingleton<BeatChecklistGateService>();
+
+        // Book Health — the single "does this book work" battery + Structural Integrity
+        // Index (SII), consolidating the ~30 previously-scattered quality/scoring systems
+        // behind one deterministic rollup over Findings. See BookHealthService.cs remarks.
+        services.AddSingleton<BookHealthService>();
 
         // Reader-Proxy QA Instrument 4: findings-only gripe jury — cross-family
         // full-read complaints (NO scores), deterministic quote-grounding, Sonnet
@@ -965,7 +970,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<StoryQualityService>();
         services.AddSingleton<StoryRefinementService>();
         services.AddSingleton<CanonGroundingService>();
-        services.AddSingleton<EntityRatingService>();
         services.AddSingleton<EntityReviewService>();
         services.AddSingleton<WeaponAmmoLinkerService>();
         services.AddSingleton<DistributedWorkerCoordinator>();
@@ -1088,7 +1092,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatCoordinationService>();
         services.AddSingleton<MeaningBackfillService>();
         services.AddSingleton<BeatEventSummaryService>();
-        services.AddSingleton<BeatVerdictService>();
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();
         services.AddScoped<EntityMentionService>();
@@ -1113,7 +1116,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LibertyReportService>();
         services.AddSingleton<NodeOutlineService>();
         services.AddSingleton<Prose.Core.Services.Audit.LogicSweepService>();
-        services.AddSingleton<Prose.Core.Services.Audit.CraftRuleAuditService>();
 
         return services;
     }

@@ -81,6 +81,20 @@ public class CharacterRepository : EfRepository<CharacterData>
         return loaded;
     }
 
+    // A character known by both a handle and a legal name (Rook / Inkeri Saarinen) must resolve
+    // to the same row. The base implementation only matches Name, so a bare-handle lookup missed
+    // every alias — the confirmed root cause of repeated duplicate-character creation across the
+    // Rook trilogy and other books (empty Aliases meant nothing disambiguated the two names).
+    // Exact name still wins first; aliases are the fallback, not a substitute.
+    public override CharacterData? GetByName(string name)
+    {
+        var all = GetAll();
+        var exact = all.FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        if (exact != null) return exact;
+        return all.FirstOrDefault(c => c.Aliases.Any(a => !string.IsNullOrWhiteSpace(a)
+            && a.Equals(name, StringComparison.OrdinalIgnoreCase)));
+    }
+
     /// <summary>
     /// Fast single-character fetch that bypasses the full LoadAll pipeline.
     /// Hits CharacterMapper.LoadOne (one row + 25 Includes scoped to that

@@ -21,6 +21,7 @@
 | [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
 | [Book Audit](#book-audit) | 2 |
+| [Book Health](#book-health) | 1 |
 | [Book Logic](#book-logic) | 2 |
 | [Canon](#canon) | 9 |
 | [Canon Doc](#canon-doc) | 7 |
@@ -30,7 +31,6 @@
 | [Context](#context) | 4 |
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 4 |
-| [Craft Audit](#craft-audit) | 1 |
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 4 |
@@ -144,6 +144,18 @@ Link a node to its predecessor, switching it from gateway mode to sequel mode. W
 - `nodeIdOrSlug` (string, required) — The node to update — id (GUID) or slug.
 - `previousNodeIdOrSlug` (string, optional) — The preceding node — id (GUID) or slug. Omit or pass null to clear.
 - `clear` (bool, optional) — Set true to clear PreviousNodeId (revert to gateway mode).
+
+## Book Health
+
+<sub>`BookHealthTools`</sub>
+
+### `book_health`
+
+Run the full book-health battery and return one Structural Integrity Index (SII, 0-100) built from a fixed, documented formula over open Findings + a small number of deterministic rate metrics (Swain scene/sequel compliance, CraftChecklist DELIGHT-landing rate, StoryScope readiness) — NOT an LLM opinion vote (SS-A44). Every point of the score traces to a specific Findings category or rate metric in the response; there is no bare number. tier=free (default) runs only deterministic/near-zero-cost checks (plant-audit, prose-check, noun-consistency, timeline-check, beat-verification, outline-coordination). tier=deep adds one-LLM-call-per-check whole-node audits (examine-emotion, book-audit, diagnose-book, check-fidelity, logic-sweep, craft-checklist, check-canon, altitude-audit, reader-qa comprehension). tier=full adds the heaviest multi-call audits (storyscope-audit, swain-audit, chekhov-audit) — cost scales with book length. The SII itself is always computed from whatever is currently in the Findings table regardless of tier — a free-tier run still reflects a prior full-tier run's findings, it just won't refresh them.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug — a book or a lone chapter.
+- `tier` (string, optional) — free | deep | full
+- `model` (string, optional) — Optional model override for the deep/full tier's LLM calls.
 
 ## Book Logic
 
@@ -531,16 +543,6 @@ Create or update a place / district in canon. Pass empty id to create new; pass 
 - `storyHooks` (string, optional) — Comma-separated story hooks.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing place id to update.
-
-## Craft Audit
-
-<sub>`CraftAuditTools`</sub>
-
-### `craft_audit`
-
-Audit a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms — associative chains, cognitive-architecture tics, the observation tic, mood-soup, purple prose at the peak, italic-thought crutch, over-explanation, jargon front-loading). Each numbered item is parsed live from CanonDocumentSections, so editing §8 via set_canon_section changes what's checked on the next run — no code change needed. Findings persist to the Findings table and auto-heal on re-run. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Edit Session
 
@@ -1528,7 +1530,7 @@ Sweep a node's prose against the entire canon database (entities, locations, wea
 
 ### `check_semantic_fidelity`
 
-Check the Semantic Fidelity Gap for a node — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the book's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a high-scoring beat that no longer resembles the book it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.
+Check the Semantic Fidelity Gap for a node — meaning drift from the book's original intent. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a beat that no longer resembles the book it was born from has drifted. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served something other than the beat's purpose. Evaluates every beat with prose (Beat.Score, if present, is reported but not a gate). Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 

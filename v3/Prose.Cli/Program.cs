@@ -1520,18 +1520,6 @@ if (args.Contains("--craft-checklist"))
     return;
 }
 
-// prose --craft-audit --slug <nodeSlug> [--json]
-// Audits a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms), parsed live from
-// CanonDocumentSections — each numbered item becomes its own check, no hand-duplicated C#
-// array to drift out of sync. Edit §8 via set_canon_section MCP; the next run picks it up.
-// Findings persist to Findings and auto-heal on re-run. Exit 0 = clean, 1 = findings present.
-if (args.Contains("--craft-audit"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CraftAuditCli.RunAsync(args, sp);
-    return;
-}
-
 // prose --diagnose-book --slug <nodeSlug> [--json]
 // Pre-flight structural analysis before running the review panel.
 // Runs 12 targeted checks (antagonist cost, protagonist behavior change,
@@ -1752,7 +1740,7 @@ if (args.Contains("--harvest-entities"))
 // real universe subcommand. Elsewhere in argv, --universe <slug> is the scoping flag other
 // commands accept (parsed at line 28 into UniverseBootstrap.RequestedSlug) —
 // args.Contains("--universe") would incorrectly steal dispatch from every command block defined
-// after this one (e.g. --coordinate, --verdict).
+// after this one (e.g. --coordinate).
 //
 // The subcommand check matters because --universe is ALSO valid in first position as a scoping
 // flag: `prose --universe source --export-node --slug x` is a legitimate export, not a malformed
@@ -1940,10 +1928,13 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
     return;
 }
 
-// prose --audit-book --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
-// The "Player Piano" — one repeatable command running the full QA battery (census +
-// coverage + plant/prose audits; --deep adds per-chapter examine-emotion + book-audit +
-// diagnose + fidelity). --model retargets the deep tier (e.g. Haiku) for the run.
+// prose --audit-book --slug <book-or-chapter-slug> [--deep] [--full] [--model <id>] [--out <path>] [--json]
+// The "Player Piano" — one repeatable command running the full QA battery + the
+// Structural Integrity Index (SII), a deterministic Findings rollup (BookHealthService).
+// FREE (always): census/coverage/plant/prose/noun/timeline/verify/coordinate.
+// DEEP (--deep): + examine-emotion/book-audit/diagnose/fidelity/logic-sweep/craft-checklist/
+// check-canon/altitude-audit/reader-qa. FULL (--full, implies --deep): + storyscope/swain/chekhov.
+// --model retargets the deep/full tier LLM calls (e.g. Haiku) for the run.
 if (args.Contains("--audit-book"))
 {
     var sp = BuildCoreServices(args);
@@ -2214,15 +2205,6 @@ if (args.Contains("--export-event-list"))
 {
     var sp = BuildServicesWithVault(args);
     Environment.ExitCode = await ExportEventListCli.RunAsync(args, sp);
-    return;
-}
-
-// prose --verdict --slug <slug> [--limit N]
-// Per-beat quality verdict: flag CLICHE/GRIPE/CONTRADICTION/MEANING-MISMATCH toward 90+.
-if (args.Contains("--verdict"))
-{
-    var sp = BuildServicesWithVault(args);
-    Environment.ExitCode = await VerdictCli.RunAsync(args, sp);
     return;
 }
 

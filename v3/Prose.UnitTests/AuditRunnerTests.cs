@@ -5,7 +5,7 @@ namespace Prose.UnitTests;
 /// <summary>
 /// Tests for AuditRunner's pure, LLM-free helpers — the shared dispatch/persistence engine
 /// underlying every rule-based audit in the app (BookAuditService, LogicSweepService,
-/// NounConsistencyService, CraftRuleAuditService). A bug here affects every audit type, so this
+/// NounConsistencyService). A bug here affects every audit type, so this
 /// is the highest-leverage place in the audit stack to have solid coverage. Made
 /// DeleteKeyPrefix/SummaryFor/ParseVerdictEnvelope/VerdictEnvelope/Truncate internal (were
 /// private) — InternalsVisibleTo already covers this project. ParseSingleVerdict was already

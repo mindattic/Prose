@@ -39,6 +39,7 @@ public class FactInterpreterService
     private readonly ILlmService llm;
     private readonly WorldClockService clock;
     private readonly EmbeddingService embeddings;
+    private readonly XrefService xref;
     private readonly ILogger<FactInterpreterService> log;
 
     /// <summary>
@@ -57,12 +58,14 @@ public class FactInterpreterService
         ILlmService llm,
         WorldClockService clock,
         EmbeddingService embeddings,
+        XrefService xref,
         ILogger<FactInterpreterService> log)
     {
         this.dbFactory  = dbFactory;
         this.llm        = llm;
         this.clock      = clock;
         this.embeddings = embeddings;
+        this.xref       = xref;
         this.log        = log;
     }
 
@@ -331,6 +334,15 @@ public class FactInterpreterService
             .Select(e => (Guid?)e.Id)
             .FirstOrDefaultAsync(ct);
         if (hit.HasValue) return hit;
+
+        // Path 2.5: alias/handle match, same-type only. A candidate named "Rook" when the
+        // corpus already has "Inkeri Saarinen" with "Rook" as an alias must resolve to the
+        // existing entity, not stub a duplicate — the confirmed root cause of repeated
+        // duplicate-character bugs across the corpus when Path 1/2 (Name/Slug only) miss.
+        var aliasHit = xref.Resolve(name);
+        if (aliasHit != null && string.Equals(aliasHit.Type, entityType, StringComparison.OrdinalIgnoreCase)
+            && Guid.TryParse(aliasHit.Id, out var aliasEntityId))
+            return aliasEntityId;
 
         // Path 3: embedding nearest-match. Catches paraphrase ("Kyle's blade"
         // → Silence the katana), partial names ("Sasha" → Sasha Võ), and

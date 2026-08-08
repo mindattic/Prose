@@ -359,12 +359,52 @@
         <i class="bi bi-person-exclamation me-1"></i>Behavior</button>
     <button class="btn btn-sm @(categoryFilter == FindingCategory.Cliche ? "btn-info text-dark" : "btn-outline-secondary")"
             @onclick="() => SetCategoryFilter(FindingCategory.Cliche)"
-            title="Cliché / semantic drift">
+            title="Cliché / craft-tic pattern findings">
         <i class="bi bi-chat-square me-1"></i>Cliché</button>
     <button class="btn btn-sm @(categoryFilter == FindingCategory.Anachronism ? "btn-secondary" : "btn-outline-secondary")"
             @onclick="() => SetCategoryFilter(FindingCategory.Anachronism)"
             title="Timeline and anachronism findings">
         <i class="bi bi-clock-history me-1"></i>Anachronism</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.SemanticDrift ? "btn-warning text-dark" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.SemanticDrift)"
+            title="High score / low bible-or-intent alignment (SemanticFidelityService)">
+        <i class="bi bi-signpost-split me-1"></i>Semantic Drift</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.ReaderKnows ? "btn-primary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.ReaderKnows)"
+            title="Reader-knowledge-state ledger entries">
+        <i class="bi bi-eye me-1"></i>Reader Knows</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.StructuralFailure ? "btn-danger" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.StructuralFailure)"
+            title="Blocking pre-flight structural diagnostic failures">
+        <i class="bi bi-exclamation-octagon me-1"></i>Structural</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Liberty ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Liberty)"
+            title="Rule-of-Cool creative-liberty findings (canon-addition candidates, advisories, warnings)">
+        <i class="bi bi-stars me-1"></i>Liberty</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Causality ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Causality)"
+            title="Cause-and-effect / common-sense plausibility lens">
+        <i class="bi bi-arrow-repeat me-1"></i>Causality</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Interpersonal ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Interpersonal)"
+            title="Interpersonal-dynamics lens">
+        <i class="bi bi-people me-1"></i>Interpersonal</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.AffectBehavior ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.AffectBehavior)"
+            title="Emotion-drives-action lens">
+        <i class="bi bi-emoji-frown me-1"></i>Affect</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.Xray ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.Xray)"
+            title="X-Ray reveal proposals — prose reveals a canon detail not yet in the entity record">
+        <i class="bi bi-search me-1"></i>X-Ray</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.BookAudit ? "btn-secondary" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.BookAudit)"
+            title="Gateway/Sequel commandment audit">
+        <i class="bi bi-journal-check me-1"></i>Book Audit</button>
+    <button class="btn btn-sm @(categoryFilter == FindingCategory.StoryScope ? "btn-warning text-dark" : "btn-outline-secondary")"
+            @onclick="() => SetCategoryFilter(FindingCategory.StoryScope)"
+            title="StoryScope structural anti-tell audit (SS-A... countermeasures)">
+        <i class="bi bi-robot me-1"></i>StoryScope</button>
     <button class="btn btn-sm @(categoryFilter == FindingCategory.Other ? "btn-secondary" : "btn-outline-secondary")"
             @onclick="() => SetCategoryFilter(FindingCategory.Other)"
             title="Other / uncategorised findings">
@@ -1005,6 +1045,10 @@ else
         FindingCategory.OutlineDrift           => "bg-warning text-dark",
         FindingCategory.GearContradiction      => "bg-secondary",
         FindingCategory.BehaviorContradiction  => "bg-secondary",
+        FindingCategory.SemanticDrift          => "bg-warning text-dark",
+        FindingCategory.ReaderKnows            => "bg-primary",
+        FindingCategory.StructuralFailure      => "bg-danger",
+        FindingCategory.StoryScope             => "bg-warning text-dark",
         _                                      => "bg-secondary",
     };
 

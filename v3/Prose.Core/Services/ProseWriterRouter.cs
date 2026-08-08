@@ -56,7 +56,8 @@ public class ProseWriterRouter(
     BookStateLedgerService? bookStateLedger = null,
     WorldGraphService? worldGraph = null,
     CanonGroundingService? canonGrounding = null,
-    LibertyReportService? libertyReport = null)
+    LibertyReportService? libertyReport = null,
+    SemanticFidelityService? semanticFidelity = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -476,6 +477,7 @@ public class ProseWriterRouter(
                     summaryPrefix: "STORYSCOPE",
                     headerLine: "STORYSCOPE AUDIT GUIDANCE — a structural audit found these AI-fiction tells in this book; do not reproduce them in this beat:",
                     includeSuggestedFix: true,
+                    category: FindingCategory.StoryScope,
                     ct: ct);
                 if (storyScopeGuidance.Length > 0)
                     structuralBlueprintGuidance = !string.IsNullOrEmpty(structuralBlueprintGuidance)
@@ -700,6 +702,16 @@ public class ProseWriterRouter(
                 try { await libertyReport.AnalyseAsync(beatId, capturedResult, capturedBeatGoal, capturedEntityRoster, CancellationToken.None); }
                 catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.AnalyseAsync failed", nameof(LibertyReportService)); }
             }
+
+            // E: Semantic Fidelity — Goodhart's Law check (prose vs. its own stated beat goal).
+            // Was previously only wired into the manual-edit save path, never the generation
+            // path that authors most beats — closed 2026-08-08.
+            if (semanticFidelity != null && beatId != Guid.Empty && capturedNodeId != Guid.Empty
+                && !string.IsNullOrWhiteSpace(capturedResult) && !string.IsNullOrWhiteSpace(capturedBeatGoal))
+            {
+                try { await semanticFidelity.CheckBeatIntentDriftAsync(beatId, capturedNodeId, capturedResult, capturedBeatGoal, CancellationToken.None); }
+                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.CheckBeatIntentDriftAsync failed", nameof(SemanticFidelityService)); }
+            }
           }
           catch (Exception ex) { log.LogWarning(ex, "Post-write side effects failed for beat {BeatId}", beatId); }
         }, CancellationToken.None);
@@ -776,6 +788,7 @@ public class ProseWriterRouter(
     private async Task<string> BuildFindingsGuidanceAsync(
         Guid nodeId, string summaryPrefix, string headerLine,
         bool includeSuggestedFix = false, int maxItems = 3,
+        FindingCategory category = FindingCategory.Other,
         CancellationToken ct = default)
     {
         if (dbFactory == null) return "";
@@ -788,7 +801,7 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(slug)) return "";
 
         var fp = $"node:{slug}";
-        var catKey    = FindingCategory.Other.ToString();
+        var catKey    = category.ToString();
         var statusKey = FindingStatus.New.ToString();
 
         var findings = await db.Findings.AsNoTracking()

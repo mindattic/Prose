@@ -457,8 +457,8 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Check the semantic fidelity of a node — detect the Goodhart's Law gap where beats score high but drift from the book's original meaning. Returns bible alignment (prose vs book Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for each scored beat, with SEMANTIC-DRIFT findings filed for violations. Run after review_node to verify the score reflects real quality, not metric gaming.</summary>
-    [McpServerTool, Description("Check the Semantic Fidelity Gap for a node — Goodhart's Law in prose. Detects beats that score high on the Legion review metric but have drifted from the book's original meaning. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a high-scoring beat that no longer resembles the book it was born from is gaming the metric. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served reviewer patterns, not the beat's purpose. Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.")]
+    /// <summary>Check the semantic fidelity of a node — detect meaning drift from the book's original intent. Returns bible alignment (prose vs book Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for every beat with prose, with SEMANTIC-DRIFT findings filed for violations. Beat.Score (if present) is informational only — it is not a gate.</summary>
+    [McpServerTool, Description("Check the Semantic Fidelity Gap for a node — meaning drift from the book's original intent. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a beat that no longer resembles the book it was born from has drifted. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served something other than the beat's purpose. Evaluates every beat with prose (Beat.Score, if present, is reported but not a gate). Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.")]
     public async Task<string> CheckSemanticFidelity(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
     {
@@ -480,11 +480,10 @@ public class QualityTools
             slug                  = report.Slug,
             node_score          = report.NodeScore,
             beats_checked         = report.BeatsChecked,
-            beats_scored          = report.BeatsScored,
+            beats_evaluated       = report.BeatsEvaluated,
             mean_bible_alignment  = Math.Round(report.MeanBibleAlignment, 4),
             mean_intent_alignment = report.MeanIntentAlignment.HasValue
                 ? Math.Round(report.MeanIntentAlignment.Value, 4) : (double?)null,
-            score_gaming_threshold  = SemanticFidelityService.ScoreGamingThreshold,
             bible_alignment_floor   = SemanticFidelityService.BibleAlignmentFloor,
             intent_alignment_floor  = SemanticFidelityService.IntentAlignmentFloor,
             violations_count      = report.Violations.Count,

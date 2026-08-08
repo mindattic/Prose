@@ -75,7 +75,7 @@ public static class CheckFidelityCli
                 slug                 = report.Slug,
                 node_score         = report.NodeScore,
                 beats_checked        = report.BeatsChecked,
-                beats_scored         = report.BeatsScored,
+                beats_evaluated      = report.BeatsEvaluated,
                 mean_bible_alignment = Math.Round(report.MeanBibleAlignment, 4),
                 mean_intent_alignment = report.MeanIntentAlignment.HasValue
                     ? Math.Round(report.MeanIntentAlignment.Value, 4) : (double?)null,
@@ -101,7 +101,7 @@ public static class CheckFidelityCli
         Console.WriteLine();
         Console.WriteLine($"Node : {report.Slug}");
         Console.WriteLine($"Score  : {report.NodeScore?.ToString("0.#") ?? "unscored"}%");
-        Console.WriteLine($"Beats  : {report.BeatsChecked} checked, {report.BeatsScored} above score threshold ({SemanticFidelityService.ScoreGamingThreshold:0}%)");
+        Console.WriteLine($"Beats  : {report.BeatsChecked} checked, {report.BeatsEvaluated} evaluated (bible/intent alignment computed for every beat with prose — Score is informational only)");
         Console.WriteLine($"Bible alignment (mean) : {report.MeanBibleAlignment:P1}  (floor {SemanticFidelityService.BibleAlignmentFloor:P0})");
         if (report.MeanIntentAlignment.HasValue)
             Console.WriteLine($"Intent alignment (mean): {report.MeanIntentAlignment.Value:P1}  (floor {SemanticFidelityService.IntentAlignmentFloor:P0})");

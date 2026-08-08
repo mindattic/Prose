@@ -1,0 +1,347 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Prose.Core.Data;
+using Prose.Core.Services.Audit;
+
+namespace Prose.Core.Services;
+
+public enum BookHealthTier { Free, Deep, Full }
+
+/// <summary>One battery check's run outcome — did it complete, and if not, why. The check's
+/// own service is the one that filed any Findings; this is just "did the call succeed."</summary>
+public sealed record CheckOutcome(string Name, bool Success, string Note);
+
+/// <summary>One FindingCategory's contribution to the Findings-deduction term — the raw
+/// severity-weighted sum before the per-category cap, and what actually got deducted.</summary>
+public sealed record SiiCategoryDeduction(string Category, int High, int Medium, int Low, int RawPoints, int CappedPoints);
+
+/// <summary>One of the three named rate metrics — a book-wide rate that discrete Findings
+/// counts don't distinguish (e.g. "barely over the line" vs "comfortably clean").</summary>
+public sealed record SiiRateAdjustment(string Metric, string Value, int Adjustment);
+
+public sealed record BookHealthReport(
+    Guid NodeId, string Slug, string Title, string Tier, DateTime GeneratedAt,
+    IReadOnlyList<CheckOutcome> Checks,
+    int Sii, string Grade,
+    IReadOnlyList<SiiCategoryDeduction> FindingsDeduction,
+    IReadOnlyList<SiiRateAdjustment> RateAdjustments,
+    IReadOnlyList<string> ExcludedFromScore);
+
+/// <summary>
+/// The single "does this book work" battery + score. Runs the FREE/DEEP/FULL tiers of
+/// checks — each check's own service files Findings as a side effect; this service does not
+/// duplicate that — then computes the Structural Integrity Index (SII) as a fully
+/// deterministic rollup over OPEN Findings plus three named rate metrics. NOT a vote, NOT an
+/// LLM opinion score (SS-A44 compliant): the SII arithmetic itself makes no LLM calls — it
+/// only counts what earlier LLM-assisted or mechanical checks already filed.
+///
+/// A handful of checks (BeatVerificationService, SwainAuditService, ChekhovAuditService,
+/// TimelineConsistencyService, and selectively BeatCoordinationService) do not file Findings
+/// on their own, so this service wraps their results into Findings itself, mapping each
+/// service's own severity vocabulary onto FindingSeverity. BeatGranularityService and
+/// BeatProseMetricsService are deliberately NOT wrapped — they are pacing/distribution
+/// diagnostics, not correctness defects, and stay informational-only. EmotionalDepthService
+/// is called (its own blocking-dimension Findings still count) but its aggregate
+/// EmotionalDepthScore is excluded from the SII arithmetic — see remarks on ComputeScoreAsync.
+///
+/// <c>Prose.Cli</c>'s <c>--audit-book</c> and the <c>book_health</c> MCP tool are both thin
+/// callers of this service — this is where the logic lives exactly once.
+/// </summary>
+public class BookHealthService(
+    IDbContextFactory<ProseDbContext> dbFactory,
+    FindingsService findingsSvc,
+    PlantPayoffService plantPayoff,
+    PostBeatValidationService postBeatValidator,
+    NounConsistencyService nounConsistency,
+    TimelineConsistencyService timelineConsistency,
+    BeatVerificationService beatVerification,
+    BeatCoordinationService beatCoordination,
+    EmotionalDepthService emotionalDepth,
+    BookAuditService bookAudit,
+    StructuralDiagnosticService structuralDiagnostic,
+    SemanticFidelityService semanticFidelity,
+    LogicSweepService logicSweep,
+    BeatChecklistGateService beatChecklist,
+    CanonContradictionService canonContradiction,
+    AltitudeAuditService altitudeAudit,
+    ComprehensionProbeService comprehensionProbe,
+    StoryScopeAuditService storyScopeAudit,
+    SwainAuditService swainAudit,
+    ChekhovAuditService chekhovAudit,
+    ILogger<BookHealthService> log)
+{
+    // ── SII formula constants ───────────────────────────────────────────────────────
+    private const int HighWeight = 8, MediumWeight = 3, LowWeight = 1;
+    private const int CategoryCap = 20;
+    private const int RateCap = 15;
+    /// <summary>Mirrors BeatChecklistGateService's own DelightExemptWordCount — a beat this
+    /// short has no job that demands a DELIGHT move, so it's excluded from the landing rate.</summary>
+    private const int DelightExemptWordCount = 120;
+    /// <summary>Below this, check-fidelity's Seed-anchor comparison is pure noise (a title,
+    /// not a bible) — same guard AuditNodeCli already used before this consolidation.</summary>
+    private const int MinSeedForFidelity = 200;
+
+    public async Task<BookHealthReport> RunAsync(Guid nodeId, BookHealthTier tier, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking()
+            .Where(n => n.Id == nodeId)
+            .Select(n => new { n.Id, n.Slug, n.Title, n.Seed })
+            .FirstOrDefaultAsync(ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        var slug = node.Slug ?? nodeId.ToString("N");
+
+        var checks = new List<CheckOutcome>();
+        SwainAuditReport? swainReport = null;
+        BeatChecklistGateService.ChecklistRunResult? checklistResult = null;
+        StoryScopeAuditReport? storyScopeReport = null;
+        bool ranEmotionalDepth = false;
+
+        // ── FREE tier — deterministic / near-zero API cost ──────────────────────────
+        await RunCheckAsync(checks, "plant-audit", async () => { await plantPayoff.AuditAsync(nodeId, ct); });
+        await RunCheckAsync(checks, "prose-check", () => ProseCheckAsync(db, nodeId, slug, ct));
+        await RunCheckAsync(checks, "validate-nouns", async () => { await nounConsistency.ValidateAsync(nodeId, ct); });
+        await RunCheckAsync(checks, "timeline-check", () => TimelineCheckAsync(nodeId, slug, ct));
+        await RunCheckAsync(checks, "verify-book", () => BeatVerificationAsync(nodeId, slug, ct));
+        await RunCheckAsync(checks, "coordinate", () => BeatCoordinationAsync(slug, ct));
+
+        // ── DEEP tier — one LLM call per check per node ─────────────────────────────
+        if (tier is BookHealthTier.Deep or BookHealthTier.Full)
+        {
+            await RunCheckAsync(checks, "examine-emotion", async () =>
+            {
+                await emotionalDepth.ExamineNodeAsync(nodeId, ct: ct);
+                ranEmotionalDepth = true;
+            });
+            await RunCheckAsync(checks, "book-audit", async () => { await bookAudit.AuditAsync(nodeId, ct); });
+            await RunCheckAsync(checks, "diagnose-book", async () => { await structuralDiagnostic.DiagnoseNodeAsync(nodeId, ct: ct); });
+            if ((node.Seed?.Length ?? 0) >= MinSeedForFidelity)
+                await RunCheckAsync(checks, "check-fidelity", async () => { await semanticFidelity.AuditNodeAsync(nodeId, ct); });
+            else
+                checks.Add(new CheckOutcome("check-fidelity", true, "skipped — no Seed anchor ≥200 chars; would be noise"));
+            await RunCheckAsync(checks, "logic-sweep", async () => { await logicSweep.RunAsync(nodeId, ct); });
+            await RunCheckAsync(checks, "craft-checklist", async () => { checklistResult = await beatChecklist.RunAsync(nodeId, force: false, ct); });
+            await RunCheckAsync(checks, "check-canon", async () => { await canonContradiction.CheckNodeAsync(nodeId, proposeFixes: false, ct); });
+            await RunCheckAsync(checks, "altitude-audit", async () => { await altitudeAudit.AuditAsync(nodeId, forceSynopsis: false, ct); });
+            await RunCheckAsync(checks, "reader-qa", async () => { await comprehensionProbe.RunAsync(nodeId, force: false, ct); });
+        }
+
+        // ── FULL tier — heaviest multi-call audits, cost scales with book length ────
+        if (tier == BookHealthTier.Full)
+        {
+            await RunCheckAsync(checks, "storyscope-audit", async () => { storyScopeReport = await storyScopeAudit.AuditAsync(nodeId, ct); });
+            await RunCheckAsync(checks, "swain-audit", async () => { swainReport = await SwainAsync(slug, ct); });
+            await RunCheckAsync(checks, "chekhov-audit", () => ChekhovAsync(nodeId, slug, ct));
+        }
+
+        var (sii, grade, deduction, rates, excluded) = await ComputeScoreAsync(
+            slug, swainReport, checklistResult, storyScopeReport, ranEmotionalDepth, ct);
+
+        return new BookHealthReport(nodeId, slug, node.Title, tier.ToString(), DateTime.UtcNow,
+            checks, sii, grade, deduction, rates, excluded);
+    }
+
+    private async Task RunCheckAsync(List<CheckOutcome> checks, string name, Func<Task> action)
+    {
+        try { await action(); checks.Add(new CheckOutcome(name, true, "ok")); }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "BookHealth check '{Check}' failed", name);
+            checks.Add(new CheckOutcome(name, false, ex.Message));
+        }
+    }
+
+    // ── FREE-tier wrappers for services that don't self-file Findings ──────────────
+
+    /// <summary>Runs the deterministic prose-pattern linter over every beat and files
+    /// violations via the same PostBeatValidationService.QuickValidateAsync path already
+    /// used on every beat save — reuses existing Findings-filing logic (same pattern the
+    /// scan_book_violations MCP tool already follows) rather than duplicating it.</summary>
+    private async Task ProseCheckAsync(ProseDbContext db, Guid nodeId, string slug, CancellationToken ct)
+    {
+        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var texts = await db.BeatNodes.AsNoTracking()
+            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
+            .Select(bn => bn.Beat!.Text).ToListAsync(ct);
+        foreach (var text in texts)
+            await postBeatValidator.QuickValidateAsync(slug, text, ct);
+    }
+
+    /// <summary>TimelineConsistencyService returns findings but never files them — wrap here.</summary>
+    private async Task TimelineCheckAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        var results = await timelineConsistency.CheckNodeAsync(nodeId, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "TIMELINE ");
+        foreach (var r in results)
+        {
+            var sev = r.Severity.Contains("high", StringComparison.OrdinalIgnoreCase) ? FindingSeverity.High
+                    : r.Severity.Contains("med", StringComparison.OrdinalIgnoreCase) ? FindingSeverity.Medium
+                    : FindingSeverity.Low;
+            var who = r.EntityName != null ? $" ({r.EntityName})" : "";
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Contradiction, sev,
+                $"TIMELINE [{r.Kind}]{who}: {r.Detail}" + (r.BeatNumber.HasValue ? $" (beat #{r.BeatNumber})" : ""),
+                snippet: null, suggestedFix: null);
+        }
+    }
+
+    /// <summary>BeatVerificationService persists to the BeatVerifications table (its own
+    /// Truth-Table dashboard source) but never files shared Findings — wrap the non-Pass
+    /// rows here. Severity vocabulary (BLOCKER/MODERATE/MINOR) maps 1:1 onto High/Medium/Low.</summary>
+    private async Task BeatVerificationAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        await beatVerification.VerifyBookAsync(slug, ct);
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var nodeIds = new List<Guid> { nodeId };
+        nodeIds.AddRange(await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct));
+        var beatIds = await db.BeatNodes.AsNoTracking()
+            .Where(bn => nodeIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
+
+        var failing = await db.BeatVerifications.AsNoTracking()
+            .Where(v => beatIds.Contains(v.BeatId) && v.Result != "Pass" && v.Result != "Skipped")
+            .Join(db.Beats.AsNoTracking(), v => v.BeatId, b => b.Id, (v, b) => new { v.BeatId, v.CheckType, v.Result, v.Severity, v.Evidence, b.Number })
+            .ToListAsync(ct);
+
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "VERIFY ");
+        foreach (var x in failing)
+        {
+            var sev = x.Severity switch { "BLOCKER" => FindingSeverity.High, "MODERATE" => FindingSeverity.Medium, _ => FindingSeverity.Low };
+            findingsSvc.Upsert($"node:{slug}/beat:{x.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, sev,
+                $"VERIFY [{x.CheckType}] beat #{x.Number}: {x.Result} — {x.Evidence}", snippet: null, suggestedFix: null);
+        }
+    }
+
+    /// <summary>BeatCoordinationService produces a bible↔blueprint↔beat coverage report but
+    /// never files Findings. Only beats that HAVE prose but are missing a coordinate are a
+    /// defect — a beat with no prose yet is unwritten WIP, not a quality finding. Gated on
+    /// <see cref="BookScopeContext.HasBlueprint"/>: without a blueprint, every beat's
+    /// CONSTRUCTION coordinate is trivially absent (flag "NO_CONSTRUCTION" on every single
+    /// beat) — that's "this book hasn't run --generate-blueprint yet" (already surfaced as a
+    /// gap elsewhere), not a per-beat drift defect, and filing it here would crater every
+    /// unblueprinted book's SII on a false signal.</summary>
+    private async Task BeatCoordinationAsync(string slug, CancellationToken ct)
+    {
+        var report = await beatCoordination.CoordinateAsync(slug, jsonPath: null, stamp: false, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "COORDINATE ");
+        if (!report.BookScope.HasBlueprint) return;
+        foreach (var b in report.Beats.Where(b => b.ProseLength > 0 && !b.Covered))
+            findingsSvc.Upsert($"node:{slug}/beat:{b.BeatId:N}", chapterId: null, FindingCategory.OutlineDrift, FindingSeverity.Medium,
+                $"COORDINATE beat #{b.Number}: written but not coordinated to its outline slot — {string.Join(", ", b.Flags)}",
+                snippet: null, suggestedFix: null);
+    }
+
+    /// <summary>SwainAuditService returns per-beat classifications but never files shared
+    /// Findings. File BLOCKER (Deficient) only by default — MODERATE (Ambiguous) is a soft
+    /// call that would otherwise drown the inbox (same calibration lesson BeatChecklistGateService
+    /// already learned filing DELIGHT flat-beats).</summary>
+    private async Task<SwainAuditReport> SwainAsync(string slug, CancellationToken ct)
+    {
+        var report = await swainAudit.AuditAsync(slug, ct: ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SWAIN ");
+        foreach (var b in report.Results.Where(b => b.Severity == "BLOCKER"))
+            findingsSvc.Upsert($"node:{slug}/beat:{b.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.High,
+                $"SWAIN beat #{b.Position} \"{b.Title}\": {b.Classification} missing {b.MissingElement} — {b.Note}",
+                snippet: null, suggestedFix: null);
+        return report;
+    }
+
+    /// <summary>ChekhovAuditService returns a verdict per prop cluster but never files shared
+    /// Findings. ORPHANED (setup with no payoff) and FLAG (unclear) are the two verdicts that
+    /// name an actual defect; DECORATION/EARNS_IT/ATMOSPHERE are passes.</summary>
+    private async Task ChekhovAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        var report = await chekhovAudit.AuditAsync(nodeId, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "CHEKHOV ");
+        foreach (var f in report.Findings.Where(f => f.Verdict is "ORPHANED" or "FLAG"))
+        {
+            var sev = f.Verdict == "ORPHANED" ? FindingSeverity.Medium : FindingSeverity.Low;
+            var loc = f.Appearances.Count > 0 ? $"/beat:{f.Appearances[0].BeatLabel}" : "";
+            findingsSvc.Upsert($"node:{slug}{loc}", chapterId: null, FindingCategory.StructuralFailure, sev,
+                $"CHEKHOV [{f.Verdict}] {f.PropName} ({f.PropType}): {f.Reasoning}",
+                snippet: null, suggestedFix: f.Fix);
+        }
+    }
+
+    // ── SII computation ─────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// The Structural Integrity Index. Layer 1 (findings deduction) is a pure SQL aggregate
+    /// over OPEN Findings scoped to this book — no LLM calls happen here, only counting.
+    /// Layer 2 (rate adjustments) folds in exactly three named book-wide rates that discrete
+    /// Findings counts don't distinguish. EmotionalDepthScore is deliberately excluded from
+    /// both layers: it is a pointwise 0-100 LLM-rubric average, exactly the failure mode
+    /// this project's own adopted doctrine (docs/READER-QA.md, SS-A44) says is unreliable —
+    /// folding it in, even via a floor, would smuggle an unreliable opinion back into the one
+    /// number this whole system exists to make trustworthy. Its own blocking-dimension
+    /// Findings (filed by EmotionalDepthService itself) still count in Layer 1 normally.
+    /// </summary>
+    private async Task<(int Sii, string Grade, List<SiiCategoryDeduction> Deduction, List<SiiRateAdjustment> Rates, List<string> Excluded)>
+        ComputeScoreAsync(
+            string slug, SwainAuditReport? swain, BeatChecklistGateService.ChecklistRunResult? checklist,
+            StoryScopeAuditReport? storyScope, bool ranEmotionalDepth, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var prefix = $"node:{slug}";
+        var open = await db.Findings.AsNoTracking()
+            .Where(f => f.FilePath.StartsWith(prefix) && (f.Status == "New" || f.Status == "Triaged"))
+            .Select(f => new { f.Category, f.Severity })
+            .ToListAsync(ct);
+
+        var deduction = new List<SiiCategoryDeduction>();
+        var totalDeduction = 0;
+        foreach (var g in open.GroupBy(f => f.Category))
+        {
+            var high = g.Count(x => x.Severity == "High");
+            var medium = g.Count(x => x.Severity == "Medium");
+            var low = g.Count(x => x.Severity == "Low");
+            var raw = high * HighWeight + medium * MediumWeight + low * LowWeight;
+            var capped = Math.Min(raw, CategoryCap);
+            deduction.Add(new SiiCategoryDeduction(g.Key, high, medium, low, raw, capped));
+            totalDeduction += capped;
+        }
+        deduction.Sort((a, b) => b.CappedPoints.CompareTo(a.CappedPoints));
+
+        var rates = new List<SiiRateAdjustment>();
+        var rateTotal = 0;
+
+        if (swain != null && swain.TotalBeats > 0)
+        {
+            var compliance = swain.Results.Count(r => r.IsPass) / (double)swain.TotalBeats;
+            var adj = compliance >= 0.90 ? 0 : compliance >= 0.75 ? -3 : compliance >= 0.60 ? -6 : -10;
+            rates.Add(new SiiRateAdjustment("Swain scene/sequel compliance", $"{compliance:P0}", adj));
+            rateTotal += adj;
+        }
+
+        if (checklist != null && checklist.Beats.Count > 0)
+        {
+            var eligible = checklist.Beats.Where(b => b.WordCount >= DelightExemptWordCount).ToList();
+            if (eligible.Count > 0)
+            {
+                var landing = eligible.Count(b => b.MovesLanded.Count > 0) / (double)eligible.Count;
+                var adj = landing >= 0.85 ? 0 : landing >= 0.65 ? -2 : -4;
+                rates.Add(new SiiRateAdjustment("CraftChecklist DELIGHT landing rate", $"{landing:P0}", adj));
+                rateTotal += adj;
+            }
+        }
+
+        if (storyScope != null)
+        {
+            var adj = storyScope.Ready ? 0 : -5;
+            rates.Add(new SiiRateAdjustment("StoryScope readiness", storyScope.Ready ? "Ready" : "Not ready", adj));
+            rateTotal += adj;
+        }
+
+        var cappedRateTotal = Math.Max(rateTotal, -RateCap);
+
+        var excluded = new List<string>();
+        if (ranEmotionalDepth)
+            excluded.Add("EmotionalDepthScore — informational only, not scored into SII (GLMZ/CODA-register-specific, " +
+                         "near-zero corpus coverage; its own blocking-dimension findings above still count).");
+
+        var sii = Math.Clamp(100 - totalDeduction + cappedRateTotal, 0, 100);
+        var grade = sii >= 90 ? "A" : sii >= 80 ? "B" : sii >= 70 ? "C" : sii >= 60 ? "D" : "F";
+
+        return (sii, grade, deduction, rates, excluded);
+    }
+}

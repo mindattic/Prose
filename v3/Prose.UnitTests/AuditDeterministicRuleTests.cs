@@ -1,3 +1,4 @@
+using Prose.Core.Services;
 using Prose.Core.Services.Audit;
 
 namespace Prose.UnitTests;
@@ -119,9 +120,9 @@ public class AuditDeterministicRuleTests
     [Test]
     public void CountItalics_CountsSingleAsteriskSpansAndIgnoresBold()
     {
-        Assert.That(CraftRuleAuditService.InteriorityDensityRule.CountItalics("*One.* plain *Two.*"), Is.EqualTo(2));
-        Assert.That(CraftRuleAuditService.InteriorityDensityRule.CountItalics("**bold** not italics"), Is.EqualTo(0));
-        Assert.That(CraftRuleAuditService.InteriorityDensityRule.CountItalics("no markers at all"), Is.EqualTo(0));
+        Assert.That(BeatChecklistGateService.InteriorityDensityRule.CountItalics("*One.* plain *Two.*"), Is.EqualTo(2));
+        Assert.That(BeatChecklistGateService.InteriorityDensityRule.CountItalics("**bold** not italics"), Is.EqualTo(0));
+        Assert.That(BeatChecklistGateService.InteriorityDensityRule.CountItalics("no markers at all"), Is.EqualTo(0));
     }
 
     [Test]
@@ -132,7 +133,7 @@ public class AuditDeterministicRuleTests
             .Select(i => Beat(i, i * 50, "*a.* body *b.* body *c.* body *d.*"))
             .ToList();
 
-        var verdicts = await new CraftRuleAuditService.InteriorityDensityRule().EvaluateAsync(Ctx(beats), default);
+        var verdicts = await new BeatChecklistGateService.InteriorityDensityRule().EvaluateAsync(Ctx(beats), default);
 
         Assert.That(verdicts.Any(v => v.Severity == "MODERATE"), Is.True);
         Assert.That(verdicts.First().Evidence, Does.Contain("20 italic"));
@@ -148,7 +149,7 @@ public class AuditDeterministicRuleTests
             Beat(1, 50, "*One flat line.*"), Beat(2, 100, "plain"), Beat(3, 150, "plain"),
             Beat(4, 200, "plain"), Beat(5, 250, "plain"),
         };
-        var verdicts = await new CraftRuleAuditService.InteriorityDensityRule().EvaluateAsync(Ctx(beats), default);
+        var verdicts = await new BeatChecklistGateService.InteriorityDensityRule().EvaluateAsync(Ctx(beats), default);
         Assert.That(verdicts, Is.Empty);
     }
 
@@ -160,21 +161,21 @@ public class AuditDeterministicRuleTests
     [TestCase("Thurl noted that too, filed it in the same column")]
     [TestCase("checking the ledger in his head without writing anything down")]
     public void FindTics_RetiredCognitiveFraming_IsFlagged(string prose)
-        => Assert.That(CraftRuleAuditService.RetiredTicRule.FindTics(prose), Is.Not.Empty);
+        => Assert.That(BeatChecklistGateService.RetiredTicRule.FindTics(prose), Is.Not.Empty);
 
     [TestCase("Enough that old Ferrin did the sum twice and didn't like it")]
     [TestCase("The toll-master has a ledger chained to his belt")]
     [TestCase("Just a boy doing sums for coin, the same as anyone")]
     [TestCase("He counts it twice. The second count doesn't fix the first.")]
     public void FindTics_LiteralDiegeticBookkeeping_IsNotFlagged(string prose)
-        => Assert.That(CraftRuleAuditService.RetiredTicRule.FindTics(prose), Is.Empty,
+        => Assert.That(BeatChecklistGateService.RetiredTicRule.FindTics(prose), Is.Empty,
             "money-work is this corpus's actual plot; only mind-as-ledger metaphor is retired");
 
     [Test]
     public async Task RetiredTic_CitesTheBeatAndQuotesSurroundingText()
     {
         var beats = new[] { Beat(1, 50, "He read it. Does the arithmetic he already knew the answer to, twice over.") };
-        var verdicts = await new CraftRuleAuditService.RetiredTicRule().EvaluateAsync(Ctx(beats), default);
+        var verdicts = await new BeatChecklistGateService.RetiredTicRule().EvaluateAsync(Ctx(beats), default);
 
         Assert.That(verdicts, Has.Count.EqualTo(1));
         Assert.That(verdicts[0].Location, Is.EqualTo(beats[0].Id.ToString()));

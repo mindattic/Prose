@@ -52,7 +52,7 @@ All four file into the **Findings** table (categories `ComprehensionDefect`,
 Reports land in `audit-outlines-<date>/reader-qa/<SLUG>.md`.
 
 Instruments 1, 2, and 4 (report mode) are **measurements, not votes** — they are
-outside the SS-A44 VotingGate, same exemption as `craft_audit` and the logic sweep.
+outside the SS-A44 VotingGate, same exemption as `craft_checklist` and the logic sweep.
 Instrument 3 and any automated apply arm go through the gate.
 
 ## 3. Fix discipline {#SS-RQA-3}

@@ -135,7 +135,7 @@ public class EntityReviewService
     }
 
     /// <summary>Returns all reviewed entities (Rating > 0) across all repos,
-    /// sorted by Rating descending — same signature as EntityRatingService.GetAllRated().</summary>
+    /// sorted by Rating descending.</summary>
     public IEnumerable<(string Name, string Type, string Route, string Id, double Rating, int VoteCount)> GetAllReviewed()
     {
         var results = new List<(string Name, string Type, string Route, string Id, double Rating, int VoteCount)>();

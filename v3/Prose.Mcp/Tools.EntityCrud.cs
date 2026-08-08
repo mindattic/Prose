@@ -61,6 +61,29 @@ public class CoreEntityCrudTools
         [Description("Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.")] string physicalDescriptionJson = "",
         [Description("Optional existing character id (32-char hex or full UUID) to update.")] string id = "")
     {
+        if (string.IsNullOrEmpty(id))
+        {
+            // Alias-aware collision guard: GetByName also checks known aliases/handles, so a
+            // character already on file under a different name (e.g. "Rook" for "Inkeri
+            // Saarinen") is caught here instead of silently forking into a duplicate row. Never
+            // auto-merge — that's the author's call — just refuse the fork and point at the
+            // existing id.
+            var existing = characters.GetByName(name);
+            if (existing != null)
+            {
+                return JsonSerializer.Serialize(new
+                {
+                    ok = false,
+                    error = "name_or_alias_matches_existing_character",
+                    existingId = existing.Id,
+                    existingName = existing.Name,
+                    message = $"'{name}' matches an existing character (id={existing.Id}, name='{existing.Name}') "
+                            + "by name or alias. Pass that id to update the existing record — e.g. if this is a "
+                            + $"handle for the same person, add '{name}' to their aliases — instead of creating a duplicate.",
+                }, CanonTools.JsonOpts);
+            }
+        }
+
         var c = string.IsNullOrEmpty(id)
             ? new CharacterData()
             : (characters.GetById(id) ?? new CharacterData { Id = id });

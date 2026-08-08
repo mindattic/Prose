@@ -17,8 +17,7 @@ namespace Prose.Core.Services.Audit;
 /// a variable-length list from a single LLM call rather than "N rules, ≤1 verdict-set each" —
 /// left as bespoke rather than forced onto this). This is for rules that really are independent,
 /// enumerable checks: BookAuditService's commandments, NounConsistencyService's deprecated-name
-/// rows, and (later) LogicSweepService's six dimensions and CraftRuleAuditService's CRAFT.md
-/// DON'Ts all fit.
+/// rows, and LogicSweepService's six dimensions all fit.
 /// </summary>
 public class AuditRunner(ILlmService llm, FindingsService findings)
 {

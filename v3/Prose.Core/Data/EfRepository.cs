@@ -159,7 +159,12 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
         return list;
     }
 
-    public T? GetByName(string name)
+    /// <summary>
+    /// Virtual so subtypes with an alias bridge table (e.g. <see cref="Prose.Core.Services.CharacterRepository"/>)
+    /// can also match on a known alias/handle, not just the canonical name — a character known by
+    /// both a handle and a legal name must resolve to one row, not two.
+    /// </summary>
+    public virtual T? GetByName(string name)
         => GetAll().FirstOrDefault(item => nameSelector(item).Equals(name, StringComparison.OrdinalIgnoreCase));
 
     public T? GetById(string id)

@@ -775,7 +775,7 @@ public class StoryScopeAuditService(
                 findings.Upsert(
                     filePath:     $"node:{node.Slug}",
                     chapterId:    null,
-                    category:     FindingCategory.Other,
+                    category:     FindingCategory.StoryScope,
                     severity:     check.Severity == "BLOCKER" ? FindingSeverity.High : FindingSeverity.Medium,
                     summary:      $"{FindingPrefix} {check.Key}: {Truncate(check.Evidence, 300)}",
                     snippet:      null,

@@ -31,8 +31,12 @@ public static class ScoreTrendCli
 
         // Aggregate: for each node, take its latest score-history record.
         // Then order all nodes by that RecordedAt (earliest = oldest work).
-        var rows = await db.NodeScoreHistories
-            .AsNoTracking()
+        // Joining through db.Nodes (not just db.NodeScoreHistories) matters: Nodes carries the
+        // ambient-universe EF query filter and NodeScoreHistory does not, so starting from the
+        // history table alone silently ignored --universe / PROSE_UNIVERSE entirely — every
+        // universe returned the identical unfiltered set.
+        var rows = await db.Nodes.AsNoTracking()
+            .Join(db.NodeScoreHistories.AsNoTracking(), n => n.Id, h => h.NodeId, (n, h) => h)
             .GroupBy(h => h.NodeId)
             .Select(g => new
             {
@@ -77,12 +81,12 @@ public static class ScoreTrendCli
             else
             {
                 var d = mean - prevMean.Value;
-                delta = d >= 0 ? $"+{d:0.1}" : $"{d:0.1}";
+                delta = d >= 0 ? $"+{d:F1}" : $"{d:F1}";
                 if (d < 0) exitCode = 1;
             }
 
             string label = b == 0 ? $"{earliest}+" : $"{earliest}…{latest}";
-            Console.WriteLine($"  {b + 1,-5}  {slice.Count,-8}  {mean,9:0.1}    {delta}");
+            Console.WriteLine($"  {b + 1,-5}  {slice.Count,-8}  {mean,9:F1}    {delta}");
             prevMean = mean;
         }
 

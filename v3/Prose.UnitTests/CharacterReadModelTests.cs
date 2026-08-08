@@ -176,4 +176,68 @@ public class CharacterReadModelTests
         using var db2 = TestDbFactory.For(paths, "character").CreateDbContext();
         Assert.That(db2.CharacterReadModels.Count(), Is.GreaterThanOrEqualTo(1), "the backfill must persist so the next read is fast");
     }
+
+    [Test]
+    public void GetAll_Backfill_ReconcilesRow_WhenPhysicalRowHasStaleUniverseId()
+    {
+        // Reproduces the confirmed cross-universe PK-collision bug (fixed 2026-08-08):
+        // CharacterMapper.SaveReadModelSafe's existence check used to be universe-scoped, so a
+        // read-model row already physically present under a stale/mismatched UniverseId (e.g.
+        // Guid.Empty, from before the column existed) was invisible under the current ambient
+        // scope. GetAll's backfill would then try to INSERT, collide on the real PK (CharacterId),
+        // and its recovery re-query — also scoped — would find nothing either, silently leaving
+        // the character's read-model unrefreshed forever. The fix uses IgnoreQueryFilters() on
+        // both lookups and always re-stamps UniverseId from the owning Entity.
+        var real = new FakeUniverseContext();
+        var previous = UniverseScope.Current;
+        UniverseScope.Current = real;
+        try
+        {
+            var scopedUniverse = new Guid("0197e9c9-0ccc-7000-8000-00000000000c");
+            real.CurrentId = scopedUniverse;
+
+            repo.Save(MakeChar("Delta", "amber", "d"));
+            var id = repo.GetAll().Single(c => c.Name == "Delta").Id;
+            var guid = Guid.ParseExact(id, "N");
+
+            // Simulate the stale/mismatched stamp a legacy row could carry.
+            using (var db = TestDbFactory.For(paths, "character").CreateDbContext())
+            {
+                var row = db.CharacterReadModels.IgnoreQueryFilters().Single(r => r.CharacterId == guid);
+                row.UniverseId = Guid.Empty;
+                db.SaveChanges();
+            }
+
+            repo.Reload();
+            var all = repo.GetAll();   // still scoped to scopedUniverse — must not silently drop Delta
+
+            Assert.That(all.Any(c => c.Name == "Delta"), Is.True,
+                "a read-model row with a stale UniverseId stamp must still be found and reconciled, not silently orphaned");
+
+            using var db2 = TestDbFactory.For(paths, "character").CreateDbContext();
+            var fixedRow = db2.CharacterReadModels.IgnoreQueryFilters().Single(r => r.CharacterId == guid);
+            Assert.That(fixedRow.UniverseId, Is.EqualTo(scopedUniverse),
+                "the backfill must re-stamp UniverseId from the owning Entity, correcting the stale value");
+        }
+        finally
+        {
+            UniverseScope.Current = previous;
+        }
+    }
+
+    // ── A minimal IUniverseContext for this one cross-universe regression test. ──
+    private sealed class FakeUniverseContext : IUniverseContext
+    {
+        public Guid CurrentId { get; set; } = Guid.Empty;
+        public string CurrentSlug => "test";
+        public UniverseInfo? CurrentUniverse => new(CurrentId, CurrentSlug, "Test", null, "a test world", true, 100);
+        public IReadOnlyList<UniverseInfo> ListUniverses() => new List<UniverseInfo>();
+        public bool IsGlmz => CurrentId == Guid.Empty;
+        public string UniverseGroundingOr(string glmzFallback) => IsGlmz ? glmzFallback : "a self-contained fictional world";
+        public void UseUniverse(Guid id) { CurrentId = id; UniverseScope.BumpEpoch(); }
+        public bool UseUniverseBySlug(string slug) => false;
+        public void SetFlowUniverse(Guid? id) { }
+        public void PersistAsDefault(Guid id) { }
+        public void Refresh() { }
+    }
 }

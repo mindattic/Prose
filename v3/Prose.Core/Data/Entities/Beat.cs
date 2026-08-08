@@ -28,8 +28,15 @@ public class Beat
     /// as "Beat #134" using this column.</summary>
     public int Number { get; set; }
 
-    /// <summary>Optional human-readable identifier. Used for stable URLs and
-    /// debugging. Not required — most beats won't have one.</summary>
+    /// <summary>
+    /// Legacy/abandoned. An early-development attempt at a human-readable beat
+    /// identifier (7 of 11,622+ beats have one, all from before <see cref="Number"/>
+    /// existed) — never wired to any lookup path or generation hook. <see cref="Number"/>
+    /// is the actual stable handle CLI/writer/MCP surfaces to humans and each other;
+    /// nothing reads this column. Kept (not dropped) because <c>Beats</c> is
+    /// system-versioned and a column drop requires disabling/re-enabling temporal
+    /// versioning for no benefit — do not build new features on this field.
+    /// </summary>
     public string? Slug { get; set; }
 
     /// <summary>The paragraph. Authoritative; nothing else holds a copy.</summary>

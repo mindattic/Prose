@@ -5,7 +5,7 @@ namespace Prose.UnitTests;
 /// <summary>
 /// Tests for AuditProseUtils.ClampProse — the head+tail prose truncation shared by every audit
 /// that hands a whole node's concatenated prose to a single LLM call (BookAuditService,
-/// StoryScopeAuditService, LogicSweepService, CraftRuleAuditService). Previously four identical
+/// StoryScopeAuditService, LogicSweepService). Previously several identical
 /// private copies of this method, each with its own duplicate test coverage; consolidated to one
 /// shared implementation (<c>AuditModels.cs</c>) with one test file.
 /// </summary>

@@ -87,7 +87,7 @@ public class EmotionalDepthService
         ("ObjectsAndGestures",        "Tenderness/cost arriving as objects and physical acts vs. stated feeling.",        "CODA: 'tenderness arrives as objects, never statements'",                 false),
         ("RegisterShiftAsInstrument", "Temperature shifts on cue vs. one flat tone throughout.",                          "CODA: 'the register SHIFT is the instrument'",                            false),
         ("EarnedInteriority",         "Rare, load-bearing interior lines vs. spammed or subtext-explaining interiority.", "CODA: 'one flat interior line'; RULE ZERO: 'narrator is never wise'",   false),
-        ("RelationalSubtext",         "Power/evasion/approach-and-retreat in dialogue vs. pure information exchange.",   "CODA: Kyle↔Pixel; bible relationships",                                   false),
+        ("RelationalSubtext",         "Power/evasion/approach-and-retreat in dialogue vs. pure information exchange.",   "bible: power/evasion dynamics between the book's established relationships", false),
         ("CostFeltNotAsserted",       "Price of wins felt (calories, years, wound ledger) vs. asserted.",                "CODA: 'every win PRICED'",                                                 true),
         ("ContradictionAndAmbivalence","Gap between what a character feels and what they show, vs. emotionally one-note.","bible: Flaw; contradiction",                                              false),
     ];

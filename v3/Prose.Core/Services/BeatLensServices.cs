@@ -52,6 +52,8 @@ public abstract class BeatLensService
 
     /// <summary>ALL-CAPS finding prefix, e.g. "CAUSALITY".</summary>
     protected abstract string Tag { get; }
+    /// <summary>Findings category this lens files under.</summary>
+    protected abstract FindingCategory Category { get; }
     /// <summary>Human lens name for the result, e.g. "Causality".</summary>
     protected abstract string LensName { get; }
     /// <summary>One-line statement of what this lens judges.</summary>
@@ -178,7 +180,7 @@ PROSE:
             Findings.Upsert(
                 filePath:     $"node:{node.Slug}",
                 chapterId:    null,
-                category:     FindingCategory.Other,
+                category:     Category,
                 severity:     sev,
                 summary:      $"{Tag} [{iss.Kind}]{(iss.Beat.HasValue ? $" beat {iss.Beat}" : "")}: {Trunc(iss.Fix, 240)}",
                 snippet:      iss.Evidence,
@@ -220,6 +222,7 @@ public sealed class CausalityService : BeatLensService
         : base(llm, findings, dbFactory, log) { }
 
     protected override string Tag => "CAUSALITY";
+    protected override FindingCategory Category => FindingCategory.Causality;
     protected override string LensName => "Causality";
     protected override string LensTitle => "You judge CAUSE-AND-EFFECT and common-sense plausibility.";
     protected override string Rubric => """
@@ -241,6 +244,7 @@ public sealed class AffectBehaviorService : BeatLensService
         : base(llm, findings, dbFactory, log) { }
 
     protected override string Tag => "AFFECT-BEHAVIOR";
+    protected override FindingCategory Category => FindingCategory.AffectBehavior;
     protected override string LensName => "Affect→Behavior";
     protected override string LensTitle => "You judge whether each character's EMOTION believably DRIVES their ACTION.";
     protected override string Rubric => """
@@ -261,6 +265,7 @@ public sealed class InterpersonalDynamicsService : BeatLensService
         : base(llm, findings, dbFactory, log) { }
 
     protected override string Tag => "INTERPERSONAL";
+    protected override FindingCategory Category => FindingCategory.Interpersonal;
     protected override string LensName => "Interpersonal Dynamics";
     protected override string LensTitle =>
         "You judge INTERPERSONAL DYNAMICS — the relational layer that lifts a node to 90+.";

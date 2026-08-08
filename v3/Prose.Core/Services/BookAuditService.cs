@@ -208,7 +208,7 @@ public class BookAuditService(
             new Dictionary<string, object?> { ["plants"] = plants });
 
         var verdicts = await auditRunner.RunAsync(
-            "BOOKAUDIT", $"node:{node.Slug}", FindingCategory.Other, rules, ctx, ct: ct);
+            "BOOKAUDIT", $"node:{node.Slug}", FindingCategory.BookAudit, rules, ctx, ct: ct);
         var checks = commandments.Select(c =>
         {
             var v = verdicts.First(v => v.RuleKey == c.Key);

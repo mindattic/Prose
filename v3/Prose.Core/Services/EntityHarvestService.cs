@@ -22,6 +22,7 @@ public class EntityHarvestService(
     IDbContextFactory<ProseDbContext> dbFactory,
     Interfaces.ILlmService llm,
     EmbeddingService embeddings,
+    XrefService xref,
     ILogger<EntityHarvestService> log)
 {
     // Above this cosine similarity an extracted noun is treated as an existing entity
@@ -73,6 +74,19 @@ public class EntityHarvestService(
             if (existing != null)
             {
                 resolutions[name] = new(name, c.EntityType, existing.Id, "existing", existing.Name);
+                continue;
+            }
+
+            // Alias/handle match — same class of miss as the name-variant check above, just
+            // against a known alias instead of the canonical name (e.g. a candidate extracted
+            // as "Rook" when the corpus already has "Inkeri Saarinen" with "Rook" as an alias).
+            // Scoped to same-type matches only — a place and a character can legitimately share
+            // an alias string without being the same entity.
+            var aliasHit = xref.Resolve(name);
+            if (aliasHit != null && string.Equals(aliasHit.Type, c.EntityType, StringComparison.OrdinalIgnoreCase)
+                && Guid.TryParse(aliasHit.Id, out var aliasEntityId))
+            {
+                resolutions[name] = new(name, c.EntityType, aliasEntityId, "existing", aliasHit.DisplayName);
                 continue;
             }
 

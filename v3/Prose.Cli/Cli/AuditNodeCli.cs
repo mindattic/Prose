@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Prose.Core.Data;
@@ -7,69 +7,72 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --audit-book --slug &lt;book-or-chapter-slug&gt; [--deep] [--model &lt;id&gt;] [--out &lt;path&gt;]
+/// prose --audit-book --slug &lt;book-or-chapter-slug&gt; [--deep] [--full] [--model &lt;id&gt;] [--out &lt;path&gt;]
 ///
 /// The "Player Piano" — one repeatable command that runs the full QA battery against a
-/// node and emits a single consolidated scorecard. Book-aware: a book fans out into its
-/// draft chapters; a lone chapter audits itself.
+/// node and emits a single consolidated scorecard: the Structural Integrity Index (SII), a
+/// deterministic rollup over Findings (never an LLM opinion vote — see BookHealthService).
 ///
-/// Tiers:
-///   FREE  (always)  — DB census (population/tagging/scoring matrix + satellite counts),
-///                     coverage rollup, plant-audit, prose-check. Zero API cost.
-///   DEEP  (--deep)  — per-chapter examine-emotion + book-audit + diagnose-node + check-fidelity.
-///                     These call the LLM/embeddings. Pair with --model to pick the tier
-///                     (e.g. --model claude-haiku-4-5-20251001 for a cheap, non-rate-limited
-///                     full pass). The override is restored when the run finishes.
+/// Tiers (cumulative — each includes the one before):
+///   FREE  (always)  — deterministic + near-zero-cost checks: census, coverage, plant-audit,
+///                     prose-check, noun-consistency, timeline-check, beat-verification,
+///                     outline-coordination.
+///   DEEP  (--deep)  — one LLM call per check per node: examine-emotion, book-audit,
+///                     diagnose-node, check-fidelity, logic-sweep, craft-checklist,
+///                     check-canon, altitude-audit, reader-qa comprehension.
+///   FULL  (--full, implies --deep) — heaviest multi-call audits, cost scales with book
+///                     length: storyscope-audit, swain-audit, chekhov-audit.
 ///
-/// Reuses the existing single-purpose CLI handlers (captured in-process) so this stays a
-/// thin orchestrator, not a re-implementation. Output goes to stdout and, if --out is given,
-/// to a markdown file.
+/// This is a thin formatter over Prose.Core.Services.BookHealthService — the battery and
+/// the SII arithmetic both live there so the MCP book_health tool can share the exact same
+/// logic without going through this CLI layer.
 /// </summary>
 public static class AuditNodeCli
 {
     public static async Task<int> RunAsync(IServiceProvider sp, string[] args)
     {
         var slug    = GetArg(args, "--slug");
-        var deep    = args.Contains("--deep");
+        var full    = args.Contains("--full");
+        var deep    = args.Contains("--deep") || full;
         var model   = GetArg(args, "--model");
         var outPath = GetArg(args, "--out");
-        if (slug == null) { Console.Error.WriteLine("Usage: prose --audit-book --slug <slug> [--deep] [--model <id>] [--out <path>]"); return 2; }
+        var json    = args.Contains("--json");
+        if (slug == null) { Console.Error.WriteLine("Usage: prose --audit-book --slug <slug> [--deep] [--full] [--model <id>] [--out <path>] [--json]"); return 2; }
 
         var dbFactory = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var monitor   = sp.GetRequiredService<WorkflowMonitorService>();
+        var bookHealth = sp.GetRequiredService<BookHealthService>();
+        var granularity = sp.GetRequiredService<BeatGranularityService>();
+        var proseMetrics = sp.GetRequiredService<BeatProseMetricsService>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
         var root = await db.Nodes.AsNoTracking()
             .Where(s => s.Slug == slug || s.NodeCode == slug)
-            .Select(s => new { s.Id, s.Title, s.Slug, s.Score, s.PreviousNodeId, s.Seed })
+            .Select(s => new { s.Id, s.Title, s.Slug })
             .FirstOrDefaultAsync();
         if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 2; }
 
         var children = await db.Nodes.AsNoTracking()
             .Where(s => s.ParentNodeId == root.Id)
             .OrderBy(s => s.SortKey)
-            .Select(s => new ChapterRef(s.Id, s.Title, s.Slug, s.Score, s.Seed))
+            .Select(s => new ChapterRef(s.Id, s.Title, s.Slug))
             .ToListAsync();
-        var isBook   = children.Count > 0;
-        var chapters = isBook ? children : [new ChapterRef(root.Id, root.Title, root.Slug, root.Score, root.Seed)];
-
-        // A Seed shorter than this is just a title, not a bible anchor — check-fidelity
-        // compares prose embeddings against it and would emit pure noise (157 false
-        // "bible drift" findings in the first BCODA run). Gate fidelity on a real Seed.
-        const int MinSeedForFidelity = 200;
+        var chapters = children.Count > 0 ? children : [new ChapterRef(root.Id, root.Title, root.Slug)];
 
         var sb = new StringBuilder();
         void W(string s = "") => sb.AppendLine(s);
 
+        var tier = full ? BookHealthTier.Full : deep ? BookHealthTier.Deep : BookHealthTier.Free;
+
         W($"# Node Audit — {root.Title} ({root.Slug})");
-        W($"_Generated by `prose --audit-book`{(deep ? $", deep tier, model={model ?? "default"}" : ", free tier")}._");
+        W($"_Generated by `prose --audit-book`, {tier.ToString().ToUpperInvariant()} tier{(model != null ? $", model={model}" : "")}._");
         W();
 
         // ── SECTION 1: CENSUS ────────────────────────────────────────────────────
         W("## 1. Population / tagging / scoring census");
         W();
-        W("| Ch | Title | Beats | Text | Desc | Struct | Tone | Score | EQ | Mentions |");
-        W("|----|-------|-------|------|-----|--------|------|-------|----|----------|");
+        W("| Ch | Beats | Text | Desc | Struct | Tone | Score | EQ | Mentions |");
+        W("|----|-------|------|-----|--------|------|-------|----|----------|");
 
         var gaps = new List<string>();
         int totBeats = 0, totText = 0, totSyn = 0, totStruct = 0, totTone = 0, totScore = 0, totEq = 0, totMentionBeats = 0;
@@ -79,139 +82,137 @@ public static class AuditNodeCli
             var stats = await CensusChapterAsync(db, ch.Id);
             totBeats += stats.Beats; totText += stats.Text; totSyn += stats.Syn; totStruct += stats.Struct;
             totTone += stats.Tone; totScore += stats.Scored; totEq += stats.Eq; totMentionBeats += stats.MentionBeats;
-            W($"| {Trunc(ch.Title, 22)} | | {stats.Beats} | {stats.Text} | {stats.Syn} | {stats.Struct} | {stats.Tone} | {stats.Scored} | {stats.Eq} | {stats.MentionBeats} |");
+            W($"| {Trunc(ch.Title, 22)} | {stats.Beats} | {stats.Text} | {stats.Syn} | {stats.Struct} | {stats.Tone} | {stats.Scored} | {stats.Eq} | {stats.MentionBeats} |");
         }
-        W($"| **TOTAL** | | {totBeats} | {totText} | {totSyn} | {totStruct} | {totTone} | {totScore} | {totEq} | {totMentionBeats} |");
+        W($"| **TOTAL** | {totBeats} | {totText} | {totSyn} | {totStruct} | {totTone} | {totScore} | {totEq} | {totMentionBeats} |");
         W();
 
         if (totText < totBeats)  gaps.Add($"{totBeats - totText} beat(s) have no prose text.");
         if (totSyn < totBeats)   gaps.Add($"{totBeats - totSyn} beat(s) missing Description (degrades mode detection + pacing — backfill or generate).");
         if (totStruct < totBeats) gaps.Add($"{totBeats - totStruct} beat(s) missing StructureRole (derivable from position — deterministic backfill).");
-        if (totEq == 0)          gaps.Add("EmotionalScore never populated (run --audit-book --deep, or prose --examine-emotion).");
         if (totMentionBeats < totBeats) gaps.Add($"{totBeats - totMentionBeats} beat(s) not entity-scanned (run prose --scan-entity-mentions).");
 
-        // ── SECTION 2: EXISTING REVIEW DATA ──────────────────────────────────────
-        W("## 2. Existing review ballots (already paid for)");
+        // ── SECTION 2: COVERAGE ──────────────────────────────────────────────────
+        W("## 2. Prose-engine service coverage");
         W();
-        W("| Title | Ballots | Avg | Flow |");
-        W("|-------|---------|-----|------|");
-        var scopeIds = chapters.Select(c => c.Id).Append(root.Id).ToList();
-        var reviews = await db.NodeReviews.AsNoTracking()
-            .Where(r => scopeIds.Contains(r.NodeId))
-            .GroupBy(r => r.NodeId)
-            .Select(g => new { NodeId = g.Key, Ballots = g.Count(), Avg = g.Average(x => x.Score), Flow = g.Average(x => (double?)x.FlowScore) })
-            .ToListAsync();
-        var titleById = chapters.ToDictionary(c => c.Id, c => c.Title);
-        titleById[root.Id] = root.Title + " (book)";
-        foreach (var r in reviews.OrderByDescending(x => x.NodeId == root.Id).ThenBy(x => titleById.GetValueOrDefault(x.NodeId)))
-            W($"| {Trunc(titleById.GetValueOrDefault(r.NodeId, "?"), 30)} | {r.Ballots} | {r.Avg:F0} | {r.Flow:F0} |");
-        W();
-        var weakest = reviews.Where(r => r.NodeId != root.Id).OrderBy(r => r.Avg).Take(3)
-            .Select(r => $"{titleById.GetValueOrDefault(r.NodeId)} ({r.Avg:F0}/{r.Flow:F0})").ToList();
-        if (weakest.Count > 0) W($"**Weakest by raw ballot:** {string.Join("; ", weakest)}");
-        W();
-
-        // ── SECTION 3: FREE AUDITS ───────────────────────────────────────────────
-        W("## 3. Free audits");
-        W();
-        var sections = new List<(string Name, int Exit)>();
-
-        // Coverage (book-level rollup)
         var coverage = await monitor.GetNodeCoverageAsync(root.Id);
-        W($"### Coverage — {coverage.TotalBeatsLogged} beats logged");
+        W($"Coverage — {coverage.TotalBeatsLogged} beats logged");
         foreach (var s in coverage.ServiceStats)
             W($"- {s.Service}: {(s.ApplicableCalls > 0 ? $"{s.ActivationRate:P0}" : "n/a")} ({s.ActiveCalls}/{s.ApplicableCalls})");
         if (coverage.Gaps.Count > 0) foreach (var g in coverage.Gaps) gaps.Add($"Coverage: {g}");
         W();
 
-        // Plant-audit + prose-check per chapter (reuse handlers)
-        W("### Plant/payoff + prose lint (per chapter)");
+        // ── SECTION 3: BATTERY ───────────────────────────────────────────────────
+        W("## 3. Battery results");
         W();
-        foreach (var ch in chapters)
-        {
-            var (pExit, pOut) = await Capture(() => PlantPayoffCli.RunAsync(["--plant-audit", "--slug", ch.Slug, "--json"], sp));
-            var (lExit, lOut) = await Capture(() => ProseCheckCli.RunAsync(["--prose-check", "--slug", ch.Slug, "--json"], sp));
-            sections.Add(($"plant:{ch.Slug}", pExit));
-            sections.Add(($"prose:{ch.Slug}", lExit));
-            W($"- **{Trunc(ch.Title, 30)}** — plants: {ExitLabel(pExit)}, prose-lint: {ExitLabel(lExit)}");
-        }
-        W();
-
-        // ── SECTION 4: DEEP AUDITS ───────────────────────────────────────────────
         SettingsService? settings = null;
         string? savedModel = null;
-        if (deep)
+        if (model != null)
         {
-            W("## 4. Deep audits (LLM)");
-            W();
-            if (model != null)
-            {
-                settings = sp.GetRequiredService<SettingsService>();
-                savedModel = settings.Model;
-                settings.Model = model;
-                W($"_Model override: `{model}` (restored to `{savedModel}` after run)._");
-                W();
-            }
-
-            try
-            {
-                foreach (var ch in chapters)
-                {
-                    W($"### {ch.Title}");
-                    var (eqExit, eqOut)   = await Capture(() => ExamineEmotionCli.RunAsync(["--examine-emotion", "--slug", ch.Slug, "--json"], sp));
-                    var (auExit, auOut)   = await Capture(() => BookAuditCli.RunAsync(["--book-audit", "--slug", ch.Slug, "--json"], sp));
-                    var (dgExit, dgOut)   = await Capture(() => DiagnoseNodeCli.RunAsync(["--diagnose-book", "--slug", ch.Slug, "--json"], sp));
-                    sections.Add(($"eq:{ch.Slug}", eqExit));
-                    sections.Add(($"audit:{ch.Slug}", auExit));
-                    sections.Add(($"diagnose:{ch.Slug}", dgExit));
-
-                    var hasSeed = (ch.Seed?.Length ?? 0) >= MinSeedForFidelity;
-                    var fdExit = 0; var fdOut = "(skipped — no Seed anchor ≥200 chars; fidelity would be noise)";
-                    if (hasSeed)
-                    {
-                        (fdExit, fdOut) = await Capture(() => CheckFidelityCli.RunAsync(["--check-fidelity", "--slug", ch.Slug, "--json"], sp));
-                        sections.Add(($"fidelity:{ch.Slug}", fdExit));
-                    }
-                    W($"- examine-emotion: {ExitLabel(eqExit)}  •  book-audit: {ExitLabel(auExit)}  •  diagnose: {ExitLabel(dgExit)}  •  fidelity: {(hasSeed ? ExitLabel(fdExit) : "—")}");
-                    W();
-                    W("<details><summary>raw json</summary>\n");
-                    W("```json"); W(eqOut.Trim()); W(auOut.Trim()); W(dgOut.Trim()); W(fdOut.Trim()); W("```");
-                    W("</details>"); W();
-                }
-            }
-            finally
-            {
-                if (settings != null && savedModel != null) settings.Model = savedModel;
-            }
+            settings = sp.GetRequiredService<SettingsService>();
+            savedModel = settings.Model;
+            settings.Model = model;
         }
 
-        // ── SECTION 5: SCORECARD + GAPS ──────────────────────────────────────────
-        W("## 5. Scorecard");
+        BookHealthReport report;
+        try
+        {
+            report = await bookHealth.RunAsync(root.Id, tier);
+        }
+        finally
+        {
+            if (settings != null && savedModel != null) settings.Model = savedModel;
+        }
+
+        foreach (var c in report.Checks)
+            W($"- {(c.Success ? "✅" : "❌")} {c.Name}{(c.Success ? "" : $" — {Trunc(c.Note, 100)}")}");
         W();
-        var blocking = sections.Count(s => s.Exit == 2);
-        var advisory = sections.Count(s => s.Exit == 1);
-        var clean    = sections.Count(s => s.Exit == 0);
-        W($"- ✅ clean: {clean}   ⚠️ advisory: {advisory}   ❌ blocking: {blocking}   (across {sections.Count} checks)");
-        W($"- Node score (clustered): {root.Score:F2}");
+
+        // ── SECTION 4: DIAGNOSTICS (informational — do not affect SII) ──────────
+        W("## 4. Diagnostics (informational — do not affect SII)");
         W();
+        try
+        {
+            var gran = await granularity.AnalyzeAsync(root.Slug!);
+            if (gran != null)
+                W($"- Beat granularity: {gran.OkCount} ok, {gran.SplitCount} flagged SPLIT, {gran.MergeCount} flagged MERGE (avg {gran.AvgChars:N0} chars/beat).");
+        }
+        catch (Exception ex) { W($"- Beat granularity: unavailable ({ex.Message})"); }
+        try
+        {
+            var metrics = await proseMetrics.ComputeNodeAsync(root.Id);
+            W($"- Prose metrics: mean TTR {metrics.MeanTtr:F2}, mean Flesch reading-ease {metrics.MeanFleschReadingEase:F1}, {metrics.Outliers.Count} outlier beat(s).");
+        }
+        catch (Exception ex) { W($"- Prose metrics: unavailable ({ex.Message})"); }
+        W();
+
+        // ── SECTION 5: SCORECARD — Structural Integrity Index ────────────────────
+        W("## 5. Scorecard — Structural Integrity Index");
+        W();
+        W($"**SII: {report.Sii} / 100 — Grade {report.Grade}**");
+        W();
+        W($"_Computed {report.GeneratedAt:yyyy-MM-dd HH:mm} UTC from open Findings + {report.RateAdjustments.Count} rate metric(s)._ ");
+        W("_Not a vote — a fixed, reproducible formula. Re-running with no underlying changes reproduces the same number._");
+        W();
+
+        var totalFindingsDeduction = report.FindingsDeduction.Sum(d => d.CappedPoints);
+        W($"### Findings deduction (−{totalFindingsDeduction})");
+        W();
+        if (report.FindingsDeduction.Count == 0)
+            W("_No open findings in scope — clean._");
+        else
+        {
+            W("| Category | High | Medium | Low | Capped |");
+            W("|---|--:|--:|--:|--:|");
+            foreach (var d in report.FindingsDeduction)
+                W($"| {d.Category} | {d.High} | {d.Medium} | {d.Low} | −{d.CappedPoints} |");
+        }
+        W();
+
+        var totalRateAdjustment = report.RateAdjustments.Sum(r => r.Adjustment);
+        W($"### Rate adjustments ({(totalRateAdjustment <= 0 ? totalRateAdjustment.ToString() : $"+{totalRateAdjustment}")})");
+        W();
+        if (report.RateAdjustments.Count == 0)
+            W("_None computed this run (requires --full for Swain/StoryScope, --deep for CraftChecklist)._");
+        else
+        {
+            W("| Metric | Value | Adjustment |");
+            W("|---|---|--:|");
+            foreach (var r in report.RateAdjustments)
+                W($"| {r.Metric} | {r.Value} | {r.Adjustment} |");
+        }
+        foreach (var e in report.ExcludedFromScore)
+            W($"_{e}_");
+        W();
+        W($"### Why this number");
+        W($"100 − {totalFindingsDeduction} (open findings, capped per category) {(totalRateAdjustment <= 0 ? "−" : "+")} {Math.Abs(totalRateAdjustment)} (rate metrics) = **{report.Sii}**.");
+        W();
+
+        // ── SECTION 6: GAPS ───────────────────────────────────────────────────────
         W("## 6. Gaps & recommended actions");
         W();
         if (gaps.Count == 0) W("_No structural gaps detected._");
         else foreach (var g in gaps) W($"- {g}");
         W();
 
-        var report = sb.ToString();
-        Console.WriteLine(report);
+        var reportText = sb.ToString();
+        if (json)
+            Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(report,
+                new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+        else
+            Console.WriteLine(reportText);
+
         if (outPath != null)
         {
-            await File.WriteAllTextAsync(outPath, report);
+            await File.WriteAllTextAsync(outPath, reportText);
             Console.WriteLine($"\nReport written to {outPath}");
         }
 
-        return blocking > 0 ? 2 : advisory > 0 ? 1 : 0;
+        var blocking = report.FindingsDeduction.Sum(d => d.High);
+        return report.Sii < 60 ? 2 : blocking > 0 ? 1 : 0;
     }
 
-    private record ChapterRef(Guid Id, string Title, string Slug, double? Score, string? Seed);
+    private record ChapterRef(Guid Id, string Title, string? Slug);
     private record Census(int Beats, int Text, int Syn, int Struct, int Tone, int Scored, int Eq, int MentionBeats);
 
     private static async Task<Census> CensusChapterAsync(ProseDbContext db, Guid chapterId)
@@ -234,19 +235,6 @@ public static class AuditNodeCli
             MentionBeats: mentionBeats);
     }
 
-    private static async Task<(int Exit, string Output)> Capture(Func<Task<int>> run)
-    {
-        var origOut = Console.Out;
-        var sw = new StringWriter();
-        Console.SetOut(sw);
-        int code;
-        try { code = await run(); }
-        catch (Exception ex) { sw.Write($"(handler threw: {ex.Message})"); code = 2; }
-        finally { Console.SetOut(origOut); }
-        return (code, sw.ToString());
-    }
-
-    private static string ExitLabel(int exit) => exit switch { 0 => "✅", 1 => "⚠️", _ => "❌" };
     private static string Trunc(string s, int max) => s.Length <= max ? s : s[..(max - 1)] + "…";
 
     private static string? GetArg(string[] args, string flag)

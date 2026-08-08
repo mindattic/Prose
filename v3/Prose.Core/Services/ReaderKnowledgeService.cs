@@ -20,7 +20,7 @@ namespace Prose.Core.Services;
 ///   - BuildKnowledgeBlockAsync: called before each beat to inject the current
 ///     reader knowledge state as a prompt constraint.
 ///
-/// Storage: Findings table with FilePath = "reader-knowledge:{nodeId}", Category = Other.
+/// Storage: Findings table with FilePath = "reader-knowledge:{nodeId}", Category = ReaderKnows.
 /// No new migrations required — reuses existing infrastructure.
 /// </summary>
 public class ReaderKnowledgeService(
@@ -95,7 +95,7 @@ public class ReaderKnowledgeService(
             foreach (var fact in facts)
             {
                 var summary = $"{Prefix}: {fact}";
-                var dedup = $"{fp}|Other|{summary}".ToLowerInvariant();
+                var dedup = $"{fp}|{FindingCategory.ReaderKnows}|{summary}".ToLowerInvariant();
                 if (dedup.Length > 450) dedup = dedup[..450];
 
                 if (!await db.Findings.AnyAsync(f => f.DedupKey == dedup, ct))
@@ -105,7 +105,7 @@ public class ReaderKnowledgeService(
                         DetectedAt  = DateTime.UtcNow,
                         FilePath    = fp,
                         ChapterId   = null,
-                        Category    = FindingCategory.Other.ToString(),
+                        Category    = FindingCategory.ReaderKnows.ToString(),
                         Severity    = FindingSeverity.Low.ToString(),
                         Summary     = summary,
                         Snippet     = null,
@@ -139,7 +139,7 @@ public class ReaderKnowledgeService(
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             var fp = FilePath(nodeId);
-            var catKey = FindingCategory.Other.ToString();
+            var catKey = FindingCategory.ReaderKnows.ToString();
             var statusKey = FindingStatus.New.ToString();
 
             var facts = await db.Findings.AsNoTracking()

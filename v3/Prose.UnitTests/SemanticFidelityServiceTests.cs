@@ -40,4 +40,37 @@ public class SemanticFidelityServiceTests
         Assert.That(method!.ReturnType.Name, Does.Contain("Task"),
             "AuditNodeAsync must be async.");
     }
+
+    // Regression coverage for the 2026-08-08 gap: CheckBeatIntentDriftAsync (the score-independent
+    // per-beat drift check) was wired into NodeWorkbenchService.SaveBeatAsync (the manual UI-edit
+    // path) but never into ProseWriterRouter (the CLI/MCP generation path that authors the vast
+    // majority of beats) — confirmed live: SEMANTIC-DRIFT findings dropped from thousands to near-zero
+    // corpus-wide starting 2026-07-20 despite every other Findings category staying active, and a
+    // fresh --check-fidelity run against the highest-volume affected book produced zero violations
+    // because Beat.Score (its trigger) is populated on <1% of beats now that voting is off by
+    // default (SS-A44). Fixed by adding a (beatId, nodeId, text, goal) overload and wiring it into
+    // ProseWriterRouter's existing post-write fire-and-forget block, same pattern as LibertyReportService.
+
+    [Test]
+    public void CheckBeatIntentDriftAsync_HasIdBasedOverload_ForRouterWiring()
+    {
+        var method = typeof(SemanticFidelityService).GetMethod(
+            "CheckBeatIntentDriftAsync",
+            new[] { typeof(Guid), typeof(Guid), typeof(string), typeof(string), typeof(CancellationToken) });
+        Assert.That(method, Is.Not.Null,
+            "SemanticFidelityService must expose a (beatId, nodeId, beatText, synopsis) overload " +
+            "so ProseWriterRouter can call it without an extra DB round-trip for beat number/slug.");
+        Assert.That(method!.ReturnType.Name, Does.Contain("Task"));
+    }
+
+    [Test]
+    public void ProseWriterRouter_Constructor_AcceptsSemanticFidelityService()
+    {
+        var ctor = typeof(ProseWriterRouter).GetConstructors().Single();
+        var param = ctor.GetParameters().FirstOrDefault(p => p.ParameterType == typeof(SemanticFidelityService));
+        Assert.That(param, Is.Not.Null,
+            "ProseWriterRouter must accept SemanticFidelityService so the intent-drift check fires " +
+            "on the actual generation path, not just manual UI edits.");
+        Assert.That(param!.HasDefaultValue, Is.True, "must be optional (nullable, default null) like the other post-write add-ons.");
+    }
 }

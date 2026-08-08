@@ -29,7 +29,7 @@ namespace Prose.Core.Services;
 /// hallucinations are recorded in the cache but never filed.</para>
 ///
 /// <para>This is a MEASUREMENT, not a vote — it emits no scores and is deliberately
-/// outside the SS-A44 <see cref="VotingGate"/> (same exemption as craft_audit and the
+/// outside the SS-A44 <see cref="VotingGate"/> (same exemption as craft_checklist and the
 /// logic sweep). Cost gate: probe results are cached per (chapter-source-hash, probe
 /// model) in <see cref="NodeChapterSummary.ComprehensionJson"/> — unchanged chapters
 /// never re-bill.</para>

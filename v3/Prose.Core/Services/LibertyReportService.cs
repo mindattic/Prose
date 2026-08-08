@@ -81,7 +81,7 @@ public class LibertyReportService(
                 {
                     findings.Upsert(
                         filePath, chapterId: null,
-                        FindingCategory.Other, FindingSeverity.Low,
+                        FindingCategory.Liberty, FindingSeverity.Low,
                         $"CANON-ADDITION-CANDIDATE [{liberty.Name}]: {liberty.Explanation}",
                         snippet: liberty.Evidence,
                         suggestedFix: $"CoolFactor {liberty.CoolFactor}/10 — seed this into the DB if you want it in canon.");
@@ -90,7 +90,7 @@ public class LibertyReportService(
                 {
                     findings.Upsert(
                         filePath, chapterId: null,
-                        FindingCategory.Other, FindingSeverity.Low,
+                        FindingCategory.Liberty, FindingSeverity.Low,
                         $"LIBERTY-CONSIDER [{liberty.Name}]: {liberty.Explanation}",
                         snippet: liberty.Evidence,
                         suggestedFix: $"CoolFactor {liberty.CoolFactor}/10 — advisory; no action required.");
@@ -99,7 +99,7 @@ public class LibertyReportService(
                 {
                     findings.Upsert(
                         filePath, chapterId: null,
-                        FindingCategory.Other, FindingSeverity.Medium,
+                        FindingCategory.Liberty, FindingSeverity.Medium,
                         $"LIBERTY-WARNING [{liberty.Name}]: invented entity not in canon — {liberty.Explanation}",
                         snippet: liberty.Evidence,
                         suggestedFix: "Seed the entity via CLI/MCP or revise the prose to remove the reference.");

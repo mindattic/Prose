@@ -355,15 +355,26 @@ public static class CharacterMapper
     // Saves one read-model row, handling the concurrent-insert race: two requests can
     // both see no row, both queue an Add, and the second SaveChanges blows up on PK.
     // On collision we clear the tracker and flip to an update.
+    //
+    // IgnoreQueryFilters is required on every lookup here, same as UpsertReadModelAsync:
+    // CharacterId is the row's only physical key, so a universe-scoped lookup can miss an
+    // existing row whose stamped UniverseId doesn't match the ambient scope (stale data, or —
+    // before this fix — a row this very method inserted with UniverseId left at Guid.Empty).
+    // That false "missing" reads as a fresh insert, collides on the real PK, and the recovery
+    // re-query (if also scoped) would find nothing either — silently dropping the backfill
+    // forever instead of updating the row that's actually sitting there.
     private static void SaveReadModelSafe(ProseDbContext db, Guid id, CharacterData data)
     {
         var json = SerializeReadModel(data);
-        var existing = db.CharacterReadModels.FirstOrDefault(r => r.CharacterId == id);
+        var universeId = db.Entities.IgnoreQueryFilters().AsNoTracking()
+            .Where(e => e.Id == id).Select(e => e.UniverseId).FirstOrDefault();
+        var existing = db.CharacterReadModels.IgnoreQueryFilters().FirstOrDefault(r => r.CharacterId == id);
         if (existing == null)
         {
             db.CharacterReadModels.Add(new CharacterReadModel
             {
                 CharacterId = id, Json = json, Version = ReadModelVersion, RefreshedAt = DateTime.UtcNow,
+                UniverseId = universeId,
             });
             try
             {
@@ -373,14 +384,11 @@ public static class CharacterMapper
                 when (ex.InnerException is Microsoft.Data.SqlClient.SqlException sql
                       && (sql.Number == 2627 || sql.Number == 2601))
             {
-                // Another writer inserted first — clear and update instead. The re-query is
-                // universe-filtered: if the colliding row belongs to a different universe
-                // (a shared CharacterId PK across universes), it is invisible here and the
-                // read-model cache simply isn't refreshed this pass — never throw from a
-                // best-effort cache backfill (SS-LAW-15). The row is regenerable next read.
+                // Another writer inserted first — clear and update instead.
                 db.ChangeTracker.Clear();
-                existing = db.CharacterReadModels.FirstOrDefault(r => r.CharacterId == id);
-                if (existing == null) return;
+                existing = db.CharacterReadModels.IgnoreQueryFilters().FirstOrDefault(r => r.CharacterId == id);
+                if (existing == null) return;   // genuinely gone between the two queries — nothing to update
+                existing.UniverseId = universeId;
                 existing.Json = json;
                 existing.Version = ReadModelVersion;
                 existing.RefreshedAt = DateTime.UtcNow;
@@ -389,6 +397,7 @@ public static class CharacterMapper
         }
         else
         {
+            existing.UniverseId = universeId;
             existing.Json = json;
             existing.Version = ReadModelVersion;
             existing.RefreshedAt = DateTime.UtcNow;

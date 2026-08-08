@@ -147,7 +147,7 @@ public class SceneContextAssembler(
                 findings.Upsert(
                     filePath: $"beat:{beatId:N}",
                     chapterId: null,
-                    category: FindingCategory.Other,
+                    category: FindingCategory.Xray,
                     severity: FindingSeverity.Low,
                     summary: $"XRAY-REVEAL [{entity}]: {detail}",
                     snippet: quote,
