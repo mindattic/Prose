@@ -45,7 +45,6 @@ public class ProseWriterRouter(
     NarrativeSummaryService? narrativeSummary = null,
     WorldStateAtBeatService? worldStateAtBeat = null,
     ConsequenceEngine? consequenceEngine = null,
-    MlProseGuidanceService? mlProseGuidance = null,
     ChapterSummaryService? chapterSummary = null,
     OpenThreadsService? openThreads = null,
     SceneContextAssembler? sceneAssembler = null,
@@ -288,14 +287,6 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(ContinuityService)); }
         }
 
-        // ML prose quality guidance: findings from the nightly Python model audit.
-        var mlProseGuidanceContext = context.MlProseGuidanceContext;
-        if (string.IsNullOrEmpty(mlProseGuidanceContext) && mlProseGuidance != null && context.NodeId != Guid.Empty)
-        {
-            try { mlProseGuidanceContext = await mlProseGuidance.BuildGuidanceAsync(context.NodeId, ct); }
-            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(MlProseGuidanceService)); }
-        }
-
         // Tension escalation: warn when recent beats have stagnated at low intensity.
         // Gate: fewer than 3 prior beats means no escalation history to analyse.
         var tensionGuidanceContext = context.TensionGuidanceContext;
@@ -523,7 +514,6 @@ public class ProseWriterRouter(
             LocationContext        = locationContext,
             DialogueContext        = dialogueContext,
             EmotionalGuidanceContext = emotionalGuidanceContext,
-            MlProseGuidanceContext   = mlProseGuidanceContext,
             TensionGuidanceContext = tensionGuidanceContext,
             ReaderKnowledgeContext = readerKnowledgeContext,
             ConsequenceContext     = consequenceContext,
@@ -623,7 +613,6 @@ public class ProseWriterRouter(
                 new("SceneContext",        IsApplicable: nodeApplicable,    IsActive: locationContext.Length > 0,                                             BlockSizeChars: locationContext.Length),
                 new("DialogueService",     IsApplicable: nodeApplicable,    IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
                 new("EmotionalGuidance",   IsApplicable: nodeApplicable,    IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
-                new("MlProseGuidance",     IsApplicable: nodeApplicable,    IsActive: mlProseGuidanceContext.Length > 0,                                      BlockSizeChars: mlProseGuidanceContext.Length),
                 new("TensionEscalation",   IsApplicable: nodeApplicable,    IsActive: tensionGuidanceContext.Length > 0,                                      BlockSizeChars: tensionGuidanceContext.Length),
                 new("ReaderKnowledge",     IsApplicable: nodeApplicable,    IsActive: readerKnowledgeContext.Length > 0,                                      BlockSizeChars: readerKnowledgeContext.Length),
                 new("Consequence",         IsApplicable: nodeApplicable,    IsActive: consequenceContext.Length > 0,                                          BlockSizeChars: consequenceContext.Length),

@@ -123,9 +123,6 @@ public class BeatGeneratorService
         var emotionalBlock = !string.IsNullOrWhiteSpace(context.EmotionalGuidanceContext)
             ? $"\n\n{context.EmotionalGuidanceContext}"
             : "";
-        var mlProseBlock = !string.IsNullOrWhiteSpace(context.MlProseGuidanceContext)
-            ? $"\n\n{context.MlProseGuidanceContext}"
-            : "";
         var tensionBlock = !string.IsNullOrWhiteSpace(context.TensionGuidanceContext)
             ? $"\n\n{context.TensionGuidanceContext}"
             : "";
@@ -193,7 +190,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{emotionalBlock}{mlProseBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{emotionalBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -966,11 +963,6 @@ public record BeatContext
     /// <summary>Rolling compressed scene memory from NarrativeSummaryService.
     /// Last 10 beats summarized — orients the generator for long-node coherence without full prior prose.</summary>
     public string NarrativeSummaryContext { get; init; } = "";
-
-    /// <summary>ML prose quality guidance from MlProseGuidanceService.
-    /// Injected by ProseWriterRouter from recent ML-PROSE-SCORE findings — beats the nightly model
-    /// flagged as weak in this node. Empty when no model has been trained or no findings exist.</summary>
-    public string MlProseGuidanceContext { get; init; } = "";
 
     // ── Autonomous pipeline enrichment fields ─────────────────────────────
 

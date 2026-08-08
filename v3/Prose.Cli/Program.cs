@@ -1447,17 +1447,6 @@ if (args.Contains("--gear-check"))
     return;
 }
 
-// prose --score-trend [--batches N] [--universe <slug>]
-// Print rolling mean score across N chronological batches of scored nodes.
-// Positive Δ confirms the voice-harvest flywheel is spinning forward (SS-US-J6).
-// Exit 0 = positive trend, 1 = flat/declining, 2 = not enough data.
-if (args.Contains("--score-trend"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ScoreTrendCli.RunAsync(args, sp);
-    return;
-}
-
 // prose --write-outline --slug <nodeSlug> [--json]
 // Generates a beat-by-beat narrative outline (act-grouped, one sentence per beat).
 // For a logic check, use --logic-sweep instead.
@@ -2015,17 +2004,6 @@ if (args.Contains("--duel"))
     return;
 }
 
-// prose --ml-audit [--slug <nodeSlug>] [--all] [--skip-gripes] [--json]
-// Runs the Python ML beat auditor against the trained nightly model.
-// Writes ML-PROSE-SCORE findings to the Findings table for weak beats.
-// Prerequisites: v3/ml/.venv set up + at least one nightly run completed.
-// Exit 0 = clean, 1 = advisory (>=1 Low finding), 2 = blocking (>=1 High finding).
-if (args.Contains("--ml-audit"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MlAuditCli.RunAsync(args, sp);
-    return;
-}
 
 // prose --export-personas-json [--out <path>]
 // Exports all 1024 Legion persona details + OCEAN psychometric profiles to JSON

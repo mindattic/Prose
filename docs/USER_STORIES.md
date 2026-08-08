@@ -591,11 +591,16 @@ updated: 2026-08-08
   inline 12-check grid; button colour indicates pass/warn/fail; blocking-failure banner fires when
   `HasBlockingFailures`; `@inject StructuralDiagnosticService DiagSvc`; 2026-06-21.)*
 
-- **SS-US-J6 ✅** As an operator, `prose --score-trend [--batches N]` prints the rolling mean score
+- **SS-US-J6 🗑️** As an operator, `prose --score-trend [--batches N]` prints the rolling mean score
   per chronological batch of strands so the flywheel's direction is visible from the CLI.
   *(verified by `ScoreTrendCli` + `--score-trend` wired in `Program.cs`; prints batch number /
   strand count / mean score / Δ vs prior batch; exit 0 = positive trend, 1 = declining, 2 = not
   enough data; 2026-06-21.)*
+  **Retired 2026-08-08** alongside SS-US-I8: the underlying `Node.Score` metric this command
+  trended is itself retired (SS-A44), and the metric it measured was already shown flat-to-
+  declining, never rising (see SS-US-I8). `ScoreTrendCli.cs` deleted; the replacement is
+  `prose --audit-book` / `book_health`'s Structural Integrity Index, a findings-based rollup
+  that isn't gated on the legacy panel-vote score at all.
 
 ## Epic K — Service Communication Law Compliance {#epic-k}
 

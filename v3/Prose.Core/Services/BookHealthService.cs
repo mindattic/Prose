@@ -1,3 +1,4 @@
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
@@ -68,6 +69,8 @@ public class BookHealthService(
     StoryScopeAuditService storyScopeAudit,
     SwainAuditService swainAudit,
     ChekhovAuditService chekhovAudit,
+    NarrativeScienceService narrativeScience,
+    BehavioralInvariantEnforcer behaviorEnforcer,
     ILogger<BookHealthService> log)
 {
     // ── SII formula constants ───────────────────────────────────────────────────────
@@ -124,6 +127,7 @@ public class BookHealthService(
             await RunCheckAsync(checks, "check-canon", async () => { await canonContradiction.CheckNodeAsync(nodeId, proposeFixes: false, ct); });
             await RunCheckAsync(checks, "altitude-audit", async () => { await altitudeAudit.AuditAsync(nodeId, forceSynopsis: false, ct); });
             await RunCheckAsync(checks, "reader-qa", async () => { await comprehensionProbe.RunAsync(nodeId, force: false, ct); });
+            await RunCheckAsync(checks, "behavior-check", () => BehaviorCheckAsync(nodeId, slug, ct));
         }
 
         // ── FULL tier — heaviest multi-call audits, cost scales with book length ────
@@ -132,6 +136,8 @@ public class BookHealthService(
             await RunCheckAsync(checks, "storyscope-audit", async () => { storyScopeReport = await storyScopeAudit.AuditAsync(nodeId, ct); });
             await RunCheckAsync(checks, "swain-audit", async () => { swainReport = await SwainAsync(slug, ct); });
             await RunCheckAsync(checks, "chekhov-audit", () => ChekhovAsync(nodeId, slug, ct));
+            await RunCheckAsync(checks, "five-act-map", () => FiveActMapAsync(nodeId, slug, ct));
+            await RunCheckAsync(checks, "dramatic-question", () => DramaticQuestionAsync(nodeId, slug, ct));
         }
 
         var (sii, grade, deduction, rates, excluded) = await ComputeScoreAsync(
@@ -261,6 +267,115 @@ public class BookHealthService(
                 $"CHEKHOV [{f.Verdict}] {f.PropName} ({f.PropType}): {f.Reasoning}",
                 snippet: null, suggestedFix: f.Fix);
         }
+    }
+
+    /// <summary>NarrativeScienceService's five-act map returns structural gaps but never files
+    /// Findings. One LLM call per book — cheap, always run in FULL.</summary>
+    private async Task FiveActMapAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        var map = await narrativeScience.MapFiveActStructureAsync(nodeId, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "FIVEACT ");
+        if (map.Error != null) return;
+        foreach (var gap in map.StructuralGaps)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.Medium,
+                $"FIVEACT {gap}", snippet: null, suggestedFix: null);
+    }
+
+    /// <summary>NarrativeScienceService's dramatic-question check ("who is this person really?")
+    /// is per-beat (Will Storr's framework) and never files Findings. One LLM call PER BEAT —
+    /// the most direct existing match for "does prose reveal character, not just plot," so it's
+    /// worth the cost, but it's real: this is why the check lives in FULL, not DEEP. Skipped:
+    /// AuditSceneEngagementAsync's 6-point scene anatomy — its mechanisms (unexpected change,
+    /// cause-effect, specificity, show-not-tell) substantially overlap with what LogicSweep's
+    /// causality dimension, DELIGHT moves, and StoryScope already check per-beat; adding it
+    /// would mostly re-spend LLM calls on signal already covered elsewhere.</summary>
+    private async Task DramaticQuestionAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var beats = await GetEnabledBeatsAsync(db, nodeId, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "DRAMATIC-Q ");
+        foreach (var b in beats)
+        {
+            var result = await narrativeScience.CheckDramaticQuestionAsync(b.Text, characterId: null, ct);
+            if (result.DramaticQuestionActive && result.OverallScore >= 5) continue;
+            var sev = result.OverallScore <= 2 ? FindingSeverity.Medium : FindingSeverity.Low;
+            findingsSvc.Upsert($"node:{slug}/beat:{b.Id:N}", chapterId: null, FindingCategory.StructuralFailure, sev,
+                $"DRAMATIC-Q beat #{b.Number}: scores {result.OverallScore}/10 on \"who is this person really\" — " +
+                $"{(string.IsNullOrWhiteSpace(result.SubconsciousSummary) ? "no subconscious layer detected" : result.SubconsciousSummary)}",
+                snippet: null, suggestedFix: result.ImprovementHint);
+        }
+    }
+
+    private sealed record PresenceRow(Guid BeatId, Guid EntityId, string EntityName);
+
+    /// <summary>BehavioralInvariantEnforcer checks a beat's prose against ONE character's
+    /// CharacterBehavioralRules but is never run automatically — it only fires on explicit
+    /// manual --behavior-check calls today. Wires it into the battery: for each character who
+    /// (a) has behavioral rules defined AND (b) is actually present (not just mentioned) in a
+    /// beat of this book, ask whether that beat contradicts their established rules.
+    /// EnforceAsync itself is already cost-gated (zero LLM calls for a character with no rules),
+    /// so this naturally costs little on books with few or no ruled characters — safe for DEEP,
+    /// not reserved for FULL. BeatEntityPresence has no EF mapping, so the character list is
+    /// narrowed via the real BeatEntityMentions DbSet first (this book's characters only) before
+    /// a small parameterized raw-SQL query for presence-type filtering.</summary>
+    private async Task BehaviorCheckAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var beatIds = await db.BeatNodes.AsNoTracking()
+            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
+        if (beatIds.Count == 0) return;
+
+        var bookEntityIds = await db.BeatEntityMentions.AsNoTracking()
+            .Where(m => beatIds.Contains(m.BeatId)).Select(m => m.EntityId).Distinct().ToListAsync(ct);
+        if (bookEntityIds.Count == 0) return;
+        var ruleCharacterIds = await db.CharacterBehavioralRules.AsNoTracking()
+            .Where(r => bookEntityIds.Contains(r.CharacterId))
+            .Select(r => r.CharacterId).Distinct().ToListAsync(ct);
+        if (ruleCharacterIds.Count == 0) return;
+
+        var charParams = ruleCharacterIds.Select((id, i) => new SqlParameter($"@c{i}", id)).ToArray();
+        var placeholders = string.Join(",", charParams.Select(p => p.ParameterName));
+        var presence = await db.Database.SqlQueryRaw<PresenceRow>(
+            "SELECT BeatId, EntityId, EntityName FROM BeatEntityPresence " +
+            "WHERE PresenceType IN ('present-active','present-passive','pov','implied-present') " +
+            $"AND EntityId IN ({placeholders})",
+            charParams).ToListAsync(ct);
+
+        var beatIdSet = beatIds.ToHashSet();
+        var pairs = presence.Where(p => beatIdSet.Contains(p.BeatId)).ToList();
+        if (pairs.Count == 0) return;
+
+        var pairBeatIds = pairs.Select(p => p.BeatId).Distinct().ToList();
+        var beatTexts = await db.Beats.AsNoTracking()
+            .Where(b => pairBeatIds.Contains(b.Id))
+            .Select(b => new { b.Id, b.Number, b.Text })
+            .ToDictionaryAsync(b => b.Id, ct);
+
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "BEHAVIOR ");
+        foreach (var p in pairs)
+        {
+            if (!beatTexts.TryGetValue(p.BeatId, out var beat) || string.IsNullOrWhiteSpace(beat.Text)) continue;
+            var violations = await behaviorEnforcer.EnforceAsync(beat.Text, p.EntityId, ct);
+            foreach (var v in violations)
+                findingsSvc.Upsert($"node:{slug}/beat:{p.BeatId:N}", chapterId: null, FindingCategory.BehaviorContradiction, FindingSeverity.Medium,
+                    $"BEHAVIOR beat #{beat.Number} {v.CharacterName} [{v.RuleBucket}]: {v.RuleText} — {v.Explanation}",
+                    snippet: null, suggestedFix: null);
+        }
+    }
+
+    private async Task<List<(Guid Id, int Number, string Text)>> GetEnabledBeatsAsync(
+        ProseDbContext db, Guid nodeId, CancellationToken ct)
+    {
+        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var rows = await db.BeatNodes.AsNoTracking()
+            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
+            .OrderBy(bn => bn.SortKey)
+            .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text })
+            .ToListAsync(ct);
+        return rows.Select(r => (r.Id, r.Number, r.Text)).ToList();
     }
 
     // ── SII computation ─────────────────────────────────────────────────────────────

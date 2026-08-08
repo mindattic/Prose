@@ -31,14 +31,6 @@ public static class ProseHealthCli
             PrintTier("RISK TIER 2 — worth a read",          report.Tier2, ConsoleColor.Yellow);
             PrintTier("RISK TIER 3 — low signal",            report.Tier3, ConsoleColor.DarkGray);
 
-            if (report.BookMeanPredictedScore.Count > 0)
-            {
-                Console.WriteLine("kNN Predictions (unscored stories):");
-                foreach (var (s, mean) in report.BookMeanPredictedScore.OrderBy(kv => kv.Value))
-                    Console.WriteLine($"  {s,-20} mean predicted {mean:F1}");
-                Console.WriteLine();
-            }
-
             if (report.Warnings.Count > 0)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -78,7 +70,6 @@ public static class ProseHealthCli
     private static string BuildSignalLine(BeatHealthRecord r)
     {
         var parts = new List<string>();
-        if (r.PredictedScore.HasValue)                       parts.Add($"kNN={r.PredictedScore:F0}");
         if (r.OutlierSigmas is > 1.5)                        parts.Add($"outlier={r.OutlierSigmas:+0.0}σ");
         if (r.AdverbDensity > 0.05)                          parts.Add($"adv={r.AdverbDensity:P0}");
         if (r.PassiveCount > 3)                              parts.Add($"pass={r.PassiveCount}");

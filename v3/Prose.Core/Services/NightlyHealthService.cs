@@ -14,7 +14,6 @@ public sealed record BeatHealthRecord(
     string?    NodeCode,
     double?    Score,
     int        RiskScore,
-    double?    PredictedScore,
     double?    OutlierSigmas,
     double?    VoiceDriftDistance,
     double     AdverbDensity,
@@ -32,7 +31,6 @@ public sealed record NightlyHealthReport(
     IReadOnlyList<BeatHealthRecord> Tier1,
     IReadOnlyList<BeatHealthRecord> Tier2,
     IReadOnlyList<BeatHealthRecord> Tier3,
-    IReadOnlyDictionary<string, double> BookMeanPredictedScore,
     IReadOnlyList<string> Warnings);
 
 /// <summary>
@@ -40,6 +38,14 @@ public sealed record NightlyHealthReport(
 /// all analysis uses text-only stats (ProseStatsService) and cached
 /// ProseEmbeddings vectors (EmbeddingHealthService). Writes findings to
 /// FindingsService and emits a markdown report.
+///
+/// Dropped its kNN score-prediction signal 2026-08-08: <see cref="EmbeddingHealthService.PredictScoreAsync"/>
+/// only draws neighbors from beats with a non-null Beat.Score, which is under 1% of the corpus
+/// since panel-voting went opt-in (SS-A44) — the neighbor pool can't grow under the current
+/// regime, so unlike other score-gated checks fixed this session, this one has no un-gating fix;
+/// the training data itself is frozen. The remaining signals below (outlier detection, adverb
+/// density, passive voice, telling-language, adjacent-beat monotony/jarring) are all
+/// deterministic/text-only and unaffected — this service keeps running on those.
 /// </summary>
 public class NightlyHealthService
 {
@@ -48,7 +54,6 @@ public class NightlyHealthService
     private const int    PassiveThreshold        = 6;
     private const int    TellingThreshold        = 5;
     private const double OutlierSigmaThreshold   = 1.5;
-    private const double PredictedScoreLow       = 72.0;
 
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly EmbeddingHealthService embHealth;
@@ -83,12 +88,10 @@ public class NightlyHealthService
         if (books.Count == 0)
         {
             warnings.Add(slug != null ? $"No non-WIP book found with slug '{slug}'" : "No non-WIP books found");
-            return new NightlyHealthReport(runAt, 0, 0,
-                [], [], [], new Dictionary<string, double>(), warnings);
+            return new NightlyHealthReport(runAt, 0, 0, [], [], [], warnings);
         }
 
         var allRecords             = new List<BeatHealthRecord>();
-        var bookMeanPredicted      = new Dictionary<string, double>();
         int totalBeats             = 0;
 
         foreach (var book in books)
@@ -101,13 +104,6 @@ public class NightlyHealthService
                 var records = await AnalyseBookAsync(book, ct);
                 allRecords.AddRange(records);
                 totalBeats += records.Count;
-
-                var predicted = records
-                    .Where(r => r.PredictedScore.HasValue)
-                    .Select(r => r.PredictedScore!.Value)
-                    .ToList();
-                if (predicted.Count > 0)
-                    bookMeanPredicted[book.Slug] = predicted.Average();
             }
             catch (Exception ex)
             {
@@ -128,7 +124,7 @@ public class NightlyHealthService
         return new NightlyHealthReport(
             runAt, books.Count, totalBeats,
             tier1, tier2, tier3,
-            bookMeanPredicted, warnings);
+            warnings);
     }
 
     // ── Book-level analysis ───────────────────────────────────────────────
@@ -157,15 +153,6 @@ public class NightlyHealthService
         var monotonousA   = adjacent.Where(p => p.IsMonotonous).Select(p => p.BeatIdA).ToHashSet();
         var jarringA      = adjacent.Where(p => p.IsJarring).Select(p => p.BeatIdA).ToHashSet();
 
-        // kNN prediction — only for unscored beats; skip scored beats
-        var unscoredIds   = orderedBeats.Where(b => b.Score == null).Select(b => b.BeatId).ToList();
-        var knnById       = new Dictionary<Guid, BeatKnnResult?>();
-        foreach (var bid in unscoredIds)
-        {
-            if (ct.IsCancellationRequested) break;
-            knnById[bid] = await embHealth.PredictScoreAsync(bid, ct: ct);
-        }
-
         // Assemble BeatHealthRecord per beat and compute risk score
         var records = new List<BeatHealthRecord>(orderedBeats.Count);
         for (int i = 0; i < orderedBeats.Count; i++)
@@ -174,9 +161,8 @@ public class NightlyHealthService
             var stats = statsById[ob.BeatId];
             outlierById.TryGetValue(ob.BeatId, out var outlier);
             driftById.TryGetValue(ob.BeatId, out var drift);
-            knnById.TryGetValue(ob.BeatId, out var knn);
 
-            var riskScore = ComputeRisk(stats, outlier, knn);
+            var riskScore = ComputeRisk(stats, outlier);
             if (monotonousA.Contains(ob.BeatId)) riskScore += 1;
             if (jarringA.Contains(ob.BeatId))    riskScore += 1;
 
@@ -188,7 +174,6 @@ public class NightlyHealthService
                 NodeCode:           book.NodeCode,
                 Score:              ob.Score,
                 RiskScore:          riskScore,
-                PredictedScore:     knn?.PredictedScore,
                 OutlierSigmas:      outlier?.SigmasFromMean,
                 VoiceDriftDistance: drift?.AvgDistanceToTop,
                 AdverbDensity:      stats.AdverbDensity,
@@ -203,10 +188,9 @@ public class NightlyHealthService
         return records;
     }
 
-    private static int ComputeRisk(ProseStats stats, BeatOutlierResult? outlier, BeatKnnResult? knn)
+    private static int ComputeRisk(ProseStats stats, BeatOutlierResult? outlier)
     {
         int risk = 0;
-        if (knn != null && knn.PredictedScore < PredictedScoreLow)    risk += 3;
         if (outlier != null && outlier.SigmasFromMean > OutlierSigmaThreshold) risk += 2;
         if (stats.AdverbDensity > AdverbDensityThreshold)              risk += 1;
         if (stats.PassiveVoiceCount > PassiveThreshold)                risk += 1;
@@ -250,7 +234,6 @@ public class NightlyHealthService
     private static string BuildSignalText(BeatHealthRecord r)
     {
         var parts = new List<string>();
-        if (r.PredictedScore.HasValue) parts.Add($"kNN={r.PredictedScore:F0}");
         if (r.OutlierSigmas.HasValue && r.OutlierSigmas > OutlierSigmaThreshold)
             parts.Add($"outlier={r.OutlierSigmas:+0.0;-0.0}σ");
         if (r.AdverbDensity > AdverbDensityThreshold) parts.Add($"adverbs={r.AdverbDensity:P0}");
@@ -342,8 +325,8 @@ public class NightlyHealthService
             if (tier.Count == 0) return;
             sb.AppendLine($"## {header} — {tier.Count} beats");
             sb.AppendLine();
-            sb.AppendLine("| Book | # | Title | kNN | Outlier | Adverbs | Passive | Telling | Risk |");
-            sb.AppendLine("|---|---|---|---|---|---|---|---|---|");
+            sb.AppendLine("| Book | # | Title | Outlier | Adverbs | Passive | Telling | Risk |");
+            sb.AppendLine("|---|---|---|---|---|---|---|---|");
             foreach (var r in tier)
             {
                 var title = r.Title is { Length: > 0 } t
@@ -351,7 +334,6 @@ public class NightlyHealthService
                     : "-";
                 sb.AppendLine(
                     $"| {r.NodeCode ?? r.NodeSlug} | {r.BeatNumber} | {title} " +
-                    $"| {(r.PredictedScore.HasValue ? $"{r.PredictedScore:F0}" : "-")} " +
                     $"| {(r.OutlierSigmas.HasValue ? $"{r.OutlierSigmas:+0.0;-0.0}σ" : "-")} " +
                     $"| {r.AdverbDensity:P0} | {r.PassiveCount} | {r.TellingCount} " +
                     $"| {r.RiskScore} |");
@@ -362,15 +344,6 @@ public class NightlyHealthService
         AppendTier("RISK TIER 1 — fix before next review", report.Tier1);
         AppendTier("RISK TIER 2 — worth a read", report.Tier2);
         AppendTier("RISK TIER 3 — low signal", report.Tier3);
-
-        if (report.BookMeanPredictedScore.Count > 0)
-        {
-            sb.AppendLine("## kNN Book Predictions (unscored)");
-            sb.AppendLine();
-            foreach (var (slug, mean) in report.BookMeanPredictedScore.OrderBy(kvp => kvp.Value))
-                sb.AppendLine($"- **{slug}** — mean predicted {mean:F1}");
-            sb.AppendLine();
-        }
 
         if (report.Warnings.Count > 0)
         {

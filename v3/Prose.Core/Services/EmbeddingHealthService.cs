@@ -5,7 +5,6 @@ using Prose.Core.Data;
 
 namespace Prose.Core.Services;
 
-public sealed record BeatKnnResult(Guid BeatId, double PredictedScore, int PeerCount, double AvgSimilarity);
 public sealed record BeatOutlierResult(Guid BeatId, double AvgDistanceToPeers, double SigmasFromMean);
 public sealed record BeatDriftResult(Guid BeatId, double AvgDistanceToTop);
 public sealed record AdjacentBeatPair(Guid BeatIdA, Guid BeatIdB, double Similarity, bool IsMonotonous, bool IsJarring);
@@ -56,55 +55,6 @@ public class EmbeddingHealthService
         """;
 
     // ── kNN score prediction ──────────────────────────────────────────────
-
-    /// <summary>
-    /// Predict quality for an unscored beat by finding its k nearest scored
-    /// beats across the entire corpus (cross-story). Returns null if the beat
-    /// has no cached embedding or fewer than 3 scored neighbours are found.
-    /// Zero API calls — self-referential VECTOR_DISTANCE on ProseEmbeddings.
-    /// </summary>
-    public async Task<BeatKnnResult?> PredictScoreAsync(
-        Guid beatId, int k = 15, CancellationToken ct = default)
-    {
-        try
-        {
-            await using var db = await dbFactory.CreateDbContextAsync(ct);
-            const string sql = """
-                SELECT TOP (@p_k)
-                    p2.ScopeId   AS BeatId,
-                    b.Score      AS Score,
-                    1.0 - VECTOR_DISTANCE('cosine', p1.Vector, p2.Vector) AS Similarity
-                FROM dbo.ProseEmbeddings p1
-                JOIN dbo.ProseEmbeddings p2
-                    ON p2.ScopeKind = @p_scope AND p2.ScopeId != @p_beatId
-                JOIN dbo.Beats b ON b.Id = p2.ScopeId
-                WHERE p1.ScopeKind = @p_scope
-                  AND p1.ScopeId   = @p_beatId
-                  AND b.Score IS NOT NULL
-                ORDER BY VECTOR_DISTANCE('cosine', p1.Vector, p2.Vector) ASC
-                """;
-
-            var rows = await db.Database.SqlQueryRaw<KnnRow>(sql,
-                    new SqlParameter("@p_k",      Math.Max(1, k)),
-                    new SqlParameter("@p_scope",  ScopeBeatNode),
-                    new SqlParameter("@p_beatId", beatId))
-                .ToListAsync(ct);
-
-            if (rows.Count < 3) return null;
-
-            // Similarity-squared weighting: closest neighbours count most
-            var totalWeight = rows.Sum(r => r.Similarity * r.Similarity);
-            if (totalWeight == 0) return null;
-
-            var predicted = rows.Sum(r => r.Score * r.Similarity * r.Similarity) / totalWeight;
-            return new BeatKnnResult(beatId, predicted, rows.Count, rows.Average(r => r.Similarity));
-        }
-        catch (Exception ex)
-        {
-            log.LogWarning(ex, "EmbeddingHealth: kNN failed for beat {BeatId}", beatId);
-            return null;
-        }
-    }
 
     // ── Outlier detection ─────────────────────────────────────────────────
 
@@ -267,13 +217,6 @@ public class EmbeddingHealthService
     }
 
     // ── Row projections ───────────────────────────────────────────────────
-
-    private sealed class KnnRow
-    {
-        public Guid   BeatId     { get; set; }
-        public double Score      { get; set; }
-        public double Similarity { get; set; }
-    }
 
     private sealed class OutlierRow
     {
