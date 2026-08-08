@@ -90,20 +90,24 @@ jobs:
           tenant-id:       ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      # Same NuGet.config / bundled-package setup as the build job; restore so
-      # ApplyMigrations' transitive Core deps (Legion / Vault) resolve.
-      - name: Restore ApplyMigrations
-        run: dotnet restore v3/ApplyMigrations/ApplyMigrations.csproj --property:Configuration=Release
+      # v3/ApplyMigrations (the original standalone migration console app) was
+      # deleted at some point; its job now lives in Prose.Cli's --migrate-sql
+      # --schema flag (MigrateSqlCli.cs) — same idempotent EF-migration +
+      # SYSTEM_VERSIONING work, just dispatched through the main CLI instead
+      # of a separate project. Restore the CLI so its transitive Core deps
+      # (Legion / Vault) resolve.
+      - name: Restore Prose.Cli
+        run: dotnet restore v3/Prose.Cli/Prose.Cli.csproj --property:Configuration=Release
 
-      # ApplyMigrations resolves the connection string from
-      # ConnectionStrings__Prose (env wins over appsettings/LocalDB).
-      # AZURE_SQL_CONNECTION carries Authentication=Active Directory Default;
-      # the OIDC token from azure/login flows through DefaultAzureCredential.
-      # Idempotent — safe to run on every master push.
+      # Resolves the connection string from ConnectionStrings__Prose (env wins
+      # over appsettings/LocalDB). AZURE_SQL_CONNECTION carries
+      # Authentication=Active Directory Default; the OIDC token from
+      # azure/login flows through DefaultAzureCredential. Idempotent — safe to
+      # run on every master push.
       - name: Apply schema + enable temporal versioning
         env:
           ConnectionStrings__Prose: ${{ secrets.AZURE_SQL_CONNECTION }}
-        run: dotnet run --project v3/ApplyMigrations/ApplyMigrations.csproj -c Release --no-restore
+        run: dotnet run --project v3/Prose.Cli/Prose.Cli.csproj -c Release --no-restore -- --migrate-sql --schema
 
   deploy:
     runs-on: windows-latest
