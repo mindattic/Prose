@@ -166,7 +166,7 @@ public class ProseWriterRouter(
                     docStackContext = "## NODE BIBLE (authoritative for this book — do not contradict)\n"
                         + (nodeBible.Length > maxBibleChars ? nodeBible[..maxBibleChars] : nodeBible);
                     log.LogWarning(
-                        "Doc context stack EMPTY for node {NodeId} — fell back to Nodes.NodeBible ({Chars} chars). Run 'ss --sync-markdown' to restore the full doc stack.",
+                        "Doc context stack EMPTY for node {NodeId} — fell back to Nodes.NodeBible ({Chars} chars). Run 'prose --sync-markdown' to restore the full doc stack.",
                         context.NodeId, docStackContext.Length);
                 }
                 else
@@ -441,8 +441,8 @@ public class ProseWriterRouter(
                     if (hasBlueprint)
                         log.LogWarning(
                             "[ProseWriterRouter] Beat {BeatId} has a structural blueprint but no BeatBlueprintDecision row. " +
-                            "Run ss --generate-blueprint --slug <slug> to generate per-beat contracts, or " +
-                            "ss --migrate-blueprint-rows to backfill existing stories.",
+                            "Run prose --generate-blueprint --slug <slug> to generate per-beat contracts, or " +
+                            "prose --migrate-blueprint-rows to backfill existing stories.",
                             beatId);
                 }
                 else

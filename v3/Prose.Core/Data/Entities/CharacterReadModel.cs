@@ -19,7 +19,7 @@ namespace Prose.Core.Data.Entities;
 ///
 /// Enforced single-writer sync: every <c>CharacterRepository.Save</c> refreshes
 /// the row from the freshly-persisted relational record. Stale/missing rows are
-/// lazily backfilled on read, and <c>ss --rebuild-readmodel</c> rebuilds all.
+/// lazily backfilled on read, and <c>prose --rebuild-readmodel</c> rebuilds all.
 /// </summary>
 public class CharacterReadModel
 {

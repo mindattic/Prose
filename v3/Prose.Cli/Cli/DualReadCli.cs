@@ -7,7 +7,7 @@ using System.Text;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --dual-read --old &lt;slug|id&gt; --new &lt;slug|id&gt; [--panel &lt;name&gt;] [--readers N]</c>
+/// <c>prose --dual-read --old &lt;slug|id&gt; --new &lt;slug|id&gt; [--panel &lt;name&gt;] [--readers N]</c>
 ///
 /// Dual-read comparative review: the SAME pinned panel (a persistent focus group) reads BOTH
 /// versions of a story, so each reader's score on old and new can be PAIRED. The within-reader
@@ -30,7 +30,7 @@ public static class DualReadCli
 
         if (string.IsNullOrWhiteSpace(oldArg) || string.IsNullOrWhiteSpace(newArg))
         {
-            Console.Error.WriteLine("Usage: ss --dual-read --old <slug|id> --new <slug|id> [--panel <name>] [--readers N] [--allow-votes]");
+            Console.Error.WriteLine("Usage: prose --dual-read --old <slug|id> --new <slug|id> [--panel <name>] [--readers N] [--allow-votes]");
             return 1;
         }
 

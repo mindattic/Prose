@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --edit-book</c> — the review-driven auto-editor. Reads the node's
+/// <c>prose --edit-book</c> — the review-driven auto-editor. Reads the node's
 /// latest review batch, weights each beat's fix-priority (floor × prevalence ×
 /// Pareto modifier), and conservatively rewrites the top-N floor-draggers. Emits
 /// the before/after PROPOSALS as JSON to a temp file (for an approval survey) —
@@ -37,7 +37,7 @@ public static class EditNodeCli
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[edit-book] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --edit-book (--id <guid|prefix> | --slug <slug>) [--top N]");
+            Console.Error.WriteLine("Usage: prose --edit-book (--id <guid|prefix> | --slug <slug>) [--top N]");
             return 1;
         }
         if (top <= 0) top = 5;

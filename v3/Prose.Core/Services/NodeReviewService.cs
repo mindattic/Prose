@@ -1962,7 +1962,7 @@ Be specific; do not invent praise the reviews don't support.";
                         chapterId:    null,
                         category:     FindingCategory.Voice,
                         severity:     FindingSeverity.Medium,
-                        summary:      $"VOICE-HARVEST: \"{node.Title}\" reached {node.Score:0.#}% — harvest its voice into the rules ( ss --harvest-voice --slug {node.Slug} ).",
+                        summary:      $"VOICE-HARVEST: \"{node.Title}\" reached {node.Score:0.#}% — harvest its voice into the rules ( prose --harvest-voice --slug {node.Slug} ).",
                         snippet:      null,
                         suggestedFix: "Run the voice harvest, then approve the proposed rules.");
                     log.LogInformation("Node {Slug} crossed 80% ({Score:0.#}) — raised VOICE-HARVEST finding.", node.Slug, node.Score);
@@ -2479,7 +2479,7 @@ Be specific; do not invent praise the reviews don't support.";
         if (changeRatio > 0.30)
             return new DeltaRunResult(0, 0, 0, changedPositions.Count, orderedBeats.Count,
                 $"Too many changes ({changedPositions.Count}/{orderedBeats.Count} beats, {changeRatio:0%}). " +
-                "Run a full review instead: ss --review-node --allow-votes");
+                "Run a full review instead: prose --review-node --allow-votes");
 
         // Build per-beat text hash map for stamping BeatTextHash on new score rows.
         var beatHashes = orderedBeats

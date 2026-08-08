@@ -14,7 +14,7 @@ namespace Prose.Core.Services;
 /// do with auditing, so it gets its own service instead of dragging the audit's replacement
 /// along for the ride.
 ///
-/// CLI: ss --write-outline --slug &lt;slug&gt;
+/// CLI: prose --write-outline --slug &lt;slug&gt;
 /// MCP: write_outline
 /// </summary>
 public class NodeOutlineService(ILlmService llm, IDbContextFactory<ProseDbContext> dbFactory)

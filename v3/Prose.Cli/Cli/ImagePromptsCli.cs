@@ -6,10 +6,10 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for <see cref="ImagePromptRegenService"/>.
 ///
-///   ss --image-prompts regen --id &lt;id|slug&gt; [--force]
+///   prose --image-prompts regen --id &lt;id|slug&gt; [--force]
 ///       Regenerate one character's prompts. --force bypasses the hash check.
 ///
-///   ss --image-prompts regen --all-changed
+///   prose --image-prompts regen --all-changed
 ///       Sweep every active character; skip those whose stored hash already
 ///       matches their current genetic_ancestry.
 /// </summary>
@@ -21,7 +21,7 @@ public static class ImagePromptsCli
         var sub = idx >= 0 && idx + 1 < args.Length ? args[idx + 1] : null;
         if (sub != "regen" && sub != "backfill-hashes")
         {
-            Console.Error.WriteLine("Usage: ss --image-prompts <regen|backfill-hashes> [...]");
+            Console.Error.WriteLine("Usage: prose --image-prompts <regen|backfill-hashes> [...]");
             return 2;
         }
 

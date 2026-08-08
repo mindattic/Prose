@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --prepare-audible</c> — build an Audible AI-narration hand-off package
+/// <c>prose --prepare-audible</c> — build an Audible AI-narration hand-off package
 /// for a node: a narration-clean manuscript (.audible.txt), a pronunciation
 /// guide (.pronunciation.md), and a README with submission instructions.
 ///
@@ -42,7 +42,7 @@ public static class PrepareAudibleCli
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[prepare-audible] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --prepare-audible (--slug <slug> | --id <guid|prefix>) [--no-phonetics]");
+            Console.Error.WriteLine("Usage: prose --prepare-audible (--slug <slug> | --id <guid|prefix>) [--no-phonetics]");
             return 1;
         }
 

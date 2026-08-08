@@ -4,17 +4,17 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --get &lt;type&gt; &lt;name-or-id&gt;</c> — targeted entity lookup from the CLI.
+/// <c>prose --get &lt;type&gt; &lt;name-or-id&gt;</c> — targeted entity lookup from the CLI.
 ///
 /// Types: character | place | weapon | faction | corponation
 ///
 /// Examples:
-///   ss --get character Kyle
-///   ss --get character 019ea123-...
-///   ss --get weapon Silence
-///   ss --get place "The Shelf"
-///   ss --get faction "Lotus Syndicate"
-///   ss --get corponation Arcturus
+///   prose --get character Kyle
+///   prose --get character 019ea123-...
+///   prose --get weapon Silence
+///   prose --get place "The Shelf"
+///   prose --get faction "Lotus Syndicate"
+///   prose --get corponation Arcturus
 /// </summary>
 public static class GetEntityCli
 {
@@ -114,11 +114,11 @@ public static class GetEntityCli
 
     private static void PrintUsage()
     {
-        Console.Error.WriteLine("Usage: ss --get <type> <name-or-id>");
+        Console.Error.WriteLine("Usage: prose --get <type> <name-or-id>");
         Console.Error.WriteLine("Types: character | place | weapon | faction | corponation");
         Console.Error.WriteLine("Examples:");
-        Console.Error.WriteLine("  ss --get character Kyle");
-        Console.Error.WriteLine("  ss --get weapon Silence");
-        Console.Error.WriteLine("  ss --get place \"Waxwing Spire\"");
+        Console.Error.WriteLine("  prose --get character Kyle");
+        Console.Error.WriteLine("  prose --get weapon Silence");
+        Console.Error.WriteLine("  prose --get place \"Waxwing Spire\"");
     }
 }

@@ -8,10 +8,10 @@ namespace Prose.Cli;
 /// CLI surface for <see cref="EmbeddingService"/>. Bootstraps the
 /// EntityEmbeddings table from the active entity corpus.
 ///
-///   ss --reembed                     full corpus pass (drift-skipped — only
+///   prose --reembed                     full corpus pass (drift-skipped — only
 ///                                    entities whose source text changed get
 ///                                    a new API call)
-///   ss --reembed --force             same as above but invalidates every
+///   prose --reembed --force             same as above but invalidates every
 ///                                    cached hash (use after model upgrade)
 /// </summary>
 public static class ReembedCli

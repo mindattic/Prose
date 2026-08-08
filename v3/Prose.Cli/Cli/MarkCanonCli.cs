@@ -6,10 +6,10 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --mark-canon (--slug &lt;s&gt; | --id &lt;guid|prefix&gt;) [--off]</c> — the
+/// <c>prose --mark-canon (--slug &lt;s&gt; | --id &lt;guid|prefix&gt;) [--off]</c> — the
 /// author-only Canon trust gate (ARCHITECTURE.md §2c): mark a node "strong
 /// enough to draw conclusions about the characters and events." Canon nodes are
-/// what the voice-harvest learns from (`ss --harvest-voice --canon`). <c>--off</c>
+/// what the voice-harvest learns from (`prose --harvest-voice --canon`). <c>--off</c>
 /// clears it.
 /// </summary>
 public static class MarkCanonCli
@@ -50,7 +50,7 @@ public static class MarkCanonCli
 
         await workbench.SetCanonAsync(nodeId, !off);
         Console.WriteLine($"[mark-canon] \"{title}\" canon = {(!off).ToString().ToLowerInvariant()}.");
-        if (!off) Console.WriteLine("[mark-canon] Harvest its voice into the rules: ss --harvest-voice --canon");
+        if (!off) Console.WriteLine("[mark-canon] Harvest its voice into the rules: prose --harvest-voice --canon");
         return 0;
     }
 }

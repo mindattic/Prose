@@ -19,7 +19,7 @@ namespace Prose.Cli;
 /// beatIndex/totalBeats.
 ///
 /// Usage:
-///   ss --backfill-coverage --slug &lt;book-or-chapter-slug&gt;
+///   prose --backfill-coverage --slug &lt;book-or-chapter-slug&gt;
 /// </summary>
 public static class BackfillCoverageCli
 {
@@ -86,7 +86,7 @@ public static class BackfillCoverageCli
         }
 
         Console.WriteLine($"\nDone. {totalBeatsLogged} beats logged across {chapters.Count} node(s).");
-        Console.WriteLine($"Inspect with: ss --workflow-status --slug {root.Slug}");
+        Console.WriteLine($"Inspect with: prose --workflow-status --slug {root.Slug}");
     }
 
     private static string? GetArg(string[] args, string flag)

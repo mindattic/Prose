@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --beat &lt;subcommand&gt;</c> — fine-grained beat manipulation without the UI.
+/// <c>prose --beat &lt;subcommand&gt;</c> — fine-grained beat manipulation without the UI.
 ///
 /// Subcommands:
 ///   insert  --node &lt;slug|id&gt; [--after &lt;beatId&gt;] [--text "..."]
@@ -335,7 +335,7 @@ public static class BeatCli
 
     private static int PrintUsage()
     {
-        Console.Error.WriteLine("Usage: ss --beat <subcommand> [args]");
+        Console.Error.WriteLine("Usage: prose --beat <subcommand> [args]");
         Console.Error.WriteLine("  insert  --node <slug|id> [--after <beatId>] [--text \"...\"]");
         Console.Error.WriteLine("  delete  --id <beatId> [--node <slug|id>]");
         Console.Error.WriteLine("  clear   --node <slug|id>  (soft-delete every enabled beat in the node)");

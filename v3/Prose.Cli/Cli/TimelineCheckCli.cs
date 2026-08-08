@@ -8,8 +8,8 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for the deterministic timeline-consistency validator (RFC 0009 §5).
 ///
-///   ss --timeline-check --slug &lt;nodeSlug&gt;
-///   ss --timeline-check --id   &lt;nodeGuid&gt;
+///   prose --timeline-check --slug &lt;nodeSlug&gt;
+///   prose --timeline-check --id   &lt;nodeGuid&gt;
 ///
 /// Exit code 0 when no high-severity findings; exit code 1 when any high-severity
 /// findings are present (medium/low findings still print but don't fail the exit code).
@@ -32,7 +32,7 @@ public static class TimelineCheckCli
 
         if (slug == null && idArg == null)
         {
-            Console.Error.WriteLine("Usage: ss --timeline-check (--slug <nodeSlug> | --id <nodeGuid>)");
+            Console.Error.WriteLine("Usage: prose --timeline-check (--slug <nodeSlug> | --id <nodeGuid>)");
             return 1;
         }
 

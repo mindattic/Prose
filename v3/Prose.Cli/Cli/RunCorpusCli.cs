@@ -10,7 +10,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --run-corpus --count N</c> — autonomous end-to-end pipeline:
+/// <c>prose --run-corpus --count N</c> — autonomous end-to-end pipeline:
 ///
 ///   For each of N nodes (or resume from a prior run):
 ///     1. Create node + planned beats (NodeBibleService)
@@ -112,7 +112,7 @@ public static class RunCorpusCli
             if (count <= 0)
             {
                 Console.Error.WriteLine("[run-corpus] --count N is required (or --resume to continue a prior run).");
-                Console.Error.WriteLine("Usage: ss --run-corpus --count N [--seed \"...\"] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]");
+                Console.Error.WriteLine("Usage: prose --run-corpus --count N [--seed \"...\"] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]");
                 return 1;
             }
             state = new RunState

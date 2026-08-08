@@ -4,7 +4,7 @@ using Prose.Core.Data;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// The full "export = ALL formats + ALL metadata" pipeline shared by <c>ss --export-node</c>
+/// The full "export = ALL formats + ALL metadata" pipeline shared by <c>prose --export-node</c>
 /// (<see cref="Prose.Cli"/>) and the MCP <c>export_node</c> tool, so the two entry points
 /// can never silently diverge again — before this, the CLI wrote docx+epub+pdf+txt+description+
 /// synopsis+keywords+cover while the MCP tool wrote only docx.

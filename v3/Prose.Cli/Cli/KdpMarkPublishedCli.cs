@@ -3,7 +3,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --kdp-mark-published --slug &lt;slug&gt; [--url &lt;amazonUrl&gt;] [--title-id &lt;id&gt;]</c>
+/// <c>prose --kdp-mark-published --slug &lt;slug&gt; [--url &lt;amazonUrl&gt;] [--title-id &lt;id&gt;]</c>
 /// — thin wrapper over <see cref="KdpMarkPublishedService"/> (shared with the KdpPublish app's
 /// <c>mark_published</c> tool). Parses args, calls the service, prints the result.
 /// </summary>

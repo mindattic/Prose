@@ -492,7 +492,7 @@ Williamite-only split), flying column, collective/official reprisal, boycott (co
 War), the Act for the Settlement of Ireland (1652) and the Connacht transplantation (background
 driver only).
 
-Seeded via `ss --add-character --dir` / `ss --add-place --dir` (batch mode — one JSON file per
+Seeded via `prose --add-character --dir` / `prose --add-place --dir` (batch mode — one JSON file per
 entity, imported in one process). Checked `Entities` first (confirmed clean before the original
 seeding pass). Every figure's `Description` carries citation-backed detail per `docs/NONFICTION.md`
 §1b — the `Description` IS the Glossary-tier content, and 41 corresponding Glossary beats plus
@@ -510,7 +510,7 @@ Checklist.
       removed at user instruction, not for accuracy reasons
 - [x] Entity seeding — **DONE**: 27 characters (19 original + 8 EXPANDED SCOPE, minus 1 removed
       = 26 live) + 16 places (11 original + 5 EXPANDED SCOPE, minus 1 removed = 15 live) all
-      seeded via `ss --add-character --dir` / `ss --add-place --dir`, `--universe source`
+      seeded via `prose --add-character --dir` / `prose --add-place --dir`, `--universe source`
 - [x] BookNode `TIRE` created, Id `019fc926-c5d9-7663-b08f-fbfb82b43219`,
       Author = "Ars Historica" (secular-history NONFICTION imprint, matching 1381/JOAN precedent —
       NOT "Pulpit Press"), NodeCode = `TIRE`. Title currently a working-title placeholder pending
@@ -537,5 +537,5 @@ Checklist.
       instruction
 - [ ] Export + QA — not started; blocked on chapter prose (currently zero body chapters have
       any beats beyond Notes/Glossary)
-- [ ] Structural blueprint (`ss --generate-blueprint --slug tyranny-s-long-war-guerrilla-ireland-
+- [ ] Structural blueprint (`prose --generate-blueprint --slug tyranny-s-long-war-guerrilla-ireland-
       1649-1921-019fc926 --universe source`) — queued as this session's next step

@@ -15,7 +15,7 @@ namespace Prose.Core.Services;
 ///
 /// Intended for design notes, canon briefs, and worldbuilding passages ("take this text
 /// and make the DB know everything it names"). Created rows use Status="stub" so the
-/// entity queue can promote them to canon after review. Run <c>ss --reembed</c> after a
+/// entity queue can promote them to canon after review. Run <c>prose --reembed</c> after a
 /// non-dry harvest so new rows join the semantic index.
 /// </summary>
 public class EntityHarvestService(

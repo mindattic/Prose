@@ -15,7 +15,7 @@ public static class SessionBeatsCli
 
         if (sessionIdStr == null || !Guid.TryParse(sessionIdStr, out var sessionId))
         {
-            Console.Error.WriteLine("Usage: ss --session-beats --session-id <guid>");
+            Console.Error.WriteLine("Usage: prose --session-beats --session-id <guid>");
             return 2;
         }
 

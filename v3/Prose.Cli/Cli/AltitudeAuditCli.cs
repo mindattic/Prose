@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --altitude-audit (--slug &lt;slug&gt; | --all) [--force-synopsis]</c>
+/// <c>prose --altitude-audit (--slug &lt;slug&gt; | --all) [--force-synopsis]</c>
 ///
 /// The three-altitudes agreement audit (docs/LOGIC.md §8): designed story (bible +
 /// blueprint) vs told story (chapter synopses). Writes
@@ -27,7 +27,7 @@ public static class AltitudeAuditCli
 
         if (!all && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --altitude-audit (--slug <slug> | --all) [--force-synopsis]");
+            Console.Error.WriteLine("Usage: prose --altitude-audit (--slug <slug> | --all) [--force-synopsis]");
             return 1;
         }
 

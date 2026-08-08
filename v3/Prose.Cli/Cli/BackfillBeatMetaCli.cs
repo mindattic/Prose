@@ -10,13 +10,13 @@ namespace Prose.Cli;
 /// <summary>
 /// Fills missing beat metadata WITHOUT touching prose.
 ///
-///   ss --backfill-synopses        --slug &lt;s&gt; [--model &lt;id&gt;] [--force]
+///   prose --backfill-synopses        --slug &lt;s&gt; [--model &lt;id&gt;] [--force]
 ///       Generate a 1–2 sentence Description from each beat's prose (LLM). The description is
 ///       the BeatGoal proxy the engine reads for mode detection + pacing, so filling it
 ///       sharpens coverage/mode signal. Use --model claude-haiku-4-5-20251001 for a cheap
 ///       pass. Skips beats that already have one unless --force.
 ///
-///   ss --backfill-structure-roles --slug &lt;s&gt; [--force]
+///   prose --backfill-structure-roles --slug &lt;s&gt; [--force]
 ///       Assign Save-the-Cat StructureRole deterministically. For a BOOK the arc spans the
 ///       whole novel (global reading-order position: Ch1≈Opening/Catalyst, mid≈Midpoint,
 ///       end≈Finale/Final Image) — NOT per-chapter, which would yield 16 "Opening Image"
@@ -33,7 +33,7 @@ public static class BackfillBeatMetaCli
         var force     = args.Contains("--force");
         var doSynopses = args.Contains("--backfill-synopses");
         var doRoles    = args.Contains("--backfill-structure-roles");
-        if (slug == null) { Console.Error.WriteLine("Usage: ss --backfill-synopses|--backfill-structure-roles --slug <slug> [--model <id>] [--force]"); return 2; }
+        if (slug == null) { Console.Error.WriteLine("Usage: prose --backfill-synopses|--backfill-structure-roles --slug <slug> [--model <id>] [--force]"); return 2; }
         if (!doSynopses && !doRoles) { Console.Error.WriteLine("Specify --backfill-synopses and/or --backfill-structure-roles."); return 2; }
 
         var dbFactory  = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();

@@ -217,8 +217,8 @@ Jean Froissart's *Chroniques*, the Statute of Labourers (1351), the poll tax ret
 Villeinage, the Statute of Labourers, the Great Rumour, ancient demesne, the poll tax, hedge-priest,
 the Great Revolt / Peasants' Revolt naming dispute.
 
-Seed via `create_character`/`create_place`/entity MCP or `ss --add-character --dir` /
-`ss --add-place --dir`, checking `Entities` first (confirmed clean — no 1381-relevant entities
+Seed via `create_character`/`create_place`/entity MCP or `prose --add-character --dir` /
+`prose --add-place --dir`, checking `Entities` first (confirmed clean — no 1381-relevant entities
 exist yet in NONFICTION, per DB query 2026-08-02). Tag each figure's Description with citation-backed
 detail per `docs/NONFICTION.md` §1b — the Description IS the Glossary-tier content.
 

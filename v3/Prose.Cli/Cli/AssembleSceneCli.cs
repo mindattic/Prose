@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// `ss --assemble-scene (--beat &lt;guid&gt; | --text "&lt;prose&gt;") [--budget N]`
+/// `prose --assemble-scene (--beat &lt;guid&gt; | --text "&lt;prose&gt;") [--budget N]`
 /// X-Ray scene assembly (RFC 0002): prints the entity roster detected in the
 /// beat/text (name scan + embeddings + graph hop) and the budgeted context
 /// block that prose prompts receive. CLI twin of the MCP tool
@@ -32,8 +32,8 @@ public static class AssembleSceneCli
 
         if (beatArg == null && textArg == null)
         {
-            Console.Error.WriteLine("usage: ss --assemble-scene (--beat <guid> | --text \"<prose>\") [--budget N]");
-            Console.Error.WriteLine("       ss --assemble-scene --backfill --slug <node-slug> [--harvest]");
+            Console.Error.WriteLine("usage: prose --assemble-scene (--beat <guid> | --text \"<prose>\") [--budget N]");
+            Console.Error.WriteLine("       prose --assemble-scene --backfill --slug <node-slug> [--harvest]");
             return 2;
         }
 

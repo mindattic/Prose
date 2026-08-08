@@ -3,7 +3,7 @@ using System.Text.Json;
 namespace Prose.Cli;
 
 /// <summary>
-/// Identity resolution for JSON seed imports (<c>ss --add-character</c>, <c>--add-place</c>, …).
+/// Identity resolution for JSON seed imports (<c>prose --add-character</c>, <c>--add-place</c>, …).
 ///
 /// The problem this solves: every canon model (<c>CharacterData</c>, <c>DistrictData</c>, …)
 /// initializes its <c>Id</c> property inline —

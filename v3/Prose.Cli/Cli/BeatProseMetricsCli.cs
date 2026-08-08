@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --compute-metrics [--slug &lt;slug&gt; | --all]
+/// prose --compute-metrics [--slug &lt;slug&gt; | --all]
 ///
 /// Computes and upserts per-beat prose quality metrics (sentence stats, TTR,
 /// MTLD, Flesch-Kincaid, dialogue proportion) for one story or every story.
@@ -21,8 +21,8 @@ public static class BeatProseMetricsCli
 
         if (!all && slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --compute-metrics --slug <slug>   compute metrics for one story");
-            Console.Error.WriteLine("       ss --compute-metrics --all           compute metrics for all enabled beats");
+            Console.Error.WriteLine("Usage: prose --compute-metrics --slug <slug>   compute metrics for one story");
+            Console.Error.WriteLine("       prose --compute-metrics --all           compute metrics for all enabled beats");
             return 1;
         }
 

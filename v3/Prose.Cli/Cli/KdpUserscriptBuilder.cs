@@ -24,7 +24,7 @@ public static class KdpUserscriptBuilder
         var output = template.Replace(Placeholder, booksJson);
 
         var outPath = Path.Combine(kdpDir, "kdp-panel.user.js");
-        var header = $"// Generated {DateTime.Now:yyyy-MM-dd HH:mm} by `ss --kdp-manifest --userscript`. Do not hand-edit — edit kdp-panel.template.js instead.\n";
+        var header = $"// Generated {DateTime.Now:yyyy-MM-dd HH:mm} by `prose --kdp-manifest --userscript`. Do not hand-edit — edit kdp-panel.template.js instead.\n";
         File.WriteAllText(outPath, header + output);
         return true;
     }

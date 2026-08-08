@@ -199,7 +199,7 @@ public static class DocumentMapper
     /// relational row yet. Returns the number of document entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-document-relational</c>.
+    /// Run once via <c>prose --rebuild-document-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

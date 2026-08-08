@@ -4,7 +4,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --kdp-status</c> — show KDP publication status for all tracked book nodes.
+/// <c>prose --kdp-status</c> — show KDP publication status for all tracked book nodes.
 ///
 /// PublicationStatus values:
 ///   Published      = live on KDP, no edits since last publish.

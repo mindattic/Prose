@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-psionic-relational</c> — backfill the Psionics relational
+/// <c>prose --rebuild-psionic-relational</c> — backfill the Psionics relational
 /// schema from Records.Json blobs. For every active psionic entity, deserializes
 /// the blob → PsionicData → persists columns + all 3 bridge tables (Aliases /
 /// KnownPractitioners / StoryHooks) + syncs EntityTags. Also creates minimal

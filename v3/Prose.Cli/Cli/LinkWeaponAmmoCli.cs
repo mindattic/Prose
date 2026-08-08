@@ -8,7 +8,7 @@ namespace Prose.Cli;
 /// Uses the local LLM to match each unlinked weapon to the correct ammo from the existing
 /// 70 ammunition entities (caliber, power cell, slug, CO2, etc.).
 ///
-///   ss --link-weapon-ammo [--local-url URL] [--local-key KEY] [--local-model TAG] [--dry-run]
+///   prose --link-weapon-ammo [--local-url URL] [--local-key KEY] [--local-model TAG] [--dry-run]
 ///
 /// Melee weapons return ammoName=null and are skipped (no edge needed).
 /// </summary>

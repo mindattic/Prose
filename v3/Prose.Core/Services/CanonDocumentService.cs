@@ -77,7 +77,7 @@ public class CanonDocumentService
 
         if (doc == null)
             return new UpsertResult(false, null, "document_not_found",
-                $"No {documentType} document for universe {universeId}. Run ss --migrate-canon-docs first.");
+                $"No {documentType} document for universe {universeId}. Run prose --migrate-canon-docs first.");
 
         var section = doc.Sections.FirstOrDefault(s =>
             s.SectionKey.Equals(sectionKey, StringComparison.OrdinalIgnoreCase));
@@ -129,7 +129,7 @@ public class CanonDocumentService
         var filePath = await typeRegistry.GetFilePathAsync(documentType, universeId, paths.DataRoot, ct);
         if (filePath == null)
             return new GenerateResult(false, null, "unknown_document_type",
-                $"No CanonDocumentTypes row for document type '{documentType}'. Run ss --list-canon-types to see what's registered.");
+                $"No CanonDocumentTypes row for document type '{documentType}'. Run prose --list-canon-types to see what's registered.");
 
         var assembled = AssembleDocument(doc.Title ?? documentType, doc.Sections);
         var checksum  = ComputeChecksum(assembled);
@@ -137,7 +137,7 @@ public class CanonDocumentService
         var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
         var fmBase = await typeRegistry.GetFrontMatterAsync(documentType, universeId, ct);
         var fm     = $"---\n{fmBase}updated: {today}\n---\n\n";
-        var withHeader = $"{fm}<!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type {documentType} -->\n\n{assembled}";
+        var withHeader = $"{fm}<!-- GENERATED — do not hand-edit. Regenerate with: prose --generate-canon-md --type {documentType} -->\n\n{assembled}";
         // Atomic (per-process scratch file + rename) so two CLI/MCP processes regenerating the
         // same canon doc concurrently can't corrupt or race it.
         await GeneratedFileWriter.WriteReadOnlyAsync(filePath, withHeader, ct);

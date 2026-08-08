@@ -16,7 +16,7 @@ namespace Prose.Cli;
 /// shape is FactionData (name, motto, description, ideology, territory,
 /// leadership, methods, goals, story_hooks, tags, …).
 ///
-///   ss --add-faction --file path.json
+///   prose --add-faction --file path.json
 /// </summary>
 public static class AddFactionCli
 {
@@ -25,7 +25,7 @@ public static class AddFactionCli
         var file = ArgValue(args, "--file");
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
-            Console.Error.WriteLine("usage: ss --add-faction --file path.json");
+            Console.Error.WriteLine("usage: prose --add-faction --file path.json");
             return 1;
         }
 

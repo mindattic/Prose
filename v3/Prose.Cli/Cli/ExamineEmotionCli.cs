@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --examine-emotion --slug &lt;nodeSlug&gt; [--effort draft|standard|deep] [--json]
+/// prose --examine-emotion --slug &lt;nodeSlug&gt; [--effort draft|standard|deep] [--json]
 ///
 /// Emotional Intelligence Examination (SS-A15). Scores prose against an
 /// 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw),
@@ -38,7 +38,7 @@ public static class ExamineEmotionCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json]");
+            Console.Error.WriteLine("Usage: prose --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json]");
             return 2;
         }
 

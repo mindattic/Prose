@@ -22,7 +22,7 @@ namespace Prose.Core.Services;
 // Each DeprecatedEntityName rule now also runs through AuditRunner (as an
 // IDeterministicAuditRule) so violations persist to Findings — this used to write nothing
 // anywhere; the NounConsistencyReport/NounViolation return shape is unchanged for existing
-// callers (ss --validate-nouns, MCP validate_nouns).
+// callers (prose --validate-nouns, MCP validate_nouns).
 // ─────────────────────────────────────────────────────────────────────────────
 
 public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory, AuditRunner auditRunner)

@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --review-node</c> — have N Legion personas each read an EXISTING
+/// <c>prose --review-node</c> — have N Legion personas each read an EXISTING
 /// node and write an honest, scored reader review (saved to NodeReviews),
 /// then synthesize the Amazon-style aggregate (NodeReviewSummaries). The
 /// reviewers are round-robined across the trusted-4 providers for genuine model
@@ -133,7 +133,7 @@ public static class ReviewNodeCli
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(code))
         {
             Console.Error.WriteLine("[review-node] One of --id, --slug, or --code is required.");
-            Console.Error.WriteLine("Usage: ss --review-node (--id <guid|prefix> | --slug <slug> | --code <code>) [--effort draft|standard|deep] [--readers N]");
+            Console.Error.WriteLine("Usage: prose --review-node (--id <guid|prefix> | --slug <slug> | --code <code>) [--effort draft|standard|deep] [--readers N]");
             Console.Error.WriteLine("  --effort draft     ~6 calls — mid-draft spot check (per-beat gripes; not a gate)");
             Console.Error.WriteLine("  --effort standard  ~15 calls — standalone gate (>=82%)");
             Console.Error.WriteLine("  --effort deep      ~37 calls — cumulative/export gate (>=85%)");
@@ -515,7 +515,7 @@ public static class ReviewNodeCli
                 Console.WriteLine("   Resolve them before marking this node export-ready.");
                 foreach (var f in openBlocking)
                     Console.WriteLine($"   • {f.Summary}");
-                Console.WriteLine("   Run: ss --examine-emotion --slug <slug> --effort deep");
+                Console.WriteLine("   Run: prose --examine-emotion --slug <slug> --effort deep");
             }
         }
 

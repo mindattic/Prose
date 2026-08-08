@@ -11,10 +11,10 @@ namespace Prose.Cli;
 /// the JSON archival sweep. What remains here is schema management and
 /// in-place column migrations.
 ///
-///   ss --migrate-sql --schema                  apply EF migrations + enable SYSTEM_VERSIONING
-///   ss --migrate-sql --character-relational    add relational columns + bridges to Characters
+///   prose --migrate-sql --schema                  apply EF migrations + enable SYSTEM_VERSIONING
+///   prose --migrate-sql --character-relational    add relational columns + bridges to Characters
 ///                                              and backfill from Records.Json (--no-backfill skips Phase C)
-///   ss --migrate-sql --drop-legacy-json        DROP the *Json columns from Characters
+///   prose --migrate-sql --drop-legacy-json        DROP the *Json columns from Characters
 ///                                              (run AFTER verifying the column-based read path)
 ///
 /// Connection string: env <c>ConnectionStrings__Prose</c> →
@@ -80,24 +80,24 @@ public static class MigrateSqlCli
         if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions)
         {
             Console.WriteLine("Usage:");
-            Console.WriteLine("  ss --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
-            Console.WriteLine("  ss --migrate-sql --node-beat-soft-delete   add IsEnabled column to BeatNodes/BeatNodes_History");
-            Console.WriteLine("  ss --migrate-sql --node-beat-version       add Version INT counter to Beats+Nodes (and history tables)");
-            Console.WriteLine("  ss --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
-            Console.WriteLine("  ss --migrate-sql --story-code               add NodeCode NVARCHAR(20) to Nodes (unique per non-null value)");
-            Console.WriteLine("  ss --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
-            Console.WriteLine("  ss --migrate-sql --node-bible              add NodeBible + NodeBibleGeneratedAt to Nodes (+ history)");
-            Console.WriteLine("  ss --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
-            Console.WriteLine("  ss --migrate-sql --node-spine              add NodeUserStories to Nodes; create NodeAmendments + NodeSpineVersions");
-            Console.WriteLine("  ss --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
-            Console.WriteLine("  ss --migrate-sql --node-draft-flag         add IsDraft BIT to Nodes (+ history); draft subtrees are ignored by the tools");
-            Console.WriteLine("  ss --migrate-sql --review-contradictions     add Contradictions to EntityReviews + NodeReviews; Gripes+Contradictions to NodeReviewBeatScores");
-            Console.WriteLine("  ss --migrate-sql --distributed-queue         create DistributedWorkQueue table (multi-machine entity/node/beat review + prose writing)");
-            Console.WriteLine("  ss --migrate-sql --beat-score-dimensions     add ScoreBeat/ScoreChapter/ScoreArc/ScoreStory to NodeReviewBeatScores (SS-A47 Swain doctrine)");
+            Console.WriteLine("  prose --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
+            Console.WriteLine("  prose --migrate-sql --node-beat-soft-delete   add IsEnabled column to BeatNodes/BeatNodes_History");
+            Console.WriteLine("  prose --migrate-sql --node-beat-version       add Version INT counter to Beats+Nodes (and history tables)");
+            Console.WriteLine("  prose --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
+            Console.WriteLine("  prose --migrate-sql --story-code               add NodeCode NVARCHAR(20) to Nodes (unique per non-null value)");
+            Console.WriteLine("  prose --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
+            Console.WriteLine("  prose --migrate-sql --node-bible              add NodeBible + NodeBibleGeneratedAt to Nodes (+ history)");
+            Console.WriteLine("  prose --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
+            Console.WriteLine("  prose --migrate-sql --node-spine              add NodeUserStories to Nodes; create NodeAmendments + NodeSpineVersions");
+            Console.WriteLine("  prose --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
+            Console.WriteLine("  prose --migrate-sql --node-draft-flag         add IsDraft BIT to Nodes (+ history); draft subtrees are ignored by the tools");
+            Console.WriteLine("  prose --migrate-sql --review-contradictions     add Contradictions to EntityReviews + NodeReviews; Gripes+Contradictions to NodeReviewBeatScores");
+            Console.WriteLine("  prose --migrate-sql --distributed-queue         create DistributedWorkQueue table (multi-machine entity/node/beat review + prose writing)");
+            Console.WriteLine("  prose --migrate-sql --beat-score-dimensions     add ScoreBeat/ScoreChapter/ScoreArc/ScoreStory to NodeReviewBeatScores (SS-A47 Swain doctrine)");
             Console.WriteLine();
-            Console.WriteLine("  ss --migrate-sql --character-relational    add relational columns + bridges to Characters,");
+            Console.WriteLine("  prose --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
-            Console.WriteLine("  ss --migrate-sql --drop-legacy-json        DROP the *Json columns from Characters (run AFTER verifying backfill)");
+            Console.WriteLine("  prose --migrate-sql --drop-legacy-json        DROP the *Json columns from Characters (run AFTER verifying backfill)");
             return 0;
         }
 

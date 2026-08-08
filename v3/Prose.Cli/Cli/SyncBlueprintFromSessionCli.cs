@@ -15,7 +15,7 @@ public static class SyncBlueprintFromSessionCli
 
         if (sessionIdStr == null || !Guid.TryParse(sessionIdStr, out var sessionId))
         {
-            Console.Error.WriteLine("Usage: ss --sync-blueprint-from-session --session-id <guid>");
+            Console.Error.WriteLine("Usage: prose --sync-blueprint-from-session --session-id <guid>");
             return 2;
         }
 

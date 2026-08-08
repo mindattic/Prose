@@ -89,7 +89,7 @@ public class EntityContextTools(
 
         var mentions = await mentionService.GetBeatsForEntityAsync(entity.Value.Id, limit);
         if (mentions.Count == 0)
-            return $"No beat mentions found for '{entity.Value.Name}'. Run `ss --scan-entity-mentions` to index beat text.";
+            return $"No beat mentions found for '{entity.Value.Name}'. Run `prose --scan-entity-mentions` to index beat text.";
 
         var sb = new StringBuilder();
         sb.AppendLine($"**{entity.Value.Name}** — {mentions.Count} beat mention(s)\n");

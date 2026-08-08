@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --expand-beat</c> — expand one or all planned beats in a node to prose.
+/// <c>prose --expand-beat</c> — expand one or all planned beats in a node to prose.
 ///
 /// This is the headless counterpart to clicking ✨ in the node writer UI.
 /// It uses <see cref="ProseWriterRouter.WriteAsync"/> with the node's
@@ -59,7 +59,7 @@ public static class ExpandBeatCli
         if (string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(id))
         {
             Console.Error.WriteLine("[expand-beat] One of --slug or --id is required.");
-            Console.Error.WriteLine("Usage: ss --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]");
+            Console.Error.WriteLine("Usage: prose --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]");
             return 1;
         }
 

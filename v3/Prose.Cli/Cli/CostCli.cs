@@ -5,18 +5,18 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// CLI handler for <c>ss --cost</c>.
+/// CLI handler for <c>prose --cost</c>.
 ///
 /// In long-running processes (MCP server, Blazor host) the <see cref="TokenLedger"/>
 /// accumulates every LLM call. In a one-shot CLI invocation the ledger captures only
 /// the calls made during that run — use <c>--cost</c> as a suffix on any command to
 /// see how much that operation spent, e.g.:
-///   <code>ss --write-node --slug foo --cost</code>
+///   <code>prose --write-node --slug foo --cost</code>
 ///
 /// Usage:
-///   ss --cost             print the session cost table
-///   ss --cost --json      emit the summary as JSON
-///   ss --cost --reset     clear the ledger (no output)
+///   prose --cost             print the session cost table
+///   prose --cost --json      emit the summary as JSON
+///   prose --cost --reset     clear the ledger (no output)
 /// </summary>
 public static class CostCli
 {

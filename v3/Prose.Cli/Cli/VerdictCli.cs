@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --verdict --slug &lt;slug&gt; [--limit N]
+/// prose --verdict --slug &lt;slug&gt; [--limit N]
 ///
 /// Per-beat quality verdict toward 90+/no-gripes: flags CLICHE / GRIPE / CONTRADICTION /
 /// MEANING-MISMATCH per beat. Output-only (never edits prose). Sonnet, batched.
@@ -21,7 +21,7 @@ public static class VerdictCli
         }
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --verdict --slug <slug> [--limit N]");
+            Console.Error.WriteLine("Usage: prose --verdict --slug <slug> [--limit N]");
             return 2;
         }
 

@@ -243,7 +243,7 @@ public static class LabSpecimenMapper
     /// Returns the number of lab specimen entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-lab-specimen-relational</c>.
+    /// Run once via <c>prose --rebuild-lab-specimen-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

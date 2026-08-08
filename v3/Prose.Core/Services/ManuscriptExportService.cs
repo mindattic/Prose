@@ -13,7 +13,7 @@ namespace Prose.Core.Services;
 /// <summary>
 /// Renders a node's ordered beats to the three KDP deliverables: EPUB 3 (ebook upload),
 /// PDF (paperback upload), and Markdown (offline editing aid with beat markers for
-/// <c>ss --import-md</c>). All three land in the configured publish directory (Desktop
+/// <c>prose --import-md</c>). All three land in the configured publish directory (Desktop
 /// fallback). The Word .docx is produced by <see cref="DocxExportService"/>; all three
 /// formats share the same 6"×9" KDP trim.
 /// </summary>
@@ -43,7 +43,7 @@ public class ManuscriptExportService
     /// <summary>
     /// Export the node as Markdown to the publish directory; returns the path.
     /// Each beat is prefixed with a <c>&lt;!-- beat:N:id32 --&gt;</c> marker
-    /// (invisible in rendered MD, unambiguous for <c>ss --import-md</c> reimport).
+    /// (invisible in rendered MD, unambiguous for <c>prose --import-md</c> reimport).
     /// </summary>
     public async Task<string> ExportMarkdownAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {

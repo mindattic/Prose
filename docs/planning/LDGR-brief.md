@@ -192,22 +192,22 @@ before prose begins. Cross-check against the Entity Seeding Roadmap in `docs/ser
 | Entity | Type | In DB? | DB seed command / MCP tool |
 |---|---|---|---|
 | Ledger | character | [x] — `019EAFB5-3337-764F-8FB0-75DC82170EDF` (description is circuit cover; kept as-is) | — |
-| Tally (Gerta Ibarra-Voigt) | character | [x] — seeded `019f7608527b7f42a0bfa95e751f4d5d` | `ss --add-character --file` (seeded 2026-07-18) |
-| Renn Voigt | character | [x] — seeded `019f76092d2973d5bbab420e39dc20f2` | `ss --add-character --file` (seeded 2026-07-18) |
-| Vig | character | [x] — seeded `019f76094a51722b98c4e6ad51455558` | `ss --add-character --file` (seeded 2026-07-18) |
-| Quire | character | [x] — seeded `019f7609658d74758fb21aa0156d9772` | `ss --add-character --file` (seeded 2026-07-18) |
-| Tally's Counter | place | [x] — seeded `019f760a15d673dfaca6c4bc4b49ea95` | `ss --add-place --file` (seeded 2026-07-18) |
-| Tally's Book | document | [x] — seeded `019f760a4a9f72b289a1284bf1bd9e44` | `ss --add-doc` (seeded 2026-07-18) |
-| The Vig Crew | faction | [x] — seeded `019f760a34077cbe85e27b5779e13ece` | `ss --add-faction --file` (seeded 2026-07-18) |
+| Tally (Gerta Ibarra-Voigt) | character | [x] — seeded `019f7608527b7f42a0bfa95e751f4d5d` | `prose --add-character --file` (seeded 2026-07-18) |
+| Renn Voigt | character | [x] — seeded `019f76092d2973d5bbab420e39dc20f2` | `prose --add-character --file` (seeded 2026-07-18) |
+| Vig | character | [x] — seeded `019f76094a51722b98c4e6ad51455558` | `prose --add-character --file` (seeded 2026-07-18) |
+| Quire | character | [x] — seeded `019f7609658d74758fb21aa0156d9772` | `prose --add-character --file` (seeded 2026-07-18) |
+| Tally's Counter | place | [x] — seeded `019f760a15d673dfaca6c4bc4b49ea95` | `prose --add-place --file` (seeded 2026-07-18) |
+| Tally's Book | document | [x] — seeded `019f760a4a9f72b289a1284bf1bd9e44` | `prose --add-doc` (seeded 2026-07-18) |
+| The Vig Crew | faction | [x] — seeded `019f760a34077cbe85e27b5779e13ece` | `prose --add-faction --file` (seeded 2026-07-18) |
 
 Seed JSONs: `.cli-tmp/ldgr-seed/`. Book node created 2026-07-18: slug `double-entry-019f760b`,
 code LDGR — bible + 14-beat spine + structural blueprint generated; node doc materialized at
 `docs/nodes/LDGR.md` (ephemeral). One generation artifact cleaned: the first bible draft
-hallucinated an off-canon cast; its 14 planned beats were soft-deleted via `ss --beat delete`
+hallucinated an off-canon cast; its 14 planned beats were soft-deleted via `prose --beat delete`
 and the bible was regenerated from a cast-locked seed.
 
 No CorpoNation, weapon, or tech entities required beyond existing canon. Run
-`ss --scan-entity-mentions --slug ldgr` after each chapter draft to keep coverage current.
+`prose --scan-entity-mentions --slug ldgr` after each chapter draft to keep coverage current.
 
 ---
 

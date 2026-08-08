@@ -19,7 +19,7 @@ public static class StartSessionCli
 
         if (slug == null || label == null)
         {
-            Console.Error.WriteLine("Usage: ss --start-session --slug <slug> --label \"prose-pass-1\" [--type prose-pass|gripes-cleanup|logic-sweep|custom]");
+            Console.Error.WriteLine("Usage: prose --start-session --slug <slug> --label \"prose-pass-1\" [--type prose-pass|gripes-cleanup|logic-sweep|custom]");
             return 2;
         }
 

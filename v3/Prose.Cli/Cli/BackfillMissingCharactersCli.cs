@@ -8,7 +8,7 @@ using Prose.Core.Models.Canon;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --backfill-missing-characters</c> — materialize the relational Characters
+/// <c>prose --backfill-missing-characters</c> — materialize the relational Characters
 /// row + bridges for any ACTIVE character entity that has a Records.Json blob but
 /// no row in the Characters table (blob-only imports / fixtures created before the
 /// relational write path). Without this, dropping the Character blob would erase

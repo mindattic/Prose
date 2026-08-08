@@ -15,7 +15,7 @@ namespace Prose.Core.Services;
 ///
 /// The title is rendered BY the image model itself, as instructed in the CoverPrompt
 /// (see CoverPromptService) — not composited on afterward. <see cref="CoverTitleCompositorService"/>
-/// (<c>ss --composite-cover-title</c>) remains available as a manual fallback for a
+/// (<c>prose --composite-cover-title</c>) remains available as a manual fallback for a
 /// specific render whose in-image text comes out garbled, but is not run automatically.
 /// </summary>
 public class CoverImageService

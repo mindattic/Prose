@@ -6,7 +6,7 @@ namespace Prose.Cli;
 /// <summary>
 /// Legion persona quality voting for canon entities.
 ///
-///   ss --review-entity [--type &lt;type&gt;] [--ballots N] [--prose N] [--unrated]
+///   prose --review-entity [--type &lt;type&gt;] [--ballots N] [--prose N] [--unrated]
 ///                      [--local] [--local-url URL] [--local-key KEY] [--local-model TAG]
 ///
 /// --type       : entity repo to target (all non-character types), or omit for ALL.

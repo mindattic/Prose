@@ -242,7 +242,7 @@ public static class GenemodMapper
     /// blob → GenemodData → persist. Returns the number of genemods written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-genemod-relational</c>.
+    /// Run once via <c>prose --rebuild-genemod-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

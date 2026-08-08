@@ -7,9 +7,9 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --causality-check     --slug &lt;slug&gt; [--json]   (cause-effect; kill "and then")
-/// ss --affect-check        --slug &lt;slug&gt; [--json]   (emotion drives action)
-/// ss --interpersonal-check --slug &lt;slug&gt; [--json]   (verbal + non-verbal relational work; the 90+ lever)
+/// prose --causality-check     --slug &lt;slug&gt; [--json]   (cause-effect; kill "and then")
+/// prose --affect-check        --slug &lt;slug&gt; [--json]   (emotion drives action)
+/// prose --interpersonal-check --slug &lt;slug&gt; [--json]   (verbal + non-verbal relational work; the 90+ lever)
 ///
 /// Single-LLM-call beat lenses. File advisory Findings; print a score + issue list.
 /// Exit codes: 0 = clean, 1 = advisory issues, 2 = High-severity issues present.
@@ -25,7 +25,7 @@ public static class BeatLensCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine($"Usage: ss --{lens}-check --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine($"Usage: prose --{lens}-check --slug <nodeSlug> [--json]");
             return 2;
         }
 

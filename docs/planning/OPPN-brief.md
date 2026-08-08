@@ -225,16 +225,16 @@ caption.
 | Coeli Vantanen | character | [x] `coeli-vantanen` | reuse |
 | Auda Vane | character | [x] `auda-vane` | reuse (may broker a side) |
 | Scraps (Nena Duclair) | character | [x] `nena-duclair` | reuse (cycle-echo cameo) |
-| **The Package** (Low-born defector/witness both sides want) | character | [ ] | `ss --add-character --file` |
-| **Rampart's corporate handler / security boss** | character | [ ] | `ss --add-character --file` |
-| **Cutout's broker / job-giver** (could be Auda Vane escalated, or new) | character | [ ] | `ss --add-character --file` |
+| **The Package** (Low-born defector/witness both sides want) | character | [ ] | `prose --add-character --file` |
+| **Rampart's corporate handler / security boss** | character | [ ] | `prose --add-character --file` |
+| **Cutout's broker / job-giver** (could be Auda Vane escalated, or new) | character | [ ] | `prose --add-character --file` |
 | **The CorpoNation employer** (Reza's side) | faction/corponation | [ ] | reuse existing canon corpo (Axiom / Arcturus / Helix / etc.) — pick one; no new corpo unless needed |
 | **The counterparty** (Tavi's side — broker network or syndicate) | faction | [ ] | reuse existing (a broker ecosystem / Lotus-adjacent as texture only) or seed a small new broker |
-| **The secured site** (up-altitude corporate holding facility) | place | [ ] | `ss --add-place --file` |
-| **Meeting ground** (the Heat "coffee scene" location — neutral, mid-altitude) | place | [ ] | `ss --add-place --file` |
+| **The secured site** (up-altitude corporate holding facility) | place | [ ] | `prose --add-place --file` |
+| **Meeting ground** (the Heat "coffee scene" location — neutral, mid-altitude) | place | [ ] | `prose --add-place --file` |
 | The "twins" (matched cheap pistols) | weapon | [x] reuse `Meridian Munitions Holdout-380 'Ankle Biter'` | Tavi's original; Reza's upgraded hardware TBD (reuse a mid/high-tier existing weapon) |
 
-Run `ss --scan-entity-mentions --slug oppn` after each chapter draft.
+Run `prose --scan-entity-mentions --slug oppn` after each chapter draft.
 
 ---
 

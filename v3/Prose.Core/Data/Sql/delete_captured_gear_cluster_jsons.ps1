@@ -1,6 +1,6 @@
 # Delete every engine/data/<gear>/*.json file that is captured in the
 # Prose SQL Server database. Driven by the manifest written by
-# `ss --repair --prune-json-report`. Per the 2026-05-08 memory rule
+# `prose --repair --prune-json-report`. Per the 2026-05-08 memory rule
 # "DB is the only canon store" + the explicit user directive to delete
 # (not archive) JSON files already captured in the DB, this is a hard
 # delete, not a move.
@@ -14,7 +14,7 @@
 # Idempotent: re-running on a directory that's already drained skips
 # missing source files.
 #
-# After running, re-run `ss --repair --prune-json-report` to confirm zero
+# After running, re-run `prose --repair --prune-json-report` to confirm zero
 # remaining files in the scanned folders.
 
 $ErrorActionPreference = 'Stop'

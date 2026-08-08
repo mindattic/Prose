@@ -220,7 +220,15 @@ public class VoiceHarvestService
         var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         if (!force && (node.Score ?? 0) < 80)
-            throw new InvalidOperationException($"Node '{node.Slug}' scored {node.Score:0.#} — below 80%. Pass force to harvest anyway.");
+        {
+            // Score gates were retired project-wide (SS-A44) — most books now carry a
+            // null Score by design, not a low one. Say so plainly instead of printing
+            // a blank/misleading "scored  — below 80%".
+            var reason = node.Score is null
+                ? "has no Score (score gates are retired; run a logic sweep / Reader-Proxy QA to judge readiness instead)"
+                : $"scored {node.Score:0.#} — below 80%";
+            throw new InvalidOperationException($"Node '{node.Slug}' {reason}. Pass force to harvest anyway.");
+        }
 
         // 1) Mine generated→final edits from the temporal beat history.
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);

@@ -8,7 +8,7 @@ namespace Prose.Cli;
 /// database. Only rows whose content hash changed generate a new history row,
 /// so unchanged files cost nothing.
 ///
-///   ss --sync-markdown [--dry-run]
+///   prose --sync-markdown [--dry-run]
 ///
 /// Phase 1 — file sync:
 ///   project CLAUDE.md, docs/*.md, docs/registers/*.md, docs/rfc/*.md

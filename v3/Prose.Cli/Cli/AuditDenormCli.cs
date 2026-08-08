@@ -6,13 +6,13 @@ namespace Prose.Cli;
 
 /// <summary>
 /// Reports flat-vs-bridge drift for a denormalised column. Pattern matches
-/// <c>ss --audit-drift</c> for static-vs-dynamic columns. Use to evaluate
+/// <c>prose --audit-drift</c> for static-vs-dynamic columns. Use to evaluate
 /// whether dropping a "convenience copy" scalar is safe before doing it.
 ///
 /// Usage:
-///   ss --audit-denorm Characters.Affiliation
-///   ss --audit-denorm Characters.HomeTurf
-///   ss --audit-denorm Entities.TagsJson
+///   prose --audit-denorm Characters.Affiliation
+///   prose --audit-denorm Characters.HomeTurf
+///   prose --audit-denorm Entities.TagsJson
 ///
 /// Each known target hard-codes its bridge join; unknown targets fail closed
 /// rather than guess.
@@ -99,7 +99,7 @@ public static class AuditDenormCli
 
     private static void PrintUsage()
     {
-        Console.WriteLine("ss --audit-denorm <column>");
+        Console.WriteLine("prose --audit-denorm <column>");
         Console.WriteLine("Known targets:");
         Console.WriteLine("  Entities.TagsJson              live probe");
         Console.WriteLine("  Characters.Affiliation         retired (dropped 2026-05-08)");

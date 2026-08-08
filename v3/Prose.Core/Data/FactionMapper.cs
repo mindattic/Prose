@@ -307,7 +307,7 @@ public static class FactionMapper
     /// EntityTags. Returns the number of factions written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once after the schema migration via <c>ss --rebuild-faction-relational</c>.
+    /// Run once after the schema migration via <c>prose --rebuild-faction-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

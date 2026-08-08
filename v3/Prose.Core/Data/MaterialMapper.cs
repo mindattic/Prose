@@ -241,7 +241,7 @@ public static class MaterialMapper
     /// blob → MaterialData → persist. Returns the number of materials written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-material-relational</c>.
+    /// Run once via <c>prose --rebuild-material-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

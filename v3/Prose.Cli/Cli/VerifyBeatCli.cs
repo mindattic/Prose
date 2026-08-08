@@ -5,8 +5,8 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --verify-beat --id &lt;beatId&gt; [--json]
-/// ss --verify-book --slug &lt;slug&gt; [--json]
+/// prose --verify-beat --id &lt;beatId&gt; [--json]
+/// prose --verify-book --slug &lt;slug&gt; [--json]
 ///
 /// Beat Verification Engine (Track C — Truth-First Architecture).
 /// Checks whether generated prose fulfilled its declared BeatBlueprintDecision contract.
@@ -55,7 +55,7 @@ public static class VerifyBeatCli
 
             if (!Guid.TryParse(qBeatIdStr, out var qBeatId) || string.IsNullOrEmpty(quote))
             {
-                Console.Error.WriteLine("Usage: ss --verify-quote --id <beatId-guid> --quote \"<claimed text>\" [--claimed-by <name>] [--json]");
+                Console.Error.WriteLine("Usage: prose --verify-quote --id <beatId-guid> --quote \"<claimed text>\" [--claimed-by <name>] [--json]");
                 return 2;
             }
 
@@ -84,7 +84,7 @@ public static class VerifyBeatCli
 
             if (string.IsNullOrEmpty(filePath) || !File.Exists(filePath))
             {
-                Console.Error.WriteLine("Usage: ss --verify-quotes-batch --json-file <path> [--json]");
+                Console.Error.WriteLine("Usage: prose --verify-quotes-batch --json-file <path> [--json]");
                 return 2;
             }
 
@@ -129,7 +129,7 @@ public static class VerifyBeatCli
 
             if (string.IsNullOrEmpty(slug))
             {
-                Console.Error.WriteLine("Usage: ss --verify-book --slug <slug>");
+                Console.Error.WriteLine("Usage: prose --verify-book --slug <slug>");
                 return 2;
             }
 
@@ -175,7 +175,7 @@ public static class VerifyBeatCli
 
         if (!Guid.TryParse(beatIdStr, out var beatId))
         {
-            Console.Error.WriteLine("Usage: ss --verify-beat --id <beatId-guid>");
+            Console.Error.WriteLine("Usage: prose --verify-beat --id <beatId-guid>");
             return 2;
         }
 

@@ -6,9 +6,9 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for <see cref="GeneticsInheritanceService"/>.
 ///
-///   ss --genetics propagate                     walk the family graph, blend genetics root→leaf
-///   ss --genetics propagate --id &lt;id|slug&gt;       single character only
-///   ss --genetics propagate --seed 42           seeded RNG for reproducible noise
+///   prose --genetics propagate                     walk the family graph, blend genetics root→leaf
+///   prose --genetics propagate --id &lt;id|slug&gt;       single character only
+///   prose --genetics propagate --seed 42           seeded RNG for reproducible noise
 /// </summary>
 public static class GeneticsCli
 {
@@ -18,7 +18,7 @@ public static class GeneticsCli
         var sub = idx >= 0 && idx + 1 < args.Length ? args[idx + 1] : null;
         if (sub != "propagate")
         {
-            Console.Error.WriteLine("Usage: ss --genetics propagate [--id <id|slug>] [--seed N]");
+            Console.Error.WriteLine("Usage: prose --genetics propagate [--id <id|slug>] [--seed N]");
             return 2;
         }
 

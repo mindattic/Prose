@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --publish-audiobook (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--robust] [--tts ENGINE]</c>
+/// <c>prose --publish-audiobook (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--robust] [--tts ENGINE]</c>
 /// — render the whole node as ONE continuous narration (no per-beat voice
 /// drift) and write the MP3 to the configured publish output directory (Desktop
 /// fallback). The headless twin of the "Publish Audiobook" button.

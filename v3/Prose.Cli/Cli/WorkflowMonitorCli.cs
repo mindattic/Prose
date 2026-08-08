@@ -10,10 +10,10 @@ namespace Prose.Cli;
 /// CLI handler for --workflow-status.
 ///
 /// Usage:
-///   ss --workflow-status --slug &lt;slug&gt;           Per-node coverage matrix + gaps
-///   ss --workflow-status --slug &lt;slug&gt; --json     Machine-readable JSON
-///   ss --workflow-status --all                    Global stats across all nodes
-///   ss --workflow-status --all --json             Machine-readable JSON
+///   prose --workflow-status --slug &lt;slug&gt;           Per-node coverage matrix + gaps
+///   prose --workflow-status --slug &lt;slug&gt; --json     Machine-readable JSON
+///   prose --workflow-status --all                    Global stats across all nodes
+///   prose --workflow-status --all --json             Machine-readable JSON
 /// </summary>
 public static class WorkflowMonitorCli
 {
@@ -108,7 +108,7 @@ public static class WorkflowMonitorCli
         }
 
         if (unseededCount > 0)
-            Console.WriteLine($"\n  !  EntityEmbeddings: {unseededCount} active {(unseededCount == 1 ? "entity has" : "entities have")} no embedding row — embedding lookup silently misses them. Run 'ss --reembed --universe <slug>'.");
+            Console.WriteLine($"\n  !  EntityEmbeddings: {unseededCount} active {(unseededCount == 1 ? "entity has" : "entities have")} no embedding row — embedding lookup silently misses them. Run 'prose --reembed --universe <slug>'.");
         else
             Console.WriteLine($"\n  ✓  EntityEmbeddings: all active entities have embeddings.");
     }

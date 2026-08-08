@@ -1,4 +1,4 @@
-﻿# Prose Project Rules
+# Prose Project Rules
 
 ## Conversation
 - A bare "do" / "do it" / "yes" from the user means "continue", "keep going", "proceed". Resume the current task without asking for clarification.
@@ -37,7 +37,7 @@ Only use `dotnet run --project v3/Prose.Cli -- <args>` when the CLI's business l
 - **Example:** Count beats in a book: `SELECT COUNT(*) FROM BeatNodes WHERE NodeId = @nodeId AND IsEnabled = 1`
 - **HARD RULE — Book→Chapter→Beat hierarchy:** Always verify all three levels before assessing a book. Books with chapters ARE books, even if ChapterBeats is empty. Use `scripts/book-status-audit.sql` to audit any book: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -i scripts/book-status-audit.sql -v BookSlug="<slug>"`. Never say a book is "empty" or "planning stage only"—say "chapters structured, prose not yet written."
 
-**HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any book/beat removal must go through the CLI (`ss --beat delete`). If a book genuinely needs to be deleted, get explicit user confirmation naming the book by title and slug before touching the DB.
+**HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any book/beat removal must go through the CLI (`prose --beat delete`). If a book genuinely needs to be deleted, get explicit user confirmation naming the book by title and slug before touching the DB.
 
 **Node deletion cascade order (system rule):** When deleting a book node via `--delete-node`, the required order is beats → chapters → book node. The CLI handles this automatically (cascade was added 2026-07-18). Never try to delete a parent node before its chapter children — `FK_Nodes_ParentNode` will block it. Delete order for manual confirmation: (1) BeatNodes memberships + exclusive beats for the child chapter, (2) structural blueprints for the child, (3) the child chapter node, (4) then the same sequence for the parent book node.
 
@@ -83,7 +83,7 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 | `CanonDocumentSections` (DB) | Engine invariants, GLMZ canon, Entos canon, etc. | MCP `set_canon_section`; generates to `docs/BIBLE.md`, `docs/WORLD.md`, `docs/universes/ENTOS.md`, etc. |
 | `Nodes.NodeBible` (DB) | **The single source of truth for that book** — arc, characters, voice, locks, blueprint, beat spine | `set_book_bible` MCP (hand-authored sections) |
 | `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
-| `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/ENTOS.md` | Generated canon docs — ephemeral, gitignored | Re-run `ss --generate-canon-md --all` to materialize |
+| `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/ENTOS.md` | Generated canon docs — ephemeral, gitignored | Re-run `prose --generate-canon-md --all` to materialize |
 | `docs/CRAFT.md` | Universal prose rules — **Base layer** of DCM static hierarchy; all universes (the DON'Ts) | Hand-edit directly |
 | `docs/DELIGHT.md` | Positive prose doctrine — what readers LOVE (13 DOs reverse-engineered from the 99 top-decile beats + 114 praise ballots); craft companion to CRAFT.md; globally pinned; injected per beat-mode by `DelightProseGuidance` | Hand-edit directly |
 | `docs/GLMZ.md` | GLMZ universe craft additions — **Universe layer** of DCM static hierarchy (transaction register, weird, prohibitions) | Hand-edit directly |
@@ -103,7 +103,7 @@ Every book is examined at three magnifications (canonical definition: `docs/LOGI
 | **10 ft — beat** | The prose; who's in the room | Beat text + `BeatEntityPresence` + verifications |
 
 The altitudes must tell the same story — defects ARE altitude disagreements. Arbitration:
-prose wins on facts, bible wins on locks. `ss --altitude-audit --slug <slug>` compares
+prose wins on facts, bible wins on locks. `prose --altitude-audit --slug <slug>` compares
 10,000↔100 ft (findings filed as OutlineDrift); the logic sweep owns 100↔10 ft. **Planning
 and review start at chapter altitude** — read `story-synopsis.txt` before deep beat reads;
 drop to beat altitude only where a finding points.
@@ -231,7 +231,7 @@ state change, relationship shift, location exit), update the DB source FIRST, th
 
 1. Update the entity row via MCP (`create_character`, `log_wound`, `apply_continuity_claim`, etc.)
 2. Re-run `generate_node_doc` (or `generate_canon_md`) to regenerate the `.md` mirror
-3. Re-run `ss --sync-markdown` to push the updated content to `MarkdownFiles`
+3. Re-run `prose --sync-markdown` to push the updated content to `MarkdownFiles`
 4. The next prose call loads the regenerated `.md` — all future beats see the confirmed fact
 
 A character who dies in Chapter 3 must be updated in DB with the death record (killed by whom,
@@ -242,9 +242,9 @@ which beat, in-world date) before Chapter 4's `.md` is generated. Never edit the
 generation), trigger generation at the **narrowest possible scope**:
 
 ```powershell
-ss --generate-node-doc --slug <slug>      # one book's bible + blueprint
-ss --generate-canon-md --type <type>      # one canon doc (not --all unless needed)
-ss --sync-markdown                        # push to MarkdownFiles so DocContextService sees it
+prose --generate-node-doc --slug <slug>      # one book's bible + blueprint
+prose --generate-canon-md --type <type>      # one canon doc (not --all unless needed)
+prose --sync-markdown                        # push to MarkdownFiles so DocContextService sees it
 ```
 
 Or MCP: `generate_node_doc` (slug required) + `sync_markdown_files`. Do not run
@@ -261,7 +261,7 @@ Or MCP: `generate_node_doc` (slug required) + `sync_markdown_files`. Do not run
 3. **When a story event confirms an empirical fact** — update DB first (entity row, continuity
    claim, wound log), then regenerate and sync. Never edit `.md` directly.
 4. **Blueprint and beat spine sections are always generated** — edit their sources:
-   `ss --generate-blueprint` for the blueprint, MCP beat tools for beat titles/goals.
+   `prose --generate-blueprint` for the blueprint, MCP beat tools for beat titles/goals.
 
 Never Read or Glob for ephemeral .md files without regenerating them first — they don't
 exist in the repo and may not exist on disk.
@@ -334,8 +334,8 @@ Working rules:
   GLMZ/engine world facts, `docs/universes/ENTOS.md` for Fantasy/Entos world facts, `Nodes.NodeBible` (via
   `set_book_bible` MCP) for book-specific facts, `docs/CRAFT.md` for universal prose craft rules,
   `docs/GLMZ.md` for GLMZ craft additions, `docs/SCRY.md` for SCRY/Fantasy craft additions.
-  There is no amendment layer. After updating NodeBible, re-run `generate_node_doc` + `ss --sync-markdown`.
-  After editing CRAFT.md / GLMZ.md / SCRY.md / registers, run `ss --sync-markdown`.
+  There is no amendment layer. After updating NodeBible, re-run `generate_node_doc` + `prose --sync-markdown`.
+  After editing CRAFT.md / GLMZ.md / SCRY.md / registers, run `prose --sync-markdown`.
 - A fact lives in **exactly one file**; cite it by its stable `{#SS-...}` id, never by line number.
 - Update the Bible/books status in the **same change** that moves a goal; "done" means a test or
   build proves it.
@@ -364,12 +364,12 @@ Working rules:
    + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
    outline) = the book node's `seed` text.
 4. **Structural blueprint (StoryScope countermeasures)** — after the bible/spine exists, run
-   `ss --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). This commits the
+   `prose --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). This commits the
    structural anti-tell decisions BEFORE prose: thematically-parallel subplot + carrier beats,
    temporal scheme, resolution mode (never internal-understanding), moral polarity (ambivalent
    default), per-beat escalation curve, event-type + revelation-mode palette, optional form device,
    ending style (avalanche, no epilogue), 3-5 intertextual anchors from the entity DB. Then run
-   `ss --generate-node-doc --slug <slug>` to regenerate `docs/nodes/<CODE>.md` with the blueprint
+   `prose --generate-node-doc --slug <slug>` to regenerate `docs/nodes/<CODE>.md` with the blueprint
    section auto-populated from the DB.
 5. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
 6. **Export** — `--export-node`; flip USER_STORIES to ✅ with evidence.
@@ -398,23 +398,23 @@ for all prose writing — it coordinates all the services below and logs coverag
 | `BookAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
 | `CombatProseGuidance` | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
 | `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode (forensic mind-reads-system, involuntary body-truth, end-on-the-act, image-once, distinct per-narrator rhythm) | All beat modes (mode-keyed) |
-| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`ss --generate-blueprint`) |
+| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`prose --generate-blueprint`) |
 
 ### Coverage monitoring
 ```
-ss --workflow-status --slug <slug>    # per-book service coverage matrix + gaps
-ss --workflow-status --all            # global utilization across all books
+prose --workflow-status --slug <slug>    # per-book service coverage matrix + gaps
+prose --workflow-status --all            # global utilization across all books
 ```
 MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 
 ### Beat writing workflow
 1. Assemble `BeatContext` (XRayContext via SceneContextAssembler, NodeId always set)
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` — NOT BeatGeneratorService directly
-3. After writing, run `ss --examine-emotion --slug <slug>` to score emotional dimensions
-4. After enough beats scored, run `ss --update-register-exemplars --slug <slug>` to update the voice register
-5. After book complete, run `ss --book-audit --slug <slug>` to audit gateway/sequel commandments
-6. After book complete, run `ss --plant-audit --slug <slug>` to check for orphaned plants
-7. After book complete, run `ss --storyscope-audit --slug <slug>` to verify the structural
+3. After writing, run `prose --examine-emotion --slug <slug>` to score emotional dimensions
+4. After enough beats scored, run `prose --update-register-exemplars --slug <slug>` to update the voice register
+5. After book complete, run `prose --book-audit --slug <slug>` to audit gateway/sequel commandments
+6. After book complete, run `prose --plant-audit --slug <slug>` to check for orphaned plants
+7. After book complete, run `prose --storyscope-audit --slug <slug>` to verify the structural
    anti-tells held (escalation monotonic, event types varied, no moral gloss, no epilogue,
    subplot executed). BLOCKER findings fix per logic-sweep minimal-splice rules, then re-audit.
 
@@ -443,13 +443,13 @@ Reports land in `audit-outlines-<date>/logic/`; findings are triaged
 **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Fix what a finding names;
 if you can't name the failure, leave the beat alone.
 
-**Reader-facing craft/comprehension QA is READER-PROXY QA (`ss --reader-qa`), not the
+**Reader-facing craft/comprehension QA is READER-PROXY QA (`prose --reader-qa`), not the
 persona panel — canonical methodology: [docs/READER-QA.md](docs/READER-QA.md).** Four
 instruments, all findings-based, NO scores: (1) Haiku comprehension probes diffed against
 the Sonnet synopsis, Sonnet-arbitrated → `ComprehensionDefect` findings; (2) hash-gated
-binary craft/delight checklist (`ss --craft-checklist`) → `CraftChecklist` findings;
-(3) cross-family pairwise duels for every splice (`ss --duel`, SS-A44-gated);
-(4) findings-only gripe jury (`ss --reader-qa --gripe-pass`) → `ReaderGripe` findings.
+binary craft/delight checklist (`prose --craft-checklist`) → `CraftChecklist` findings;
+(3) cross-family pairwise duels for every splice (`prose --duel`, SS-A44-gated);
+(4) findings-only gripe jury (`prose --reader-qa --gripe-pass`) → `ReaderGripe` findings.
 Instruments 1/2/4-report are measurements, not votes — not vote-gated. Everything is
 hash-cached: unchanged content re-runs free.
 

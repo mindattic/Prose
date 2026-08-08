@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-lab-specimen-relational</c> — backfill the LabSpecimens relational
+/// <c>prose --rebuild-lab-specimen-relational</c> — backfill the LabSpecimens relational
 /// schema from Records.Json blobs. For every active lab_specimen entity, deserializes
 /// the blob → LabSpecimenData → persists columns + all 3 bridge tables (Aliases /
 /// KnownLocations / StoryHooks) + syncs EntityTags. Also creates minimal relational

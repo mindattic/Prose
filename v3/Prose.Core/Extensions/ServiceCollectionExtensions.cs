@@ -312,16 +312,16 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ContinuityLongSweepService>();
 
         // Cross-story consistency — surfaces contradictions that span multiple book nodes.
-        // CPU-only query over the existing ContinuityClaims table. Used by ss --consistency-audit.
+        // CPU-only query over the existing ContinuityClaims table. Used by prose --consistency-audit.
         services.AddSingleton<CrossBookConsistencyService>();
 
         // Per-beat prose quality metrics — CPU-only nightly compute (sentence stats,
-        // TTR, MTLD, Flesch-Kincaid). Used by ss --compute-metrics and ss --morning-report.
+        // TTR, MTLD, Flesch-Kincaid). Used by prose --compute-metrics and prose --morning-report.
         services.AddSingleton<BeatProseMetricsService>();
 
         // Beat granularity analysis — identifies beats that are too coarse (SPLIT) or
         // too fine (MERGE) relative to the 4,000–7,500 char optimal dramatic-scene range.
-        // Used by ss --beat-granularity and ProseWriterRouter (TargetWords injection).
+        // Used by prose --beat-granularity and ProseWriterRouter (TargetWords injection).
         services.AddSingleton<BeatGranularityService>();
 
         // Swain Scene/Sequel doctrine auditor (SS-A47): classifies every enabled beat
@@ -392,7 +392,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SchemaRebuildService>();
 
         // Single C# code path for the canonical SQL seeds under Data/Sql/*.sql.
-        // Idempotent via the SeedRuns audit table; CLI: `ss --seed <name>`.
+        // Idempotent via the SeedRuns audit table; CLI: `prose --seed <name>`.
         services.AddSingleton<SqlSeedService>();
 
         // Reads sys.* into a JSON-friendly graph for the /schema visualization.
@@ -417,7 +417,7 @@ public static class ServiceCollectionExtensions
         // Slug repair — regenerate every slug from its Name/Title metadata and
         // update all slug-carrying references (beat audio paths, publication
         // paths, on-disk dirs, entity alt_slug). Slugs are loose keys; the
-        // UUIDv7 id is the real key. CLI: ss --repair-slugs [--apply].
+        // UUIDv7 id is the real key. CLI: prose --repair-slugs [--apply].
         services.AddSingleton<SlugRepairService>();
         // JsonArchivalService and JsonPruneService retired 2026-05-08 —
         // engine/data/*.json no longer exists, so file-vs-DB verification
@@ -987,35 +987,35 @@ public static class ServiceCollectionExtensions
 
         // Semantic Fidelity Gap detector — Goodhart's Law guard for the review metric.
         // Runs in the background after every review; also available via
-        // `ss --check-fidelity` and the `check_semantic_fidelity` MCP tool.
+        // `prose --check-fidelity` and the `check_semantic_fidelity` MCP tool.
         services.AddSingleton<SemanticFidelityService>();
 
         // Overnight prose health pipeline — zero API cost; uses cached ProseEmbeddings
-        // and text-only stats. Available via `ss --prose-health`.
+        // and text-only stats. Available via `prose --prose-health`.
         services.AddSingleton<EmbeddingHealthService>();
         services.AddSingleton<NightlyHealthService>();
 
         // Pre-flight structural diagnostics — 12 parallel LLM checks that catch
         // structural problems (missing antagonist cost, passive protagonist, etc.)
-        // BEFORE the 60-ballot review panel. Available via `ss --diagnose-book`
+        // BEFORE the 60-ballot review panel. Available via `prose --diagnose-book`
         // and the `diagnose_node` MCP tool.
         services.AddSingleton<StructuralDiagnosticService>();
 
         // Emotional Intelligence Examination (SS-A15): 8-dimension, 0–4, per-beat,
         // character-aware rubric. Advisory cap on blocking dimensions at Deep gate.
-        // Available via `ss --examine-emotion` and the `examine_emotional_depth` MCP tool.
+        // Available via `prose --examine-emotion` and the `examine_emotional_depth` MCP tool.
         services.AddSingleton<EmotionalLedgerService>();
         services.AddSingleton<EmotionalDepthService>();
         services.AddSingleton<RegisterExemplarService>();
 
         // Narrative-science analysis (Will Storr frameworks): sacred flaw, dramatic
         // question, scene-engagement audit, five-act map, antihero empathy.
-        // Available via `ss --narrative-science` and the Tools.NarrativeScience MCP tools.
+        // Available via `prose --narrative-science` and the Tools.NarrativeScience MCP tools.
         services.AddSingleton<NarrativeScienceService>();
 
         // Plant/Payoff registry — tracks seeded narrative details and their payoffs.
         // Enforces "reward re-reading without requiring it."
-        // Available via `ss --plant-audit`, `ss --list-plants`, `ss --add-plant`
+        // Available via `prose --plant-audit`, `prose --list-plants`, `prose --add-plant`
         // and the Tools.PlantPayoff MCP tools.
         services.AddSingleton<PlantPayoffService>();
 
@@ -1026,13 +1026,13 @@ public static class ServiceCollectionExtensions
 
         // Book commandment audits — gateway (standalone) and sequel commandment sets.
         // Determined automatically from Node.PreviousNodeId.
-        // Available via `ss --book-audit` and the Tools.StoryAudit MCP tools.
+        // Available via `prose --book-audit` and the Tools.StoryAudit MCP tools.
         services.AddSingleton<BookAuditService>();
 
         // Structural blueprints — pre-prose StoryScope anti-tell commitments
         // (subplot, chronology, resolution mode, escalation curve, event palette,
-        // ending style, intertextual anchors). Generated via `ss --generate-blueprint`;
-        // injected per-beat by ProseWriterRouter; verified via `ss --storyscope-audit`.
+        // ending style, intertextual anchors). Generated via `prose --generate-blueprint`;
+        // injected per-beat by ProseWriterRouter; verified via `prose --storyscope-audit`.
         services.AddSingleton<StructuralBlueprintService>();
 
         // StoryScope audit — verifies the structural anti-tells held after writing
@@ -1043,13 +1043,13 @@ public static class ServiceCollectionExtensions
 
         // Beat duels — blind A/B panel gate for beat rewrites (3 voters, escalate
         // to 7 on dissent). SS-A44: duels are votes; allowVotes must be passed
-        // consciously under an explicit user instruction. `ss --duel`.
+        // consciously under an explicit user instruction. `prose --duel`.
         services.AddSingleton<BeatDuelService>();
 
         // "Behave like people" beat lenses (Findings-only; no new DB tables).
-        //   CausalityService            — therefore/but, not "and then"     (ss --causality-check;     causality_check)
-        //   AffectBehaviorService       — emotion plausibly drives action   (ss --affect-check;        affect_check)
-        //   InterpersonalDynamicsService— verbal+non-verbal relational work (ss --interpersonal-check; interpersonal_check) — the 90+ lever
+        //   CausalityService            — therefore/but, not "and then"     (prose --causality-check;     causality_check)
+        //   AffectBehaviorService       — emotion plausibly drives action   (prose --affect-check;        affect_check)
+        //   InterpersonalDynamicsService— verbal+non-verbal relational work (prose --interpersonal-check; interpersonal_check) — the 90+ lever
         services.AddSingleton<CausalityService>();
         services.AddSingleton<AffectBehaviorService>();
         services.AddSingleton<InterpersonalDynamicsService>();
@@ -1058,13 +1058,13 @@ public static class ServiceCollectionExtensions
 
         // Deterministic prose sanity scan — no LLM; catches leaked internal codes,
         // undefined acronyms, encoding corruption, and heft floor violations.
-        // Available via `ss --sanity-scan`.
+        // Available via `prose --sanity-scan`.
         services.AddSingleton<SanityScanService>();
 
         // Deterministic noun consistency scan — no LLM; flags deprecated/renamed
         // noun references in beat prose (e.g. old drone name "VacCell" → "Nit").
         // Rules registered in DeprecatedEntityNames table, universe-scoped.
-        // Available via `ss --validate-nouns --slug <slug>` and validate_nouns MCP.
+        // Available via `prose --validate-nouns --slug <slug>` and validate_nouns MCP.
         services.AddSingleton<NounConsistencyService>();
 
         // Canon-sync survey service — persists questions, answers, and apply logs in
@@ -1072,13 +1072,13 @@ public static class ServiceCollectionExtensions
         // interactive artifact HTML from DB data rather than hand-coding it each round.
         // MCP: create_survey, get_survey, list_surveys, answer_survey_question,
         //      mark_survey_question_applied, complete_survey, get_survey_html.
-        // CLI: ss --list-surveys [--status Open|Completed], ss --get-survey --slug <slug>.
+        // CLI: prose --list-surveys [--status Open|Completed], prose --get-survey --slug <slug>.
         services.AddSingleton<SurveyService>();
 
         // Beat mode detection + workflow coverage monitoring.
         // ProseWriterRouter is the preferred entry point for all prose generation — it
         // auto-detects beat mode, injects pacing + structural guidance, and logs coverage.
-        // Use ss --workflow-status to inspect coverage gaps.
+        // Use prose --workflow-status to inspect coverage gaps.
         services.AddSingleton<BeatModeDetector>();
         services.AddSingleton<MlProseGuidanceService>();
         services.AddSingleton<WorkflowMonitorService>();

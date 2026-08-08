@@ -24,7 +24,7 @@ namespace Prose.Core.Services;
 // Invocable via:
 //   MCP: create_survey, get_survey, list_surveys, answer_survey_question,
 //        mark_survey_question_applied, complete_survey, get_survey_html
-//   CLI: ss --list-surveys, ss --get-survey <slug>
+//   CLI: prose --list-surveys, prose --get-survey <slug>
 // ─────────────────────────────────────────────────────────────────────────────
 
 public class SurveyService(IDbContextFactory<ProseDbContext> dbFactory)

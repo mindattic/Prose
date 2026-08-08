@@ -19,9 +19,9 @@ namespace Prose.Core.Services;
 //   InterpersonalDynamicsService — verbal + non-verbal exchange does real work.
 //
 // Usage:
-//   ss --causality-check     --slug <slug> [--json]
-//   ss --affect-check        --slug <slug> [--json]
-//   ss --interpersonal-check --slug <slug> [--json]
+//   prose --causality-check     --slug <slug> [--json]
+//   prose --affect-check        --slug <slug> [--json]
+//   prose --interpersonal-check --slug <slug> [--json]
 //   MCP: causality_check / affect_check / interpersonal_check (nodeIdOrSlug)
 
 public record LensIssue(int? Beat, string Kind, string Evidence, string Fix, string Severity);

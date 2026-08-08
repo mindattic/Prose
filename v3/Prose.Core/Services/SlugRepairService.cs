@@ -31,7 +31,7 @@ namespace Prose.Core.Services;
 ///
 /// Dry-run by default: pass apply=true to write. Runs across ALL universes
 /// (IgnoreQueryFilters); uniqueness is checked within each family's real scope.
-/// CLI: <c>ss --repair-slugs [--apply] [--family &lt;name&gt;] [--json]</c>.
+/// CLI: <c>prose --repair-slugs [--apply] [--family &lt;name&gt;] [--json]</c>.
 /// </summary>
 public class SlugRepairService(
     IDbContextFactory<ProseDbContext> dbFactory,

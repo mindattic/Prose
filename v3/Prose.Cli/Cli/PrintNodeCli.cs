@@ -4,7 +4,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --print-book</c> — print all beats of a node as continuous prose to stdout.
+/// <c>prose --print-book</c> — print all beats of a node as continuous prose to stdout.
 /// Each beat's Text is separated by a blank line. No headers, no beat numbers, no metadata.
 ///
 /// Args (one of --id / --slug required):
@@ -33,7 +33,7 @@ public static class PrintNodeCli
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[print-book] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --print-book (--id <guid|prefix> | --slug <slug>)");
+            Console.Error.WriteLine("Usage: prose --print-book (--id <guid|prefix> | --slug <slug>)");
             return 1;
         }
 

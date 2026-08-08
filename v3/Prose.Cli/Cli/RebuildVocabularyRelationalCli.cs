@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-vocabulary-relational</c> — backfill the VocabularyEntries relational
+/// <c>prose --rebuild-vocabulary-relational</c> — backfill the VocabularyEntries relational
 /// schema from Records.Json blobs. For every active vocabulary entity, deserializes the
 /// blob → VocabularyData → persists scalar columns + syncs EntityTags.
 ///

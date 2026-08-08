@@ -6,12 +6,12 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI entry for Swain Scene/Sequel doctrine audit and repair.
 ///
-///   ss --swain-audit --slug &lt;slug&gt;               classify all beats; print BLOCKER + MODERATE findings
-///   ss --swain-audit --code &lt;code&gt;               same, by NodeCode (e.g. BCODA)
-///   ss --swain-audit --all                       audit every non-draft story; print summary table
-///   ss --swain-audit --slug &lt;slug&gt; --repair      auto-splice missing elements for all BLOCKER beats
-///   ss --swain-audit --all    --repair           bulk repair across all stories
-///   ss --swain-audit --all    --repair --opus    use Opus for both classify and splice (stubborn beats)
+///   prose --swain-audit --slug &lt;slug&gt;               classify all beats; print BLOCKER + MODERATE findings
+///   prose --swain-audit --code &lt;code&gt;               same, by NodeCode (e.g. BCODA)
+///   prose --swain-audit --all                       audit every non-draft story; print summary table
+///   prose --swain-audit --slug &lt;slug&gt; --repair      auto-splice missing elements for all BLOCKER beats
+///   prose --swain-audit --all    --repair           bulk repair across all stories
+///   prose --swain-audit --all    --repair --opus    use Opus for both classify and splice (stubborn beats)
 ///
 /// Append --blockers to suppress MODERATE findings (show only BLOCKERs).
 ///
@@ -43,12 +43,12 @@ public static class SwainAuditCli
         if (slugArg == null && codeArg == null && !doAll)
         {
             Console.WriteLine("Usage:");
-            Console.WriteLine("  ss --swain-audit --slug <slug>               audit one story");
-            Console.WriteLine("  ss --swain-audit --code <code>               audit one story by NodeCode");
-            Console.WriteLine("  ss --swain-audit --all                       audit all non-draft stories");
-            Console.WriteLine("  ss --swain-audit --slug <slug> --repair      audit + splice BLOCKERs");
-            Console.WriteLine("  ss --swain-audit --all    --repair           bulk repair all stories");
-            Console.WriteLine("  ss --swain-audit --all    --repair --opus    Opus classify + splice");
+            Console.WriteLine("  prose --swain-audit --slug <slug>               audit one story");
+            Console.WriteLine("  prose --swain-audit --code <code>               audit one story by NodeCode");
+            Console.WriteLine("  prose --swain-audit --all                       audit all non-draft stories");
+            Console.WriteLine("  prose --swain-audit --slug <slug> --repair      audit + splice BLOCKERs");
+            Console.WriteLine("  prose --swain-audit --all    --repair           bulk repair all stories");
+            Console.WriteLine("  prose --swain-audit --all    --repair --opus    Opus classify + splice");
             Console.WriteLine();
             Console.WriteLine("  --blockers   suppress MODERATE findings (show BLOCKER only)");
             return 0;

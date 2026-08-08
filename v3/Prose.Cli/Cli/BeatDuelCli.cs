@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --duel --beat &lt;guid&gt; --candidate &lt;file&gt; [--goal "..."] [--apply] [--json]
+/// prose --duel --beat &lt;guid&gt; --candidate &lt;file&gt; [--goal "..."] [--apply] [--json]
 ///
 /// Blind A/B duel between a beat's current prose and a candidate revision.
 /// Round 1: 3 voters (register / structural-goal / cold-reader lenses),
@@ -44,7 +44,7 @@ public static class BeatDuelCli
 
         if (beatIdArg == null || candidatePath == null || !Guid.TryParse(beatIdArg, out var beatId))
         {
-            Console.Error.WriteLine("Usage: ss --duel --beat-id <guid> --candidate <file> [--goal \"...\"] [--apply] [--json]");
+            Console.Error.WriteLine("Usage: prose --duel --beat-id <guid> --candidate <file> [--goal \"...\"] [--apply] [--json]");
             return 2;
         }
         if (!File.Exists(candidatePath))

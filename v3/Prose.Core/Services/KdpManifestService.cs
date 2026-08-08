@@ -18,7 +18,7 @@ namespace Prose.Core.Services;
 ///      link), which is what lets a link jump straight to a book's edit page instead of
 ///      hunting through the bookshelf UI.
 ///
-/// Shared by <c>ss --kdp-manifest</c> (CLI: <c>KdpManifestCli</c>, a thin wrapper that prints a
+/// Shared by <c>prose --kdp-manifest</c> (CLI: <c>KdpManifestCli</c>, a thin wrapper that prints a
 /// table and writes manifest.json + the regenerated browser userscript) and the KdpPublish WPF
 /// app (which consumes the entries in-process — no subprocess, no JSON round-trip). Business
 /// logic lives here exactly once; both front ends must produce identical output.
@@ -69,7 +69,7 @@ public class KdpManifestService
         // — the real signal — PublishUrl is populated, meaning the book is demonstrably live on
         // Amazon. PublicationStatus was added as the intended tracker but was never backfilled;
         // every row has it NULL even for books that have been live for weeks, so scoping to it
-        // alone (as ss --kdp-status does) silently returns zero rows. PublishUrl is ground truth.
+        // alone (as prose --kdp-status does) silently returns zero rows. PublishUrl is ground truth.
         var nodes = await db.Nodes
             .AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.PublicationStatus != null || n.PublishUrl != null)
@@ -169,8 +169,8 @@ public class KdpManifestService
                         warning = (warning == null ? "" : warning + " ") + $"DB Version={n.Version} but highest file on disk is V{best} — using the disk version.";
                 }
             }
-            if (docxPath == null) warning = (warning == null ? "" : warning + " ") + "No .docx found on disk — run ss --export-node.";
-            if (epubPath == null) warning = (warning == null ? "" : warning + " ") + "No .epub found on disk — run ss --export-node.";
+            if (docxPath == null) warning = (warning == null ? "" : warning + " ") + "No .docx found on disk — run prose --export-node.";
+            if (epubPath == null) warning = (warning == null ? "" : warning + " ") + "No .epub found on disk — run prose --export-node.";
 
             // Stage the current manuscript at a short, constant path. No script or browser agent
             // can drive a native OS file-picker dialog to an arbitrary path (that boundary is a

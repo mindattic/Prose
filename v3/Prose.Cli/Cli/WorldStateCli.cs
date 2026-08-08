@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --world-state --beat &lt;beatId&gt; [--story-time "2225-03-12"] [--json]
+/// prose --world-state --beat &lt;beatId&gt; [--story-time "2225-03-12"] [--json]
 /// Prints the world-state snapshot (entity aspects + active edges) at the given beat.
 /// </summary>
 public static class WorldStateCli
@@ -31,7 +31,7 @@ public static class WorldStateCli
 
         if (beatId == null)
         {
-            Console.Error.WriteLine("Usage: ss --world-state --beat <beatId> [--story-time \"date\"] [--json]");
+            Console.Error.WriteLine("Usage: prose --world-state --beat <beatId> [--story-time \"date\"] [--json]");
             return 1;
         }
 

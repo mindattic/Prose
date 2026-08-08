@@ -18,7 +18,7 @@
 //
 // What this file does NOT do:
 //   - Create the resource group (do it once with az cli — see infra/README.md).
-//   - Create the App Service (already exists at `prose`).
+//   - Create the App Service (already exists at `mindattic-prose`).
 //   - Run schema migrations (handled by GitHub Actions, not Bicep).
 //
 // Deploy:

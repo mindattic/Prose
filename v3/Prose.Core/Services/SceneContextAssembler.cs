@@ -186,7 +186,7 @@ public class SceneContextAssembler(
     /// <summary>Assemble the scene context for an existing beat.</summary>
     /// <remarks>
     /// When persisted narrative-science findings exist for this beat
-    /// (written by <c>ss --narrative-science … --slug …</c>) they are injected as a compact
+    /// (written by <c>prose --narrative-science … --slug …</c>) they are injected as a compact
     /// deterministic guidance block — zero extra LLM cost. The block is capped at
     /// ~350 chars (~88 tokens) and deducted from the token budget before the
     /// entity roster is assembled so the total never overruns the caller's cap.

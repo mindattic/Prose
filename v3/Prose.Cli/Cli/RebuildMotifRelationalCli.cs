@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-motif-relational</c> — backfill the Motifs relational
+/// <c>prose --rebuild-motif-relational</c> — backfill the Motifs relational
 /// schema from Records.Json blobs. For every active motif entity, deserializes
 /// the blob → MotifData → persists columns + MotifAppearances bridge.
 /// Also creates minimal relational rows for any active motif entities that have no blob.

@@ -493,7 +493,7 @@ public class SettingsService : IDisposable
 
     /// <summary>When ON, ProseWriterRouter captures the FULL DCM working-set (not budget-clipped)
     /// per beat into ContextTelemetryService for Gantt visualization export. Default OFF (zero
-    /// overhead until you opt in). Use <c>ss --dcm-viz</c> to generate the .htm without a full prose run.</summary>
+    /// overhead until you opt in). Use <c>prose --dcm-viz</c> to generate the .htm without a full prose run.</summary>
     public bool DcmLoggingEnabled { get => data.DcmLoggingEnabled; set { data.DcmLoggingEnabled = value; ScheduleSave(); } }
 
     // ── Review voting ──────────────────────────────────────────────────────────
@@ -578,14 +578,14 @@ public class SettingsService : IDisposable
     /// <summary>Model tag for the local embedding endpoint (e.g. "Qwen/Qwen3-Embedding-0.6B").</summary>
     public string LocalEmbeddingModel   { get => data.LocalEmbeddingModel;   set { data.LocalEmbeddingModel   = value; ScheduleSave(); } }
 
-    /// <summary>vast.ai REST API key for <c>ss --gpu</c> (start/stop/destroy the rented review box).
+    /// <summary>vast.ai REST API key for <c>prose --gpu</c> (start/stop/destroy the rented review box).
     /// Read straight from the shared MindAttic credential vault — <c>VAST_API_KEY</c> env, then
     /// %APPDATA%/MindAttic/LLM/<c>vast.json</c>, then the <c>vast</c> entry in <c>providers.json</c>,
     /// then cloud config. The standard LLM resolver only knows registered providers, so a non-LLM
     /// credential like this reads the vault files directly. Not an LLM key.</summary>
     public string VastApiKey => ResolveVaultKey("VAST_API_KEY", "vast");
 
-    /// <summary>RunPod REST API key for <c>ss --runpod</c> (status/stop/start/terminate the rented
+    /// <summary>RunPod REST API key for <c>prose --runpod</c> (status/stop/start/terminate the rented
     /// review pod). Resolved from the shared MindAttic credential vault — <c>RUNPOD_API_KEY</c> env,
     /// then %APPDATA%/MindAttic/LLM/<c>runpod.json</c>, then the <c>runpod</c> entry in
     /// <c>providers.json</c>, then cloud config. Not an LLM key; never on the command line.</summary>

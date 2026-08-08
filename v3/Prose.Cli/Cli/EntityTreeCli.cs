@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --entity-tree (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--depth N] [--rel-types type1,type2] [--as-of "date"]
+/// prose --entity-tree (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--depth N] [--rel-types type1,type2] [--as-of "date"]
 /// Prints a formatted relationship tree rooted at the entity.
 /// </summary>
 public static class EntityTreeCli
@@ -54,7 +54,7 @@ public static class EntityTreeCli
 
         if (entityId == null)
         {
-            Console.Error.WriteLine("Usage: ss --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]");
+            Console.Error.WriteLine("Usage: prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]");
             return 1;
         }
 

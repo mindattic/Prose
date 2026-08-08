@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --export-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
+/// <c>prose --export-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
 /// — render a node to .docx + .epub + .pdf + .txt in the configured export
 /// directory (Desktop fallback). Also writes <c>description.txt</c> when
 /// <c>Node.Description</c> is set. <c>--export-dir</c> overrides and persists the
@@ -17,7 +17,7 @@ namespace Prose.Cli;
 /// integration. "Export" is the correct name; it does not touch
 /// <see cref="Node.PublishUrl"/> or <see cref="Node.PublicationStatus"/>, which
 /// track real-world Amazon publication state set by a human via KDP's own
-/// dashboard (see <c>ss --kdp-status</c>).</para>
+/// dashboard (see <c>prose --kdp-status</c>).</para>
 /// </summary>
 public static class ExportNodeCli
 {
@@ -87,7 +87,7 @@ public static class ExportNodeCli
         var detected = await mojiChecker.DetectNodeAsync(nodeId);
         if (detected.BeatsAffected > 0)
         {
-            Console.Error.WriteLine($"[export-node] ❌ Mojibake detected in {detected.BeatsAffected} beat(s) — run 'ss --repair --fix-mojibake' to correct before exporting.");
+            Console.Error.WriteLine($"[export-node] ❌ Mojibake detected in {detected.BeatsAffected} beat(s) — run 'prose --repair --fix-mojibake' to correct before exporting.");
             foreach (var hit in detected.Hits.Take(5))
                 Console.Error.WriteLine($"  beat {hit.BeatId}: {hit.Excerpt[..Math.Min(80, hit.Excerpt.Length)]}");
             return 1;
@@ -95,7 +95,7 @@ public static class ExportNodeCli
 
         // ── pre-export BLOCKER verification gate (Track C — Truth-First Architecture) ──
         // Reads existing BeatVerification rows — does NOT re-run checks. Run
-        // 'ss --verify-book --slug <slug>' first to refresh, then fix any BLOCKERs.
+        // 'prose --verify-book --slug <slug>' first to refresh, then fix any BLOCKERs.
         await using (var dbV = await dbFactory.CreateDbContextAsync())
         {
             var chapterIds = await dbV.Nodes.AsNoTracking()
@@ -117,7 +117,7 @@ public static class ExportNodeCli
                 Console.Error.WriteLine($"[export-node] ❌ {blockers.Count} BLOCKER verification finding(s) — fix before exporting:");
                 foreach (var b in blockers.Take(10))
                     Console.Error.WriteLine($"  [{b.CheckType,-22}] Beat {b.BeatId}: {b.Evidence ?? "(no detail)"}");
-                Console.Error.WriteLine("[export-node] Run 'ss --verify-book --slug <slug>' for full report.");
+                Console.Error.WriteLine("[export-node] Run 'prose --verify-book --slug <slug>' for full report.");
                 return 1;
             }
         }
@@ -135,7 +135,7 @@ public static class ExportNodeCli
             Console.WriteLine($"[export-node] Wrote txt:  {result.TxtPath}");
 
             if (result.DocxMojibakeHits > 0)
-                Console.Error.WriteLine($"[export-node] ⚠  {result.DocxMojibakeHits} mojibake sequence(s) found in exported .docx — run 'ss --repair --fix-mojibake' then re-export.");
+                Console.Error.WriteLine($"[export-node] ⚠  {result.DocxMojibakeHits} mojibake sequence(s) found in exported .docx — run 'prose --repair --fix-mojibake' then re-export.");
             else
                 Console.WriteLine("[export-node] ✓ Mojibake check passed.");
 
@@ -152,7 +152,7 @@ public static class ExportNodeCli
             if (result.KeywordsPath != null)
                 Console.WriteLine($"[export-node] Wrote keywords: {result.KeywordsPath} ({result.KeywordCount} phrases)");
             else
-                Console.Error.WriteLine("[export-node] ⚠ No keywords found for this node — run ss --seed-keywords --slug <slug> first.");
+                Console.Error.WriteLine("[export-node] ⚠ No keywords found for this node — run prose --seed-keywords --slug <slug> first.");
 
             if (result.CoverPath != null)
                 Console.WriteLine($"[export-node] Wrote cover: {result.CoverPath}");

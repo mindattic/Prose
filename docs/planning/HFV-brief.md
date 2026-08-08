@@ -250,21 +250,21 @@ before prose begins. Cross-check against the Entity Seeding Roadmap in `docs/ser
 
 | Entity | Type | In DB? | DB seed command / MCP tool |
 |---|---|---|---|
-| Reza Solano ("Rampart") | character | [x] seeded | `ss --add-character --file` |
-| Tavi Jeong ("Cutout") | character | [x] seeded | `ss --add-character --file` |
-| Scraps (Nena Duclair) | character | [x] seeded | `ss --add-character --file` |
-| Osman Karim ("Ozzie") | character | [x] seeded | `ss --add-character --file` |
-| Sunday | character | [x] seeded | `ss --add-character --file` |
-| Ivet | character | [x] seeded | `ss --add-character --file` |
-| Coeli Vantanen | character | [x] seeded | `ss --add-character --file` |
-| Auda Vane | character | [x] seeded | `ss --add-character --file` |
-| Ozzie's Squat (Low ground-floor Gray Zone squat) | place | [x] — seeded `ozzie-s-squat` | `ss --add-place --file` |
-| Skillet Row (Low food-stall market; Scraps's booth) | place | [x] — seeded `skillet-row` | `ss --add-place --file` |
-| Honeycomb (BTL den, the Gray Zone) | place | [x] — seeded `the-honeycomb` | `ss --add-place --file` |
+| Reza Solano ("Rampart") | character | [x] seeded | `prose --add-character --file` |
+| Tavi Jeong ("Cutout") | character | [x] seeded | `prose --add-character --file` |
+| Scraps (Nena Duclair) | character | [x] seeded | `prose --add-character --file` |
+| Osman Karim ("Ozzie") | character | [x] seeded | `prose --add-character --file` |
+| Sunday | character | [x] seeded | `prose --add-character --file` |
+| Ivet | character | [x] seeded | `prose --add-character --file` |
+| Coeli Vantanen | character | [x] seeded | `prose --add-character --file` |
+| Auda Vane | character | [x] seeded | `prose --add-character --file` |
+| Ozzie's Squat (Low ground-floor Gray Zone squat) | place | [x] — seeded `ozzie-s-squat` | `prose --add-place --file` |
+| Skillet Row (Low food-stall market; Scraps's booth) | place | [x] — seeded `skillet-row` | `prose --add-place --file` |
+| Honeycomb (BTL den, the Gray Zone) | place | [x] — seeded `the-honeycomb` | `prose --add-place --file` |
 | The "twins" (matched cheap pistols) | weapon | [x] — reuse existing `Meridian Munitions Holdout-380 'Ankle Biter'` | no new weapon seeded (no CLI import path) |
 
 Job targets reuse existing canon CorpoNations (query DB; no new corpo seeded). Run
-`ss --scan-entity-mentions --slug hfv` after each chapter draft to keep coverage current.
+`prose --scan-entity-mentions --slug hfv` after each chapter draft to keep coverage current.
 
 ---
 

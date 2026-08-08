@@ -3,7 +3,7 @@
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --universe &lt;subcommand&gt;</c> — universe management from the CLI.
+/// <c>prose --universe &lt;subcommand&gt;</c> — universe management from the CLI.
 ///
 /// Subcommands:
 ///   list    Print all universes with id, slug, name, theme, active flag.
@@ -14,7 +14,7 @@ namespace Prose.Cli;
 public static class UniverseCli
 {
     /// <summary>
-    /// The subcommands <c>ss --universe</c> actually accepts. Program.cs consults this before
+    /// The subcommands <c>prose --universe</c> actually accepts. Program.cs consults this before
     /// claiming dispatch, so that <c>--universe &lt;slug&gt; --some-command</c> — where --universe
     /// is the scoping flag rather than the command — falls through to the real command instead of
     /// being swallowed and answered with usage text.
@@ -94,7 +94,7 @@ public static class UniverseCli
         {
             if (!ctx.UseUniverseBySlug(slug))
             {
-                Console.Error.WriteLine($"[universe use] Unknown slug '{slug}'. Run 'ss --universe list' to see available universes.");
+                Console.Error.WriteLine($"[universe use] Unknown slug '{slug}'. Run 'prose --universe list' to see available universes.");
                 return 1;
             }
         }
@@ -111,7 +111,7 @@ public static class UniverseCli
 
     private static int PrintUsage()
     {
-        Console.Error.WriteLine("Usage: ss --universe <subcommand> [args]");
+        Console.Error.WriteLine("Usage: prose --universe <subcommand> [args]");
         Console.Error.WriteLine("  list");
         Console.Error.WriteLine("  current");
         Console.Error.WriteLine("  use  --slug <slug> | --id <guid>");

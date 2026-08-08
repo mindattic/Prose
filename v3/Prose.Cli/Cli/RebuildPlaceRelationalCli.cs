@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-place-relational</c> — backfill the Places relational
+/// <c>prose --rebuild-place-relational</c> — backfill the Places relational
 /// schema from Records.Json blobs. For every place entity (active or inactive),
 /// deserializes the blob → DistrictData → persists columns + all 10 bridge tables +
 /// syncs EntityTags.

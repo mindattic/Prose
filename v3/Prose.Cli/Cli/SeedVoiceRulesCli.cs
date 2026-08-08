@@ -3,7 +3,7 @@
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --seed-voice-rules</c> — codify the GLMZ house voice + world rules from
+/// <c>prose --seed-voice-rules</c> — codify the GLMZ house voice + world rules from
 /// the memory rubric into the DB-backed stores the generator actually reads
 /// (<c>literary_rules</c> / <c>tone_bible</c>, surfaced by
 /// <see cref="DatabaseService.GetLiteraryRulesPrompt"/> / <c>GetToneBiblePrompt</c>).

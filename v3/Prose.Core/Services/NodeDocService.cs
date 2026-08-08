@@ -131,7 +131,7 @@ public class NodeDocService
     {
         var sb = new StringBuilder();
         sb.AppendLine("## Structural Blueprint");
-        sb.AppendLine($"<!-- generated {now:O} from NodeStructuralBlueprints — edit via ss --generate-blueprint -->");
+        sb.AppendLine($"<!-- generated {now:O} from NodeStructuralBlueprints — edit via prose --generate-blueprint -->");
         sb.AppendLine();
 
         if (bp.HasSubplot && !string.IsNullOrWhiteSpace(bp.SubplotSummary))

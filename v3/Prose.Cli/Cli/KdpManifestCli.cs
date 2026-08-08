@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --kdp-manifest [--out &lt;path&gt;] [--userscript]</c> — thin wrapper over
+/// <c>prose --kdp-manifest [--out &lt;path&gt;] [--userscript]</c> — thin wrapper over
 /// <see cref="KdpManifestService"/> (shared with the KdpPublish app, which consumes the same
 /// entries in-process instead of via this CLI). Parses args, calls the service, prints a status
 /// table, writes <c>manifest.json</c>, and optionally regenerates the browser userscript.

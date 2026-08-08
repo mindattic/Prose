@@ -4,7 +4,7 @@ namespace Prose.Core.Services;
 
 /// <summary>
 /// Fixed, hand-authored roster of genre/domain-superfan reviewer personas — ten
-/// per universe (glmz/scry/gspl) — invoked ONLY on explicit request (<c>ss --review-node
+/// per universe (glmz/scry/gspl) — invoked ONLY on explicit request (<c>prose --review-node
 /// --experts</c>), never blended into the default random-1024 panel.
 ///
 /// This exists because <see cref="PersonaLibrary"/>'s 1024 personas (vocation ×

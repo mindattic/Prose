@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --narrate-book</c> — (re)run TTS narration on an EXISTING node,
+/// <c>prose --narrate-book</c> — (re)run TTS narration on an EXISTING node,
 /// resolved by id (full or prefix) or slug. The complement to
 /// <c>--write-story --narrate</c> (which only narrates a node it just
 /// generated). Runs the same <see cref="NodeWorkbenchService.NarrateAsync"/>
@@ -37,7 +37,7 @@ public static class NarrateNodeCli
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[narrate-book] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --narrate-book (--id <guid|prefix> | --slug <slug>)");
+            Console.Error.WriteLine("Usage: prose --narrate-book (--id <guid|prefix> | --slug <slug>)");
             return 1;
         }
 

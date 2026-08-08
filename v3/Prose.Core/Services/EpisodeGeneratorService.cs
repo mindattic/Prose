@@ -55,7 +55,7 @@ public class EpisodeGeneratorService
         => GenerateInternalAsync(customSeed: null, parentEpisodeId: null, voiceId, ct);
 
     /// <summary>Generate an episode from an explicit user-supplied seed —
-    /// bypasses the template pool. Used by <c>ss --write-story --seed</c>
+    /// bypasses the template pool. Used by <c>prose --write-story --seed</c>
     /// and any caller that wants a specific story prompt.</summary>
     public Task<Guid> GenerateFromSeedAsync(string customSeed, string? voiceId = null, CancellationToken ct = default)
         => GenerateInternalAsync(customSeed, parentEpisodeId: null, voiceId, ct);

@@ -14,7 +14,7 @@ namespace Prose.Core.Services;
 /// world into the unified <see cref="Beat"/> + <see cref="Node"/> +
 /// <see cref="BeatNode"/> world.
 ///
-/// Run via <c>ss --migrate-nodes</c> or implicitly at startup (the seed
+/// Run via <c>prose --migrate-nodes</c> or implicitly at startup (the seed
 /// service queues it). Safe to re-run: every insert is gated on a
 /// <c>NOT EXISTS</c>-style check keyed on the source row's GUID, so a second
 /// pass is a no-op (or picks up any new rows added since the last run).

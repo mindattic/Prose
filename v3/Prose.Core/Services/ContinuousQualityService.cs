@@ -100,7 +100,7 @@ public class ContinuousQualityService
 
     /// <summary>
     /// Legacy entry point. Reads a chapter.json file path and runs the same
-    /// scan against it. Kept for the <c>ss --findings scan &lt;path&gt;</c> CLI.
+    /// scan against it. Kept for the <c>prose --findings scan &lt;path&gt;</c> CLI.
     /// </summary>
     public async Task AnalyzeFileAsync(string filePath, CancellationToken ct = default)
     {

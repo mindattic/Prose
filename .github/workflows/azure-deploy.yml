@@ -1,10 +1,14 @@
 name: Build and deploy Prose to Azure App Service
 
 # Three-stage pipeline:
-#   build   — restore + publish the Blazor host as a deployable artifact
+#   build   — restore + publish the Codex web host as a deployable artifact
 #   migrate — apply schema + enable SYSTEM_VERSIONING against Azure SQL,
 #             authenticated via the GitHub OIDC service principal (db_ddladmin)
-#   deploy  — push the artifact to the prose App Service slot
+#   deploy  — push the artifact to the mindattic-prose App Service slot
+#             (App Service name 'prose' was already taken globally on
+#             *.azurewebsites.net by an unrelated Azure customer — the app
+#             is named 'mindattic-prose' instead; only the hostname differs,
+#             everything else keeps the 'prose' naming.)
 #
 # The migrate job runs `v3/ApplyMigrations`: the idempotent Data/Sql/*.sql
 # column migrations, the nested-strand fold, then EnableSystemVersioningAsync()
@@ -48,10 +52,10 @@ jobs:
       # --property:Configuration=Release bakes the project path into project.assets.json
       # and causes CS0234/CS0246 on every Release build.
       - name: Restore dependencies
-        run: dotnet restore v3/Prose.Blazor/Prose.Blazor.csproj --property:Configuration=Release
+        run: dotnet restore v3/Prose.Codex/Prose.Codex.csproj --property:Configuration=Release
 
       - name: Publish
-        run: dotnet publish v3/Prose.Blazor/Prose.Blazor.csproj -c Release -o publish --no-restore
+        run: dotnet publish v3/Prose.Codex/Prose.Codex.csproj -c Release -o publish --no-restore
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -105,7 +109,21 @@ jobs:
     runs-on: windows-latest
     needs: [build, migrate]
 
+    # OIDC, same federated identity as the migrate job — no publish-profile
+    # secret to manage or leak. azure/webapps-deploy picks up the active
+    # az login session automatically when publish-profile is omitted.
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id:       ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id:       ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
@@ -115,7 +133,6 @@ jobs:
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v3
         with:
-          app-name: prose
+          app-name: mindattic-prose
           slot-name: Production
           package: publish/
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}

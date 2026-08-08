@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-transportation-relational</c> — backfill the Transportations
+/// <c>prose --rebuild-transportation-relational</c> — backfill the Transportations
 /// relational schema from Records.Json blobs. For every active transportation entity,
 /// deserializes the blob → TransportationData → persists columns + bridge tables
 /// (Aliases / StoryHooks) + syncs EntityTags.

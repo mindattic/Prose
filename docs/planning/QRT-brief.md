@@ -150,14 +150,14 @@ Ending.
 
 | Entity | Type | In DB? | DB seed command |
 |---|---|---|---|
-| Gordan Rosniak (KJ7ROS) | character | [x] | `ss --add-character --file ... --universe horror` |
-| Aimes Rosniak-Bishop (husband) | character | [x] | `ss --add-character --file ... --universe horror` |
-| Min-jun and Ji-ho Rosniak-Bishop (twins, grouped) | character | [x] | `ss --add-character --file ... --universe horror` |
-| Priya Standish | character | [x] | `ss --add-character --file ... --universe horror` |
-| Owen Bui | character | [x] | `ss --add-character --file ... --universe horror` |
-| Sal Ferraro | character | [x] | `ss --add-character --file ... --universe horror` |
-| The Overlap (DB stub, never named on-page) | character (entity stub) | [x] | `ss --add-character --file ... --universe horror` |
-| Aldergrove Flats, WA (fictional unincorporated community) | place | [x] | `ss --add-place --file ... --universe horror` |
+| Gordan Rosniak (KJ7ROS) | character | [x] | `prose --add-character --file ... --universe horror` |
+| Aimes Rosniak-Bishop (husband) | character | [x] | `prose --add-character --file ... --universe horror` |
+| Min-jun and Ji-ho Rosniak-Bishop (twins, grouped) | character | [x] | `prose --add-character --file ... --universe horror` |
+| Priya Standish | character | [x] | `prose --add-character --file ... --universe horror` |
+| Owen Bui | character | [x] | `prose --add-character --file ... --universe horror` |
+| Sal Ferraro | character | [x] | `prose --add-character --file ... --universe horror` |
+| The Overlap (DB stub, never named on-page) | character (entity stub) | [x] | `prose --add-character --file ... --universe horror` |
+| Aldergrove Flats, WA (fictional unincorporated community) | place | [x] | `prose --add-place --file ... --universe horror` |
 
 ---
 

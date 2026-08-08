@@ -168,7 +168,7 @@ public static class VocabularyMapper
     /// blob → VocabularyData → persist. Returns the number of entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-vocabulary-relational</c>.
+    /// Run once via <c>prose --rebuild-vocabulary-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

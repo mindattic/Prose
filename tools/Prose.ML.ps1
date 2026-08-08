@@ -17,7 +17,7 @@ $ROOT    = Split-Path $PSScriptRoot -Parent
 $ML_ROOT = Join-Path $ROOT "v3\ml"
 $VENV    = Join-Path $ML_ROOT ".venv\Scripts\Activate.ps1"
 $LOG     = Join-Path $ROOT "v3\ml_nightly.log"
-$SS      = Join-Path $ROOT "ss.cmd"
+$SS      = Join-Path $ROOT "prose.cmd"
 
 # ── Display helpers ────────────────────────────────────────────────────────────
 
@@ -108,7 +108,7 @@ function Write-Menu {
 function Invoke-SS {
     param([string[]]$SsArgs)
     Write-Host ""
-    Write-Host "  > ss $SsArgs" -ForegroundColor DarkCyan
+    Write-Host "  > prose $SsArgs" -ForegroundColor DarkCyan
     Write-Host ""
     & $SS @SsArgs
 }

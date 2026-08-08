@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --morning-report [--since &lt;hours&gt;]
+/// prose --morning-report [--since &lt;hours&gt;]
 ///
 /// Aggregates overnight audit results into a single sectioned report.
 /// Default window: last 24 hours. Prints to console and writes an HTML
@@ -49,7 +49,7 @@ public static class MorningReportCli
             foreach (var c in crossReport.Conflicts.Take(10))
                 Console.WriteLine($"    {c.EntityName} | {c.Predicate}: \"{c.MajorityObject}\" vs \"{c.MinorityObject}\"  [{string.Join("/", c.MinorityBooks)}]");
             if (crossReport.Conflicts.Count > 10)
-                Console.WriteLine($"    ... and {crossReport.Conflicts.Count - 10} more. Run ss --consistency-audit for full list.");
+                Console.WriteLine($"    ... and {crossReport.Conflicts.Count - 10} more. Run prose --consistency-audit for full list.");
         }
         sections.Add(BuildContradictionsHtml(crossReport));
         Console.WriteLine();
@@ -129,7 +129,7 @@ public static class MorningReportCli
         }
         else
         {
-            Console.WriteLine("    (no model yet — run ss --compute-metrics --all then nightly_run.py)");
+            Console.WriteLine("    (no model yet — run prose --compute-metrics --all then nightly_run.py)");
         }
         Console.WriteLine();
 

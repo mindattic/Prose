@@ -7,11 +7,11 @@ namespace Prose.Cli;
 /// CLI surface for <see cref="CanonExportService"/>. Writes canon JSON to the
 /// configured publish directory (Desktop fallback). All filenames are timestamped (yyyyMMdd-HHmmss).
 ///
-///   ss --export global                       every repo, zipped
-///   ss --export &lt;repoName&gt;                one repo, zipped (e.g. "people", "weaponry")
-///   ss --export &lt;entityId&gt;                one entity, single .json
-///   ss --export &lt;slug&gt;                    one entity, looked up by Entity.Slug
-///   ss --export &lt;entityId|slug&gt; --deep    entity + every cross-repo record it names, zipped
+///   prose --export global                       every repo, zipped
+///   prose --export &lt;repoName&gt;                one repo, zipped (e.g. "people", "weaponry")
+///   prose --export &lt;entityId&gt;                one entity, single .json
+///   prose --export &lt;slug&gt;                    one entity, looked up by Entity.Slug
+///   prose --export &lt;entityId|slug&gt; --deep    entity + every cross-repo record it names, zipped
 ///
 /// Resolution order when the target isn't "global": try Guid → repo name →
 /// Entity.Slug. First match wins.
@@ -24,7 +24,7 @@ public static class ExportCli
         var target = idx >= 0 && idx + 1 < args.Length ? args[idx + 1] : null;
         if (string.IsNullOrWhiteSpace(target))
         {
-            Console.Error.WriteLine("Usage: ss --export <global|repoName|entityId|slug> [--deep]");
+            Console.Error.WriteLine("Usage: prose --export <global|repoName|entityId|slug> [--deep]");
             return 2;
         }
 
@@ -59,7 +59,7 @@ public static class ExportCli
             }
             else
             {
-                // Fall back to slug lookup. Lets users type "ss --export kyle_cassidy"
+                // Fall back to slug lookup. Lets users type "prose --export kyle_cassidy"
                 // when they don't have the Guid handy.
                 var resolved = await svc.ResolveEntityIdAsync(target);
                 if (resolved == null)

@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --list-species
+/// prose --list-species
 ///
 /// Prints every species in the current universe (canonical name, label, sentience).
 /// The five GLMZ values are: human, ai, elf, synthetic, unknown.
@@ -19,7 +19,7 @@ public static class ListSpeciesCli
 
         if (list.Count == 0)
         {
-            Console.WriteLine("No species found. Run `ss --seed` to load the canonical set.");
+            Console.WriteLine("No species found. Run `prose --seed` to load the canonical set.");
             return 0;
         }
 

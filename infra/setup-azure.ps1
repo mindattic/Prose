@@ -20,21 +20,21 @@
 #      (GitHub repo secrets, smoke test).
 #
 # What it does NOT do:
-#   - Create the App Service (already exists at `prose`).
+#   - Create the App Service (already exists at `mindattic-prose`).
 #   - Create the GitHub OIDC service principal + federated credential
 #     (one-shot per repo; instructions in infra/README.md § "GitHub OIDC").
 #   - Run schema migrations (GitHub Actions does that on the next push).
 #
 # Usage:
 #   powershell -NoProfile -ExecutionPolicy Bypass -File infra/setup-azure.ps1 `
-#       -ResourceGroup street-samurai-rg `
-#       -AppServiceName prose `
+#       -ResourceGroup MyApps `
+#       -AppServiceName mindattic-prose `
 #       -GitHubSpName  prose-github
 # ──────────────────────────────────────────────────────────────────────────
 [CmdletBinding()]
 param(
-    [string]$ResourceGroup  = 'street-samurai-rg',
-    [string]$AppServiceName = 'prose',
+    [string]$ResourceGroup  = 'MyApps',
+    [string]$AppServiceName = 'mindattic-prose',
     [string]$GitHubSpName   = 'prose-github',
     [string]$ParametersFile = (Join-Path $PSScriptRoot 'azure-sql.parameters.json'),
     [switch]$SkipGrant,

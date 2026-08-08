@@ -1,4 +1,4 @@
-﻿---
+---
 codex: 1
 project: Prose
 code: SS
@@ -102,7 +102,7 @@ full build clean, and a backup before each type's blob-drop. This mirrors the
 **✅ Faction — DONE (the proven template).** `FactionMapper` (FillScalars/FillBridges/Materialize/
 LoadAll/LoadOne/LoadAllLite/RebuildAllAsync) + `FactionRepository` flipped off `EfRepository<T>` onto
 the relational tables + the missing `FactionRelationshipTags` bridge (`add_faction_relationship_tags_20260615.sql`)
-+ faction `.tags` migrated to the universal `EntityTags` layer + `ss --rebuild-faction-relational`
++ faction `.tags` migrated to the universal `EntityTags` layer + `prose --rebuild-faction-relational`
 backfill CLI + `FactionRelationalParityTests` (13). **Live parity: 163 factions / 0 mismatches**
 across all 8 lists; **the faction `Records.Json` blob has been retired** (0 rows). Backup taken first
 (`backups/Prose_preFactionBlobDrop_20260615.bak`).

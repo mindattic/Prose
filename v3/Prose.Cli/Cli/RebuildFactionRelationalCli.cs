@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-faction-relational</c> — backfill the Factions relational
+/// <c>prose --rebuild-faction-relational</c> — backfill the Factions relational
 /// schema from Records.Json blobs. For every active faction entity, deserializes
 /// the blob → FactionData → persists columns + all 8 bridge tables (including
 /// the new FactionRelationshipTags) + syncs EntityTags.
@@ -31,7 +31,7 @@ public static class RebuildFactionRelationalCli
         catch (Exception ex)
         {
             Console.Error.WriteLine($"[rebuild-faction-relational] FAILED: {ex.Message}");
-            Console.Error.WriteLine("[rebuild-faction-relational] Did you run the migration?  ss --migrate-sql  (add_faction_relationship_tags_20260615.sql)");
+            Console.Error.WriteLine("[rebuild-faction-relational] Did you run the migration?  prose --migrate-sql  (add_faction_relationship_tags_20260615.sql)");
             return 1;
         }
 

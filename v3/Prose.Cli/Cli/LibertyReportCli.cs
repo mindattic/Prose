@@ -3,7 +3,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --liberty-report</c> — display liberty analysis for a beat or a full story.
+/// <c>prose --liberty-report</c> — display liberty analysis for a beat or a full story.
 ///
 /// Flags:
 ///   <c>--beat &lt;guid&gt;</c>    Show the liberty report for a specific beat.

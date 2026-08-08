@@ -8,7 +8,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --booktok</c> — composite a book cover onto a 3D mockup template, generate a
+/// <c>prose --booktok</c> — composite a book cover onto a 3D mockup template, generate a
 /// short AI image-to-video clip (hand shows the cover, opens it, flips pages) via a chosen
 /// video provider, and assemble a vertical 1080x1920 #booktok MP4. Costs real money per
 /// call unless <c>--dry-run</c>, which stops after the local ImageMagick mockup + payload
@@ -16,10 +16,10 @@ namespace Prose.Cli;
 /// interior page-spread art to render.
 ///
 /// DB mode (pulls cover + title from the node):
-///   ss --booktok --slug &lt;slug&gt; --provider kling|runway|sora [--duration 8] [--template default] [--prompt "..."] [--dry-run] [--yes]
+///   prose --booktok --slug &lt;slug&gt; --provider kling|runway|sora [--duration 8] [--template default] [--prompt "..."] [--dry-run] [--yes]
 ///
 /// Standalone mode (no DB — takes a cover file directly):
-///   ss --booktok --standalone --cover-path &lt;path&gt; --title "&lt;title&gt;" --provider kling|runway|sora [...]
+///   prose --booktok --standalone --cover-path &lt;path&gt; --title "&lt;title&gt;" --provider kling|runway|sora [...]
 /// </summary>
 public static class BookTokCli
 {
@@ -154,7 +154,7 @@ public static class BookTokCli
 
     private static void PrintUsage()
     {
-        Console.Error.WriteLine("Usage: ss --booktok --slug <slug> --provider kling|runway|sora [--duration 8] [--template default] [--prompt \"...\"] [--dry-run] [--yes]");
-        Console.Error.WriteLine("       ss --booktok --standalone --cover-path <path> --title \"<title>\" --provider kling|runway|sora [...]");
+        Console.Error.WriteLine("Usage: prose --booktok --slug <slug> --provider kling|runway|sora [--duration 8] [--template default] [--prompt \"...\"] [--dry-run] [--yes]");
+        Console.Error.WriteLine("       prose --booktok --standalone --cover-path <path> --title \"<title>\" --provider kling|runway|sora [...]");
     }
 }

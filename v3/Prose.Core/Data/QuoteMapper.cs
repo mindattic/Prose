@@ -168,7 +168,7 @@ public static class QuoteMapper
     /// Returns the number of quotes written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-quote-relational</c>.
+    /// Run once via <c>prose --rebuild-quote-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

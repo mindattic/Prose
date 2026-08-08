@@ -20,7 +20,7 @@ namespace Prose.Core.Services;
 // Inferred=true so callers can treat it with appropriate skepticism.
 //
 // Usage:
-//   ss --examine-emotion (via EmotionalDepthService)
+//   prose --examine-emotion (via EmotionalDepthService)
 //   MCP: examine_emotional_depth (via EmotionalDepthService)
 
 /// <summary>

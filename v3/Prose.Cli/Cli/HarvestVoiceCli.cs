@@ -6,15 +6,15 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --harvest-voice</c> — distill voice rules from winning nodes into the
+/// <c>prose --harvest-voice</c> — distill voice rules from winning nodes into the
 /// codified, DB-backed rules the generator reads. Propose-then-approve.
 ///
-///   ss --harvest-voice --slug &lt;slug&gt; [--force]   harvest one node (proposals only)
-///   ss --harvest-voice --id &lt;guid|prefix&gt;        same, by id
-///   ss --harvest-voice --all-80                  harvest every node scored ≥80%
-///   ss --harvest-voice --pending                 list proposed rules awaiting approval
-///   ss --harvest-voice --apply &lt;entry-guid&gt;       apply one proposed rule to the live store
-///   ss --harvest-voice --reject &lt;entry-guid&gt;      reject a proposed rule (kept in the trail)
+///   prose --harvest-voice --slug &lt;slug&gt; [--force]   harvest one node (proposals only)
+///   prose --harvest-voice --id &lt;guid|prefix&gt;        same, by id
+///   prose --harvest-voice --all-80                  harvest every node scored ≥80%
+///   prose --harvest-voice --pending                 list proposed rules awaiting approval
+///   prose --harvest-voice --apply &lt;entry-guid&gt;       apply one proposed rule to the live store
+///   prose --harvest-voice --reject &lt;entry-guid&gt;      reject a proposed rule (kept in the trail)
 ///
 /// Nothing touches the live rules until --apply. Exit: 0 ok, 1 bad args / not found.
 /// </summary>
@@ -80,7 +80,7 @@ public static class HarvestVoiceCli
                 Console.WriteLine($"[harvest-voice] {r.Slug} (canon): → {r.Proposals.Count} proposals.");
             Console.WriteLine();
             PrintProposals(results.SelectMany(r => r.Proposals).ToList());
-            Console.WriteLine("\nReview, then apply: ss --harvest-voice --apply <entry-guid>");
+            Console.WriteLine("\nReview, then apply: prose --harvest-voice --apply <entry-guid>");
             return 0;
         }
 
@@ -94,7 +94,7 @@ public static class HarvestVoiceCli
                 Console.WriteLine($"[harvest-voice] {r.Slug} ({r.Score:0.#}%): {r.EditCount} edits + {r.DirectiveCount} directives → {r.Proposals.Count} proposals.");
             Console.WriteLine();
             PrintProposals(results.SelectMany(r => r.Proposals).ToList());
-            Console.WriteLine("\nReview, then apply: ss --harvest-voice --apply <entry-guid>");
+            Console.WriteLine("\nReview, then apply: prose --harvest-voice --apply <entry-guid>");
             return 0;
         }
 
@@ -124,7 +124,7 @@ public static class HarvestVoiceCli
             Console.WriteLine($"[harvest-voice] \"{r.Title}\" ({r.Score:0.#}%): {r.EditCount} edits + {r.DirectiveCount} directives → {r.Proposals.Count} proposals.\n");
             PrintProposals(r.Proposals);
             if (r.Proposals.Count > 0)
-                Console.WriteLine("\nReview, then apply: ss --harvest-voice --apply <entry-guid>");
+                Console.WriteLine("\nReview, then apply: prose --harvest-voice --apply <entry-guid>");
             return 0;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[harvest-voice] {ex.Message}"); return 1; }

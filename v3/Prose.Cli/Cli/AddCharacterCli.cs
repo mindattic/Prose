@@ -10,8 +10,8 @@ namespace Prose.Cli;
 /// shape used by engine/data/people/*.json — CharacterRepository.Save routes it
 /// through CharacterMapper into the fully relational Characters tables.
 ///
-///   ss --add-character --file path.json
-///   ss --add-character --dir path/to/folder      (one CharacterData JSON file per character;
+///   prose --add-character --file path.json
+///   prose --add-character --dir path/to/folder      (one CharacterData JSON file per character;
 ///                                                  imports all *.json in one process — avoids
 ///                                                  a separate dotnet host startup per character
 ///                                                  for bulk seeding)
@@ -27,7 +27,7 @@ public static class AddCharacterCli
         var file = ArgValue(args, "--file");
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
-            Console.Error.WriteLine("usage: ss --add-character --file path.json | --dir path/to/folder");
+            Console.Error.WriteLine("usage: prose --add-character --file path.json | --dir path/to/folder");
             return 1;
         }
 

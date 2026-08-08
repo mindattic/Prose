@@ -21,7 +21,7 @@ public record PostBeatValidationResult(
 ///
 ///   FullValidateAsync  — prose + gear carry + (opt) behavior invariants.
 ///     Called explicitly via the <c>validate_beat</c> MCP tool or
-///     <c>ss --validate-beat</c> CLI when the writer wants a complete audit.
+///     <c>prose --validate-beat</c> CLI when the writer wants a complete audit.
 ///
 /// All methods swallow exceptions — quality checks are enhancers, not blockers.
 /// </summary>

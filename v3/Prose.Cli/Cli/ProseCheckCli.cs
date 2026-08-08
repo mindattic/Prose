@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --prose-check (--slug &lt;nodeSlug&gt; | --id &lt;beatId&gt;) [--all] [--json]
+/// prose --prose-check (--slug &lt;nodeSlug&gt; | --id &lt;beatId&gt;) [--all] [--json]
 /// Runs the deterministic ProsePatternGuard linter on a node's beats or a single beat.
 /// --all includes Low-severity sentence-length checks (default: shows Cliché + PseudoProfound + OnTheNose + ItalicisedDialogue only)
 /// </summary>
@@ -32,7 +32,7 @@ public static class ProseCheckCli
 
         if (nodeSlug == null && beatId == null)
         {
-            Console.Error.WriteLine("Usage: ss --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]");
+            Console.Error.WriteLine("Usage: prose --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]");
             return 1;
         }
 

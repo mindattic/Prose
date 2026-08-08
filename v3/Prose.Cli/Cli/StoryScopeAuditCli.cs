@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --storyscope-audit --slug &lt;nodeSlug&gt; [--json]
+/// prose --storyscope-audit --slug &lt;nodeSlug&gt; [--json]
 ///
 /// Verifies a story against the measurable structural tells of AI fiction
 /// (StoryScope, arXiv 2604.03136). Deterministic checks (blueprint drift,
@@ -37,7 +37,7 @@ public static class StoryScopeAuditCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --storyscope-audit --slug <nodeSlug> [--cliches-only] [--json]");
+            Console.Error.WriteLine("Usage: prose --storyscope-audit --slug <nodeSlug> [--cliches-only] [--json]");
             return 2;
         }
 
@@ -110,7 +110,7 @@ public static class StoryScopeAuditCli
 
         // ── Human-readable output, grouped by severity ─────────────────────────
 
-        Console.WriteLine($"Blueprint: {(report.HasBlueprint ? "present" : "MISSING — run ss --generate-blueprint")}");
+        Console.WriteLine($"Blueprint: {(report.HasBlueprint ? "present" : "MISSING — run prose --generate-blueprint")}");
         Console.WriteLine($"Beats:     {report.BeatCount}");
         Console.WriteLine();
 

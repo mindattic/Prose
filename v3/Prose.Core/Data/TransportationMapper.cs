@@ -235,7 +235,7 @@ public static class TransportationMapper
     /// blob → TransportationData → persist. Returns the number of transportations written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-transportation-relational</c>.
+    /// Run once via <c>prose --rebuild-transportation-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

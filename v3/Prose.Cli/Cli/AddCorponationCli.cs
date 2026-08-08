@@ -13,7 +13,7 @@ namespace Prose.Cli;
 /// UPSERT semantics: include the existing 32-char "id" to UPDATE that corp;
 /// omit it (or leave blank) to CREATE a new one with a fresh UUIDv7.
 ///
-///   ss --add-corponation --file path.json
+///   prose --add-corponation --file path.json
 /// </summary>
 public static class AddCorponationCli
 {
@@ -22,7 +22,7 @@ public static class AddCorponationCli
         var file = ArgValue(args, "--file");
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
-            Console.Error.WriteLine("usage: ss --add-corponation --file path.json");
+            Console.Error.WriteLine("usage: prose --add-corponation --file path.json");
             return 1;
         }
 

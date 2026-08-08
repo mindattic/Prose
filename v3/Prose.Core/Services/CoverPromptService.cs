@@ -19,7 +19,7 @@ namespace Prose.Core.Services;
 /// leaving blank space for a title to be composited on afterward. Modern image models
 /// (gpt-image-1 in particular) render short display text reliably enough to make this
 /// the better default; CoverTitleCompositorService remains available as a manual
-/// fallback (<c>ss --composite-cover-title</c>) for renders where the text comes out
+/// fallback (<c>prose --composite-cover-title</c>) for renders where the text comes out
 /// garbled.
 ///
 /// The prompt is deliberately kept commercial-cover-safe (atmospheric/suggestive,

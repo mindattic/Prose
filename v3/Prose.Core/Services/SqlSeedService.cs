@@ -18,7 +18,7 @@ namespace Prose.Core.Services;
 ///   seeds expect (<c>QUOTED_IDENTIFIER ON</c>, <c>ANSI_NULLS ON</c>);</item>
 /// <item>writes a <c>SeedRuns</c> row on success so the next call is a no-op.</item>
 /// </list>
-/// CLI surface: <c>ss --seed &lt;name&gt;</c> (see <c>SeedCli</c>).
+/// CLI surface: <c>prose --seed &lt;name&gt;</c> (see <c>SeedCli</c>).
 /// </summary>
 public class SqlSeedService
 {

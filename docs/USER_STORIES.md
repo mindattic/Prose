@@ -1,4 +1,4 @@
-﻿---
+---
 codex: 1
 project: Prose
 code: SS
@@ -20,7 +20,7 @@ updated: 2026-06-25
   `InterfaceRegistrationTests`, `CanonEngineTests.CoreAssembly_HasNoFacetTypes`.)*
 - **SS-US-A2 ✅** As the engine, I expose ~28 canon entity types with tolerant JSON converters so
   malformed canon never crashes a load. *(verified by `ModelSerializationTests`,
-  `JsonDefaultsTests`; CLI `ss --coverage` lists 28 types.)*
+  `JsonDefaultsTests`; CLI `prose --coverage` lists 28 types.)*
 - **SS-US-A3 ✅** As the engine, I materialize full-character reads from `CharacterReadModels` so a
   deep read is one column, not a 50–80 s join. *(verified by `CharacterReadModelTests`.)*
 - **SS-US-A4 ✅** As the engine, I keep the Beat→Node model as the single format with no nested
@@ -54,20 +54,20 @@ updated: 2026-06-25
 - **SS-US-C2 ✅** As the engine, `BeatPromptBuilder` injects canon facts + voice rules into every
   beat prompt. *(verified by `BeatPromptBuilderTests`.)*
 - **SS-US-C3 ✅** As the engine, the Beat Doctrine + house voice are codified in the DB and emitted
-  to every prompt (`--seed-voice-rules` is idempotent). *(verified by CLI `ss --seed-voice-rules`
+  to every prompt (`--seed-voice-rules` is idempotent). *(verified by CLI `prose --seed-voice-rules`
   +9/+9/+4 idempotent; `CombatSceneWriterTests`, `StoryMethodologyServiceTests`.)*
 
 ## Epic D — Interconnect, validation & self-correction
 
 - **SS-US-D1 ✅** As the engine, `CanonRetrievalService` pulls relevant canon across **all** types
   into generation. *(verified by `ServiceInterconnectionTests`, `SemanticIndexServiceTests`; CLI
-  `ss --canon-retrieve` surfaced apparel/weapon/document.)*
+  `prose --canon-retrieve` surfaced apparel/weapon/document.)*
 - **SS-US-D2 ✅** As the engine, embedding lookups degrade gracefully when the index is cold.
   *(verified by `EmbeddingFallbackTests`.)*
 - **SS-US-D3 ✅** As the engine, a contradiction sweep raises approval-gated `CANON-CONTRADICTION`
   findings (and optional REWRITE proposals) without auto-writing. *(verified by `CanonEngineTests`
   parse/chunk/severity: `Parse_ValidArray_MapsFields`, `Chunk_SplitsOnParagraphsUnderBudget_AndCoversAll`,
-  `ParseSeverity_MapsKnown_DefaultsToMedium`; CLI `ss --check-canon [--fix]`.)*
+  `ParseSeverity_MapsKnown_DefaultsToMedium`; CLI `prose --check-canon [--fix]`.)*
 - **SS-US-D4 ✅** As the engine, continuity extraction resolves any entity type via the universal
   `Entities` table (F2). *(verified by `CanonEngineTests.RuleTargets_AllMapToKnownStores`,
   `NormalizeTarget_*`; `WorldConsistencyServiceTests` filtered subset.)*
@@ -78,13 +78,13 @@ updated: 2026-06-25
 
 - **SS-US-E1 ✅** As the engine, I mine winning edits from temporal history into a `VoiceChangeLog`
   (propose-then-approve). *(verified by `CanonEngineTests.FirstSentence_*`, `AddDistinct_*`,
-  `ExtractJsonArray_*`; CLI `ss --harvest-voice` mined 16 edits on "Sunset Clause".)*
+  `ExtractJsonArray_*`; CLI `prose --harvest-voice` mined 16 edits on "Sunset Clause".)*
 - **SS-US-E2 ✅** As the engine, an `<80→≥80` review crossing auto-raises a VOICE-HARVEST finding.
   *(verified by `CanonEngineTests` coverage/parse helpers; review path exercised via CLI.)*
 
 ## Epic F — Coverage, eradication & observability
 
-- **SS-US-F1 ✅** As the operator, `ss --coverage` shows a per-type reachability matrix.
+- **SS-US-F1 ✅** As the operator, `prose --coverage` shows a per-type reachability matrix.
   *(verified by `CanonEngineTests.TypeCoverage_ComputesPctAndMissing`,
   `TypeCoverage_ZeroTotal_NoDivideByZero`.)*
 - **SS-US-F2 ✅** As the engine, the Facet system is 100% eradicated. *(verified by
@@ -180,15 +180,15 @@ updated: 2026-06-25
 - **SS-US-U8 ✅** As the author, a 4th universe (**HORROR**, contained-horror fiction, anthology-
   shaped — no shared continuity requirement across books) is seeded and craft/world-doctrine docs
   (`docs/HORROR.md`, `docs/universes/HORROR.md`) are authored and synced to `MarkdownFiles`.
-  *(verified by `add_universe_horror_20260803.sql`; `ss --universe list` showing `horror` active;
+  *(verified by `add_universe_horror_20260803.sql`; `prose --universe list` showing `horror` active;
   `codex doctor` PASS after digest.)*
 - **SS-US-U9 ✅** As the author, HORROR's flagship standalone **QRT** (5 chapters / 22 beats, an
   amateur-radio identity-horror piece) ships end-to-end: brief → entities (6, incl. a grouped
   family entity) → BookNode + ChapterNodes → hand-authored `NodeBibleSections` → structural
   blueprint (retrofit) → prose → DCM backfill → logic sweep (1 BLOCKER + 1 MODERATE found and
   fixed) → Reader-Proxy QA (comprehension 0 defects, craft checklist 0 findings) → export.
-  *(verified by `ss --storyscope-audit` CLEAN; `ss --reader-qa` 5/5 chapters clean;
-  `ss --craft-checklist` 0 findings; exported artifacts at `QRT V1.{docx,epub,pdf,txt}`.)*
+  *(verified by `prose --storyscope-audit` CLEAN; `prose --reader-qa` 5/5 chapters clean;
+  `prose --craft-checklist` 0 findings; exported artifacts at `QRT V1.{docx,epub,pdf,txt}`.)*
 
 ## Epic H — GLMZ Books in progress
 
@@ -284,14 +284,14 @@ updated: 2026-06-25
   - **H5d ✅** All 14 chapters drafted (50 beats total, DEEP register, direct SQL insert); manuscript exported to `R:\Desktop\EPub\MindAttic\GLMZ\Underclan\Underclan V1.txt`. *(2026-06-25)*
   - **H5e ✅** Standalone review: 83.2/100 (20-reader panel, StrandReviewService, 2026-06-25). Target ≥82% met.
 
-- **SS-US-H6 ✅** As the author, *Magenta & Gunmetal* (MxG) is the quintessential GLMZ "run" story: five freelancers — Rook (planner), Lace (social engineer), Boiler (demo), Vox (netrunner), Scout (QCE rider) — accept a corporate extraction job against Axiom BioNanics, discover the target hired them first via a cutout, survive a wet-squad pursuit, and end on a storm-lashed Lake Platform in a True Lies / Die Hard finale where Rook jumps off the deck onto a strafing VTOL. Full arc, locks, register (HEIST), and 14-beat spine in [docs/nodes/MxG.md](nodes/MxG.md). *Acceptance: strand seeded + all entities seeded before prose + 14-beat spine drafted (Sonnet→Opus) + standalone review ≥82%.* *(verified 2026-06-25 via CLI `ss --review-strand`; standalone 86.7%; re-verified 2026-06-27 at **87.1%** after the Character Doctrine behavior pass — dup beats removed, crew rendered as people per [docs/CHARACTER.md](CHARACTER.md))*
+- **SS-US-H6 ✅** As the author, *Magenta & Gunmetal* (MxG) is the quintessential GLMZ "run" story: five freelancers — Rook (planner), Lace (social engineer), Boiler (demo), Vox (netrunner), Scout (QCE rider) — accept a corporate extraction job against Axiom BioNanics, discover the target hired them first via a cutout, survive a wet-squad pursuit, and end on a storm-lashed Lake Platform in a True Lies / Die Hard finale where Rook jumps off the deck onto a strafing VTOL. Full arc, locks, register (HEIST), and 14-beat spine in [docs/nodes/MxG.md](nodes/MxG.md). *Acceptance: strand seeded + all entities seeded before prose + 14-beat spine drafted (Sonnet→Opus) + standalone review ≥82%.* *(verified 2026-06-25 via CLI `prose --review-strand`; standalone 86.7%; re-verified 2026-06-27 at **87.1%** after the Character Doctrine behavior pass — dup beats removed, crew rendered as people per [docs/CHARACTER.md](CHARACTER.md))*
   - **H6a ✅** Docs: MxG strand bible (docs/nodes/MxG.md) + this entry; `codex doctor` PASS. *(2026-06-25)*
   - **H6b ✅** Entities seeded: Inkeri Saarinen `019f00a4061f`, Blessing Agwu `019f00a4408b`, Mikkeli Väinämöinen `019f00a48148`, Tem Okafor `019f00a4cbe2`, Remi Diallo `019f00a51d0a`, Halina Soraya `019f00a571cc` (renamed from "Nadia Vasquez-Park" 2026-06-27 to de-collide with Street Meat's Dr. Nadia Park), Gault `019f00a597aa`; QCE tech `019f00a62820`; PEREGRINE faction `019f00a5c8f7`; Lake Platform `019f00a5f57e`. *(2026-06-25)*
   - **H6c ✅** Strand `MxG` created: id=`019f00a6-5370-7123-843a-7a4831c66e10`, slug=`magenta-gunmetal-019f00a6`. *(2026-06-25)*
   - **H6d ✅** 14 beats drafted Sonnet→Opus, reflowed; surgical passes on beats 4, 6, 7, 9, 11, 13, 14 (PEREGRINE two-cell, exposition cut, Gault teeth, Rook emotional texture, rule plant+break); second pass on beats 11+13 (Gault overlong-absolution cut → body-first ambient moment; Beat 13 rule-break made conscious from inside Rook's POV); exported: *Magenta & Gunmetal V5.docx/epub/pdf/txt* (`R:\Desktop\EPub\MindAttic\GLMZ\Magenta & Gunmetal\`). *(2026-06-25/26)*
   - **H6e ✅** Standalone review 86.6/100 (20-ballot panel, SD 1.98, CI ±0.87, all 20 in 81–88 band, 2026-06-26). Target ≥82% met. HEIST register exemplars harvested. Score at taste-fork ceiling: procedural vs character-voice reader split is load-bearing, not fixable. *(2026-06-25/26)*
 
-- **SS-US-H7 ✅** As the author, **The Rook Trilogy** is a complete, self-rhyming heist saga that *revels in cyberpunk cliché* (runner-vs-corp, Shadowrun/CP-Red/Akira) for readers who want the same story every time — three strands sharing cast, themes, and one converging arc, with the finale paying off clues planted in the first two. Titles descend surface→decay→body: **Magenta & Gunmetal → Neon & Rust → Crimson & Chrome**. The crew were unwitting contractors to their own ending (Helix's body-bank harvest of registered Reads); Rook's count finally comes out in names. *Acceptance: all three strands seeded + entities + 14-beat spines + Sonnet→Opus + standalone review ≥87 each + clue-plants in MxG/NxR.* *(verified 2026-06-27 via `ss --review-strand`: MxG 87.1, NxR 87.7, CxC 87.6 — all ≥87)*
+- **SS-US-H7 ✅** As the author, **The Rook Trilogy** is a complete, self-rhyming heist saga that *revels in cyberpunk cliché* (runner-vs-corp, Shadowrun/CP-Red/Akira) for readers who want the same story every time — three strands sharing cast, themes, and one converging arc, with the finale paying off clues planted in the first two. Titles descend surface→decay→body: **Magenta & Gunmetal → Neon & Rust → Crimson & Chrome**. The crew were unwitting contractors to their own ending (Helix's body-bank harvest of registered Reads); Rook's count finally comes out in names. *Acceptance: all three strands seeded + entities + 14-beat spines + Sonnet→Opus + standalone review ≥87 each + clue-plants in MxG/NxR.* *(verified 2026-06-27 via `prose --review-strand`: MxG 87.1, NxR 87.7, CxC 87.6 — all ≥87)*
   - **H7a ✅** Character Doctrine ([docs/CHARACTER.md](CHARACTER.md), SS-CHAR) authored + proven as the score lever (86→87.1 on MxG); Action Figure Test + behavioral-consistency system wired to `CharacterBehavioralRules`. *(2026-06-27)*
   - **H7b ✅** CxC (`marrow-chrome-019f0968`) created; entities seeded (Anneke Oyelowo, The Marrow, Sefi Okonkwo; Helix Biosystems); SS-A26 amendment; 14 beats Sonnet→Opus + AntagonistCost structural beat; review **87.6**. *(2026-06-27)*
   - **H7c ✅** Trilogy seam refactored into MxG (#4745 acquisition-for-a-buyer) + NxR (#4841 relocation-as-harvest) — the diligent-reader payoff planted. Rook redesigned (Lightning leader, rotating cast, no-repeat rule dropped, knows Kyle); Nadia Vasquez-Park → Halina Soraya. *(2026-06-27)*
@@ -374,8 +374,8 @@ updated: 2026-06-25
   all entities seeded before prose + StoryNode + 4 ChapterNodes + 14-beat spine + structural
   blueprint before prose + all beats via ProseWriterRouter (Sonnet→Opus) + logic sweep BLOCKER-free +
   storyscope-audit clean + plant-audit clean + exported.* *(built end-to-end 2026-07-18 via CLI: 14 beats via
-  `ss --expand-beat --model claude-sonnet-4-6`, blueprint via `ss --generate-blueprint`, logic sweep
-  BLOCKER-free, `ss --export-node` → V1 docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\High Five\`;
+  `prose --expand-beat --model claude-sonnet-4-6`, blueprint via `prose --generate-blueprint`, logic sweep
+  BLOCKER-free, `prose --export-node` → V1 docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\High Five\`;
   evidence in H11a–g below)*
   - **H11a ✅** Docs: HFV brief (10/10, `docs/planning/HFV-brief.md`) + hand-authored node bible (`Nodes.NodeBible`, 11.3k chars) written; series roster + character ledger updated; `codex doctor` PASS. *(2026-07-18)*
   - **H11b ✅** Entities seeded before prose: Reza Solano (`reza-solano`), Tavi Jeong (`tavi-jeong`),
@@ -428,9 +428,9 @@ updated: 2026-06-25
   4 ChapterNodes + 14-beat dual-POV spine + hand-authored bible + pre-prose blueprint + all beats via
   ProseWriterRouter + logic sweep BLOCKER-free + storyscope-audit clean + exported.* *(built end-to-end
   2026-07-19 via CLI: node `the-fall-down-019f78f4`; 14 beats/4 ch (~6.5k words) drafted
-  `ss --expand-beat --model claude-sonnet-4-6`; continuity fixes (Rafi age, twins-as-pistols, Reza
-  chrome, Blister 9, neuretics canon); `ss --storyscope-audit` **CLEAN** (0 blocking, 0 moderate);
-  `ss --export-node` → docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\The Fall Down\`)*
+  `prose --expand-beat --model claude-sonnet-4-6`; continuity fixes (Rafi age, twins-as-pistols, Reza
+  chrome, Blister 9, neuretics canon); `prose --storyscope-audit` **CLEAN** (0 blocking, 0 moderate);
+  `prose --export-node` → docx/epub/pdf/txt at `R:\Desktop\EPub\MindAttic\GLMZ\The Fall Down\`)*
   - **H12a ✅** Docs: OPPN brief (10/10) + hand-authored node bible; series roster updated (diptych Bk 2); `codex doctor` PASS.
   - **H12b ✅** Entities seeded: Rafi Sarkissian, Halvard Onwe (characters), Ashgrave Spire (place); reused Reza/Tavi/Coeli/Auda Vane/Scraps + AshgraveMaterials/Axiom.
   - **H12c ✅** StoryNode `the-fall-down-019f78f4` (OPPN) + 4 ChapterNodes + 14-beat dual-POV spine.
@@ -447,7 +447,7 @@ updated: 2026-06-25
 1. **SS-US-F1-prod ⬜** Ship present work to prod (run `drop_facet_system_*` +
    `create_voice_change_log_*` migrations; `--seed-voice-rules` + `--coverage --backfill` in prod).
    *Acceptance: prod schema has no facet remnants, has `VoiceChangeLog`, `--coverage` clean.* (was F1)
-2. **SS-US-F6 ✅** Coverage → action: `ss --coverage --backfill` reembeds idempotently.
+2. **SS-US-F6 ✅** Coverage → action: `prose --coverage --backfill` reembeds idempotently.
    *✅ 100% coverage (11,588/11,588; motif 0→100%). Entity↔strand appearance tracking wired:
    `CoverageService.TypeCoverage.InStrandCount` joins `EntityStateEvents` on `BeatGuid IS NOT NULL`;
    `/coverage` table shows "In Strands" column; build clean 0 errors; 2026-06-21.*
@@ -461,7 +461,7 @@ updated: 2026-06-25
    with expandable parents in `Strands.razor`; "series" + "collection" added to kind dropdown;
    `DocxExportService.ExportStrandAsync` calls `GetOrderedBeatsAsync` which recursively stitches all
    `ParentStrandId` children; build clean 0 errors; 2026-06-21.)
-5. **SS-US-F8 ✅** Autonomous corpus loop: `ss --run-corpus --count N` runs
+5. **SS-US-F8 ✅** Autonomous corpus loop: `prose --run-corpus --count N` runs
    generate→validate(--fix)→review→harvest across N seeds, resume-safe, pausing only for approvals.
    *(see SS-US-L2)*
 6. **SS-US-Fs2 ✅** Species as a first-class type: `Species` lookup entity + `/species` dictionary
@@ -505,10 +505,10 @@ updated: 2026-06-25
 - **SS-US-I4 ✅** As the engine, when a strand's score crosses from `<80` to `≥80`, a
   `VOICE-HARVEST` finding is auto-raised so the flywheel fires without manual prompting.
   *(verified by `CanonEngineTests` coverage/parse helpers; end-to-end exercised via
-  `ss --review-strand`.)*
+  `prose --review-strand`.)*
 
-- **SS-US-I5 ✅** As the operator, I can close the coverage loop: `ss --coverage` identifies a
-  dead type, I seed entities of that type, `ss --coverage --backfill` re-embeds them, and the next
+- **SS-US-I5 ✅** As the operator, I can close the coverage loop: `prose --coverage` identifies a
+  dead type, I seed entities of that type, `prose --coverage --backfill` re-embeds them, and the next
   run shows >0% for that type. *✅ 100% coverage on full backfill (11,588/11,588). Entity↔strand
   appearance tracking wired. (verified by `CoverageService` second SQL query joining
   `EntityStateEvents` via `BeatGuid IS NOT NULL`; `TypeCoverage.InStrandCount` + `StrandPct`
@@ -517,9 +517,9 @@ updated: 2026-06-25
 - **SS-US-I6 ✅** As the engine, `SemanticFidelityService` compares the prose embedding centroid
   to the seed embedding and raises a `SEMANTIC-DRIFT` finding if the prose has drifted from its
   seed intent. *(verified by `SemanticFidelityServiceTests`; MCP tool `check_semantic_fidelity`
-  wired; `ss --check-fidelity`.)*
+  wired; `prose --check-fidelity`.)*
 
-- **SS-US-I7 ✅** As the author, when I run `ss --diagnose-strand --slug <slug>`, the 12 parallel
+- **SS-US-I7 ✅** As the author, when I run `prose --diagnose-strand --slug <slug>`, the 12 parallel
   pre-flight LLM checks from `StructuralDiagnosticService` complete before any review panel fires,
   and any critical failure blocks the review rather than letting it score broken prose.
   *(verified by `DiagnoseStrandCli` + `StructuralDiagnosticService` registered in DI;
@@ -528,7 +528,7 @@ updated: 2026-06-25
 
 - **SS-US-I8 ⬜** As the operator, the flywheel is provably spinning: batch K+1 mean `Strand.Score`
   is higher than batch K mean after at least N=5 voice-harvest approval cycles. *Acceptance:
-  `ss --score-trend --batches 2` prints the before/after mean + delta; delta > 0.* (This is
+  `prose --score-trend --batches 2` prints the before/after mean + delta; delta > 0.* (This is
   SS-US-F10 reframed as a concrete acceptance test.)
 
 ## Epic J — Quality Pipeline Surfaces {#epic-j}
@@ -564,13 +564,13 @@ updated: 2026-06-25
   2026-06-21.)*
 
 - **SS-US-J5 ✅** As an author, the `/strand` workbench exposes a "Run Diagnostics" button that
-  calls `ss --diagnose-strand` and surfaces the 12 pre-flight checks as an inline report (pass /
+  calls `prose --diagnose-strand` and surfaces the 12 pre-flight checks as an inline report (pass /
   warn / fail per check) so I can fix structural problems before spending review-panel tokens.
   *(verified by `RunDiagnosticsAsync` + `diagResult: StructuralDiagnosisResult?` in `Strand.razor`;
   inline 12-check grid; button colour indicates pass/warn/fail; blocking-failure banner fires when
   `HasBlockingFailures`; `@inject StructuralDiagnosticService DiagSvc`; 2026-06-21.)*
 
-- **SS-US-J6 ✅** As an operator, `ss --score-trend [--batches N]` prints the rolling mean score
+- **SS-US-J6 ✅** As an operator, `prose --score-trend [--batches N]` prints the rolling mean score
   per chronological batch of strands so the flywheel's direction is visible from the CLI.
   *(verified by `ScoreTrendCli` + `--score-trend` wired in `Program.cs`; prints batch number /
   strand count / mean score / Δ vs prior batch; exit 0 = positive trend, 1 = declining, 2 = not
@@ -633,7 +633,7 @@ updated: 2026-06-25
   `--export-node` via `ExportNodeCli` (renamed from `--publish`/`PublishCli` — local file rendering only, no KDP API integration); each is independently exercised; build clean 0 errors;
   2026-06-21.)*
 
-- **SS-US-L2 ✅** As an operator, `ss --run-corpus --count N` runs the full loop
+- **SS-US-L2 ✅** As an operator, `prose --run-corpus --count N` runs the full loop
   (generate → validate → review → harvest) across N seeds, resume-safe, pausing only for author
   approvals. *Acceptance: the command generates N strands; each auto-validates; findings are batched
   for author review; harvests fire on ≥80% crossings; the command resumes from the last completed
@@ -649,7 +649,7 @@ updated: 2026-06-25
   that stitches all its `kind=collection` and `kind=chapter` children in reading order.
   *(verified by `StrandWorkbenchService.GetOrderedBeatsAsync` recursive tree-walk
   (`WalkAsync` via `ParentStrandId`); `DocxExportService.ExportStrandAsync` calls it for any strandId;
-  `ss --export-node --slug <series-slug>` already stitches all children via existing code; 2026-06-21.)*
+  `prose --export-node --slug <series-slug>` already stitches all children via existing code; 2026-06-21.)*
 
 - **SS-US-L4 ✅** As an author, the `WorldTickService` can be enabled and produces at least one
   `EntityStateEvent` per tick per active character without manual intervention (SS-US-F9: Living
@@ -686,7 +686,7 @@ updated: 2026-06-25
 > is advisory — a side-car to the 82/85 reader-panel headline — with a blocking advisory cap at the
 > Deep/publish gate for the two most diagnostic dimensions. See [RFC 0010](rfc/0010-emotional-intelligence-examination.md).
 
-- **SS-US-M1 ⬜** As an author, `ss --examine-emotion --slug <slug> --effort deep` runs 8 dimension
+- **SS-US-M1 ⬜** As an author, `prose --examine-emotion --slug <slug> --effort deep` runs 8 dimension
   checks + a per-beat emotional curve + character ledger extraction, returning a 0–100
   `EmotionalDepthScore`, per-dimension 0–4 scores with strongest/weakest evidence and a beat-scoped
   craft fix, and a beat-by-beat depth curve. *(acceptance: `ExamineEmotionCli` dispatched from
@@ -697,11 +697,11 @@ updated: 2026-06-25
   envelope as the CLI. *(acceptance: `[McpServerTool]` in `Tools.Quality.cs`; GUID-or-slug
   resolution; same JSON envelope.)*
 
-- **SS-US-M3 ⬜** As an author, `ss --migrate-sql --emotional-examination` creates 4 tables +
+- **SS-US-M3 ⬜** As an author, `prose --migrate-sql --emotional-examination` creates 4 tables +
   `Beat.EmotionalScore` column idempotently. *(acceptance: re-runnable, exits 0 on 2nd run; all 4
   tables exist; `Beat.EmotionalScore` float? column on the temporal Beats table.)*
 
-- **SS-US-M4 ⬜** As an author, `ss --findings` surfaces `EMOTIONAL-DEPTH` findings from blocking
+- **SS-US-M4 ⬜** As an author, `prose --findings` surfaces `EMOTIONAL-DEPTH` findings from blocking
   dimensions beside structural ones. *(acceptance: `FindingsService.Upsert` with
   `summary: "EMOTIONAL-DEPTH [Name] beat N: fix"`; visible at `/findings`.)*
 
@@ -777,7 +777,7 @@ updated: 2026-06-25
   `--list-stories` etc.; routes `/node/{slug}` + aliases `/story`, `/strand`. Evidence: unit
   suite 1,250 passed / 8 pre-existing failures (reproduced on HEAD with only the Media fix
   applied; unrelated) — the refactor also fixed the suite-wide SQLite breakage from
-  `MediaItemTypeConfiguration` (628 → 8 failures). CLI smoke: `ss --list-stories` reads the
+  `MediaItemTypeConfiguration` (628 → 8 failures). CLI smoke: `prose --list-stories` reads the
   migrated DB. Local backup `backups/preNodeHierarchy_20260703.bak`.
 - **2026-06-15 — universe segregation SHIPPED ([RFC 0006](rfc/0006-universe-segregation.md); SS-A4).**
   Closed every cross-over surface beyond canon rows: config (`Settings`/`Species` scoped + SHARED
@@ -809,7 +809,7 @@ updated: 2026-06-25
   none were promoted to ✅ without a named test or recorded CLI/scan evidence. Items the source
   marked 🟡/⬜ remain so here.
 - **Original spec (audit log) — F6/SS-US-F6.** Source `ARCHITECTURE.md` F6: *"Coverage → action:
-  `ss --coverage --backfill` runs idempotent `ReembedCorpusAsync` — 100% coverage (11,588/11,588;
+  `prose --coverage --backfill` runs idempotent `ReembedCorpusAsync` — 100% coverage (11,588/11,588;
   motif 0→100%). Residual: entity↔strand appearance tracking still to add."* Kept 🟡 (residual
   open).
 - **Original spec (audit log) — Fs1.** Source `ARCHITECTURE.md` Fs1 (✅): *"One format: everything

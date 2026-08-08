@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --coordinate --slug &lt;slug&gt; [--json &lt;path&gt;] [--no-stamp]
+/// prose --coordinate --slug &lt;slug&gt; [--json &lt;path&gt;] [--no-stamp]
 ///
 /// Full-coverage bible↔blueprint↔beat coordination. Correlates every enabled beat's
 /// meaning (bible), construction (blueprint), and prose (DB); emits a JSON report and
@@ -24,7 +24,7 @@ public static class CoordinateCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --coordinate --slug <slug> [--json <path>] [--no-stamp]");
+            Console.Error.WriteLine("Usage: prose --coordinate --slug <slug> [--json <path>] [--no-stamp]");
             return 2;
         }
 

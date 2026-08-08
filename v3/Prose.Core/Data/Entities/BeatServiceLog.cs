@@ -2,7 +2,7 @@ namespace Prose.Core.Data.Entities;
 
 /// <summary>
 /// Records which prose services were applicable and active for a beat write.
-/// Populated by ProseWriterRouter. Use ss --workflow-status to inspect coverage gaps.
+/// Populated by ProseWriterRouter. Use prose --workflow-status to inspect coverage gaps.
 /// </summary>
 public class BeatServiceLog
 {

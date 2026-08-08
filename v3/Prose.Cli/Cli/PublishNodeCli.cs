@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --publish-book</c> — stitch an existing node's recorded beats into
+/// <c>prose --publish-book</c> — stitch an existing node's recorded beats into
 /// one combined file (WAV → final MP3), drop a friendly copy in the configured
 /// publish output directory (Desktop fallback), and record the 1:M publication run
 /// plus its process-event ledger. Resolves the node by id (full or prefix)
@@ -35,7 +35,7 @@ public static class PublishNodeCli
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[publish-book] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: ss --publish-book (--id <guid|prefix> | --slug <slug>)");
+            Console.Error.WriteLine("Usage: prose --publish-book (--id <guid|prefix> | --slug <slug>)");
             return 1;
         }
 

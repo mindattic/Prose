@@ -217,7 +217,7 @@ public sealed class BeatChecklistGateService(
         var craftSection = await db.CanonDocumentSections.AsNoTracking()
             .Where(s => s.Document!.DocumentType == "CraftGuide" && s.SectionKey == "SS-CRAFT-8")
             .Select(s => s.Content).FirstOrDefaultAsync(ct)
-            ?? throw new InvalidOperationException("CRAFT.md §8 not found in CanonDocumentSections — run ss --migrate-canon-docs --type CraftGuide.");
+            ?? throw new InvalidOperationException("CRAFT.md §8 not found in CanonDocumentSections — run prose --migrate-canon-docs --type CraftGuide.");
 
         var donts = CraftRuleAuditService.ParseMannerisms(craftSection)
             .Select(m => (Key: $"craft_{m.Number}", m.Title, Desc: m.Description)).ToList();

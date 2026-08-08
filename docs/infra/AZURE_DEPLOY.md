@@ -12,16 +12,16 @@ Deploying Prose (a .NET 10 Blazor Server app) to Azure App Service against an Az
         ┌──────────────────────────┐
         │ GitHub Actions           │
         │ build → publish artifact │
-        │       → deploy           │ ← uses publish profile secret
+        │       → deploy           │ ← OIDC federated identity
         └────────────┬─────────────┘
                      │
                      ▼
         ┌──────────────────────────┐         ┌──────────────────────────┐
         │ Azure App Service        │  AAD    │ Azure SQL Database       │
-        │ prose            ├─token──►│ Prose            │
+        │ mindattic-prose  ├─token──►│ Prose            │
         │ (system-assigned MI)     │         │ (AAD-only auth)          │
         │                          │         │                          │
-        │ env: ConnectionStrings__ │         │ User: prose      │
+        │ env: ConnectionStrings__ │         │ User: mindattic-prose    │
         │      Prose       │         │   db_datareader          │
         │      = Authentication=   │         │   db_datawriter          │
         │        Active Directory  │         └──────────────────────────┘
@@ -46,7 +46,7 @@ Deploying Prose (a .NET 10 Blazor Server app) to Azure App Service against an Az
 Azure resources you should already have:
 
 - A subscription
-- An App Service named `prose` in resource group `MyApps`
+- An App Service named `mindattic-prose` in resource group `MyApps`
 - (Optional) Existing Azure SQL Server — we'll create one if not.
 
 ---
@@ -121,7 +121,7 @@ Takes ~3–5 minutes. Watch for `"provisioningState": "Succeeded"` in the JSON o
 ### 1.5 Enable the App Service managed identity
 
 ```powershell
-az webapp identity assign --name prose --resource-group MyApps
+az webapp identity assign --name mindattic-prose --resource-group MyApps
 ```
 
 Returns a JSON blob — copy the `principalId` for later reference. This identity is what the App Service presents to the SQL database; it has no permissions yet.
@@ -143,15 +143,15 @@ It'll show a pink banner "Your IP address isn't allowed" with a one-click **Allo
 In the Portal Query Editor (or via PowerShell — see § 1.8), run:
 
 ```sql
-CREATE USER [prose] FROM EXTERNAL PROVIDER;
-ALTER ROLE db_datareader ADD MEMBER [prose];
-ALTER ROLE db_datawriter ADD MEMBER [prose];
+CREATE USER [mindattic-prose] FROM EXTERNAL PROVIDER;
+ALTER ROLE db_datareader ADD MEMBER [mindattic-prose];
+ALTER ROLE db_datawriter ADD MEMBER [mindattic-prose];
 
 -- Verify:
-SELECT name, type_desc FROM sys.database_principals WHERE name = 'prose';
+SELECT name, type_desc FROM sys.database_principals WHERE name = 'mindattic-prose';
 ```
 
-The name `[prose]` must match the App Service name exactly — Azure resolves it to the managed identity by display name. Expected result: one row showing `prose — EXTERNAL_USER`.
+The name `[mindattic-prose]` must match the App Service name exactly — Azure resolves it to the managed identity by display name. Expected result: one row showing `mindattic-prose — EXTERNAL_USER`.
 
 ### 1.8 (Alternative) GRANT via PowerShell + access token
 
@@ -164,7 +164,7 @@ $conn.ConnectionString = "Server=tcp:prose-sql.database.windows.net,1433;Databas
 $conn.AccessToken = $token
 $conn.Open()
 $cmd = $conn.CreateCommand()
-$cmd.CommandText = "CREATE USER [prose] FROM EXTERNAL PROVIDER; ALTER ROLE db_datareader ADD MEMBER [prose]; ALTER ROLE db_datawriter ADD MEMBER [prose];"
+$cmd.CommandText = "CREATE USER [mindattic-prose] FROM EXTERNAL PROVIDER; ALTER ROLE db_datareader ADD MEMBER [mindattic-prose]; ALTER ROLE db_datawriter ADD MEMBER [mindattic-prose];"
 $cmd.ExecuteNonQuery() | Out-Null
 $conn.Close()
 Write-Host "Granted."
@@ -177,7 +177,7 @@ Note the SQL is on one line. Multi-line `@"..."@` here-strings break PowerShell'
 **Use the Portal, not `az ... appsettings set` — the CLI mangles values containing spaces.** See FAQ.
 
 ```
-https://portal.azure.com/#@/resource/subscriptions/<sub-id>/resourceGroups/MyApps/providers/Microsoft.Web/sites/prose/configuration
+https://portal.azure.com/#@/resource/subscriptions/<sub-id>/resourceGroups/MyApps/providers/Microsoft.Web/sites/mindattic-prose/configuration
 ```
 
 Find `ConnectionStrings__Prose` (or **add it** if missing). Set the value to:
@@ -192,7 +192,7 @@ Click **OK** → **Apply** at top → **Continue** on the restart prompt.
 
 ```powershell
 az webapp config appsettings list `
-  --name prose --resource-group MyApps `
+  --name mindattic-prose --resource-group MyApps `
   --query "[?name=='ConnectionStrings__Prose']" `
   -o json
 ```
@@ -259,7 +259,7 @@ $conn.ConnectionString = "Server=tcp:prose-sql.database.windows.net,1433;Databas
 $conn.AccessToken = $token
 $conn.Open()
 $cmd = $conn.CreateCommand()
-$cmd.CommandText = "CREATE USER [prose] FROM EXTERNAL PROVIDER; ALTER ROLE db_datareader ADD MEMBER [prose]; ALTER ROLE db_datawriter ADD MEMBER [prose];"
+$cmd.CommandText = "CREATE USER [mindattic-prose] FROM EXTERNAL PROVIDER; ALTER ROLE db_datareader ADD MEMBER [mindattic-prose]; ALTER ROLE db_datawriter ADD MEMBER [mindattic-prose];"
 $cmd.ExecuteNonQuery() | Out-Null
 $conn.Close()
 ```
@@ -323,26 +323,33 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
         with: { dotnet-version: '10.x' }
-      - run: dotnet restore v3/Prose.Blazor/Prose.Blazor.csproj
-      - run: dotnet publish v3/Prose.Blazor/Prose.Blazor.csproj -c Release -o publish --no-restore
+      - run: dotnet restore v3/Prose.Codex/Prose.Codex.csproj
+      - run: dotnet publish v3/Prose.Codex/Prose.Codex.csproj -c Release -o publish --no-restore
       - uses: actions/upload-artifact@v4
         with: { name: prose-app, path: publish/ }
 
   deploy:
     runs-on: windows-latest
     needs: build
+    permissions: { id-token: write, contents: read }
     steps:
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - uses: actions/download-artifact@v4
         with: { name: prose-app, path: publish/ }
       - uses: azure/webapps-deploy@v3
         with:
-          app-name: prose
+          app-name: mindattic-prose
           slot-name: Production
           package: publish/
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
 ```
 
-The `AZURE_WEBAPP_PUBLISH_PROFILE` secret comes from the App Service's "Get publish profile" download in the portal.
+No `AZURE_WEBAPP_PUBLISH_PROFILE` secret needed — the deploy job logs in via the same OIDC
+federated identity as the migrate job (the `prose-github` SP needs `Website Contributor` scoped
+to the App Service; granted once via `az role assignment create`).
 
 ### 3.3 Push and watch
 
@@ -352,12 +359,12 @@ git push
 gh run watch
 ```
 
-When both jobs show ✓, the new code is on `prose.azurewebsites.net`.
+When both jobs show ✓, the new code is on `mindattic-prose.azurewebsites.net`.
 
 ### 3.4 Verify the site
 
 ```
-https://prose.azurewebsites.net/
+https://mindattic-prose.azurewebsites.net/
 ```
 
 First request after a deploy: ~20–40 sec cold start (App Service spin-up + serverless SQL wake-from-pause). Subsequent requests are fast.
@@ -431,8 +438,8 @@ az appservice plan list --resource-group MyApps --query "[].name" -o tsv
 
 # Bump the SKU + enable AlwaysOn + restart
 az appservice plan update --name <plan-name> --resource-group MyApps --sku B1
-az webapp config set --name prose --resource-group MyApps --always-on true
-az webapp restart --name prose --resource-group MyApps
+az webapp config set --name mindattic-prose --resource-group MyApps --always-on true
+az webapp restart --name mindattic-prose --resource-group MyApps
 ```
 
 Takes ~1 min. No data loss, no DNS change, same URL.
@@ -440,8 +447,8 @@ Takes ~1 min. No data loss, no DNS change, same URL.
 ### If money is genuinely tight
 
 Stay on F1 and accept the rough edges:
-- Pre-warm with `Invoke-WebRequest https://prose.azurewebsites.net/ -UseBasicParsing` before sessions.
-- When you see HTTP 403 "This web app is stopped", run `az webapp start --name prose --resource-group MyApps` and wait ~30s.
+- Pre-warm with `Invoke-WebRequest https://mindattic-prose.azurewebsites.net/ -UseBasicParsing` before sessions.
+- When you see HTTP 403 "This web app is stopped", run `az webapp start --name mindattic-prose --resource-group MyApps` and wait ~30s.
 - The CPU-minute quota resets at midnight UTC every night.
 - Expect 30–45s page loads on first hit after an idle period.
 
@@ -475,13 +482,13 @@ dotnet run --project v3/Prose.Blazor
 
 ```powershell
 # Production (no auto-login, generic error pages)
-az webapp config appsettings set --name prose --resource-group MyApps --settings ASPNETCORE_ENVIRONMENT=Production
+az webapp config appsettings set --name mindattic-prose --resource-group MyApps --settings ASPNETCORE_ENVIRONMENT=Production
 
 # Development (DevAuth auto-login enabled, full stack traces in browser)
-az webapp config appsettings set --name prose --resource-group MyApps --settings ASPNETCORE_ENVIRONMENT=Development
+az webapp config appsettings set --name mindattic-prose --resource-group MyApps --settings ASPNETCORE_ENVIRONMENT=Development
 
 # Always restart to pick up the new value
-az webapp restart --name prose --resource-group MyApps
+az webapp restart --name mindattic-prose --resource-group MyApps
 ```
 
 **Don't leave the public-facing site in Development mode** — DevAuth logs anyone in as Administrator without a password.
@@ -496,7 +503,7 @@ az webapp restart --name prose --resource-group MyApps
 
 ```powershell
 az webapp config appsettings list `
-  --name prose --resource-group MyApps `
+  --name mindattic-prose --resource-group MyApps `
   --query "[?name=='ConnectionStrings__Prose']" `
   -o json
 ```
@@ -549,13 +556,13 @@ Use `/TargetServerName + /TargetDatabaseName + /AccessToken` instead of `/Target
 **A:** Usually means a prior deploy left the App Service in a stuck state (file locks, partial extraction). Fix:
 
 ```powershell
-az webapp stop --name prose --resource-group MyApps
+az webapp stop --name mindattic-prose --resource-group MyApps
 Start-Sleep -Seconds 20
 gh workflow run azure-deploy.yml --ref master
 Start-Sleep -Seconds 10
 gh run watch
 # After ✓:
-az webapp start --name prose --resource-group MyApps
+az webapp start --name mindattic-prose --resource-group MyApps
 ```
 
 Stopping releases file locks; starting after the deploy ensures a clean process.
@@ -565,9 +572,9 @@ Stopping releases file locks; starting after the deploy ensures a clean process.
 **A:** ASP.NET Core unhandled exceptions are showing IIS's static error page instead of the .NET-side developer page. Two things to enable:
 
 ```powershell
-az webapp config appsettings set --name prose --resource-group MyApps `
+az webapp config appsettings set --name mindattic-prose --resource-group MyApps `
   --settings ASPNETCORE_ENVIRONMENT=Development ASPNETCORE_DETAILEDERRORS=true
-az webapp restart --name prose --resource-group MyApps
+az webapp restart --name mindattic-prose --resource-group MyApps
 ```
 
 Wait 30 sec, refresh — you'll get a yellow exception page with the actual stack trace. Switch back to Production after diagnosis.
@@ -579,7 +586,7 @@ Wait 30 sec, refresh — you'll get a yellow exception page with the actual stac
 For real logs, download the LogFiles archive:
 
 ```powershell
-az webapp log download --name prose --resource-group MyApps --log-file D:\tmp\logs.zip
+az webapp log download --name mindattic-prose --resource-group MyApps --log-file D:\tmp\logs.zip
 Expand-Archive D:\tmp\logs.zip D:\tmp\logs -Force
 # eventlog.xml has the Windows EventLog entries; LogFiles\http\RawLogs\ has IIS requests
 ```
@@ -598,16 +605,16 @@ Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Act
 1. The connection string value got truncated when stored, leaving a partial value like `Active Directory Managed` (instead of `Active Directory Managed Identity`). Re-save via the **Portal** (not CLI) and verify with `-o json`.
 2. Your deployed `Microsoft.Data.SqlClient` is too old to recognize that keyword. Check: `dotnet list <csproj> package --include-transitive | grep -i sqlclient`. You want 4.0+ for `Active Directory Default`, 5.x is best.
 
-### Q: `Principal 'prose' could not be found at this Azure Active Directory tenant.`
+### Q: `Principal 'mindattic-prose' could not be found at this Azure Active Directory tenant.`
 
 **A:** The MI isn't enabled on the App Service yet, or AAD hasn't propagated the MI's display name. Run:
 
 ```powershell
-az webapp identity assign --name prose --resource-group MyApps
+az webapp identity assign --name mindattic-prose --resource-group MyApps
 # Wait 60 seconds for AAD to propagate
 ```
 
-Then retry the `CREATE USER [prose] FROM EXTERNAL PROVIDER;` statement.
+Then retry the `CREATE USER [mindattic-prose] FROM EXTERNAL PROVIDER;` statement.
 
 ### Q: `Cannot open server '<name>' requested by the login. Client with IP… is not allowed.`
 
@@ -639,11 +646,11 @@ Confirm and fix:
 
 ```powershell
 # Check current state
-az webapp show --name prose --resource-group MyApps --query state -o tsv
+az webapp show --name mindattic-prose --resource-group MyApps --query state -o tsv
 # → "Stopped" confirms the diagnosis
 
 # Start it back up
-az webapp start --name prose --resource-group MyApps
+az webapp start --name mindattic-prose --resource-group MyApps
 ```
 
 If this is happening repeatedly (multiple times per day), you're hitting the F1 quota cliff. See § App Service Plan SKU — F1 vs B1+ — bumping to B1 (~$13/mo) eliminates the quota entirely and adds AlwaysOn support.
@@ -673,7 +680,7 @@ App Service also has a "Deployment Center → Deployments" UI in the Portal that
 **A:** `az webapp config appsettings set --settings KEY=VALUE` **replaces** the listed keys but doesn't touch others. Make sure you're not accidentally overwriting other settings by typo'ing a key name. Always verify with:
 
 ```powershell
-az webapp config appsettings list --name prose --resource-group MyApps --query "[].name" -o tsv | Sort-Object
+az webapp config appsettings list --name mindattic-prose --resource-group MyApps --query "[].name" -o tsv | Sort-Object
 ```
 
 `-o tsv` is fine for **just the names** since names don't have spaces.

@@ -10,7 +10,7 @@ namespace Prose.Cli;
 /// shape used by engine/data/news/*.json — NewsRepository.Save persists the
 /// Entity row and the Records.Json blob (read by the /news UI).
 ///
-///   ss --add-news --file path.json
+///   prose --add-news --file path.json
 /// </summary>
 public static class AddNewsCli
 {
@@ -19,7 +19,7 @@ public static class AddNewsCli
         var file = ArgValue(args, "--file");
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
-            Console.Error.WriteLine("usage: ss --add-news --file path.json");
+            Console.Error.WriteLine("usage: prose --add-news --file path.json");
             return 1;
         }
 

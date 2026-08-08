@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --timeline (--slug slug | --id id)</c>
+/// <c>prose --timeline (--slug slug | --id id)</c>
 ///   Scans every beat in a node (or every episode in a book) for clock and day
 ///   references, infers story-relative timestamps, and prints an elapsed-time table.
 ///   Flags continuity conflicts where stated time contradicts the prior sequence.
@@ -40,7 +40,7 @@ public static class TimelineCli
 
         if (string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(code))
         {
-            Console.Error.WriteLine("usage: ss --timeline (--slug <slug> | --id <id> | --code <code>)");
+            Console.Error.WriteLine("usage: prose --timeline (--slug <slug> | --id <id> | --code <code>)");
             return 1;
         }
 

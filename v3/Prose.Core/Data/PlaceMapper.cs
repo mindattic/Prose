@@ -345,7 +345,7 @@ public static class PlaceMapper
     /// relational row yet. Returns the number of place entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-place-relational</c>.
+    /// Run once via <c>prose --rebuild-place-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

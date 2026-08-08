@@ -5,10 +5,7 @@
        Writer and Codex are excluded here — use Prose.Deploy.slnx for those. -->
   <Project Path="../../MindAttic.Authentication/src/MindAttic.Authentication/MindAttic.Authentication.csproj" />
   <Project Path="Prose.Core/Prose.Core.csproj" />
-  <!-- TEMP: folder is still physically named StreetSamurai.Mcp/ — the MCP server process
-       backing this Claude Code session locks the directory rename. Fix this path back to
-       "Prose.Mcp/Prose.Mcp.csproj" once you've manually renamed the folder (see migration notes). -->
-  <Project Path="StreetSamurai.Mcp/Prose.Mcp.csproj" />
+  <Project Path="Prose.Mcp/Prose.Mcp.csproj" />
   <Project Path="Prose.Shared/Prose.Shared.csproj" />
   <Project Path="Prose.UiUx/Prose.UiUx.csproj" />
   <Project Path="Prose.UnitTests/Prose.UnitTests.csproj" />

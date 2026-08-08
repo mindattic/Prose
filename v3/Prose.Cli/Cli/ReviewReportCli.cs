@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --review-report</c> — (re)generate the portable per-voter report (JSON +
+/// <c>prose --review-report</c> — (re)generate the portable per-voter report (JSON +
 /// filterable HTM) from a node's MOST RECENT stored review batch, without
 /// re-running the panel. Auto-export already fires on every fresh review run; this
 /// is for rebuilding the artifact from history (or after a viewer-template change).
@@ -34,7 +34,7 @@ public static class ReviewReportCli
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(code))
         {
             Console.Error.WriteLine("[review-report] One of --id, --slug, or --code is required.");
-            Console.Error.WriteLine("Usage: ss --review-report (--slug <slug> | --id <guid|prefix> | --code <CODE>) [--provider local|cloud|all]");
+            Console.Error.WriteLine("Usage: prose --review-report (--slug <slug> | --id <guid|prefix> | --code <CODE>) [--provider local|cloud|all]");
             return 1;
         }
 
@@ -55,7 +55,7 @@ public static class ReviewReportCli
             .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync();
         if (string.IsNullOrEmpty(latestHash))
         {
-            Console.Error.WriteLine($"[review-report] No reviews found for {node.Slug}. Run ss --review-book first.");
+            Console.Error.WriteLine($"[review-report] No reviews found for {node.Slug}. Run prose --review-book first.");
             return 1;
         }
 

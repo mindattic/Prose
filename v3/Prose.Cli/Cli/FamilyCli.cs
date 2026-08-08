@@ -7,10 +7,10 @@ namespace Prose.Cli;
 /// CLI surface for <see cref="FamilyTieService"/>. Hand-seeding family ties
 /// before the genetics walker can do anything useful.
 ///
-///   ss --family parent  --parent &lt;id|slug&gt; --child &lt;id|slug&gt;
-///   ss --family sibling --a &lt;id|slug&gt; --b &lt;id|slug&gt;
-///   ss --family spouse  --a &lt;id|slug&gt; --b &lt;id|slug&gt;
-///   ss --family show    --of &lt;id|slug&gt;
+///   prose --family parent  --parent &lt;id|slug&gt; --child &lt;id|slug&gt;
+///   prose --family sibling --a &lt;id|slug&gt; --b &lt;id|slug&gt;
+///   prose --family spouse  --a &lt;id|slug&gt; --b &lt;id|slug&gt;
+///   prose --family show    --of &lt;id|slug&gt;
 /// </summary>
 public static class FamilyCli
 {
@@ -20,7 +20,7 @@ public static class FamilyCli
         var sub = idx >= 0 && idx + 1 < args.Length ? args[idx + 1] : null;
         if (string.IsNullOrWhiteSpace(sub))
         {
-            Console.Error.WriteLine("Usage: ss --family <parent|sibling|spouse|show> ...");
+            Console.Error.WriteLine("Usage: prose --family <parent|sibling|spouse|show> ...");
             return 2;
         }
 

@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --repair-entity-docs [--dry-run]</c>
+/// <c>prose --repair-entity-docs [--dry-run]</c>
 ///
 /// Stamps <c>MarkdownFiles.UniverseId</c> on the entity-doc rows that ALREADY exist, by matching
 /// each <c>docs/entities/&lt;slug&gt;.md</c> row back to its entity.

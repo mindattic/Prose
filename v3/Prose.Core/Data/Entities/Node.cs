@@ -34,7 +34,7 @@ public abstract class Node
 
     /// <summary>Short author-assigned reference code for quick CLI/prose lookup
     /// (e.g. "ATTE", "VATD", "DWIACE"). Unique across non-null values; not every
-    /// node needs one. Use <c>ss --timeline --code ATTE</c> etc.</summary>
+    /// node needs one. Use <c>prose --timeline --code ATTE</c> etc.</summary>
     public string? NodeCode { get; set; }
 
     public string Title { get; set; } = "";
@@ -278,7 +278,7 @@ public abstract class Node
     /// generated from the book's Summary/Description and universe. Contains no
     /// title/author typography (that's composited separately); this is the
     /// image-model prompt, not cover copy. Null = not yet generated. Written by
-    /// <c>CoverPromptService</c>, regenerate via <c>ss --generate-cover-prompt</c>.</summary>
+    /// <c>CoverPromptService</c>, regenerate via <c>prose --generate-cover-prompt</c>.</summary>
     public string? CoverPrompt { get; set; }
 
     /// <summary>When <see cref="CoverPrompt"/> was last generated. Null = never.</summary>

@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-document-relational</c> — backfill the Documents relational
+/// <c>prose --rebuild-document-relational</c> — backfill the Documents relational
 /// schema from Records.Json blobs. For every document entity (active or inactive),
 /// deserializes the blob → WorldbuildingDocument → persists columns + DocumentHeadings
 /// bridge + syncs EntityTags.

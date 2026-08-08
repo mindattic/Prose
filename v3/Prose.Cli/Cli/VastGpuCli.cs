@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --gpu &lt;status|stop|start|destroy&gt; [--instance &lt;id&gt;]</c> — manage the rented
+/// <c>prose --gpu &lt;status|stop|start|destroy&gt; [--instance &lt;id&gt;]</c> — manage the rented
 /// vast.ai review box via the vast REST API (v1). The API key is resolved from the shared
 /// MindAttic credential vault (provider id <c>vast</c>); no secret on the command line.
 ///

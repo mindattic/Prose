@@ -242,7 +242,7 @@ public static class AmmunitionMapper
     /// blob → AmmunitionData → persist. Returns the number of ammunition entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-ammunition-relational</c>.
+    /// Run once via <c>prose --rebuild-ammunition-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

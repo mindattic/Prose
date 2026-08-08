@@ -5,7 +5,7 @@ using Prose.Core.Data.Entities;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --clone-book (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--title "New Title"] [--book-code "SM1"] [--draft] [--status &lt;status&gt;]</c>
+/// <c>prose --clone-book (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--title "New Title"] [--book-code "SM1"] [--draft] [--status &lt;status&gt;]</c>
 /// — deep-clone a node: creates a new Node row plus independent copies of every
 /// enabled beat (new IDs, new Numbers). Audio, scores, and review history are NOT
 /// cloned — the clone starts fresh so review scores are independent.

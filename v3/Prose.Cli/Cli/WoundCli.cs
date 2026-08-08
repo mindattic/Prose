@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --wound &lt;subcommand&gt;</c> — character wound ledger from the CLI.
+/// <c>prose --wound &lt;subcommand&gt;</c> — character wound ledger from the CLI.
 ///
 /// Subcommands:
 ///   list    --character &lt;id|slug&gt; [--as-of "date"]
@@ -138,7 +138,7 @@ public static class WoundCli
 
     private static int PrintUsage()
     {
-        Console.Error.WriteLine("Usage: ss --wound <subcommand> [args]");
+        Console.Error.WriteLine("Usage: prose --wound <subcommand> [args]");
         Console.Error.WriteLine("  list    --character <id|slug> [--as-of \"date\"]");
         Console.Error.WriteLine("  log     --character <id|slug> --description \"...\" [--location \"chest\"] [--severity moderate|severe|minor] [--beat <beatId>] [--in-world-date \"...\"]");
         Console.Error.WriteLine("  status  --wound <id> --status active|healed|noted");

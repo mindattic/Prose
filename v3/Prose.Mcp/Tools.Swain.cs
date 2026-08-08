@@ -8,7 +8,7 @@ namespace Prose.Mcp;
 // ── Swain Scene/Sequel doctrine tools ──────────────────────────────────────────
 // Classifies every enabled beat against Dwight Swain's Scene/Sequel doctrine
 // (Scene: Goal→Conflict→Disaster; Sequel: Reaction→Dilemma→Decision). Previously
-// only reachable via `ss --swain-audit` on the CLI — added here so an MCP-connected
+// only reachable via `prose --swain-audit` on the CLI — added here so an MCP-connected
 // session can run and repair the audit without shelling out.
 
 [McpServerToolType]

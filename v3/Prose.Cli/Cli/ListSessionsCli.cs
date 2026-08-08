@@ -20,7 +20,7 @@ public static class ListSessionsCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --list-sessions --slug <slug> [--limit N]");
+            Console.Error.WriteLine("Usage: prose --list-sessions --slug <slug> [--limit N]");
             return 2;
         }
 

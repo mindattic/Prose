@@ -2,7 +2,7 @@
 
 **Service:** `NounConsistencyService`
 **Table:** `DeprecatedEntityNames`
-**CLI:** `ss --validate-nouns --slug <slug>`
+**CLI:** `prose --validate-nouns --slug <slug>`
 **MCP:** `validate_nouns`, `add_deprecated_name`, `list_deprecated_names`
 
 ---
@@ -50,7 +50,7 @@ add_deprecated_name("OldName", "NewName", notes="Why it was renamed")
 
 **Via CLI** (not yet implemented — use MCP):
 ```
-ss --validate-nouns --slug <slug>
+prose --validate-nouns --slug <slug>
 ```
 
 **Via sqlcmd** (emergency / bulk seed):

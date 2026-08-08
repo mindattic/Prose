@@ -1,6 +1,6 @@
 // One-shot script: convert all metric measurements to American imperial in prose exports.
 // Run: node tools/convert-to-imperial.js
-// Then: ss --import-md for each UPDATED strand listed below.
+// Then: prose --import-md for each UPDATED strand listed below.
 
 const fs = require('fs');
 const path = require('path');
@@ -146,4 +146,4 @@ const allFiles = fs.readdirSync(EXPORTS_DIR)
 
 console.log(`Processing ${allFiles.length} strand files...\n`);
 allFiles.forEach(processFile);
-console.log('\nDone. Import changed strands with: ss --import-md --slug <slug>');
+console.log('\nDone. Import changed strands with: prose --import-md --slug <slug>');

@@ -6,7 +6,7 @@ using System.Text.Json;
 namespace Prose.Mcp;
 
 /// <summary>
-/// X-Ray scene assembly tools (RFC 0002). MCP twin of `ss --assemble-scene`,
+/// X-Ray scene assembly tools (RFC 0002). MCP twin of `prose --assemble-scene`,
 /// per the foundations doctrine (CLI ⇄ MCP parity).
 /// </summary>
 [McpServerToolType]

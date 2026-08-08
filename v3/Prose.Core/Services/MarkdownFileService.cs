@@ -723,7 +723,7 @@ public class MarkdownFileService
     /// <summary>
     /// Find tracked markdown files whose path, file name, or category contains the
     /// keyword (case-insensitive). With <paramref name="includeContent"/> the body
-    /// text is searched too. This backs <c>ss --recall &lt;keyword&gt;</c>: it lets a
+    /// text is searched too. This backs <c>prose --recall &lt;keyword&gt;</c>: it lets a
     /// caller "call up" the select few .md files relevant to a topic from the DB
     /// instead of keeping hundreds of tiny files materialized on disk.
     /// </summary>
@@ -814,11 +814,23 @@ public class MarkdownFileService
                     continue;
                 }
 
-                var dir = Path.GetDirectoryName(destPath)!;
                 if (!dryRun)
                 {
-                    Directory.CreateDirectory(dir);
-                    await File.WriteAllTextAsync(destPath, row.Content, ct);
+                    // Generated mirrors (docs/nodes/*.md etc.) are marked FileAttributes.ReadOnly —
+                    // a plain write throws UnauthorizedAccessException on every one of them. Only
+                    // files that were ALREADY read-only on disk go through the clear→write→re-set
+                    // path (mirroring NodeDocService/CanonDocumentService); hand-authored files
+                    // that were never marked read-only are written plainly, so restore never
+                    // leaves a hand-editable doc newly locked.
+                    var wasReadOnly = File.Exists(destPath)
+                        && File.GetAttributes(destPath).HasFlag(FileAttributes.ReadOnly);
+                    if (wasReadOnly)
+                        await GeneratedFileWriter.WriteReadOnlyAsync(destPath, row.Content ?? "", ct);
+                    else
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(destPath)!);
+                        await File.WriteAllTextAsync(destPath, row.Content, ct);
+                    }
                 }
                 written++;
             }

@@ -7,11 +7,11 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --write-outline --slug &lt;nodeSlug&gt; [--json]
+/// prose --write-outline --slug &lt;nodeSlug&gt; [--json]
 ///
 /// Generates a beat-by-beat narrative outline of a node. For a real logic check
 /// (causality/knowledge-states/timeline/plant-payoff/orphan-refs/bible-agreement),
-/// use ss --logic-sweep instead — this used to bundle a logic audit here too, but that
+/// use prose --logic-sweep instead — this used to bundle a logic audit here too, but that
 /// audit predated LOGIC.md's current six-dimension doctrine and never matched it.
 /// </summary>
 public static class WriteOutlineCli
@@ -28,7 +28,7 @@ public static class WriteOutlineCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --write-outline --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: prose --write-outline --slug <nodeSlug> [--json]");
             return 2;
         }
 

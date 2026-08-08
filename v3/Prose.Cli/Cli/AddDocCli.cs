@@ -8,8 +8,8 @@ namespace Prose.Cli;
 /// CLI surface to insert a worldbuilding Document directly into canon (Entities +
 /// Records). Body comes from a file so multi-line essays survive the shell.
 ///
-///   ss --add-doc --title "..." --body-file path.md [--category essay] [--tags "a,b,c"] [--filename slug.md]
-///   ss --add-doc --dir path/to/folder
+///   prose --add-doc --title "..." --body-file path.md [--category essay] [--tags "a,b,c"] [--filename slug.md]
+///   prose --add-doc --dir path/to/folder
 ///     One .md file per document, simple frontmatter (all optional except title):
 ///       ---
 ///       title: Tel Dan Stele (1993)
@@ -37,7 +37,7 @@ public static class AddDocCli
 
         if (string.IsNullOrWhiteSpace(title) || string.IsNullOrWhiteSpace(bodyFile))
         {
-            Console.Error.WriteLine("usage: ss --add-doc --title \"…\" --body-file path.md [--category essay] [--tags \"a,b,c\"] [--filename slug.md]");
+            Console.Error.WriteLine("usage: prose --add-doc --title \"…\" --body-file path.md [--category essay] [--tags \"a,b,c\"] [--filename slug.md]");
             return 1;
         }
         if (!File.Exists(bodyFile))

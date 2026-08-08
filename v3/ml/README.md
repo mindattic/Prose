@@ -60,7 +60,7 @@ v3/ml/
 |---|---|
 | Python 3.11+ | `python --version` |
 | ODBC Driver 17 for SQL Server | `odbcad32` → check "Drivers" tab |
-| .NET SDK (for `ss` CLI) | `dotnet --version` |
+| .NET SDK (for `prose` CLI) | `dotnet --version` |
 | LocalDB running | `sqllocaldb info MSSQLLocalDB` |
 
 ODBC Driver 17 installer: https://aka.ms/odbc17  
@@ -181,7 +181,7 @@ To audit a single strand without waiting for the nightly run:
 
 ```powershell
 # Via ss CLI
-ss --ml-audit --slug ATTE
+prose --ml-audit --slug ATTE
 
 # Or directly via Python
 cd v3/ml
@@ -281,7 +281,7 @@ To audit a single strand without retraining:
 To skip gripe mining (faster audit-only run):
 
 ```powershell
-ss --ml-audit --slug BCODA --skip-gripes
+prose --ml-audit --slug BCODA --skip-gripes
 ```
 
 ---
@@ -296,7 +296,7 @@ If you have Driver 18, change the driver string in `config.py`.
 The venv was not activated. Use `.venv\Scripts\python` explicitly (as shown above), or activate
 first: `.venv\Scripts\Activate.ps1`.
 
-**`[ml-audit] Python venv not found`** (from `ss --ml-audit`)  
+**`[ml-audit] Python venv not found`** (from `prose --ml-audit`)  
 The venv does not exist at `v3/ml/.venv`. Run the setup steps above.
 
 **Nightly log shows `temporal reconstruction returned 0 rows`**  
@@ -307,7 +307,7 @@ This is normal for strands with no review history — they are skipped gracefull
 Check that `MlProseGuidanceService` is registered (it is, in `ServiceCollectionExtensions.cs`)
 and that `ProseWriterRouter` was injected with it. Verify via:
 ```powershell
-ss --workflow-status --slug ATTE
+prose --workflow-status --slug ATTE
 ```
 The coverage matrix should show `MlProseGuidance` as an active service.
 

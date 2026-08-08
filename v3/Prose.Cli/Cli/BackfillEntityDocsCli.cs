@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --backfill-entity-docs --slug &lt;slug&gt; [--text]</c>
+/// <c>prose --backfill-entity-docs --slug &lt;slug&gt; [--text]</c>
 ///
 /// Materializes per-entity <c>MarkdownFiles</c> rows (category="entity-doc") for every
 /// entity referenced in a book's beat goals. Entity docs are normally created on-demand
@@ -30,7 +30,7 @@ public static class BackfillEntityDocsCli
 
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --backfill-entity-docs --slug <slug> [--text]");
+            Console.Error.WriteLine("Usage: prose --backfill-entity-docs --slug <slug> [--text]");
             return 1;
         }
 
@@ -94,7 +94,7 @@ public static class BackfillEntityDocsCli
 
         Console.WriteLine($"[backfill-entity-docs] Scanned {total} text block(s); {created} entity doc(s) created or updated.");
         if (created > 0)
-            Console.WriteLine("[backfill-entity-docs] Next: ss --sync-markdown  (pushes content into embedding scope)");
+            Console.WriteLine("[backfill-entity-docs] Next: prose --sync-markdown  (pushes content into embedding scope)");
         return 0;
     }
 

@@ -8,7 +8,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --narrative-science &lt;subcommand&gt; [options]
+/// prose --narrative-science &lt;subcommand&gt; [options]
 ///
 /// Subcommands (Will Storr "Science of Storytelling" frameworks):
 ///
@@ -546,7 +546,7 @@ public static class NarrativeScienceCli
     {
         if (error != null) Console.Error.WriteLine($"Error: {error}");
         Console.Error.WriteLine("""
-            Usage: ss --narrative-science <subcommand> [options]
+            Usage: prose --narrative-science <subcommand> [options]
 
             Subcommands:
               sacred-flaw        Analyze a character's theory of control (Sacred Flaw).

@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --list-books</c> — print every node as a table (or JSON). Headless
+/// <c>prose --list-books</c> — print every node as a table (or JSON). Headless
 /// equivalent of the <c>/nodes</c> page. Sorted most-recently-updated first.
 ///
 /// Args (all optional):

@@ -12,12 +12,16 @@ GitHub master push  ->  GitHub Actions (build -> migrate -> deploy)
                     +-----------+-----------+
                     |                       |
               Azure App Service        Azure SQL Database
-              (prose)          (AAD-only auth)
-              system-assigned MI        GitHub SP: db_ddladmin
+              (mindattic-prose)        (AAD-only auth)
+              system-assigned MI        GitHub SP: db_owner
                                         App Service MI: db_datareader/writer
 ```
 
-No passwords anywhere. CI/CD uses OIDC; the App Service uses its managed identity.
+No passwords anywhere. CI/CD uses OIDC for both the SQL migration step and the deploy step; the
+App Service uses its managed identity at runtime. The App Service is named `mindattic-prose`, not
+`prose` — that hostname was already taken globally on `*.azurewebsites.net` by an unrelated Azure
+customer when this was provisioned. Only the hostname differs; the SQL server, database, and
+GitHub OIDC app keep the `prose` naming.
 
 ## Files
 
@@ -75,7 +79,9 @@ $body | az ad app federated-credential create --id $app.appId --parameters '@-'
 | `AZURE_TENANT_ID` | `az account show --query tenantId -o tsv` |
 | `AZURE_SUBSCRIPTION_ID` | `az account show --query id -o tsv` |
 | `AZURE_SQL_CONNECTION` | Printed by `setup-azure.ps1` after step 5 |
-| `AZURE_WEBAPP_PUBLISH_PROFILE` | Already present |
+
+No publish-profile secret needed — the deploy job also authenticates via the same OIDC
+federated identity (the SP needs `Website Contributor` on the App Service; granted once).
 
 ### 5. Run the bootstrap
 
@@ -83,8 +89,8 @@ $body | az ad app federated-credential create --id $app.appId --parameters '@-'
 # Fill in the three __REPLACE__ values in azure-sql.parameters.json first, then:
 powershell -NoProfile -ExecutionPolicy Bypass `
     -File infra/setup-azure.ps1 `
-    -ResourceGroup street-samurai-rg `
-    -AppServiceName prose `
+    -ResourceGroup MyApps `
+    -AppServiceName mindattic-prose `
     -GitHubSpName  prose-github
 ```
 
@@ -113,7 +119,7 @@ LocalDB works for everyday writing. Nothing changes:
 
 ```powershell
 dotnet run --project v3/ApplyMigrations
-dotnet run --project v3/Prose.Blazor
+dotnet run --project v3/Prose.Codex
 # -> https://localhost:7103/
 ```
 
@@ -121,7 +127,7 @@ To point local dev at the Azure SQL database:
 
 ```powershell
 $env:ConnectionStrings__Prose = '<connection string from Bicep output>'
-dotnet run --project v3/Prose.Blazor
+dotnet run --project v3/Prose.Codex
 ```
 
 `Authentication=Active Directory Default` uses your `az login` credentials.
@@ -140,7 +146,7 @@ dotnet run --project v3/Prose.Blazor
 
 ```powershell
 az sql server firewall-rule create `
-    --resource-group street-samurai-rg `
+    --resource-group MyApps `
     --server prose-sql `
     --name 'my-laptop' `
     --start-ip-address $(curl -s ifconfig.me) `

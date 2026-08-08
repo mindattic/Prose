@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-material-relational</c> — backfill the Materials relational
+/// <c>prose --rebuild-material-relational</c> — backfill the Materials relational
 /// schema from Records.Json blobs. For every active material entity, deserializes
 /// the blob → MaterialData → persists columns + bridge tables (Aliases / StoryHooks)
 /// + syncs EntityTags.

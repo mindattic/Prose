@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --print-voice</c> — print the exact voice context the generator and
+/// <c>prose --print-voice</c> — print the exact voice context the generator and
 /// re-beater receive: <see cref="DatabaseService.GetLiteraryRulesPrompt"/> (leads
 /// with the beat doctrine + prohibitions + paragraph requirements) and
 /// <see cref="DatabaseService.GetToneBiblePrompt"/> (tone + dialogue rules), plus

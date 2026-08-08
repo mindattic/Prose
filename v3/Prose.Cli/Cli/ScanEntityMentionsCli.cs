@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --scan-entity-mentions</c>
+/// <c>prose --scan-entity-mentions</c>
 /// One-pass backfill: walks every beat in the DB and (re-)indexes which canon
 /// entity names appear in each beat's prose. Populates BeatEntityMentions so
 /// that future entity saves can propagate EntityStale correctly.

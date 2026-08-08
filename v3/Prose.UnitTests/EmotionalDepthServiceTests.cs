@@ -4,7 +4,7 @@ namespace Prose.UnitTests;
 
 /// <summary>
 /// Tests for EmotionalDepthService.ParseBeatCurve — the per-beat emotional-depth scoring parser
-/// (Pass 2 of the emotional examination, "ss --examine-emotion"). Extracted from
+/// (Pass 2 of the emotional examination, "prose --examine-emotion"). Extracted from
 /// RunBeatCurveAsync into its own internal static method specifically so this logic is directly
 /// testable (was private, mixed in with the LLM call); InternalsVisibleTo already covers this
 /// project.

@@ -16,7 +16,7 @@ public static class SyncBibleFromSessionCli
 
         if (sessionIdStr == null || !Guid.TryParse(sessionIdStr, out var sessionId))
         {
-            Console.Error.WriteLine("Usage: ss --sync-bible-from-session --session-id <guid> [--dry-run]");
+            Console.Error.WriteLine("Usage: prose --sync-bible-from-session --session-id <guid> [--dry-run]");
             return 2;
         }
 

@@ -253,7 +253,7 @@ public static class WeaponMapper
     /// relational row yet. Returns the number of weapon entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-weapon-relational</c>.
+    /// Run once via <c>prose --rebuild-weapon-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

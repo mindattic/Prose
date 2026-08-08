@@ -4,7 +4,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --reparent-node (--slug &lt;slug&gt; | --id &lt;id&gt;) (--parent-slug &lt;slug&gt; | --parent-id &lt;id&gt;)
+/// prose --reparent-node (--slug &lt;slug&gt; | --id &lt;id&gt;) (--parent-slug &lt;slug&gt; | --parent-id &lt;id&gt;)
 /// — sets ParentNodeId on an existing node.
 /// Use --clear to detach from any parent.
 /// Use --sort-key N to set the node's SortKey (can combine with parent change or use standalone).

@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --craft-checklist --slug &lt;slug&gt; [--force] [--json]</c>
+/// <c>prose --craft-checklist --slug &lt;slug&gt; [--force] [--json]</c>
 ///
 /// Reader-Proxy QA Instrument 2 — binary craft/delight checklist per beat,
 /// hash-gated on Beat.TextHash + rule-set version so unchanged beats never re-bill.
@@ -28,7 +28,7 @@ public static class BeatChecklistCli
 
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --craft-checklist --slug <slug> [--force] [--json]");
+            Console.Error.WriteLine("Usage: prose --craft-checklist --slug <slug> [--force] [--json]");
             return 2;
         }
 

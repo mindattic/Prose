@@ -19,7 +19,7 @@ namespace Prose.Core.Services;
 ///
 /// Wired to <see cref="IChapterRepository.OnChapterSaved"/> — the moment the
 /// writer hits Save, the ledger updates. The same path is also driven by the
-/// CLI (<c>ss --repair --extract-state</c>) for one-shot historical backfill.
+/// CLI (<c>prose --repair --extract-state</c>) for one-shot historical backfill.
 /// </summary>
 public class BeatStateExtractor
 {

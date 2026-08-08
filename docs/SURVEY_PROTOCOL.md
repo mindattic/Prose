@@ -60,7 +60,7 @@ Add `[multi-select]` after the category tag when multiple answers can coexist:
 1. DISCOVER  — workflow reads all docs + DB, finds contradictions
 2. COMPOSE   — survey .md file written to docs/surveys/<slug>.md
 3. ANSWER    — user opens file, marks [x] answers, saves
-4. APPLY     — `ss --survey apply docs/surveys/<slug>.md`
+4. APPLY     — `prose --survey apply docs/surveys/<slug>.md`
               OR: `/survey-apply <path>` in Claude Code
 5. VERIFY    — codex doctor + affected story logic sweeps
 6. ARCHIVE   — survey moved to docs/surveys/archive/<slug>.md
@@ -93,13 +93,13 @@ After applying, **prose is NOT automatically rewritten**. Beat text is flagged v
 
 ```bash
 # 1. Discover contradictions and write survey file
-ss --survey discover --output docs/surveys/canon-sync-2026-07.md
+prose --survey discover --output docs/surveys/canon-sync-2026-07.md
 
 # 2. (user answers the file)
 
 # 3. Apply answers
-ss --survey apply docs/surveys/canon-sync-2026-07.md --dry-run   # preview
-ss --survey apply docs/surveys/canon-sync-2026-07.md             # apply
+prose --survey apply docs/surveys/canon-sync-2026-07.md --dry-run   # preview
+prose --survey apply docs/surveys/canon-sync-2026-07.md             # apply
 
 # 4. Verify
 powershell -File tools/codex.ps1 doctor

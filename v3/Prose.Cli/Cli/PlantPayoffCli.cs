@@ -7,13 +7,13 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --plant-audit  --slug &lt;nodeSlug&gt; [--json]
+/// prose --plant-audit  --slug &lt;nodeSlug&gt; [--json]
 ///   Audit all plant/payoff pairs: orphaned plants, transparency violations, coverage.
 ///
-/// ss --list-plants  --slug &lt;nodeSlug&gt; [--json]
+/// prose --list-plants  --slug &lt;nodeSlug&gt; [--json]
 ///   List all registered plant/payoff pairs for a node.
 ///
-/// ss --add-plant  --slug &lt;nodeSlug&gt;
+/// prose --add-plant  --slug &lt;nodeSlug&gt;
 ///               --plant  "what is seeded"
 ///               --payoff "what the re-reader gets"
 ///              [--cat detail|echo|irony|motif|character-truth|structural]
@@ -31,7 +31,7 @@ public static class PlantPayoffCli
         for (int i = 0; i < args.Length - 1; i++)
             if (args[i] == "--slug") { slug = args[i + 1]; i++; }
 
-        if (slug == null) { Console.Error.WriteLine("Usage: ss --plant-audit|--list-plants|--add-plant --slug <node> [options]"); return 2; }
+        if (slug == null) { Console.Error.WriteLine("Usage: prose --plant-audit|--list-plants|--add-plant --slug <node> [options]"); return 2; }
 
         var svc       = services.GetRequiredService<PlantPayoffService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
@@ -41,7 +41,7 @@ public static class PlantPayoffCli
             .FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
         if (node == null) { Console.Error.WriteLine($"Node '{slug}' not found."); return 2; }
 
-        // ── ss --list-plants ───────────────────────────────────────────────────
+        // ── prose --list-plants ───────────────────────────────────────────────────
 
         if (args.Contains("--list-plants"))
         {
@@ -68,7 +68,7 @@ public static class PlantPayoffCli
             return 0;
         }
 
-        // ── ss --add-plant ─────────────────────────────────────────────────────
+        // ── prose --add-plant ─────────────────────────────────────────────────────
 
         if (args.Contains("--add-plant"))
         {
@@ -82,7 +82,7 @@ public static class PlantPayoffCli
 
             if (plant == null || payoff == null)
             {
-                Console.Error.WriteLine("Usage: ss --add-plant --slug <node> --plant \"what is seeded\" --payoff \"what re-readers get\" [--cat detail]");
+                Console.Error.WriteLine("Usage: prose --add-plant --slug <node> --plant \"what is seeded\" --payoff \"what re-readers get\" [--cat detail]");
                 return 2;
             }
 
@@ -102,7 +102,7 @@ public static class PlantPayoffCli
             return 0;
         }
 
-        // ── ss --plant-audit ───────────────────────────────────────────────────
+        // ── prose --plant-audit ───────────────────────────────────────────────────
 
         if (!jsonMode) Console.WriteLine($"Auditing plant/payoff pairs for '{node.Title}'…\n");
 

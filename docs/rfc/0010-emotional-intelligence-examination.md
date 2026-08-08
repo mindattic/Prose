@@ -161,10 +161,10 @@ Medium (1)`, `summary: "EMOTIONAL-DEPTH [{Name}] beat {N}: {Fix}"`, `snippet: We
 
 ## 5. CLI + MCP + DI surface
 
-- **CLI:** `ss --examine-emotion --slug <slug> [--effort draft|standard|deep] [--json]` — new
+- **CLI:** `prose --examine-emotion --slug <slug> [--effort draft|standard|deep] [--json]` — new
   `ExamineEmotionCli.cs` (clone `DiagnoseStrandCli.cs`); dispatch in `Program.cs` next to the
-  `--diagnose-strand` block (line ~1398). Optional `ss --emotional-ledger --slug <slug>` to
-  print/refresh ledgers. Schema migration flag `ss --migrate-sql --emotional-examination` in
+  `--diagnose-strand` block (line ~1398). Optional `prose --emotional-ledger --slug <slug>` to
+  print/refresh ledgers. Schema migration flag `prose --migrate-sql --emotional-examination` in
   `MigrateSqlCli.cs`.
 - **MCP:** `examine_emotional_depth(strandIdOrSlug, effort="standard", maxChars=40000)` —
   `[McpServerTool]` method in `Tools.Quality.cs` next to `DiagnoseStrand` (inject
@@ -184,7 +184,7 @@ enforced in each dimension prompt:
 Example: *"Beat 9: Kyle says he's worried. Cut the line; have him set the better cup down handle-first
 instead (CODA law 8)."*
 
-**v1 revision wiring:** a `ss --deepen-emotion --slug <slug> [--apply]` verb runs the examination and,
+**v1 revision wiring:** a `prose --deepen-emotion --slug <slug> [--apply]` verb runs the examination and,
 for each weakest beat with a fix, generates a rewrite via the existing single-beat generation path
 (`BeatGeneratorService.GenerateBeatAsync` + `StrandWorkbenchService.UpdateBeatTextAsync`, the same
 path `ExpandBeatCli` uses), feeding the dimension `Fix` + the character ledger as the rewrite
@@ -222,13 +222,13 @@ re-examine the beat and confirm its `EmotionalScore` rises and the Finding clear
 ## 9. Verification (end-to-end)
 
 1. `pwsh tools/codex.ps1 doctor` passes after SS-A15 docs edits.
-2. `ss --migrate-sql --emotional-examination` — re-runnable, no error on 2nd run.
+2. `prose --migrate-sql --emotional-examination` — re-runnable, no error on 2nd run.
 3. Run against a CODA chapter (e.g. `part-i-teeth-019e9fb2`) and a non-CODA strand (TVYT, or the GIW
-   Fantasy strand): `ss --examine-emotion --slug <slug> --effort deep --json`. Expect 8 dimension
+   Fantasy strand): `prose --examine-emotion --slug <slug> --effort deep --json`. Expect 8 dimension
    scores 0–4, strongest/weakest quotes, a beat-curve covering every beat, character ledgers with
    Want≠Need, the correct `Register`, ≥1 Finding for any ≤1 blocking dimension. Confirm the non-CODA
    run softens dimension 4 rather than penalizing it.
-4. `ss --findings` shows `EMOTIONAL-DEPTH` findings beside structural ones.
+4. `prose --findings` shows `EMOTIONAL-DEPTH` findings beside structural ones.
 5. Ledger sanity: Rhea Want="keep facts correct / not be managed", Need="stop calling being-managed
    competence" (matches TVYT.md §71-73).
 6. Regression: `Strand.Score` and the 82/85 gates unchanged; a Deep publish-readiness check is blocked

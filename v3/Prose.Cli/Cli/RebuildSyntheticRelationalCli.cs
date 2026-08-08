@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-synthetic-relational</c> — backfill the SyntheticLives relational
+/// <c>prose --rebuild-synthetic-relational</c> — backfill the SyntheticLives relational
 /// schema from Records.Json blobs. For every synthetic entity (active or inactive),
 /// deserializes the blob → SyntheticLifeData → persists columns + all bridge rows +
 /// syncs EntityTags.

@@ -3,7 +3,7 @@
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --review-settings [--set &lt;key&gt; &lt;value&gt;]</c> — view or update review voting settings.
+/// <c>prose --review-settings [--set &lt;key&gt; &lt;value&gt;]</c> — view or update review voting settings.
 ///
 /// With no args: print all settings.
 /// With --set key value: update one setting.

@@ -7,8 +7,8 @@ namespace Prose.UnitTests;
 /// Guards the argv-dispatch rule for <c>--universe</c>.
 ///
 /// Why this is guarded by tests: <c>--universe</c> is overloaded. It is both the name of a
-/// management command (<c>ss --universe list</c>) and the universe-scoping flag that nearly every
-/// other command accepts (<c>ss --universe source --export-node --slug x</c>). Program.cs used to
+/// management command (<c>prose --universe list</c>) and the universe-scoping flag that nearly every
+/// other command accepts (<c>prose --universe source --export-node --slug x</c>). Program.cs used to
 /// claim dispatch on <c>args[0] == "--universe"</c> alone, which meant a scoped invocation in
 /// first position was swallowed: UniverseCli printed its usage text, the real command never ran,
 /// and the process returned as though nothing was wrong. A silently skipped export looks identical
@@ -69,7 +69,7 @@ public class UniverseCliDispatchTests
     [Test]
     public void ScopingFlagInFirstPosition_DoesNotHijackDispatch()
     {
-        // ss --universe source --export-node --slug resistance-...
+        // prose --universe source --export-node --slug resistance-...
         Assert.That(
             WouldDispatchToUniverseCli("--universe", "source", "--export-node", "--slug", "resistance-x"),
             Is.False,

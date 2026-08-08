@@ -6,7 +6,7 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for <see cref="CharacterStateBackfillService"/>.
 ///
-///   ss --backfill-character-state    one-shot, idempotent migration that
+///   prose --backfill-character-state    one-shot, idempotent migration that
 ///                                    copies every Character's dynamic
 ///                                    columns (Location, LifeStatus, Role,
 ///                                    Affiliation, Belongings*, Territory*,

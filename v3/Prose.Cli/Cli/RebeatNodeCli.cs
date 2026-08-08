@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebeat-book (--slug &lt;s&gt; | --id &lt;guid|prefix&gt;) [--apply]</c> —
+/// <c>prose --rebeat-book (--slug &lt;s&gt; | --id &lt;guid|prefix&gt;) [--apply]</c> —
 /// rebuild a node's beats to the codified beat doctrine via LLM re-segmentation
 /// (<see cref="BeatRebuildService"/>). Dry-run by default: prints the proposed
 /// old→new beat counts and the word-retention guard result without touching the

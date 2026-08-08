@@ -69,7 +69,7 @@ public class KdpOperatorService
         }
         if (string.IsNullOrWhiteSpace(book.EpubPath))
         {
-            yield return new OperatorEvent.Error($"{book.Code}: no .epub found in {book.FolderPath} — run ss --export-node (a .docx alone is not enough).");
+            yield return new OperatorEvent.Error($"{book.Code}: no .epub found in {book.FolderPath} — run prose --export-node (a .docx alone is not enough).");
             yield break;
         }
         var manuscriptPath = book.EpubPath;
@@ -81,7 +81,7 @@ public class KdpOperatorService
         }
         if (!book.HasDescriptionFile)
         {
-            yield return new OperatorEvent.Error($"{book.Code}: no description.txt found in {book.FolderPath} — run ss --export-node.");
+            yield return new OperatorEvent.Error($"{book.Code}: no description.txt found in {book.FolderPath} — run prose --export-node.");
             yield break;
         }
         if (!book.HasNewerVersionThanPublished)

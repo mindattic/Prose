@@ -14,7 +14,7 @@ namespace Prose.Core.Services;
 /// spheres with a neuretic train hallucination" is always present without requiring each book
 /// bible to repeat it. Book facts (<c>Node.NodeBible</c>) stay book-scoped.
 ///
-/// The human-editable source is <c>docs/universes/&lt;slug&gt;.md</c>; <c>ss --sync-markdown</c>
+/// The human-editable source is <c>docs/universes/&lt;slug&gt;.md</c>; <c>prose --sync-markdown</c>
 /// syncs it into <c>Universe.WorldFacts</c>.
 /// </summary>
 public class UniversalFactsService

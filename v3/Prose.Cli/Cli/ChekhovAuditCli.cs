@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --chekhov-audit --slug &lt;nodeSlug&gt;
+/// prose --chekhov-audit --slug &lt;nodeSlug&gt;
 ///
 /// Chekhov's Gun audit: every concrete prop, environmental anchor, sensory
 /// detail, and recurring character-specific physical trait is extracted from
@@ -31,7 +31,7 @@ public static class ChekhovAuditCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --chekhov-audit --slug <nodeSlug>");
+            Console.Error.WriteLine("Usage: prose --chekhov-audit --slug <nodeSlug>");
             return 2;
         }
 

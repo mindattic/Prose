@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --validate-nouns --slug &lt;slug&gt;</c>
+/// <c>prose --validate-nouns --slug &lt;slug&gt;</c>
 ///
 /// Scans every enabled beat in a node for deprecated / renamed noun references.
 /// Any named thing whose old form is registered in DeprecatedEntityNames is

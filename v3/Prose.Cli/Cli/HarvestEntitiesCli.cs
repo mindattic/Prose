@@ -4,15 +4,15 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --harvest-entities</c> — turn open text (design notes, canon briefs, worldbuilding
+/// <c>prose --harvest-entities</c> — turn open text (design notes, canon briefs, worldbuilding
 /// passages) into canon: extract every load-bearing noun, resolve against the entity corpus,
 /// create the missing ones as stubs in their proper EntityType, and wire Edges between
 /// related pairs.
 ///
-///   ss --harvest-entities --file &lt;path&gt; [--universe glmz] [--dry-run]
+///   prose --harvest-entities --file &lt;path&gt; [--universe glmz] [--dry-run]
 ///
 /// Exit codes: 0 = harvest ran (see counts), 1 = bad args / file missing / extraction empty.
-/// After a non-dry run, run <c>ss --reembed</c> so new stubs join the semantic index.
+/// After a non-dry run, run <c>prose --reembed</c> so new stubs join the semantic index.
 /// </summary>
 public static class HarvestEntitiesCli
 {
@@ -32,7 +32,7 @@ public static class HarvestEntitiesCli
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
             Console.Error.WriteLine("[harvest] --file <path> is required and must exist.");
-            Console.Error.WriteLine("Usage: ss --harvest-entities --file <path> [--universe glmz] [--dry-run]");
+            Console.Error.WriteLine("Usage: prose --harvest-entities --file <path> [--universe glmz] [--dry-run]");
             return 1;
         }
 
@@ -68,7 +68,7 @@ public static class HarvestEntitiesCli
         Console.WriteLine($"[harvest] {result.Entities.Count} nouns → {created} new, " +
                           $"{result.Entities.Count - created} resolved; {result.EdgesCreated} edge(s){(dryRun ? " (dry-run, nothing written)" : "")}.");
         if (!dryRun && created > 0)
-            Console.WriteLine("[harvest] Next: ss --reembed  (adds the new stubs to the semantic index); promote stubs to canon via the entity queue.");
+            Console.WriteLine("[harvest] Next: prose --reembed  (adds the new stubs to the semantic index); promote stubs to canon via the entity queue.");
         return 0;
     }
 }

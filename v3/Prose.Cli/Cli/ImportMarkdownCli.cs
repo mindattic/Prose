@@ -7,8 +7,8 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --import-md --file path.md [--dry-run]</c> — reimport an edited
-/// <c>ss --publish-md</c> Markdown file back into the database, updating each
+/// <c>prose --import-md --file path.md [--dry-run]</c> — reimport an edited
+/// <c>prose --publish-md</c> Markdown file back into the database, updating each
 /// beat's prose in-place.
 ///
 /// The file must contain <c>&lt;!-- beat:N:id7 --&gt;</c> markers (written by
@@ -51,7 +51,7 @@ public static class ImportMarkdownCli
         if (string.IsNullOrWhiteSpace(file))
         {
             Console.Error.WriteLine("[import-md] --file is required (or '-' for stdin).");
-            Console.Error.WriteLine("Usage: ss --import-md --file path.md [--dry-run]");
+            Console.Error.WriteLine("Usage: prose --import-md --file path.md [--dry-run]");
             return 2;
         }
 

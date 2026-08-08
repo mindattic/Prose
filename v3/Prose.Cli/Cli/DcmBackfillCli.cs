@@ -7,10 +7,10 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --dcm-backfill --slug &lt;slug&gt; [--dry-run]</c>
+/// <c>prose --dcm-backfill --slug &lt;slug&gt; [--dry-run]</c>
 ///
 /// Retroactively builds the DCM footprint for a book whose prose was written OUTSIDE
-/// the engine (update_beat_text MCP / ss --edit-beat / ss --import-md — all raw DB
+/// the engine (update_beat_text MCP / prose --edit-beat / prose --import-md — all raw DB
 /// setters that never touch ProseWriterRouter, so DocContextService step 0 never ran).
 /// PURSUED (2026-08-03) shipped 127 beats with ZERO entity docs this way.
 ///
@@ -21,7 +21,7 @@ namespace Prose.Cli;
 /// re-runs are hash-gated no-ops.
 ///
 /// Run AFTER `--generate-node-doc` + `--sync-markdown` so the node bible row exists;
-/// verify with `ss --dcm-viz --slug &lt;slug&gt;` — the Gantt should now show entity docs
+/// verify with `prose --dcm-viz --slug &lt;slug&gt;` — the Gantt should now show entity docs
 /// loading and evicting across the book instead of a flat static set.
 /// </summary>
 public static class DcmBackfillCli
@@ -35,7 +35,7 @@ public static class DcmBackfillCli
 
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --dcm-backfill --slug <slug> [--dry-run]");
+            Console.Error.WriteLine("Usage: prose --dcm-backfill --slug <slug> [--dry-run]");
             return 2;
         }
 
@@ -82,7 +82,7 @@ public static class DcmBackfillCli
         }
 
         Console.WriteLine($"[dcm-backfill] Done — {processed} beats scanned, {totalChanged} entity doc(s) created/updated in MarkdownFiles.");
-        Console.WriteLine($"[dcm-backfill] Verify: ss --dcm-viz --slug {slug}");
+        Console.WriteLine($"[dcm-backfill] Verify: prose --dcm-viz --slug {slug}");
         return 0;
     }
 }

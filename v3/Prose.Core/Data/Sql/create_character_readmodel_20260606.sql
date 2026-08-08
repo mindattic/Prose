@@ -6,7 +6,7 @@
 --
 -- Deliberately NOT system-versioned: refreshing this on every write must not
 -- bloat the temporal history of the canonical Characters table. Backfill /
--- prune via `ss --rebuild-readmodel`. Re-runnable.
+-- prune via `prose --rebuild-readmodel`. Re-runnable.
 
 SET QUOTED_IDENTIFIER ON;
 SET ANSI_NULLS ON;

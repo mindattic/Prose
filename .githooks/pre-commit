@@ -2,7 +2,7 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Pre-commit gate: Prose's trusted LLM voting panel (legion.json:
 # claude / openai / gemini / deepseek) must authenticate LIVE before a commit.
-# ss --legion and the continuity auto-resolver depend on it — no point
+# prose --legion and the continuity auto-resolver depend on it — no point
 # committing when a panel key is dead.
 #
 # Offline / no-network bypass (use sparingly):

@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-cyberware-relational</c> — backfill the CyberwareItems relational
+/// <c>prose --rebuild-cyberware-relational</c> — backfill the CyberwareItems relational
 /// schema from Records.Json blobs. For every cyberware entity (active or inactive),
 /// deserializes the blob → CyberwareData → persists columns + all 4 bridge tables
 /// (Aliases / SideEffects / KnownUsers / StoryHooks) + syncs EntityTags.

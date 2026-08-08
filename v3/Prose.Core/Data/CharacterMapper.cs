@@ -238,20 +238,41 @@ public static class CharacterMapper
         var data = LoadOne(db, id);
         if (data == null) return;
         await UpsertReadModelAsync(db, id, data, ct);
-        await db.SaveChangesAsync(ct);
+        try
+        {
+            await db.SaveChangesAsync(ct);
+        }
+        catch (DbUpdateException ex) when (IsDuplicateKey(ex))
+        {
+            // Two concurrent refreshes (e.g. an MCP tool call and a Codex background
+            // job) both saw no existing row and both tried to INSERT — a check-then-act
+            // race, not corruption. The row now holds an equivalent, freshly-derived
+            // projection from whichever writer landed first; losing this write is safe.
+        }
     }
+
+    private static bool IsDuplicateKey(DbUpdateException ex)
+        => ex.InnerException is Microsoft.Data.SqlClient.SqlException { Number: 2627 };
 
     /// <summary>
     /// Rebuild the entire projection from the relational source of truth (the
     /// one-time slow path) and prune rows for characters that no longer exist.
-    /// Backs <c>ss --rebuild-readmodel</c>. Returns the number of rows written.
+    /// Backs <c>prose --rebuild-readmodel</c>. Returns the number of rows written.
     /// </summary>
     public static async Task<int> RebuildAllReadModelsAsync(ProseDbContext db, bool includeArchived = false, CancellationToken ct = default)
     {
         var all = LoadAll(db, includeArchived);
+        // Defensive dedup: this whole batch shares one SaveChangesAsync, so two
+        // UpsertReadModelAsync calls for the same id (both seeing "no row yet" from
+        // the DB before either is flushed) both queue an Add and the save throws a
+        // PK violation, silently discarding the entire rebuild. LoadAll should never
+        // return the same character twice, but guard the invariant here rather than
+        // let one bad row take down every other character's refresh.
+        var seen = new HashSet<Guid>();
         foreach (var data in all)
         {
-            if (Guid.TryParseExact(data.Id, "N", out var id) || Guid.TryParse(data.Id, out id))
+            if ((Guid.TryParseExact(data.Id, "N", out var id) || Guid.TryParse(data.Id, out id))
+                && seen.Add(id))
                 await UpsertReadModelAsync(db, id, data, ct);
         }
 
@@ -268,16 +289,27 @@ public static class CharacterMapper
     private static async Task UpsertReadModelAsync(ProseDbContext db, Guid id, CharacterData data, CancellationToken ct)
     {
         var json = SerializeReadModel(data);
-        var row = await db.CharacterReadModels.FirstOrDefaultAsync(r => r.CharacterId == id, ct);
+        // IgnoreQueryFilters: CharacterId is the row's only physical key. If a character's
+        // Entity.UniverseId ever drifts from what its (already-written) read-model row was
+        // last stamped with, a universe-scoped lookup here would miss the existing row and
+        // attempt a second INSERT on the same PK — a guaranteed constraint violation. Finding
+        // the true physical row and updating it (which also re-stamps UniverseId correctly)
+        // is always right regardless of scope.
+        var row = await db.CharacterReadModels.IgnoreQueryFilters()
+            .FirstOrDefaultAsync(r => r.CharacterId == id, ct);
+        var universeId = await db.Entities.IgnoreQueryFilters().AsNoTracking()
+            .Where(e => e.Id == id).Select(e => e.UniverseId).FirstOrDefaultAsync(ct);
         if (row == null)
         {
             db.CharacterReadModels.Add(new CharacterReadModel
             {
                 CharacterId = id, Json = json, Version = ReadModelVersion, RefreshedAt = DateTime.UtcNow,
+                UniverseId = universeId,
             });
         }
         else
         {
+            row.UniverseId = universeId;
             row.Json = json;
             row.Version = ReadModelVersion;
             row.RefreshedAt = DateTime.UtcNow;

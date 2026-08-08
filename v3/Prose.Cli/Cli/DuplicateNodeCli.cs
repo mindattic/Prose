@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --duplicate-book (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) --title "New Title"</c>
+/// <c>prose --duplicate-book (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) --title "New Title"</c>
 /// — deep-copy a node (and its sub-node tree) into a fresh independent node.
 /// Every beat becomes a new row (prose + metadata preserved; audio/score/stale
 /// reset), so editing the copy never touches the original.

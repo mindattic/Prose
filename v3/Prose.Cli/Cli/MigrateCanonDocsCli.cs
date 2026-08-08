@@ -10,8 +10,8 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --migrate-canon-docs [--dry-run]                                          (legacy bulk mode)
-/// ss --migrate-canon-docs --type &lt;type&gt; --universe &lt;slug&gt; --file &lt;relPath&gt; [--dry-run]   (single-doc mode)
+/// prose --migrate-canon-docs [--dry-run]                                          (legacy bulk mode)
+/// prose --migrate-canon-docs --type &lt;type&gt; --universe &lt;slug&gt; --file &lt;relPath&gt; [--dry-run]   (single-doc mode)
 ///
 /// Step A2: migrates hand-editable canon .md files into CanonDocument +
 /// CanonDocumentSection rows. After this runs, the .md files become generated

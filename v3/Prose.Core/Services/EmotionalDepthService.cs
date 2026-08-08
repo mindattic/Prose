@@ -25,7 +25,7 @@ namespace Prose.Core.Services;
 // reader-panel gate.
 //
 // Usage:
-//   ss --examine-emotion --slug <slug> [--effort draft|standard|deep] [--json]
+//   prose --examine-emotion --slug <slug> [--effort draft|standard|deep] [--json]
 //   MCP: examine_emotional_depth(nodeIdOrSlug, effort, maxChars)
 
 public enum EmotionalDimension

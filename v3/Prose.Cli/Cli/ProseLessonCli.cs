@@ -10,10 +10,10 @@ namespace Prose.Cli;
 ///
 /// <para>Usage:</para>
 /// <list type="bullet">
-/// <item><c>ss --lesson-add --scope &lt;scope&gt; --kind &lt;kind&gt; --text "&lt;text&gt;"</c><br/>
+/// <item><c>prose --lesson-add --scope &lt;scope&gt; --kind &lt;kind&gt; --text "&lt;text&gt;"</c><br/>
 ///   Adds a lesson. Scope examples: <c>global</c>, <c>node:my-node-slug</c>, <c>beat:&lt;guid&gt;</c>.<br/>
 ///   Kind examples: <c>score-vs-function</c>, <c>delight</c>, <c>voice</c>, <c>pacing</c>, <c>continuity</c>, <c>other</c>.</item>
-/// <item><c>ss --lessons-list [--scope &lt;scope&gt;]</c><br/>
+/// <item><c>prose --lessons-list [--scope &lt;scope&gt;]</c><br/>
 ///   Lists all lessons, optionally filtered by scope prefix.</item>
 /// </list>
 /// </summary>

@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-equipment-relational</c> — backfill the EquipmentItems relational
+/// <c>prose --rebuild-equipment-relational</c> — backfill the EquipmentItems relational
 /// schema from Records.Json blobs. For every equipment entity (active or inactive),
 /// deserializes the blob → EquipmentData → persists columns + all 5 bridge tables
 /// (Aliases / BaseTechnologies / KnownUsers / Specifications / StoryHooks) + syncs

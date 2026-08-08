@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --auto-run</c> — autonomous end-to-end node pipeline.
+/// <c>prose --auto-run</c> — autonomous end-to-end node pipeline.
 ///
 /// Expands all empty beats in a node (or each chapter of a book-level node)
 /// via ProseWriterRouter, reflows each chapter, fires a chapter-close review,
@@ -60,7 +60,7 @@ public static class AutoRunCli
         if (string.IsNullOrWhiteSpace(slug) && string.IsNullOrWhiteSpace(id))
         {
             Console.Error.WriteLine("[auto-run] One of --slug or --id is required.");
-            Console.Error.WriteLine("Usage: ss --auto-run (--slug <slug> | --id <guid>) [--effort draft|standard] [--dry-run] [--force] [--no-repair]");
+            Console.Error.WriteLine("Usage: prose --auto-run (--slug <slug> | --id <guid>) [--effort draft|standard] [--dry-run] [--force] [--no-repair]");
             return 1;
         }
 
@@ -363,7 +363,7 @@ public static class AutoRunCli
         if (actualCost > 0)
             Console.WriteLine($"  Cost    : ${actualCost:F4}");
         if (stats.Written > 0)
-            Console.WriteLine($"  Liberty : ss --liberty-report --slug {slug}  (Rule of Cool; runs async)");
+            Console.WriteLine($"  Liberty : prose --liberty-report --slug {slug}  (Rule of Cool; runs async)");
         Console.WriteLine(separator);
     }
 

@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --generate-canon-md</c> — regenerate canon document .md files from DB.
+/// <c>prose --generate-canon-md</c> — regenerate canon document .md files from DB.
 ///
 /// Source of truth is <c>CanonDocuments</c> + <c>CanonDocumentSections</c>.
 /// The disk files are generated read-only mirrors; never hand-edit them.
@@ -33,8 +33,8 @@ public static class CanonDocumentCli
         {
             var validTypes = string.Join(", ", await registry.ListActiveTypeNamesAsync());
             Console.Error.WriteLine("[generate-canon-md] --type <type> or --all is required.");
-            Console.Error.WriteLine($"Usage: ss --generate-canon-md --type <{validTypes}>");
-            Console.Error.WriteLine("       ss --generate-canon-md --all");
+            Console.Error.WriteLine($"Usage: prose --generate-canon-md --type <{validTypes}>");
+            Console.Error.WriteLine("       prose --generate-canon-md --all");
             return 2;
         }
 

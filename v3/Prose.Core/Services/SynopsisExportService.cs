@@ -19,7 +19,7 @@ namespace Prose.Core.Services;
 /// persists it to <see cref="NodeChapterSummary"/> (content-hash cached, so unchanged
 /// chapters never re-bill), and writes the assembled <c>story-synopsis.txt</c> into the
 /// book's export folder beside its .docx/.epub/.pdf exports. Runs as part of
-/// <c>ss --export-node</c> and standalone via <c>ss --export-synopsis</c>.
+/// <c>prose --export-node</c> and standalone via <c>prose --export-synopsis</c>.
 /// </summary>
 public sealed class SynopsisExportService(
     IDbContextFactory<ProseDbContext> dbFactory,

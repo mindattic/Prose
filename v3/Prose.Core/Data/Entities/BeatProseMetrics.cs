@@ -2,8 +2,8 @@ namespace Prose.Core.Data.Entities;
 
 /// <summary>
 /// Per-beat prose quality metrics computed by <see cref="Prose.Core.Services.BeatProseMetricsService"/>.
-/// CPU-only — no LLM calls. Upserted nightly by <c>ss --compute-metrics</c>.
-/// Used by <c>ss --morning-report</c> and the Python <c>score_correlation.py</c> phase.
+/// CPU-only — no LLM calls. Upserted nightly by <c>prose --compute-metrics</c>.
+/// Used by <c>prose --morning-report</c> and the Python <c>score_correlation.py</c> phase.
 /// </summary>
 public class BeatProseMetrics
 {

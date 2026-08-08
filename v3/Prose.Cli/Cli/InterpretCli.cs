@@ -6,12 +6,12 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for <see cref="FactInterpreterService"/>.
 ///
-///   ss --interpret --text "..."
-///   ss --interpret --file path.txt
+///   prose --interpret --text "..."
+///   prose --interpret --file path.txt
 ///       Run extraction in DRY-RUN mode (default). Prints what entities + edges
 ///       WOULD be created. Nothing committed.
 ///
-///   ss --interpret --file path.txt --commit
+///   prose --interpret --file path.txt --commit
 ///       Actually wire the resolved entities + edges into canon.
 ///
 ///   Optional flags:
@@ -90,7 +90,7 @@ public static class InterpretCli
     private static void PrintUsage()
     {
         Console.WriteLine("Usage:");
-        Console.WriteLine("  ss --interpret --text \"...\"   [--commit] [--auto-create] [--no-ledger] [--tag <source>]");
-        Console.WriteLine("  ss --interpret --file path.txt  [--commit] [--auto-create] [--no-ledger] [--tag <source>]");
+        Console.WriteLine("  prose --interpret --text \"...\"   [--commit] [--auto-create] [--no-ledger] [--tag <source>]");
+        Console.WriteLine("  prose --interpret --file path.txt  [--commit] [--auto-create] [--no-ledger] [--tag <source>]");
     }
 }

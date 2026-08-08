@@ -9,7 +9,7 @@ namespace Prose.Core.Services.Audit;
 /// Audits a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms). Each numbered
 /// item in that section is parsed live from CanonDocumentSections every run and becomes its
 /// own ILlmAuditRule — there is no hand-duplicated C# array of mannerisms to drift out of
-/// sync with CRAFT.md. Edit §8 via set_canon_section MCP, re-run ss --craft-audit, the new
+/// sync with CRAFT.md. Edit §8 via set_canon_section MCP, re-run prose --craft-audit, the new
 /// wording is what gets checked next time.
 /// </summary>
 public class CraftRuleAuditService(
@@ -61,7 +61,7 @@ public class CraftRuleAuditService(
             .FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException(
                 $"CRAFT.md section '{BannedMannerismsSectionKey}' not found — has CRAFT.md been migrated " +
-                "(ss --migrate-canon-docs --type CraftGuide ...)?");
+                "(prose --migrate-canon-docs --type CraftGuide ...)?");
 
         var mannerisms = ParseMannerisms(sectionContent);
         if (mannerisms.Count == 0)

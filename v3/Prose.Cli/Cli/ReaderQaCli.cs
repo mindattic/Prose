@@ -8,7 +8,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --reader-qa (--slug &lt;slug&gt; | --all) [--force] [--json]</c>
+/// <c>prose --reader-qa (--slug &lt;slug&gt; | --all) [--force] [--json]</c>
 ///
 /// Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality
 /// instrument, replacing persona score panels. Phase 1 runs comprehension probes:
@@ -40,7 +40,7 @@ public static class ReaderQaCli
 
         if (!all && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --reader-qa (--slug <slug> | --all) [--gripe-pass [--readers N]] [--force] [--json]");
+            Console.Error.WriteLine("Usage: prose --reader-qa (--slug <slug> | --all) [--gripe-pass [--readers N]] [--force] [--json]");
             return 2;
         }
         if (gripePass && all)
@@ -77,7 +77,7 @@ public static class ReaderQaCli
             foreach (var g in gr.Confirmed.OrderBy(g => g.BeatNumber))
                 Console.WriteLine($"      [{g.Severity.ToUpperInvariant()}] beat #{g.BeatNumber} ({g.Voters}v): {g.Complaint}");
             Console.WriteLine($"[reader-qa]   {gr.FindingsFiled} finding(s) filed (Category=ReaderGripe). Apply via " +
-                              $"update_beat_text + ss --duel, or apply_finding.");
+                              $"update_beat_text + prose --duel, or apply_finding.");
             if (json)
                 Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(gr,
                     new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));

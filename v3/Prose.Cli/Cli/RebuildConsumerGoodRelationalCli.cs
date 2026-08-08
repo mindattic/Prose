@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-consumer-good-relational</c> — backfill the ConsumerGoods relational
+/// <c>prose --rebuild-consumer-good-relational</c> — backfill the ConsumerGoods relational
 /// schema from Records.Json blobs. For every consumer_good entity (active or inactive),
 /// deserializes the blob → ConsumerGoodData → persists columns + StoryHooks bridge +
 /// syncs EntityTags.

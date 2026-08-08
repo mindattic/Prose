@@ -237,7 +237,7 @@ public static class PsionicMapper
     /// Returns the number of psionic entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-psionic-relational</c>.
+    /// Run once via <c>prose --rebuild-psionic-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

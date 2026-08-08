@@ -343,8 +343,8 @@ sourcing category (biblical / apocryphal / classical / Miltonic-invention) once
 - [x] `docs/milton/milton-biography.md`, `character-catalog.md`, `theology-and-sources.md`
       written from the three background research passes (WebSearch-verified, cited, open
       questions flagged)
-- [x] Entity seeding complete — 21 characters + 5 places seeded via `ss --add-character --dir` /
-      `ss --add-place --dir`, universe `gspl` (seed JSON in `tools/seeds/tfah/`)
+- [x] Entity seeding complete — 21 characters + 5 places seeded via `prose --add-character --dir` /
+      `prose --add-place --dir`, universe `gspl` (seed JSON in `tools/seeds/tfah/`)
 - [x] BookNode `TFAH` created in DB (slug `the-first-anti-hero-019fc13f`, universe `gspl`,
       `Author` = "Pulpit Press" per GSPL §3a, `NodeCode` = `TFAH` set at creation)
 - [x] ChapterNodes created (12 numbered chapters, SortKey 100-1200, each seeded with its Milton
@@ -353,7 +353,7 @@ sourcing category (biblical / apocryphal / classical / Miltonic-invention) once
       narrative/nonfiction split, the proposed "Blind Poet" form device) — written via direct SQL
       to `Nodes.NodeBible` in lieu of MCP `set_book_bible` (not available in this session's
       toolset); content is equivalent in substance and authorship (hand-authored, not LLM-drafted)
-- [x] Structural blueprint generated (`ss --generate-blueprint`) against the 58-beat spine —
+- [x] Structural blueprint generated (`prose --generate-blueprint`) against the 58-beat spine —
       confirmed nonlinear structure (War in Heaven as Raphael's flashback, matching Milton's own
       *in medias res*), mixed resolution, "The Blind Poet" form device. Cost $0.05.
 - [x] **Real C# bug found + fixed**: `DocContextService.PrepareForNodeAsync` resolved the "node"
@@ -370,7 +370,7 @@ sourcing category (biblical / apocryphal / classical / Miltonic-invention) once
       construction issue not worth further blind patching. **Chapter 1 (all 6 beats) hand-authored
       directly instead** — named characters, real spoken dialogue (Satan/Beelzebub exchange, the
       full "better to reign in Hell" address to the host), third-person past tense, ~27,000 chars.
-      Saved via `ss --beat update --text -`. This is now the standing production method for TFAH:
+      Saved via `prose --beat update --text -`. This is now the standing production method for TFAH:
       **direct hand-authored novel prose**, not automated beat generation.
 - [ ] "The Blind Poet" interstitial device (§9) — proposed, not yet written for any chapter.
 - [ ] Title form confirmed: user's message used both "The First Anti-Hero" and "The First

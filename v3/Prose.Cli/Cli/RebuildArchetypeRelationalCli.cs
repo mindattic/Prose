@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-archetype-relational</c> — backfill the Archetypes relational
+/// <c>prose --rebuild-archetype-relational</c> — backfill the Archetypes relational
 /// schema from Records.Json blobs. For every active archetype entity, deserializes
 /// the blob → ArchetypeData → persists columns + all 5 bridge tables (WillAlways /
 /// WillNever / Unless / SimilarTo / OppositeOf) + syncs EntityTags.

@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --prune-disabled --slug &lt;slug&gt; [--dry-run]</c>
+/// <c>prose --prune-disabled --slug &lt;slug&gt; [--dry-run]</c>
 ///
 /// Hard-deletes every disabled (IsEnabled=false) beat from a book node and its
 /// chapter children (SS-A43). Use this when the book is publish-ready and you
@@ -40,7 +40,7 @@ public static class PruneDisabledCli
         if (string.IsNullOrWhiteSpace(slugOrId))
         {
             Console.Error.WriteLine("[prune-disabled] --slug <slug|id> is required.");
-            Console.Error.WriteLine("  ss --prune-disabled --slug <slug> [--dry-run] [--yes]");
+            Console.Error.WriteLine("  prose --prune-disabled --slug <slug> [--dry-run] [--yes]");
             return 1;
         }
 

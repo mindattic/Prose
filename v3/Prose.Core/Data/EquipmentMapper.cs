@@ -268,7 +268,7 @@ public static class EquipmentMapper
     /// relational row yet. Returns the number of equipment entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-equipment-relational</c>.
+    /// Run once via <c>prose --rebuild-equipment-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

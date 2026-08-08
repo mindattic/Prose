@@ -8,11 +8,11 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for <see cref="AskService"/> — hybrid RAG over the canon.
 ///
-///   ss --ask "Question"                            free-form Q&amp;A (entities + story prose)
-///   ss --ask "Question" --k 12                     more retrieved entity context
-///   ss --ask "Question" --type character           restrict entity retrieval to one EntityType
-///   ss --ask "Question" --node &lt;slug&gt;            scope the answer to one story's beats
-///   ss --ask "Question" --book &lt;node-slug&gt;       alias for --node
+///   prose --ask "Question"                            free-form Q&amp;A (entities + story prose)
+///   prose --ask "Question" --k 12                     more retrieved entity context
+///   prose --ask "Question" --type character           restrict entity retrieval to one EntityType
+///   prose --ask "Question" --node &lt;slug&gt;            scope the answer to one story's beats
+///   prose --ask "Question" --book &lt;node-slug&gt;       alias for --node
 ///
 /// When scoped to a node, that node's beats are embedded (drift-skipped) and
 /// its full text is used as context, so questions about one story are answered
@@ -26,7 +26,7 @@ public static class AskCli
         var question = idx >= 0 && idx + 1 < args.Length ? args[idx + 1] : null;
         if (string.IsNullOrWhiteSpace(question) || question.StartsWith("--"))
         {
-            Console.Error.WriteLine("usage: ss --ask \"Your question\" [--k 8] [--type character] [--node <slug>]");
+            Console.Error.WriteLine("usage: prose --ask \"Your question\" [--k 8] [--type character] [--node <slug>]");
             return 1;
         }
 

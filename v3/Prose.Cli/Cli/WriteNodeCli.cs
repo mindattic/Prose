@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --write-story</c> — create a new node via the bible-first workflow:
+/// <c>prose --write-story</c> — create a new node via the bible-first workflow:
 ///
 ///   1. Insert a Node row (status=draft, no beats yet).
 ///   2. Call NodeBibleService to generate the node bible and planned beats.
@@ -50,7 +50,7 @@ public static class WriteNodeCli
         if (string.IsNullOrWhiteSpace(seed))
         {
             Console.Error.WriteLine("[write-story] --seed is required.");
-            Console.Error.WriteLine("Usage: ss --write-story --seed \"...\" [--title \"...\"] [--kind episode] [--beats 12] [--compete N] [--bible-only]");
+            Console.Error.WriteLine("Usage: prose --write-story --seed \"...\" [--title \"...\"] [--kind episode] [--beats 12] [--compete N] [--bible-only]");
             return 2;
         }
 

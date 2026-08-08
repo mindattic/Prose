@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --generate-node-doc</c> — assemble the unified Story Context Document for a node.
+/// <c>prose --generate-node-doc</c> — assemble the unified Story Context Document for a node.
 ///
 /// Merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine
 /// from the DB, writes the result to both <c>Nodes.NodeBible</c> and
@@ -31,8 +31,8 @@ public static class NodeDocCli
         if (!all && string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[generate-node-doc] --slug <slug> or --all is required.");
-            Console.Error.WriteLine("Usage: ss --generate-node-doc --slug <slug>");
-            Console.Error.WriteLine("       ss --generate-node-doc --all");
+            Console.Error.WriteLine("Usage: prose --generate-node-doc --slug <slug>");
+            Console.Error.WriteLine("       prose --generate-node-doc --all");
             return 2;
         }
 

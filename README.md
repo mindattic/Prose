@@ -103,16 +103,16 @@ The router coordinates this enrichment chain before handing off to `BeatGenerato
 
 1. Assemble `BeatContext` (X-Ray context via `SceneContextAssembler`, `NodeId` always set)
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)`
-3. After writing, run `ss --examine-emotion --slug <slug>` (8-dimension emotional scoring)
-4. After enough beats scored, run `ss --update-register-exemplars --slug <slug>` (update voice register)
-5. After book complete, run `ss --book-audit --slug <slug>` (gateway/sequel commandments)
-6. After book complete, run `ss --plant-audit --slug <slug>` (orphan plant check)
+3. After writing, run `prose --examine-emotion --slug <slug>` (8-dimension emotional scoring)
+4. After enough beats scored, run `prose --update-register-exemplars --slug <slug>` (update voice register)
+5. After book complete, run `prose --book-audit --slug <slug>` (gateway/sequel commandments)
+6. After book complete, run `prose --plant-audit --slug <slug>` (orphan plant check)
 
 #### Coverage monitoring
 
 ```powershell
-ss --workflow-status --slug <slug>   # per-book service coverage matrix + gaps
-ss --workflow-status --all           # global utilization across all books
+prose --workflow-status --slug <slug>   # per-book service coverage matrix + gaps
+prose --workflow-status --all           # global utilization across all books
 ```
 
 MCP equivalents: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
@@ -131,7 +131,7 @@ claude mcp add prose dotnet run --project D:/Projects/MindAttic/Prose/v3/Prose.M
 
 ## CLI Reference
 
-The canonical invocation alias `ss` expands to:
+The canonical invocation alias `prose` expands to:
 
 ```powershell
 dotnet run --project v3/Prose.Cli -- <args>
@@ -143,43 +143,43 @@ All ~152 handlers are dispatched from `v3/Prose.Cli/Program.cs`.
 
 | Command | What it does |
 |---|---|
-| `ss --review-book --slug <slug> [--effort draft\|standard\|deep]` | Multi-persona scored review; targets ≥82% standalone, ≥85% cumulative |
-| `ss --examine-emotion --slug <slug>` | 8-dimension per-beat emotional scoring (0–4 per dimension) |
-| `ss --book-audit --slug <slug>` | Audits gateway/sequel commandments for the book |
-| `ss --plant-audit --slug <slug>` | Checks for orphaned plants (planted but never paid off) |
-| `ss --export-node [--slug <slug>]` | Exports docx + EPUB + PDF + audio manuscript `.txt`; prunes stale versions; lands in `{Title}/V{N}/` |
-| `ss --workflow-status --slug <slug>` | Per-book service coverage matrix showing which pipeline services fired and which are gaps |
-| `ss --workflow-status --all` | Global utilization matrix across all books |
-| `ss --generate-cover --book-code CODE --generator NAME --prompt "TEXT"` | AI cover generation via ChatGPT / Gemini / Ideogram / Flux; stores prompt in `CoverImagePrompts`, asset in `Assets` |
-| `ss --import-cover --file PATH [--book-code CODE] [--type TYPE]` | Import a local image into the cover asset library |
-| `ss --audit-book [--deep] [--model haiku]` | Repeatable full-QA orchestrator — structural + prose + continuity |
-| `ss --diagnose-book --slug <slug>` | 12-check structural pre-flight without full review cost |
-| `ss --expand-beat --slug <slug>` | Expand a single beat using the full enriched pipeline |
-| `ss --edit-book --slug <slug>` | Review-weighted auto-editor pass |
-| `ss --reflow-book --slug <slug>` | Bounded copy-edit: fixes paragraph breaks, question marks, dialogue attribution without rewriting |
-| `ss --check-fidelity --slug <slug>` | Cosine-similarity check of prose vs. book bible/synopsis |
-| `ss --check-prose --slug <slug>` | Regex linter for banned prose patterns (pseudo-profound, cliché, on-the-nose) |
-| `ss --check-canon --slug <slug>` | Chunked semantic + LLM sweep for canon rule violations |
-| `ss --timeline-check --slug <slug>` | Deterministic dead-character-acting + wound-regression checks |
-| `ss --assemble-scene --slug <slug>` | X-Ray scene context assembly |
-| `ss --narrative-science --slug <slug>` | Sacred-flaw / five-act / scene-engagement analysis |
-| `ss --continuity --slug <slug>` | Extract and validate continuity claims against live entity state |
-| `ss --backfill-coverage --slug <slug>` | Non-destructive: logs router coverage for existing beats from synopsis without regenerating |
-| `ss --doc-context --slug <slug> [--goal "TEXT"]` | Dry-run the Doc Context Stack — shows which docs would load for a beat |
-| `ss --sync-markdown` | Sync Codex `.md` files from disk to DB (auto-classifies into always/node/topic tiers) |
-| `ss --rebuild-graph` | Rebuild in-memory entity relationship graph from SQL |
-| `ss --reembed` | Re-embed all entities via OpenAI `text-embedding-3-small` |
-| `ss --review-entity --id <guid>` | Legion-persona quality review of a single canon entity |
-| `ss --add-character` / `--add-place` / `--add-corponation` | Seed a new typed entity into the DB |
-| `ss --migrate-sql` | Apply pending hand-written T-SQL schema migrations |
-| `ss --universe <id>` | Set the active universe scope (GLMZ / Fantasy) for subsequent commands |
+| `prose --review-book --slug <slug> [--effort draft\|standard\|deep]` | Multi-persona scored review; targets ≥82% standalone, ≥85% cumulative |
+| `prose --examine-emotion --slug <slug>` | 8-dimension per-beat emotional scoring (0–4 per dimension) |
+| `prose --book-audit --slug <slug>` | Audits gateway/sequel commandments for the book |
+| `prose --plant-audit --slug <slug>` | Checks for orphaned plants (planted but never paid off) |
+| `prose --export-node [--slug <slug>]` | Exports docx + EPUB + PDF + audio manuscript `.txt`; prunes stale versions; lands in `{Title}/V{N}/` |
+| `prose --workflow-status --slug <slug>` | Per-book service coverage matrix showing which pipeline services fired and which are gaps |
+| `prose --workflow-status --all` | Global utilization matrix across all books |
+| `prose --generate-cover --book-code CODE --generator NAME --prompt "TEXT"` | AI cover generation via ChatGPT / Gemini / Ideogram / Flux; stores prompt in `CoverImagePrompts`, asset in `Assets` |
+| `prose --import-cover --file PATH [--book-code CODE] [--type TYPE]` | Import a local image into the cover asset library |
+| `prose --audit-book [--deep] [--model haiku]` | Repeatable full-QA orchestrator — structural + prose + continuity |
+| `prose --diagnose-book --slug <slug>` | 12-check structural pre-flight without full review cost |
+| `prose --expand-beat --slug <slug>` | Expand a single beat using the full enriched pipeline |
+| `prose --edit-book --slug <slug>` | Review-weighted auto-editor pass |
+| `prose --reflow-book --slug <slug>` | Bounded copy-edit: fixes paragraph breaks, question marks, dialogue attribution without rewriting |
+| `prose --check-fidelity --slug <slug>` | Cosine-similarity check of prose vs. book bible/synopsis |
+| `prose --check-prose --slug <slug>` | Regex linter for banned prose patterns (pseudo-profound, cliché, on-the-nose) |
+| `prose --check-canon --slug <slug>` | Chunked semantic + LLM sweep for canon rule violations |
+| `prose --timeline-check --slug <slug>` | Deterministic dead-character-acting + wound-regression checks |
+| `prose --assemble-scene --slug <slug>` | X-Ray scene context assembly |
+| `prose --narrative-science --slug <slug>` | Sacred-flaw / five-act / scene-engagement analysis |
+| `prose --continuity --slug <slug>` | Extract and validate continuity claims against live entity state |
+| `prose --backfill-coverage --slug <slug>` | Non-destructive: logs router coverage for existing beats from synopsis without regenerating |
+| `prose --doc-context --slug <slug> [--goal "TEXT"]` | Dry-run the Doc Context Stack — shows which docs would load for a beat |
+| `prose --sync-markdown` | Sync Codex `.md` files from disk to DB (auto-classifies into always/node/topic tiers) |
+| `prose --rebuild-graph` | Rebuild in-memory entity relationship graph from SQL |
+| `prose --reembed` | Re-embed all entities via OpenAI `text-embedding-3-small` |
+| `prose --review-entity --id <guid>` | Legion-persona quality review of a single canon entity |
+| `prose --add-character` / `--add-place` / `--add-corponation` | Seed a new typed entity into the DB |
+| `prose --migrate-sql` | Apply pending hand-written T-SQL schema migrations |
+| `prose --universe <id>` | Set the active universe scope (GLMZ / Fantasy) for subsequent commands |
 
 #### Local / rented-GPU prose generation
 
 Route `--expand-beat` to any OpenAI-compatible endpoint without mutating `appsettings.json`:
 
 ```powershell
-ss --expand-beat --slug <slug> `
+prose --expand-beat --slug <slug> `
    --local-url  https://<runpod-pod-id>-11434.proxy.runpod.net/v1/chat/completions `
    --local-model qwen2.5-32b-writer
 ```
@@ -286,7 +286,7 @@ The engine supports routing prose generation to any OpenAI-compatible endpoint �
 3. Use the proxy URL in `--expand-beat`:
 
 ```powershell
-ss --expand-beat --slug <slug> `
+prose --expand-beat --slug <slug> `
    --local-url  https://<runpod-pod-id>-11434.proxy.runpod.net/v1/chat/completions `
    --local-model qwen2.5:32b-instruct
 ```
@@ -298,7 +298,7 @@ An L40S 48 GB at ~$1/hr handles `qwen2.5:32b-instruct` (Q4_K_M) comfortably with
 `EntityRatingService` and `EntityReviewService` run Legion-persona quality voting on canon entities in a distributed queue (10 ballots per entity across the ~10,532 entity corpus). Trigger via:
 
 ```powershell
-ss --review-entity --id <entity-guid>
+prose --review-entity --id <entity-guid>
 ```
 
 MCP equivalent: the `Tools.Quality.cs` family (`review_book`, `scan_chapter_quality`, `check_prose`).

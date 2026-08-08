@@ -221,7 +221,7 @@ public static class SubsidiaryMapper
     /// relational row yet. Returns the number of subsidiary entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-subsidiary-relational</c>.
+    /// Run once via <c>prose --rebuild-subsidiary-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

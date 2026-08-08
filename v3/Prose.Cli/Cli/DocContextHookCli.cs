@@ -11,7 +11,7 @@ namespace Prose.Cli;
 /// <c>additionalContext</c> injects the rotating cast for this turn. ALWAYS exits 0 and emits valid
 /// JSON ({} on any error or no match) so a failure can never block the prompt.
 ///
-///   ss --doc-context-hook        (stdin = Claude Code hook payload)
+///   prose --doc-context-hook        (stdin = Claude Code hook payload)
 /// </summary>
 public static class DocContextHookCli
 {

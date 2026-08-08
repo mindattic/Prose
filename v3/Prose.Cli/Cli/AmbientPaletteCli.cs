@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --ambient-palette --character &lt;characterId&gt; [--as-of "date"]
+/// prose --ambient-palette --character &lt;characterId&gt; [--as-of "date"]
 /// Prints the sensory detail palette for a character's carried gear.
 /// Use the output as a prompt injection block when writing a scene.
 /// </summary>
@@ -32,7 +32,7 @@ public static class AmbientPaletteCli
 
         if (characterId == null)
         {
-            Console.Error.WriteLine("Usage: ss --ambient-palette --character <characterId> [--as-of date]");
+            Console.Error.WriteLine("Usage: prose --ambient-palette --character <characterId> [--as-of date]");
             return 1;
         }
 

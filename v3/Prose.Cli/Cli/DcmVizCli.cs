@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --dcm-viz --slug &lt;slug&gt; [--out &lt;dir&gt;]</c>
+/// <c>prose --dcm-viz --slug &lt;slug&gt; [--out &lt;dir&gt;]</c>
 ///
 /// Dry-runs the Dynamic Context Memory (DCM) stack across every enabled beat of a book and
 /// generates a self-contained <c>&lt;CODE&gt;-dcm-viz.htm</c> file showing:
@@ -32,7 +32,7 @@ public static class DcmVizCli
 
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --dcm-viz --slug <slug> [--out <dir>]");
+            Console.Error.WriteLine("Usage: prose --dcm-viz --slug <slug> [--out <dir>]");
             return 1;
         }
 

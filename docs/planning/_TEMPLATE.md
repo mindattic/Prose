@@ -129,7 +129,7 @@ What does it contribute that adjacent stories don't?
 
 ## 9. Structural Blueprint Seed {#SS-BRIEF-<CODE>-§9}
 
-Preliminary anti-tell decisions to seed `ss --generate-blueprint`. These are provisional;
+Preliminary anti-tell decisions to seed `prose --generate-blueprint`. These are provisional;
 `--generate-blueprint` will refine and commit them.
 
 **Resolution mode** (pick one — never "protagonist achieves internal peace"):
@@ -164,11 +164,11 @@ before prose begins. Cross-check against the Entity Seeding Roadmap in `docs/ser
 
 | Entity | Type | In DB? | DB seed command / MCP tool |
 |---|---|---|---|
-| | character | [ ] | `ss --add-character --name "..." --species human` |
+| | character | [ ] | `prose --add-character --name "..." --species human` |
 | | place | [ ] | MCP `add_entity` |
-| | faction | [ ] | `ss --add-corponation --name "..."` |
+| | faction | [ ] | `prose --add-corponation --name "..."` |
 
-Run `ss --scan-entity-mentions --slug <slug>` after each chapter draft to keep coverage current.
+Run `prose --scan-entity-mentions --slug <slug>` after each chapter draft to keep coverage current.
 
 ---
 

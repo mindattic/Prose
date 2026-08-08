@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --update-register-exemplars (--slug &lt;slug&gt; | --id &lt;guid&gt;) [--top N] [--dry-run]
+/// prose --update-register-exemplars (--slug &lt;slug&gt; | --id &lt;guid&gt;) [--top N] [--dry-run]
 ///
 /// Closes the register feedback loop: surfaces the top-N beats by EmotionalScore,
 /// asks the LLM which register law each beat best demonstrates, and appends them
@@ -42,7 +42,7 @@ public static class UpdateRegisterExemplarsCli
 
         if (slug is null && id is null)
         {
-            Console.Error.WriteLine("Usage: ss --update-register-exemplars (--slug <slug> | --id <guid>) [--top N] [--dry-run]");
+            Console.Error.WriteLine("Usage: prose --update-register-exemplars (--slug <slug> | --id <guid>) [--top N] [--dry-run]");
             return 1;
         }
 

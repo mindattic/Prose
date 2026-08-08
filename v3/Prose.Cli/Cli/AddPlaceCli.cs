@@ -18,9 +18,9 @@ namespace Prose.Cli;
 /// description, atmosphere, demographics, economy, power_structure, dangers,
 /// opportunities, story_hooks, connections, coordinates, tags, aliases, …).
 ///
-///   ss --add-place --file path.json
-///   ss --add-place --file path.json --print   (echo the saved record back)
-///   ss --add-place --dir path/to/folder       (one DistrictData JSON file per place;
+///   prose --add-place --file path.json
+///   prose --add-place --file path.json --print   (echo the saved record back)
+///   prose --add-place --dir path/to/folder       (one DistrictData JSON file per place;
 ///                                               imports all *.json in one process)
 ///
 /// Note: embeddings + Edges are populated by their own passes (re-embed /
@@ -37,7 +37,7 @@ public static class AddPlaceCli
         var file = ArgValue(args, "--file");
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
-            Console.Error.WriteLine("usage: ss --add-place --file path.json [--print]");
+            Console.Error.WriteLine("usage: prose --add-place --file path.json [--print]");
             return 1;
         }
 

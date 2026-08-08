@@ -8,7 +8,7 @@ namespace Prose.Cli;
 /// recovery via --as-of so any historical version can be resurfaced from the
 /// MarkdownFiles_History temporal table.
 ///
-///   ss --restore-markdown [--file &lt;relativePath&gt;] [--as-of &lt;datetime-utc&gt;] [--dry-run] [--list]
+///   prose --restore-markdown [--file &lt;relativePath&gt;] [--as-of &lt;datetime-utc&gt;] [--dry-run] [--list]
 ///
 ///   --file   Restore only this one file (e.g. "CLAUDE.md" or "docs/BIBLE.md").
 ///            Omit to restore all tracked files.

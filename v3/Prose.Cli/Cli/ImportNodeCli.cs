@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --import-book --file path.node</c> — materialize a node from a
+/// <c>prose --import-book --file path.node</c> — materialize a node from a
 /// human-authored "beat + gap + beat" text file. The complement to
 /// <see cref="WriteNodeCli"/> (which generates nodes via the LLM) — this
 /// is for hand-authored content (a draft pasted in from a chat, a transcript,
@@ -68,7 +68,7 @@ public static class ImportNodeCli
         if (string.IsNullOrWhiteSpace(file))
         {
             Console.Error.WriteLine("[import-book] --file is required (or '-' for stdin).");
-            Console.Error.WriteLine("Usage: ss --import-book --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]");
+            Console.Error.WriteLine("Usage: prose --import-book --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]");
             return 2;
         }
 
@@ -205,7 +205,7 @@ public static class ImportNodeCli
         Console.WriteLine($"   Kind:  {kind}");
         if (parentNodeId.HasValue) Console.WriteLine($"   Parent: {parentSlug} ({parentNodeId})");
         Console.WriteLine($"   URL:   https://localhost:7103/node/{slug}");
-        Console.WriteLine($"   Next:  open the URL to edit, or run ss --narrate-book --slug {slug} to record.");
+        Console.WriteLine($"   Next:  open the URL to edit, or run prose --narrate-book --slug {slug} to record.");
         return 0;
     }
 

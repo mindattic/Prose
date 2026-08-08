@@ -4,7 +4,7 @@ namespace Prose.Core.Services.Operator.KdpTools;
 
 /// <summary>
 /// Closes the loop after KDP confirms a book actually published: calls
-/// <see cref="KdpMarkPublishedService"/> directly (same service <c>ss --kdp-mark-published</c>
+/// <see cref="KdpMarkPublishedService"/> directly (same service <c>prose --kdp-mark-published</c>
 /// wraps) so the book drops off the "needs republish" list on the next manifest run.
 /// </summary>
 public class MarkPublishedTool : IKdpTool

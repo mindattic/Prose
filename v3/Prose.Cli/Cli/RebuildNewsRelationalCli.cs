@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-news-relational</c> — backfill the News relational schema from
+/// <c>prose --rebuild-news-relational</c> — backfill the News relational schema from
 /// Records.Json blobs. For every active news entity, deserializes the blob → NewsData
 /// → persists scalar columns + bridge rows (EntitiesInvolved / Locations) + syncs EntityTags.
 ///

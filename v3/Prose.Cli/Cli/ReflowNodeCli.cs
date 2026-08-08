@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --reflow-book (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--apply]</c>
+/// <c>prose --reflow-book (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--apply]</c>
 /// — copy-edit every beat in a node: proper paragraph/dialogue spacing, a "?" on
 /// questions that lack one, and "asks"/"asked" (not "says"/"said") on question
 /// dialogue. Dry-run by default (prints a before/after report and writes NOTHING);

@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --generate-event-list --slug &lt;slug&gt; [--force] [--limit N] [--dry-run] [--model &lt;id&gt;]
+/// prose --generate-event-list --slug &lt;slug&gt; [--force] [--limit N] [--dry-run] [--model &lt;id&gt;]
 ///
 /// Fills the per-beat plot-EVENT one-liner (Beat.EventSummary) — "what happened" — hash-gated
 /// on TextHash so unchanged beats cost nothing on re-run. Haiku by default.
@@ -31,7 +31,7 @@ public static class GenerateEventListCli
         }
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --generate-event-list --slug <slug> [--force] [--limit N] [--dry-run] [--model <id>] [--beats 30400,30450,...]");
+            Console.Error.WriteLine("Usage: prose --generate-event-list --slug <slug> [--force] [--limit N] [--dry-run] [--model <id>] [--beats 30400,30450,...]");
             return 2;
         }
 
@@ -51,7 +51,7 @@ public static class GenerateEventListCli
 }
 
 /// <summary>
-/// ss --export-event-list --slug &lt;slug&gt;
+/// prose --export-event-list --slug &lt;slug&gt;
 ///
 /// Writes the current DB state (no LLM call) to {CODE}-Events.txt in the node's
 /// publish-export folder (same layout as description.txt / {CODE}-dcm-viz.htm — not
@@ -68,7 +68,7 @@ public static class ExportEventListCli
         }
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --export-event-list --slug <slug>");
+            Console.Error.WriteLine("Usage: prose --export-event-list --slug <slug>");
             return 2;
         }
 

@@ -270,7 +270,7 @@ public static class AutomatonMapper
     /// Returns the number of automaton entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-automaton-relational</c>.
+    /// Run once via <c>prose --rebuild-automaton-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

@@ -9,16 +9,16 @@ namespace Prose.Cli;
 /// <summary>
 /// Unified CLI surface for Book operations. Subcommands:
 ///
-///   ss --book list
-///   ss --book new --title "..." [--tagline "..."] [--premise "..."] [--arc "..."] [--protagonist "..."]
-///   ss --book show &lt;bookId&gt;
-///   ss --book chapters &lt;bookId&gt;
-///   ss --book absorb &lt;bookId&gt; --chapter &lt;chapterId&gt;
-///   ss --book review &lt;bookId&gt;
-///   ss --book apply &lt;bookId&gt; &lt;findingId&gt;
-///   ss --book export &lt;bookId&gt; [--format pdf|epub|html|md]
-///   ss --book export-all --format &lt;pdf|epub|html|md&gt;
-///   ss --book archive &lt;bookId&gt; --confirm &lt;bookId&gt;
+///   prose --book list
+///   prose --book new --title "..." [--tagline "..."] [--premise "..."] [--arc "..."] [--protagonist "..."]
+///   prose --book show &lt;bookId&gt;
+///   prose --book chapters &lt;bookId&gt;
+///   prose --book absorb &lt;bookId&gt; --chapter &lt;chapterId&gt;
+///   prose --book review &lt;bookId&gt;
+///   prose --book apply &lt;bookId&gt; &lt;findingId&gt;
+///   prose --book export &lt;bookId&gt; [--format pdf|epub|html|md]
+///   prose --book export-all --format &lt;pdf|epub|html|md&gt;
+///   prose --book archive &lt;bookId&gt; --confirm &lt;bookId&gt;
 ///
 /// Every operation matches what the chapters page does in the UI — parity, not divergence.
 /// </summary>

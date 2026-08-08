@@ -1,4 +1,4 @@
-// PROMOTION CANDIDATE (RFC 0002 / foundations doctrine): becomes `ss --export-chapters` + MCP tool.
+// PROMOTION CANDIDATE (RFC 0002 / foundations doctrine): becomes `prose --export-chapters` + MCP tool.
 // Interim home: tools/export-chapters.js. Usage: node tools/export-chapters.js <get_strand-dump.json>
 // Re-export every chapter of bushido_coda as txt to Downloads after the sweep.
 // Usage: node export_chapters.js <path-to-fresh-get_strand-dump.json>

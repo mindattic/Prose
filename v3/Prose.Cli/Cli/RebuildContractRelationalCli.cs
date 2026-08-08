@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-contract-relational</c> — backfill the Contracts relational schema
+/// <c>prose --rebuild-contract-relational</c> — backfill the Contracts relational schema
 /// from Records.Json blobs. For every active contract entity, deserializes the blob →
 /// ContractData → persists scalar columns (including CrewCapabilities flattened to 10
 /// Capability* columns) + bridge rows (ContractBonuses / ContractComplications) +

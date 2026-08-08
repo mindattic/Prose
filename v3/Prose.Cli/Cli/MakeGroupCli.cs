@@ -3,7 +3,7 @@
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --make-group --name "Group B" [--size 128]</c> — create a fixed,
+/// <c>prose --make-group --name "Group B" [--size 128]</c> — create a fixed,
 /// named reviewer panel of N enriched personas drawn at random but DISJOINT
 /// from every existing focus group (no persona is on two panels). Cheap: just
 /// sampling + a DB insert, no LLM calls. Reuse the panel later with
@@ -26,7 +26,7 @@ public static class MakeGroupCli
         }
         if (string.IsNullOrWhiteSpace(name))
         {
-            Console.Error.WriteLine("usage: ss --make-group --name \"Group B\" [--size 128]");
+            Console.Error.WriteLine("usage: prose --make-group --name \"Group B\" [--size 128]");
             return 1;
         }
 
@@ -35,7 +35,7 @@ public static class MakeGroupCli
         {
             var (id, count) = await reviewer.CreateDisjointGroupAsync(name!, size);
             Console.WriteLine($"[make-group] Created panel '{name}' with {count} personas (disjoint from all existing groups). Id {id}.");
-            Console.WriteLine($"[make-group] Run it with:  ss --review-book --slug <slug> --group \"{name}\"");
+            Console.WriteLine($"[make-group] Run it with:  prose --review-book --slug <slug> --group \"{name}\"");
             return 0;
         }
         catch (Exception ex)

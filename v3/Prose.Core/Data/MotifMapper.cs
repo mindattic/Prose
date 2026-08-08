@@ -171,7 +171,7 @@ public static class MotifMapper
     /// Returns the number of motif entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-motif-relational</c>.
+    /// Run once via <c>prose --rebuild-motif-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

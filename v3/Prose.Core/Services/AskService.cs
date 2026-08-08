@@ -170,7 +170,7 @@ public class AskService
         {
             sw.Stop();
             return new AskAnswer(
-                "I couldn't find any canon material similar to that question. The embedding cache may be empty — run `ss --reembed` (entities), or pass --node <slug> to index and search a story's beats.",
+                "I couldn't find any canon material similar to that question. The embedding cache may be empty — run `prose --reembed` (entities), or pass --node <slug> to index and search a story's beats.",
                 Array.Empty<Citation>(), 0, sw.Elapsed);
         }
 

@@ -7,7 +7,7 @@ using Prose.Core.Services.Audit;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --logic-sweep --slug &lt;nodeSlug&gt; [--json]
+/// prose --logic-sweep --slug &lt;nodeSlug&gt; [--json]
 ///
 /// See LogicSweepService's class doc for the honest scope note: this is a single-pass
 /// approximation, not a replacement for the full /logic-sweep skill on a large book.
@@ -24,7 +24,7 @@ public static class LogicSweepCli
         }
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --logic-sweep --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: prose --logic-sweep --slug <nodeSlug> [--json]");
             return 2;
         }
 

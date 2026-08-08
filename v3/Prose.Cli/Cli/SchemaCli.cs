@@ -6,12 +6,12 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for <see cref="SchemaRebuildService"/>. Two commands:
 ///
-///   ss --schema snapshot --table NAME [--out path.sql]
+///   prose --schema snapshot --table NAME [--out path.sql]
 ///       Emit a complete reconstitution script for one table — DDL + indexes
 ///       + outgoing FKs + inbound FKs + every row as INSERT. Lands under
 ///       engine/data/schema-snapshots/{table}-{timestamp}.sql by default.
 ///
-///   ss --schema rebuild --table NAME --order "col1,col2,col3,…"
+///   prose --schema rebuild --table NAME --order "col1,col2,col3,…"
 ///       Snapshot first, then drop and rebuild the table with the columns in
 ///       the requested order. Any unmentioned columns append in their original
 ///       relative order. Runs inside one transaction with row-count + per-column
@@ -92,7 +92,7 @@ public static class SchemaCli
     private static void PrintUsage()
     {
         Console.WriteLine("Usage:");
-        Console.WriteLine("  ss --schema snapshot --table NAME [--out path.sql]");
-        Console.WriteLine("  ss --schema rebuild  --table NAME --order \"col1,col2,col3,…\"");
+        Console.WriteLine("  prose --schema snapshot --table NAME [--out path.sql]");
+        Console.WriteLine("  prose --schema rebuild  --table NAME --order \"col1,col2,col3,…\"");
     }
 }

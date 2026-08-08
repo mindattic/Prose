@@ -3,7 +3,7 @@
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --coverage</c> — per-entity-type reachability matrix: how many entities
+/// <c>prose --coverage</c> — per-entity-type reachability matrix: how many entities
 /// exist vs. how many are embedded (and therefore pullable into prose by the
 /// universal canon retrieval). The standing gap-finder: 0%-embedded types are
 /// dead inventory; 100% means fully wired into the engine.

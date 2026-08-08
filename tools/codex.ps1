@@ -284,7 +284,7 @@ function Invoke-Doctor {
       $nMPos      = $nRaw.IndexOf($nMarkerStr, [System.StringComparison]::Ordinal)
       if ($nMPos -lt 0) {
         # Pre-NodeDocService doc — warn to regenerate; not an error until all docs are migrated.
-        Add-Warn "generated-checksum: $nRel has no GENERATED SECTIONS marker - re-run: ss --generate-node-doc --slug CODE"
+        Add-Warn "generated-checksum: $nRel has no GENERATED SECTIONS marker - re-run: prose --generate-node-doc --slug CODE"
         continue
       }
       $nMEnd = $nRaw.IndexOf("`n", $nMPos)
@@ -294,7 +294,7 @@ function Invoke-Doctor {
       $nAfterMarker = $nRaw.Substring($nMEnd + 1)
       $nCsumMatch   = [regex]::Match($nAfterMarker, '^<!-- GENERATED-CHECKSUM: ([0-9a-f]{64}) -->')
       if (-not $nCsumMatch.Success) {
-        Add-Warn "generated-checksum: $nRel has no checksum line (old format) - re-run: ss --generate-node-doc --slug CODE"
+        Add-Warn "generated-checksum: $nRel has no checksum line (old format) - re-run: prose --generate-node-doc --slug CODE"
         continue
       }
       $nStoredCsum  = $nCsumMatch.Groups[1].Value
@@ -304,7 +304,7 @@ function Invoke-Doctor {
       $nBodyBytes   = [System.Text.Encoding]::UTF8.GetBytes($nBody)
       $nActualCsum  = [System.BitConverter]::ToString($sha256obj.ComputeHash($nBodyBytes)).Replace('-', '').ToLower()
       if ($nActualCsum -ne $nStoredCsum) {
-        Add-Err "generated-checksum: $nRel hand-edited (checksum mismatch) - re-run: ss --generate-node-doc --slug CODE"
+        Add-Err "generated-checksum: $nRel hand-edited (checksum mismatch) - re-run: prose --generate-node-doc --slug CODE"
       }
     }
     $sha256obj.Dispose()

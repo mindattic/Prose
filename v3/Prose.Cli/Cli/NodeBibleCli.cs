@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --book-bible</c> — (re)generate the node bible for an existing node.
+/// <c>prose --book-bible</c> — (re)generate the node bible for an existing node.
 ///
 /// Use this to add a bible to a node created before the bible system existed,
 /// or to regenerate the plan when the book direction changes.
@@ -35,7 +35,7 @@ public static class NodeBibleCli
         if (string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[book-bible] --slug is required.");
-            Console.Error.WriteLine("Usage: ss --book-bible --slug <slug> [--beats N] [--replace-beats]");
+            Console.Error.WriteLine("Usage: prose --book-bible --slug <slug> [--beats N] [--replace-beats]");
             return 2;
         }
 

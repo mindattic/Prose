@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --gear-check --slug &lt;nodeSlug&gt; --character &lt;characterId&gt; [--story-time "date"]
+/// prose --gear-check --slug &lt;nodeSlug&gt; --character &lt;characterId&gt; [--story-time "date"]
 /// Scans each beat of the node for gear usage that lacks a carry/wield edge.
 /// </summary>
 public static class GearCheckCli
@@ -35,7 +35,7 @@ public static class GearCheckCli
 
         if (nodeSlug == null || characterId == null)
         {
-            Console.Error.WriteLine("Usage: ss --gear-check --slug <nodeSlug> --character <characterId> [--story-time date]");
+            Console.Error.WriteLine("Usage: prose --gear-check --slug <nodeSlug> --character <characterId> [--story-time date]");
             return 1;
         }
 

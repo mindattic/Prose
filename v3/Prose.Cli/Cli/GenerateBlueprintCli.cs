@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --generate-blueprint --slug &lt;nodeSlug&gt; [--retrofit] [--json]
+/// prose --generate-blueprint --slug &lt;nodeSlug&gt; [--retrofit] [--json]
 ///
 /// Generates the StructuralBlueprint for a book node — the pre-prose anti-tell
 /// commitments (subplot, temporal scheme, resolution mode, moral polarity,
@@ -35,7 +35,7 @@ public static class GenerateBlueprintCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --generate-blueprint --slug <nodeSlug> [--retrofit] [--json]");
+            Console.Error.WriteLine("Usage: prose --generate-blueprint --slug <nodeSlug> [--retrofit] [--json]");
             return 2;
         }
 
@@ -106,7 +106,7 @@ public static class GenerateBlueprintCli
         Console.WriteLine($"Beat tags:  {bp.BeatTags.Count}");
         Console.WriteLine();
         Console.WriteLine($"✅ Blueprint saved ({bp.GeneratedBy}). Prose generation will now receive per-beat structural guidance.");
-        Console.WriteLine("   Verify after writing with: ss --storyscope-audit --slug " + node.Slug);
+        Console.WriteLine("   Verify after writing with: prose --storyscope-audit --slug " + node.Slug);
         return 0;
     }
 }

@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --generate-cover-prompt</c> — (re)generate Node.CoverPrompt, the visual
+/// <c>prose --generate-cover-prompt</c> — (re)generate Node.CoverPrompt, the visual
 /// image-model prompt for a book's cover, from its Title/Summary/Description/universe.
 ///
 /// Args:
@@ -28,8 +28,8 @@ public static class GenerateCoverPromptCli
         if (!all && string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[generate-cover-prompt] --slug <slug> or --all is required.");
-            Console.Error.WriteLine("Usage: ss --generate-cover-prompt --slug <slug>");
-            Console.Error.WriteLine("       ss --generate-cover-prompt --all");
+            Console.Error.WriteLine("Usage: prose --generate-cover-prompt --slug <slug>");
+            Console.Error.WriteLine("       prose --generate-cover-prompt --all");
             return 2;
         }
 
@@ -93,7 +93,7 @@ public static class GenerateCoverPromptCli
 }
 
 /// <summary>
-/// <c>ss --generate-cover-image</c> — render Node.CoverPrompt through a chosen image
+/// <c>prose --generate-cover-image</c> — render Node.CoverPrompt through a chosen image
 /// provider and save the result under the media dir. Generates a CoverPrompt first
 /// if the node doesn't have one yet. Costs real money per call — requires that
 /// provider's API key configured in Settings.
@@ -120,7 +120,7 @@ public static class GenerateCoverImageCli
 
         if (string.IsNullOrWhiteSpace(slug) || string.IsNullOrWhiteSpace(provider))
         {
-            Console.Error.WriteLine("Usage: ss --generate-cover-image --slug <slug> --provider openai|stability|google");
+            Console.Error.WriteLine("Usage: prose --generate-cover-image --slug <slug> --provider openai|stability|google");
             return 2;
         }
 
@@ -151,7 +151,7 @@ public static class GenerateCoverImageCli
 }
 
 /// <summary>
-/// <c>ss --composite-cover-title</c> — (re)draw the book title onto an already-saved
+/// <c>prose --composite-cover-title</c> — (re)draw the book title onto an already-saved
 /// cover image file in place, without calling an image-generation API again. Useful
 /// when the title-compositing step needs a tweak (or ran on a cover saved before it
 /// existed) and you don't want to pay for a fresh render.
@@ -169,7 +169,7 @@ public static class CompositeCoverTitleCli
 
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --composite-cover-title --slug <slug>");
+            Console.Error.WriteLine("Usage: prose --composite-cover-title --slug <slug>");
             return 2;
         }
 

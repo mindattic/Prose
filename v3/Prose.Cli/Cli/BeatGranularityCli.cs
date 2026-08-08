@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --beat-granularity [--slug &lt;slug&gt; | --code &lt;code&gt; | --all]
+/// prose --beat-granularity [--slug &lt;slug&gt; | --code &lt;code&gt; | --all]
 ///
 /// Analyses beat-size distribution against the 4,000–7,500 char (~800–1,500 word)
 /// optimal dramatic-scene range. Labels each beat as OK / SPLIT / MERGE and prints
@@ -24,10 +24,10 @@ public static class BeatGranularityCli
 
         if (!all && slug is null)
         {
-            Console.Error.WriteLine("Usage: ss --beat-granularity --slug <slug>    one story by slug");
-            Console.Error.WriteLine("       ss --beat-granularity --code <code>    one story by NodeCode");
-            Console.Error.WriteLine("       ss --beat-granularity --all            all stories (summary table)");
-            Console.Error.WriteLine("       ss --beat-granularity --all --beats    all stories + per-beat detail");
+            Console.Error.WriteLine("Usage: prose --beat-granularity --slug <slug>    one story by slug");
+            Console.Error.WriteLine("       prose --beat-granularity --code <code>    one story by NodeCode");
+            Console.Error.WriteLine("       prose --beat-granularity --all            all stories (summary table)");
+            Console.Error.WriteLine("       prose --beat-granularity --all --beats    all stories + per-beat detail");
             return 1;
         }
 

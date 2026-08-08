@@ -5,13 +5,13 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for the autonomous quality findings inbox.
 ///
-///   ss --findings list [--status new|triaged|applied|dismissed]   List findings.
-///   ss --findings stats                                            Counts per status.
-///   ss --findings show &lt;id&gt;                                       Full detail for one finding.
-///   ss --findings apply &lt;id&gt;                                      Apply the suggested fix to the source file.
-///   ss --findings dismiss &lt;id&gt;                                    Mark dismissed.
-///   ss --findings triage &lt;id&gt;                                     Mark triaged.
-///   ss --findings scan &lt;file-path&gt;                                Manually trigger a quality scan on a chapter file.
+///   prose --findings list [--status new|triaged|applied|dismissed]   List findings.
+///   prose --findings stats                                            Counts per status.
+///   prose --findings show &lt;id&gt;                                       Full detail for one finding.
+///   prose --findings apply &lt;id&gt;                                      Apply the suggested fix to the source file.
+///   prose --findings dismiss &lt;id&gt;                                    Mark dismissed.
+///   prose --findings triage &lt;id&gt;                                     Mark triaged.
+///   prose --findings scan &lt;file-path&gt;                                Manually trigger a quality scan on a chapter file.
 /// </summary>
 public static class FindingsCli
 {
@@ -121,12 +121,12 @@ public static class FindingsCli
     static void PrintUsage()
     {
         Console.WriteLine("Usage:");
-        Console.WriteLine("  ss --findings list [--status new|triaged|applied|dismissed]");
-        Console.WriteLine("  ss --findings stats");
-        Console.WriteLine("  ss --findings show <id>");
-        Console.WriteLine("  ss --findings apply <id>");
-        Console.WriteLine("  ss --findings triage <id>");
-        Console.WriteLine("  ss --findings dismiss <id>");
-        Console.WriteLine("  ss --findings scan <file-path>");
+        Console.WriteLine("  prose --findings list [--status new|triaged|applied|dismissed]");
+        Console.WriteLine("  prose --findings stats");
+        Console.WriteLine("  prose --findings show <id>");
+        Console.WriteLine("  prose --findings apply <id>");
+        Console.WriteLine("  prose --findings triage <id>");
+        Console.WriteLine("  prose --findings dismiss <id>");
+        Console.WriteLine("  prose --findings scan <file-path>");
     }
 }

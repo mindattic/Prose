@@ -239,7 +239,7 @@ public static class FlyoverEntityMapper
     /// Returns the number of flyover entity entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-flyover-entity-relational</c>.
+    /// Run once via <c>prose --rebuild-flyover-entity-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

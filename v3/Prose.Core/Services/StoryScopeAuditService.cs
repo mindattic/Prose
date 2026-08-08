@@ -130,7 +130,7 @@ public class StoryScopeAuditService(
             results.Add(new StoryScopeCheck("blueprint_missing", "Structural blueprint exists",
                 "MODERATE",
                 "No StructuralBlueprint exists for this node — structural commitments were never made, so the story defaults are whatever the model chose.",
-                "Run ss --generate-blueprint --slug <slug> --retrofit, review the inferred structure, then re-audit.",
+                "Run prose --generate-blueprint --slug <slug> --retrofit, review the inferred structure, then re-audit.",
                 "insert", null));
         }
         else
@@ -612,7 +612,7 @@ public class StoryScopeAuditService(
 
     /// <summary>
     /// Run ONLY the consensus-cliché scan for a node — one LLM call. Used by
-    /// `ss --storyscope-audit --cliches-only` for cheap blocklist-corroboration
+    /// `prose --storyscope-audit --cliches-only` for cheap blocklist-corroboration
     /// sweeps (the full audit is ~15 calls; promotion only needs this one).
     /// Updates the ConsensusCliches table exactly like the full audit.
     /// </summary>

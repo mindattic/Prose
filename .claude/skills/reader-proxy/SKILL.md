@@ -15,14 +15,14 @@ This is the reader-facing half of QA; the Logic Sweep (`/logic-sweep`) is the co
 1. **Resolve the book + universe.** Every command needs `--universe glmz|scry|gspl`.
 2. **Comprehension + checklist (cheap, hash-cached — run both every time):**
    ```
-   ss --reader-qa --slug <slug> --universe <u>
-   ss --craft-checklist --slug <slug> --universe <u>
+   prose --reader-qa --slug <slug> --universe <u>
+   prose --craft-checklist --slug <slug> --universe <u>
    ```
    Unchanged chapters/beats are cache hits and cost nothing. Exit 1 = findings filed.
 3. **Gripe jury (optional, ~$0.50 per full read of a big book — run when the user asks
    for a reader pass, or after a large edit campaign):**
    ```
-   ss --reader-qa --gripe-pass --slug <slug> --readers 4 --universe <u>
+   prose --reader-qa --gripe-pass --slug <slug> --readers 4 --universe <u>
    ```
 4. **Triage the findings** (`list_findings`, categories `ComprehensionDefect` /
    `CraftChecklist` / `ReaderGripe`): fix what a finding names with a minimal splice
@@ -30,7 +30,7 @@ This is the reader-facing half of QA; the Logic Sweep (`/logic-sweep`) is the co
    `set_finding_status` → Dismissed with reason. High/BLOCKER findings block publish;
    MODERATE/MINOR are editorial judgment.
 5. **Gate contested splices** through the duel when in doubt:
-   `ss --duel --beat-id <guid> --candidate <file> --allow-votes` — KEEP verdicts return
+   `prose --duel --beat-id <guid> --candidate <file> --allow-votes` — KEEP verdicts return
    dissent rationales as revision fuel.
 6. **Re-run step 2** after fixes — findings auto-supersede; unchanged content is free.
    Report lands in `audit-outlines-<date>/reader-qa/<SLUG>.md`.

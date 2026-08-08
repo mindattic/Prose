@@ -10,7 +10,7 @@ using Prose.Core.Data.Entities;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --migrate-legacy-book-chapter</c> — one-shot cleanup of the 44 legacy
+/// <c>prose --migrate-legacy-book-chapter</c> — one-shot cleanup of the 44 legacy
 /// <c>book</c> and <c>chapter</c> entity rows whose content already lives in the
 /// relational <c>Nodes</c> + <c>Beats</c> + <c>BeatNodes</c> model.
 ///

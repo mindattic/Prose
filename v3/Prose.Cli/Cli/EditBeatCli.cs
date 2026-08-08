@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --edit-beat</c> — overwrite one beat's prose, or insert a new beat after a given position.
+/// <c>prose --edit-beat</c> — overwrite one beat's prose, or insert a new beat after a given position.
 ///
 /// Edit mode (default):
 ///   --slug &lt;slug&gt;           Node slug.

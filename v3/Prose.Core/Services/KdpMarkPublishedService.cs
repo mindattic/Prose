@@ -26,7 +26,7 @@ public record KdpMarkPublishedResult(
 /// book goes live, or if the URL changed) and upserts <c>tools/kdp/title-ids.json</c> with a
 /// titleId so future manifests can deep-link straight to this book's KDP edit page.
 ///
-/// Shared by <c>ss --kdp-mark-published</c> (CLI: <c>KdpMarkPublishedCli</c>, a thin wrapper
+/// Shared by <c>prose --kdp-mark-published</c> (CLI: <c>KdpMarkPublishedCli</c>, a thin wrapper
 /// that prints the result) and the KdpPublish WPF app's <c>mark_published</c> tool.
 /// </summary>
 public class KdpMarkPublishedService

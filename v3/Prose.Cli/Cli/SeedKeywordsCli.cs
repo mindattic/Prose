@@ -5,7 +5,7 @@ using Prose.Core.Data.Entities;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --seed-keywords --slug &lt;slug&gt; --keywords "phrase one|phrase two|..."</c>
+/// <c>prose --seed-keywords --slug &lt;slug&gt; --keywords "phrase one|phrase two|..."</c>
 /// — set this node's Amazon KDP backend search keywords (up to 7, pipe-separated,
 /// each becomes its own row). Replaces any existing keyword rows for the node
 /// (never blends stale generic filler with real ones).

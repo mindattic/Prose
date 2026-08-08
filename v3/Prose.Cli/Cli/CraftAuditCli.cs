@@ -7,7 +7,7 @@ using Prose.Core.Services.Audit;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --craft-audit --slug &lt;nodeSlug&gt; [--json]
+/// prose --craft-audit --slug &lt;nodeSlug&gt; [--json]
 ///
 /// Audits a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms), parsed live from
 /// CanonDocumentSections — edit §8 via set_canon_section MCP and the next run picks it up,
@@ -28,7 +28,7 @@ public static class CraftAuditCli
         }
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --craft-audit --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: prose --craft-audit --slug <nodeSlug> [--json]");
             return 2;
         }
 

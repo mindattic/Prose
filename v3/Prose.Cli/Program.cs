@@ -25,9 +25,9 @@ QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 // process targets (SS-LAW-15). UniverseContext also honors the PROSE_UNIVERSE env
 // var (per terminal), so two CLIs can write different universes at once. Parsed
 // here before the dispatch chain so every CLI block + the web host inherit it.
-// `ss --universe <verb>` is universe MANAGEMENT, not universe SCOPING. The token after
+// `prose --universe <verb>` is universe MANAGEMENT, not universe SCOPING. The token after
 // --universe is then a verb (list/current/use), not a slug, so it must not be parsed as one:
-// doing so made `ss --universe current` die with "Unknown universe slug 'current'" during
+// doing so made `prose --universe current` die with "Unknown universe slug 'current'" during
 // service construction, before UniverseCli ever ran. Detected once and reused by the dispatch
 // block further down, so the two cannot disagree about what counts as a management command.
 var isUniverseManagementCommand =
@@ -84,7 +84,7 @@ if (args.Contains("--rebuild-graph"))
     return;
 }
 
-// CLI mode: ss --reset-password --email <e> --password <p> [--require-change]
+// CLI mode: prose --reset-password --email <e> --password <p> [--require-change]
 // Operator password reset over the MindAttic.Authentication store, no web server.
 if (args.Contains("--reset-password"))
 {
@@ -138,9 +138,9 @@ if (args.Contains("--continuity"))
 }
 
 // CLI mode: SQL Server migration — apply EF migrations and import JSON entities.
-//   ss --migrate-sql --schema           apply EF migrations
-//   ss --migrate-sql --import people    import character JSON files
-//   ss --migrate-sql --all              schema + import all supported types
+//   prose --migrate-sql --schema           apply EF migrations
+//   prose --migrate-sql --import people    import character JSON files
+//   prose --migrate-sql --all              schema + import all supported types
 if (args.Contains("--migrate-sql"))
 {
     var sp = BuildCoreServices(args);
@@ -149,7 +149,7 @@ if (args.Contains("--migrate-sql"))
 }
 
 // CLI mode: prose → entities + edges. LLM-driven.
-//   ss --interpret --text "..."  | --file path.txt
+//   prose --interpret --text "..."  | --file path.txt
 //   add --commit to apply, --auto-create to stub missing entities, --tag <source>
 if (args.Contains("--interpret"))
 {
@@ -159,7 +159,7 @@ if (args.Contains("--interpret"))
 }
 
 // CLI mode: insert a worldbuilding Document directly into canon.
-//   ss --add-doc --title "…" --body-file path.md [--category essay] [--tags "a,b,c"] [--filename slug.md]
+//   prose --add-doc --title "…" --body-file path.md [--category essay] [--tags "a,b,c"] [--filename slug.md]
 if (args.Contains("--add-doc"))
 {
     var sp = BuildCoreServices(args);
@@ -168,7 +168,7 @@ if (args.Contains("--add-doc"))
 }
 
 // CLI mode: insert a Character from a CharacterData JSON file.
-//   ss --add-character --file path.json
+//   prose --add-character --file path.json
 if (args.Contains("--add-character"))
 {
     var sp = BuildCoreServices(args);
@@ -179,7 +179,7 @@ if (args.Contains("--add-character"))
 // CLI mode: insert OR update a Place/District from a DistrictData JSON file.
 // Upsert: include "id" to update, omit to create. Safe service-layer path
 // (DistrictRepository.Save) — no hand-SQL, collision-safe slugs.
-//   ss --add-place --file path.json [--print]
+//   prose --add-place --file path.json [--print]
 if (args.Contains("--add-place"))
 {
     var sp = BuildCoreServices(args);
@@ -188,7 +188,7 @@ if (args.Contains("--add-place"))
 }
 
 // CLI mode: insert a CorpoNation from a CorponationData JSON file.
-//   ss --add-corponation --file path.json
+//   prose --add-corponation --file path.json
 if (args.Contains("--add-corponation"))
 {
     var sp = BuildCoreServices(args);
@@ -197,7 +197,7 @@ if (args.Contains("--add-corponation"))
 }
 
 // CLI mode: insert a Weapon from a WeaponryData JSON file.
-//   ss --add-weapon --file path.json
+//   prose --add-weapon --file path.json
 if (args.Contains("--add-weapon"))
 {
     var sp = BuildCoreServices(args);
@@ -206,7 +206,7 @@ if (args.Contains("--add-weapon"))
 }
 
 // CLI mode: insert an Apparel item from an ApparelData JSON file.
-//   ss --add-apparel --file path.json
+//   prose --add-apparel --file path.json
 if (args.Contains("--add-apparel"))
 {
     var sp = BuildCoreServices(args);
@@ -215,8 +215,8 @@ if (args.Contains("--add-apparel"))
 }
 
 // CLI mode: generate a resource-tracked combat sequence via CombatSceneWriter.
-//   ss --combat --file scene.json [--out prose.txt]
-//   ss --combat --location "Hegewisch" --objective "..." --exchanges 6 --tone Cinematic
+//   prose --combat --file scene.json [--out prose.txt]
+//   prose --combat --location "Hegewisch" --objective "..." --exchanges 6 --tone Cinematic
 if (args.Contains("--combat"))
 {
     var sp = BuildCoreServices(args);
@@ -227,7 +227,7 @@ if (args.Contains("--combat"))
 // CLI mode: insert OR update a Faction from a FactionData JSON file.
 // Upsert: include "id" to update, omit to create. Safe service-layer path
 // (FactionRepository.Save) — no hand-SQL, collision-safe slugs.
-//   ss --add-faction --file path.json
+//   prose --add-faction --file path.json
 if (args.Contains("--add-faction"))
 {
     var sp = BuildCoreServices(args);
@@ -236,7 +236,7 @@ if (args.Contains("--add-faction"))
 }
 
 // CLI mode: insert a News article from a NewsData JSON file.
-//   ss --add-news --file path.json
+//   prose --add-news --file path.json
 if (args.Contains("--add-news"))
 {
     var sp = BuildCoreServices(args);
@@ -245,8 +245,8 @@ if (args.Contains("--add-news"))
 }
 
 // CLI mode: per-table schema operations (snapshot + safe column-reorder rebuild).
-//   ss --schema snapshot --table NAME [--out path.sql]
-//   ss --schema rebuild  --table NAME --order "col1,col2,col3,…"
+//   prose --schema snapshot --table NAME [--out path.sql]
+//   prose --schema rebuild  --table NAME --order "col1,col2,col3,…"
 if (args.Contains("--schema"))
 {
     var sp = BuildCoreServices(args);
@@ -255,9 +255,9 @@ if (args.Contains("--schema"))
 }
 
 // CLI mode: dump the entire Prose DB to a re-runnable .sql script.
-//   ss --sql-export --schema             schema-only DDL
-//   ss --sql-export --data               schema + INSERT data
-//   ss --sql-export --schema --out path  override output path
+//   prose --sql-export --schema             schema-only DDL
+//   prose --sql-export --data               schema + INSERT data
+//   prose --sql-export --schema --out path  override output path
 if (args.Contains("--sql-export"))
 {
     var sp = BuildCoreServices(args);
@@ -265,7 +265,7 @@ if (args.Contains("--sql-export"))
     return;
 }
 
-// ss --swain-audit [--slug <slug> | --code <code> | --all] [--repair] [--blockers]
+// prose --swain-audit [--slug <slug> | --code <code> | --all] [--repair] [--blockers]
 // Classifies every enabled beat as Scene / Sequel / Ambiguous / Deficient against
 // Dwight Swain's Scene/Sequel doctrine. Deficient = BLOCKER; Ambiguous = MODERATE.
 // Add --repair to auto-splice the missing structural element (disaster turn, decision, etc.)
@@ -280,8 +280,8 @@ if (args.Contains("--swain-audit"))
 
 // CLI mode: dossier-driven story repair — walks every chapter, augments character
 // records with timeline entries and (optionally) LLM-extracted continuity claims.
-//   ss --repair                # cheap timeline-only pass
-//   ss --repair --continuity   # also run continuity extraction (LLM-heavy)
+//   prose --repair                # cheap timeline-only pass
+//   prose --repair --continuity   # also run continuity extraction (LLM-heavy)
 if (args.Contains("--repair"))
 {
     var sp = BuildCoreServices(args);
@@ -290,7 +290,7 @@ if (args.Contains("--repair"))
 }
 
 // CLI mode: cloud RAG over the canon corpus. Replaces the retired Ollama path.
-//   ss --ask "Question" [--k 8] [--type character]
+//   prose --ask "Question" [--k 8] [--type character]
 if (args.Contains("--ask"))
 {
     var sp = BuildCoreServices(args);
@@ -300,7 +300,7 @@ if (args.Contains("--ask"))
 
 // CLI mode: idempotent stub-creator for the seeded "Vultures on the Doorstep"
 // future story. Creates the Book + Draft outline only; writes no prose.
-//   ss --seed-vultures
+//   prose --seed-vultures
 if (args.Contains("--seed-vultures"))
 {
     var sp = BuildCoreServices(args);
@@ -311,8 +311,8 @@ if (args.Contains("--seed-vultures"))
 // CLI mode: report Character columns that disagree with their latest
 // matching EntityStateEvents row. Lights up the static-vs-dynamic recipe
 // only for columns that actually drifted.
-//   ss --audit-drift           pretty-printed report
-//   ss --audit-drift --json    JSON dump
+//   prose --audit-drift           pretty-printed report
+//   prose --audit-drift --json    JSON dump
 if (args.Contains("--audit-drift"))
 {
     var sp = BuildCoreServices(args);
@@ -332,8 +332,8 @@ if (args.Contains("--backfill-character-state"))
 
 // CLI mode: rewrite ethnicity-keyed visual descriptors in image prompts to
 // match a character's current genetic_ancestry. Cost-aware via stored hash.
-//   ss --image-prompts regen --id <id|slug> [--force]
-//   ss --image-prompts regen --all-changed
+//   prose --image-prompts regen --id <id|slug> [--force]
+//   prose --image-prompts regen --all-changed
 if (args.Contains("--image-prompts"))
 {
     var sp = BuildCoreServices(args);
@@ -342,8 +342,8 @@ if (args.Contains("--image-prompts"))
 }
 
 // CLI mode: propose a plausible immediate family for one character.
-//   ss --family-gen propose --of <id|slug>           dry run
-//   ss --family-gen propose --of <id|slug> --commit  write characters + edges + propagate genetics
+//   prose --family-gen propose --of <id|slug>           dry run
+//   prose --family-gen propose --of <id|slug> --commit  write characters + edges + propagate genetics
 //   --seed N for reproducible RNG
 if (args.Contains("--family-gen"))
 {
@@ -355,9 +355,9 @@ if (args.Contains("--family-gen"))
 // CLI mode: propagate genetic_ancestry from parents to children via the
 // family graph (with ±5% recombination noise). Currently a no-op until family
 // ties are seeded.
-//   ss --genetics propagate                     full graph
-//   ss --genetics propagate --id <id|slug>      single character
-//   ss --genetics propagate --seed 42           reproducible RNG
+//   prose --genetics propagate                     full graph
+//   prose --genetics propagate --id <id|slug>      single character
+//   prose --genetics propagate --seed 42           reproducible RNG
 if (args.Contains("--genetics"))
 {
     var sp = BuildCoreServices(args);
@@ -366,10 +366,10 @@ if (args.Contains("--genetics"))
 }
 
 // CLI mode: family ties — hand-seed parent/sibling/spouse links between characters.
-//   ss --family parent  --parent <id|slug> --child <id|slug>
-//   ss --family sibling --a <id|slug> --b <id|slug>
-//   ss --family spouse  --a <id|slug> --b <id|slug>
-//   ss --family show    --of <id|slug>
+//   prose --family parent  --parent <id|slug> --child <id|slug>
+//   prose --family sibling --a <id|slug> --b <id|slug>
+//   prose --family spouse  --a <id|slug> --b <id|slug>
+//   prose --family show    --of <id|slug>
 if (args.Contains("--family"))
 {
     var sp = BuildCoreServices(args);
@@ -378,7 +378,7 @@ if (args.Contains("--family"))
 }
 
 // CLI mode: scan beats for deprecated/renamed noun references.
-//   ss --validate-nouns --slug <slug>
+//   prose --validate-nouns --slug <slug>
 if (args.Contains("--validate-nouns"))
 {
     var sp = BuildCoreServices(args);
@@ -386,7 +386,7 @@ if (args.Contains("--validate-nouns"))
     return;
 }
 
-// ss --repair-slugs [--apply] [--family entities|nodes|books|series|episodes] [--json]
+// prose --repair-slugs [--apply] [--family entities|nodes|books|series|episodes] [--json]
 // Regenerate every slug from its Name/Title metadata and update slug-carrying
 // references (beat audio paths, publication paths, on-disk dirs, alt_slug).
 // DRY-RUN by default; --apply writes. Slugs are loose keys — guid is the key.
@@ -398,8 +398,8 @@ if (args.Contains("--repair-slugs"))
 }
 
 // CLI mode: survey management.
-//   ss --list-surveys [--status Open|Completed]
-//   ss --get-survey --slug <slug>
+//   prose --list-surveys [--status Open|Completed]
+//   prose --get-survey --slug <slug>
 if (args.Contains("--list-surveys") || args.Contains("--get-survey"))
 {
     var sp = BuildCoreServices(args);
@@ -409,7 +409,7 @@ if (args.Contains("--list-surveys") || args.Contains("--get-survey"))
 
 // CLI mode: backfill BeatEntityMentions — index which entity names appear in
 // each beat so entity-update staleness propagation works.
-//   ss --scan-entity-mentions
+//   prose --scan-entity-mentions
 if (args.Contains("--scan-entity-mentions"))
 {
     var sp = BuildCoreServices(args);
@@ -418,7 +418,7 @@ if (args.Contains("--scan-entity-mentions"))
 }
 
 // CLI mode: backfill Entities.Status = 'stub' / 'canon' based on BeatEntityMentions.
-//   ss --backfill-stubs
+//   prose --backfill-stubs
 // Entities with no BeatEntityMentions row → Status='stub' (excluded from universe graph).
 // Entities that ARE mentioned → Status='canon'. Re-run after --scan-entity-mentions.
 if (args.Contains("--backfill-stubs"))
@@ -435,9 +435,9 @@ if (args.Contains("--backfill-stubs"))
 }
 
 // CLI mode: dump canon JSON to the user's Downloads folder.
-//   ss --export global                every repo, zipped + timestamped
-//   ss --export <repoName>            one repo, zipped (e.g. "people", "weaponry")
-//   ss --export <entityId>            one entity, plain .json
+//   prose --export global                every repo, zipped + timestamped
+//   prose --export <repoName>            one repo, zipped (e.g. "people", "weaponry")
+//   prose --export <entityId>            one entity, plain .json
 if (args.Contains("--export"))
 {
     var sp = BuildCoreServices(args);
@@ -446,8 +446,8 @@ if (args.Contains("--export"))
 }
 
 // CLI mode: rebuild the entity-embedding cache via cloud OpenAI.
-//   ss --reembed              drift-skipped corpus pass (only changed entities re-embed)
-//   ss --reembed --force      clear the table first, re-embed everything
+//   prose --reembed              drift-skipped corpus pass (only changed entities re-embed)
+//   prose --reembed --force      clear the table first, re-embed everything
 if (args.Contains("--reembed"))
 {
     var sp = BuildCoreServices(args);
@@ -456,8 +456,8 @@ if (args.Contains("--reembed"))
 }
 
 // CLI mode: query the Legion / LLMVoting cloud-LLM panel directly.
-//   ss --legion ask "Q" --options "A,B,C"  → forced-choice Quorum decision (JSON on stdout)
-//   ss --legion vote "Q" [--context "…"]    → open-ended vote with synthesized narrative
+//   prose --legion ask "Q" --options "A,B,C"  → forced-choice Quorum decision (JSON on stdout)
+//   prose --legion vote "Q" [--context "…"]    → open-ended vote with synthesized narrative
 if (args.Contains("--legion"))
 {
     var sp = BuildCoreServices(args);
@@ -469,9 +469,9 @@ if (args.Contains("--legion"))
 // no longer exists, so legacy-file verification is moot.
 
 // CLI mode: apply canonical SQL seeds via C# (replaces sqlcmd-by-hand workflow).
-//   ss --seed                     list known seeds
-//   ss --seed <name>              apply one
-//   ss --seed --all [--force]     apply every known seed in order
+//   prose --seed                     list known seeds
+//   prose --seed <name>              apply one
+//   prose --seed --all [--force]     apply every known seed in order
 // NOTE: --seed is also the prompt flag of --write-node / --write-story /
 // --create-book — those commands must win the dispatch or their calls get
 // hijacked by the SQL seeder.
@@ -485,7 +485,7 @@ if (args.Contains("--seed") && !args.Contains("--write-node")
 }
 
 // CLI mode: (re)generate the node bible for an existing node.
-//   ss --book-bible --slug <slug> [--beats N] [--replace-beats]
+//   prose --book-bible --slug <slug> [--beats N] [--replace-beats]
 if (args.Contains("--book-bible"))
 {
     var sp = BuildCoreServices(args);
@@ -495,8 +495,8 @@ if (args.Contains("--book-bible"))
 
 // CLI mode: regenerate canon document .md files from DB (CanonDocuments + CanonDocumentSections).
 // The disk files are generated read-only mirrors; source of truth is the DB.
-//   ss --generate-canon-md --type <WorldBible|WorldMaster|Franchise|UniverseCanon>
-//   ss --generate-canon-md --all
+//   prose --generate-canon-md --type <WorldBible|WorldMaster|Franchise|UniverseCanon>
+//   prose --generate-canon-md --all
 if (args.Contains("--generate-canon-md"))
 {
     var sp = BuildCoreServices(args);
@@ -507,8 +507,8 @@ if (args.Contains("--generate-canon-md"))
 // CLI mode: assemble the unified Book Context Document for a node.
 // Merges hand-authored NodeBible + Structural Blueprint + Beat Spine into one document,
 // writes to Nodes.NodeBible (DB) and docs/nodes/{CODE}.md (read-only disk mirror).
-//   ss --generate-node-doc --slug <slug>
-//   ss --generate-node-doc --all
+//   prose --generate-node-doc --slug <slug>
+//   prose --generate-node-doc --all
 if (args.Contains("--generate-node-doc"))
 {
     var sp = BuildCoreServices(args);
@@ -518,7 +518,7 @@ if (args.Contains("--generate-node-doc"))
 
 // CLI mode: regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under
 // docs/universes/{SLUG}/) from the GlossaryTerms table.
-//   ss --generate-glossary --universe <slug>   (omit --universe for all)
+//   prose --generate-glossary --universe <slug>   (omit --universe for all)
 if (args.Contains("--generate-glossary"))
 {
     var sp = BuildCoreServices(args);
@@ -528,8 +528,8 @@ if (args.Contains("--generate-glossary"))
 
 // CLI mode: regenerate a book's Glossary (docs/nodes/{CODE}-Glossary.htm/.json/.txt) — the
 // subset of its universe's Master Glossary whose terms appear in the book's live prose.
-//   ss --generate-book-glossary --slug <slug>
-//   ss --generate-book-glossary --all
+//   prose --generate-book-glossary --slug <slug>
+//   prose --generate-book-glossary --all
 if (args.Contains("--generate-book-glossary"))
 {
     var sp = BuildCoreServices(args);
@@ -539,8 +539,8 @@ if (args.Contains("--generate-book-glossary"))
 
 // CLI mode: generate Node.CoverPrompt (image-model cover description) from the book's
 // own Title/Summary/Description/universe.
-//   ss --generate-cover-prompt --slug <slug>
-//   ss --generate-cover-prompt --all
+//   prose --generate-cover-prompt --slug <slug>
+//   prose --generate-cover-prompt --all
 if (args.Contains("--generate-cover-prompt"))
 {
     var sp = BuildCoreServices(args);
@@ -554,7 +554,7 @@ if (args.Contains("--generate-cover-prompt"))
 
 // CLI mode: render Node.CoverPrompt through an image provider (openai/stability/google)
 // and save the cover under the media dir. Costs real money — requires an API key.
-//   ss --generate-cover-image --slug <slug> --provider openai|stability|google
+//   prose --generate-cover-image --slug <slug> --provider openai|stability|google
 if (args.Contains("--generate-cover-image"))
 {
     var sp = BuildCoreServices(args);
@@ -566,8 +566,8 @@ if (args.Contains("--generate-cover-image"))
 // image-to-video clip (hand shows the cover, opens it, flips pages) via a chosen video
 // provider (kling/runway/sora), and assemble a vertical 1080x1920 #booktok MP4. Costs
 // real money per call unless --dry-run, which stops after the local ImageMagick mockup.
-//   ss --booktok --slug <slug> --provider kling|runway|sora [--duration 8] [--dry-run] [--yes]
-//   ss --booktok --standalone --cover-path <path> --title "<title>" --provider kling|runway|sora
+//   prose --booktok --slug <slug> --provider kling|runway|sora [--duration 8] [--dry-run] [--yes]
+//   prose --booktok --standalone --cover-path <path> --title "<title>" --provider kling|runway|sora
 if (args.Contains("--booktok"))
 {
     var sp = BuildCoreServices(args);
@@ -586,7 +586,7 @@ if (args.Contains("--booktok"))
 
 // CLI mode: redraw the title onto an already-saved cover image without calling an
 // image-generation API again.
-//   ss --composite-cover-title --slug <slug>
+//   prose --composite-cover-title --slug <slug>
 if (args.Contains("--composite-cover-title"))
 {
     var sp = BuildCoreServices(args);
@@ -596,7 +596,7 @@ if (args.Contains("--composite-cover-title"))
 
 // CLI mode: generate a new node (bible-first: plan → planned beats → expand in UI).
 // CLI mode: autonomous corpus loop — generate N nodes end-to-end and review them.
-//   ss --run-corpus --count N [--seed "..."] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]
+//   prose --run-corpus --count N [--seed "..."] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]
 if (args.Contains("--run-corpus"))
 {
     var sp = BuildCoreServices(args);
@@ -605,7 +605,7 @@ if (args.Contains("--run-corpus"))
 }
 
 // CLI mode: expand planned beats in a node to prose (headless ✨ for each beat).
-//   ss --edit-beat --slug <slug> (--beat-number N | --insert-after N) --file <path>
+//   prose --edit-beat --slug <slug> (--beat-number N | --insert-after N) --file <path>
 if (args.Contains("--edit-beat"))
 {
     var sp = BuildCoreServices(args);
@@ -614,7 +614,7 @@ if (args.Contains("--edit-beat"))
 }
 
 // CLI mode: create a new empty root node (bible-first; no beats yet).
-//   ss --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
+//   prose --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
 if (args.Contains("--create-book"))
 {
     var sp = BuildCoreServices(args);
@@ -622,7 +622,7 @@ if (args.Contains("--create-book"))
     return;
 }
 
-//   ss --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]
+//   prose --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]
 if (args.Contains("--expand-beat"))
 {
     var sp = BuildCoreServices(args);
@@ -630,7 +630,7 @@ if (args.Contains("--expand-beat"))
     return;
 }
 
-//   ss --auto-run (--slug <slug> | --id <guid>) [--effort draft|standard] [--dry-run] [--force]
+//   prose --auto-run (--slug <slug> | --id <guid>) [--effort draft|standard] [--dry-run] [--force]
 if (args.Contains("--auto-run"))
 {
     var sp = BuildCoreServices(args);
@@ -642,7 +642,7 @@ if (args.Contains("--auto-run"))
     return;
 }
 
-//   ss --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
+//   prose --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
 if (args.Contains("--write-node"))
 {
     var sp = BuildCoreServices(args);
@@ -653,7 +653,7 @@ if (args.Contains("--write-node"))
 // CLI mode: delete the 44 legacy book/chapter Entity+Records blobs whose
 // content already lives in the Nodes/Beats model. Classifies each as JUNK,
 // REDUNDANT, or ORPHAN (converts orphans to Nodes before deleting).
-//   ss --migrate-legacy-book-chapter
+//   prose --migrate-legacy-book-chapter
 if (args.Contains("--migrate-legacy-book-chapter"))
 {
     var sp = BuildCoreServices(args);
@@ -664,7 +664,7 @@ if (args.Contains("--migrate-legacy-book-chapter"))
 // Truth-First Architecture — Step A2: migrate hand-editable canon .md files
 // (BIBLE.md, WORLD.md, FRANCHISE.md, universes/CAUL.md) into CanonDocument +
 // CanonDocumentSection DB rows. Idempotent; skips already-migrated documents.
-//   ss --migrate-canon-docs [--dry-run]
+//   prose --migrate-canon-docs [--dry-run]
 if (args.Contains("--migrate-canon-docs"))
 {
     var sp = BuildCoreServices(args);
@@ -675,7 +675,7 @@ if (args.Contains("--migrate-canon-docs"))
 // Truth-First Architecture — Step A2 (NodeBible): migrate Nodes.NodeBible text
 // blobs into NodeBibleSection rows. Creates a single "Full" section per node.
 // Idempotent; skips nodes that already have sections.
-//   ss --migrate-node-bibles [--slug <slug>] [--dry-run]
+//   prose --migrate-node-bibles [--slug <slug>] [--dry-run]
 if (args.Contains("--migrate-node-bibles"))
 {
     var sp = BuildCoreServices(args);
@@ -686,7 +686,7 @@ if (args.Contains("--migrate-node-bibles"))
 // Truth-First Architecture — Step B2: decompose EscalationCurveJson /
 // EventTypePaletteJson blobs and BeatTags into per-beat BeatBlueprintDecision rows.
 // Idempotent; skips beats that already have a decision row.
-//   ss --migrate-blueprint-rows [--slug <slug>] [--dry-run]
+//   prose --migrate-blueprint-rows [--slug <slug>] [--dry-run]
 if (args.Contains("--migrate-blueprint-rows"))
 {
     var sp = BuildCoreServices(args);
@@ -694,10 +694,10 @@ if (args.Contains("--migrate-blueprint-rows"))
     return;
 }
 
-//   ss --verify-beat --id <beatId> [--json]
-//   ss --verify-book --slug <slug> [--json]
-//   ss --verify-quote --id <beatId> --quote "<claimed text>" [--claimed-by <name>] [--json]
-//   ss --verify-quotes-batch --json-file <path> [--json]
+//   prose --verify-beat --id <beatId> [--json]
+//   prose --verify-book --slug <slug> [--json]
+//   prose --verify-quote --id <beatId> --quote "<claimed text>" [--claimed-by <name>] [--json]
+//   prose --verify-quotes-batch --json-file <path> [--json]
 // Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision
 // contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node.
 // QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears
@@ -712,7 +712,7 @@ if (args.Contains("--verify-beat") || args.Contains("--verify-book")
 
 // CLI mode: migrate legacy Books/Chapters/ChapterBeats/Episodes/EpisodeBeats
 // data into the unified Beat/Node schema. Idempotent — safe to re-run.
-//   ss --migrate-nodes
+//   prose --migrate-nodes
 if (args.Contains("--migrate-nodes"))
 {
     var sp = BuildCoreServices(args);
@@ -726,7 +726,7 @@ if (args.Contains("--migrate-nodes"))
 // Companion to DualWriteAudioStore — repairs drift from offline recordings
 // and failed background uploads. Default (no --push/--pull args) is full
 // bidirectional repair. See SyncAudioCli class doc for the full arg list.
-//   ss --sync-audio [--push] [--pull] [--node SLUG] [--dry-run] [--verbose]
+//   prose --sync-audio [--push] [--pull] [--node SLUG] [--dry-run] [--verbose]
 if (args.Contains("--sync-audio"))
 {
     // Surface %APPDATA%\MindAttic\<bucket>\providers.json — AzureBlobAudioStore reads
@@ -739,7 +739,7 @@ if (args.Contains("--sync-audio"))
 // CLI mode: (re)narrate an EXISTING node by id (full or prefix) or slug.
 // Runs the same NarrateAsync path the Record button uses. Use to re-record a
 // node whose beats failed (e.g. a TTS 400) without regenerating prose.
-//   ss --narrate-book (--id <guid|prefix> | --slug <slug>)
+//   prose --narrate-book (--id <guid|prefix> | --slug <slug>)
 if (args.Contains("--narrate-book"))
 {
     var sp = BuildCoreServices(args);
@@ -749,7 +749,7 @@ if (args.Contains("--narrate-book"))
 
 // CLI mode: create a fixed, named reviewer panel of N personas, disjoint from
 // every existing focus group (no persona on two panels). No LLM calls.
-//   ss --make-group --name "Group B" [--size 128]
+//   prose --make-group --name "Group B" [--size 128]
 if (args.Contains("--make-group"))
 {
     var sp = BuildCoreServices(args);
@@ -760,7 +760,7 @@ if (args.Contains("--make-group"))
 // CLI mode: run Legion persona quality voting across canon entity repos.
 // Replaces the old LlmVoting (10 GLMZ residents) with the full 1000-persona library,
 // 1-100 scale, and append-only EntityReview rows (same process as node reviews).
-//   ss --review-entity [--type <type>] [--ballots N] [--prose N] [--unrated]
+//   prose --review-entity [--type <type>] [--ballots N] [--prose N] [--unrated]
 if (args.Contains("--review-entity"))
 {
     var sp = BuildCoreServices(args);
@@ -768,7 +768,7 @@ if (args.Contains("--review-entity"))
     return;
 }
 
-//   ss --link-weapon-ammo [--local-url URL] [--local-key KEY] [--local-model TAG] [--dry-run]
+//   prose --link-weapon-ammo [--local-url URL] [--local-key KEY] [--local-model TAG] [--dry-run]
 if (args.Contains("--link-weapon-ammo"))
 {
     var sp = BuildCoreServices(args);
@@ -776,7 +776,7 @@ if (args.Contains("--link-weapon-ammo"))
     return;
 }
 
-//   ss --populate-queue --entity-review|--story-review|--beat-write|--status [options]
+//   prose --populate-queue --entity-review|--story-review|--beat-write|--status [options]
 if (args.Contains("--populate-queue"))
 {
     var sp = BuildCoreServices(args);
@@ -784,7 +784,7 @@ if (args.Contains("--populate-queue"))
     return;
 }
 
-//   ss --worker-mode --queue-url URL --worker-key KEY --worker-id ID --local-url LLM_URL [options]
+//   prose --worker-mode --queue-url URL --worker-key KEY --worker-id ID --local-url LLM_URL [options]
 if (args.Contains("--worker-mode"))
 {
     var sp = BuildCoreServices(args);
@@ -795,8 +795,8 @@ if (args.Contains("--worker-mode"))
 // CLI mode: have N Legion personas each read an EXISTING node and write an
 // honest, scored reader review (saved to NodeReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
-//   ss --review-node (--id <guid|prefix> | --slug <slug>) [--readers N]
-//   ss --review-book / --run-panel  (legacy aliases)
+//   prose --review-node (--id <guid|prefix> | --slug <slug>) [--readers N]
+//   prose --review-book / --run-panel  (legacy aliases)
 if (args.Contains("--review-node") || args.Contains("--review-book") || args.Contains("--run-panel"))
 {
     var sp = BuildServicesWithVault(args);
@@ -811,7 +811,7 @@ if (args.Contains("--review-node") || args.Contains("--review-book") || args.Con
 }
 
 // CLI mode: manage the rented vast.ai review box (key from the MindAttic vault, provider 'vast').
-//   ss --gpu <status|stop|start|destroy> [--instance <id>]
+//   prose --gpu <status|stop|start|destroy> [--instance <id>]
 if (args.Contains("--gpu"))
 {
     var sp = BuildCoreServices(args);
@@ -820,7 +820,7 @@ if (args.Contains("--gpu"))
 }
 
 // CLI mode: manage the rented RunPod review pod (key from the MindAttic vault, provider 'runpod').
-//   ss --runpod <status|stop|start|terminate> [--pod <id>]
+//   prose --runpod <status|stop|start|terminate> [--pod <id>]
 if (args.Contains("--runpod"))
 {
     var sp = BuildCoreServices(args);
@@ -830,7 +830,7 @@ if (args.Contains("--runpod"))
 
 // CLI mode: (re)generate the portable per-voter report (JSON + filterable HTM) from
 // a node's most recent stored review batch, without re-running the panel.
-//   ss --review-report (--slug <slug> | --id <guid> | --code <CODE>) [--provider local|cloud|all]
+//   prose --review-report (--slug <slug> | --id <guid> | --code <CODE>) [--provider local|cloud|all]
 if (args.Contains("--review-report"))
 {
     var sp = BuildCoreServices(args);
@@ -841,7 +841,7 @@ if (args.Contains("--review-report"))
 // CLI mode: add an author ruling to the prose-lessons memory store.
 // Lessons are injected into review ballot prompts so reviewers don't penalise
 // beats the author has already ruled are doing their job.
-//   ss --lesson-add --scope <scope> --kind <kind> --text "<text>"
+//   prose --lesson-add --scope <scope> --kind <kind> --text "<text>"
 //   Scope: global | node:<slug> | beat:<guid>
 //   Kind:  score-vs-function | delight | voice | pacing | continuity | other
 if (args.Contains("--lesson-add"))
@@ -852,7 +852,7 @@ if (args.Contains("--lesson-add"))
 }
 
 // CLI mode: list prose lessons (all scopes or filtered).
-//   ss --lessons-list [--scope <scope>]
+//   prose --lessons-list [--scope <scope>]
 if (args.Contains("--lessons-list"))
 {
     var sp = BuildCoreServices(args);
@@ -863,7 +863,7 @@ if (args.Contains("--lessons-list"))
 // CLI mode: register feedback loop — surface top-N beats by EmotionalScore, identify
 // which register law each exemplifies, and append as candidate entries to
 // docs/registers/<NAME>.md. Closes the story→review→exemplar→register→prose loop.
-//   ss --update-register-exemplars (--slug <slug> | --id <guid>) [--top N] [--dry-run]
+//   prose --update-register-exemplars (--slug <slug> | --id <guid>) [--top N] [--dry-run]
 if (args.Contains("--update-register-exemplars"))
 {
     var sp = BuildCoreServices(args);
@@ -874,7 +874,7 @@ if (args.Contains("--update-register-exemplars"))
 // CLI mode: review-driven auto-editor. Weight the latest reviews, target the
 // lowest / most-flagged beats (raise the floor), and emit conservative
 // before/after rewrite PROPOSALS (JSON) for an approval survey. Nothing is written.
-//   ss --edit-book (--id <guid|prefix> | --slug <slug>) [--top N]
+//   prose --edit-book (--id <guid|prefix> | --slug <slug>) [--top N]
 if (args.Contains("--edit-book"))
 {
     var sp = BuildCoreServices(args);
@@ -885,7 +885,7 @@ if (args.Contains("--edit-book"))
 // CLI mode: stitch an existing node's beats into one combined file (WAV →
 // MP3), copy it to the publish output dir (Downloads by default), and record
 // the publication run + process-event ledger. Headless Publish button.
-//   ss --publish-book (--id <guid|prefix> | --slug <slug>)
+//   prose --publish-book (--id <guid|prefix> | --slug <slug>)
 if (args.Contains("--publish-book"))
 {
     var sp = BuildCoreServices(args);
@@ -894,7 +894,7 @@ if (args.Contains("--publish-book"))
 }
 
 // CLI mode: set Amazon KDP backend keywords for one node (no generic default).
-//   ss --seed-keywords --slug <slug> --keywords "phrase one|phrase two|..."
+//   prose --seed-keywords --slug <slug> --keywords "phrase one|phrase two|..."
 if (args.Contains("--seed-keywords"))
 {
     var sp = BuildCoreServices(args);
@@ -903,7 +903,7 @@ if (args.Contains("--seed-keywords"))
 }
 
 // CLI mode: three-altitudes agreement audit (designed story vs told story).
-//   ss --altitude-audit (--slug <slug> | --all) [--force-synopsis]
+//   prose --altitude-audit (--slug <slug> | --all) [--force-synopsis]
 if (args.Contains("--altitude-audit"))
 {
     var sp = BuildCoreServices(args);
@@ -912,7 +912,7 @@ if (args.Contains("--altitude-audit"))
 }
 
 // CLI mode: chapter-by-chapter synopsis export (also runs inside --export-node).
-//   ss --export-synopsis (--slug <slug> | --all) [--force]
+//   prose --export-synopsis (--slug <slug> | --all) [--force]
 if (args.Contains("--export-synopsis"))
 {
     var sp = BuildCoreServices(args);
@@ -923,7 +923,7 @@ if (args.Contains("--export-synopsis"))
 // CLI mode: render a node to .docx + .epub + .pdf + .txt + metadata artifacts
 // (description.txt, story-synopsis.txt, <CODE>-dcm-viz.htm). Local file
 // rendering only — no KDP API integration, hence "export" not "publish".
-//   ss --export-node (--id <guid|prefix> | --slug <slug>) [--author "Name"]
+//   prose --export-node (--id <guid|prefix> | --slug <slug>) [--author "Name"]
 if (args.Contains("--export-node"))
 {
     var sp = BuildCoreServices(args);
@@ -934,7 +934,7 @@ if (args.Contains("--export-node"))
 // CLI mode: hard-delete all disabled (IsEnabled=false) beats from a book.
 // Use ONLY when a book is export-ready and placeholder beats will never be used.
 // Temporal history retains all deleted beats; data is recoverable by a DBA.
-//   ss --prune-disabled --slug <slug> [--dry-run] [--yes]
+//   prose --prune-disabled --slug <slug> [--dry-run] [--yes]
 if (args.Contains("--prune-disabled"))
 {
     var sp = BuildCoreServices(args);
@@ -944,7 +944,7 @@ if (args.Contains("--prune-disabled"))
 
 // CLI mode: build an Audible AI-narration hand-off package for a node.
 // Produces a narration-clean manuscript, pronunciation guide, and README.
-//   ss --prepare-audible (--slug <slug> | --id <guid|prefix>) [--no-phonetics]
+//   prose --prepare-audible (--slug <slug> | --id <guid|prefix>) [--no-phonetics]
 if (args.Contains("--prepare-audible"))
 {
     var sp = BuildCoreServices(args);
@@ -954,7 +954,7 @@ if (args.Contains("--prepare-audible"))
 
 // CLI mode: deterministic timeline-consistency check (RFC 0009 §5).
 // Detects dead-character-acting and wound-regression violations. No LLM calls.
-//   ss --timeline-check (--slug <slug> | --id <guid>)
+//   prose --timeline-check (--slug <slug> | --id <guid>)
 if (args.Contains("--timeline-check"))
 {
     var sp = BuildCoreServices(args);
@@ -965,7 +965,7 @@ if (args.Contains("--timeline-check"))
 // CLI mode: set the ParentNodeId on an existing node (move it into a collection).
 // X-Ray scene assembly (RFC 0002): print the entity roster + voice context block
 // for a beat or raw prose. CLI twin of the MCP tool assemble_scene_context.
-//   ss --assemble-scene (--beat <guid> | --text "<prose>") [--budget N]
+//   prose --assemble-scene (--beat <guid> | --text "<prose>") [--budget N]
 if (args.Contains("--assemble-scene"))
 {
     var sp = BuildCoreServices(args);
@@ -973,8 +973,8 @@ if (args.Contains("--assemble-scene"))
     return;
 }
 
-//   ss --reparent-node (--slug <slug> | --id <id>) (--parent-slug <slug> | --parent-id <id>)
-//   ss --reparent-node --slug <slug> --clear   — detach from parent
+//   prose --reparent-node (--slug <slug> | --id <id>) (--parent-slug <slug> | --parent-id <id>)
+//   prose --reparent-node --slug <slug> --clear   — detach from parent
 if (args.Contains("--reparent-node"))
 {
     var sp = BuildCoreServices(args);
@@ -986,7 +986,7 @@ if (args.Contains("--reparent-node"))
 // CLI mode: render the WHOLE node as one continuous audiobook (one TTS pass,
 // tiered to ElevenLabs limits — one request, else per-chapter, else split) and
 // drop the MP3 in Downloads. The headless twin of the "Export Audio" button.
-//   ss --record | --export-audio | --export-mp3 | --publish-audiobook
+//   prose --record | --export-audio | --export-mp3 | --publish-audiobook
 //      (--id <guid|prefix> | --slug <slug>)
 if (args.Contains("--publish-audiobook") || args.Contains("--record") || args.Contains("--export-audio") || args.Contains("--export-mp3"))
 {
@@ -998,7 +998,7 @@ if (args.Contains("--publish-audiobook") || args.Contains("--record") || args.Co
 // CLI mode: codify the GLMZ house voice + world rules from the memory rubric into
 // the DB stores the generator reads (literary_rules / tone_bible). De-fragilizes
 // the rules so they no longer depend on an .md file being parsed. Idempotent.
-//   ss --seed-voice-rules
+//   prose --seed-voice-rules
 if (args.Contains("--seed-voice-rules"))
 {
     var sp = BuildCoreServices(args);
@@ -1008,7 +1008,7 @@ if (args.Contains("--seed-voice-rules"))
 
 // CLI mode: extract a time / elapsed-duration timeline from all beats in a node.
 // Flags clock anchors, infers story-relative timestamps, and surfaces conflicts.
-//   ss --timeline (--slug <slug> | --id <id>)
+//   prose --timeline (--slug <slug> | --id <id>)
 if (args.Contains("--timeline"))
 {
     var sp = BuildCoreServices(args);
@@ -1018,7 +1018,7 @@ if (args.Contains("--timeline"))
 
 // CLI mode: per-entity-type reachability matrix (how much canon is embedded and
 // thus pullable into prose). The standing gap-finder.
-//   ss --coverage
+//   prose --coverage
 if (args.Contains("--coverage"))
 {
     var sp = BuildCoreServices(args);
@@ -1030,7 +1030,7 @@ if (args.Contains("--coverage"))
 // relational source of truth. Run after a bulk import / relational migration,
 // or whenever ReadModelVersion is bumped. Backfills missing/stale rows, prunes
 // orphans. The steady-state path self-heals, so this is a one-time / maintenance op.
-//   ss --rebuild-readmodel [--archived]
+//   prose --rebuild-readmodel [--archived]
 if (args.Contains("--rebuild-readmodel"))
 {
     var sp = BuildCoreServices(args);
@@ -1039,7 +1039,7 @@ if (args.Contains("--rebuild-readmodel"))
 }
 
 // CLI mode: create a runtime-defined repository (custom entity type).
-//   ss --create-repository --name "Artifacts" [--category World] [--icon bi-box] [--description "..."]
+//   prose --create-repository --name "Artifacts" [--category World] [--icon bi-box] [--description "..."]
 if (args.Contains("--create-repository"))
 {
     string ArgVal(string flag) { var i = Array.IndexOf(args, flag); return i >= 0 && i + 1 < args.Length ? args[i + 1] : ""; }
@@ -1099,7 +1099,7 @@ if (args.Contains("--create-repository"))
 
 // CLI mode: materialize relational rows for active characters that are blob-only
 // (no Characters row) — the no-data-loss gate before dropping the Character blob. (RFC 0007)
-//   ss --backfill-missing-characters
+//   prose --backfill-missing-characters
 if (args.Contains("--backfill-missing-characters"))
 {
     var sp = BuildCoreServices(args);
@@ -1110,7 +1110,7 @@ if (args.Contains("--backfill-missing-characters"))
 
 // CLI mode: RFC 0007 unified blob-retirement gate — backfill all 29 relational types
 // from Records.Json, validate, and delete the blobs in a single pass. (RFC 0007)
-//   ss --retire-records-blobs [--rebuild] [--validate] [--apply]
+//   prose --retire-records-blobs [--rebuild] [--validate] [--apply]
 if (args.Contains("--retire-records-blobs"))
 {
     var sp = BuildCoreServices(args);
@@ -1120,7 +1120,7 @@ if (args.Contains("--retire-records-blobs"))
 
 // CLI mode: split a monolithic node into a Collection (parent + chapter
 // child nodes) at IsChapterStart boundaries. Backs up to markdown first.
-//   ss --split-collection (--slug <s> | --id <guid>)
+//   prose --split-collection (--slug <s> | --id <guid>)
 if (args.Contains("--split-collection"))
 {
     var sp = BuildCoreServices(args);
@@ -1130,7 +1130,7 @@ if (args.Contains("--split-collection"))
 
 // CLI mode: print the voice context the generator/re-beater receive — the
 // verification that the canon-trained voice is wired into prompts.
-//   ss --print-voice
+//   prose --print-voice
 if (args.Contains("--print-voice"))
 {
     var sp = BuildCoreServices(args);
@@ -1140,7 +1140,7 @@ if (args.Contains("--print-voice"))
 
 // CLI mode: print all beats of a node as continuous prose to stdout.
 // No headers, no beat numbers, no metadata — just the prose, beats separated by blank lines.
-//   ss --sanitize-beats [--slug <slug> | --all] [--dry-run]
+//   prose --sanitize-beats [--slug <slug> | --all] [--dry-run]
 if (args.Contains("--sanitize-beats"))
 {
     var sp = BuildCoreServices(args);
@@ -1148,7 +1148,7 @@ if (args.Contains("--sanitize-beats"))
     return;
 }
 
-//   ss --print-book (--id <guid|prefix> | --slug <slug>)
+//   prose --print-book (--id <guid|prefix> | --slug <slug>)
 if (args.Contains("--print-book"))
 {
     var sp = BuildCoreServices(args);
@@ -1160,7 +1160,7 @@ if (args.Contains("--print-book"))
 // re-segmentation (story beats + dialogue/'?' mechanics + gaps). Dry-run by
 // default; --apply backs up to markdown then replaces beats if the word-retention
 // guard passes. --all targets every doctrine-violating node.
-//   ss --rebeat-book (--slug <s> | --id <guid> | --all) [--apply]
+//   prose --rebeat-book (--slug <s> | --id <guid> | --all) [--apply]
 if (args.Contains("--rebeat-book"))
 {
     var sp = BuildCoreServices(args);
@@ -1170,7 +1170,7 @@ if (args.Contains("--rebeat-book"))
 
 // CLI mode: sweep a node's prose against canon (all entity types) and queue
 // contradictions as approval-gated findings — the self-correction pass.
-//   ss --check-canon (--slug <s> | --id <guid> | --all)
+//   prose --check-canon (--slug <s> | --id <guid> | --all)
 if (args.Contains("--check-canon"))
 {
     var sp = BuildCoreServices(args);
@@ -1180,7 +1180,7 @@ if (args.Contains("--check-canon"))
 
 // CLI mode: show what the universal canon reach pulls for a query, across ALL
 // entity types — verifies the full-interconnect retrieval path.
-//   ss --canon-retrieve "<query>" [--k N] [--types t1,t2]
+//   prose --canon-retrieve "<query>" [--k N] [--types t1,t2]
 if (args.Contains("--canon-retrieve"))
 {
     var sp = BuildCoreServices(args);
@@ -1190,7 +1190,7 @@ if (args.Contains("--canon-retrieve"))
 
 // CLI mode: author-only Canon trust gate — mark a node strong enough to draw
 // conclusions about its characters/events (the voice-harvest learns from canon).
-//   ss --mark-canon (--slug <s> | --id <guid>) [--off]
+//   prose --mark-canon (--slug <s> | --id <guid>) [--off]
 if (args.Contains("--mark-canon"))
 {
     var sp = BuildCoreServices(args);
@@ -1200,7 +1200,7 @@ if (args.Contains("--mark-canon"))
 
 // CLI mode: distill voice rules from winning (≥80%) nodes into the codified
 // DB-backed rules the generator reads. Propose-then-approve.
-//   ss --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <guid> | --reject <guid>) [--force]
+//   prose --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <guid> | --reject <guid>) [--force]
 if (args.Contains("--harvest-voice"))
 {
     var sp = BuildCoreServices(args);
@@ -1213,7 +1213,7 @@ if (args.Contains("--harvest-voice"))
 }
 
 // CLI mode: list every node as a table (or JSON). Headless twin of /nodes.
-//   ss --list-books [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
+//   prose --list-books [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
 if (args.Contains("--list-books"))
 {
     var sp = BuildCoreServices(args);
@@ -1221,7 +1221,7 @@ if (args.Contains("--list-books"))
     return;
 }
 
-//   ss --kdp-status
+//   prose --kdp-status
 //   Show KDP publication status: Published / Outdated / WorkInProgress for all tracked nodes.
 //   Outdated = published but beats edited since last KDP push.
 if (args.Contains("--kdp-status"))
@@ -1231,7 +1231,7 @@ if (args.Contains("--kdp-status"))
     return;
 }
 
-//   ss --kdp-manifest [--out <path>] [--userscript]
+//   prose --kdp-manifest [--out <path>] [--userscript]
 //   Reconciles DB + disk + tools/kdp/title-ids.json into tools/kdp/manifest.json (the ground
 //   truth for what needs to go up on KDP). --userscript also regenerates
 //   tools/kdp/kdp-panel.user.js from tools/kdp/kdp-panel.template.js.
@@ -1242,7 +1242,7 @@ if (args.Contains("--kdp-manifest"))
     return;
 }
 
-//   ss --kdp-mark-published --slug <slug> [--url <amazonUrl>] [--title-id <id>]
+//   prose --kdp-mark-published --slug <slug> [--url <amazonUrl>] [--title-id <id>]
 //   Closes the loop after a republish actually completes on KDP.
 if (args.Contains("--kdp-mark-published"))
 {
@@ -1252,7 +1252,7 @@ if (args.Contains("--kdp-mark-published"))
 }
 
 // CLI mode: render a node to Markdown or PDF in Downloads.
-// Markdown output embeds <!-- beat:N:id7 --> markers for ss --import-md round-trip.
+// Markdown output embeds <!-- beat:N:id7 --> markers for prose --import-md round-trip.
 //   ss (--publish-md | --publish-pdf) (--id <guid|prefix> | --slug <slug>) [--author "Name"]
 if (args.Contains("--publish-md") || args.Contains("--publish-pdf"))
 {
@@ -1265,7 +1265,7 @@ if (args.Contains("--publish-md") || args.Contains("--publish-pdf"))
 
 // CLI mode: reimport an edited --publish-md Markdown file back into the DB. Each
 // <!-- beat:N:id7 --> marker identifies the beat; prose between markers updates Beat.Text.
-//   ss --import-md --file path.md [--dry-run]
+//   prose --import-md --file path.md [--dry-run]
 if (args.Contains("--import-md"))
 {
     var sp = BuildCoreServices(args);
@@ -1277,7 +1277,7 @@ if (args.Contains("--import-md"))
 // "?" on questions that lack one, and "asks"/"asked" (not "says") on question
 // dialogue. Dry-run by default; --apply commits. Beats edited beyond those bounds
 // are rejected (word-token guard) and left untouched.
-//   ss --reflow-book (--id <guid|prefix> | --slug <slug>) [--apply]
+//   prose --reflow-book (--id <guid|prefix> | --slug <slug>) [--apply]
 if (args.Contains("--reflow-book"))
 {
     var sp = BuildCoreServices(args);
@@ -1288,7 +1288,7 @@ if (args.Contains("--reflow-book"))
 // CLI mode: deep-duplicate a node (and its sub-node tree) into a fresh,
 // independent copy — every beat cloned to a new row (prose + metadata kept;
 // audio/score/stale reset). Editing the copy never touches the original.
-//   ss --duplicate-book (--id <guid|prefix> | --slug <slug>) --title "New Title"
+//   prose --duplicate-book (--id <guid|prefix> | --slug <slug>) --title "New Title"
 if (args.Contains("--duplicate-book"))
 {
     var sp = BuildCoreServices(args);
@@ -1300,7 +1300,7 @@ if (args.Contains("--duplicate-book"))
 // fresh node. The complement to --write-story (LLM-generated): this is for
 // drafts written elsewhere (chat exports, transcripts, paper notes typed up).
 // See ImportNodeCli class doc for the file format.
-//   ss --import-book --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
+//   prose --import-book --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
 if (args.Contains("--import-book"))
 {
     var sp = BuildCoreServices(args);
@@ -1310,7 +1310,7 @@ if (args.Contains("--import-book"))
 
 // CLI mode: import a local image file (png, jpg, webp) into the Media table.
 // Optionally links to a node by --book-code and sets the media type.
-//   ss --import-cover --file PATH [--book-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
+//   prose --import-cover --file PATH [--book-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
 if (args.Contains("--import-cover"))
 {
     var sp = BuildCoreServices(args);
@@ -1322,7 +1322,7 @@ if (args.Contains("--import-cover"))
 // CLI mode: burst oversized beats (e.g. chapter-as-one-beat from old book
 // imports) into paragraph-sized pieces. Idempotent — already-small beats
 // are skipped on rerun.
-//   ss --burst-beats [--min-chars 800] [--node slug] [--kind book] [--dry-run]
+//   prose --burst-beats [--min-chars 800] [--node slug] [--kind book] [--dry-run]
 if (args.Contains("--burst-beats"))
 {
     var sp = BuildCoreServices(args);
@@ -1331,8 +1331,8 @@ if (args.Contains("--burst-beats"))
 }
 
 // CLI mode: report flat-vs-bridge drift for a denormalised column.
-//   ss --audit-denorm Entities.TagsJson
-//   ss --audit-denorm Characters.Affiliation
+//   prose --audit-denorm Entities.TagsJson
+//   prose --audit-denorm Characters.Affiliation
 if (args.Contains("--audit-denorm"))
 {
     var sp = BuildCoreServices(args);
@@ -1348,7 +1348,7 @@ if (args.Contains("--findings"))
     return;
 }
 
-// ss --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]
+// prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]
 if (args.Contains("--entity-tree"))
 {
     var sp = BuildCoreServices(args);
@@ -1356,7 +1356,7 @@ if (args.Contains("--entity-tree"))
     return;
 }
 
-// ss --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]
+// prose --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]
 if (args.Contains("--prose-check"))
 {
     var sp = BuildCoreServices(args);
@@ -1364,7 +1364,7 @@ if (args.Contains("--prose-check"))
     return;
 }
 
-// ss --compute-metrics [--slug <slug> | --all]
+// prose --compute-metrics [--slug <slug> | --all]
 // CPU-only per-beat prose quality metrics: word count, sentence count, TTR,
 // MTLD lexical diversity, Flesch-Kincaid readability, dialogue proportion.
 // Upserts into BeatProseMetrics. Safe to re-run nightly. Exit 0 = success.
@@ -1375,7 +1375,7 @@ if (args.Contains("--compute-metrics"))
     return;
 }
 
-// ss --beat-granularity [--slug <slug> | --code <code> | --all] [--beats]
+// prose --beat-granularity [--slug <slug> | --code <code> | --all] [--beats]
 // Analyses beat-size distribution against the 4,000–7,500 char optimal range.
 // Labels each beat as OK / SPLIT / MERGE and prints per-story stats.
 // CPU-only — no LLM calls. Exit 0 = success.
@@ -1386,7 +1386,7 @@ if (args.Contains("--beat-granularity"))
     return;
 }
 
-// ss --consistency-audit [--since <hours>]
+// prose --consistency-audit [--since <hours>]
 // Surfaces factual contradictions that span multiple story nodes by querying
 // the existing ContinuityClaims table. CPU-only — no LLM calls.
 // Exit 0 = clean, 1 = conflicts found.
@@ -1397,7 +1397,7 @@ if (args.Contains("--consistency-audit"))
     return;
 }
 
-// ss --morning-report [--since <hours>]
+// prose --morning-report [--since <hours>]
 // Aggregates overnight findings: cross-story contradictions, new Findings,
 // prose metrics outliers, near-duplicate alerts, score correlation, leaderboard.
 // Writes HTML to PublishExportDirectory. Default window: 24h. Exit 0 always.
@@ -1408,7 +1408,7 @@ if (args.Contains("--morning-report"))
     return;
 }
 
-// ss --prose-health [--slug <nodeSlug>] [--json] [--out <dir>]
+// prose --prose-health [--slug <nodeSlug>] [--json] [--out <dir>]
 // Zero-cost overnight health scan: surface stats + kNN score prediction +
 // semantic outlier detection using cached ProseEmbeddings. No API calls.
 if (args.Contains("--prose-health"))
@@ -1418,7 +1418,7 @@ if (args.Contains("--prose-health"))
     return;
 }
 
-// ss --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]
+// prose --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]
 // Detects the Semantic Fidelity Gap — beats scoring high but drifting from the
 // story's original meaning (Goodhart's Law in prose). Two checks:
 //   Bible alignment: prose vs Seed/Description (north-star drift)
@@ -1431,7 +1431,7 @@ if (args.Contains("--check-fidelity"))
     return;
 }
 
-// ss --world-state --beat <beatId> [--story-time "date"] [--json]
+// prose --world-state --beat <beatId> [--story-time "date"] [--json]
 if (args.Contains("--world-state"))
 {
     var sp = BuildCoreServices(args);
@@ -1439,7 +1439,7 @@ if (args.Contains("--world-state"))
     return;
 }
 
-// ss --gear-check --slug <nodeSlug> --character <characterId> [--story-time date]
+// prose --gear-check --slug <nodeSlug> --character <characterId> [--story-time date]
 if (args.Contains("--gear-check"))
 {
     var sp = BuildCoreServices(args);
@@ -1447,7 +1447,7 @@ if (args.Contains("--gear-check"))
     return;
 }
 
-// ss --score-trend [--batches N] [--universe <slug>]
+// prose --score-trend [--batches N] [--universe <slug>]
 // Print rolling mean score across N chronological batches of scored nodes.
 // Positive Δ confirms the voice-harvest flywheel is spinning forward (SS-US-J6).
 // Exit 0 = positive trend, 1 = flat/declining, 2 = not enough data.
@@ -1458,7 +1458,7 @@ if (args.Contains("--score-trend"))
     return;
 }
 
-// ss --write-outline --slug <nodeSlug> [--json]
+// prose --write-outline --slug <nodeSlug> [--json]
 // Generates a beat-by-beat narrative outline (act-grouped, one sentence per beat).
 // For a logic check, use --logic-sweep instead.
 if (args.Contains("--write-outline"))
@@ -1468,7 +1468,7 @@ if (args.Contains("--write-outline"))
     return;
 }
 
-// ss --logic-sweep --slug <nodeSlug> [--json]
+// prose --logic-sweep --slug <nodeSlug> [--json]
 // Codifies docs/LOGIC.md's six-dimension sweep (SS-A44) as one LLM call per dimension:
 // causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references,
 // bible agreement. A single-pass approximation over the whole node's prose — for a large
@@ -1482,7 +1482,7 @@ if (args.Contains("--logic-sweep"))
     return;
 }
 
-// ss --dcm-backfill --slug <slug> [--dry-run]
+// prose --dcm-backfill --slug <slug> [--dry-run]
 // Retroactive DCM footprint for books written OUTSIDE the engine (update_beat_text /
 // --edit-beat / --import-md bypass ProseWriterRouter, so step-0 entity inference never
 // ran — PURSUED shipped 127 beats with zero entity docs this way). Runs
@@ -1495,7 +1495,7 @@ if (args.Contains("--dcm-backfill"))
     return;
 }
 
-// ss --reader-qa (--slug <slug> | --all) [--force] [--json]
+// prose --reader-qa (--slug <slug> | --all) [--force] [--json]
 // Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality instrument.
 // Phase 1: comprehension probes — a cheap model reads each chapter cold, diffed against
 // the Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect
@@ -1508,7 +1508,7 @@ if (args.Contains("--reader-qa"))
     return;
 }
 
-// ss --craft-checklist --slug <slug> [--force] [--json]
+// prose --craft-checklist --slug <slug> [--force] [--json]
 // Reader-Proxy QA Instrument 2: binary craft/delight checklist per beat, hash-gated on
 // Beat.TextHash + rule-set version (unchanged beats never re-bill). CRAFT §8 DON'Ts +
 // "≥1 applicable DELIGHT move" + book-level move-monotony counters (DELIGHT §14).
@@ -1520,7 +1520,7 @@ if (args.Contains("--craft-checklist"))
     return;
 }
 
-// ss --craft-audit --slug <nodeSlug> [--json]
+// prose --craft-audit --slug <nodeSlug> [--json]
 // Audits a node's live prose against docs/CRAFT.md §8 (Banned Mannerisms), parsed live from
 // CanonDocumentSections — each numbered item becomes its own check, no hand-duplicated C#
 // array to drift out of sync. Edit §8 via set_canon_section MCP; the next run picks it up.
@@ -1532,7 +1532,7 @@ if (args.Contains("--craft-audit"))
     return;
 }
 
-// ss --diagnose-book --slug <nodeSlug> [--json]
+// prose --diagnose-book --slug <nodeSlug> [--json]
 // Pre-flight structural analysis before running the review panel.
 // Runs 12 targeted checks (antagonist cost, protagonist behavior change,
 // exposition density, etc.) and reports Pass/Warn/Fail with evidence + fixes.
@@ -1544,7 +1544,7 @@ if (args.Contains("--diagnose-book"))
     return;
 }
 
-// ss --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json]
+// prose --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json]
 // Emotional Intelligence Examination (SS-A15): 8-dimension 0–4 rubric, per-beat curve,
 // character ledger (Want/Need/Wound/Flaw), register-adaptive anchors.
 // Exit 0 = none blocking, 1 = advisory issues, 2 = blocking dimensions open.
@@ -1559,7 +1559,7 @@ if (args.Contains("--examine-emotion"))
     return;
 }
 
-// ss --causality-check / --affect-check / --interpersonal-check --slug <slug> [--json]
+// prose --causality-check / --affect-check / --interpersonal-check --slug <slug> [--json]
 // "Behave like people" beat lenses: cause-effect (kill "and then"), emotion→action,
 // and verbal+non-verbal interpersonal dynamics (the 90+ relational lever).
 if (args.Contains("--causality-check") || args.Contains("--affect-check") || args.Contains("--interpersonal-check"))
@@ -1576,7 +1576,7 @@ if (args.Contains("--causality-check") || args.Contains("--affect-check") || arg
     return;
 }
 
-// ss --list-species — print the species taxonomy (canonical name, label, sentience).
+// prose --list-species — print the species taxonomy (canonical name, label, sentience).
 if (args.Contains("--list-species"))
 {
     var sp = BuildCoreServices(args);
@@ -1584,7 +1584,7 @@ if (args.Contains("--list-species"))
     return;
 }
 
-// ss --behavior-check --slug <nodeSlug> --character <characterId>
+// prose --behavior-check --slug <nodeSlug> --character <characterId>
 if (args.Contains("--behavior-check"))
 {
     var sp = BuildCoreServices(args);
@@ -1592,7 +1592,7 @@ if (args.Contains("--behavior-check"))
     return;
 }
 
-// ss --weapon-network (--id <weaponId> | --character <characterId> [--as-of date])
+// prose --weapon-network (--id <weaponId> | --character <characterId> [--as-of date])
 if (args.Contains("--weapon-network"))
 {
     var sp = BuildCoreServices(args);
@@ -1600,7 +1600,7 @@ if (args.Contains("--weapon-network"))
     return;
 }
 
-// ss --ambient-palette --character <characterId> [--as-of date]
+// prose --ambient-palette --character <characterId> [--as-of date]
 if (args.Contains("--ambient-palette"))
 {
     var sp = BuildCoreServices(args);
@@ -1608,7 +1608,7 @@ if (args.Contains("--ambient-palette"))
     return;
 }
 
-// ss --seed-sensory-hints [--list] [--weapon "Name" --hints "hint1; hint2"] [--force]
+// prose --seed-sensory-hints [--list] [--weapon "Name" --hints "hint1; hint2"] [--force]
 if (args.Contains("--seed-sensory-hints"))
 {
     var sp = BuildCoreServices(args);
@@ -1616,7 +1616,7 @@ if (args.Contains("--seed-sensory-hints"))
     return;
 }
 
-// ss --beat <subcommand> — fine-grained beat manipulation:
+// prose --beat <subcommand> — fine-grained beat manipulation:
 //   insert  --node <slug|id> [--after <beatId>] [--text "..."]
 //   delete  --id <beatId> [--node <slug|id>]
 //   update  --id <beatId> --text "..."  (use '-' for stdin)
@@ -1631,7 +1631,7 @@ if (args.Contains("--beat"))
     return;
 }
 
-// ss --delete-node --id <guid>   Hard-delete a node and its BeatNode memberships.
+// prose --delete-node --id <guid>   Hard-delete a node and its BeatNode memberships.
 // Beats that are exclusively owned by this node are also deleted.
 // HARD RULE: never use raw sqlcmd DELETE on Nodes — use this command instead.
 if (args.Contains("--delete-node"))
@@ -1639,7 +1639,7 @@ if (args.Contains("--delete-node"))
     var idStr = args.SkipWhile(a => a != "--id").Skip(1).FirstOrDefault();
     if (!Guid.TryParse(idStr, out var deleteNodeId))
     {
-        Console.Error.WriteLine("Usage: ss --delete-node --id <guid>");
+        Console.Error.WriteLine("Usage: prose --delete-node --id <guid>");
         Environment.ExitCode = 1;
         return;
     }
@@ -1718,7 +1718,7 @@ if (args.Contains("--delete-node"))
     return;
 }
 
-// ss --wound <subcommand> — character wound ledger:
+// prose --wound <subcommand> — character wound ledger:
 //   list    --character <id|name> [--as-of "date"]
 //   log     --character <id|name> --description "..." [--location "chest"] [--severity moderate] ...
 //   status  --wound <id> --status active|healed|noted
@@ -1732,7 +1732,7 @@ if (args.Contains("--wound"))
 
 // CLI mode: harvest entities + edges from open text (design notes, canon briefs).
 // Routed BEFORE the bare --universe command: --universe here is the scope flag, not a subcommand.
-//   ss --harvest-entities --file <path> [--universe glmz] [--dry-run]
+//   prose --harvest-entities --file <path> [--universe glmz] [--dry-run]
 if (args.Contains("--harvest-entities"))
 {
     var sp = BuildCoreServices(args);
@@ -1744,7 +1744,7 @@ if (args.Contains("--harvest-entities"))
     return;
 }
 
-// ss --universe <subcommand> — universe management:
+// prose --universe <subcommand> — universe management:
 //   list      Print all universes
 //   current   Print the active universe
 //   use       --slug <slug> | --id <guid>
@@ -1755,10 +1755,10 @@ if (args.Contains("--harvest-entities"))
 // after this one (e.g. --coordinate, --verdict).
 //
 // The subcommand check matters because --universe is ALSO valid in first position as a scoping
-// flag: `ss --universe source --export-node --slug x` is a legitimate export, not a malformed
+// flag: `prose --universe source --export-node --slug x` is a legitimate export, not a malformed
 // universe command. Matching on args[0] alone swallowed those silently — UniverseCli printed its
 // usage text and the real command never ran, which looks like a no-op rather than an error.
-// Bare `ss --universe` still lands here (args.Length == 1) so it prints usage instead of
+// Bare `prose --universe` still lands here (args.Length == 1) so it prints usage instead of
 // falling through the whole dispatch chain and exiting silently.
 if (isUniverseManagementCommand)
 {
@@ -1768,7 +1768,7 @@ if (isUniverseManagementCommand)
     return;
 }
 
-// ss --review-settings [--set <key> <value>] — view or update review voting settings.
+// prose --review-settings [--set <key> <value>] — view or update review voting settings.
 // Keys: ballots, prose, panel, readers, max-concurrency, judge-provider, allowed-providers
 if (args.Contains("--review-settings"))
 {
@@ -1777,7 +1777,7 @@ if (args.Contains("--review-settings"))
     return;
 }
 
-// ss --get <type> <name-or-id> — targeted entity lookup.
+// prose --get <type> <name-or-id> — targeted entity lookup.
 // Types: character | place | weapon | faction | corponation
 if (args.Contains("--get"))
 {
@@ -1789,7 +1789,7 @@ if (args.Contains("--get"))
 
 // CLI mode: sync project-rule, Codex, and Claude Code memory .md files to DB.
 // Upserts by RelativePath; only changed files (hash diff) produce a history row.
-//   ss --sync-markdown [--dry-run]
+//   prose --sync-markdown [--dry-run]
 if (args.Contains("--sync-markdown"))
 {
     var sp = BuildCoreServices(args);
@@ -1800,7 +1800,7 @@ if (args.Contains("--sync-markdown"))
 
 // CLI mode: restore .md files from DB back to disk. Supports point-in-time
 // recovery from the MarkdownFiles_History temporal table.
-//   ss --restore-markdown [--file <relativePath>] [--as-of <datetime-utc>] [--dry-run] [--list]
+//   prose --restore-markdown [--file <relativePath>] [--as-of <datetime-utc>] [--dry-run] [--list]
 if (args.Contains("--restore-markdown"))
 {
     var sp = BuildCoreServices(args);
@@ -1810,7 +1810,7 @@ if (args.Contains("--restore-markdown"))
 
 // CLI mode: keyword recall — call up (print) or create (--to-disk) the select few
 // tracked .md files relevant to a topic, straight from the DB.
-//   ss --recall <keyword> [--content] [--to-disk] [--as-of <datetime-utc>]
+//   prose --recall <keyword> [--content] [--to-disk] [--as-of <datetime-utc>]
 if (args.Contains("--recall"))
 {
     var sp = BuildCoreServices(args);
@@ -1820,13 +1820,13 @@ if (args.Contains("--recall"))
 
 // CLI mode: Doc Context Stack dry-run — print the rotating cast of .md docs that WOULD
 // load for a node + optional scene text (tier, reason, score, budget). Read-only.
-//   ss --doc-context --slug <node> [--goal "<text>"] [--budget <tokens>]
+//   prose --doc-context --slug <node> [--goal "<text>"] [--budget <tokens>]
 // CLI mode: manage user context overrides for the DocContextStack.
-//   ss --context add     --doc <path|guid> [--node <slug>]   Pin doc into prompts
-//   ss --context exclude --doc <path|guid> [--node <slug>]   Exclude doc
-//   ss --context remove  --doc <path|guid> [--node <slug>]   Remove override
-//   ss --context clear   [--node <slug>]                     Clear all overrides
-//   ss --context status                                       Show active overrides
+//   prose --context add     --doc <path|guid> [--node <slug>]   Pin doc into prompts
+//   prose --context exclude --doc <path|guid> [--node <slug>]   Exclude doc
+//   prose --context remove  --doc <path|guid> [--node <slug>]   Remove override
+//   prose --context clear   [--node <slug>]                     Clear all overrides
+//   prose --context status                                       Show active overrides
 if (args.Contains("--context"))
 {
     var sp = BuildCoreServices(args);
@@ -1835,7 +1835,7 @@ if (args.Contains("--context"))
     return;
 }
 
-// ss --liberty-report [--beat <guid> | --slug <slug>]
+// prose --liberty-report [--beat <guid> | --slug <slug>]
 // Show liberty analysis + Rule of Cool findings for a beat or all beats in a story.
 if (args.Contains("--liberty-report"))
 {
@@ -1860,7 +1860,7 @@ if (args.Contains("--doc-context-hook"))
 
 // CLI mode: dual-read comparative review — the SAME pinned panel grades both versions of a story;
 // pairs scores per reader (within-reader delta cancels taste bias) → keep/revert/merge verdict.
-//   ss --dual-read --old <slug|id> --new <slug|id> [--panel <name>] [--readers N]
+//   prose --dual-read --old <slug|id> --new <slug|id> [--panel <name>] [--readers N]
 if (args.Contains("--dual-read"))
 {
     var sp = BuildCoreServices(args);
@@ -1876,7 +1876,7 @@ if (args.Contains("--doc-context"))
 }
 
 // CLI mode: DCM lifecycle visualization — dry-run context pass + Gantt .htm export.
-//   ss --dcm-viz --slug <slug> [--out <dir>]
+//   prose --dcm-viz --slug <slug> [--out <dir>]
 if (args.Contains("--dcm-viz"))
 {
     var sp = BuildCoreServices(args);
@@ -1885,7 +1885,7 @@ if (args.Contains("--dcm-viz"))
 }
 
 // CLI mode: backfill entity-doc MarkdownFiles rows for a book's characters.
-//   ss --backfill-entity-docs --slug <slug> [--text]
+//   prose --backfill-entity-docs --slug <slug> [--text]
 // Replays EntityDocService.InferFromTextAsync over every beat goal (+ prose text with
 // --text) so future prose generation and the DCM viz see per-character entity docs.
 if (args.Contains("--backfill-entity-docs"))
@@ -1896,7 +1896,7 @@ if (args.Contains("--backfill-entity-docs"))
 }
 
 // CLI mode: re-materialize the entity-doc row for EVERY active entity, in every universe.
-//   ss --repair-entity-docs [--dry-run]
+//   prose --repair-entity-docs [--dry-run]
 // Unlike --backfill-entity-docs (per-book, inference-driven, so it only reaches entities a
 // given book mentions) this iterates the entity table itself — which is what stamping
 // MarkdownFiles.UniverseId on all of them requires.
@@ -1907,7 +1907,7 @@ if (args.Contains("--repair-entity-docs"))
     return;
 }
 
-// ss --workflow-status [--slug <slug> | --all] [--json]
+// prose --workflow-status [--slug <slug> | --all] [--json]
 // Per-node or global prose service coverage matrix. Shows which services
 // (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active
 // when beats were written, and surfaces gaps where applicable services weren't used.
@@ -1918,7 +1918,7 @@ if (args.Contains("--workflow-status"))
     return;
 }
 
-// ss --backfill-coverage --slug <book-or-chapter-slug>
+// prose --backfill-coverage --slug <book-or-chapter-slug>
 // Populates BeatServiceLog + BeatModeLog for prose written before ProseWriterRouter
 // existed, WITHOUT regenerating any beat. Runs the router's coverage-only path over
 // each existing beat so --workflow-status has real logs to report.
@@ -1929,8 +1929,8 @@ if (args.Contains("--backfill-coverage"))
     return;
 }
 
-// ss --backfill-synopses --slug <s> [--model <id>] [--force]
-// ss --backfill-structure-roles --slug <s> [--force]
+// prose --backfill-synopses --slug <s> [--model <id>] [--force]
+// prose --backfill-structure-roles --slug <s> [--force]
 // Fill missing beat metadata without touching prose. Synopses via LLM (BeatGoal proxy
 // for mode detection); StructureRole deterministically by book-global Save-the-Cat arc.
 if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-roles"))
@@ -1940,7 +1940,7 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
     return;
 }
 
-// ss --audit-book --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
+// prose --audit-book --slug <book-or-chapter-slug> [--deep] [--model <id>] [--out <path>]
 // The "Player Piano" — one repeatable command running the full QA battery (census +
 // coverage + plant/prose audits; --deep adds per-chapter examine-emotion + book-audit +
 // diagnose + fidelity). --model retargets the deep tier (e.g. Haiku) for the run.
@@ -1951,7 +1951,7 @@ if (args.Contains("--audit-book"))
     return;
 }
 
-// ss --book-audit --slug <nodeSlug> [--json]
+// prose --book-audit --slug <nodeSlug> [--json]
 // Audits a node against 7 commandments — gateway (PreviousNodeId=null) or
 // sequel (PreviousNodeId set). Pass/warn/fail per commandment with fix hints.
 // Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
@@ -1962,7 +1962,7 @@ if (args.Contains("--book-audit"))
     return;
 }
 
-// ss --generate-blueprint --slug <nodeSlug> [--retrofit] [--json]
+// prose --generate-blueprint --slug <nodeSlug> [--retrofit] [--json]
 // Generates the StructuralBlueprint — pre-prose anti-tell commitments (subplot,
 // temporal scheme, resolution mode, escalation curve, event palette, ending,
 // intertextual anchors). StoryScope countermeasures; bible → blueprint → prose.
@@ -1978,7 +1978,7 @@ if (args.Contains("--generate-blueprint"))
     return;
 }
 
-// ss --storyscope-audit --slug <nodeSlug> [--json]
+// prose --storyscope-audit --slug <nodeSlug> [--json]
 // Verifies the book against measurable AI-fiction structural tells (StoryScope):
 // flat escalation, event monoculture, moral gloss, emotion ratio, char-intro
 // method, resolution mode, subplot execution, consensus clichés, TTCW originality.
@@ -1995,7 +1995,7 @@ if (args.Contains("--storyscope-audit"))
     return;
 }
 
-// ss --chekhov-audit --slug <nodeSlug>
+// prose --chekhov-audit --slug <nodeSlug>
 // Chekhov's Gun audit: extract all concrete props/anchors/traits and test whether
 // each earns its place. ORPHANED = appears with no payoff; DECORATION = repeated
 // without new function; EARNS_IT = each appearance serves a distinct narrative purpose.
@@ -2011,7 +2011,7 @@ if (args.Contains("--chekhov-audit"))
     return;
 }
 
-// ss --duel --beat-id <guid> --candidate <file> [--goal "..."] [--apply] [--json]
+// prose --duel --beat-id <guid> --candidate <file> [--goal "..."] [--apply] [--json]
 // Blind A/B duel: beat's current prose vs a candidate revision. 3 voters
 // (register/goal/reader lenses), three-way ballot; replace needs >=2 better
 // with zero dissent; splits escalate to 7 voters with written rationales.
@@ -2024,7 +2024,7 @@ if (args.Contains("--duel"))
     return;
 }
 
-// ss --ml-audit [--slug <nodeSlug>] [--all] [--skip-gripes] [--json]
+// prose --ml-audit [--slug <nodeSlug>] [--all] [--skip-gripes] [--json]
 // Runs the Python ML beat auditor against the trained nightly model.
 // Writes ML-PROSE-SCORE findings to the Findings table for weak beats.
 // Prerequisites: v3/ml/.venv set up + at least one nightly run completed.
@@ -2036,7 +2036,7 @@ if (args.Contains("--ml-audit"))
     return;
 }
 
-// ss --export-personas-json [--out <path>]
+// prose --export-personas-json [--out <path>]
 // Exports all 1024 Legion persona details + OCEAN psychometric profiles to JSON
 // for consumption by the Python ML package (v3/ml/artifacts/personas.json).
 if (args.Contains("--export-personas-json"))
@@ -2068,7 +2068,7 @@ if (args.Contains("--export-personas-json"))
     return;
 }
 
-// ss --sanity-scan (--slug <slug|code> | --all) [--json]
+// prose --sanity-scan (--slug <slug|code> | --all) [--json]
 // Deterministic prose checks — no LLM. Catches leaked internal node codes,
 // undefined all-caps acronyms, encoding corruption, and heft-floor violations.
 // Exit 0 = clean, 1 = warnings only, 2 = any blocks.
@@ -2079,9 +2079,9 @@ if (args.Contains("--sanity-scan"))
     return;
 }
 
-// ss --plant-audit   --slug <node> [--json]   audit plant/payoff pairs
-// ss --list-plants   --slug <node> [--json]   list all pairs
-// ss --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
+// prose --plant-audit   --slug <node> [--json]   audit plant/payoff pairs
+// prose --list-plants   --slug <node> [--json]   list all pairs
+// prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
 if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Contains("--add-plant"))
 {
     var sp = BuildCoreServices(args);
@@ -2091,10 +2091,10 @@ if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Con
 
 // CLI mode: Will Storr narrative-science frameworks — sacred flaw, dramatic question,
 // scene anatomy, five-act structure. Four subcommands:
-//   ss --narrative-science sacred-flaw --character <slug|id> [--scaffold]
-//   ss --narrative-science dramatic-question (--slug <s> | --id <beatId>) [--character <slug|id>]
-//   ss --narrative-science scene-anatomy (--slug <s> | --id <beatId>)
-//   ss --narrative-science five-act --slug <nodeSlug>
+//   prose --narrative-science sacred-flaw --character <slug|id> [--scaffold]
+//   prose --narrative-science dramatic-question (--slug <s> | --id <beatId>) [--character <slug|id>]
+//   prose --narrative-science scene-anatomy (--slug <s> | --id <beatId>)
+//   prose --narrative-science five-act --slug <nodeSlug>
 //   (add --json to any subcommand for raw JSON output)
 if (args.Contains("--narrative-science"))
 {
@@ -2103,7 +2103,7 @@ if (args.Contains("--narrative-science"))
     return;
 }
 
-// ss --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1] [--draft] [--status ready]
+// prose --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1] [--draft] [--status ready]
 if (args.Contains("--clone-book"))
 {
     var sp = BuildCoreServices(args);
@@ -2112,7 +2112,7 @@ if (args.Contains("--clone-book"))
 }
 
 // ── Edit Sessions ─────────────────────────────────────────────────────────────
-// ss --start-session --slug <slug> --label "prose-pass-1" [--type prose-pass|gripes-cleanup|logic-sweep|custom]
+// prose --start-session --slug <slug> --label "prose-pass-1" [--type prose-pass|gripes-cleanup|logic-sweep|custom]
 if (args.Contains("--start-session"))
 {
     var sp = BuildCoreServices(args);
@@ -2120,7 +2120,7 @@ if (args.Contains("--start-session"))
     return;
 }
 
-// ss --close-session (--slug <slug> | --session-id <guid>)
+// prose --close-session (--slug <slug> | --session-id <guid>)
 if (args.Contains("--close-session"))
 {
     var sp = BuildCoreServices(args);
@@ -2128,7 +2128,7 @@ if (args.Contains("--close-session"))
     return;
 }
 
-// ss --list-sessions --slug <slug> [--limit N]
+// prose --list-sessions --slug <slug> [--limit N]
 if (args.Contains("--list-sessions"))
 {
     var sp = BuildCoreServices(args);
@@ -2136,7 +2136,7 @@ if (args.Contains("--list-sessions"))
     return;
 }
 
-// ss --session-beats --session-id <guid>
+// prose --session-beats --session-id <guid>
 if (args.Contains("--session-beats"))
 {
     var sp = BuildCoreServices(args);
@@ -2144,7 +2144,7 @@ if (args.Contains("--session-beats"))
     return;
 }
 
-// ss --sync-bible-from-session --session-id <guid> [--dry-run]
+// prose --sync-bible-from-session --session-id <guid> [--dry-run]
 if (args.Contains("--sync-bible-from-session"))
 {
     var sp = BuildServicesWithVault(args);
@@ -2152,7 +2152,7 @@ if (args.Contains("--sync-bible-from-session"))
     return;
 }
 
-// ss --sync-blueprint-from-session --session-id <guid>
+// prose --sync-blueprint-from-session --session-id <guid>
 if (args.Contains("--sync-blueprint-from-session"))
 {
     var sp = BuildServicesWithVault(args);
@@ -2160,7 +2160,7 @@ if (args.Contains("--sync-blueprint-from-session"))
     return;
 }
 
-// ss --close-all-sessions
+// prose --close-all-sessions
 // Called by the /commit skill before every commit to flush open edit sessions,
 // run bible + blueprint sync for each, and draw a clean 3B coordination boundary.
 if (args.Contains("--close-all-sessions"))
@@ -2170,7 +2170,7 @@ if (args.Contains("--close-all-sessions"))
     return;
 }
 
-// ss --coordinate --slug <slug> [--json <path>] [--no-stamp]
+// prose --coordinate --slug <slug> [--json <path>] [--no-stamp]
 // Full-coverage bible↔blueprint↔beat coordination: correlate every beat's meaning,
 // construction, and prose; emit JSON + stamp the "## Beat Coordination Index".
 if (args.Contains("--coordinate"))
@@ -2180,7 +2180,7 @@ if (args.Contains("--coordinate"))
     return;
 }
 
-// ss --ensure-chapter --slug <slug> | --all
+// prose --ensure-chapter --slug <slug> | --all
 // Enforce "every story has >= 1 chapter": wrap a flat story's direct beats into a
 // single ChapterNode child (no-op if already chaptered). No LLM.
 if (args.Contains("--ensure-chapter"))
@@ -2190,7 +2190,7 @@ if (args.Contains("--ensure-chapter"))
     return;
 }
 
-// ss --backfill-meaning --slug <slug> [--limit N] [--dry-run]
+// prose --backfill-meaning --slug <slug> [--limit N] [--dry-run]
 // Fill the MEANING coordinate (Beat.Description) for beats with prose but no meaning.
 if (args.Contains("--backfill-meaning"))
 {
@@ -2199,7 +2199,7 @@ if (args.Contains("--backfill-meaning"))
     return;
 }
 
-// ss --generate-event-list --slug <slug> [--force] [--limit N] [--dry-run] [--model <id>]
+// prose --generate-event-list --slug <slug> [--force] [--limit N] [--dry-run] [--model <id>]
 // Fill the per-beat plot-EVENT one-liner (Beat.EventSummary) — "what happened".
 if (args.Contains("--generate-event-list"))
 {
@@ -2208,7 +2208,7 @@ if (args.Contains("--generate-event-list"))
     return;
 }
 
-// ss --export-event-list --slug <slug>
+// prose --export-event-list --slug <slug>
 // Write the current per-beat event list to {CODE}-Events.txt in the publish-export folder (no LLM call).
 if (args.Contains("--export-event-list"))
 {
@@ -2217,7 +2217,7 @@ if (args.Contains("--export-event-list"))
     return;
 }
 
-// ss --verdict --slug <slug> [--limit N]
+// prose --verdict --slug <slug> [--limit N]
 // Per-beat quality verdict: flag CLICHE/GRIPE/CONTRADICTION/MEANING-MISMATCH toward 90+.
 if (args.Contains("--verdict"))
 {
@@ -2227,10 +2227,10 @@ if (args.Contains("--verdict"))
 }
 
 // CLI mode: show running token cost tally for the current process.
-//   ss --cost              print session cost table
-//   ss --cost --json       emit summary as JSON
-//   ss --cost --reset      clear the ledger
-// When appended to another command (e.g. ss --write-node --slug foo --cost),
+//   prose --cost              print session cost table
+//   prose --cost --json       emit summary as JSON
+//   prose --cost --reset      clear the ledger
+// When appended to another command (e.g. prose --write-node --slug foo --cost),
 // the cost of that command's LLM calls is printed after the command finishes.
 if (args.Contains("--cost") && (args.Length == 1 || (args.Length == 2 && (args.Contains("--json") || args.Contains("--reset")))))
 {

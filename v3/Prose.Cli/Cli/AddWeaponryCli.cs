@@ -10,8 +10,8 @@ namespace Prose.Cli;
 /// WeaponryRepository.Save (EfRepository upsert) — same pattern as
 /// AddCharacterCli/AddPlaceCli.
 ///
-///   ss --add-weapon --file path.json
-///   ss --add-weapon --dir path/to/folder      (one WeaponryData JSON file per weapon)
+///   prose --add-weapon --file path.json
+///   prose --add-weapon --dir path/to/folder      (one WeaponryData JSON file per weapon)
 /// </summary>
 public static class AddWeaponryCli
 {
@@ -24,7 +24,7 @@ public static class AddWeaponryCli
         var file = ArgValue(args, "--file");
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
-            Console.Error.WriteLine("usage: ss --add-weapon --file path.json | --dir path/to/folder");
+            Console.Error.WriteLine("usage: prose --add-weapon --file path.json | --dir path/to/folder");
             return 1;
         }
 

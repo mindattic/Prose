@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-weapon-relational</c> — backfill the Weapons relational
+/// <c>prose --rebuild-weapon-relational</c> — backfill the Weapons relational
 /// schema from Records.Json blobs. For every weapon entity (active or inactive),
 /// deserializes the blob → WeaponryData → persists columns + all bridge rows +
 /// syncs EntityTags.

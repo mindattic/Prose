@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --create-book</c> — create a new empty root node (no beats). The
+/// <c>prose --create-book</c> — create a new empty root node (no beats). The
 /// bible-first entry point for a brand-new book; write the bible + beats
 /// afterward (UI, <c>--edit-beat</c>, or <c>--write-story</c>).
 ///
@@ -44,7 +44,7 @@ public static class CreateNodeCli
         if (string.IsNullOrWhiteSpace(title))
         {
             Console.Error.WriteLine("[create-book] --title is required.");
-            Console.Error.WriteLine("Usage: ss --create-book --title \"...\" [--code SRZR] [--kind book] [--description \"...\"] [--logline \"...\"] [--previous <slug|id>] [--parent <slug|id>]");
+            Console.Error.WriteLine("Usage: prose --create-book --title \"...\" [--code SRZR] [--kind book] [--description \"...\"] [--logline \"...\"] [--previous <slug|id>] [--parent <slug|id>]");
             return 2;
         }
 
@@ -76,7 +76,7 @@ public static class CreateNodeCli
             Console.WriteLine($"   Code:  {(string.IsNullOrWhiteSpace(code) ? "-" : code!.Trim().ToUpperInvariant())}");
             Console.WriteLine($"   Kind:  {kind}");
             Console.WriteLine($"   URL:   https://localhost:7103/node/{slug}");
-            Console.WriteLine($"   Next:  add beats via the UI, ss --edit-beat --insert-after N, or ss --write-story.");
+            Console.WriteLine($"   Next:  add beats via the UI, prose --edit-beat --insert-after N, or prose --write-story.");
             return 0;
         }
         catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)

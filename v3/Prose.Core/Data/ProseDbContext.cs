@@ -400,7 +400,7 @@ public class ProseDbContext : DbContext
     // Plant/payoff registry — "reward re-reading without requiring it."
     public DbSet<PlantPayoff>            PlantPayoffs            => Set<PlantPayoff>();
 
-    // Per-beat prose quality metrics (CPU-only; upserted nightly by ss --compute-metrics).
+    // Per-beat prose quality metrics (CPU-only; upserted nightly by prose --compute-metrics).
     public DbSet<BeatProseMetrics>       BeatProseMetrics        => Set<BeatProseMetrics>();
 
     // Structural blueprints — pre-prose anti-tell commitments per book node
@@ -428,7 +428,7 @@ public class ProseDbContext : DbContext
     public DbSet<BeatDuelVerdict>        BeatDuelVerdicts        => Set<BeatDuelVerdict>();
 
     // Workflow monitoring — tracks which prose services were active per beat write.
-    // Populated by ProseWriterRouter. Query via ss --workflow-status or workflow_status MCP tools.
+    // Populated by ProseWriterRouter. Query via prose --workflow-status or workflow_status MCP tools.
     public DbSet<BeatServiceLog>         BeatServiceLogs         => Set<BeatServiceLog>();
     public DbSet<BeatModeLog>            BeatModeLogs            => Set<BeatModeLog>();
 
@@ -446,7 +446,7 @@ public class ProseDbContext : DbContext
     public DbSet<LibertyReport>          LibertyReports          => Set<LibertyReport>();
 
     // Media assets (cover images, logos, watermarks).
-    // Import via ss --import-cover; generate via ss --generate-cover.
+    // Import via prose --import-cover; generate via prose --generate-cover.
     public DbSet<MediaItem>              Media                   => Set<MediaItem>();
 
     // Noun consistency — registry of renamed/retired noun references that must
@@ -460,7 +460,7 @@ public class ProseDbContext : DbContext
 
     // Canon-sync surveys — persisted questions, answers, and apply logs so the
     // full decision trail survives across sessions. Managed by SurveyService /
-    // survey MCP tools / ss --list-surveys / ss --get-survey.
+    // survey MCP tools / prose --list-surveys / prose --get-survey.
     public DbSet<Survey>         Surveys         => Set<Survey>();
     public DbSet<SurveyQuestion> SurveyQuestions => Set<SurveyQuestion>();
 
@@ -492,7 +492,7 @@ public class ProseDbContext : DbContext
 
     // Truth-First Architecture (Track C) — beat verification results.
     // One row per (BeatId, CheckType); upserted on re-verify. BLOCKER results
-    // block codex doctor and ss --export-node (INV-05).
+    // block codex doctor and prose --export-node (INV-05).
     public DbSet<BeatVerification> BeatVerifications => Set<BeatVerification>();
 
     protected override void OnModelCreating(ModelBuilder b)
@@ -558,7 +558,7 @@ public class ProseDbContext : DbContext
             // OUTPUT to read back generated values — without this annotation, EVERY save
             // that touches a Beat throws DbUpdateException. HasTrigger tells EF to fall
             // back to a non-OUTPUT strategy for this table. Found 2026-07-30 when the VIGL
-            // logic sweep's `ss --beat update` calls started failing; do not remove this
+            // logic sweep's `prose --beat update` calls started failing; do not remove this
             // without also removing (or rewriting) the trigger.
             e.ToTable("Beats", tb => tb.HasTrigger("TR_Beats_TextHashDriftGuard"));
             e.HasKey(x => x.Id);
@@ -1218,7 +1218,7 @@ public class ProseDbContext : DbContext
 
         // Derived read-model projection. PK = CharacterId (no FK / cascade: it's
         // decoupled from the canonical row on purpose — orphans are harmless and
-        // pruned by `ss --rebuild-readmodel`). Intentionally NOT system-versioned.
+        // pruned by `prose --rebuild-readmodel`). Intentionally NOT system-versioned.
         b.Entity<CharacterReadModel>(e =>
         {
             e.HasKey(x => x.CharacterId);
@@ -2816,7 +2816,7 @@ public class ProseDbContext : DbContext
         // Project-rules, Codex docs, and Claude Code memory files. Versioned so
         // any revision of any .md file can be recovered by timestamp — history
         // rows keep the full content, so a catastrophic file deletion can be
-        // undone with ss --restore-markdown --as-of <datetime>.
+        // undone with prose --restore-markdown --as-of <datetime>.
         "MarkdownFiles",
         // Per-node narrative spine: amendment log (append-only) and version
         // pins (bridge linking docx-version → spine hashes). Both versioned so

@@ -20,7 +20,7 @@ plus its open QA findings and structure. Read-only. NO votes, NO panels, NO LLM.
 ## Fixed facts
 - DB (read-only): `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "<query>"` (Windows Auth).
 - Book nodes = `Nodes.NodeType='book'` (TPH discriminator; in EF, `db.Nodes.OfType<BookNode>()`).
-- Coordination is `ss --coordinate --slug <slug>` — read-only, no LLM. It writes
+- Coordination is `prose --coordinate --slug <slug>` — read-only, no LLM. It writes
   `reports/coordination/<CODE>.coordination.json` and stamps `## Beat Coordination Index` into
   the node bible. Run against the **built** DLL for speed:
   `DLL=$(ls v3/Prose.Cli/bin/Debug/net*/Prose.Cli.dll | head -1)` then
@@ -36,11 +36,11 @@ plus its open QA findings and structure. Read-only. NO votes, NO panels, NO LLM.
   under the Score columns, not as a coverage gap.
 - Invariant (enforced): **every book has ≥1 chapter**; a single-chapter book prints no
   "Chapter 1". Show the chapter count so a regression (a flat book) is visible at a glance. Fix a
-  flat book with `ss --ensure-chapter --slug <slug>` (or `--all`).
+  flat book with `prose --ensure-chapter --slug <slug>` (or `--all`).
 
 ## Steps
 
-1. **Resolve mode.** `--fresh` → re-run `ss --coordinate` for every book first (cheap, no LLM),
+1. **Resolve mode.** `--fresh` → re-run `prose --coordinate` for every book first (cheap, no LLM),
    so coverage reflects the current DB. Default → read the existing
    `reports/coordination/<CODE>.coordination.json` files (fast). If a book has no report yet,
    coordinate it regardless.
@@ -90,6 +90,6 @@ plus its open QA findings and structure. Read-only. NO votes, NO panels, NO LLM.
 ## Notes
 - Blueprint granularity drives beat↔construction indexing: `beat` = beat-parallel arrays, `chapter`
   = chapter-parallel. Coordination handles both; you only report what it emits.
-- To close gaps (not this skill's job — it only reports): `ss --backfill-meaning` for
-  MISSING_MEANING, `ss --generate-blueprint --retrofit` for NO_CONSTRUCTION, `ss --ensure-chapter`
+- To close gaps (not this skill's job — it only reports): `prose --backfill-meaning` for
+  MISSING_MEANING, `prose --generate-blueprint --retrofit` for NO_CONSTRUCTION, `prose --ensure-chapter`
   for a flat book.

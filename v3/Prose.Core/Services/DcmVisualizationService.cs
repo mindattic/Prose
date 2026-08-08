@@ -14,7 +14,7 @@ namespace Prose.Core.Services;
 ///   active range. Gaps = evicted. Color = tier (always / node / topic). Hover tooltip shows
 ///   path, tier, active range, and total beats active.
 ///
-/// No LLM calls — the CLI (<c>ss --dcm-viz</c>) feeds it per-beat snapshots from a dry-run
+/// No LLM calls — the CLI (<c>prose --dcm-viz</c>) feeds it per-beat snapshots from a dry-run
 /// context pass, and ProseWriterRouter feeds it live via FullActiveSet when DcmLoggingEnabled.
 /// </summary>
 public sealed class DcmVisualizationService

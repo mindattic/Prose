@@ -1411,7 +1411,7 @@ public class WorldGraphService : IWorldGraphService
     /// ASCII (Möller → moller, Cissé → cisse), lowercase, collapse everything
     /// else to "-". Hyphen style unified 2026-07-06 (was underscore, which
     /// dropped non-ASCII letters and mangled diaspora names — Cissé → ciss_).
-    /// Slugs are LOOSE keys: `ss --repair-slugs` regenerates them all and
+    /// Slugs are LOOSE keys: `prose --repair-slugs` regenerates them all and
     /// preserves old ones as alt_slug; the UUIDv7 id is the real key.</summary>
     public static string Slugify(string name) =>
         Regex.Replace(FoldToAscii(name ?? "").ToLowerInvariant().Trim(), @"[^a-z0-9]+", "-").Trim('-');

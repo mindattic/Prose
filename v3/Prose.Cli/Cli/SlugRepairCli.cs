@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --repair-slugs [--apply] [--family entities|nodes|books|series|episodes] [--json]</c>
+/// <c>prose --repair-slugs [--apply] [--family entities|nodes|books|series|episodes] [--json]</c>
 ///
 /// Regenerates every slug from its owning row's metadata (Name/Title) and
 /// updates the slug-carrying references: beat audio paths, combined-audio and

@@ -8,17 +8,17 @@ using Prose.Core.Models.Canon;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --retire-records-blobs</c> — RFC 0007 unified blob-retirement gate.
+/// <c>prose --retire-records-blobs</c> — RFC 0007 unified blob-retirement gate.
 ///
 /// Runs all 28 Mapper.RebuildAllAsync functions + character backfill in a single pass,
 /// validates that every active entity has a relational row, then deletes the Records.Json
 /// blobs for all 29 relational entity types.
 ///
-///   ss --retire-records-blobs                     Show per-type blob counts and readiness.
-///   ss --retire-records-blobs --rebuild            Backfill all types (idempotent; blobs untouched).
-///   ss --retire-records-blobs --validate           Exit 1 if any active entity lacks a relational row.
-///   ss --retire-records-blobs --apply              Validate + delete all Records blobs for relational types.
-///   ss --retire-records-blobs --rebuild --apply    Rebuild + validate + delete in one pass.
+///   prose --retire-records-blobs                     Show per-type blob counts and readiness.
+///   prose --retire-records-blobs --rebuild            Backfill all types (idempotent; blobs untouched).
+///   prose --retire-records-blobs --validate           Exit 1 if any active entity lacks a relational row.
+///   prose --retire-records-blobs --apply              Validate + delete all Records blobs for relational types.
+///   prose --retire-records-blobs --rebuild --apply    Rebuild + validate + delete in one pass.
 /// </summary>
 public static class RetireRecordsBlobsCli
 {

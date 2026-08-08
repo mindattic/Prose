@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --burst-beats</c> — break oversized beats into paragraph-sized
+/// <c>prose --burst-beats</c> — break oversized beats into paragraph-sized
 /// pieces. Old book imports left whole chapters in a single Beat row; this
 /// walks every node (or a chosen subset) and bursts beats above the
 /// length threshold via <see cref="NodeWorkbenchService.SplitBeatByParagraphsAsync"/>.

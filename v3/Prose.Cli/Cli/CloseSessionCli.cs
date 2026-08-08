@@ -18,7 +18,7 @@ public static class CloseSessionCli
 
         if (slug == null && sessionIdStr == null)
         {
-            Console.Error.WriteLine("Usage: ss --close-session (--slug <slug> | --session-id <guid>)");
+            Console.Error.WriteLine("Usage: prose --close-session (--slug <slug> | --session-id <guid>)");
             return 2;
         }
 

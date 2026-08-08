@@ -7,8 +7,8 @@ namespace Prose.Cli;
 /// Survey management CLI commands.
 ///
 /// <code>
-/// ss --list-surveys [--status Open|Completed]
-/// ss --get-survey --slug &lt;slug&gt;
+/// prose --list-surveys [--status Open|Completed]
+/// prose --get-survey --slug &lt;slug&gt;
 /// </code>
 /// </summary>
 public static class SurveyCli

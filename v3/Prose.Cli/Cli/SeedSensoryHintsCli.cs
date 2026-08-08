@@ -7,11 +7,11 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --seed-sensory-hints               Seed canonical hints for Silence + Cacophony
-/// ss --seed-sensory-hints --list        Show all current sensory_hints rows
-/// ss --seed-sensory-hints --weapon "Silence" --hints "hint1; hint2"   Set for any weapon
-/// ss --seed-sensory-hints --force       Overwrite existing rows (default: skip)
-/// ss --seed-sensory-hints --seed-carry-edges   Also seed Kyle's carry edges for Silence + Cacophony
+/// prose --seed-sensory-hints               Seed canonical hints for Silence + Cacophony
+/// prose --seed-sensory-hints --list        Show all current sensory_hints rows
+/// prose --seed-sensory-hints --weapon "Silence" --hints "hint1; hint2"   Set for any weapon
+/// prose --seed-sensory-hints --force       Overwrite existing rows (default: skip)
+/// prose --seed-sensory-hints --seed-carry-edges   Also seed Kyle's carry edges for Silence + Cacophony
 ///
 /// Canonical weapon names and GUIDs come from AmmunitionLinkerService constants — do not
 /// duplicate them here. If a name changes, change it there once; this file picks it up.
@@ -76,7 +76,7 @@ public static class SeedSensoryHintsCli
         if (weaponName != null || customHints != null)
         {
             Console.Error.WriteLine("--weapon and --hints must be provided together.");
-            Console.Error.WriteLine("Usage: ss --seed-sensory-hints --weapon \"Silence\" --hints \"hint1; hint2\"");
+            Console.Error.WriteLine("Usage: prose --seed-sensory-hints --weapon \"Silence\" --hints \"hint1; hint2\"");
             return 1;
         }
 
@@ -138,7 +138,7 @@ public static class SeedSensoryHintsCli
 
         if (rows.Count == 0)
         {
-            Console.WriteLine("No sensory_hints rows found. Run 'ss --seed-sensory-hints' to seed canonical ones.");
+            Console.WriteLine("No sensory_hints rows found. Run 'prose --seed-sensory-hints' to seed canonical ones.");
             return 0;
         }
 

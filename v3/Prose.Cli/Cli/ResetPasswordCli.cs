@@ -19,7 +19,7 @@ namespace Prose.Cli;
 /// <c>--require-change</c> to force a change on next login instead.
 ///
 /// Usage:
-///   ss --reset-password --email user@example.com --password "NewPass" [--require-change]
+///   prose --reset-password --email user@example.com --password "NewPass" [--require-change]
 /// </summary>
 public static class ResetPasswordCli
 {
@@ -31,7 +31,7 @@ public static class ResetPasswordCli
 
         if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
         {
-            Console.Error.WriteLine("Usage: ss --reset-password --email <email> --password <newPassword> [--require-change]");
+            Console.Error.WriteLine("Usage: prose --reset-password --email <email> --password <newPassword> [--require-change]");
             return 2;
         }
 

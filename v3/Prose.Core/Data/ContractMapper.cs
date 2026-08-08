@@ -279,7 +279,7 @@ public static class ContractMapper
     /// blob → ContractData → persist. Returns the number of contracts written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-contract-relational</c>.
+    /// Run once via <c>prose --rebuild-contract-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

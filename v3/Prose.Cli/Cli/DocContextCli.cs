@@ -12,7 +12,7 @@ namespace Prose.Cli;
 /// block and a token estimate. Read-only; changes no prompts and no canon. Use it to tune
 /// tiers/triggers/thresholds before wiring the engine into prose generation or the session.
 ///
-///   ss --doc-context --slug &lt;node&gt; [--goal "&lt;scene text&gt;"] [--budget &lt;tokens&gt;]
+///   prose --doc-context --slug &lt;node&gt; [--goal "&lt;scene text&gt;"] [--budget &lt;tokens&gt;]
 ///
 ///   --slug    node to act as the active context (its CODE drives node-tier scope).
 ///   --goal    scene/beat text to trigger topic docs against; defaults to the node description.
@@ -28,7 +28,7 @@ public static class DocContextCli
 
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --doc-context --slug <node> [--goal \"<text>\"] [--budget <tokens>]");
+            Console.Error.WriteLine("Usage: prose --doc-context --slug <node> [--goal \"<text>\"] [--budget <tokens>]");
             return 1;
         }
 

@@ -224,7 +224,7 @@ public static class ConsumerGoodMapper
     /// relational row yet. Returns the number of consumer good entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-consumer-good-relational</c>.
+    /// Run once via <c>prose --rebuild-consumer-good-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

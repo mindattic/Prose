@@ -68,7 +68,7 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    `codex digest` + `doctor`. Never leave the disagreement standing. This dimension is
    checked ACROSS ALTITUDES (see [§8](#SS-LOGIC-8)): chapter synopses
    (`NodeChapterSummaries` / `story-synopsis.txt`) are the 100-ft instrument, and
-   `ss --altitude-audit --slug <slug>` automates the 10,000↔100 ft comparison. Sweeps may
+   `prose --altitude-audit --slug <slug>` automates the 10,000↔100 ft comparison. Sweeps may
    read `story-synopsis.txt` for cheap chapter-altitude scoping before deep beat reads.
 
 ## 4. Triage and fix protocol {#SS-LOGIC-4}
@@ -79,8 +79,8 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
   looked unverifiable at a glance and needed a closer read to confirm as real). Before triaging
   ANY finding that quotes beat text, mechanically confirm the quote exists in the beat it's
   attributed to:
-  `ss --verify-quote --id <beatId> --quote "<claimed text>" --claimed-by "<agent/pass name>"`
-  or, for a whole audit report at once, `ss --verify-quotes-batch --json-file <path>` (array of
+  `prose --verify-quote --id <beatId> --quote "<claimed text>" --claimed-by "<agent/pass name>"`
+  or, for a whole audit report at once, `prose --verify-quotes-batch --json-file <path>` (array of
   `{"beatId":"<guid>","quote":"<text>"}`). MCP equivalents: `VerifyQuoteGrounding` /
   `VerifyQuoteGroundingBatch`. Comparison is normalized (dash variants, curly/straight quotes,
   whitespace) so console-display drift never causes a false Fail — only a genuine
@@ -147,7 +147,7 @@ describing a superseded draft (10,000↔10), two chapters telling incompatible e
 (100↔100), a typo (pure 10 ft). Arbitration follows dimension 6: prose wins on FACTS,
 the bible wins on LOCKS.
 
-**Instruments per comparison:** 10,000↔100 ft = `ss --altitude-audit` (designed vs told;
+**Instruments per comparison:** 10,000↔100 ft = `prose --altitude-audit` (designed vs told;
 findings filed as `OutlineDrift`); 100↔10 ft and 10↔10 ft = the logic sweep itself
 (dimensions 1–5). Planning and review START at chapter altitude — read
 `story-synopsis.txt` first, drop to beat altitude only where a finding points. The same

@@ -8,10 +8,10 @@ namespace Prose.Cli;
 /// "run sqlcmd against the .sql file by hand" workflow.
 ///
 /// Usage:
-///   ss --seed                     list known seeds + run state
-///   ss --seed &lt;name&gt;              apply (idempotent — skip if already ran)
-///   ss --seed &lt;name&gt; --force      re-run even if already applied
-///   ss --seed --all               apply every known seed in order
+///   prose --seed                     list known seeds + run state
+///   prose --seed &lt;name&gt;              apply (idempotent — skip if already ran)
+///   prose --seed &lt;name&gt; --force      re-run even if already applied
+///   prose --seed --all               apply every known seed in order
 /// </summary>
 public static class SeedCli
 {
@@ -24,8 +24,8 @@ public static class SeedCli
 
         if (string.IsNullOrWhiteSpace(name) && !all)
         {
-            Console.WriteLine("ss --seed <name> [--force]   apply one named seed");
-            Console.WriteLine("ss --seed --all              apply every known seed in order");
+            Console.WriteLine("prose --seed <name> [--force]   apply one named seed");
+            Console.WriteLine("prose --seed --all              apply every known seed in order");
             Console.WriteLine();
             Console.WriteLine("Known seeds:");
             foreach (var (k, v) in SqlSeedService.Seeds)

@@ -13,7 +13,7 @@ namespace Prose.Cli;
 /// start the book; on subsequent runs it's a no-op (matched by title).
 ///
 /// Usage:
-///   ss --seed-vultures
+///   prose --seed-vultures
 /// </summary>
 public static class VulturesSeedCli
 {

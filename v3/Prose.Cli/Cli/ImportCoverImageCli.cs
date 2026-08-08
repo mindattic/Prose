@@ -5,10 +5,10 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --import-cover</c> — import a local image file into the Media table.
+/// <c>prose --import-cover</c> — import a local image file into the Media table.
 ///
 /// Usage:
-///   ss --import-cover --file PATH [--book-code CODE] [--type TYPE] [--notes TEXT]
+///   prose --import-cover --file PATH [--book-code CODE] [--type TYPE] [--notes TEXT]
 ///
 /// Arguments:
 ///   --file PATH          Required. Path to the image file (png, jpg, webp).
@@ -20,9 +20,9 @@ namespace Prose.Cli;
 ///   --dry-run            Parse and validate only — do not write to DB.
 ///
 /// Examples:
-///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\Sparrow\cover.jpg" --book-code SPRW
-///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\M.png" --type logo
-///   ss --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\RedBand.png" --type watermark
+///   prose --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\Sparrow\cover.jpg" --book-code SPRW
+///   prose --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\M.png" --type logo
+///   prose --import-cover --file "R:\Desktop\EPub\MindAttic\GLMZ\RedBand.png" --type watermark
 /// </summary>
 public static class ImportCoverImageCli
 {

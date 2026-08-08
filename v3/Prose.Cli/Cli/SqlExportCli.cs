@@ -10,8 +10,8 @@ namespace Prose.Cli;
 /// <summary>
 /// Dump the Prose SQL Server database to a single re-runnable .sql file.
 ///
-///   ss --sql-export --schema [--out path.sql]   schema-only DDL
-///   ss --sql-export --data   [--out path.sql]   schema + INSERT statements
+///   prose --sql-export --schema [--out path.sql]   schema-only DDL
+///   prose --sql-export --data   [--out path.sql]   schema + INSERT statements
 ///
 /// Output goes to ./prose-{schema|full}-{timestamp}.sql by default.
 ///
@@ -32,8 +32,8 @@ public static class SqlExportCli
         if (!schemaOnly && !withData)
         {
             Console.WriteLine("Usage:");
-            Console.WriteLine("  ss --sql-export --schema [--out path.sql]   schema-only DDL");
-            Console.WriteLine("  ss --sql-export --data   [--out path.sql]   schema + INSERT data");
+            Console.WriteLine("  prose --sql-export --schema [--out path.sql]   schema-only DDL");
+            Console.WriteLine("  prose --sql-export --data   [--out path.sql]   schema + INSERT data");
             return 0;
         }
 
@@ -461,7 +461,7 @@ public static class SqlExportCli
         await w.WriteLineAsync("-- This script drops + recreates every base table, applies FKs and");
         await w.WriteLineAsync("-- nonclustered indexes, and (if --data) inserts the contents row-by-row.");
         await w.WriteLineAsync("-- _History tables and SYSTEM_VERSIONING are NOT scripted; re-enable");
-        await w.WriteLineAsync("-- via 'ss --migrate-sql --schema' which calls EnableSystemVersioningAsync().");
+        await w.WriteLineAsync("-- via 'prose --migrate-sql --schema' which calls EnableSystemVersioningAsync().");
         await w.WriteLineAsync("-- ============================================================");
         await w.WriteLineAsync();
         await w.WriteLineAsync("SET XACT_ABORT ON;");

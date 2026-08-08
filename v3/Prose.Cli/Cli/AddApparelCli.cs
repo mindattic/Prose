@@ -10,8 +10,8 @@ namespace Prose.Cli;
 /// ApparelRepository.Save (EfRepository upsert) — same pattern as
 /// AddCharacterCli/AddPlaceCli.
 ///
-///   ss --add-apparel --file path.json
-///   ss --add-apparel --dir path/to/folder      (one ApparelData JSON file per item)
+///   prose --add-apparel --file path.json
+///   prose --add-apparel --dir path/to/folder      (one ApparelData JSON file per item)
 /// </summary>
 public static class AddApparelCli
 {
@@ -24,7 +24,7 @@ public static class AddApparelCli
         var file = ArgValue(args, "--file");
         if (string.IsNullOrWhiteSpace(file) || !File.Exists(file))
         {
-            Console.Error.WriteLine("usage: ss --add-apparel --file path.json | --dir path/to/folder");
+            Console.Error.WriteLine("usage: prose --add-apparel --file path.json | --dir path/to/folder");
             return 1;
         }
 

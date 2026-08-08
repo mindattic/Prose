@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --close-all-sessions
+/// prose --close-all-sessions
 ///
 /// Closes every open edit session across all nodes, runs bible + blueprint sync
 /// for each session that has beats, then marks each session closed.
@@ -51,11 +51,19 @@ public static class CloseAllSessionsCli
                     continue;
                 }
 
-                var nodeCode = (await db.Nodes.AsNoTracking()
-                    .FirstOrDefaultAsync(n => n.Id == session.NodeId))
-                    ?.NodeCode ?? session.NodeId.ToString()[..8];
+                var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == session.NodeId);
+                if (node == null)
+                {
+                    // Node was deleted after this session opened — nothing left to sync
+                    // against. Close it directly rather than retrying a bible/blueprint
+                    // sync that will fail the same way on every future run.
+                    Console.WriteLine($"  [orphaned] {session.Label} (node {session.NodeId} no longer exists) — closing without sync.");
+                    await sessionSvc.CloseSessionAsync(sessionId: session.EditSessionId);
+                    skipped++;
+                    continue;
+                }
 
-                Console.WriteLine($"  [{nodeCode}] {session.Label} ({session.BeatCount} beat(s))");
+                Console.WriteLine($"  [{node.NodeCode}] {session.Label} ({session.BeatCount} beat(s))");
 
                 // Bible sync: extract facts and append to docs/nodes/<CODE>.md
                 var bibleReport = await bibleSvc.ExtractFromSessionAsync(session.EditSessionId);

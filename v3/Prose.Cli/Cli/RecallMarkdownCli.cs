@@ -9,7 +9,7 @@ namespace Prose.Cli;
 /// materialize (create) them on disk — instead of keeping hundreds of tiny
 /// orphaned .md files on disk all the time.
 ///
-///   ss --recall &lt;keyword&gt; [--content] [--to-disk] [--as-of &lt;datetime-utc&gt;]
+///   prose --recall &lt;keyword&gt; [--content] [--to-disk] [--as-of &lt;datetime-utc&gt;]
 ///
 ///   keyword     Substring matched (case-insensitive) against path / file name / category.
 ///   --content   Also search inside file bodies, not just names.
@@ -29,7 +29,7 @@ public static class RecallMarkdownCli
 
         if (string.IsNullOrWhiteSpace(keyword))
         {
-            Console.Error.WriteLine("Usage: ss --recall <keyword> [--content] [--to-disk] [--as-of <datetime-utc>]");
+            Console.Error.WriteLine("Usage: prose --recall <keyword> [--content] [--to-disk] [--as-of <datetime-utc>]");
             return 1;
         }
 

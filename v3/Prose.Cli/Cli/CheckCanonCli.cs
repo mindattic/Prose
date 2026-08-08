@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --check-canon (--slug &lt;s&gt; | --id &lt;guid&gt; | --all)</c> — sweep a node's
+/// <c>prose --check-canon (--slug &lt;s&gt; | --id &lt;guid&gt; | --all)</c> — sweep a node's
 /// prose against the canon database ACROSS ALL entity types and queue each
 /// contradiction as a CANON-CONTRADICTION finding with a proposed fix. Self-
 /// correction: the system detects + drafts the fix so an admin no longer diffs by

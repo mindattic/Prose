@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-automaton-relational</c> — backfill the Automata relational
+/// <c>prose --rebuild-automaton-relational</c> — backfill the Automata relational
 /// schema from Records.Json blobs. For every active automaton entity, deserializes
 /// the blob → AutomatonData → persists columns + all 5 bridge tables (Aliases /
 /// Armament / Sensors / KnownDeployments / StoryHooks) + syncs EntityTags.

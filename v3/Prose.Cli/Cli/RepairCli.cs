@@ -10,11 +10,11 @@ namespace Prose.Cli;
 /// CLI entry for the dossier-driven story repair pass. Walks every chapter,
 /// fills in character timelines, and (optionally) runs LLM-driven extraction.
 ///
-///   ss --repair                  # cheap timeline-only pass, no LLM
-///   ss --repair --continuity     # also run continuity extraction (LLM-heavy)
-///   ss --repair --beat-facts     # also run Knowledge + Conditions extraction (LLM-heavy)
-///   ss --repair --backfill-dates # populate Chapter.InWorldDate (and beats) via LLM
-///   ss --repair --force          # re-extract even chapters that already ran
+///   prose --repair                  # cheap timeline-only pass, no LLM
+///   prose --repair --continuity     # also run continuity extraction (LLM-heavy)
+///   prose --repair --beat-facts     # also run Knowledge + Conditions extraction (LLM-heavy)
+///   prose --repair --backfill-dates # populate Chapter.InWorldDate (and beats) via LLM
+///   prose --repair --force          # re-extract even chapters that already ran
 /// </summary>
 public static class RepairCli
 {

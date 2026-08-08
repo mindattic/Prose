@@ -205,6 +205,6 @@ Failures stay reversible — JSON files are canonical until the toggle flips. Wo
 - [ ] Create `Data/` namespace with `ProseDbContext` + entity classes (universal layer first, then `Character`).
 - [ ] Initial migration with raw SQL for `SYSTEM_VERSIONING` (EF doesn't emit it natively).
 - [ ] `JsonImportService.ImportCharactersAsync`.
-- [ ] CLI: `ss --migrate-sql` to run the import.
+- [ ] CLI: `prose --migrate-sql` to run the import.
 - [ ] `EfCharacterRepository` honoring the existing `CharacterRepository` surface.
 - [ ] Settings flag `DataSource = Json | Sql | Dual`. JSON stays primary until you flip.

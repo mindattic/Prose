@@ -316,14 +316,14 @@ Database  (SQL Server)
 <ol>
 <li>Assemble <code>BeatContext</code> (X-Ray context via <code>SceneContextAssembler</code>, <code>NodeId</code> always set)</li>
 <li>Call <code>ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)</code></li>
-<li>After writing, run <code>ss --examine-emotion --slug &lt;slug&gt;</code> (8-dimension emotional scoring)</li>
-<li>After enough beats scored, run <code>ss --update-register-exemplars --slug &lt;slug&gt;</code> (update voice register)</li>
-<li>After book complete, run <code>ss --book-audit --slug &lt;slug&gt;</code> (gateway/sequel commandments)</li>
-<li>After book complete, run <code>ss --plant-audit --slug &lt;slug&gt;</code> (orphan plant check)</li>
+<li>After writing, run <code>prose --examine-emotion --slug &lt;slug&gt;</code> (8-dimension emotional scoring)</li>
+<li>After enough beats scored, run <code>prose --update-register-exemplars --slug &lt;slug&gt;</code> (update voice register)</li>
+<li>After book complete, run <code>prose --book-audit --slug &lt;slug&gt;</code> (gateway/sequel commandments)</li>
+<li>After book complete, run <code>prose --plant-audit --slug &lt;slug&gt;</code> (orphan plant check)</li>
 </ol>
 <h4 id="coverage-monitoring">Coverage monitoring</h4>
-<pre><code class="language-powershell">ss --workflow-status --slug &lt;slug&gt;   # per-book service coverage matrix + gaps
-ss --workflow-status --all           # global utilization across all books
+<pre><code class="language-powershell">prose --workflow-status --slug &lt;slug&gt;   # per-book service coverage matrix + gaps
+prose --workflow-status --all           # global utilization across all books
 </code></pre>
 <p>MCP equivalents: <code>workflow_status</code>, <code>workflow_status_global</code>, <code>workflow_beat_modes</code></p>
 <h3 id="mcp-server">MCP server</h3>
@@ -346,129 +346,129 @@ ss --workflow-status --all           # global utilization across all books
 </tr>
 </thead>
 <tbody><tr>
-<td><code>ss --review-book --slug &lt;slug&gt; [--effort draft|standard|deep]</code></td>
+<td><code>prose --review-book --slug &lt;slug&gt; [--effort draft|standard|deep]</code></td>
 <td>Multi-persona scored review; targets ≥82% standalone, ≥85% cumulative</td>
 </tr>
 <tr>
-<td><code>ss --examine-emotion --slug &lt;slug&gt;</code></td>
+<td><code>prose --examine-emotion --slug &lt;slug&gt;</code></td>
 <td>8-dimension per-beat emotional scoring (0–4 per dimension)</td>
 </tr>
 <tr>
-<td><code>ss --book-audit --slug &lt;slug&gt;</code></td>
+<td><code>prose --book-audit --slug &lt;slug&gt;</code></td>
 <td>Audits gateway/sequel commandments for the book</td>
 </tr>
 <tr>
-<td><code>ss --plant-audit --slug &lt;slug&gt;</code></td>
+<td><code>prose --plant-audit --slug &lt;slug&gt;</code></td>
 <td>Checks for orphaned plants (planted but never paid off)</td>
 </tr>
 <tr>
-<td><code>ss --export-node [--slug &lt;slug&gt;]</code></td>
+<td><code>prose --export-node [--slug &lt;slug&gt;]</code></td>
 <td>Exports docx + EPUB + PDF + audio manuscript <code>.txt</code>; prunes stale versions; lands in <code>{Title}/V{N}/</code></td>
 </tr>
 <tr>
-<td><code>ss --workflow-status --slug &lt;slug&gt;</code></td>
+<td><code>prose --workflow-status --slug &lt;slug&gt;</code></td>
 <td>Per-book service coverage matrix showing which pipeline services fired and which are gaps</td>
 </tr>
 <tr>
-<td><code>ss --workflow-status --all</code></td>
+<td><code>prose --workflow-status --all</code></td>
 <td>Global utilization matrix across all books</td>
 </tr>
 <tr>
-<td><code>ss --generate-cover --book-code CODE --generator NAME --prompt &quot;TEXT&quot;</code></td>
+<td><code>prose --generate-cover --book-code CODE --generator NAME --prompt &quot;TEXT&quot;</code></td>
 <td>AI cover generation via ChatGPT / Gemini / Ideogram / Flux; stores prompt in <code>CoverImagePrompts</code>, asset in <code>Assets</code></td>
 </tr>
 <tr>
-<td><code>ss --import-cover --file PATH [--book-code CODE] [--type TYPE]</code></td>
+<td><code>prose --import-cover --file PATH [--book-code CODE] [--type TYPE]</code></td>
 <td>Import a local image into the cover asset library</td>
 </tr>
 <tr>
-<td><code>ss --audit-book [--deep] [--model haiku]</code></td>
+<td><code>prose --audit-book [--deep] [--model haiku]</code></td>
 <td>Repeatable full-QA orchestrator — structural + prose + continuity</td>
 </tr>
 <tr>
-<td><code>ss --diagnose-book --slug &lt;slug&gt;</code></td>
+<td><code>prose --diagnose-book --slug &lt;slug&gt;</code></td>
 <td>12-check structural pre-flight without full review cost</td>
 </tr>
 <tr>
-<td><code>ss --expand-beat --slug &lt;slug&gt;</code></td>
+<td><code>prose --expand-beat --slug &lt;slug&gt;</code></td>
 <td>Expand a single beat using the full enriched pipeline</td>
 </tr>
 <tr>
-<td><code>ss --edit-book --slug &lt;slug&gt;</code></td>
+<td><code>prose --edit-book --slug &lt;slug&gt;</code></td>
 <td>Review-weighted auto-editor pass</td>
 </tr>
 <tr>
-<td><code>ss --reflow-book --slug &lt;slug&gt;</code></td>
+<td><code>prose --reflow-book --slug &lt;slug&gt;</code></td>
 <td>Bounded copy-edit: fixes paragraph breaks, question marks, dialogue attribution without rewriting</td>
 </tr>
 <tr>
-<td><code>ss --check-fidelity --slug &lt;slug&gt;</code></td>
+<td><code>prose --check-fidelity --slug &lt;slug&gt;</code></td>
 <td>Cosine-similarity check of prose vs. book bible/synopsis</td>
 </tr>
 <tr>
-<td><code>ss --check-prose --slug &lt;slug&gt;</code></td>
+<td><code>prose --check-prose --slug &lt;slug&gt;</code></td>
 <td>Regex linter for banned prose patterns (pseudo-profound, cliché, on-the-nose)</td>
 </tr>
 <tr>
-<td><code>ss --check-canon --slug &lt;slug&gt;</code></td>
+<td><code>prose --check-canon --slug &lt;slug&gt;</code></td>
 <td>Chunked semantic + LLM sweep for canon rule violations</td>
 </tr>
 <tr>
-<td><code>ss --timeline-check --slug &lt;slug&gt;</code></td>
+<td><code>prose --timeline-check --slug &lt;slug&gt;</code></td>
 <td>Deterministic dead-character-acting + wound-regression checks</td>
 </tr>
 <tr>
-<td><code>ss --assemble-scene --slug &lt;slug&gt;</code></td>
+<td><code>prose --assemble-scene --slug &lt;slug&gt;</code></td>
 <td>X-Ray scene context assembly</td>
 </tr>
 <tr>
-<td><code>ss --narrative-science --slug &lt;slug&gt;</code></td>
+<td><code>prose --narrative-science --slug &lt;slug&gt;</code></td>
 <td>Sacred-flaw / five-act / scene-engagement analysis</td>
 </tr>
 <tr>
-<td><code>ss --continuity --slug &lt;slug&gt;</code></td>
+<td><code>prose --continuity --slug &lt;slug&gt;</code></td>
 <td>Extract and validate continuity claims against live entity state</td>
 </tr>
 <tr>
-<td><code>ss --backfill-coverage --slug &lt;slug&gt;</code></td>
+<td><code>prose --backfill-coverage --slug &lt;slug&gt;</code></td>
 <td>Non-destructive: logs router coverage for existing beats from synopsis without regenerating</td>
 </tr>
 <tr>
-<td><code>ss --doc-context --slug &lt;slug&gt; [--goal &quot;TEXT&quot;]</code></td>
+<td><code>prose --doc-context --slug &lt;slug&gt; [--goal &quot;TEXT&quot;]</code></td>
 <td>Dry-run the Doc Context Stack — shows which docs would load for a beat</td>
 </tr>
 <tr>
-<td><code>ss --sync-markdown</code></td>
+<td><code>prose --sync-markdown</code></td>
 <td>Sync Codex <code>.md</code> files from disk to DB (auto-classifies into always/node/topic tiers)</td>
 </tr>
 <tr>
-<td><code>ss --rebuild-graph</code></td>
+<td><code>prose --rebuild-graph</code></td>
 <td>Rebuild in-memory entity relationship graph from SQL</td>
 </tr>
 <tr>
-<td><code>ss --reembed</code></td>
+<td><code>prose --reembed</code></td>
 <td>Re-embed all entities via OpenAI <code>text-embedding-3-small</code></td>
 </tr>
 <tr>
-<td><code>ss --review-entity --id &lt;guid&gt;</code></td>
+<td><code>prose --review-entity --id &lt;guid&gt;</code></td>
 <td>Legion-persona quality review of a single canon entity</td>
 </tr>
 <tr>
-<td><code>ss --add-character</code> / <code>--add-place</code> / <code>--add-corponation</code></td>
+<td><code>prose --add-character</code> / <code>--add-place</code> / <code>--add-corponation</code></td>
 <td>Seed a new typed entity into the DB</td>
 </tr>
 <tr>
-<td><code>ss --migrate-sql</code></td>
+<td><code>prose --migrate-sql</code></td>
 <td>Apply pending hand-written T-SQL schema migrations</td>
 </tr>
 <tr>
-<td><code>ss --universe &lt;id&gt;</code></td>
+<td><code>prose --universe &lt;id&gt;</code></td>
 <td>Set the active universe scope (GLMZ / Fantasy) for subsequent commands</td>
 </tr>
 </tbody></table>
 <h4 id="local-rented-gpu-prose-generation">Local / rented-GPU prose generation</h4>
 <p>Route <code>--expand-beat</code> to any OpenAI-compatible endpoint without mutating <code>appsettings.json</code>:</p>
-<pre><code class="language-powershell">ss --expand-beat --slug &lt;slug&gt; `
+<pre><code class="language-powershell">prose --expand-beat --slug &lt;slug&gt; `
    --local-url  https://&lt;runpod-pod-id&gt;-11434.proxy.runpod.net/v1/chat/completions `
    --local-model qwen2.5-32b-writer
 </code></pre>
@@ -582,14 +582,14 @@ powershell -File tools/codex.ps1 doctor   # must pass
 <li>Pull and tag your model via the web terminal (e.g. <code>ollama pull qwen2.5:32b-instruct-q4_k_m</code>).</li>
 <li>Use the proxy URL in <code>--expand-beat</code>:</li>
 </ol>
-<pre><code class="language-powershell">ss --expand-beat --slug &lt;slug&gt; `
+<pre><code class="language-powershell">prose --expand-beat --slug &lt;slug&gt; `
    --local-url  https://&lt;runpod-pod-id&gt;-11434.proxy.runpod.net/v1/chat/completions `
    --local-model qwen2.5:32b-instruct
 </code></pre>
 <p>An L40S 48 GB at ~$1/hr handles <code>qwen2.5:32b-instruct</code> (Q4_K_M) comfortably with 32k context.</p>
 <h3 id="entity-review-scoring">Entity review scoring</h3>
 <p><code>EntityRatingService</code> and <code>EntityReviewService</code> run Legion-persona quality voting on canon entities in a distributed queue (10 ballots per entity across the ~10,532 entity corpus). Trigger via:</p>
-<pre><code class="language-powershell">ss --review-entity --id &lt;entity-guid&gt;
+<pre><code class="language-powershell">prose --review-entity --id &lt;entity-guid&gt;
 </code></pre>
 <p>MCP equivalent: the <code>Tools.Quality.cs</code> family (<code>review_book</code>, <code>scan_chapter_quality</code>, <code>check_prose</code>).</p>
 <h3 id="nxr-parallel-writing-experiment">NxR parallel-writing experiment</h3>

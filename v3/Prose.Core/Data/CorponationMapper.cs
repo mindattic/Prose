@@ -229,7 +229,7 @@ public static class CorponationMapper
     /// relational row yet. Returns the number of corponation entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-corponation-relational</c>.
+    /// Run once via <c>prose --rebuild-corponation-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

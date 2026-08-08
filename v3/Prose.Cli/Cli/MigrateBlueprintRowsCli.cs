@@ -7,7 +7,7 @@ using Prose.Core.Data.Entities;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --migrate-blueprint-rows [--slug &lt;slug&gt;] [--dry-run]
+/// prose --migrate-blueprint-rows [--slug &lt;slug&gt;] [--dry-run]
 ///
 /// Step B2: decomposes per-book JSON blob arrays (EscalationCurveJson,
 /// EventTypePaletteJson) and NodeStructuralBlueprintBeatTags rows into

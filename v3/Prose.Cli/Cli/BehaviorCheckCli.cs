@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --behavior-check --slug &lt;nodeSlug&gt; --character &lt;characterId&gt;
+/// prose --behavior-check --slug &lt;nodeSlug&gt; --character &lt;characterId&gt;
 /// LLM-checks each beat of the node against the character's behavioral rules.
 /// </summary>
 public static class BehaviorCheckCli
@@ -30,7 +30,7 @@ public static class BehaviorCheckCli
 
         if (nodeSlug == null || characterId == null)
         {
-            Console.Error.WriteLine("Usage: ss --behavior-check --slug <nodeSlug> --character <characterId>");
+            Console.Error.WriteLine("Usage: prose --behavior-check --slug <nodeSlug> --character <characterId>");
             return 1;
         }
 

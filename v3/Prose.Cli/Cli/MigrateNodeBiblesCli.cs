@@ -6,7 +6,7 @@ using Prose.Core.Data.Entities;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --migrate-node-bibles [--slug &lt;slug&gt;] [--dry-run]
+/// prose --migrate-node-bibles [--slug &lt;slug&gt;] [--dry-run]
 ///
 /// Step A2 (NodeBible side): migrates Nodes.NodeBible text blobs into structured
 /// NodeBibleSection rows. One "Full" section per node — the complete NodeBible

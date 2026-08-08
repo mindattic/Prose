@@ -47,7 +47,7 @@ if (args[0] == "--watch")
 
     if (manifestPath == null || !File.Exists(manifestPath))
     {
-        Console.Error.WriteLine($"[kdp-file-picker] Manifest not found: {manifestPath ?? "(none)"}. Run `ss --kdp-manifest` first, or pass --manifest <path>.");
+        Console.Error.WriteLine($"[kdp-file-picker] Manifest not found: {manifestPath ?? "(none)"}. Run `prose --kdp-manifest` first, or pass --manifest <path>.");
         return 1;
     }
 

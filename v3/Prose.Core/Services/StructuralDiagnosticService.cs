@@ -18,7 +18,7 @@ namespace Prose.Core.Services;
 // one-action fix. Blocking failures suppress the review recommendation.
 //
 // Usage:
-//   ss --diagnose-book --slug <slug>
+//   prose --diagnose-book --slug <slug>
 //   MCP: diagnose_book(nodeIdOrSlug)
 
 /// <summary>Structural check result tier.</summary>

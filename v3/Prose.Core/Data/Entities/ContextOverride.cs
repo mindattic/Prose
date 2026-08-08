@@ -8,7 +8,7 @@ namespace Prose.Core.Data.Entities;
 /// normally be injected.
 ///
 /// Rows are keyed by SessionKey (Environment.UserName by default) and expire
-/// after 24 hours, or can be cleared explicitly via <c>ss --context clear</c>.
+/// after 24 hours, or can be cleared explicitly via <c>prose --context clear</c>.
 /// Managed by <see cref="Prose.Core.Services.UserContextService"/>.
 /// </summary>
 public class ContextOverride

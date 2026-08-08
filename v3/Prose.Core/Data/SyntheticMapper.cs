@@ -260,7 +260,7 @@ public static class SyntheticMapper
     /// relational row yet. Returns the number of synthetic entries written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-synthetic-relational</c>.
+    /// Run once via <c>prose --rebuild-synthetic-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

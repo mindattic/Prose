@@ -282,7 +282,7 @@ public class BeatVerificationService
 
         if (beatScore == null)
             return new(beat.Id, "EscalationFloor", "Skipped", "MODERATE",
-                "No EmotionalBeatScore exists — run ss --examine-emotion first");
+                "No EmotionalBeatScore exists — run prose --examine-emotion first");
 
         // Depth 0–4; floor is 0–10. Scale: floor/10 * 4 = expected depth
         var expectedDepth = (double)decision.EscalationFloor.Value / 10.0 * 4.0;

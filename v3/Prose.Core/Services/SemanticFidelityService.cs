@@ -25,7 +25,7 @@ namespace Prose.Core.Services;
 ///
 /// The service is called automatically in the background after every review run
 /// (via NodeReviewService) whenever the node score meets the gaming threshold.
-/// It can also be invoked directly via `ss --check-fidelity` or the
+/// It can also be invoked directly via `prose --check-fidelity` or the
 /// `check_semantic_fidelity` MCP tool.
 /// </summary>
 public class SemanticFidelityService

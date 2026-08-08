@@ -9,11 +9,11 @@ namespace Prose.Cli;
 /// agents (or the user) self-serve a Quorum decision without writing a
 /// custom service. Two shapes:
 ///
-///   ss --legion ask "Question" --options "A,B,C" [--context "..."] [--quorum plurality|majority|supermajority|unanimous] [--max-tokens 512]
+///   prose --legion ask "Question" --options "A,B,C" [--context "..."] [--quorum plurality|majority|supermajority|unanimous] [--max-tokens 512]
 ///       Force the panel to pick one of the supplied options. Prints the
 ///       winning Choice + Reasoning + Confidence + per-voter votes.
 ///
-///   ss --legion vote "Question" [--context "..."] [--max-tokens 1024]
+///   prose --legion vote "Question" [--context "..."] [--max-tokens 1024]
 ///       Open-ended vote — every model writes its own answer and Legion
 ///       returns a synthesized narrative + the individual responses.
 ///
@@ -45,7 +45,7 @@ public static class LegionCli
 
         if (string.IsNullOrWhiteSpace(question))
         {
-            Console.Error.WriteLine("error: missing question. Try: ss --legion ask \"…\" --options \"A,B,C\"");
+            Console.Error.WriteLine("error: missing question. Try: prose --legion ask \"…\" --options \"A,B,C\"");
             return 1;
         }
 
@@ -56,7 +56,7 @@ public static class LegionCli
             var optionsRaw = ArgValue(args, "--options");
             if (string.IsNullOrWhiteSpace(optionsRaw))
             {
-                Console.Error.WriteLine("error: --options required for ask. Try: ss --legion ask \"…\" --options \"A,B,C\"");
+                Console.Error.WriteLine("error: --options required for ask. Try: prose --legion ask \"…\" --options \"A,B,C\"");
                 return 1;
             }
             var options = optionsRaw.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToList();
@@ -127,11 +127,11 @@ public static class LegionCli
     private static void PrintUsage()
     {
         Console.WriteLine("Usage:");
-        Console.WriteLine("  ss --legion ask \"Question\" --options \"A,B,C\" [--context \"...\"]");
+        Console.WriteLine("  prose --legion ask \"Question\" --options \"A,B,C\" [--context \"...\"]");
         Console.WriteLine("                 [--quorum plurality|majority|supermajority|unanimous] [--max-tokens 512] [--pretty]");
         Console.WriteLine("    Force the cloud-LLM panel to pick one of the supplied options.");
         Console.WriteLine();
-        Console.WriteLine("  ss --legion vote \"Question\" [--context \"...\"] [--max-tokens 1024] [--pretty]");
+        Console.WriteLine("  prose --legion vote \"Question\" [--context \"...\"] [--max-tokens 1024] [--pretty]");
         Console.WriteLine("    Open-ended vote — every model writes its own answer; output includes a synthesized summary.");
         Console.WriteLine();
         Console.WriteLine("Output is JSON on stdout (`choice`, `reasoning`, `confidence`, per-voter votes).");

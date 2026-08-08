@@ -244,7 +244,7 @@ public static class NewsMapper
     /// blob → NewsData → persist. Returns the number of news items written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-news-relational</c>.
+    /// Run once via <c>prose --rebuild-news-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

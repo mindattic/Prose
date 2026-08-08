@@ -71,7 +71,7 @@ source is not evocative prose, it's an error, full stop.
   a source of narrative tension ("no one knows what happened to Pilate after Rome recalled him
   — and two different churches invented two opposite endings for him, centuries apart, for two
   entirely different reasons") — use it, don't hide it.
-- A citation-grounding check (mirroring the existing quote-grounding guard, `ss --verify-quote`)
+- A citation-grounding check (mirroring the existing quote-grounding guard, `prose --verify-quote`)
   should run on NONFICTION beats before they're considered done: every specific factual claim traced
   back to the grounding doc's Sources section.
 
@@ -206,7 +206,7 @@ trusted; that trust is the whole product.
 **Every book-level node under NONFICTION (Matthew, Mark, Luke, John) has `Node.Author` set to
 `"Pulpit Press"`**, not `"MindAttic"`. This is a deliberate, explicit exception to this project's
 global export-author rule, scoped to NONFICTION only — set once per book node (`UPDATE Nodes SET Author
-= 'Pulpit Press' WHERE Slug = '<book-slug>'`) so `ss --export-node` picks it up automatically
+= 'Pulpit Press' WHERE Slug = '<book-slug>'`) so `prose --export-node` picks it up automatically
 without needing `--author` passed on every export. New chapters added to an existing book inherit
 this via the book node's own `Author` field; a brand-new book node needs the same one-time
 `Author` update when it's created.
@@ -315,15 +315,15 @@ NULL) is the series-organizing node only — it is never itself exported and car
 Title/Subtitle/Author metadata of its own. Each Gospel (Matthew, Mark, Luke, John) is its own
 `BookNode`, a *child* of that series root, with `Title = "Gospel: History vs. Heritage"` and its
 own `Subtitle` (`"Matthew"` / `"Mark"` / `"Luke"` / `"John"`) and `Author = "Pulpit Press"` — this
-is the node `ss --export-node` actually targets, one per published KDP title.
+is the node `prose --export-node` actually targets, one per published KDP title.
 
-A NONFICTION book is one `BookNode` (created via `ss --create-book --kind book --parent <series-slug>`)
+A NONFICTION book is one `BookNode` (created via `prose --create-book --kind book --parent <series-slug>`)
 with `ChapterNode` children, one per source chapter (`--kind chapter --parent <book-slug>`),
 **plus two trailing structural chapters**: a **Notes** chapter and a **Glossary** chapter, both
 siblings of the numbered chapters *within that same book*, both positioned with a `SortKey`
 *higher than every chapter's*. Notes and Glossary belong to their own book only (§1a, §1b) — Mark's
 Notes chapter is a sibling of Mark's own chapters, never a sibling of Matthew's. This is the one
-mistake most likely to recur: `ss --create-book` assigns default SortKeys that can tie with an
+mistake most likely to recur: `prose --create-book` assigns default SortKeys that can tie with an
 already-created chapter (e.g., Notes created at the same SortKey as Chapter 2), which makes the
 exported order interleave Notes/Glossary into the middle of the book instead of appending them
 at the end. **Always explicitly set SortKey after creating Notes/Glossary**, well above the
@@ -357,7 +357,7 @@ for it as of this writing.
 
 ### 5b. The `--beat insert` "lands at top" gotcha
 
-`ss --beat insert --node <slug>` **without `--after`always inserts at the top of that node**,
+`prose --beat insert --node <slug>` **without `--after`always inserts at the top of that node**,
 regardless of how many beats already exist there. This is not "append" — the second beat you
 insert into an empty-ish node with an existing beat will land *before* it unless you pass
 `--after <existing-beat-id>`. When inserting a single new beat into a chapter that already has
@@ -406,7 +406,7 @@ one for a specific number/date/name if the first result is vague) is the typical
 ### 5e. Entity seeding as you go, not as an afterthought
 
 Every new scholar or place named in a Note or a beat gets seeded into the entity repo (`ss
---add-character --dir <folder>` / `ss --add-place --dir <folder>`, batch mode) **in the same work
+--add-character --dir <folder>` / `prose --add-place --dir <folder>`, batch mode) **in the same work
 session as the beat that introduces them**, not deferred to a cleanup pass at the end. Check
 first (`SELECT Slug FROM Entities WHERE UniverseId=... AND Name LIKE '%X%'`) since many will
 already exist from the original entity-catalog seeding or an earlier chapter's citations. Tag
@@ -477,7 +477,7 @@ A `.ps1` file written by the `Write` tool (or any tool that emits plain UTF-8 wi
 mark) is **misread by Windows PowerShell 5.1's own script parser**, not just its output pipe. Any
 literal em dash or accented character typed directly into the script's source (e.g. `Update-
 ChapterTitle $id 'Chapter 6 — ...'`) gets mangled into UTF-8-read-as-cp1252 mojibake (`—` becomes
-`â€"`, `ő`/`ö` become `Å‘`/`Ã¶`) **before the script ever runs** — this happens even when using
+`”"`, `ő`/`ö` become `ő`/`ö`) **before the script ever runs** — this happens even when using
 `System.Data.SqlClient` directly with parameterized queries (i.e. it is *not* the same bug as
 §5g0's pipe-to-`dotnet run` corruption; there is no child process or pipe involved at all here).
 Symptom: `UNICODE(SUBSTRING(Title,...))` reads `226` (â) instead of `8212` (—), or the script
@@ -527,9 +527,9 @@ never splits mid-word, so a hyphen right before a wrap point already belonged to
 
 ### 5g2. `--beat delete` is a SOFT delete — filter `IsEnabled=1` in every count/audit query
 
-`NodeWorkbenchService.DeleteBeatAsync` (the code behind `ss --beat delete`) only flips
+`NodeWorkbenchService.DeleteBeatAsync` (the code behind `prose --beat delete`) only flips
 `BeatNodes.IsEnabled = 0` on the membership row — it never removes the `Beats`/`BeatNodes` row
-itself. This is intentional (recoverable via `ss --beat` restore semantics on the same junction
+itself. This is intentional (recoverable via `prose --beat` restore semantics on the same junction
 row) but it silently breaks any audit query that doesn't account for it: a raw `SELECT COUNT(*)
 FROM BeatNodes WHERE NodeId=@notes` or a raw `SELECT ... FROM BeatNodes bn JOIN Beats b ...` will
 still return "deleted" rows, making it look like a beat you just deleted "came back." This ate
@@ -586,7 +586,7 @@ had zero self-executions; the one batch that didn't (batch 1) had two.
 
 ### 5g. Export and final verification
 
-Export the **book-level node**, never a chapter individually — `ss --export-node --slug
+Export the **book-level node**, never a chapter individually — `prose --export-node --slug
 <book-slug> --author "Pulpit Press"` recursively walks every child chapter plus Notes plus
 Glossary in `SortKey` order and combines them into one manuscript automatically; this is why
 §5a's SortKey discipline is the only thing standing between a correctly trailing Notes/Glossary

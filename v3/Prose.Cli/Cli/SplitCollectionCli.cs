@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --split-collection (--slug &lt;s&gt; | --id &lt;guid|prefix&gt;)</c> — turn a
+/// <c>prose --split-collection (--slug &lt;s&gt; | --id &lt;guid|prefix&gt;)</c> — turn a
 /// monolithic node into a Collection (ARCHITECTURE.md §2c): split its beats at
 /// IsChapterStart boundaries into child nodes parented under it via
 /// ParentNodeId. Beats are MOVED, never rewritten. Backs up to markdown first.

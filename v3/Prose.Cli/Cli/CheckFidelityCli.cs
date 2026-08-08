@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --check-fidelity (--slug &lt;nodeSlug&gt; | --id &lt;nodeId&gt;) [--json]
+/// prose --check-fidelity (--slug &lt;nodeSlug&gt; | --id &lt;nodeId&gt;) [--json]
 ///
 /// Detects the Semantic Fidelity Gap for a node — beats that score high on the
 /// Legion review metric but have drifted from the story's original meaning.
@@ -39,7 +39,7 @@ public static class CheckFidelityCli
 
         if (nodeSlug == null && nodeId == null)
         {
-            Console.Error.WriteLine("Usage: ss --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]");
+            Console.Error.WriteLine("Usage: prose --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]");
             return 2;
         }
 

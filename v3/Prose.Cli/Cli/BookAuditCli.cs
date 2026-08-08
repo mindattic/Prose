@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --book-audit --slug &lt;nodeSlug&gt; [--json]
+/// prose --book-audit --slug &lt;nodeSlug&gt; [--json]
 ///
 /// Audits a node against its 7 commandments:
 ///   • Gateway commandments — when PreviousNodeId is null (standalone / first in series)
@@ -32,7 +32,7 @@ public static class BookAuditCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --book-audit --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: prose --book-audit --slug <nodeSlug> [--json]");
             return 2;
         }
 

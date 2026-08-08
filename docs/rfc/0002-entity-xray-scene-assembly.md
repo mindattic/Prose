@@ -1,4 +1,4 @@
-﻿---
+---
 codex: 1
 project: Prose
 code: SS
@@ -73,9 +73,9 @@ foundations doctrine below.
 
 User doctrine 2026-06-10:
 - **Every system connects to every other** — no orphaned subsystems.
-- **CLI ⇄ MCP parity:** every capability ships as BOTH `ss` CLI flag and MCP tool, or is
+- **CLI ⇄ MCP parity:** every capability ships as BOTH `prose` CLI flag and MCP tool, or is
   explicitly disposable. (Known parity gaps to close: review-strand CLI-only; chapter export
-  session-script-only → promote to `ss --export-chapters` + MCP.)
+  session-script-only → promote to `prose --export-chapters` + MCP.)
 - **Script lifecycle:** throwaway scripts deleted after use; twice-reused scripts get promoted
   to documented functionality.
 - The engine's goal state is **self-sustaining**: write → review (cyberpunk-fan panel) →
@@ -134,7 +134,7 @@ injected content.
 ## Implementation state (2026-06-10)
 
 **Built:** `SceneContextAssembler` (Core/Services) implementing all four passes; registered in
-DI; CLI `ss --assemble-scene (--beat <guid> | --text "…") [--budget N]` (AssembleSceneCli);
+DI; CLI `prose --assemble-scene (--beat <guid> | --text "…") [--budget N]` (AssembleSceneCli);
 MCP tool `assemble_scene_context` (Tools.Scene.cs — visible after the MCP server restarts).
 Structural registry types (chapter/book/strand/series/beat) are excluded from rosters. Smoke
 test on the Kitchen beat: Pixel + Kyle by name with contrasting voice blocks, Ezra Vance and
@@ -149,7 +149,7 @@ Imani via graph hop, ~2,000-token block, exit 0. Pixel's empty voice fields
   assembly failure never blocks generation).
 - **`BeatEntities` persistence:** raw idempotent DDL (FindingsService pattern), PK
   (BeatId, EntityId), `PersistRosterAsync` with replace semantics.
-- **Backfill:** `ss --assemble-scene --backfill --slug <strand> [--harvest]` — tree-walks
+- **Backfill:** `prose --assemble-scene --backfill --slug <strand> [--harvest]` — tree-walks
   the strand (a book slug covers all chapters), persists every beat's roster.
 - **The reverse direction:** `HarvestRevealedDetailsAsync` — per beat, proposes durable
   details the prose reveals about in-scene entities as findings with prefix

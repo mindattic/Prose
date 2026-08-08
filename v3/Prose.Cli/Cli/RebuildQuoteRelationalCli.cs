@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-quote-relational</c> — backfill the Quotes relational schema from
+/// <c>prose --rebuild-quote-relational</c> — backfill the Quotes relational schema from
 /// Records.Json blobs. For every active quote entity, deserializes the blob → QuoteData
 /// → persists scalar columns + syncs EntityTags.
 ///

@@ -4,8 +4,8 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --weapon-network --id &lt;weaponId&gt;
-/// ss --weapon-network --character &lt;characterId&gt; [--as-of "date"]
+/// prose --weapon-network --id &lt;weaponId&gt;
+/// prose --weapon-network --character &lt;characterId&gt; [--as-of "date"]
 /// Prints ammo types + sibling weapons for a weapon, or full loadout for a character.
 /// </summary>
 public static class WeaponNetworkCli
@@ -72,7 +72,7 @@ public static class WeaponNetworkCli
             return 0;
         }
 
-        Console.Error.WriteLine("Usage: ss --weapon-network (--id <weaponId> | --character <characterId> [--as-of date])");
+        Console.Error.WriteLine("Usage: prose --weapon-network (--id <weaponId> | --character <characterId> [--as-of date])");
         return 1;
     }
 }

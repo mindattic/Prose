@@ -6,10 +6,10 @@ namespace Prose.Cli;
 /// <summary>
 /// Populates the DistributedWorkQueue with work items for remote workers.
 ///
-///   ss --populate-queue --entity-review [--types weapon,equipment,...]
-///   ss --populate-queue --story-review [--node-id GUID] [--readers 5]
-///   ss --populate-queue --beat-write    [--node-id GUID]
-///   ss --populate-queue --status
+///   prose --populate-queue --entity-review [--types weapon,equipment,...]
+///   prose --populate-queue --story-review [--node-id GUID] [--readers 5]
+///   prose --populate-queue --beat-write    [--node-id GUID]
+///   prose --populate-queue --status
 /// </summary>
 public static class PopulateQueueCli
 {
@@ -33,10 +33,10 @@ public static class PopulateQueueCli
         if (!doEntityReview && !doNodeReview && !doBeatWrite && !doStatus)
         {
             Console.WriteLine("Usage:");
-            Console.WriteLine("  ss --populate-queue --entity-review [--types weapon,equipment,...]  [--ballots 10] [--prose 2]");
-            Console.WriteLine("  ss --populate-queue --story-review [--node-id GUID] [--readers 5]");
-            Console.WriteLine("  ss --populate-queue --beat-write    [--node-id GUID]");
-            Console.WriteLine("  ss --populate-queue --status");
+            Console.WriteLine("  prose --populate-queue --entity-review [--types weapon,equipment,...]  [--ballots 10] [--prose 2]");
+            Console.WriteLine("  prose --populate-queue --story-review [--node-id GUID] [--readers 5]");
+            Console.WriteLine("  prose --populate-queue --beat-write    [--node-id GUID]");
+            Console.WriteLine("  prose --populate-queue --status");
             return 0;
         }
 

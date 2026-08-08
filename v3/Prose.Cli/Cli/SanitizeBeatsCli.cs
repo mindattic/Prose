@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --sanitize-beats [--slug SLUG | --all] [--dry-run]
+/// prose --sanitize-beats [--slug SLUG | --all] [--dry-run]
 ///
 /// Scans beats for UTF-8-as-Windows-1252 mojibake and repairs in place.
 /// Prints a summary of affected beats. Idempotent.

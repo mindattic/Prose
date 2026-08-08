@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-technology-relational</c> — backfill the Technologies relational
+/// <c>prose --rebuild-technology-relational</c> — backfill the Technologies relational
 /// schema from Records.Json blobs. For every technology entity (active or inactive),
 /// deserializes the blob → TechnologyData → persists columns + all 5 bridge tables
 /// (Aliases / Developers / BaseTechnologies / Enables / StoryHooks) + syncs EntityTags.

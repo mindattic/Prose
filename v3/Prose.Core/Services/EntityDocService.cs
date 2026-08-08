@@ -49,7 +49,7 @@ public sealed class EntityDocService(
 
         // IgnoreQueryFilters: this method is universe-agnostic by construction — it stamps the doc
         // with whatever universe the entity itself declares, so it does not need the ambient scope
-        // to agree. Without this, a maintenance pass (ss --repair-entity-docs) could only ever
+        // to agree. Without this, a maintenance pass (prose --repair-entity-docs) could only ever
         // reach the entities of whichever universe happened to be active. During normal prose
         // generation the ids come from SceneContextAssembler, which is already universe-scoped, so
         // nothing widens there.

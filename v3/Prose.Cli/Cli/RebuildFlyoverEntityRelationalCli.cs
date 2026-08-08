@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-flyover-entity-relational</c> — backfill the FlyoverEntities relational
+/// <c>prose --rebuild-flyover-entity-relational</c> — backfill the FlyoverEntities relational
 /// schema from Records.Json blobs. For every active flyover_entity entity, deserializes
 /// the blob → FlyoverEntityData → persists columns + all 3 bridge tables (Aliases /
 /// KnownLocations / StoryHooks) + syncs EntityTags. Also creates minimal relational

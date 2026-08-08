@@ -3,7 +3,7 @@
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --canon-retrieve "&lt;query&gt;" [--k N] [--types t1,t2]</c> — show what the
+/// <c>prose --canon-retrieve "&lt;query&gt;" [--k N] [--types t1,t2]</c> — show what the
 /// engine's universal canon reach pulls for a query, ACROSS ALL entity types.
 /// Verifies the full-interconnect path (the embedding index covers every type, so
 /// previously-"dead" inventory like cyberware/materials/pharma now surfaces).
@@ -25,7 +25,7 @@ public static class CanonRetrieveCli
         }
         if (string.IsNullOrWhiteSpace(query))
         {
-            Console.Error.WriteLine("[canon-retrieve] Usage: ss --canon-retrieve \"<query>\" [--k N] [--types character,pharmaceutical]");
+            Console.Error.WriteLine("[canon-retrieve] Usage: prose --canon-retrieve \"<query>\" [--k N] [--types character,pharmaceutical]");
             return 1;
         }
 

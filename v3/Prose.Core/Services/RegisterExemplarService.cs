@@ -15,7 +15,7 @@ namespace Prose.Core.Services;
 // docs/registers/<NAME>.md.
 //
 // Usage (via CLI):
-//   ss --update-register-exemplars --slug <node-slug> [--top N] [--dry-run]
+//   prose --update-register-exemplars --slug <node-slug> [--top N] [--dry-run]
 // ─────────────────────────────────────────────────────────────────────────
 
 public class RegisterExemplarService

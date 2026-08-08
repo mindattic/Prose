@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-corponation-relational</c> — backfill the Corponations relational
+/// <c>prose --rebuild-corponation-relational</c> — backfill the Corponations relational
 /// schema from Records.Json blobs. For every corponation entity (active or inactive),
 /// deserializes the blob → CorponationData → persists columns + CorponationCommonNames
 /// bridge + syncs EntityTags.

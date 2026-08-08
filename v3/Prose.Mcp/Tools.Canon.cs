@@ -72,7 +72,7 @@ public class CanonDocTools
         var doc = await canonDocs.GetDocumentAsync(documentType, universeId.Value);
         if (doc == null)
             return JsonSerializer.Serialize(new { error = "document_not_found", documentType, universeSlug,
-                hint = "Run ss --migrate-canon-docs first to seed the DB from existing .md files." },
+                hint = "Run prose --migrate-canon-docs first to seed the DB from existing .md files." },
                 CanonTools.JsonOpts);
 
         return doc;

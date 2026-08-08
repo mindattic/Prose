@@ -37,7 +37,7 @@ or reviews from this skill** — if the user wants a score, they will say so exp
    IsChapterStart stranded on disabled beats) / bible agreement.
    Findings: severity (BLOCKER/MODERATE/MINOR) + SortKeys + quoted text + minimal fix proposal.
    Instruct verbatim: "Do not invent problems — if the logic holds, say so."
-   Bible agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): `ss --altitude-audit
+   Bible agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): `prose --altitude-audit
    --slug <slug>` automates the 10,000↔100 ft comparison (bible/blueprint vs chapter
    synopses; findings filed as OutlineDrift); agents may read the book's
    `story-synopsis.txt` (or `NodeChapterSummaries`) for cheap chapter-altitude scoping
@@ -48,8 +48,8 @@ or reviews from this skill** — if the user wants a score, they will say so exp
 3. **VERIFY QUOTE GROUNDING (mechanical, before triage — docs/LOGIC.md §SS-LOGIC-4a).**
    Every finding that quotes beat text gets checked against the DB before it's trusted, not
    after: build the claim list (BeatId + quoted text) from all audit reports and run
-   `ss --verify-quotes-batch --json-file <path>` (array of `{"beatId":"<guid>","quote":"<text>"}`)
-   — or `ss --verify-quote --id <beatId> --quote "<text>" --claimed-by "<agent>"` one at a time.
+   `prose --verify-quotes-batch --json-file <path>` (array of `{"beatId":"<guid>","quote":"<text>"}`)
+   — or `prose --verify-quote --id <beatId> --quote "<text>" --claimed-by "<agent>"` one at a time.
    MCP: `VerifyQuoteGroundingBatch` / `VerifyQuoteGrounding`. Any Fail = that finding is
    misattributed or fabricated — drop it from triage and, if it seems worth chasing, re-read
    the actual beat yourself before deciding. This is cheap and mechanical; run it on every

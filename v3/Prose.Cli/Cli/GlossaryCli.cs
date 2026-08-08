@@ -7,11 +7,11 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --generate-glossary --universe &lt;glmz|scry&gt;</c> — regenerate that universe's
+/// <c>prose --generate-glossary --universe &lt;glmz|scry&gt;</c> — regenerate that universe's
 /// Master Glossary (Glossary.htm/.json/.txt under docs/universes/{SLUG}/) from the
 /// GlossaryTerms table.
 ///
-/// <c>ss --generate-book-glossary --slug &lt;slug&gt; [--all]</c> — regenerate the per-book
+/// <c>prose --generate-book-glossary --slug &lt;slug&gt; [--all]</c> — regenerate the per-book
 /// glossary (docs/nodes/{CODE}-Glossary.htm/.json/.txt) — the subset of that book's universe
 /// glossary whose terms actually appear in its live prose.
 /// </summary>
@@ -35,7 +35,7 @@ public static class GlossaryCli
         if (universes.Count == 0)
         {
             Console.Error.WriteLine($"[generate-glossary] No universe found for '{universeSlug}'.");
-            Console.Error.WriteLine("Usage: ss --generate-glossary --universe <slug>   (omit --universe for all)");
+            Console.Error.WriteLine("Usage: prose --generate-glossary --universe <slug>   (omit --universe for all)");
             return 2;
         }
 

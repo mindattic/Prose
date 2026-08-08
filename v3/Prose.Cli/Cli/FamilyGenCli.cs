@@ -7,11 +7,11 @@ namespace Prose.Cli;
 /// CLI surface for <see cref="FamilyGeneratorService"/>. Two-step UX so the
 /// cast doesn't grow uncontrollably:
 ///
-///   ss --family-gen propose --of &lt;id|slug&gt; [--seed N] [--with-cousins]
+///   prose --family-gen propose --of &lt;id|slug&gt; [--seed N] [--with-cousins]
 ///       Print the proposed family — no DB writes. Add --with-cousins to
 ///       also propose subject's aunts/uncles and their children.
 ///
-///   ss --family-gen propose --of &lt;id|slug&gt; --commit [--seed N] [--with-cousins]
+///   prose --family-gen propose --of &lt;id|slug&gt; --commit [--seed N] [--with-cousins]
 ///       Same proposal, then write characters + edges + propagate genetics.
 /// </summary>
 public static class FamilyGenCli
@@ -22,7 +22,7 @@ public static class FamilyGenCli
         var sub = idx >= 0 && idx + 1 < args.Length ? args[idx + 1] : null;
         if (sub != "propose")
         {
-            Console.Error.WriteLine("Usage: ss --family-gen propose --of <id|slug> [--seed N] [--commit]");
+            Console.Error.WriteLine("Usage: prose --family-gen propose --of <id|slug> [--seed N] [--commit]");
             return 2;
         }
 

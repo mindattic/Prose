@@ -9,8 +9,8 @@ namespace Prose.Cli;
 /// EntityStateEvents row. Output is human-readable; use --json for a
 /// machine-parseable dump.
 ///
-///   ss --audit-drift           pretty-printed report
-///   ss --audit-drift --json    JSON to stdout
+///   prose --audit-drift           pretty-printed report
+///   prose --audit-drift --json    JSON to stdout
 /// </summary>
 public static class AuditDriftCli
 {

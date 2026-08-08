@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-readmodel [--archived]</c> — rebuild the materialized
+/// <c>prose --rebuild-readmodel [--archived]</c> — rebuild the materialized
 /// character read-model projection (CharacterReadModels) from the relational
 /// source of truth. This is the one-time slow path (the 25-Include fan-out over
 /// every character) that lets every subsequent full read be a single column
@@ -34,7 +34,7 @@ public static class RebuildReadModelCli
         catch (Exception ex)
         {
             Console.Error.WriteLine($"[rebuild-readmodel] FAILED: {ex.Message}");
-            Console.Error.WriteLine("[rebuild-readmodel] Did you run the migration? ss --migrate-sql (create_character_readmodel_20260606.sql)");
+            Console.Error.WriteLine("[rebuild-readmodel] Did you run the migration? prose --migrate-sql (create_character_readmodel_20260606.sql)");
             return 1;
         }
 

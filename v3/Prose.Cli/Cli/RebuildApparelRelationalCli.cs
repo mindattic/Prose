@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-apparel-relational</c> — backfill the Apparels relational
+/// <c>prose --rebuild-apparel-relational</c> — backfill the Apparels relational
 /// schema from Records.Json blobs. For every apparel entity (active or inactive),
 /// deserializes the blob → ApparelData → persists columns + all bridge rows +
 /// syncs EntityTags.

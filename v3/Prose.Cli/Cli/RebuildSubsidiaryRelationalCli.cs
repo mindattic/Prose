@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-subsidiary-relational</c> — backfill the Subsidiaries relational
+/// <c>prose --rebuild-subsidiary-relational</c> — backfill the Subsidiaries relational
 /// schema from Records.Json blobs. For every subsidiary entity (active or inactive),
 /// deserializes the blob → SubsidiaryData → persists columns + SubsidiaryProducts
 /// bridge + syncs EntityTags.

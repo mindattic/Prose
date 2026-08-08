@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --ensure-chapter --slug &lt;slug&gt; | --all
+/// prose --ensure-chapter --slug &lt;slug&gt; | --all
 ///
 /// Enforces the "every book has at least one chapter" invariant. A flat
 /// (chapterless) book — one whose beats hang directly on the book node — gets
@@ -27,7 +27,7 @@ public static class EnsureChapterCli
 
         if (slug == null && !all)
         {
-            Console.Error.WriteLine("Usage: ss --ensure-chapter --slug <slug> | --all");
+            Console.Error.WriteLine("Usage: prose --ensure-chapter --slug <slug> | --all");
             return 2;
         }
 

@@ -312,7 +312,7 @@ public class StructuralBlueprintService
         var blueprint = await GetAsync(nodeId, ct);
         if (blueprint == null)
         {
-            log.LogWarning("[blueprint] No structural blueprint for node {NodeId} — StoryScope anti-tell layer inactive. Run 'ss --generate-blueprint --slug <slug>'.", nodeId);
+            log.LogWarning("[blueprint] No structural blueprint for node {NodeId} — StoryScope anti-tell layer inactive. Run 'prose --generate-blueprint --slug <slug>'.", nodeId);
             return "";
         }
 

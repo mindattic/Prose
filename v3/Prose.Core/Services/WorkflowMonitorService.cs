@@ -9,7 +9,7 @@ namespace Prose.Core.Services;
 /// coverage gaps per node or globally.
 ///
 /// Called fire-and-forget by ProseWriterRouter after each beat is generated.
-/// Query via ss --workflow-status or the workflow_status MCP tools.
+/// Query via prose --workflow-status or the workflow_status MCP tools.
 /// </summary>
 public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
 {
@@ -104,7 +104,7 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
         var hasBlueprint = await db.NodeStructuralBlueprints.AsNoTracking()
             .AnyAsync(b => scopeIds.Contains(b.NodeId), ct);
         if (!hasBlueprint)
-            gaps.Add($"StructuralBlueprint: not found — run 'ss --generate-blueprint --slug {node?.Slug ?? "?"}'");
+            gaps.Add($"StructuralBlueprint: not found — run 'prose --generate-blueprint --slug {node?.Slug ?? "?"}'");
 
         // Health check: NodeBible freshness vs MarkdownFiles
         var nodeCode = node?.NodeCode ?? "";
@@ -115,9 +115,9 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
                 .Select(m => (DateTime?)m.LastSyncedAt)
                 .FirstOrDefaultAsync(ct);
             if (mdSynced == null)
-                gaps.Add($"NodeBible: generated but never synced — run 'ss --generate-node-doc --slug {node?.Slug ?? "?"} && ss --sync-markdown'");
+                gaps.Add($"NodeBible: generated but never synced — run 'prose --generate-node-doc --slug {node?.Slug ?? "?"} && prose --sync-markdown'");
             else if (node!.NodeBibleGeneratedAt!.Value > mdSynced.Value)
-                gaps.Add($"NodeBible: generated {node.NodeBibleGeneratedAt.Value:yyyy-MM-dd HH:mm} UTC but MarkdownFiles synced {mdSynced.Value:yyyy-MM-dd HH:mm} UTC — run 'ss --sync-markdown'");
+                gaps.Add($"NodeBible: generated {node.NodeBibleGeneratedAt.Value:yyyy-MM-dd HH:mm} UTC but MarkdownFiles synced {mdSynced.Value:yyyy-MM-dd HH:mm} UTC — run 'prose --sync-markdown'");
         }
 
         return new NodeCoverageReport(

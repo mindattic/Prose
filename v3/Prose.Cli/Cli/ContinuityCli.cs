@@ -10,16 +10,16 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI surface for the unified continuity store. Subcommands:
 ///
-///   ss --continuity migrate                          One-time migration from engine/data/continuity/*.json into the SQLite store.
-///   ss --continuity stats                            Total / NEW / CONFIRMED / CONTRADICTED / CANONICAL / REJECTED counts + sources breakdown.
-///   ss --continuity contradictions                   List every CONTRADICTED claim awaiting resolution.
-///   ss --continuity resolve --a &lt;uid&gt; --b &lt;uid&gt; --winner A|B|custom [--object "..."] [--note "..."]
+///   prose --continuity migrate                          One-time migration from engine/data/continuity/*.json into the SQLite store.
+///   prose --continuity stats                            Total / NEW / CONFIRMED / CONTRADICTED / CANONICAL / REJECTED counts + sources breakdown.
+///   prose --continuity contradictions                   List every CONTRADICTED claim awaiting resolution.
+///   prose --continuity resolve --a &lt;uid&gt; --b &lt;uid&gt; --winner A|B|custom [--object "..."] [--note "..."]
 ///                                                    Resolve a contradiction.
-///   ss --continuity entity &lt;name&gt;                    Dump every claim about one entity.
-///   ss --continuity extract --chapter &lt;chapterId&gt;    Extract claims from one chapter's prose via Legion Quorum.
-///   ss --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book.
-///   ss --continuity extract --entity &lt;guid&gt;          Extract claims from one entity's Records.Json blob (by EntityId).
-///   ss --continuity apply --claim &lt;uid&gt;              Apply a CANONICAL claim back to its entity record (Legion picks the field).
+///   prose --continuity entity &lt;name&gt;                    Dump every claim about one entity.
+///   prose --continuity extract --chapter &lt;chapterId&gt;    Extract claims from one chapter's prose via Legion Quorum.
+///   prose --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book.
+///   prose --continuity extract --entity &lt;guid&gt;          Extract claims from one entity's Records.Json blob (by EntityId).
+///   prose --continuity apply --claim &lt;uid&gt;              Apply a CANONICAL claim back to its entity record (Legion picks the field).
 ///
 /// Backed by ContinuityService / ContinuityExtractionService / ContinuityApplyService —
 /// same code path the UI and MCP tools use.
@@ -54,7 +54,7 @@ public static class ContinuityCli
     static int CmdMigrate(ContinuityService svc)
     {
         Console.WriteLine("[continuity] Legacy JSON migration is retired. Use:");
-        Console.WriteLine("  ss --migrate-sql --import continuity   (SQLite continuity.db → SQL Server)");
+        Console.WriteLine("  prose --migrate-sql --import continuity   (SQLite continuity.db → SQL Server)");
         return 0;
     }
 
@@ -420,16 +420,16 @@ public static class ContinuityCli
     {
         Console.WriteLine("""
             Usage:
-              ss --continuity migrate
-              ss --continuity stats
-              ss --continuity contradictions
-              ss --continuity resolve --a <uid> --b <uid> --winner A|B|custom [--object "..."] [--note "..."]
-              ss --continuity entity <name>
-              ss --continuity extract --chapter <chapterId>
-              ss --continuity extract --book <bookId>
-              ss --continuity extract --entity <path-to-entity-json>
-              ss --continuity apply --claim <claimUid>
-              ss --continuity sweep [--book <id>] [--skip-records] [--skip-prose] [--skip-resolve] [--skip-apply] [--dry-run]
+              prose --continuity migrate
+              prose --continuity stats
+              prose --continuity contradictions
+              prose --continuity resolve --a <uid> --b <uid> --winner A|B|custom [--object "..."] [--note "..."]
+              prose --continuity entity <name>
+              prose --continuity extract --chapter <chapterId>
+              prose --continuity extract --book <bookId>
+              prose --continuity extract --entity <path-to-entity-json>
+              prose --continuity apply --claim <claimUid>
+              prose --continuity sweep [--book <id>] [--skip-records] [--skip-prose] [--skip-resolve] [--skip-apply] [--dry-run]
                   one-shot end-to-end pipeline: extract from records + chapters → auto-resolve via Legion DecideAsync → apply CANONICAL claims
             """);
     }

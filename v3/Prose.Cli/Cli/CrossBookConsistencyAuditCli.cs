@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --consistency-audit [--all | --since &lt;hours&gt;]
+/// prose --consistency-audit [--all | --since &lt;hours&gt;]
 ///
 /// Surfaces factual claims that contradict across different book nodes.
 /// Reads the existing ContinuityClaims table (no LLM calls). Filters to
@@ -47,7 +47,7 @@ public static class CrossBookConsistencyAuditCli
             Console.WriteLine();
         }
 
-        Console.WriteLine($"Resolve via: ss --continuity contradictions");
+        Console.WriteLine($"Resolve via: prose --continuity contradictions");
         return 1;
     }
 }

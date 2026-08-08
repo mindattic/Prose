@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --export-synopsis (--slug &lt;slug&gt; | --all) [--force]</c>
+/// <c>prose --export-synopsis (--slug &lt;slug&gt; | --all) [--force]</c>
 ///
 /// Standalone chapter-by-chapter synopsis export (the same artifact <c>--export-node</c>
 /// emits): generates/refreshes NodeChapterSummaries from the live prose and writes
@@ -26,7 +26,7 @@ public static class ExportSynopsisCli
 
         if (!all && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: ss --export-synopsis (--slug <slug> | --all) [--force]");
+            Console.Error.WriteLine("Usage: prose --export-synopsis (--slug <slug> | --all) [--force]");
             return 1;
         }
 

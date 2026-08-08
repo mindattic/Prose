@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --context</c> — manage user context overrides for the DocContextStack.
+/// <c>prose --context</c> — manage user context overrides for the DocContextStack.
 ///
 /// Subcommands:
 ///   <c>add</c>     Pin a doc so it is always included in beat prompts.
@@ -72,7 +72,7 @@ public static class ContextCli
                 return await PrintStatusAsync(userCtx);
 
             default:
-                Console.Error.WriteLine($"[context] Unknown subcommand '{subcommand}'. Run 'ss --context --help'.");
+                Console.Error.WriteLine($"[context] Unknown subcommand '{subcommand}'. Run 'prose --context --help'.");
                 return 1;
         }
     }
@@ -159,7 +159,7 @@ public static class ContextCli
 
         if (hits.Count == 0)
         {
-            Console.Error.WriteLine($"[context] No markdown doc found matching '{docArg}'. Run 'ss --recall <keyword>' to browse.");
+            Console.Error.WriteLine($"[context] No markdown doc found matching '{docArg}'. Run 'prose --recall <keyword>' to browse.");
             return null;
         }
 
@@ -188,7 +188,7 @@ public static class ContextCli
     private static void PrintUsage()
     {
         Console.WriteLine("""
-            ss --context <subcommand> [options]
+            prose --context <subcommand> [options]
 
             Subcommands:
               add      --doc <path|guid> [--node <slug>]   Pin doc into every beat prompt

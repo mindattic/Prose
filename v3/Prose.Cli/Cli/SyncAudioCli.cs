@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --sync-audio</c> — one bidirectional newest-wins reconciliation
+/// <c>prose --sync-audio</c> — one bidirectional newest-wins reconciliation
 /// pass between local disk and Azure Blob. No flags, no modes: whichever
 /// side has the newer copy of each beat wins.
 ///

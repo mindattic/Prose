@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --score-trend [--batches N] [--universe &lt;slug&gt;]
+/// prose --score-trend [--batches N] [--universe &lt;slug&gt;]
 ///
 /// Prints the rolling mean reader score across chronological batches of nodes
 /// so the flywheel's direction is visible from the CLI (SS-US-J6 / SS-US-F10).

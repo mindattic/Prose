@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --sanity-scan (--slug &lt;slug|code&gt; | --all) [--json]
+/// prose --sanity-scan (--slug &lt;slug|code&gt; | --all) [--json]
 ///
 /// Scans a finished book node's prose for problems:
 ///   A) Internal node-code leak  — "NRST" / "BCODA" / etc. in prose
@@ -34,7 +34,7 @@ public static class SanityScanCli
 
         if (!all && slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --sanity-scan (--slug <slug|code> | --all) [--json]");
+            Console.Error.WriteLine("Usage: prose --sanity-scan (--slug <slug|code> | --all) [--json]");
             return 2;
         }
 

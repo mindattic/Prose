@@ -12,7 +12,7 @@ namespace Prose.Cli;
 /// Worker mode: claims work from the coordinator REST API, runs it against a local LLM,
 /// and POSTs results back. Stateless — no direct DB access required.
 ///
-///   ss --worker-mode
+///   prose --worker-mode
 ///     --queue-url  https://prose.azurewebsites.net/api/worker
 ///     --worker-key SECRET_API_KEY           (same key configured on coordinator)
 ///     --worker-id  pod-1                    (opaque label for logging)

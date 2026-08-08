@@ -1,4 +1,4 @@
-﻿---
+---
 universe: glmz
 title: Great Lakes Metropolitan Zone — Universal World Facts
 layer: universe-facts
@@ -10,7 +10,7 @@ updated: 2026-07-04
 # GLMZ Universe — Universal World Facts
 
 > Authoritative source for facts that apply to **every story** in the GLMZ universe.
-> Synced to `Universe.WorldFacts` (DB) via `ss --sync-markdown` and injected into every
+> Synced to `Universe.WorldFacts` (DB) via `prose --sync-markdown` and injected into every
 > generation prompt. Story-specific content belongs in `docs/nodes/<CODE>.md`, not here.
 >
 > Rule of thumb: if the fact would need to be true in all stories, it belongs here.

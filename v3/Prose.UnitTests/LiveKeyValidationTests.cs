@@ -11,7 +11,7 @@ namespace Prose.UnitTests;
 ///
 /// <para>The <c>LiveKeysTrusted</c>-tagged gate is wired into the Prose
 /// <c>pre-commit</c> hook (<c>.githooks/pre-commit</c>): no point committing when
-/// a panel key is dead — <c>ss --legion</c> and the continuity auto-resolver both
+/// a panel key is dead — <c>prose --legion</c> and the continuity auto-resolver both
 /// depend on it. Kept <c>[Explicit]</c> so normal <c>dotnet test</c> stays
 /// offline/deterministic.</para>
 /// <code>

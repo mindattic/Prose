@@ -127,15 +127,24 @@ public class FamilyGeneratorService
         rng ??= Random.Shared;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var subjectRec = await db.Records.AsNoTracking()
-            .Where(r => r.EntityId == subjectId)
-            .Select(r => new { r.Json, r.Entity!.Name })
-            .FirstOrDefaultAsync(ct);
-        if (subjectRec == null)
+        // Records (the legacy per-entity JSON blob) is fully retired DB-wide —
+        // load the subject from the relational Character/GeneticAncestry tables
+        // instead, the same store CharacterMapper.Materialize reads from.
+        var subjectChar = await db.Characters.AsNoTracking()
+            .Include(c => c.Entity)
+            .Include(c => c.GeneticAncestry)
+            .FirstOrDefaultAsync(c => c.Id == subjectId, ct);
+        if (subjectChar == null)
             throw new InvalidOperationException($"Subject {subjectId} not found.");
 
-        var subject = JsonSerializer.Deserialize<CharacterData>(subjectRec.Json, JsonOpts)
-            ?? throw new InvalidOperationException($"Could not deserialize CharacterData for {subjectId}.");
+        var subject = new CharacterData
+        {
+            Name   = subjectChar.Entity?.Name ?? subjectChar.Name ?? "",
+            Age    = subjectChar.Age,
+            PhysicalDescription = new PhysicalDescription { Heritage = subjectChar.Heritage },
+            GeneticAncestry = subjectChar.GeneticAncestry
+                .ToDictionary(x => x.Region, x => x.Percent, StringComparer.OrdinalIgnoreCase),
+        };
 
         // Pull a name pool of OTHER characters that share an ancestry component.
         var subjectAncestries = subject.GeneticAncestry.Keys
@@ -642,6 +651,11 @@ public class FamilyGeneratorService
             Age        = p.Age,
             Heritage   = p.Heritage,
         });
+        foreach (var kv in p.GeneticAncestry)
+            db.CharacterGeneticAncestries.Add(new Data.Entities.CharacterGeneticAncestry
+            {
+                CharacterId = p.Id, Region = kv.Key, Percent = kv.Value,
+            });
         await db.SaveChangesAsync(ct);
 
         // Slug is a denormalized column on Characters not exposed via the EF

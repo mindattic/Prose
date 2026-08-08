@@ -27,7 +27,7 @@ namespace Prose.Core.Services;
 // and consequence (Beat 9). "A Practical Grammar" earns ORPHANED if it sits on
 // the shelf and is never touched or referenced again.
 //
-// Run: ss --chekhov-audit --slug <slug>
+// Run: prose --chekhov-audit --slug <slug>
 // MCP: chekhov_audit
 // ─────────────────────────────────────────────────────────────────────────────
 

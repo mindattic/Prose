@@ -125,7 +125,7 @@ public class UserContextService(
         }
     }
 
-    /// <summary>Returns the full status report for display via <c>ss --context status</c>.</summary>
+    /// <summary>Returns the full status report for display via <c>prose --context status</c>.</summary>
     public async Task<ContextStatusReport> GetStatusAsync(string? sessionKey = null, CancellationToken ct = default)
     {
         var key = ResolveKey(sessionKey);

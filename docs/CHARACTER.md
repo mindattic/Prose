@@ -9,7 +9,7 @@ triggers: character, cast, protagonist, antagonist, relationship, interpersonal,
 updated: 2026-08-07
 ---
 
-<!-- GENERATED — do not hand-edit. Regenerate with: ss --generate-canon-md --type CharacterDoctrine -->
+<!-- GENERATED — do not hand-edit. Regenerate with: prose --generate-canon-md --type CharacterDoctrine -->
 
 ## The Character Doctrine {#SS-CHAR}
 

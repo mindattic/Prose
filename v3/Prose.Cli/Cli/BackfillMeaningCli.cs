@@ -4,7 +4,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// ss --backfill-meaning --slug &lt;slug&gt; [--limit N] [--dry-run]
+/// prose --backfill-meaning --slug &lt;slug&gt; [--limit N] [--dry-run]
 ///
 /// Fills the MEANING coordinate (Beat.Description) for beats that have prose but no
 /// recorded meaning — the gap the coordination pass surfaces. Sonnet, batched.
@@ -29,7 +29,7 @@ public static class BackfillMeaningCli
         }
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: ss --backfill-meaning --slug <slug> [--limit N] [--dry-run] [--overwrite] [--beats 4308,4309,...]");
+            Console.Error.WriteLine("Usage: prose --backfill-meaning --slug <slug> [--limit N] [--dry-run] [--overwrite] [--beats 4308,4309,...]");
             return 2;
         }
 

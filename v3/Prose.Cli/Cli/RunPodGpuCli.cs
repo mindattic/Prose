@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --runpod &lt;status|stop|start|terminate&gt; [--pod &lt;id&gt;]</c> — manage the rented RunPod
+/// <c>prose --runpod &lt;status|stop|start|terminate&gt; [--pod &lt;id&gt;]</c> — manage the rented RunPod
 /// review pod via the RunPod REST API (v1, <c>https://rest.runpod.io/v1</c>). The API key is
 /// resolved from the shared MindAttic credential vault (provider id <c>runpod</c>); no secret on
 /// the command line.

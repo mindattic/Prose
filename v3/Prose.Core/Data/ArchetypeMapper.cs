@@ -259,7 +259,7 @@ public static class ArchetypeMapper
     /// EntityTags. Returns the number of archetypes written.
     ///
     /// ADDITIVE — Records.Json is never modified or deleted.
-    /// Run once via <c>ss --rebuild-archetype-relational</c>.
+    /// Run once via <c>prose --rebuild-archetype-relational</c>.
     /// </summary>
     public static async Task<int> RebuildAllAsync(ProseDbContext db, CancellationToken ct = default)
     {

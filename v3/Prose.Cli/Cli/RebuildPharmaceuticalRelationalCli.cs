@@ -5,7 +5,7 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss --rebuild-pharmaceutical-relational</c> — backfill the Pharmaceuticals relational
+/// <c>prose --rebuild-pharmaceutical-relational</c> — backfill the Pharmaceuticals relational
 /// schema from Records.Json blobs. For every pharmaceutical entity (active or inactive),
 /// deserializes the blob → PharmaceuticalData → persists columns + all 4 bridge tables
 /// (Aliases / Effects / SideEffects / StoryHooks) + syncs EntityTags.

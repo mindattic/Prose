@@ -12,8 +12,8 @@ namespace Prose.Cli;
 /// and an ammo / grenade / bio-battery ledger the writer must respect), print the
 /// action prose, and optionally write it to a file.
 ///
-///   ss --combat --file scene.json [--out prose.txt]
-///   ss --combat --location "Hegewisch" --objective "survive the kill team" --exchanges 6 --tone Cinematic
+///   prose --combat --file scene.json [--out prose.txt]
+///   prose --combat --location "Hegewisch" --objective "survive the kill team" --exchanges 6 --tone Cinematic
 ///
 /// The --file JSON is a <see cref="CombatSceneRequest"/>: BattlefieldLocation,
 /// Environment, Sides[] (Label, Combatants[], UnnamedCombatants[], InitialPosition,
@@ -64,8 +64,8 @@ public static class CombatCli
             var location = ArgValue(args, "--location");
             if (string.IsNullOrWhiteSpace(location))
             {
-                Console.Error.WriteLine("usage: ss --combat --file scene.json [--out prose.txt]");
-                Console.Error.WriteLine("   or: ss --combat --location \"<place>\" [--objective \"...\"] [--exchanges N]");
+                Console.Error.WriteLine("usage: prose --combat --file scene.json [--out prose.txt]");
+                Console.Error.WriteLine("   or: prose --combat --location \"<place>\" [--objective \"...\"] [--exchanges N]");
                 Console.Error.WriteLine("           [--tone Brutal|Cinematic|Desperate|Clinical|Chaotic] [--environment \"...\"] [--opening \"...\"]");
                 return 1;
             }
