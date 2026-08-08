@@ -1,0 +1,287 @@
+{
+  "nodeCode": "M101",
+  "slug": "m-101-019f69f4",
+  "title": "M-101",
+  "generatedAtUtc": "2026-08-08 19:26:00Z",
+  "totalBeats": 16,
+  "covered": 0,
+  "chapterGranular": false,
+  "bookScope": {
+    "HasSubplot": false,
+    "Granularity": "beat",
+    "HasBlueprint": false
+  },
+  "flagCounts": {
+    "UNSCORED": 16,
+    "NO_CONSTRUCTION": 16,
+    "MISSING_MEANING": 3
+  },
+  "beats": [
+    {
+      "BeatId": "019f69f5-0371-75db-b990-786e8dec2d66",
+      "Number": 5381,
+      "Chapter": "Chapter 1 -- Carter Coun",
+      "ChapterIndex": 0,
+      "StructureRole": "opening-image",
+      "Act": 1,
+      "Meaning": "Declan Doyle in Carter County, Tennessee, 1919 -- coal miner\u0027s son three months from a Forest Service posting before the draft notice came. Establish him as a specific, grounded human being -- his hands, his body, the particular weight of this world -- before it is taken from him. The reader must care about this man.",
+      "Subtext": "This is the last ordinary moment. Everything after is comparison to this.",
+      "BeatTags": [],
+      "ProseLength": 2411,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-39a0-73cb-a0d0-47e32f9f73bb",
+      "Number": 5387,
+      "Chapter": "Chapter 1 -- Carter Coun",
+      "ChapterIndex": 0,
+      "StructureRole": "inciting-incident",
+      "Act": 1,
+      "Meaning": "His consciousness is ripped from his body by Verlaine\u0027s apparatus. The warm golden Amnios \u2014 the medium between Spheres. The sensation of being plucked out like a fish on a line. Then nothing. Then wrong.",
+      "Subtext": "No warning. No transition. His world simply ends and is replaced. His body in Aldenvast drops without apparent cause.",
+      "BeatTags": [],
+      "ProseLength": 2678,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-0556-7747-b0a3-6ffd15c33f3c",
+      "Number": 5382,
+      "Chapter": "Chapter 2 \u2014 Intake",
+      "ChapterIndex": 1,
+      "StructureRole": "new-world",
+      "Act": 1,
+      "Meaning": "Shell activation in the Verlaine intake chamber. The translation faculty engages \u2014 he understands everything immediately. Wrong weight, wrong temperature, wrong proprioception. He is processed, numbered, catalogued. He is now mat\u00E9riel.",
+      "Subtext": "He gives his name as M-101 \u2014 the soldier\u0027s name, by choice. Aldenvast he does not say. He will not say it for a long time.",
+      "BeatTags": [],
+      "ProseLength": 5807,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-3d30-7568-b576-845103af192e",
+      "Number": 5388,
+      "Chapter": "Chapter 2 \u2014 Intake",
+      "ChapterIndex": 1,
+      "StructureRole": "rising-action",
+      "Act": 2,
+      "Meaning": "The Verlaine-Atrament front line. Learning to move this body, learning to fight as something that does not bleed. The gap between instruction and experience. He survives his first engagement because the shell does not panic.",
+      "Subtext": "He is effective. This is the problem. Verlaine gets exactly what it wanted \u2014 a weapon that functions without fear.",
+      "BeatTags": [],
+      "ProseLength": 5939,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-605b-7691-bd2e-717dd81abf2f",
+      "Number": 5391,
+      "Chapter": "Chapter 2 \u2014 Intake",
+      "ChapterIndex": 1,
+      "StructureRole": "rising-action",
+      "Act": 2,
+      "Meaning": "The accidental wireless jump \u2014 he is suddenly in a larger machine somewhere else, inhabiting it, then jerked back into his own shell. He did not know he could do this. Verlaine\u0027s handlers log the capability immediately. He becomes an asset, not just a body count.",
+      "Subtext": "The ability to jump is not freedom \u2014 it makes him more valuable to Verlaine, not less controlled. He understands this immediately.",
+      "BeatTags": [],
+      "ProseLength": 2945,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-0747-70c3-847b-2a7426cc184f",
+      "Number": 5383,
+      "Chapter": "Chapter 3 \u2014 The Front",
+      "ChapterIndex": 2,
+      "StructureRole": "rising-action",
+      "Act": 2,
+      "Meaning": "He encounters another Myrmidon \u2014 another stolen mind in another tin shell. The specific horror and comfort of recognition. Two men from worlds neither of them can name to the other, standing in a field that belongs to neither of them. Something to care about is seeded here.",
+      "Subtext": "This person will be lost. The reader should feel it before it happens.",
+      "BeatTags": [],
+      "ProseLength": 3864,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-3fa0-75c3-bd3f-2d1eb09dfa6a",
+      "Number": 5389,
+      "Chapter": "Chapter 3 \u2014 The Front",
+      "ChapterIndex": 2,
+      "StructureRole": "rising-action",
+      "Act": 2,
+      "Meaning": "The nature of Verlaine\u0027s war on the Atrament front clarifies. Not defense. Not justice. Something colder \u2014 Myrmidons used as disposable strike assets in engagements Verlaine\u0027s own soldiers are kept back from. He cannot name what he feels, but it accumulates in him like sediment.",
+      "Subtext": "The other Myrmidon is also seeing this. They do not discuss it. They do not have to.",
+      "BeatTags": [],
+      "ProseLength": 3815,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd4ab-529e-7261-8f6d-f46e87ca61ab",
+      "Number": 16955,
+      "Chapter": "Chapter 3 \u2014 The Front",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3045,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd4ab-9259-707d-afb9-279c66ff7289",
+      "Number": 16956,
+      "Chapter": "Chapter 3 \u2014 The Front",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3628,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-6282-760d-88a6-eb9a3358037d",
+      "Number": 5392,
+      "Chapter": "Chapter 3 \u2014 The Front",
+      "ChapterIndex": 2,
+      "StructureRole": "rising-action",
+      "Act": 2,
+      "Meaning": "He is ordered to do something wrong. He does it. He complies with precision. The cost of it is not visible in failure \u2014 it is visible in the exact, hollow efficiency of his execution. He is very good at this. That is the problem.",
+      "Subtext": "He is learning that compliance does not cost him nothing. It costs him something he cannot recover. The other Myrmidon watches. Neither speaks.",
+      "BeatTags": [],
+      "ProseLength": 4047,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fae52-3c0b-71ba-9396-07adf365d606",
+      "Number": 14538,
+      "Chapter": "Chapter 4 \u2014 Turret Thirt",
+      "ChapterIndex": 3,
+      "StructureRole": "crisis",
+      "Act": 3,
+      "Meaning": "An arc cannon erases two hundred yards of trench, men and Myrmidons alike, in a single silhouette of ash. In the hours after, his managed attention fails -- gaps in continuity, a relapse into believing the front is a coma-dream and Aldenvast the only real thing. He pulls himself back using the one anchor Verlaine\u0027s instruments cannot reach: the yggdra/fir smell bridge to home.",
+      "Subtext": "This is the brink he does not fully recover from cleanly -- he comes back functional, but he now knows exactly how much of himself is load-bearing, and how close the front came to costing him all of it before Turret Thirty-Four ever gives him a chance to refuse anything.",
+      "BeatTags": [],
+      "ProseLength": 5667,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-0b1e-73c4-89ba-582387d6a2c4",
+      "Number": 5384,
+      "Chapter": "Chapter 4 \u2014 Turret Thirt",
+      "ChapterIndex": 3,
+      "StructureRole": "climax",
+      "Act": 3,
+      "Meaning": "The order to fire. The thing he cannot fire at. In the microsecond between command received and execution, he chooses. He jumps \u2014 out of Turret #34, back into his own shell, somewhere else on the line. The turret fires nothing. The silence after is enormous. The machine and the man divide here.",
+      "Subtext": "This is the moment Lyra\u0027s reports will eventually reference. This is also the moment the other Myrmidon is lost \u2014 either in the engagement, or in the aftermath.",
+      "BeatTags": [],
+      "ProseLength": 4355,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-0d06-7785-9157-f9560154c1f7",
+      "Number": 5385,
+      "Chapter": "Chapter 5 \u2014 After",
+      "ChapterIndex": 4,
+      "StructureRole": "falling-action",
+      "Act": 4,
+      "Meaning": "Verlaine\u0027s response to the refusal. What they do with non-compliant mat\u00E9riel \u2014 not destruction, adjustment. He is returned to the line. He obeys. He is precise and empty and functional. Something has been taken from him a second time, and this one he let them take.",
+      "Subtext": "He is compliant. He is compliant. He is very compliant. The reader should feel what that costs.",
+      "BeatTags": [],
+      "ProseLength": 5032,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-42ec-7e08-8866-7296ef89023f",
+      "Number": 5390,
+      "Chapter": "Chapter 5 \u2014 After",
+      "ChapterIndex": 4,
+      "StructureRole": "crisis",
+      "Act": 4,
+      "Meaning": "The specific final incident that makes desertion the only remaining act. Not defiance \u2014 exhaustion of all other options. Something is asked of him that he cannot perform and cannot refuse and cannot survive performing. The logic closes around him like a room with no doors.",
+      "Subtext": "He is not brave when he leaves. He is simply out of ways to stay.",
+      "BeatTags": [],
+      "ProseLength": 3675,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f69f5-0e18-7171-b60e-25b571b9c3ed",
+      "Number": 5386,
+      "Chapter": "Chapter 6 \u2014 Walking Away",
+      "ChapterIndex": 5,
+      "StructureRole": "resolution",
+      "Act": 5,
+      "Meaning": "He walks off the front line. No destination named. The fog of the Verlaine interior. The small automaton shell on an empty road, going. He does not look back. Not because he is resolute -- because there is nothing behind him that he wants to carry forward. The hollow is still the thing he has not said.",
+      "Subtext": "He will eventually reach Verlaine territory where Lyra finds him. But that is another story. This one ends with the road.",
+      "BeatTags": [],
+      "ProseLength": 3602,
+      "Flags": [
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "adec40d2-cb6b-45fa-b3d9-ba10ae812b27",
+      "Number": 12749,
+      "Chapter": "Chapter 7 - What Remaine",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5192,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    }
+  ]
+}
