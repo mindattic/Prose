@@ -78,6 +78,7 @@ public class DataConsistencyService
         await SafeRun(findings, "CHAR-AFFIL-ALIAS-DRIFT",   () => CharacterAffiliationAliasDriftAsync(db, ct));
         await SafeRun(findings, "CHAR-HOMETURF-ALIAS-DRIFT",() => CharacterHomeTurfAliasDriftAsync(db, ct));
         await SafeRun(findings, "BRIDGE-ALIAS-DRIFT",       () => BridgeAliasDriftAsync(db, ct));
+        await SafeRun(findings, "BEAT-ORDER-ANOMALY",       () => OpeningBeatOrderAnomaliesAsync(db, ct));
 
         return new ConsistencyReport(
             RanAtUtc: DateTime.UtcNow,
@@ -397,6 +398,94 @@ public class DataConsistencyService
             Severity: count == 0 ? "info" : "warn",
             FixHint: count > 0
                 ? "Sort each group by AtStoryTime DESC; close all but the newest by setting InWorldValidTo to the next row's InWorldValidFrom."
+                : null);
+    }
+
+    /// <summary>
+    /// Candidate-generator, NOT a confirmed defect list: flags chapters whose first beat (in
+    /// current SortKey reading order) has a Beat.Number wildly different from the next few
+    /// beats' average — a proxy for "this beat was likely created/inserted at a very different
+    /// time than its neighbors, and may have landed at the wrong position." Found 2026-08-09
+    /// investigating a real reported defect: BCODA Chapter 1 opened with a beat (Number ~5200s)
+    /// sorted ahead of the chapter's actual intended opening line (Numbers in the ~500s range,
+    /// tightly clustered with the rest of the chapter) — confirmed by reading the actual prose,
+    /// which showed the "outlier" beat was a mid-scene fragment that belonged several beats later.
+    ///
+    /// IMPORTANT — this numeric signal alone is NOT reliable: a corpus-wide run also flagged
+    /// ~20 chapters of a Gospel-harmony analysis book with the identical numeric shape (large
+    /// gap, tightly-clustered reference group), and reading those confirmed the content was
+    /// completely coherent — the gap there just reflects when each beat was created/revised, not
+    /// where it belongs. Distinguishing a real ordering bug from this false-positive class
+    /// requires reading the actual prose (or an LLM content check), which this deterministic
+    /// scan does not do. Treat every hit here as "worth a human/LLM read," never as
+    /// auto-actionable — this is why the severity floor is "warn," not "error," regardless of
+    /// gap size.
+    /// </summary>
+    private async Task<Finding> OpeningBeatOrderAnomaliesAsync(ProseDbContext db, CancellationToken ct)
+    {
+        const int GapThreshold = 500;
+
+        var countRows = await db.Database.SqlQueryRaw<long>($"""
+            ;WITH ordered AS (
+                SELECT bn.NodeId, b.Number,
+                       ROW_NUMBER() OVER (PARTITION BY bn.NodeId ORDER BY bn.SortKey) AS Pos,
+                       COUNT(*) OVER (PARTITION BY bn.NodeId) AS TotalBeats
+                FROM BeatNodes bn JOIN Beats b ON bn.BeatId = b.Id
+                WHERE bn.IsEnabled = 1
+            ),
+            neighbors AS (
+                SELECT o.NodeId, o.Number AS FirstNum,
+                       (SELECT AVG(CAST(o3.Number AS FLOAT)) FROM ordered o3
+                        WHERE o3.NodeId = o.NodeId AND o3.Pos BETWEEN 2 AND 6) AS Avg2to6
+                FROM ordered o WHERE o.Pos = 1 AND o.TotalBeats >= 6
+            )
+            SELECT COUNT_BIG(*) AS Value FROM neighbors
+            WHERE ABS(FirstNum - Avg2to6) > {GapThreshold}
+            """).ToListAsync(ct);
+        long count = countRows.FirstOrDefault();
+
+        var rows = await db.Database.SqlQueryRaw<BeatOrderAnomalySample>($"""
+            ;WITH ordered AS (
+                SELECT bn.NodeId, b.Number,
+                       ROW_NUMBER() OVER (PARTITION BY bn.NodeId ORDER BY bn.SortKey) AS Pos,
+                       COUNT(*) OVER (PARTITION BY bn.NodeId) AS TotalBeats
+                FROM BeatNodes bn JOIN Beats b ON bn.BeatId = b.Id
+                WHERE bn.IsEnabled = 1
+            ),
+            neighbors AS (
+                SELECT o.NodeId, o.Number AS FirstNum,
+                       (SELECT AVG(CAST(o3.Number AS FLOAT)) FROM ordered o3
+                        WHERE o3.NodeId = o.NodeId AND o3.Pos BETWEEN 2 AND 6) AS Avg2to6
+                FROM ordered o WHERE o.Pos = 1 AND o.TotalBeats >= 6
+            )
+            SELECT TOP (5) n.Slug AS Slug, n.Title AS Title,
+                   nb.FirstNum AS FirstNum, nb.Avg2to6 AS Avg2to6
+            FROM neighbors nb JOIN Nodes n ON n.Id = nb.NodeId
+            WHERE ABS(nb.FirstNum - nb.Avg2to6) > {GapThreshold}
+            ORDER BY ABS(nb.FirstNum - nb.Avg2to6) DESC
+            """).ToListAsync(ct);
+
+        var samples = rows.Select(r => new SampleRow(
+                Label: $"{r.Slug} \"{r.Title}\"",
+                Detail: $"opening beat #{r.FirstNum}, next-5 average #{r.Avg2to6:F0} (gap {Math.Abs(r.FirstNum - r.Avg2to6):F0}) — READ BEFORE ACTING, see check description"))
+            .ToList();
+
+        return new Finding(
+            Code: "BEAT-ORDER-ANOMALY",
+            Title: "Chapters whose opening beat may be mis-sequenced (candidates — verify by reading)",
+            Description: "The first beat (current reading order) has a Beat.Number far from the " +
+                         "next few beats' average — a proxy for 'created at a very different time, " +
+                         "possibly inserted at the wrong position.' NOT auto-actionable: this exact " +
+                         "signal also fires on chapters with perfectly coherent content (see remarks " +
+                         "on this method). Read the flagged chapter's first several beats before " +
+                         "touching anything.",
+            DriftCount: count,
+            Samples: samples,
+            Severity: "warn",
+            FixHint: count > 0
+                ? "Read the chapter's opening beats. If genuinely mis-sequenced, use `prose --move-beat` " +
+                  "to re-slot it, or `prose --set-beat-enabled` to pull it from this chapter if no " +
+                  "correct position can be found. Never auto-apply based on this signal alone."
                 : null);
     }
 
@@ -751,6 +840,14 @@ public class DataConsistencyService
         public string EntityId { get; set; } = "";
         public string AspectKey { get; set; } = "";
         public int OpenCount { get; set; }
+    }
+
+    private sealed class BeatOrderAnomalySample
+    {
+        public string Slug { get; set; } = "";
+        public string Title { get; set; } = "";
+        public int FirstNum { get; set; }
+        public double Avg2to6 { get; set; }
     }
 
     private sealed class WrongTypeSample
