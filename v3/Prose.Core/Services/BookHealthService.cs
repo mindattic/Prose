@@ -103,6 +103,7 @@ public class BookHealthService(
 
         // ── FREE tier — deterministic / near-zero API cost ──────────────────────────
         await RunCheckAsync(checks, "plant-audit", () => PlantAuditAsync(nodeId, slug, ct));
+        await RunCheckAsync(checks, "plant-density", () => PlantDensityAsync(nodeId, slug, ct));
         await RunCheckAsync(checks, "prose-check", () => ProseCheckAsync(db, nodeId, slug, ct));
         await RunCheckAsync(checks, "validate-nouns", async () => { await nounConsistency.ValidateAsync(nodeId, ct); });
         await RunCheckAsync(checks, "timeline-check", () => TimelineCheckAsync(nodeId, slug, ct));
@@ -198,6 +199,70 @@ public class BookHealthService(
             findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
                 $"PLANT-AUDIT [opaque] {p.Category}: payoff (\"{p.PayoffDescription}\") isn't marked transparent.",
                 snippet: null, suggestedFix: p.TransparencyNote);
+    }
+
+    /// <summary>PlantPayoffService/ChekhovAuditService track plant↔payoff PAIRING (does every
+    /// plant get paid off) but nothing measures DISTRIBUTION — a real, separate craft smell named
+    /// explicitly by the 2026-08-09 craft-services audit as having zero code representation.
+    /// Fully deterministic, zero LLM calls: (1) front-loading — most plants seeded in the book's
+    /// first quarter, starving the rest of the book of anything new to promise; (2) drought — a
+    /// long stretch with no new plant introduced at all. Needs ≥3 plants and ≥20 beats to mean
+    /// anything; below that, any distribution is just small-sample noise, not a real pattern.</summary>
+    private async Task PlantDensityAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var totalBeats = await db.BeatNodes.AsNoTracking().CountAsync(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled, ct);
+        if (totalBeats < 20) return;
+
+        var audit = await plantPayoff.AuditAsync(nodeId, ct);
+        var plantBeatIds = audit.AllPairs.Where(p => p.PlantBeatId != null).Select(p => p.PlantBeatId!.Value).Distinct().ToList();
+        if (plantBeatIds.Count < 3) return;
+
+        var plantNumbers = await db.Beats.AsNoTracking()
+            .Where(b => plantBeatIds.Contains(b.Id))
+            .Select(b => b.Number)
+            .OrderBy(n => n)
+            .ToListAsync(ct);
+
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "PLANT-DENSITY ");
+
+        var metrics = ComputePlantDensity(plantNumbers, totalBeats);
+
+        if (metrics.FrontLoaded)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.OutlineDrift, FindingSeverity.Low,
+                $"PLANT-DENSITY [front-loaded]: {metrics.FrontLoadedCount}/{plantNumbers.Count} plants ({metrics.FrontLoadRate:P0}) are introduced in the book's first quarter, leaving the rest of the book seeding little that's new.",
+                snippet: null, suggestedFix: "Introduce at least a few new plants later in the book, not only in the opening.");
+
+        if (metrics.HasDrought)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.OutlineDrift, FindingSeverity.Low,
+                $"PLANT-DENSITY [drought]: a {metrics.MaxGap}-beat stretch ({metrics.MaxGapRate:P0} of the book) introduces no new plant at all.",
+                snippet: null, suggestedFix: "Seed at least one new plant/detail somewhere in that stretch.");
+    }
+
+    internal readonly record struct PlantDensityMetrics(
+        int FrontLoadedCount, double FrontLoadRate, bool FrontLoaded,
+        int MaxGap, double MaxGapRate, bool HasDrought);
+
+    /// <summary>Pure, DB-free so it's directly unit-testable. Thresholds (75% front-loaded,
+    /// a dormant stretch ≥50% of the book) are craft judgment calls, not derived constants —
+    /// tuned to flag only clearly lopsided distributions, not any book that happens to seed
+    /// its plants unevenly (nearly every book does, by nature of act structure).</summary>
+    internal static PlantDensityMetrics ComputePlantDensity(IReadOnlyList<int> sortedPlantBeatNumbers, int totalBeats)
+    {
+        var frontQuarter = totalBeats / 4;
+        var frontLoadedCount = sortedPlantBeatNumbers.Count(n => n <= frontQuarter);
+        var frontLoadRate = frontLoadedCount / (double)sortedPlantBeatNumbers.Count;
+
+        var maxGap = 0;
+        for (int i = 1; i < sortedPlantBeatNumbers.Count; i++)
+            maxGap = Math.Max(maxGap, sortedPlantBeatNumbers[i] - sortedPlantBeatNumbers[i - 1]);
+        var maxGapRate = maxGap / (double)totalBeats;
+
+        return new PlantDensityMetrics(
+            frontLoadedCount, frontLoadRate, frontLoadRate >= 0.75,
+            maxGap, maxGapRate, maxGapRate >= 0.5);
     }
 
     /// <summary>TimelineConsistencyService returns findings but never files them — wrap here.</summary>
