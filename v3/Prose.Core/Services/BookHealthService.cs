@@ -539,16 +539,48 @@ public class BookHealthService(
             .Select(b => new { b.Id, b.Number, b.Text })
             .ToDictionaryAsync(b => b.Id, ct);
 
-        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "BEHAVIOR ");
+        // EnforceAsync now throws on genuine evaluation failure (2026-08-09 fix — it used to
+        // swallow every failure into an empty violations list, indistinguishable from "checked,
+        // found nothing"). Evaluate everything FIRST, then only purge+refile BEHAVIOR findings
+        // for beats that had at least one successfully-evaluated pair this run — a beat whose
+        // only pair(s) failed keeps its prior findings untouched rather than losing them to a
+        // delete with nothing to replace it (same principle as the SwainAuditService fix: never
+        // purge-then-recreate across a failed evaluation). The "[incomplete]" rollup itself is
+        // node-scoped, not beat-scoped, so it needs its own narrow, unconditional clear — the
+        // per-beat deletes below never touch it (a beat-scoped prefix doesn't match the plainer
+        // node-scoped path this rollup files under), so without this line a stale "N could not be
+        // evaluated" finding would survive forever even after the API recovers and everything
+        // succeeds again.
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "BEHAVIOR [incomplete]");
+        var evaluated = new List<(Guid BeatId, int Number, Guid EntityId, List<BehaviorViolation> Violations)>();
+        var failedCount = 0;
         foreach (var p in pairs)
         {
             if (!beatTexts.TryGetValue(p.BeatId, out var beat) || string.IsNullOrWhiteSpace(beat.Text)) continue;
-            var violations = await behaviorEnforcer.EnforceAsync(beat.Text, p.EntityId, ct);
-            foreach (var v in violations)
-                findingsSvc.Upsert($"node:{slug}/beat:{p.BeatId:N}", chapterId: null, FindingCategory.BehaviorContradiction, FindingSeverity.Medium,
-                    $"BEHAVIOR beat #{beat.Number} {v.CharacterName} [{v.RuleBucket}]: {v.RuleText} — {v.Explanation}",
-                    snippet: null, suggestedFix: null);
+            try
+            {
+                var violations = await behaviorEnforcer.EnforceAsync(beat.Text, p.EntityId, ct);
+                evaluated.Add((p.BeatId, beat.Number, p.EntityId, violations));
+            }
+            catch (Exception ex)
+            {
+                failedCount++;
+                log.LogWarning(ex, "BehavioralInvariantEnforcer failed for beat {BeatId} char {EntityId}", p.BeatId, p.EntityId);
+            }
         }
+
+        foreach (var beatId in evaluated.Select(e => e.BeatId).Distinct())
+            findingsSvc.DeleteBySummaryPrefix($"node:{slug}/beat:{beatId:N}", "BEHAVIOR ");
+        foreach (var e in evaluated)
+            foreach (var v in e.Violations)
+                findingsSvc.Upsert($"node:{slug}/beat:{e.BeatId:N}", chapterId: null, FindingCategory.BehaviorContradiction, FindingSeverity.Medium,
+                    $"BEHAVIOR beat #{e.Number} {v.CharacterName} [{v.RuleBucket}]: {v.RuleText} — {v.Explanation}",
+                    snippet: null, suggestedFix: null);
+
+        if (failedCount > 0)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                $"BEHAVIOR [incomplete]: {failedCount}/{pairs.Count} character checks could not be evaluated (LLM errors) — re-run once resolved.",
+                snippet: null, suggestedFix: null);
     }
 
     /// <summary>ThemeCoherenceService.AnalyzeAsync (McKee/Truby controlling-idea framework) is a

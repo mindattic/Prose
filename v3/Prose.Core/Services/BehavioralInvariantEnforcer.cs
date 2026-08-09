@@ -45,7 +45,16 @@ public class BehavioralInvariantEnforcer
     /// <summary>
     /// Checks <paramref name="beatText"/> against the behavioral rules for
     /// <paramref name="characterId"/>. Returns violations found by the LLM.
-    /// Returns empty list when no behavioral rules are loaded for the character.
+    /// Returns empty list when no behavioral rules are loaded for the character (a real,
+    /// distinguishable "nothing to check" case, not an evaluation failure).
+    /// Throws if the LLM call itself fails or returns an unparseable response — deliberately,
+    /// so callers cannot mistake "could not evaluate" for "evaluated, no violations found."
+    /// 2026-08-09: previously swallowed every failure into an empty list, which
+    /// BookHealthService.BehaviorCheckAsync's purge-then-refile cycle could not distinguish
+    /// from a real clean pass — an LLM outage silently deleted real prior BEHAVIOR findings and
+    /// never re-added them (the same fail-open bug class fixed 6 other times this session).
+    /// Callers that need best-effort semantics (e.g. PostBeatValidationService's fire-and-forget
+    /// beat-save hook) already wrap this call in their own try/catch.
     /// </summary>
     public async Task<List<BehaviorViolation>> EnforceAsync(
         string beatText,
@@ -84,58 +93,46 @@ public class BehavioralInvariantEnforcer
             {beatText}
             """;
 
-        List<BehaviorViolation> violations = [];
-        try
-        {
-            var raw = await llm.GenerateAsync(SystemPrompt, userPrompt, temperature: 0.0, maxTokens: 800, ct: ct);
-            violations = ParseViolations(raw, character.Name);
-        }
-        catch
-        {
-            // LLM unavailable or returned unparseable response — return empty rather than fail.
-        }
-
-        return violations;
+        var raw = await llm.GenerateAsync(SystemPrompt, userPrompt, temperature: 0.0, maxTokens: 800, ct: ct);
+        return ParseViolations(raw, character.Name);
     }
 
+    /// <summary>Throws (InvalidOperationException / JsonException) on an empty response, a
+    /// response with no JSON array at all, or malformed JSON — these are evaluation failures,
+    /// not "the model found zero violations," and must not be silently swallowed into an empty
+    /// list (see EnforceAsync's remarks: this was previously a second, deeper instance of the
+    /// same fail-open bug that method itself had).</summary>
     private static List<BehaviorViolation> ParseViolations(string raw, string characterName)
     {
-        if (string.IsNullOrWhiteSpace(raw)) return [];
+        if (string.IsNullOrWhiteSpace(raw))
+            throw new InvalidOperationException("Empty LLM response.");
+
+        var trimmed = raw.Trim();
+        var start = trimmed.IndexOf('[');
+        var end = trimmed.LastIndexOf(']');
+        if (start < 0 || end <= start)
+            throw new InvalidOperationException($"No JSON array in response: {trimmed[..Math.Min(80, trimmed.Length)]}");
+
+        var json = trimmed[start..(end + 1)];
+        using var doc = System.Text.Json.JsonDocument.Parse(json); // throws JsonException on malformed input — let it propagate
 
         var result = new List<BehaviorViolation>();
-        try
+        foreach (var item in doc.RootElement.EnumerateArray())
         {
-            var trimmed = raw.Trim();
-            // Find the JSON array bounds
-            var start = trimmed.IndexOf('[');
-            var end = trimmed.LastIndexOf(']');
-            if (start < 0 || end <= start) return [];
+            var bucket = item.TryGetProperty("bucket", out var b) ? b.GetString() ?? "" : "";
+            var rule = item.TryGetProperty("rule", out var r) ? r.GetString() ?? "" : "";
+            var explanation = item.TryGetProperty("explanation", out var e) ? e.GetString() ?? "" : "";
 
-            var json = trimmed[start..(end + 1)];
-            using var doc = System.Text.Json.JsonDocument.Parse(json);
+            if (string.IsNullOrWhiteSpace(rule) && string.IsNullOrWhiteSpace(explanation)) continue;
 
-            foreach (var item in doc.RootElement.EnumerateArray())
+            result.Add(new BehaviorViolation
             {
-                var bucket = item.TryGetProperty("bucket", out var b) ? b.GetString() ?? "" : "";
-                var rule = item.TryGetProperty("rule", out var r) ? r.GetString() ?? "" : "";
-                var explanation = item.TryGetProperty("explanation", out var e) ? e.GetString() ?? "" : "";
-
-                if (string.IsNullOrWhiteSpace(rule) && string.IsNullOrWhiteSpace(explanation)) continue;
-
-                result.Add(new BehaviorViolation
-                {
-                    CharacterName = characterName,
-                    RuleBucket = bucket,
-                    RuleText = rule,
-                    Explanation = explanation,
-                });
-            }
+                CharacterName = characterName,
+                RuleBucket = bucket,
+                RuleText = rule,
+                Explanation = explanation,
+            });
         }
-        catch
-        {
-            // Malformed JSON from LLM — best effort, return whatever was parsed
-        }
-
         return result;
     }
 }
