@@ -504,8 +504,21 @@ public class BookHealthService(
             "SELECT DISTINCT EntityId, EntityName FROM BeatEntityPresence " +
             $"WHERE PresenceType = 'pov' AND BeatId IN ({placeholders})",
             beatParams).ToListAsync(ct);
-        if (povRows.Count == 0) return;
-
+        // 2026-08-09 fix: silently returning here (found live — 26/30 top-level books have ZERO
+        // PresenceType='pov' rows at all) made this check look like it ran and found nothing
+        // clean, when really it never evaluated a single character — the exact fail-open shape
+        // this session fixed repeatedly elsewhere. File the gap as a finding instead of vanishing.
+        if (povRows.Count == 0)
+        {
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.Low,
+                "SACRED-FLAW [no-pov-data]: no BeatEntityPresence PresenceType='pov' rows found for this book — " +
+                "the sacred-flaw check has never evaluated any character here, not because none needed it.",
+                snippet: null,
+                suggestedFix: "Tag each beat's narrating character via BeatEntityPresence (PresenceType='pov') — DCM's per-beat voice register also depends on this same data.");
+            return;
+        }
+        // "SACRED-FLAW " also matches (and clears) a stale "SACRED-FLAW [no-pov-data]" rollup
+        // from a prior run, since that summary starts with this same prefix.
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SACRED-FLAW ");
         foreach (var pov in povRows.DistinctBy(p => p.EntityId))
         {
@@ -679,7 +692,21 @@ public class BookHealthService(
             "SELECT BeatId, EntityId, EntityName FROM BeatEntityPresence " +
             $"WHERE PresenceType = 'pov' AND BeatId IN ({placeholders})",
             beatParams).ToListAsync(ct);
-        if (povRows.Count == 0) return;
+        // 2026-08-09 fix: distinguish "no POV data recorded at all" (a data gap — flag it) from
+        // the doc comment's INTENTIONAL "single-narrator book, nothing to drift against" skip
+        // (checked further below once we know the actual distinct-POV-character count). Found
+        // live: 26/30 top-level books have zero PresenceType='pov' rows, so this was silently
+        // no-op'ing on data absence far more often than on the legitimate single-narrator case.
+        if (povRows.Count == 0)
+        {
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Voice, FindingSeverity.Low,
+                "VOICE-DRIFT [no-pov-data]: no BeatEntityPresence PresenceType='pov' rows found for this book — " +
+                "voice-drift has never been checked here, not because there's only one narrator.",
+                snippet: null,
+                suggestedFix: "Tag each beat's narrating character via BeatEntityPresence (PresenceType='pov').");
+            return;
+        }
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "VOICE-DRIFT [no-pov-data]");
 
         var beatIdSet = beatIds.ToHashSet();
         var pairs = povRows.Where(p => beatIdSet.Contains(p.BeatId)).ToList();
