@@ -69,7 +69,7 @@ jobs:
         run: dotnet publish v3/Prose.Codex/Prose.Codex.csproj -c Release -o publish --no-restore
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: prose-app
           path: publish/
