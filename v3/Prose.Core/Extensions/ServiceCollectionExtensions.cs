@@ -1024,6 +1024,13 @@ public static class ServiceCollectionExtensions
         // Available via `prose --narrative-science` and the Tools.NarrativeScience MCP tools.
         services.AddSingleton<NarrativeScienceService>();
 
+        // Controlling-idea / theme coherence (McKee/Truby): infers the book's testable
+        // thematic claim from Seed+Bible+bookend beats, flags theme told as commentary
+        // instead of dramatized, flags an ending that never engages the opening's
+        // value-question. Wired into BookHealthService's DEEP tier — no standalone CLI,
+        // same as its FiveAct/DramaticQuestion siblings.
+        services.AddSingleton<ThemeCoherenceService>();
+
         // Plant/Payoff registry — tracks seeded narrative details and their payoffs.
         // Enforces "reward re-reading without requiring it."
         // Available via `prose --plant-audit`, `prose --list-plants`, `prose --add-plant`

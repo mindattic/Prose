@@ -70,6 +70,7 @@ public class BookHealthService(
     SwainAuditService swainAudit,
     ChekhovAuditService chekhovAudit,
     NarrativeScienceService narrativeScience,
+    ThemeCoherenceService themeCoherence,
     BehavioralInvariantEnforcer behaviorEnforcer,
     ILogger<BookHealthService> log)
 {
@@ -128,6 +129,7 @@ public class BookHealthService(
             await RunCheckAsync(checks, "altitude-audit", async () => { await altitudeAudit.AuditAsync(nodeId, forceSynopsis: false, ct); });
             await RunCheckAsync(checks, "reader-qa", async () => { await comprehensionProbe.RunAsync(nodeId, force: false, ct); });
             await RunCheckAsync(checks, "behavior-check", () => BehaviorCheckAsync(nodeId, slug, ct));
+            await RunCheckAsync(checks, "theme-coherence", () => ThemeCoherenceAsync(nodeId, slug, ct));
         }
 
         // ── FULL tier — heaviest multi-call audits, cost scales with book length ────
@@ -473,6 +475,41 @@ public class BookHealthService(
                     $"BEHAVIOR beat #{beat.Number} {v.CharacterName} [{v.RuleBucket}]: {v.RuleText} — {v.Explanation}",
                     snippet: null, suggestedFix: null);
         }
+    }
+
+    /// <summary>ThemeCoherenceService.AnalyzeAsync (McKee/Truby controlling-idea framework) is a
+    /// brand-new check — before this, "theme" only existed in the pipeline as StoryScienceService's
+    /// generation-time PROHIBITION ("don't impose theme early, let it emerge"), never as anything
+    /// audited after the fact. One LLM call per book (Seed + Bible + opening/closing beats only,
+    /// not a per-beat scan) — cheap enough for DEEP, not reserved for FULL. Two distinct failure
+    /// modes get two distinct findings: commentary is a craft violation (theme told, not shown —
+    /// High, matches CRAFT.md's existing show-don't-tell doctrine but had no automated check for
+    /// this specific manifestation of it); a low-confidence controlling idea or an ending that
+    /// never engages the opening's value-question is a structural softness, not a defect on its
+    /// own merits (Low) — many legitimately good books end ambiguously on purpose.</summary>
+    private async Task ThemeCoherenceAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        var result = await themeCoherence.AnalyzeAsync(nodeId, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "THEME ");
+        if (result.Error != null) return;
+
+        if (result.ThemeStatedAsCommentary)
+        {
+            var where = result.CommentaryBeatNumber.HasValue ? $" (beat #{result.CommentaryBeatNumber})" : "";
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.High,
+                $"THEME [told-not-shown]{where}: \"{result.CommentaryQuote}\" states the theme as commentary instead of dramatizing it.",
+                snippet: result.CommentaryQuote, suggestedFix: "Cut the stated moral; let the preceding action/consequence carry the meaning.");
+        }
+
+        if (string.Equals(result.Confidence, "low", StringComparison.OrdinalIgnoreCase))
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.Low,
+                $"THEME [unclear]: no coherent controlling idea identifiable from Seed/Bible/bookend beats — {result.Diagnosis}",
+                snippet: null, suggestedFix: "State the book's controlling idea in the NodeBible via set_book_bible so future beats have a claim to dramatize.");
+
+        if (!result.EndingEngagesOpening)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.Low,
+                $"THEME [ending-drift]: closing beats don't appear to engage the opening's value-question (\"{result.ControllingIdea}\") — {result.Diagnosis}",
+                snippet: null, suggestedFix: null);
     }
 
     private async Task<List<(Guid Id, int Number, string Text)>> GetEnabledBeatsAsync(
