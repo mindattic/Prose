@@ -1,7 +1,14 @@
 name: Build and deploy Prose to Azure App Service
 
-# Three-stage pipeline:
+# Four-stage pipeline:
 #   build   — restore + publish the Codex web host as a deployable artifact
+#   test    — run the full Prose.UnitTests suite; blocks migrate/deploy on any failure.
+#             The suite is CI-safe by design: DB-backed tests use an in-memory SQLite
+#             factory (TestDbFactory), not a real SQL Server — the handful that
+#             legitimately need a live LocalDB/Azure SQL connection (InterfaceRegistrationTests,
+#             WorldValidationTests) skip gracefully (Assert.Inconclusive/Assert.Ignore) when
+#             that connection isn't reachable, so this job never fails a build just because
+#             the CI runner has no LocalDB instance.
 #   migrate — apply schema + enable SYSTEM_VERSIONING against Azure SQL,
 #             authenticated via the GitHub OIDC service principal (db_ddladmin)
 #   deploy  — push the artifact to the mindattic-prose App Service slot
@@ -20,6 +27,10 @@ name: Build and deploy Prose to Azure App Service
 # AZURE_CLIENT_ID / AZURE_TENANT_ID / AZURE_SUBSCRIPTION_ID /
 # AZURE_SQL_CONNECTION and the db_ddladmin GRANT — see infra/README.md.
 # (Re-added 2026-06-04; closes the manual-apply gap left on 2026-05-23.)
+#
+# (test job added 2026-08-09: previously nothing in this pipeline ever ran
+# `dotnet test` — every push to master built, migrated, and deployed straight to
+# production with zero automated regression signal from the 1800+-test suite.)
 
 on:
   push:
@@ -63,9 +74,28 @@ jobs:
           name: prose-app
           path: publish/
 
+  test:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.x'
+
+      - name: Restore dependencies
+        run: dotnet restore v3/Prose.UnitTests/Prose.UnitTests.csproj
+
+      - name: Run unit tests
+        run: dotnet test v3/Prose.UnitTests/Prose.UnitTests.csproj --no-restore --configuration Release --logger "console;verbosity=normal"
+
   migrate:
     runs-on: windows-latest
-    needs: build
+    needs: [build, test]
 
     # OIDC: id-token lets azure/login@v2 mint a federated token for the
     # prose-github service principal (db_ddladmin on the SQL DB).
