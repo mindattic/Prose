@@ -177,8 +177,7 @@ public class BookHealthService(
     /// surfaced two false positives that needed a code fix to actually clear.</summary>
     private async Task ProseCheckAsync(ProseDbContext db, Guid nodeId, string slug, CancellationToken ct)
     {
-        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beats = await db.BeatNodes.AsNoTracking()
             .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
             .Select(bn => new { bn.BeatId, Text = bn.Beat!.Text }).ToListAsync(ct);
@@ -214,8 +213,7 @@ public class BookHealthService(
     private async Task PlantDensityAsync(Guid nodeId, string slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var totalBeats = await db.BeatNodes.AsNoTracking().CountAsync(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled, ct);
         if (totalBeats < 20) return;
 
@@ -495,8 +493,7 @@ public class BookHealthService(
     private async Task SacredFlawAsync(Guid nodeId, string slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatIds = await db.BeatNodes.AsNoTracking()
             .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
         if (beatIds.Count == 0) return;
@@ -539,8 +536,7 @@ public class BookHealthService(
     private async Task BehaviorCheckAsync(Guid nodeId, string slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatIds = await db.BeatNodes.AsNoTracking()
             .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
         if (beatIds.Count == 0) return;
@@ -666,8 +662,7 @@ public class BookHealthService(
     private async Task VoiceConsistencyAsync(Guid nodeId, string slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         // Keep each beat's chapter-node (bn.NodeId) — test passages are aggregated per chapter,
         // not per beat, so Jaccard has enough tokens on both sides to mean anything (see below).
         var beatChapters = await db.BeatNodes.AsNoTracking()
@@ -751,8 +746,7 @@ public class BookHealthService(
     private async Task<List<(Guid Id, int Number, string Text)>> GetEnabledBeatsAsync(
         ProseDbContext db, Guid nodeId, CancellationToken ct)
     {
-        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var rows = await db.BeatNodes.AsNoTracking()
             .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
             .OrderBy(bn => bn.SortKey)

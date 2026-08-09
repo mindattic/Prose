@@ -82,9 +82,7 @@ public class BeatDuplicateService(
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var slug = node.Slug ?? nodeId.ToString("N");
 
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var scopeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var scopeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var enabledBeatIds = await db.BeatNodes.AsNoTracking()
             .Where(bn => scopeIds.Contains(bn.NodeId) && bn.IsEnabled)

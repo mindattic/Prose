@@ -247,12 +247,19 @@ public class NodeDocService
     private static async Task<(string SpineText, int BeatCount)> BuildBeatSpineAsync(
         ProseDbContext db, Guid nodeId, CancellationToken ct)
     {
-        // Check for ChapterNode children (SS-A43 book-mode: beats live on chapter children)
-        var chapters = await db.Nodes
-            .Where(n => n.ParentNodeId == nodeId)
-            .OrderBy(n => n.SortKey)
-            .Select(n => new { n.Id, n.Title })
-            .ToListAsync(ct);
+        // Check for ChapterNode children (SS-A43 book-mode: beats live on chapter children).
+        // Recurses past any nested Collection (a mid-book chapter split into its own bounded
+        // sub-chapters) to the actual leaf chapters — a direct-children-only query here
+        // silently reported "0 beats" for a book with a split chapter (found 2026-08-09).
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var isFlatNode = leafIds.Count == 1 && leafIds[0] == nodeId;
+        var chapters = isFlatNode
+            ? []
+            : await db.Nodes.AsNoTracking()
+                .Where(n => leafIds.Contains(n.Id))
+                .OrderBy(n => n.SortKey)
+                .Select(n => new { n.Id, n.Title })
+                .ToListAsync(ct);
 
         var sb = new StringBuilder();
         int totalBeats = 0;

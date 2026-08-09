@@ -123,6 +123,52 @@ public class NodeWorkbenchService
             await WalkAsync(db, c, acc, visited, includeDisabled, ct);
     }
 
+    /// <summary>
+    /// Recursively resolve every LEAF descendant node id under <paramref name="rootId"/> —
+    /// the nodes that actually hold <c>BeatNodes</c> rows directly, at ANY depth. A "leaf" is
+    /// any node with no children; a node WITH children is never itself included (its beats,
+    /// if any, would have been moved off during a split — see SplitIntoCollectionAsync).
+    /// Returns just <c>[rootId]</c> for a flat node with no children.
+    ///
+    /// 2026-08-09: added after discovering the pervasive one-level idiom
+    /// <c>Nodes.Where(n => n.ParentNodeId == nodeId).Select(n => n.Id)</c> — copy-pasted
+    /// across dozens of services to gather "the beats under this book" — silently misses
+    /// everything once a book contains a nested Collection (a mid-book chapter split into its
+    /// own bounded sub-chapters, an existing, tested, documented pattern per
+    /// ARCHITECTURE.md §2c, first actually exercised live on 2026-08-09 splitting two
+    /// 150-300 beat mega-chapters). Any NEW code that needs "every beat under this node"
+    /// should call this instead of reinventing the one-level version.
+    ///
+    /// Deliberately does NOT apply <see cref="WalkAsync"/>'s Drafts-bucket exclusion
+    /// (skipping Kind=="book" children) — that exclusion is specific to assembling the
+    /// reader-facing manuscript order via <see cref="GetOrderedBeatsAsync"/>. Audit/analysis
+    /// code that wants "every beat under this node, unconditionally, including any Drafts
+    /// bucket" should use this method; code that wants the reader's actual assembled text
+    /// should keep using GetOrderedBeatsAsync.
+    /// </summary>
+    public static async Task<List<Guid>> GetLeafDescendantIdsAsync(
+        ProseDbContext db, Guid rootId, CancellationToken ct = default)
+    {
+        var leaves = new List<Guid>();
+        var visited = new HashSet<Guid>();
+        var frontier = new List<Guid> { rootId };
+        while (frontier.Count > 0)
+        {
+            var alive = frontier.Where(id => visited.Add(id)).ToList(); // cycle guard
+            if (alive.Count == 0) break;
+
+            var childRows = await db.Nodes.AsNoTracking()
+                .Where(n => n.ParentNodeId != null && alive.Contains(n.ParentNodeId.Value))
+                .Select(n => new { n.Id, ParentId = n.ParentNodeId!.Value })
+                .ToListAsync(ct);
+
+            var parentsWithChildren = childRows.Select(c => c.ParentId).ToHashSet();
+            leaves.AddRange(alive.Where(id => !parentsWithChildren.Contains(id)));
+            frontier = childRows.Select(c => c.Id).ToList();
+        }
+        return leaves;
+    }
+
     /// <summary>Cheap count without loading the beats — for tile/badge displays.
     /// Only counts enabled beats (soft-deleted excluded).</summary>
     public async Task<int> CountBeatsAsync(Guid nodeId, CancellationToken ct = default)
@@ -523,10 +569,14 @@ public class NodeWorkbenchService
     /// Convert a monolithic node into a Collection (ARCHITECTURE.md §2c): split
     /// its beats at <c>IsChapterStart</c> boundaries into child nodes parented
     /// under it via <c>ParentNodeId</c>. Beats are MOVED (re-pointed), never
-    /// copied or rewritten. The parent keeps its identity and becomes the
-    /// Collection (Kind='book'); each chapter becomes a child node with its own
-    /// 100-step SortKey ladder. Any lead-in beats before the first chapter mark
-    /// form an implicit first child. Returns (childNodes, beatsMoved).
+    /// copied or rewritten. The parent keeps its identity and its existing Kind
+    /// (Kind is left untouched — see the 2026-08-09 fix note inline below for
+    /// why forcing it to "book" is wrong for a non-root split); each chapter
+    /// becomes a child node with its own 100-step SortKey ladder. Any lead-in
+    /// beats before the first chapter mark form an implicit first child. Safe
+    /// to call on EITHER a flat top-level book OR an oversized mid-book chapter
+    /// (splitting a mega-chapter into bounded sub-chapters) — both are real,
+    /// exercised use cases. Returns (childNodes, beatsMoved).
     /// </summary>
     public async Task<(int Children, int Beats)> SplitIntoCollectionAsync(Guid nodeId, CancellationToken ct = default)
     {
@@ -591,9 +641,26 @@ public class NodeWorkbenchService
         }
 
         // Display label only — the TPH discriminator (NodeType) is fixed at
-        // creation, so a split leaf keeps its concrete type. Splitting is only
-        // offered on book-level nodes, where type and label already agree.
-        parent.Kind = "book";
+        // creation, so a split leaf keeps its concrete type. This method's own
+        // original assumption ("splitting is only offered on book-level nodes,
+        // where type and label already agree") meant this line was always a
+        // no-op for its intended use case. 2026-08-09 bug fix: it was NOT a
+        // no-op when applied to a CHAPTER (e.g. splitting an oversized mega-chapter
+        // into bounded sub-chapters) — forcing Kind="book" there collided with two
+        // unrelated pieces of code that give "book" a completely different meaning
+        // on a non-root node: (1) NodeWorkbenchService.WalkAsync explicitly SKIPS
+        // any child whose Kind=="book" as a deliberate "Drafts bucket" exclusion
+        // (see GetOrderedBeats_SkipsDraftChildSubtrees) — this made the split
+        // chapter's entire content silently invisible to every reader-facing path
+        // that walks from the book root (narration, export, EPUB/PDF/DOCX — nearly
+        // everything), (2) BeatGranularityService/SwainAuditService's "list every
+        // book in the corpus" queries would incorrectly start including the split
+        // chapter as if it were its own top-level book. Only reassign Kind when the
+        // node was ALREADY "book" (the one case this was ever meant to affect);
+        // otherwise leave it as whatever it already was so it stays a transparent,
+        // walked-through interior node. (If it was already "book" this is a true
+        // no-op, matching the original code's own stated assumption — nothing to
+        // assign in either branch.)
         parent.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
         log.LogInformation("Split '{Title}' into a Collection: {Children} child nodes, {Beats} beats.", parent.Title, segments.Count, beatCount);

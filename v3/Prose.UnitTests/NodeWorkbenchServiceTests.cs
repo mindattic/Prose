@@ -565,6 +565,136 @@ public class NodeWorkbenchServiceTests
         Assert.ThrowsAsync<InvalidOperationException>(() => svc.SetBeatMembershipEnabledAsync(s1.Id, b.Id, enabled: false));
     }
 
+    // ── SplitIntoCollectionAsync — 2026-08-09 bug fix: forcing Kind="book" on ANY split
+    // node (not just a genuine top-level book) collided with WalkAsync's deliberate
+    // "skip Kind==book children as a Drafts bucket" exclusion (see
+    // GetOrderedBeats_SkipsDraftChildSubtrees below), making a split CHAPTER's entire
+    // content silently invisible to every reader-facing path that walks from the book
+    // root. Found live after splitting two real 150-300 beat mega-chapters into bounded
+    // sub-chapters — the grandparent book's assembled reading order dropped every one of
+    // the new sub-chapters' beats with no error.
+
+    private async Task MarkChapterStartAsync(Guid beatId, string title)
+    {
+        await svc.UpdateBeatMetadataAsync(beatId, new NodeWorkbenchService.BeatMetadataUpdate(
+            title, null, null, null, null, null, 0, "scene", IsChapterStart: true, null));
+    }
+
+    [Test]
+    public async Task SplitIntoCollectionAsync_TopLevelBook_KeepsKindBook()
+    {
+        var book = await MakeNodeAsync(); // Kind="book" per MakeNodeAsync
+        var a = await svc.InsertBeatAsync(book.Id, null, "Ch1 opening.");
+        var b = await svc.InsertBeatAsync(book.Id, a.Id, "Ch2 opening.");
+        await MarkChapterStartAsync(a.Id, "Chapter 1");
+        await MarkChapterStartAsync(b.Id, "Chapter 2");
+
+        await svc.SplitIntoCollectionAsync(book.Id);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Nodes.AsNoTracking().FirstAsync(n => n.Id == book.Id);
+        Assert.That(fresh.Kind, Is.EqualTo("book"), "the original documented use case (splitting a real top-level book) must be unaffected");
+    }
+
+    [Test]
+    public async Task SplitIntoCollectionAsync_NestedChapter_DoesNotBecomeInvisibleToGrandparentWalk()
+    {
+        // Book -> Chapter (mega-chapter, about to be split) -> beats.
+        var book = await MakeNodeAsync("Book");
+        Node megaChapter;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            megaChapter = new ChapterNode
+            {
+                Id = Guid.CreateVersion7(), Slug = "mega-" + Guid.NewGuid().ToString("N")[..8],
+                Title = "Mega Chapter", Kind = "chapter", Status = "draft",
+                ParentNodeId = book.Id, SortKey = 100,
+            };
+            db.Nodes.Add(megaChapter);
+            await db.SaveChangesAsync();
+        }
+
+        var a = await svc.InsertBeatAsync(megaChapter.Id, null, "Sub-chapter A opening.");
+        var b = await svc.InsertBeatAsync(megaChapter.Id, a.Id, "Sub-chapter B opening.");
+        await MarkChapterStartAsync(a.Id, "Sub A");
+        await MarkChapterStartAsync(b.Id, "Sub B");
+
+        await svc.SplitIntoCollectionAsync(megaChapter.Id);
+
+        // The split node itself must NOT have been reclassified as "book" — that's
+        // the exact field collision that caused the regression.
+        await using var checkDb = await dbFactory.CreateDbContextAsync();
+        var freshMega = await checkDb.Nodes.AsNoTracking().FirstAsync(n => n.Id == megaChapter.Id);
+        Assert.That(freshMega.Kind, Is.Not.EqualTo("book"), "a split CHAPTER must not collide with the Drafts-bucket Kind=='book' exclusion");
+
+        // The real-world assertion: walking from the BOOK (grandparent) must still see
+        // every beat in the split chapter's new sub-chapters, not silently drop them.
+        var fromBook = await svc.GetOrderedBeatsAsync(book.Id);
+        Assert.That(fromBook.Select(o => o.Beat.Text).ToArray(),
+            Is.EqualTo(new[] { "Sub-chapter A opening.", "Sub-chapter B opening." }),
+            "splitting a mid-book chapter into sub-chapters must not hide its content from the book's own reading order");
+    }
+
+    // ── GetLeafDescendantIdsAsync — 2026-08-09, the shared recursive-descendant helper
+    // built after finding that dozens of services (BookHealthService, NodeDocService,
+    // BeatDuplicateService, ...) reimplement a one-level-only "childIds" lookup that
+    // silently misses beats nested 2+ levels deep under a Collection.
+
+    [Test]
+    public async Task GetLeafDescendantIdsAsync_FlatNode_ReturnsSelf()
+    {
+        var s = await MakeNodeAsync();
+        await using var db = await dbFactory.CreateDbContextAsync();
+
+        var leaves = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, s.Id);
+
+        Assert.That(leaves, Is.EqualTo(new[] { s.Id }));
+    }
+
+    [Test]
+    public async Task GetLeafDescendantIdsAsync_OneLevelOfChapters_ReturnsAllChapters()
+    {
+        var book = await MakeNodeAsync("Book");
+        Node ch1, ch2;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            ch1 = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "c1-" + Guid.NewGuid().ToString("N")[..6], Title = "C1", Kind = "chapter", Status = "draft", ParentNodeId = book.Id, SortKey = 100 };
+            ch2 = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "c2-" + Guid.NewGuid().ToString("N")[..6], Title = "C2", Kind = "chapter", Status = "draft", ParentNodeId = book.Id, SortKey = 200 };
+            db.Nodes.AddRange(ch1, ch2);
+            await db.SaveChangesAsync();
+        }
+
+        await using var checkDb = await dbFactory.CreateDbContextAsync();
+        var leaves = await NodeWorkbenchService.GetLeafDescendantIdsAsync(checkDb, book.Id);
+
+        Assert.That(leaves, Is.EquivalentTo(new[] { ch1.Id, ch2.Id }), "the book itself has children, so it must not appear — only its leaf chapters");
+    }
+
+    [Test]
+    public async Task GetLeafDescendantIdsAsync_NestedCollection_ReturnsGrandchildrenNotTheCollectionItself()
+    {
+        // Book -> [NormalChapter, SplitCollection -> [SubA, SubB]]
+        var book = await MakeNodeAsync("Book");
+        Node normalChapter, collection, subA, subB;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            normalChapter = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "n-" + Guid.NewGuid().ToString("N")[..6], Title = "Normal", Kind = "chapter", Status = "draft", ParentNodeId = book.Id, SortKey = 100 };
+            collection = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "col-" + Guid.NewGuid().ToString("N")[..6], Title = "Collection", Kind = "chapter", Status = "draft", ParentNodeId = book.Id, SortKey = 200 };
+            db.Nodes.AddRange(normalChapter, collection);
+            await db.SaveChangesAsync();
+            subA = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "a-" + Guid.NewGuid().ToString("N")[..6], Title = "Sub A", Kind = "chapter", Status = "draft", ParentNodeId = collection.Id, SortKey = 100 };
+            subB = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "b-" + Guid.NewGuid().ToString("N")[..6], Title = "Sub B", Kind = "chapter", Status = "draft", ParentNodeId = collection.Id, SortKey = 200 };
+            db.Nodes.AddRange(subA, subB);
+            await db.SaveChangesAsync();
+        }
+
+        await using var checkDb = await dbFactory.CreateDbContextAsync();
+        var leaves = await NodeWorkbenchService.GetLeafDescendantIdsAsync(checkDb, book.Id);
+
+        Assert.That(leaves, Is.EquivalentTo(new[] { normalChapter.Id, subA.Id, subB.Id }),
+            "must recurse past the 2-level-deep Collection to its real leaf sub-chapters, and must not include the Collection node itself");
+    }
+
     // ── Gap-after-beat tests (the standalone Gaps table was folded into
     //    Beat.GapAfterMs in the 2026-05-23 schema migration) ────────────────
 
