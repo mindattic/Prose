@@ -47,7 +47,13 @@ public sealed class DocContextStack
     private readonly ConcurrentDictionary<Guid, ContextState> contexts = new();
     private ContextState GetOrCreate(Guid contextId) => contexts.GetOrAdd(contextId, _ => new ContextState());
 
-    private static bool IsPinned(StackEntry e) => e.Tier is "always" or "node";
+    // Score >= 999 is DocContextService's force-pin convention (PrepareContextAsync's
+    // `pinnedDocIds` param, e.g. the POV register doc) — MakeEntry keeps the candidate's
+    // ORIGINAL tier (usually "topic") for these, so tier alone doesn't identify them. Without
+    // the score check, a force-pinned doc still counted against TopicCapacity and could be
+    // evicted by EvictStale/EvictLruTopic the same action it was pushed — exactly backwards
+    // from what "force-include regardless of LRU tier" promises.
+    private static bool IsPinned(StackEntry e) => e.Tier is "always" or "node" || e.Score >= 999;
     private static int TierRank(string tier) => tier switch { "always" => 0, "node" => 1, "series" => 2, _ => 3 };
 
     /// <summary>

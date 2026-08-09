@@ -360,7 +360,7 @@ public class WorldModellingTools(
             if (violations.Count == 0) continue;
 
             // File all violations for this beat as Findings.
-            await postBeatValidator.QuickValidateAsync(slug, beat.Text);
+            await postBeatValidator.QuickValidateAsync(slug, beat.Text, beat.Id);
 
             beatSummaries.Add(new
             {

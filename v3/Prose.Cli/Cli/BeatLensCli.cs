@@ -44,7 +44,18 @@ public static class BeatLensCli
 
         if (!json) Console.WriteLine($"Running {lens} lens on '{node.Title}'…\n");
 
-        var result = await svc.RunAsync(node.Id);
+        LensResult result;
+        try
+        {
+            result = await svc.RunAsync(node.Id);
+        }
+        catch (Exception ex)
+        {
+            // The lens genuinely failed to evaluate (LLM outage, malformed response) — this must
+            // read as an error, never as "0 issues found" (see BeatLensService's 2026-08-09 fix).
+            Console.Error.WriteLine($"{lens}-check failed to evaluate: {ex.Message}");
+            return 2;
+        }
 
         if (json)
         {

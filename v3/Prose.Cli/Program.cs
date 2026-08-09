@@ -52,7 +52,7 @@ if (UniverseBootstrap.RequestedSlug == null
     [
         "--reset-password", "--sync-markdown", "--generate-canon-md", "--migrate-canon-docs",
         "--schema", "--universe", "--help", "-h", "--sql-export", "--gpu", "--runpod",
-        "--kdp-status", "--kdp-manifest", "--kdp-mark-published",
+        "--kdp-status", "--kdp-manifest", "--kdp-mark-published", "--audit-consistency",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -383,6 +383,46 @@ if (args.Contains("--validate-nouns"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ValidateNounsCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: CRUD for DeprecatedEntityNames (list/add/remove).
+//   prose --deprecated-names --list [--universe <slug>]
+//   prose --deprecated-names --add --universe <slug> --name <deprecatedName> --canonical <canonicalName> [--notes <notes>]
+//   prose --deprecated-names --remove --id <id>
+if (args.Contains("--deprecated-names"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await DeprecatedNameCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: DataConsistencyService SSOT-drift audit (SQL-only, no LLM calls).
+//   prose --audit-consistency [--json]
+if (args.Contains("--audit-consistency"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await DataConsistencyCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: GraphHealthService — orphaned/weakly-connected/malformed world-graph node audit.
+//   prose --graph-health --universe <slug> [--json]
+if (args.Contains("--graph-health"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await GraphHealthCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: DataScanUtility family (fix-phi/fix-identity/tag-lethality/tag-normalize/
+// assign-tiers/cross-reference) -- mass canon-entity maintenance tools. Defaults to a dry-run
+// preview; pass --apply to actually write.
+//   prose --data-scan --tool <name> [--apply] [--overwrite] --universe <slug>
+if (args.Contains("--data-scan"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await DataScanCli.RunAsync(args, sp);
     return;
 }
 

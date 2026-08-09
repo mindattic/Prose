@@ -131,6 +131,17 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
 
             foreach (var rule in rules)
             {
+                // An all-caps deprecated name is an acronym (e.g. "ANGEL" — Aerogel Null Globe
+                // Evacuated Lifter, retired 2026-07-07) rather than a normal proper noun/name
+                // rename. A case-INSENSITIVE match against an acronym also matches the ordinary
+                // English word it happens to spell ("Angel"/"angel" in prose that has nothing to
+                // do with the retired tech, e.g. an in-world ad slogan "Voice of an Angel") — so
+                // require exact case for these specifically. A genuine name rename (e.g. a
+                // character's old name) is virtually never itself all-caps, so this doesn't
+                // weaken those checks.
+                var requireExactCase = rule.DeprecatedName.Length > 0
+                    && rule.DeprecatedName.All(c => !char.IsLetter(c) || char.IsUpper(c));
+
                 int offset = 0;
                 while (true)
                 {
@@ -143,6 +154,10 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
                     bool rightOk = idx + rule.DeprecatedName.Length >= beat.Text.Length
                                    || !char.IsLetterOrDigit(beat.Text[idx + rule.DeprecatedName.Length]);
                     if (!leftOk || !rightOk) continue;
+
+                    if (requireExactCase &&
+                        beat.Text.Substring(idx, rule.DeprecatedName.Length) != rule.DeprecatedName)
+                        continue;
 
                     violations.Add(new NounViolation(
                         BeatId:         beat.Id,

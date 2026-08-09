@@ -32,6 +32,15 @@ public class ContinuityApplyService
 
     // Continuity claims use kind names that don't always match the canonical
     // EntityType slug; this maps each variant to the EntityType column value.
+    // Only covers the handful of kinds whose claim-side name actually differs from the
+    // EntityType column ("person" -> "character", etc). Every other entity kind (apparel,
+    // automaton, pharmaceutical, genemod, material, subsidiary, transportation, psionic, ...
+    // 25+ live types) is passed through unchanged by ExtractContinuityFromEntityRecord's
+    // InferKindFromEntityType, so claim.EntityKind already equals EntityType verbatim for
+    // those — LocateRecordAsync below falls back to using it directly rather than requiring
+    // every type to be listed here (which previously made ApplyAsync a silent dead end for
+    // any kind not in this dictionary, even though extraction/contradiction-resolution worked
+    // fine for them).
     private static readonly Dictionary<string, string> KindToEntityType =
         new(StringComparer.OrdinalIgnoreCase)
         {
@@ -205,11 +214,13 @@ public class ContinuityApplyService
     /// id (preferred) and falls back to (EntityType, Name) so claims that
     /// carry only a name still apply.
     /// </summary>
-    private static async Task<Data.Entities.Record?> LocateRecordAsync(
+    // internal (was private) so the 2026-08-09 unmapped-EntityKind fallback fix is directly
+    // unit-testable against a real (SQLite-backed test) DbContext without needing LlmVotingService.
+    internal static async Task<Data.Entities.Record?> LocateRecordAsync(
         ProseDbContext db, ContinuityClaim claim, CancellationToken ct)
     {
         if (!KindToEntityType.TryGetValue(claim.EntityKind, out var entityType))
-            return null;
+            entityType = claim.EntityKind; // unmapped kind = already the raw EntityType value
 
         // Id route — accept hyphenated and unhyphenated formats.
         if (TryParseGuid(claim.EntityId, out var id))

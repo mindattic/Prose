@@ -26,6 +26,7 @@ namespace Prose.Core.Services;
 public class BookAuditService(
     AuditRunner auditRunner,
     PlantPayoffService plantPayoffs,
+    GlossaryService glossary,
     IDbContextFactory<ProseDbContext> dbFactory)
 {
     // GLMZ universe ID — used to append universe-specific commandments
@@ -66,18 +67,18 @@ public class BookAuditService(
          "lets the reader fall in before they're asked to follow anything."),
 
         ("gloss_in_voice",
-         "Gloss first mentions in-voice, never dump",
-         "Proprietary terms (CorpoNations, neuretics, the named geographies) get a light, in-register touch " +
-         "that orients without lecturing. Enough for a stranger to keep their footing; never an info-dump. " +
-         "Weave it into prose the POV would naturally produce."),
+         "Never interrupt the voice to define a term",
+         "Proprietary terms (CorpoNations, neuretics, the named geographies) are used the way a native speaker of " +
+         "this world would use them — with confidence, no stopping to orient the reader. Definition is the back-matter " +
+         "Glossary's job, not the prose's. Fail this only if the prose itself breaks voice to explain a term " +
+         "(an aside, a lecture, a dictionary-style clause) — using an unexplained term in-voice is correct, not a defect."),
 
         ("acronym_after_term",
-         "Never an acronym before its term",
-         "Every acronym is preceded, at its first appearance in THIS story, by the full term it abbreviates, " +
-         "glossed in-voice (e.g. 'Neuretic Substrate Bridging' before 'NSB'). Any book could be a reader's " +
-         "first GLMZ book: an acronym whose expansion never appears on the page before it is a fail, no matter " +
-         "how established the term is elsewhere in the universe. After the first full-term use, the bare acronym " +
-         "is preferred — do not re-expand."),
+         "Acronyms live in the Glossary, not on the page",
+         "SS-LAW-20 (amended): a term or acronym used in prose with no in-voice expansion is correct, as long as " +
+         "the book's Glossary (provided below, if any entries are in use) already defines it. Only fail if a term " +
+         "or acronym appears in the prose that has NO glossary entry provided — that's a missing back-matter entry, " +
+         "not a prose defect, so the fix should say 'add a glossary entry for X', never 'expand X in-voice'."),
 
         ("human_crack",
          "Give the POV character one human crack",
@@ -122,17 +123,17 @@ public class BookAuditService(
          "'right, them,' and light enough that a reader who never left doesn't feel talked down to."),
 
         ("lighter_regloss",
-         "Refresh proprietary terms on a lighter touch than the gateway",
-         "Returning readers half-remember the vocabulary. A glancing re-gloss — a term used in a context that re-teaches " +
-         "its meaning — beats both a full re-explanation and assuming total recall. Trust more than you would with a stranger; " +
-         "assume less than you would with yourself."),
+         "Trust the Glossary, not a re-explanation",
+         "Returning readers half-remember the vocabulary, but the fix is never a re-gloss inside the prose — that's " +
+         "the back-matter Glossary's job (SS-LAW-20, amended). Use proprietary terms with full confidence, no refresher " +
+         "clause. Fail this only if the prose stops to re-explain a term the reader has seen before."),
 
         ("acronym_after_term",
-         "Never an acronym before its term",
-         "Even in a sequel, any book could be a reader's first: every acronym is preceded, at its first appearance in " +
-         "THIS story, by the full term it abbreviates, glossed in-voice ('Neuretic Substrate Bridging' before 'NSB'). " +
-         "An acronym whose expansion never appears on the page before it is a fail. After the first full-term use, the " +
-         "bare acronym is preferred — do not re-expand."),
+         "Acronyms live in the Glossary, not on the page",
+         "SS-LAW-20 (amended): a term or acronym used in prose with no in-voice expansion is correct, as long as " +
+         "the book's Glossary (provided below, if any entries are in use) already defines it. Only fail if a term " +
+         "or acronym appears in the prose that has NO glossary entry provided — that's a missing back-matter entry, " +
+         "not a prose defect, so the fix should say 'add a glossary entry for X', never 'expand X in-voice'."),
 
         ("pay_previous_due",
          "Pay the previous book its due, then move",
@@ -199,20 +200,25 @@ public class BookAuditService(
                 .Where(t => !string.IsNullOrWhiteSpace(t)));
 
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
+        var glossaryTerms = await glossary.GetUsedTermsAsync(nodeId, ct);
         var rereadKey = isSequel ? "reward_long_memory" : "reread_reward";
 
         var rules = commandments
             .Select(c => (IAuditRule)new CommandmentRule(c.Key, c.Title, c.Body, isSequel, rereadKey))
             .ToList();
         var ctx = new AuditContext(nodeId, node.UniverseId, prose, [],
-            new Dictionary<string, object?> { ["plants"] = plants });
+            new Dictionary<string, object?> { ["plants"] = plants, ["glossary"] = glossaryTerms });
 
         var verdicts = await auditRunner.RunAsync(
             "BOOKAUDIT", $"node:{node.Slug}", FindingCategory.BookAudit, rules, ctx, ct: ct);
         var checks = commandments.Select(c =>
         {
             var v = verdicts.First(v => v.RuleKey == c.Key);
-            var status = v.Severity switch { "PASS" => "pass", "BLOCKER" => "fail", _ => "warn" };
+            // ERROR (the commandment's LLM call threw — timeout, malformed response, provider
+            // outage) must never read as "pass" or a mere advisory "warn": the commandment was
+            // never actually evaluated, so GatewayReady below must not claim readiness on its
+            // account. Distinct from "fail" (a real BLOCKER verdict) only for display clarity.
+            var status = v.Severity switch { "PASS" => "pass", "BLOCKER" => "fail", "ERROR" => "error", _ => "warn" };
             return new BookAuditCheck(c.Key, c.Title, status, v.Evidence, v.Fix);
         }).ToArray();
 
@@ -232,8 +238,8 @@ public class BookAuditService(
             Mode:            mode,
             PreviousNode:  previousTitle,
             Checks:          checks.ToList(),
-            GatewayReady:    checks.All(c => c.Status != "fail"),
-            BlockingCount:   checks.Count(c => c.Status == "fail"),
+            GatewayReady:    checks.All(c => c.Status is not ("fail" or "error")),
+            BlockingCount:   checks.Count(c => c.Status is "fail" or "error"),
             AdvisoryCount:   checks.Count(c => c.Status == "warn"),
             PlantCount:      plants.Count,
             OrphanedPlants:  plants.Count(p => p.PlantBeatId != null && p.PayoffBeatId == null));
@@ -246,6 +252,12 @@ public class BookAuditService(
     /// this only supplies the prompt. Commandment 6 (gateway "reward re-reading" / sequel
     /// "reward the long memory") gets the node's plant/payoff registry appended, same as
     /// before the refactor — reads it from <see cref="AuditContext.Extra"/>["plants"].</summary>
+    // Keys whose doctrine defers to the back-matter Glossary (SS-LAW-20, amended
+    // 2026-08-08) instead of judging in-voice definition — these get the book's
+    // live used-glossary-terms list appended so "unglossed in prose" isn't
+    // mistaken for a defect when the term is already covered in back matter.
+    static readonly HashSet<string> GlossaryAwareKeys = ["gloss_in_voice", "acronym_after_term", "lighter_regloss"];
+
     sealed class CommandmentRule(string key, string title, string body, bool isSequel, string rereadKey)
         : ILlmAuditRule
     {
@@ -260,6 +272,16 @@ public class BookAuditService(
                   string.Join("\n", plants.Select(pl =>
                       $"  [{pl.Category}] PLANT: {pl.PlantDescription} | PAYOFF: {pl.PayoffDescription} | transparent: {pl.IsTransparent}"))
                 : "";
+
+            var glossaryContext = "";
+            if (GlossaryAwareKeys.Contains(key) &&
+                ctx.Extra.TryGetValue("glossary", out var g) && g is IReadOnlyList<GlossaryTerm> { Count: > 0 } terms)
+            {
+                glossaryContext = "\n\nThis book's back-matter Glossary already defines these terms (a term on " +
+                    "this list needs NO in-voice expansion anywhere in the prose — using it bare is correct):\n" +
+                    string.Join("\n", terms.Select(t =>
+                        $"  {t.Term}{(t.FullForm is { Length: > 0 } ff ? $" ({ff})" : "")} — {t.Definition}"));
+            }
 
             var mode = isSequel ? "sequel" : "standalone/gateway";
             var system = $$"""
@@ -277,7 +299,7 @@ public class BookAuditService(
 
             var user = $$"""
                 COMMANDMENT: {{title}}
-                RULE: {{body}}{{plantContext}}
+                RULE: {{body}}{{plantContext}}{{glossaryContext}}
 
                 NODE PROSE:
                 {{AuditProseUtils.ClampProse(ctx.Prose)}}

@@ -35,25 +35,15 @@ public class PostBeatValidationService(
 {
     /// <summary>
     /// Prose guard only — no DB or LLM, safe to fire-and-forget after every beat save.
-    /// <paramref name="nodeSlug"/> is used as the finding's filePath prefix.
+    /// <paramref name="nodeSlug"/> (plus <paramref name="beatId"/>, when the caller has it) is
+    /// used as the finding's filePath prefix.
     /// </summary>
-    public Task QuickValidateAsync(string nodeSlug, string beatText, CancellationToken ct = default)
+    public Task QuickValidateAsync(string nodeSlug, string beatText, Guid beatId = default, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(beatText)) return Task.CompletedTask;
         try
         {
-            var violations = proseGuard.Check(beatText);
-            foreach (var v in violations)
-            {
-                findings.Upsert(
-                    filePath:     $"node:{nodeSlug}",
-                    chapterId:    null,
-                    category:     FindingCategory.Cliche,
-                    severity:     FindingSeverity.Medium,
-                    summary:      $"[{v.Category}]: {v.Rule}",
-                    snippet:      SnippetAround(beatText, v.CharOffset),
-                    suggestedFix: v.Suggestion);
-            }
+            FileProseViolations(beatText, nodeSlug, beatId);
         }
         catch (Exception ex)
         {
@@ -88,7 +78,7 @@ public class PostBeatValidationService(
                 .FirstOrDefaultAsync(ct) ?? beatId.ToString();
 
             var text = beat.Text;
-            proseCount = FileProseViolations(text, nodeSlug);
+            proseCount = FileProseViolations(text, nodeSlug, beatId);
 
             var chars = characterIds ?? await CharactersFromMentionsAsync(db, beatId, ct);
             foreach (var charId in chars)
@@ -108,13 +98,23 @@ public class PostBeatValidationService(
 
     // ── private helpers ──────────────────────────────────────────────────────
 
-    private int FileProseViolations(string text, string nodeSlug)
+    /// <summary>Files ProsePatternGuard violations for one beat. When <paramref name="beatId"/>
+    /// is known, findings are beat-scoped (<c>node:{slug}/beat:{id}</c>) and purged-then-
+    /// refiled every call, so a since-fixed violation (or a false positive resolved by a
+    /// detector refinement, e.g. the 2026-08-09 em-dash/gazetteer exclusions) actually clears
+    /// instead of leaving a stale row forever — the same class of bug already fixed this
+    /// session in SemanticFidelityService/StructuralDiagnosticService/etc. Falls back to the
+    /// book-wide (unpurged) legacy scope only when no beatId is available at the call site.</summary>
+    private int FileProseViolations(string text, string nodeSlug, Guid beatId = default)
     {
         var violations = proseGuard.Check(text);
+        var filePath = beatId != Guid.Empty ? $"node:{nodeSlug}/beat:{beatId:N}" : $"node:{nodeSlug}";
+        if (beatId != Guid.Empty)
+            findings.DeleteBySummaryPrefix(filePath, "[");
         foreach (var v in violations)
         {
             findings.Upsert(
-                filePath:     $"node:{nodeSlug}",
+                filePath:     filePath,
                 chapterId:    null,
                 category:     FindingCategory.Cliche,
                 severity:     FindingSeverity.Medium,

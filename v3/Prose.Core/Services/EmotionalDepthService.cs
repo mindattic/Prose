@@ -205,6 +205,12 @@ public class EmotionalDepthService
 
         int blockingCount = dimensions.Count(d => d.IsBlocking && d.Score <= 1);
 
+        // Full re-examination is authoritative for this node: purge every prior
+        // EMOTIONAL-DEPTH finding before re-filing current blockers — a dimension that's
+        // since improved above the blocking floor would otherwise keep its stale finding
+        // open forever (Upsert only dedupes an exact summary match).
+        findings.DeleteBySummaryPrefix($"node:{slug}", "EMOTIONAL-DEPTH ");
+
         // File blocking findings
         foreach (var dim in dimensions.Where(d => d.IsBlocking && d.Score <= 1))
         {

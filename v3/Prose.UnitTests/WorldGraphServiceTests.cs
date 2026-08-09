@@ -45,6 +45,104 @@ public class WorldGraphServiceTests
         Assert.That(graph.GetNode("someid"), Is.Null);
     }
 
+    // ── ExtractPlaceName (2026-08-09) ────────────────────────────────────────
+    // BuildCharacters() reads Location from EntityStateEvents (AspectKey="location"); a
+    // migration ("migration:static-vs-dynamic-split") wrote full narrative "home turf"
+    // descriptions into this field for 94% of live rows (1137/1209, confirmed via direct SQL
+    // query) instead of a clean place name. Promoting the raw string verbatim created a
+    // one-off, effectively-orphaned "Place" graph node per character — a large contributor to
+    // the 68% weakly-connected-node rate `prose --graph-health` found.
+
+    [Test]
+    public void ExtractPlaceName_RealCorpusExample_ExtractsLeadingSegment()
+    {
+        // The exact real example that surfaced this bug (Hae-won Magnúsdóttir's location).
+        var raw = "Shallowgrave — sleeps in a shared squat off Burnside Pocket, runs routes through the market corridors, near Ashland and Division";
+
+        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("Shallowgrave"));
+    }
+
+    [Test]
+    public void ExtractPlaceName_ShortCleanLocation_PassesThroughUnchanged()
+    {
+        Assert.That(WorldGraphService.ExtractPlaceName("Burnside Pocket"), Is.EqualTo("Burnside Pocket"));
+    }
+
+    [Test]
+    public void ExtractPlaceName_HyphenSeparatedNarrative_ExtractsLeadingSegment()
+    {
+        var raw = "Ironvein Station - with a rented bunk in the Ferrogate Transit crew dormitory at Jefferson Switch";
+
+        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("Ironvein Station"));
+    }
+
+    [Test]
+    public void ExtractPlaceName_CommaSeparatedNarrative_ExtractsLeadingSegment()
+    {
+        var raw = "Hamtramck Enclave, basement shrine beneath the Copperplate Market, near Kedzie and Division";
+
+        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("Hamtramck Enclave"));
+    }
+
+    [Test]
+    public void ExtractPlaceName_SemicolonSeparatedNarrative_ExtractsLeadingSegment()
+    {
+        // Real SCRY example — no comma, dash, or paren, only a semicolon separator. The segment
+        // before the semicolon is itself over the clean threshold, so it gets truncated too —
+        // still a large improvement over promoting the entire two-clause sentence verbatim.
+        var raw = "The Quarantine Wall perimeter around the Sinter zone; Descent Corps operations within the zone";
+
+        var result = WorldGraphService.ExtractPlaceName(raw);
+
+        Assert.That(result, Does.Not.Contain("Descent Corps"), "must not include the second clause");
+        Assert.That(result.Length, Is.LessThanOrEqualTo(30));
+    }
+
+    [Test]
+    public void ExtractPlaceName_OrganizationNarrative_ExtractsLeadingSegment()
+    {
+        // Real SCRY example from a weapon's Manufacturer field — the same helper is reused for
+        // any free-text field promoted to a node name, not just places.
+        var raw = "House Vulcanus (primary); licensed variants from Houses Corvus and Noctua";
+
+        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("House Vulcanus"));
+    }
+
+    [Test]
+    public void ExtractPlaceName_LongWithNoSeparator_TruncatesAtThreshold()
+    {
+        var raw = "ThisIsAnUnusuallyLongPlaceNameWithNoNaturalSeparatorAtAllToSplitOn";
+
+        var result = WorldGraphService.ExtractPlaceName(raw);
+
+        Assert.That(result.Length, Is.LessThanOrEqualTo(30));
+    }
+
+    [Test]
+    public void ExtractPlaceName_ExactlyAtThreshold_PassesThroughUnchanged()
+    {
+        var raw = new string('X', 30);
+        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo(raw));
+    }
+
+    [Test]
+    public void ExtractPlaceName_ParenSeparatedNarrative_ExtractsLeadingSegment()
+    {
+        var raw = "the Gray Zone (operates between Brewer's Spine and the old rail line)";
+
+        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("the Gray Zone"));
+    }
+
+    [Test]
+    public void ExtractPlaceName_BorderlineCommaNarrative_StillSplits()
+    {
+        // The exact real example that showed the old 40-char threshold was too lenient —
+        // this string is 40 chars, right at the old cutoff, and still reads as narrative.
+        var raw = "the Gray Zone, near Kedzie and Division";
+
+        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("the Gray Zone"));
+    }
+
     [Test]
     public void Slugify_ProducesConsistentSlugs()
     {

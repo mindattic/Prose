@@ -218,13 +218,25 @@ public sealed class EntityDocService(
             }
             if (ch != null)
             {
-                var voiceParts = new[] { ch.SpeechVocabulary, ch.SpeechCadence, ch.SpeechUnderPressure }
+                // SS-A46 register — all 6 fields, matching SceneContextAssembler.FormatCharacterAsync.
+                // This doc is pinned dominant (score 999) as the beat's narrator voice, so dropping
+                // any of these silently mutes part of the register for as long as the character POVs.
+                var voiceParts = new[]
+                    {
+                        ch.SpeechVocabulary, ch.SpeechCadence, ch.SpeechSubtext,
+                        ch.SpeechUnderPressure, ch.SpeechIntimacyRegister,
+                    }
                     .Where(s => !string.IsNullOrEmpty(s)).ToList();
                 if (voiceParts.Count > 0)
                 {
                     sb.AppendLine();
                     sb.AppendLine("**Voice:**");
                     foreach (var v in voiceParts) sb.AppendLine(v.Trim());
+                }
+                if (!string.IsNullOrEmpty(ch.PsychologySecret))
+                {
+                    sb.AppendLine();
+                    sb.AppendLine($"**Secret:** {ch.PsychologySecret.Trim()}");
                 }
             }
 

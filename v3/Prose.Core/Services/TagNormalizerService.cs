@@ -58,11 +58,12 @@ public class TagNormalizerService(IDbContextFactory<ProseDbContext> dbFactory) :
         Options? opts = null,
         IProgress<UtilityProgress>? progress = null,
         int parallelism = 4,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        bool dryRun = false)
     {
         opts ??= new Options();
         return RunScanAsync(GetFiles(), (file, obj) => Process(file, obj, opts),
-                            progress, null, parallelism, ct);
+                            progress, null, parallelism, ct, dryRun);
     }
 
     private int Process(string file, JsonObject obj, Options opts)

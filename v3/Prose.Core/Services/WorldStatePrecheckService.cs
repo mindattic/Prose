@@ -118,12 +118,23 @@ public class WorldStatePrecheckService
         }
     }
 
-    private static void CheckLocationConsistency(Dossier dossier, string? sceneLocation, List<PrecheckFinding> findings)
+    internal static void CheckLocationConsistency(Dossier dossier, string? sceneLocation, List<PrecheckFinding> findings)
     {
         if (string.IsNullOrWhiteSpace(sceneLocation)) return;
         var current = dossier.Now.Location;
         if (string.IsNullOrWhiteSpace(current)) return; // unknown location — don't false-flag
 
+        // 2026-08-09: investigated whether dossier.Now.Location's narrative-text values (same
+        // EntityStateEvents source as WorldGraphService.BuildCharacters(), 94% of live rows are
+        // a full "home turf" description, not a clean place name) cause this substring check to
+        // spuriously fail. Tried truncating `current` to its leading segment before comparing —
+        // reverted: LooseLocationMatch's Contains-based check already succeeds whenever
+        // sceneLocation is a substring anywhere in the full narrative text (not just a prefix),
+        // so truncating first only THROWS AWAY real matches for a scene set at a sub-location
+        // named later in the description ("...off Burnside Pocket" — a scene at "Burnside
+        // Pocket" matches the untouched full text but not a truncated "Shallowgrave" prefix).
+        // No regression test could be written that failed without the change, confirming it
+        // provided no verified benefit while introducing this new false-positive risk.
         if (LooseLocationMatch(current, sceneLocation)) return;
 
         findings.Add(new PrecheckFinding(

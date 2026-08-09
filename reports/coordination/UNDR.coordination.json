@@ -2,9 +2,9 @@
   "nodeCode": "UNDR",
   "slug": "underclan-019eff97",
   "title": "Underclan",
-  "generatedAtUtc": "2026-08-01 14:52:14Z",
-  "totalBeats": 57,
-  "covered": 57,
+  "generatedAtUtc": "2026-08-09 06:58:07Z",
+  "totalBeats": 56,
+  "covered": 56,
   "chapterGranular": false,
   "bookScope": {
     "TemporalScheme": "linear",
@@ -13,10 +13,11 @@
     "EndingStyle": "quiet",
     "HasSubplot": true,
     "Granularity": "beat",
-    "HasBlueprint": true
+    "HasBlueprint": true,
+    "ConstructionCapacity": 56
   },
   "flagCounts": {
-    "UNSCORED": 57
+    "UNSCORED": 56
   },
   "beats": [
     {
@@ -28,7 +29,7 @@
       "Meaning": "Establishes the Underclan\u0027s sensory world and communal rhythms to ground the reader in a civilization built on attentiveness and interdependence.",
       "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3968,
       "Flags": [
@@ -43,9 +44,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Introduces Grale as a quiet rival and Sorrel as changed by Surfacing, escalating Glim\u0027s awareness of his own standing and approaching trial.",
-      "EscalationTarget": "3",
-      "EventType": "confrontation",
-      "RevelationMode": "none",
+      "EscalationTarget": "2",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 3309,
       "Flags": [
@@ -60,11 +61,11 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals the Oarsman\u0027s rule as absolute rather than ceremonial, sharpening the reader\u0027s sense that the underworld operates on non-negotiable laws.",
-      "EscalationTarget": "4",
-      "EventType": "exchange",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2726,
+      "ProseLength": 2852,
       "Flags": [
         "UNSCORED"
       ],
@@ -77,7 +78,7 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the Deep One\u0027s hum as a formative, embodied faith to show that Glim\u0027s identity is inseparable from the Current\u0027s presence.",
-      "EscalationTarget": "5",
+      "EscalationTarget": "3",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
@@ -94,7 +95,7 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals Glim\u0027s relationship to honest, unglamorous labor as a value system, grounding his character in competence and distrust of pretense.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "3",
       "EventType": "repair",
       "RevelationMode": "none",
       "BeatTags": [],
@@ -111,7 +112,7 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes Vesh as the community\u0027s living memory and Glim\u0027s privileged proximity to him, signaling the weight of the knowledge Glim inherits.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "4",
       "EventType": "ceremony",
       "RevelationMode": "curiosity",
       "BeatTags": [],
@@ -128,13 +129,11 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Escalates the stakes of Underclan identity by contrasting surface erasure with the Deep\u0027s remembrance, giving Glim\u0027s coming Surfacing existential dimension.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "4",
       "EventType": "confession",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4572,
+      "BeatTags": [],
+      "ProseLength": 4740,
       "Flags": [
         "UNSCORED"
       ],
@@ -147,7 +146,7 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Pays off the lesson by leaving its center deliberately blank, teaching the reader alongside Glim that the Current\u0027s reach is the story\u0027s unresolved mystery.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "4",
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
@@ -164,8 +163,8 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Reveals through the Marl story that the Tartar\u0027s danger is psychological rather than physical, escalating dread about what lies below the permitted boundary.",
-      "EscalationTarget": "7",
-      "EventType": "departure",
+      "EscalationTarget": "3",
+      "EventType": "confession",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 4557,
@@ -181,9 +180,9 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Reveals Glim\u0027s foundling origin through Knuckle\u0027s memory, establishing that Glim\u0027s identity has always rested on an unanswered question about where he came from.",
-      "EscalationTarget": "8",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "4",
+      "EventType": "confession",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 4534,
       "Flags": [
@@ -198,7 +197,7 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Establishes Glim\u0027s unresolved grief through a sensory dream-fragment, then grounds him in Underclan ritual to show how the community\u0027s continuity contains but cannot cure personal loss.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "4",
       "EventType": "vigil",
       "RevelationMode": "surprise",
       "BeatTags": [],
@@ -215,7 +214,7 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Reveals Glim\u0027s forbidden fixation on something in the crossing basin, establishing a transgressive curiosity that will define his character and drive future conflict.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "3",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
@@ -232,9 +231,9 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Turns the story\u0027s timeline by having Knuckle accelerate the Surfacing, introducing Grale as a political threat and forcing Glim to confront whether his surface-taint is real.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "5",
       "EventType": "confrontation",
-      "RevelationMode": "suspense",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1984,
       "Flags": [
@@ -249,8 +248,8 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Deepens Glim\u0027s emotional stakes before departure by giving Sorrel a farewell scene that signals she sees something in him the community cannot afford to lose.",
-      "EscalationTarget": "7",
-      "EventType": "exchange",
+      "EscalationTarget": "4",
+      "EventType": "confession",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3302,
@@ -266,9 +265,9 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Pays off the mentor relationship by staging the blessing as a physical transfer of weight and responsibility, making Knuckle\u0027s inability to protect Glim palpable.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "4",
       "EventType": "ceremony",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3363,
       "Flags": [
@@ -283,9 +282,9 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Escalates Grale\u0027s threat while using the three-outcomes story to plant the possibility that surface-contact permanently changes a person, seeding dread about Glim\u0027s return.",
-      "EscalationTarget": "8",
-      "EventType": "confession",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "5",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 4072,
       "Flags": [
@@ -300,7 +299,7 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Crystallizes the central ideological conflict by letting Grale articulate, without malice, the community\u0027s legitimate fear that Glim\u0027s origins make him a danger.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "5",
       "EventType": "confrontation",
       "RevelationMode": "none",
       "BeatTags": [],
@@ -317,7 +316,7 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Establishes Glim\u0027s competence and methodical preparation to make his subsequent choice of the riskier route feel like a deliberate break from character rather than recklessness.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "6",
       "EventType": "departure",
       "RevelationMode": "suspense",
       "BeatTags": [],
@@ -334,8 +333,8 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Turns Glim from a rule-follower into an agent by having him choose the unknown route, framing the Surfacing as a test of identity rather than mere survival.",
-      "EscalationTarget": "9",
-      "EventType": "discovery",
+      "EscalationTarget": "6",
+      "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 3150,
@@ -351,8 +350,8 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Delivers the sensory shock of the surface to make the world above feel genuinely alien, validating every fear the Underclan holds while opening the story\u0027s larger world.",
-      "EscalationTarget": "10",
-      "EventType": "ambush",
+      "EscalationTarget": "7",
+      "EventType": "arrival",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 3619,
@@ -385,9 +384,9 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Reveals the surface\u0027s indifference as an existential condition, paying off Vesh\u0027s recurring lesson by forcing Glim to feel his own insignificance for the first time.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "7",
       "EventType": "vigil",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2843,
       "Flags": [
@@ -402,7 +401,7 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Escalates Glim\u0027s jeopardy by showing his underground competence neutralized by surface technology, turning his place of safety into a trap.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "8",
       "EventType": "ambush",
       "RevelationMode": "surprise",
       "BeatTags": [],
@@ -419,9 +418,9 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Marks the glow-rat\u0027s death as a silent emotional beat that signals Glim\u0027s severance from Homewater\u0027s tools and logic as he is pulled upward against his will.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "7",
       "EventType": "loss",
-      "RevelationMode": "surprise",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2475,
       "Flags": [
@@ -436,8 +435,8 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Establishes the surface\u0027s bureaucratic gaze as a new threat distinct from pursuit, disorienting Glim by removing darkness as the default condition of space.",
-      "EscalationTarget": "7",
-      "EventType": "arrival",
+      "EscalationTarget": "6",
+      "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2660,
@@ -453,10 +452,11 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Introduces Noor\u0027s twelve-year vigil and her body\u0027s learned distrust to establish the emotional stakes of the possible reunion before it occurs.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "5",
       "EventType": "discovery",
-      "RevelationMode": "surprise",
+      "RevelationMode": "suspense",
       "BeatTags": [
+        "intertextual-touchpoint",
         "subplot"
       ],
       "ProseLength": 3656,
@@ -472,8 +472,8 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Pays off the fragment-smell established in Glim\u0027s memory by triggering involuntary recognition, revealing the mother-child bond through sensation before either character can name it.",
-      "EscalationTarget": "7",
-      "EventType": "confrontation",
+      "EscalationTarget": "6",
+      "EventType": "confession",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1854,
@@ -489,12 +489,10 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Establishes Glim\u0027s methodical adaptation to surface life while showing the language barrier and his retained underground habits as the distance still separating him from Noor.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "5",
       "EventType": "exchange",
-      "RevelationMode": "suspense",
-      "BeatTags": [
-        "subplot"
-      ],
+      "RevelationMode": "none",
+      "BeatTags": [],
       "ProseLength": 3035,
       "Flags": [
         "UNSCORED"
@@ -508,10 +506,12 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Reveals Noor\u0027s reunion as bittersweet rather than complete, using the detail of his thumb\u0027s grip to show that recognition flows only one way and grief persists inside recovery.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "5",
       "EventType": "vigil",
-      "RevelationMode": "none",
-      "BeatTags": [],
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
       "ProseLength": 2700,
       "Flags": [
         "UNSCORED"
@@ -525,9 +525,9 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Establishes Glim\u0027s ethnographic detachment as a coping mechanism, showing the surface world\u0027s sensory excess as a new kind of disorientation replacing the underground\u0027s organized logic.",
-      "EscalationTarget": "5",
+      "EscalationTarget": "4",
       "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3007,
       "Flags": [
@@ -542,10 +542,12 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Establishes that Glim\u0027s exposure has broken the surface world\u0027s ignorance of him, forcing a crisis of visibility that threatens both his freedom and Noor\u0027s position.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "surprise",
-      "BeatTags": [],
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 3153,
       "Flags": [
         "UNSCORED"
@@ -559,10 +561,12 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Reveals Glim\u0027s anthropological detachment as a survival mechanism while escalating the institutional pressure closing around him and Noor.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "5",
       "EventType": "arrival",
-      "RevelationMode": "suspense",
-      "BeatTags": [],
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 3720,
       "Flags": [
         "UNSCORED"
@@ -576,9 +580,9 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Turns the question of Glim\u0027s identity into an emotional confrontation, revealing Noor\u0027s twelve years of grief and establishing the cost of his silence.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "4",
       "EventType": "confession",
-      "RevelationMode": "suspense",
+      "RevelationMode": "curiosity",
       "BeatTags": [
         "subplot"
       ],
@@ -595,9 +599,9 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Pays off the candle\u0027s symbolic weight by making Glim\u0027s failure to protect it the moral trigger for his departure, not mere restlessness.",
-      "EscalationTarget": "9",
-      "EventType": "escape",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "6",
+      "EventType": "departure",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 4050,
       "Flags": [
@@ -612,12 +616,10 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Escalates Noor\u0027s commitment by showing she has followed him into his world, shifting the power dynamic and forcing him to accept responsibility for her.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "6",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "subplot"
-      ],
+      "BeatTags": [],
       "ProseLength": 3186,
       "Flags": [
         "UNSCORED"
@@ -631,32 +633,11 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Establishes Glim\u0027s code of reciprocal obligation by having him extend Noor the protection of darkness as repayment for her eight days of patience.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "5",
       "EventType": "negotiation",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
+      "BeatTags": [],
       "ProseLength": 2072,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f1221-3430-7de2-bf4a-e86ec38ae489",
-      "Number": 4914,
-      "Chapter": "Chapter 9 \u2014 The Way Down",
-      "ChapterIndex": 8,
-      "Act": 0,
-      "Meaning": "Pays off Glim\u0027s eight days of wrongness by grounding him in Homewater\u0027s sensory familiarity, while positioning Noor as a witness now inside his world.",
-      "EscalationTarget": "9",
-      "EventType": "arrival",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot"
-      ],
-      "ProseLength": 4431,
       "Flags": [
         "UNSCORED"
       ],
@@ -669,7 +650,7 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Establishes the community\u0027s guarded judgment of Glim\u0027s return and surfaces Grale\u0027s hostility, raising the stakes of Noor\u0027s presence in the Hollow.",
-      "EscalationTarget": "10",
+      "EscalationTarget": "7",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
@@ -686,7 +667,7 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Escalates to crisis by revealing the surface has tracked Glim home, turning his Surfacing into a direct threat to the entire Underclan community.",
-      "EscalationTarget": "10",
+      "EscalationTarget": "8",
       "EventType": "ambush",
       "RevelationMode": "surprise",
       "BeatTags": [],
@@ -703,12 +684,10 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Reveals the catastrophic cost of Glim\u0027s return \u2014 he has carried surface illness into an unprotected community \u2014 establishing his guilt as the story\u0027s moral weight.",
-      "EscalationTarget": "10",
+      "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "surprise",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
+      "BeatTags": [],
       "ProseLength": 2662,
       "Flags": [
         "UNSCORED"
@@ -722,9 +701,9 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Establishes Glim\u0027s first open defiance of Vesh\u0027s authority, turning their relationship and signaling that the crisis will force Glim to act on his own judgment.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "7",
       "EventType": "confrontation",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2776,
       "Flags": [
@@ -739,9 +718,9 @@
       "ChapterIndex": 10,
       "Act": 0,
       "Meaning": "Reveals Vesh\u0027s core fear that surface recognition is a trap, deepening the ideological stakes of the Mission\u0027s offer and leaving Glim without a counter-argument.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "8",
       "EventType": "negotiation",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 2341,
       "Flags": [
@@ -758,7 +737,7 @@
       "Meaning": "Escalates the Hot Breath crisis to mortal urgency through a child\u0027s suffering, forcing the clan\u0027s hand on accepting surface medicine.",
       "EscalationTarget": "8",
       "EventType": "loss",
-      "RevelationMode": "surprise",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1908,
       "Flags": [
@@ -773,10 +752,12 @@
       "ChapterIndex": 10,
       "Act": 0,
       "Meaning": "Dramatizes the bureaucratic obstruction between Underclan survival and surface aid, indicting registration policy as a lethal abstraction.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "9",
       "EventType": "negotiation",
       "RevelationMode": "suspense",
-      "BeatTags": [],
+      "BeatTags": [
+        "subplot"
+      ],
       "ProseLength": 3871,
       "Flags": [
         "UNSCORED"
@@ -790,9 +771,9 @@
       "ChapterIndex": 10,
       "Act": 0,
       "Meaning": "Pays off Slip\u0027s death to establish the permanent cost of delay, then immediately escalates by having the Lamplighters arrive at the moment of mourning.",
-      "EscalationTarget": "9",
-      "EventType": "loss",
-      "RevelationMode": "surprise",
+      "EscalationTarget": "8",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 4608,
       "Flags": [
@@ -807,13 +788,10 @@
       "ChapterIndex": 10,
       "Act": 0,
       "Meaning": "Reveals Noor\u0027s trustworthiness under genuine pressure, earning her place in the clan\u0027s survival chain through demonstrated competence rather than argument.",
-      "EscalationTarget": "10",
+      "EscalationTarget": "8",
       "EventType": "escape",
       "RevelationMode": "suspense",
-      "BeatTags": [
-        "intertextual-touchpoint",
-        "subplot"
-      ],
+      "BeatTags": [],
       "ProseLength": 3716,
       "Flags": [
         "UNSCORED"
@@ -827,9 +805,9 @@
       "ChapterIndex": 11,
       "Act": 0,
       "Meaning": "Establishes the Tartarian Empire as sanctuary while paying off the flight\u0027s cost by forcing Glim to confront Noor\u0027s absence in the headcount.",
-      "EscalationTarget": "10",
+      "EscalationTarget": "9",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 4560,
       "Flags": [
@@ -844,7 +822,7 @@
       "ChapterIndex": 11,
       "Act": 0,
       "Meaning": "Reveals that Vesh has concealed his own illness, reframing his earlier authority as self-sacrifice and shifting the emotional weight of the crisis onto Glim.",
-      "EscalationTarget": "9",
+      "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
@@ -861,11 +839,11 @@
       "ChapterIndex": 11,
       "Act": 0,
       "Meaning": "Establishes the Tartarian Empire\u0027s inhuman scale to isolate Glim, creating the conditions for the anomalous pulse that will redirect the plot.",
-      "EscalationTarget": "8",
-      "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "7",
+      "EventType": "vigil",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3359,
+      "ProseLength": 3421,
       "Flags": [
         "UNSCORED"
       ],
@@ -878,7 +856,7 @@
       "ChapterIndex": 12,
       "Act": 0,
       "Meaning": "Plants the pulse as a mystery Glim cannot yet act on, while turning the clan\u0027s trajectory from flight toward confrontation with the problem they fled.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "8",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
@@ -895,12 +873,10 @@
       "ChapterIndex": 12,
       "Act": 0,
       "Meaning": "Establishes Glim\u0027s prior relationship with the Cog settlement and introduces Dross as a potential ally shaped by institutional neglect, grounding the coming negotiation in concrete stakes.",
-      "EscalationTarget": "8",
-      "EventType": "arrival",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "subplot"
-      ],
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "none",
+      "BeatTags": [],
       "ProseLength": 2944,
       "Flags": [
         "UNSCORED"
@@ -916,9 +892,8 @@
       "Meaning": "Pays off Noor\u0027s surface-world knowledge by showing it as a practical weapon, transferring institutional power to the Cogs and cementing her value to the alliance.",
       "EscalationTarget": "9",
       "EventType": "exchange",
-      "RevelationMode": "suspense",
+      "RevelationMode": "curiosity",
       "BeatTags": [
-        "intertextual-touchpoint",
         "intertextual-touchpoint",
         "subplot"
       ],
@@ -935,9 +910,9 @@
       "ChapterIndex": 12,
       "Act": 0,
       "Meaning": "Reveals that shared labor dissolves inherited mistrust, escalating the coalition\u0027s capability while demonstrating that the plan\u0027s human element exceeded Glim\u0027s predictions.",
-      "EscalationTarget": "8",
+      "EscalationTarget": "10",
       "EventType": "repair",
-      "RevelationMode": "suspense",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 5247,
       "Flags": [
@@ -952,11 +927,11 @@
       "ChapterIndex": 13,
       "Act": 0,
       "Meaning": "Establishes the cost of victory by showing Homewater violated and subtly altered, grounding the clan\u0027s trauma in sensory detail rather than dramatic loss.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "9",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2086,
+      "ProseLength": 2762,
       "Flags": [
         "UNSCORED"
       ],
@@ -969,9 +944,9 @@
       "ChapterIndex": 13,
       "Act": 0,
       "Meaning": "Pays off Vesh\u0027s arc by letting him die quietly, then uses Glim\u0027s vigil to reveal that the hum is indifferent to human significance, deepening the world\u0027s spiritual ambiguity.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "8",
       "EventType": "loss",
-      "RevelationMode": "surprise",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 4002,
       "Flags": [
@@ -986,13 +961,14 @@
       "ChapterIndex": 13,
       "Act": 0,
       "Meaning": "Turns Noor\u0027s position from guest to agent with independent stakes, escalating external threat while establishing her moral reasoning as distinct from Glim\u0027s tactical calculus.",
-      "EscalationTarget": "5",
-      "EventType": "confrontation",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "7",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
       "BeatTags": [
+        "intertextual-touchpoint",
         "subplot"
       ],
-      "ProseLength": 4090,
+      "ProseLength": 4137,
       "Flags": [
         "UNSCORED"
       ],
@@ -1005,11 +981,11 @@
       "ChapterIndex": 13,
       "Act": 0,
       "Meaning": "Closes the chapter\u0027s recovery arc and reestablishes the Fare ritual as a threshold moment, layering Glim\u0027s accumulated losses into a single image of continuity and unresolved grief.",
-      "EscalationTarget": "4",
-      "EventType": "departure",
+      "EscalationTarget": "6",
+      "EventType": "ceremony",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4410,
+      "ProseLength": 4429,
       "Flags": [
         "UNSCORED"
       ],

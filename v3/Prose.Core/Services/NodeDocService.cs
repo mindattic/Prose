@@ -50,6 +50,17 @@ public class NodeDocService
         this.log = log;
     }
 
+    // Universe slug → the one canon doc every book bible in that universe should cascade to via
+    // `related:` (DCM relational graph, step 5 of DocContextService.PrepareContextAsync). Only
+    // universes with an established world-facts doc get one; others fall through with no link.
+    private static readonly Dictionary<string, string> UniverseRelatedDoc = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["glmz"] = "docs/WORLD.md",
+        ["scry"] = "docs/universes/ENTOS.md",
+        ["caul"] = "docs/universes/ENTOS.md",
+        ["fantasy"] = "docs/universes/ENTOS.md",
+    };
+
     public async Task<NodeDocResult> GenerateAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -59,11 +70,20 @@ public class NodeDocService
         var nodeCode = (node.NodeCode ?? node.Slug).ToUpperInvariant();
         var now = DateTime.UtcNow;
 
-        // Preserve hand-authored content; strip any prior generated sections
-        var handAuthored = ExtractHandAuthored(node.NodeBible);
+        // Preserve hand-authored content; strip any prior generated sections AND any prior
+        // frontmatter block (the frontmatter is recomputed fresh every run from UniverseId,
+        // never hand-edited, so it must never be carried forward as "hand-authored" — otherwise
+        // it accumulates a new block on top of the old one every regenerate).
+        var handAuthored = StripFrontmatter(ExtractHandAuthored(node.NodeBible));
         if (string.IsNullOrWhiteSpace(handAuthored))
             handAuthored = $"# Book Context: {node.Title} ({nodeCode})\n\n" +
                            $"_No hand-authored content yet. Use `set_book_bible` MCP to add arc, characters, voice register, and narrative locks._\n";
+
+        var universeSlug = await db.Universes.AsNoTracking()
+            .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
+        var frontmatter = universeSlug != null && UniverseRelatedDoc.TryGetValue(universeSlug, out var relatedDoc)
+            ? $"---\nrelated: {relatedDoc}\n---\n\n"
+            : "";
 
         // Load generated data
         var blueprint = await blueprintService.GetAsync(nodeId, ct);
@@ -89,6 +109,7 @@ public class NodeDocService
 
         // Assemble final document
         var doc = new StringBuilder();
+        doc.Append(frontmatter);
         doc.Append(handAuthored.TrimEnd());
         doc.AppendLine();
         doc.AppendLine();
@@ -123,6 +144,18 @@ public class NodeDocService
         if (string.IsNullOrWhiteSpace(nodeBible)) return "";
         var match = GeneratedMarkerPattern.Match(nodeBible);
         return match.Success ? nodeBible[..match.Index].TrimEnd() : nodeBible.TrimEnd();
+    }
+
+    /// <summary>Strip a leading `---\n...\n---` frontmatter block, if present. The frontmatter
+    /// (currently just `related:`) is always recomputed fresh from live DB state — it must never
+    /// be preserved as part of "hand-authored" content or it accumulates a block per regenerate.</summary>
+    internal static string StripFrontmatter(string content)
+    {
+        if (!content.StartsWith("---\n")) return content;
+        var end = content.IndexOf("\n---", 4, StringComparison.Ordinal);
+        if (end < 0) return content;
+        var afterClose = content.IndexOf('\n', end + 1);
+        return (afterClose < 0 ? "" : content[(afterClose + 1)..]).TrimStart('\n');
     }
 
     // ── Blueprint section ─────────────────────────────────────────────────────

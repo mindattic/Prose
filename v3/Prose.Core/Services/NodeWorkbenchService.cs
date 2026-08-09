@@ -217,7 +217,7 @@ public class NodeWorkbenchService
         }
 
         if (postBeatValidator != null && beatSlug != null)
-            _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, trimmed), CancellationToken.None)
+            _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, trimmed, beatId), CancellationToken.None)
                 .ContinueWith(t => log.LogError(t.Exception, "QuickValidateAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
 

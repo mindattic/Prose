@@ -197,7 +197,7 @@ public class ContinuityTools
         "with findings, citations, severity, and suggested fixes. Exit-code-equivalent " +
         "convention: ok=true means no contradictions; ok=false means findings exist.")]
     public async Task<string> FindContradictions(
-        [Description("Chapter id (32-char hex). The chapter must exist in engine/data/chapters/<id>/chapter.json.")]
+        [Description("Chapter id (32-char hex), resolved from the SQL canon (IChapterRepository) — the pre-SS-A45 engine/data/chapters/<id>/chapter.json disk layout was retired 2026-05-08.")]
             string chapterId,
         [Description("Quorum requirement for the contradiction vote: plurality | simplemajority | twothirds | unanimous. Default plurality (most permissive — surfaces every voter's concerns).")]
             string quorum = "plurality",
@@ -336,7 +336,7 @@ public class ContinuityTools
         "report with per-chapter findings and a consolidated cross-book finding list. " +
         "Exit-code-equivalent convention: ok=true means no contradictions; ok=false means findings exist.")]
     public async Task<string> FindContradictionsBook(
-        [Description("Book id (32-char hex). The book must exist in engine/data/books/<id>.json with a non-empty chapter_ids list.")]
+        [Description("Book id (32-char hex), resolved from the SQL canon (IBookRepository) with its chapters — the pre-SS-A45 engine/data/books/<id>.json disk layout was retired 2026-05-08.")]
             string bookId,
         [Description("Quorum requirement for the contradiction vote: plurality | simplemajority | twothirds | unanimous. Default plurality (most permissive — surfaces every voter's concerns).")]
             string quorum = "plurality",

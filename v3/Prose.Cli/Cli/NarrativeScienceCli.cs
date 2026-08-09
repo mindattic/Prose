@@ -211,7 +211,11 @@ public static class NarrativeScienceCli
             if (beat == null) { Console.Error.WriteLine($"Beat {beatId} not found."); return 1; }
             var r = await svc.CheckDramaticQuestionAsync(beat.Text ?? "", charId);
             PrintDramaticQuestionResult($"Beat #{beat.Number}", r, json);
-            if (persist) PersistDramaticQuestion(findingsSvc, beat.Id, beat.Number, r);
+            if (persist)
+            {
+                PurgeNarrativeScienceFindings(findingsSvc, [beat.Id], "NARRATIVE-SCIENCE [dramatic-question]:");
+                PersistDramaticQuestion(findingsSvc, beat.Id, beat.Number, r);
+            }
             return r.DramaticQuestionActive ? 0 : 1;
         }
         else
@@ -328,7 +332,11 @@ public static class NarrativeScienceCli
             if (beat == null) { Console.Error.WriteLine($"Beat {beatId} not found."); return 1; }
             var r = await svc.AuditSceneEngagementAsync(beat.Text ?? "");
             PrintSceneAuditResult($"Beat #{beat.Number}", r, json);
-            if (persist) PersistSceneEngagement(findingsSvc, beat.Id, beat.Number, r);
+            if (persist)
+            {
+                PurgeNarrativeScienceFindings(findingsSvc, [beat.Id], "NARRATIVE-SCIENCE [scene-engagement]:");
+                PersistSceneEngagement(findingsSvc, beat.Id, beat.Number, r);
+            }
             return r.BeatPasses ? 0 : 1;
         }
         else
@@ -501,6 +509,9 @@ public static class NarrativeScienceCli
         if (persist)
         {
             const string prefix = "NARRATIVE-SCIENCE [five-act]:";
+            // Supersede semantics: the summary embeds the live gap list, so a changed
+            // gap count would otherwise mint a new DedupKey and orphan the old row forever.
+            findingsSvc.DeleteBySummaryPrefix($"node:{nodeSlug}", prefix);
             var gaps = result.StructuralGaps.Count > 0
                 ? string.Join("; ", result.StructuralGaps.Take(3))
                 : "none";

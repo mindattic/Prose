@@ -165,9 +165,14 @@ PROSE:
         }
         catch (Exception ex)
         {
+            // Must NOT swallow this into a fake-successful LensResult (score:75, zero issues) —
+            // that used to make a total LLM outage indistinguishable from "clean, no issues
+            // found" to every caller. BeatAuditService.AuditAsync (the primary caller) has its
+            // own try/catch specifically designed to detect and report this as a failed lens
+            // (see its 2026-08-09 fix); swallowing here made that catch unreachable in practice,
+            // since the exception never got that far. Log for diagnostics, then let it propagate.
             Log.LogWarning(ex, "{Tag} lens failed for {Slug}", Tag, node.Slug);
-            return new LensResult(nodeId, node.Slug, node.Title, LensName, score,
-                issues, "Lens call failed — re-run.");
+            throw;
         }
 
         // Refresh findings for this lens on this node

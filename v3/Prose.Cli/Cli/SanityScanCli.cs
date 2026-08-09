@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
 using Prose.Core.Data;
+using Prose.Core.Data.Entities;
 using Prose.Core.Services;
 
 namespace Prose.Cli;
@@ -60,27 +61,43 @@ public static class SanityScanCli
         return PrintReport(report, jsonMode);
     }
 
-    // ── --all: scan every non-draft node with >2 beats ──────────────────────
+    // ── --all: scan every book-level node with >2 beats (direct or on its chapters) ──
 
     static async Task<int> RunAllAsync(
         ProseDbContext db,
         SanityScanService scanSvc,
         bool jsonMode)
     {
-        var nodes = await db.Nodes.AsNoTracking()
-            .ToListAsync();
-
-        // Filter to nodes with >2 beats (by joining BeatNodes)
-        var nodeIds = await db.BeatNodes.AsNoTracking()
+        // Only BookNodes are scan targets. SS-A43: a chaptered book holds beats on its
+        // ChapterNode children, not on itself — ScanAsync already rolls those up automatically
+        // when given the book's own id (see its "orderedBeats.Count == 0 -> pull from children"
+        // fallback). The previous filter here ("any node with >2 direct BeatNodes") missed that
+        // rollup entirely: it never selected a chaptered book's own BookNode (zero direct beats)
+        // and instead scanned each ChapterNode as if it were an independent story — which is how
+        // Check C (BelowLengthFloor) produced 122/122 false "below the 50-page BOOK floor"
+        // warnings fleet-wide (confirmed 2026-08-09): every chapter is naturally far shorter
+        // than a whole book. Scanning at the book level instead fixes the floor check for free
+        // and is strictly more informative for the other checks too — Check A/B/D findings still
+        // cite the (globally-unique) Beat.Number, so nothing about locating a finding is lost.
+        var directCounts = await db.BeatNodes.AsNoTracking()
             .Where(sb => sb.IsEnabled)
             .GroupBy(sb => sb.NodeId)
-            .Where(g => g.Count() > 2)
-            .Select(g => g.Key)
-            .ToListAsync();
+            .Select(g => new { NodeId = g.Key, Count = g.Count() })
+            .ToDictionaryAsync(x => x.NodeId, x => x.Count);
 
-        var eligible = nodes
-            .Where(s => nodeIds.Contains(s.Id))
-            .OrderBy(s => s.Title)
+        var childCounts = await (
+            from child in db.Nodes.AsNoTracking()
+            where child.ParentNodeId != null
+            join sb in db.BeatNodes.AsNoTracking().Where(x => x.IsEnabled) on child.Id equals sb.NodeId
+            group sb by child.ParentNodeId!.Value into g
+            select new { ParentId = g.Key, Count = g.Count() }
+        ).ToDictionaryAsync(x => x.ParentId, x => x.Count);
+
+        var books = await db.Nodes.AsNoTracking().OfType<BookNode>().ToListAsync();
+
+        var eligible = books
+            .Where(b => directCounts.GetValueOrDefault(b.Id, 0) + childCounts.GetValueOrDefault(b.Id, 0) > 2)
+            .OrderBy(b => b.Title)
             .ToList();
 
         if (!jsonMode)

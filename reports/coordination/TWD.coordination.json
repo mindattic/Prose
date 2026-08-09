@@ -2,23 +2,22 @@
   "nodeCode": "TWD",
   "slug": "the-fall-down-019f78f4",
   "title": "The Way Down",
-  "generatedAtUtc": "2026-08-01 14:52:09Z",
+  "generatedAtUtc": "2026-08-09 06:57:48Z",
   "totalBeats": 85,
-  "covered": 0,
-  "chapterGranular": false,
+  "covered": 85,
+  "chapterGranular": true,
   "bookScope": {
     "TemporalScheme": "linear",
     "ResolutionMode": "mixed",
     "MoralPolarity": "ambivalent",
     "EndingStyle": "avalanche",
     "HasSubplot": true,
-    "Granularity": "beat",
-    "HasBlueprint": true
+    "Granularity": "chapter",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 4
   },
   "flagCounts": {
-    "MISSING_MEANING": 85,
-    "UNSCORED": 85,
-    "NO_CONSTRUCTION": 71
+    "UNSCORED": 85
   },
   "beats": [
     {
@@ -27,16 +26,18 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "3",
+      "Meaning": "Establishes Reza\u0027s habitual competence and the eerie routine emptiness of his post, priming the reader for disruption.",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "none",
-      "BeatTags": [],
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 388,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee6-7b3d-ac42-2f86049319dd",
@@ -44,16 +45,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "3",
-      "EventType": "negotiation",
+      "Meaning": "Establishes the story\u0027s core world-mechanic \u2014 a tiered, paid-for visual reality \u2014 as a lens for its class divide.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 418,
+      "ProseLength": 250,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee8-73b6-b924-e018653d0221",
@@ -61,16 +62,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "4",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
+      "Meaning": "Introduces the inciting assignment and Reza\u0027s ingrained obedience, revealing he suppresses curiosity about the job\u0027s morality.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 632,
+      "ProseLength": 1033,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee8-73da-a9a1-949b7e9a0c84",
@@ -78,16 +79,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "confrontation",
+      "Meaning": "Reveals Reza\u0027s suppressed origin in the Gray Zone, showing how he\u0027s trained himself not to dwell on where he came from.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 549,
+      "ProseLength": 587,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7625-91d8-0d8e84c2fca5",
@@ -95,16 +96,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "vigil",
-      "RevelationMode": "suspense",
+      "Meaning": "Plants a buried emotional thread \u2014 Tavi\u0027s unexplained significance to Reza \u2014 for later payoff.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 63,
+      "ProseLength": 176,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7dbe-8609-1d7f9b8b6748",
@@ -112,16 +113,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "confession",
-      "RevelationMode": "surprise",
+      "Meaning": "Establishes Auda as a careful operator and signals the personal stakes she\u0027s risking by meeting Tavi face-to-face.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 357,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7ee6-b07c-8a2d3e76b958",
@@ -129,16 +130,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "exchange",
+      "Meaning": "Characterizes Tavi as a meticulous professional who minimizes his own traceable footprint.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 179,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7262-b674-329de64a0269",
@@ -146,16 +147,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "negotiation",
-      "RevelationMode": "suspense",
+      "Meaning": "Delivers the job offer that sets the plot in motion, tying Tavi\u0027s contract directly to the captive on Reza\u0027s guarded floor.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 655,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-79cb-9ce1-8c9dbec2411e",
@@ -163,16 +164,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "ambush",
-      "RevelationMode": "none",
+      "Meaning": "Marks Tavi\u0027s silent acceptance of the job, committing him to the collision course with Reza.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 99,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-725b-beea-12424b667ac8",
@@ -180,16 +181,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "10",
-      "EventType": "betrayal",
-      "RevelationMode": "surprise",
+      "Meaning": "Reveals Tavi\u0027s chosen isolation and specialized lethality, deepening his characterization as a solitary professional.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 350,
+      "ProseLength": 341,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7011-a083-36043693923c",
@@ -197,16 +198,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "escape",
+      "Meaning": "Opens the story mid-transaction to establish the terse, transactional world of contract killing before any context is given.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 36,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-70b3-9947-5eef0e7b772b",
@@ -214,16 +215,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "loss",
-      "RevelationMode": "none",
+      "Meaning": "Establishes Vane\u0027s cold professionalism and the ghost-protocol ethic that governs Tavi\u0027s world.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 162,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-72cd-979a-1c6add3464ff",
@@ -231,16 +232,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "confrontation",
-      "RevelationMode": "none",
+      "Meaning": "Grounds the job in concrete, ominous detail while introducing the target\u0027s name to seed the coming moral conflict.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 446,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7b3a-9b47-43ad6a3ff3f2",
@@ -248,16 +249,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "departure",
-      "RevelationMode": "none",
+      "Meaning": "Humanizes the target by having Tavi imaginatively reconstruct his life, foreshadowing an emotional identification that will complicate the job.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 429,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7814-bd28-97983ae509af",
@@ -265,14 +266,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the inciting reversal, revealing a contradictory kill order that forces an impossible choice and ignites the central conflict.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 810,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7e56-8864-8822a334ee2b",
@@ -280,14 +283,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Rafi\u0027s backstory and motive, showing the desperate logic that turned him into a target worth killing over.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 632,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-0ee9-7900-a508-2bddce1f2295",
@@ -295,14 +300,16 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Widens the frame to show the converging forces around Rafi and draws a mirrored parallel between him and the two hunters closing in, deepening the story\u0027s thematic stakes.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 722,
+      "ProseLength": 644,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-74f3-a141-e8fa7e595dc2",
@@ -310,14 +317,18 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
-      "BeatTags": [],
+      "Meaning": "Demonstrates Tavi\u0027s practiced tradecraft in action, establishing his competence and the high-stakes environment he\u0027s infiltrating.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 418,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-71ec-b494-dcf11cda459f",
@@ -325,14 +336,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates tension by revealing unexpected, deliberate security positioning that signals Tavi isn\u0027t the only professional in the building.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 498,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-7087-859e-457d85f78e45",
@@ -340,14 +353,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces a named guard as the immediate obstacle, sharpening the impending confrontation.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-7bfe-b202-ccbbd394f9f3",
@@ -355,14 +370,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes an eerie, deliberate threat by distinguishing a controlled sabotage from mere destruction, rooting it in a specific remembered precedent.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 565,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-7b99-a472-361d0255f90f",
@@ -370,14 +387,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Reza\u0027s disciplined tactical instincts while planting the suspicion that the intruder is protecting something precious, deepening the mystery\u0027s stakes.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 422,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-75b8-a6e6-40b425bed397",
@@ -385,14 +404,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns recognition into dread as Tavi realizes the mysterious figure\u0027s stance mirrors a specific teacher\u0027s training, linking the threat to his own past.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 558,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-7dfb-b0fc-8be2c8778638",
@@ -400,14 +421,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the standoff\u0027s tension by having Tavi delay naming what he already suspects, building suspense toward a reveal.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 299,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-7b5a-bbee-49fade1fdbbe",
@@ -415,14 +438,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the threat\u0027s sophistication, revealing the attacker shares Bear\u0027s exact strategic priorities, implying an insider connection.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 490,
+      "ProseLength": 412,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-7426-8c15-3d77902d8cfb",
@@ -430,14 +455,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Plants a cryptic clue pointing toward a specific known method/person without naming them, sharpening reader anticipation.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 60,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de0-7932-aab3-4e30e1c76bf6",
@@ -445,14 +472,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the scene\u0027s tension sharply as Reza suppresses a suspicion and then registers an unmistakable signal that the threat has become personal and immediate.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 347,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7e78-9bf8-8ead6483e0c9",
@@ -460,14 +489,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the secrecy and history behind Tavi\u0027s backup communication line, foreshadowing a connection to Bear\u0027s hidden operations.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 388,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7d93-8732-605926812856",
@@ -475,14 +506,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks a small but pivotal turn as hidden communication becomes possible, setting up the coming revelation.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 19,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7d04-a745-f42cc3f366a2",
@@ -490,14 +523,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the chapter\u0027s key revelation beat, confirming a coded signal that ties the intruder\u0027s identity to Bear\u0027s world and forces a held position.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 94,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7291-81fb-fb4b0ea41c4b",
@@ -505,14 +540,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes a shared, illicit history between Reza and an absent partner, planting a threat whose identity the story withholds.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 409,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7434-aa1c-39ee59d728ab",
@@ -520,14 +557,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens Reza\u0027s dread by dramatizing his refusal to name the threat, framing avoidance itself as a form of control he\u0027s losing.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 496,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7825-a7e6-e1db2c53836e",
@@ -535,14 +574,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms the worst-case identity through subtext rather than statement, escalating tension by revealing the two old partners are now on opposing sides.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 205,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-769a-a154-05c7a07286b9",
@@ -550,14 +591,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces Tavi\u0027s professional competence and establishes the job\u0027s target, subverting expectations by making the \u0027package\u0027 a vulnerable teenager.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 528,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-79ed-8573-4159cab2e782",
@@ -565,14 +608,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Undercuts Tavi\u0027s stealth advantage, signaling the target is not a passive object but an aware, active participant in the scene.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 47,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7c86-9b2e-5c448f2ea7e5",
@@ -580,14 +625,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the target already knows Tavi\u0027s legend, collapsing the story\u0027s mythic distance between hired operative and civilian into personal history.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 389,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-716e-93d5-765c2c64036a",
@@ -595,14 +642,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Humanizes the stakes by grounding Tavi\u0027s mission in the kid\u0027s manufactured safety, exposing the moral cost behind the job\u0027s security apparatus.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 697,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7afc-9e69-d67e9cc53960",
@@ -610,14 +659,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks Tavi\u0027s private reaction to being mythologized, showing the emotional weight of his own legend colliding with reality.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 73,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7cbd-9b43-0ba2e6325d88",
@@ -625,14 +676,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Rafi\u0027s idealized, fictionalized understanding of Tavi\u0027s past, ironically framing this real extraction against a childhood fantasy of clean escape.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 560,
+      "ProseLength": 800,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-77b4-b5de-f4330bf6c844",
@@ -640,14 +693,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms the mission\u0027s stakes plainly, committing Tavi to the extraction and setting the chapter\u0027s central tension in motion.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 7,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7466-a946-e8fe7edf3170",
@@ -655,14 +710,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the kid\u0027s naive hope for escape, setting up the moral weight of the choice Tavi must guide him through.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 25,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7d2d-8d54-26856b338e71",
@@ -670,14 +727,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Tavi\u0027s disillusionment by mirroring his own past choice, exposing the trap dressed as opportunity.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 453,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7951-9c43-bc71dc8dfdef",
@@ -685,14 +744,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows Tavi\u0027s honesty straining against the temptation to comfort, deepening his moral burden.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 28,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-6de1-7c1a-9e1d-5ea8ee11dbed",
@@ -700,14 +761,16 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns Tavi\u0027s reputation for truth-telling into a painful weight, and commits him to risk himself first to protect the boy.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 193,
+      "ProseLength": 554,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7be-703f-bca9-d12e52b6bcd2",
@@ -715,14 +778,19 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 530,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+      "Meaning": "Establishes the stakes and fragility of Tavi\u0027s plan by exposing the gap between preparation and uncertain reality.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
       ],
-      "Covered": false
+      "ProseLength": 539,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7571-addb-323c43e2abea",
@@ -730,14 +798,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates tension by showing Tavi\u0027s practiced calm fraying against the danger of discovery.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 544,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-74a9-9108-05881cf59e44",
@@ -745,14 +815,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the precision of Tavi\u0027s planning while foreshadowing that his careful route still depends on Reza\u0027s unpredictable position.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 588,
+      "ProseLength": 608,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7612-85fa-4ecfe6e97dd1",
@@ -760,14 +832,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates dread by confirming the one flaw in Tavi\u0027s plan that no amount of skill can route around.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 411,
+      "ProseLength": 423,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7111-b597-8c278fb64593",
@@ -775,14 +849,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off the earlier tension by confirming Reza\u0027s presence, turning preparation into immediate confrontation.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 244,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-79c2-b0f8-42c1be6f491c",
@@ -790,14 +866,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the confrontation into action, showing Tavi\u0027s mastery of Reza\u0027s habits turned into a tactical advantage.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 346,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-72c5-8595-27f70f32b69a",
@@ -805,14 +883,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Reza\u0027s growth beyond Tavi\u0027s past teaching, planting the mystery of who reshaped him during their years apart.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 186,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-73e9-9686-542a3cb400f8",
@@ -820,14 +900,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the firefight into physical stakes by giving Tavi a wound and forcing him to discard false cover for real tactical thinking.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 701,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7119-9766-97f47e95c929",
@@ -835,14 +917,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Compresses time to heighten tension, underscoring how little margin either fighter has left.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 26,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7c83-8fa1-8193e948c7e2",
@@ -850,14 +934,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the encounter by revealing Reza has out-thought their old playbook, forcing Tavi to face the one variable he couldn\u0027t neutralize.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 489,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-74e8-a4de-8df2147c457a",
@@ -865,14 +951,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the confrontation from ranged to physical by stripping both men of ammunition simultaneously, leveling the fight.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 303,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-777f-a8cb-cfcdcf4a9c87",
@@ -880,14 +968,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the hand-to-hand struggle while revealing Reza\u0027s uncanny resilience, deepening the sense that he\u0027s become someone new.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 559,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7c2f-93e7-5e4dfc0e87bd",
@@ -895,14 +985,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals that Reza\u0027s winning technique was taught by Tavi himself, turning their shared history into a weapon against him.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 192,
+      "ProseLength": 190,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7eda-8a6e-2fb45cb2ab6b",
@@ -910,14 +1002,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Sustains the fight\u0027s momentum by showing Tavi\u0027s refusal to yield, restoring parity as both men re-arm.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 385,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-707d-942f-8454379837a8",
@@ -925,14 +1019,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Freezes the confrontation at its peak tension to set up the standoff\u0027s resolution.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 19,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-736e-a20d-6651d319db67",
@@ -940,14 +1036,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off the entire duel by revealing Tavi\u0027s realization that Reza will let him pass, resolving the personal conflict beneath the job.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 488,
+      "ProseLength": 453,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-72e8-a947-cc78af12bba8",
@@ -955,14 +1053,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reza\u0027s visible internal cost of standing down humanizes him and confirms his mercy is genuine, not performance.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 233,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7e35-b6cc-bcca4e4e765c",
@@ -970,14 +1070,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Tavi rejects the kill he had planned for, revealing the job\u0027s real goal was never Reza\u0027s death.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 306,
+      "ProseLength": 247,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-7e0b-b75a-bc88b009fb41",
@@ -985,14 +1087,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The silence lets the moment of mutual restraint stand without diminishing it through words.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 22,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-761c-acfc-3dfaa9ed5825",
@@ -1000,14 +1104,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reza\u0027s partial, wordless concession grants passage without either man framing it as surrender or debt.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 345,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9fff-c7bf-76ed-8dbe-ebe88b2628de",
@@ -1015,14 +1121,16 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Tavi\u0027s refusal to look back preserves the encounter\u0027s meaning as mercy rather than transaction, sharpening his resolve toward the goal.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 358,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-78f8-b81b-24b99d311dff",
@@ -1030,14 +1138,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Tavi\u0027s isolation and injury underscore the cost of reaching the threshold just as the true goal reappears before him.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 30,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-70c2-94e9-d916637fd6d5",
@@ -1045,14 +1155,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "The leak\u0027s public detonation escalates the stakes instantly, exposing the conspiracy and forcing Rafi into immediate danger.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 612,
+      "ProseLength": 633,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-79df-9cea-7fa322f9a711",
@@ -1060,14 +1172,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Rafi\u0027s escape reveals Tavi\u0027s earlier quiet foresight paying off, showing loyalty and preparation embedded long before this crisis.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 690,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-79d5-9d4d-bde4cadfc9ec",
@@ -1075,14 +1189,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Rafi\u0027s survival closes this thread by showing the scheme\u0027s collapse rendering the fought-over asset worthless, while setting him adrift toward an uncertain future.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 746,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-7abd-a325-022762086311",
@@ -1090,14 +1206,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Onwe\u0027s terse confirmation seals the operation\u0027s outcome, showing the powerful forces above have already moved on.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 169,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-7099-a3a1-0d24b15bd1f9",
@@ -1105,14 +1223,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reza absorbs the confirmation of professional ruin, framing the cost of the job against the city\u0027s indifferent grandeur to mark a personal collapse.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 639,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-7d10-b121-9db834a88413",
@@ -1120,14 +1240,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the stakes of blame and betrayal, contrasting Reza\u0027s recent aspirational hope with his sudden fall to expose the fragility of his upward climb.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 644,
+      "ProseLength": 714,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-7047-9dea-9a8786e22540",
@@ -1135,14 +1257,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Tavi learning of the job\u0027s public failure through cold, transactional means, while resurfacing the unresolved kill contract to escalate looming danger.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 632,
+      "ProseLength": 1035,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-7f2d-a52a-7dfafa90edf4",
@@ -1150,14 +1274,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Unpacks Tavi\u0027s guilt over trusting Reza with the egress, reframing an act of partnership as the fatal error that doomed the job.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 733,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-7ff0-9d70-9ecb236cd0e3",
@@ -1165,14 +1291,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Grounds the reunion in a shared, meaningful setting to underscore the history and fraying bond between Tavi and Reza before their confrontation.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 646,
+      "ProseLength": 917,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-7841-bd42-6d8ee4960ffe",
@@ -1180,14 +1308,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Builds tension through Tavi\u0027s controlled stillness as Reza approaches, signaling a wary, charged reckoning between former partners.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 366,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-3729-71e9-b77a-83da9f723d24",
@@ -1195,14 +1325,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Contrasts the men\u0027s changed gear and loyalties to visually mark how far each has drifted from their shared origins since the job went wrong.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 637,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-372a-7f94-a8ea-41ca11a6b2fa",
@@ -1210,14 +1342,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Confirms Reza was directly endangered by Onwe\u0027s crew, deepening the sense that the fallout has become personal and violent.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 52,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-372a-7cb5-a387-ffcd0a0f97c2",
@@ -1225,14 +1359,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Uses a quiet environmental beat to hold the tension between the two men before they address the true source of their rift.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 239,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-372a-7a51-aee9-69281524e2ef",
@@ -1240,14 +1376,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers the accusation at the heart of their falling-out, confirming Tavi\u0027s deliberate gamble that Reza would shoulder the risk he abandoned.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 360,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-372a-7168-bc05-811f94507f70",
@@ -1255,14 +1393,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Tavi lets Reza go by refusing the old habitual gesture of reconciliation, formally closing a partnership neither will name aloud.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 365,
+      "ProseLength": 524,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-372a-757c-954c-1901bf6f004d",
@@ -1270,14 +1410,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Tavi\u0027s abandonment of both cups seals his break from routine and companionship, marking a quiet personal turning point before dawn.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 436,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-372a-7de4-ab1a-46fc3e2e0bca",
@@ -1285,14 +1427,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Tavi redirects grief into purpose, revealing his last available act of agency and establishing the ticking-clock stakes of the augment slip.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 722,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-372a-7f28-8cc1-d3b165d910ac",
@@ -1300,14 +1444,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "The scene sets the augment booth as the story\u0027s moral flashpoint, showing exploitation already in motion as the vulnerable kid signs away his future.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 590,
+      "ProseLength": 634,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa000-372a-70e0-82c1-563ebb37fea2",
@@ -1315,14 +1461,16 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Tavi\u0027s choice to walk on without intervening pays off his earlier resolve ironically, revealing defeat or complicity where he meant to act.",
+      "EscalationTarget": "5",
+      "EventType": "approach",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 76,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     }
   ]
 }

@@ -59,6 +59,7 @@ public static class MigrateCanonDocsCli
         string? fileArg      = GetArg(args, "--file");
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        var canonDocs = services.GetRequiredService<CanonDocumentService>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
         DocSpec[] specs;
@@ -70,7 +71,7 @@ public static class MigrateCanonDocsCli
                 return 2;
             }
 
-            var universeId = CanonDocumentService.ResolveUniverseId(universeArg);
+            var universeId = await canonDocs.ResolveUniverseIdAsync(universeArg);
             if (universeId == null)
             {
                 Console.Error.WriteLine($"[migrate-canon-docs] Unknown universe '{universeArg}'.");

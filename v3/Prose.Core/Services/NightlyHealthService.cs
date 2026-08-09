@@ -159,12 +159,24 @@ public class NightlyHealthService
         {
             var ob    = orderedBeats[i];
             var stats = statsById[ob.BeatId];
-            outlierById.TryGetValue(ob.BeatId, out var outlier);
+
+            // A labeled-block insert (a NONFICTION glossary/key-figure entry, or a fiction
+            // found-document/branding insert) is a deliberately different content shape from
+            // surrounding narrative prose — it's SUPPOSED to read differently, not a craft
+            // defect. Without this guard, style-outlier/jarring-transition detection (both
+            // measured against the book's own narrative baseline) flags it every time it lands
+            // far enough from that baseline by chance. Validated against the real corpus:
+            // ~1150+ NONFICTION glossary entries share this exact shape, plus 2 legitimate GLMZ
+            // found-document/branding inserts — same suppression is correct for both.
+            var isLabeledInsert = OpensWithCapsHeaderBlock(ob.Text);
+            var outlier = isLabeledInsert ? null : outlierById.GetValueOrDefault(ob.BeatId);
             driftById.TryGetValue(ob.BeatId, out var drift);
+            var isMonotonous = !isLabeledInsert && monotonousA.Contains(ob.BeatId);
+            var isJarring     = !isLabeledInsert && jarringA.Contains(ob.BeatId);
 
             var riskScore = ComputeRisk(stats, outlier);
-            if (monotonousA.Contains(ob.BeatId)) riskScore += 1;
-            if (jarringA.Contains(ob.BeatId))    riskScore += 1;
+            if (isMonotonous) riskScore += 1;
+            if (isJarring)    riskScore += 1;
 
             records.Add(new BeatHealthRecord(
                 BeatId:             ob.BeatId,
@@ -180,12 +192,32 @@ public class NightlyHealthService
                 PassiveCount:       stats.PassiveVoiceCount,
                 TellingCount:       stats.TellingWordCount,
                 SentenceLengthCv:   stats.SentenceLengthCv,
-                AdjacentMonotonous: monotonousA.Contains(ob.BeatId),
-                AdjacentJarring:    jarringA.Contains(ob.BeatId),
+                AdjacentMonotonous: isMonotonous,
+                AdjacentJarring:    isJarring,
                 WordCount:          stats.WordCount));
         }
 
         return records;
+    }
+
+    /// <summary>
+    /// True when a beat opens with a short (2-120 char), all-caps header line — its own line,
+    /// followed by a blank line — the shape of a NONFICTION glossary/key-figure/key-term entry
+    /// ("SNORRI STURLUSON\n\nIcelandic chieftain...") or a fiction found-document/branding insert
+    /// ("*FENRIS BALLISTICS. HOWL FB-7. WOLFPACK.*"). Deliberately permissive about punctuation/
+    /// digits in the header (dates, parentheticals) — the only requirement is that every LETTER
+    /// in the header line is uppercase.
+    /// </summary>
+    internal static bool OpensWithCapsHeaderBlock(string? text)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return false;
+        var trimmed = text.TrimStart();
+        var nlIndex = trimmed.IndexOf('\n');
+        if (nlIndex < 0) return false;
+        var header = trimmed[..nlIndex].TrimEnd();
+        if (header.Length is < 2 or > 120) return false;
+        if (!header.Any(char.IsLetter)) return false;
+        return !header.Any(c => char.IsLetter(c) && !char.IsUpper(c));
     }
 
     private static int ComputeRisk(ProseStats stats, BeatOutlierResult? outlier)

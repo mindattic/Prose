@@ -51,6 +51,14 @@ public class AuditRunnerPersistenceTests
             Task.FromResult(verdicts());
     }
 
+    private sealed class ThrowingRule(string key) : IDeterministicAuditRule
+    {
+        public string Key => key;
+        public string Title => key;
+        public Task<IReadOnlyList<AuditVerdict>> EvaluateAsync(AuditContext ctx, CancellationToken ct) =>
+            throw new InvalidOperationException("Circuit breaker open for provider 'claude-api'.");
+    }
+
     [Test]
     public async Task RunAsync_WritesFindingsForNonPassVerdicts()
     {
@@ -153,6 +161,32 @@ public class AuditRunnerPersistenceTests
 
         Assert.That(findings.ListByFilePathPrefix($"node:{nodeA}"), Is.Empty, "retired rule's findings cleared from node A");
         Assert.That(findings.ListByFilePathPrefix($"node:{nodeB}"), Is.Empty, "retired rule's findings cleared from node B too");
+    }
+
+    [Test]
+    public async Task RunAsync_RuleThrowsOnSecondRun_DoesNotWipePriorRealFindings()
+    {
+        // The 2026-08-09 fix: a rule that threw used to be treated identically to a rule that
+        // legitimately found nothing — the unconditional delete-then-recreate lifecycle deleted
+        // the 2 real findings below and replaced them with a single meaningless "Evaluation
+        // failed" row, permanently losing real signal to a transient provider outage.
+        var nodeId = Guid.NewGuid();
+        var key = "acronym_after_term";
+        var rule = new FakeRule(key, () =>
+        [
+            new AuditVerdict(key, "Acronym after term", "MODERATE", "GLMZ used with no gloss", "loc-1"),
+            new AuditVerdict(key, "Acronym after term", "MODERATE", "ISB used with no gloss", "loc-2"),
+        ]);
+        await runner.RunAsync("BOOKAUDIT", $"node:{nodeId}", FindingCategory.BookAudit, [rule], MakeContext(nodeId));
+        Assert.That(findings.ListByFilePathPrefix($"node:{nodeId}"), Has.Count.EqualTo(2), "first run: 2 real findings");
+
+        var throwingRule = new ThrowingRule(key);
+        var verdicts = await runner.RunAsync("BOOKAUDIT", $"node:{nodeId}", FindingCategory.BookAudit, [throwingRule], MakeContext(nodeId));
+
+        Assert.That(findings.ListByFilePathPrefix($"node:{nodeId}"), Has.Count.EqualTo(2),
+            "a transient evaluation failure must leave the prior real findings untouched, not delete them");
+        Assert.That(verdicts, Has.Count.EqualTo(1).And.Some.Matches<AuditVerdict>(v => v.Evidence.Contains("Evaluation failed")),
+            "the failure is still visible to the caller (e.g. CLI console output) even though it isn't persisted");
     }
 
     [Test]

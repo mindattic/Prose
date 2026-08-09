@@ -68,8 +68,16 @@ public class DataConsistencyService
         // CHAR-HOMETURF-DRIFT and CHAR-AFFIL-MISSING retired 2026-05-08 with the
         // flat HomeTurf / TerritoryHomeTurf / Affiliation columns — bridges
         // (CharacterHomeTurfs, CharacterAffiliations) are now sole source of truth.
+        // But the bridges themselves reintroduce the identical drift risk one level
+        // down: each row carries BOTH a denormalized display Alias AND a FactionId/
+        // PlaceId FK (see CHAR-AFFIL-ALIAS-DRIFT / CHAR-HOMETURF-ALIAS-DRIFT below) —
+        // "sole source of truth" was true of the bridge as a whole, not of its two
+        // fields agreeing with each other.
         await SafeRun(findings, "CHAR-AFFIL-WRONGTYPE",     () => CharacterAffiliationWrongTypeAsync(db, ct));
         await SafeRun(findings, "CHAR-HOMETURF-WRONGTYPE",  () => CharacterHomeTurfWrongTypeAsync(db, ct));
+        await SafeRun(findings, "CHAR-AFFIL-ALIAS-DRIFT",   () => CharacterAffiliationAliasDriftAsync(db, ct));
+        await SafeRun(findings, "CHAR-HOMETURF-ALIAS-DRIFT",() => CharacterHomeTurfAliasDriftAsync(db, ct));
+        await SafeRun(findings, "BRIDGE-ALIAS-DRIFT",       () => BridgeAliasDriftAsync(db, ct));
 
         return new ConsistencyReport(
             RanAtUtc: DateTime.UtcNow,
@@ -145,10 +153,17 @@ public class DataConsistencyService
     }
 
     /// <summary>
-    /// Entity rows whose canonical 1:1 Records.Json blob is missing or empty.
-    /// Repositories round-trip the domain object through that blob; without
-    /// it, the typed columns are the only source and any non-modeled field is
-    /// lost.
+    /// Entity rows whose 1:1 Records.Json blob is missing or empty. Traced 2026-08-09: this is
+    /// NOT a live risk — every concrete repository (CharacterRepository, FactionRepository, etc.)
+    /// reads exclusively through its own Mapper against the flattened TPT tables and never
+    /// touches Records.Json on the hot path (see EntityReviewService.cs's own comment: "the
+    /// typed-repo path reads from the Records JSON table which is empty — all entity data lives
+    /// in the typed SQL tables"). Records.Json is retired one-way migration-backfill scaffolding
+    /// from the TPT relational migration, not a live cache repositories round-trip through.
+    /// Reported at "info" (not "warn") for exactly that reason — it's expected, not a defect.
+    /// The one real, if minor, side effect: the six DataScanUtility maintenance tools
+    /// (FixPhiService, TagNormalizerService, etc. — see DataScanCli) scan Records.Json and are
+    /// therefore no-ops against every row this finding lists.
     /// </summary>
     private async Task<Finding> MissingRecordRowsAsync(ProseDbContext db, CancellationToken ct)
     {
@@ -176,13 +191,18 @@ public class DataConsistencyService
 
         return new Finding(
             Code: "ENT-MISSING-RECORD",
-            Title: "Active entities with no canonical Records.Json blob",
-            Description: "Repositories rebuild domain objects from Records.Json. Without it, only the " +
-                         "TPT columns survive and any field not flattened is silently lost on load.",
+            Title: "Active entities with no Records.Json blob (expected — not a live-path risk)",
+            Description: "Records.Json is retired one-way backfill scaffolding from the TPT relational " +
+                         "migration. No repository reads through it on any live path — every concrete " +
+                         "repository's Mapper queries the flattened TPT tables directly and never falls " +
+                         "back to this blob (confirmed 2026-08-09; see EntityReviewService.cs's own " +
+                         "comment on this). The typed columns are the sole source of truth; nothing is " +
+                         "silently lost. The only real consequence: the six DataScanUtility maintenance " +
+                         "tools (prose --data-scan) scan Records.Json and are no-ops against these rows.",
             DriftCount: count,
             Samples: samples,
-            Severity: count == 0 ? "info" : "warn",
-            FixHint: count > 0 ? "Run the repository's RebuildRecordAsync(entityId) for each row." : null);
+            Severity: "info",
+            FixHint: null);
     }
 
     /// <summary>
@@ -201,7 +221,7 @@ public class DataConsistencyService
             ("Factions",    "faction"),
             ("Corponations","corponation"),
             ("Subsidiaries","subsidiary"),
-            ("Synthetics",  "synthetic"),
+            ("SyntheticLives", "synthetic"),
             ("Automata",    "automaton"),
             ("Ammunitions", "ammunition"),
         };
@@ -214,7 +234,7 @@ public class DataConsistencyService
                 SELECT COUNT_BIG(*) AS Value
                 FROM [dbo].[{table}] s
                 LEFT JOIN [dbo].[Entities] e ON e.Id = s.Id
-                WHERE e.Id IS NULL OR e.IsActive = 0;
+                WHERE e.Id IS NULL OR e.IsActive = 0
                 """).FirstOrDefaultAsync(ct);
             if (n > 0)
             {
@@ -250,7 +270,7 @@ public class DataConsistencyService
             FROM [dbo].[Edges] e
             LEFT JOIN [dbo].[Entities] s ON s.Id = e.SourceId
             LEFT JOIN [dbo].[Entities] t ON t.Id = e.TargetId
-            WHERE s.Id IS NULL OR t.Id IS NULL;
+            WHERE s.Id IS NULL OR t.Id IS NULL
             """).ToListAsync(ct);
 
         long count = await db.Database.SqlQueryRaw<long>("""
@@ -258,7 +278,7 @@ public class DataConsistencyService
             FROM [dbo].[Edges] e
             LEFT JOIN [dbo].[Entities] s ON s.Id = e.SourceId
             LEFT JOIN [dbo].[Entities] t ON t.Id = e.TargetId
-            WHERE s.Id IS NULL OR t.Id IS NULL;
+            WHERE s.Id IS NULL OR t.Id IS NULL
             """).FirstOrDefaultAsync(ct);
 
         var samples = rows.Take(SampleLimit)
@@ -287,7 +307,7 @@ public class DataConsistencyService
             SELECT COUNT_BIG(*) AS Value
             FROM [dbo].[EntityStateEvents] s
             LEFT JOIN [dbo].[Entities] e ON e.Id = s.EntityId
-            WHERE e.Id IS NULL;
+            WHERE e.Id IS NULL
             """).FirstOrDefaultAsync(ct);
 
         return new Finding(
@@ -310,7 +330,7 @@ public class DataConsistencyService
         long count = await db.Database.SqlQueryRaw<long>("""
             SELECT COUNT_BIG(*) AS Value
             FROM [dbo].[EntityStateEvents]
-            WHERE InWorldValidFrom IS NULL;
+            WHERE InWorldValidFrom IS NULL
             """).FirstOrDefaultAsync(ct);
 
         return new Finding(
@@ -335,7 +355,12 @@ public class DataConsistencyService
     /// </summary>
     private async Task<Finding> OverlappingStateWindowsAsync(ProseDbContext db, CancellationToken ct)
     {
-        long count = await db.Database.SqlQueryRaw<long>("""
+        // EF tries to compose FirstOrDefaultAsync() back into SQL wrapped around the raw query
+        // (e.g. "SELECT TOP(1) * FROM (<raw>) AS x"), which fails against a leading ";WITH" CTE
+        // — a CTE must be the first thing in its batch, so wrapping it breaks. Materialize with
+        // ToListAsync (the query already returns exactly one row) and take FirstOrDefault
+        // in-memory instead, matching EF's own "consider calling AsEnumerable" guidance.
+        var countRows = await db.Database.SqlQueryRaw<long>("""
             ;WITH OpenRows AS (
                 SELECT EntityId, AspectKey, COUNT(*) AS OpenCount
                 FROM [dbo].[EntityStateEvents]
@@ -343,8 +368,9 @@ public class DataConsistencyService
                 GROUP BY EntityId, AspectKey
                 HAVING COUNT(*) > 1
             )
-            SELECT COUNT_BIG(*) AS Value FROM OpenRows;
-            """).FirstOrDefaultAsync(ct);
+            SELECT COUNT_BIG(*) AS Value FROM OpenRows
+            """).ToListAsync(ct);
+        long count = countRows.FirstOrDefault();
 
         var rows = await db.Database.SqlQueryRaw<OverlapSampleRow>("""
             SELECT TOP (5) CAST(EntityId AS NVARCHAR(50)) AS EntityId,
@@ -353,7 +379,7 @@ public class DataConsistencyService
             WHERE InWorldValidTo IS NULL
             GROUP BY EntityId, AspectKey
             HAVING COUNT(*) > 1
-            ORDER BY COUNT(*) DESC;
+            ORDER BY COUNT(*) DESC
             """).ToListAsync(ct);
 
         var samples = rows.Select(r => new SampleRow(
@@ -388,7 +414,7 @@ public class DataConsistencyService
             FROM [dbo].[CharacterAffiliations] ca
             JOIN [dbo].[Entities] e ON e.Id = ca.FactionId
             WHERE ca.FactionId IS NOT NULL
-              AND e.EntityType <> 'faction';
+              AND e.EntityType <> 'faction'
             """).ToListAsync(ct);
 
         long count = await db.Database.SqlQueryRaw<long>("""
@@ -396,7 +422,7 @@ public class DataConsistencyService
             FROM [dbo].[CharacterAffiliations] ca
             JOIN [dbo].[Entities] e ON e.Id = ca.FactionId
             WHERE ca.FactionId IS NOT NULL
-              AND e.EntityType <> 'faction';
+              AND e.EntityType <> 'faction'
             """).FirstOrDefaultAsync(ct);
 
         var samples = rows.Take(SampleLimit)
@@ -426,7 +452,7 @@ public class DataConsistencyService
             FROM [dbo].[CharacterHomeTurfs] cht
             JOIN [dbo].[Entities] e ON e.Id = cht.PlaceId
             WHERE cht.PlaceId IS NOT NULL
-              AND e.EntityType <> 'place';
+              AND e.EntityType <> 'place'
             """).ToListAsync(ct);
 
         long count = await db.Database.SqlQueryRaw<long>("""
@@ -434,7 +460,7 @@ public class DataConsistencyService
             FROM [dbo].[CharacterHomeTurfs] cht
             JOIN [dbo].[Entities] e ON e.Id = cht.PlaceId
             WHERE cht.PlaceId IS NOT NULL
-              AND e.EntityType <> 'place';
+              AND e.EntityType <> 'place'
             """).FirstOrDefaultAsync(ct);
 
         var samples = rows.Take(SampleLimit)
@@ -448,6 +474,180 @@ public class DataConsistencyService
             DriftCount: count,
             Samples: samples,
             Severity: count == 0 ? "info" : "error");
+    }
+
+    /// <summary>
+    /// CharacterAffiliations.Alias (the denormalized display text — feeds directly into
+    /// <c>Character.Affiliation</c> in <c>CharacterMapper</c>, and from there into
+    /// <c>WorldGraphService.BuildCharacters()</c>'s "affiliated_with" edge and every prose-
+    /// generation context that reads it) drifted from the Faction it's actually FK'd to.
+    ///
+    /// Confirmed live 2026-08-09: 10 rows where Alias names one real, active Faction (e.g.
+    /// "House Ocipheus") while FactionId points at a DIFFERENT real, active Faction (e.g.
+    /// "House Corvin") — most plausibly a faction rename/merge where the FK correctly
+    /// followed the entity but the row's own cached Alias text was never refreshed. Both
+    /// names being real, live factions makes this worse than a typo: prose context and any
+    /// display surface reading <c>Alias</c> reports a technically-real but WRONG affiliation,
+    /// and <c>WorldGraphService</c>'s edge-target slug (built from Alias, not FactionId)
+    /// silently points at a different graph vertex than the row's own FK does.
+    /// </summary>
+    private async Task<Finding> CharacterAffiliationAliasDriftAsync(ProseDbContext db, CancellationToken ct)
+    {
+        var rows = await db.Database.SqlQueryRaw<AliasDriftSample>("""
+            SELECT TOP (6)
+                CAST(ca.CharacterId AS NVARCHAR(50)) AS OwnerId,
+                ca.Alias                              AS CachedAlias,
+                f.Name                                AS ActualName
+            FROM [dbo].[CharacterAffiliations] ca
+            JOIN [dbo].[Factions] f ON f.Id = ca.FactionId
+            WHERE ca.Alias <> f.Name
+            """).ToListAsync(ct);
+
+        long count = await db.Database.SqlQueryRaw<long>("""
+            SELECT COUNT_BIG(*) AS Value
+            FROM [dbo].[CharacterAffiliations] ca
+            JOIN [dbo].[Factions] f ON f.Id = ca.FactionId
+            WHERE ca.Alias <> f.Name
+            """).FirstOrDefaultAsync(ct);
+
+        var samples = rows.Take(SampleLimit)
+            .Select(r => new SampleRow(r.OwnerId, $"shows '{r.CachedAlias}' but FactionId now points at '{r.ActualName}'"))
+            .ToList();
+
+        return new Finding(
+            Code: "CHAR-AFFIL-ALIAS-DRIFT",
+            Title: "CharacterAffiliations.Alias disagrees with its own FactionId",
+            Description: "The row's cached display Alias no longer matches the Name of the Faction its " +
+                         "own FactionId points to — most likely a Faction rename/merge that updated the " +
+                         "FK's target but never refreshed this row's Alias. Character.Affiliation (and " +
+                         "everything downstream: prose context, WorldGraphService's affiliated_with edge) " +
+                         "reads Alias, so it reports the wrong faction even though the relational FK is " +
+                         "correct.",
+            DriftCount: count,
+            Samples: samples,
+            Severity: count == 0 ? "info" : "warn",
+            FixHint: count > 0
+                ? "UPDATE ca SET ca.Alias = f.Name FROM CharacterAffiliations ca JOIN Factions f ON f.Id = ca.FactionId WHERE ca.Alias <> f.Name;"
+                : null);
+    }
+
+    /// <summary>Same drift shape as <see cref="CharacterAffiliationAliasDriftAsync"/>, for
+    /// CharacterHomeTurfs.Alias vs the Place its PlaceId points to. 0 drift confirmed live
+    /// 2026-08-09 (unlike Affiliations, no Place renames have left this bridge stale) — kept
+    /// as an active check since the underlying risk (denormalized cache vs FK) is identical
+    /// and the CHAR-AFFIL sibling proves it does happen in this schema.</summary>
+    private async Task<Finding> CharacterHomeTurfAliasDriftAsync(ProseDbContext db, CancellationToken ct)
+    {
+        var rows = await db.Database.SqlQueryRaw<AliasDriftSample>("""
+            SELECT TOP (6)
+                CAST(cht.CharacterId AS NVARCHAR(50)) AS OwnerId,
+                cht.Alias                              AS CachedAlias,
+                p.Name                                 AS ActualName
+            FROM [dbo].[CharacterHomeTurfs] cht
+            JOIN [dbo].[Places] p ON p.Id = cht.PlaceId
+            WHERE cht.Alias <> p.Name
+            """).ToListAsync(ct);
+
+        long count = await db.Database.SqlQueryRaw<long>("""
+            SELECT COUNT_BIG(*) AS Value
+            FROM [dbo].[CharacterHomeTurfs] cht
+            JOIN [dbo].[Places] p ON p.Id = cht.PlaceId
+            WHERE cht.Alias <> p.Name
+            """).FirstOrDefaultAsync(ct);
+
+        var samples = rows.Take(SampleLimit)
+            .Select(r => new SampleRow(r.OwnerId, $"shows '{r.CachedAlias}' but PlaceId now points at '{r.ActualName}'"))
+            .ToList();
+
+        return new Finding(
+            Code: "CHAR-HOMETURF-ALIAS-DRIFT",
+            Title: "CharacterHomeTurfs.Alias disagrees with its own PlaceId",
+            Description: "Same drift shape as CHAR-AFFIL-ALIAS-DRIFT: the cached display Alias no longer " +
+                         "matches the Name of the Place its own PlaceId points to.",
+            DriftCount: count,
+            Samples: samples,
+            Severity: count == 0 ? "info" : "warn",
+            FixHint: count > 0
+                ? "UPDATE cht SET cht.Alias = p.Name FROM CharacterHomeTurfs cht JOIN Places p ON p.Id = cht.PlaceId WHERE cht.Alias <> p.Name;"
+                : null);
+    }
+
+    /// <summary>
+    /// Same drift shape as CHAR-AFFIL-ALIAS-DRIFT, swept across every other bridge table in the
+    /// schema that carries both a denormalized display <c>Alias</c> and a target FK into
+    /// <see cref="Data.Entities.Entity"/> (via any TPT subtype). Confirmed live 2026-08-09 by a
+    /// full-schema sweep after the CharacterAffiliations finding turned out not to be a one-off:
+    /// 204 additional drifted rows across 11 more tables, some far higher-rate than the 0.6% seen
+    /// on CharacterAffiliations — <c>ChapterCharacters</c> 47.6%, <c>PlaceFrequentedBy</c> 43.5%,
+    /// <c>FactionMembers</c> 10.6%. Two of these feed <c>WorldGraphService</c> graph edges
+    /// directly (<c>FactionRelationships</c> → <c>BuildFactions()</c>'s Relationships loop,
+    /// <c>PlaceFrequentedBy</c> → <c>LinkDistrictFrequentedBy()</c>) — a drifted Alias there
+    /// silently mislabels the edge's target node, not just a display string. Excludes
+    /// <c>BookProtagonists</c>/<c>ChapterCharacters</c>'s legacy-model siblings only where the
+    /// row count made a table not worth a permanent check (see the exclusion list at the bottom);
+    /// <c>ChapterCharacters</c> itself is included since its 47.6% drift rate is too high to
+    /// silently drop even at n=63.
+    /// </summary>
+    private async Task<Finding> BridgeAliasDriftAsync(ProseDbContext db, CancellationToken ct)
+    {
+        // (Table, TargetIdColumn) — every table here has exactly two uniqueidentifier columns:
+        // its own "owner" FK (matches the table's domain, e.g. WeaponId in WeaponAmmunitionTypes)
+        // and this "target" FK, which points into the Entities TPT base table regardless of the
+        // target's concrete subtype (Character, Place, Faction, Archetype, Weapon, ...). Joining
+        // straight against Entities.Id — not any one subtype table — is what makes one query
+        // shape cover every row here despite the target types differing per table.
+        // CHAR-AFFIL-ALIAS-DRIFT / CHAR-HOMETURF-ALIAS-DRIFT cover CharacterAffiliations/
+        // CharacterHomeTurfs separately (shipped first, kept as their own named checks).
+        // BookProtagonists (legacy Book model, superseded by BookNode; 6 total rows) is excluded
+        // — too small to justify a permanent check line, tracked qualitatively in memory instead.
+        var tables = new (string Table, string TargetIdColumn)[]
+        {
+            ("PlaceRelatedEntities",        "RelatedEntityId"),
+            ("ChapterCharacters",           "CharacterId"),
+            ("FactionMembers",              "CharacterId"),
+            ("FactionRelationships",        "TargetFactionId"),
+            ("PlaceFrequentedBy",           "TargetEntityId"),
+            ("ArchetypeSimilars",           "SimilarArchetypeId"),
+            ("ArchetypeOpposites",          "OppositeArchetypeId"),
+            ("AmmunitionCompatibleWeapons", "WeaponId"),
+            ("WeaponAmmunitionTypes",       "AmmunitionId"),
+            ("ApparelWornBy",               "CharacterEntityId"),
+            ("PlaceAdjacencies",            "NeighborId"),
+            ("TechnologyDevelopers",        "DeveloperEntityId"),
+        };
+
+        long total = 0;
+        var samples = new List<SampleRow>();
+        foreach (var (table, targetCol) in tables)
+        {
+            var n = await db.Database.SqlQueryRaw<long>($"""
+                SELECT COUNT_BIG(*) AS Value
+                FROM [dbo].[{table}] t
+                JOIN [dbo].[Entities] e ON e.Id = t.[{targetCol}]
+                WHERE t.Alias <> e.Name
+                """).FirstOrDefaultAsync(ct);
+            if (n > 0)
+            {
+                total += n;
+                if (samples.Count < SampleLimit)
+                    samples.Add(new SampleRow(table, $"{n} rows where Alias disagrees with the linked Entity's current Name"));
+            }
+        }
+
+        return new Finding(
+            Code: "BRIDGE-ALIAS-DRIFT",
+            Title: "Bridge-table Alias columns disagreeing with their own target FK",
+            Description: "Same shape as CHAR-AFFIL-ALIAS-DRIFT, swept across every other bridge " +
+                         "table with a denormalized Alias cache alongside its target FK. Two of " +
+                         "these (FactionRelationships, PlaceFrequentedBy) feed WorldGraphService " +
+                         "edges directly, so a drifted Alias mislabels the graph edge's target, " +
+                         "not just a display string.",
+            DriftCount: total,
+            Samples: samples,
+            Severity: total == 0 ? "info" : "warn",
+            FixHint: total > 0
+                ? "For each listed table: UPDATE t SET t.Alias = e.Name FROM [Table] t JOIN Entities e ON e.Id = t.[TargetIdColumn] WHERE t.Alias <> e.Name;"
+                : null);
     }
 
     // ── auto-fix surface ──────────────────────────────────────────────────────
@@ -482,6 +682,32 @@ public class DataConsistencyService
             result["ESE-DANGLING"] = n;
         }
 
+        if (codes.Contains("CHAR-AFFIL-ALIAS-DRIFT"))
+        {
+            // Direction is unambiguous: FactionId is the relational FK (the thing DCM/graph
+            // traversal actually follows), Alias is only ever a denormalized display cache of
+            // whatever that FK pointed at when the row was written. Refreshing Alias to match
+            // the FK's current Name can't lose information the FK didn't already supersede.
+            var n = await db.Database.ExecuteSqlRawAsync("""
+                UPDATE ca SET ca.Alias = f.Name
+                FROM [dbo].[CharacterAffiliations] ca
+                JOIN [dbo].[Factions] f ON f.Id = ca.FactionId
+                WHERE ca.Alias <> f.Name;
+                """, ct);
+            result["CHAR-AFFIL-ALIAS-DRIFT"] = n;
+        }
+
+        if (codes.Contains("CHAR-HOMETURF-ALIAS-DRIFT"))
+        {
+            var n = await db.Database.ExecuteSqlRawAsync("""
+                UPDATE cht SET cht.Alias = p.Name
+                FROM [dbo].[CharacterHomeTurfs] cht
+                JOIN [dbo].[Places] p ON p.Id = cht.PlaceId
+                WHERE cht.Alias <> p.Name;
+                """, ct);
+            result["CHAR-HOMETURF-ALIAS-DRIFT"] = n;
+        }
+
         if (codes.Contains("ESE-WINDOW-OVERLAP"))
         {
             // Close every non-newest open row by setting InWorldValidTo to the next
@@ -501,7 +727,7 @@ public class DataConsistencyService
                 UPDATE e SET e.InWorldValidTo = ISNULL(r.NextFrom, r.NextAt)
                 FROM [dbo].[EntityStateEvents] e
                 JOIN Ranked r ON r.Id = e.Id
-                WHERE r.NextAt IS NOT NULL;
+                WHERE r.NextAt IS NOT NULL
                 """, ct);
             result["ESE-WINDOW-OVERLAP"] = n;
         }
@@ -532,5 +758,12 @@ public class DataConsistencyService
         public string OwnerId { get; set; } = "";
         public string ActualType { get; set; } = "";
         public string PointedName { get; set; } = "";
+    }
+
+    private sealed class AliasDriftSample
+    {
+        public string OwnerId { get; set; } = "";
+        public string CachedAlias { get; set; } = "";
+        public string ActualName { get; set; } = "";
     }
 }

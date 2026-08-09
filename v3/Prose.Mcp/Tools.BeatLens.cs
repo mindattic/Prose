@@ -64,16 +64,26 @@ public class BeatLensTools
             id = s.Id;
         }
 
-        var r = await svc.RunAsync(id);
-        return JsonSerializer.Serialize(new
+        try
         {
-            node_id = r.NodeId, slug = r.Slug, title = r.Title,
-            lens = r.Lens, score = r.Score, recommendation = r.Recommendation,
-            issues = r.Issues.Select(i => new
+            var r = await svc.RunAsync(id);
+            return JsonSerializer.Serialize(new
             {
-                beat = i.Beat, kind = i.Kind, severity = i.Severity,
-                evidence = i.Evidence, fix = i.Fix
-            })
-        }, JsonOpts);
+                node_id = r.NodeId, slug = r.Slug, title = r.Title,
+                lens = r.Lens, score = r.Score, recommendation = r.Recommendation,
+                issues = r.Issues.Select(i => new
+                {
+                    beat = i.Beat, kind = i.Kind, severity = i.Severity,
+                    evidence = i.Evidence, fix = i.Fix
+                })
+            }, JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            // The lens genuinely failed to evaluate (LLM outage, malformed response) — surface
+            // it as an explicit error, never as a silent "issues: []" (see BeatLensService's
+            // 2026-08-09 fix, which stopped swallowing this into a fake-clean LensResult).
+            return JsonSerializer.Serialize(new { error = ex.Message, nodeIdOrSlug }, JsonOpts);
+        }
     }
 }

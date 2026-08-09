@@ -139,7 +139,13 @@ public class StructuralDiagnosticService
         bool blocking  = !truncated && checks.Any(c => c.IsBlocking && c.Result == StructuralCheckResult.Fail);
 
         // File blocking failures as findings so they surface at /findings — but only
-        // when the checks actually saw the whole node (not a truncated opening).
+        // when the checks actually saw the whole node (not a truncated opening). A truncated
+        // call has no signal either way about a prior full-node run's findings, so the purge
+        // stays scoped to the non-truncated path too — it only replaces stale data with
+        // equally-trustworthy fresh data, never blanks real findings on a partial view.
+        if (!truncated)
+            findings.DeleteBySummaryPrefix($"node:{slug}", "STRUCTURAL-FAILURE ");
+
         foreach (var check in checks.Where(c => !truncated && c.IsBlocking && c.Result == StructuralCheckResult.Fail))
         {
             findings.Upsert(

@@ -213,4 +213,31 @@ public class FixPhiServiceTests
         Assert.That(result.ChangesApplied, Is.EqualTo(1));
         Assert.That(result.FilesModified, Is.EqualTo(1));
     }
+
+    // ── dryRun (2026-08-09): preview without writing ────────────────────────────
+    // This is a mass-mutation utility with no other confirmation step, so a caller
+    // must be able to see what WOULD change before committing to a real write.
+
+    [Test]
+    public async Task Run_DryRun_ReportsChangeCountButDoesNotWrite()
+    {
+        var id = SeedEntity(new { name = "Test", description = "Costs 50 Phi per dose." });
+
+        var result = await svc.RunAsync(dryRun: true);
+
+        Assert.That(result.ChangesApplied, Is.EqualTo(1), "dry run must still report what would change");
+        Assert.That(ReadEntity(id)["description"]?.GetValue<string>(), Is.EqualTo("Costs 50 Phi per dose."),
+            "dry run must never write the mutation back to the DB");
+    }
+
+    [Test]
+    public async Task Run_DryRunThenRealRun_RealRunStillAppliesTheChange()
+    {
+        var id = SeedEntity(new { name = "Test", description = "Costs 50 Phi per dose." });
+
+        await svc.RunAsync(dryRun: true);
+        await svc.RunAsync();
+
+        Assert.That(ReadEntity(id)["description"]?.GetValue<string>(), Is.EqualTo("Costs 50 Quanta per dose."));
+    }
 }

@@ -512,6 +512,8 @@ public class SceneContextAssembler(
             AppendField(sb, "VOICE — intimacy register", c.SpeechIntimacyRegister);
             if (!string.IsNullOrWhiteSpace(c.NarrationVoice))
                 AppendField(sb, "NARRATION VOICE", c.NarrationVoice);
+            // SS-A46 register field 6/6 — informs subtext/evasion, never stated outright on the page.
+            AppendField(sb, "PSYCHOLOGY — secret", c.PsychologySecret);
 
             var lines = await db.Set<CharacterSpeechPhrase>().AsNoTracking()
                 .Where(p => p.CharacterId == r.EntityId && p.Bucket == "example_lines")

@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using Prose.Core.Interfaces;
 
 namespace Prose.Core.Services.Audit;
@@ -19,16 +20,25 @@ namespace Prose.Core.Services.Audit;
 /// enumerable checks: BookAuditService's commandments, NounConsistencyService's deprecated-name
 /// rows, and LogicSweepService's six dimensions all fit.
 /// </summary>
-public class AuditRunner(ILlmService llm, FindingsService findings)
+public class AuditRunner(ILlmService llm, FindingsService findings, ILogger<AuditRunner>? log = null)
 {
     /// <summary>
     /// Runs every rule (in parallel), then — unless <paramref name="writeFindings"/> is false —
-    /// persists the result: for EVERY rule in <paramref name="rules"/> (not just the ones that
+    /// persists the result: for every rule that evaluated successfully (not just the ones that
     /// found something), delete any Findings row this audit previously wrote for it, then
-    /// re-insert whatever it found this run. Doing the delete unconditionally per rule (rather
-    /// than only for rules with a PASS verdict) is what keeps a rule that fires a variable
+    /// re-insert whatever it found this run. Doing the delete unconditionally per successful rule
+    /// (rather than only for rules with a PASS verdict) is what keeps a rule that fires a variable
     /// number of times per run (0 here, 3 there) from leaving stale rows behind for hits that
     /// stopped reproducing.
+    ///
+    /// A rule that THROWS (LLM timeout, provider circuit-breaker, malformed response) is excluded
+    /// from the delete-then-recreate cycle entirely — its key is never passed to
+    /// <see cref="WriteFindingsForRules"/>, so whatever it found on its last successful run is
+    /// left exactly as-is. Without this carve-out, a transient provider outage would delete real,
+    /// previously-found violations and replace them with a single meaningless "Evaluation failed"
+    /// row — permanent data loss triggered by a temporary rate limit. The failure IS still
+    /// returned to the caller (as a MODERATE verdict) so a console/CLI caller watching this run
+    /// sees that the rule didn't execute; it's only excluded from what gets written to the DB.
     /// </summary>
     public async Task<IReadOnlyList<AuditVerdict>> RunAsync(
         string auditName,
@@ -40,7 +50,7 @@ public class AuditRunner(ILlmService llm, FindingsService findings)
         CancellationToken ct = default)
     {
         var results = await Task.WhenAll(rules.Select(r => EvaluateOneAsync(r, ctx, ct)));
-        var verdicts = results.SelectMany(v => v).ToList();
+        var allVerdicts = results.SelectMany(r => r.Verdicts).ToList();
         if (writeFindings)
         {
             // Reap beat-anchored findings whose beat has since been soft-deleted before writing
@@ -50,9 +60,24 @@ public class AuditRunner(ILlmService llm, FindingsService findings)
             // leaves them open forever, quoting prose no longer in the book. Any audit run is a
             // safe, cheap moment to clear them — see FindingsService.DismissStaleBeatFindingsAsync.
             await findings.DismissStaleBeatFindingsAsync(ct);
-            WriteFindingsForRules(auditName, filePathKey, category, rules.Select(r => r.Key).ToList(), verdicts);
+
+            var succeededKeys = new List<string>();
+            var verdictsToWrite = new List<AuditVerdict>();
+            for (var i = 0; i < rules.Count; i++)
+            {
+                if (results[i].Failed)
+                {
+                    log?.LogWarning("[audit:{AuditName}] rule '{Rule}' failed to evaluate for {FilePathKey} — " +
+                        "skipping this run for it; its existing findings (if any) are left untouched instead " +
+                        "of being wiped by a transient failure.", auditName, rules[i].Key, filePathKey);
+                    continue;
+                }
+                succeededKeys.Add(rules[i].Key);
+                verdictsToWrite.AddRange(results[i].Verdicts);
+            }
+            WriteFindingsForRules(auditName, filePathKey, category, succeededKeys, verdictsToWrite);
         }
-        return verdicts;
+        return allVerdicts;
     }
 
     /// <summary>
@@ -107,24 +132,32 @@ public class AuditRunner(ILlmService llm, FindingsService findings)
     internal static string SummaryFor(string prefix, string ruleKey, string? location) =>
         $"{DeleteKeyPrefix(prefix, ruleKey)}{location}: ";
 
-    async Task<IReadOnlyList<AuditVerdict>> EvaluateOneAsync(IAuditRule rule, AuditContext ctx, CancellationToken ct)
+    async Task<(IReadOnlyList<AuditVerdict> Verdicts, bool Failed)> EvaluateOneAsync(
+        IAuditRule rule, AuditContext ctx, CancellationToken ct)
     {
         try
         {
-            return rule switch
+            IReadOnlyList<AuditVerdict> verdicts = rule switch
             {
                 IDeterministicAuditRule det => await det.EvaluateAsync(ctx, ct),
                 ILlmAuditRule llmRule       => await RunLlmRuleAsync(llmRule, ctx, ct),
                 _ => throw new NotSupportedException(
                     $"Rule '{rule.Key}' implements neither {nameof(IDeterministicAuditRule)} nor {nameof(ILlmAuditRule)}."),
             };
+            return (verdicts, false);
         }
         catch (Exception ex)
         {
-            // A rule that throws (LLM timeout, malformed response, whatever) is reported as a
-            // MODERATE finding rather than silently vanishing from the audit — matches
-            // BookAuditService's prior "warn" fallback on exception.
-            return [new AuditVerdict(rule.Key, rule.Title, "MODERATE", $"Evaluation failed: {ex.Message}")];
+            // A rule that throws (LLM timeout, malformed response, provider circuit-breaker,
+            // whatever) is reported as an ERROR verdict rather than silently vanishing from the
+            // caller's view. ERROR is deliberately its own severity, distinct from MODERATE — a
+            // caller computing a readiness gate (e.g. BookAuditService.GatewayReady) must treat
+            // "this check never ran" as blocking, the same as a real failure; folding it into
+            // MODERATE let a book whose every commandment errored out (API outage, exhausted
+            // credit balance) print "READY — all commandments satisfied" with zero commandments
+            // actually evaluated. Failed=true additionally keeps RunAsync from persisting this
+            // placeholder to the DB: it must never overwrite (or masquerade as) a real finding.
+            return ([new AuditVerdict(rule.Key, rule.Title, "ERROR", $"Evaluation failed: {ex.Message}")], true);
         }
     }
 

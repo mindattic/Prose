@@ -2,23 +2,22 @@
   "nodeCode": "SRZR",
   "slug": "steppin-razor-019ef7be",
   "title": "Steppin\u0027 Razor",
-  "generatedAtUtc": "2026-08-01 14:52:02Z",
+  "generatedAtUtc": "2026-08-09 06:57:30Z",
   "totalBeats": 297,
-  "covered": 0,
-  "chapterGranular": false,
+  "covered": 297,
+  "chapterGranular": true,
   "bookScope": {
     "TemporalScheme": "nonlinear",
     "ResolutionMode": "mixed",
     "MoralPolarity": "ambivalent",
     "EndingStyle": "quiet",
     "HasSubplot": true,
-    "Granularity": "beat",
-    "HasBlueprint": true
+    "Granularity": "chapter",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 3
   },
   "flagCounts": {
-    "MISSING_MEANING": 297,
-    "UNSCORED": 297,
-    "NO_CONSTRUCTION": 266
+    "UNSCORED": 297
   },
   "beats": [
     {
@@ -27,16 +26,18 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "3",
-      "EventType": "vigil",
+      "Meaning": "Establishes Sasha\u0027s world through anonymous, transactional survival, signaling a life built on avoiding notice.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
-      "BeatTags": [],
+      "BeatTags": [
+        "subplot"
+      ],
       "ProseLength": 294,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0be-7b39-aad2-66c915f8009a",
@@ -44,16 +45,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "4",
-      "EventType": "ambush",
-      "RevelationMode": "suspense",
+      "Meaning": "Grounds the story in a vast, indifferent industrial setting that will serve as backdrop for the coming violence.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 526,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0bf-7d0c-af8e-ba924d265534",
@@ -61,16 +62,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "negotiation",
-      "RevelationMode": "none",
+      "Meaning": "Isolates Sasha\u0027s role as observer, marking her as separate from the ordinary human bustle around her.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 31,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7aeb-855a-2318cc9d80a0",
@@ -78,16 +79,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "4",
-      "EventType": "discovery",
+      "Meaning": "Establishes Sasha\u0027s professional boundaries and self-control, setting rules that the chapter will soon test.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 353,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7503-8711-32fcc7054a70",
@@ -95,16 +96,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
+      "Meaning": "Reveals the job\u0027s true criminal stakes beneath its bureaucratic disguise, raising tension around what she\u0027s really guarding.",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "none",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 430,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-759e-be87-efd4fb0ca8aa",
@@ -112,16 +113,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "departure",
-      "RevelationMode": "none",
+      "Meaning": "Reinforces Sasha\u0027s passive vigilance, priming the reader for the disruption of her stillness.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 91,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-78d1-95b2-68a48b713340",
@@ -129,16 +130,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "confrontation",
-      "RevelationMode": "suspense",
+      "Meaning": "Reveals the core mystery of Sasha\u0027s altered perception, explaining her strange sensitivity and hinting at deeper stakes behind her presence.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 543,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-78f6-a10c-607a97ae78fb",
@@ -146,16 +147,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "chase",
-      "RevelationMode": "none",
+      "Meaning": "Introduces an antagonist whose scrutiny threatens to expose Sasha\u0027s vulnerability and destabilize the deal\u0027s fragile calm.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 553,
+      "ProseLength": 555,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7749-83c4-43d40702b325",
@@ -163,16 +164,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "inventory",
+      "Meaning": "Escalates the scene into sudden violence, revealing Sasha\u0027s lethal competence and shattering her promised restraint.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 421,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7eef-8e12-8373ef11f78a",
@@ -180,16 +181,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
+      "Meaning": "Reveals the emotional payoff of her violence\u2014a rare moment of internal peace\u2014deepening the mystery of her condition and its cost.",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "none",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 449,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7975-85c1-539bb15690f0",
@@ -197,16 +198,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "vigil",
+      "Meaning": "Establishes Sasha\u0027s cold, methodical aftermath habits, signaling she leaves violence deliberate and controlled rather than reckless.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 70,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-72f9-8e7d-66792548955f",
@@ -214,16 +215,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "departure",
-      "RevelationMode": "suspense",
+      "Meaning": "Escalates the stakes by revealing the job has collapsed into a liability that endangers Sasha directly.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 237,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7d78-96b3-5917c1bf9dcc",
@@ -231,16 +232,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "confrontation",
+      "Meaning": "Establishes the fixer\u0027s turn against Sasha, showing her calm defiance and setting the client relationship as fractured beyond repair.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 395,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-77f7-84f2-c09935799cc3",
@@ -248,16 +249,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "breach",
-      "RevelationMode": "suspense",
+      "Meaning": "Reveals the mechanism by which Sasha will be scapegoated, establishing the reputational threat that will pursue her offscreen.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 516,
+      "ProseLength": 429,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-79ca-b268-54da14ff9abb",
@@ -265,16 +266,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "exchange",
+      "Meaning": "Introduces the stray dog as a symbol of unwanted attachment, undercutting Sasha\u0027s isolation with an absurd, humanizing beat.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 267,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-73f6-bea3-66a10acae657",
@@ -282,16 +283,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "disclosure",
+      "Meaning": "Deepens Sasha\u0027s guarded psychology by pairing the dog\u0027s persistence with her refusal to acknowledge the corporate towers looming over her past.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 330,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7560-b2b1-9b65786086d7",
@@ -299,16 +300,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
+      "Meaning": "Builds tension by introducing a silent pursuing vehicle, turning the walk into a stalked pursuit.",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "none",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 344,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7fd1-b1cb-139467567388",
@@ -316,16 +317,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
+      "Meaning": "Turns the threat personal by revealing the ambush was pre-planned, proving Sasha is the target rather than collateral.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 177,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7835-b7ca-6e1de40aa5d9",
@@ -333,16 +334,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "traversal",
+      "Meaning": "Escalates the danger by putting a trained operative on the ground, confirming the ambush is professional and immediate.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 296,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7926-8701-b380ba290904",
@@ -350,16 +351,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
+      "Meaning": "Establishes Sasha\u0027s tactical read of a no-win ambush, heightening suspense while showing her composed expertise under threat.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 502,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-702e-b4e4-aa0f4b25def4",
@@ -367,16 +368,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "recovery",
+      "Meaning": "Opens with immediate, coded threat to establish Sasha\u0027s precarious world and the constant risk of exposure that follows her work.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 228,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-74a8-907d-96409b7e5931",
@@ -384,16 +385,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "ambush",
-      "RevelationMode": "none",
+      "Meaning": "Undercuts the interrogation\u0027s premise to reveal Sasha\u0027s isolation and the lie she\u0027ll now have to sustain.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 57,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-78ef-a470-f925e6b0a9d2",
@@ -401,16 +402,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "vigil",
-      "RevelationMode": "suspense",
+      "Meaning": "Grounds Sasha\u0027s drifting existence in mundane necessity, framing her profession as survival rather than calling.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 231,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-77b7-9a40-181529fedaaf",
@@ -418,16 +419,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
+      "Meaning": "Defines the story\u0027s moral economy by specifying the precise, non-lethal violence that separates her work from simple murder.",
+      "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 409,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7eb5-96d5-f9b32d8ef9d7",
@@ -435,16 +436,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "confrontation",
-      "RevelationMode": "none",
+      "Meaning": "Establishes the ticking-clock stakes from a prior job, showing Sasha\u0027s choices are driven by fear and financial desperation, not preference.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 513,
+      "ProseLength": 769,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-73c5-97e0-4d6a5541a6b8",
@@ -452,16 +453,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "10",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
+      "Meaning": "Marks her committing to the job despite misgivings, setting the plot\u0027s central complication in motion.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 12,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7e54-bb6f-0102327168d9",
@@ -469,16 +470,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "ambush",
-      "RevelationMode": "none",
+      "Meaning": "Demonstrates Sasha\u0027s professional competence and precise restraint, establishing her skill and the exactness of her moral code in practice.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 753,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-7815-9e64-536931bf9ec7",
@@ -486,16 +487,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "10",
-      "EventType": "discovery",
+      "Meaning": "Plants a turn of dread that recontextualizes the clean job as a mistake, building tension toward consequence.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 74,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-73ee-95b6-44652f4af1a7",
@@ -503,16 +504,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "confrontation",
-      "RevelationMode": "none",
+      "Meaning": "Reveals the overlooked variable that undoes her careful plan, showing how small-town intimacy defeats professional caution.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 380,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-72f6-bc29-6be8fdb680a6",
@@ -520,16 +521,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "transmission",
-      "RevelationMode": "suspense",
+      "Meaning": "Escalates the consequence of her oversight into immediate physical danger, propelling the story into pursuit.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 295,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c0-794b-af92-f1bd70d895ea",
@@ -537,16 +538,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "loss",
-      "RevelationMode": "none",
+      "Meaning": "Signals the confrontation\u0027s shift from words to imminent action, ending the standoff\u0027s uneasy stillness.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 26,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7bba-a926-2204fda70f26",
@@ -554,14 +555,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Sasha\u0027s moral code as transactional, revealing she views herself as a contractor delivering results, not a judge of consequences.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 230,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7982-b69e-a2e5f1ee253e",
@@ -569,14 +572,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Underscores how Sasha\u0027s reputation and physical presence subvert others\u0027 expectations, foreshadowing the violence about to erupt.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 242,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-71de-bd5b-5975999fa10a",
@@ -584,14 +589,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks the point of no return, showing Sasha\u0027s warning ignored and violence now inevitable.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 27,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-70ae-94df-ba6426f86363",
@@ -599,14 +606,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Sasha\u0027s lethal competence while revealing her professional restraint, sparing the man who disengages.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 459,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-717d-928b-c9699a5c90d4",
@@ -614,14 +623,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Complicates the job\u0027s aftermath, showing how a clean kill still generates collateral consequences that compound her growing list of enemies.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 438,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7c60-a5ec-0b02b3d6964b",
@@ -629,14 +640,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks a quiet beat of closure after violence, signaling Sasha\u0027s return to composure and routine.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 28,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-793f-b3cd-8e4f37b92a22",
@@ -644,14 +657,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the dog as a loyal, undemanding presence that contrasts with the transactional, dangerous human relationships surrounding Sasha.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 268,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7a29-96b7-a78692d97376",
@@ -659,14 +674,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds the story in a tactile, lived-in world while introducing the ever-present hum of technology as backdrop to Sasha\u0027s journey.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 584,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7634-915f-ce098602b267",
@@ -674,14 +691,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Hints at a deeper, mysterious affliction within Sasha, distinguishing her private unease from the external world\u0027s rhythms.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 208,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7b77-bdad-068c8590b399",
@@ -689,14 +708,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces an inexplicable anomaly to hook the reader with an unsettling mystery from the opening lines.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 65,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-756f-9690-c3c754c98f3c",
@@ -704,14 +725,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the anomaly as fleeting and physically impossible, setting the story\u0027s uncanny undertone before any explanation is offered.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 239,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7c97-b439-a2e7d98e1570",
@@ -719,14 +742,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Shows Sasha\u0027s disciplined restraint, signaling she\u0027s someone who suppresses reaction rather than indulges curiosity.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 108,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7317-a7ab-bb050bb522db",
@@ -734,14 +759,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds the supernatural opening in urgent, concrete stakes by establishing the manhunt and ticking clock driving her flight.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 561,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-73e6-bc6c-ad5e35b6e854",
@@ -749,14 +776,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Redirects focus back to the anomaly, underscoring that it haunts her more than the immediate danger does.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 49,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-71ac-8fa5-493082d44eee",
@@ -764,14 +793,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Characterizes Sasha as someone long practiced at burying inexplicable experiences, implying a history of unresolved mysteries she carries forward.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 286,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7660-bb06-d27145e1f05d",
@@ -779,14 +810,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces a new setting and reintroduces the story\u0027s ambient \u0027hum,\u0027 hinting that this location is meaningfully different.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 186,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7cba-a86c-a6692e3d80f6",
@@ -794,14 +827,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens the hum\u0027s mystery by showing Sasha\u0027s quiet, sustained attention to it, marking Wilmington as significant rather than incidental.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 205,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-72fb-a9ed-e2304a924e97",
@@ -809,14 +844,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes a found-family community and its key members, setting up relationships that will ground Sasha\u0027s arc going forward.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 757,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7b83-be9b-3e52d3613cf2",
@@ -824,14 +861,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Sasha\u0027s emotional turn toward belonging, distinguishing genuine relief from the compulsion she\u0027s fled for a decade.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 183,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-79e2-a657-a84daf95fd88",
@@ -839,14 +878,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes a new, subtler emotional register for Sasha\u0027s pull\u2014her first taste of staying somewhere for genuine reward rather than mere inertia.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 325,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7923-90cd-61eb5aef9e53",
@@ -854,14 +895,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds Sasha in a normal life by repurposing her survival instincts as a marketable skill, deepening her integration through Fen\u0027s persistent, unasked-for care.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 558,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7812-9ed4-3b07e8987aaa",
@@ -869,14 +912,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Uses the dog\u0027s easy belonging as a quiet symbol of found-family acceptance settling around Sasha without her needing to earn it.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 242,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7b53-be3b-f702cfe7ca93",
@@ -884,14 +929,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Adisa as a perceptive, steady authority figure who forces Sasha\u0027s hidden danger into the open, raising the stakes of her staying.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1115,
+      "ProseLength": 1116,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7fe0-a28e-c5a8a89ef73d",
@@ -899,14 +946,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks Sasha\u0027s passive choice to remain as a turning point, showing her drifting into belonging rather than deciding it outright.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 365,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-795e-8433-5a380e6d3277",
@@ -914,14 +963,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Sasha\u0027s self-deception, showing she\u0027s rationalizing an emotional attachment she isn\u0027t ready to name.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 300,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7422-aaf9-b9aa4e069b91",
@@ -929,14 +980,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Confirms the pull\u0027s persistence while underscoring her growing awareness that this place has become a genuine alternative to running.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-72c4-b78d-db3aaa299096",
@@ -944,14 +997,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Foreshadows the fragility of her stability by showing her deliberately avoiding thoughts of the future that might break it.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 143,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7351-95ef-0bd4c0051115",
@@ -959,14 +1014,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the turn that shatters the fragile stability built across the chapter, collapsing her stay into abrupt violence.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 41,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-79c8-a4f8-0559a3fb233e",
@@ -974,14 +1031,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Complicates the previous beat\u0027s simplicity, revealing the compulsion beneath the \u0027nothing\u0027 and setting up consequences for the town she\u0027d grown to love.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 257,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7554-9e48-8b5b235bf9b1",
@@ -989,14 +1048,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Sasha\u0027s practiced vigilance and the recurring pattern of being sized up, priming the reader for an eruption.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 421,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7b00-8d5b-cec0caa7d457",
@@ -1004,14 +1065,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the tension by dramatizing the casual contempt Sasha absorbs, giving her provocation immediate and personal cause.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 240,
+      "ProseLength": 239,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7f4f-aae5-56fc1a6a2924",
@@ -1019,14 +1082,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks the irreversible turn from restraint to action in a single stark beat of momentum.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 35,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-73e7-97ed-12fb049d5c69",
@@ -1034,14 +1099,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Sasha\u0027s self-awareness in the act, showing she knowingly sacrifices Fen\u0027s trust rather than acting blindly.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 520,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-784d-9781-f6070f65ea89",
@@ -1049,14 +1116,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Confirms Sasha\u0027s competence while undercutting any doubt that the violence itself was the problem, redirecting focus to its cost.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 118,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7b7c-8178-161295e926db",
@@ -1064,14 +1133,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Signals the emotional fallout by marking a shift in how Fen perceives her, planting the story\u0027s real conflict.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 68,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-79e6-82de-072e0593a9b5",
@@ -1079,14 +1150,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Dramatizes the widening gap between Sasha\u0027s justification and Fen\u0027s deeper, unspoken reaction, sharpening the rift.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 284,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7a24-a44b-be6aa468fc15",
@@ -1094,14 +1167,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Clarifies the story\u0027s thematic stakes by distinguishing effectiveness from what Fen actually values, deepening Sasha\u0027s isolation.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 267,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7003-aef3-ac60d4758d54",
@@ -1109,14 +1184,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Adisa\u0027s authority and insight, showing he reads Sasha\u0027s character rather than merely the incident.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 346,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c1-7b9e-b729-b1a34de83a84",
@@ -1124,14 +1201,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the consequence of the beat, sending Sasha into exile and crystallizing what she\u0027s losing by leaving.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 350,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7b7a-bb35-13917fd1d598",
@@ -1139,14 +1218,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the dog\u0027s constant, almost supernatural presence ahead of Sasha, unsettling the reader before any threat is named.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 36,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-71dd-9107-855259ac3b7d",
@@ -1154,14 +1235,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Underscores Sasha\u0027s rootlessness and emotional shutdown, framing her flight as erasure rather than escape.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 335,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7c51-a2a2-aec12ce6ef7e",
@@ -1169,14 +1252,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates stakes by revealing the passive threat of the standing order has become an active, targeted hunt.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 63,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7694-977c-5189f6065c0b",
@@ -1184,14 +1269,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes this hunter as a qualitatively more competent threat than previous pursuers, raising tension through his certainty.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 608,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-75eb-862c-f272de4b3cd0",
@@ -1199,14 +1286,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Signals Sasha\u0027s readiness and restraint, holding violence in reserve while she assesses the situation.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 58,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-74dd-8199-e3fe0cd179c6",
@@ -1214,14 +1303,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the hunter\u0027s professional respect for Sasha\u0027s reputation while clarifying the mission\u0027s lethal flexibility, sharpening the danger.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 822,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7c8c-95c2-26125d5a7fd1",
@@ -1229,14 +1320,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Builds tension by exposing the silent calculation both fighters are making, foreshadowing imminent violence.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 254,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-71c9-b0fa-5a9d4e5290ed",
@@ -1244,14 +1337,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the standoff into action, marking Sasha\u0027s decisive choice to strike first.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 14,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7820-9577-f31bb0f0979b",
@@ -1259,14 +1354,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Pays off Sasha\u0027s established fighting style by demonstrating her signature dual-draw tactic overwhelming a skilled opponent.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 399,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-78e5-bb42-9c5358125a70",
@@ -1274,14 +1371,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the fight by undercutting the expected victory, showing the hunter\u0027s resilience and raising doubt about the outcome.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7528-b64b-b2519b22b4f4",
@@ -1289,14 +1388,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the fight\u0027s stakes by breaking Sasha\u0027s unbroken streak of victories, signaling a genuine threat.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 74,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7e43-b099-5cd4e9146c20",
@@ -1304,14 +1405,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the danger by revealing an opponent who has correctly anticipated and countered her signature technique.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 509,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7db7-aa4b-9cfc00b67388",
@@ -1319,14 +1422,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reasserts Sasha\u0027s resilience and control, showing she recovers fast enough to keep the upper hand despite the setback.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 189,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7d15-b5d0-509f4629af40",
@@ -1334,14 +1439,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks the turn where physical dominance gives way to negotiation, shifting the scene from combat to standoff.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7ffe-9fc2-a72d291e746b",
@@ -1349,14 +1456,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the hunter\u0027s professional constraints while sharpening Sasha\u0027s independence and the personal stakes she faces beyond his order.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 170,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-74bc-9586-17c33d661b7f",
@@ -1364,14 +1473,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Confirms the opponent\u0027s rationality and grants Sasha a moment of validated judgment, reinforcing her authority in the standoff.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 129,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7d50-97cd-17f51c022a55",
@@ -1379,14 +1490,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers Sasha\u0027s decisive command, cementing her control over the resolution of the encounter.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 21,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-70aa-92dd-fbe077c5c8a9",
@@ -1394,14 +1507,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Pays off the standoff with the opponent\u0027s compliance, confirming Sasha\u0027s victory without bloodshed.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 14,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-750e-911a-c7ea5b00bdca",
@@ -1409,14 +1524,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Undercuts the victory\u0027s triumph by showing its cost and ambiguity, foreshadowing that the threat persists rather than resolves.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 490,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-79d5-9bba-5449e8e38fef",
@@ -1424,14 +1541,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the overarching threat by revealing the bounty has grown and her methods are now known, raising future stakes.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 578,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-74b8-8fba-b5790b0a2969",
@@ -1439,14 +1558,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes escalating external pressure by showing hunters adapting and improving, raising the stakes of Sasha\u0027s ongoing conflict.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 499,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7ad6-83ed-c40603548fd2",
@@ -1454,14 +1575,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Sasha\u0027s core operating principle\u2014preemptive violence over hesitation\u2014as the engine driving her survival and identity.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 402,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-75be-90fd-ad4fb9c34b7e",
@@ -1469,14 +1592,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Compresses the fight into a stark, clipped duration that underscores her lethal efficiency without dwelling on spectacle.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 13,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7d6a-be04-761c0f68cfb0",
@@ -1484,14 +1609,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Sasha\u0027s practiced, unsentimental relationship to bodily damage and combat aftermath, framing survival as routine mechanics.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 837,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7b1c-95be-ac0dfff1d025",
@@ -1499,14 +1626,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the narrative toward introspection by marking this post-fight silence as unprecedented, setting up the coming revelation.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 70,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7b10-9c17-8bd1fca77a3d",
@@ -1514,14 +1643,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the story\u0027s central gut-punch: the violence that structured her life was always chasing an emptiness that can\u0027t be filled.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 756,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-753c-8131-d15108264270",
@@ -1529,14 +1660,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the internalized, embodied nature of Sasha\u0027s survival strategy, showing how deeply her rootless existence has been systematized.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 369,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-728f-823f-67bad89bc355",
@@ -1544,14 +1677,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes her isolation and habitual self-narration, framing the dog as sole witness to her interior state.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 113,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7371-80a5-d3be204d6bad",
@@ -1559,14 +1694,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Advances the plot by naming a foreclosed avenue, reinforcing the shrinking map of options that frames her journey.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 95,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-760e-a625-ea165d9820b3",
@@ -1574,14 +1711,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the beat on a quiet, grounding image that reasserts the dog\u0027s steady companionship amid her unraveling certainty.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7f33-a378-8efc2efb4aea",
@@ -1589,14 +1728,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the stakes and pattern of Sasha\u0027s flight by cataloguing safe havens systematically falling to a pursuing order, while hinting at a personal wound tied to Wilmington.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 653,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-77b8-9f7b-8570c50b5964",
@@ -1604,14 +1745,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Uses the dog\u0027s small reaction to mark and validate the emotional weight Sasha just betrayed without stating it directly.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 49,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-721f-b714-bc30fda4645f",
@@ -1619,14 +1762,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the threat by showing the order gaining resources and momentum even from Sasha\u0027s own successful kills, turning her victories into their fuel.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 239,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-775e-9f6a-da6570e1b4ed",
@@ -1634,14 +1779,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the accumulating list into a concrete, dire conclusion: Sasha\u0027s world has shrunk to almost nothing.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 198,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7d4e-97a1-6606008a0b23",
@@ -1649,14 +1796,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the blunt payoff of the tally, crystallizing the chapter\u0027s mounting dread into a single stark fact.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 68,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-717f-a613-4d4ee5f53610",
@@ -1664,14 +1813,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the story\u0027s next destination while explaining why it\u0027s been safe\u2014reframing Joliet\u0027s insignificance as the reason it still offers refuge.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 387,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7d93-a935-21cbdb430c56",
@@ -1679,14 +1830,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the deeper psychological stakes beneath the geographic plot, showing Sasha\u0027s years of avoidance have led inevitably to a reckoning she can no longer dodge.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 601,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7718-8b8f-edc5e97372fe",
@@ -1694,14 +1847,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks Sasha\u0027s decisive commitment to the only path left, turning quiet realization into resolved action.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 22,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7760-b64d-2ac3db5732d6",
@@ -1709,14 +1864,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reinforces the inevitability of her choice by showing the dog anticipating her before she speaks, underscoring how foregone the decision already was.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 30,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c2-7942-9d65-1418b441cdda",
@@ -1724,14 +1881,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Transitions the story into its next phase by grounding Sasha\u0027s arrival in practical tradecraft, while reminding readers of the diminishing, decaying world she\u0027s entering.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 579,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c3-71dd-bc10-ae4674571607",
@@ -1739,14 +1898,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Sasha\u0027s hyper-vigilant sensory awareness and the dog\u0027s protective bond, grounding her survival instincts in a hostile industrial setting.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 501,
+      "ProseLength": 461,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c3-77d5-9c47-b2473c4dcdf8",
@@ -1754,14 +1915,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes corporate encroachment as an active threat reshaping the world and reveals Sasha\u0027s practiced avoidance of anything resembling scrutiny.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 525,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c3-7be1-a8bb-19a842ca3fbf",
@@ -1769,14 +1932,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Shows Sasha\u0027s practiced efficiency at navigating transactional trust, using payment to preempt suspicion and secure shelter.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 289,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c3-7911-8ec6-45219777c932",
@@ -1784,14 +1949,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the central strategic insight of the plot: the credential system that has failed to protect Sasha may now be the very thing that can stop her pursuers.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1057,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c3-7e25-916e-44b0bdb6f1d1",
@@ -1799,14 +1966,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks a fragile turning point, letting Sasha permit herself cautious hope for the first time in years without pretending it\u0027s true safety.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 139,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c3-7132-9621-1e3813b34d12",
@@ -1814,14 +1983,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the decayed, improvised setting as a symbol of a world running on inertia after its purpose collapsed.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 630,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c3-7d96-8746-0836fbec5779",
@@ -1829,14 +2000,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces a low-stakes social threat that demonstrates Sasha\u0027s controlled hostility and establishes the dog as a fixed, calming presence beside her.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 706,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa020-b0c3-7cc0-af88-68882d5cd011",
@@ -1844,14 +2017,16 @@
       "Chapter": "Chapter 1 \u2014 Sasha in Mot",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the bar tension into a wordless power display, revealing Sasha\u0027s capacity for quiet menace and her mastery of controlled deterrence.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 742,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f771-751e-aa6a-4f8666e88760",
@@ -1859,14 +2034,19 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
-      "BeatTags": [],
+      "Meaning": "Establishes the geographic and symbolic pull of the towers, framing the city as an inevitable destination Sasha has been resisting.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot",
+        "anachrony-cut"
+      ],
       "ProseLength": 321,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f771-7481-b687-2c313937c239",
@@ -1874,14 +2054,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Sasha\u0027s dawning realization that her flight from danger and her pull toward the towers are converging, turning her journey from evasion toward confrontation.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 660,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f771-74d4-914b-d242c909ec38",
@@ -1889,14 +2071,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The dog\u0027s refusal to follow signals an invisible boundary being crossed, unsettling the story\u0027s established sense of normalcy.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 162,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f771-750b-9cfd-1a5e282aed3f",
@@ -1904,14 +2088,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Sasha\u0027s forward push past the warning establishes her habitual refusal to be deterred by unease.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 19,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f771-7073-9134-66859c8e5f1a",
@@ -1919,14 +2105,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The impossible image delivers the beat\u0027s core disruption, yanking the story into overt strangeness.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 31,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7ed2-b4ac-5d5e5281061f",
@@ -1934,14 +2122,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Sensory confirmation of the camel\u0027s realness forecloses easy dismissal, forcing the reader to accept the anomaly as literal.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 309,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-72e5-9fd9-00d9754a944b",
@@ -1949,14 +2139,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Sasha\u0027s stopping marks her first outward concession that the situation demands full attention.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 14,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7ed1-8a7a-0938b815f814",
@@ -1964,14 +2156,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introducing the rider alongside the impossibility of the camel\u0027s presence escalates the mystery while establishing Sasha\u0027s practiced control under threat.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 430,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7532-857b-725f560d8666",
@@ -1979,14 +2173,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Sasha\u0027s calm, practical gesture toward the camel reveals her instinct to assess and defuse rather than panic, while withholding tactical answers.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 449,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-76a9-aba9-b6efc7cce18e",
@@ -1994,14 +2190,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The hum\u0027s sudden intensity ties the internal warning system to this new arrival, escalating dread through pattern recognition.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7fe2-aa06-442e933a78fd",
@@ -2009,14 +2207,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The vanished dog and watchful cat deepen the uncanny transformation, reinforcing that Sasha is now operating inside rules she doesn\u0027t control.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 285,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7be3-aef6-416dab5374fd",
@@ -2024,14 +2224,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The rider\u0027s cryptic opening line turns the encounter into direct contact, planting the mystery of surveillance and multiple unseen watchers.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 127,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7a49-b88d-e486c854fff4",
@@ -2039,14 +2241,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes her disciplined restraint, defining her by control rather than aggression as the encounter turns tense.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 160,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7714-a59a-b5d5a59e8f00",
@@ -2054,14 +2258,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the standoff by having her seize on a trivial fact to test the stranger\u0027s evasiveness and unsettling calm.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 205,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-738e-9294-4a9fb90b18eb",
@@ -2069,14 +2275,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals a diagnostic detail about the phenomenon\u0027s intensity, grounding her instincts as reliable data rather than fear.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 150,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-79d9-a921-d9406e691fa3",
@@ -2084,14 +2292,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Plants an ominous watching presence to deepen unease and hint the cat is more than an animal.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 167,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-76b7-8a71-13285c41148f",
@@ -2099,14 +2309,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes her uncanny magnetism for animals as a recurring, unresolved mystery central to her identity.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 391,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7457-bfa5-6b9277fe65a5",
@@ -2114,14 +2326,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the scene toward revelation as she demands the stranger\u0027s purpose, setting up the plot\u0027s inciting knowledge.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 119,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7716-bdfa-a90d4c0219c4",
@@ -2129,14 +2343,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals a hidden, unexplained event from her past that ties her directly to the story\u0027s central mystery.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7347-beeb-9aec091ff73c",
@@ -2144,14 +2360,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the inciting request, naming a concrete goal that will drive the plot forward.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 98,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-79c8-80b9-1727e6349e77",
@@ -2159,14 +2377,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Characterizes her pragmatic worldview, showing she accepts uncertain information provisionally rather than through trust.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 165,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7238-be75-d24c795b62b7",
@@ -2174,14 +2394,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Closes the scene with an ominous reveal suggesting she is something dangerous that was meant to be contained.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 91,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-78ed-90c3-377e571ddf50",
@@ -2189,14 +2411,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the entity\u0027s alien, affectless mode of communication while planting unsettling emotional dissonance in its gladness.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 143,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7301-a8fe-62575e5847dd",
@@ -2204,14 +2428,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the intrusion as a bodily, pre-verbal sensation, deepening the horror of contact and her delayed recognition of violation.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 463,
+      "ProseLength": 232,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-72d4-b4b1-87ccdb3e5c0b",
@@ -2219,14 +2445,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the confrontation with a clipped exchange that shows the entity\u0027s instant, unnerving compliance to her command.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 46,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7284-830a-c7ea90f1f8d3",
@@ -2234,14 +2462,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pays off her defensive instinct, showing her regain a fragile sense of control by physically sealing out the threat.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 278,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7663-a94d-aba7a9a36d54",
@@ -2249,14 +2479,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reasserts her underlying anger as a stable, recurring baseline emotion beneath the fear, grounding her character.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 90,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f772-7b55-9c0a-c9fcb394fdb8",
@@ -2264,14 +2496,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates tension by having the entity name the story\u0027s central stakes\u2014the missing children\u2014unprompted.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 68,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7c55-8526-a19b7f82adeb",
@@ -2279,14 +2513,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals her deliberate strategy, showing she\u0027s been steering the conversation toward this question all along.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 79,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7678-b8e2-eb6068304953",
@@ -2294,14 +2530,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Distinguishes this entity from the one responsible for the disappearances, complicating the threat landscape and raising stakes.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 245,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7d1e-a041-38ac2c17d6e3",
@@ -2309,14 +2547,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens the horror by establishing that an unknowing, unreasoning force is worse than a malicious one, since it can\u0027t be bargained with.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 425,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7141-a9cb-4f76af4f09ea",
@@ -2324,14 +2564,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reframes the camel-entity as a distinct, potentially negotiable variable, giving her a foothold of strategic hope amid the threat.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 223,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-74e3-af28-63dc2731837c",
@@ -2339,14 +2581,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The man reframes the drilling as a mutual breach rather than a one-sided threat, seeding the story\u0027s central cosmic-contact metaphor.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 127,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7d8b-9be4-6f6745e6133d",
@@ -2354,14 +2598,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The narrative lets the strangeness settle, using stillness and the unmoving cat to underline that the destination is fixed and inevitable.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 262,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7647-aff1-ce051f5a5956",
@@ -2369,14 +2615,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "She admits her long-avoided pull points toward danger, revealing she\u0027s been fleeing her true direction rather than lacking one.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 191,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-79b4-8db6-217400412c27",
@@ -2384,14 +2632,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The camel\u0027s uncanny composure reinforces the man\u0027s otherness and confirms the northeast heading without need for words.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 131,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7b64-8450-2b15e39888ae",
@@ -2399,14 +2649,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Backstory establishes her deep-rooted fear of corpo surveillance, raising the stakes of walking straight toward tower-controlled territory.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 151,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-71fd-b5cb-5114798813b9",
@@ -2414,14 +2666,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Her decisive first step turns hesitation into commitment, launching the journey proper.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 20,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7961-9d05-e714955d08db",
@@ -2429,14 +2683,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The man\u0027s wordless companionship and the camel\u0027s unnatural gait deepen the eerie otherworldliness surrounding her guide.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 381,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7c86-84da-897e9254a1fb",
@@ -2444,14 +2700,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The hum\u0027s shift from ominous cue to ambient constant normalizes the supernatural, signaling she\u0027s crossing into its territory.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 101,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-70bb-91fd-449599bfa9d1",
@@ -2459,14 +2717,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Naming \u0027the Arrangement\u0027 and getting a cryptic definition expands the mythology, framing the drilling as a cosmic-scale phenomenon rather than a rumor.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 320,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7197-bf51-2a3a8e595c2a",
@@ -2474,14 +2734,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The tower light\u0027s refusal to grow closer unsettles the journey\u0027s logic, escalating dread by suggesting the destination isn\u0027t governed by normal space.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 257,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7e27-a3c5-5f979aa6d968",
@@ -2489,14 +2751,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the cat as an uncanny, persistent presence and Sasha\u0027s unease at her own growing acclimation to the anomaly.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 281,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-707b-90d6-4b5f74992c33",
@@ -2504,14 +2768,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces the neuretic \u0027warm\u0027 state as a distinct, more dangerous escalation from her hard-won familiarity with \u0027hot,\u0027 raising stakes for what\u0027s approaching.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 438,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7d9a-8c4d-63ae0d2af6ad",
@@ -2519,14 +2785,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Crystallizes the chapter\u0027s central tension\u2014the barrier protecting Sasha is permeable, not absolute\u2014foreshadowing eventual breach.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 41,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-73c8-a7ad-b718880b585b",
@@ -2534,14 +2802,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Builds dread through mounting physical sensation as the journey toward the city\u0027s core makes the threat increasingly tangible.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 412,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-71c2-b8cd-5949e9674449",
@@ -2549,14 +2819,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Sasha\u0027s unshielded vulnerability to the world\u0027s saturation, marking her as an outsider lacking the protective conditioning others take for granted.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 481,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-75b1-9618-cc04586b7190",
@@ -2564,14 +2836,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Grounds the story in a vividly rendered lower-tier setting while planting the real pigeons as a small, deliberate anchor of authenticity amid artifice.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 572,
+      "ProseLength": 645,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7b61-b28f-6757fb233531",
@@ -2579,14 +2853,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Uses the unresolved musical phrase and the cat\u0027s reaction as an ominous, unresolved motif that mirrors Sasha\u0027s own unfinished pursuit.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 261,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7c7b-a589-22a6d34505f0",
@@ -2594,14 +2870,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Provides a brief character beat that underscores Sasha\u0027s marginal status and invisibility to the city\u0027s privileged class.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 357,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7f77-855b-de67598dda9b",
@@ -2609,14 +2887,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the sensory and metaphysical pressure by contrasting the rail\u0027s clarity with the city\u0027s overwhelming, competing pull.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 525,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7ac0-a142-382864f201a4",
@@ -2624,14 +2904,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Advances the plot\u0027s navigational stakes by having Sasha discern and dismiss a false lead, sharpening focus on the true, still-active target.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 429,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-75b3-971b-20139b310822",
@@ -2639,14 +2921,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes an indifferent, texture-rich backdrop that undercuts urgency, letting mundane life continue oblivious to the protagonist\u0027s unease.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 305,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f773-7bca-9267-de2adb353cdf",
@@ -2654,14 +2938,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces Dawit and reveals Sasha\u0027s practiced fluency in reading how others reclassify her from threat to known quantity.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 434,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7a14-be85-4850bae607a7",
@@ -2669,14 +2955,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows Sasha\u0027s habitual manipulation tactic, establishing her willingness to exploit others\u0027 false assumptions for survival.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 261,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7525-bd98-f0b916aaba59",
@@ -2684,14 +2972,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Plants the inciting mystery, introducing anomalous data that will drive the chapter\u0027s investigation.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 205,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-72a8-94e4-f25cfc50b4d9",
@@ -2699,14 +2989,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the stakes by revealing the data pattern defies official explanation, hinting at something deliberately searching rather than random.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 331,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7ae4-9586-60b4aadbae31",
@@ -2714,14 +3006,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Dawit\u0027s suppressed unease, signaling he\u0027s been sitting on dangerous knowledge he\u0027s afraid to voice.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 220,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-72bc-9d76-1cc69a66d8fa",
@@ -2729,14 +3023,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms Sasha\u0027s private premonition is objectively real, tying her personal unease to hard evidence while she conceals her reaction.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 411,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-776c-a616-2ba946a38304",
@@ -2744,14 +3040,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the exchange by exposing Dawit\u0027s motive as unburdening rather than transaction, deepening the mystery\u0027s weight.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 189,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7cb2-b336-f543f9de3c8c",
@@ -2759,14 +3057,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Dawit\u0027s calculated vulnerability, showing he chose Sasha specifically for her anonymity and lack of ties back to him.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 346,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-76d3-8392-d71b7ebc6c33",
@@ -2774,14 +3074,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks a small but significant break in Sasha\u0027s guarded character, showing the moment\u0027s importance by making her uncharacteristically direct.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 89,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7064-8b5c-7c71204ecab3",
@@ -2789,14 +3091,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Sasha\u0027s silent acceptance cements the fragile alliance, rewarding Dawit\u0027s vulnerability with the trust he desperately needed.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 338,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7438-8d46-c73761e2d6e1",
@@ -2804,14 +3108,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "A minimal spoken confirmation formalizes the pact between them, marking a turning point neither can easily walk back.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 63,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7535-a12c-cb639205a939",
@@ -2819,14 +3125,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Sasha\u0027s reluctant new burden, framing the handoff as an unwitting commitment whose stakes she doesn\u0027t yet understand.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 507,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7f3a-8876-adf04863213e",
@@ -2834,14 +3142,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shifts the scene into hostile new territory, using Sasha\u0027s brief freeze to signal danger in the world above.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 205,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7bcf-9865-0dbde7c5a21c",
@@ -2849,14 +3159,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the Glooms\u0027 bleak, exploited environment, grounding the setting\u0027s inequality and reinforcing the cat as a steady companion.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 417,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-777c-a08c-5a9af56df656",
@@ -2864,14 +3176,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Builds out the lawless perimeter\u0027s texture through the broken Docent, symbolizing institutional neglect and abandoned promises of order.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 574,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7a6a-a247-e32bc1a82f3e",
@@ -2879,14 +3193,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Uses ironic media commentary to underscore the gap between sanitized fiction and Sasha\u0027s lived danger, sharpening her outsider clarity.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 401,
+      "ProseLength": 340,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7b3f-8092-538cfc8e490c",
@@ -2894,14 +3210,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces a technological vulnerability in Sasha\u0027s mesh, foreshadowing exposure risk through unwanted, involuntary information exchange.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 549,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7e92-b9f5-aff0d64215ce",
@@ -2909,14 +3227,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reinforces the cat\u0027s established reliability as a guide, building trust that the next beat will subvert.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 140,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-78eb-9cec-cfd379829b2f",
@@ -2924,14 +3244,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates tension sharply as the cat\u0027s trusted path is blocked, revealing a checkpoint that turns Sasha from unseen to targeted.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 958,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7cbc-8adb-dc4c57790b75",
@@ -2939,14 +3261,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the pull as sharper and more urgent than before, signaling this pursuit now carries stakes beyond her own habit.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 470,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7f18-8c14-9df2b709bfb4",
@@ -2954,14 +3278,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks the moment her body\u0027s instinct overrides conscious control, deepening her surrender to the phenomenon she\u0027s tracking.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 203,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7eff-93db-1e6549420df6",
@@ -2969,14 +3295,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Contrasts the city\u0027s manufactured order with untamed nature to underscore what feels authentic versus performative in her world.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 339,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7579-a1f3-7e62b4ce8942",
@@ -2984,14 +3312,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals her surrender to instinct over reasoning, priming the reader for a revelation delivered through sensation rather than thought.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 73,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7ade-a502-f75e2496285f",
@@ -2999,14 +3329,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes her expertise in reading breach sites while distinguishing this new signal as fundamentally different from anything cataloged before.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 491,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7f98-b899-7c39c30d93f4",
@@ -3014,14 +3346,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the signal\u0027s complexity and proximity, escalating the mystery by placing an impossible, living anomaly inside supposedly safe territory.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 623,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7f10-b285-d480de7ce6d6",
@@ -3029,14 +3363,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Physicalizes the danger and wrongness of the discovery, converting abstract anomaly into visceral threat the reader feels alongside her.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 264,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f774-7d74-b303-ee80990bcaaa",
@@ -3044,14 +3380,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reframes her role in the mystery, turning her from investigator into unwitting key, raising the personal stakes of Dawit\u0027s request.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 406,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7bbf-aab3-98cc999f6731",
@@ -3059,14 +3397,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Uses the cat\u0027s eerie stillness to confirm the direction and imminence of the encounter, heightening tension before she moves.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 281,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7092-9def-b5bf668ff792",
@@ -3074,14 +3414,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns her toward the confrontation, resolving hesitation into commitment driven by obligation and refusal to let mystery rest unresolved.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 298,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-764d-8ce5-fa4bdef1d478",
@@ -3089,14 +3431,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the discovery of a hidden cache built specifically to respond to her unique ability, deepening the mystery of who is tracking her.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 456,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7aef-a674-901742e7c381",
@@ -3104,14 +3448,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Heightens the uncanny sense that she is expected, planting the eerie premise that this device was made and waiting for her specifically.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 353,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7d28-bbe9-57b8882e8ab8",
@@ -3119,14 +3465,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals her unsettled reaction to being anticipated, reframing the threat from generic pursuit to something intimate and premeditated.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 476,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7363-84db-4166fd0de8bb",
@@ -3134,14 +3482,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the stakes by revealing a corporate bounty on her exact ability, turning abstract danger into a concrete price and target.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 461,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-72bf-903b-27feb8deb74e",
@@ -3149,14 +3499,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers a stark warning that complicates the threat by introducing an ally whose motives and risk remain unexplained.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 103,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-716c-b9ca-1ea8969311de",
@@ -3164,14 +3516,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks her absorbing the warning\u0027s weight, signaling the gravity of the choice she\u0027s about to make.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7a48-8123-a34c2d43b7a4",
@@ -3179,14 +3533,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals her resolve to defy the warning, establishing her fatalistic determination to press forward despite the danger.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 474,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7c49-a2c6-7c764a8b7123",
@@ -3194,14 +3550,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Consolidates the chapter\u0027s stakes by having her literally carry both warnings forward, framing her as caught between two opposing claims on her worth.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 546,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-700a-ac52-c401676036de",
@@ -3209,14 +3567,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates tension by confirming pursuers are closing in, using tactical detail to establish the threat\u0027s competence and institutional backing.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 507,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-786e-b187-d142c07a4751",
@@ -3224,14 +3584,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns passive awareness into active evasion, showing her using tradecraft to seize control of the confrontation\u0027s terrain.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 269,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7867-bf61-0bc523053bc3",
@@ -3239,14 +3601,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the protagonist\u0027s disciplined ritual of offering opponents a genuine choice before violence, defining her code.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 280,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-71de-ac99-ee8ea0d58f1c",
@@ -3254,14 +3618,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Sets up the confrontation\u0027s stakes by asserting her refusal to yield to corporate authority.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 145,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-725f-ad76-4d82099d8115",
@@ -3269,14 +3635,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rewards the protagonist\u0027s courtesy by showing one pursuer choose self-preservation over duty, validating her method.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 290,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7084-a98b-788d8fa44795",
@@ -3284,14 +3652,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the encounter into brutal, costly violence, proving she can win but not without injury.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 536,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-72ea-909f-449cb9de09fe",
@@ -3299,14 +3669,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the scene toward investigation, using the fight\u0027s aftermath to seed the next clue.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 105,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-760c-9015-1c36f24352fe",
@@ -3314,14 +3686,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the corporate faction hunting her, expanding the story\u0027s antagonist landscape.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 54,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7400-a6df-41a1747f58d5",
@@ -3329,14 +3703,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Plants an ominous new mystery by introducing a machine authority behind her pursuers, deepening the conspiracy.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 219,
+      "ProseLength": 521,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-7251-834a-b91e23609edb",
@@ -3344,14 +3720,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals her dehumanized status to the reader, sharpening the story\u0027s stakes around identity and survivorhood.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 574,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa021-f775-77b4-901d-5fcd827ba360",
@@ -3359,14 +3737,16 @@
       "Chapter": "Chapter 2 \u2014 Contact",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks a quiet turning point where she consciously breaks her old pattern of severing ties, choosing mercy with intention.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 826,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011e-7487-bdf6-efec0c35c8dd",
@@ -3374,14 +3754,18 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
-      "BeatTags": [],
+      "Meaning": "Reorients the story toward the central mystery of the pull\u0027s source, grounding the quest in physical cost and place.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
       "ProseLength": 510,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7849-b127-27bf1c807e37",
@@ -3389,14 +3773,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes her defiant character by having her choose the dangerous path over obvious survival, committing the story to pursuit over flight.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 164,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7ee1-8eaf-de96d6b5d253",
@@ -3404,14 +3790,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the stakes of her decision by framing it as her first active choice after years of retreat, raising the threat level ahead.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 396,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7d36-a919-46bfb39098c2",
@@ -3419,14 +3807,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off the earlier hatch imagery by linking her body\u0027s reaction to the same mysterious design, deepening the mystery\u0027s physical grounding.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 351,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-724f-8d88-4c6280313434",
@@ -3434,14 +3824,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the chase by making the trail go cold, forcing her to reverse course and escalating the pursuit\u0027s uncertainty.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 292,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7601-920b-2ee256dfce7c",
@@ -3449,14 +3841,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the setting\u0027s layered geography to justify her physical journey and isolate her symbolically from the indifferent crowd.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 554,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7405-8a66-c38e70c4fcc2",
@@ -3464,14 +3858,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers a sharp turn by revealing the pursued vision has finally manifested, snapping tension into confrontation.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 20,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7a3a-86ae-b7679fb6acf7",
@@ -3479,14 +3875,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the uncanny by showing the vision is invisible to everyone but her, confirming her connection to something beyond ordinary perception.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 716,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7e52-a278-f6e122de3033",
@@ -3494,14 +3892,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks a turning point where she abandons interrogation for acceptance, signaling her readiness to trust the guide over her doubts.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 495,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7b11-b5ae-e26b31d1d5d6",
@@ -3509,14 +3909,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Builds anticipation by quantifying the remaining distance, tightening tension before the final approach.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 22,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-78e1-bfc1-1a7429421dab",
@@ -3524,14 +3926,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the twist that her original goal was merely a decoy, redirecting the story\u0027s momentum toward the true source.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 123,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-710a-9012-17622f2fad16",
@@ -3539,14 +3943,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks a turning point where she stops retreating from sensation and begins accepting genuine connection to the physical world.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 234,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-789a-9cc5-c49099508da0",
@@ -3554,14 +3960,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Propels her from passive noticing into active pursuit, committing her to the descent that follows.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 23,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7b83-93e9-a06d3ea44183",
@@ -3569,14 +3977,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the threshold into forbidden territory as an ambiguous, unguarded opportunity rather than a clean invitation.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 404,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-71e1-8457-def26c610f76",
@@ -3584,14 +3994,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Signals arrival at a meaningful threshold, building anticipation before the discovery to come.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 31,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-741a-b680-26a085b84245",
@@ -3599,14 +4011,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals evidence of hidden, sustained human presence, deepening the mystery of what lies beyond the passage.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 405,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-76af-9480-b9800f96724e",
@@ -3614,14 +4028,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows her restraint and instinct for respecting thresholds she doesn\u0027t yet understand, building tension before contact.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 28,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-738f-85f7-39bff3ba5008",
@@ -3629,14 +4045,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirms she isn\u0027t alone by having the hidden world respond to her presence on its own terms.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 43,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-76ae-89e9-2ab1a857e765",
@@ -3644,14 +4062,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces a new, otherworldly figure whose cautious, animal-like scrutiny reframes her as the outsider being studied.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 298,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-799d-9a33-c0edd5ffe336",
@@ -3659,14 +4079,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the boy\u0027s uncanny ability to read her purpose intuitively, escalating the story\u0027s central mystery about \u0027the Warm.\u0027",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 307,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-76f3-8ea5-22e25afd1c9e",
@@ -3674,14 +4096,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals that her private, unexplainable sensation is shared and independently confirmed, validating her instincts and widening the stakes.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 292,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7158-b56e-c6cc54d306a9",
@@ -3689,14 +4113,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes her tacit acceptance of a shared understanding without spelling it out, deepening the pair\u0027s wordless rapport.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 19,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-70a9-aed1-feee2516c80a",
@@ -3704,14 +4130,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes a shift in trust as she cedes control to the boy\u0027s superior mastery of the dark, deepening their unspoken alliance.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 361,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7cbb-b3e7-12e896ec6edf",
@@ -3719,14 +4147,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces a physical threshold\u2014the underground water\u2014signaling passage into a stranger, more ritualized part of the descent.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 168,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7bcd-8c2b-9d0a5e0d34a8",
@@ -3734,14 +4164,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces the ferryman-android figure, marking the crossing as governed by rules older and stranger than ordinary transit.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 230,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7b0c-b127-aee357e3d8c4",
@@ -3749,14 +4181,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the toll\u0027s mystical logic, forcing her to understand that value here is measured differently than in the world above.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 68,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7fe9-91aa-43c02180ca7b",
@@ -3764,14 +4198,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals her willingness to surrender something personally meaningless yet privately kept, testing what \u0027freely given\u0027 truly costs her.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 186,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7907-92f5-7bca1d2da29f",
@@ -3779,14 +4215,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirms the transaction\u0027s completion, underscoring the android\u0027s indifference and the ritual\u0027s strange, impersonal authority.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 49,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-723f-bfb6-76fbdaa56685",
@@ -3794,14 +4232,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Builds atmosphere and interiority, reinforcing her physical toll and the psychological weight of what she\u0027s suppressing to keep moving forward.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 258,
+      "ProseLength": 371,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-745c-8404-0c778fbdd0a9",
@@ -3809,14 +4249,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks the end of the crossing, transitioning the story back toward forward momentum and the next stage of the journey.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 21,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-75e9-8da8-74a8a4099ccb",
@@ -3824,14 +4266,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Sets up the central tension of the arc by having the boy warn against destroying the city\u0027s hidden machinery, foreshadowing conflict with her mission to stop the drilling.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 370,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7206-861a-22924de0e4f9",
@@ -3839,14 +4283,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The android\u0027s silent, echoing response to her scrutiny reinforces that she is being read in kind, deepening the story\u0027s sense of mutual, wordless understanding.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 204,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-74ef-9c49-5de50d619630",
@@ -3854,14 +4300,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "A minimal transition beat that propels her toward the next set-piece, signaling forward momentum without dwelling.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 21,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7cd5-9ea3-2b74ca952745",
@@ -3869,14 +4317,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the colonnade as a disguised threat, planting the central mystery object and showcasing her expertise at seeing through false fronts.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 611,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-76ea-b707-414dda7c5442",
@@ -3884,14 +4334,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirms her instinct as trained expertise rather than guesswork, building credibility for the danger she\u0027s about to diagnose.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 92,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-701a-b2b7-f085ecb609d6",
@@ -3899,14 +4351,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the discovery by revealing multiple layered threats, deepening the mystery\u0027s stakes from a single anomaly to a structured operation.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 553,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-75c1-9f6e-2c04ce2660a0",
@@ -3914,14 +4368,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the antagonists\u0027 methodical intent and raises the stakes to a citywide scale, transforming a personal find into a mass-casualty threat.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 475,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7f7a-bf16-8ad8a49b360c",
@@ -3929,14 +4385,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks a personal turning point, framing this discovery as uniquely horrifying compared to her past dangers to heighten her resolve.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 175,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-73bb-ba64-7ead161e810f",
@@ -3944,14 +4402,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Justifies her irreplaceable role in the plot, establishing why she alone must handle this threat and raising personal stakes.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 274,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7410-bcdc-ca97a5e7e787",
@@ -3959,14 +4419,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces a mysterious counterforce, complicating the threat by suggesting resistance or another player in the unfolding conspiracy.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 443,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-74f3-9079-0c3c8fd42203",
@@ -3974,14 +4436,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Grounds her intuitive perception in physical certainty while hinting at unresolved ambiguity about what she\u0027s just detected.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 130,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7cc4-ad7f-56f411a0d919",
@@ -3989,14 +4453,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Ilan lets the sensory evidence of three wells settle inside her, cementing her conviction before she acts on it.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 127,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7fb8-a2f8-fca6fbeb83c9",
@@ -4004,14 +4470,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The narrative raises the stakes by isolating her as the sole witness whose next move could expose or endanger the unknowing city above.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 222,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7e4e-9485-796b799bfec9",
@@ -4019,14 +4487,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The story commits her to physical risk by establishing that only direct contact, not distant sensing, will yield undeniable proof.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 298,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7147-bb36-594bb07248bb",
@@ -4034,14 +4504,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "A prior sacrifice pays off as her stolen credential grants access, rewarding foresight while underscoring the cost she\u0027s already paid for this moment.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 622,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7d31-b709-59eba653f8f3",
@@ -4049,14 +4521,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "An abrupt sensory intrusion breaks the tension and signals imminent discovery, turning the scene from pursuit to danger.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 77,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-74b0-b22c-7ba72f86623a",
@@ -4064,14 +4538,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The plan collapses as security intervenes, snatching away her one chance at irrefutable proof and escalating the risk of exposure.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 701,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-79d4-9427-f921c4365687",
@@ -4079,14 +4555,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Ilan\u0027s narrow escape reveals the precariousness of her mission and foreshadows the guard\u0027s inevitable return, sustaining suspense.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 413,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-78a0-819d-ffeb6b18e341",
@@ -4094,14 +4572,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Facing a ticking clock, she pivots to a lesser but still valuable source of truth, showing her resourcefulness under pressure.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 356,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-742e-807c-ad76876cd138",
@@ -4109,14 +4589,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "A small revelation clicks the surveillance geography into place, deepening her \u2014 and the reader\u0027s \u2014 understanding of how the cover-up operates.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 66,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7ec1-be53-ed70c22af01a",
@@ -4124,14 +4606,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The beat consolidates her physical and sensory discoveries into a moment of clarity, confirming the personal significance of the phenomenon she\u0027s uncovered.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 452,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7373-b53f-10675a2e0253",
@@ -4139,14 +4623,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the placard\u0027s official cover story to set up the discrepancy the protagonist is about to uncover.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 390,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-78a1-a19c-a521e8dffb10",
@@ -4154,14 +4640,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Plants a concrete contradiction\u2014an officially closed installation\u2014to seed suspicion of a hidden operation.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 51,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7c72-a0c2-9ccee5f7f4e1",
@@ -4169,14 +4657,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces physical evidence that undercuts the official record, escalating the mystery through tangible detail.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 204,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7bb4-aca8-09ef29a2f0b4",
@@ -4184,14 +4674,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Sharpens the contradiction into an explicit accusation, confirming the station is secretly active despite its paperwork.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 320,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-74b8-ae1d-80a0c85ed23d",
@@ -4199,14 +4691,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the deception\u0027s mechanism, showing how bureaucratic trust is being weaponized to hide illicit operations.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 623,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7d10-8281-871331037729",
@@ -4214,14 +4708,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Consolidates the protagonist\u0027s gathered proof, marking her transition from suspicion to actionable evidence.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 220,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7b84-b6d1-186525d832bb",
@@ -4229,14 +4725,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Grounds the discovery scene in physical continuity, reminding the reader of the stealth and danger of her position.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 167,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7a16-a928-c3a7645ac050",
@@ -4244,14 +4742,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Raises the stakes by revealing an approaching threat that will collide with her discovery.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 103,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7f8d-97f4-a9bc44319edf",
@@ -4259,14 +4759,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Signals urgency, compressing time to heighten tension as danger closes in.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 17,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-779a-937a-50c7c260c197",
@@ -4274,14 +4776,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the beat into direct confrontation, introducing an armed enemy team and revealing they\u0027ve anticipated a psychic opponent like her.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 772,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7700-95b3-aa379bfa1901",
@@ -4289,14 +4793,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Read\u0027s trained unconventional combat instincts and pays off prior drilling by subverting the enemy\u0027s anticipated countermeasure.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 853,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7c1c-ae8d-fe1fc70d1fdf",
@@ -4304,14 +4810,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates physical danger and reveals her injury\u0027s severity while proving her survival depends on grit rather than gunplay.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 599,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-77fe-8c19-ed1848f4f899",
@@ -4319,14 +4827,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the wound\u0027s ambiguous severity and shows her suppressing panic, deferring reckoning with her own body to stay functional.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 527,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-7bc8-b87a-5499943545a3",
@@ -4334,14 +4844,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns captured enemy technology into opportunity, establishing a narrow intelligence advantage born from an unwitting security lapse.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 310,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-011f-78b6-bb54-8417a3396376",
@@ -4349,14 +4861,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off her investigation by transmitting the critical intelligence to an ally, prioritizing mission success over her own safety.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 498,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-7362-a4a4-cd6344096169",
@@ -4364,14 +4878,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Grounds the scene in physical vulnerability and vast indifferent scale, contrasting her small crisis against the enormity of what\u0027s at stake.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 637,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-7196-852b-43c495e1262f",
@@ -4379,14 +4895,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Crystallizes her self-recognition as the vulnerability/anomaly at the center of the conspiracy, a stark thematic turn.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 17,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-7588-bcef-359fa7d44465",
@@ -4394,14 +4912,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Consolidates everything she\u0027s learned while exposing the unresolved question of betrayal, deepening the story\u0027s central mystery.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 788,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-70a5-9316-e244d2f1b67c",
@@ -4409,14 +4929,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off her entire investigation by committing all evidence to an uncertain but necessary act of trust in the wider resistance.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 535,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-7bf7-8ead-a3955b72b1e7",
@@ -4424,14 +4946,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Closes the beat with a quiet gesture of integrity amid danger, underscoring her unresolved physical toll and steady resolve.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 559,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-72da-9b65-2ff1d322b80c",
@@ -4439,14 +4963,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the sensory-saturated world and V\u00F5\u0027s practiced numbness to it, setting a baseline of control before disruption.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 789,
+      "ProseLength": 790,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-7386-aecd-30cadec3deab",
@@ -4454,14 +4980,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the bodily intrusion motif, revealing a second \u0027cold line\u0027 to signal mounting, unstoppable change within her.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 608,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-7cb0-83cb-f80394fb51d5",
@@ -4469,14 +4997,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals V\u00F5\u0027s ingrained hypervigilance while marking her conscious awareness that something in her habits is shifting.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 476,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-7c43-bb9c-b02c22f5347c",
@@ -4484,14 +5014,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the private channel as a symbol of her guarded autonomy, setting up its imminent sacrifice.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 283,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-71e4-a20a-61db1d0b7c17",
@@ -4499,14 +5031,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the beat on a single decisive action, marking V\u00F5\u0027s choice to act rather than continue hoarding control.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 25,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-733a-93c0-66344d1dd132",
@@ -4514,14 +5048,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off her arc of secrecy by having her deliberately surrender her last private channel, reversing years of guarded isolation into an irreversible act of trust.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 650,
+      "ProseLength": 756,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa023-0120-7ab6-91f1-ce2fc3fd3d58",
@@ -4529,14 +5065,16 @@
       "Chapter": "Chapter 3 \u2014 The Edge",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Closes the sequence by dramatizing her internal shift through changed behavior, showing her choosing stillness and last place as proof of transformation.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 329,
+      "ProseLength": 1074,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     }
   ]
 }

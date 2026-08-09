@@ -88,19 +88,31 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
             .ToList();
 
         // SS-A43: book-mode nodes have beats on chapter children, not directly on the story node.
-        if (orderedBeats.Count == 0)
+        // Aggregate from children whenever any exist — NOT only when orderedBeats is empty.
+        // Confirmed live 2026-08-09: a GLMZ book had exactly one enabled direct BeatNode of its
+        // own (an orphan/stray row, architecturally not expected for a chaptered book) sitting
+        // alongside 547 real beats spread across its 6 chapters. The old "only fall back when
+        // count == 0" check saw a non-empty (but tiny) direct list and never looked at the
+        // children at all — the whole book's sanity scan silently saw one 20-word beat instead
+        // of the real ~14,000-word book, hiding every real finding and firing a bogus
+        // "6 words -- below the 50-page floor" warning. Concatenating instead of replacing keeps
+        // any genuine direct beats AND the children's beats — ordering between the two groups is
+        // not narratively exact, but none of this service's checks (word count, code-leak scan,
+        // acronym scan, mojibake scan) depend on cross-node reading order, only on not silently
+        // dropping real content.
+        var childIds = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id).ToListAsync(ct);
+        if (childIds.Count > 0)
         {
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == nodeId)
-                .Select(n => n.Id).ToListAsync(ct);
-            if (childIds.Count > 0)
-                orderedBeats = await (
-                    from sb in db.BeatNodes.AsNoTracking()
-                    join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                    where childIds.Contains(sb.NodeId) && sb.IsEnabled
-                    orderby sb.SortKey
-                    select b
-                ).ToListAsync(ct);
+            var childBeats = await (
+                from sb in db.BeatNodes.AsNoTracking()
+                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
+                where childIds.Contains(sb.NodeId) && sb.IsEnabled
+                orderby sb.SortKey
+                select b
+            ).ToListAsync(ct);
+            orderedBeats = orderedBeats.Concat(childBeats).ToList();
         }
 
         // ── Load all node codes from DB ─────────────────────────────────────
@@ -113,6 +125,19 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         var allCodes = BuiltinCodes
             .Union(dbCodes, StringComparer.Ordinal)
             .Where(c => !Whitelist.Contains(c))
+            // Purely numeric codes (e.g. "1381", a NONFICTION book coded by its historical year)
+            // can never be a "leaked internal dev code" — a number appearing in prose is a date
+            // or quantity, not jargon. And a node's OWN code appearing in ITS OWN prose isn't a
+            // leak at all (nothing left the book it belongs to) — confirmed live 2026-08-09:
+            // together these two rules account for 164 of 183 (89.6%) InternalCodeLeak findings
+            // in NONFICTION, all false positives from books whose NodeCode is a plain historical
+            // year or Gospel-author name (e.g. node "1381-the-peasants-revolt" coded "1381" citing
+            // its own subject year 109 times; node "matthew-..." coded "MATTHEW" citing its own
+            // Gospel's name 13 times) — content GLMZ's deliberately-obscure abbreviation codes
+            // ("BCODA", "ATTE") never needed this exemption for, since those never legitimately
+            // appear as ordinary prose words.
+            .Where(c => !(c.Length > 0 && c.All(char.IsDigit)))
+            .Where(c => c != node.NodeCode)
             .ToHashSet(StringComparer.Ordinal);
 
         // Severity: codes in BlockCodes -> "block", word-like ambiguous ones -> "warn"
@@ -127,9 +152,22 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
             .Select(e => e.Name)
             .ToListAsync(ct);
 
-        // Pre-build a set of upper-case [A-Z]{3,6} tokens from entity names
+        // Also load Glossary terms for this node's universe — an acronym that already has a
+        // back-matter Glossary entry (SS-LAW-20: the Glossary, not in-voice explanation, is the
+        // designated fix for exactly this "unglossed acronym" problem) is a defined, legitimate
+        // in-world term, not a placeholder/leaked code. Without this, this check re-flags every
+        // single mention of every properly-glossaried acronym as "possible placeholder or leaked
+        // code" forever — confirmed live: on the ATTE book alone, "ARCSEC" and "AAMA" (both
+        // properly defined GlossaryTerms rows) accounted for half of this check's findings.
+        var glossaryTerms = await db.GlossaryTerms
+            .IgnoreQueryFilters()
+            .Where(g => g.UniverseId == node.UniverseId)
+            .Select(g => g.Term)
+            .ToListAsync(ct);
+
+        // Pre-build a set of upper-case [A-Z]{3,6} tokens from entity names + glossary terms
         var knownTokens = new HashSet<string>(StringComparer.Ordinal);
-        foreach (var name in entityNames)
+        foreach (var name in entityNames.Concat(glossaryTerms))
         {
             if (string.IsNullOrWhiteSpace(name)) continue;
             var upper = name.ToUpperInvariant();
@@ -180,6 +218,7 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
                 if (flaggedByCodes.Contains(token)) continue;
                 if (allCodes.Contains(token)) continue;
                 if (knownTokens.Contains(token)) continue;
+                if (IsInsideCapsRun(text, m.Index, m.Length)) continue;
 
                 if (seenUnknownTokens.TryGetValue(token, out var existing))
                     seenUnknownTokens[token] = (existing.BeatNumber, existing.Count + 1);
@@ -280,6 +319,60 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         int end   = Math.Min(text.Length, matchIndex + radius / 2);
         var raw   = text[start..end].Replace('\n', ' ').Replace('\r', ' ');
         return (start > 0 ? "..." : "") + raw + (end < text.Length ? "..." : "");
+    }
+
+    /// <summary>
+    /// True when the token at [matchStart, matchStart+matchLength) sits inside a run of
+    /// consecutive all-caps "words" — the shape of an embedded found-document/log/contract
+    /// insert written in sustained capitals for in-world flavor, not a standalone acronym.
+    /// Confirmed live: a GLMZ "morning report" security-log insert mid-beat ("06:55 - PIGEON ON
+    /// THE RAIL AGAIN. SAME PIGEON. WE HAVE NAMED IT... 07:31 - DENTS SAYS TOO CLEAN MEANS
+    /// CORPO...") flagged ordinary words (LOG, DENTS, BEEN, PARTY, MORALE...) as "undefined
+    /// acronyms" purely because the author wrote that passage in capitals — the single largest
+    /// contributor to this check's remaining false-positive volume after the glossary fix (2026-
+    /// 08-09). A plaque inscription ("PRINCIPAL FUNDER: ALDISS-MWANGI CAPITAL PARTNERS") and a
+    /// contract clause ("CONTRACT 14-S. RESERVED BAND: 17-19 HZ...", the same legitimate insert
+    /// already documented in NightlyHealthService's caps-header exemption) hit the identical
+    /// pattern. Numbers/punctuation-only tokens (timestamps, dashes, colons) don't break the
+    /// run — a log line like "06:55 - PIGEON" mixes them freely with caps words.
+    /// </summary>
+    internal static bool IsInsideCapsRun(string text, int matchStart, int matchLength, int minNeighborCapsWords = 2)
+    {
+        var before = CountAdjacentCapsWords(text, matchStart, forward: false);
+        var after  = CountAdjacentCapsWords(text, matchStart + matchLength, forward: true);
+        return before + after >= minNeighborCapsWords;
+    }
+
+    static int CountAdjacentCapsWords(string text, int pos, bool forward)
+    {
+        int count = 0;
+        int i = pos;
+        while (true)
+        {
+            if (forward) { while (i < text.Length && char.IsWhiteSpace(text[i])) i++; }
+            else         { while (i > 0 && char.IsWhiteSpace(text[i - 1])) i--; }
+
+            int start, end;
+            if (forward)
+            {
+                start = i;
+                while (i < text.Length && !char.IsWhiteSpace(text[i])) i++;
+                end = i;
+            }
+            else
+            {
+                end = i;
+                while (i > 0 && !char.IsWhiteSpace(text[i - 1])) i--;
+                start = i;
+            }
+            if (start == end) break; // ran off the end of the text — no more tokens
+
+            var letters = new string(text[start..end].Where(char.IsLetter).ToArray());
+            if (letters.Length == 0) continue; // pure punctuation/number token (timestamp, dash) — skip, don't break the run
+            if (letters.All(char.IsUpper)) { count++; continue; }
+            break; // a lowercase letter means the caps run ended here
+        }
+        return count;
     }
 }
 

@@ -205,6 +205,12 @@ public static class AutoRunCli
         if (audit.FailedLensCount > 0)
             Console.WriteLine($"[auto-run]   ⚠ {audit.FailedLensCount}/3 audit lenses failed — coverage degraded; repair may miss defects.");
 
+        if (audit.FailedLensCount == 3)
+        {
+            Console.WriteLine("[auto-run]   audit could not run (all 3 lenses failed) — skipping repair this pass.");
+            return;
+        }
+
         if (audit.IsClean)
         {
             Console.WriteLine("[auto-run]   audit clean — no blockers.");

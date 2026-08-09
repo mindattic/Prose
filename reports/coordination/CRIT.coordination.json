@@ -1,0 +1,1585 @@
+{
+  "nodeCode": "CRIT",
+  "slug": "double-entry-019f76e0",
+  "title": "Critical Mass",
+  "generatedAtUtc": "2026-08-09 06:56:46Z",
+  "totalBeats": 91,
+  "covered": 0,
+  "chapterGranular": true,
+  "bookScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "avalanche",
+    "HasSubplot": true,
+    "Granularity": "chapter",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 6
+  },
+  "flagCounts": {
+    "MISSING_MEANING": 91,
+    "UNSCORED": 91
+  },
+  "beats": [
+    {
+      "BeatId": "019fc10f-06c3-788e-867c-24ea65c03e00",
+      "Number": 15520,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 404,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06ee-7dd4-8fbe-6acb7a7ba281",
+      "Number": 15521,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 839,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f0-7598-8b8a-2efa3c0378eb",
+      "Number": 15522,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1061,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7bfe-a5ff-b24d7cd37416",
+      "Number": 15523,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 436,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-72ab-a288-ce8dc1a45663",
+      "Number": 15524,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1354,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7f38-9e38-2d3297c23d68",
+      "Number": 15525,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 416,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7862-afc8-7e8963eaafc9",
+      "Number": 15526,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 584,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7be1-956b-f22c0a4f0763",
+      "Number": 15527,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 237,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7fb9-af65-405f6f17b317",
+      "Number": 15528,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 537,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7f2f-986e-14e290faae7a",
+      "Number": 15529,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 485,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-74af-a5c9-196ada110af6",
+      "Number": 15530,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 473,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7f4d-a8af-0623e59c505f",
+      "Number": 15531,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 321,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-74fa-87be-74045c1d4bfe",
+      "Number": 15532,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 558,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-742f-a8a1-40926994eae1",
+      "Number": 15533,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 968,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-746d-b69a-b23be38b262c",
+      "Number": 15534,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 647,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-70fc-af7a-4a5bb7881be1",
+      "Number": 15535,
+      "Chapter": "The Ping",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 116,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-71ab-84ac-fc946a2347d0",
+      "Number": 15536,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 682,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7b7f-bb7c-efe56c5a8023",
+      "Number": 15537,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 606,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-721e-9e7e-c00f9278a53e",
+      "Number": 15538,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 511,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-7556-a2de-3bb2391228d0",
+      "Number": 15539,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 713,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-77a5-8576-cf80fb2eadcb",
+      "Number": 15540,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2726,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-783b-8b7c-6af97f28ece2",
+      "Number": 15541,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1570,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f1-719d-bcfb-06d8d96d1045",
+      "Number": 15542,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2007,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-768f-9818-a4b4af3e6c2c",
+      "Number": 15543,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 655,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-721e-969b-e146664a8362",
+      "Number": 15544,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 828,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7729-bcf8-ee1dbb42eeec",
+      "Number": 15545,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1649,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-780e-9b8c-3a318c223378",
+      "Number": 15546,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 994,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-712f-9af6-26ed27239dfd",
+      "Number": 15547,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1084,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7824-a4f2-c9f04a753563",
+      "Number": 15548,
+      "Chapter": "Ninety Minutes",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 444,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-77c7-8b43-7b9bbb98d50b",
+      "Number": 15549,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 493,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-71ab-a61e-866b0874190d",
+      "Number": 15550,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 369,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7daf-8173-62b64ec0dc29",
+      "Number": 15551,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 358,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7f27-8a3d-212c4501cc0c",
+      "Number": 15552,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 774,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7844-94a9-a228186f0379",
+      "Number": 15553,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 614,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-78b0-8d6d-c43e2fb29224",
+      "Number": 15554,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 303,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-71db-83bc-371710462e06",
+      "Number": 15555,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 278,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7b91-8d15-0cb2965ba489",
+      "Number": 15556,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2084,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7dc1-82e0-c1e0441165c2",
+      "Number": 15557,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 591,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7a0f-a8e9-ac91afbf577d",
+      "Number": 15558,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 254,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7a51-9872-a7e1954129e0",
+      "Number": 15559,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 498,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7d1f-9796-e73c361fae72",
+      "Number": 15560,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 378,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7cf1-b4f7-c228a5d06031",
+      "Number": 15561,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 500,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7fea-9459-9a1eec765a8f",
+      "Number": 15562,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1062,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7abe-b9b4-315953c73988",
+      "Number": 15563,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 176,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7817-8eef-be07e5d545b1",
+      "Number": 15564,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 700,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f2-7cb4-8688-964738cca083",
+      "Number": 15565,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 471,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7471-a567-ed696dd9b115",
+      "Number": 15566,
+      "Chapter": "Residual Process Activit",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 250,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-74fb-9e1b-b006d4956901",
+      "Number": 15567,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 370,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-74f4-9add-2f631058f332",
+      "Number": 15568,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 572,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-72c0-b718-1e4c1cd3300e",
+      "Number": 15569,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 723,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-745b-9e91-5ee0204086f8",
+      "Number": 15570,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 552,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7ded-8421-a4be24ccd2e0",
+      "Number": 15571,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 703,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-785d-8df4-101df87d1ca0",
+      "Number": 15572,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 445,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7d4a-8693-cdf0cdab8ef0",
+      "Number": 15573,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1107,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7ae4-8c28-b8749f1ce1ad",
+      "Number": 15574,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 749,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-77ee-8321-460c153f6fce",
+      "Number": 15575,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 485,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-74bd-9e36-e936e65abe13",
+      "Number": 15576,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 628,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7ab4-a84c-9baf0358c2c5",
+      "Number": 15577,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1466,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7e0d-ac13-8c985db9e5a8",
+      "Number": 15578,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 962,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7a5c-bc6e-cd81ab5e9f87",
+      "Number": 15579,
+      "Chapter": "Rack Three",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 408,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-77c6-87b8-523e5dad112e",
+      "Number": 15580,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 805,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-714e-bc25-edbf5c27a844",
+      "Number": 15581,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 1072,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-72ed-865a-e610d4c9b8e2",
+      "Number": 15582,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 1065,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7811-87cc-f5fb8b1d987b",
+      "Number": 15583,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 497,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-72f3-9f01-f9bf0a1e6501",
+      "Number": 15584,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 393,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7f2f-8703-13acb19783c0",
+      "Number": 15585,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 503,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7a0f-b27d-ef00d8fc8126",
+      "Number": 15586,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 151,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-783f-8e82-783636f8e9c7",
+      "Number": 15587,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 188,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7a16-99e9-8fb087e443e3",
+      "Number": 15588,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 479,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7470-9e55-c067c282a291",
+      "Number": 15589,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 843,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7d4f-a43c-8e6f5c6e8ef6",
+      "Number": 15590,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 299,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-797a-8ac8-051d8e04f4fc",
+      "Number": 15591,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 338,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7345-88de-ac4013af6a19",
+      "Number": 15592,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 262,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-73a7-bc9d-dea4bcfd1f33",
+      "Number": 15593,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 441,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc118-3b81-77aa-a373-0f9749431821",
+      "Number": 15642,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 191,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-7985-9551-5170f0adb678",
+      "Number": 15594,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 118,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f3-742c-b4e0-272c74a106d9",
+      "Number": 15595,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 325,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7790-b67e-b61145ad55cd",
+      "Number": 15596,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 278,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7425-83aa-d5bceeb5aa65",
+      "Number": 15597,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 644,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-74d2-a66f-a19673496cd5",
+      "Number": 15598,
+      "Chapter": "One Socket",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "escape",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 191,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7ee4-924f-470da093e949",
+      "Number": 15599,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 575,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-729b-bc3d-db8c588cf412",
+      "Number": 15600,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 254,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7c0e-acc8-a90a7d3ab86b",
+      "Number": 15601,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 321,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7369-8f9e-c43bb6fd2e86",
+      "Number": 15602,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 328,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7c1e-b92c-35b6be53608c",
+      "Number": 15603,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 532,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7212-aba6-11728175fd7e",
+      "Number": 15604,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1128,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7f14-93ed-da3a62a6bb7a",
+      "Number": 15605,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 887,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7383-b4ca-25cdb0f984c9",
+      "Number": 15606,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 261,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-77e7-9954-173e86cbc374",
+      "Number": 15607,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 682,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-778b-a0f2-e419839de179",
+      "Number": 15608,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 1059,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc10f-06f4-7124-aec7-f6b0e898c02e",
+      "Number": 15609,
+      "Chapter": "Green",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "EscalationTarget": "10",
+      "EventType": "ceremony",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 142,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    }
+  ]
+}

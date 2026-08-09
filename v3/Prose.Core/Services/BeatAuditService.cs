@@ -56,8 +56,14 @@ public class BeatAuditService(
 
         if (failed == 3)
         {
+            // IsClean:false, not true — "every lens failed to run" is not evidence of
+            // cleanliness, it's the absence of any evidence at all. The prior code returned
+            // IsClean:true here (this exact class doc comment warns against exactly that:
+            // "rather than treating a partial result as a clean pass"), so AutoRunCli would
+            // print "audit clean — no blockers" and silently skip the self-repair pass during a
+            // total LLM outage — the compounding-errors scenario this service exists to prevent.
             log.LogError("[BeatAuditService] All three lenses failed on node {NodeId} — skipping repair", nodeId);
-            return new(IsClean: true, Blockers: [], Moderates: [], FailedLensCount: 3);
+            return new(IsClean: false, Blockers: [], Moderates: [], FailedLensCount: 3);
         }
 
         var allIssues = results.Where(r => !r.Failed).SelectMany(r => r.Issues).ToList();

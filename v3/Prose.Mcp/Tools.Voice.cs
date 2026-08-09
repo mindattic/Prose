@@ -49,11 +49,35 @@ public class VoiceTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Harvest voice rules from all nodes scored ≥80% and return the combined proposals grouped by node.</summary>
-    [McpServerTool, Description("Distill voice rules from every node scored ≥80%. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called. Use list_voice_proposals to see all pending entries afterward.")]
-    public async Task<string> HarvestVoiceAll()
+    /// <summary>Harvest voice rules from all nodes scored ≥threshold and return the combined proposals grouped by node.
+    /// NOTE (SS-A44, 2026-08-03): the 0-100 score-panel gates were retired project-wide, so almost no node carries a
+    /// Score anymore (verified: 22/421 nodes have any Score at all, 2/421 are ≥80) — this tool will return an empty
+    /// result against most of the live corpus regardless of threshold. Prefer harvest_voice_canon (selects by
+    /// Node.IsCanon, the current recommended gate) or harvest_voice_node with force=true for a specific book.</summary>
+    [McpServerTool, Description("Distill voice rules from every node scored >=threshold (default 80). Score gates were retired project-wide (SS-A44) so almost no node has a Score anymore — this will likely return empty. Prefer harvest_voice_canon or harvest_voice_node(force:true) instead. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called.")]
+    public async Task<string> HarvestVoiceAll(
+        [Description("Minimum Node.Score to include (0-100). Default 80. Only affects nodes that HAVE a Score — most nodes have none post-SS-A44.")] double threshold = 80)
     {
-        var results = await harvest.HarvestAllAboveAsync();
+        var results = await harvest.HarvestAllAboveAsync(threshold);
+        return JsonSerializer.Serialize(results.Select(r => new
+        {
+            slug           = r.Slug,
+            title          = r.Title,
+            score          = r.Score,
+            edit_count     = r.EditCount,
+            directive_count = r.DirectiveCount,
+            proposal_count = r.Proposals.Count,
+            proposals      = SerializeProposals(r.Proposals),
+        }), CanonTools.JsonOpts);
+    }
+
+    /// <summary>Harvest voice rules from every node the author has marked Canon (Node.IsCanon) —
+    /// the SS-A44-era recommended gate now that 0-100 score panels are retired. Canon is an
+    /// explicit author trust decision, so every canon node is harvested unconditionally.</summary>
+    [McpServerTool, Description("Distill voice rules from every node the author has marked Canon (IsCanon=true) — the recommended harvest gate post-SS-A44, since almost no node carries a Score anymore. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called.")]
+    public async Task<string> HarvestVoiceCanon()
+    {
+        var results = await harvest.HarvestCanonAsync();
         return JsonSerializer.Serialize(results.Select(r => new
         {
             slug           = r.Slug,

@@ -201,11 +201,23 @@ public sealed class SwainAuditService(
             .Select(n => n.Id)
             .ToListAsync(ct);
 
-        var beats = await db.BeatNodes
+        // BeatNodes.SortKey is scoped PER CHAPTER, not book-global — ranges overlap across
+        // chapters (verified live: one chapter's beats span SortKey 1500-65000, the next
+        // chapter's span 500-21000). A plain OrderBy(SortKey) across multiple chapters scrambles
+        // reading order, and the Position this method assigns (beats.Select((b,i) => i+1) below)
+        // is what SwainAuditCli prints as "Beat N" — so a BLOCKER reported at that position could
+        // name an entirely different beat than the one actually flagged. Order by chapter first,
+        // matching the pattern GripePassService/ComprehensionProbeService/BeatChecklistGateService
+        // already use for the same multi-chapter scope.
+        var chapterOrder = scopeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var rows = await db.BeatNodes
+            .Include(nb => nb.Beat)
             .Where(nb => scopeIds.Contains(nb.NodeId) && nb.IsEnabled)
-            .OrderBy(nb => nb.SortKey)
-            .Select(nb => new { nb.Beat!.Id, Title = nb.Beat.Title ?? "", Text = nb.Beat.Text ?? "" })
             .ToListAsync(ct);
+        var beats = rows
+            .OrderBy(nb => chapterOrder[nb.NodeId]).ThenBy(nb => nb.SortKey)
+            .Select(nb => new { nb.Beat!.Id, Title = nb.Beat.Title ?? "", Text = nb.Beat.Text ?? "" })
+            .ToList();
 
         // Classify concurrently (up to 5 in-flight LLM calls at once).
         var sem = new SemaphoreSlim(5, 5);

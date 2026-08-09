@@ -107,4 +107,44 @@ public class DocContextStackDeterminismTests
         Assert.That(order.Count, Is.EqualTo(DocContextStack.TopicCapacity + 2),
             "pinned tiers survive on top of the topic cap, they do not consume it");
     }
+
+    /// <summary>
+    /// Regression for the force-pin bug (2026-08-09): DocContextService.PrepareContextAsync's
+    /// `pinnedDocIds` param (e.g. the POV register doc) pushes with Score=999 but keeps the
+    /// candidate's ORIGINAL tier — usually "topic", not "always"/"node". Before the fix, IsPinned
+    /// only checked tier, so a force-pinned doc still counted against TopicCapacity and could be
+    /// evicted the same action it was pushed — exactly backwards from "force-include regardless
+    /// of LRU tier."
+    /// </summary>
+    [Test]
+    public void ScorePinnedTopicDoc_IsExemptFromCapacity_EvenThoughTierIsTopic()
+    {
+        var entries = Enumerable.Range(0, DocContextStack.TopicCapacity + 5)
+            .Select(i => Entry($"docs/topic-{i:D2}.md", "topic"))
+            .Append(Entry("docs/pov-register.md", "topic", 999));
+
+        var order = OrderAfterPush(entries);
+
+        Assert.That(order, Does.Contain("docs/pov-register.md"),
+            "a Score=999 force-pinned doc must survive capacity eviction despite its tier being 'topic'");
+        Assert.That(order.Count, Is.EqualTo(DocContextStack.TopicCapacity + 1),
+            "the pinned doc rides on top of the cap, it does not consume one of the topic slots");
+    }
+
+    [Test]
+    public void ScorePinnedDoc_SurvivesStaleEviction_UnlikeOrdinaryTopicDoc()
+    {
+        var stack = new DocContextStack();
+        var contextId = Guid.NewGuid();
+        stack.BeginAction(contextId, "TEST");
+        stack.Push(contextId, Entry("docs/pov-register.md", "topic", 999));
+        stack.Push(contextId, Entry("docs/ordinary-topic.md", "topic", 50));
+
+        // Advance past TopicEvictAfterActions (4) with no re-touch of either doc.
+        for (var i = 0; i < 6; i++) stack.BeginAction(contextId, "TEST");
+
+        var order = stack.GetActive(contextId).Select(e => e.RelativePath).ToList();
+        Assert.That(order, Does.Contain("docs/pov-register.md"), "pinned doc must never go stale");
+        Assert.That(order, Does.Not.Contain("docs/ordinary-topic.md"), "ordinary topic doc should have evicted as stale (sanity check on the test setup)");
+    }
 }

@@ -29,13 +29,40 @@ public class CanonDocumentService
 
     // ── Resolve a universe slug or id string → Guid ───────────────────────────
 
-    public static Guid? ResolveUniverseId(string universeSlug)
-        => universeSlug.ToLowerInvariant() switch
-        {
-            "glmz" or "cyberpunk" => Universe.GlmzId,
-            "scry" or "fantasy" or "caul" or "cauld" => Universe.FantasyId,
-            _ => Guid.TryParse(universeSlug, out var id) ? id : null,
-        };
+    /// <summary>
+    /// Fast-path aliases for the two universes with well-known constants, plus a raw GUID
+    /// passthrough — kept static/sync since these cases need no DB hit.
+    /// </summary>
+    static Guid? ResolveWellKnownAlias(string universeSlug) => universeSlug.ToLowerInvariant() switch
+    {
+        "glmz" or "cyberpunk" => Universe.GlmzId,
+        "scry" or "fantasy" or "caul" or "cauld" => Universe.FantasyId,
+        "nonfiction" => Universe.NonfictionId,
+        _ => Guid.TryParse(universeSlug, out var id) ? id : null,
+    };
+
+    /// <summary>
+    /// Resolves a universe slug (or raw GUID string) to its Guid. Was a hardcoded switch
+    /// covering only glmz/scry (plus their aliases) — every universe added after those two
+    /// (nonfiction, fiction, horror, erotica) silently returned null ("unknown_universe") from
+    /// every canon-document MCP tool no matter how the universe was spelled, since there was no
+    /// fallback path at all. Falls back to a live, case-insensitive slug lookup against the
+    /// Universe table (IgnoreQueryFilters defensively, in case a future global filter is ever
+    /// added to this entity — Universe itself carries none today) so a newly-registered universe
+    /// resolves immediately, with no code change required.
+    /// </summary>
+    public async Task<Guid?> ResolveUniverseIdAsync(string universeSlug, CancellationToken ct = default)
+    {
+        var wellKnown = ResolveWellKnownAlias(universeSlug);
+        if (wellKnown != null) return wellKnown;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var slug = universeSlug.ToLowerInvariant();
+        return await db.Universes.IgnoreQueryFilters()
+            .Where(u => u.Slug.ToLower() == slug)
+            .Select(u => (Guid?)u.Id)
+            .FirstOrDefaultAsync(ct);
+    }
 
     // ── Get a full assembled document from DB sections ───────────────────────
 

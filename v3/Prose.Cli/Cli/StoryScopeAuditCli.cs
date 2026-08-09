@@ -103,9 +103,10 @@ public static class StoryScopeAuditCli
                 moderate_count  = report.ModerateCount,
                 minor_count     = report.MinorCount,
                 deviation_count = report.DeviationCount,
+                error_count     = report.ErrorCount,
                 checks          = report.Checks,
             }, new JsonSerializerOptions { WriteIndented = true }));
-            return report.BlockerCount > 0 ? 2 : (report.ModerateCount + report.MinorCount) > 0 ? 1 : 0;
+            return (report.BlockerCount + report.ErrorCount) > 0 ? 2 : (report.ModerateCount + report.MinorCount) > 0 ? 1 : 0;
         }
 
         // ── Human-readable output, grouped by severity ─────────────────────────
@@ -118,13 +119,16 @@ public static class StoryScopeAuditCli
         {
             "PASS"      => "✅",
             "BLOCKER"   => "❌",
+            "ERROR"     => "❓",
             "MODERATE"  => "⚠️ ",
             "MINOR"     => "· ",
             "DEVIATION" => "◇ ",
             _            => "  ",
         };
 
-        foreach (var group in new[] { "BLOCKER", "MODERATE", "MINOR", "DEVIATION", "PASS" })
+        // ERROR (a check that never actually ran) sorts first — it needs attention before even
+        // the BLOCKERs, since it means part of the audit is an unknown, not a verified result.
+        foreach (var group in new[] { "ERROR", "BLOCKER", "MODERATE", "MINOR", "DEVIATION", "PASS" })
         {
             var inGroup = report.Checks.Where(c => c.Severity == group).ToList();
             if (inGroup.Count == 0) continue;
@@ -144,10 +148,12 @@ public static class StoryScopeAuditCli
         Console.WriteLine(new string('─', 60));
         if (report.Ready)
             Console.WriteLine($"✅ CLEAN — no blocking structural tells. ({report.ModerateCount} moderate, {report.MinorCount} minor, {report.DeviationCount} deviations noted.)");
+        else if (report.ErrorCount > 0)
+            Console.WriteLine($"❓ {report.ErrorCount} check(s) failed to evaluate (see ERROR above) and {report.BlockerCount} BLOCKER(s) found — re-run once the underlying issue (LLM outage, rate limit) clears, then re-audit.");
         else
             Console.WriteLine($"❌ {report.BlockerCount} BLOCKER(s) — fix per docs/LOGIC.md minimal-splice rules, then re-audit.");
         Console.WriteLine("Findings written with STORYSCOPE prefix — future beat writes pick them up automatically.");
 
-        return report.BlockerCount > 0 ? 2 : (report.ModerateCount + report.MinorCount) > 0 ? 1 : 0;
+        return (report.BlockerCount + report.ErrorCount) > 0 ? 2 : (report.ModerateCount + report.MinorCount) > 0 ? 1 : 0;
     }
 }

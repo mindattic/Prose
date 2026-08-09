@@ -1076,12 +1076,53 @@ public class WorldGraphService : IWorldGraphService
 
             if (c.Location.Length > 0)
             {
-                var locId = Slugify(c.Location);
+                // c.Location comes from EntityStateEvents (AspectKey="location"); a 2026-migration
+                // ("migration:static-vs-dynamic-split") wrote full narrative "home turf"
+                // descriptions into this field for most characters rather than a clean place
+                // name ("Shallowgrave — sleeps in a shared squat off Burnside Pocket, runs
+                // routes through the market corridors, near Ashland and Division") — confirmed
+                // 2026-08-09: 1137 of 1209 live rows (94%) are over 40 chars. Promoting the raw
+                // string verbatim created one throwaway, effectively-orphaned graph "Place" node
+                // per character (largely responsible for the 68% weakly-connected-node rate
+                // graph-health found). Extract just the leading place-name-like segment for the
+                // node identity; keep the full text as the edge's description so the narrative
+                // detail isn't lost, just not misused as a node name.
+                var placeName = ExtractPlaceName(c.Location);
+                var locId = Slugify(placeName);
                 if (!_nodes.ContainsKey(locId))
-                    AddNode(new WorldNode { Id = locId, Name = c.Location, NodeType = EntityTypes.Place });
-                AddEdge(new WorldEdge { Source = id, Target = locId, RelationType = "located_in" });
+                    AddNode(new WorldNode { Id = locId, Name = placeName, NodeType = EntityTypes.Place });
+                AddEdge(new WorldEdge { Source = id, Target = locId, RelationType = "located_in",
+                    Description = placeName == c.Location ? "" : c.Location });
             }
         }
+    }
+
+    /// <summary>
+    /// A location string that reads as narrative ("Placename — does X, near Y and Z") rather
+    /// than a clean place name gets truncated to its leading segment (split on the first em/en
+    /// dash or hyphen-surrounded-by-spaces) so it doesn't become the literal name of a graph
+    /// node. Short, already-clean location strings pass through unchanged.
+    /// </summary>
+    internal static string ExtractPlaceName(string location)
+    {
+        const int cleanThreshold = 30;
+        if (location.Length <= cleanThreshold) return location;
+
+        var cutIdx = location.IndexOfAny(['—', '–', '(', ';']);
+        if (cutIdx < 0)
+        {
+            var dashIdx = location.IndexOf(" - ", StringComparison.Ordinal);
+            if (dashIdx > 0) cutIdx = dashIdx;
+        }
+        if (cutIdx < 0)
+        {
+            var commaIdx = location.IndexOf(',');
+            if (commaIdx > 0) cutIdx = commaIdx;
+        }
+
+        var leading = (cutIdx > 0 ? location[..cutIdx] : location).Trim();
+        if (leading.Length == 0) leading = location;
+        return leading.Length > cleanThreshold ? leading[..cleanThreshold].TrimEnd() : leading;
     }
 
     private void BuildDistricts()
@@ -1119,10 +1160,14 @@ public class WorldGraphService : IWorldGraphService
 
             foreach (var loc in d.NotableLocations)
             {
-                var locId = Slugify(loc.Name);
+                // Same malformation as the Character.Location field fixed above: loc.Name is
+                // meant to hold just the location's own name (it already has its own separate
+                // Description field), but some rows carry a full narrative sentence instead.
+                var locName = ExtractPlaceName(loc.Name);
+                var locId = Slugify(locName);
                 var locProps = new Dictionary<string, string>();
                 if (loc.Description.Length > 0) locProps["description"] = loc.Description;
-                AddNode(new WorldNode { Id = locId, Name = loc.Name, NodeType = EntityTypes.Place, Properties = locProps });
+                AddNode(new WorldNode { Id = locId, Name = locName, NodeType = EntityTypes.Place, Properties = locProps });
                 AddEdge(new WorldEdge { Source = locId, Target = id, RelationType = "located_in", Description = $"{loc.Name} is inside {d.Name}" });
             }
 
@@ -1142,10 +1187,12 @@ public class WorldGraphService : IWorldGraphService
             foreach (var related in d.RelatedEntities)
             {
                 if (string.IsNullOrWhiteSpace(related)) continue;
-                var relId = Slugify(related);
+                var relName = ExtractPlaceName(related);
+                var relId = Slugify(relName);
                 if (!_nodes.ContainsKey(relId))
-                    AddNode(new WorldNode { Id = relId, Name = related, NodeType = EntityTypes.Unknown });
-                AddEdge(new WorldEdge { Source = id, Target = relId, RelationType = "related_to", Weight = 0.5 });
+                    AddNode(new WorldNode { Id = relId, Name = relName, NodeType = EntityTypes.Unknown });
+                AddEdge(new WorldEdge { Source = id, Target = relId, RelationType = "related_to", Weight = 0.5,
+                    Description = relName == related ? "" : related });
             }
         }
     }
@@ -1184,10 +1231,16 @@ public class WorldGraphService : IWorldGraphService
 
             if (f.Territory.Length > 0)
             {
-                var terrId = Slugify(f.Territory);
+                // Same malformation as Character.Location: some Territory values are a full
+                // narrative description (confirmed live in SCRY, e.g. "The Quarantine Wall
+                // perimeter around the Sinter zone; Descent Corps operations within the zone")
+                // rather than a clean place name.
+                var terrName = ExtractPlaceName(f.Territory);
+                var terrId = Slugify(terrName);
                 if (!_nodes.ContainsKey(terrId))
-                    AddNode(new WorldNode { Id = terrId, Name = f.Territory, NodeType = EntityTypes.Place });
-                AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "operates_in" });
+                    AddNode(new WorldNode { Id = terrId, Name = terrName, NodeType = EntityTypes.Place });
+                AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "operates_in",
+                    Description = terrName == f.Territory ? "" : f.Territory });
             }
         }
     }
@@ -1213,10 +1266,16 @@ public class WorldGraphService : IWorldGraphService
 
             if (c.SovereignTerritory.Length > 0)
             {
-                var terrId = Slugify(c.SovereignTerritory);
+                // Same malformation as Character.Location/Faction.Territory/Weapon.Manufacturer:
+                // 79 of 81 live SovereignTerritory values are a full narrative description
+                // ("The Drift Yards - a sovereign archipelago of 34 semi-permanent floating
+                // platforms..."), not a clean place name.
+                var terrName = ExtractPlaceName(c.SovereignTerritory);
+                var terrId = Slugify(terrName);
                 if (!_nodes.ContainsKey(terrId))
-                    AddNode(new WorldNode { Id = terrId, Name = c.SovereignTerritory, NodeType = EntityTypes.Place });
-                AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "controls_territory" });
+                    AddNode(new WorldNode { Id = terrId, Name = terrName, NodeType = EntityTypes.Place });
+                AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "controls_territory",
+                    Description = terrName == c.SovereignTerritory ? "" : c.SovereignTerritory });
             }
         }
     }
@@ -1243,10 +1302,15 @@ public class WorldGraphService : IWorldGraphService
             // Link to manufacturer
             if (w.Manufacturer.Length > 0)
             {
-                var mfgId = Slugify(w.Manufacturer);
+                // Same malformation as Character.Location/Faction.Territory: some Manufacturer
+                // values are a full narrative note (confirmed live in SCRY, e.g. "House Vulcanus
+                // (primary); licensed variants from Houses Corvus and Noctua"), not a clean org name.
+                var mfgName = ExtractPlaceName(w.Manufacturer);
+                var mfgId = Slugify(mfgName);
                 if (!_nodes.ContainsKey(mfgId))
-                    AddNode(new WorldNode { Id = mfgId, Name = w.Manufacturer, NodeType = EntityTypes.Organization });
-                AddEdge(new WorldEdge { Source = id, Target = mfgId, RelationType = "manufactured_by" });
+                    AddNode(new WorldNode { Id = mfgId, Name = mfgName, NodeType = EntityTypes.Organization });
+                AddEdge(new WorldEdge { Source = id, Target = mfgId, RelationType = "manufactured_by",
+                    Description = mfgName == w.Manufacturer ? "" : w.Manufacturer });
             }
 
             // Link to known users
@@ -1290,10 +1354,16 @@ public class WorldGraphService : IWorldGraphService
 
             if (e.Manufacturer.Length > 0)
             {
-                var mfgId = Slugify(e.Manufacturer);
+                // Same malformation as Weapon.Manufacturer (already fixed): some values are a
+                // narrative note ("Multiple specialty manufacturers; custom builds common among
+                // experienced operators", "The Liturgy (alien origin; distributed, not
+                // manufactured)"), not a clean org name.
+                var mfgName = ExtractPlaceName(e.Manufacturer);
+                var mfgId = Slugify(mfgName);
                 if (!_nodes.ContainsKey(mfgId))
-                    AddNode(new WorldNode { Id = mfgId, Name = e.Manufacturer, NodeType = EntityTypes.Organization });
-                AddEdge(new WorldEdge { Source = id, Target = mfgId, RelationType = "manufactured_by" });
+                    AddNode(new WorldNode { Id = mfgId, Name = mfgName, NodeType = EntityTypes.Organization });
+                AddEdge(new WorldEdge { Source = id, Target = mfgId, RelationType = "manufactured_by",
+                    Description = mfgName == e.Manufacturer ? "" : e.Manufacturer });
             }
 
             foreach (var user in e.KnownUsers)

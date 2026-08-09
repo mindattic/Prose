@@ -56,7 +56,9 @@ public class ProseWriterRouter(
     WorldGraphService? worldGraph = null,
     CanonGroundingService? canonGrounding = null,
     LibertyReportService? libertyReport = null,
-    SemanticFidelityService? semanticFidelity = null)
+    SemanticFidelityService? semanticFidelity = null,
+    PlantPayoffService? plantPayoffs = null,
+    BookAuditService? bookAudit = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -586,6 +588,36 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, skipped", nameof(ContextTelemetryService)); }
         }
 
+        // PlantPayoff/StoryAudit coverage was previously hardcoded to "active whenever
+        // applicable" (IsActive: nodeApplicable) regardless of whether BeatGeneratorService's
+        // internal plantBlock/commandmentBlock actually came back non-empty — those are local
+        // variables inside BeatGeneratorService.GenerateBeatAsync never surfaced back here, so
+        // workflow_status kept reporting 100% coverage for both even if either silently failed
+        // or was unwired for a book. Mirror BeatGeneratorService's own computation (same
+        // services, same non-blocking try/catch) so coverage logging measures the real content
+        // length like every other entry in the table below.
+        var plantBlockLen = 0;
+        if (plantPayoffs != null && context.NodeId != Guid.Empty)
+        {
+            try { plantBlockLen = (await plantPayoffs.BuildPlantContextAsync(context.NodeId, ct)).Length; }
+            catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
+        }
+        var commandmentBlockLen = 0;
+        if (bookAudit != null && context.NodeId != Guid.Empty && dbFactory != null)
+        {
+            try
+            {
+                await using var cdb = await dbFactory.CreateDbContextAsync(ct);
+                var s = await cdb.Nodes.AsNoTracking()
+                    .Where(x => x.Id == context.NodeId)
+                    .Select(x => new { x.PreviousNodeId, x.UniverseId })
+                    .FirstOrDefaultAsync(ct);
+                if (s != null)
+                    commandmentBlockLen = bookAudit.BuildCommandmentContext(s.PreviousNodeId.HasValue, s.UniverseId).Length;
+            }
+            catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
+        }
+
         // Fire-and-forget: coverage logging + reconciliation + tension recording + reader knowledge extraction.
         var pacingApplicable      = totalBeats > 0;
         var structApplicable      = totalBeats > 0;
@@ -605,8 +637,8 @@ public class ProseWriterRouter(
             [
                 new("Pacing",              IsApplicable: pacingApplicable,  IsActive: pacingApplicable && enriched.PacingGuidance.Length > 0,                 BlockSizeChars: enriched.PacingGuidance.Length),
                 new("StoryMethodology",    IsApplicable: structApplicable,  IsActive: structApplicable && enriched.StructuralRoleGuidance.Length > 0,         BlockSizeChars: enriched.StructuralRoleGuidance.Length),
-                new("PlantPayoff",         IsApplicable: nodeApplicable,    IsActive: nodeApplicable,                                                         BlockSizeChars: 0),
-                new("StoryAudit",          IsApplicable: nodeApplicable,    IsActive: nodeApplicable,                                                         BlockSizeChars: 0),
+                new("PlantPayoff",         IsApplicable: nodeApplicable,    IsActive: plantBlockLen > 0,                                                      BlockSizeChars: plantBlockLen),
+                new("StoryAudit",          IsApplicable: nodeApplicable,    IsActive: commandmentBlockLen > 0,                                                BlockSizeChars: commandmentBlockLen),
                 new("Combat",              IsApplicable: combatApplicable,  IsActive: combatApplicable,                                                       BlockSizeChars: combatApplicable ? CombatProseGuidance.Length : 0),
                 new("EntityContext",       IsApplicable: nodeApplicable,    IsActive: entityStackContext.Length > 0,                                          BlockSizeChars: entityStackContext.Length),
                 new("DocContext",          IsApplicable: nodeApplicable,    IsActive: docStackContext.Length > 0,                                             BlockSizeChars: docStackContext.Length),

@@ -90,8 +90,12 @@ public class StoryScopeAuditService(
         if (progressive != null)
             checks.AddRange(DeriveProgressiveChecks(progressive, beats.Count));
         else
+            // ERROR, not MINOR: this is StoryScope's core structural signal (escalation curve +
+            // event-type diversity — "the #1 AI-fiction fingerprint") failing to run at all, not
+            // a real finding. A MINOR severity let Ready stay true when the single most load-
+            // bearing check silently never executed.
             checks.Add(new StoryScopeCheck("progressive_reading", "Per-beat stakes/event reading",
-                "MINOR", "Progressive reading failed — escalation and event-diversity checks were skipped.", null, null, null));
+                "ERROR", "Progressive reading failed — escalation and event-diversity checks were skipped.", null, null, null));
 
         checks.AddRange(await Task.WhenAll(holisticTasks));
         checks.Add(await clicheTask);
@@ -109,7 +113,10 @@ public class StoryScopeAuditService(
             ModerateCount:  checks.Count(c => c.Severity == "MODERATE"),
             MinorCount:     checks.Count(c => c.Severity == "MINOR"),
             DeviationCount: checks.Count(c => c.Severity == "DEVIATION"),
-            Ready:          checks.All(c => c.Severity != "BLOCKER"));
+            ErrorCount:     checks.Count(c => c.Severity == "ERROR"),
+            // ERROR (a check that never actually ran) must block Ready exactly like a real
+            // BLOCKER — see the two ERROR-producing catch blocks above for why.
+            Ready:          checks.All(c => c.Severity is not ("BLOCKER" or "ERROR")));
     }
 
     // ── Deterministic layer ───────────────────────────────────────────────────
@@ -409,7 +416,7 @@ public class StoryScopeAuditService(
         }
     }
 
-    static List<StoryScopeCheck> DeriveProgressiveChecks(List<BeatReading> readings, int beatCount)
+    internal static List<StoryScopeCheck> DeriveProgressiveChecks(List<BeatReading> readings, int beatCount)
     {
         var results = new List<StoryScopeCheck>();
         var ordered = readings.OrderBy(r => r.Index).ToList();
@@ -426,6 +433,12 @@ public class StoryScopeAuditService(
         var climaxZoneStart = (int)(stakes.Count * 0.6);
         var maxStakes = stakes.Count > 0 ? stakes.Max() : 0;
         var peakIndex = stakes.IndexOf(maxStakes);
+        // IndexOf finds the FIRST beat tying the max — if an early beat and the true climax
+        // both hit the same top stakes value, that alone doesn't mean the story de-escalates;
+        // the climax is still correctly placed. Only flag early_peak when NO occurrence of the
+        // max reaches the climax zone at all.
+        var peakReachedInClimaxZone = climaxZoneStart < stakes.Count
+            && stakes.Skip(climaxZoneStart).Any(s => s == maxStakes);
         if (plateaus.Count > 0)
             results.Add(new StoryScopeCheck("flat_escalation", "Event escalation",
                 "MODERATE",
@@ -435,7 +448,7 @@ public class StoryScopeAuditService(
         else
             results.Add(Pass("flat_escalation", "Event escalation",
                 $"No 3-beat stakes plateaus. Peak {maxStakes}/10 at beat {peakIndex}."));
-        if (peakIndex >= 0 && peakIndex < climaxZoneStart && stakes.Count >= 5)
+        if (peakIndex >= 0 && !peakReachedInClimaxZone && stakes.Count >= 5)
             results.Add(new StoryScopeCheck("early_peak", "Escalation peak placement",
                 "MODERATE",
                 $"The stakes peak ({maxStakes}/10) lands at beat {peakIndex} of {stakes.Count} — before the final 40%. The story de-escalates into its own ending.",
@@ -598,7 +611,11 @@ public class StoryScopeAuditService(
         }
         catch (Exception ex)
         {
-            return new StoryScopeCheck(check.Key, check.Title, "MINOR",
+            // ERROR, not MINOR: this check never actually ran (LLM timeout, provider outage,
+            // malformed response) — folding that into MINOR let Ready stay true even when every
+            // holistic check failed to evaluate, same false-"clean" bug as BookAuditService's
+            // GatewayReady (2026-08-09).
+            return new StoryScopeCheck(check.Key, check.Title, "ERROR",
                 $"Evaluation failed: {ex.Message}", null, null, null);
         }
     }
@@ -863,4 +880,5 @@ public record StoryScopeAuditReport(
     int    ModerateCount,
     int    MinorCount,
     int    DeviationCount,
+    int    ErrorCount,
     bool   Ready);

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Concurrent;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging.Abstractions;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Interfaces;
@@ -34,7 +35,8 @@ public class BookAuditChapterAssemblyTests
         dbFactory = TestDbFactory.For(paths, "nodes");
         llm = new CapturingLlmService();
         var auditRunner = new AuditRunner(llm, new FindingsService(dbFactory, paths));
-        svc = new BookAuditService(auditRunner, new PlantPayoffService(dbFactory), dbFactory);
+        var glossary = new GlossaryService(dbFactory, paths, NullLogger<GlossaryService>.Instance);
+        svc = new BookAuditService(auditRunner, new PlantPayoffService(dbFactory), glossary, dbFactory);
     }
 
     [TearDown]
@@ -88,6 +90,41 @@ public class BookAuditChapterAssemblyTests
 
         var prose = llm.LastAuditedProse();
         Assert.That(prose, Does.Contain("LEAF_OWN_BEAT"));
+    }
+
+    [Test]
+    public async Task Audit_EveryCommandmentThrows_GatewayReadyIsFalse()
+    {
+        // 2026-08-09 production incident: the live Anthropic API key ran out of credit
+        // balance mid-session. Every one of the 7 commandment LLM calls threw, and
+        // GatewayReady still came back true ("✅ READY — all gateway commandments
+        // satisfied.") because the "Evaluation failed" placeholder verdict was severity
+        // MODERATE, which the old status mapping treated as a non-blocking "warn". A book
+        // could be reported publish-ready with zero of its commandments actually checked.
+        var throwingLlm = new ThrowingLlmService();
+        var auditRunner = new AuditRunner(throwingLlm, new FindingsService(dbFactory, paths));
+        var glossary = new GlossaryService(dbFactory, paths, NullLogger<GlossaryService>.Instance);
+        var throwingSvc = new BookAuditService(auditRunner, new PlantPayoffService(dbFactory), glossary, dbFactory);
+
+        var bookId = await SeedNodeWithBeatAsync("book", "Some prose.");
+
+        var report = await throwingSvc.AuditAsync(bookId);
+
+        Assert.That(report.GatewayReady, Is.False,
+            "a book whose commandments could not be evaluated at all must never report ready");
+        Assert.That(report.Checks, Has.All.Matches<BookAuditCheck>(c => c.Status == "error"));
+        Assert.That(report.BlockingCount, Is.EqualTo(report.Checks.Count));
+    }
+
+    /// <summary>Fake LLM that always throws — simulates a provider outage / exhausted API credit.</summary>
+    private sealed class ThrowingLlmService : ILlmService
+    {
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+
+        public Task<string> GenerateAsync(string system, string user,
+            double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default) =>
+            throw new InvalidOperationException(
+                "400 Bad Request: Your credit balance is too low to access the Anthropic API.");
     }
 
     // ── seeding helpers ─────────────────────────────────────────────────────

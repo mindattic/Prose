@@ -1,0 +1,140 @@
+{
+  "nodeCode": "LLSS",
+  "slug": "lyra-sinterspawn-slayer-019f5bd9",
+  "title": "Lieutenant Lyra, Sinterkin Slayer",
+  "generatedAtUtc": "2026-08-09 06:58:15Z",
+  "totalBeats": 6,
+  "covered": 1,
+  "chapterGranular": false,
+  "bookScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "avalanche",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 6
+  },
+  "flagCounts": {
+    "MISSING_MEANING": 5,
+    "UNSCORED": 6
+  },
+  "beats": [
+    {
+      "BeatId": "019faba7-b6a2-7b17-8d1b-09008af81f2b",
+      "Number": 14409,
+      "Chapter": "Chapter 1 - Lieutenant L",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "2",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4207,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019faba8-f1f0-7c58-9e36-06812f8cc59b",
+      "Number": 14410,
+      "Chapter": "Chapter 1 - Lieutenant L",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2648,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "bb87c3a3-78b1-4418-a3aa-369b3668f9af",
+      "Number": 5305,
+      "Chapter": "Chapter 1 - Lieutenant L",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Establishes Lyra as a seasoned, methodical monster-hunter mid-mission, building her competence and the sinterspawn threat before an ominous harrower interrupts the beat.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "subplot"
+      ],
+      "ProseLength": 11218,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019faba9-60f1-794f-85aa-bfb840469f2b",
+      "Number": 14411,
+      "Chapter": "Chapter 1 - Lieutenant L",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 3530,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fac04-377e-74ff-a87c-582cb1039e00",
+      "Number": 14529,
+      "Chapter": "Chapter 1 - Lieutenant L",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 8823,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fabaa-3bbf-7ef1-87a0-5e43870df05e",
+      "Number": 14412,
+      "Chapter": "Chapter 1 - Lieutenant L",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "arrival",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2655,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    }
+  ]
+}

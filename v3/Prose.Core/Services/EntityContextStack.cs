@@ -74,13 +74,21 @@ public sealed class EntityContextStack
                 state.Entries[id] = e with { LastMentionedBeat = state.BeatCounter };
     }
 
-    /// <summary>Returns active entities ordered by most-recently-mentioned, then by depth.</summary>
+    /// <summary>Returns active entities ordered by most-recently-mentioned, then by depth.
+    ///
+    /// The trailing <c>Name</c> tiebreak is load-bearing, not cosmetic — see
+    /// <see cref="DocContextStack.GetActive"/> for the identical reasoning: every entity
+    /// mentioned during one action/beat shares the same <c>LastMentionedBeat</c>, so without a
+    /// stable final key, ties fall through to <see cref="ConcurrentDictionary"/> enumeration
+    /// order and which entity survives a budget clip (or gets evicted below) can vary between
+    /// runs of the same beat.</summary>
     public IReadOnlyList<StackEntry> GetActive(Guid nodeId)
     {
         if (!nodes.TryGetValue(nodeId, out var state)) return [];
         return [.. state.Entries.Values
             .OrderByDescending(e => e.LastMentionedBeat)
-            .ThenBy(e => e.Depth)];
+            .ThenBy(e => e.Depth)
+            .ThenBy(e => e.Name, StringComparer.Ordinal)];
     }
 
     /// <summary>Clears the stack for a node (use when starting a new node session).</summary>
@@ -97,10 +105,15 @@ public sealed class EntityContextStack
     {
         // Prefer evicting low-priority (depth > 0) entries first; fall back to
         // any LRU entry when all entries are depth-0 to keep count within capacity.
+        // Name tiebreak makes the choice reproducible when several entries tie on
+        // LastMentionedBeat (the common case — see GetActive's remarks).
         var lru = state.Entries.Values
                       .Where(e => e.Depth > 0)
-                      .MinBy(e => e.LastMentionedBeat)
-                  ?? state.Entries.Values.MinBy(e => e.LastMentionedBeat);
+                      .OrderBy(e => e.LastMentionedBeat).ThenBy(e => e.Name, StringComparer.Ordinal)
+                      .FirstOrDefault()
+                  ?? state.Entries.Values
+                      .OrderBy(e => e.LastMentionedBeat).ThenBy(e => e.Name, StringComparer.Ordinal)
+                      .FirstOrDefault();
         if (lru != null)
             state.Entries.TryRemove(lru.EntityId, out _);
     }

@@ -84,10 +84,11 @@ public static class BookAuditCli
 
         static string Icon(string status) => status switch
         {
-            "pass" => "✅",
-            "warn" => "⚠️ ",
-            "fail" => "❌",
-            _       => "  ",
+            "pass"  => "✅",
+            "warn"  => "⚠️ ",
+            "fail"  => "❌",
+            "error" => "❓",
+            _        => "  ",
         };
 
         foreach (var check in report.Checks)

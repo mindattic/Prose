@@ -25,7 +25,8 @@ public class CrossReferenceService(XrefService xref, IDbContextFactory<ProseDbCo
         bool clearFirst = true,
         IProgress<UtilityProgress>? progress = null,
         int parallelism = 4,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        bool dryRun = false)
     {
         xref.EnsureBuilt();
         var nameIndex = xref.GetNameIndex();
@@ -35,7 +36,7 @@ public class CrossReferenceService(XrefService xref, IDbContextFactory<ProseDbCo
         return RunScanAsync(
             GetFiles(),
             (_, obj) => Process(obj, nameIndex, regex, clearFirst),
-            progress, null, parallelism, ct);
+            progress, null, parallelism, ct, dryRun);
     }
 
     private static int Process(

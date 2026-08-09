@@ -2,23 +2,23 @@
   "nodeCode": "VIGL",
   "slug": "vigil-s-end-019f5767",
   "title": "Vigil\u0027s End",
-  "generatedAtUtc": "2026-07-28 09:29:53Z",
-  "totalBeats": 317,
+  "generatedAtUtc": "2026-08-09 06:58:32Z",
+  "totalBeats": 318,
   "covered": 0,
-  "chapterGranular": false,
+  "chapterGranular": true,
   "bookScope": {
-    "TemporalScheme": "nonlinear",
+    "TemporalScheme": "linear",
     "ResolutionMode": "mixed",
     "MoralPolarity": "ambivalent",
-    "EndingStyle": "avalanche",
-    "HasSubplot": true,
-    "Granularity": "beat",
-    "HasBlueprint": true
+    "EndingStyle": "quiet",
+    "HasSubplot": false,
+    "Granularity": "chapter",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 1
   },
   "flagCounts": {
-    "MISSING_MEANING": 317,
-    "UNSCORED": 317,
-    "NO_CONSTRUCTION": 286
+    "MISSING_MEANING": 318,
+    "UNSCORED": 318
   },
   "beats": [
     {
@@ -27,11 +27,16 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "3",
-      "EventType": "infiltration",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 2019,
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 1726,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -44,11 +49,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2440,
+      "ProseLength": 2379,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -61,11 +66,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "refusal",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 940,
+      "ProseLength": 1726,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -78,11 +83,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "4",
+      "EscalationTarget": "8",
       "EventType": "vigil",
-      "RevelationMode": "none",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 393,
+      "ProseLength": 1150,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -95,11 +100,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "4",
-      "EventType": "discovery",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1348,
+      "ProseLength": 1845,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -112,11 +117,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "loss",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1395,
+      "ProseLength": 1361,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -129,11 +134,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "crossing",
-      "RevelationMode": "none",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2836,
+      "ProseLength": 2765,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -146,11 +151,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "suppression",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4681,
+      "ProseLength": 4687,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -163,8 +168,8 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "arrival",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 3227,
@@ -180,9 +185,9 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "confession",
-      "RevelationMode": "none",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1973,
       "Flags": [
@@ -197,11 +202,28 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "negotiation",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 683,
+      "ProseLength": 677,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fbff4-b7b1-7360-b401-a5455fc5e8fc",
+      "Number": 14664,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3484,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -214,11 +236,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "departure",
-      "RevelationMode": "none",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2071,
+      "ProseLength": 2014,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -231,8 +253,8 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "arrival",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1154,
@@ -248,11 +270,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
+      "EscalationTarget": "8",
       "EventType": "vigil",
-      "RevelationMode": "suspense",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1898,
+      "ProseLength": 2029,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -266,10 +288,10 @@
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
-      "EventType": "confrontation",
-      "RevelationMode": "none",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2275,
+      "ProseLength": 2274,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -282,11 +304,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "discovery",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1825,
+      "ProseLength": 2787,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -300,10 +322,10 @@
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
-      "EventType": "passage",
-      "RevelationMode": "none",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3266,
+      "ProseLength": 1660,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -317,7 +339,7 @@
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
-      "EventType": "ambush",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1692,
@@ -333,11 +355,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "arrival",
-      "RevelationMode": "none",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1544,
+      "ProseLength": 1602,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -351,44 +373,10 @@
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
-      "EventType": "acquisition",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3029,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9e9-7ce7-9a25-7aa293fdd79c",
-      "Number": 5570,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "confession",
-      "RevelationMode": "none",
-      "BeatTags": [],
-      "ProseLength": 1871,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9e9-7577-85a8-3849360ee82b",
-      "Number": 5571,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "confrontation",
-      "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 3581,
+      "ProseLength": 1901,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -402,10 +390,10 @@
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
-      "EventType": "reckoning",
-      "RevelationMode": "none",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2878,
+      "ProseLength": 1467,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -418,11 +406,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "dispatch",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3259,
+      "ProseLength": 2366,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -435,28 +423,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
+      "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 718,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9e9-79be-afc8-4974df3175be",
-      "Number": 5575,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "crossing",
-      "RevelationMode": "none",
-      "BeatTags": [],
-      "ProseLength": 688,
+      "ProseLength": 713,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -469,11 +440,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "passage",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 987,
+      "ProseLength": 1381,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -486,9 +457,9 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "ambush",
-      "RevelationMode": "none",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1064,
       "Flags": [
@@ -503,11 +474,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "10",
-      "EventType": "reunion",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1823,
+      "ProseLength": 2008,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -520,11 +491,11 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "10",
-      "EventType": "confrontation",
-      "RevelationMode": "none",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1412,
+      "ProseLength": 1392,
       "Flags": [
         "MISSING_MEANING",
         "UNSCORED"
@@ -537,8 +508,8 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "discovery",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1141,
@@ -554,12 +525,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1505,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd8da-6a65-7477-8355-afb808a5095f",
+      "Number": 16961,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 5341,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -569,12 +559,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 993,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -584,12 +576,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1217,
+      "ProseLength": 1212,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -599,12 +593,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1274,
+      "ProseLength": 1256,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -614,12 +610,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 768,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -629,12 +627,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 376,
+      "ProseLength": 587,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -644,12 +644,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1064,
+      "ProseLength": 1061,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -659,12 +661,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 476,
+      "ProseLength": 533,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -674,12 +678,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 277,
+      "ProseLength": 283,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -689,12 +695,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1343,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -704,12 +712,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2246,
+      "ProseLength": 2625,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -719,12 +729,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4938,
+      "ProseLength": 4892,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -734,12 +746,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4579,
+      "ProseLength": 4495,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -749,12 +763,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1167,
+      "ProseLength": 1181,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -764,12 +780,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2573,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -779,12 +797,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 855,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -794,12 +814,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1302,
+      "ProseLength": 1304,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -809,12 +831,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2535,
+      "ProseLength": 2538,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -824,12 +848,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2927,
+      "ProseLength": 2926,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -839,12 +865,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2838,
+      "ProseLength": 2867,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -854,12 +882,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2281,
+      "ProseLength": 2376,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -869,12 +899,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1829,
+      "ProseLength": 2140,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -884,12 +916,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2728,
+      "ProseLength": 2736,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -899,12 +933,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2478,
+      "ProseLength": 2525,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -914,12 +950,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2776,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -929,12 +967,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1511,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019faeda-4fb3-7ffa-95dc-339cb68fcd6d",
+      "Number": 14620,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4948,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -944,12 +1001,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3829,
+      "ProseLength": 4341,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -959,12 +1018,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 993,
+      "ProseLength": 1970,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -974,27 +1035,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3178,
+      "ProseLength": 3176,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9e9-7128-b5c2-573196748fc0",
-      "Number": 5610,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 1591,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1004,12 +1052,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3747,
+      "ProseLength": 3711,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1019,12 +1069,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3718,
+      "ProseLength": 3705,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1034,12 +1086,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3909,
+      "ProseLength": 3923,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1049,12 +1103,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3467,
+      "ProseLength": 3476,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1064,12 +1120,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 833,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1079,12 +1137,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2678,
+      "ProseLength": 3063,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1094,12 +1154,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 999,
+      "ProseLength": 1013,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1109,12 +1171,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2480,
+      "ProseLength": 2462,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1124,12 +1188,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2701,
+      "ProseLength": 2639,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1139,12 +1205,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2427,
+      "ProseLength": 2858,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1154,27 +1222,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1817,
+      "ProseLength": 1801,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ea-7c99-9dc0-70cefae284ab",
-      "Number": 5622,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 2495,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1184,12 +1239,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1891,
+      "ProseLength": 2200,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1199,12 +1256,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2349,
+      "ProseLength": 2319,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1214,12 +1273,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 3038,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd8d3-3bb1-7f86-9796-040807f04db7",
+      "Number": 16960,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1134,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1229,12 +1307,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2595,
+      "ProseLength": 2600,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1244,12 +1324,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1256,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1259,12 +1341,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 3447,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1274,12 +1358,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1090,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1289,12 +1375,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1994,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1304,12 +1392,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2853,
+      "ProseLength": 2852,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1319,12 +1409,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 982,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1334,12 +1426,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1508,
+      "ProseLength": 1534,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1349,12 +1443,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1875,
+      "ProseLength": 1229,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1364,12 +1460,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2231,
+      "ProseLength": 1820,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1379,12 +1477,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1071,
+      "ProseLength": 2725,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "a67c9ffc-f96a-4876-b253-5642aeeb4ce6",
+      "Number": 12750,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2068,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1394,12 +1511,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1475,
+      "ProseLength": 1479,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1409,12 +1528,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2209,
+      "ProseLength": 2291,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1424,12 +1545,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2234,
+      "ProseLength": 2291,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1439,12 +1562,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1508,
+      "ProseLength": 1507,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1454,12 +1579,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1167,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1469,12 +1596,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2240,
+      "ProseLength": 2237,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1484,12 +1613,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2567,
+      "ProseLength": 2767,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1499,12 +1630,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1565,
+      "ProseLength": 1564,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1514,12 +1647,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1430,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1529,12 +1664,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2447,
+      "ProseLength": 2404,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1544,12 +1681,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1488,
+      "ProseLength": 1482,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1559,12 +1698,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2287,
+      "ProseLength": 2228,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1574,12 +1715,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2458,
+      "ProseLength": 3575,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1589,12 +1732,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1174,
+      "ProseLength": 1170,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019faeda-c1b2-7389-8c2a-502924dcd0d8",
+      "Number": 14621,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2238,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1604,12 +1766,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2064,
+      "ProseLength": 2051,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1619,12 +1783,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1936,
+      "ProseLength": 1933,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1634,12 +1800,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2366,
+      "ProseLength": 2394,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1649,12 +1817,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2094,
+      "ProseLength": 2091,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1664,12 +1834,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2805,
+      "ProseLength": 2816,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1679,12 +1851,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1849,
+      "ProseLength": 1664,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1694,12 +1868,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2747,
+      "ProseLength": 2699,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1709,12 +1885,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2882,
+      "ProseLength": 3021,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1724,12 +1902,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 5815,
+      "ProseLength": 5783,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1739,12 +1919,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3488,
+      "ProseLength": 3148,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1754,12 +1936,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 6713,
+      "ProseLength": 6682,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1769,12 +1953,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3545,
+      "ProseLength": 3548,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1784,12 +1970,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4991,
+      "ProseLength": 4898,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1799,12 +1987,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1580,
+      "ProseLength": 1582,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1814,12 +2004,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1251,
+      "ProseLength": 1258,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1829,12 +2021,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1918,
+      "ProseLength": 1916,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1844,12 +2038,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2158,
+      "ProseLength": 2571,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1859,12 +2055,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1683,
+      "ProseLength": 1680,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1874,12 +2072,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1867,
+      "ProseLength": 1804,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1889,12 +2089,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2303,
+      "ProseLength": 2237,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1904,12 +2106,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2211,
+      "ProseLength": 2200,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1919,12 +2123,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2375,
+      "ProseLength": 2368,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1934,12 +2140,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2384,
+      "ProseLength": 2329,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1949,12 +2157,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1375,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1964,12 +2174,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2168,
+      "ProseLength": 2135,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1979,12 +2191,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4195,
+      "ProseLength": 4197,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -1994,12 +2208,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3388,
+      "ProseLength": 3395,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2009,12 +2225,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3265,
+      "ProseLength": 3257,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2024,12 +2242,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2164,
+      "ProseLength": 2126,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2039,12 +2259,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4102,
+      "ProseLength": 4093,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2054,12 +2276,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2519,
+      "ProseLength": 2543,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2069,12 +2293,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1912,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2084,12 +2310,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3599,
+      "ProseLength": 3665,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2099,12 +2327,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 858,
+      "ProseLength": 865,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0ed-1bf6-7ef3-9350-3b889dd54cc8",
+      "Number": 14652,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2850,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2114,12 +2361,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2565,
+      "ProseLength": 2577,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2129,12 +2378,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2046,
+      "ProseLength": 2048,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2144,12 +2395,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2660,
+      "ProseLength": 2645,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2159,12 +2412,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2950,
+      "ProseLength": 2957,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2174,12 +2429,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2855,
+      "ProseLength": 2858,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2189,12 +2446,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 972,
+      "ProseLength": 974,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2204,12 +2463,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3074,
+      "ProseLength": 3068,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2219,27 +2480,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1876,
+      "ProseLength": 1871,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9eb-72cf-ac93-d37e750c0bda",
-      "Number": 5693,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 1400,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2249,12 +2497,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2129,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2264,12 +2514,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2392,
+      "ProseLength": 2393,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2279,12 +2531,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1981,
+      "ProseLength": 1982,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2294,12 +2548,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3220,
+      "ProseLength": 3259,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2309,12 +2565,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2376,
+      "ProseLength": 2359,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2324,12 +2582,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1218,
+      "ProseLength": 1391,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2339,12 +2599,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1311,
+      "ProseLength": 1344,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2354,12 +2616,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1066,
+      "ProseLength": 1067,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2369,12 +2633,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1635,
+      "ProseLength": 1634,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2384,12 +2650,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2294,
+      "ProseLength": 2292,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2399,12 +2667,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1730,
+      "ProseLength": 1736,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2414,12 +2684,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1541,
+      "ProseLength": 1529,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2429,12 +2701,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1840,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2444,12 +2718,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1632,
+      "ProseLength": 1326,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2459,12 +2735,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2136,
+      "ProseLength": 2139,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2474,12 +2752,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2389,
+      "ProseLength": 2390,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2489,12 +2769,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2594,
+      "ProseLength": 2602,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2504,12 +2786,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2105,
+      "ProseLength": 2092,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2519,12 +2803,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2205,
+      "ProseLength": 2206,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2534,12 +2820,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2069,
+      "ProseLength": 2007,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2549,12 +2837,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3502,
+      "ProseLength": 2441,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2564,12 +2854,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1818,
+      "ProseLength": 1831,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2579,12 +2871,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2491,
+      "ProseLength": 2505,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2594,12 +2888,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2372,
+      "ProseLength": 2379,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2609,12 +2905,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1412,
+      "ProseLength": 1398,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2624,12 +2922,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1539,
+      "ProseLength": 1543,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2639,12 +2939,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1799,
+      "ProseLength": 1807,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2654,12 +2956,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1358,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2669,12 +2973,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1636,
+      "ProseLength": 1633,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2684,12 +2990,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2031,
+      "ProseLength": 2034,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2699,12 +3007,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3052,
+      "ProseLength": 3076,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2714,12 +3024,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1480,
+      "ProseLength": 1445,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2729,12 +3041,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2011,
+      "ProseLength": 1972,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2744,12 +3058,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 614,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2759,12 +3075,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1887,
+      "ProseLength": 1709,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2774,12 +3092,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3080,
+      "ProseLength": 3110,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2789,12 +3109,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3314,
+      "ProseLength": 3289,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2804,12 +3126,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2082,
+      "ProseLength": 2054,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2819,12 +3143,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2867,
+      "ProseLength": 2825,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2834,12 +3160,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2232,
+      "ProseLength": 2203,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2849,12 +3177,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3218,
+      "ProseLength": 3302,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2864,12 +3194,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2962,
+      "ProseLength": 2918,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2879,12 +3211,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3718,
+      "ProseLength": 3679,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2894,12 +3228,82 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2340,
+      "ProseLength": 2271,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fbff0-58b9-788b-9907-59af9fabaf34",
+      "Number": 14661,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2425,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fbff0-777e-738f-935e-f57918729cb4",
+      "Number": 14662,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2210,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0f9-7c47-7737-ab3c-f3e7456f4fa4",
+      "Number": 14654,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3098,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0fa-25e8-7349-871e-501ce8d834a5",
+      "Number": 14655,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1716,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2909,12 +3313,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 625,
+      "ProseLength": 597,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2924,12 +3330,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1083,
+      "ProseLength": 1100,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2939,12 +3347,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1091,
+      "ProseLength": 1093,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2954,12 +3364,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1094,
+      "ProseLength": 1089,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2969,12 +3381,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3045,
+      "ProseLength": 2952,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0fa-dd77-7a35-a867-b397e2b597db",
+      "Number": 14656,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1506,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2984,12 +3415,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3350,
+      "ProseLength": 3226,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -2999,12 +3432,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1890,
+      "ProseLength": 1983,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3014,12 +3449,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1668,
+      "ProseLength": 1827,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3029,12 +3466,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1469,
+      "ProseLength": 1254,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3044,12 +3483,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2231,
+      "ProseLength": 2192,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3059,12 +3500,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1640,
+      "ProseLength": 1590,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3074,12 +3517,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2002,
+      "ProseLength": 1943,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3089,12 +3534,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1758,
+      "ProseLength": 1757,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3104,12 +3551,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1227,
+      "ProseLength": 1212,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3119,12 +3568,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 666,
+      "ProseLength": 668,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3134,12 +3585,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1918,
+      "ProseLength": 1866,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3149,12 +3602,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2864,
+      "ProseLength": 2877,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3164,12 +3619,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 6387,
+      "ProseLength": 6346,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3179,12 +3636,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3513,
+      "ProseLength": 3517,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3194,12 +3653,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3815,
+      "ProseLength": 3886,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3209,12 +3670,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1530,
+      "ProseLength": 1527,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3224,12 +3687,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4187,
+      "ProseLength": 4192,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3239,12 +3704,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2973,
+      "ProseLength": 2983,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3254,12 +3721,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1208,
+      "ProseLength": 1214,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3269,12 +3738,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1911,
+      "ProseLength": 1868,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3284,12 +3755,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1599,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3299,42 +3772,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1045,
+      "ProseLength": 2465,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ed-73ab-bc66-ca5b26d08215",
-      "Number": 5765,
+      "BeatId": "019fb101-27fb-7866-8345-8b1f46db682b",
+      "Number": 14658,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 726,
+      "ProseLength": 1692,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ed-7a82-a6ef-733ede41e018",
-      "Number": 5766,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 1341,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3344,12 +3806,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 856,
+      "ProseLength": 1603,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3359,12 +3823,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 563,
+      "ProseLength": 1164,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3374,72 +3840,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 384,
+      "ProseLength": 956,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ed-75de-b1b5-bca21cef1252",
-      "Number": 5770,
+      "BeatId": "019fb102-ca22-7415-8334-49d39dd09887",
+      "Number": 14659,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 907,
+      "ProseLength": 2081,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ed-7217-9a23-0ec1b1a06eaa",
-      "Number": 5771,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 420,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ed-73b8-97f6-d182bd223151",
-      "Number": 5772,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 562,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ed-76c6-bbae-43c5496f76b1",
-      "Number": 5773,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 529,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3449,12 +3874,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1424,
+      "ProseLength": 1418,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3464,12 +3891,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1032,
+      "ProseLength": 1660,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3479,12 +3908,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 985,
+      "ProseLength": 2319,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3494,12 +3925,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1422,
+      "ProseLength": 1410,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3509,12 +3942,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 637,
+      "ProseLength": 1330,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0f0-ade3-72c3-8033-09ca086eac9e",
+      "Number": 14653,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2031,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3524,12 +3976,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 713,
+      "ProseLength": 846,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3539,12 +3993,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 562,
+      "ProseLength": 1141,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3554,12 +4010,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 652,
+      "ProseLength": 1158,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3569,12 +4027,65 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1080,
+      "ProseLength": 1644,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd6ff-f61d-7fc6-983f-9150f5545f2c",
+      "Number": 16958,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1721,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0a7-9c98-745a-9451-1579387e896d",
+      "Number": 14649,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3032,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0a7-cde4-7f41-93d7-d3488e552a7e",
+      "Number": 14650,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2775,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3584,12 +4095,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4721,
+      "ProseLength": 4651,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3599,12 +4112,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2862,
+      "ProseLength": 2838,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3614,12 +4129,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3804,
+      "ProseLength": 3714,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3629,12 +4146,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1510,
+      "ProseLength": 1944,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3644,12 +4163,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2323,
+      "ProseLength": 2314,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3659,12 +4180,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3012,
+      "ProseLength": 3236,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3674,12 +4197,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1251,
+      "ProseLength": 1128,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3689,27 +4214,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1719,
+      "ProseLength": 1691,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ed-7fe2-b9d5-618552909916",
-      "Number": 5791,
+      "BeatId": "019fb05b-9380-731a-8f02-3c14d04d29b9",
+      "Number": 14622,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 497,
+      "ProseLength": 2035,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3719,12 +4248,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1880,
+      "ProseLength": 1901,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3734,12 +4265,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1765,
+      "ProseLength": 1754,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3749,12 +4282,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1055,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3764,12 +4299,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1883,
+      "ProseLength": 1656,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3779,12 +4316,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1332,
+      "ProseLength": 1611,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3794,12 +4333,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 836,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3809,12 +4350,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 604,
+      "ProseLength": 602,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3824,12 +4367,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 643,
+      "ProseLength": 736,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3839,12 +4384,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 459,
+      "ProseLength": 454,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb077-6177-7ae0-b8f0-235ffca3b99e",
+      "Number": 14648,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2008,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3854,12 +4418,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2030,
+      "ProseLength": 1633,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3869,12 +4435,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1193,
+      "ProseLength": 1226,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3884,12 +4452,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1616,
+      "ProseLength": 1625,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3899,12 +4469,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2137,
+      "ProseLength": 3005,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3914,12 +4486,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2609,
+      "ProseLength": 2611,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3929,12 +4503,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1753,
+      "ProseLength": 1761,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0c6-1437-7e89-bc6f-1fffbedd25e6",
+      "Number": 14651,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1532,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3944,12 +4537,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1417,
+      "ProseLength": 1443,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3959,12 +4554,31 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1375,
+      "ProseLength": 3566,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd8d3-1df7-73fb-bd9f-46d6b4b06c77",
+      "Number": 16959,
+      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2590,
+      "Flags": [
+        "MISSING_MEANING",
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -3974,42 +4588,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1083,
+      "ProseLength": 1056,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ed-7e4b-8a65-a19c91d52398",
-      "Number": 5810,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 1188,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ed-79b3-8391-58aec6b63ef5",
-      "Number": 5811,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 648,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4019,12 +4605,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 963,
+      "ProseLength": 3372,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4034,12 +4622,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3374,
+      "ProseLength": 3401,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4049,27 +4639,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4226,
+      "ProseLength": 4227,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ee-7031-a0e0-af1b46b4b435",
-      "Number": 5815,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 2569,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4079,12 +4656,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3773,
+      "ProseLength": 4153,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4094,12 +4673,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4781,
+      "ProseLength": 4741,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4109,12 +4690,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3174,
+      "ProseLength": 3140,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4124,12 +4707,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 6182,
+      "ProseLength": 6095,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4139,12 +4724,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2733,
+      "ProseLength": 2986,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4154,12 +4741,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2000,
+      "ProseLength": 2001,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4169,12 +4758,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3200,
+      "ProseLength": 3129,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4184,12 +4775,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1800,
+      "ProseLength": 1808,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4199,12 +4792,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2659,
+      "ProseLength": 2660,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4214,12 +4809,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4476,
+      "ProseLength": 4486,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4229,12 +4826,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2722,
+      "ProseLength": 2725,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4244,12 +4843,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1157,
+      "ProseLength": 1158,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4259,12 +4860,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3083,
+      "ProseLength": 3105,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4274,12 +4877,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4238,
+      "ProseLength": 4251,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4289,12 +4894,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1996,
+      "ProseLength": 2730,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4304,12 +4911,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4017,
+      "ProseLength": 4009,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4319,12 +4928,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2730,
+      "ProseLength": 2436,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4334,12 +4945,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1553,
+      "ProseLength": 1558,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4349,12 +4962,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1802,
+      "ProseLength": 2378,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4364,12 +4979,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1425,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4379,12 +4996,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1136,
+      "ProseLength": 1137,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4394,12 +5013,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1744,
+      "ProseLength": 2311,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4409,12 +5030,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 987,
+      "ProseLength": 1560,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4424,12 +5047,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1874,
+      "ProseLength": 1239,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4439,12 +5064,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4090,
+      "ProseLength": 6942,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4454,12 +5081,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2992,
+      "ProseLength": 2944,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4469,12 +5098,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2786,
+      "ProseLength": 2797,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4484,12 +5115,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2029,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4499,12 +5132,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2217,
+      "ProseLength": 2179,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4514,12 +5149,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1447,
+      "ProseLength": 1202,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4529,12 +5166,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2815,
+      "ProseLength": 1458,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4544,12 +5183,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3427,
+      "ProseLength": 3384,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4559,12 +5200,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1179,
+      "ProseLength": 1345,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4574,12 +5217,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3346,
+      "ProseLength": 1345,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4589,12 +5234,14 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 6560,
+      "ProseLength": 6544,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
@@ -4604,237 +5251,184 @@
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1626,
+      "ProseLength": 4863,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-7b3c-b8bf-ad27dcd4c7ed",
-      "Number": 5852,
+      "BeatId": "019fb05d-6905-7eb2-8ee2-3bb7bbdcd463",
+      "Number": 14624,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4502,
+      "ProseLength": 3487,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-7084-8848-f74ac791def1",
-      "Number": 5853,
+      "BeatId": "019fd4ab-cfe1-7ed2-9422-b4427c7f7b9b",
+      "Number": 16957,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 4114,
+      "ProseLength": 3084,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-722c-8bb4-dfb85d7bd795",
-      "Number": 5854,
+      "BeatId": "019fb0ff-0414-741f-a4fa-ce2690c8fccf",
+      "Number": 14657,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2420,
+      "ProseLength": 3561,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-79e0-9612-949f6929b26a",
-      "Number": 5855,
+      "BeatId": "019fb05e-c692-76a1-bc9e-62ab57f15123",
+      "Number": 14625,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3795,
+      "ProseLength": 3103,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-711e-98d4-9354ca39c476",
-      "Number": 5856,
+      "BeatId": "019fb05e-ffb7-7d9e-9d75-216f621fd73e",
+      "Number": 14626,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2395,
+      "ProseLength": 3330,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-7070-8463-76ab5c491423",
-      "Number": 5857,
+      "BeatId": "019fb060-764f-7c78-a56e-4483cdad8f63",
+      "Number": 14627,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1946,
+      "ProseLength": 2278,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-7343-930d-e525bc9bd53c",
-      "Number": 5858,
+      "BeatId": "019fb060-c231-730a-a2fc-878193ba4647",
+      "Number": 14628,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2944,
+      "ProseLength": 6310,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-759b-8873-1397026b67f4",
-      "Number": 5859,
+      "BeatId": "019fb061-03fe-7484-b023-f6957fe6a933",
+      "Number": 14629,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3878,
+      "ProseLength": 4193,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ee-75cb-ba38-157f1d631fe7",
-      "Number": 5860,
+      "BeatId": "019fb061-4bc0-73c0-8ca9-e0f33fb5f05f",
+      "Number": 14630,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1474,
+      "ProseLength": 4407,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019f9f96-b9ef-7fe9-a31f-cb938549e374",
-      "Number": 5861,
+      "BeatId": "019fb061-8d70-7f9a-a83c-cb925343a567",
+      "Number": 14631,
       "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
       "ChapterIndex": 0,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1382,
+      "ProseLength": 2843,
       "Flags": [
         "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ef-7f2e-a9c0-d64a35f1bc03",
-      "Number": 5862,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 1141,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ef-742f-9311-fc106b662d91",
-      "Number": 5863,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 1094,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ef-7858-8fef-de0f07fc0038",
-      "Number": 5864,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 679,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ef-73ab-921b-b2097b9ba406",
-      "Number": 5865,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 672,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019f9f96-b9ef-7bbf-a49d-30cddae29799",
-      "Number": 5866,
-      "Chapter": "Chapter 1 \u2014 Vigil\u0027s End",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 1041,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
       "Covered": false
     }

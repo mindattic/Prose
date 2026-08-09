@@ -123,7 +123,8 @@ public sealed class ComprehensionProbeService(
             var parsed = TryParseCache(cachedJson);
             if (parsed != null
                 && string.Equals(parsed.Value.hash, sourceHash, StringComparison.OrdinalIgnoreCase)
-                && string.Equals(parsed.Value.probeModel, probeModel, StringComparison.OrdinalIgnoreCase))
+                && string.Equals(parsed.Value.probeModel, probeModel, StringComparison.OrdinalIgnoreCase)
+                && string.Equals(parsed.Value.arbiterModel, arbiterModel, StringComparison.OrdinalIgnoreCase))
             {
                 var (defects, confusions) = parsed.Value.payload;
                 return new ChapterProbeResult(ch.Index, ch.Title,
@@ -385,7 +386,9 @@ public sealed class ComprehensionProbeService(
         return sb.Length > 0 ? sb.ToString() : "(No recap available.)";
     }
 
-    private (string hash, string probeModel, (List<ProbeDefect>, List<string>) payload)? TryParseCache(string json)
+    // internal + static (not private instance) so the 2026-08-09 arbiterModel-cache-key fix
+    // is directly unit-testable without constructing the full service (ILlmService, etc).
+    internal static (string hash, string probeModel, string arbiterModel, (List<ProbeDefect>, List<string>) payload)? TryParseCache(string json)
     {
         try
         {
@@ -393,12 +396,18 @@ public sealed class ComprehensionProbeService(
             var root = doc.RootElement;
             var hash = root.TryGetProperty("probeHash", out var h) ? h.GetString() ?? "" : "";
             var model = root.TryGetProperty("probeModel", out var m) ? m.GetString() ?? "" : "";
+            // Stored alongside probeModel (see the write path below) but was never read back —
+            // the cache-hit check only compared hash+probeModel, so changing
+            // settings.ComprehensionArbiterModel (e.g. upgrading the arbiter for better
+            // judgment) silently kept serving defects judged under the OLD arbiter forever,
+            // until the chapter's own text happened to change.
+            var arbiter = root.TryGetProperty("arbiterModel", out var am) ? am.GetString() ?? "" : "";
             var defects = new List<ProbeDefect>();
             if (root.TryGetProperty("defects", out var arr) && arr.ValueKind == JsonValueKind.Array)
                 defects = JsonSerializer.Deserialize<List<ProbeDefect>>(arr.GetRawText()) ?? new();
             var confusions = root.TryGetProperty("probe", out var p) && p.TryGetProperty("confusions", out var c)
                 ? StringList(c) : new List<string>();
-            return (hash, model, (defects, confusions));
+            return (hash, model, arbiter, (defects, confusions));
         }
         catch { return null; }
     }

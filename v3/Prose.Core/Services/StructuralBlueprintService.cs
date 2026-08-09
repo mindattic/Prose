@@ -255,7 +255,12 @@ public class StructuralBlueprintService
                 // AnachronyType is nvarchar(40) — a short label, not the plan. The full
                 // anachronyPlan prose lives on the beat tag Note (BuildBeatTags) instead.
                 AnachronyType   = (i == anachronyCut) ? Truncate(parsed.Temporal?.Scheme ?? "Flashback", 40) : null,
-                DeclaredPurpose = beatDesc,  // seeded from existing Description; author refines via set_beat_blueprint
+                // Always a straight copy of the beat's current Description — there is no
+                // separate author-curation path for this field today (no `set_beat_blueprint`
+                // tool/command exists in the codebase). Every (re)generate, including
+                // --retrofit, unconditionally overwrites this via RemoveRange+Add above, so a
+                // hand-edit made directly on this row would be silently lost on the next run.
+                DeclaredPurpose = beatDesc,
                 CreatedAt       = DateTime.UtcNow,
                 UpdatedAt       = DateTime.UtcNow,
             };

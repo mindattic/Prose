@@ -137,6 +137,14 @@ public class SemanticFidelityService
             return new FidelityReport(nodeId, node.Slug, 0, 0, node.Score, 0, null,
                 Array.Empty<FidelityViolation>(), 0);
 
+        // Full re-audit is authoritative for this book: purge every prior SEMANTIC-DRIFT
+        // finding (both from a previous AuditNodeAsync pass and from the per-beat
+        // CheckBeatIntentDriftAsync hook) before re-filing current violations below.
+        // Without this, a beat that's since been fixed keeps its stale finding open
+        // forever — Upsert only dedupes an unchanged summary, and the embedded
+        // similarity %/text changes on every re-check.
+        findings.DeleteBySummaryPrefix($"node:{node.Slug}", "SEMANTIC-DRIFT ");
+
         // Ensure prose embeddings are current (drift-skipped — cheap if nothing changed).
         try { await embeddings.ReembedBeatNodesAsync(nodeId, ct); }
         catch (Exception ex)
@@ -285,6 +293,13 @@ public class SemanticFidelityService
             return;
         try
         {
+            // Beat-scoped so a since-fixed beat's stale finding is cleared even when this
+            // save no longer triggers a re-emit below (Upsert alone never removes a row whose
+            // triggering condition has stopped holding — see AuditNodeAsync's book-wide purge
+            // for the same reasoning at whole-book scope).
+            var filePath = $"node:{nodeSlug}/beat:{beatNumber}";
+            findings.DeleteBySummaryPrefix(filePath, "SEMANTIC-DRIFT [intent]:");
+
             var similarity = await embeddings.ComputeSimilarityAsync(synopsis, beatText, ct);
             if (similarity >= IntentAlignmentFloor) return;
 
@@ -296,7 +311,7 @@ public class SemanticFidelityService
                         "Prose may have drifted from its purpose on save.";
             var fix   = $"Beat #{beatNumber} was supposed to: \"{synopsis}\". " +
                         "Revise to fulfil that purpose.";
-            EmitFinding($"node:{nodeSlug}", sev,
+            EmitFinding(filePath, sev,
                 $"SEMANTIC-DRIFT [intent]: {msg}",
                 beatText.Length > 200 ? beatText[..200] : beatText, fix);
         }

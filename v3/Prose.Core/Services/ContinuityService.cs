@@ -87,14 +87,17 @@ public class ContinuityService
             return new ClaimUpsertResult { Outcome = "NEW", Claim = existing };
         }
 
-        // Look for a different-object claim on the same (entity, predicate).
+        // Look for a different-object claim on the same (entity, predicate). CANONICAL claims
+        // ARE included here (unlike earlier): a fact that's been resolved and made canonical is
+        // exactly the one thing a new, silently-drifting extraction must be checked against —
+        // excluding it meant a post-resolution contradiction was inserted as plain "NEW" and
+        // never surfaced anywhere, defeating the point of resolving it in the first place.
         var conflict = db.ContinuityClaims
             .Where(c => c.EntityId == incoming.EntityId
                      && c.Predicate == incoming.Predicate
                      && c.Object.ToLower().Trim() != incoming.Object.ToLower().Trim()
-                     && c.Status != "REJECTED" && c.Status != "SUPERSEDED"
-                     && c.Status != "CANONICAL")
-            .OrderByDescending(c => c.LastConfirmedAt)
+                     && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
+            .OrderByDescending(c => c.Status == "CANONICAL" ? 1 : 0).ThenByDescending(c => c.LastConfirmedAt)
             .FirstOrDefault();
 
         incoming.Status          = conflict != null ? "CONTRADICTED" : "NEW";
@@ -108,7 +111,12 @@ public class ContinuityService
 
         if (conflict != null)
         {
-            conflict.Status = "CONTRADICTED";
+            // A settled CANONICAL fact is never demoted by a new extraction contradicting it —
+            // that would un-resolve something the author already settled. The NEW claim is the
+            // one flagged CONTRADICTED so it surfaces for triage; canon stays canon until a
+            // human explicitly resolves it again.
+            if (conflict.Status != "CANONICAL")
+                conflict.Status = "CONTRADICTED";
             db.SaveChanges();
             RecordContradiction(db, conflict.ClaimUid, incoming.ClaimUid, now);
             db.SaveChanges();
@@ -188,7 +196,9 @@ public class ContinuityService
     public List<ContradictionGroup> GetContradictionGroups()
     {
         using var db = dbFactory.CreateDbContext();
-        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED" };
+        // CANONICAL included: a new claim contradicting an already-resolved fact is exactly
+        // the case that must surface here, not be silently invisible (see Upsert's remarks).
+        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED", "CANONICAL" };
 
         var keys = db.ContinuityClaims.AsNoTracking()
             .Where(c => live.Contains(c.Status))
@@ -231,7 +241,8 @@ public class ContinuityService
     public List<ContradictionGroup> GetContradictionGroupsSince(DateTime sinceUtc)
     {
         using var db = dbFactory.CreateDbContext();
-        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED" };
+        // CANONICAL included — see GetContradictionGroups' remarks.
+        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED", "CANONICAL" };
         // ISO-8601 "o" format is lexicographically sortable so direct string
         // comparison in SQL is safe — no DateTime parse round-trip needed.
         var sinceIso = sinceUtc.ToUniversalTime().ToString("o");

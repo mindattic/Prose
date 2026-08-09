@@ -123,6 +123,12 @@ public sealed class AltitudeAuditService(
             throw new InvalidOperationException($"Altitude audit returned unparseable JSON for {slug}.");
         }
 
+        // Full re-audit is authoritative for this node: purge every prior [altitude] finding
+        // before re-filing the current set — an LLM-authored claim/reality pair rarely repeats
+        // verbatim across runs, so without this a resolved altitude disagreement's finding
+        // would never get cleared (Upsert only dedupes an exact summary match).
+        findings.DeleteBySummaryPrefix($"story:{slug}", "[altitude] ");
+
         // Findings table (OutlineDrift; Upsert dedups on filePath|category|summary).
         foreach (var f in parsed)
         {

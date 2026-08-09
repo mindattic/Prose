@@ -101,7 +101,7 @@ public class BookHealthService(
         bool ranEmotionalDepth = false;
 
         // ── FREE tier — deterministic / near-zero API cost ──────────────────────────
-        await RunCheckAsync(checks, "plant-audit", async () => { await plantPayoff.AuditAsync(nodeId, ct); });
+        await RunCheckAsync(checks, "plant-audit", () => PlantAuditAsync(nodeId, slug, ct));
         await RunCheckAsync(checks, "prose-check", () => ProseCheckAsync(db, nodeId, slug, ct));
         await RunCheckAsync(checks, "validate-nouns", async () => { await nounConsistency.ValidateAsync(nodeId, ct); });
         await RunCheckAsync(checks, "timeline-check", () => TimelineCheckAsync(nodeId, slug, ct));
@@ -162,16 +162,39 @@ public class BookHealthService(
     /// <summary>Runs the deterministic prose-pattern linter over every beat and files
     /// violations via the same PostBeatValidationService.QuickValidateAsync path already
     /// used on every beat save — reuses existing Findings-filing logic (same pattern the
-    /// scan_book_violations MCP tool already follows) rather than duplicating it.</summary>
+    /// scan_book_violations MCP tool already follows) rather than duplicating it. Passes each
+    /// beat's own id so findings are beat-scoped and purge-then-refiled every run (2026-08-09
+    /// fix) — without it, a since-fixed violation (or a false positive resolved by a detector
+    /// refinement) never cleared, the same missing-purge bug already fixed elsewhere this
+    /// session, just undiscovered here until real-corpus validation of the new AI-tell checks
+    /// surfaced two false positives that needed a code fix to actually clear.</summary>
     private async Task ProseCheckAsync(ProseDbContext db, Guid nodeId, string slug, CancellationToken ct)
     {
         var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
         var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
-        var texts = await db.BeatNodes.AsNoTracking()
+        var beats = await db.BeatNodes.AsNoTracking()
             .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
-            .Select(bn => bn.Beat!.Text).ToListAsync(ct);
-        foreach (var text in texts)
-            await postBeatValidator.QuickValidateAsync(slug, text, ct);
+            .Select(bn => new { bn.BeatId, Text = bn.Beat!.Text }).ToListAsync(ct);
+        foreach (var b in beats)
+            await postBeatValidator.QuickValidateAsync(slug, b.Text, b.BeatId, ct);
+    }
+
+    /// <summary>PlantPayoffService.AuditAsync returns a report but never files it anywhere —
+    /// the "plant-audit" FREE-tier check was calling it and discarding the result, so an
+    /// orphaned plant or an untransparent payoff never became a Finding, never affected the
+    /// SII, and never appeared in the Findings inbox despite the check always reporting "ok".</summary>
+    private async Task PlantAuditAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        var audit = await plantPayoff.AuditAsync(nodeId, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "PLANT-AUDIT ");
+        foreach (var p in audit.OrphanedPlants)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Medium,
+                $"PLANT-AUDIT [orphaned] {p.Category}: planted (\"{p.PlantDescription}\") but never paid off.",
+                snippet: null, suggestedFix: "Either write the payoff beat or remove the plant.");
+        foreach (var p in audit.NotTransparentPayoffs)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                $"PLANT-AUDIT [opaque] {p.Category}: payoff (\"{p.PayoffDescription}\") isn't marked transparent.",
+                snippet: null, suggestedFix: p.TransparencyNote);
     }
 
     /// <summary>TimelineConsistencyService returns findings but never files them — wrap here.</summary>
@@ -231,7 +254,47 @@ public class BookHealthService(
         var report = await beatCoordination.CoordinateAsync(slug, jsonPath: null, stamp: false, ct);
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "COORDINATE ");
         if (!report.BookScope.HasBlueprint) return;
-        foreach (var b in report.Beats.Where(b => b.ProseLength > 0 && !b.Covered))
+
+        var uncovered = report.Beats
+            .Select((b, ordinal) => (Beat: b, Ordinal: ordinal))
+            .Where(x => x.Beat.ProseLength > 0 && !x.Beat.Covered)
+            .ToList();
+
+        // A beat-granular blueprint's escalation/event arrays are sized to the beat count AT
+        // GENERATION TIME (BeatCoordinationService.ConstructionCapacity) and are never resized
+        // when beats are later split — every beat past that capacity reads NO_CONSTRUCTION
+        // regardless of prose quality. That's a stale blueprint, not hundreds of independent
+        // per-beat defects: file ONE actionable gap for the drift and drop the out-of-range
+        // beats from the per-beat loop, so the finding count reflects real coordination gaps.
+        var capacity = report.BookScope.ConstructionCapacity;
+        var beatGranular = string.Equals(report.BookScope.Granularity, "beat", StringComparison.OrdinalIgnoreCase);
+        List<(BeatCoordinate Beat, int Ordinal)> perBeat = uncovered;
+
+        if (beatGranular && capacity > 0 && capacity < report.TotalBeats)
+        {
+            // NO_CONSTRUCTION beyond the blueprint's footprint is the only reason these beats
+            // are uncovered — UNSCORED is expected noise (no book-wide rescore has run) and
+            // alone would never fail Covered; MISSING_MEANING/NO_PROSE/STUB_PROSE are real
+            // per-beat defects the blueprint has nothing to do with, so those still get filed.
+            var outOfRange = uncovered
+                .Where(x => x.Ordinal >= capacity
+                         && x.Beat.Flags.Contains("NO_CONSTRUCTION")
+                         && !x.Beat.Flags.Contains("MISSING_MEANING")
+                         && !x.Beat.Flags.Contains("NO_PROSE")
+                         && !x.Beat.Flags.Contains("STUB_PROSE"))
+                .ToList();
+            if (outOfRange.Count > 0)
+            {
+                perBeat = uncovered.Except(outOfRange).ToList();
+                findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.OutlineDrift, FindingSeverity.Medium,
+                    $"COORDINATE blueprint stale: sized for {capacity} beat(s) but the book now has {report.TotalBeats} " +
+                    $"({outOfRange.Count} beat(s) past the blueprint's footprint have no construction slice) — " +
+                    $"run 'prose --generate-blueprint --slug {slug}' to resize.",
+                    snippet: null, suggestedFix: $"prose --generate-blueprint --slug {slug}");
+            }
+        }
+
+        foreach (var (b, _) in perBeat)
             findingsSvc.Upsert($"node:{slug}/beat:{b.BeatId:N}", chapterId: null, FindingCategory.OutlineDrift, FindingSeverity.Medium,
                 $"COORDINATE beat #{b.Number}: written but not coordinated to its outline slot — {string.Join(", ", b.Flags)}",
                 snippet: null, suggestedFix: null);

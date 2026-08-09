@@ -58,14 +58,19 @@ public class WoundLedgerService(
     {
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        await db.Database.ExecuteSqlRawAsync("""
+        // OUTPUT INSERTED.Id in the SAME statement/connection as the insert — a prior
+        // separate "SELECT MAX(Id)" on its own connection was a race: two overlapping
+        // log_wound calls (e.g. two characters wounded in the same beat) could hand the
+        // second caller the FIRST caller's row id, and a later set_wound_status(woundId,...)
+        // would silently flip the wrong character's wound.
+        var id = await db.Database.SqlQueryRaw<long>("""
             INSERT INTO [dbo].[WoundLedger]
                 ([CharacterId],[BodyLocation],[Description],[Severity],[SourceNodeSlug],[SourceBeatId],[InWorldDate],[ExpectedHealingDays],[Status],[ResidualEffect])
+            OUTPUT INSERTED.[Id]
             VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9})
-            """, [characterId, bodyLocation, description, severity, (object?)sourceNodeSlug ?? DBNull.Value, (object?)sourceBeatId ?? DBNull.Value, (object?)inWorldDate ?? DBNull.Value, expectedHealingDays, status, residualEffect], ct);
+            """, characterId, bodyLocation, description, severity, (object?)sourceNodeSlug ?? DBNull.Value, (object?)sourceBeatId ?? DBNull.Value, (object?)inWorldDate ?? DBNull.Value, expectedHealingDays, status, residualEffect).FirstAsync(ct);
         log.LogInformation("Wound logged: {Char} {Loc} ({Sev})", characterId, bodyLocation, severity);
-        await using var db2 = await dbFactory.CreateDbContextAsync(ct);
-        return await db2.Database.SqlQueryRaw<long>("SELECT MAX(Id) AS [Value] FROM [dbo].[WoundLedger]").FirstAsync(ct);
+        return id;
     }
 
     /// <summary>Active (non-scarred) wounds, optionally as-of an in-world date: a wound is

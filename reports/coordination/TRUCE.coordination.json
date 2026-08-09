@@ -1,0 +1,1587 @@
+{
+  "nodeCode": "TRUCE",
+  "slug": "tournament-019fc10a",
+  "title": "Three Day Truce",
+  "generatedAtUtc": "2026-08-09 06:58:28Z",
+  "totalBeats": 91,
+  "covered": 91,
+  "chapterGranular": true,
+  "bookScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "avalanche",
+    "HasSubplot": true,
+    "Granularity": "chapter",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 14
+  },
+  "flagCounts": {
+    "UNSCORED": 91
+  },
+  "beats": [
+    {
+      "BeatId": "019fc2a5-376f-7370-a458-9ac3cf68a7ef",
+      "Number": 16168,
+      "Chapter": "Chapter 1 \u2014 Three Points",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Kaeric Dunmoor arrives unbannered at the Three Points checkpoint and pays entry coin to a Verlaine toll-master, who notes his lack of any House crest. Establish the truce atmosphere: enemy Houses\u0027 banners side by side, soldiers who would fight each other in three days sharing the road today.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2821,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a5-4032-707e-8cbd-60e27b5ff604",
+      "Number": 16169,
+      "Chapter": "Chapter 1 \u2014 Three Points",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Kaeric goes straight to the indenture boards in the customs-house shadow, ignoring the market noise, and finds his sister Sennah Dunmoor\u0027s debt figure chalked higher than he remembered - a fresh number scrubbed over the old one.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3163,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-a780-7f56-ab6b-99566877e772",
+      "Number": 16253,
+      "Chapter": "Chapter 1 \u2014 Three Points",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Cut to Sennah Dunmoor\u0027s own POV at the Atrament foundry where her indenture is held - the daily grind of it, the specific physical texture of the work she\u0027s bonded to (ore-sorting or furnace-adjacent labor, not glamorous, real fatigue), and her own private arithmetic about how long she can last under the Sinter-surcharge-inflated debt. Another indentured worker passes along a rumor, secondhand and unreliable: her brother has entered the Duel-team bracket at Three Points under a hired banner. She doesn\u0027t let herself hope out loud, because hope costs energy she can\u0027t spare, but she holds the rumor anyway, quietly, the way Kaeric holds his own arithmetic. This is Sennah\u0027s only appearance so far - do not resolve anything about her fate here, just establish her voice and stakes directly for the first time.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4132,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a5-48b3-7ce8-82dd-3ec6ee637f6d",
+      "Number": 16170,
+      "Chapter": "Chapter 1 \u2014 Three Points",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Kaeric presses a customs-house clerk about when his sister\u0027s indenture figure moved. The clerk explains it\u0027s a blanket Sinter-quarantine surcharge applied to every Atrament-held indenture, not something targeting her specifically - which means there\u0027s no dispute to raise, only a bigger number to pay. IMPORTANT: the sister\u0027s name is Sennah ULFSSON. Do not use any other surname for her under any circumstance (not Ansgar, not any invented name) - Dunmoor only, matching Kaeric\u0027s own surname.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3132,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a5-5182-7393-8f77-17cdc0ad7106",
+      "Number": 16171,
+      "Chapter": "Chapter 1 \u2014 Three Points",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Kaeric tries a private indenture broker at the second row of slates, offering his entire remaining purse against Sennah Dunmoor\u0027s debt. The Pallor broker explains the figure is fixed by Atrament charter until the Sinter quarantine is officially declared over - which it won\u0027t be, not this year - and refuses the coin without cruelty, which is somehow worse than cruelty.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2615,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a5-5a52-7912-988d-359cb7a389ac",
+      "Number": 16172,
+      "Chapter": "Chapter 1 \u2014 Three Points",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Alone at the market\u0027s edge with his rejected coin still in his fist, Kaeric does the arithmetic of what the Duel-team tournament purse would actually pay against what his sister\u0027s indenture now costs, and finds it\u0027s close enough to matter - if he wins enough rounds. IMPORTANT: the sister\u0027s name is Sennah ULFSSON. Do not use any other surname for her under any circumstance (not Ansgar, not any invented name) - Dunmoor only, matching Kaeric\u0027s own surname.",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2539,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a5-6300-7f4e-8986-66002d443fdd",
+      "Number": 16173,
+      "Chapter": "Chapter 1 \u2014 Three Points",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Kaeric finds the tournament registration tent and puts his name on the Duel-team bracket roster under a hired banner (paying the entry fee with his last coin instead of food), closing the chapter on the commitment he\u0027s just made. IMPORTANT: if the sister\u0027s name or indenture appears on any board or paperwork in this scene, her name is Sennah ULFSSON. Do not use any other surname for her under any circumstance (not Ansgar, not any invented name).",
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2754,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-9d71-79b1-b6a8-16558383f93a",
+      "Number": 16174,
+      "Chapter": "Chapter 2 \u2014 The Draw",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "In the tournament\u0027s draw hall at Three Points, Kaeric Dunmoor waits at the back of the crowd while a clerk spins the pairing drum for the DUEL-TEAM bracket - fought entirely on DRY GROUND in the Pit. Brigg, his young squire, is nearby, chattering nervously. Kaeric is resolved to accept whatever partner comes without complaint, since a House-less hired blade can\u0027t afford a reputation for arguing with the drum. IMPORTANT CONSTRAINTS: this tournament is unarmed/melee combat in a dry sand-and-dirt Pit - there is NO water, NO sea, NO boats, NO drowning, NO naval or \u0027sea-raid\u0027 anything anywhere in this story. Do not invent any House names beyond the seven established Houses (Verlaine, Atrament, Pallor, Calyx, Loera, Ocipheus, and the historically-absorbed Fjorheim). Do NOT use the names Halvard, Draught, Reinholt, or Bjorn Askelsson anywhere - these do not exist in this book.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4179,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-a7b3-716c-b02c-e15f2d8fec63",
+      "Number": 16175,
+      "Chapter": "Chapter 2 \u2014 The Draw",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "The clerk calls the pairing off a chalked roster board for the DUEL-TEAM bracket (dry-ground Pit combat, no water anywhere): \u0027Dunmoor, Kaeric - Haun, Kressida.\u0027 Kaeric recognizes the name Kressida Haun from garrison talk: her regular Duel-team partner, a man named Vantric, was injured in an earlier Pit bout and is recovering in the infirmary tent, not expected to fight again this tournament. IMPORTANT: no water, no sea, no boats, no naval rotation of any kind. No House named Draught. No character named Bjorn Askelsson.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2788,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-b055-7037-af81-b6f7df4b84e4",
+      "Number": 16176,
+      "Chapter": "Chapter 2 \u2014 The Draw",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Kressida Haun confronts Kaeric Dunmoor at the roster board - hostile, grieving, dismissive of a House-less Pallor hired-blade drawn to replace her real partner Vantric, injured in an earlier DRY-GROUND Duel-team Pit bout (not at sea, not in water). She makes clear she didn\u0027t want this pairing any more than he should want to be paired with an angry stranger. IMPORTANT: no water, no sea, no drowning imagery, no naval combat anywhere in this scene.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3267,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-b937-72e8-a16e-ad80f41c00ef",
+      "Number": 16177,
+      "Chapter": "Chapter 2 \u2014 The Draw",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "A tournament clerk explains the Duel-team bracket\u0027s mandatory pairing rule: when an entered fighter is injured out (Vantric\u0027s injury, sustained in an earlier dry-ground Pit bout), the drum reassigns their partner to the next unpaired competitor rather than letting either withdraw, since half-empty pairs would break the bracket. Neither Kaeric nor Kressida has a way to refuse the pairing without forfeiting the tournament entirely. IMPORTANT: this is entirely dry-ground melee combat - no water, no sea, no naval anything.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3288,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-c20e-71cc-b9c9-dffc30c246d2",
+      "Number": 16178,
+      "Chapter": "Chapter 2 \u2014 The Draw",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "Meaning": "Kaeric and Kressida size each other up honestly for the first time in the DUEL-TEAM Pit format (dry ground, unarmed/bladed melee, no water) - what weapons they carry, and the reveal of Kressida\u0027s Rig: a powered exoskeleton grafted into her arm and leg after Atrament\u0027s standard Catalyst infusion (the same procedure that grants other soldiers strength) FAILED on her, leaving her physically weaker than before the attempt rather than elevated. Rather than accept discharge, she volunteered for the graft as a replacement for what the failed infusion had ruined - it is not the bulky boiler-fed war-rig plate Atrament\u0027s front-line soldiers wear, but leaner, worn under the skin, and never comes off. She explains the tradeoff: it runs on a battery cell (about a day of hard use, she carries one spare and no more - extra weight is its own danger), and if the cell runs dry she can\u0027t stand up unassisted. Atrament restricts her to garrison duty rather than front-line service because of that failure risk, which she finds unfulfilling - her real motive for entering the tournament is to prove to herself, a second time, that she can still do something that counts. They reach an uneasy, practical truce to fight the bracket together, nothing more promised than that. IMPORTANT: Kressida\u0027s Rig is grafted and NEVER removed - it is active in every fight in this book, including all Pit rounds. There is no \u0022no rig\u0022 tournament rule; that was a retired earlier draft concept. IMPORTANT: the Catalyst infusion is an existing universe mechanic (see other characters like Brais Souto) - Kressida\u0027s case is a FAILED infusion followed by a VOLUNTARY graft, not the infusion itself granting her power. IMPORTANT: no water, no hand-signs for underwater combat, no naval anything - this is dry-ground Pit fighting.",
+      "EscalationTarget": "3",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 7555,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-cb13-7c18-b88c-01c98f4b8789",
+      "Number": 16179,
+      "Chapter": "Chapter 3 \u2014 First Blood",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Kaeric Dunmoor and Kressida Haun wait at the rope for Round 1 of the Duel-team bracket against two hired mercenaries, the crowd three-deep around them; Kressida asks why Kaeric wore his worn-out boots to a fight instead of his good ones, and he answers that they\u0027re not for standing in, they\u0027re for standing over.",
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 3234,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-d3d2-7124-a912-b90348bc1c60",
+      "Number": 16180,
+      "Chapter": "Chapter 3 \u2014 First Blood",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "The bout opens. Kaeric takes the bigger, wide-swinging mercenary, reading the telegraphed haymaker in the man\u0027s hips before it throws, ducking inside his reach and driving him face-first into a support post - not clean, not pretty, but it ends the exchange.",
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1792,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-dc75-7297-b144-1aee00ac77ed",
+      "Number": 16181,
+      "Chapter": "Chapter 3 \u2014 First Blood",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Kressida Haun\u0027s opponent, low and fast, tries to run her back into the rope; she lets him take the ground he wants, then plants off the rope itself and puts her elbow into his nose before he\u0027s finished being surprised she didn\u0027t flinch.",
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2626,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-e4e1-7a0c-b5d0-5daf25355cc7",
+      "Number": 16182,
+      "Chapter": "Chapter 3 \u2014 First Blood",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Both mercenaries are down, neither dead - Kressida notes, grimly practical, that dead men bring guildsmen and questions neither of them wants. The crowd noise crashes over the rope. Kaeric plays to it, arms raised, milking the win.",
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2005,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-ed81-7991-aca5-118bb965da49",
+      "Number": 16183,
+      "Chapter": "Chapter 3 \u2014 First Blood",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "In the exact window Kaeric\u0027s back is half-turned to the crowd, a small quick girl - Zennia Vrask, though neither of them yet knows her name - lifts something from his coat: not the coin pouch, but the folded paper he keeps close beneath it, and vanishes into the packed bodies before Kressida, watching, can fully process what she saw.",
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1888,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-f5ea-73eb-a43b-d2855f0c271f",
+      "Number": 16184,
+      "Chapter": "Chapter 3 \u2014 First Blood",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "Meaning": "Kaeric turns back, still grinning, unaware anything was taken. Kressida weighs whether to tell him now and end his good mood, or say nothing and own whatever happens later when he reaches for something that isn\u0027t there - and chooses silence, quietly, the way she chooses most things.",
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1540,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a6-fe11-79a9-9839-512a6ad809f2",
+      "Number": 16185,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Kaeric Dunmoor walks the Three Points fairground at night with his last three coins, past torch-lit gambling tents and the smell of the pens, heading for the cheap meat stalls - establishing the truce fair\u0027s texture: drinking, dice, noise, and an undercurrent of the pens\u0027 copper smell.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 4217,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2fd-4051-7756-8ad8-ea43010cf170",
+      "Number": 16251,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Kaeric, Kressida, and Brigg are drawn to the Lists together by a crack of electric-blue light and a crowd-roar. Two competitors close on Heloth courier-variant constructs (Entos has no horses - steam-chemical exhaust, iron footfalls, decorated rider-housings built for speed) carrying lances tipped with a galvanic arc mechanism - the same electrochemical principle as an Arc Spear (two alchemical compounds in sealed chambers that crack and mix on impact, discharging a genuine arc) scaled up for a jousting pass. Both riders wear insulated plate of clearly bespoke, individual design - not matching House-issue armor, but personal builds reflecting years of the wearer\u0027s own tactical philosophy. The pass happens: lance meets shield-plate, the arc discharges in a blue-white crack that lights the whole Lists for a heartbeat, one rider thrown clear, smoking faintly at the joints but alive. In the dignitary stands overlooking the Lists, Kressida recognizes and quietly points out Forge Marshal Bremmor Aeshel - THIS IS HIS FIRST APPEARANCE IN THE BOOK, seen only from a distance, not spoken to - House Atrament\u0027s head, here to watch the joust like any other spectator of rank. Kaeric and Brigg both look at him a moment too long, the way people look at a name they\u0027ve only heard priced in coin until now.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 5739,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2fd-4910-7216-850b-7b5bb4084411",
+      "Number": 16252,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Kaeric, Kressida, and Brigg linger near the Lists rail. A grizzled fairground veteran nearby explains the sport\u0027s decades-long equipment arms race to a younger companion, half lecture, half nostalgia, and all three of them listen without quite meaning to. Early Heloth Jousting armor was full-body ceramic-glaze insulation: safe from the arc, but heavy enough that faster, under-insulated riders picked the slow ones apart on timing alone. Then came segmented insulation - joints and vitals only, lighter, faster, but one mistimed pass could kill outright, and for a decade it did, until riders started building their own hybrid designs, each one a personal bet about which parts of the body he is willing to risk. The veteran also mentions the older, uglier problem the sport spent a generation solving: a Heloth mount\u0027s chassis is metal, and a badly grounded rider can have the arc conduct down through the construct\u0027s own frame into the rider from below - which is why every serious competitor pays a smith for custom rider-housing insulation now, not just a custom lance. Warrior King Kesric Vaan\u0027s own name comes up in the veteran\u0027s telling - a legendary jouster in his younger years, one of the first to run a hybrid rig and survive doing it. Kressida, an Atrament soldier who has just seen her own House\u0027s Forge Marshal from a distance for the first time, says nothing about it, and Kaeric notices the silence more than he would have noticed words.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4156,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-b030-7f88-b8cf-2e82aa4abc76",
+      "Number": 16254,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Kaeric, Kressida, and Brigg go to check on the black-armored rider thrown in the joust they just watched. He\u0027s sitting up against a fence post, smoke still curling faintly off his joints, refusing the litter with weary irritation. His name is Threnn Vaskol - a House-less jouster, older than Kaeric, missing the lower third of one ear, riding a hybrid insulation rig of his own build (salvaged vambraces sized for a longer reach than his own arm). He and Kaeric recognize the same arithmetic in each other immediately - two House-less fighters in a fair full of House-sponsored ones - and share a dry, class-solidarity moment: Threnn\u0027s gallows humor about the sport\u0027s mortality rate, a shared joke about unsponsored men and dead men\u0027s gear. End the scene with Kressida and Brigg peeling off toward the tent rows for the night while Kaeric stays a moment longer talking to Threnn, then walks on alone toward the meat stalls with his last three coins - this transitions into him being alone for what happens next (spotting the map table with Meraq and Warrior King Kesric Vaan). IMPORTANT: Threnn Vaskol is a new named character - use that exact name, do not invent a different name for him.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 6374,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc327-7ae6-7166-89c3-cb0e1e0bc42a",
+      "Number": 16263,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Threnn Vaskol, before Kressida and Brigg peel off for the night, pulls Kaeric aside for one more piece of practical warning, dry and matter-of-fact rather than dramatic: Three Points during the truce isn\u0027t just a tournament, it\u0027s a temporary city that springs up out of nothing for three days and vanishes after - and every temporary city grows its own underworld to match its size. There are gangs who do nothing but watch the Duel-team purses being paid out and follow the winners partway home through the dark tent-rows, coffer-ambush crews who count on a flush fighter being too tired or too drunk on the win to watch his own back. There\u0027s always something happening under the bleachers that has nothing to do with the sport above them - private duels settled off the books, goods changing hands that never touch the Bond Market\u0027s ledgers, small wars fought and finished before the crowd upstairs even notices the noise. Threnn tells Kaeric flatly to split any real winnings before he carries them anywhere, and to never walk the tent-rows alone with a full purse after dark. This should read as texture establishing Three Points as a living, semi-lawless organism that exists only for these three days - not as the start of a new plot thread that needs to be resolved, just a real and present danger the characters now know to watch for.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3376,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-06cb-77cb-8831-fe09496fc9a1",
+      "Number": 16186,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Kaeric passes the Bond Market\u0027s rope corrals without stopping - families, an old man, a boy his own age with a chalk number round his neck - the auctioneer\u0027s flat, bored voice carrying over the noise. He\u0027s learned not to linger at the pens unless he has coin enough to matter.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3261,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-0f59-75d6-8e9a-3a0b556c0c97",
+      "Number": 16187,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "At the fairground\u0027s ragged edge, past where the torchlight thins, Kaeric spots a chalked map of Three Points territory propped on two barrels, with Warrior King Kesric Vaan standing over it - and, seated beside him, unmoving, a man Kaeric half-recognizes from whispered fairground talk: Thallor Meraq.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2510,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-17e8-7926-a479-7729af4658ea",
+      "Number": 16188,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Meraq\u0027s eyes move from the map to Kaeric and hold there a moment too long for comfort before returning to the map, as if Kaeric has already stopped existing. Kaeric\u0027s instinct says running would be the one thing Meraq might actually notice, so he doesn\u0027t.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2114,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-209e-7d27-8bf9-86ac4ab4efff",
+      "Number": 16189,
+      "Chapter": "Chapter 4 \u2014 The Fair",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "Meaning": "Kaeric retreats into the dark toward Three Points proper, coins still clenched too tight, his hunger forgotten. He looks back once: Meraq hasn\u0027t moved, still watching something that isn\u0027t the map, something that hasn\u0027t arrived in eleven years and doesn\u0027t look like arriving tonight.",
+      "EscalationTarget": "3",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2781,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-28db-70df-956f-537375cb0f55",
+      "Number": 16190,
+      "Chapter": "Chapter 5 \u2014 The Pit",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "Kaeric Dunmoor and Kressida Haun face Round 2 of the Duel-team bracket: a chained Sinterspawn in Corrik Vhein\u0027s rope ring, the crowd three-deep, the pit smelling of old blood and something worse underneath. Brigg watches from the rail, tense.",
+      "EscalationTarget": "5",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 3774,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-3188-7005-b23f-8323445c2332",
+      "Number": 16191,
+      "Chapter": "Chapter 5 \u2014 The Pit",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "The Sinterspawn\u0027s chain gives it more reach than expected; it breaks left when Kressida calls the wrong direction a half-second early, and its teeth close on Kaeric\u0027s forearm before he understands the shape closing on him. Real blood, real pain - the crowd\u0027s noise goes higher, hungrier.",
+      "EscalationTarget": "5",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3148,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-39e6-7426-a8f7-9f1cbcec8429",
+      "Number": 16192,
+      "Chapter": "Chapter 5 \u2014 The Pit",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "Kressida drives her blade into the Sinterspawn\u0027s chain-side shoulder; it folds away screeching, and for one clean breath she thinks the fight is won - until it rolls through the dirt and comes up under her guard instead of away from it, and she goes down hard, the jaws stopping six inches from her throat only because the chain runs out.",
+      "EscalationTarget": "5",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3272,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-4275-7023-a14d-c99b071ed34a",
+      "Number": 16193,
+      "Chapter": "Chapter 5 \u2014 The Pit",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "The Sinterspawn recoils off its own tether and finds an angle on Kaeric he doesn\u0027t see coming; small hands - Brigg\u0027s - shove him sideways out of the strike\u0027s path, dragging him two more feet clear by the collar for good measure.",
+      "EscalationTarget": "5",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2019,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-4ad0-773a-85fa-637e73ff46e2",
+      "Number": 16194,
+      "Chapter": "Chapter 5 \u2014 The Pit",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "All three of them - Kaeric bleeding, Kressida disarmed, Brigg pale and still - end up scattered around the ring\u0027s edge while the Sinterspawn crouches mid-ring at the last inch of its chain, screeching like it\u0027s keeping count. Corrik Vhein watches from the rail, arms folded, unmoved, treating the moment as inventory behaving as expected.",
+      "EscalationTarget": "5",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2889,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-b8ed-7d88-88dd-2e0a139b3bbc",
+      "Number": 16255,
+      "Chapter": "Chapter 5 \u2014 The Pit",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "After the bout is called, while the hook-man loops fresh chain onto the defeated Sinterspawn\u0027s collar, Corrik Vhein watches the creature\u0027s dying-down movements more closely than he needs to for the job - something about how it stopped fighting, all at once, in a way that reads less like an animal running out of strength and more like a decision. It unsettles him quietly, privately, echoing an old doubt he has never let himself examine: whether one of his past catches, sold into some other Pit years back without a second look, might have been a true Sinterkin - a thinking being out of Sinter itself - rather than ordinary Sinterspawn. He doesn\u0027t say any of this aloud. He just watches the collar lock a beat longer than professional necessity requires, and moves on, the way he always has. This is a brief, private, unresolved character beat for Corrik alone - Kaeric, Kressida, and Brigg are elsewhere in this beat or in the background, not privy to what he\u0027s thinking.",
+      "EscalationTarget": "5",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3078,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-5387-7384-95b5-6ad12f6fd75c",
+      "Number": 16195,
+      "Chapter": "Chapter 5 \u2014 The Pit",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "Meaning": "The bout is called in their favor on a technicality of the chain-length rule before anyone has to finish it outright; Kaeric, Kressida, and Brigg leave the ring bloodied but alive, and Kaeric understands, watching Corrik\u0027s flat unbothered face, exactly what kind of trade this is for the beastmaster and what kind of trade it almost was for them.",
+      "EscalationTarget": "5",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4975,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-c15e-7ca3-80cc-686ace9376a3",
+      "Number": 16256,
+      "Chapter": "Chapter 6 \u2014 The Gull\u0027s T",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Open with Zennia Vrask\u0027s own POV, before she ever crosses paths with Kaeric or Kressida in this book. Establish her working the Three Points fair on her own code: she steals from anyone with coin to spare, but has a specific rule against stealing from people who can\u0027t afford the loss (indentured workers, camp-followers, the genuinely poor). She\u0027s spent the truce days casing a specific target of her own: a Bond Market broker who has been unusually cruel in his indenture dealings - inflating debt figures, splitting families for profit beyond what even the Sinter-surcharge requires, enjoying it. Zennia has decided, on her own initiative and for her own reasons, to rob him blind before the truce ends, both for the coin and because someone should. This establishes her own independent motivation and moral code, distinct from and prior to the rail-yard theft that pulls her into the main plot. IMPORTANT: this is entirely her own POV and her own subplot in this beat - Kaeric, Kressida, and the rail-yard theft do not appear yet.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 5791,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-c9e6-7258-a4b0-639108511e11",
+      "Number": 16257,
+      "Chapter": "Chapter 6 \u2014 The Gull\u0027s T",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Zennia Vrask executes her own small caper against the cruel Bond Market broker she\u0027s been casing - a comic, skillful theft (lifting a strongbox key, or a ledger of his own inflated figures, or coin, played for wit and competence) that costs him something real and gives her a private, satisfying victory with nobody the wiser. Riding high on that win, feeling clever and a little reckless, she moves on through the fair toward the rail-yard - which is where the chapter\u0027s established plot (lifting the sealed paper from Vessa Morrint\u0027s aide) picks back up. This beat is the bridge from her own independent subplot into the existing rail-yard theft scene - end it with her arriving at the rail-yard platform, still light on her feet from the broker job, not yet aware of what she\u0027s about to actually steal.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 5132,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-5bb1-7405-b0f5-fdcfbac73a13",
+      "Number": 16196,
+      "Chapter": "Chapter 6 \u2014 The Gull\u0027s T",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "At Three Points\u0027 fairground edge, where Atrament\u0027s own forge-district freight comes in for the truce market, Zennia Vrask works the crowd at a rail platform, reading marks the way she reads everyone - not for cargo, for careless sleeves.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2938,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-6444-7abd-94ac-909d0e452481",
+      "Number": 16197,
+      "Chapter": "Chapter 6 \u2014 The Gull\u0027s T",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Zennia spots a woman in gray wool with a leather satchel strapped twice around her wrist - drilled to hold it that way, which means it matters - and decides, on instinct, that whatever\u0027s inside is worth the risk.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2280,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-6d0d-7a64-a23d-b0bc0c33c13b",
+      "Number": 16198,
+      "Chapter": "Chapter 6 \u2014 The Gull\u0027s T",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Timing her move off a coupling-clang for cover, Zennia lifts the strap\u0027s buckle and slides a sealed, wax-marked paper free into her sleeve before the aide\u0027s stride even breaks.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2547,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-75e0-765b-ad57-5fad77d0fd98",
+      "Number": 16199,
+      "Chapter": "Chapter 6 \u2014 The Gull\u0027s T",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "The aide\u0027s stride hitches; her voice goes up, flat and commanding - \u0027Hold the platform\u0027 - and two men in Atrament gray peel off the boarding line before the word finishes landing.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2619,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-7ebb-7e19-bc37-6f735ac4e772",
+      "Number": 16200,
+      "Chapter": "Chapter 6 \u2014 The Gull\u0027s T",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "Meaning": "Zennia is three bodies deep into the crowd and doesn\u0027t run, understanding too late, with a cold drop in her stomach, exactly whose aide she\u0027s picked: Vessa Morrint, Atrament\u0027s own security commander, who does not send anyone anywhere without a reason that gets collected in blood.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2967,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-881d-715d-8065-1e8ce36d576b",
+      "Number": 16201,
+      "Chapter": "Chapter 7 \u2014 What Doesn\u0027t",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "At the edge of the Three Points truce ground, Kressida Haun counts rivets on a boiler cart she wasn\u0027t assigned to check, keeping her hands busy while she watches Morrint\u0027s clerk work the duty board - a habit of a soldier\u0027s clock ticking whether she wants it to or not.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3243,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-9131-7207-88cb-d98125d1854b",
+      "Number": 16202,
+      "Chapter": "Chapter 7 \u2014 What Doesn\u0027t",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Kressida notices the clerk isn\u0027t copying the duty roster - he\u0027s memorizing one column only, the one marked in Forge Marshal Bremmor Aeshel\u0027s own hand, checking it against a second, thinner book with cheaper paper that isn\u0027t a duty roster at all.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2685,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-99ef-7268-ab28-fdaf998b167e",
+      "Number": 16203,
+      "Chapter": "Chapter 7 \u2014 What Doesn\u0027t",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "The clerk clocks Kressida watching him and needles her with a flat pleasantry before tucking the thin book inside his coat against something with more weight than paper - the outline of a flask-shaped object through the wool.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2003,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-a301-7b45-b9b4-870744a3b8ee",
+      "Number": 16204,
+      "Chapter": "Chapter 7 \u2014 What Doesn\u0027t",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Once the clerk is gone, Kressida turns over what she saw: a second book tracking Forge Marshal Aeshel\u0027s own comings and goings, not a schedule - something built to track a man, cross-referenced against dates she couldn\u0027t read at that angle.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3536,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-ab6c-7a1c-8ea6-6c450beb3255",
+      "Number": 16205,
+      "Chapter": "Chapter 7 \u2014 What Doesn\u0027t",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "Meaning": "Kressida weighs going to Aeshel directly and being wrong, finished in an afternoon, against saying nothing and watching - and picks watching, because the hand that signs her reports is Morrint\u0027s own, and she has suspicion without a shred of proof.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2470,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-b40d-7b40-9cd6-28c9ef33ee95",
+      "Number": 16206,
+      "Chapter": "Chapter 8 \u2014 The Cost of ",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Round 3 of the Duel-team bracket: Kaeric Dunmoor and Kressida Haun face the Ashgrave retinue, a drilled boy-and-girl pairing up from the southern circuits, the boy working a hooked poleaxe in low sweeping arcs, the girl fast with a short blade and a small shield.",
+      "EscalationTarget": "7",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2905,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-bc80-739a-b7ee-2eaee77099a4",
+      "Number": 16207,
+      "Chapter": "Chapter 8 \u2014 The Cost of ",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Kaeric\u0027s Gifted infusion cost him the clean field of vision other fighters get for free in exchange for the strength to swing his heavy blade - a fair trade he\u0027s made peace with on every day except, it turns out, this one, as the Ashgrave girl works toward his blind flank.",
+      "EscalationTarget": "7",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3254,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-c4ab-7f31-8043-d3af8e04e4ec",
+      "Number": 16208,
+      "Chapter": "Chapter 8 \u2014 The Cost of ",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Brigg, supposed to be forty feet back with the water skins, has wedged himself at the rail near Kaeric\u0027s shoulder - no rule against it, camp-followers crowd every rail at every fair - and he\u0027s the only one who sees the girl\u0027s blade come around low for the tendon behind Kaeric\u0027s knee.",
+      "EscalationTarget": "7",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3923,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-cd37-78ff-973e-4ca663fa58e5",
+      "Number": 16209,
+      "Chapter": "Chapter 8 \u2014 The Cost of ",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Brigg puts his own body between the blade and Kaeric\u0027s leg. The sound is wrong - thinner, wetter than steel on steel - and even a strike checked a half-beat too late folds a boy his size in half.",
+      "EscalationTarget": "7",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2617,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-d573-7794-9257-7f6733aa3a80",
+      "Number": 16210,
+      "Chapter": "Chapter 8 \u2014 The Cost of ",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "Kaeric turns from the fight without deciding to, dropping to Brigg\u0027s side while Kressida\u0027s shield covers the gap he\u0027s left, absorbing the hare-boy\u0027s next swing without asking why her partner just abandoned the bout mid-exchange.",
+      "EscalationTarget": "7",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2213,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-ddef-7ecd-80ff-8eb19dd8a702",
+      "Number": 16211,
+      "Chapter": "Chapter 8 \u2014 The Cost of ",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "Meaning": "With the crowd noise oblivious around them - meat pies still selling forty feet away - Kaeric breaks the seal on a waxed packet of black tincture with steady hands, working against an eight-minute window, and tells Brigg to stay with him, the way the boy has never once, in two seasons, been told to do anything else.",
+      "EscalationTarget": "7",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2702,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-e60f-7ede-95cb-7a0b5a32909f",
+      "Number": 16212,
+      "Chapter": "Chapter 9 \u2014 Cornered",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "OPEN WITH A BRIEF, ONE-SENTENCE CONFIRMATION that Brigg has stabilized and is recovering from the injury he took in Chapter 8 (the black tincture worked; he\u0027s resting, weak but alive, out of danger) before the scene continues. Then: Kaeric Dunmoor and Kressida Haun corner Zennia Vrask in the back room of a chandler\u0027s stall, wedged between a tallow barrel and the wall. Kressida names the theft precisely: the sealed paper Zennia lifted off Vessa Morrint\u0027s aide at the rail-yard, the one she told a fence named Dagny was just a manifest.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 2892,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-ef28-7180-a5ab-bd3c09a373e1",
+      "Number": 16213,
+      "Chapter": "Chapter 9 \u2014 Cornered",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Zennia denies it on reflex, but her hand finds the satchel\u0027s inner pocket before her mouth catches up - the paper she\u0027s been carrying for four days and hasn\u0027t slept properly since, wax seal already broken from her own thumbnail on the second night.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2465,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a7-f813-7dd2-84a6-c3914f4b9941",
+      "Number": 16214,
+      "Chapter": "Chapter 9 \u2014 Cornered",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Zennia unfolds the paper and reads aloud, her voice unsteady at first: a contract in tight, economical handwriting - \u0027R. Deil, terms accepted, no registry filing, no guild notice. Payment on completion, second half on confirmation the Forge Marshal has been removed from the tournament rotation before the truce session convenes.\u0027",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2037,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-00eb-79c2-9804-6e62f2890fc0",
+      "Number": 16215,
+      "Chapter": "Chapter 9 \u2014 Cornered",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Beneath the contract, Zennia finds a schedule in the same hand: Forge Marshal Bremmor Aeshel\u0027s meal times, which door he uses to leave the Refinery pavilion after the evening session, and when the guard rotation there thins - surveillance for a kill, not paperwork for a scheme.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2493,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-09aa-7e29-99b0-92e5af0841d1",
+      "Number": 16216,
+      "Chapter": "Chapter 9 \u2014 Cornered",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Kaeric and Kressida piece it together aloud: Vantor Deil, House-less and unregistered, has been placed in the championship bracket as their opponent - not to win the bout, but because a duelist can get close to the Long Table in the chaos of the Final. Zennia, horrified, insists she only took the paper out of anger at being looked through, not because she went hunting for a killing.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 3161,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-12b6-78d1-9d73-8fdb9685b6ff",
+      "Number": 16217,
+      "Chapter": "Chapter 9 \u2014 Cornered",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "Meaning": "Kaeric makes clear Zennia is already in it the moment she took the paper, whether she meant to be or not - the only question left is whether she\u0027s in it alone. Zennia, cornered by that logic as much as by the room, agrees to keep the paper hidden and tell them everything else she knows.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2782,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-1b5a-7e4e-8c78-56c02b6271f9",
+      "Number": 16218,
+      "Chapter": "Chapter 10 \u2014 Nowhere Saf",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Kaeric Dunmoor and Kressida Haun find Thallor Meraq in a Three Points map room that smells of hot wax and cold brass, the kind of closed-off war room every House keeps, moving a single pin half an inch across the map with the unhurried care of a man buying time, not thinking.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2799,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-24ac-7e9e-8f63-a1a6ebd61123",
+      "Number": 16219,
+      "Chapter": "Chapter 10 \u2014 Nowhere Saf",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Kressida explains what they\u0027ve found; Meraq confirms what they feared - there\u0027s no channel to report Morrint that doesn\u0027t run through Morrint herself, not the garrison post, not Aeshel\u0027s own clerks, not the rail dispatch anyone would assume was neutral.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2927,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-2de0-7a62-ba5e-0a06e4315099",
+      "Number": 16220,
+      "Chapter": "Chapter 10 \u2014 Nowhere Saf",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Meraq offers the one answer he has: Warrior King Kesric Vaan has wanted a concrete reason for eleven years, not a rumor - and a documented, unauthorized troop movement or border crossing would finally give him one. Kaeric and Kressida realize Meraq already knows, without being told, exactly what evidence they\u0027re carrying.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2645,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-36f0-716b-8bbe-191442a6dde0",
+      "Number": 16221,
+      "Chapter": "Chapter 10 \u2014 Nowhere Saf",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Meraq warns them the timing is exact: reach the Warrior King only before the truce session opens, because once the doors open every word spoken becomes the Long Seat\u0027s permanent public record, and Morrint will have people in that room reporting to her first.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2714,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-3fb1-7b23-988f-fd01c9907891",
+      "Number": 16222,
+      "Chapter": "Chapter 10 \u2014 Nowhere Saf",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "Meaning": "Meraq refuses to walk them in himself, unwilling to become part of the record after eleven years of staying out of it, but tells them Vaan breakfasts alone in the east gallery before every session with no guard he trusts less than himself - and sends them off without a page or an announcement, while privately noting to himself that they just walked past whatever he\u0027s actually been waiting for without seeing it.",
+      "EscalationTarget": "6",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3305,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-4892-7927-9e1a-5902541471f4",
+      "Number": 16223,
+      "Chapter": "Chapter 11 \u2014 The Long Se",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "At Pallor Station\u0027s map room, Seat-Keeper Yesenna Thurl receives a runner\u0027s dispatch about Vessa Morrint\u0027s off-registry recruitment of an outside duelist, and initially assumes, from the shape of it alone (House-less, unexplained six months of secrecy), that Kaeric Dunmoor himself must be the hired blade Morrint bought, given his lack of standing and the timing of his bracket placement. IMPORTANT CONSTRAINTS: do NOT introduce any attack on Kressida, any \u0027east baths\u0027 scene, any House called Draught, or any character named Gunnar Fjorheim - none of that happens in this book. This is purely Thurl reading a dispatch and forming a mistaken suspicion about Kaeric.",
+      "EscalationTarget": "8",
+      "EventType": "revelation",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 3997,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-5118-79e9-ae0f-b94c5d46eccf",
+      "Number": 16224,
+      "Chapter": "Chapter 11 \u2014 The Long Se",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "A second dispatch arrives at the map room - a formal courier report carrying Kaeric and Kressida\u0027s own findings about Vessa Morrint\u0027s plot, sent through normal channels, not an emergency and not an attack. Yesenna Thurl breaks the seal and reads a name in it that is not Kaeric\u0027s at all. IMPORTANT: do NOT introduce any attack on Kressida, any injury to her, any \u0027east baths\u0027 scene, any House called Draught, or any character named Gunnar Fjorheim. Nobody is attacked in this chapter - this is purely dispatches being read and a mistaken assumption being corrected.",
+      "EscalationTarget": "8",
+      "EventType": "revelation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2919,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-5985-7b5a-87e5-50fb54ab31c8",
+      "Number": 16225,
+      "Chapter": "Chapter 11 \u2014 The Long Se",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "The name in the second dispatch is Vantor Deil - House-less, unregistered, six months of quiet money and quieter promises behind his recruitment by Vessa Morrint. Yesenna Thurl realizes she built the wrong shape and called it the truth because it was faster to build than the real one. IMPORTANT: do NOT introduce any attack on Kressida, any House called Draught, or any character named Gunnar Fjorheim. This beat is purely Thurl\u0027s realization that Vantor Deil, not Kaeric, is Morrint\u0027s hired assassin.",
+      "EscalationTarget": "8",
+      "EventType": "revelation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 3654,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-61d6-73a7-a5d7-8a641ba61935",
+      "Number": 16226,
+      "Chapter": "Chapter 11 \u2014 The Long Se",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "The dispatch confirms Vantor Deil is the championship bracket\u0027s final opponent - the man both Kaeric and Kressida will face together, on the same sand, in the Duel-team Final - and that the placement was never about winning a fight. Forge Marshal Bremmor Aeshel stands the presentation dais at every championship close, exposed by nothing but ceremony, and the Final round is cover for reaching him. IMPORTANT: do NOT introduce any attack on Kressida, any House called Draught, or any character named Gunnar Fjorheim.",
+      "EscalationTarget": "8",
+      "EventType": "revelation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 3380,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-6a27-73bf-8cd7-ba0b6c0352be",
+      "Number": 16227,
+      "Chapter": "Chapter 11 \u2014 The Long Se",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "Meaning": "Yesenna Thurl rings the station\u0027s old alarm bell to summon the duty Champion, understanding they don\u0027t have four days to decide what to do about Vantor Deil and Vessa Morrint\u0027s plot to kill Forge Marshal Aeshel - the championship Final is imminent and preparations must begin now. The bell\u0027s sound, unheard after dark in a generation, tells everyone in the station that something is deeply wrong. IMPORTANT: do NOT introduce any attack on Kressida, any House called Draught, or any character named Gunnar Fjorheim - the urgency here is about protecting Aeshel at the upcoming Final, nothing else.",
+      "EscalationTarget": "8",
+      "EventType": "revelation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 2686,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-72f0-7e99-8938-0c480e151ac1",
+      "Number": 16228,
+      "Chapter": "Chapter 12 \u2014 The Final",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Kaeric Dunmoor and Kressida Haun face Vantor Deil in the Duel-team Final in the Pit, neither of them yet certain in the moment whether he\u0027ll try anything before the bout ends or during it, both watching his hands more than his blade.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 4071,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-7bc7-724b-b181-fd9cbb3407cf",
+      "Number": 16229,
+      "Chapter": "Chapter 12 \u2014 The Final",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Mid-exchange, the crowd noise from the direction of the Long Table changes pitch - not louder, wrong, a roar with something underneath it that isn\u0027t cheering. Kaeric and Kressida both hear it and understand, in the same half-second, that the real fight isn\u0027t in the Pit.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2157,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-84a6-77e1-8fc6-7ba2cd5ff1be",
+      "Number": 16230,
+      "Chapter": "Chapter 12 \u2014 The Final",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Kaeric calls a hold and turns from the bout, cutting through the crowd toward the Long Table stands, Kressida a half-step behind him, both of them still armed, both of them nowhere near close enough to matter yet.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2916,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-8ce2-7152-9ae0-4276994a6e87",
+      "Number": 16231,
+      "Chapter": "Chapter 12 \u2014 The Final",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "At the Long Table, a dockworker plant has already failed to reach Aeshel with a blade; a pale-shelled construct has him by the collar. Kaeric\u0027s eye goes up to the north gate\u0027s cheap seats and finds the real threat: a long dark weapon-shape, already sighted, already still.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2238,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-956c-76b9-9321-4f7cfdaceb25",
+      "Number": 16232,
+      "Chapter": "Chapter 12 \u2014 The Final",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Kaeric does the arithmetic of paces and seconds against the speed of the weapon and knows he won\u0027t reach the gate in time. Kressida finds the same shape beside him and says only \u0027Left\u0027 - meaning go around low through the crowd instead of fighting straight through it.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2800,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-9dd9-7908-8e70-880139751ae2",
+      "Number": 16233,
+      "Chapter": "Chapter 12 \u2014 The Final",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Kaeric shoulders into the packed bodies between him and the gate, losing seconds he can\u0027t get back to a woman trampled underfoot that he has to haul upright before he can think about whether he has time to.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2387,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-a660-709d-b24a-d54e0440dbc3",
+      "Number": 16234,
+      "Chapter": "Chapter 12 \u2014 The Final",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Kaeric looks up as he closes the last distance: the shape at the gate has stopped adjusting, already sighted, already still - the worst possible stillness, no more time being bought by anyone\u0027s motion, only the instant before it decides who in the Pit stops existing.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 2757,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-d274-7409-ab12-da82350d2b07",
+      "Number": 16258,
+      "Chapter": "Chapter 12 \u2014 The Final",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "Meaning": "Resolve the cliffhanger from the previous beat (the shooter\u0027s muzzle finding its line on the crowd near Forge Marshal Aeshel and the Long Table). Threnn Vaskol - the House-less jouster from Chapter 4, still nearby on his Heloth courier mount after his own bout - sees the shape at the north gate a half-second before it fires and drives his construct bodily between the line of fire and the crowd, using the mount\u0027s bulk and momentum the way he\u0027d use it in a joust pass, spoiling the shot at the last possible instant. The shot goes wide, striking the gate structure instead of a person. In the chaos, guards and Kaeric together wrestle the shooter down - this is Vantor Deil, revealed properly for the first time as a person rather than a shape in the stands. As he\u0027s subdued, Deil says something raw and revealing before he goes silent - a fragment about his father, refinery work, and a compensation board that called three deaths \u0027unverifiable origin\u0027 - which lands strangely for Kaeric, who recognizes something of his own grievance (Sennah\u0027s own indenture) in it, and doesn\u0027t yet know what to do with that recognition. Nobody explains the full context of Deil\u0027s words in this beat - that comes later. Kressida is confirmed alive and unhurt, finishing her side of the championship bout, in this same beat or immediately adjacent to it.",
+      "EscalationTarget": "10",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 5080,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-dafa-7e49-b8a0-2ec821c751d9",
+      "Number": 16259,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Cut to Sennah Dunmoor\u0027s own POV at the Atrament foundry, some hours after the Duel-team Final. Rumors of chaos at Three Points - an attack, a name she doesn\u0027t recognize, nothing confirmed - reach her secondhand and garbled, the way news always reaches people who aren\u0027t important enough to be told anything directly. She doesn\u0027t know if her brother is alive. She doesn\u0027t know if the rumor about him entering the tournament was ever even true. This is a short, tense, uncertain beat - do not resolve her fear here; the reader knows Kaeric is safe from the previous chapter, but Sennah does not, and that gap is the point of the beat.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3415,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-aec8-739f-80af-72813e9fbccb",
+      "Number": 16235,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "OPEN WITH A BRIEF CONFIRMATION that the assassination attempt at the end of the Duel-team Final was stopped in time - the shot went wide or was spoiled at the last second, Forge Marshal Aeshel is alive and unhurt, and Kressida Haun is safe, uninjured, having finished the championship bout - before the scene continues. Then: in Pallor Station\u0027s map room, Kaeric Dunmoor lays out the evidence himself: his sister Sennah Dunmoor\u0027s forged indenture, the sealed paper naming Vantor Deil\u0027s contract, and the manifests proving Vessa Morrint falsified Atrament\u0027s aether-salt shipments. Forge Marshal Bremmor Aeshel stands a half-pace behind him, a rope-burn still darkening his wrist, told plainly he isn\u0027t called to answer for anything.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2566,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-b7cb-78d3-9f7f-845e84e1901d",
+      "Number": 16236,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "At Yesenna Thurl\u0027s request, Aeshel recounts the attempt on his life flatly, like a report and not a confession: the two men in the Refinery Seat\u0027s east tower stairwell, the third waiting at the canal gate, the purse Vantor Deil was paid half of in advance.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2911,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-c050-7908-90a0-b74604ee5471",
+      "Number": 16237,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Kaeric argues for public justice; Yesenna Thurl refuses it as theater, explaining that Morrint will answer to her own House instead - her ledgers opened to permanent internal watch, never trusted with a manifest seal again - because a public trial would name every House, Kaeric\u0027s own service included, that ever moved Morrint\u0027s aether-salt without asking questions.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2972,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-e3a0-7fe3-ae22-c51078189738",
+      "Number": 16260,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Vessa Morrint, now in custody, is brought before Forge Marshal Bremmor Aeshel and Seat-Keeper Yesenna Thurl one last time, with Kaeric Dunmoor present as the one who exposed her. She does not beg, deny, or perform remorse. She tells them, flatly and precisely, about the Catalyst supply convoy she commanded ten years ago that killed most of her unit on a batch nobody had verified past the Liturgy\u0027s own seal, including the officer who trained her - and that she raised the danger through proper channels three separate times afterward, and was reassigned each time rather than heard. She states, without asking for sympathy, that she does not consider herself wrong about the danger, only about to be punished for the method she chose after running out of other methods that worked. She has a real technical plan, drafted over six years, for how she believes the supply chain could actually be verified and fixed - she offers it to the room now, not as a bargain for her life, but because it is the only thing she has left that might matter more than her punishment does. IMPORTANT: this must not read as a confession-and-grovel scene. She is composed, precise, and genuinely convinced she was right about the problem even now - the story should not fully resolve whether her fix would have worked.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 4833,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-ec43-7877-bb1f-1531fa8c05fc",
+      "Number": 16261,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Shaken by what Vessa Morrint has just said, Forge Marshal Bremmor Aeshel admits something aloud, for the first time in his life, in front of Kaeric Dunmoor and Seat-Keeper Yesenna Thurl: he remembers her convoy. He personally signed the inquiry that closed the file in a single season, a decade ago, because a season was what the House could afford to spend on it - and he has quietly known ever since that the Catalyst supply chain doesn\u0027t fully add up, and has chosen every year not to pull that thread, because pulling it would end the institutional relationship that makes Atrament indispensable. He does not excuse what Morrint did. But he says, plainly, that his own decade of not-asking and her decade of not being heard grew from exactly the same institutional silence, aimed in opposite directions - and that this is the first time he has ever said so to anyone, including himself. This should land as a genuine crack in his character, not a tidy redemption - the ending should stay morally uncomfortable rather than clean.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2869,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-c8a2-75bd-9913-eb2a510bdc18",
+      "Number": 16238,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Yesenna Thurl confirms Sennah Dunmoor\u0027s indenture is bought out from the Long Seat\u0027s own purse, her name clean by the next day\u0027s ledger - the one clean thing Kaeric leaves the room holding.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1668,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-d100-7d46-bb89-8e574b0c511a",
+      "Number": 16239,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Yesenna Thurl names a debt she says she\u0027ll collect from Aeshel later, when it\u0027s least convenient, and turns to Kaeric: he\u0027s granted an unwanted Long Seat boon in return for bringing her a House\u0027s rot without asking for coin - a debt neither of them fully understands the weight of yet.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2782,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-d972-78a8-942a-3192aaf5f0db",
+      "Number": 16240,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "Kaeric picks up Sennah\u0027s cleared papers and carries the rest of it - the cold, unfinished weight of what justice actually cost here - out into the corridor, the axe on his back feeling, for the first time since he walked in, like very little in this particular room.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 2095,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc312-f4ef-7a55-91da-488e67b50637",
+      "Number": 16262,
+      "Chapter": "Chapter 13 \u2014 What\u0027s Left",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "Meaning": "A short closing beat for Corrik Vhein, appended after the main resolution. As the tournament authorities begin quietly scrutinizing his Sinterspawn sourcing (in the wake of the week\u0027s scandal), Corrik has one more captured specimen in his cages awaiting the next Pit season - and this time, privately, without telling anyone, he makes a different choice than he\u0027s made before: he lets it go free into the Sinter-approach wilds rather than risk selling another possible true Sinterkin into the Pit unconfirmed. He doesn\u0027t examine his own motives too closely, doesn\u0027t call it guilt or redemption, just does it and moves on, the same occupational flatness as always - except this once, the flatness is covering something that isn\u0027t indifference.",
+      "EscalationTarget": "9",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 3395,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-fc36-7843-a9ab-d6d40232d55f",
+      "Number": 16244,
+      "Chapter": "Chapter 14 \u2014 Three Days",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "Alone with the glove, Meraq confirms the truce\u0027s terms hold as they always have - fourth day, same field - and the chapter closes on him weighing a glove that means nothing while, outside, three days start counting down toward whatever comes after truce, Meraq and the Warrior King no closer to naming what they\u0027ve both been watching for.",
+      "EscalationTarget": "4",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 4199,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-e205-79ff-bda9-7b034457621a",
+      "Number": 16241,
+      "Chapter": "Chapter 14 \u2014 Three Days",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "In a rain-soaked truce tent, Thallor Meraq and Warrior King Kesric Vaan close out the formal three-day terms - the Warrior King using the distancing name \u0027Analog\u0027 instead of Meraq, a signal the gloves are about to come off between them. IMPORTANT HARD WORLD RULE: Entos has NO HORSES and NO BEASTS OF BURDEN OF ANY KIND. Do not mention a horse, steed, mare, bay, or any animal mount anywhere in this scene. If any mounted transport or animal-adjacent sound is needed, it must be a Heloth courier-variant construct (a two-legged steam-chemical machine - steam-chemical exhaust venting, iron footfalls on stone, not an animal noise).",
+      "EscalationTarget": "4",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3557,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-eb1a-774b-9c23-99537087387b",
+      "Number": 16242,
+      "Chapter": "Chapter 14 \u2014 Three Days",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "Meraq almost asks, again, the thing he\u0027s been not-asking for three days - what became of Kaeric now that his name was struck from one bracket and rewritten into another, and what that rewriting cost the man who ordered it - and stops himself again, because naming a thing gives it a mouth. IMPORTANT HARD WORLD RULE: Entos has NO HORSES and NO BEASTS OF BURDEN OF ANY KIND. Do not mention a horse, steed, mare, bay, or any animal mount anywhere in this scene. Use Heloth courier-variant constructs (steam-chemical, iron footfalls) if any mounted detail is needed.",
+      "EscalationTarget": "4",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3089,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc2a8-f3c5-7453-8b2c-b0f9382f6a65",
+      "Number": 16243,
+      "Chapter": "Chapter 14 \u2014 Three Days",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "The Warrior King leaves his second glove behind on the table, deliberately, on his way out into the rain - a thing set down on purpose, and Meraq reads its resewn seam the way he reads everyone: a man who mends his own gear, a man who counts, too. IMPORTANT HARD WORLD RULE: Entos has NO HORSES and NO BEASTS OF BURDEN OF ANY KIND. If the Warrior King departs by mounted transport, he mounts a Heloth courier-variant construct (steam-chemical exhaust, iron footfalls, a rider-housing to climb into) - NOT a horse, steed, mare, or bay. Do not use any animal-mount language anywhere in this scene.",
+      "EscalationTarget": "4",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3755,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019fc327-839a-79c9-9bbf-19c3a0954ce2",
+      "Number": 16264,
+      "Chapter": "Chapter 14 \u2014 Three Days",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "Meaning": "A closing coda for the whole book, appended after \u0027Same Field.\u0027 Time has passed - the truce\u0027s fourth day has arrived, or is arriving. Three Points, which for three days was the largest, loudest, most alive temporary city in Entos, is being taken apart and hauled away piece by piece: tent poles pulled and stacked, the Lists\u0027 iron cressets going cold, the Pit\u0027s rope rails coiled onto carts, the Bond Market\u0027s canvas struck. By the time the last wagons roll out, what\u0027s left behind is what\u0027s always left behind when a fair this size ends - heaped trash the haulers didn\u0027t bother taking, torn bunting caught on fence posts, the churned mud of the Pit already starting to skin over, and scavenger animals (crows, foraging dogs, whatever native Entos fauna fits) already working through the abandoned food-stalls and refuse before the last cart is out of sight. The enormous, temporary organism that was Three Points during the truce is gone as if it had never been there at all, and the ground underneath it is just a field again - quiet, empty, indifferent, waiting three years for the next one. This should be written as a wide, elegiac, almost documentary final image - no named characters need appear in it at all, or only distantly, at the edges - the tournament itself as the last thing the reader sees, not any one person\u0027s ending.",
+      "EscalationTarget": "4",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 3841,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    }
+  ]
+}

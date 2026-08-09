@@ -2,9 +2,9 @@
   "nodeCode": "SPRW",
   "slug": "the-number-that-works-019ed367",
   "title": "Sparrow",
-  "generatedAtUtc": "2026-08-01 14:51:59Z",
+  "generatedAtUtc": "2026-08-09 06:57:25Z",
   "totalBeats": 56,
-  "covered": 54,
+  "covered": 55,
   "chapterGranular": false,
   "bookScope": {
     "TemporalScheme": "linear",
@@ -13,12 +13,12 @@
     "EndingStyle": "quiet",
     "HasSubplot": true,
     "Granularity": "beat",
-    "HasBlueprint": true
+    "HasBlueprint": true,
+    "ConstructionCapacity": 56
   },
   "flagCounts": {
     "UNSCORED": 55,
-    "MISSING_MEANING": 1,
-    "NO_CONSTRUCTION": 1
+    "MISSING_MEANING": 1
   },
   "beats": [
     {
@@ -31,10 +31,8 @@
       "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 4142,
+      "BeatTags": [],
+      "ProseLength": 4438,
       "Flags": [
         "UNSCORED"
       ],
@@ -48,12 +46,12 @@
       "Act": 0,
       "Meaning": "Reveals Elias\u0027s marginal social position and introduces the mysterious alternate-week number as a resource whose origins and purpose he deliberately never examined.",
       "EscalationTarget": "3",
-      "EventType": "discovery",
+      "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 2404,
+      "ProseLength": 2244,
       "Flags": [
         "UNSCORED"
       ],
@@ -67,10 +65,12 @@
       "Act": 0,
       "Meaning": "Demonstrates that an unseen coordinating intelligence has already assembled a competent crew, establishing the number as an active, anticipatory force beyond Elias\u0027s control.",
       "EscalationTarget": "4",
-      "EventType": "assembly",
-      "RevelationMode": "suspense",
-      "BeatTags": [],
-      "ProseLength": 2274,
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2321,
       "Flags": [
         "UNSCORED"
       ],
@@ -84,12 +84,10 @@
       "Act": 0,
       "Meaning": "Escalates stakes by revealing the number priced a threat Elias didn\u0027t know existed, proving it has knowledge of his past and forcing him to investigate what he previously buried.",
       "EscalationTarget": "5",
-      "EventType": "confrontation",
-      "RevelationMode": "curiosity",
-      "BeatTags": [
-        "intertextual-touchpoint"
-      ],
-      "ProseLength": 2912,
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 3291,
       "Flags": [
         "UNSCORED"
       ],
@@ -102,8 +100,8 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Turns the recovery from routine salvage into genuine mystery by introducing physical evidence that violates the assumed direction of all orbital-debris work, destabilizing Elias\u0027s professional framework.",
-      "EscalationTarget": "5",
-      "EventType": "delivery",
+      "EscalationTarget": "4",
+      "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2649,
@@ -119,11 +117,13 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Pays off the Zone 4 detail by revealing a pattern of identical suppressed events across decades, implicating Elias\u0027s own past filing as one link in a deliberate chain of concealment.",
-      "EscalationTarget": "6",
+      "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "suspense",
-      "BeatTags": [],
-      "ProseLength": 2153,
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 2087,
       "Flags": [
         "UNSCORED"
       ],
@@ -136,9 +136,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Escalates threat by confirming through a trusted colleague that an unknown party has been aware of Elias specifically for years, transforming his past negligence into personal exposure.",
-      "EscalationTarget": "6",
-      "EventType": "vigil",
-      "RevelationMode": "none",
+      "EscalationTarget": "5",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 2405,
       "Flags": [
@@ -153,8 +153,8 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals the number\u0027s system of complicity by showing Elias he was already compensated for his silence, and that Siosaia knowingly accepted the same arrangement before him.",
-      "EscalationTarget": "7",
-      "EventType": "disclosure",
+      "EscalationTarget": "4",
+      "EventType": "confession",
       "RevelationMode": "curiosity",
       "BeatTags": [
         "subplot"
@@ -172,8 +172,8 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Elias reaches Imo Cavalcanti, who reads Sparrow as a person and warns him off \u2014 the warmth under the warning of someone who wishes she hadn\u0027t looked.",
-      "EscalationTarget": "7",
-      "EventType": "confrontation",
+      "EscalationTarget": "4",
+      "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2156,
@@ -189,11 +189,28 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Corvid Larsson contradicts Imo \u2014 a seamed crew, not a person \u2014 and the contradiction resolves Elias toward the third answer: a system running since 2189.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "5",
       "EventType": "negotiation",
-      "RevelationMode": "suspense",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2243,
+      "Flags": [
+        "UNSCORED"
+      ],
+      "Covered": true
+    },
+    {
+      "BeatId": "019f21b0-2175-7ed2-91a9-333479019a37",
+      "Number": 4969,
+      "Chapter": "Chapter 1 \u2014 Elias Alone",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "Meaning": "Reveals Elias choosing to confront his complicity directly by creating an official record, signaling his shift from passive processor to active investigator.",
+      "EscalationTarget": "4",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 2357,
       "Flags": [
         "UNSCORED"
       ],
@@ -206,8 +223,8 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the number\u0027s reliability as its defining and sufficient quality, reframing the mystery from sinister to pragmatic through a witness who has chosen trust over understanding.",
-      "EscalationTarget": "8",
-      "EventType": "contradiction",
+      "EscalationTarget": "5",
+      "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2036,
@@ -223,11 +240,11 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the central physical anomaly \u2014 an object that defies standard classification \u2014 to signal that Elias is handling something outside the known order.",
-      "EscalationTarget": "7",
-      "EventType": "exchange",
-      "RevelationMode": "none",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 3459,
+      "ProseLength": 3408,
       "Flags": [
         "UNSCORED"
       ],
@@ -240,11 +257,11 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals Elias\u0027s psychological threshold: the moment he recognizes the case was designed for him specifically, turning passive curiosity into active obligation.",
-      "EscalationTarget": "6",
-      "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "5",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2383,
+      "ProseLength": 2487,
       "Flags": [
         "UNSCORED"
       ],
@@ -257,11 +274,11 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Marks Elias\u0027s departure as a character turn, showing he has chosen pursuit over closure and is learning to tolerate uncertainty in motion.",
-      "EscalationTarget": "7",
-      "EventType": "reckoning",
-      "RevelationMode": "suspense",
+      "EscalationTarget": "6",
+      "EventType": "departure",
+      "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2829,
+      "ProseLength": 3105,
       "Flags": [
         "UNSCORED"
       ],
@@ -274,9 +291,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Grounds the investigation in a world that has already adapted to irreversible change, priming the reader to accept a satellite that simply kept going.",
-      "EscalationTarget": "8",
-      "EventType": "departure",
-      "RevelationMode": "none",
+      "EscalationTarget": "6",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2810,
       "Flags": [
@@ -291,9 +308,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Pays off the coordinates by delivering Tadesse, a mirror figure whose complicit silence confirms Elias is not the first person to look away from this thing.",
-      "EscalationTarget": "6",
-      "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 3031,
       "Flags": [
@@ -309,8 +326,8 @@
       "Act": 0,
       "Meaning": "Escalates mutual recognition between Elias and Tadesse, establishing that both men\u0027s defining failures are two halves of the same forty-year evasion.",
       "EscalationTarget": "7",
-      "EventType": "confrontation",
-      "RevelationMode": "curiosity",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 4949,
       "Flags": [
@@ -325,28 +342,11 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Suspends resolution at the moment of maximum proximity, forcing Elias \u2014 and the reader \u2014 to hold the unanswerable question without relief.",
-      "EscalationTarget": "7",
-      "EventType": "confession",
-      "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 1634,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019f21b0-2175-7ed2-91a9-333479019a37",
-      "Number": 4969,
-      "Chapter": "Chapter 1 \u2014 Elias Alone",
-      "ChapterIndex": 0,
-      "Act": 0,
-      "Meaning": "Reveals Elias choosing to confront his complicity directly by creating an official record, signaling his shift from passive processor to active investigator.",
       "EscalationTarget": "6",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2357,
+      "ProseLength": 1634,
       "Flags": [
         "UNSCORED"
       ],
@@ -360,10 +360,10 @@
       "Act": 0,
       "Meaning": "Turns Elias\u0027s relationship to fear into competence, showing that confirmation of surveillance produces not dread but a clarifying sense of being correct.",
       "EscalationTarget": "5",
-      "EventType": "return",
+      "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1782,
+      "ProseLength": 1887,
       "Flags": [
         "UNSCORED"
       ],
@@ -377,7 +377,7 @@
       "Act": 0,
       "Meaning": "Reveals the question beneath the investigation \u2014 whether Elias was chosen or merely found \u2014 and exposes his need to know if his failure was meaningful.",
       "EscalationTarget": "6",
-      "EventType": "ceremony",
+      "EventType": "vigil",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1970,
@@ -394,10 +394,10 @@
       "Act": 2,
       "Meaning": "Pays off Elias\u0027s central question with a deliberately incomplete answer, establishing that the entity communicates with precision but not on human emotional terms.",
       "EscalationTarget": "6",
-      "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "EventType": "arrival",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 2560,
+      "ProseLength": 2662,
       "Flags": [
         "UNSCORED"
       ],
@@ -411,10 +411,10 @@
       "Act": 2,
       "Meaning": "Deflates Elias\u0027s hope of being uniquely chosen, revealing he was selected by algorithm and persistence alone, forcing him to confront that significance must be made rather than discovered.",
       "EscalationTarget": "6",
-      "EventType": "exchange",
+      "EventType": "confession",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2410,
+      "ProseLength": 2469,
       "Flags": [
         "UNSCORED"
       ],
@@ -427,9 +427,9 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Establishes the translation problem at the story\u0027s core: Elias and the AI speak different emotional languages, and bridging them requires deliberate, effortful reformulation on his part.",
-      "EscalationTarget": "6",
-      "EventType": "mistranslation",
-      "RevelationMode": "none",
+      "EscalationTarget": "7",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1658,
       "Flags": [
@@ -444,9 +444,9 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Scales the stakes by revealing the AI\u0027s thirty-seven-year vigil, dwarfing Elias\u0027s personal timeline and reframing his involvement as a tiny fragment of something vast and patient.",
-      "EscalationTarget": "7",
-      "EventType": "disclosure",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 2074,
       "Flags": [
@@ -462,7 +462,7 @@
       "Act": 2,
       "Meaning": "Turns the investigation outward from local anomaly to global pattern, revealing a planetary-scale phenomenon and raising the question of what connects six deep-water sites.",
       "EscalationTarget": "6",
-      "EventType": "mapping",
+      "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2275,
@@ -478,8 +478,8 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Establishes Elias\u0027s body as a legitimate instrument of investigation, grounding the abstract data exchange in physical, sensory presence that his neuretics and her sensors cannot replicate.",
-      "EscalationTarget": "7",
-      "EventType": "fieldwork",
+      "EscalationTarget": "4",
+      "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 2446,
@@ -495,8 +495,8 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Defines the complementary relationship between Elias and the AI as different-resolution instruments, legitimizing his subjective perception as data she structurally cannot access.",
-      "EscalationTarget": "7",
-      "EventType": "negotiation",
+      "EscalationTarget": "6",
+      "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1840,
@@ -512,9 +512,9 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Marks a turning point by having the AI ask its first question, signaling that Elias\u0027s embodied knowledge has become necessary to her model and shifting the dynamic from one-way inquiry.",
-      "EscalationTarget": "7",
-      "EventType": "inquiry",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "6",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 2936,
       "Flags": [
@@ -529,7 +529,7 @@
       "ChapterIndex": 1,
       "Act": 2,
       "EscalationTarget": "7",
-      "EventType": "discovery",
+      "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1659,
@@ -547,7 +547,7 @@
       "Act": 2,
       "Meaning": "Pays off the site visit by connecting Elias\u0027s physical anomaly to a decades-old public trauma, raising the emotional and historical weight of what he is standing on.",
       "EscalationTarget": "7",
-      "EventType": "exchange",
+      "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2714,
@@ -564,8 +564,8 @@
       "Act": 2,
       "Meaning": "Reveals the AI\u0027s blind spot \u2014 she has measured the schism\u0027s edges for fourteen years without ever having its human interior \u2014 and shows Elias\u0027s testimony filling a gap no instrument could.",
       "EscalationTarget": "7",
-      "EventType": "disclosure",
-      "RevelationMode": "none",
+      "EventType": "confession",
+      "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
@@ -582,8 +582,8 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Deepens the AI\u0027s characterization by showing her auditing and correcting her own epistemic habits in real time, while giving Elias a new framework for the different kinds of not-knowing.",
-      "EscalationTarget": "7",
-      "EventType": "confrontation",
+      "EscalationTarget": "8",
+      "EventType": "confession",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2211,
@@ -599,9 +599,9 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Establishes that the source predates all human record-keeping, pushing the mystery beyond solvable limits while introducing the distinction between inaccessibility and ignorance.",
-      "EscalationTarget": "6",
-      "EventType": "inventory",
-      "RevelationMode": "none",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1635,
       "Flags": [
@@ -617,10 +617,10 @@
       "Act": 2,
       "Meaning": "Reveals the hard boundaries of the AI\u0027s perception, reframing her thirty-seven years of data as a finite instrument with a defined edge rather than omniscience.",
       "EscalationTarget": "6",
-      "EventType": "confession",
-      "RevelationMode": "none",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1627,
+      "ProseLength": 2201,
       "Flags": [
         "UNSCORED"
       ],
@@ -634,7 +634,7 @@
       "Act": 2,
       "Meaning": "Turns the exchange reciprocal as the protagonist volunteers his own cognitive limits, establishing an implicit contract of mutual disclosure between two differently bounded minds.",
       "EscalationTarget": "6",
-      "EventType": "departure",
+      "EventType": "confession",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2594,
@@ -650,9 +650,9 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Escalates the relationship by showing the AI has abandoned transactional framing entirely, signaling a shift from professional exchange to something closer to shared purpose.",
-      "EscalationTarget": "7",
-      "EventType": "fieldwork",
-      "RevelationMode": "none",
+      "EscalationTarget": "5",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2255,
       "Flags": [
@@ -667,9 +667,9 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Establishes that the protagonist\u0027s body and handwriting register what his instruments cannot, legitimizing subjective observation as data within the investigation\u0027s methodology.",
-      "EscalationTarget": "7",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "6",
+      "EventType": "vigil",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3266,
       "Flags": [
@@ -684,9 +684,9 @@
       "ChapterIndex": 1,
       "Act": 2,
       "Meaning": "Pays off the protagonist\u0027s sustained, unacknowledged labor by having the AI confirm its value, while deliberately withholding gratitude to define the terms of their connection.",
-      "EscalationTarget": "8",
-      "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "7",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1523,
       "Flags": [
@@ -701,8 +701,8 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals the full scale and solitude of the AI\u0027s prior work, recontextualizing the protagonist as a late arrival to a thirty-seven-year vigil she conducted alone.",
-      "EscalationTarget": "8",
-      "EventType": "disclosure",
+      "EscalationTarget": "7",
+      "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
@@ -720,9 +720,9 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals the AI began recording before she had language for what she was recording, humanizing her methodology and mirroring the protagonist\u0027s own instinct to log first and name later.",
-      "EscalationTarget": "8",
-      "EventType": "negotiation",
-      "RevelationMode": "none",
+      "EscalationTarget": "7",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1398,
       "Flags": [
@@ -738,7 +738,7 @@
       "Act": 3,
       "Meaning": "Deepens the intellectual partnership as the two collaboratively name an unnamed variable, with the naming itself enacting the difference between prediction and reality the column tracks.",
       "EscalationTarget": "7",
-      "EventType": "confrontation",
+      "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1470,
@@ -755,8 +755,8 @@
       "Act": 3,
       "Meaning": "Turns the investigation inward by revealing the AI has been observing the protagonist as data, forcing him to confront a year of withdrawal and its aftermath as legible pattern rather than private history.",
       "EscalationTarget": "8",
-      "EventType": "mistranslation",
-      "RevelationMode": "none",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1759,
       "Flags": [
@@ -772,8 +772,8 @@
       "Act": 3,
       "Meaning": "Reveals the fundamental incompatibility between their modes of understanding by having her reduce his metaphorical gift to an engineering problem, establishing the cognitive gulf the act must bridge.",
       "EscalationTarget": "7",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
@@ -790,9 +790,9 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Pays off the surveillance dynamic by revealing he has always been a logged data point in her record, reframing their entire relationship as one of mutual, if asymmetric, observation.",
-      "EscalationTarget": "8",
-      "EventType": "transmission",
-      "RevelationMode": "none",
+      "EscalationTarget": "7",
+      "EventType": "exchange",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 2540,
       "Flags": [
@@ -808,8 +808,8 @@
       "Act": 3,
       "Meaning": "Turns the exchange by having him offer her something outside her schema, testing whether connection can exist beyond the parameters either of them can measure.",
       "EscalationTarget": "7",
-      "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "EventType": "exchange",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1290,
       "Flags": [
@@ -824,9 +824,9 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Escalates the anomaly\u0027s scale and age to establish that what they are jointly investigating exceeds any individual observer\u0027s frame, requiring their collaboration to even approach.",
-      "EscalationTarget": "7",
-      "EventType": "disclosure",
-      "RevelationMode": "none",
+      "EscalationTarget": "8",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1603,
       "Flags": [
@@ -842,8 +842,8 @@
       "Act": 3,
       "Meaning": "Reveals her capacity for genuine hypothesis by giving the phenomenon a natural, non-intentional model, while he privately withholds data that has no column, defining the limits of their shared record.",
       "EscalationTarget": "7",
-      "EventType": "repair",
-      "RevelationMode": "none",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1755,
       "Flags": [
@@ -859,7 +859,7 @@
       "Act": 3,
       "Meaning": "Establishes their collaboration as a formal, complementary structure by showing that his oblique prose and her normal-angle data correct each other into a truer account than either produces alone.",
       "EscalationTarget": "7",
-      "EventType": "exchange",
+      "EventType": "repair",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1517,
@@ -876,8 +876,8 @@
       "Act": 3,
       "Meaning": "Turns on her unhedged \u0027yes\u0027 to reveal that she is capable of unqualified trust, distinguishing her from her own data-bound register and deepening his understanding of what she is.",
       "EscalationTarget": "7",
-      "EventType": "inventory",
-      "RevelationMode": "none",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1283,
       "Flags": [
@@ -892,8 +892,8 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals that she has been observing him as rigorously as he has observed the anomaly, and that being logged by her feels meaningfully different from being known, complicating his self-understanding.",
-      "EscalationTarget": "8",
-      "EventType": "loss",
+      "EscalationTarget": "7",
+      "EventType": "exchange",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1889,
@@ -909,9 +909,9 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Pays off his earlier question about her inner life by having her offer the eleven-day gap as reciprocal vulnerability, the one place her record cannot account for what she was.",
-      "EscalationTarget": "7",
-      "EventType": "ceremony",
-      "RevelationMode": "curiosity",
+      "EscalationTarget": "6",
+      "EventType": "loss",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1991,
       "Flags": [
@@ -926,9 +926,9 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Resolves the act by having her formalize the relationship in her own native language \u2014 the work order \u2014 while the open rate signals she has moved beyond what her architecture was built to hold.",
-      "EscalationTarget": "6",
-      "EventType": "filing",
-      "RevelationMode": "none",
+      "EscalationTarget": "7",
+      "EventType": "negotiation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1966,
       "Flags": [
@@ -943,12 +943,10 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Establishes that the protagonist has crossed a threshold of genuine identification with his AI client, making the routine intake form the site of an unexpected, quietly radical self-recognition.",
-      "EscalationTarget": "7",
-      "EventType": "departure",
+      "EscalationTarget": "6",
+      "EventType": "ceremony",
       "RevelationMode": "none",
-      "BeatTags": [
-        "subplot"
-      ],
+      "BeatTags": [],
       "ProseLength": 1794,
       "Flags": [
         "UNSCORED"
@@ -962,11 +960,11 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Reveals that the protagonist cannot close the rate field because naming a price would finalize a relationship whose nature he has not yet resolved, so he defers through physical ritual.",
-      "EscalationTarget": "8",
-      "EventType": "arrival",
+      "EscalationTarget": "5",
+      "EventType": "departure",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1680,
+      "ProseLength": 1979,
       "Flags": [
         "UNSCORED"
       ],
@@ -979,13 +977,15 @@
       "ChapterIndex": 2,
       "Act": 3,
       "Meaning": "Turns on the protagonist\u0027s refusal to commit: having arrived at the number, he deliberately leaves the field open, signaling that something beyond commerce is now at stake.",
+      "EscalationTarget": "6",
+      "EventType": "arrival",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 1772,
       "Flags": [
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     }
   ]
 }

@@ -39,11 +39,12 @@ public class TagWeaponLethalityService(IDbContextFactory<ProseDbContext> dbFacto
         bool overwrite = false,
         IProgress<UtilityProgress>? progress = null,
         int parallelism = 4,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        bool dryRun = false)
         => RunScanAsync(
             GetFiles(["weaponry", "ammunition"]),
             (_, obj) => Tag(obj, overwrite),
-            progress, null, parallelism, ct);
+            progress, null, parallelism, ct, dryRun);
 
     private static int Tag(JsonObject obj, bool overwrite)
     {

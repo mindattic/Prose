@@ -177,6 +177,16 @@ public class BeatCoordinationService
             });
         }
 
+        // How many beat-slots the blueprint's escalation/event arrays actually cover —
+        // beat-granular blueprints are sized to the beat count AT GENERATION TIME and are
+        // never resized when beats are later split, so a book that's grown well past this
+        // capacity will show NO_CONSTRUCTION on every beat beyond it. Exposed so callers
+        // (e.g. BookHealthService) can tell "blueprint is stale/undersized" apart from a
+        // genuine per-beat gap inside the blueprint's covered range.
+        int constructionCapacity = chapterGranular
+            ? chapters.Count
+            : Math.Max(escalation.Length, events.Count == 0 ? 0 : events.Max(e => e.BeatIndex) + 1);
+
         // Book-wide construction context (applies to every beat)
         var bookScope = new BookScopeContext
         {
@@ -187,6 +197,7 @@ public class BeatCoordinationService
             HasSubplot     = bp?.HasSubplot ?? false,
             Granularity    = bp?.Granularity ?? "beat",
             HasBlueprint   = bp != null,
+            ConstructionCapacity = constructionCapacity,
         };
 
         var flagCounts = coords
@@ -393,6 +404,11 @@ public class BookScopeContext
     public bool HasSubplot { get; set; }
     public string Granularity { get; set; } = "beat";
     public bool HasBlueprint { get; set; }
+
+    /// <summary>Number of beat-slots (beat-granular) or chapters (chapter-granular) the
+    /// blueprint's construction arrays actually cover. Compare against the book's live
+    /// beat count to detect a blueprint frozen before later beat-splits grew the book.</summary>
+    public int ConstructionCapacity { get; set; }
 }
 
 public record CoordinationReport(

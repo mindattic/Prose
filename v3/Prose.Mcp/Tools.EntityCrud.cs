@@ -1,6 +1,8 @@
 using System.ComponentModel;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
+using Prose.Core.Data;
 using Prose.Core.Models.Canon;
 using Prose.Core.Services;
 
@@ -26,17 +28,20 @@ public class CoreEntityCrudTools
     private readonly DistrictRepository places;
     private readonly FactionRepository factions;
     private readonly CorponationRepository corponations;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
 
     public CoreEntityCrudTools(
         CharacterRepository characters,
         DistrictRepository places,
         FactionRepository factions,
-        CorponationRepository corponations)
+        CorponationRepository corponations,
+        IDbContextFactory<ProseDbContext> dbFactory)
     {
         this.characters = characters;
         this.places = places;
         this.factions = factions;
         this.corponations = corponations;
+        this.dbFactory = dbFactory;
     }
 
     /// <summary>Create or update a character record. Pass empty id to create new; pass an existing id to update (upsert).</summary>
@@ -59,8 +64,19 @@ public class CoreEntityCrudTools
         [Description("Optional JSON for the psychology block: {core_fears, core_desires, coping_mechanisms, blind_spots, secret}.")] string psychologyJson = "",
         [Description("Optional JSON for speech_patterns: {vocabulary, cadence, verbal_tics, example_lines, subtext}.")] string speechPatternsJson = "",
         [Description("Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.")] string physicalDescriptionJson = "",
-        [Description("Optional existing character id (32-char hex or full UUID) to update.")] string id = "")
+        [Description("Optional existing character id (32-char hex or full UUID) to update.")] string id = "",
+        [Description("Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.")] string originNodeSlug = "")
     {
+        Guid? resolvedOrigin = null;
+        if (!string.IsNullOrWhiteSpace(originNodeSlug))
+        {
+            using var odb = dbFactory.CreateDbContext();
+            resolvedOrigin = odb.Nodes.AsNoTracking()
+                .Where(n => n.Slug == originNodeSlug || n.NodeCode == originNodeSlug)
+                .Select(n => (Guid?)n.Id)
+                .FirstOrDefault();
+        }
+
         if (string.IsNullOrEmpty(id))
         {
             // Alias-aware collision guard: GetByName also checks known aliases/handles, so a
@@ -68,19 +84,45 @@ public class CoreEntityCrudTools
             // Saarinen") is caught here instead of silently forking into a duplicate row. Never
             // auto-merge — that's the author's call — just refuse the fork and point at the
             // existing id.
+            //
+            // BUT: GetByName has no book/series context at all — it returns the first name/alias
+            // match anywhere in the universe. Before this fix, that meant a genuinely different
+            // character in a different book sharing a common name (e.g. two unrelated "Marcus"es)
+            // was refused outright, and the error message actively pointed the caller at the WRONG
+            // book's character id to reuse — pushing straight into a cross-book identity merge
+            // instead of preventing one. Only treat it as a real collision when the existing
+            // character's own OriginNodeId doesn't already mark it as a DIFFERENT book's entity
+            // (see EntityDisambiguationService's resolution rules) than the one being seeded now.
             var existing = characters.GetByName(name);
             if (existing != null)
             {
-                return JsonSerializer.Serialize(new
+                Guid? existingOrigin = null;
+                using (var edb = dbFactory.CreateDbContext())
                 {
-                    ok = false,
-                    error = "name_or_alias_matches_existing_character",
-                    existingId = existing.Id,
-                    existingName = existing.Name,
-                    message = $"'{name}' matches an existing character (id={existing.Id}, name='{existing.Name}') "
-                            + "by name or alias. Pass that id to update the existing record — e.g. if this is a "
-                            + $"handle for the same person, add '{name}' to their aliases — instead of creating a duplicate.",
-                }, CanonTools.JsonOpts);
+                    if (Guid.TryParse(existing.Id, out var existingGuid))
+                        existingOrigin = edb.Entities.AsNoTracking()
+                            .Where(e => e.Id == existingGuid).Select(e => e.OriginNodeId).FirstOrDefault();
+                }
+
+                var genuinelyDifferentBook = resolvedOrigin.HasValue && existingOrigin.HasValue
+                    && existingOrigin.Value != resolvedOrigin.Value;
+
+                if (!genuinelyDifferentBook)
+                {
+                    return JsonSerializer.Serialize(new
+                    {
+                        ok = false,
+                        error = "name_or_alias_matches_existing_character",
+                        existingId = existing.Id,
+                        existingName = existing.Name,
+                        message = $"'{name}' matches an existing character (id={existing.Id}, name='{existing.Name}') "
+                                + "by name or alias. Pass that id to update the existing record — e.g. if this is a "
+                                + $"handle for the same person, add '{name}' to their aliases — instead of creating a duplicate. "
+                                + "If this is genuinely a DIFFERENT character in a different book, call set_entity_origin "
+                                + $"on the existing id ({existing.Id}) with its own book's slug first (if it has none), "
+                                + "then retry this call with originNodeSlug set to the NEW book's slug.",
+                    }, CanonTools.JsonOpts);
+                }
             }
         }
 
@@ -135,10 +177,51 @@ public class CoreEntityCrudTools
             catch { /* keep existing */ }
         }
 
+        var isNewCharacter = string.IsNullOrEmpty(id);
         characters.Save(c);
+
+        if (isNewCharacter && resolvedOrigin.HasValue && Guid.TryParse(c.Id, out var newId))
+        {
+            using var wdb = dbFactory.CreateDbContext();
+            var row = wdb.Entities.FirstOrDefault(e => e.Id == newId);
+            if (row != null) { row.OriginNodeId = resolvedOrigin; wdb.SaveChanges(); }
+        }
+
         return JsonSerializer.Serialize(
             new { ok = true, id = c.Id, name = c.Name, warnings = warnings.Count > 0 ? warnings : null },
             CanonTools.JsonOpts);
+    }
+
+    /// <summary>Set (or clear) which book/series a character, place, faction, or CorpoNation
+    /// belongs to (Entity.OriginNodeId) — the field EntityDisambiguationService and the
+    /// create_* collision guards use to tell apart two different entities that happen to share
+    /// a name in different books. Pass an empty originNodeSlug to clear it back to universe-wide.</summary>
+    [McpServerTool, Description("Set which book/series node an existing entity belongs to (Entity.OriginNodeId), so a same-named entity in a different book is recognized as genuinely different rather than blocked as a duplicate. Pass empty originNodeSlug to clear back to universe-wide.")]
+    public string SetEntityOrigin(
+        [Description("Existing entity id (32-char hex or full UUID).")] string id,
+        [Description("Book/series node slug to scope this entity to. Empty clears it (universe-wide/shared).")] string originNodeSlug = "")
+    {
+        if (!Guid.TryParse(id, out var entityId))
+            return JsonSerializer.Serialize(new { ok = false, error = "invalid_id" }, CanonTools.JsonOpts);
+
+        using var db = dbFactory.CreateDbContext();
+        var entity = db.Entities.FirstOrDefault(e => e.Id == entityId);
+        if (entity == null)
+            return JsonSerializer.Serialize(new { ok = false, error = "entity_not_found" }, CanonTools.JsonOpts);
+
+        Guid? resolved = null;
+        if (!string.IsNullOrWhiteSpace(originNodeSlug))
+        {
+            resolved = db.Nodes.AsNoTracking()
+                .Where(n => n.Slug == originNodeSlug || n.NodeCode == originNodeSlug)
+                .Select(n => (Guid?)n.Id).FirstOrDefault();
+            if (resolved == null)
+                return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", originNodeSlug }, CanonTools.JsonOpts);
+        }
+
+        entity.OriginNodeId = resolved;
+        db.SaveChanges();
+        return JsonSerializer.Serialize(new { ok = true, id, entityName = entity.Name, originNodeId = resolved }, CanonTools.JsonOpts);
     }
 
     /// <summary>Create or update a place / district record. Pass empty id to create new; pass an existing id to update.</summary>

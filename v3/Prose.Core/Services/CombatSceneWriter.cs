@@ -423,7 +423,9 @@ public class CombatSceneWriter
     /// parses the updated state, and returns the clean prose alongside the new resource dict.
     /// Falls back to the previous state if the block is absent or malformed.
     /// </summary>
-    private static (string cleanText, Dictionary<string, CombatantResources> updated)
+    // internal (was private) so the 2026-08-09 ammo-clamp fix is directly unit-testable —
+    // pure text parsing, no DB/LLM dependency.
+    internal static (string cleanText, Dictionary<string, CombatantResources> updated)
         ParseResourceLedger(string beatText, Dictionary<string, CombatantResources> current)
     {
         const string startTag = "[RESOURCE LEDGER]";
@@ -449,13 +451,25 @@ public class CombatSceneWriter
 
             if (!updated.TryGetValue(charName, out var res)) continue;
 
-            // Parse ammo — "WeaponName=N/max" or "WeaponName=N" (scoped to AMMO section only)
+            // Parse ammo — "WeaponName=N/max" or "WeaponName=N" (scoped to AMMO section only).
+            // The model self-reports this ledger in its own prose; nothing previously validated
+            // it, so a hallucinated refill or an over-capacity count was accepted verbatim and
+            // persisted as ground truth for the NEXT exchange, silently breaking "ammo is finite."
+            // Clamp to [0, prior count] when no declared magazine size is given (ammo can only
+            // deplete across a ledger update, never increase without an explicit reload elsewhere
+            // in scene logic) and to the declared /max when the model does report one.
             var ammo = new Dictionary<string, int>(res.AmmoByWeapon, StringComparer.OrdinalIgnoreCase);
             var ammoSection = Regex.Match(data, @"AMMO\s+(.+?)(?:\s*\||\s*$)", RegexOptions.IgnoreCase);
             if (ammoSection.Success)
             {
-                foreach (Match m in Regex.Matches(ammoSection.Groups[1].Value, @"(\w[\w\-']*?)=(\d+)(?:/\d+)?"))
-                    ammo[m.Groups[1].Value.Trim()] = int.Parse(m.Groups[2].Value);
+                foreach (Match m in Regex.Matches(ammoSection.Groups[1].Value, @"(\w[\w\-']*?)=(\d+)(?:/(\d+))?"))
+                {
+                    var weapon   = m.Groups[1].Value.Trim();
+                    var reported = int.Parse(m.Groups[2].Value);
+                    var cap = m.Groups[3].Success ? int.Parse(m.Groups[3].Value)
+                            : ammo.TryGetValue(weapon, out var prior) ? prior : reported;
+                    ammo[weapon] = Math.Clamp(reported, 0, Math.Max(cap, 0));
+                }
             }
 
             // Parse neural charge

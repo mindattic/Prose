@@ -102,6 +102,12 @@ public class CanonContradictionService
             all.AddRange(found);
         }
 
+        // Full re-check is authoritative for this node: purge every prior CANON-CONTRADICTION
+        // finding before re-filing the current set below — otherwise a since-fixed
+        // contradiction (whose Entity/Issue text no longer matches any surviving Upsert
+        // dedup key) stays open forever.
+        findings.DeleteBySummaryPrefix($"node:{node.Slug}", "CANON-CONTRADICTION ");
+
         // Queue each as an approval-gated finding.
         foreach (var c in all)
         {

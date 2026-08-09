@@ -33,11 +33,12 @@ public class AssignTiersService(IDbContextFactory<ProseDbContext> dbFactory) : D
         bool overwrite = false,
         IProgress<UtilityProgress>? progress = null,
         int parallelism = 4,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        bool dryRun = false)
         => RunScanAsync(
             GetFiles(["people", "synthetics"]),
             (_, obj) => Assign(obj, overwrite),
-            progress, null, parallelism, ct);
+            progress, null, parallelism, ct, dryRun);
 
     private static int Assign(JsonObject obj, bool overwrite)
     {

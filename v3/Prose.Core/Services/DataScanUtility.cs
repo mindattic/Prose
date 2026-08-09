@@ -82,7 +82,8 @@ public abstract class DataScanUtility
         IProgress<UtilityProgress>? progress = null,
         int? limit = null,
         int parallelism = 4,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        bool dryRun = false)
     {
         int scanned = 0, modified = 0, changes = 0;
         var warnings = new ConcurrentBag<string>();
@@ -113,10 +114,19 @@ public abstract class DataScanUtility
                         int done = Interlocked.Increment(ref scanned);
                         if (fileChanges > 0)
                         {
-                            row.Json      = obj.ToJsonString(WriteOptions);
-                            row.UpdatedAt = DateTime.UtcNow;
-                            if (row.Entity != null) row.Entity.ModifiedAt = row.UpdatedAt;
-                            await db.SaveChangesAsync(token);
+                            // dryRun: processFile already mutated the in-memory `obj` as a side
+                            // effect (that's how every subclass reports its change count), but
+                            // skip writing it back — this is a mass-mutation utility with no
+                            // per-call confirmation step otherwise, and previewing what WOULD
+                            // change is the only safe way to run it against live canon data
+                            // before committing to an actual write.
+                            if (!dryRun)
+                            {
+                                row.Json      = obj.ToJsonString(WriteOptions);
+                                row.UpdatedAt = DateTime.UtcNow;
+                                if (row.Entity != null) row.Entity.ModifiedAt = row.UpdatedAt;
+                                await db.SaveChangesAsync(token);
+                            }
                             int mod = Interlocked.Increment(ref modified);
                             Interlocked.Add(ref changes, fileChanges);
                             if (limit.HasValue && mod >= limit.Value)

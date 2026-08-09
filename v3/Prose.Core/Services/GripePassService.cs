@@ -94,21 +94,14 @@ public sealed class GripePassService(
 
         // ── 2. deterministic quote-grounding: hallucinated quotes die free ────────
         int groundingKills = 0;
+        var groundingBeats = ordered.Select(b => (b.Id, b.Text)).ToList();
         var grounded = new List<(ReviewLlmTransport.JurySeat Seat, RawComplaint C, Guid BeatId, string BeatText)>();
         foreach (var (seat, c) in raw)
         {
-            var idx = c.BeatNumber - 1;
-            if (idx < 0 || idx >= ordered.Count) { groundingKills++; continue; }
-            var beat = ordered[idx];
-            var normalizedQuote = Normalize(c.Quote);
-            if (normalizedQuote.Length >= 12 && !Normalize(beat.Text).Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase))
-            {
-                // Quote not in the cited beat — try the whole manuscript before killing
-                // (readers sometimes cite an off-by-one beat number).
-                if (!Normalize(export.Markdown).Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase))
-                { groundingKills++; continue; }
-            }
-            grounded.Add((seat, c, beat.Id, beat.Text));
+            var result = GroundQuote(groundingBeats, c.BeatNumber, c.Quote);
+            if (result == null) { groundingKills++; continue; }
+            var complaint = result.Value.CorrectedBeatNumber == c.BeatNumber ? c : c with { BeatNumber = result.Value.CorrectedBeatNumber };
+            grounded.Add((seat, complaint, result.Value.BeatId, result.Value.BeatText));
         }
 
         // ── 3. dedupe: same beat + overlapping complaint tokens = one gripe ───────
@@ -260,6 +253,32 @@ public sealed class GripePassService(
     }
 
     // ── helpers ────────────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Grounds a reader-cited quote against the manuscript. Returns null (grounding kill) when
+    /// the cited beat number is out of range, or the quote appears nowhere in the manuscript at
+    /// all. Previously, a quote not found in the CITED beat but found elsewhere in the
+    /// manuscript was accepted while still using the wrong cited beat's id/text/number — so a
+    /// complaint correctly grounded at beat 46 but cited as beat 45 was filed against the wrong
+    /// beat, AND deduped only against the (wrong) cited number, letting the same real defect
+    /// through twice under two different reader citations. This corrects both the beat
+    /// reference and the reported beat number to the beat where the quote actually appears.
+    /// </summary>
+    internal static (Guid BeatId, string BeatText, int CorrectedBeatNumber)? GroundQuote(
+        List<(Guid Id, string Text)> orderedBeats, int citedBeatNumber, string quote)
+    {
+        var idx = citedBeatNumber - 1;
+        if (idx < 0 || idx >= orderedBeats.Count) return null;
+        var beat = orderedBeats[idx];
+        var normalizedQuote = Normalize(quote);
+        if (normalizedQuote.Length >= 12 && !Normalize(beat.Text).Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase))
+        {
+            var actualIdx = orderedBeats.FindIndex(b => Normalize(b.Text).Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase));
+            if (actualIdx < 0) return null;
+            return (orderedBeats[actualIdx].Id, orderedBeats[actualIdx].Text, actualIdx + 1);
+        }
+        return (beat.Id, beat.Text, citedBeatNumber);
+    }
 
     private static string Normalize(string s) => Regex.Replace(s, @"\s+", " ").Trim();
 

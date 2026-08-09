@@ -65,7 +65,7 @@ public class CanonDocTools
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
     {
-        var universeId = CanonDocumentService.ResolveUniverseId(universeSlug);
+        var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
             return JsonSerializer.Serialize(new { error = "unknown_universe", universeSlug }, CanonTools.JsonOpts);
 
@@ -85,7 +85,7 @@ public class CanonDocTools
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
     {
-        var universeId = CanonDocumentService.ResolveUniverseId(universeSlug);
+        var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
             return JsonSerializer.Serialize(new { error = "unknown_universe", universeSlug }, CanonTools.JsonOpts);
 
@@ -124,7 +124,7 @@ public class CanonDocTools
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz",
         [Description("Optional: human-readable section title (the ## heading text). Leave blank to keep the existing title.")] string? sectionTitle = null)
     {
-        var universeId = CanonDocumentService.ResolveUniverseId(universeSlug);
+        var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
             return JsonSerializer.Serialize(new { error = "unknown_universe", universeSlug }, CanonTools.JsonOpts);
 
@@ -160,7 +160,7 @@ public class CanonDocTools
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
     {
-        var universeId = CanonDocumentService.ResolveUniverseId(universeSlug);
+        var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
             return JsonSerializer.Serialize(new { error = "unknown_universe", universeSlug }, CanonTools.JsonOpts);
 

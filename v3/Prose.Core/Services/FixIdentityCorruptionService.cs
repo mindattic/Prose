@@ -31,9 +31,10 @@ public class FixIdentityCorruptionService(IDbContextFactory<ProseDbContext> dbFa
     public Task<UtilityResult> RunAsync(
         IProgress<UtilityProgress>? progress = null,
         int parallelism = 4,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        bool dryRun = false)
         => RunScanAsync(GetFiles(), (_, obj) => { int c = 0; Clean(obj, ref c); return c; },
-                        progress, null, parallelism, ct);
+                        progress, null, parallelism, ct, dryRun);
 
     private static void Clean(JsonObject obj, ref int count)
     {

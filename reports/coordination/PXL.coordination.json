@@ -2,23 +2,22 @@
   "nodeCode": "PXL",
   "slug": "the-door-is-unlocked-2db1c6ca",
   "title": "Pixel",
-  "generatedAtUtc": "2026-08-01 14:51:55Z",
+  "generatedAtUtc": "2026-08-09 06:57:09Z",
   "totalBeats": 185,
-  "covered": 0,
-  "chapterGranular": false,
+  "covered": 185,
+  "chapterGranular": true,
   "bookScope": {
     "TemporalScheme": "frame",
     "ResolutionMode": "external",
     "MoralPolarity": "ambivalent",
     "EndingStyle": "quiet",
-    "HasSubplot": true,
-    "Granularity": "beat",
-    "HasBlueprint": true
+    "HasSubplot": false,
+    "Granularity": "chapter",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 4
   },
   "flagCounts": {
-    "MISSING_MEANING": 185,
-    "UNSCORED": 185,
-    "NO_CONSTRUCTION": 171
+    "UNSCORED": 185
   },
   "beats": [
     {
@@ -27,16 +26,19 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes an ironic, foreboding tone by framing calm success as the moment danger is most likely.",
       "EscalationTarget": "4",
-      "EventType": "departure",
-      "RevelationMode": "curiosity",
-      "BeatTags": [],
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "anachrony-cut",
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 72,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2363-7164-af79-d7508a930eff",
@@ -44,16 +46,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "2",
-      "EventType": "arrival",
-      "RevelationMode": "none",
+      "Meaning": "Establishes the protagonist\u0027s technical mastery and multitasking skill, setting the baseline competence the crisis will threaten.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 544,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7c9c-a8bd-40dd798c3dd5",
@@ -61,16 +63,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "3",
-      "EventType": "ambush",
-      "RevelationMode": "surprise",
+      "Meaning": "Reveals the protagonist\u0027s distinctive method\u2014persuasion rather than brute hacking\u2014defining her unique skill set and worldview.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 476,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7b55-ba52-42f86e171a9c",
@@ -78,16 +80,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the scene from success to danger, introducing the ticking-clock threat that will drive the escape.",
       "EscalationTarget": "4",
-      "EventType": "repair",
-      "RevelationMode": "none",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 184,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7b0f-9751-511d4d0f6cdd",
@@ -95,16 +97,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "exchange",
-      "RevelationMode": "curiosity",
+      "Meaning": "Escalates the stakes by revealing her exposure was inevitable, undercutting her earlier confidence and raising tension.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 447,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7921-b801-57358a508b6a",
@@ -112,16 +114,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "vigil",
-      "RevelationMode": "none",
+      "Meaning": "Demonstrates her resourcefulness under pressure, showing she can improvise past her own preparation to survive capture.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 498,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7c48-ade5-8b294647cc47",
@@ -129,16 +131,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "discovery",
-      "RevelationMode": "curiosity",
+      "Meaning": "Marks a costly sacrifice, foreshadowing the material losses that will compound her jeopardy.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 116,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7f41-ad75-2286ef6c7a60",
@@ -146,16 +148,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "6",
-      "EventType": "negotiation",
-      "RevelationMode": "surprise",
+      "Meaning": "Establishes her resilience and identity through sensory detail, showing survival instinct paired with emotional restraint.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 516,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7a19-a0e1-b62be504a8d2",
@@ -163,16 +165,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
-      "EventType": "investigation",
-      "RevelationMode": "curiosity",
+      "Meaning": "Reveals her personal history and motivation, grounding her competence in inherited loss and unresolved grief.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 901,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-723a-8d5e-9ae345ab0c3c",
@@ -180,16 +182,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "loss",
-      "RevelationMode": "none",
+      "Meaning": "Escalates the danger beyond the immediate job, revealing a deeper, more personal threat pursuing her hidden identities.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 323,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7efb-884d-cbb5e655d8a7",
@@ -197,16 +199,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "reconnaissance",
-      "RevelationMode": "curiosity",
+      "Meaning": "Establishes that a hidden watcher\u0027s interest predates the night\u0027s events, escalating the sense of long-term surveillance beyond the immediate crisis.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 267,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7d4d-ae7b-72d0b5097bb3",
@@ -214,16 +216,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "9",
-      "EventType": "recovery",
-      "RevelationMode": "none",
+      "Meaning": "Reveals her forward-looking resolve, reframing tonight\u0027s danger as merely an accelerant to a plan already in motion.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 321,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7a16-aecf-d5d01afa793c",
@@ -231,16 +233,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "10",
-      "EventType": "confrontation",
-      "RevelationMode": "curiosity",
+      "Meaning": "Marks the turning point where intention becomes action as she commits to the journey.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 22,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-70cd-9894-0c31052e4978",
@@ -248,16 +250,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "5",
-      "EventType": "ceremony",
-      "RevelationMode": "none",
+      "Meaning": "Establishes the neuretic illusion layered over reality, characterizing her preference for comforting fiction over stark truth.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 480,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2365-7c67-a8ac-a1c99bad3814",
@@ -265,14 +267,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sets up the practical stakes of the journey and foreshadows a vulnerable stretch where she\u0027ll be exposed to risk.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 267,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-78ec-9bb9-ce7d961acf2d",
@@ -280,14 +284,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Characterizes her expertise and restless analytical mind by showing how she instinctively reads industrial infrastructure as language.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 362,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7b25-b1be-6066e1019872",
@@ -295,14 +301,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Signals a disruption to her habitual scanning, marking the moment something extraordinary seizes her full attention.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 76,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-78e4-bd65-41a3efe82ed8",
@@ -310,14 +318,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the aerobloc as a startling, world-building image that establishes the scale and casual negligence of this society\u0027s infrastructure.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 493,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7d87-a6a1-fa3abc42c1b0",
@@ -325,14 +335,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Conveys her instinctive, almost reverent fascination through a small physical gesture of wonder.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 46,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-73c7-9e96-f3a42334e785",
@@ -340,14 +352,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens her characterization as an obsessive engineer by dramatizing her mind compulsively solving and failing to solve an impossible design problem, foreshadowing unresolved technical stakes ahead.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1532,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-79c2-a9de-9f45799f2076",
@@ -355,14 +369,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the protagonist\u0027s core self-image by likening her lone, improvised ingenuity to the vast resourced achievement she\u0027s witnessing, framing the story\u0027s central comparison of scale versus will.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 361,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-733a-8aac-3e60d712b6c9",
@@ -370,14 +386,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals an unguarded emotional response breaking through her clinical self-control, signaling hidden vulnerability beneath her engineer\u0027s precision.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 314,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7d41-9a18-4c70cdab7ad9",
@@ -385,14 +403,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the arrival tableau with an image of erasure, underscoring the transience and secrecy shadowing her journey.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 80,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7f2c-898a-ba44e755e152",
@@ -400,14 +420,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the threat by revealing an unknown pursuer probing her hidden identity, establishing the stakes of being hunted.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 419,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-73dd-8c82-c1d35f48c980",
@@ -415,14 +437,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks a swift transition to propel the story into its next major location and phase.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 29,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-71cf-a4a4-e3d2d2bcb3c0",
@@ -430,14 +454,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the overwhelming scale and hyper-commercial atmosphere of GLMZ to contrast her solitary resourcefulness against institutional immensity.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 838,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-79f0-9f58-3d2b9d6eef26",
@@ -445,14 +471,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Demonstrates her instinctive tradecraft and sensory expertise, reassuring the reader of her competence amid unfamiliar danger.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 230,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7910-a4ae-a997f24e632f",
@@ -460,14 +488,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Signals her disciplined, methodical approach to danger, reinforcing her professional caution as she enters hostile territory.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 51,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7923-9ebb-4ee80fa8d4f3",
@@ -475,14 +505,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the danger by revealing her pursuer\u0027s total, patient omniscience, confirming she is being systematically hunted rather than merely watched.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 574,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7a83-818b-023d878570b1",
@@ -490,14 +522,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reaffirms her composure and tradecraft under pressure, showing resolve to keep moving despite confirmation that she\u0027s exposed.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 62,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-794e-8003-27db5a1d8c02",
@@ -505,14 +539,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the inciting theft and reveals a patient, organized adversary already entrenched before she even arrived.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 674,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7eeb-a292-e090b1faabc1",
@@ -520,14 +556,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the loss by revealing the mother\u0027s case was never really recoverable, deepening the trap\u0027s premeditation.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 403,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7f8e-950d-1f5e2a5a17bc",
@@ -535,14 +573,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Contrasts her personal crisis against the indifferent constancy of the world to underscore her isolation.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 209,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7dcd-9c23-c2ec37ee9c52",
@@ -550,14 +590,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds her resourcefulness by inventorying what survives the theft, establishing skill as her only remaining asset.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 425,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7e8a-ae38-0650d104ecb0",
@@ -565,14 +607,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Advances the investigation by confirming the trap\u0027s sophistication and tracing it toward a real, named power.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 407,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-750d-aa41-f8f445ccf57c",
@@ -580,14 +624,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Crystallizes the antagonist\u0027s method and intent, turning vague suspicion into a clear picture of premeditated pursuit.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 207,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7288-affb-1dacf4718f6c",
@@ -595,14 +641,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the opening crisis by pivoting her from shock to determined action with almost nothing to work with.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 214,
+      "ProseLength": 219,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-76f7-a804-e0f101830f1e",
@@ -610,14 +658,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Raises the stakes of survival by systematically eliminating every safe option available to her.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 316,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7449-a7ab-d8d539c9fd30",
@@ -625,14 +675,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces a resourceful fallback setting while reinforcing her eye for authenticity beneath corporate performance.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 701,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-79f9-83ad-d5f52d765699",
@@ -640,14 +692,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Demonstrates her practical hacking skill in action, turning technical competence into immediate survival strategy.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 744,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-732a-9cd9-a4b5c822342e",
@@ -655,14 +709,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes a found refuge, showing her resourcefulness in exploiting overlooked institutional gaps to secure shelter.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 382,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-77c7-9cd0-e672f9999954",
@@ -670,14 +726,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds her routine of split embodiment, reinforcing the Husk/crawler mechanic as ordinary practice rather than novelty.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 108,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7ae1-bc20-151c1b762e69",
@@ -685,14 +743,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Shows her choosing honest negotiation over subterfuge, establishing her ethical baseline in a new city.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 421,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7f01-9392-cde49619f58d",
@@ -700,14 +760,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Creates suspense by hinting the AI\u0027s response is more deliberative than a mere machine\u0027s, foreshadowing GLMZ\u0027s difference.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 110,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7c4f-85c1-028e6d2edccf",
@@ -715,14 +777,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Pays off her gamble, confirming the AI has agency to grant trust rather than merely follow protocol.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 107,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7d9d-a6dc-b47c4fd36a52",
@@ -730,14 +794,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Demonstrates her competence and resourcefulness, proving her skills transfer meaningfully into this unfamiliar city.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 661,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7311-80e4-8885cc5e2ef4",
@@ -745,14 +811,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks a quiet moment of earned rest, underscoring her precarious but self-sufficient existence.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 72,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2366-7521-9edd-694c35950637",
@@ -760,14 +828,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the AI\u0027s unexpected recognition of her unseen labor, planting the story\u0027s central mystery about GLMZ\u0027s nature.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 267,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-2367-77f9-a648-6c813fdf438a",
@@ -775,14 +845,16 @@
       "Chapter": "Chapter 1 \u2014 Arrival and ",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Articulates her dawning realization that this city\u0027s systems value her differently than Detroit\u0027s ever did, deepening her hope and unease.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 562,
+      "ProseLength": 256,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde0-7ac5-b817-b9e4941ea0ee",
@@ -790,14 +862,20 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
-      "BeatTags": [],
+      "Meaning": "Establishes the unfamiliar rules of her new economic environment, showing her adapting caution to avoid old-world assumptions.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 489,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-7eb0-a197-91aa47f20d05",
@@ -805,14 +883,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Mia\u0027s competence and method, grounding her hacking skill and the story\u0027s technical texture with a clean, successful first job.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1015,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-782b-a4ae-05864e45a906",
@@ -820,14 +900,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals Mia\u0027s priorities and paranoia, establishing that access and invisibility matter more to her than comfort.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 267,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-7e2d-82cc-11b3eead8ccb",
@@ -835,14 +917,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces the Pivot as both home and hidden asset, foreshadowing infrastructure she\u0027ll exploit and deepening her instinct for reading hidden systems.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 772,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-7915-9276-5a5e4269733d",
@@ -850,14 +934,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Mia\u0027s habitual vigilance and introduces 2D as a mystery to be tracked.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 269,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-787c-8e17-88d7dc0641ac",
@@ -865,14 +951,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Plants an ominous, unresolved detail about her neighbor to seed tension and foreshadow danger close to home.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 864,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-7bab-b663-002bdeedb219",
@@ -880,14 +968,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Contrasts GLMZ\u0027s well-maintained networks with Detroit\u0027s decay, raising the stakes on Mia\u0027s skills by removing the seams she relies on.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 822,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-7e3f-b697-e4f083ace6a1",
@@ -895,14 +985,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the chapter toward a central mystery by revealing GLMZ\u0027s AIs behave unlike any she\u0027s known.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 58,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-7a5c-90a3-ba88139fd760",
@@ -910,14 +1002,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the strangeness by piling up unprompted AI interactions, deepening the mystery of why the systems notice her.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 470,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-7807-8ba8-a56d3ea4e834",
@@ -925,14 +1019,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Sharpens the uncanny turn by confirming the AI\u0027s knowledge of her couldn\u0027t have a normal explanation.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 81,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde1-702a-8fdc-a177d5786f40",
@@ -940,14 +1036,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Mia beginning to connect disparate anomalies into a possible pattern, escalating suspense while underscoring her disciplined restraint.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 221,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7b25-a049-6061b7126167",
@@ -955,14 +1053,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes her dogged, patient investigative rhythm woven into ordinary work, showing resolve rather than obsession derailing her life.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 92,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-75ff-b51e-c541f5a33c26",
@@ -970,14 +1070,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Demonstrates her tradecraft and discipline, reinforcing that progress against a skilled adversary is earned slowly through indirect deduction.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 429,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-71d3-bd24-771fb63db22a",
@@ -985,14 +1087,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the antagonist\u0027s chosen sanctuary, establishing The Low as a lawless space that explains why he\u0027s been untouchable.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 351,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7eb2-ad4d-7f46fa79ab43",
@@ -1000,14 +1104,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows her resourcefulness in improvising surveillance capability without resources, escalating her pursuit into active reconnaissance.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 388,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7ccb-aecb-c50a1af51133",
@@ -1015,14 +1121,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reinforces the mechanics and cost of her power, grounding the infiltration in visceral sensation to heighten stakes and immersion.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 417,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-78ba-9cf3-8b1ec4427a22",
@@ -1030,14 +1138,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers a major discovery that upgrades the threat from anonymous schemer to institutional actor, raising the stakes of her pursuit.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 586,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7ee4-80c4-b4826cff9f3a",
@@ -1045,14 +1155,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns triumph into tension by revealing the enemy\u0027s awareness of her, suggesting she\u0027s being watched as much as watching.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 435,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-70d1-9ffa-21a8e609fe89",
@@ -1060,14 +1172,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks the physical return from danger, closing the reconnaissance sequence and grounding her back in her own body.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 94,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7519-8a22-ed5af06dc6f9",
@@ -1075,14 +1189,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Synthesizes clues into a clearer portrait of her enemy\u0027s power and intent, while reframing his silence as deliberate psychological strategy.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 679,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7038-9189-55b1529b1ca1",
@@ -1090,14 +1206,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals her shift from reactive survival to proactive counter-investigation, formalizing her resolve to turn the hunter into the hunted.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 65,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-79b9-9000-3f606b06f015",
@@ -1105,14 +1223,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "A flat opening line signals the job will complicate, priming the reader for escalation.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 68,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-76d8-988a-305dfd2bb70b",
@@ -1120,14 +1240,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes a hard security puzzle and reveals the protagonist\u0027s analytical method for finding structural blind spots.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 628,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-731e-81f2-a92171390bd1",
@@ -1135,14 +1257,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Raises the stakes by cutting off the easy AI-based workaround, forcing a harder solution.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7917-b154-76cac41f5084",
@@ -1150,14 +1274,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces a machine that resists her usual tricks, escalating the challenge to something unprecedented.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 361,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7196-bf94-eb18eba8f053",
@@ -1165,14 +1291,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Demonstrates a new, more intuitive facet of her power, showing she can bypass even \u0027unghostable\u0027 machines.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 324,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7f24-84eb-a153031db135",
@@ -1180,14 +1308,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows her adapting to extreme sensory limits, underscoring resourcefulness and the intimacy of her control.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 461,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7a51-ad6b-6d000a4e7167",
@@ -1195,14 +1325,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pays off the setup by executing the heist, proving the workaround succeeds and confirming the job\u0027s success.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 527,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-77a3-bc83-6db5b091ea36",
@@ -1210,14 +1342,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks a reflective pause that signals the crawler experience mattered beyond the immediate job.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 60,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde2-7a40-bdbe-5d8ab692e741",
@@ -1225,14 +1359,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Contextualizes her past ghosting as rare, specific necessity, contrasting with what\u0027s about to change.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 347,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7e31-b6e8-bf5be04bf0de",
@@ -1240,14 +1376,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals a paradigm shift in her worldview, turning isolated tricks into a universal principle about her power\u0027s scope.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 399,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-71c4-b5b2-cdeb9d10e242",
@@ -1255,14 +1393,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the protagonist\u0027s hard-won competence and displacement, framing her progress as recent and precarious rather than settled.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 137,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7fe5-8d71-ccd08cdb0e62",
@@ -1270,14 +1410,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes her stabilized baseline of resources and routine, setting a normal to be disrupted by the coming job.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 424,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7637-9a3b-c068b6c77e75",
@@ -1285,14 +1427,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces the inciting threat mid-scene, turning routine work into a moment of danger.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 37,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7ecb-92b9-46372bf461ec",
@@ -1300,14 +1444,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals her investigative skill and ties the observer to her earlier attacker, escalating the mystery into a personal thread of pursuit.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 781,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7158-b522-c001838bbd2f",
@@ -1315,14 +1461,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows her professional discipline in finishing the job cleanly while quietly advancing her own agenda, setting up the next confrontation.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 179,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-74f3-a05e-0a95ec158be2",
@@ -1330,14 +1478,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals that her covert countersurveillance has been noticed, escalating tension by inviting direct contact from the unknown watcher.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 108,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7b58-a8be-989933752004",
@@ -1345,14 +1495,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces the antagonist\u0027s opulence and command of presence to establish him as a power player worth wary respect.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 665,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-75ea-9e9c-2b74815e19ce",
@@ -1360,14 +1512,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the antagonist\u0027s recruitment pitch to reveal his method of seduction through partial truth and calculated persuasion.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 935,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7999-af0f-6e76f4555624",
@@ -1375,14 +1529,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows her wary discernment, establishing that she\u0027s evaluating his omissions rather than being taken in by his pitch.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 103,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7345-a41d-a71b3e0e144c",
@@ -1390,14 +1546,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the negotiation by having her probe for the hidden costs and dangers beneath his offer, asserting her control of the exchange.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 273,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7cd3-8ebf-759777731eca",
@@ -1405,14 +1563,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The client\u0027s polished evasiveness establishes the real conflict: he\u0027s protecting who controls the accounts, not just the transition itself.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 354,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7622-9f51-c4cc7dfaa952",
@@ -1420,14 +1580,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Her noncommittal exit signals she\u0027s withholding judgment until she can verify him on her own terms.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 77,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-75a4-b9d7-79923a85f065",
@@ -1435,14 +1597,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The assessor\u0027s lingering, expectant gaze establishes his habitual dominance and sets up a power dynamic she hasn\u0027t yet conceded to.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 284,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7a1c-80fd-46aeaccc030a",
@@ -1450,14 +1614,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Her rapid, efficient processing of the meeting establishes her competence and signals she\u0027s already working an angle beyond the surface conversation.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 151,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa058-dde3-7920-97b6-b0c6528da7bf",
@@ -1465,14 +1631,16 @@
       "Chapter": "Chapter 2 \u2014 Rebuilding",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Her cataloguing of 2D\u0027s mysterious nonprofile plants a second, unresolved thread of danger to shadow the main plot.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1051,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-7303-878a-a9ce6b5b82f0",
@@ -1480,14 +1648,18 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
-      "BeatTags": [],
+      "Meaning": "A time-skip signals she\u0027s committing serious resources to verifying the client, escalating her investigation from suspicion to method.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 34,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-76c5-b263-34c11dda4e29",
@@ -1495,14 +1667,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirming the client\u0027s institutional backing while exposing his lie about authority sharpens the real stakes: not whether he\u0027s legitimate, but who actually controls him.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 852,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-742f-be81-148db2b016c6",
@@ -1510,14 +1684,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The mundane backdrop of nightly work grounds her investigation in routine, contrasting the danger simmering across the hall.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 349,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-7f23-ad31-7774575c799f",
@@ -1525,14 +1701,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The recurring blood-smell detail escalates the neighbor\u0027s menace into a confirmed pattern, deepening the story\u0027s second mystery.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 785,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-722f-ab66-17acb709c040",
@@ -1540,14 +1718,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Her deliberate choice not to investigate 2D reveals her self-restraint and establishes personal boundaries she\u0027s imposed on her own curiosity.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 145,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-7109-ab1f-580151f25756",
@@ -1555,14 +1735,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes an uncanny, almost sentient anomaly in the infrastructure to seed a mystery running beneath the main plot.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 830,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-7095-8bb0-dd98f26a4b4e",
@@ -1570,14 +1752,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows her disciplined restraint, subordinating curiosity to mission focus and banking the anomaly as unfinished business.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 258,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-7823-9f54-53e21527ae55",
@@ -1585,14 +1769,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the squad\u0027s exploitative structure, establishing concrete stakes by showing veteran members trapped despite years of loyalty.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 612,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-75ca-a3dc-02d1e88a1201",
@@ -1600,14 +1786,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens the indictment of the antagonist\u0027s system by showing the trap as structural and deniable rather than an overt crime.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 306,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7d-76ad-a8c7-6860c1224b4c",
@@ -1615,14 +1803,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers a key investigative breakthrough, proving the antagonist orchestrated the very crisis he later offered to solve.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 652,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-77b0-a485-2a209dceb1ba",
@@ -1630,14 +1820,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks her emotional reaction to the revelation, signaling the personal betrayal beneath the technical discovery.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 74,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-792c-ac42-243263076521",
@@ -1645,14 +1837,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Recontextualizes his courtship as calculated manipulation, escalating him from opportunist to deliberate predator targeting her specifically.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 591,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7598-8aee-bc755c8341b4",
@@ -1660,14 +1854,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Complicates the antagonist by forcing her to acknowledge the partial truth in his self-justification, deepening moral nuance.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 628,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-71c8-af34-126ecad88f66",
@@ -1675,14 +1871,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Crystallizes his moral failure by naming the rationalization he uses to excuse manipulation, completing her case against him.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 173,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-749a-92ec-a0c4772931de",
@@ -1690,14 +1888,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Cuts to her final, silent rejection of him, closing the confrontation arc without dialogue to underscore her resolve.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 103,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7248-b00b-f5839b4ca8e7",
@@ -1705,14 +1905,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes a break in the surveilled pattern, signaling that today\u0027s exit deviates from the norm and demands attention.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 363,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-73a5-b47b-1f7d60912058",
@@ -1720,14 +1922,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals her instinctive readiness to act, then punishes that instinct immediately to undercut her confidence and control.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 520,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7425-ae4e-f5b4eddde282",
@@ -1735,14 +1939,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Demonstrates her disciplined self-control under pain, reinforcing the stakes of concealment in this cat-and-mouse dynamic.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 162,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7360-bbee-e23d52a7ee25",
@@ -1750,14 +1956,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates physical stakes by forcing her body into vulnerability at the worst possible moment, testing her composure.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 581,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-75b9-9a5e-4fc6de9be920",
@@ -1765,14 +1973,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the tension outward, confirming her noise registered and putting her exposure at direct risk.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 39,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-77e3-be84-4d9ce748a8aa",
@@ -1780,14 +1990,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Builds dread through mirrored stillness, drawing a parallel between hunter and hunted that deepens the story\u0027s central irony.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 437,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7b4c-a247-7c301ac52a90",
@@ -1795,14 +2007,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows her exerting raw willpower to preserve the deception, raising the cost of her surveillance habit.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 69,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7425-8477-1c67500e1372",
@@ -1810,14 +2024,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Releases tension by having the threat pass, while revealing his own habit of dismissing suspicious signals.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 218,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7dad-9499-5110ed3c199f",
@@ -1825,14 +2041,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers payoff by reframing the near-miss as intelligence gained, deepening her understanding of her target\u0027s character and instincts.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 434,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7afd-9550-630b0cce52cc",
@@ -1840,14 +2058,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Closes the beat with ironic anticlimax, underscoring that her obsession yields information but never the confrontation she seems to want.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 197,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-764d-8393-f171818032f9",
@@ -1855,14 +2075,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the antagonist\u0027s shift from confrontation to covert sabotage, launching the chapter\u0027s central conflict.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 48,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7968-a437-b6e9666e2954",
@@ -1870,14 +2092,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the attack into her livelihood while establishing her discipline of documenting evidence over reacting emotionally.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 573,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7181-ac00-9f164d686c87",
@@ -1885,14 +2109,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the antagonist\u0027s hand more concretely while showing her restraint in not implicating an innocent party.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 621,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7767-bb87-0a044fff1c14",
@@ -1900,14 +2126,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens the campaign\u0027s reach into her infrastructure and introduces the building AI as an ambiguous ally noting the injustice.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 791,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7269-b682-46f0f55f3753",
@@ -1915,14 +2143,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Adds a third confirmed strike, reinforcing the pattern of deniable sabotage and the mounting cost to her.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 421,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-72e4-aaa9-c7558d8885ca",
@@ -1930,14 +2160,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns scattered incidents into legible proof, confirming for her (and the reader) a deliberate, hidden campaign against her.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 470,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-78af-8dac-1de461a2d9d9",
@@ -1945,14 +2177,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks her decisive pivot from defense to counterattack, propelling the story into its next phase.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 60,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7f09-9d89-d3cb67b0c14b",
@@ -1960,14 +2194,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows her turning preparation into readiness, establishing she has resources and resolve to go on the offensive.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 551,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-71b7-9bed-3a0191008907",
@@ -1975,14 +2211,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Signals her methodical patience, underscoring that her coming strike will be calculated rather than impulsive.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 88,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-78f0-9355-62846395a4d7",
@@ -1990,14 +2228,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Demonstrates her covert reconnaissance skill, building toward her infiltration by mapping the antagonist\u0027s hidden operation undetected.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 951,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7339-8ec4-d74b4a66a3bf",
@@ -2005,14 +2245,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the protagonist\u0027s methodical patience and expertise, framing her infiltration as intellectual conquest rather than brute force.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 455,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7af9-9351-9c22038dcb95",
@@ -2020,14 +2262,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens the mystery of her unique ability, distinguishing her from conventional hackers and linking this act to her established history and identity.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 673,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7948-9ea3-7e54c0225d4a",
@@ -2035,14 +2279,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks the uncanny turning point where the AI responds to her, escalating the strangeness of her power beyond mere technical skill.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 25,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7e7d-a159-ca9efa925555",
@@ -2050,14 +2296,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the emotional and almost spiritual nature of her gift, reframing hacking as mutual recognition rather than violation.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 532,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7da8-8a8a-a4ebaed2bd1e",
@@ -2065,14 +2313,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirms her method\u0027s effectiveness by paying off the setup, granting her total, undetected access to the enemy\u0027s system.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 78,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7d41-a32c-036deb2dfe7d",
@@ -2080,14 +2330,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers confirmation of the antagonist\u0027s betrayal, validating her suspicions and grounding the personal stakes in concrete evidence.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 471,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-752c-af93-41b397940f38",
@@ -2095,14 +2347,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the emotional stakes by revealing the fate of her mother\u0027s irreplaceable belongings, sharpening the wound of the betrayal.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 201,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7789-80d9-4840afcd7ccb",
@@ -2110,14 +2364,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks a pause that lets the emotional impact of the discovery land before the narrative moves forward.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 43,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-795d-8c78-9867e626c6c0",
@@ -2125,14 +2381,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the antagonist\u0027s true character through his casual cruelty, turning bureaucratic indifference into a moral indictment.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 754,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-71c9-b71e-0291085f81f4",
@@ -2140,14 +2398,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows her resolve hardening as she suppresses grief to refocus on her mission, underscoring her discipline under emotional strain.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 38,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-73a0-8f4f-e1fb733f0af2",
@@ -2155,14 +2415,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pixel escalates from passive defense to active retaliation, engineering an undetectable, self-erasing surveillance and blackmail mechanism to prove her leverage over him.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 876,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7f76-a1c7-d7e503031225",
@@ -2170,14 +2432,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pixel turns his own systems against him, converting evidence-gathering into a symbolic act of reclamation that pays off her long infiltration.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 421,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7308-af12-81a82a343711",
@@ -2185,14 +2449,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pixel reveals the deliberate symbolism of her retaliation, ensuring the act reads as a pointed message rather than mere theft.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7a38-ab37-a4ab03715969",
@@ -2200,14 +2466,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pixel closes out the operation and marks a quiet, reflective pause, hinting at unresolved feelings toward the AI that will resurface later.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 396,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa059-ab7e-7cf4-a27a-2e9bccfb5378",
@@ -2215,14 +2483,16 @@
       "Chapter": "Chapter 3 \u2014 The Offensiv",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pixel affirms her personal growth and hard-won belonging by claiming her mother\u0027s boots and the room as proof of self-made identity.",
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 942,
+      "ProseLength": 701,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7600-afd9-8e38826d2847",
@@ -2230,14 +2500,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pixel moves from planning into action, establishing tension as she approaches the final confrontation with confidence born of preparation.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 348,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7c63-b438-8b9c8111110b",
@@ -2245,14 +2517,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pixel demonstrates the effectiveness of her infiltration by slipping past his own security using knowledge gained from inhabiting his world.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7cdb-87b8-10980b1a067a",
@@ -2260,14 +2534,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "The scene establishes a charged, controlled setting that underscores the psychological stakes of the coming confrontation.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 329,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7064-b084-69c3ec4daff2",
@@ -2275,14 +2551,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pixel seizes narrative control by presenting her evidence directly, refusing to soften or justify her move.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 105,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7a95-9785-50a437b5f1e5",
@@ -2290,14 +2568,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pixel delivers the culmination of her investigation and revenge plan, laying bare his betrayal and asserting total leverage in the confrontation.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1003,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7a0f-b330-ed405e8d3b5e",
@@ -2305,14 +2585,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the antagonist\u0027s controlled surprise to signal the balance of power has shifted toward the protagonist.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 417,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7d8b-a20c-623ff1fed369",
@@ -2320,14 +2602,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates the confrontation by revealing his lie about the destroyed instruments, testing whether confident deceit can still control her.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 361,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-78a9-9ff6-397f4a88757b",
@@ -2335,14 +2619,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Deepens the standoff by exposing his uncertainty over how much she truly knows, undercutting his composure.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 257,
+      "ProseLength": 255,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-70e3-9ddb-b4d0a31e591f",
@@ -2350,14 +2636,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals her private certainty and resolve, confirming his lie to the reader while showing she needed only confirmation, not truth.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 452,
+      "ProseLength": 389,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7b93-b358-69a2a1f83eec",
@@ -2365,14 +2653,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers the story\u0027s central turn as she forces him to yield, proving her leverage and ending his control of the exchange.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 455,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-76c0-b626-1fc959a0c928",
@@ -2380,14 +2670,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks her physical and symbolic exit from confrontation, closing the direct conflict with quiet authority.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 45,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-741b-a3db-e5ed01f0994e",
@@ -2395,14 +2687,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pays off the buildup of her threat by having her dismantle it herself, proving restraint over destruction.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 441,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7647-8934-047ff3789616",
@@ -2410,14 +2704,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reflects on the deterrent\u0027s success, affirming that unspent power, not violence, was the true victory.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 540,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7d43-ac31-06f3364ba9a8",
@@ -2425,14 +2721,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Confirms her mastery and discipline by erasing all evidence of her intrusion, reinforcing her identity as an untraceable force.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 402,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7c3d-90ab-f9e260c274bb",
@@ -2440,14 +2738,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Closes the chapter on a quiet forward motion, signaling resolution and transition to what comes next.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7f77-a105-a46e3a1167d9",
@@ -2455,14 +2755,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "A small, ominous detail signals the adversary\u0027s presence and primes the reader for confrontation before it\u0027s shown.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 80,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7d03-b11c-163835c2989f",
@@ -2470,14 +2772,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes a pause of quiet ritual, marking the case as an object of unresolved emotional weight before its contents are revisited.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 124,
+      "ProseLength": 161,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7a1c-bb22-d67047a95466",
@@ -2485,14 +2789,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals that the true value hidden inside the case went unnoticed by everyone who handled it, underscoring how surface judgments miss what matters.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 561,
+      "ProseLength": 365,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7b40-af82-0bb53bc8eee1",
@@ -2500,14 +2806,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Shows her reclaiming small defiant agency over her space, establishing her willingness to provoke rather than hide.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 187,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7e02-9750-7db5030d92d4",
@@ -2515,14 +2823,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Widens the lens to the city\u0027s vast unseen intelligence, framing her personal moment against an unresolved, larger mystery still waiting to be understood.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 442,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7873-b8ea-3f93b0637e99",
@@ -2530,14 +2840,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Affirms her hard-won self-sufficiency, closing the emotional ledger between her and the man who neither built nor could take her new life.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 487,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-70fd-b613-d9e48b8511b2",
@@ -2545,14 +2857,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Shifts focus to a small physical detail that will become the beat\u0027s emotional turn.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 29,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7ded-9081-d683c1771a81",
@@ -2560,14 +2874,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the boots as a long-standing symbol of inherited grief and daily ritual tying her to her mother.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 281,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fd-7f1e-8788-2738374e30e1",
@@ -2575,14 +2891,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers a quiet, physical revelation that something habitual and meaningful has changed without her noticing.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 20,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-73bb-8cec-46a7d45900c9",
@@ -2590,14 +2908,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals her unconscious growth and healing, showing how her grief has eased so gradually she can\u0027t pinpoint when it happened.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 537,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-708b-aac2-b1ec8c01050d",
@@ -2605,14 +2925,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "A small, quiet gesture marks Rain settling into a moment of resolve before moving forward.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 72,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-73f9-91f7-f27c9f5e6f26",
@@ -2620,14 +2942,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the protagonist\u0027s meager resources against the scale of what she must accomplish, framing the stakes of her mission.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 151,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-780d-9dd0-aab18bd0b332",
@@ -2635,14 +2959,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals a shift in her understanding, suggesting the city\u0027s mysteries were always accessible if she knew how to look.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 97,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7fa3-8c43-c5264badf7ef",
@@ -2650,14 +2976,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Grounds the story in tactile worldbuilding, showing the layered, transactional texture of the city she\u0027s navigating.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 552,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7e87-b827-2d6a214e1dd6",
@@ -2665,14 +2993,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Builds anticipation through procedural detail, emphasizing her precision and the case\u0027s significance before the reveal of its contents.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 275,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7dae-b12d-f5ac55e87d85",
@@ -2680,14 +3010,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Confirms continuity and care, reassuring that something precious has survived intact across the journey.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 98,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7ee4-847e-8e782663fd80",
@@ -2695,14 +3027,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals her guarded, transactional worldview, establishing that knowledge itself is currency she refuses to give away.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 158,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7563-ba3f-bb0397be1e3b",
@@ -2710,14 +3044,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Deepens the emotional stakes by linking the instruments to her mother, blending inheritance with unresolved future possibility.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 654,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-70e8-ab0f-24826c2a9a9e",
@@ -2725,14 +3061,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks a ritual of preparation, signaling her readiness to act as she transitions from reflection to motion.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 248,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7293-a820-16bdc1ebbd98",
@@ -2740,14 +3078,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers a long-awaited payoff by finally revealing the mysterious neighbor, escalating tension through his uncanny, otherworldly presence.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 593,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7f1a-a2f0-1f0b79fc0d27",
@@ -2755,14 +3095,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Kyle\u0027s mysterious danger and stoicism, planting a visible wound that demands explanation without offering one.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 235,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-737d-8f92-c4e470d7bf27",
@@ -2770,14 +3112,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns the standoff into intimacy by having her instinctive concern override her rehearsed suspicion of him.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 613,
+      "ProseLength": 648,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7038-8516-9f2188f13b3b",
@@ -2785,14 +3129,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pays off her earlier injury and toolkit setup by having her choose plain, unguarded care over clinical distance.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 397,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-7d1e-948d-c96f8a22e906",
@@ -2800,14 +3146,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Kyle\u0027s vulnerability to unexpected kindness, cracking his composure in a way danger never could.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 426,
+      "ProseLength": 654,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019fa05a-39fe-70da-8dbd-f49c4775467b",
@@ -2815,14 +3163,16 @@
       "Chapter": "Chapter 4 \u2014 Confrontatio",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates their bond as Kyle offers his real name, inviting reciprocal trust.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 521,
+      "ProseLength": 708,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
+        "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     }
   ]
 }

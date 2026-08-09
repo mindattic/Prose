@@ -143,4 +143,48 @@ public class StoryScopeAuditServiceTests
         Assert.That(result!.Index, Is.EqualTo(2));
         Assert.That(result.EventType, Is.EqualTo("ambush"));
     }
+
+    // ── DeriveProgressiveChecks: early_peak (2026-08-09 fix) ────────────────────────
+
+    static StoryScopeAuditService.BeatReading Reading(int index, int stakes) =>
+        new() { Index = index, Stakes = stakes };
+
+    [Test]
+    public void EarlyPeak_TiedWithTrueClimax_DoesNotFire()
+    {
+        // 10 beats, climax zone starts at index 6 (60%). An early beat (index 1) ties the
+        // max stakes value with the true climax (index 8) — before the fix, IndexOf found
+        // the FIRST occurrence (index 1) and treated it as "the" peak, incorrectly reporting
+        // the story de-escalates into its ending even though the climax IS correctly placed.
+        var readings = new List<StoryScopeAuditService.BeatReading>
+        {
+            Reading(0, 3), Reading(1, 9), Reading(2, 4), Reading(3, 5), Reading(4, 6),
+            Reading(5, 5), Reading(6, 6), Reading(7, 7), Reading(8, 9), Reading(9, 8),
+        };
+
+        var checks = StoryScopeAuditService.DeriveProgressiveChecks(readings, readings.Count);
+        var earlyPeak = checks.Single(c => c.Key == "early_peak");
+
+        Assert.That(earlyPeak.Severity, Is.EqualTo("PASS"),
+            "the climax zone DOES reach the max stakes value (beat 8) — this must not be flagged " +
+            "just because an earlier beat also happened to tie that value");
+    }
+
+    [Test]
+    public void EarlyPeak_OnlyEarlyBeatReachesMax_StillFires()
+    {
+        // Same shape, but nothing in the climax zone (index >= 6) reaches the peak value 9 —
+        // genuine early-peak de-escalation must still be caught.
+        var readings = new List<StoryScopeAuditService.BeatReading>
+        {
+            Reading(0, 3), Reading(1, 9), Reading(2, 4), Reading(3, 5), Reading(4, 6),
+            Reading(5, 5), Reading(6, 6), Reading(7, 7), Reading(8, 8), Reading(9, 7),
+        };
+
+        var checks = StoryScopeAuditService.DeriveProgressiveChecks(readings, readings.Count);
+        var earlyPeak = checks.Single(c => c.Key == "early_peak");
+
+        Assert.That(earlyPeak.Severity, Is.EqualTo("MODERATE"),
+            "no beat in the climax zone reaches the overall peak stakes — this IS a genuine early-peak defect");
+    }
 }

@@ -826,17 +826,22 @@ public class BeatGeneratorService
         }
         if (string.IsNullOrWhiteSpace(query)) return "";
 
+        // FindSimilarProseAsync(scopeKind:"beat") queries ScopeKind='beat' embeddings, but nothing
+        // in the live pipeline ever writes that scope (verified: 0 rows) — beats are embedded under
+        // ScopeKind='BeatNode'. That made every style-anchor lookup return zero hits, silently, for
+        // every beat ever generated. FindSimilarBeatNodesAsync is the method whose scope actually
+        // has data; the legacy ChapterBeat lookup below is replaced with the live Beats table.
         IReadOnlyList<ProseEmbeddingHit> hits;
-        try { hits = await embeddings.FindSimilarProseAsync(query, k: 4, scopeKind: "beat", ct); }
+        try { hits = await embeddings.FindSimilarBeatNodesAsync(query, k: 4, nodeScope: context.NodeId, ct); }
         catch (OperationCanceledException) { throw; }
         catch { return ""; }
         if (hits.Count == 0) return "";
 
         var beatIds = hits.Select(h => h.ScopeId).ToHashSet();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var beats = await db.Set<Data.Entities.ChapterBeat>().AsNoTracking()
-            .Where(b => beatIds.Contains(b.BeatGuid))
-            .Select(b => new { b.BeatGuid, b.Title, b.Synopsis, b.Text })
+        var beats = await db.Beats.AsNoTracking()
+            .Where(b => beatIds.Contains(b.Id))
+            .Select(b => new { BeatGuid = b.Id, b.Title, b.Text })
             .ToListAsync(ct);
 
         if (beats.Count == 0) return "";

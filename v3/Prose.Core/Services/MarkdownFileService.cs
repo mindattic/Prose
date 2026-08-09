@@ -121,6 +121,23 @@ public class MarkdownFileService
             if (Directory.Exists(gospelDir))
                 foreach (var f in Directory.EnumerateFiles(gospelDir, "*.md"))
                     yield return new(f, "project", ToRelative(projectRoot, f), "gospel");
+
+            // docs/planning/*.md — mandatory 10-section book briefs (New Story Workflow step 0).
+            // Undiscovered until now — same failure mode as docs/gospel above: docs/nodes/TFAH.md
+            // cites "docs/planning/TFAH-brief.md §5, §9" as authoritative, but that file could
+            // never get a MarkdownFiles row, so it was never loadable by DCM at all.
+            var planningDir = Path.Combine(docsDir, "planning");
+            if (Directory.Exists(planningDir))
+                foreach (var f in Directory.EnumerateFiles(planningDir, "*.md"))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "planning-brief");
+
+            // docs/data/*.md — canon-as-data reference docs (e.g. ENTITY_IDENTITY.md, the L5
+            // master entity-identity table docs/BIBLE.md cites). TopDirectoryOnly naturally
+            // excludes docs/data/_schema/*.json. Same undiscovered-folder gap as above.
+            var dataDir = Path.Combine(docsDir, "data");
+            if (Directory.Exists(dataDir))
+                foreach (var f in Directory.EnumerateFiles(dataDir, "*.md", SearchOption.TopDirectoryOnly))
+                    yield return new(f, "project", ToRelative(projectRoot, f), "data-reference");
         }
 
         // Claude Code project memory files
