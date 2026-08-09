@@ -55,9 +55,9 @@ public static class ProseCheckCli
             var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
             if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == node.Id).Select(n => n.Id).ToListAsync();
-            var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
+            // Recurses past any nested Collection (2026-08-09 fix). Per-beat pattern checks
+            // don't depend on cross-chapter reading order, only on not silently dropping beats.
+            var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
 
             var beats = await (
                 from sb in db.BeatNodes

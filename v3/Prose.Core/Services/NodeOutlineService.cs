@@ -27,31 +27,37 @@ public class NodeOutlineService(ILlmService llm, IDbContextFactory<ProseDbContex
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        // Respect the same book/chapter hierarchy BookAuditService uses.
-        var childChapters = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == nodeId && s is ChapterNode)
-            .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
-            .OrderBy(s => s.SortKey)
-            .ToListAsync(ct);
+        // Respect the same book/chapter hierarchy BookAuditService uses. Recurses past any
+        // nested Collection (2026-08-09 fix) — the old Include-based direct-children query
+        // missed a split chapter's grandchildren (their BeatNodes navigation is empty).
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var isFlatNode = leafIds.Count == 1 && leafIds[0] == nodeId;
 
-        var nodeWithBeats = await db.Nodes.AsNoTracking()
-            .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
-            .FirstOrDefaultAsync(s => s.Id == nodeId, ct);
-
-        var indexedBeats = childChapters.Count > 0
-            ? childChapters
-                .SelectMany(ch => ch.BeatNodes
-                    .Where(sb => sb.IsEnabled)
-                    .OrderBy(sb => sb.SortKey)
-                    .Select(sb => sb.Beat!))
-                .Where(b => !string.IsNullOrWhiteSpace(b.Text))
-                .ToList()
-            : (nodeWithBeats?.BeatNodes
+        List<Beat> indexedBeats;
+        if (isFlatNode)
+        {
+            var nodeWithBeats = await db.Nodes.AsNoTracking()
+                .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
+                .FirstOrDefaultAsync(s => s.Id == nodeId, ct);
+            indexedBeats = nodeWithBeats?.BeatNodes
                 .Where(sb => sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!)
                 .Where(b => !string.IsNullOrWhiteSpace(b.Text))
-                .ToList() ?? []);
+                .ToList() ?? [];
+        }
+        else
+        {
+            var rows = await db.BeatNodes.AsNoTracking()
+                .Where(sb => leafIds.Contains(sb.NodeId) && sb.IsEnabled)
+                .Include(sb => sb.Beat)
+                .ToListAsync(ct);
+            indexedBeats = rows
+                .OrderBy(sb => leafIds.IndexOf(sb.NodeId)).ThenBy(sb => sb.SortKey)
+                .Select(sb => sb.Beat!)
+                .Where(b => !string.IsNullOrWhiteSpace(b.Text))
+                .ToList();
+        }
 
         if (indexedBeats.Count == 0)
             return new NodeOutlineResult(nodeId, node.Title, 0, "(No enabled beats found.)");

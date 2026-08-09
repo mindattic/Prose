@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
+using Prose.Core.Services;
 
 namespace Prose.Cli;
 
@@ -72,21 +73,22 @@ public static class PrintNodeCli
         }
 
         // SS-A43: beats live on chapter children for book-mode stories.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == node.Id)
-            .Select(n => n.Id)
-            .ToListAsync();
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
+        // Recurses past any nested Collection (2026-08-09 fix); searchIds is already in
+        // correct global reading order — materialize first, THEN reorder by its list
+        // position client-side (List<Guid>.IndexOf has no SQL translation).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
 
-        var beats = await db.BeatNodes
+        var rows = await db.BeatNodes
             .AsNoTracking()
             .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
-            .OrderBy(sb => sb.SortKey)
             .Join(db.Beats.AsNoTracking(),
                   sb => sb.BeatId,
                   b  => b.Id,
-                  (sb, b) => b.Text)
+                  (sb, b) => new { sb.NodeId, sb.SortKey, b.Text })
             .ToListAsync();
+        var beats = rows
+            .OrderBy(r => searchIds.IndexOf(r.NodeId)).ThenBy(r => r.SortKey)
+            .Select(r => r.Text).ToList();
 
         var prose = beats.Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
 

@@ -114,10 +114,8 @@ public class DistributedWorkerCoordinator
             if (alreadyQueued.Contains(sid)) continue;
 
             // Load beat texts via junction; SS-A43: expand to chapter children for book nodes.
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == node.Id)
-                .Select(n => n.Id).ToListAsync(ct);
-            var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
+            // Recurses past any nested Collection (2026-08-09 fix).
+            var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
             var beatTexts = await db.BeatNodes
                 .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)

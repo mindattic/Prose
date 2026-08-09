@@ -46,17 +46,20 @@ public static class GearCheckCli
         var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
         if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == node.Id).Select(n => n.Id).ToListAsync();
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
+        // Recurses past any nested Collection (2026-08-09 fix); searchIds is already in
+        // correct global reading order — materialize first, then reorder client-side by its
+        // list position (List<Guid>.IndexOf has no SQL translation).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
 
-        var beats = await (
+        var beatRows = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
             where searchIds.Contains(sb.NodeId) && sb.IsEnabled
-            orderby sb.SortKey
-            select new { b.Id, b.Number, b.Text }
+            select new { sb.NodeId, sb.SortKey, b.Id, b.Number, b.Text }
         ).ToListAsync();
+        var beats = beatRows
+            .OrderBy(r => searchIds.IndexOf(r.NodeId)).ThenBy(r => r.SortKey)
+            .Select(r => new { r.Id, r.Number, r.Text }).ToList();
 
         int totalViolations = 0;
         foreach (var beat in beats)

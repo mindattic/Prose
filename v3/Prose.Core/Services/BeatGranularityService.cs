@@ -114,14 +114,14 @@ public class BeatGranularityService(IDbContextFactory<ProseDbContext> factory)
     private static async Task<BeatGranularityReport> BuildReportAsync(
         ProseDbContext db, Node book, CancellationToken ct)
     {
-        // 1. Chapter children (direct children of the book node)
-        var chapterIds = await db.Nodes
-            .Where(n => n.ParentNodeId == book.Id)
-            .Select(n => n.Id)
-            .ToListAsync(ct);
-
-        if (chapterIds.Count == 0)
+        // Chapter leaves, recursing past any nested Collection (2026-08-09 fix). Preserves
+        // the original "flat book (no chapters at all) gets no granularity report" behavior —
+        // GetLeafDescendantIdsAsync returns just [book.Id] for a flat book, which isn't a real
+        // chapter list, so that case still short-circuits to EmptyReport exactly as before.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, book.Id, ct);
+        if (leafIds.Count == 1 && leafIds[0] == book.Id)
             return EmptyReport(book);
+        var chapterIds = leafIds;
 
         // 2. Enabled beats ordered by position — char count from Text.Length → LEN()
         var beatRows = await db.BeatNodes

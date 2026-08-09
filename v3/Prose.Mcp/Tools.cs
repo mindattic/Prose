@@ -312,8 +312,8 @@ public class ContextTools
         var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId);
         if (node == null) return Error("node_not_found", nodeIdOrSlug);
 
-        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync();
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId.Value };
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId.Value);
 
         var beatIds = await db.BeatNodes.AsNoTracking()
             .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled)

@@ -1266,19 +1266,25 @@ public class NodeTools
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == node.Id).Select(n => n.Id).ToListAsync();
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
+        // Recurses past any nested Collection (2026-08-09 fix); searchIds is already in
+        // correct global reading order, so join+reorder by its list position, not raw SortKey
+        // (which is only comparable among siblings under the same parent).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
 
-        var texts = await db.BeatNodes
+        // NOTE: materialize BEFORE reordering by searchIds.IndexOf — that's a client-side
+        // List<Guid>.IndexOf lookup with no SQL translation; EF would throw if it stayed
+        // inside the query pipeline.
+        var rows = await db.BeatNodes
             .AsNoTracking()
             .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
-            .OrderBy(sb => sb.SortKey)
             .Join(db.Beats.AsNoTracking(),
                   sb => sb.BeatId,
                   b  => b.Id,
-                  (sb, b) => b.Text)
+                  (sb, b) => new { sb.NodeId, sb.SortKey, b.Text })
             .ToListAsync();
+        var texts = rows
+            .OrderBy(r => searchIds.IndexOf(r.NodeId)).ThenBy(r => r.SortKey)
+            .Select(r => r.Text).ToList();
 
         var prose = texts.Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
         if (prose.Count == 0) return JsonSerializer.Serialize(new { error = "no_prose", node_id = node.Id, slug = node.Slug }, CanonTools.JsonOpts);

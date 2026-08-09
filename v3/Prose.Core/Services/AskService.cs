@@ -85,9 +85,8 @@ public class AskService
                 .Where(s => s.Id == sid)
                 .Select(s => new { s.Slug, s.Title })
                 .FirstOrDefaultAsync(ct);
-            var askChildIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == sid).Select(n => n.Id).ToListAsync(ct);
-            var askSearchIds = askChildIds.Count > 0 ? askChildIds : new List<Guid> { sid };
+            // Recurses past any nested Collection (2026-08-09 fix).
+            var askSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, sid, ct);
 
             var beats = await (from sb in db.BeatNodes.AsNoTracking()
                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
