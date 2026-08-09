@@ -137,14 +137,6 @@ public class SemanticFidelityService
             return new FidelityReport(nodeId, node.Slug, 0, 0, node.Score, 0, null,
                 Array.Empty<FidelityViolation>(), 0);
 
-        // Full re-audit is authoritative for this book: purge every prior SEMANTIC-DRIFT
-        // finding (both from a previous AuditNodeAsync pass and from the per-beat
-        // CheckBeatIntentDriftAsync hook) before re-filing current violations below.
-        // Without this, a beat that's since been fixed keeps its stale finding open
-        // forever — Upsert only dedupes an unchanged summary, and the embedded
-        // similarity %/text changes on every re-check.
-        findings.DeleteBySummaryPrefix($"node:{node.Slug}", "SEMANTIC-DRIFT ");
-
         // Ensure prose embeddings are current (drift-skipped — cheap if nothing changed).
         try { await embeddings.ReembedBeatNodesAsync(nodeId, ct); }
         catch (Exception ex)
@@ -155,6 +147,7 @@ public class SemanticFidelityService
         // ── Bible alignment ───────────────────────────────────────────────
         // Query all beats in this node ranked by cosine similarity to the story anchor.
         var bibleAlignmentById = new Dictionary<Guid, double>();
+        var bibleQuerySucceeded = true;
         if (hasBibleAnchor)
         {
             try
@@ -166,6 +159,7 @@ public class SemanticFidelityService
             }
             catch (Exception ex)
             {
+                bibleQuerySucceeded = false;
                 log.LogWarning(ex, "SemanticFidelity: bible-alignment query failed for '{Slug}'", node.Slug);
             }
         }
@@ -181,6 +175,7 @@ public class SemanticFidelityService
                      && !string.IsNullOrWhiteSpace(b.Text))
             .ToList();
 
+        var intentQuerySucceeded = true;
         if (intentCandidates.Count > 0)
         {
             try
@@ -194,9 +189,22 @@ public class SemanticFidelityService
             }
             catch (Exception ex)
             {
+                intentQuerySucceeded = false;
                 log.LogWarning(ex, "SemanticFidelity: intent-alignment batch failed for '{Slug}'", node.Slug);
             }
         }
+
+        // 2026-08-09 fix: the whole-node purge used to run unconditionally BEFORE either query
+        // above, regardless of whether they actually succeeded — a single failed embedding call
+        // (bible OR intent) silently deleted every prior real SEMANTIC-DRIFT finding of that kind
+        // with nothing computed to replace it (same fail-open bug class as SwainAuditService/
+        // CanonContradictionService this session). Purge each kind independently, and only when
+        // its own query succeeded this run — a beat that's since been fixed still gets its stale
+        // finding cleared (the original purpose of this purge), but a failed query leaves prior
+        // findings of that kind untouched instead of silently erasing them.
+        if (bibleQuerySucceeded) findings.DeleteBySummaryPrefix($"node:{node.Slug}", "SEMANTIC-DRIFT [bible]");
+        if (intentQuerySucceeded) findings.DeleteBySummaryPrefix($"node:{node.Slug}", "SEMANTIC-DRIFT [intent]");
+        findings.DeleteBySummaryPrefix($"node:{node.Slug}", "SEMANTIC-DRIFT [incomplete]");
 
         // ── Identify violations ───────────────────────────────────────────
         // Every beat with prose is checked — Beat.Score is informational only (see class
@@ -255,6 +263,18 @@ public class SemanticFidelityService
             }
         }
 
+        if (!bibleQuerySucceeded || !intentQuerySucceeded)
+        {
+            var which = string.Join(" and ", new[]
+            {
+                !bibleQuerySucceeded  ? "bible-alignment"  : null,
+                !intentQuerySucceeded ? "intent-alignment" : null,
+            }.Where(x => x != null));
+            EmitFinding($"node:{node.Slug}", FindingSeverity.Low,
+                $"SEMANTIC-DRIFT [incomplete]: {which} could not be computed this run (embedding errors) — re-run once resolved.",
+                snippet: null, fix: null);
+        }
+
         // ── Aggregates ────────────────────────────────────────────────────
         var allBibleAligns  = bibleAlignmentById.Values.ToList();
         var allIntentAligns = intentAlignmentById.Values.ToList();
@@ -293,6 +313,15 @@ public class SemanticFidelityService
             return;
         try
         {
+            // 2026-08-09 fix: the delete used to run BEFORE ComputeSimilarityAsync, inside the
+            // same try block that swallows every exception ("quality checks must never block a
+            // save" — that contract is kept). If the embedding call threw, the beat's real prior
+            // SEMANTIC-DRIFT finding was already deleted with nothing to replace it — same
+            // fail-open bug class as SwainAuditService/CanonContradictionService this session,
+            // just at beat-hook scope. Compute first; only clear the prior finding once there's
+            // a fresh verdict ready to take its place.
+            var similarity = await embeddings.ComputeSimilarityAsync(synopsis, beatText, ct);
+
             // Beat-scoped so a since-fixed beat's stale finding is cleared even when this
             // save no longer triggers a re-emit below (Upsert alone never removes a row whose
             // triggering condition has stopped holding — see AuditNodeAsync's book-wide purge
@@ -300,7 +329,6 @@ public class SemanticFidelityService
             var filePath = $"node:{nodeSlug}/beat:{beatNumber}";
             findings.DeleteBySummaryPrefix(filePath, "SEMANTIC-DRIFT [intent]:");
 
-            var similarity = await embeddings.ComputeSimilarityAsync(synopsis, beatText, ct);
             if (similarity >= IntentAlignmentFloor) return;
 
             var sev = similarity < 0.35 ? FindingSeverity.High
@@ -317,6 +345,9 @@ public class SemanticFidelityService
         }
         catch (Exception ex)
         {
+            // Deliberately still swallow — quality checks must never block a save (unchanged
+            // contract). The prior finding for this beat survives untouched, since the delete
+            // above now only runs after a successful similarity computation.
             log.LogWarning(ex, "CheckBeatIntentDrift failed for Beat #{Number} node {Slug}",
                 beatNumber, nodeSlug);
         }
