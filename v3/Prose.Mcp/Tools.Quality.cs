@@ -38,6 +38,7 @@ public class QualityTools
     private readonly CanonContradictionService canonChecker;
     private readonly SemanticFidelityService fidelity;
     private readonly StructuralDiagnosticService structural;
+    private readonly BeatDuplicateService duplicateBeats;
     private readonly EmotionalDepthService emotionalDepth;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly VotingGate votingGate;
@@ -55,6 +56,7 @@ public class QualityTools
         CanonContradictionService canonChecker,
         SemanticFidelityService fidelity,
         StructuralDiagnosticService structural,
+        BeatDuplicateService duplicateBeats,
         EmotionalDepthService emotionalDepth,
         IDbContextFactory<ProseDbContext> dbFactory,
         VotingGate votingGate,
@@ -71,6 +73,7 @@ public class QualityTools
         this.canonChecker   = canonChecker;
         this.fidelity       = fidelity;
         this.structural     = structural;
+        this.duplicateBeats = duplicateBeats;
         this.emotionalDepth = emotionalDepth;
         this.dbFactory      = dbFactory;
         this.votingGate     = votingGate;
@@ -287,6 +290,44 @@ public class QualityTools
                 is_blocking = c.IsBlocking,
                 evidence    = c.Evidence,
                 fix         = c.Fix,
+            }),
+        }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>Corpus-wide near-duplicate-scene detector. Flags beat pairs anywhere in a book (any two
+    /// chapters) whose prose embeddings are near-identical — catches an abandoned early draft left enabled
+    /// alongside its own developed, canonical rewrite (found in BCODA 2026-08-09). Excludes beats merely
+    /// adjacent in the same chapter, since a continuous scene is supposed to share vocabulary. Candidate
+    /// generator, NOT a verdict — read both beats in full before disabling either.</summary>
+    [McpServerTool, Description("Corpus-wide near-duplicate-scene detector. Flags beat pairs anywhere in a book whose prose embeddings are near-identical (default cosine similarity floor 0.90) — catches an abandoned early draft left enabled alongside its own developed, canonical rewrite written later. Excludes beat pairs merely adjacent within the same chapter (a continuous scene is supposed to share vocabulary — that's not a duplicate). The 0.90 default is deliberately high-precision/low-recall: real-corpus calibration found a genuine duplicate pair scoring only 0.84, while a lower floor also surfaces dozens of false positives from a book's own deliberate recurring formulaic devices (contract postings, logbook entries). Pass a lower threshold (e.g. 0.80) for an occasional deliberate deep pass, expecting more manual filtering. Candidate generator, NOT a verdict: read both beats in full before disabling either with set_beat_membership_enabled. Accepts node id (GUID) or slug.")]
+    public async Task<string> CheckDuplicateBeats(
+        [Description("Node id (GUID) or slug — should be a BookNode; its descendant chapters are scanned together.")] string nodeIdOrSlug,
+        [Description("Cosine similarity floor for a candidate pair, 0–1. Default 0.90.")] double threshold = 0.90)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        Guid nodeId;
+        if (Guid.TryParse(nodeIdOrSlug, out var g))
+            nodeId = g;
+        else
+        {
+            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+            nodeId = s.Id;
+        }
+
+        var result = await duplicateBeats.CheckNodeAsync(nodeId, threshold);
+        return JsonSerializer.Serialize(new
+        {
+            node_id = result.NodeId,
+            slug = result.Slug,
+            beats_scanned = result.BeatsScanned,
+            beats_embedded = result.BeatsEmbedded,
+            complete = result.BeatsEmbedded == result.BeatsScanned,
+            candidates = result.Candidates.Select(c => new
+            {
+                beat_a = c.NumberA, chapter_a = c.ChapterA,
+                beat_b = c.NumberB, chapter_b = c.ChapterB,
+                similarity = c.Similarity,
             }),
         }, CanonTools.JsonOpts);
     }

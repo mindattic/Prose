@@ -1013,6 +1013,13 @@ public static class ServiceCollectionExtensions
         // and the `diagnose_node` MCP tool.
         services.AddSingleton<StructuralDiagnosticService>();
 
+        // Corpus-wide near-duplicate-scene detector: flags beat pairs (anywhere in a book,
+        // any two chapters) whose prose embeddings are near-identical — catches an abandoned
+        // early draft left enabled alongside its own developed, canonical rewrite. Available
+        // via `prose --check-duplicate-beats` and the `check_duplicate_beats` MCP tool, and
+        // wired into BookHealthService's FREE tier.
+        services.AddSingleton<BeatDuplicateService>();
+
         // Emotional Intelligence Examination (SS-A15): 8-dimension, 0–4, per-beat,
         // character-aware rubric. Advisory cap on blocking dimensions at Deep gate.
         // Available via `prose --examine-emotion` and the `examine_emotional_depth` MCP tool.

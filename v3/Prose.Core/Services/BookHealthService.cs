@@ -72,6 +72,7 @@ public class BookHealthService(
     NarrativeScienceService narrativeScience,
     ThemeCoherenceService themeCoherence,
     BehavioralInvariantEnforcer behaviorEnforcer,
+    BeatDuplicateService beatDuplicate,
     ILogger<BookHealthService> log)
 {
     // ── SII formula constants ───────────────────────────────────────────────────────
@@ -110,6 +111,7 @@ public class BookHealthService(
         await RunCheckAsync(checks, "verify-book", () => BeatVerificationAsync(nodeId, slug, ct));
         await RunCheckAsync(checks, "coordinate", () => BeatCoordinationAsync(slug, ct));
         await RunCheckAsync(checks, "voice-consistency", () => VoiceConsistencyAsync(nodeId, slug, ct));
+        await RunCheckAsync(checks, "duplicate-beats", async () => { await beatDuplicate.CheckNodeAsync(nodeId, ct: ct); });
 
         // ── DEEP tier — one LLM call per check per node ─────────────────────────────
         if (tier is BookHealthTier.Deep or BookHealthTier.Full)

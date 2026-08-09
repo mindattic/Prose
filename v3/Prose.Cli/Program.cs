@@ -1570,6 +1570,16 @@ if (args.Contains("--diagnose-book"))
     return;
 }
 
+// prose --check-duplicate-beats --slug <nodeSlug> [--threshold 0.90] [--json]
+// Corpus-wide near-duplicate-scene detector over prose embeddings (BeatDuplicateService).
+// Candidate generator, not a verdict — verify by reading both beats before acting.
+if (args.Contains("--check-duplicate-beats"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await CheckDuplicateBeatsCli.RunAsync(args, sp);
+    return;
+}
+
 // prose --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json]
 // Emotional Intelligence Examination (SS-A15): 8-dimension 0–4 rubric, per-beat curve,
 // character ledger (Want/Need/Wound/Flaw), register-adaptive anchors.
