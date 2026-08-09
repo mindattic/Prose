@@ -21,7 +21,7 @@ name: Build and deploy Prose to Azure App Service
 # v3/ApplyMigrations console app was deleted — see the step below for the
 # replacement): applies all EF Core migrations, then EnableSystemVersioningAsync()
 # — which turns on system versioning for Beats / Strands / StrandBeats and the
-# rest of the canon temporal set. It authenticates with azure/login@v2 (OIDC)
+# rest of the canon temporal set. It authenticates with azure/login@v3 (OIDC)
 # and connects with Authentication=Active Directory Default. The App Service
 # managed identity is read/write only and cannot run DDL, so schema changes
 # ride the OIDC service principal instead. Requires repo secrets
@@ -98,7 +98,7 @@ jobs:
     runs-on: windows-latest
     needs: [build, test]
 
-    # OIDC: id-token lets azure/login@v2 mint a federated token for the
+    # OIDC: id-token lets azure/login@v3 mint a federated token for the
     # prose-github service principal (db_ddladmin on the SQL DB).
     permissions:
       id-token: write
@@ -115,7 +115,7 @@ jobs:
           dotnet-version: '10.x'
 
       - name: Azure login (OIDC)
-        uses: azure/login@v2
+        uses: azure/login@v3
         with:
           client-id:       ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id:       ${{ secrets.AZURE_TENANT_ID }}
@@ -153,7 +153,7 @@ jobs:
 
     steps:
       - name: Azure login (OIDC)
-        uses: azure/login@v2
+        uses: azure/login@v3
         with:
           client-id:       ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id:       ${{ secrets.AZURE_TENANT_ID }}
