@@ -381,6 +381,14 @@ public class BookHealthService(
             findingsSvc.Upsert($"node:{slug}/beat:{b.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.High,
                 $"SWAIN beat #{b.Position} \"{b.Title}\": {b.Classification} missing {b.MissingElement} — {b.Note}",
                 snippet: null, suggestedFix: null);
+        // Surface incomplete evaluation distinctly rather than silently under-reporting — same
+        // principle as the Round 6 ERROR-severity fix for BookAuditService/StoryScopeAuditService.
+        // ErrorCount rows are already excluded from BlockerCount/ComplianceRate by construction;
+        // this rollup just tells an operator WHY the audit covered fewer beats than expected.
+        if (report.ErrorCount > 0)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                $"SWAIN [incomplete]: {report.ErrorCount}/{report.TotalBeats} beats could not be evaluated (LLM/parse errors) — re-run once resolved.",
+                snippet: null, suggestedFix: null);
         return report;
     }
 
@@ -731,9 +739,14 @@ public class BookHealthService(
         var rates = new List<SiiRateAdjustment>();
         var rateTotal = 0;
 
-        if (swain != null && swain.TotalBeats > 0)
+        // Evaluated = TotalBeats minus ones that hit an LLM/parse error (SwainAuditReport.
+        // ComplianceRate already excludes these) — skip the adjustment entirely rather than
+        // recomputing compliance inline against TotalBeats, which used to double-count error
+        // rows as failures (a total API outage read as "0% compliant," not "0 beats evaluated").
+        var swainEvaluated = swain != null ? swain.TotalBeats - swain.ErrorCount : 0;
+        if (swain != null && swainEvaluated > 0)
         {
-            var compliance = swain.Results.Count(r => r.IsPass) / (double)swain.TotalBeats;
+            var compliance = swain.ComplianceRate;
             var adj = compliance >= 0.90 ? 0 : compliance >= 0.75 ? -3 : compliance >= 0.60 ? -6 : -10;
             rates.Add(new SiiRateAdjustment("Swain scene/sequel compliance", $"{compliance:P0}", adj));
             rateTotal += adj;

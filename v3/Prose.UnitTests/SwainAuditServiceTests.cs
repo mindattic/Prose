@@ -44,6 +44,18 @@ public class SwainAuditServiceTests
         Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
     }
 
+    [Test]
+    public void Error_result_is_not_pass_and_not_blocker()
+    {
+        // ERROR (evaluation could not be completed) must never look like a real content
+        // verdict — neither a pass (would inflate compliance) nor a BLOCKER (would fabricate
+        // a "Deficient" finding for a beat that was never actually judged).
+        var r = new SwainBeatResult(Guid.NewGuid(), 4, "Test", 800, SwainClass.Error, "none", "Circuit breaker open", "ERROR");
+        Assert.That(r.IsPass, Is.False);
+        Assert.That(r.Severity, Is.EqualTo("ERROR"));
+        Assert.That(r.Severity, Is.Not.EqualTo("BLOCKER"));
+    }
+
     // ── SwainAuditReport aggregation ──────────────────────────────────────────
 
     [Test]
@@ -75,6 +87,45 @@ public class SwainAuditServiceTests
     }
 
     [Test]
+    public void Report_AllBeatsError_ComplianceIsZeroNotFalseDeficient()
+    {
+        // The real-corpus bug this session (2026-08-09): a total API outage used to make every
+        // beat classify as Deficient/BLOCKER, reporting "0% compliant = 100% structurally
+        // deficient" when actually 0% of the book was ever evaluated. Now: ErrorCount absorbs
+        // every beat, BlockerCount is correctly 0 (no fabricated content verdicts), and
+        // ComplianceRate reports 0.0 via the "nothing was evaluated" path, not a false positive
+        // compliance count either way.
+        var results = Enumerable.Range(1, 5)
+            .Select(i => new SwainBeatResult(Guid.NewGuid(), i, $"Beat {i}", 5000, SwainClass.Error, "none", "Circuit breaker open", "ERROR"))
+            .ToList();
+        var report = new SwainAuditReport(Guid.NewGuid(), "X", "Outage", 5, results);
+
+        Assert.That(report.ErrorCount, Is.EqualTo(5));
+        Assert.That(report.BlockerCount, Is.EqualTo(0));
+        Assert.That(report.PassCount, Is.EqualTo(0));
+        Assert.That(report.ComplianceRate, Is.EqualTo(0.0));
+    }
+
+    [Test]
+    public void Report_PartialErrors_ComplianceExcludesErrorsFromDenominator()
+    {
+        // 2 real passes, 1 real blocker, 2 errors -> compliance should be 2/3 (evaluated beats
+        // only), not 2/5 (which would unfairly punish a book for an infra hiccup mid-audit).
+        var results = new List<SwainBeatResult>
+        {
+            new(Guid.NewGuid(), 1, "A", 5000, SwainClass.Scene,     "none", "ok",      ""),
+            new(Guid.NewGuid(), 2, "B", 4500, SwainClass.Sequel,    "none", "ok",      ""),
+            new(Guid.NewGuid(), 3, "C", 1000, SwainClass.Deficient, "goal", "no goal", "BLOCKER"),
+            new(Guid.NewGuid(), 4, "D", 800,  SwainClass.Error,     "none", "timeout", "ERROR"),
+            new(Guid.NewGuid(), 5, "E", 800,  SwainClass.Error,     "none", "timeout", "ERROR"),
+        };
+        var report = new SwainAuditReport(Guid.NewGuid(), "X", "Partial", 5, results);
+
+        Assert.That(report.ErrorCount, Is.EqualTo(2));
+        Assert.That(report.ComplianceRate, Is.EqualTo(2.0 / 3.0).Within(0.001));
+    }
+
+    [Test]
     public void Report_all_pass_has_full_compliance()
     {
         var results = Enumerable.Range(1, 5)
@@ -90,12 +141,13 @@ public class SwainAuditServiceTests
     // ── SwainClass enum coverage ──────────────────────────────────────────────
 
     [Test]
-    public void All_four_SwainClass_values_exist()
+    public void All_five_SwainClass_values_exist()
     {
         Assert.That(Enum.GetValues<SwainClass>(), Has.Member(SwainClass.Scene));
         Assert.That(Enum.GetValues<SwainClass>(), Has.Member(SwainClass.Sequel));
         Assert.That(Enum.GetValues<SwainClass>(), Has.Member(SwainClass.Ambiguous));
         Assert.That(Enum.GetValues<SwainClass>(), Has.Member(SwainClass.Deficient));
+        Assert.That(Enum.GetValues<SwainClass>(), Has.Member(SwainClass.Error));
     }
 
     // ── ParseClassification: the untrusted-LLM-JSON parser ─────────────────────
@@ -161,33 +213,39 @@ public class SwainAuditServiceTests
         Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
     }
 
+    // These three "could not evaluate" paths (empty response / unparseable / malformed JSON) must
+    // NEVER produce SwainClass.Deficient/"BLOCKER" — that fabricates a content verdict the LLM
+    // never actually rendered. Real-corpus bug found 2026-08-09: a total API outage classified
+    // 100% of a book's beats "Deficient" this way, cratering its SII on a false content signal
+    // when 0% of the book was ever evaluated. Fixed to SwainClass.Error/"ERROR" instead.
+
     [Test]
-    public void ParseClassification_EmptyRaw_FailsAsBlockerWithEmptyNote()
+    public void ParseClassification_EmptyRaw_IsEvalErrorNotDeficient()
     {
         var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, "   ");
 
-        Assert.That(r.Classification, Is.EqualTo(SwainClass.Deficient));
-        Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Error));
+        Assert.That(r.Severity, Is.EqualTo("ERROR"));
         Assert.That(r.Note, Does.Contain("Empty LLM response"));
     }
 
     [Test]
-    public void ParseClassification_NoJsonBraces_FailsWithDiagnosticNote()
+    public void ParseClassification_NoJsonBraces_IsEvalErrorNotDeficient()
     {
         var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, "I refuse to answer.");
 
-        Assert.That(r.Classification, Is.EqualTo(SwainClass.Deficient));
-        Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Error));
+        Assert.That(r.Severity, Is.EqualTo("ERROR"));
         Assert.That(r.Note, Does.Contain("No JSON in response"));
     }
 
     [Test]
-    public void ParseClassification_MalformedJson_FailsWithParseErrorNote()
+    public void ParseClassification_MalformedJson_IsEvalErrorNotDeficient()
     {
         var r = SwainAuditService.ParseClassification(Id, 1, "Beat 1", 500, "{\"class\":\"Scene\", oops}");
 
-        Assert.That(r.Classification, Is.EqualTo(SwainClass.Deficient));
-        Assert.That(r.Severity, Is.EqualTo("BLOCKER"));
+        Assert.That(r.Classification, Is.EqualTo(SwainClass.Error));
+        Assert.That(r.Severity, Is.EqualTo("ERROR"));
         Assert.That(r.Note, Does.Contain("JSON parse error"));
     }
 

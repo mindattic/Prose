@@ -8,7 +8,7 @@ namespace Prose.Core.Services;
 
 // ── Data model ────────────────────────────────────────────────────────────────
 
-public enum SwainClass { Scene, Sequel, Ambiguous, Deficient }
+public enum SwainClass { Scene, Sequel, Ambiguous, Deficient, Error }
 
 /// <summary>Per-beat Swain classification result.</summary>
 public sealed record SwainBeatResult(
@@ -19,7 +19,7 @@ public sealed record SwainBeatResult(
     SwainClass Classification,
     string MissingElement,   // "none" | "goal" | "conflict" | "disaster turn" | "reaction" | "dilemma" | "decision"
     string Note,             // 1-sentence evidence
-    string Severity)         // "" = pass | "MODERATE" | "BLOCKER"
+    string Severity)         // "" = pass | "MODERATE" | "BLOCKER" | "ERROR" (could not evaluate — NOT a content verdict)
 {
     public bool IsPass => Severity.Length == 0;
 }
@@ -34,8 +34,21 @@ public sealed record SwainAuditReport(
 {
     public int    BlockerCount   => Results.Count(r => r.Severity == "BLOCKER");
     public int    ModerateCount  => Results.Count(r => r.Severity == "MODERATE");
+    public int    ErrorCount     => Results.Count(r => r.Severity == "ERROR");
     public int    PassCount      => Results.Count(r => r.IsPass);
-    public double ComplianceRate => TotalBeats == 0 ? 0.0 : (double)PassCount / TotalBeats;
+    /// <summary>Fraction of EVALUATED beats (TotalBeats minus ones that hit an infra/parse
+    /// error) that passed. Excluding errors from the denominator matters: before this fix, a
+    /// total API outage silently classified every beat "Deficient/BLOCKER" (a false content
+    /// verdict), driving this to 0.0 and cratering SII to "the book is 100% structurally
+    /// deficient" when in truth 0% of it was ever actually evaluated.</summary>
+    public double ComplianceRate
+    {
+        get
+        {
+            var evaluated = TotalBeats - ErrorCount;
+            return evaluated <= 0 ? 0.0 : (double)PassCount / evaluated;
+        }
+    }
 }
 
 // ── Service ───────────────────────────────────────────────────────────────────
@@ -209,10 +222,14 @@ public sealed class SwainAuditService(
         // name an entirely different beat than the one actually flagged. Order by chapter first,
         // matching the pattern GripePassService/ComprehensionProbeService/BeatChecklistGateService
         // already use for the same multi-chapter scope.
+        // Unwritten beats (no prose yet) are WIP, not a structural defect — excluded from
+        // classification entirely rather than flagged Deficient (matches the same principle
+        // BookHealthService.BeatCoordinationAsync already applies: "a beat with no prose yet is
+        // unwritten WIP, not a quality finding").
         var chapterOrder = scopeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
         var rows = await db.BeatNodes
             .Include(nb => nb.Beat)
-            .Where(nb => scopeIds.Contains(nb.NodeId) && nb.IsEnabled)
+            .Where(nb => scopeIds.Contains(nb.NodeId) && nb.IsEnabled && nb.Beat!.Text != null && nb.Beat.Text != "")
             .ToListAsync(ct);
         var beats = rows
             .OrderBy(nb => chapterOrder[nb.NodeId]).ThenBy(nb => nb.SortKey)
@@ -237,10 +254,10 @@ public sealed class SwainAuditService(
         int position, Guid beatId, string title, string text, string? classifyModel, CancellationToken ct)
     {
         if (string.IsNullOrWhiteSpace(text))
-            return Fail(beatId, position, title, 0, "goal", "Beat has no prose text.");
+            return EvalError(beatId, position, title, 0, "Beat has no prose text.");
 
         if (string.IsNullOrWhiteSpace(ApiKey))
-            return Fail(beatId, position, title, text.Length, "none", "No claude-api key configured.");
+            return EvalError(beatId, position, title, text.Length, "No claude-api key configured.");
 
         var model = classifyModel ?? ClassifyModel;
         try
@@ -256,7 +273,7 @@ public sealed class SwainAuditService(
         catch (Exception ex)
         {
             log.LogWarning(ex, "Classification error for beat {Position} ({BeatId})", position, beatId);
-            return Fail(beatId, position, title, text.Length, "none", $"Classification error: {ex.Message}");
+            return EvalError(beatId, position, title, text.Length, $"Classification error: {ex.Message}");
         }
     }
 
@@ -264,7 +281,7 @@ public sealed class SwainAuditService(
         Guid beatId, int position, string title, int charCount, string? raw)
     {
         if (string.IsNullOrWhiteSpace(raw))
-            return Fail(beatId, position, title, charCount, "none", "Empty LLM response.");
+            return EvalError(beatId, position, title, charCount, "Empty LLM response.");
 
         var text = raw.Trim();
         if (text.StartsWith("```"))
@@ -277,7 +294,7 @@ public sealed class SwainAuditService(
         var open  = text.IndexOf('{');
         var close = text.LastIndexOf('}');
         if (open < 0 || close <= open)
-            return Fail(beatId, position, title, charCount, "none",
+            return EvalError(beatId, position, title, charCount,
                 $"No JSON in response: {text[..Math.Min(80, text.Length)]}");
         try
         {
@@ -305,10 +322,16 @@ public sealed class SwainAuditService(
         }
         catch (JsonException ex)
         {
-            return Fail(beatId, position, title, charCount, "none", $"JSON parse error: {ex.Message}");
+            return EvalError(beatId, position, title, charCount, $"JSON parse error: {ex.Message}");
         }
     }
 
-    private static SwainBeatResult Fail(Guid id, int pos, string title, int chars, string missing, string note) =>
-        new(id, pos, title, chars, SwainClass.Deficient, missing, note, "BLOCKER");
+    /// <summary>An evaluation that could not be completed (no API key, LLM exception, empty/
+    /// unparseable response) — deliberately NOT SwainClass.Deficient/"BLOCKER". Before this fix,
+    /// every one of these paths returned a fabricated "Deficient" content verdict, so a total API
+    /// outage classified 100% of a book's beats as structurally deficient instead of reporting
+    /// "0% of this book was actually evaluated" — a live, real instance of this session's most
+    /// repeated bug class (a service silently converting "I could not check" into a false verdict).</summary>
+    private static SwainBeatResult EvalError(Guid id, int pos, string title, int chars, string note) =>
+        new(id, pos, title, chars, SwainClass.Error, "none", note, "ERROR");
 }
