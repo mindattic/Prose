@@ -88,6 +88,7 @@ public static class ExamineEmotionCli
                     name            = d.Name,
                     score           = d.Score,
                     is_blocking     = d.IsBlocking,
+                    is_error        = d.IsError,
                     strongest       = d.StrongestEvidence,
                     weakest         = d.WeakestEvidence,
                     weakest_beat    = d.WeakestBeatNumber,
@@ -112,7 +113,7 @@ public static class ExamineEmotionCli
                 }),
             }, new JsonSerializerOptions { WriteIndented = true }));
 
-            return result.BlockingCount > 0 ? 2 : result.Dimensions.Any(d => d.Score <= 1) ? 1 : 0;
+            return result.Dimensions.Any(d => d.IsError) ? 2 : result.BlockingCount > 0 ? 2 : result.Dimensions.Any(d => d.Score <= 1) ? 1 : 0;
         }
 
         // Human-readable output
@@ -122,8 +123,17 @@ public static class ExamineEmotionCli
         Console.WriteLine($"  Blocking: {result.BlockingCount}");
         Console.WriteLine();
 
-        // Blocking first
-        var blocking = result.Dimensions.Where(d => d.IsBlocking && d.Score <= 1).ToList();
+        var errored = result.Dimensions.Where(d => d.IsError).ToList();
+        if (errored.Count > 0)
+        {
+            Console.WriteLine("COULD NOT EVALUATE (LLM errors — re-run before trusting this examination):");
+            foreach (var d in errored)
+                Console.WriteLine($"  ❓ {d.Name}");
+            Console.WriteLine();
+        }
+
+        // Blocking first (errored dimensions are never blocking — they were never scored)
+        var blocking = result.Dimensions.Where(d => d.IsBlocking && !d.IsError && d.Score <= 1).ToList();
         if (blocking.Count > 0)
         {
             Console.WriteLine("BLOCKING DIMENSIONS (resolve before marking publish-ready):");
@@ -137,9 +147,9 @@ public static class ExamineEmotionCli
             }
         }
 
-        // Non-blocking sorted by score
+        // Non-blocking sorted by score (excluding errored — shown separately above)
         Console.WriteLine("DIMENSIONS:");
-        foreach (var d in result.Dimensions.OrderBy(d => d.Score))
+        foreach (var d in result.Dimensions.Where(d => !d.IsError).OrderBy(d => d.Score))
         {
             var icon = d.Score >= 3 ? "✅" : d.Score == 2 ? "△" : "✗";
             Console.WriteLine($"  {icon} {d.Name,-28} {d.Score}/4  {d.CraftLaw}");
@@ -174,7 +184,7 @@ public static class ExamineEmotionCli
         Console.WriteLine();
         Console.WriteLine($"RECOMMENDATION: {result.Recommendation}");
 
-        return result.BlockingCount > 0 ? 2 : result.Dimensions.Any(d => d.Score <= 1) ? 1 : 0;
+        return result.Dimensions.Any(d => d.IsError) ? 2 : result.BlockingCount > 0 ? 2 : result.Dimensions.Any(d => !d.IsError && d.Score <= 1) ? 1 : 0;
     }
 
     private static string Truncate(string s, int max) =>

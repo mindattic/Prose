@@ -50,7 +50,8 @@ public record DimensionResult(
     int? WeakestBeatNumber,
     string Fix,
     string CraftLaw,
-    bool IsBlocking);
+    bool IsBlocking,
+    bool IsError = false);
 
 public record BeatEmotionalScore(int BeatNumber, int Depth, string? Note);
 
@@ -198,31 +199,48 @@ public class EmotionalDepthService
         if (effort is "standard" or "deep" && beatNumbers.Count > 0)
             beatCurve = await RunBeatCurveAsync(truncated, beatNumbers, ct);
 
-        // Score = mean(dim/4)*100
-        var depthScore = dimensions.Count > 0
-            ? dimensions.Average(d => d.Score / 4.0) * 100.0
-            : 0.0;
+        var (depthScore, blockingCount, erroredCount) = AggregateDimensions(dimensions);
+        var scored = dimensions.Where(d => !d.IsError).ToList();
 
-        int blockingCount = dimensions.Count(d => d.IsBlocking && d.Score <= 1);
+        // The "[incomplete]" rollup is node-scoped like every other EMOTIONAL-DEPTH finding, so
+        // it needs its own narrow, unconditional clear — otherwise a stale "N dimensions could
+        // not be evaluated" finding survives forever once the API recovers and a run succeeds.
+        findings.DeleteBySummaryPrefix($"node:{slug}", "EMOTIONAL-DEPTH [incomplete]");
 
-        // Full re-examination is authoritative for this node: purge every prior
-        // EMOTIONAL-DEPTH finding before re-filing current blockers — a dimension that's
-        // since improved above the blocking floor would otherwise keep its stale finding
-        // open forever (Upsert only dedupes an exact summary match).
-        findings.DeleteBySummaryPrefix($"node:{slug}", "EMOTIONAL-DEPTH ");
-
-        // File blocking findings
-        foreach (var dim in dimensions.Where(d => d.IsBlocking && d.Score <= 1))
+        if (erroredCount == 0)
         {
-            var sev = dim.Score == 0 ? FindingSeverity.High : FindingSeverity.Medium;
+            // Full re-examination is authoritative for this node: purge every prior
+            // EMOTIONAL-DEPTH finding before re-filing current blockers — a dimension that's
+            // since improved above the blocking floor would otherwise keep its stale finding
+            // open forever (Upsert only dedupes an exact summary match). Only safe to do when
+            // every dimension actually evaluated this run — a partial failure must NOT purge-
+            // then-refile from an incomplete picture (same principle as every other fail-open
+            // fix this session: never destroy real prior findings with nothing to replace them).
+            findings.DeleteBySummaryPrefix($"node:{slug}", "EMOTIONAL-DEPTH ");
+
+            foreach (var dim in scored.Where(d => d.IsBlocking && d.Score <= 1))
+            {
+                var sev = dim.Score == 0 ? FindingSeverity.High : FindingSeverity.Medium;
+                findings.Upsert(
+                    filePath: $"node:{slug}",
+                    chapterId: null,
+                    category: FindingCategory.Other,
+                    severity: sev,
+                    summary: $"EMOTIONAL-DEPTH [{dim.Name}]{(dim.WeakestBeatNumber.HasValue ? $" beat {dim.WeakestBeatNumber}" : "")}: {dim.Fix}",
+                    snippet: dim.WeakestEvidence,
+                    suggestedFix: dim.Fix);
+            }
+        }
+        else
+        {
             findings.Upsert(
                 filePath: $"node:{slug}",
                 chapterId: null,
                 category: FindingCategory.Other,
-                severity: sev,
-                summary: $"EMOTIONAL-DEPTH [{dim.Name}]{(dim.WeakestBeatNumber.HasValue ? $" beat {dim.WeakestBeatNumber}" : "")}: {dim.Fix}",
-                snippet: dim.WeakestEvidence,
-                suggestedFix: dim.Fix);
+                severity: FindingSeverity.Low,
+                summary: $"EMOTIONAL-DEPTH [incomplete]: {erroredCount}/{dimensions.Count} dimensions could not be evaluated (LLM errors) — re-run once resolved.",
+                snippet: null,
+                suggestedFix: null);
         }
 
         // Persist examination + children
@@ -234,13 +252,15 @@ public class EmotionalDepthService
         if (beatCurve.Count > 0)
             await UpdateBeatEmotionalScoresAsync(nodeId, beatCurve, ct);
 
-        var recommendation = blockingCount > 0
-            ? $"⛔ {blockingCount} blocking dimension(s) open — resolve WantNeedDivergence / CostFeltNotAsserted before marking export-ready."
-            : depthScore < 50
-                ? "Multiple dimensions scoring ≤ 2 — prioritise the weakest-beat fixes before the next revision pass."
-                : depthScore >= 75
-                    ? "Strong emotional architecture — targeted spot fixes at weakest beats will lift to Instrument grade."
-                    : "Solid foundation — address the weakest dimensions' beat-scoped fixes to push toward Embodied/Instrument.";
+        var recommendation = erroredCount > 0
+            ? $"❓ {erroredCount}/{dimensions.Count} dimension(s) could not be evaluated (LLM errors) — this examination is INCOMPLETE, not clean. Re-run once resolved before trusting it."
+            : blockingCount > 0
+                ? $"⛔ {blockingCount} blocking dimension(s) open — resolve WantNeedDivergence / CostFeltNotAsserted before marking export-ready."
+                : depthScore < 50
+                    ? "Multiple dimensions scoring ≤ 2 — prioritise the weakest-beat fixes before the next revision pass."
+                    : depthScore >= 75
+                        ? "Strong emotional architecture — targeted spot fixes at weakest beats will lift to Instrument grade."
+                        : "Solid foundation — address the weakest dimensions' beat-scoped fixes to push toward Embodied/Instrument.";
 
         return new EmotionalExaminationResult(
             nodeId, slug, title,
@@ -309,10 +329,33 @@ PROSE:
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "Dimension {Name} failed; defaulting to Mixed (2)", name);
-            return new DimensionResult(dimension, name, desc, 2, "", "", null,
-                "Re-run the examination to get a valid fix.", craftLaw, isBlocking);
+            // 2026-08-09 fix: this used to default to Score=2 ("Mixed") — a real, LLM-producible
+            // value on the 0-4 scale. Blocking only trips on `IsBlocking && Score <= 1`, so a
+            // failed evaluation of a BLOCKING dimension (WantNeedDivergence, CostFeltNotAsserted)
+            // silently read as "checked, mixed, not blocking" — indistinguishable from a genuine
+            // pass. Same fail-open bug class as StructuralDiagnosticService/SwainAuditService
+            // this session. IsError=true lets ExamineNodeAsync exclude this dimension from the
+            // depth-score average and the blocking count, and skip purging prior real findings.
+            log.LogWarning(ex, "Dimension {Name} failed", name);
+            return new DimensionResult(dimension, name, desc, 2, "", "",
+                null, "Re-run the examination — this dimension could not be evaluated.", craftLaw, isBlocking, IsError: true);
         }
+    }
+
+    /// <summary>Pure aggregation over a completed dimension pass — extracted so the actual fix
+    /// (errored dimensions excluded from both the score average and the blocking count) is
+    /// directly unit-testable without EmotionalDepthService's full DB/ledger/LLM dependency
+    /// chain. DepthScore is 0.0 (not a divide-by-zero) when every dimension errored.</summary>
+    internal static (double DepthScore, int BlockingCount, int ErroredCount) AggregateDimensions(
+        IReadOnlyList<DimensionResult> dimensions)
+    {
+        var scored = dimensions.Where(d => !d.IsError).ToList();
+        var erroredCount = dimensions.Count - scored.Count;
+        var depthScore = scored.Count > 0
+            ? scored.Average(d => d.Score / 4.0) * 100.0
+            : 0.0;
+        var blockingCount = scored.Count(d => d.IsBlocking && d.Score <= 1);
+        return (depthScore, blockingCount, erroredCount);
     }
 
     // ── Per-beat curve (Pass 2) ───────────────────────────────────────────────

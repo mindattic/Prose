@@ -119,4 +119,78 @@ public class EmotionalDepthServiceTests
         var results = EmotionalDepthService.ParseBeatCurve("[]", BeatNumbers);
         Assert.That(results, Is.Empty);
     }
+
+    // ── AggregateDimensions — regression cover for the 2026-08-09 fix. RunDimensionAsync's
+    // catch used to default a failed dimension to Score=2 ("Mixed"), a real, LLM-producible
+    // value — so a failed BLOCKING dimension (WantNeedDivergence, CostFeltNotAsserted) silently
+    // read as "checked, mixed, not blocking" (only Score<=1 ever trips blocking). Same fail-open
+    // bug class as StructuralDiagnosticService/SwainAuditService this session. Fixed via a
+    // distinct IsError flag that this aggregation now excludes from both the score average and
+    // the blocking count.
+
+    private static DimensionResult Dim(int score, bool isBlocking, bool isError = false) =>
+        new(EmotionalDimension.WantNeedDivergence, "Test", "desc", score, "", "", null, "fix", "law", isBlocking, isError);
+
+    [Test]
+    public void AggregateDimensions_AllScored_ComputesMeanAndBlockingNormally()
+    {
+        var dims = new[]
+        {
+            Dim(4, isBlocking: true),
+            Dim(0, isBlocking: true),  // blocks
+            Dim(2, isBlocking: false),
+            Dim(4, isBlocking: false),
+        };
+
+        var (score, blocking, errored) = EmotionalDepthService.AggregateDimensions(dims);
+
+        Assert.That(errored, Is.EqualTo(0));
+        Assert.That(blocking, Is.EqualTo(1));
+        Assert.That(score, Is.EqualTo(dims.Average(d => d.Score / 4.0) * 100.0).Within(0.001));
+    }
+
+    [Test]
+    public void AggregateDimensions_ErroredBlockingDimension_ExcludedFromBlockingCount()
+    {
+        // The exact bug: a blocking dimension that failed to evaluate must NOT count as blocking
+        // just because its fallback Score (2) happens to sit above the <=1 threshold, and must
+        // ALSO not silently read as a genuine non-blocking pass.
+        var dims = new[]
+        {
+            Dim(2, isBlocking: true, isError: true), // errored — must not count as blocking
+            Dim(3, isBlocking: false),
+        };
+
+        var (_, blocking, errored) = EmotionalDepthService.AggregateDimensions(dims);
+
+        Assert.That(errored, Is.EqualTo(1));
+        Assert.That(blocking, Is.EqualTo(0));
+    }
+
+    [Test]
+    public void AggregateDimensions_ErroredDimensions_ExcludedFromScoreAverage()
+    {
+        var dims = new[]
+        {
+            Dim(4, isBlocking: false),
+            Dim(2, isBlocking: false, isError: true), // must not drag the average toward "Mixed"
+        };
+
+        var (score, _, errored) = EmotionalDepthService.AggregateDimensions(dims);
+
+        Assert.That(errored, Is.EqualTo(1));
+        Assert.That(score, Is.EqualTo(100.0).Within(0.001), "only the one genuinely-scored dimension (4/4) should count");
+    }
+
+    [Test]
+    public void AggregateDimensions_EveryDimensionErrored_ScoreIsZeroNotDivideByZero()
+    {
+        var dims = new[] { Dim(2, isBlocking: true, isError: true), Dim(2, isBlocking: false, isError: true) };
+
+        var (score, blocking, errored) = EmotionalDepthService.AggregateDimensions(dims);
+
+        Assert.That(errored, Is.EqualTo(2));
+        Assert.That(blocking, Is.EqualTo(0));
+        Assert.That(score, Is.EqualTo(0.0));
+    }
 }

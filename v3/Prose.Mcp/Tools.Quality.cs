@@ -325,6 +325,7 @@ public class QualityTools
                 name            = d.Name,
                 score           = d.Score,
                 is_blocking     = d.IsBlocking,
+                is_error        = d.IsError,
                 strongest       = d.StrongestEvidence,
                 weakest         = d.WeakestEvidence,
                 weakest_beat    = d.WeakestBeatNumber,
