@@ -68,6 +68,16 @@ public class RealDataTests
     [Test]
     public void AllJsonFiles_AreReadOnlyDuringTest()
     {
+        // engine/data/*.json is empty post-migration (SS-A45; canon is the SQL DB) in a genuinely
+        // fresh checkout — this test (unlike every other test in this fixture) was never updated
+        // for that retirement, so it only "passed" locally because of leftover legacy JSON files
+        // that shouldn't be there. Confirmed 2026-08-09 via a fresh-clone test run: this failed
+        // ("Guard should have protected at least some files", 0 found) in a clone with no such
+        // leftover cruft — exactly the corpus-empty state this project's own migration intends,
+        // and exactly what a genuine CI checkout will always look like.
+        if (guard.ProtectedCount == 0)
+            Assert.Ignore(RetiredCorpus);
+
         var writable = Directory.GetFiles(EngineDataDir, "*.json", SearchOption.AllDirectories)
             .Where(f => !new FileInfo(f).IsReadOnly)
             .Select(f => Path.GetRelativePath(EngineDataDir, f))
@@ -81,8 +91,15 @@ public class RealDataTests
     [Test]
     public void WritingToProtectedFile_Throws()
     {
-        var anyJson = Directory.GetFiles(EngineDataDir, "*.json", SearchOption.AllDirectories).First();
-        Assert.Throws<UnauthorizedAccessException>(() => File.WriteAllText(anyJson, "tampered"));
+        // Same retirement guard as AllJsonFiles_AreReadOnlyDuringTest above — with zero JSON
+        // files in a fresh checkout, .First() on an empty sequence threw InvalidOperationException
+        // instead of the intended UnauthorizedAccessException, a second real test bug from the
+        // same missed migration update.
+        var allJson = Directory.GetFiles(EngineDataDir, "*.json", SearchOption.AllDirectories);
+        if (allJson.Length == 0)
+            Assert.Ignore(RetiredCorpus);
+
+        Assert.Throws<UnauthorizedAccessException>(() => File.WriteAllText(allJson[0], "tampered"));
     }
 
     // ── REPOSITORY LOADING ───────────────────────────────────
