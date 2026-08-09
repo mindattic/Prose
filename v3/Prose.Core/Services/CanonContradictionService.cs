@@ -69,6 +69,7 @@ public class CanonContradictionService
 
         var all = new List<Contradiction>();
         int chunks = 0;
+        int failedChunks = 0;
         foreach (var chunk in Chunk(prose, ChunkChars))
         {
             ct.ThrowIfCancellationRequested();
@@ -76,7 +77,25 @@ public class CanonContradictionService
             // Canon relevant to THIS chunk, across every type.
             var canon = await retrieval.RetrieveContextBlockAsync(chunk, k: 24, charBudget: 3000, ct: ct);
             if (canon.Length == 0) continue;
-            var found = await DetectAsync(canon, chunk, ct);
+
+            List<Contradiction> found;
+            try
+            {
+                found = await DetectAsync(canon, chunk, ct);
+            }
+            catch (Exception ex)
+            {
+                // 2026-08-09: DetectAsync used to swallow this same exception into an empty list
+                // — indistinguishable from "checked this chunk, found nothing." A whole-node
+                // purge-then-refile below would have silently deleted every prior real
+                // CANON-CONTRADICTION finding whenever any one chunk hit an LLM hiccup, same
+                // fail-open bug class already fixed for SwainAuditService/BehavioralInvariantEnforcer/
+                // NarrativeScienceService this session. Track it and skip the whole node's
+                // purge-then-refile below instead of losing this chunk's coverage silently.
+                failedChunks++;
+                log.LogWarning(ex, "Contradiction detection failed for a chunk of {Slug}", node.Slug);
+                continue;
+            }
 
             // Bounded self-correction: for high-severity hits with a located
             // snippet, generate a canon-honoring rewrite of just that span and
@@ -102,10 +121,36 @@ public class CanonContradictionService
             all.AddRange(found);
         }
 
-        // Full re-check is authoritative for this node: purge every prior CANON-CONTRADICTION
-        // finding before re-filing the current set below — otherwise a since-fixed
-        // contradiction (whose Entity/Issue text no longer matches any surviving Upsert
-        // dedup key) stays open forever.
+        // The "[incomplete]" rollup is node-scoped like every other CANON-CONTRADICTION finding,
+        // so it needs its own narrow, unconditional clear — otherwise a stale "N chunks could not
+        // be evaluated" finding survives forever once the API recovers and a run fully succeeds.
+        findings.DeleteBySummaryPrefix($"node:{node.Slug}", "CANON-CONTRADICTION [incomplete]");
+
+        if (failedChunks > 0)
+        {
+            // Do NOT purge-then-refile across a partial failure: this run's `all` only reflects
+            // the chunks that succeeded, so treating it as authoritative would silently erase
+            // real contradictions from the failed chunks' prose with nothing to replace them.
+            // Leave every prior CANON-CONTRADICTION finding untouched; report the incompleteness
+            // instead, and let the caller still see whatever WAS found this run (not persisted
+            // as the authoritative set, just returned for immediate visibility).
+            findings.Upsert(
+                filePath:     $"node:{node.Slug}",
+                chapterId:    null,
+                category:     FindingCategory.Other,
+                severity:     FindingSeverity.Low,
+                summary:      $"CANON-CONTRADICTION [incomplete]: {failedChunks}/{chunks} chunks could not be evaluated (LLM errors) — re-run once resolved.",
+                snippet:      null,
+                suggestedFix: null);
+            log.LogInformation("Canon check {Slug}: {Chunks} chunks, {Failed} failed — Findings left untouched, not authoritative this run.",
+                node.Slug, chunks, failedChunks);
+            return new CheckResult(node.Slug, chunks, all);
+        }
+
+        // Every chunk evaluated successfully — this run IS authoritative: purge every prior
+        // CANON-CONTRADICTION finding before re-filing the current set below, otherwise a
+        // since-fixed contradiction (whose Entity/Issue text no longer matches any surviving
+        // Upsert dedup key) stays open forever.
         findings.DeleteBySummaryPrefix($"node:{node.Slug}", "CANON-CONTRADICTION ");
 
         // Queue each as an approval-gated finding.
@@ -144,10 +189,10 @@ public class CanonContradictionService
             .AppendLine(canon).AppendLine()
             .AppendLine("PROSE:").AppendLine(prose).ToString();
 
-        string raw;
-        try { raw = await llm.GenerateAsync(system, user, temperature: 0.1, maxTokens: 1500, ct: ct); }
-        catch (Exception ex) { log.LogWarning(ex, "Contradiction LLM call failed"); return []; }
-
+        // Let LLM exceptions propagate — CheckNodeAsync's caller-level catch (2026-08-09) is what
+        // decides how to handle a failed chunk; this method swallowing it here would make that
+        // fix unreachable dead code.
+        var raw = await llm.GenerateAsync(system, user, temperature: 0.1, maxTokens: 1500, ct: ct);
         return Parse(raw);
     }
 
@@ -173,29 +218,33 @@ public class CanonContradictionService
         catch (Exception ex) { log.LogWarning(ex, "Span rewrite failed"); return null; }
     }
 
+    /// <summary>Throws (InvalidOperationException / JsonException) when no JSON array can be
+    /// found or parsed at all — an evaluation failure, not "zero contradictions." A genuinely
+    /// valid, well-formed "[]" (the model correctly reporting no contradictions) still returns
+    /// an empty list without throwing; that is real signal, not a parse failure. 2026-08-09:
+    /// previously conflated both cases into a silent empty list, one layer below DetectAsync's
+    /// own now-fixed exception-catching — same fail-open bug, one level deeper.</summary>
     internal static List<Contradiction> Parse(string raw)
     {
-        var json = ExtractJsonArray(raw);
-        if (json == null) return [];
-        try
+        var json = ExtractJsonArray(raw)
+            ?? throw new InvalidOperationException($"No JSON array in response: {raw[..Math.Min(80, raw.Length)]}");
+        using var doc = JsonDocument.Parse(json); // throws JsonException on malformed input — let it propagate
+        if (doc.RootElement.ValueKind != JsonValueKind.Array)
+            throw new InvalidOperationException("Response JSON is not an array.");
+
+        var list = new List<Contradiction>();
+        foreach (var el in doc.RootElement.EnumerateArray())
         {
-            using var doc = JsonDocument.Parse(json);
-            if (doc.RootElement.ValueKind != JsonValueKind.Array) return [];
-            var list = new List<Contradiction>();
-            foreach (var el in doc.RootElement.EnumerateArray())
-            {
-                string S(string n) => el.TryGetProperty(n, out var p) && p.ValueKind == JsonValueKind.String ? p.GetString() ?? "" : "";
-                string? SN(string n) => el.TryGetProperty(n, out var p) && p.ValueKind == JsonValueKind.String ? p.GetString() : null;
-                var issue = S("issue");
-                if (string.IsNullOrWhiteSpace(issue)) continue;
-                list.Add(new Contradiction(
-                    string.IsNullOrWhiteSpace(S("entity")) ? "(unnamed)" : S("entity"),
-                    issue, SN("snippet"), SN("suggested_fix"),
-                    string.IsNullOrWhiteSpace(S("severity")) ? "medium" : S("severity")));
-            }
-            return list;
+            string S(string n) => el.TryGetProperty(n, out var p) && p.ValueKind == JsonValueKind.String ? p.GetString() ?? "" : "";
+            string? SN(string n) => el.TryGetProperty(n, out var p) && p.ValueKind == JsonValueKind.String ? p.GetString() : null;
+            var issue = S("issue");
+            if (string.IsNullOrWhiteSpace(issue)) continue;
+            list.Add(new Contradiction(
+                string.IsNullOrWhiteSpace(S("entity")) ? "(unnamed)" : S("entity"),
+                issue, SN("snippet"), SN("suggested_fix"),
+                string.IsNullOrWhiteSpace(S("severity")) ? "medium" : S("severity")));
         }
-        catch { return []; }
+        return list;
     }
 
     private static string? ExtractJsonArray(string raw)

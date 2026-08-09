@@ -112,8 +112,29 @@ public class CanonEngineTests
     [Test]
     public void Parse_EmptyArray_ReturnsEmpty()
     {
+        // A genuinely well-formed "[]" (the model correctly reporting no contradictions) is real
+        // signal, not a parse failure — must NOT throw.
         Assert.That(CanonContradictionService.Parse("[]"), Is.Empty);
-        Assert.That(CanonContradictionService.Parse("garbage"), Is.Empty);
+    }
+
+    // 2026-08-09: "garbage" used to also return Empty here, conflating "the model found nothing"
+    // with "the model's response couldn't be parsed at all" — the same fail-open bug already
+    // fixed for SwainAuditService/BehavioralInvariantEnforcer this session, one layer deeper
+    // (DetectAsync's own exception-catching around the LLM call was the first layer). Both must
+    // now throw so CheckNodeAsync's per-chunk catch can tell a real empty result from a failure.
+
+    [Test]
+    public void Parse_NoJsonArrayAtAll_ThrowsRatherThanReturningEmpty()
+    {
+        Assert.That(() => CanonContradictionService.Parse("garbage"),
+            Throws.InvalidOperationException);
+    }
+
+    [Test]
+    public void Parse_MalformedJson_ThrowsRatherThanReturningEmpty()
+    {
+        Assert.That(() => CanonContradictionService.Parse("[{\"entity\": oops}]"),
+            Throws.Exception);
     }
 
     [Test]
