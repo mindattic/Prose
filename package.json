@@ -11,7 +11,7 @@
     "e2e:strand": "cypress run --spec cypress/e2e/strand-smoke.cy.js"
   },
   "devDependencies": {
-    "cypress": "^13.13.0",
+    "cypress": "^15.20.0",
     "marked": "^14.0.0"
   }
 }
