@@ -13,6 +13,30 @@ public static class NullLoggers
 }
 
 /// <summary>
+/// Shared classifier for "this exception is just a real SQL Server / LocalDB connection being
+/// unavailable in this environment" — extracted 2026-08-09 after CI (which never ran any test at
+/// all before this session) surfaced that this exact check was needed in more than one test
+/// class. Any DI-resolution test that transitively touches a service which connects to the DB at
+/// construction time (WorldGraphService, StoryDirectorService, ...) needs this guard, or it's
+/// only really testing "is LocalDB installed on the machine running this," not the DI wiring
+/// itself — true on a dev box with LocalDB, false on a bare CI runner with no SQL Server at all.
+/// </summary>
+public static class SqlAvailability
+{
+    public static bool IsUnavailable(Exception ex)
+    {
+        for (var e = ex; e != null; e = e.InnerException!)
+        {
+            if (e is Microsoft.Data.SqlClient.SqlException) return true;
+            if (e.Message.Contains("Cannot open database", StringComparison.OrdinalIgnoreCase)) return true;
+            if (e.Message.Contains("Login failed", StringComparison.OrdinalIgnoreCase)) return true;
+            if (e.Message.Contains("network-related", StringComparison.OrdinalIgnoreCase)) return true;
+        }
+        return false;
+    }
+}
+
+/// <summary>
 /// Fake LLM service for unit tests. Returns empty strings — never calls an API.
 /// Tests that need LLM responses should mock specific return values.
 /// </summary>

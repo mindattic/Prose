@@ -30,10 +30,23 @@ public class InterfaceRegistrationTests
         services.AddLogging();
         using var sp = services.BuildServiceProvider();
 
-        var iface = sp.GetService<IWorldGraphService>();
-        var concrete = sp.GetService<WorldGraphService>();
-        Assert.That(iface, Is.Not.Null);
-        Assert.That(iface, Is.SameAs(concrete));
+        try
+        {
+            var iface = sp.GetService<IWorldGraphService>();
+            var concrete = sp.GetService<WorldGraphService>();
+            Assert.That(iface, Is.Not.Null);
+            Assert.That(iface, Is.SameAs(concrete));
+        }
+        catch (Exception ex) when (SqlAvailability.IsUnavailable(ex))
+        {
+            // WorldGraphService's DI factory eagerly calls EnsureLoaded()/Rebuild() at
+            // construction time — merely resolving it (not calling any of its methods) touches
+            // the SQL Server DB immediately. Confirmed live 2026-08-09: this test passed on every
+            // dev machine (LocalDB installed) but failed the first time it ever ran on a genuine
+            // CI runner with no SQL Server at all — the same missing guard DI_RegistersIStoryDirectorService
+            // already has, just never caught here because nothing ran tests in CI until this session.
+            Assert.Inconclusive("SQL Server / LocalDB is not available in this environment.");
+        }
     }
 
     [Test]
@@ -51,7 +64,7 @@ public class InterfaceRegistrationTests
             Assert.That(iface, Is.Not.Null);
             Assert.That(iface, Is.SameAs(concrete));
         }
-        catch (Exception ex) when (IsSqlUnavailable(ex))
+        catch (Exception ex) when (SqlAvailability.IsUnavailable(ex))
         {
             // The director service touches the SQL Server DB during construction.
             // Test environments without LocalDB skip cleanly — the registration
@@ -59,17 +72,5 @@ public class InterfaceRegistrationTests
             // the DB call at all.
             Assert.Inconclusive("SQL Server / LocalDB is not available in this environment.");
         }
-    }
-
-    private static bool IsSqlUnavailable(Exception ex)
-    {
-        for (var e = ex; e != null; e = e.InnerException!)
-        {
-            if (e is Microsoft.Data.SqlClient.SqlException) return true;
-            if (e.Message.Contains("Cannot open database", StringComparison.OrdinalIgnoreCase)) return true;
-            if (e.Message.Contains("Login failed", StringComparison.OrdinalIgnoreCase)) return true;
-            if (e.Message.Contains("network-related", StringComparison.OrdinalIgnoreCase)) return true;
-        }
-        return false;
     }
 }
