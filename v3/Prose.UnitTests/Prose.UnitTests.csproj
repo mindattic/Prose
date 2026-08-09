@@ -12,7 +12,7 @@
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="coverlet.collector" Version="6.0.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.9" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.10" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.0" />
     <PackageReference Include="NUnit" Version="4.3.2" />
     <PackageReference Include="NUnit.Analyzers" Version="4.7.0" />
@@ -28,6 +28,10 @@
     <!-- Cli is referenced so argv-dispatch rules can be unit-tested (see UniverseCliDispatchTests).
          Referencing an Exe is fine here: its entry point is ignored, the test host supplies its own. -->
     <ProjectReference Include="..\Prose.Cli\Prose.Cli.csproj" />
+    <!-- Mcp is referenced so its [McpServerToolType] tool classes' constructor DI wiring can be
+         verified (see DataIntegrityToolsRegistrationTests) — same "Exe reference is fine, entry
+         point ignored" rationale as Cli above. -->
+    <ProjectReference Include="..\Prose.Mcp\Prose.Mcp.csproj" />
   </ItemGroup>
 
 </Project>
