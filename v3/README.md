@@ -9,25 +9,28 @@ v3/
 ├── Prose.slnx
 ├── Prose.Shared/        POCOs, enums, DTOs shared by all projects
 ├── Prose.Core/          Canon services, generation pipeline, embeddings, review, continuity
-├── Prose.Blazor/        Blazor Server host — the live site
+│   ├── Migrations/      EF Core migrations (schema)
+│   └── Data/Sql/        Raw T-SQL — mostly historical, pre-EF-migration deltas; see root README
+├── Prose.Cli/           Standalone CLI — includes --migrate-sql (schema bootstrap) and --seed
+├── Prose.Writer/        Blazor Server host — writing/recording UI (the live site)
+├── Prose.Codex/         Blazor Server host — canon/world-health/reports UI
 ├── Prose.Mcp/           Model Context Protocol server
-├── Prose.UnitTests/     NUnit + bUnit (840+ tests)
-├── ApplyMigrations/             Applies raw T-SQL migration files from Core/Data/Sql/
-├── FixSableContinuity/          One-off continuity repair (migration record)
-├── MaterializeChapters/         One-off canon backfill (migration record)
-├── PromoteAndDehyphenate/       One-off data normalization (migration record)
-└── ...                          Other Apply* / Promote* / Sync* / Write* consoles
+└── Prose.UnitTests/     NUnit + bUnit
 ```
 
-Each `Apply*` / `Promote*` console is a single-purpose migration — built once, run once, left in place as a record.
+> The one-off `Apply*`/`Promote*`/`FixSableContinuity`/`MaterializeChapters` migration-record
+> console apps once listed here (built once, run once, left as a historical record) have all
+> been deleted — their work is done and doesn't need re-running. If you see empty directories
+> with these names on an existing local checkout, they're untracked leftovers safe to remove;
+> a fresh clone never has them.
 
 ## Running locally
 
 ```powershell
 cd v3
 dotnet restore
-dotnet run --project ApplyMigrations        # apply schema migrations
-dotnet run --project Prose.Blazor   # -> https://localhost:7103/
+dotnet run --project Prose.Cli -- --migrate-sql --schema   # apply schema (idempotent)
+dotnet run --project Prose.Writer   # -> https://localhost:7200/
 ```
 
 ## Tests

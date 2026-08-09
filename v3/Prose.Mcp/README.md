@@ -29,7 +29,7 @@ The Quorum-based generation pipeline is excellent for *review* — multiple vote
 ### Claude Code
 
 ```bash
-claude mcp add prose dotnet run --project D:/Projects/MindAttic/Prose/v3/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
+claude mcp add prose dotnet run --project <path-to-your-clone>/v3/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
 ```
 
 Writes to `~/.claude.json` and persists across sessions. Tools appear as `mcp__prose__*`.

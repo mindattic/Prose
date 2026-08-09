@@ -17,8 +17,9 @@ name: Build and deploy Prose to Azure App Service
 #             is named 'mindattic-prose' instead; only the hostname differs,
 #             everything else keeps the 'prose' naming.)
 #
-# The migrate job runs `v3/ApplyMigrations`: the idempotent Data/Sql/*.sql
-# column migrations, the nested-strand fold, then EnableSystemVersioningAsync()
+# The migrate job runs `Prose.Cli --migrate-sql --schema` (the original standalone
+# v3/ApplyMigrations console app was deleted — see the step below for the
+# replacement): applies all EF Core migrations, then EnableSystemVersioningAsync()
 # — which turns on system versioning for Beats / Strands / StrandBeats and the
 # rest of the canon temporal set. It authenticates with azure/login@v2 (OIDC)
 # and connects with Authentication=Active Directory Default. The App Service

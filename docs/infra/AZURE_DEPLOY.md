@@ -41,7 +41,7 @@ Deploying Prose (a .NET 10 Blazor Server app) to Azure App Service against an Az
 | **GitHub CLI** (`gh`) | Trigger + watch deploys | `winget install --id GitHub.cli -e` |
 | **SqlPackage** | Export LocalDB → bacpac, import → Azure SQL | `dotnet tool install -g Microsoft.SqlPackage` |
 | **PowerShell 7+** | Multi-line scripts behave better than Windows PowerShell 5.1 | Built-in on Win 11, or `winget install Microsoft.PowerShell` |
-| **.NET 10 SDK** | Build the app + publish ApplyMigrations | Usually present if you're developing Prose |
+| **.NET 10 SDK** | Build the app + run schema migrations | Usually present if you're developing Prose |
 
 Azure resources you should already have:
 
@@ -270,10 +270,12 @@ If you don't need to copy local data — just run the schema migrations against 
 
 ```powershell
 $env:ConnectionStrings__Prose = "Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
-dotnet run --project v3/ApplyMigrations
+dotnet run --project v3/Prose.Cli -- --migrate-sql --schema
 ```
 
-ApplyMigrations applies every `*.sql` file under `v3/Prose.Core/Data/Sql/` in order. Idempotent — re-runs are safe.
+`--migrate-sql --schema` applies every EF Core migration under `v3/Prose.Core/Migrations/` and
+enables temporal `SYSTEM_VERSIONING`. Idempotent — re-runs are safe. (The standalone
+`ApplyMigrations` console app this used to be has been deleted; this is its replacement.)
 
 ---
 
@@ -458,14 +460,15 @@ Stay on F1 and accept the rough edges:
 
 ### Schema changes
 
-Add a new `.sql` file to `v3/Prose.Core/Data/Sql/`, append the filename to the `migrations` array in `v3/ApplyMigrations/Program.cs`, then:
+Add a new EF Core migration under `v3/Prose.Core/Migrations/` (`dotnet ef migrations add <Name>`
+from `v3/Prose.Core`), then:
 
 ```powershell
 $env:ConnectionStrings__Prose = "Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
-dotnet run --project v3/ApplyMigrations
+dotnet run --project v3/Prose.Cli -- --migrate-sql --schema
 ```
 
-Then commit + push the code that depends on the new schema. GitHub Actions deploys the app; the schema is already current because you ran ApplyMigrations first.
+Then commit + push the code that depends on the new schema. GitHub Actions deploys the app; the schema is already current because you ran the migration first.
 
 ### Connecting from your laptop to the cloud DB
 
@@ -473,7 +476,7 @@ Then commit + push the code that depends on the new schema. GitHub Actions deplo
 
 ```powershell
 $env:ConnectionStrings__Prose = "Server=tcp:prose-sql.database.windows.net,1433;Database=Prose;Authentication=Active Directory Default;Encrypt=True;TrustServerCertificate=False;"
-dotnet run --project v3/Prose.Blazor
+dotnet run --project v3/Prose.Writer
 ```
 
 `Active Directory Default` will pick up your az-cli credential automatically. Without setting the env var, `appsettings.json` falls back to LocalDB.
@@ -659,7 +662,7 @@ If this is happening repeatedly (multiple times per day), you're hitting the F1 
 
 **A:** You added the `migrate` job (which uses OIDC federated auth) but didn't finish the OIDC setup. Either:
 - **Finish OIDC setup** (see `infra/README.md` § GitHub OIDC) and add the secrets.
-- **Drop the migrate job** from `azure-deploy.yml` and apply migrations manually with `dotnet run --project v3/ApplyMigrations` against the Azure connection string.
+- **Drop the migrate job** from `azure-deploy.yml` and apply migrations manually with `dotnet run --project v3/Prose.Cli -- --migrate-sql --schema` against the Azure connection string.
 
 The latter is simpler and was the path used in this guide.
 
@@ -736,8 +739,9 @@ No interceptors, no token plumbing in code, no workarounds.
 - `infra/setup-azure.ps1` — One-shot bootstrap (resource group → Bicep → GRANT → app settings).
 - `infra/README.md` — End-to-end deployment guide (includes the OIDC path for CI-driven migrations).
 - `.github/workflows/azure-deploy.yml` — Build + deploy pipeline.
-- `v3/ApplyMigrations/Program.cs` — Schema migration runner.
-- `v3/Prose.Core/Data/Sql/` — Raw `.sql` migration files in dated order.
+- `v3/Prose.Cli/Cli/MigrateSqlCli.cs` — Schema migration runner (`--migrate-sql --schema`).
+- `v3/Prose.Core/Migrations/` — EF Core migrations (the live schema source of truth).
+- `v3/Prose.Core/Data/Sql/` — Raw `.sql` files, mostly historical pre-EF-migration deltas.
 
 ---
 
