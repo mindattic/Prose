@@ -900,17 +900,6 @@ if (args.Contains("--lessons-list"))
     return;
 }
 
-// CLI mode: register feedback loop — surface top-N beats by EmotionalScore, identify
-// which register law each exemplifies, and append as candidate entries to
-// docs/registers/<NAME>.md. Closes the story→review→exemplar→register→prose loop.
-//   prose --update-register-exemplars (--slug <slug> | --id <guid>) [--top N] [--dry-run]
-if (args.Contains("--update-register-exemplars"))
-{
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await UpdateRegisterExemplarsCli.RunAsync(args, sp);
-    return;
-}
-
 // CLI mode: review-driven auto-editor. Weight the latest reviews, target the
 // lowest / most-flagged beats (raise the floor), and emit conservative
 // before/after rewrite PROPOSALS (JSON) for an approval survey. Nothing is written.

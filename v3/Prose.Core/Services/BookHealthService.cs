@@ -138,6 +138,7 @@ public class BookHealthService(
             await RunCheckAsync(checks, "chekhov-audit", () => ChekhovAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "five-act-map", () => FiveActMapAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "dramatic-question", () => DramaticQuestionAsync(nodeId, slug, ct));
+            await RunCheckAsync(checks, "sacred-flaw", () => SacredFlawAsync(nodeId, slug, ct));
         }
 
         var (sii, grade, deduction, rates, excluded) = await ComputeScoreAsync(
@@ -366,6 +367,52 @@ public class BookHealthService(
                 $"DRAMATIC-Q beat #{b.Number}: scores {result.OverallScore}/10 on \"who is this person really\" — " +
                 $"{(string.IsNullOrWhiteSpace(result.SubconsciousSummary) ? "no subconscious layer detected" : result.SubconsciousSummary)}",
                 snippet: null, suggestedFix: result.ImprovementHint);
+        }
+    }
+
+    private sealed record PovRow(Guid EntityId, string EntityName);
+
+    /// <summary>NarrativeScienceService.AnalyzeSacredFlawAsync (Will Storr's "theory of
+    /// control" — the false belief a character holds about what keeps them safe/loved/powerful)
+    /// existed only as a manual CLI/MCP tool; never part of the automated battery. One LLM call
+    /// PER POV CHARACTER (not per-beat, not per-mention) — POV characters are the ones whose
+    /// psychological engine actually has to carry an arc, so they're the only ones scoped here.
+    /// "POV" is read from BeatEntityPresence.PresenceType='pov' (the same field DCM's per-beat
+    /// narrator pinning already relies on, per CLAUDE.md's Register layer) rather than any
+    /// Role/Archetype heuristic, so this only ever fires for characters the book itself has
+    /// already marked as narrating. A "low" confidence verdict means the character's existing
+    /// Psychology*/BehavioralRules fields don't yet ground a coherent flaw — a real authoring
+    /// gap, not a prose defect, so this stays a Low-severity nudge rather than blocking anything.
+    /// BeatEntityPresence has no EF mapping — same raw-SQL narrowing BehaviorCheckAsync uses.</summary>
+    private async Task SacredFlawAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var beatIds = await db.BeatNodes.AsNoTracking()
+            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
+        if (beatIds.Count == 0) return;
+
+        var beatParams = beatIds.Select((id, i) => new SqlParameter($"@b{i}", id)).ToArray();
+        var placeholders = string.Join(",", beatParams.Select(p => p.ParameterName));
+        var povRows = await db.Database.SqlQueryRaw<PovRow>(
+            "SELECT DISTINCT EntityId, EntityName FROM BeatEntityPresence " +
+            $"WHERE PresenceType = 'pov' AND BeatId IN ({placeholders})",
+            beatParams).ToListAsync(ct);
+        if (povRows.Count == 0) return;
+
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SACRED-FLAW ");
+        foreach (var pov in povRows.DistinctBy(p => p.EntityId))
+        {
+            var result = await narrativeScience.AnalyzeSacredFlawAsync(pov.EntityId, scaffold: false, ct);
+            if (string.Equals(result.Confidence, "high", StringComparison.OrdinalIgnoreCase)) continue;
+            var sev = string.IsNullOrWhiteSpace(result.TheoryOfControl) || result.Diagnosis == "(parse error)"
+                ? FindingSeverity.Medium : FindingSeverity.Low;
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, sev,
+                $"SACRED-FLAW {pov.EntityName}: confidence={result.Confidence} — " +
+                $"{(string.IsNullOrWhiteSpace(result.TheoryOfControl) ? "no theory of control identified" : result.TheoryOfControl)}",
+                snippet: null,
+                suggestedFix: "Ground this POV character's flaw via create_character (PsychologySecret / core_fears / core_desires / blind_spots) so future beats have a firm theory-of-control to dramatize.");
         }
     }
 

@@ -388,17 +388,47 @@ for all prose writing — it coordinates all the services below and logs coverag
 | `CombatSceneWriter.WriteCombatSceneAsync(request)` | Explicit multi-exchange combat setpiece (numExchanges > 1, full loadout tracking) |
 | `BeatGeneratorService.GenerateBeatAsync(context)` | Legacy path — direct generation without coverage logging |
 
-### Context enrichment chain (all wired inside ProseWriterRouter)
+### Context enrichment chain (all wired inside ProseWriterRouter — verified by call-site audit 2026-08-09)
 | Service | What it injects | Activation |
 |---|---|---|
 | `BeatModeDetector` | Classifies beat as Combat/Narrative/EmotionalClimax/Dialogue/Transition/Revelation | Keyword scan on BeatGoal |
 | `PacingService` | BREATHE/FLOW/TIGHTEN/STRIKE/SETTLE prose rhythm | Position + BeatGoal keywords; Combat forces STRIKE |
 | `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in book |
+| `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode | All beat modes (mode-keyed) |
+| `CombatProseGuidance` (`CombatProseConstants`) | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
+| `SceneContextBuilder` | Ambient sensory grounding | Always |
+| `DialogueService` | Per-character voice/subtext profile injection | `Dialogue`/`EmotionalClimax` modes |
+| `SceneContextAssembler` (+ `WoundLedgerService`) | Per-entity XRay: voice/psychology/wound/behavior profile of everyone on-page | Always |
+| `ContinuityService` | Canonical/confirmed fact constraints for on-page characters | Always |
+| `TensionEscalationService` | Warns when beats have stagnated at low intensity | `beatIndex > 2` |
+| `ReaderKnowledgeService` | Dramatic-irony bookkeeping — what the reader currently knows | Always |
+| `ConsequenceService` / `ConsequenceEngine` | Gear/cyberware/status constraints + cross-book persistent consequences | Always |
+| `AmbientAnomalyService` | Location-tagged background detail | ~60% gate |
+| `WorldStateAtBeatService` | Temporal entity-state snapshot (drift from canon) | Always |
+| `NarrativeSummaryService` | Rolling compressed memory of prior beats | Always |
+| `ChapterSummaryService` | DB-backed prior-chapter memory | Always |
+| `OpenThreadsService` | Unresolved promises/plants/questions | Always |
+| `BookStateLedgerService` | Arc-level named state (crises, dramatic questions, alliances) | Long books |
+| `StoryScienceService` | King + Storr craft laws: sacred-flaw consistency, status dynamics, curiosity gap, causal chains, sensory specificity | Always |
+| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`prose --generate-blueprint`) |
+| `NarrativeChartService` | Offscreen/parallel character activity (world continuity) | Always |
+| `WorldGraphService` | Entity pre-check — flags invented proper nouns not in canon | Always |
 | `PlantPayoffService` | Active plant/payoff pairs for the book | `BeatContext.NodeId != Guid.Empty` |
 | `BookAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
-| `CombatProseGuidance` | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
-| `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode (forensic mind-reads-system, involuntary body-truth, end-on-the-act, image-once, distinct per-narrator rhythm) | All beat modes (mode-keyed) |
-| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`prose --generate-blueprint`) |
+| `LibertyReportService` / `SemanticFidelityService` / `CanonGroundingService` | Rule-of-Cool check, Goodhart intent-drift check, canon-grounding scaffold | Always (findings loop back into later beats) |
+
+`EmotionalDepthService` (8-dim Want/Need/Wound rubric) is **not** called by ProseWriterRouter directly —
+it only runs via `--examine-emotion` / `BookHealthService` DEEP tier, and its `EMOTIONAL-DEPTH`-prefixed
+findings become live guidance one beat later through the generic findings-loop-back mechanism.
+
+**Two other generation entry points exist and do NOT share this enrichment chain** (found 2026-08-09,
+not yet reconciled — treat as a known gap, not a bug to silently "fix" by deleting either path
+without confirming with the author first): `StoryDirectorService` (the "Surprise Me" autonomous
+pipeline, `--write-story`/`--story-refine`) hand-rolls its own pacing/methodology calls and has zero
+wiring to `StructuralBlueprintService`, `EmotionalDepthService`, `TensionEscalationService`,
+`StoryScienceService`, or `DelightProseGuidance`. `Write.razor` (legacy pre-`NodeMigrationService`
+Books/Chapters UI) calls `BeatGeneratorService.GenerateBeatAsync` directly, bypassing
+`ProseWriterRouter` and every enrichment above.
 
 ### Coverage monitoring
 ```
@@ -411,10 +441,9 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 1. Assemble `BeatContext` (XRayContext via SceneContextAssembler, NodeId always set)
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` — NOT BeatGeneratorService directly
 3. After writing, run `prose --examine-emotion --slug <slug>` to score emotional dimensions
-4. After enough beats scored, run `prose --update-register-exemplars --slug <slug>` to update the voice register
-5. After book complete, run `prose --book-audit --slug <slug>` to audit gateway/sequel commandments
-6. After book complete, run `prose --plant-audit --slug <slug>` to check for orphaned plants
-7. After book complete, run `prose --storyscope-audit --slug <slug>` to verify the structural
+4. After book complete, run `prose --book-audit --slug <slug>` to audit gateway/sequel commandments
+5. After book complete, run `prose --plant-audit --slug <slug>` to check for orphaned plants
+6. After book complete, run `prose --storyscope-audit --slug <slug>` to verify the structural
    anti-tells held (escalation monotonic, event types varied, no moral gloss, no epilogue,
    subplot executed). BLOCKER findings fix per logic-sweep minimal-splice rules, then re-audit.
 
