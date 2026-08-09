@@ -138,11 +138,18 @@ public class ContinuityValidatorService
         }
         catch (Exception ex)
         {
-            // Fail open — a transient LLM/parse hiccup must not block writing —
-            // but log it so a persistently-broken validator surfaces instead of
-            // silently reporting every beat as clean.
+            // Fail open — a transient LLM/parse hiccup must not block writing — Clean stays
+            // true so nothing downstream mistakes an infrastructure hiccup for a confirmed
+            // continuity violation. But CheckFailed is a DISTINCT signal from Clean: without
+            // it, the only trace of the failure was this one generic Warning log line, and the
+            // per-beat caller's own "LLM continuity check failed for beat {BeatIndex}" log
+            // (StoryDirectorService's `catch` around this call) could never fire either, since
+            // this method doesn't throw — it returns a normal-looking, non-throwing report.
+            // Same "could not verify" -> "verified, all clear" shape as the 4 other instances
+            // of this bug already fixed this session (AuditRunner/BookAuditService.GatewayReady,
+            // StoryScopeAuditService.Ready, BeatAuditService.IsClean, BeatLensService.RunAsync).
             Serilog.Log.Warning(ex, "ContinuityValidatorService.ValidateAsync failed; reporting clean (fail-open)");
-            return new ContinuityReport { Clean = true, Issues = [] };
+            return new ContinuityReport { Clean = true, CheckFailed = true, Issues = [] };
         }
     }
 
@@ -203,6 +210,14 @@ public class ContinuityReport
     public bool Clean { get; init; }
     public List<ContinuityIssue> Issues { get; init; } = [];
     public bool HasCritical => Issues.Any(i => i.Severity == "critical");
+
+    /// <summary>True when the LLM call or response parse in ValidateAsync threw and this report
+    /// is the fail-open fallback (Clean=true, Issues=[]), NOT a genuine "checked and found
+    /// nothing wrong" result. Distinct from Clean deliberately: Clean must stay true so nothing
+    /// downstream mistakes an infrastructure hiccup for a confirmed continuity violation, but
+    /// callers that want to know "did this beat actually get checked" need a signal Clean alone
+    /// can't provide. Always false for QuickValidate's results (no LLM call, cannot fail this way).</summary>
+    public bool CheckFailed { get; init; }
 }
 
 public class ContinuityIssue

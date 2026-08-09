@@ -705,6 +705,8 @@ public class StoryDirectorService : IStoryDirectorService
                         {
                             var report = await continuityValidator.ValidateAsync(
                                 beatTextCopy, projectId, charsForContinuity, locationCopy, priorTextCopy);
+                            if (report.CheckFailed)
+                                log.LogWarning("LLM continuity check failed for beat {BeatIdx} — reported clean by fail-open default, not actually verified", beatIdxCopy);
                             if (!report.Clean)
                             {
                                 foreach (var issue in report.Issues)
