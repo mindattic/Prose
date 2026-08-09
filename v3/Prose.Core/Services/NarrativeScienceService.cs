@@ -135,12 +135,15 @@ public class NarrativeScienceService(
             """;
 
         var raw = await llm.GenerateAsync(system, user, temperature: 0.4, maxTokens: 600, ct: ct);
-        return ParseJson<DramaticQuestionResult>(raw) ?? new DramaticQuestionResult
-        {
-            OverallScore = 0,
-            SurfaceSummary = "(parse error)",
-            RawResponse = raw,
-        };
+        // Throw rather than fabricate an OverallScore=0 result on parse failure — the caller
+        // (BookHealthService.DramaticQuestionAsync) used to file that as a genuine "scores 0/10"
+        // DRAMATIC-Q finding with no visible error marker (SurfaceSummary isn't the field the
+        // finding text reads), indistinguishable from a real critique. Same fix class as
+        // SwainAuditService/BehavioralInvariantEnforcer earlier this session — brings this method
+        // in line with its own sibling AnalyzeSacredFlawAsync, whose parse-error text already
+        // lands in a field (Diagnosis) the caller actually displays.
+        return ParseJson<DramaticQuestionResult>(raw)
+            ?? throw new InvalidOperationException($"Could not parse dramatic-question response: {raw[..Math.Min(200, raw.Length)]}");
     }
 
     // ── Scene Engagement Audit (6-point) ──────────────────────────────────────

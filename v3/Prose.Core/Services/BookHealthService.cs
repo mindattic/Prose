@@ -433,17 +433,47 @@ public class BookHealthService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beats = await GetEnabledBeatsAsync(db, nodeId, ct);
-        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "DRAMATIC-Q ");
+
+        // CheckDramaticQuestionAsync now throws on LLM/parse failure (2026-08-09 fix — it used to
+        // fabricate an OverallScore=0 result with the error text landing in a field this method
+        // never reads, so an outage filed a real-looking "scores 0/10" DRAMATIC-Q finding with no
+        // visible error marker). Evaluate every beat first, then only purge+refile for beats that
+        // succeeded — same per-check-skip principle as the SwainAuditService/BehavioralInvariantEnforcer
+        // fixes: a beat whose evaluation failed keeps its prior finding untouched rather than
+        // losing it to a delete with nothing to replace it.
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "DRAMATIC-Q [incomplete]");
+        var evaluated = new List<(Guid BeatId, int Number, DramaticQuestionResult Result)>();
+        var failedCount = 0;
         foreach (var b in beats)
         {
-            var result = await narrativeScience.CheckDramaticQuestionAsync(b.Text, characterId: null, ct);
-            if (result.DramaticQuestionActive && result.OverallScore >= 5) continue;
-            var sev = result.OverallScore <= 2 ? FindingSeverity.Medium : FindingSeverity.Low;
-            findingsSvc.Upsert($"node:{slug}/beat:{b.Id:N}", chapterId: null, FindingCategory.StructuralFailure, sev,
-                $"DRAMATIC-Q beat #{b.Number}: scores {result.OverallScore}/10 on \"who is this person really\" — " +
-                $"{(string.IsNullOrWhiteSpace(result.SubconsciousSummary) ? "no subconscious layer detected" : result.SubconsciousSummary)}",
-                snippet: null, suggestedFix: result.ImprovementHint);
+            try
+            {
+                var result = await narrativeScience.CheckDramaticQuestionAsync(b.Text, characterId: null, ct);
+                evaluated.Add((b.Id, b.Number, result));
+            }
+            catch (Exception ex)
+            {
+                failedCount++;
+                log.LogWarning(ex, "CheckDramaticQuestionAsync failed for beat {BeatId}", b.Id);
+            }
         }
+
+        foreach (var e in evaluated)
+            findingsSvc.DeleteBySummaryPrefix($"node:{slug}/beat:{e.BeatId:N}", "DRAMATIC-Q ");
+        foreach (var e in evaluated)
+        {
+            if (e.Result.DramaticQuestionActive && e.Result.OverallScore >= 5) continue;
+            var sev = e.Result.OverallScore <= 2 ? FindingSeverity.Medium : FindingSeverity.Low;
+            findingsSvc.Upsert($"node:{slug}/beat:{e.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, sev,
+                $"DRAMATIC-Q beat #{e.Number}: scores {e.Result.OverallScore}/10 on \"who is this person really\" — " +
+                $"{(string.IsNullOrWhiteSpace(e.Result.SubconsciousSummary) ? "no subconscious layer detected" : e.Result.SubconsciousSummary)}",
+                snippet: null, suggestedFix: e.Result.ImprovementHint);
+        }
+
+        if (failedCount > 0)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                $"DRAMATIC-Q [incomplete]: {failedCount}/{beats.Count} beats could not be evaluated (LLM/parse errors) — re-run once resolved.",
+                snippet: null, suggestedFix: null);
     }
 
     private sealed record PovRow(Guid EntityId, string EntityName);
