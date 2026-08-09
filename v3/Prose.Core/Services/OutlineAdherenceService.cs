@@ -43,15 +43,21 @@ public class OutlineAdherenceService(
             // Recurses past any nested Collection (2026-08-09 fix).
             var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
-            remainingGoals = await (
+            // beatNodeIds is already in correct global reading order (depth-first,
+            // SortKey-per-level) — order by its list POSITION, not by re-fetching each beat's
+            // chapter Node.SortKey, which is only comparable among siblings under the SAME
+            // parent, not globally across branches (same bug class found the same day in
+            // NodeDocService/SynopsisExportService/BeatLensServices/EmotionalDepthService).
+            var goalRows = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 where beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled
                 join b in db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == "") on sb.BeatId equals b.Id
-                join n in db.Nodes.AsNoTracking() on sb.NodeId equals n.Id
                 where (b.Description ?? b.Title ?? "").Length > 0
-                orderby n.SortKey, sb.SortKey
-                select b.Description ?? b.Title ?? ""
+                select new { sb.NodeId, sb.SortKey, Goal = b.Description ?? b.Title ?? "" }
             ).ToListAsync(ct);
+            remainingGoals = goalRows
+                .OrderBy(g => beatNodeIds.IndexOf(g.NodeId)).ThenBy(g => g.SortKey)
+                .Select(g => g.Goal).ToList();
         }
 
         if (remainingGoals.Count == 0)

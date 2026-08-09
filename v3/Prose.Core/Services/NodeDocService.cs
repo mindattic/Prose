@@ -251,15 +251,21 @@ public class NodeDocService
         // Recurses past any nested Collection (a mid-book chapter split into its own bounded
         // sub-chapters) to the actual leaf chapters — a direct-children-only query here
         // silently reported "0 beats" for a book with a split chapter (found 2026-08-09).
+        // IMPORTANT: leafIds is already in correct global reading order (depth-first,
+        // SortKey-per-level) — do NOT re-sort the fetched rows by raw SortKey, since SortKey is
+        // only comparable among siblings under the SAME parent, not globally across branches
+        // (a second bug found the same day as the first, while fixing a sibling service).
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var isFlatNode = leafIds.Count == 1 && leafIds[0] == nodeId;
-        var chapters = isFlatNode
-            ? []
-            : await db.Nodes.AsNoTracking()
+        List<(Guid Id, string? Title)> chapters = [];
+        if (!isFlatNode)
+        {
+            var titleById = await db.Nodes.AsNoTracking()
                 .Where(n => leafIds.Contains(n.Id))
-                .OrderBy(n => n.SortKey)
                 .Select(n => new { n.Id, n.Title })
-                .ToListAsync(ct);
+                .ToDictionaryAsync(n => n.Id, n => n.Title, ct);
+            chapters = leafIds.Select(id => (id, titleById.GetValueOrDefault(id))).ToList();
+        }
 
         var sb = new StringBuilder();
         int totalBeats = 0;

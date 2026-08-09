@@ -24,12 +24,12 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
     public async Task<List<PlantPayoff>> GetByNodeAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        // SS-A43: for book-mode nodes, plants are registered on chapter children.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .Select(n => n.Id).ToListAsync(ct);
-        var searchIds = new List<Guid> { nodeId };
-        searchIds.AddRange(childIds);
+        // SS-A43: for book-mode nodes, plants are registered on chapter children — but
+        // RegisterAsync takes an arbitrary nodeId, so a plant CAN legitimately be registered
+        // directly on the book itself even when it has chapters. Always include nodeId plus
+        // every leaf descendant, recursing past any nested Collection (2026-08-09 fix).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        if (!searchIds.Contains(nodeId)) searchIds.Add(nodeId);
         return await db.PlantPayoffs
             .AsNoTracking()
             .Where(p => searchIds.Contains(p.NodeId))
@@ -127,12 +127,11 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        // SS-A43: for book-mode nodes, plants are registered on chapter children.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .Select(n => n.Id).ToListAsync(ct);
-        var searchIds = new List<Guid> { nodeId };
-        searchIds.AddRange(childIds);
+        // SS-A43: for book-mode nodes, plants are registered on chapter children — but
+        // RegisterAsync takes an arbitrary nodeId, so always include nodeId itself too.
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        if (!searchIds.Contains(nodeId)) searchIds.Add(nodeId);
         var all = await db.PlantPayoffs
             .AsNoTracking()
             .Where(p => searchIds.Contains(p.NodeId))

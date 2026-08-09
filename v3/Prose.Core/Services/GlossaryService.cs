@@ -145,22 +145,18 @@ public class GlossaryService(
 
     static async Task<string> GetBookProseAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
     {
-        var childChapters = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.ParentNodeId == nodeId)
-            .Include(n => n.BeatNodes).ThenInclude(bn => bn.Beat)
-            .OrderBy(n => n.SortKey).ToListAsync(ct);
+        // Recurses past any nested Collection (2026-08-09 fix) — the old Include-based
+        // direct-children query missed a split chapter's grandchildren (their BeatNodes
+        // navigation is empty; the beats moved to the new sub-chapters during the split).
+        // Term detection is order-independent (just a presence scan), so no ordering concern.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var beatNodes = await db.BeatNodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(bn => leafIds.Contains(bn.NodeId))
+            .Include(bn => bn.Beat)
+            .ToListAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Include(n => n.BeatNodes).ThenInclude(bn => bn.Beat)
-            .FirstAsync(n => n.Id == nodeId, ct);
-
-        var source = childChapters.Count > 0
-            ? childChapters.SelectMany(c => c.BeatNodes)
-            : node.BeatNodes;
-
-        return string.Join("\n\n", source
+        return string.Join("\n\n", beatNodes
             .Where(bn => bn.IsEnabled)
-            .OrderBy(bn => bn.SortKey)
             .Select(bn => bn.Beat!.Text)
             .Where(t => !string.IsNullOrWhiteSpace(t)));
     }

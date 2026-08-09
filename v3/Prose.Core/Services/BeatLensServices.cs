@@ -74,16 +74,20 @@ public abstract class BeatLensService
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var hasChildren = !(leafIds.Count == 1 && leafIds[0] == nodeId);
 
+        // leafIds is already in correct global reading order (depth-first, SortKey-per-level).
+        // Order by leafIds' own list position, NOT by raw Node.SortKey — SortKey is only
+        // comparable among siblings under the SAME parent, not globally across branches
+        // (same class of bug found the same day in NodeDocService/SynopsisExportService).
         var rows = await (
-            from s in db.Nodes.AsNoTracking()
-            join sb in db.BeatNodes.AsNoTracking() on s.Id equals sb.NodeId
+            from sb in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where leafIds.Contains(s.Id) && sb.IsEnabled
-            orderby s.SortKey, sb.SortKey
-            select new { b.Text, b.Number }
+            where leafIds.Contains(sb.NodeId) && sb.IsEnabled
+            select new { sb.NodeId, sb.SortKey, b.Text, b.Number }
         ).ToListAsync(ct);
-        List<(int Num, string Text)> beats = rows.Where(r => !string.IsNullOrWhiteSpace(r.Text))
-                    .Select(r => (r.Number, r.Text)).ToList();
+        List<(int Num, string Text)> beats = rows
+            .OrderBy(r => leafIds.IndexOf(r.NodeId)).ThenBy(r => r.SortKey)
+            .Where(r => !string.IsNullOrWhiteSpace(r.Text))
+            .Select(r => (r.Number, r.Text)).ToList();
         if (hasChildren) maxChars = Math.Max(maxChars, 100000);
 
         if (beats.Count == 0)

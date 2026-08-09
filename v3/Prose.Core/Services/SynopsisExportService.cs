@@ -100,11 +100,25 @@ public sealed class SynopsisExportService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var chapterNodes = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == bookNodeId)
-            .OrderBy(n => n.SortKey)
-            .Select(n => new { n.Id, n.Title })
-            .ToListAsync(ct);
+        // Recurses past any nested Collection to the actual leaf chapters, in reading order
+        // (2026-08-09 fix) — a direct-children-only query here silently dropped a split
+        // chapter's sub-chapters from the synopsis (used for chapter-altitude planning/review).
+        // IMPORTANT: re-sort by fetching-then-OrderBy(SortKey) would be WRONG here — SortKey is
+        // only comparable among siblings under the SAME parent, not globally across branches, so
+        // re-sorting leaves from different parents by raw SortKey scrambles cross-branch order.
+        // leafIds is already in correct global reading order (depth-first, SortKey per level) —
+        // preserve THAT order by looking titles up into it, not by re-querying with OrderBy.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, bookNodeId, ct);
+        var isFlatBook = leafIds.Count == 1 && leafIds[0] == bookNodeId;
+        List<(Guid Id, string? Title)> chapterNodes = [];
+        if (!isFlatBook)
+        {
+            var titleById = await db.Nodes.AsNoTracking()
+                .Where(n => leafIds.Contains(n.Id))
+                .Select(n => new { n.Id, n.Title })
+                .ToDictionaryAsync(n => n.Id, n => n.Title, ct);
+            chapterNodes = leafIds.Select(id => (id, titleById.GetValueOrDefault(id))).ToList();
+        }
 
         // Flat book (no chapter children): the book node is one unit.
         var sources = chapterNodes.Count > 0

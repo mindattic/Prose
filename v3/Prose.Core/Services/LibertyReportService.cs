@@ -149,10 +149,8 @@ public class LibertyReportService(
             if (nodeId == null) return [];
 
             // SS-A43: beats live on chapter nodes (children), not directly on the book node.
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == nodeId)
-                .Select(n => n.Id).ToListAsync(ct);
-            var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId!.Value };
+            // Recurses past any nested Collection (2026-08-09 fix).
+            var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId!.Value, ct);
 
             var beatIds = await db.BeatNodes.AsNoTracking()
                 .Where(bn => beatNodeIds.Contains(bn.NodeId) && bn.IsEnabled)

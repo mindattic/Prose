@@ -128,8 +128,14 @@ public class EmotionalDepthService
 
         // For book nodes, examine the LIVE chapter prose (child chapters), not the
         // book node's own beats — those may hold a legacy outline/condensed draft.
-        var hasChildren = await db.Nodes.AsNoTracking()
-            .AnyAsync(s => s.ParentNodeId == nodeId && s is ChapterNode, ct);
+        // Recurses past any nested Collection (2026-08-09 fix) — this is a DEEP-tier
+        // BookHealthService check (--examine-emotion), a major miss when unconverted.
+        // leafIds is already in correct global reading order; ordering by leafIds' list
+        // position (not raw Node.SortKey, which is only comparable among siblings under the
+        // SAME parent) avoids the cross-branch scrambling bug found the same day in
+        // NodeDocService/SynopsisExportService/BeatLensServices.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var hasChildren = !(leafIds.Count == 1 && leafIds[0] == nodeId);
 
         List<string> beats;
         List<int> beatNums;
@@ -138,16 +144,15 @@ public class EmotionalDepthService
         if (hasChildren)
         {
             var rows = await (
-                from s in db.Nodes.AsNoTracking()
-                join sb in db.BeatNodes.AsNoTracking() on s.Id equals sb.NodeId
+                from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where s.ParentNodeId == nodeId && s is ChapterNode && sb.IsEnabled
-                orderby s.SortKey, sb.SortKey
-                select new { b.Text, b.Number }
+                where leafIds.Contains(sb.NodeId) && sb.IsEnabled
+                select new { sb.NodeId, sb.SortKey, b.Text, b.Number }
             ).ToListAsync(ct);
+            var ordered = rows.OrderBy(r => leafIds.IndexOf(r.NodeId)).ThenBy(r => r.SortKey).ToList();
 
-            beats    = rows.Where(r => !string.IsNullOrWhiteSpace(r.Text)).Select(r => r.Text).ToList();
-            beatNums = rows.Where(r => !string.IsNullOrWhiteSpace(r.Text)).Select(r => r.Number).ToList();
+            beats    = ordered.Where(r => !string.IsNullOrWhiteSpace(r.Text)).Select(r => r.Text).ToList();
+            beatNums = ordered.Where(r => !string.IsNullOrWhiteSpace(r.Text)).Select(r => r.Number).ToList();
             effectiveMax = Math.Max(maxChars, 100000);             // representative whole-novel read
         }
         else

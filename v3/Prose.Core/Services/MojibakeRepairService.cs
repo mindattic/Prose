@@ -232,11 +232,8 @@ public class MojibakeRepairService
         if (nodeId.HasValue)
         {
             // SS-A43: beats live on chapter children for book-mode stories.
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == nodeId.Value)
-                .Select(n => n.Id)
-                .ToListAsync(ct);
-            var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId.Value };
+            // Recurses past any nested Collection (2026-08-09 fix).
+            var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId.Value, ct);
 
             var beatIds = await db.BeatNodes
                 .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
