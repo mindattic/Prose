@@ -166,6 +166,20 @@ public class ChapterRecordingService
     /// one. Used when the chapter's prose has been edited in the writer.</summary>
     public async Task<Guid> ReRecordChapterAsync(string chapterId, string? voiceId = null, CancellationToken ct = default)
     {
+        // Validate there is prose to re-record BEFORE deleting anything. Without this, a
+        // chapter whose prose had been cleared out (Beats emptied, Html blank) between "had a
+        // recording" and "re-record requested" would have its EXISTING recording deleted here,
+        // then RecordChapterAsync would throw "has no prose to record" below — permanently
+        // losing the prior recording with nothing to replace it (confirmed via code review
+        // 2026-08-09; RecordChapterAsync's own "already recorded" guard means this can't simply
+        // be fixed by calling it before the delete). Mirrors RecordChapterAsync's own two input
+        // sources exactly so this predicts its outcome accurately, not just approximately.
+        var chapterToCheck = chapters.LoadChapter(chapterId)
+            ?? throw new InvalidOperationException($"Chapter {chapterId} not found.");
+        if (!HasRecordableProse(chapterToCheck, markdown.StripToPlainText))
+            throw new InvalidOperationException(
+                $"Chapter {chapterToCheck.Title} has no prose to record — the existing recording was left untouched.");
+
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             var existing = await db.Episodes
@@ -354,6 +368,21 @@ public class ChapterRecordingService
     }
 
     // ── Helpers ────────────────────────────────────────────────────────
+
+    /// <summary>True when <see cref="RecordChapterAsync"/> would find at least one paragraph to
+    /// record for this chapter — mirrors its own two input sources (populated Beats, else
+    /// Html stripped to plain text and split into paragraphs) exactly, so a caller can check
+    /// this BEFORE a destructive operation instead of discovering "no prose to record" only
+    /// after something else has already been deleted. Takes the strip-to-plain-text step as a
+    /// delegate (rather than reading the instance's own MarkdownService) so it's testable
+    /// without constructing this service's full dependency graph.</summary>
+    internal static bool HasRecordableProse(Prose.Core.Models.Chapter chapter, Func<string, string> stripToPlainText)
+    {
+        if (chapter.Beats is { Count: > 0 } && chapter.Beats.Any(b => !string.IsNullOrWhiteSpace(b.Text)))
+            return true;
+        var plain = stripToPlainText(chapter.Html ?? "");
+        return SplitToParagraphs(plain).Any();
+    }
 
     private static IEnumerable<string> SplitToParagraphs(string text)
     {
