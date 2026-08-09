@@ -653,6 +653,26 @@ if (args.Contains("--edit-beat"))
     return;
 }
 
+// CLI mode: re-slot a beat within its node's reading order (wraps NodeWorkbenchService
+// .MoveBeatAsync, previously reachable only from the Blazor drag-and-drop UI).
+//   prose --move-beat --slug <slug> --beat-number N --after M   (M=0 moves to the top)
+if (args.Contains("--move-beat"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await MoveBeatCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: enable/disable a beat's membership in a node's reading order without touching the
+// Beat row itself (wraps NodeWorkbenchService.SetBeatMembershipEnabledAsync).
+//   prose --set-beat-enabled --slug <slug> (--beat-number N | --beat-id <guid>) [--enable]
+if (args.Contains("--set-beat-enabled"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SetBeatEnabledCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: create a new empty root node (bible-first; no beats yet).
 //   prose --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
 if (args.Contains("--create-book"))

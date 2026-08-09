@@ -21,8 +21,12 @@ namespace Prose.Core.Services;
 //   prose --diagnose-book --slug <slug>
 //   MCP: diagnose_book(nodeIdOrSlug)
 
-/// <summary>Structural check result tier.</summary>
-public enum StructuralCheckResult { Pass, Warn, Fail }
+/// <summary>Structural check result tier. Error is deliberately distinct from Warn — a check
+/// that could not run (LLM exception, unparseable response) is not the same claim as "the model
+/// evaluated this and found something worth a soft note." Conflating the two (2026-08-09 bug fix)
+/// meant a blocking check's outage was silently indistinguishable from that check genuinely
+/// passing, since only Fail ever trips the blocking gate and Error/Warn never can.</summary>
+public enum StructuralCheckResult { Pass, Warn, Fail, Error }
 
 /// <summary>Single structural check result with quoted evidence and a fix.</summary>
 public record StructuralCheck(
@@ -33,7 +37,9 @@ public record StructuralCheck(
     string Fix,
     bool IsBlocking);
 
-/// <summary>Full structural diagnosis for a node.</summary>
+/// <summary>Full structural diagnosis for a node. ErrorCount (checks that couldn't run at all —
+/// LLM exception or unparseable response) is tracked distinctly from WarnCount/FailCount: an
+/// errored check has no content verdict at all, not even a soft one.</summary>
 public record StructuralDiagnosisResult(
     Guid NodeId,
     string Slug,
@@ -41,6 +47,7 @@ public record StructuralDiagnosisResult(
     int PassCount,
     int WarnCount,
     int FailCount,
+    int ErrorCount,
     bool HasBlockingFailures,
     IReadOnlyList<StructuralCheck> Checks,
     string Recommendation);
@@ -126,6 +133,7 @@ public class StructuralDiagnosticService
         int pass     = checks.Count(c => c.Result == StructuralCheckResult.Pass);
         int warn     = checks.Count(c => c.Result == StructuralCheckResult.Warn);
         int fail     = checks.Count(c => c.Result == StructuralCheckResult.Fail);
+        int errored  = checks.Count(c => c.Result == StructuralCheckResult.Error);
 
         // The blocking checks are CHAPTER-SCOPED ("by the end of the chapter") and
         // each only sees the first `maxChars` of the node (see Truncate). When the
@@ -136,17 +144,25 @@ public class StructuralDiagnosticService
         // as warnings but never block, and don't file false-positive findings. Use
         // per-segment review (review by act/chapter) to gate large nodes properly.
         bool truncated = text.Length > maxChars;
-        bool blocking  = !truncated && checks.Any(c => c.IsBlocking && c.Result == StructuralCheckResult.Fail);
+        // 2026-08-09 fix: a check that couldn't run (StructuralCheckResult.Error) must be
+        // treated the same way as truncation — the diagnosis is incomplete, not "clean." Before
+        // this, RunCheckAsync's catch defaulted to Warn, a real LLM-producible non-blocking
+        // value, so a blocking check's own outage was silently indistinguishable from that check
+        // genuinely passing (Warn/Error/Pass all fail to trip `IsBlocking && Result == Fail`
+        // identically) — an LLM outage during --diagnose-book could read as "Ready to review."
+        bool anyErrored = errored > 0;
+        bool blocking   = !truncated && !anyErrored && checks.Any(c => c.IsBlocking && c.Result == StructuralCheckResult.Fail);
 
-        // File blocking failures as findings so they surface at /findings — but only
-        // when the checks actually saw the whole node (not a truncated opening). A truncated
-        // call has no signal either way about a prior full-node run's findings, so the purge
-        // stays scoped to the non-truncated path too — it only replaces stale data with
-        // equally-trustworthy fresh data, never blanks real findings on a partial view.
-        if (!truncated)
+        // File blocking failures as findings so they surface at /findings — but only when the
+        // checks actually saw the whole node (not truncated) AND every check actually ran (no
+        // errors). Either condition means this run has no trustworthy signal about a prior full,
+        // successful run's findings, so the purge stays scoped to when both hold — it only
+        // replaces stale data with equally-trustworthy fresh data, never blanks real findings on
+        // a partial or failed view.
+        if (!truncated && !anyErrored)
             findings.DeleteBySummaryPrefix($"node:{slug}", "STRUCTURAL-FAILURE ");
 
-        foreach (var check in checks.Where(c => !truncated && c.IsBlocking && c.Result == StructuralCheckResult.Fail))
+        foreach (var check in checks.Where(c => !truncated && !anyErrored && c.IsBlocking && c.Result == StructuralCheckResult.Fail))
         {
             findings.Upsert(
                 filePath: $"node:{slug}",
@@ -158,17 +174,19 @@ public class StructuralDiagnosticService
                 suggestedFix: check.Fix);
         }
 
-        string recommendation = blocking
-            ? "Fix blocking failures before running review panel — structural issues cap scores regardless of prose quality."
-            : truncated
-                ? "Node exceeds the diagnostic window — structural checks ran on the opening fragment only and are ADVISORY (not blocking). Use per-act/segmented review to gate large nodes."
-                : fail + warn > 4
-                    ? "Address warnings before committing to 60 ballots — multiple weak signals compound into a low score."
-                    : "Ready to review.";
+        string recommendation = anyErrored
+            ? $"{errored}/{checks.Count} structural check(s) could not run (LLM errors) — this diagnosis is INCOMPLETE, not clean. Re-run once resolved before trusting it."
+            : blocking
+                ? "Fix blocking failures before running review panel — structural issues cap scores regardless of prose quality."
+                : truncated
+                    ? "Node exceeds the diagnostic window — structural checks ran on the opening fragment only and are ADVISORY (not blocking). Use per-act/segmented review to gate large nodes."
+                    : fail + warn > 4
+                        ? "Address warnings before committing to 60 ballots — multiple weak signals compound into a low score."
+                        : "Ready to review.";
 
         return new StructuralDiagnosisResult(
             nodeId, slug, title,
-            pass, warn, fail,
+            pass, warn, fail, errored,
             blocking,
             checks,
             recommendation);
@@ -502,8 +520,8 @@ Set jargon_count to an integer. pass = 0-2 jargon terms before first physical be
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "Structural check {Name} failed; defaulting to Warn", name);
-            return new StructuralCheck(name, description, StructuralCheckResult.Warn,
+            log.LogWarning(ex, "Structural check {Name} failed", name);
+            return new StructuralCheck(name, description, StructuralCheckResult.Error,
                 "Check failed to run.", "Re-run the diagnostic.", isBlocking);
         }
     }
@@ -521,5 +539,5 @@ Set jargon_count to an integer. pass = 0-2 jargon terms before first physical be
     }
 
     private static StructuralDiagnosisResult Empty(Guid nodeId, string slug, string title) =>
-        new(nodeId, slug, title, 0, 0, 0, false, [], "No prose found — nothing to diagnose.");
+        new(nodeId, slug, title, 0, 0, 0, 0, false, [], "No prose found — nothing to diagnose.");
 }

@@ -276,6 +276,7 @@ public class QualityTools
             pass         = result.PassCount,
             warn         = result.WarnCount,
             fail         = result.FailCount,
+            error        = result.ErrorCount,
             blocking     = result.HasBlockingFailures,
             recommendation = result.Recommendation,
             checks       = result.Checks.Select(c => new

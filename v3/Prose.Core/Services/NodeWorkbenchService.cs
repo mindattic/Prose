@@ -862,6 +862,27 @@ public class NodeWorkbenchService
             beatId, nodeId, newSortKey, afterBeatId?.ToString() ?? "(top)");
     }
 
+    /// <summary>Enable or disable a beat's membership in a node's reading order, without
+    /// touching the Beat row itself (its prose, audio, and any OTHER node's membership of the
+    /// same beat all survive untouched — this only affects whether IT reads as part of THIS
+    /// node). Reversible: pass enabled=true to restore it. Added 2026-08-09 for a real case —
+    /// a beat found sorted into a chapter its content had no connection to (no causal or
+    /// thematic link anywhere in that chapter), where forcing a position (top, middle, or end)
+    /// would only trade one confusing placement for another. Disabling is the honest fix when
+    /// no correct position can be found with the evidence at hand, rather than leaving a beat
+    /// wherever it happened to land.</summary>
+    public async Task SetBeatMembershipEnabledAsync(Guid nodeId, Guid beatId, bool enabled, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var membership = await db.BeatNodes.FirstOrDefaultAsync(
+            bn => bn.NodeId == nodeId && bn.BeatId == beatId, ct)
+            ?? throw new InvalidOperationException($"Beat {beatId} has no membership row in node {nodeId}.");
+        if (membership.IsEnabled == enabled) return;
+        membership.IsEnabled = enabled;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Beat {Beat} membership in node {Node} set to IsEnabled={Enabled}", beatId, nodeId, enabled);
+    }
+
     /// <summary>Split a beat at an explicit character position — what the
     /// writer wants when their cursor is inside the prose. Same shape as
     /// <see cref="SplitBeatAsync"/> but skips the midpoint-search and uses

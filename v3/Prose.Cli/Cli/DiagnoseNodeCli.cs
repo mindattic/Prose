@@ -60,6 +60,7 @@ public static class DiagnoseNodeCli
                 pass         = result.PassCount,
                 warn         = result.WarnCount,
                 fail         = result.FailCount,
+                error        = result.ErrorCount,
                 blocking     = result.HasBlockingFailures,
                 recommendation = result.Recommendation,
                 checks       = result.Checks.Select(c => new
@@ -72,13 +73,13 @@ public static class DiagnoseNodeCli
                     fix         = c.Fix,
                 }),
             }, new JsonSerializerOptions { WriteIndented = true }));
-            return result.HasBlockingFailures ? 2 : result.WarnCount > 0 ? 1 : 0;
+            return result.HasBlockingFailures || result.ErrorCount > 0 ? 2 : result.WarnCount > 0 ? 1 : 0;
         }
 
         // Human-readable output
         Console.WriteLine($"  Node : {result.Title}");
-        Console.WriteLine($"  Result : {result.PassCount} pass  {result.WarnCount} warn  {result.FailCount} fail");
-        Console.WriteLine($"  Status : {(result.HasBlockingFailures ? "⛔ BLOCKING FAILURES" : result.WarnCount > 0 ? "⚠  Warnings" : "✅ Ready")}");
+        Console.WriteLine($"  Result : {result.PassCount} pass  {result.WarnCount} warn  {result.FailCount} fail  {result.ErrorCount} error");
+        Console.WriteLine($"  Status : {(result.HasBlockingFailures ? "⛔ BLOCKING FAILURES" : result.ErrorCount > 0 ? "❓ INCOMPLETE (checks failed to run)" : result.WarnCount > 0 ? "⚠  Warnings" : "✅ Ready")}");
         Console.WriteLine();
 
         // Blocking failures first
@@ -110,8 +111,10 @@ public static class DiagnoseNodeCli
             Console.WriteLine("WARNINGS:");
             foreach (var c in nonBlockingIssues)
             {
-                var icon = c.Result == StructuralCheckResult.Fail ? "✗" : "△";
-                Console.WriteLine($"  {icon} {c.Name}");
+                var icon = c.Result == StructuralCheckResult.Error ? "❓"
+                         : c.Result == StructuralCheckResult.Fail  ? "✗" : "△";
+                var label = c.Result == StructuralCheckResult.Error ? $"{c.Name} (COULD NOT RUN)" : c.Name;
+                Console.WriteLine($"  {icon} {label}");
                 if (!string.IsNullOrWhiteSpace(c.Evidence) && c.Evidence != "none")
                     Console.WriteLine($"     Evidence : {Truncate(c.Evidence, 120)}");
                 Console.WriteLine($"     Fix      : {c.Fix}");
@@ -129,7 +132,7 @@ public static class DiagnoseNodeCli
 
         Console.WriteLine($"RECOMMENDATION: {result.Recommendation}");
 
-        return result.HasBlockingFailures ? 2 : result.WarnCount > 0 ? 1 : 0;
+        return result.HasBlockingFailures || result.ErrorCount > 0 ? 2 : result.WarnCount > 0 ? 1 : 0;
     }
 
     private static string Truncate(string s, int max) =>

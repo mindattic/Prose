@@ -449,6 +449,122 @@ public class NodeWorkbenchServiceTests
             Is.EqualTo(new[] { "draft-beat", "grandchild-beat" }));
     }
 
+    // ── MoveBeatAsync / SetBeatMembershipEnabledAsync — added 2026-08-09 while fixing a
+    // real reported defect: a beat found sorted to the very front of BCODA's Chapter 1,
+    // ahead of the chapter's actual intended opening line. Both methods previously had zero
+    // CLI/MCP wrapper (reachable only from the Blazor drag-and-drop UI) and zero test coverage.
+
+    [Test]
+    public async Task MoveBeatAsync_ToTop_BecomesFirst()
+    {
+        var s = await MakeNodeAsync();
+        var a = await svc.InsertBeatAsync(s.Id, null, "First.");
+        var b = await svc.InsertBeatAsync(s.Id, a.Id, "Second.");
+        var c = await svc.InsertBeatAsync(s.Id, b.Id, "Third.");
+
+        await svc.MoveBeatAsync(s.Id, c.Id, afterBeatId: null);
+
+        var ordered = await svc.GetOrderedBeatsAsync(s.Id);
+        Assert.That(ordered.Select(o => o.Beat.Text).ToArray(), Is.EqualTo(new[] { "Third.", "First.", "Second." }));
+    }
+
+    [Test]
+    public async Task MoveBeatAsync_AfterSpecificSibling_LandsThere()
+    {
+        var s = await MakeNodeAsync();
+        var a = await svc.InsertBeatAsync(s.Id, null, "First.");
+        var b = await svc.InsertBeatAsync(s.Id, a.Id, "Second.");
+        var c = await svc.InsertBeatAsync(s.Id, b.Id, "Third.");
+
+        // Real-corpus scenario: a beat wrongly sorted at position 1 gets moved to sit
+        // between the beats it actually belongs between.
+        await svc.MoveBeatAsync(s.Id, a.Id, afterBeatId: b.Id);
+
+        var ordered = await svc.GetOrderedBeatsAsync(s.Id);
+        Assert.That(ordered.Select(o => o.Beat.Text).ToArray(), Is.EqualTo(new[] { "Second.", "First.", "Third." }));
+    }
+
+    [Test]
+    public async Task MoveBeatAsync_BeatNotInNode_Throws()
+    {
+        var s1 = await MakeNodeAsync("S1");
+        var s2 = await MakeNodeAsync("S2");
+        var foreign = await svc.InsertBeatAsync(s2.Id, null, "Not in s1.");
+
+        Assert.ThrowsAsync<InvalidOperationException>(() => svc.MoveBeatAsync(s1.Id, foreign.Id, null));
+    }
+
+    [Test]
+    public async Task MoveBeatAsync_AfterItself_Throws()
+    {
+        var s = await MakeNodeAsync();
+        var a = await svc.InsertBeatAsync(s.Id, null, "Only one.");
+
+        Assert.ThrowsAsync<InvalidOperationException>(() => svc.MoveBeatAsync(s.Id, a.Id, afterBeatId: a.Id));
+    }
+
+    [Test]
+    public async Task SetBeatMembershipEnabledAsync_Disable_RemovesFromReadingOrderWithoutDeletingBeat()
+    {
+        var s = await MakeNodeAsync();
+        var a = await svc.InsertBeatAsync(s.Id, null, "Keep.");
+        var orphan = await svc.InsertBeatAsync(s.Id, a.Id, "Orphan vignette with no connection to this chapter.");
+
+        await svc.SetBeatMembershipEnabledAsync(s.Id, orphan.Id, enabled: false);
+
+        var ordered = await svc.GetOrderedBeatsAsync(s.Id);
+        Assert.That(ordered.Select(o => o.Beat.Text).ToArray(), Is.EqualTo(new[] { "Keep." }));
+
+        // The Beat row itself must survive untouched — this is a membership flag, not a delete.
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var stillExists = await db.Beats.AnyAsync(x => x.Id == orphan.Id);
+        Assert.That(stillExists, Is.True, "Disabling membership must not delete the Beat row");
+    }
+
+    [Test]
+    public async Task SetBeatMembershipEnabledAsync_ReEnable_RestoresToReadingOrder()
+    {
+        var s = await MakeNodeAsync();
+        var a = await svc.InsertBeatAsync(s.Id, null, "Keep.");
+        var b = await svc.InsertBeatAsync(s.Id, a.Id, "Was disabled.");
+        await svc.SetBeatMembershipEnabledAsync(s.Id, b.Id, enabled: false);
+
+        await svc.SetBeatMembershipEnabledAsync(s.Id, b.Id, enabled: true);
+
+        var ordered = await svc.GetOrderedBeatsAsync(s.Id);
+        Assert.That(ordered.Select(o => o.Beat.Text).ToArray(), Is.EqualTo(new[] { "Keep.", "Was disabled." }));
+    }
+
+    [Test]
+    public async Task SetBeatMembershipEnabledAsync_OtherNodeMembership_Unaffected()
+    {
+        var s1 = await MakeNodeAsync("S1");
+        var s2 = await MakeNodeAsync("S2");
+        var shared = await svc.InsertBeatAsync(s1.Id, null, "shared");
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.BeatNodes.Add(new BeatNode { NodeId = s2.Id, BeatId = shared.Id, SortKey = 100 });
+            await db.SaveChangesAsync();
+        }
+
+        await svc.SetBeatMembershipEnabledAsync(s1.Id, shared.Id, enabled: false);
+
+        var s1Beats = await svc.GetOrderedBeatsAsync(s1.Id);
+        var s2Beats = await svc.GetOrderedBeatsAsync(s2.Id);
+        Assert.That(s1Beats.Any(o => o.Beat.Id == shared.Id), Is.False, "disabled in s1");
+        Assert.That(s2Beats.Any(o => o.Beat.Id == shared.Id), Is.True, "s2 membership untouched");
+    }
+
+    [Test]
+    public async Task SetBeatMembershipEnabledAsync_NoMembershipRow_Throws()
+    {
+        var s1 = await MakeNodeAsync("S1");
+        var s2 = await MakeNodeAsync("S2");
+        var b = await svc.InsertBeatAsync(s2.Id, null, "Not in s1.");
+
+        Assert.ThrowsAsync<InvalidOperationException>(() => svc.SetBeatMembershipEnabledAsync(s1.Id, b.Id, enabled: false));
+    }
+
     // ── Gap-after-beat tests (the standalone Gaps table was folded into
     //    Beat.GapAfterMs in the 2026-05-23 schema migration) ────────────────
 
