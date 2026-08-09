@@ -109,6 +109,7 @@ public class BookHealthService(
         await RunCheckAsync(checks, "timeline-check", () => TimelineCheckAsync(nodeId, slug, ct));
         await RunCheckAsync(checks, "verify-book", () => BeatVerificationAsync(nodeId, slug, ct));
         await RunCheckAsync(checks, "coordinate", () => BeatCoordinationAsync(slug, ct));
+        await RunCheckAsync(checks, "voice-consistency", () => VoiceConsistencyAsync(nodeId, slug, ct));
 
         // ── DEEP tier — one LLM call per check per node ─────────────────────────────
         if (tier is BookHealthTier.Deep or BookHealthTier.Full)
@@ -575,6 +576,84 @@ public class BookHealthService(
             findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.Low,
                 $"THEME [ending-drift]: closing beats don't appear to engage the opening's value-question (\"{result.ControllingIdea}\") — {result.Diagnosis}",
                 snippet: null, suggestedFix: null);
+    }
+
+    private const int MinPovBeatsForVoiceFingerprint = 6;
+
+    /// <summary>Ports WritingQualityService.CheckVoiceCadence's algorithm (see
+    /// VoiceFingerprintAnalyzer) onto the live Nodes/Beats model — that service's real, working
+    /// voice-drift check has never run for any book on this pipeline, stuck on the legacy
+    /// Books/Chapters model and gated behind SS-A44's default-off voting path. Fully deterministic,
+    /// zero LLM calls. Per POV character (BeatEntityPresence.PresenceType='pov', ≥6 of their own
+    /// beats): split their beats in half by book order, build a vocabulary fingerprint from the
+    /// FIRST half, then test every SECOND-half beat (theirs and everyone else's) against every
+    /// character's first-half fingerprint. A second-half beat that reads closer to a DIFFERENT
+    /// character's established vocabulary than its own POV's is voice drift. Needs ≥2 POV
+    /// characters with enough beats each — a single-narrator book has no other voice to drift
+    /// relative to, so this check has nothing to measure and is skipped, not falsely clean.</summary>
+    private async Task VoiceConsistencyAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var beatIds = await db.BeatNodes.AsNoTracking()
+            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
+        if (beatIds.Count == 0) return;
+
+        var beatParams = beatIds.Select((id, i) => new SqlParameter($"@b{i}", id)).ToArray();
+        var placeholders = string.Join(",", beatParams.Select(p => p.ParameterName));
+        var povRows = await db.Database.SqlQueryRaw<PresenceRow>(
+            "SELECT BeatId, EntityId, EntityName FROM BeatEntityPresence " +
+            $"WHERE PresenceType = 'pov' AND BeatId IN ({placeholders})",
+            beatParams).ToListAsync(ct);
+        if (povRows.Count == 0) return;
+
+        var beatIdSet = beatIds.ToHashSet();
+        var pairs = povRows.Where(p => beatIdSet.Contains(p.BeatId)).ToList();
+        if (pairs.Count == 0) return;
+
+        var pairBeatIds = pairs.Select(p => p.BeatId).Distinct().ToList();
+        var beatTexts = await db.Beats.AsNoTracking()
+            .Where(b => pairBeatIds.Contains(b.Id) && b.Text != null && b.Text != "")
+            .Select(b => new { b.Id, b.Number, b.Text })
+            .ToDictionaryAsync(b => b.Id, ct);
+
+        var byEntity = pairs
+            .Where(p => beatTexts.ContainsKey(p.BeatId))
+            .GroupBy(p => p.EntityId)
+            .Select(g => new
+            {
+                EntityId = g.Key,
+                Name = g.First().EntityName,
+                Beats = g.Select(p => beatTexts[p.BeatId]).OrderBy(b => b.Number).ToList(),
+            })
+            .Where(x => x.Beats.Count >= MinPovBeatsForVoiceFingerprint)
+            .ToList();
+        if (byEntity.Count < 2) return;
+
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "VOICE-DRIFT ");
+
+        var fingerprints = new Dictionary<Guid, (string Name, HashSet<string> Tokens)>();
+        var testPassages = new List<(Guid EntityId, string Name, Guid BeatId, int Number, HashSet<string> Tokens)>();
+        foreach (var e in byEntity)
+        {
+            var half = e.Beats.Count / 2;
+            var trainTokens = e.Beats.Take(half)
+                .SelectMany(b => VoiceFingerprintAnalyzer.DistinctiveTokens(b.Text!))
+                .ToHashSet(StringComparer.OrdinalIgnoreCase);
+            fingerprints[e.EntityId] = (e.Name, trainTokens);
+            foreach (var b in e.Beats.Skip(half))
+                testPassages.Add((e.EntityId, e.Name, b.Id, b.Number, VoiceFingerprintAnalyzer.DistinctiveTokens(b.Text!)));
+        }
+
+        foreach (var t in testPassages)
+        {
+            var drift = VoiceFingerprintAnalyzer.CheckDrift(t.Tokens, t.EntityId, fingerprints);
+            if (drift is { Drifted: true } d)
+                findingsSvc.Upsert($"node:{slug}/beat:{t.BeatId:N}", chapterId: null, FindingCategory.Voice, FindingSeverity.Low,
+                    $"VOICE-DRIFT beat #{t.Number} ({t.Name}): vocabulary reads closer to {d.TopMatchName} ({d.TopMatchScore:F2}) than to {t.Name}'s own established voice ({d.OwnScore:F2}).",
+                    snippet: null, suggestedFix: $"Push this beat's prose harder toward {t.Name}'s specific cadence and vocabulary.");
+        }
     }
 
     private async Task<List<(Guid Id, int Number, string Text)>> GetEnabledBeatsAsync(
