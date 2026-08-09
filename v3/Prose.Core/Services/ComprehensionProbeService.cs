@@ -46,7 +46,7 @@ public sealed class ComprehensionProbeService(
     private const string FindingSummaryPrefix = "COMPREHENSION";
 
     public sealed record ChapterProbeResult(
-        int ChapterIndex, string ChapterTitle, string Status /* clean | defects | cached-clean | cached-defects | skipped */,
+        int ChapterIndex, string ChapterTitle, string Status /* clean | defects | cached-clean | cached-defects | skipped | error */,
         IReadOnlyList<ProbeDefect> Defects, IReadOnlyList<string> Confusions, bool FromCache);
 
     public sealed record ProbeDefect(
@@ -102,6 +102,17 @@ public sealed class ComprehensionProbeService(
                 filed += result.Defects.Count(d => d.ReaderPlausible && d.Kind != "hallucination");
         }
 
+        // Surface incomplete arbitration distinctly rather than silently under-reporting — same
+        // UX principle already applied to SwainAuditService/BehavioralInvariantEnforcer/
+        // NarrativeScienceService/CanonContradictionService this session. Own narrow,
+        // unconditional clear so a resolved outage doesn't leave a stale rollup behind.
+        findings.DeleteBySummaryPrefix($"node:{slug}", $"{FindingSummaryPrefix} [incomplete]");
+        var errored = results.Count(r => r.Status == "error");
+        if (errored > 0)
+            findings.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                $"{FindingSummaryPrefix} [incomplete]: {errored}/{results.Count} chapters could not be arbitrated (LLM errors) — re-run once resolved.",
+                snippet: null, suggestedFix: null);
+
         return new ProbeRunResult(bookNodeId, slug, title, results, filed, probed, cached);
     }
 
@@ -144,7 +155,25 @@ public sealed class ComprehensionProbeService(
         // ── 3. arbiter: candidate mismatches judged against the actual text ───────
         var allDefects = new List<ProbeDefect>();
         if (flags.Count > 0 || probe.Confusions.Count > 0)
-            allDefects = await ArbitrateAsync(ch, summaryByIndex.GetValueOrDefault(ch.Index, ""), probe, flags, arbiterModel, ct);
+        {
+            try
+            {
+                allDefects = await ArbitrateAsync(ch, summaryByIndex.GetValueOrDefault(ch.Index, ""), probe, flags, arbiterModel, ct);
+            }
+            catch (Exception ex)
+            {
+                // 2026-08-09 fix: arbitration failed (LLM exception or unparseable response) —
+                // do NOT fall through to steps 4/5 below. Filing/purging findings and writing the
+                // cache from an empty allDefects list would be exactly the bug just fixed in
+                // ArbitrateAsync itself, one call frame up: a failed evaluation permanently
+                // recorded as "this chapter is clean." Leave this chapter's prior findings and
+                // cache row completely untouched; report it as an error to the caller instead.
+                log.LogWarning(ex, "Comprehension arbitration failed for ch{Index} '{Title}' — leaving prior findings/cache untouched.",
+                    ch.Index, ch.Title);
+                return new ChapterProbeResult(ch.Index, ch.Title, "error",
+                    Array.Empty<ProbeDefect>(), probe.Confusions, FromCache: false);
+            }
+        }
 
         // ── 4. file confirmed reader-plausible defects; supersede stale ones ──────
         var filePath = $"node:{slug}/ch:{ch.Index:D2}";
@@ -338,30 +367,38 @@ public sealed class ComprehensionProbeService(
         sb.AppendLine(Truncate(ch.SourceText, MaxSourceChars));
 
         var raw = await llm.GenerateAsync(system, sb.ToString(), temperature: 0.1, maxTokens: 2500, model: arbiterModel, ct: ct);
-        raw = StripFence(raw);
-        try
+        return ParseDefects(raw);
+    }
+
+    /// <summary>Throws (JsonException) on unparseable arbiter output instead of returning an
+    /// empty defects list. 2026-08-09 fix: an empty list here used to be indistinguishable from
+    /// "the arbiter reviewed every candidate and confirmed the chapter clean" — worse than the
+    /// equivalent bug elsewhere this session, since ProbeChapterAsync unconditionally persists
+    /// whatever this returns into NodeChapterSummary.ComprehensionJson. A single transient
+    /// malformed response got PERMANENTLY cached as "cached-clean": every future re-run of that
+    /// exact chapter (same source hash, same models) kept returning the fabricated clean verdict
+    /// from cache forever, never re-calling the LLM, until the chapter's own text changed.
+    /// Throwing lets ProbeChapterAsync's caller-level catch skip the cache write entirely instead
+    /// of poisoning it. Extracted to a static method (mirrors SwainAuditService.ParseClassification/
+    /// CanonContradictionService.Parse) so this parsing contract is directly unit-testable.</summary>
+    internal static List<ProbeDefect> ParseDefects(string raw)
+    {
+        var stripped = StripFence(raw);
+        using var doc = JsonDocument.Parse(stripped);
+        var list = new List<ProbeDefect>();
+        if (doc.RootElement.TryGetProperty("defects", out var arr) && arr.ValueKind == JsonValueKind.Array)
         {
-            using var doc = JsonDocument.Parse(raw);
-            var list = new List<ProbeDefect>();
-            if (doc.RootElement.TryGetProperty("defects", out var arr) && arr.ValueKind == JsonValueKind.Array)
+            foreach (var d in arr.EnumerateArray())
             {
-                foreach (var d in arr.EnumerateArray())
-                {
-                    list.Add(new ProbeDefect(
-                        Kind: d.TryGetProperty("kind", out var k) ? k.GetString() ?? "misread" : "misread",
-                        Description: d.TryGetProperty("description", out var de) ? de.GetString() ?? "" : "",
-                        Evidence: d.TryGetProperty("evidence", out var ev) ? ev.GetString() ?? "" : "",
-                        Severity: d.TryGetProperty("severity", out var sv) ? sv.GetString() ?? "minor" : "minor",
-                        ReaderPlausible: d.TryGetProperty("readerPlausible", out var rp) && rp.ValueKind == JsonValueKind.True));
-                }
+                list.Add(new ProbeDefect(
+                    Kind: d.TryGetProperty("kind", out var k) ? k.GetString() ?? "misread" : "misread",
+                    Description: d.TryGetProperty("description", out var de) ? de.GetString() ?? "" : "",
+                    Evidence: d.TryGetProperty("evidence", out var ev) ? ev.GetString() ?? "" : "",
+                    Severity: d.TryGetProperty("severity", out var sv) ? sv.GetString() ?? "minor" : "minor",
+                    ReaderPlausible: d.TryGetProperty("readerPlausible", out var rp) && rp.ValueKind == JsonValueKind.True));
             }
-            return list;
         }
-        catch (JsonException)
-        {
-            log.LogWarning("Comprehension arbiter returned non-JSON for '{Title}' — no defects filed this run.", ch.Title);
-            return new List<ProbeDefect>();
-        }
+        return list;
     }
 
     // ── helpers ────────────────────────────────────────────────────────────────────
