@@ -33,11 +33,19 @@ internal static class VoiceFingerprintAnalyzer
 
     internal readonly record struct DriftCheck(string TopMatchName, double TopMatchScore, double OwnScore, bool Drifted);
 
+    /// <summary>Minimum absolute Jaccard-score gap the top match must beat the owner's own score
+    /// by before this counts as drift rather than noise. Calibrated 2026-08-09 against a real
+    /// book (Death Whispers in a Cat's Ear, per-beat granularity before the chapter-aggregation
+    /// fix): of 220 raw "drift" hits, 76% had a gap &lt;=0.02 and 22 were exact ties — i.e. the vast
+    /// majority of hits below this margin are indistinguishable from measurement noise, not signal.</summary>
+    private const double MinDriftMargin = 0.03;
+
     /// <summary>Compares <paramref name="testTokens"/> against every entity's fingerprint and
     /// reports whether the top Jaccard match is someone OTHER than <paramref name="ownEntityId"/>
-    /// — i.e. this passage reads closer to a different character's established vocabulary than
-    /// its own. Returns null when there isn't enough signal to judge either side reliably (thin
-    /// test passage or thin/missing fingerprint for the owner) rather than a false negative.</summary>
+    /// by a real margin — not just numerically ahead, which near-zero Jaccard scores make trivial
+    /// to trigger on pure noise (see <see cref="MinDriftMargin"/>). Returns null when there isn't
+    /// enough signal to judge either side reliably (thin test passage or thin/missing fingerprint
+    /// for the owner) rather than a false negative.</summary>
     internal static DriftCheck? CheckDrift(
         HashSet<string> testTokens,
         Guid ownEntityId,
@@ -55,6 +63,7 @@ internal static class VoiceFingerprintAnalyzer
 
         var ownScore = scores.First(s => s.Key == ownEntityId).Score;
         var top = scores[0];
-        return new DriftCheck(top.Name, top.Score, ownScore, top.Key != ownEntityId);
+        var drifted = top.Key != ownEntityId && (top.Score - ownScore) >= MinDriftMargin;
+        return new DriftCheck(top.Name, top.Score, ownScore, drifted);
     }
 }

@@ -596,9 +596,15 @@ public class BookHealthService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
         var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
-        var beatIds = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
-        if (beatIds.Count == 0) return;
+        // Keep each beat's chapter-node (bn.NodeId) — test passages are aggregated per chapter,
+        // not per beat, so Jaccard has enough tokens on both sides to mean anything (see below).
+        var beatChapters = await db.BeatNodes.AsNoTracking()
+            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled)
+            .Select(bn => new { bn.BeatId, ChapterNodeId = bn.NodeId })
+            .ToListAsync(ct);
+        if (beatChapters.Count == 0) return;
+        var chapterOf = beatChapters.ToDictionary(x => x.BeatId, x => x.ChapterNodeId);
+        var beatIds = beatChapters.Select(x => x.BeatId).ToList();
 
         var beatParams = beatIds.Select((id, i) => new SqlParameter($"@b{i}", id)).ToArray();
         var placeholders = string.Join(",", beatParams.Select(p => p.ParameterName));
@@ -634,7 +640,8 @@ public class BookHealthService(
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "VOICE-DRIFT ");
 
         var fingerprints = new Dictionary<Guid, (string Name, HashSet<string> Tokens)>();
-        var testPassages = new List<(Guid EntityId, string Name, Guid BeatId, int Number, HashSet<string> Tokens)>();
+        // (EntityId, Name, ChapterNodeId, beat ids in that chapter, min/max beat number, combined tokens)
+        var testPassages = new List<(Guid EntityId, string Name, Guid ChapterNodeId, List<Guid> BeatIds, int MinNumber, int MaxNumber, HashSet<string> Tokens)>();
         foreach (var e in byEntity)
         {
             var half = e.Beats.Count / 2;
@@ -642,17 +649,30 @@ public class BookHealthService(
                 .SelectMany(b => VoiceFingerprintAnalyzer.DistinctiveTokens(b.Text!))
                 .ToHashSet(StringComparer.OrdinalIgnoreCase);
             fingerprints[e.EntityId] = (e.Name, trainTokens);
-            foreach (var b in e.Beats.Skip(half))
-                testPassages.Add((e.EntityId, e.Name, b.Id, b.Number, VoiceFingerprintAnalyzer.DistinctiveTokens(b.Text!)));
+
+            // Aggregate the held-out half's beats BY CHAPTER — a single beat is too short for a
+            // reliable Jaccard estimate (real-corpus check 2026-08-09: per-beat testing against
+            // Death Whispers in a Cat's Ear produced 217 findings, 76% with a score gap <=0.02 and
+            // 22 exact ties reported as "drift" by dictionary-iteration accident — pure noise, not
+            // signal). A whole chapter's worth of one character's prose gives both sides of the
+            // Jaccard comparison enough tokens to separate real drift from measurement noise.
+            foreach (var chapterGroup in e.Beats.Skip(half).GroupBy(b => chapterOf[b.Id]))
+            {
+                var chapterBeats = chapterGroup.ToList();
+                var tokens = chapterBeats.SelectMany(b => VoiceFingerprintAnalyzer.DistinctiveTokens(b.Text!))
+                    .ToHashSet(StringComparer.OrdinalIgnoreCase);
+                testPassages.Add((e.EntityId, e.Name, chapterGroup.Key, chapterBeats.Select(b => b.Id).ToList(),
+                    chapterBeats.Min(b => b.Number), chapterBeats.Max(b => b.Number), tokens));
+            }
         }
 
         foreach (var t in testPassages)
         {
             var drift = VoiceFingerprintAnalyzer.CheckDrift(t.Tokens, t.EntityId, fingerprints);
             if (drift is { Drifted: true } d)
-                findingsSvc.Upsert($"node:{slug}/beat:{t.BeatId:N}", chapterId: null, FindingCategory.Voice, FindingSeverity.Low,
-                    $"VOICE-DRIFT beat #{t.Number} ({t.Name}): vocabulary reads closer to {d.TopMatchName} ({d.TopMatchScore:F2}) than to {t.Name}'s own established voice ({d.OwnScore:F2}).",
-                    snippet: null, suggestedFix: $"Push this beat's prose harder toward {t.Name}'s specific cadence and vocabulary.");
+                findingsSvc.Upsert($"node:{slug}/beat:{t.BeatIds[0]:N}", chapterId: null, FindingCategory.Voice, FindingSeverity.Low,
+                    $"VOICE-DRIFT beats #{t.MinNumber}-#{t.MaxNumber} ({t.Name}): vocabulary reads closer to {d.TopMatchName} ({d.TopMatchScore:F2}) than to {t.Name}'s own established voice ({d.OwnScore:F2}).",
+                    snippet: null, suggestedFix: $"Push this stretch's prose harder toward {t.Name}'s specific cadence and vocabulary.");
         }
     }
 
