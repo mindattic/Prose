@@ -40,11 +40,8 @@ public class OutlineAdherenceService(
             bibleText = node?.NodeBible;
 
             // SS-A43: beats live on chapter nodes (children), not directly on the book node.
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(s => s.ParentNodeId == nodeId)
-                .Select(s => s.Id)
-                .ToListAsync(ct);
-            var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+            // Recurses past any nested Collection (2026-08-09 fix).
+            var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
             remainingGoals = await (
                 from sb in db.BeatNodes.AsNoTracking()
@@ -105,12 +102,10 @@ public class OutlineAdherenceService(
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             // SS-A43: beats live on chapter nodes (children), not directly on the book node.
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(s => s.ParentNodeId == nodeId)
-                .OrderBy(s => s.SortKey)
-                .Select(s => s.Id)
-                .ToListAsync(ct);
-            var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+            // Recurses past any nested Collection (2026-08-09 fix) — the returned list is
+            // already in proper reading order (depth-first, SortKey-ordered), so it doubles
+            // as the chapter-position ordering used below.
+            var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
             var rows = await db.BeatNodes.AsNoTracking()
                 .Where(sb => beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled)
@@ -122,7 +117,7 @@ public class OutlineAdherenceService(
 
             // SS-A43: for book-mode nodes order by chapter position first, then beat SortKey within chapter.
             emptyBeats = rows
-                .OrderBy(x => childIds.Count > 0 ? childIds.IndexOf(x.NodeId) : 0)
+                .OrderBy(x => beatNodeIds.IndexOf(x.NodeId))
                 .ThenBy(x => x.BeatSortKey)
                 .Select(x => (x.Id, x.Goal))
                 .ToList();

@@ -492,11 +492,9 @@ PROSE:
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beatNumbers = curve.Select(c => c.BeatNumber).ToHashSet();
 
-        // SS-A43: beats live on chapter nodes (children) for book-mode stories.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .Select(n => n.Id).ToListAsync(ct);
-        var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        // SS-A43: beats live on chapter nodes (children) for book-mode stories. Recurses past
+        // any nested Collection (2026-08-09 fix — see NodeWorkbenchService.GetLeafDescendantIdsAsync).
+        var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var beats = await (
             from sb in db.BeatNodes

@@ -88,9 +88,7 @@ public class StructuralDiagnosticService
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var beats = await (
             from sb in db.BeatNodes.AsNoTracking()

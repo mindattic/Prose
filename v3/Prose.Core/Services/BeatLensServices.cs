@@ -69,36 +69,22 @@ public abstract class BeatLensService
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var hasChildren = await db.Nodes.AsNoTracking()
-            .AnyAsync(s => s.ParentNodeId == nodeId && s is ChapterNode, ct);
+        // Recurses past any nested Collection (2026-08-09 fix) — replaces the old
+        // direct-children-only "hasChildren" branch, which missed a split chapter's grandchildren.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var hasChildren = !(leafIds.Count == 1 && leafIds[0] == nodeId);
 
-        List<(int Num, string Text)> beats;
-        if (hasChildren)
-        {
-            var rows = await (
-                from s in db.Nodes.AsNoTracking()
-                join sb in db.BeatNodes.AsNoTracking() on s.Id equals sb.NodeId
-                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where s.ParentNodeId == nodeId && s is ChapterNode && sb.IsEnabled
-                orderby s.SortKey, sb.SortKey
-                select new { b.Text, b.Number }
-            ).ToListAsync(ct);
-            beats = rows.Where(r => !string.IsNullOrWhiteSpace(r.Text))
-                        .Select(r => (r.Number, r.Text)).ToList();
-            maxChars = Math.Max(maxChars, 100000);
-        }
-        else
-        {
-            var rows = await (
-                from sb in db.BeatNodes.AsNoTracking()
-                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where sb.NodeId == nodeId && sb.IsEnabled
-                orderby sb.SortKey
-                select new { b.Text, b.Number }
-            ).ToListAsync(ct);
-            beats = rows.Where(r => !string.IsNullOrWhiteSpace(r.Text))
-                        .Select(r => (r.Number, r.Text)).ToList();
-        }
+        var rows = await (
+            from s in db.Nodes.AsNoTracking()
+            join sb in db.BeatNodes.AsNoTracking() on s.Id equals sb.NodeId
+            join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
+            where leafIds.Contains(s.Id) && sb.IsEnabled
+            orderby s.SortKey, sb.SortKey
+            select new { b.Text, b.Number }
+        ).ToListAsync(ct);
+        List<(int Num, string Text)> beats = rows.Where(r => !string.IsNullOrWhiteSpace(r.Text))
+                    .Select(r => (r.Number, r.Text)).ToList();
+        if (hasChildren) maxChars = Math.Max(maxChars, 100000);
 
         if (beats.Count == 0)
             return new LensResult(nodeId, node.Slug, node.Title, LensName, 0,

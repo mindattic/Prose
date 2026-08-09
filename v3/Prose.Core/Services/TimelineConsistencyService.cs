@@ -75,10 +75,8 @@ public class TimelineConsistencyService
             // Collect the set of entity IDs and beat IDs for this node.
             // We join via BeatEntityMention (new unified-schema path).
             // SS-A43: for book-mode nodes, beats live on chapter children.
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == nodeId)
-                .Select(n => n.Id).ToListAsync(ct);
-            var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+            // Recurses past any nested Collection (2026-08-09 fix).
+            var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
             var BeatNodeQuery = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id

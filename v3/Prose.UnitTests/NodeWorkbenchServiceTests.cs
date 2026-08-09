@@ -695,6 +695,29 @@ public class NodeWorkbenchServiceTests
             "must recurse past the 2-level-deep Collection to its real leaf sub-chapters, and must not include the Collection node itself");
     }
 
+    [Test]
+    public async Task GetLeafDescendantIdsAsync_ReturnsLeavesInSortKeyOrder()
+    {
+        // Deliberately inserted out of SortKey order to prove the result is re-sorted,
+        // not just returned in insertion/discovery order. Callers (e.g.
+        // OutlineAdherenceService.RecalibrateAsync) rely on list position as chapter order.
+        var book = await MakeNodeAsync("Book");
+        Node third, first, second;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            third = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "t-" + Guid.NewGuid().ToString("N")[..6], Title = "Third", Kind = "chapter", Status = "draft", ParentNodeId = book.Id, SortKey = 300 };
+            first = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "f-" + Guid.NewGuid().ToString("N")[..6], Title = "First", Kind = "chapter", Status = "draft", ParentNodeId = book.Id, SortKey = 100 };
+            second = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "s-" + Guid.NewGuid().ToString("N")[..6], Title = "Second", Kind = "chapter", Status = "draft", ParentNodeId = book.Id, SortKey = 200 };
+            db.Nodes.AddRange(third, first, second); // insertion order deliberately scrambled
+            await db.SaveChangesAsync();
+        }
+
+        await using var checkDb = await dbFactory.CreateDbContextAsync();
+        var leaves = await NodeWorkbenchService.GetLeafDescendantIdsAsync(checkDb, book.Id);
+
+        Assert.That(leaves, Is.EqualTo(new[] { first.Id, second.Id, third.Id }));
+    }
+
     // ── Gap-after-beat tests (the standalone Gaps table was folded into
     //    Beat.GapAfterMs in the 2026-05-23 schema migration) ────────────────
 

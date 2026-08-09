@@ -50,11 +50,13 @@ public class MeaningBackfillService
         // overwrite=false (default): only beats with no recorded meaning (backfill).
         // overwrite=true: regenerate meaning from prose even if Description is set (refresh).
         // onlyNumbers: restrict to these beat numbers (targeted refresh).
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
         var missing = await (
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
-            where bn.IsEnabled && (bn.NodeId == node.Id || c.ParentNodeId == node.Id)
+            where bn.IsEnabled && searchIds.Contains(bn.NodeId)
                   && (overwrite || b.Description == null || b.Description == "")
                   && b.Text != null && b.Text != ""
             orderby c.SortKey, bn.SortKey

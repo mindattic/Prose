@@ -103,11 +103,8 @@ public class NarrativeForkService(
                 .FirstOrDefaultAsync(ct);
             bibleText = node?.NodeBible;
 
-            var childIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == nodeId)
-                .Select(n => n.Id)
-                .ToListAsync(ct);
-            var forkSearchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+            // Recurses past any nested Collection (2026-08-09 fix).
+            var forkSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
             var rows = await db.BeatNodes.AsNoTracking()
                 .Where(sb => forkSearchIds.Contains(sb.NodeId) && sb.IsEnabled)

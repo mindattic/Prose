@@ -145,28 +145,36 @@ public class NodeWorkbenchService
     /// code that wants "every beat under this node, unconditionally, including any Drafts
     /// bucket" should use this method; code that wants the reader's actual assembled text
     /// should keep using GetOrderedBeatsAsync.
+    ///
+    /// Returns leaves in proper reading order (depth-first, SortKey-ordered at each level) —
+    /// callers that need "chapter position" for sorting (e.g. OutlineAdherenceService.
+    /// RecalibrateAsync's chapter-then-beat ordering) can rely on list position directly
+    /// instead of re-deriving it.
     /// </summary>
     public static async Task<List<Guid>> GetLeafDescendantIdsAsync(
         ProseDbContext db, Guid rootId, CancellationToken ct = default)
     {
-        var leaves = new List<Guid>();
+        var result = new List<Guid>();
         var visited = new HashSet<Guid>();
-        var frontier = new List<Guid> { rootId };
-        while (frontier.Count > 0)
-        {
-            var alive = frontier.Where(id => visited.Add(id)).ToList(); // cycle guard
-            if (alive.Count == 0) break;
+        await CollectLeavesAsync(db, rootId, result, visited, ct);
+        return result;
+    }
 
-            var childRows = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId != null && alive.Contains(n.ParentNodeId.Value))
-                .Select(n => new { n.Id, ParentId = n.ParentNodeId!.Value })
-                .ToListAsync(ct);
+    private static async Task CollectLeavesAsync(
+        ProseDbContext db, Guid nodeId, List<Guid> result, HashSet<Guid> visited, CancellationToken ct)
+    {
+        if (!visited.Add(nodeId)) return; // cycle guard
 
-            var parentsWithChildren = childRows.Select(c => c.ParentId).ToHashSet();
-            leaves.AddRange(alive.Where(id => !parentsWithChildren.Contains(id)));
-            frontier = childRows.Select(c => c.Id).ToList();
-        }
-        return leaves;
+        var children = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == nodeId)
+            .OrderBy(n => n.SortKey)
+            .Select(n => n.Id)
+            .ToListAsync(ct);
+
+        if (children.Count == 0) { result.Add(nodeId); return; }
+
+        foreach (var childId in children)
+            await CollectLeavesAsync(db, childId, result, visited, ct);
     }
 
     /// <summary>Cheap count without loading the beats — for tile/badge displays.

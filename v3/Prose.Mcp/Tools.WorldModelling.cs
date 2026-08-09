@@ -342,9 +342,8 @@ public class WorldModellingTools(
             .FirstOrDefaultAsync() ?? nodeId.ToString();
 
         // SS-A43: expand to chapter children for book-mode nodes.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync();
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId);
         var beats = await db.BeatNodes.AsNoTracking()
             .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, sb.SortKey, b.Text })

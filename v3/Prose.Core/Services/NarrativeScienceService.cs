@@ -208,10 +208,8 @@ public class NarrativeScienceService(
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         // SS-A43: for book-mode nodes, beats live on chapter children.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beats = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id

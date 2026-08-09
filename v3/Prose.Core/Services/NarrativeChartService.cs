@@ -94,10 +94,8 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
             ?? throw new ArgumentException($"Node {nodeId} not found.");
 
         // SS-A43: beats live on chapter children for book-mode books.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .Select(n => n.Id).ToListAsync(ct);
-        var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         // Load beats for this node in book order (via BeatNode join to Beat)
         var beatRows = await db.BeatNodes

@@ -977,9 +977,8 @@ Be honest and use the whole scale.";
             .Select(g => g.OrderByDescending(r => r.ReviewedAt).First()).ToList();
         if (reviews.Count == 0) return new List<EditProposal>();
 
-        var reviewChildIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct);
-        var reviewSearchIds = reviewChildIds.Count > 0 ? reviewChildIds : new List<Guid> { nodeId };
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var reviewSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var ordered = await db.BeatNodes.Where(sb => reviewSearchIds.Contains(sb.NodeId) && sb.IsEnabled)
             .OrderBy(sb => sb.SortKey).Include(sb => sb.Beat).Select(sb => sb.Beat!).ToListAsync(ct);
         int n = ordered.Count;

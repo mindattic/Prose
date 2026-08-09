@@ -251,13 +251,11 @@ public class NodeBibleService
         {
 
         // SS-A43: beats live on chapter children for book-mode stories.
-        // Fetch chapter children in reading order (SortKey) so beat distribution is deterministic.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .OrderBy(n => n.SortKey)
-            .Select(n => n.Id).ToListAsync(ct);
-        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId };
-        var existing = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled, ct);
+        // GetLeafDescendantIdsAsync already returns leaves in reading order (SortKey-ordered,
+        // depth-first) so beat distribution below stays deterministic; also recurses past any
+        // nested Collection (2026-08-09 fix).
+        var childIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var existing = await db.BeatNodes.CountAsync(sb => childIds.Contains(sb.NodeId) && sb.IsEnabled, ct);
         if (existing > 0)
         {
             log.LogInformation("[bible] Node {NodeId} already has {Count} beats — skipping planned beat creation.", nodeId, existing);

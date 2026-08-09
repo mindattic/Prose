@@ -75,11 +75,13 @@ public class BeatEventSummaryService
             ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
 
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
         var all = await (
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
-            where bn.IsEnabled && (bn.NodeId == node.Id || c.ParentNodeId == node.Id)
+            where bn.IsEnabled && searchIds.Contains(bn.NodeId)
                   && b.Text != null && b.Text != ""
             orderby c.SortKey, bn.SortKey
             select new { b.Id, b.Number, b.Text, b.TextHash, b.EventSummary, b.EventSummaryHash, Chapter = c.Title }
@@ -214,11 +216,13 @@ Output STRICT JSON, no fences, no commentary:
             ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
 
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var eventListSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
         var rows = await (
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
-            where bn.IsEnabled && (bn.NodeId == node.Id || c.ParentNodeId == node.Id)
+            where bn.IsEnabled && eventListSearchIds.Contains(bn.NodeId)
             orderby c.SortKey, bn.SortKey
             select new { SortKey = bn.SortKey, b.Id, b.Title, b.EventSummary }
         ).ToListAsync(ct);
