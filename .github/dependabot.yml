@@ -1,0 +1,18 @@
+version: 2
+updates:
+  # v3/*.csproj packages (NuGet resolves relative to each project, but the ecosystem
+  # scan is directory-scoped — v3/ is the common ancestor of every csproj in the solution).
+  - package-ecosystem: "nuget"
+    directory: "/v3"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    # Security-fix PRs are useful even for packages already pinned by an override
+    # (e.g. SQLitePCLRaw.bundle_e_sqlite3, pinned 2026-08-09 for CVE-2025-6965) —
+    # Dependabot will still flag the NEXT vulnerability without a human re-running
+    # `dotnet list package --vulnerable` by hand.
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
