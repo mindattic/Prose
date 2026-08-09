@@ -37,11 +37,10 @@ public class LogicSweepService(
         var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var childChapters = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId && n is ChapterNode)
-            .Select(n => n.Id)
-            .ToListAsync(ct);
-        var nodeIds = childChapters.Count > 0 ? childChapters : [nodeId];
+        // Recurses past any nested Collection (2026-08-09 fix) — this is the canonical Logic
+        // Sweep QA methodology (docs/LOGIC.md); a shallow lookup here means a mid-book split
+        // chapter's beats are silently excluded from the causality/knowledge-state/timeline audit.
+        var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var beatRows = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
             .Where(bn => nodeIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null

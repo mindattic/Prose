@@ -92,11 +92,9 @@ public sealed class BeatChecklistGateService(
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         // Book nodes hold the live manuscript on chapter children (same convention
-        // as CraftRuleAuditService / BookAuditService).
-        var chapterIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId && n is ChapterNode)
-            .OrderBy(n => n.SortKey).Select(n => n.Id).ToListAsync(ct);
-        var sourceIds = chapterIds.Count > 0 ? chapterIds : new List<Guid> { nodeId };
+        // as CraftRuleAuditService / BookAuditService). Recurses past any nested Collection
+        // (2026-08-09 fix); returns leaves in reading order, which chapterOrder below relies on.
+        var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var beatRows = await db.BeatNodes.AsNoTracking()
             .Where(bn => sourceIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")

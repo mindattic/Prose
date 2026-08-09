@@ -207,12 +207,12 @@ public sealed class SwainAuditService(
     {
         // Load all beats first (single query) — DbContext is not thread-safe.
         // Beats live on chapter-child nodes (SS-A43), not directly on the book node.
-        // Collect the book node itself + all direct chapter children, then query BeatNodes.
+        // GetLeafDescendantIdsAsync recurses past any nested Collection (2026-08-09 fix) and
+        // returns leaves in proper reading order (SortKey-ordered, depth-first) — chapterOrder
+        // below relies on that list order, which the OLD query never actually guaranteed (no
+        // OrderBy at all; it worked only by incidental DB-returned order).
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var scopeIds = await db.Nodes
-            .Where(n => n.Id == nodeId || n.ParentNodeId == nodeId)
-            .Select(n => n.Id)
-            .ToListAsync(ct);
+        var scopeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         // BeatNodes.SortKey is scoped PER CHAPTER, not book-global — ranges overlap across
         // chapters (verified live: one chapter's beats span SortKey 1500-65000, the next

@@ -100,9 +100,11 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         // not narratively exact, but none of this service's checks (word count, code-leak scan,
         // acronym scan, mojibake scan) depend on cross-node reading order, only on not silently
         // dropping real content.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .Select(n => n.Id).ToListAsync(ct);
+        // Recurses past any nested Collection, not just one level of direct children
+        // (2026-08-09 follow-up fix — same "don't silently drop real content" principle
+        // as the fix described above, extended to cover a split mega-chapter's grandchildren).
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var childIds = leafIds.Count == 1 && leafIds[0] == nodeId ? [] : leafIds;
         if (childIds.Count > 0)
         {
             var childBeats = await (

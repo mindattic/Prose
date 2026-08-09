@@ -60,10 +60,9 @@ public sealed class GripePassService(
         var slug = node.Slug ?? nodeId.ToString("N");
 
         // Ordered enabled beats — the beat-number → BeatId map for anchoring gripes.
-        var chapterIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId && n is Data.Entities.ChapterNode)
-            .OrderBy(n => n.SortKey).Select(n => n.Id).ToListAsync(ct);
-        var sourceIds = chapterIds.Count > 0 ? chapterIds : new List<Guid> { nodeId };
+        // Recurses past any nested Collection; returns leaves in reading order, which
+        // chapterOrder below relies on (2026-08-09 fix).
+        var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatRows = await db.BeatNodes.AsNoTracking()
             .Where(bn => sourceIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null)
             .Select(bn => new { bn.NodeId, bn.SortKey, bn.Beat!.Id, bn.Beat.Text })

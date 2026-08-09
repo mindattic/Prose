@@ -177,25 +177,25 @@ public class BookAuditService(
             .ToArray();
         var mode = isSequel ? "sequel" : "gateway";
 
-        // For book nodes, audit the LIVE chapter prose (child chapters ordered by
-        // SortKey), not the book node's own beats — those may hold a legacy outline
-        // or condensed draft that no longer matches the published manuscript.
-        var childChapters = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == node.Id && s is ChapterNode)
-            .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
-            .OrderBy(s => s.SortKey)
-            .ToListAsync(ct);
-
-        var prose = childChapters.Count > 0
-            ? string.Join("\n\n", childChapters
-                .SelectMany(ch => ch.BeatNodes
-                    .Where(sb => sb.IsEnabled)
-                    .OrderBy(sb => sb.SortKey)
-                    .Select(sb => sb.Beat!.Text))
-                .Where(t => !string.IsNullOrWhiteSpace(t)))
-            : string.Join("\n\n", node.BeatNodes
+        // For book nodes, audit the LIVE chapter prose (leaf chapters in reading order),
+        // not the book node's own beats — those may hold a legacy outline or condensed
+        // draft that no longer matches the published manuscript. Recurses past any nested
+        // Collection (2026-08-09 fix) — the prior Include-based direct-children query missed
+        // a split chapter's grandchildren entirely (their BeatNodes navigation is empty; the
+        // beats moved to the new sub-chapters during the split).
+        var leafChapterIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
+        var isFlatNode = leafChapterIds.Count == 1 && leafChapterIds[0] == node.Id;
+        var prose = isFlatNode
+            ? string.Join("\n\n", node.BeatNodes
                 .Where(sb => sb.IsEnabled)
                 .OrderBy(sb => sb.SortKey)
+                .Select(sb => sb.Beat!.Text)
+                .Where(t => !string.IsNullOrWhiteSpace(t)))
+            : string.Join("\n\n", (await db.BeatNodes.AsNoTracking()
+                .Where(sb => leafChapterIds.Contains(sb.NodeId) && sb.IsEnabled)
+                .Include(sb => sb.Beat)
+                .ToListAsync(ct))
+                .OrderBy(sb => leafChapterIds.IndexOf(sb.NodeId)).ThenBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!.Text)
                 .Where(t => !string.IsNullOrWhiteSpace(t)));
 

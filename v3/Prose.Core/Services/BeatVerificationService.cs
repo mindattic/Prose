@@ -132,13 +132,8 @@ public class BeatVerificationService
             throw new InvalidOperationException($"Node '{slugOrCode}' not found.");
 
         // Beats may live directly on the book node OR on chapter children (SS-A43 hierarchy).
-        // Collect all node IDs in the subtree (book + chapters) before querying beats.
-        var nodeIds = new List<Guid> { node.Id };
-        var chapterIds = await db.Nodes
-            .Where(n => n.ParentNodeId == node.Id)
-            .Select(n => n.Id)
-            .ToListAsync(ct);
-        nodeIds.AddRange(chapterIds);
+        // Recurses past any nested Collection (2026-08-09 fix).
+        var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
 
         var beatIds = await db.BeatNodes
             .Where(bn => nodeIds.Contains(bn.NodeId) && bn.IsEnabled)

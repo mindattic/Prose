@@ -107,13 +107,9 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
         if (rules.Count == 0)
             return new NounConsistencyReport(node.Title, node.Slug, node.NodeCode, 0, []);
 
-        // Include one level of chapter children so a BookNode slug covers its chapters.
-        var nodeIds = new List<Guid> { node.Id };
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == node.Id)
-            .Select(n => n.Id)
-            .ToListAsync(ct);
-        nodeIds.AddRange(childIds);
+        // Recurses past any nested Collection so a BookNode slug covers all its chapters,
+        // at any depth (2026-08-09 fix).
+        var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
 
         var beats = await db.BeatNodes
             .AsNoTracking()
