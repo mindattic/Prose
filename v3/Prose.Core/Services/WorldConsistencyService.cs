@@ -32,6 +32,16 @@ public class WorldConsistencyService : PipelineServiceBase
     public List<ConsistencyIssue> EntityConflicts { get; private set; } = [];
     public List<DuplicatePair>    Duplicates      { get; private set; } = [];
 
+    /// <summary>Count of Phase 2 windows whose LLM call failed and were silently skipped
+    /// (2026-08-09 fix). Before this, a failed window's exception was caught and the loop just
+    /// continued adding nothing to EntityConflicts for it — "0 conflicts in this window because
+    /// the check failed" was indistinguishable from "0 conflicts because the window is genuinely
+    /// clean." Lower severity than the other fail-open fixes this session (EntityConflicts is an
+    /// in-memory result displayed once per run, not a persisted cache an outage could poison
+    /// forever) — but still a real signal a caller/UI should be able to show ("N windows could
+    /// not be checked"), not silence.</summary>
+    public int FailedConflictWindowCount { get; private set; }
+
     // Configuration
     public bool RunRuleScan        { get; set; } = true;
     public bool RunConflictCheck   { get; set; } = true;
@@ -105,6 +115,7 @@ public class WorldConsistencyService : PipelineServiceBase
         RuleViolations  = [];
         EntityConflicts = [];
         Duplicates      = [];
+        FailedConflictWindowCount = 0;
 
         if (RunRuleScan)
             RunRuleScanPhase();
@@ -119,7 +130,9 @@ public class WorldConsistencyService : PipelineServiceBase
         if (RunDedup)
             RunDedupPhase();
 
-        Notify("Done", 1, 1);
+        Notify("Done", 1, 1, FailedConflictWindowCount > 0
+            ? $"{FailedConflictWindowCount} conflict-check window(s) could not be evaluated (LLM errors) — re-run to check them"
+            : "");
     }
 
     // ── Phase 1: Rule scan ────────────────────────────────────
@@ -255,6 +268,10 @@ public class WorldConsistencyService : PipelineServiceBase
             }
             catch (Exception ex)
             {
+                // 2026-08-09 fix: track this instead of silently continuing — a failed window
+                // must not read as "0 conflicts, this window is clean" to whatever displays
+                // EntityConflicts after the run.
+                FailedConflictWindowCount++;
                 log.LogWarning("Conflict check window failed: {Msg}", ex.Message);
             }
         }

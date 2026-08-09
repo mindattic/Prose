@@ -118,11 +118,24 @@
                 <span><i class="bi bi-exclamation-triangle text-warning"></i> Entity Conflicts</span>
                 <span class="badge bg-warning text-dark">@Checker.EntityConflicts.Count</span>
             </div>
+            @if (Checker.FailedConflictWindowCount > 0)
+            {
+                <div class="alert alert-warning alert-dark py-1 px-2 mb-0 small rounded-0">
+                    <i class="bi bi-question-circle"></i>
+                    @Checker.FailedConflictWindowCount window(s) could not be checked (LLM errors) — this is INCOMPLETE, not clean. Re-run once resolved.
+                </div>
+            }
             <div class="card-body p-0" style="max-height:460px;overflow-y:auto;">
-                @if (Checker.EntityConflicts.Count == 0)
+                @if (Checker.EntityConflicts.Count == 0 && Checker.FailedConflictWindowCount == 0)
                 {
                     <div class="text-muted text-center py-4 small">
                         <i class="bi bi-check-circle text-success"></i> No conflicts found
+                    </div>
+                }
+                else if (Checker.EntityConflicts.Count == 0)
+                {
+                    <div class="text-muted text-center py-4 small">
+                        <i class="bi bi-question-circle text-warning"></i> No conflicts found among the windows that WERE checked — see warning above
                     </div>
                 }
                 else
