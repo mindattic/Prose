@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
+using Prose.Core.Data;
 using Prose.Core.Models;
 using Prose.Core.Services;
 
@@ -241,15 +243,18 @@ public class ContextTools
     private readonly SemanticIndexService semanticIndex;
     private readonly WorldGraphService graph;
     private readonly MotifService motifs;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
 
     public ContextTools(
         SemanticIndexService semanticIndex,
         WorldGraphService graph,
-        MotifService motifs)
+        MotifService motifs,
+        IDbContextFactory<ProseDbContext> dbFactory)
     {
         this.semanticIndex = semanticIndex;
         this.graph = graph;
         this.motifs = motifs;
+        this.dbFactory = dbFactory;
     }
 
     /// <summary>Search the world graph by theme rather than by name. TF-IDF cosine similarity over every entity description. Surfaces entities thematically relevant to what you're about to write. Returns ranked id+name+type+score.</summary>
@@ -289,6 +294,67 @@ public class ContextTools
         motifs.Plant(bookId, name, description, kindEnum, introducedInChapterId);
         return JsonSerializer.Serialize(new { ok = true, name, kind = kindEnum.ToString() }, CanonTools.JsonOpts);
     }
+
+    /// <summary>Scan a node's actual written prose for motif candidates. MotifService's heuristic
+    /// detector (recurring italicized phrases, recurring capitalized named objects not already
+    /// characters/places) existed only against the legacy Chapter model and was never reachable
+    /// against a live book — this is the first entry point that runs it on real Nodes/Beats prose.
+    /// Read-only: proposals are returned for review, never auto-planted (call plant_motif for any
+    /// you want to keep, same as the existing UI workflow this mirrors).</summary>
+    [McpServerTool, Description("Scan a node's actual written prose for motif candidates — italicized phrases that recur, or capitalized named objects (not already characters/places) that repeat 3+ times. Returns proposals for review; nothing is written automatically. Pass a chapter-level node for one chapter's beats, or a book-level node to aggregate every chapter's beats. Plant any you want to keep via plant_motif.")]
+    public async Task<string> ProposeMotifs(
+        [Description("Node id (GUID) or slug/code to scan.")] string nodeIdOrSlug)
+    {
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
+        if (nodeId == null) return Error("node_not_found", nodeIdOrSlug);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId);
+        if (node == null) return Error("node_not_found", nodeIdOrSlug);
+
+        var childIds = await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync();
+        var searchIds = childIds.Count > 0 ? childIds : new List<Guid> { nodeId.Value };
+
+        var beatIds = await db.BeatNodes.AsNoTracking()
+            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled)
+            .OrderBy(bn => bn.SortKey)
+            .Select(bn => bn.BeatId)
+            .ToListAsync();
+        if (beatIds.Count == 0) return Error("no_beats", nodeIdOrSlug);
+
+        var beatTexts = await db.Beats.AsNoTracking()
+            .Where(b => beatIds.Contains(b.Id) && b.Text != null && b.Text != "")
+            .Select(b => b.Text)
+            .ToListAsync();
+        if (beatTexts.Count == 0) return Error("no_written_beats", nodeIdOrSlug);
+
+        var knownNames = await db.BeatEntityMentions.AsNoTracking()
+            .Where(m => beatIds.Contains(m.BeatId))
+            .Select(m => m.EntityName)
+            .Distinct()
+            .ToListAsync();
+
+        var prose = string.Join("\n\n", beatTexts);
+        var proposals = motifs.ProposeFromText(nodeId.Value.ToString(), node.Title ?? node.Slug ?? nodeIdOrSlug, prose, knownNames);
+
+        return JsonSerializer.Serialize(new { node_id = nodeId, beat_count = beatTexts.Count, proposals }, CanonTools.JsonOpts);
+    }
+
+    private async Task<Guid?> ResolveNodeIdAsync(string idOrSlug)
+    {
+        if (string.IsNullOrWhiteSpace(idOrSlug)) return null;
+        await using var db = await dbFactory.CreateDbContextAsync();
+        if (Guid.TryParse(idOrSlug, out var guid))
+        {
+            var byId = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == guid);
+            if (byId != null) return byId.Id;
+        }
+        var bySlug = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug);
+        return bySlug?.Id;
+    }
+
+    private static string Error(string code, string detail) =>
+        JsonSerializer.Serialize(new { error = code, detail }, CanonTools.JsonOpts);
 
     /// <summary>Get a graph node's neighbors (relationships) up to N hops. Walks from a known entity to entities related by canon — alliances, rivalries, family, mentor links, location ownership.</summary>
     [McpServerTool, Description("Get a graph node's neighbors (relationships) up to N hops. Use this to walk from a known entity to entities related by canon — alliances, rivalries, family, mentor links, location ownership.")]

@@ -72,14 +72,23 @@ public class MotifService
     /// recur, capitalized named objects (proper nouns not already in canon as characters/places),
     /// and repeated short phrases. Caller is responsible for showing these to the user for
     /// confirmation — the inventory is never auto-updated.
+    /// Thin wrapper over <see cref="ProposeFromText"/> for the legacy Chapter-model caller
+    /// (Motifs.razor) — <c>bookId</c>/plant storage was never actually Chapter-coupled (both are
+    /// plain string keys via SettingsKvStore), only this entry point's signature was. New callers
+    /// against the live Nodes/Beats model should call ProposeFromText directly.
     /// </summary>
-    public List<MotifProposal> ProposeFromChapter(string bookId, Chapter chapter, IEnumerable<string> knownEntityNames)
+    public List<MotifProposal> ProposeFromChapter(string bookId, Chapter chapter, IEnumerable<string> knownEntityNames) =>
+        ProposeFromText(bookId, chapter.Title, chapter.Html ?? "", knownEntityNames);
+
+    /// <summary>Same heuristic as <see cref="ProposeFromChapter"/>, decoupled from the legacy
+    /// Chapter model — takes plain text and a label (a chapter/book title, used only in the
+    /// human-readable Evidence string) so it can run against real Node/Beat prose.</summary>
+    public List<MotifProposal> ProposeFromText(string bookId, string label, string prose, IEnumerable<string> knownEntityNames)
     {
         var inventory = Load(bookId);
         var existing = inventory.Motifs.Select(m => m.Name).ToHashSet(StringComparer.OrdinalIgnoreCase);
         var known = knownEntityNames.ToHashSet(StringComparer.OrdinalIgnoreCase);
 
-        var prose = chapter.Html ?? "";
         var proposals = new List<MotifProposal>();
 
         // (1) Italicized phrases that recur — *like this* appearing 2+ times.
@@ -96,7 +105,7 @@ public class MotifService
                 Name = phrase,
                 Kind = MotifKind.Phrase,
                 Description = $"Italicized phrase that recurs in this chapter — repeating it deliberately across chapters would thread a callback.",
-                Evidence = $"appears multiple times within \"{chapter.Title}\"",
+                Evidence = $"appears multiple times within \"{label}\"",
             });
         }
 
@@ -117,7 +126,7 @@ public class MotifService
                 Name = name,
                 Kind = MotifKind.Object,
                 Description = $"Capitalized named object that recurs in this chapter — {name} appears repeatedly and is not in canon as a character or place.",
-                Evidence = $"3+ occurrences in \"{chapter.Title}\"",
+                Evidence = $"3+ occurrences in \"{label}\"",
             });
         }
 
