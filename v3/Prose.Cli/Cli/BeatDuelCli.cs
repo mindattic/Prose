@@ -119,7 +119,10 @@ public static class BeatDuelCli
         }
         else
         {
-            Console.WriteLine($"Verdict: {(result.Replace ? "REPLACE — revision wins" : "KEEP — original stands")}" +
+            var verdictLabel = result.Inconclusive
+                ? "❓ INCONCLUSIVE — panel could not be evaluated (LLM errors), NOT a real rejection"
+                : result.Replace ? "REPLACE — revision wins" : "KEEP — original stands";
+            Console.WriteLine($"Verdict: {verdictLabel}" +
                               $"  ({result.BetterVotes} better / {result.WorseVotes} worse / {result.SameVotes} same" +
                               $"{(result.RoundsRun == 2 ? ", escalated to 7 voters" : "")}{(result.FromCache ? ", cached" : "")})");
             foreach (var b in result.Ballots)
@@ -142,11 +145,15 @@ public static class BeatDuelCli
         {
             Console.WriteLine("\n(verdict only — re-run with --apply to write the replacement)");
         }
+        else if (result.Inconclusive && !jsonMode)
+        {
+            Console.WriteLine("\nInconclusive — the panel hit LLM errors and never reached a real verdict. Re-run once resolved; do not treat this as the revision having failed on the merits.");
+        }
         else if (!result.Replace && result.RoundsRun == 2 && !jsonMode)
         {
             Console.WriteLine("\nContested — use the rationales above as revision fuel, then duel the next draft.");
         }
 
-        return result.Replace ? 0 : 1;
+        return result.Inconclusive ? 2 : result.Replace ? 0 : 1;
     }
 }

@@ -104,9 +104,14 @@ public class BeatDuelService(
 
         // Round 1: three lenses.
         var round1 = await CastBallotsAsync(Round1Lenses, originalText, revisionText, context, requireRationale: false, ct);
-        var decision = DecideRound1(round1);
+        // 2026-08-09 fix: a round with any errored ballot forces escalation to the fuller 7-voter
+        // panel (the same path already used for a genuine 2-1 split) rather than letting
+        // DecideRound1 read a fabricated "same" as real signal — reuses the existing "uncertain,
+        // get more opinions" mechanism instead of inventing a new one.
+        var decision = round1.Any(b => b.IsError) ? "escalate" : DecideRound1(round1);
         var allBallots = new List<DuelBallot>(round1);
         var roundsRun = 1;
+        var inconclusive = false;
 
         if (decision == "escalate")
         {
@@ -116,41 +121,62 @@ public class BeatDuelService(
                 Round1Lenses.Concat(EscalationLenses).ToArray(),
                 originalText, revisionText, context, requireRationale: true, ct);
             allBallots = round2.ToList();
-            decision = DecideEscalation(round2);
             roundsRun = 2;
+            if (round2.Any(b => b.IsError))
+            {
+                // No further escalation tier exists — the panel genuinely could not reach a
+                // trustworthy verdict. Force the safe default (never replace on incomplete
+                // evidence) but mark it distinctly so the caller knows this was an infra
+                // failure, not a real editorial rejection.
+                decision = "keep";
+                inconclusive = true;
+            }
+            else
+            {
+                decision = DecideEscalation(round2);
+            }
         }
 
         var result = new DuelResult(
-            Replace:     decision == "replace",
-            RoundsRun:   roundsRun,
-            BetterVotes: allBallots.Count(b => b.Vote == "better"),
-            WorseVotes:  allBallots.Count(b => b.Vote == "worse"),
-            SameVotes:   allBallots.Count(b => b.Vote == "same"),
-            Ballots:     allBallots,
-            FromCache:   false);
+            Replace:      decision == "replace",
+            RoundsRun:    roundsRun,
+            BetterVotes:  allBallots.Count(b => b.Vote == "better"),
+            WorseVotes:   allBallots.Count(b => b.Vote == "worse"),
+            SameVotes:    allBallots.Count(b => b.Vote == "same"),
+            Ballots:      allBallots,
+            FromCache:    false,
+            Inconclusive: inconclusive);
 
-        // Persist the verdict.
-        try
+        // Persist the verdict — but NEVER cache an inconclusive one. BeatDuelVerdicts is keyed
+        // on the exact (original, revision) text pair and never expires on its own; caching a
+        // "keep" that an LLM outage produced would permanently poison every future identical
+        // comparison with a fabricated rejection, the same class of bug already fixed for
+        // ComprehensionProbeService this session (a failed evaluation permanently cached as a
+        // real one). Let an inconclusive duel re-run for real once the infra issue resolves.
+        if (!inconclusive)
         {
-            await using var db = await dbFactory.CreateDbContextAsync(ct);
-            db.BeatDuelVerdicts.Add(new BeatDuelVerdict
+            try
             {
-                OriginalHash = originalHash,
-                RevisionHash = revisionHash,
-                Verdict      = result.Replace ? "replace" : "keep",
-                RoundsRun    = roundsRun,
-                BetterVotes  = result.BetterVotes,
-                WorseVotes   = result.WorseVotes,
-                SameVotes    = result.SameVotes,
-                BallotsJson  = JsonSerializer.Serialize(allBallots),
-                Goal         = Truncate(context.Goal, 500),
-                BeatId       = context.BeatId,
-            });
-            await db.SaveChangesAsync(ct);
-        }
-        catch (Exception ex)
-        {
-            log.LogWarning(ex, "[duel] verdict cache write failed — result still returned");
+                await using var db = await dbFactory.CreateDbContextAsync(ct);
+                db.BeatDuelVerdicts.Add(new BeatDuelVerdict
+                {
+                    OriginalHash = originalHash,
+                    RevisionHash = revisionHash,
+                    Verdict      = result.Replace ? "replace" : "keep",
+                    RoundsRun    = roundsRun,
+                    BetterVotes  = result.BetterVotes,
+                    WorseVotes   = result.WorseVotes,
+                    SameVotes    = result.SameVotes,
+                    BallotsJson  = JsonSerializer.Serialize(allBallots),
+                    Goal         = Truncate(context.Goal, 500),
+                    BeatId       = context.BeatId,
+                });
+                await db.SaveChangesAsync(ct);
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "[duel] verdict cache write failed — result still returned");
+            }
         }
 
         return result;
@@ -216,6 +242,21 @@ public class BeatDuelService(
     /// on presentation order carries no signal about the text.</summary>
     internal static DuelBallot MergeOrders(DuelBallot forward, DuelBallot backward)
     {
+        // 2026-08-09 fix: if either pass hit an LLM exception, neither vote is a genuine read of
+        // the text — averaging/directional-merge logic below would silently launder a failed
+        // call into a real-looking "same" (or worse, let a real directional vote from the OTHER
+        // pass stand alone as if it were confirmed by two independent reads). Propagate the
+        // error instead of merging through it.
+        if (forward.IsError || backward.IsError)
+            return forward with
+            {
+                Vote = "same",
+                Confidence = 0,
+                OrderChecked = true,
+                IsError = true,
+                Rationale = $"(ballot failed) fwd: {forward.Rationale} | bwd: {backward.Rationale}",
+            };
+
         if (forward.Vote == backward.Vote)
             return forward with { Confidence = (forward.Confidence + backward.Confidence) / 2, OrderChecked = true };
 
@@ -300,10 +341,17 @@ public class BeatDuelService(
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "[duel] ballot failed for lens {Lens} via {Provider} — counting as 'same'",
+            // 2026-08-09 fix: this used to silently cast Vote="same" — a real, ballot-producible
+            // value the decision rules (DecideRound1/DecideEscalation) cannot distinguish from a
+            // genuine "no meaningful difference" read. Marked IsError so the caller (DuelAsync)
+            // can force escalation / mark the overall verdict Inconclusive instead of persisting
+            // a "keep" decided by an LLM exception into the permanent BeatDuelVerdicts cache —
+            // same fail-open bug class as SwainAuditService/ComprehensionProbeService this
+            // session, and the same permanent-cache-poisoning risk as the latter.
+            log.LogWarning(ex, "[duel] ballot failed for lens {Lens} via {Provider}",
                 lensKey, seat?.Provider ?? "default");
             return new DuelBallot(lensKey, "same", 0, $"(ballot failed: {ex.Message})",
-                seat?.Provider ?? "default", seat?.Model ?? "");
+                seat?.Provider ?? "default", seat?.Model ?? "", IsError: true);
         }
     }
 
@@ -353,10 +401,15 @@ public record DuelContext(
 public record DuelBallot(
     string Lens, string Vote, double Confidence, string Rationale,
     string Provider = "default", string Model = "",
-    bool OrderChecked = false, bool OrderFlipped = false);
+    bool OrderChecked = false, bool OrderFlipped = false,
+    bool IsError = false);
 
 /// <summary>Duel outcome. Replace=false with 2 rounds run means the panel stayed
-/// contested — the escalation ballots' rationales are the revision fuel.</summary>
+/// contested — the escalation ballots' rationales are the revision fuel.
+/// Inconclusive=true means the panel could not be trusted at all (an LLM
+/// exception, not a real "same" verdict, hit escalation) — Replace is forced
+/// false (the safe default), but this is NOT a genuine "keep" editorial verdict
+/// and callers should retry rather than treat it as rejection on the merits.</summary>
 public record DuelResult(
     bool Replace,
     int RoundsRun,
@@ -364,4 +417,5 @@ public record DuelResult(
     int WorseVotes,
     int SameVotes,
     IReadOnlyList<DuelBallot> Ballots,
-    bool FromCache);
+    bool FromCache,
+    bool Inconclusive = false);

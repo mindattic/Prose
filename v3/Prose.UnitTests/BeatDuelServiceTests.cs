@@ -1,4 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging.Abstractions;
 using NUnit.Framework;
+using Prose.Core.Data;
+using Prose.Core.Interfaces;
 using Prose.Core.Services;
 
 namespace Prose.UnitTests;
@@ -81,6 +85,104 @@ public class BeatDuelServiceTests
         Assert.That(merged.Vote, Is.EqualTo("same"));
         Assert.That(merged.OrderFlipped, Is.True);
         Assert.That(merged.Confidence, Is.EqualTo(0));
+    }
+
+    // 2026-08-09 fix: an errored ballot from either pass must propagate as an error on the
+    // merged result, not get silently laundered into a real-looking "same" or, worse, let the
+    // OTHER pass's real directional vote stand alone as if two independent reads confirmed it.
+
+    [Test]
+    public void MergeOrders_ForwardErrored_PropagatesError()
+    {
+        var errored = new DuelBallot("lens", "same", 0, "(ballot failed: timeout)", IsError: true);
+        var merged = BeatDuelService.MergeOrders(errored, B2("better"));
+        Assert.That(merged.IsError, Is.True);
+    }
+
+    [Test]
+    public void MergeOrders_BackwardErrored_PropagatesError()
+    {
+        var errored = new DuelBallot("lens", "same", 0, "(ballot failed: timeout)", IsError: true);
+        var merged = BeatDuelService.MergeOrders(B2("better"), errored);
+        Assert.That(merged.IsError, Is.True);
+    }
+
+    [Test]
+    public void MergeOrders_BothErrored_PropagatesError()
+    {
+        var e1 = new DuelBallot("lens", "same", 0, "(ballot failed: a)", IsError: true);
+        var e2 = new DuelBallot("lens", "same", 0, "(ballot failed: b)", IsError: true);
+        var merged = BeatDuelService.MergeOrders(e1, e2);
+        Assert.That(merged.IsError, Is.True);
+    }
+
+    [Test]
+    public void MergeOrders_NeitherErrored_NoErrorPropagated()
+    {
+        var merged = BeatDuelService.MergeOrders(B2("better"), B2("better"));
+        Assert.That(merged.IsError, Is.False);
+    }
+
+    // ── DuelAsync integration: a total LLM outage must never be cached as a real "keep" ──
+
+    private sealed class ThrowingLlm : ILlmService
+    {
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user,
+            double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default) =>
+            throw new InvalidOperationException("Circuit breaker open for provider 'claude-api'.");
+    }
+
+    private sealed class FixedResponseLlm(string response) : ILlmService
+    {
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user,
+            double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default) =>
+            Task.FromResult(response);
+    }
+
+    private static (BeatDuelService Svc, IDbContextFactory<ProseDbContext> DbFactory) Make(ILlmService llm)
+    {
+        var tempRoot = Path.Combine(Path.GetTempPath(), "ss-duel-tests-" + Guid.NewGuid().ToString("N"));
+        Directory.CreateDirectory(tempRoot);
+        var paths = new TestPathProviderWithRoot(tempRoot);
+        var dbFactory = TestDbFactory.For(paths, "duel");
+        return (new BeatDuelService(llm, dbFactory, NullLogger<BeatDuelService>.Instance), dbFactory);
+    }
+
+    [Test]
+    public async Task DuelAsync_TotalOutage_ReturnsInconclusive_NeverCaches()
+    {
+        var (svc, dbFactory) = Make(new ThrowingLlm());
+
+        var result = await svc.DuelAsync("Original text.", "Revision text.",
+            new DuelContext("Test Story"), allowVotes: true);
+
+        Assert.That(result.Inconclusive, Is.True);
+        Assert.That(result.Replace, Is.False, "an inconclusive duel must never replace on incomplete evidence");
+        Assert.That(result.RoundsRun, Is.EqualTo(2), "round 1's error should force escalation, not a premature keep");
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var cached = await db.BeatDuelVerdicts.CountAsync();
+        Assert.That(cached, Is.EqualTo(0), "an inconclusive result must never be written to the permanent verdict cache");
+    }
+
+    [Test]
+    public async Task DuelAsync_AllBallotsSame_KeepsAndCachesNormally()
+    {
+        var raw = """{"verdict":"same","confidence":0.6,"rationale":"no meaningful difference"}""";
+        var (svc, dbFactory) = Make(new FixedResponseLlm(raw));
+
+        var result = await svc.DuelAsync("Original text.", "Revision text.",
+            new DuelContext("Test Story"), allowVotes: true);
+
+        Assert.That(result.Inconclusive, Is.False);
+        Assert.That(result.Replace, Is.False);
+        Assert.That(result.SameVotes, Is.EqualTo(3));
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var cached = await db.BeatDuelVerdicts.CountAsync();
+        Assert.That(cached, Is.EqualTo(1), "a genuine (non-error) verdict should be cached normally");
     }
 
     // ── Blueprint JSON extraction (multi-fragment / truncated responses) ──
