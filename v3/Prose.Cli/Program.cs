@@ -53,6 +53,14 @@ if (UniverseBootstrap.RequestedSlug == null
         "--reset-password", "--sync-markdown", "--generate-canon-md", "--migrate-canon-docs",
         "--schema", "--universe", "--help", "-h", "--sql-export", "--gpu", "--runpod",
         "--kdp-status", "--kdp-manifest", "--kdp-mark-published", "--audit-consistency",
+        // 2026-08-09: --seed applies raw SqlSeedService.Seeds scripts, each of which either
+        // touches no universe-scoped row (schema ALTER/CREATE) or targets its own explicit,
+        // hardcoded row (e.g. add_universe_*.sql inserts a specific new Universe row) — there
+        // is no ambient universe scope for a seed script to need or default. Found missing
+        // while registering the universe_nonfiction/horror/erotica seeds (fresh-machine
+        // reproducibility audit): the guard blocked exactly the fresh-DB-bootstrap use case
+        // this flag exists for.
+        "--seed", "--migrate-sql",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)

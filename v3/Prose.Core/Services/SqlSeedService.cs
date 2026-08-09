@@ -61,6 +61,16 @@ public class SqlSeedService
             ["node_schema_20260518"]          = "create_node_schema_20260518.sql",
             ["beat_number_20260522"]            = "add_beat_number_20260522.sql",
             ["gaps_table_20260522"]             = "add_gaps_table_20260522.sql",
+            // 2026-08-09: universe rows have no EF-migration equivalent (Universe is seed DATA,
+            // not schema) and were previously unregistered anywhere — a fresh DB built via
+            // --migrate-sql --schema + --seed --all was silently missing NONFICTION/HORROR/
+            // EROTICA. Found via a fresh-machine reproducibility audit; see the .sql files'
+            // own headers for per-universe context. GLMZ/SCRY are seeded elsewhere (bootstrap
+            // fast path); FICTION has no script at all yet — created via app tooling with a
+            // non-sequential Guid, not one of these hand-authored inserts — flagged separately.
+            ["universe_nonfiction"]              = "add_universe_gspl_20260726.sql",
+            ["universe_horror"]                  = "add_universe_horror_20260803.sql",
+            ["universe_erotica"]                 = "add_universe_erotica_20260804.sql",
         };
 
     public class SeedResult
@@ -107,7 +117,14 @@ public class SqlSeedService
 
         try
         {
-            await db.Database.ExecuteSqlRawAsync(prelude + script, ct);
+            // 2026-08-09 bug fix: ExecuteSqlRawAsync(string, ct) resolves to the
+            // params-object[]-plus-implicit-default-token overload, NOT "sql + cancellation
+            // token" — the compiler happily boxes `ct` as a lone SQL parameter, and EF Core
+            // then throws "no store type mapping for CancellationToken" the instant any seed
+            // actually runs. This meant --seed (and every registered seed) has never worked —
+            // found while wiring up the universe_nonfiction/horror/erotica seeds live. Must
+            // pass an explicit empty parameter array to disambiguate.
+            await db.Database.ExecuteSqlRawAsync(prelude + script, Array.Empty<object>(), ct);
             await RecordRunAsync(db, name, ct);
             result.Success = true;
             result.Message = $"Seed '{name}' applied.";
@@ -191,10 +208,17 @@ public class SqlSeedService
 
     private static async Task RecordRunAsync(ProseDbContext db, string name, CancellationToken ct)
     {
+        // 2026-08-09 bug fix: `ct` and `name` were swapped into the params-object[] overload —
+        // `ct` was bound as SQL parameter {0} (the CancellationToken itself, which EF Core has
+        // no store mapping for) and `name` was silently ignored as an unused second parameter.
+        // Every successful seed insert above this call still threw here, so --seed reported
+        // "failed" on every run despite the actual script succeeding, and SeedRuns never
+        // recorded anything — re-running any seed re-applied its (idempotent, so harmless, but
+        // never actually skipped) INSERT every time. Same root cause as the fix a few lines up.
         await db.Database.ExecuteSqlRawAsync(
             "MERGE [dbo].[SeedRuns] AS t USING (SELECT {0} AS [Name]) AS s ON t.[Name] = s.[Name] " +
             "WHEN MATCHED THEN UPDATE SET RanAt = SYSUTCDATETIME() " +
             "WHEN NOT MATCHED THEN INSERT ([Name], [RanAt]) VALUES (s.[Name], SYSUTCDATETIME());",
-            ct, name);
+            new object[] { name }, ct);
     }
 }
