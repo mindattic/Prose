@@ -79,13 +79,14 @@ public class SceneContextAssembler(
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await db.Database.ExecuteSqlRawAsync("DELETE FROM [dbo].[BeatEntities] WHERE [BeatId] = {0}", [beatId], ct);
-        if (ctx.Roster.Count == 0) return;
+        var roster = DedupeByEntityId(ctx.Roster);
+        if (roster.Count == 0) return;
         var sql = new System.Text.StringBuilder(
             "INSERT INTO [dbo].[BeatEntities] ([BeatId],[EntityId],[Name],[EntityType],[MatchSource],[Score]) VALUES ");
         var parameters = new List<object?> { beatId };
-        for (int i = 0; i < ctx.Roster.Count; i++)
+        for (int i = 0; i < roster.Count; i++)
         {
-            var r = ctx.Roster[i];
+            var r = roster[i];
             int b = 1 + i * 5;
             if (i > 0) sql.Append(',');
             sql.Append($"({{0}},{{{b}}},{{{b+1}}},{{{b+2}}},{{{b+3}}},{{{b+4}}})");
@@ -97,6 +98,21 @@ public class SceneContextAssembler(
         }
         await db.Database.ExecuteSqlRawAsync(sql.ToString(), parameters.Cast<object>().ToArray(), ct);
     }
+
+    /// <summary>
+    /// De-dup a roster by EntityId, keeping the highest-scoring match. A character can
+    /// legitimately match a beat twice (once via canonical Name, once via a registered alias,
+    /// e.g. "Yemina Fola" + "Yemina" both present in the same passage) — BeatEntities has a
+    /// PRIMARY KEY on (BeatId, EntityId), so a naive roster-to-INSERT mapping can violate it.
+    /// Found 2026-08-10 running a corpus-wide backfill right after bulk-adding first-name
+    /// aliases. Internal (not private) so it can be unit-tested without a database — this
+    /// method's caller, PersistRosterAsync, uses SQL Server-only DDL the SQLite test fixture
+    /// can't run.
+    /// </summary>
+    internal static List<SceneEntityRef> DedupeByEntityId(IEnumerable<SceneEntityRef> roster) =>
+        roster.GroupBy(r => r.EntityId)
+              .Select(g => g.OrderByDescending(r => r.Score).First())
+              .ToList();
 
     /// <summary>
     /// The reverse direction (RFC 0002): the story reveals details about entities; this
