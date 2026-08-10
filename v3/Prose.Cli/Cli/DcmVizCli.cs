@@ -134,20 +134,32 @@ public static class DcmVizCli
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        // Check for chapter children (book layout)
-        var chapters = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .OrderBy(n => n.SortKey)
-            .Select(n => n.Id)
-            .ToListAsync();
+        // 2026-08-09 bug fix: this used to look only one level deep (direct chapter
+        // children of the book), so a book whose chapter is itself a split Collection
+        // (chapter -> N sub-chapters -> beats, e.g. Vigil's End after --split-collection)
+        // reported "No enabled beats found" even though the book plainly has beats.
+        // GetLeafDescendantIdsAsync recurses to arbitrary depth and returns the actual
+        // leaf nodes beats live on — the same helper already used at every other
+        // book-walking call site in the codebase.
+        var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId);
 
-        var sourceIds = chapters.Count > 0 ? chapters : new List<Guid> { nodeId };
-
-        var beatRows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => sourceIds.Contains(bn.NodeId) && bn.IsEnabled)
-            .OrderBy(bn => bn.SortKey)
-            .Select(bn => new { bn.Beat!.Title, bn.Beat.Description, bn.Beat.Text })
-            .ToListAsync();
+        // Query and order per leaf, then concatenate in leaf order (itself already the
+        // correct depth-first SortKey order from GetLeafDescendantIdsAsync). A single
+        // flat "OrderBy(bn.SortKey)" across every leaf's BeatNodes would be wrong the
+        // moment there's more than one leaf: SortKey restarts at 100 within each chapter,
+        // so beats from chapter 5 and chapter 1 would interleave/tie instead of chapter 1
+        // finishing before chapter 2 starts.
+        var beatRowsByLeaf = new List<(string? Title, string? Description, string? Text)>();
+        foreach (var leafId in sourceIds)
+        {
+            var rows = await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.NodeId == leafId && bn.IsEnabled)
+                .OrderBy(bn => bn.SortKey)
+                .Select(bn => new { bn.Beat!.Title, bn.Beat.Description, bn.Beat.Text })
+                .ToListAsync();
+            beatRowsByLeaf.AddRange(rows.Select(r => ((string?)r.Title, (string?)r.Description, (string?)r.Text)));
+        }
+        var beatRows = beatRowsByLeaf;
 
         // Trigger text mirrors real generation (goal + prose window). Books written
         // outside the engine (e.g. PURSUED) have NULL Title/Description on every beat —

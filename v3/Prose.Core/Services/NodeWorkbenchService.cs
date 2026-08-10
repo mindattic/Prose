@@ -614,8 +614,17 @@ public class NodeWorkbenchService
         {
             if (r.IsChapterStart || segments.Count == 0)
             {
-                var t = (r.Title ?? "").Trim();
-                if (t.Length == 0) t = $"{parent.Title} — Chapter {segments.Count + 1}";
+                // 2026-08-09 bug fix: this used to take the beat's own Title verbatim as
+                // the new chapter node's Title (no "Chapter N —" prefix at all — violates
+                // feedback_chapter_title_standard: every chapter node must be "Chapter N"
+                // or "Chapter N — Subtitle"), and its blank-title fallback put the words in
+                // the wrong order ("{ParentTitle} — Chapter N" instead of "Chapter N — ...").
+                // Found while splitting Vigil's End: the 25 new chapters all needed a manual
+                // rename afterward. Always emit the canonical format now so no post-split
+                // rename is ever needed again.
+                var subtitle = (r.Title ?? "").Trim();
+                var chapterNum = segments.Count + 1;
+                var t = subtitle.Length == 0 ? $"Chapter {chapterNum}" : $"Chapter {chapterNum} — {subtitle}";
                 segments.Add((t, new List<Guid>()));
             }
             segments[^1].Beats.Add(r.BeatId);

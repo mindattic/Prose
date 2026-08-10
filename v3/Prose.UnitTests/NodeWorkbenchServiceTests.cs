@@ -597,6 +597,37 @@ public class NodeWorkbenchServiceTests
     }
 
     [Test]
+    public async Task SplitIntoCollectionAsync_ChildTitles_FollowChapterNDashSubtitleConvention()
+    {
+        // 2026-08-09 bug fix: the created chapter nodes used to take the marking beat's
+        // Title verbatim (no "Chapter N —" prefix at all) and, when blank, fell back to
+        // "{ParentTitle} — Chapter N" (backwards from the required "Chapter N — Subtitle"
+        // standard — feedback_chapter_title_standard). Found while splitting Vigil's End:
+        // all 25 new chapters needed a manual rename afterward. Locking in the fix so a
+        // future split never needs that manual catch-up again.
+        var book = await MakeNodeAsync();
+        var a = await svc.InsertBeatAsync(book.Id, null, "Opening beat.");
+        var b = await svc.InsertBeatAsync(book.Id, a.Id, "Second beat.");
+        var c = await svc.InsertBeatAsync(book.Id, b.Id, "Third beat.");
+
+        await MarkChapterStartAsync(a.Id, "The Oculus");
+        await MarkChapterStartAsync(b.Id, ""); // blank subtitle — must still get a bare "Chapter N"
+        await MarkChapterStartAsync(c.Id, "Rennick");
+
+        await svc.SplitIntoCollectionAsync(book.Id);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var children = await db.Nodes.AsNoTracking()
+            .Where(n => n.ParentNodeId == book.Id).OrderBy(n => n.SortKey).ToListAsync();
+        Assert.That(children.Select(n => n.Title), Is.EqualTo(new[]
+        {
+            "Chapter 1 — The Oculus",
+            "Chapter 2",
+            "Chapter 3 — Rennick",
+        }));
+    }
+
+    [Test]
     public async Task SplitIntoCollectionAsync_NestedChapter_DoesNotBecomeInvisibleToGrandparentWalk()
     {
         // Book -> Chapter (mega-chapter, about to be split) -> beats.
