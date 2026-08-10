@@ -2,9 +2,9 @@
   "nodeCode": "ATTE",
   "slug": "attendance-019ebf4c",
   "title": "Attendance",
-  "generatedAtUtc": "2026-08-09 06:56:38Z",
-  "totalBeats": 331,
-  "covered": 307,
+  "generatedAtUtc": "2026-08-10 15:01:59Z",
+  "totalBeats": 330,
+  "covered": 306,
   "chapterGranular": true,
   "bookScope": {
     "TemporalScheme": "linear",
@@ -17,7 +17,6 @@
     "ConstructionCapacity": 5
   },
   "flagCounts": {
-    "UNSCORED": 331,
     "MISSING_MEANING": 24
   },
   "beats": [
@@ -35,9 +34,7 @@
         "subplot"
       ],
       "ProseLength": 512,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -52,9 +49,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 437,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -69,9 +64,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 516,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -86,9 +79,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 425,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -103,9 +94,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 694,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -120,9 +109,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 504,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -137,9 +124,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 10,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -154,9 +139,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 417,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -171,8 +154,7 @@
       "BeatTags": [],
       "ProseLength": 764,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -188,8 +170,7 @@
       "BeatTags": [],
       "ProseLength": 393,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -205,9 +186,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 842,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -222,9 +201,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 475,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -239,9 +216,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 697,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -256,9 +231,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 816,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -273,9 +246,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 713,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -290,9 +261,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 335,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -307,9 +276,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 957,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -324,9 +291,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 446,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -341,9 +306,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 378,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -358,9 +321,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 455,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -375,9 +336,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 134,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -392,9 +351,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 562,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -409,9 +366,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 490,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -426,9 +381,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 388,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -443,9 +396,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 497,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -460,9 +411,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 288,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -477,9 +426,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 131,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -494,9 +441,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 720,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -511,9 +456,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 382,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -528,9 +471,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 291,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -545,9 +486,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 305,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -562,9 +501,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 551,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -579,9 +516,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 61,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -596,9 +531,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 434,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -613,9 +546,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 398,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -630,9 +561,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 257,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -647,9 +576,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 364,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -664,9 +591,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 77,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -681,9 +606,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 844,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -698,9 +621,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 590,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -715,9 +636,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 546,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -732,9 +651,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 541,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -749,9 +666,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 683,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -766,9 +681,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 33,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -783,9 +696,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 493,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -800,9 +711,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 200,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -817,9 +726,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 457,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -834,9 +741,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 650,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -851,9 +756,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 224,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -868,9 +771,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 717,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -885,9 +786,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 143,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -902,9 +801,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 698,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -919,9 +816,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 1182,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -936,9 +831,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 285,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -953,9 +846,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 103,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -970,9 +861,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 390,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -987,9 +876,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 70,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1008,9 +895,7 @@
         "subplot"
       ],
       "ProseLength": 265,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1025,9 +910,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 801,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1042,9 +925,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 401,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1059,9 +940,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 428,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1076,9 +955,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 615,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1093,9 +970,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 792,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1110,9 +985,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 317,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1127,9 +1000,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 591,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1144,9 +1015,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 675,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1161,9 +1030,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 57,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1178,9 +1045,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 381,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1195,9 +1060,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 43,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1212,9 +1075,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 347,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1229,9 +1090,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 103,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1246,9 +1105,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 337,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1263,9 +1120,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 154,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1280,9 +1135,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 768,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1297,9 +1150,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 418,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1314,9 +1165,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 255,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1331,9 +1180,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 263,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1348,9 +1195,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 176,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1365,9 +1210,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 361,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1382,9 +1225,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 10,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1399,9 +1240,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 251,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1416,9 +1255,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 123,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1433,9 +1270,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 429,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1450,9 +1285,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 125,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1467,9 +1300,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 324,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1484,9 +1315,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 474,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1501,9 +1330,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 9,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1518,9 +1345,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 531,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1535,9 +1360,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 36,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1552,9 +1375,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 39,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1569,9 +1390,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 61,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1586,9 +1405,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 439,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1603,9 +1420,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 278,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1620,9 +1435,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 227,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1637,9 +1450,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 27,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1654,9 +1465,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 28,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1671,9 +1480,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 577,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1688,9 +1495,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 17,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1705,9 +1510,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 224,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1722,9 +1525,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 295,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1739,9 +1540,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 36,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1756,9 +1555,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 392,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1773,9 +1570,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 587,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1790,9 +1585,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 372,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1807,9 +1600,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 76,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1824,9 +1615,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 815,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1841,9 +1630,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 86,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1858,9 +1645,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 366,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1875,9 +1660,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 404,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1892,9 +1675,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 391,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1909,9 +1690,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 177,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1926,9 +1705,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 76,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1943,9 +1720,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 268,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1960,9 +1735,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 527,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1977,9 +1750,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 451,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -1994,9 +1765,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 459,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2011,9 +1780,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 454,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2028,9 +1795,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 24,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2045,9 +1810,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 584,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2062,9 +1825,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 49,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2079,9 +1840,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 759,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2096,9 +1855,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 219,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2113,9 +1870,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 514,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2130,9 +1885,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 427,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2147,9 +1900,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 100,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2164,9 +1915,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 264,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2181,9 +1930,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 751,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2198,9 +1945,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 295,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2215,9 +1960,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 330,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2232,9 +1975,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 145,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2249,9 +1990,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 213,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2266,9 +2005,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 382,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2283,9 +2020,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 124,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2300,9 +2035,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 371,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2317,9 +2050,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 252,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2334,9 +2065,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 393,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2351,9 +2080,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 126,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2368,9 +2095,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 466,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2385,9 +2110,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 522,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2402,9 +2125,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 529,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2419,9 +2140,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 50,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2436,9 +2155,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 484,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2452,10 +2169,8 @@
       "EventType": "confession",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 389,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "ProseLength": 428,
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2470,9 +2185,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 484,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2487,9 +2200,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 500,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2507,9 +2218,7 @@
         "intertextual-touchpoint"
       ],
       "ProseLength": 746,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2524,9 +2233,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 682,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2541,9 +2248,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 440,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2558,9 +2263,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 558,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2575,9 +2278,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 780,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2592,9 +2293,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 86,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2609,9 +2308,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 374,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2626,9 +2323,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 444,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2643,9 +2338,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1042,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2660,9 +2353,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 213,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2677,9 +2368,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 392,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2694,9 +2383,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 302,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2711,9 +2398,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 171,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2728,9 +2413,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 178,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2745,9 +2428,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 634,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2762,9 +2443,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 248,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2779,9 +2458,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 901,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2796,9 +2473,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 119,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2813,9 +2488,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 549,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2830,9 +2503,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 147,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2847,9 +2518,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 447,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2864,9 +2533,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 900,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2881,9 +2548,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 254,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2898,9 +2563,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 329,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2915,9 +2578,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 397,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2932,9 +2593,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 369,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2949,9 +2608,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 558,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2966,9 +2623,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 584,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -2983,8 +2638,7 @@
       "BeatTags": [],
       "ProseLength": 527,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3000,8 +2654,7 @@
       "BeatTags": [],
       "ProseLength": 644,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3017,8 +2670,7 @@
       "BeatTags": [],
       "ProseLength": 613,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3034,8 +2686,7 @@
       "BeatTags": [],
       "ProseLength": 683,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3051,8 +2702,7 @@
       "BeatTags": [],
       "ProseLength": 825,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3068,8 +2718,7 @@
       "BeatTags": [],
       "ProseLength": 961,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3085,9 +2734,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 382,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3102,9 +2749,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 261,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3119,9 +2764,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 519,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3136,9 +2779,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 268,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3153,9 +2794,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 347,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3170,9 +2809,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 334,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3187,9 +2824,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 474,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3204,9 +2839,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 348,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3221,9 +2854,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 599,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3238,9 +2869,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 162,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3255,9 +2884,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 166,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3272,9 +2899,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 320,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3289,9 +2914,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 109,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3306,9 +2929,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 122,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3323,9 +2944,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 593,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3340,9 +2959,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 418,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3357,9 +2974,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 232,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3374,9 +2989,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 416,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3391,9 +3004,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 241,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3408,9 +3019,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1414,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3425,9 +3034,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 732,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3442,9 +3049,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 110,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3459,9 +3064,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 930,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3476,9 +3079,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 40,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3493,9 +3094,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 813,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3510,9 +3109,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 15,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3527,9 +3124,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 769,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3544,9 +3139,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 308,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3561,9 +3154,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 371,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3578,9 +3169,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 591,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3595,9 +3184,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 32,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3612,9 +3199,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 521,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3629,9 +3214,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 486,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3646,9 +3229,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1850,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3663,9 +3244,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 813,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3680,9 +3259,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 585,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3697,9 +3274,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 541,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3714,9 +3289,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 621,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3731,9 +3304,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 656,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3748,8 +3319,7 @@
       "BeatTags": [],
       "ProseLength": 651,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3765,8 +3335,7 @@
       "BeatTags": [],
       "ProseLength": 686,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3782,8 +3351,7 @@
       "BeatTags": [],
       "ProseLength": 1003,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3802,9 +3370,7 @@
         "intertextual-touchpoint"
       ],
       "ProseLength": 558,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3819,9 +3385,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 445,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3836,9 +3400,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1167,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3853,9 +3415,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 246,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3870,9 +3430,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 634,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3887,9 +3445,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 175,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3904,9 +3460,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 619,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3921,9 +3475,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 737,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3938,9 +3490,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 19,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3955,9 +3505,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 386,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3972,9 +3520,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 557,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -3989,9 +3535,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 878,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4006,9 +3550,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 505,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4023,8 +3565,7 @@
       "BeatTags": [],
       "ProseLength": 397,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -4040,8 +3581,7 @@
       "BeatTags": [],
       "ProseLength": 556,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -4057,8 +3597,7 @@
       "BeatTags": [],
       "ProseLength": 684,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -4074,8 +3613,7 @@
       "BeatTags": [],
       "ProseLength": 810,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -4091,8 +3629,7 @@
       "BeatTags": [],
       "ProseLength": 536,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -4108,8 +3645,7 @@
       "BeatTags": [],
       "ProseLength": 887,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -4125,9 +3661,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 510,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4142,9 +3676,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 28,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4159,9 +3691,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 517,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4176,9 +3706,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1196,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4193,9 +3721,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 630,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4210,9 +3736,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 347,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4227,9 +3751,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 113,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4244,9 +3766,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 771,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4261,9 +3781,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 398,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4278,9 +3796,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1085,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4295,9 +3811,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 405,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4312,9 +3826,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 64,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4329,9 +3841,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 390,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4346,9 +3856,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 367,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4363,9 +3871,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 192,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4380,9 +3886,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 374,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4397,9 +3901,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 159,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4414,9 +3916,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 501,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4431,9 +3931,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 253,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4448,9 +3946,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 210,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4465,9 +3961,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 620,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4482,9 +3976,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 78,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4499,9 +3991,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 404,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4516,9 +4006,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 67,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4533,9 +4021,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 496,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4550,9 +4036,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 176,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4567,9 +4051,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 432,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4584,9 +4066,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 171,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4601,9 +4081,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 478,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4618,9 +4096,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 489,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4635,9 +4111,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 817,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4652,9 +4126,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 614,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4669,9 +4141,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 858,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4686,9 +4156,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 462,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4703,9 +4171,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 108,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4720,9 +4186,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 185,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4737,9 +4201,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 44,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4754,9 +4216,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 314,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4771,9 +4231,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 741,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4788,9 +4246,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 458,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4805,9 +4261,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 118,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4822,9 +4276,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 229,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4839,9 +4291,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 552,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4856,9 +4306,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 33,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4873,9 +4321,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 520,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4890,9 +4336,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 114,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4907,9 +4351,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 397,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4924,9 +4366,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 30,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4941,9 +4381,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 615,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4958,9 +4396,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 414,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4975,9 +4411,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 18,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -4992,9 +4426,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 358,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5009,26 +4441,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 647,
-      "Flags": [
-        "UNSCORED"
-      ],
-      "Covered": true
-    },
-    {
-      "BeatId": "019fa02f-1b6e-75c8-aa2a-d77fed7e94d5",
-      "Number": 9417,
-      "Chapter": "Chapter 4 \u2014 The Limits",
-      "ChapterIndex": 3,
-      "Act": 0,
-      "Meaning": "Marks a small narrative pause, letting Yemina\u0027s judgment override her compulsive tracking as tension briefly resolves.",
-      "EscalationTarget": "9",
-      "EventType": "negotiation",
-      "RevelationMode": "suspense",
-      "BeatTags": [],
-      "ProseLength": 41,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5043,9 +4456,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 303,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5060,9 +4471,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 770,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5077,9 +4486,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 189,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5094,9 +4501,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 414,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5111,9 +4516,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 30,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5128,9 +4531,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 199,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5145,9 +4546,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 236,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5162,9 +4561,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 304,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5179,9 +4576,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 29,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5196,9 +4591,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 486,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5213,9 +4606,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 589,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5230,9 +4621,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 420,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5247,9 +4636,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 94,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5264,9 +4651,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 344,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5281,9 +4666,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 169,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5298,9 +4681,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 474,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5315,9 +4696,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 474,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5332,9 +4711,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 358,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5349,9 +4726,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 300,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5366,9 +4741,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 43,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5383,9 +4756,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 641,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5400,9 +4771,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 133,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5417,9 +4786,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 99,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5434,9 +4801,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 299,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5451,9 +4816,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 279,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5468,9 +4831,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 313,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5485,9 +4846,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 44,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5502,9 +4861,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 453,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5519,9 +4876,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 666,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -5536,8 +4891,7 @@
       "BeatTags": [],
       "ProseLength": 588,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -5553,8 +4907,7 @@
       "BeatTags": [],
       "ProseLength": 635,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -5570,8 +4923,7 @@
       "BeatTags": [],
       "ProseLength": 996,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -5587,8 +4939,7 @@
       "BeatTags": [],
       "ProseLength": 1114,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -5604,8 +4955,7 @@
       "BeatTags": [],
       "ProseLength": 933,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -5621,8 +4971,7 @@
       "BeatTags": [],
       "ProseLength": 914,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -5638,8 +4987,7 @@
       "BeatTags": [],
       "ProseLength": 1145,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -5655,9 +5003,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 364,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     }
   ]

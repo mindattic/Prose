@@ -2,7 +2,7 @@
   "nodeCode": "M101",
   "slug": "m-101-019f69f4",
   "title": "M-101",
-  "generatedAtUtc": "2026-08-09 06:58:21Z",
+  "generatedAtUtc": "2026-08-10 14:59:47Z",
   "totalBeats": 16,
   "covered": 13,
   "chapterGranular": false,
@@ -17,7 +17,6 @@
     "ConstructionCapacity": 16
   },
   "flagCounts": {
-    "UNSCORED": 16,
     "MISSING_MEANING": 3
   },
   "beats": [
@@ -35,9 +34,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 2411,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -54,9 +51,7 @@
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 2678,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -73,9 +68,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 5807,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -92,9 +85,7 @@
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 5939,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -113,9 +104,7 @@
         "intertextual-touchpoint"
       ],
       "ProseLength": 2945,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -134,9 +123,7 @@
         "subplot"
       ],
       "ProseLength": 3864,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -153,9 +140,7 @@
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 3815,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -168,10 +153,9 @@
       "EventType": "escape",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3045,
+      "ProseLength": 3052,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -189,8 +173,7 @@
       ],
       "ProseLength": 3628,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -208,9 +191,7 @@
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 4047,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -229,9 +210,7 @@
         "intertextual-touchpoint"
       ],
       "ProseLength": 5667,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -248,9 +227,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 4355,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -269,9 +246,7 @@
         "intertextual-touchpoint"
       ],
       "ProseLength": 5032,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -291,9 +266,7 @@
         "intertextual-touchpoint"
       ],
       "ProseLength": 3675,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -310,9 +283,7 @@
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 3602,
-      "Flags": [
-        "UNSCORED"
-      ],
+      "Flags": [],
       "Covered": true
     },
     {
@@ -327,8 +298,7 @@
       "BeatTags": [],
       "ProseLength": 5192,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
+        "MISSING_MEANING"
       ],
       "Covered": false
     }

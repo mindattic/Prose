@@ -62,7 +62,15 @@ public class BeatVerificationService
     // ── Verify a single beat ─────────────────────────────────────────────────
 
     public async Task<List<BeatVerificationResult>> VerifyBeatAsync(
-        Guid beatId, CancellationToken ct = default)
+        Guid beatId, CancellationToken ct = default) =>
+        await VerifyBeatAsync(beatId, declaredPurposeBaseline: null, ct);
+
+    /// <param name="declaredPurposeBaseline">This book's other DeclaredPurpose cosine
+    /// similarities, for the same per-book outlier normalization SemanticFidelityService uses
+    /// (see its 2026-08-10 fix note) — null when verifying a beat standalone (CLI/MCP single-
+    /// beat calls), in which case the absolute thresholds alone decide, same as before.</param>
+    public async Task<List<BeatVerificationResult>> VerifyBeatAsync(
+        Guid beatId, IReadOnlyList<double>? declaredPurposeBaseline, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -96,7 +104,7 @@ public class BeatVerificationService
         if (decision != null && !string.IsNullOrWhiteSpace(decision.DeclaredPurpose)
             && !string.IsNullOrWhiteSpace(beat.Text) && embeddings != null)
         {
-            var purposeCheck = await CheckDeclaredPurposeAsync(beat, decision, ct);
+            var purposeCheck = await CheckDeclaredPurposeAsync(beat, decision, declaredPurposeBaseline, ct);
             results.Add(purposeCheck);
         }
 
@@ -142,12 +150,46 @@ public class BeatVerificationService
             .Distinct()
             .ToListAsync(ct);
 
+        // Pre-pass: compute this book's own DeclaredPurpose cosine-similarity distribution so
+        // CheckDeclaredPurposeAsync can flag outliers relative to the book's own register
+        // instead of a fixed absolute threshold blind to it (2026-08-10 fix — see that method's
+        // own doc comment). Best-effort: a failure here just means every beat in this run falls
+        // back to the absolute-threshold-only behavior, same as a standalone single-beat call.
+        IReadOnlyList<double>? declaredPurposeBaseline = null;
+        if (embeddings != null)
+        {
+            try
+            {
+                var candidates = await (
+                    from bn2 in db.BeatNodes.AsNoTracking()
+                    join b2 in db.Beats.AsNoTracking() on bn2.BeatId equals b2.Id
+                    join d2 in db.BeatBlueprintDecisions.AsNoTracking() on b2.Id equals d2.BeatId
+                    where beatIds.Contains(b2.Id)
+                       && !string.IsNullOrWhiteSpace(d2.DeclaredPurpose)
+                       && !string.IsNullOrWhiteSpace(b2.Text)
+                    select new { d2.DeclaredPurpose, b2.Text }
+                ).ToListAsync(ct);
+
+                if (candidates.Count > 0)
+                {
+                    var pairs = candidates
+                        .Select(c => (c.DeclaredPurpose!, c.Text[..Math.Min(1200, c.Text.Length)]))
+                        .ToList();
+                    declaredPurposeBaseline = await embeddings.ComputeSimilaritiesBatchAsync(pairs, ct);
+                }
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "[BeatVerification] DeclaredPurpose baseline pre-pass failed for '{Slug}' — falling back to absolute thresholds", slugOrCode);
+            }
+        }
+
         var allResults = new List<BeatVerificationResult>();
         foreach (var beatId in beatIds)
         {
             try
             {
-                var r = await VerifyBeatAsync(beatId, ct);
+                var r = await VerifyBeatAsync(beatId, declaredPurposeBaseline, ct);
                 allResults.AddRange(r);
             }
             catch (Exception ex)
@@ -233,14 +275,28 @@ public class BeatVerificationService
             (declaredLower.Contains("climax")              && detectedLower == "emotionalclimax") ? true :
             null;   // vocabularies differ — cannot determine alignment
 
+        // Bug fixed 2026-08-10: the null case used to return "Partial"/MINOR, which
+        // BookHealthService.BeatVerificationAsync's filter (Result != "Pass" && Result !=
+        // "Skipped") treats as finding-worthy — every declared event type outside the 5
+        // explicitly mapped keywords (combat/dialogue/revelation/transition/climax) falls
+        // through here, and the blueprint's own event-type palette is a rich narrative
+        // vocabulary (departure, loss, discovery, confrontation, ...) that mostly ISN'T one of
+        // those 5 — so this fired "undetermined" as a permanent, uninformative Finding for the
+        // large majority of beats corpus-wide (56 instances measured across the books checked
+        // this session), the same "the check can never produce a real signal but still files
+        // one anyway" shape as the UNSCORED bug fixed earlier this session. "Partial" is
+        // semantically wrong here: the check didn't find ambiguous evidence, it simply can't
+        // compare two vocabularies that don't overlap. "Skipped" is the correct, honest label —
+        // already excluded from Finding-generation, matching the other genuinely-inapplicable
+        // cases in this method (no declared event type, no BeatModeLog row yet).
         return aligned switch
         {
             true  => new(beat.Id, "EventType", "Pass", "MODERATE",
                         $"Declared='{decision.EventType}' matches detected mode='{modeLog.Mode}'"),
             false => new(beat.Id, "EventType", "Fail", "MODERATE",
                         $"Declared='{decision.EventType}' but detected mode='{modeLog.Mode}'"),
-            null  => new(beat.Id, "EventType", "Partial", "MINOR",
-                        $"Declared='{decision.EventType}', detected='{modeLog.Mode}' — alignment undetermined (different vocabularies)"),
+            null  => new(beat.Id, "EventType", "Skipped", "MINOR",
+                        $"Declared='{decision.EventType}', detected='{modeLog.Mode}' — no comparable vocabulary (not a defect)"),
         };
     }
 
@@ -335,8 +391,19 @@ public class BeatVerificationService
 
     // ── Semantic check: DeclaredPurpose ──────────────────────────────────────
 
+    // Bug fixed 2026-08-10: fixed absolute thresholds (0.35 Fail / 0.55 Partial) applied
+    // identically to every book, same shape as SemanticFidelityService's IntentAlignmentFloor
+    // bug (see its own fix note — 6/6 sampled findings there were confirmed faithful prose
+    // false-flagged for register mismatch between an abstract declared-purpose sentence and
+    // concrete prose). Confirmed the same failure here directly: beat #4200's synopsis
+    // ("Establishes the translation problem... bridging them requires deliberate, effortful
+    // reformulation") against its actual prose — a full, rich, unambiguous scene embodying
+    // exactly that (Elias's "Are you safe?" exchange) — scored 0.281 (Fail). Reused
+    // SemanticFidelityService.IsIntentOutlier rather than duplicating the logic: a beat below
+    // the absolute threshold must ALSO be a genuine statistical outlier within this book's own
+    // DeclaredPurpose-similarity distribution to count, exactly as for SemanticDrift.
     private async Task<BeatVerificationResult> CheckDeclaredPurposeAsync(
-        Beat beat, BeatBlueprintDecision decision, CancellationToken ct)
+        Beat beat, BeatBlueprintDecision decision, IReadOnlyList<double>? bookBaseline, CancellationToken ct)
     {
         try
         {
@@ -346,12 +413,17 @@ public class BeatVerificationService
             const double failThreshold    = 0.35;
             const double partialThreshold = 0.55;
 
-            if (similarity < failThreshold)
+            // No baseline (standalone single-beat verification, no book-wide context available)
+            // falls back to the absolute thresholds alone — an outlier test needs other beats
+            // to compare against.
+            var isOutlier = bookBaseline == null || SemanticFidelityService.IsIntentOutlier(similarity, bookBaseline);
+
+            if (similarity < failThreshold && isOutlier)
                 return new(beat.Id, "DeclaredPurpose", "Fail", "MODERATE",
                     $"Cosine similarity={similarity:F3} below threshold {failThreshold}. Prose may not fulfill declared purpose: '{decision.DeclaredPurpose}'",
                     VerifiedBy: "embedding");
 
-            if (similarity < partialThreshold)
+            if (similarity < partialThreshold && isOutlier)
                 return new(beat.Id, "DeclaredPurpose", "Partial", "MINOR",
                     $"Cosine similarity={similarity:F3} — partial alignment with declared purpose.",
                     VerifiedBy: "embedding");
