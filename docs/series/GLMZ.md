@@ -139,24 +139,25 @@ renamed (TWU, TWD) somewhere along the way; rows corrected to the live NodeCode.
 | SPRW | Sparrow | Elias Macias | Rogue AI misdirect · AI mystery | B4–B5 | Active (never fires); 56 beats |
 | SRZR | Steppin' Razor | Sasha Võ | Lotus · Halcyon/OBERON | B3 | Active; 297 beats; Logic Sweep PASS 2026-08-10 |
 | TLC | The Long Cut | Doc Stash | Medical noir · GLMZ world | — | Active; 757 beats; Logic Sweep PASS 2026-08-10 |
-| TEST | Testament | Bear (entity record TBD — see note below) | Military/corporate accountability · GLMZ world | — | Active; 547 beats |
+| TEST | Testament | Bear (Boris Johansen) | Military/corporate accountability · GLMZ world | — | Active; 547 beats |
 | UNDR | Underclan | Glim | Underground world · Gray Zone | — | IsWIP=1; 56 beats |
 | VATD | Vultures at the Door | Tomas Alvarado / Ekow Ato | Vultures world · Renko | B2 | Active; 308 beats; Logic Sweep PASS 2026-08-10 |
 
-**Entity note (2026-08-10, investigated, deliberately left unresolved):** TEST's Bear has two
-candidate Entity rows ("Boris Johansen" — Arcturus freelancer; "Boris Johanssen" — Ironclad
-Meridian breach-specialist), but a full prose read showed the book's actual Bear matches
-**neither cleanly** — he's licensed via Halcyon (not Arcturus or Ironclad Meridian) through a
-named "Manowar" powered frame that appears in neither record, served eleven years (not twelve),
-and the Cortland incident's mechanism doesn't match either record's stated cause. An earlier
-attempt to pick one and merge was reverted once this came to light — see
-[[project_cross_book_story_weaving_2026_08_10]] for the full read and the reasoning. Needs a
-fresh entity description written from the prose (a content pass, not a mechanical dedup) before
-either DB row should be treated as authoritative. Separately, a genuine positive finding needing
-no fix: **Mrs. Chen's diner (BCODA's recurring counter/safehouse) also appears, consistently and
-without contradiction, in the Rook Trilogy's NxR and CxC** — an already-working cross-book
-anchor, not something to build. Whether TWD's own unglossed "Bear" (a fixer running a training
-crew) connects to either TEST candidate remains open and unconfirmed.
+**Entity note (2026-08-10, RESOLVED):** TEST had two candidate "Bear" Entity rows because TEST
+itself was drafted twice. Beat #9792 has Bear give his own sworn on-page name — "My name is
+Boris Johansen [single-s]... Case CE-0217. The Cortland Engagement... Colonel Vasili Brandt,
+Halcyon Civil Security" — confirming the live book's canonical facts (Halcyon license, "the
+Manowar" powered frame, eleven years of service). The OTHER entity, "Boris Johanssen"
+[double-s]/Ironclad Meridian/Glooms Intermodal, turned out to describe a real but **orphaned
+earlier draft** of this same book — 12 beats (Numbers 4234-4253) still exist in the DB with that
+exact content but have zero chapter memberships, confirming they were superseded and left
+disconnected rather than cleaned up. Both entities corrected/annotated to reflect this (neither
+deleted). See [[project_cross_book_story_weaving_2026_08_10]] for the full evidence trail.
+Separately, a genuine positive finding needing no fix: **Mrs. Chen's diner (BCODA's recurring
+counter/safehouse) also appears, consistently and without contradiction, in the Rook Trilogy's
+NxR and CxC** — an already-working cross-book anchor, not something to build. Whether TWD's own
+unglossed "Bear" (a fixer running a training crew) connects to TEST's Boris Johansen remains
+open and unconfirmed — no textual evidence links them yet.
 
 ---
 
