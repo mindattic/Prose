@@ -275,7 +275,7 @@ exist in the repo and may not exist on disk.
 - `docs/nodes/SPRW.md` — Sparrow / Elias Macias & the orbital mystery (GLMZ)
 - `docs/nodes/MNEMO.md` — Mnemosync / Amara & Seto (GLMZ, in progress; formerly ULC, redesigned SS-A14)
 - `docs/nodes/TEST.md` — Testament / Bear court-martial (GLMZ)
-- `docs/nodes/M101.md` — M-101 / Soren Rowe origin before VIGL (Fantasy; Verlaine Taking → desertion)
+- `docs/nodes/M101.md` — M-101 / Declan Doyle origin before VIGL (Fantasy; Verlaine Taking → desertion; renamed from "Soren Rowe" at some point — that name appears nowhere in the current bible or prose)
 - `docs/nodes/MxG.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
 - `docs/nodes/RTR.md` — Read the Room / Faith Larson & Ethan Wolfe (GLMZ; Fenris band; Faith is a Read; Milwaukee dive club)
 - `docs/nodes/LLSS.md` — Lieutenant Lyra, Sinterkin Slayer (Fantasy; standalone; COMPLETE; VIGL prose register exemplar; 1 beat; was LSSS/"Lyra, Sinterspawn Slayer")
