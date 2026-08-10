@@ -105,7 +105,49 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         // power operation), RST (signal report system), UTC (Coordinated Universal Time), PTT
         // (push-to-talk), QSO (a radio contact), FCC (Federal Communications Commission), SWR
         // (standing wave ratio), QSL (confirmation of contact).
-        "QRT", "QRP", "RST", "UTC", "PTT", "QSO", "FCC", "SWR", "QSL"
+        "QRT", "QRP", "RST", "UTC", "PTT", "QSO", "FCC", "SWR", "QSL",
+        // GLMZ / BCODA sweep: two established, deliberate stylistic devices, not leaks.
+        // (1) The mystery "entity" Kyle contracts with communicates entirely in all-caps
+        // contract-format messages (CONTRACT NUMBER/STATUS/PAYMENT/NOTES fields, e.g.
+        // "GRATUITY WITHHELD THIS PERIOD - ITEMIZED: MORALE.") — established, recurring
+        // in-fiction formatting representing a machine/AI voice, not a placeholder. (2) Short
+        // embedded physical-sign/logbook/sensor-readout quotes (a hand-painted tally board,
+        // "LOG VOL 7" on a logbook spine, "TIMING VARIANCE"/"AMBIENT INTERFERENCE" sensor
+        // labels) — the same found-document category IsInsideCapsRun already exempts for
+        // LONGER runs, these are just short enough (1-2 words) to fall under its
+        // minNeighborCapsWords=2 threshold, same shape as the earlier PONTIF/MAXIM case.
+        // Also "TEST" — the Testament book's own NodeCode, but here always the ordinary
+        // English word ("a TEST of whether...", "EQUIPMENT TEST: SUCCESSFUL"), same
+        // effectively-zero-leak-risk reasoning as JOHN/MARK/LUKE/MATTHEW above.
+        "SINCE", "LIKES", "SURE", "MORALE", "DENIED", "LIST", "AGREED",
+        "TIMING", "ACCEPT", "LOG", "NOTED", "VOL", "TEST",
+        // "RTD-6" — an in-world freight-placard destination code ("the Rotterdam-bound
+        // slug... the placard at the nose read 10:15 RTD-6"), the same real-world-style
+        // shipping-manifest shorthand as an airport code, not a leak.
+        "RTD",
+        // "OUSE" — deliberate wordplay, explained in the same sentence: a noodle counter's
+        // broken sign ("The H's out, so it just says 'OUSE.'"), not a leak at all.
+        "OUSE",
+        // Sparrow (SPRW): real orbital-mechanics terms (GEO/MEO = Geostationary/Medium Earth
+        // Orbit), a real isotope-geochemistry reference standard (VSMOW = Vienna Standard
+        // Mean Ocean Water), and the orbital-tracking AI's own established all-caps
+        // structured-report device (PERIOD/LAYERS/LOGGED — the same category as BCODA's
+        // all-caps contract-format entity, a different character using the same device).
+        "GEO", "MEO", "VSMOW", "PERIOD", "LAYERS", "LOGGED",
+        // The Long Cut (TLC): NREN is defined in the very same sentence it appears in ("the
+        // NREN relay - a person-to-person package network"); DOA (Dead On Arrival) and ICD
+        // (International Classification of Diseases) are universal real-world medical/legal
+        // terms, fitting for an underground-surgery setting.
+        "NREN", "DOA", "ICD",
+        // Testament (TEST): NCO (Non-Commissioned Officer) is a universal, real military rank
+        // term, fitting a court-martial book.
+        "NCO",
+        // Iron & Silk (IxS): ETA (Estimated Time of Arrival) is a universal real-world term
+        // used completely naturally ("ETA to Nari's building is sixteen minutes"). NOT
+        // whitelisted: "CSE" (beat #11231, "coerced Grade 4 CSE - unlocated") — reads as a
+        // deliberate narrative mystery marker for an active, unresolved plot thread ("A
+        // thing that was out there somewhere and hadn't been found"), not a defect to fix.
+        "ETA"
     };
 
     // ── Built-in alias codes (supplement codes pulled from DB) ────────────────
@@ -253,8 +295,37 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
             var upper = name.ToUpperInvariant();
             if (Regex.IsMatch(upper, @"^[A-Z]{3,6}$")) knownTokens.Add(upper);
             foreach (var word in upper.Split(' ', StringSplitOptions.RemoveEmptyEntries))
+            {
                 if (Regex.IsMatch(word, @"^[A-Z]{3,6}$")) knownTokens.Add(word);
+                // 2026-08-09: also recognize the letter-only PREFIX of a hyphenated model
+                // designator (e.g. "TSS-3" from the seeded entity "Torii Security Group
+                // Shotgun Revolver TSS-3 'Cacophony'") — the whole-word match above requires
+                // the ENTIRE space-separated word to be 3-6 bare letters, so "TSS-3" never
+                // matched even though "TSS" is exactly what the checker should recognize as
+                // this weapon's own established name. The lookahead requires the letter run
+                // be immediately followed by a non-letter or end-of-string, so a genuinely
+                // long word like "REVOLVER" (8 letters) is correctly never truncated into a
+                // false 6-letter match.
+                var prefixMatch = Regex.Match(word, @"^[A-Z]{3,6}(?=[^A-Z]|$)");
+                if (prefixMatch.Success) knownTokens.Add(prefixMatch.Value);
+            }
         }
+
+        // 2026-08-09: an acronym the author explicitly parenthesizes anywhere in the book
+        // ("the Freelancer Coordination Authority. The FCA was...") is, by construction, a
+        // deliberately self-introduced term, not a placeholder or leaked code — found while
+        // triaging BCODA: "FCA" was correctly never a real issue (introduced this way in the
+        // very same beat), but "CFR" was a genuine miss (used repeatedly with no introduction
+        // anywhere in the book) until fixed by adding the same "(CFR)" self-definition prose
+        // itself. A book-wide scan for the "(ABBR)" shape recognizes both cases the same way
+        // going forward, instead of requiring a whitelist entry for every acronym an author
+        // properly introduces. Scoped to Check B (undefined-acronym) only — Check A's
+        // internal-code-leak detection is untouched, so a coincidental "(NRST)" parenthetical
+        // elsewhere could never accidentally launder a real leaked project code.
+        var selfIntroducedAcronyms = new HashSet<string>(StringComparer.Ordinal);
+        foreach (var beat in orderedBeats)
+            foreach (Match pm in Regex.Matches(beat.Text ?? "", @"\(([A-Z]{2,8})\)"))
+                selfIntroducedAcronyms.Add(pm.Groups[1].Value);
 
         // ── Enumerate beats ───────────────────────────────────────────────────
         var rawFindings = new List<SanityFinding>();
@@ -300,6 +371,7 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
                 if (knownTokens.Contains(token)) continue;
                 if (IsInsideCapsRun(text, m.Index, m.Length)) continue;
                 if (IsRomanNumeral(token)) continue;
+                if (selfIntroducedAcronyms.Contains(token)) continue;
 
                 if (seenUnknownTokens.TryGetValue(token, out var existing))
                     seenUnknownTokens[token] = (existing.BeatNumber, existing.Count + 1);
