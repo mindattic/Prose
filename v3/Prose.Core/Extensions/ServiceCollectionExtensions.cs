@@ -1005,6 +1005,13 @@ public static class ServiceCollectionExtensions
         // `prose --check-fidelity` and the `check_semantic_fidelity` MCP tool.
         services.AddSingleton<SemanticFidelityService>();
 
+        // Scene Collision engine (2026-08-10): computes what specifically happens when the
+        // on-page characters' documented psychology + circumstance collide, refining HOW a
+        // beat's already-decided goal plays out for these exact people. Wired into
+        // ProseWriterRouter as an optional enrichment; also available standalone via
+        // `prose --simulate-collision`.
+        services.AddSingleton<SceneCollisionService>();
+
         // Overnight prose health pipeline — zero API cost; uses cached ProseEmbeddings
         // and text-only stats. Available via `prose --prose-health`.
         services.AddSingleton<EmbeddingHealthService>();

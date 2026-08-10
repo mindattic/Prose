@@ -159,6 +159,9 @@ public class BeatGeneratorService
         var offscreenBlock = !string.IsNullOrWhiteSpace(context.OffscreenActivityContext)
             ? $"\n\n{context.OffscreenActivityContext}"
             : "";
+        var sceneCollisionBlock = !string.IsNullOrWhiteSpace(context.SceneCollisionGuidance)
+            ? $"\n\n{context.SceneCollisionGuidance}"
+            : "";
         var plotEventsBlock = !string.IsNullOrWhiteSpace(context.PlotEventsContext)
             ? $"\n\n{context.PlotEventsContext}"
             : "";
@@ -190,7 +193,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{emotionalBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -1027,6 +1030,15 @@ public record BeatContext
     /// generation.
     /// </summary>
     public string StructuralBlueprintGuidance { get; init; } = "";
+
+    /// <summary>
+    /// Computed scene-collision guidance from SceneCollisionService: what specifically happens
+    /// when the on-page characters' documented psychology and circumstance collide, refining
+    /// HOW the beat goal plays out for these exact people. Empty when SceneCollisionService is
+    /// not wired, fewer than 2 characters are on page, or the computation failed — never blocks
+    /// generation.
+    /// </summary>
+    public string SceneCollisionGuidance { get; init; } = "";
 
     /// <summary>
     /// Target prose length for this beat in words. 0 = the classic short-beat

@@ -58,7 +58,8 @@ public class ProseWriterRouter(
     LibertyReportService? libertyReport = null,
     SemanticFidelityService? semanticFidelity = null,
     PlantPayoffService? plantPayoffs = null,
-    BookAuditService? bookAudit = null)
+    BookAuditService? bookAudit = null,
+    SceneCollisionService? sceneCollision = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -404,6 +405,27 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(StoryScienceService)); }
         }
 
+        // Scene Collision: what specifically happens when the on-page characters' documented
+        // psychology and circumstance collide — refines HOW the beat goal plays out for these
+        // exact people, does not change WHAT the beat goal is. Gated on 2+ characters (a
+        // "collision" needs at least two parties) and skipped for Combat (CombatProseGuidance
+        // already owns that texture) and beats with no XRay roster to compute from.
+        var sceneCollisionGuidance = context.SceneCollisionGuidance;
+        if (string.IsNullOrEmpty(sceneCollisionGuidance) && sceneCollision != null
+            && mode != BeatMode.Combat && context.CharactersInScene.Count >= 2
+            && !string.IsNullOrWhiteSpace(xRayContext) && !string.IsNullOrWhiteSpace(context.BeatGoal))
+        {
+            try
+            {
+                var collision = await sceneCollision.ComputeAsync(
+                    context.CharactersInScene, xRayContext, worldStateContext, consequenceContext,
+                    context.BeatGoal, locationContext, ct);
+                if (collision != null)
+                    sceneCollisionGuidance = SceneCollisionService.FormatForPrompt(collision);
+            }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(SceneCollisionService)); }
+        }
+
         // Structural Blueprint: this book's pre-committed anti-tell decisions (StoryScope
         // countermeasures) — subplot carrier, anachrony cut, escalation floor, event type,
         // ending/resolution mode. Empty when the node has no blueprint; never blocks writing.
@@ -529,6 +551,7 @@ public class ProseWriterRouter(
             StoryScienceGuidance     = storyScienceGuidance,
             OffscreenActivityContext = offscreenActivityContext,
             StructuralBlueprintGuidance = structuralBlueprintGuidance,
+            SceneCollisionGuidance   = sceneCollisionGuidance,
         };
 
         // ── C1: Entity pre-check (soft gate — warns, never blocks) ────────────────

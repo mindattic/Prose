@@ -1603,6 +1603,19 @@ if (args.Contains("--examine-emotion"))
     return;
 }
 
+// Scene Collision engine manual test harness (2026-08-10): runs SceneCollisionService against
+// one real beat without a full ProseWriterRouter pass. See SimulateCollisionCli for details.
+if (args.Contains("--simulate-collision"))
+{
+    var sp = BuildCoreServices(args);
+    var (proceedSc, estSc) = await CostGateCli.ConfirmAsync("--simulate-collision", args, sp);
+    if (!proceedSc) return;
+    var beforeSc = CostGateCli.SnapshotCost(sp);
+    Environment.ExitCode = await SimulateCollisionCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--simulate-collision", estSc, beforeSc, sp);
+    return;
+}
+
 // prose --causality-check / --affect-check / --interpersonal-check --slug <slug> [--json]
 // "Behave like people" beat lenses: cause-effect (kill "and then"), emotion→action,
 // and verbal+non-verbal interpersonal dynamics (the 90+ relational lever).
