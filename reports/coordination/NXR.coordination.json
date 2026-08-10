@@ -2,9 +2,9 @@
   "nodeCode": "NXR",
   "slug": "neon-rust-019f06da",
   "title": "Neon \u0026 Rust",
-  "generatedAtUtc": "2026-08-01 14:51:52Z",
-  "totalBeats": 356,
-  "covered": 0,
+  "generatedAtUtc": "2026-08-10 15:07:57Z",
+  "totalBeats": 353,
+  "covered": 26,
   "chapterGranular": false,
   "bookScope": {
     "TemporalScheme": "linear",
@@ -13,12 +13,11 @@
     "EndingStyle": "quiet",
     "HasSubplot": true,
     "Granularity": "beat",
-    "HasBlueprint": true
+    "HasBlueprint": true,
+    "ConstructionCapacity": 26
   },
   "flagCounts": {
-    "MISSING_MEANING": 356,
-    "UNSCORED": 356,
-    "NO_CONSTRUCTION": 330
+    "NO_CONSTRUCTION": 327
   },
   "beats": [
     {
@@ -27,16 +26,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s forensic instincts and signals that the note\u0027s very medium marks it as a deliberate, untraceable act by someone who knows tradecraft.",
       "EscalationTarget": "2",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 359,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "ProseLength": 306,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05af-7bb1-bc6f-2e336afaaa9f",
@@ -44,16 +41,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the mystery by revealing the drop\u0027s supposed security is a lie, since everyone who knew of it should be dead.",
       "EscalationTarget": "3",
       "EventType": "departure",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 297,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-7bc9-8e38-8fad7ccff070",
@@ -61,16 +56,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the sender\u0027s identity as a hook, planting a name that promises to detonate Rook\u0027s assumptions.",
       "EscalationTarget": "4",
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 31,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-7a4f-9c0c-25edbdf0dda6",
@@ -78,16 +71,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens the puzzle by establishing that Ohara couldn\u0027t have known the drop through Rook, proving she hunted it down independently.",
       "EscalationTarget": "5",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 219,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-7406-96bb-0a5872d17816",
@@ -95,16 +86,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Raises the stakes by framing the meet as bait or confession while underscoring that spending this secret signals something enormously valuable is at risk.",
       "EscalationTarget": "6",
       "EventType": "confession",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 528,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-774d-b65b-4b734667779e",
@@ -112,16 +101,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds the story in a vividly seedy, lived-in setting that contrasts surface warmth with underlying grime, mirroring the story\u0027s themes of deceptive appearances.",
       "EscalationTarget": "6",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 594,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-7a02-a715-123a62b88b04",
@@ -129,16 +116,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Characterizes Rook through a small ritual of self-protection, showing her habitual wariness even in mundane moments.",
       "EscalationTarget": "7",
       "EventType": "negotiation",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 295,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-70a6-9f90-5fee7edbdcfc",
@@ -146,16 +131,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Shows Rook physically internalizing the note, symbolizing how the message and its threat are now lodged close to her core.",
       "EscalationTarget": "7",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 231,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-7d2e-bb3a-706dc7a2a63a",
@@ -163,16 +146,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Creates a beat of unconscious hesitation, foreshadowing an internal conflict she hasn\u0027t yet consciously registered.",
       "EscalationTarget": "8",
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 65,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-7b46-bed4-68626e80d7f3",
@@ -180,16 +161,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the moment inward to expose a rift between Rook\u0027s body and will, dramatizing her unacknowledged pull toward the past Ohara represents.",
       "EscalationTarget": "8",
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 231,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b2-70be-b952-0888a47ea001",
@@ -197,16 +176,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "A small physical gesture establishes Rook\u0027s discipline, signaling a character built on rigid self-control before that control is tested.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 48,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7e16-8cf9-2dfc4e7745a7",
@@ -214,16 +191,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Backstory reveals the origin and stakes of Rook\u0027s core rule, grounding her caution in a specific past trauma the reader must reckon with.",
       "EscalationTarget": "9",
       "EventType": "negotiation",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 449,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7931-9c60-2e79cbe018a2",
@@ -231,16 +206,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook admits her rule has already begun eroding, escalating tension by showing discipline as fragile rather than absolute.",
       "EscalationTarget": "9",
       "EventType": "repair",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 302,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7476-8c41-5ea943fc96d2",
@@ -248,16 +221,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook consciously acknowledges the danger before acting anyway, marking the turn where resolve gives way to compulsion.",
       "EscalationTarget": "10",
       "EventType": "confession",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 59,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7128-a147-5507a6dea618",
@@ -265,16 +236,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Abandoning an unfinished meal signals urgency and the sudden, involuntary nature of her departure into the plot.",
       "EscalationTarget": "10",
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 150,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7229-aa1b-8ac2db58d2e0",
@@ -282,16 +251,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The setting establishes a decaying, indifferent commercial world that mirrors Rook\u0027s own eroded boundaries and unheeded warnings.",
       "EscalationTarget": "10",
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 485,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-78ba-898a-ffe3088dc56c",
@@ -299,16 +266,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The indifferent civic machinery underscores a world running on autopilot, foreshadowing systems that persist regardless of human absence or intent.",
       "EscalationTarget": "9",
       "EventType": "ambush",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 349,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7cfd-aa63-c78168075864",
@@ -316,16 +281,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Revealing her unconscious momentum shows Rook acting on instinct rather than decision, deepening the sense that the rule already lost.",
       "EscalationTarget": "8",
       "EventType": "confrontation",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 84,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7c25-9e51-6e886ec52c1b",
@@ -333,16 +296,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rejecting the easiest path shows Rook consciously fighting the same pattern of drift that broke her rule before.",
       "EscalationTarget": "9",
       "EventType": "betrayal",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 372,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7c55-b7ac-5e6ccee2fcd2",
@@ -350,16 +311,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "A small ritual of friction and cost lets Rook regain deliberate agency, pushing back against the pull of habit before continuing.",
       "EscalationTarget": "10",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 291,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7320-b015-c2ebc2a345ac",
@@ -367,16 +326,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s instinctive, body-first competence as a baseline for how she reads the world.",
       "EscalationTarget": "10",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 350,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-75d7-a658-f9ec1215b5f6",
@@ -384,16 +341,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Vox and the crew\u0027s dynamics while showing Rook\u0027s disciplined restraint in choosing who to trust first.",
       "EscalationTarget": "10",
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 487,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7f4e-bb3d-183cc42e9ddc",
@@ -401,16 +356,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals a physical tell that marks Rook as someone whose calm is a practiced surface over active calculation.",
       "EscalationTarget": "9",
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 174,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-71b9-9db5-e24a4a9d6d18",
@@ -418,16 +371,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the story\u0027s world and stakes by rendering the city\u0027s surveillance-saturated nightlife in lived, sensory detail.",
       "EscalationTarget": "8",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 914,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7b1c-be2d-2860d823a57c",
@@ -435,16 +386,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the deliberate craft behind Rook\u0027s tradecraft, showing her invisibility as an earned professional skill, not luck.",
       "EscalationTarget": "6",
       "EventType": "escape",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 176,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-723c-9d71-4b84a035f030",
@@ -452,16 +401,14 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Demonstrates Rook\u0027s expert method of reading the city\u0027s infrastructure as intelligence, deepening her characterization as a skilled operative.",
       "EscalationTarget": "5",
       "EventType": "arrival",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 285,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fa00b-05b3-7305-ab20-dc48f36cd42b",
@@ -469,11 +416,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the inciting problem\u0027s emotional core, framing Ohara\u0027s plea as a costly last resort that pulls Rook back into the job.",
       "BeatTags": [],
       "ProseLength": 433,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -484,11 +430,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Foreshadows future loss by articulating the crew\u0027s cautionary rule, setting up dramatic irony about where this job will lead.",
       "BeatTags": [],
       "ProseLength": 398,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -499,11 +444,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Signals Rook\u0027s growing emotional detachment from her old life, planting ambiguity about whether this numbness is progress or damage.",
       "BeatTags": [],
       "ProseLength": 212,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -514,11 +458,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the opening beat by showing Rook\u0027s steady resolve as she commits to entering the story\u0027s central conflict.",
       "BeatTags": [],
       "ProseLength": 94,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -529,11 +472,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s read on her scattered old crew, setting up how easily she\u0027ll reassemble them and foreshadowing their weakened state.",
       "BeatTags": [],
       "ProseLength": 183,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -544,11 +486,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Boiler through a defining habit of stillness and obsession, characterizing him before he speaks a word.",
       "BeatTags": [],
       "ProseLength": 356,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -559,11 +500,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Boiler\u0027s intuitive read of Rook and his willingness to commit before knowing details, establishing loyalty as instinctive rather than negotiated.",
       "BeatTags": [],
       "ProseLength": 689,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -574,11 +514,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Underscores Boiler\u0027s eccentric devotion by framing his waiting as unsurprising, deepening his characterization through irony.",
       "BeatTags": [],
       "ProseLength": 124,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -589,11 +528,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sets the story\u0027s decayed urban atmosphere and Rook\u0027s tradecraft caution, grounding the recruitment mission in a lived-in, surveillance-wary world.",
       "BeatTags": [],
       "ProseLength": 576,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -604,11 +542,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks narrative progress while planting Rook\u0027s quiet unease about how readily people are agreeing to a dangerous job.",
       "BeatTags": [],
-      "ProseLength": 96,
+      "ProseLength": 92,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -619,11 +556,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Scout via a striking image of split attention and isolation, establishing her power and her solitary vulnerability.",
       "BeatTags": [],
       "ProseLength": 638,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -634,11 +570,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Shows Scout committing to the job with clear-eyed acceptance of its danger, establishing her competence and fatalistic loyalty.",
       "BeatTags": [],
       "ProseLength": 299,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -649,11 +584,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals a hidden emotional attachment beneath Scout\u0027s professionalism, hinting at a cost to the mission that Rook silently registers.",
       "BeatTags": [],
       "ProseLength": 262,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -664,11 +598,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s unspoken code around Rook\u0027s authority, reinforcing her leadership and the loyalty built on trust rather than explanation.",
       "BeatTags": [],
       "ProseLength": 398,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -679,11 +612,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Lace\u0027s delayed, solitary entrance establishes her as guarded and self-reliant, setting her apart from the rest of the crew.",
       "BeatTags": [],
       "ProseLength": 62,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -694,11 +626,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Her doorway habits and dry composure characterize Lace as someone perpetually poised for escape and quietly self-protective.",
       "BeatTags": [],
       "ProseLength": 671,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -709,11 +640,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "A short beat transitions into demonstrating Lace\u0027s ingrained vigilance in action.",
       "BeatTags": [],
       "ProseLength": 22,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -724,11 +654,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The detailed room-scan showcases Lace\u0027s trained expertise and establishes her value to the crew through Rook\u0027s admiring perspective.",
       "BeatTags": [],
       "ProseLength": 530,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -739,11 +668,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook notices Lace\u0027s scan falter on him specifically, planting a mystery about unspoken tension between them.",
       "BeatTags": [],
       "ProseLength": 563,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -754,11 +682,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Lace\u0027s choice to suppress whatever she saw deepens the mystery and shows her guardedness extends even to trusted allies.",
       "BeatTags": [],
       "ProseLength": 67,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -769,11 +696,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook reinterprets Lace\u0027s silence as strain rather than secrecy, escalating concern about unresolved history from the safe house.",
       "BeatTags": [],
       "ProseLength": 294,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -784,11 +710,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "This beat defines the fragile, differently-motivated loyalties holding the crew together, with Lace\u0027s restraint framed as load-bearing.",
       "BeatTags": [],
       "ProseLength": 216,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -799,11 +724,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Ohara as a highly skilled, deliberately untraceable target, raising the stakes of the hunt for her.",
       "BeatTags": [],
       "ProseLength": 676,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -814,11 +738,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Rook\u0027s resourceful tradecraft in tracking Ohara while foreshadowing tension by noting he\u0027s withheld his methods from the crew.",
       "BeatTags": [],
       "ProseLength": 43,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -829,11 +752,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Ohara\u0027s fortified, careful living situation to characterize her as someone permanently bracing against threat.",
       "BeatTags": [],
       "ProseLength": 400,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -844,11 +766,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Rook\u0027s habitual deference through a small gesture, establishing her ingrained wariness of overstepping boundaries.",
       "BeatTags": [],
       "ProseLength": 136,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -859,11 +780,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Demonstrates Ohara\u0027s heightened vigilance and skill to reestablish her as a formidable, watchful presence before dialogue begins.",
       "BeatTags": [],
       "ProseLength": 239,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -874,11 +794,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reintroduces Ohara after absence, reframing her visible wear as controlled endurance rather than defeat to reset reader expectations of her resilience.",
       "BeatTags": [],
       "ProseLength": 485,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -889,11 +808,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks the reunion\u0027s guarded tone, establishing that trust between the two women remains conditional rather than restored.",
       "BeatTags": [],
       "ProseLength": 208,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -904,11 +822,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds the scene in tangible technical detail to establish Ohara\u0027s secretive, resource-strained work and foreshadow the partition\u0027s importance.",
       "BeatTags": [],
       "ProseLength": 508,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -919,11 +836,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Confirms the tile\u0027s role as a trust mechanism, reinforcing Rook\u0027s habitual preparedness as a character trait Ohara recognizes and respects.",
       "BeatTags": [],
       "ProseLength": 332,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -934,11 +850,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Opens the central mystery of the partition\u0027s contents, pivoting the scene from reunion to investigation.",
       "BeatTags": [],
       "ProseLength": 848,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -949,11 +864,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Draws a parallel between Ohara and Stave to suggest a shared pattern of guarded, careful people sealing away what they fear.",
       "BeatTags": [],
       "ProseLength": 378,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -964,11 +878,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the chapter\u0027s key revelation, reframing the partition as a product of self-doubt rather than external threat and raising the stakes around its imminent loss.",
       "BeatTags": [],
       "ProseLength": 730,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -979,11 +892,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the emotional cost and history behind Ohara\u0027s summons, grounding Rook\u0027s caution in years of unspoken debt.",
       "BeatTags": [],
       "ProseLength": 361,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -994,11 +906,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the secrecy protecting the partition and Ohara\u0027s fraught relationship to being tracked, deepening the stakes of her isolation.",
       "BeatTags": [],
       "ProseLength": 353,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1009,11 +920,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks a beat of restraint, letting the weight of Ohara\u0027s confession register before the plan resumes.",
       "BeatTags": [],
       "ProseLength": 37,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1024,11 +934,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the mission\u0027s ticking clock and Rook\u0027s operational discipline, turning grief into action.",
       "BeatTags": [],
       "ProseLength": 384,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1039,11 +948,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Confirms Ohara\u0027s competence and quiet need for validation, reinforcing the trust dynamic between them.",
       "BeatTags": [],
       "ProseLength": 111,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1054,11 +962,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Has Ohara own her choice without apology, asserting her integrity despite the cost of reaching out.",
       "BeatTags": [],
       "ProseLength": 218,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1069,11 +976,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Rook\u0027s loyalty is rooted in known risk and past failure, explaining why she came despite the danger.",
       "BeatTags": [],
       "ProseLength": 213,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1084,11 +990,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the scene\u0027s intimacy, signaling Rook\u0027s shift from personal reckoning back to professional resolve.",
       "BeatTags": [],
       "ProseLength": 31,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1099,11 +1004,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Ohara\u0027s deference and restraint as character traits, showing how trauma has reshaped her habits of control.",
       "BeatTags": [],
       "ProseLength": 623,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1114,11 +1018,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the central mystery\u2014the partition\u0027s anomalous survival\u2014escalating the plot\u0027s threat and urgency.",
       "BeatTags": [],
       "ProseLength": 1255,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1129,11 +1032,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Ohara\u0027s rehearsed flatness as a character detail that unsettles the crew more than the confession itself.",
       "BeatTags": [],
-      "ProseLength": 323,
+      "ProseLength": 254,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1144,11 +1046,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reminds the reader that Rook\u0027s team is defined by deliberate diversity of perception, priming the multi-viewpoint reaction to come.",
       "BeatTags": [],
       "ProseLength": 160,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1159,11 +1060,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Boiler\u0027s structural-engineer instincts reframing the revelation as a person straining under false confidence, deepening his sympathy.",
       "BeatTags": [],
       "ProseLength": 444,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1174,11 +1074,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns Scout\u0027s detached, half-present focus into engagement, establishing her private criterion for aliveness as she takes the threat seriously.",
       "BeatTags": [],
       "ProseLength": 533,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1189,11 +1088,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Lace\u0027s role as emotional tracker of the room and hints she\u0027s withholding a secret of her own that Rook chooses not to force out yet.",
       "BeatTags": [],
       "ProseLength": 547,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1204,11 +1102,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Rook\u0027s private, unspoken motivations for helping Ohara, tying present stakes to unresolved history between them.",
       "BeatTags": [],
       "ProseLength": 311,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1219,11 +1116,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the danger by having Rook name the crew\u0027s collective blind spot, reframing their past work as unfinished business.",
       "BeatTags": [],
       "ProseLength": 237,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1234,11 +1130,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s leadership discipline of silence as a diagnostic tool, building tension before anyone responds.",
       "BeatTags": [],
       "ProseLength": 562,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1249,11 +1144,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens Ohara\u0027s vulnerability and reframes the threat as unknowable, escalating stakes beyond her original creation.",
       "BeatTags": [],
       "ProseLength": 426,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1264,11 +1158,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Vox\u0027s quiet technical authority and foreshadows the ghost\u0027s illicit power draw as the concrete next mystery to chase.",
       "BeatTags": [],
       "ProseLength": 721,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1279,11 +1172,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s grounded, threadbare world and frames Vox\u0027s ritual as the story\u0027s timekeeping device.",
       "BeatTags": [],
       "ProseLength": 675,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1294,11 +1186,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Plants an ominous anomaly to signal hidden surveillance and puncture the scene\u0027s calm.",
       "BeatTags": [],
       "ProseLength": 116,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1309,11 +1200,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the stakes by revealing a rival faction is actively racing to breach the same target.",
       "BeatTags": [],
       "ProseLength": 727,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1324,11 +1214,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Builds dread through a deliberate pause, letting the crew\u0027s dawning alarm register before the verdict lands.",
       "BeatTags": [],
       "ProseLength": 745,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1339,11 +1228,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Ohara\u0027s suppressed anxiety, humanizing her stoicism just before it\u0027s shattered.",
       "BeatTags": [],
       "ProseLength": 149,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1354,11 +1242,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the story\u0027s ticking-clock twist, collapsing the mission\u0027s timeline and raising the danger sharply.",
       "BeatTags": [],
       "ProseLength": 206,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1369,11 +1256,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the countdown into a concrete tactical dilemma, showing Rook calculating impossible tradeoffs against Ohara\u0027s life.",
       "BeatTags": [],
       "ProseLength": 596,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1384,11 +1270,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens Ohara\u0027s characterization by showing controlled devastation leak through decades of practiced composure.",
       "BeatTags": [],
       "ProseLength": 818,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1399,11 +1284,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reaffirms Vox\u0027s near-omniscient perception while framing her honesty as a form of respect toward Ohara.",
       "BeatTags": [],
       "ProseLength": 149,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1414,11 +1298,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the beat by reframing the threat as personal, establishing the crew\u0027s unique bond as their only edge.",
       "BeatTags": [],
       "ProseLength": 359,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1429,11 +1312,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Vox\u0027s habit of lingering on ordinary surveillance traffic, setting up the discovery mechanism that will surface the story\u0027s inciting anomaly.",
       "BeatTags": [],
       "ProseLength": 602,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1444,11 +1326,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Flags the query as an anomaly against known PEREGRINE behavior, sharpening reader attention on a detail that shouldn\u0027t exist.",
       "BeatTags": [],
       "ProseLength": 333,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1459,11 +1340,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the deliberate, hand-deleted nature of the search, turning a stray data point into evidence of guilty intent.",
       "BeatTags": [],
       "ProseLength": 659,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1474,11 +1354,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the human stakes by naming Adalemo as the source, forcing Rook to confront a trusted colleague\u0027s secret.",
       "BeatTags": [],
       "ProseLength": 248,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1489,11 +1368,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s prior bond with Adalemo and the cost he\u0027s quietly borne, complicating any easy judgment of his motives.",
       "BeatTags": [],
       "ProseLength": 815,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1504,11 +1382,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Escalates the mystery by having Rook and Vox reason through why a careful operator would sabotage his own cover, deepening suspicion.",
       "BeatTags": [],
       "ProseLength": 549,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1519,11 +1396,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the ambiguous evidence into an actionable directive, establishing Rook\u0027s priority to get ahead of PEREGRINE rather than resolve the moral question.",
       "BeatTags": [],
       "ProseLength": 624,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1534,11 +1410,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reinforces that repeated caution itself is meaningful data, setting up ongoing surveillance as the next narrative beat.",
       "BeatTags": [],
       "ProseLength": 179,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1549,11 +1424,10 @@
       "Chapter": "Chapter 1 \u2014 The Ghost Re",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the scene by folding the ominous discovery back into routine, underscoring how easily a critical clue can hide in plain sight.",
       "BeatTags": [],
       "ProseLength": 231,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1564,11 +1438,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Opens a new chapter by establishing obsolete firmware as a hidden blind spot in the Network\u0027s security, planting the technical loophole the plot will exploit.",
       "BeatTags": [],
       "ProseLength": 897,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1579,11 +1452,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes a mysterious sealed door and long-buried history, seeding a mystery whose implications will drive later revelations.",
       "BeatTags": [],
       "ProseLength": 146,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1594,11 +1466,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the technical foundation of Vox\u0027s plan, revealing forgotten infrastructure as an exploitable blind spot in the city\u0027s surveillance.",
       "BeatTags": [],
       "ProseLength": 927,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1609,11 +1480,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the deliberate logic behind Vox\u0027s slow, outdated system, turning an apparent weakness into the crew\u0027s key advantage against PEREGRINE.",
       "BeatTags": [],
       "ProseLength": 475,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1624,11 +1494,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Grounds the abstract technical scheme in tactile, patient ritual, characterizing Vox\u0027s meticulous trust in old, unglamorous methods.",
       "BeatTags": [],
       "ProseLength": 351,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1639,11 +1508,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens the theme of institutional neglect as opportunity, linking Vox\u0027s makeshift solution to the city\u0027s broader pattern of decay and forgotten gaps.",
       "BeatTags": [],
       "ProseLength": 495,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1654,11 +1522,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates tension by showing Rook\u0027s guarded unease after her meeting, signaling a cost or danger she isn\u0027t voicing yet.",
       "BeatTags": [],
       "ProseLength": 492,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1669,11 +1536,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the plan\u0027s stakes and time limit through terse dialogue, while quietly underscoring Vox\u0027s own damaged nature as the source of their cover.",
       "BeatTags": [],
-      "ProseLength": 1247,
+      "ProseLength": 1248,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1684,11 +1550,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms commitment to the risky plan, closing the beat with the mesh going live and the crew now irrevocably in motion.",
       "BeatTags": [],
       "ProseLength": 192,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1699,11 +1564,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks a narrative transition, compressing time to signal the start of the operation\u0027s countdown.",
       "BeatTags": [],
       "ProseLength": 48,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1714,11 +1578,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the decayed setting of Z2 as atmospheric proof of citywide neglect, reinforcing the story\u0027s motif of forgotten infrastructure.",
       "BeatTags": [],
       "ProseLength": 701,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1729,11 +1592,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s descent into infrastructural no-man\u0027s-land, stripping away reliable channels to heighten vulnerability ahead.",
       "BeatTags": [],
       "ProseLength": 484,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1744,11 +1606,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Vox\u0027s paradoxical dread of silence, reframing quiet as exposure rather than safety to deepen her characterization.",
       "BeatTags": [],
       "ProseLength": 364,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1759,11 +1620,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows Vox adapting under pressure, conserving resources as a quiet display of discipline and control.",
       "BeatTags": [],
       "ProseLength": 157,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1774,11 +1634,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Grounds the story\u0027s world in gritty specificity, establishing the black-market body-modification economy as a lived, normalized backdrop.",
       "BeatTags": [],
       "ProseLength": 859,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1789,11 +1648,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Surfaces a buried memory of Wennick to seed unresolved grief and connect Vox\u0027s past trauma to the present scene.",
       "BeatTags": [],
       "ProseLength": 311,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1804,11 +1662,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns a quiet moment into character insight, using Rook\u0027s cryptic tally to expose the crew\u0027s shared unspoken doubt about the job.",
       "BeatTags": [],
       "ProseLength": 346,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1819,11 +1676,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Captures the crew\u0027s collective unease, showing each member processing risk differently to deepen ensemble characterization.",
       "BeatTags": [],
       "ProseLength": 405,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1834,11 +1690,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Pays off Rook\u0027s counting riddle by revealing Vox\u0027s loyalty as the very thing troubling him, sharpening the stakes of her devotion.",
       "BeatTags": [],
       "ProseLength": 86,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1849,11 +1704,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Advances the heist\u0027s groundwork by establishing Scout\u0027s methodical reconnaissance and pinpointing the target location.",
       "BeatTags": [],
       "ProseLength": 681,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1864,11 +1718,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Explains the tactical significance of the target\u0027s power source, foreshadowing the difficulty of the confrontation to come.",
       "BeatTags": [],
-      "ProseLength": 248,
+      "ProseLength": 246,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1879,11 +1732,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Boiler names Stave\u0027s transactional betrayal as the mechanism connecting past and present jobs, framing the crew\u0027s mission within a cycle of exploitation.",
       "BeatTags": [],
       "ProseLength": 397,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1894,11 +1746,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook deduces that PEREGRINE is a returning survivor with new backing, escalating the stakes by reframing the target as someone who\u0027s already beaten death once.",
       "BeatTags": [],
       "ProseLength": 364,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1909,11 +1760,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The setting shifts into Z2\u0027s decayed threshold zone, establishing a liminal, exposed atmosphere that mirrors the crew\u0027s own uncertain footing.",
       "BeatTags": [],
       "ProseLength": 459,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1924,11 +1774,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Scout\u0027s reconnaissance method is established, revealing her deliberate withholding as she hunts for the meaningful absence rather than surface data.",
       "BeatTags": [],
       "ProseLength": 641,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1939,11 +1788,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "A sensory cue signals proximity to the target, building anticipation through environmental detail rather than exposition.",
       "BeatTags": [],
       "ProseLength": 136,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1954,11 +1802,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s involuntary memory of Z6 humanizes her, grounding the mission\u0027s technical tension in personal history and class origin.",
       "BeatTags": [],
       "ProseLength": 780,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1969,11 +1816,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The substation\u0027s stark, forgotten ugliness is established as the physical embodiment of the story\u0027s theme of neglected infrastructure hiding secrets.",
       "BeatTags": [],
       "ProseLength": 552,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1984,11 +1830,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Boiler and Lace\u0027s structural reading of the building reveals the hidden hand of a skilled, deliberate occupant, escalating suspicion about who they\u0027re truly facing.",
       "BeatTags": [],
       "ProseLength": 1054,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -1999,11 +1844,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Scout reveals the key clue\u2014the conduit-less room\u2014turning surveillance into a concrete lead that reframes the search as a hunt for deliberate concealment.",
       "BeatTags": [],
       "ProseLength": 527,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2014,11 +1858,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s meditation on water and wall externalizes the story\u0027s theme of endurance and inevitable reckoning between opposing forces in contact too long.",
       "BeatTags": [],
       "ProseLength": 419,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2029,11 +1872,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Vox\u0027s defining trait\u2014preemptive decisiveness\u2014setting her apart from the team before the mission\u0027s stakes are clear.",
       "BeatTags": [],
       "ProseLength": 430,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2044,11 +1886,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Introduces Boiler\u0027s caution and frames the target room as the story\u0027s central mystery, raising stakes before entry.",
       "BeatTags": [],
       "ProseLength": 453,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2059,11 +1900,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Builds suspense through Rook\u0027s ritual of counting, foreshadowing that the plan will break before time runs out.",
       "BeatTags": [],
       "ProseLength": 236,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2074,11 +1914,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals danger by showing Scout physically shaken, escalating tension ahead of her discovery\u0027s reveal.",
       "BeatTags": [],
       "ProseLength": 318,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2089,11 +1928,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the trap\u0027s true nature, turning the team\u0027s surveillance advantage into their own exposure.",
       "BeatTags": [],
       "ProseLength": 539,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2104,11 +1942,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens the dread by having Lace instinctively try to undo an action already irreversible.",
       "BeatTags": [],
       "ProseLength": 141,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2119,11 +1956,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the threat by revealing Vox has unknowingly walked into the enemy\u0027s clearest line of sight.",
       "BeatTags": [],
       "ProseLength": 306,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2134,11 +1970,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the mission decisively hostile, showing the enemy seize control of the scene\u0027s technology and light.",
       "BeatTags": [],
       "ProseLength": 639,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2149,11 +1984,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms the ambush by giving the antagonist a voice, establishing their calm authority over the team\u0027s timeline.",
       "BeatTags": [],
       "ProseLength": 166,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2164,11 +1998,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Closes the chapter on an ironic reversal, showing Vox isolated in danger despite the team\u0027s plan to protect her.",
       "BeatTags": [],
-      "ProseLength": 405,
+      "ProseLength": 529,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2179,11 +2012,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Vox reveals her true objective, escalating the heist from a simple break-in into an information-control operation with a ticking clock.",
       "BeatTags": [],
       "ProseLength": 650,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2194,11 +2026,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Stave names the real price of the deal, establishing that Vox\u0027s own exposure \u2014 not money \u2014 is the currency at stake.",
       "BeatTags": [],
       "ProseLength": 747,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2209,11 +2040,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Vox commits impulsively, revealing a crack in her professional identity as the unseen operator now agreeing to be seen.",
       "BeatTags": [],
-      "ProseLength": 483,
+      "ProseLength": 671,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2224,11 +2054,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The scene shifts outward to the waiting crew, establishing Rook\u0027s watchfulness and the crew\u0027s weary stasis before Vox\u0027s return disrupts it.",
       "BeatTags": [],
       "ProseLength": 601,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2239,11 +2068,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook reads Vox\u0027s changed bearing to signal the reader that something has gone wrong beneath the surface of a completed deal.",
       "BeatTags": [],
       "ProseLength": 744,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2254,11 +2082,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook recognizes her plan\u0027s fatal blind spot, deepening the stakes by revealing she never accounted for the cost to Vox herself.",
       "BeatTags": [],
       "ProseLength": 1002,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2269,11 +2096,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook shields Vox from immediate interrogation, establishing trust and deferring the reveal of the deal\u0027s true price.",
       "BeatTags": [],
       "ProseLength": 331,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2284,11 +2110,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Vox partially discloses the deal\u0027s terms, letting Boiler\u0027s practical question pivot the scene toward the wall\u0027s hidden mechanics.",
       "BeatTags": [],
       "ProseLength": 553,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2299,11 +2124,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Stave reframes the entire heist\u0027s urgency by revealing the wall\u0027s failure is inevitable and already in motion, not just a rival\u0027s dig.",
       "BeatTags": [],
       "ProseLength": 630,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2314,11 +2138,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Stave introduces a new threat, escalating the timeline by naming a rival operative who could beat them to the wall.",
       "BeatTags": [],
       "ProseLength": 170,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2329,11 +2152,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the plan\u0027s true danger by framing Stave\u0027s calm delivery as evasion of a risk they won\u0027t own.",
       "BeatTags": [],
       "ProseLength": 454,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2344,11 +2166,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Undercuts false reassurance with a hedge that reveals the procedure\u0027s real uncertainty.",
       "BeatTags": [],
       "ProseLength": 111,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2359,11 +2180,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Stave\u0027s hidden trauma through a micro-expression, planting doubt about their reliability as guide.",
       "BeatTags": [],
       "ProseLength": 784,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2374,11 +2194,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the scene by having Vox expose shared vulnerability, inviting Stave\u0027s guard to drop.",
       "BeatTags": [],
       "ProseLength": 163,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2389,11 +2208,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks a bonding turn as Stave recognizes a kindred wound, deepening trust through mutual disclosure.",
       "BeatTags": [],
       "ProseLength": 317,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2404,11 +2222,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers Stave\u0027s backstory to justify their expertise and explain the personal stakes of the coming procedure.",
       "BeatTags": [],
       "ProseLength": 1255,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2419,11 +2236,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Underscores Stave\u0027s self-punishing honesty while hinting at a larger, unnamed authority complicit in the harm.",
       "BeatTags": [],
       "ProseLength": 352,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2434,11 +2250,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Vox\u0027s own hidden damage, paralleling Stave\u0027s confession and raising personal stakes for her involvement.",
       "BeatTags": [],
       "ProseLength": 697,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2449,11 +2264,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Cements the thematic parallel between Vox\u0027s condition and the mission\u0027s danger, making the risk viscerally personal.",
       "BeatTags": [],
       "ProseLength": 392,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2464,11 +2278,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Closes the beat by showing Stave\u0027s composure cracking, confirming the confession cost them more than they admit.",
       "BeatTags": [],
       "ProseLength": 153,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2479,11 +2292,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the chapter\u0027s central constraint, anchoring the mission\u0027s location requirement before revealing why it matters.",
       "BeatTags": [],
       "ProseLength": 25,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2494,11 +2306,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Explains the technical stakes to justify why the site choice is nonnegotiable rather than arbitrary caution.",
       "BeatTags": [],
       "ProseLength": 721,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2509,11 +2320,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals that Ohara anticipated this exact requirement long ago, deepening her role as a hidden architect of the plan.",
       "BeatTags": [],
       "ProseLength": 293,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2524,11 +2334,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers a startling coincidence that collapses two storylines together, raising tension by tying the target site to a known character.",
       "BeatTags": [],
       "ProseLength": 130,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2539,11 +2348,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Signals through gesture that Boiler is withholding relevant knowledge, building suspense before his confession.",
       "BeatTags": [],
       "ProseLength": 129,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2554,11 +2362,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Prompts the crew to confront Boiler\u0027s hidden history, pushing him toward disclosure.",
       "BeatTags": [],
       "ProseLength": 63,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2569,11 +2376,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers Boiler\u0027s expertise as the payoff, explaining the bureaucratic accident that makes the site uniquely viable.",
       "BeatTags": [],
       "ProseLength": 618,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2584,11 +2390,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks a turning point where the group\u0027s luck shifts, giving the crew unexpected tactical relief.",
       "BeatTags": [],
       "ProseLength": 95,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2599,11 +2404,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Refocuses the scene from feasibility to logistics, pivoting toward the physical execution of the plan.",
       "BeatTags": [],
       "ProseLength": 42,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2614,11 +2418,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Boiler\u0027s careful, grounded competence, confirming the site\u0027s physical viability through his firsthand diligence.",
       "BeatTags": [],
       "ProseLength": 680,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2629,11 +2432,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s silent survey establishes her as the group\u0027s authority weighing each member before proceeding with the plan.",
       "BeatTags": [],
       "ProseLength": 92,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2644,11 +2446,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook opens direct interrogation of Boiler, forcing an accounting for his presence that grounds the plan in personal stakes.",
       "BeatTags": [],
       "ProseLength": 42,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2659,11 +2460,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Boiler\u0027s answer reveals his grief-driven need for meaningless permanence, deepening his character beyond his technical role.",
       "BeatTags": [],
       "ProseLength": 463,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2674,11 +2474,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Stave lays out the calibration procedure in exacting detail, establishing the stakes and fragility of the coming operation.",
       "BeatTags": [],
       "ProseLength": 554,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2689,11 +2488,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s brief prompt keeps the planning moving and signals she expects the full picture before committing anyone.",
       "BeatTags": [],
       "ProseLength": 23,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2704,11 +2502,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Stave clarifies their own limited, non-heroic role and warns against improvisation, foreshadowing danger from past failure and building dread.",
       "BeatTags": [],
       "ProseLength": 586,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2719,11 +2516,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s quiet acceptance shows her methodical trust-building, filing away critical information without overreacting.",
       "BeatTags": [],
       "ProseLength": 61,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2734,11 +2530,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Stave identifies a second vulnerability needing coverage, expanding the plan\u0027s scope and introducing a specific skill requirement.",
       "BeatTags": [],
       "ProseLength": 317,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2749,11 +2544,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Scout\u0027s terse, practical response characterizes her as reliably action-oriented rather than boastful, earning Rook\u0027s approval.",
       "BeatTags": [],
       "ProseLength": 204,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2764,11 +2558,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Boiler\u0027s precise, unprompted map-making reinforces his meticulous nature while cementing the team\u0027s competent division of labor before the mission.",
       "BeatTags": [],
       "ProseLength": 560,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2779,11 +2572,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Lace\u0027s competence and instinct, signaling to the reader that a plan is forming before it\u0027s spoken aloud.",
       "BeatTags": [],
       "ProseLength": 333,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2794,11 +2586,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the crew\u0027s operational method to build confidence in their tradecraft and set concrete stakes for the coming job.",
       "BeatTags": [],
       "ProseLength": 408,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2809,11 +2600,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Stave\u0027s obsessive, long-held preoccupation with this building through a small, telling detail rather than exposition.",
       "BeatTags": [],
       "ProseLength": 147,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2824,11 +2614,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Assigns roles to escalate urgency and cement Rook\u0027s command authority as the operation moves from planning to execution.",
       "BeatTags": [],
       "ProseLength": 281,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2839,11 +2628,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers Stave\u0027s emotional truth in a single charged line, revealing years of buried investment behind their reticence.",
       "BeatTags": [],
       "ProseLength": 121,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2854,11 +2642,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shifts the setting outdoors to signal that emotional honesty, not tactics, is about to take over the scene.",
       "BeatTags": [],
       "ProseLength": 492,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2869,11 +2656,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the outdoors as sanctuary from surveillance, priming the reader for a confession the crew couldn\u0027t risk inside.",
       "BeatTags": [],
       "ProseLength": 348,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2884,11 +2670,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the scene toward confession, revealing Lace\u0027s guilt and complicating the crew\u0027s trust in her judgment.",
       "BeatTags": [],
       "ProseLength": 795,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2899,11 +2684,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens the emotional weight of Lace\u0027s confession by showing Boiler\u0027s wordless reckoning with a cost beyond his expertise.",
       "BeatTags": [],
       "ProseLength": 268,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2914,11 +2698,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Closes the beat on Rook\u0027s silent, weighted presence, underscoring the gravity of Lace\u0027s admission without resolving it.",
       "BeatTags": [],
       "ProseLength": 158,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2929,11 +2712,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s founding ethic of total disclosure so its violation later will land as a genuine betrayal.",
       "BeatTags": [],
       "ProseLength": 830,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2944,11 +2726,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals that the breach came from competence rather than negligence, complicating blame and mirroring Rook\u0027s own hidden compromise.",
       "BeatTags": [],
       "ProseLength": 544,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2959,11 +2740,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns Rook\u0027s silence into its own verdict, showing restraint as the harder, costlier choice than confrontation.",
       "BeatTags": [],
-      "ProseLength": 705,
+      "ProseLength": 704,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2974,11 +2754,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the stakes by reframing the mission\u0027s true deadline as an unknowable, possibly-already-passed threshold only Vox can test from inside.",
       "BeatTags": [],
       "ProseLength": 492,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -2989,11 +2768,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Vox names the personal cost of Lace\u0027s withheld information, establishing that trust\u2014not just strategy\u2014was damaged.",
       "BeatTags": [],
       "ProseLength": 220,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3004,11 +2782,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Vox\u0027s own parallel hidden bargain, undercutting her right to judge and deepening the crew\u0027s shared guilt.",
       "BeatTags": [],
       "ProseLength": 484,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3019,11 +2796,10 @@
       "Chapter": "Chapter 2 \u2014 The Partitio",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms Rook\u0027s bleak conclusion that no one at the table has kept the founding promise, closing the beat\u0027s moral reckoning.",
       "BeatTags": [],
       "ProseLength": 184,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3034,11 +2810,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Opens the new chapter by establishing an eerie atmosphere that signals danger seeded in stillness rather than action.",
       "BeatTags": [],
       "ProseLength": 56,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3049,11 +2824,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Builds unsettling texture and foreshadows hidden structural fragility as a metaphor for the crew\u0027s own strained foundations.",
       "BeatTags": [],
       "ProseLength": 535,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3064,11 +2838,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Raises tension by having Lace go dark after infiltration, planting uncertainty about her safety and true intentions.",
       "BeatTags": [],
       "ProseLength": 406,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3079,11 +2852,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Lace\u0027s competence and care by showing preparation as an act of quiet devotion to the team\u0027s safety.",
       "BeatTags": [],
       "ProseLength": 514,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3094,11 +2866,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Stave\u0027s meticulous method and introduces the reference signal as the crew\u0027s crucial safeguard against error.",
       "BeatTags": [],
       "ProseLength": 418,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3109,11 +2880,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Ohara\u0027s buried history with the building, turning the mission personal and hinting at unresolved guilt.",
       "BeatTags": [],
       "ProseLength": 613,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3124,11 +2894,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reinforces Lace\u0027s controlling precision, positioning Ohara as contained and subordinate within the operation.",
       "BeatTags": [],
       "ProseLength": 97,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3139,11 +2908,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates tension by making explicit the danger Ohara poses through her emotional stake, sharpening the stakes of restraint.",
       "BeatTags": [],
       "ProseLength": 602,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3154,11 +2922,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes procedural discipline and team positions, underscoring how total isolation from outside interference is the operation\u0027s lifeline.",
       "BeatTags": [],
       "ProseLength": 355,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3169,11 +2936,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Stave\u0027s quiet vulnerability and dependence on ritual, deepening their characterization before they must step back and trust others.",
       "BeatTags": [],
       "ProseLength": 610,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3184,11 +2950,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates dread by laying out contingency rules, foreshadowing danger and establishing the sacred rule against improvised intervention.",
       "BeatTags": [],
       "ProseLength": 943,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3199,11 +2964,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the moment toward quiet stakes by affirming Vox\u0027s readiness while underscoring Stave\u0027s own past failure and departure.",
       "BeatTags": [],
       "ProseLength": 333,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3214,11 +2978,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Closes the preparation phase, settling the crew into stillness as Vox begins her vigil, poised on the edge of danger.",
       "BeatTags": [],
       "ProseLength": 273,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3229,11 +2992,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes an ominous countdown to contact, building dread through Vox\u0027s flat certainty that danger is coming, only its timing uncertain.",
       "BeatTags": [],
-      "ProseLength": 153,
+      "ProseLength": 155,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3244,56 +3006,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Rook\u0027s intimate, almost intuitive rapport with structures, framing her as a listener who withholds herself even from truths she can sense.",
       "BeatTags": [],
       "ProseLength": 427,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019fa00e-cec9-7728-878c-aeea0d71ad5c",
-      "Number": 7405,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 37,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019fa00e-cec9-7f10-9814-fd8acbde4b62",
-      "Number": 7406,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 759,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
-    },
-    {
-      "BeatId": "019fa00e-cec9-761d-a060-15cf08d8b1aa",
-      "Number": 7407,
-      "Chapter": "Chapter 3 \u2014 The Crack",
-      "ChapterIndex": 2,
-      "Act": 0,
-      "BeatTags": [],
-      "ProseLength": 266,
-      "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3304,11 +3020,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks time\u0027s passage with a bleak, sunless morning to underscore the crew\u0027s entrapment in a ruined, exposed space.",
       "BeatTags": [],
       "ProseLength": 279,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3319,11 +3034,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens atmosphere and grounds the setting\u0027s decay, using sensory detail to convey the crew\u0027s fatigue and the oppressive stillness of waiting.",
       "BeatTags": [],
       "ProseLength": 752,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3334,11 +3048,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Clarifies the mechanics of their infiltration, showing Stave\u0027s limited, transactional complicity and the fragile illusion sustaining their cover.",
       "BeatTags": [],
       "ProseLength": 245,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3349,11 +3062,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces Boiler\u0027s methodical distrust of records, setting up his physical discovery as more reliable than institutional knowledge.",
       "BeatTags": [],
       "ProseLength": 695,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3364,11 +3076,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals an uncanny, unexplained anomaly in the wall that undercuts assumptions of human tampering, deepening the story\u0027s mystery.",
       "BeatTags": [],
       "ProseLength": 203,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3379,11 +3090,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Ohara\u0027s true role by revealing she recognizes and cannot face the room she herself built and sealed.",
       "BeatTags": [],
       "ProseLength": 685,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3394,11 +3104,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens Ohara\u0027s shame by showing she must now trespass, as a stranger, into a space she made and locked against herself.",
       "BeatTags": [],
       "ProseLength": 836,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3409,11 +3118,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the external threat by confirming PEREGRINE\u0027s approach is a controlled, confident advance rather than a desperate breach.",
       "BeatTags": [],
       "ProseLength": 517,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3424,11 +3132,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Grounds Rook\u0027s fear in physical ritual, showing her manage dread by counting exits instead of succumbing to the cold\u0027s warning.",
       "BeatTags": [],
       "ProseLength": 584,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3439,11 +3146,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks Vox\u0027s resolve by having her methodically silence every distraction before facing the wall alone.",
       "BeatTags": [],
       "ProseLength": 485,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3454,11 +3160,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers Lace\u0027s overdue accountability, turning her guilt over the miscounted days into a spoken, unadorned admission of fault.",
       "BeatTags": [],
       "ProseLength": 636,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3469,11 +3174,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Lace\u0027s atonement as physical rather than verbal, choosing shared risk over apology to make amends legible to Vox.",
       "BeatTags": [],
       "ProseLength": 587,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3484,11 +3188,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Underscores the futility of gesture against mechanism, showing the wall consume Lace\u0027s sacrifice as indifferently as anything else, yet marking a fragile parity between the two women.",
       "BeatTags": [],
       "ProseLength": 593,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3499,11 +3202,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Signals imminent danger through Rook\u0027s uncharacteristic terseness, letting bare fact substitute for reassurance.",
       "BeatTags": [],
       "ProseLength": 121,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3514,11 +3216,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Closes the beat on Vox\u0027s committed descent, turning preparation into irreversible action as she enters the sealed room.",
       "BeatTags": [],
       "ProseLength": 126,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3529,11 +3230,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the crew\u0027s ritual discipline and Rook\u0027s silent vigil, heightening tension as Vox disappears from contact.",
       "BeatTags": [],
       "ProseLength": 373,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3544,11 +3244,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Grounds Rook\u0027s controlled competence in ritualized counting, setting up the timeline whose breach will signal disaster.",
       "BeatTags": [],
       "ProseLength": 155,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3559,11 +3258,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks the first concrete break from expected timing, triggering the story\u0027s central alarm.",
       "BeatTags": [],
       "ProseLength": 46,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3574,11 +3272,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the anomaly from mere loss of signal to evidence of hostile takeover, revealing the crew isn\u0027t alone.",
       "BeatTags": [],
       "ProseLength": 503,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3589,11 +3286,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirms physically for Rook that an unknown adversary has seized control of the line Vox opened, raising immediate stakes.",
       "BeatTags": [],
       "ProseLength": 374,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3604,11 +3300,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns suspicion into shared certainty between Rook and Boiler that Vox now faces an unseen enemy inside the system.",
       "BeatTags": [],
       "ProseLength": 245,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3619,11 +3314,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces a second, physical threat converging on the team, layering danger atop the digital breach.",
       "BeatTags": [],
       "ProseLength": 298,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3634,11 +3328,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Sharpens the threat into immediate, ticking proximity, compressing the crew\u0027s remaining reaction time.",
       "BeatTags": [],
       "ProseLength": 31,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3649,11 +3342,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirms the physical threat\u0027s scale and composure, escalating danger from possibility to organized incoming force.",
       "BeatTags": [],
       "ProseLength": 160,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3664,11 +3356,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pivots the scene into action as Rook reads the enemy\u0027s calm as confidence, forcing the crew to move before their exits vanish.",
       "BeatTags": [],
       "ProseLength": 405,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3679,11 +3370,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Ohara\u0027s shift from builder to helpless witness confirms the trap\u0027s design is about to be tested against its maker\u0027s own knowledge.",
       "BeatTags": [],
       "ProseLength": 556,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3694,11 +3384,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "A blunt one-line status check raises stakes by reminding the reader Vox remains the exposed target amid the unfolding crisis.",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3709,11 +3398,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Rook\u0027s refusal to look at the patch signals grim focus, suppressing dread to prioritize action over dwelling on the threat.",
       "BeatTags": [],
       "ProseLength": 41,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3724,11 +3412,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the blast door as a concrete, achievable solution, giving the crew a tangible countermeasure and the reader a goal to hope for.",
       "BeatTags": [],
       "ProseLength": 420,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3739,11 +3426,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Rook\u0027s successful advance builds momentary hope that the crew can seize control of the situation through competent, decisive action.",
       "BeatTags": [],
       "ProseLength": 172,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3754,11 +3440,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Her calm radio call reinforces procedural discipline, letting the reader believe the plan is proceeding as intended right before it isn\u0027t.",
       "BeatTags": [],
       "ProseLength": 90,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3769,11 +3454,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The abrupt comms death signals the enemy\u0027s active, intelligent interference, escalating the threat from environmental hazard to conscious adversary.",
       "BeatTags": [],
       "ProseLength": 302,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3784,11 +3468,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The actuator\u0027s unexpected movement delivers a visceral shock, turning a hopeful rescue action into sudden violation of control.",
       "BeatTags": [],
       "ProseLength": 38,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3799,11 +3482,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals PEREGRINE\u0027s godlike infiltration of the building\u0027s systems, reframing the entire scene as a demonstration of the enemy\u0027s total dominance.",
       "BeatTags": [],
       "ProseLength": 407,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3814,11 +3496,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The door\u0027s reversal seals the crew\u0027s helplessness, confirming the trap was never theirs to escape and heightening the danger to Vox.",
       "BeatTags": [],
       "ProseLength": 95,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3829,11 +3510,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Rook marks the door\u0027s capture as only a partial victory, raising the stakes for the ground still to be won.",
       "BeatTags": [],
       "ProseLength": 178,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3844,11 +3524,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "A flashback reveals Boiler\u0027s hidden sabotage as quiet foreshadowing, establishing a hidden asset that will pay off in the coming fight.",
       "BeatTags": [],
       "ProseLength": 552,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3859,11 +3538,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Boiler withholds the detonator\u0027s trigger to escalate tension by showing the plan\u0027s success depends on precise timing he doesn\u0027t yet have.",
       "BeatTags": [],
       "ProseLength": 591,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3874,11 +3552,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Boiler enlists Scout\u0027s help, establishing team interdependence and setting up the next tactical maneuver.",
       "BeatTags": [],
       "ProseLength": 189,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3889,11 +3566,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Scout\u0027s misdirection demonstrates her unique power in action, engineering the exact split Boiler needs to proceed safely.",
       "BeatTags": [],
       "ProseLength": 661,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3904,11 +3580,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "A terse beat delivers the turn, committing Boiler irreversibly to the plan\u0027s execution.",
       "BeatTags": [],
       "ProseLength": 12,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3919,11 +3594,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The collapse\u0027s controlled framing pays off Boiler\u0027s earlier prep, proving his sabotage as deliberate craftsmanship disguised as chance.",
       "BeatTags": [],
       "ProseLength": 407,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3934,11 +3608,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "A near-miss escalates dread by threatening to undo the plan\u0027s precision and endanger Vox, then releases tension as the structure holds as designed.",
       "BeatTags": [],
       "ProseLength": 575,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3949,11 +3622,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Boiler\u0027s restraint reveals his guiding ethic, showing his violence is calculated to deter rather than kill.",
       "BeatTags": [],
       "ProseLength": 469,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3964,11 +3636,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The beat raises immediate danger by exposing Scout\u0027s helpless body to discovery, creating a cliffhanger threat to the team\u0027s most vulnerable asset.",
       "BeatTags": [],
-      "ProseLength": 532,
+      "ProseLength": 533,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3979,11 +3650,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Lace\u0027s impersonation gambit launches the wall-crack sequence, establishing her borrowed authority as a fragile, single-use weapon against overwhelming numbers.",
       "BeatTags": [],
       "ProseLength": 702,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -3994,11 +3664,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the bluff to its breaking point, forcing Lace to win with pure nerve rather than skill and revealing how thin her margin for error truly is.",
       "BeatTags": [],
       "ProseLength": 1347,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4009,11 +3678,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off the team\u0027s coordinated defense while grounding the victory in real cost, showing the emotional and physical toll beneath the tactical success.",
       "BeatTags": [],
       "ProseLength": 875,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4024,11 +3692,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Undercuts the team\u0027s win by revealing one threat slipped through entirely, turning a tactical success into a ticking clock that endangers Vox directly.",
       "BeatTags": [],
       "ProseLength": 660,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4039,11 +3706,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers the team\u0027s partial-victory report to Rook, converting the prior action into urgent warning and raising stakes for whoever waits inside.",
       "BeatTags": [],
       "ProseLength": 232,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4054,11 +3720,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Immerses the reader in Vox\u0027s sensory ordeal inside the wall, establishing the physical and psychological toll of her infiltration before the external threat intrudes.",
       "BeatTags": [],
       "ProseLength": 783,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4069,11 +3734,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows Vox locating the structural weak point only to discover they\u0027ve already passed it, escalating dread by making the danger retroactive rather than avoidable.",
       "BeatTags": [],
       "ProseLength": 234,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4084,11 +3748,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces the approaching enemy through pure physical sensation, escalating tension by making the outside threat tangible and encroaching on Vox\u0027s isolated task.",
       "BeatTags": [],
       "ProseLength": 804,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4099,11 +3762,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks Vox\u0027s internal shift from focused competence to divided attention, signaling that time pressure now rivals the technical task itself.",
       "BeatTags": [],
       "ProseLength": 156,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4114,11 +3776,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes a tactile lifeline between Rook and Vox, reassuring her of backup while converting the countdown into a shared, measurable threat.",
       "BeatTags": [],
       "ProseLength": 725,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4129,11 +3790,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the stakes of the reading by making its completion depend on a single trusted reference tone, setting up its loss as a crisis.",
       "BeatTags": [],
       "ProseLength": 404,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4144,11 +3804,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the beat sharply by yanking away the one stable instrument the protagonist was counting on, converting quiet technical work into sudden crisis.",
       "BeatTags": [],
       "ProseLength": 414,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4159,11 +3818,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the disorientation by revealing that the entire prior analysis was built on the very thing that just vanished, stripping away her sense of ground.",
       "BeatTags": [],
       "ProseLength": 509,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4174,11 +3832,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals her method of resilience, reframing the loud, degraded signal as the new (if inferior) resource she must now rely on.",
       "BeatTags": [],
-      "ProseLength": 677,
+      "ProseLength": 676,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4189,11 +3846,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens the human stakes by grounding the technical crisis in Lace\u0027s physical, trusting presence, emphasizing what\u0027s riding on Vox\u0027s next move.",
       "BeatTags": [],
       "ProseLength": 543,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4204,11 +3860,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Clarifies the limits of her support system, establishing that Lace can steady her but cannot solve the problem for her.",
       "BeatTags": [],
       "ProseLength": 55,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4219,11 +3874,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks her resolve to push forward despite the loss, establishing acceptance of risk as the story\u0027s new operating condition.",
       "BeatTags": [],
       "ProseLength": 438,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4234,11 +3888,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off her earlier vertigo by turning the compromised signal into a working method, showing her ingenuity under pressure.",
       "BeatTags": [],
       "ProseLength": 718,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4249,11 +3902,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Underscores the cost of her improvised method by tying its slowness to her own physical strain, reinforcing the stakes\u0027 immediacy.",
       "BeatTags": [],
       "ProseLength": 318,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4264,11 +3916,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shifts focus to Ohara to reveal a parallel discipline of courage, showing how she has pre-exhausted her fear to remain a steady anchor.",
       "BeatTags": [],
       "ProseLength": 1131,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4279,11 +3930,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The heist\u0027s central deception turns inward, revealing the loud wall as an intentional trap that collapses backward instead of yielding forward as planned.",
       "BeatTags": [],
       "ProseLength": 1022,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4294,11 +3944,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes that the hidden cache predates the entire cover operation and was sealed by Ohara\u0027s own credentials, reframing her as author of the secret rather than merely its guardian.",
       "BeatTags": [],
       "ProseLength": 948,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4309,11 +3958,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates Vox\u0027s discovery into a visceral realization that the person she\u0027s robbing is also trapped by what she buried.",
       "BeatTags": [],
       "ProseLength": 427,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4324,11 +3972,10 @@
       "Chapter": "Chapter 3 \u2014 The Crack",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens the irony by placing Ohara physically beside the vault she sealed against herself, unaware how far the breach has already gone.",
       "BeatTags": [],
       "ProseLength": 890,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4339,11 +3986,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks a hard scene turn to the surface team, establishing rising urgency as Vox\u0027s time underground exceeds the plan.",
       "BeatTags": [],
       "ProseLength": 28,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4354,11 +4000,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Builds tension by showing Rook\u0027s controlled anxiety as the operation drifts past its planned boundaries without yet becoming an emergency.",
       "BeatTags": [],
       "ProseLength": 491,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4369,11 +4014,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Characterizes Rook\u0027s competence by showing her reading danger through absence and environmental cues rather than direct information.",
       "BeatTags": [],
       "ProseLength": 438,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4384,11 +4028,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "A stark one-line turn signaling the loss of the team\u0027s only lifeline to Vox underground.",
       "BeatTags": [],
       "ProseLength": 27,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4399,11 +4042,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals the failure of the reference signal, escalating stakes by stripping away Rook\u0027s last means of tracking Vox\u0027s safety.",
       "BeatTags": [],
       "ProseLength": 707,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4414,11 +4056,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Closes the beat by dramatizing restraint as its own form of action, underscoring Rook\u0027s discipline and quiet dread.",
       "BeatTags": [],
       "ProseLength": 310,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4429,11 +4070,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Lace\u0027s blind trust and physical vigil, deepening tension by showing her devotion despite ignorance of the stakes.",
       "BeatTags": [],
       "ProseLength": 392,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4444,11 +4084,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Ohara\u0027s deliberate, dignified consent to self-exposure, reframing her silence as the story\u0027s clearest act of integrity.",
       "BeatTags": [],
       "ProseLength": 749,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4459,11 +4098,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Crystallizes Rook\u0027s understanding of Ohara\u0027s true role, reframing her as a trapped architect rather than adversary or victim.",
       "BeatTags": [],
       "ProseLength": 266,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4474,11 +4112,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates external danger by establishing a closing threat that ties the heist\u0027s success to the very act of discovery.",
       "BeatTags": [],
-      "ProseLength": 681,
+      "ProseLength": 679,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4489,11 +4126,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns attention outward, signaling Rook shifting from internal vigil to tactical awareness of the approaching threat.",
       "BeatTags": [],
       "ProseLength": 75,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4504,11 +4140,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates urgency by revealing a shrinking timetable through silent, practiced teamwork between Rook and Scout.",
       "BeatTags": [],
       "ProseLength": 371,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4519,11 +4154,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reaffirms the plan\u0027s core discipline, underscoring the passive endurance required as Vox works blind inside the wall.",
       "BeatTags": [],
       "ProseLength": 426,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4534,11 +4168,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reinforces Rook\u0027s restraint as active labor, defining patience itself as the story\u0027s central heroic act.",
       "BeatTags": [],
       "ProseLength": 138,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4549,11 +4182,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns the mystery by subverting expectations, revealing the hidden data as something more human and damning than anticipated.",
       "BeatTags": [],
       "ProseLength": 522,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4564,11 +4196,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Deepens the reveal\u0027s mystery by hinting at a hidden, older truth beneath the heist\u0027s assumed corporate motive.",
       "BeatTags": [],
       "ProseLength": 512,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4579,11 +4210,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Vox\u0027s disbelieving double-take signals the reader that whatever she\u0027s found is significant enough to demand re-verification, building dread before revelation.",
       "BeatTags": [],
       "ProseLength": 68,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4594,11 +4224,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Vox\u0027s forensic competence while planting a ticking clock of dawning recognition, delaying the reveal to maximize tension.",
       "BeatTags": [],
       "ProseLength": 376,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4609,11 +4238,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Delivers the story\u0027s central atrocity as a concrete, dated fact, converting vague dread into a specific historical wound Vox must now confront.",
       "BeatTags": [],
       "ProseLength": 125,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4624,11 +4252,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Deepens the stakes by revealing Vox\u0027s personal history with this exact atrocity, transforming an abstract discovery into a wound she has carried and suppressed.",
       "BeatTags": [],
       "ProseLength": 681,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4639,11 +4266,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Confirms the scale of the crime with a hard number, pivoting the horror from the disappearance itself to the bureaucratic evidence trail that follows.",
       "BeatTags": [],
       "ProseLength": 411,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4654,11 +4280,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Introduces a second layer of horror by showing the system\u0027s cold efficiency, framing \u0027reconciliation\u0027 as complicity rather than closure.",
       "BeatTags": [],
       "ProseLength": 483,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4669,11 +4294,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Plants the story\u0027s next mystery with a single stark absence, isolating the twenty-one as the beat\u0027s true emotional target.",
       "BeatTags": [],
       "ProseLength": 47,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4684,11 +4308,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Slows time to dramatize Vox\u0027s escalating denial-to-acceptance arc, making the reader feel the labor of confronting an unbearable fact.",
       "BeatTags": [],
       "ProseLength": 558,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4699,11 +4322,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks the turn from intellectual discovery to embodied grief, showing trauma registering physically and cementing the stakes as personal, not just informational.",
       "BeatTags": [],
       "ProseLength": 778,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4714,11 +4336,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Contrasts Lace\u0027s ignorant steadiness with Vox\u0027s solitary knowledge to deepen her isolation and echo the story\u0027s earlier motif of concealed truths between partners.",
       "BeatTags": [],
-      "ProseLength": 682,
+      "ProseLength": 603,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4729,11 +4350,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Ohara\u0027s secrecy as an act of hidden sacrifice, deepening Vox\u0027s moral understanding of her predecessor and raising the stakes of the manifest\u0027s exposure.",
       "BeatTags": [],
-      "ProseLength": 485,
+      "ProseLength": 384,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4744,11 +4364,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Escalates the external threat and reframes the operation\u0027s target, turning a planned data theft into an unplanned reckoning with buried human cost.",
       "BeatTags": [],
-      "ProseLength": 552,
+      "ProseLength": 550,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4759,11 +4378,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Crystallizes the story\u0027s central moral fork, forcing Vox to choose between mission completion and repeating Ohara\u0027s concealment.",
       "BeatTags": [],
       "ProseLength": 693,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4774,11 +4392,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Raises the stakes by making Vox personally responsible for the twenty-one lives, compressing her decision into an unforgiving countdown.",
       "BeatTags": [],
       "ProseLength": 410,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4789,11 +4406,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks the turn from deliberation to action, signaling the decision point has arrived.",
       "BeatTags": [],
       "ProseLength": 48,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4804,11 +4420,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Introduces a new threat and disrupts Vox\u0027s control by stripping her of her sensory anchor at the worst possible moment.",
       "BeatTags": [],
       "ProseLength": 757,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4819,11 +4434,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Adalemo\u0027s deeper test of Vox\u0027s integrity, escalating the confrontation from tactical to existential.",
       "BeatTags": [],
       "ProseLength": 448,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4834,11 +4448,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Builds tension and foreshadows hidden vulnerability in Adalemo through a small physical tell Vox notices.",
       "BeatTags": [],
       "ProseLength": 420,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4849,11 +4462,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Adalemo\u0027s secret loyalty and moral complexity, complicating the antagonist role and accelerating the ticking clock with new intelligence.",
       "BeatTags": [],
       "ProseLength": 978,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4864,11 +4476,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Confirms Adalemo\u0027s sincerity and establishes a fragile trust between him and Vox built on mutual risk and honesty.",
       "BeatTags": [],
       "ProseLength": 316,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4879,11 +4490,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the moral cost of the choice already made, quantifying the unmarked people left exposed to escalate the stakes of Vox\u0027s decision.",
       "BeatTags": [],
       "ProseLength": 298,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4894,11 +4504,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Characterizes Vox\u0027s decisiveness as instinctive rather than deliberated, framing the coming act as inevitable to her nature.",
       "BeatTags": [],
       "ProseLength": 181,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4909,11 +4518,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks the concrete turning point where Vox commits to covering the breach rather than exploiting it.",
       "BeatTags": [],
       "ProseLength": 28,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4924,11 +4532,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Details the technical compromise of the reseal to show Vox choosing partial protection over none, paying off her established skill under pressure.",
       "BeatTags": [],
       "ProseLength": 646,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4939,11 +4546,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Adalemo\u0027s tacit complicity and reframes him as a covert ally, turning a potential threat into a protector of the crew\u0027s secret.",
       "BeatTags": [],
       "ProseLength": 1327,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4954,11 +4560,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks Vox\u0027s acceptance of Adalemo\u0027s offer, propelling her escape and closing the confrontation.",
       "BeatTags": [],
       "ProseLength": 12,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4969,11 +4574,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Uses the corridor\u0027s decayed infrastructure as a physical correlative for the story\u0027s hidden support systems, deepening atmosphere during Vox\u0027s retreat.",
       "BeatTags": [],
       "ProseLength": 951,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4984,11 +4588,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Shows Vox processing the moral weight of the room she left by choosing silence, underscoring her exhaustion and restraint.",
       "BeatTags": [],
       "ProseLength": 363,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -4999,11 +4602,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Introduces Rook\u0027s presence at the corridor\u0027s end to set up the next confrontation and re-anchor Vox within her crew.",
       "BeatTags": [],
       "ProseLength": 28,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5014,11 +4616,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s intuitive read of Vox\u0027s unspoken failure, setting up unspoken trust that avoids interrogation and deepens their bond.",
       "BeatTags": [],
       "ProseLength": 704,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5029,11 +4630,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Rook\u0027s silent self-check establishes her restraint as a leader, choosing trust over interrogation as a final test of her crew\u0027s discretion.",
       "BeatTags": [],
       "ProseLength": 505,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5044,11 +4644,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Rook pivots briskly to logistics, signaling the crew\u0027s practiced efficiency under pressure as the operation proceeds.",
       "BeatTags": [],
       "ProseLength": 88,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5059,11 +4658,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "The narration reveals Boiler\u0027s quiet, unspoken groundwork paying off, showing how the crew\u0027s unstated trust becomes literal infrastructure for the escape.",
       "BeatTags": [],
       "ProseLength": 389,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5074,11 +4672,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Vox\u0027s wordless confirmation and departure seals the unspoken understanding, closing the scene\u0027s tension without needing dialogue.",
       "BeatTags": [],
       "ProseLength": 124,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5089,11 +4686,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Rook\u0027s relief at Ohara\u0027s condition pays off her earlier dread, contrasting imagined worst-case outcomes with a better reality to underline her coping method.",
       "BeatTags": [],
       "ProseLength": 768,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5104,11 +4700,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "The brief exchange confirms the mission\u0027s partial success while withholding full relief, keeping tension alive.",
       "BeatTags": [],
       "ProseLength": 52,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5119,11 +4714,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Ohara\u0027s composed body language reveals her fragile self-control, deepening the reader\u0027s sense of what the ordeal has cost her.",
       "BeatTags": [],
       "ProseLength": 506,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5134,11 +4728,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "The repeated question turns the scene ominous, revealing that Ohara\u0027s memory or mind has been compromised despite her physical recovery.",
       "BeatTags": [],
-      "ProseLength": 131,
+      "ProseLength": 128,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5149,11 +4742,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "The crew\u0027s frozen reactions escalate the dread, showing them registering the same wrongness the reader is meant to notice.",
       "BeatTags": [],
       "ProseLength": 362,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5164,11 +4756,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Rook\u0027s abandoned rehearsed reassurance and Ohara\u0027s dawning self-recognition turns the beat into a gut-punch reveal that something in her has broken.",
       "BeatTags": [],
       "ProseLength": 450,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5179,11 +4770,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes Ohara\u0027s dawning awareness of her own memory gap, seeding the beat\u0027s central fear before it\u0027s named outright.",
       "BeatTags": [],
       "ProseLength": 124,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5194,11 +4784,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Ohara consciously confronting her damage rather than denying it, proving her self-awareness distinguishes her from the worst-case outcome Stave warned of.",
       "BeatTags": [],
       "ProseLength": 1124,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5209,11 +4798,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Shows the crew supporting Ohara through restrained presence rather than false reassurance, honoring the fragility of her trust.",
       "BeatTags": [],
-      "ProseLength": 410,
+      "ProseLength": 409,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5224,11 +4812,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Rook draws a line for Ohara between what the damage took and what remains her own responsibility, restoring her agency.",
       "BeatTags": [],
       "ProseLength": 158,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5239,11 +4826,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Marks a quiet turning point where the storm\u0027s imagery mirrors Ohara\u0027s shift from crisis toward tentative calm.",
       "BeatTags": [],
       "ProseLength": 163,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5254,11 +4840,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Pays off the beat\u0027s tension as Ohara accepts the answer and lets herself be helped, signaling fragile but real trust regained.",
       "BeatTags": [],
       "ProseLength": 94,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5269,11 +4854,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Transitions the crew from crisis back into routine while quietly escalating stakes by delivering the mission\u0027s grim toll.",
       "BeatTags": [],
       "ProseLength": 679,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5284,11 +4868,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Grounds the story in a lived-in setting whose persistence despite loss mirrors the characters\u0027 own endurance.",
       "BeatTags": [],
       "ProseLength": 498,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5299,11 +4882,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Uses the timeless lake against the city\u0027s neon to frame human conflict as small against enduring nature, offering Rook a moment of perspective.",
       "BeatTags": [],
       "ProseLength": 448,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5314,11 +4896,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Closes the chapter on an unresolved, haunting beat, reminding readers the human cost of the mission still lingers uncounted.",
       "BeatTags": [],
       "ProseLength": 24,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5329,11 +4910,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Establishes the expanded burden of the secret by contrasting the clean five-person crew unit with a messier six that includes an outsider.",
       "BeatTags": [],
-      "ProseLength": 564,
+      "ProseLength": 563,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5344,11 +4924,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals the specific unresolved distrust toward Ohara, cataloguing his ambiguous history to justify Rook\u0027s unease about him holding the truth.",
       "BeatTags": [],
       "ProseLength": 573,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5359,11 +4938,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Uses the fractured reflection as a visual metaphor for the secret splintering beyond her control, marking a permanent shift she can\u0027t undo.",
       "BeatTags": [],
       "ProseLength": 430,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5374,11 +4952,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Reveals Rook\u0027s growing, unwilled familiarity with the city\u0027s rhythms as a quiet marker of how exposed and embedded she\u0027s become.",
       "BeatTags": [],
       "ProseLength": 262,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5389,11 +4966,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Underscores Rook\u0027s obsessive fixation on the unchangeable new number before she can move past it.",
       "BeatTags": [],
       "ProseLength": 25,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false
@@ -5404,11 +4980,10 @@
       "Chapter": "Chapter 4 \u2014 The Walk-Off",
       "ChapterIndex": 3,
       "Act": 0,
+      "Meaning": "Turns Rook\u0027s anxious fixation into resolve, as she decides to trust Ohara deliberately rather than keep fighting the fact of his inclusion.",
       "BeatTags": [],
-      "ProseLength": 636,
+      "ProseLength": 638,
       "Flags": [
-        "MISSING_MEANING",
-        "UNSCORED",
         "NO_CONSTRUCTION"
       ],
       "Covered": false

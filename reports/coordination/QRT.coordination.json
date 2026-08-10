@@ -1,0 +1,396 @@
+{
+  "nodeCode": "QRT",
+  "slug": "qrt-019fca42",
+  "title": "QRT",
+  "generatedAtUtc": "2026-08-10 15:07:31Z",
+  "totalBeats": 22,
+  "covered": 0,
+  "chapterGranular": false,
+  "bookScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "unresolved",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "quiet",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 22
+  },
+  "flagCounts": {
+    "MISSING_MEANING": 22
+  },
+  "beats": [
+    {
+      "BeatId": "019fca50-7edc-727e-a5d5-837aa5796de5",
+      "Number": 16888,
+      "Chapter": "Chapter 1 \u2014 First Overla",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 1937,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca50-8ee7-7513-9d67-0d2fc221f71b",
+      "Number": 16889,
+      "Chapter": "Chapter 1 \u2014 First Overla",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 941,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca50-9ea2-77ff-8dc9-cf6b22d939f9",
+      "Number": 16890,
+      "Chapter": "Chapter 1 \u2014 First Overla",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "3",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 995,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca50-ae3c-7b8c-9002-ca01558eec9e",
+      "Number": 16891,
+      "Chapter": "Chapter 1 \u2014 First Overla",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "vigil",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 1146,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca50-d49b-77aa-942e-70222d724a99",
+      "Number": 16892,
+      "Chapter": "Chapter 2 \u2014 The Recordin",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "4",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 1054,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca50-e466-7157-807e-4bfdd2ca4b62",
+      "Number": 16893,
+      "Chapter": "Chapter 2 \u2014 The Recordin",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 1647,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca50-f465-769f-8b7a-d23efc0ed412",
+      "Number": 16894,
+      "Chapter": "Chapter 2 \u2014 The Recordin",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "5",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 1258,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca51-044a-7103-982f-eab1f43e09b4",
+      "Number": 16895,
+      "Chapter": "Chapter 2 \u2014 The Recordin",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 803,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca51-13f5-7426-b554-0d1f55959143",
+      "Number": 16896,
+      "Chapter": "Chapter 2 \u2014 The Recordin",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "confession",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 629,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca51-23f1-7725-bd0c-b50d4e5e406b",
+      "Number": 16897,
+      "Chapter": "Chapter 3 \u2014 It\u0027s Getting",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "vigil",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 567,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca51-342a-7a9a-ab32-e8b2c9782ec8",
+      "Number": 16898,
+      "Chapter": "Chapter 3 \u2014 It\u0027s Getting",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 598,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca51-44ea-7376-acc9-ca260150673e",
+      "Number": 16899,
+      "Chapter": "Chapter 3 \u2014 It\u0027s Getting",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 741,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca51-548d-778b-880d-7a7d4ae64af0",
+      "Number": 16900,
+      "Chapter": "Chapter 3 \u2014 It\u0027s Getting",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "ambush",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 929,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca51-644e-72d0-adbf-0470f90befca",
+      "Number": 16901,
+      "Chapter": "Chapter 3 \u2014 It\u0027s Getting",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 1698,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca58-ad8c-71ba-a7f2-67b2b8dd5515",
+      "Number": 16902,
+      "Chapter": "Chapter 4 \u2014 The Turn",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "negotiation",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 662,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca58-bd5f-7388-a4c6-1557461f57a8",
+      "Number": 16903,
+      "Chapter": "Chapter 4 \u2014 The Turn",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 1307,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca58-ccf2-7ab5-a8af-b4ea39fd42ee",
+      "Number": 16904,
+      "Chapter": "Chapter 4 \u2014 The Turn",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "confession",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 905,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca58-dc9c-734e-9ce5-ee3a1fb11c9f",
+      "Number": 16905,
+      "Chapter": "Chapter 4 \u2014 The Turn",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "discovery",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 896,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca58-ec5f-70be-b0e3-34a3f9e59ac6",
+      "Number": 16906,
+      "Chapter": "Chapter 5 \u2014 QRT",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "7",
+      "EventType": "departure",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 1934,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca58-fc39-7c92-99af-9ba5fc325b2b",
+      "Number": 16907,
+      "Chapter": "Chapter 5 \u2014 QRT",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "5",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 532,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca59-0c2f-7058-9730-e7b6bacd1eac",
+      "Number": 16908,
+      "Chapter": "Chapter 5 \u2014 QRT",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "9",
+      "EventType": "arrival",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 1405,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fca59-1bc3-7653-9b9b-c65c4d959c83",
+      "Number": 16909,
+      "Chapter": "Chapter 5 \u2014 QRT",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 714,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
+    }
+  ]
+}

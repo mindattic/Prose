@@ -1,0 +1,3731 @@
+{
+  "nodeCode": "JOAN",
+  "slug": "1428-jeanne-d-arc-019fc3b4",
+  "title": "Jeanne d\u0027Arc",
+  "generatedAtUtc": "2026-08-10 15:09:45Z",
+  "totalBeats": 265,
+  "covered": 0,
+  "chapterGranular": false,
+  "bookScope": {
+    "HasSubplot": false,
+    "Granularity": "beat",
+    "HasBlueprint": false,
+    "ConstructionCapacity": 0
+  },
+  "flagCounts": {
+    "MISSING_MEANING": 265,
+    "NO_CONSTRUCTION": 265
+  },
+  "beats": [
+    {
+      "BeatId": "019fc3eb-249f-712a-8fb8-cfb2a90f00f6",
+      "Number": 16571,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1141,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3eb-8145-72bd-8eb7-51bf96a9c2b8",
+      "Number": 16577,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1499,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ea-f8f0-75c1-8d65-9764d5c730e2",
+      "Number": 16569,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1308,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3eb-9397-7205-9ab2-548f2466bd1d",
+      "Number": 16579,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1674,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c3-d378-775c-b863-a2f3aa30d993",
+      "Number": 16301,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1136,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c3-e44a-78fe-aa71-b9d1151d4335",
+      "Number": 16302,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1213,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c3-f46b-79fc-9978-7f76dcfc1456",
+      "Number": 16303,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1034,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c4-049c-7662-8ce7-ec0b3c948abe",
+      "Number": 16304,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1536,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c4-14d0-70b7-be6e-bb0b258effba",
+      "Number": 16305,
+      "Chapter": "Chapter 1 \u2014 Domr\u00E9my",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1112,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c6-6be7-7e62-ac4b-c543791206ea",
+      "Number": 16313,
+      "Chapter": "Chapter 2 \u2014 The Voice in",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 662,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c6-7c73-729a-a874-e3e7ea6d2498",
+      "Number": 16314,
+      "Chapter": "Chapter 2 \u2014 The Voice in",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1201,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c6-8dbf-7433-a130-4218e6f2dfa8",
+      "Number": 16315,
+      "Chapter": "Chapter 2 \u2014 The Voice in",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1130,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4a3-ed04-7210-8d89-01357814addf",
+      "Number": 16682,
+      "Chapter": "Chapter 2 \u2014 The Voice in",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1233,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c6-9e1b-7730-a941-2bbf993bc45f",
+      "Number": 16316,
+      "Chapter": "Chapter 2 \u2014 The Voice in",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 995,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-14ad-78d5-8280-ddb5dfb43e39",
+      "Number": 16325,
+      "Chapter": "Chapter 3 \u2014 Catherine an",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 814,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-25dc-7919-a540-24eeff168381",
+      "Number": 16326,
+      "Chapter": "Chapter 3 \u2014 Catherine an",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1305,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-375c-7fa6-a575-307053ae8ffd",
+      "Number": 16327,
+      "Chapter": "Chapter 3 \u2014 Catherine an",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1366,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-49d6-705c-aa67-f8d91f8a3c9c",
+      "Number": 16328,
+      "Chapter": "Chapter 3 \u2014 Catherine an",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 645,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-5b41-7465-bdfe-e6d1a0b92df3",
+      "Number": 16329,
+      "Chapter": "Chapter 3 \u2014 Catherine an",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1092,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ca-ae7d-72cf-8066-4a1f5812724c",
+      "Number": 16346,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 673,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ca-bfc5-7a9d-b963-3925e669f32e",
+      "Number": 16347,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1800,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ca-d11a-7ef5-99a9-8cb1a1897426",
+      "Number": 16348,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1667,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ee-db8f-7888-9886-bf91c0930384",
+      "Number": 16629,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1667,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ca-e28f-776f-96b1-0593705be7ad",
+      "Number": 16349,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2938,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ca-f2ec-70f8-97da-64b584c9a49a",
+      "Number": 16350,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2056,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cb-0339-7c50-9f31-cc973f529a05",
+      "Number": 16351,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1127,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cb-13cc-7de7-9b98-75f909e100de",
+      "Number": 16352,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1110,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cb-2474-70df-b329-1799fd0f75d5",
+      "Number": 16353,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1334,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cb-3571-7fb2-9259-b4689edb03ba",
+      "Number": 16355,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 943,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cb-463d-78cf-8754-5fe2009dad1c",
+      "Number": 16357,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1889,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ef-601e-74cc-ac74-1f44ea2d5e6c",
+      "Number": 16630,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1359,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cb-5752-7327-a416-b31f56d675c9",
+      "Number": 16359,
+      "Chapter": "Chapter 4 \u2014 What Was Hea",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1107,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d0-5dc0-7854-9e0c-2c0d75dc5898",
+      "Number": 16402,
+      "Chapter": "Chapter 5 \u2014 Vaucouleurs",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 787,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d0-6f6e-7c47-a821-f51a6631c1ea",
+      "Number": 16403,
+      "Chapter": "Chapter 5 \u2014 Vaucouleurs",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 939,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d0-8083-720d-acc7-529c9eea8748",
+      "Number": 16404,
+      "Chapter": "Chapter 5 \u2014 Vaucouleurs",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1196,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d0-91e7-7a36-80cd-93c7a700c0e7",
+      "Number": 16405,
+      "Chapter": "Chapter 5 \u2014 Vaucouleurs",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 841,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d1-e548-7ba7-91f4-d9d9b0ecd5dd",
+      "Number": 16415,
+      "Chapter": "Chapter 6 \u2014 Chinon and t",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1042,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d1-f5b6-7ebe-8ac3-387db7cda370",
+      "Number": 16416,
+      "Chapter": "Chapter 6 \u2014 Chinon and t",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1051,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d2-05fa-76bf-8f15-d65178a6deac",
+      "Number": 16417,
+      "Chapter": "Chapter 6 \u2014 Chinon and t",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1125,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d2-1712-7667-bf1d-3119226428cf",
+      "Number": 16418,
+      "Chapter": "Chapter 6 \u2014 Chinon and t",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 730,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d3-9b9c-7afc-adb6-76a0fe982d00",
+      "Number": 16431,
+      "Chapter": "Chapter 7 \u2014 Poitiers and",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 934,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d3-acaa-751c-9b8d-1306e804f8e7",
+      "Number": 16432,
+      "Chapter": "Chapter 7 \u2014 Poitiers and",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 789,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d3-bd7d-7c2e-8705-51bd96f44610",
+      "Number": 16433,
+      "Chapter": "Chapter 7 \u2014 Poitiers and",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 942,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d3-ce93-71c1-8c4b-2c091539e6eb",
+      "Number": 16434,
+      "Chapter": "Chapter 7 \u2014 Poitiers and",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 881,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d5-0d94-7ed3-8573-bc80791f263c",
+      "Number": 16447,
+      "Chapter": "Chapter 8 \u2014 Orl\u00E9ans",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 537,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d5-1eb3-78da-84dc-9fcc560ed6e8",
+      "Number": 16449,
+      "Chapter": "Chapter 8 \u2014 Orl\u00E9ans",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 709,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d5-3074-7215-86a5-af51b2acf560",
+      "Number": 16451,
+      "Chapter": "Chapter 8 \u2014 Orl\u00E9ans",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1072,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d5-4159-7bc9-8f98-cb349a4b24a9",
+      "Number": 16452,
+      "Chapter": "Chapter 8 \u2014 Orl\u00E9ans",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 787,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d6-4eef-75cd-843e-8c2af03f2f4e",
+      "Number": 16459,
+      "Chapter": "Chapter 9 \u2014 The Loire an",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 407,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d6-603f-7295-a2e6-7e66de8b297a",
+      "Number": 16461,
+      "Chapter": "Chapter 9 \u2014 The Loire an",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 865,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d6-7022-70af-918d-20bf8452a432",
+      "Number": 16463,
+      "Chapter": "Chapter 9 \u2014 The Loire an",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 773,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d6-80ab-7aeb-91d7-8ef710ee139f",
+      "Number": 16464,
+      "Chapter": "Chapter 9 \u2014 The Loire an",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 916,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d7-9f89-71d9-a29b-23c592961b65",
+      "Number": 16471,
+      "Chapter": "Chapter 10 \u2014 Reims",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 829,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d7-b0c5-7921-8d33-ea67ab99298b",
+      "Number": 16473,
+      "Chapter": "Chapter 10 \u2014 Reims",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 843,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d7-c152-7aa9-a320-9ac6aef53e06",
+      "Number": 16475,
+      "Chapter": "Chapter 10 \u2014 Reims",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 809,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d7-d1a6-7316-927f-4c4b84b62a52",
+      "Number": 16477,
+      "Chapter": "Chapter 10 \u2014 Reims",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 979,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d9-152c-78bc-ba6c-49b2bf830398",
+      "Number": 16490,
+      "Chapter": "Chapter 11 \u2014 Paris and t",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 946,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d9-2682-7cd6-b9b5-6f7650c5da00",
+      "Number": 16491,
+      "Chapter": "Chapter 11 \u2014 Paris and t",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 592,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d9-37a3-73fe-9ba5-64650a4e9289",
+      "Number": 16492,
+      "Chapter": "Chapter 11 \u2014 Paris and t",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 670,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3da-f95a-7e98-9eae-81704759c93b",
+      "Number": 16502,
+      "Chapter": "Chapter 12 \u2014 Compi\u00E8gne",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 454,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3da-72b3-76d0-ad59-cdf385278309",
+      "Number": 16499,
+      "Chapter": "Chapter 12 \u2014 Compi\u00E8gne",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 997,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3da-83e0-7e55-a0f9-c547189d5c5c",
+      "Number": 16500,
+      "Chapter": "Chapter 12 \u2014 Compi\u00E8gne",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 823,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3da-9452-7fe1-8ad9-c69cdbb0af47",
+      "Number": 16501,
+      "Chapter": "Chapter 12 \u2014 Compi\u00E8gne",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 814,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dc-2a6b-7e98-9b8b-8adad639e1bd",
+      "Number": 16510,
+      "Chapter": "Chapter 13 \u2014 Rouen",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 497,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dc-3ee3-7673-a9ea-362bb86f0dbd",
+      "Number": 16511,
+      "Chapter": "Chapter 13 \u2014 Rouen",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 793,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dc-517b-7786-9a1c-3cfcd90c9328",
+      "Number": 16512,
+      "Chapter": "Chapter 13 \u2014 Rouen",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 649,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4a3-fdf8-7038-a208-d0f355e1a62c",
+      "Number": 16683,
+      "Chapter": "Chapter 13 \u2014 Rouen",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1216,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dc-64cb-7e80-83cb-cb0fdc203da5",
+      "Number": 16514,
+      "Chapter": "Chapter 13 \u2014 Rouen",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 733,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dd-6a92-76b9-a9e9-acab8ffb69d9",
+      "Number": 16521,
+      "Chapter": "Chapter 14 \u2014 The Trial o",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 618,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dd-7c53-7d63-a965-95f9ea5190e1",
+      "Number": 16522,
+      "Chapter": "Chapter 14 \u2014 The Trial o",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1250,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dd-8da4-7ef2-875e-fc04ca090f73",
+      "Number": 16523,
+      "Chapter": "Chapter 14 \u2014 The Trial o",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1038,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dd-9f90-74b0-8517-9a2526d76688",
+      "Number": 16524,
+      "Chapter": "Chapter 14 \u2014 The Trial o",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1456,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dd-b149-7159-b8bc-86f2ebca4d5e",
+      "Number": 16526,
+      "Chapter": "Chapter 14 \u2014 The Trial o",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 841,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3df-5f25-795d-ae79-3488639d9cb1",
+      "Number": 16540,
+      "Chapter": "Chapter 15 \u2014 Abjuration ",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 577,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3df-7110-7c1e-90b3-472ea09e0d97",
+      "Number": 16541,
+      "Chapter": "Chapter 15 \u2014 Abjuration ",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 595,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3df-82b2-7b1d-8411-638d640e8c54",
+      "Number": 16542,
+      "Chapter": "Chapter 15 \u2014 Abjuration ",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 853,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3df-9481-7dcf-af41-8e057c7ba791",
+      "Number": 16543,
+      "Chapter": "Chapter 15 \u2014 Abjuration ",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 830,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f0-b141-7bc6-9e9b-b347cd737293",
+      "Number": 16634,
+      "Chapter": "Chapter 16 \u2014 The Executi",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 383,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f0-c266-74a9-aff5-ca6f89449c99",
+      "Number": 16635,
+      "Chapter": "Chapter 16 \u2014 The Executi",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 894,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f0-d360-7b79-9832-581c8ef39d16",
+      "Number": 16636,
+      "Chapter": "Chapter 16 \u2014 The Executi",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 603,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f0-e4b2-7120-9628-2ad51d7dad64",
+      "Number": 16637,
+      "Chapter": "Chapter 16 \u2014 The Executi",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 664,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f2-32c3-7d76-a40f-93d52056e587",
+      "Number": 16642,
+      "Chapter": "Chapter 17 \u2014 Aftermath",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 956,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f2-4f0e-7497-ba5f-934fb12f2969",
+      "Number": 16643,
+      "Chapter": "Chapter 17 \u2014 Aftermath",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 959,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f2-601d-7cf4-b503-86547f97a97f",
+      "Number": 16644,
+      "Chapter": "Chapter 17 \u2014 Aftermath",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 898,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f2-70b8-7851-9e77-0c7ffc46dd58",
+      "Number": 16645,
+      "Chapter": "Chapter 17 \u2014 Aftermath",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1480,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f2-8184-7d3d-8865-68fd34724dbb",
+      "Number": 16646,
+      "Chapter": "Chapter 17 \u2014 Aftermath",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 895,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f3-b444-78f0-9435-cfd9f179e71e",
+      "Number": 16659,
+      "Chapter": "Chapter 18 \u2014 The Trial o",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 560,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f3-c5c9-77bf-9277-b7aee4ed0611",
+      "Number": 16661,
+      "Chapter": "Chapter 18 \u2014 The Trial o",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 930,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f3-d721-73b8-8dd4-35c87bf322db",
+      "Number": 16662,
+      "Chapter": "Chapter 18 \u2014 The Trial o",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1007,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f3-e88c-7939-b974-ae77e1b31b3f",
+      "Number": 16664,
+      "Chapter": "Chapter 18 \u2014 The Trial o",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 836,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f4-f273-73f3-9a65-b2c44aecd146",
+      "Number": 16671,
+      "Chapter": "Chapter 19 \u2014 Legend and ",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 291,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f5-0379-7b4f-8f0f-d3ab59cb698d",
+      "Number": 16672,
+      "Chapter": "Chapter 19 \u2014 Legend and ",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1222,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f5-1477-7c16-b7cc-ed8cc16e97b6",
+      "Number": 16673,
+      "Chapter": "Chapter 19 \u2014 Legend and ",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 979,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f5-2537-733b-a1d4-6b8a141d5a0a",
+      "Number": 16674,
+      "Chapter": "Chapter 19 \u2014 Legend and ",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 762,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f5-3644-7a5e-b33f-ad99ac1c719c",
+      "Number": 16675,
+      "Chapter": "Chapter 19 \u2014 Legend and ",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 901,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f6-3815-7972-8514-731b18e273dc",
+      "Number": 16678,
+      "Chapter": "Chapter 20 \u2014 The Voices,",
+      "ChapterIndex": 19,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 596,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f6-485f-73d7-aceb-57c139497131",
+      "Number": 16679,
+      "Chapter": "Chapter 20 \u2014 The Voices,",
+      "ChapterIndex": 19,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1231,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f6-59f2-70ed-b301-00b4c3d4c313",
+      "Number": 16680,
+      "Chapter": "Chapter 20 \u2014 The Voices,",
+      "ChapterIndex": 19,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1083,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f6-6a73-7594-a19e-1762c5d71517",
+      "Number": 16681,
+      "Chapter": "Chapter 20 \u2014 The Voices,",
+      "ChapterIndex": 19,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1173,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ec-48d8-7d2c-866f-ee4da964facd",
+      "Number": 16590,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 447,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ec-5af3-7542-bccb-3d8b16a3c2c8",
+      "Number": 16592,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 679,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ec-6e12-748f-b9d4-96d70e2fd946",
+      "Number": 16594,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 445,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ec-807e-76a0-bee1-19adcfccf7ef",
+      "Number": 16596,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 659,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ec-9254-71a0-b719-2fe53622cf3b",
+      "Number": 16598,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 766,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c5-4adc-773e-977a-5585aab2731d",
+      "Number": 16307,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 698,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c5-5b86-78a3-91d4-e72dffcd428d",
+      "Number": 16308,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 734,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c5-6c0a-7d82-a3e0-6cf9382b0d17",
+      "Number": 16309,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 592,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c5-7ccd-707c-bea6-50998534fffd",
+      "Number": 16310,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 514,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c5-8e21-7f7e-93cc-7555054a29a5",
+      "Number": 16311,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 776,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c5-9f3c-78b4-a209-4a306be9ab1d",
+      "Number": 16312,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 414,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c7-20b4-70d9-9c49-ff0cea5af357",
+      "Number": 16318,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 431,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c7-31bf-700a-99db-fd7c2e10660e",
+      "Number": 16320,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 457,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c7-4339-799f-8333-a6e93154eba8",
+      "Number": 16322,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 431,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c7-53df-7be3-a1bc-0d7ba2b5255d",
+      "Number": 16324,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 730,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4a4-56e1-709e-b9af-6753fdc282ad",
+      "Number": 16684,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 519,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4a4-67b2-79b4-a9ce-31c2f672e71a",
+      "Number": 16685,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 390,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-cb8b-706c-b3c4-d192313b8755",
+      "Number": 16334,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 430,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-dd2a-7b96-90ee-43b63163d14b",
+      "Number": 16336,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 343,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-ee03-7e5e-9b72-19775a060129",
+      "Number": 16337,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 263,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c8-fea7-739b-b941-6c04902769b8",
+      "Number": 16338,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 452,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c9-1045-76c6-b11e-ece897368ffa",
+      "Number": 16339,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 486,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c9-3b71-7983-95eb-539d607eb5b7",
+      "Number": 16340,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 525,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3c9-4bd6-74ea-a11c-06620ef2d9f7",
+      "Number": 16341,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 219,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cc-d6d1-765b-8aea-c0c8dc85a752",
+      "Number": 16361,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 450,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cc-e858-73f5-b8bd-73dd218c4d59",
+      "Number": 16362,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 433,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cc-f92c-789d-b66d-b9161905e356",
+      "Number": 16363,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 465,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-0abb-7d4b-a5dc-895185c3931e",
+      "Number": 16364,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 677,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-1ba5-7fed-8f65-6b5cd10355a9",
+      "Number": 16365,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 378,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-2d71-7160-b194-149dcc2659ce",
+      "Number": 16367,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 449,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-3e3c-76d7-ac79-5ede42a16e3f",
+      "Number": 16369,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 424,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-4ef5-77b5-9c10-eb2862d094fb",
+      "Number": 16371,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 406,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-5f87-7e01-a9de-85a6456fdc09",
+      "Number": 16372,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 310,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-7073-7009-91e5-a1cc4ef4b31d",
+      "Number": 16373,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 480,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-8524-7378-9b28-dce27778578c",
+      "Number": 16374,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 582,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ef-b774-7938-85eb-58c7c7b0bf64",
+      "Number": 16631,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 772,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ef-c885-7fae-bf30-b8a963d83f7d",
+      "Number": 16632,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 473,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-c49a-7f87-9369-80032f6f7432",
+      "Number": 16376,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 609,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-d4cd-7a79-b31c-45cf3c96de3e",
+      "Number": 16378,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 756,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-e4e4-7cab-a1b9-d5b154a5c08e",
+      "Number": 16379,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 506,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ee-6c98-7560-a975-f0b488f91694",
+      "Number": 16622,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 517,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cd-f55f-7008-949b-835a0157d597",
+      "Number": 16380,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 560,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ee-7e72-7a95-9d29-f0726daf260c",
+      "Number": 16624,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 677,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-0587-7966-b3dd-bec2cd218e73",
+      "Number": 16381,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1034,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-1614-7e21-ac71-5e6ea63dd7e0",
+      "Number": 16382,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 402,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-26c2-7d3f-9a57-4152136a81c9",
+      "Number": 16383,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 481,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-37b7-7298-97c6-b643af13ecc8",
+      "Number": 16384,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 562,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-489f-761a-afca-af0926c34685",
+      "Number": 16385,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 717,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-5957-7f5e-9e29-f47637c8411e",
+      "Number": 16386,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 482,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-6953-7fee-8f9a-6f5abf246805",
+      "Number": 16387,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 458,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-7a35-7465-8f19-9f18bbbdbd6d",
+      "Number": 16388,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 550,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-8abc-730c-b503-2b412dd06c6c",
+      "Number": 16389,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 510,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-b243-7a2e-8e98-575f8365bf90",
+      "Number": 16390,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 457,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-e9e5-7af8-a5f5-443c1a40d263",
+      "Number": 16391,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 642,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ce-fb3a-786d-9835-4dbf7885841c",
+      "Number": 16393,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 359,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cf-0d19-7b6f-9367-0ada0f3627b9",
+      "Number": 16395,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 667,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cf-1deb-7244-bf97-60a12608ea0b",
+      "Number": 16397,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 593,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3cf-2e28-7b74-8940-9084f189a82d",
+      "Number": 16398,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 633,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3ef-f67f-7b58-82f6-1ae678555167",
+      "Number": 16633,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 669,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d0-faf5-7933-950c-9aa84f21b210",
+      "Number": 16406,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 446,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d1-0b92-7dd4-98a3-1df2eb3d42d0",
+      "Number": 16407,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 349,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d1-1c19-72dd-9056-91eb2cf2edb0",
+      "Number": 16408,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 564,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d1-5364-7c29-950f-2e15b5847cf9",
+      "Number": 16410,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 492,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d1-64b6-7a85-8991-e4d06fbdd159",
+      "Number": 16412,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 624,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d2-ec3c-7bec-9130-318061696e95",
+      "Number": 16424,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 414,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d2-fcdb-7c50-a325-9ac7cb4d20d4",
+      "Number": 16425,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 494,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d3-0de4-736b-90c3-9f9be2cd3577",
+      "Number": 16426,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 398,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d3-1ed6-730a-ac55-f6024ae66aa5",
+      "Number": 16427,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 324,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d4-5f6c-73e0-af7c-83310fc0d366",
+      "Number": 16439,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 407,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d4-7071-71fd-a223-0e658c341ad6",
+      "Number": 16440,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 473,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d4-8227-75c9-9bc8-b7904e90ca57",
+      "Number": 16441,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 501,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d4-9396-7eb6-9741-9745279ec17c",
+      "Number": 16442,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 463,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d5-b936-7bb5-b487-2766acbdcd09",
+      "Number": 16453,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 398,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d5-c9c3-73d6-97b5-39c697c80f65",
+      "Number": 16454,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 662,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d5-da3c-74a4-a79e-c866489ca762",
+      "Number": 16455,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 369,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d6-caa5-7b4e-981c-4be3bfde12d4",
+      "Number": 16465,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 263,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d6-eec1-7851-966e-bc24bcf6656e",
+      "Number": 16466,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 379,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d6-ff48-7c61-aded-603e9cabef3f",
+      "Number": 16467,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 363,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d8-3ae2-7cc0-883d-4c4a74eecca3",
+      "Number": 16478,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 491,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d8-4b92-7c1b-b939-4dedb07bf0d4",
+      "Number": 16479,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 437,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d8-5c9a-75da-8b7f-81b68684dfe7",
+      "Number": 16480,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 403,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d8-6e60-71b2-a9ec-55c2e6b202cc",
+      "Number": 16481,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 351,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d8-7fce-7493-aeaf-8aa49f7ff84d",
+      "Number": 16483,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 378,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d8-912e-7d0f-b4e3-5f59d24c5d8b",
+      "Number": 16485,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 438,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d9-9eb3-7385-9e6e-d5472b620c8b",
+      "Number": 16493,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 456,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3d9-aff6-7d3a-99da-abca2982da8f",
+      "Number": 16495,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 364,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3db-7638-76f9-ab8a-96d10b2d1f9e",
+      "Number": 16503,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 312,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3db-870c-778e-8805-267581c5637c",
+      "Number": 16505,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 509,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3db-9916-7c61-a0ae-178fe647d4ed",
+      "Number": 16506,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 427,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3db-aa2b-7812-b251-1f0b4030af48",
+      "Number": 16508,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 256,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3db-bb95-7e25-b5a9-3da3d6590284",
+      "Number": 16509,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 386,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dc-aff7-715a-b86d-1887e912c50a",
+      "Number": 16517,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 376,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3dc-c18a-7403-8660-79076e2b58b4",
+      "Number": 16518,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 550,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4a4-78b7-78e2-8563-9d96c8d1f23b",
+      "Number": 16686,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 927,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3de-7259-782f-9549-7ee92d42be4a",
+      "Number": 16529,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 446,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3de-840e-7b49-aa53-741411b1195c",
+      "Number": 16530,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 470,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3de-95db-7e75-874f-f3310cc8c4ad",
+      "Number": 16531,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 603,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3de-a82e-7086-a625-06dbf708a156",
+      "Number": 16532,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 399,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3de-ba25-741e-bb63-c914d6eb4bc1",
+      "Number": 16533,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 459,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3de-cc77-7c33-a49e-c7ae7e22aaee",
+      "Number": 16534,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 446,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3de-ded3-7808-a040-39ba2bcb538a",
+      "Number": 16535,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 656,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3df-e673-7d5d-ab65-e6d28a8c6aab",
+      "Number": 16544,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 345,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3df-f79a-7e79-997e-26edc49042d9",
+      "Number": 16546,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 244,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3e0-0924-79e7-8a6e-24e3c4900400",
+      "Number": 16547,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 397,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3e0-1a81-7880-8cb2-0ac3ac0729b1",
+      "Number": 16549,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 299,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f1-4dc0-75bc-921f-dd7b14b999ba",
+      "Number": 16638,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 491,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f1-5e6a-7860-a00a-9d535c7477fe",
+      "Number": 16639,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 382,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f1-6f79-7d20-a43f-c725567412cd",
+      "Number": 16640,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 516,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f1-7fe5-7a1c-9d65-6f0cc8054635",
+      "Number": 16641,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 304,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f2-f450-7847-bf7d-ff1c48242f7e",
+      "Number": 16649,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 510,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f3-05b1-7d0b-a0a2-9530bf0299df",
+      "Number": 16650,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 565,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f3-16a8-7a50-b881-be508b037805",
+      "Number": 16652,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 461,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f3-27d2-72f9-b690-2365112163fc",
+      "Number": 16653,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 663,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f3-3939-7515-96e3-ecf0478b3ccf",
+      "Number": 16655,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 437,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f4-3f6f-7a6b-baa3-6346e958be49",
+      "Number": 16667,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 553,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f4-506a-748e-b3ef-692bcc07b39a",
+      "Number": 16668,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 376,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f4-6207-7e3f-9a50-7e9d26dca1af",
+      "Number": 16670,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 538,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f5-87b7-7d45-8ea9-e6d47b38d4cd",
+      "Number": 16676,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 641,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc3f5-983d-7a99-81ab-af7951a4f1c7",
+      "Number": 16677,
+      "Chapter": "Notes",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 739,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ab-fcf2-701d-8ec0-32d234cbc8f6",
+      "Number": 16687,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1417,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ac-1451-7642-8ccc-25d2f29b3b19",
+      "Number": 16688,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1282,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ac-2956-7aa7-bb6d-0cfeef351e8e",
+      "Number": 16689,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1200,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ac-3e5e-75ef-ab9c-892b0ec5075e",
+      "Number": 16690,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1750,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ac-55dc-728b-b7dd-3e1856801853",
+      "Number": 16691,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1358,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ac-7310-720f-90ad-a5450c926d1a",
+      "Number": 16692,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1358,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ac-916e-7a32-94d9-a2b20dae15b3",
+      "Number": 16693,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1086,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ad-28a1-7f0f-a8e8-3467b608a357",
+      "Number": 16694,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 913,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b3-6e6b-7eff-ab1a-31bd315f6340",
+      "Number": 16729,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1189,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4ae-19cb-7081-bfc4-4df8a92b2838",
+      "Number": 16695,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2008,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b3-832b-7eab-9644-551274203dae",
+      "Number": 16730,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1435,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b3-976f-7b0b-839e-b7a0e698c906",
+      "Number": 16731,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1282,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b3-ad62-7d30-9993-b82b2f13388a",
+      "Number": 16732,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2224,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b3-c1ae-7754-8c9b-82afdee92034",
+      "Number": 16733,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1367,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4af-302d-772f-9dfc-bb159cfb4710",
+      "Number": 16696,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1739,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4af-4cc3-70f9-a62a-10cf2956ac58",
+      "Number": 16697,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 935,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4af-934e-70f9-9c1f-1f2a7d62d9f4",
+      "Number": 16698,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1728,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4af-a95f-721c-9418-bbea0d2dd453",
+      "Number": 16699,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1288,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4af-c069-7244-b702-508568ce3994",
+      "Number": 16700,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1516,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4af-d6a2-7f31-b197-501f8a8003ec",
+      "Number": 16701,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1320,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4af-ec3a-76be-a469-ae11e7f14802",
+      "Number": 16702,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1580,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b0-266f-7e1f-a4c9-c364d0774850",
+      "Number": 16703,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1545,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b0-3de6-72b1-8f8f-2b859dd03a5b",
+      "Number": 16704,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1311,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b0-696d-7152-ab20-ee2001ed840c",
+      "Number": 16705,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1001,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b0-c2d1-70f9-a61b-95a16c00d113",
+      "Number": 16706,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2012,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b0-dbdb-72ac-aa70-5731ac14c9ba",
+      "Number": 16707,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1220,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b0-f50f-791a-9595-a7152a8114a6",
+      "Number": 16708,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1895,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-0d92-7c1d-be18-56481383102c",
+      "Number": 16709,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1289,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-2717-76c0-b9ca-186c5e705234",
+      "Number": 16710,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1186,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-4193-7d4c-a2a6-d7e0616ba032",
+      "Number": 16711,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1162,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-5bca-7bd2-8ab2-590ecb12d372",
+      "Number": 16712,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1358,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-7460-7bfb-8f05-1d67b8e65281",
+      "Number": 16713,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1080,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-8cea-7dce-bdba-9810665d25f4",
+      "Number": 16714,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1096,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-a7cc-7673-ab08-dd8ee2df4898",
+      "Number": 16715,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1134,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-c009-7f60-8af7-52a5568c6c88",
+      "Number": 16716,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1471,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-d59d-725f-8fda-aed763b69436",
+      "Number": 16717,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1175,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b1-ecba-745e-ac9d-f04fbbad1b6a",
+      "Number": 16718,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1235,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-03ae-7e65-98f7-d29921861c95",
+      "Number": 16719,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1346,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-1b60-7004-8de8-95379b7d93d8",
+      "Number": 16720,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1021,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-31ed-76dd-b02a-a985fdf9f292",
+      "Number": 16721,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1677,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-4856-7539-aeaa-fec46d4dbd6e",
+      "Number": 16722,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1203,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-5dd8-7720-8a01-b1870e3962c9",
+      "Number": 16723,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1341,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-76e9-7839-96aa-8638eb0c6abe",
+      "Number": 16724,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1280,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-8ccc-7d57-becf-c77fc7829489",
+      "Number": 16725,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1454,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-a425-7344-99ca-c3ba2e146e22",
+      "Number": 16726,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1338,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-ba1b-79b6-acc4-fd06049f8f9e",
+      "Number": 16727,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1259,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fc4b2-d06c-7648-ab3c-93959a782fc3",
+      "Number": 16728,
+      "Chapter": "Glossary",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 999,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    }
+  ]
+}
