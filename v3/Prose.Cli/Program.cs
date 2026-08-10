@@ -1694,69 +1694,49 @@ if (args.Contains("--delete-node"))
     var target = await db.Nodes.FindAsync(deleteNodeId);
     if (target == null) { Console.Error.WriteLine($"Node {deleteNodeId} not found."); Environment.ExitCode = 1; return; }
 
-    // Cascade to child nodes (chapters/sub-nodes) first so FK_Nodes_ParentNode
-    // doesn't block the parent delete. One level of recursion is sufficient for
-    // the book→chapter structure; nested chapters are not supported.
-    var childIds = await db.Nodes
-        .Where(n => n.ParentNodeId == deleteNodeId)
-        .Select(n => n.Id)
-        .ToListAsync();
-    foreach (var childId in childIds)
+    // 2026-08-09 bug fix: this used to cascade exactly one level deep ("nested chapters
+    // are not supported", per the comment it replaces) — a child that was itself a split
+    // Collection (chapter -> N sub-chapters -> beats, e.g. any book split via
+    // --split-collection) left its own grandchildren untouched, so db.Nodes.Remove on that
+    // mid-level chapter would hit FK_Nodes_ParentNode (grandchildren still reference it).
+    // Deletion removes NODES themselves, not just beats, so the fix isn't the usual
+    // GetLeafDescendantIdsAsync swap (that returns only leaves) — it needs a genuinely
+    // recursive, depth-first, POST-order walk: fully delete every child's own subtree
+    // before deleting the child, at any depth, then finally the target itself.
+    async Task DeleteNodeSubtreeAsync(Guid id, int depth)
     {
-        Console.WriteLine($"  Cascading to child node {childId}…");
-        var childBeatIds = await db.BeatNodes.Where(bn => bn.NodeId == childId).Select(bn => bn.BeatId).ToListAsync();
-        var childSharedIds = await db.BeatNodes.Where(bn => childBeatIds.Contains(bn.BeatId) && bn.NodeId != childId).Select(bn => bn.BeatId).Distinct().ToListAsync();
-        var childExclusiveIds = childBeatIds.Except(childSharedIds).ToList();
-        var childBpIds = await db.NodeStructuralBlueprints.Where(bp => bp.NodeId == childId).Select(bp => bp.Id).ToListAsync();
-        if (childBpIds.Count > 0)
+        var childIds = await db.Nodes.Where(n => n.ParentNodeId == id).Select(n => n.Id).ToListAsync();
+        foreach (var childId in childIds)
+            await DeleteNodeSubtreeAsync(childId, depth + 1);
+
+        var beatIds = await db.BeatNodes.Where(bn => bn.NodeId == id).Select(bn => bn.BeatId).ToListAsync();
+        var sharedIds = await db.BeatNodes.Where(bn => beatIds.Contains(bn.BeatId) && bn.NodeId != id).Select(bn => bn.BeatId).Distinct().ToListAsync();
+        var exclusiveIds = beatIds.Except(sharedIds).ToList();
+
+        var blueprintIds = await db.NodeStructuralBlueprints.Where(bp => bp.NodeId == id).Select(bp => bp.Id).ToListAsync();
+        if (blueprintIds.Count > 0)
         {
-            db.NodeStructuralBlueprintBeatTags.RemoveRange(await db.NodeStructuralBlueprintBeatTags.Where(t => childBpIds.Contains(t.BlueprintId)).ToListAsync());
-            db.NodeStructuralBlueprints.RemoveRange(await db.NodeStructuralBlueprints.Where(bp => childBpIds.Contains(bp.Id)).ToListAsync());
+            db.NodeStructuralBlueprintBeatTags.RemoveRange(await db.NodeStructuralBlueprintBeatTags.Where(t => blueprintIds.Contains(t.BlueprintId)).ToListAsync());
+            db.NodeStructuralBlueprints.RemoveRange(await db.NodeStructuralBlueprints.Where(bp => blueprintIds.Contains(bp.Id)).ToListAsync());
         }
-        db.BeatNodes.RemoveRange(await db.BeatNodes.Where(bn => bn.NodeId == childId).ToListAsync());
-        if (childExclusiveIds.Count > 0)
-            db.Beats.RemoveRange(await db.Beats.Where(b => childExclusiveIds.Contains(b.Id)).ToListAsync());
-        var childNode = await db.Nodes.FindAsync(childId);
-        if (childNode != null) { db.Nodes.Remove(childNode); Console.WriteLine($"    → {childNode.Title} ({childId})"); }
+
+        db.BeatNodes.RemoveRange(await db.BeatNodes.Where(bn => bn.NodeId == id).ToListAsync());
+        if (exclusiveIds.Count > 0)
+        {
+            var beats = await db.Beats.Where(b => exclusiveIds.Contains(b.Id)).ToListAsync();
+            db.Beats.RemoveRange(beats);
+            Console.WriteLine($"  {new string(' ', depth * 2)}Deleting {beats.Count} exclusive beat(s) for {id}.");
+        }
+
+        var node = await db.Nodes.FindAsync(id);
+        if (node != null)
+        {
+            db.Nodes.Remove(node);
+            Console.WriteLine($"  {new string(' ', depth * 2)}→ {node.Title} ({id})");
+        }
     }
 
-    // Beats exclusively owned by this node should also be deleted.
-    var beatIds = await db.BeatNodes
-        .Where(bn => bn.NodeId == deleteNodeId)
-        .Select(bn => bn.BeatId)
-        .ToListAsync();
-    var exclusiveBeats = await db.BeatNodes
-        .Where(bn => beatIds.Contains(bn.BeatId) && bn.NodeId != deleteNodeId)
-        .Select(bn => bn.BeatId).Distinct().ToListAsync();
-    var toDeleteBeats = beatIds.Except(exclusiveBeats).ToList();
-
-    // Clean up structural blueprints and their beat tags (FK on Beats) before deleting beats.
-    var blueprintIds = await db.NodeStructuralBlueprints
-        .Where(bp => bp.NodeId == deleteNodeId)
-        .Select(bp => bp.Id)
-        .ToListAsync();
-    if (blueprintIds.Count > 0)
-    {
-        var beatTags = await db.NodeStructuralBlueprintBeatTags
-            .Where(t => blueprintIds.Contains(t.BlueprintId))
-            .ToListAsync();
-        db.NodeStructuralBlueprintBeatTags.RemoveRange(beatTags);
-        var blueprints = await db.NodeStructuralBlueprints
-            .Where(bp => blueprintIds.Contains(bp.Id))
-            .ToListAsync();
-        db.NodeStructuralBlueprints.RemoveRange(blueprints);
-        Console.WriteLine($"  Deleting {blueprints.Count} blueprint(s) and {beatTags.Count} beat tag(s).");
-    }
-
-    var memberships = await db.BeatNodes.Where(bn => bn.NodeId == deleteNodeId).ToListAsync();
-    db.BeatNodes.RemoveRange(memberships);
-    if (toDeleteBeats.Count > 0)
-    {
-        var beats = await db.Beats.Where(b => toDeleteBeats.Contains(b.Id)).ToListAsync();
-        db.Beats.RemoveRange(beats);
-        Console.WriteLine($"  Deleting {beats.Count} exclusive beat(s).");
-    }
-    db.Nodes.Remove(target);
+    await DeleteNodeSubtreeAsync(deleteNodeId, 0);
     await db.SaveChangesAsync();
     Console.WriteLine($"[delete-node] Deleted: {target.Title} ({deleteNodeId})");
     return;

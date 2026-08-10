@@ -36,18 +36,17 @@ public class BeatProseMetricsService
     {
         using var db = dbFactory.CreateDbContext();
 
-        // Collect all enabled beats under this node (including children, one level deep).
+        // Collect all enabled beats under this node, at ANY depth. 2026-08-09 bug fix: this
+        // used to union direct beats with direct children's beats only ("one level deep",
+        // per the comment it replaces) — a book whose chapter is itself a split Collection
+        // (chapter -> N sub-chapters -> beats) never got prose metrics computed/upserted for
+        // beats one level deeper than this query looked. Per-beat metrics don't depend on
+        // reading order, so a plain Contains() against the full leaf set (no per-leaf
+        // ordering needed, unlike DcmVizCli/NarrativeForkService's SortKey-sensitive fixes).
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatRows = await db.BeatNodes
-            .Where(bn => bn.NodeId == nodeId && bn.IsEnabled)
+            .Where(bn => leafIds.Contains(bn.NodeId) && bn.IsEnabled)
             .Join(db.Beats, bn => bn.BeatId, b => b.Id, (bn, b) => new { b.Id, b.Text, b.Number })
-            .Union(
-                db.BeatNodes
-                    .Where(bn => bn.IsEnabled)
-                    .Join(
-                        db.Nodes.Where(n => n.ParentNodeId == nodeId),
-                        bn => bn.NodeId, child => child.Id, (bn, _) => bn)
-                    .Join(db.Beats, bn => bn.BeatId, b => b.Id, (bn, b) => new { b.Id, b.Text, b.Number })
-            )
             .ToListAsync(ct);
 
         var computed = new List<BeatProseMetrics>();

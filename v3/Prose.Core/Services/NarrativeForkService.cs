@@ -58,15 +58,32 @@ public class NarrativeForkService(
 
             if (nextChapterId.HasValue)
             {
-                var rows = await db.BeatNodes.AsNoTracking()
-                    .Where(sb => sb.NodeId == nextChapterId.Value && sb.IsEnabled)
-                    .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
-                          sb => sb.BeatId, b => b.Id,
-                          (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
-                    .Where(x => x.Goal != "")
-                    .OrderBy(x => x.SortKey)
-                    .ToListAsync(ct);
-                nextBeats = rows.Select(x => (x.Id, x.Goal)).ToList();
+                // 2026-08-09 bug fix: used to query beats attached directly to nextChapterId
+                // only. If that chapter is itself a split Collection (chapter -> N
+                // sub-chapters -> beats, e.g. a book split via --split-collection), it has
+                // ZERO direct beats — nextBeats.Count would silently come out 0 and this
+                // whole fork feature would return Empty for that chapter, even though it
+                // plainly has unwritten beats one level deeper. GetLeafDescendantIdsAsync
+                // resolves nextChapterId itself when unsplit (single-element list) or its
+                // sub-chapters when split, in both cases replacing the exact-match filter.
+                var nextLeafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nextChapterId.Value, ct);
+                // Query per leaf, in leaf order (already correct depth-first SortKey order from
+                // GetLeafDescendantIdsAsync), then concatenate — a single OrderBy(SortKey) across
+                // multiple leaves would be wrong the moment there's more than one, since SortKey
+                // restarts at 100 within each chapter (same fix applied to DcmVizCli earlier).
+                nextBeats = [];
+                foreach (var leafId in nextLeafIds)
+                {
+                    var rows = await db.BeatNodes.AsNoTracking()
+                        .Where(sb => sb.NodeId == leafId && sb.IsEnabled)
+                        .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
+                              sb => sb.BeatId, b => b.Id,
+                              (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
+                        .Where(x => x.Goal != "")
+                        .OrderBy(x => x.SortKey)
+                        .ToListAsync(ct);
+                    nextBeats.AddRange(rows.Select(x => (x.Id, x.Goal)));
+                }
             }
             else
             {

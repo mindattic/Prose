@@ -165,7 +165,17 @@ public class NodeWorkbenchService
     {
         if (!visited.Add(nodeId)) return; // cycle guard
 
-        var children = await db.Nodes.AsNoTracking()
+        // IgnoreQueryFilters(): Node has a global HasQueryFilter on ScopedUniverseId
+        // (ProseDbContext.OnModelCreating). rootId/nodeId here is always a specific,
+        // already-resolved id by the time any caller reaches this helper, so the ambient
+        // universe scope is irrelevant to "does this node have children" — a real bug
+        // otherwise: a caller invoked with no/mismatched ambient universe scope (e.g. a
+        // cross-universe sweep, or a book-agnostic diagnostic command) would see this
+        // query silently return 0 children for a node in a different universe than the
+        // scope, making CollectLeavesAsync treat that node as a leaf and stop descending —
+        // found 2026-08-09 while wiring a new caller (WorkflowMonitorService) that
+        // explicitly needs cross-universe traversal.
+        var children = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.ParentNodeId == nodeId)
             .OrderBy(n => n.SortKey)
             .Select(n => n.Id)

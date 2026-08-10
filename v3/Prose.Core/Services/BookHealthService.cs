@@ -291,8 +291,12 @@ public class BookHealthService(
         await beatVerification.VerifyBookAsync(slug, ct);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var nodeIds = new List<Guid> { nodeId };
-        nodeIds.AddRange(await db.Nodes.AsNoTracking().Where(n => n.ParentNodeId == nodeId).Select(n => n.Id).ToListAsync(ct));
+        // 2026-08-09 bug fix: was nodeId + DIRECT children only, so a book whose chapter is
+        // itself a split Collection let BLOCKER/MODERATE verification failures in the nested
+        // sub-chapters go completely unreported by the nightly health pass — a false-clean
+        // report. Use the shared recursive helper (same class of bug as the ExportNodeCli
+        // pre-export gate, found in the same audit).
+        var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatIds = await db.BeatNodes.AsNoTracking()
             .Where(bn => nodeIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
 

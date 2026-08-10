@@ -1992,10 +1992,12 @@ Be specific; do not invent praise the reviews don't support.";
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var childIds = await db.Nodes
-            .Where(s => s.ParentNodeId == nodeId)
-            .Select(s => s.Id)
-            .ToListAsync(ct);
+        // 2026-08-09 bug fix: was direct children only, so a book whose chapter is itself a
+        // split Collection (chapter -> N sub-chapters, each independently reviewed) rolled up
+        // an incomplete/flat history — grandchild NodeScoreHistory rows were invisible to this
+        // chart. GetLeafDescendantIdsAsync recurses to arbitrary depth.
+        var childIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        childIds.Remove(nodeId); // the helper returns nodeId itself when it has no children — the branch below already covers that flat case
 
         if (childIds.Count == 0)
         {

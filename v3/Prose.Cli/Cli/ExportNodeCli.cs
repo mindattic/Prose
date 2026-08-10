@@ -98,11 +98,14 @@ public static class ExportNodeCli
         // 'prose --verify-book --slug <slug>' first to refresh, then fix any BLOCKERs.
         await using (var dbV = await dbFactory.CreateDbContextAsync())
         {
-            var chapterIds = await dbV.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == nodeId)
-                .Select(n => n.Id).ToListAsync();
-            var allNodeIds = new List<Guid>(chapterIds.Count + 1) { nodeId };
-            allNodeIds.AddRange(chapterIds);
+            // 2026-08-09 bug fix: this used to gather only nodeId + its DIRECT children, so a
+            // book whose chapter is itself a split Collection (chapter -> N sub-chapters ->
+            // beats) let BLOCKER findings living in those sub-chapters slip past this gate
+            // entirely — the export would succeed while real, unresolved BLOCKER verification
+            // failures sat unreported one level deeper than this query looked. Found during
+            // the shallow-hierarchy audit that followed the Vigil's End split. Use the shared
+            // recursive helper so this gate sees every leaf, at any depth.
+            var allNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(dbV, nodeId);
 
             var beatIds = await dbV.BeatNodes.AsNoTracking()
                 .Where(bn => allNodeIds.Contains(bn.NodeId) && bn.IsEnabled)

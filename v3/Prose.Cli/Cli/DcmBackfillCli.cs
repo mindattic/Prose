@@ -52,10 +52,14 @@ public static class DcmBackfillCli
             if (node == null) { Console.Error.WriteLine("[dcm-backfill] No matching node."); return 2; }
             nodeId = node.Id; title = node.Title;
 
-            var chapterIds = await db.Nodes.AsNoTracking()
-                .Where(n => n.ParentNodeId == nodeId && n is ChapterNode)
-                .OrderBy(n => n.SortKey).Select(n => n.Id).ToListAsync();
-            var sourceIds = chapterIds.Count > 0 ? chapterIds : new List<Guid> { nodeId };
+            // 2026-08-09 bug fix: was direct ChapterNode children only, so a book whose
+            // chapter is itself a split Collection (chapter -> N sub-chapters -> beats) only
+            // ever saw that one wrapper chapter's zero direct beats — backfill silently
+            // processed 0 beats for the whole nested subtree. GetLeafDescendantIdsAsync
+            // recurses to arbitrary depth; the ordering logic below (order[] dictionary +
+            // ThenBy SortKey) already handles a multi-source list correctly, so this swap
+            // is sufficient on its own.
+            var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId);
 
             var rows = await db.BeatNodes.AsNoTracking()
                 .Where(bn => sourceIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")

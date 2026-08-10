@@ -103,21 +103,27 @@ public static class BackfillEntityDocsCli
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var chapters = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == nodeId)
-            .OrderBy(n => n.SortKey)
-            .Select(n => n.Id)
-            .ToListAsync();
+        // 2026-08-09 bug fix: was direct children only (same shape as the bug already fixed
+        // in DcmVizCli.CollectBeatsAsync — a book whose chapter is itself a split Collection
+        // reported far fewer beats than it actually has). GetLeafDescendantIdsAsync recurses
+        // to arbitrary depth. Also fixes the same latent ordering bug: querying and ordering
+        // per leaf then concatenating, instead of a flat OrderBy(SortKey) across every leaf's
+        // BeatNodes (wrong once there's more than one leaf — SortKey restarts at 100 per
+        // chapter).
+        var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId);
 
-        var sourceIds = chapters.Count > 0 ? chapters : new List<Guid> { nodeId };
+        var rowsByLeaf = new List<(string? Description, string? Text)>();
+        foreach (var leafId in sourceIds)
+        {
+            var rows = await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.NodeId == leafId && bn.IsEnabled)
+                .OrderBy(bn => bn.SortKey)
+                .Select(bn => new { bn.Beat!.Description, bn.Beat.Text })
+                .ToListAsync();
+            rowsByLeaf.AddRange(rows.Select(r => ((string?)r.Description, (string?)r.Text)));
+        }
 
-        var rows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => sourceIds.Contains(bn.NodeId) && bn.IsEnabled)
-            .OrderBy(bn => bn.SortKey)
-            .Select(bn => new { bn.Beat!.Description, bn.Beat.Text })
-            .ToListAsync();
-
-        return rows.Select((r, i) => (i, r.Description, includeText ? r.Text : null)).ToList();
+        return rowsByLeaf.Select((r, i) => (i, r.Description, includeText ? r.Text : null)).ToList();
     }
 
     private static string? ArgValue(string[] args, string flag)

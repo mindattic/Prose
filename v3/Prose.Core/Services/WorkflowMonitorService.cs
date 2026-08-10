@@ -56,17 +56,20 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        // Roll up child nodes: a book's coverage is the union of its chapters' logs.
-        // Draft subtrees are out-of-scope material and excluded from coverage.
+        // Roll up ALL descendant nodes (any depth): a book's coverage is the union of every
+        // leaf's logs, not just its direct children's. 2026-08-09 bug fix: this used to stop
+        // at direct children, so a book whose chapter is itself a split Collection (chapter ->
+        // N sub-chapters -> beats) reported false "never called" gaps for services that were
+        // actually logged — just under grandchild leaf NodeIds this query never looked at.
+        // GetLeafDescendantIdsAsync deliberately does NOT apply the Drafts-bucket exclusion —
+        // correct here, since this is an analysis/audit report, not reader-facing manuscript
+        // assembly (see the helper's own doc comment).
         // IgnoreQueryFilters(): nodeId is already a resolved, specific id by the time it
         // reaches here (from a properly-scoped slug lookup, or from GetAllNodesWithGapsAsync's
         // cross-universe sweep) — an id-exact lookup is unambiguous regardless of universe, so
         // the universe filter is redundant here and would otherwise wrongly drop non-default-
         // universe nodes when this runs with no ambient universe selected.
-        var childIds = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(s => s.ParentNodeId == nodeId)
-            .Select(s => s.Id).ToListAsync(ct);
-        var scopeIds = new List<Guid>(childIds) { nodeId };
+        var scopeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var logs = await db.BeatServiceLogs.AsNoTracking()
             .Where(x => scopeIds.Contains(x.NodeId)).ToListAsync(ct);
