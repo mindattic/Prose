@@ -407,7 +407,11 @@ see if that fixes it" — author's words, binding).
    (ambivalent default), per-beat escalation curve, event-type + revelation-mode palette, optional
    form device, ending style (avalanche, no epilogue), 3-5 intertextual anchors from the entity DB.
    Then run `prose --generate-node-doc --slug <slug>` to regenerate `docs/nodes/<CODE>.md` with the
-   blueprint section auto-populated from the DB.
+   blueprint section auto-populated from the DB. If the LLM provider is unavailable (e.g. the
+   standing Anthropic credit outage) but the structural decisions are already authored by hand in
+   the brief/bible, use `prose --set-structural-blueprint --slug <slug> --file <path.json>` instead
+   — same STRICT JSON contract as the generator's prompt, no LLM call, saved with
+   `GeneratedBy="manual"` for honest provenance.
 7. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
 8. **Export** — `--export-node`; flip USER_STORIES to ✅ with evidence.
 
