@@ -119,6 +119,33 @@ public class BeatVerificationService
             results.Add(purposeCheck);
         }
 
+        // ── Reap orphaned rows for checks that no longer apply ────────────────
+        //
+        // Found 2026-08-10: a beat's BeatBlueprintDecision can be deleted out from under it
+        // (a blueprint restructuring pass, a chapter-granular consolidation fix) while the beat
+        // itself stays live and enabled. EventType/SubplotCarrier/EscalationFloor/DeclaredPurpose
+        // are only added to `results` when their precondition (decision != null, etc.) still
+        // holds — so once a precondition stops holding, the OLD row from when it did just sits
+        // in BeatVerifications forever. It is never in `results`, so the upsert loop below never
+        // touches it, and — critically — it is immune to every future re-run: TRUCE beat #16241
+        // survived 3+ separate --audit-book passes across one session this way, each one
+        // correctly computing 1 result (BannedPattern) and never revisiting the other 4 stale
+        // rows because nothing ever told them they were no longer wanted. Delete any existing
+        // per-beat-check row whose CheckType isn't in this run's results — "this run says the
+        // check doesn't apply" is itself the authoritative, current answer for that CheckType.
+        var perBeatCheckTypes = new[] { "BannedPattern", "EventType", "SubplotCarrier", "EscalationFloor", "DeclaredPurpose" };
+        var currentCheckTypes = results.Select(r => r.CheckType).ToHashSet();
+        var orphaned = await db.BeatVerifications
+            .Where(v => v.BeatId == beatId && perBeatCheckTypes.Contains(v.CheckType) && !currentCheckTypes.Contains(v.CheckType))
+            .ToListAsync(ct);
+        if (orphaned.Count > 0)
+        {
+            db.BeatVerifications.RemoveRange(orphaned);
+            log.LogInformation(
+                "[BeatVerification] Beat {BeatId}: reaped {Count} orphaned row(s) for check(s) no longer applicable — {Types}",
+                beatId, orphaned.Count, string.Join(", ", orphaned.Select(o => o.CheckType)));
+        }
+
         // ── Upsert results to DB ──────────────────────────────────────────────
         foreach (var r in results)
             await UpsertVerificationAsync(db, r, ct);
