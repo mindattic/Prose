@@ -38,6 +38,7 @@ public sealed class BeatChecklistGateService(
     ILlmService llm,
     FindingsService findings,
     SettingsService settings,
+    VerificationContextService verificationContext,
     ILogger<BeatChecklistGateService> log)
 {
     private const string FindingSummaryPrefix = "CHECKLIST";
@@ -132,7 +133,7 @@ public sealed class BeatChecklistGateService(
                 continue;
             }
 
-            var povVoiceHint = await GetPovVoiceHintAsync(db, beat.Id, povVoiceCache, ct);
+            var povVoiceHint = await verificationContext.GetPovVoiceHintAsync(beat.Id, povVoiceCache, ct);
             var (verdict, parseFailed) = await EvaluateBeatAsync(beat.Id, beat.Number, beat.Text, donts, moves, povVoiceHint, ct);
             evaluated++;
 
@@ -423,46 +424,6 @@ public sealed class BeatChecklistGateService(
     }
 
     // ── per-beat evaluation ────────────────────────────────────────────────────────
-
-    /// <summary>
-    /// Looks up this beat's POV character (<c>BeatEntityPresence.PresenceType = 'pov'</c>, the
-    /// same bible POV-map row <see cref="ProseWriterRouter"/> pins dominant per SS-A46) and
-    /// returns a short "Role — SpeechVocabulary" hint for the DON'T-list evaluator, or null if
-    /// the beat has no recorded POV or that character has no on-file vocabulary.
-    ///
-    /// Found while triaging IxS's 445 CraftChecklist findings (2026-08-10): the large majority
-    /// of its "Cognitive-architecture tics" hits were flagging Rook's filing/ledger/logistics
-    /// framing of thought — which is not an AI tic, it is her established, hand-authored
-    /// <c>Characters.SpeechVocabulary</c> ("Nouns of logistics and terrain — seams, gaps, load,
-    /// weight, records... She talks about people the way she talks about buildings"), directly
-    /// motivated by her Description ("former intelligence analyst... freelance extraction
-    /// planning"). The checklist's LLM evaluator had no way to see that and was judging every
-    /// beat against a universal rule with no Register-layer context — the same class of gap
-    /// SS-A46 already solved for generation (Register > BookBible > Universe > Base) but that
-    /// was never extended to this verification path. Small per-beat cache keyed on POV entity
-    /// id, since most beats in a run share the same narrator.
-    /// </summary>
-    private static async Task<string?> GetPovVoiceHintAsync(
-        ProseDbContext db, Guid beatId, Dictionary<Guid, string?> cache, CancellationToken ct)
-    {
-        var povIds = await db.Database
-            .SqlQuery<Guid>($"SELECT TOP 1 EntityId FROM BeatEntityPresence WHERE BeatId = {beatId} AND PresenceType = 'pov'")
-            .ToListAsync(ct);
-        if (povIds.Count == 0) return null;
-        var povId = povIds[0];
-
-        if (cache.TryGetValue(povId, out var cached)) return cached;
-
-        var character = await db.Characters.AsNoTracking()
-            .Where(c => c.Id == povId)
-            .Select(c => new { c.Role, c.SpeechVocabulary })
-            .FirstOrDefaultAsync(ct);
-        var hint = character != null && !string.IsNullOrWhiteSpace(character.SpeechVocabulary)
-            ? $"{character.Role} — {character.SpeechVocabulary}"
-            : null;
-        cache[povId] = hint;
-        return hint;
-    }
 
     /// <summary>Pure so it can be unit-tested without a DB or LLM: the guidance block appended
     /// to Part A when this beat has a known POV voice, or empty when it doesn't.</summary>

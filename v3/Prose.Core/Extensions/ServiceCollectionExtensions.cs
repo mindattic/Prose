@@ -719,6 +719,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CanonDocumentTypeRegistry>();
         services.AddSingleton<CanonDocumentService>();
         services.AddSingleton<BeatVerificationService>();
+        services.AddSingleton<VerificationContextService>();
         // Scoped, not Singleton (2026-08-09 fix): SceneGenerationService exposes instance events
         // (OnBeatProgress/OnBeatCompleted) that GenerateScene.razor subscribes to per page visit.
         // As a singleton shared by every Blazor Server circuit, two open /generate tabs — from

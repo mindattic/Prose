@@ -59,7 +59,8 @@ public class ProseWriterRouter(
     SemanticFidelityService? semanticFidelity = null,
     PlantPayoffService? plantPayoffs = null,
     BookAuditService? bookAudit = null,
-    SceneCollisionService? sceneCollision = null)
+    SceneCollisionService? sceneCollision = null,
+    VerificationContextService? verificationContext = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -126,20 +127,11 @@ public class ProseWriterRouter(
                 // POV register priority (GLMZ §0 / SS-A46 layer 4): find this beat's narrator from the
                 // bible POV map (BeatEntityPresence 'pov' row) so its register is pinned/dominant — a
                 // multi-POV book voices each beat in that beat's narrator, not a blend of everyone present.
-                Guid? povEntityId = null;
-                if (dbFactory != null && beatId != Guid.Empty)
-                {
-                    try
-                    {
-                        await using var povDb = await dbFactory.CreateDbContextAsync(ct);
-                        var ids = await povDb.Database.SqlQueryRaw<Guid>(
-                                "SELECT TOP 1 EntityId FROM BeatEntityPresence WHERE BeatId = {0} AND PresenceType = 'pov'",
-                                beatId)
-                            .ToListAsync(ct);
-                        if (ids.Count > 0) povEntityId = ids[0];
-                    }
-                    catch (Exception ex) { log.LogDebug(ex, "[ProseWriterRouter] POV lookup skipped, continuing"); }
-                }
+                // Shared lookup (RFC 0011 Brick 1) — was inlined here AND independently re-implemented
+                // in BeatChecklistGateService; now one place for both.
+                var povEntityId = verificationContext != null
+                    ? await verificationContext.GetPovEntityIdAsync(beatId, ct)
+                    : null;
 
                 var triggerText = (context.BeatGoal ?? "") + "\n" + (context.SceneSoFar ?? "");
                 docResult = string.IsNullOrEmpty(context.DocScopeCode)
