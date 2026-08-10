@@ -98,7 +98,14 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         // institutions (Univ. of California San Francisco; United Press International); IPEAF
         // is a real, defined medical diagnosis term (Idiopathic Partial Epilepsy with Auditory
         // Features) spelled out in full in the same sentence it appears in.
-        "HEDGE", "UCSF", "UPI", "IPEAF"
+        "HEDGE", "UCSF", "UPI", "IPEAF",
+        // HORROR universe: QRT is a ham-radio horror story (its own title, "QRT", is a real
+        // amateur-radio Q-code meaning "I am ceasing transmission" — deliberate wordplay, not
+        // a leak). The rest are the real ham-radio vocabulary the story is built on: QRP (low
+        // power operation), RST (signal report system), UTC (Coordinated Universal Time), PTT
+        // (push-to-talk), QSO (a radio contact), FCC (Federal Communications Commission), SWR
+        // (standing wave ratio), QSL (confirmation of contact).
+        "QRT", "QRP", "RST", "UTC", "PTT", "QSO", "FCC", "SWR", "QSL"
     };
 
     // ── Built-in alias codes (supplement codes pulled from DB) ────────────────
