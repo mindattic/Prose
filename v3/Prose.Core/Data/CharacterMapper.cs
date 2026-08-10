@@ -1006,6 +1006,15 @@ public static class CharacterMapper
                 Notes = c.Notes ?? "", SinceChapter = c.SinceChapter, UntilChapter = c.UntilChapter,
             });
 
+        // TargetEntityId was never populated here — every other bridge in this file resolves its
+        // free-text reference through ResolveEntityId (see e.g. Affiliation below), but this loop
+        // simply omitted the call. Found 2026-08-10 while seeding a new book's cast: confirmed
+        // corpus-wide, ALL 493 existing CharacterRelationships rows had a null TargetEntityId —
+        // every character relationship in the entire corpus was stored as inert display text,
+        // never a real graph edge FactionMapper's equivalent bridge (FillBridges) already gets
+        // right for FactionRelationships. A relationship's target can be any entity type (another
+        // character, a faction, a place) — CharacterRelationship carries no TargetType field to
+        // narrow the search, so this resolves across all entity types, not just "character".
         foreach (var r in src.Relationships)
             db.CharacterRelationships.Add(new CharacterRelationshipRow
             {
@@ -1014,6 +1023,7 @@ public static class CharacterMapper
                 EmotionalCore = r.EmotionalCore ?? "", StoryTension = r.StoryTension ?? "",
                 Status = string.IsNullOrEmpty(r.Status) ? "active" : r.Status,
                 SinceChapter = r.SinceChapter, UntilChapter = r.UntilChapter,
+                TargetEntityId = ResolveEntityIdAny(db, r.Name ?? ""),
             });
 
         foreach (var k in src.Knowledge)
@@ -1068,6 +1078,22 @@ public static class CharacterMapper
                 CharacterId = id, Position = 0, Alias = affiliation, FactionId = factionId,
             });
         }
+    }
+
+    /// <summary>
+    /// Same as <see cref="ResolveEntityId"/> but without an entity-type filter — for bridges
+    /// (like <see cref="CharacterRelationship"/>) whose target can legitimately be any entity
+    /// type (another character, a faction, a place) and carries no field saying which.
+    /// Mirrors <c>PlaceMapper.ResolveEntityIdAny</c>.
+    /// </summary>
+    private static Guid? ResolveEntityIdAny(ProseDbContext db, string name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return null;
+        var e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Name == name && x.IsActive);
+        if (e != null) return e.Id;
+        var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
+        e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Slug == slug && x.IsActive);
+        return e?.Id;
     }
 
     /// <summary>

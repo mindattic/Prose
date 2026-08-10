@@ -66,6 +66,9 @@ if (UniverseBootstrap.RequestedSlug == null
         "--verification-staleness", "--findings-staleness",
         // Provider health touches no universe-scoped data at all.
         "--provider-status",
+        // Corpus-wide relationship backfill: resolves each row against its OWNER's own universe,
+        // not an ambient scope (see BackfillCharacterRelationshipsCli).
+        "--backfill-character-relationships",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -805,6 +808,15 @@ if (args.Contains("--provider-status"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ProviderStatusCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --backfill-character-relationships [--dry-run] [--json]
+// One-time repair for CharacterRelationships.TargetEntityId never being resolved at save time.
+if (args.Contains("--backfill-character-relationships"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BackfillCharacterRelationshipsCli.RunAsync(args, sp);
     return;
 }
 
