@@ -210,9 +210,20 @@ public class BeatCoordinationService
         // capacity will show NO_CONSTRUCTION on every beat beyond it. Exposed so callers
         // (e.g. BookHealthService) can tell "blueprint is stale/undersized" apart from a
         // genuine per-beat gap inside the blueprint's covered range.
-        int constructionCapacity = chapterGranular
-            ? chapters.Count
-            : Math.Max(escalation.Length, events.Count == 0 ? 0 : events.Max(e => e.BeatIndex) + 1);
+        // Bug fixed 2026-08-10: this used to report chapters.Count for chapter-granular books —
+        // how many chapters the BOOK currently has, not how many the BLUEPRINT's escalation/
+        // event arrays actually cover (the field's own doc comment always specified the latter).
+        // Caught live: VIGL and BLST both have chapter-granular blueprints with escalation
+        // curves of length 1 (e.g. "[8]") and a single event-palette entry, covering only
+        // chapter index 0 — but this formula reported ConstructionCapacity=25 (VIGL) / =21
+        // (BLST), the book's real chapter count, hiding the staleness completely and letting
+        // BookHealthService's beat-granular-only consolidation check (which compares this value
+        // against the book's size to decide whether to file ONE "blueprint stale" finding
+        // instead of one per beat) never fire for chapter-granular books. The same Math.Max
+        // formula already used for beat-granular is the correct one for both — it measures the
+        // blueprint's own array size regardless of granularity.
+        int constructionCapacity =
+            Math.Max(escalation.Length, events.Count == 0 ? 0 : events.Max(e => e.BeatIndex) + 1);
 
         // Book-wide construction context (applies to every beat)
         var bookScope = new BookScopeContext

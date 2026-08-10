@@ -352,24 +352,40 @@ public class BookHealthService(
             .Where(x => x.Beat.ProseLength > 0 && !x.Beat.Covered)
             .ToList();
 
-        // A beat-granular blueprint's escalation/event arrays are sized to the beat count AT
-        // GENERATION TIME (BeatCoordinationService.ConstructionCapacity) and are never resized
-        // when beats are later split — every beat past that capacity reads NO_CONSTRUCTION
-        // regardless of prose quality. That's a stale blueprint, not hundreds of independent
-        // per-beat defects: file ONE actionable gap for the drift and drop the out-of-range
-        // beats from the per-beat loop, so the finding count reflects real coordination gaps.
+        // A blueprint's escalation/event arrays are sized AT GENERATION TIME and are never
+        // resized when the book grows later — every beat (beat-granular) or every beat in a
+        // chapter past that capacity (chapter-granular) reads NO_CONSTRUCTION regardless of
+        // prose quality. That's a stale blueprint, not hundreds of independent per-beat
+        // defects: file ONE actionable gap for the drift and drop the out-of-range beats from
+        // the per-beat loop, so the finding count reflects real coordination gaps.
+        //
+        // Bug fixed 2026-08-10: this consolidation only ever checked the beatGranular branch.
+        // Chapter-granular books (VIGL, BLST, and likely others) got no consolidation at all —
+        // BeatCoordinationService.ConstructionCapacity used to report the book's current
+        // chapter count for these (always "big enough"), not the blueprint's actual escalation-
+        // array length, so this whole branch silently never fired for them. Confirmed live:
+        // VIGL's and BLST's chapter-granular blueprints both have escalation curves of length 1
+        // (covering only chapter index 0) despite having 25 and 21 real chapters — every beat
+        // outside chapter 0 was filing its own individual "COORDINATE beat #N" finding (307/318
+        // for VIGL, 313/339 for BLST) instead of one consolidated gap. Fixing
+        // ConstructionCapacity's computation (see that file) makes this branch's existing
+        // condition true for both granularities; this change just makes the out-of-range test
+        // and message granularity-aware to match.
         var capacity = report.BookScope.ConstructionCapacity;
-        var beatGranular = string.Equals(report.BookScope.Granularity, "beat", StringComparison.OrdinalIgnoreCase);
+        var chapterGranular = string.Equals(report.BookScope.Granularity, "chapter", StringComparison.OrdinalIgnoreCase);
+        var totalUnits = chapterGranular
+            ? (uncovered.Count > 0 ? report.Beats.Max(b => b.ChapterIndex) + 1 : 0)
+            : report.TotalBeats;
         List<(BeatCoordinate Beat, int Ordinal)> perBeat = uncovered;
 
-        if (beatGranular && capacity > 0 && capacity < report.TotalBeats)
+        if (capacity > 0 && capacity < totalUnits)
         {
             // NO_CONSTRUCTION beyond the blueprint's footprint is the only reason these beats
             // are uncovered — UNSCORED is expected noise (no book-wide rescore has run) and
             // alone would never fail Covered; MISSING_MEANING/NO_PROSE/STUB_PROSE are real
             // per-beat defects the blueprint has nothing to do with, so those still get filed.
             var outOfRange = uncovered
-                .Where(x => x.Ordinal >= capacity
+                .Where(x => (chapterGranular ? x.Beat.ChapterIndex : x.Ordinal) >= capacity
                          && x.Beat.Flags.Contains("NO_CONSTRUCTION")
                          && !x.Beat.Flags.Contains("MISSING_MEANING")
                          && !x.Beat.Flags.Contains("NO_PROSE")
@@ -378,8 +394,9 @@ public class BookHealthService(
             if (outOfRange.Count > 0)
             {
                 perBeat = uncovered.Except(outOfRange).ToList();
+                var unitWord = chapterGranular ? "chapter(s)" : "beat(s)";
                 findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.OutlineDrift, FindingSeverity.Medium,
-                    $"COORDINATE blueprint stale: sized for {capacity} beat(s) but the book now has {report.TotalBeats} " +
+                    $"COORDINATE blueprint stale: sized for {capacity} {unitWord} but the book now has {totalUnits} " +
                     $"({outOfRange.Count} beat(s) past the blueprint's footprint have no construction slice) — " +
                     $"run 'prose --generate-blueprint --slug {slug}' to resize.",
                     snippet: null, suggestedFix: $"prose --generate-blueprint --slug {slug}");
