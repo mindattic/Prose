@@ -549,6 +549,15 @@ if (args.Contains("--book-bible"))
     return;
 }
 
+// CLI mode: hand-write the node bible verbatim (CLI mirror of MCP SetBookBible).
+//   prose --set-book-bible --slug <slug> --file <path-to-bible.md>
+if (args.Contains("--set-book-bible"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SetBookBibleCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: regenerate canon document .md files from DB (CanonDocuments + CanonDocumentSections).
 // The disk files are generated read-only mirrors; source of truth is the DB.
 //   prose --generate-canon-md --type <WorldBible|WorldMaster|Franchise|UniverseCanon>
