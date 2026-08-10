@@ -51,6 +51,26 @@ public class FakeLlmService : ILlmService
 }
 
 /// <summary>
+/// RFC 0011 Brick 3: the shared "provider is down" fake — simulates the standing Anthropic
+/// credit-exhaustion outage this project has actually lived through. Every LLM-dependent service
+/// must be tested against this: a real outage must surface as a visible failure (an exception,
+/// an explicit "not evaluated" result) and never get swallowed into a false Pass or false Clean.
+/// Extracted 2026-08-10 after finding it independently duplicated byte-for-byte in
+/// <c>BeatAuditServiceTests.cs</c> and <c>BookAuditChapterAssemblyTests.cs</c> — the same
+/// "nobody remembered this already exists elsewhere" duplication pattern RFC 0011 diagnosed in
+/// production code (Brick 1), showing up in test code too.
+/// </summary>
+public class ThrowingLlmService : ILlmService
+{
+    public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+
+    public Task<string> GenerateAsync(string system, string user,
+        double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default) =>
+        throw new InvalidOperationException(
+            "400 Bad Request: Your credit balance is too low to access the Anthropic API.");
+}
+
+/// <summary>
 /// Test path provider that uses a custom root directory (for temp test dirs).
 /// </summary>
 public class TestPathProviderWithRoot : IPathProvider

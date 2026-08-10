@@ -64,6 +64,8 @@ if (UniverseBootstrap.RequestedSlug == null
         // Corpus-wide staleness reports: resolve each row's own book, not an ambient scope —
         // same shape as --sync-markdown/--generate-canon-md above.
         "--verification-staleness", "--findings-staleness",
+        // Provider health touches no universe-scoped data at all.
+        "--provider-status",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -794,6 +796,15 @@ if (args.Contains("--findings-staleness"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await FindingsStalenessCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --provider-status [--live] [--json]
+// RFC 0011 Brick 3: degraded-services status on demand. See docs/PROVIDERS.md.
+if (args.Contains("--provider-status"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ProviderStatusCli.RunAsync(args, sp);
     return;
 }
 

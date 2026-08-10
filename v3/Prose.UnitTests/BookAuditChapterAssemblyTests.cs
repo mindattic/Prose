@@ -116,17 +116,6 @@ public class BookAuditChapterAssemblyTests
         Assert.That(report.BlockingCount, Is.EqualTo(report.Checks.Count));
     }
 
-    /// <summary>Fake LLM that always throws — simulates a provider outage / exhausted API credit.</summary>
-    private sealed class ThrowingLlmService : ILlmService
-    {
-        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
-
-        public Task<string> GenerateAsync(string system, string user,
-            double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default) =>
-            throw new InvalidOperationException(
-                "400 Bad Request: Your credit balance is too low to access the Anthropic API.");
-    }
-
     // ── seeding helpers ─────────────────────────────────────────────────────
 
     private async Task<Guid> SeedNodeWithBeatAsync(string kind, string beatText)
