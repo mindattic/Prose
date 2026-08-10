@@ -2108,6 +2108,17 @@ if (args.Contains("--sanity-scan"))
     return;
 }
 
+// prose --duplicate-entity-scan --universe <slug> [--json]
+// Deterministic scan for duplicate/near-duplicate character Entity names within a universe
+// that aren't explained by legitimate cross-book OriginNodeId disambiguation. No LLM.
+// Exit 0 = none found, 1 = candidates found (informational — read the prose before merging).
+if (args.Contains("--duplicate-entity-scan"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await DuplicateEntityScanCli.RunAsync(args, sp);
+    return;
+}
+
 // prose --plant-audit   --slug <node> [--json]   audit plant/payoff pairs
 // prose --list-plants   --slug <node> [--json]   list all pairs
 // prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]

@@ -1096,6 +1096,12 @@ public static class ServiceCollectionExtensions
         // Available via `prose --sanity-scan`.
         services.AddSingleton<SanityScanService>();
 
+        // Deterministic duplicate-entity scan — no LLM; flags duplicate/near-duplicate
+        // character Entity names within a universe not explained by legitimate OriginNodeId
+        // disambiguation (e.g. TEST's two "Boris Johan(s)sen" Bear rows, found 2026-08-10).
+        // Available via `prose --duplicate-entity-scan --universe <slug>`.
+        services.AddSingleton<DuplicateEntityScanService>();
+
         // Deterministic noun consistency scan — no LLM; flags deprecated/renamed
         // noun references in beat prose (e.g. old drone name "VacCell" → "Nit").
         // Rules registered in DeprecatedEntityNames table, universe-scoped.

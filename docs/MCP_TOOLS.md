@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**265 tools** across **42 tool families.**
+**273 tools** across **43 tool families.**
 
 ## Families
 
@@ -28,9 +28,10 @@
 | [Chekhov Audit](#chekhov-audit) | 1 |
 | [Combat](#combat) | 1 |
 | [Config](#config) | 14 |
-| [Context](#context) | 4 |
+| [Context](#context) | 5 |
 | [Continuity](#continuity) | 2 |
-| [Core Entity Crud](#core-entity-crud) | 4 |
+| [Core Entity Crud](#core-entity-crud) | 5 |
+| [Data Integrity](#data-integrity) | 4 |
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 4 |
@@ -43,7 +44,7 @@
 | [Noun Consistency](#noun-consistency) | 3 |
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
-| [Quality](#quality) | 11 |
+| [Quality](#quality) | 12 |
 | [Reader Qa](#reader-qa) | 3 |
 | [Repository](#repository) | 2 |
 | [Scene](#scene) | 4 |
@@ -54,7 +55,7 @@
 | [Swain](#swain) | 3 |
 | [Universe](#universe) | 5 |
 | [Verification](#verification) | 5 |
-| [Voice](#voice) | 5 |
+| [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 5 |
 | [World Modelling](#world-modelling) | 16 |
@@ -439,6 +440,12 @@ Plant a new motif in a book's inventory. Idempotent by name (re-planting with a 
 - `kind` (string, required) — MotifKind: Object, Phrase, Gesture, Sensory, Ritual.
 - `introducedInChapterId` (string, required) — Chapter id where this motif is being introduced.
 
+### `propose_motifs`
+
+Scan a node's actual written prose for motif candidates — italicized phrases that recur, or capitalized named objects (not already characters/places) that repeat 3+ times. Returns proposals for review; nothing is written automatically. Pass a chapter-level node for one chapter's beats, or a book-level node to aggregate every chapter's beats. Plant any you want to keep via plant_motif.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug/code to scan.
+
 ### `search_semantic`
 
 Search the world graph by theme, not by name. TF-IDF cosine similarity across every entity description. Use this to surface entities that are *thematically relevant* to what you're about to write — e.g. searching 'corporate betrayal under-table contract' might return Sable's backstory, the Lotus Syndicate, the Ferrogate enforcement arm. Returns ranked id+name+type+score.
@@ -454,7 +461,7 @@ Search the world graph by theme, not by name. TF-IDF cosine similarity across ev
 
 Find contradictions in a chapter against established canon. Pulls the characters from the chapter's `characters` field, plus the book's state_at_end and all prior chapters' synopses, builds a canon-context bundle, and dispatches a Legion Quorum vote with a contradiction-finding rubric (EPISTEMIC / TEMPORAL / CAPABILITY / CANON). Returns a JSON report with findings, citations, severity, and suggested fixes. Exit-code-equivalent convention: ok=true means no contradictions; ok=false means findings exist.
 
-- `chapterId` (string, required) — Chapter id (32-char hex). The chapter must exist in engine/data/chapters/<id>/chapter.json.
+- `chapterId` (string, required) — Chapter id (32-char hex), resolved from the SQL canon (IChapterRepository) — the pre-SS-A45 engine/data/chapters/<id>/chapter.json disk layout was retired 2026-05-08.
 - `quorum` (string, optional) — Quorum requirement for the contradiction vote: plurality | simplemajority | twothirds | unanimous. Default plurality (most permissive — surfaces every voter's concerns).
 - `maxTokens` (int, optional) — Max tokens per voter response. Default 4096. Larger values produce more thorough reports but cost more.
 - `maxContextChars` (int, optional) — Hard cap on canon-context characters before the draft text is appended. Default 80000. Lower this if hitting provider context limits.
@@ -463,7 +470,7 @@ Find contradictions in a chapter against established canon. Pulls the characters
 
 Find contradictions across an entire book by running a pairwise sweep — every chapter is graded against the FULL PROSE of every OTHER chapter (forward AND backward). Catches things a single-chapter check misses: a character who dies in chapter 3 but speaks in chapter 5, a character revealed left-handed in chapter 6 catching a ball right-handed in chapter 2, a stated age that drifts between chapters, etc. Cross-chapter findings are consolidated so the same contradiction surfaces once with all chapter numbers attached. Expensive — dispatches N Legion votes per book. Use synopsisOnly=true for cheaper triage that skips prose-level facts. Returns a JSON report with per-chapter findings and a consolidated cross-book finding list. Exit-code-equivalent convention: ok=true means no contradictions; ok=false means findings exist.
 
-- `bookId` (string, required) — Book id (32-char hex). The book must exist in engine/data/books/<id>.json with a non-empty chapter_ids list.
+- `bookId` (string, required) — Book id (32-char hex), resolved from the SQL canon (IBookRepository) with its chapters — the pre-SS-A45 engine/data/books/<id>.json disk layout was retired 2026-05-08.
 - `quorum` (string, optional) — Quorum requirement for the contradiction vote: plurality | simplemajority | twothirds | unanimous. Default plurality (most permissive — surfaces every voter's concerns).
 - `maxTokens` (int, optional) — Max tokens per voter response. Default 4096. Larger values produce more thorough reports but cost more.
 - `maxContextChars` (int, optional) — Hard cap on canon-context characters per chapter pass. Default 0 = let the script choose (400000 with prose, 120000 with synopsisOnly). Lower this if hitting provider context limits.
@@ -495,6 +502,7 @@ Create or update a character in canon. Pass empty id to create new; pass an exis
 - `speechPatternsJson` (string, optional) — Optional JSON for speech_patterns: {vocabulary, cadence, verbal_tics, example_lines, subtext}.
 - `physicalDescriptionJson` (string, optional) — Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.
 - `id` (string, optional) — Optional existing character id (32-char hex or full UUID) to update.
+- `originNodeSlug` (string, optional) — Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.
 
 ### `create_corponation`
 
@@ -543,6 +551,41 @@ Create or update a place / district in canon. Pass empty id to create new; pass 
 - `storyHooks` (string, optional) — Comma-separated story hooks.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing place id to update.
+
+### `set_entity_origin`
+
+Set which book/series node an existing entity belongs to (Entity.OriginNodeId), so a same-named entity in a different book is recognized as genuinely different rather than blocked as a duplicate. Pass empty originNodeSlug to clear back to universe-wide.
+
+- `id` (string, required) — Existing entity id (32-char hex or full UUID).
+- `originNodeSlug` (string, optional) — Book/series node slug to scope this entity to. Empty clears it (universe-wide/shared).
+
+## Data Integrity
+
+<sub>`DataIntegrityTools`</sub>
+
+### `audit_data_consistency`
+
+Audit SSOT drift across the SQL schema — denormalized display fields (Alias caches on bridge tables) disagreeing with the FK they cache, orphaned subtype rows, dangling edges, slug collisions, and EntityStateEvents bi-temporal hygiene. Global, cross-universe check (not scoped to one universe). No LLM calls; findings are reported, never auto-corrected.
+
+- _(no parameters)_
+
+### `check_graph_health`
+
+Check the active universe's world-graph health: orphaned nodes (zero edges), weakly-connected nodes (exactly one edge), and suspicious/malformed node names (sentence fragments, junk parses from free-text fields promoted verbatim into node identities). Rebuilds the graph from live SQL before analyzing, so results always reflect current data. Zero LLM calls; pure graph traversal + string heuristics.
+
+- _(no parameters)_
+
+### `duplicate_entity_scan`
+
+Scan a universe's character Entities for duplicate or near-duplicate names (exact match, or exactly 1 edit apart, e.g. "Boris Johansen" vs "Boris Johanssen") that are NOT explained by legitimate cross-book disambiguation (Entity.OriginNodeId set to different values, meaning deliberately distinct characters in different books' continuity). Finds candidates only — it does not merge or delete anything; resolving a duplicate requires reading the actual prose to determine which row (if either) matches what was actually written, exactly as the investigation that motivated this tool did (TEST's 'Bear', 2026-08-10 — two draft entity rows, neither fully correct on its own). No LLM calls.
+
+- `universeSlug` (string, required) — Universe slug, e.g. 'glmz', 'scry', 'nonfiction'.
+
+### `sanity_scan_node`
+
+Run the deterministic (no-LLM) sanity scan against one book's prose: internal dev-code leaks (an internal node code like 'BCODA' appearing as if it were an in-world name), undefined all-caps acronyms (excludes the book's own code, purely-numeric codes, glossaried terms, and acronyms inside an embedded found-document/log block written in sustained capitals), a 50-page length floor, and mojibake (encoding corruption). Fast enough for a pre-publish gate. Accepts a book node's slug or GUID.
+
+- `nodeIdOrSlug` (string, required) — Book node slug or GUID to scan.
 
 ## Edit Session
 
@@ -1528,6 +1571,13 @@ Sweep a node's prose against the entire canon database (entities, locations, wea
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `proposeFixes` (bool, optional) — Set to true to also draft a suggested rewrite for each contradiction found.
 
+### `check_duplicate_beats`
+
+Corpus-wide near-duplicate-scene detector. Flags beat pairs anywhere in a book whose prose embeddings are near-identical (default cosine similarity floor 0.90) — catches an abandoned early draft left enabled alongside its own developed, canonical rewrite written later. Excludes beat pairs merely adjacent within the same chapter (a continuous scene is supposed to share vocabulary — that's not a duplicate). The 0.90 default is deliberately high-precision/low-recall: real-corpus calibration found a genuine duplicate pair scoring only 0.84, while a lower floor also surfaces dozens of false positives from a book's own deliberate recurring formulaic devices (contract postings, logbook entries). Pass a lower threshold (e.g. 0.80) for an occasional deliberate deep pass, expecting more manual filtering. Candidate generator, NOT a verdict: read both beats in full before disabling either with set_beat_membership_enabled. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug — should be a BookNode; its descendant chapters are scanned together.
+- `threshold` (double, optional) — Cosine similarity floor for a candidate pair, 0–1. Default 0.90.
+
 ### `check_semantic_fidelity`
 
 Check the Semantic Fidelity Gap for a node — meaning drift from the book's original intent. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a beat that no longer resembles the book it was born from has drifted. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served something other than the beat's purpose. Evaluates every beat with prose (Beat.Score, if present, is reported but not a gate). Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.
@@ -1932,7 +1982,13 @@ Distill voice rules from a winning node (score ≥80) into proposed change-log e
 
 ### `harvest_voice_all`
 
-Distill voice rules from every node scored ≥80%. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called. Use list_voice_proposals to see all pending entries afterward.
+Distill voice rules from every node scored >=threshold (default 80). Score gates were retired project-wide (SS-A44) so almost no node has a Score anymore — this will likely return empty. Prefer harvest_voice_canon or harvest_voice_node(force:true) instead. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called.
+
+- `threshold` (double, optional) — Minimum Node.Score to include (0-100). Default 80. Only affects nodes that HAVE a Score — most nodes have none post-SS-A44.
+
+### `harvest_voice_canon`
+
+Distill voice rules from every node the author has marked Canon (IsCanon=true) — the recommended harvest gate post-SS-A44, since almost no node carries a Score anymore. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called.
 
 - _(no parameters)_
 
