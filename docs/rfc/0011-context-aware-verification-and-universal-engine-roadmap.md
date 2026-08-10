@@ -159,6 +159,48 @@ differently.
 found to be under-instrumented, fix filed as issue N]" — replacing the current "not independently
 confirmed" hedge.
 
+**RESOLVED 2026-08-10 — the hypothesis was wrong; the real answer is more precise and mixed.**
+Inspected real pre-outage `BeatChecklistResult` rows (generated 2026-08-04, before this session's
+Anthropic credit exhaustion) directly rather than guessing:
+
+- **CraftChecklist: CONFIRMED GENUINE, hypothesis falsified.** The original theory — "nonfiction
+  doesn't trigger craft/voice-specific categories as heavily" — is wrong for this category. The
+  checker fires vigorously and appropriately on nonfiction: two sampled Gospel books carried 188
+  and 242 open CraftChecklist findings respectively, both HIGHER than a similarly-sized fiction
+  comparison book (UNDR, 1 finding). Every sampled row's evidence is specific and contentful
+  (real "Over-explanation" and "Jargon front-loading" hits quoting the actual scholarly prose
+  about Logos doctrine, Philo, Synoptic comparison), not boilerplate — the LLM is genuinely
+  reading and judging nonfiction prose, not silently passing it through.
+- **OutlineDrift / StoryScope: a real, structural "any genre" gap — not a bug, but a genuine
+  limitation.** Neither can run without a `NodeStructuralBlueprint` row. Queried directly: the
+  sampled nonfiction books have 0 blueprints; the fiction comparison has 1. Nonfiction was never
+  run through the blueprint-generation step of the New Story Workflow (Step 4, `--generate-
+  blueprint`) — a workflow whose own countermeasures (StoryScope anti-AI-fiction-tell detection,
+  a 14-beat authorial spine) are fiction-shaped by design. This is the closest thing to a
+  confirmed "under-instrumented" finding this brick produced: nonfiction genuinely cannot access
+  these QA dimensions today, through no fault of its own content.
+- **BookAudit: partially explained, not fully resolved — logged honestly as still open.**
+  `BookAuditService` picks Gateway vs. Sequel commandments from `Node.PreviousNodeId` (both the
+  fiction and nonfiction samples are non-sequel, so this isn't the differentiator) and adds a
+  GLMZ-only extra commandment set when `UniverseId == GlmzUniverseId` (nonfiction never gets
+  these — a real, deliberate, correct universe-scoping, and a partial explanation, but not
+  enough alone to explain 9 findings on the fiction sample vs. 0 on both nonfiction samples).
+  Whether the base 7 Gateway commandments genuinely passed cleanly for nonfiction, or the check
+  attempted and silently failed (`BookAuditService`/`AuditRunner` is Anthropic-dependent per
+  `docs/PROVIDERS.md`, and this session's credit exhaustion could plausibly have hit mid-sweep),
+  could not be conclusively distinguished from historical data alone — re-running live to settle
+  it is blocked by the same standing outage `--provider-status --live` already confirmed. Left
+  as a named open question rather than force-resolved without evidence.
+
+**Net conclusion, replacing the hedge:** nonfiction's healthier SII is genuine for the category
+that does the most work (CraftChecklist actually engages, hard) and structurally explained for
+two categories (OutlineDrift/StoryScope correctly can't run without a blueprint nonfiction never
+got) — but not fully explained for one (BookAudit). The original "nonfiction isn't held to the
+same standard" fear was mostly unfounded; the real, narrower gap is "nonfiction can't access
+blueprint-gated QA dimensions," which is a legitimate Brick 6 candidate (extend
+`--generate-blueprint` to nonfiction, or build a nonfiction-shaped structural-QA equivalent) —
+not something this brick itself builds, since its job was diagnosis, not a fix.
+
 ## 7. Brick 5 — Prove scale-agnosticism at both ends
 
 **Problem it closes:** most of this session's evidence comes from mid-size-to-large books (BLST
