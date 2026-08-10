@@ -155,9 +155,10 @@ disconnected rather than cleaned up. Both entities corrected/annotated to reflec
 deleted). See [[project_cross_book_story_weaving_2026_08_10]] for the full evidence trail.
 Separately, a genuine positive finding needing no fix: **Mrs. Chen's diner (BCODA's recurring
 counter/safehouse) also appears, consistently and without contradiction, in the Rook Trilogy's
-NxR and CxC** — an already-working cross-book anchor, not something to build. Whether TWD's own
-unglossed "Bear" (a fixer running a training crew) connects to TEST's Boris Johansen remains
-open and unconfirmed — no textual evidence links them yet.
+NxR and CxC** — an already-working cross-book anchor, not something to build. TWD's own "Bear"
+(a fixer running a crew, purely a handler archetype with no physical description) is confirmed
+a **different character** from TEST's Boris Johansen (an unambiguous large combat operator) —
+two characters sharing a common nickname, not a connection to force.
 
 ---
 
