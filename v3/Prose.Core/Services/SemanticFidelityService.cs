@@ -57,10 +57,23 @@ public class SemanticFidelityService
 
     /// <summary>How many standard deviations below a book's own mean intent-alignment a beat
     /// must fall to count as a genuine outlier, once <see cref="IntentOutlierMinSample"/> is
-    /// met. 1.5 flags roughly the bottom ~7% of a normal distribution — deliberately
-    /// conservative (few false negatives matter less here than the false-positive flood this
-    /// fix exists to stop).</summary>
-    public const double IntentOutlierZScore = 1.5;
+    /// met.
+    ///
+    /// Raised from 1.5 to 2.5 on 2026-08-10, same day as the fix that introduced it: verified
+    /// live against TLC's 47 post-fix survivors (z=1.5) by reading a further, larger sample
+    /// (8 more beats beyond the original BLST spot-check) and found the per-book normalization
+    /// alone was NOT sufficient for a book with more internal score variance than BLST — two
+    /// full-paragraph beats (#10125's detailed employment backstory, #10513's exam-table
+    /// flashback) were still confirmed near-perfect synopsis matches despite reading as z~1.5-2
+    /// outliers, alongside several very short but faithful beats (#10092's bare "412.7." planting
+    /// exactly the "cryptic numeric motif" its synopsis asked for). Across 11 total samples
+    /// checked this session (BLST + TLC, spanning 1 to 78 words, all three original severity
+    /// tiers), zero were confirmed genuine drift — only one (BLST #9042, "Twelve.") was judged
+    /// "extreme enough to be worth a second look," and that was at a much larger effective
+    /// deviation than the more borderline TLC cases. 2.5 (~0.6% of a normal distribution, vs
+    /// 1.5's ~7%) requires a beat to be a much more extreme statistical anomaly before firing,
+    /// closer to the deviation level of the one sample that read as plausible on inspection.</summary>
+    public const double IntentOutlierZScore = 2.5;
 
     private readonly EmbeddingService embeddings;
     private readonly FindingsService findings;
