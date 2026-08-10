@@ -115,28 +115,41 @@ RFC 0003 §4 names these chapter stories. Exact chapter titles TBD when the B2 b
 All GLMZ stories not owned by a main series book chapter. Listed alphabetically by Code.
 "Serves Book(s)" = which main series book(s) this story's events feed into or establish.
 
+**⚠ Beat counts refreshed 2026-08-10** after the full-corpus Logic Sweep campaign
+([[project_truce_logic_sweep_2026_08_10]]) confirmed this table had drifted badly — several
+books had grown 5-15x since it was last touched. Two codes below (HFV, OPPN) were retired and
+renamed (TWU, TWD) somewhere along the way; rows corrected to the live NodeCode.
+
 | Code | Title | Protagonist | Arc Served | Serves Book(s) | Status |
 |------|-------|-------------|------------|----------------|--------|
-| ATTE | Attendance | Yemina Fola | Rogue AI · Grey admin-horror | B2–B4 | Active; 89.2 score |
-| BLST | (confirm in DB) | — | — | — | COMPLETE (30 beats, 87/100) |
-| DWIACE | Death Whispers in a Cat's Ear | Rennick | Rogue AI · world texture · multi-POV | B2–B3 | Active (569 beats) |
-| HFV | The Come Up | Reza "Rampart" Solano + Tavi "Cutout" Jeong | None · Low operator-economy origin · friendship-as-a-phase · **Rampart & Cutout diptych Bk 1** | None (world texture) | COMPLETE (14 beats/4 ch, ~7k words; ground-level Gray Zone; storyscope CLEAN, 0 structural fails; reader panel 74.1; V3 exported 2026-07-19) |
-| OPPN | The Fall Down | Reza "Rampart" Solano vs Tavi "Cutout" Jeong | None · operator-signature collision · divided loyalties · **Rampart & Cutout diptych Bk 2** | None (world texture) | COMPLETE (14 beats/4 ch, ~6.5k words, dual POV; ground-level Gray Zone origin + rich Spire; storyscope CLEAN; reader panel 69.8 (±6.9, taste-fork ceiling); V3 exported 2026-07-19) |
-| ICFI | It Came From Iowa | Wes Keith + CJ Anderson | Behemoth world · Iowa flyover · Machine God | B2 | COMPLETE (14 beats) |
-| IxS | Iron & Silk | Rook (Inkeri Saarinen) + Ekow Ato | Lotus COMPLETE · Rook Book 4 | B3–B4 | COMPLETE (113,889 w) |
+| ATTE | Attendance | Yemina Fola | Rogue AI · Grey admin-horror | B2–B4 | Active; 330 beats; Logic Sweep PASS 2026-08-10 |
+| BLST | Ballast | Teo Candelaria | Aerostatic-bloc descent · household politics | — | Active; 339 beats; Logic Sweep PASS 2026-08-10 |
+| DWIACE | Death Whispers in a Cat's Ear | Rennick | Rogue AI · world texture · multi-POV | B2–B3 | Active (559 beats); 1 BLOCKER deferred to author (cat-ear age contradiction) |
+| TWU | The Way Up (was HFV/"The Come Up") | Reza "Rampart" Solano + Tavi "Cutout" Jeong | None · Low operator-economy origin · friendship-as-a-phase · **Rampart & Cutout diptych Bk 1** | None (world texture) | Active; 113 beats; Logic Sweep PASS 2026-08-10 |
+| TWD | The Way Down (was OPPN/"The Fall Down") | Reza "Rampart" Solano vs Tavi "Cutout" Jeong | None · operator-signature collision · divided loyalties · **Rampart & Cutout diptych Bk 2** | None (world texture) | Active; 85 beats; Logic Sweep PASS 2026-08-10 |
+| ICFI | It Came From Iowa | Wes Keith + CJ Anderson | Behemoth world · Iowa flyover · Machine God | B2 | Active; 228 beats; Logic Sweep PASS 2026-08-10 |
+| IxS | Iron & Silk | Rook (Inkeri Saarinen) + Ekow Ato | Lotus COMPLETE · Rook Book 4 | B3–B4 | COMPLETE; 1162 beats; Logic Sweep PASS 2026-08-10 |
 | CRIT | Critical Mass | Ledger | Synthetic life · emergent-consciousness origin · Fleet mythology · action | B4–B5 (dependency needs rework — see §3 Ledger note) | REPLOTTED 2026-08-02 (was "Double Entry"/audit procedural; full replot, old 14-beat prose retired to history, new 14-beat spine + blueprint generated; entities re-seeded) |
-| MNEMO | Mnemosync | Amara & Seto | Neuretics world · Channeler | — | In progress |
-| MxG | Magenta & Gunmetal | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 1 | B3 | Active |
-| NxR | Neon & Rust | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 2 | B3 | Active |
+| MNEMO | Mnemosync | Amara & Seto | Neuretics world · Channeler | — | In progress; 593 beats |
+| MxG | Magenta & Gunmetal | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 1 | B3 | Active; 281 beats |
+| NxR | Neon & Rust | Rook (Inkeri Saarinen) | Lotus · heist arc · Rook Book 2 | B3 | Active; 356 beats; Logic Sweep — 2 BLOCKERs deferred to author (duplicated crisis staging, book-wide POV-law violation) |
 | CxC | Crimson & Chrome | Rook (Inkeri Saarinen) | Lotus finale · Rook Book 3 | B3 | COMPLETE |
-| PXL | Pixel | Pixel | Channeler origin · Kyle arc · Detroit escape | B1 | 14 beats rewritten 2026-07-21; character-record reconciliation vs BCODA's Pixel OPEN |
-| RTR | Read the Room | Faith Larson + Ethan Wolfe | Read (psionic) world · Fenris band | B3–B4 | COMPLETE (14 beats) |
-| SPRW | Sparrow | Elias Macias | Rogue AI misdirect · AI mystery | B4–B5 | Active (never fires) |
-| SRZR | Steppin' Razor | Sasha Võ | Lotus · Halcyon/OBERON | B3 | Active |
-| TLC | The Long Cut | Doc Stash | Medical noir · GLMZ world | — | COMPLETE (48 beats; 89%) |
-| TEST | Testament | Bear (Boris Johansen) | Military · GLMZ world | — | Active |
-| UNDR | Underclan | Glim | Underground world · Gray Zone | — | IsWIP=1 (54 beats) |
-| VATD | Vultures at the Door | Tomas Alvarado / Ekow Ato | Vultures world · Renko | B2 | Active |
+| PXL | Pixel | Pixel | Channeler origin · Kyle arc · Detroit escape | B1 | 185 beats; Logic Sweep PASS |
+| RTR | Read the Room | Faith Larson + Ethan Wolfe | Read (psionic) world · Fenris band | B3–B4 | Active; 267 beats; Logic Sweep PASS 2026-08-10 |
+| SPRW | Sparrow | Elias Macias | Rogue AI misdirect · AI mystery | B4–B5 | Active (never fires); 56 beats |
+| SRZR | Steppin' Razor | Sasha Võ | Lotus · Halcyon/OBERON | B3 | Active; 297 beats; Logic Sweep PASS 2026-08-10 |
+| TLC | The Long Cut | Doc Stash | Medical noir · GLMZ world | — | Active; 757 beats; Logic Sweep PASS 2026-08-10 |
+| TEST | Testament | Bear (Boris Johanssen — see entity note below) | Military/corporate accountability · GLMZ world | — | Active; 547 beats |
+| UNDR | Underclan | Glim | Underground world · Gray Zone | — | IsWIP=1; 56 beats |
+| VATD | Vultures at the Door | Tomas Alvarado / Ekow Ato | Vultures world · Renko | B2 | Active; 308 beats; Logic Sweep PASS 2026-08-10 |
+
+**Entity note (2026-08-10):** TEST's Bear was a duplicate entity — two "Boris Johan(s)sen" rows
+existed (an Arcturus-freelancer variant, never actually used in any book's prose, and an
+Ironclad-Meridian-breach-specialist variant, which TEST's actual prose matches). Resolved: the
+Arcturus variant retired (`IsActive=0`), the Ironclad Meridian variant scoped to TEST via
+`OriginNodeId`. See [[project_cross_book_story_weaving_2026_08_10]] for detail. Whether TWD's
+own unglossed "Bear" (a fixer running a training crew) is the same character remains an open,
+unconfirmed question — no textual evidence links them yet.
 
 ---
 
