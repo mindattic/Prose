@@ -776,12 +776,14 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Result).HasMaxLength(20).IsRequired();
             e.Property(x => x.Severity).HasMaxLength(20).IsRequired();
             e.Property(x => x.VerifiedBy).HasMaxLength(100).IsRequired();
+            e.Property(x => x.RuleVersion).HasMaxLength(40);
             e.HasOne(x => x.Beat).WithMany()
                 .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => new { x.BeatId, x.CheckType }).IsUnique()
                 .HasDatabaseName("UX_BeatVerifications_Beat_CheckType");
             e.HasIndex(x => x.BeatId);
             e.HasIndex(x => new { x.Result, x.Severity });
+            e.HasIndex(x => x.RuleVersion);
         });
         b.Entity<ConsensusCliche>(e =>
         {

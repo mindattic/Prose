@@ -61,6 +61,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // reproducibility audit): the guard blocked exactly the fresh-DB-bootstrap use case
         // this flag exists for.
         "--seed", "--migrate-sql",
+        // Corpus-wide staleness report: resolves each row's own book, not an ambient scope —
+        // same shape as --sync-markdown/--generate-canon-md above.
+        "--verification-staleness",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -766,12 +769,18 @@ if (args.Contains("--migrate-blueprint-rows"))
 //   prose --verify-book --slug <slug> [--json]
 //   prose --verify-quote --id <beatId> --quote "<claimed text>" [--claimed-by <name>] [--json]
 //   prose --verify-quotes-batch --json-file <path> [--json]
+//   prose --verification-staleness [--json]
 // Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision
 // contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node.
 // QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears
 // in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a).
+// --verification-staleness: which books have BeatVerification rows computed under an older
+// CurrentRuleVersion and need a --verify-book/--audit-book re-run (2026-08-10 — added after the
+// same "book never re-run after a check-logic fix" gap was found and manually re-diffed twice
+// in one session; see BeatVerification.RuleVersion's doc comment).
 if (args.Contains("--verify-beat") || args.Contains("--verify-book")
-    || args.Contains("--verify-quote") || args.Contains("--verify-quotes-batch"))
+    || args.Contains("--verify-quote") || args.Contains("--verify-quotes-batch")
+    || args.Contains("--verification-staleness"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await VerifyBeatCli.RunAsync(args, sp);

@@ -45,6 +45,17 @@ public record BookVerificationSummary(
 /// </summary>
 public class BeatVerificationService
 {
+    /// <summary>
+    /// Bump whenever a check's LOGIC changes — a new threshold, a new outlier gate, a Result
+    /// mapping change (mirrors <see cref="BeatChecklistGateService"/>'s PromptVersion). Stamped
+    /// onto every <see cref="BeatVerification"/> row on write; <see cref="GetStaleBookSlugsAsync"/>
+    /// uses it to answer "which books still have findings computed under old logic" as a direct
+    /// query. "v1" here is the outlier-gate + EventType Skip-vs-Partial fix (2026-08-10) — the
+    /// first version this project ever stamped; every row without a matching value (including
+    /// pre-existing NULL rows from before this column existed) is stale by definition.
+    /// </summary>
+    public const string CurrentRuleVersion = "v1";
+
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly ILogger<BeatVerificationService> log;
     private readonly EmbeddingService? embeddings;
@@ -560,23 +571,96 @@ public class BeatVerificationService
         {
             db.BeatVerifications.Add(new BeatVerification
             {
-                BeatId     = r.BeatId,
-                CheckType  = r.CheckType,
-                Result     = r.Result,
-                Severity   = r.Severity,
-                Evidence   = r.Evidence,
-                VerifiedAt = DateTime.UtcNow,
-                VerifiedBy = r.VerifiedBy,
+                BeatId      = r.BeatId,
+                CheckType   = r.CheckType,
+                Result      = r.Result,
+                Severity    = r.Severity,
+                Evidence    = r.Evidence,
+                VerifiedAt  = DateTime.UtcNow,
+                VerifiedBy  = r.VerifiedBy,
+                RuleVersion = CurrentRuleVersion,
             });
         }
         else
         {
-            existing.Result     = r.Result;
-            existing.Severity   = r.Severity;
-            existing.Evidence   = r.Evidence;
-            existing.VerifiedAt = DateTime.UtcNow;
-            existing.VerifiedBy = r.VerifiedBy;
+            existing.Result      = r.Result;
+            existing.Severity    = r.Severity;
+            existing.Evidence    = r.Evidence;
+            existing.VerifiedAt  = DateTime.UtcNow;
+            existing.VerifiedBy  = r.VerifiedBy;
+            existing.RuleVersion = CurrentRuleVersion;
         }
     }
 
+    // ── Staleness reporting ──────────────────────────────────────────────────
+
+    public sealed record StaleBook(string Slug, string Title, int StaleRows, int TotalRows);
+
+    /// <summary>
+    /// Every book with at least one enabled beat carrying a <see cref="BeatVerification"/> row
+    /// whose <see cref="BeatVerification.RuleVersion"/> doesn't match <see cref="CurrentRuleVersion"/>
+    /// (including legacy rows with a null RuleVersion, predating this column). Answers "which
+    /// books need a `--verify-book`/`--audit-book` re-run after a check-logic change" directly —
+    /// see the RuleVersion doc comment for why this exists (the same staleness gap was found and
+    /// manually re-diffed twice in one session before this method did).
+    /// </summary>
+    public async Task<List<StaleBook>> GetStaleBookSlugsAsync(CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // IgnoreQueryFilters — this report is deliberately corpus-wide across every universe,
+        // not scoped to whatever universe happens to be ambient for this CLI invocation (see
+        // Program.cs's UniverseAgnosticCommands entry for --verification-staleness).
+        var rows = await (
+            from bv in db.BeatVerifications.AsNoTracking().IgnoreQueryFilters()
+            join bn in db.BeatNodes.AsNoTracking().IgnoreQueryFilters() on bv.BeatId equals bn.BeatId
+            where bn.IsEnabled
+            select new { bn.NodeId, bv.RuleVersion }
+        ).ToListAsync(ct);
+        if (rows.Count == 0) return new List<StaleBook>();
+
+        var nodeIds = rows.Select(r => r.NodeId).Distinct().ToList();
+        var bookByLeaf = new Dictionary<Guid, Guid>();
+        foreach (var leafId in nodeIds)
+        {
+            var bookId = await ResolveBookAncestorIdAsync(db, leafId, ct);
+            bookByLeaf[leafId] = bookId;
+        }
+
+        var byBook = rows.GroupBy(r => bookByLeaf[r.NodeId]).Select(g => new
+        {
+            BookId = g.Key,
+            Total = g.Count(),
+            Stale = g.Count(r => r.RuleVersion != CurrentRuleVersion),
+        }).Where(g => g.Stale > 0).ToList();
+        if (byBook.Count == 0) return new List<StaleBook>();
+
+        var bookIds = byBook.Select(b => b.BookId).ToList();
+        var titles = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => bookIds.Contains(n.Id))
+            .Select(n => new { n.Id, n.Slug, n.Title })
+            .ToDictionaryAsync(n => n.Id, ct);
+
+        return byBook
+            .Where(b => titles.ContainsKey(b.BookId))
+            .Select(b => new StaleBook(titles[b.BookId].Slug ?? "", titles[b.BookId].Title ?? "", b.Stale, b.Total))
+            .OrderByDescending(b => b.StaleRows)
+            .ToList();
+    }
+
+    /// <summary>Walks ParentNodeId up from a leaf (chapter) node to its book ancestor (no parent,
+    /// or a Collection-kind root) — same walk-up shape as the rest of this service's book-scoping,
+    /// inverted (leaf-to-root instead of root-to-leaf via GetLeafDescendantIdsAsync).</summary>
+    private static async Task<Guid> ResolveBookAncestorIdAsync(ProseDbContext db, Guid leafId, CancellationToken ct)
+    {
+        var currentId = leafId;
+        for (var i = 0; i < 10; i++)
+        {
+            var parentId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+                .Where(n => n.Id == currentId).Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
+            if (parentId is not { } p) return currentId;
+            currentId = p;
+        }
+        return currentId;
+    }
 }

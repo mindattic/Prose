@@ -45,5 +45,22 @@ public class BeatVerification
     /// for semantic embedding checks.</summary>
     public string VerifiedBy    { get; set; } = "mechanical";
 
+    /// <summary>
+    /// Stamped from <see cref="Services.BeatVerificationService.CurrentRuleVersion"/> at write
+    /// time. Bump that constant whenever check LOGIC changes (a new threshold, a new outlier
+    /// gate, a Result mapping change) — mirrors <see cref="BeatChecklistResult.RuleSetVersion"/>.
+    ///
+    /// Added 2026-08-10 after this exact gap bit twice in one session: the DeclaredPurpose
+    /// outlier-gate fix landed, but nothing recorded which books' <c>BeatVerification</c> rows
+    /// were computed under the OLD logic, so finding them required manually diffing
+    /// <c>VerifiedAt</c> against the fix's commit time, book by book — a re-audit round caught 6
+    /// books this way, then a second round caught 5 MORE that the first round's manual check
+    /// missed (see project memory: "DeclaredPurpose stale re-audit"). Null/empty on any row means
+    /// it predates this column and should be treated as stale by definition.
+    /// <see cref="Services.BeatVerificationService.GetStaleBookSlugsAsync"/> answers "which books
+    /// need a re-run" as a direct query instead of a manual timestamp hunt.
+    /// </summary>
+    public string? RuleVersion  { get; set; }
+
     public Beat? Beat { get; set; }
 }

@@ -37,8 +37,37 @@ public static class VerifyBeatCli
         bool isJson  = args.Contains("--json");
         bool isQuote = args.Contains("--verify-quote");
         bool isQuoteBatch = args.Contains("--verify-quotes-batch");
+        bool isStaleness = args.Contains("--verification-staleness");
 
         var svc = services.GetRequiredService<BeatVerificationService>();
+
+        // ── Staleness report: which books have BeatVerification rows computed under
+        //    old check logic and need a --verify-book/--audit-book re-run ───────────
+        if (isStaleness)
+        {
+            var stale = await svc.GetStaleBookSlugsAsync();
+
+            if (isJson)
+            {
+                Console.WriteLine(JsonSerializer.Serialize(
+                    new { currentRuleVersion = BeatVerificationService.CurrentRuleVersion, stale }, JsonOpts));
+                return stale.Count > 0 ? 1 : 0;
+            }
+
+            Console.WriteLine($"[verification-staleness] current rule version: {BeatVerificationService.CurrentRuleVersion}");
+            if (stale.Count == 0)
+            {
+                Console.WriteLine("No stale books — every BeatVerification row corpus-wide matches the current rule version.");
+                return 0;
+            }
+
+            Console.WriteLine($"{stale.Count} book(s) have stale BeatVerification rows:");
+            foreach (var b in stale)
+                Console.WriteLine($"  {b.StaleRows,4}/{b.TotalRows,-4} stale — {b.Title} ({b.Slug})");
+            Console.WriteLine();
+            Console.WriteLine("Re-run: prose --audit-book --slug <slug>  (or --verify-book) for each.");
+            return 1;
+        }
 
         // ── Quote-grounding mode (audit-claim verification) ──────────────────────
         // Logic-sweep audit agents report findings as "beat X contains quote Y." Before
