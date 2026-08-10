@@ -51,7 +51,54 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         // below IsInsideCapsRun's minNeighborCapsWords=2 threshold for recognizing an
         // embedded inscription/quote, so this narrow whitelist entry covers the gap without
         // loosening that general heuristic.
-        "LEVI", "DNA", "PONTIF", "MAXIM"
+        "LEVI", "DNA", "PONTIF", "MAXIM",
+        // 2026-08-09 follow-up: continued the same corpus-wide sweep across every remaining
+        // NONFICTION book (NEPH, LUKE, JOHN, MARK, IREOUT) — every single warning checked by
+        // hand across all five turned out to be a real term, not a leak. Rather than
+        // re-litigate each one in a future session, whitelisted the confirmed-genuine set:
+        //
+        // Bible-translation abbreviations (NRSV, RSV, NIV, KJV, NKJV, ESV, NABRE — all real,
+        // standard scholarly shorthand for named English Bible translations):
+        "NRSV", "RSV", "NIV", "KJV", "NKJV", "ESV", "NABRE",
+        // Academic bodies/publishers/journals/reference works (ERC = European Research
+        // Council; CNRS = a French national research org; SPCK/EBSCO/WUNT/HTS/CSCO/BDB/DDD/
+        // HALOT/KTU/OTP/JST = real publishers, databases, monograph series, and lexicons a
+        // citation-grounded nonfiction book is expected to cite):
+        "ERC", "CNRS", "SPCK", "EBSCO", "WUNT", "HTS", "CSCO", "BDB", "DDD",
+        "HALOT", "KTU", "OTP", "JST",
+        // Real historical/mythological/biblical terms and figures (GAMLA = a real
+        // archaeological site; DROPSY/MAMMON/LOT/MINA/TYRIAN/SHEKEL = biblical-era terms and
+        // figures; BORR = a Norse mythological figure, father of Odin; AL-SUDDI/TABARI = real
+        // early Islamic scholars; STYX/ASTRAL = comparative-mythology vocabulary; BAAM = a
+        // real museum shelfmark, Biblioteca Alexandrina's Antiquities Museum; BEZAE = Codex
+        // Bezae, a real ancient biblical manuscript):
+        "GAMLA", "DROPSY", "MAMMON", "LOT", "MINA", "TYRIAN", "SHEKEL", "BORR",
+        "SUDDI", "TABARI", "STYX", "ASTRAL", "BAAM", "BEZAE",
+        // Real Irish-history institutions/organizations (IREOUT): RIC = Royal Irish
+        // Constabulary; IRA = Irish Republican Army; GHQ = General Headquarters; GPO =
+        // General Post Office (the 1916 Easter Rising site); HMSO = Her Majesty's Stationery
+        // Office; DIB = Dictionary of Irish Biography; DBE = Dame Commander of the British
+        // Empire; MSPC = Military Service Pensions Collection; OED = Oxford English
+        // Dictionary:
+        "RIC", "IRA", "GHQ", "GPO", "HMSO", "DIB", "DBE", "MSPC", "OED",
+        // Universal real-world terms/orgs with no plausible leaked-code reading: USA, NASA,
+        // UFO, PEN (the international writers' association and literary prize), PRIEST
+        // (a section heading, not a placeholder):
+        "USA", "NASA", "UFO", "PEN", "PRIEST",
+        // Ordinary short English words used in isolated ALL CAPS for emphasis — a common,
+        // legitimate device in BOTH nonfiction ("It was NOT her fault") and fiction dialogue/
+        // narration alike, not specific to one universe:
+        "NOT", "DAY", "COIN", "HAND", "HIRED",
+        // Non-standard but historically real Roman-numeral form (old clock-face "IIII" for 4,
+        // instead of "IV") — narrower than extending IsRomanNumeral's grammar for one rare
+        // inscription-style usage, same reasoning as the PONTIF/MAXIM entry above.
+        "IIII",
+        // Final round of the same sweep (1381, JOAN): HEDGE is part of "hedge-priest," a real
+        // historical term for an unlicensed itinerant priest (John Ball); UCSF/UPI are real
+        // institutions (Univ. of California San Francisco; United Press International); IPEAF
+        // is a real, defined medical diagnosis term (Idiopathic Partial Epilepsy with Auditory
+        // Features) spelled out in full in the same sentence it appears in.
+        "HEDGE", "UCSF", "UPI", "IPEAF"
     };
 
     // ── Built-in alias codes (supplement codes pulled from DB) ────────────────
