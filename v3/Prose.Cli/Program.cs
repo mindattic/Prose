@@ -2083,6 +2083,16 @@ if (args.Contains("--generate-blueprint"))
     return;
 }
 
+// prose --set-structural-blueprint --slug <nodeSlug> --file <path.json>
+// Hand-author a blueprint with no LLM call, matching GenerateBlueprintCli's response contract —
+// for when the generation provider is unavailable but the structural decisions are already made.
+if (args.Contains("--set-structural-blueprint"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SetStructuralBlueprintCli.RunAsync(args, sp);
+    return;
+}
+
 // prose --storyscope-audit --slug <nodeSlug> [--json]
 // Verifies the book against measurable AI-fiction structural tells (StoryScope):
 // flat escalation, event monoculture, moral gloss, emotion ratio, char-intro

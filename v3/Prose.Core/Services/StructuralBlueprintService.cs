@@ -110,6 +110,49 @@ public class StructuralBlueprintService
     public async Task<NodeStructuralBlueprint> RetrofitAsync(Guid nodeId, CancellationToken ct = default)
         => await GenerateCoreAsync(nodeId, retrofit: true, ct);
 
+    /// <summary>
+    /// Save a hand-authored blueprint with no LLM call — for when the generation provider is
+    /// unavailable (e.g. exhausted API credit) but the structural decisions have already been
+    /// made by a human/agent and documented (typically already written out in the node's own
+    /// bible/brief) and need to be committed in the exact shape an LLM-generated blueprint
+    /// would take. <paramref name="rawJson"/> must match the STRICT JSON contract documented in
+    /// <see cref="BuildSystemPrompt"/>'s response section. Added 2026-08-10 (Stage 6 of the
+    /// locked New Story Workflow, CLAUDE.md) after the standing Anthropic credit outage blocked
+    /// BTL's blueprint generation despite every structural decision already being authored.
+    /// </summary>
+    public async Task<NodeStructuralBlueprint> SetManualAsync(Guid nodeId, string rawJson, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.FindAsync([nodeId], ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        var beats = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+        if (beats.Count == 0)
+            throw new InvalidOperationException(
+                $"Node '{node.Title}' has no beats — the blueprint tags planned beats, so create the spine first.");
+
+        var parsed = JsonSerializer.Deserialize<BlueprintResponse>(rawJson, JsonOpts)
+            ?? throw new InvalidOperationException("Manual blueprint JSON did not deserialize to the expected shape.");
+
+        var ownerIds = beats.Select(b => b.NodeId).Distinct().ToList();
+        var ownerTitles = await db.Nodes.AsNoTracking()
+            .Where(n => ownerIds.Contains(n.Id))
+            .ToDictionaryAsync(n => n.Id, n => n.Title, ct);
+        var (granularity, units) = GroupUnits(beats, ownerTitles);
+
+        ClampEscalationCurve(parsed, units.Count);
+
+        return await SaveBlueprintAsync(db, node, parsed, granularity, units, generatedBy: "manual", ct);
+    }
+
+    private static void ClampEscalationCurve(BlueprintResponse parsed, int unitCount)
+    {
+        if (parsed.EscalationCurve is not { Count: > 0 } curve) return;
+        if (curve.Count > unitCount) parsed.EscalationCurve = curve.Take(unitCount).ToList();
+        else while (parsed.EscalationCurve.Count < unitCount)
+            parsed.EscalationCurve.Add(parsed.EscalationCurve[^1]);
+    }
+
     private async Task<NodeStructuralBlueprint> GenerateCoreAsync(Guid nodeId, bool retrofit, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -170,20 +213,28 @@ public class StructuralBlueprintService
         var raw = await llm.GenerateAsync(system, user, temperature: 0.8, maxTokens: maxTokens, ct: ct);
         var parsed = ParseResponse(raw, units.Count);
 
+        return await SaveBlueprintAsync(db, node, parsed, granularity, units, generatedBy: retrofit ? "retrofit" : "llm", ct);
+    }
+
+    private async Task<NodeStructuralBlueprint> SaveBlueprintAsync(
+        ProseDbContext db, Node node, BlueprintResponse parsed, string granularity,
+        List<StructuralUnit> units, string generatedBy, CancellationToken ct)
+    {
         // Replace any existing blueprint (cascade removes beat tags).
         var existing = await db.NodeStructuralBlueprints
-            .Where(b => b.NodeId == nodeId)
+            .Where(b => b.NodeId == node.Id)
             .ToListAsync(ct);
         if (existing.Count > 0)
             db.NodeStructuralBlueprints.RemoveRange(existing);
 
-        // Clamp free-text fields to their column caps — the LLM doesn't know the schema.
+        // Clamp free-text fields to their column caps — the caller (LLM or hand-authored JSON)
+        // doesn't know the schema.
         static string? Cap(string? s, int max) =>
             string.IsNullOrWhiteSpace(s) ? null : (s.Length <= max ? s : s[..max]);
 
         var blueprint = new NodeStructuralBlueprint
         {
-            NodeId       = nodeId,
+            NodeId       = node.Id,
             UniverseId   = node.UniverseId,
             HasSubplot   = parsed.Subplot?.Summary is { Length: > 0 },
             SubplotSummary = Cap(parsed.Subplot?.Summary, 1000),
@@ -202,7 +253,7 @@ public class StructuralBlueprintService
             EndingNote  = Cap(parsed.Ending?.Note, 500),
             IntertextualAnchorsJson = JsonSerializer.Serialize(parsed.IntertextualAnchors ?? []),
             Granularity = granularity,
-            GeneratedBy = retrofit ? "retrofit" : "llm",
+            GeneratedBy = generatedBy,
         };
         db.NodeStructuralBlueprints.Add(blueprint);
 
