@@ -190,6 +190,30 @@ public class ProsePatternGuard
             "\"not only/just X, but (also) Y\" — negative-parallelism crutch, the #2 most human-detected AI tell"),
     ];
 
+    // The deciding tic (CRAFT.md §8.9, found 2026-08-09 via a corpus-wide grep: "decid-"
+    // appeared in 1,200+ beats). Two specific recurring forms, not ordinary decision-making
+    // dialogue ("she decided to leave" is fine and matches neither pattern below):
+    //   (1) pre-conscious/anticipatory framing — a character acting BEFORE the decision, or
+    //       "deciding" without having decided ("he was on the concrete before he decided to
+    //       fall," "her tongue returned to it without deciding to").
+    //   (2) the specific near-verbatim construction "decided, the way [pronoun] decided most
+    //       things" — seen recurring near-verbatim across unrelated books/characters, a strong
+    //       signature of a reflexive authorial tic rather than a deliberate character beat.
+    // Deliberately does NOT attempt to catch personified/displaced-agency "decided" (a bolt,
+    // a room, a stairwell "deciding") — that variant depends on judging whether the SUBJECT
+    // is a person, which a regex cannot reliably do without a wave of false positives against
+    // ordinary sentences; that half of the tic stays an editorial/craft-review judgment call
+    // (CRAFT.md §8.9), not an automatic check.
+    private static readonly (Regex Pattern, string Rule)[] DecidingTic =
+    [
+        (new Regex(@"\bbefore (he|she|they)('d|\s+had)?\s+(finished\s+\w+ing\s+)?decid(ed|ing|es)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled),
+            "\"before he/she decided\" — pre-conscious/anticipatory decision framing (CRAFT.md §8.9)"),
+        (new Regex(@"\bwithout\s+decid(ing|ed)\s+to\b", RegexOptions.IgnoreCase | RegexOptions.Compiled),
+            "\"without deciding to\" — pre-conscious decision framing (CRAFT.md §8.9)"),
+        (new Regex(@"\bdecided,\s+the\s+way\s+(he|she|they)\s+decided\s+most\s+things\b", RegexOptions.IgnoreCase | RegexOptions.Compiled),
+            "\"decided, the way [pronoun] decided most things\" — recurring near-verbatim construction across the corpus (CRAFT.md §8.9)"),
+    ];
+
 
 
     /// <summary>
@@ -221,6 +245,7 @@ public class ProsePatternGuard
         CheckPatterns(text, AiVocabulary, ProseViolationCategory.AiVocabulary, aiTellViolations);
         CheckPatterns(text, AiDefaultNames, ProseViolationCategory.AiDefaultName, aiTellViolations);
         CheckPatternPairs(text, AiStructuralTics, ProseViolationCategory.AiStructuralTic, aiTellViolations);
+        CheckPatternPairs(text, DecidingTic, ProseViolationCategory.AiStructuralTic, aiTellViolations);
         violations.AddRange(aiTellViolations.Where(v => !IsInsideQuote(text, v.CharOffset)));
         CheckEmDashDensity(text, violations);
 

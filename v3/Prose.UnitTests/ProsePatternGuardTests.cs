@@ -298,6 +298,38 @@ public class ProsePatternGuardTests
         Assert.That(result.Any(v => v.Rule.Contains("em-dash density")), Is.False);
     }
 
+    // ── The deciding tic (CRAFT.md §8.9) ────────────────────────────────────────────────
+    // Real-corpus examples found via the 2026-08-09 sweep (1,200+ beats contained "decid-").
+
+    [TestCase("He was on the concrete before he decided to fall.")]
+    [TestCase("The Ledger opens a new line before he decides to open it.")]
+    [TestCase("A fact, something her tongue returned to without deciding to.")]
+    public void Check_PreConsciousDecisionFraming_DetectedAsAiStructuralTic(string text)
+    {
+        var result = guard.Check(text);
+        Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiStructuralTic
+                                  && v.Rule.Contains("CRAFT.md §8.9")), Is.True);
+    }
+
+    [Test]
+    public void Check_DecidedTheWayHeDecidedMostThings_DetectedAsAiStructuralTic()
+    {
+        var text = "He decided, the way he decided most things, before he'd finished admitting he was deciding.";
+        var result = guard.Check(text);
+        Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiStructuralTic
+                                  && v.Rule.Contains("near-verbatim construction")), Is.True);
+    }
+
+    [Test]
+    public void Check_OrdinaryDecisionMaking_NotFlaggedAsDecidingTic()
+    {
+        // "She decided to leave" is ordinary, unremarkable prose — must not be flagged.
+        // Matches neither the pre-conscious-framing pattern nor the specific near-verbatim
+        // "decided, the way X decided most things" construction.
+        var result = guard.Check("She decided to leave the room and shut the door behind her.");
+        Assert.That(result.Any(v => v.Rule.Contains("CRAFT.md §8.9")), Is.False);
+    }
+
     [Test]
     public void Check_EnDashNumericRange_NotCountedTowardEmDashDensity()
     {
