@@ -237,11 +237,25 @@ public class NodeDocService
     /// "Title ?? '—'" fallback rendered every compressed spine as a content-free "— — opens" stub.
     /// Falls back to a clipped Description, which IS populated for those books.
     /// </summary>
-    private static string BeatLabel(string? title, string? desc)
+    internal static string BeatLabel(string? title, string? desc)
     {
         if (!string.IsNullOrWhiteSpace(title)) return title;
-        if (!string.IsNullOrWhiteSpace(desc)) return desc.Length > 80 ? desc[..80].TrimEnd() + "…" : desc;
+        if (!string.IsNullOrWhiteSpace(desc)) return TruncateAtWordBoundary(desc, 80);
         return "—";
+    }
+
+    /// <summary>
+    /// Truncates to at most maxLength characters, backing up to the last space so a word is
+    /// never cut in half (e.g. "...will for…" instead of "...will force impossible...").
+    /// If no space exists before maxLength, falls back to a hard cut rather than returning an
+    /// oversized string.
+    /// </summary>
+    internal static string TruncateAtWordBoundary(string text, int maxLength)
+    {
+        if (text.Length <= maxLength) return text;
+        var cut = text.LastIndexOf(' ', maxLength - 1);
+        var slice = cut > 0 ? text[..cut] : text[..maxLength];
+        return slice.TrimEnd() + "…";
     }
 
     private static async Task<(string SpineText, int BeatCount)> BuildBeatSpineAsync(
