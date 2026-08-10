@@ -829,6 +829,17 @@ if (args.Contains("--backfill-character-relationships"))
     return;
 }
 
+// prose --backfill-entity-presence [--slug <slug>] [--dry-run]
+// Re-runs SceneContextAssembler's name/alias/embedding scan (no LLM call) against already-written
+// beats with no BeatEntities roster yet — lets a missing-alias fix take effect without a live
+// generation pass.
+if (args.Contains("--backfill-entity-presence"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BackfillEntityPresenceCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: migrate legacy Books/Chapters/ChapterBeats/Episodes/EpisodeBeats
 // data into the unified Beat/Node schema. Idempotent — safe to re-run.
 //   prose --migrate-nodes

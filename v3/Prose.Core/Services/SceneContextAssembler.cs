@@ -482,6 +482,16 @@ public class SceneContextAssembler(
 
         foreach (var r in ranked)
         {
+            // Defensive: a malformed candidate (null EntityType) must not abort the whole
+            // batch — found 2026-08-10 via --backfill-entity-presence hitting a corpus book
+            // whose ranked list produced one such entry; root candidate not fully isolated
+            // (every direct Entities/CharacterAlias read confirmed non-null EntityType), so
+            // this guards the actual crash site rather than a still-unconfirmed upstream one.
+            if (r is null || string.IsNullOrWhiteSpace(r.EntityType))
+            {
+                log.LogWarning("[SceneContextAssembler] Skipping ranked candidate with null/empty EntityType (EntityId={Id})", r?.EntityId);
+                continue;
+            }
             var entry = r.EntityType.Equals("character", StringComparison.OrdinalIgnoreCase)
                 ? await FormatCharacterAsync(db, r, ct)
                 : await FormatGenericAsync(db, r, ct);
