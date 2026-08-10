@@ -372,15 +372,17 @@ see if that fixes it" — author's words, binding).
    left null because the target was simply never seeded is a Stage 1 defect, not an acceptable
    gap: go back, seed the missing entity, and re-save the relationship so it resolves. Do not
    carry silently-broken edges into the bible.
-3. **Bible & Plot** — if new world facts: GLMZ facts → `docs/BIBLE.md`/`docs/WORLD.md`;
+3. **Book Structure (SS-A43)** — create a **BookNode** (MCP `create_book` / CLI `--create-book`)
+   + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
+   outline) = the book node's `seed` text. This stage is pure infrastructure — an empty shell with
+   title/slug/seed — not content decisions; it exists this early only because `SetBookBible`
+   writes onto `Nodes.NodeBible`, which requires the row to already exist.
+4. **Bible & Plot** — if new world facts: GLMZ facts → `docs/BIBLE.md`/`docs/WORLD.md`;
    Fantasy/Entos facts → `docs/universes/ENTOS.md`. Write the book's hand-authored content (arc,
    characters, voice register, locks, POV map) via `set_book_bible` MCP into `Nodes.NodeBible`.
    Every named entity and relationship the bible describes must already exist from Stages 1–2 —
    the bible describes the graph, it does not invent it. Add a story entry to
    `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
-4. **Book Structure (SS-A43)** — create a **BookNode** (MCP `create_book` / CLI `--create-book`)
-   + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
-   outline) = the book node's `seed` text.
 5. **Synopsis Coherence Gate — mandatory, prose-free** — before any structural blueprint or prose
    is generated, read the chapter-by-chapter synopsis/outline end-to-end (100 ft altitude —
    `story-synopsis.txt` / `NodeChapterSummaries`, or the authorial spine if chapter summaries don't
