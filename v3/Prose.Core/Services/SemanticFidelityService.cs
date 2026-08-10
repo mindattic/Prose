@@ -45,8 +45,22 @@ public class SemanticFidelityService
     public const double BibleAlignmentFloor = 0.42;
 
     /// <summary>Cosine similarity floor for intent alignment. Below this the beat's
-    /// prose no longer serves its stated Synopsis/purpose.</summary>
+    /// prose no longer serves its stated Synopsis/purpose. Necessary but not sufficient as of
+    /// 2026-08-10 — see the per-book outlier check in <see cref="AuditNodeAsync"/>.</summary>
     public const double IntentAlignmentFloor = 0.50;
+
+    /// <summary>Minimum beats-with-a-score sample size before trusting a per-book mean/stddev
+    /// for the intent-alignment outlier test. Below this, fall back to the absolute floor
+    /// alone — too few points to know whether a low score is this book's normal register or a
+    /// genuine anomaly.</summary>
+    public const int IntentOutlierMinSample = 15;
+
+    /// <summary>How many standard deviations below a book's own mean intent-alignment a beat
+    /// must fall to count as a genuine outlier, once <see cref="IntentOutlierMinSample"/> is
+    /// met. 1.5 flags roughly the bottom ~7% of a normal distribution — deliberately
+    /// conservative (few false negatives matter less here than the false-positive flood this
+    /// fix exists to stop).</summary>
+    public const double IntentOutlierZScore = 1.5;
 
     private readonly EmbeddingService embeddings;
     private readonly FindingsService findings;
@@ -210,6 +224,31 @@ public class SemanticFidelityService
         var violations = new List<FidelityViolation>();
         var evaluatedBeats = beats.Where(b => !string.IsNullOrWhiteSpace(b.Text)).ToList();
 
+        // Bug fixed 2026-08-10: IntentAlignmentFloor (0.50) is a fixed GLOBAL floor applied
+        // identically to every book regardless of that book's own prose register. Investigated
+        // live (BLST, [[project_semantic_drift_false_positive_2026_08_10]]): sampled 6 flagged
+        // findings across all three severity tiers (29%-50% similarity) and confirmed 6/6 are
+        // faithful, well-executed prose — a book written in a consistently terse, concrete
+        // register scores systematically low against its own abstract one-line synopses purely
+        // from vocabulary/register mismatch, independent of true fidelity. One sample (#8778, a
+        // long multi-paragraph beat) still only scored 50% (right at the floor) — ruling out
+        // "just exempt short beats" as the fix, since the effect isn't length-specific, it's
+        // register-specific to this book's whole style. No confirmed TRUE positive exists in the
+        // sample to calibrate a new absolute number against, so lowering the floor to some other
+        // guessed constant would repeat the same mistake with a different number.
+        //
+        // Fix: flag a beat only if it is BOTH below the absolute floor AND a statistical outlier
+        // within its OWN book's intent-alignment distribution (more than IntentOutlierZScore
+        // standard deviations below that book's own mean). A book whose style uniformly depresses
+        // the raw similarity score has a low mean and tight spread, so nothing in it reads as an
+        // outlier — exactly the desired behavior. A book where most beats align well but a few
+        // genuinely drifted ones score far below its own baseline still flags those, because they
+        // remain real outliers relative to a normal distribution for that book. Requires a
+        // minimum sample size (IntentOutlierMinSample) before applying the relative test at all —
+        // a handful of beats can't establish a meaningful distribution, so those fall back to the
+        // absolute floor alone (matching the prior, unconditional-floor behavior for small books).
+        var allIntentAlignsForOutlier = intentAlignmentById.Values.ToList();
+
         foreach (var b in evaluatedBeats)
         {
             var score       = b.Score;
@@ -241,8 +280,11 @@ public class SemanticFidelityService
                     b.Text?.Length > 200 ? b.Text[..200] : b.Text, fix);
             }
 
-            // Intent drift: prose no longer serves the beat's stated purpose.
-            if (intentAlign.HasValue && intentAlign.Value < IntentAlignmentFloor)
+            // Intent drift: prose no longer serves the beat's stated purpose. Below the
+            // absolute floor is necessary but no longer sufficient — see IsIntentOutlier's own
+            // doc comment and the 2026-08-10 fix note above.
+            if (intentAlign.HasValue && intentAlign.Value < IntentAlignmentFloor
+                && IsIntentOutlier(intentAlign.Value, allIntentAlignsForOutlier))
             {
                 var sev = intentAlign.Value < 0.35 ? FindingSeverity.High
                         : intentAlign.Value < 0.43 ? FindingSeverity.Medium
@@ -388,6 +430,41 @@ public class SemanticFidelityService
         {
             log.LogWarning(ex, "SemanticFidelity: failed to emit finding for {FilePath}", filePath);
         }
+    }
+
+    /// <summary>
+    /// Whether <paramref name="intentAlign"/> is a genuine statistical anomaly within its own
+    /// book's intent-alignment distribution (<paramref name="allIntentAligns"/>), rather than
+    /// just being below the fixed <see cref="IntentAlignmentFloor"/>.
+    ///
+    /// Fixed 2026-08-10: the floor alone flagged 213/339 beats in BLST — confirmed 6/6 sampled
+    /// findings (across all three severity tiers, 29%-50% similarity) as faithful, well-executed
+    /// prose. A book written in a consistently terse, concrete register scores systematically
+    /// low against its own abstract one-line synopses purely from vocabulary/register mismatch,
+    /// independent of true fidelity — and one long multi-paragraph sample still only scored 50%,
+    /// ruling out "just exempt short beats" as a fix. With no confirmed true positive in the
+    /// sample to calibrate a replacement absolute number against, lowering the floor to a
+    /// different constant would just repeat the mistake. Instead: flag only beats that are more
+    /// than <see cref="IntentOutlierZScore"/> standard deviations below their OWN book's mean.
+    ///
+    ///   - Sample smaller than <see cref="IntentOutlierMinSample"/>: not enough points for a
+    ///     meaningful distribution — fall back to the floor alone (true), matching prior behavior.
+    ///   - Stddev ~0 (every beat scores near-identically, e.g. BLST): nothing is a real per-beat
+    ///     anomaly — a uniformly low mean IS the book's register, not N independent defects
+    ///     (false).
+    ///   - Real spread exists: flag only beats genuinely far below this book's own mean, not an
+    ///     absolute number blind to the book's style.
+    /// </summary>
+    internal static bool IsIntentOutlier(double intentAlign, IReadOnlyList<double> allIntentAligns)
+    {
+        if (allIntentAligns.Count < IntentOutlierMinSample) return true;
+
+        var mean = allIntentAligns.Average();
+        var variance = allIntentAligns.Select(x => (x - mean) * (x - mean)).Average();
+        var stdDev = Math.Sqrt(variance);
+
+        if (stdDev < 1e-9) return false;
+        return intentAlign < mean - IntentOutlierZScore * stdDev;
     }
 
     private static string? FirstNonEmpty(params string?[] candidates)
