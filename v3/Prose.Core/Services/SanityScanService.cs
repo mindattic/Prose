@@ -27,7 +27,31 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
     static readonly HashSet<string> Whitelist = new(StringComparer.Ordinal)
     {
         "GLMZ", "QCE", "QUANTA", "PEREGRINE", "E.L.F", "ELF", "BCI",
-        "AI", "HVAC", "VTOL", "ARGUS", "UV", "PD", "NGRA"
+        "AI", "HVAC", "VTOL", "ARGUS", "UV", "PD", "NGRA",
+        // 2026-08-09: standard citation/scholarly abbreviations from real academic
+        // publishing — NONFICTION's Gospel books cite real sources this way, and none of
+        // these could plausibly ever BE a leaked internal dev code (they're established,
+        // external, real-world abbreviations, not invented GLMZ/SCRY-style short codes).
+        // Found via a corpus-wide sanity-scan sweep: MATTHEW alone had 15+ of these firing
+        // as "possible placeholder or leaked code" false positives.
+        "BCE", "CE", "ICC", "SBL", "JBL", "JSOT", "BDAG", "JPS", "UBS", "IVP",
+        "RINAP", "SCM", "UNESCO", "IAA", "BYU",
+        // Common Gospel/biblical person names that are ALSO, coincidentally, sibling
+        // NONFICTION book NodeCodes (MATTHEW/MARK/LUKE/JOHN — each Gospel is its own
+        // book, named after its traditional author). "John was baptized" or "see Mark's
+        // account" is ordinary nonfiction narration, not a leak of another book's project
+        // code — the risk of a genuine cross-book leak using exactly these 4 common
+        // English names is effectively nil, unlike an invented abbreviation like
+        // "BCODA"/"NRST" that has no meaning outside this project.
+        "JOHN", "MARK", "LUKE", "MATTHEW",
+        // Genuine content, found via the same sweep: "LEVI" is Matthew's other biblical
+        // name (Mark 2:14); "DNA" is a universal, non-jargon term; "PONTIF"/"MAXIM" are a
+        // real, deliberately-quoted historical Roman coin legend ("PONTIF MAXIM" = Pontifex
+        // Maximus, abbreviated exactly the way period Roman numismatics did) — 2 words is
+        // below IsInsideCapsRun's minNeighborCapsWords=2 threshold for recognizing an
+        // embedded inscription/quote, so this narrow whitelist entry covers the gap without
+        // loosening that general heuristic.
+        "LEVI", "DNA", "PONTIF", "MAXIM"
     };
 
     // ── Built-in alias codes (supplement codes pulled from DB) ────────────────
@@ -221,6 +245,7 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
                 if (allCodes.Contains(token)) continue;
                 if (knownTokens.Contains(token)) continue;
                 if (IsInsideCapsRun(text, m.Index, m.Length)) continue;
+                if (IsRomanNumeral(token)) continue;
 
                 if (seenUnknownTokens.TryGetValue(token, out var existing))
                     seenUnknownTokens[token] = (existing.BeatNumber, existing.Count + 1);
@@ -314,6 +339,20 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         var m = Regex.Match(text, $@"\b{Regex.Escape(code)}\b");
         return m.Success ? Snippet(text, m.Index, 80) : null;
     }
+
+    /// <summary>
+    /// True for a valid Roman numeral (I, III, VIII, XII, XIV, XVIII, XIX, XXIV, XXVIII...).
+    /// Citation-heavy nonfiction (chapter/verse/volume numbering, footnote markers) writes
+    /// these constantly, and they match the same [A-Z]{3,6} shape Check B looks for — found
+    /// via a corpus-wide sanity-scan sweep: MATTHEW alone had "III"/"XVIII"/"XII"/"XIV"/
+    /// "XIX"/"XXVIII"/"XXIV"/"VIII" all firing as "possible placeholder or leaked code".
+    /// Validates real numeral grammar (not just "every letter is in {I,V,X,L,C,D,M}") so an
+    /// ordinary word that happens to draw only from those seven letters — e.g. "CIVIC" — is
+    /// correctly left for the normal acronym check rather than silently exempted.
+    /// </summary>
+    internal static bool IsRomanNumeral(string token) =>
+        Regex.IsMatch(token, @"^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$")
+        && token.Length > 0;
 
     static string Snippet(string text, int matchIndex, int radius)
     {
