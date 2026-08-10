@@ -41,8 +41,9 @@ public sealed class BeatChecklistGateService(
     ILogger<BeatChecklistGateService> log)
 {
     private const string FindingSummaryPrefix = "CHECKLIST";
-    /// <summary>Bump when the evaluation prompt changes shape — invalidates the cache.</summary>
-    private const string PromptVersion = "v1";
+    /// <summary>Bump when the evaluation prompt changes shape — invalidates the cache.
+    /// v2 (2026-08-10): added the POV voice-register guard — see <see cref="BuildPovVoiceGuidance"/>.</summary>
+    private const string PromptVersion = "v2";
 
     /// <summary>Parses CRAFT.md §8's numbered "N. **Title** — description" list format.
     /// Ported from CraftRuleAuditService (2026-08-08 consolidation) — this is now the sole
@@ -115,6 +116,7 @@ public sealed class BeatChecklistGateService(
             .Where(r => r.NodeId == nodeId).ToDictionaryAsync(r => r.BeatId, ct);
 
         var verdicts = new List<BeatVerdict>();
+        var povVoiceCache = new Dictionary<Guid, string?>();
         int evaluated = 0, fromCache = 0;
         foreach (var beat in beats)
         {
@@ -130,7 +132,8 @@ public sealed class BeatChecklistGateService(
                 continue;
             }
 
-            var (verdict, parseFailed) = await EvaluateBeatAsync(beat.Id, beat.Number, beat.Text, donts, moves, ct);
+            var povVoiceHint = await GetPovVoiceHintAsync(db, beat.Id, povVoiceCache, ct);
+            var (verdict, parseFailed) = await EvaluateBeatAsync(beat.Id, beat.Number, beat.Text, donts, moves, povVoiceHint, ct);
             evaluated++;
 
             // A truncated/non-JSON response is a degraded placeholder for THIS run only — caching
@@ -421,12 +424,65 @@ public sealed class BeatChecklistGateService(
 
     // ── per-beat evaluation ────────────────────────────────────────────────────────
 
+    /// <summary>
+    /// Looks up this beat's POV character (<c>BeatEntityPresence.PresenceType = 'pov'</c>, the
+    /// same bible POV-map row <see cref="ProseWriterRouter"/> pins dominant per SS-A46) and
+    /// returns a short "Role — SpeechVocabulary" hint for the DON'T-list evaluator, or null if
+    /// the beat has no recorded POV or that character has no on-file vocabulary.
+    ///
+    /// Found while triaging IxS's 445 CraftChecklist findings (2026-08-10): the large majority
+    /// of its "Cognitive-architecture tics" hits were flagging Rook's filing/ledger/logistics
+    /// framing of thought — which is not an AI tic, it is her established, hand-authored
+    /// <c>Characters.SpeechVocabulary</c> ("Nouns of logistics and terrain — seams, gaps, load,
+    /// weight, records... She talks about people the way she talks about buildings"), directly
+    /// motivated by her Description ("former intelligence analyst... freelance extraction
+    /// planning"). The checklist's LLM evaluator had no way to see that and was judging every
+    /// beat against a universal rule with no Register-layer context — the same class of gap
+    /// SS-A46 already solved for generation (Register > BookBible > Universe > Base) but that
+    /// was never extended to this verification path. Small per-beat cache keyed on POV entity
+    /// id, since most beats in a run share the same narrator.
+    /// </summary>
+    private static async Task<string?> GetPovVoiceHintAsync(
+        ProseDbContext db, Guid beatId, Dictionary<Guid, string?> cache, CancellationToken ct)
+    {
+        var povIds = await db.Database
+            .SqlQuery<Guid>($"SELECT TOP 1 EntityId FROM BeatEntityPresence WHERE BeatId = {beatId} AND PresenceType = 'pov'")
+            .ToListAsync(ct);
+        if (povIds.Count == 0) return null;
+        var povId = povIds[0];
+
+        if (cache.TryGetValue(povId, out var cached)) return cached;
+
+        var character = await db.Characters.AsNoTracking()
+            .Where(c => c.Id == povId)
+            .Select(c => new { c.Role, c.SpeechVocabulary })
+            .FirstOrDefaultAsync(ct);
+        var hint = character != null && !string.IsNullOrWhiteSpace(character.SpeechVocabulary)
+            ? $"{character.Role} — {character.SpeechVocabulary}"
+            : null;
+        cache[povId] = hint;
+        return hint;
+    }
+
+    /// <summary>Pure so it can be unit-tested without a DB or LLM: the guidance block appended
+    /// to Part A when this beat has a known POV voice, or empty when it doesn't.</summary>
+    internal static string BuildPovVoiceGuidance(string? povVoiceHint) =>
+        string.IsNullOrWhiteSpace(povVoiceHint) ? "" : $"""
+
+            This beat's POV character has an established voice on file: {povVoiceHint}
+            Phrasing that authentically reflects THIS character's own on-file vocabulary or
+            cognitive style is NOT a violation, even if it resembles a banned mannerism in
+            isolation — only flag phrasing that goes beyond their established register (a lazy
+            repeated tic, not their consistent characterization).
+            """;
+
     /// <summary>Returns the verdict plus whether the LLM response failed to parse (e.g. truncated
     /// JSON). Callers must NOT persist a failed-parse verdict to the cache — it is a degraded
     /// all-pass placeholder for this run only, not a real evaluation of the beat.</summary>
     private async Task<(BeatVerdict Verdict, bool ParseFailed)> EvaluateBeatAsync(
         Guid beatId, int beatNumber, string text,
-        List<(string Key, string Title, string Desc)> donts, List<DelightMove> moves, CancellationToken ct)
+        List<(string Key, string Title, string Desc)> donts, List<DelightMove> moves,
+        string? povVoiceHint, CancellationToken ct)
     {
         var sb = new StringBuilder();
         sb.AppendLine("""
@@ -436,6 +492,8 @@ public sealed class BeatChecklistGateService(
             PART A — BANNED MANNERISMS (the DON'Ts). For each, does this beat contain even
             one clear instance? Only flag CLEAR instances in THIS beat's text.
             """);
+        sb.Append(BuildPovVoiceGuidance(povVoiceHint));
+        sb.AppendLine();
         foreach (var d in donts) sb.AppendLine($"- {d.Key}: {d.Title} — {d.Desc}");
         sb.AppendLine();
         sb.AppendLine("""
