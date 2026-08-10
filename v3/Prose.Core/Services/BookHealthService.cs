@@ -73,6 +73,7 @@ public class BookHealthService(
     ThemeCoherenceService themeCoherence,
     BehavioralInvariantEnforcer behaviorEnforcer,
     BeatDuplicateService beatDuplicate,
+    SanityScanService sanityScan,
     ILogger<BookHealthService> log)
 {
     // ── SII formula constants ───────────────────────────────────────────────────────
@@ -112,6 +113,7 @@ public class BookHealthService(
         await RunCheckAsync(checks, "coordinate", () => BeatCoordinationAsync(slug, ct));
         await RunCheckAsync(checks, "voice-consistency", () => VoiceConsistencyAsync(nodeId, slug, ct));
         await RunCheckAsync(checks, "duplicate-beats", async () => { await beatDuplicate.CheckNodeAsync(nodeId, ct: ct); });
+        await RunCheckAsync(checks, "sanity-scan", () => SanityScanAsync(nodeId, slug, ct));
 
         // ── DEEP tier — one LLM call per check per node ─────────────────────────────
         if (tier is BookHealthTier.Deep or BookHealthTier.Full)
@@ -311,6 +313,37 @@ public class BookHealthService(
             var sev = x.Severity switch { "BLOCKER" => FindingSeverity.High, "MODERATE" => FindingSeverity.Medium, _ => FindingSeverity.Low };
             findingsSvc.Upsert($"node:{slug}/beat:{x.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, sev,
                 $"VERIFY [{x.CheckType}] beat #{x.Number}: {x.Result} — {x.Evidence}", snippet: null, suggestedFix: null);
+        }
+    }
+
+    /// <summary>SanityScanService catches deterministic, no-LLM prose defects (internal
+    /// node-code leaks like "NRST"/"MxG" appearing in a reader's actual book, undefined
+    /// all-caps acronyms, mojibake, below-length-floor) but — despite its own header comment
+    /// literally saying "fast enough to run ... as a pre-publish gate" — was wired to NOTHING:
+    /// no Findings, not this nightly pass, not the pre-export gate. It only ever ran when a
+    /// human remembered to type `--sanity-scan` and read the console output by hand. Found
+    /// 2026-08-09 immediately after manually catching two real code leaks (NRST in Crimson &amp;
+    /// Chrome, MxG in Iron &amp; Silk) this exact way — fixing those two beats does nothing to
+    /// stop the same class of leak from shipping unnoticed in the next beat of any book. This
+    /// wrapper is the actual fix: it makes the checker part of the automatic pipeline instead
+    /// of a manual, easy-to-forget command.</summary>
+    private async Task SanityScanAsync(Guid nodeId, string slug, CancellationToken ct)
+    {
+        var report = await sanityScan.ScanAsync(nodeId, ct);
+
+        // filePath stays a plain "node:{slug}" (matching TimelineCheckAsync/BeatVerificationAsync
+        // just above) — Upsert's own dedup key is filePath+category+summary combined, and summary
+        // already encodes Kind+beat#+message, which is enough uniqueness on its own. (NOT
+        // string.GetHashCode() of the message here: .NET randomizes string hash codes per process
+        // by default, which would mint a fresh "unique" dedup key — and a fresh Findings row —
+        // every single run instead of ever actually deduping.)
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SANITY ");
+        foreach (var f in report.Findings)
+        {
+            var sev = f.Severity == "block" ? FindingSeverity.High : FindingSeverity.Medium;
+            var where = f.BeatNumber.HasValue ? $" (beat #{f.BeatNumber})" : "";
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.ProseHealth, sev,
+                $"SANITY [{f.Kind}]{where}: {f.Message}", snippet: f.Snippet, suggestedFix: null);
         }
     }
 

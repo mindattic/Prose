@@ -2,9 +2,9 @@
   "nodeCode": "CXC",
   "slug": "marrow-chrome-019f0968",
   "title": "Crimson \u0026 Chrome",
-  "generatedAtUtc": "2026-08-01 14:51:36Z",
+  "generatedAtUtc": "2026-08-10 01:02:20Z",
   "totalBeats": 193,
-  "covered": 0,
+  "covered": 14,
   "chapterGranular": false,
   "bookScope": {
     "TemporalScheme": "linear",
@@ -13,10 +13,10 @@
     "EndingStyle": "quiet",
     "HasSubplot": true,
     "Granularity": "beat",
-    "HasBlueprint": true
+    "HasBlueprint": true,
+    "ConstructionCapacity": 14
   },
   "flagCounts": {
-    "MISSING_MEANING": 193,
     "UNSCORED": 193,
     "NO_CONSTRUCTION": 179
   },
@@ -27,16 +27,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Mrs. Chen\u0027s easy familiarity with Soraya, grounding the reunion in a lived-in, watchful world before the plot intrudes.",
       "EscalationTarget": "2",
       "EventType": "discovery",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 216,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4d-7a38-bcf6-271590487609",
@@ -44,16 +44,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Rook through physical detail\u2014her ritual counting, her weapon, her camouflage\u2014establishing her as a controlled, dangerous professional.",
       "EscalationTarget": "3",
       "EventType": "assembly",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 504,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-7bb6-877f-ccd8ad9e1122",
@@ -61,16 +61,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s operating philosophy, that instinct and pattern matter before hard facts, setting up how she\u0027ll process the coming job.",
       "EscalationTarget": "4",
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 63,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-78e5-9bd4-f03dcca4a6db",
@@ -78,16 +78,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the inciting job and reveals the moral stakes\u2014survivors abandoned by the system are being hunted\u2014hooking Rook\u0027s conscience.",
       "EscalationTarget": "5",
       "EventType": "confrontation",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 322,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-747a-95ec-626a5b2ce7d3",
@@ -95,16 +95,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks the moment the news lands emotionally, signaling Rook\u0027s ritual calm has been broken by personal significance.",
       "EscalationTarget": "7",
       "EventType": "negotiation",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 26,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-7f18-8b42-2375ed6632dc",
@@ -112,16 +112,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Rook\u0027s buried history and unhealed guilt, reframing the new job as a chance to confront an old wound.",
       "EscalationTarget": "7",
       "EventType": "confession",
       "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 390,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-761a-8d97-4031fb867e68",
@@ -129,16 +129,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Shows Rook committing to the job instantly, establishing her defining reflex of loyalty over deliberation.",
       "EscalationTarget": "8",
       "EventType": "revelation",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 16,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-79b0-9c1c-b9e20350f25e",
@@ -146,16 +146,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the code Rook lives by\u2014trust first, then rally the team\u2014while naming the crew who will anchor the coming action.",
       "EscalationTarget": "8",
       "EventType": "betrayal",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 330,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-7422-b7e5-37abfea40f96",
@@ -163,16 +163,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens Rook\u0027s backstory by introducing the mentor whose lesson shaped her ethics, explaining why this job is personal atonement.",
       "EscalationTarget": "6",
       "EventType": "planning",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 319,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-7c5c-bf06-6b203ba787a8",
@@ -180,16 +180,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the scene by showing Rook resume her grounding ritual, signaling resolve restored and momentum toward the job ahead.",
       "EscalationTarget": "8",
       "EventType": "infiltration",
       "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 49,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-7594-b326-405d74af301c",
@@ -197,16 +197,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s unconditional loyalty to Soraya, committing before knowing the stakes to define the strength of their bond.",
       "EscalationTarget": "9",
       "EventType": "ambush",
       "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 174,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-77dd-90c4-eca268cbfb7e",
@@ -214,16 +214,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the roll call structure and Boiler as the first ally, grounding the team\u0027s dynamics in predictable character logic.",
       "EscalationTarget": "10",
       "EventType": "confrontation",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 127,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-7238-9dac-ec573a013558",
@@ -231,16 +231,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Boiler\u0027s defining trait through a visceral flashback, establishing his life-saving instincts as proof of the crew\u0027s earned trust.",
       "EscalationTarget": "9",
       "EventType": "sabotage",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 562,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc4f-7a08-8b67-05baa1724b36",
@@ -248,16 +248,16 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Grounds the scene in the story\u0027s technological world by establishing the Pulse rail as an ambient, ominous presence.",
       "EscalationTarget": "7",
       "EventType": "repair",
       "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 205,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED"
       ],
-      "Covered": false
+      "Covered": true
     },
     {
       "BeatId": "019f9ff9-cc50-7ca9-a117-1d61a3399a63",
@@ -265,10 +265,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Scout and her distinctive method of operating, setting up her independence and distrust of easy paths.",
       "BeatTags": [],
       "ProseLength": 117,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -280,10 +280,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Deepens Scout\u0027s characterization by revealing the tactical wisdom behind her crawler\u0027s disarming name and her walking method.",
       "BeatTags": [],
       "ProseLength": 579,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -295,10 +295,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Lace and Vox together, establishing contrasting personality types through Rook\u0027s confident predictions of their behavior.",
       "BeatTags": [],
       "ProseLength": 210,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -310,10 +310,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Validates Lace\u0027s introduced trait with a concrete past success, reinforcing the crew\u0027s established competence.",
       "BeatTags": [],
       "ProseLength": 154,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -325,10 +325,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Pays off Vox\u0027s introduction with an affectionate, humor-tinged flashback that cements her reluctant loyalty as a running truth.",
       "BeatTags": [],
       "ProseLength": 359,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -340,10 +340,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Closes the roll call by confirming the full team assembled, marking the turn from setup into the mission ahead.",
       "BeatTags": [],
       "ProseLength": 57,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -355,10 +355,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Signals a shift into consequential disclosure, priming the reader to weigh what follows more heavily.",
       "BeatTags": [],
       "ProseLength": 77,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -370,10 +370,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces Stave as an estranged asset and reveals Rook\u0027s fraught personal history with being the one people call in crisis.",
       "BeatTags": [],
       "ProseLength": 434,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -385,10 +385,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks Soraya\u0027s internal turn from recruiter to confessor, foreshadowing an emotional reveal beneath the mission talk.",
       "BeatTags": [],
       "ProseLength": 200,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -400,10 +400,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Soraya\u0027s true motive for approaching Rook first, deepening the personal stakes beneath the job offer.",
       "BeatTags": [],
       "ProseLength": 96,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -415,10 +415,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s perceptiveness and Soraya\u0027s guardedness, framing their history as one of careful emotional accounting.",
       "BeatTags": [],
       "ProseLength": 157,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -430,10 +430,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Forces a distinction between obligation and desire, escalating the emotional test underlying the mission\u0027s recruitment.",
       "BeatTags": [],
       "ProseLength": 613,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -445,10 +445,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Uses a quiet physical beat to let the emotional weight of the confrontation breathe before the confession lands.",
       "BeatTags": [],
       "ProseLength": 45,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -460,10 +460,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers Soraya\u0027s confession of past concealment, recasting her earlier caution as a moral failure she\u0027s finally owning.",
       "BeatTags": [],
       "ProseLength": 316,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -475,10 +475,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook\u0027s blunt reframing exposes Soraya\u0027s self-protection, turning the confession into an indictment that raises the emotional stakes.",
       "BeatTags": [],
       "ProseLength": 82,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -490,10 +490,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Soraya\u0027s silent acceptance of the accusation confirms her guilt, cementing the rupture of trust between them.",
       "BeatTags": [],
       "ProseLength": 37,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -505,10 +505,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Soraya\u0027s honesty about the risk cements the trust that will bind Rook to the coming mission despite its dangers.",
       "BeatTags": [],
       "ProseLength": 237,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -520,10 +520,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The Pulse\u0027s steady rhythm underscores the story\u0027s ticking backdrop as Rook commits to act.",
       "BeatTags": [],
       "ProseLength": 136,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -535,10 +535,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The two women\u0027s shared admission of delay seals their alliance and sends them back into the world changed.",
       "BeatTags": [],
-      "ProseLength": 463,
+      "ProseLength": 627,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -550,10 +550,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "A time-skip signals the plan is now in motion, introducing the next crucial player.",
       "BeatTags": [],
       "ProseLength": 56,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -565,10 +565,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Stave\u0027s haunted arrival foreshadows that whatever he\u0027s brought has cost him dearly and morally compromised him.",
       "BeatTags": [],
       "ProseLength": 383,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -580,10 +580,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The manifest\u0027s deliberate placement establishes the coming revelation as dangerous, forbidden knowledge.",
       "BeatTags": [],
       "ProseLength": 307,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -595,10 +595,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Soraya\u0027s silent presence signals unresolved tension between her and Stave that colors the exchange.",
       "BeatTags": [],
       "ProseLength": 61,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -610,10 +610,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Stave\u0027s transactional framing reveals his self-justifying guilt and sets up Rook\u0027s demand for accountability over trust.",
       "BeatTags": [],
-      "ProseLength": 351,
+      "ProseLength": 356,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -625,10 +625,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook\u0027s practiced skepticism models how she\u0027ll uncover the truth buried beneath official lies.",
       "BeatTags": [],
       "ProseLength": 475,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -640,10 +640,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The discovery of the funneled names turns suspicion into concrete evidence of a hidden conspiracy.",
       "BeatTags": [],
       "ProseLength": 386,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -655,10 +655,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Plants a mundane-seeming detail that will pivot into evidence of corporate atrocity, seeding the chapter\u0027s central discovery.",
       "BeatTags": [],
       "ProseLength": 135,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -670,10 +670,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals Rook\u0027s personal history with the code, transforming an abstract clue into a wound that implicates her own past.",
       "BeatTags": [],
       "ProseLength": 347,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -685,10 +685,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Crystallizes the story\u0027s moral horror by naming the bureaucratic trick that reclassifies victims as cargo.",
       "BeatTags": [],
       "ProseLength": 193,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -700,10 +700,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Connects the dots to expose Helix\u0027s hidden pipeline into the Marrow, escalating the stakes from mystery to conspiracy.",
       "BeatTags": [],
       "ProseLength": 366,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -715,10 +715,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Delivers the emotional gut-punch of the barge\u0027s true purpose, framing the missing as deceived rather than merely lost.",
       "BeatTags": [],
       "ProseLength": 637,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -730,10 +730,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Introduces the survivor whose testimony will anchor the horror in a living witness.",
       "BeatTags": [],
       "ProseLength": 35,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -745,10 +745,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Uses a small domestic gesture to establish how long the woman has been hidden and cared for, deepening reader empathy.",
       "BeatTags": [],
       "ProseLength": 532,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -760,10 +760,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Marks the shift from verbal account to physical proof as the woman produces evidence.",
       "BeatTags": [],
       "ProseLength": 49,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -775,10 +775,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Gives the abstract death toll a human face, converting numbers into individuals the reader must mourn.",
       "BeatTags": [],
       "ProseLength": 60,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -790,10 +790,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Builds dramatic irony and grief by dwelling on the victims\u0027 innocence in the moment just before their fate closed in.",
       "BeatTags": [],
       "ProseLength": 443,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -805,10 +805,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook\u0027s hesitation to touch the photo signals the personal cost of confronting a past she\u0027s tried to bury.",
       "BeatTags": [],
       "ProseLength": 118,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -820,10 +820,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sefi establishes the story\u0027s central atrocity and names the institutional erasure that will drive the plot\u0027s stakes.",
       "BeatTags": [],
       "ProseLength": 462,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -835,10 +835,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sefi forces confrontation by placing the evidence physically between them, refusing to let Rook look away.",
       "BeatTags": [],
       "ProseLength": 54,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -850,10 +850,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sefi turns the pressure onto Rook by revealing she knows her hidden guilt, demanding action instead of avoidance.",
       "BeatTags": [],
       "ProseLength": 246,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -865,10 +865,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The silent exchange between Rook and Soraya reveals long-held complicity and grief, deepening their bond through shared unspoken guilt.",
       "BeatTags": [],
       "ProseLength": 517,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -880,10 +880,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook commits to action, turning private reckoning into investigation and establishing the story\u0027s next concrete objective.",
       "BeatTags": [],
       "ProseLength": 203,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -895,10 +895,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook reveals the conspiracy\u0027s true shape, reframing the crew from victims of circumstance into unwitting instruments of the villains\u0027 scheme.",
       "BeatTags": [],
       "ProseLength": 901,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -910,10 +910,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sefi\u0027s physical acknowledgment of Rook\u0027s coming confession establishes trust forming between two survivors bound by parallel trauma.",
       "BeatTags": [],
       "ProseLength": 200,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -925,10 +925,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook confesses her own buried atrocity, paralleling Sefi\u0027s story to establish her guilt as the emotional core of her arc.",
       "BeatTags": [],
       "ProseLength": 483,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -940,10 +940,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The stillness after the confession lets the weight of Rook\u0027s admission settle, marking a turning point the group can\u0027t unsay.",
       "BeatTags": [],
       "ProseLength": 165,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -955,10 +955,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook grounds her past complicity in emotional truth rather than technique, deepening her culpability beyond professional failure.",
       "BeatTags": [],
       "ProseLength": 293,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -970,10 +970,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Soraya\u0027s controlled stillness signals she is bracing to confront a painful truth she\u0027s kept buried.",
       "BeatTags": [],
       "ProseLength": 191,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -985,10 +985,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Soraya names her own complicity in being deceived, turning blame outward toward Rook while owning her desire to believe.",
       "BeatTags": [],
       "ProseLength": 410,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1000,10 +1000,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sefi\u0027s practiced composure establishes her hard-won resilience as a survivor, foreshadowing her resolve to act.",
       "BeatTags": [],
       "ProseLength": 109,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1015,10 +1015,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sefi reframes shared trauma as expertise, asserting her right to participate rather than be protected.",
       "BeatTags": [],
       "ProseLength": 86,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1030,10 +1030,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Sefi\u0027s urgency mirrors Rook\u0027s own drive, establishing kinship between them through shared impatience for action.",
       "BeatTags": [],
       "ProseLength": 91,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1045,10 +1045,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook\u0027s small physical action signals resolve settling into her body, marking her acceptance of the mission ahead.",
       "BeatTags": [],
       "ProseLength": 39,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1060,10 +1060,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Goldberg\u0027s unprecedented personal appearance signals a break from his usual detachment, raising the stakes of his confession.",
       "BeatTags": [],
       "ProseLength": 343,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1075,10 +1075,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "The suspended silence before Goldberg speaks builds dread and primes the reader for a confession of real weight.",
       "BeatTags": [],
       "ProseLength": 790,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1090,10 +1090,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Goldberg confesses his complicity in burying a victim\u0027s identity, revealing the bureaucratic machinery behind the atrocity and deepening the story\u0027s moral reckoning.",
       "BeatTags": [],
       "ProseLength": 664,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1105,10 +1105,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Rook withholds a response to force the emotional weight of the confession to remain unresolved, heightening tension.",
       "BeatTags": [],
       "ProseLength": 18,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1120,10 +1120,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s deliberate refusal to offer comfort, revealing her hard-won principle that mercy after confession is a cost the guilty should pay, not escape.",
       "BeatTags": [],
       "ProseLength": 475,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1135,10 +1135,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Reveals the visitor\u0027s transactional mindset while drawing a parallel to Rook\u0027s own ruthless efficiency, establishing them as mirrored operators.",
       "BeatTags": [],
       "ProseLength": 215,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1150,10 +1150,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Turns the scene as Rook chooses to weaponize the moment rather than soften it, sealing a transactional alliance built on unpaid debts.",
       "BeatTags": [],
       "ProseLength": 855,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1165,10 +1165,10 @@
       "Chapter": "Chapter 1 \u2014 The Reunion",
       "ChapterIndex": 0,
       "Act": 0,
+      "Meaning": "Seals the alliance with a near-touch that dramatizes intimacy withheld, establishing the precise emotional distance the partnership will run on.",
       "BeatTags": [],
       "ProseLength": 607,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1180,10 +1180,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Sefi\u0027s cybernetic modification as documented proof meant to preempt disbelief, establishing her credibility before a harder truth.",
       "BeatTags": [],
       "ProseLength": 414,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1195,10 +1195,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the horror by having Sefi describe the processing facility\u0027s sensory wrongness, establishing the reader\u0027s dread of what \u0027Class V\u0027 truly means.",
       "BeatTags": [],
       "ProseLength": 662,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1210,10 +1210,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "A beat of hesitation signals the emotional cost of what Sefi is about to reveal, building anticipation.",
       "BeatTags": [],
       "ProseLength": 65,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1225,10 +1225,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens the horror through the detail of well-maintained doors, revealing the facility\u0027s cold efficiency as more chilling than neglect would be.",
       "BeatTags": [],
       "ProseLength": 511,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1240,10 +1240,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Delivers the story\u0027s central atrocity by revealing that victims are commodified rather than killed, reframing the stakes as industrialized dehumanization.",
       "BeatTags": [],
       "ProseLength": 563,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1255,10 +1255,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s silence signals the weight of what she\u0027s just heard has momentarily overwhelmed her usual composure.",
       "BeatTags": [],
       "ProseLength": 19,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1270,10 +1270,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Rook\u0027s discipline of masking reaction even as Sefi\u0027s revelation lands as visceral, unwelcome truth.",
       "BeatTags": [],
       "ProseLength": 399,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1285,10 +1285,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Goldberg\u0027s suppressed horror beneath professional stillness, deepening his character as someone who has been holding something in for years.",
       "BeatTags": [],
       "ProseLength": 379,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1300,10 +1300,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows Soraya confronting the human reality behind her abstractions, marking the personal cost of theory made concrete.",
       "BeatTags": [],
       "ProseLength": 266,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1315,10 +1315,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Builds a suspended, collective silence that underscores the gravity of the revelation before anyone can respond to it.",
       "BeatTags": [],
       "ProseLength": 149,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1330,10 +1330,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook reframes the vault\u0027s purpose to sharpen the crew\u0027s moral stakes and cement her personal motive for the heist.",
       "BeatTags": [],
       "ProseLength": 638,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1345,10 +1345,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Goldberg\u0027s competence and trustworthiness through small procedural detail, building Rook\u0027s confidence in him as an ally.",
       "BeatTags": [],
       "ProseLength": 492,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1360,10 +1360,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the heist\u0027s difficulty by defining the Marrow as a uniquely self-contained target that resists their established tactics.",
       "BeatTags": [],
       "ProseLength": 394,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1375,10 +1375,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Goldberg raises the stakes by introducing an unavoidable, unnamed cost the crew must pay before pursuing the plan.",
       "BeatTags": [],
       "ProseLength": 65,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1390,10 +1390,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the abstract threat personal by confronting Vox with her own commodified image, exposing the heist\u0027s stakes as intimate rather than tactical.",
       "BeatTags": [],
       "ProseLength": 326,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1405,10 +1405,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Goldberg exposes the ticking threat by revealing Stave\u0027s compromise is the vulnerable thread that will unravel the whole operation.",
       "BeatTags": [],
       "ProseLength": 472,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1420,10 +1420,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook internalizes the mortal stakes, recognizing Helix will sacrifice the living asset over the recorded face.",
       "BeatTags": [],
       "ProseLength": 411,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1435,10 +1435,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The narration clarifies Helix\u0027s methodical threat model, framing the danger as predictable precisely because it\u0027s linear.",
       "BeatTags": [],
       "ProseLength": 337,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1450,10 +1450,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook commits to a plan, establishing her doctrine of redundancy and refusing to gamble a person on a single uncertain outcome.",
       "BeatTags": [],
       "ProseLength": 364,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1465,10 +1465,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Vox\u0027s quiet exhale signals her suppressed tension and tacit acknowledgment of the risk being negotiated on her behalf.",
       "BeatTags": [],
       "ProseLength": 68,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1480,10 +1480,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Vox\u0027s small, deliberate gesture of bringing coffee reveals her discomfort with confronting her own image while asserting quiet trust in Rook.",
       "BeatTags": [],
       "ProseLength": 458,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1495,10 +1495,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Vox deflects emotional weight onto a mundane complaint, masking her unease about the situation with dry understatement.",
       "BeatTags": [],
       "ProseLength": 86,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1510,10 +1510,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s acceptance of the bad coffee affirms an established ritual of loyalty between them despite the surrounding danger.",
       "BeatTags": [],
       "ProseLength": 60,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1525,10 +1525,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook reframes her authority as accountability, admitting her leadership carries the same risk of catastrophic error Goldberg faces.",
       "BeatTags": [],
       "ProseLength": 550,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1540,10 +1540,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook demands the cost of control, choosing to seize the dangerous thread herself rather than leave it to chance or enemies.",
       "BeatTags": [],
       "ProseLength": 127,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1555,10 +1555,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook enlists Vox for restrained standby readiness, establishing a role defined by held-back force rather than direct action.",
       "BeatTags": [],
       "ProseLength": 226,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1570,10 +1570,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms Vox\u0027s unspoken acceptance, reinforcing the trust and shorthand already built between him and Rook.",
       "BeatTags": [],
       "ProseLength": 59,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1585,10 +1585,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook formalizes Vox\u0027s assignment, establishing the plan\u0027s structure and his contingent, escalatory purpose.",
       "BeatTags": [],
       "ProseLength": 95,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1600,10 +1600,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "A quiet shared ritual seals the agreement, grounding the tactical decision in understated camaraderie.",
       "BeatTags": [],
       "ProseLength": 122,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1615,10 +1615,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Goldberg\u0027s visible hesitation signals a coming personal disclosure, cracking his composed professional facade.",
       "BeatTags": [],
       "ProseLength": 227,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1630,10 +1630,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Goldberg reveals he\u0027s withheld the crucial name all along, exposing his deeper complicity and hidden leverage in Helix\u0027s system.",
       "BeatTags": [],
       "ProseLength": 756,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1645,10 +1645,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The reveal of the full ledger dramatizes the scale of Helix\u0027s hidden victims, raising the story\u0027s moral stakes.",
       "BeatTags": [],
       "ProseLength": 389,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1660,10 +1660,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Goldberg identifies the mission\u0027s true target and reveals he alone holds the access needed to reach her, tightening dependency on him.",
       "BeatTags": [],
       "ProseLength": 688,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1675,10 +1675,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Goldberg reframes his own past complicity as unfinished business, asserting personal stakes in the mission beyond duty.",
       "BeatTags": [],
       "ProseLength": 427,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1690,10 +1690,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook registers Goldberg\u0027s self-implication as a rare act of honesty, marking a turning point in how the team defines its own culpability.",
       "BeatTags": [],
       "ProseLength": 342,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1705,10 +1705,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "A small, unexpected sound signals a shift in tension, marking Soraya as the next figure to disrupt the room\u0027s fragile stillness.",
       "BeatTags": [],
       "ProseLength": 313,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1720,10 +1720,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Soraya\u0027s deliberate, withheld reveal establishes her as someone who has been quietly waiting to act rather than reacting emotionally.",
       "BeatTags": [],
       "ProseLength": 204,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1735,10 +1735,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Soraya reveals years of secret preparation, recasting her guilt as foresight and deepening the moral weight of the harvest\u0027s origins.",
       "BeatTags": [],
       "ProseLength": 914,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1750,10 +1750,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "The physical handoff of the slate marks Soraya\u0027s transfer of power and responsibility to Rook, formalizing her cooperation.",
       "BeatTags": [],
       "ProseLength": 38,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1765,10 +1765,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Soraya proves her information is actionable and lifesaving, elevating her from suspect witness to indispensable ally in the rescue plan.",
       "BeatTags": [],
       "ProseLength": 713,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1780,10 +1780,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook privately acknowledges the sacrifice behind Soraya\u0027s work, marking her internal shift toward trusting and accepting her.",
       "BeatTags": [],
       "ProseLength": 301,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1795,10 +1795,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s terse command formally admits Soraya into the crew\u0027s inner circle, sealing her redemption with practical inclusion.",
       "BeatTags": [],
       "ProseLength": 41,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1810,10 +1810,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Soraya\u0027s visible relief pays off her arc of guilt, showing she has finally unburdened herself by choosing to help.",
       "BeatTags": [],
       "ProseLength": 82,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1825,10 +1825,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook\u0027s refusal to erase Goldberg\u0027s implication underscores her commitment to honesty over comfort as she pivots the team toward the mission.",
       "BeatTags": [],
       "ProseLength": 218,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1840,10 +1840,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Rook reframes the heist\u0027s goal from theft to rescue, escalating stakes by revealing living victims beneath the target and rallying the crew toward action.",
       "BeatTags": [],
       "ProseLength": 600,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1855,10 +1855,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Boiler\u0027s ritual focus and heightens tension by framing his calibration as a form of listening the reader is invited to trust.",
       "BeatTags": [],
       "ProseLength": 569,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1870,10 +1870,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the technical stakes and moral limit of Boiler\u0027s power, turning his tool into a source of dread by tying its cost directly to human bodies.",
       "BeatTags": [],
       "ProseLength": 1301,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1885,10 +1885,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Underscores Rook\u0027s trust in Boiler\u0027s honesty to sharpen the weight of the cost he\u0027s just named.",
       "BeatTags": [],
       "ProseLength": 205,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1900,10 +1900,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates the plan\u0027s danger by having Scout reveal that her usual safety net doesn\u0027t apply, forcing her to redefine her role.",
       "BeatTags": [],
       "ProseLength": 733,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1915,10 +1915,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Deepens Scout\u0027s characterization by reframing her request as a personal sacrifice of the anonymity that defines her identity and value.",
       "BeatTags": [],
       "ProseLength": 484,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1930,10 +1930,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Consolidates the mounting risks into a single ledger, showing Rook\u0027s command style and foreshadowing that the enemy may already be ahead of them.",
       "BeatTags": [],
-      "ProseLength": 549,
+      "ProseLength": 602,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1945,10 +1945,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the plan\u0027s abstract danger into a concrete deadline, establishing the ticking clock that will drive the heist\u0027s urgency.",
       "BeatTags": [],
       "ProseLength": 671,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1960,10 +1960,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Sets the physical stage for the infiltration, grounding the operation in tangible, lived-in detail that makes the danger feel institutional and ordinary.",
       "BeatTags": [],
       "ProseLength": 605,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1975,10 +1975,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Visually establishes the bond between Scout and Gerald as a physical, trusted proximity central to the operation\u0027s design.",
       "BeatTags": [],
       "ProseLength": 426,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -1990,10 +1990,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Scout\u0027s internal conflict, showing how being physically present threatens her identity and composure in ways combat never has.",
       "BeatTags": [],
       "ProseLength": 1060,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2005,10 +2005,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes the descent\u0027s oppressive scale through Scout\u0027s disciplined counting, priming dread ahead of the reveal to come.",
       "BeatTags": [],
       "ProseLength": 885,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2020,10 +2020,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns an abstract atrocity into a single human body, forcing Scout (and the reader) to confront the cost behind the numbers.",
       "BeatTags": [],
       "ProseLength": 621,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2035,10 +2035,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Crystallizes the story\u0027s moral stakes by collapsing statistic into face, escalating Scout\u0027s horror into personal reckoning.",
       "BeatTags": [],
       "ProseLength": 106,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2050,10 +2050,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Scout\u0027s discipline under horror, showing her processing dread as data rather than letting it control her.",
       "BeatTags": [],
       "ProseLength": 340,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2065,10 +2065,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Scout\u0027s private cost of mission focus, deepening her character by showing restraint as its own act of violence against herself.",
       "BeatTags": [],
       "ProseLength": 570,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2080,10 +2080,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates tension by putting Boiler\u0027s distant sabotage on a collision course with the vulnerable bodies Scout is walking among.",
       "BeatTags": [],
       "ProseLength": 673,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2095,10 +2095,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Marks the turn where the plan\u0027s consequences become physically real, launching the chapter\u0027s central crisis.",
       "BeatTags": [],
       "ProseLength": 20,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2110,10 +2110,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates horror by showing the sabotage\u0027s effect ripple through captive bodies, making abstract stakes viscerally present.",
       "BeatTags": [],
       "ProseLength": 766,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2125,10 +2125,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals a specific, off-the-books victim, sharpening the mission\u0027s moral urgency and hinting at a cover-up beyond what Scout was told.",
       "BeatTags": [],
       "ProseLength": 640,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2140,10 +2140,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the mission personal by making Palesa a conscious, terrified witness who now depends on Scout, raising immediate stakes for rescue.",
       "BeatTags": [],
       "ProseLength": 315,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2155,10 +2155,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Scout\u0027s high-stakes rescue in progress, grounding the covert extraction\u0027s cost in physical, human detail to raise tension before it breaks.",
       "BeatTags": [],
       "ProseLength": 484,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2170,10 +2170,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals Scout\u0027s moral reckoning with her own cold plan, turning an abstraction into a felt human weight she must now carry out.",
       "BeatTags": [],
-      "ProseLength": 492,
+      "ProseLength": 491,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2185,10 +2185,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Turns the beat sharply, signaling the plan\u0027s careful timing has already failed.",
       "BeatTags": [],
       "ProseLength": 35,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2200,10 +2200,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Escalates tension by introducing an unexpected, uncontrolled entry point that threatens the extraction.",
       "BeatTags": [],
       "ProseLength": 96,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2215,10 +2215,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Reveals the ambush is real and identifies the threat as Helix\u0027s own forces, confirming the operation has been compromised from within.",
       "BeatTags": [],
       "ProseLength": 803,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2230,10 +2230,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Establishes Scout\u0027s tactical acumen while stripping away every escape option, ratcheting up the trapped, high-stakes stakes of the standoff.",
       "BeatTags": [],
       "ProseLength": 1045,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2245,10 +2245,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Shows Scout and Gerald\u0027s practiced partnership under pressure while signaling the enemy is stalling for a reason not yet revealed.",
       "BeatTags": [],
       "ProseLength": 402,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2260,10 +2260,10 @@
       "Chapter": "Chapter 2 \u2014 The Mirror C",
       "ChapterIndex": 1,
       "Act": 0,
+      "Meaning": "Confirms the plan\u0027s timing failure was already baked in, reinforcing that the crew is caught exposed and the danger is now fully realized.",
       "BeatTags": [],
       "ProseLength": 230,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2275,10 +2275,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers the antagonist\u0027s reveal and raises the stakes by exposing Scout\u0027s hidden identity, turning the confrontation into a personal, targeted threat.",
       "BeatTags": [],
       "ProseLength": 802,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2290,10 +2290,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens the threat\u0027s cost by showing a second character\u0027s horror at Scout\u0027s exposure, underscoring how catastrophic the unmasking is for the whole crew\u0027s cover.",
       "BeatTags": [],
       "ProseLength": 565,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2305,10 +2305,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks Vox\u0027s irrevocable turn from hidden asset to exposed target, escalating the run by fusing her identity and her risk into one act.",
       "BeatTags": [],
       "ProseLength": 605,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2320,10 +2320,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Vox sacrifices her cover as a weaponized distraction, turning her own exposure into cover fire for Scout\u0027s escape.",
       "BeatTags": [],
       "ProseLength": 875,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2335,10 +2335,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Lace\u0027s intervention reveals hidden loyalty and preparedness, establishing a silent ally already positioned to protect Vox.",
       "BeatTags": [],
       "ProseLength": 296,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2350,10 +2350,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Stave\u0027s wordless reappearance pays off his earlier refusal, showing dormant loyalty answering the crisis without need for speech.",
       "BeatTags": [],
-      "ProseLength": 241,
+      "ProseLength": 349,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2365,10 +2365,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "The crew\u0027s convergence around Vox\u0027s sacrifice affirms found-family solidarity, turning individual risk into collective protection of the rescue.",
       "BeatTags": [],
       "ProseLength": 643,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2380,10 +2380,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Anneke\u0027s calm, personal approach establishes her as a formidable, controlled adversary who confronts rather than delegates conflict.",
       "BeatTags": [],
       "ProseLength": 697,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2395,10 +2395,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Rook names Anneke\u0027s moral compromise while defending her own, sharpening the ideological clash between institutional pricing and personal loyalty.",
       "BeatTags": [],
       "ProseLength": 668,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2410,10 +2410,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "A flicker of doubt in Anneke humanizes her, hinting her resolve may not be as absolute as her authority suggests.",
       "BeatTags": [],
       "ProseLength": 212,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2425,10 +2425,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Rook\u0027s drawn weapon escalates the standoff to its most lethal point, testing whether her control can hold against pure impulse.",
       "BeatTags": [],
       "ProseLength": 563,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2440,10 +2440,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Anneke\u0027s calm counter-threat reveals she still holds institutional power over life and death, turning the confrontation\u0027s tension toward irreversible consequence.",
       "BeatTags": [],
       "ProseLength": 556,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2455,10 +2455,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the story\u0027s kinetic urgency, prioritizing action over moral certainty in a life-or-death instant.",
       "BeatTags": [],
       "ProseLength": 44,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2470,10 +2470,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off the standoff\u0027s tension by having Rook choose disarmament over violence, subverting the expected gunfight climax.",
       "BeatTags": [],
       "ProseLength": 537,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2485,10 +2485,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks the physical cost of the confrontation with a shared wound, binding the two women\u0027s fates through matching injuries.",
       "BeatTags": [],
       "ProseLength": 432,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2500,10 +2500,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Confirms the interruption succeeded, foreclosing Anneke\u0027s intended betrayal before it can be spoken into existence.",
       "BeatTags": [],
       "ProseLength": 126,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2515,10 +2515,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the emotional aftermath by contrasting Rook\u0027s tangible loss with Anneke\u0027s deeper existential emptiness, humanizing the antagonist.",
       "BeatTags": [],
       "ProseLength": 305,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2530,10 +2530,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens the confrontation into psychological territory, exposing cracks in Anneke\u0027s composure and questioning her true intentions.",
       "BeatTags": [],
       "ProseLength": 570,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2545,10 +2545,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the conflict by revealing Anneke\u0027s hidden mercy, recontextualizing her as complicit in the rescue rather than purely its enemy.",
       "BeatTags": [],
       "ProseLength": 499,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2560,10 +2560,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Clarifies Anneke\u0027s ambiguous stance as neither defeat nor defiance, preserving her complexity as she clings to what remains hers.",
       "BeatTags": [],
       "ProseLength": 275,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2575,10 +2575,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Delivers Rook\u0027s parting judgment, framing the mission\u0027s success against Anneke\u0027s personal failure and leaving her reckoning unresolved.",
       "BeatTags": [],
       "ProseLength": 510,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2590,10 +2590,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces Boiler\u0027s perspective to reframe the harvest\u0027s human cost through his structural, working-class understanding of load and consequence.",
       "BeatTags": [],
       "ProseLength": 788,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2605,10 +2605,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Physically stages Boiler\u0027s sacrifice as an act of deliberate, controlled labor, framing the coming injury as a chosen burden rather than an accident.",
       "BeatTags": [],
       "ProseLength": 468,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2620,10 +2620,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the rescue into genuine bodily sacrifice, showing Boiler override his own survival instincts to make good on his promised count.",
       "BeatTags": [],
       "ProseLength": 1461,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2635,10 +2635,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off Goldberg\u0027s four-year arc of deference by having him silently choose the rescued over the system that owns him, witnessed and irreversible.",
       "BeatTags": [],
       "ProseLength": 1097,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2650,10 +2650,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals the cost of the rescue as the corp is forced into public admission, while grounding the victory in Boiler\u0027s ruined arm and his need to verify the number was worth it.",
       "BeatTags": [],
       "ProseLength": 1051,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2665,10 +2665,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes Lace\u0027s competence and restraint under crisis, turning her rescue of Boiler into wordless trust rather than spectacle.",
       "BeatTags": [],
       "ProseLength": 648,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2680,10 +2680,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shifts into quiet aftermath, letting Rook drop her operator\u0027s guard and be seen simply as a tired person for the first time.",
       "BeatTags": [],
       "ProseLength": 772,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2695,10 +2695,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Turns the story from action to accounting, establishing Rook\u0027s ritual of naming survivors as a moral reckoning rather than a transaction.",
       "BeatTags": [],
       "ProseLength": 362,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2710,10 +2710,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Closes the loop on the numeric tension of the count, confirming that Boiler\u0027s sacrifice matched the exact debt it was meant to pay.",
       "BeatTags": [],
       "ProseLength": 250,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2725,10 +2725,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Separates individual debts of gratitude from the collective rescue, establishing that Rook intends to personally repay Goldberg and the unnamed woman.",
       "BeatTags": [],
       "ProseLength": 711,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2740,10 +2740,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Deepens Rook\u0027s characterization by contrasting her old habit of refusing distraction with her present willingness to sit still with what the night cost.",
       "BeatTags": [],
       "ProseLength": 588,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2755,10 +2755,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the distance between Rook\u0027s past self and present identity, framing the counting ritual as the marker of her transformation.",
       "BeatTags": [],
       "ProseLength": 223,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2770,10 +2770,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Grounds Rook in quiet physical stillness after violence, using the scarred hand to show her deliberate choice to bear cost rather than erase it.",
       "BeatTags": [],
       "ProseLength": 385,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2785,10 +2785,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Introduces Soraya\u0027s silent solidarity, establishing the list as a shared burden between two women bound by unspoken history.",
       "BeatTags": [],
       "ProseLength": 489,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2800,10 +2800,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Reveals Soraya\u0027s personal connection to the dead, turning an anonymous entry into a named person and deepening the story\u0027s stakes.",
       "BeatTags": [],
       "ProseLength": 777,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2815,10 +2815,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Shows Rook ritualizing memory over efficiency, marking the list as an act of witness rather than mere accounting.",
       "BeatTags": [],
       "ProseLength": 272,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2830,10 +2830,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Expands the human cost by naming another victim, reinforcing the theme that every number conceals a specific, particular life.",
       "BeatTags": [],
-      "ProseLength": 758,
+      "ProseLength": 759,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2845,10 +2845,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Formalizes the act of naming as procedure, showing the list\u0027s gap closing as unnamed victims become acknowledged individuals.",
       "BeatTags": [],
       "ProseLength": 126,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2860,10 +2860,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Marks a beat of shared exhaustion and quiet reckoning, underscoring the miracle and cost embedded in a number that grew instead of shrank.",
       "BeatTags": [],
       "ProseLength": 322,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2875,10 +2875,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Escalates the stakes by revealing the crisis extends beyond tonight\u0027s rescue, setting up future conflict while establishing Soraya\u0027s honesty with Rook.",
       "BeatTags": [],
       "ProseLength": 600,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2890,10 +2890,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Defines Rook\u0027s guiding principle\u2014bounded, earned commitment\u2014establishing her resolve to honor tonight\u0027s victory without being consumed by the larger unresolved threat.",
       "BeatTags": [],
       "ProseLength": 612,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2905,10 +2905,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Establishes the indifferent, unchanged world outside as a contrast to Soraya\u0027s internal shift, grounding her resolve in mundane duty.",
       "BeatTags": [],
       "ProseLength": 433,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2920,10 +2920,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pays off the earlier manifest imagery by having Soraya complete an honest reckoning instead of a concealment, marking her transformation as settled.",
       "BeatTags": [],
       "ProseLength": 395,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
@@ -2935,10 +2935,10 @@
       "Chapter": "Chapter 3 \u2014 The Run",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Closes the chapter on a quiet, unresolved note that lets restraint and companionship stand in for catharsis, signaling acceptance without closure.",
       "BeatTags": [],
       "ProseLength": 232,
       "Flags": [
-        "MISSING_MEANING",
         "UNSCORED",
         "NO_CONSTRUCTION"
       ],
