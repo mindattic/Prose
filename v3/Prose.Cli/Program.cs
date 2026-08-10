@@ -1073,6 +1073,20 @@ if (args.Contains("--timeline"))
     return;
 }
 
+// CLI mode: print beat text WITH its authoritative POV character attached (sourced fresh
+// from BeatEntityPresence every call, never inferred from prose content). Use this instead
+// of raw sqlcmd/SELECT Text reads whenever a conclusion about character voice, attribution,
+// or continuity will be drawn from what's read — see ReadBeatsCli's own doc comment for the
+// live mistake (2026-08-10, VIGL multi-POV misattribution) this exists to make structurally
+// harder to repeat.
+//   prose --read-beats --slug <slug> (--from <N> --to <N> | --numbers <csv>)
+if (args.Contains("--read-beats"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ReadBeatsCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: per-entity-type reachability matrix (how much canon is embedded and
 // thus pullable into prose). The standing gap-finder.
 //   prose --coverage

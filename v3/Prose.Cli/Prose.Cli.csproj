@@ -6,6 +6,10 @@
     <Version>1.0.0</Version>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- EF1002/EF1003: raw-SQL call sites (e.g. ReadBeatsCli's BeatEntityPresence lookup) build
+         IN(...) placeholder lists from SqlParameter names, not user input; same audited
+         pattern already suppressed project-wide in Prose.Core (see its csproj, 2026-07-02). -->
+    <NoWarn>$(NoWarn);EF1002;EF1003</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
