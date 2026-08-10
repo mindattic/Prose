@@ -39,10 +39,17 @@ public static class BackfillCoverageCli
         if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return; }
 
         // A book fans out into its live chapters; a lone chapter backfills itself.
-        // Archived/unincorporated children aren't part of the book — exclude them so the
-        // rollup reflects the actual canon chapters, not cut scenes or draft scratch.
-        var children = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == root.Id
+        // Descend to LEAF nodes (not just direct children) — a split-collection book
+        // (BLST/ICFI/RTR/VIGL: Book -> "Chapter 1" container with 0 direct beats -> real
+        // chapters -> beats) has real chapters two levels down, and direct-children-only
+        // used to silently report "0 beats logged" for these books even though hundreds of
+        // beats existed. Same bug class WorkflowMonitorService.GetNodeCoverageAsync fixed
+        // 2026-08-09 via this same helper. Archived/unincorporated leaves aren't part of the
+        // book — exclude them so the rollup reflects the actual canon chapters, not cut
+        // scenes or draft scratch.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, root.Id);
+        var children = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(s => leafIds.Contains(s.Id)
                      && s.Status != "archived" && s.Status != "unincorporated")
             .OrderBy(s => s.SortKey)
             .Select(s => new { s.Id, s.Title, s.Slug, s.UniverseId })
