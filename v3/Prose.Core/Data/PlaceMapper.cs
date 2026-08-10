@@ -439,15 +439,7 @@ public static class PlaceMapper
         return e?.Id;
     }
 
+    /// <summary>Delegates to <see cref="EntityResolver.ResolveEntityIdAny"/> (shared with CharacterMapper).</summary>
     private static Guid? ResolveEntityIdAny(ProseDbContext db, string alias)
-    {
-        if (string.IsNullOrWhiteSpace(alias)) return null;
-        var e = db.Entities.AsNoTracking()
-            .FirstOrDefault(x => x.Name == alias && x.IsActive);
-        if (e != null) return e.Id;
-        var slug = Prose.Core.Services.WorldGraphService.Slugify(alias);
-        e = db.Entities.AsNoTracking()
-            .FirstOrDefault(x => x.Slug == slug && x.IsActive);
-        return e?.Id;
-    }
+        => EntityResolver.ResolveEntityIdAny(db, alias);
 }

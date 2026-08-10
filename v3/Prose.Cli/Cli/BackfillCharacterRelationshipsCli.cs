@@ -15,10 +15,11 @@ namespace Prose.Cli;
 /// a null TargetEntityId. The code fix (CharacterMapper.cs) only takes effect for future saves;
 /// this backfills what already exists.
 ///
-/// Matches ResolveEntityIdAny's own logic exactly (exact Name, then Slug) but restricted to the
-/// SAME universe as the character whose relationship it is (Universe division absolute — a
-/// same-named entity in a different universe must never resolve as the target). Reports
-/// ambiguous/unresolved rows rather than guessing.
+/// Matches ResolveEntityIdAny's own logic (exact Name, then Slug, then a registered alias —
+/// EntityResolver.cs, shared with the live mapper path) but restricted to the SAME universe as
+/// the character whose relationship it is (Universe division absolute — a same-named entity in a
+/// different universe must never resolve as the target). Reports ambiguous/unresolved rows rather
+/// than guessing.
 /// </summary>
 public static class BackfillCharacterRelationshipsCli
 {
@@ -38,7 +39,7 @@ public static class BackfillCharacterRelationshipsCli
         Console.WriteLine($"[backfill-character-relationships] {unresolved.Count} unresolved row(s) found.");
         if (unresolved.Count == 0) return 0;
 
-        int resolved = 0, ambiguous = 0, notFound = 0;
+        int resolved = 0, resolvedByAlias = 0, ambiguous = 0, notFound = 0;
         foreach (var row in unresolved)
         {
             if (string.IsNullOrWhiteSpace(row.TargetName)) { notFound++; continue; }
@@ -50,9 +51,17 @@ public static class BackfillCharacterRelationshipsCli
                 .Select(e => e.Id)
                 .ToListAsync();
 
+            var viaAlias = false;
+            if (candidates.Count == 0)
+            {
+                candidates = await ResolveByAliasInUniverseAsync(db, row.TargetName, row.OwnerUniverseId);
+                viaAlias = candidates.Count > 0;
+            }
+
             if (candidates.Count == 1)
             {
                 resolved++;
+                if (viaAlias) resolvedByAlias++;
                 if (!dryRun)
                 {
                     var target = candidates[0];
@@ -72,8 +81,43 @@ public static class BackfillCharacterRelationshipsCli
             }
         }
 
-        Console.WriteLine($"[backfill-character-relationships] resolved={resolved} ambiguous={ambiguous} not-found={notFound}" +
+        Console.WriteLine($"[backfill-character-relationships] resolved={resolved} (of which {resolvedByAlias} via alias) ambiguous={ambiguous} not-found={notFound}" +
             (dryRun ? " (DRY RUN — no changes written)" : ""));
         return 0;
+    }
+
+    /// <summary>
+    /// Alias fallback (Character/Place/Faction/Weapon), restricted to the owner's universe —
+    /// the corpus-wide-scan counterpart of EntityResolver.ResolveEntityIdAny's ambient-scoped
+    /// alias check, since this CLI IgnoreQueryFilters() to process every universe in one pass.
+    /// </summary>
+    private static async Task<List<Guid>> ResolveByAliasInUniverseAsync(ProseDbContext db, string name, Guid universeId)
+    {
+        var charHit = await db.Characters.AsNoTracking().IgnoreQueryFilters()
+            .Where(c => c.Aliases.Any(a => a.Value == name))
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.IsActive),
+                c => c.Id, e => e.Id, (c, e) => e.Id)
+            .ToListAsync();
+        if (charHit.Count > 0) return charHit;
+
+        var placeHit = await db.Places.AsNoTracking().IgnoreQueryFilters()
+            .Where(p => p.Aliases.Any(a => a.Value == name))
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.IsActive),
+                p => p.Id, e => e.Id, (p, e) => e.Id)
+            .ToListAsync();
+        if (placeHit.Count > 0) return placeHit;
+
+        var factionHit = await db.Factions.AsNoTracking().IgnoreQueryFilters()
+            .Where(f => f.Aliases.Any(a => a.Value == name))
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.IsActive),
+                f => f.Id, e => e.Id, (f, e) => e.Id)
+            .ToListAsync();
+        if (factionHit.Count > 0) return factionHit;
+
+        return await db.Weapons.AsNoTracking().IgnoreQueryFilters()
+            .Where(w => w.Aliases.Any(a => a.Value == name))
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.IsActive),
+                w => w.Id, e => e.Id, (w, e) => e.Id)
+            .ToListAsync();
     }
 }

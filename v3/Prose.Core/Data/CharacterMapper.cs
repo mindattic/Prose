@@ -1084,17 +1084,10 @@ public static class CharacterMapper
     /// Same as <see cref="ResolveEntityId"/> but without an entity-type filter — for bridges
     /// (like <see cref="CharacterRelationship"/>) whose target can legitimately be any entity
     /// type (another character, a faction, a place) and carries no field saying which.
-    /// Mirrors <c>PlaceMapper.ResolveEntityIdAny</c>.
+    /// Delegates to <see cref="EntityResolver.ResolveEntityIdAny"/> (shared with PlaceMapper).
     /// </summary>
     private static Guid? ResolveEntityIdAny(ProseDbContext db, string name)
-    {
-        if (string.IsNullOrWhiteSpace(name)) return null;
-        var e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Name == name && x.IsActive);
-        if (e != null) return e.Id;
-        var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
-        e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Slug == slug && x.IsActive);
-        return e?.Id;
-    }
+        => EntityResolver.ResolveEntityIdAny(db, name);
 
     /// <summary>
     /// Look up the canonical Entity id of the given type for a free-form name.
