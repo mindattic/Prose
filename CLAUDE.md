@@ -344,9 +344,17 @@ Working rules:
 - The repo rule "no Markdown except README" is amended for the Codex `docs/*.md` set (see SS-A1);
   data files stay JSON.
 
-## New Story Workflow (mandatory — see [docs/BIBLE.md §10](docs/BIBLE.md#SS-§10))
+## New Story Workflow — LOCKED PIPELINE (mandatory — see [docs/BIBLE.md §10](docs/BIBLE.md#SS-§10))
 
-**Every new book follows this sequence without exception:**
+**Author ruling (2026-08-10): this sequence is locked and must be followed in order, without
+exception, for every new book.** No stage is skipped and no stage is reordered to reach prose
+faster. The premise is unnegotiable: if a book doesn't make sense at the outline/synopsis level,
+it will not make sense as prose — prose cannot repair a structural or causal defect sitting
+underneath it. When something breaks downstream, walk back to the stage that actually owns the
+defect and fix it there (a wrong fact → fix Stage 3's bible; a plot hole → fix Stage 3/4's spine;
+a never-linked entity → fix Stage 1/2), then re-run forward. **Never paper over a lower-stage
+defect by throwing more generation at a later stage** ("no more throw a million tokens at it and
+see if that fixes it" — author's words, binding).
 
 0. **Series Brief** — fill `docs/planning/<CODE>-brief.md` using the template at
    `docs/planning/_TEMPLATE.md`. The brief must cover all 10 sections before a node bible is
@@ -354,27 +362,54 @@ Working rules:
    After filing: update `docs/series/GLMZ.md` Book Roster (§1–2), Character Arc Ledger exit
    states (§3), and Plant/Payoff Registry (§5). Check World-Revelation Sequencing (§6) — this
    book must not reveal anything before its designated book.
-1. **Docs first** — if new world facts: GLMZ facts → `docs/BIBLE.md` or `docs/WORLD.md`; Fantasy/Entos
-   facts → `docs/universes/ENTOS.md`. For book-specific facts (arc, characters, voice register, locks),
-   write the hand-authored content via `set_book_bible` MCP into `Nodes.NodeBible`. Add story entry to
+1. **Entity Seeding** — seed every named character, CorpoNation/faction, place, and weapon into
+   the DB via CLI or MCP **before anything downstream references them**. The cast, locations, and
+   factions must exist as real rows before the bible names them or the plot uses them.
+2. **Relationship Linking — gate: 100% resolution** — every relationship declared on a seeded
+   entity (`CharacterRelationships`, `FactionRelationships`, etc.) must resolve to a real
+   `TargetEntityId` pointing at another seeded entity, or be explicitly an intentional off-page
+   reference (e.g. "an aunt never otherwise named"). Verify before proceeding — a relationship
+   left null because the target was simply never seeded is a Stage 1 defect, not an acceptable
+   gap: go back, seed the missing entity, and re-save the relationship so it resolves. Do not
+   carry silently-broken edges into the bible.
+3. **Bible & Plot** — if new world facts: GLMZ facts → `docs/BIBLE.md`/`docs/WORLD.md`;
+   Fantasy/Entos facts → `docs/universes/ENTOS.md`. Write the book's hand-authored content (arc,
+   characters, voice register, locks, POV map) via `set_book_bible` MCP into `Nodes.NodeBible`.
+   Every named entity and relationship the bible describes must already exist from Stages 1–2 —
+   the bible describes the graph, it does not invent it. Add a story entry to
    `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
-2. **Entities** — seed every named character, CorpoNation, place, or weapon into the DB via CLI or
-   MCP **before any prose is generated**.
-3. **Book structure (SS-A43)** — create a **BookNode** (MCP `create_book` / CLI `--create-book`)
+4. **Book Structure (SS-A43)** — create a **BookNode** (MCP `create_book` / CLI `--create-book`)
    + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
    outline) = the book node's `seed` text.
-4. **Structural blueprint (StoryScope countermeasures)** — after the bible/spine exists, run
-   `prose --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). This commits the
-   structural anti-tell decisions BEFORE prose: thematically-parallel subplot + carrier beats,
-   temporal scheme, resolution mode (never internal-understanding), moral polarity (ambivalent
-   default), per-beat escalation curve, event-type + revelation-mode palette, optional form device,
-   ending style (avalanche, no epilogue), 3-5 intertextual anchors from the entity DB. Then run
-   `prose --generate-node-doc --slug <slug>` to regenerate `docs/nodes/<CODE>.md` with the blueprint
-   section auto-populated from the DB.
-5. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
-6. **Export** — `--export-node`; flip USER_STORIES to ✅ with evidence.
+5. **Synopsis Coherence Gate — mandatory, prose-free** — before any structural blueprint or prose
+   is generated, read the chapter-by-chapter synopsis/outline end-to-end (100 ft altitude —
+   `story-synopsis.txt` / `NodeChapterSummaries`, or the authorial spine if chapter summaries don't
+   exist yet) and validate it on:
+   - **Causal soundness** — every event has an established cause, every decision a motivation;
+     nothing happens because the plot needs it to.
+   - **Timeline consistency** — the book's internal clock holds together across chapters.
+   - **Pacing shape** — escalation is monotonic or deliberately shaped, never flat or randomly spiky.
+   - **Thematic delivery** — the stated logline/theme is actually dramatized by the chapter
+     sequence, not just asserted in the brief.
+   - **Relationship utilization** — every edge linked in Stage 2 is actually used somewhere in the
+     synopsis. A linked-but-unused relationship is a planning defect: either the relationship or
+     the plot beat that should exercise it is missing.
+   Use `prose --altitude-audit --slug <slug>` (existing 10,000↔100 ft drift check) as a starting
+   instrument, then read the synopsis directly — findings triage BLOCKER/MODERATE/MINOR exactly
+   like a logic sweep. **A book that fails this gate goes back to Stage 3/4 for a bible/spine
+   rewrite. It does not proceed to Stage 6 "to see if it works out in the writing."**
+6. **Structural blueprint (StoryScope countermeasures)** — only once Stage 5 is clean at BLOCKER,
+   run `prose --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). This
+   commits the structural anti-tell decisions BEFORE prose: thematically-parallel subplot +
+   carrier beats, temporal scheme, resolution mode (never internal-understanding), moral polarity
+   (ambivalent default), per-beat escalation curve, event-type + revelation-mode palette, optional
+   form device, ending style (avalanche, no epilogue), 3-5 intertextual anchors from the entity DB.
+   Then run `prose --generate-node-doc --slug <slug>` to regenerate `docs/nodes/<CODE>.md` with the
+   blueprint section auto-populated from the DB.
+7. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
+8. **Export** — `--export-node`; flip USER_STORIES to ✅ with evidence.
 
-Never write prose before steps 0, 1, 2, and 4 are complete.
+Never write prose before Stages 0–6 are complete and Stage 5 has passed clean at BLOCKER.
 
 ## Prose Engine Services (use all of these — see SS-A16)
 

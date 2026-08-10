@@ -123,6 +123,7 @@ renamed (TWU, TWD) somewhere along the way; rows corrected to the live NodeCode.
 | Code | Title | Protagonist | Arc Served | Serves Book(s) | Status |
 |------|-------|-------------|------------|----------------|--------|
 | ATTE | Attendance | Yemina Fola | Rogue AI · Grey admin-horror | B2–B4 | Active; 330 beats; Logic Sweep PASS 2026-08-10 |
+| BTL | Between the Lines | Idris Kovač | None · ARC institution introduction · liminal-corruption character study | None (world texture) | BRIEFED 2026-08-10 ([docs/planning/BTL-brief.md](../planning/BTL-brief.md)); entities/structure pending; prose blocked on Anthropic credit restoration |
 | BLST | Ballast | Teo Candelaria | Aerostatic-bloc descent · household politics | — | Active; 339 beats; Logic Sweep PASS 2026-08-10 |
 | DWIACE | Death Whispers in a Cat's Ear | Rennick | Rogue AI · world texture · multi-POV | B2–B3 | Active (559 beats); 1 BLOCKER deferred to author (cat-ear age contradiction) |
 | TWU | The Way Up (was HFV/"The Come Up") | Reza "Rampart" Solano + Tavi "Cutout" Jeong | None · Low operator-economy origin · friendship-as-a-phase · **Rampart & Cutout diptych Bk 1** | None (world texture) | Active; 113 beats; Logic Sweep PASS 2026-08-10 |
@@ -340,6 +341,7 @@ Update this table when a plant is seeded or paid.
 | Two-column protocol ("true is not complete"; certifying gaps, not just entries) | CRIT (retired 2026-08-02 replot — no longer dramatized on-page) | Protocol exploited — data engineered to look complete; the honest betrayal | B4 / Ledger's Honest Betrayal | ⚠ ORPHANED — establishing story replotted; B4 needs to either re-derive the mechanism or establish it itself |
 | Tally's kept page (true/incomplete entry about Ledger) | CRIT (retired 2026-08-02 replot — Tally cut from the story entirely) | The on-page token of completeness when Ledger is given complete data | B5 / The Reassembly (notary material) | ⚠ ORPHANED — Tally no longer exists in CRIT; B5 needs a new token, likely from Critical Mass's cast or the individuated Fleet-instance |
 | "The other two Helix facilities" (future job hook) | CxC (beats 6550-6551) | Acknowledged as still-unresolved in Rook's closing open-threads tally (2026-08-01 logic sweep fix); no future book has confirmed a payoff | IxS (acknowledgment only, not a resolution) / a future Rook book TBD | CxC ✅ planted; IxS ⚠ intentionally left orphaned — needs a future book or explicit retirement |
+| ARC (Aerostatic Regulatory Command) as a standing GLMZ institution — checkpoint corruption is possible, and consequential, anywhere the aerostatic boundary is crossed | BTL | Any future book referencing an ARC checkpoint inherits a corruptible, lived institution rather than passive geography | Future books, TBD | BTL briefed 2026-08-10; not yet written |
 
 ---
 
