@@ -61,9 +61,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // reproducibility audit): the guard blocked exactly the fresh-DB-bootstrap use case
         // this flag exists for.
         "--seed", "--migrate-sql",
-        // Corpus-wide staleness report: resolves each row's own book, not an ambient scope —
+        // Corpus-wide staleness reports: resolve each row's own book, not an ambient scope —
         // same shape as --sync-markdown/--generate-canon-md above.
-        "--verification-staleness",
+        "--verification-staleness", "--findings-staleness",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -784,6 +784,16 @@ if (args.Contains("--verify-beat") || args.Contains("--verify-book")
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await VerifyBeatCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --findings-staleness [--json]
+// RFC 0011 Brick 2: generic staleness report across every Findings category that stamps
+// SourceRuleVersion on write (currently CraftChecklist + StructuralFailure).
+if (args.Contains("--findings-staleness"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await FindingsStalenessCli.RunAsync(args, sp);
     return;
 }
 

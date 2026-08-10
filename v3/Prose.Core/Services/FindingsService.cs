@@ -90,6 +90,17 @@ public class FindingsService
                 CREATE INDEX [IX_Findings_ChapterId] ON [dbo].[Findings]([ChapterId]);
             END;
             """);
+
+        // RFC 0011 Brick 2 — idempotent in-place add for existing DBs, same self-upgrading
+        // pattern as the table bootstrap above (this service predates EF migrations being the
+        // norm for this project and still auto-upgrades existing dev DBs without one).
+        db.Database.ExecuteSqlRaw("""
+            IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = OBJECT_ID(N'[dbo].[Findings]') AND name = 'SourceRuleVersion')
+            BEGIN
+                ALTER TABLE [dbo].[Findings] ADD [SourceRuleVersion] NVARCHAR(40) NULL;
+                CREATE INDEX [IX_Findings_Category_SourceRuleVersion] ON [dbo].[Findings]([Category], [SourceRuleVersion]);
+            END;
+            """);
     }
 
     /// <summary>
@@ -206,7 +217,8 @@ public class FindingsService
         FindingSeverity severity,
         string summary,
         string? snippet,
-        string? suggestedFix)
+        string? suggestedFix,
+        string? sourceRuleVersion = null)
     {
         var dedup = $"{filePath}|{category}|{summary}".ToLowerInvariant();
         // 450 NVARCHAR cap on the column — truncate quietly on the rare
@@ -218,26 +230,28 @@ public class FindingsService
         if (existing != null)
         {
             // Conflict update — same shape as the prior SQLite UPSERT.
-            existing.Severity     = severity.ToString();
-            existing.Snippet      = snippet;
-            existing.SuggestedFix = suggestedFix;
-            existing.DetectedAt   = DateTime.UtcNow;
+            existing.Severity          = severity.ToString();
+            existing.Snippet           = snippet;
+            existing.SuggestedFix      = suggestedFix;
+            existing.DetectedAt        = DateTime.UtcNow;
+            existing.SourceRuleVersion = sourceRuleVersion;
             db.SaveChanges();
             return existing.Id;
         }
 
         var row = new FindingRow
         {
-            DetectedAt   = DateTime.UtcNow,
-            FilePath     = filePath,
-            ChapterId    = chapterId,
-            Category     = category.ToString(),
-            Severity     = severity.ToString(),
-            Summary      = summary,
-            Snippet      = snippet,
-            SuggestedFix = suggestedFix,
-            Status       = nameof(FindingStatus.New),
-            DedupKey     = dedup,
+            DetectedAt         = DateTime.UtcNow,
+            FilePath           = filePath,
+            ChapterId          = chapterId,
+            Category           = category.ToString(),
+            Severity           = severity.ToString(),
+            Summary            = summary,
+            Snippet            = snippet,
+            SuggestedFix       = suggestedFix,
+            Status             = nameof(FindingStatus.New),
+            DedupKey           = dedup,
+            SourceRuleVersion  = sourceRuleVersion,
         };
         db.Findings.Add(row);
         try
@@ -254,6 +268,52 @@ public class FindingsService
             if (winner != null) return winner.Id;
             throw;
         }
+    }
+
+    public sealed record StaleFindingGroup(string Category, string FilePath, int StaleCount, int TotalCount);
+
+    /// <summary>
+    /// RFC 0011 Brick 2 — the generic staleness query every check category shares instead of
+    /// hand-rolling its own (the exact gap that let <c>BeatVerification</c>'s equivalent bug
+    /// survive two separate manual re-audits in one session before it got a table-scoped fix).
+    /// Pass the version each category currently considers "current" (e.g.
+    /// <c>{"CraftChecklist": BeatChecklistGateService.PromptVersion}</c>) — this service has no
+    /// opinion on what a rule version means, only on comparing what's stored to what's given.
+    /// Findings with a null <see cref="FindingRow.SourceRuleVersion"/> (no version ever recorded,
+    /// including every finding filed before this column existed) count as stale by definition.
+    /// Only open (New/Triaged) findings are considered — a Dismissed/Applied finding's staleness
+    /// no longer matters.
+    /// </summary>
+    public async Task<IReadOnlyList<StaleFindingGroup>> GetStaleCategoriesAsync(
+        IReadOnlyDictionary<string, string> currentVersionByCategory, CancellationToken ct = default)
+    {
+        if (currentVersionByCategory.Count == 0) return Array.Empty<StaleFindingGroup>();
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var categories = currentVersionByCategory.Keys.ToList();
+        var rows = await db.Findings.AsNoTracking()
+            .Where(f => (f.Status == "New" || f.Status == "Triaged") && categories.Contains(f.Category))
+            .Select(f => new { f.Category, f.FilePath, f.SourceRuleVersion })
+            .ToListAsync(ct);
+
+        return rows
+            .GroupBy(f => (f.Category, Book: BookPrefix(f.FilePath)))
+            .Select(g => new StaleFindingGroup(
+                g.Key.Category, g.Key.Book,
+                StaleCount: g.Count(f => f.SourceRuleVersion != currentVersionByCategory[g.Key.Category]),
+                TotalCount: g.Count()))
+            .Where(g => g.StaleCount > 0)
+            .OrderByDescending(g => g.StaleCount)
+            .ToList();
+    }
+
+    /// <summary>"node:slug" or "node:slug/beat:guid" -> "node:slug" — groups per-beat findings
+    /// under their owning book for the staleness report, same convention every category's
+    /// FilePath already follows (see DeleteBySummaryPrefix).</summary>
+    private static string BookPrefix(string filePath)
+    {
+        var i = filePath.IndexOf("/beat:", StringComparison.Ordinal);
+        return i < 0 ? filePath : filePath[..i];
     }
 
     public IReadOnlyList<Finding> List(FindingStatus? status = null, int limit = 200)

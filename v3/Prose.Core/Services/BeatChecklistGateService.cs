@@ -217,7 +217,8 @@ public sealed class BeatChecklistGateService(
                 v.DontViolations.Count >= 2 ? FindingSeverity.Medium : FindingSeverity.Low,
                 $"{FindingSummaryPrefix} beat #{v.BeatNumber}: {v.DontViolations.Count} banned-mannerism hit(s) — {Truncate(list, 300)}",
                 snippet: v.DontViolations[0].Evidence,
-                suggestedFix: "Rewrite the flagged phrasing per CRAFT.md §8; if the hit is literal/diegetic, dismiss.");
+                suggestedFix: "Rewrite the flagged phrasing per CRAFT.md §8; if the hit is literal/diegetic, dismiss.",
+                sourceRuleVersion: ruleSetVersion);
             filed++;
         }
         // Flat beats (no DELIGHT move landed) are REPORTED but deliberately NOT filed as
@@ -229,7 +230,8 @@ public sealed class BeatChecklistGateService(
         foreach (var bf in bookFindings)
         {
             findings.Upsert(filePathPrefix, chapterId: null, FindingCategory.CraftChecklist,
-                FindingSeverity.Medium, $"{FindingSummaryPrefix} {bf}", snippet: null, suggestedFix: null);
+                FindingSeverity.Medium, $"{FindingSummaryPrefix} {bf}", snippet: null, suggestedFix: null,
+                sourceRuleVersion: ruleSetVersion);
             filed++;
         }
         // Deterministic corpus-rate findings (interiority density, retired tics) — same
@@ -240,7 +242,8 @@ public sealed class BeatChecklistGateService(
             var sev = v.Severity == "MODERATE" ? FindingSeverity.Medium : FindingSeverity.Low;
             var path = v.Location != null ? $"{filePathPrefix}/beat:{v.Location}" : filePathPrefix;
             findings.Upsert(path, chapterId: null, FindingCategory.CraftChecklist, sev,
-                $"{FindingSummaryPrefix} {v.Title}: {v.Evidence}", snippet: null, suggestedFix: v.Fix);
+                $"{FindingSummaryPrefix} {v.Title}: {v.Evidence}", snippet: null, suggestedFix: v.Fix,
+                sourceRuleVersion: ruleSetVersion);
             filed++;
         }
 
@@ -376,6 +379,21 @@ public sealed class BeatChecklistGateService(
     }
 
     // ── rule loading ───────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// RFC 0011 Brick 2: what a fresh <c>--craft-checklist</c> run right now would consider
+    /// "current" — unlike <see cref="BeatVerificationService.CurrentRuleVersion"/>, this isn't a
+    /// compile-time constant: it's a hash of the code's <see cref="PromptVersion"/> AND the live
+    /// CRAFT.md/DELIGHT.md content in <c>CanonDocumentSections</c>, so an author editing craft
+    /// docs (no deploy) changes what "current" means just as much as a code change would. Callers
+    /// building a staleness report need this async lookup rather than a bare constant.
+    /// </summary>
+    public async Task<string> GetCurrentRuleSetVersionAsync(CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var (_, _, version) = await LoadRulesAsync(db, ct);
+        return version;
+    }
 
     public sealed record DelightMove(string Key, string Title, string Gist);
 

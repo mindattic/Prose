@@ -1943,10 +1943,12 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Severity).HasMaxLength(20).IsRequired();
             e.Property(x => x.Status).HasMaxLength(20).IsRequired();
             e.Property(x => x.DedupKey).HasMaxLength(450).IsRequired();
+            e.Property(x => x.SourceRuleVersion).HasMaxLength(40);
             e.HasIndex(x => x.DedupKey).IsUnique().HasDatabaseName("UQ_Findings_DedupKey");
             e.HasIndex(x => x.Status).HasDatabaseName("IX_Findings_Status");
             e.HasIndex(x => x.FilePath).HasDatabaseName("IX_Findings_FilePath");
             e.HasIndex(x => x.ChapterId).HasDatabaseName("IX_Findings_ChapterId");
+            e.HasIndex(x => new { x.Category, x.SourceRuleVersion }).HasDatabaseName("IX_Findings_Category_SourceRuleVersion");
         });
 
         b.Entity<ClaimContradictionRow>(e =>

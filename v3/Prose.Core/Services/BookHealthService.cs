@@ -312,7 +312,8 @@ public class BookHealthService(
         {
             var sev = x.Severity switch { "BLOCKER" => FindingSeverity.High, "MODERATE" => FindingSeverity.Medium, _ => FindingSeverity.Low };
             findingsSvc.Upsert($"node:{slug}/beat:{x.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, sev,
-                $"VERIFY [{x.CheckType}] beat #{x.Number}: {x.Result} — {x.Evidence}", snippet: null, suggestedFix: null);
+                $"VERIFY [{x.CheckType}] beat #{x.Number}: {x.Result} — {x.Evidence}", snippet: null, suggestedFix: null,
+                sourceRuleVersion: BeatVerificationService.CurrentRuleVersion);
         }
     }
 

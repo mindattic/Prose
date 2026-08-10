@@ -40,4 +40,20 @@ public class FindingRow
     /// Unique index enforces one row per logical finding.
     /// </summary>
     public string DedupKey { get; set; } = "";
+
+    /// <summary>
+    /// RFC 0011 Brick 2 — the version string the WRITING service considered "current" for its own
+    /// check logic at the moment this finding was filed (e.g. <c>BeatChecklistGateService</c>'s
+    /// PromptVersion, <c>BeatVerificationService.CurrentRuleVersion</c>). Optional and
+    /// caller-defined — <see cref="Prose.Core.Services.FindingsService"/> doesn't know what a
+    /// "rule" means for any given category, it only stores what the caller says. Null for
+    /// categories that don't (yet) track a version, and for every finding filed before this
+    /// column existed. Lets <c>FindingsService.GetStaleCategoriesAsync</c> answer "which
+    /// book/category combinations were filed under an older version than the one currently
+    /// declared" as a single generic query, instead of a bespoke staleness implementation per
+    /// service — the same class of manual-timestamp-diffing gap that bit
+    /// <c>BeatVerificationService</c> twice in one session before it got its own dedicated
+    /// (table-scoped, not Findings-scoped) RuleVersion column.
+    /// </summary>
+    public string? SourceRuleVersion { get; set; }
 }
