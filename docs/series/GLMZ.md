@@ -308,6 +308,7 @@ checked so far.
 | Mrs. Chen's diner | BCODA, NxR, CxC | Recurring counter/safehouse; hidden dead-drop tile under a loose floor tile (set 2206, per NxR); Rook's regular haunt across the trilogy, same as Kyle's in BCODA | 2026-08-10 — no contradiction found; not in MxG or IxS (book 1/4 of the trilogy), which may be intentional (introduced starting book 2) |
 | PEREGRINE | MxG, NxR, CxC | Helix's private security/muscle contractor — "ex-military chassis with no serial number," breach teams, VTOLs ("PEREGRINE's bird") | 2026-08-10 — consistent characterization across all 3 Rook Trilogy books |
 | Lieutenant Lyra | LLSS, VIGL | Same character — LLSS is explicitly a "VIGL prose register exemplar" (CLAUDE.md); LLSS references a specific shared memory of Vega as her superior officer, consistent with Vega's VIGL role | 2026-08-10 — SCRY universe, not GLMZ, but logged here as the pattern is the same |
+| Carrion (Enterprises / Reclamations / Defense Works) | BCODA, DWIACE, VATD | The same dark-market corp doing body/organ-harvest processing and weapons trafficking across all three books — BCODA: military-grade ordnance moving through "Carrion supply lines"; DWIACE: "a Carrion Enterprises operation that gathered up human outcomes and processed them for resale"; VATD: Tomas and Levin (the book's own protagonists) ARE Carrion Reclamations operatives, wearing "Carrion coveralls" | 2026-08-10 — no contradiction found across all three portrayals; a genuinely deep, consistent shared faction |
 
 ---
 
