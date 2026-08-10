@@ -163,7 +163,15 @@ public class BeatCoordinationService
             else if (proseLen < StubProseThreshold && !IsTerseByDesign(meaning, proseText))
                 flags.Add("STUB_PROSE");
 
-            if (r.Score is null or <= 0) flags.Add("UNSCORED");
+            // UNSCORED was retired 2026-08-10: Beat.Score is written only by the legacy
+            // dual-review panel (NodeReviewService), which SS-A44 (author ruling 2026-08-03,
+            // "remove scores; they mean nothing") quarantined behind an explicit opt-in and
+            // retired from the default pipeline. Every beat written through the normal
+            // ProseWriterRouter path has Score==null by design, not by defect — flagging it
+            // made every single beat in every book permanently "unscored" for no fixable
+            // reason. BookHealthService.BeatCoordinationAsync already special-cased a
+            // UNSCORED-only beat as Covered (see its own comment: "UNSCORED is expected
+            // noise"); this makes that the actual truth instead of a downstream patch.
 
             // Construction slice (chapter-parallel for chaptered books, beat-parallel for flat ones)
             string? esc = constrIdx >= 0 && constrIdx < escalation.Length
@@ -192,7 +200,7 @@ public class BeatCoordinationService
                 ProseLength     = proseLen,
                 Score           = r.Score,
                 Flags           = flags,
-                Covered         = flags.Count == 0 || (flags.Count == 1 && flags[0] == "UNSCORED"),
+                Covered         = flags.Count == 0,
             });
         }
 
