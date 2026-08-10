@@ -295,6 +295,22 @@ collected one book late. Full detail: RFC 0003 §1.1.
 
 ---
 
+## 4.5. Confirmed Cross-Book Anchors (standalones) {#SS-GLMZ-COORD-§4-5}
+
+Unlike §5 below (forward-looking plants awaiting a future payoff), these are connections
+**already fully realized** across two or more completed/active books — verified consistent, not
+planted-and-pending. Added 2026-08-10 during the cross-book story-weaving survey
+([[project_cross_book_story_weaving_2026_08_10]]); this list is not exhaustive, just what's been
+checked so far.
+
+| Anchor | Books | What connects | Verified |
+|---|---|---|---|
+| Mrs. Chen's diner | BCODA, NxR, CxC | Recurring counter/safehouse; hidden dead-drop tile under a loose floor tile (set 2206, per NxR); Rook's regular haunt across the trilogy, same as Kyle's in BCODA | 2026-08-10 — no contradiction found; not in MxG or IxS (book 1/4 of the trilogy), which may be intentional (introduced starting book 2) |
+| PEREGRINE | MxG, NxR, CxC | Helix's private security/muscle contractor — "ex-military chassis with no serial number," breach teams, VTOLs ("PEREGRINE's bird") | 2026-08-10 — consistent characterization across all 3 Rook Trilogy books |
+| Lieutenant Lyra | LLSS, VIGL | Same character — LLSS is explicitly a "VIGL prose register exemplar" (CLAUDE.md); LLSS references a specific shared memory of Vega as her superior officer, consistent with Vega's VIGL role | 2026-08-10 — SCRY universe, not GLMZ, but logged here as the pattern is the same |
+
+---
+
 ## 5. Cross-Story Plant/Payoff Registry {#SS-GLMZ-COORD-§5}
 
 Both sides of every cross-story plant must exist in the Story Roster before the plant is written.
