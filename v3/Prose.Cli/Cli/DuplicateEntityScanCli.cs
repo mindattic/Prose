@@ -5,10 +5,11 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --duplicate-entity-scan --universe &lt;slug&gt; [--json]
+/// prose --duplicate-entity-scan --universe &lt;slug&gt; [--entity-type &lt;type&gt;] [--json]
 ///
-/// Scans a universe's character Entities for duplicate/near-duplicate names that aren't
-/// explained by legitimate cross-book disambiguation (OriginNodeId). See
+/// Scans a universe's Entities (default EntityType "character"; pass --entity-type to check
+/// "faction", "place", etc.) for duplicate/near-duplicate names that aren't explained by
+/// legitimate cross-book disambiguation (OriginNodeId). See
 /// <see cref="DuplicateEntityScanService"/> for the detection logic and the real bug
 /// ("Boris Johansen" / "Boris Johanssen", TEST's Bear, 2026-08-10) that motivated it.
 ///
@@ -24,11 +25,12 @@ public static class DuplicateEntityScanCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         var universeSlug = Flag(args, "--universe");
+        var entityType = Flag(args, "--entity-type") ?? "character";
         bool jsonMode = args.Contains("--json");
 
         if (string.IsNullOrWhiteSpace(universeSlug))
         {
-            Console.Error.WriteLine("Usage: prose --duplicate-entity-scan --universe <slug> [--json]");
+            Console.Error.WriteLine("Usage: prose --duplicate-entity-scan --universe <slug> [--entity-type <type>] [--json]");
             return 2;
         }
 
@@ -41,13 +43,14 @@ public static class DuplicateEntityScanCli
         }
 
         var scanSvc = services.GetRequiredService<DuplicateEntityScanService>();
-        var groups = await scanSvc.ScanAsync(universeId.Value);
+        var groups = await scanSvc.ScanAsync(universeId.Value, entityType);
 
         if (jsonMode)
         {
             Console.WriteLine(JsonSerializer.Serialize(new
             {
                 universe = universeSlug,
+                entity_type = entityType,
                 group_count = groups.Count,
                 groups = groups.Select(g => new
                 {
@@ -66,7 +69,7 @@ public static class DuplicateEntityScanCli
             return groups.Count > 0 ? 1 : 0;
         }
 
-        Console.WriteLine($"Duplicate entity scan: {universeSlug} (character entities only)");
+        Console.WriteLine($"Duplicate entity scan: {universeSlug} ({entityType} entities only)");
         Console.WriteLine();
 
         if (groups.Count == 0)

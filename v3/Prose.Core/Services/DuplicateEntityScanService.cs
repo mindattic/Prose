@@ -33,9 +33,11 @@ public sealed record DuplicateEntityGroup(
 /// surface that class of bug mechanically; it was found by hand-grepping beat text during a
 /// cross-book story-weaving investigation.
 ///
-/// Two detection passes, both scoped to EntityType == "character" (the highest-value and by far
-/// the most numerous type — ~1,864 in GLMZ alone as of 2026-08-10; a full cross-type pairwise
-/// scan would be far more expensive for comparatively little narrative payoff):
+/// Two detection passes, scoped to one EntityType at a time (default "character" — the
+/// highest-value and by far the most numerous type, ~1,864 in GLMZ alone as of 2026-08-10; pass
+/// a different type, e.g. "faction" or "place", to check those instead. Always single-type: a
+/// full cross-type pairwise scan would be far more expensive for comparatively little narrative
+/// payoff, since a character and a weapon sharing a name is never actually a duplicate row):
 ///   1. Exact match after normalizing whitespace/case — catches straightforward duplicates.
 ///   2. Near-duplicate — names exactly 1 edit apart (insert/delete/substitute one character,
 ///      e.g. "Johansen"/"Johanssen"), checked only between lexicographically adjacent entries
@@ -64,12 +66,22 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
 
     private sealed record EntityRow(Guid Id, string Name, Guid? OriginNodeId, bool IsActive, string? Description);
 
-    public async Task<IReadOnlyList<DuplicateEntityGroup>> ScanAsync(Guid universeId, CancellationToken ct = default)
+    public Task<IReadOnlyList<DuplicateEntityGroup>> ScanAsync(Guid universeId, CancellationToken ct = default) =>
+        ScanAsync(universeId, "character", ct);
+
+    /// <summary>
+    /// Scans one EntityType within a universe. "character" is the default and highest-value
+    /// target (see class doc comment), but the same bug class — two unreconciled draft rows for
+    /// the same world object — applies to any type; "faction" and "place" are cheap to check
+    /// (230 / 720 rows in GLMZ as of 2026-08-10) and narratively significant enough that a
+    /// duplicate would matter as much as a character one.
+    /// </summary>
+    public async Task<IReadOnlyList<DuplicateEntityGroup>> ScanAsync(Guid universeId, string entityType, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var entities = await db.Entities.AsNoTracking()
-            .Where(e => e.UniverseId == universeId && e.EntityType == "character")
+            .Where(e => e.UniverseId == universeId && e.EntityType == entityType)
             .Select(e => new EntityRow(e.Id, e.Name, e.OriginNodeId, e.IsActive, e.Description))
             .ToListAsync(ct);
 

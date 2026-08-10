@@ -577,9 +577,10 @@ Check the active universe's world-graph health: orphaned nodes (zero edges), wea
 
 ### `duplicate_entity_scan`
 
-Scan a universe's character Entities for duplicate or near-duplicate names (exact match, or exactly 1 edit apart, e.g. "Boris Johansen" vs "Boris Johanssen") that are NOT explained by legitimate cross-book disambiguation (Entity.OriginNodeId set to different values, meaning deliberately distinct characters in different books' continuity). Finds candidates only — it does not merge or delete anything; resolving a duplicate requires reading the actual prose to determine which row (if either) matches what was actually written, exactly as the investigation that motivated this tool did (TEST's 'Bear', 2026-08-10 — two draft entity rows, neither fully correct on its own). No LLM calls.
+Scan a universe's Entities of one EntityType (default 'character'; also useful for 'faction', 'place', etc.) for duplicate or near-duplicate names (exact match, or exactly 1 edit apart, e.g. "Boris Johansen" vs "Boris Johanssen") that are NOT explained by legitimate cross-book disambiguation (Entity.OriginNodeId set to different values, meaning deliberately distinct characters in different books' continuity). Finds candidates only — it does not merge or delete anything; resolving a duplicate requires reading the actual prose to determine which row (if either) matches what was actually written, exactly as the investigation that motivated this tool did (TEST's 'Bear', 2026-08-10 — two draft entity rows, neither fully correct on its own). No LLM calls.
 
 - `universeSlug` (string, required) — Universe slug, e.g. 'glmz', 'scry', 'nonfiction'.
+- `entityType` (string, optional) — Entity type to scan. Defaults to 'character'.
 
 ### `sanity_scan_node`
 

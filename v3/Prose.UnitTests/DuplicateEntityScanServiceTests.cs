@@ -147,7 +147,7 @@ public class DuplicateEntityScanServiceTests
     }
 
     [Test]
-    public async Task NonCharacterEntityType_IsIgnored()
+    public async Task NonCharacterEntityType_IsIgnored_WhenScanningCharacters()
     {
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
@@ -159,6 +159,28 @@ public class DuplicateEntityScanServiceTests
         var groups = await svc.ScanAsync(universeId);
 
         Assert.That(groups, Is.Empty);
+    }
+
+    [Test]
+    public async Task ScanAsync_WithExplicitEntityType_ScansThatTypeOnly()
+    {
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.Entities.Add(new Entity { Id = Guid.CreateVersion7(), UniverseId = universeId, EntityType = "faction", Name = "Lotus Syndicate", Slug = "lotus-syndicate" });
+            db.Entities.Add(new Entity { Id = Guid.CreateVersion7(), UniverseId = universeId, EntityType = "faction", Name = "Lotus Syndicate", Slug = "lotus-syndicate-b" });
+            // A character duplicate that must NOT show up when scanning "faction".
+            db.Entities.Add(new Entity { Id = Guid.CreateVersion7(), UniverseId = universeId, EntityType = "character", Name = "Renko Moss", Slug = "renko-moss-a" });
+            db.Entities.Add(new Entity { Id = Guid.CreateVersion7(), UniverseId = universeId, EntityType = "character", Name = "Renko Moss", Slug = "renko-moss-b" });
+            await db.SaveChangesAsync();
+        }
+
+        var factionGroups = await svc.ScanAsync(universeId, "faction");
+        var characterGroups = await svc.ScanAsync(universeId, "character");
+
+        Assert.That(factionGroups, Has.Count.EqualTo(1));
+        Assert.That(factionGroups[0].Candidates.Select(c => c.Name), Has.All.EqualTo("Lotus Syndicate"));
+        Assert.That(characterGroups, Has.Count.EqualTo(1));
+        Assert.That(characterGroups[0].Candidates.Select(c => c.Name), Has.All.EqualTo("Renko Moss"));
     }
 
     [Test]

@@ -137,27 +137,30 @@ public class DataIntegrityTools(
         }, JsonOpts);
     }
 
-    /// <summary>Scan a universe's character Entities for duplicate/near-duplicate names.</summary>
+    /// <summary>Scan a universe's Entities of one type for duplicate/near-duplicate names.</summary>
     [McpServerTool, Description(
-        "Scan a universe's character Entities for duplicate or near-duplicate names (exact match, " +
-        "or exactly 1 edit apart, e.g. \"Boris Johansen\" vs \"Boris Johanssen\") that are NOT " +
-        "explained by legitimate cross-book disambiguation (Entity.OriginNodeId set to different " +
-        "values, meaning deliberately distinct characters in different books' continuity). Finds " +
+        "Scan a universe's Entities of one EntityType (default 'character'; also useful for " +
+        "'faction', 'place', etc.) for duplicate or near-duplicate names (exact match, or exactly " +
+        "1 edit apart, e.g. \"Boris Johansen\" vs \"Boris Johanssen\") that are NOT explained by " +
+        "legitimate cross-book disambiguation (Entity.OriginNodeId set to different values, " +
+        "meaning deliberately distinct characters in different books' continuity). Finds " +
         "candidates only — it does not merge or delete anything; resolving a duplicate requires " +
         "reading the actual prose to determine which row (if either) matches what was actually " +
         "written, exactly as the investigation that motivated this tool did (TEST's 'Bear', " +
         "2026-08-10 — two draft entity rows, neither fully correct on its own). No LLM calls.")]
     public async Task<string> DuplicateEntityScan(
-        [Description("Universe slug, e.g. 'glmz', 'scry', 'nonfiction'.")] string universeSlug)
+        [Description("Universe slug, e.g. 'glmz', 'scry', 'nonfiction'.")] string universeSlug,
+        [Description("Entity type to scan. Defaults to 'character'.")] string entityType = "character")
     {
         var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
             return JsonSerializer.Serialize(new { error = "unknown_universe", universeSlug }, JsonOpts);
 
-        var groups = await duplicateEntityScan.ScanAsync(universeId.Value);
+        var groups = await duplicateEntityScan.ScanAsync(universeId.Value, entityType);
         return JsonSerializer.Serialize(new
         {
             universe = universeSlug,
+            entityType,
             groupCount = groups.Count,
             groups = groups.Select(g => new
             {
