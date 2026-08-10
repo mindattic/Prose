@@ -330,21 +330,7 @@ public class BookHealthService(
     private async Task SanityScanAsync(Guid nodeId, string slug, CancellationToken ct)
     {
         var report = await sanityScan.ScanAsync(nodeId, ct);
-
-        // filePath stays a plain "node:{slug}" (matching TimelineCheckAsync/BeatVerificationAsync
-        // just above) — Upsert's own dedup key is filePath+category+summary combined, and summary
-        // already encodes Kind+beat#+message, which is enough uniqueness on its own. (NOT
-        // string.GetHashCode() of the message here: .NET randomizes string hash codes per process
-        // by default, which would mint a fresh "unique" dedup key — and a fresh Findings row —
-        // every single run instead of ever actually deduping.)
-        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SANITY ");
-        foreach (var f in report.Findings)
-        {
-            var sev = f.Severity == "block" ? FindingSeverity.High : FindingSeverity.Medium;
-            var where = f.BeatNumber.HasValue ? $" (beat #{f.BeatNumber})" : "";
-            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.ProseHealth, sev,
-                $"SANITY [{f.Kind}]{where}: {f.Message}", snippet: f.Snippet, suggestedFix: null);
-        }
+        SanityScanService.FileFindings(findingsSvc, slug, report);
     }
 
     /// <summary>BeatCoordinationService produces a bible↔blueprint↔beat coverage report but

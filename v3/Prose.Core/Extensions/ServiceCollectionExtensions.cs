@@ -58,6 +58,9 @@ public static class ServiceCollectionExtensions
         services.AddHostedService(sp => sp.GetRequiredService<ContinuityLongSweepService>());
         // Living-world story-time tick (ships disabled-by-default).
         services.AddHostedService(sp => sp.GetRequiredService<WorldTickService>());
+        // Once-a-day corpus-wide sanity-scan (code-leak/mojibake/undefined-acronym/
+        // length-floor) — zero LLM calls, so no ongoing API cost from running unattended.
+        services.AddHostedService<SanityScanBackgroundService>();
         return services;
     }
 

@@ -437,6 +437,33 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
             Findings:          ordered);
     }
 
+    /// <summary>
+    /// Files a <see cref="SanityReport"/>'s findings into the shared Findings table under
+    /// the node's "SANITY " prefix, clearing any stale rows first. Shared by
+    /// <see cref="BookHealthService"/>'s on-demand --audit-book/book_health path and
+    /// <see cref="SanityScanBackgroundService"/>'s periodic sweep — both write into the
+    /// same node-scoped prefix, so whichever ran most recently is authoritative and
+    /// neither leaves stale rows behind. Kept here (not duplicated in each caller) so the
+    /// filing logic — severity mapping, dedup-key shape — only exists once.
+    /// </summary>
+    public static void FileFindings(FindingsService findingsSvc, string slug, SanityReport report)
+    {
+        // filePath stays a plain "node:{slug}" — Upsert's own dedup key is
+        // filePath+category+summary combined, and summary already encodes
+        // Kind+beat#+message, which is enough uniqueness on its own. (NOT
+        // string.GetHashCode() of the message here: .NET randomizes string hash codes
+        // per process by default, which would mint a fresh "unique" dedup key — and a
+        // fresh Findings row — every single run instead of ever actually deduping.)
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SANITY ");
+        foreach (var f in report.Findings)
+        {
+            var sev = f.Severity == "block" ? FindingSeverity.High : FindingSeverity.Medium;
+            var where = f.BeatNumber.HasValue ? $" (beat #{f.BeatNumber})" : "";
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.ProseHealth, sev,
+                $"SANITY [{f.Kind}]{where}: {f.Message}", snippet: f.Snippet, suggestedFix: null);
+        }
+    }
+
     // ── Helpers ───────────────────────────────────────────────────────────────
 
     /// <summary>
