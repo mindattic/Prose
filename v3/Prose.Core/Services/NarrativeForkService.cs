@@ -46,11 +46,15 @@ public class NarrativeForkService(
                 .FirstOrDefaultAsync(ct);
             bibleText = node?.NodeBible;
 
-            var chapterIds = await db.Nodes.AsNoTracking()
-                .Where(s => s.ParentNodeId == parentNodeId)
-                .OrderBy(s => s.SortKey)
-                .Select(s => s.Id)
-                .ToListAsync(ct);
+            // Descend to LEAF nodes, not just direct children — a split-collection book
+            // (parentNodeId -> "Chapter N" container with 0 direct beats -> real chapters ->
+            // beats, e.g. BLST/ICFI/RTR/VIGL) has its real chapters two levels down.
+            // Direct-children-only would see just the one container, so completedChapterIndex
+            // could never advance past 0 and every later chapter would resolve nextChapterId
+            // to null — silently disabling forking for the rest of the book. Preserve
+            // GetLeafDescendantIdsAsync's own return order rather than re-sorting by
+            // Node.SortKey, which is only comparable within one parent's sibling group.
+            var chapterIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, parentNodeId, ct);
 
             nextChapterId = chapterIds.Count > completedChapterIndex + 1
                 ? chapterIds[completedChapterIndex + 1]

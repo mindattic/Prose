@@ -45,10 +45,16 @@ public static class BackfillBeatMetaCli
             .FirstOrDefaultAsync();
         if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 2; }
 
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == root.Id)
-            .OrderBy(s => s.SortKey).Select(s => s.Id).ToListAsync();
-        var nodeIds = childIds.Count > 0 ? childIds : [root.Id];
+        // Descend to LEAF nodes, not just direct children — split-collection books
+        // (BLST/ICFI/RTR/VIGL: Book -> "Chapter N" container with 0 direct beats -> real
+        // chapters -> beats) have real chapters two levels down. See BackfillCoverageCli
+        // (2026-08-10) for the same fix on the sibling coverage-backfill command.
+        // Preserve GetLeafDescendantIdsAsync's own return order (its comment: "chapter order,
+        // then beat SortKey within chapter" below relies on this) — re-sorting by Node.SortKey
+        // is only valid within one parent's sibling group and would misorder anything nested
+        // deeper than one split-collection level.
+        // (GetLeafDescendantIdsAsync always returns at least [root.Id] when root is childless.)
+        var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, root.Id);
 
         // All beats in global reading order: chapter order, then beat SortKey within chapter.
         var ordered = new List<Guid>();

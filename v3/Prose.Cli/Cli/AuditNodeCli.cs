@@ -52,11 +52,20 @@ public static class AuditNodeCli
             .FirstOrDefaultAsync();
         if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 2; }
 
-        var children = await db.Nodes.AsNoTracking()
-            .Where(s => s.ParentNodeId == root.Id)
-            .OrderBy(s => s.SortKey)
-            .Select(s => new ChapterRef(s.Id, s.Title, s.Slug))
-            .ToListAsync();
+        // Descend to LEAF nodes, not just direct children — a split-collection book (Book ->
+        // intermediate "Chapter N" container with 0 direct beats -> real chapters -> beats,
+        // e.g. BLST/ICFI/RTR/VIGL) has its real chapters two levels down. Direct-children-only
+        // used to silently census just the empty container, hiding the whole book. Same bug
+        // class fixed in WorkflowMonitorService (2026-08-09) and BackfillCoverageCli (2026-08-10).
+        // Preserve GetLeafDescendantIdsAsync's own return order rather than re-sorting by
+        // Node.SortKey — SortKey is only comparable within one parent's sibling group; a flat
+        // re-sort across leaves from different branches would silently misorder anything
+        // nested deeper than one split-collection level.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, root.Id);
+        var byId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(s => leafIds.Contains(s.Id))
+            .ToDictionaryAsync(s => s.Id, s => new ChapterRef(s.Id, s.Title, s.Slug));
+        var children = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();
         var chapters = children.Count > 0 ? children : [new ChapterRef(root.Id, root.Title, root.Slug)];
 
         var sb = new StringBuilder();

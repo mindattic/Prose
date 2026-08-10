@@ -58,9 +58,15 @@ public static class PruneDisabledCli
             return 1;
         }
 
-        // SS-A43: collect all node IDs (book + chapter children).
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == node.Id)
+        // SS-A43: collect all node IDs (book + chapter descendants). Descend to LEAF nodes,
+        // not just direct children — a split-collection book (Book -> "Chapter N" container
+        // with 0 direct beats -> real chapters -> beats, e.g. BLST/ICFI/RTR/VIGL) has its real
+        // chapters two levels down. Direct-children-only used to silently miss every disabled
+        // beat living in those real chapters. Same bug class fixed in WorkflowMonitorService
+        // (2026-08-09) and BackfillCoverageCli (2026-08-10).
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
+        var childIds = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => leafIds.Contains(n.Id))
             .Select(n => n.Id).ToListAsync();
         var nodeIds = childIds.Count > 0
             ? childIds

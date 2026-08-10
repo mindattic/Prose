@@ -58,14 +58,23 @@ public static class RebeatNodeCli
                 if (node == null) { Console.Error.WriteLine("[rebeat] Node not found (or id prefix ambiguous)."); return 1; }
 
                 // Rebeat targets chapters, not the book node — beats live in chapters.
-                // If the node is a book, expand to its chapter children.
+                // If the node is a book, expand to its real chapters. Descend to LEAF nodes,
+                // not just direct children filtered by Kind=="chapter" — a split-collection
+                // book (Book -> "Chapter N" container with 0 direct beats -> real chapters ->
+                // beats, e.g. BLST/ICFI/RTR/VIGL) has an intermediate container whose OWN Kind
+                // is also "chapter", so the old filter matched that empty container instead of
+                // the real chapters beneath it. Same bug class fixed in WorkflowMonitorService
+                // (2026-08-09) and BackfillCoverageCli (2026-08-10).
                 if (node.Kind == "book")
                 {
-                    var chapters = await db.Nodes.AsNoTracking()
-                        .Where(c => c.ParentNodeId == node.Id && c.Kind == "chapter")
-                        .OrderBy(c => c.SortKey)
+                    // Preserve leaf return order rather than re-sorting by Node.SortKey, which
+                    // is only comparable within one parent's sibling group.
+                    var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
+                    var byId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+                        .Where(c => leafIds.Contains(c.Id))
                         .Select(c => new { c.Id, c.Title })
-                        .ToListAsync();
+                        .ToDictionaryAsync(c => c.Id);
+                    var chapters = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();
                     if (chapters.Count > 0)
                     {
                         foreach (var ch in chapters) targets.Add((ch.Id, $"{node.Title} / {ch.Title}"));

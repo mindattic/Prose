@@ -51,10 +51,12 @@ public class WorkflowMonitorTools(
             .FirstOrDefaultAsync();
         if (node == null) return $"Node not found: {slug}";
 
-        // SS-A43: beats live on chapter children for book-mode stories.
-        var childIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == node.Id)
-            .Select(n => n.Id).ToListAsync();
+        // SS-A43: beats live on chapter descendants for book-mode stories. Descend to LEAF
+        // nodes, not just direct children — a split-collection book (Book -> "Chapter N"
+        // container with 0 direct beats -> real chapters -> beats, e.g. BLST/ICFI/RTR/VIGL)
+        // has its real chapters two levels down. Same bug class fixed in WorkflowMonitorService
+        // (2026-08-09) and BackfillCoverageCli (2026-08-10).
+        var childIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
         var beatNodeIds = childIds.Count > 0 ? childIds : new List<Guid> { node.Id };
 
         var beatIds = await db.BeatNodes.AsNoTracking()

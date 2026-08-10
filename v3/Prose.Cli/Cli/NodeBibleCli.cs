@@ -59,11 +59,12 @@ public static class NodeBibleCli
             return 1;
         }
 
-        // SS-A43: beats live on chapter children for book-mode books.
-        var childNodeIds = await db.Nodes.AsNoTracking()
-            .Where(n => n.ParentNodeId == node.Id)
-            .Select(n => n.Id)
-            .ToListAsync();
+        // SS-A43: beats live on chapter descendants for book-mode books. Descend to LEAF
+        // nodes, not just direct children — a split-collection book (Book -> "Chapter N"
+        // container with 0 direct beats -> real chapters -> beats, e.g. BLST/ICFI/RTR/VIGL)
+        // has its real chapters two levels down. Same bug class fixed in WorkflowMonitorService
+        // (2026-08-09) and BackfillCoverageCli (2026-08-10).
+        var childNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
         var searchIds = childNodeIds.Count > 0 ? childNodeIds : new List<Guid> { node.Id };
 
         // Determine target beat count

@@ -79,12 +79,21 @@ public class BeatCoordinationService
 
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
 
-        // Chapters in spine order → chapter index (blueprint arrays are chapter-parallel)
-        var chapters = await db.Nodes.AsNoTracking()
-            .Where(c => c.ParentNodeId == node.Id)
-            .OrderBy(c => c.SortKey)
+        // Chapters in spine order → chapter index (blueprint arrays are chapter-parallel).
+        // Descend to LEAF nodes, not just direct children — a split-collection book (Book ->
+        // "Chapter N" container with 0 direct beats -> real chapters -> beats, e.g.
+        // BLST/ICFI/RTR/VIGL) has its real chapters two levels down; direct-children-only
+        // found just the empty container, reporting totalBeats:0 for these books (confirmed
+        // live 2026-08-10 — a --audit-book run regenerated VIGL.coordination.json with an
+        // empty beats array where 318 real beats existed). Preserve GetLeafDescendantIdsAsync's
+        // own return order rather than re-sorting by Node.SortKey, which is only comparable
+        // within one parent's sibling group.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
+        var chapterMeta = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(c => leafIds.Contains(c.Id))
             .Select(c => new { c.Id, c.NodeCode, c.Title, c.SortKey })
-            .ToListAsync(ct);
+            .ToDictionaryAsync(c => c.Id, ct);
+        var chapters = leafIds.Where(chapterMeta.ContainsKey).Select(id => chapterMeta[id]).ToList();
 
         // Direct beats (single-node books) count as one "chapter 0"
         var chapterIndex = new Dictionary<Guid, int>();
@@ -105,20 +114,30 @@ public class BeatCoordinationService
             ?? new Dictionary<Guid, List<Data.Entities.NodeStructuralBlueprintBeatTag>>();
         bool chapterGranular = string.Equals(bp?.Granularity, "chapter", StringComparison.OrdinalIgnoreCase);
 
-        // All enabled beats across the node's chapters, in reading order
-        var rows = await (
-            from bn in db.BeatNodes.AsNoTracking()
-            join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
-            join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
-            where bn.IsEnabled && (bn.NodeId == node.Id || c.ParentNodeId == node.Id)
-            orderby c.SortKey, bn.SortKey
-            select new
-            {
-                b.Id, b.Number, b.Title, b.StructureRole, b.Act,
-                b.Description, b.Subtext, b.Score,
-                Prose = b.Text,
-                ChapterId = c.Id,
-            }).ToListAsync(ct);
+        // All enabled beats across the node's chapters, in reading order. Query per leaf, in
+        // leaf order (already correct depth-first order from GetLeafDescendantIdsAsync), then
+        // concatenate — a single flat "orderby c.SortKey, bn.SortKey" would be wrong the
+        // moment there's more than one leaf: Node.SortKey is only comparable within one
+        // parent's sibling group, and BeatNodes.SortKey restarts at 100 within each chapter
+        // (same fix applied elsewhere, e.g. DcmVizCli, NarrativeForkService).
+        var rows = new List<(Guid Id, int Number, string? Title, string? StructureRole, int Act,
+            string? Description, string? Subtext, double? Score, string Prose, Guid ChapterId)>();
+        foreach (var leafId in leafIds)
+        {
+            var leafRows = await (
+                from bn in db.BeatNodes.AsNoTracking()
+                join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
+                where bn.NodeId == leafId && bn.IsEnabled
+                orderby bn.SortKey
+                select new
+                {
+                    b.Id, b.Number, b.Title, b.StructureRole, b.Act,
+                    b.Description, b.Subtext, b.Score,
+                    Prose = b.Text,
+                }).ToListAsync(ct);
+            rows.AddRange(leafRows.Select(r => (r.Id, r.Number, (string?)r.Title, (string?)r.StructureRole, r.Act,
+                (string?)r.Description, (string?)r.Subtext, r.Score, r.Prose, ChapterId: leafId)));
+        }
 
         // The blueprint arrays are indexed by the blueprint's own granularity:
         // chapter-granular blueprints are chapter-parallel (one entry per chapter),

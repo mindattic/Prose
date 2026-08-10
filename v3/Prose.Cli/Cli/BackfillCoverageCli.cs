@@ -47,13 +47,18 @@ public static class BackfillCoverageCli
         // 2026-08-09 via this same helper. Archived/unincorporated leaves aren't part of the
         // book — exclude them so the rollup reflects the actual canon chapters, not cut
         // scenes or draft scratch.
+        // Preserve GetLeafDescendantIdsAsync's own return order rather than re-sorting by
+        // Node.SortKey — SortKey is only comparable within one parent's sibling group, so a
+        // flat re-sort across leaves from different branches would silently misorder anything
+        // nested deeper than one split-collection level (same footgun documented in
+        // NarrativeForkService/DcmVizCli for BeatNodes.SortKey; applies equally to Nodes here).
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, root.Id);
-        var children = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+        var byId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(s => leafIds.Contains(s.Id)
                      && s.Status != "archived" && s.Status != "unincorporated")
-            .OrderBy(s => s.SortKey)
             .Select(s => new { s.Id, s.Title, s.Slug, s.UniverseId })
-            .ToListAsync();
+            .ToDictionaryAsync(s => s.Id);
+        var children = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();
         var chapters = children.Count > 0
             ? children
             : [root];

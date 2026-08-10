@@ -116,15 +116,27 @@ public static class AutoRunCli
         var started  = DateTime.UtcNow;
         var costBefore = ledger.GetSummary().TotalCost;
 
-        // Determine if this is a book (has chapter children) or a flat node
+        // Determine if this is a book (has chapter children) or a flat node. Descend to LEAF
+        // nodes, not just direct children — a split-collection book (Book -> "Chapter N"
+        // container with 0 direct beats -> real chapters -> beats, e.g. BLST/ICFI/RTR/VIGL)
+        // has its real chapters two levels down. Direct-children-only would treat the empty
+        // container as the book's only "chapter" and write into the wrong node. Same bug
+        // class fixed in WorkflowMonitorService (2026-08-09) and BackfillCoverageCli
+        // (2026-08-10).
         List<(Guid Id, string Title, string Slug, string? Seed)> chapters;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var children = await db.Nodes.AsNoTracking()
-                .Where(s => s.ParentNodeId == nodeId)
-                .OrderBy(s => s.SortKey)
+            // Preserve GetLeafDescendantIdsAsync's own return order rather than re-sorting by
+            // Node.SortKey — narrative generation order matters here (writing chapter 10
+            // before chapter 2 would break continuity), and SortKey is only comparable within
+            // one parent's sibling group, not across branches deeper than one split-collection
+            // level.
+            var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId);
+            var byId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+                .Where(s => leafIds.Contains(s.Id))
                 .Select(s => new { s.Id, s.Title, s.Slug, s.Seed })
-                .ToListAsync();
+                .ToDictionaryAsync(s => s.Id);
+            var children = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();
 
             chapters = children.Select(c => (c.Id, c.Title ?? c.Slug ?? c.Id.ToString(), c.Slug ?? c.Id.ToString(), c.Seed)).ToList();
         }

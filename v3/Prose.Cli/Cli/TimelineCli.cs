@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Interfaces;
+using Prose.Core.Services;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -79,12 +80,20 @@ public static class TimelineCli
         }
         else
         {
-            // Book / collection — load each episode separately.
-            var children = await db.Nodes.AsNoTracking()
-                .Where(s => s.ParentNodeId == node.Id)
-                .OrderBy(s => s.SortKey)
+            // Book / collection — load each episode separately. Descend to LEAF nodes, not
+            // just direct children — a split-collection book (Book -> "Chapter N" container
+            // with 0 direct beats -> real chapters -> beats, e.g. BLST/ICFI/RTR/VIGL) has its
+            // real chapters/episodes two levels down. Direct-children-only used to silently
+            // report "no beats found" for these books. Same bug class fixed in
+            // WorkflowMonitorService (2026-08-09) and BackfillCoverageCli (2026-08-10).
+            // Preserve GetLeafDescendantIdsAsync's own return order rather than re-sorting by
+            // Node.SortKey, which is only comparable within one parent's sibling group.
+            var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
+            var byId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+                .Where(s => leafIds.Contains(s.Id))
                 .Select(s => new { s.Id, s.Title })
-                .ToListAsync();
+                .ToDictionaryAsync(s => s.Id);
+            var children = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();
 
             if (children.Count == 0)
             {

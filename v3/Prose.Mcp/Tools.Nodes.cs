@@ -765,11 +765,20 @@ public class NodeTools
         if (node.Kind == "book")
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            var chapters = await db.Nodes.AsNoTracking()
-                .Where(c => c.ParentNodeId == node.Id && c.Kind == "chapter")
-                .OrderBy(c => c.SortKey)
+            // Descend to LEAF nodes, not just direct children filtered by Kind=="chapter" —
+            // a split-collection book (Book -> "Chapter N" container with 0 direct beats ->
+            // real chapters -> beats, e.g. BLST/ICFI/RTR/VIGL) has an intermediate container
+            // whose OWN Kind is also "chapter", so the old filter matched that empty container
+            // instead of the real chapters beneath it — the exact class of silent-mistarget
+            // bug this method's own comment above already warns about, just one level deeper.
+            // Preserve leaf return order rather than re-sorting by Node.SortKey, which is
+            // only comparable within one parent's sibling group.
+            var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
+            var byId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+                .Where(c => leafIds.Contains(c.Id))
                 .Select(c => new { c.Id, c.Title })
-                .ToListAsync();
+                .ToDictionaryAsync(c => c.Id);
+            var chapters = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();
             if (chapters.Count > 0)
                 targets = chapters.Select(c => (c.Id, $"{node.Title} / {c.Title}")).ToList();
         }
