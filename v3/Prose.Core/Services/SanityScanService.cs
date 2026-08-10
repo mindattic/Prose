@@ -16,6 +16,9 @@ namespace Prose.Core.Services;
 //   B) Undefined all-caps acronym -- \b[A-Z]{3,6}\b not in whitelist or entity DB
 //   C) Heft / length floor        -- total word count -> PDF page estimate
 //   D) Mojibake detector          -- UTF-8 -> codepage corruption artifacts
+//   E) Relationship-duration proximity claim -- "three seasons fighting beside her" style
+//      phrases, candidate-flagged for logic-sweep review (not an auto-confirmed defect --
+//      see the class comment above CheckRelationshipDurationClaims for why).
 //
 // No LLM calls; fast enough to run in CI / as a pre-publish gate.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -186,6 +189,50 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         "â€”",                   // em dash misread
         "Â",                               // stray C2 prefix byte
     ];
+
+    // ── Check E: relationship-duration proximity claim ─────────────────────────
+    // Found live 2026-08-10 during a manual Logic Sweep on TRUCE: a character-pair
+    // established on-page as having just met (via a tournament draw) was later described,
+    // in the same book, with year/season/decade-scale partnership language ("three seasons
+    // fighting beside her taught him that", "she's learned over the years") -- a genuine
+    // BLOCKER-tier knowledge-states/causality defect. A raw corpus-wide search for
+    // duration-word + partnership-word ANYWHERE in the same beat produced ~34 hits, almost
+    // all coincidental (a ~1500-word beat easily contains both words for unrelated reasons).
+    // Requiring the two phrases to land in the SAME SENTENCE cuts that noise down to the
+    // real pattern shape. This is a candidate flag for a human/logic-sweep reader to judge
+    // against the book's actual established relationship timeline -- NOT an auto-confirmed
+    // defect, since plenty of books genuinely do have decade-scale partnerships (see
+    // "no fix needed" case: a duration claim is fine when the book's own established
+    // meeting point supports it).
+    static readonly Regex DurationWord = new(
+        @"\b(?:a|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d+)\s+(?:seasons?|years?|decades?)\b" +
+        @"|\bover the years\b|\ball these years\b|\bfor years\b|\bfor seasons\b|\byears now\b",
+        RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
+    static readonly Regex PartnershipPhrase = new(
+        @"\b(?:fighting beside|fought beside|beside (?:her|him|them)|has taught (?:him|her|them)|taught (?:him|her|them) that|trusted (?:him|her|them)|known (?:him|her|them)|partnership|fought together|stood beside)\b",
+        RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
+    static readonly Regex SentenceSplit = new(@"(?<=[.!?])\s+", RegexOptions.Compiled);
+
+    /// <summary>
+    /// True if any single sentence in <paramref name="text"/> contains both a duration-word
+    /// phrase (e.g. "three seasons") and a partnership phrase (e.g. "fighting beside her").
+    /// Returns the first matching sentence via <paramref name="sentence"/>, or null if none.
+    /// </summary>
+    internal static bool HasRelationshipDurationClaim(string text, out string? sentence)
+    {
+        foreach (var s in SentenceSplit.Split(text))
+        {
+            if (DurationWord.IsMatch(s) && PartnershipPhrase.IsMatch(s))
+            {
+                sentence = s.Trim();
+                return true;
+            }
+        }
+        sentence = null;
+        return false;
+    }
 
     // ── Public API ────────────────────────────────────────────────────────────
 
@@ -392,6 +439,18 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
                     Message:    "Possible mojibake (encoding corruption) detected.",
                     Snippet:    Snippet(text, idx, 80)));
                 break; // one finding per beat
+            }
+
+            // ── Check E: relationship-duration proximity claim ────────────────
+            if (HasRelationshipDurationClaim(text, out var durationSentence))
+            {
+                rawFindings.Add(new SanityFinding(
+                    Severity:   "warn",
+                    Kind:       "RelationshipDurationClaim",
+                    BeatNumber: beat.Number,
+                    Message:    "Year/season/decade-scale partnership language -- verify against " +
+                                "this book's established relationship timeline (logic-sweep knowledge-states check).",
+                    Snippet:    durationSentence));
             }
         }
 
