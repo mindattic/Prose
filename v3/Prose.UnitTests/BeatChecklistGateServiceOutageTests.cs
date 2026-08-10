@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Abstractions;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
+using Prose.Core.Interfaces;
 using Prose.Core.Services;
 
 namespace Prose.UnitTests;
@@ -94,5 +95,56 @@ public class BeatChecklistGateServiceOutageTests
         // invariant AffectBehaviorService's own doc comment already names, now enforced by a test
         // for the service this whole session's story centers on.
         Assert.ThrowsAsync<InvalidOperationException>(async () => await svc.RunAsync(nodeId));
+    }
+
+    private sealed class MalformedJsonLlmService : ILlmService
+    {
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user,
+            double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default) =>
+            Task.FromResult("not valid json at all");
+    }
+
+    /// <summary>
+    /// RFC 0011 Brick 5: found via a real large-book scale audit (IxS, 1162 beats) that a
+    /// parse-failed beat is correctly never cached — but was also never surfaced anywhere. 31 of
+    /// 1162 beats (2.7%) silently had no persisted evaluation, visible only by manually diffing
+    /// BeatChecklistResults against the true beat count. This is exactly the "silent partial
+    /// coverage at scale" class of bug Brick 5 exists to catch — confirmed here as a unit test
+    /// instead of left as a one-off manual diff.
+    /// </summary>
+    [Test]
+    public async Task RunAsync_ParseFailure_IsReportedNotSilentlyDropped()
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var nodeId = Guid.CreateVersion7();
+        var node = NodeFactory.Create("book");
+        node.Id = nodeId;
+        node.Slug = "s-" + Guid.NewGuid().ToString("N")[..8];
+        node.Title = "T";
+        node.Status = "draft";
+        node.SortKey = 100;
+        db.Nodes.Add(node);
+        var beat = new Beat { Id = Guid.CreateVersion7(), Number = 42, Text = "Some prose long enough to evaluate." };
+        db.Beats.Add(beat);
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        await db.SaveChangesAsync();
+
+        var svc = new BeatChecklistGateService(
+            dbFactory,
+            new MalformedJsonLlmService(),
+            new FindingsService(dbFactory, paths),
+            new SettingsService(Path.Combine(tempRoot, "settings")),
+            new VerificationContextService(dbFactory, NullLogger<VerificationContextService>.Instance),
+            NullLogger<BeatChecklistGateService>.Instance);
+
+        var result = await svc.RunAsync(nodeId);
+
+        Assert.That(result.NotEvaluatedBeatNumbers, Is.EqualTo(new[] { 42 }),
+            "a beat whose LLM response failed to parse must be reported, not silently absent from both the result and any count");
+
+        await using var verifyDb = await dbFactory.CreateDbContextAsync();
+        Assert.That(await verifyDb.BeatChecklistResults.AnyAsync(r => r.BeatId == beat.Id), Is.False,
+            "a parse-failed beat correctly stays uncached (so it's retried next run), but that must not mean it goes unreported this run");
     }
 }

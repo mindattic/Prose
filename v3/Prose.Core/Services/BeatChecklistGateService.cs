@@ -85,7 +85,8 @@ public sealed class BeatChecklistGateService(
         Guid NodeId, string Slug, string Title, string RuleSetVersion,
         IReadOnlyList<BeatVerdict> Beats,
         IReadOnlyList<string> BookLevelFindings,
-        int Evaluated, int FromCache, int FindingsFiled);
+        int Evaluated, int FromCache, int FindingsFiled,
+        IReadOnlyList<int> NotEvaluatedBeatNumbers);
 
     public async Task<ChecklistRunResult> RunAsync(Guid nodeId, bool force = false, CancellationToken ct = default)
     {
@@ -107,7 +108,7 @@ public sealed class BeatChecklistGateService(
         var beats = beatRows.OrderBy(b => chapterOrder[b.NodeId]).ThenBy(b => b.SortKey).ToList();
         if (beats.Count == 0)
             return new ChecklistRunResult(nodeId, node.Slug ?? "", node.Title, "", Array.Empty<BeatVerdict>(),
-                Array.Empty<string>(), 0, 0, 0);
+                Array.Empty<string>(), 0, 0, 0, Array.Empty<int>());
 
         // ── rules, parsed live from the canon DB ──────────────────────────────────
         var (donts, moves, ruleSetVersion) = await LoadRulesAsync(db, ct);
@@ -118,6 +119,12 @@ public sealed class BeatChecklistGateService(
 
         var verdicts = new List<BeatVerdict>();
         var povVoiceCache = new Dictionary<Guid, string?>();
+        // RFC 0011 Brick 5: found via a large-book scale audit (IxS, 1162 beats) that a
+        // parse-failed beat is correctly never cached (see the comment below) but was also never
+        // SURFACED anywhere — 31/1162 beats (2.7%) silently had no persisted evaluation at all,
+        // visible only by manually diffing BeatChecklistResults against the true beat count.
+        // Track and report them instead of leaving the gap invisible.
+        var notEvaluated = new List<int>();
         int evaluated = 0, fromCache = 0;
         foreach (var beat in beats)
         {
@@ -136,6 +143,7 @@ public sealed class BeatChecklistGateService(
             var povVoiceHint = await verificationContext.GetPovVoiceHintAsync(beat.Id, povVoiceCache, ct);
             var (verdict, parseFailed) = await EvaluateBeatAsync(beat.Id, beat.Number, beat.Text, donts, moves, povVoiceHint, ct);
             evaluated++;
+            if (parseFailed) notEvaluated.Add(beat.Number);
 
             // A truncated/non-JSON response is a degraded placeholder for THIS run only — caching
             // it under the current text hash would make the "will re-evaluate next run" promise a
@@ -247,11 +255,11 @@ public sealed class BeatChecklistGateService(
             filed++;
         }
 
-        log.LogInformation("Checklist {Slug}: {Evaluated} evaluated, {Cached} cached, {Filed} finding(s).",
-            node.Slug, evaluated, fromCache, filed);
+        log.LogInformation("Checklist {Slug}: {Evaluated} evaluated, {Cached} cached, {Filed} finding(s), {NotEvaluated} beat(s) never evaluated (parse failure).",
+            node.Slug, evaluated, fromCache, filed, notEvaluated.Count);
 
         return new ChecklistRunResult(nodeId, node.Slug ?? "", node.Title, ruleSetVersion,
-            verdicts, bookFindings, evaluated, fromCache, filed);
+            verdicts, bookFindings, evaluated, fromCache, filed, notEvaluated);
     }
 
     // ── deterministic corpus-rate rules (ported from CraftRuleAuditService 2026-08-08,

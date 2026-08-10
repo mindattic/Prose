@@ -221,6 +221,37 @@ extremes this RFC's "any scale" promises.
 **Acceptance test:** a documented pass/fail per pipeline stage at both size extremes, not an
 assumption that "it probably scales."
 
+**RESOLVED 2026-08-10.** Generation itself couldn't be stress-tested from scratch (Anthropic
+outage, per Brick 3) — used the corpus's actual size extremes instead of building new ones:
+LLSS (6 beats, the smallest existing book) for the tiny end, IxS (1,162 beats, the largest — not
+TLC's 757 as originally guessed above; corrected here from a live query) for the large end.
+
+- **Tiny end (`--verify-book`, LLSS, 6 beats): PASS.** Ran clean, "Beats checked: 6," zero
+  crashes. Directly exercised the `IntentOutlierMinSample = 15` fallback path live (6 < 15):
+  beat #5305's DeclaredPurpose check correctly fell back to absolute-threshold-only, exactly as
+  documented — not just covered by a synthetic unit test, but observed on a real book.
+- **Large end (`--verify-book`, IxS, 1,162 beats): PASS.** "Beats checked: 1,162," completed
+  without timeout or truncation.
+- **Large end (`--craft-checklist` coverage, IxS): FAIL — a real, scale-correlated bug, found
+  and fixed.** Diffed `BeatChecklistResults` against the true beat count: only 1,131 of 1,162
+  beats (97.3%) had a persisted evaluation from IxS's last full run. The 31 missing beat numbers
+  are scattered across the entire book (not clustered at the highest numbers), ruling out "beats
+  added later" — consistent instead with `EvaluateBeatAsync`'s own documented, correct behavior
+  of never caching a beat whose LLM response failed to parse (so it retries next run) — except
+  that gap was **never surfaced anywhere**, silently invisible unless someone manually diffs
+  counts the way this brick just did. **Fixed**: `ChecklistRunResult` gained
+  `NotEvaluatedBeatNumbers`, populated whenever `EvaluateBeatAsync` reports a parse failure;
+  `prose --craft-checklist`'s CLI output now prints a `WARNING` line naming exactly which beats
+  were skipped this run. 2 new unit tests (a parse-failure fixture confirms both the reporting
+  and that the beat correctly stays uncached for retry); full suite 1,966/1,966.
+
+**Net conclusion:** the pipeline handles both size extremes correctly for the mechanical/embedding
+verification path (`--verify-book`) — the tiny-book fallback and large-book completion both work
+exactly as designed. The one genuine failure this brick found was real and scale-correlated (a
+1,162-beat book has ~200x more chances to hit a parse-failure edge case than a 6-beat one), and —
+unlike Brick 4's diagnosis-only deliverable — this one had a concrete, bounded code fix available
+without needing blocked LLM access, so it shipped as one.
+
 ## 8. Sequencing and what this RFC deliberately does NOT try to fix
 
 **Order:** Brick 1 → Brick 2 → Brick 3 → Brick 4 → Brick 5. Bricks 1-2 are pure infrastructure

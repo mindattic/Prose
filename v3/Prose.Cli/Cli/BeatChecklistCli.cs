@@ -62,6 +62,9 @@ public static class BeatChecklistCli
         foreach (var bf in r.BookLevelFindings)
             Console.WriteLine($"      BOOK: {bf}");
         Console.WriteLine($"[checklist]   {r.FindingsFiled} finding(s) filed (Category=CraftChecklist).");
+        if (r.NotEvaluatedBeatNumbers.Count > 0)
+            Console.WriteLine($"[checklist]   WARNING: {r.NotEvaluatedBeatNumbers.Count} beat(s) never evaluated this run " +
+                $"(LLM response failed to parse — will retry next run): {string.Join(", ", r.NotEvaluatedBeatNumbers)}");
 
         if (json)
             Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(r,
