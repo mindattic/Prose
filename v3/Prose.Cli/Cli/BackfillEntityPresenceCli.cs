@@ -49,17 +49,7 @@ public static class BackfillEntityPresenceCli
                 nodeIdScope = leafIds.Count > 0 ? leafIds : new List<Guid> { node.Id };
             }
 
-            var query =
-                from bn in db.BeatNodes.AsNoTracking()
-                where bn.IsEnabled
-                join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
-                where b.Text != null && b.Text != ""
-                select new { bn.NodeId, b.Id };
-
-            if (nodeIdScope != null)
-                query = query.Where(x => nodeIdScope.Contains(x.NodeId));
-
-            beatIds = await query.Select(x => x.Id).ToListAsync();
+            beatIds = await SelectCandidateBeatIdsAsync(db, nodeIdScope);
         }
 
         // BeatEntities has no EF mapping (raw-SQL table, per CLAUDE.md) — filter for "zero rows"
@@ -88,5 +78,30 @@ public static class BackfillEntityPresenceCli
 
         Console.WriteLine($"[backfill-entity-presence] processed={assembled} found-entities={foundEntities} still-empty={empty}");
         return 0;
+    }
+
+    /// <summary>
+    /// Every enabled beat with non-empty text, restricted to <paramref name="nodeIdScope"/> when
+    /// given. Always joins through Nodes — even when nodeIdScope is null — because BeatNodes/Beats
+    /// carry no UniverseId of their own, so the ambient --universe global query filter (applied
+    /// only to Nodes) would otherwise never apply, silently processing the WHOLE corpus regardless
+    /// of --universe. Found 2026-08-10: a "--universe scry" run with no --slug reprocessed the
+    /// same leftover beats a prior GLMZ run had already queued, because this join was missing.
+    /// Internal so it's unit-testable without constructing the full CLI's service dependencies.
+    /// </summary>
+    internal static async Task<List<Guid>> SelectCandidateBeatIdsAsync(ProseDbContext db, List<Guid>? nodeIdScope)
+    {
+        var query =
+            from n in db.Nodes.AsNoTracking()
+            join bn in db.BeatNodes.AsNoTracking() on n.Id equals bn.NodeId
+            where bn.IsEnabled
+            join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
+            where b.Text != null && b.Text != ""
+            select new { bn.NodeId, b.Id };
+
+        if (nodeIdScope != null)
+            query = query.Where(x => nodeIdScope.Contains(x.NodeId));
+
+        return await query.Select(x => x.Id).ToListAsync();
     }
 }
