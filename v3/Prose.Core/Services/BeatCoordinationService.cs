@@ -204,26 +204,10 @@ public class BeatCoordinationService
             });
         }
 
-        // How many beat-slots the blueprint's escalation/event arrays actually cover —
-        // beat-granular blueprints are sized to the beat count AT GENERATION TIME and are
-        // never resized when beats are later split, so a book that's grown well past this
-        // capacity will show NO_CONSTRUCTION on every beat beyond it. Exposed so callers
-        // (e.g. BookHealthService) can tell "blueprint is stale/undersized" apart from a
-        // genuine per-beat gap inside the blueprint's covered range.
-        // Bug fixed 2026-08-10: this used to report chapters.Count for chapter-granular books —
-        // how many chapters the BOOK currently has, not how many the BLUEPRINT's escalation/
-        // event arrays actually cover (the field's own doc comment always specified the latter).
-        // Caught live: VIGL and BLST both have chapter-granular blueprints with escalation
-        // curves of length 1 (e.g. "[8]") and a single event-palette entry, covering only
-        // chapter index 0 — but this formula reported ConstructionCapacity=25 (VIGL) / =21
-        // (BLST), the book's real chapter count, hiding the staleness completely and letting
-        // BookHealthService's beat-granular-only consolidation check (which compares this value
-        // against the book's size to decide whether to file ONE "blueprint stale" finding
-        // instead of one per beat) never fire for chapter-granular books. The same Math.Max
-        // formula already used for beat-granular is the correct one for both — it measures the
-        // blueprint's own array size regardless of granularity.
+        // How many beat-slots the blueprint's escalation/event arrays actually cover — see
+        // ComputeConstructionCapacity's own doc comment for the 2026-08-10 bug this fixed.
         int constructionCapacity =
-            Math.Max(escalation.Length, events.Count == 0 ? 0 : events.Max(e => e.BeatIndex) + 1);
+            ComputeConstructionCapacity(escalation.Length, events.Select(e => e.BeatIndex).ToList());
 
         // Book-wide construction context (applies to every beat)
         var bookScope = new BookScopeContext
@@ -369,6 +353,28 @@ public class BeatCoordinationService
         }
         await GeneratedFileWriter.WriteReadOnlyAsync(file, body.TrimEnd() + "\n", ct);
     }
+
+    /// <summary>
+    /// How many index-slots (beats, if beat-granular; chapters, if chapter-granular) the
+    /// blueprint's escalation curve and event palette actually cover — regardless of how many
+    /// beats/chapters the book itself currently has. Exposed as its own testable method so
+    /// callers (e.g. <see cref="BookHealthService"/>) can tell "blueprint is stale/undersized"
+    /// apart from a genuine per-beat gap inside the blueprint's covered range.
+    ///
+    /// Bug fixed 2026-08-10: the inline call site used to special-case chapter-granular
+    /// blueprints to return the book's CURRENT chapter count instead of this same formula —
+    /// always "big enough" by construction, since a book always has as many chapters as it has.
+    /// That silently hid staleness for every chapter-granular book: VIGL and BLST both have
+    /// chapter-granular blueprints with escalation curves of length 1 (e.g. "[8]") and a single
+    /// event-palette entry (covering only index 0), despite having 25 and 21 real chapters, but
+    /// the old formula reported capacity=25 / capacity=21 — hiding the mismatch completely and
+    /// disabling BookHealthService's stale-blueprint consolidation for both books (which compares
+    /// this value against the book's real size to decide whether to file ONE "blueprint stale"
+    /// finding instead of one per beat/chapter). This formula is granularity-agnostic by design:
+    /// it measures the blueprint's own array size, never the book's structure.
+    /// </summary>
+    internal static int ComputeConstructionCapacity(int escalationLength, IReadOnlyList<int> eventBeatIndices) =>
+        Math.Max(escalationLength, eventBeatIndices.Count == 0 ? 0 : eventBeatIndices.Max() + 1);
 
     private static int[] ParseIntArray(string? json)
     {
