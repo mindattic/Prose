@@ -72,6 +72,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Corpus-wide cross-universe contamination scan/cleanup: by definition compares each row's
         // entity universe against its own book's universe — an ambient scope would defeat the point.
         "--fix-cross-universe-contamination",
+        // Corpus-wide stale name-match cleanup: checks each row's own beat text directly, no
+        // ambient scope needed (see FixBadNameMatchesCli).
+        "--fix-bad-name-matches",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -862,6 +865,17 @@ if (args.Contains("--fix-cross-universe-contamination"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await FixCrossUniverseContaminationCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --fix-bad-name-matches [--dry-run]
+// Deletes BeatEntities rows where MatchSource='name' but the entity's Name no longer appears in
+// the beat's current Text (a checkable, unambiguous staleness signal name-matches carry that
+// embedding/graph matches don't). See FixBadNameMatchesCli for root-cause detail.
+if (args.Contains("--fix-bad-name-matches"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await FixBadNameMatchesCli.RunAsync(args, sp);
     return;
 }
 
