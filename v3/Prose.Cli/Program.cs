@@ -69,6 +69,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Corpus-wide relationship backfill: resolves each row against its OWNER's own universe,
         // not an ambient scope (see BackfillCharacterRelationshipsCli).
         "--backfill-character-relationships",
+        // Corpus-wide cross-universe contamination scan/cleanup: by definition compares each row's
+        // entity universe against its own book's universe — an ambient scope would defeat the point.
+        "--fix-cross-universe-contamination",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -848,6 +851,17 @@ if (args.Contains("--backfill-entity-presence"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await BackfillEntityPresenceCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --fix-cross-universe-contamination [--dry-run]
+// Deletes BeatEntities/BeatEntityPresence rows whose entity belongs to a different universe than
+// the beat's own book (a hard "Universe division absolute" violation) — historical bad data, not
+// a live matching-pipeline bug (see FixCrossUniverseContaminationCli for root-cause detail).
+if (args.Contains("--fix-cross-universe-contamination"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await FixCrossUniverseContaminationCli.RunAsync(args, sp);
     return;
 }
 
