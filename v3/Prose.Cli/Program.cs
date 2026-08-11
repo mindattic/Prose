@@ -64,8 +64,8 @@ if (UniverseBootstrap.RequestedSlug == null
         // Corpus-wide staleness reports: resolve each row's own book, not an ambient scope —
         // same shape as --sync-markdown/--generate-canon-md above.
         "--verification-staleness", "--findings-staleness",
-        // Provider health touches no universe-scoped data at all.
-        "--provider-status",
+        // Provider health/config touch no universe-scoped data at all.
+        "--provider-status", "--set-llm-provider",
         // Corpus-wide relationship backfill: resolves each row against its OWNER's own universe,
         // not an ambient scope (see BackfillCharacterRelationshipsCli).
         "--backfill-character-relationships",
@@ -817,6 +817,17 @@ if (args.Contains("--provider-status"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ProviderStatusCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --set-llm-provider claude-api|claude-team [--dry-run]
+// Switches every Settings.json field governing which Claude credential path is active in one
+// command (ActiveLlmProvider always; ReviewJudgeProvider/ReviewAllowedProviders/
+// ReaderQaJuryProviders only where they currently hold the other Claude variant).
+if (args.Contains("--set-llm-provider"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SetLlmProviderCli.RunAsync(args, sp);
     return;
 }
 
