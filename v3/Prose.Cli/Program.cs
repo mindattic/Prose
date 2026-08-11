@@ -851,6 +851,17 @@ if (args.Contains("--backfill-entity-presence"))
     return;
 }
 
+// prose --backfill-short-name-alias [--universe glmz|scry|...] [--dry-run]
+// Registers each multi-word-named character's first name as a CharacterAlias when missing —
+// the root cause behind --backfill-entity-presence's low yield (prose refers to characters by
+// first name; ScanNames only matches full Name or a registered alias). No LLM call.
+if (args.Contains("--backfill-short-name-alias"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BackfillShortNameAliasCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: migrate legacy Books/Chapters/ChapterBeats/Episodes/EpisodeBeats
 // data into the unified Beat/Node schema. Idempotent — safe to re-run.
 //   prose --migrate-nodes

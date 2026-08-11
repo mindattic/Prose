@@ -1,0 +1,325 @@
+{
+  "nodeCode": "BTL",
+  "slug": "between-the-lines-019fed1b",
+  "title": "Between the Lines",
+  "generatedAtUtc": "2026-08-11 00:28:07Z",
+  "totalBeats": 16,
+  "covered": 0,
+  "chapterGranular": false,
+  "bookScope": {
+    "TemporalScheme": "linear",
+    "ResolutionMode": "mixed",
+    "MoralPolarity": "ambivalent",
+    "EndingStyle": "avalanche",
+    "HasSubplot": true,
+    "Granularity": "beat",
+    "HasBlueprint": true,
+    "ConstructionCapacity": 16
+  },
+  "flagCounts": {
+    "NO_PROSE": 16
+  },
+  "beats": [
+    {
+      "BeatId": "019fed2b-c82b-7d19-887d-2ba486f3f92e",
+      "Number": 16962,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "inciting-incident",
+      "Act": 0,
+      "Meaning": "Cold open at Checkpoint 14: Idris\u0027s routine graft, ARC\u0027s chronic under-resourcing, and the DRU response-time manipulation established as a standing capability planted for the climax.",
+      "EscalationTarget": "2",
+      "EventType": "exchange",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c888-73ab-b0c3-813f3d1115d4",
+      "Number": 16963,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Off-shift, Idris learns Yuki Osei-Reyes didn\u0027t come home; backstory surfaces that he personally processed her family\u0027s paperwork eleven months ago and she thanked him.",
+      "EscalationTarget": "4",
+      "EventType": "loss",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7195-b9e0-7b41056d6ed0",
+      "Number": 16964,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Yuki\u0027s case is logged as a runaway by the next-shift officer; Idris\u0027s own paperwork instincts flag the routing decision as wrong.",
+      "EscalationTarget": "4",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-78f2-9612-85db65407e31",
+      "Number": 16965,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Idris pulls a dispatch log himself, off the books, the first crack in his belief that the corporate side never loses anything it would miss.",
+      "EscalationTarget": "5",
+      "EventType": "discovery",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-73bd-971e-c0f40230c8b7",
+      "Number": 16966,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "scene-break",
+      "Act": 0,
+      "Meaning": "Domestic front: the every-other-week visit with Sela, the silence with Noor, the audit-contract irony; the daughter\u0027s-life subplot opens.",
+      "EscalationTarget": "3",
+      "EventType": "repair",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7bfa-9d7c-27f799e33143",
+      "Number": 16967,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Bishop Alaoui notices Idris\u0027s off-book records queries; a wary first contact, Bishop does not trust him yet.",
+      "EscalationTarget": "5",
+      "EventType": "arrival",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-761f-b1b2-b8c1ade0e72f",
+      "Number": 16968,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Bishop shows Idris his three-year map of the Cordero Desk\u0027s routes across multiple ARC checkpoints, confirming Yuki was one entry in an established pattern.",
+      "EscalationTarget": "6",
+      "EventType": "discovery",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-70fb-88bb-1139b07a5439",
+      "Number": 16969,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Idris\u0027s own graft contacts have gone dry, so he calls in a twenty-year-old debt from Farai Kessler, an ARC records clerk at Checkpoint 9, to cross-reference dispatch logs across checkpoints.",
+      "EscalationTarget": "7",
+      "EventType": "exchange",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7767-9898-9fcb49251a3d",
+      "Number": 16970,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "climax",
+      "Act": 0,
+      "Meaning": "Farai\u0027s cross-checkpoint query trail is traced and she is hurt or killed in retaliation, revealing ARC\u0027s own internal intelligence access is already compromised.",
+      "EscalationTarget": "9",
+      "EventType": "ambush",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7344-bea9-de7eb3add207",
+      "Number": 16971,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Idris reckons with what happened to Farai; Bishop\u0027s fury hardens the partnership rather than breaking it, and he takes over operational security personally.",
+      "EscalationTarget": "7",
+      "EventType": "confession",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7517-9f67-c331d818ac1f",
+      "Number": 16972,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Farai\u0027s traced query tips the Desk or a corrupted element inside ARC to the investigation, which leverages that same compromised intelligence access against Idris\u0027s career procedurally.",
+      "EscalationTarget": "7",
+      "EventType": "betrayal",
+      "RevelationMode": "suspense",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7964-b3a9-478b97082c70",
+      "Number": 16973,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "climax",
+      "Act": 0,
+      "Meaning": "A scheduled visit lands badly: Idris arrives rattled, Noor is there dropping off Sela, and one tense three-way scene forces a real moment of help or reopens the marriage\u0027s original wound.",
+      "EscalationTarget": "6",
+      "EventType": "confrontation",
+      "RevelationMode": "none",
+      "BeatTags": [
+        "subplot"
+      ],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7dc6-ba25-9dd1d2dfcb8a",
+      "Number": 16974,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "Under Bishop\u0027s tightened operational discipline, Idris and Bishop breach the Cordero Desk\u0027s ground-level logistics hub to gather evidence needed to break it externally.",
+      "EscalationTarget": "8",
+      "EventType": "heist",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7917-9f20-eb9fd318f373",
+      "Number": 16975,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "rising-action",
+      "Act": 0,
+      "Meaning": "ARC formally moves against Idris\u0027s position, following directly from the institutional pressure, taking his checkpoint access before he can use it.",
+      "EscalationTarget": "8",
+      "EventType": "loss",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-7441-b4df-1c40b1730fb2",
+      "Number": 16976,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "climax",
+      "Act": 0,
+      "Meaning": "With his position already gone, Idris makes one last use of his checkpoint access to disrupt the Desk\u0027s logistics as the breach\u0027s evidence surfaces to authorities, an institutional defeat with Mateo remaining cutout-insulated to the end.",
+      "EscalationTarget": "10",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fed2b-c889-72bb-a219-47711b0e0d99",
+      "Number": 16977,
+      "Chapter": "Chapter 1 - Between the ",
+      "ChapterIndex": 0,
+      "StructureRole": "denouement",
+      "Act": 0,
+      "Meaning": "What it cost him: the ARC career, possibly his freedom, and his daughter\u0027s remaining trust held open, unresolved; no internal peace, no reconciliation scene.",
+      "EscalationTarget": "6",
+      "EventType": "vigil",
+      "RevelationMode": "none",
+      "BeatTags": [],
+      "ProseLength": 0,
+      "Flags": [
+        "NO_PROSE"
+      ],
+      "Covered": false
+    }
+  ]
+}

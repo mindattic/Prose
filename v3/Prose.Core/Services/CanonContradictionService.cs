@@ -74,8 +74,14 @@ public class CanonContradictionService
         {
             ct.ThrowIfCancellationRequested();
             chunks++;
-            // Canon relevant to THIS chunk, across every type.
-            var canon = await retrieval.RetrieveContextBlockAsync(chunk, k: 24, charBudget: 3000, ct: ct);
+            // Canon relevant to THIS chunk, across every type. currentNodeId excludes entities
+            // explicitly scoped to a different book (e.g. a different "Noor") so this LLM never
+            // sees a same-first-name character it could conflate with this book's own. A wider
+            // descriptionChars matters just as much here: the default 160-char first-sentence
+            // gloss can cut off the exact fact (e.g. a checkpoint-officer backstory two sentences
+            // in) that would prove the prose does NOT contradict canon, producing a false finding.
+            var canon = await retrieval.RetrieveContextBlockAsync(
+                chunk, k: 24, charBudget: 4000, currentNodeId: nodeId, descriptionChars: 400, ct: ct);
             if (canon.Length == 0) continue;
 
             List<Contradiction> found;
