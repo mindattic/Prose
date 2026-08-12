@@ -34,7 +34,7 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.9" />
     <PackageReference Include="MindAttic.Legion" Version="22.0.0" />
     <PackageReference Include="MindAttic.Vault" Version="1.0.0" />
-    <PackageReference Include="MindAttic.Authentication" Version="4.0.0" />
+    <PackageReference Include="MindAttic.Authentication" Version="2.0.0" />
     <PackageReference Include="QuestPDF" Version="2026.5.0" />
     <PackageReference Include="QuikGraph" Version="2.5.0" />
     <PackageReference Include="QuikGraph.Serialization" Version="2.5.0" />

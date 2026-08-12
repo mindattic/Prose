@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MindAttic.Cryptography.Crypto;
+using MindAttic.Authentication.Crypto;
 using Prose.Core.Data;
 
 namespace Prose.Cli;
