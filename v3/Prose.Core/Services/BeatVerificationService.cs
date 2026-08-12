@@ -102,10 +102,19 @@ public class BeatVerificationService
 
         // ── Mechanical checks ─────────────────────────────────────────────────
 
-        results.Add(CheckBannedPattern(beat));
-
+        // BannedPattern encodes StoryScope/avalanche-ending fiction-craft anti-tells (no
+        // epilogue, no internal-understanding narration, no lesson-statement closes) — the
+        // same fiction-shaped assumptions as EventType/SubplotCarrier/EscalationFloor below, so
+        // it shares their decision != null gate. Found 2026-08-12: it ran unconditionally on
+        // every beat corpus-wide, so nonfiction/historical-analysis books that never went
+        // through Stage 6 blueprint generation (GOSPEL's Matthew/Mark/Luke/John — 0
+        // BeatBlueprintDecisions rows, same as the nonfiction books in RFC 0011 Brick 4) got
+        // BLOCKER-severity false positives on legitimate scholarly usage, e.g. "the Gospel's
+        // epilogue" (John 21) tripping the literal "no epilogue" fiction rule and blocking
+        // export.
         if (decision != null)
         {
+            results.Add(CheckBannedPattern(beat));
             results.Add(await CheckEventTypeAsync(db, beat, decision, ct));
             results.Add(await CheckSubplotCarrierAsync(db, beat, decision, ct));
             results.Add(await CheckEscalationFloorAsync(db, beat, decision, ct));
