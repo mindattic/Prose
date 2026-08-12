@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 
@@ -16,19 +17,22 @@ public class NodeFullExportService
     private readonly ManuscriptExportService manuscript;
     private readonly SynopsisExportService synopsis;
     private readonly CoverImageService coverSvc;
+    private readonly NodeWorkbenchService workbench;
 
     public NodeFullExportService(
         IDbContextFactory<ProseDbContext> dbFactory,
         DocxExportService docx,
         ManuscriptExportService manuscript,
         SynopsisExportService synopsis,
-        CoverImageService coverSvc)
+        CoverImageService coverSvc,
+        NodeWorkbenchService workbench)
     {
         this.dbFactory = dbFactory;
         this.docx = docx;
         this.manuscript = manuscript;
         this.synopsis = synopsis;
         this.coverSvc = coverSvc;
+        this.workbench = workbench;
     }
 
     public record Result(
@@ -67,21 +71,42 @@ public class NodeFullExportService
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             var node = await db.Nodes.AsTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
-            var description = node?.Description;
+            if (node == null) throw new InvalidOperationException($"Node {nodeId} not found.");
+
+            // Kindle page count (words / 250 -- the commonly-cited convention for Amazon's Kindle
+            // page display; distinct from KdpPageCount, the 6"x9" print-trim estimate DocxExportService
+            // computes) and reading time (words / 200wpm, the commonly-cited average adult silent-
+            // reading speed). Recomputed from the CURRENT live prose on every export so both track
+            // edits automatically -- never trust a stale value left over from a prior export.
+            var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+            var wordCount = ordered.Sum(ob => CountWords(ob.Beat.Text ?? ""));
+            var kindlePages = Math.Max(1, (int)Math.Round(wordCount / 250.0));
+            var readingMinutes = Math.Max(1, (int)Math.Round(wordCount / 200.0));
+            node.KindlePages = kindlePages;
+            node.ReadingMinutes = readingMinutes;
+
+            var description = node.Description;
             if (!string.IsNullOrWhiteSpace(description))
             {
                 var repaired = MojibakeRepairService.RepairMixed(description);
                 if (repaired != null)
                 {
-                    node!.Description = repaired;
-                    await db.SaveChangesAsync(ct);
                     description = repaired;
                     descriptionRepaired = true;
                 }
-
-                descPath = Path.Combine(outDir, "description.txt");
-                await File.WriteAllTextAsync(descPath, description!.Trim(), ct);
             }
+
+            // Strip any previously-appended pages/reading-time line before appending the freshly
+            // computed one -- otherwise every export would pile on another stale copy.
+            var authorPart = StripReadingInfoLine(description ?? "").TrimEnd();
+            var readingLine = $"Approximately {kindlePages} pages and {FormatReadingTime(readingMinutes)} to read.";
+            description = string.IsNullOrWhiteSpace(authorPart) ? readingLine : $"{authorPart}\n\n{readingLine}";
+
+            node.Description = description;
+            await db.SaveChangesAsync(ct);
+
+            descPath = Path.Combine(outDir, "description.txt");
+            await File.WriteAllTextAsync(descPath, description.Trim(), ct);
         }
 
         string? synPath = null;
@@ -114,4 +139,26 @@ public class NodeFullExportService
         return new Result(docxPath, epubPath, pdfPath, txtPath, docxMojibakeHits,
             descPath, descriptionRepaired, synPath, kwPath, keywordCount, coverPath);
     }
+
+    private static int CountWords(string text) =>
+        text.Split([' ', '\t', '\n', '\r'], StringSplitOptions.RemoveEmptyEntries).Length;
+
+    private static string FormatReadingTime(int totalMinutes)
+    {
+        var hours = totalMinutes / 60;
+        var minutes = totalMinutes % 60;
+        if (hours > 0 && minutes > 0) return $"{hours} hr {minutes} min";
+        if (hours > 0) return $"{hours} hr";
+        return $"{minutes} min";
+    }
+
+    private static readonly Regex ReadingInfoLineRx =
+        new(@"\n*\s*Approximately\s+\d+\s+pages?\s+and\s+.+?\s+to\s+read\.\s*$",
+            RegexOptions.IgnoreCase | RegexOptions.RightToLeft);
+
+    /// <summary>Removes a previously-appended "Approximately N pages and X to read." trailing
+    /// line (case-insensitive, whatever whitespace precedes it) so re-exporting never piles up
+    /// duplicate copies as prose length changes across edits.</summary>
+    private static string StripReadingInfoLine(string description) =>
+        ReadingInfoLineRx.Replace(description, "", 1);
 }

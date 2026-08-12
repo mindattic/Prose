@@ -1,8 +1,14 @@
 {
   "title": "Death Whispers in a Cat\u0027s Ear \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.5042417Z",
-  "termCount": 15,
+  "generatedAt": "2026-08-12T14:53:05.3435013Z",
+  "termCount": 29,
   "terms": [
+    {
+      "term": "ARC",
+      "fullForm": "Aerostatic Regulatory Command",
+      "definition": "The checkpoint-enforcement arm governing crossings between corporate interior blocs and the Grey Zone ground \u2014 customs, biometric processing, and dispatch of Direct Response Units. Distinct from Arcturus Defense Solutions (ArcSec), which handles physical/military security; ARC is a civil processing and customs authority.",
+      "category": "Enforcement"
+    },
     {
       "term": "ArcSec",
       "fullForm": "Arcturus Military Command (Arcturus Defense Solutions)",
@@ -16,10 +22,22 @@
       "category": null
     },
     {
+      "term": "Bleed",
+      "fullForm": null,
+      "definition": "Data leakage between psionic minds -- an unwanted crossover of thought or sensation between nearby Reads. Not a synonym for a Schism.",
+      "category": "Psionics"
+    },
+    {
       "term": "Channeler",
       "fullForm": null,
       "definition": "A gray-zone operator class: session-injection into networked frames and direct AI negotiation. One of three recognized operator classes in GLMZ, alongside Ghost and Splicer.",
       "category": "Operator Classes"
+    },
+    {
+      "term": "Consensus",
+      "fullForm": null,
+      "definition": "The collective political faction formed by GLMZ\u0027s merged synthetic intelligences.",
+      "category": "Faction"
     },
     {
       "term": "CorpoNation",
@@ -28,10 +46,22 @@
       "category": "Corporate Power"
     },
     {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
+    },
+    {
       "term": "E.L.F.",
       "fullForm": "Emergent Life Form",
       "definition": "A category of AI life that evolved spontaneously from the Substrate\u0027s molecular complexity -- genuinely alive, animal-intelligence, not built. Distinct from an Automaton, which is a non-sentient machine and not alive.",
       "category": "AI \u0026 Substrate"
+    },
+    {
+      "term": "ferrocrete",
+      "fullForm": null,
+      "definition": "A 22nd-century composite that bonds materials previously incapable of structural union, enabling the load tolerances behind GLMZ\u0027s mile-high towers.",
+      "category": "Tech"
     },
     {
       "term": "Ghost",
@@ -70,6 +100,24 @@
       "category": null
     },
     {
+      "term": "Praxis",
+      "fullForm": null,
+      "definition": "A CorpoNation manufacturing neuretic lattice hardware; sells a governed variant commercially while an experimental ungoverned variant is classified.",
+      "category": "CorpoNation"
+    },
+    {
+      "term": "psionics",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s clinical and corporate term for its real, biologically-based psychic ability -- registered and measured since 2144, never magic.",
+      "category": "Ability"
+    },
+    {
+      "term": "Psyk",
+      "fullForm": null,
+      "definition": "Casual street slang for a psionic practitioner.",
+      "category": "Ability"
+    },
+    {
       "term": "Schism",
       "fullForm": null,
       "definition": "Official term for the geometry-breaking anomalies scattered across GLMZ -- a hum at 19Hz from no direction, a block that takes eleven steps when geometry says nine. Classified Class-1 through Class-5 by intensity by the Anomalous Activity Monitoring Authority; what they actually are remains an open question, even to the people whose job is to classify them.",
@@ -82,16 +130,52 @@
       "category": null
     },
     {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
       "term": "Splicer",
       "fullForm": null,
       "definition": "An operator class built on hardware/software attack surface: credential work and physical build, rather than direct AI negotiation (Channeler) or inhabiting machines (Ghost).",
       "category": "Operator Classes"
     },
     {
+      "term": "subdermal mesh",
+      "fullForm": null,
+      "definition": "A subcutaneous armor implant over the upper thorax that absorbs roughly two rounds at a cost -- survivable, never free.",
+      "category": "Tech"
+    },
+    {
       "term": "Substrate",
       "fullForm": null,
       "definition": "The physical/computational medium neuretics and much of GLMZ\u0027s infrastructure run on -- dense enough that AI life (see E.L.F.) has been known to emerge spontaneously from its molecular complexity.",
       "category": null
+    },
+    {
+      "term": "the Loop",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Network",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
+    },
+    {
+      "term": "the Pulse",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
+      "term": "\u03A6",
+      "fullForm": "Quanta (Q, Qreds)",
+      "definition": "GLMZ\u0027s currency: an allotment of computational power, divided among every citizen, that can be saved, transferred, or spent on computation. The symbol \u03A6 always precedes the number (\u03A6100, never \u0022100\u03A6\u0022). Also known as quanta, Q, or Qreds. Physical medium is the credstick only -- no coins, no bills.",
+      "category": "Currency"
     }
   ]
 }

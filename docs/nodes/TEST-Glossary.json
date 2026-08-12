@@ -1,8 +1,14 @@
 {
   "title": "Testament \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.7273581Z",
-  "termCount": 9,
+  "generatedAt": "2026-08-12T14:53:05.5811878Z",
+  "termCount": 20,
   "terms": [
+    {
+      "term": "ARC",
+      "fullForm": "Aerostatic Regulatory Command",
+      "definition": "The checkpoint-enforcement arm governing crossings between corporate interior blocs and the Grey Zone ground \u2014 customs, biometric processing, and dispatch of Direct Response Units. Distinct from Arcturus Defense Solutions (ArcSec), which handles physical/military security; ARC is a civil processing and customs authority.",
+      "category": "Enforcement"
+    },
     {
       "term": "ArcSec",
       "fullForm": "Arcturus Military Command (Arcturus Defense Solutions)",
@@ -16,6 +22,24 @@
       "category": null
     },
     {
+      "term": "Bleed",
+      "fullForm": null,
+      "definition": "Data leakage between psionic minds -- an unwanted crossover of thought or sensation between nearby Reads. Not a synonym for a Schism.",
+      "category": "Psionics"
+    },
+    {
+      "term": "CorpoNation",
+      "fullForm": null,
+      "definition": "A corporate sovereign, not merely a company -- holds territory, flies flags over substations, fields security, and can die; when it does, its infrastructure often outlives it (Axiom Industrial\u0027s mounting collars are everywhere three decades after Axiom\u0027s collapse).",
+      "category": "Corporate Power"
+    },
+    {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
+    },
+    {
       "term": "Gray Zone",
       "fullForm": null,
       "definition": "Corridor territory outside CorpoNation law and enforcement reach -- where civic code exists on paper and goes universally unenforced. The commercial Hyper Reality layer thins or vanishes entirely below \u0022the Veil,\u0022 the boundary between archology-tier city and the gray zone underneath it.",
@@ -26,6 +50,12 @@
       "fullForm": "Halcyon Civil Security",
       "definition": "The CorpoNation holding GLMZ\u0027s neuretics-crime enforcement monopoly. Administers augmentation certification and maintenance across the corridor -- which is what gives its investigative arm, NCID, forensic access no other body can match.",
       "category": null
+    },
+    {
+      "term": "IRB",
+      "fullForm": "Incident Review Board",
+      "definition": "The body with jurisdiction over corporate/operational incident accountability hearings -- reviews petitions and motions following events like unauthorized breaches or civilian casualties (e.g., the Cortland incident in Testament).",
+      "category": "Enforcement"
     },
     {
       "term": "Meridian Compact",
@@ -52,10 +82,46 @@
       "category": null
     },
     {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
       "term": "Splicer",
       "fullForm": null,
       "definition": "An operator class built on hardware/software attack surface: credential work and physical build, rather than direct AI negotiation (Channeler) or inhabiting machines (Ghost).",
       "category": "Operator Classes"
+    },
+    {
+      "term": "the Loop",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Network",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
+    },
+    {
+      "term": "the Pulse",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
+      "term": "the Spine",
+      "fullForm": null,
+      "definition": "The western lakeshore corridor territory of GLMZ.",
+      "category": "Geography"
+    },
+    {
+      "term": "\u03A6",
+      "fullForm": "Quanta (Q, Qreds)",
+      "definition": "GLMZ\u0027s currency: an allotment of computational power, divided among every citizen, that can be saved, transferred, or spent on computation. The symbol \u03A6 always precedes the number (\u03A6100, never \u0022100\u03A6\u0022). Also known as quanta, Q, or Qreds. Physical medium is the credstick only -- no coins, no bills.",
+      "category": "Currency"
     }
   ]
 }

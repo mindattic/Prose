@@ -1,7 +1,7 @@
 {
   "title": "Lieutenant Lyra, Sinterkin Slayer \u2014 Glossary",
-  "generatedAt": "2026-08-06T00:13:12.7481294Z",
-  "termCount": 5,
+  "generatedAt": "2026-08-12T14:53:09.4011615Z",
+  "termCount": 9,
   "terms": [
     {
       "term": "Entos",
@@ -16,10 +16,22 @@
       "category": "Creatures"
     },
     {
+      "term": "House",
+      "fullForm": null,
+      "definition": "One of Entos\u0027s noble ruling families -- feudal, religiously bound to the Liturgy, and dependent on it for Gifted Ceremony access and protection. Houses field their own soldiers and Myrmidons but answer to Liturgy doctrine.",
+      "category": null
+    },
+    {
       "term": "Ichor",
       "fullForm": null,
       "definition": "The caustic, faintly luminous fluid that runs in Sinterspawn instead of blood -- reacts with untreated metal and blisters unprotected skin within seconds. Not venom, not sprayed offensively: simply what fills a body that came out of, or was made wrong by, the Sinter overflow. Handlers who work Sinterspawn at close range wear Ichor-proof plate.",
       "category": "Creatures"
+    },
+    {
+      "term": "Sinter",
+      "fullForm": null,
+      "definition": "The quarantined region where the Bolide struck in 1312 (0 AoV) -- source of the Cavity, the Ichor, and everything that comes out of it. \u0022Sinter\u0022 names the place; what emerges from it is called Sinterkin or Sinterspawn.",
+      "category": null
     },
     {
       "term": "Sinterspawn",
@@ -32,6 +44,18 @@
       "fullForm": null,
       "definition": "The Liturgy\u0027s own guard order, founded generations before the current Houses existed to argue with the Liturgy -- its \u0022Vatican Guard.\u0022 An \u0022Infused Templar\u0022 has undergone the Gifted Ceremony, which is what opens a sealed Templar Station. Rank tracks the number of Gifted infusions a Templar carries.",
       "category": "Institutions"
+    },
+    {
+      "term": "the Liturgy",
+      "fullForm": null,
+      "definition": "The religious-scientific sect that administers the Gifted Ceremony and exists outside House politics, predating the current Houses. Does not fight wars or take territory; its doctrine and rites are the foundation the Houses\u0027 own legitimacy is built on.",
+      "category": "Institutions"
+    },
+    {
+      "term": "the Silence",
+      "fullForm": null,
+      "definition": "The Liturgy\u0027s highest governing body. It never appears publicly, speaks only through Canon-level intermediaries, and its decisions are final and unexplained.",
+      "category": "Institution"
     }
   ]
 }

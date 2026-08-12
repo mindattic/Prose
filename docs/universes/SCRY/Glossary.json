@@ -1,8 +1,20 @@
 {
   "title": "SCRY \u2014 Master Glossary",
-  "generatedAt": "2026-08-07T20:35:38.3294994Z",
-  "termCount": 29,
+  "generatedAt": "2026-08-12T14:51:54.868348Z",
+  "termCount": 65,
   "terms": [
+    {
+      "term": "Age of Scrying",
+      "fullForm": null,
+      "definition": "The calendar era from Year 1 (the discovery of Scrying) to Year 1312, ending with the Bolide; its first three centuries are separately remembered as the Age of Innocence, before Piercing existed.",
+      "category": "Calendar"
+    },
+    {
+      "term": "Alloy 41",
+      "fullForm": null,
+      "definition": "Entos\u0027s in-world designation for steel, manufactured locally from Scried metallurgical designs.",
+      "category": "Material"
+    },
     {
       "term": "Amnios",
       "fullForm": null,
@@ -28,16 +40,64 @@
       "category": "Calendar"
     },
     {
+      "term": "Bheur",
+      "fullForm": null,
+      "definition": "What House theology says waits for the dead. Because death is permanent and no one returns to report, whether it exists is unknowable; if real, it is held to process rather than punish -- no kings, no hierarchy.",
+      "category": "Afterlife"
+    },
+    {
+      "term": "Canon",
+      "fullForm": "senior Liturgy rank",
+      "definition": "A senior Liturgy office above Lector: interprets doctrine, oversees Lector assignments, and adjudicates the most complex worthiness cases escalated from the field.",
+      "category": "Title"
+    },
+    {
       "term": "Catalyst",
       "fullForm": "Gifted matter class; Xerum 525 primary",
       "definition": "Infusion of alien Gifted matter into a living person, producing controlled physical change over time -- not consciousness transfer. The body is changed; the person who entered the procedure is the same person afterward, altered rather than replaced. Xerum 525 (\u0022Red Mercury\u0022) is the primary, most-studied Catalyst; field slang is \u0022the dose.\u0022",
       "category": "Tech \u0026 Substances"
     },
     {
+      "term": "Champion",
+      "fullForm": null,
+      "definition": "A soldier Transmuted so far past ordinary House rank structure that they are identified by name rather than designation. No House owns or commands a Champion -- only courts them.",
+      "category": "Title"
+    },
+    {
+      "term": "cluster-stage organism",
+      "fullForm": "unformed Sinterkin",
+      "definition": "The pre-birth stage of a Sinterkin: an unfinished body pressed against the wet interior wall of the Sinter Cavity, joints and features still incomplete, that eventually detaches and falls to the cavity floor before it first moves.",
+      "category": "Ecology"
+    },
+    {
+      "term": "Colchester naming",
+      "fullForm": "the Colchester naming convention",
+      "definition": "The informal practice of naming a Pierced object for the place and date it was taken from (e.g. \u0022Colchester 1648\u0022); nothing is catalogued or filed -- the name simply sticks because no one has a better one.",
+      "category": "Custom"
+    },
+    {
+      "term": "Eaters of Monsters",
+      "fullForm": null,
+      "definition": "Fjorheim wildmen who conduct self-directed, unsanctioned Transmutation outside Liturgy control, hunting Wall-breach creatures for the effect their meat produces -- three generations of empirical practice, founded after their predecessors were publicly executed for the same act.",
+      "category": "Faction"
+    },
+    {
+      "term": "Eirene\u0027s Gate",
+      "fullForm": null,
+      "definition": "The primary Vigil checkpoint on the Entos-side bank of the Pass, named for Eirene, the last Champion of the vanished House Sinter, who died at that location in Year 1314.",
+      "category": "Geography"
+    },
+    {
       "term": "Entos",
       "fullForm": null,
       "definition": "The Sphere -- one cell among many adrift in the Amnios -- where every story in this setting takes place. Feudal, Liturgy-administered, and still counting its years from the Bolide.",
       "category": null
+    },
+    {
+      "term": "Flood",
+      "fullForm": null,
+      "definition": "A battle-Scryer\u0027s weaponized tearing of the membrane mid-engagement, dumping whatever creatures or atmosphere happen to be adjacent on the other Sphere\u0027s side into the fight; the crossers are random and short-lived in Entos\u0027s air, and the Liturgy treats the act as a war crime for the lasting damage it does to the membrane.",
+      "category": "Combat"
     },
     {
       "term": "Gifted",
@@ -70,16 +130,70 @@
       "category": "Creatures"
     },
     {
+      "term": "Knight",
+      "fullForm": "Dame (female form); formal Transmutation rank",
+      "definition": "The formal rank earned through multiple Gifted-Ceremony infusions and distinguished service, marking visibly ascendant physical change; the female form is \u0022Dame.\u0022 Continued infusion can carry a Knight toward Paladin and, rarely, Champion status.",
+      "category": "Title"
+    },
+    {
+      "term": "Lector",
+      "fullForm": null,
+      "definition": "A Liturgy field practitioner who travels between Houses administering the Gifted Ceremony, distributing Relics, and independently assessing worthiness -- a judgment no House can override.",
+      "category": "Title"
+    },
+    {
       "term": "M-101",
       "fullForm": "Myrmidon Shell designation",
       "definition": "The short, spoken designation given to an activated Myrmidon (e.g. \u0022M-101\u0022), distinct from its longer catalog/intake record number (e.g. \u0022M-1018883\u0022). A Myrmidon may insist on the short form as its name and reject the longer number as \u0022paperwork.\u0022",
       "category": "Military"
     },
     {
+      "term": "Monster Meat",
+      "fullForm": null,
+      "definition": "The flesh of Entos\u0027s native monsters. Eating it triggers the same biological transformation mechanism as an unguided Transmutation, gradually turning the eater into a humanoid monster; the Oathless, left to starve by the Houses, have the highest exposure rate.",
+      "category": "Biology"
+    },
+    {
       "term": "Myrmidon",
       "fullForm": null,
       "definition": "A Shell (a Liturgy-built android construct) with a human mind Relayed into it and operating it -- the mind always Pierced from another Sphere, never Entos-born, never Transmutation-eligible. Death is permanent: if a Myrmidon\u0027s Shell is destroyed while its mind is still inside, the mind is gone -- no shell-cycle, no return.",
       "category": "Military"
+    },
+    {
+      "term": "Ocipheus",
+      "fullForm": null,
+      "definition": "The House of the island nation (Britain analog); seat of the Canon Immaculate and the oldest continuously documented Scrying installation in Entos, staffed by the longest-tenured vigil operators in any House.",
+      "category": "Faction"
+    },
+    {
+      "term": "Oculus Lacrimans Vigilantiae",
+      "fullForm": "The Weeping Eye of Vigilance",
+      "definition": "Sinter work, Year 630 -- not a pulled object but a Scry that never closed: an aperture struck onto the core of Sinter and never sealed, so it has held seven hundred and forty-one years of unbroken sight rather than the look-and-loss of an ordinary Scry. Held by House Ocipheus since Year 1330 (forty-one years\u0027 custody at the time of Vigil\u0027s End). Weeps a slow gold bead (Amnios) at the rim; paired with the Orbis Omnividens. Short form: the Oculus, or the Weeping Eye.",
+      "category": "Magic System"
+    },
+    {
+      "term": "Orbis Omnividens",
+      "fullForm": "The All-Seeing Orb",
+      "definition": "The Oculus Lacrimans Vigilantiae\u0027s paired half -- the registry name for a Relic nobody at Ocipheus had catalogued as separate from the eye that housed it until the two were split apart at the crater. Left to fall back into the depths it had always watched, to keep seeing whether or not anyone remains to read what it sees.",
+      "category": "Magic System"
+    },
+    {
+      "term": "Order of the Watch",
+      "fullForm": null,
+      "definition": "The Vigil\u0027s formal administrative body: draws mixed-House personnel under Liturgy charter to staff the quarantine line at the Pass, administer the Descent Corps\u0027 expeditions into the Sinter zone, and issue crossing permits -- answerable to the Canon Immaculate, not any Warrior King.",
+      "category": "Institution"
+    },
+    {
+      "term": "Paladin",
+      "fullForm": null,
+      "definition": "The Transmutation rank above Knight, marked by significant, rare visible ascendance; a Knight closing on Paladin status is considered exceptional.",
+      "category": "Title"
+    },
+    {
+      "term": "Pallor",
+      "fullForm": null,
+      "definition": "The northern fjord House (Scandinavia analog), the oldest surviving martial succession tradition in Entos -- ruled by a Warrior King confirmed by the Long Seat rather than by heredity -- which absorbed the failing House Fjorheim three centuries ago.",
+      "category": "Faction"
     },
     {
       "term": "Piercing",
@@ -100,10 +214,22 @@
       "category": null
     },
     {
+      "term": "Relic",
+      "fullForm": null,
+      "definition": "A physical object wrought from Gifted matter and distributed by the Liturgy to the loyal. Unlike Scried technology, no Relic has ever been manufactured or reverse-engineered, and each has one narrow, consistent function; a Relic goes cold and inert in a disloyal carrier\u0027s hands.",
+      "category": "Artifact"
+    },
+    {
       "term": "Scrying",
       "fullForm": null,
       "definition": "Pulling two adjacent cell walls (Spheres) tight against each other so a practitioner can look through -- without rupturing or damaging either membrane.",
       "category": "Magic System"
+    },
+    {
+      "term": "Scrying Rod",
+      "fullForm": null,
+      "definition": "The most common focus instrument for a minor (personal) Scryer -- a dense, membrane-adjacent stone set in a grip -- that extends a practitioner\u0027s Scrying range and depth, at the cost of picking up whatever the membrane happens to be carrying rather than only what was asked for.",
+      "category": "Technology"
     },
     {
       "term": "Shell",
@@ -160,10 +286,22 @@
       "category": null
     },
     {
+      "term": "the Compact",
+      "fullForm": null,
+      "definition": "The series of operational agreements -- beginning as an eleven-line truce between three exhausted Basin institutions -- that ended the Blood Century and formalized the transition from warring tribes into the Houses.",
+      "category": "History"
+    },
+    {
       "term": "the Expectant",
       "fullForm": null,
       "definition": "The vast organism whose body the Amnios and every Sphere inside it belong to -- worshipped by the Liturgy as the source of all Gifted matter, and the entity its doctrine holds gifted humanity the Catalyst in the first place.",
       "category": "Cosmology"
+    },
+    {
+      "term": "the Keeper",
+      "fullForm": null,
+      "definition": "The person who runs a House\u0027s Scrying installation -- the technical authority whose control of the apparatus determines what the House can manufacture.",
+      "category": "Title"
     },
     {
       "term": "the Liturgy",
@@ -172,10 +310,88 @@
       "category": "Institutions"
     },
     {
+      "term": "the Living War",
+      "fullForm": null,
+      "definition": "The thousand-year, two-front war that defines Entos: Houses fighting Houses over Scrying territory and coalition advantage, and all Houses fighting the native monsters the war disturbs. No one alive remembers how or why it began.",
+      "category": "History"
+    },
+    {
+      "term": "the Oathless",
+      "fullForm": null,
+      "definition": "People outside House structure -- deserters and civilians who never swore, or broke, a House oath. Hunted by the Houses as unlicensed combatants, they scavenge Scried equipment from battlefields and have the highest rate of eating Monster Meat.",
+      "category": "Faction"
+    },
+    {
+      "term": "the Pass",
+      "fullForm": null,
+      "definition": "The narrow strait (the Bosphorus analog) separating Entos\u0027s eastern boundary from the quarantined Sinter territory -- the only practical crossing between the two, held by fortified towers, naval patrols, and Eirene\u0027s Gate.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Prisoner",
+      "fullForm": null,
+      "definition": "Entos\u0027s other central, unsolved mystery alongside the Expectant -- an entity or presence of unknown nature, intent, or even reality, whose possible relationship to the Expectant is deliberately never confirmed in-world.",
+      "category": "Cosmology"
+    },
+    {
+      "term": "the Second Discovery",
+      "fullForm": null,
+      "definition": "The first Piercing, in Year 331, which ended the Age of Innocence by turning membrane-work from pure observation into taking.",
+      "category": "History"
+    },
+    {
+      "term": "the Silence",
+      "fullForm": null,
+      "definition": "The Liturgy\u0027s highest governing body. It never appears publicly, speaks only through Canon-level intermediaries, and its decisions are final and unexplained.",
+      "category": "Institution"
+    },
+    {
       "term": "the Vigil",
       "fullForm": null,
       "definition": "The order that holds the quarantine line at the Pass, watching the Sinter border so whatever comes out of it doesn\u0027t reach the rest of Entos.",
       "category": null
+    },
+    {
+      "term": "thin-membrane site",
+      "fullForm": null,
+      "definition": "A location where the boundary between Spheres is thin enough to make Scrying -- and sometimes Piercing -- practical. Such sites carry incursion risk and unease, and a minority of people can perceive things at the boundary that no apparatus captures.",
+      "category": "Geography"
+    },
+    {
+      "term": "Transmutation",
+      "fullForm": "the Gifted Ceremony",
+      "definition": "The Liturgy\u0027s rite of infusing a person with Catalyst-class Gifted matter (chiefly Xerum 525), producing controlled physical ascendance over years of guided doses; framed as sacred and consented to, though the first infusion is only 80% survivable. Soldiers in the field call it simply \u0022the dose\u0022 or \u0022being seen.\u0022",
+      "category": "Cosmology"
+    },
+    {
+      "term": "Verlaine",
+      "fullForm": null,
+      "definition": "The central House (France analog) that wrote the Compact and holds the broadest Sphere catalogue in Entos -- the Deep Archive -- governed by catalogue-regency under the First Archivist.",
+      "category": "Faction"
+    },
+    {
+      "term": "vigil operator",
+      "fullForm": "vigil watcher",
+      "definition": "A long-tenured practitioner stationed for decades at a thin-membrane site to monitor boundary behavior -- distinct from the Vigil holy-warrior order despite the shared word. Some privately describe the membrane as something that \u0022breathes\u0022 and responds to them personally, an observation never entered into any formal record.",
+      "category": "Role"
+    },
+    {
+      "term": "Warrior King",
+      "fullForm": null,
+      "definition": "A House\u0027s most experienced military commander -- a rank accumulated through decades of campaigns rather than inherited by blood.",
+      "category": "Title"
+    },
+    {
+      "term": "Xerum 525",
+      "fullForm": "Red Mercury (alt. House name)",
+      "definition": "The primary, most-studied Catalyst used in the Gifted Ceremony. Administered correctly by a certified Lector it produces ascendance; administered wrong, or without sanction, it produces catastrophic uncontrolled mutation instead.",
+      "category": "Substance"
+    },
+    {
+      "term": "Yggdra-wood",
+      "fullForm": null,
+      "definition": "A common Entos hardwood, as unremarkable as oak, used for weapon stocks and furniture -- it carries no cosmological significance despite the evocative name.",
+      "category": "Material"
     }
   ]
 }

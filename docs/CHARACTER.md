@@ -6,7 +6,7 @@ layer: craft
 status: live
 tier: topic
 triggers: character, cast, protagonist, antagonist, relationship, interpersonal, dialogue, motive, arc, growth, behavior, pov, depth
-updated: 2026-08-07
+updated: 2026-08-12
 ---
 
 <!-- GENERATED — do not hand-edit. Regenerate with: prose --generate-canon-md --type CharacterDoctrine -->

@@ -302,14 +302,24 @@ public class KdpManifestService
             var hasNewerVersionThanPublished = epubPath != null && !alreadyPublishedThisVersion;
             var meetsHardPublishGate = readyToPublish && hasCover && hasDescriptionFile && hasNewerVersionThanPublished;
 
+            // A book missing any of the four hard-gate ingredients (.publish marker, cover.jpg,
+            // description.txt, an actual .epub on disk) cannot be (re)published no matter what
+            // its prior PublishUrl/KdpPublishedAt history says — it must show as WorkInProgress,
+            // not a stale "Published"/"Outdated" that implies it's one click away from going
+            // live. Same four ingredients KdpOperatorService's runtime gate enforces authoritatively
+            // (see MeetsHardPublishGate) — never re-derive this rule differently in the two places.
+            var isIncomplete = !readyToPublish || !hasCover || !hasDescriptionFile || epubPath == null;
+
             // Finalize status/NeedsRepublish now that the accurate signal is known. A book that's
             // live but has no confirmed-publish record at all (see hasConfirmedPublish above)
             // can't be judged either way — keep the original "needs a check" baseline warning
             // rather than asserting Outdated or Published on no real evidence.
             if (!(hasPublishUrl && n.KdpPublishedAt == null))
             {
-                stale = hasPublishUrl && hasNewerVersionThanPublished;
-                effectiveStatus = stale ? "Outdated" : (hasPublishUrl ? "Published" : (n.PublicationStatus ?? "WorkInProgress"));
+                stale = !isIncomplete && hasPublishUrl && hasNewerVersionThanPublished;
+                effectiveStatus = isIncomplete
+                    ? "WorkInProgress"
+                    : stale ? "Outdated" : (hasPublishUrl ? "Published" : (n.PublicationStatus ?? "WorkInProgress"));
             }
 
             entries.Add(new KdpManifestEntry(

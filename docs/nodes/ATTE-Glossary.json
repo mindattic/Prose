@@ -1,13 +1,19 @@
 {
   "title": "Attendance \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.3461526Z",
-  "termCount": 14,
+  "generatedAt": "2026-08-12T14:53:05.1182692Z",
+  "termCount": 23,
   "terms": [
     {
       "term": "AAMA",
       "fullForm": "Anomalous Activity Monitoring Authority",
       "definition": "The civil authority that classifies schisms -- dimensional anomalies pressing into 3D space -- Class-1 through Class-5 by intensity. A Class-3-or-higher site requires an AAMA permit to enter.",
       "category": "Bureaucracy"
+    },
+    {
+      "term": "ARC",
+      "fullForm": "Aerostatic Regulatory Command",
+      "definition": "The checkpoint-enforcement arm governing crossings between corporate interior blocs and the Grey Zone ground \u2014 customs, biometric processing, and dispatch of Direct Response Units. Distinct from Arcturus Defense Solutions (ArcSec), which handles physical/military security; ARC is a civil processing and customs authority.",
+      "category": "Enforcement"
     },
     {
       "term": "ArcSec",
@@ -32,6 +38,12 @@
       "fullForm": null,
       "definition": "A corporate sovereign, not merely a company -- holds territory, flies flags over substations, fields security, and can die; when it does, its infrastructure often outlives it (Axiom Industrial\u0027s mounting collars are everywhere three decades after Axiom\u0027s collapse).",
       "category": "Corporate Power"
+    },
+    {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
     },
     {
       "term": "Ghost",
@@ -64,6 +76,24 @@
       "category": "Tech"
     },
     {
+      "term": "Operator",
+      "fullForm": null,
+      "definition": "General GLMZ term for a gray-zone specialist working outside CorpoNation-sanctioned channels. Three recognized classes exist: Channeler, Ghost, and Splicer.",
+      "category": null
+    },
+    {
+      "term": "Praxis",
+      "fullForm": null,
+      "definition": "A CorpoNation manufacturing neuretic lattice hardware; sells a governed variant commercially while an experimental ungoverned variant is classified.",
+      "category": "CorpoNation"
+    },
+    {
+      "term": "psionics",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s clinical and corporate term for its real, biologically-based psychic ability -- registered and measured since 2144, never magic.",
+      "category": "Ability"
+    },
+    {
       "term": "Schism",
       "fullForm": null,
       "definition": "Official term for the geometry-breaking anomalies scattered across GLMZ -- a hum at 19Hz from no direction, a block that takes eleven steps when geometry says nine. Classified Class-1 through Class-5 by intensity by the Anomalous Activity Monitoring Authority; what they actually are remains an open question, even to the people whose job is to classify them.",
@@ -76,16 +106,40 @@
       "category": null
     },
     {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
       "term": "Substrate",
       "fullForm": null,
       "definition": "The physical/computational medium neuretics and much of GLMZ\u0027s infrastructure run on -- dense enough that AI life (see E.L.F.) has been known to emerge spontaneously from its molecular complexity.",
       "category": null
     },
     {
+      "term": "the Loop",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Pulse",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
       "term": "the Veil",
       "fullForm": null,
       "definition": "The boundary between archology-tier corporate city and the gray zone beneath it. Above it: brand holograms, AR traffic control, the full Hyper Reality commercial layer. Below it: none of that infrastructure exists, and augmented characters notice the absence before anything else.",
       "category": null
+    },
+    {
+      "term": "Waxwing Neuromedia",
+      "fullForm": null,
+      "definition": "The CorpoNation contracted to operate GLMZ\u0027s neuretic-readable civic AR infrastructure.",
+      "category": "CorpoNation"
     }
   ]
 }

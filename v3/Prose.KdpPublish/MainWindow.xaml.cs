@@ -222,6 +222,10 @@ public partial class MainWindow : Window
                     var unpublishCodes = msg!["codes"]!.AsArray().Select(n => n!.GetValue<string>()).ToHashSet();
                     await MarkUnpublishedAsync(unpublishCodes);
                     break;
+                case "get-cover":
+                    var coverCode = msg!["code"]!.GetValue<string>();
+                    await SendCoverImageAsync(coverCode);
+                    break;
             }
         }
         catch (Exception ex)
@@ -240,6 +244,30 @@ public partial class MainWindow : Window
         var jsArg = JsonSerializer.Serialize(json);
         await ControlPanel.CoreWebView2.ExecuteScriptAsync($"window.ssPanel.onManifest({jsArg})");
         await PostLogAsync($"Loaded manifest — {lastManifest.Count} tracked, {lastManifest.Count(e => e.NeedsRepublish)} outdated.");
+    }
+
+    /// <summary>
+    /// On-demand cover.jpg preview for the panel's per-row image icon. Sent as a base64 data
+    /// URI rather than baked into the manifest JSON — covers run ~1-1.5MB each, and the full
+    /// manifest already refreshes after every book in a run; embedding every cover eagerly
+    /// would bloat that payload for books nobody ever previews.
+    /// </summary>
+    private async Task SendCoverImageAsync(string code)
+    {
+        var entry = lastManifest.FirstOrDefault(e => e.Code == code);
+        string? dataUri = null;
+        if (entry != null)
+        {
+            var coverPath = Path.Combine(entry.FolderPath, "cover.jpg");
+            if (File.Exists(coverPath))
+            {
+                var bytes = await File.ReadAllBytesAsync(coverPath);
+                dataUri = $"data:image/jpeg;base64,{Convert.ToBase64String(bytes)}";
+            }
+        }
+        var jsCode = JsonSerializer.Serialize(code);
+        var jsData = JsonSerializer.Serialize(dataUri);
+        await ControlPanel.CoreWebView2.ExecuteScriptAsync($"window.ssPanel.onCoverImage({jsCode}, {jsData})");
     }
 
     private async Task RunSelectedAsync(HashSet<string> codes)

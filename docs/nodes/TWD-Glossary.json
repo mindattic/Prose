@@ -1,8 +1,26 @@
 {
   "title": "The Way Down \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.7710711Z",
-  "termCount": 4,
+  "generatedAt": "2026-08-12T14:53:05.6264147Z",
+  "termCount": 11,
   "terms": [
+    {
+      "term": "ARC",
+      "fullForm": "Aerostatic Regulatory Command",
+      "definition": "The checkpoint-enforcement arm governing crossings between corporate interior blocs and the Grey Zone ground \u2014 customs, biometric processing, and dispatch of Direct Response Units. Distinct from Arcturus Defense Solutions (ArcSec), which handles physical/military security; ARC is a civil processing and customs authority.",
+      "category": "Enforcement"
+    },
+    {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
+    },
+    {
+      "term": "ferrocrete",
+      "fullForm": null,
+      "definition": "A 22nd-century composite that bonds materials previously incapable of structural union, enabling the load tolerances behind GLMZ\u0027s mile-high towers.",
+      "category": "Tech"
+    },
     {
       "term": "Ghost",
       "fullForm": "eigenstate conscience transfer (ECT)",
@@ -16,16 +34,40 @@
       "category": "Geography"
     },
     {
+      "term": "neuretics",
+      "fullForm": null,
+      "definition": "Thought-operated in-head compute that everyone in GLMZ has at some tier -- grown, not implanted. Checkpoints read the wearer biometrically through it. A common noun, lowercase, like \u0022sword\u0022 or \u0022hand.\u0022",
+      "category": "Tech"
+    },
+    {
+      "term": "Operator",
+      "fullForm": null,
+      "definition": "General GLMZ term for a gray-zone specialist working outside CorpoNation-sanctioned channels. Three recognized classes exist: Channeler, Ghost, and Splicer.",
+      "category": null
+    },
+    {
       "term": "Seam",
       "fullForm": null,
       "definition": "The narrow, contested corridor where two CorpoNations\u0027 jurisdictions meet and neither fully governs -- named for the literal seam between two claimed territories. Worked, patrolled, and claimed by whoever keeps showing up.",
       "category": null
     },
     {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
       "term": "Substrate",
       "fullForm": null,
       "definition": "The physical/computational medium neuretics and much of GLMZ\u0027s infrastructure run on -- dense enough that AI life (see E.L.F.) has been known to emerge spontaneously from its molecular complexity.",
       "category": null
+    },
+    {
+      "term": "\u03A6",
+      "fullForm": "Quanta (Q, Qreds)",
+      "definition": "GLMZ\u0027s currency: an allotment of computational power, divided among every citizen, that can be saved, transferred, or spent on computation. The symbol \u03A6 always precedes the number (\u03A6100, never \u0022100\u03A6\u0022). Also known as quanta, Q, or Qreds. Physical medium is the credstick only -- no coins, no bills.",
+      "category": "Currency"
     }
   ]
 }

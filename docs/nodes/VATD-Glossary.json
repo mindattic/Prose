@@ -1,8 +1,20 @@
 {
   "title": "Vultures at the Door \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.8146599Z",
-  "termCount": 6,
+  "generatedAt": "2026-08-12T14:53:05.6793474Z",
+  "termCount": 14,
   "terms": [
+    {
+      "term": "Bleed",
+      "fullForm": null,
+      "definition": "Data leakage between psionic minds -- an unwanted crossover of thought or sensation between nearby Reads. Not a synonym for a Schism.",
+      "category": "Psionics"
+    },
+    {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
+    },
     {
       "term": "GLMZ",
       "fullForm": "Great Lakes Metropolitan Zone",
@@ -14,6 +26,12 @@
       "fullForm": null,
       "definition": "Corridor territory outside CorpoNation law and enforcement reach -- where civic code exists on paper and goes universally unenforced. The commercial Hyper Reality layer thins or vanishes entirely below \u0022the Veil,\u0022 the boundary between archology-tier city and the gray zone underneath it.",
       "category": "Geography"
+    },
+    {
+      "term": "Lotus Syndicate",
+      "fullForm": null,
+      "definition": "A blood-purity supremacist crime syndicate built on a samurai-derived code -- exact restitution for damage, truce customs, craft trades on retainer. Only those of \u0022pure enough\u0022 heritage (the Stems) ever belong; everyone else may pay, fear, or work for them but is never seated at the table.",
+      "category": "Faction"
     },
     {
       "term": "neuretics",
@@ -34,10 +52,40 @@
       "category": null
     },
     {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
       "term": "Splicer",
       "fullForm": null,
       "definition": "An operator class built on hardware/software attack surface: credential work and physical build, rather than direct AI negotiation (Channeler) or inhabiting machines (Ghost).",
       "category": "Operator Classes"
+    },
+    {
+      "term": "the Loop",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Network",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
+    },
+    {
+      "term": "Waxwing Neuromedia",
+      "fullForm": null,
+      "definition": "The CorpoNation contracted to operate GLMZ\u0027s neuretic-readable civic AR infrastructure.",
+      "category": "CorpoNation"
+    },
+    {
+      "term": "\u03A6",
+      "fullForm": "Quanta (Q, Qreds)",
+      "definition": "GLMZ\u0027s currency: an allotment of computational power, divided among every citizen, that can be saved, transferred, or spent on computation. The symbol \u03A6 always precedes the number (\u03A6100, never \u0022100\u03A6\u0022). Also known as quanta, Q, or Qreds. Physical medium is the credstick only -- no coins, no bills.",
+      "category": "Currency"
     }
   ]
 }

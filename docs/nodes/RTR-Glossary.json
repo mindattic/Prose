@@ -1,13 +1,25 @@
 {
   "title": "Read the Room \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.6686337Z",
-  "termCount": 3,
+  "generatedAt": "2026-08-12T14:53:05.507851Z",
+  "termCount": 8,
   "terms": [
     {
       "term": "AR",
       "fullForm": "Augmented Reality",
       "definition": "Displayed content layered over physical sight -- distinct from full Hyper Reality, which has no physical counterpart at all. AR overlays annotate or decorate what\u0027s actually there; Hyper Reality substitutes for it entirely.",
       "category": null
+    },
+    {
+      "term": "Bleed",
+      "fullForm": null,
+      "definition": "Data leakage between psionic minds -- an unwanted crossover of thought or sensation between nearby Reads. Not a synonym for a Schism.",
+      "category": "Psionics"
+    },
+    {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
     },
     {
       "term": "neuretics",
@@ -20,6 +32,24 @@
       "fullForm": null,
       "definition": "The narrow, contested corridor where two CorpoNations\u0027 jurisdictions meet and neither fully governs -- named for the literal seam between two claimed territories. Worked, patrolled, and claimed by whoever keeps showing up.",
       "category": null
+    },
+    {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
+      "term": "the Pulse",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
+      "term": "Waxwing Neuromedia",
+      "fullForm": null,
+      "definition": "The CorpoNation contracted to operate GLMZ\u0027s neuretic-readable civic AR infrastructure.",
+      "category": "CorpoNation"
     }
   ]
 }

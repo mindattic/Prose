@@ -8,11 +8,10 @@
 <body>
     <div class="ss-panel">
         <header class="ss-hdr">
-            <h1>◈ KdpPublish</h1>
             <div class="ss-hdr-counts" id="counts">— selected · — tracked</div>
         </header>
 
-        <p class="ss-loading" id="loading">Loading manifest…</p>
+        <div class="ss-spinner-wrap" id="loading"><div class="ss-spinner"></div></div>
 
         <div id="main-body" style="display:none; display:contents;">
             <div class="ss-toolbar">
@@ -26,6 +25,7 @@
                         <tr>
                             <th class="ss-col-check"></th>
                             <th class="ss-col-code">Code</th>
+                            <th class="ss-col-icons"></th>
                             <th class="ss-col-version">Ver</th>
                             <th class="ss-col-status">Status</th>
                         </tr>
@@ -38,6 +38,16 @@
         </div>
 
         <div class="ss-log" id="log"></div>
+
+        <div class="ss-modal-backdrop" id="modal-backdrop" style="display:none;">
+            <div class="ss-modal">
+                <div class="ss-modal-header">
+                    <span id="modal-title"></span>
+                    <button id="modal-close">✕</button>
+                </div>
+                <div class="ss-modal-body" id="modal-body"></div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -54,6 +64,13 @@
                 if (e.publicationStatus === 'Published') return 'ok';
                 if (e.publicationStatus === 'WorkInProgress') return 'wip';
                 return 'warn';
+            }
+
+            function statusIcon(cls) {
+                if (cls === 'ok') return '✓ ';
+                if (cls === 'flagged') return '⟳ ';
+                if (cls === 'wip') return '⚠ ';
+                return '';
             }
 
             // Fixed universe ordering — anything not in this list (unexpected/new universe
@@ -85,14 +102,14 @@
                     trHeader.className = 'ss-group-row';
                     var tdHeader = document.createElement('td');
                     tdHeader.className = 'ss-group-header';
-                    tdHeader.colSpan = 4;
+                    tdHeader.colSpan = 5;
                     tdHeader.textContent = group.universe.toUpperCase() + ' (' + group.items.length + ')';
                     trHeader.appendChild(tdHeader);
                     tbody.appendChild(trHeader);
 
                     group.items.forEach(function (e) {
                         var tr = document.createElement('tr');
-                        tr.className = 'ss-row' + (e.needsRepublish ? ' ss-row-flagged' : '');
+                        tr.className = 'ss-row';
 
                         var tdCheck = document.createElement('td');
                         tdCheck.className = 'ss-col-check';
@@ -108,7 +125,22 @@
                         var tdCode = document.createElement('td');
                         tdCode.className = 'ss-col-code';
                         tdCode.title = e.title + (e.readyToPublish ? '' : ' — no .publish marker, will be skipped');
-                        tdCode.textContent = e.code + (e.readyToPublish ? '' : ' ⚠');
+                        tdCode.textContent = e.code;
+
+                        var tdIcons = document.createElement('td');
+                        tdIcons.className = 'ss-col-icons';
+                        var notesBtn = document.createElement('button');
+                        notesBtn.className = 'ss-icon-btn';
+                        notesBtn.title = 'View description.txt';
+                        notesBtn.textContent = '▤';
+                        notesBtn.addEventListener('click', function (ev) { ev.stopPropagation(); openNotesModal(e); });
+                        var coverBtn = document.createElement('button');
+                        coverBtn.className = 'ss-icon-btn';
+                        coverBtn.title = 'Preview cover.jpg';
+                        coverBtn.textContent = '🖼';
+                        coverBtn.addEventListener('click', function (ev) { ev.stopPropagation(); openCoverModal(e); });
+                        tdIcons.appendChild(notesBtn);
+                        tdIcons.appendChild(coverBtn);
 
                         var tdVer = document.createElement('td');
                         tdVer.className = 'ss-col-version';
@@ -117,12 +149,14 @@
                         var tdStatus = document.createElement('td');
                         tdStatus.className = 'ss-col-status';
                         var span = document.createElement('span');
-                        span.className = 'ss-status ss-status-' + statusClass(e);
-                        span.textContent = e.publicationStatus;
+                        var cls = statusClass(e);
+                        span.className = 'ss-status ss-status-' + cls;
+                        span.textContent = statusIcon(cls) + e.publicationStatus;
                         tdStatus.appendChild(span);
 
                         tr.appendChild(tdCheck);
                         tr.appendChild(tdCode);
+                        tr.appendChild(tdIcons);
                         tr.appendChild(tdVer);
                         tr.appendChild(tdStatus);
                         tbody.appendChild(tr);
@@ -133,13 +167,22 @@
                 startBtn.textContent = running ? 'Running…' : ('▶ Start Selected (' + selected.size + ')');
                 startBtn.disabled = running || selected.size === 0;
 
-                var allSelected = entries.length > 0 && selected.size === entries.length;
+                var selectable = selectableEntries();
+                var allSelected = selectable.length > 0 && selectable.every(function (e) { return selected.has(e.code); });
                 document.getElementById('btn-select-all').textContent = allSelected ? 'Unselect All' : 'Select All';
             }
 
+            // WorkInProgress books are missing a hard-gate requirement (.publish marker,
+            // cover.jpg, description.txt, or an actual .epub) and will always be skipped by a
+            // run — Select All shouldn't check boxes that can't do anything.
+            function selectableEntries() {
+                return entries.filter(function (e) { return e.publicationStatus !== 'WorkInProgress'; });
+            }
+
             document.getElementById('btn-select-all').addEventListener('click', function () {
-                var allSelected = entries.length > 0 && selected.size === entries.length;
-                selected = allSelected ? new Set() : new Set(entries.map(function (e) { return e.code; }));
+                var selectable = selectableEntries();
+                var allSelected = selectable.length > 0 && selectable.every(function (e) { return selected.has(e.code); });
+                selected = allSelected ? new Set() : new Set(selectable.map(function (e) { return e.code; }));
                 render();
             });
             document.getElementById('btn-mark-unpublished').addEventListener('click', function () {
@@ -149,6 +192,38 @@
             document.getElementById('btn-start').addEventListener('click', function () {
                 post({ action: 'start', codes: Array.from(selected) });
             });
+
+            function openModal(title, bodyHtml) {
+                document.getElementById('modal-title').textContent = title;
+                document.getElementById('modal-body').innerHTML = bodyHtml;
+                document.getElementById('modal-backdrop').style.display = 'flex';
+            }
+            function closeModal() {
+                document.getElementById('modal-backdrop').style.display = 'none';
+                pendingCoverCode = null;
+            }
+            document.getElementById('modal-close').addEventListener('click', closeModal);
+            document.getElementById('modal-backdrop').addEventListener('click', function (ev) {
+                if (ev.target.id === 'modal-backdrop') closeModal();
+            });
+
+            function escapeHtml(s) {
+                return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            }
+
+            function openNotesModal(e) {
+                var text = e.description && e.description.trim().length > 0 ? e.description : '(no description.txt found)';
+                openModal(e.code + ' — Description', '<pre class="ss-modal-text">' + escapeHtml(text) + '</pre>');
+            }
+
+            // Guards against a stale cover response landing after the user closed the modal or
+            // clicked a different book's cover icon before the previous request came back.
+            var pendingCoverCode = null;
+            function openCoverModal(e) {
+                pendingCoverCode = e.code;
+                openModal(e.code + ' — Cover', '<div class="ss-modal-loading">Loading…</div>');
+                post({ action: 'get-cover', code: e.code });
+            }
 
             // C# calls these via ExecuteScriptAsync.
             window.ssPanel = {
@@ -187,6 +262,14 @@
                 onRunState: function (isRunning) {
                     running = isRunning;
                     render();
+                },
+                onCoverImage: function (code, dataUri) {
+                    if (code !== pendingCoverCode) return;
+                    if (!dataUri) {
+                        document.getElementById('modal-body').innerHTML = '<div class="ss-modal-loading">(no cover.jpg found)</div>';
+                        return;
+                    }
+                    document.getElementById('modal-body').innerHTML = '<img class="ss-modal-cover" src="' + dataUri + '">';
                 }
             };
 

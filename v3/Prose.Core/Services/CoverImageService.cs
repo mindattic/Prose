@@ -24,6 +24,7 @@ public class CoverImageService
     private readonly CoverPromptService coverPrompts;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly IPathProvider paths;
+    private readonly SettingsService settings;
     private readonly ILogger<CoverImageService> log;
 
     public CoverImageService(
@@ -31,12 +32,14 @@ public class CoverImageService
         CoverPromptService coverPrompts,
         IDbContextFactory<ProseDbContext> dbFactory,
         IPathProvider paths,
+        SettingsService settings,
         ILogger<CoverImageService> log)
     {
         this.providers    = providers.ToDictionary(p => p.Id, StringComparer.OrdinalIgnoreCase);
         this.coverPrompts = coverPrompts;
         this.dbFactory    = dbFactory;
         this.paths        = paths;
+        this.settings     = settings;
         this.log          = log;
     }
 
@@ -90,12 +93,14 @@ public class CoverImageService
 
     /// <summary>
     /// Ensures <paramref name="exportDir"/>/cover.jpg exists — generates one (via the
-    /// first configured image provider) ONLY if that file is missing. A book with a
+    /// first configured image provider) ONLY if that file is missing AND
+    /// <see cref="SettingsService.AutoGenerateCoverOnExport"/> is enabled. Off by default:
+    /// the author controls cover art manually until they opt back in. A book with a
     /// cover.jpg already present is treated as having its cover ready for publish, so
     /// export never touches, regenerates, or overwrites an existing one. Returns the
-    /// path to a newly-written cover.jpg, or null if one already existed or no image
-    /// provider is configured (non-fatal — the caller should treat this as skippable,
-    /// same as any other optional export artifact).
+    /// path to a newly-written cover.jpg, or null if one already existed, auto-generation
+    /// is disabled, or no image provider is configured (non-fatal — the caller should
+    /// treat this as skippable, same as any other optional export artifact).
     /// </summary>
     public async Task<string?> EnsureExportCoverAsync(Guid nodeId, string exportDir, CancellationToken ct = default)
     {
@@ -103,6 +108,12 @@ public class CoverImageService
         if (File.Exists(coverPath))
         {
             log.LogInformation("[cover-image] {Path} already exists — cover ready for publish, skipping generation", coverPath);
+            return null;
+        }
+
+        if (!settings.AutoGenerateCoverOnExport)
+        {
+            log.LogInformation("[cover-image] AutoGenerateCoverOnExport is disabled — skipping cover.jpg generation for {ExportDir}", exportDir);
             return null;
         }
 

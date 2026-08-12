@@ -110,7 +110,36 @@ public class GlossaryService(
     {
         var allTerms = await ListAsync(node.UniverseId, ct);
         var prose = await GetBookProseAsync(db, node.Id, ct);
-        var used = allTerms.Where(t => AppearsInText(t.Term, prose)).ToList();
+
+        // Base set: terms that literally appear in the book's own live prose.
+        var usedIds = new HashSet<Guid>(allTerms.Where(t => AppearsInText(t.Term, prose)).Select(t => t.Id));
+
+        // Recursive cross-reference expansion: if a term already in the set explains itself
+        // by name-dropping ANOTHER glossary term inside its own Definition/FullForm (e.g. SR's
+        // definition mentions DataEast), that referenced term belongs in the book's glossary
+        // too -- a reader shouldn't hit a second unexplained cross-reference inside the very
+        // explanation meant to remove that friction. Repeats until no new terms are pulled in;
+        // guaranteed to terminate because usedIds only grows and is capped by allTerms.Count.
+        bool grew = true;
+        while (grew)
+        {
+            grew = false;
+            var usedTerms = allTerms.Where(t => usedIds.Contains(t.Id)).ToList();
+            foreach (var candidate in allTerms)
+            {
+                if (usedIds.Contains(candidate.Id)) continue;
+                var referenced = usedTerms.Any(t =>
+                    AppearsInText(candidate.Term, t.Definition) ||
+                    (!string.IsNullOrWhiteSpace(t.FullForm) && AppearsInText(candidate.Term, t.FullForm!)));
+                if (referenced)
+                {
+                    usedIds.Add(candidate.Id);
+                    grew = true;
+                }
+            }
+        }
+
+        var used = allTerms.Where(t => usedIds.Contains(t.Id)).OrderBy(t => t.Term).ToList();
         return (used, allTerms);
     }
 
@@ -140,8 +169,15 @@ public class GlossaryService(
 
     // ── Detection ──────────────────────────────────────────────────────────
 
-    static bool AppearsInText(string term, string text) =>
-        Regex.IsMatch(text, $@"(?<![A-Za-z0-9]){Regex.Escape(term)}(?![A-Za-z0-9])", RegexOptions.IgnoreCase);
+    /// <summary>Plural-insensitive: a headword and its regular "-s" plural are one entry
+    /// regardless of which form was authored (e.g. "neuretic" and "neuretics" both match a
+    /// single "neuretics" row, or a single "neuretic" row) — strip a trailing "s" from the
+    /// headword down to its stem, then allow an optional trailing "s" back on the match.</summary>
+    static bool AppearsInText(string term, string text)
+    {
+        var stem = term.Length > 2 && term.EndsWith("s", StringComparison.OrdinalIgnoreCase) ? term[..^1] : term;
+        return Regex.IsMatch(text, $@"(?<![A-Za-z0-9]){Regex.Escape(stem)}s?(?![A-Za-z0-9])", RegexOptions.IgnoreCase);
+    }
 
     static async Task<string> GetBookProseAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
     {

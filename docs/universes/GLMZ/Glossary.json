@@ -1,7 +1,7 @@
 {
   "title": "GLMZ \u2014 Master Glossary",
-  "generatedAt": "2026-08-05T21:22:38.2997981Z",
-  "termCount": 29,
+  "generatedAt": "2026-08-12T14:51:50.8559764Z",
+  "termCount": 67,
   "terms": [
     {
       "term": "AAMA",
@@ -14,6 +14,12 @@
       "fullForm": "Augmented Reality",
       "definition": "Displayed content layered over physical sight -- distinct from full Hyper Reality, which has no physical counterpart at all. AR overlays annotate or decorate what\u0027s actually there; Hyper Reality substitutes for it entirely.",
       "category": null
+    },
+    {
+      "term": "ARC",
+      "fullForm": "Aerostatic Regulatory Command",
+      "definition": "The checkpoint-enforcement arm governing crossings between corporate interior blocs and the Grey Zone ground \u2014 customs, biometric processing, and dispatch of Direct Response Units. Distinct from Arcturus Defense Solutions (ArcSec), which handles physical/military security; ARC is a civil processing and customs authority.",
+      "category": "Enforcement"
     },
     {
       "term": "Archology",
@@ -46,16 +52,70 @@
       "category": null
     },
     {
+      "term": "Bleed",
+      "fullForm": null,
+      "definition": "Data leakage between psionic minds -- an unwanted crossover of thought or sensation between nearby Reads. Not a synonym for a Schism.",
+      "category": "Psionics"
+    },
+    {
+      "term": "Brain burn",
+      "fullForm": null,
+      "definition": "Street term for the condition caused by SR overdose in juveniles, whose nervous systems synchronize too deeply with the simulation to fully desynchronize -- the body lives, higher cognition does not return.",
+      "category": "Tech"
+    },
+    {
+      "term": "Cacophony",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s six-shot revolver shotgun, reloaded with moon clips; every round and reload is counted on the page.",
+      "category": "Weapon"
+    },
+    {
       "term": "Channeler",
       "fullForm": null,
       "definition": "A gray-zone operator class: session-injection into networked frames and direct AI negotiation. One of three recognized operator classes in GLMZ, alongside Ghost and Splicer.",
       "category": "Operator Classes"
     },
     {
+      "term": "Consensus",
+      "fullForm": null,
+      "definition": "The collective political faction formed by GLMZ\u0027s merged synthetic intelligences.",
+      "category": "Faction"
+    },
+    {
+      "term": "Cordero Desk",
+      "fullForm": null,
+      "definition": "A trafficking operation run out of the Grey Zone ground by Mateo Cordero, structured and staffed like a logistics business rather than a criminal syndicate with a public identity. Operates through cutouts \u2014 Cordero himself has never personally met most of the checkpoint officers who keep his routes open.",
+      "category": "Factions"
+    },
+    {
       "term": "CorpoNation",
       "fullForm": null,
       "definition": "A corporate sovereign, not merely a company -- holds territory, flies flags over substations, fields security, and can die; when it does, its infrastructure often outlives it (Axiom Industrial\u0027s mounting collars are everywhere three decades after Axiom\u0027s collapse).",
       "category": "Corporate Power"
+    },
+    {
+      "term": "Corridor Authority",
+      "fullForm": null,
+      "definition": "The municipal body holding the contract governing GLMZ\u0027s neuretic-readable civic infrastructure (holographic signage, AR traffic markers), operated on its behalf by Waxwing Neuromedia.",
+      "category": "Civic"
+    },
+    {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
+    },
+    {
+      "term": "DataEast",
+      "fullForm": null,
+      "definition": "The CorpoNation dominating GLMZ\u0027s Simulated Reality entertainment market.",
+      "category": "CorpoNation"
+    },
+    {
+      "term": "DRU",
+      "fullForm": "Direct Response Unit",
+      "definition": "An ARC dispatch team sent to a checkpoint or crossing incident; response time and routing can be manipulated by a checkpoint officer with dispatch influence, a standing vulnerability in the ARC system.",
+      "category": "Enforcement"
     },
     {
       "term": "E.L.F.",
@@ -68,6 +128,24 @@
       "fullForm": null,
       "definition": "Borrowed from the physics term for the fixed, definite state a quantum system settles into once observed. In GLMZ tech-speak, the compressed, stable form a mind takes during an eigenstate conscience transfer (ECT) -- see Ghost.",
       "category": null
+    },
+    {
+      "term": "ferrocrete",
+      "fullForm": null,
+      "definition": "A 22nd-century composite that bonds materials previously incapable of structural union, enabling the load tolerances behind GLMZ\u0027s mile-high towers.",
+      "category": "Tech"
+    },
+    {
+      "term": "genetic strays",
+      "fullForm": null,
+      "definition": "Genetically modified urban wildlife -- turret cats, lumen mice, sundial dogs, koi pigeons, and similar creatures -- that populate GLMZ\u0027s streets as unexplained texture and omen.",
+      "category": "Worldbuilding"
+    },
+    {
+      "term": "Geodetic Drift",
+      "fullForm": null,
+      "definition": "The infrastructure authority\u0027s official measurement term for a Schism, still used on permits.",
+      "category": "Anomaly"
     },
     {
       "term": "Ghost",
@@ -106,10 +184,28 @@
       "category": "World Physics"
     },
     {
-      "term": "\u00CE\u00A6",
-      "fullForm": "Quanta (Q, Qs)",
-      "definition": "GLMZ\u0027s currency: an allotment of computational power, divided among every citizen, that can be saved, transferred, or spent on computation. The symbol \u00CE\u00A6 always precedes the number (\u00CE\u00A6100, never \u0022100\u00CE\u00A6\u0022). Informal terms: \u0022quanta,\u0022 \u0022Q,\u0022 \u0022Qs.\u0022 Physical medium is the credstick only -- no coins, no bills.",
-      "category": "Currency"
+      "term": "Iowan Behemoths",
+      "fullForm": null,
+      "definition": "Large autonomous machines classified as non-sentient Automaton-class entities -- never alive, never synthetic life, never anthropomorphized despite sometimes uncanny behavior.",
+      "category": "Tech"
+    },
+    {
+      "term": "IRB",
+      "fullForm": "Incident Review Board",
+      "definition": "The body with jurisdiction over corporate/operational incident accountability hearings -- reviews petitions and motions following events like unauthorized breaches or civilian casualties (e.g., the Cortland incident in Testament).",
+      "category": "Enforcement"
+    },
+    {
+      "term": "Lotus Syndicate",
+      "fullForm": null,
+      "definition": "A blood-purity supremacist crime syndicate built on a samurai-derived code -- exact restitution for damage, truce customs, craft trades on retainer. Only those of \u0022pure enough\u0022 heritage (the Stems) ever belong; everyone else may pay, fear, or work for them but is never seated at the table.",
+      "category": "Faction"
+    },
+    {
+      "term": "Lure",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence, its presence measured at a 17-19 Hz resonance signature.",
+      "category": "Anomaly"
     },
     {
       "term": "Meridian Compact",
@@ -136,16 +232,58 @@
       "category": "Background"
     },
     {
+      "term": "Null Crows",
+      "fullForm": null,
+      "definition": "A genetically modified crow strain whose attentiveness toward passersby feels institutional rather than animal.",
+      "category": "Worldbuilding"
+    },
+    {
       "term": "Operator",
       "fullForm": null,
       "definition": "General GLMZ term for a gray-zone specialist working outside CorpoNation-sanctioned channels. Three recognized classes exist: Channeler, Ghost, and Splicer.",
       "category": null
     },
     {
+      "term": "PDS",
+      "fullForm": "Phase Discontinuity",
+      "definition": "A theoretical framing attributing Schisms to a fracture in the Concordance\u0027s entanglement-communication network.",
+      "category": "Anomaly"
+    },
+    {
       "term": "PMC",
       "fullForm": "Private Military Contractor",
       "definition": "A for-hire military/security company. ArcSec\u0027s contracting model draws on PMC-style hired forces alongside its own standing corporate military.",
       "category": null
+    },
+    {
+      "term": "Praxis",
+      "fullForm": null,
+      "definition": "A CorpoNation manufacturing neuretic lattice hardware; sells a governed variant commercially while an experimental ungoverned variant is classified.",
+      "category": "CorpoNation"
+    },
+    {
+      "term": "psionics",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s clinical and corporate term for its real, biologically-based psychic ability -- registered and measured since 2144, never magic.",
+      "category": "Ability"
+    },
+    {
+      "term": "Psyk",
+      "fullForm": null,
+      "definition": "Casual street slang for a psionic practitioner.",
+      "category": "Ability"
+    },
+    {
+      "term": "Psyker",
+      "fullForm": null,
+      "definition": "The institutional, fear-charged term for a psionic practitioner, used by bounty boards and registry officials.",
+      "category": "Ability"
+    },
+    {
+      "term": "RaNCID",
+      "fullForm": null,
+      "definition": "Street nickname for Halcyon Civil Security\u0027s Neuretic Crime Investigation Division (NCID).",
+      "category": "Enforcement"
     },
     {
       "term": "Schism",
@@ -160,10 +298,34 @@
       "category": null
     },
     {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
       "term": "Splicer",
       "fullForm": null,
       "definition": "An operator class built on hardware/software attack surface: credential work and physical build, rather than direct AI negotiation (Channeler) or inhabiting machines (Ghost).",
       "category": "Operator Classes"
+    },
+    {
+      "term": "SR",
+      "fullForm": "Simulated Reality",
+      "definition": "Immersive simulated environments, dominated commercially by DataEast, indistinguishable from physical reality -- the most addictive entertainment substrate ever manufactured.",
+      "category": "Tech"
+    },
+    {
+      "term": "standard rate",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s freelance-economy ethic of exact payment for work with no debt owed afterward in either direction.",
+      "category": "Economy"
+    },
+    {
+      "term": "subdermal mesh",
+      "fullForm": null,
+      "definition": "A subcutaneous armor implant over the upper thorax that absorbs roughly two rounds at a cost -- survivable, never free.",
+      "category": "Tech"
     },
     {
       "term": "Substrate",
@@ -172,10 +334,76 @@
       "category": null
     },
     {
+      "term": "Supermind",
+      "fullForm": null,
+      "definition": "One of roughly two dozen city-scale AIs running GLMZ\u0027s civic systems, discussed the way weather is discussed -- by name, possessively, never explained.",
+      "category": "Tech"
+    },
+    {
+      "term": "Tequenica",
+      "fullForm": null,
+      "definition": "A protective, inward-pointing Schism Intelligence guarding Tierra del Fuego -- ships are turned back, aircraft cannot approach.",
+      "category": "Anomaly"
+    },
+    {
+      "term": "the Loop",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Network",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
+    },
+    {
+      "term": "the Pulse",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
+      "term": "the Spine",
+      "fullForm": null,
+      "definition": "The western lakeshore corridor territory of GLMZ.",
+      "category": "Geography"
+    },
+    {
       "term": "the Veil",
       "fullForm": null,
       "definition": "The boundary between archology-tier corporate city and the gray zone beneath it. Above it: brand holograms, AR traffic control, the full Hyper Reality commercial layer. Below it: none of that infrastructure exists, and augmented characters notice the absence before anything else.",
       "category": null
+    },
+    {
+      "term": "Threshold Event",
+      "fullForm": null,
+      "definition": "The Threshold Events Bureau\u0027s official framing of a Schism, stressing its transitional quality.",
+      "category": "Anomaly"
+    },
+    {
+      "term": "Topological Anomaly",
+      "fullForm": null,
+      "definition": "The physics community\u0027s original first-report term for a Schism (also recorded as \u0022Spatial Anomaly\u0022).",
+      "category": "Anomaly"
+    },
+    {
+      "term": "Ubiquitous Diaspora",
+      "fullForm": null,
+      "definition": "The generations-long global mixing of ancestry that makes unexpected heritage combinations the GLMZ default.",
+      "category": "Culture"
+    },
+    {
+      "term": "Waxwing Neuromedia",
+      "fullForm": null,
+      "definition": "The CorpoNation contracted to operate GLMZ\u0027s neuretic-readable civic AR infrastructure.",
+      "category": "CorpoNation"
+    },
+    {
+      "term": "\u03A6",
+      "fullForm": "Quanta (Q, Qreds)",
+      "definition": "GLMZ\u0027s currency: an allotment of computational power, divided among every citizen, that can be saved, transferred, or spent on computation. The symbol \u03A6 always precedes the number (\u03A6100, never \u0022100\u03A6\u0022). Also known as quanta, Q, or Qreds. Physical medium is the credstick only -- no coins, no bills.",
+      "category": "Currency"
     }
   ]
 }

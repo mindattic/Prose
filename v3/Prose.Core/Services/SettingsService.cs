@@ -629,6 +629,10 @@ public class SettingsService : IDisposable
     /// <summary>When true, WorldTickService advances the story clock and writes EntityStateEvents per active character on each tick.
     /// Off by default — enable deliberately once the rule layer is ready.</summary>
     public bool WorldTickEnabled { get => data.WorldTickEnabled; set { data.WorldTickEnabled = value; ScheduleSave(); } }
+    /// <summary>When true, CoverImageService.EnsureExportCoverAsync auto-generates a missing cover.jpg
+    /// during --export-node/export_node. Off by default — the author controls cover art manually
+    /// until they opt back in.</summary>
+    public bool AutoGenerateCoverOnExport { get => data.AutoGenerateCoverOnExport; set { data.AutoGenerateCoverOnExport = value; ScheduleSave(); } }
 
     // SMTP — outbound email for password reset codes
     public string SmtpHost { get => Env("PROSE_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
@@ -1038,5 +1042,7 @@ public class SettingsService : IDisposable
         public bool AutoCanonGrounding { get; set; } = false;
         /// <summary>When true, SceneContextAssembler.HarvestRevealedDetailsAsync fires after each beat write to propose XRAY-REVEAL findings. Default OFF.</summary>
         public bool AutoHarvestRevealedDetails { get; set; } = false;
+        /// <summary>When true, CoverImageService.EnsureExportCoverAsync auto-generates a missing cover.jpg during export. Default OFF — author controls cover art manually.</summary>
+        public bool AutoGenerateCoverOnExport { get; set; } = false;
     }
 }

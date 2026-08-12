@@ -1,13 +1,25 @@
 {
   "title": "The Long Cut \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.7612447Z",
-  "termCount": 9,
+  "generatedAt": "2026-08-12T14:53:05.6138251Z",
+  "termCount": 18,
   "terms": [
     {
       "term": "AR",
       "fullForm": "Augmented Reality",
       "definition": "Displayed content layered over physical sight -- distinct from full Hyper Reality, which has no physical counterpart at all. AR overlays annotate or decorate what\u0027s actually there; Hyper Reality substitutes for it entirely.",
       "category": null
+    },
+    {
+      "term": "Bleed",
+      "fullForm": null,
+      "definition": "Data leakage between psionic minds -- an unwanted crossover of thought or sensation between nearby Reads. Not a synonym for a Schism.",
+      "category": "Psionics"
+    },
+    {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
     },
     {
       "term": "Ghost",
@@ -56,6 +68,48 @@
       "fullForm": null,
       "definition": "The narrow, contested corridor where two CorpoNations\u0027 jurisdictions meet and neither fully governs -- named for the literal seam between two claimed territories. Worked, patrolled, and claimed by whoever keeps showing up.",
       "category": null
+    },
+    {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
+      "term": "standard rate",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s freelance-economy ethic of exact payment for work with no debt owed afterward in either direction.",
+      "category": "Economy"
+    },
+    {
+      "term": "the Loop",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Network",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
+    },
+    {
+      "term": "the Pulse",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
+      "term": "the Spine",
+      "fullForm": null,
+      "definition": "The western lakeshore corridor territory of GLMZ.",
+      "category": "Geography"
+    },
+    {
+      "term": "Waxwing Neuromedia",
+      "fullForm": null,
+      "definition": "The CorpoNation contracted to operate GLMZ\u0027s neuretic-readable civic AR infrastructure.",
+      "category": "CorpoNation"
     }
   ]
 }

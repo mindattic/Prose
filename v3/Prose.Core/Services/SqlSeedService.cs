@@ -71,6 +71,7 @@ public class SqlSeedService
             ["universe_nonfiction"]              = "add_universe_gspl_20260726.sql",
             ["universe_horror"]                  = "add_universe_horror_20260803.sql",
             ["universe_erotica"]                 = "add_universe_erotica_20260804.sql",
+            ["universe_gospel"]                  = "add_universe_gospel_20260812.sql",
         };
 
     public class SeedResult

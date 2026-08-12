@@ -1,13 +1,43 @@
 {
   "title": "Steppin\u0027 Razor \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.6992257Z",
-  "termCount": 8,
+  "generatedAt": "2026-08-12T14:53:05.5536168Z",
+  "termCount": 20,
   "terms": [
+    {
+      "term": "ARC",
+      "fullForm": "Aerostatic Regulatory Command",
+      "definition": "The checkpoint-enforcement arm governing crossings between corporate interior blocs and the Grey Zone ground \u2014 customs, biometric processing, and dispatch of Direct Response Units. Distinct from Arcturus Defense Solutions (ArcSec), which handles physical/military security; ARC is a civil processing and customs authority.",
+      "category": "Enforcement"
+    },
+    {
+      "term": "Bleed",
+      "fullForm": null,
+      "definition": "Data leakage between psionic minds -- an unwanted crossover of thought or sensation between nearby Reads. Not a synonym for a Schism.",
+      "category": "Psionics"
+    },
     {
       "term": "Channeler",
       "fullForm": null,
       "definition": "A gray-zone operator class: session-injection into networked frames and direct AI negotiation. One of three recognized operator classes in GLMZ, alongside Ghost and Splicer.",
       "category": "Operator Classes"
+    },
+    {
+      "term": "Consensus",
+      "fullForm": null,
+      "definition": "The collective political faction formed by GLMZ\u0027s merged synthetic intelligences.",
+      "category": "Faction"
+    },
+    {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
+    },
+    {
+      "term": "ferrocrete",
+      "fullForm": null,
+      "definition": "A 22nd-century composite that bonds materials previously incapable of structural union, enabling the load tolerances behind GLMZ\u0027s mile-high towers.",
+      "category": "Tech"
     },
     {
       "term": "Ghost",
@@ -40,6 +70,12 @@
       "category": "Tech"
     },
     {
+      "term": "Operator",
+      "fullForm": null,
+      "definition": "General GLMZ term for a gray-zone specialist working outside CorpoNation-sanctioned channels. Three recognized classes exist: Channeler, Ghost, and Splicer.",
+      "category": null
+    },
+    {
       "term": "Schism",
       "fullForm": null,
       "definition": "Official term for the geometry-breaking anomalies scattered across GLMZ -- a hum at 19Hz from no direction, a block that takes eleven steps when geometry says nine. Classified Class-1 through Class-5 by intensity by the Anomalous Activity Monitoring Authority; what they actually are remains an open question, even to the people whose job is to classify them.",
@@ -50,6 +86,42 @@
       "fullForm": null,
       "definition": "The narrow, contested corridor where two CorpoNations\u0027 jurisdictions meet and neither fully governs -- named for the literal seam between two claimed territories. Worked, patrolled, and claimed by whoever keeps showing up.",
       "category": null
+    },
+    {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
+      "term": "the Loop",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Network",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
+    },
+    {
+      "term": "the Pulse",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
+      "term": "Waxwing Neuromedia",
+      "fullForm": null,
+      "definition": "The CorpoNation contracted to operate GLMZ\u0027s neuretic-readable civic AR infrastructure.",
+      "category": "CorpoNation"
+    },
+    {
+      "term": "\u03A6",
+      "fullForm": "Quanta (Q, Qreds)",
+      "definition": "GLMZ\u0027s currency: an allotment of computational power, divided among every citizen, that can be saved, transferred, or spent on computation. The symbol \u03A6 always precedes the number (\u03A6100, never \u0022100\u03A6\u0022). Also known as quanta, Q, or Qreds. Physical medium is the credstick only -- no coins, no bills.",
+      "category": "Currency"
     }
   ]
 }

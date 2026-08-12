@@ -1,13 +1,19 @@
 {
   "title": "Sparrow \u2014 Glossary",
-  "generatedAt": "2026-08-05T21:22:48.6792498Z",
-  "termCount": 12,
+  "generatedAt": "2026-08-12T14:53:05.5315541Z",
+  "termCount": 22,
   "terms": [
     {
       "term": "AAMA",
       "fullForm": "Anomalous Activity Monitoring Authority",
       "definition": "The civil authority that classifies schisms -- dimensional anomalies pressing into 3D space -- Class-1 through Class-5 by intensity. A Class-3-or-higher site requires an AAMA permit to enter.",
       "category": "Bureaucracy"
+    },
+    {
+      "term": "ARC",
+      "fullForm": "Aerostatic Regulatory Command",
+      "definition": "The checkpoint-enforcement arm governing crossings between corporate interior blocs and the Grey Zone ground \u2014 customs, biometric processing, and dispatch of Direct Response Units. Distinct from Arcturus Defense Solutions (ArcSec), which handles physical/military security; ARC is a civil processing and customs authority.",
+      "category": "Enforcement"
     },
     {
       "term": "ArcSec",
@@ -34,6 +40,12 @@
       "category": "Corporate Power"
     },
     {
+      "term": "Counter",
+      "fullForm": null,
+      "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
+      "category": "Anomaly"
+    },
+    {
       "term": "GLMZ",
       "fullForm": "Great Lakes Metropolitan Zone",
       "definition": "The corridor of unified urban sprawl encircling the Great Lakes in 2226 -- governed not by one government but by competing CorpoNations, Halcyon and Arcturus\u0027s enforcement monopolies, and the gray zones neither reaches.",
@@ -50,6 +62,12 @@
       "fullForm": null,
       "definition": "Thought-operated in-head compute that everyone in GLMZ has at some tier -- grown, not implanted. Checkpoints read the wearer biometrically through it. A common noun, lowercase, like \u0022sword\u0022 or \u0022hand.\u0022",
       "category": "Tech"
+    },
+    {
+      "term": "Null Crows",
+      "fullForm": null,
+      "definition": "A genetically modified crow strain whose attentiveness toward passersby feels institutional rather than animal.",
+      "category": "Worldbuilding"
     },
     {
       "term": "Operator",
@@ -70,10 +88,52 @@
       "category": null
     },
     {
+      "term": "Silence",
+      "fullForm": null,
+      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "category": "Weapon"
+    },
+    {
+      "term": "SR",
+      "fullForm": "Simulated Reality",
+      "definition": "Immersive simulated environments, dominated commercially by DataEast, indistinguishable from physical reality -- the most addictive entertainment substrate ever manufactured.",
+      "category": "Tech"
+    },
+    {
       "term": "Substrate",
       "fullForm": null,
       "definition": "The physical/computational medium neuretics and much of GLMZ\u0027s infrastructure run on -- dense enough that AI life (see E.L.F.) has been known to emerge spontaneously from its molecular complexity.",
       "category": null
+    },
+    {
+      "term": "the Loop",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Network",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
+    },
+    {
+      "term": "the Pulse",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
+      "term": "the Spine",
+      "fullForm": null,
+      "definition": "The western lakeshore corridor territory of GLMZ.",
+      "category": "Geography"
+    },
+    {
+      "term": "\u03A6",
+      "fullForm": "Quanta (Q, Qreds)",
+      "definition": "GLMZ\u0027s currency: an allotment of computational power, divided among every citizen, that can be saved, transferred, or spent on computation. The symbol \u03A6 always precedes the number (\u03A6100, never \u0022100\u03A6\u0022). Also known as quanta, Q, or Qreds. Physical medium is the credstick only -- no coins, no bills.",
+      "category": "Currency"
     }
   ]
 }

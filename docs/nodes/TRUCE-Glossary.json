@@ -1,13 +1,19 @@
 {
   "title": "Three Day Truce \u2014 Glossary",
-  "generatedAt": "2026-08-06T00:13:12.8231655Z",
-  "termCount": 10,
+  "generatedAt": "2026-08-12T14:53:09.4846665Z",
+  "termCount": 18,
   "terms": [
     {
       "term": "Catalyst",
       "fullForm": "Gifted matter class; Xerum 525 primary",
       "definition": "Infusion of alien Gifted matter into a living person, producing controlled physical change over time -- not consciousness transfer. The body is changed; the person who entered the procedure is the same person afterward, altered rather than replaced. Xerum 525 (\u0022Red Mercury\u0022) is the primary, most-studied Catalyst; field slang is \u0022the dose.\u0022",
       "category": "Tech \u0026 Substances"
+    },
+    {
+      "term": "Champion",
+      "fullForm": null,
+      "definition": "A soldier Transmuted so far past ordinary House rank structure that they are identified by name rather than designation. No House owns or commands a Champion -- only courts them.",
+      "category": "Title"
     },
     {
       "term": "Gifted",
@@ -34,6 +40,18 @@
       "category": "Creatures"
     },
     {
+      "term": "Ocipheus",
+      "fullForm": null,
+      "definition": "The House of the island nation (Britain analog); seat of the Canon Immaculate and the oldest continuously documented Scrying installation in Entos, staffed by the longest-tenured vigil operators in any House.",
+      "category": "Faction"
+    },
+    {
+      "term": "Pallor",
+      "fullForm": null,
+      "definition": "The northern fjord House (Scandinavia analog), the oldest surviving martial succession tradition in Entos -- ruled by a Warrior King confirmed by the Long Seat rather than by heredity -- which absorbed the failing House Fjorheim three centuries ago.",
+      "category": "Faction"
+    },
+    {
       "term": "Shell",
       "fullForm": null,
       "definition": "An android construct built by the Liturgy, carrying an Anima Core. Uninhabited, it is just a Shell -- inert, no different from any other piece of equipment. The moment a mind Relays into it, it is a Myrmidon.",
@@ -58,10 +76,40 @@
       "category": "Creatures"
     },
     {
+      "term": "the Keeper",
+      "fullForm": null,
+      "definition": "The person who runs a House\u0027s Scrying installation -- the technical authority whose control of the apparatus determines what the House can manufacture.",
+      "category": "Title"
+    },
+    {
       "term": "the Liturgy",
       "fullForm": null,
       "definition": "The religious-scientific sect that administers the Gifted Ceremony and exists outside House politics, predating the current Houses. Does not fight wars or take territory; its doctrine and rites are the foundation the Houses\u0027 own legitimacy is built on.",
       "category": "Institutions"
+    },
+    {
+      "term": "the Pass",
+      "fullForm": null,
+      "definition": "The narrow strait (the Bosphorus analog) separating Entos\u0027s eastern boundary from the quarantined Sinter territory -- the only practical crossing between the two, held by fortified towers, naval patrols, and Eirene\u0027s Gate.",
+      "category": "Geography"
+    },
+    {
+      "term": "the Silence",
+      "fullForm": null,
+      "definition": "The Liturgy\u0027s highest governing body. It never appears publicly, speaks only through Canon-level intermediaries, and its decisions are final and unexplained.",
+      "category": "Institution"
+    },
+    {
+      "term": "Verlaine",
+      "fullForm": null,
+      "definition": "The central House (France analog) that wrote the Compact and holds the broadest Sphere catalogue in Entos -- the Deep Archive -- governed by catalogue-regency under the First Archivist.",
+      "category": "Faction"
+    },
+    {
+      "term": "Warrior King",
+      "fullForm": null,
+      "definition": "A House\u0027s most experienced military commander -- a rank accumulated through decades of campaigns rather than inherited by blood.",
+      "category": "Title"
     }
   ]
 }

@@ -169,6 +169,15 @@ public abstract class Node
     /// maximum-safe gutter (0.875").</summary>
     public int? KdpPageCount { get; set; }
 
+    /// <summary>Estimated Kindle e-reader page count (words / 250 -- the commonly-cited
+    /// convention for Amazon's Kindle page display; distinct from <see cref="KdpPageCount"/>,
+    /// which is the 6"x9" print-trim page count). Recomputed on every export.</summary>
+    public int? KindlePages { get; set; }
+
+    /// <summary>Estimated reading time in minutes (words / 200wpm -- the commonly-cited average
+    /// adult silent-reading speed). Recomputed on every export.</summary>
+    public int? ReadingMinutes { get; set; }
+
     /// <summary>Direct Amazon product URL for the published book. Null = not published on Amazon
     /// (or the URL has not been recorded yet). The authoritative marker of which stories are live:
     /// a non-null PublishUrl means the book exists on Amazon at that address.</summary>

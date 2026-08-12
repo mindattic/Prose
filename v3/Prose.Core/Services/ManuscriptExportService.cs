@@ -7,6 +7,7 @@ using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
 using Prose.Core.Data;
+using Prose.Core.Data.Entities;
 
 namespace Prose.Core.Services;
 
@@ -22,6 +23,7 @@ public class ManuscriptExportService
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly NodeWorkbenchService workbench;
     private readonly SettingsService settings;
+    private readonly GlossaryService glossary;
     private readonly ILogger<ManuscriptExportService> log;
 
     private readonly ClaudeService claudeService;
@@ -30,12 +32,14 @@ public class ManuscriptExportService
         IDbContextFactory<ProseDbContext> dbFactory,
         NodeWorkbenchService workbench,
         SettingsService settings,
+        GlossaryService glossary,
         ClaudeService claudeService,
         ILogger<ManuscriptExportService> log)
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
         this.settings = settings;
+        this.glossary = glossary;
         this.claudeService = claudeService;
         this.log = log;
     }
@@ -142,6 +146,13 @@ public class ManuscriptExportService
             ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
             : author.Trim();
 
+        // Back-matter glossary — same subset DocxExportService already appends (SS-LAW-20:
+        // never interrupt in-voice prose to spell out an acronym). PDF/EPUB never had this;
+        // only .docx did, which is not what KDP actually ingests for the ebook.
+        var glossaryTerms = await glossary.GetUsedTermsAsync(nodeId, ct);
+        if (glossaryTerms.Count > 0)
+            manuscript.Chapters.Add(BuildGlossaryChapter(glossaryTerms));
+
         // 6" × 9" KDP paperback trim (points: 1" = 72pt).
         // Margins: top/bottom 1", left/right 0.75" symmetric for screen reading.
         var trim = new PageSize(432, 648);
@@ -216,6 +227,13 @@ public class ManuscriptExportService
             : author.Trim();
         var authorName = author;
         var bookUuid = $"urn:uuid:{Guid.NewGuid()}";
+
+        // Back-matter glossary — same subset DocxExportService already appends (SS-LAW-20:
+        // never interrupt in-voice prose to spell out an acronym). PDF/EPUB never had this;
+        // only .docx did, which is not what KDP actually ingests for the ebook.
+        var glossaryTerms = await glossary.GetUsedTermsAsync(nodeId, ct);
+        if (glossaryTerms.Count > 0)
+            manuscript.Chapters.Add(BuildGlossaryChapter(glossaryTerms));
 
         using var fs = File.Create(path);
         using var zip = new ZipArchive(fs, ZipArchiveMode.Create);
@@ -444,6 +462,22 @@ public class ManuscriptExportService
     /// (<c>IsSubHeading=true</c>) — rendered in its own smaller heading style but never
     /// counted, paginated, or spine/TOC-listed as a chapter in its own right.</summary>
     private sealed record ContentBlock(bool IsSubHeading, string Text);
+
+    /// <summary>Builds the back-matter "Glossary" chapter — one sub-heading-styled block per
+    /// term ("Term — FullForm", mirroring DocxExportService.GlossaryEntryHeading's bold-term/
+    /// italic-fullform pairing) followed by its definition as an ordinary block. Terms arrive
+    /// pre-sorted alphabetically from GlossaryService, so no extra sort is needed here.</summary>
+    private static Chapter BuildGlossaryChapter(IReadOnlyList<GlossaryTerm> terms)
+    {
+        var blocks = new List<ContentBlock>();
+        foreach (var term in terms)
+        {
+            var heading = string.IsNullOrWhiteSpace(term.FullForm) ? term.Term : $"{term.Term} — {term.FullForm}";
+            blocks.Add(new ContentBlock(true, heading));
+            blocks.Add(new ContentBlock(false, term.Definition));
+        }
+        return new Chapter("Glossary", blocks);
+    }
 
     /// <summary>Resolve the node, walk its ordered beats into chapters, and
     /// compute the publish-directory path for the given extension.</summary>
