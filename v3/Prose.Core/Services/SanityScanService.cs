@@ -249,7 +249,7 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var orderedBeats = node.BeatNodes
-            .Where(sb => sb.IsEnabled && sb.Beat != null)
+            .Where(sb => true && sb.Beat != null)
             .OrderBy(sb => sb.SortKey)
             .Select(sb => sb.Beat!)
             .ToList();
@@ -277,7 +277,7 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
             var childBeats = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where childIds.Contains(sb.NodeId) && sb.IsEnabled
+                where childIds.Contains(sb.NodeId) && true
                 orderby sb.SortKey
                 select b
             ).ToListAsync(ct);

@@ -106,7 +106,7 @@ public sealed class ReviewReportExporter
             var rows = await (
                 from bn in db.BeatNodes
                 join b in db.Beats on bn.BeatId equals b.Id
-                where bn.NodeId == nodeId && bn.IsEnabled
+                where bn.NodeId == nodeId && true
                 orderby bn.SortKey
                 select new { b.Number, b.Title }
             ).ToListAsync(ct);

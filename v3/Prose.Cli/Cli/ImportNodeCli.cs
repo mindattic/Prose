@@ -164,35 +164,7 @@ public static class ImportNodeCli
         node.SortKey      = siblingMaxSort + 100.0;
         db.Nodes.Add(node);
 
-        // Pre-allocate a contiguous block of Beat.Number values in one round-trip
-        // — matches the pattern in NodeWorkbenchService.SplitBeatByParagraphsAsync.
-        var baseNumber = (await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0) + 1;
-        double sortKey = 100.0;
-        for (int i = 0; i < parsed.Beats.Count; i++)
-        {
-            var pb = parsed.Beats[i];
-            var beat = new Beat
-            {
-                Id             = Guid.CreateVersion7(),
-                Number         = baseNumber + i,
-                Text           = pb.Text,
-                TextHash       = string.IsNullOrEmpty(pb.Text) ? null : NodeWorkbenchService.ComputeTextHash(pb.Text),
-                Title          = pb.Title,
-                IsChapterStart = pb.IsChapterStart,
-                Kind           = string.IsNullOrEmpty(pb.Kind) ? "prose" : pb.Kind,
-                Description    = pb.Description,
-                StructureRole  = pb.StructureRole,
-                Act            = pb.Act,
-                SceneType      = string.IsNullOrEmpty(pb.SceneType) ? "scene" : pb.SceneType,
-                EmotionalTone  = pb.EmotionalTone,
-                PaceHint       = pb.PaceHint,
-                GapAfterMs     = pb.GapAfterMs,
-                VoiceId        = pb.VoiceId,
-            };
-            db.Beats.Add(beat);
-            db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
-            sortKey += 100.0;
-        }
+        await NodeBeatWriter.WriteBeatsAsync(db, nodeId, parsed.Beats);
 
         await db.SaveChangesAsync();
         await tx.CommitAsync();

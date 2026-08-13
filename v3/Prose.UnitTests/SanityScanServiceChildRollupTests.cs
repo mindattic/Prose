@@ -42,11 +42,21 @@ public class SanityScanServiceChildRollupTests
         try { Directory.Delete(tempRoot, recursive: true); } catch { }
     }
 
-    private async Task<Beat> AddBeatAsync(ProseDbContext db, Guid nodeId, string text, double sortKey, bool enabled = true)
+    private async Task<Beat> AddBeatAsync(ProseDbContext db, Guid nodeId, string text, double sortKey)
     {
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = text };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey, IsEnabled = enabled });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });
+        return beat;
+    }
+
+    /// <summary>A Beat row that exists but has no BeatNode link to any node at all —
+    /// there's no "disabled" state anymore, so the equivalent of a beat that
+    /// shouldn't count toward a book is one that was never actually attached.</summary>
+    private async Task<Beat> AddUnattachedBeatAsync(ProseDbContext db, string text)
+    {
+        var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = text };
+        db.Beats.Add(beat);
         return beat;
     }
 
@@ -143,7 +153,7 @@ public class SanityScanServiceChildRollupTests
             chapter.UniverseId = universeId; chapter.ParentNodeId = bookId;
             db.Nodes.Add(chapter);
 
-            await AddBeatAsync(db, bookId, "This disabled beat should never be counted at all here.", sortKey: 50, enabled: false);
+            await AddUnattachedBeatAsync(db, "This unattached beat should never be counted at all here.");
             await AddBeatAsync(db, bookId, "Enabled direct beat five words.", sortKey: 100);
             await AddBeatAsync(db, chapterId, "Real chapter content beat with several words here.", sortKey: 100);
 
@@ -152,6 +162,6 @@ public class SanityScanServiceChildRollupTests
 
         var report = await svc.ScanAsync(bookId);
 
-        Assert.That(report.BeatCount, Is.EqualTo(2), "the disabled direct beat must not be counted");
+        Assert.That(report.BeatCount, Is.EqualTo(2), "a beat with no BeatNode link to this book must not be counted");
     }
 }

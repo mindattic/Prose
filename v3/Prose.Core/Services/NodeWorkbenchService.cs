@@ -85,7 +85,7 @@ public class NodeWorkbenchService
     /// node so the UI can group beats under sub-node headers when the
     /// caller wants to render a multi-level page.</summary>
     /// <param name="includeDisabled">When true, soft-deleted (IsEnabled=false) beats
-    /// are included in the result with <see cref="OrderedBeat.IsEnabled"/> = false.
+    /// are included in the result with <see cref="true"/> = false.
     /// Default false — the normal writing view only shows live beats.</param>
     public async Task<List<OrderedBeat>> GetOrderedBeatsAsync(Guid nodeId, CancellationToken ct = default, bool includeDisabled = false)
     {
@@ -103,15 +103,16 @@ public class NodeWorkbenchService
     {
         if (!visited.Add(nodeId)) return; // cycle — already walked this node once.
 
-        // Direct beats first, in SortKey order. Soft-deleted beats are excluded
-        // by default; pass includeDisabled=true to make them visible (grey + restore button).
+        // Direct beats first, in SortKey order. There is no soft-deleted state
+        // anymore — a BeatNode row exists or it doesn't — so includeDisabled is
+        // now a no-op kept only so existing call sites don't need editing.
         var direct = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && (includeDisabled || sb.IsEnabled))
+            .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
-            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, sb.IsEnabled, Beat = b })
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
             .ToListAsync(ct);
         foreach (var d in direct)
-            acc.Add(new OrderedBeat(d.Beat, nodeId, d.SortKey, d.IsEnabled));
+            acc.Add(new OrderedBeat(d.Beat, nodeId, d.SortKey, true));
 
         // Then child nodes in SortKey order — skip book-kind nodes (draft buckets).
         var children = await db.Nodes
@@ -192,7 +193,7 @@ public class NodeWorkbenchService
     public async Task<int> CountBeatsAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId && sb.IsEnabled, ct);
+        return await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId && true, ct);
     }
 
     // ── Edits ────────────────────────────────────────────────────────────
@@ -275,7 +276,7 @@ public class NodeWorkbenchService
         if (postBeatValidator != null || semanticFidelity != null)
         {
             beatSlug = await db.BeatNodes.AsNoTracking()
-                .Where(sb => sb.BeatId == beatId && sb.IsEnabled)
+                .Where(sb => sb.BeatId == beatId && true)
                 .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(ct);
         }
@@ -387,9 +388,9 @@ public class NodeWorkbenchService
         // review (Score/ScoredAt), Stale and WasCorrected are intentionally left
         // at defaults — a duplicate has no recordings, no reviews, nothing stale.
         var srcBeats = await db.BeatNodes
-            .Where(sb => sb.NodeId == srcNodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == srcNodeId)
             .OrderBy(sb => sb.SortKey)
-            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, sb.IsEnabled, Beat = b })
+            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
             .ToListAsync(ct);
         var now = DateTime.UtcNow;
         foreach (var row in srcBeats)
@@ -416,7 +417,7 @@ public class NodeWorkbenchService
                 UpdatedAt      = now,
             };
             db.Beats.Add(nb);
-            db.BeatNodes.Add(new BeatNode { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey, IsEnabled = row.IsEnabled });
+            db.BeatNodes.Add(new BeatNode { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey });
         }
 
         // Recurse into child nodes, preserving their order.
@@ -611,7 +612,7 @@ public class NodeWorkbenchService
                 $"'{parent.Title}' already has {existingChildren} child node(s) — it's already a Collection. " +
                 "Splitting its direct beats would duplicate chapters. Reconcile the existing children first.");
 
-        var rows = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+        var rows = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
                   (sb, b) => new { sb.BeatId, sb.SortKey, b.IsChapterStart, b.Title })
@@ -643,7 +644,7 @@ public class NodeWorkbenchService
             throw new InvalidOperationException($"Node has {segments.Count} chapter segment(s) — nothing to split. Mark IsChapterStart on beats first.");
 
         // Drop only enabled beat links — disabled (soft-deleted) rows stay on the parent so they remain restorable.
-        var oldLinks = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && sb.IsEnabled).ToListAsync(ct);
+        var oldLinks = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && true).ToListAsync(ct);
         db.BeatNodes.RemoveRange(oldLinks);
 
         double parentSort = 100.0;
@@ -712,7 +713,7 @@ public class NodeWorkbenchService
         var existingChildren = await db.Nodes.CountAsync(s => s.ParentNodeId == storyId, ct);
         if (existingChildren > 0) return null; // already chaptered — nothing to do
 
-        var enabled = await db.BeatNodes.Where(sb => sb.NodeId == storyId && sb.IsEnabled)
+        var enabled = await db.BeatNodes.Where(sb => sb.NodeId == storyId && true)
             .OrderBy(sb => sb.SortKey).ToListAsync(ct);
         if (enabled.Count == 0) throw new InvalidOperationException($"'{story.Title}' has no direct beats to wrap.");
 
@@ -765,7 +766,7 @@ public class NodeWorkbenchService
         initialText = TextSanitizerService.Sanitize(initialText ?? "");
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var ordered = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
 
@@ -798,7 +799,7 @@ public class NodeWorkbenchService
             // rows with the post-restripe ladder.
             db.ChangeTracker.Clear();
             ordered = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+                .Where(sb => sb.NodeId == nodeId && true)
                 .OrderBy(sb => sb.SortKey)
                 .ToListAsync(ct);
             if (afterBeatId == null)
@@ -863,7 +864,7 @@ public class NodeWorkbenchService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         if (siblings.Count == 0) return 0;
@@ -894,7 +895,7 @@ public class NodeWorkbenchService
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var subject = siblings.FirstOrDefault(sb => sb.BeatId == beatId)
@@ -926,7 +927,7 @@ public class NodeWorkbenchService
             // values from the first ToListAsync above.
             db.ChangeTracker.Clear();
             siblings = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+                .Where(sb => sb.NodeId == nodeId && true)
                 .OrderBy(sb => sb.SortKey)
                 .ToListAsync(ct);
             subject = siblings.First(sb => sb.BeatId == beatId);
@@ -956,25 +957,32 @@ public class NodeWorkbenchService
             beatId, nodeId, newSortKey, afterBeatId?.ToString() ?? "(top)");
     }
 
-    /// <summary>Enable or disable a beat's membership in a node's reading order, without
-    /// touching the Beat row itself (its prose, audio, and any OTHER node's membership of the
-    /// same beat all survive untouched — this only affects whether IT reads as part of THIS
-    /// node). Reversible: pass enabled=true to restore it. Added 2026-08-09 for a real case —
-    /// a beat found sorted into a chapter its content had no connection to (no causal or
-    /// thematic link anywhere in that chapter), where forcing a position (top, middle, or end)
-    /// would only trade one confusing placement for another. Disabling is the honest fix when
-    /// no correct position can be found with the evidence at hand, rather than leaving a beat
-    /// wherever it happened to land.</summary>
+    /// <summary>Remove a beat's membership in a node's reading order, without touching the
+    /// Beat row itself (its prose, audio, and any OTHER node's membership of the same beat all
+    /// survive untouched). There is no more soft-disable/re-enable cycle — a membership exists
+    /// or it doesn't — so <paramref name="enabled"/>=false hard-deletes the row (the Beat row
+    /// itself is only removed too if this was its last remaining membership anywhere) and
+    /// enabled=true is a no-op against a membership that, by definition, already exists.
+    /// Kept as the real use case that motivated this on 2026-08-09 still holds — a beat found
+    /// sorted into a chapter its content had no connection to, where forcing a position (top,
+    /// middle, or end) would only trade one confusing placement for another. Removing it is the
+    /// honest fix when no correct position can be found with the evidence at hand.</summary>
     public async Task SetBeatMembershipEnabledAsync(Guid nodeId, Guid beatId, bool enabled, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var membership = await db.BeatNodes.FirstOrDefaultAsync(
             bn => bn.NodeId == nodeId && bn.BeatId == beatId, ct)
             ?? throw new InvalidOperationException($"Beat {beatId} has no membership row in node {nodeId}.");
-        if (membership.IsEnabled == enabled) return;
-        membership.IsEnabled = enabled;
+        if (enabled) return; // it exists, therefore it's already "enabled" — nothing to do.
+        db.BeatNodes.Remove(membership);
+        var stillReferenced = await db.BeatNodes.AnyAsync(bn => bn.BeatId == beatId && bn.NodeId != nodeId, ct);
+        if (!stillReferenced)
+        {
+            var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
+            if (beat != null) db.Beats.Remove(beat);
+        }
         await db.SaveChangesAsync(ct);
-        log.LogInformation("Beat {Beat} membership in node {Node} set to IsEnabled={Enabled}", beatId, nodeId, enabled);
+        log.LogInformation("Removed beat {Beat} membership in node {Node}", beatId, nodeId);
     }
 
     /// <summary>Split a beat at an explicit character position — what the
@@ -1013,7 +1021,7 @@ public class NodeWorkbenchService
             throw new InvalidOperationException("Split would leave one half empty — pick a different cursor position.");
 
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -1078,7 +1086,7 @@ public class NodeWorkbenchService
 
         // Find the target's SortKey in this node to slot the new beat.
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -1143,7 +1151,7 @@ public class NodeWorkbenchService
         if (paragraphs.Count < 2) return new List<Guid>();
 
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -1264,7 +1272,7 @@ public class NodeWorkbenchService
         var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == chapterNodeId, ct)
             ?? throw new InvalidOperationException($"Node {chapterNodeId} not found.");
 
-        var existingCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == chapterNodeId && sb.IsEnabled, ct);
+        var existingCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == chapterNodeId && true, ct);
         if (existingCount > 0)
         {
             log.LogInformation("Node {S} ({T}) already has {N} beats; not materialising.",
@@ -1441,7 +1449,7 @@ public class NodeWorkbenchService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -1464,7 +1472,7 @@ public class NodeWorkbenchService
 
         // Delete the absorbed beat row if no other node still holds it.
         var otherMemberships = await db.BeatNodes
-            .Where(sb => sb.BeatId == beatId && sb.NodeId != nodeId && sb.IsEnabled)
+            .Where(sb => sb.BeatId == beatId && sb.NodeId != nodeId && true)
             .AnyAsync(ct);
         if (!otherMemberships)
         {
@@ -1475,39 +1483,34 @@ public class NodeWorkbenchService
         log.LogInformation("Joined beat {Beat} into {Prev} in node {Node}", beatId, prevId, nodeId);
     }
 
-    /// <summary>Soft-delete a beat from a node: sets <c>BeatNode.IsEnabled = false</c>
-    /// on the junction row. The Beat row and all its temporal history are preserved;
-    /// <see cref="RestoreBeatAsync"/> can un-hide it. Audio is invalidated so a restore
-    /// triggers re-narration rather than playing stale audio.</summary>
+    /// <summary>Delete a beat from a node — for real. There is no soft-delete anymore: the
+    /// BeatNode junction row is removed outright, and the Beat row itself goes too if this was
+    /// its last remaining membership anywhere. Not reversible via <see cref="RestoreBeatAsync"/>
+    /// (that method is now a no-op) — the ArchivedBooks snapshot from the last export is the
+    /// only place a deleted beat's text can still be recovered from.</summary>
     public async Task DeleteBeatAsync(Guid nodeId, Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var junction = await db.BeatNodes
             .FirstOrDefaultAsync(sb => sb.NodeId == nodeId && sb.BeatId == beatId, ct);
         if (junction == null) return;
-        if (!junction.IsEnabled) return; // already disabled — no-op
 
-        junction.IsEnabled = false;
-
-        // Invalidate audio so a future restore triggers fresh narration.
-        var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
-        if (beat != null) InvalidateAudioOnBeat(beat);
+        db.BeatNodes.Remove(junction);
+        var stillReferenced = await db.BeatNodes.AnyAsync(bn => bn.BeatId == beatId && bn.NodeId != nodeId, ct);
+        if (!stillReferenced)
+        {
+            var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
+            if (beat != null) db.Beats.Remove(beat);
+        }
 
         await db.SaveChangesAsync(ct);
     }
 
-    /// <summary>Restore a previously soft-deleted beat: sets <c>BeatNode.IsEnabled = true</c>.
-    /// The beat re-appears in the normal (non-disabled) view. Audio remains stale until
-    /// re-narrated.</summary>
-    public async Task RestoreBeatAsync(Guid nodeId, Guid beatId, CancellationToken ct = default)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var junction = await db.BeatNodes
-            .FirstOrDefaultAsync(sb => sb.NodeId == nodeId && sb.BeatId == beatId, ct);
-        if (junction == null || junction.IsEnabled) return;
-        junction.IsEnabled = true;
-        await db.SaveChangesAsync(ct);
-    }
+    /// <summary>Retired — there is no soft-deleted state to restore from anymore
+    /// (see <see cref="DeleteBeatAsync"/>). Kept as a no-op so older callers (CLI, UI)
+    /// don't need to be torn out; it simply has nothing to do.</summary>
+    public Task RestoreBeatAsync(Guid nodeId, Guid beatId, CancellationToken ct = default) =>
+        Task.CompletedTask;
 
     // ── Version history (system-versioned temporal) ──────────────────────
     // The Beats table is system-versioned (see DbContext.SystemVersionedTables),
@@ -1525,77 +1528,31 @@ public class NodeWorkbenchService
     /// a node, keyed by beat id. Drives the cycler arrows' disabled state in
     /// one grouped query. A beat never edited since versioning was enabled has
     /// count 1 (just the current row → both arrows dead).</summary>
-    public async Task<Dictionary<Guid, int>> GetBeatVersionCountsAsync(Guid nodeId, CancellationToken ct = default)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        if (!db.Database.IsSqlServer()) return new();
-        var rows = await db.Database.SqlQueryRaw<BeatVersionCountRow>(
-            """
-            SELECT b.Id AS Id, COUNT(*) AS Cnt
-            FROM [Beats] FOR SYSTEM_TIME ALL AS b
-            WHERE b.Id IN (SELECT BeatId FROM [BeatNodes] WHERE NodeId = {0} AND IsEnabled = 1)
-            GROUP BY b.Id
-            """, nodeId).ToListAsync(ct);
-        return rows.ToDictionary(r => r.Id, r => r.Cnt);
-    }
+    // Retired: Beats/Nodes/BeatNodes are no longer system-versioned (see
+    // ProseDbContext.SystemVersionedTables) — there is no history for the
+    // cycler to read anymore. All three methods below now return their
+    // "no history" default unconditionally rather than querying FOR
+    // SYSTEM_TIME, which would throw against a non-temporal table.
+    public Task<Dictionary<Guid, int>> GetBeatVersionCountsAsync(Guid nodeId, CancellationToken ct = default) =>
+        Task.FromResult(new Dictionary<Guid, int>());
 
     /// <summary>Like <see cref="GetBeatVersionCountsAsync"/> but scoped to an explicit set of beat IDs.
     /// Use this for book-mode nodes where beats live on ChapterNode children (SS-A43).</summary>
-    public async Task<Dictionary<Guid, int>> GetBeatVersionCountsByIdsAsync(IEnumerable<Guid> beatIds, CancellationToken ct = default)
-    {
-        var idList = beatIds.ToList();
-        if (idList.Count == 0) return new();
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        if (!db.Database.IsSqlServer()) return new();
-        // Batch into chunks of 500 to keep the IN clause within safe SQL text limits.
-        const int batchSize = 500;
-        var result = new Dictionary<Guid, int>();
-        for (int offset = 0; offset < idList.Count; offset += batchSize)
-        {
-            var batch = idList.Skip(offset).Take(batchSize).ToList();
-            var inClause = string.Join(",", batch.Select(id => $"'{id:D}'"));
-            var rows = await db.Database.SqlQueryRaw<BeatVersionCountRow>(
-                $"""
-                SELECT b.Id AS Id, COUNT(*) AS Cnt
-                FROM [Beats] FOR SYSTEM_TIME ALL AS b
-                WHERE b.Id IN ({inClause})
-                GROUP BY b.Id
-                """).ToListAsync(ct);
-            foreach (var row in rows)
-                result[row.Id] = row.Cnt;
-        }
-        return result;
-    }
+    public Task<Dictionary<Guid, int>> GetBeatVersionCountsByIdsAsync(IEnumerable<Guid> beatIds, CancellationToken ct = default) =>
+        Task.FromResult(new Dictionary<Guid, int>());
 
-    /// <summary>The beat's prose at a newest-first version index — 0 = current,
-    /// 1 = the version before the last edit, and so on back through history.
-    /// Null when the index is past the end or on a non-temporal provider. Used
-    /// by the writer's ◀ ▶ cycler to preview a past version in the editor.</summary>
+    /// <summary>The beat's prose at a newest-first version index. Always null now
+    /// that Beats carries no history — kept as a stub so the writer's ◀ ▶ cycler
+    /// UI doesn't need its own null-check for a retired feature.</summary>
     public async Task<string?> GetBeatVersionTextAsync(Guid beatId, int index, CancellationToken ct = default)
     {
         var v = await GetBeatVersionAsync(beatId, index, ct);
         return v?.Text;
     }
 
-    /// <summary>The beat's prose AND its <c>SysStart</c> timestamp at a newest-first
-    /// version index. Null when the index is past the end or on a non-temporal provider.
-    /// Used by the version cycler to show "last edited at …" alongside the preview.</summary>
-    public async Task<BeatVersion?> GetBeatVersionAsync(Guid beatId, int index, CancellationToken ct = default)
-    {
-        if (index < 0) return null;
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        if (!db.Database.IsSqlServer()) return null;
-        var rows = await db.Database.SqlQueryRaw<BeatVersionRow>(
-            """
-            SELECT b.[Text] AS [Text], b.[SysStart] AS [ValidFrom]
-            FROM [Beats] FOR SYSTEM_TIME ALL AS b
-            WHERE b.Id = {0}
-            ORDER BY b.SysStart DESC
-            OFFSET {1} ROWS FETCH NEXT 1 ROWS ONLY
-            """, beatId, index).ToListAsync(ct);
-        var r = rows.FirstOrDefault();
-        return r == null ? null : new BeatVersion(r.Text ?? "", r.ValidFrom);
-    }
+    /// <summary>Always null — see <see cref="GetBeatVersionTextAsync"/>.</summary>
+    public Task<BeatVersion?> GetBeatVersionAsync(Guid beatId, int index, CancellationToken ct = default) =>
+        Task.FromResult<BeatVersion?>(null);
 
     public sealed record BeatVersion(string Text, DateTime ValidFrom);
     private sealed class BeatVersionRow { public string? Text { get; set; } public DateTime ValidFrom { get; set; } }

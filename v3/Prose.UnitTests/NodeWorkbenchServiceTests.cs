@@ -218,37 +218,33 @@ public class NodeWorkbenchServiceTests
     }
 
     [Test]
-    public async Task DeleteBeat_SoftDeletes_BeatAndJunctionPreserved()
+    public async Task DeleteBeat_HardDeletes_JunctionAndOrphanedBeatRemoved()
     {
         var s = await MakeNodeAsync();
         var b = await svc.InsertBeatAsync(s.Id, null, "doomed");
         await svc.DeleteBeatAsync(s.Id, b.Id);
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        // Beat row survives (soft-delete preserves history).
-        Assert.That(await db.Beats.AnyAsync(x => x.Id == b.Id), Is.True, "Beat row must survive soft-delete");
-        // Junction survives but IsEnabled = false.
+        // No soft-delete anymore: an unreferenced Beat row is deleted for real.
+        Assert.That(await db.Beats.AnyAsync(x => x.Id == b.Id), Is.False, "Orphaned Beat row must be hard-deleted");
+        // The junction is gone outright, not disabled.
         var junction = await db.BeatNodes.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s.Id);
-        Assert.That(junction, Is.Not.Null);
-        Assert.That(junction!.IsEnabled, Is.False);
-        // Excluded from default ordered list.
+        Assert.That(junction, Is.Null, "Junction row must be gone, not merely disabled");
+        // Excluded from the ordered list.
         var ordered = await svc.GetOrderedBeatsAsync(s.Id);
-        Assert.That(ordered.Any(ob => ob.Beat.Id == b.Id), Is.False, "Disabled beat hidden from default view");
-        // Visible with includeDisabled.
-        var withDisabled = await svc.GetOrderedBeatsAsync(s.Id, includeDisabled: true);
-        Assert.That(withDisabled.Any(ob => ob.Beat.Id == b.Id && !ob.IsEnabled), Is.True, "Disabled beat visible with includeDisabled");
+        Assert.That(ordered.Any(ob => ob.Beat.Id == b.Id), Is.False, "Deleted beat absent from the ordered view");
     }
 
     [Test]
-    public async Task RestoreBeat_ReEnablesSoftDeletedBeat()
+    public async Task RestoreBeat_IsNoOp_DeletedBeatStaysGone()
     {
         var s = await MakeNodeAsync();
         var b = await svc.InsertBeatAsync(s.Id, null, "doomed");
         await svc.DeleteBeatAsync(s.Id, b.Id);
-        await svc.RestoreBeatAsync(s.Id, b.Id);
+        await svc.RestoreBeatAsync(s.Id, b.Id); // retired — nothing to restore from anymore
 
         var ordered = await svc.GetOrderedBeatsAsync(s.Id);
-        Assert.That(ordered.Any(ob => ob.Beat.Id == b.Id && ob.IsEnabled), Is.True, "Restored beat visible again");
+        Assert.That(ordered.Any(ob => ob.Beat.Id == b.Id), Is.False, "A hard-deleted beat cannot be restored");
     }
 
     [Test]
@@ -268,12 +264,13 @@ public class NodeWorkbenchServiceTests
         await svc.DeleteBeatAsync(s1.Id, b.Id);
 
         await using var db2 = await dbFactory.CreateDbContextAsync();
-        Assert.That(await db2.Beats.AnyAsync(x => x.Id == b.Id), Is.True, "Beat row must survive in both cases");
-        // s1's junction is disabled; s2's junction is untouched (IsEnabled=true).
+        // Beat row survives because s2 still references it.
+        Assert.That(await db2.Beats.AnyAsync(x => x.Id == b.Id), Is.True, "Beat row must survive while any junction remains");
+        // s1's junction is gone outright; s2's junction is untouched.
         var j1 = await db2.BeatNodes.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s1.Id);
         var j2 = await db2.BeatNodes.FirstOrDefaultAsync(sb => sb.BeatId == b.Id && sb.NodeId == s2.Id);
-        Assert.That(j1!.IsEnabled, Is.False, "s1 junction disabled");
-        Assert.That(j2!.IsEnabled, Is.True, "s2 junction unaffected");
+        Assert.That(j1, Is.Null, "s1 junction deleted");
+        Assert.That(j2, Is.Not.Null, "s2 junction unaffected");
         // Beat still visible in s2.
         var s2Beats = await svc.GetOrderedBeatsAsync(s2.Id);
         Assert.That(s2Beats.Any(ob => ob.Beat.Id == b.Id), Is.True, "Beat visible in s2");
@@ -504,7 +501,7 @@ public class NodeWorkbenchServiceTests
     }
 
     [Test]
-    public async Task SetBeatMembershipEnabledAsync_Disable_RemovesFromReadingOrderWithoutDeletingBeat()
+    public async Task SetBeatMembershipEnabledAsync_Disable_RemovesFromReadingOrderAndDeletesOrphanedBeat()
     {
         var s = await MakeNodeAsync();
         var a = await svc.InsertBeatAsync(s.Id, null, "Keep.");
@@ -515,24 +512,23 @@ public class NodeWorkbenchServiceTests
         var ordered = await svc.GetOrderedBeatsAsync(s.Id);
         Assert.That(ordered.Select(o => o.Beat.Text).ToArray(), Is.EqualTo(new[] { "Keep." }));
 
-        // The Beat row itself must survive untouched — this is a membership flag, not a delete.
+        // No soft-delete anymore: removing its only membership deletes the Beat row too.
         await using var db = await dbFactory.CreateDbContextAsync();
         var stillExists = await db.Beats.AnyAsync(x => x.Id == orphan.Id);
-        Assert.That(stillExists, Is.True, "Disabling membership must not delete the Beat row");
+        Assert.That(stillExists, Is.False, "Removing the last membership must hard-delete the now-orphaned Beat row");
     }
 
     [Test]
-    public async Task SetBeatMembershipEnabledAsync_ReEnable_RestoresToReadingOrder()
+    public async Task SetBeatMembershipEnabledAsync_ReEnable_AfterRemoval_Throws()
     {
         var s = await MakeNodeAsync();
         var a = await svc.InsertBeatAsync(s.Id, null, "Keep.");
-        var b = await svc.InsertBeatAsync(s.Id, a.Id, "Was disabled.");
+        var b = await svc.InsertBeatAsync(s.Id, a.Id, "Removed.");
         await svc.SetBeatMembershipEnabledAsync(s.Id, b.Id, enabled: false);
 
-        await svc.SetBeatMembershipEnabledAsync(s.Id, b.Id, enabled: true);
-
-        var ordered = await svc.GetOrderedBeatsAsync(s.Id);
-        Assert.That(ordered.Select(o => o.Beat.Text).ToArray(), Is.EqualTo(new[] { "Keep.", "Was disabled." }));
+        // There is no re-enable path anymore — the membership row is gone for real.
+        Assert.ThrowsAsync<InvalidOperationException>(
+            () => svc.SetBeatMembershipEnabledAsync(s.Id, b.Id, enabled: true));
     }
 
     [Test]

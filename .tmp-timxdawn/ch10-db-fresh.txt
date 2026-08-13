@@ -1,0 +1,35 @@
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[Slug], [u].[Name], [u].[Theme], [u].[UniversePrimer], [u].[IsActive], [u].[SortKey], [u].[WorldFacts]
+      FROM [Universe] AS [u]
+      ORDER BY [u].[SortKey], [u].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@ef_filter__p2='?' (DbType = Boolean), @ef_filter__ScopedUniverseId='?' (DbType = Guid), @key='?' (Size = 120)], CommandType='Text', CommandTimeout='30']
+      SELECT [s].[Key], [s].[UniverseId], [s].[Json], [s].[UpdatedAt]
+      FROM [Settings] AS [s]
+      WHERE (@ef_filter__p2 = CAST(1 AS bit) OR [s].[UniverseId] = @ef_filter__ScopedUniverseId OR [s].[UniverseId] = '0197e9c9-0099-7000-8000-000000000099') AND [s].[Key] = @key
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@beatId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [b].[Id], [b].[Act], [b].[AudioPath], [b].[CreatedAt], [b].[Description], [b].[DurationSec], [b].[EmotionalScore], [b].[EmotionalTone], [b].[EntityStale], [b].[EventSummary], [b].[EventSummaryHash], [b].[GapAfterAudioPath], [b].[GapAfterMs], [b].[IsChapterStart], [b].[Kind], [b].[LastRequestId], [b].[NarratedAt], [b].[Number], [b].[PaceHint], [b].[SceneType], [b].[Score], [b].[ScoredAt], [b].[Slug], [b].[Stale], [b].[StructureRole], [b].[Subtext], [b].[Text], [b].[TextHash], [b].[Title], [b].[UpdatedAt], [b].[Version], [b].[VoiceId], [b].[WasCorrected]
+      FROM [Beats] AS [b]
+      WHERE [b].[Id] = @beatId
+Id:           019ff76c-b7e3-7298-9048-ae8b932c5511
+Title:        Chapter Ten — The Get-Out-of-Jail-Free Card
+Kind:         prose
+UpdatedAt:    2026-08-12 19:28:08Z
+
+I was hell on wheels growing up. Want to say that up front, in those exact words, because it's the plainest, most accurate summary anybody's ever given me — including me. I'm fine now. This part's just the receipt.
+
+One scene stands in for most of the rest. I'm in an efficiency apartment — the kind where the building just assigns you a roommate, no say in it — sitting around smoking weed one afternoon, and somebody knocks on my door. Guy in an orange Abercrombie sweater, the clean-cut look I'd have called a "Soc" if I'd been paying closer attention to *The Outsiders* in school. Second I open the door he pulls a badge off a beaded metal necklace. My roommate ratted me out on his way to get food. I hand the cop less than a gram of weed and figure that's the end of it.
+
+Eighteen months later — long enough I'd genuinely written it off as fallen through the cracks — a court date shows up in the mail, right in the middle of the stretch I'm living with a friend for what was supposed to be a summer and turned into six months. Court wants to put me on probation, which means random drug tests, and I know two things for absolute certain: I'm never passing one, and once I'm in that system I'm never getting back out. So when they offer probation, I say no. They tell me the possession charge sits on my permanent record instead. I tell them that's better than a permanent leash. They take my license for six months, which is its own little joke — punishing a guy caught sitting at home with less than a gram of weed by taking away the one thing that would've let him drive to an actual job.
+
+Not going to spend as many more pages on the rest of it as I spent living through it, so I'll compress. My parents bailed me out — literally, more than once — and helped me move more than once too. Failed out of tech school, lived with that same friend for what was supposed to be a summer and turned into six months, and when his family finally told me I had to go, I moved back in with my parents at twenty-one. Moved out again, moved to Oshkosh, failed out of school a second time, got a girlfriend, and about two months later my parents called and told me that at twenty-four, the money was stopping — no more rent, no more fifty bucks a week, all of which I'd been spending on weed without much ceremony.
+
+The friend whose family took me in for those six months was named Fred. His dad, everybody called "Frenchie," and Fred's girlfriend at the time was named Sam. At some point in there my parents wanted to properly thank Frenchie's family for putting up with me, so they took the whole group of us — Fred, Frenchie, Sam, Mom, Dad — out to the Moose Inn for dinner. Genuinely good time. On the drive home a deer jumped out and tore up the front of the car.
+
+Frenchie didn't have insurance on it. So he parked it out back, threw a tarp over it, sat on it a good while, then eventually filed a claim for hitting a deer — with the date quietly fudged to land inside a policy window that hadn't actually been active that night. For months afterward friends would ask why the car wasn't on the road, and we'd all say the same true-sounding, not-quite-true thing: hit a deer. Nobody's math ever added up right when we said it, and I think most of the people asking already suspected exactly what happened. Weird way to spend a few months of your life, walking around inside a small, shared, not-quite-secret.
+
+Years later my mom — by then working Veterans Affairs at the Waushara County courthouse — ended up helping Frenchie directly. He'd served in the Navy young and was owed benefits he'd never claimed, and she made sure he got them. My dad, the welder, built him a ramp so he could get in and out of his own house easier — Frenchie was morbidly obese by then, and stairs had stopped being a small problem. Whatever else was true about that year, the fudged date, the tarp on the car, Frenchie was always good to me, and it says something about my parents that the story ends with them making his life easier instead of settling a score over an insurance claim none of them ever brought up again.
+
+I thought I was going to end up homeless. Instead I filled out some resumes and landed a job at Kimberly-Clark paying eighty grand a year with no degree to my name. My parents had spent years being exactly what I called them in my head at the time — a get-out-of-jail-free card. What I didn't get yet was that the card had an expiration date they'd picked on purpose, and that wasn't cruelty. It was the last, hardest thing they had left to teach me, delivered exactly when I needed it and not one day sooner.

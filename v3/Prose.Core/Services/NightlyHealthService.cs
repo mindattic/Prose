@@ -323,7 +323,7 @@ public class NightlyHealthService
         if (!visited.Add(nodeId)) return;
 
         var direct = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
                 (sb, b) => new { b.Id, b.Number, b.Title, b.Text, b.Score })

@@ -2,8 +2,8 @@
   "nodeCode": "SRZR",
   "slug": "steppin-razor-019ef7be",
   "title": "Steppin\u0027 Razor",
-  "generatedAtUtc": "2026-08-10 16:21:50Z",
-  "totalBeats": 297,
+  "generatedAtUtc": "2026-08-12 19:14:41Z",
+  "totalBeats": 298,
   "covered": 297,
   "chapterGranular": true,
   "bookScope": {
@@ -16,7 +16,9 @@
     "HasBlueprint": true,
     "ConstructionCapacity": 31
   },
-  "flagCounts": {},
+  "flagCounts": {
+    "MISSING_MEANING": 1
+  },
   "beats": [
     {
       "BeatId": "019fa020-b09e-7a66-8f76-1c8c9cac7810",
@@ -91,7 +93,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 430,
+      "ProseLength": 361,
       "Flags": [],
       "Covered": true
     },
@@ -349,6 +351,22 @@
       "ProseLength": 57,
       "Flags": [],
       "Covered": true
+    },
+    {
+      "BeatId": "019ff1d5-e3ce-765b-b730-a418d29940b2",
+      "Number": 16978,
+      "Chapter": "Chapter 1 \u2014 Sasha in Mot",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "EscalationTarget": "2",
+      "EventType": "arrival",
+      "RevelationMode": "curiosity",
+      "BeatTags": [],
+      "ProseLength": 757,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
     },
     {
       "BeatId": "019fa020-b0c0-78ef-a470-f925e6b0a9d2",
@@ -1771,7 +1789,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 706,
+      "ProseLength": 696,
       "Flags": [],
       "Covered": true
     },
@@ -1786,7 +1804,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 742,
+      "ProseLength": 654,
       "Flags": [],
       "Covered": true
     },
@@ -4461,7 +4479,7 @@
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 756,
+      "ProseLength": 757,
       "Flags": [],
       "Covered": true
     },
@@ -4476,7 +4494,7 @@
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 1074,
+      "ProseLength": 867,
       "Flags": [],
       "Covered": true
     }

@@ -27,8 +27,14 @@ public class ProseViolation
 /// Deterministic regex linter for prose quality. No LLM, no DB — runs synchronously in
 /// the write loop. Seeded from the tone bible bans; callers may pass additional
 /// prohibitions loaded from the DB (literary_rules.Prohibitions).
+///
+/// The AiVocabulary/AiDefaultName/AiStructuralTic categories are grounded in Wikipedia's
+/// "Signs of AI writing" catalog (en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — an
+/// actively-maintained reference built from cataloging thousands of real AI-generated
+/// submissions. See docs/CRAFT_SCIENCES.md for the full list of craft sciences this
+/// codebase implements and why.
 /// </summary>
-public class ProsePatternGuard
+public class ProsePatternGuard(SettingsService? settings = null)
 {
     private static readonly (Regex Pattern, string Rule, string? Suggestion)[] HardcodedCliches =
     [
@@ -101,12 +107,15 @@ public class ProsePatternGuard
     ];
 
     // ── AI-tell countermeasures (Wikipedia:Signs_of_AI_writing + cited research, 2026-08-09) ──
+    // Off by default since 2026-08-12 (SettingsService.AiTellChecksEnabled) — author ruling
+    // judged this block to be making prose worse, not better. CRAFT.md §11, which carried the
+    // companion structural countermeasures (sentence variance, real asymmetric stakes, no
+    // false-balance resolution) that a regex can't check, was removed the same day.
     //
     // Word-list bans alone are a losing game (Geng & Trotta 2025: authors launder the FAMOUS
     // tells — swap "delve" for a synonym — while leaving the underlying sentence architecture
     // untouched). These lists still catch the cheapest, highest-confidence cases for near-zero
-    // cost; CRAFT.md §11 carries the structural countermeasures (sentence variance, real
-    // asymmetric stakes, no false-balance resolution) that a regex genuinely cannot check.
+    // cost when the flag is on.
 
     // RLHF-favored "sounds smart" vocabulary (Juzek & Ward 2025; Kobak et al. 2024/25) — words
     // whose overuse tracks reward-model bias, not genuine topical relevance. High-confidence
@@ -241,13 +250,21 @@ public class ProsePatternGuard
         // (not the pre-existing Cliche/PseudoProfound/OnTheNose checks, which are about the
         // narrator's own voice/thinking and keep their established behavior) skip any match
         // that falls inside quotation marks.
-        var aiTellViolations = new List<ProseViolation>();
-        CheckPatterns(text, AiVocabulary, ProseViolationCategory.AiVocabulary, aiTellViolations);
-        CheckPatterns(text, AiDefaultNames, ProseViolationCategory.AiDefaultName, aiTellViolations);
-        CheckPatternPairs(text, AiStructuralTics, ProseViolationCategory.AiStructuralTic, aiTellViolations);
-        CheckPatternPairs(text, DecidingTic, ProseViolationCategory.AiStructuralTic, aiTellViolations);
-        violations.AddRange(aiTellViolations.Where(v => !IsInsideQuote(text, v.CharOffset)));
-        CheckEmDashDensity(text, violations);
+        // Author ruling 2026-08-12: off by default — the Wikipedia:Signs_of_AI_writing block
+        // (this whole section) was judged to be making prose worse, not better. Toggle via
+        // SettingsService.AiTellChecksEnabled. The pre-existing Cliche/PseudoProfound/OnTheNose/
+        // ItalicisedDialogue/CurrencyFormat checks above are NOT gated — those predate the
+        // Wikipedia-sourced work and stay on regardless.
+        if (settings?.AiTellChecksEnabled ?? false)
+        {
+            var aiTellViolations = new List<ProseViolation>();
+            CheckPatterns(text, AiVocabulary, ProseViolationCategory.AiVocabulary, aiTellViolations);
+            CheckPatterns(text, AiDefaultNames, ProseViolationCategory.AiDefaultName, aiTellViolations);
+            CheckPatternPairs(text, AiStructuralTics, ProseViolationCategory.AiStructuralTic, aiTellViolations);
+            CheckPatternPairs(text, DecidingTic, ProseViolationCategory.AiStructuralTic, aiTellViolations);
+            violations.AddRange(aiTellViolations.Where(v => !IsInsideQuote(text, v.CharOffset)));
+            CheckEmDashDensity(text, violations);
+        }
 
         if (additionalProhibitions != null)
             CheckAdditionalProhibitions(text, additionalProhibitions, violations);

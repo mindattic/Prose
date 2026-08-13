@@ -293,7 +293,7 @@ public class NodeDocService
             foreach (var ch in chapters)
             {
                 var beats = await db.BeatNodes
-                    .Where(bn => bn.NodeId == ch.Id && bn.IsEnabled)
+                    .Where(bn => bn.NodeId == ch.Id && true)
                     .OrderBy(bn => bn.SortKey)
                     .Join(db.Beats, bn => bn.BeatId, b => b.Id,
                           (bn, b) => new { b.Title, b.Description })
@@ -335,7 +335,7 @@ public class NodeDocService
         {
             // Direct beats on book node — use IsChapterStart to detect chapter boundaries
             var beats = await db.BeatNodes
-                .Where(bn => bn.NodeId == nodeId && bn.IsEnabled)
+                .Where(bn => bn.NodeId == nodeId && true)
                 .OrderBy(bn => bn.SortKey)
                 .Join(db.Beats, bn => bn.BeatId, b => b.Id,
                       (bn, b) => new { b.Title, b.Description, b.IsChapterStart })

@@ -7,6 +7,11 @@ namespace Prose.Core.Services;
 /// <summary>
 /// Deterministic (zero LLM calls) timeline-consistency validator.
 ///
+/// COST: this is a free query over data <see cref="WorldStateLedger"/> already
+/// computed (EntityStateEvents) — not a line item in the paid audit battery.
+/// Runs in BookHealthService's FREE tier (<c>TimelineCheckAsync</c>), not DEEP/FULL.
+/// 2026-08-13 cost review confirmed no LLM call anywhere in this class.
+///
 /// Two detection classes:
 ///
 /// DETECTION 1 — "dead-character-acting"
@@ -80,7 +85,7 @@ public class TimelineConsistencyService
             var BeatNodeQuery = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b  in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where searchIds.Contains(sb.NodeId) && sb.IsEnabled
+                where searchIds.Contains(sb.NodeId) && true
                 orderby sb.SortKey
                 select new { BeatId = b.Id, b.Number }
             ).ToListAsync(ct);

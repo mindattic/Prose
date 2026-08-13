@@ -80,7 +80,7 @@ public static class SanityScanCli
         // and is strictly more informative for the other checks too — Check A/B/D findings still
         // cite the (globally-unique) Beat.Number, so nothing about locating a finding is lost.
         var directCounts = await db.BeatNodes.AsNoTracking()
-            .Where(sb => sb.IsEnabled)
+            .Where(sb => true)
             .GroupBy(sb => sb.NodeId)
             .Select(g => new { NodeId = g.Key, Count = g.Count() })
             .ToDictionaryAsync(x => x.NodeId, x => x.Count);
@@ -88,7 +88,7 @@ public static class SanityScanCli
         var childCounts = await (
             from child in db.Nodes.AsNoTracking()
             where child.ParentNodeId != null
-            join sb in db.BeatNodes.AsNoTracking().Where(x => x.IsEnabled) on child.Id equals sb.NodeId
+            join sb in db.BeatNodes.AsNoTracking().Where(x => true) on child.Id equals sb.NodeId
             group sb by child.ParentNodeId!.Value into g
             select new { ParentId = g.Key, Count = g.Count() }
         ).ToDictionaryAsync(x => x.ParentId, x => x.Count);

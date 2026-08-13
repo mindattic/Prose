@@ -85,7 +85,7 @@ public class BeatDuplicateService(
         var scopeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var enabledBeatIds = await db.BeatNodes.AsNoTracking()
-            .Where(bn => scopeIds.Contains(bn.NodeId) && bn.IsEnabled)
+            .Where(bn => scopeIds.Contains(bn.NodeId) && true)
             .Select(bn => bn.BeatId).Distinct().ToListAsync(ct);
 
         if (enabledBeatIds.Count < 2)
@@ -144,7 +144,7 @@ public class BeatDuplicateService(
                 SELECT bn.BeatId, bn.NodeId,
                        ROW_NUMBER() OVER (PARTITION BY bn.NodeId ORDER BY bn.SortKey) AS Pos
                 FROM BeatNodes bn
-                WHERE bn.NodeId IN ({idList}) AND bn.IsEnabled = 1
+                WHERE bn.NodeId IN ({idList}) AND true = 1
             )
             SELECT
                 s1.BeatId AS BeatIdA, s2.BeatId AS BeatIdB,

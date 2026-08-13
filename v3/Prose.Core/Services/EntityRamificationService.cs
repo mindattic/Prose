@@ -15,6 +15,15 @@ namespace Prose.Core.Services;
 ///
 /// The index side (<see cref="IndexBeatMentionsAsync"/>) is called by
 /// <see cref="NodeWorkbenchService"/> after every beat write.
+///
+/// COST split (2026-08-13 cost review): <see cref="IndexBeatMentionsAsync"/> and its
+/// <see cref="GetNameIndexAsync"/> name-index build are zero-LLM, deterministic
+/// bookkeeping — free, and not duplicated anywhere else (checked against
+/// <see cref="WorldStateLedger"/> and <see cref="EntityDocService"/>, which serve different
+/// jobs — ledger facts and DCM context docs, not mention indexing). <see cref="ScanDownstreamAsync"/>
+/// / <see cref="CheckRamificationAsync"/> is the one real LLM cost here: fired only on an
+/// entity edit (not per-beat generation), scoped to downstream beats in the same node — this
+/// is the "genuinely needs real LLM judgment" fact-check the holistic-cost plan (item 4) kept.
 /// </summary>
 public class EntityRamificationService(
     IDbContextFactory<ProseDbContext> dbFactory,
@@ -219,7 +228,7 @@ public class EntityRamificationService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         return await db.BeatNodes
-            .Where(sb => sb.Beat!.EntityStale && sb.IsEnabled)
+            .Where(sb => sb.Beat!.EntityStale && true)
             .Select(sb => new EntityStaleBeatDto
             {
                 BeatId      = sb.BeatId,
@@ -257,7 +266,7 @@ public class EntityRamificationService(
             foreach (var directBeatId in directBeatIds)
             {
                 var nodePositions = await db.BeatNodes
-                    .Where(sb => sb.BeatId == directBeatId && sb.IsEnabled)
+                    .Where(sb => sb.BeatId == directBeatId && true)
                     .Select(sb => new { sb.NodeId, sb.SortKey })
                     .ToListAsync();
 
@@ -266,7 +275,7 @@ public class EntityRamificationService(
                     var downstream = await db.BeatNodes
                         .Where(sb => sb.NodeId == pos.NodeId
                                   && sb.SortKey > pos.SortKey
-                                  && sb.IsEnabled)
+                                  && true)
                         .OrderBy(sb => sb.SortKey)
                         .Select(sb => new { sb.BeatId, sb.Beat!.Text })
                         .ToListAsync();

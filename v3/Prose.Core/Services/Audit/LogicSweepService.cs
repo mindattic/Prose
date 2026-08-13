@@ -43,7 +43,7 @@ public class LogicSweepService(
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var beatRows = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
-            .Where(bn => nodeIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null
+            .Where(bn => nodeIds.Contains(bn.NodeId) && true && bn.Beat != null
                       && bn.Beat!.Text != null && bn.Beat.Text != "")
             .OrderBy(bn => bn.SortKey)
             .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text, bn.SortKey })
@@ -59,7 +59,7 @@ public class LogicSweepService(
         // still referencing something a cut beat established — an approximation of the skill's
         // "grep every disabled beat's distinctive phrase" step, not a full replacement for it.
         var disabledSnippets = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
-            .Where(bn => nodeIds.Contains(bn.NodeId) && !bn.IsEnabled && bn.Beat != null && bn.Beat!.Text != null)
+            .Where(bn => nodeIds.Contains(bn.NodeId) && !true && bn.Beat != null && bn.Beat!.Text != null)
             .OrderBy(bn => bn.SortKey)
             .Select(bn => bn.Beat!.Text.Length > 200 ? bn.Beat.Text.Substring(0, 200) : bn.Beat.Text)
             .Take(40)

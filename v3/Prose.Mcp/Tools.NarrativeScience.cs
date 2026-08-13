@@ -8,16 +8,18 @@ using Prose.Core.Services;
 namespace Prose.Mcp;
 
 // ── Narrative-Science tools (Will Storr frameworks) ───────────────────────────
-// Five tools that operationalize "The Science of Storytelling" (Storr, 2019):
+// Four tools that operationalize "The Science of Storytelling" (Storr, 2019):
 //
 //   analyze_sacred_flaw        — character's theory of control, origin damage,
 //                                 secret dread, hero-maker narrative
 //   check_dramatic_question    — does this beat ask "who is this person really?"
 //                                 at both surface and subconscious levels?
-//   audit_scene_engagement     — 6-point scene anatomy (change, info-gap,
-//                                 cause-effect, tribal emotion, specificity, show/tell)
 //   map_five_act_structure     — map node beats to Storr's 5-act arc
 //   check_antihero_empathy     — 4 empathy levers for antihero characters
+//
+// audit_scene_engagement (6-point scene anatomy) was removed 2026-08-13 — its
+// mechanisms overlapped LogicSweepService/DELIGHT/StoryScopeAuditService, and it
+// had no automated caller anywhere in the pipeline. See NarrativeScienceService.cs.
 
 /// <summary>
 /// Tools that apply Will Storr's narrative-science frameworks to character analysis
@@ -86,24 +88,6 @@ public class NarrativeScienceTools(
             subconscious_summary     = result.SubconsciousSummary,
             dramatic_question_active = result.DramaticQuestionActive,
             improvement_hint         = result.ImprovementHint,
-        }, JsonOpts);
-    }
-
-    // ── audit_scene_engagement ────────────────────────────────────────────────
-
-    /// <summary>Run the 6-point scene anatomy audit on a beat: (1) unexpected change, (2) information gap, (3) cause-effect chain, (4) tribal emotion (moral outrage / status play / humiliation / gossip), (5) specificity ≥3 concrete details, (6) show-not-tell ≥60%. A beat passes if 4 of 6 are present. Returns per-mechanism verdict, mechanisms_passing count, beat_passes boolean, the single top weakness, and a concrete rewrite fix.</summary>
-    [McpServerTool, Description("Run the 6-point scene anatomy audit on beat text per Will Storr's neural engagement mechanisms. The six mechanisms: (1) unexpected_change — something the character didn't plan happens; (2) information_gap — a question the reader wants answered is opened/closed; (3) cause_effect — this beat is caused by the prior, causes the next; (4) tribal_emotion — moral outrage / status play / humiliation / gossip / altruistic punishment; (5) specificity — 3+ precise non-generic sensory or physical details; (6) show_not_tell — action/dialogue/sensation ≥60% vs summary/exposition. A beat passes overall if 4 of 6 are present. Returns per-mechanism verdict with evidence, mechanisms_passing count, beat_passes boolean, the single top_weakness, and a concrete fix suggestion.")]
-    public async Task<string> audit_scene_engagement(
-        [Description("The beat's prose text to audit.")] string beatText)
-    {
-        var result = await narrativeScience.AuditSceneEngagementAsync(beatText);
-        return JsonSerializer.Serialize(new
-        {
-            mechanisms         = result.Mechanisms,
-            mechanisms_passing = result.MechanismsPassing,
-            beat_passes        = result.BeatPasses,
-            top_weakness       = result.TopWeakness,
-            fix                = result.Fix,
         }, JsonOpts);
     }
 

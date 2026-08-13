@@ -40,6 +40,7 @@ public class NodeFullExportService
         string EpubPath,
         string PdfPath,
         string TxtPath,
+        string MdPath,
         int DocxMojibakeHits,
         string? DescriptionPath,
         bool DescriptionMojibakeRepaired,
@@ -49,12 +50,14 @@ public class NodeFullExportService
         string? CoverPath);
 
     /// <summary>
-    /// Renders every export artifact for a node: docx, epub, pdf, txt, description.txt (when
+    /// Renders every export artifact for a node: docx, epub, pdf, txt, md, description.txt (when
     /// <c>Node.Description</c> is set — mojibake-repaired and persisted back to the DB first),
     /// story-synopsis.txt, keywords.txt (when the node has seeded keywords), and cover.jpg (only
-    /// when missing). Does NOT run the pre-export mojibake/BLOCKER gates or the DCM viz — those
-    /// stay CLI-only, since they print console diagnostics and can abort the run before anything
-    /// is written.
+    /// when missing). The .md is beat-ID-marked (same file <c>--publish-md</c> writes) so every
+    /// full export doubles as a ready-made round-trip target for <c>--import-md</c> /
+    /// <c>--reimport-node</c> — no separate step needed to get an editable whole-book copy.
+    /// Does NOT run the pre-export mojibake/BLOCKER gates or the DCM viz — those stay CLI-only,
+    /// since they print console diagnostics and can abort the run before anything is written.
     /// </summary>
     public async Task<Result> ExportAllAsync(Guid nodeId, string? author, CancellationToken ct = default)
     {
@@ -62,6 +65,7 @@ public class NodeFullExportService
         var epubPath = await manuscript.ExportEpubAsync(nodeId, author, ct);
         var pdfPath = await manuscript.ExportPdfAsync(nodeId, author, ct);
         var txtPath = await manuscript.ExportAudioTxtAsync(nodeId, author, ct);
+        var mdPath = await manuscript.ExportMarkdownAsync(nodeId, author, ct);
         var outDir = Path.GetDirectoryName(docxPath)!;
 
         var docxMojibakeHits = MojibakeRepairService.CountDocxMojibake(docxPath);
@@ -136,7 +140,7 @@ public class NodeFullExportService
         try { coverPath = await coverSvc.EnsureExportCoverAsync(nodeId, outDir, ct); }
         catch { /* non-fatal, mirrors CLI behavior */ }
 
-        return new Result(docxPath, epubPath, pdfPath, txtPath, docxMojibakeHits,
+        return new Result(docxPath, epubPath, pdfPath, txtPath, mdPath, docxMojibakeHits,
             descPath, descriptionRepaired, synPath, kwPath, keywordCount, coverPath);
     }
 

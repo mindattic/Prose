@@ -191,7 +191,7 @@ public class BeatVerificationService
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
 
         var beatIds = await db.BeatNodes
-            .Where(bn => nodeIds.Contains(bn.NodeId) && bn.IsEnabled)
+            .Where(bn => nodeIds.Contains(bn.NodeId) && true)
             .OrderBy(bn => bn.SortKey)
             .Select(bn => bn.BeatId)
             .Distinct()
@@ -401,7 +401,7 @@ public class BeatVerificationService
 
         // Load all BeatBlueprintDecisions for this node in order
         var decisions = await db.BeatNodes
-            .Where(bn => bn.NodeId == nodeId && bn.IsEnabled)
+            .Where(bn => bn.NodeId == nodeId && true)
             .OrderBy(bn => bn.SortKey)
             .Join(db.BeatBlueprintDecisions, bn => bn.BeatId, d => d.BeatId, (bn, d) => new
             {
@@ -650,7 +650,7 @@ public class BeatVerificationService
         var rows = await (
             from bv in db.BeatVerifications.AsNoTracking().IgnoreQueryFilters()
             join bn in db.BeatNodes.AsNoTracking().IgnoreQueryFilters() on bv.BeatId equals bn.BeatId
-            where bn.IsEnabled
+            where true
             select new { bn.NodeId, bv.RuleVersion }
         ).ToListAsync(ct);
         if (rows.Count == 0) return new List<StaleBook>();

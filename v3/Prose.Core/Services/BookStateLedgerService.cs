@@ -144,10 +144,19 @@ public class BookStateLedgerService(
                        .Take(6)
                        .ToList();
 
+        await PersistPipeDelimitedEventsAsync(lines, nodeId, beatId, beatIndex, existing, ct);
+    }
+
+    /// <summary>Pipe-delimited event line format shared with <see cref="BeatExtractionService"/>'s
+    /// consolidated prompt: <c>StateType|state_key|verb|label|NewValue</c>.</summary>
+    public async Task PersistPipeDelimitedEventsAsync(
+        IReadOnlyList<string> lines, Guid nodeId, Guid beatId, int beatIndex,
+        Dictionary<string, BookPlotEvent> existing, CancellationToken ct = default)
+    {
         if (lines.Count == 0) return;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        foreach (var line in lines)
+        foreach (var line in lines.Take(6))
         {
             var parts = line.Split('|', 5, StringSplitOptions.TrimEntries);
             if (parts.Length < 5) continue;

@@ -81,7 +81,7 @@ public class BeatEventSummaryService
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
-            where bn.IsEnabled && searchIds.Contains(bn.NodeId)
+            where true && searchIds.Contains(bn.NodeId)
                   && b.Text != null && b.Text != ""
             orderby c.SortKey, bn.SortKey
             select new { b.Id, b.Number, b.Text, b.TextHash, b.EventSummary, b.EventSummaryHash, Chapter = c.Title }
@@ -222,7 +222,7 @@ Output STRICT JSON, no fences, no commentary:
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
-            where bn.IsEnabled && eventListSearchIds.Contains(bn.NodeId)
+            where true && eventListSearchIds.Contains(bn.NodeId)
             orderby c.SortKey, bn.SortKey
             select new { SortKey = bn.SortKey, b.Id, b.Title, b.EventSummary }
         ).ToListAsync(ct);

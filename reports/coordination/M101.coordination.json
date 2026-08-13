@@ -2,9 +2,9 @@
   "nodeCode": "M101",
   "slug": "m-101-019f69f4",
   "title": "M-101",
-  "generatedAtUtc": "2026-08-10 16:25:51Z",
+  "generatedAtUtc": "2026-08-12 17:31:26Z",
   "totalBeats": 16,
-  "covered": 13,
+  "covered": 15,
   "chapterGranular": false,
   "bookScope": {
     "TemporalScheme": "linear",
@@ -17,7 +17,7 @@
     "ConstructionCapacity": 16
   },
   "flagCounts": {
-    "MISSING_MEANING": 3
+    "MISSING_MEANING": 1
   },
   "beats": [
     {
@@ -139,7 +139,7 @@
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 3815,
+      "ProseLength": 3765,
       "Flags": [],
       "Covered": true
     },
@@ -149,15 +149,14 @@
       "Chapter": "Chapter 3 \u2014 The Front",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Declan discovers his wireless mind-transfer ability by accident during a mortar strike, briefly jumping into a dying comrade\u0027s shell (M-556), then into an emplacement gun -- until Turret Thirty-Four forces the secret into the open.",
       "EscalationTarget": "6",
       "EventType": "escape",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3052,
-      "Flags": [
-        "MISSING_MEANING"
-      ],
-      "Covered": false
+      "ProseLength": 3076,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fd4ab-9259-707d-afb9-279c66ff7289",
@@ -165,17 +164,16 @@
       "Chapter": "Chapter 3 \u2014 The Front",
       "ChapterIndex": 2,
       "Act": 0,
+      "Meaning": "Pinned down in a salvage-yard ambush, Declan transfers into a derelict yard crane and breaks the attack with it -- a second, improvised variant of the wireless-transfer ability, later paid off at Turret Thirty-Four.",
       "EscalationTarget": "6",
       "EventType": "ambush",
       "RevelationMode": "suspense",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 3628,
-      "Flags": [
-        "MISSING_MEANING"
-      ],
-      "Covered": false
+      "ProseLength": 3602,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f69f5-6282-760d-88a6-eb9a3358037d",
@@ -190,7 +188,7 @@
       "EventType": "confrontation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 4047,
+      "ProseLength": 3968,
       "Flags": [],
       "Covered": true
     },
@@ -282,7 +280,7 @@
       "EventType": "departure",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 3602,
+      "ProseLength": 3577,
       "Flags": [],
       "Covered": true
     },
@@ -296,7 +294,7 @@
       "EventType": "loss",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 5192,
+      "ProseLength": 4994,
       "Flags": [
         "MISSING_MEANING"
       ],

@@ -111,7 +111,7 @@ public static class BurstBeatsCli
             var candidates = await (
                 from sb in db.BeatNodes
                 join b in db.Beats on sb.BeatId equals b.Id
-                where sb.NodeId == node.Id && sb.IsEnabled && b.Text.Length > minChars
+                where sb.NodeId == node.Id && true && b.Text.Length > minChars
                 orderby sb.SortKey
                 select new { sb.BeatId, b.Text.Length }
             ).ToListAsync();

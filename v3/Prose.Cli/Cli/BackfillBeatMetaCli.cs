@@ -63,7 +63,7 @@ public static class BackfillBeatMetaCli
         {
             var beats = await (from sb in db.BeatNodes.AsNoTracking()
                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                               where sb.NodeId == sid && sb.IsEnabled
+                               where sb.NodeId == sid && true
                                orderby sb.SortKey
                                select new { b.Id, b.Text, b.Description, b.StructureRole }).ToListAsync();
             foreach (var b in beats) { ordered.Add(b.Id); beatInfo[b.Id] = (b.Text, b.Description, b.StructureRole); }

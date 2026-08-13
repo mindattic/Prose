@@ -146,7 +146,7 @@ public class EmotionalDepthService
             var rows = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where leafIds.Contains(sb.NodeId) && sb.IsEnabled
+                where leafIds.Contains(sb.NodeId) && true
                 select new { sb.NodeId, sb.SortKey, b.Text, b.Number }
             ).ToListAsync(ct);
             var ordered = rows.OrderBy(r => leafIds.IndexOf(r.NodeId)).ThenBy(r => r.SortKey).ToList();
@@ -160,7 +160,7 @@ public class EmotionalDepthService
             var beatRows = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where sb.NodeId == nodeId && sb.IsEnabled
+                where sb.NodeId == nodeId && true
                 orderby sb.SortKey
                 select new { b.Text, b.Number }
             ).ToListAsync(ct);
@@ -504,7 +504,7 @@ PROSE:
         var beats = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
-            where beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled && beatNumbers.Contains(b.Number)
+            where beatNodeIds.Contains(sb.NodeId) && true && beatNumbers.Contains(b.Number)
             select b
         ).ToListAsync(ct);
 

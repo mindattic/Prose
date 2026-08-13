@@ -67,8 +67,8 @@ public class TimelineConsistencyServiceTests
         });
         db.Beats.Add(new Beat { Id = beatAId, Number = 1, Text = "First beat." });
         db.Beats.Add(new Beat { Id = beatBId, Number = 2, Text = "Second beat." });
-        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beatAId, SortKey = 1.0, IsEnabled = true });
-        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beatBId, SortKey = 2.0, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beatAId, SortKey = 1.0 });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beatBId, SortKey = 2.0 });
 
         await db.SaveChangesAsync();
         return (nodeId, beatAId, beatBId);

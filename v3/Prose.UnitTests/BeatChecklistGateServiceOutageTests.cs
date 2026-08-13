@@ -79,7 +79,7 @@ public class BeatChecklistGateServiceOutageTests
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = 1, Text = "Some prose long enough to evaluate." };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1 });
         await db.SaveChangesAsync();
 
         var svc = new BeatChecklistGateService(
@@ -127,7 +127,7 @@ public class BeatChecklistGateServiceOutageTests
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = 42, Text = "Some prose long enough to evaluate." };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1 });
         await db.SaveChangesAsync();
 
         var svc = new BeatChecklistGateService(

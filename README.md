@@ -618,7 +618,7 @@ A representative sample of the 34 tool-class files — see [docs/MCP_TOOLS.md](d
 | `Tools.EntityCrud.cs` | Create/upsert all typed entity kinds |
 | `Tools.WorldModelling.cs` | 7 prose-continuity services + entity tree, world-state-at-beat, post-beat validation, timeline consistency, prose lessons |
 | `Tools.Quality.cs` | `validate_canon_text`, `review_book`, `diagnose_book`, `scan_book_violations`, `check_prose`, `check_semantic_fidelity`, findings stats |
-| `Tools.NarrativeScience.cs` | `analyze_sacred_flaw`, `check_dramatic_question`, `audit_scene_engagement`, `map_five_act_structure` |
+| `Tools.NarrativeScience.cs` | `analyze_sacred_flaw`, `check_dramatic_question`, `map_five_act_structure`, `check_antihero_empathy` |
 | `Tools.Voice.cs` | `harvest_voice(_all)`, voice-proposal list/apply/reject, `get_tone_bible` |
 | `Tools.Findings.cs` | `list_findings`, `set_finding_status`, `apply_finding`, `findings_stats` |
 | `Tools.Scene.cs` | `assemble_scene_context`, wound ledger, `get_character_loadout` |

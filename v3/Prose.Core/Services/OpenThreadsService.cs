@@ -51,6 +51,15 @@ public class OpenThreadsService(
                        .Take(8)
                        .ToList();
 
+        await PersistNewThreadsAsync(lines, nodeId, beatId, ct);
+    }
+
+    /// <summary>
+    /// Persist already-detected new-thread descriptions (no LLM call here) — split out of
+    /// <see cref="DetectAndRegisterAsync"/> so <see cref="BeatExtractionService"/> can reuse it.
+    /// </summary>
+    public async Task PersistNewThreadsAsync(IReadOnlyList<string> lines, Guid nodeId, Guid beatId, CancellationToken ct = default)
+    {
         if (lines.Count == 0) return;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -62,7 +71,7 @@ public class OpenThreadsService(
         if (stale.Count > 0)
             db.NodeOpenThreads.RemoveRange(stale);
 
-        foreach (var line in lines)
+        foreach (var line in lines.Take(8))
         {
             db.NodeOpenThreads.Add(new NodeOpenThread
             {
@@ -91,11 +100,7 @@ public class OpenThreadsService(
     {
         if (string.IsNullOrWhiteSpace(prose)) return;
 
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var open = await db.NodeOpenThreads
-            .Where(t => t.NodeId == nodeId && !t.IsResolved)
-            .ToListAsync(ct);
-
+        var open = await GetOpenThreadsAsync(nodeId, ct);
         if (open.Count == 0) return;
 
         var threadList = string.Join("\n", open.Select((t, i) => $"{i + 1}. {t.Description}"));
@@ -114,15 +119,53 @@ public class OpenThreadsService(
         if (string.IsNullOrWhiteSpace(raw) || raw.Trim().Equals("NONE", StringComparison.OrdinalIgnoreCase))
             return;
 
-        var resolved = raw.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+        var resolvedIds = ParseResolvedNumbers(raw, open);
+        await PersistResolutionsAsync(resolvedIds, beatId, ct);
+    }
+
+    /// <summary>Ordered open (unresolved) threads for a node — shared by <see cref="MarkResolvedAsync"/>
+    /// and <see cref="BeatExtractionService"/>, which needs the same numbered list to build its
+    /// combined prompt and to map the model's 1-based answer back to real thread IDs.</summary>
+    public async Task<List<NodeOpenThread>> GetOpenThreadsAsync(Guid nodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await db.NodeOpenThreads
+            .Where(t => t.NodeId == nodeId && !t.IsResolved)
+            .OrderBy(t => t.CreatedAt)
+            .ToListAsync(ct);
+    }
+
+    /// <summary>Maps 1-based line numbers (as produced by either <see cref="MarkResolvedAsync"/>'s
+    /// own prompt or <see cref="BeatExtractionService"/>'s consolidated one, against the SAME
+    /// numbered <paramref name="open"/> list) to real thread IDs.</summary>
+    public static List<Guid> ParseResolvedNumbers(string raw, IReadOnlyList<NodeOpenThread> open)
+    {
+        if (string.IsNullOrWhiteSpace(raw) || raw.Trim().Equals("NONE", StringComparison.OrdinalIgnoreCase))
+            return [];
+
+        return raw.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
             .Select(l => int.TryParse(l.Trim().TrimEnd('.'), out var n) ? n : 0)
             .Where(n => n >= 1 && n <= open.Count)
             .Distinct()
+            .Select(n => open[n - 1].Id)
             .ToList();
+    }
 
-        foreach (var idx in resolved)
+    /// <summary>
+    /// Persist already-decided thread resolutions by ID (no LLM call here) — split out of
+    /// <see cref="MarkResolvedAsync"/> so <see cref="BeatExtractionService"/> can reuse it.
+    /// </summary>
+    public async Task PersistResolutionsAsync(IReadOnlyList<Guid> threadIds, Guid beatId, CancellationToken ct = default)
+    {
+        if (threadIds.Count == 0) return;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var rows = await db.NodeOpenThreads
+            .Where(t => threadIds.Contains(t.Id) && !t.IsResolved)
+            .ToListAsync(ct);
+
+        foreach (var thread in rows)
         {
-            var thread = open[idx - 1];
             thread.IsResolved     = true;
             thread.ResolvedBeatId = beatId;
             thread.UpdatedAt      = DateTime.UtcNow;

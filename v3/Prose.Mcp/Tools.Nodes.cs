@@ -119,7 +119,7 @@ public class NodeTools
 
         var ids = rows.Select(r => r.Id).ToList();
         var beatCounts = await db.BeatNodes
-            .Where(sb => ids.Contains(sb.NodeId) && sb.IsEnabled)
+            .Where(sb => ids.Contains(sb.NodeId) && true)
             .GroupBy(sb => sb.NodeId)
             .Select(g => new { NodeId = g.Key, Count = g.Count() })
             .ToDictionaryAsync(x => x.NodeId, x => x.Count);
@@ -272,7 +272,7 @@ public class NodeTools
 
         var sourceBeats = await db.Set<BeatNode>()
             .AsNoTracking()
-            .Where(sb => sb.NodeId == source.Id && sb.IsEnabled)
+            .Where(sb => sb.NodeId == source.Id && true)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats.AsNoTracking(), sb => sb.BeatId, b => b.Id,
                   (sb, b) => new { sb.SortKey, Beat = b })
@@ -346,7 +346,6 @@ public class NodeTools
                 NodeId  = newId,
                 BeatId    = beatId,
                 SortKey   = entry.SortKey,
-                IsEnabled = true,
             });
         }
 
@@ -398,7 +397,7 @@ public class NodeTools
         // Resolve the node that owns this beat — either the one from the
         // dotted handle (if any), or the first BeatNode junction.
         var nodeId = parsedNode ?? (await db.BeatNodes.AsNoTracking()
-            .Where(sb => sb.BeatId == beat.Id && sb.IsEnabled)
+            .Where(sb => sb.BeatId == beat.Id && true)
             .Select(sb => (Guid?)sb.NodeId)
             .FirstOrDefaultAsync());
         Node? node = null;
@@ -622,7 +621,7 @@ public class NodeTools
         if (targetBeats <= 0)
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            targetBeats = await db.BeatNodes.CountAsync(sb => sb.NodeId == node.Id && sb.IsEnabled);
+            targetBeats = await db.BeatNodes.CountAsync(sb => sb.NodeId == node.Id && true);
             if (targetBeats <= 0) targetBeats = 12;
         }
 
@@ -824,6 +823,7 @@ public class NodeTools
             epub_path = result.EpubPath,
             pdf_path = result.PdfPath,
             txt_path = result.TxtPath,
+            md_path = result.MdPath,
             docx_mojibake_hits = result.DocxMojibakeHits,
             description_path = result.DescriptionPath,
             description_mojibake_repaired = result.DescriptionMojibakeRepaired,
@@ -883,7 +883,7 @@ public class NodeTools
         // Word counts from beats
         var wordCounts = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => ids.Contains(sb.NodeId) && sb.IsEnabled)
+            .Where(sb => ids.Contains(sb.NodeId) && true)
             .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
                   sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.NodeId, b.Text })
             .GroupBy(x => x.NodeId)
@@ -1285,7 +1285,7 @@ public class NodeTools
         // inside the query pipeline.
         var rows = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
+            .Where(sb => searchIds.Contains(sb.NodeId) && true)
             .Join(db.Beats.AsNoTracking(),
                   sb => sb.BeatId,
                   b  => b.Id,

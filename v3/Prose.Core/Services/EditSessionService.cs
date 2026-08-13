@@ -87,7 +87,7 @@ public class EditSessionService
 
             // Resolve nodeId from BeatNodes
             var nodeId = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.BeatId == beatId && bn.IsEnabled)
+                .Where(bn => bn.BeatId == beatId && true)
                 .Select(bn => bn.NodeId)
                 .FirstOrDefaultAsync(ct);
 

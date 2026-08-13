@@ -60,14 +60,13 @@ public class ProseWriterRouter(
     PlantPayoffService? plantPayoffs = null,
     BookAuditService? bookAudit = null,
     SceneCollisionService? sceneCollision = null,
-    VerificationContextService? verificationContext = null)
+    VerificationContextService? verificationContext = null,
+    BeatExtractionService? beatExtraction = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
         "BEAT MODE: COMBAT — action prose rules are in force.\n" +
-        CombatProseConstants.ActionRules + "\n" +
-        "DISSOCIATED OBSERVER — use sparingly, maximum two per beat:\n" +
-        CombatProseConstants.DissociatedObserverBody;
+        CombatProseConstants.ActionRules;
 
     /// <summary>
     /// Write a beat using the full enriched pipeline: mode detection → pacing → structural role →
@@ -231,6 +230,25 @@ public class ProseWriterRouter(
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(EmotionalDepthService)); }
         }
 
+        // Readability feedback (plan "Making Prose readable...", 2026-08-13): recent
+        // low-Flesch READABILITY findings (filed by SanityScanBackgroundService) become a
+        // forward-looking guidance block — same "prior findings become future generation
+        // constraints" pattern as EMOTIONAL-DEPTH above and STORYSCOPE below.
+        var readabilityGuidanceContext = context.ReadabilityGuidanceContext;
+        if (string.IsNullOrEmpty(readabilityGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
+        {
+            try
+            {
+                readabilityGuidanceContext = await BuildFindingsGuidanceAsync(
+                    context.NodeId,
+                    summaryPrefix: "READABILITY",
+                    headerLine: "READABILITY — recent beats in this book scored below the clarity floor; write shorter, plainer sentences and cut interpretive gloss:",
+                    category: FindingCategory.ProseHealth,
+                    ct: ct);
+            }
+            catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(BeatProseMetricsService)); }
+        }
+
         // Fix 1: auto-populate XRayContext via SceneContextAssembler when beatId is known.
         // Injects per-character voice/psychology/wound/behavioral profiles for every entity on screen.
         var xRayContext = context.XRayContext;
@@ -246,6 +264,10 @@ public class ProseWriterRouter(
                     var capturedBeatId = beatId;
                     _ = Task.Run(() => sceneAssembler.PersistRosterAsync(capturedBeatId, sc, CancellationToken.None))
                         .ContinueWith(t => { if (t.IsFaulted) log.LogWarning(t.Exception, "[ProseWriterRouter] PersistRosterAsync failed for beat {Id}", capturedBeatId); }, TaskScheduler.Default);
+                    // POV presence (plan "Making Prose readable...", 2026-08-13): closes the gap
+                    // where DocContextService's per-beat voice-pinning silently had nothing to pin.
+                    _ = Task.Run(() => sceneAssembler.PersistPovAsync(capturedBeatId, sc, CancellationToken.None))
+                        .ContinueWith(t => { if (t.IsFaulted) log.LogWarning(t.Exception, "[ProseWriterRouter] PersistPovAsync failed for beat {Id}", capturedBeatId); }, TaskScheduler.Default);
                 }
             }
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(SceneContextAssembler)); }
@@ -530,6 +552,7 @@ public class ProseWriterRouter(
             LocationContext        = locationContext,
             DialogueContext        = dialogueContext,
             EmotionalGuidanceContext = emotionalGuidanceContext,
+            ReadabilityGuidanceContext = readabilityGuidanceContext,
             TensionGuidanceContext = tensionGuidanceContext,
             ReaderKnowledgeContext = readerKnowledgeContext,
             ConsequenceContext     = consequenceContext,
@@ -660,6 +683,7 @@ public class ProseWriterRouter(
                 new("SceneContext",        IsApplicable: nodeApplicable,    IsActive: locationContext.Length > 0,                                             BlockSizeChars: locationContext.Length),
                 new("DialogueService",     IsApplicable: nodeApplicable,    IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
                 new("EmotionalGuidance",   IsApplicable: nodeApplicable,    IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
+                new("ReadabilityGuidance", IsApplicable: nodeApplicable,    IsActive: readabilityGuidanceContext.Length > 0,                                  BlockSizeChars: readabilityGuidanceContext.Length),
                 new("TensionEscalation",   IsApplicable: nodeApplicable,    IsActive: tensionGuidanceContext.Length > 0,                                      BlockSizeChars: tensionGuidanceContext.Length),
                 new("ReaderKnowledge",     IsApplicable: nodeApplicable,    IsActive: readerKnowledgeContext.Length > 0,                                      BlockSizeChars: readerKnowledgeContext.Length),
                 new("Consequence",         IsApplicable: nodeApplicable,    IsActive: consequenceContext.Length > 0,                                          BlockSizeChars: consequenceContext.Length),
@@ -687,35 +711,48 @@ public class ProseWriterRouter(
                 catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ReconcileAsync failed", nameof(EntityContextStack)); }
             }
 
-            // Record tension history and extract reader revelations from the completed beat.
+            // Record tension history.
             tensionService?.RecordBeat(capturedNodeId, mode);
-            if (readerKnowledge != null && capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
-            {
-                try { await readerKnowledge.ExtractAsync(capturedResult, capturedNodeId, CancellationToken.None); }
-                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAsync failed", nameof(ReaderKnowledgeService)); }
-            }
 
-            // Compress completed beat into rolling narrative summary and persist for next session.
-            if (narrativeSummary != null && capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            // Post-write extraction cluster (RFC 0009 §9.4, "item 1"): reader-knowledge facts,
+            // scene summary, new/resolved open threads, and arc-level plot-state transitions all
+            // used to be five separate Haiku calls each re-reading capturedResult. When
+            // BeatExtractionService is wired (the normal case — see ServiceCollectionExtensions),
+            // this is now ONE call fanning out to each service's Persist*-only method. Fall back to
+            // the original five-call sequence when it isn't (e.g. a test or DI graph that predates
+            // this consolidation) so behavior never silently regresses to "nothing runs."
+            if (capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
             {
-                try { await narrativeSummary.SummarizeSceneAsync(capturedResult, capturedNodeId, beatId == Guid.Empty ? null : beatId, CancellationToken.None); }
-                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.SummarizeSceneAsync failed", nameof(NarrativeSummaryService)); }
-            }
-
-            // Open threads: detect new setups, mark resolved threads from this beat.
-            if (openThreads != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
-            {
-                try { await openThreads.MarkResolvedAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
-                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.MarkResolvedAsync failed", nameof(OpenThreadsService)); }
-                try { await openThreads.DetectAndRegisterAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
-                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.DetectAndRegisterAsync failed", nameof(OpenThreadsService)); }
-            }
-
-            // Story plot state: extract arc-level state transitions from the completed beat.
-            if (bookStateLedger != null && capturedNodeId != Guid.Empty && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
-            {
-                try { await bookStateLedger.ExtractAndRecordAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); }
-                catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAndRecordAsync failed", nameof(BookStateLedgerService)); }
+                if (beatExtraction != null)
+                {
+                    try { await beatExtraction.ExtractAllAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); }
+                    catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAllAsync failed", nameof(BeatExtractionService)); }
+                }
+                else
+                {
+                    if (readerKnowledge != null)
+                    {
+                        try { await readerKnowledge.ExtractAsync(capturedResult, capturedNodeId, CancellationToken.None); }
+                        catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAsync failed", nameof(ReaderKnowledgeService)); }
+                    }
+                    if (narrativeSummary != null)
+                    {
+                        try { await narrativeSummary.SummarizeSceneAsync(capturedResult, capturedNodeId, beatId == Guid.Empty ? null : beatId, CancellationToken.None); }
+                        catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.SummarizeSceneAsync failed", nameof(NarrativeSummaryService)); }
+                    }
+                    if (openThreads != null && beatId != Guid.Empty)
+                    {
+                        try { await openThreads.MarkResolvedAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
+                        catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.MarkResolvedAsync failed", nameof(OpenThreadsService)); }
+                        try { await openThreads.DetectAndRegisterAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); }
+                        catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.DetectAndRegisterAsync failed", nameof(OpenThreadsService)); }
+                    }
+                    if (bookStateLedger != null && beatId != Guid.Empty)
+                    {
+                        try { await bookStateLedger.ExtractAndRecordAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); }
+                        catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service}.ExtractAndRecordAsync failed", nameof(BookStateLedgerService)); }
+                    }
+                }
             }
 
             // C2: CanonGroundingService — flag PROVISIONAL-ENTITY findings for invented names (opt-in).

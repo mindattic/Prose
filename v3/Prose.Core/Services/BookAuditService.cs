@@ -187,12 +187,12 @@ public class BookAuditService(
         var isFlatNode = leafChapterIds.Count == 1 && leafChapterIds[0] == node.Id;
         var prose = isFlatNode
             ? string.Join("\n\n", node.BeatNodes
-                .Where(sb => sb.IsEnabled)
+                .Where(sb => true)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!.Text)
                 .Where(t => !string.IsNullOrWhiteSpace(t)))
             : string.Join("\n\n", (await db.BeatNodes.AsNoTracking()
-                .Where(sb => leafChapterIds.Contains(sb.NodeId) && sb.IsEnabled)
+                .Where(sb => leafChapterIds.Contains(sb.NodeId) && true)
                 .Include(sb => sb.Beat)
                 .ToListAsync(ct))
                 .OrderBy(sb => leafChapterIds.IndexOf(sb.NodeId)).ThenBy(sb => sb.SortKey)

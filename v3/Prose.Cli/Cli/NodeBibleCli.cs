@@ -70,7 +70,7 @@ public static class NodeBibleCli
         // Determine target beat count
         if (targetBeats <= 0)
         {
-            targetBeats = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled);
+            targetBeats = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId) && true);
             if (targetBeats <= 0) targetBeats = 12;
         }
 
@@ -82,16 +82,16 @@ public static class NodeBibleCli
         {
             // Remove existing planned beats (empty prose only — don't nuke written beats)
             var emptyBeats = await db.BeatNodes
-                .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
+                .Where(sb => searchIds.Contains(sb.NodeId))
                 .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb, b })
                 .Where(x => string.IsNullOrEmpty(x.b.Text))
                 .ToListAsync();
 
             if (emptyBeats.Count > 0)
             {
-                foreach (var row in emptyBeats) row.sb.IsEnabled = false;
+                db.BeatNodes.RemoveRange(emptyBeats.Select(x => x.sb));
                 await db.SaveChangesAsync();
-                Console.WriteLine($"[book-bible] Soft-deleted {emptyBeats.Count} empty planned beats.");
+                Console.WriteLine($"[book-bible] Removed {emptyBeats.Count} empty planned beats.");
             }
         }
 

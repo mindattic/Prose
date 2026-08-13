@@ -629,6 +629,12 @@ public class SettingsService : IDisposable
     /// <summary>When true, WorldTickService advances the story clock and writes EntityStateEvents per active character on each tick.
     /// Off by default — enable deliberately once the rule layer is ready.</summary>
     public bool WorldTickEnabled { get => data.WorldTickEnabled; set { data.WorldTickEnabled = value; ScheduleSave(); } }
+    /// <summary>Master switch for ProsePatternGuard's AI-tell countermeasure checks (AiVocabulary,
+    /// AiDefaultName, AiStructuralTic/DecidingTic, em-dash density — the Wikipedia:Signs_of_AI_writing
+    /// block added 2026-08-09). Does NOT affect the pre-existing Cliche/PseudoProfound/OnTheNose/
+    /// ItalicisedDialogue/CurrencyFormat checks, which stay on regardless. Author ruling 2026-08-12:
+    /// off by default — felt the AI-tell block was making prose worse, not better.</summary>
+    public bool AiTellChecksEnabled { get => data.AiTellChecksEnabled; set { data.AiTellChecksEnabled = value; ScheduleSave(); } }
     /// <summary>When true, CoverImageService.EnsureExportCoverAsync auto-generates a missing cover.jpg
     /// during --export-node/export_node. Off by default — the author controls cover art manually
     /// until they opt back in.</summary>
@@ -1038,6 +1044,8 @@ public class SettingsService : IDisposable
         public bool ReviewAutoRunEnabled { get; set; } = true;
         /// <summary>When true, WorldTickService is active — advances story clock + writes EntityStateEvents per tick.</summary>
         public bool WorldTickEnabled { get; set; } = false;
+        /// <summary>Master switch for ProsePatternGuard's AI-tell countermeasure checks. Off by default (author ruling 2026-08-12).</summary>
+        public bool AiTellChecksEnabled { get; set; } = false;
         /// <summary>When true, CanonGroundingService fires after each beat write to flag PROVISIONAL-ENTITY findings. Default OFF — opt in to avoid extra LLM cost per beat.</summary>
         public bool AutoCanonGrounding { get; set; } = false;
         /// <summary>When true, SceneContextAssembler.HarvestRevealedDetailsAsync fires after each beat write to propose XRAY-REVEAL findings. Default OFF.</summary>

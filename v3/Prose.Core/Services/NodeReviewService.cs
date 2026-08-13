@@ -979,7 +979,7 @@ Be honest and use the whole scale.";
 
         // Recurses past any nested Collection (2026-08-09 fix).
         var reviewSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var ordered = await db.BeatNodes.Where(sb => reviewSearchIds.Contains(sb.NodeId) && sb.IsEnabled)
+        var ordered = await db.BeatNodes.Where(sb => reviewSearchIds.Contains(sb.NodeId) && true)
             .OrderBy(sb => sb.SortKey).Include(sb => sb.Beat).Select(sb => sb.Beat!).ToListAsync(ct);
         int n = ordered.Count;
         if (n == 0) return new List<EditProposal>();
@@ -1916,7 +1916,7 @@ Be specific; do not invent praise the reviews don't support.";
             // beats), NOT the global Beat.Number. Map positional → the node's beats in
             // reading (SortKey) order.
             var ordered = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+                .Where(sb => sb.NodeId == nodeId && true)
                 .OrderBy(sb => sb.SortKey)
                 .Include(sb => sb.Beat)
                 .Select(sb => sb.Beat!)
@@ -1934,7 +1934,7 @@ Be specific; do not invent praise the reviews don't support.";
             double? sd = latestPerPersona.Count > 1
                 ? Math.Sqrt(latestPerPersona.Sum(r => Math.Pow((double)r.Score - mean, 2)) / (latestPerPersona.Count - 1))
                 : null;
-            var beatCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId && sb.IsEnabled, ct);
+            var beatCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId && true, ct);
             db.NodeScoreHistories.Add(new Data.Entities.NodeScoreHistory
             {
                 NodeId    = nodeId,
@@ -2408,7 +2408,7 @@ Be specific; do not invent praise the reviews don't support.";
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var hashes = await db.BeatNodes
-            .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
+            .Where(nb => nb.NodeId == nodeId && true)
             .OrderBy(nb => nb.SortKey)
             .Select(nb => nb.Beat!.TextHash)
             .ToListAsync(ct);
@@ -2446,7 +2446,7 @@ Be specific; do not invent praise the reviews don't support.";
             nodeTitle = node.Title;
 
             orderedBeats = await db.BeatNodes
-                .Where(nb => nb.NodeId == nodeId && nb.IsEnabled)
+                .Where(nb => nb.NodeId == nodeId && true)
                 .OrderBy(nb => nb.SortKey)
                 .Include(nb => nb.Beat)
                 .Select(nb => nb.Beat!)

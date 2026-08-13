@@ -123,6 +123,9 @@ public class BeatGeneratorService
         var emotionalBlock = !string.IsNullOrWhiteSpace(context.EmotionalGuidanceContext)
             ? $"\n\n{context.EmotionalGuidanceContext}"
             : "";
+        var readabilityBlock = !string.IsNullOrWhiteSpace(context.ReadabilityGuidanceContext)
+            ? $"\n\n{context.ReadabilityGuidanceContext}"
+            : "";
         var tensionBlock = !string.IsNullOrWhiteSpace(context.TensionGuidanceContext)
             ? $"\n\n{context.TensionGuidanceContext}"
             : "";
@@ -177,9 +180,11 @@ public class BeatGeneratorService
         var stablePrefix = $"""
             {UniverseLine()}{worldFactsBlock}
 
-            INNER MONOLOGUE: italicized stand-alone sentences, on their own paragraph, NEVER labeled.
-            Source from each POV character's documented psychology — coping_mechanisms, core_fears,
-            blind_spots, secret. Specific named things, not abstract archetypes. Do NOT use bracketed
+            INTERIORITY BUDGET (CRAFT.md §1): one or two flat lines per scene. Italic inner monologue
+            is a LAST RESORT, not a standing device — a single sentence, never a paragraph, never a
+            running crutch. Prefer showing the thought as a physical action instead. When you do use
+            it: source from each POV character's documented psychology — coping_mechanisms, core_fears,
+            blind_spots, secret — specific named things, not abstract archetypes. Do NOT use bracketed
             tags like [WOUND] or [IDEAL] — those are retired.
 
             BOOK BIBLE AND LITERARY RULES:
@@ -193,7 +198,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -245,8 +250,8 @@ public class BeatGeneratorService
 
             Write the next beat of the scene. Voice comes from the POV character's documented
             speech_patterns and psychology — clipped or warm, deflective or direct, depending on
-            whose head we're in. Inner thoughts surface as *italicized stand-alone lines*, never
-            labeled — a person arguing with themselves about a specific named thing.{dialogueInstruction}
+            whose head we're in. If interiority is genuinely needed here, prefer showing the thought
+            as an action; a bare italic line is a last resort, at most one, never a paragraph.{dialogueInstruction}
 
             {lengthInstruction}
             """;
@@ -945,6 +950,12 @@ public record BeatContext
     /// Injected by ProseWriterRouter from recent node findings — "previous beats scored low on X, address it."
     /// Empty when no prior examination exists or findings have been dismissed.</summary>
     public string EmotionalGuidanceContext { get; init; } = "";
+
+    /// <summary>Readability guidance derived from recent BeatProseMetricsService/Flesch outlier
+    /// findings (SanityScanBackgroundService's nightly sweep). Same "prior findings become future
+    /// generation constraints" pattern as EmotionalGuidanceContext — "recent beats scored below
+    /// the clarity floor, write shorter and plainer." Empty when no recent outliers exist.</summary>
+    public string ReadabilityGuidanceContext { get; init; } = "";
 
     /// <summary>Tension escalation note from TensionEscalationService.
     /// Non-empty when the last N beats have been at low intensity and the reader needs the stakes raised.</summary>

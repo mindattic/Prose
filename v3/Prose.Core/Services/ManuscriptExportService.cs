@@ -94,7 +94,16 @@ public class ManuscriptExportService
             var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
             prevNode = ob.NodeId;
             var beatTitle = string.IsNullOrWhiteSpace(beat.Title) ? null : beat.Title!.Trim();
-            if (nodeChanged && multiChapter)
+            // Single-node books (the current "flat beats, chapters are just
+            // IsChapterStart beats" model — see Beat.IsChapterStart's own doc
+            // comment) have no node transitions to key off at all, so a real
+            // chapter marker here can ONLY show up as a same-node IsChapterStart
+            // beat whose title is itself chapter-shaped. Gated on !multiChapter
+            // so this never fires for legacy multi-node books, where the same
+            // signal is documented (above) as leftover pre-Node-hierarchy noise.
+            var isFlatBookChapterStart = !multiChapter && beat.IsChapterStart
+                && beatTitle is not null && LooksLikeChapterHeading(beatTitle);
+            if ((nodeChanged && multiChapter) || isFlatBookChapterStart)
             {
                 chapterNo++;
                 var nodeTitle = nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim() : null;
@@ -106,7 +115,7 @@ public class ManuscriptExportService
                 md.AppendLine($"## {heading}");
                 md.AppendLine();
             }
-            else if (!nodeChanged && beat.IsChapterStart && beatTitle is not null && !LooksLikeChapterHeading(beatTitle))
+            else if (beat.IsChapterStart && beatTitle is not null && !LooksLikeChapterHeading(beatTitle))
             {
                 // Genuine mid-chapter sub-heading — its own heading text, not a new chapter.
                 md.AppendLine($"### {beatTitle}");
@@ -130,10 +139,40 @@ public class ManuscriptExportService
             .Select(u => u.Slug)
             .FirstOrDefaultAsync(ct);
         var dir = ResolveExportDir(universeSlug);
-        Directory.CreateDirectory(dir);
-        var path = Path.Combine(dir, $"{node.Slug}.{node.Id.ToString("N")[..8]}.md");
-        await File.WriteAllTextAsync(path, md.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
+        // Same per-book folder as docx/epub/pdf/txt (ExportPathResolver), not the bare
+        // universe directory — keeps the whole export bundle, including the round-trip
+        // .md, in one place per SS-A-whatever-this-becomes.
+        var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, dir, ct);
+        Directory.CreateDirectory(nodeDir);
+        foreach (var existing in Directory.EnumerateFiles(nodeDir, "*.md"))
+        {
+            try { File.Delete(existing); }
+            catch (IOException) { }
+            catch (UnauthorizedAccessException) { }
+        }
+        var path = Path.Combine(nodeDir, $"{fileBaseName} V{node.Version}.md");
+        var mdText = md.ToString().TrimEnd() + "\n";
+        await File.WriteAllTextAsync(path, mdText, new UTF8Encoding(false), ct);
         log.LogInformation("Exported node {Node} to Markdown {Path}", node.Slug, path);
+
+        // Every completed export is the historical record now — no temporal
+        // table to fall back on. Snapshot the full assembled text so nothing
+        // is lost even though the live Beats/BeatNodes rows never keep more
+        // than one current version of anything.
+        db.ArchivedBooks.Add(new ArchivedBook
+        {
+            Id = Guid.NewGuid(),
+            NodeId = node.Id,
+            Title = node.Title,
+            Version = node.Version,
+            Reason = "export",
+            Markdown = mdText,
+            BeatCount = beatNo,
+            WordCount = mdText.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries).Length,
+            CreatedAt = DateTime.UtcNow,
+        });
+        await db.SaveChangesAsync(ct);
+
         return path;
     }
 
@@ -505,6 +544,10 @@ public class ManuscriptExportService
         var nodeTitles = await db.Nodes.AsNoTracking()
             .Where(s => srcIds.Contains(s.Id))
             .ToDictionaryAsync(s => s.Id, s => s.Title, ct);
+        // See ExportMarkdownAsync's identical flag — same-node IsChapterStart beats only
+        // count as real chapter boundaries for single-node books (the current flat-beats
+        // model). Multi-node legacy books keep the original nodeChanged-only behavior.
+        bool multiChapter = srcIds.Count > 1;
 
         var chapters = new List<Chapter>();
         Chapter? current = null;
@@ -516,7 +559,9 @@ public class ManuscriptExportService
             var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
             prevNode = ob.NodeId;
             var beatTitle = string.IsNullOrWhiteSpace(beat.Title) ? null : beat.Title!.Trim();
-            if (nodeChanged)
+            var isFlatBookChapterStart = !multiChapter && beat.IsChapterStart
+                && beatTitle is not null && LooksLikeChapterHeading(beatTitle);
+            if (nodeChanged || isFlatBookChapterStart)
             {
                 chapterNo++;
                 var nodeTitle = nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim() : null;

@@ -72,7 +72,7 @@ public static class BackfillCoverageCli
             var beats = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where sb.NodeId == ch.Id && sb.IsEnabled
+                where sb.NodeId == ch.Id && true
                 orderby sb.SortKey
                 select new { b.Id, b.Description, b.Title, b.Text }).ToListAsync();
 

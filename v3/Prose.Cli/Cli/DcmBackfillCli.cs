@@ -62,7 +62,7 @@ public static class DcmBackfillCli
             var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId);
 
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(bn => sourceIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
+                .Where(bn => sourceIds.Contains(bn.NodeId) && true && bn.Beat != null && bn.Beat.Text != "")
                 .Select(bn => new { bn.NodeId, bn.SortKey, bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text })
                 .ToListAsync();
             var order = sourceIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);

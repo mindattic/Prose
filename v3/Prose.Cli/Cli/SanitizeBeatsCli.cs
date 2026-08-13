@@ -43,7 +43,7 @@ static class SanitizeBeatsCli
             // Recurses past any nested Collection (2026-08-09 fix).
             var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
             var beatIds = await db.BeatNodes.AsNoTracking()
-                                              .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
+                                              .Where(sb => searchIds.Contains(sb.NodeId) && true)
                                               .Select(sb => sb.BeatId)
                                               .ToListAsync();
             query = query.Where(b => beatIds.Contains(b.Id));

@@ -75,7 +75,7 @@ public static class ReadBeatsCli
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
-            where leafIds.Contains(bn.NodeId) && bn.IsEnabled
+            where leafIds.Contains(bn.NodeId) && true
             select new { b.Id, b.Number, b.Text, ChapterTitle = c.Title };
 
         if (explicitNumbers != null)

@@ -18,9 +18,8 @@ public class BeatNode
     /// existing siblings find a midpoint — no downstream renumbering.</summary>
     public double SortKey { get; set; }
 
-    /// <summary>False when the beat has been soft-deleted from this node.
-    /// The Beat row is never hard-deleted so all text and temporal history
-    /// remain accessible. <see cref="NodeWorkbenchService.RestoreBeatAsync"/>
-    /// sets this back to true.</summary>
-    public bool IsEnabled { get; set; } = true;
+    // No IsEnabled. A BeatNode row exists or it doesn't — there is no disabled
+    // state to be in. A superseded or removed beat gets its BeatNode (and, if
+    // now orphaned, its Beat) row physically deleted — see NodeBeatWriter and
+    // ReimportNodeCli in Prose.Cli.
 }

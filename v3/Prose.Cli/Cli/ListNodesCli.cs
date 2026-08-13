@@ -61,14 +61,14 @@ public static class ListNodesCli
         if (limit is int lim) query = query.Take(lim);
 
         var nodes = await query
-            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.Status, s.NodeCode, s.Score, s.UpdatedAt, BeatCount = s.BeatNodes.Count(nb => nb.IsEnabled) })
+            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.Status, s.NodeCode, s.Score, s.UpdatedAt, BeatCount = s.BeatNodes.Count(nb => true) })
             .ToListAsync();
 
         // Word / page count — one join instead of N queries
         var ids = nodes.Select(s => s.Id).ToList();
         var charCounts = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => ids.Contains(sb.NodeId) && sb.IsEnabled)
+            .Where(sb => ids.Contains(sb.NodeId) && true)
             .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
                   sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.NodeId, b.Text })
             .GroupBy(x => x.NodeId)

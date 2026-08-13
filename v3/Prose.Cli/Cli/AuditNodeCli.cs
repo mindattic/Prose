@@ -228,7 +228,7 @@ public static class AuditNodeCli
     {
         var beats = await (from sb in db.BeatNodes.AsNoTracking()
                            join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                           where sb.NodeId == chapterId && sb.IsEnabled
+                           where sb.NodeId == chapterId && true
                            select new { b.Id, b.Text, b.Description, b.StructureRole, b.EmotionalTone, b.Score, b.EmotionalScore }).ToListAsync();
         var ids = beats.Select(b => b.Id).ToList();
         var mentionBeats = await db.BeatEntityMentions.AsNoTracking()

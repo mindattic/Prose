@@ -40,20 +40,23 @@ public class SanityScanBackgroundService : BackgroundService
 
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly SanityScanService sanityScan;
+    private readonly BeatProseMetricsService proseMetrics;
     private readonly FindingsService findingsSvc;
     private readonly ILogger<SanityScanBackgroundService> log;
 
     public SanityScanBackgroundService(
         IDbContextFactory<ProseDbContext> dbFactory,
         SanityScanService sanityScan,
+        BeatProseMetricsService proseMetrics,
         FindingsService findingsSvc,
         ILogger<SanityScanBackgroundService> log,
         IConfiguration configuration)
     {
-        this.dbFactory   = dbFactory;
-        this.sanityScan  = sanityScan;
-        this.findingsSvc = findingsSvc;
-        this.log         = log;
+        this.dbFactory    = dbFactory;
+        this.sanityScan   = sanityScan;
+        this.proseMetrics = proseMetrics;
+        this.findingsSvc  = findingsSvc;
+        this.log          = log;
         Enabled = configuration.GetValue<bool>("BackgroundServices:Enabled", defaultValue: true);
     }
 
@@ -138,6 +141,23 @@ public class SanityScanBackgroundService : BackgroundService
                 // the whole corpus sweep.
                 log.LogWarning(ex, "Sanity-scan sweep: book {Slug} failed, skipping", book.Slug);
             }
+
+            // Readability (RFC 0009 §9.4 / plan "Making Prose readable...", 2026-08-13):
+            // BeatProseMetricsService already computes Flesch per beat but nothing fed it
+            // back into generation. File READABILITY findings here (piggybacking on this
+            // sweep's existing per-book loop rather than a second corpus scan) so
+            // ProseWriterRouter.BuildFindingsGuidanceAsync can turn them into a forward-looking
+            // guidance block for future beats — same pattern EMOTIONAL-DEPTH/STORYSCOPE already
+            // use. Uses the SAME FindingCategory.ProseHealth NightlyHealthService already
+            // writes under, but a distinct "READABILITY " summary prefix and filePath
+            // ($"node:{slug}", not NightlyHealthService's bare slug) so the two coexist without
+            // colliding and this one is queryable by BuildFindingsGuidanceAsync's exact-match
+            // FilePath lookup.
+            try { await FileReadabilityFindingsAsync(book.Id, book.Slug, ct); }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "Sanity-scan sweep: readability check for book {Slug} failed, skipping", book.Slug);
+            }
         }
 
         LastSweepAt         = DateTime.UtcNow;
@@ -147,6 +167,37 @@ public class SanityScanBackgroundService : BackgroundService
         log.LogInformation(
             "Sanity-scan background sweep: {BookCount} book(s) scanned (of {TotalCount} total), {BlockCount} block(s), {WarnCount} warn(s)",
             scannedCount, books.Count, blockCount, warnCount);
+    }
+
+    private const string ReadabilityPrefix = "READABILITY ";
+
+    private async Task FileReadabilityFindingsAsync(Guid bookId, string slug, CancellationToken ct)
+    {
+        var report = await proseMetrics.ComputeNodeAsync(bookId, ct);
+        var fp = $"node:{slug}";
+        findingsSvc.DeleteBySummaryPrefix(fp, ReadabilityPrefix);
+
+        var lowReadability = report.Outliers.Where(o => o.LowReadability).ToList();
+        if (lowReadability.Count == 0) return;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var beatIds = lowReadability.Select(o => o.BeatId).ToList();
+        var numberByBeatId = await db.Beats.AsNoTracking()
+            .Where(b => beatIds.Contains(b.Id))
+            .Select(b => new { b.Id, b.Number })
+            .ToDictionaryAsync(x => x.Id, x => x.Number, ct);
+
+        foreach (var o in lowReadability)
+        {
+            var number = numberByBeatId.GetValueOrDefault(o.BeatId);
+            var sev = o.FleschReadingEase < BeatProseMetricsService.UrgentReadabilityFloor
+                ? FindingSeverity.Medium : FindingSeverity.Low;
+            findingsSvc.Upsert(fp, chapterId: null, FindingCategory.ProseHealth, sev,
+                $"{ReadabilityPrefix}beat #{number}: Flesch {o.FleschReadingEase:F0} — below the " +
+                $"{BeatProseMetricsService.OutlierReadabilityFloor:F0} clarity floor; write shorter, " +
+                "plainer sentences, cut interpretive gloss.",
+                snippet: null, suggestedFix: null);
+        }
     }
 
     private static async Task<bool> SafeWaitAsync(PeriodicTimer timer, CancellationToken ct)

@@ -100,7 +100,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         // Load beats for this node in book order (via BeatNode join to Beat)
         var beatRows = await db.BeatNodes
             .AsNoTracking()
-            .Where(nb => beatNodeIds.Contains(nb.NodeId) && nb.IsEnabled)
+            .Where(nb => beatNodeIds.Contains(nb.NodeId) && true)
             .OrderBy(nb => nb.SortKey)
             .Include(nb => nb.Beat)
             .Select(nb => new

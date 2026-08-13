@@ -150,3 +150,117 @@ addedAt
 - A recorded `score-vs-function` lesson appears verbatim in the next review's ballot prompt.
 - `TimelineConsistencyService` flags a synthetic dead-character-acting case with zero LLM calls.
 - Core builds green; existing review/continuity tests pass.
+
+## 9. 2026-08-13 status update — this RFC's original cost surface is obsolete; here is the current one {#SS-RFC-0009-U1}
+
+`StrandReviewService` (§1's entire "review" cost surface — the 37/51/128-call numbers) **no longer
+exists in the codebase.** The engine has since moved to the Node/Beat/BeatNode model and
+`BookHealthService`'s FREE/DEEP/FULL battery. §5's `TimelineConsistencyService` shipped as
+described. This section replaces §1's cost table with the current one and records a holistic
+cost review's actual findings — several of which contradict a prior session's hypothesis about
+where the money was going, so they're recorded here rather than silently assumed correct.
+
+### 9.1 Effort tiering already exists in two places — it did not silently re-accrete ungoverned
+
+- **`BookHealthService.RunAsync(nodeId, tier)`** — `BookHealthTier.Free / Deep / Full`. FREE is
+  ~10 deterministic-or-near-zero checks (timeline, nouns, sanity-scan, voice-drift, plant-audit,
+  etc. — genuinely $0, see §9.3). DEEP adds ~10 one-call-per-book LLM audits. FULL adds the
+  heaviest: `storyscope-audit`, `swain-audit` (1 Haiku call/beat), `chekhov-audit`, `five-act-map`
+  (1 call/book), `dramatic-question` (1 call/beat — deliberately, see §9.2), `sacred-flaw` (1
+  call/POV character). This is the "official battery" — `--audit-book` / `book_health` MCP tool.
+- **`NarrativeScienceCli`** — independently implements `--effort draft|standard|deep` (skip / cheap
+  subset / everything) for its own manual subcommands.
+- Every always-on per-beat generation-time service named in the original plan for this cost
+  review (`LibertyReportService`, `SemanticFidelityService`, `OpenThreadsService`,
+  `BookStateLedgerService`, `ReaderKnowledgeService`, `SceneCollisionService`) is real and
+  unconditional inside `ProseWriterRouter.WriteAsync` — **this is where the money actually is**,
+  and it remains untouched by this pass (see §9.4).
+
+### 9.2 Corrected findings — three hypotheses from the initial diagnosis did not survive contact with the code
+
+A 2026-08-13 cost-reduction pass approved five items (Swain triple-payment, NarrativeScience
+per-beat→per-act, fold deterministic checks into DCM, consolidate craft/structure audits, this
+governance update) based on an initial Explore-agent diagnosis. Reading the actual implementations
+turned up three corrections worth recording so they aren't re-asserted in a future pass:
+
+1. **"Swain paid three times" was a mischaracterization.** `BeatAuditService`'s three
+   chapter-close lenses (`CausalityService`, `AffectBehaviorService`, `InterpersonalDynamicsService`
+   — `BeatLensServices.cs`) check causal-chain plausibility, emotion-drives-action, and relational
+   subtext — **none of them are Swain scene/sequel classification.** They're also each a single
+   whole-node call (not per-beat), run twice per chapter-close (before/after repair) as a
+   legitimate "did the repair work" gate — 6 cheap calls/chapter, not a cost problem. The only
+   real Swain-doctrine *audit* is `SwainAuditService` (1 Haiku call/beat, FULL tier only); the
+   generation prompt's Swain instruction (`BeatGeneratorService.cs` ~L221-234) is free prompt
+   text, not a second paid check. There is no triple-payment to cut. **No code changed for this
+   item.**
+2. **NarrativeScienceService's five analyzers were already 4-of-5 correctly scoped.**
+   `MapFiveActStructureAsync` (1 call/book) and `AnalyzeSacredFlawAsync` (1 call/POV character)
+   were never per-beat. Only `CheckDramaticQuestionAsync` ("dramatic-question") is genuinely
+   per-beat — and deliberately so: Storr's "who is this person really?" is a per-beat revelation
+   question by definition; forcing it to per-act would lose the signal, not just cut cost, so it
+   stays as-is (FULL tier only). The one real waste found: `AuditSceneEngagementAsync`
+   ("scene-anatomy") — per-beat, overlapping signal already covered by LogicSweep/DELIGHT/
+   StoryScope, and with **no automated caller anywhere** — only a manual bulk CLI/MCP surface.
+   **Removed outright** (`NarrativeScienceService.cs`, `NarrativeScienceCli.cs`,
+   `Tools.NarrativeScience.cs`) rather than left as a cost trap. `CheckAntiheroEmpathyAsync` has
+   no bulk-per-book caller either (MCP tool only, one beat/character at a time) — not a cost
+   problem, left as-is.
+3. **The claimed 3-way (setup/payoff) and 4-way (structural/outline agreement) redundancies
+   don't hold up on inspection either.** `PlantPayoffService` is a free DB-only ledger query over
+   *explicitly author-registered* pairs; `ChekhovAuditService` is an LLM discovery pass that finds
+   props nobody registered — complementary coverage, not duplicate. Of the four "structural
+   agreement" services, `OutlineAdherenceService` is not a post-hoc audit at all — it fires at
+   every chapter close to *recalibrate remaining beat goals*, i.e. it's load-bearing inside the
+   live generation loop; folding it into a whole-book pass would remove that correction loop, not
+   just save money. `AltitudeAuditService` (bible/blueprint headline vs. chapter synopses),
+   `StructuralDiagnosticService` (12 category-level craft checks), and `StoryScopeAuditService`
+   (AI-fiction-tell detection) each check a genuinely different property, mostly already at
+   book-level, not per-beat. Merging these into one "kitchen sink" prompt would likely produce
+   *worse* answers per topic, not just cheaper ones. **No consolidation made** — see §9.5 for what
+   this means for the approved plan's item 5.
+
+### 9.3 What is actually free right now (confirmed, not assumed)
+
+`TimelineConsistencyService`, `NounConsistencyService`, and the mention-indexing half of
+`EntityRamificationService` (`IndexBeatMentionsAsync`) are all zero-LLM queries over data
+`WorldStateLedger`/`BeatEntityMention` already holds — none call an LLM, none duplicate each
+other's lookups (checked directly against `WorldStateLedger.cs` and `EntityDocService.cs`).
+Documented inline in each file's header 2026-08-13.
+
+### 9.4 Where the money actually is (unchanged by this pass — item 1, deferred)
+
+The corrections in §9.2 mean the pre-pass estimate of "$400 for 8-11 books" being explained by
+triple-redundant post-hoc audits was **too optimistic about how much was recoverable outside the
+live generation path.** The concentrated cost is:
+- `ProseWriterRouter.WriteAsync`'s ~10 unconditional per-beat side-calls (extraction cluster:
+  `ReaderKnowledgeService`, `NarrativeSummaryService`, `OpenThreadsService`, `BookStateLedgerService`,
+  plus `EntityContextService` conflict checks, `LibertyReportService`, `SemanticFidelityService`,
+  `SceneCollisionService`) — fires on every beat of every book, no settings gate.
+- Running `BookHealthService`'s FULL tier (`swain-audit` + `dramatic-question`, ~2 calls/beat) across
+  a whole book, repeatedly, as part of the informal "full battery" habit.
+Both were explicitly out of scope for the first pass (item 1 deferred by the user's own choice
+pending proof that the safer cuts helped). Given §9.2's corrections showed most of those safer cuts
+didn't materialize, item 1 was revisited the same day: `BeatExtractionService.cs` (new) now fires
+ONE consolidated Haiku call in place of the five separate calls in `ReaderKnowledgeService.ExtractAsync`,
+`NarrativeSummaryService.SummarizeSceneAsync`, `OpenThreadsService.DetectAndRegisterAsync` +
+`MarkResolvedAsync`, and `BookStateLedgerService.ExtractAndRecordAsync` — all five really were
+asking the model to look at the same just-written beat and pull out a different slice of
+structured fact, confirmed by reading each prompt directly (unlike items 2/3/5's claims, this one
+held up). Each service keeps its original method working standalone (split into an LLM-calling
+wrapper + a `Persist*`-only method `BeatExtractionService` calls directly) for other callers
+(`SceneGenerationService` still uses `NarrativeSummaryService.SummarizeSceneAsync` on its own path).
+`ProseWriterRouter.WriteAsync` falls back to the original five-call sequence if
+`BeatExtractionService` isn't wired, so behavior never silently regresses to "nothing runs."
+This cuts the ~10-call/beat generation total in §9.4 by roughly 4 calls/beat (5 calls → 1).
+The `SceneCollisionService`/`LibertyReportService`/`SemanticFidelityService`/`EntityContextService`
+calls in that same cluster were NOT touched — each needs a distinct enough prompt shape (collision
+physics, Rule-of-Cool judgment, intent-drift comparison, conflict reconciliation) that folding them
+in would risk quality loss for a smaller marginal saving; revisit only if the combined call above
+proves out in practice.
+
+### 9.5 Cost estimator
+
+`prose --estimate-cost --beats <N> [--tier free|deep|full]` (new, `Prose.Cli/Cli/EstimateCostCli.cs`)
+prints the call count implied by `BookHealthService`'s current wiring for a book of N beats, so a
+future addition's cost is visible before it ships rather than discovered by totaling a bill months
+later.

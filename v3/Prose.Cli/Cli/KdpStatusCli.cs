@@ -64,7 +64,7 @@ public static class KdpStatusCli
         var viaChapters = await db.Nodes
             .AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.ParentNodeId != null && nodeIds.Contains(n.ParentNodeId.Value))
-            .Join(db.BeatNodes.AsNoTracking().Where(nb => nb.IsEnabled), ch => ch.Id, nb => nb.NodeId, (ch, nb) => new { ch.ParentNodeId, nb.BeatId })
+            .Join(db.BeatNodes.AsNoTracking().Where(nb => true), ch => ch.Id, nb => nb.NodeId, (ch, nb) => new { ch.ParentNodeId, nb.BeatId })
             .Join(db.Beats.AsNoTracking(), x => x.BeatId, b => b.Id, (x, b) => new { BookId = x.ParentNodeId!.Value, b.UpdatedAt })
             .GroupBy(x => x.BookId)
             .Select(g => new { BookId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
@@ -73,7 +73,7 @@ public static class KdpStatusCli
         // Latest beat edit via direct BeatNodes on the book node
         var direct = await db.BeatNodes
             .AsNoTracking()
-            .Where(nb => nodeIds.Contains(nb.NodeId) && nb.IsEnabled)
+            .Where(nb => nodeIds.Contains(nb.NodeId) && true)
             .Join(db.Beats.AsNoTracking(), nb => nb.BeatId, b => b.Id, (nb, b) => new { nb.NodeId, b.UpdatedAt })
             .GroupBy(x => x.NodeId)
             .Select(g => new { BookId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })

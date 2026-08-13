@@ -100,7 +100,7 @@ public sealed class BeatChecklistGateService(
         var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var beatRows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => sourceIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
+            .Where(bn => sourceIds.Contains(bn.NodeId) && true && bn.Beat != null && bn.Beat.Text != "")
             .Select(bn => new { bn.NodeId, bn.SortKey, bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text, bn.Beat.TextHash })
             .ToListAsync(ct);
         // Chapter order is positional in sourceIds — EF can't translate IndexOf, so order client-side.

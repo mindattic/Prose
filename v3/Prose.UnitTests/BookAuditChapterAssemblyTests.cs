@@ -131,7 +131,7 @@ public class BookAuditChapterAssemblyTests
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = beatText };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = id, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = id, BeatId = beat.Id, SortKey = 1 });
         await db.SaveChangesAsync();
         return id;
     }
@@ -152,7 +152,7 @@ public class BookAuditChapterAssemblyTests
         });
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = beatText };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = chId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = chId, BeatId = beat.Id, SortKey = 1 });
         await db.SaveChangesAsync();
     }
 

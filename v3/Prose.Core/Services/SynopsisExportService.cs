@@ -129,7 +129,7 @@ public sealed class SynopsisExportService(
         for (int i = 0; i < sources.Count; i++)
         {
             var beats = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.NodeId == sources[i].Id && bn.IsEnabled)
+                .Where(bn => bn.NodeId == sources[i].Id && true)
                 .OrderBy(bn => bn.SortKey)
                 .Select(bn => bn.Beat!.Text)
                 .ToListAsync(ct);

@@ -7,6 +7,15 @@ public class ProsePatternGuardTests
 {
     readonly ProsePatternGuard guard = new();
 
+    // AI-tell checks (below) are off by default (author ruling 2026-08-12) — these tests
+    // exercise the detector logic itself via an explicit opt-in SettingsService, independent
+    // of the production default.
+    static readonly SettingsService AiTellSettings = new(Path.Combine(Path.GetTempPath(), "ProsePatternGuardTests_" + Guid.NewGuid()))
+    {
+        AiTellChecksEnabled = true,
+    };
+    readonly ProsePatternGuard aiTellGuard = new(AiTellSettings);
+
     [Test]
     public void Check_EmptyString_ReturnsEmptyList()
     {
@@ -233,40 +242,41 @@ public class ProsePatternGuardTests
         Assert.That(result.All(v => !string.IsNullOrEmpty(v.Match)), Is.True);
     }
 
-    // ── AI-tell countermeasures (2026-08-09) ────────────────────────────────
+    // ── AI-tell countermeasures (2026-08-09) — off by default since 2026-08-12; these use
+    // aiTellGuard (explicit opt-in) to keep exercising the detector logic. ──────────────
 
     [Test]
     public void Check_Delve_DetectedAsAiVocabulary()
     {
-        var result = guard.Check("She decided to delve into the archive.");
+        var result = aiTellGuard.Check("She decided to delve into the archive.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiVocabulary), Is.True);
     }
 
     [Test]
     public void Check_StandsAsATestament_DetectedAsAiVocabulary()
     {
-        var result = guard.Check("The scar stands as a testament to what he survived.");
+        var result = aiTellGuard.Check("The scar stands as a testament to what he survived.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiVocabulary), Is.True);
     }
 
     [Test]
     public void Check_ElaraVoss_DetectedAsAiDefaultName()
     {
-        var result = guard.Check("Elara Voss looked up from the console.");
+        var result = aiTellGuard.Check("Elara Voss looked up from the console.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiDefaultName), Is.True);
     }
 
     [Test]
     public void Check_ProjectErebus_DetectedAsAiDefaultName()
     {
-        var result = guard.Check("The files were all that remained of Project Erebus.");
+        var result = aiTellGuard.Check("The files were all that remained of Project Erebus.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiDefaultName), Is.True);
     }
 
     [Test]
     public void Check_NotJustButAlso_DetectedAsAiStructuralTic()
     {
-        var result = guard.Check("It was not just a warning, but also a promise.");
+        var result = aiTellGuard.Check("It was not just a warning, but also a promise.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiStructuralTic), Is.True);
     }
 
@@ -275,7 +285,7 @@ public class ProsePatternGuardTests
     {
         // Ordinary contrastive grammar ("X rather than Y", bare "not X, but Y") must NOT be
         // flagged — only the "not just/only ... but (also)" compound template is AI-specific.
-        var result = guard.Check("He wanted to run rather than fight. It was warm, not cold.");
+        var result = aiTellGuard.Check("He wanted to run rather than fight. It was warm, not cold.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiStructuralTic), Is.False);
     }
 
@@ -284,7 +294,7 @@ public class ProsePatternGuardTests
     {
         var text = string.Join(" ", Enumerable.Repeat("word", 50)) +
                     " — one — two — three — four — five — six —";
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiStructuralTic
                                   && v.Rule.Contains("em-dash density")), Is.True);
     }
@@ -294,7 +304,7 @@ public class ProsePatternGuardTests
     {
         var text = "Kyle crossed the bridge — slower this time — and kept walking. " +
                     string.Join(" ", Enumerable.Repeat("word", 60));
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
         Assert.That(result.Any(v => v.Rule.Contains("em-dash density")), Is.False);
     }
 
@@ -306,7 +316,7 @@ public class ProsePatternGuardTests
     [TestCase("A fact, something her tongue returned to without deciding to.")]
     public void Check_PreConsciousDecisionFraming_DetectedAsAiStructuralTic(string text)
     {
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiStructuralTic
                                   && v.Rule.Contains("CRAFT.md §8.9")), Is.True);
     }
@@ -315,7 +325,7 @@ public class ProsePatternGuardTests
     public void Check_DecidedTheWayHeDecidedMostThings_DetectedAsAiStructuralTic()
     {
         var text = "He decided, the way he decided most things, before he'd finished admitting he was deciding.";
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiStructuralTic
                                   && v.Rule.Contains("near-verbatim construction")), Is.True);
     }
@@ -326,7 +336,7 @@ public class ProsePatternGuardTests
         // "She decided to leave" is ordinary, unremarkable prose — must not be flagged.
         // Matches neither the pre-conscious-framing pattern nor the specific near-verbatim
         // "decided, the way X decided most things" construction.
-        var result = guard.Check("She decided to leave the room and shut the door behind her.");
+        var result = aiTellGuard.Check("She decided to leave the room and shut the door behind her.");
         Assert.That(result.Any(v => v.Rule.Contains("CRAFT.md §8.9")), Is.False);
     }
 
@@ -345,7 +355,7 @@ public class ProsePatternGuardTests
             "mass mortality and nutritional crisis that struck a population already under strain " +
             "from decades of growth against a fixed land base.\n\nCited in: Chapter 1.";
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Rule.Contains("em-dash density")), Is.False,
             "one genuine em-dash aside in a full paragraph must not trip the density threshold " +
@@ -369,7 +379,7 @@ public class ProsePatternGuardTests
             "CANTERBURY, KENT 51.2802°N, 1.0789°E — Seat of the Archbishopric; entered by the Kentish rebels 10 June 1381 (Chapter 7).",
         });
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Rule.Contains("em-dash density")), Is.False,
             "a gazetteer/index-shaped list (one em-dash per short entry) is not narrative prose " +
@@ -388,7 +398,7 @@ public class ProsePatternGuardTests
             "at twenty-eight. Corpo authority reaches to thirty meters; the NCID — Halcyon's " +
             "Neuretic Crime Investigation Division — doesn't take interest below thirty-five.";
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Rule.Contains("em-dash density")), Is.False,
             "two em-dashes (one parenthetical gloss) in a short beat must not fire — " +
@@ -407,7 +417,7 @@ public class ProsePatternGuardTests
             "same flat tone as her name. Her grip loosens. Her eyes close. She isn't dead — the " +
             "labored breathing goes on — but she's out.".Replace(" - 412.7 - ", " — 412.7 — ");
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Rule.Contains("em-dash density")), Is.False,
             "4 em-dashes (two separate single glosses) must not fire — the floor is 5");
@@ -421,7 +431,7 @@ public class ProsePatternGuardTests
         var text = "Jordan's study — awarded the Haskins Medal — documents the run " +
             string.Join(" ", Enumerable.Repeat("word", 40));
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Rule.Contains("em-dash density")), Is.False,
             "2 em-dashes must never fire regardless of how the percentage math falls out");
@@ -437,7 +447,7 @@ public class ProsePatternGuardTests
             "and it keeps going — clause after clause — well past what a single field separator " +
             "would ever need, which is exactly the pattern that should still be flagged."));
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Rule.Contains("em-dash density")), Is.True,
             "genuine multi-dash narrative paragraphs must still be caught — the list guard " +
@@ -451,7 +461,7 @@ public class ProsePatternGuardTests
         // were this exact pattern — "boast" used as a NOUN in a negation ("not a boast," "no
         // boast in it"), a genuine characterization technique, not the AI copulative-avoidance
         // VERB tell ("the city boasts a district").
-        var result = guard.Check("He said it as a plain fact, not a boast. He rarely boasted.");
+        var result = aiTellGuard.Check("He said it as a plain fact, not a boast. He rarely boasted.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiVocabulary), Is.False);
     }
 
@@ -460,7 +470,7 @@ public class ProsePatternGuardTests
     {
         // The negation-noun fix must not become a blanket loophole — the actual AI-tell shape
         // (verb + article + noun) must still fire.
-        var result = guard.Check("The archology boasts a rooftop garden overlooking the Veil.");
+        var result = aiTellGuard.Check("The archology boasts a rooftop garden overlooking the Veil.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiVocabulary), Is.True);
     }
 
@@ -468,7 +478,7 @@ public class ProsePatternGuardTests
     public void Check_Realm_NotFlagged()
     {
         // "realm" is deliberately excluded — legitimate SCRY/fantasy-universe vocabulary.
-        var result = guard.Check("She had never left the realm before.");
+        var result = aiTellGuard.Check("She had never left the realm before.");
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiVocabulary), Is.False);
     }
 
@@ -484,7 +494,7 @@ public class ProsePatternGuardTests
             "\"When Adam delved and Eve span, who was then the gentleman?\" " +
             "though the fullest surviving text comes down through a chronicler's reconstruction.";
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiVocabulary), Is.False,
             "a word inside a direct quotation must never be judged as the author's own vocabulary tic");
@@ -497,7 +507,7 @@ public class ProsePatternGuardTests
         // OWN narration, outside any quotation, must still fire.
         var text = "The historian chose to delve into the parish records for this chapter.";
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiVocabulary), Is.True,
             "delve in the author's own narration (no quote marks involved) must still be flagged");
@@ -512,7 +522,7 @@ public class ProsePatternGuardTests
         var text = "The chronicler wrote \"a great and marvellous stir among the common people\" " +
             "of that summer, and later historians delve into exactly why it spread so fast.";
 
-        var result = guard.Check(text);
+        var result = aiTellGuard.Check(text);
 
         Assert.That(result.Any(v => v.Category == ProseViolationCategory.AiVocabulary), Is.True);
     }

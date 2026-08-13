@@ -79,7 +79,7 @@ public static class CloneNodeCli
         // ── Load enabled beats in SortKey order ───────────────────────────────
         var sourceBeats = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => sb.NodeId == source.Id && sb.IsEnabled)
+            .Where(sb => sb.NodeId == source.Id && true)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats.AsNoTracking(), sb => sb.BeatId, b => b.Id,
                   (sb, b) => new { sb.SortKey, Beat = b })
@@ -164,7 +164,6 @@ public static class CloneNodeCli
                 NodeId  = newId,
                 BeatId    = beatId,
                 SortKey   = entry.SortKey,
-                IsEnabled = true,
             });
         }
 

@@ -81,7 +81,7 @@ public abstract class BeatLensService
         var rows = await (
             from sb in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where leafIds.Contains(sb.NodeId) && sb.IsEnabled
+            where leafIds.Contains(sb.NodeId) && true
             select new { sb.NodeId, sb.SortKey, b.Text, b.Number }
         ).ToListAsync(ct);
         List<(int Num, string Text)> beats = rows
@@ -274,5 +274,72 @@ public sealed class InterpersonalDynamicsService : BeatLensService
         don't change across the exchange. REWARD: exchanges that shift power, deepen or fracture a
         bond, expose or conceal, forgive or wound — and leave the relationship changed going forward.
         Genuine human interaction (good, bad, or indifferent) is the secret sauce; render it.
+        """;
+}
+
+/// <summary>
+/// Scene-shape and structural craft lens — added 2026-08-13 (plan "Separating rigor from
+/// fluidity"). Absorbs the content <see cref="StoryScienceService.GetBeatGuidance"/> used to
+/// inject as a preemptive lecture on 100% of beats regardless of need (curiosity-gap
+/// engineering, status dynamics, specificity vs. abstraction, theory-of-mind, "character drives
+/// plot" doctrine, escalation/event-variety, and the King/Storr/StoryScope anti-pattern list).
+/// These are judgments that need the finished beat read in context to make — the same reason
+/// <see cref="CausalityService"/> audits causal-chain quality after the fact instead of
+/// lecturing about it in advance. Rubric text is a direct, condensed port of the removed
+/// StoryScienceService content (see that file's git history for the original per-mode/
+/// per-arc-stage phrasing this generalizes from).
+/// </summary>
+public sealed class CraftQualityService : BeatLensService
+{
+    public CraftQualityService(ILlmService llm, FindingsService findings,
+        IDbContextFactory<ProseDbContext> dbFactory, ILogger<CraftQualityService> log)
+        : base(llm, findings, dbFactory, log) { }
+
+    protected override string Tag => "CRAFT";
+    protected override FindingCategory Category => FindingCategory.Craft;
+    protected override string LensName => "Craft Quality";
+    protected override string LensTitle =>
+        "You judge SCENE-SHAPE CRAFT — curiosity, status, specificity, and structural variety across the whole node, read in order.";
+    protected override string Rubric => """
+        Judge these across the node's beats IN ORDER, since each depends on what came before:
+
+        CURIOSITY GAP (Storr): the dramatic question ("who is this person really?") should widen or
+        sharpen as the arc progresses, not resolve early and not stall. FLAG a beat that answers a
+        question the story hasn't earned the right to answer yet, or that sits on an open question
+        without advancing it for several beats running.
+
+        STATUS DYNAMICS: every scene with two or more people has a status hierarchy that should shift
+        by the scene's end — in dialogue, sentence by sentence. FLAG a multi-character scene where
+        nobody's status moves at all.
+
+        SPECIFICITY vs. ABSTRACTION (Storr's hallucination model): abstract adjectives ("terrible",
+        "delightful") name a feeling instead of creating it. FLAG beats relying on abstract summary
+        where three concrete physical/sensory details would do the work instead.
+
+        THEORY OF MIND: in scenes with 2+ characters, each person's model of the others should be
+        wrong some of the time — that wrongness drives interpersonal drama. FLAG dialogue where
+        everyone understands everyone perfectly; REWARD a gesture or aside that reveals a character
+        misread another.
+
+        CHARACTER DRIVES STORY, NOT PLOT (King): FLAG a beat where a character acts to serve where
+        the outline needs the story to go rather than from who they've been shown to be under this
+        specific pressure.
+
+        ESCALATION AND EVENT VARIETY (StoryScope, empirically the strongest AI-fiction structural
+        tell): each beat should register as larger, costlier, or more irreversible than the last —
+        FLAG a run of beats at flat, equal intensity. FLAG three beats in a row of the same event
+        type (three confrontations, three discoveries) — real event variety looks like confession →
+        chase → ceremony → negotiation → ambush → loss, not the same shape repeated.
+
+        ANTI-PATTERNS (King + Storr + StoryScope, flag if present): narratorial moral gloss (the
+        beat that ends by telling the reader what it "meant"); philosophy-seminar dialogue
+        (characters debating ideas instead of wanting different things from each other); a new
+        character introduced via physical inventory before doing or saying anything; front-loading a
+        revelation instead of holding it to the beat's end; a clean internal-resolution ending where
+        the external situation should stay open, worsen, or complicate; a reflexive epilogue
+        narrating what the story meant from outside its own timeline.
+
+        Report only real, high-value issues (max 12 total across all categories above), worst
+        first — this is a whole-node craft read, not a per-line style nitpick.
         """;
 }

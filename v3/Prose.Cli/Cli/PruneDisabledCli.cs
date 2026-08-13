@@ -1,160 +1,22 @@
-using Microsoft.EntityFrameworkCore;
-using Prose.Core.Data;
-using Prose.Core.Services;
-
 namespace Prose.Cli;
 
 /// <summary>
 /// <c>prose --prune-disabled --slug &lt;slug&gt; [--dry-run]</c>
 ///
-/// Hard-deletes every disabled (IsEnabled=false) beat from a book node and its
-/// chapter children (SS-A43). Use this when the book is publish-ready and you
-/// want to permanently remove placeholder beats that will never be used.
-///
-/// Safety:
-///   • Requires explicit --slug / --id (no wildcards).
-///   • Lists every beat that will be deleted and pauses for confirmation
-///     unless --yes is passed.
-///   • --dry-run previews without touching the DB.
-///   • Temporal history (FOR SYSTEM_TIME ALL) still has every deleted beat;
-///     recovery is possible but requires a DBA-level temporal query.
+/// Retired. There is no more disabled/soft-deleted beat state to prune — a
+/// BeatNode row exists or it doesn't (see ProseDbContext.SystemVersionedTables
+/// and the removal of BeatNode.IsEnabled). The write paths that used to leave
+/// disabled rows lying around (NodeWorkbenchService.DeleteBeatAsync,
+/// ReimportNodeCli) now delete for real, so this command would always find
+/// zero candidates. Kept as a stub so the flag doesn't silently do nothing
+/// without explanation if an old script still calls it.
 /// </summary>
 public static class PruneDisabledCli
 {
-    public static async Task<int> RunAsync(string[] args, IServiceProvider services)
+    public static Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? slugOrId = null;
-        bool dryRun = false, yes = false;
-
-        for (int i = 0; i < args.Length; i++)
-        {
-            switch (args[i])
-            {
-                case "--slug":
-                case "--id":   if (i + 1 < args.Length) slugOrId = args[++i]; break;
-                case "--dry-run": dryRun = true; break;
-                case "--yes":     yes    = true; break;
-            }
-        }
-
-        if (string.IsNullOrWhiteSpace(slugOrId))
-        {
-            Console.Error.WriteLine("[prune-disabled] --slug <slug|id> is required.");
-            Console.Error.WriteLine("  prose --prune-disabled --slug <slug> [--dry-run] [--yes]");
-            return 1;
-        }
-
-        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        await using var db = await dbFactory.CreateDbContextAsync();
-
-        // Resolve the book node.
-        var node = Guid.TryParse(slugOrId, out var gid)
-            ? await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == gid)
-            : await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slugOrId || s.NodeCode == slugOrId);
-
-        if (node == null)
-        {
-            Console.Error.WriteLine($"[prune-disabled] Node '{slugOrId}' not found.");
-            return 1;
-        }
-
-        // SS-A43: collect all node IDs (book + chapter descendants). Descend to LEAF nodes,
-        // not just direct children — a split-collection book (Book -> "Chapter N" container
-        // with 0 direct beats -> real chapters -> beats, e.g. BLST/ICFI/RTR/VIGL) has its real
-        // chapters two levels down. Direct-children-only used to silently miss every disabled
-        // beat living in those real chapters. Same bug class fixed in WorkflowMonitorService
-        // (2026-08-09) and BackfillCoverageCli (2026-08-10).
-        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
-        var childIds = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => leafIds.Contains(n.Id))
-            .Select(n => n.Id).ToListAsync();
-        var nodeIds = childIds.Count > 0
-            ? childIds
-            : new List<Guid> { node.Id };
-
-        // Find disabled BeatNodes.
-        var disabledLinks = await db.BeatNodes.AsNoTracking()
-            .Where(bn => nodeIds.Contains(bn.NodeId) && !bn.IsEnabled)
-            .OrderBy(bn => bn.SortKey)
-            .ToListAsync();
-
-        if (disabledLinks.Count == 0)
-        {
-            Console.WriteLine($"[prune-disabled] '{node.Title}' has no disabled beats. Nothing to do.");
-            return 0;
-        }
-
-        var beatIds = disabledLinks.Select(bn => bn.BeatId).ToList();
-        var beats = await db.Beats.AsNoTracking()
-            .Where(b => beatIds.Contains(b.Id))
-            .ToDictionaryAsync(b => b.Id);
-
-        Console.WriteLine($"[prune-disabled] Node: {node.Title} ({node.Slug})");
-        Console.WriteLine($"[prune-disabled] {disabledLinks.Count} disabled beat(s) to delete:");
-        Console.WriteLine();
-
-        foreach (var link in disabledLinks)
-        {
-            beats.TryGetValue(link.BeatId, out var beat);
-            var label = beat?.Title ?? beat?.Description ?? "(no title)";
-            var prose = beat?.Text;
-            var proseSnippet = string.IsNullOrWhiteSpace(prose)
-                ? "[no prose]"
-                : prose.Length > 80 ? prose[..80].Replace('\n', ' ') + "…" : prose.Replace('\n', ' ');
-            Console.WriteLine($"  beat {link.BeatId} | sk={link.SortKey:F0} | {label}");
-            Console.WriteLine($"    {proseSnippet}");
-        }
-
-        Console.WriteLine();
-
-        if (dryRun)
-        {
-            Console.WriteLine("[prune-disabled] --dry-run: no changes made.");
-            return 0;
-        }
-
-        if (!yes)
-        {
-            Console.Write($"[prune-disabled] Permanently delete {disabledLinks.Count} beat(s)? [y/N] ");
-            var answer = Console.ReadLine()?.Trim().ToLowerInvariant();
-            if (answer != "y" && answer != "yes")
-            {
-                Console.WriteLine("[prune-disabled] Aborted.");
-                return 0;
-            }
-        }
-
-        // Hard-delete: remove BeatNodes first, then orphaned Beats.
-        var linkBeatIds = disabledLinks.Select(l => l.BeatId).ToHashSet();
-
-        // Re-open a write context (the read context above used AsNoTracking).
-        await using var wdb = await dbFactory.CreateDbContextAsync();
-
-        var linksToDelete = await wdb.BeatNodes
-            .Where(bn => nodeIds.Contains(bn.NodeId) && !bn.IsEnabled)
-            .ToListAsync();
-        wdb.BeatNodes.RemoveRange(linksToDelete);
-        await wdb.SaveChangesAsync();
-
-        // Only delete Beat rows that are no longer referenced by ANY BeatNode.
-        var stillReferenced = await wdb.BeatNodes.AsNoTracking()
-            .Where(bn => linkBeatIds.Contains(bn.BeatId))
-            .Select(bn => bn.BeatId)
-            .ToListAsync();
-        var orphanBeatIds = linkBeatIds.Except(stillReferenced).ToList();
-        if (orphanBeatIds.Count > 0)
-        {
-            // Clean up associated LibertyReport rows before the Beat rows (no DB-level cascade).
-            var libertyOrphans = await wdb.LibertyReports.Where(r => orphanBeatIds.Contains(r.BeatId)).ToListAsync();
-            if (libertyOrphans.Count > 0) { wdb.LibertyReports.RemoveRange(libertyOrphans); await wdb.SaveChangesAsync(); }
-
-            var orphans = await wdb.Beats.Where(b => orphanBeatIds.Contains(b.Id)).ToListAsync();
-            wdb.Beats.RemoveRange(orphans);
-            await wdb.SaveChangesAsync();
-        }
-
-        Console.WriteLine($"[prune-disabled] Deleted {linksToDelete.Count} BeatNode(s) and {orphanBeatIds.Count} Beat row(s).");
-        Console.WriteLine($"[prune-disabled] Temporal history retains all deleted beats for forensic recovery.");
-        return 0;
+        Console.WriteLine("[prune-disabled] Retired — there is no disabled-beat state anymore.");
+        Console.WriteLine("[prune-disabled] Beats are deleted for real when removed; nothing to prune.");
+        return Task.FromResult(0);
     }
 }

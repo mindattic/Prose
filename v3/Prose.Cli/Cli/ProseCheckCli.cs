@@ -62,7 +62,7 @@ public static class ProseCheckCli
             var beats = await (
                 from sb in db.BeatNodes
                 join b in db.Beats on sb.BeatId equals b.Id
-                where searchIds.Contains(sb.NodeId) && sb.IsEnabled
+                where searchIds.Contains(sb.NodeId) && true
                 orderby sb.SortKey
                 select new { b.Id, b.Number, b.Text }
             ).ToListAsync();

@@ -78,9 +78,21 @@ public class NarrativeSummaryService
             """;
 
         var summary = await llm.GenerateAsync(system, sceneText, 0.3, 256, model: LlmModels.Haiku, ct: ct);
-        var trimmed = summary.Trim();
+        await PersistSummaryAsync(summary.Trim(), nodeId, beatId, ct);
+    }
 
-        summaryChain.Add(trimmed);
+    /// <summary>
+    /// Persist an already-produced scene summary (no LLM call here) — split out of
+    /// <see cref="SummarizeSceneAsync"/> so <see cref="BeatExtractionService"/> can reuse it
+    /// after a single consolidated extraction call instead of this class firing its own LLM
+    /// call too. <see cref="SummarizeSceneAsync"/> itself is unchanged and still used standalone
+    /// by <c>SceneGenerationService</c>.
+    /// </summary>
+    public async Task PersistSummaryAsync(string trimmedSummary, Guid nodeId, Guid? beatId, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(trimmedSummary)) return;
+
+        summaryChain.Add(trimmedSummary);
 
         // Persist so the chain survives restarts (no-op when dbFactory is null, e.g. in unit tests)
         if (nodeId != Guid.Empty && dbFactory != null)
@@ -100,7 +112,7 @@ public class NarrativeSummaryService
                     NodeId     = nodeId,
                     BeatId     = beatId,
                     SortKey    = sortKey,
-                    Summary    = trimmed.Length > 2000 ? trimmed[..2000] : trimmed,
+                    Summary    = trimmedSummary.Length > 2000 ? trimmedSummary[..2000] : trimmedSummary,
                     RecordedAt = DateTime.UtcNow,
                 });
                 await db.SaveChangesAsync(ct);

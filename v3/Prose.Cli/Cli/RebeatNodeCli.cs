@@ -126,7 +126,7 @@ public static class RebeatNodeCli
     {
         var nodes = await db.Nodes.AsNoTracking().Select(s => new { s.Id, s.Title }).ToListAsync();
         var allBeats = await db.BeatNodes.AsNoTracking()
-            .Where(sb => sb.IsEnabled)
+            .Where(sb => true)
             .Join(db.Beats.AsNoTracking(), sb => sb.BeatId, b => b.Id,
                   (sb, b) => new { sb.NodeId, b.Text, b.TextHash })
             .ToListAsync();

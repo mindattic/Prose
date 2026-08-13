@@ -32,7 +32,6 @@ public class EntityMentionService(IDbContextFactory<ProseDbContext> dbFactory)
                 x => x.m.BeatId,
                 b => b.Id,
                 (x, b) => new { x.Node, x.sb, Beat = b })
-            .Where(x => x.sb.IsEnabled)
             .OrderBy(x => x.Node.Title)
             .ThenBy(x => x.sb.SortKey)
             .Select(x => new

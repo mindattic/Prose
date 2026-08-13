@@ -56,7 +56,7 @@ public class MeaningBackfillService
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
-            where bn.IsEnabled && searchIds.Contains(bn.NodeId)
+            where true && searchIds.Contains(bn.NodeId)
                   && (overwrite || b.Description == null || b.Description == "")
                   && b.Text != null && b.Text != ""
             orderby c.SortKey, bn.SortKey

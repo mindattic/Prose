@@ -236,7 +236,7 @@ public class MojibakeRepairService
             var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId.Value, ct);
 
             var beatIds = await db.BeatNodes
-                .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
+                .Where(sb => searchIds.Contains(sb.NodeId) && true)
                 .Select(sb => sb.BeatId)
                 .ToListAsync(ct);
             beats = await db.Beats.AsNoTracking().Where(b => beatIds.Contains(b.Id)).ToListAsync(ct);

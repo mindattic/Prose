@@ -127,7 +127,7 @@ public class BeatCoordinationService
             var leafRows = await (
                 from bn in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
-                where bn.NodeId == leafId && bn.IsEnabled
+                where bn.NodeId == leafId && true
                 orderby bn.SortKey
                 select new
                 {

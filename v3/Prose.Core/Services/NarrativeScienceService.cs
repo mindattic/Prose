@@ -16,11 +16,18 @@ namespace Prose.Core.Services;
 //                                   secret dread, hero-maker narrative
 //   • CheckDramaticQuestionAsync  — scores whether a beat poses/answers "who is
 //                                   this person really?" at surface + subconscious
-//   • AuditSceneEngagementAsync   — 6-point scene anatomy against the neural
-//                                   engagement triggers (change, info-gap, cause-
-//                                   effect, tribal emotion, specificity, show/tell)
 //   • MapFiveActStructureAsync    — maps a node's beats to Storr's 5-act arc
 //   • CheckAntiheroEmpathyAsync   — scores the 4 antihero empathy levers
+//
+// AuditSceneEngagementAsync (6-point scene anatomy) was removed 2026-08-13 — its
+// mechanisms (unexpected change, cause-effect, specificity, show-not-tell)
+// substantially overlapped LogicSweepService's causality dimension, DELIGHT
+// moves, and StoryScopeAuditService, none of which BookHealthService's own
+// wiring ever ran it alongside (see the "Skipped" note that used to sit on
+// DramaticQuestionAsync in BookHealthService.cs). It had no automated caller
+// anywhere in the pipeline — only a manual CLI/MCP surface — so cutting it
+// removes a real per-beat cost sink (1 LLM call/beat if ever run in bulk) with
+// no loss of signal actually relied on. See docs/rfc/0009-cost-tiered-storytelling-engine.md.
 // ─────────────────────────────────────────────────────────────────────────────
 
 public class NarrativeScienceService(
@@ -146,56 +153,6 @@ public class NarrativeScienceService(
             ?? throw new InvalidOperationException($"Could not parse dramatic-question response: {raw[..Math.Min(200, raw.Length)]}");
     }
 
-    // ── Scene Engagement Audit (6-point) ──────────────────────────────────────
-
-    public async Task<SceneEngagementReport> AuditSceneEngagementAsync(
-        string beatText, CancellationToken ct = default)
-    {
-        var system = """
-            You are a narrative-science analyst trained on Will Storr's 6-point scene anatomy.
-            Audit the provided beat against each of the six neural engagement mechanisms.
-
-            THE SIX MECHANISMS:
-            1. UNEXPECTED CHANGE — something the character didn't plan happens in this beat.
-            2. INFORMATION GAP — a question the reader will want answered is opened (or closed).
-            3. CAUSE-EFFECT CHAIN — this beat is visibly caused by what came before; it causes what follows.
-            4. TRIBAL EMOTION — moral outrage, status play (underdog/humiliation), gossip, or altruistic punishment.
-            5. SPECIFICITY (≥3 concrete details) — at least three precise, non-generic sensory or physical details.
-            6. SHOW-NOT-TELL (≥60%) — action / dialogue / sensation dominates over summary / exposition.
-
-            A beat PASSES overall if 4 of 6 mechanisms are present.
-
-            OUTPUT FORMAT: JSON only, no prose wrapper.
-            {
-              "mechanisms": {
-                "unexpected_change":  { "present": true|false, "evidence": "..." },
-                "information_gap":    { "present": true|false, "evidence": "..." },
-                "cause_effect":       { "present": true|false, "evidence": "..." },
-                "tribal_emotion":     { "present": true|false, "kind": "moral_outrage|status_play|humiliation|gossip|altruistic_punishment|none", "evidence": "..." },
-                "specificity":        { "present": true|false, "detail_count": 0, "examples": ["..."] },
-                "show_not_tell":      { "present": true|false, "estimated_pct": 0 }
-              },
-              "mechanisms_passing": 0,
-              "beat_passes": true|false,
-              "top_weakness": "the single most damaging gap",
-              "fix": "one concrete rewrite suggestion"
-            }
-            """;
-
-        var user = $"""
-            BEAT TEXT:
-            {beatText}
-            """;
-
-        var raw = await llm.GenerateAsync(system, user, temperature: 0.3, maxTokens: 900, ct: ct);
-        return ParseJson<SceneEngagementReport>(raw) ?? new SceneEngagementReport
-        {
-            BeatPasses = false,
-            TopWeakness = "(parse error)",
-            RawResponse = raw,
-        };
-    }
-
     // ── Five-Act Structure Map ────────────────────────────────────────────────
 
     public async Task<FiveActMap> MapFiveActStructureAsync(
@@ -213,7 +170,7 @@ public class NarrativeScienceService(
         var beats = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
-            where searchIds.Contains(sb.NodeId) && sb.IsEnabled
+            where searchIds.Contains(sb.NodeId) && true
             orderby sb.SortKey
             select new { b.Number, Title = b.Title ?? "", Description = b.Description ?? "", b.Text }
         ).ToListAsync(ct);
@@ -397,26 +354,6 @@ public class DramaticQuestionResult
     [JsonPropertyName("dramatic_question_active")]public bool  DramaticQuestionActive{ get; set; }
     [JsonPropertyName("improvement_hint")]       public string ImprovementHint      { get; set; } = "";
     [JsonIgnore]                                 public string? RawResponse         { get; set; }
-}
-
-public class SceneEngagementMechanism
-{
-    [JsonPropertyName("present")]   public bool   Present   { get; set; }
-    [JsonPropertyName("evidence")]  public string Evidence  { get; set; } = "";
-    [JsonPropertyName("kind")]      public string? Kind     { get; set; }
-    [JsonPropertyName("detail_count")] public int DetailCount { get; set; }
-    [JsonPropertyName("examples")]  public List<string> Examples { get; set; } = new();
-    [JsonPropertyName("estimated_pct")] public int EstimatedPct { get; set; }
-}
-
-public class SceneEngagementReport
-{
-    [JsonPropertyName("mechanisms")]          public Dictionary<string, SceneEngagementMechanism> Mechanisms { get; set; } = new();
-    [JsonPropertyName("mechanisms_passing")]  public int    MechanismsPassing { get; set; }
-    [JsonPropertyName("beat_passes")]         public bool   BeatPasses        { get; set; }
-    [JsonPropertyName("top_weakness")]        public string TopWeakness       { get; set; } = "";
-    [JsonPropertyName("fix")]                 public string Fix               { get; set; } = "";
-    [JsonIgnore]                              public string? RawResponse      { get; set; }
 }
 
 public class FiveActEntry

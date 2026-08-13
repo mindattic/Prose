@@ -192,7 +192,7 @@ public class GlossaryService(
             .ToListAsync(ct);
 
         return string.Join("\n\n", beatNodes
-            .Where(bn => bn.IsEnabled)
+            .Where(bn => true)
             .Select(bn => bn.Beat!.Text)
             .Where(t => !string.IsNullOrWhiteSpace(t)));
     }

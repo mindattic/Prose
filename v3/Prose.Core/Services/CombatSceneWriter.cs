@@ -514,9 +514,7 @@ public class CombatSceneWriter
     {
         var common =
             "ACTION PROSE RULES — non-negotiable:\n" +
-            CombatProseConstants.ActionRules + "\n" +
-            "DISSOCIATED OBSERVER — use sparingly, maximum two per scene:\n" +
-            CombatProseConstants.DissociatedObserverBody;
+            CombatProseConstants.ActionRules;
 
         var toneBlock = tone switch
         {

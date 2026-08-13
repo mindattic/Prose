@@ -90,7 +90,7 @@ public class AskService
 
             var beats = await (from sb in db.BeatNodes.AsNoTracking()
                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                               where askSearchIds.Contains(sb.NodeId) && sb.IsEnabled
+                               where askSearchIds.Contains(sb.NodeId) && true
                                orderby sb.SortKey
                                select new { b.Id, b.Text, b.Title }).ToListAsync(ct);
 
@@ -123,7 +123,7 @@ public class AskService
                     .ToDictionaryAsync(b => b.Id, ct);
                 var member = await (from sb in db.BeatNodes.AsNoTracking()
                                     join s in db.Nodes.AsNoTracking() on sb.NodeId equals s.Id
-                                    where pids.Contains(sb.BeatId) && sb.IsEnabled
+                                    where pids.Contains(sb.BeatId) && true
                                     select new { sb.BeatId, s.Slug, s.Title }).ToListAsync(ct);
                 var memberMap = member.GroupBy(m => m.BeatId).ToDictionary(g => g.Key, g => g.First());
 

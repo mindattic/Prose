@@ -21,10 +21,6 @@ namespace Prose.Cli;
 ///     --id &lt;beatId&gt;           Evaluate a single beat.
 ///     --character &lt;slug|id&gt;   Optional: provide character context.
 ///
-///   scene-anatomy      6-point scene engagement audit.
-///     --slug &lt;nodeSlug&gt;     Audit every beat in the node.
-///     --id &lt;beatId&gt;           Audit a single beat.
-///
 ///   five-act           Map a node's beats to Storr's 5-act arc.
 ///     --slug &lt;nodeSlug&gt;     Required.
 ///
@@ -33,16 +29,21 @@ namespace Prose.Cli;
 ///   --effort draft|standard|deep
 ///                      Cost tier (default: deep).
 ///                        draft    — skip analysis entirely (zero LLM calls).
-///                        standard — run only dramatic-question + scene-anatomy (cheapest, most actionable).
-///                        deep     — run all five analyzers (current default behavior).
+///                        standard — run only dramatic-question (cheapest, most actionable).
+///                        deep     — run all subcommands (current default behavior).
+///
+/// scene-anatomy (6-point scene engagement audit) was removed 2026-08-13 — its
+/// mechanisms overlapped LogicSweepService/DELIGHT/StoryScopeAuditService, and it
+/// had no automated caller anywhere in the pipeline, only this bulk CLI surface
+/// (1 LLM call per beat, uncapped). See NarrativeScienceService.cs's header comment.
 ///   --no-persist       Do not save results as Findings in the database.
 /// </summary>
 public static class NarrativeScienceCli
 {
     // ── Effort tiers (mirrors ReviewEffortProfile spirit) ─────────────────────
     // draft    → skip entirely
-    // standard → dramatic-question + scene-anatomy only
-    // deep     → all five analyzers (default)
+    // standard → dramatic-question only
+    // deep     → all subcommands (default)
 
     private static string ResolveEffort(string[] args)
     {
@@ -89,7 +90,6 @@ public static class NarrativeScienceCli
                                     ? SkipForStandard("sacred-flaw")
                                     : await RunSacredFlawAsync(args, services),
             "dramatic-question" => await RunDramaticQuestionAsync(args, services, effort),
-            "scene-anatomy"     => await RunSceneAnatomyAsync(args, services, effort),
             "five-act"          => effort == "standard"
                                     ? SkipForStandard("five-act")
                                     : await RunFiveActAsync(args, services),
@@ -99,7 +99,7 @@ public static class NarrativeScienceCli
 
     private static int SkipForStandard(string name)
     {
-        Console.WriteLine($"[narrative-science] {name} skipped at standard tier (only dramatic-question + scene-anatomy run at standard).");
+        Console.WriteLine($"[narrative-science] {name} skipped at standard tier (only dramatic-question runs at standard).");
         return 0;
     }
 
@@ -226,7 +226,7 @@ public static class NarrativeScienceCli
             var beats = await (
                 from sb in db.BeatNodes
                 join b in db.Beats on sb.BeatId equals b.Id
-                where sb.NodeId == node.Id && sb.IsEnabled
+                where sb.NodeId == node.Id && true
                 orderby sb.SortKey
                 select new { b.Id, b.Number, b.Text }
             ).ToListAsync();
@@ -298,131 +298,6 @@ public static class NarrativeScienceCli
         Console.WriteLine($"  Subconscious:  {r.SubconsciousSummary}");
         if (!r.DramaticQuestionActive)
             Console.WriteLine($"  Hint: {r.ImprovementHint}");
-    }
-
-    // ── scene-anatomy ─────────────────────────────────────────────────────────
-
-    static async Task<int> RunSceneAnatomyAsync(string[] args, IServiceProvider services, string effort = "deep")
-    {
-        string? nodeSlug = null;
-        Guid? beatId = null;
-        bool json = args.Contains("--json");
-        bool persist = ShouldPersist(args);
-
-        for (int i = 0; i < args.Length - 1; i++)
-        {
-            switch (args[i])
-            {
-                case "--slug": nodeSlug = args[i + 1]; i++; break;
-                case "--id":   if (Guid.TryParse(args[i + 1], out var g)) { beatId = g; i++; } break;
-            }
-        }
-
-        if (nodeSlug == null && beatId == null)
-            return PrintUsage("--slug <nodeSlug> or --id <beatId> required for scene-anatomy");
-
-        var svc = services.GetRequiredService<NarrativeScienceService>();
-        var findingsSvc = services.GetRequiredService<FindingsService>();
-        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        await using var db = await dbFactory.CreateDbContextAsync();
-
-        if (beatId.HasValue)
-        {
-            var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId.Value);
-            if (beat == null) { Console.Error.WriteLine($"Beat {beatId} not found."); return 1; }
-            var r = await svc.AuditSceneEngagementAsync(beat.Text ?? "");
-            PrintSceneAuditResult($"Beat #{beat.Number}", r, json);
-            if (persist)
-            {
-                PurgeNarrativeScienceFindings(findingsSvc, [beat.Id], "NARRATIVE-SCIENCE [scene-engagement]:");
-                PersistSceneEngagement(findingsSvc, beat.Id, beat.Number, r);
-            }
-            return r.BeatPasses ? 0 : 1;
-        }
-        else
-        {
-            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
-            if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
-
-            var beats = await (
-                from sb in db.BeatNodes
-                join b in db.Beats on sb.BeatId equals b.Id
-                where sb.NodeId == node.Id && sb.IsEnabled
-                orderby sb.SortKey
-                select new { b.Id, b.Number, b.Text }
-            ).ToListAsync();
-
-            if (beats.Count == 0) { Console.Error.WriteLine("No beats found."); return 1; }
-            Console.WriteLine($"Scene anatomy of {beats.Count} beats in '{nodeSlug}'…");
-
-            // Delete stale NARRATIVE-SCIENCE findings for this node before writing fresh ones.
-            if (persist)
-                PurgeNarrativeScienceFindings(findingsSvc, beats.Select(b => b.Id).ToList(), "NARRATIVE-SCIENCE [scene-engagement]:");
-
-            // Parallel execution: analyzers are independent (no shared mutable state).
-            var sem = new SemaphoreSlim(ParallelCap);
-            var bag = new ConcurrentBag<(int Number, Guid Id, SceneEngagementReport Result)>();
-
-            await Task.WhenAll(beats.Select(beat => Task.Run(async () =>
-            {
-                await sem.WaitAsync();
-                try
-                {
-                    var r = await svc.AuditSceneEngagementAsync(beat.Text ?? "");
-                    bag.Add((beat.Number, beat.Id, r));
-                }
-                finally { sem.Release(); }
-            })));
-
-            // Sort results by beat number to preserve display ordering.
-            var ordered = bag.OrderBy(x => x.Number).ToList();
-            int passing = 0;
-            foreach (var (num, id, r) in ordered)
-            {
-                PrintSceneAuditResult($"Beat #{num}", r, json);
-                if (r.BeatPasses) passing++;
-                if (persist) PersistSceneEngagement(findingsSvc, id, num, r);
-            }
-
-            if (!json) Console.WriteLine($"\n{passing}/{beats.Count} beats pass (≥4/6 mechanisms).");
-            return 0;
-        }
-    }
-
-    static void PersistSceneEngagement(FindingsService findingsSvc, Guid beatId, int beatNumber, SceneEngagementReport r)
-    {
-        const string prefix = "NARRATIVE-SCIENCE [scene-engagement]:";
-        var summary = $"{prefix} Beat #{beatNumber} — {r.MechanismsPassing}/6 mechanisms{(r.BeatPasses ? "" : $". Weakness: {r.TopWeakness}")}";
-        findingsSvc.Upsert(
-            filePath: $"beat:{beatId:N}",
-            chapterId: null,
-            category: FindingCategory.Other,
-            severity: r.BeatPasses ? FindingSeverity.Low : FindingSeverity.Medium,
-            summary: summary,
-            snippet: null,
-            suggestedFix: r.BeatPasses ? null : r.Fix);
-    }
-
-    static void PrintSceneAuditResult(string label, SceneEngagementReport r, bool json)
-    {
-        if (json)
-        {
-            Console.WriteLine(JsonSerializer.Serialize(new { beat = label, result = r },
-                new JsonSerializerOptions { WriteIndented = true }));
-            return;
-        }
-        var flag = r.BeatPasses ? "✔" : "✗";
-        Console.WriteLine($"\n{flag} {label} — {r.MechanismsPassing}/6 mechanisms");
-        foreach (var (k, m) in r.Mechanisms)
-        {
-            var present = m.Present ? "✔" : "✗";
-            Console.WriteLine($"  {present} {k,-22} {(m.Present ? m.Evidence : "(missing)")}");
-        }
-        if (!r.BeatPasses)
-        {
-            Console.WriteLine($"  Weakness: {r.TopWeakness}");
-            Console.WriteLine($"  Fix:      {r.Fix}");
-        }
     }
 
     // ── five-act ──────────────────────────────────────────────────────────────
@@ -569,10 +444,6 @@ public static class NarrativeScienceCli
                 --id <beatId>           Evaluate a single beat.
                 --character <slug|id>   Optional. Provide character context.
 
-              scene-anatomy      6-point scene engagement audit.
-                --slug <nodeSlug>     Audit all beats in the node (parallel, up to 8 at once).
-                --id <beatId>           Audit a single beat.
-
               five-act           Map a node's beats to Storr's 5-act arc.
                 --slug <nodeSlug>     Required.
 
@@ -581,8 +452,8 @@ public static class NarrativeScienceCli
               --effort draft|standard|deep
                                  Cost tier (default: deep).
                                    draft    — skip all analysis (zero LLM calls, exit 0).
-                                   standard — dramatic-question + scene-anatomy only.
-                                   deep     — all five analyzers (default).
+                                   standard — dramatic-question only.
+                                   deep     — all subcommands (default).
               --no-persist       Do not save results as Findings in the database.
                                  By default, results are written with prefix NARRATIVE-SCIENCE [analyzer]:
                                  and can be read by the prose generator to guide writing.

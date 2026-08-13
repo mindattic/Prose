@@ -229,7 +229,7 @@ public sealed class SwainAuditService(
         var chapterOrder = scopeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
         var rows = await db.BeatNodes
             .Include(nb => nb.Beat)
-            .Where(nb => scopeIds.Contains(nb.NodeId) && nb.IsEnabled && nb.Beat!.Text != null && nb.Beat.Text != "")
+            .Where(nb => scopeIds.Contains(nb.NodeId) && true && nb.Beat!.Text != null && nb.Beat.Text != "")
             .ToListAsync(ct);
         var beats = rows
             .OrderBy(nb => chapterOrder[nb.NodeId]).ThenBy(nb => nb.SortKey)

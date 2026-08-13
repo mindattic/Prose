@@ -235,7 +235,7 @@ public static class TimelineCli
         ProseDbContext db, Guid nodeId, string? episodeTitle)
     {
         var raw = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && sb.IsEnabled)
+            .Where(sb => sb.NodeId == nodeId && true)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
                 (sb, b) => new { sb.SortKey, b.Title, b.Text })

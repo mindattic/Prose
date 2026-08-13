@@ -40,7 +40,7 @@ public class NodeOutlineService(ILlmService llm, IDbContextFactory<ProseDbContex
                 .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
                 .FirstOrDefaultAsync(s => s.Id == nodeId, ct);
             indexedBeats = nodeWithBeats?.BeatNodes
-                .Where(sb => sb.IsEnabled)
+                .Where(sb => true)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!)
                 .Where(b => !string.IsNullOrWhiteSpace(b.Text))
@@ -49,7 +49,7 @@ public class NodeOutlineService(ILlmService llm, IDbContextFactory<ProseDbContex
         else
         {
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(sb => leafIds.Contains(sb.NodeId) && sb.IsEnabled)
+                .Where(sb => leafIds.Contains(sb.NodeId) && true)
                 .Include(sb => sb.Beat)
                 .ToListAsync(ct);
             indexedBeats = rows

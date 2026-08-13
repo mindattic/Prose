@@ -117,7 +117,7 @@ public class DistributedWorkerCoordinator
             // Recurses past any nested Collection (2026-08-09 fix).
             var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
             var beatTexts = await db.BeatNodes
-                .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
+                .Where(sb => searchIds.Contains(sb.NodeId) && true)
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!.Text ?? "")
                 .ToListAsync(ct);
@@ -166,7 +166,7 @@ public class DistributedWorkerCoordinator
 
         // Query via the BeatNode junction — beats are m:m with nodes.
         var query = db.BeatNodes
-            .Where(sb => sb.IsEnabled
+            .Where(sb => true
                       && (sb.Beat!.Text == null || sb.Beat.Text == ""));
 
         if (nodeIds?.Count > 0)

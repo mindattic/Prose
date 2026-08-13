@@ -44,7 +44,7 @@ public static class BehaviorCheckCli
         var beats = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
-            where sb.NodeId == node.Id && sb.IsEnabled
+            where sb.NodeId == node.Id && true
             orderby sb.SortKey
             select new { b.Id, b.Number, b.Text }
         ).ToListAsync();

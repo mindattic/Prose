@@ -24,7 +24,7 @@ namespace Prose.Cli;
 ///   clear   --node &lt;slug|id&gt;
 ///           Soft-delete every currently-enabled beat in a node, in one process —
 ///           for a full replot where the whole existing beat set is being discarded.
-///           Same soft-delete as `delete` (BeatNode.IsEnabled = false); reversible via
+///           Same soft-delete as `delete` (true = false); reversible via
 ///           the writer UI's restore, never a raw SQL delete.
 ///   seed-spine --node &lt;slug|id&gt;
 ///           Create planned (empty-text) beats from the book node's *already-saved*
@@ -110,7 +110,7 @@ public static class BeatCli
         {
             var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
             await using var db = await dbFactory.CreateDbContextAsync();
-            pairs = await db.BeatNodes.Where(bn => bn.NodeId == nodeId.Value && bn.IsEnabled)
+            pairs = await db.BeatNodes.Where(bn => bn.NodeId == nodeId.Value && true)
                 .Select(bn => new ValueTuple<Guid, Guid>(bn.NodeId, bn.BeatId)).ToListAsync();
         }
         else

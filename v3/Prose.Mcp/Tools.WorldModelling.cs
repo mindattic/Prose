@@ -345,7 +345,7 @@ public class WorldModellingTools(
         // Recurses past any nested Collection (2026-08-09 fix).
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId);
         var beats = await db.BeatNodes.AsNoTracking()
-            .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
+            .Where(sb => searchIds.Contains(sb.NodeId) && true)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, sb.SortKey, b.Text })
             .OrderBy(b => b.SortKey)
             .ToListAsync();

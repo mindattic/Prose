@@ -316,7 +316,7 @@ public class ContextTools
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId.Value);
 
         var beatIds = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled)
+            .Where(bn => searchIds.Contains(bn.NodeId) && true)
             .OrderBy(bn => bn.SortKey)
             .Select(bn => bn.BeatId)
             .ToListAsync();

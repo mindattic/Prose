@@ -2,23 +2,22 @@
   "nodeCode": "RTR",
   "slug": "read-the-room-019f4990",
   "title": "Read the Room",
-  "generatedAtUtc": "2026-08-10 16:24:31Z",
+  "generatedAtUtc": "2026-08-12 17:54:14Z",
   "totalBeats": 267,
-  "covered": 19,
+  "covered": 256,
   "chapterGranular": true,
   "bookScope": {
-    "TemporalScheme": "nonlinear",
+    "TemporalScheme": "linear",
     "ResolutionMode": "mixed",
     "MoralPolarity": "ambivalent",
     "EndingStyle": "quiet",
     "HasSubplot": true,
     "Granularity": "chapter",
     "HasBlueprint": true,
-    "ConstructionCapacity": 1
+    "ConstructionCapacity": 11
   },
   "flagCounts": {
-    "MISSING_MEANING": 11,
-    "NO_CONSTRUCTION": 247
+    "MISSING_MEANING": 11
   },
   "beats": [
     {
@@ -27,15 +26,10 @@
       "Chapter": "The Green Room",
       "ChapterIndex": 0,
       "Act": 0,
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [
-        "intertextual-touchpoint",
-        "intertextual-touchpoint",
-        "intertextual-touchpoint",
-        "anachrony-cut",
-        "intertextual-touchpoint",
         "subplot"
       ],
       "ProseLength": 436,
@@ -51,9 +45,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Reveals the physical and emotional toll of performing, humanizing Ethan through the vulnerable comedown rather than the triumphant show itself.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 327,
       "Flags": [],
@@ -66,9 +60,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the setting\u0027s unique relief from technology, hinting at a pervasive augmented-reality norm Ethan is glad to escape.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 210,
       "Flags": [],
@@ -81,9 +75,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Characterizes Ethan\u0027s weary self-awareness and hints at deeper exhaustion tied to age and endurance, not just tonight\u0027s set.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 190,
       "Flags": [],
@@ -96,9 +90,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Introduces Rill\u0027s silent, methodical nature and subtly plants his bodily augmentation as a normalized but noteworthy detail.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 498,
       "Flags": [],
@@ -111,9 +105,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the easy shorthand and trust between bandmates through minimal, well-worn communication.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 92,
       "Flags": [],
@@ -126,9 +120,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Introduces Mona with kinetic energy, establishing her as the group\u0027s practical, ever-moving organizer.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 298,
       "Flags": [],
@@ -141,9 +135,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Grounds the band\u0027s precarious, low-budget reality while showing Mona\u0027s protective competence over the night\u0027s business.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 284,
       "Flags": [],
@@ -156,9 +150,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Establishes the mechanics of their earnings and introduces Mona\u0027s bodily augmentation as another normalized technological detail.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 426,
       "Flags": [],
@@ -171,9 +165,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Plants tension and foreshadowing by revealing Ethan\u0027s fixation on the light as more than casual habit, hinting at hidden significance.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 151,
       "Flags": [],
@@ -186,9 +180,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "A brief caught glance establishes an unspoken current between the two characters, seeding tension before anything is explained.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 35,
       "Flags": [],
@@ -201,9 +195,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Backstory reveals a buried history between Ethan and Mona, establishing the band as the thing both protect at personal cost.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 429,
       "Flags": [],
@@ -216,9 +210,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Mona\u0027s clipped exchange with Ethan establishes her role as steady counterweight to his post-show adrenaline.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 166,
       "Flags": [],
@@ -231,9 +225,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Ethan\u0027s ritual with the cold water grounds his comedown physically, underscoring his need to feel real after performing.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 292,
       "Flags": [],
@@ -246,9 +240,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "The neuretic handshake establishes the story\u0027s tech-mediated economy and Mona\u0027s quiet control over the band\u0027s money.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 219,
       "Flags": [],
@@ -261,9 +255,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Rill\u0027s arrival completes the trio, setting up the quiet backstage tableau that the chapter is building toward.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 286,
       "Flags": [],
@@ -276,9 +270,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Ethan\u0027s reflection reveals that intimacy with his bandmates, not performance, is his true reward, reframing his motivations.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 336,
       "Flags": [],
@@ -291,9 +285,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Ethan\u0027s resolve to stall the night establishes his central small goal for the scene, driving the beat\u0027s forward motion.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 416,
       "Flags": [],
@@ -306,9 +300,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Mona\u0027s mothering nudge about food deepens her caretaking dynamic with Ethan while advancing the wait for Dayo.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 350,
       "Flags": [],
@@ -321,9 +315,9 @@
       "ChapterIndex": 0,
       "Act": 0,
       "Meaning": "Ethan\u0027s quiet admission of shaking undercuts his earlier denial, closing the beat on a note of vulnerable honesty.",
-      "EscalationTarget": "7",
+      "EscalationTarget": "2",
       "EventType": "arrival",
-      "RevelationMode": "curiosity",
+      "RevelationMode": "none",
       "BeatTags": [],
       "ProseLength": 96,
       "Flags": [],
@@ -335,11 +329,15 @@
       "Chapter": "Dayo\u0027s Crew",
       "ChapterIndex": 1,
       "Act": 0,
-      "BeatTags": [],
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 417,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -350,12 +348,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Characterizes Dayo through economy of speech, establishing that his reputation and goods speak louder than his words.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 113,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7919-bda2-1590f31e8e43",
@@ -364,12 +363,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Builds Dayo\u0027s physical presence and quiet authority, marking him as a man whose confidence needs no display.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 429,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-77e0-b19e-fd57a3bcfb80",
@@ -378,12 +378,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes the easy, trust-worn rapport between Dayo and Mona to signal his long-standing, legitimate place in the band\u0027s world.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 268,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7924-b1f7-737203642a10",
@@ -392,12 +393,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Signals a shift in the room\u0027s dynamic to draw attention toward the new arrivals.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 50,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7324-a2cf-35e352837ca0",
@@ -406,12 +408,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Introduces Nkechi as a burst of unfiltered energy, setting her up as comic contrast to the room\u0027s quieter tensions.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 161,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7e41-acc0-5767fa640950",
@@ -420,12 +423,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Deepens Nkechi\u0027s characterization as effortlessly social and self-assured, establishing her easy claim on space and attention.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 470,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7875-82d9-e9bf87eb78af",
@@ -434,12 +438,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Reveals Ethan\u0027s fixation on the unnamed woman, planting curiosity and urgency that will drive his attention through the scene.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 363,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7eba-9feb-c40b795f558e",
@@ -448,12 +453,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Introduces the mystery woman in careful physical detail, using Ethan\u0027s observational habits to mark her as significant and worth reading closely.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 652,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7039-b0e4-1236cdf6c97a",
@@ -462,12 +468,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Reveals the woman\u0027s perceptive, unhurried way of taking in the room, distinguishing her from typical outsiders and deepening the story\u0027s central intrigue around her.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 535,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-76d5-a401-44715a19a8ba",
@@ -476,12 +483,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes Dayo\u0027s characteristic shorthand for conquest, setting up his role as the group\u0027s charming, incurious operator.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 302,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7ed1-9bcf-b34a129d56f5",
@@ -490,12 +498,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes Ethan\u0027s practiced fluency in this exact social ritual, priming him as a reader of rooms rather than a naif.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 127,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-77ec-b5c8-84538298fcac",
@@ -504,12 +513,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Escalates stakes by turning a casual introduction into a race against ritual, revealing Ethan\u0027s need to extract information before the group\u0027s dynamic swallows the moment.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 445,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-76a4-9725-1df65f331194",
@@ -518,12 +528,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Turns the expected power dynamic by having Faith name Ethan first, establishing her as already ahead of him and unfazed by his approach.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 924,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7820-839b-3dbbb8300f60",
@@ -532,12 +543,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes the ritualized drug economy of the group and Dayo\u0027s silent authority within it, grounding the scene\u0027s world in specific sensory detail.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 854,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7281-8891-b7bab7cf001f",
@@ -546,12 +558,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes Mona\u0027s protective, rule-bound role as the group\u0027s safety anchor, contrasting her control against the night\u0027s looming chaos.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 389,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-70b4-8b17-e6342437ba36",
@@ -560,12 +573,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Reveals Ethan\u0027s frustration at losing his window with Faith, reinforcing that she\u0027s already outmaneuvered him within the room\u0027s rhythm.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 789,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7b83-8059-0fa7127009be",
@@ -574,12 +588,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Turns the tension by having Faith reclaim the initiative, redirecting attention to the drugs and reasserting her control of the exchange.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 81,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-79da-b025-6661fa125027",
@@ -588,12 +603,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Reveals Dayo\u0027s ritualized, poetic relationship to his goods, deepening the group\u0027s established culture of substance and performance.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 439,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7720-b5af-1bfa564b1bf6",
@@ -602,12 +618,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Pays off Faith\u0027s established fearlessness by having her take Candor without hesitation, cementing her as bold, self-possessed, and unreadable to Ethan.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 492,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7757-89c9-f66daca71d88",
@@ -616,12 +633,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes Ethan\u0027s private agenda for the scene, framing his charm as calculated pursuit rather than idle flirtation.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 439,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-738f-bc91-7a46a911e972",
@@ -630,12 +648,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Characterizes Faith through wry self-aware banter, establishing her as sharp and unimpressed by the drug\u0027s mystique.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 266,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7b50-84d0-7bb62ec77afc",
@@ -644,12 +663,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes Rill\u0027s ritualized drug use as inseparable from his performance identity, deepening the ensemble\u0027s texture.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 736,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7e3f-83ee-bb19fd10f5a7",
@@ -658,12 +678,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Sets up the drug Fade as a narrative device that will transform Ethan\u0027s perception, while establishing Dayo\u0027s protective, transactional relationship to the group.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 487,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7535-8946-f1ee8b84b32f",
@@ -672,12 +693,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Depicts Ethan crossing into an altered state, marking the turn where the story\u0027s sensory register shifts inward with him.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 464,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6b-7c58-bd12-bd16840fcb8a",
@@ -686,12 +708,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Provides comic ensemble byplay that reinforces group camaraderie and Mona\u0027s steady, grounded role among the others.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 301,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-785f-a94b-c892b8bf1a26",
@@ -700,12 +723,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Marks the moment Faith succumbs to the drug\u0027s effect and draws physically nearer to Ethan, escalating the seduction\u0027s momentum.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 321,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-799b-ad33-4d0b09a7153b",
@@ -714,12 +738,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Deepens the connection between Ethan and Faith by having her intuit and articulate the emotional truth behind his music.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 398,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7ea0-9fac-d5134b431d26",
@@ -728,12 +753,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Reveals Ethan\u0027s guarded creative wound, showing Faith\u0027s genuine perceptiveness disarming him past his usual performative control.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 507,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-73a4-af06-8209c1c7d5bb",
@@ -742,12 +768,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Plants Mona\u0027s quiet awareness of the budding connection, foreshadowing tension without tipping her reaction into visible conflict.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 223,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7dcc-a385-5e10e2f2decc",
@@ -756,12 +783,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Establishes the ordinary warm baseline of the night so the reader feels exactly what\u0027s about to be violated.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 448,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7e3e-b005-727d2124f889",
@@ -770,12 +798,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Introduces Faith\u0027s playful, unguarded intimacy with Ethan to set the emotional register before it\u0027s shattered.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 214,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "ProseLength": 196,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-70e6-ae3e-c1ecccd90a34",
@@ -784,12 +813,13 @@
       "ChapterIndex": 1,
       "Act": 0,
       "Meaning": "Marks the precise pivot from warmth to wrongness, using her own laughter as the last beat of normalcy.",
+      "EscalationTarget": "3",
+      "EventType": "ceremony",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 175,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7be0-b89e-68d1f9b7186c",
@@ -797,11 +827,15 @@
       "Chapter": "The Read",
       "ChapterIndex": 2,
       "Act": 0,
-      "BeatTags": [],
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 410,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -812,12 +846,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Reveals Faith\u0027s rationalization instinct, grounding the supernatural intrusion in a plausible drug explanation while undercutting it with dread.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 332,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7308-bc13-b73d155d9c50",
@@ -826,12 +861,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Deepens the contrast between the intimate scene with Ethan and the encroaching threat by interleaving them in the same breath.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 465,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-769f-995a-246f2ed06b6b",
@@ -840,12 +876,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Escalates the intrusion from vague sensation to a distinct, purposeful voice, confirming to Faith this isn\u0027t a hallucination she can dismiss.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 543,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-74cc-aedc-623b3297a38d",
@@ -854,12 +891,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Shows Faith actively suppressing her fear, establishing her as someone who fights panic with reason even as the reason thins.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 186,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7437-a84c-5de5a92bd6b3",
@@ -868,12 +906,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Dramatizes the split between Faith\u0027s public performance of presence and her private shift into survival mode, straining her connection to Ethan.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 524,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-796d-a98d-54c8937c4caf",
@@ -882,12 +921,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Escalates the threat from ambient menace to explicit targeted danger aimed at her specifically, turning dread into imminent stakes.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 299,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7db8-882b-0fd223e65b7b",
@@ -896,12 +936,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Establishes an unseen threat already fixated on Mona, framing her strength as danger rather than safety.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 501,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7b03-a8bb-c242ae15eaf4",
@@ -910,12 +951,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Turns the scene\u0027s mood from euphoric to threatened, marking the moment Faith\u0027s high curdles into dread.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 519,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-70c4-bcf6-aff7ba823d9e",
@@ -924,12 +966,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Reveals Faith\u0027s instinct to rationalize, heightening tension by delaying her acceptance of the danger.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 98,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-74d5-8c1b-305c9a12bf19",
@@ -938,12 +981,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Escalates the threat from imagined to confirmed, revealing multiple real watchers surrounding the room.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 414,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7760-96fd-067edc43c123",
@@ -952,12 +996,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Establishes Ethan\u0027s altered awareness and sets up Faith taking control of the moment.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 405,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7af0-a8e1-606069924b85",
@@ -966,12 +1011,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Establishes trust between Faith and Ethan, showing his instinctive compliance will matter later.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 221,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-791d-afe3-e12db620a685",
@@ -980,12 +1026,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Reveals Faith\u0027s power explicitly to Ethan while she performs normalcy for unseen watchers, raising stakes.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 287,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-728b-a3b6-6b70b8fdf8ee",
@@ -994,12 +1041,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Signals a shift into active threat-detection, punctuating the beat with concrete danger.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 37,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7a89-b53d-1dd9d6bf16f2",
@@ -1008,12 +1056,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Confirms and maps the surrounding threat, transforming vague dread into a tactical picture.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 293,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-73e9-aba9-2fe11fd80e77",
@@ -1022,12 +1071,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Sets Faith\u0027s immediate goal, pivoting the story toward action and escape planning.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 58,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7c28-a6a2-53a090a7019a",
@@ -1036,12 +1086,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Opens the scene by fixing attention on Ethan as the immediate object of her focus, priming the reader for a targeted maneuver.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 20,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-710b-82f3-f5100ea24e1a",
@@ -1050,12 +1101,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Establishes her telepathic access to Ethan\u0027s unfiltered desire, grounding the story\u0027s power dynamic in intimate, exploitable detail.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 596,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7b82-bb5c-9311c8d7ab15",
@@ -1064,12 +1116,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Reveals her moral conflict upfront while subordinating it to urgency, framing her coming manipulation as necessary rather than casual.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 137,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7079-8fe6-1c3f68dfce41",
@@ -1078,12 +1131,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Shows her weaponizing intercepted intimacy with precision, escalating the seduction into a calculated performance of tailored desire.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 349,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7cac-8227-d0be6d9c72ae",
@@ -1092,12 +1146,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Marks Ethan\u0027s response as proof her read was accurate, confirming her control is working exactly as intended.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 42,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7405-a190-8e967df27061",
@@ -1106,12 +1161,13 @@
       "ChapterIndex": 2,
       "Act": 0,
       "Meaning": "Introduces the fangs as a charged focal detail, deepening the seduction while hinting at the story\u0027s genemod/vampire-aesthetic stakes.",
+      "EscalationTarget": "4",
+      "EventType": "discovery",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 418,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-71f2-8385-1b91fbf678d5",
@@ -1119,11 +1175,15 @@
       "Chapter": "The Bathroom",
       "ChapterIndex": 3,
       "Act": 0,
-      "BeatTags": [],
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot"
+      ],
       "ProseLength": 75,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -1134,12 +1194,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Signals Ethan\u0027s willing complicity, confirming the bait has landed and the extraction plan can proceed.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 78,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7f30-aec0-0a0cc77c0491",
@@ -1148,12 +1209,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Escalates her control from words to physical assertion, showing her seizing initiative under the guise of intimacy.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 190,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "ProseLength": 166,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7f6d-8734-d74f84369d5d",
@@ -1162,12 +1224,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Reframes the private overture as public cover, underscoring her calculated performance for onlookers as she moves him toward safety.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 88,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7396-acf6-ad8778131898",
@@ -1176,12 +1239,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Establishes Faith\u0027s tactical instinct, using Mona\u0027s suspicion as convenient cover rather than a threat to defuse.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 384,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7afd-b401-9ee3f0b23115",
@@ -1190,12 +1254,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Marks the transition into isolation, sealing the two characters away from the party\u0027s noise and eyes.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 101,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7cfc-a6ec-07bb37e1224f",
@@ -1204,12 +1269,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Grounds the scene in a claustrophobic, specific space and plants an escape route that will matter later.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 283,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7906-911d-16372c5b0fff",
@@ -1218,12 +1284,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Foreshadows a coming complication by flagging the window as a problem Faith is deliberately deferring.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 85,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6c-7f49-9cd6-55211f807a32",
@@ -1232,12 +1299,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Sets up dramatic irony by playing the moment as romantic tension right before it\u0027s interrupted by revelation.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 99,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7da7-9274-4701c5eceb43",
@@ -1246,12 +1314,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Turns the scene abruptly from intimacy to urgency, signaling Faith has shifted into a different, alarmed mode.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 45,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-789c-a66c-ca76d79509c1",
@@ -1260,12 +1329,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Reveals the story\u0027s inciting supernatural mechanic, establishing Faith is hearing real, specific threats rather than vague impressions.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 888,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7109-b6cd-d4981d50a4f8",
@@ -1274,12 +1344,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Shows Ethan\u0027s skepticism taking shape, grounding the reader in the rational counter-view he must be talked out of.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 182,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "ProseLength": 175,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7813-9b6c-c92f503f6314",
@@ -1288,12 +1359,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Escalates the confrontation by forcing Faith to defend her own credibility against gentle, reasonable disbelief.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 570,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7f94-9197-7343b03790c2",
@@ -1302,12 +1374,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Pays off the argument by using a mundane, unfakeable detail to crack Ethan\u0027s skepticism and earn belief.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 131,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7068-a88e-51729f8c607a",
@@ -1316,12 +1389,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Establishes Faith\u0027s power in action, revealing a threat invisible to normal senses and setting the story\u0027s stakes in motion.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 381,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-73d3-9ccb-2efe7553a0c9",
@@ -1330,12 +1404,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Grounds the abstract threat in personal stakes by reminding Ethan (and the reader) of the friends left unknowingly exposed.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 232,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7688-bec4-3781b0344ec4",
@@ -1344,12 +1419,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Lays out the impossible choice at the beat\u0027s core, sharpening tension between false alarm and fatal exposure.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 583,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-796f-b8ca-ea5a87f076b9",
@@ -1358,12 +1434,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Escalates physical tension and stalls for suspense as the only visible escape route resists being opened.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 426,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-73aa-b853-f6fa4ab5612e",
@@ -1372,12 +1449,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Reveals the true cost of the plan by measuring Ethan\u0027s body against an exit that may not admit him.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 249,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7e52-bad6-5f6b5fcbfbef",
@@ -1386,12 +1464,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Turns uncertainty into a concrete plan, establishing Faith as the one who takes the first risk to protect Ethan.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 296,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-791b-abc6-2de6ef577338",
@@ -1400,12 +1479,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Marks the moment trust is forged, showing Ethan surrender doubt and Faith perceive belief directly for the first time.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 260,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-723d-9864-e2d5d5aff0ae",
@@ -1414,12 +1494,13 @@
       "ChapterIndex": 3,
       "Act": 0,
       "Meaning": "Seals the decision with minimal dialogue, confirming the plan is set and there\u0027s no turning back.",
+      "EscalationTarget": "5",
+      "EventType": "confession",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 19,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7b2d-bdd5-c707fb017d94",
@@ -1427,11 +1508,13 @@
       "Chapter": "The Breach",
       "ChapterIndex": 4,
       "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 183,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -1442,12 +1525,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Closes the beat with an ominous final image, underscoring the abrupt severance from safety and friends left behind.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 118,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-74c0-86a3-6dfe1d8dc065",
@@ -1456,12 +1540,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Establishes the heist\u0027s live tension and Faith\u0027s blurred instincts, setting the story\u0027s central motif of surveillance collapsing inner and outer worlds.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 705,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7db6-a164-1c145c66d823",
@@ -1470,12 +1555,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Grounds Ethan in physical danger, stripping away narrative distance to show the stakes are real.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 370,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7727-8bd8-1ad0f5e80711",
@@ -1484,12 +1570,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Plants a foreboding, unexamined detail (the propped object) to seed later payoff while showing Faith\u0027s disorientation.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 266,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7d36-9b29-8c92e40e0be2",
@@ -1498,12 +1585,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Escalates the heist into crisis by breaching the safe space and personalizing the threat through Nkechi\u0027s scream.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 366,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7df8-bc74-207f2c126dd8",
@@ -1512,12 +1600,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Reveals Ethan\u0027s protective impulse toward Mona and Faith\u0027s decisive restraint, forcing the group to abandon their own to survive.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 408,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-76dd-94b8-c44504358495",
@@ -1526,12 +1615,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Shifts perspective to Mona to show her situational awareness sharpening just before the ambush, establishing her as the story\u0027s read-the-room center.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 441,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-755f-9a5b-079b8018d2f5",
@@ -1540,12 +1630,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Turns the intrusion into full violence and shows Mona overriding panic with hard-won survival logic.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 554,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "ProseLength": 579,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-74a6-8bdd-ecbe9ec0849f",
@@ -1554,12 +1645,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Shows Mona choosing concealment over flight, embodying the chapter\u0027s theme of controlled reaction under threat.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 275,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7046-9aef-cc70738b2e67",
@@ -1568,12 +1660,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Escalates chaos with the Fade thimble\u0027s accidental release, turning the violent scene surreal and disorienting to raise stakes and confusion.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 448,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7c4a-9a60-0241485ce563",
@@ -1582,12 +1675,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Reveals Rill\u0027s calculated surrender as survival wisdom, contrasting his composure with the others\u0027 panic and foreshadowing his role as a reader of danger.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 389,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-780a-8831-7c6f9adedd2f",
@@ -1596,12 +1690,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Escalates the ambush from bluff to real violence by making a trusted, capable ally suddenly a casualty.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 458,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-713d-9853-ed6ec387fe50",
@@ -1610,12 +1705,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Establishes Mona\u0027s defining trait, controlled composure, as her chosen survival tool under mortal threat.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 229,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7f5d-8c62-5f9dbba5cc1c",
@@ -1624,12 +1720,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Introduces the true threat by contrasting his understated control with the crew\u0027s chaos, marking him as the real danger.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 397,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-71fe-abbb-d3b67cb5e406",
@@ -1638,12 +1735,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Reveals the leader\u0027s methodical thoroughness, escalating tension by showing he intends to leave nothing unchecked.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 283,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-70f6-8345-8d2fe90ad513",
@@ -1652,12 +1750,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Characterizes the antagonist\u0027s chilling calm as a controlling threat, promising violence without needing to voice it.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 256,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7862-a6e7-08d0f4dc6adb",
@@ -1666,12 +1765,13 @@
       "ChapterIndex": 4,
       "Act": 0,
       "Meaning": "Grounds the scene\u0027s danger in indifferent, ongoing normalcy, heightening dread by contrasting the club\u0027s obliviousness with Mona\u0027s peril.",
+      "EscalationTarget": "6",
+      "EventType": "escape",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 379,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7cfe-9430-c7a48ca9af88",
@@ -1679,11 +1779,13 @@
       "Chapter": "The Low",
       "ChapterIndex": 5,
       "Act": 0,
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 106,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -1694,12 +1796,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Establishes Ethan\u0027s disoriented reliance on Faith and introduces the Fade\u0027s uncanny sense of predestined repetition shaping his experience.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 358,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7029-b848-9fc44de33082",
@@ -1708,12 +1811,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Builds mystery around Faith\u0027s uncanny foresight, planting the question of how she perceives what\u0027s coming before it happens.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 356,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7a34-9d4d-129dc30f1ef3",
@@ -1722,12 +1826,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Crystallizes the story\u0027s core uncanny motif by naming Faith\u0027s precognitive instinct as something beyond ordinary skill.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 113,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-79c4-9d74-ca6e40159cb3",
@@ -1736,12 +1841,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Establishes the lawless, indifferent setting to underscore the couple\u0027s isolation and vulnerability as they flee.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 378,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7a64-bf41-a68bb8a598e2",
@@ -1750,12 +1856,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Demonstrates Faith\u0027s uncanny anticipatory ability while withholding its explanation, deepening the story\u0027s central mystery.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 396,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6d-7697-8844-68cd3cb3c162",
@@ -1764,12 +1871,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Reinforces Faith\u0027s controlling authority over Ethan in the moment, silencing his rising questions to sustain tension.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 116,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-79dd-8384-80b58be29776",
@@ -1778,12 +1886,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Reframes Ethan\u0027s stage-honed instincts as inferior to Faith\u0027s uncanny skill, humbling him and elevating her mystery.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 477,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-700b-bd4d-3c7601eb9e4c",
@@ -1792,12 +1901,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Escalates the uncanny by quantifying Faith\u0027s flawless evasions, ruling out coincidence and forcing Ethan toward an explanation.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 213,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-72c9-9f20-5b24007d7c39",
@@ -1806,12 +1916,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Reveals Ethan\u0027s growing attraction intruding on danger, complicating his fear with intimacy and foreshadowing entanglement.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 293,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "ProseLength": 253,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-75a2-91f4-7af6f65e7ca8",
@@ -1820,12 +1931,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Marks a pause in the chase that shifts focus from action to confrontation, setting up answers Ethan needs.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 340,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7f05-8da0-ecccf1b10953",
@@ -1834,12 +1946,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Signals Faith\u0027s continued hidden vigilance even at rest, deepening suspicion that her abilities are ongoing and active, not luck.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 303,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-759d-916f-4c980196b216",
@@ -1848,12 +1961,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Consolidates the beat\u0027s accumulated dangers and stakes, propelling Ethan to finally demand explanation from Faith.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 343,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7323-a428-7160b75f418f",
@@ -1862,12 +1976,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Turns the chapter from flight to confrontation as Ethan asserts himself, demanding Faith account for her impossible knowledge.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 88,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7ccc-9390-937d62ce0780",
@@ -1876,12 +1991,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Establishes an unexpected intimacy and trust between the two, framing her sharp alertness as the scene\u0027s central mystery.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 189,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7fbd-b8db-1fca5e9dc12a",
@@ -1890,12 +2006,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Signals sudden danger, snapping the moment of connection into shared crisis.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 35,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-759a-b5b7-ff6651ada5e2",
@@ -1904,12 +2021,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Escalates tension by embodying the pursuit as a searching, patient presence, raising the stakes of discovery.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 391,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7251-80db-b67cc741364b",
@@ -1918,12 +2036,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Releases immediate danger while crystallizing Ethan\u0027s dawning realization that her uncanny foresight has been real and repeated.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 231,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-72ff-be0a-66f79981a656",
@@ -1932,12 +2051,13 @@
       "ChapterIndex": 5,
       "Act": 0,
       "Meaning": "Marks Ethan\u0027s instinctive retreat, physicalizing his shift from trust to wary suspicion.",
+      "EscalationTarget": "6",
+      "EventType": "chase",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 41,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-706c-84b6-0815964c79f9",
@@ -1945,11 +2065,15 @@
       "Chapter": "The Recess",
       "ChapterIndex": 6,
       "Act": 0,
-      "BeatTags": [],
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 201,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -1960,12 +2084,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Reveals her internal struggle to maintain a comforting cover story, showing the lie collapsing under its own weight.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 404,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7e88-9e58-9c6f16ed1d6b",
@@ -1974,12 +2099,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Delivers the story\u0027s central reveal, forcing her to admit to telepathic perception rather than drug-induced insight.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 295,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7f13-8134-b05dec763ae2",
@@ -1988,12 +2114,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Marks the turning point where raw honesty overrides disbelief, deepening the bond through vulnerability rather than logic.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 229,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7a57-a73e-289eae6a4e07",
@@ -2002,12 +2129,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Deepens the reveal\u0027s cost by showing her helpless awareness of his fear, establishing the isolating burden her power creates.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 503,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-72d4-acf1-84a6229a135e",
@@ -2016,12 +2144,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Establishes her power\u0027s social cost, showing she must accept his fear rather than defend herself against it.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 106,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-717e-b3d1-8f5f45ef8f4a",
@@ -2030,12 +2159,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Reveals a hidden emotional layer beneath his fear, seeding an unspoken attraction she chooses to guard privately.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 512,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-70a1-9608-3a8e7c88f315",
@@ -2044,12 +2174,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Escalates the confrontation by forcing an implicit power into an explicit demand, raising the stakes of disclosure.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 154,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7f14-9797-e54556fa79d6",
@@ -2058,12 +2189,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Establishes her reluctance and moral weight around using her ability, framing honesty as an irreversible act.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 250,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7d3e-aa28-faa55df74743",
@@ -2072,12 +2204,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Pays off the tension by exposing his deepest impulse and loyalty, proving her power\u0027s accuracy and intimacy.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 230,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7b5e-9def-5ae6c7f75495",
@@ -2086,12 +2219,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Confirms the truth landed without denial, turning his silence into wordless capitulation and vulnerability.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 174,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7a56-8ce4-881d55759963",
@@ -2100,12 +2234,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Externalizes his inner turmoil through a physical object, grounding his unspoken fear in a tangible gesture.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 321,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7780-a875-0338664299ea",
@@ -2114,12 +2249,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Signals a subtle shift toward trust by showing him unconsciously closing the distance between them.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 177,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7716-87d7-92e69f9c4117",
@@ -2128,12 +2264,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Turns the scene toward vulnerability as he redirects his fear into concern for her experience.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 89,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-702f-b8ea-8834253d71cf",
@@ -2142,12 +2279,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Deepens intimacy by having her name the lonely burden of her gift, inviting connection through shared understanding.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 135,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7d59-9cb6-06f338d8dc1b",
@@ -2156,12 +2294,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Establishes Faith\u0027s deepened empathic intimacy with Ethan while planting her instinct to shield him from a painful truth.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 301,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7274-983b-a5211dccba03",
@@ -2170,12 +2309,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Introduces the neuretics as an intrusive outside force Ethan resists, deepening the tension between duty and the moment he shares with Faith.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 298,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-73a4-9c20-1bc38ecbb326",
@@ -2184,12 +2324,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Escalates the pressure between obligation and intimacy, framing Ethan\u0027s choice to stay present as a fragile, doomed refusal of the plot\u0027s call to action.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 438,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7a1b-ad46-74276ad6a4f4",
@@ -2198,12 +2339,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Turns the moment by having Faith herself break the spell, forcing Ethan back toward duty despite her own wish to keep him.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 43,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7ef6-a0ae-ee538c4a9be4",
@@ -2212,12 +2354,13 @@
       "ChapterIndex": 6,
       "Act": 0,
       "Meaning": "Underscores Ethan\u0027s reluctance to let the outside world intrude, heightening stakes just before the call becomes unavoidable.",
+      "EscalationTarget": "7",
+      "EventType": "confrontation",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 328,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7e14-b0d1-756df1f2c3e9",
@@ -2225,11 +2368,13 @@
       "Chapter": "Koss",
       "ChapterIndex": 7,
       "Act": 0,
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 67,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -2240,12 +2385,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Reveals Faith\u0027s instinctive competence and protectiveness under pressure, establishing her as the one holding the group together in crisis.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 825,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-78d2-8e8e-b84d812ed668",
@@ -2254,12 +2400,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Builds tense stillness by showing Faith\u0027s controlled vigilance as she monitors danger without exposing them.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 93,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-73d6-a117-8d8050a897bf",
@@ -2268,12 +2415,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Deepens the sensory tension of the hideout, using the Fade\u0027s beauty to contrast with the characters\u0027 desperate stillness and Mona\u0027s silent bravery.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 515,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7da3-bc6a-3f502bdac5d3",
@@ -2282,12 +2430,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Delivers a suspenseful near-discovery that tests Faith\u0027s nerve and pays off the group\u0027s discipline in staying hidden.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 594,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-767a-aa17-d1650fd0f6f0",
@@ -2296,12 +2445,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Establishes Mona\u0027s core survival discipline\u2014suppressing instinct to avoid detection\u2014as the story\u0027s tension mechanism.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 154,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-7b4c-bbce-11e04c225420",
@@ -2310,12 +2460,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Introduces the antagonist\u0027s chilling authority through voice alone, marking him as dangerously perceptive before he\u0027s even seen.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 273,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6e-795b-8e3b-df5ec6ae6aba",
@@ -2324,12 +2475,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Escalates the danger by showing another hidden girl make a decisive, doomed choice, raising stakes for Mona\u0027s own concealment.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 417,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-70bf-978b-c3595ccd35de",
@@ -2338,12 +2490,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Turns the scene\u0027s dread as the antagonist\u0027s approach reveals he isn\u0027t hunting blindly but converging on Mona with certainty.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 455,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7539-9a1a-af2ddb6bb03e",
@@ -2352,12 +2505,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Delivers the beat\u0027s central reveal that Mona has been found, collapsing her last hope of remaining hidden.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 22,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7368-b39f-201f88bac118",
@@ -2366,12 +2520,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Reveals that Mona\u0027s earlier survival tactics were futile theater to the antagonist, deepening her sense of powerlessness.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 341,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7eeb-a286-e609d1e4dced",
@@ -2380,12 +2535,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Characterizes the antagonist as coldly analytical rather than sadistic, establishing him as a uniquely unreadable threat.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 304,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7455-8d69-35265072b6c0",
@@ -2394,12 +2550,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Pays off Mona\u0027s careful actions by having the antagonist recount them approvingly, turning her competence into a source of dread.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 344,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-71d2-a10f-a2e5ad76d2ad",
@@ -2408,12 +2565,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Reveals the true horror of the encounter: not menace but accurate observation that renders her defenses meaningless.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 330,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7493-9d28-1b6e7019fe15",
@@ -2422,12 +2580,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Introduces an ominous, untraceable device that signals the antagonist operates outside normal surveillance and consequence.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 415,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7477-a2ee-bdfcad104305",
@@ -2436,12 +2595,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Establishes Koss as a controlled, courteous captor and sets up the forced-call device that will drive the scene\u0027s tension.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 644,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7e92-b9da-4c79a4d71173",
@@ -2450,12 +2610,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Clarifies the trap\u0027s rules, raising stakes by making Faith complicit in luring Ethan without warning him.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 222,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7bf6-a9f4-b3f3b3737f4f",
@@ -2464,12 +2625,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Grounds Faith\u0027s dread in intimate history with Ethan, deepening the cost of using their bond against him.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 420,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7722-8964-13acfe0611ea",
@@ -2478,12 +2640,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Reveals Faith\u0027s discipline under duress, showing her mask of calm as an act of protection and defiance.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 560,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7b39-939e-6f230dfa8ae2",
@@ -2492,12 +2655,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Marks the turn where Ethan takes the bait, escalating the scene into direct confrontation.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 63,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "ProseLength": 64,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-77c1-9ad4-f5c3907247ee",
@@ -2506,12 +2670,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Shows Faith intuiting Ethan\u0027s reaction through subtle physical cues, deepening the reader\u0027s sense of their connection despite the block on information.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 532,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7d77-8205-1103d19860a8",
@@ -2520,12 +2685,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Captures the emotional charge of recognition, humanizing Ethan\u0027s fear and love in a single whispered beat.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 98,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7f11-acbf-35596d0a98bc",
@@ -2534,12 +2700,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Reveals Ethan\u0027s inner turmoil through Faith\u0027s reading of his face, building dread about what Mona is telling him.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 356,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-76e1-aca1-ea5334017379",
@@ -2548,12 +2715,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Demonstrates Ethan\u0027s restraint and growing horror as the casualty count lands, escalating emotional stakes without spectacle.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 536,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7055-9692-478ae38a37df",
@@ -2562,12 +2730,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Delivers a concrete ticking-clock detail that turns dread into urgent, actionable stakes.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 119,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7796-835c-954e467900d4",
@@ -2576,12 +2745,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Faith\u0027s perception of Ethan\u0027s unspoken read establishes their intimacy runs deeper than words, setting up the story\u0027s core telepathic bond.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 484,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-75c3-94c2-61b425b6addc",
@@ -2590,12 +2760,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Ethan voices the story\u0027s central threat aloud, forcing a truth Faith already sensed into the open without demanding she confirm it.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 436,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-758f-a574-42037906f9bf",
@@ -2604,12 +2775,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Ethan commits to returning despite unfinished fear, establishing the ticking clock and his protective instinct colliding with her self-sufficiency.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 300,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7cf1-b2d3-71c56ee0e8bb",
@@ -2618,12 +2790,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "The scene grounds back into physical reality, marking the end of the remote exchange and the weight now settling on him alone.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 255,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-778c-a443-b4aba9e99497",
@@ -2632,12 +2805,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Faith\u0027s narration reveals the decision to return was already sealed before it was spoken, reframing the coming action as inevitable rather than chosen.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 696,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-750c-a944-bf39bf76cee9",
@@ -2646,12 +2820,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Ethan states his resolve plainly, turning private determination into an irreversible spoken commitment.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 29,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7fc3-846a-83427e22fd6e",
@@ -2660,12 +2835,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Faith confirms the external danger has withdrawn, clearing the board so the coming conflict is a deliberate confrontation rather than a chase.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 349,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-75a1-8e87-37c17fb73b8f",
@@ -2674,12 +2850,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Faith anticipates Ethan\u0027s protective impulse before he voices it, establishing her agency in preempting his attempt to exclude her.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 264,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-74eb-b8e2-b2ee0596a44c",
@@ -2688,12 +2865,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Faith dismantles his unspoken plan to leave her behind, forcing him to admit her involvement is tactically necessary, not just permitted.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 568,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7f7e-8ea5-20f35d0d722f",
@@ -2702,12 +2880,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Faith pushes past Ethan\u0027s evasion to demand honesty, escalating the exchange toward the real, harder question he\u0027s avoiding.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 175,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-72be-b305-f04eceaf697b",
@@ -2716,12 +2895,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Faith closes the distance to force Ethan to confront his real fear, pushing their dynamic from wary alliance toward raw honesty.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 397,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7955-b7fa-3b1f22e47abe",
@@ -2730,12 +2910,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "Ethan\u0027s near-smile signals grudging respect breaking through his guarded exterior, deepening the bond without fully resolving his defenses.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 160,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-74cc-a4f6-81c81e6a7837",
@@ -2744,12 +2925,13 @@
       "ChapterIndex": 7,
       "Act": 0,
       "Meaning": "The pair\u0027s counterintuitive choice to head toward danger establishes their tactical boldness and sets the chapter\u0027s forward momentum.",
+      "EscalationTarget": "8",
+      "EventType": "vigil",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 80,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7649-a3ca-5611ab6e7847",
@@ -2757,11 +2939,16 @@
       "Chapter": "The Return",
       "ChapterIndex": 8,
       "Act": 0,
-      "BeatTags": [],
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
+      "BeatTags": [
+        "subplot",
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 552,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -2772,12 +2959,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Ethan\u0027s reflexive, unanswered mental habit underscores his isolation and years of unconscious dependence on a network that isn\u0027t there.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 268,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-77ea-b40d-4a74f9de8776",
@@ -2786,12 +2974,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Faith\u0027s uncanny reply reveals the true scope of her power, showing she can read intent even without technological connection.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 331,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-71b2-9e73-30302581349f",
@@ -2800,12 +2989,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Establishes the wordless communication system the pair develop, cementing their partnership as intuitive and practiced despite just meeting.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 246,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7868-9fad-70ac0617b91f",
@@ -2814,12 +3004,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Faith\u0027s detailed read of the guard demonstrates the depth of her ability while deepening intimacy through her joke about recognizing voices both ways.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 492,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7073-a790-6b6ab607d52f",
@@ -2828,12 +3019,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "The halt at the club\u0027s threshold builds tension and reestablishes Faith\u0027s controlling role as they approach the story\u0027s next obstacle.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 485,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7ebc-b49c-3113f5ee6958",
@@ -2842,12 +3034,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "The indifferent, automated signage underscores the story\u0027s backdrop of technological indifference amid the characters\u0027 high-stakes human tension.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 191,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e6f-7a54-b8fe-8c8ed297e0d5",
@@ -2856,12 +3049,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Faith models the story\u0027s core ethic by humanizing the guard before violence, ensuring the coming act stays morally weighted rather than casual.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 756,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-789c-99b7-3c22bbfe39bb",
@@ -2870,12 +3064,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Signals a turn from tense standoff toward improvised action by introducing a concrete story object.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 33,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-764d-a82e-8e61e80364de",
@@ -2884,12 +3079,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Establishes the setting\u0027s discarded-industrial texture while presenting the weapon Ethan will claim.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 595,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7ad0-a654-ce4cd69b2ce0",
@@ -2898,12 +3094,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Marks Ethan\u0027s uncharacteristic physical commitment, underscoring how far he\u0027s stepped from his ordinary competence.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 283,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7472-8bb4-65e03722b904",
@@ -2912,12 +3109,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Undercuts the escalation with dry banter, reaffirming the pair\u0027s trust while flagging Ethan\u0027s inexperience with violence.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 356,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-76b1-8eb1-9f3dfbd9f217",
@@ -2926,12 +3124,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Deepens Faith\u0027s reconnaissance skill and raises tactical stakes by pinpointing the guard\u0027s blind side and vulnerability.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 539,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7f3f-b0e9-0bd818159a40",
@@ -2940,12 +3139,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "A terse pivot line that launches the action after all the planning beats.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 12,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-78ed-bb1a-20da911654ff",
@@ -2954,12 +3154,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Shows Ethan choosing restraint over brutality, revealing his character\u0027s moral core under pressure.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 916,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-70f4-866d-2ff6fcc3cc0b",
@@ -2968,12 +3169,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Confirms Ethan\u0027s intent to disable rather than harm, reinforcing the story\u0027s value on minimal necessary force.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 97,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7c8f-b43c-df8c3720a95d",
@@ -2982,12 +3184,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Closes the confrontation with quiet compliance, validating Faith\u0027s earlier humanizing read of the guard.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 137,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-729b-aeec-b0cc218af5f0",
@@ -2996,12 +3199,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Faith\u0027s swift, competent disarming establishes her as an equal operational partner, not just a passive gift-user, cementing their new duo dynamic.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 245,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-752e-8473-aad54a4738db",
@@ -3010,12 +3214,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Ethan\u0027s deliberate ritual of setting down the hammer marks his conscious transition from grieving bystander to armed actor, choosing violence with full awareness.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 329,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-764b-ab30-3c3a94003f9c",
@@ -3024,12 +3229,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "The lingering visual of the Fade\u0027s aftermath keeps the supernatural stakes present, reminding the reader this is still a contaminated, altered scene.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 51,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7a25-a490-51758297b4ca",
@@ -3038,12 +3244,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Faith\u0027s tactile reading method is reinforced and echoed to Ethan\u0027s earlier intimacy with her, deepening her power\u0027s intrusive, almost sacred quality.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 509,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-71da-88cb-a704b4d0692e",
@@ -3052,12 +3259,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "The unreadable third man plants a lingering threat and establishes the limits of Faith\u0027s power, seeding future danger and humility in her ability.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 158,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7ba5-9054-6f290b836439",
@@ -3066,12 +3274,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Ethan\u0027s trust in Faith\u0027s judgment without question shows how thoroughly their partnership has solidified through shared danger.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 138,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7437-aec2-696a59c22cb7",
@@ -3080,12 +3289,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "This exchange sharply contrasts the two gunmen\u0027s inner natures, turning Faith\u0027s power into a moral X-ray that reveals who can be reasoned with and who is pure lethal instinct.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 1660,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-76f5-afb0-11b7dbe8ae03",
@@ -3094,12 +3304,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Faith\u0027s precise tactical coordination with Ethan operationalizes her mind-reading into an actionable plan, escalating tension toward imminent violence.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 120,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7bcb-9268-6866d572b4c9",
@@ -3108,12 +3319,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Ethan\u0027s controlled, efficient takedown proves he can convert Faith\u0027s intelligence into decisive nonlethal action, showcasing his growing competence and restraint.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 667,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7cb0-bc6b-0ba50bc35312",
@@ -3122,12 +3334,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "The gunman\u0027s willing surrender pays off Faith\u0027s earlier read of his reluctance, affirming her insight and rewarding Ethan\u0027s choice toward mercy over slaughter.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 137,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7d55-9ae2-2e10ef228c54",
@@ -3136,12 +3349,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Establishes the pair\u0027s honed nonverbal shorthand and triggers the scene\u0027s violent turn, showing danger arriving faster than warning can help.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 338,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7778-af80-794202f494e5",
@@ -3150,12 +3364,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Escalates the ambush into visceral, split-second combat, forcing Ethan into reflexive action that strips away any illusion of control.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 680,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-767c-b8d5-75dc147e0b6d",
@@ -3164,12 +3379,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Lets the immediate violence settle into aftermath, grounding the reader in bodies and sound before the scene can process what happened.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 137,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-714d-9d38-e97f6c7f2e0a",
@@ -3178,12 +3394,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Reveals the emotional cost of Ethan\u0027s first kill and confirms Faith gave everything she had, deepening trust while exposing the plan\u0027s limits.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 561,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7f28-9a78-9694a731f284",
@@ -3192,12 +3409,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Turns attention forward, planting the next threat and object of focus to keep tension from resolving too soon.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 36,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-704e-a260-5847b5e3e00f",
@@ -3206,12 +3424,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Introduces a charged, almost-too-convenient weapon that will complicate the scene with irony and meaning beyond its immediate use.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 531,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "ProseLength": 506,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7481-b54f-b6a55fdca453",
@@ -3220,12 +3439,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Delivers the punchline object that yokes Ethan\u0027s identity to the weapon, seeding dark absurdist irony into a life-or-death moment.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 41,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-73a7-bc60-3d300b03100c",
@@ -3234,12 +3454,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Reveals the coincidence\u0027s personal sting, undercutting the band\u0027s long-denied association with violence just as Ethan embodies it literally.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 376,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7f91-b790-f303888ed9d2",
@@ -3248,12 +3469,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Shows Faith\u0027s empathic gift betraying her with inappropriate humor, humanizing her and complicating the scene\u0027s tone amid horror.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 474,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7f75-8740-ca527c7ea0b2",
@@ -3262,12 +3484,13 @@
       "ChapterIndex": 8,
       "Act": 0,
       "Meaning": "Foreshadows this moment as a future shared memory, framing trauma as something they\u0027ll survive to laugh about together.",
+      "EscalationTarget": "9",
+      "EventType": "negotiation",
+      "RevelationMode": "suspense",
       "BeatTags": [],
       "ProseLength": 123,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7e99-8e8c-1a8ecab69a19",
@@ -3275,11 +3498,15 @@
       "Chapter": "Fenris",
       "ChapterIndex": 9,
       "Act": 0,
-      "BeatTags": [],
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
+      "BeatTags": [
+        "intertextual-touchpoint"
+      ],
       "ProseLength": 123,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3290,12 +3517,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Reveals the hostage stakes by introducing Mona under the enemy\u0027s control, raising the confrontation\u0027s danger and personal cost.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 110,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7762-8ae8-1f2fda06a805",
@@ -3304,12 +3532,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Establishes Koss as a controlled, tactically superior threat by showing his careful staging robs Ethan of any safe line of attack.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 727,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7942-bc74-8742d9e04b35",
@@ -3318,12 +3547,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Koss asserts psychological dominance by calmly disarming Ethan\u0027s leverage, proving his composure outmatches any threat of force.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 214,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7507-a8a5-fd7eddb2af60",
@@ -3332,12 +3562,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Mona\u0027s silent, layered look conveys unspoken warning, guilt, and long-buried feeling, deepening the emotional stakes beyond the physical standoff.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 441,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7bd3-bdac-28089a8d5a9c",
@@ -3346,12 +3577,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Faith\u0027s arrival at Ethan\u0027s side establishes her as an active partner stepping into the confrontation alongside him.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 28,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7e72-925e-718abceba5ee",
@@ -3360,12 +3592,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Establishes Faith\u0027s reliable supernatural read on danger as a trusted tool the reader expects to guide the scene\u0027s tension.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 387,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7c2d-ac2c-5e54d78afbb6",
@@ -3374,12 +3607,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Faith\u0027s power failing to deliver its expected warning creates sudden uncertainty, undercutting the story\u0027s established safety mechanism.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 15,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7843-98a4-b0fd14559581",
@@ -3388,12 +3622,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Faith\u0027s uncanny stillness signals that something has gone terribly, unprecedentedly wrong, escalating dread beyond ordinary danger.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 560,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e70-7202-82d4-02391e19733d",
@@ -3402,12 +3637,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Ethan\u0027s quiet address to Faith marks his alarm at her breakdown, pivoting focus toward this new, unexplained crisis.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 35,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7dca-b060-9e4ced50bde6",
@@ -3416,12 +3652,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Establishes the stakes by revealing Faith\u0027s power has already failed her\u2014Koss\u0027s fatal intent is fixed and unreadable-into-changing, unlike prior targets.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 728,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-773c-b60e-92485659fa34",
@@ -3430,12 +3667,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Deepens the threat by confirming Koss\u0027s resolve is immune to circumstance, making him more dangerous than a desperate man.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 210,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7998-8fc4-268b9d5af456",
@@ -3444,12 +3682,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Delivers Faith\u0027s grim verdict aloud, converting internal dread into a spoken warning that forces action.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 45,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-72bc-a6e7-e3cf4d13f088",
@@ -3458,12 +3697,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Reveals the emotional cost of Faith\u0027s gift by contrasting this dehumanized read with her earlier compassionate use of it, underscoring the horror of facing an implacable will.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 271,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7bed-84a7-935610d87395",
@@ -3472,12 +3712,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Escalates urgency by stripping away any illusion of negotiation, collapsing the moment down to a single command to move.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 74,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7e87-af58-86cd56d05cd3",
@@ -3486,12 +3727,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Marks the turn from tension to action as Ethan trusts Faith\u0027s warning without question.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 12,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7a3f-83f5-a82ff990edc1",
@@ -3500,12 +3742,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Complicates the climax by revealing Faith\u0027s split focus\u2014reading and repositioning simultaneously\u2014setting up her fatal miscalculation under strain.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 743,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7184-a58f-5992bf2f3762",
@@ -3514,12 +3757,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Triggers the irreversible violence the whole beat has been bracing for, confirming Koss\u0027s decision was never negotiable.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 11,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-77ad-883c-dabc65366b01",
@@ -3528,12 +3772,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Delivers the story\u0027s gut-punch reversal, showing Faith\u0027s gift betraying her physically even as it read the danger correctly, and paying off the tension with real cost.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 889,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7d67-9910-474fffd992f4",
@@ -3542,12 +3787,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Closes the sequence with a stark tonal drop, letting the violence\u0027s aftermath register before the story moves into its consequences.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 89,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7a2b-8db6-3793b474fbac",
@@ -3556,12 +3802,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Establishes that the crew has survived the violence, panning across each survivor to confirm the immediate danger has passed while leaving lingering damage visible.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 462,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7bd6-8644-8f98686bfcdc",
@@ -3570,12 +3817,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Reveals Faith is the one casualty of the night, turning the scene\u0027s relief into dread and centering her as the stakes going forward.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 231,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-79ef-96e5-b0572f6d247c",
@@ -3584,12 +3832,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Marks Ethan\u0027s collapse into pure reaction, establishing his emotional break from the competent operator he\u0027s been all night.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 89,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7632-a629-7548a1fbddbe",
@@ -3598,12 +3847,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Reveals Ethan\u0027s competence is useless here, undercutting his established mastery to expose his helplessness in the face of Faith\u0027s injury.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 662,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7939-9f25-c7c6c89b4145",
@@ -3612,12 +3862,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Shows Ethan grasping for control through empty reassurance, underscoring how powerless he actually is.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 56,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7239-b255-bcd7583dae04",
@@ -3626,12 +3877,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Turns the power dynamic by giving Faith total unguarded access to Ethan\u0027s inner state, escalating intimacy through crisis-forced vulnerability.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 1298,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7b2c-bde7-2ce5c19bb198",
@@ -3640,12 +3892,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Reveals Faith\u0027s dark, defiant humor as her way of processing pain, complicating the scene\u0027s grief with unexpected levity.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 428,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7431-8261-3ef701b68e1d",
@@ -3654,12 +3907,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Pays off the night\u0027s \u0027reading\u0027 motif by having Faith redirect her power toward survival, asking Ethan to feed her something to hold onto.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 584,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7508-8841-c41f20fda3e5",
@@ -3668,12 +3922,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Escalates the stakes by showing Ethan\u0027s inability to conjure comfort on demand, deepening his guilt and the scene\u0027s desperation.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 423,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7927-8f7d-1ca19a719b4f",
@@ -3682,12 +3937,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Pays off the story\u0027s central throughline by revealing the buried feeling Ethan couldn\u0027t name, cementing their bond at the moment of greatest vulnerability.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 535,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-782d-b0a2-068646c2cf08",
@@ -3696,12 +3952,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "Faith names the song\u0027s hidden truth aloud, forcing Ethan\u0027s private four-year secret into shared, undeniable reality.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 545,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7bf5-b601-569b3c379c6c",
@@ -3710,12 +3967,13 @@
       "ChapterIndex": 9,
       "Act": 0,
       "Meaning": "The chapter turns from revelation to crisis, deferring the emotional payoff by cutting away from a medical emergency the story won\u0027t dwell on.",
+      "EscalationTarget": "10",
+      "EventType": "betrayal",
+      "RevelationMode": "surprise",
       "BeatTags": [],
       "ProseLength": 515,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7523-a9af-286bed4bf378",
@@ -3723,11 +3981,15 @@
       "Chapter": "Three Months Later",
       "ChapterIndex": 10,
       "Act": 0,
-      "BeatTags": [],
+      "EscalationTarget": "4",
+      "EventType": "repair",
+      "RevelationMode": "curiosity",
+      "BeatTags": [
+        "subplot"
+      ],
       "ProseLength": 446,
       "Flags": [
-        "MISSING_MEANING",
-        "NO_CONSTRUCTION"
+        "MISSING_MEANING"
       ],
       "Covered": false
     },
@@ -3738,12 +4000,13 @@
       "ChapterIndex": 10,
       "Act": 0,
       "Meaning": "Establishes a restored normalcy in performance ritual, reasserting Rill\u0027s untouchable focus and Mona\u0027s watchful vigilance as constants.",
+      "EscalationTarget": "4",
+      "EventType": "repair",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 827,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-74f3-ab3c-2e5e6149cc52",
@@ -3752,12 +4015,13 @@
       "ChapterIndex": 10,
       "Act": 0,
       "Meaning": "Builds anticipation by having Ethan withhold the song\u0027s long-deferred final line, milking the crowd\u0027s collective suspense.",
+      "EscalationTarget": "4",
+      "EventType": "repair",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 468,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-772c-8299-170acaf37642",
@@ -3766,12 +4030,13 @@
       "ChapterIndex": 10,
       "Act": 0,
       "Meaning": "Pays off four years of narrative tension as Ethan finally completes the song\u0027s truth and the audience receives it as real.",
+      "EscalationTarget": "4",
+      "EventType": "repair",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 281,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "ProseLength": 279,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019f9ff5-9e71-7000-bd7c-4a3be1aa0006",
@@ -3780,12 +4045,13 @@
       "ChapterIndex": 10,
       "Act": 0,
       "Meaning": "Reveals Faith alive and present in the crowd, confirming her survival and quietly asserting her role as the song\u0027s true witness.",
+      "EscalationTarget": "4",
+      "EventType": "repair",
+      "RevelationMode": "curiosity",
       "BeatTags": [],
       "ProseLength": 128,
-      "Flags": [
-        "NO_CONSTRUCTION"
-      ],
-      "Covered": false
+      "Flags": [],
+      "Covered": true
     }
   ]
 }

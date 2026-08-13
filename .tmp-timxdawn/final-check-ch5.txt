@@ -1,0 +1,31 @@
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[Slug], [u].[Name], [u].[Theme], [u].[UniversePrimer], [u].[IsActive], [u].[SortKey], [u].[WorldFacts]
+      FROM [Universe] AS [u]
+      ORDER BY [u].[SortKey], [u].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@ef_filter__p2='?' (DbType = Boolean), @ef_filter__ScopedUniverseId='?' (DbType = Guid), @key='?' (Size = 120)], CommandType='Text', CommandTimeout='30']
+      SELECT [s].[Key], [s].[UniverseId], [s].[Json], [s].[UpdatedAt]
+      FROM [Settings] AS [s]
+      WHERE (@ef_filter__p2 = CAST(1 AS bit) OR [s].[UniverseId] = @ef_filter__ScopedUniverseId OR [s].[UniverseId] = '0197e9c9-0099-7000-8000-000000000099') AND [s].[Key] = @key
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@beatId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [b].[Id], [b].[Act], [b].[AudioPath], [b].[CreatedAt], [b].[Description], [b].[DurationSec], [b].[EmotionalScore], [b].[EmotionalTone], [b].[EntityStale], [b].[EventSummary], [b].[EventSummaryHash], [b].[GapAfterAudioPath], [b].[GapAfterMs], [b].[IsChapterStart], [b].[Kind], [b].[LastRequestId], [b].[NarratedAt], [b].[Number], [b].[PaceHint], [b].[SceneType], [b].[Score], [b].[ScoredAt], [b].[Slug], [b].[Stale], [b].[StructureRole], [b].[Subtext], [b].[Text], [b].[TextHash], [b].[Title], [b].[UpdatedAt], [b].[Version], [b].[VoiceId], [b].[WasCorrected]
+      FROM [Beats] AS [b]
+      WHERE [b].[Id] = @beatId
+Id:           019ff76c-9024-7142-820d-e1696038b1a4
+Title:        Chapter Five — The Reflections
+Kind:         prose
+UpdatedAt:    2026-08-12 19:27:59Z
+
+If you'd asked anybody in Wautoma in 1987 to name the town's talent, they'd probably have pointed you at a band of local moms calling themselves The Reflections. On March 27th of that year, my mom, Gena Pontow, a woman named Debbie Sutton-Johnson, and Julie Eger entered a talent contest and took first place playing a song my mom wrote herself, "Housewife Blues." Debbie left not long after; a percussionist named Pam Schmude joined later, and the trio that actually stuck around, on and off, over the years, was Dawn, Gena, and Julie — Julie Eger, who later married a plumber named Verne Wagner and became Julie Wagner, and then, once that ended, married again to a guy everybody called Butch. Julie "Janet," maybe. I'm not fully sure on that last name.
+
+Over the years the roster was a strange rotating door, the way small-town bands usually are: a cop named Don Binder played with them for a while — a guy remembered as both a cop and a drunk in the same breath — a man who ran a campground called Ti-Waushara sat in sometimes, a drummer named Lance came and went, a friend named David Davies' mom filled in a handful of times but never stuck. What stayed constant through every lineup change was those three women and whatever song my mom brought to rehearsal that week.
+
+Don Binder eventually brought in a younger singer, a woman named Trina, and at some point him and whoever was backing him tried to just take the name "The Reflections" for themselves — walk off with it, like the name was separate from the women who built it. My mom pushed back and kept it where it belonged. Didn't save them from the market, though — for most of their run, The Reflections kept losing gigs to a rival local band called The Sweet Water Band, who played basically the same circuit but had more mass appeal by every account. My mom's band was the more interesting one and the less bookable one, which is a description that fits more of her life than just the band, honestly.
+
+Somewhere in a family drawer there's an actual setlist for this thing — over a hundred songs long, the whole working repertoire they could take a request for. Runs from "Louie Louie" and "Twist and Shout" straight through Patsy Cline ("Crazy," "I Fall to Pieces"), gospel numbers, wedding standards ("Could I Have This Dance," "The Rose," "Three Bells"), a yodel song, and — sitting right there in the B's, totally unbothered by the company — "Housewife Blues," the song that started the whole thing. A setlist is basically an X-ray of every room a band ever had to win over, and this one shows a small-town Wisconsin band that could go straight from a gospel hymn into "Boot Scootin' Boogie" without anybody blinking. Full list's in Appendix A.
+
+She never learned to read music. Played piano and guitar entirely by ear, wrote — by her own count and everyone else's — more songs than anybody bothered tracking. Some of the funniest ones weren't even for the band. For years she ran what we all call "birthday-grams" — before somebody's birthday she'd quietly go collect facts about them, embarrassing stuff, habits, whatever she could dig up, and turn it into an original comic song she'd then perform, live, straight at the person, usually with everyone they know standing right there. She also did improv at a bar for a while, which by this point in her story doesn't even feel like a new fact so much as the obvious next move.
+
+Debbie Sutton-Johnson, for what it's worth, was the first Black person I remember meeting, growing up in a town that didn't have many. We drove down to visit her family in Milwaukee once and I met more Black families in that one trip than I had in my entire life up to that point. Looking back, I don't think that was an accident. I think my mom was trying to show her kids there was a whole world outside Germania and Wautoma, using the one friendship she had that could actually carry us there.

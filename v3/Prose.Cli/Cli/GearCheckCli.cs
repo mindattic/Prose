@@ -54,7 +54,7 @@ public static class GearCheckCli
         var beatRows = await (
             from sb in db.BeatNodes
             join b in db.Beats on sb.BeatId equals b.Id
-            where searchIds.Contains(sb.NodeId) && sb.IsEnabled
+            where searchIds.Contains(sb.NodeId) && true
             select new { sb.NodeId, sb.SortKey, b.Id, b.Number, b.Text }
         ).ToListAsync();
         var beats = beatRows

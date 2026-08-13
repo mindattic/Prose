@@ -153,7 +153,7 @@ public class LibertyReportService(
             var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId!.Value, ct);
 
             var beatIds = await db.BeatNodes.AsNoTracking()
-                .Where(bn => beatNodeIds.Contains(bn.NodeId) && bn.IsEnabled)
+                .Where(bn => beatNodeIds.Contains(bn.NodeId) && true)
                 .Select(bn => bn.BeatId)
                 .ToListAsync(ct);
 

@@ -65,7 +65,7 @@ public class BackfillEntityPresenceUniverseScopingTests
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Text = "Some prose text.", Number = nextBeatNumber++ };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = node.Id, BeatId = beat.Id, SortKey = 100, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = node.Id, BeatId = beat.Id, SortKey = 100 });
         db.SaveChanges();
         return beat.Id;
     }

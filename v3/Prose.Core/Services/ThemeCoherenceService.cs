@@ -55,7 +55,7 @@ public class ThemeCoherenceService(
         var beats = await (
             from sb in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where searchIds.Contains(sb.NodeId) && sb.IsEnabled && b.Text != null && b.Text != ""
+            where searchIds.Contains(sb.NodeId) && true && b.Text != null && b.Text != ""
             orderby sb.SortKey
             select new { b.Number, b.Text }
         ).ToListAsync(ct);

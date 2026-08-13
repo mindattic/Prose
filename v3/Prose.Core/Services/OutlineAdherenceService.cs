@@ -50,7 +50,7 @@ public class OutlineAdherenceService(
             // NodeDocService/SynopsisExportService/BeatLensServices/EmotionalDepthService).
             var goalRows = await (
                 from sb in db.BeatNodes.AsNoTracking()
-                where beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled
+                where beatNodeIds.Contains(sb.NodeId) && true
                 join b in db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == "") on sb.BeatId equals b.Id
                 where (b.Description ?? b.Title ?? "").Length > 0
                 select new { sb.NodeId, sb.SortKey, Goal = b.Description ?? b.Title ?? "" }
@@ -114,7 +114,7 @@ public class OutlineAdherenceService(
             var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(sb => beatNodeIds.Contains(sb.NodeId) && sb.IsEnabled)
+                .Where(sb => beatNodeIds.Contains(sb.NodeId) && true)
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
                       (sb, b) => new { b.Id, sb.NodeId, BeatSortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })

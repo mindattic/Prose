@@ -2,9 +2,9 @@
   "nodeCode": "BTL",
   "slug": "between-the-lines-019fed1b",
   "title": "Between the Lines",
-  "generatedAtUtc": "2026-08-11 00:28:07Z",
+  "generatedAtUtc": "2026-08-12 18:13:33Z",
   "totalBeats": 16,
-  "covered": 0,
+  "covered": 16,
   "chapterGranular": false,
   "bookScope": {
     "TemporalScheme": "linear",
@@ -16,9 +16,7 @@
     "HasBlueprint": true,
     "ConstructionCapacity": 16
   },
-  "flagCounts": {
-    "NO_PROSE": 16
-  },
+  "flagCounts": {},
   "beats": [
     {
       "BeatId": "019fed2b-c82b-7d19-887d-2ba486f3f92e",
@@ -34,11 +32,9 @@
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 4530,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c888-73ab-b0c3-813f3d1115d4",
@@ -52,11 +48,9 @@
       "EventType": "loss",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 3517,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7195-b9e0-7b41056d6ed0",
@@ -72,11 +66,9 @@
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 4187,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-78f2-9612-85db65407e31",
@@ -92,11 +84,9 @@
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 3481,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-73bd-971e-c0f40230c8b7",
@@ -113,11 +103,9 @@
         "subplot",
         "intertextual-touchpoint"
       ],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 4694,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7bfa-9d7c-27f799e33143",
@@ -131,11 +119,9 @@
       "EventType": "arrival",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 3062,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-761f-b1b2-b8c1ade0e72f",
@@ -149,11 +135,9 @@
       "EventType": "discovery",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 6821,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-70fb-88bb-1139b07a5439",
@@ -167,11 +151,9 @@
       "EventType": "exchange",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 2901,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7767-9898-9fcb49251a3d",
@@ -185,11 +167,9 @@
       "EventType": "ambush",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 5196,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7344-bea9-de7eb3add207",
@@ -203,11 +183,9 @@
       "EventType": "confession",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 3416,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7517-9f67-c331d818ac1f",
@@ -221,11 +199,9 @@
       "EventType": "betrayal",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 3443,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7964-b3a9-478b97082c70",
@@ -241,11 +217,9 @@
       "BeatTags": [
         "subplot"
       ],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 6818,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7dc6-ba25-9dd1d2dfcb8a",
@@ -261,11 +235,9 @@
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 4506,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7917-9f20-eb9fd318f373",
@@ -279,11 +251,9 @@
       "EventType": "loss",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 3501,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-7441-b4df-1c40b1730fb2",
@@ -297,11 +267,9 @@
       "EventType": "confrontation",
       "RevelationMode": "surprise",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 5869,
+      "Flags": [],
+      "Covered": true
     },
     {
       "BeatId": "019fed2b-c889-72bb-a219-47711b0e0d99",
@@ -315,11 +283,9 @@
       "EventType": "vigil",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 0,
-      "Flags": [
-        "NO_PROSE"
-      ],
-      "Covered": false
+      "ProseLength": 3086,
+      "Flags": [],
+      "Covered": true
     }
   ]
 }

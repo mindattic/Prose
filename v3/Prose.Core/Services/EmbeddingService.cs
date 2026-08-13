@@ -320,7 +320,7 @@ public class EmbeddingService
 
         var beats = await (from sb in db.BeatNodes.AsNoTracking()
                            join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                           where searchIds.Contains(sb.NodeId) && sb.IsEnabled
+                           where searchIds.Contains(sb.NodeId) && true
                            orderby sb.SortKey
                            select new { b.Id, b.Title, b.Description, b.Text }).ToListAsync(ct);
         if (beats.Count == 0) return 0;
@@ -401,7 +401,7 @@ public class EmbeddingService
                 pe.ScopeId AS ScopeId,
                 1.0 - VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
             FROM dbo.ProseEmbeddings pe
-            JOIN dbo.BeatNodes sb ON sb.BeatId = pe.ScopeId AND sb.IsEnabled = 1
+            JOIN dbo.BeatNodes sb ON sb.BeatId = pe.ScopeId AND true = 1
             JOIN dbo.Nodes n ON n.Id = sb.NodeId
             WHERE pe.ScopeKind = '{ScopeBeatNode}'
               -- Filter on the NODE's universe (authoritative), NOT pe.UniverseId: the embedding

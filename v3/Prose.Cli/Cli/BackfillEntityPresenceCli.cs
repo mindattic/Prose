@@ -94,7 +94,7 @@ public static class BackfillEntityPresenceCli
         var query =
             from n in db.Nodes.AsNoTracking()
             join bn in db.BeatNodes.AsNoTracking() on n.Id equals bn.NodeId
-            where bn.IsEnabled
+            where true
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
             where b.Text != null && b.Text != ""
             select new { bn.NodeId, b.Id };

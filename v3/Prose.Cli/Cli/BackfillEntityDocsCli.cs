@@ -116,7 +116,7 @@ public static class BackfillEntityDocsCli
         foreach (var leafId in sourceIds)
         {
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.NodeId == leafId && bn.IsEnabled)
+                .Where(bn => bn.NodeId == leafId && true)
                 .OrderBy(bn => bn.SortKey)
                 .Select(bn => new { bn.Beat!.Description, bn.Beat.Text })
                 .ToListAsync();

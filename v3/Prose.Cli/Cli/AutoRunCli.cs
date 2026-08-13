@@ -215,26 +215,46 @@ public static class AutoRunCli
         catch (Exception ex) { Console.WriteLine($"[auto-run]   audit failed (skipping repair): {ex.Message}"); return; }
 
         if (audit.FailedLensCount > 0)
-            Console.WriteLine($"[auto-run]   ⚠ {audit.FailedLensCount}/3 audit lenses failed — coverage degraded; repair may miss defects.");
+            Console.WriteLine($"[auto-run]   ⚠ {audit.FailedLensCount}/{audit.TotalLensCount} audit lenses failed — coverage degraded; repair may miss defects.");
 
-        if (audit.FailedLensCount == 3)
+        if (audit.FailedLensCount == audit.TotalLensCount)
         {
-            Console.WriteLine("[auto-run]   audit could not run (all 3 lenses failed) — skipping repair this pass.");
+            Console.WriteLine($"[auto-run]   audit could not run (all {audit.TotalLensCount} lenses failed) — skipping repair this pass.");
             return;
         }
 
-        if (audit.IsClean)
+        var ordered       = await workbench.GetOrderedBeatsAsync(chapterId);
+        var beatsByNumber = ordered.ToDictionary(ob => ob.Beat.Number, ob => ob);
+
+        // Readability (plan "Making Prose readable...", 2026-08-13): pure-CPU Flesch check on
+        // every beat just written this pass, merged into the same repair pipeline as the lens
+        // audit's blockers — a beat scoring below the urgent floor gets the same targeted
+        // rewrite treatment as a causality/affect/interpersonal BLOCKER, no new repair path.
+        var readabilityIssues = ordered
+            .Where(ob => !string.IsNullOrWhiteSpace(ob.Beat.Text))
+            .Select(ob => (ob.Beat.Number, Metrics: BeatProseMetricsService.Compute(ob.Beat.Id, nodeId, ob.Beat.Text!)))
+            .Where(x => x.Metrics.FleschReadingEase < BeatProseMetricsService.UrgentReadabilityFloor)
+            .Select(x => new LensIssue(
+                Beat: x.Number,
+                Kind: "readability",
+                Evidence: $"Flesch {x.Metrics.FleschReadingEase:F0}, avg {x.Metrics.AvgWordsPerSentence:F1} words/sentence",
+                Fix: "Break long/associative sentences into short plain ones; cut interpretive gloss; plain words over Latinate ones.",
+                Severity: "High"))
+            .ToList();
+        if (readabilityIssues.Count > 0)
+            Console.WriteLine($"[auto-run]   readability: {readabilityIssues.Count} beat(s) below the urgent clarity floor.");
+
+        var allBlockers = audit.Blockers.Concat(readabilityIssues).ToList();
+
+        if (allBlockers.Count == 0)
         {
             Console.WriteLine("[auto-run]   audit clean — no blockers.");
             return;
         }
 
-        Console.WriteLine($"[auto-run]   {audit.Blockers.Count} blocker(s) found — starting repair pass…");
+        Console.WriteLine($"[auto-run]   {allBlockers.Count} blocker(s) found — starting repair pass…");
 
-        var ordered       = await workbench.GetOrderedBeatsAsync(chapterId);
-        var beatsByNumber = ordered.ToDictionary(ob => ob.Beat.Number, ob => ob);
-
-        var beatBlockers = audit.Blockers
+        var beatBlockers = allBlockers
             .Where(i => i.Beat.HasValue)
             .GroupBy(i => i.Beat!.Value)
             .ToList();

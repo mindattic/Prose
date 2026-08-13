@@ -65,7 +65,7 @@ public class SanityScanServiceGlossaryTests
         // it's a separate Kind so it wouldn't interfere with UndefinedAcronym assertions anyway.
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = beatText };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = id, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = id, BeatId = beat.Id, SortKey = 1 });
         await db.SaveChangesAsync();
         return id;
     }

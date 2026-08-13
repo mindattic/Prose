@@ -23,6 +23,10 @@ namespace Prose.Core.Services;
 // IDeterministicAuditRule) so violations persist to Findings — this used to write nothing
 // anywhere; the NounConsistencyReport/NounViolation return shape is unchanged for existing
 // callers (prose --validate-nouns, MCP validate_nouns).
+//
+// COST: zero LLM calls — a free query over DeprecatedEntityNames/Beats, the same DCM-
+// adjacent ledger data TimelineConsistencyService reads. Runs in BookHealthService's FREE
+// tier (validate-nouns), not part of the paid audit battery. Confirmed 2026-08-13.
 // ─────────────────────────────────────────────────────────────────────────────
 
 public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory, AuditRunner auditRunner)
@@ -114,7 +118,7 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
         var beats = await db.BeatNodes
             .AsNoTracking()
             .Include(nb => nb.Beat)
-            .Where(nb => nodeIds.Contains(nb.NodeId) && nb.IsEnabled && nb.Beat != null)
+            .Where(nb => nodeIds.Contains(nb.NodeId) && true && nb.Beat != null)
             .OrderBy(nb => nb.SortKey)
             .Select(nb => new { nb.Beat!.Id, nb.Beat.Number, nb.Beat.Text })
             .ToListAsync(ct);

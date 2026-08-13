@@ -108,7 +108,7 @@ public static class ExportNodeCli
             var allNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(dbV, nodeId);
 
             var beatIds = await dbV.BeatNodes.AsNoTracking()
-                .Where(bn => allNodeIds.Contains(bn.NodeId) && bn.IsEnabled)
+                .Where(bn => allNodeIds.Contains(bn.NodeId) && true)
                 .Select(bn => bn.BeatId).Distinct().ToListAsync();
 
             var blockers = await dbV.BeatVerifications.AsNoTracking()
@@ -136,6 +136,7 @@ public static class ExportNodeCli
             Console.WriteLine($"[export-node] Wrote epub: {result.EpubPath}");
             Console.WriteLine($"[export-node] Wrote pdf:  {result.PdfPath}");
             Console.WriteLine($"[export-node] Wrote txt:  {result.TxtPath}");
+            Console.WriteLine($"[export-node] Wrote md:   {result.MdPath} (beat-marked — edit whole, then --reimport-node or --import-md)");
 
             if (result.DocxMojibakeHits > 0)
                 Console.Error.WriteLine($"[export-node] ⚠  {result.DocxMojibakeHits} mojibake sequence(s) found in exported .docx — run 'prose --repair --fix-mojibake' then re-export.");

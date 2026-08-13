@@ -80,7 +80,7 @@ public static class PrintNodeCli
 
         var rows = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => searchIds.Contains(sb.NodeId) && sb.IsEnabled)
+            .Where(sb => searchIds.Contains(sb.NodeId) && true)
             .Join(db.Beats.AsNoTracking(),
                   sb => sb.BeatId,
                   b  => b.Id,

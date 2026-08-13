@@ -9,14 +9,17 @@ namespace Prose.UnitTests;
 
 /// <summary>
 /// Regression cover for the 2026-08-09 fix to <see cref="BeatAuditService"/>'s total-lens-failure
-/// path. When all three story lenses (causality, affect→behavior, interpersonal) failed to reach
-/// the LLM, the service returned <c>IsClean: true</c> — "audit clean, no blockers" — even though
-/// zero evidence was ever gathered. <c>AutoRunCli</c> acted on that literally: it printed "audit
-/// clean — no blockers" and silently skipped the self-repair pass this service exists to run,
-/// during exactly the compounding-errors scenario (a total LLM outage) its own class doc comment
-/// warns against. Same defect family as the BookAuditService.GatewayReady and
-/// StoryScopeAuditService.Ready fixes earlier this session — "the check never ran" must never be
-/// indistinguishable from "the check ran and found nothing."
+/// path. When all four story lenses (causality, affect→behavior, interpersonal, craft quality)
+/// failed to reach the LLM, the service returned <c>IsClean: true</c> — "audit clean, no
+/// blockers" — even though zero evidence was ever gathered. <c>AutoRunCli</c> acted on that
+/// literally: it printed "audit clean — no blockers" and silently skipped the self-repair pass
+/// this service exists to run, during exactly the compounding-errors scenario (a total LLM
+/// outage) its own class doc comment warns against. Same defect family as the
+/// BookAuditService.GatewayReady and StoryScopeAuditService.Ready fixes earlier this session —
+/// "the check never ran" must never be indistinguishable from "the check ran and found nothing."
+/// Updated 2026-08-13 (plan "Separating rigor from fluidity") for the fourth lens,
+/// <see cref="CraftQualityService"/> — the total-failure threshold must scale with lens count,
+/// not stay hardcoded at the old count.
 /// </summary>
 [TestFixture]
 public class BeatAuditServiceTests
@@ -55,26 +58,28 @@ public class BeatAuditServiceTests
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = "Some prose to audit." };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = id, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = id, BeatId = beat.Id, SortKey = 1 });
         await db.SaveChangesAsync();
         return id;
     }
 
     [Test]
-    public async Task AuditAsync_AllThreeLensesFail_IsNotReportedClean()
+    public async Task AuditAsync_AllFourLensesFail_IsNotReportedClean()
     {
         var throwingLlm = new ThrowingLlmService();
         var findings = new FindingsService(dbFactory, paths);
         var causality = new CausalityService(throwingLlm, findings, dbFactory, NullLogger<CausalityService>.Instance);
         var affect = new AffectBehaviorService(throwingLlm, findings, dbFactory, NullLogger<AffectBehaviorService>.Instance);
         var interpersonal = new InterpersonalDynamicsService(throwingLlm, findings, dbFactory, NullLogger<InterpersonalDynamicsService>.Instance);
-        var svc = new BeatAuditService(causality, affect, interpersonal, NullLogger<BeatAuditService>.Instance);
+        var craftQuality = new CraftQualityService(throwingLlm, findings, dbFactory, NullLogger<CraftQualityService>.Instance);
+        var svc = new BeatAuditService(causality, affect, interpersonal, craftQuality, NullLogger<BeatAuditService>.Instance);
 
         var nodeId = await SeedNodeWithBeatAsync();
 
         var result = await svc.AuditAsync(nodeId);
 
-        Assert.That(result.FailedLensCount, Is.EqualTo(3));
+        Assert.That(result.FailedLensCount, Is.EqualTo(4));
+        Assert.That(result.TotalLensCount, Is.EqualTo(4));
         Assert.That(result.IsClean, Is.False,
             "a beat whose audit lenses could not run at all must never be reported as a clean pass");
     }
