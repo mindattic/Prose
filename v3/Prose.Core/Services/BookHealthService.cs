@@ -74,6 +74,8 @@ public class BookHealthService(
     BehavioralInvariantEnforcer behaviorEnforcer,
     BeatDuplicateService beatDuplicate,
     SanityScanService sanityScan,
+    BeatRepairService beatRepair,
+    NodeWorkbenchService workbench,
     ILogger<BookHealthService> log)
 {
     // ── SII formula constants ───────────────────────────────────────────────────────
@@ -142,7 +144,7 @@ public class BookHealthService(
         if (tier == BookHealthTier.Full)
         {
             await RunCheckAsync(checks, "storyscope-audit", async () => { storyScopeReport = await storyScopeAudit.AuditAsync(nodeId, ct); });
-            await RunCheckAsync(checks, "swain-audit", async () => { swainReport = await SwainAsync(slug, ct); });
+            await RunCheckAsync(checks, "swain-audit", async () => { swainReport = await SwainAsync(nodeId, slug, ct); });
             await RunCheckAsync(checks, "chekhov-audit", () => ChekhovAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "five-act-map", () => FiveActMapAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "dramatic-question", () => DramaticQuestionAsync(nodeId, slug, ct));
@@ -181,7 +183,7 @@ public class BookHealthService(
     {
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beats = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
+            .Where(bn => searchIds.Contains(bn.NodeId) && true && bn.Beat != null && bn.Beat.Text != "")
             .Select(bn => new { bn.BeatId, Text = bn.Beat!.Text }).ToListAsync(ct);
         foreach (var b in beats)
             await postBeatValidator.QuickValidateAsync(slug, b.Text, b.BeatId, ct);
@@ -216,7 +218,7 @@ public class BookHealthService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var totalBeats = await db.BeatNodes.AsNoTracking().CountAsync(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled, ct);
+        var totalBeats = await db.BeatNodes.AsNoTracking().CountAsync(bn => searchIds.Contains(bn.NodeId) && true, ct);
         if (totalBeats < 20) return;
 
         var audit = await plantPayoff.AuditAsync(nodeId, ct);
@@ -285,6 +287,77 @@ public class BookHealthService(
         }
     }
 
+    /// <summary>Attempts before Findings: max repair attempts per beat via BeatRepairService,
+    /// matching AutoRunCli's write-time lens self-repair loop (MaxRepairAttempts there is also
+    /// 2). Kept as its own constant since these are two independent, differently-scoped repair
+    /// loops (write-time lenses vs. Full-tier audits), not one shared budget.</summary>
+    private const int MaxSelfHealAttempts = 2;
+
+    /// <summary>
+    /// Repair-then-recheck pass shared by the Full-tier score/classification audits (2026-08-13):
+    /// attempts a real targeted rewrite via <see cref="BeatRepairService.RepairAsync"/> — the same
+    /// mechanism <c>AutoRunCli</c>'s write-time lens self-repair already uses live — before ever
+    /// filing a Finding for a human to read. Only candidates still failing after
+    /// <see cref="MaxSelfHealAttempts"/> genuine rounds are returned; those are what actually need
+    /// to surface.
+    ///
+    /// Round-based, not per-beat: every candidate still outstanding gets a repair attempt each
+    /// round (beats with multiple failing checks get ONE rewrite carrying all of them as MUST-FIX
+    /// constraints, same grouping <c>AutoRunCli</c> uses for its own blockers), then
+    /// <c>stillFailingAsync</c> is called ONCE per round for the whole remaining batch — not once
+    /// per beat. This matters for checks whose only re-verification path is a whole-book re-audit
+    /// (SWAIN's <c>AuditAsync</c>): calling that per beat per attempt would multiply an already
+    /// expensive audit by the beat count. A check with a cheap single-beat re-check (VERIFY,
+    /// DRAMATIC-Q) just loops internally inside its own <c>stillFailingAsync</c> implementation.
+    ///
+    /// A round with nothing successfully repaired stops immediately rather than re-checking
+    /// (nothing changed, so nothing could have healed) or retrying (repair itself is failing, not
+    /// the content). A single beat's repair exception is caught and logged per-beat, not
+    /// per-round, so one bad beat can't stop the rest of the batch from healing.
+    ///
+    /// <c>repairAsync</c>/<c>writeTextAsync</c> are passed in explicitly (rather than closing over
+    /// <c>beatRepair</c>/<c>workbench</c>) so this method is <c>internal static</c> — testable with
+    /// fakes for both, no need to construct a full <see cref="BookHealthService"/> and its ~30
+    /// unrelated dependencies just to prove the retry/escalation logic (see
+    /// <c>[InternalsVisibleTo]</c> in Prose.Core's AssemblyInfo.cs, same pattern used for
+    /// <c>SceneContextAssembler.FilterToBeatUniverseAsync</c>).
+    /// </summary>
+    internal static async Task<List<T>> SelfHealAsync<T>(
+        Guid nodeId,
+        IEnumerable<T> candidates,
+        Func<T, Guid> beatIdOf,
+        Func<T, LensIssue> issueOf,
+        Func<Guid, Guid, IReadOnlyList<LensIssue>, CancellationToken, Task<string?>> repairAsync,
+        Func<Guid, string, CancellationToken, Task> writeTextAsync,
+        Func<IReadOnlyList<T>, CancellationToken, Task<List<T>>> stillFailingAsync,
+        ILogger log,
+        CancellationToken ct)
+    {
+        var remaining = candidates.ToList();
+        for (var attempt = 0; attempt < MaxSelfHealAttempts && remaining.Count > 0; attempt++)
+        {
+            var repairedAnything = false;
+            foreach (var group in remaining.GroupBy(beatIdOf).ToList())
+            {
+                var beatId = group.Key;
+                try
+                {
+                    var newText = await repairAsync(beatId, nodeId, group.Select(issueOf).ToList(), ct);
+                    if (string.IsNullOrWhiteSpace(newText)) continue;
+                    await writeTextAsync(beatId, newText, ct);
+                    repairedAnything = true;
+                }
+                catch (Exception ex)
+                {
+                    log.LogWarning(ex, "[BookHealthService] Self-heal attempt {Attempt} failed for beat {BeatId}", attempt + 1, beatId);
+                }
+            }
+            if (!repairedAnything) break;
+            remaining = await stillFailingAsync(remaining, ct);
+        }
+        return remaining;
+    }
+
     /// <summary>BeatVerificationService persists to the BeatVerifications table (its own
     /// Truth-Table dashboard source) but never files shared Findings — wrap the non-Pass
     /// rows here. Severity vocabulary (BLOCKER/MODERATE/MINOR) maps 1:1 onto High/Medium/Low.</summary>
@@ -300,7 +373,7 @@ public class BookHealthService(
         // pre-export gate, found in the same audit).
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatIds = await db.BeatNodes.AsNoTracking()
-            .Where(bn => nodeIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
+            .Where(bn => nodeIds.Contains(bn.NodeId) && true).Select(bn => bn.BeatId).ToListAsync(ct);
 
         var failing = await db.BeatVerifications.AsNoTracking()
             .Where(v => beatIds.Contains(v.BeatId) && v.Result != "Pass" && v.Result != "Skipped")
@@ -308,11 +381,56 @@ public class BookHealthService(
             .ToListAsync(ct);
 
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "VERIFY ");
-        foreach (var x in failing)
+
+        // BannedPattern is a unique textual anti-tell per beat — stays granular so a human can
+        // jump straight to the offending beat, and is left untouched by self-heal for this first
+        // pass (a categorical anti-tell rule, not a score-floor gap — see SwainAsync/
+        // DramaticQuestionAsync for the same treatment being extended there next).
+        foreach (var x in failing.Where(x => x.CheckType == "BannedPattern"))
         {
             var sev = x.Severity switch { "BLOCKER" => FindingSeverity.High, "MODERATE" => FindingSeverity.Medium, _ => FindingSeverity.Low };
             findingsSvc.Upsert($"node:{slug}/beat:{x.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, sev,
-                $"VERIFY [{x.CheckType}] beat #{x.Number}: {x.Result} — {x.Evidence}", snippet: null, suggestedFix: null,
+                $"VERIFY [BannedPattern] beat #{x.Number}: {x.Result} — {x.Evidence}", snippet: null, suggestedFix: null,
+                sourceRuleVersion: BeatVerificationService.CurrentRuleVersion);
+        }
+
+        // EventType/SubplotCarrier/EscalationFloor/DeclaredPurpose are threshold/classification
+        // checks (score vs. floor, category match) — the same shape LensIssue already carries, so
+        // a real repair attempt runs before any Finding is filed (2026-08-13 fix). Only beats
+        // still failing after MaxSelfHealAttempts feed the book-level rollup below.
+        var nonBanned = failing.Where(x => x.CheckType != "BannedPattern").ToList();
+        var stillFailing = await SelfHealAsync(
+            nodeId, nonBanned,
+            beatIdOf: x => x.BeatId,
+            issueOf: x => new LensIssue(x.Number, x.CheckType, x.Evidence ?? x.Result, $"Fix the {x.CheckType} defect: {x.Evidence ?? x.Result}", x.Severity),
+            repairAsync: (beatId, nid, issues, ct2) => beatRepair.RepairAsync(beatId, nid, issues, bookBibleOverride: null, ct2),
+            writeTextAsync: (beatId, newText, ct2) => workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null, ct: ct2),
+            stillFailingAsync: async (remaining, ct2) =>
+            {
+                // VerifyBeatAsync is cheap per-beat, so re-check each distinct repaired beat
+                // directly rather than re-running the whole-book audit (SwainAsync below does the
+                // opposite — its only re-check IS the whole-book audit, so it re-runs that once).
+                var stillFailingByBeat = new Dictionary<Guid, HashSet<string>>();
+                foreach (var beatId in remaining.Select(x => x.BeatId).Distinct())
+                {
+                    var fresh = await beatVerification.VerifyBeatAsync(beatId, declaredPurposeBaseline: null, ct2);
+                    stillFailingByBeat[beatId] = fresh
+                        .Where(r => r.Result != "Pass" && r.Result != "Skipped")
+                        .Select(r => r.CheckType)
+                        .ToHashSet();
+                }
+                return remaining.Where(x => stillFailingByBeat[x.BeatId].Contains(x.CheckType)).ToList();
+            },
+            log,
+            ct);
+
+        foreach (var grp in stillFailing.GroupBy(x => x.CheckType))
+        {
+            var worstSev = grp.Any(x => x.Severity == "BLOCKER") ? FindingSeverity.High
+                : grp.Any(x => x.Severity == "MODERATE") ? FindingSeverity.Medium : FindingSeverity.Low;
+            var examples = string.Join("; ", grp.Take(5).Select(x => $"#{x.Number}: {x.Evidence}"));
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, worstSev,
+                $"VERIFY [{grp.Key}]: {grp.Count()} beat(s) fail — worst examples: {examples}", snippet: null, suggestedFix: null,
                 sourceRuleVersion: BeatVerificationService.CurrentRuleVersion);
         }
     }
@@ -404,33 +522,80 @@ public class BookHealthService(
             }
         }
 
-        foreach (var (b, _) in perBeat)
-            findingsSvc.Upsert($"node:{slug}/beat:{b.BeatId:N}", chapterId: null, FindingCategory.OutlineDrift, FindingSeverity.Medium,
-                $"COORDINATE beat #{b.Number}: written but not coordinated to its outline slot — {string.Join(", ", b.Flags)}",
+        // One book-level finding per distinct flag combination, not one per beat (2026-08-13
+        // fix — a live corpus check found 664 individual "COORDINATE beat #N" rows sitting
+        // unreviewed, the same one-row-per-beat pattern as SWAIN/DRAMATIC-Q). The per-beat
+        // coordination check itself is unchanged; this only changes how many rows a run files.
+        foreach (var grp in perBeat.GroupBy(x => string.Join(", ", x.Beat.Flags)))
+        {
+            var examples = string.Join(", ", grp.Take(5).Select(x => $"#{x.Beat.Number}"));
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.OutlineDrift, FindingSeverity.Medium,
+                $"COORDINATE [{grp.Key}]: {grp.Count()} beat(s) written but not coordinated to their outline slot — e.g. {examples}",
                 snippet: null, suggestedFix: null);
+        }
     }
 
     /// <summary>SwainAuditService returns per-beat classifications but never files shared
     /// Findings. File BLOCKER (Deficient) only by default — MODERATE (Ambiguous) is a soft
     /// call that would otherwise drown the inbox (same calibration lesson BeatChecklistGateService
-    /// already learned filing DELIGHT flat-beats).</summary>
-    private async Task<SwainAuditReport> SwainAsync(string slug, CancellationToken ct)
+    /// already learned filing DELIGHT flat-beats).
+    ///
+    /// One book-level finding, not one per beat (2026-08-13 fix — a corpus-wide SWAIN sweep had
+    /// filed 6,372 individual per-beat rows, ~70% of the entire Findings backlog, none of them
+    /// realistically triageable one at a time). The full per-beat detail still lives in
+    /// <see cref="SwainAuditReport.Results"/>; this just changes how many Finding rows a run
+    /// produces, not what gets evaluated.</summary>
+    private async Task<SwainAuditReport> SwainAsync(Guid nodeId, string slug, CancellationToken ct)
     {
         var report = await swainAudit.AuditAsync(slug, ct: ct);
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SWAIN ");
-        foreach (var b in report.Results.Where(b => b.Severity == "BLOCKER"))
-            findingsSvc.Upsert($"node:{slug}/beat:{b.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.High,
-                $"SWAIN beat #{b.Position} \"{b.Title}\": {b.Classification} missing {b.MissingElement} — {b.Note}",
+        var blockers = report.Results.Where(b => b.Severity == "BLOCKER").ToList();
+
+        // Self-heal before filing (2026-08-13): a real repair attempt via BeatRepairService, same
+        // mechanism AutoRunCli's write-time lens self-repair already uses live. The only
+        // re-verification path SwainAuditService offers is a whole-book re-audit, so
+        // stillFailingAsync re-runs that once per round (not once per beat) — see SelfHealAsync's
+        // own doc comment. `finalReport` tracks the latest audit state so the SII score this
+        // method returns reflects post-repair reality, not the pre-repair snapshot.
+        var finalReport = report;
+        if (blockers.Count > 0)
+        {
+            await SelfHealAsync(
+                nodeId, blockers,
+                beatIdOf: x => x.BeatId,
+                issueOf: x => new LensIssue(x.Position, x.Classification.ToString(), x.Note,
+                    $"Rewrite as a proper Scene (Goal→Conflict→Disaster) or Sequel (Reaction→Dilemma→Decision) — missing: {x.MissingElement}",
+                    x.Severity),
+                repairAsync: (beatId, nid, issues, ct2) => beatRepair.RepairAsync(beatId, nid, issues, bookBibleOverride: null, ct2),
+                writeTextAsync: (beatId, newText, ct2) => workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null, ct: ct2),
+                stillFailingAsync: async (remaining, ct2) =>
+                {
+                    finalReport = await swainAudit.AuditAsync(slug, ct: ct2);
+                    var stillBlockerBeats = finalReport.Results.Where(r => r.Severity == "BLOCKER").Select(r => r.BeatId).ToHashSet();
+                    return remaining.Where(x => stillBlockerBeats.Contains(x.BeatId)).ToList();
+                },
+                log,
+                ct);
+        }
+
+        var stillFailing = finalReport.Results.Where(b => b.Severity == "BLOCKER").ToList();
+        if (stillFailing.Count > 0)
+        {
+            var examples = string.Join("; ", stillFailing.Take(5)
+                .Select(b => $"#{b.Position} \"{b.Title}\" ({b.Classification} missing {b.MissingElement})"));
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.High,
+                $"SWAIN: {stillFailing.Count}/{finalReport.TotalBeats} beats fail compliance — worst examples: {examples}",
                 snippet: null, suggestedFix: null);
+        }
         // Surface incomplete evaluation distinctly rather than silently under-reporting — same
         // principle as the Round 6 ERROR-severity fix for BookAuditService/StoryScopeAuditService.
         // ErrorCount rows are already excluded from BlockerCount/ComplianceRate by construction;
         // this rollup just tells an operator WHY the audit covered fewer beats than expected.
-        if (report.ErrorCount > 0)
+        if (finalReport.ErrorCount > 0)
             findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
-                $"SWAIN [incomplete]: {report.ErrorCount}/{report.TotalBeats} beats could not be evaluated (LLM/parse errors) — re-run once resolved.",
+                $"SWAIN [incomplete]: {finalReport.ErrorCount}/{finalReport.TotalBeats} beats could not be evaluated (LLM/parse errors) — re-run once resolved.",
                 snippet: null, suggestedFix: null);
-        return report;
+        return finalReport;
     }
 
     /// <summary>ChekhovAuditService returns a verdict per prop cluster but never files shared
@@ -465,11 +630,14 @@ public class BookHealthService(
     /// <summary>NarrativeScienceService's dramatic-question check ("who is this person really?")
     /// is per-beat (Will Storr's framework) and never files Findings. One LLM call PER BEAT —
     /// the most direct existing match for "does prose reveal character, not just plot," so it's
-    /// worth the cost, but it's real: this is why the check lives in FULL, not DEEP. Skipped:
-    /// AuditSceneEngagementAsync's 6-point scene anatomy — its mechanisms (unexpected change,
-    /// cause-effect, specificity, show-not-tell) substantially overlap with what LogicSweep's
-    /// causality dimension, DELIGHT moves, and StoryScope already check per-beat; adding it
-    /// would mostly re-spend LLM calls on signal already covered elsewhere.</summary>
+    /// worth the cost, but it's real: this is why the check lives in FULL, not DEEP. Deliberately
+    /// beat-scoped, not a candidate for act/book-level rollup — 2026-08-13 cost review confirmed
+    /// the other three wired-in NarrativeScienceService checks (five-act, sacred-flaw, and this
+    /// one) are already scoped at the right granularity (book/character/beat respectively);
+    /// AuditSceneEngagementAsync's 6-point scene anatomy was the one genuinely redundant analyzer
+    /// (mechanisms overlapped LogicSweep's causality dimension, DELIGHT moves, and StoryScope) and
+    /// had no automated caller anywhere — it was removed outright rather than left as a manual
+    /// CLI/MCP-only cost trap. See NarrativeScienceService.cs's header comment.</summary>
     private async Task DramaticQuestionAsync(Guid nodeId, string slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -499,16 +667,63 @@ public class BookHealthService(
             }
         }
 
-        foreach (var e in evaluated)
-            findingsSvc.DeleteBySummaryPrefix($"node:{slug}/beat:{e.BeatId:N}", "DRAMATIC-Q ");
-        foreach (var e in evaluated)
+        // One book-level finding, not one per beat (2026-08-13 fix — a corpus-wide DRAMATIC-Q
+        // sweep had filed 2,066 individual per-beat rows, none of them realistically triageable
+        // one at a time). The per-beat LLM evaluation itself stays exactly as scoped above — this
+        // only changes how many Finding rows a run produces, not what gets evaluated.
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "DRAMATIC-Q ");
+        var failingInitially = evaluated.Where(e => !(e.Result.DramaticQuestionActive && e.Result.OverallScore >= 5)).ToList();
+
+        // Self-heal before filing (2026-08-13): a real repair attempt via BeatRepairService, same
+        // mechanism AutoRunCli's write-time lens self-repair already uses live. Re-check re-runs
+        // CheckDramaticQuestionAsync directly on the repaired beat's fresh text — cheap, since
+        // this check already operates one beat at a time (unlike SWAIN, whose only re-check is a
+        // whole-book re-audit).
+        var stillFailing = failingInitially.Count == 0
+            ? failingInitially
+            : await SelfHealAsync(
+                nodeId, failingInitially,
+                beatIdOf: e => e.BeatId,
+                issueOf: e => new LensIssue(
+                    e.Number, "DramaticQuestion",
+                    string.IsNullOrWhiteSpace(e.Result.SubconsciousSummary) ? e.Result.SurfaceSummary : e.Result.SubconsciousSummary,
+                    string.IsNullOrWhiteSpace(e.Result.ImprovementHint) ? "Reveal who this character really is beneath the surface action." : e.Result.ImprovementHint,
+                    e.Result.OverallScore <= 2 ? "MODERATE" : "MINOR"),
+                repairAsync: (beatId, nid, issues, ct2) => beatRepair.RepairAsync(beatId, nid, issues, bookBibleOverride: null, ct2),
+                writeTextAsync: (beatId, newText, ct2) => workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null, ct: ct2),
+                stillFailingAsync: async (remaining, ct2) =>
+                {
+                    var result = new List<(Guid BeatId, int Number, DramaticQuestionResult Result)>();
+                    foreach (var e in remaining)
+                    {
+                        var freshText = await db.Beats.AsNoTracking()
+                            .Where(b => b.Id == e.BeatId).Select(b => b.Text).FirstOrDefaultAsync(ct2);
+                        if (string.IsNullOrWhiteSpace(freshText)) { result.Add(e); continue; }
+                        try
+                        {
+                            var fresh = await narrativeScience.CheckDramaticQuestionAsync(freshText, characterId: null, ct2);
+                            if (!(fresh.DramaticQuestionActive && fresh.OverallScore >= 5))
+                                result.Add((e.BeatId, e.Number, fresh)); // carry the FRESH result forward for accurate display
+                        }
+                        catch (Exception ex)
+                        {
+                            log.LogWarning(ex, "CheckDramaticQuestionAsync re-check failed for beat {BeatId}", e.BeatId);
+                            result.Add(e); // re-check itself failed — keep as still-failing with the last-known result
+                        }
+                    }
+                    return result;
+                },
+                log,
+                ct);
+
+        if (stillFailing.Count > 0)
         {
-            if (e.Result.DramaticQuestionActive && e.Result.OverallScore >= 5) continue;
-            var sev = e.Result.OverallScore <= 2 ? FindingSeverity.Medium : FindingSeverity.Low;
-            findingsSvc.Upsert($"node:{slug}/beat:{e.BeatId:N}", chapterId: null, FindingCategory.StructuralFailure, sev,
-                $"DRAMATIC-Q beat #{e.Number}: scores {e.Result.OverallScore}/10 on \"who is this person really\" — " +
-                $"{(string.IsNullOrWhiteSpace(e.Result.SubconsciousSummary) ? "no subconscious layer detected" : e.Result.SubconsciousSummary)}",
-                snippet: null, suggestedFix: e.Result.ImprovementHint);
+            var sev = stillFailing.Any(e => e.Result.OverallScore <= 2) ? FindingSeverity.Medium : FindingSeverity.Low;
+            var examples = string.Join("; ", stillFailing.OrderBy(e => e.Result.OverallScore).Take(5)
+                .Select(e => $"#{e.Number} scores {e.Result.OverallScore}/10"));
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, sev,
+                $"DRAMATIC-Q: {stillFailing.Count}/{evaluated.Count} beats fail \"who is this person really\" — worst: {examples}",
+                snippet: null, suggestedFix: null);
         }
 
         if (failedCount > 0)
@@ -536,7 +751,7 @@ public class BookHealthService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatIds = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
+            .Where(bn => searchIds.Contains(bn.NodeId) && true).Select(bn => bn.BeatId).ToListAsync(ct);
         if (beatIds.Count == 0) return;
 
         var beatParams = beatIds.Select((id, i) => new SqlParameter($"@b{i}", id)).ToArray();
@@ -592,7 +807,7 @@ public class BookHealthService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatIds = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled).Select(bn => bn.BeatId).ToListAsync(ct);
+            .Where(bn => searchIds.Contains(bn.NodeId) && true).Select(bn => bn.BeatId).ToListAsync(ct);
         if (beatIds.Count == 0) return;
 
         var bookEntityIds = await db.BeatEntityMentions.AsNoTracking()
@@ -720,7 +935,7 @@ public class BookHealthService(
         // Keep each beat's chapter-node (bn.NodeId) — test passages are aggregated per chapter,
         // not per beat, so Jaccard has enough tokens on both sides to mean anything (see below).
         var beatChapters = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled)
+            .Where(bn => searchIds.Contains(bn.NodeId) && true)
             .Select(bn => new { bn.BeatId, ChapterNodeId = bn.NodeId })
             .ToListAsync(ct);
         if (beatChapters.Count == 0) return;
@@ -816,7 +1031,7 @@ public class BookHealthService(
     {
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var rows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && bn.IsEnabled && bn.Beat != null && bn.Beat.Text != "")
+            .Where(bn => searchIds.Contains(bn.NodeId) && true && bn.Beat != null && bn.Beat.Text != "")
             .OrderBy(bn => bn.SortKey)
             .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text })
             .ToListAsync(ct);

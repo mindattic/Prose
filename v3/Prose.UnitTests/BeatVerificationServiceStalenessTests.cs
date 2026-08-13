@@ -51,7 +51,7 @@ public class BeatVerificationServiceStalenessTests
 
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = new Random().Next(1, 999999), Text = "Some prose." };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1 });
 
         db.BeatVerifications.Add(new BeatVerification
         {
@@ -117,7 +117,16 @@ public class BeatVerificationServiceStalenessTests
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = new Random().Next(1, 999999), Text = "Some prose to verify." };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1 });
+        // BannedPattern (and every other per-beat check) is gated on a BeatBlueprintDecision
+        // existing (2026-08-12 fix — see VerifyBeatAsync's own doc comment: unconditional
+        // BannedPattern gave false positives on blueprint-less nonfiction books). Without one,
+        // VerifyBeatAsync produces zero results, so this RuleVersion-stamping test needs a
+        // decision (and its required NodeStructuralBlueprint FK target) present to have any
+        // row to inspect.
+        var blueprint = new NodeStructuralBlueprint { Id = Guid.NewGuid(), NodeId = nodeId };
+        db.NodeStructuralBlueprints.Add(blueprint);
+        db.BeatBlueprintDecisions.Add(new BeatBlueprintDecision { Id = Guid.NewGuid(), BeatId = beat.Id, BlueprintId = blueprint.Id });
         await db.SaveChangesAsync();
 
         var svc = new BeatVerificationService(dbFactory, NullLogger<BeatVerificationService>.Instance);
@@ -137,6 +146,12 @@ public class BeatVerificationServiceStalenessTests
     /// so they survived 3+ separate --audit-book re-runs across one session, immune to every
     /// refresh because nothing was ever in `results` to overwrite them. VerifyBeatAsync must
     /// reap any existing per-beat-check row whose CheckType isn't in the current run's results.
+    ///
+    /// A later fix (2026-08-12) also moved BannedPattern behind the same decision != null gate
+    /// (unconditional BannedPattern gave false positives on blueprint-less nonfiction books), so
+    /// with no decision at all every per-beat-check type is now orphaned — the fully-correct
+    /// outcome is zero rows left, not "only BannedPattern survives" as this test originally
+    /// asserted.
     /// </summary>
     [Test]
     public async Task VerifyBeatAsync_ReapsOrphanedRowsWhenDecisionNoLongerExists()
@@ -152,7 +167,7 @@ public class BeatVerificationServiceStalenessTests
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = new Random().Next(1, 999999), Text = "Some prose." };
         db.Beats.Add(beat);
-        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1, IsEnabled = true });
+        db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = 1 });
 
         // Simulate the "checked while a decision existed" state directly — these four rows are
         // exactly what a prior VerifyBeatAsync run would have left behind before the decision
@@ -179,7 +194,7 @@ public class BeatVerificationServiceStalenessTests
         await using var verifyDb = await dbFactory.CreateDbContextAsync();
         var remaining = await verifyDb.BeatVerifications.Where(v => v.BeatId == beat.Id).ToListAsync();
 
-        Assert.That(remaining.Select(r => r.CheckType), Is.EquivalentTo(new[] { "BannedPattern" }),
-            "the four orphaned rows (no longer producible without a BeatBlueprintDecision) must be reaped, leaving only the current run's BannedPattern result");
+        Assert.That(remaining, Is.Empty,
+            "with no BeatBlueprintDecision, every per-beat-check type (BannedPattern included, per the 2026-08-12 gate) is orphaned and must be reaped");
     }
 }

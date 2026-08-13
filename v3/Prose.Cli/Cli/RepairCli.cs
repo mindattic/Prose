@@ -53,12 +53,8 @@ public static class RepairCli
         await knowledgeMap.EnsureKnowledgeJsonColumnAsync(ct);
         var outlineSvc = sp.GetRequiredService<Prose.Core.Services.OutlineService>();
         await outlineSvc.EnsureOutlineJsonColumnAsync(ct);
-        var refinementSvc = sp.GetRequiredService<Prose.Core.Services.StoryRefinementService>();
-        await refinementSvc.EnsureRefinementReportColumnAsync(ct);
-        var qualitySvc = sp.GetRequiredService<Prose.Core.Services.StoryQualityService>();
-        await qualitySvc.EnsureQualityReportColumnAsync(ct);
-        var directorSvc = sp.GetRequiredService<Prose.Core.Services.StoryDirectorService>();
-        await directorSvc.EnsureCheckpointColumnAsync(ct);
+        var readerKnowledge = sp.GetRequiredService<Prose.Core.Services.ReaderKnowledgeService>();
+        await readerKnowledge.MigrateLegacyFindingsAsync(ct);
 
         var timeline = repair.RepairTimelines(ct);
         Console.WriteLine();

@@ -103,9 +103,7 @@ public class WorldStateAtBeatService
         // Latest EntityStateEvent per (EntityId, AspectKey) at or before this story time.
         // Group in memory after a bounded query — avoids complex SQL GROUP BY on temporal tables.
         var eventsQ = db.EntityStateEvents.AsNoTracking()
-            .Where(e => e.AtStoryTime <= t
-                     && (e.InWorldValidFrom == null || e.InWorldValidFrom <= t)
-                     && (e.InWorldValidTo == null || e.InWorldValidTo > t));
+            .Where(e => e.AtStoryTime <= t);
 
         if (scopeIds is { Count: > 0 })
             eventsQ = eventsQ.Where(e => scopeIds.Contains(e.EntityId));

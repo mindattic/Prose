@@ -79,7 +79,7 @@ public class SceneContextAssembler(
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await db.Database.ExecuteSqlRawAsync("DELETE FROM [dbo].[BeatEntities] WHERE [BeatId] = {0}", [beatId], ct);
-        var roster = DedupeByEntityId(ctx.Roster);
+        var roster = await FilterToBeatUniverseAsync(db, beatId, DedupeByEntityId(ctx.Roster), ct);
         if (roster.Count == 0) return;
         var sql = new System.Text.StringBuilder(
             "INSERT INTO [dbo].[BeatEntities] ([BeatId],[EntityId],[Name],[EntityType],[MatchSource],[Score]) VALUES ");
@@ -97,6 +97,87 @@ public class SceneContextAssembler(
             parameters.Add((object?)r.Score);
         }
         await db.Database.ExecuteSqlRawAsync(sql.ToString(), parameters.Cast<object>().ToArray(), ct);
+    }
+
+    /// <summary>
+    /// Upsert this beat's POV entity into <c>BeatEntityPresence</c> (PresenceType='pov') — the
+    /// row <see cref="Prose.Core.Services.VerificationContextService.GetPovEntityIdAsync"/> and
+    /// <c>DocContextService.PrepareForNodeAsync</c>'s per-beat voice-pinning both depend on.
+    ///
+    /// Closes a real gap found 2026-08-13: this table has no CREATE TABLE anywhere in the C#
+    /// codebase (confirmed live schema via INFORMATION_SCHEMA.COLUMNS — BeatId/EntityId/
+    /// EntityName/PresenceType/Source/ClassifiedAt, PK on (BeatId, EntityId)) and the ~2,000
+    /// existing rows are all one-time historical backfills (Source='pov-map'/'pov-swain-retag-317'
+    /// etc., dated 2026-07-21 to 2026-08-06) — nothing in the live write path had continued
+    /// adding rows for new beats or new books. Picks the highest-scoring character-type entry
+    /// in the roster as POV, matching the informal convention already used elsewhere
+    /// (Prose.Writer's Write.razor treats <c>chapter.Characters?.FirstOrDefault()</c> the same way).
+    /// Upserts only the POV entity's own row (BeatId, EntityId) — does NOT delete-then-replace
+    /// the beat's other presence rows the way <see cref="PersistRosterAsync"/> replaces
+    /// BeatEntities, since other PresenceType rows for this beat are a different, unrelated fact.
+    /// </summary>
+    public async Task PersistPovAsync(Guid beatId, SceneContext ctx, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var characters = await FilterToBeatUniverseAsync(db, beatId,
+            ctx.Roster.Where(r => string.Equals(r.EntityType, "character", StringComparison.OrdinalIgnoreCase)).ToList(), ct);
+        var pov = characters.OrderByDescending(r => r.Score).FirstOrDefault();
+        if (pov == null) return;
+
+        await db.Database.ExecuteSqlRawAsync("""
+            MERGE INTO [dbo].[BeatEntityPresence] AS target
+            USING (SELECT {0} AS BeatId, {1} AS EntityId) AS src
+              ON target.BeatId = src.BeatId AND target.EntityId = src.EntityId
+            WHEN MATCHED THEN
+              UPDATE SET PresenceType = 'pov', EntityName = {2}, Source = 'auto-write', ClassifiedAt = SYSUTCDATETIME()
+            WHEN NOT MATCHED THEN
+              INSERT (BeatId, EntityId, EntityName, PresenceType, Source, ClassifiedAt)
+              VALUES ({0}, {1}, {2}, 'pov', 'auto-write', SYSUTCDATETIME());
+            """, [beatId, pov.EntityId, pov.Name], ct);
+    }
+
+    /// <summary>
+    /// Defense-in-depth against cross-universe contamination (plan "Prose, objectively...",
+    /// 2026-08-13). The specific historical bug that produced 788 contaminated rows in VIGL (a
+    /// backfill CLI silently ignoring `--universe` scope) was already fixed before this pass —
+    /// see <c>FixCrossUniverseContaminationCli.cs</c>'s root-cause comment — and the live
+    /// matching pipeline (embedding search, name-index scan) is already correctly scoped by the
+    /// ambient EF query filter. This is a second, independent check at the exact write path that
+    /// produced the historical bad data: even if the ambient scope were ever wrong again for any
+    /// future reason, a mismatched entity gets dropped and logged here instead of silently
+    /// written. Ground-truth reads via <c>IgnoreQueryFilters()</c> deliberately bypass the
+    /// ambient scope — trusting the ambient-filtered read would defeat the point of a check whose
+    /// entire premise is "the ambient scope might be wrong."
+    /// </summary>
+    internal async Task<List<SceneEntityRef>> FilterToBeatUniverseAsync(
+        ProseDbContext db, Guid beatId, List<SceneEntityRef> candidates, CancellationToken ct)
+    {
+        if (candidates.Count == 0) return candidates;
+
+        var beatUniverseId = await db.BeatNodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(bn => bn.BeatId == beatId)
+            .Join(db.Nodes.AsNoTracking().IgnoreQueryFilters(), bn => bn.NodeId, n => n.Id, (bn, n) => n.UniverseId)
+            .FirstOrDefaultAsync(ct);
+        if (beatUniverseId == Guid.Empty) return candidates; // no node found — nothing to cross-check against
+
+        var entityIds = candidates.Select(c => c.EntityId).Distinct().ToList();
+        var entityUniverseById = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
+            .Where(e => entityIds.Contains(e.Id))
+            .ToDictionaryAsync(e => e.Id, e => e.UniverseId, ct);
+
+        var kept = new List<SceneEntityRef>(candidates.Count);
+        foreach (var c in candidates)
+        {
+            if (entityUniverseById.TryGetValue(c.EntityId, out var entityUniverseId) && entityUniverseId != beatUniverseId)
+            {
+                log.LogWarning(
+                    "[SceneContextAssembler] Dropped cross-universe match: entity {EntityId} ({Name}) belongs to universe {EntityUniverse}, beat {BeatId} belongs to universe {BeatUniverse}",
+                    c.EntityId, c.Name, entityUniverseId, beatId, beatUniverseId);
+                continue;
+            }
+            kept.Add(c);
+        }
+        return kept;
     }
 
     /// <summary>
@@ -541,6 +622,16 @@ public class SceneContextAssembler(
             // SS-A46 register field 6/6 — informs subtext/evasion, never stated outright on the page.
             AppendField(sb, "PSYCHOLOGY — secret", c.PsychologySecret);
 
+            // Fears/desires — the closest analog to "objective/belief" CharacterPsychologyTrait
+            // carries. Added 2026-08-13 (plan "Making Prose readable, character-true..."): this
+            // data was already mapped end-to-end (CharacterMapper.cs → CharacterData.Psychology)
+            // but never queried here — generation only ever saw the single PsychologySecret
+            // scalar plus behavioral rules, never the richer bucketed psychology. Starting with
+            // just these two fields, not the full core_fears/core_desires/coping_mechanisms/
+            // blind_spots set, to keep the token-budget addition small and closest to what
+            // "act on established objectives/beliefs" actually needs.
+            await AppendPsychologyTraitsAsync(db, sb, r.EntityId, ct);
+
             var lines = await db.Set<CharacterSpeechPhrase>().AsNoTracking()
                 .Where(p => p.CharacterId == r.EntityId && p.Bucket == "example_lines")
                 .OrderBy(p => p.Position).Take(3).Select(p => p.Phrase).ToListAsync(ct);
@@ -557,6 +648,50 @@ public class SceneContextAssembler(
         }
         sb.AppendLine();
         return sb.ToString();
+    }
+
+    /// <summary>
+    /// Appends a compact "FEARS/DESIRES" block from the character's core_fears/core_desires
+    /// <c>CharacterPsychologyTraits</c> rows. Bounded to ~450 characters total, split evenly
+    /// per bucket so a verbose "desires" set can't crowd out "fears" entirely (found live:
+    /// at 300 chars total, one bucket alone routinely used the whole budget). No-op if the
+    /// character has neither.
+    /// </summary>
+    private static async Task AppendPsychologyTraitsAsync(
+        ProseDbContext db, StringBuilder sb, Guid characterId, CancellationToken ct)
+    {
+        const int MaxPsychologyChars = 450;
+
+        var traits = await db.Set<CharacterPsychologyTrait>().AsNoTracking()
+            .Where(t => t.CharacterId == characterId && (t.Bucket == "core_fears" || t.Bucket == "core_desires"))
+            .OrderBy(t => t.Bucket).ThenBy(t => t.Position)
+            .ToListAsync(ct);
+
+        if (traits.Count == 0) return;
+
+        var bucketLabels = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["core_fears"]   = "fears",
+            ["core_desires"] = "wants",
+        };
+
+        var groups = traits.GroupBy(t => t.Bucket, StringComparer.OrdinalIgnoreCase).ToList();
+        var perBucketBudget = MaxPsychologyChars / Math.Max(1, groups.Count);
+
+        var block = new StringBuilder();
+        foreach (var grp in groups)
+        {
+            var label = bucketLabels.GetValueOrDefault(grp.Key, grp.Key);
+            var traitTexts = grp.Select(t => t.Trait).Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
+            if (traitTexts.Count == 0) continue;
+            var combined = string.Join("; ", traitTexts);
+            block.AppendLine($"{label}: {Clip(combined, Math.Max(30, perBucketBudget - label.Length - 2))}");
+        }
+
+        if (block.Length > 0)
+        {
+            sb.AppendLine("PSYCHOLOGY — " + block.ToString().Replace("\n", " | ").TrimEnd(" | ".ToCharArray()));
+        }
     }
 
     /// <summary>

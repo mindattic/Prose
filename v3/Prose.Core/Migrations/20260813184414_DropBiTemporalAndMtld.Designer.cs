@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prose.Core.Data;
 
@@ -11,9 +12,11 @@ using Prose.Core.Data;
 namespace Prose.Core.Migrations
 {
     [DbContext(typeof(ProseDbContext))]
-    partial class ProseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260813184414_DropBiTemporalAndMtld")]
+    partial class DropBiTemporalAndMtld
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -8841,32 +8844,6 @@ namespace Prose.Core.Migrations
                     b.HasIndex("Theme");
 
                     b.ToTable("Quotes");
-                });
-
-            modelBuilder.Entity("Prose.Core.Data.Entities.ReaderKnowledgeFact", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<DateTime>("DetectedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Fact")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("NodeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NodeId", "DetectedAt")
-                        .HasDatabaseName("IX_ReaderKnowledgeFacts_NodeId_DetectedAt");
-
-                    b.ToTable("ReaderKnowledgeFacts", (string)null);
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Record", b =>

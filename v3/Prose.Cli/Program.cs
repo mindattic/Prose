@@ -75,6 +75,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Corpus-wide stale name-match cleanup: checks each row's own beat text directly, no
         // ambient scope needed (see FixBadNameMatchesCli).
         "--fix-bad-name-matches",
+        // Pure arithmetic against BookHealthService's tier shapes — touches no DB row at all
+        // (see EstimateCostCli).
+        "--estimate-cost",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -115,31 +118,9 @@ if (args.Contains("--reset-password"))
     return;
 }
 
-// CLI mode: dotnet run --project ... -- --write-story <mode> [options]
-// Generates a story via the same pipeline as the /stories UI and saves it as a Chapter.
-if (args.Contains("--write-story"))
-{
-    var sp = BuildCoreServices(args);
-    var (proceed1, est1) = await CostGateCli.ConfirmAsync("--write-story", args, sp);
-    if (!proceed1) return;
-    var before1 = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await StoryWriterCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--write-story", est1, before1, sp);
-    return;
-}
-
-// CLI mode: dotnet run --project ... -- --refine-story <projectId> [-o notes.json]
-// Analyzes a completed story and writes refinement notes (no rewrites).
-if (args.Contains("--refine-story"))
-{
-    var sp = BuildCoreServices(args);
-    var (proceed2, est2) = await CostGateCli.ConfirmAsync("--refine-story", args, sp);
-    if (!proceed2) return;
-    var before2 = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await StoryRefineCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--refine-story", est2, before2, sp);
-    return;
-}
+// --write-story / --refine-story (StoryDirectorService's "Surprise Me" pipeline) removed
+// 2026-08-13 (plan "Prose, objectively...") — confirmed unused workflow, deleted outright per
+// explicit instruction, not quarantined. The live book-writing path is --auto-run (AutoRunCli).
 
 // CLI mode: book operations — list / new / show / chapters / absorb / review / apply / export / delete.
 // Run `dotnet run --project Prose.Blazor -- --book` (no subcommand) to see full usage.
@@ -879,6 +860,18 @@ if (args.Contains("--fix-bad-name-matches"))
     return;
 }
 
+// prose --backfill-pov [--slug <slug>] [--dry-run]
+// Heuristically tags each beat's highest-scoring character-type BeatEntities row as
+// BeatEntityPresence PresenceType='pov' — closes the gap where DocContextService's per-beat
+// voice-pinning and the SACRED-FLAW/VOICE-DRIFT audits had no POV data for most books. No LLM
+// call. See BackfillPovCli.cs.
+if (args.Contains("--backfill-pov"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BackfillPovCli.RunAsync(args, sp);
+    return;
+}
+
 // prose --backfill-short-name-alias [--universe glmz|scry|...] [--dry-run]
 // Registers each multi-word-named character's first name as a CharacterAlias when missing —
 // the root cause behind --backfill-entity-presence's low yield (prose refers to characters by
@@ -1491,6 +1484,19 @@ if (args.Contains("--import-book"))
     return;
 }
 
+// CLI mode: replace an EXISTING node's beats wholesale from a .node file.
+// The other half of the export/edit/reimport loop for edits that no longer
+// line up with the old beat boundaries (import-md patches beats in place by
+// ID; this swaps the whole set). Old beats are disabled, never deleted.
+// See ReimportNodeCli class doc for details and the safety checks.
+//   prose --reimport-node (--id ... | --slug ...) --file path.node [--dry-run] [--force]
+if (args.Contains("--reimport-node"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ReimportNodeCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: import a local image file (png, jpg, webp) into the Media table.
 // Optionally links to a node by --book-code and sets the media type.
 //   prose --import-cover --file PATH [--book-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
@@ -1549,7 +1555,7 @@ if (args.Contains("--prose-check"))
 
 // prose --compute-metrics [--slug <slug> | --all]
 // CPU-only per-beat prose quality metrics: word count, sentence count, TTR,
-// MTLD lexical diversity, Flesch-Kincaid readability, dialogue proportion.
+// Flesch-Kincaid readability, dialogue proportion.
 // Upserts into BeatProseMetrics. Safe to re-run nightly. Exit 0 = success.
 if (args.Contains("--compute-metrics"))
 {
@@ -2113,7 +2119,30 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
 if (args.Contains("--audit-book"))
 {
     var sp = BuildCoreServices(args);
+    // Cost-gated 2026-08-13: the FULL tier alone makes one LLM call per beat for SWAIN,
+    // DRAMATIC-Q, and several other checks — on a long book this is easily the single most
+    // expensive command in the CLI, and it was the one major audit command with no estimate,
+    // no confirmation prompt, and no actual-cost recording at all (11 other LLM-calling
+    // commands already had this via CostGateCli; this one was simply missed).
+    var (proceedAb, estAb) = await CostGateCli.ConfirmAsync("--audit-book", args, sp);
+    if (!proceedAb) return;
+    var beforeAb = CostGateCli.SnapshotCost(sp);
     Environment.ExitCode = await AuditNodeCli.RunAsync(sp, args);
+    await CostGateCli.RecordActualAsync("--audit-book", estAb, beforeAb, sp);
+    return;
+}
+
+// prose --estimate-cost [--beats <N>] [--pov-characters <M>] [--tier free|deep|full]
+// Cost-governance check (RFC 0009 §9.5, 2026-08-13): prints the LLM call count implied by
+// BookHealthService's current wiring for a book of N beats — no DB access, pure arithmetic
+// against the tier shapes read directly out of the code. Run this before merging a new
+// per-beat service so the cost jump is visible before it ships, not discovered by totaling a
+// bill months later.
+if (args.Contains("--estimate-cost"))
+{
+    // Pure arithmetic, no DB/universe scope needed — deliberately skips BuildCoreServices so
+    // this stays usable as a quick sanity check without an established universe context.
+    Environment.ExitCode = await EstimateCostCli.RunAsync(args, null!);
     return;
 }
 
@@ -2266,10 +2295,10 @@ if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Con
 }
 
 // CLI mode: Will Storr narrative-science frameworks — sacred flaw, dramatic question,
-// scene anatomy, five-act structure. Four subcommands:
+// five-act structure. Three subcommands (scene-anatomy removed 2026-08-13 — redundant
+// per-beat cost sink with no automated caller, see NarrativeScienceService.cs):
 //   prose --narrative-science sacred-flaw --character <slug|id> [--scaffold]
 //   prose --narrative-science dramatic-question (--slug <s> | --id <beatId>) [--character <slug|id>]
-//   prose --narrative-science scene-anatomy (--slug <s> | --id <beatId>)
 //   prose --narrative-science five-act --slug <nodeSlug>
 //   (add --json to any subcommand for raw JSON output)
 if (args.Contains("--narrative-science"))

@@ -1,9 +1,0 @@
-@page "/"
-@inject NavigationManager Nav
-
-@* Writer host landing — the writing app's home is the node library.
-   The entity tile board (CategoryTiles) lives in the Codex host. *@
-
-@code {
-    protected override void OnInitialized() => Nav.NavigateTo("/nodes", replace: true);
-}

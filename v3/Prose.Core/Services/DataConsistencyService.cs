@@ -63,8 +63,6 @@ public class DataConsistencyService
         await SafeRun(findings, "ENT-ORPHAN-SUBTYPE",       () => OrphanSubtypeRowsAsync(db, ct));
         await SafeRun(findings, "EDGE-DANGLING",            () => DanglingEdgesAsync(db, ct));
         await SafeRun(findings, "ESE-DANGLING",             () => DanglingStateEventsAsync(db, ct));
-        await SafeRun(findings, "ESE-MISSING-INWORLD-FROM", () => StateEventsMissingInWorldFromAsync(db, ct));
-        await SafeRun(findings, "ESE-WINDOW-OVERLAP",       () => OverlappingStateWindowsAsync(db, ct));
         // CHAR-HOMETURF-DRIFT and CHAR-AFFIL-MISSING retired 2026-05-08 with the
         // flat HomeTurf / TerritoryHomeTurf / Affiliation columns — bridges
         // (CharacterHomeTurfs, CharacterAffiliations) are now sole source of truth.
@@ -319,86 +317,6 @@ public class DataConsistencyService
             Samples: Array.Empty<SampleRow>(),
             Severity: count == 0 ? "info" : "error",
             FixHint: count > 0 ? "DELETE FROM EntityStateEvents WHERE EntityId NOT IN (SELECT Id FROM Entities);" : null);
-    }
-
-    /// <summary>
-    /// Bi-temporal hygiene — every event needs <c>InWorldValidFrom</c>
-    /// populated so the closed-window seek works. Backfilled rows from before
-    /// the column existed should equal <c>AtStoryTime</c>.
-    /// </summary>
-    private async Task<Finding> StateEventsMissingInWorldFromAsync(ProseDbContext db, CancellationToken ct)
-    {
-        long count = await db.Database.SqlQueryRaw<long>("""
-            SELECT COUNT_BIG(*) AS Value
-            FROM [dbo].[EntityStateEvents]
-            WHERE InWorldValidFrom IS NULL
-            """).FirstOrDefaultAsync(ct);
-
-        return new Finding(
-            Code: "ESE-MISSING-INWORLD-FROM",
-            Title: "EntityStateEvents missing InWorldValidFrom",
-            Description: "Closed-window seeks rely on InWorldValidFrom being non-null. " +
-                         "Default backfill is InWorldValidFrom = AtStoryTime.",
-            DriftCount: count,
-            Samples: Array.Empty<SampleRow>(),
-            Severity: count == 0 ? "info" : "warn",
-            FixHint: count > 0
-                ? "UPDATE EntityStateEvents SET InWorldValidFrom = AtStoryTime WHERE InWorldValidFrom IS NULL;"
-                : null);
-    }
-
-    /// <summary>
-    /// Two events for the same (EntityId, AspectKey) where both have NULL
-    /// <c>InWorldValidTo</c> — i.e. both claim to be the current value.
-    /// Indicates the closed-window pattern wasn't followed (older code path
-    /// or a direct INSERT). The latest one wins on read but the older one is
-    /// noise.
-    /// </summary>
-    private async Task<Finding> OverlappingStateWindowsAsync(ProseDbContext db, CancellationToken ct)
-    {
-        // EF tries to compose FirstOrDefaultAsync() back into SQL wrapped around the raw query
-        // (e.g. "SELECT TOP(1) * FROM (<raw>) AS x"), which fails against a leading ";WITH" CTE
-        // — a CTE must be the first thing in its batch, so wrapping it breaks. Materialize with
-        // ToListAsync (the query already returns exactly one row) and take FirstOrDefault
-        // in-memory instead, matching EF's own "consider calling AsEnumerable" guidance.
-        var countRows = await db.Database.SqlQueryRaw<long>("""
-            ;WITH OpenRows AS (
-                SELECT EntityId, AspectKey, COUNT(*) AS OpenCount
-                FROM [dbo].[EntityStateEvents]
-                WHERE InWorldValidTo IS NULL
-                GROUP BY EntityId, AspectKey
-                HAVING COUNT(*) > 1
-            )
-            SELECT COUNT_BIG(*) AS Value FROM OpenRows
-            """).ToListAsync(ct);
-        long count = countRows.FirstOrDefault();
-
-        var rows = await db.Database.SqlQueryRaw<OverlapSampleRow>("""
-            SELECT TOP (5) CAST(EntityId AS NVARCHAR(50)) AS EntityId,
-                           AspectKey, COUNT(*) AS OpenCount
-            FROM [dbo].[EntityStateEvents]
-            WHERE InWorldValidTo IS NULL
-            GROUP BY EntityId, AspectKey
-            HAVING COUNT(*) > 1
-            ORDER BY COUNT(*) DESC
-            """).ToListAsync(ct);
-
-        var samples = rows.Select(r => new SampleRow(
-                Label: $"{r.EntityId} / {r.AspectKey}",
-                Detail: $"{r.OpenCount} rows with InWorldValidTo IS NULL"))
-            .ToList();
-
-        return new Finding(
-            Code: "ESE-WINDOW-OVERLAP",
-            Title: "Overlapping open windows in EntityStateEvents",
-            Description: "More than one row per (EntityId, AspectKey) has InWorldValidTo = NULL. " +
-                         "The closed-window invariant says only the latest may be open.",
-            DriftCount: count,
-            Samples: samples,
-            Severity: count == 0 ? "info" : "warn",
-            FixHint: count > 0
-                ? "Sort each group by AtStoryTime DESC; close all but the newest by setting InWorldValidTo to the next row's InWorldValidFrom."
-                : null);
     }
 
     /// <summary>
@@ -756,13 +674,6 @@ public class DataConsistencyService
         // CHAR-HOMETURF-DRIFT fix retired 2026-05-08 — flat HomeTurf /
         // TerritoryHomeTurf columns dropped; canonical source is CharacterHomeTurfs bridge.
 
-        if (codes.Contains("ESE-MISSING-INWORLD-FROM"))
-        {
-            var n = await db.Database.ExecuteSqlRawAsync(
-                "UPDATE [dbo].[EntityStateEvents] SET [InWorldValidFrom] = [AtStoryTime] WHERE [InWorldValidFrom] IS NULL;", ct);
-            result["ESE-MISSING-INWORLD-FROM"] = n;
-        }
-
         if (codes.Contains("ESE-DANGLING"))
         {
             var n = await db.Database.ExecuteSqlRawAsync(@"
@@ -797,30 +708,6 @@ public class DataConsistencyService
             result["CHAR-HOMETURF-ALIAS-DRIFT"] = n;
         }
 
-        if (codes.Contains("ESE-WINDOW-OVERLAP"))
-        {
-            // Close every non-newest open row by setting InWorldValidTo to the next
-            // open row's InWorldValidFrom for the same (EntityId, AspectKey).
-            var n = await db.Database.ExecuteSqlRawAsync("""
-                ;WITH Ranked AS (
-                    SELECT Id, EntityId, AspectKey, InWorldValidFrom, AtStoryTime,
-                           LEAD(InWorldValidFrom) OVER (
-                               PARTITION BY EntityId, AspectKey
-                               ORDER BY AtStoryTime, Id) AS NextFrom,
-                           LEAD(AtStoryTime) OVER (
-                               PARTITION BY EntityId, AspectKey
-                               ORDER BY AtStoryTime, Id) AS NextAt
-                    FROM [dbo].[EntityStateEvents]
-                    WHERE InWorldValidTo IS NULL
-                )
-                UPDATE e SET e.InWorldValidTo = ISNULL(r.NextFrom, r.NextAt)
-                FROM [dbo].[EntityStateEvents] e
-                JOIN Ranked r ON r.Id = e.Id
-                WHERE r.NextAt IS NOT NULL
-                """, ct);
-            result["ESE-WINDOW-OVERLAP"] = n;
-        }
-
         return result;
     }
 
@@ -835,12 +722,6 @@ public class DataConsistencyService
         public string MissingSide { get; set; } = "";
     }
 
-    private sealed class OverlapSampleRow
-    {
-        public string EntityId { get; set; } = "";
-        public string AspectKey { get; set; } = "";
-        public int OpenCount { get; set; }
-    }
 
     private sealed class BeatOrderAnomalySample
     {

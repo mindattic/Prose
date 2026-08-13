@@ -35,11 +35,11 @@
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 4 |
-| [Findings](#findings) | 5 |
+| [Findings](#findings) | 6 |
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Glossary](#glossary) | 4 |
 | [Lore Triple](#lore-triple) | 7 |
-| [Narrative Science](#narrative-science) | 5 |
+| [Narrative Science](#narrative-science) | 4 |
 | [Node](#node) | 38 |
 | [Noun Consistency](#noun-consistency) | 3 |
 | [Planning](#planning) | 6 |
@@ -887,6 +887,13 @@ Apply a finding's suggested fix to the source file. Locates the snippet in the f
 
 - `id` (long, required) — Finding id from list_findings.
 
+### `bulk_dismiss_findings`
+
+Dismiss every open finding matching a category and/or summary-prefix filter. At least one filter is required. Use to clear a backlog of many similar findings (e.g. an old per-beat sweep) instead of dismissing them one at a time.
+
+- `category` (string, optional) — FindingCategory to match, e.g. StructuralFailure. Omit to match any category.
+- `summaryPrefix` (string, optional) — Summary text prefix to match, e.g. "SWAIN ". Omit to match any summary.
+
 ### `findings_stats`
 
 Counts of findings per status (new / triaged / applied / dismissed).
@@ -1117,12 +1124,6 @@ Analyze or scaffold a character's Sacred Flaw (their theory of control) per Will
 
 - `characterIdOrSlug` (string, required) — Character entity ID (GUID) or slug.
 - `scaffold` (bool, optional) — If true, generate a plausible flaw scaffold from available description (use when flaw is not yet documented). Default false = analyze existing data.
-
-### `audit_scene_engagement`
-
-Run the 6-point scene anatomy audit on beat text per Will Storr's neural engagement mechanisms. The six mechanisms: (1) unexpected_change — something the character didn't plan happens; (2) information_gap — a question the reader wants answered is opened/closed; (3) cause_effect — this beat is caused by the prior, causes the next; (4) tribal_emotion — moral outrage / status play / humiliation / gossip / altruistic punishment; (5) specificity — 3+ precise non-generic sensory or physical details; (6) show_not_tell — action/dialogue/sensation ≥60% vs summary/exposition. A beat passes overall if 4 of 6 are present. Returns per-mechanism verdict with evidence, mechanisms_passing count, beat_passes boolean, the single top_weakness, and a concrete fix suggestion.
-
-- `beatText` (string, required) — The beat's prose text to audit.
 
 ### `check_antihero_empathy`
 

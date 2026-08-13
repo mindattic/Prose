@@ -7,29 +7,12 @@ namespace Prose.Core.Data.Entities;
 /// for that pair; querying as-of any past instant is "WHERE AtStoryTime &lt;= T
 /// ORDER BY AtStoryTime DESC".
 ///
-/// <para><b>Duration windows (W/W/W/W reads).</b> When an action takes time —
-/// Kyle reloading Chorus while pinned in cover, an enemy firing a burst, a
-/// bystander walking past — the event row carries explicit
-/// <see cref="InWorldValidFrom"/> and <see cref="InWorldValidTo"/> bounds.
-/// A single point-in-story-time scan answers "who is doing what, where" by
-/// reading every row whose window contains T:
-/// <code>
-/// SELECT EntityId, AspectKey, NewValue, Snippet
-/// FROM EntityStateEvents
-/// WHERE InWorldValidFrom &lt;= @T
-///   AND (InWorldValidTo IS NULL OR @T &lt; InWorldValidTo);
-/// </code>
-/// Because (EntityId, AspectKey) is the partitioning key, two participants
-/// can have overlapping windows without conflict — the model is one
-/// concurrent timeline per aspect per entity, fanned out across the cast.</para>
-///
 /// <para><b>On-demand entities.</b> If a stray round hits an unnamed
 /// pedestrian, the prose extractor spawns a fresh <see cref="Entity"/>
 /// (EntityType='character') at that instant and emits the bystander's first
 /// event: "Shot by X while walking home from the park." Backfill of the
 /// bystander's prior life is done lazily — extra events get inserted with
-/// earlier <see cref="InWorldValidFrom"/> values whenever the writer adds
-/// detail later.</para>
+/// an earlier <see cref="AtStoryTime"/> whenever the writer adds detail later.</para>
 ///
 /// Aspect keys use a dotted/colon namespace so different facets coexist:
 ///   <list type="bullet">
@@ -81,26 +64,6 @@ public class EntityStateEvent
 
     /// <summary>The instant in story-time the change occurred. <c>datetime2(7)</c>.</summary>
     public DateTime AtStoryTime { get; set; }
-
-    /// <summary>
-    /// Story-time the value in <see cref="NewValue"/> began holding in-world.
-    /// Defaults to <see cref="AtStoryTime"/> on insert. Together with
-    /// <see cref="InWorldValidTo"/> forms a half-open <c>[from, to)</c>
-    /// duration window — set both explicitly when the action has known
-    /// length (Kyle reloading Chorus = 4-second window) so a single point-
-    /// in-story-time read can return every concurrent participant.
-    /// </summary>
-    public DateTime? InWorldValidFrom { get; set; }
-
-    /// <summary>
-    /// Story-time the value in <see cref="NewValue"/> stopped holding.
-    /// For state-style aspects (location, intent), left NULL on insert and
-    /// auto-closed by <c>WorldStateLedger.RecordAsync</c> when the next
-    /// event for the same (EntityId, AspectKey) arrives. For action-style
-    /// aspects with a known duration (a reload, a burst, a transit leg),
-    /// set explicitly at insert — the ledger leaves explicit windows alone.
-    /// </summary>
-    public DateTime? InWorldValidTo { get; set; }
 
     /// <summary>Chapter that triggered the event, when extracted from prose.</summary>
     public Guid? ChapterId { get; set; }

@@ -19,12 +19,6 @@ public class BeatProseMetrics
     /// <summary>Type-Token Ratio: unique words / total words. Higher = more lexical variety.</summary>
     public double   TypeTokenRatio        { get; set; }
 
-    /// <summary>
-    /// Measure of Textual Lexical Diversity (MTLD). More robust than TTR for
-    /// varying text lengths. Higher = more diverse vocabulary.
-    /// </summary>
-    public double   LexicalDiversityMtld  { get; set; }
-
     /// <summary>Flesch-Kincaid Grade Level. Lower = more accessible prose.</summary>
     public double   FleschKincaidGrade    { get; set; }
 

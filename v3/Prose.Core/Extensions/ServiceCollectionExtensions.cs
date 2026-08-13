@@ -319,7 +319,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CrossBookConsistencyService>();
 
         // Per-beat prose quality metrics — CPU-only nightly compute (sentence stats,
-        // TTR, MTLD, Flesch-Kincaid). Used by prose --compute-metrics and prose --morning-report.
+        // TTR, Flesch-Kincaid). Used by prose --compute-metrics and prose --morning-report.
         services.AddSingleton<BeatProseMetricsService>();
 
         // Beat granularity analysis — identifies beats that are too coarse (SPLIT) or
@@ -506,7 +506,6 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<MindAttic.Legion.LlmVotingService>(),
             sp.GetRequiredService<DatabaseService>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<BookOutlineService>>()));
-        services.AddSingleton<CoWriterService>();
         services.AddSingleton<ConversationalWriterService>();
         services.AddSingleton<LastPromptStore>();
         // Graph builds from canon on first access. With the SQL cutover, freshness
@@ -703,7 +702,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<StoryStateService>();
         services.AddSingleton<EventLogService>();
         services.AddSingleton<OutlineService>();
-        services.AddSingleton<AgendaEngine>();
         services.AddSingleton<KnowledgeMapService>();
 
         // Universal facts — world mechanics / vocabulary injected into every generation prompt
@@ -732,35 +730,18 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CombatSceneWriter>();
         services.AddSingleton<StoryStarterService>();
 
-        // Story director — autonomous story generation
-        services.AddSingleton<StoryDirectorService>();
-        services.AddSingleton<IStoryDirectorService>(sp => sp.GetRequiredService<StoryDirectorService>());
-
         // Claude Code CLI bridge — legacy Writer-chat path (kept until UI fully migrated to operator)
         services.AddSingleton<ClaudeCliService>();
 
-        // Writer operator — interactive chat partner that drives Prose services
-        // via Anthropic tool-use, replacing per-message CLI spawn. Scoped per Blazor circuit
-        // so each writing session has its own chat history.
+        // Shared Anthropic tool-use client — used by the KDP operator below. The former Writer
+        // operator (WriterOperatorService/WriterToolRegistry/CoWriterService + the 12
+        // Operator/Tools/*.cs wrappers) was deleted 2026-08-13 (plan "Prose, objectively...") —
+        // its only entry points were WriteStory.razor/BookOutlineEditor.razor, both part of the
+        // StoryDirectorService "Surprise Me" pipeline, confirmed unused.
         services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
 
         // Media asset storage (local disk dev; swap to AddMediaAzure<ProseDbContext> in prod).
         services.AddMedia<ProseDbContext>();
-
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.QueryWorldGraphTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ValidateCanonTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.DraftCombatSceneTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.OutlineChapterTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ScoreStoryQualityTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.RefineStoryTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ExtractEntitiesTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.PredictBehaviorTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.GetVoiceContextTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.GetConsequencesTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.RecordCanonChangeTool>();
-        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ProposeStoryEditsTool>();
-        services.AddSingleton<Services.Operator.WriterToolRegistry>();
-        services.AddScoped<Services.Operator.WriterOperatorService>();
 
         // KDP operator — same Anthropic tool-use loop shape, driving a live KDP browser page
         // (via IKdpBrowser, implemented by KdpPublish) instead of the prose services.
@@ -808,9 +789,6 @@ public static class ServiceCollectionExtensions
 
         // Milestone 2 story engine services
         services.AddSingleton<DialogueService>();
-        services.AddSingleton<ArcTrackerService>();
-        services.AddSingleton<ContinuityValidatorService>();
-        services.AddSingleton<SuggestionEngineService>();
 
         // Pacing — static helper, registered for completeness
         services.AddSingleton<PacingService>();
@@ -824,13 +802,6 @@ public static class ServiceCollectionExtensions
         // Each beat is a temporal cross-section showing onscreen/offscreen character streams.
         // Offscreen activity is injected as parallel-world subtext in the generation prompt.
         services.AddSingleton<NarrativeChartService>();
-
-        // Milestone 3 — outline review + quality feedback loop
-        services.AddSingleton(sp => new OutlineReviewService(
-            sp.GetRequiredService<ILlmService>(),
-            sp.GetRequiredService<DatabaseService>(),
-            sp.GetRequiredService<SettingsKvStore>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<OutlineReviewService>>()));
 
         // MindAttic.Legion — universal LLM-call client (LegionClient) and the
         // multi-provider voting machinery. Both LlmVotingProvider and the
@@ -979,8 +950,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ProseReflowService>();
         services.AddSingleton<BeatRebuildService>();
         services.AddSingleton<NodeReviewService>();
-        services.AddSingleton<StoryQualityService>();
-        services.AddSingleton<StoryRefinementService>();
         services.AddSingleton<CanonGroundingService>();
         services.AddSingleton<EntityReviewService>();
         services.AddSingleton<WeaponAmmoLinkerService>();
@@ -1089,6 +1058,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CausalityService>();
         services.AddSingleton<AffectBehaviorService>();
         services.AddSingleton<InterpersonalDynamicsService>();
+        services.AddSingleton<CraftQualityService>();
         services.AddSingleton<BeatAuditService>();
         services.AddSingleton<BeatRepairService>();
 
@@ -1145,6 +1115,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ChapterSummaryService>();
         services.AddSingleton<OpenThreadsService>();
         services.AddSingleton<BookStateLedgerService>();
+        // Consolidates ReaderKnowledgeService/NarrativeSummaryService/OpenThreadsService/
+        // BookStateLedgerService's post-write extraction into one call — RFC 0009 §9.4 "item 1".
+        services.AddSingleton<BeatExtractionService>();
         services.AddSingleton<PremiseToOutlineService>();
         services.AddSingleton<OutlineAdherenceService>();
         services.AddSingleton<NarrativeForkService>();

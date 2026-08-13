@@ -138,6 +138,7 @@ public class ProseDbContext : DbContext
     public DbSet<Tag>             Tags             => Set<Tag>();
     public DbSet<EntityTag>       EntityTags       => Set<EntityTag>();
     public DbSet<FindingRow>      Findings         => Set<FindingRow>();
+    public DbSet<ReaderKnowledgeFact> ReaderKnowledgeFacts => Set<ReaderKnowledgeFact>();
 
     // Episodic adventures — folk-hero Kyle, bedtime-listenable, scoreable
     public DbSet<Episode>            Episodes            => Set<Episode>();
@@ -167,6 +168,9 @@ public class ProseDbContext : DbContext
     // Per-node narrative spine: amendment log + version pins (bridge).
     public DbSet<NodeAmendment>       NodeAmendments       => Set<NodeAmendment>();
     public DbSet<NodeSpineVersion>    NodeSpineVersions    => Set<NodeSpineVersion>();
+    // Full-manuscript snapshots — the sole historical record now that Beats/Nodes/
+    // BeatNodes are no longer system-versioned. See ArchivedBook.cs.
+    public DbSet<ArchivedBook>        ArchivedBooks        => Set<ArchivedBook>();
     // Amazon KDP / storefront search keywords (up to 7 per node).
     public DbSet<NodeKeyword>         NodeKeywords         => Set<NodeKeyword>();
     // Autonomous pipeline — chapter summaries + open threads + plot-state ledger.
@@ -1861,10 +1865,6 @@ public class ProseDbContext : DbContext
             // Hot path: "what was X's location at time T?" → seek by
             // (EntityId, AspectKey) then walk by AtStoryTime.
             e.HasIndex(x => new { x.EntityId, x.AspectKey, x.AtStoryTime });
-            // Closed-window seek: "what's true at story-time T?" — single index
-            // hit when the [InWorldValidFrom, InWorldValidTo) window is closed
-            // by WorldStateLedger.RecordAsync.
-            e.HasIndex(x => new { x.EntityId, x.AspectKey, x.InWorldValidFrom });
             // Timeline-axis scans (vis-timeline, contradiction detector).
             e.HasIndex(x => x.AtStoryTime);
             // "All events tied to chapter X" rollups.
@@ -1957,6 +1957,17 @@ public class ProseDbContext : DbContext
             e.HasKey(x => new { x.AUid, x.BUid });
             e.Property(x => x.AUid).HasMaxLength(80);
             e.Property(x => x.BUid).HasMaxLength(80);
+        });
+
+        // Reader-knowledge working state — see ReaderKnowledgeFact's doc comment for why this
+        // has its own table rather than reusing Findings (2026-08-13 fix).
+        b.Entity<ReaderKnowledgeFact>(e =>
+        {
+            e.ToTable("ReaderKnowledgeFacts");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).ValueGeneratedOnAdd();
+            e.Property(x => x.Fact).IsRequired();
+            e.HasIndex(x => new { x.NodeId, x.DetectedAt }).HasDatabaseName("IX_ReaderKnowledgeFacts_NodeId_DetectedAt");
         });
 
         b.Entity<ClaimConfirmationRow>(e =>
@@ -2537,6 +2548,17 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => new { x.NodeId, x.NodeVersion }).IsUnique();
         });
 
+        // ── ArchivedBook ───────────────────────────────────────────────────
+        b.Entity<ArchivedBook>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Title).HasMaxLength(300).IsRequired();
+            e.Property(x => x.Reason).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Markdown).IsRequired();
+            e.HasIndex(x => x.NodeId);
+            e.HasIndex(x => new { x.NodeId, x.CreatedAt });
+        });
+
         // ── NodeKeyword ────────────────────────────────────────────────────
         b.Entity<NodeKeyword>(e =>
         {
@@ -2804,16 +2826,15 @@ public class ProseDbContext : DbContext
         "FlyoverEntities", "FlyoverEntityAliases", "FlyoverEntityKnownLocations", "FlyoverEntityStoryHooks",
         "Books", "BookProtagonists", "BookChapterOrder",
         "Chapters", "ChapterCharacters", "ChapterBeats",
-        // Unified node writer model (Beat / Node / BeatNode junction).
-        // System-versioned so every prose edit, metadata change, membership
-        // shuffle, AND deletion lands in {Table}_History — that's the rewind
-        // the writer's per-beat version cycler reads via FOR SYSTEM_TIME ALL,
-        // and it captures CLI / MCP edits automatically (the UPDATE itself is
-        // versioned; no app-side snapshotting required). Safe to version:
-        // neither table carries a vector index (prose embeddings live in the
-        // separate ProseEmbeddings table), so the SQL Server vector-index ↔
-        // system-versioning incompatibility doesn't apply here.
-        "Beats", "Nodes", "BeatNodes",
+        // Beat / Node / BeatNode are deliberately NOT versioned. They used to be
+        // (see the RemoveBeatTemporalVersioning migration for the teardown) —
+        // that history mechanism is what let disabled-but-undeleted beats pile up
+        // across every past revision with no forcing function to reconcile them,
+        // which is exactly the "which beats are real" mess that made VIGL and
+        // BCODA unreadable. The policy now: a Beat/BeatNode row exists only if
+        // it is the live, current content. Superseded prose is captured once, in
+        // full, as an ArchivedBook markdown snapshot (see ArchivedBook), then the
+        // old rows are actually deleted — not versioned, not soft-disabled.
         "ContinuityClaims",
         "EntityStateEvents",
         "WeaponSpecs",

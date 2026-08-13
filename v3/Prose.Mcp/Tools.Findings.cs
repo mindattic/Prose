@@ -6,10 +6,9 @@ using Prose.Core.Services;
 namespace Prose.Mcp;
 
 /// <summary>
-/// Tools for the autonomous quality-findings inbox. Wraps the same
-/// FindingsService / FindingApplyService / ContinuousQualityService used by the
-/// /findings UI so MCP clients can list, triage, and apply suggested fixes
-/// without opening the web UI.
+/// Tools for the autonomous quality-findings inbox: FindingsService /
+/// FindingApplyService / ContinuousQualityService, so MCP clients can list,
+/// triage, and apply suggested fixes.
 /// </summary>
 [McpServerToolType]
 public class FindingsTools
@@ -111,6 +110,36 @@ public class FindingsTools
             return JsonSerializer.Serialize(new { error = $"unknown status: {status}" });
         store.SetStatus(id, s);
         return JsonSerializer.Serialize(new { ok = true, id, status = s.ToString() });
+    }
+
+    /// <summary>
+    /// Dismiss every open (New/Triaged) finding matching a category and/or summary-prefix
+    /// filter — at least one filter is required. Exists for exactly one reason: the one-at-a-time
+    /// SetFindingStatus above cannot realistically clear a backlog of thousands of per-beat rows
+    /// from an old bulk sweep (e.g. "SWAIN " before its 2026-08-13 book-level rollup fix).
+    /// </summary>
+    [McpServerTool, Description(
+        "Dismiss every open finding matching a category and/or summary-prefix filter. " +
+        "At least one filter is required. Use to clear a backlog of many similar findings " +
+        "(e.g. an old per-beat sweep) instead of dismissing them one at a time.")]
+    public async Task<string> BulkDismissFindings(
+        [Description("FindingCategory to match, e.g. StructuralFailure. Omit to match any category.")]
+            string? category = null,
+        [Description("Summary text prefix to match, e.g. \"SWAIN \". Omit to match any summary.")]
+            string? summaryPrefix = null)
+    {
+        FindingCategory? cat = null;
+        if (!string.IsNullOrWhiteSpace(category))
+        {
+            if (!Enum.TryParse<FindingCategory>(category, ignoreCase: true, out var parsed))
+                return JsonSerializer.Serialize(new { error = $"unknown category: {category}" });
+            cat = parsed;
+        }
+        if (cat is null && string.IsNullOrWhiteSpace(summaryPrefix))
+            return JsonSerializer.Serialize(new { error = "at least one of category/summaryPrefix is required" });
+
+        var n = await store.BulkSetStatusAsync(FindingStatus.Dismissed, cat, summaryPrefix);
+        return JsonSerializer.Serialize(new { ok = true, dismissed = n, category = cat?.ToString(), summaryPrefix });
     }
 
     /// <summary>

@@ -16,7 +16,7 @@ namespace Prose.Core.Services;
 // services independently parsed the same CRAFT.md §8 rules, and the checklist's per-beat,
 // hash-cached implementation is the more complete one. No historical backlog existed under
 // CraftAudit at the time of the merge, so the value was removed rather than kept for history.
-public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, ReaderKnows, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Other }
+public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Craft, Other }
 public enum FindingSeverity { Low, Medium, High }
 public enum FindingStatus   { New, Triaged, Applied, Dismissed }
 
@@ -165,20 +165,20 @@ public class FindingsService
     internal const string BeatFilePathPrefix = "beat:";
 
     /// <summary>
-    /// Dismiss open findings anchored to a beat that is no longer enabled in any node.
+    /// Dismiss open findings anchored to a beat that no longer exists in any node.
     ///
     /// <b>The bug this closes.</b> Beat-scoped findings (ENTITY-CONFLICT from
     /// <see cref="EntityContextService"/>, and anything else writing <c>beat:&lt;guid&gt;</c>) are
-    /// written while a beat is live. When that beat is later soft-deleted — a replot, a rename, a
-    /// superseded draft — <see cref="Data.Entities.BeatNode.IsEnabled"/> goes false but the
-    /// finding stays New forever, still quoting prose that is no longer in the book. On TRNY
-    /// (2026-08-02) that produced 19 open Medium findings, 10 of them quoting a character name
-    /// that had been renamed out of the manuscript entirely; every one was a false positive and
-    /// each had to be re-verified by hand against the live prose before it could be dismissed.
+    /// written while a beat is live. When that beat is later removed — a replot, a rename, a
+    /// superseded draft — its BeatNode row is gone, but the finding stays New forever, still
+    /// quoting prose that is no longer in the book. On TRNY (2026-08-02) that produced 19 open
+    /// Medium findings, 10 of them quoting a character name that had been renamed out of the
+    /// manuscript entirely; every one was a false positive and each had to be re-verified by hand
+    /// against the live prose before it could be dismissed.
     ///
-    /// A finding is only reaped when the beat is enabled NOWHERE — a beat shared across nodes
-    /// stays live as long as one membership is enabled — and only if still open, so a human's
-    /// Applied/Dismissed decision is never overwritten.
+    /// A finding is only reaped when the beat has NO remaining BeatNode row anywhere — a beat
+    /// shared across nodes stays live as long as one membership exists — and only if still open,
+    /// so a human's Applied/Dismissed decision is never overwritten.
     /// </summary>
     public async Task<int> DismissStaleBeatFindingsAsync(CancellationToken ct = default)
     {
@@ -190,7 +190,6 @@ public class FindingsService
         if (open.Count == 0) return 0;
 
         var liveKeys = (await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.IsEnabled)
                 .Select(bn => bn.BeatId)
                 .Distinct()
                 .ToListAsync(ct))
@@ -377,6 +376,43 @@ public class FindingsService
         row.ResolvedAt = (status == FindingStatus.Applied || status == FindingStatus.Dismissed)
             ? DateTime.UtcNow : null;
         db.SaveChanges();
+    }
+
+    /// <summary>
+    /// Set status on every open (New/Triaged) finding matching an optional category and/or
+    /// summary-prefix filter — at least one filter is required so this can't accidentally sweep
+    /// the entire inbox. Only ever narrows to New/Triaged rows: a finding already Applied or
+    /// Dismissed reflects a human decision that a bulk sweep must never overwrite.
+    ///
+    /// Exists because the one-at-a-time <c>SetStatus</c> above is the only mutation path the
+    /// Findings inbox had (2026-08-13 audit: 19,239 New vs 103 ever Applied — the volume, not a
+    /// missing capability, was the actual bottleneck). Lets an operator clear a whole
+    /// category/prefix's backlog — e.g. every pre-fix per-beat SWAIN row — in one call instead of
+    /// thousands of individual triage decisions nobody was ever going to make.
+    /// </summary>
+    public async Task<int> BulkSetStatusAsync(
+        FindingStatus status,
+        FindingCategory? category = null,
+        string? summaryPrefix = null,
+        CancellationToken ct = default)
+    {
+        if (category is null && string.IsNullOrWhiteSpace(summaryPrefix))
+            throw new ArgumentException("BulkSetStatusAsync requires at least one of category/summaryPrefix — refusing to sweep the entire inbox unfiltered.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var q = db.Findings.Where(f => f.Status == "New" || f.Status == "Triaged");
+        if (category is FindingCategory c) { var key = c.ToString(); q = q.Where(f => f.Category == key); }
+        if (!string.IsNullOrWhiteSpace(summaryPrefix)) q = q.Where(f => f.Summary.StartsWith(summaryPrefix));
+
+        var rows = await q.ToListAsync(ct);
+        foreach (var row in rows)
+        {
+            row.Status = status.ToString();
+            row.ResolvedAt = (status == FindingStatus.Applied || status == FindingStatus.Dismissed)
+                ? DateTime.UtcNow : null;
+        }
+        if (rows.Count > 0) await db.SaveChangesAsync(ct);
+        return rows.Count;
     }
 
     /// <summary>

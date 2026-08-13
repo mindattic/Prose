@@ -122,30 +122,6 @@ public class Chapter
     /// </summary>
     public string? OutlineJson { get; set; }
 
-    /// <summary>
-    /// Serialized RefinementReport — beat-by-beat refinement notes from the
-    /// human-in-the-loop refinement pass. Replaces the legacy
-    /// <c>engine/data/chapters/&lt;id&gt;/refinement_report.json</c> file.
-    /// Owned by <see cref="Prose.Core.Services.StoryRefinementService"/>.
-    /// </summary>
-    public string? RefinementReportJson { get; set; }
-
-    /// <summary>
-    /// Serialized StoryQualityReport — per-chapter quality scores + flagged
-    /// clichés/strengths from the LLMVoting Quorum pass. Replaces the legacy
-    /// <c>engine/data/chapters/&lt;id&gt;/quality_report.json</c> file.
-    /// Owned by <see cref="Prose.Core.Services.StoryQualityService"/>.
-    /// </summary>
-    public string? QualityReportJson { get; set; }
-
-    /// <summary>
-    /// Serialized AutonomousStory — full pipeline checkpoint (beats, state,
-    /// outline progress) for StoryDirectorService resume-from-failure. Replaces
-    /// the legacy <c>engine/data/chapters/&lt;id&gt;/checkpoint.json</c> file.
-    /// Owned by <see cref="Prose.Core.Services.StoryDirectorService"/>.
-    /// </summary>
-    public string? CheckpointJson { get; set; }
-
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime ModifiedAt { get; set; } = DateTime.UtcNow;
 

@@ -64,7 +64,6 @@ public class EmbeddingFallbackTests
     [TestCase(typeof(EntityExtractionService))]
     [TestCase(typeof(StoryStarterService))]
     [TestCase(typeof(BookReviewService))]
-    [TestCase(typeof(SuggestionEngineService))]
     public void Migrated_Service_Has_Optional_EmbeddingService_Parameter(Type serviceType)
     {
         var ctors = serviceType.GetConstructors();

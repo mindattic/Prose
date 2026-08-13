@@ -7,7 +7,7 @@ namespace Prose.Cli;
 /// prose --compute-metrics [--slug &lt;slug&gt; | --all]
 ///
 /// Computes and upserts per-beat prose quality metrics (sentence stats, TTR,
-/// MTLD, Flesch-Kincaid, dialogue proportion) for one story or every story.
+/// Flesch-Kincaid, dialogue proportion) for one story or every story.
 /// CPU-only — no LLM or API calls. Safe to re-run; results are upserted.
 /// Exit 0 = success.
 /// </summary>

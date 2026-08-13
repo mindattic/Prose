@@ -18,6 +18,21 @@ public class BeatProseMetricsService
         this.dbFactory = dbFactory;
     }
 
+    /// <summary>
+    /// Standard Flesch Reading Ease scale bands: 90-100 = 5th grade, 70-80 = 7th, 60-70 =
+    /// 8th-9th (plain commercial fiction), 50-60 = 10th-12th, 30-50 = college, 0-30 = college
+    /// graduate. "A bright high-school freshman reads any beat once, no re-reading" (CRAFT.md
+    /// §0) lands around 60-70 — nowhere near the old outlier floor of 40 (roughly college
+    /// difficulty). Calibrated 2026-08-13 against a spot-check of real beats read aloud.
+    /// </summary>
+    public const double OutlierReadabilityFloor = 50.0;
+
+    /// <summary>Below this, a beat is dense enough to trigger an immediate targeted rewrite
+    /// (see <c>AutoRunCli.ExpandAndRepairAsync</c>'s READABILITY <see cref="LensIssue"/>), not
+    /// just a dashboard flag. Kept below <see cref="OutlierReadabilityFloor"/> deliberately —
+    /// urgent repair is for beats clearly worse than merely "outside the reporting floor."</summary>
+    public const double UrgentReadabilityFloor = 40.0;
+
     // ── Public API ──────────────────────────────────────────────────────────
 
     public async Task<BeatProseMetricsReport> ComputeSlugAsync(string slug, CancellationToken ct = default)
@@ -45,7 +60,7 @@ public class BeatProseMetricsService
         // ordering needed, unlike DcmVizCli/NarrativeForkService's SortKey-sensitive fixes).
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatRows = await db.BeatNodes
-            .Where(bn => leafIds.Contains(bn.NodeId) && bn.IsEnabled)
+            .Where(bn => leafIds.Contains(bn.NodeId) && true)
             .Join(db.Beats, bn => bn.BeatId, b => b.Id, (bn, b) => new { b.Id, b.Text, b.Number })
             .ToListAsync(ct);
 
@@ -70,7 +85,6 @@ public class BeatProseMetricsService
                 existing.SentenceCount         = m.SentenceCount;
                 existing.AvgWordsPerSentence   = m.AvgWordsPerSentence;
                 existing.TypeTokenRatio        = m.TypeTokenRatio;
-                existing.LexicalDiversityMtld  = m.LexicalDiversityMtld;
                 existing.FleschKincaidGrade    = m.FleschKincaidGrade;
                 existing.FleschReadingEase     = m.FleschReadingEase;
                 existing.AvgSyllablesPerWord   = m.AvgSyllablesPerWord;
@@ -89,7 +103,7 @@ public class BeatProseMetricsService
 
         // All enabled beats across all book nodes
         var beatRows = await db.BeatNodes
-            .Where(bn => bn.IsEnabled)
+            .Where(bn => true)
             .Join(db.Beats, bn => bn.BeatId, b => b.Id, (bn, b) => new { b.Id, b.Text, bn.NodeId })
             .ToListAsync(ct);
 
@@ -116,7 +130,7 @@ public class BeatProseMetricsService
 
     public async Task<IReadOnlyList<MetricsOutlier>> GetOutliersAsync(
         double ttrThreshold = 0.35,
-        double fleschThreshold = 40.0,
+        double fleschThreshold = OutlierReadabilityFloor,
         Guid? nodeId = null,
         CancellationToken ct = default)
     {
@@ -140,7 +154,10 @@ public class BeatProseMetricsService
 
     // ── Computation ─────────────────────────────────────────────────────────
 
-    private static BeatProseMetrics Compute(Guid beatId, Guid nodeId, string text)
+    /// <summary>Pure CPU, no LLM/DB — safe to call synchronously right after a beat is
+    /// written, before persisting anything. Used by <c>AutoRunCli</c>'s per-beat readability
+    /// repair trigger as well as this service's own nightly/CLI persistence paths.</summary>
+    public static BeatProseMetrics Compute(Guid beatId, Guid nodeId, string text)
     {
         var words     = Tokenize(text);
         var sentences = SplitSentences(text);
@@ -159,7 +176,6 @@ public class BeatProseMetricsService
             SentenceCount        = sc,
             AvgWordsPerSentence  = avgWpS,
             TypeTokenRatio       = Ttr(words),
-            LexicalDiversityMtld = Mtld(words),
             FleschKincaidGrade   = 0.39 * avgWpS + 11.8 * syllableAvg - 15.59,
             FleschReadingEase    = 206.835 - 1.015 * avgWpS - 84.6 * syllableAvg,
             AvgSyllablesPerWord  = syllableAvg,
@@ -185,43 +201,6 @@ public class BeatProseMetricsService
 
     private static double Ttr(List<string> words)
         => words.Count == 0 ? 0 : (double)words.Distinct().Count() / words.Count;
-
-    /// <summary>
-    /// MTLD: bidirectional sliding window. Each factor starts when a running TTR
-    /// falls below 0.72; the score is total words / factor count.
-    /// </summary>
-    private static double Mtld(List<string> words, double threshold = 0.720)
-    {
-        if (words.Count < 10) return Ttr(words);
-
-        double Forward(IEnumerable<string> seq)
-        {
-            var seen    = new HashSet<string>();
-            int start   = 0;
-            double factors = 0;
-            var list    = seq.ToList();
-            for (int i = 0; i < list.Count; i++)
-            {
-                seen.Add(list[i]);
-                double ttr = (double)seen.Count / (i - start + 1);
-                if (ttr < threshold)
-                {
-                    factors++;
-                    seen.Clear();
-                    start = i + 1;
-                }
-            }
-            int remaining = list.Count - start;
-            if (remaining > 0)
-            {
-                double partialTtr = (double)seen.Count / remaining;
-                factors += (threshold - partialTtr) / (threshold - 1.0 + 1e-9);
-            }
-            return factors < 0.01 ? list.Count : list.Count / factors;
-        }
-
-        return (Forward(words) + Forward(words.AsEnumerable().Reverse())) / 2.0;
-    }
 
     private static double DialogueProportion(string text, int totalWords)
     {
@@ -266,9 +245,9 @@ public class BeatProseMetricsService
         double avgFkGrade = items.Average(m => m.FleschKincaidGrade);
 
         var outliers = items
-            .Where(m => m.TypeTokenRatio < 0.35 || m.FleschReadingEase < 40)
+            .Where(m => m.TypeTokenRatio < 0.35 || m.FleschReadingEase < OutlierReadabilityFloor)
             .Select(m => new MetricsOutlier(m.BeatId, m.NodeId, m.TypeTokenRatio, m.FleschReadingEase,
-                m.TypeTokenRatio < 0.35, m.FleschReadingEase < 40))
+                m.TypeTokenRatio < 0.35, m.FleschReadingEase < OutlierReadabilityFloor))
             .ToList();
 
         return new BeatProseMetricsReport(nodeId, items.Count, avgTtr, avgFlesch, avgFkGrade,

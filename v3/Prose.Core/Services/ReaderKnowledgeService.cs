@@ -15,24 +15,23 @@ namespace Prose.Core.Services;
 ///
 /// Architecture:
 ///   - ExtractAsync: LLM call after each completed beat, fire-and-forget.
-///     Extracts key revelations and stores them in the Findings table as
-///     "READER-KNOWS: ..." entries keyed to the node.
+///     Extracts key revelations and stores them in <see cref="ReaderKnowledgeFact"/>.
 ///   - BuildKnowledgeBlockAsync: called before each beat to inject the current
 ///     reader knowledge state as a prompt constraint.
 ///
-/// Storage: Findings table with FilePath = "reader-knowledge:{nodeId}", Category = ReaderKnows.
-/// No new migrations required — reuses existing infrastructure.
+/// Storage: dedicated ReaderKnowledgeFacts table, keyed by NodeId. Used to live in the Findings
+/// table (Category=ReaderKnows) — moved out 2026-08-13 because that borrowed the wrong lifecycle:
+/// a fact here is meant to persist as long as the reader still holds it, which for Findings meant
+/// "stays New forever," permanently inflating the human-triage inbox by 1,000+ rows nothing could
+/// ever legitimately mark Applied/Dismissed.
 /// </summary>
 public class ReaderKnowledgeService(
     ILlmService llm,
     IDbContextFactory<ProseDbContext> dbFactory,
     ILogger<ReaderKnowledgeService> log)
 {
-    private const string Prefix = "READER-KNOWS";
     private const int MaxInjected = 6;
     private const int MaxExtractedPerBeat = 3;
-
-    private static string FilePath(Guid nodeId) => $"reader-knowledge:{nodeId:N}";
 
     // ── Public API ────────────────────────────────────────────────────────────
 
@@ -86,39 +85,30 @@ public class ReaderKnowledgeService(
             .Take(MaxExtractedPerBeat)
             .ToList();
 
-        if (facts.Count == 0) return;
+        await PersistFactsAsync(facts, nodeId, ct);
+    }
+
+    /// <summary>
+    /// Persist already-extracted reader-knowledge facts (no LLM call here) — split out of
+    /// <see cref="ExtractAsync"/> so <see cref="BeatExtractionService"/> can reuse it after a
+    /// single consolidated extraction call instead of this class firing its own LLM call too.
+    /// </summary>
+    public async Task PersistFactsAsync(IReadOnlyList<string> facts, Guid nodeId, CancellationToken ct = default)
+    {
+        if (facts.Count == 0 || nodeId == Guid.Empty) return;
 
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var fp = FilePath(nodeId);
-            foreach (var fact in facts)
+            foreach (var fact in facts.Take(MaxExtractedPerBeat))
             {
-                var summary = $"{Prefix}: {fact}";
-                var dedup = $"{fp}|{FindingCategory.ReaderKnows}|{summary}".ToLowerInvariant();
-                if (dedup.Length > 450) dedup = dedup[..450];
-
-                if (!await db.Findings.AnyAsync(f => f.DedupKey == dedup, ct))
-                {
-                    db.Findings.Add(new FindingRow
-                    {
-                        DetectedAt  = DateTime.UtcNow,
-                        FilePath    = fp,
-                        ChapterId   = null,
-                        Category    = FindingCategory.ReaderKnows.ToString(),
-                        Severity    = FindingSeverity.Low.ToString(),
-                        Summary     = summary,
-                        Snippet     = null,
-                        SuggestedFix = null,
-                        Status      = FindingStatus.New.ToString(),
-                        DedupKey    = dedup,
-                    });
-                    // Save each fact individually so a DedupKey race on one row
-                    // doesn't silently drop every other valid fact in the batch.
-                    try { await db.SaveChangesAsync(ct); }
-                    catch (Microsoft.EntityFrameworkCore.DbUpdateException)
-                    { db.ChangeTracker.Clear(); }
-                }
+                if (await db.ReaderKnowledgeFacts.AnyAsync(f => f.NodeId == nodeId && f.Fact == fact, ct))
+                    continue;
+                db.ReaderKnowledgeFacts.Add(new ReaderKnowledgeFact { NodeId = nodeId, Fact = fact });
+                // Save each fact individually so a race on one row doesn't drop the rest of the batch.
+                try { await db.SaveChangesAsync(ct); }
+                catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+                { db.ChangeTracker.Clear(); }
             }
         }
         catch (Exception ex)
@@ -138,15 +128,11 @@ public class ReaderKnowledgeService(
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var fp = FilePath(nodeId);
-            var catKey = FindingCategory.ReaderKnows.ToString();
-            var statusKey = FindingStatus.New.ToString();
-
-            var facts = await db.Findings.AsNoTracking()
-                .Where(f => f.FilePath == fp && f.Category == catKey && f.Status == statusKey)
+            var facts = await db.ReaderKnowledgeFacts.AsNoTracking()
+                .Where(f => f.NodeId == nodeId)
                 .OrderByDescending(f => f.DetectedAt)
                 .Take(MaxInjected)
-                .Select(f => f.Summary)
+                .Select(f => f.Fact)
                 .ToListAsync(ct);
 
             if (facts.Count == 0) return "";
@@ -155,7 +141,7 @@ public class ReaderKnowledgeService(
             sb.AppendLine("READER KNOWLEDGE STATE — what the reader now knows (as of the end of the previous beat):");
             sb.AppendLine("Write with awareness of this. Do not re-reveal facts the reader already has. Use asymmetries for dramatic irony.");
             foreach (var f in facts)
-                sb.AppendLine($"• {f.Replace(Prefix + ": ", "")}");
+                sb.AppendLine($"• {f}");
 
             return sb.ToString().TrimEnd();
         }
@@ -166,21 +152,50 @@ public class ReaderKnowledgeService(
         }
     }
 
-    /// <summary>Mark all reader-knowledge findings for a node as Dismissed (call on node reset/restart).</summary>
+    /// <summary>Delete all reader-knowledge facts for a node (call on node reset/restart).</summary>
     public async Task ClearAsync(Guid nodeId, CancellationToken ct = default)
     {
         if (nodeId == Guid.Empty) return;
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var fp = FilePath(nodeId);
-            var rows = await db.Findings.Where(f => f.FilePath == fp).ToListAsync(ct);
-            foreach (var r in rows) r.Status = FindingStatus.Dismissed.ToString();
-            await db.SaveChangesAsync(ct);
+            await db.ReaderKnowledgeFacts.Where(f => f.NodeId == nodeId).ExecuteDeleteAsync(ct);
         }
         catch (Exception ex)
         {
             log.LogWarning(ex, "ReaderKnowledgeService: clear failed for node {NodeId}", nodeId);
         }
+    }
+
+    /// <summary>
+    /// One-time move of legacy reader-knowledge facts out of the Findings table (Category=
+    /// ReaderKnows) into <see cref="ReaderKnowledgeFact"/>, then deletes the old rows. Idempotent
+    /// — a no-op once the legacy rows are gone. Call from --repair's schema-bootstrap.
+    /// </summary>
+    public async Task MigrateLegacyFindingsAsync(CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        const string legacyCategory = "ReaderKnows";
+        const string filePrefix = "reader-knowledge:";
+        const string summaryPrefix = "READER-KNOWS: ";
+
+        var legacy = await db.Findings.Where(f => f.Category == legacyCategory).ToListAsync(ct);
+        if (legacy.Count == 0) return;
+
+        var moved = 0;
+        foreach (var row in legacy)
+        {
+            if (!row.FilePath.StartsWith(filePrefix, StringComparison.Ordinal)) continue;
+            if (!Guid.TryParseExact(row.FilePath[filePrefix.Length..], "N", out var nodeId)) continue;
+            var fact = row.Summary.StartsWith(summaryPrefix, StringComparison.Ordinal)
+                ? row.Summary[summaryPrefix.Length..]
+                : row.Summary;
+            db.ReaderKnowledgeFacts.Add(new ReaderKnowledgeFact { NodeId = nodeId, Fact = fact, DetectedAt = row.DetectedAt });
+            moved++;
+        }
+        db.Findings.RemoveRange(legacy);
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("ReaderKnowledgeService: migrated {Moved} legacy Findings rows to ReaderKnowledgeFacts ({Deleted} removed)",
+            moved, legacy.Count);
     }
 }

@@ -1,7 +1,0 @@
-<span class="badge @GetClass(Status)">@Status</span>
-
-@code {
-    [Parameter] public string Status { get; set; } = Constants.Status.Draft;
-
-    private static string GetClass(string status) => Constants.StatusBadge.For(status.ToLowerInvariant());
-}

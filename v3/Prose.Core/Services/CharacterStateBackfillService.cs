@@ -113,7 +113,6 @@ public class CharacterStateBackfillService
                     Verb             = "set",
                     NewValue         = value,
                     AtStoryTime      = when,
-                    InWorldValidFrom = when,
                     Source           = Source,
                 });
                 eventsWritten++;

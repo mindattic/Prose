@@ -12,6 +12,9 @@ namespace Prose.Cli;
 ///   prose --findings dismiss &lt;id&gt;                                    Mark dismissed.
 ///   prose --findings triage &lt;id&gt;                                     Mark triaged.
 ///   prose --findings scan &lt;file-path&gt;                                Manually trigger a quality scan on a chapter file.
+///   prose --findings bulk-dismiss [--category &lt;cat&gt;] [--prefix &lt;text&gt;]  Dismiss every open finding
+///                                                                      matching the filter(s). At least
+///                                                                      one filter is required.
 /// </summary>
 public static class FindingsCli
 {
@@ -26,14 +29,15 @@ public static class FindingsCli
 
         return sub switch
         {
-            "list"     => CmdList(rest, store),
-            "stats"    => CmdStats(store),
-            "show"     => CmdShow(rest, store),
-            "apply"    => await CmdApply(rest, services),
-            "dismiss"  => CmdSetStatus(rest, store, FindingStatus.Dismissed),
-            "triage"   => CmdSetStatus(rest, store, FindingStatus.Triaged),
-            "scan"     => await CmdScan(rest, services),
-            _          => Fail($"unknown subcommand: {sub}"),
+            "list"         => CmdList(rest, store),
+            "stats"        => CmdStats(store),
+            "show"         => CmdShow(rest, store),
+            "apply"        => await CmdApply(rest, services),
+            "dismiss"      => CmdSetStatus(rest, store, FindingStatus.Dismissed),
+            "triage"       => CmdSetStatus(rest, store, FindingStatus.Triaged),
+            "scan"         => await CmdScan(rest, services),
+            "bulk-dismiss" => await CmdBulkDismiss(rest, store),
+            _              => Fail($"unknown subcommand: {sub}"),
         };
     }
 
@@ -104,6 +108,32 @@ public static class FindingsCli
         return 0;
     }
 
+    static async Task<int> CmdBulkDismiss(string[] rest, FindingsService store)
+    {
+        string? categoryArg = null, prefix = null;
+        var cIdx = Array.IndexOf(rest, "--category");
+        if (cIdx >= 0 && cIdx + 1 < rest.Length) categoryArg = rest[cIdx + 1];
+        var pIdx = Array.IndexOf(rest, "--prefix");
+        if (pIdx >= 0 && pIdx + 1 < rest.Length) prefix = rest[pIdx + 1];
+
+        FindingCategory? category = null;
+        if (categoryArg != null)
+        {
+            if (!Enum.TryParse<FindingCategory>(categoryArg, ignoreCase: true, out var parsed))
+                return Fail($"unknown category: {categoryArg}");
+            category = parsed;
+        }
+
+        if (category is null && string.IsNullOrWhiteSpace(prefix))
+            return Fail("bulk-dismiss requires --category and/or --prefix");
+
+        var n = await store.BulkSetStatusAsync(FindingStatus.Dismissed, category, prefix);
+        Console.WriteLine($"[findings] dismissed {n} finding(s)"
+            + (category is null ? "" : $" [category={category}]")
+            + (string.IsNullOrWhiteSpace(prefix) ? "" : $" [prefix=\"{prefix}\"]"));
+        return 0;
+    }
+
     static async Task<int> CmdScan(string[] rest, IServiceProvider services)
     {
         if (rest.Length == 0) return Fail("missing file path");
@@ -128,5 +158,6 @@ public static class FindingsCli
         Console.WriteLine("  prose --findings triage <id>");
         Console.WriteLine("  prose --findings dismiss <id>");
         Console.WriteLine("  prose --findings scan <file-path>");
+        Console.WriteLine("  prose --findings bulk-dismiss [--category <cat>] [--prefix <text>]");
     }
 }

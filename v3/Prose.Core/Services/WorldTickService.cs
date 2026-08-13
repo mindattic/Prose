@@ -140,7 +140,6 @@ public class WorldTickService : BackgroundService
             Verb            = "set",
             NewValue        = "idle",
             AtStoryTime     = after,
-            InWorldValidFrom = after,
             Source          = "world-tick",
             Confidence      = 1.0,
         }).ToList();

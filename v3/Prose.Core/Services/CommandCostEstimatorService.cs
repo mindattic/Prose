@@ -33,6 +33,9 @@ public class CommandCostEstimatorService
             ["--harvest-entities"]    = 0.08,
             ["--generate-blueprint"]  = 0.04,
             ["--storyscope-audit"]    = 0.05,
+            ["--audit-book"]          = 1.50, // FULL tier: one call/beat for SWAIN, DRAMATIC-Q, and
+                                               // several other checks — scales with book length,
+                                               // easily the most expensive single audit command.
             ["--booktok"]             = 3.00, // video-gen APIs (kling/runway/sora) charge dollars, not cents
         };
 
